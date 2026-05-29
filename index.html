@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Folklore Map of Britain</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --parchment:    #f2e8d5;
+      --parchment-dk: #e0d0b0;
+      --ink:          #2c1f0e;
+      --ink-light:    #5c4a2a;
+      --accent:       #8b3a1a;
+      --accent-glow:  #c4622a;
+      --border:       #b09060;
+      --shadow:       rgba(44, 31, 14, 0.25);
+      --font-display: 'Cinzel', serif;
+      --font-body:    'Crimson Text', serif;
+
+      --map-filter-day:   sepia(0.8) brightness(0.9) contrast(1.1) saturate(0.7);
+      --map-filter-night: grayscale(0.6) brightness(0.55) contrast(1.2) sepia(0.3) hue-rotate(200deg);
+    }
+
+    body {
+      background: var(--parchment-dk);
+      font-family: var(--font-body);
+      color: var(--ink);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: var(--ink);
+      border-bottom: 2px solid var(--accent);
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      position: relative;
+      z-index: 1000;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: -5px; left: 0; right: 0;
+      height: 3px;
+      background: repeating-linear-gradient(90deg, var(--accent) 0, var(--accent) 6px, transparent 6px, transparent 12px);
+      opacity: 0.5;
+    }
+    .header-title { display: flex; align-items: baseline; gap: 12px; }
+    h1 {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--parchment);
+      letter-spacing: 0.08em;
+    }
+    .subtitle {
+      font-family: var(--font-body);
+      font-size: 13px;
+      color: var(--border);
+      font-style: italic;
+      letter-spacing: 0.04em;
+    }
+    .header-controls { display: flex; align-items: center; gap: 10px; }
+
+    /* ── DARK MODE TOGGLE ── */
+    .mode-toggle {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-body);
+      font-size: 13px;
+      color: var(--border);
+      cursor: pointer;
+      user-select: none;
+    }
+    .toggle-track {
+      width: 38px; height: 20px;
+      background: #3a2c18;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      position: relative;
+      transition: background 0.3s;
+    }
+    .toggle-track.on { background: #1a2840; border-color: #4a6898; }
+    .toggle-thumb {
+      position: absolute;
+      top: 2px; left: 2px;
+      width: 14px; height: 14px;
+      background: var(--border);
+      border-radius: 50%;
+      transition: transform 0.3s, background 0.3s;
+    }
+    .toggle-track.on .toggle-thumb { transform: translateX(18px); background: #7090c8; }
+
+    /* ── SEARCH BAR ── */
+    .search-wrap {
+      position: relative;
+    }
+    .search-wrap input {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 5px 10px 5px 30px;
+      font-family: var(--font-body);
+      font-size: 13px;
+      color: var(--parchment);
+      width: 180px;
+      outline: none;
+    }
+    .search-wrap input::placeholder { color: var(--border); }
+    .search-wrap input:focus { border-color: var(--accent-glow); background: rgba(255,255,255,0.12); }
+    .search-icon {
+      position: absolute; left: 8px; top: 50%;
+      transform: translateY(-50%);
+      font-size: 14px; color: var(--border); pointer-events: none;
+    }
+    .search-results {
+      position: absolute; top: calc(100% + 4px); left: 0; right: 0;
+      background: var(--ink);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      z-index: 2000;
+      display: none;
+    }
+    .search-results.open { display: block; }
+    .search-result-item {
+      padding: 7px 12px;
+      font-size: 13px;
+      color: var(--parchment);
+      cursor: pointer;
+      border-bottom: 0.5px solid #3a2c18;
+    }
+    .search-result-item:last-child { border-bottom: none; }
+    .search-result-item:hover { background: rgba(255,255,255,0.08); }
+    .search-result-item span { color: var(--border); font-size: 11px; margin-left: 6px; }
+
+    /* ── FILTER BAR ── */
+    .filter-bar {
+      background: var(--parchment);
+      border-bottom: 1px solid var(--border);
+      padding: 8px 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 900;
+    }
+    .filter-label {
+      font-family: var(--font-display);
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      color: var(--ink-light);
+      text-transform: uppercase;
+      margin-right: 4px;
+    }
+    .filter-btn {
+      font-family: var(--font-body);
+      font-size: 13px;
+      padding: 3px 12px;
+      border-radius: 2px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--ink-light);
+      cursor: pointer;
+      transition: all 0.15s;
+      display: flex; align-items: center; gap: 5px;
+    }
+    .filter-btn:hover { background: var(--parchment-dk); }
+    .filter-btn.active { background: var(--ink); color: var(--parchment); border-color: var(--ink); }
+    .filter-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+    .count-badge {
+      font-size: 10px;
+      background: var(--parchment-dk);
+      border-radius: 99px;
+      padding: 1px 5px;
+      color: var(--ink-light);
+    }
+    .filter-btn.active .count-badge { background: rgba(255,255,255,0.2); color: var(--parchment); }
+
+    /* ── MAP CONTAINER ── */
+    .map-wrap {
+      flex: 1;
+      position: relative;
+      min-height: 500px;
+    }
+    #map {
+      position: absolute; inset: 0;
+    }
+    #map .leaflet-tile-pane {
+      filter: var(--map-filter-day);
+      transition: filter 1.2s ease;
+    }
+    #map.night .leaflet-tile-pane { filter: var(--map-filter-night); }
+
+    /* Parchment vignette overlay — sits above tiles (200) but below markers (600) */
+    .map-vignette {
+      position: absolute; inset: 0;
+      pointer-events: none; z-index: 399;
+      background: radial-gradient(ellipse at center, transparent 55%, rgba(44,31,14,0.22) 100%);
+    }
+    .map-border {
+      position: absolute; inset: 8px;
+      pointer-events: none; z-index: 399;
+      border: 1px solid rgba(176,144,96,0.3);
+    }
+
+    /* ── LEAFLET POPUP OVERRIDES ── */
+    .leaflet-popup-content-wrapper {
+      background: var(--parchment) !important;
+      border: 1px solid var(--border) !important;
+      border-radius: 4px !important;
+      box-shadow: 0 4px 20px var(--shadow) !important;
+      padding: 0 !important;
+    }
+    .leaflet-popup-tip { background: var(--parchment) !important; }
+    .leaflet-popup-content { margin: 0 !important; width: auto !important; }
+    .leaflet-popup-close-button {
+      color: var(--ink-light) !important;
+      font-size: 16px !important;
+      padding: 6px 8px !important;
+    }
+
+    /* ── POPUP CONTENT ── */
+    .popup-inner { padding: 14px 16px; min-width: 220px; max-width: 280px; }
+    .popup-cat {
+      font-family: var(--font-display);
+      font-size: 9px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 2px;
+      color: #fff;
+      display: inline-block;
+      margin-bottom: 7px;
+    }
+    .popup-title {
+      font-family: var(--font-display);
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 3px;
+      line-height: 1.3;
+    }
+    .popup-region {
+      font-size: 12px;
+      color: var(--ink-light);
+      font-style: italic;
+      margin-bottom: 8px;
+    }
+    .popup-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 8px 0;
+      opacity: 0.5;
+    }
+    .popup-summary {
+      font-size: 13px;
+      line-height: 1.6;
+      color: var(--ink);
+      margin-bottom: 10px;
+    }
+    .popup-source {
+      font-size: 11px;
+      color: var(--accent);
+      text-decoration: none;
+      font-style: italic;
+    }
+    .popup-source:hover { text-decoration: underline; }
+
+    /* ── LEGEND PANEL ── */
+    .legend-panel {
+      position: absolute;
+      bottom: 24px; right: 12px;
+      z-index: 650;
+      background: rgba(242,232,213,0.96);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 10px 14px;
+      min-width: 130px;
+    }
+    .legend-title {
+      font-family: var(--font-display);
+      font-size: 9px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      margin-bottom: 8px;
+    }
+    .legend-item {
+      display: flex; align-items: center; gap: 7px;
+      font-family: var(--font-body);
+      font-size: 12px;
+      color: var(--ink);
+      margin-bottom: 5px;
+    }
+    .legend-item:last-child { margin-bottom: 0; }
+    .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--ink);
+      border-top: 1px solid #3a2c18;
+      padding: 6px 20px;
+      font-family: var(--font-body);
+      font-size: 11px;
+      color: var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      z-index: 1000;
+    }
+    footer a { color: var(--border); }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-title">
+    <h1>Folklore Map of the British Isles</h1>
+    <span class="subtitle">Myths, Legends & Spectral Encounters</span>
+  </div>
+  <div class="header-controls">
+    <div class="search-wrap">
+      <span class="search-icon">⚲</span>
+      <input type="text" id="searchInput" placeholder="Search legends..." autocomplete="off" oninput="handleSearch(this.value)"/>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+    <div class="mode-toggle" onclick="toggleNight()">
+      <div class="toggle-track" id="modeTrack">
+        <div class="toggle-thumb"></div>
+      </div>
+      <span id="modeLabel">Day</span>
+    </div>
+  </div>
+</header>
+
+<div class="filter-bar" id="filterBar">
+  <span class="filter-label">Show</span>
+</div>
+
+<div class="map-wrap">
+  <div id="map"></div>
+  <div class="map-vignette"></div>
+  <div class="map-border"></div>
+  <div class="legend-panel" id="legendPanel"></div>
+</div>
+
+<footer>
+  <span>Phase 1 — seed data. Phase 2 will pull from Wikipedia &amp; Wikidata automatically.</span>
+  <span>Map tiles © <a href="https://stadiamaps.com/">Stadia Maps</a> / <a href="https://stamen.com">Stamen Design</a> · Data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors</span>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const CATEGORIES = {
+  beast:  { label: 'Beasts',        colour: '#8b3a1a' },
+  ghost:  { label: 'Ghosts',        colour: '#3a4a6a' },
+  water:  { label: 'Water Creatures', colour: '#1a5a4a' },
+  fairy:  { label: 'Fae & Spirits', colour: '#6a3a6a' },
+  dragon: { label: 'Dragons',       colour: '#5a2a0a' },
+  witch:  { label: 'Witches',        colour: '#2a3a2a' },
+  deity:  { label: 'Deities',colour: '#6b4c8a' },
+  giant:  { label: 'Giants',        colour: '#4a5a3a' },
+  location: { label: 'Legendary Sites', colour: '#7a6030' },
+};
+
+let nightMode = false;
+let markers = [];
+let activeFilter = 'all';
+
+const map = L.map('map', { zoomControl: true }).setView([54.2, -2.8], 6);
+
+L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_terrain/{z}/{x}/{y}{r}.png?api_key=89e39892-dad3-41e7-89e6-fa69ac42bb85', {
+  attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a> &copy; <a href="https://stamen.com">Stamen Design</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a>',
+  maxZoom: 18
+}).addTo(map);
+
+function makeIcon(colour, nightMode) {
+  const c = nightMode ? lightenForNight(colour) : colour;
+  const svg = `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 38' width='28' height='38'>
+    <filter id='s'><feDropShadow dx='0' dy='2' stdDeviation='2' flood-opacity='0.4'/></filter>
+    <path d='M14 1C7 1 1 7 1 14c0 10 13 23 13 23S27 24 27 14C27 7 21 1 14 1z' fill='${c}' filter='url(#s)' stroke='rgba(0,0,0,0.3)' stroke-width='0.5'/>
+    <circle cx='14' cy='14' r='6' fill='rgba(255,255,255,0.88)'/>
+    <circle cx='14' cy='14' r='3' fill='${c}' opacity='0.7'/>
+  </svg>`;
+  return L.divIcon({ html: svg, className: '', iconSize: [28, 38], iconAnchor: [14, 38], popupAnchor: [0, -40] });
+}
+
+function lightenForNight(hex) {
+  return hex;
+}
+
+function buildPopup(leg) {
+  const cat = CATEGORIES[leg.category];
+  return `<div class="popup-inner">
+    <span class="popup-cat" style="background:${cat.colour}">${cat.label}</span>
+    <div class="popup-title">${leg.name}</div>
+    <div class="popup-region">${leg.region}</div>
+    <hr class="popup-divider"/>
+    <p class="popup-summary">${leg.summary}</p>
+    <a class="popup-source" href="${leg.source}" target="_blank" rel="noopener">Read more on Wikipedia ↗</a>
+  </div>`;
+}
+
+let LEGENDS = [];
+
+function loadMarkers(legends) {
+  legends.forEach(leg => {
+    if (!CATEGORIES[leg.category]) leg.category = 'beast';
+    const marker = L.marker([leg.lat, leg.lng], {
+      icon: makeIcon(CATEGORIES[leg.category].colour, false)
+    }).bindPopup(buildPopup(leg), { maxWidth: 300 });
+    marker._legendData = leg;
+    marker.addTo(map);
+    markers.push(marker);
+  });
+}
+
+function buildFilters() {
+  const bar = document.getElementById('filterBar');
+  const label = bar.querySelector('.filter-label');
+  bar.innerHTML = '';
+  bar.appendChild(label);
+
+  const allBtn = makeFilterBtn('all', 'All', null);
+  allBtn.classList.add('active');
+  bar.appendChild(allBtn);
+
+  const usedCats = [...new Set(LEGENDS.map(l => l.category))];
+  usedCats.forEach(cat => {
+    const count = LEGENDS.filter(l => l.category === cat).length;
+    bar.appendChild(makeFilterBtn(cat, CATEGORIES[cat].label, CATEGORIES[cat].colour, count));
+  });
+}
+
+function makeFilterBtn(cat, label, colour, count) {
+  const btn = document.createElement('button');
+  btn.className = 'filter-btn';
+  btn.dataset.cat = cat;
+  btn.innerHTML = (colour ? `<span class="filter-dot" style="background:${colour}"></span>` : '') +
+    label +
+    (count ? ` <span class="count-badge">${count}</span>` : '');
+  btn.onclick = () => filterMarkers(cat);
+  return btn;
+}
+
+function filterMarkers(cat) {
+  activeFilter = cat;
+  document.querySelectorAll('.filter-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.cat === cat);
+  });
+  markers.forEach(m => {
+    const show = cat === 'all' || m._legendData.category === cat;
+    if (show && !map.hasLayer(m)) map.addLayer(m);
+    if (!show && map.hasLayer(m)) map.removeLayer(m);
+  });
+}
+
+function buildLegend() {
+  const panel = document.getElementById('legendPanel');
+  const usedCats = [...new Set(LEGENDS.map(l => l.category))];
+  panel.innerHTML = `<div class="legend-title">Legend</div>` +
+    usedCats.map(cat => `
+      <div class="legend-item">
+        <span class="legend-dot" style="background:${CATEGORIES[cat].colour}"></span>
+        ${CATEGORIES[cat].label}
+      </div>`).join('');
+}
+
+function toggleNight() {
+  nightMode = !nightMode;
+  document.getElementById('map').classList.toggle('night', nightMode);
+  document.getElementById('modeTrack').classList.toggle('on', nightMode);
+  document.getElementById('modeLabel').textContent = nightMode ? 'Night' : 'Day';
+  markers.forEach(m => {
+    m.setIcon(makeIcon(CATEGORIES[m._legendData.category].colour, nightMode));
+  });
+}
+
+function handleSearch(query) {
+  const box = document.getElementById('searchResults');
+  if (!query.trim()) { box.classList.remove('open'); return; }
+  const q = query.toLowerCase();
+  const matches = LEGENDS.filter(l =>
+    l.name.toLowerCase().includes(q) ||
+    l.region.toLowerCase().includes(q) ||
+    l.category.toLowerCase().includes(q)
+  ).slice(0, 6);
+  if (!matches.length) { box.classList.remove('open'); return; }
+  box.innerHTML = matches.map(l => `
+    <div class="search-result-item" onclick="focusLegend('${l.name.replace(/'/g,"\\'")}')">
+      ${l.name}<span>${l.region}</span>
+    </div>`).join('');
+  box.classList.add('open');
+}
+
+function focusLegend(name) {
+  document.getElementById('searchResults').classList.remove('open');
+  document.getElementById('searchInput').value = '';
+  const leg = LEGENDS.find(l => l.name === name);
+  if (!leg) return;
+  if (activeFilter !== 'all' && activeFilter !== leg.category) filterMarkers('all');
+  map.setView([leg.lat, leg.lng], 9, { animate: true });
+  const marker = markers.find(m => m._legendData.name === name);
+  if (marker) setTimeout(() => marker.openPopup(), 600);
+}
+
+document.addEventListener('click', e => {
+  if (!e.target.closest('.search-wrap')) {
+    document.getElementById('searchResults').classList.remove('open');
+  }
+});
+
+fetch('legends.json')
+  .then(r => {
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    return r.json();
+  })
+  .then(data => {
+    LEGENDS = data.legends || data;
+    loadMarkers(LEGENDS);
+    buildFilters();
+    buildLegend();
+    const countEl = document.getElementById('legendCount');
+    if (countEl) countEl.textContent = LEGENDS.length;
+  })
+  .catch(err => {
+    console.error('Failed to load legends.json:', err);
+    document.getElementById('filterBar').insertAdjacentHTML('beforeend',
+      `<span style="color:#8b3a1a;font-size:12px;margin-left:8px">
+        ⚠ Could not load legends.json — run build_legends.py first, or open via a local server.
+      </span>`
+    );
+  });
+</script>
+</body>
+</html>

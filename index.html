@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Folklore Map of Britain</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
   <style>
@@ -323,6 +325,44 @@
       z-index: 1000;
     }
     footer a { color: var(--border); }
+
+    /* ── MARKER CLUSTERS ── */
+    .marker-cluster-small,
+    .marker-cluster-medium,
+    .marker-cluster-large {
+      background-clip: padding-box;
+    }
+    .marker-cluster-small div,
+    .marker-cluster-medium div,
+    .marker-cluster-large div {
+      font-family: var(--font-display);
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--parchment);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+    .marker-cluster-small  { background-color: rgba(139, 58, 26, 0.55); }
+    .marker-cluster-small div  { background-color: rgba(139, 58, 26, 0.85); }
+    .marker-cluster-medium { background-color: rgba(90, 42, 10, 0.55); }
+    .marker-cluster-medium div { background-color: rgba(90, 42, 10, 0.85); }
+    .marker-cluster-large  { background-color: rgba(44, 31, 14, 0.55); }
+    .marker-cluster-large div  { background-color: rgba(44, 31, 14, 0.85); }
+
+    /* ── ENTRY COUNTER ── */
+    .entry-count {
+      font-family: var(--font-body);
+      font-size: 12px;
+      color: var(--border);
+      font-style: italic;
+      margin-left: auto;
+      padding-right: 4px;
+      white-space: nowrap;
+    }
   </style>
 </head>
 <body>
@@ -349,6 +389,7 @@
 
 <div class="filter-bar" id="filterBar">
   <span class="filter-label">Show</span>
+  <span class="entry-count" id="entryCount"></span>
 </div>
 
 <div class="map-wrap">
@@ -359,11 +400,12 @@
 </div>
 
 <footer>
-  <span>Phase 1 — seed data. Phase 2 will pull from Wikipedia &amp; Wikidata automatically.</span>
+  <span>Folklore Map of the British Isles — an ongoing project</span>
   <span>Map tiles © <a href="https://stadiamaps.com/">Stadia Maps</a> / <a href="https://stamen.com">Stamen Design</a> · Data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors</span>
 </footer>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 <script>
 const CATEGORIES = {
   beast:  { label: 'Beasts',        colour: '#8b3a1a' },
@@ -381,7 +423,37 @@ let nightMode = false;
 let markers = [];
 let activeFilter = 'all';
 
-const map = L.map('map', { zoomControl: true }).setView([54.2, -2.8], 6);
+const BRITISH_ISLES_BOUNDS = L.latLngBounds(
+  [49.0, -11.5],   // SW — below Cornwall, west of Ireland
+  [61.5,  2.5]    // NE — above Shetland, east of Norfolk
+);
+
+const map = L.map('map', {
+  zoomControl:        true,
+  minZoom:            5,
+  maxZoom:            17,
+  maxBounds:          BRITISH_ISLES_BOUNDS,
+  maxBoundsViscosity: 0.9
+}).setView([54.2, -4.0], 6);
+
+// Marker cluster group — shared across all markers
+const clusterGroup = L.markerClusterGroup({
+  maxClusterRadius: 50,          // px — how close markers must be to cluster
+  spiderfyOnMaxZoom: true,       // spread markers at max zoom instead of cluster
+  showCoverageOnHover: false,    // don't show cluster boundary polygon on hover
+  zoomToBoundsOnClick: true,     // click cluster to zoom in
+  disableClusteringAtZoom: 12,   // individual markers at zoom 12+
+  iconCreateFunction: function(cluster) {
+    const count = cluster.getChildCount();
+    const size  = count < 10 ? 'small' : count < 50 ? 'medium' : 'large';
+    const dim   = count < 10 ? 34 : count < 50 ? 40 : 48;
+    return L.divIcon({
+      html: `<div><span>${count}</span></div>`,
+      className: `marker-cluster marker-cluster-${size}`,
+      iconSize: L.point(dim, dim)
+    });
+  }
+});
 
 L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_terrain/{z}/{x}/{y}{r}.png?api_key=89e39892-dad3-41e7-89e6-fa69ac42bb85', {
   attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a> &copy; <a href="https://stamen.com">Stamen Design</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a>',
@@ -424,9 +496,17 @@ function loadMarkers(legends) {
       icon: makeIcon(CATEGORIES[leg.category].colour, false)
     }).bindPopup(buildPopup(leg), { maxWidth: 300 });
     marker._legendData = leg;
-    marker.addTo(map);
     markers.push(marker);
   });
+  clusterGroup.addLayers(markers);
+  map.addLayer(clusterGroup);
+}
+
+function updateCount(n) {
+  const el = document.getElementById('entryCount');
+  if (el) el.textContent = n === LEGENDS.length
+    ? `${n} entries`
+    : `${n} of ${LEGENDS.length} entries`;
 }
 
 function buildFilters() {
@@ -462,11 +542,13 @@ function filterMarkers(cat) {
   document.querySelectorAll('.filter-btn').forEach(b => {
     b.classList.toggle('active', b.dataset.cat === cat);
   });
-  markers.forEach(m => {
-    const show = cat === 'all' || m._legendData.category === cat;
-    if (show && !map.hasLayer(m)) map.addLayer(m);
-    if (!show && map.hasLayer(m)) map.removeLayer(m);
-  });
+  // Remove all from cluster, re-add only matching ones
+  clusterGroup.clearLayers();
+  const visible = markers.filter(m =>
+    cat === 'all' || m._legendData.category === cat
+  );
+  clusterGroup.addLayers(visible);
+  updateCount(visible.length);
 }
 
 function buildLegend() {
@@ -488,6 +570,8 @@ function toggleNight() {
   markers.forEach(m => {
     m.setIcon(makeIcon(CATEGORIES[m._legendData.category].colour, nightMode));
   });
+  // Refresh cluster group so new icons render
+  clusterGroup.refreshClusters();
 }
 
 function handleSearch(query) {
@@ -513,9 +597,13 @@ function focusLegend(name) {
   const leg = LEGENDS.find(l => l.name === name);
   if (!leg) return;
   if (activeFilter !== 'all' && activeFilter !== leg.category) filterMarkers('all');
-  map.setView([leg.lat, leg.lng], 9, { animate: true });
   const marker = markers.find(m => m._legendData.name === name);
-  if (marker) setTimeout(() => marker.openPopup(), 600);
+  if (!marker) return;
+  // Zoom to marker then open — cluster will spiderfy/uncluster automatically
+  map.setView([leg.lat, leg.lng], 12, { animate: true });
+  setTimeout(() => {
+    clusterGroup.zoomToShowLayer(marker, () => marker.openPopup());
+  }, 400);
 }
 
 document.addEventListener('click', e => {
@@ -534,8 +622,7 @@ fetch('legends.json?v=' + Date.now())
     loadMarkers(LEGENDS);
     buildFilters();
     buildLegend();
-    const countEl = document.getElementById('legendCount');
-    if (countEl) countEl.textContent = LEGENDS.length;
+    updateCount(LEGENDS.length);
   })
   .catch(err => {
     console.error('Failed to load legends.json:', err);

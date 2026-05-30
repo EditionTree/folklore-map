@@ -1485,7 +1485,7 @@
       "name": "Merlin",
       "lat": 51.882,
       "lng": -4.516,
-      "category": "deity",
+      "category": "hero",
       "region": "Wales & Britain",
       "summary": "The greatest wizard of Britain — half-demon by birth, prophet by gift, architect of the Arthurian age. He transported Stonehenge from Ireland, foretold the coming of Arthur, and in the end was imprisoned by the enchantress Nimue in a tree, a cave, or a tower of air, depending on who tells the tale.",
       "source": "https://en.wikipedia.org/wiki/Merlin"
@@ -2632,15 +2632,6 @@
     "region": "County Leitrim, Ireland",
     "summary": "A monstrous water beast resembling a giant hound or otter, said to inhabit lonely lakes and rivers. Tales describe it attacking livestock and people before vanishing beneath dark waters.",
     "source": "https://en.wikipedia.org/wiki/Dobhar-ch%C3%BA"
-  },
-  {
-    "name": "Piskies",
-    "lat": 50.191,
-    "lng": -5.52,
-    "category": "fairy",
-    "region": "Cornwall",
-    "summary": "The mischievous fae folk of Cornwall, closely related to pixies. To become 'pisky-led' was to wander lost and confused under their enchantment until the spell was broken.",
-    "source": "https://en.wikipedia.org/wiki/Pixie"
   },
   {
     "name": "Plynlimon",

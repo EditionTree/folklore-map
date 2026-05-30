@@ -32,7 +32,7 @@ TIMEOUT        = 20
 RATE_LIMIT     = 0.3    # seconds between requests
 
 # UK bounding box for coordinate sanity check
-UK_BOUNDS = {"lat_min": 49.5, "lat_max": 61.5, "lng_min": -9.0, "lng_max": 2.5}
+UK_BOUNDS = {"lat_min": 49.5, "lat_max": 61.5, "lng_min": -10.5, "lng_max": 2.5}  # expanded to include Ireland
 
 
 # ---------------------------------------------------------------------------
@@ -1882,6 +1882,554 @@ SEED_LEGENDS = [
         "summary": "Zennor is a village and civil parish in Cornwall, England, United Kingdom. The parish includes the villages of Zennor, Boswednack and Porthmeor and the hamlet of Treen. Zennor lies on the north coast, about 6 miles (10 km) north of Penzance, along the B3306 road which connects St Ives to the A30 road. Alphabetically, the parish is the last in Britain. Its name comes from the Cornish name for the local saint, Saint Senara.",
         "source": "https://en.wikipedia.org/wiki/Zennor"
     },
+    {
+        "name": "Black Annis",
+        "lat": 52.638, "lng": -1.152,
+        "category": "beast",
+        "region": "Leicestershire",
+        "summary": "A blue-faced hag with iron claws who dwelt in a cave she carved from the sandstone of the Dane Hills near Leicester. She crouched in her oak tree waiting to snatch children and lambs, tanning their skins to wear around her waist. Cottages in Leicestershire were built with small windows to keep her out.",
+        "source": "https://en.wikipedia.org/wiki/Black_Annis"
+    },
+    {
+        "name": "Wisht Hounds",
+        "lat": 50.574, "lng": -3.914,
+        "category": "beast",
+        "region": "Dartmoor, Devon",
+        "summary": "The spectral pack that hunts across Dartmoor on wild nights, led by Dewer the huntsman or the Devil himself. Their baying chills the blood and to be caught in their path is death. They are kennelled beneath Wistman\'s Wood, where the ancient oaks grow twisted and low.",
+        "source": "https://en.wikipedia.org/wiki/Wisht_Hounds"
+    },
+    {
+        "name": "Awd Goggie",
+        "lat": 53.958, "lng": -1.082,
+        "category": "beast",
+        "region": "Yorkshire",
+        "summary": "A boggart-like spirit lurking in orchards and gooseberry bushes across Yorkshire, set to guard the ripening fruit from children. Its rustling presence in the leaves was enough to keep small hands at bay — whether it was real or merely a parents\' invention, none could say for certain.",
+        "source": "https://en.wikipedia.org/wiki/Awd_Goggie"
+    },
+    {
+        "name": "Gurt Worm",
+        "lat": 51.108, "lng": -3.002,
+        "category": "dragon",
+        "region": "Somerset",
+        "summary": "A great serpent said to have terrorised the villages of the Quantock Hills, coiling itself around fields and devouring cattle. A local hero eventually slew it, but not before the creature\'s death throes carved the valleys of the hills. Its memory persists in the landscape itself.",
+        "source": "https://en.wikipedia.org/wiki/Gurt_Worm"
+    },
+    {
+        "name": "Filey Dragon",
+        "lat": 54.212, "lng": -0.269,
+        "category": "dragon",
+        "region": "North Yorkshire",
+        "summary": "A fearsome dragon that made its lair in the tidal gully of Filey Brigg. The townsfolk defeated it by luring it to eat so much sticky parkin cake that its jaws seized shut and it plunged into the sea to drown. The jagged rocks of the Brigg are said to be its bones, jutting into the North Sea still.",
+        "source": "https://en.wikipedia.org/wiki/Filey_Brigg"
+    },
+    {
+        "name": "Hagg Worm",
+        "lat": 54.433, "lng": -0.807,
+        "category": "dragon",
+        "region": "North Yorkshire Moors",
+        "summary": "A venomous serpent of the North Yorkshire moors, lurking in the deep wooded gullies called haggs. One of several worms said to have plagued the region before the age of saints and knights, giving the landscape both its name and its dread.",
+        "source": "https://en.wikipedia.org/wiki/Worm_(mythology)"
+    },
+    {
+        "name": "Renwick Cockatrice",
+        "lat": 54.738, "lng": -2.551,
+        "category": "beast",
+        "region": "Cumbria",
+        "summary": "When workmen demolished the old church at Renwick in 1733, a great winged creature flew out from the foundations — a cockatrice hatched from the ancient stonework. John Tallantire beat it to death with a branch of rowan, the only wood proof against its deadly gaze. The church was rebuilt, but the rowan was kept.",
+        "source": "https://en.wikipedia.org/wiki/Renwick_Cockatrice"
+    },
+    {
+        "name": "Fad Felen",
+        "lat": 51.700, "lng": -3.388,
+        "category": "beast",
+        "region": "Glamorgan, Wales",
+        "summary": "The Yellow Plague — a monstrous creature of Welsh legend whose breath carried pestilence across the land. Said to take the form of a great serpent or a yellow mist rolling off the mountains, it features in tales of St Teilo who fled its devastation across the sea to Brittany.",
+        "source": "https://en.wikipedia.org/wiki/Fad_Felen"
+    },
+    {
+        "name": "Bomere Fish",
+        "lat": 52.700, "lng": -2.762,
+        "category": "water",
+        "region": "Shropshire",
+        "summary": "A great pike of monstrous size said to inhabit Bomere Pool near Shrewsbury, guardian of a drowned village said to lie beneath its waters. The fish surfaces only to herald disaster for the local gentry — and the pool has a dark reputation that survives to this day.",
+        "source": "https://en.wikipedia.org/wiki/Bomere_Pool"
+    },
+    {
+        "name": "Hyter Sprite",
+        "lat": 52.450, "lng": 1.350,
+        "category": "fairy",
+        "region": "East Anglia",
+        "summary": "A shape-shifting spirit of the East Anglian fens, capable of taking the form of a sand martin. Hyter sprites could restore lost children to their families — or lead them deeper into the marshes, depending on their mood. They are among the rarer friendly fae of English folklore.",
+        "source": "https://en.wikipedia.org/wiki/Hyter_Sprite"
+    },
+    {
+        "name": "Lantern Man",
+        "lat": 52.520, "lng": 1.250,
+        "category": "ghost",
+        "region": "Norfolk",
+        "summary": "A malevolent will-o-the-wisp of the Norfolk Broads, more dangerous than most — it actively pursues lone travellers across the marshes. Whistling or swearing at it only makes it angrier. The only escape is to throw yourself face down in the mud and wait for it to pass.",
+        "source": "https://en.wikipedia.org/wiki/Lantern_Man"
+    },
+    {
+        "name": "Penhill Giant",
+        "lat": 54.285, "lng": -1.895,
+        "category": "giant",
+        "region": "North Yorkshire",
+        "summary": "A giant said to have haunted Penhill in Wensleydale, keeping a pack of hounds that terrorised the shepherds of the dale. A local hermit eventually brought about his downfall. His hill-top eyrie commands the whole of Wensleydale — a landscape that still feels watched from above.",
+        "source": "https://en.wikipedia.org/wiki/Penhill"
+    },
+    {
+        "name": "Old Cockern",
+        "lat": 50.583, "lng": -3.919,
+        "category": "ghost",
+        "region": "Dartmoor, Devon",
+        "summary": "The spectral huntsman of Dartmoor, keeper of the Wisht Hounds, who rides out on stormy nights to gather the souls of the unbaptised. He is sometimes identified with the Devil, sometimes with an ancient moorland spirit older than Christianity. Farmers left offerings on the moor to keep him from their doors.",
+        "source": "https://en.wikipedia.org/wiki/Wild_Hunt"
+    },
+    {
+        "name": "Mersey Mermaid",
+        "lat": 53.400, "lng": -3.000,
+        "category": "water",
+        "region": "Merseyside",
+        "summary": "A mermaid sighted in the Mersey estuary and along the Lancashire and Cheshire coast. Her appearance traditionally foretold storms, floods, or disaster for the port towns along the river — a warning from the deep that sailors had learned to heed.",
+        "source": "https://en.wikipedia.org/wiki/Mermaid"
+    },
+    {
+        "name": "Mordiford Dragon",
+        "lat": 52.043, "lng": -2.638,
+        "category": "dragon",
+        "region": "Herefordshire",
+        "summary": "A young girl named Maud found a tiny green serpent near Mordiford and kept it as a pet, feeding it milk. It grew into a vast dragon and began devouring cattle — then people. A condemned prisoner finally slew it from a barrel near the river, killing the beast but dying himself from its poisoned breath.",
+        "source": "https://en.wikipedia.org/wiki/Dragon_of_Mordiford"
+    },
+    {
+        "name": "Thanet Sea Monster",
+        "lat": 51.358, "lng": 1.395,
+        "category": "water",
+        "region": "Kent",
+        "summary": "A vast sea creature reported off the Isle of Thanet at various points in history, its silhouette glimpsed through sea mist by fishermen. The waters around Thanet have a dark reputation — the isle was once separated from mainland Kent by the Wantsum Channel, and old stories speak of things that came through it.",
+        "source": "https://en.wikipedia.org/wiki/Isle_of_Thanet"
+    },
+    {
+        "name": "Stratford Lion",
+        "lat": 52.192, "lng": -1.708,
+        "category": "beast",
+        "region": "Warwickshire",
+        "summary": "A spectral lion said to haunt the roads around Stratford-upon-Avon — silent, luminous-eyed, always seen alone on the road at night. Unlike the great black dogs of other counties, this phantom takes the form of a big cat, one of England\'s stranger and more localised legends.",
+        "source": "https://en.wikipedia.org/wiki/Phantom_cat"
+    },
+    {
+        "name": "Veasta",
+        "lat": 59.150, "lng": -2.773,
+        "category": "water",
+        "region": "Orkney",
+        "summary": "A sea beast of Orcadian waters, seen offshore during storms in old accounts. Like many Norse-influenced sea legends of Orkney, Veasta sits between monster and natural phenomenon — a reminder that the sea around these islands has always been treated as a living, sentient thing.",
+        "source": "https://en.wikipedia.org/wiki/Veasta"
+    },
+    {
+        "name": "Yallery Brown",
+        "lat": 53.508, "lng": -0.560,
+        "category": "fairy",
+        "region": "Lincolnshire",
+        "summary": "A tiny, wizened creature with yellow-brown skin found pinned beneath a flat stone in the Lincolnshire fens. When freed, he offered to help with a young labourer\'s work — but warned never to be thanked. The man thanked him. From that day, everything he touched went wrong.",
+        "source": "https://en.wikipedia.org/wiki/Yallery_Brown"
+    },
+    {
+        "name": "Seelie Court",
+        "lat": 56.324, "lng": -3.003,
+        "category": "fairy",
+        "region": "Scotland",
+        "summary": "The blessed court of Scottish fairy tradition — benevolent fae who sometimes aided humans, but whose goodwill was never entirely safe. They moved between their twilight realm and the mortal world at the turning of the seasons, and to encounter them was to stand on the edge between fortune and ruin.",
+        "source": "https://en.wikipedia.org/wiki/Seelie_court"
+    },
+    {
+        "name": "Unseelie Court",
+        "lat": 55.864, "lng": -3.232,
+        "category": "fairy",
+        "region": "Scotland",
+        "summary": "The dark host of Scottish fairy lore — malevolent fae who needed no reason to harm mortals. They flew through the winter night as the Sluagh, pelting travellers with fairy shot. No offering could appease them. They are the reason you do not go out alone after dark in the Lowlands.",
+        "source": "https://en.wikipedia.org/wiki/Unseelie_Court"
+    },
+    {
+        "name": "Tylwyth Teg",
+        "lat": 52.130, "lng": -3.783,
+        "category": "fairy",
+        "region": "Wales",
+        "summary": "The Fair Family of Welsh folklore — beautiful golden-haired fae who danced on moonlit hills and beneath lake surfaces. They stole human children and left changelings in their place. To see them was magical; to follow them was to lose days, years, or your mind entirely.",
+        "source": "https://en.wikipedia.org/wiki/Tylwyth_Teg"
+    },
+    {
+        "name": "Aos Sí",
+        "lat": 53.327, "lng": -6.248,
+        "category": "fairy",
+        "region": "Ireland & Scotland",
+        "summary": "The people of the mounds — an ancient supernatural race who retreated into the hollow hills when the Gaels conquered Ireland. They inhabit the fairy forts and ring barrows of the landscape. To disturb their homes brings ruin. To be taken by them is to never fully return.",
+        "source": "https://en.wikipedia.org/wiki/Aos_Sí"
+    },
+    {
+        "name": "Glaistig",
+        "lat": 57.274, "lng": -5.518,
+        "category": "water",
+        "region": "Highland, Scotland",
+        "summary": "A Highland spirit who appears as a beautiful grey-clad woman concealing the lower body of a goat beneath her long skirts. She could be protective — herding cattle and caring for children — or predatory, luring men to dance with her until she drained their blood. Milk offerings kept her benevolent.",
+        "source": "https://en.wikipedia.org/wiki/Glaistig"
+    },
+    {
+        "name": "Bean Nighe",
+        "lat": 57.442, "lng": -5.071,
+        "category": "ghost",
+        "region": "Highland, Scotland",
+        "summary": "The washerwoman at the ford — a small, webbed-footed spirit found scrubbing blood-stained shrouds in running water. To see her is to know that death is coming. If you can sneak behind her and take her breast, she must grant you a wish before she will let you go.",
+        "source": "https://en.wikipedia.org/wiki/Bean_Nighe"
+    },
+    {
+        "name": "Boggarts",
+        "lat": 53.794, "lng": -1.751,
+        "category": "fairy",
+        "region": "Yorkshire & Lancashire",
+        "summary": "Malevolent household and landscape spirits afflicting the north of England, curdling milk, tangling hair, and tormenting livestock. Unlike the helpful brownie, a boggart cannot be appeased — only avoided. Some are tied to specific lanes, bridges, or boggy hollows, making certain crossroads dangerous at night.",
+        "source": "https://en.wikipedia.org/wiki/Boggart"
+    },
+    {
+        "name": "Pixie",
+        "lat": 50.537, "lng": -4.479,
+        "category": "fairy",
+        "region": "Cornwall & Devon",
+        "summary": "Small, mischievous fae of the West Country with pointed ears and a gift for leading travellers astray — being pixie-led means going in circles until you turn your coat inside out to break the spell. They also steal horses to ride through the night, returning them exhausted and sweated by dawn.",
+        "source": "https://en.wikipedia.org/wiki/Pixie"
+    },
+    {
+        "name": "Wights",
+        "lat": 54.978, "lng": -2.045,
+        "category": "ghost",
+        "region": "Northern England",
+        "summary": "Spirits that inhabit places, objects, and the land itself in Norse and Anglo-Saxon tradition. Some are protective, some malevolent. The land-wights of Britain were the spiritual guardians of the island that Norse settlers had to negotiate with before they could truly belong here.",
+        "source": "https://en.wikipedia.org/wiki/Wight_(mythology)"
+    },
+    {
+        "name": "Unicorn",
+        "lat": 55.953, "lng": -3.188,
+        "category": "beast",
+        "region": "Scotland",
+        "summary": "The national animal of Scotland — a symbol not of innocence but of proud untameability. In Scottish heraldry, the unicorn is always shown chained, because an unchained unicorn is too dangerous and too free to be trusted near a king. It was said only a virgin could tame one, and even then only briefly.",
+        "source": "https://en.wikipedia.org/wiki/Unicorn#Heraldry"
+    },
+    {
+        "name": "Griffin",
+        "lat": 51.507, "lng": -0.127,
+        "category": "beast",
+        "region": "Britain (heraldic)",
+        "summary": "A lion-bodied, eagle-headed guardian of treasure, enemy of horses, and one of the great beasts of British heraldry. Its talons were said to detect poison by changing colour. Medieval bestiaries treated it as real; its image appears on coats of arms, city crests, and pub signs across the country.",
+        "source": "https://en.wikipedia.org/wiki/Griffin"
+    },
+    {
+        "name": "Blodeuwedd",
+        "lat": 52.920, "lng": -3.946,
+        "category": "deity",
+        "region": "Gwynedd, Wales",
+        "summary": "Created from nine flowers — broom, meadowsweet and oak among them — as a wife for the hero Lleu, who could not marry a mortal. She betrayed him with a lover and conspired to kill him. As punishment the wizard Gwydion turned her into an owl, and since that day all other birds mob the owl wherever they find it.",
+        "source": "https://en.wikipedia.org/wiki/Blodeuwedd"
+    },
+    {
+        "name": "Gwyn ap Nudd",
+        "lat": 51.144, "lng": -2.699,
+        "category": "deity",
+        "region": "Somerset / Wales",
+        "summary": "King of the Tylwyth Teg and ruler of Annwn — his glass castle lies within Glastonbury Tor, where Saint Collen drove him out with holy water. He leads the Cwn Annwn on the Wild Hunt and fights an eternal battle for a woman\'s hand every May Day until the world\'s end.",
+        "source": "https://en.wikipedia.org/wiki/Gwyn_ap_Nudd"
+    },
+    {
+        "name": "Merlin",
+        "lat": 51.882, "lng": -4.516,
+        "category": "deity",
+        "region": "Wales & Britain",
+        "summary": "The greatest wizard of Britain — half-demon by birth, prophet by gift, architect of the Arthurian age. He transported Stonehenge from Ireland, foretold the coming of Arthur, and in the end was imprisoned by the enchantress Nimue in a tree, a cave, or a tower of air, depending on who tells the tale.",
+        "source": "https://en.wikipedia.org/wiki/Merlin"
+    },
+    {
+        "name": "Gawain",
+        "lat": 55.865, "lng": -4.257,
+        "category": "deity",
+        "region": "Scotland / Arthurian Britain",
+        "summary": "The most courteous of Arthur\'s knights, whose strange bargain with the Green Knight tested not his sword arm but his honour — and found it, after a moment\'s weakness, intact. His strength waxed with the morning sun and waned at noon, a hint of something older than chivalry in his blood.",
+        "source": "https://en.wikipedia.org/wiki/Gawain"
+    },
+    {
+        "name": "Lancelot",
+        "lat": 51.179, "lng": -1.826,
+        "category": "deity",
+        "region": "Arthurian Britain",
+        "summary": "The greatest knight of the Round Table and its undoing — his love for Guinevere split Arthur\'s fellowship and opened the road to Camlann. Raised beneath the waters of the Lady of the Lake, he bears a name that echoes with the supernatural. In the end he became a hermit, not far from the Table\'s ruins.",
+        "source": "https://en.wikipedia.org/wiki/Lancelot"
+    },
+    {
+        "name": "Corineus",
+        "lat": 50.375, "lng": -4.142,
+        "category": "giant",
+        "region": "Cornwall",
+        "summary": "The Trojan hero granted Cornwall as his kingdom after helping Brutus defeat the giants of Albion. He delighted in wrestling giants — his greatest feat was hurling Gogmagog from a Cornish cliff into the sea below. The cliff has been known ever since as Gogmagog\'s Leap.",
+        "source": "https://en.wikipedia.org/wiki/Corineus"
+    },
+    {
+        "name": "Gog and Magog",
+        "lat": 51.515, "lng": -0.092,
+        "category": "giant",
+        "region": "London",
+        "summary": "The last of the giants of Albion, their effigies carried in the Lord Mayor\'s Show since at least the reign of Henry V. The wooden statues in the Guildhall are their third incarnation — their predecessors were burned in the Great Fire. They are the ancient guardians of the City of London.",
+        "source": "https://en.wikipedia.org/wiki/Gog_and_Magog_(England)"
+    },
+    {
+        "name": "Camelot",
+        "lat": 51.060, "lng": -2.695,
+        "category": "location",
+        "region": "Somerset",
+        "summary": "The legendary seat of Arthur\'s kingdom — most often identified with South Cadbury hillfort in Somerset, where excavations revealed a great Dark Age feasting hall rebuilt exactly when Arthur is said to have lived. Local tradition calls the hill Camelot still, and a lane at its foot is named Arthur\'s Lane.",
+        "source": "https://en.wikipedia.org/wiki/Camelot"
+    },
+    {
+        "name": "Avalon",
+        "lat": 51.144, "lng": -2.699,
+        "category": "location",
+        "region": "Somerset",
+        "summary": "The isle of eternal rest where Arthur was carried after his final battle — identified with Glastonbury by monks who claimed to have found his grave. Arthur sleeps here still, waiting to return when Britain needs him most. Many believe the monks lied about the grave. Few doubt the legend.",
+        "source": "https://en.wikipedia.org/wiki/Avalon"
+    },
+    {
+        "name": "Plynlimon",
+        "lat": 52.467, "lng": -3.782,
+        "category": "giant",
+        "region": "Ceredigion, Wales",
+        "summary": "A great giant of Welsh legend whose three daughters — Hafren, Gwy, and Rheidol — raced each other from his summit to the sea. Hafren reached the sea first, winning greatest fame, and her name became the River Severn. Plynlimon watches still from the highest ground in mid-Wales, father of rivers.",
+        "source": "https://en.wikipedia.org/wiki/Plynlimon"
+    },
+    {
+        "name": "Hafren",
+        "lat": 51.856, "lng": -2.241,
+        "category": "deity",
+        "region": "Welsh Marches",
+        "summary": "Britain\'s longest river, named for Sabrina — a princess drowned in its waters by a wicked stepmother and transformed into a river goddess. Milton gave her immortal verse in Comus. The river was once considered sacred, its banks the boundary between Britain and the Otherworld.",
+        "source": "https://en.wikipedia.org/wiki/Sabrina_(goddess)"
+    },
+    {
+        "name": "Gwy",
+        "lat": 51.617, "lng": -2.660,
+        "category": "deity",
+        "region": "Welsh Marches",
+        "summary": "The second daughter of the giant Plynlimon, who raced her sisters from the mountain summit to the sea. She became the River Wye — a liminal boundary between Wales and England, civilisation and wilderness. Her valley holds Tintern Abbey and some of the oldest oak forest in Britain.",
+        "source": "https://en.wikipedia.org/wiki/River_Wye"
+    },
+    {
+        "name": "Rheidol",
+        "lat": 52.415, "lng": -3.982,
+        "category": "deity",
+        "region": "Ceredigion, Wales",
+        "summary": "The third daughter of the giant Plynlimon, who raced her sisters Hafren and Gwy to the sea. She became the River Rheidol — shorter and wilder than her sisters, tumbling through gorges to Aberystwyth. Of the three, she is the least known but perhaps the most spirited.",
+        "source": "https://en.wikipedia.org/wiki/River_Rheidol"
+    },
+    {
+        "name": "Elder Mother",
+        "lat": 52.640, "lng": -0.993,
+        "category": "deity",
+        "region": "East Midlands",
+        "summary": "The spirit who lives within the elder tree — she must be asked permission before any branch is cut. To burn elder wood without asking brings death to the household within the year. In Scandinavia she is Hyldemor; in England she has no name, only the quiet authority of very old wood.",
+        "source": "https://en.wikipedia.org/wiki/Elder_(tree)#Folklore"
+    },
+    {
+        "name": "Gooseberry Wife",
+        "lat": 50.690, "lng": -1.292,
+        "category": "fairy",
+        "region": "Isle of Wight",
+        "summary": "A great caterpillar-like spirit said to guard gooseberry bushes on the Isle of Wight, keeping children from stealing fruit before it was ripe. Her name alone was enough to keep small hands away from the patch — whether she was real or merely a parents\' invention, the gooseberries remained unmolested.",
+        "source": "https://en.wikipedia.org/wiki/Gooseberry_Wife"
+    },
+    {
+        "name": "Brown Man of the Muirs",
+        "lat": 55.274, "lng": -2.165,
+        "category": "fairy",
+        "region": "Northumberland",
+        "summary": "A small, fierce guardian spirit of the Border moors, protector of moorland animals from hunters who killed more than they needed. He appeared in terrible form to warn the greedy. Those who ignored him met with accidents, madness, or worse before they reached home.",
+        "source": "https://en.wikipedia.org/wiki/Brown_Man_of_the_Muirs"
+    },
+    {
+        "name": "Salmon of Knowledge",
+        "lat": 53.710, "lng": -6.352,
+        "category": "water",
+        "region": "Ireland",
+        "summary": "The greatest fish in the world, which fed on nine hazelnuts of wisdom fallen into the Well of Segais. Whoever tasted it first would gain all knowledge. The druid Finnegas caught it after seven years of searching — but his servant Fionn, burning his thumb on it as he cooked, licked the blister and gained the gift instead.",
+        "source": "https://en.wikipedia.org/wiki/Salmon_of_Knowledge"
+    },
+    {
+        "name": "Helen Duncan",
+        "lat": 56.130, "lng": -3.936,
+        "category": "witch",
+        "region": "Fife, Scotland",
+        "summary": "The last person imprisoned under Britain\'s Witchcraft Act of 1735. A medium who claimed to materialise spirits of the dead, she was arrested in 1944 after apparently revealing that HMS Barham had sunk — a fact the Admiralty had not yet made public. Convicted and imprisoned, she died in 1956 shortly after a police raid on one of her séances.",
+        "source": "https://en.wikipedia.org/wiki/Helen_Duncan"
+    },
+    {
+        "name": "Mother Ludlam",
+        "lat": 51.182, "lng": -0.733,
+        "category": "witch",
+        "region": "Surrey",
+        "summary": "A benevolent witch who lived in a cave near Frensham in Surrey, lending household items to those who needed them from her magic cauldron. When a borrower failed to return it within three days, she refused to lend anything more. The cauldron still sits in Frensham church as proof of the broken bargain.",
+        "source": "https://en.wikipedia.org/wiki/Mother_Ludlam"
+    },
+    {
+        "name": "Dick Turpin",
+        "lat": 53.959, "lng": -1.087,
+        "category": "ghost",
+        "region": "Yorkshire",
+        "summary": "The highwayman hanged at York in 1739 whose ghost — or the ghost of his horse Black Bess — is said to ride the old coach roads of Yorkshire still. The real Turpin was a brutal criminal; legend transformed him into a dashing folk hero, one of the great reinventions in British popular mythology.",
+        "source": "https://en.wikipedia.org/wiki/Dick_Turpin"
+    },
+    {
+        "name": "Blue Men of the Minch",
+        "lat": 57.902, "lng": -6.346,
+        "category": "water",
+        "region": "Outer Hebrides",
+        "summary": "Storm kelpies who swim the strait between Lewis and the Shiant Isles, their grey faces rising from the foam. They challenge passing captains to a battle of rhyming verse — fail and they drag the vessel under. In calm weather they sleep beneath the surface; their restlessness is what makes the Minch so treacherous.",
+        "source": "https://en.wikipedia.org/wiki/Blue_men_of_the_Minch"
+    },
+
+    # ── IRISH MYTHOLOGY & FOLKLORE ─────────────────────────────────────────
+    {
+        "name": "The Dagda",
+        "lat": 53.694, "lng": -6.776,
+        "category": "deity",
+        "region": "County Meath, Ireland",
+        "summary": "The Good God of Irish mythology — father-figure of the Tuatha Dé Danann, keeper of the inexhaustible cauldron from which none went hungry, wielder of a club so vast it took eight men to carry. One end killed the living; the other raised the dead. He feasted and loved without shame and ruled with tremendous power.",
+        "source": "https://en.wikipedia.org/wiki/Dagda"
+    },
+    {
+        "name": "Cú Chulainn",
+        "lat": 54.351, "lng": -8.288,
+        "category": "deity",
+        "region": "County Sligo, Ireland",
+        "summary": "The Hound of Ulster — Ireland's greatest hero, son of the sun god Lugh, who single-handedly defended Ulster against the armies of Connacht while his warriors lay cursed. He entered his battle-fury called the ríastrad, a contortion so terrible his own allies fled from him.",
+        "source": "https://en.wikipedia.org/wiki/Cú_Chulainn"
+    },
+    {
+        "name": "Fionn mac Cumhaill",
+        "lat": 54.994, "lng": -7.309,
+        "category": "deity",
+        "region": "County Antrim, Ireland",
+        "summary": "Leader of the Fianna and Ireland's great warrior-hero, who gained all wisdom by burning his thumb on the Salmon of Knowledge and touching it to his lips. He built the Giant's Causeway to fight his Scottish rival. He sleeps in a cave with his warriors, ready to wake when Ireland truly needs him.",
+        "source": "https://en.wikipedia.org/wiki/Fionn_mac_Cumhaill"
+    },
+    {
+        "name": "Tuatha Dé Danann",
+        "lat": 53.694, "lng": -6.776,
+        "category": "deity",
+        "region": "Ireland",
+        "summary": "The divine race who ruled Ireland before the Gaels arrived — gods of skill, craft, beauty and war. Defeated at the Battle of Tailteann, they retreated into the hollow hills and became the Aos Sí. Their four treasures — the Spear of Lugh, the Sword of Light, the Cauldron of Plenty, and the Stone of Destiny — are the foundation of Irish sovereignty.",
+        "source": "https://en.wikipedia.org/wiki/Tuatha_Dé_Danann"
+    },
+    {
+        "name": "Banshee",
+        "lat": 53.349, "lng": -6.260,
+        "category": "ghost",
+        "region": "Ireland",
+        "summary": "The bean sídhe — the woman of the fairy mound — whose keening wail in the night foretells the death of someone from one of the great Irish families. She may appear as a young woman combing her hair, a matron, or a hideous hag. To hear her is not to cause death, only to be warned of it.",
+        "source": "https://en.wikipedia.org/wiki/Banshee"
+    },
+    {
+        "name": "Pooka",
+        "lat": 53.144, "lng": -7.692,
+        "category": "fairy",
+        "region": "Ireland",
+        "summary": "A shape-shifting spirit of Irish folklore — most often a dark horse with burning eyes that offers rides to unwary travellers before galloping at terrifying speed through bogs and rivers until dawn, when it vanishes and leaves its rider far from home and shaking. It can also take the form of a goat, rabbit, or goblin.",
+        "source": "https://en.wikipedia.org/wiki/Púca"
+    },
+    {
+        "name": "Children of Lir",
+        "lat": 54.270, "lng": -9.050,
+        "category": "deity",
+        "region": "County Mayo, Ireland",
+        "summary": "Four children transformed into swans by their jealous stepmother for nine hundred years — three hundred on the waters of Lough Derravaragh, three hundred on the Sea of Moyle between Ireland and Scotland, three hundred on the waters of Erris. Their singing was so beautiful that all who heard it forgot their sorrows.",
+        "source": "https://en.wikipedia.org/wiki/Children_of_Lir"
+    },
+    {
+        "name": "Balor of the Evil Eye",
+        "lat": 55.229, "lng": -8.329,
+        "category": "giant",
+        "region": "County Donegal, Ireland",
+        "summary": "The terrible king of the Fomorians, whose single great eye — kept shut by a ring — would kill all it looked upon when opened. It took four men to lift his eyelid in battle. His own grandson Lugh slew him with a slingshot through the eye, fulfilling a prophecy Balor had tried all his life to prevent.",
+        "source": "https://en.wikipedia.org/wiki/Balor"
+    },
+    {
+        "name": "The Selkie (Irish tradition)",
+        "lat": 54.992, "lng": -8.706,
+        "category": "water",
+        "region": "County Donegal, Ireland",
+        "summary": "The rón — seal-folk of Irish and Scottish tradition who shed their skins to walk as humans on land. Along the Donegal coast, many families claim selkie ancestry. A fisherman who hides a selkie woman's skin keeps her on land as his wife, but if she ever finds it hidden, she will return to the sea without a backward glance.",
+        "source": "https://en.wikipedia.org/wiki/Selkie"
+    },
+    {
+        "name": "Hill of Tara",
+        "lat": 53.579, "lng": -6.611,
+        "category": "location",
+        "region": "County Meath, Ireland",
+        "summary": "The ancient seat of the High Kings of Ireland, where sovereignty itself was tested by the Lia Fáil — the Stone of Destiny that cried out beneath the rightful king. The Banquet Hall could seat the whole of Ireland. Below it the Tuatha Dé Danann built their great mound. It is the spiritual centre of Ireland.",
+        "source": "https://en.wikipedia.org/wiki/Hill_of_Tara"
+    },
+    {
+        "name": "Newgrange",
+        "lat": 53.695, "lng": -6.476,
+        "category": "location",
+        "region": "County Meath, Ireland",
+        "summary": "A passage tomb older than Stonehenge, built to align with the rising sun on the winter solstice — when light floods the inner chamber for seventeen minutes at dawn. In Irish mythology it is the home of Aengus, god of love and youth, who tricked his father the Dagda out of it by asking to stay for a day and a night — and claiming all days and nights are made of those.",
+        "source": "https://en.wikipedia.org/wiki/Newgrange"
+    },
+    {
+        "name": "Croagh Patrick",
+        "lat": 53.761, "lng": -9.659,
+        "category": "location",
+        "region": "County Mayo, Ireland",
+        "summary": "Ireland's holy mountain, where Saint Patrick fasted for forty days and drove the serpents from Ireland. Before Patrick, it was the sacred mountain of the god Lugh, and his festival Lughnasadh was celebrated on its summit. Pilgrims still climb it barefoot on the last Sunday of July, as they have for three thousand years.",
+        "source": "https://en.wikipedia.org/wiki/Croagh_Patrick"
+    },
+    {
+        "name": "The Giant's Causeway",
+        "lat": 55.240, "lng": -6.511,
+        "category": "giant",
+        "region": "County Antrim, Ireland",
+        "summary": "Forty thousand interlocking basalt columns on the Antrim coast, built by the giant Fionn mac Cumhaill as a road to Scotland so he could fight his rival Benandonner. When Fionn saw his opponent's size, his wife disguised him as a baby — and Benandonner, terrified by the size of the 'infant', fled back to Scotland, tearing up the road behind him.",
+        "source": "https://en.wikipedia.org/wiki/Giant%27s_Causeway"
+    },
+    {
+        "name": "Cailleach Bhéara",
+        "lat": 51.638, "lng": -9.853,
+        "category": "deity",
+        "region": "County Cork, Ireland",
+        "summary": "The ancient hag of the Beara Peninsula — one of the oldest figures in Irish and Scottish mythology. She has lived through seven human lifetimes, each renewed by marrying a young husband who aged and died. She shaped the mountains, drove her cattle across the sky as clouds, and now sits as stone at the tip of the peninsula, waiting.",
+        "source": "https://en.wikipedia.org/wiki/Cailleach"
+    },
+    {
+        "name": "Knocknarea",
+        "lat": 54.270, "lng": -8.553,
+        "category": "location",
+        "region": "County Sligo, Ireland",
+        "summary": "A great limestone hill above Sligo Bay, crowned with a vast cairn said to be the tomb of Queen Medb of Connacht. She is buried standing upright, facing Ulster, her eternal enemy. By tradition, every visitor adds a stone to the cairn — to take one away brings misfortune. Medb may still be inside, armed and waiting.",
+        "source": "https://en.wikipedia.org/wiki/Knocknarea"
+    },
+    {
+        "name": "Queen Medb",
+        "lat": 54.270, "lng": -8.553,
+        "category": "deity",
+        "region": "County Sligo, Ireland",
+        "summary": "Queen of Connacht and one of the most formidable figures in Irish mythology — she launched the great Cattle Raid of Cooley to steal the Brown Bull of Ulster from Cú Chulainn's people. Sovereign goddess as much as warrior queen, no king could rule Connacht without first mating with her. She was finally slain by a piece of cheese.",
+        "source": "https://en.wikipedia.org/wiki/Medb"
+    },
+    {
+        "name": "Lough Derg (St Patrick's Purgatory)",
+        "lat": 54.609, "lng": -7.863,
+        "category": "location",
+        "region": "County Donegal, Ireland",
+        "summary": "An island in Lough Derg said to contain a cave leading directly to Purgatory — revealed to Saint Patrick so he could show doubters what awaited sinners. Medieval pilgrims came from across Europe to descend into it. The penitential tradition continues to this day: three days without sleep, barefoot on the cold stone island.",
+        "source": "https://en.wikipedia.org/wiki/Lough_Derg_(Ulster)"
+    },
+
+
 ]
 
 

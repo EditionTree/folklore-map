@@ -2605,6 +2605,96 @@
       "region": "Cornwall",
       "summary": "Zennor is a village and civil parish in Cornwall, England, United Kingdom. The parish includes the villages of Zennor, Boswednack and Porthmeor and the hamlet of Treen. Zennor lies on the north coast, about 6 miles (10 km) north of Penzance, along the B3306 road which connects St Ives to the A30 road. Alphabetically, the parish is the last in Britain. Its name comes from the Cornish name for the local saint, Saint Senara.",
       "source": "https://en.wikipedia.org/wiki/Zennor"
-    }
+    },
+    {
+    "name": "Changeling",
+    "lat": 52.13,
+    "lng": -3.783,
+    "category": "fairy",
+    "region": "Wales",
+    "summary": "A fairy substitute left in place of a stolen human child. Across Britain and Ireland, changelings explained sudden illness, unusual behaviour, or children believed to have been taken by the Fair Folk. Welsh traditions particularly associate them with the Tylwyth Teg.",
+    "source": "https://en.wikipedia.org/wiki/Changeling"
+  },
+  {
+    "name": "Leprechaun",
+    "lat": 53.3498,
+    "lng": -6.2603,
+    "category": "fairy",
+    "region": "Ireland",
+    "summary": "A solitary fairy shoemaker famous for hidden treasure and impossible bargains. Though often portrayed as cheerful, older folklore presents the leprechaun as cunning, elusive, and almost impossible to outwit.",
+    "source": "https://en.wikipedia.org/wiki/Leprechaun"
+  },
+  {
+    "name": "Dobhar-chú",
+    "lat": 54.062,
+    "lng": -8.302,
+    "category": "water",
+    "region": "County Leitrim, Ireland",
+    "summary": "A monstrous water beast resembling a giant hound or otter, said to inhabit lonely lakes and rivers. Tales describe it attacking livestock and people before vanishing beneath dark waters.",
+    "source": "https://en.wikipedia.org/wiki/Dobhar-ch%C3%BA"
+  },
+  {
+    "name": "Piskies",
+    "lat": 50.191,
+    "lng": -5.52,
+    "category": "fairy",
+    "region": "Cornwall",
+    "summary": "The mischievous fae folk of Cornwall, closely related to pixies. To become 'pisky-led' was to wander lost and confused under their enchantment until the spell was broken.",
+    "source": "https://en.wikipedia.org/wiki/Pixie"
+  },
+  {
+    "name": "Plynlimon",
+    "lat": 52.468,
+    "lng": -3.725,
+    "category": "deity",
+    "region": "Wales",
+    "summary": "The great mountain father of Welsh folklore whose daughters became the rivers Severn, Wye, and in some traditions Rheidol or Ystwyth. The tale transforms the landscape into a family of wandering river spirits.",
+    "source": "https://en.wikipedia.org/wiki/Plynlimon"
+  },
+  {
+    "name": "Hafren",
+    "lat": 52.468,
+    "lng": -3.725,
+    "category": "deity",
+    "region": "Wales",
+    "summary": "The personified River Severn and daughter of Plynlimon in Welsh legend. She journeyed eastward and became Britain's longest river, carrying her story from the mountains to the sea.",
+    "source": "https://en.wikipedia.org/wiki/Severn"
+  },
+  {
+    "name": "Gwy",
+    "lat": 52.468,
+    "lng": -3.725,
+    "category": "deity",
+    "region": "Wales",
+    "summary": "The spirit of the River Wye and daughter of Plynlimon. Welsh tradition portrays her as one of the mountain lord's wandering daughters racing toward the sea.",
+    "source": "https://en.wikipedia.org/wiki/River_Wye"
+  },
+  {
+    "name": "Ystwyth",
+    "lat": 52.415,
+    "lng": -4.082,
+    "category": "deity",
+    "region": "Wales",
+    "summary": "In some later retellings of the Three Sisters of Plynlimon, Ystwyth replaces Rheidol as one of the mountain's daughters. She flows west through Ceredigion to Cardigan Bay.",
+    "source": "https://en.wikipedia.org/wiki/Afon_Ystwyth"
+  },
+  {
+    "name": "King Arthur",
+    "lat": 51.144,
+    "lng": -2.699,
+    "category": "hero",
+    "region": "Somerset",
+    "summary": "The legendary British king who defended Britain against Saxon invaders. Central figure of Arthurian legend, associated with Camelot, the Knights of the Round Table, and quests such as the Holy Grail. Stories place him at the heart of Britain's mythical history.",
+    "source": "https://en.wikipedia.org/wiki/King_Arthur"
+  },
+  {
+    "name": "Camelot",
+    "lat": 51.44,
+    "lng": -1.85,
+    "category": "location",
+    "region": "Wiltshire",
+    "summary": "The legendary castle and court of King Arthur. Often associated with southwestern England, Camelot is depicted as the seat of the Knights of the Round Table and a center of chivalry, justice, and legendary events.",
+    "source": "https://en.wikipedia.org/wiki/Camelot"
+  }
   ]
 }

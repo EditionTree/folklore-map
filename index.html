@@ -381,8 +381,29 @@
     /* ── MOBILE ── */
     @media (max-width: 640px) {
       .subtitle { display: none; }
-      .sidebar { position: absolute; top: 0; bottom: 0; left: 0; z-index: 850; box-shadow: 4px 0 20px rgba(0,0,0,0.3); }
-      .sidebar.collapsed { width: 0; }
+      /* Sidebar overlays map on mobile, starts collapsed */
+      .sidebar {
+        position: absolute; top: 0; bottom: 0; left: 0;
+        z-index: 850; box-shadow: 4px 0 20px rgba(0,0,0,0.3);
+        width: var(--sidebar-w);
+      }
+      .sidebar.collapsed {
+        width: 0; opacity: 0; pointer-events: none;
+        box-shadow: none;
+      }
+      /* Filter bar scrolls horizontally instead of wrapping */
+      .filter-bar {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        padding: 5px 10px;
+        gap: 5px;
+      }
+      .filter-bar::-webkit-scrollbar { display: none; }
+      .filter-btn { font-size: 11px; padding: 2px 8px; white-space: nowrap; flex-shrink: 0; }
+      .count-badge { display: none; }
+      .entry-count { display: none; }
       .legend-panel { display: none; }
       footer span:first-child { display: none; }
     }
@@ -455,6 +476,12 @@ const CATEGORIES = {
 let nightMode = false;
 let markers = [];
 let activeFilter = 'all';
+let sidebarOpen = window.innerWidth > 640;
+
+// Collapse sidebar on mobile at load
+if (!sidebarOpen) {
+  document.getElementById('sidebar')?.classList.add('collapsed');
+}
 
 const BOUNDS = L.latLngBounds([46.0, -14.0], [65.0, 6.0]);
 const map = L.map('map', {
@@ -644,7 +671,7 @@ function toggleSidebar() {
   sidebarOpen = !sidebarOpen;
   document.getElementById('sidebar').classList.toggle('collapsed', !sidebarOpen);
   document.getElementById('sidebarToggleBtn').textContent = sidebarOpen ? '✕ Entries' : '☰ Entries';
-  setTimeout(() => map.invalidateSize(), 300);
+  if (window.innerWidth > 640) setTimeout(() => map.invalidateSize(), 300);
 }
 
 function buildSidebarList(legends) {

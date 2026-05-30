@@ -84,6 +84,23 @@ CATEGORIES = [
     ("Category:Haunted_locations_in_Scotland",      "location"),
     ("Category:Haunted_castles_in_England",         "location"),
     ("Category:Haunted_castles_in_Scotland",        "location"),
+    # Irish categories — expanded for British Isles coverage
+    ("Category:Irish_legendary_creatures",          "beast"),
+    ("Category:Irish_folklore",                     "fairy"),
+    ("Category:Irish_ghosts",                       "ghost"),
+    ("Category:Irish_fairies",                      "fairy"),
+    ("Category:Mythological_creatures_of_Ireland",  "beast"),
+    ("Category:Mythological_locations_in_Ireland",  "location"),
+    ("Category:Irish_mythology",                    "deity"),
+    ("Category:Ulster_Cycle",                       "deity"),
+    ("Category:Fenian_Cycle",                       "deity"),
+    ("Category:Mythological_Cycle",                 "deity"),
+    ("Category:Tuatha_Dé_Danann",                   "deity"),
+    ("Category:Fomorians",                          "deity"),
+    ("Category:Irish_witchcraft",                   "witch"),
+    ("Category:Haunted_locations_in_Ireland",       "location"),
+    ("Category:Sacred_sites_in_Ireland",            "location"),
+    ("Category:Megalithic_monuments_in_Ireland",    "location"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -95,6 +112,7 @@ LISTS = [
     ("List of dragons in mythology and legend",    "dragon"),
     ("List of giants in mythology and folklore",   "giant"),
     ("List of Arthurian characters",               "deity"),
+    ("List of Irish mythological figures",         "deity"),
 ]
 
 CATEGORY_LABELS = {

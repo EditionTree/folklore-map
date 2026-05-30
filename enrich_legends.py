@@ -30,7 +30,7 @@ RATE_LIMIT    = 0.5   # seconds between API calls
 # ---------------------------------------------------------------------------
 CATEGORY_REMAP = {
     "ancient_site": "location",   # stone circles, hillforts etc → sacred site
-    "hero":         "deity",      # legendary heroes sit well under deity
+    # "hero" is now a valid category — no remap needed
     "ritual":       "location",   # festivals and rituals tied to places
     "norse":        "deity",      # Norse figures → deity
 }
@@ -38,7 +38,7 @@ CATEGORY_REMAP = {
 # All valid map categories after remapping
 VALID_CATEGORIES = {
     "beast", "ghost", "fairy", "water", "dragon",
-    "witch", "deity", "giant", "location"
+    "witch", "deity", "giant", "location", "hero"
 }
 
 # ---------------------------------------------------------------------------
@@ -131,18 +131,12 @@ REMOVE_ENTRIES = {
 FORCE_CATEGORY = {
     # Giants
     "Gogmagog":               "giant",
-    "Fingal":                 "giant",
     "Rhitta Gawr":            "giant",
     "Bran the Blessed":       "giant",
     "Cerne Abbas Giant":      "giant",
     "Giant's Causeway":       "giant",
     # Deities / heroes
-    "Beowulf":                "deity",
-    "The Green Knight":       "deity",
-    "Mabon ap Modron":        "deity",
-    "Wayland the Smith":      "deity",
     # Ghosts / spirits
-    "Dunstan and the Devil":  "ghost",
     "Redcap":                 "ghost",    # murderous goblin spirit, not a beast
     "The Black Dog of Newgate": "ghost",  # haunting, not a creature
     "Cock Lane ghost":        "ghost",
@@ -196,9 +190,6 @@ FORCE_CATEGORY = {
     "Blodeuwedd":             "deity",
     "Gwyn ap Nudd":           "deity",
     "Merlin":                 "deity",
-    "Gawain":                 "deity",
-    "Lancelot":               "deity",
-    "Corineus":               "giant",
     "Gog and Magog":          "giant",
     "Camelot":                "location",
     "Avalon":                 "location",
@@ -228,6 +219,20 @@ FORCE_CATEGORY = {
     "Gooseberry Wife":        "fairy",
     "Hyter Sprite":           "fairy",
     "Wights":                 "ghost",
+    # Heroic Figures — mortals defined by deeds not domains
+    "Lancelot":               "hero",
+    "Gawain":                 "hero",
+    "Beowulf":                "hero",
+    "The Green Knight":       "hero",
+    "Corineus":               "hero",
+    "Cú Chulainn":            "hero",
+    "Fionn mac Cumhaill":     "hero",
+    "Boudicca":               "hero",
+    "Fingal":                 "hero",
+    "Wayland the Smith":      "hero",
+    "Dunstan and the Devil":  "hero",
+    "Dick Turpin":            "hero",
+    "Helen Duncan":           "hero",
 }
 
 # ---------------------------------------------------------------------------

@@ -1,20 +1,16 @@
 {
-  "generated": "2026-05-29T21:37:20.007746Z",
-  "total": 176,
+  "generated": "2026-05-29T21:07:13.870231Z",
+  "total": 238,
   "categories": {
     "beast": "Beast",
     "ghost": "Ghost",
-    "fairy": "Fae & Spirits",
-    "water": "Water Creatures",
+    "fairy": "Fae & spirit",
+    "water": "Water spirit",
     "dragon": "Dragon",
     "witch": "Witch",
-    "deity": "Deities",
+    "deity": "God & goddess",
     "giant": "Giant",
-    "location": "Legendary Sites",
-    "ancient_site": "Ancient & Sacred Sites",
-    "hero": "Heroes & Legendary Figures",
-    "ritual": "Rituals & Folk Customs",
-    "norse": "Norse & Northern Lore"
+    "location": "Sacred site"
   },
   "legends": [
     {
@@ -57,7 +53,7 @@
       "name": "Avebury",
       "lat": 51.428,
       "lng": -1.854,
-      "category": "location",
+      "category": "ancient_site",
       "region": "Wiltshire",
       "summary": "The largest stone circle in the world — so vast a village was built inside it. The Devil is said to have danced here. At night the stones are said to move, drink from the stream, and return before dawn. No one has ever counted them twice and got the same number.",
       "source": "https://en.wikipedia.org/wiki/Avebury"
@@ -72,13 +68,31 @@
       "source": "https://en.wikipedia.org/wiki/Barghest"
     },
     {
+      "name": "Barns of Ayr",
+      "lat": 55.4608,
+      "lng": -4.6275,
+      "category": "location",
+      "region": "Scotland",
+      "summary": "The Barns of Ayr was, according to Blind Harry in The Wallace, a site in Ayr, Scotland, which was used as English barracks. According to Blind Harry, a number of Scottish barons of Ayrshire were called to a meeting with King Edward I of England at a barn used as an English military barracks, only to be massacred and hanged, including Sir Ronald Crawford Sheriff of Ayr, Sir Bryce Blair of Blair, Sir Neil Montgomerie of Cassillis, Crystal of Set...",
+      "source": "https://en.wikipedia.org/wiki/Barns_of_Ayr"
+    },
+    {
       "name": "Battle of Barry",
       "lat": 56.5011,
       "lng": -2.7083,
-      "category": "location",
+      "category": "deity",
       "region": "Britain",
       "summary": "The Battle of Barry is a legendary battle in which the Scots, purportedly led by Malcolm II, defeated a Danish invasion force in 1010 AD. Its supposed site in Carnoustie, Angus can be seen in early Ordnance Survey maps. The history of the event relies heavily on tradition and it is considered to be apocryphal.",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Barry"
+    },
+    {
+      "name": "Battle of Britain Memorial, Capel-le-Ferne",
+      "lat": 51.0985,
+      "lng": 1.2059,
+      "category": "location",
+      "region": "Kent",
+      "summary": "The Battle of Britain Memorial is a monument to aircrew who flew in the Battle of Britain. It is sited on the White Cliffs at Capel-le-Ferne, near Folkestone, on the coast of Kent.",
+      "source": "https://en.wikipedia.org/wiki/Battle_of_Britain_Memorial%2C_Capel-le-Ferne"
     },
     {
       "name": "Beast of Bodmin",
@@ -88,6 +102,15 @@
       "region": "Cornwall",
       "summary": "A large phantom cat said to roam Bodmin Moor, blamed for mutilated livestock since the 1990s. Official investigations found no conclusive evidence, yet sightings persist to this day.",
       "source": "https://en.wikipedia.org/wiki/Beast_of_Bodmin"
+    },
+    {
+      "name": "Beinn a' Bheithir",
+      "lat": 56.6537,
+      "lng": -5.1716,
+      "category": "location",
+      "region": "Highland, Scotland",
+      "summary": "Beinn a' Bheithir is a mountain south of Ballachulish and Loch Leven in the Scottish Highlands. It has two Munro summits: Sgorr Dhearg at 1,024 m (3,360 ft) and Sgorr Dhonuill at 1,001 m (3,284 ft).",
+      "source": "https://en.wikipedia.org/wiki/Beinn_a%27_Bheithir"
     },
     {
       "name": "Belenus",
@@ -102,7 +125,7 @@
       "name": "Beltane Fire Festival",
       "lat": 55.955,
       "lng": -3.182,
-      "category": "location",
+      "category": "ritual",
       "region": "Edinburgh, Scotland",
       "summary": "A modern fire festival on Calton Hill inspired by ancient Beltane seasonal rites. It turns the coming of summer into theatre, flame, drums, and red-painted myth.",
       "source": "https://en.wikipedia.org/wiki/Beltane_Fire_Festival"
@@ -111,7 +134,7 @@
       "name": "Beowulf",
       "lat": 52.6,
       "lng": 1.3,
-      "category": "deity",
+      "category": "hero",
       "region": "Anglo-Saxon England",
       "summary": "The great hero of the Old English epic, monster-slayer of Grendel, Grendel's mother, and finally a dragon. Though set in Scandinavia, the poem is a cornerstone of England's mythic inheritance.",
       "source": "https://en.wikipedia.org/wiki/Beowulf"
@@ -133,6 +156,15 @@
       "region": "Lincolnshire",
       "summary": "The Black Lady of Bradley Woods is a ghost which reportedly haunts the woods near the village of Bradley, Lincolnshire, England.",
       "source": "https://en.wikipedia.org/wiki/Black_Lady_of_Bradley_Woods"
+    },
+    {
+      "name": "Black Rock Gorge",
+      "lat": 57.6667,
+      "lng": -4.37,
+      "category": "location",
+      "region": "Scotland",
+      "summary": "Black Rock Gorge is a deep and narrow cleft in Old Red Sandstone conglomerate through which the Allt Graad flows at Evanton in Easter Ross, Scotland. It was formed by down-cutting by sediment-laden water during post-glacial rebound.",
+      "source": "https://en.wikipedia.org/wiki/Black_Rock_Gorge"
     },
     {
       "name": "Black Shuck",
@@ -183,7 +215,7 @@
       "name": "Bran the Blessed",
       "lat": 51.508,
       "lng": -0.076,
-      "category": "giant",
+      "category": "hero",
       "region": "London",
       "summary": "A giant king of Britain so vast no house could contain him. He carried his armies across the Irish Sea on his own back. His severed head, buried beneath the Tower of London, was said to protect Britain from invasion — until Arthur dug it up.",
       "source": "https://en.wikipedia.org/wiki/Brân_the_Blessed"
@@ -219,7 +251,7 @@
       "name": "Bryn Cader Faner",
       "lat": 52.8982,
       "lng": -4.0114,
-      "category": "location",
+      "category": "ancient_site",
       "region": "Wales",
       "summary": "The Bryn Cader Faner is a Bronze Age round cairn which lies to the east of the small hamlet of Talsarnau in the Ardudwy area of Gwynedd in Wales. The diameter is 8.7 metres (29 ft) and there are 18 thin jagged pillars which jut upwards from the low cairn. It is thought to date back to the late third millennium BC.\nThe site was disturbed by 19th-century treasure hunters, who left a hole in the centre, indicating the position of a cist or a grave.",
       "source": "https://en.wikipedia.org/wiki/Bryn_Cader_Faner"
@@ -228,7 +260,7 @@
       "name": "Bryn Gwyn stones",
       "lat": 53.1772,
       "lng": -4.3021,
-      "category": "location",
+      "category": "ancient_site",
       "region": "Wales",
       "summary": "The Bryn Gwyn Stones or Bryn Gwyn Standing Stones are neolithic stones in Brynsiencyn on Anglesey.",
       "source": "https://en.wikipedia.org/wiki/Bryn_Gwyn_stones"
@@ -241,6 +273,15 @@
       "region": "Cornwall",
       "summary": "A Cornish spirit of the sea, mines, and weather, sometimes treated as a hobgoblin and sometimes as something older and darker. Fisherfolk left offerings to keep Bucca friendly.",
       "source": "https://en.wikipedia.org/wiki/Bucca_(mythological_creature)"
+    },
+    {
+      "name": "Bulford Kiwi",
+      "lat": 51.1941,
+      "lng": -1.7151,
+      "category": "location",
+      "region": "Wiltshire",
+      "summary": "The Bulford Kiwi is a large depiction of a kiwi, carved into the chalk on Beacon Hill above the military town of Bulford on Salisbury Plain in Wiltshire, England. It was created in 1919 by soldiers of the New Zealand Expeditionary Force who were awaiting repatriation following the end of the First World War.",
+      "source": "https://en.wikipedia.org/wiki/Bulford_Kiwi"
     },
     {
       "name": "Bwbach",
@@ -279,13 +320,31 @@
       "source": "https://en.wikipedia.org/wiki/Cailleach"
     },
     {
+      "name": "Canewdon",
+      "lat": 51.6162,
+      "lng": 0.7444,
+      "category": "witch",
+      "region": "Essex",
+      "summary": "Canewdon is a village and civil parish in the Rochford district of Essex, England. The village is located approximately 4 miles (6.4 km) northeast of the town of Rochford, while the parish extends for several miles on the southern side of the River Crouch. At the 2021 census the parish had a population of 1,656.",
+      "source": "https://en.wikipedia.org/wiki/Canewdon"
+    },
+    {
       "name": "Cantre'r Gwaelod",
       "lat": 52.5,
       "lng": -4.5,
-      "category": "location",
+      "category": "deity",
       "region": "Wales",
       "summary": "Cantre'r Gwaelod, also known as Cantref Gwaelod or Cantref y Gwaelod, is a legendary ancient sunken kingdom said to have occupied a tract of fertile land lying between Ramsey Island and Bardsey Island in what is now Cardigan Bay to the west of Wales. It has been described as a \"Welsh Atlantis\" and has featured in folklore, literature, and song.",
       "source": "https://en.wikipedia.org/wiki/Cantre%27r_Gwaelod"
+    },
+    {
+      "name": "Cardiff University",
+      "lat": 51.49,
+      "lng": -3.18,
+      "category": "deity",
+      "region": "Wales",
+      "summary": "Cardiff University is a public research university in Cardiff, Wales. It was established in 1883 as the University College of South Wales and Monmouthshire and became a founding college of the University of Wales in 1893.",
+      "source": "https://en.wikipedia.org/wiki/Cardiff_University"
     },
     {
       "name": "Castle Downs, Cornwall",
@@ -345,7 +404,7 @@
       "name": "Cheetham Close",
       "lat": 53.6388,
       "lng": -2.431,
-      "category": "location",
+      "category": "ancient_site",
       "region": "Lancashire",
       "summary": "Cheetham Close is a megalithic site and scheduled ancient monument located in Lancashire, very close to the boundary with Greater Manchester, England. The megalith was in good condition until a farmer from Turton sledgehammered the circle in the 1870s. According to an article published in 1829, Cheetham Close was once a druidical ritual place and a Roman road passed 'within two hundred yards' of the megalith.",
       "source": "https://en.wikipedia.org/wiki/Cheetham_Close"
@@ -363,7 +422,7 @@
       "name": "Chûn Quoit",
       "lat": 50.1486,
       "lng": -5.6377,
-      "category": "location",
+      "category": "ancient_site",
       "region": "Cornwall",
       "summary": "Chûn Quoit is one of the best preserved of all Neolithic quoits in western Cornwall, England, United Kingdom.",
       "source": "https://en.wikipedia.org/wiki/Ch%C3%BBn_Quoit"
@@ -390,10 +449,19 @@
       "name": "Craddock Moor stone circle",
       "lat": 50.5199,
       "lng": -4.4717,
-      "category": "location",
+      "category": "ancient_site",
       "region": "Cornwall",
       "summary": "Craddock Moor Stone Circle or Craddock Moor Circle is a stone circle located near Minions on Bodmin Moor in Cornwall, UK. It is situated around half a mile Northwest of The Hurlers.",
       "source": "https://en.wikipedia.org/wiki/Craddock_Moor_stone_circle"
+    },
+    {
+      "name": "Crook of Devon",
+      "lat": 56.184,
+      "lng": -3.557,
+      "category": "witch",
+      "region": "Devon",
+      "summary": "Crook of Devon is a village within the parish of Fossoway in Kinross-shire about six miles west of Kinross on the A977 road. Its name derives from the nearly 180-degree turn, from generally eastwards to generally westwards and resembling the shape of a shepherd's crook, which the River Devon makes at the village.",
+      "source": "https://en.wikipedia.org/wiki/Crook_of_Devon"
     },
     {
       "name": "Cŵn Annwn",
@@ -417,7 +485,7 @@
       "name": "Devil's Arrows",
       "lat": 54.095,
       "lng": -1.392,
-      "category": "location",
+      "category": "ancient_site",
       "region": "North Yorkshire",
       "summary": "Three great standing stones near Boroughbridge, said to have been hurled by the Devil at the town of Aldborough. He missed, which is exactly the kind of thing folklore remembers forever.",
       "source": "https://en.wikipedia.org/wiki/Devil%27s_Arrows"
@@ -489,7 +557,7 @@
       "name": "Dunstan and the Devil",
       "lat": 51.425,
       "lng": -2.671,
-      "category": "ghost",
+      "category": "hero",
       "region": "Somerset",
       "summary": "Saint Dunstan was said to have seized the Devil by the nose with blacksmith's tongs. The tale explains horseshoes as protection and gives English folklore one of its best infernal workplace accidents.",
       "source": "https://en.wikipedia.org/wiki/Dunstan"
@@ -502,6 +570,24 @@
       "region": "London",
       "summary": "The Enfield poltergeist was a claim of supernatural activity at 284 Green Street, a council house in Brimsdown, Enfield, London, England, between 1977 and 1979. The alleged poltergeist activity was centred on sisters Janet, aged 11, and Margaret Hodgson, aged 13.",
       "source": "https://en.wikipedia.org/wiki/Enfield_poltergeist"
+    },
+    {
+      "name": "Enfield poltergeist",
+      "lat": 51.6553,
+      "lng": -0.0355,
+      "category": "ghost",
+      "region": "London",
+      "summary": "The Enfield poltergeist was a claim of supernatural activity at 284 Green Street, a council house in Brimsdown, Enfield, London, England, between 1977 and 1979. The alleged poltergeist activity was centred on sisters Janet, aged 11, and Margaret Hodgson, aged 13.",
+      "source": "https://en.wikipedia.org/wiki/Enfield_poltergeist"
+    },
+    {
+      "name": "English Folk Dance and Song Society",
+      "lat": 51.5381,
+      "lng": -0.1493,
+      "category": "beast",
+      "region": "Britain",
+      "summary": "The English Folk Dance and Song Society is an organisation that promotes English folk music and folk dance. EFDSS was formed in 1932 when two organisations merged: the Folk-Song Society and the English Folk Dance Society. The EFDSS, a member-based organisation, was incorporated in 1935 and became a registered charity in 1963.",
+      "source": "https://en.wikipedia.org/wiki/English_Folk_Dance_and_Song_Society"
     },
     {
       "name": "Epona",
@@ -519,6 +605,15 @@
       "category": "fairy",
       "region": "Isle of Man",
       "summary": "A small Isle of Man bridge where travellers traditionally greet the fairies as they pass. Failing to acknowledge the Little People is considered unlucky, especially on journeys across the island.",
+      "source": "https://en.wikipedia.org/wiki/Fairy_Bridge_%28Isle_of_Man%29"
+    },
+    {
+      "name": "Fairy Bridge (Isle of Man)",
+      "lat": 54.1144,
+      "lng": -4.5953,
+      "category": "fairy",
+      "region": "Isle of Man",
+      "summary": "Fairy Bridge, Isle of Man is a small bridge over the Santon Burn in the Isle of Man, located on the primary A5 Port Erin to Douglas road, at grid reference 305720, on the parish boundary between Santon and Malew. A superstition associated with the Fairy Bridge is that passers-by must greet the fairies as they cross it; it is considered bad luck not to greet them.",
       "source": "https://en.wikipedia.org/wiki/Fairy_Bridge_%28Isle_of_Man%29"
     },
     {
@@ -543,10 +638,55 @@
       "name": "Fingal",
       "lat": 56.432,
       "lng": -6.341,
-      "category": "giant",
+      "category": "hero",
       "region": "Staffa, Scotland",
       "summary": "The great Gaelic giant-hero Fionn mac Cumhaill, known in Scotland as Fingal. He built the causeway between Scotland and Ireland so he could fight his Ulster rival — the hexagonal columns of Fingal's Cave and the Giant's Causeway are said to be his road.",
       "source": "https://en.wikipedia.org/wiki/Fionn_mac_Cumhaill"
+    },
+    {
+      "name": "Fintan's Grave",
+      "lat": 52.8467,
+      "lng": -8.3905,
+      "category": "location",
+      "region": "Arra Mountains",
+      "summary": "Fintan's Grave is a mythological cave on the Irish mountain Tul Tuinde in the Arra Mountains near Lough Derg.",
+      "source": "https://en.wikipedia.org/wiki/Fintan%27s_Grave"
+    },
+    {
+      "name": "Folkestone White Horse",
+      "lat": 51.1012,
+      "lng": 1.1397,
+      "category": "ancient_site",
+      "region": "Kent",
+      "summary": "The Folkestone White Horse is a white horse hill figure, carved into Cheriton Hill, Folkestone, Kent, South East England. It overlooks the English terminal of the Channel Tunnel and was completed in June 2003.",
+      "source": "https://en.wikipedia.org/wiki/Folkestone_White_Horse"
+    },
+    {
+      "name": "Four Ashes, Buckinghamshire",
+      "lat": 51.654,
+      "lng": -0.734,
+      "category": "witch",
+      "region": "Britain",
+      "summary": "Four Ashes is a hamlet in the parish of Hughenden, in Buckinghamshire, England.",
+      "source": "https://en.wikipedia.org/wiki/Four_Ashes%2C_Buckinghamshire"
+    },
+    {
+      "name": "Fovant Badges",
+      "lat": 51.0534,
+      "lng": -1.9783,
+      "category": "location",
+      "region": "Wiltshire",
+      "summary": "The Fovant Badges are a set of regimental badges cut into a chalk hill, Fovant Down, near Fovant, in south-west Wiltshire, England. They are between Salisbury and Shaftesbury on the A30 road in the Nadder valley, and are approximately 1⁄2 mile (800 m) south-east of Fovant village. They were created by soldiers garrisoned nearby, and waiting to go to France, during the First World War; the first in 1916.",
+      "source": "https://en.wikipedia.org/wiki/Fovant_Badges"
+    },
+    {
+      "name": "Gatton Park",
+      "lat": 51.2589,
+      "lng": -0.1725,
+      "category": "location",
+      "region": "Britain",
+      "summary": "Gatton Park is a country estate set in parkland landscaped by Capability Brown and gardens by Henry Ernest Milner and Edward White at Gatton, near Reigate in Surrey, England.",
+      "source": "https://en.wikipedia.org/wiki/Gatton_Park"
     },
     {
       "name": "Giant's Causeway",
@@ -570,7 +710,7 @@
       "name": "Gogmagog",
       "lat": 50.06,
       "lng": -5.713,
-      "category": "giant",
+      "category": "hero",
       "region": "Cornwall",
       "summary": "The last of the giants of Albion, said to have roamed Cornwall before being cast into the sea by the Trojan hero Corineus. Effigies of Gog and Magog still march in the Lord Mayor's Show — ancient guardians of the City of London.",
       "source": "https://en.wikipedia.org/wiki/Gogmagog_(giant)"
@@ -597,7 +737,7 @@
       "name": "Grubstones",
       "lat": 53.8984,
       "lng": -1.794,
-      "category": "location",
+      "category": "ancient_site",
       "region": "Yorkshire",
       "summary": "The Grubstones is a stone circle on Burley Moor in West Yorkshire, England. It is believed to be either an embanked stone circle or a ring cairn.",
       "source": "https://en.wikipedia.org/wiki/Grubstones"
@@ -621,6 +761,15 @@
       "source": "https://en.wikipedia.org/wiki/Gwrach-y-Rhibyn"
     },
     {
+      "name": "Harrow on the Hill",
+      "lat": 51.5655,
+      "lng": -0.3327,
+      "category": "deity",
+      "region": "London",
+      "summary": "Harrow on the Hill or Harrow-on-the-Hill is an affluent area and historic village in the London Borough of Harrow in north-west London, England. The name refers to Harrow Hill, 408 feet (124 m), and is located some half a mile south of the modern town of Harrow. The village dates back to early medieval times, built around the 11th-century St Mary's Church, and is the location of three schools, namely, Harrow, St Dominic's and John Lyon.",
+      "source": "https://en.wikipedia.org/wiki/Harrow_on_the_Hill"
+    },
+    {
       "name": "Henderson Stone",
       "lat": 56.6812,
       "lng": -5.096,
@@ -642,10 +791,19 @@
       "name": "Hobby Horse of Padstow",
       "lat": 50.542,
       "lng": -4.937,
-      "category": "location",
+      "category": "ritual",
       "region": "Cornwall",
       "summary": "A May Day custom in which the 'Obby 'Oss dances through Padstow with music, pursuit, and ritual energy. It is one of Britain's most famous surviving folk ceremonies.",
       "source": "https://en.wikipedia.org/wiki/%27Obby_%27Oss_festival"
+    },
+    {
+      "name": "Innerwick Castle",
+      "lat": 55.9556,
+      "lng": -2.426,
+      "category": "witch",
+      "region": "Scotland",
+      "summary": "Innerwick Castle is a ruined castle in East Lothian, Scotland, near the village of Innerwick, 5 miles (8.0 km) from Dunbar, on the Thornton Burn, and overlooking Thornton Glen.",
+      "source": "https://en.wikipedia.org/wiki/Innerwick_Castle"
     },
     {
       "name": "Jenny Greenteeth",
@@ -669,10 +827,19 @@
       "name": "Julian's Bower",
       "lat": 53.6849,
       "lng": -0.6694,
-      "category": "location",
+      "category": "ancient_site",
       "region": "Lincolnshire",
       "summary": "Julian's Bower or Julian Bower is a name given to turf mazes in several different parts of England. Only one of this name still exists, at Alkborough in North Lincolnshire. It has also been known by corrupted forms of the name, such as \"Gillian's Bore\" and \"Gilling Bore\".",
       "source": "https://en.wikipedia.org/wiki/Julian%27s_Bower"
+    },
+    {
+      "name": "Keith Marischal",
+      "lat": 55.8697,
+      "lng": -2.8819,
+      "category": "witch",
+      "region": "Scotland",
+      "summary": "Keith Marischal is a Scottish Baronial country house lying in the parish of Humbie, East Lothian, Scotland. The original building was an \"L-shaped\" tower house, built long before 1589 when it was extended into a U-shaped courtyard house. The building acquired its modern appearance in the 19th century when the courtyard was filled in. The house is protected as a category B listed building.",
+      "source": "https://en.wikipedia.org/wiki/Keith_Marischal"
     },
     {
       "name": "Kelpie",
@@ -682,6 +849,42 @@
       "region": "Highland, Scotland",
       "summary": "A shape-shifting water horse lurking in Scottish lochs. It appears as a magnificent steed to lure riders onto its back before plunging into the depths. Its skin is adhesive — those who mount it cannot let go.",
       "source": "https://en.wikipedia.org/wiki/Kelpie"
+    },
+    {
+      "name": "Kirkcudbright Tolbooth",
+      "lat": 54.8356,
+      "lng": -4.0558,
+      "category": "witch",
+      "region": "Scotland",
+      "summary": "Kirkcudbright Tolbooth is a historic municipal building in Kirkcudbright in Kirkcudbrightshire in the administrative area of Dumfries and Galloway, Scotland. Built between 1627 and 1629 to serve the town as a centre of commercial administration, a meeting place for the council, and a prison, it was used for all these roles until the late eighteenth century when the council moved much of its business to new, larger premises they had constructed...",
+      "source": "https://en.wikipedia.org/wiki/Kirkcudbright_Tolbooth"
+    },
+    {
+      "name": "Kirkharle",
+      "lat": 55.137,
+      "lng": -1.978,
+      "category": "deity",
+      "region": "Northumberland",
+      "summary": "Kirkharle is a village and former civil parish, now in the parish of Kirkwhelpington, in the county of Northumberland in Northern England located about 12 miles (19 km) west of the town of Morpeth, just to the west of the crossroads of the A696 and B6342 roads. It is famous as the birthplace of Lancelot 'Capability' Brown in the early eighteenth century, Britain's most celebrated landscape gardener. In 1951 the parish had a population of 69.",
+      "source": "https://en.wikipedia.org/wiki/Kirkharle"
+    },
+    {
+      "name": "Kirriemuir",
+      "lat": 56.6692,
+      "lng": -3.0051,
+      "category": "witch",
+      "region": "Scotland",
+      "summary": "Kirriemuir, sometimes called Kirrie or the Wee Red Toon, is a burgh in Angus, Scotland, United Kingdom.",
+      "source": "https://en.wikipedia.org/wiki/Kirriemuir"
+    },
+    {
+      "name": "Kitterland",
+      "lat": 54.0623,
+      "lng": -4.7967,
+      "category": "fairy",
+      "region": "Isle of Man",
+      "summary": "Kitterland is an islet in the Calf Sound between the Isle of Man and the Calf of Man in the Irish Sea.",
+      "source": "https://en.wikipedia.org/wiki/Kitterland"
     },
     {
       "name": "Knocker",
@@ -729,6 +932,60 @@
       "source": "https://en.wikipedia.org/wiki/Lambton_Worm"
     },
     {
+      "name": "Lancashire Witches Walk",
+      "lat": 53.968,
+      "lng": -2.436,
+      "category": "witch",
+      "region": "Lancashire",
+      "summary": "The Lancashire Witches Walk is a 51-mile (82 km) long-distance footpath opened in 2012, between Barrowford and Lancaster, all in Lancashire, England. It starts at Pendle Heritage Centre in Barrowford before passing through the Forest of Pendle, the town of Clitheroe and the Forest of Bowland to finish at Lancaster Castle.",
+      "source": "https://en.wikipedia.org/wiki/Lancashire_Witches_Walk"
+    },
+    {
+      "name": "Latoon Fairy Bush",
+      "lat": 52.7901,
+      "lng": -8.9213,
+      "category": "fairy",
+      "region": "Ireland",
+      "summary": "The Latoon fairy bush, or Latoon fairy tree, is a whitethorn tree situated beside the M18 motorway in Latoon, County Clare, Ireland that was the subject of a preservation campaign led by Irish folklorist Eddie Lenihan in 1999 to save it from being cut down when the motorway was being built. According to Lenihan, the tree is an \"important meeting place for supernatural forces of the region\".",
+      "source": "https://en.wikipedia.org/wiki/Latoon_fairy_bush"
+    },
+    {
+      "name": "Latoon fairy bush",
+      "lat": 52.7901,
+      "lng": -8.9213,
+      "category": "fairy",
+      "region": "Ireland",
+      "summary": "The Latoon fairy bush, or Latoon fairy tree, is a whitethorn tree situated beside the M18 motorway in Latoon, County Clare, Ireland that was the subject of a preservation campaign led by Irish folklorist Eddie Lenihan in 1999 to save it from being cut down when the motorway was being built. According to Lenihan, the tree is an \"important meeting place for supernatural forces of the region\".",
+      "source": "https://en.wikipedia.org/wiki/Latoon_fairy_bush"
+    },
+    {
+      "name": "Lenham",
+      "lat": 51.238,
+      "lng": 0.716,
+      "category": "location",
+      "region": "Kent",
+      "summary": "Lenham is a market village and civil parish in the Maidstone district, in Kent, England, situated on the southern edge of the North Downs, 9 miles (14 km) east of Maidstone. The picturesque square in the village has two public houses, a couple of restaurants, and a tea-room. The parish has a population of 3,370 according to the 2011 Census.",
+      "source": "https://en.wikipedia.org/wiki/Lenham"
+    },
+    {
+      "name": "Lenham Cross",
+      "lat": 51.2424,
+      "lng": 0.7291,
+      "category": "location",
+      "region": "Kent",
+      "summary": "The Lenham Cross is a chalk cross carved into the hillside to the north of Lenham in Kent, in England.",
+      "source": "https://en.wikipedia.org/wiki/Lenham_Cross"
+    },
+    {
+      "name": "Lia Fáil",
+      "lat": 53.5786,
+      "lng": -6.6121,
+      "category": "ancient_site",
+      "region": "Ireland",
+      "summary": "The Fál or Lia Fáil is a stone at the Inauguration Mound on the Hill of Tara in County Meath, Ireland, which served as the coronation stone for the King of Tara and hence High King of Ireland. It is also known as the Stone of Destiny or Speaking Stone. According to legend, all of the kings of Ireland were crowned on the stone up to Muirchertach mac Ercae, c. 500 AD.",
+      "source": "https://en.wikipedia.org/wiki/Lia_F%C3%A1il"
+    },
+    {
       "name": "Llyn y Fan Fach",
       "lat": 51.8819,
       "lng": -3.7419,
@@ -736,6 +993,15 @@
       "region": "Wales",
       "summary": "A Welsh lake famed for the Lady of the Lake, who married a mortal under strict conditions before returning beneath the water. Their sons became the legendary Physicians of Myddfai.",
       "source": "https://en.wikipedia.org/wiki/Llyn_y_Fan_Fach"
+    },
+    {
+      "name": "Loch Linnhe",
+      "lat": 56.7014,
+      "lng": -5.2619,
+      "category": "beast",
+      "region": "Highland, Scotland",
+      "summary": "Loch Linnhe is a sea loch in the Highland Council area, in the west of Scotland. The part upstream of Corran is known in Gaelic as An Linne Dhubh, and downstream as An Linne Sheileach. The name Linnhe is derived from the Gaelic word linne, meaning \"pool\".",
+      "source": "https://en.wikipedia.org/wiki/Loch_Linnhe"
     },
     {
       "name": "Loch Morar",
@@ -750,7 +1016,7 @@
       "name": "Lochmaben Stone",
       "lat": 54.9839,
       "lng": -3.0761,
-      "category": "location",
+      "category": "deity",
       "region": "Scotland",
       "summary": "A megalith on the Solway Firth linked by name and tradition to Maponos or Mabon, a youthful Celtic divine figure. It also marks a landscape of border law, ritual, and deep time.",
       "source": "https://en.wikipedia.org/wiki/Lochmaben_Stone"
@@ -768,7 +1034,7 @@
       "name": "Long Meg and Her Daughters",
       "lat": 54.7279,
       "lng": -2.6677,
-      "category": "location",
+      "category": "ancient_site",
       "region": "Cumbria",
       "summary": "A stone circle said to be a coven of witches turned to stone for dancing on the Sabbath. Long Meg herself stands apart, taller and marked with strange carvings.",
       "source": "https://en.wikipedia.org/wiki/Long_Meg_and_Her_Daughters"
@@ -813,7 +1079,7 @@
       "name": "Mabon ap Modron",
       "lat": 51.703,
       "lng": -2.904,
-      "category": "deity",
+      "category": "hero",
       "region": "Wales",
       "summary": "The divine son stolen from his mother Modron when only three nights old. In Arthurian tradition, his rescue becomes one of the great mythic errands before the hunt for Twrch Trwyth.",
       "source": "https://en.wikipedia.org/wiki/Mabon_ap_Modron"
@@ -822,10 +1088,19 @@
       "name": "Maeshowe Runes",
       "lat": 58.996,
       "lng": -3.189,
-      "category": "location",
+      "category": "norse",
       "region": "Orkney",
       "summary": "A Neolithic chambered cairn broken into by Norse visitors who carved runes into the stone. Ancient tomb became Viking noticeboard, proving folklore sometimes arrives with a knife and poor manners.",
       "source": "https://en.wikipedia.org/wiki/Maeshowe"
+    },
+    {
+      "name": "Mag Lena",
+      "lat": 53.29,
+      "lng": -7.52,
+      "category": "location",
+      "region": "County Offaly",
+      "summary": "Mag Lena, Mag Léna, or Mag Léne was the name of a plain or heath in the Gaelic Irish territory of Firceall, between modern Tullamore and Durrow in County Offaly. Mag Lena straddled the Esker Riada, was near the border between Mide and Laigin (Leinster), and is mentioned in Irish manuscripts as the site of several legendary, pseudohistorical, and historical events.",
+      "source": "https://en.wikipedia.org/wiki/Mag_Lena"
     },
     {
       "name": "Maponos",
@@ -840,7 +1115,7 @@
       "name": "Mari Lwyd",
       "lat": 51.48,
       "lng": -3.18,
-      "category": "location",
+      "category": "ritual",
       "region": "Wales",
       "summary": "A winter wassailing custom in which a decorated horse skull is carried from door to door. The party trades verses with householders before being admitted for food, drink, and seasonal chaos.",
       "source": "https://en.wikipedia.org/wiki/Mari_Lwyd"
@@ -876,7 +1151,7 @@
       "name": "Moel Tŷ Uchaf",
       "lat": 52.9233,
       "lng": -3.4055,
-      "category": "location",
+      "category": "ancient_site",
       "region": "Wales",
       "summary": "Moel Tŷ Uchaf is a stone circle near the village of Llandrillo, Denbighshire, north Wales.",
       "source": "https://en.wikipedia.org/wiki/Moel_T%C5%B7_Uchaf"
@@ -900,10 +1175,28 @@
       "source": "https://en.wikipedia.org/wiki/Morgawr"
     },
     {
+      "name": "Morrison's Haven",
+      "lat": 55.951,
+      "lng": -3.0056,
+      "category": "witch",
+      "region": "Scotland",
+      "summary": "Morrison's Haven is a harbour at Prestongrange, East Lothian, Scotland, UK, on the B1348, close to Levenhall Links, Prestongrange Industrial Heritage Museum, Prestonpans, and Prestongrange House.",
+      "source": "https://en.wikipedia.org/wiki/Morrison%27s_Haven"
+    },
+    {
+      "name": "Museum of Witchcraft and Magic",
+      "lat": 50.689,
+      "lng": -4.692,
+      "category": "location",
+      "region": "Cornwall",
+      "summary": "The Museum of Witchcraft and Magic, formerly known as the Museum of Witchcraft, is a museum dedicated to European witchcraft and magic located in the village of Boscastle in Cornwall, south-west England. It houses exhibits devoted to folk magic, ceremonial magic, Freemasonry, and Wicca, with its collection of such objects having been described as the largest in the world.",
+      "source": "https://en.wikipedia.org/wiki/Museum_of_Witchcraft_and_Magic"
+    },
+    {
       "name": "Mên Scryfa",
       "lat": 50.1622,
       "lng": -5.6033,
-      "category": "location",
+      "category": "ancient_site",
       "region": "Cornwall",
       "summary": "Mên Scryfa is an inscribed standing stone in Cornwall, England, United Kingdom. The inscription, dating to the early medieval period, commemorates \"Rialobranus son of Cunovalus.\"",
       "source": "https://en.wikipedia.org/wiki/M%C3%AAn_Scryfa"
@@ -912,7 +1205,7 @@
       "name": "Mên-an-Tol",
       "lat": 50.1586,
       "lng": -5.6045,
-      "category": "location",
+      "category": "ancient_site",
       "region": "Cornwall",
       "summary": "The Mên-an-Tol is a small formation of standing stones in Cornwall, United Kingdom. It is about three miles northwest of Madron. It is also known locally as the \"Crick Stone\".",
       "source": "https://en.wikipedia.org/wiki/M%C3%AAn-an-Tol"
@@ -921,7 +1214,7 @@
       "name": "Nanny Rutt",
       "lat": 52.7485,
       "lng": -0.3792,
-      "category": "water",
+      "category": "beast",
       "region": "Lincolnshire",
       "summary": "Nanny Rutt is a character in a cautionary tale associated with Nanny Rutt's well, an artesian spring in Math Wood, near Northorpe, in the parish of Thurlby, Lincolnshire. The story goes that a named girl went into the wood, to the well and disappeared having been taken off by Nanny Rutt.",
       "source": "https://en.wikipedia.org/wiki/Nanny_Rutt"
@@ -930,7 +1223,16 @@
       "name": "Nine Maidens Stone Row",
       "lat": 50.4716,
       "lng": -4.9093,
-      "category": "location",
+      "category": "ancient_site",
+      "region": "Cornwall",
+      "summary": "Nine Maidens stone row is an ancient monument in the parish of St Columb Major, Cornwall, England. The Nine Maidens are also known in Cornish as Naw-voz, or Naw-whoors meaning \"the nine sisters\". This late neolithic stone row is 2 miles (3.2 km) north of St Columb Major.",
+      "source": "https://en.wikipedia.org/wiki/Nine_Maidens_stone_row"
+    },
+    {
+      "name": "Nine Maidens stone row",
+      "lat": 50.4716,
+      "lng": -4.9093,
+      "category": "beast",
       "region": "Cornwall",
       "summary": "Nine Maidens stone row is an ancient monument in the parish of St Columb Major, Cornwall, England. The Nine Maidens are also known in Cornish as Naw-voz, or Naw-whoors meaning \"the nine sisters\". This late neolithic stone row is 2 miles (3.2 km) north of St Columb Major.",
       "source": "https://en.wikipedia.org/wiki/Nine_Maidens_stone_row"
@@ -957,10 +1259,28 @@
       "name": "Orkneyinga Saga",
       "lat": 58.984,
       "lng": -2.959,
-      "category": "location",
+      "category": "norse",
       "region": "Orkney & Shetland",
       "summary": "The Old Norse saga of the earls of Orkney, binding the Northern Isles to Norway, Scotland, feud, conversion, sea-kings, and bloodline memory.",
       "source": "https://en.wikipedia.org/wiki/Orkneyinga_saga"
+    },
+    {
+      "name": "Osmington White Horse",
+      "lat": 50.6574,
+      "lng": -2.4044,
+      "category": "ancient_site",
+      "region": "Dorset",
+      "summary": "The Osmington White Horse is a hill figure cut into the limestone of Osmington Hill just north of Weymouth in Dorset in 1808. It is in the South Dorset Downs in the parish of Osmington.",
+      "source": "https://en.wikipedia.org/wiki/Osmington_White_Horse"
+    },
+    {
+      "name": "Overtoun Bridge",
+      "lat": 55.9526,
+      "lng": -4.5252,
+      "category": "location",
+      "region": "Scotland",
+      "summary": "Overtoun Bridge is a category B-listed structure over the Overtoun Burn on the approach road from the west to Overtoun House, near Dumbarton in West Dunbartonshire, Scotland. It was completed in 1895, based on a design by the landscape architect H. E. Milner. It spans a ditch known as Spardie Linn.",
+      "source": "https://en.wikipedia.org/wiki/Overtoun_Bridge"
     },
     {
       "name": "Owlman of Mawnan",
@@ -1011,10 +1331,19 @@
       "name": "Porlock Stone Circle",
       "lat": 51.1895,
       "lng": -3.654,
-      "category": "location",
+      "category": "ancient_site",
       "region": "Somerset",
       "summary": "A small Exmoor stone circle whose weathered stones sit in a landscape of moorland lore. Its current 'Ireland' label was a scrape error; this belongs firmly to Somerset.",
       "source": "https://en.wikipedia.org/wiki/Porlock_Stone_Circle"
+    },
+    {
+      "name": "Porthchapel Beach",
+      "lat": 50.0394,
+      "lng": -5.6583,
+      "category": "beast",
+      "region": "Cornwall",
+      "summary": "Porthchapel Beach is a secluded beach located on the south coast of the Penwith Peninsula in Cornwall, England. Situated near the village of St Levan, it is renowned for its white shell-sand, turquoise waters, and rugged granite cliffs with the The Independant naming it as the sixth most beautiful beach in Cornwall in 2025.",
+      "source": "https://en.wikipedia.org/wiki/Porthchapel_Beach"
     },
     {
       "name": "Puck",
@@ -1029,7 +1358,7 @@
       "name": "Red Horse of Tysoe",
       "lat": 52.1012,
       "lng": -1.4839,
-      "category": "location",
+      "category": "ancient_site",
       "region": "South Warwickshire",
       "summary": "\nThe Red Horse of Tysoe was a hill figure in the parish of Tysoe, South Warwickshire, England, cut into the red clay below the escarpment of Edgehill. It gave its name to the surrounding area, which is still known as the Vale of Red Horse or Red Horse Vale. The figure was first recorded in 1607, and in its earliest form was nearly 100 yards long.",
       "source": "https://en.wikipedia.org/wiki/Red_Horse_of_Tysoe"
@@ -1038,7 +1367,7 @@
       "name": "Redcap",
       "lat": 55.649,
       "lng": -2.348,
-      "category": "ghost",
+      "category": "beast",
       "region": "Scottish Borders",
       "summary": "A murderous goblin dwelling in ruined border castles, who dyes his cap with the blood of travellers he has slain. He must kill regularly or die himself. Iron repels him; scripture makes him flee.",
       "source": "https://en.wikipedia.org/wiki/Redcap"
@@ -1056,10 +1385,19 @@
       "name": "Rhitta Gawr",
       "lat": 53.068,
       "lng": -4.076,
-      "category": "giant",
+      "category": "hero",
       "region": "Snowdonia, Wales",
       "summary": "The great giant-king of Wales who made a cloak from the beards of the kings he slew. He demanded Arthur's beard for the final trim. Arthur refused — and killed him on the slopes of Snowdon, which was then called Rhitta's Cairn.",
       "source": "https://en.wikipedia.org/wiki/Rhitta_Gawr"
+    },
+    {
+      "name": "River Tamar",
+      "lat": 50.3583,
+      "lng": -4.1667,
+      "category": "beast",
+      "region": "Cornwall",
+      "summary": "The Tamar is a river in south west England that forms most of the border between Devon and Cornwall. A large part of the valley of the Tamar is protected as the Tamar Valley National Landscape, and some is included in the Cornwall and West Devon Mining Landscape due to its historic mining activities.",
+      "source": "https://en.wikipedia.org/wiki/River_Tamar"
     },
     {
       "name": "Robin Goodfellow",
@@ -1074,7 +1412,7 @@
       "name": "Rollright Stones curse",
       "lat": 51.975,
       "lng": -1.571,
-      "category": "location",
+      "category": "ancient_site",
       "region": "Oxfordshire",
       "summary": "A Bronze Age stone circle said to be a king and his knights turned to stone by a witch. The stones are impossible to count twice and reach the same number. The King Stone bleeds if cut.",
       "source": "https://en.wikipedia.org/wiki/Rollright_Stones"
@@ -1083,10 +1421,19 @@
       "name": "Rudston Monolith",
       "lat": 54.094,
       "lng": -0.323,
-      "category": "location",
+      "category": "ancient_site",
       "region": "East Yorkshire",
       "summary": "The tallest standing stone in Britain, rising from a churchyard like a leftover sentence from an older religion. Its original purpose is unknown, which leaves folklore plenty of room to breathe.",
       "source": "https://en.wikipedia.org/wiki/Rudston_Monolith"
+    },
+    {
+      "name": "SM UB-85",
+      "lat": 54.7833,
+      "lng": -5.3833,
+      "category": "beast",
+      "region": "Britain",
+      "summary": "SM UB-85 was a Type UB III U-boat in the German Imperial Navy during World War I. Ordered on 23 September 1916, the U-boat was built at the AG Weser shipyard in Bremen and commissioned on 24 November 1917, under the command of Kapitänleutnant Günther Krech.",
+      "source": "https://en.wikipedia.org/wiki/SM_UB-85"
     },
     {
       "name": "Sarah Whitehead",
@@ -1096,6 +1443,15 @@
       "region": "London",
       "summary": "Sarah Whitehead is the reported name of a woman whose ghost is said to haunt the Bank of England; her ghost became known as The Black Nun.",
       "source": "https://en.wikipedia.org/wiki/Sarah_Whitehead"
+    },
+    {
+      "name": "School of Scottish Studies",
+      "lat": 55.9429,
+      "lng": -3.1902,
+      "category": "beast",
+      "region": "Scotland",
+      "summary": "The School of Scottish Studies was founded in 1951 at the University of Edinburgh. It holds an archive of approximately 33,000 field recordings of traditional music, song and other lore, housed in George Square, Edinburgh.",
+      "source": "https://en.wikipedia.org/wiki/School_of_Scottish_Studies"
     },
     {
       "name": "Sea Mither",
@@ -1125,6 +1481,15 @@
       "source": "https://en.wikipedia.org/wiki/Shellycoat"
     },
     {
+      "name": "Shoreham Memorial Cross",
+      "lat": 51.3366,
+      "lng": 0.1732,
+      "category": "location",
+      "region": "Kent",
+      "summary": "The Shoreham Memorial Cross is a Christian cross hill figure carved into a chalk escarpment above the village of Shoreham, Kent. The concept of the cross was the idea of a Shoreham man, Samuel Cheeseman, two of whose sons had been killed on active duty during the First World War. It was carved between May and September 1920 on land donated by Francis Mildmay who had also served in the war.",
+      "source": "https://en.wikipedia.org/wiki/Shoreham_Memorial_Cross"
+    },
+    {
       "name": "Shug Monkey",
       "lat": 52.1441,
       "lng": 0.3333,
@@ -1141,6 +1506,15 @@
       "region": "Northumberland",
       "summary": "Dwarf-like beings said to lure night travellers across the Simonside Hills with false lights. Follow them too far and the moor becomes a trap with no ordinary road home.",
       "source": "https://en.wikipedia.org/wiki/Simonside_Dwarfs"
+    },
+    {
+      "name": "Smeaton House",
+      "lat": 55.9159,
+      "lng": -3.0451,
+      "category": "witch",
+      "region": "Britain",
+      "summary": "Smeaton House, which was originally known as Smeaton Castle - in 18th century as East Park House - and most recently as Dalkeith Home Farm, appears originally to have been a courtyard castle, dating from the 15th century. It was rebuilt in the 16th century by Robert Richardson, and in the 18th century as a Classical house, attributed to James Smith. This was a 3-storey U-plan opening to the east. Less than half of that house remains.",
+      "source": "https://en.wikipedia.org/wiki/Smeaton_House"
     },
     {
       "name": "Sockburn Worm",
@@ -1161,6 +1535,15 @@
       "source": "https://en.wikipedia.org/wiki/Spectre_of_Newby_Church"
     },
     {
+      "name": "Spong Hill",
+      "lat": 52.737,
+      "lng": 0.934,
+      "category": "location",
+      "region": "Norfolk",
+      "summary": "Spong Hill is an Anglo-Saxon cemetery site located south of North Elmham in Norfolk, England. It is the largest known Early Anglo-Saxon cremation site. The site consists of a large cremation cemetery and a smaller, 6th-century burial cemetery of 57 inhumations. Several of the inhumation graves were covered by small barrows and others were marked by the use of coffins.",
+      "source": "https://en.wikipedia.org/wiki/Spong_Hill"
+    },
+    {
       "name": "Spriggan",
       "lat": 50.119,
       "lng": -5.537,
@@ -1177,6 +1560,15 @@
       "region": "London",
       "summary": "A terrifying figure who stalked Victorian London with eyes like burning coals. He could leap over rooftops, breathe blue flame, and vanished whenever cornered. Never caught. Never explained.",
       "source": "https://en.wikipedia.org/wiki/Spring-heeled_Jack"
+    },
+    {
+      "name": "St Anthony-in-Meneage",
+      "lat": 50.089,
+      "lng": -5.1,
+      "category": "beast",
+      "region": "Cornwall",
+      "summary": "St Anthony-in-Meneage is a coastal civil parish and village in Cornwall, England, United Kingdom. The parish is in the Meneage district of the Lizard peninsula. In the 2001 census the parish had a population of 171, decreasing to 168 at the 2011 census.",
+      "source": "https://en.wikipedia.org/wiki/St_Anthony-in-Meneage"
     },
     {
       "name": "St Davids Cathedral",
@@ -1209,6 +1601,15 @@
       "name": "Stanton Drew Stone Circles",
       "lat": 51.3671,
       "lng": -2.576,
+      "category": "ancient_site",
+      "region": "Somerset",
+      "summary": "The Stanton Drew stone circles are just outside the village of Stanton Drew in the English county of Somerset. The largest stone circle is the Great Circle, 113 metres (371 ft) in diameter and the second largest stone circle in Britain ; it is considered to be one of the largest Neolithic monuments to have been built.",
+      "source": "https://en.wikipedia.org/wiki/Stanton_Drew_stone_circles"
+    },
+    {
+      "name": "Stanton Drew stone circles",
+      "lat": 51.3671,
+      "lng": -2.576,
       "category": "location",
       "region": "Somerset",
       "summary": "The Stanton Drew stone circles are just outside the village of Stanton Drew in the English county of Somerset. The largest stone circle is the Great Circle, 113 metres (371 ft) in diameter and the second largest stone circle in Britain ; it is considered to be one of the largest Neolithic monuments to have been built.",
@@ -1218,7 +1619,7 @@
       "name": "Stonehenge",
       "lat": 51.179,
       "lng": -1.826,
-      "category": "location",
+      "category": "ancient_site",
       "region": "Wiltshire",
       "summary": "Raised by giants according to Geoffrey of Monmouth, or conjured by Merlin from Ireland — Stonehenge defies rational explanation. For five thousand years it has aligned with the solstice sun. Druids still gather here at midsummer.",
       "source": "https://en.wikipedia.org/wiki/Stonehenge"
@@ -1245,7 +1646,7 @@
       "name": "Sutton Hoo",
       "lat": 52.0897,
       "lng": 1.3389,
-      "category": "location",
+      "category": "ancient_site",
       "region": "Suffolk",
       "summary": "Sutton Hoo is the site of two Anglo-Saxon cemeteries dating from the 6th to 7th centuries near Woodbridge, Suffolk, England. Archaeologists have been excavating the area since 1938, when an undisturbed ship burial containing a wealth of Anglo-Saxon artifacts was discovered.",
       "source": "https://en.wikipedia.org/wiki/Sutton_Hoo"
@@ -1272,7 +1673,7 @@
       "name": "The Black Dog of Newgate",
       "lat": 51.5157,
       "lng": -0.1019,
-      "category": "ghost",
+      "category": "beast",
       "region": "London",
       "summary": "The Black Dog of Newgate is a legend concerning the haunting of the former Newgate Prison of London, which was located next to the Old Bailey, close to St. Pauls Cathedral, in London, England.",
       "source": "https://en.wikipedia.org/wiki/The_Black_Dog_of_Newgate"
@@ -1305,10 +1706,19 @@
       "source": "https://en.wikipedia.org/wiki/Dullahan"
     },
     {
+      "name": "The Giant of Cerne Abbas",
+      "lat": 50.813,
+      "lng": -2.475,
+      "category": "giant",
+      "region": "Dorset",
+      "summary": "A vast chalk figure carved into a Dorset hillside — a naked giant clutching a club, 55 metres tall. His origins are disputed: Iron Age fertility god, Roman Hercules, or Civil War satire. For centuries, sleeping on the hill was said to cure infertility.",
+      "source": "https://en.wikipedia.org/wiki/Cerne_Abbas_Giant"
+    },
+    {
       "name": "The Green Knight",
       "lat": 52.0,
       "lng": -2.0,
-      "category": "deity",
+      "category": "hero",
       "region": "Britain",
       "summary": "A huge green challenger who enters Arthur's court carrying a holly branch and an axe. His beheading game with Gawain tests courage, courtesy, truth, and the strangeness of winter.",
       "source": "https://en.wikipedia.org/wiki/Green_Knight"
@@ -1341,10 +1751,19 @@
       "source": "https://en.wikipedia.org/wiki/The_Loe"
     },
     {
+      "name": "The Long Man of Wilmington",
+      "lat": 50.812,
+      "lng": 0.189,
+      "category": "giant",
+      "region": "East Sussex",
+      "summary": "A giant figure carved into the chalk downs of Sussex, 69 metres tall, holding two staves. His age and meaning are unknown — possibly a Celtic deity, a Roman soldier, or a medieval pilgrim marker. He watches silently from the hillside.",
+      "source": "https://en.wikipedia.org/wiki/Long_Man_of_Wilmington"
+    },
+    {
       "name": "The Merry Maidens",
       "lat": 50.065,
       "lng": -5.5897,
-      "category": "location",
+      "category": "ancient_site",
       "region": "Cornwall",
       "summary": "The Merry Maidens, also known as Dawn's Men is a Late Neolithic stone circle located 2 miles (3 km) to the south of the village of St Buryan, in Cornwall. A pair of standing stones, The Pipers is associated both geographically and in legend.",
       "source": "https://en.wikipedia.org/wiki/The_Merry_Maidens"
@@ -1362,7 +1781,7 @@
       "name": "The Pipers",
       "lat": 50.5155,
       "lng": -4.4599,
-      "category": "location",
+      "category": "ancient_site",
       "region": "Cornwall",
       "summary": "The Pipers are a pair of standing stones near The Hurlers stone circles, located on Bodmin Moor near the village of Minions, Cornwall, UK. They share the name with another pair of standing stones near the Merry Maidens to the south of the village of St Buryan, also in Cornwall.",
       "source": "https://en.wikipedia.org/wiki/The_Pipers"
@@ -1404,6 +1823,15 @@
       "source": "https://en.wikipedia.org/wiki/Thornton_Road_poltergeist_claim"
     },
     {
+      "name": "Thundersley",
+      "lat": 51.57,
+      "lng": 0.59,
+      "category": "deity",
+      "region": "London",
+      "summary": "Thundersley is a town in the Castle Point borough of southeast Essex, England. It sits on a clay ridge shared with Basildon and Hadleigh, 31 miles (50 km) east of Charing Cross, London. The ecclesiastical parish of Thundersley St Peter takes in Daws Heath to the east.",
+      "source": "https://en.wikipedia.org/wiki/Thundersley"
+    },
+    {
       "name": "Thunor",
       "lat": 51.55,
       "lng": 0.605,
@@ -1411,6 +1839,15 @@
       "region": "Anglo-Saxon England",
       "summary": "The Anglo-Saxon thunder god, cognate with Norse Thor. His name echoes in Thursday and in place-names, a hammer-crack of pre-Christian belief beneath later England.",
       "source": "https://en.wikipedia.org/wiki/Thor"
+    },
+    {
+      "name": "Thursley",
+      "lat": 51.149,
+      "lng": -0.707,
+      "category": "deity",
+      "region": "Britain",
+      "summary": "Thursley is a village and civil parish in southwest Surrey, west of the A3 between Milford and Hindhead. An associated hamlet is Bowlhead Green. To the east is Brook. In the south of the parish rises the Greensand Ridge, in this section reaching its escarpment near Punch Bowl Farm and the Devil's Punch Bowl, Hindhead.",
+      "source": "https://en.wikipedia.org/wiki/Thursley"
     },
     {
       "name": "Tiddy Mun",
@@ -1443,7 +1880,7 @@
       "name": "Towednack",
       "lat": 50.191,
       "lng": -5.52,
-      "category": "location",
+      "category": "beast",
       "region": "Cornwall",
       "summary": "A Cornish parish rich in tales of piskies, saints, and old stone-country spirits. Its church and surrounding moorland belong to the strange magical geography of West Penwith.",
       "source": "https://en.wikipedia.org/wiki/Towednack"
@@ -1452,7 +1889,7 @@
       "name": "Trow",
       "lat": 60.155,
       "lng": -1.145,
-      "category": "fairy",
+      "category": "norse",
       "region": "Shetland & Orkney",
       "summary": "A small, troll-like being from Shetland and Orkney folklore, rooted in Norse tradition. Trows live in mounds, dislike sunlight, love music, and are always one bad bargain away.",
       "source": "https://en.wikipedia.org/wiki/Trow_(folklore)"
@@ -1461,7 +1898,7 @@
       "name": "Twelve Apostles, West Yorkshire",
       "lat": 53.9016,
       "lng": -1.8095,
-      "category": "location",
+      "category": "ancient_site",
       "region": "Yorkshire",
       "summary": "The Twelve Apostles is a stone circle near Ilkley and Burley in Wharfedale in West Yorkshire, England.",
       "source": "https://en.wikipedia.org/wiki/Twelve_Apostles%2C_West_Yorkshire"
@@ -1470,7 +1907,7 @@
       "name": "Uffington White Horse",
       "lat": 51.577,
       "lng": -1.566,
-      "category": "location",
+      "category": "ancient_site",
       "region": "Oxfordshire",
       "summary": "A huge prehistoric chalk horse cut into the Berkshire Downs. It watches over Dragon Hill, Wayland's Smithy, and a landscape where pagan monument, saint legend, and heroic folklore overlap.",
       "source": "https://en.wikipedia.org/wiki/Uffington_White_Horse"
@@ -1479,16 +1916,25 @@
       "name": "Up Helly Aa",
       "lat": 60.155,
       "lng": -1.145,
-      "category": "location",
+      "category": "ritual",
       "region": "Shetland",
       "summary": "A modern Shetland fire festival rooted in local identity and Norse revival imagery. Torch-bearing squads process through winter darkness before burning a Viking-style galley.",
       "source": "https://en.wikipedia.org/wiki/Up_Helly_Aa"
     },
     {
+      "name": "Watlington White Mark",
+      "lat": 51.639,
+      "lng": -0.9897,
+      "category": "ancient_site",
+      "region": "Oxfordshire",
+      "summary": "Watlington White Mark is a chalk hill figure located on Watlington Hill, a mile from the village of Watlington, Oxfordshire. It is 270 feet tall and 36 feet wide, and is one of several hill figures cut into the Chilterns, alongside the Whiteleaf Cross, Bledlow Cross and Whipsnade White Lion. The site is owned by the National Trust.",
+      "source": "https://en.wikipedia.org/wiki/Watlington_White_Mark"
+    },
+    {
       "name": "Waun Mawn",
       "lat": 51.9716,
       "lng": -4.7912,
-      "category": "location",
+      "category": "ancient_site",
       "region": "Wales",
       "summary": "Waun Mawn is a megalithic site in the Preseli Mountains of Pembrokeshire, Wales. Following excavations in 2018, it became the site of a supposed dismantled Neolithic stone circle. The diameter of the postulated circle was estimated to be 110 m (360 ft), making it the fifth largest diameter for a British stone circle, after Avebury, Stanton Drew, Karl Lofts, Long Meg, and slightly larger than the Ring of Brodgar.",
       "source": "https://en.wikipedia.org/wiki/Waun_Mawn"
@@ -1497,7 +1943,7 @@
       "name": "Wayland the Smith",
       "lat": 51.567,
       "lng": -1.596,
-      "category": "deity",
+      "category": "hero",
       "region": "Oxfordshire",
       "summary": "A legendary smith from Germanic tradition, bound to the Neolithic tomb called Wayland's Smithy. Leave a coin and an unshod horse overnight, legend says, and invisible hands may shoe it.",
       "source": "https://en.wikipedia.org/wiki/Wayland_the_Smith"
@@ -1506,10 +1952,46 @@
       "name": "Wayland's Smithy",
       "lat": 51.567,
       "lng": -1.596,
-      "category": "location",
+      "category": "ancient_site",
       "region": "Oxfordshire",
       "summary": "A Neolithic chambered tomb later claimed by folklore as the forge of Wayland the Smith. It is a perfect example of old stone becoming older story.",
       "source": "https://en.wikipedia.org/wiki/Wayland%27s_Smithy"
+    },
+    {
+      "name": "Wednesbury",
+      "lat": 52.552,
+      "lng": -2.019,
+      "category": "deity",
+      "region": "Britain",
+      "summary": "Wednesbury is a market town in the Sandwell district, in the county of the West Midlands, England; it was historically in Staffordshire. It is located near the source of the River Tame and is part of the Black Country. Wednesbury is situated five miles southeast of Wolverhampton, three miles southwest of Walsall and seven miles northwest of Birmingham. At the 2021 Census, the town's built-up area had a population of 20,313.",
+      "source": "https://en.wikipedia.org/wiki/Wednesbury"
+    },
+    {
+      "name": "Weedon Lois",
+      "lat": 52.118,
+      "lng": -1.124,
+      "category": "deity",
+      "region": "Britain",
+      "summary": "Weedon Lois is a village and former civil parish, now in the parish of Weston and Weedon, in West Northamptonshire, England. It is about 5.5 miles (9 km) west of Towcester. In 1931 the parish had a population of 296.",
+      "source": "https://en.wikipedia.org/wiki/Weedon_Lois"
+    },
+    {
+      "name": "Weeley",
+      "lat": 51.859,
+      "lng": 1.117,
+      "category": "deity",
+      "region": "Britain",
+      "summary": "Weeley is a village and civil parish in the Tendring district of Essex, England. It is served by Weeley railway station on the Sunshine Coast Line. It has bus links to Clacton-on-Sea and Colchester. At the 2021 census the parish had a population of 2,234.",
+      "source": "https://en.wikipedia.org/wiki/Weeley"
+    },
+    {
+      "name": "Whetstones",
+      "lat": 52.5711,
+      "lng": -3.028,
+      "category": "ancient_site",
+      "region": "Wales",
+      "summary": "The Whetstones are, or were, a stone circle beneath Corndon Hill in the parish of Church Stoke, Montgomeryshire, Wales, near the border with Shropshire, England. They lie immediately to the west of the village of White Grit and close to Priestweston. The site is also a short distance from the better-known Hoarstones and Mitchell's Fold circles.",
+      "source": "https://en.wikipedia.org/wiki/Whetstones_%28stone_circle%29"
     },
     {
       "name": "Whetstones (stone circle)",
@@ -1521,6 +2003,33 @@
       "source": "https://en.wikipedia.org/wiki/Whetstones_%28stone_circle%29"
     },
     {
+      "name": "White Lion Inn, Stratford-upon-Avon",
+      "lat": 52.1942,
+      "lng": -1.7086,
+      "category": "witch",
+      "region": "Britain",
+      "summary": "The White Lion Inn was a public house located in Henley Street, Stratford-upon-Avon, England, an example of Elizabethan architecture that first appears in historical records in 1591. The building was mentioned by both Harriet Beecher Stowe and Rupert Graves.",
+      "source": "https://en.wikipedia.org/wiki/White_Lion_Inn%2C_Stratford-upon-Avon"
+    },
+    {
+      "name": "Whitehawk",
+      "lat": 50.824,
+      "lng": -0.105,
+      "category": "location",
+      "region": "Britain",
+      "summary": "Whitehawk is a suburb in the east of Brighton, England, south of Bevendean and north of Brighton Marina. The area is a large, modern housing estate built in a downland dry valley historically known as Whitehawk Bottom. The estate was originally developed by the local council between 1933 and 1937 and included nearly 1,200 residences.",
+      "source": "https://en.wikipedia.org/wiki/Whitehawk"
+    },
+    {
+      "name": "Whiteleaf Cross",
+      "lat": 51.7287,
+      "lng": -0.8115,
+      "category": "ancient_site",
+      "region": "Buckinghamshire",
+      "summary": "Whiteleaf Cross is a cross-shaped chalk hill carving, with a triangular base, on Whiteleaf Hill in Whiteleaf near Princes Risborough in Buckinghamshire.",
+      "source": "https://en.wikipedia.org/wiki/Whiteleaf_Cross"
+    },
+    {
       "name": "Will-o'-the-Wisp",
       "lat": 52.558,
       "lng": 0.163,
@@ -1528,6 +2037,15 @@
       "region": "The Fens, Cambridgeshire",
       "summary": "Flickering phosphorescent lights seen drifting over the marshes and fens. Believed to be mischievous spirits luring travellers off safe paths into treacherous bogs.",
       "source": "https://en.wikipedia.org/wiki/Will-o%27-the-wisp"
+    },
+    {
+      "name": "Wing, Buckinghamshire",
+      "lat": 51.898,
+      "lng": -0.717,
+      "category": "deity",
+      "region": "Britain",
+      "summary": "Wing, known in antiquity as Wyng, is a village and civil parish in east Buckinghamshire, England. The village is on the main A418 road between Aylesbury and Leighton Buzzard. It is about 8 miles (13 km) north-east of Aylesbury, 3 miles (5 km) west of Leighton Buzzard, and 12 miles (19 km) south of Milton Keynes.",
+      "source": "https://en.wikipedia.org/wiki/Wing%2C_Buckinghamshire"
     },
     {
       "name": "Witches' Well",
@@ -1539,10 +2057,28 @@
       "source": "https://en.wikipedia.org/wiki/Witches%27_Well%2C_Edinburgh"
     },
     {
+      "name": "Witches' Well, Edinburgh",
+      "lat": 55.9489,
+      "lng": -3.1964,
+      "category": "witch",
+      "region": "Scotland",
+      "summary": "The Witches' Well is a monument to accused witches burned at the stake in Edinburgh, Scotland, and is the only one of its kind in the city.",
+      "source": "https://en.wikipedia.org/wiki/Witches%27_Well%2C_Edinburgh"
+    },
+    {
+      "name": "Witchknowe Park",
+      "lat": 56.0253,
+      "lng": -3.4027,
+      "category": "location",
+      "region": "Fife",
+      "summary": "Witchknowe Park is a park and historic site in Inverkeithing in Fife, Scotland.",
+      "source": "https://en.wikipedia.org/wiki/Witchknowe_Park"
+    },
+    {
       "name": "Withypool Stone Circle",
       "lat": 51.0963,
       "lng": -3.6604,
-      "category": "location",
+      "category": "ancient_site",
       "region": "Somerset",
       "summary": "Withypool Stone Circle, also known as Withypool Hill Stone Circle, is a stone circle located on the Exmoor moorland, near the village of Withypool in the southwestern English county of Somerset. The ring is part of a tradition of stone circle construction that spread throughout much of Britain, Ireland, and Brittany during the Late Neolithic and Early Bronze Age, over a period between 3300 and 900 BCE.",
       "source": "https://en.wikipedia.org/wiki/Withypool_Stone_Circle"
@@ -1555,6 +2091,15 @@
       "region": "Anglo-Saxon England",
       "summary": "The Anglo-Saxon form of Odin, remembered in royal genealogies, place-names, and Wednesday. He stands where god, ancestor, wanderer, and war-lord blur into one shadowed figure.",
       "source": "https://en.wikipedia.org/wiki/Woden"
+    },
+    {
+      "name": "Woodnesborough",
+      "lat": 51.2636,
+      "lng": 1.31,
+      "category": "deity",
+      "region": "Kent",
+      "summary": "Woodnesborough is a village in the Dover District of Kent, England, 2 miles (3.2 km) west of Sandwich. The population taken at the 2011 census included Coombe as well as Marshborough, and totalled 1,066. There is a Grade II* listed Anglican church dedicated to St Mary the Virgin.",
+      "source": "https://en.wikipedia.org/wiki/Woodnesborough"
     },
     {
       "name": "Worm of Linton",
@@ -1573,6 +2118,15 @@
       "region": "Shetland",
       "summary": "A gentle wolf-headed man of Shetland folklore, unlike ordinary werewolf tales. The Wulver fishes alone and is said to leave food for poor families on windowsills.",
       "source": "https://en.wikipedia.org/wiki/Wulver"
+    },
+    {
+      "name": "Wye, Kent",
+      "lat": 51.1833,
+      "lng": 0.9372,
+      "category": "location",
+      "region": "Kent",
+      "summary": "Wye is a village and former civil parish, now in the parish of Wye with Hinxhill, in the Ashford district, in Kent, England, 5 miles (8.0 km) from Ashford and 12 miles (19 km) from Canterbury. It is the main settlement in the parish of Wye with Hinxhill. Hop varieties including Wye Challenger were bred at Wye College and named for the village.",
+      "source": "https://en.wikipedia.org/wiki/Wye%2C_Kent"
     },
     {
       "name": "Y Ddraig Goch",

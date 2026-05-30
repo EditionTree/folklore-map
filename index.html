@@ -346,6 +346,46 @@
     .filter-icon { display: flex; align-items: center; margin-right: 3px; opacity: 0.75; }
     .filter-btn.active .filter-icon { opacity: 1; filter: brightness(10); }
     .legend-dot { display: flex; align-items: center; }
+
+    /* ── LAYOUT ── */
+    body { overflow: hidden; height: 100vh; }
+    .content-area { flex: 1; display: flex; overflow: hidden; }
+    .map-wrap { flex: 1; position: relative; overflow: hidden; min-height: 0; }
+    :root { --sidebar-w: 280px; }
+
+    /* ── SIDEBAR ── */
+    .sidebar {
+      width: var(--sidebar-w); flex-shrink: 0;
+      background: var(--parchment); border-right: 1px solid var(--border);
+      display: flex; flex-direction: column;
+      transition: width 0.28s ease, opacity 0.28s ease;
+      overflow: hidden; z-index: 800;
+    }
+    .sidebar.collapsed { width: 0; opacity: 0; pointer-events: none; }
+    .sidebar-header { padding: 10px 14px 8px; border-bottom: 1px solid var(--border); flex-shrink: 0; }
+    .sidebar-title { font-family: var(--font-display); font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 2px; }
+    .sidebar-subtitle { font-size: 11px; color: var(--ink-light); font-style: italic; }
+    .sidebar-list { flex: 1; overflow-y: auto; padding: 2px 0; }
+    .sidebar-list::-webkit-scrollbar { width: 4px; }
+    .sidebar-list::-webkit-scrollbar-track { background: var(--parchment-dk); }
+    .sidebar-list::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+    .sidebar-item { padding: 6px 14px; cursor: pointer; border-bottom: 0.5px solid rgba(176,144,96,0.25); display: flex; align-items: flex-start; gap: 8px; transition: background 0.1s; }
+    .sidebar-item:hover { background: var(--parchment-dk); }
+    .sidebar-item.active { background: rgba(139,58,26,0.1); }
+    .sidebar-item-icon { display: flex; align-items: center; flex-shrink: 0; margin-top: 2px; opacity: 0.75; }
+    .sidebar-item-name { font-family: var(--font-display); font-size: 11px; color: var(--ink); font-weight: 600; line-height: 1.3; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .sidebar-item-region { font-size: 10px; color: var(--ink-light); font-style: italic; }
+    .sidebar-toggle-btn { background: rgba(255,255,255,0.08); border: 1px solid var(--border); border-radius: 4px; color: var(--parchment); font-family: var(--font-body); font-size: 12px; padding: 4px 10px; cursor: pointer; white-space: nowrap; }
+    .sidebar-toggle-btn:hover { background: rgba(255,255,255,0.14); }
+
+    /* ── MOBILE ── */
+    @media (max-width: 640px) {
+      .subtitle { display: none; }
+      .sidebar { position: absolute; top: 0; bottom: 0; left: 0; z-index: 850; box-shadow: 4px 0 20px rgba(0,0,0,0.3); }
+      .sidebar.collapsed { width: 0; }
+      .legend-panel { display: none; }
+      footer span:first-child { display: none; }
+    }
   </style>
 </head>
 <body>
@@ -356,6 +396,7 @@
     <span class="subtitle">Myths, Legends & Spectral Encounters</span>
   </div>
   <div class="header-controls">
+    <button class="sidebar-toggle-btn" id="sidebarToggleBtn" onclick="toggleSidebar()">☰ Entries</button>
     <div class="search-wrap">
       <span class="search-icon">⚲</span>
       <input type="text" id="searchInput" placeholder="Search legends..." autocomplete="off" oninput="handleSearch(this.value)"/>
@@ -374,11 +415,20 @@
   <span class="filter-label">Show</span>
 </div>
 
-<div class="map-wrap">
-  <div id="map"></div>
-  <div class="map-vignette"></div>
-  <div class="map-border"></div>
-  <div class="legend-panel" id="legendPanel"></div>
+<div class="content-area">
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-title">All Entries</div>
+      <div class="sidebar-subtitle" id="sidebarSubtitle">Loading...</div>
+    </div>
+    <div class="sidebar-list" id="sidebarList"></div>
+  </div>
+  <div class="map-wrap">
+    <div id="map"></div>
+    <div class="map-vignette"></div>
+    <div class="map-border"></div>
+    <div class="legend-panel" id="legendPanel"></div>
+  </div>
 </div>
 
 <footer>
@@ -527,6 +577,7 @@ function filterMarkers(cat) {
   const visible = markers.filter(m => cat === 'all' || m._legendData.category === cat);
   clusterGroup.addLayers(visible);
   updateCount(visible.length);
+  buildSidebarList(visible.map(m => m._legendData));
 }
 
 function buildLegend() {
@@ -577,6 +628,7 @@ function focusLegend(name) {
   if (activeFilter !== 'all' && activeFilter !== leg.category) filterMarkers('all');
   const marker = markers.find(m => m._legendData.name === name);
   if (!marker) return;
+  highlightSidebarItem(name);
   map.setView([leg.lat, leg.lng], 12, { animate: true });
   setTimeout(() => clusterGroup.zoomToShowLayer(marker, () => marker.openPopup()), 400);
 }
@@ -586,6 +638,40 @@ document.addEventListener('click', e => {
     document.getElementById('searchResults').classList.remove('open');
   }
 });
+
+
+function toggleSidebar() {
+  sidebarOpen = !sidebarOpen;
+  document.getElementById('sidebar').classList.toggle('collapsed', !sidebarOpen);
+  document.getElementById('sidebarToggleBtn').textContent = sidebarOpen ? '✕ Entries' : '☰ Entries';
+  setTimeout(() => map.invalidateSize(), 300);
+}
+
+function buildSidebarList(legends) {
+  const list = document.getElementById('sidebarList');
+  const sub  = document.getElementById('sidebarSubtitle');
+  const sorted = [...legends].sort((a, b) => a.name.localeCompare(b.name));
+  sub.textContent = sorted.length + (activeFilter === 'all' ? ' entries' : ' ' + (CATEGORIES[activeFilter]?.label || 'entries'));
+  list.innerHTML = sorted.map(leg => {
+    const cat = CATEGORIES[leg.category] || CATEGORIES.beast;
+    const ico = cat.iconPath
+      ? '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="14" height="14"><path d="' + cat.iconPath + '" fill="' + cat.colour + '"/></svg>'
+      : '';
+    return '<div class="sidebar-item" onclick="focusLegend(\'' + leg.name.replace(/'/g, "\\'") + '\')">'
+      + '<span class="sidebar-item-icon">' + ico + '</span>'
+      + '<div><div class="sidebar-item-name">' + leg.name + '</div>'
+      + '<div class="sidebar-item-region">' + leg.region + '</div></div>'
+      + '</div>';
+  }).join('');
+}
+
+function highlightSidebarItem(name) {
+  document.querySelectorAll('.sidebar-item').forEach(el => {
+    const isActive = el.querySelector('.sidebar-item-name')?.textContent === name;
+    el.classList.toggle('active', isActive);
+    if (isActive) el.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+  });
+}
 
 fetch('legends.json?v=' + Date.now())
   .then(r => {
@@ -597,7 +683,9 @@ fetch('legends.json?v=' + Date.now())
     loadMarkers(LEGENDS);
     buildFilters();
     buildLegend();
+    buildSidebarList(LEGENDS);
     updateCount(LEGENDS.length);
+    markers.forEach(m => m.on("popupopen", () => highlightSidebarItem(m._legendData.name)));
   })
   .catch(err => {
     console.error('Failed to load legends.json:', err);

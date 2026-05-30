@@ -1,6 +1,6 @@
 {
-  "generated": "2026-05-30T17:57:00.918583Z",
-  "total": 288,
+  "generated": "2026-05-30T18:34:10.338891Z",
+  "total": 297,
   "categories": {
     "beast": "Beast",
     "ghost": "Ghost",
@@ -456,6 +456,15 @@
       "source": "https://en.wikipedia.org/wiki/Camelot"
     },
     {
+      "name": "Camelot",
+      "lat": 51.44,
+      "lng": -1.85,
+      "category": "location",
+      "region": "Wiltshire",
+      "summary": "The legendary castle and court of King Arthur. Often associated with southwestern England, Camelot is depicted as the seat of the Knights of the Round Table and a center of chivalry, justice, and legendary events.",
+      "source": "https://en.wikipedia.org/wiki/Camelot"
+    },
+    {
       "name": "Cantre'r Gwaelod",
       "lat": 52.5,
       "lng": -4.5,
@@ -562,6 +571,15 @@
       "region": "West Sussex",
       "summary": "An Iron Age hillfort ringed with beech trees on the South Downs. Walk seven times around it at midnight and the Devil will appear with a bowl of soup. Roman offerings were found buried within. The trees were blown down in 1987 — and something changed.",
       "source": "https://en.wikipedia.org/wiki/Chanctonbury_Ring"
+    },
+    {
+      "name": "Changeling",
+      "lat": 52.13,
+      "lng": -3.783,
+      "category": "fairy",
+      "region": "Wales",
+      "summary": "A fairy substitute left in place of a stolen human child. Across Britain and Ireland, changelings explained sudden illness, unusual behaviour, or children believed to have been taken by the Fair Folk. Welsh traditions particularly associate them with the Tylwyth Teg.",
+      "source": "https://en.wikipedia.org/wiki/Changeling"
     },
     {
       "name": "Cheesewring",
@@ -751,6 +769,15 @@
       "region": "Cornwall",
       "summary": "An ancient Cornish mining landscape with traditions connecting it to Joseph of Arimathea and old tin-working lore. Mine country often births knockers, hidden spirits, and stories of wealth beneath the hill.",
       "source": "https://en.wikipedia.org/wiki/Ding_Dong_mines"
+    },
+    {
+      "name": "Dobhar-chú",
+      "lat": 54.062,
+      "lng": -8.302,
+      "category": "water",
+      "region": "County Leitrim, Ireland",
+      "summary": "A monstrous water beast resembling a giant hound or otter, said to inhabit lonely lakes and rivers. Tales describe it attacking livestock and people before vanishing beneath dark waters.",
+      "source": "https://en.wikipedia.org/wiki/Dobhar-ch%C3%BA"
     },
     {
       "name": "Dolmen of the Four Maols",
@@ -1095,6 +1122,15 @@
       "source": "https://en.wikipedia.org/wiki/River_Wye"
     },
     {
+      "name": "Gwy",
+      "lat": 52.468,
+      "lng": -3.725,
+      "category": "deity",
+      "region": "Wales",
+      "summary": "The spirit of the River Wye and daughter of Plynlimon. Welsh tradition portrays her as one of the mountain lord's wandering daughters racing toward the sea.",
+      "source": "https://en.wikipedia.org/wiki/River_Wye"
+    },
+    {
       "name": "Gwyn ap Nudd",
       "lat": 51.144,
       "lng": -2.699,
@@ -1111,6 +1147,15 @@
       "region": "Welsh Marches",
       "summary": "Britain's longest river, named for Sabrina — a princess drowned in its waters by a wicked stepmother and transformed into a river goddess. Milton gave her immortal verse in Comus. The river was once considered sacred, its banks the boundary between Britain and the Otherworld.",
       "source": "https://en.wikipedia.org/wiki/Sabrina_(goddess)"
+    },
+    {
+      "name": "Hafren",
+      "lat": 52.468,
+      "lng": -3.725,
+      "category": "deity",
+      "region": "Wales",
+      "summary": "The personified River Severn and daughter of Plynlimon in Welsh legend. She journeyed eastward and became Britain's longest river, carrying her story from the mountains to the sea.",
+      "source": "https://en.wikipedia.org/wiki/Severn"
     },
     {
       "name": "Hagg Worm",
@@ -1221,6 +1266,15 @@
       "source": "https://en.wikipedia.org/wiki/Kelpie"
     },
     {
+      "name": "King Arthur",
+      "lat": 51.144,
+      "lng": -2.699,
+      "category": "hero",
+      "region": "Somerset",
+      "summary": "The legendary British king who defended Britain against Saxon invaders. Central figure of Arthurian legend, associated with Camelot, the Knights of the Round Table, and quests such as the Holy Grail. Stories place him at the heart of Britain's mythical history.",
+      "source": "https://en.wikipedia.org/wiki/King_Arthur"
+    },
+    {
       "name": "Knocker",
       "lat": 50.119,
       "lng": -5.537,
@@ -1318,6 +1372,15 @@
       "region": "Ireland",
       "summary": "Leinster is one of the four provinces of Ireland, in the east of the island.",
       "source": "https://en.wikipedia.org/wiki/Leinster"
+    },
+    {
+      "name": "Leprechaun",
+      "lat": 53.3498,
+      "lng": -6.2603,
+      "category": "fairy",
+      "region": "Ireland",
+      "summary": "A solitary fairy shoemaker famous for hidden treasure and impossible bargains. Though often portrayed as cheerful, older folklore presents the leprechaun as cunning, elusive, and almost impossible to outwit.",
+      "source": "https://en.wikipedia.org/wiki/Leprechaun"
     },
     {
       "name": "Listoghil",
@@ -1485,7 +1548,7 @@
       "name": "Merlin",
       "lat": 51.882,
       "lng": -4.516,
-      "category": "hero",
+      "category": "deity",
       "region": "Wales & Britain",
       "summary": "The greatest wizard of Britain — half-demon by birth, prophet by gift, architect of the Arthurian age. He transported Stonehenge from Ireland, foretold the coming of Arthur, and in the end was imprisoned by the enchantress Nimue in a tree, a cave, or a tower of air, depending on who tells the tale.",
       "source": "https://en.wikipedia.org/wiki/Merlin"
@@ -1785,6 +1848,15 @@
       "category": "giant",
       "region": "Ceredigion, Wales",
       "summary": "A great giant of Welsh legend whose three daughters — Hafren, Gwy, and Rheidol — raced each other from his summit to the sea. Hafren reached the sea first, winning greatest fame, and her name became the River Severn. Plynlimon watches still from the highest ground in mid-Wales, father of rivers.",
+      "source": "https://en.wikipedia.org/wiki/Plynlimon"
+    },
+    {
+      "name": "Plynlimon",
+      "lat": 52.468,
+      "lng": -3.725,
+      "category": "giant",
+      "region": "Wales",
+      "summary": "The great mountain father of Welsh folklore whose daughters became the rivers Severn, Wye, and in some traditions Rheidol or Ystwyth. The tale transforms the landscape into a family of wandering river spirits.",
       "source": "https://en.wikipedia.org/wiki/Plynlimon"
     },
     {
@@ -2598,6 +2670,15 @@
       "source": "https://en.wikipedia.org/wiki/Yester_Castle"
     },
     {
+      "name": "Ystwyth",
+      "lat": 52.415,
+      "lng": -4.082,
+      "category": "deity",
+      "region": "Wales",
+      "summary": "In some later retellings of the Three Sisters of Plynlimon, Ystwyth replaces Rheidol as one of the mountain's daughters. She flows west through Ceredigion to Cardigan Bay.",
+      "source": "https://en.wikipedia.org/wiki/Afon_Ystwyth"
+    },
+    {
       "name": "Zennor",
       "lat": 50.192,
       "lng": -5.568,
@@ -2605,87 +2686,6 @@
       "region": "Cornwall",
       "summary": "Zennor is a village and civil parish in Cornwall, England, United Kingdom. The parish includes the villages of Zennor, Boswednack and Porthmeor and the hamlet of Treen. Zennor lies on the north coast, about 6 miles (10 km) north of Penzance, along the B3306 road which connects St Ives to the A30 road. Alphabetically, the parish is the last in Britain. Its name comes from the Cornish name for the local saint, Saint Senara.",
       "source": "https://en.wikipedia.org/wiki/Zennor"
-    },
-    {
-    "name": "Changeling",
-    "lat": 52.13,
-    "lng": -3.783,
-    "category": "fairy",
-    "region": "Wales",
-    "summary": "A fairy substitute left in place of a stolen human child. Across Britain and Ireland, changelings explained sudden illness, unusual behaviour, or children believed to have been taken by the Fair Folk. Welsh traditions particularly associate them with the Tylwyth Teg.",
-    "source": "https://en.wikipedia.org/wiki/Changeling"
-  },
-  {
-    "name": "Leprechaun",
-    "lat": 53.3498,
-    "lng": -6.2603,
-    "category": "fairy",
-    "region": "Ireland",
-    "summary": "A solitary fairy shoemaker famous for hidden treasure and impossible bargains. Though often portrayed as cheerful, older folklore presents the leprechaun as cunning, elusive, and almost impossible to outwit.",
-    "source": "https://en.wikipedia.org/wiki/Leprechaun"
-  },
-  {
-    "name": "Dobhar-chú",
-    "lat": 54.062,
-    "lng": -8.302,
-    "category": "water",
-    "region": "County Leitrim, Ireland",
-    "summary": "A monstrous water beast resembling a giant hound or otter, said to inhabit lonely lakes and rivers. Tales describe it attacking livestock and people before vanishing beneath dark waters.",
-    "source": "https://en.wikipedia.org/wiki/Dobhar-ch%C3%BA"
-  },
-  {
-    "name": "Plynlimon",
-    "lat": 52.468,
-    "lng": -3.725,
-    "category": "deity",
-    "region": "Wales",
-    "summary": "The great mountain father of Welsh folklore whose daughters became the rivers Severn, Wye, and in some traditions Rheidol or Ystwyth. The tale transforms the landscape into a family of wandering river spirits.",
-    "source": "https://en.wikipedia.org/wiki/Plynlimon"
-  },
-  {
-    "name": "Hafren",
-    "lat": 52.468,
-    "lng": -3.725,
-    "category": "deity",
-    "region": "Wales",
-    "summary": "The personified River Severn and daughter of Plynlimon in Welsh legend. She journeyed eastward and became Britain's longest river, carrying her story from the mountains to the sea.",
-    "source": "https://en.wikipedia.org/wiki/Severn"
-  },
-  {
-    "name": "Gwy",
-    "lat": 52.468,
-    "lng": -3.725,
-    "category": "deity",
-    "region": "Wales",
-    "summary": "The spirit of the River Wye and daughter of Plynlimon. Welsh tradition portrays her as one of the mountain lord's wandering daughters racing toward the sea.",
-    "source": "https://en.wikipedia.org/wiki/River_Wye"
-  },
-  {
-    "name": "Ystwyth",
-    "lat": 52.415,
-    "lng": -4.082,
-    "category": "deity",
-    "region": "Wales",
-    "summary": "In some later retellings of the Three Sisters of Plynlimon, Ystwyth replaces Rheidol as one of the mountain's daughters. She flows west through Ceredigion to Cardigan Bay.",
-    "source": "https://en.wikipedia.org/wiki/Afon_Ystwyth"
-  },
-  {
-    "name": "King Arthur",
-    "lat": 51.144,
-    "lng": -2.699,
-    "category": "hero",
-    "region": "Somerset",
-    "summary": "The legendary British king who defended Britain against Saxon invaders. Central figure of Arthurian legend, associated with Camelot, the Knights of the Round Table, and quests such as the Holy Grail. Stories place him at the heart of Britain's mythical history.",
-    "source": "https://en.wikipedia.org/wiki/King_Arthur"
-  },
-  {
-    "name": "Camelot",
-    "lat": 51.44,
-    "lng": -1.85,
-    "category": "location",
-    "region": "Wiltshire",
-    "summary": "The legendary castle and court of King Arthur. Often associated with southwestern England, Camelot is depicted as the seat of the Knights of the Round Table and a center of chivalry, justice, and legendary events.",
-    "source": "https://en.wikipedia.org/wiki/Camelot"
-  }
+    }
   ]
 }

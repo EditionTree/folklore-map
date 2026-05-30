@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Folklore Map of Britain</title>
+  <title>Folklore Map of the British Isles</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"/>
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"/>
@@ -23,125 +23,120 @@
       --shadow:       rgba(44, 31, 14, 0.25);
       --font-display: 'Cinzel', serif;
       --font-body:    'Crimson Text', serif;
-
       --map-filter-day:   sepia(0.8) brightness(0.9) contrast(1.1) saturate(0.7);
       --map-filter-night: grayscale(0.6) brightness(0.55) contrast(1.2) sepia(0.3) hue-rotate(200deg);
+      --sidebar-w: 300px;
     }
 
     body {
       background: var(--parchment-dk);
       font-family: var(--font-body);
       color: var(--ink);
-      min-height: 100vh;
+      height: 100vh;
       display: flex;
       flex-direction: column;
+      overflow: hidden;
     }
 
     /* ── HEADER ── */
     header {
       background: var(--ink);
       border-bottom: 2px solid var(--accent);
-      padding: 14px 24px;
+      padding: 10px 16px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 8px;
       position: relative;
-      z-index: 1000;
+      z-index: 1100;
+      flex-shrink: 0;
     }
     header::after {
       content: '';
       position: absolute;
-      bottom: -5px; left: 0; right: 0;
-      height: 3px;
+      bottom: -5px; left: 0; right: 0; height: 3px;
       background: repeating-linear-gradient(90deg, var(--accent) 0, var(--accent) 6px, transparent 6px, transparent 12px);
       opacity: 0.5;
     }
-    .header-title { display: flex; align-items: baseline; gap: 12px; }
+    .header-title { display: flex; align-items: baseline; gap: 10px; }
     h1 {
       font-family: var(--font-display);
-      font-size: 22px;
+      font-size: 18px;
       font-weight: 600;
       color: var(--parchment);
       letter-spacing: 0.08em;
     }
     .subtitle {
       font-family: var(--font-body);
-      font-size: 13px;
+      font-size: 12px;
       color: var(--border);
       font-style: italic;
-      letter-spacing: 0.04em;
     }
-    .header-controls { display: flex; align-items: center; gap: 10px; }
+    .header-controls { display: flex; align-items: center; gap: 8px; }
 
     /* ── DARK MODE TOGGLE ── */
     .mode-toggle {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-family: var(--font-body);
-      font-size: 13px;
-      color: var(--border);
-      cursor: pointer;
-      user-select: none;
+      display: flex; align-items: center; gap: 6px;
+      font-family: var(--font-body); font-size: 12px;
+      color: var(--border); cursor: pointer; user-select: none;
     }
     .toggle-track {
-      width: 38px; height: 20px;
-      background: #3a2c18;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      position: relative;
-      transition: background 0.3s;
+      width: 36px; height: 19px;
+      background: #3a2c18; border: 1px solid var(--border);
+      border-radius: 10px; position: relative; transition: background 0.3s;
     }
     .toggle-track.on { background: #1a2840; border-color: #4a6898; }
     .toggle-thumb {
-      position: absolute;
-      top: 2px; left: 2px;
-      width: 14px; height: 14px;
-      background: var(--border);
-      border-radius: 50%;
+      position: absolute; top: 2px; left: 2px;
+      width: 13px; height: 13px;
+      background: var(--border); border-radius: 50%;
       transition: transform 0.3s, background 0.3s;
     }
-    .toggle-track.on .toggle-thumb { transform: translateX(18px); background: #7090c8; }
+    .toggle-track.on .toggle-thumb { transform: translateX(17px); background: #7090c8; }
+
+    /* ── SIDEBAR TOGGLE BUTTON ── */
+    .sidebar-toggle-btn {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      color: var(--parchment);
+      font-family: var(--font-body);
+      font-size: 12px;
+      padding: 4px 10px;
+      cursor: pointer;
+      display: flex; align-items: center; gap: 5px;
+    }
+    .sidebar-toggle-btn:hover { background: rgba(255,255,255,0.14); }
 
     /* ── SEARCH BAR ── */
-    .search-wrap {
-      position: relative;
-    }
+    .search-wrap { position: relative; }
     .search-wrap input {
       background: rgba(255,255,255,0.08);
       border: 1px solid var(--border);
       border-radius: 4px;
-      padding: 5px 10px 5px 30px;
+      padding: 5px 10px 5px 28px;
       font-family: var(--font-body);
-      font-size: 13px;
+      font-size: 12px;
       color: var(--parchment);
-      width: 180px;
-      outline: none;
+      width: 160px; outline: none;
     }
     .search-wrap input::placeholder { color: var(--border); }
     .search-wrap input:focus { border-color: var(--accent-glow); background: rgba(255,255,255,0.12); }
     .search-icon {
-      position: absolute; left: 8px; top: 50%;
+      position: absolute; left: 7px; top: 50%;
       transform: translateY(-50%);
-      font-size: 14px; color: var(--border); pointer-events: none;
+      font-size: 13px; color: var(--border); pointer-events: none;
     }
     .search-results {
       position: absolute; top: calc(100% + 4px); left: 0; right: 0;
-      background: var(--ink);
-      border: 1px solid var(--border);
-      border-radius: 4px;
-      z-index: 2000;
-      display: none;
+      background: var(--ink); border: 1px solid var(--border);
+      border-radius: 4px; z-index: 2000; display: none;
     }
     .search-results.open { display: block; }
     .search-result-item {
-      padding: 7px 12px;
-      font-size: 13px;
-      color: var(--parchment);
-      cursor: pointer;
-      border-bottom: 0.5px solid #3a2c18;
+      padding: 7px 12px; font-size: 12px; color: var(--parchment);
+      cursor: pointer; border-bottom: 0.5px solid #3a2c18;
     }
     .search-result-item:last-child { border-bottom: none; }
     .search-result-item:hover { background: rgba(255,255,255,0.08); }
@@ -151,74 +146,123 @@
     .filter-bar {
       background: var(--parchment);
       border-bottom: 1px solid var(--border);
-      padding: 8px 20px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      padding: 6px 14px;
+      display: flex; align-items: center; gap: 6px;
       flex-wrap: wrap;
-      position: relative;
-      z-index: 900;
+      position: relative; z-index: 900;
+      flex-shrink: 0;
     }
     .filter-label {
       font-family: var(--font-display);
-      font-size: 10px;
-      letter-spacing: 0.12em;
-      color: var(--ink-light);
-      text-transform: uppercase;
-      margin-right: 4px;
+      font-size: 9px; letter-spacing: 0.12em;
+      color: var(--ink-light); text-transform: uppercase; margin-right: 2px;
     }
     .filter-btn {
-      font-family: var(--font-body);
-      font-size: 13px;
-      padding: 3px 12px;
-      border-radius: 2px;
+      font-family: var(--font-body); font-size: 12px;
+      padding: 2px 10px; border-radius: 2px;
       border: 1px solid var(--border);
-      background: transparent;
-      color: var(--ink-light);
-      cursor: pointer;
-      transition: all 0.15s;
-      display: flex; align-items: center; gap: 5px;
+      background: transparent; color: var(--ink-light);
+      cursor: pointer; transition: all 0.15s;
+      display: flex; align-items: center; gap: 4px;
     }
     .filter-btn:hover { background: var(--parchment-dk); }
     .filter-btn.active { background: var(--ink); color: var(--parchment); border-color: var(--ink); }
-    .filter-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+    .filter-icon { font-size: 13px; line-height: 1; }
     .count-badge {
-      font-size: 10px;
-      background: var(--parchment-dk);
-      border-radius: 99px;
-      padding: 1px 5px;
-      color: var(--ink-light);
+      font-size: 9px; background: var(--parchment-dk);
+      border-radius: 99px; padding: 1px 5px; color: var(--ink-light);
     }
     .filter-btn.active .count-badge { background: rgba(255,255,255,0.2); color: var(--parchment); }
+    .entry-count {
+      font-family: var(--font-body); font-size: 11px;
+      color: var(--ink-light); font-style: italic;
+      margin-left: auto; padding-right: 2px; white-space: nowrap; align-self: center;
+    }
+
+    /* ── MAIN CONTENT AREA ── */
+    .content-area {
+      flex: 1; display: flex; overflow: hidden; position: relative;
+    }
+
+    /* ── SIDEBAR ── */
+    .sidebar {
+      width: var(--sidebar-w);
+      background: var(--parchment);
+      border-right: 1px solid var(--border);
+      display: flex; flex-direction: column;
+      z-index: 800; flex-shrink: 0;
+      transform: translateX(0);
+      transition: transform 0.3s ease, width 0.3s ease;
+      overflow: hidden;
+    }
+    .sidebar.collapsed {
+      transform: translateX(calc(-1 * var(--sidebar-w)));
+      width: 0;
+    }
+    .sidebar-header {
+      padding: 12px 14px 8px;
+      border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+    .sidebar-title {
+      font-family: var(--font-display);
+      font-size: 10px; letter-spacing: 0.15em;
+      text-transform: uppercase; color: var(--ink-light);
+      margin-bottom: 2px;
+    }
+    .sidebar-subtitle {
+      font-size: 11px; color: var(--ink-light); font-style: italic;
+    }
+    .sidebar-list {
+      flex: 1; overflow-y: auto;
+      padding: 4px 0;
+    }
+    .sidebar-list::-webkit-scrollbar { width: 4px; }
+    .sidebar-list::-webkit-scrollbar-track { background: var(--parchment-dk); }
+    .sidebar-list::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+    .sidebar-item {
+      padding: 7px 14px;
+      cursor: pointer;
+      border-bottom: 0.5px solid rgba(176,144,96,0.3);
+      transition: background 0.12s;
+      display: flex; align-items: flex-start; gap: 8px;
+    }
+    .sidebar-item:hover { background: var(--parchment-dk); }
+    .sidebar-item.active { background: rgba(139,58,26,0.1); }
+    .sidebar-item-icon { font-size: 16px; flex-shrink: 0; margin-top: 1px; line-height: 1; }
+    .sidebar-item-body { min-width: 0; }
+    .sidebar-item-name {
+      font-family: var(--font-display); font-size: 11px;
+      color: var(--ink); font-weight: 600; line-height: 1.3;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .sidebar-item-region {
+      font-size: 10px; color: var(--ink-light); font-style: italic;
+    }
 
     /* ── MAP CONTAINER ── */
     .map-wrap {
-      flex: 1;
-      position: relative;
-      min-height: 500px;
+      flex: 1; position: relative; overflow: hidden;
     }
-    #map {
-      position: absolute; inset: 0;
-    }
+    #map { position: absolute; inset: 0; }
     #map .leaflet-tile-pane {
       filter: var(--map-filter-day);
       transition: filter 1.2s ease;
     }
     #map.night .leaflet-tile-pane { filter: var(--map-filter-night); }
 
-    /* Parchment vignette overlay — sits above tiles (200) but below markers (600) */
     .map-vignette {
       position: absolute; inset: 0;
       pointer-events: none; z-index: 399;
-      background: radial-gradient(ellipse at center, transparent 55%, rgba(44,31,14,0.22) 100%);
+      background: radial-gradient(ellipse at center, transparent 55%, rgba(44,31,14,0.18) 100%);
     }
     .map-border {
       position: absolute; inset: 8px;
       pointer-events: none; z-index: 399;
-      border: 1px solid rgba(176,144,96,0.3);
+      border: 1px solid rgba(176,144,96,0.25);
     }
 
-    /* ── LEAFLET POPUP OVERRIDES ── */
+    /* ── LEAFLET POPUP ── */
     .leaflet-popup-content-wrapper {
       background: var(--parchment) !important;
       border: 1px solid var(--border) !important;
@@ -228,138 +272,81 @@
     }
     .leaflet-popup-tip { background: var(--parchment) !important; }
     .leaflet-popup-content { margin: 0 !important; width: auto !important; }
-    .leaflet-popup-close-button {
-      color: var(--ink-light) !important;
-      font-size: 16px !important;
-      padding: 6px 8px !important;
-    }
+    .leaflet-popup-close-button { color: var(--ink-light) !important; font-size: 16px !important; padding: 6px 8px !important; }
 
-    /* ── POPUP CONTENT ── */
     .popup-inner { padding: 14px 16px; min-width: 220px; max-width: 280px; }
     .popup-cat {
-      font-family: var(--font-display);
-      font-size: 9px;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      padding: 2px 8px;
-      border-radius: 2px;
-      color: #fff;
-      display: inline-block;
-      margin-bottom: 7px;
+      font-family: var(--font-display); font-size: 9px;
+      letter-spacing: 0.15em; text-transform: uppercase;
+      padding: 2px 8px; border-radius: 2px;
+      color: #fff; display: inline-block; margin-bottom: 7px;
     }
-    .popup-title {
-      font-family: var(--font-display);
-      font-size: 15px;
-      font-weight: 600;
-      color: var(--ink);
-      margin-bottom: 3px;
-      line-height: 1.3;
-    }
-    .popup-region {
-      font-size: 12px;
-      color: var(--ink-light);
-      font-style: italic;
-      margin-bottom: 8px;
-    }
-    .popup-divider {
-      border: none;
-      border-top: 1px solid var(--border);
-      margin: 8px 0;
-      opacity: 0.5;
-    }
-    .popup-summary {
-      font-size: 13px;
-      line-height: 1.6;
-      color: var(--ink);
-      margin-bottom: 10px;
-    }
-    .popup-source {
-      font-size: 11px;
-      color: var(--accent);
-      text-decoration: none;
-      font-style: italic;
-    }
+    .popup-title { font-family: var(--font-display); font-size: 15px; font-weight: 600; color: var(--ink); margin-bottom: 3px; line-height: 1.3; }
+    .popup-region { font-size: 12px; color: var(--ink-light); font-style: italic; margin-bottom: 8px; }
+    .popup-divider { border: none; border-top: 1px solid var(--border); margin: 8px 0; opacity: 0.5; }
+    .popup-summary { font-size: 13px; line-height: 1.6; color: var(--ink); margin-bottom: 10px; }
+    .popup-source { font-size: 11px; color: var(--accent); text-decoration: none; font-style: italic; }
     .popup-source:hover { text-decoration: underline; }
 
     /* ── LEGEND PANEL ── */
     .legend-panel {
-      position: absolute;
-      bottom: 24px; right: 12px;
+      position: absolute; bottom: 20px; right: 10px;
       z-index: 650;
       background: rgba(242,232,213,0.96);
-      border: 1px solid var(--border);
-      border-radius: 4px;
-      padding: 10px 14px;
-      min-width: 130px;
+      border: 1px solid var(--border); border-radius: 4px;
+      padding: 8px 12px; min-width: 130px;
     }
-    .legend-title {
-      font-family: var(--font-display);
-      font-size: 9px;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--ink-light);
-      margin-bottom: 8px;
-    }
-    .legend-item {
-      display: flex; align-items: center; gap: 7px;
-      font-family: var(--font-body);
-      font-size: 12px;
-      color: var(--ink);
-      margin-bottom: 5px;
-    }
+    .legend-title { font-family: var(--font-display); font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 6px; }
+    .legend-item { display: flex; align-items: center; gap: 6px; font-family: var(--font-body); font-size: 11px; color: var(--ink); margin-bottom: 4px; }
     .legend-item:last-child { margin-bottom: 0; }
-    .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+    .legend-icon { font-size: 14px; line-height: 1; width: 18px; text-align: center; }
+
+    /* ── MARKER CLUSTERS — navy/blue palette ── */
+    .marker-cluster {
+      border-radius: 50% !important;
+      background: transparent !important;
+    }
+    /* Override default background rings completely */
+    .marker-cluster-small,
+    .marker-cluster-medium,
+    .marker-cluster-large { background: none !important; }
+    .marker-cluster div {
+      font-family: var(--font-display);
+      font-size: 11px; font-weight: 600;
+      display: flex; align-items: center; justify-content: center;
+      border-radius: 50%; width: 100% !important; height: 100% !important;
+      border: 2px solid rgba(255,255,255,0.6);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+    .marker-cluster-small div  { background: #1e3a5f; color: #a8d4f0; }
+    .marker-cluster-medium div { background: #152c48; color: #c0dff5; }
+    .marker-cluster-large div  { background: #0e1e30; color: #d8eeff; }
 
     /* ── FOOTER ── */
     footer {
-      background: var(--ink);
-      border-top: 1px solid #3a2c18;
-      padding: 6px 20px;
-      font-family: var(--font-body);
-      font-size: 11px;
-      color: var(--border);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: relative;
-      z-index: 1000;
+      background: var(--ink); border-top: 1px solid #3a2c18;
+      padding: 5px 16px; font-family: var(--font-body);
+      font-size: 10px; color: var(--border);
+      display: flex; justify-content: space-between; align-items: center;
+      position: relative; z-index: 1100; flex-shrink: 0;
     }
     footer a { color: var(--border); }
 
-    /* ── MARKER CLUSTERS ── */
-    .marker-cluster {
-      border: 2px solid rgba(176,144,96,0.6);
-      border-radius: 50%;
-    }
-    .marker-cluster div {
-      font-family: var(--font-display);
-      font-size: 12px;
-      font-weight: 600;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      width: 100%;
-      height: 100%;
-    }
-    /* Warm parchment-amber palette — distinct from map colours */
-    .marker-cluster-small  { background-color: rgba(196,140,40,0.35); }
-    .marker-cluster-small div  { background-color: rgba(196,140,40,0.85); color: #2c1f0e; }
-    .marker-cluster-medium { background-color: rgba(160,90,20,0.35); }
-    .marker-cluster-medium div { background-color: rgba(160,90,20,0.85); color: #f2e8d5; }
-    .marker-cluster-large  { background-color: rgba(110,50,10,0.35); }
-    .marker-cluster-large div  { background-color: rgba(110,50,10,0.90); color: #f2e8d5; }
-
-    /* ── ENTRY COUNTER ── */
-    .entry-count {
-      font-family: var(--font-body);
-      font-size: 12px;
-      color: var(--ink-light);
-      font-style: italic;
-      margin-left: auto;
-      padding-right: 4px;
-      white-space: nowrap;
-      align-self: center;
+    /* ── MOBILE ── */
+    @media (max-width: 640px) {
+      h1 { font-size: 14px; }
+      .subtitle { display: none; }
+      .search-wrap input { width: 120px; }
+      .sidebar {
+        position: absolute; top: 0; left: 0; bottom: 0;
+        z-index: 850; box-shadow: 4px 0 20px rgba(0,0,0,0.3);
+      }
+      .sidebar.collapsed { transform: translateX(-100%); width: var(--sidebar-w); }
+      .filter-bar { padding: 5px 10px; gap: 4px; }
+      .filter-btn { font-size: 11px; padding: 2px 7px; }
+      .entry-count { display: none; }
+      .legend-panel { display: none; }
+      footer span:first-child { display: none; }
     }
   </style>
 </head>
@@ -368,18 +355,17 @@
 <header>
   <div class="header-title">
     <h1>Folklore Map of the British Isles</h1>
-    <span class="subtitle">Myths, Legends & Spectral Encounters</span>
+    <span class="subtitle">Myths, Legends &amp; Spectral Encounters</span>
   </div>
   <div class="header-controls">
+    <button class="sidebar-toggle-btn" onclick="toggleSidebar()" id="sidebarToggleBtn">☰ Entries</button>
     <div class="search-wrap">
       <span class="search-icon">⚲</span>
-      <input type="text" id="searchInput" placeholder="Search legends..." autocomplete="off" oninput="handleSearch(this.value)"/>
+      <input type="text" id="searchInput" placeholder="Search..." autocomplete="off" oninput="handleSearch(this.value)"/>
       <div class="search-results" id="searchResults"></div>
     </div>
     <div class="mode-toggle" onclick="toggleNight()">
-      <div class="toggle-track" id="modeTrack">
-        <div class="toggle-thumb"></div>
-      </div>
+      <div class="toggle-track" id="modeTrack"><div class="toggle-thumb"></div></div>
       <span id="modeLabel">Day</span>
     </div>
   </div>
@@ -390,39 +376,51 @@
   <span class="entry-count" id="entryCount"></span>
 </div>
 
-<div class="map-wrap">
-  <div id="map"></div>
-  <div class="map-vignette"></div>
-  <div class="map-border"></div>
-  <div class="legend-panel" id="legendPanel"></div>
+<div class="content-area">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-title">All Entries</div>
+      <div class="sidebar-subtitle" id="sidebarSubtitle">Loading...</div>
+    </div>
+    <div class="sidebar-list" id="sidebarList"></div>
+  </div>
+
+  <!-- MAP -->
+  <div class="map-wrap">
+    <div id="map"></div>
+    <div class="map-vignette"></div>
+    <div class="map-border"></div>
+    <div class="legend-panel" id="legendPanel"></div>
+  </div>
+
 </div>
 
 <footer>
   <span>Folklore Map of the British Isles — an ongoing project</span>
-  <span>Map tiles © <a href="https://stadiamaps.com/">Stadia Maps</a> / <a href="https://stamen.com">Stamen Design</a> · Data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors</span>
+  <span>Map © <a href="https://stadiamaps.com/">Stadia Maps</a> / <a href="https://stamen.com">Stamen</a> · Data © <a href="https://openstreetmap.org">OpenStreetMap</a></span>
 </footer>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 <script>
+
+// ── CATEGORY DEFINITIONS ────────────────────────────────────────────────
 const CATEGORIES = {
-  beast:  { label: 'Beasts',        colour: '#8b3a1a' },
-  ghost:  { label: 'Ghosts',        colour: '#3a4a6a' },
-  water:  { label: 'Water Creatures', colour: '#1a5a4a' },
-  fairy:  { label: 'Fae & Spirits', colour: '#6a3a6a' },
-  dragon: { label: 'Dragons',       colour: '#5a2a0a' },
-  witch:  { label: 'Witches',        colour: '#2a3a2a' },
-  deity:  { label: 'Deities',colour: '#6b4c8a' },
-  giant:  { label: 'Giants',        colour: '#4a5a3a' },
-  location: { label: 'Legendary Sites', colour: '#7a6030' },
+  beast:    { label: 'Beasts',           colour: '#2d6a8a', icon: '🐺' },
+  ghost:    { label: 'Ghosts',           colour: '#4a3d6e', icon: '👻' },
+  water:    { label: 'Water Creatures',  colour: '#1a5a6a', icon: '🌊' },
+  fairy:    { label: 'Fae & Spirits',    colour: '#6b4a1e', icon: '🍄' },
+  dragon:   { label: 'Dragons',          colour: '#8b2a1a', icon: '🐉' },
+  witch:    { label: 'Witches',          colour: '#3a2a4e', icon: '🧙' },
+  deity:    { label: 'Gods & Goddesses', colour: '#1e4a3a', icon: '🪬' },
+  giant:    { label: 'Giants',           colour: '#4a3820', icon: '👣' },
+  location: { label: 'Sacred Sites',    colour: '#5a3a18', icon: '🏰' },
 };
 
-let nightMode = false;
-let markers = [];
-let activeFilter = 'all';
-
-// Expanded bounds — generous padding so Ireland and Shetland feel comfortable
-const BOUNDS = L.latLngBounds([47.5, -13.0], [63.5, 4.5]);
+// ── MAP INIT ─────────────────────────────────────────────────────────────
+const BOUNDS = L.latLngBounds([47.5, -13.5], [63.5, 4.5]);
 
 const map = L.map('map', {
   zoomControl:        true,
@@ -432,47 +430,22 @@ const map = L.map('map', {
   maxBoundsViscosity: 0.85
 }).setView([54.5, -4.2], 6);
 
-// ── Inverted polygon mask — blacks out everything outside British Isles ──
-// Outer ring covers the whole world; inner rings cut out the land masses
-const WORLD = [[-90,-180],[-90,180],[90,180],[90,-180]];
-// Rough outlines — enough to mask the sea and foreign countries
-const GREAT_BRITAIN = [
-  [58.6,-3.1],[58.3,-3.5],[57.7,-3.9],[57.5,-4.2],[57.1,-5.7],[56.5,-5.5],
-  [56.0,-5.1],[55.3,-5.0],[55.0,-5.2],[54.6,-5.0],[54.2,-4.8],[53.9,-4.8],
-  [53.3,-4.5],[53.0,-4.3],[52.8,-4.7],[52.4,-4.1],[51.8,-5.1],[51.6,-5.0],
-  [51.2,-4.2],[50.6,-3.6],[50.2,-3.5],[50.0,-5.6],[50.1,-5.7],[50.0,-5.8],
-  [49.9,-6.4],[50.0,-5.6],[50.1,-3.5],[50.6,-0.9],[50.8,0.3],[51.4,1.4],
-  [51.8,1.3],[52.5,1.8],[52.9,1.7],[53.7,0.3],[54.0,0.0],[54.3,-0.1],
-  [54.7,-0.8],[55.1,-1.4],[55.5,-1.6],[55.8,-2.0],[56.0,-2.2],[56.4,-2.5],
-  [57.0,-2.1],[57.5,-1.8],[57.7,-2.0],[57.9,-3.8],[58.3,-3.5],[58.6,-3.1],
-  [58.7,-3.0],[59.1,-3.0],[60.8,-0.8],[60.8,-1.3],[60.4,-1.7],[59.9,-1.8],
-  [59.5,-2.8],[58.9,-3.0],[58.6,-3.1]
-];
-const IRELAND = [
-  [55.3,-6.2],[55.2,-6.6],[54.7,-7.0],[54.4,-8.2],[54.1,-10.0],[53.3,-10.2],
-  [52.0,-10.5],[51.4,-9.9],[51.4,-9.0],[52.1,-7.6],[52.2,-6.4],[53.1,-5.9],
-  [53.7,-6.2],[54.2,-6.1],[54.7,-6.4],[55.2,-6.3],[55.3,-6.2]
-];
-
-L.polygon([WORLD, GREAT_BRITAIN, IRELAND], {
-  color:       'none',
-  fillColor:   '#1a1208',
-  fillOpacity: 0.72,
-  interactive: false,
-  pane:        'overlayPane'
+L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_terrain/{z}/{x}/{y}{r}.png?api_key=89e39892-dad3-41e7-89e6-fa69ac42bb85', {
+  attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a> &copy; <a href="https://stamen.com">Stamen Design</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a>',
+  maxZoom: 18
 }).addTo(map);
 
-// ── Marker cluster group ─────────────────────────────────────────────────
+// ── CLUSTER GROUP ────────────────────────────────────────────────────────
 const clusterGroup = L.markerClusterGroup({
-  maxClusterRadius:       55,
-  spiderfyOnMaxZoom:      true,
-  showCoverageOnHover:    false,
-  zoomToBoundsOnClick:    true,
+  maxClusterRadius:        55,
+  spiderfyOnMaxZoom:       true,
+  showCoverageOnHover:     false,
+  zoomToBoundsOnClick:     true,
   disableClusteringAtZoom: 12,
   iconCreateFunction: function(cluster) {
     const count = cluster.getChildCount();
     const size  = count < 10 ? 'small' : count < 50 ? 'medium' : 'large';
-    const dim   = count < 10 ? 36 : count < 50 ? 44 : 52;
+    const dim   = count < 10 ? 36 : count < 50 ? 42 : 50;
     return L.divIcon({
       html: `<div><span>${count}</span></div>`,
       className: `marker-cluster marker-cluster-${size}`,
@@ -481,30 +454,28 @@ const clusterGroup = L.markerClusterGroup({
   }
 });
 
-L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_terrain/{z}/{x}/{y}{r}.png?api_key=89e39892-dad3-41e7-89e6-fa69ac42bb85', {
-  attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a> &copy; <a href="https://stamen.com">Stamen Design</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a>',
-  maxZoom: 18
-}).addTo(map);
-
-function makeIcon(colour, nightMode) {
-  const c = nightMode ? lightenForNight(colour) : colour;
-  const svg = `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 38' width='28' height='38'>
-    <filter id='s'><feDropShadow dx='0' dy='2' stdDeviation='2' flood-opacity='0.4'/></filter>
-    <path d='M14 1C7 1 1 7 1 14c0 10 13 23 13 23S27 24 27 14C27 7 21 1 14 1z' fill='${c}' filter='url(#s)' stroke='rgba(0,0,0,0.3)' stroke-width='0.5'/>
-    <circle cx='14' cy='14' r='6' fill='rgba(255,255,255,0.88)'/>
-    <circle cx='14' cy='14' r='3' fill='${c}' opacity='0.7'/>
+// ── MARKER ICON ──────────────────────────────────────────────────────────
+function makeIcon(category, isNight) {
+  const cat = CATEGORIES[category] || CATEGORIES.beast;
+  const c   = cat.colour;
+  const ico = cat.icon;
+  // Night mode: slightly lighter pin body
+  const fill = isNight ? c + 'cc' : c;
+  const svg = `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 42' width='32' height='42'>
+    <defs><filter id='ds'><feDropShadow dx='0' dy='2' stdDeviation='2' flood-opacity='0.45'/></filter></defs>
+    <path d='M16 1C8.3 1 2 7.3 2 15c0 11 14 26 14 26S30 26 30 15C30 7.3 23.7 1 16 1z'
+          fill='${fill}' filter='url(%23ds)' stroke='rgba(255,255,255,0.35)' stroke-width='0.8'/>
+    <circle cx='16' cy='15' r='10' fill='rgba(255,255,255,0.18)'/>
+    <text x='16' y='19.5' text-anchor='middle' font-size='12' font-family='serif'>${ico}</text>
   </svg>`;
-  return L.divIcon({ html: svg, className: '', iconSize: [28, 38], iconAnchor: [14, 38], popupAnchor: [0, -40] });
+  return L.divIcon({ html: svg, className: '', iconSize: [32, 42], iconAnchor: [16, 42], popupAnchor: [0, -44] });
 }
 
-function lightenForNight(hex) {
-  return hex;
-}
-
+// ── POPUP ────────────────────────────────────────────────────────────────
 function buildPopup(leg) {
-  const cat = CATEGORIES[leg.category];
+  const cat = CATEGORIES[leg.category] || CATEGORIES.beast;
   return `<div class="popup-inner">
-    <span class="popup-cat" style="background:${cat.colour}">${cat.label}</span>
+    <span class="popup-cat" style="background:${cat.colour}">${cat.icon} ${cat.label}</span>
     <div class="popup-title">${leg.name}</div>
     <div class="popup-region">${leg.region}</div>
     <hr class="popup-divider"/>
@@ -513,13 +484,19 @@ function buildPopup(leg) {
   </div>`;
 }
 
-let LEGENDS = [];
+// ── STATE ────────────────────────────────────────────────────────────────
+let LEGENDS      = [];
+let markers      = [];
+let activeFilter = 'all';
+let nightMode    = false;
+let sidebarOpen  = true;
 
+// ── LOAD MARKERS ─────────────────────────────────────────────────────────
 function loadMarkers(legends) {
   legends.forEach(leg => {
     if (!CATEGORIES[leg.category]) leg.category = 'beast';
     const marker = L.marker([leg.lat, leg.lng], {
-      icon: makeIcon(CATEGORIES[leg.category].colour, false)
+      icon: makeIcon(leg.category, false)
     }).bindPopup(buildPopup(leg), { maxWidth: 300 });
     marker._legendData = leg;
     markers.push(marker);
@@ -528,96 +505,137 @@ function loadMarkers(legends) {
   map.addLayer(clusterGroup);
 }
 
-function updateCount(n) {
-  const el = document.getElementById('entryCount');
-  if (!el) return;
-  if (n === LEGENDS.length) {
-    el.textContent = `${n} entries`;
-  } else {
-    el.textContent = `${n} of ${LEGENDS.length} entries`;
-  }
-}
-
-function buildFilters() {
-  const bar = document.getElementById('filterBar');
-  const label = bar.querySelector('.filter-label');
-  bar.innerHTML = '';
-  bar.appendChild(label);
-
-  const allBtn = makeFilterBtn('all', 'All', null);
-  allBtn.classList.add('active');
-  bar.appendChild(allBtn);
-
-  const usedCats = [...new Set(LEGENDS.map(l => l.category))];
-  usedCats.forEach(cat => {
-    const count = LEGENDS.filter(l => l.category === cat).length;
-    bar.appendChild(makeFilterBtn(cat, CATEGORIES[cat].label, CATEGORIES[cat].colour, count));
-  });
-}
-
-function makeFilterBtn(cat, label, colour, count) {
-  const btn = document.createElement('button');
-  btn.className = 'filter-btn';
-  btn.dataset.cat = cat;
-  btn.innerHTML = (colour ? `<span class="filter-dot" style="background:${colour}"></span>` : '') +
-    label +
-    (count ? ` <span class="count-badge">${count}</span>` : '');
-  btn.onclick = () => filterMarkers(cat);
-  return btn;
-}
-
+// ── FILTER ───────────────────────────────────────────────────────────────
 function filterMarkers(cat) {
   activeFilter = cat;
   document.querySelectorAll('.filter-btn').forEach(b => {
     b.classList.toggle('active', b.dataset.cat === cat);
   });
   clusterGroup.clearLayers();
-  const visible = markers.filter(m =>
-    cat === 'all' || m._legendData.category === cat
-  );
+  const visible = markers.filter(m => cat === 'all' || m._legendData.category === cat);
   clusterGroup.addLayers(visible);
   updateCount(visible.length);
+  buildSidebarList(visible.map(m => m._legendData));
 }
 
+// ── COUNT ─────────────────────────────────────────────────────────────────
+function updateCount(n) {
+  const el = document.getElementById('entryCount');
+  if (!el) return;
+  el.textContent = n === LEGENDS.length ? `${n} entries` : `${n} of ${LEGENDS.length} entries`;
+}
+
+// ── FILTER BUTTONS ───────────────────────────────────────────────────────
+function buildFilters() {
+  const bar   = document.getElementById('filterBar');
+  const label = bar.querySelector('.filter-label');
+  const count = bar.querySelector('.entry-count');
+  bar.innerHTML = '';
+  bar.appendChild(label);
+
+  const allBtn = makeFilterBtn('all', 'All', null, null);
+  allBtn.classList.add('active');
+  bar.appendChild(allBtn);
+
+  const usedCats = [...new Set(LEGENDS.map(l => l.category))].sort();
+  usedCats.forEach(cat => {
+    if (!CATEGORIES[cat]) return;
+    const n = LEGENDS.filter(l => l.category === cat).length;
+    bar.appendChild(makeFilterBtn(cat, CATEGORIES[cat].label, CATEGORIES[cat].colour, n));
+  });
+
+  bar.appendChild(count);
+}
+
+function makeFilterBtn(cat, label, colour, count) {
+  const btn = document.createElement('button');
+  btn.className   = 'filter-btn';
+  btn.dataset.cat = cat;
+  const cat_obj = CATEGORIES[cat];
+  const iconHtml = cat_obj ? `<span class="filter-icon">${cat_obj.icon}</span>` : '';
+  const cntHtml  = count   ? ` <span class="count-badge">${count}</span>` : '';
+  btn.innerHTML  = iconHtml + label + cntHtml;
+  btn.onclick    = () => filterMarkers(cat);
+  return btn;
+}
+
+// ── LEGEND PANEL ──────────────────────────────────────────────────────────
 function buildLegend() {
-  const panel = document.getElementById('legendPanel');
-  const usedCats = [...new Set(LEGENDS.map(l => l.category))];
+  const panel    = document.getElementById('legendPanel');
+  const usedCats = [...new Set(LEGENDS.map(l => l.category))].sort();
   panel.innerHTML = `<div class="legend-title">Legend</div>` +
-    usedCats.map(cat => `
+    usedCats.filter(c => CATEGORIES[c]).map(cat => `
       <div class="legend-item">
-        <span class="legend-dot" style="background:${CATEGORIES[cat].colour}"></span>
+        <span class="legend-icon">${CATEGORIES[cat].icon}</span>
         ${CATEGORIES[cat].label}
       </div>`).join('');
 }
 
+// ── SIDEBAR ───────────────────────────────────────────────────────────────
+function toggleSidebar() {
+  sidebarOpen = !sidebarOpen;
+  document.getElementById('sidebar').classList.toggle('collapsed', !sidebarOpen);
+  document.getElementById('sidebarToggleBtn').textContent = sidebarOpen ? '✕ Entries' : '☰ Entries';
+  setTimeout(() => map.invalidateSize(), 320);
+}
+
+function buildSidebarList(legends) {
+  const list = document.getElementById('sidebarList');
+  const sub  = document.getElementById('sidebarSubtitle');
+
+  const sorted = [...legends].sort((a, b) => a.name.localeCompare(b.name));
+  sub.textContent = `${sorted.length} ${activeFilter === 'all' ? 'entries' : CATEGORIES[activeFilter]?.label || 'entries'}`;
+
+  list.innerHTML = sorted.map(leg => {
+    const cat = CATEGORIES[leg.category] || CATEGORIES.beast;
+    return `<div class="sidebar-item" onclick="focusLegend('${leg.name.replace(/'/g, "\\'")}')">
+      <span class="sidebar-item-icon">${cat.icon}</span>
+      <div class="sidebar-item-body">
+        <div class="sidebar-item-name">${leg.name}</div>
+        <div class="sidebar-item-region">${leg.region}</div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function highlightSidebarItem(name) {
+  document.querySelectorAll('.sidebar-item').forEach(el => {
+    el.classList.toggle('active', el.querySelector('.sidebar-item-name')?.textContent === name);
+  });
+  // Scroll active item into view
+  const active = document.querySelector('.sidebar-item.active');
+  if (active) active.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+}
+
+// ── NIGHT MODE ────────────────────────────────────────────────────────────
 function toggleNight() {
   nightMode = !nightMode;
   document.getElementById('map').classList.toggle('night', nightMode);
   document.getElementById('modeTrack').classList.toggle('on', nightMode);
   document.getElementById('modeLabel').textContent = nightMode ? 'Night' : 'Day';
-  markers.forEach(m => {
-    m.setIcon(makeIcon(CATEGORIES[m._legendData.category].colour, nightMode));
-  });
+  markers.forEach(m => m.setIcon(makeIcon(m._legendData.category, nightMode)));
   clusterGroup.refreshClusters();
 }
 
+// ── SEARCH ────────────────────────────────────────────────────────────────
 function handleSearch(query) {
   const box = document.getElementById('searchResults');
   if (!query.trim()) { box.classList.remove('open'); return; }
-  const q = query.toLowerCase();
+  const q       = query.toLowerCase();
   const matches = LEGENDS.filter(l =>
     l.name.toLowerCase().includes(q) ||
     l.region.toLowerCase().includes(q) ||
     l.category.toLowerCase().includes(q)
-  ).slice(0, 6);
+  ).slice(0, 8);
   if (!matches.length) { box.classList.remove('open'); return; }
   box.innerHTML = matches.map(l => `
-    <div class="search-result-item" onclick="focusLegend('${l.name.replace(/'/g,"\\'")}')">
-      ${l.name}<span>${l.region}</span>
+    <div class="search-result-item" onclick="focusLegend('${l.name.replace(/'/g, "\\'")}')">
+      ${CATEGORIES[l.category]?.icon || ''} ${l.name}<span>${l.region}</span>
     </div>`).join('');
   box.classList.add('open');
 }
 
+// ── FOCUS LEGEND ─────────────────────────────────────────────────────────
 function focusLegend(name) {
   document.getElementById('searchResults').classList.remove('open');
   document.getElementById('searchInput').value = '';
@@ -626,38 +644,39 @@ function focusLegend(name) {
   if (activeFilter !== 'all' && activeFilter !== leg.category) filterMarkers('all');
   const marker = markers.find(m => m._legendData.name === name);
   if (!marker) return;
+  highlightSidebarItem(name);
   map.setView([leg.lat, leg.lng], 12, { animate: true });
-  setTimeout(() => {
-    clusterGroup.zoomToShowLayer(marker, () => marker.openPopup());
-  }, 400);
+  setTimeout(() => clusterGroup.zoomToShowLayer(marker, () => marker.openPopup()), 400);
 }
 
+// ── CLICK OUTSIDE SEARCH ──────────────────────────────────────────────────
 document.addEventListener('click', e => {
-  if (!e.target.closest('.search-wrap')) {
+  if (!e.target.closest('.search-wrap'))
     document.getElementById('searchResults').classList.remove('open');
-  }
 });
 
+// ── FETCH LEGENDS ─────────────────────────────────────────────────────────
 fetch('legends.json?v=' + Date.now())
-  .then(r => {
-    if (!r.ok) throw new Error(`HTTP ${r.status}`);
-    return r.json();
-  })
+  .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
   .then(data => {
     LEGENDS = data.legends || data;
     loadMarkers(LEGENDS);
     buildFilters();
     buildLegend();
+    buildSidebarList(LEGENDS);
     updateCount(LEGENDS.length);
+
+    // Highlight sidebar item when popup opens via marker click
+    markers.forEach(m => {
+      m.on('popupopen', () => highlightSidebarItem(m._legendData.name));
+    });
   })
   .catch(err => {
     console.error('Failed to load legends.json:', err);
     document.getElementById('filterBar').insertAdjacentHTML('beforeend',
-      `<span style="color:#8b3a1a;font-size:12px;margin-left:8px">
-        ⚠ Could not load legends.json — run build_legends.py first, or open via a local server.
-      </span>`
-    );
+      `<span style="color:#8b3a1a;font-size:12px;margin-left:8px">⚠ Could not load legends.json</span>`);
   });
+
 </script>
 </body>
 </html>

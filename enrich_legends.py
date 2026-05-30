@@ -117,6 +117,12 @@ REMOVE_ENTRIES = {
     "Nine Maidens stone row",        # keep "Nine Maidens Stone Row"
     "Stanton Drew stone circles",    # keep "Stanton Drew Stone Circles"
     "Whetstones",                    # keep "Whetstones (stone circle)"
+    "The Giant's Causeway",          # keep "Giant's Causeway"
+    # Ireland — remove entries outside British Isles scope or pure geography
+    "Fintan's Grave",                # Irish mountain, no folklore content
+    "Mag Lena",                      # Irish plain, no folklore content
+    "Latoon Fairy Bush",             # keep but coords are in Ireland — fine
+    "Latoon fairy bush",             # duplicate capitalisation
 }
 
 # ---------------------------------------------------------------------------
@@ -165,6 +171,63 @@ FORCE_CATEGORY = {
     "Caer Bran":              "location",
     "Zennor":                 "location",  # village famous for mermaid legend
     "Trow":                   "fairy",
+    # Irish entries
+    "Banshee":                "ghost",
+    "Pooka":                  "fairy",
+    "Aos Sí":                 "fairy",
+    "Cú Chulainn":            "deity",
+    "Fionn mac Cumhaill":     "deity",
+    "The Dagda":              "deity",
+    "Tuatha Dé Danann":       "deity",
+    "Balor of the Evil Eye":  "giant",
+    "Queen Medb":             "deity",
+    "Cailleach Bhéara":       "deity",
+    "Children of Lir":        "deity",
+    "Newgrange":              "location",
+    "Hill of Tara":           "location",
+    "Croagh Patrick":         "location",
+    "Knocknarea":             "location",
+    "Giant's Causeway":       "giant",
+    "Salmon of Knowledge":    "water",
+    # New British entries
+    "Black Annis":            "beast",
+    "Wisht Hounds":           "beast",
+    "Blue Men of the Minch":  "water",
+    "Blodeuwedd":             "deity",
+    "Gwyn ap Nudd":           "deity",
+    "Merlin":                 "deity",
+    "Gawain":                 "deity",
+    "Lancelot":               "deity",
+    "Corineus":               "giant",
+    "Gog and Magog":          "giant",
+    "Camelot":                "location",
+    "Avalon":                 "location",
+    "Hafren":                 "deity",
+    "Gwy":                    "deity",
+    "Rheidol":                "deity",
+    "Plynlimon":              "giant",
+    "Elder Mother":           "deity",
+    "Mother Ludlam":          "witch",
+    "Helen Duncan":           "witch",
+    "Yallery Brown":          "fairy",
+    "Seelie Court":           "fairy",
+    "Unseelie Court":         "fairy",
+    "Tylwyth Teg":            "fairy",
+    "Glaistig":               "water",
+    "Bean Nighe":             "ghost",
+    "Filey Dragon":           "dragon",
+    "Gurt Worm":              "dragon",
+    "Mordiford Dragon":       "dragon",
+    "Penhill Giant":          "giant",
+    "Dick Turpin":            "ghost",
+    "Lantern Man":            "ghost",
+    "Renwick Cockatrice":     "beast",
+    "Pixie":                  "fairy",
+    "Boggarts":               "fairy",
+    "Brown Man of the Muirs": "fairy",
+    "Gooseberry Wife":        "fairy",
+    "Hyter Sprite":           "fairy",
+    "Wights":                 "ghost",
 }
 
 # ---------------------------------------------------------------------------

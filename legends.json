@@ -1,6 +1,6 @@
 {
   "generated": "2026-05-31T11:45:20.677754Z",
-  "total": 298,
+  "total": 293,
   "categories": {
     "beast": "Beast",
     "ghost": "Ghost",
@@ -13,6 +13,7 @@
     "location": "Legendary Sites",
     "ancient_site": "Ancient & Sacred Sites",
     "hero": "Heroes & Legendary Figures",
+    "pirate": "Pirates & Maritime Lore",
     "ritual": "Rituals & Folk Customs",
     "norse": "Norse & Northern Lore"
   },
@@ -315,15 +316,6 @@
       "source": "https://en.wikipedia.org/wiki/Bossiney_Castle"
     },
     {
-      "name": "Boulogne-sur-Mer",
-      "lat": 50.7264,
-      "lng": 1.6147,
-      "category": "pirate",
-      "region": "Britain",
-      "summary": "Boulogne-sur-Mer, often called just Boulogne, is a port city in Northern France. It is a sub-prefecture of the department of Pas-de-Calais. Boulogne lies on the Côte d'Opale, a touristic stretch of French coast on the English Channel between Calais and Normandy, and the most visited location in the region after the Lille conurbation. Boulogne is its department's third-largest city after Calais and Arras.",
-      "source": "https://en.wikipedia.org/wiki/Boulogne-sur-Mer"
-    },
-    {
       "name": "Bran the Blessed",
       "lat": 51.508,
       "lng": -0.076,
@@ -423,15 +415,6 @@
       "source": "https://en.wikipedia.org/wiki/Bwbach"
     },
     {
-      "name": "Byland Abbey",
-      "lat": 54.2031,
-      "lng": -1.1592,
-      "category": "pirate",
-      "region": "Yorkshire",
-      "summary": "Byland Abbey is a ruined abbey and a small village in Byland with Wass civil parish, in the county of North Yorkshire, England, in the North York Moors National Park.",
-      "source": "https://en.wikipedia.org/wiki/Byland_Abbey"
-    },
-    {
       "name": "Caer Bran",
       "lat": 50.1047,
       "lng": -5.627,
@@ -466,15 +449,6 @@
       "region": "County Cork, Ireland",
       "summary": "The ancient hag of the Beara Peninsula — one of the oldest figures in Irish and Scottish mythology. She has lived through seven human lifetimes, each renewed by marrying a young husband who aged and died. She shaped the mountains, drove her cattle across the sky as clouds, and now sits as stone at the tip of the peninsula, waiting.",
       "source": "https://en.wikipedia.org/wiki/Cailleach"
-    },
-    {
-      "name": "Cambridge University Press",
-      "lat": 52.1882,
-      "lng": 0.132,
-      "category": "pirate",
-      "region": "Britain",
-      "summary": "Cambridge University Press is the university press of the University of Cambridge. Granted letters patent by King Henry VIII in 1534, it is the oldest university press in the world. Cambridge University Press merged with Cambridge Assessment to form Cambridge University Press and Assessment under Queen Elizabeth II's approval in August 2021. However, the Press retains an independent existence within the larger entity.",
-      "source": "https://en.wikipedia.org/wiki/Cambridge_University_Press"
     },
     {
       "name": "Camelot",
@@ -898,24 +872,6 @@
       "region": "London",
       "summary": "The Enfield poltergeist was a claim of supernatural activity at 284 Green Street, a council house in Brimsdown, Enfield, London, England, between 1977 and 1979. The alleged poltergeist activity was centred on sisters Janet, aged 11, and Margaret Hodgson, aged 13.",
       "source": "https://en.wikipedia.org/wiki/Enfield_poltergeist"
-    },
-    {
-      "name": "England",
-      "lat": 53.13,
-      "lng": -1.38,
-      "category": "pirate",
-      "region": "Scotland",
-      "summary": "England is a country that is part of the United Kingdom. It is located on the island of Great Britain, of which it covers about 62%, and more than 100 smaller adjacent islands. England shares a land border with Scotland to the north and another land border with Wales to the west, and is surrounded by the North Sea to the east, the English Channel to the south, the Celtic Sea to the south-west, and the Irish Sea to the west.",
-      "source": "https://en.wikipedia.org/wiki/England"
-    },
-    {
-      "name": "English Channel",
-      "lat": 50.2,
-      "lng": -2.0,
-      "category": "pirate",
-      "region": "Britain",
-      "summary": "The English Channel, also known as the Channel, is an arm of the Atlantic Ocean that separates Southern England from northern France. It links to the southern part of the North Sea by the Strait of Dover at its northeastern end. It is the busiest shipping area in the world.",
-      "source": "https://en.wikipedia.org/wiki/English_Channel"
     },
     {
       "name": "Epona",

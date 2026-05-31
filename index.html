@@ -4,6 +4,39 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Folklore Map of the British Isles</title>
+
+  <!-- SEO -->
+  <meta name="description" content="An interactive map of myths, legends, ghosts, sacred sites and folklore entities across Britain and Ireland — 300+ entries from Black Shuck to the Loch Ness Monster."/>
+  <meta name="author" content="EditionTree"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://editiontree.github.io/folklore-map/"/>
+
+  <!-- Open Graph (Facebook, Discord, iMessage, WhatsApp) -->
+  <meta property="og:type"        content="website"/>
+  <meta property="og:url"         content="https://editiontree.github.io/folklore-map/"/>
+  <meta property="og:title"       content="Folklore Map of the British Isles"/>
+  <meta property="og:description" content="Explore 300+ myths, legends, ghosts and sacred sites across Britain and Ireland — an interactive folklore almanac."/>
+  <meta property="og:image"       content="https://editiontree.github.io/folklore-map/og/preview.jpg"/>
+  <meta property="og:image:width"  content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image"/>
+  <meta name="twitter:title"       content="Folklore Map of the British Isles"/>
+  <meta name="twitter:description" content="Explore 300+ myths, legends, ghosts and sacred sites across Britain and Ireland — an interactive folklore almanac."/>
+  <meta name="twitter:image"       content="https://editiontree.github.io/folklore-map/og/preview.jpg"/>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Folklore Map of the British Isles",
+    "url": "https://editiontree.github.io/folklore-map/",
+    "description": "An interactive map of myths, legends, ghosts, sacred sites and folklore entities across Britain and Ireland.",
+    "author": { "@type": "Person", "name": "EditionTree" }
+  }
+  </script>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"/>
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"/>
@@ -39,9 +72,9 @@
 
     /* ── HEADER ── */
     header {
-      background: var(--ink);
-      border-bottom: 2px solid var(--accent);
-      padding: 14px 24px;
+      background: linear-gradient(180deg, #1e1408 0%, var(--ink) 70%);
+      border-bottom: 1px solid rgba(176,144,96,0.35);
+      padding: 16px 24px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -50,26 +83,41 @@
       position: relative;
       z-index: 1000;
     }
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg, transparent 0%, var(--accent) 20%, var(--border) 50%, var(--accent) 80%, transparent 100%);
+    }
     header::after {
       content: '';
       position: absolute;
       bottom: -5px; left: 0; right: 0;
       height: 3px;
       background: repeating-linear-gradient(90deg, var(--accent) 0, var(--accent) 6px, transparent 6px, transparent 12px);
-      opacity: 0.5;
+      opacity: 0.4;
     }
-    .header-title { display: flex; align-items: baseline; gap: 12px; }
+    .header-title { display: flex; align-items: baseline; gap: 14px; }
     h1 {
       font-family: var(--font-display);
-      font-size: 22px;
+      font-size: 24px;
       font-weight: 600;
       color: var(--parchment);
-      letter-spacing: 0.08em;
+      letter-spacing: 0.09em;
+      text-shadow: 0 1px 18px rgba(196,98,42,0.4), 0 0 40px rgba(176,144,96,0.12);
+    }
+    h1::before, h1::after {
+      content: '✦';
+      font-size: 11px;
+      color: var(--accent-glow);
+      opacity: 0.7;
+      vertical-align: middle;
+      margin: 0 8px;
     }
     .subtitle {
       font-family: var(--font-body);
       font-size: 13px;
-      color: var(--border);
+      color: rgba(176,144,96,0.85);
       font-style: italic;
       letter-spacing: 0.04em;
     }
@@ -296,17 +344,30 @@
       background: rgba(242,232,213,0.96);
       border: 1px solid var(--border);
       border-radius: 4px;
-      padding: 10px 14px;
       min-width: 130px;
+      overflow: hidden;
     }
+    .legend-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 8px 14px 6px;
+      border-bottom: 1px solid rgba(176,144,96,0.3);
+      cursor: pointer;
+      user-select: none;
+    }
+    .legend-header:hover { background: rgba(176,144,96,0.1); }
     .legend-title {
       font-family: var(--font-display);
       font-size: 9px;
       letter-spacing: 0.15em;
       text-transform: uppercase;
       color: var(--ink-light);
-      margin-bottom: 8px;
     }
+    .legend-toggle {
+      font-size: 14px; color: var(--ink-light); line-height: 1;
+      transition: transform 0.2s;
+    }
+    .legend-body { padding: 8px 14px 10px; }
+    .legend-body.collapsed { display: none; }
     .legend-item {
       display: flex; align-items: center; gap: 7px;
       font-family: var(--font-body);
@@ -465,7 +526,18 @@ CATEGORIES.pirate.label = "Pirates & Smugglers";
 let nightMode = false;
 let markers = [];
 let activeFilter = 'all';
-let sidebarOpen = true;
+const isMobile = () => window.innerWidth <= 640;
+let sidebarOpen = isMobile() ? false : (localStorage.getItem('sidebarOpen') !== 'false');
+
+// Apply persisted sidebar state immediately (before data loads)
+document.addEventListener('DOMContentLoaded', () => {
+  const sidebar = document.getElementById('sidebar');
+  const btn     = document.getElementById('sidebarToggleBtn');
+  if (!sidebarOpen) {
+    sidebar.classList.add('collapsed');
+    btn.textContent = '☰ Entries';
+  }
+});
 
 const EXCLUDED_LEGEND_NAMES = new Set([
   'Boulogne-sur-Mer',
@@ -475,10 +547,10 @@ const EXCLUDED_LEGEND_NAMES = new Set([
   'English Channel',
 ]);
 
-const BOUNDS = L.latLngBounds([46.0, -14.0], [65.0, 6.0]);
+const BOUNDS = L.latLngBounds([44.0, -16.0], [67.0, 9.0]);
 const map = L.map('map', {
   zoomControl: true, minZoom: 5, maxZoom: 17,
-  maxBounds: BOUNDS, maxBoundsViscosity: 0.85
+  maxBounds: BOUNDS, maxBoundsViscosity: 0.7
 }).setView([54.5, -2.5], 6);
 
 const clusterGroup = L.markerClusterGroup({
@@ -636,13 +708,27 @@ function filterMarkers(cat) {
 function buildLegend() {
   const panel    = document.getElementById('legendPanel');
   const usedCats = [...new Set(LEGENDS.map(l => l.category))].sort();
-  panel.innerHTML = '<div class="legend-title">Legend</div>' +
-    usedCats.filter(c => CATEGORIES[c]).map(cat => {
-      const ico = CATEGORIES[cat].iconPath
-        ? '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="14" height="14" style="display:block;flex-shrink:0"><path d="' + CATEGORIES[cat].iconPath + '" fill="' + CATEGORIES[cat].colour + '"/></svg>'
-        : '';
-      return '<div class="legend-item"><span class="legend-dot" style="display:flex;align-items:center">' + ico + '</span>' + CATEGORIES[cat].label + '</div>';
-    }).join('');
+  const collapsed = localStorage.getItem('legendCollapsed') === 'true';
+  const items = usedCats.filter(c => CATEGORIES[c]).map(cat => {
+    const ico = CATEGORIES[cat].iconPath
+      ? '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="14" height="14" style="display:block;flex-shrink:0"><path d="' + CATEGORIES[cat].iconPath + '" fill="' + CATEGORIES[cat].colour + '"/></svg>'
+      : '';
+    return '<div class="legend-item"><span class="legend-dot" style="display:flex;align-items:center">' + ico + '</span>' + CATEGORIES[cat].label + '</div>';
+  }).join('');
+  panel.innerHTML =
+    '<div class="legend-header" onclick="toggleLegend()">' +
+      '<div class="legend-title">Legend</div>' +
+      '<span class="legend-toggle" id="legendToggle">' + (collapsed ? '+' : '−') + '</span>' +
+    '</div>' +
+    '<div class="legend-body' + (collapsed ? ' collapsed' : '') + '" id="legendBody">' + items + '</div>';
+}
+
+function toggleLegend() {
+  const body = document.getElementById('legendBody');
+  const btn  = document.getElementById('legendToggle');
+  const nowCollapsed = !body.classList.toggle('collapsed');
+  btn.textContent = body.classList.contains('collapsed') ? '+' : '−';
+  localStorage.setItem('legendCollapsed', body.classList.contains('collapsed'));
 }
 
 function toggleNight() {
@@ -689,6 +775,7 @@ function focusLegend(name) {
   const marker = markers.find(m => m._legendData.name === name);
   if (!marker) return;
   highlightSidebarItem(name);
+  if (isMobile() && sidebarOpen) toggleSidebar();
   map.setView([leg.lat, leg.lng], 12, { animate: true });
   setTimeout(() => clusterGroup.zoomToShowLayer(marker, () => marker.openPopup()), 400);
 }
@@ -704,6 +791,7 @@ function toggleSidebar() {
   sidebarOpen = !sidebarOpen;
   document.getElementById('sidebar').classList.toggle('collapsed', !sidebarOpen);
   document.getElementById('sidebarToggleBtn').textContent = sidebarOpen ? '✕ Entries' : '☰ Entries';
+  if (!isMobile()) localStorage.setItem('sidebarOpen', sidebarOpen);
   setTimeout(() => map.invalidateSize(), 300);
 }
 

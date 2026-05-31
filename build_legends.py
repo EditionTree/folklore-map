@@ -101,19 +101,15 @@ CATEGORIES = [
     ("Category:Haunted_locations_in_Ireland",       "location"),
     ("Category:Sacred_sites_in_Ireland",            "location"),
     ("Category:Megalithic_monuments_in_Ireland",    "location"),
-    # Pirate & maritime lore
-    ("Category:English_pirates",                   "pirate"),
-    ("Category:Scottish_pirates",                  "pirate"),
-    ("Category:Irish_pirates",                     "pirate"),
-    ("Category:Welsh_pirates",                     "pirate"),
-    ("Category:Privateers",                        "pirate"),
-    ("Category:Pirates_in_the_Caribbean",          "pirate"),
-    ("Category:Piracy_in_the_British_Isles",       "pirate"),
-    ("Category:Smuggling_in_the_United_Kingdom",   "pirate"),
-    ("Category:Smuggling_in_England",              "pirate"),
-    ("Category:Wrecking_(shipwrecks)",             "pirate"),
-    ("Category:Pirate_captains",                   "pirate"),
-    ("Category:British_pirates",                   "pirate"),
+    # Pirates & maritime folklore
+    ("Category:English_pirates",                    "pirate"),
+    ("Category:Scottish_pirates",                   "pirate"),
+    ("Category:Irish_pirates",                      "pirate"),
+    ("Category:Welsh_pirates",                      "pirate"),
+    ("Category:Privateers",                         "pirate"),
+    ("Category:British_pirates",                    "pirate"),
+    ("Category:Smuggling_in_the_United_Kingdom",    "pirate"),
+    ("Category:Wrecking_(shipwrecks)",              "pirate"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -126,8 +122,8 @@ LISTS = [
     ("List of giants in mythology and folklore",   "giant"),
     ("List of Arthurian characters",               "deity"),
     ("List of Irish mythological figures",         "deity"),
-    ("List of pirates",                           "pirate"),
-    ("List of English pirates",                   "pirate"),
+    ("List of pirates",                            "pirate"),
+    ("List of English pirates",                    "pirate"),
 ]
 
 CATEGORY_LABELS = {
@@ -2652,14 +2648,13 @@ def infer_region(title: str, summary: str) -> str:
 
 
 # ---------------------------------------------------------------------------
-# Cleanup — REMOVE_ENTRIES, FORCE_CATEGORY, apply_cleanup
+# Cleanup — apply_cleanup, REMOVE_ENTRIES, FORCE_CATEGORY etc.
 # ---------------------------------------------------------------------------
 
 CATEGORY_REMAP = {
     "ancient_site": "location",
     "ritual":       "location",
     "norse":        "fairy",
-    # hero is now valid — no remap
 }
 
 VALID_CATEGORIES = {
@@ -2668,27 +2663,17 @@ VALID_CATEGORIES = {
 }
 
 REMOVE_ENTRIES = {
-    # Not folklore — organisations
     "Cardiff University", "English Folk Dance and Song Society",
-    "School of Scottish Studies",
-    # Military/modern
-    "SM UB-85", "Battle of Britain Memorial, Capel-le-Ferne",
-    "Bulford Kiwi", "Barns of Ayr", "Lancashire Witches Walk",
-    # Purely geographic
+    "School of Scottish Studies", "SM UB-85",
+    "Battle of Britain Memorial, Capel-le-Ferne", "Bulford Kiwi",
+    "Barns of Ayr", "Lancashire Witches Walk",
     "River Tamar", "Loch Linnhe", "Black Rock Gorge",
-    "Beinn a\' Bheithir", "Kitterland",
-    # Towns/villages with no folklore content
-    "Kirriemuir", "Whitehawk", "Witchknowe Park",
+    "Kitterland", "Kirriemuir", "Whitehawk", "Witchknowe Park",
     "Morrison\'s Haven", "Smeaton House", "Gatton Park",
-    # Hill figures with no legend
     "Osmington White Horse", "Folkestone White Horse",
     "Watlington White Mark", "Whiteleaf Cross", "Lenham Cross",
-    # General archaeology, no legend
-    "Spong Hill",
-    # Outside British Isles
-    "Fintan\'s Grave", "Lia Fáil", "Mag Lena",
+    "Spong Hill", "Fintan\'s Grave", "Lia Fáil", "Mag Lena",
     "Latoon Fairy Bush", "Latoon fairy bush",
-    # Previously identified
     "Four Ashes, Buckinghamshire", "Harrow on the Hill", "Kirkharle",
     "Thundersley", "Thursley", "Wednesbury", "Weedon Lois", "Weeley",
     "Wing, Buckinghamshire", "Woodnesborough", "Wye, Kent", "Lenham",
@@ -2697,57 +2682,63 @@ REMOVE_ENTRIES = {
     "Kirkcudbright Tolbooth", "Keith Marischal", "Innerwick Castle",
     "Canewdon", "Crook of Devon", "Museum of Witchcraft and Magic",
     "Overtoun Bridge",
-    # Duplicates
     "Enfield poltergeist", "The Giant of Cerne Abbas",
     "The Long Man of Wilmington", "Witches\' Well, Edinburgh",
     "Fairy Bridge (Isle of Man)", "Nine Maidens stone row",
     "Stanton Drew stone circles", "Whetstones",
     "The Giant\'s Causeway",
+    "Beinn a\' Bheithir",
 }
 
 FORCE_CATEGORY = {
     "Gogmagog": "giant", "Fingal": "giant", "Rhitta Gawr": "giant",
     "Bran the Blessed": "giant", "Cerne Abbas Giant": "giant",
-    "Giant\'s Causeway": "giant",
-    "Beowulf": "hero", "The Green Knight": "hero", "Mabon ap Modron": "deity",
-    "Wayland the Smith": "hero", "Lancelot": "hero", "Gawain": "hero",
-    "Corineus": "hero", "Cú Chulainn": "hero", "Fionn mac Cumhaill": "hero",
-    "Boudicca": "hero", "Fingal": "hero", "Dick Turpin": "hero",
+    "Giant\'s Causeway": "giant", "Plynlimon": "giant",
+    "Gog and Magog": "giant", "Penhill Giant": "giant",
+    "Balor of the Evil Eye": "giant",
+    "Lancelot": "hero", "Gawain": "hero", "Beowulf": "hero",
+    "The Green Knight": "hero", "Corineus": "hero",
+    "Cú Chulainn": "hero", "Fionn mac Cumhaill": "hero",
+    "Boudicca": "hero", "Wayland the Smith": "hero",
+    "Dunstan and the Devil": "hero", "Dick Turpin": "hero",
+    "Mabon ap Modron": "deity", "Blodeuwedd": "deity",
+    "Gwyn ap Nudd": "deity", "Merlin": "deity",
+    "Hafren": "deity", "Gwy": "deity", "Rheidol": "deity",
+    "Elder Mother": "deity", "The Dagda": "deity",
+    "Queen Medb": "deity", "Cailleach Bhéara": "deity",
+    "Tuatha Dé Danann": "deity",
     "Helen Duncan": "witch", "Mother Ludlam": "witch",
-    "Dunstan and the Devil": "ghost", "Redcap": "ghost",
-    "The Black Dog of Newgate": "ghost", "Cock Lane ghost": "ghost",
-    "Bean Nighe": "ghost", "Lantern Man": "ghost",
+    "Redcap": "ghost", "The Black Dog of Newgate": "ghost",
+    "Cock Lane ghost": "ghost", "Bean Nighe": "ghost",
+    "Lantern Man": "ghost", "Banshee": "ghost", "Wights": "ghost",
     "Nanny Rutt": "water", "Glaistig": "water",
     "Blue Men of the Minch": "water", "Salmon of Knowledge": "water",
     "Maeshowe Runes": "location", "Orkneyinga Saga": "location",
-    "Beltane Fire Festival": "location", "Hobby Horse of Padstow": "location",
+    "Beltane Fire Festival": "location",
+    "Hobby Horse of Padstow": "location",
     "Mari Lwyd": "location", "Up Helly Aa": "location",
     "Cheetham Close": "location", "Craddock Moor stone circle": "location",
     "Bryn Cader Faner": "location", "Bryn Gwyn stones": "location",
-    "Nine Maidens Stone Row": "location", "Stanton Drew Stone Circles": "location",
-    "Whetstones (stone circle)": "location", "St Trinian\'s Church": "location",
+    "Nine Maidens Stone Row": "location",
+    "Stanton Drew Stone Circles": "location",
+    "Whetstones (stone circle)": "location",
+    "St Trinian\'s Church": "location",
     "Cantre\'r Gwaelod": "location", "Battle of Barry": "location",
     "Lochmaben Stone": "location", "Towednack": "location",
     "Caer Bran": "location", "Zennor": "location",
-    "Trow": "fairy", "Blodeuwedd": "deity", "Gwyn ap Nudd": "deity",
-    "Merlin": "deity", "Hafren": "deity", "Gwy": "deity", "Rheidol": "deity",
-    "Elder Mother": "deity", "The Dagda": "deity", "Queen Medb": "deity",
-    "Cailleach Bhéara": "deity", "Tuatha Dé Danann": "deity",
     "Newgrange": "location", "Hill of Tara": "location",
     "Croagh Patrick": "location", "Knocknarea": "location",
     "Camelot": "location", "Avalon": "location",
-    "Banshee": "ghost", "Wights": "ghost",
-    "Pooka": "fairy", "Aos Sí": "fairy", "Tylwyth Teg": "fairy",
-    "Seelie Court": "fairy", "Unseelie Court": "fairy",
-    "Boggarts": "fairy", "Pixie": "fairy", "Yallery Brown": "fairy",
+    "Trow": "fairy", "Pooka": "fairy", "Aos Sí": "fairy",
+    "Tylwyth Teg": "fairy", "Seelie Court": "fairy",
+    "Unseelie Court": "fairy", "Boggarts": "fairy",
+    "Pixie": "fairy", "Yallery Brown": "fairy",
     "Brown Man of the Muirs": "fairy", "Gooseberry Wife": "fairy",
     "Hyter Sprite": "fairy",
-    "Plynlimon": "giant", "Gog and Magog": "giant", "Penhill Giant": "giant",
-    "Balor of the Evil Eye": "giant",
-    "Filey Dragon": "dragon", "Gurt Worm": "dragon", "Mordiford Dragon": "dragon",
+    "Filey Dragon": "dragon", "Gurt Worm": "dragon",
+    "Mordiford Dragon": "dragon",
     "Black Annis": "beast", "Wisht Hounds": "beast",
     "Renwick Cockatrice": "beast", "Fad Felen": "beast",
-    # Pirates
     "Grace O\'Malley": "pirate", "Blackbeard": "pirate",
     "Anne Bonny": "pirate", "Mary Read": "pirate",
     "Black Bart Roberts": "pirate", "Calico Jack": "pirate",
@@ -2756,54 +2747,33 @@ FORCE_CATEGORY = {
 }
 
 
-def _normalise_name(name: str) -> str:
-    """Normalise a name for fuzzy duplicate detection."""
+def _normalise(name: str) -> str:
     import unicodedata
-    name = unicodedata.normalize("NFKD", name.lower())
-    name = re.sub(r"[^a-z0-9 ]", "", name)
-    # Strip common prefix words that differ between sources
+    n = unicodedata.normalize("NFKD", name.lower())
+    n = re.sub(r"[^a-z0-9 ]", "", n)
     for prefix in ("the ", "a ", "an "):
-        if name.startswith(prefix):
-            name = name[len(prefix):]
-    return name.strip()
+        if n.startswith(prefix):
+            n = n[len(prefix):]
+    return n.strip()
 
 
 def is_duplicate(name: str, existing_names: set) -> bool:
-    """
-    Check if a name is a duplicate of something already in the dataset.
-    Handles exact matches and common near-duplicates:
-      "Avebury Stone Circle" vs "Avebury"
-      "The Loch Ness Monster" vs "Loch Ness Monster"
-    """
-    norm = _normalise_name(name)
-    for existing in existing_names:
-        e = _normalise_name(existing)
-        # Exact normalised match
-        if norm == e:
+    norm = _normalise(name)
+    for e in existing_names:
+        en = _normalise(e)
+        if norm == en:
             return True
-        # One is a prefix of the other (e.g. "Avebury" in "Avebury Stone Circle")
-        if len(norm) >= 5 and len(e) >= 5:
-            if norm in e or e in norm:
-                return True
+        if len(norm) >= 5 and len(en) >= 5 and (norm in en or en in norm):
+            return True
     return False
 
 
 def apply_cleanup(legends: dict) -> dict:
-    """
-    Apply all cleanup rules in one pass:
-      1. Remove non-folklore entries
-      2. Force category corrections
-      3. Remap legacy categories
-      4. Fall back unknown categories to beast
-    """
-    removed = 0
-    fixed   = 0
-
+    removed = fixed = 0
     for name in list(legends.keys()):
         if name in REMOVE_ENTRIES:
             del legends[name]
             removed += 1
-
     for leg in legends.values():
         original = leg["category"]
         if leg["name"] in FORCE_CATEGORY:
@@ -2814,259 +2784,562 @@ def apply_cleanup(legends: dict) -> dict:
             leg["category"] = "beast"
         if leg["category"] != original:
             fixed += 1
-
     print(f"      Cleanup: removed {removed}, fixed {fixed} categories")
     return legends
 
 
 # ---------------------------------------------------------------------------
-# Canmore API (Historic Environment Scotland)
-# API key: free at https://canmore.org.uk/api
+# Historic Environment Scotland — INSPIRE WFS
+# No API key required. Replaces the defunct Canmore API.
+# Endpoint: inspire.hes.scot (INSPIRE-compliant WFS, GeoJSON output)
+# Covers: Scheduled Monuments, Listed Buildings, Protected Wrecks, Gardens
 # ---------------------------------------------------------------------------
 
-CANMORE_API      = "https://canmore.org.uk/api/site/search"
-CANMORE_DETAIL   = "https://canmore.org.uk/api/site"
-CANMORE_API_KEY  = ""   # set via environment: CANMORE_API_KEY=your_key
-
-# Map Canmore site types to our categories
-CANMORE_TYPE_MAP = {
-    "standing stone":     "location",
-    "stone circle":       "location",
-    "cairn":              "location",
-    "hillfort":           "location",
-    "broch":              "location",
-    "crannog":            "location",
-    "cup marked rock":    "location",
-    "well":               "location",
-    "souterrain":         "location",
-    "burial ground":      "location",
-    "castle":             "ghost",
-    "tower house":        "ghost",
-    "chapel":             "location",
-    "loch":               "beast",
-    "cave":               "location",
-    "natural feature":    "location",
+# HES ArcGIS REST query endpoints — one URL per layer type
+# Each uses the ArcGIS FeatureServer/MapServer REST API (not WFS typenames)
+# outputFormat=geojson, no key required
+HES_LAYERS = {
+    # (query_url, category)
+    "Scheduled Monuments": (
+        "https://inspire.hes.scot/arcgis/rest/services/HES/Scheduled_Monuments/MapServer/0/query",
+        "location"
+    ),
+    "Listed Buildings": (
+        "https://inspire.hes.scot/arcgis/rest/services/INSPIRE/Scottish_Cultural_ProtectedSites/MapServer/0/query",
+        "location"
+    ),
+    "Protected Wrecks": (
+        "https://inspire.hes.scot/arcgis/rest/services/INSPIRE/Scottish_Cultural_ProtectedSites/MapServer/4/query",
+        "pirate"
+    ),
+    "Gardens and Landscapes": (
+        "https://inspire.hes.scot/arcgis/rest/services/INSPIRE/Scottish_Cultural_ProtectedSites/MapServer/5/query",
+        "location"
+    ),
 }
 
-# Folklore-relevant keywords to filter Canmore results
-CANMORE_KEYWORDS = [
-    "legend", "folklore", "tradition", "mythol", "fairy", "ghost",
-    "haunted", "supernatural", "apparition", "spirit", "witch",
-    "cursing", "sacred", "holy well", "monster", "beast", "dragon",
-    "giant", "smuggl", "pirat", "wreck", "hidden treasure",
-    "kelpie", "selkie", "brownie", "second sight", "banshee",
+# Keywords to filter by — only include sites whose name/description
+# suggests folklore, mythology or historical legend relevance
+HES_FOLKLORE_TERMS = [
+    "stone", "standing", "circle", "cairn", "fort", "broch", "dun",
+    "henge", "barrow", "tumulus", "cup", "carved", "cross", "well",
+    "castle", "tower", "chapel", "loch", "cave", "crannog",
+    "souterrain", "earth", "hill", "burial", "cist", "dolmen",
+    "ghost", "haunted", "legend", "witch", "fairy", "monster",
+    "battle", "sacred", "holy", "ancient", "prehistoric",
+    "wreck", "smuggl", "pirat",
 ]
 
 
-def fetch_canmore(verbose: bool = False) -> list[dict]:
-    """
-    Query Canmore for Scottish sites with folklore relevance.
-    Returns list of legend dicts ready to merge.
-    """
-    key = CANMORE_API_KEY or __import__("os").getenv("CANMORE_API_KEY", "")
-    if not key:
-        print("      [Canmore] No API key set — skipping")
-        print("      [Canmore] Get a free key at canmore.org.uk/api")
-        print("      [Canmore] Set via: set CANMORE_API_KEY=your_key")
-        return []
+def _he_term_relevant(name: str, desc: str = "") -> bool:
+    """Return True if the site name or description suggests folkloric relevance."""
+    text = (name + " " + desc).lower()
+    return any(t in text for t in HES_FOLKLORE_TERMS)
 
-    results = []
-    # Search by each folklore keyword across Scotland bounding box
-    # Scotland: lat 54.5-61.0, lng -7.5 to -1.0
-    params_base = {
-        "key":     key,
-        "format":  "json",
-        "bbox":    "-7.5,54.5,-1.0,61.0",
-        "limit":   100,
-    }
 
+def fetch_hes_wfs(verbose: bool = False) -> list:
+    """
+    Query Historic Environment Scotland via ArcGIS REST API.
+    Replaces the defunct Canmore API. No key required.
+    Covers Scotland: Scheduled Monuments, Listed Buildings,
+    Protected Wrecks, and Gardens/Designed Landscapes.
+    """
+    results  = []
     seen_ids = set()
 
-    for keyword in CANMORE_KEYWORDS:
-        params = {**params_base, "q": keyword}
-        try:
-            r = requests.get(CANMORE_API, params=params,
-                             headers={"User-Agent": USER_AGENT}, timeout=TIMEOUT)
-            r.raise_for_status()
-            sites = r.json().get("results", [])
-            if verbose:
-                print(f"    [Canmore] '{keyword}': {len(sites)} sites")
+    for layer_name, (query_url, category) in HES_LAYERS.items():
+        if verbose:
+            print(f"    [HES] Fetching: {layer_name}")
 
-            for site in sites:
-                site_id = site.get("id")
-                if site_id in seen_ids:
-                    continue
-                seen_ids.add(site_id)
+        # ArcGIS REST query params
+        params = {
+            "where":         "1=1",           # all records
+            "outFields":     "*",             # all attributes
+            "f":             "geojson",       # GeoJSON output
+            "resultOffset":  0,
+            "resultRecordCount": 1000,
+            "geometryType":  "esriGeometryEnvelope",
+            # Scotland bounding box in WGS84
+            "geometry":      "-8.0,54.5,-0.5,61.5",
+            "inSR":          4326,
+            "spatialRel":    "esriSpatialRelIntersects",
+            "returnGeometry": "true",
+            "returnCentroid": "true",
+        }
 
-                lat  = site.get("lat")
-                lng  = site.get("lng")
-                name = site.get("name", "").strip()
+        page = 0
+        while True:
+            params["resultOffset"] = page * 1000
+            try:
+                r = requests.get(
+                    query_url, params=params,
+                    headers={"User-Agent": USER_AGENT},
+                    timeout=60
+                )
+                r.raise_for_status()
+                data     = r.json()
+                features = data.get("features", [])
 
-                if not name or not lat or not lng:
-                    continue
-                if not is_in_uk(float(lat), float(lng)):
-                    continue
+                if not features:
+                    break
 
-                # Determine category from site type
-                site_type = site.get("type", "").lower()
-                category  = "location"
-                for type_key, cat in CANMORE_TYPE_MAP.items():
-                    if type_key in site_type:
-                        category = cat
-                        break
+                for feat in features:
+                    props   = feat.get("properties", {})
+                    site_id = (props.get("SM_UID") or props.get("LB_UID") or
+                               props.get("SM_REF") or props.get("OBJECTID") or
+                               props.get("FID"))
+                    if not site_id or str(site_id) in seen_ids:
+                        continue
+                    seen_ids.add(str(site_id))
 
-                summary = site.get("description", "").strip()
-                if not summary:
-                    summary = f"{name} — a site of historical and folkloric significance in Scotland."
+                    # Get centroid — ArcGIS polygons need manual centroid calc
+                    geom = feat.get("geometry", {})
+                    lat = lng = None
 
-                # Trim to popup-friendly length
-                if len(summary) > 450:
-                    cutoff = summary[:450].rfind(". ")
-                    summary = summary[:cutoff + 1] if cutoff > 150 else summary[:447] + "..."
+                    if geom:
+                        # Point geometry
+                        if geom.get("x") is not None:
+                            lng, lat = float(geom["x"]), float(geom["y"])
+                        # Polygon with rings (ArcGIS format)
+                        elif "rings" in geom and geom["rings"]:
+                            ring = geom["rings"][0]
+                            if ring:
+                                lng = sum(c[0] for c in ring) / len(ring)
+                                lat = sum(c[1] for c in ring) / len(ring)
+                        # GeoJSON Polygon
+                        elif geom.get("type") == "Polygon":
+                            coords = geom.get("coordinates", [[]])[0]
+                            if coords:
+                                lng = sum(c[0] for c in coords) / len(coords)
+                                lat = sum(c[1] for c in coords) / len(coords)
+                        elif geom.get("type") == "MultiPolygon":
+                            coords = geom.get("coordinates", [[[]]])[0][0]
+                            if coords:
+                                lng = sum(c[0] for c in coords) / len(coords)
+                                lat = sum(c[1] for c in coords) / len(coords)
 
-                region   = infer_region(name, summary)
-                canmore_url = f"https://canmore.org.uk/site/{site_id}"
+                    if not lat or not lng:
+                        continue
+                    if not is_in_uk(float(lat), float(lng)):
+                        continue
 
-                results.append({
-                    "name":     name,
-                    "lat":      round(float(lat), 4),
-                    "lng":      round(float(lng), 4),
-                    "category": category,
-                    "region":   region,
-                    "summary":  summary,
-                    "source":   canmore_url,
-                })
-            time.sleep(RATE_LIMIT)
+                    name = (props.get("SM_NAME") or props.get("LB_NAME") or
+                            props.get("SITE_NAME") or props.get("NAME") or "").strip()
+                    if not name:
+                        continue
 
-        except requests.exceptions.RequestException as e:
-            print(f"    [Canmore] Error on keyword '{keyword}': {e}")
+                    desc = (props.get("SM_DESCR") or props.get("DESCRIPTION") or
+                            props.get("DESC_") or "").strip()
 
-    print(f"    [Canmore] {len(results)} unique sites fetched")
+                    # Filter to folklore-relevant sites
+                    if not _he_term_relevant(name, desc):
+                        continue
+
+                    # Build summary
+                    period = (props.get("PERIOD") or props.get("SM_PERIOD") or "").strip()
+                    if desc:
+                        summary = desc[:450]
+                        if len(desc) > 450:
+                            cut = summary.rfind(". ")
+                            summary = summary[:cut + 1] if cut > 150 else summary[:447] + "..."
+                    else:
+                        parts   = [p for p in [period] if p]
+                        summary = f"{name} — {', '.join(parts)}." if parts else                                   f"{name} — a protected heritage site in Scotland."
+
+                    sm_ref = props.get("SM_REF") or props.get("LB_REF") or site_id
+                    source = f"https://www.trove.scot/record/{sm_ref}"
+                    region = infer_region(name, summary)
+
+                    results.append({
+                        "name":     name,
+                        "lat":      round(float(lat), 4),
+                        "lng":      round(float(lng), 4),
+                        "category": category,
+                        "region":   region,
+                        "summary":  summary,
+                        "source":   source,
+                    })
+
+                # ArcGIS returns up to 1000 per page — check if more exist
+                exceeded = data.get("exceededTransferLimit", False)
+                if not exceeded or len(features) < 1000:
+                    break
+                page += 1
+                time.sleep(RATE_LIMIT)
+
+            except requests.exceptions.Timeout:
+                print(f"    [HES] Timeout on {layer_name} — skipping")
+                break
+            except requests.exceptions.RequestException as e:
+                print(f"    [HES] Error on {layer_name}: {e}")
+                break
+
+        if verbose:
+            print(f"    [HES] {layer_name}: done")
+        time.sleep(RATE_LIMIT)
+
+    print(f"    [HES] {len(results)} total Scottish heritage sites fetched")
     return results
 
-
 # ---------------------------------------------------------------------------
-# Historic England API
-# No key required — fully open data
-# Covers England and Wales
+# Historic England — Heritage Gateway / National Heritage List
+# No API key required. Covers England and Wales.
 # ---------------------------------------------------------------------------
 
-HISTORIC_ENGLAND_API = "https://services.historicengland.org.uk/NMRDataDownload/GeoSearch.aspx"
-HISTORIC_ENGLAND_REST = "https://services.historicengland.org.uk/LISTBuildingsAPI/buildingDetails"
+HE_SEARCH_URL = "https://services.historicengland.org.uk/NMRDataDownload/GeoSearch.aspx"
 
-# Map Historic England designations to our categories
 HE_TYPE_MAP = {
     "Scheduled Monument":          "location",
     "Listed Building":             "ghost",
     "Registered Park and Garden":  "location",
-    "World Heritage Site":         "location",
     "Protected Wreck":             "pirate",
+    "World Heritage Site":         "location",
 }
 
 HE_FOLKLORE_TERMS = [
     "legend", "folklore", "tradition", "myth", "fairy", "ghost",
     "haunted", "witch", "sacred", "holy well", "monster", "giant",
     "smuggler", "pirate", "wreck", "treasure", "standing stone",
-    "stone circle", "barrow", "hillfort", "cursus",
+    "stone circle", "barrow", "hillfort", "henge", "cursus",
+    "earthwork", "cairn", "broch", "dolmen", "menhir", "tumulus",
 ]
 
 
-def fetch_historic_england(verbose: bool = False) -> list[dict]:
+# ---------------------------------------------------------------------------
+# Historic England — National Heritage List for England (NHLE) ArcGIS REST
+# Same pattern as HES. No key required.
+# Spatial reference 27700 (British National Grid) → request outSR=4326
+# Layers: 0=Listed Buildings, 6=Scheduled Monuments, 7=Parks & Gardens,
+#         8=Battlefields, 9=Protected Wreck Sites, 10=World Heritage Sites
+# ---------------------------------------------------------------------------
+
+NHLE_BASE = "https://services-eu1.arcgis.com/ZOdPfBS3aqqDYPUQ/arcgis/rest/services/National_Heritage_List_for_England_NHLE_v02_VIEW/FeatureServer"
+
+NHLE_LAYERS = {
+    "Scheduled Monuments":    (f"{NHLE_BASE}/6/query",  "location"),
+    "Protected Wreck Sites":  (f"{NHLE_BASE}/9/query",  "pirate"),
+    "Parks and Gardens":      (f"{NHLE_BASE}/7/query",  "location"),
+    "Battlefields":           (f"{NHLE_BASE}/8/query",  "location"),
+    "World Heritage Sites":   (f"{NHLE_BASE}/10/query", "location"),
+}
+
+# Keywords to filter by — only sites whose name suggests folklore relevance
+NHLE_FOLKLORE_TERMS = [
+    "stone", "standing", "circle", "cairn", "fort", "castle", "tower",
+    "henge", "barrow", "tumulus", "cross", "well", "burial", "dolmen",
+    "earthwork", "hill", "mound", "ditch", "sacred", "holy", "ancient",
+    "battle", "camp", "wreck", "smuggl", "pirat", "chapel", "priory",
+    "abbey", "temple", "cursus", "enclosure", "ring", "long",
+]
+
+def _nhle_relevant(name: str) -> bool:
+    n = name.lower()
+    return any(t in n for t in NHLE_FOLKLORE_TERMS)
+
+def fetch_historic_england(verbose: bool = False) -> list:
     """
-    Query Historic England's National Record of the Historic Environment
-    for sites with folklore relevance across England and Wales.
-    Returns list of legend dicts ready to merge.
+    Query Historic England NHLE via ArcGIS REST API.
+    Requests outSR=4326 so coordinates come back in WGS84 — no conversion needed.
+    No API key required.
     """
-    # Historic England's main search API
-    # England: lat 49.9-55.8, lng -5.7 to 1.8
-    # Wales:   lat 51.3-53.5, lng -5.3 to -2.6
     results  = []
     seen_ids = set()
 
-    base_url = "https://services.historicengland.org.uk/NMRDataDownload/GeoSearch.aspx"
+    for layer_name, (query_url, category) in NHLE_LAYERS.items():
+        if verbose:
+            print(f"    [Historic England] Fetching: {layer_name}")
 
-    for term in HE_FOLKLORE_TERMS:
-        params = {
-            "q":      term,
-            "format": "json",
-            "rows":   100,
-            # Bounding box covering England and Wales
-            "bbox":   "-5.7,49.9,1.8,55.8",
-        }
-        try:
-            r = requests.get(base_url, params=params,
-                             headers={"User-Agent": USER_AGENT}, timeout=TIMEOUT)
-            if r.status_code == 404:
-                # API endpoint may differ — try alternate
+        page = 0
+        while True:
+            params = {
+                "where":              "1=1",
+                "outFields":          "NAME,ENTRY_NAME,ENTRY_NUMBER,GRADE,PERIOD,DESCRIPTION,OBJECTID",
+                "f":                  "json",          # JSON output
+                "outSR":              4326,             # reproject to WGS84 server-side
+                "returnGeometry":     "true",
+                "returnCentroid":     "true",
+                "resultOffset":       page * 1000,
+                "resultRecordCount":  1000,
+                "geometryType":       "esriGeometryEnvelope",
+                # England + Wales bounding box in WGS84
+                "geometry":           "-5.7,49.9,1.8,55.8",
+                "inSR":              4326,
+                "spatialRel":        "esriSpatialRelIntersects",
+            }
+            try:
+                r = requests.get(
+                    query_url, params=params,
+                    headers={"User-Agent": USER_AGENT},
+                    timeout=60
+                )
+                r.raise_for_status()
+                data     = r.json()
+                features = data.get("features", [])
+
+                if not features:
+                    break
+
+                for feat in features:
+                    attrs   = feat.get("attributes", {})
+                    site_id = (attrs.get("ENTRY_NUMBER") or
+                               attrs.get("OBJECTID") or "")
+                    if not site_id or str(site_id) in seen_ids:
+                        continue
+                    seen_ids.add(str(site_id))
+
+                    # Coordinates — prefer centroid, fall back to geometry
+                    geom = feat.get("geometry", {})
+                    lat = lng = None
+
+                    if geom:
+                        if geom.get("x") is not None:
+                            lng, lat = float(geom["x"]), float(geom["y"])
+                        elif "rings" in geom and geom["rings"]:
+                            ring = geom["rings"][0]
+                            if ring:
+                                lng = sum(c[0] for c in ring) / len(ring)
+                                lat = sum(c[1] for c in ring) / len(ring)
+                        elif geom.get("type") == "Polygon":
+                            coords = geom.get("coordinates", [[]])[0]
+                            if coords:
+                                lng = sum(c[0] for c in coords) / len(coords)
+                                lat = sum(c[1] for c in coords) / len(coords)
+
+                    if not lat or not lng:
+                        continue
+                    if not is_in_uk(float(lat), float(lng)):
+                        continue
+
+                    name = (attrs.get("NAME") or
+                            attrs.get("ENTRY_NAME") or "").strip()
+                    if not name:
+                        continue
+
+                    # Filter to folklore-relevant sites
+                    if not _nhle_relevant(name):
+                        continue
+
+                    desc   = (attrs.get("DESCRIPTION") or "").strip()
+                    period = (attrs.get("PERIOD") or "").strip()
+                    grade  = (attrs.get("GRADE") or "").strip()
+
+                    if desc:
+                        summary = desc[:450]
+                        if len(desc) > 450:
+                            cut = summary.rfind(". ")
+                            summary = summary[:cut + 1] if cut > 150 else summary[:447] + "..."
+                    else:
+                        parts = [p for p in [period, grade] if p]
+                        summary = f"{name} — {', '.join(parts)}." if parts else                                   f"{name} — a scheduled heritage site in England."
+
+                    entry_no = attrs.get("ENTRY_NUMBER", "")
+                    source   = (f"https://historicengland.org.uk/listing/the-list/list-entry/{entry_no}"
+                                if entry_no else "https://historicengland.org.uk")
+                    region   = infer_region(name, summary)
+
+                    results.append({
+                        "name":     name,
+                        "lat":      round(float(lat), 4),
+                        "lng":      round(float(lng), 4),
+                        "category": category,
+                        "region":   region,
+                        "summary":  summary,
+                        "source":   source,
+                    })
+
+                exceeded = data.get("exceededTransferLimit", False)
+                if not exceeded or len(features) < 1000:
+                    break
+                page += 1
+                time.sleep(RATE_LIMIT)
+
+            except requests.exceptions.Timeout:
+                print(f"    [Historic England] Timeout on {layer_name} — skipping")
                 break
+            except requests.exceptions.RequestException as e:
+                print(f"    [Historic England] Error on {layer_name}: {e}")
+                break
+
+        if verbose:
+            print(f"    [Historic England] {layer_name}: done")
+        time.sleep(RATE_LIMIT)
+
+    print(f"    [Historic England] {len(results)} sites fetched")
+    return results
+
+
+# ---------------------------------------------------------------------------
+# DBpedia SPARQL — structured Wikipedia data, better folklore coverage
+# than raw Wikipedia category pulls. Free, no key required.
+# Endpoint: https://dbpedia.org/sparql
+# ---------------------------------------------------------------------------
+
+DBPEDIA_SPARQL = "https://dbpedia.org/sparql"
+
+# DBpedia categories to query — focused on British Isles folklore
+DBPEDIA_CATEGORIES = [
+    # Creatures & beings
+    ("English_legendary_creatures",      "beast"),
+    ("Scottish_legendary_creatures",     "beast"),
+    ("Welsh_legendary_creatures",        "beast"),
+    ("Irish_legendary_creatures",        "beast"),
+    ("British_legendary_creatures",      "beast"),
+    ("Lake_monsters",                    "water"),
+    ("Sea_monsters",                     "water"),
+    ("Water_spirits",                    "water"),
+    ("Selkies",                          "water"),
+    ("Kelpies",                          "water"),
+    ("Mermaids",                         "water"),
+    ("Fairies",                          "fairy"),
+    ("Irish_fairies",                    "fairy"),
+    ("Scottish_fairies",                 "fairy"),
+    ("Goblins",                          "fairy"),
+    ("Brownies_(mythology)",             "fairy"),
+    ("Ghosts",                           "ghost"),
+    ("English_ghosts",                   "ghost"),
+    ("Scottish_ghosts",                  "ghost"),
+    ("Irish_ghosts",                     "ghost"),
+    ("British_witchcraft",               "witch"),
+    ("Scottish_witchcraft",              "witch"),
+    ("Witches",                          "witch"),
+    ("Dragons_in_mythology",             "dragon"),
+    ("Welsh_dragons",                    "dragon"),
+    ("Giants_in_mythology",              "giant"),
+    # Deities & heroes
+    ("Celtic_gods",                      "deity"),
+    ("Irish_gods",                       "deity"),
+    ("Welsh_gods",                       "deity"),
+    ("Tuatha_Dé_Danann",                 "deity"),
+    ("Arthurian_characters",             "deity"),
+    ("Characters_in_Irish_mythology",    "deity"),
+    ("Ulster_Cycle",                     "deity"),
+    ("Fenian_Cycle",                     "deity"),
+    # Locations
+    ("Sacred_sites_in_the_United_Kingdom", "location"),
+    ("Haunted_locations_in_England",     "location"),
+    ("Haunted_locations_in_Scotland",    "location"),
+    ("Haunted_locations_in_Ireland",     "location"),
+    ("Stone_circles_in_the_British_Isles", "location"),
+    ("Megalithic_monuments_in_Scotland", "location"),
+    ("Megalithic_monuments_in_Ireland",  "location"),
+    # Pirates
+    ("English_pirates",                  "pirate"),
+    ("Scottish_pirates",                 "pirate"),
+    ("Irish_pirates",                    "pirate"),
+    ("Welsh_pirates",                    "pirate"),
+    ("Privateers",                       "pirate"),
+]
+
+
+def fetch_dbpedia(verbose: bool = False) -> list:
+    """
+    Query DBpedia SPARQL for British Isles folklore entities with coordinates.
+    DBpedia extracts structured data from Wikipedia including geo coordinates,
+    abstracts and category memberships — more reliable than raw Wikipedia API.
+    No key required.
+    """
+    results   = []
+    seen_uris = set()
+
+    # Query without geo filter — most folklore entities lack DBpedia coords.
+    # We get names + abstracts, then use Wikipedia geodata API for coords.
+    query_template = """
+PREFIX dbo:  <http://dbpedia.org/ontology/>
+PREFIX dbc:  <http://dbpedia.org/resource/Category:>
+PREFIX dct:  <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?entity ?name ?abstract WHERE {{
+  ?entity dct:subject dbc:{category} .
+  ?entity rdfs:label ?name .
+  ?entity dbo:abstract ?abstract .
+  FILTER (lang(?name) = 'en')
+  FILTER (lang(?abstract) = 'en')
+}}
+LIMIT 200
+"""
+
+    for category, cat_type in DBPEDIA_CATEGORIES:
+        if verbose:
+            print(f"    [DBpedia] Querying: {category}")
+
+        query = query_template.format(category=category)
+        try:
+            r = requests.get(
+                DBPEDIA_SPARQL,
+                params={
+                    "query":  query,
+                    "format": "application/sparql-results+json",
+                },
+                headers={
+                    "User-Agent": USER_AGENT,
+                    "Accept":     "application/sparql-results+json",
+                },
+                timeout=30
+            )
             r.raise_for_status()
-            data = r.json()
-            sites = data.get("results", data.get("features", []))
+            data    = r.json()
+            results_raw = data.get("results", {}).get("bindings", [])
 
             if verbose:
-                print(f"    [Historic England] '{term}': {len(sites)} results")
+                print(f"    [DBpedia]   {len(results_raw)} results")
 
-            for site in sites:
-                # Handle both flat JSON and GeoJSON feature formats
-                props = site.get("properties", site)
-                site_id = props.get("id") or props.get("ListEntry") or props.get("NMR")
-                if not site_id or site_id in seen_ids:
+            # Collect names + abstracts from this category
+            candidates = {}
+            for row in results_raw:
+                uri  = row.get("entity", {}).get("value", "")
+                if not uri or uri in seen_uris:
                     continue
-                seen_ids.add(site_id)
-
-                # Coordinates
-                if "geometry" in site:
-                    coords = site["geometry"].get("coordinates", [])
-                    lng, lat = (float(coords[0]), float(coords[1])) if coords else (None, None)
-                else:
-                    lat = props.get("lat") or props.get("Latitude")
-                    lng = props.get("lng") or props.get("Longitude")
-
-                if not lat or not lng:
-                    continue
-                if not is_in_uk(float(lat), float(lng)):
-                    continue
-
-                name = (props.get("name") or props.get("Name") or
-                        props.get("ListName") or "").strip()
+                name     = row.get("name", {}).get("value", "").strip()
+                abstract = row.get("abstract", {}).get("value", "").strip()
                 if not name:
                     continue
+                wiki_title = uri.replace("http://dbpedia.org/resource/", "").replace("_", " ")
+                candidates[wiki_title] = (name, abstract, uri, cat_type)
 
-                summary     = (props.get("description") or props.get("Summary") or "").strip()
-                designation = props.get("Designation") or props.get("Grade") or ""
-                category    = HE_TYPE_MAP.get(designation, "location")
+            if not candidates:
+                continue
 
-                if not summary:
-                    summary = f"{name} — a scheduled site of historical significance in England."
+            # Fetch coordinates via Wikipedia geodata API (batch)
+            titles_list = list(candidates.keys())
+            if verbose:
+                print(f"    [DBpedia]   {len(titles_list)} candidates, fetching coords...")
+            geodata = get_article_geodata(titles_list, verbose)
+
+            for wiki_title, (lat, lng) in geodata.items():
+                if not is_in_uk(lat, lng):
+                    continue
+                if wiki_title not in candidates:
+                    continue
+                name, abstract, uri, cat = candidates[wiki_title]
+                seen_uris.add(uri)
+
+                summary = abstract
                 if len(summary) > 450:
-                    cutoff = summary[:450].rfind(". ")
-                    summary = summary[:cutoff + 1] if cutoff > 150 else summary[:447] + "..."
+                    cut = summary[:450].rfind(". ")
+                    summary = summary[:cut + 1] if cut > 150 else summary[:447] + "..."
 
-                he_url  = f"https://historicengland.org.uk/listing/the-list/list-entry/{site_id}"
-                region  = infer_region(name, summary)
+                source = f"https://en.wikipedia.org/wiki/{requests.utils.quote(wiki_title.replace(chr(32), chr(95)))}"
+                region = infer_region(name, summary)
 
                 results.append({
                     "name":     name,
-                    "lat":      round(float(lat), 4),
-                    "lng":      round(float(lng), 4),
-                    "category": category,
+                    "lat":      round(lat, 4),
+                    "lng":      round(lng, 4),
+                    "category": cat,
                     "region":   region,
                     "summary":  summary,
-                    "source":   he_url,
+                    "source":   source,
                 })
-            time.sleep(RATE_LIMIT)
 
+            time.sleep(RATE_LIMIT * 2)  # be kind to the public endpoint
+
+        except requests.exceptions.Timeout:
+            print(f"    [DBpedia] Timeout on {category} — skipping")
         except requests.exceptions.RequestException as e:
-            print(f"    [Historic England] Error on term '{term}': {e}")
-            continue
+            print(f"    [DBpedia] Error on {category}: {e}")
 
-    if not results:
-        # Fallback: use their open data CSV/GeoJSON download
-        print("    [Historic England] REST API unavailable — "
-              "download data manually from:")
-        print("    https://historicengland.org.uk/listing/the-list/data-downloads/")
-
-    print(f"    [Historic England] {len(results)} unique sites fetched")
+    print(f"    [DBpedia] {len(results)} entities fetched")
     return results
 
 
@@ -3074,8 +3347,9 @@ def fetch_historic_england(verbose: bool = False) -> list[dict]:
 # Supabase write helper
 # ---------------------------------------------------------------------------
 
-SUPABASE_URL         = __import__("os").getenv("SUPABASE_URL", "")
-SUPABASE_SERVICE_KEY = __import__("os").getenv("SUPABASE_SERVICE_KEY", "")
+import os as _os
+SUPABASE_URL         = _os.getenv("SUPABASE_URL", "")
+SUPABASE_SERVICE_KEY = _os.getenv("SUPABASE_SERVICE_KEY", "")
 
 
 def _supabase_headers():
@@ -3083,15 +3357,16 @@ def _supabase_headers():
         "apikey":        SUPABASE_SERVICE_KEY,
         "Authorization": f"Bearer {SUPABASE_SERVICE_KEY}",
         "Content-Type":  "application/json",
-        "Prefer":        "resolution=merge-duplicates",
+        "Prefer":        "return=minimal,resolution=merge-duplicates",
     }
 
 
 def write_to_supabase(legends: dict, verbose: bool = False) -> None:
     """Upsert all legends to Supabase in batches of 50."""
     if not SUPABASE_URL or not SUPABASE_SERVICE_KEY:
+        print("      [!] SUPABASE_URL or SUPABASE_SERVICE_KEY not set — skipping")
         return
-    url   = f"{SUPABASE_URL}/rest/v1/legends"
+    url   = f"{SUPABASE_URL.rstrip('/')}/rest/v1/legends?on_conflict=name"
     rows  = list(legends.values())
     total = len(rows)
     batch_size = 50
@@ -3099,34 +3374,36 @@ def write_to_supabase(legends: dict, verbose: bool = False) -> None:
     print(f"      Syncing {total} legends to Supabase ...")
     for i in range(0, total, batch_size):
         batch = [{
-            "name": r["name"], "lat": r["lat"], "lng": r["lng"],
+            "name":     r["name"],
+            "lat":      r["lat"],
+            "lng":      r["lng"],
             "category": r.get("category", "beast"),
             "region":   r.get("region", "Britain"),
             "summary":  r.get("summary", ""),
             "source":   r.get("source", ""),
         } for r in rows[i:i + batch_size]]
         try:
-            resp = requests.post(url, headers=_supabase_headers(),
-                                 json=batch, timeout=30)
+            resp = requests.post(
+                url, headers=_supabase_headers(),
+                json=batch, timeout=30
+            )
             if resp.status_code in (200, 201):
                 success += len(batch)
             else:
-                print(f"      [!] Supabase batch {i // batch_size + 1} failed: "
-                      f"HTTP {resp.status_code}")
+                print(f"      [!] Batch failed: HTTP {resp.status_code}")
         except Exception as e:
             print(f"      [!] Supabase error: {e}")
         time.sleep(0.2)
     print(f"      Supabase: {success}/{total} synced ✓")
 
 
-
 def build(limit: int, seed_only: bool, verbose: bool,
-          use_canmore: bool = False, use_he: bool = False,
-          supabase: bool = False) -> None:
+          use_hes: bool = False, use_he: bool = False,
+          use_dbpedia: bool = False, supabase: bool = False) -> None:
     print("\n  Folklore Map — legend data pipeline")
     print("  " + "─" * 44)
 
-    # ── Load existing legends.json ────────────────────────────────────────
+    # ── Load existing legends.json ─────────────────────────────────────
     import os
     existing = {}
     if os.path.exists("legends.json"):
@@ -3140,7 +3417,7 @@ def build(limit: int, seed_only: bool, verbose: bool,
     else:
         print(f"\n  [0/4] No existing legends.json — starting fresh")
 
-    # ── Seeds always win ──────────────────────────────────────────────────
+    # ── Seeds always win ──────────────────────────────────────────────
     legends = dict(existing)
     seed_updated = 0
     for leg in SEED_LEGENDS:
@@ -3148,16 +3425,15 @@ def build(limit: int, seed_only: bool, verbose: bool,
             if leg["name"] in legends:
                 seed_updated += 1
             legends[leg["name"]] = leg
-    print(f"\n  [1/4] Seeds: {len(SEED_LEGENDS)} entries "
+    print(f"\n  [1/4] Seeds: {len(SEED_LEGENDS)} "
           f"({seed_updated} updated, {len(SEED_LEGENDS) - seed_updated} unchanged)")
-    print(f"      Applying cleanup ...")
     legends = apply_cleanup(legends)
 
     if seed_only:
-        print("\n  [2/4] Wikipedia pull skipped (--seed-only)")
+        print("\n  [2/4] Wikipedia skipped (--seed-only)")
         print("\n  [3/4] External sources skipped (--seed-only)")
     else:
-        # ── Wikipedia ────────────────────────────────────────────────────
+        # ── Wikipedia ─────────────────────────────────────────────────
         print(f"\n  [2/4] Wikipedia: {len(CATEGORIES)} categories, {len(LISTS)} lists ...")
         all_titles = {}
         added = out_of_uk = duplicates = 0
@@ -3203,7 +3479,7 @@ def build(limit: int, seed_only: bool, verbose: bool,
                 "category": all_titles.get(title, "beast"),
                 "region":   infer_region(title, summary),
                 "summary":  summary,
-                "source":   f"https://en.wikipedia.org/wiki/{requests.utils.quote(title.replace(' ', '_'))}",
+                "source":   f"https://en.wikipedia.org/wiki/{requests.utils.quote(title.replace(chr(32), chr(95)))}",
             }
             legends[title] = entry
             existing_names.add(title)
@@ -3213,23 +3489,23 @@ def build(limit: int, seed_only: bool, verbose: bool,
         print(f"\n      Added: {added} | Preserved: {duplicates} | Out of UK: {out_of_uk}")
         legends = apply_cleanup(legends)
 
-        # ── Canmore ───────────────────────────────────────────────────────
+        # ── External sources ──────────────────────────────────────────
         print(f"\n  [3/4] External sources ...")
-        if use_canmore:
-            print(f"    Canmore (Historic Environment Scotland) ...")
-            canmore_results = fetch_canmore(verbose)
-            existing_names  = set(legends.keys())
-            can_added = 0
-            for entry in canmore_results:
+
+        if use_hes:
+            print(f"    Historic Environment Scotland (INSPIRE WFS) ...")
+            hes_results    = fetch_hes_wfs(verbose)
+            existing_names = set(legends.keys())
+            hes_added = 0
+            for entry in hes_results:
                 if not is_duplicate(entry["name"], existing_names):
                     legends[entry["name"]] = entry
                     existing_names.add(entry["name"])
-                    can_added += 1
-            print(f"    Canmore: {can_added} new entries added")
+                    hes_added += 1
+            print(f"    HES: {hes_added} new entries added")
         else:
-            print(f"    Canmore: skipped (use --canmore to enable)")
+            print(f"    HES WFS: skipped (use --hes to enable)")
 
-        # ── Historic England ──────────────────────────────────────────────
         if use_he:
             print(f"    Historic England ...")
             he_results     = fetch_historic_england(verbose)
@@ -3244,10 +3520,23 @@ def build(limit: int, seed_only: bool, verbose: bool,
         else:
             print(f"    Historic England: skipped (use --historic-england to enable)")
 
-        # Final cleanup pass on everything new
+        if use_dbpedia:
+            print(f"    DBpedia SPARQL ...")
+            dbpedia_results = fetch_dbpedia(verbose)
+            existing_names  = set(legends.keys())
+            db_added = 0
+            for entry in dbpedia_results:
+                if not is_duplicate(entry["name"], existing_names):
+                    legends[entry["name"]] = entry
+                    existing_names.add(entry["name"])
+                    db_added += 1
+            print(f"    DBpedia: {db_added} new entries added")
+        else:
+            print(f"    DBpedia: skipped (use --dbpedia to enable)")
+
         legends = apply_cleanup(legends)
 
-    # ── Write output ──────────────────────────────────────────────────────
+    # ── Write output ──────────────────────────────────────────────────
     print(f"\n  [4/4] Writing legends.json ...")
     output = {
         "generated":  datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
@@ -3274,32 +3563,35 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  python build_legends.py --seed-only            # fast, seeds + cleanup only
-  python build_legends.py                        # full Wikipedia pull
-  python build_legends.py --canmore              # + Canmore (needs API key)
-  python build_legends.py --historic-england     # + Historic England
-  python build_legends.py --canmore --historic-england --supabase  # everything
+  python build_legends.py --seed-only              # fast, seeds + cleanup only
+  python build_legends.py                          # Wikipedia pull
+  python build_legends.py --hes                    # + Historic Environment Scotland
+  python build_legends.py --historic-england       # + Historic England
+  python build_legends.py --hes --historic-england --dbpedia --supabase  # full run
         """
     )
-    parser.add_argument("--seed-only",         action="store_true",
+    parser.add_argument("--seed-only",          action="store_true",
         help="Skip all API pulls, just process seed data")
-    parser.add_argument("--canmore",            action="store_true",
-        help="Pull from Canmore (Historic Environment Scotland) API")
+    parser.add_argument("--hes",                action="store_true",
+        help="Pull from Historic Environment Scotland INSPIRE WFS (Scotland)")
     parser.add_argument("--historic-england",   action="store_true",
-        help="Pull from Historic England API")
+        help="Pull from Historic England NHLE API (England & Wales)")
+    parser.add_argument("--dbpedia",            action="store_true",
+        help="Pull from DBpedia SPARQL (structured Wikipedia, better folklore coverage)")
     parser.add_argument("--supabase",           action="store_true",
-        help="Sync results to Supabase (needs SUPABASE_URL + SUPABASE_SERVICE_KEY)")
+        help="Sync to Supabase (needs SUPABASE_URL + SUPABASE_SERVICE_KEY env vars)")
     parser.add_argument("--limit",    type=int, default=500,
         help="Max articles per Wikipedia category (default: 500)")
-    parser.add_argument("--verbose", "-v",      action="store_true",
+    parser.add_argument("--verbose", "-v",       action="store_true",
         help="Show each API call")
     args = parser.parse_args()
     build(
         limit=args.limit,
         seed_only=args.seed_only,
         verbose=args.verbose,
-        use_canmore=args.canmore,
+        use_hes=args.hes,
         use_he=args.historic_england,
+        use_dbpedia=args.dbpedia,
         supabase=args.supabase,
     )
 

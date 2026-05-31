@@ -27,6 +27,7 @@ import requests
 
 WIKIPEDIA_API  = "https://en.wikipedia.org/w/api.php"
 WIKIPEDIA_REST = "https://en.wikipedia.org/api/rest_v1/page/summary"
+WIKIDATA_API   = "https://www.wikidata.org/w/api.php"
 USER_AGENT     = "FolkloreMap-BuildScript/1.0 (one-time data build; https://github.com)"
 TIMEOUT        = 20
 RATE_LIMIT     = 0.3    # seconds between requests
@@ -109,6 +110,7 @@ CATEGORIES = [
     ("Category:Privateers",                         "pirate"),
     ("Category:British_pirates",                    "pirate"),
     ("Category:Smuggling_in_the_United_Kingdom",    "pirate"),
+    ("Category:Maritime_folklore",                  "water"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -2599,12 +2601,109 @@ def get_article_geodata(titles: list, verbose: bool) -> dict:
                 if page_coords:
                     lat = page_coords[0].get("lat")
                     lng = page_coords[0].get("lon")
-                    if lat and lng:
+                    if lat is not None and lng is not None:
                         coords[title] = (float(lat), float(lng))
             time.sleep(RATE_LIMIT)
         except Exception as e:
             if verbose:
                 print(f"      [!] GeoData batch failed: {e}")
+    return coords
+
+
+def get_pirate_birthplace_geodata(titles: list, verbose: bool) -> dict:
+    """
+    Fetch birthplace coordinates for pirate biographies via Wikidata.
+    Wikipedia biographies rarely expose page coordinates, so this fallback
+    keeps British Isles-born pirates eligible for the map.
+    """
+    title_to_item = {}
+    for i in range(0, len(titles), 50):
+        batch = titles[i:i + 50]
+        try:
+            r = requests.get(
+                WIKIPEDIA_API,
+                params={
+                    "action": "query",
+                    "titles": "|".join(batch),
+                    "prop": "pageprops",
+                    "ppprop": "wikibase_item",
+                    "format": "json",
+                },
+                headers={"User-Agent": USER_AGENT},
+                timeout=TIMEOUT,
+            )
+            r.raise_for_status()
+            pages = r.json().get("query", {}).get("pages", {})
+            for page in pages.values():
+                item = page.get("pageprops", {}).get("wikibase_item")
+                if item:
+                    title_to_item[page.get("title", "")] = item
+        except Exception as e:
+            if verbose:
+                print(f"      [!] Wikidata page mapping failed: {e}")
+
+    item_to_title = {item: title for title, item in title_to_item.items()}
+    birthplace_to_titles = {}
+    for i in range(0, len(item_to_title), 50):
+        batch = list(item_to_title)[i:i + 50]
+        try:
+            r = requests.get(
+                WIKIDATA_API,
+                params={
+                    "action": "wbgetentities",
+                    "ids": "|".join(batch),
+                    "props": "claims",
+                    "format": "json",
+                },
+                headers={"User-Agent": USER_AGENT},
+                timeout=TIMEOUT,
+            )
+            r.raise_for_status()
+            for item, entity in r.json().get("entities", {}).items():
+                claims = entity.get("claims", {}).get("P19", [])
+                if not claims:
+                    continue
+                value = claims[0].get("mainsnak", {}).get("datavalue", {}).get("value", {})
+                birthplace = value.get("id")
+                if birthplace:
+                    birthplace_to_titles.setdefault(birthplace, []).append(item_to_title[item])
+        except Exception as e:
+            if verbose:
+                print(f"      [!] Wikidata birthplace lookup failed: {e}")
+
+    coords = {}
+    birthplaces = list(birthplace_to_titles)
+    for i in range(0, len(birthplaces), 50):
+        batch = birthplaces[i:i + 50]
+        try:
+            r = requests.get(
+                WIKIDATA_API,
+                params={
+                    "action": "wbgetentities",
+                    "ids": "|".join(batch),
+                    "props": "claims",
+                    "format": "json",
+                },
+                headers={"User-Agent": USER_AGENT},
+                timeout=TIMEOUT,
+            )
+            r.raise_for_status()
+            for birthplace, entity in r.json().get("entities", {}).items():
+                claims = entity.get("claims", {}).get("P625", [])
+                if not claims:
+                    continue
+                value = claims[0].get("mainsnak", {}).get("datavalue", {}).get("value", {})
+                lat, lng = value.get("latitude"), value.get("longitude")
+                if lat is None or lng is None:
+                    continue
+                for title in birthplace_to_titles.get(birthplace, []):
+                    coords[title] = (float(lat), float(lng))
+        except Exception as e:
+            if verbose:
+                print(f"      [!] Wikidata birthplace coordinates failed: {e}")
+
+    if verbose:
+        print(f"      {len(coords)} pirate biographies have birthplace coordinates")
     return coords
 
 
@@ -2845,15 +2944,15 @@ HES_LAYERS = {
         "location"
     ),
     "Listed Buildings": (
-        "https://inspire.hes.scot/arcgis/rest/services/INSPIRE/Scottish_Cultural_ProtectedSites/MapServer/0/query",
+        "https://inspire.hes.scot/arcgis/rest/services/HES/HES_Designations/MapServer/0/query",
         "location"
     ),
-    "Protected Wrecks": (
-        "https://inspire.hes.scot/arcgis/rest/services/INSPIRE/Scottish_Cultural_ProtectedSites/MapServer/4/query",
+    "Historic Marine Protected Areas": (
+        "https://inspire.hes.scot/arcgis/rest/services/HES/Historic_Marine_Protected_Areas/MapServer/0/query",
         "pirate"
     ),
     "Gardens and Landscapes": (
-        "https://inspire.hes.scot/arcgis/rest/services/INSPIRE/Scottish_Cultural_ProtectedSites/MapServer/5/query",
+        "https://inspire.hes.scot/arcgis/rest/services/HES/Gardens_and_Designed_Landscapes/MapServer/0/query",
         "location"
     ),
 }
@@ -2906,6 +3005,7 @@ def fetch_hes_wfs(verbose: bool = False) -> list:
             "where":         "1=1",           # all records
             "outFields":     "*",             # all attributes
             "f":             "geojson",       # GeoJSON output
+            "outSR":         4326,
             "resultOffset":  0,
             "resultRecordCount": 1000,
             "geometryType":  "esriGeometryEnvelope",
@@ -2928,6 +3028,8 @@ def fetch_hes_wfs(verbose: bool = False) -> list:
                 )
                 r.raise_for_status()
                 data     = r.json()
+                if data.get("error"):
+                    raise RuntimeError(data["error"])
                 features = data.get("features", [])
 
                 if not features:
@@ -2935,12 +3037,12 @@ def fetch_hes_wfs(verbose: bool = False) -> list:
 
                 for feat in features:
                     props   = feat.get("properties", {})
-                    site_id = (props.get("SM_UID") or props.get("LB_UID") or
-                               props.get("SM_REF") or props.get("OBJECTID") or
-                               props.get("FID"))
-                    if not site_id or str(site_id) in seen_ids:
+                    site_id = (props.get("ENT_REF") or props.get("DES_REF") or
+                               props.get("FID") or props.get("OBJECTID"))
+                    unique_id = f"{layer_name}:{site_id}"
+                    if not site_id or unique_id in seen_ids:
                         continue
-                    seen_ids.add(str(site_id))
+                    seen_ids.add(unique_id)
 
                     # Get centroid — ArcGIS polygons need manual centroid calc
                     geom = feat.get("geometry", {})
@@ -2950,6 +3052,10 @@ def fetch_hes_wfs(verbose: bool = False) -> list:
                         # Point geometry
                         if geom.get("x") is not None:
                             lng, lat = float(geom["x"]), float(geom["y"])
+                        elif geom.get("type") == "Point":
+                            coords = geom.get("coordinates", [])
+                            if len(coords) >= 2:
+                                lng, lat = map(float, coords[:2])
                         # Polygon with rings (ArcGIS format)
                         elif "rings" in geom and geom["rings"]:
                             ring = geom["rings"][0]
@@ -2968,18 +3074,21 @@ def fetch_hes_wfs(verbose: bool = False) -> list:
                                 lng = sum(c[0] for c in coords) / len(coords)
                                 lat = sum(c[1] for c in coords) / len(coords)
 
-                    if not lat or not lng:
+                    if lat is None or lng is None:
                         continue
                     if not is_in_uk(float(lat), float(lng)):
                         continue
 
-                    name = (props.get("SM_NAME") or props.get("LB_NAME") or
-                            props.get("SITE_NAME") or props.get("NAME") or "").strip()
+                    name = (props.get("ENT_TITLE") or props.get("DES_TITLE") or
+                            props.get("NAME") or "").strip()
                     if not name:
                         continue
 
-                    desc = (props.get("SM_DESCR") or props.get("DESCRIPTION") or
-                            props.get("DESC_") or "").strip()
+                    desc = " ".join(str(value).strip() for value in (
+                        props.get("DES_TYPE"), props.get("CATEGORY"),
+                        props.get("GROUPCAT"), props.get("GROUP_CATE"),
+                        props.get("PARISH"), props.get("PARBUR"),
+                    ) if value)
 
                     # Ordinary protected wrecks are not pirate lore.
                     if category == "pirate" and not _pirate_term_relevant(name, desc):
@@ -2988,7 +3097,7 @@ def fetch_hes_wfs(verbose: bool = False) -> list:
                         continue
 
                     # Build summary
-                    period = (props.get("PERIOD") or props.get("SM_PERIOD") or "").strip()
+                    period = (props.get("DES_TYPE") or "").strip()
                     if desc:
                         summary = desc[:450]
                         if len(desc) > 450:
@@ -2998,8 +3107,8 @@ def fetch_hes_wfs(verbose: bool = False) -> list:
                         parts   = [p for p in [period] if p]
                         summary = f"{name} — {', '.join(parts)}." if parts else                                   f"{name} — a protected heritage site in Scotland."
 
-                    sm_ref = props.get("SM_REF") or props.get("LB_REF") or site_id
-                    source = f"https://www.trove.scot/record/{sm_ref}"
+                    source = (props.get("LINK") or
+                              f"https://portal.historicenvironment.scot/designation/{props.get('DES_REF', site_id)}")
                     region = infer_region(name, summary)
 
                     results.append({
@@ -3022,12 +3131,12 @@ def fetch_hes_wfs(verbose: bool = False) -> list:
             except requests.exceptions.Timeout:
                 print(f"    [HES] Timeout on {layer_name} — skipping")
                 break
-            except requests.exceptions.RequestException as e:
+            except (requests.exceptions.RequestException, RuntimeError) as e:
                 print(f"    [HES] Error on {layer_name}: {e}")
                 break
 
         if verbose:
-            print(f"    [HES] {layer_name}: done")
+            print(f"    [HES] {layer_name}: done ({len(results)} cumulative)")
         time.sleep(RATE_LIMIT)
 
     print(f"    [HES] {len(results)} total Scottish heritage sites fetched")
@@ -3105,7 +3214,7 @@ def fetch_historic_england(verbose: bool = False) -> list:
         while True:
             params = {
                 "where":              "1=1",
-                "outFields":          "NAME,ENTRY_NAME,ENTRY_NUMBER,GRADE,PERIOD,DESCRIPTION,OBJECTID",
+                "outFields":          "*",
                 "f":                  "json",          # JSON output
                 "outSR":              4326,             # reproject to WGS84 server-side
                 "returnGeometry":     "true",
@@ -3126,6 +3235,8 @@ def fetch_historic_england(verbose: bool = False) -> list:
                 )
                 r.raise_for_status()
                 data     = r.json()
+                if data.get("error"):
+                    raise RuntimeError(data["error"])
                 features = data.get("features", [])
 
                 if not features:
@@ -3133,7 +3244,7 @@ def fetch_historic_england(verbose: bool = False) -> list:
 
                 for feat in features:
                     attrs   = feat.get("attributes", {})
-                    site_id = (attrs.get("ENTRY_NUMBER") or
+                    site_id = (attrs.get("ListEntry") or
                                attrs.get("OBJECTID") or "")
                     if not site_id or str(site_id) in seen_ids:
                         continue
@@ -3157,19 +3268,18 @@ def fetch_historic_england(verbose: bool = False) -> list:
                                 lng = sum(c[0] for c in coords) / len(coords)
                                 lat = sum(c[1] for c in coords) / len(coords)
 
-                    if not lat or not lng:
+                    if lat is None or lng is None:
                         continue
                     if not is_in_uk(float(lat), float(lng)):
                         continue
 
-                    name = (attrs.get("NAME") or
-                            attrs.get("ENTRY_NAME") or "").strip()
+                    name = (attrs.get("Name") or "").strip()
                     if not name:
                         continue
 
-                    desc   = (attrs.get("DESCRIPTION") or "").strip()
-                    period = (attrs.get("PERIOD") or "").strip()
-                    grade  = (attrs.get("GRADE") or "").strip()
+                    desc   = ""
+                    period = ""
+                    grade  = (attrs.get("Grade") or "").strip()
 
                     # Ordinary protected wrecks are not pirate lore.
                     if category == "pirate" and not _pirate_term_relevant(name, desc):
@@ -3186,9 +3296,10 @@ def fetch_historic_england(verbose: bool = False) -> list:
                         parts = [p for p in [period, grade] if p]
                         summary = f"{name} — {', '.join(parts)}." if parts else                                   f"{name} — a scheduled heritage site in England."
 
-                    entry_no = attrs.get("ENTRY_NUMBER", "")
-                    source   = (f"https://historicengland.org.uk/listing/the-list/list-entry/{entry_no}"
-                                if entry_no else "https://historicengland.org.uk")
+                    entry_no = attrs.get("ListEntry", "")
+                    source   = (attrs.get("hyperlink") or
+                                (f"https://historicengland.org.uk/listing/the-list/list-entry/{entry_no}"
+                                 if entry_no else "https://historicengland.org.uk"))
                     region   = infer_region(name, summary)
 
                     results.append({
@@ -3210,12 +3321,12 @@ def fetch_historic_england(verbose: bool = False) -> list:
             except requests.exceptions.Timeout:
                 print(f"    [Historic England] Timeout on {layer_name} — skipping")
                 break
-            except requests.exceptions.RequestException as e:
+            except (requests.exceptions.RequestException, RuntimeError) as e:
                 print(f"    [Historic England] Error on {layer_name}: {e}")
                 break
 
         if verbose:
-            print(f"    [Historic England] {layer_name}: done")
+            print(f"    [Historic England] {layer_name}: done ({len(results)} cumulative)")
         time.sleep(RATE_LIMIT)
 
     print(f"    [Historic England] {len(results)} sites fetched")
@@ -3282,6 +3393,9 @@ DBPEDIA_CATEGORIES = [
     ("Irish_pirates",                    "pirate"),
     ("Welsh_pirates",                    "pirate"),
     ("Privateers",                       "pirate"),
+    ("British_pirates",                  "pirate"),
+    ("Smuggling_in_the_United_Kingdom",  "pirate"),
+    ("Maritime_folklore",                "water"),
 ]
 
 
@@ -3359,6 +3473,13 @@ LIMIT 200
             if verbose:
                 print(f"    [DBpedia]   {len(titles_list)} candidates, fetching coords...")
             geodata = get_article_geodata(titles_list, verbose)
+            if cat_type == "pirate":
+                missing_titles = [
+                    title for title in titles_list if title not in geodata
+                ]
+                geodata.update(
+                    get_pirate_birthplace_geodata(missing_titles, verbose)
+                )
 
             for wiki_title, (lat, lng) in geodata.items():
                 if not is_in_uk(lat, lng):
@@ -3487,7 +3608,8 @@ def write_to_supabase(
 def build(limit: int, seed_only: bool, verbose: bool,
           use_hes: bool = False, use_he: bool = False,
           use_dbpedia: bool = False, supabase: bool = False,
-          supabase_prune: bool = False) -> None:
+          supabase_prune: bool = False,
+          output_path: str = "legends.json") -> None:
     print("\n  Folklore Map — legend data pipeline")
     print("  " + "-" * 44)
 
@@ -3545,6 +3667,11 @@ def build(limit: int, seed_only: bool, verbose: bool,
 
         print(f"      {len(all_titles)} unique articles")
         geodata = get_article_geodata(list(all_titles.keys()), verbose)
+        pirate_titles = [
+            title for title, category in all_titles.items()
+            if category == "pirate" and title not in geodata
+        ]
+        geodata.update(get_pirate_birthplace_geodata(pirate_titles, verbose))
         print(f"      {len(geodata)} have coordinates")
 
         existing_names = set(legends.keys())
@@ -3625,17 +3752,17 @@ def build(limit: int, seed_only: bool, verbose: bool,
         legends = apply_cleanup(legends)
 
     # ── Write output ──────────────────────────────────────────────────
-    print(f"\n  [4/4] Writing legends.json ...")
+    print(f"\n  [4/4] Writing {output_path} ...")
     output = {
         "generated":  datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
         "total":      len(legends),
         "categories": CATEGORY_LABELS,
         "legends":    sorted(legends.values(), key=lambda x: x["name"])
     }
-    with open("legends.json", "w", encoding="utf-8") as f:
+    with open(output_path, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
     print(f"      Total legends : {len(legends)}")
-    print(f"      File written  : legends.json")
+    print(f"      File written  : {output_path}")
 
     if supabase:
         write_to_supabase(legends, verbose, prune=supabase_prune)
@@ -3655,6 +3782,7 @@ Examples:
   python build_legends.py                          # Wikipedia pull
   python build_legends.py --hes                    # + Historic Environment Scotland
   python build_legends.py --historic-england       # + Historic England
+  python build_legends.py --hes --historic-england --dbpedia --output legends.review.json
   python build_legends.py --seed-only --supabase --supabase-prune  # clean DB mirror
   python build_legends.py --hes --historic-england --dbpedia --supabase  # full run
         """
@@ -3673,11 +3801,15 @@ Examples:
         help="Delete Supabase rows absent from local data (requires --supabase)")
     parser.add_argument("--limit",    type=int, default=500,
         help="Max articles per Wikipedia category (default: 500)")
+    parser.add_argument("--output", default="legends.json",
+        help="Write to this JSON file (default: legends.json)")
     parser.add_argument("--verbose", "-v",       action="store_true",
         help="Show each API call")
     args = parser.parse_args()
     if args.supabase_prune and not args.supabase:
         parser.error("--supabase-prune requires --supabase")
+    if args.supabase and args.output != "legends.json":
+        parser.error("--supabase requires --output legends.json")
     build(
         limit=args.limit,
         seed_only=args.seed_only,
@@ -3687,6 +3819,7 @@ Examples:
         use_dbpedia=args.dbpedia,
         supabase=args.supabase,
         supabase_prune=args.supabase_prune,
+        output_path=args.output,
     )
 
 

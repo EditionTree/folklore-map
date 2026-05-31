@@ -724,7 +724,7 @@ function highlightSidebarItem(name) {
 
 // ── DATA SOURCE ───────────────────────────────────────────────────────────
 // Set SUPABASE_URL and SUPABASE_ANON_KEY to fetch from Supabase.
-// Leave empty to use legends.json (current default).
+// Leave empty to use legends.json. Supabase failures also fall back to local JSON.
 // The anon key is safe to put here — it's read-only by design.
 const SUPABASE_URL      = 'https://canjzkpvjwvkbjcduaaj.supabase.co';
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhbmp6a3B2and2a2JqY2R1YWFqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODAyMDkxODIsImV4cCI6MjA5NTc4NTE4Mn0.7RJu-aV_WYHgbvV732FMoCPNH_sXeLSFg2CQTaYi4kI';
@@ -748,6 +748,12 @@ function onDataError(err) {
   );
 }
 
+function loadLocalLegends() {
+  return fetch('legends.json?v=' + Date.now())
+    .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+    .then(data => data.legends || data);
+}
+
 if (SUPABASE_URL && SUPABASE_ANON_KEY) {
   // ── Fetch from Supabase ──────────────────────────────────────────────
   // Selects all columns, ordered by name, no row limit
@@ -758,15 +764,15 @@ if (SUPABASE_URL && SUPABASE_ANON_KEY) {
     }
   })
   .then(r => { if (!r.ok) throw new Error(`Supabase HTTP ${r.status}`); return r.json(); })
-  .then(rows => onDataLoaded(rows))
-  .catch(onDataError);
+  .then(onDataLoaded)
+  .catch(err => {
+    console.warn('Supabase unavailable, using local legend backup:', err);
+    return loadLocalLegends().then(onDataLoaded).catch(onDataError);
+  });
 
 } else {
   // ── Fallback: fetch from legends.json ────────────────────────────────
-  fetch('legends.json?v=' + Date.now())
-  .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
-  .then(data => onDataLoaded(data.legends || data))
-  .catch(onDataError);
+  loadLocalLegends().then(onDataLoaded).catch(onDataError);
 }
 </script>
 </body>

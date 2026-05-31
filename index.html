@@ -343,12 +343,22 @@
       letter-spacing: 0.02em;
     }
     .popup-source:hover { color: var(--accent-glow); text-decoration: underline; }
+    .popup-actions { display: flex; align-items: center; gap: 10px; }
     .popup-copylink {
       background: none; border: none; padding: 0; cursor: pointer;
       font-family: var(--font-body); font-size: 11px; font-style: italic;
       color: var(--ink-light); letter-spacing: 0.02em; transition: color 0.15s;
     }
     .popup-copylink:hover { color: var(--accent); }
+    .bookmark-btn {
+      background: none; border: none; padding: 0; cursor: pointer;
+      color: var(--ink-light); line-height: 1; transition: color 0.15s, transform 0.15s;
+    }
+    .bookmark-btn:hover { color: var(--accent); transform: scale(1.08); }
+    .bookmark-btn.bookmarked { color: var(--accent); }
+    .bookmark-icon { display: block; width: 13px; height: 17px; }
+    .filter-icon .bookmark-icon { width: 12px; height: 15px; }
+    .popup-bookmark .bookmark-icon { width: 14px; height: 18px; }
 
     /* ── LEGEND PANEL ── */
     .legend-panel {
@@ -455,8 +465,10 @@
     .sidebar-item:hover { background: var(--parchment-dk); }
     .sidebar-item.active { background: rgba(139,58,26,0.1); }
     .sidebar-item-icon { display: flex; align-items: center; flex-shrink: 0; margin-top: 2px; opacity: 0.75; }
+    .sidebar-item-text { min-width: 0; flex: 1; }
     .sidebar-item-name { font-family: var(--font-display); font-size: 11px; color: var(--ink); font-weight: 600; line-height: 1.3; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .sidebar-item-region { font-size: 10px; color: var(--ink-light); font-style: italic; }
+    .sidebar-bookmark { flex-shrink: 0; font-size: 17px; margin-top: 1px; }
     .sidebar-toggle-btn { background: rgba(255,255,255,0.08); border: 1px solid var(--border); border-radius: 4px; color: var(--parchment); font-family: var(--font-body); font-size: 12px; padding: 4px 10px; cursor: pointer; white-space: nowrap; }
     .sidebar-toggle-btn:hover { background: rgba(255,255,255,0.14); }
 
@@ -576,8 +588,39 @@ CATEGORIES.pirate.label = "Pirates & Smugglers";
 let nightMode = false;
 let markers = [];
 let activeFilter = 'all';
+const BOOKMARKS_STORAGE_KEY = 'folkloreMapBookmarks';
+let bookmarks = loadBookmarks();
 const isMobile = () => window.innerWidth <= 640;
 let sidebarOpen = isMobile() ? false : (localStorage.getItem('sidebarOpen') !== 'false');
+
+function loadBookmarks() {
+  try {
+    const stored = JSON.parse(localStorage.getItem(BOOKMARKS_STORAGE_KEY) || '[]');
+    return new Set(Array.isArray(stored) ? stored : []);
+  } catch {
+    return new Set();
+  }
+}
+
+function saveBookmarks() {
+  try {
+    localStorage.setItem(BOOKMARKS_STORAGE_KEY, JSON.stringify([...bookmarks]));
+  } catch {
+    // Bookmarks remain available for the current page if storage is blocked.
+  }
+}
+
+function isBookmarked(name) {
+  return bookmarks.has(name);
+}
+
+function bookmarkIconSvg(bookmarked) {
+  return `<svg class="bookmark-icon" viewBox="0 0 16 20" aria-hidden="true">
+    <path d="M2.5 1.5h11v16l-5.5-3.6-5.5 3.6z"
+      fill="${bookmarked ? 'currentColor' : 'none'}"
+      stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+  </svg>`;
+}
 
 // Apply persisted sidebar state immediately (before data loads)
 document.addEventListener('DOMContentLoaded', () => {
@@ -665,6 +708,7 @@ function safeSourceUrl(value) {
 function buildPopup(leg) {
   const cat = CATEGORIES[leg.category];
   const encoded = encodeURIComponent(leg.name);
+  const bookmarked = isBookmarked(leg.name);
   return `<div class="popup-inner">
     <span class="popup-cat" style="background:${cat.colour}">${cat.label}</span>
     <div class="popup-title">${escapeHtml(leg.name)}</div>
@@ -673,12 +717,22 @@ function buildPopup(leg) {
     <p class="popup-summary">${escapeHtml(leg.summary)}</p>
     <div class="popup-footer">
       <a class="popup-source" href="${escapeHtml(safeSourceUrl(leg.source))}" target="_blank" rel="noopener">Read more</a>
-      <button class="popup-copylink" data-legend="${encoded}">copy link</button>
+      <div class="popup-actions">
+        <button class="bookmark-btn popup-bookmark${bookmarked ? ' bookmarked' : ''}" data-bookmark="${encoded}" aria-label="${bookmarked ? 'Remove bookmark' : 'Bookmark'}" title="${bookmarked ? 'Remove bookmark' : 'Bookmark'}">${bookmarkIconSvg(bookmarked)}</button>
+        <button class="popup-copylink" data-legend="${encoded}">copy link</button>
+      </div>
     </div>
   </div>`;
 }
 
 document.addEventListener('click', e => {
+  const bookmarkBtn = e.target.closest('[data-bookmark]');
+  if (bookmarkBtn) {
+    e.preventDefault();
+    e.stopPropagation();
+    toggleBookmark(decodeURIComponent(bookmarkBtn.dataset.bookmark));
+    return;
+  }
   const btn = e.target.closest('.popup-copylink');
   if (!btn) return;
   const url = new URL(location.href);
@@ -688,6 +742,15 @@ document.addEventListener('click', e => {
     setTimeout(() => { btn.textContent = 'copy link'; }, 2000);
   });
 });
+
+function toggleBookmark(name) {
+  if (bookmarks.has(name)) bookmarks.delete(name);
+  else bookmarks.add(name);
+  saveBookmarks();
+  markers.forEach(marker => marker.setPopupContent(buildPopup(marker._legendData)));
+  buildFilters();
+  filterMarkers(activeFilter);
+}
 
 let LEGENDS = [];
 
@@ -717,8 +780,9 @@ function buildFilters() {
   bar.appendChild(label);
 
   const allBtn = makeFilterBtn('all', 'All', null);
-  allBtn.classList.add('active');
   bar.appendChild(allBtn);
+
+  bar.appendChild(makeFilterBtn('bookmarks', 'Saved', null, bookmarks.size));
 
   const usedCats = [...new Set(LEGENDS.map(l => l.category))];
   usedCats.forEach(cat => {
@@ -732,12 +796,14 @@ function makeFilterBtn(cat, label, colour, count) {
   btn.className   = 'filter-btn';
   btn.dataset.cat = cat;
   const cat_obj = CATEGORIES[cat];
-  let iconHtml = '';
+  let iconHtml = cat === 'bookmarks' ? '<span class="filter-icon">' + bookmarkIconSvg(true) + '</span>' : '';
   if (cat_obj && cat_obj.iconPath) {
     iconHtml = '<span class="filter-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16" style="display:block"><path d="' + cat_obj.iconPath + '" fill="currentColor"/></svg></span>';
   }
-  const cntHtml = count ? '<span class="count-badge">' + count + '</span>' : '';
+  const cntHtml = count !== undefined ? '<span class="count-badge">' + count + '</span>' : '';
   btn.innerHTML  = iconHtml + '<span class="btn-label">' + label + '</span>' + (cntHtml ? ' ' + cntHtml : '');
+  btn.classList.toggle('active', activeFilter === cat);
+  btn.setAttribute('aria-label', label);
   btn.onclick    = () => filterMarkers(cat);
   return btn;
 }
@@ -748,7 +814,11 @@ function filterMarkers(cat) {
     b.classList.toggle('active', b.dataset.cat === cat);
   });
   clusterGroup.clearLayers();
-  const visible = markers.filter(m => cat === 'all' || m._legendData.category === cat);
+  const visible = markers.filter(m =>
+    cat === 'all' ||
+    (cat === 'bookmarks' && isBookmarked(m._legendData.name)) ||
+    m._legendData.category === cat
+  );
   clusterGroup.addLayers(visible);
   updateCount(visible.length);
   buildSidebarList(visible.map(m => m._legendData));
@@ -820,7 +890,7 @@ function focusLegend(name) {
   document.getElementById('searchInput').value = '';
   const leg = LEGENDS.find(l => l.name === name);
   if (!leg) return;
-  if (activeFilter !== 'all' && activeFilter !== leg.category) filterMarkers('all');
+  if (activeFilter !== 'all' && activeFilter !== leg.category && !(activeFilter === 'bookmarks' && isBookmarked(name))) filterMarkers('all');
   const marker = markers.find(m => m._legendData.name === name);
   if (!marker) return;
   highlightSidebarItem(name);
@@ -848,7 +918,7 @@ function buildSidebarList(legends) {
   const list = document.getElementById('sidebarList');
   const sub  = document.getElementById('sidebarSubtitle');
   const sorted = [...legends].sort((a, b) => a.name.localeCompare(b.name));
-  sub.textContent = sorted.length + (activeFilter === 'all' ? ' entries' : ' ' + (CATEGORIES[activeFilter]?.label || 'entries'));
+  sub.textContent = sorted.length + (activeFilter === 'all' ? ' entries' : ' ' + (activeFilter === 'bookmarks' ? 'saved entries' : (CATEGORIES[activeFilter]?.label || 'entries')));
   list.replaceChildren();
   sorted.forEach(leg => {
     const cat = CATEGORIES[leg.category] || CATEGORIES.beast;
@@ -857,6 +927,7 @@ function buildSidebarList(legends) {
     const text = document.createElement('div');
     const name = document.createElement('div');
     const region = document.createElement('div');
+    const bookmark = document.createElement('button');
     item.className = 'sidebar-item';
     item.onclick = () => focusLegend(leg.name);
     icon.className = 'sidebar-item-icon';
@@ -867,8 +938,14 @@ function buildSidebarList(legends) {
     name.textContent = leg.name;
     region.className = 'sidebar-item-region';
     region.textContent = leg.region;
+    text.className = 'sidebar-item-text';
+    bookmark.className = 'bookmark-btn sidebar-bookmark' + (isBookmarked(leg.name) ? ' bookmarked' : '');
+    bookmark.dataset.bookmark = encodeURIComponent(leg.name);
+    bookmark.setAttribute('aria-label', isBookmarked(leg.name) ? 'Remove bookmark' : 'Bookmark');
+    bookmark.title = isBookmarked(leg.name) ? 'Remove bookmark' : 'Bookmark';
+    bookmark.innerHTML = bookmarkIconSvg(isBookmarked(leg.name));
     text.append(name, region);
-    item.append(icon, text);
+    item.append(icon, text, bookmark);
     list.appendChild(item);
   });
 }
@@ -890,6 +967,9 @@ const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBh
 
 function onDataLoaded(legends) {
   LEGENDS = legends.filter(leg => !EXCLUDED_LEGEND_NAMES.has(leg.name));
+  const availableNames = new Set(LEGENDS.map(leg => leg.name));
+  bookmarks = new Set([...bookmarks].filter(name => availableNames.has(name)));
+  saveBookmarks();
   loadMarkers(LEGENDS);
   buildFilters();
   buildLegend();

@@ -1,6 +1,6 @@
 {
-  "generated": "2026-05-31T13:46:56.621699Z",
-  "total": 306,
+  "generated": "2026-05-31T14:03:55.549382Z",
+  "total": 294,
   "categories": {
     "beast": "Beast",
     "ghost": "Ghost",
@@ -274,7 +274,7 @@
       "name": "Blarney Stone",
       "lat": 51.9291,
       "lng": -8.5706,
-      "category": "fairy",
+      "category": "location",
       "region": "Ireland",
       "summary": "The Blarney Stone is a block of Carboniferous limestone built into the battlements of Blarney Castle, Blarney, about 8 kilometres from the centre of Cork City, Ireland. According to legend, kissing the stone endows the kisser with the gift of the gab. The stone was set into a tower of the castle in 1446.",
       "source": "https://en.wikipedia.org/wiki/Blarney_Stone"
@@ -505,15 +505,6 @@
       "source": "https://en.wikipedia.org/wiki/Cantre%27r_Gwaelod"
     },
     {
-      "name": "Carn, County Fermanagh",
-      "lat": 54.3473,
-      "lng": -7.805,
-      "category": "fairy",
-      "region": "Ireland",
-      "summary": "Carn or Carngreen is a townland situated in County Fermanagh, Northern Ireland. It is situated within the civil parish of Boho and Fermanagh and Omagh district.",
-      "source": "https://en.wikipedia.org/wiki/Carn%2C_County_Fermanagh"
-    },
-    {
       "name": "Carricknagat Megalithic Tombs",
       "lat": 54.3348,
       "lng": -8.0045,
@@ -634,7 +625,7 @@
       "name": "Children of Lir",
       "lat": 54.27,
       "lng": -9.05,
-      "category": "deity",
+      "category": "water",
       "region": "County Mayo, Ireland",
       "summary": "Four children transformed into swans by their jealous stepmother for nine hundred years — three hundred on the waters of Lough Derravaragh, three hundred on the Sea of Moyle between Ireland and Scotland, three hundred on the waters of Erris. Their singing was so beautiful that all who heard it forgot their sorrows.",
       "source": "https://en.wikipedia.org/wiki/Children_of_Lir"
@@ -683,15 +674,6 @@
       "region": "Norfolk",
       "summary": "The Cock Lane ghost was a purported haunting that attracted mass public attention in 1762. The location was a lodging in Cock Lane, a short road adjacent to London's Smithfield market and a few minutes' walk from St Paul's Cathedral. The event centred on three people: William Kent, a usurer from Norfolk; Richard Parsons, a parish clerk; and Parsons' daughter Elizabeth.",
       "source": "https://en.wikipedia.org/wiki/Cock_Lane_ghost"
-    },
-    {
-      "name": "Connacht",
-      "lat": 54.0,
-      "lng": -9.0,
-      "category": "deity",
-      "region": "Ireland",
-      "summary": "Connacht, also spelled Connaught, is the smallest and least populous of the four provinces of Ireland, situated in the west of Ireland. Until the ninth century it consisted of several independent major Gaelic kingdoms.",
-      "source": "https://en.wikipedia.org/wiki/Connacht"
     },
     {
       "name": "Coolcoulaghta Standing Stones",
@@ -841,7 +823,7 @@
       "name": "Dragon Hill, Uffington",
       "lat": 51.576,
       "lng": -1.565,
-      "category": "dragon",
+      "category": "location",
       "region": "Oxfordshire",
       "summary": "A low chalk hill below the Uffington White Horse, said to be where Saint George slew the dragon. The bare chalk patch on top marks where the dragon's blood poisoned the grass.",
       "source": "https://en.wikipedia.org/wiki/Dragon_Hill,_Uffington"
@@ -985,7 +967,7 @@
       "name": "Finn McCools Fingers",
       "lat": 54.0175,
       "lng": -7.2914,
-      "category": "deity",
+      "category": "location",
       "region": "Britain",
       "summary": "Finn McCools Fingers are a set of five standing stones on Shantemon mountain in County Cavan. The name is derived from the story that giant Celtic warrior Fionn mac Cumhaill lost a hand in battle. The stones are arranged in a south-east/north-west orientation.",
       "source": "https://en.wikipedia.org/wiki/Finn_McCools_Fingers"
@@ -1009,15 +991,6 @@
       "source": "https://en.wikipedia.org/wiki/Drake%27s_Drum"
     },
     {
-      "name": "Galway",
-      "lat": 53.2719,
-      "lng": -9.0489,
-      "category": "deity",
-      "region": "Ireland",
-      "summary": "Galway is a city in County Galway. It lies on the River Corrib between Lough Corrib and Galway Bay. It is the most populous settlement in the province of Connacht, the fifth most populous city on the island of Ireland and the fourth most populous in the Republic of Ireland, with a population at the 2022 census of 85,910.",
-      "source": "https://en.wikipedia.org/wiki/Galway"
-    },
-    {
       "name": "Gawain",
       "lat": 55.865,
       "lng": -4.257,
@@ -1030,7 +1003,7 @@
       "name": "Giant's Causeway",
       "lat": 55.2408,
       "lng": -6.5117,
-      "category": "giant",
+      "category": "location",
       "region": "Ireland",
       "summary": "A volcanic shore of interlocking basalt columns explained in legend as the road built by Fionn mac Cumhaill to reach his Scottish giant rival. Geology and giantcraft shake hands here.",
       "source": "https://en.wikipedia.org/wiki/Giant%27s_Causeway"
@@ -1039,7 +1012,7 @@
       "name": "Glaistig",
       "lat": 57.274,
       "lng": -5.518,
-      "category": "water",
+      "category": "fairy",
       "region": "Highland, Scotland",
       "summary": "A Highland spirit who appears as a beautiful grey-clad woman concealing the lower body of a goat beneath her long skirts. She could be protective — herding cattle and caring for children — or predatory, luring men to dance with her until she drained their blood. Milk offerings kept her benevolent.",
       "source": "https://en.wikipedia.org/wiki/Glaistig"
@@ -1102,7 +1075,7 @@
       "name": "Granny Kempock Stone",
       "lat": 55.9614,
       "lng": -4.8198,
-      "category": "witch",
+      "category": "location",
       "region": "Gourock, Scotland",
       "summary": "The megalithic Kempock Stone, popularly known as Granny Kempock, stands on a cliff behind Kempock Street, the main shopping street in Gourock, Scotland. The stone, or menhir, is grey mica schist and of indeterminate origin, but it has been suggested that it is an old altar to the pagan god Baal, or a memorial to an ancient battle.",
       "source": "https://en.wikipedia.org/wiki/Granny_Kempock_Stone"
@@ -1441,15 +1414,6 @@
       "source": "https://en.wikipedia.org/wiki/Lantern_Man"
     },
     {
-      "name": "Leinster",
-      "lat": 53.3478,
-      "lng": -6.2597,
-      "category": "deity",
-      "region": "Ireland",
-      "summary": "Leinster is one of the four provinces of Ireland, in the east of the island.",
-      "source": "https://en.wikipedia.org/wiki/Leinster"
-    },
-    {
       "name": "Leprechaun",
       "lat": 53.3498,
       "lng": -6.2603,
@@ -1498,7 +1462,7 @@
       "name": "Loftus Hall",
       "lat": 52.1487,
       "lng": -6.9106,
-      "category": "fairy",
+      "category": "ghost",
       "region": "Ireland",
       "summary": "Loftus Hall is a large country house on the Hook peninsula, County Wexford, Ireland. Built on the site of the original Redmond Hall, it is said to have been haunted by the devil and the ghost of a woman.",
       "source": "https://en.wikipedia.org/wiki/Loftus_Hall"
@@ -1538,15 +1502,6 @@
       "region": "County Donegal, Ireland",
       "summary": "An island in Lough Derg said to contain a cave leading directly to Purgatory — revealed to Saint Patrick so he could show doubters what awaited sinners. Medieval pilgrims came from across Europe to descend into it. The penitential tradition continues to this day: three days without sleep, barefoot on the cold stone island.",
       "source": "https://en.wikipedia.org/wiki/Lough_Derg_(Ulster)"
-    },
-    {
-      "name": "Lough Scur",
-      "lat": 54.0253,
-      "lng": -7.9558,
-      "category": "location",
-      "region": "Ireland",
-      "summary": "Lough Scur is a freshwater lake in south County Leitrim, northwest Ireland. It is part of the Shannon–Erne Waterway. There have been human settlements here since the New Stone Age. Modern features include quays and moorings. Protected features are Castle John, three Crannogs, and the causeway into Rusheen Island, though \"Jail Island\" is not protected.",
-      "source": "https://en.wikipedia.org/wiki/Lough_Scur"
     },
     {
       "name": "Lugh",
@@ -1633,7 +1588,7 @@
       "name": "Merlin",
       "lat": 51.882,
       "lng": -4.516,
-      "category": "deity",
+      "category": "hero",
       "region": "Wales & Britain",
       "summary": "The greatest wizard of Britain — half-demon by birth, prophet by gift, architect of the Arthurian age. He transported Stonehenge from Ireland, foretold the coming of Arthur, and in the end was imprisoned by the enchantress Nimue in a tree, a cave, or a tower of air, depending on who tells the tale.",
       "source": "https://en.wikipedia.org/wiki/Merlin"
@@ -1702,15 +1657,6 @@
       "source": "https://en.wikipedia.org/wiki/Morag_(lake_monster)"
     },
     {
-      "name": "Mordiford Dragon",
-      "lat": 52.043,
-      "lng": -2.638,
-      "category": "dragon",
-      "region": "Herefordshire",
-      "summary": "A young girl named Maud found a tiny green serpent near Mordiford and kept it as a pet, feeding it milk. It grew into a vast dragon and began devouring cattle — then people. A condemned prisoner finally slew it from a barrel near the river, killing the beast but dying himself from its poisoned breath.",
-      "source": "https://en.wikipedia.org/wiki/Dragon_of_Mordiford"
-    },
-    {
       "name": "Morgawrr",
       "lat": 50.151,
       "lng": -5.069,
@@ -1747,15 +1693,6 @@
       "source": "https://en.wikipedia.org/wiki/Mullyash_Kerbed_Cairn"
     },
     {
-      "name": "Munster",
-      "lat": 52.25,
-      "lng": -9.0,
-      "category": "deity",
-      "region": "Ireland",
-      "summary": "Munster is the largest of the four provinces of Ireland, located in the south west of the island, entirely within the Republic of Ireland. In early Ireland, the Kingdom of Munster was one of the kingdoms of Gaelic Ireland ruled by a \"king of over-kings\". Following the Norman invasion of Ireland, the ancient kingdoms were shired into counties for administrative and judicial purposes.",
-      "source": "https://en.wikipedia.org/wiki/Munster"
-    },
-    {
       "name": "Mên Scryfa",
       "lat": 50.1622,
       "lng": -5.6033,
@@ -1783,19 +1720,10 @@
       "source": "https://en.wikipedia.org/wiki/Nanny_Rutt"
     },
     {
-      "name": "National Leprechaun Museum",
-      "lat": 53.3476,
-      "lng": -6.2666,
-      "category": "fairy",
-      "region": "Ireland",
-      "summary": "The National Leprechaun Museum is a privately owned museum dedicated to Irish folklore and mythology, through the oral tradition of storytelling. It is located on Jervis Street in Dublin, Ireland, since 10 March 2010. It claims to be the first leprechaun museum in the world.",
-      "source": "https://en.wikipedia.org/wiki/National_Leprechaun_Museum"
-    },
-    {
       "name": "Navan Fort",
       "lat": 54.3481,
       "lng": -6.6972,
-      "category": "deity",
+      "category": "location",
       "region": "Ireland",
       "summary": "Navan Fort is an ancient ceremonial monument near Armagh, Northern Ireland. According to tradition it was one of the great royal sites of pre-Christian Gaelic Ireland and the capital of the Ulaidh. It is a large circular hilltop enclosure—marked by a bank and ditch—inside which is a circular mound and the remains of a ring barrow.",
       "source": "https://en.wikipedia.org/wiki/Navan_Fort"
@@ -1984,19 +1912,10 @@
       "name": "Rathcroghan",
       "lat": 53.802,
       "lng": -8.304,
-      "category": "deity",
+      "category": "location",
       "region": "Ireland",
       "summary": "Rathcroghan is a complex of archaeological sites near Tulsk in County Roscommon, Ireland. It is identified as the site of Cruachan, the traditional capital of the Connachta, the prehistoric and early medieval rulers of the kingdom of Connacht. Rathcroghan is one of the royal sites of Ireland.",
       "source": "https://en.wikipedia.org/wiki/Rathcroghan"
-    },
-    {
-      "name": "Reask",
-      "lat": 52.1674,
-      "lng": -10.3878,
-      "category": "location",
-      "region": "Ireland",
-      "summary": "Reask is a ruined early Monastic site located 1 km east of Baile an Fheirtéaraigh, County Kerry, Ireland. The remains of the site include the low remnants of buildings and enclosure walls and a cross-slab standing stone which sits in the middle of the compound.",
-      "source": "https://en.wikipedia.org/wiki/Reask"
     },
     {
       "name": "Red Horse of Tysoe",
@@ -2011,7 +1930,7 @@
       "name": "Redcap",
       "lat": 55.649,
       "lng": -2.348,
-      "category": "ghost",
+      "category": "fairy",
       "region": "Scottish Borders",
       "summary": "A murderous goblin dwelling in ruined border castles, who dyes his cap with the blood of travellers he has slain. He must kill regularly or die himself. Iron repels him; scripture makes him flee.",
       "source": "https://en.wikipedia.org/wiki/Redcap"
@@ -2051,15 +1970,6 @@
       "region": "Snowdonia, Wales",
       "summary": "The great giant-king of Wales who made a cloak from the beards of the kings he slew. He demanded Arthur's beard for the final trim. Arthur refused — and killed him on the slopes of Snowdon, which was then called Rhitta's Cairn.",
       "source": "https://en.wikipedia.org/wiki/Rhitta_Gawr"
-    },
-    {
-      "name": "River Boyne",
-      "lat": 53.7217,
-      "lng": -6.2381,
-      "category": "deity",
-      "region": "Ireland",
-      "summary": "The River Boyne is a river which flows through Leinster, Ireland. It is about 112 kilometres (70 mi) long. The Boyne rises near Carbury, County Kildare and flows north-east along the border with County Offaly before entering County Meath to reach the Irish Sea between Mornington, County Meath and Baltray, County Louth.",
-      "source": "https://en.wikipedia.org/wiki/River_Boyne"
     },
     {
       "name": "Robin Goodfellow",
@@ -2110,7 +2020,7 @@
       "name": "Sea Mither",
       "lat": 58.984,
       "lng": -2.959,
-      "category": "deity",
+      "category": "water",
       "region": "Orkney",
       "summary": "An Orcadian summer sea-spirit who calms the waters and restrains the monstrous Teran. Her yearly struggle with him explains the turn between gentle seas and winter storms.",
       "source": "https://en.wikipedia.org/wiki/Sea_Mither"
@@ -2197,15 +2107,6 @@
       "source": "https://en.wikipedia.org/wiki/Spring-heeled_Jack"
     },
     {
-      "name": "St Davids Cathedral",
-      "lat": 51.8819,
-      "lng": -5.2683,
-      "category": "location",
-      "region": "Wales",
-      "summary": "St Davids Cathedral is a Church in Wales cathedral situated in St Davids, Britain's smallest city, in the county of Pembrokeshire, near the most westerly point of Wales.",
-      "source": "https://en.wikipedia.org/wiki/St_Davids_Cathedral"
-    },
-    {
       "name": "St Leonard's Forest Dragons",
       "lat": 51.047,
       "lng": -0.267,
@@ -2269,15 +2170,6 @@
       "source": "https://en.wikipedia.org/wiki/Sulis"
     },
     {
-      "name": "Sutton Hoo",
-      "lat": 52.0897,
-      "lng": 1.3389,
-      "category": "location",
-      "region": "Suffolk",
-      "summary": "Sutton Hoo is the site of two Anglo-Saxon cemeteries dating from the 6th to 7th centuries near Woodbridge, Suffolk, England. Archaeologists have been excavating the area since 1938, when an undisturbed ship burial containing a wealth of Anglo-Saxon artifacts was discovered.",
-      "source": "https://en.wikipedia.org/wiki/Sutton_Hoo"
-    },
-    {
       "name": "Taranis",
       "lat": 53.465,
       "lng": -2.234,
@@ -2290,7 +2182,7 @@
       "name": "Teran",
       "lat": 58.984,
       "lng": -2.959,
-      "category": "deity",
+      "category": "water",
       "region": "Orkney",
       "summary": "The winter sea-spirit of Orkney, enemy of the Sea Mither. When Teran rules, storms rise, waters turn dangerous, and the ocean remembers its teeth.",
       "source": "https://en.wikipedia.org/wiki/Teran"
@@ -2362,7 +2254,7 @@
       "name": "The Green Man",
       "lat": 51.881,
       "lng": -2.074,
-      "category": "deity",
+      "category": "fairy",
       "region": "Gloucestershire",
       "summary": "A face wreathed in leaves, carved into church columns and cathedral arches across Britain. He represents the untamed spirit of nature, the cycle of growth and decay — ancient beyond Christianity, impossible to fully explain away.",
       "source": "https://en.wikipedia.org/wiki/Green_Man"
@@ -2686,7 +2578,7 @@
       "name": "Witches' Well",
       "lat": 55.9489,
       "lng": -3.1964,
-      "category": "witch",
+      "category": "location",
       "region": "Edinburgh",
       "summary": "The Witches' Well is a monument to accused witches burned at the stake in Edinburgh, Scotland, and is the only one of its kind in the city.",
       "source": "https://en.wikipedia.org/wiki/Witches%27_Well%2C_Edinburgh"

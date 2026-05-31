@@ -3444,9 +3444,10 @@ def _delete_stale_supabase_rows(stale_names: set) -> int:
     quoted_names = ",".join(
         f'"{name.replace(chr(34), chr(34) * 2)}"' for name in sorted(stale_names)
     )
+    encoded_names = requests.utils.quote(quoted_names, safe='(),"')
     _supabase_request(
         "DELETE",
-        _supabase_url(f"name=in.({requests.utils.quote(quoted_names, safe='(),\"')})"),
+        _supabase_url(f"name=in.({encoded_names})"),
     )
     return len(stale_names)
 

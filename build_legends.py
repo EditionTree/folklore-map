@@ -129,7 +129,7 @@ CATEGORY_LABELS = {
     "beast": "Beast",
     "ghost": "Ghost",
     "fairy": "Fae & Spirits",
-    "water": "Water Creatures",
+    "water": "Aquatic Legends",
     "dragon": "Dragon",
     "witch": "Witch",
     "deity": "Deities",
@@ -137,9 +137,28 @@ CATEGORY_LABELS = {
     "location": "Legendary Sites",
     "ancient_site": "Ancient & Sacred Sites",
     "hero": "Heroes & Legendary Figures",
-    "pirate": "Pirates & Smugglers",
+    "pirate": "Pirates",
     "ritual": "Rituals & Folk Customs",
     "norse": "Norse & Northern Lore",
+}
+
+# Pirate biographies are admitted deliberately. Wikipedia categories also
+# contain many ordinary privateers and naval figures whose history is not
+# itself folklore.
+PIRATE_FOLKLORE_TITLES = {
+    "Anne Bonny",
+    "Andrew Barton (privateer)",
+    "Bartholomew Roberts",
+    "Blackbeard",
+    "Francis Drake",
+    "Grace O'Malley",
+    "Henry Every",
+    "Henry Morgan",
+    "Howell Davis",
+    "Jack Ward",
+    "John Gow",
+    "Mary Read",
+    "William Kidd",
 }
 
 
@@ -2499,6 +2518,70 @@ SEED_LEGENDS = [
         "summary": "The Dundee-born privateer Captain Kidd was sent to hunt pirates and returned accused of piracy himself. His execution and rumours of buried treasure transformed a disputed career into enduring legend.",
         "source": "https://en.wikipedia.org/wiki/William_Kidd"
     },
+    {
+        "name": "Blackbeard",
+        "lat": 51.4545, "lng": -2.5879,
+        "category": "pirate",
+        "region": "Bristol",
+        "summary": "Edward Teach, better known as Blackbeard, may have been born in Bristol. His fearsome image outgrew his short career: tales of buried treasure, ghostly lights at sea and his headless spirit searching the coast made him one of the defining figures of pirate folklore.",
+        "source": "https://en.wikipedia.org/wiki/Blackbeard"
+    },
+    {
+        "name": "Anne Bonny",
+        "lat": 51.8985, "lng": -8.4756,
+        "category": "pirate",
+        "region": "County Cork, Ireland",
+        "summary": "Anne Bonny became one of the best-known pirates of the Golden Age. Her birthplace is uncertain, but the enduring traditional account places her near Cork. Sparse historical records left room for a much larger legend, retold through books, songs, theatre and screen.",
+        "source": "https://en.wikipedia.org/wiki/Anne_Bonny"
+    },
+    {
+        "name": "Andrew Barton (privateer)",
+        "lat": 55.9801, "lng": -3.1700,
+        "category": "pirate",
+        "region": "Leith, Scotland",
+        "summary": "The Leith privateer Sir Andrew Barton raided Portuguese shipping before his death in battle in 1511. English and Scottish folk songs transformed him into a ballad figure: Sir Andrew Barton and its later relation Henry Martyn both preserve versions of his story.",
+        "source": "https://en.wikipedia.org/wiki/Andrew_Barton_(privateer)"
+    },
+    {
+        "name": "Francis Drake",
+        "lat": 50.4819, "lng": -4.1327,
+        "category": "pirate",
+        "region": "Buckland Abbey, Devon",
+        "summary": "The privateer Sir Francis Drake is tied to Buckland Abbey through the legend of Drake's Drum. Before his death he was said to have promised that its beat would summon him back whenever England faced danger. Phantom drumming has been reported at moments of national crisis.",
+        "source": "https://en.wikipedia.org/wiki/Drake%27s_Drum"
+    },
+    {
+        "name": "Henry Morgan",
+        "lat": 51.5230, "lng": -3.1250,
+        "category": "pirate",
+        "region": "Llanrumney, Cardiff",
+        "summary": "The Welsh privateer Henry Morgan became one of the most famous raiders of the Caribbean. His early life is uncertain, but tradition places his birth around Llanrumney or nearby Pencarn. Later retellings turned the historical governor and plantation owner into a larger-than-life pirate figure.",
+        "source": "https://en.wikipedia.org/wiki/Henry_Morgan"
+    },
+    {
+        "name": "Jack Ward",
+        "lat": 51.3148, "lng": 0.8910,
+        "category": "pirate",
+        "region": "Faversham, Kent",
+        "summary": "The Faversham-born corsair Jack Ward became England's notorious Arch-Pirate. Plays, pamphlets and ballads followed him in his own lifetime. The traditional song Captain Ward and the Rainbow casts him as a king of the sea who defeats the royal ship sent against him.",
+        "source": "https://en.wikipedia.org/wiki/Jack_Ward"
+    },
+    {
+        "name": "John Gow",
+        "lat": 58.9640, "lng": -3.2960,
+        "category": "pirate",
+        "region": "Stromness, Orkney",
+        "summary": "John Gow was raised in Stromness and returned to Orkney under an assumed name after a short pirate career. His attempt to hide as a prosperous trader collapsed into capture, execution and retelling, making the Orkney Pirate a lasting local figure.",
+        "source": "https://en.wikipedia.org/wiki/John_Gow"
+    },
+    {
+        "name": "Mary Read",
+        "lat": 51.5072, "lng": -0.1276,
+        "category": "pirate",
+        "region": "London, England",
+        "summary": "Mary Read sailed with Anne Bonny and became one of the best-known women of the Golden Age of Piracy. Her birthplace is uncertain; an influential traditional account places her in London. The gaps in the surviving record allowed her story to grow through repeated retelling.",
+        "source": "https://en.wikipedia.org/wiki/Mary_Read"
+    },
 ]
 
 
@@ -2616,6 +2699,16 @@ def get_pirate_birthplace_geodata(titles: list, verbose: bool) -> dict:
     Wikipedia biographies rarely expose page coordinates, so this fallback
     keeps British Isles-born pirates eligible for the map.
     """
+    # Country-level birthplaces create misleading pins at national centroids.
+    # Seeds can still override biographies with a stronger local association.
+    generic_birthplaces = {
+        "Q21",     # England
+        "Q22",     # Scotland
+        "Q25",     # Wales
+        "Q27",     # Ireland
+        "Q145",    # United Kingdom
+        "Q23666",  # British Isles
+    }
     title_to_item = {}
     for i in range(0, len(titles), 50):
         batch = titles[i:i + 50]
@@ -2665,7 +2758,7 @@ def get_pirate_birthplace_geodata(titles: list, verbose: bool) -> dict:
                     continue
                 value = claims[0].get("mainsnak", {}).get("datavalue", {}).get("value", {})
                 birthplace = value.get("id")
-                if birthplace:
+                if birthplace and birthplace not in generic_birthplaces:
                     birthplace_to_titles.setdefault(birthplace, []).append(item_to_title[item])
         except Exception as e:
             if verbose:
@@ -2974,11 +3067,21 @@ PIRATE_RELATED_TERMS = [
     "wrecking", "wrecker", "treasure",
 ]
 
+HERITAGE_LORE_PATTERNS = [
+    r"\bdevil(?:'s|s)?\b", r"\bfair(?:y|ies)\b", r"\bfaerie\b",
+    r"\bgiant(?:'s|s')?\b", r"\bghost\b", r"\bhaunted\b",
+    r"\bwitch(?:es|craft|y)?\b", r"\bdragon\b", r"\bmermaid\b",
+    r"\bmonster\b", r"\blegend(?:ary)?\b", r"\bfolklore\b",
+    r"\bmyth(?:ic|ical|ological)?\b", r"\bholy well\b",
+    r"\bsacred\b", r"\britual\b", r"\btreasure\b", r"\bsmuggl\w*\b",
+    r"\bpirat\w*\b", r"\bprivateer\w*\b", r"\bwrecker\w*\b",
+]
+
 
 def _he_term_relevant(name: str, desc: str = "") -> bool:
-    """Return True if the site name or description suggests folkloric relevance."""
+    """Return True only when a heritage record explicitly signals lore."""
     text = (name + " " + desc).lower()
-    return any(t in text for t in HES_FOLKLORE_TERMS)
+    return any(re.search(pattern, text) for pattern in HERITAGE_LORE_PATTERNS)
 
 def _pirate_term_relevant(name: str, desc: str = "") -> bool:
     """Exclude ordinary wrecks unless the record signals pirate-related lore."""
@@ -3194,8 +3297,7 @@ NHLE_FOLKLORE_TERMS = [
 ]
 
 def _nhle_relevant(name: str) -> bool:
-    n = name.lower()
-    return any(t in n for t in NHLE_FOLKLORE_TERMS)
+    return _he_term_relevant(name)
 
 def fetch_historic_england(verbose: bool = False) -> list:
     """
@@ -3493,6 +3595,8 @@ LIMIT 200
                 if len(summary) > 450:
                     cut = summary[:450].rfind(". ")
                     summary = summary[:cut + 1] if cut > 150 else summary[:447] + "..."
+                if cat == "pirate" and wiki_title not in PIRATE_FOLKLORE_TITLES:
+                    continue
 
                 source = f"https://en.wikipedia.org/wiki/{requests.utils.quote(wiki_title.replace(chr(32), chr(95)))}"
                 region = infer_region(name, summary)
@@ -3687,11 +3791,14 @@ def build(limit: int, seed_only: bool, verbose: bool,
             summary = get_article_summary(title, verbose)
             if not summary:
                 summary = f"{title} — a figure from British folklore."
+            category = all_titles.get(title, "beast")
+            if category == "pirate" and title not in PIRATE_FOLKLORE_TITLES:
+                continue
             entry = {
                 "name":     title,
                 "lat":      round(lat, 4),
                 "lng":      round(lng, 4),
-                "category": all_titles.get(title, "beast"),
+                "category": category,
                 "region":   infer_region(title, summary),
                 "summary":  summary,
                 "source":   f"https://en.wikipedia.org/wiki/{requests.utils.quote(title.replace(chr(32), chr(95)))}",

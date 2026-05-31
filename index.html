@@ -456,6 +456,15 @@ const CATEGORIES = {
 let nightMode = false;
 let markers = [];
 let activeFilter = 'all';
+let sidebarOpen = true;
+
+const EXCLUDED_LEGEND_NAMES = new Set([
+  'Boulogne-sur-Mer',
+  'Byland Abbey',
+  'Cambridge University Press',
+  'England',
+  'English Channel',
+]);
 
 const BOUNDS = L.latLngBounds([46.0, -14.0], [65.0, 6.0]);
 const map = L.map('map', {
@@ -504,15 +513,34 @@ function lightenForNight(hex) {
   return hex;
 }
 
+function escapeHtml(value) {
+  return String(value ?? '').replace(/[&<>"']/g, char => ({
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;',
+  })[char]);
+}
+
+function safeSourceUrl(value) {
+  try {
+    const url = new URL(String(value ?? ''), window.location.href);
+    return ['http:', 'https:'].includes(url.protocol) ? url.href : '#';
+  } catch {
+    return '#';
+  }
+}
+
 function buildPopup(leg) {
   const cat = CATEGORIES[leg.category];
   return `<div class="popup-inner">
     <span class="popup-cat" style="background:${cat.colour}">${cat.label}</span>
-    <div class="popup-title">${leg.name}</div>
-    <div class="popup-region">${leg.region}</div>
+    <div class="popup-title">${escapeHtml(leg.name)}</div>
+    <div class="popup-region">${escapeHtml(leg.region)}</div>
     <hr class="popup-divider"/>
-    <p class="popup-summary">${leg.summary}</p>
-    <a class="popup-source" href="${leg.source}" target="_blank" rel="noopener">Read more on Wikipedia ↗</a>
+    <p class="popup-summary">${escapeHtml(leg.summary)}</p>
+    <a class="popup-source" href="${escapeHtml(safeSourceUrl(leg.source))}" target="_blank" rel="noopener">Read more on Wikipedia ↗</a>
   </div>`;
 }
 
@@ -614,10 +642,17 @@ function handleSearch(query) {
     l.category.toLowerCase().includes(q)
   ).slice(0, 6);
   if (!matches.length) { box.classList.remove('open'); return; }
-  box.innerHTML = matches.map(l => `
-    <div class="search-result-item" onclick="focusLegend('${l.name.replace(/'/g,"\\'")}')">
-      ${l.name}<span>${l.region}</span>
-    </div>`).join('');
+  box.replaceChildren();
+  matches.forEach(leg => {
+    const item = document.createElement('div');
+    const region = document.createElement('span');
+    item.className = 'search-result-item';
+    item.textContent = leg.name;
+    item.onclick = () => focusLegend(leg.name);
+    region.textContent = leg.region;
+    item.appendChild(region);
+    box.appendChild(item);
+  });
   box.classList.add('open');
 }
 
@@ -653,17 +688,28 @@ function buildSidebarList(legends) {
   const sub  = document.getElementById('sidebarSubtitle');
   const sorted = [...legends].sort((a, b) => a.name.localeCompare(b.name));
   sub.textContent = sorted.length + (activeFilter === 'all' ? ' entries' : ' ' + (CATEGORIES[activeFilter]?.label || 'entries'));
-  list.innerHTML = sorted.map(leg => {
+  list.replaceChildren();
+  sorted.forEach(leg => {
     const cat = CATEGORIES[leg.category] || CATEGORIES.beast;
-    const ico = cat.iconPath
-      ? '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="14" height="14"><path d="' + cat.iconPath + '" fill="' + cat.colour + '"/></svg>'
-      : '';
-    return '<div class="sidebar-item" onclick="focusLegend(\'' + leg.name.replace(/'/g, "\\'") + '\')">'
-      + '<span class="sidebar-item-icon">' + ico + '</span>'
-      + '<div><div class="sidebar-item-name">' + leg.name + '</div>'
-      + '<div class="sidebar-item-region">' + leg.region + '</div></div>'
-      + '</div>';
-  }).join('');
+    const item = document.createElement('div');
+    const icon = document.createElement('span');
+    const text = document.createElement('div');
+    const name = document.createElement('div');
+    const region = document.createElement('div');
+    item.className = 'sidebar-item';
+    item.onclick = () => focusLegend(leg.name);
+    icon.className = 'sidebar-item-icon';
+    if (cat.iconPath) {
+      icon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="14" height="14"><path d="' + cat.iconPath + '" fill="' + cat.colour + '"/></svg>';
+    }
+    name.className = 'sidebar-item-name';
+    name.textContent = leg.name;
+    region.className = 'sidebar-item-region';
+    region.textContent = leg.region;
+    text.append(name, region);
+    item.append(icon, text);
+    list.appendChild(item);
+  });
 }
 
 function highlightSidebarItem(name) {
@@ -682,7 +728,7 @@ const SUPABASE_URL      = 'https://canjzkpvjwvkbjcduaaj.supabase.co';
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhbmp6a3B2and2a2JqY2R1YWFqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODAyMDkxODIsImV4cCI6MjA5NTc4NTE4Mn0.7RJu-aV_WYHgbvV732FMoCPNH_sXeLSFg2CQTaYi4kI';
 
 function onDataLoaded(legends) {
-  LEGENDS = legends;
+  LEGENDS = legends.filter(leg => !EXCLUDED_LEGEND_NAMES.has(leg.name));
   loadMarkers(LEGENDS);
   buildFilters();
   buildLegend();

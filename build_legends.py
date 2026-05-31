@@ -101,6 +101,19 @@ CATEGORIES = [
     ("Category:Haunted_locations_in_Ireland",       "location"),
     ("Category:Sacred_sites_in_Ireland",            "location"),
     ("Category:Megalithic_monuments_in_Ireland",    "location"),
+    # Pirate & maritime lore
+    ("Category:English_pirates",                   "pirate"),
+    ("Category:Scottish_pirates",                  "pirate"),
+    ("Category:Irish_pirates",                     "pirate"),
+    ("Category:Welsh_pirates",                     "pirate"),
+    ("Category:Privateers",                        "pirate"),
+    ("Category:Pirates_in_the_Caribbean",          "pirate"),
+    ("Category:Piracy_in_the_British_Isles",       "pirate"),
+    ("Category:Smuggling_in_the_United_Kingdom",   "pirate"),
+    ("Category:Smuggling_in_England",              "pirate"),
+    ("Category:Wrecking_(shipwrecks)",             "pirate"),
+    ("Category:Pirate_captains",                   "pirate"),
+    ("Category:British_pirates",                   "pirate"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -113,19 +126,24 @@ LISTS = [
     ("List of giants in mythology and folklore",   "giant"),
     ("List of Arthurian characters",               "deity"),
     ("List of Irish mythological figures",         "deity"),
+    ("List of pirates",                           "pirate"),
+    ("List of English pirates",                   "pirate"),
 ]
 
 CATEGORY_LABELS = {
-    "beast":    "Beast",
-    "ghost":    "Ghost",
-    "fairy":    "Fae & Spirits",
-    "water":    "Water Creatures",
-    "dragon":   "Dragon",
-    "witch":    "Witch",
-    "deity":    "Deities",
-    "giant":    "Giant",
-    "location": "Sacred Sites",
-    "hero":     "Heroic Figures",
+    "beast": "Beast",
+    "ghost": "Ghost",
+    "fairy": "Fae & Spirits",
+    "water": "Water Creatures",
+    "dragon": "Dragon",
+    "witch": "Witch",
+    "deity": "Deities",
+    "giant": "Giant",
+    "location": "Legendary Sites",
+    "ancient_site": "Ancient & Sacred Sites",
+    "hero": "Heroes & Legendary Figures",
+    "ritual": "Rituals & Folk Customs",
+    "norse": "Norse & Northern Lore",
 }
 
 
@@ -173,7 +191,7 @@ SEED_LEGENDS = [
         "name": "Avebury",
         "lat": 51.428,
         "lng": -1.854,
-        "category": "location",
+        "category": "ancient_site",
         "region": "Wiltshire",
         "summary": "The largest stone circle in the world — so vast a village was built inside it. The Devil is said to have danced here. At night the stones are said to move, drink from the stream, and return before dawn. No one has ever counted them twice and got the same number.",
         "source": "https://en.wikipedia.org/wiki/Avebury"
@@ -227,7 +245,7 @@ SEED_LEGENDS = [
         "name": "Beltane Fire Festival",
         "lat": 55.955,
         "lng": -3.182,
-        "category": "location",
+        "category": "ritual",
         "region": "Edinburgh, Scotland",
         "summary": "A modern fire festival on Calton Hill inspired by ancient Beltane seasonal rites. It turns the coming of summer into theatre, flame, drums, and red-painted myth.",
         "source": "https://en.wikipedia.org/wiki/Beltane_Fire_Festival"
@@ -362,7 +380,7 @@ SEED_LEGENDS = [
         "name": "Bryn Cader Faner",
         "lat": 52.8982,
         "lng": -4.0114,
-        "category": "location",
+        "category": "ancient_site",
         "region": "Wales",
         "summary": "The Bryn Cader Faner is a Bronze Age round cairn which lies to the east of the small hamlet of Talsarnau in the Ardudwy area of Gwynedd in Wales. The diameter is 8.7 metres (29 ft) and there are 18 thin jagged pillars which jut upwards from the low cairn. It is thought to date back to the late third millennium BC.\nThe site was disturbed by 19th-century treasure hunters, who left a hole in the centre, indicating the position of a cist or a grave.",
         "source": "https://en.wikipedia.org/wiki/Bryn_Cader_Faner"
@@ -371,7 +389,7 @@ SEED_LEGENDS = [
         "name": "Bryn Gwyn stones",
         "lat": 53.1772,
         "lng": -4.3021,
-        "category": "location",
+        "category": "ancient_site",
         "region": "Wales",
         "summary": "The Bryn Gwyn Stones or Bryn Gwyn Standing Stones are neolithic stones in Brynsiencyn on Anglesey.",
         "source": "https://en.wikipedia.org/wiki/Bryn_Gwyn_stones"
@@ -515,7 +533,7 @@ SEED_LEGENDS = [
         "name": "Cheetham Close",
         "lat": 53.6388,
         "lng": -2.431,
-        "category": "location",
+        "category": "ancient_site",
         "region": "Lancashire",
         "summary": "Cheetham Close is a megalithic site and scheduled ancient monument located in Lancashire, very close to the boundary with Greater Manchester, England. The megalith was in good condition until a farmer from Turton sledgehammered the circle in the 1870s. According to an article published in 1829, Cheetham Close was once a druidical ritual place and a Roman road passed 'within two hundred yards' of the megalith.",
         "source": "https://en.wikipedia.org/wiki/Cheetham_Close"
@@ -533,7 +551,7 @@ SEED_LEGENDS = [
         "name": "Chûn Quoit",
         "lat": 50.1486,
         "lng": -5.6377,
-        "category": "location",
+        "category": "ancient_site",
         "region": "Cornwall",
         "summary": "Chûn Quoit is one of the best preserved of all Neolithic quoits in western Cornwall, England, United Kingdom.",
         "source": "https://en.wikipedia.org/wiki/Ch%C3%BBn_Quoit"
@@ -560,7 +578,7 @@ SEED_LEGENDS = [
         "name": "Craddock Moor stone circle",
         "lat": 50.5199,
         "lng": -4.4717,
-        "category": "location",
+        "category": "ancient_site",
         "region": "Cornwall",
         "summary": "Craddock Moor Stone Circle or Craddock Moor Circle is a stone circle located near Minions on Bodmin Moor in Cornwall, UK. It is situated around half a mile Northwest of The Hurlers.",
         "source": "https://en.wikipedia.org/wiki/Craddock_Moor_stone_circle"
@@ -587,7 +605,7 @@ SEED_LEGENDS = [
         "name": "Devil's Arrows",
         "lat": 54.095,
         "lng": -1.392,
-        "category": "location",
+        "category": "ancient_site",
         "region": "North Yorkshire",
         "summary": "Three great standing stones near Boroughbridge, said to have been hurled by the Devil at the town of Aldborough. He missed, which is exactly the kind of thing folklore remembers forever.",
         "source": "https://en.wikipedia.org/wiki/Devil%27s_Arrows"
@@ -740,7 +758,7 @@ SEED_LEGENDS = [
         "name": "Folkestone White Horse",
         "lat": 51.1012,
         "lng": 1.1397,
-        "category": "location",
+        "category": "ancient_site",
         "region": "Kent",
         "summary": "The Folkestone White Horse is a white horse hill figure, carved into Cheriton Hill, Folkestone, Kent, South East England. It overlooks the English terminal of the Channel Tunnel and was completed in June 2003.",
         "source": "https://en.wikipedia.org/wiki/Folkestone_White_Horse"
@@ -821,7 +839,7 @@ SEED_LEGENDS = [
         "name": "Grubstones",
         "lat": 53.8984,
         "lng": -1.794,
-        "category": "location",
+        "category": "ancient_site",
         "region": "Yorkshire",
         "summary": "The Grubstones is a stone circle on Burley Moor in West Yorkshire, England. It is believed to be either an embanked stone circle or a ring cairn.",
         "source": "https://en.wikipedia.org/wiki/Grubstones"
@@ -866,7 +884,7 @@ SEED_LEGENDS = [
         "name": "Hobby Horse of Padstow",
         "lat": 50.542,
         "lng": -4.937,
-        "category": "location",
+        "category": "ritual",
         "region": "Cornwall",
         "summary": "A May Day custom in which the 'Obby 'Oss dances through Padstow with music, pursuit, and ritual energy. It is one of Britain's most famous surviving folk ceremonies.",
         "source": "https://en.wikipedia.org/wiki/%27Obby_%27Oss_festival"
@@ -893,7 +911,7 @@ SEED_LEGENDS = [
         "name": "Julian's Bower",
         "lat": 53.6849,
         "lng": -0.6694,
-        "category": "location",
+        "category": "ancient_site",
         "region": "Lincolnshire",
         "summary": "Julian's Bower or Julian Bower is a name given to turf mazes in several different parts of England. Only one of this name still exists, at Alkborough in North Lincolnshire. It has also been known by corrupted forms of the name, such as \"Gillian's Bore\" and \"Gilling Bore\".",
         "source": "https://en.wikipedia.org/wiki/Julian%27s_Bower"
@@ -992,7 +1010,7 @@ SEED_LEGENDS = [
         "name": "Lia Fáil",
         "lat": 53.5786,
         "lng": -6.6121,
-        "category": "location",
+        "category": "ancient_site",
         "region": "Ireland",
         "summary": "The Fál or Lia Fáil is a stone at the Inauguration Mound on the Hill of Tara in County Meath, Ireland, which served as the coronation stone for the King of Tara and hence High King of Ireland. It is also known as the Stone of Destiny or Speaking Stone. According to legend, all of the kings of Ireland were crowned on the stone up to Muirchertach mac Ercae, c. 500 AD.",
         "source": "https://en.wikipedia.org/wiki/Lia_F%C3%A1il"
@@ -1064,7 +1082,7 @@ SEED_LEGENDS = [
         "name": "Long Meg and Her Daughters",
         "lat": 54.7279,
         "lng": -2.6677,
-        "category": "location",
+        "category": "ancient_site",
         "region": "Cumbria",
         "summary": "A stone circle said to be a coven of witches turned to stone for dancing on the Sabbath. Long Meg herself stands apart, taller and marked with strange carvings.",
         "source": "https://en.wikipedia.org/wiki/Long_Meg_and_Her_Daughters"
@@ -1118,7 +1136,7 @@ SEED_LEGENDS = [
         "name": "Maeshowe Runes",
         "lat": 58.996,
         "lng": -3.189,
-        "category": "location",
+        "category": "norse",
         "region": "Orkney",
         "summary": "A Neolithic chambered cairn broken into by Norse visitors who carved runes into the stone. Ancient tomb became Viking noticeboard, proving folklore sometimes arrives with a knife and poor manners.",
         "source": "https://en.wikipedia.org/wiki/Maeshowe"
@@ -1145,7 +1163,7 @@ SEED_LEGENDS = [
         "name": "Mari Lwyd",
         "lat": 51.48,
         "lng": -3.18,
-        "category": "location",
+        "category": "ritual",
         "region": "Wales",
         "summary": "A winter wassailing custom in which a decorated horse skull is carried from door to door. The party trades verses with householders before being admitted for food, drink, and seasonal chaos.",
         "source": "https://en.wikipedia.org/wiki/Mari_Lwyd"
@@ -1172,7 +1190,7 @@ SEED_LEGENDS = [
         "name": "The Merry Maidens",
         "lat": 50.065,
         "lng": -5.5897,
-        "category": "location",
+        "category": "ancient_site",
         "region": "Cornwall",
         "summary": "The Merry Maidens, also known as Dawn's Men is a Late Neolithic stone circle located 2 miles (3 km) to the south of the village of St Buryan, in Cornwall. A pair of standing stones, The Pipers is associated both geographically and in legend.",
         "source": "https://en.wikipedia.org/wiki/The_Merry_Maidens"
@@ -1190,7 +1208,7 @@ SEED_LEGENDS = [
         "name": "Moel Tŷ Uchaf",
         "lat": 52.9233,
         "lng": -3.4055,
-        "category": "location",
+        "category": "ancient_site",
         "region": "Wales",
         "summary": "Moel Tŷ Uchaf is a stone circle near the village of Llandrillo, Denbighshire, north Wales.",
         "source": "https://en.wikipedia.org/wiki/Moel_T%C5%B7_Uchaf"
@@ -1235,7 +1253,7 @@ SEED_LEGENDS = [
         "name": "Mên Scryfa",
         "lat": 50.1622,
         "lng": -5.6033,
-        "category": "location",
+        "category": "ancient_site",
         "region": "Cornwall",
         "summary": "Mên Scryfa is an inscribed standing stone in Cornwall, England, United Kingdom. The inscription, dating to the early medieval period, commemorates \"Rialobranus son of Cunovalus.\"",
         "source": "https://en.wikipedia.org/wiki/M%C3%AAn_Scryfa"
@@ -1244,7 +1262,7 @@ SEED_LEGENDS = [
         "name": "Mên-an-Tol",
         "lat": 50.1586,
         "lng": -5.6045,
-        "category": "location",
+        "category": "ancient_site",
         "region": "Cornwall",
         "summary": "The Mên-an-Tol is a small formation of standing stones in Cornwall, United Kingdom. It is about three miles northwest of Madron. It is also known locally as the \"Crick Stone\".",
         "source": "https://en.wikipedia.org/wiki/M%C3%AAn-an-Tol"
@@ -1262,7 +1280,7 @@ SEED_LEGENDS = [
         "name": "Nine Maidens Stone Row",
         "lat": 50.4716,
         "lng": -4.9093,
-        "category": "location",
+        "category": "ancient_site",
         "region": "Cornwall",
         "summary": "Nine Maidens stone row is an ancient monument in the parish of St Columb Major, Cornwall, England. The Nine Maidens are also known in Cornish as Naw-voz, or Naw-whoors meaning \"the nine sisters\". This late neolithic stone row is 2 miles (3.2 km) north of St Columb Major.",
         "source": "https://en.wikipedia.org/wiki/Nine_Maidens_stone_row"
@@ -1289,7 +1307,7 @@ SEED_LEGENDS = [
         "name": "Orkneyinga Saga",
         "lat": 58.984,
         "lng": -2.959,
-        "category": "location",
+        "category": "norse",
         "region": "Orkney & Shetland",
         "summary": "The Old Norse saga of the earls of Orkney, binding the Northern Isles to Norway, Scotland, feud, conversion, sea-kings, and bloodline memory.",
         "source": "https://en.wikipedia.org/wiki/Orkneyinga_saga"
@@ -1298,7 +1316,7 @@ SEED_LEGENDS = [
         "name": "Osmington White Horse",
         "lat": 50.6574,
         "lng": -2.4044,
-        "category": "location",
+        "category": "ancient_site",
         "region": "Dorset",
         "summary": "The Osmington White Horse is a hill figure cut into the limestone of Osmington Hill just north of Weymouth in Dorset in 1808. It is in the South Dorset Downs in the parish of Osmington.",
         "source": "https://en.wikipedia.org/wiki/Osmington_White_Horse"
@@ -1352,7 +1370,7 @@ SEED_LEGENDS = [
         "name": "The Pipers",
         "lat": 50.5155,
         "lng": -4.4599,
-        "category": "location",
+        "category": "ancient_site",
         "region": "Cornwall",
         "summary": "The Pipers are a pair of standing stones near The Hurlers stone circles, located on Bodmin Moor near the village of Minions, Cornwall, UK. They share the name with another pair of standing stones near the Merry Maidens to the south of the village of St Buryan, also in Cornwall.",
         "source": "https://en.wikipedia.org/wiki/The_Pipers"
@@ -1370,7 +1388,7 @@ SEED_LEGENDS = [
         "name": "Porlock Stone Circle",
         "lat": 51.1895,
         "lng": -3.654,
-        "category": "location",
+        "category": "ancient_site",
         "region": "Somerset",
         "summary": "A small Exmoor stone circle whose weathered stones sit in a landscape of moorland lore. Its current 'Ireland' label was a scrape error; this belongs firmly to Somerset.",
         "source": "https://en.wikipedia.org/wiki/Porlock_Stone_Circle"
@@ -1397,7 +1415,7 @@ SEED_LEGENDS = [
         "name": "Red Horse of Tysoe",
         "lat": 52.1012,
         "lng": -1.4839,
-        "category": "location",
+        "category": "ancient_site",
         "region": "South Warwickshire",
         "summary": "\nThe Red Horse of Tysoe was a hill figure in the parish of Tysoe, South Warwickshire, England, cut into the red clay below the escarpment of Edgehill. It gave its name to the surrounding area, which is still known as the Vale of Red Horse or Red Horse Vale. The figure was first recorded in 1607, and in its earliest form was nearly 100 yards long.",
         "source": "https://en.wikipedia.org/wiki/Red_Horse_of_Tysoe"
@@ -1442,7 +1460,7 @@ SEED_LEGENDS = [
         "name": "Rollright Stones curse",
         "lat": 51.975,
         "lng": -1.571,
-        "category": "location",
+        "category": "ancient_site",
         "region": "Oxfordshire",
         "summary": "A Bronze Age stone circle said to be a king and his knights turned to stone by a witch. The stones are impossible to count twice and reach the same number. The King Stone bleeds if cut.",
         "source": "https://en.wikipedia.org/wiki/Rollright_Stones"
@@ -1451,7 +1469,7 @@ SEED_LEGENDS = [
         "name": "Rudston Monolith",
         "lat": 54.094,
         "lng": -0.323,
-        "category": "location",
+        "category": "ancient_site",
         "region": "East Yorkshire",
         "summary": "The tallest standing stone in Britain, rising from a churchyard like a leftover sentence from an older religion. Its original purpose is unknown, which leaves folklore plenty of room to breathe.",
         "source": "https://en.wikipedia.org/wiki/Rudston_Monolith"
@@ -1586,7 +1604,7 @@ SEED_LEGENDS = [
         "name": "Stanton Drew Stone Circles",
         "lat": 51.3671,
         "lng": -2.576,
-        "category": "location",
+        "category": "ancient_site",
         "region": "Somerset",
         "summary": "The Stanton Drew stone circles are just outside the village of Stanton Drew in the English county of Somerset. The largest stone circle is the Great Circle, 113 metres (371 ft) in diameter and the second largest stone circle in Britain ; it is considered to be one of the largest Neolithic monuments to have been built.",
         "source": "https://en.wikipedia.org/wiki/Stanton_Drew_stone_circles"
@@ -1595,7 +1613,7 @@ SEED_LEGENDS = [
         "name": "Stonehenge",
         "lat": 51.179,
         "lng": -1.826,
-        "category": "location",
+        "category": "ancient_site",
         "region": "Wiltshire",
         "summary": "Raised by giants according to Geoffrey of Monmouth, or conjured by Merlin from Ireland — Stonehenge defies rational explanation. For five thousand years it has aligned with the solstice sun. Druids still gather here at midsummer.",
         "source": "https://en.wikipedia.org/wiki/Stonehenge"
@@ -1622,7 +1640,7 @@ SEED_LEGENDS = [
         "name": "Sutton Hoo",
         "lat": 52.0897,
         "lng": 1.3389,
-        "category": "location",
+        "category": "ancient_site",
         "region": "Suffolk",
         "summary": "Sutton Hoo is the site of two Anglo-Saxon cemeteries dating from the 6th to 7th centuries near Woodbridge, Suffolk, England. Archaeologists have been excavating the area since 1938, when an undisturbed ship burial containing a wealth of Anglo-Saxon artifacts was discovered.",
         "source": "https://en.wikipedia.org/wiki/Sutton_Hoo"
@@ -1712,7 +1730,7 @@ SEED_LEGENDS = [
         "name": "Trow",
         "lat": 60.155,
         "lng": -1.145,
-        "category": "fairy",
+        "category": "norse",
         "region": "Shetland & Orkney",
         "summary": "A small, troll-like being from Shetland and Orkney folklore, rooted in Norse tradition. Trows live in mounds, dislike sunlight, love music, and are always one bad bargain away.",
         "source": "https://en.wikipedia.org/wiki/Trow_(folklore)"
@@ -1721,7 +1739,7 @@ SEED_LEGENDS = [
         "name": "Twelve Apostles, West Yorkshire",
         "lat": 53.9016,
         "lng": -1.8095,
-        "category": "location",
+        "category": "ancient_site",
         "region": "Yorkshire",
         "summary": "The Twelve Apostles is a stone circle near Ilkley and Burley in Wharfedale in West Yorkshire, England.",
         "source": "https://en.wikipedia.org/wiki/Twelve_Apostles%2C_West_Yorkshire"
@@ -1730,7 +1748,7 @@ SEED_LEGENDS = [
         "name": "Uffington White Horse",
         "lat": 51.577,
         "lng": -1.566,
-        "category": "location",
+        "category": "ancient_site",
         "region": "Oxfordshire",
         "summary": "A huge prehistoric chalk horse cut into the Berkshire Downs. It watches over Dragon Hill, Wayland's Smithy, and a landscape where pagan monument, saint legend, and heroic folklore overlap.",
         "source": "https://en.wikipedia.org/wiki/Uffington_White_Horse"
@@ -1739,7 +1757,7 @@ SEED_LEGENDS = [
         "name": "Up Helly Aa",
         "lat": 60.155,
         "lng": -1.145,
-        "category": "location",
+        "category": "ritual",
         "region": "Shetland",
         "summary": "A modern Shetland fire festival rooted in local identity and Norse revival imagery. Torch-bearing squads process through winter darkness before burning a Viking-style galley.",
         "source": "https://en.wikipedia.org/wiki/Up_Helly_Aa"
@@ -1748,7 +1766,7 @@ SEED_LEGENDS = [
         "name": "Watlington White Mark",
         "lat": 51.639,
         "lng": -0.9897,
-        "category": "location",
+        "category": "ancient_site",
         "region": "Oxfordshire",
         "summary": "Watlington White Mark is a chalk hill figure located on Watlington Hill, a mile from the village of Watlington, Oxfordshire. It is 270 feet tall and 36 feet wide, and is one of several hill figures cut into the Chilterns, alongside the Whiteleaf Cross, Bledlow Cross and Whipsnade White Lion. The site is owned by the National Trust.",
         "source": "https://en.wikipedia.org/wiki/Watlington_White_Mark"
@@ -1757,7 +1775,7 @@ SEED_LEGENDS = [
         "name": "Waun Mawn",
         "lat": 51.9716,
         "lng": -4.7912,
-        "category": "location",
+        "category": "ancient_site",
         "region": "Wales",
         "summary": "Waun Mawn is a megalithic site in the Preseli Mountains of Pembrokeshire, Wales. Following excavations in 2018, it became the site of a supposed dismantled Neolithic stone circle. The diameter of the postulated circle was estimated to be 110 m (360 ft), making it the fifth largest diameter for a British stone circle, after Avebury, Stanton Drew, Karl Lofts, Long Meg, and slightly larger than the Ring of Brodgar.",
         "source": "https://en.wikipedia.org/wiki/Waun_Mawn"
@@ -1775,7 +1793,7 @@ SEED_LEGENDS = [
         "name": "Wayland's Smithy",
         "lat": 51.567,
         "lng": -1.596,
-        "category": "location",
+        "category": "ancient_site",
         "region": "Oxfordshire",
         "summary": "A Neolithic chambered tomb later claimed by folklore as the forge of Wayland the Smith. It is a perfect example of old stone becoming older story.",
         "source": "https://en.wikipedia.org/wiki/Wayland%27s_Smithy"
@@ -1784,7 +1802,7 @@ SEED_LEGENDS = [
         "name": "Whetstones",
         "lat": 52.5711,
         "lng": -3.028,
-        "category": "location",
+        "category": "ancient_site",
         "region": "Wales",
         "summary": "The Whetstones are, or were, a stone circle beneath Corndon Hill in the parish of Church Stoke, Montgomeryshire, Wales, near the border with Shropshire, England. They lie immediately to the west of the village of White Grit and close to Priestweston. The site is also a short distance from the better-known Hoarstones and Mitchell's Fold circles.",
         "source": "https://en.wikipedia.org/wiki/Whetstones_%28stone_circle%29"
@@ -1793,7 +1811,7 @@ SEED_LEGENDS = [
         "name": "Whiteleaf Cross",
         "lat": 51.7287,
         "lng": -0.8115,
-        "category": "location",
+        "category": "ancient_site",
         "region": "Buckinghamshire",
         "summary": "Whiteleaf Cross is a cross-shaped chalk hill carving, with a triangular base, on Whiteleaf Hill in Whiteleaf near Princes Risborough in Buckinghamshire.",
         "source": "https://en.wikipedia.org/wiki/Whiteleaf_Cross"
@@ -1838,7 +1856,7 @@ SEED_LEGENDS = [
         "name": "Withypool Stone Circle",
         "lat": 51.0963,
         "lng": -3.6604,
-        "category": "location",
+        "category": "ancient_site",
         "region": "Somerset",
         "summary": "Withypool Stone Circle, also known as Withypool Hill Stone Circle, is a stone circle located on the Exmoor moorland, near the village of Withypool in the southwestern English county of Somerset. The ring is part of a tradition of stone circle construction that spread throughout much of Britain, Ireland, and Brittany during the Late Neolithic and Early Bronze Age, over a period between 3300 and 900 BCE.",
         "source": "https://en.wikipedia.org/wiki/Withypool_Stone_Circle"
@@ -2632,121 +2650,658 @@ def infer_region(title: str, summary: str) -> str:
 # Main pipeline
 # ---------------------------------------------------------------------------
 
-def build(limit: int, seed_only: bool, verbose: bool) -> None:
+
+# ---------------------------------------------------------------------------
+# Cleanup — REMOVE_ENTRIES, FORCE_CATEGORY, apply_cleanup
+# ---------------------------------------------------------------------------
+
+CATEGORY_REMAP = {
+    "ancient_site": "location",
+    "ritual":       "location",
+    "norse":        "fairy",
+    # hero is now valid — no remap
+}
+
+VALID_CATEGORIES = {
+    "beast", "ghost", "fairy", "water", "dragon", "witch",
+    "deity", "giant", "location", "hero", "pirate"
+}
+
+REMOVE_ENTRIES = {
+    # Not folklore — organisations
+    "Cardiff University", "English Folk Dance and Song Society",
+    "School of Scottish Studies",
+    # Military/modern
+    "SM UB-85", "Battle of Britain Memorial, Capel-le-Ferne",
+    "Bulford Kiwi", "Barns of Ayr", "Lancashire Witches Walk",
+    # Purely geographic
+    "River Tamar", "Loch Linnhe", "Black Rock Gorge",
+    "Beinn a\' Bheithir", "Kitterland",
+    # Towns/villages with no folklore content
+    "Kirriemuir", "Whitehawk", "Witchknowe Park",
+    "Morrison\'s Haven", "Smeaton House", "Gatton Park",
+    # Hill figures with no legend
+    "Osmington White Horse", "Folkestone White Horse",
+    "Watlington White Mark", "Whiteleaf Cross", "Lenham Cross",
+    # General archaeology, no legend
+    "Spong Hill",
+    # Outside British Isles
+    "Fintan\'s Grave", "Lia Fáil", "Mag Lena",
+    "Latoon Fairy Bush", "Latoon fairy bush",
+    # Previously identified
+    "Four Ashes, Buckinghamshire", "Harrow on the Hill", "Kirkharle",
+    "Thundersley", "Thursley", "Wednesbury", "Weedon Lois", "Weeley",
+    "Wing, Buckinghamshire", "Woodnesborough", "Wye, Kent", "Lenham",
+    "Fovant Badges", "Shoreham Memorial Cross", "Porthchapel Beach",
+    "St Anthony-in-Meneage", "White Lion Inn, Stratford-upon-Avon",
+    "Kirkcudbright Tolbooth", "Keith Marischal", "Innerwick Castle",
+    "Canewdon", "Crook of Devon", "Museum of Witchcraft and Magic",
+    "Overtoun Bridge",
+    # Duplicates
+    "Enfield poltergeist", "The Giant of Cerne Abbas",
+    "The Long Man of Wilmington", "Witches\' Well, Edinburgh",
+    "Fairy Bridge (Isle of Man)", "Nine Maidens stone row",
+    "Stanton Drew stone circles", "Whetstones",
+    "The Giant\'s Causeway",
+}
+
+FORCE_CATEGORY = {
+    "Gogmagog": "giant", "Fingal": "giant", "Rhitta Gawr": "giant",
+    "Bran the Blessed": "giant", "Cerne Abbas Giant": "giant",
+    "Giant\'s Causeway": "giant",
+    "Beowulf": "hero", "The Green Knight": "hero", "Mabon ap Modron": "deity",
+    "Wayland the Smith": "hero", "Lancelot": "hero", "Gawain": "hero",
+    "Corineus": "hero", "Cú Chulainn": "hero", "Fionn mac Cumhaill": "hero",
+    "Boudicca": "hero", "Fingal": "hero", "Dick Turpin": "hero",
+    "Helen Duncan": "witch", "Mother Ludlam": "witch",
+    "Dunstan and the Devil": "ghost", "Redcap": "ghost",
+    "The Black Dog of Newgate": "ghost", "Cock Lane ghost": "ghost",
+    "Bean Nighe": "ghost", "Lantern Man": "ghost",
+    "Nanny Rutt": "water", "Glaistig": "water",
+    "Blue Men of the Minch": "water", "Salmon of Knowledge": "water",
+    "Maeshowe Runes": "location", "Orkneyinga Saga": "location",
+    "Beltane Fire Festival": "location", "Hobby Horse of Padstow": "location",
+    "Mari Lwyd": "location", "Up Helly Aa": "location",
+    "Cheetham Close": "location", "Craddock Moor stone circle": "location",
+    "Bryn Cader Faner": "location", "Bryn Gwyn stones": "location",
+    "Nine Maidens Stone Row": "location", "Stanton Drew Stone Circles": "location",
+    "Whetstones (stone circle)": "location", "St Trinian\'s Church": "location",
+    "Cantre\'r Gwaelod": "location", "Battle of Barry": "location",
+    "Lochmaben Stone": "location", "Towednack": "location",
+    "Caer Bran": "location", "Zennor": "location",
+    "Trow": "fairy", "Blodeuwedd": "deity", "Gwyn ap Nudd": "deity",
+    "Merlin": "deity", "Hafren": "deity", "Gwy": "deity", "Rheidol": "deity",
+    "Elder Mother": "deity", "The Dagda": "deity", "Queen Medb": "deity",
+    "Cailleach Bhéara": "deity", "Tuatha Dé Danann": "deity",
+    "Newgrange": "location", "Hill of Tara": "location",
+    "Croagh Patrick": "location", "Knocknarea": "location",
+    "Camelot": "location", "Avalon": "location",
+    "Banshee": "ghost", "Wights": "ghost",
+    "Pooka": "fairy", "Aos Sí": "fairy", "Tylwyth Teg": "fairy",
+    "Seelie Court": "fairy", "Unseelie Court": "fairy",
+    "Boggarts": "fairy", "Pixie": "fairy", "Yallery Brown": "fairy",
+    "Brown Man of the Muirs": "fairy", "Gooseberry Wife": "fairy",
+    "Hyter Sprite": "fairy",
+    "Plynlimon": "giant", "Gog and Magog": "giant", "Penhill Giant": "giant",
+    "Balor of the Evil Eye": "giant",
+    "Filey Dragon": "dragon", "Gurt Worm": "dragon", "Mordiford Dragon": "dragon",
+    "Black Annis": "beast", "Wisht Hounds": "beast",
+    "Renwick Cockatrice": "beast", "Fad Felen": "beast",
+    # Pirates
+    "Grace O\'Malley": "pirate", "Blackbeard": "pirate",
+    "Anne Bonny": "pirate", "Mary Read": "pirate",
+    "Black Bart Roberts": "pirate", "Calico Jack": "pirate",
+    "Henry Every": "pirate", "William Kidd": "pirate",
+    "Davy Jones": "pirate",
+}
+
+
+def _normalise_name(name: str) -> str:
+    """Normalise a name for fuzzy duplicate detection."""
+    import unicodedata
+    name = unicodedata.normalize("NFKD", name.lower())
+    name = re.sub(r"[^a-z0-9 ]", "", name)
+    # Strip common prefix words that differ between sources
+    for prefix in ("the ", "a ", "an "):
+        if name.startswith(prefix):
+            name = name[len(prefix):]
+    return name.strip()
+
+
+def is_duplicate(name: str, existing_names: set) -> bool:
+    """
+    Check if a name is a duplicate of something already in the dataset.
+    Handles exact matches and common near-duplicates:
+      "Avebury Stone Circle" vs "Avebury"
+      "The Loch Ness Monster" vs "Loch Ness Monster"
+    """
+    norm = _normalise_name(name)
+    for existing in existing_names:
+        e = _normalise_name(existing)
+        # Exact normalised match
+        if norm == e:
+            return True
+        # One is a prefix of the other (e.g. "Avebury" in "Avebury Stone Circle")
+        if len(norm) >= 5 and len(e) >= 5:
+            if norm in e or e in norm:
+                return True
+    return False
+
+
+def apply_cleanup(legends: dict) -> dict:
+    """
+    Apply all cleanup rules in one pass:
+      1. Remove non-folklore entries
+      2. Force category corrections
+      3. Remap legacy categories
+      4. Fall back unknown categories to beast
+    """
+    removed = 0
+    fixed   = 0
+
+    for name in list(legends.keys()):
+        if name in REMOVE_ENTRIES:
+            del legends[name]
+            removed += 1
+
+    for leg in legends.values():
+        original = leg["category"]
+        if leg["name"] in FORCE_CATEGORY:
+            leg["category"] = FORCE_CATEGORY[leg["name"]]
+        if leg["category"] in CATEGORY_REMAP:
+            leg["category"] = CATEGORY_REMAP[leg["category"]]
+        if leg["category"] not in VALID_CATEGORIES:
+            leg["category"] = "beast"
+        if leg["category"] != original:
+            fixed += 1
+
+    print(f"      Cleanup: removed {removed}, fixed {fixed} categories")
+    return legends
+
+
+# ---------------------------------------------------------------------------
+# Canmore API (Historic Environment Scotland)
+# API key: free at https://canmore.org.uk/api
+# ---------------------------------------------------------------------------
+
+CANMORE_API      = "https://canmore.org.uk/api/site/search"
+CANMORE_DETAIL   = "https://canmore.org.uk/api/site"
+CANMORE_API_KEY  = ""   # set via environment: CANMORE_API_KEY=your_key
+
+# Map Canmore site types to our categories
+CANMORE_TYPE_MAP = {
+    "standing stone":     "location",
+    "stone circle":       "location",
+    "cairn":              "location",
+    "hillfort":           "location",
+    "broch":              "location",
+    "crannog":            "location",
+    "cup marked rock":    "location",
+    "well":               "location",
+    "souterrain":         "location",
+    "burial ground":      "location",
+    "castle":             "ghost",
+    "tower house":        "ghost",
+    "chapel":             "location",
+    "loch":               "beast",
+    "cave":               "location",
+    "natural feature":    "location",
+}
+
+# Folklore-relevant keywords to filter Canmore results
+CANMORE_KEYWORDS = [
+    "legend", "folklore", "tradition", "mythol", "fairy", "ghost",
+    "haunted", "supernatural", "apparition", "spirit", "witch",
+    "cursing", "sacred", "holy well", "monster", "beast", "dragon",
+    "giant", "smuggl", "pirat", "wreck", "hidden treasure",
+    "kelpie", "selkie", "brownie", "second sight", "banshee",
+]
+
+
+def fetch_canmore(verbose: bool = False) -> list[dict]:
+    """
+    Query Canmore for Scottish sites with folklore relevance.
+    Returns list of legend dicts ready to merge.
+    """
+    key = CANMORE_API_KEY or __import__("os").getenv("CANMORE_API_KEY", "")
+    if not key:
+        print("      [Canmore] No API key set — skipping")
+        print("      [Canmore] Get a free key at canmore.org.uk/api")
+        print("      [Canmore] Set via: set CANMORE_API_KEY=your_key")
+        return []
+
+    results = []
+    # Search by each folklore keyword across Scotland bounding box
+    # Scotland: lat 54.5-61.0, lng -7.5 to -1.0
+    params_base = {
+        "key":     key,
+        "format":  "json",
+        "bbox":    "-7.5,54.5,-1.0,61.0",
+        "limit":   100,
+    }
+
+    seen_ids = set()
+
+    for keyword in CANMORE_KEYWORDS:
+        params = {**params_base, "q": keyword}
+        try:
+            r = requests.get(CANMORE_API, params=params,
+                             headers={"User-Agent": USER_AGENT}, timeout=TIMEOUT)
+            r.raise_for_status()
+            sites = r.json().get("results", [])
+            if verbose:
+                print(f"    [Canmore] '{keyword}': {len(sites)} sites")
+
+            for site in sites:
+                site_id = site.get("id")
+                if site_id in seen_ids:
+                    continue
+                seen_ids.add(site_id)
+
+                lat  = site.get("lat")
+                lng  = site.get("lng")
+                name = site.get("name", "").strip()
+
+                if not name or not lat or not lng:
+                    continue
+                if not is_in_uk(float(lat), float(lng)):
+                    continue
+
+                # Determine category from site type
+                site_type = site.get("type", "").lower()
+                category  = "location"
+                for type_key, cat in CANMORE_TYPE_MAP.items():
+                    if type_key in site_type:
+                        category = cat
+                        break
+
+                summary = site.get("description", "").strip()
+                if not summary:
+                    summary = f"{name} — a site of historical and folkloric significance in Scotland."
+
+                # Trim to popup-friendly length
+                if len(summary) > 450:
+                    cutoff = summary[:450].rfind(". ")
+                    summary = summary[:cutoff + 1] if cutoff > 150 else summary[:447] + "..."
+
+                region   = infer_region(name, summary)
+                canmore_url = f"https://canmore.org.uk/site/{site_id}"
+
+                results.append({
+                    "name":     name,
+                    "lat":      round(float(lat), 4),
+                    "lng":      round(float(lng), 4),
+                    "category": category,
+                    "region":   region,
+                    "summary":  summary,
+                    "source":   canmore_url,
+                })
+            time.sleep(RATE_LIMIT)
+
+        except requests.exceptions.RequestException as e:
+            print(f"    [Canmore] Error on keyword '{keyword}': {e}")
+
+    print(f"    [Canmore] {len(results)} unique sites fetched")
+    return results
+
+
+# ---------------------------------------------------------------------------
+# Historic England API
+# No key required — fully open data
+# Covers England and Wales
+# ---------------------------------------------------------------------------
+
+HISTORIC_ENGLAND_API = "https://services.historicengland.org.uk/NMRDataDownload/GeoSearch.aspx"
+HISTORIC_ENGLAND_REST = "https://services.historicengland.org.uk/LISTBuildingsAPI/buildingDetails"
+
+# Map Historic England designations to our categories
+HE_TYPE_MAP = {
+    "Scheduled Monument":          "location",
+    "Listed Building":             "ghost",
+    "Registered Park and Garden":  "location",
+    "World Heritage Site":         "location",
+    "Protected Wreck":             "pirate",
+}
+
+HE_FOLKLORE_TERMS = [
+    "legend", "folklore", "tradition", "myth", "fairy", "ghost",
+    "haunted", "witch", "sacred", "holy well", "monster", "giant",
+    "smuggler", "pirate", "wreck", "treasure", "standing stone",
+    "stone circle", "barrow", "hillfort", "cursus",
+]
+
+
+def fetch_historic_england(verbose: bool = False) -> list[dict]:
+    """
+    Query Historic England's National Record of the Historic Environment
+    for sites with folklore relevance across England and Wales.
+    Returns list of legend dicts ready to merge.
+    """
+    # Historic England's main search API
+    # England: lat 49.9-55.8, lng -5.7 to 1.8
+    # Wales:   lat 51.3-53.5, lng -5.3 to -2.6
+    results  = []
+    seen_ids = set()
+
+    base_url = "https://services.historicengland.org.uk/NMRDataDownload/GeoSearch.aspx"
+
+    for term in HE_FOLKLORE_TERMS:
+        params = {
+            "q":      term,
+            "format": "json",
+            "rows":   100,
+            # Bounding box covering England and Wales
+            "bbox":   "-5.7,49.9,1.8,55.8",
+        }
+        try:
+            r = requests.get(base_url, params=params,
+                             headers={"User-Agent": USER_AGENT}, timeout=TIMEOUT)
+            if r.status_code == 404:
+                # API endpoint may differ — try alternate
+                break
+            r.raise_for_status()
+            data = r.json()
+            sites = data.get("results", data.get("features", []))
+
+            if verbose:
+                print(f"    [Historic England] '{term}': {len(sites)} results")
+
+            for site in sites:
+                # Handle both flat JSON and GeoJSON feature formats
+                props = site.get("properties", site)
+                site_id = props.get("id") or props.get("ListEntry") or props.get("NMR")
+                if not site_id or site_id in seen_ids:
+                    continue
+                seen_ids.add(site_id)
+
+                # Coordinates
+                if "geometry" in site:
+                    coords = site["geometry"].get("coordinates", [])
+                    lng, lat = (float(coords[0]), float(coords[1])) if coords else (None, None)
+                else:
+                    lat = props.get("lat") or props.get("Latitude")
+                    lng = props.get("lng") or props.get("Longitude")
+
+                if not lat or not lng:
+                    continue
+                if not is_in_uk(float(lat), float(lng)):
+                    continue
+
+                name = (props.get("name") or props.get("Name") or
+                        props.get("ListName") or "").strip()
+                if not name:
+                    continue
+
+                summary     = (props.get("description") or props.get("Summary") or "").strip()
+                designation = props.get("Designation") or props.get("Grade") or ""
+                category    = HE_TYPE_MAP.get(designation, "location")
+
+                if not summary:
+                    summary = f"{name} — a scheduled site of historical significance in England."
+                if len(summary) > 450:
+                    cutoff = summary[:450].rfind(". ")
+                    summary = summary[:cutoff + 1] if cutoff > 150 else summary[:447] + "..."
+
+                he_url  = f"https://historicengland.org.uk/listing/the-list/list-entry/{site_id}"
+                region  = infer_region(name, summary)
+
+                results.append({
+                    "name":     name,
+                    "lat":      round(float(lat), 4),
+                    "lng":      round(float(lng), 4),
+                    "category": category,
+                    "region":   region,
+                    "summary":  summary,
+                    "source":   he_url,
+                })
+            time.sleep(RATE_LIMIT)
+
+        except requests.exceptions.RequestException as e:
+            print(f"    [Historic England] Error on term '{term}': {e}")
+            continue
+
+    if not results:
+        # Fallback: use their open data CSV/GeoJSON download
+        print("    [Historic England] REST API unavailable — "
+              "download data manually from:")
+        print("    https://historicengland.org.uk/listing/the-list/data-downloads/")
+
+    print(f"    [Historic England] {len(results)} unique sites fetched")
+    return results
+
+
+# ---------------------------------------------------------------------------
+# Supabase write helper
+# ---------------------------------------------------------------------------
+
+SUPABASE_URL         = __import__("os").getenv("SUPABASE_URL", "")
+SUPABASE_SERVICE_KEY = __import__("os").getenv("SUPABASE_SERVICE_KEY", "")
+
+
+def _supabase_headers():
+    return {
+        "apikey":        SUPABASE_SERVICE_KEY,
+        "Authorization": f"Bearer {SUPABASE_SERVICE_KEY}",
+        "Content-Type":  "application/json",
+        "Prefer":        "resolution=merge-duplicates",
+    }
+
+
+def write_to_supabase(legends: dict, verbose: bool = False) -> None:
+    """Upsert all legends to Supabase in batches of 50."""
+    if not SUPABASE_URL or not SUPABASE_SERVICE_KEY:
+        return
+    url   = f"{SUPABASE_URL}/rest/v1/legends"
+    rows  = list(legends.values())
+    total = len(rows)
+    batch_size = 50
+    success = 0
+    print(f"      Syncing {total} legends to Supabase ...")
+    for i in range(0, total, batch_size):
+        batch = [{
+            "name": r["name"], "lat": r["lat"], "lng": r["lng"],
+            "category": r.get("category", "beast"),
+            "region":   r.get("region", "Britain"),
+            "summary":  r.get("summary", ""),
+            "source":   r.get("source", ""),
+        } for r in rows[i:i + batch_size]]
+        try:
+            resp = requests.post(url, headers=_supabase_headers(),
+                                 json=batch, timeout=30)
+            if resp.status_code in (200, 201):
+                success += len(batch)
+            else:
+                print(f"      [!] Supabase batch {i // batch_size + 1} failed: "
+                      f"HTTP {resp.status_code}")
+        except Exception as e:
+            print(f"      [!] Supabase error: {e}")
+        time.sleep(0.2)
+    print(f"      Supabase: {success}/{total} synced ✓")
+
+
+
+def build(limit: int, seed_only: bool, verbose: bool,
+          use_canmore: bool = False, use_he: bool = False,
+          supabase: bool = False) -> None:
     print("\n  Folklore Map — legend data pipeline")
     print("  " + "─" * 44)
 
-    # Start with seed data — these always win on duplicates
-    legends = {leg["name"]: leg for leg in SEED_LEGENDS}
-    print(f"\n  [1/3] Seed data loaded: {len(legends)} entries")
+    # ── Load existing legends.json ────────────────────────────────────────
+    import os
+    existing = {}
+    if os.path.exists("legends.json"):
+        try:
+            with open("legends.json", encoding="utf-8") as f:
+                saved = json.load(f)
+            existing = {l["name"]: l for l in saved.get("legends", [])}
+            print(f"\n  [0/4] Existing legends.json: {len(existing)} entries preserved")
+        except Exception as e:
+            print(f"\n  [0/4] Could not read legends.json ({e}) — starting fresh")
+    else:
+        print(f"\n  [0/4] No existing legends.json — starting fresh")
+
+    # ── Seeds always win ──────────────────────────────────────────────────
+    legends = dict(existing)
+    seed_updated = 0
+    for leg in SEED_LEGENDS:
+        if leg["name"] not in legends or legends[leg["name"]] != leg:
+            if leg["name"] in legends:
+                seed_updated += 1
+            legends[leg["name"]] = leg
+    print(f"\n  [1/4] Seeds: {len(SEED_LEGENDS)} entries "
+          f"({seed_updated} updated, {len(SEED_LEGENDS) - seed_updated} unchanged)")
+    print(f"      Applying cleanup ...")
+    legends = apply_cleanup(legends)
 
     if seed_only:
-        print("\n  [2/3] Skipped (--seed-only)")
+        print("\n  [2/4] Wikipedia pull skipped (--seed-only)")
+        print("\n  [3/4] External sources skipped (--seed-only)")
     else:
-        print(f"\n  [2/3] Fetching from Wikipedia ({len(CATEGORIES)} categories, {len(LISTS)} lists) ...")
-        all_titles   = {}   # title -> category
-        added        = 0
-        out_of_uk    = 0
-        duplicates   = 0
+        # ── Wikipedia ────────────────────────────────────────────────────
+        print(f"\n  [2/4] Wikipedia: {len(CATEGORIES)} categories, {len(LISTS)} lists ...")
+        all_titles = {}
+        added = out_of_uk = duplicates = 0
 
-        # Step 1a: collect article titles from categories
         for cat_name, cat_type in CATEGORIES:
             if verbose:
                 print(f"\n    Category: {cat_name}")
-            members = get_category_members(cat_name, limit, verbose)
-            for m in members:
-                title = m["title"]
-                if title not in all_titles:
-                    all_titles[title] = cat_type
+            for m in get_category_members(cat_name, limit, verbose):
+                if m["title"] not in all_titles:
+                    all_titles[m["title"]] = cat_type
             time.sleep(RATE_LIMIT)
 
-        # Step 1b: collect article titles from list pages
         print(f"      Pulling from {len(LISTS)} list articles ...")
         for list_title, list_type in LISTS:
             if verbose:
                 print(f"\n    List: {list_title}")
-            members = get_list_members(list_title, verbose)
-            for m in members:
-                title = m["title"]
-                if title not in all_titles:
-                    all_titles[title] = list_type
+            for m in get_list_members(list_title, verbose):
+                if m["title"] not in all_titles:
+                    all_titles[m["title"]] = list_type
             time.sleep(RATE_LIMIT)
 
-        print(f"      {len(all_titles)} unique articles across all sources")
+        print(f"      {len(all_titles)} unique articles")
+        geodata = get_article_geodata(list(all_titles.keys()), verbose)
+        print(f"      {len(geodata)} have coordinates")
 
-        # Step 2: fetch coordinates in batches
-        print(f"      Fetching coordinates ...")
-        titles_list = list(all_titles.keys())
-        geodata = get_article_geodata(titles_list, verbose)
-        print(f"      {len(geodata)} articles have coordinates")
-
-        # Step 3: fetch summaries for articles with UK coordinates
-        print(f"      Fetching summaries for UK articles ...")
+        existing_names = set(legends.keys())
         for title, (lat, lng) in geodata.items():
             if not is_in_uk(lat, lng):
                 out_of_uk += 1
                 continue
-
-            if title in legends:
+            if is_duplicate(title, existing_names):
                 duplicates += 1
                 continue
-
             if verbose:
-                print(f"    + {title} ({lat:.3f}, {lng:.3f})")
-
+                print(f"    + {title}")
             summary = get_article_summary(title, verbose)
             if not summary:
                 summary = f"{title} — a figure from British folklore."
-
-            category = all_titles.get(title, "beast")
-            region   = infer_region(title, summary)
-            source   = f"https://en.wikipedia.org/wiki/{requests.utils.quote(title.replace(' ', '_'))}"
-
-            legends[title] = {
+            entry = {
                 "name":     title,
                 "lat":      round(lat, 4),
                 "lng":      round(lng, 4),
-                "category": category,
-                "region":   region,
+                "category": all_titles.get(title, "beast"),
+                "region":   infer_region(title, summary),
                 "summary":  summary,
-                "source":   source,
+                "source":   f"https://en.wikipedia.org/wiki/{requests.utils.quote(title.replace(' ', '_'))}",
             }
+            legends[title] = entry
+            existing_names.add(title)
             added += 1
             time.sleep(RATE_LIMIT)
 
-        print(f"\n      Added      : {added}")
-        print(f"      Duplicates : {duplicates}")
-        print(f"      Out of UK  : {out_of_uk}")
-        print(f"      No coords  : {len(all_titles) - len(geodata)}")
+        print(f"\n      Added: {added} | Preserved: {duplicates} | Out of UK: {out_of_uk}")
+        legends = apply_cleanup(legends)
 
-    # Step 3: write output
-    print(f"\n  [3/3] Writing legends.json ...")
+        # ── Canmore ───────────────────────────────────────────────────────
+        print(f"\n  [3/4] External sources ...")
+        if use_canmore:
+            print(f"    Canmore (Historic Environment Scotland) ...")
+            canmore_results = fetch_canmore(verbose)
+            existing_names  = set(legends.keys())
+            can_added = 0
+            for entry in canmore_results:
+                if not is_duplicate(entry["name"], existing_names):
+                    legends[entry["name"]] = entry
+                    existing_names.add(entry["name"])
+                    can_added += 1
+            print(f"    Canmore: {can_added} new entries added")
+        else:
+            print(f"    Canmore: skipped (use --canmore to enable)")
+
+        # ── Historic England ──────────────────────────────────────────────
+        if use_he:
+            print(f"    Historic England ...")
+            he_results     = fetch_historic_england(verbose)
+            existing_names = set(legends.keys())
+            he_added = 0
+            for entry in he_results:
+                if not is_duplicate(entry["name"], existing_names):
+                    legends[entry["name"]] = entry
+                    existing_names.add(entry["name"])
+                    he_added += 1
+            print(f"    Historic England: {he_added} new entries added")
+        else:
+            print(f"    Historic England: skipped (use --historic-england to enable)")
+
+        # Final cleanup pass on everything new
+        legends = apply_cleanup(legends)
+
+    # ── Write output ──────────────────────────────────────────────────────
+    print(f"\n  [4/4] Writing legends.json ...")
     output = {
-        "generated": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
-        "total":     len(legends),
+        "generated":  datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+        "total":      len(legends),
         "categories": CATEGORY_LABELS,
-        "legends":   sorted(legends.values(), key=lambda x: x["name"])
+        "legends":    sorted(legends.values(), key=lambda x: x["name"])
     }
     with open("legends.json", "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
-
     print(f"      Total legends : {len(legends)}")
     print(f"      File written  : legends.json")
+
+    if supabase:
+        write_to_supabase(legends, verbose)
+    elif SUPABASE_URL:
+        print(f"      Tip: run with --supabase to sync to Supabase")
+
     print(f"\n  Done.\n")
-    print(f"  Tip: open legends.json and review any entries with region='Britain'")
-    print(f"       — these didn't match a region keyword and may need manual correction.\n")
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Folklore Map — one-time data pipeline")
-    parser.add_argument("--seed-only", action="store_true",
-        help="Skip Wikipedia, just write seed data to legends.json")
-    parser.add_argument("--limit", type=int, default=500,
+    parser = argparse.ArgumentParser(
+        description="Folklore Map — data pipeline",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  python build_legends.py --seed-only            # fast, seeds + cleanup only
+  python build_legends.py                        # full Wikipedia pull
+  python build_legends.py --canmore              # + Canmore (needs API key)
+  python build_legends.py --historic-england     # + Historic England
+  python build_legends.py --canmore --historic-england --supabase  # everything
+        """
+    )
+    parser.add_argument("--seed-only",         action="store_true",
+        help="Skip all API pulls, just process seed data")
+    parser.add_argument("--canmore",            action="store_true",
+        help="Pull from Canmore (Historic Environment Scotland) API")
+    parser.add_argument("--historic-england",   action="store_true",
+        help="Pull from Historic England API")
+    parser.add_argument("--supabase",           action="store_true",
+        help="Sync results to Supabase (needs SUPABASE_URL + SUPABASE_SERVICE_KEY)")
+    parser.add_argument("--limit",    type=int, default=500,
         help="Max articles per Wikipedia category (default: 500)")
-    parser.add_argument("--verbose", "-v", action="store_true",
+    parser.add_argument("--verbose", "-v",      action="store_true",
         help="Show each API call")
     args = parser.parse_args()
-    build(args.limit, args.seed_only, args.verbose)
+    build(
+        limit=args.limit,
+        seed_only=args.seed_only,
+        verbose=args.verbose,
+        use_canmore=args.canmore,
+        use_he=args.historic_england,
+        supabase=args.supabase,
+    )
 
 
 if __name__ == "__main__":

@@ -122,8 +122,6 @@ LISTS = [
     ("List of giants in mythology and folklore",   "giant"),
     ("List of Arthurian characters",               "deity"),
     ("List of Irish mythological figures",         "deity"),
-    ("List of pirates",                            "pirate"),
-    ("List of English pirates",                    "pirate"),
 ]
 
 CATEGORY_LABELS = {
@@ -138,6 +136,7 @@ CATEGORY_LABELS = {
     "location": "Legendary Sites",
     "ancient_site": "Ancient & Sacred Sites",
     "hero": "Heroes & Legendary Figures",
+    "pirate": "Pirates & Maritime Lore",
     "ritual": "Rituals & Folk Customs",
     "norse": "Norse & Northern Lore",
 }
@@ -2682,6 +2681,8 @@ REMOVE_ENTRIES = {
     "Kirkcudbright Tolbooth", "Keith Marischal", "Innerwick Castle",
     "Canewdon", "Crook of Devon", "Museum of Witchcraft and Magic",
     "Overtoun Bridge",
+    "Boulogne-sur-Mer", "Byland Abbey", "Cambridge University Press",
+    "England", "English Channel",
     "Enfield poltergeist", "The Giant of Cerne Abbas",
     "The Long Man of Wilmington", "Witches\' Well, Edinburgh",
     "Fairy Bridge (Isle of Man)", "Nine Maidens stone row",
@@ -3401,7 +3402,7 @@ def build(limit: int, seed_only: bool, verbose: bool,
           use_hes: bool = False, use_he: bool = False,
           use_dbpedia: bool = False, supabase: bool = False) -> None:
     print("\n  Folklore Map — legend data pipeline")
-    print("  " + "─" * 44)
+    print("  " + "-" * 44)
 
     # ── Load existing legends.json ─────────────────────────────────────
     import os

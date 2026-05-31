@@ -239,6 +239,15 @@ FORCE_CATEGORY = {
 # Claude API enrichment
 # ---------------------------------------------------------------------------
 
+# Keep cleanup behavior aligned with the main builder while this optional
+# summary-rewriting utility remains in the project.
+from build_legends import (
+    CATEGORY_REMAP,
+    FORCE_CATEGORY,
+    REMOVE_ENTRIES,
+    VALID_CATEGORIES,
+)
+
 SYSTEM_PROMPT = """You are writing entries for an atmospheric interactive folklore map of Britain.
 Your task is to rewrite Wikipedia summaries into evocative, one-paragraph descriptions
 in the style of an old folklore almanac or bestiary — mysterious, vivid, and specific.
@@ -299,7 +308,7 @@ Write only the rewritten summary, nothing else."""
 
 def clean_and_enrich(api_key: str, skip_enrichment: bool, dry_run: bool, verbose: bool):
     print("\n  Folklore Map — cleanup & enrichment pipeline")
-    print("  " + "─" * 46)
+    print("  " + "-" * 46)
 
     with open("legends.json", encoding="utf-8") as f:
         data = json.load(f)

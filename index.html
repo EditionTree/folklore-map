@@ -280,6 +280,13 @@
       font-style: italic;
     }
     .popup-source:hover { text-decoration: underline; }
+    .popup-footer { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 6px; }
+    .popup-copylink {
+      background: none; border: none; padding: 0; cursor: pointer;
+      font-size: 11px; color: var(--border); font-family: var(--font-body);
+      font-style: italic; transition: color 0.15s;
+    }
+    .popup-copylink:hover { color: var(--accent); }
 
     /* ── LEGEND PANEL ── */
     .legend-panel {
@@ -536,15 +543,30 @@ function safeSourceUrl(value) {
 
 function buildPopup(leg) {
   const cat = CATEGORIES[leg.category];
+  const encoded = encodeURIComponent(leg.name);
   return `<div class="popup-inner">
     <span class="popup-cat" style="background:${cat.colour}">${cat.label}</span>
     <div class="popup-title">${escapeHtml(leg.name)}</div>
     <div class="popup-region">${escapeHtml(leg.region)}</div>
     <hr class="popup-divider"/>
     <p class="popup-summary">${escapeHtml(leg.summary)}</p>
-    <a class="popup-source" href="${escapeHtml(safeSourceUrl(leg.source))}" target="_blank" rel="noopener">Read more on Wikipedia ↗</a>
+    <div class="popup-footer">
+      <a class="popup-source" href="${escapeHtml(safeSourceUrl(leg.source))}" target="_blank" rel="noopener">Read more ↗</a>
+      <button class="popup-copylink" data-legend="${encoded}">⛓ Copy link</button>
+    </div>
   </div>`;
 }
+
+document.addEventListener('click', e => {
+  const btn = e.target.closest('.popup-copylink');
+  if (!btn) return;
+  const url = new URL(location.href);
+  url.search = '?legend=' + btn.dataset.legend;
+  navigator.clipboard.writeText(url.toString()).then(() => {
+    btn.textContent = '✓ Copied!';
+    setTimeout(() => { btn.textContent = '⛓ Copy link'; }, 2000);
+  });
+});
 
 let LEGENDS = [];
 
@@ -736,7 +758,16 @@ function onDataLoaded(legends) {
   buildLegend();
   buildSidebarList(LEGENDS);
   updateCount(LEGENDS.length);
-  markers.forEach(m => m.on('popupopen', () => highlightSidebarItem(m._legendData.name)));
+  markers.forEach(m => m.on('popupopen', () => {
+    highlightSidebarItem(m._legendData.name);
+    history.replaceState(null, '', '?legend=' + encodeURIComponent(m._legendData.name));
+  }));
+  clusterGroup.on('popupclose', () => {
+    history.replaceState(null, '', location.pathname);
+  });
+
+  const deepLink = new URLSearchParams(location.search).get('legend');
+  if (deepLink) setTimeout(() => focusLegend(deepLink), 100);
 }
 
 function onDataError(err) {

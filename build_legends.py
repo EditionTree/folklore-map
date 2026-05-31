@@ -1051,7 +1051,7 @@ SEED_LEGENDS = [
         "lng": -4.424,
         "category": "water",
         "region": "Highland, Scotland",
-        "summary": "A vast creature said to inhabit the deep waters of Loch Ness. First recorded in 565 AD, Nessie has been hunted by cameras, submarines and sonar for over a century — always elusive.",
+        "summary": "A vast creature said to inhabit the deep waters of Loch Ness. A much earlier River Ness water-beast tradition appears in Adomnan's Life of St Columba: the saint commands the creature to retreat when it threatens one of his followers. Modern Nessie has been hunted by cameras, submarines and sonar for over a century, always elusive.",
         "source": "https://en.wikipedia.org/wiki/Loch_Ness_monster"
     },
     {
@@ -2965,6 +2965,111 @@ SEED_LEGENDS = [
         "region": "Highland, Scotland",
         "summary": "A formless, voiceless spirit of the Scottish Highlands, the Brollachan has no fixed shape of its own and takes the form of whatever vessel or hollow it inhabits. It can speak only two words — itself and thee — and when threatened becomes whatever thing causes most fear. Rannoch Moor, bleak and depthless, is the kind of landscape it is said to haunt: vast, shapeless, and indifferent to those who wander into it.",
         "source": "https://en.wikipedia.org/wiki/Scottish_folklore"
+    },
+    {
+        "name": "Tyno Helig",
+        "lat": 53.337, "lng": -3.858,
+        "category": "location", "region": "Conwy Bay, Wales",
+        "summary": "A Welsh legend tells of the lost land of Tyno Helig and the palace of Prince Helig ap Glannawg beneath Conwy Bay, off the Great Orme. The tale is sometimes described as a Welsh Atlantis tradition.",
+        "source": "https://www.historic-uk.com/HistoryUK/HistoryofWales/Tyno-Helig-The-Welsh-Atlantis/"
+    },
+    {
+        "name": "Fairy Flag of Dunvegan",
+        "lat": 57.448, "lng": -6.59,
+        "category": "fairy", "region": "Dunvegan Castle, Isle of Skye",
+        "summary": "The MacLeods of Dunvegan preserve a silk banner known as the Fairy Flag. Clan tradition says it can be unfurled in times of peril to bring victory, but that its protective magic can only be used three times.",
+        "source": "https://www.historic-uk.com/HistoryUK/HistoryofScotland/The-Fairy-Flag-of-the-MacLeods/"
+    },
+    {
+        "name": "Phantom Battle of Edgehill",
+        "lat": 52.126, "lng": -1.474,
+        "category": "ghost", "region": "Edgehill, Warwickshire",
+        "summary": "After the Battle of Edgehill in 1642, witnesses reported ghostly armies replaying the fighting above the battlefield. The tradition includes apparitions, battle cries, cannon fire and the sound of horses around the anniversary of the clash.",
+        "source": "https://www.historic-uk.com/HistoryUK/HistoryofEngland/Phantom-Battle-of-Edgehill/"
+    },
+    {
+        "name": "Brahan Seer",
+        "lat": 57.557, "lng": -4.456,
+        "category": "hero", "region": "Brahan, Ross-shire",
+        "summary": "Coinneach Odhar, remembered as the Brahan Seer, is a Highland prophetic figure said to have possessed the Second Sight. Folklore associates him with the Brahan estate and with predictions about the Seaforth family and later Scottish events.",
+        "source": "https://www.historic-uk.com/HistoryUK/HistoryofScotland/The-Brahan-Seer-the-Scottish-Nostradamus/"
+    },
+    {
+        "name": "Gelert",
+        "lat": 53.011, "lng": -4.103,
+        "category": "hero", "region": "Beddgelert, Gwynedd",
+        "summary": "Gelert is the faithful hound of a famous Welsh tale. Prince Llywelyn kills the dog after mistaking blood on its muzzle for evidence that it harmed his child, then discovers that Gelert had saved the child from a wolf.",
+        "source": "https://www.historic-uk.com/HistoryUK/HistoryofWales/The-legend-of-brave-Gelert/"
+    },
+    {
+        "name": "North Berwick Witch Trials",
+        "lat": 56.058, "lng": -2.718,
+        "category": "witch", "region": "North Berwick, East Lothian",
+        "summary": "The North Berwick witch trials began in the late sixteenth century after accusations that witches had raised storms against King James VI. Local tradition centres on gatherings at St Andrew's Kirk and on attempts to summon destructive weather.",
+        "source": "https://www.historic-uk.com/HistoryUK/HistoryofScotland/North-Berwick-Witch-Trials/"
+    },
+    {
+        "name": "Pittenweem Witch Trials",
+        "lat": 56.214, "lng": -2.728,
+        "category": "witch", "region": "Pittenweem, Fife",
+        "summary": "In 1705 accusations by a local teenager led to the persecution of several people in Pittenweem. The case belongs on the map as a documented local witch-trial tradition, while its summary should keep the focus on the victims rather than repeat the accusations as fact.",
+        "source": "https://www.historic-uk.com/HistoryUK/HistoryofScotland/The-Pittenweem-Witch-Trials/"
+    },
+    {
+        "name": "Grey Man of Ben MacDhui",
+        "lat": 57.07, "lng": -3.669,
+        "category": "beast", "region": "Ben Macdui, Cairngorms",
+        "summary": "The Grey Man of Ben MacDhui is a presence reported by walkers on the Cairngorm summit: an unseen follower, an unnerving sound of footsteps or a towering grey figure in the mist. The legend is also known by the Gaelic name Am Fear Liath Mor.",
+        "source": "https://oldechronicles.org.uk/the-grey-man-of-ben-macdhui/"
+    },
+    {
+        "name": "St Dwynwen",
+        "lat": 53.142, "lng": -4.409,
+        "category": "hero", "region": "Llanddwyn Island, Anglesey",
+        "summary": "St Dwynwen is the Welsh patron saint of lovers. Her legend is associated with Llanddwyn Island, where the ruins of her church and a holy well became a place of pilgrimage and a focus for traditions about love and fortune.",
+        "source": "https://www.historic-uk.com/HistoryUK/HistoryofWales/St-Dwynwens-Day/"
+    },
+    {
+        "name": "Hartlepool Monkey",
+        "lat": 54.696, "lng": -1.181,
+        "category": "location", "region": "Hartlepool, County Durham",
+        "summary": "Hartlepool folklore says that during the Napoleonic Wars townspeople found a monkey from a wrecked ship, mistook it for a French spy and hanged it. The story is an enduring local legend and the source of the town's Monkey Hangers nickname.",
+        "source": "https://www.historic-uk.com/HistoryUK/HistoryofEngland/The-Hanging-of-the-Hartlepool-Monkey/"
+    },
+    {
+        "name": "St Swithin's Day",
+        "lat": 51.061, "lng": -1.313,
+        "category": "hero", "region": "Winchester Cathedral, Hampshire",
+        "summary": "Weather lore holds that rain on St Swithin's Day, 15 July, will continue for forty days. The tradition is linked to St Swithin, a ninth-century Bishop of Winchester, and to stories about the movement of his remains.",
+        "source": "https://oldechronicles.org.uk/the-story-of-st-swithin/"
+    },
+    {
+        "name": "Sawney Bean",
+        "lat": 55.132, "lng": -4.97,
+        "category": "beast", "region": "Bennane Cave, South Ayrshire",
+        "summary": "Sawney Bean is the subject of a Scottish legend about a cannibal clan said to have lived in a coastal cave and preyed on travellers. The story is not treated as verified history, but it remains a well-known piece of Scottish folklore.",
+        "source": "https://www.historic-uk.com/HistoryUK/HistoryofScotland/Sawney-Bean-Scotlands-most-famous-cannibal/"
+    },
+    {
+        "name": "Morgan le Fay",
+        "lat": 50.668, "lng": -4.758,
+        "category": "fairy", "region": "Tintagel, Cornwall",
+        "summary": "Morgan le Fay is an enchantress of Arthurian tradition whose character shifts between healer, magical adversary and Arthur's otherworldly protector. Her stories range more widely than Cornwall, but Tintagel provides a strong British Isles association for the map.",
+        "source": "https://www.encyclopedia.com/literature-and-arts/classical-literature-mythology-and-folklore/folklore-and-mythology/morgan-le-fay"
+    },
+    {
+        "name": "Robert the Bruce",
+        "lat": 55.298, "lng": -6.168,
+        "category": "hero", "region": "Rathlin Island, County Antrim",
+        "summary": "Legend says that Robert the Bruce sheltered in a cave after defeat and watched a spider repeatedly attempt to build its web. When the spider finally succeeded, its persistence inspired Bruce to continue his own struggle. Several caves claim the tale; Rathlin Island preserves a strong local association.",
+        "source": "https://niarchive.org/projectitems/2-bruces-cave/"
+    },
+    {
+        "name": "Witch-hare of Dartmoor",
+        "lat": 50.571, "lng": -3.92,
+        "category": "witch", "region": "Dartmoor, Devon",
+        "summary": "A Dartmoor folk tale tells of a witch able to take the shape of a large hare. The transformed witch is pursued after stealing food, but her uncanny speed and shifting form mark the story as part of the moor's witchcraft tradition.",
+        "source": "https://oldechronicles.org.uk/the-witch-hare-of-dartmoor/"
     },
 ]
 

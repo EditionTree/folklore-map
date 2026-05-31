@@ -1,6 +1,6 @@
 {
-  "generated": "2026-05-31T19:20:04.137409Z",
-  "total": 351,
+  "generated": "2026-05-31T21:13:51.243334Z",
+  "total": 363,
   "categories": {
     "beast": "Beasts",
     "ghost": "Ghosts",
@@ -15,6 +15,15 @@
     "pirate": "Pirates"
   },
   "legends": [
+    {
+      "name": "Abhartach",
+      "lat": 54.982,
+      "lng": -6.725,
+      "category": "ghost",
+      "region": "Slaghtaverty, County Londonderry",
+      "summary": "Patrick Weston Joyce recorded the legend of Abhartach, a cruel dwarf-magician who repeatedly returned after burial. A neighbouring chieftain finally subdued his power by burying him upside-down beneath a stone monument associated with Slaghtaverty.",
+      "source": "https://www.mysteriousbritain.co.uk/ancient-sites/slaghtaverty-dolmen/"
+    },
     {
       "name": "Afanc",
       "lat": 52.574,
@@ -511,6 +520,15 @@
       "source": "https://en.wikipedia.org/wiki/Bwbach"
     },
     {
+      "name": "Cadair Idris",
+      "lat": 52.6996,
+      "lng": -3.9088,
+      "category": "location",
+      "region": "Gwynedd, Wales",
+      "summary": "Cadair Idris, the Chair of Idris, is associated with the giant Idris Gawr. A local tradition warns that anyone who spends the night on the mountain will awaken either mad or a poet.",
+      "source": "https://www.visitwales.com/things-do/adventure-and-activities/walking/guide-to-walking-up-cader-idris"
+    },
+    {
       "name": "Caer Bran",
       "lat": 50.1047,
       "lng": -5.627,
@@ -563,6 +581,15 @@
       "region": "Wales",
       "summary": "Cantre'r Gwaelod, also known as Cantref Gwaelod or Cantref y Gwaelod, is a legendary ancient sunken kingdom said to have occupied a tract of fertile land lying between Ramsey Island and Bardsey Island in what is now Cardigan Bay to the west of Wales. It has been described as a \"Welsh Atlantis\" and has featured in folklore, literature, and song.",
       "source": "https://en.wikipedia.org/wiki/Cantre%27r_Gwaelod"
+    },
+    {
+      "name": "Caoranach",
+      "lat": 54.619,
+      "lng": -7.981,
+      "category": "water",
+      "region": "Lough Derg, County Donegal",
+      "summary": "Caoranach is a monstrous creature of Irish folklore associated with Lough Derg in County Donegal. One local tradition tells that a small worm cast into the lake grew into a beast that devoured cattle until it was slain, its blood staining the rocks red.",
+      "source": "https://en.wikipedia.org/wiki/Lough_Derg,_County_Donegal"
     },
     {
       "name": "Carricknagat Megalithic Tombs",
@@ -817,6 +844,15 @@
       "source": "https://en.wikipedia.org/wiki/Cú_Chulainn"
     },
     {
+      "name": "Cú Roí mac Dáire",
+      "lat": 52.201,
+      "lng": -9.862,
+      "category": "hero",
+      "region": "Caherconree, County Kerry",
+      "summary": "Cú Roí mac Dáire is a supernatural warrior-king of Munster in Irish tradition. His stronghold is associated with Caherconree in the Slieve Mish Mountains, where legend says his fortress revolved at night so that enemies could not find its entrance.",
+      "source": "https://en.wikipedia.org/wiki/Caherconree"
+    },
+    {
       "name": "Cŵn Annwn",
       "lat": 51.882,
       "lng": -3.436,
@@ -889,6 +925,15 @@
       "source": "https://en.wikipedia.org/wiki/Dick_Turpin"
     },
     {
+      "name": "Dinas Emrys",
+      "lat": 53.003,
+      "lng": -4.086,
+      "category": "location",
+      "region": "Beddgelert, Gwynedd",
+      "summary": "At Dinas Emrys, legend says King Vortigern's walls collapsed each night until the young Merlin revealed two dragons fighting beneath the hill. The red dragon's victory over the white became an enduring symbol of Wales.",
+      "source": "https://www.nationaltrust.org.uk/visit/wales/craflwyn-and-beddgelert/the-legendary-trail-of-dinas-emrys"
+    },
+    {
       "name": "Ding Dong mines",
       "lat": 50.1542,
       "lng": -5.5928,
@@ -923,6 +968,15 @@
       "region": "Cornwall",
       "summary": "A dangerous sandbar at the mouth of the River Camel, linked to the Mermaid of Padstow. In legend, a dying mermaid cursed the harbour after being shot, raising the bar to wreck ships forever.",
       "source": "https://en.wikipedia.org/wiki/Doom_Bar"
+    },
+    {
+      "name": "Dorset Ooser",
+      "lat": 50.887,
+      "lng": -2.605,
+      "category": "location",
+      "region": "Melbury Osmond, Dorset",
+      "summary": "The Dorset Ooser is a horned folk mask recorded in nineteenth-century Melbury Osmond. Its grim hinged jaws and half-human, half-beast appearance were used in village customs to frighten revellers or shame people judged to have behaved badly.",
+      "source": "https://wessexmuseums.org.uk/collections-showcase/dorset-ooser/"
     },
     {
       "name": "Dozmary Pool",
@@ -1103,6 +1157,15 @@
       "region": "Scotland",
       "summary": "Fat Lips is the name given to a legendary spirit dwelling in Dryburgh Abbey in Berwickshire, Scotland.",
       "source": "https://en.wikipedia.org/wiki/Fat_Lips"
+    },
+    {
+      "name": "Fenodyree",
+      "lat": 54.144,
+      "lng": -4.679,
+      "category": "fairy",
+      "region": "Glen Rushen, Isle of Man",
+      "summary": "The Fenodyree is a hairy Manx fairy known for performing heavy farm work with uncanny speed. Like related household spirits, he is offended by a gift of clothing and disappears, with one tradition associating his departure with Glen Rushen.",
+      "source": "https://en.wikipedia.org/wiki/Fenodyree"
     },
     {
       "name": "Filey Dragon",
@@ -1465,6 +1528,15 @@
       "source": "https://en.wikipedia.org/wiki/Hill_of_Tara"
     },
     {
+      "name": "Hob Hole, Runswick Bay",
+      "lat": 54.538,
+      "lng": -0.752,
+      "category": "fairy",
+      "region": "Runswick Bay, North Yorkshire",
+      "summary": "A hob was said to inhabit a cave at Runswick Bay. Local parents brought children suffering from whooping cough to the Hob Holes and called on the spirit to take the illness away.",
+      "source": "https://en.wikipedia.org/wiki/Hob_Holes"
+    },
+    {
       "name": "Hobby Horse of Padstow",
       "lat": 50.542,
       "lng": -4.937,
@@ -1690,6 +1762,24 @@
       "source": "https://en.wikipedia.org/wiki/Listoghil"
     },
     {
+      "name": "Llamhigyn y Dŵr",
+      "lat": 53.043,
+      "lng": -4.011,
+      "category": "water",
+      "region": "Llyn Gwynant, Gwynedd",
+      "summary": "The Llamhigyn y Dŵr, or Water Leaper, is a Welsh aquatic creature described as a monstrous winged toad with a long tail. Folklore associates it with attacks on livestock and fishermen, including stories around Llyn Gwynant.",
+      "source": "https://en.wikipedia.org/wiki/Llamhigyn_y_D%C5%B5r"
+    },
+    {
+      "name": "Llyn Cwm Llwch",
+      "lat": 51.8875,
+      "lng": -3.45167,
+      "category": "fairy",
+      "region": "Bannau Brycheiniog, Powys",
+      "summary": "A Welsh tradition says that an enchanted island appeared on Llyn Cwm Llwch each May Day, welcoming visitors into a fairy realm. When a visitor stole a flower and lost his senses, the island vanished and was never seen again.",
+      "source": "https://www.nationaltrust.org.uk/visit/wales/welsh-myths-and-folklore"
+    },
+    {
       "name": "Llyn y Fan Fach",
       "lat": 51.8819,
       "lng": -3.7419,
@@ -1796,6 +1886,15 @@
       "region": "Wales",
       "summary": "The divine son stolen from his mother Modron when only three nights old. In Arthurian tradition, his rescue becomes one of the great mythic errands before the hunt for Twrch Trwyth.",
       "source": "https://en.wikipedia.org/wiki/Mabon_ap_Modron"
+    },
+    {
+      "name": "Macha",
+      "lat": 54.347,
+      "lng": -6.679,
+      "category": "deity",
+      "region": "Navan Fort, County Armagh",
+      "summary": "Macha is an Irish sovereignty goddess associated with Emain Macha, now Navan Fort. In the Ulster Cycle she is forced to race the king's horses while pregnant; after winning and giving birth to twins, she curses the men of Ulster to suffer the pains of childbirth in their hour of greatest need.",
+      "source": "https://visitarmagh.com/stories/live-our-celtic-myths-legends-in-the-ancient-site-of-navan-fort/the-curse-of-macha/"
     },
     {
       "name": "Maeshowe Runes",
@@ -2444,6 +2543,15 @@
       "region": "Orkney",
       "summary": "Seal-folk who shed their skins to walk as humans on land. If a fisherman steals a selkie's skin, she cannot return to the sea and must live as his wife — yearning always for the ocean.",
       "source": "https://en.wikipedia.org/wiki/Selkie"
+    },
+    {
+      "name": "Seonaidh",
+      "lat": 58.50373,
+      "lng": -6.26015,
+      "category": "deity",
+      "region": "Eoropie, Isle of Lewis",
+      "summary": "Seonaidh, also called Shony or Shoney, is a water spirit associated with Lewis. Martin Martin recorded an island ritual in which ale was poured into the sea near St Mulvay's Church as an offering for an abundant crop of seaweed to fertilise the fields.",
+      "source": "https://en.wikipedia.org/wiki/Seonaidh"
     },
     {
       "name": "Shellycoat",

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-31T11:45:20.677754Z",
+  "generated": "2026-05-31T12:47:54.200622Z",
   "total": 298,
   "categories": {
     "beast": "Beast",
@@ -125,6 +125,15 @@
       "region": "Yorkshire",
       "summary": "A monstrous black dog of northern folklore, often linked to lonely roads, churchyards, and death omens. In some tales it is huge as a calf, with claws scraping stone and eyes like coals.",
       "source": "https://en.wikipedia.org/wiki/Barghest"
+    },
+    {
+      "name": "Bartholomew Roberts",
+      "lat": 51.9223,
+      "lng": -4.9388,
+      "category": "pirate",
+      "region": "Little Newcastle, Pembrokeshire",
+      "summary": "The Welsh pirate Barti Ddu, later called Black Bart, captured more than four hundred vessels during the Golden Age of Piracy. His birthplace at Little Newcastle still bears a memorial stone.",
+      "source": "https://en.wikipedia.org/wiki/Bartholomew_Roberts"
     },
     {
       "name": "Battle of Barry",
@@ -1045,6 +1054,15 @@
       "source": "https://en.wikipedia.org/wiki/Gooseberry_Wife"
     },
     {
+      "name": "Grace O'Malley",
+      "lat": 53.896,
+      "lng": -9.6271,
+      "category": "pirate",
+      "region": "Rockfleet Castle, County Mayo",
+      "summary": "The sea-captain Gráinne Ní Mháille ruled the shores of Clew Bay and negotiated with Elizabeth I as an equal. Rockfleet Castle, her stronghold on the tidewater, remains the place most closely bound to her legend.",
+      "source": "https://en.wikipedia.org/wiki/Grace_O%27Malley"
+    },
+    {
       "name": "Granny Kempock Stone",
       "lat": 55.9614,
       "lng": -4.8198,
@@ -1171,6 +1189,15 @@
       "source": "https://en.wikipedia.org/wiki/Henderson_Stone"
     },
     {
+      "name": "Henry Every",
+      "lat": 50.3167,
+      "lng": -4.0333,
+      "category": "pirate",
+      "region": "Newton Ferrers, Devon",
+      "summary": "Born near Plymouth, the elusive Henry Every became the Arch Pirate after taking an immense Mughal treasure ship in 1695. A worldwide hunt followed, but he vanished without a proven end.",
+      "source": "https://en.wikipedia.org/wiki/Henry_Every"
+    },
+    {
       "name": "Herne the Hunter",
       "lat": 51.483,
       "lng": -0.604,
@@ -1196,6 +1223,15 @@
       "region": "Cornwall",
       "summary": "A May Day custom in which the 'Obby 'Oss dances through Padstow with music, pursuit, and ritual energy. It is one of Britain's most famous surviving folk ceremonies.",
       "source": "https://en.wikipedia.org/wiki/%27Obby_%27Oss_festival"
+    },
+    {
+      "name": "Howell Davis",
+      "lat": 51.714,
+      "lng": -5.042,
+      "category": "pirate",
+      "region": "Milford Haven, Pembrokeshire",
+      "summary": "The Milford Haven pirate Howell Davis relied on disguise and deception as readily as cannon fire. His short career lasted less than a year, yet he captured fifteen known ships before an ambush ended it.",
+      "source": "https://en.wikipedia.org/wiki/Howell_Davis"
     },
     {
       "name": "Hyter Sprite",
@@ -2557,6 +2593,15 @@
       "source": "https://en.wikipedia.org/wiki/Will-o%27-the-wisp"
     },
     {
+      "name": "William Kidd",
+      "lat": 56.462,
+      "lng": -2.9707,
+      "category": "pirate",
+      "region": "Dundee, Scotland",
+      "summary": "The Dundee-born privateer Captain Kidd was sent to hunt pirates and returned accused of piracy himself. His execution and rumours of buried treasure transformed a disputed career into enduring legend.",
+      "source": "https://en.wikipedia.org/wiki/William_Kidd"
+    },
+    {
       "name": "Wisht Hounds",
       "lat": 50.574,
       "lng": -3.914,
@@ -2654,51 +2699,6 @@
       "region": "Cornwall",
       "summary": "Zennor is a village and civil parish in Cornwall, England, United Kingdom. The parish includes the villages of Zennor, Boswednack and Porthmeor and the hamlet of Treen. Zennor lies on the north coast, about 6 miles (10 km) north of Penzance, along the B3306 road which connects St Ives to the A30 road. Alphabetically, the parish is the last in Britain. Its name comes from the Cornish name for the local saint, Saint Senara.",
       "source": "https://en.wikipedia.org/wiki/Zennor"
-    },
-    {
-      "name": "Bartholomew Roberts",
-      "lat": 51.9223,
-      "lng": -4.9388,
-      "category": "pirate",
-      "region": "Little Newcastle, Pembrokeshire",
-      "summary": "The Welsh pirate Barti Ddu, later called Black Bart, captured more than four hundred vessels during the Golden Age of Piracy. His birthplace at Little Newcastle still bears a memorial stone.",
-      "source": "https://en.wikipedia.org/wiki/Bartholomew_Roberts"
-    },
-    {
-      "name": "Grace O'Malley",
-      "lat": 53.896,
-      "lng": -9.6271,
-      "category": "pirate",
-      "region": "Rockfleet Castle, County Mayo",
-      "summary": "The sea-captain Gráinne Ní Mháille ruled the shores of Clew Bay and negotiated with Elizabeth I as an equal. Rockfleet Castle, her stronghold on the tidewater, remains the place most closely bound to her legend.",
-      "source": "https://en.wikipedia.org/wiki/Grace_O%27Malley"
-    },
-    {
-      "name": "Henry Every",
-      "lat": 50.3167,
-      "lng": -4.0333,
-      "category": "pirate",
-      "region": "Newton Ferrers, Devon",
-      "summary": "Born near Plymouth, the elusive Henry Every became the Arch Pirate after taking an immense Mughal treasure ship in 1695. A worldwide hunt followed, but he vanished without a proven end.",
-      "source": "https://en.wikipedia.org/wiki/Henry_Every"
-    },
-    {
-      "name": "Howell Davis",
-      "lat": 51.714,
-      "lng": -5.042,
-      "category": "pirate",
-      "region": "Milford Haven, Pembrokeshire",
-      "summary": "The Milford Haven pirate Howell Davis relied on disguise and deception as readily as cannon fire. His short career lasted less than a year, yet he captured fifteen known ships before an ambush ended it.",
-      "source": "https://en.wikipedia.org/wiki/Howell_Davis"
-    },
-    {
-      "name": "William Kidd",
-      "lat": 56.462,
-      "lng": -2.9707,
-      "category": "pirate",
-      "region": "Dundee, Scotland",
-      "summary": "The Dundee-born privateer Captain Kidd was sent to hunt pirates and returned accused of piracy himself. His execution and rumours of buried treasure transformed a disputed career into enduring legend.",
-      "source": "https://en.wikipedia.org/wiki/William_Kidd"
     }
   ]
 }

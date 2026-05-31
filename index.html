@@ -61,6 +61,9 @@
       --map-filter-night: grayscale(0.6) brightness(0.55) contrast(1.2) sepia(0.3) hue-rotate(200deg);
     }
 
+    html {
+      background: #1e1408;
+    }
     body {
       background: var(--parchment-dk);
       font-family: var(--font-body);
@@ -98,6 +101,7 @@
       opacity: 0.4;
     }
     .header-title { display: flex; align-items: baseline; gap: 14px; }
+    .mobile-title { display: none; }
     h1 {
       font-family: var(--font-display);
       font-size: 24px;
@@ -468,6 +472,8 @@
       header::before { display: none; }
       h1 { font-size: 15px; letter-spacing: 0.04em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
       h1::before, h1::after { display: none; }
+      .desktop-title { display: none; }
+      .mobile-title { display: block; }
       .subtitle { display: none; }
       .header-title { width: 100%; min-width: 0; }
       .header-controls {
@@ -491,6 +497,8 @@
       /* Sidebar: overlay from content-area top (which is below header+filterbar) */
       .sidebar { position: absolute; top: 0; bottom: 0; left: 0; z-index: 850; box-shadow: 4px 0 20px rgba(0,0,0,0.3); }
       .sidebar.collapsed { width: 0; }
+      .leaflet-control-container { position: relative; z-index: 700; }
+      .sidebar:not(.collapsed) + .map-wrap .leaflet-control-zoom { display: none; }
 
       .legend-panel { display: none; }
       footer span:first-child { display: none; }
@@ -501,7 +509,8 @@
 
 <header>
   <div class="header-title">
-    <h1>Folklore Map of the British Isles</h1>
+    <h1 class="desktop-title">Folklore Map of the British Isles</h1>
+    <h1 class="mobile-title">Folklore Isles</h1>
     <span class="subtitle">Myths, Legends & Spectral Encounters</span>
   </div>
   <div class="header-controls">

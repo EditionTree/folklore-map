@@ -2455,8 +2455,48 @@ SEED_LEGENDS = [
         "summary": "An island in Lough Derg said to contain a cave leading directly to Purgatory — revealed to Saint Patrick so he could show doubters what awaited sinners. Medieval pilgrims came from across Europe to descend into it. The penitential tradition continues to this day: three days without sleep, barefoot on the cold stone island.",
         "source": "https://en.wikipedia.org/wiki/Lough_Derg_(Ulster)"
     },
-
-
+    # Curated pirates: pin British Isles birthplace unless a stronger local
+    # association exists, as with Grace O'Malley's base at Rockfleet Castle.
+    {
+        "name": "Bartholomew Roberts",
+        "lat": 51.9223, "lng": -4.9388,
+        "category": "pirate",
+        "region": "Little Newcastle, Pembrokeshire",
+        "summary": "The Welsh pirate Barti Ddu, later called Black Bart, captured more than four hundred vessels during the Golden Age of Piracy. His birthplace at Little Newcastle still bears a memorial stone.",
+        "source": "https://en.wikipedia.org/wiki/Bartholomew_Roberts"
+    },
+    {
+        "name": "Grace O'Malley",
+        "lat": 53.8960, "lng": -9.6271,
+        "category": "pirate",
+        "region": "Rockfleet Castle, County Mayo",
+        "summary": "The sea-captain Gráinne Ní Mháille ruled the shores of Clew Bay and negotiated with Elizabeth I as an equal. Rockfleet Castle, her stronghold on the tidewater, remains the place most closely bound to her legend.",
+        "source": "https://en.wikipedia.org/wiki/Grace_O%27Malley"
+    },
+    {
+        "name": "Henry Every",
+        "lat": 50.3167, "lng": -4.0333,
+        "category": "pirate",
+        "region": "Newton Ferrers, Devon",
+        "summary": "Born near Plymouth, the elusive Henry Every became the Arch Pirate after taking an immense Mughal treasure ship in 1695. A worldwide hunt followed, but he vanished without a proven end.",
+        "source": "https://en.wikipedia.org/wiki/Henry_Every"
+    },
+    {
+        "name": "Howell Davis",
+        "lat": 51.7140, "lng": -5.0420,
+        "category": "pirate",
+        "region": "Milford Haven, Pembrokeshire",
+        "summary": "The Milford Haven pirate Howell Davis relied on disguise and deception as readily as cannon fire. His short career lasted less than a year, yet he captured fifteen known ships before an ambush ended it.",
+        "source": "https://en.wikipedia.org/wiki/Howell_Davis"
+    },
+    {
+        "name": "William Kidd",
+        "lat": 56.4620, "lng": -2.9707,
+        "category": "pirate",
+        "region": "Dundee, Scotland",
+        "summary": "The Dundee-born privateer Captain Kidd was sent to hunt pirates and returned accused of piracy himself. His execution and rumours of buried treasure transformed a disputed career into enduring legend.",
+        "source": "https://en.wikipedia.org/wiki/William_Kidd"
+    },
 ]
 
 
@@ -3375,12 +3415,49 @@ def _supabase_headers():
     }
 
 
-def write_to_supabase(legends: dict, verbose: bool = False) -> None:
-    """Upsert all legends to Supabase in batches of 50."""
+def _supabase_url(path: str = "") -> str:
+    base = f"{SUPABASE_URL.rstrip('/')}/rest/v1/legends"
+    return f"{base}?{path}" if path else base
+
+
+def _supabase_request(method: str, url: str, **kwargs):
+    response = requests.request(
+        method, url, headers=_supabase_headers(), timeout=30, **kwargs
+    )
+    if not response.ok:
+        detail = response.text[:300].strip()
+        raise RuntimeError(
+            f"Supabase {method} failed: HTTP {response.status_code}"
+            + (f" ({detail})" if detail else "")
+        )
+    return response
+
+
+def _supabase_names() -> set:
+    response = _supabase_request("GET", _supabase_url("select=name&limit=10000"))
+    return {row["name"] for row in response.json()}
+
+
+def _delete_stale_supabase_rows(stale_names: set) -> int:
+    if not stale_names:
+        return 0
+    quoted_names = ",".join(
+        f'"{name.replace(chr(34), chr(34) * 2)}"' for name in sorted(stale_names)
+    )
+    _supabase_request(
+        "DELETE",
+        _supabase_url(f"name=in.({requests.utils.quote(quoted_names, safe='(),\"')})"),
+    )
+    return len(stale_names)
+
+
+def write_to_supabase(
+    legends: dict, verbose: bool = False, prune: bool = False
+) -> None:
+    """Upsert legends and optionally delete remote rows absent from local JSON."""
     if not SUPABASE_URL or not SUPABASE_SERVICE_KEY:
-        print("      [!] SUPABASE_URL or SUPABASE_SERVICE_KEY not set — skipping")
-        return
-    url   = f"{SUPABASE_URL.rstrip('/')}/rest/v1/legends?on_conflict=name"
+        raise RuntimeError("SUPABASE_URL or SUPABASE_SERVICE_KEY not set")
+    url   = _supabase_url("on_conflict=name")
     rows  = list(legends.values())
     total = len(rows)
     batch_size = 50
@@ -3396,24 +3473,20 @@ def write_to_supabase(legends: dict, verbose: bool = False) -> None:
             "summary":  r.get("summary", ""),
             "source":   r.get("source", ""),
         } for r in rows[i:i + batch_size]]
-        try:
-            resp = requests.post(
-                url, headers=_supabase_headers(),
-                json=batch, timeout=30
-            )
-            if resp.status_code in (200, 201):
-                success += len(batch)
-            else:
-                print(f"      [!] Batch failed: HTTP {resp.status_code}")
-        except Exception as e:
-            print(f"      [!] Supabase error: {e}")
+        _supabase_request("POST", url, json=batch)
+        success += len(batch)
         time.sleep(0.2)
-    print(f"      Supabase: {success}/{total} synced ✓")
+    print(f"      Supabase: {success}/{total} synced")
+    if prune:
+        stale_names = _supabase_names() - set(legends.keys())
+        deleted = _delete_stale_supabase_rows(stale_names)
+        print(f"      Supabase: {deleted} stale rows deleted")
 
 
 def build(limit: int, seed_only: bool, verbose: bool,
           use_hes: bool = False, use_he: bool = False,
-          use_dbpedia: bool = False, supabase: bool = False) -> None:
+          use_dbpedia: bool = False, supabase: bool = False,
+          supabase_prune: bool = False) -> None:
     print("\n  Folklore Map — legend data pipeline")
     print("  " + "-" * 44)
 
@@ -3564,7 +3637,7 @@ def build(limit: int, seed_only: bool, verbose: bool,
     print(f"      File written  : legends.json")
 
     if supabase:
-        write_to_supabase(legends, verbose)
+        write_to_supabase(legends, verbose, prune=supabase_prune)
     elif SUPABASE_URL:
         print(f"      Tip: run with --supabase to sync to Supabase")
 
@@ -3581,6 +3654,7 @@ Examples:
   python build_legends.py                          # Wikipedia pull
   python build_legends.py --hes                    # + Historic Environment Scotland
   python build_legends.py --historic-england       # + Historic England
+  python build_legends.py --seed-only --supabase --supabase-prune  # clean DB mirror
   python build_legends.py --hes --historic-england --dbpedia --supabase  # full run
         """
     )
@@ -3594,11 +3668,15 @@ Examples:
         help="Pull from DBpedia SPARQL (structured Wikipedia, better folklore coverage)")
     parser.add_argument("--supabase",           action="store_true",
         help="Sync to Supabase (needs SUPABASE_URL + SUPABASE_SERVICE_KEY env vars)")
+    parser.add_argument("--supabase-prune",     action="store_true",
+        help="Delete Supabase rows absent from local data (requires --supabase)")
     parser.add_argument("--limit",    type=int, default=500,
         help="Max articles per Wikipedia category (default: 500)")
     parser.add_argument("--verbose", "-v",       action="store_true",
         help="Show each API call")
     args = parser.parse_args()
+    if args.supabase_prune and not args.supabase:
+        parser.error("--supabase-prune requires --supabase")
     build(
         limit=args.limit,
         seed_only=args.seed_only,
@@ -3607,6 +3685,7 @@ Examples:
         use_he=args.historic_england,
         use_dbpedia=args.dbpedia,
         supabase=args.supabase,
+        supabase_prune=args.supabase_prune,
     )
 
 

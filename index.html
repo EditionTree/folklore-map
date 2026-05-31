@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"/>
   <title>Folklore Map of the British Isles</title>
 
   <!-- SEO -->
@@ -426,7 +426,7 @@
     .legend-dot { display: flex; align-items: center; }
 
     /* ── LAYOUT ── */
-    body { overflow: hidden; height: 100vh; }
+    body { overflow: hidden; height: 100vh; height: 100dvh; }
     .content-area { flex: 1; display: flex; overflow: hidden; position: relative; }
     .map-wrap { flex: 1; position: relative; overflow: hidden; min-height: 0; }
     :root { --sidebar-w: 280px; }
@@ -458,17 +458,30 @@
 
     /* ── MOBILE ── */
     @media (max-width: 640px) {
-      /* Header: single compact row, no wrapping */
-      header { padding: 9px 12px; gap: 8px; flex-wrap: nowrap; }
+      /* Header: title above a full-width control row so iOS never clips controls */
+      header {
+        padding: calc(7px + env(safe-area-inset-top)) 10px 7px;
+        gap: 6px;
+        flex-wrap: wrap;
+        align-items: center;
+      }
       header::before { display: none; }
-      h1 { font-size: 16px; letter-spacing: 0.05em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+      h1 { font-size: 15px; letter-spacing: 0.04em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
       h1::before, h1::after { display: none; }
       .subtitle { display: none; }
-      .header-title { min-width: 0; }
-      .header-controls { flex-shrink: 0; gap: 7px; }
+      .header-title { width: 100%; min-width: 0; }
+      .header-controls {
+        width: 100%;
+        min-width: 0;
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr) auto;
+        gap: 7px;
+      }
       #modeLabel { display: none; }
-      .search-wrap input { width: 110px; font-size: 12px; }
+      .search-wrap { min-width: 0; }
+      .search-wrap input { width: 100%; font-size: 12px; }
       .sidebar-toggle-btn { font-size: 11px; padding: 4px 8px; }
+      footer { padding-bottom: calc(5px + env(safe-area-inset-bottom)); }
 
       /* Filter bar: icon + count only, no text label */
       .filter-bar { flex-wrap: nowrap; padding: 6px 12px; }

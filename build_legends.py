@@ -3071,6 +3071,90 @@ SEED_LEGENDS = [
         "summary": "A Dartmoor folk tale tells of a witch able to take the shape of a large hare. The transformed witch is pursued after stealing food, but her uncanny speed and shifting form mark the story as part of the moor's witchcraft tradition.",
         "source": "https://oldechronicles.org.uk/the-witch-hare-of-dartmoor/"
     },
+    {
+        "name": "Macha",
+        "lat": 54.347, "lng": -6.679,
+        "category": "deity", "region": "Navan Fort, County Armagh",
+        "summary": "Macha is an Irish sovereignty goddess associated with Emain Macha, now Navan Fort. In the Ulster Cycle she is forced to race the king's horses while pregnant; after winning and giving birth to twins, she curses the men of Ulster to suffer the pains of childbirth in their hour of greatest need.",
+        "source": "https://visitarmagh.com/stories/live-our-celtic-myths-legends-in-the-ancient-site-of-navan-fort/the-curse-of-macha/"
+    },
+    {
+        "name": "Abhartach",
+        "lat": 54.982, "lng": -6.725,
+        "category": "ghost", "region": "Slaghtaverty, County Londonderry",
+        "summary": "Patrick Weston Joyce recorded the legend of Abhartach, a cruel dwarf-magician who repeatedly returned after burial. A neighbouring chieftain finally subdued his power by burying him upside-down beneath a stone monument associated with Slaghtaverty.",
+        "source": "https://www.mysteriousbritain.co.uk/ancient-sites/slaghtaverty-dolmen/"
+    },
+    {
+        "name": "Caoranach",
+        "lat": 54.619, "lng": -7.981,
+        "category": "water", "region": "Lough Derg, County Donegal",
+        "summary": "Caoranach is a monstrous creature of Irish folklore associated with Lough Derg in County Donegal. One local tradition tells that a small worm cast into the lake grew into a beast that devoured cattle until it was slain, its blood staining the rocks red.",
+        "source": "https://en.wikipedia.org/wiki/Lough_Derg,_County_Donegal"
+    },
+    {
+        "name": "Cú Roí mac Dáire",
+        "lat": 52.201, "lng": -9.862,
+        "category": "hero", "region": "Caherconree, County Kerry",
+        "summary": "Cú Roí mac Dáire is a supernatural warrior-king of Munster in Irish tradition. His stronghold is associated with Caherconree in the Slieve Mish Mountains, where legend says his fortress revolved at night so that enemies could not find its entrance.",
+        "source": "https://en.wikipedia.org/wiki/Caherconree"
+    },
+    {
+        "name": "Seonaidh",
+        "lat": 58.50373, "lng": -6.26015,
+        "category": "deity", "region": "Eoropie, Isle of Lewis",
+        "summary": "Seonaidh, also called Shony or Shoney, is a water spirit associated with Lewis. Martin Martin recorded an island ritual in which ale was poured into the sea near St Mulvay's Church as an offering for an abundant crop of seaweed to fertilise the fields.",
+        "source": "https://en.wikipedia.org/wiki/Seonaidh"
+    },
+    {
+        "name": "Dinas Emrys",
+        "lat": 53.003, "lng": -4.086,
+        "category": "location", "region": "Beddgelert, Gwynedd",
+        "summary": "At Dinas Emrys, legend says King Vortigern's walls collapsed each night until the young Merlin revealed two dragons fighting beneath the hill. The red dragon's victory over the white became an enduring symbol of Wales.",
+        "source": "https://www.nationaltrust.org.uk/visit/wales/craflwyn-and-beddgelert/the-legendary-trail-of-dinas-emrys"
+    },
+    {
+        "name": "Cadair Idris",
+        "lat": 52.6996, "lng": -3.9088,
+        "category": "location", "region": "Gwynedd, Wales",
+        "summary": "Cadair Idris, the Chair of Idris, is associated with the giant Idris Gawr. A local tradition warns that anyone who spends the night on the mountain will awaken either mad or a poet.",
+        "source": "https://www.visitwales.com/things-do/adventure-and-activities/walking/guide-to-walking-up-cader-idris"
+    },
+    {
+        "name": "Hob Hole, Runswick Bay",
+        "lat": 54.538, "lng": -0.752,
+        "category": "fairy", "region": "Runswick Bay, North Yorkshire",
+        "summary": "A hob was said to inhabit a cave at Runswick Bay. Local parents brought children suffering from whooping cough to the Hob Holes and called on the spirit to take the illness away.",
+        "source": "https://en.wikipedia.org/wiki/Hob_Holes"
+    },
+    {
+        "name": "Fenodyree",
+        "lat": 54.144, "lng": -4.679,
+        "category": "fairy", "region": "Glen Rushen, Isle of Man",
+        "summary": "The Fenodyree is a hairy Manx fairy known for performing heavy farm work with uncanny speed. Like related household spirits, he is offended by a gift of clothing and disappears, with one tradition associating his departure with Glen Rushen.",
+        "source": "https://en.wikipedia.org/wiki/Fenodyree"
+    },
+    {
+        "name": "Llyn Cwm Llwch",
+        "lat": 51.8875, "lng": -3.45167,
+        "category": "fairy", "region": "Bannau Brycheiniog, Powys",
+        "summary": "A Welsh tradition says that an enchanted island appeared on Llyn Cwm Llwch each May Day, welcoming visitors into a fairy realm. When a visitor stole a flower and lost his senses, the island vanished and was never seen again.",
+        "source": "https://www.nationaltrust.org.uk/visit/wales/welsh-myths-and-folklore"
+    },
+    {
+        "name": "Dorset Ooser",
+        "lat": 50.887, "lng": -2.605,
+        "category": "location", "region": "Melbury Osmond, Dorset",
+        "summary": "The Dorset Ooser is a horned folk mask recorded in nineteenth-century Melbury Osmond. Its grim hinged jaws and half-human, half-beast appearance were used in village customs to frighten revellers or shame people judged to have behaved badly.",
+        "source": "https://wessexmuseums.org.uk/collections-showcase/dorset-ooser/"
+    },
+    {
+        "name": "Llamhigyn y Dŵr",
+        "lat": 53.043, "lng": -4.011,
+        "category": "water", "region": "Llyn Gwynant, Gwynedd",
+        "summary": "The Llamhigyn y Dŵr, or Water Leaper, is a Welsh aquatic creature described as a monstrous winged toad with a long tail. Folklore associates it with attacks on livestock and fishermen, including stories around Llyn Gwynant.",
+        "source": "https://en.wikipedia.org/wiki/Llamhigyn_y_D%C5%B5r"
+    },
 ]
 
 

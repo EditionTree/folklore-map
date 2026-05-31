@@ -1,11 +1,11 @@
 {
-  "generated": "2026-05-31T12:47:54.200622Z",
-  "total": 298,
+  "generated": "2026-05-31T13:46:56.621699Z",
+  "total": 306,
   "categories": {
     "beast": "Beast",
     "ghost": "Ghost",
     "fairy": "Fae & Spirits",
-    "water": "Water Creatures",
+    "water": "Aquatic Legends",
     "dragon": "Dragon",
     "witch": "Witch",
     "deity": "Deities",
@@ -13,7 +13,7 @@
     "location": "Legendary Sites",
     "ancient_site": "Ancient & Sacred Sites",
     "hero": "Heroes & Legendary Figures",
-    "pirate": "Pirates & Smugglers",
+    "pirate": "Pirates",
     "ritual": "Rituals & Folk Customs",
     "norse": "Norse & Northern Lore"
   },
@@ -35,6 +35,24 @@
       "region": "East Anglia",
       "summary": "A warrior goddess invoked by Boudica before her revolt against Rome. Her name survives through Roman accounts, fierce and blood-bright at the edge of history and myth.",
       "source": "https://en.wikipedia.org/wiki/Andraste"
+    },
+    {
+      "name": "Andrew Barton (privateer)",
+      "lat": 55.9801,
+      "lng": -3.17,
+      "category": "pirate",
+      "region": "Leith, Scotland",
+      "summary": "The Leith privateer Sir Andrew Barton raided Portuguese shipping before his death in battle in 1511. English and Scottish folk songs transformed him into a ballad figure: Sir Andrew Barton and its later relation Henry Martyn both preserve versions of his story.",
+      "source": "https://en.wikipedia.org/wiki/Andrew_Barton_(privateer)"
+    },
+    {
+      "name": "Anne Bonny",
+      "lat": 51.8985,
+      "lng": -8.4756,
+      "category": "pirate",
+      "region": "County Cork, Ireland",
+      "summary": "Anne Bonny became one of the best-known pirates of the Golden Age. Her birthplace is uncertain, but the enduring traditional account places her near Cork. Sparse historical records left room for a much larger legend, retold through books, songs, theatre and screen.",
+      "source": "https://en.wikipedia.org/wiki/Anne_Bonny"
     },
     {
       "name": "Aos Sí",
@@ -242,6 +260,15 @@
       "region": "Norfolk",
       "summary": "A spectral black dog with blazing eyes the size of saucers, said to roam the coastline and heathlands of East Anglia. A single glance is an omen of death within the year.",
       "source": "https://en.wikipedia.org/wiki/Black_Shuck"
+    },
+    {
+      "name": "Blackbeard",
+      "lat": 51.4545,
+      "lng": -2.5879,
+      "category": "pirate",
+      "region": "Bristol",
+      "summary": "Edward Teach, better known as Blackbeard, may have been born in Bristol. His fearsome image outgrew his short career: tales of buried treasure, ghostly lights at sea and his headless spirit searching the coast made him one of the defining figures of pirate folklore.",
+      "source": "https://en.wikipedia.org/wiki/Blackbeard"
     },
     {
       "name": "Blarney Stone",
@@ -973,6 +1000,15 @@
       "source": "https://en.wikipedia.org/wiki/Fionn_mac_Cumhaill"
     },
     {
+      "name": "Francis Drake",
+      "lat": 50.4819,
+      "lng": -4.1327,
+      "category": "pirate",
+      "region": "Buckland Abbey, Devon",
+      "summary": "The privateer Sir Francis Drake is tied to Buckland Abbey through the legend of Drake's Drum. Before his death he was said to have promised that its beat would summon him back whenever England faced danger. Phantom drumming has been reported at moments of national crisis.",
+      "source": "https://en.wikipedia.org/wiki/Drake%27s_Drum"
+    },
+    {
       "name": "Galway",
       "lat": 53.2719,
       "lng": -9.0489,
@@ -1198,6 +1234,15 @@
       "source": "https://en.wikipedia.org/wiki/Henry_Every"
     },
     {
+      "name": "Henry Morgan",
+      "lat": 51.523,
+      "lng": -3.125,
+      "category": "pirate",
+      "region": "Llanrumney, Cardiff",
+      "summary": "The Welsh privateer Henry Morgan became one of the most famous raiders of the Caribbean. His early life is uncertain, but tradition places his birth around Llanrumney or nearby Pencarn. Later retellings turned the historical governor and plantation owner into a larger-than-life pirate figure.",
+      "source": "https://en.wikipedia.org/wiki/Henry_Morgan"
+    },
+    {
       "name": "Herne the Hunter",
       "lat": 51.483,
       "lng": -0.604,
@@ -1243,6 +1288,15 @@
       "source": "https://en.wikipedia.org/wiki/Hyter_Sprite"
     },
     {
+      "name": "Jack Ward",
+      "lat": 51.3148,
+      "lng": 0.891,
+      "category": "pirate",
+      "region": "Faversham, Kent",
+      "summary": "The Faversham-born corsair Jack Ward became England's notorious Arch-Pirate. Plays, pamphlets and ballads followed him in his own lifetime. The traditional song Captain Ward and the Rainbow casts him as a king of the sea who defeats the royal ship sent against him.",
+      "source": "https://en.wikipedia.org/wiki/Jack_Ward"
+    },
+    {
       "name": "Jenny Greenteeth",
       "lat": 53.762,
       "lng": -2.703,
@@ -1259,6 +1313,15 @@
       "region": "Tynemouth",
       "summary": "A cave at Tynemouth associated with the miserly spirit Jingling Geordie, whose hoarded coins were said to rattle in the dark. A coastal pocket of ghost-story greed.",
       "source": "https://en.wikipedia.org/wiki/Jingling_Geordie%27s_Hole"
+    },
+    {
+      "name": "John Gow",
+      "lat": 58.964,
+      "lng": -3.296,
+      "category": "pirate",
+      "region": "Stromness, Orkney",
+      "summary": "John Gow was raised in Stromness and returned to Orkney under an assumed name after a short pirate career. His attempt to hide as a prosperous trader collapsed into capture, execution and retelling, making the Orkney Pirate a lasting local figure.",
+      "source": "https://en.wikipedia.org/wiki/John_Gow"
     },
     {
       "name": "Julian's Bower",
@@ -1547,6 +1610,15 @@
       "region": "Wales",
       "summary": "A winter wassailing custom in which a decorated horse skull is carried from door to door. The party trades verses with householders before being admitted for food, drink, and seasonal chaos.",
       "source": "https://en.wikipedia.org/wiki/Mari_Lwyd"
+    },
+    {
+      "name": "Mary Read",
+      "lat": 51.5072,
+      "lng": -0.1276,
+      "category": "pirate",
+      "region": "London, England",
+      "summary": "Mary Read sailed with Anne Bonny and became one of the best-known women of the Golden Age of Piracy. Her birthplace is uncertain; an influential traditional account places her in London. The gaps in the surviving record allowed her story to grow through repeated retelling.",
+      "source": "https://en.wikipedia.org/wiki/Mary_Read"
     },
     {
       "name": "Meehambee Dolmen",

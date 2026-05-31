@@ -126,20 +126,17 @@ LISTS = [
 ]
 
 CATEGORY_LABELS = {
-    "beast": "Beast",
-    "ghost": "Ghost",
-    "fairy": "Fae & Spirits",
-    "water": "Aquatic Legends",
-    "dragon": "Dragon",
-    "witch": "Witch",
-    "deity": "Deities",
-    "giant": "Giant",
-    "location": "Legendary Sites",
-    "ancient_site": "Ancient & Sacred Sites",
-    "hero": "Heroes & Legendary Figures",
-    "pirate": "Pirates",
-    "ritual": "Rituals & Folk Customs",
-    "norse": "Norse & Northern Lore",
+    "beast":    "Beasts",
+    "ghost":    "Ghosts",
+    "fairy":    "Fae & Spirits",
+    "water":    "Aquatic Legends",
+    "dragon":   "Dragons",
+    "witch":    "Witches",
+    "deity":    "Deities",
+    "giant":    "Giants",
+    "location": "Sacred Sites",
+    "hero":     "Heroic Figures",
+    "pirate":   "Pirates",
 }
 
 # Pirate biographies are admitted deliberately. Wikipedia categories also
@@ -2582,6 +2579,132 @@ SEED_LEGENDS = [
         "summary": "Mary Read sailed with Anne Bonny and became one of the best-known women of the Golden Age of Piracy. Her birthplace is uncertain; an influential traditional account places her in London. The gaps in the surviving record allowed her story to grow through repeated retelling.",
         "source": "https://en.wikipedia.org/wiki/Mary_Read"
     },
+    {
+        "name": "Jan Tregeagle",
+        "lat": 50.5697,
+        "lng": -4.5899,
+        "category": "ghost",
+        "region": "Cornwall",
+        "summary": "A corrupt magistrate in life, Jan Tregeagle was condemned after death to perform impossible tasks for eternity lest demons drag him away. He haunts Dozmary Pool on Bodmin Moor, endlessly bailing its waters with a leaking limpet shell. When storms rage across the moor, the howling is said to be Tregeagle fleeing the hounds of hell.",
+        "source": "https://en.wikipedia.org/wiki/Jan_Tregeagle"
+    },
+    {
+        "name": "Am Fear Liath Mòr",
+        "lat": 57.0699,
+        "lng": -3.6696,
+        "category": "beast",
+        "region": "Cairngorms, Scotland",
+        "summary": "A vast grey figure said to stalk the summit plateau of Ben MacDhui, the second highest peak in Britain. Experienced mountaineers have reported crushing dread, phantom footsteps in the snow, and a looming presence that drives men from the mountain in blind terror. No rational explanation has ever satisfied those who have encountered it.",
+        "source": "https://en.wikipedia.org/wiki/Fear_Liath"
+    },
+    {
+        "name": "Lincoln Imp",
+        "lat": 53.2343,
+        "lng": -0.5392,
+        "category": "fairy",
+        "region": "Lincolnshire",
+        "summary": "Sent by the Devil to cause mischief across England, a young imp flew into Lincoln Cathedral and began tormenting the angels within. An angel turned the creature to stone where it sat perched on a pillar, and there it remains — a leering figure carved into the stonework of the Angel Choir, grinning down at visitors to this day.",
+        "source": "https://en.wikipedia.org/wiki/Lincoln_Imp"
+    },
+    {
+        "name": "Dragon of Strathmartine",
+        "lat": 56.5199,
+        "lng": -3.0280,
+        "category": "dragon",
+        "region": "Angus, Scotland",
+        "summary": "Nine daughters of a farmer near Strathmartine were taken one by one by a great serpent dwelling in the moorland outside Dundee. A young man named Martin lured the beast to its death with cunning and a spiked ball of dough. The Dragon Stone standing near the site of the slaying once marked the field where the creature fell.",
+        "source": "https://en.wikipedia.org/wiki/Dragon_of_Strathmartine"
+    },
+    {
+        "name": "Dragon of St Leonard's Forest",
+        "lat": 51.0510,
+        "lng": -0.3333,
+        "category": "dragon",
+        "region": "Sussex",
+        "summary": "For many years a great serpent made its lair in the dense forest south of Horsham, ravaging cattle and poisoning the land. Witnesses in 1614 described it as nine feet long, leaving a trail of slime and a lingering stench. Where its body coiled, white lilies and adder's tongue sprang up — plants said to have grown from its shed venom.",
+        "source": "https://en.wikipedia.org/wiki/Dragon_of_St_Leonard%27s_Forest"
+    },
+    {
+        "name": "Hexham Heads",
+        "lat": 54.9714,
+        "lng": -2.1011,
+        "category": "ghost",
+        "region": "Northumberland",
+        "summary": "Two carved stone heads unearthed in a Hexham garden in 1971 were said to trigger apparitions of a half-man, half-beast creature in every household that held them. Dr Anne Ross, who received them for study, woke in the night to find a werewolf-like shape descending her staircase. The heads were eventually lost to history, but the sightings continued regardless.",
+        "source": "https://en.wikipedia.org/wiki/Hexham_Heads"
+    },
+    {
+        "name": "Headless Horseman of the Staffordshire Moors",
+        "lat": 53.1044,
+        "lng": -1.9654,
+        "category": "ghost",
+        "region": "Staffordshire",
+        "summary": "Between the moorland villages of Onecote and Leek, a headless figure on horseback is said to ride at dusk. Witnesses report the horse as vast and the rider's severed neck level with the treetops. Local tradition holds it to be the spirit of a Cavalier slain during the Civil War and denied burial in consecrated ground.",
+        "source": "https://oldechronicles.org.uk/the-headless-horseman-of-the-staffordshire-moors/"
+    },
+    {
+        "name": "Devil's Dyke",
+        "lat": 50.8929,
+        "lng": -0.2121,
+        "category": "location",
+        "region": "Sussex",
+        "summary": "The great dry valley carved through the South Downs above Brighton was dug by the Devil in a single night, his intent being to flood the Weald and drown the Sussex churches. A woman's candle and a crowing cock tricked him into thinking dawn had broken, and he fled with the work unfinished. The dyke stands as testament to his thwarted design.",
+        "source": "https://en.wikipedia.org/wiki/Devil%27s_Dyke,_West_Sussex"
+    },
+    {
+        "name": "Hereward the Wake",
+        "lat": 52.3994,
+        "lng": 0.2651,
+        "category": "hero",
+        "region": "Cambridgeshire",
+        "summary": "The last great English rebel against the Norman conquest, Hereward held out in the Isle of Ely long after all others had submitted. His raids deep into Norman territory became legendary, and later tales credited him with a charmed sword and supernatural cunning. Whether he died in battle or vanished into the fens, no chronicle agrees on his fate.",
+        "source": "https://en.wikipedia.org/wiki/Hereward_the_Wake"
+    },
+    {
+        "name": "Warrior of the Gog Magog Hills",
+        "lat": 52.1581,
+        "lng": 0.1868,
+        "category": "ghost",
+        "region": "Cambridgeshire",
+        "summary": "The iron-age earthworks atop the Gog Magog Hills south of Cambridge are said to be haunted by a great phantom warrior — perhaps the giant Gogmagog himself, Britain's last titan. Some accounts describe a mounted figure who challenges travellers at dusk; others speak only of an oppressive silence and the feeling of being watched from the ancient ramparts.",
+        "source": "https://en.wikipedia.org/wiki/Wandlebury_Camp"
+    },
+    {
+        "name": "Wiltshire Moonrakers",
+        "lat": 51.3726,
+        "lng": -1.8764,
+        "category": "location",
+        "region": "Wiltshire",
+        "summary": "Caught by excise men moving contraband brandy, a band of Wiltshire smugglers claimed to be raking the pond for a great round cheese — the moon's reflection. The revenue men rode on laughing, believing them simple country fools, while the smugglers retrieved their hidden casks from the water. Wiltshire men have been called Moonrakers as a badge of cunning ever since.",
+        "source": "https://en.wikipedia.org/wiki/Moonraker_(smuggler)"
+    },
+    {
+        "name": "Dead Men of Burton-on-Trent",
+        "lat": 52.8019,
+        "lng": -1.6441,
+        "category": "ghost",
+        "region": "Staffordshire",
+        "summary": "A 12th-century chronicle records that two recently buried men of Burton rose from their graves and wandered the village by night, knocking on doors and spreading pestilence. The Bishop of Lincoln ordered the bodies disinterred and burned, whereupon the hauntings ceased. The account is among the earliest written descriptions of revenants in English literature.",
+        "source": "https://en.wikipedia.org/wiki/Burton_Abbey"
+    },
+    {
+        "name": "Matthew Hopkins",
+        "lat": 51.9441,
+        "lng": 0.8931,
+        "category": "witch",
+        "region": "Essex",
+        "summary": "Self-styled Witch Finder General, Matthew Hopkins conducted a brutal campaign across East Anglia between 1644 and 1647, sending hundreds to trial and over a hundred to the gallows. He claimed authority from Parliament and charged by the accused, growing rich on fear. His own death was swiftly followed by rumours that he had been tried by his own methods and hanged.",
+        "source": "https://en.wikipedia.org/wiki/Matthew_Hopkins"
+    },
+    {
+        "name": "Our Lady of Walsingham",
+        "lat": 52.8925,
+        "lng": 0.8726,
+        "category": "location",
+        "region": "Norfolk",
+        "summary": "In 1061 a noblewoman of Walsingham was visited by the Virgin Mary and shown a vision of the Holy House of Nazareth, which she was commanded to rebuild in replica. The shrine that grew around it became England's foremost pilgrimage site, drawing monarchs and the faithful alike until its destruction at the Reformation. It remains a place of active pilgrimage to this day.",
+        "source": "https://en.wikipedia.org/wiki/Our_Lady_of_Walsingham"
+    },
 ]
 
 
@@ -2926,6 +3049,7 @@ REMOVE_ENTRIES = {
     "Carn, County Fermanagh", "National Leprechaun Museum",
     "Lough Scur", "Reask", "St Davids Cathedral", "Sutton Hoo",
     "Mordiford Dragon",
+    "St Leonard's Forest Dragons",  # superseded by our seed "Dragon of St Leonard's Forest"
 }
 
 FORCE_CATEGORY = {

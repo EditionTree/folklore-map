@@ -135,7 +135,7 @@ CATEGORY_LABELS = {
     "deity":    "Deities",
     "giant":    "Giants",
     "location": "Sacred Sites",
-    "hero":     "Heroic Figures",
+    "hero":     "Legendary Figures",
     "pirate":   "Pirates",
 }
 
@@ -2704,6 +2704,267 @@ SEED_LEGENDS = [
         "region": "Norfolk",
         "summary": "In 1061 a noblewoman of Walsingham was visited by the Virgin Mary and shown a vision of the Holy House of Nazareth, which she was commanded to rebuild in replica. The shrine that grew around it became England's foremost pilgrimage site, drawing monarchs and the faithful alike until its destruction at the Reformation. It remains a place of active pilgrimage to this day.",
         "source": "https://en.wikipedia.org/wiki/Our_Lady_of_Walsingham"
+    },
+    {
+        "name": "Martin Mere",
+        "lat": 53.6090,
+        "lng": -2.8690,
+        "category": "location",
+        "region": "Lancashire",
+        "summary": "Lancashire tradition holds that Martin Mere — a great shallow lake in the flat country north of Ormskirk — was where Sir Bedivere finally cast Excalibur after Arthur fell at Camlann, a hand rising from the water to receive the blade before it vanished. The mere was drained in the eighteenth century by the Fleetwood-Hesketh family. Whether the sword went with the water, none can say.",
+        "source": "https://en.wikipedia.org/wiki/Martin_Mere"
+    },
+    {
+        "name": "Chalice Well",
+        "lat": 51.1448,
+        "lng": -2.7145,
+        "category": "location",
+        "region": "Somerset",
+        "summary": "At the foot of Glastonbury Tor, the Chalice Well has flowed without ceasing for at least two thousand years, its waters stained red-brown with iron. Joseph of Arimathea is said to have concealed the cup of the Last Supper within its depths when he brought Christianity to Britain. The spring never runs dry even in drought — taken by many as proof that something sacred still lies within.",
+        "source": "https://en.wikipedia.org/wiki/Chalice_Well"
+    },
+    {
+        "name": "Stone of Scone",
+        "lat": 56.4120,
+        "lng": -3.4320,
+        "category": "location",
+        "region": "Perthshire, Scotland",
+        "summary": "A plain block of red sandstone, the Stone of Destiny served as the coronation seat of Scottish kings at Scone Abbey for centuries. Tradition holds it to be Jacob's Pillow from the Old Testament, carried through Egypt, Spain and Ireland before coming to rest in Scotland. Seized by Edward I in 1296 and kept beneath the English throne at Westminster for seven centuries, it was returned to Scotland in 1996 and remains a talisman of sovereignty.",
+        "source": "https://en.wikipedia.org/wiki/Stone_of_Scone"
+    },
+    {
+        "name": "Nanteos Cup",
+        "lat": 52.4150,
+        "lng": -4.0650,
+        "category": "location",
+        "region": "Ceredigion, Wales",
+        "summary": "A battered fragment of olive wood, worn smooth by centuries of lips pressed against it, the Nanteos Cup was kept by the monks of Strata Florida Abbey and later at Nanteos Mansion near Aberystwyth. Borrowed by the sick on surety of its return, it was said to possess healing powers. Some held it to be the very cup of the Last Supper — the Holy Grail in relic form, hidden quietly in the Welsh hills.",
+        "source": "https://en.wikipedia.org/wiki/Nanteos_Cup"
+    },
+    {
+        "name": "Glastonbury Holy Thorn",
+        "lat": 51.1457,
+        "lng": -2.7195,
+        "category": "location",
+        "region": "Somerset",
+        "summary": "Joseph of Arimathea is said to have thrust his pilgrim's staff into the earth on Wearyall Hill above Glastonbury, where it took root and became a hawthorn that flowers twice yearly — at Christmas and at Easter. Cuttings from the original were preserved through the centuries; the trees on the hill today descend from those medieval grafts. A sprig is still sent to the monarch each Christmas, as it has been since the time of James I.",
+        "source": "https://en.wikipedia.org/wiki/Glastonbury_Thorn"
+    },
+    {
+        "name": "Boudicca",
+        "lat": 52.5580,
+        "lng": 1.3170,
+        "category": "hero",
+        "region": "Norfolk",
+        "summary": "Queen of the Iceni, Boudicca rallied the tribes of Britain against Roman occupation after her daughters were violated and her kingdom seized. She burned Camulodunum, Verulamium and Londinium to the ground before meeting the legions in a final battle. Her spirit is held never to have left East Anglia — invoked still in times of resistance, her name become shorthand for the unconquerable.",
+        "source": "https://en.wikipedia.org/wiki/Boudica"
+    },
+    {
+        "name": "William Wallace",
+        "lat": 56.1432,
+        "lng": -3.9165,
+        "category": "hero",
+        "region": "Stirlingshire, Scotland",
+        "summary": "Guardian of Scotland, Wallace defeated the English at Stirling Bridge in 1297 and became the symbol of resistance so enduring his legend outgrew his history. Betrayed, captured and executed in London in 1305, he refused every offer of pardon that required submission. The Wallace Monument on Abbey Craig above Stirling draws pilgrims as much as tourists, housing the great two-handed sword said to be his own.",
+        "source": "https://en.wikipedia.org/wiki/William_Wallace"
+    },
+    {
+        "name": "Robin Hood",
+        "lat": 53.2042,
+        "lng": -1.0632,
+        "category": "hero",
+        "region": "Nottinghamshire",
+        "summary": "Outlaw of Sherwood Forest, robber of the rich and friend of the poor, Robin Hood haunts the English imagination as the archetypal rebel against unjust authority. Whether Saxon freedom-fighter, displaced nobleman or composite of a dozen forgotten men, his legend has been told since at least the 13th century. The Major Oak in Sherwood is said to have sheltered him and his Merry Men between raids.",
+        "source": "https://en.wikipedia.org/wiki/Robin_Hood"
+    },
+    {
+        "name": "Sir Percival",
+        "lat": 52.9691,
+        "lng": -3.1690,
+        "category": "hero",
+        "region": "Denbighshire, Wales",
+        "summary": "Raised in the wilderness by his mother, ignorant of chivalry, Percival came to Camelot a laughing-stock and grew into its purest knight. At the Fisher King's castle he witnessed the Grail procession in silence — failing to ask the one question that would have healed the Wasteland. Welsh tradition places his Grail castle on the crags of Dinas Bran above Llangollen, where the ruins still command the valley.",
+        "source": "https://en.wikipedia.org/wiki/Percival"
+    },
+    {
+        "name": "Sir Galahad",
+        "lat": 51.1458,
+        "lng": -2.7183,
+        "category": "hero",
+        "region": "Somerset",
+        "summary": "Son of Lancelot and the purest knight of the Round Table, Galahad appeared at Camelot on Pentecost and sat in the Siege Perilous — the seat that destroyed all unworthy claimants. He alone was destined to achieve the Holy Grail. Having looked upon it in full at Sarras, he asked to be taken from the world, and was. The Grail's long tradition in Glastonbury makes the Somerset levels his spiritual territory.",
+        "source": "https://en.wikipedia.org/wiki/Galahad"
+    },
+    {
+        "name": "Sir Bedivere",
+        "lat": 51.0060,
+        "lng": -2.5680,
+        "category": "hero",
+        "region": "Somerset",
+        "summary": "Last knight standing at Camlann, Bedivere was charged by the dying Arthur with casting Excalibur into the water. Twice he faltered, hiding the sword away; twice Arthur knew. On the third attempt the sword was thrown and a hand rose from the lake to receive it. Bedivere carried the king to the waiting barge and bore witness to his passing — then outlived every knight of the Round Table.",
+        "source": "https://en.wikipedia.org/wiki/Bedivere"
+    },
+    {
+        "name": "Sir Tristan",
+        "lat": 50.3560,
+        "lng": -4.6970,
+        "category": "hero",
+        "region": "Cornwall",
+        "summary": "Sent to bring the Irish princess Iseult as bride for his uncle King Mark of Cornwall, Tristan drank a love potion intended for the royal couple and was bound to her irrevocably. Their hidden love, discovered and betrayed, played out against the Cornish coast for years. Near Fowey the Tristan Stone still stands — a sixth-century memorial bearing an inscription that may be the earliest reference to the legend.",
+        "source": "https://en.wikipedia.org/wiki/Tristan_and_Iseult"
+    },
+    {
+        "name": "Sir Kay",
+        "lat": 52.9210,
+        "lng": -3.6350,
+        "category": "hero",
+        "region": "Gwynedd, Wales",
+        "summary": "Arthur's foster-brother and seneschal of Camelot, Kay was the first to mock and the last to admit error, yet he rode on every quest that mattered. Welsh tradition knows him as Cai Hir — Kay the Tall — a warrior who could breathe underwater for nine days and whose wounds would never fester. Caer Gai, a Roman fort in the hills above Bala, is held by Welsh legend to be his stronghold.",
+        "source": "https://en.wikipedia.org/wiki/Kay_(Arthurian_legend)"
+    },
+    {
+        "name": "Mordred",
+        "lat": 55.9780,
+        "lng": -2.6640,
+        "category": "hero",
+        "region": "East Lothian, Scotland",
+        "summary": "Arthur's nephew — or in the darker tellings, his son — Mordred seized the throne during the Grail quest and forced the king's return to Britain. At Camlann they destroyed each other: Mordred slain, Arthur mortally wounded. His kingdom of Lothian centred on Traprain Law, the great hill fort above the Firth of Forth that dominated southern Scotland through the Arthurian age and still looms over the landscape.",
+        "source": "https://en.wikipedia.org/wiki/Mordred"
+    },
+    {
+        "name": "Ragnar Lothbrok",
+        "lat": 53.9581,
+        "lng": -1.0810,
+        "category": "hero",
+        "region": "Yorkshire",
+        "summary": "Legendary Norse king and Viking chieftain, Ragnar was said to have been captured by King Ælla of Northumbria and cast into a pit of serpents at York, where he died singing. His sons — including Ivar the Boneless — launched the Great Heathen Army to avenge him, conquering half of England. Whether man or myth or both, the pit of snakes at York remains the most vivid moment of his legend.",
+        "source": "https://en.wikipedia.org/wiki/Ragnar_Lodbrok"
+    },
+    {
+        "name": "Ivar the Boneless",
+        "lat": 52.8338,
+        "lng": -1.5508,
+        "category": "hero",
+        "region": "Derbyshire",
+        "summary": "Son of Ragnar Lothbrok and commander of the Great Heathen Army that swept into England in 865, Ivar took York and exacted vengeance on King Aella with the blood eagle. A great Viking burial excavated at Repton in Derbyshire — where the army wintered in 873 — is believed by some scholars to be his grave, surrounded by the bones of over two hundred warriors.",
+        "source": "https://en.wikipedia.org/wiki/Ivar_the_Boneless"
+    },
+    {
+        "name": "Oisin",
+        "lat": 53.1543,
+        "lng": -6.9340,
+        "category": "hero",
+        "region": "County Kildare, Ireland",
+        "summary": "Son of Fionn mac Cumhaill, Oisin was lured to Tir na nOg — the Land of Eternal Youth beneath the western waves — by the goddess Niamh of the Golden Hair. He spent three hundred years there believing only months had passed, before returning to find Ireland transformed and Fionn long dead. When his foot touched Irish soil he aged three centuries in moments, his legend becoming the great lament for a vanished heroic age.",
+        "source": "https://en.wikipedia.org/wiki/Ois%C3%ADn"
+    },
+    {
+        "name": "Diarmuid and Grainne",
+        "lat": 54.3623,
+        "lng": -8.4953,
+        "category": "hero",
+        "region": "County Sligo, Ireland",
+        "summary": "Grainne, promised to the ageing Fionn mac Cumhaill, placed a geis on the young warrior Diarmuid to flee with her on their wedding night. The lovers were pursued across Ireland and into Scotland for sixteen years, leaving their names on stone beds and hollow hills from Connacht to the Hebrides. Their flight ended on Ben Bulben in Sligo, where a boar sent by the jealous Fionn delivered Diarmuid's fatal wound.",
+        "source": "https://en.wikipedia.org/wiki/Diarmuid_and_Gr%C3%A1inne"
+    },
+    {
+        "name": "Deirdre of the Sorrows",
+        "lat": 56.6183,
+        "lng": -4.9393,
+        "category": "hero",
+        "region": "Argyll, Scotland",
+        "summary": "Prophesied at birth to bring ruin to Ulster, Deirdre grew up to love the warrior Naoise above the king who claimed her. She and Naoise fled to Scotland and hid in Glen Etive before being lured back to Ireland under false promise of safety. Naoise was slain and Deirdre, refusing every comfort, dashed her head against a stone rather than live without him. The glen still carries her name in Gaelic memory.",
+        "source": "https://en.wikipedia.org/wiki/Deirdre"
+    },
+    {
+        "name": "Nuada of the Silver Hand",
+        "lat": 54.0650,
+        "lng": -8.3730,
+        "category": "deity",
+        "region": "County Sligo, Ireland",
+        "summary": "First king of the Tuatha De Danann, Nuada lost his arm at the First Battle of Mag Tuired and was forced from his throne — kingship requiring physical wholeness. The healer-god Dian Cecht fashioned him a working arm of silver, and Nuada was restored. He led the Tuatha against the Fomorians at the Second Battle of Mag Tuired, where he fell, giving way to Lugh to carry the final victory.",
+        "source": "https://en.wikipedia.org/wiki/Nuada_Airgetl%C3%A1m"
+    },
+    {
+        "name": "Branwen",
+        "lat": 53.3550,
+        "lng": -4.3940,
+        "category": "hero",
+        "region": "Anglesey, Wales",
+        "summary": "Daughter of Llyr and sister of Bran the Blessed, Branwen was given in marriage to the King of Ireland, where she was reduced to servitude in the kitchens. She trained a starling to carry a message to her brother; Bran came with all the warriors of Britain to free her, and the war that followed destroyed both islands. Branwen died of grief at her homecoming and was buried beside the River Alaw in Anglesey, her grave mound still visible.",
+        "source": "https://en.wikipedia.org/wiki/Branwen"
+    },
+    {
+        "name": "Afanc",
+        "lat": 52.5740,
+        "lng": -3.9890,
+        "category": "beast",
+        "region": "Gwynedd, Wales",
+        "summary": "A monstrous creature of the deep lakes of Wales — part crocodile, part demon — the Afanc devoured any who entered its waters. Llyn Barfog in the Dyfi valley is one of its most enduring haunting grounds. In some versions it was dragged from the water by King Arthur's horse Llamrei and cast into a loch too deep and cold for it ever to resurface.",
+        "source": "https://en.wikipedia.org/wiki/Afanc"
+    },
+    {
+        "name": "Pryderi",
+        "lat": 51.7960,
+        "lng": -4.7340,
+        "category": "hero",
+        "region": "Pembrokeshire, Wales",
+        "summary": "Son of Pwyll and Rhiannon, Pryderi is the only figure to appear in all four branches of the Mabinogion — the thread connecting the entire mythology of medieval Wales. Stolen in the night as an infant and growing to become lord of Dyfed, he was enchanted, imprisoned, freed, and finally killed in single combat with the magician Gwydion. Pembrokeshire's ancient landscape carries his memory at every turn.",
+        "source": "https://en.wikipedia.org/wiki/Pryderi"
+    },
+    {
+        "name": "Each-Uisge",
+        "lat": 56.4520,
+        "lng": -5.0730,
+        "category": "water",
+        "region": "Argyll, Scotland",
+        "summary": "The each-uisge — the water horse of the Highland lochs — was far more dangerous than the river kelpie. Taking the form of a fine grey horse or a handsome man, those who mounted it found themselves unable to dismount as it plunged back into the depths. Only iron or the smell of horsehair broke the glamour. Loch Etive in Argyll is among its most feared haunting grounds.",
+        "source": "https://en.wikipedia.org/wiki/Each-uisge"
+    },
+    {
+        "name": "Cu Sith",
+        "lat": 57.2740,
+        "lng": -6.2150,
+        "category": "beast",
+        "region": "Isle of Skye, Scotland",
+        "summary": "A great fairy hound the size of a young bull, the Cu Sith roamed the Scottish Highlands in silence, its paw prints the width of a man's hand. It hunted on behalf of the fairy court and when it gave voice it bayed three times — after which those who had not found shelter were seized by fatal terror. Especially associated with the Hebrides and Skye, it was said to guard the entrances to the fairy mounds.",
+        "source": "https://en.wikipedia.org/wiki/C%C3%B9_S%C3%ACth"
+    },
+    {
+        "name": "Du Sith",
+        "lat": 55.7630,
+        "lng": -6.2310,
+        "category": "fairy",
+        "region": "Isle of Islay, Scotland",
+        "summary": "The Du Sith — the Black Elf of Islay — is a dark fairy of the Inner Hebrides, malevolent and elusive, said to haunt the moorland and coastal margins of the island. Unlike the more familiar fairy folk, the Du Sith carries no playful mischief; it is wholly hostile to human encounter. Islay's folklore tradition keeps it distinct from the broader Highland fairy world, a creature particular to that island's own ancient dark.",
+        "source": "https://en.wikipedia.org/wiki/Scottish_folklore"
+    },
+    {
+        "name": "Duergar",
+        "lat": 55.3271,
+        "lng": -1.9418,
+        "category": "fairy",
+        "region": "Northumberland",
+        "summary": "Dark, malevolent dwarf-like creatures of the Border hills, the Duergar lure travellers off safe paths on moonless nights and abandon them on cliff edges or in bogs. They are associated particularly with the Simonside Hills in Northumberland, where their lights have long been reported moving through the crags after dark. Unlike helpful brownies, the Duergar bear no goodwill toward humans and cannot be placated.",
+        "source": "https://en.wikipedia.org/wiki/Duergar"
+    },
+    {
+        "name": "Bodach",
+        "lat": 56.8770,
+        "lng": -5.1020,
+        "category": "ghost",
+        "region": "Highland, Scotland",
+        "summary": "A dark old man spirit of Scottish Gaelic tradition, the Bodach descends chimneys at night to steal or torment children. In some accounts he is an omen of death — seen before a killing or appearing to warn of misfortune — in others a straightforward malevolent presence in isolated Highland houses. His counterpart the Cailleach rules winter; the Bodach haunts the darkness within the home itself.",
+        "source": "https://en.wikipedia.org/wiki/Bodach"
+    },
+    {
+        "name": "Brollachan",
+        "lat": 56.6700,
+        "lng": -4.6000,
+        "category": "ghost",
+        "region": "Highland, Scotland",
+        "summary": "A formless, voiceless spirit of the Scottish Highlands, the Brollachan has no fixed shape of its own and takes the form of whatever vessel or hollow it inhabits. It can speak only two words — itself and thee — and when threatened becomes whatever thing causes most fear. Rannoch Moor, bleak and depthless, is the kind of landscape it is said to haunt: vast, shapeless, and indifferent to those who wander into it.",
+        "source": "https://en.wikipedia.org/wiki/Scottish_folklore"
     },
 ]
 

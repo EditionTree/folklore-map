@@ -295,7 +295,7 @@
     }
 
     /* ── POPUP CONTENT ── */
-    .popup-inner { padding: 14px 16px; min-width: 220px; max-width: 280px; }
+    .popup-inner { position: relative; padding: 14px 16px; min-width: 220px; max-width: 280px; }
     .popup-cat {
       font-family: var(--font-display);
       font-size: 9px;
@@ -343,7 +343,6 @@
       letter-spacing: 0.02em;
     }
     .popup-source:hover { color: var(--accent-glow); text-decoration: underline; }
-    .popup-actions { display: flex; align-items: center; gap: 10px; }
     .popup-copylink {
       background: none; border: none; padding: 0; cursor: pointer;
       font-family: var(--font-body); font-size: 11px; font-style: italic;
@@ -358,6 +357,7 @@
     .bookmark-btn.bookmarked { color: var(--accent); }
     .bookmark-icon { display: block; width: 13px; height: 17px; }
     .filter-icon .bookmark-icon { width: 12px; height: 15px; }
+    .popup-bookmark { position: absolute; top: 12px; right: 14px; }
     .popup-bookmark .bookmark-icon { width: 14px; height: 18px; }
 
     /* ── LEGEND PANEL ── */
@@ -710,6 +710,7 @@ function buildPopup(leg) {
   const encoded = encodeURIComponent(leg.name);
   const bookmarked = isBookmarked(leg.name);
   return `<div class="popup-inner">
+    <button class="bookmark-btn popup-bookmark${bookmarked ? ' bookmarked' : ''}" data-bookmark="${encoded}" aria-label="${bookmarked ? 'Remove bookmark' : 'Bookmark'}" title="${bookmarked ? 'Remove bookmark' : 'Bookmark'}">${bookmarkIconSvg(bookmarked)}</button>
     <span class="popup-cat" style="background:${cat.colour}">${cat.label}</span>
     <div class="popup-title">${escapeHtml(leg.name)}</div>
     <div class="popup-region">${escapeHtml(leg.region)}</div>
@@ -717,10 +718,7 @@ function buildPopup(leg) {
     <p class="popup-summary">${escapeHtml(leg.summary)}</p>
     <div class="popup-footer">
       <a class="popup-source" href="${escapeHtml(safeSourceUrl(leg.source))}" target="_blank" rel="noopener">Read more</a>
-      <div class="popup-actions">
-        <button class="bookmark-btn popup-bookmark${bookmarked ? ' bookmarked' : ''}" data-bookmark="${encoded}" aria-label="${bookmarked ? 'Remove bookmark' : 'Bookmark'}" title="${bookmarked ? 'Remove bookmark' : 'Bookmark'}">${bookmarkIconSvg(bookmarked)}</button>
-        <button class="popup-copylink" data-legend="${encoded}">copy link</button>
-      </div>
+      <button class="popup-copylink" data-legend="${encoded}">copy link</button>
     </div>
   </div>`;
 }

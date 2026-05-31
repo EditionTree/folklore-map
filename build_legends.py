@@ -54,8 +54,8 @@ CATEGORIES = [
     ("Category:Water_spirits",                    "water"),
     ("Category:Witchcraft_in_England",            "witch"),
     ("Category:Witchcraft_in_Scotland",           "witch"),
-    ("Category:Lake_monsters",                    "beast"),
-    ("Category:Sea_monsters",                     "beast"),
+    ("Category:Lake_monsters",                    "water"),
+    ("Category:Sea_monsters",                     "water"),
     ("Category:English_folklore",                 "beast"),
     ("Category:Scottish_folklore",                "beast"),
     ("Category:Welsh_folklore",                   "beast"),
@@ -101,7 +101,7 @@ CATEGORIES = [
     ("Category:Haunted_locations_in_Ireland",       "location"),
     ("Category:Sacred_sites_in_Ireland",            "location"),
     ("Category:Megalithic_monuments_in_Ireland",    "location"),
-    # Pirates & maritime folklore
+    # Pirates, privateers and smuggling. Maritime folklore belongs under water.
     ("Category:English_pirates",                    "pirate"),
     ("Category:Scottish_pirates",                   "pirate"),
     ("Category:Irish_pirates",                      "pirate"),
@@ -109,7 +109,6 @@ CATEGORIES = [
     ("Category:Privateers",                         "pirate"),
     ("Category:British_pirates",                    "pirate"),
     ("Category:Smuggling_in_the_United_Kingdom",    "pirate"),
-    ("Category:Wrecking_(shipwrecks)",              "pirate"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -136,7 +135,7 @@ CATEGORY_LABELS = {
     "location": "Legendary Sites",
     "ancient_site": "Ancient & Sacred Sites",
     "hero": "Heroes & Legendary Figures",
-    "pirate": "Pirates & Maritime Lore",
+    "pirate": "Pirates & Smugglers",
     "ritual": "Rituals & Folk Customs",
     "norse": "Norse & Northern Lore",
 }
@@ -2831,11 +2830,21 @@ HES_FOLKLORE_TERMS = [
     "wreck", "smuggl", "pirat",
 ]
 
+PIRATE_RELATED_TERMS = [
+    "pirat", "privateer", "buccaneer", "corsair", "smuggl",
+    "wrecking", "wrecker", "treasure",
+]
+
 
 def _he_term_relevant(name: str, desc: str = "") -> bool:
     """Return True if the site name or description suggests folkloric relevance."""
     text = (name + " " + desc).lower()
     return any(t in text for t in HES_FOLKLORE_TERMS)
+
+def _pirate_term_relevant(name: str, desc: str = "") -> bool:
+    """Exclude ordinary wrecks unless the record signals pirate-related lore."""
+    text = (name + " " + desc).lower()
+    return any(t in text for t in PIRATE_RELATED_TERMS)
 
 
 def fetch_hes_wfs(verbose: bool = False) -> list:
@@ -2932,8 +2941,10 @@ def fetch_hes_wfs(verbose: bool = False) -> list:
                     desc = (props.get("SM_DESCR") or props.get("DESCRIPTION") or
                             props.get("DESC_") or "").strip()
 
-                    # Filter to folklore-relevant sites
-                    if not _he_term_relevant(name, desc):
+                    # Ordinary protected wrecks are not pirate lore.
+                    if category == "pirate" and not _pirate_term_relevant(name, desc):
+                        continue
+                    if category != "pirate" and not _he_term_relevant(name, desc):
                         continue
 
                     # Build summary
@@ -3116,13 +3127,15 @@ def fetch_historic_england(verbose: bool = False) -> list:
                     if not name:
                         continue
 
-                    # Filter to folklore-relevant sites
-                    if not _nhle_relevant(name):
-                        continue
-
                     desc   = (attrs.get("DESCRIPTION") or "").strip()
                     period = (attrs.get("PERIOD") or "").strip()
                     grade  = (attrs.get("GRADE") or "").strip()
+
+                    # Ordinary protected wrecks are not pirate lore.
+                    if category == "pirate" and not _pirate_term_relevant(name, desc):
+                        continue
+                    if category != "pirate" and not _nhle_relevant(name):
+                        continue
 
                     if desc:
                         summary = desc[:450]

@@ -381,29 +381,8 @@
     /* ── MOBILE ── */
     @media (max-width: 640px) {
       .subtitle { display: none; }
-      /* Sidebar overlays map on mobile, starts collapsed */
-      .sidebar {
-        position: absolute; top: 0; bottom: 0; left: 0;
-        z-index: 850; box-shadow: 4px 0 20px rgba(0,0,0,0.3);
-        width: var(--sidebar-w);
-      }
-      .sidebar.collapsed {
-        width: 0; opacity: 0; pointer-events: none;
-        box-shadow: none;
-      }
-      /* Filter bar scrolls horizontally instead of wrapping */
-      .filter-bar {
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-        padding: 5px 10px;
-        gap: 5px;
-      }
-      .filter-bar::-webkit-scrollbar { display: none; }
-      .filter-btn { font-size: 11px; padding: 2px 8px; white-space: nowrap; flex-shrink: 0; }
-      .count-badge { display: none; }
-      .entry-count { display: none; }
+      .sidebar { position: absolute; top: 0; bottom: 0; left: 0; z-index: 850; box-shadow: 4px 0 20px rgba(0,0,0,0.3); }
+      .sidebar.collapsed { width: 0; }
       .legend-panel { display: none; }
       footer span:first-child { display: none; }
     }
@@ -476,12 +455,6 @@ const CATEGORIES = {
 let nightMode = false;
 let markers = [];
 let activeFilter = 'all';
-let sidebarOpen = window.innerWidth > 640;
-
-// Collapse sidebar on mobile at load
-if (!sidebarOpen) {
-  document.getElementById('sidebar')?.classList.add('collapsed');
-}
 
 const BOUNDS = L.latLngBounds([46.0, -14.0], [65.0, 6.0]);
 const map = L.map('map', {
@@ -671,7 +644,7 @@ function toggleSidebar() {
   sidebarOpen = !sidebarOpen;
   document.getElementById('sidebar').classList.toggle('collapsed', !sidebarOpen);
   document.getElementById('sidebarToggleBtn').textContent = sidebarOpen ? '✕ Entries' : '☰ Entries';
-  if (window.innerWidth > 640) setTimeout(() => map.invalidateSize(), 300);
+  setTimeout(() => map.invalidateSize(), 300);
 }
 
 function buildSidebarList(legends) {
@@ -700,28 +673,52 @@ function highlightSidebarItem(name) {
   });
 }
 
-fetch('legends.json?v=' + Date.now())
-  .then(r => {
-    if (!r.ok) throw new Error(`HTTP ${r.status}`);
-    return r.json();
+// ── DATA SOURCE ───────────────────────────────────────────────────────────
+// Set SUPABASE_URL and SUPABASE_ANON_KEY to fetch from Supabase.
+// Leave empty to use legends.json (current default).
+// The anon key is safe to put here — it's read-only by design.
+const SUPABASE_URL      = '';   // e.g. 'https://xxxx.supabase.co'
+const SUPABASE_ANON_KEY = '';   // e.g. 'eyJhbGci...'
+
+function onDataLoaded(legends) {
+  LEGENDS = legends;
+  loadMarkers(LEGENDS);
+  buildFilters();
+  buildLegend();
+  buildSidebarList(LEGENDS);
+  updateCount(LEGENDS.length);
+  markers.forEach(m => m.on('popupopen', () => highlightSidebarItem(m._legendData.name)));
+}
+
+function onDataError(err) {
+  console.error('Failed to load legend data:', err);
+  document.getElementById('filterBar').insertAdjacentHTML('beforeend',
+    `<span style="color:#8b3a1a;font-size:12px;margin-left:8px">
+      ⚠ Could not load legend data. Check the console for details.
+    </span>`
+  );
+}
+
+if (SUPABASE_URL && SUPABASE_ANON_KEY) {
+  // ── Fetch from Supabase ──────────────────────────────────────────────
+  // Selects all columns, ordered by name, no row limit
+  fetch(`${SUPABASE_URL}/rest/v1/legends?select=*&order=name.asc&limit=10000`, {
+    headers: {
+      'apikey':        SUPABASE_ANON_KEY,
+      'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+    }
   })
-  .then(data => {
-    LEGENDS = data.legends || data;
-    loadMarkers(LEGENDS);
-    buildFilters();
-    buildLegend();
-    buildSidebarList(LEGENDS);
-    updateCount(LEGENDS.length);
-    markers.forEach(m => m.on("popupopen", () => highlightSidebarItem(m._legendData.name)));
-  })
-  .catch(err => {
-    console.error('Failed to load legends.json:', err);
-    document.getElementById('filterBar').insertAdjacentHTML('beforeend',
-      `<span style="color:#8b3a1a;font-size:12px;margin-left:8px">
-        ⚠ Could not load legends.json — run build_legends.py first, or open via a local server.
-      </span>`
-    );
-  });
+  .then(r => { if (!r.ok) throw new Error(`Supabase HTTP ${r.status}`); return r.json(); })
+  .then(rows => onDataLoaded(rows))
+  .catch(onDataError);
+
+} else {
+  // ── Fallback: fetch from legends.json ────────────────────────────────
+  fetch('legends.json?v=' + Date.now())
+  .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
+  .then(data => onDataLoaded(data.legends || data))
+  .catch(onDataError);
+}
 </script>
 </body>
 </html>

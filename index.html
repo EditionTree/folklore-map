@@ -108,15 +108,21 @@
       bottom: 0; left: 0; right: 0; height: 1px;
       background: linear-gradient(90deg, transparent 0%, rgba(176,144,96,0.6) 20%, rgba(196,98,42,0.8) 50%, rgba(176,144,96,0.6) 80%, transparent 100%);
     }
-    .header-emblem {
+    .header-emblem-wrap {
       width: 72px; height: 72px;
       flex-shrink: 0;
-      object-fit: contain;
-      filter: sepia(0.9) brightness(0.7) contrast(1.15) saturate(1.3);
       mask-image: radial-gradient(ellipse 80% 80% at center, black 40%, rgba(0,0,0,0.75) 55%, rgba(0,0,0,0.4) 70%, rgba(0,0,0,0.1) 82%, transparent 92%);
       -webkit-mask-image: radial-gradient(ellipse 80% 80% at center, black 40%, rgba(0,0,0,0.75) 55%, rgba(0,0,0,0.4) 70%, rgba(0,0,0,0.1) 82%, transparent 92%);
     }
-    @media (max-width: 640px) { .header-emblem { width: 44px; height: 44px; } }
+    .header-emblem {
+      width: 100%; height: 100%;
+      object-fit: contain;
+      display: block;
+      filter: sepia(0.9) brightness(0.7) contrast(1.15) saturate(1.3);
+    }
+    @media (max-width: 640px) {
+      .header-emblem-wrap { width: 44px; height: 44px; }
+    }
     .header-title { display: flex; align-items: center; gap: 14px; }
     .header-title-row { display: flex; align-items: baseline; gap: 14px; }
     .mobile-title { display: none; }
@@ -583,7 +589,7 @@
 
 <header>
   <div class="header-title">
-    <img src="green-man.png" class="header-emblem" alt="Green Man"/>
+    <div class="header-emblem-wrap"><img src="green-man.png" class="header-emblem" alt="Green Man"/></div>
     <div class="header-title-row">
       <h1 class="desktop-title">Folklore Map of the British Isles</h1>
       <h1 class="mobile-title">Folklore of the British Isles</h1>

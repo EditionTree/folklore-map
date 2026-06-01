@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-01T18:40:59.550771Z",
-  "total": 377,
+  "generated": "2026-06-01T18:48:27.835879Z",
+  "total": 378,
   "categories": {
     "beast": "Beasts",
     "ghost": "Ghosts",
@@ -1717,6 +1717,15 @@
       "source": "https://en.wikipedia.org/wiki/Kelpie"
     },
     {
+      "name": "Kilkenny Witch Trials",
+      "lat": 52.654,
+      "lng": -7.252,
+      "category": "witch",
+      "region": "Kilkenny, County Kilkenny, Ireland",
+      "summary": "The Kilkenny witch trials of 1324 centred on accusations against the wealthy Alice Kyteler and eleven associates. Kyteler escaped, but Petronilla de Meath was tortured and burned at the stake for alleged witchcraft and heresy. The case remains a dark landmark in Irish history.",
+      "source": "https://kilkennyheritage.ie/cultural-heritage/kilkenny-witch-trials/"
+    },
+    {
       "name": "King Arthur",
       "lat": 51.144,
       "lng": -2.699,
@@ -2271,7 +2280,7 @@
       "lng": -2.718,
       "category": "witch",
       "region": "North Berwick, East Lothian",
-      "summary": "The North Berwick witch trials began in the late sixteenth century after accusations that witches had raised storms against King James VI. Local tradition centres on gatherings at St Andrew's Kirk and on attempts to summon destructive weather.",
+      "summary": "The North Berwick witch trials began in the late sixteenth century after accusations that witches had raised storms against King James VI. Local tradition centres on gatherings at St Andrew's Kirk and on attempts to summon destructive weather. Among those accused were Agnes Sampson, a midwife, and Gellie Duncan, a healer; their confessions were extracted under torture.",
       "source": "https://www.historic-uk.com/HistoryUK/HistoryofScotland/North-Berwick-Witch-Trials/"
     },
     {

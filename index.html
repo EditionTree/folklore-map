@@ -46,6 +46,7 @@
     "author": { "@type": "Person", "name": "EditionTree" }
   }
   </script>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"/>
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"/>
@@ -84,9 +85,9 @@
 
     /* ── HEADER ── */
     header {
-      background: linear-gradient(180deg, #1e1408 0%, var(--ink) 70%);
+      background: linear-gradient(180deg, #1e1408 0%, var(--ink) 75%);
       border-bottom: 1px solid rgba(176,144,96,0.35);
-      padding: 16px 24px;
+      padding: 18px 24px 16px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -98,41 +99,47 @@
     header::before {
       content: '';
       position: absolute;
-      top: 0; left: 0; right: 0; height: 2px;
-      background: linear-gradient(90deg, transparent 0%, var(--accent) 20%, var(--border) 50%, var(--accent) 80%, transparent 100%);
+      top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, transparent 0%, var(--accent) 15%, var(--border) 50%, var(--accent) 85%, transparent 100%);
     }
     header::after {
       content: '';
       position: absolute;
-      bottom: -5px; left: 0; right: 0;
-      height: 3px;
-      background: repeating-linear-gradient(90deg, var(--accent) 0, var(--accent) 6px, transparent 6px, transparent 12px);
-      opacity: 0.4;
+      bottom: 0; left: 0; right: 0; height: 1px;
+      background: linear-gradient(90deg, transparent 0%, rgba(176,144,96,0.6) 20%, rgba(196,98,42,0.8) 50%, rgba(176,144,96,0.6) 80%, transparent 100%);
     }
-    .header-title { display: flex; align-items: baseline; gap: 14px; }
+    .header-emblem {
+      width: 40px; height: 40px;
+      flex-shrink: 0;
+      opacity: 0.92;
+      filter: drop-shadow(0 0 6px rgba(196,98,42,0.4));
+    }
+    @media (max-width: 640px) { .header-emblem { width: 30px; height: 30px; } }
+    .header-title { display: flex; align-items: center; gap: 14px; }
+    .header-title-row { display: flex; align-items: baseline; gap: 14px; }
     .mobile-title { display: none; }
     h1 {
       font-family: var(--font-display);
-      font-size: 24px;
+      font-size: 26px;
       font-weight: 600;
       color: var(--parchment);
-      letter-spacing: 0.09em;
-      text-shadow: 0 1px 18px rgba(196,98,42,0.4), 0 0 40px rgba(176,144,96,0.12);
+      letter-spacing: 0.1em;
+      text-shadow: 0 1px 22px rgba(196,98,42,0.5), 0 0 50px rgba(176,144,96,0.15);
     }
     h1::before, h1::after {
       content: '✦';
       font-size: 11px;
       color: var(--accent-glow);
-      opacity: 0.7;
+      opacity: 0.75;
       vertical-align: middle;
-      margin: 0 8px;
+      margin: 0 10px;
     }
     .subtitle {
       font-family: var(--font-body);
       font-size: 13px;
-      color: rgba(176,144,96,0.85);
+      color: rgba(176,144,96,0.8);
       font-style: italic;
-      letter-spacing: 0.04em;
+      letter-spacing: 0.05em;
     }
     .header-controls { display: flex; align-items: center; gap: 10px; }
 
@@ -216,17 +223,16 @@
       display: flex;
       align-items: center;
       gap: 8px;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       position: relative;
       z-index: 900;
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
     }
+    .filter-bar::-webkit-scrollbar { display: none; }
     @media (max-width: 640px) {
-      .filter-bar {
-        flex-wrap: nowrap;
-        padding: 6px 12px;
-      }
+      .filter-bar { padding: 6px 12px; }
     }
     .filter-label {
       font-family: var(--font-display);
@@ -247,6 +253,8 @@
       cursor: pointer;
       transition: all 0.15s;
       display: flex; align-items: center; gap: 5px;
+      white-space: nowrap;
+      flex-shrink: 0;
     }
     .filter-btn:hover { background: var(--parchment-dk); }
     .filter-btn.active { background: var(--ink); color: var(--parchment); border-color: var(--ink); }
@@ -304,7 +312,7 @@
     }
 
     /* ── POPUP CONTENT ── */
-    .popup-inner { position: relative; padding: 14px 16px; min-width: 220px; max-width: 280px; }
+    .popup-inner { position: relative; padding: 14px 16px; min-width: 240px; max-width: 300px; }
     .popup-cat {
       font-family: var(--font-display);
       font-size: 9px;
@@ -337,27 +345,39 @@
       opacity: 0.5;
     }
     .popup-summary {
-      font-size: 13px;
-      line-height: 1.6;
+      font-size: 14px;
+      line-height: 1.7;
       color: var(--ink);
       margin-bottom: 10px;
     }
-    .popup-footer { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 8px; padding-top: 6px; border-top: 1px solid rgba(176,144,96,0.3); }
+    .popup-summary::first-letter {
+      font-family: var(--font-display);
+      font-size: 1.45em;
+      font-weight: 600;
+      color: var(--accent);
+    }
+    .popup-footer { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 10px; padding-top: 8px; border-top: 1px solid rgba(176,144,96,0.4); }
     .popup-source {
-      font-family: var(--font-body);
-      font-size: 11px;
+      font-family: var(--font-display);
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
       color: var(--accent);
       text-decoration: none;
-      font-style: italic;
-      letter-spacing: 0.02em;
+      padding: 4px 10px;
+      border: 1px solid rgba(139,58,26,0.35);
+      border-radius: 2px;
+      transition: background 0.15s, color 0.15s;
     }
-    .popup-source:hover { color: var(--accent-glow); text-decoration: underline; }
+    .popup-source:hover { background: var(--accent); color: var(--parchment); }
     .popup-copylink {
-      background: none; border: none; padding: 0; cursor: pointer;
-      font-family: var(--font-body); font-size: 11px; font-style: italic;
-      color: var(--ink-light); letter-spacing: 0.02em; transition: color 0.15s;
+      background: none; border: 1px solid rgba(92,74,42,0.25); border-radius: 2px;
+      padding: 4px 10px; cursor: pointer;
+      font-family: var(--font-display); font-size: 10px; letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-light); transition: border-color 0.15s, color 0.15s;
     }
-    .popup-copylink:hover { color: var(--accent); }
+    .popup-copylink:hover { color: var(--accent); border-color: rgba(139,58,26,0.5); }
     .bookmark-btn {
       background: none; border: none; padding: 0; cursor: pointer;
       color: var(--ink-light); line-height: 1; transition: color 0.15s, transform 0.15s;
@@ -420,9 +440,9 @@
 
     /* ── FOOTER ── */
     footer {
-      background: var(--ink);
-      border-top: 1px solid #3a2c18;
-      padding: 6px 20px;
+      background: linear-gradient(180deg, var(--ink) 0%, #1e1408 100%);
+      border-top: none;
+      padding: 8px 20px;
       font-family: var(--font-body);
       font-size: 11px;
       color: var(--border);
@@ -431,8 +451,29 @@
       align-items: center;
       position: relative;
       z-index: 1000;
+      gap: 12px;
     }
-    footer a { color: var(--border); }
+    footer::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; height: 1px;
+      background: linear-gradient(90deg, transparent 0%, rgba(176,144,96,0.6) 20%, rgba(196,98,42,0.8) 50%, rgba(176,144,96,0.6) 80%, transparent 100%);
+    }
+    footer a { color: var(--border); text-decoration: none; }
+    footer a:hover { color: var(--parchment); }
+    .footer-brand {
+      font-family: var(--font-display);
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(176,144,96,0.7);
+      white-space: nowrap;
+    }
+    .footer-brand span { color: rgba(196,98,42,0.8); margin: 0 6px; }
+    .footer-tiles { font-size: 10px; color: rgba(176,144,96,0.5); text-align: right; }
+    @media (max-width: 640px) {
+      .footer-tiles { display: none; }
+    }
 
     .marker-cluster { border-radius: 50% !important; background: transparent !important; }
     .marker-cluster-small, .marker-cluster-medium, .marker-cluster-large { background: none !important; }
@@ -529,7 +570,7 @@
       .sidebar:not(.collapsed) + .map-wrap .leaflet-control-zoom { display: none; }
 
       .legend-panel { display: none; }
-      footer span:first-child { display: none; }
+      .footer-brand { display: none; }
     }
   </style>
 </head>
@@ -537,9 +578,12 @@
 
 <header>
   <div class="header-title">
-    <h1 class="desktop-title">Folklore Map of the British Isles</h1>
-    <h1 class="mobile-title">Folklore of the British Isles</h1>
-    <span class="subtitle">Myths, Legends & Spectral Encounters</span>
+    <img src="favicon.svg" class="header-emblem" alt=""/>
+    <div class="header-title-row">
+      <h1 class="desktop-title">Folklore Map of the British Isles</h1>
+      <h1 class="mobile-title">Folklore of the British Isles</h1>
+      <span class="subtitle">Myths, Legends &amp; Spectral Encounters</span>
+    </div>
   </div>
   <div class="header-controls">
     <button class="sidebar-toggle-btn" id="sidebarToggleBtn" onclick="toggleSidebar()">☰ Entries</button>
@@ -578,8 +622,8 @@
 </div>
 
 <footer>
-  <span>Folklore Map of the British Isles — an ongoing project</span>
-  <span>Map tiles © <a href="https://stadiamaps.com/">Stadia Maps</a> / <a href="https://stamen.com">Stamen Design</a> · Data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors</span>
+  <div class="footer-brand">Folklore Map of the British Isles<span>✦</span>© EditionTree</div>
+  <div class="footer-tiles">Map tiles © <a href="https://stadiamaps.com/">Stadia Maps</a> / <a href="https://stamen.com">Stamen Design</a> · Data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors</div>
 </footer>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -669,7 +713,8 @@ const EXCLUDED_LEGEND_NAMES = new Set([
 const BOUNDS = L.latLngBounds([44.0, -16.0], [67.0, 9.0]);
 const map = L.map('map', {
   zoomControl: true, minZoom: 5, maxZoom: 17,
-  maxBounds: BOUNDS, maxBoundsViscosity: 0.7
+  maxBounds: BOUNDS, maxBoundsViscosity: 0.7,
+  attributionControl: false
 }).setView([54.5, -2.5], 6);
 
 const clusterGroup = L.markerClusterGroup({

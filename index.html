@@ -357,8 +357,15 @@
     .bookmark-btn.bookmarked { color: var(--accent); }
     .bookmark-icon { display: block; width: 13px; height: 17px; }
     .filter-icon .bookmark-icon { width: 12px; height: 15px; }
-    .popup-bookmark { position: absolute; top: -1px; right: 38px; }
-    .popup-bookmark .bookmark-icon { width: 18px; height: 24px; }
+    .popup-bookmark {
+      position: absolute; top: -1px; right: 38px;
+      width: 24px; height: 34px;
+      color: var(--border);
+      filter: drop-shadow(0 2px 2px rgba(44,31,14,0.16));
+      transform-origin: top center;
+    }
+    .popup-bookmark:hover { color: var(--accent); transform: translateY(1px); }
+    .popup-bookmark .popup-bookmark-tab { display: block; width: 24px; height: 34px; }
 
     /* ── LEGEND PANEL ── */
     .legend-panel {
@@ -506,9 +513,6 @@
       .btn-label { display: none; }
       .filter-btn[data-cat="all"] .btn-label { display: inline; }
       .filter-btn { padding: 3px 8px; }
-      .popup-bookmark { top: -2px; right: 42px; }
-      .popup-bookmark .bookmark-icon { width: 20px; height: 27px; }
-
       /* Sidebar: overlay from content-area top (which is below header+filterbar) */
       .sidebar { position: absolute; top: 0; bottom: 0; left: 0; z-index: 850; box-shadow: 4px 0 20px rgba(0,0,0,0.3); }
       .sidebar.collapsed { width: 0; }
@@ -626,6 +630,15 @@ function bookmarkIconSvg(bookmarked) {
   </svg>`;
 }
 
+function popupBookmarkTabSvg(bookmarked) {
+  return `<svg class="popup-bookmark-tab" viewBox="0 0 24 34" aria-hidden="true">
+    <path d="M1 0.5h22v31l-11-6.8-11 6.8z"
+      fill="${bookmarked ? 'var(--accent)' : 'var(--parchment-dk)'}"
+      stroke="${bookmarked ? 'var(--accent)' : 'var(--border)'}"
+      stroke-width="1.5" stroke-linejoin="round"/>
+  </svg>`;
+}
+
 // Apply persisted sidebar state immediately (before data loads)
 document.addEventListener('DOMContentLoaded', () => {
   const sidebar = document.getElementById('sidebar');
@@ -714,7 +727,7 @@ function buildPopup(leg) {
   const encoded = encodeURIComponent(leg.name);
   const bookmarked = isBookmarked(leg.name);
   return `<div class="popup-inner">
-    <button class="bookmark-btn popup-bookmark${bookmarked ? ' bookmarked' : ''}" data-bookmark="${encoded}" aria-label="${bookmarked ? 'Remove bookmark' : 'Bookmark'}" title="${bookmarked ? 'Remove bookmark' : 'Bookmark'}">${bookmarkIconSvg(bookmarked)}</button>
+    <button class="bookmark-btn popup-bookmark${bookmarked ? ' bookmarked' : ''}" data-bookmark="${encoded}" aria-label="${bookmarked ? 'Remove bookmark' : 'Bookmark'}" title="${bookmarked ? 'Remove bookmark' : 'Bookmark'}">${popupBookmarkTabSvg(bookmarked)}</button>
     <span class="popup-cat" style="background:${cat.colour}">${cat.label}</span>
     <div class="popup-title">${escapeHtml(leg.name)}</div>
     <div class="popup-region">${escapeHtml(leg.region)}</div>

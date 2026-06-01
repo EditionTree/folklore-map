@@ -3155,6 +3155,111 @@ SEED_LEGENDS = [
         "summary": "The Llamhigyn y Dŵr, or Water Leaper, is a Welsh aquatic creature described as a monstrous winged toad with a long tail. Folklore associates it with attacks on livestock and fishermen, including stories around Llyn Gwynant.",
         "source": "https://en.wikipedia.org/wiki/Llamhigyn_y_D%C5%B5r"
     },
+    {
+        "name": "Donn",
+        "lat": 51.59202, "lng": -10.30122,
+        "category": "deity", "region": "Bull Rock (Tech Duinn), Beara Peninsula, County Cork, Munster",
+        "summary": "Donn, the Dark One, is the Irish lord of the dead and one of the Milesian ancestors of the Gaels. His dwelling, Tech Duinn or the House of Donn, is identified with Bull Rock off Dursey Island, a sea stack pierced by a natural tunnel like a portal to another world. Folklore describes him as a phantom horseman riding across the Atlantic before storms.",
+        "source": "https://en.wikipedia.org/wiki/Donn"
+    },
+    {
+        "name": "Áine",
+        "lat": 52.503, "lng": -8.499,
+        "category": "deity", "region": "Knockainey (Cnoc Áine), County Limerick, Munster",
+        "summary": "Áine is a sovereign goddess and fairy queen of Munster, associated with Cnoc Áine in County Limerick and the waters of Lough Gur. She presided over summer, love, fertility, crops, and cattle. On St John's Eve, communities lit torches on her hill and processed through fields and herds to invoke her blessing.",
+        "source": "https://en.wikipedia.org/wiki/%C3%81ine"
+    },
+    {
+        "name": "Crom Cruach",
+        "lat": 54.043, "lng": -7.461,
+        "category": "deity", "region": "Magh Slécht (Killycluggin), County Cavan, Ireland",
+        "summary": "Crom Cruach was a feared idol of pre-Christian Irish tradition, said to stand at Magh Slécht, the Plain of Prostrations, encircled by twelve lesser stones. Medieval sources tell how St Patrick destroyed the idol. The broken and decorated Killycluggin Stone was found near a stone circle in County Cavan and is often associated with the tradition.",
+        "source": "https://en.wikipedia.org/wiki/Crom_Cruach"
+    },
+    {
+        "name": "Étaín",
+        "lat": 53.761, "lng": -7.748,
+        "category": "fairy", "region": "Brí Léith (Ardagh Hill), County Longford, Ireland",
+        "summary": "Étaín is the heroine of The Wooing of Étaín, a tale of the Irish Mythological Cycle. Transformed by a jealous sorceress into a pool, a worm, and then a scarlet fly, she is reborn as a mortal queen with no memory of her past. The fairy king Midir, whose otherworldly mound Brí Léith is associated with Ardagh Hill, pursues her across two lifetimes.",
+        "source": "https://en.wikipedia.org/wiki/%C3%89ta%C3%ADn"
+    },
+    {
+        "name": "Fachan",
+        "lat": 56.549, "lng": -4.987,
+        "category": "beast", "region": "Glen Etive and West Highlands, Argyll, Scotland",
+        "summary": "The Fachan, also called Direach Ghlinn Eitidh, is a terrifying creature of Scottish Highland folklore documented by J. F. Campbell. It has a single eye, one hand emerging from its chest, and one leg, topped by a solitary tuft of feathers. Glen Etive in Argyll is the named haunt most associated with it.",
+        "source": "https://en.wikipedia.org/wiki/Fachan"
+    },
+    {
+        "name": "Gruagach",
+        "lat": 56.503, "lng": -6.883,
+        "category": "fairy", "region": "Hebrides, Scotland",
+        "summary": "The Gruagach, or Long-Haired One, is a tutelary fairy spirit of the Hebrides and Highland Scotland believed to protect cattle and livestock. Libations of warm milk were left in hollowed stones called clach na gruagaich. Such offering stones have been recorded across islands including Lewis, Islay, Mull, Tiree, Arran, and St Kilda.",
+        "source": "https://en.wikipedia.org/wiki/Gruagach"
+    },
+    {
+        "name": "Giant of Petta Water",
+        "lat": 60.31378, "lng": -1.25017,
+        "category": "giant", "region": "Petta Water and Kneefell, Shetland Mainland, Scotland",
+        "summary": "A Shetland giant once lived near Petta Water alongside trows who tormented him until he tried to carry them away in a kishie basket and throw them into the sea. The weight of the trows broke the basket, scattering them across the landscape. Local tradition says the giant's footprint remains as Petta Water and the hollow where he set down his knee survives in Kneefell.",
+        "source": "https://www.shetland.org/blog/shetland-folklore"
+    },
+    {
+        "name": "Angelystor",
+        "lat": 53.228, "lng": -3.697,
+        "category": "ghost", "region": "Llangernyw, Conwy, Wales",
+        "summary": "Angelystor, the Recording Angel, is a supernatural voice said to inhabit the churchyard of St Digain's Church in Llangernyw. Each Halloween night, the spirit announces the names of parishioners who will die in the coming year. The tradition is centred on the churchyard's ancient yew tree.",
+        "source": "https://en.wikipedia.org/wiki/Llangernyw_Yew"
+    },
+    {
+        "name": "Gwragedd Annwn",
+        "lat": 52.644, "lng": -3.992,
+        "category": "fairy", "region": "Llyn Barfog, Gwynedd, Wales",
+        "summary": "The Gwragedd Annwn, or Wives of the Underworld, are beautiful lake-dwelling fairies of Welsh tradition. They emerge from mountain lakes to marry mortals under strict conditions, returning beneath the water if those conditions are broken. Llyn Barfog, the Bearded Lake, is among the places most closely associated with them.",
+        "source": "https://en.wikipedia.org/wiki/Gwragedd_Annwn"
+    },
+    {
+        "name": "Gwyllgi",
+        "lat": 53.147, "lng": -3.241,
+        "category": "beast", "region": "Nant y Garth Pass, Denbighshire, Wales",
+        "summary": "The Gwyllgi, the Dog of Darkness, is a great phantom black hound of Welsh folklore with blazing eyes and a shaggy pelt. Unlike the spectral pack of the Cŵn Annwn, it is a solitary creature of roads and hedgerows. A local tradition places it in the Nant y Garth Pass in the Clwydian Hills.",
+        "source": "https://en.wikipedia.org/wiki/Gwyllgi"
+    },
+    {
+        "name": "Llangorse Lake",
+        "lat": 51.9, "lng": -3.267,
+        "category": "location", "region": "Bannau Brycheiniog, Powys, Wales",
+        "summary": "Llangorse Lake, or Llyn Syfaddan, was recorded by Gerald of Wales as a place of strange phenomena. Local tradition tells of a drowned settlement beneath the water whose bells can be heard on still days. A royal crannog, an artificial island associated with the kings of Brycheiniog, has been archaeologically confirmed in the lake.",
+        "source": "https://en.wikipedia.org/wiki/Llangorse_Lake"
+    },
+    {
+        "name": "Barclodiad y Gawres",
+        "lat": 53.204, "lng": -4.47,
+        "category": "giant", "region": "Llanfaelog, Anglesey, Wales",
+        "summary": "Barclodiad y Gawres, the Giantess's Apronful, is a Neolithic passage tomb on the coast of Anglesey. Legend says a giantess dropped the stones from her apron after learning how far she still had to travel. The decorated chamber stones and the site itself are protected by Cadw.",
+        "source": "https://en.wikipedia.org/wiki/Barclodiad_y_Gawres"
+    },
+    {
+        "name": "Wild Edric",
+        "lat": 52.597, "lng": -2.931,
+        "category": "hero", "region": "Clun Forest and Stiperstones, Shropshire, England",
+        "summary": "Wild Edric was an Anglo-Saxon thane of Shropshire who became the subject of an early English fairy-bride legend. He broke a condition imposed by his otherworldly wife Godda, causing her to vanish. Later tradition says his spirit rides with a ghostly cavalcade over the Stiperstones whenever England faces danger.",
+        "source": "https://en.wikipedia.org/wiki/Eadric_the_Wild"
+    },
+    {
+        "name": "Tom Hickathrift",
+        "lat": 52.666, "lng": 0.16,
+        "category": "hero", "region": "Marshland, Cambridgeshire and Norfolk, England",
+        "summary": "Tom Hickathrift is a folk hero of the Fenlands, famed for extraordinary strength. In the best-known tale, he killed an ogre terrorising the Smeeth near Wisbech using a cart wheel and axle as an improvised shield and club. His story appears in early chapbooks and was collected by Joseph Jacobs.",
+        "source": "https://en.wikipedia.org/wiki/Tom_Hickathrift"
+    },
+    {
+        "name": "Lady Howard of Okehampton",
+        "lat": 50.738, "lng": -4.003,
+        "category": "ghost", "region": "Okehampton, Devon, England",
+        "summary": "Devon tradition condemns Lady Mary Howard to ride each night from Tavistock to Okehampton Castle in a carriage made from the bones of her husbands. A black dog runs before the carriage and plucks one blade of grass from the castle mound on arrival. Only when every blade is gone will the haunting end.",
+        "source": "https://www.legendarydartmoor.co.uk/2016/03/25/lady_how/"
+    },
 ]
 
 
@@ -3561,11 +3666,81 @@ FORCE_CATEGORY = {
     "Mordiford Dragon": "dragon",
     "Black Annis": "beast", "Wisht Hounds": "beast",
     "Renwick Cockatrice": "beast", "Fad Felen": "beast",
+    "Hartlepool Monkey": "beast",
     "Grace O\'Malley": "pirate", "Blackbeard": "pirate",
     "Anne Bonny": "pirate", "Mary Read": "pirate",
     "Black Bart Roberts": "pirate", "Calico Jack": "pirate",
     "Henry Every": "pirate", "William Kidd": "pirate",
     "Davy Jones": "pirate",
+}
+
+DISPLAY_NAME_SUFFIX_RE = re.compile(
+    r"\s+\([^)]*(?:privateer|tradition|stone circle|legend|folklore)[^)]*\)$",
+    re.IGNORECASE,
+)
+
+REGION_OVERRIDES = {
+    "Ashleypark Burial Mound": "Ashleypark, County Tipperary",
+    "Battle of Barry": "Barry, Angus, Scotland",
+    "Beenalaght": "Coachford, County Cork",
+    "Behy court tomb": "Belderrig, County Mayo",
+    "Blarney Stone": "Blarney Castle, County Cork",
+    "Breeny More Stone Circle": "Breeny More, County Cork",
+    "Bryn Cader Faner": "Ardudwy, Gwynedd, Wales",
+    "Bryn Gwyn stones": "Brynsiencyn, Anglesey, Wales",
+    "Brú na Bóinne": "Boyne Valley, County Meath",
+    "Cantre'r Gwaelod": "Cardigan Bay, Wales",
+    "Caerleon": "Caerleon, Newport, Wales",
+    "Carricknagat Megalithic Tombs": "Carricknagat, County Sligo",
+    "Carrigagulla": "Carrigagulla, County Cork",
+    "Carrigaphooca Stone Circle": "Carrigaphooca, County Cork",
+    "Carrowmore": "Carrowmore, County Sligo",
+    "Carrownlisheen Wedge Tomb": "Carrownlisheen, County Clare",
+    "Clodagh Standing Stones": "Clodagh, County Cork",
+    "Cloghanmore": "Glencolmcille, County Donegal",
+    "Coolcoulaghta Standing Stones": "Coolcoulaghta, County Cork",
+    "Craigs Dolmen": "Craigs, County Antrim",
+    "Dolmen of the Four Maols": "Ballina, County Mayo",
+    "Eightercua": "Waterville, County Kerry",
+    "Farranahineeny Stone Row": "Farranahineeny, County Kerry",
+    "Fat Lips": "Jedburgh Castle Jail, Scottish Borders",
+    "Finn McCools Fingers": "Shantemon Mountain, County Cavan",
+    "Giant's Causeway": "Bushmills, County Antrim",
+    "Glantane East": "Glantane, County Cork",
+    "Gulf of Corryvreckan": "Between Jura and Scarba, Argyll",
+    "Heapstown Cairn": "Heapstown, County Sligo",
+    "Henderson Stone": "Ardgour, Lochaber",
+    "Knocknakilla": "Knocknakilla, County Cork",
+    "Labbacallee wedge tomb": "Glanworth, County Cork",
+    "Listoghil": "Carrowmore, County Sligo",
+    "Llyn y Fan Fach": "Bannau Brycheiniog, Carmarthenshire",
+    "Lochmaben Stone": "Gretna, Dumfries and Galloway",
+    "Loftus Hall": "Hook Peninsula, County Wexford",
+    "Meehambee Dolmen": "Meehambee, County Roscommon",
+    "Merlin's Oak": "Carmarthen, Wales",
+    "Miosgán Meadhbha": "Knocknarea, County Sligo",
+    "Moel Tŷ Uchaf": "Llandrillo, Denbighshire, Wales",
+    "Mount Venus": "Rathfarnham, County Dublin",
+    "Mullyash Kerbed Cairn": "Mullyash, County Armagh",
+    "Navan Fort": "Emain Macha, County Armagh",
+    "Newgrange cursus": "Newgrange, County Meath",
+    "Rathcoran": "Baltinglass, County Wicklow",
+    "Rathcroghan": "Rathcroghan, County Roscommon",
+    "Salmon of Knowledge": "River Boyne, County Meath",
+    "Thornton Road poltergeist claim": "Ward End, Birmingham",
+    "Timoney Stones": "Timoney, County Tipperary",
+    "Townleyhall passage grave": "Townleyhall, County Louth",
+    "Turoe Stone": "Bullaun, County Galway",
+    "Waun Mawn": "Preseli Hills, Pembrokeshire, Wales",
+    "Whetstones": "Welshpool, Powys, Wales",
+    "Yester Castle": "Gifford, East Lothian",
+    "Ystwyth": "Ceredigion, Wales",
+}
+
+COORD_OVERRIDES = {
+    # Shoreline anchor for the submerged kingdom: Borth Beach's exposed
+    # forest is explicitly associated with the Cantre'r Gwaelod tradition.
+    "Cantre'r Gwaelod": (52.488, -4.052),
 }
 
 
@@ -3591,22 +3766,33 @@ def is_duplicate(name: str, existing_names: set) -> bool:
 
 
 def apply_cleanup(legends: dict) -> dict:
-    removed = fixed = 0
+    removed = fixed = renamed = 0
     for name in list(legends.keys()):
         if name in REMOVE_ENTRIES:
             del legends[name]
             removed += 1
+            continue
+        display_name = DISPLAY_NAME_SUFFIX_RE.sub("", name)
+        if display_name != name:
+            leg = legends.pop(name)
+            leg["name"] = display_name
+            legends[display_name] = leg
+            renamed += 1
     for leg in legends.values():
         original = leg["category"]
         if leg["name"] in FORCE_CATEGORY:
             leg["category"] = FORCE_CATEGORY[leg["name"]]
+        if leg["name"] in REGION_OVERRIDES:
+            leg["region"] = REGION_OVERRIDES[leg["name"]]
+        if leg["name"] in COORD_OVERRIDES:
+            leg["lat"], leg["lng"] = COORD_OVERRIDES[leg["name"]]
         if leg["category"] in CATEGORY_REMAP:
             leg["category"] = CATEGORY_REMAP[leg["category"]]
         if leg["category"] not in VALID_CATEGORIES:
             leg["category"] = "beast"
         if leg["category"] != original:
             fixed += 1
-    print(f"      Cleanup: removed {removed}, fixed {fixed} categories")
+    print(f"      Cleanup: removed {removed}, renamed {renamed}, fixed {fixed} categories")
     return legends
 
 
@@ -4217,8 +4403,15 @@ LIMIT 200
 # ---------------------------------------------------------------------------
 
 import os as _os
-SUPABASE_URL         = _os.getenv("SUPABASE_URL", "")
-SUPABASE_SERVICE_KEY = _os.getenv("SUPABASE_SERVICE_KEY", "")
+
+
+def _clean_env_value(name: str) -> str:
+    """Accept values set with shell syntax that accidentally preserves quotes."""
+    return _os.getenv(name, "").strip().strip("\"'")
+
+
+SUPABASE_URL         = _clean_env_value("SUPABASE_URL")
+SUPABASE_SERVICE_KEY = _clean_env_value("SUPABASE_SERVICE_KEY")
 
 
 def _supabase_headers():

@@ -1,6 +1,6 @@
 {
-  "generated": "2026-05-31T21:13:51.243334Z",
-  "total": 363,
+  "generated": "2026-06-01T18:04:58.014689Z",
+  "total": 377,
   "categories": {
     "beast": "Beasts",
     "ghost": "Ghosts",
@@ -61,13 +61,22 @@
       "source": "https://en.wikipedia.org/wiki/Andraste"
     },
     {
-      "name": "Andrew Barton (privateer)",
+      "name": "Andrew Barton",
       "lat": 55.9801,
       "lng": -3.17,
       "category": "pirate",
       "region": "Leith, Scotland",
       "summary": "The Leith privateer Sir Andrew Barton raided Portuguese shipping before his death in battle in 1511. English and Scottish folk songs transformed him into a ballad figure: Sir Andrew Barton and its later relation Henry Martyn both preserve versions of his story.",
       "source": "https://en.wikipedia.org/wiki/Andrew_Barton_(privateer)"
+    },
+    {
+      "name": "Angelystor",
+      "lat": 53.228,
+      "lng": -3.697,
+      "category": "ghost",
+      "region": "Llangernyw, Conwy, Wales",
+      "summary": "Angelystor, the Recording Angel, is a supernatural voice said to inhabit the churchyard of St Digain's Church in Llangernyw. Each Halloween night, the spirit announces the names of parishioners who will die in the coming year. The tradition is centred on the churchyard's ancient yew tree.",
+      "source": "https://en.wikipedia.org/wiki/Llangernyw_Yew"
     },
     {
       "name": "Anne Bonny",
@@ -101,7 +110,7 @@
       "lat": 52.9339,
       "lng": -8.1889,
       "category": "location",
-      "region": "Ireland",
+      "region": "Ashleypark, County Tipperary",
       "summary": "Ashleypark Burial Mound is a passage tomb and National Monument in the townland of Ashleypark, County Tipperary, Ireland.",
       "source": "https://en.wikipedia.org/wiki/Ashleypark_Burial_Mound"
     },
@@ -160,6 +169,15 @@
       "source": "https://en.wikipedia.org/wiki/Banshee"
     },
     {
+      "name": "Barclodiad y Gawres",
+      "lat": 53.204,
+      "lng": -4.47,
+      "category": "giant",
+      "region": "Llanfaelog, Anglesey, Wales",
+      "summary": "Barclodiad y Gawres, the Giantess's Apronful, is a Neolithic passage tomb on the coast of Anglesey. Legend says a giantess dropped the stones from her apron after learning how far she still had to travel. The decorated chamber stones and the site itself are protected by Cadw.",
+      "source": "https://en.wikipedia.org/wiki/Barclodiad_y_Gawres"
+    },
+    {
       "name": "Barghest",
       "lat": 54.284,
       "lng": -0.404,
@@ -182,7 +200,7 @@
       "lat": 56.5011,
       "lng": -2.7083,
       "category": "location",
-      "region": "Britain",
+      "region": "Barry, Angus, Scotland",
       "summary": "The Battle of Barry is a legendary battle in which the Scots, purportedly led by Malcolm II, defeated a Danish invasion force in 1010 AD. Its supposed site in Carnoustie, Angus can be seen in early Ordnance Survey maps. The history of the event relies heavily on tradition and it is considered to be apocryphal.",
       "source": "https://en.wikipedia.org/wiki/Battle_of_Barry"
     },
@@ -209,7 +227,7 @@
       "lat": 52.0358,
       "lng": -8.7512,
       "category": "location",
-      "region": "Ireland",
+      "region": "Coachford, County Cork",
       "summary": "\n\nBeenalaght is an alignment of six standing stones located on a flat pasture in Reanthesure, 0.5km west of the village of Bweeng, County Cork, Ireland. It is 13.6km south-west of Mallow, on a hill to the west of the Mallow-Coachford Road.",
       "source": "https://en.wikipedia.org/wiki/Beenalaght"
     },
@@ -218,7 +236,7 @@
       "lat": 54.3043,
       "lng": -9.4626,
       "category": "location",
-      "region": "Ireland",
+      "region": "Belderrig, County Mayo",
       "summary": "The court tomb of Behy is a megalithic monument in the townland of the same name, near Belderrig in the north of County Mayo, Ireland. The monument is located within the Céide Fields complex, 150 meters above sea level on the slope of Maumakeogh hill, and is the most westerly of the thirty or so tombs in the Killala group. The site commands wide views across the sea to the north and to the Stags of Broadhaven.",
       "source": "https://en.wikipedia.org/wiki/Behy_court_tomb"
     },
@@ -299,7 +317,7 @@
       "lat": 51.9291,
       "lng": -8.5706,
       "category": "location",
-      "region": "Ireland",
+      "region": "Blarney Castle, County Cork",
       "summary": "The Blarney Stone is a block of Carboniferous limestone built into the battlements of Blarney Castle, Blarney, about 8 kilometres from the centre of Cork City, Ireland. According to legend, kissing the stone endows the kisser with the gift of the gab. The stone was set into a tower of the castle in 1446.",
       "source": "https://en.wikipedia.org/wiki/Blarney_Stone"
     },
@@ -425,7 +443,7 @@
       "lat": 51.7421,
       "lng": -9.3751,
       "category": "location",
-      "region": "Ireland",
+      "region": "Breeny More, County Cork",
       "summary": "Breeny More Stone Circle is an axial stone circle and National Monument located in County Cork, Ireland.",
       "source": "https://en.wikipedia.org/wiki/Breeny_More_Stone_Circle"
     },
@@ -479,7 +497,7 @@
       "lat": 52.8982,
       "lng": -4.0114,
       "category": "location",
-      "region": "Wales",
+      "region": "Ardudwy, Gwynedd, Wales",
       "summary": "The Bryn Cader Faner is a Bronze Age round cairn which lies to the east of the small hamlet of Talsarnau in the Ardudwy area of Gwynedd in Wales. The diameter is 8.7 metres (29 ft) and there are 18 thin jagged pillars which jut upwards from the low cairn. It is thought to date back to the late third millennium BC.\nThe site was disturbed by 19th-century treasure hunters, who left a hole in the centre, indicating the position of a cist or a grave.",
       "source": "https://en.wikipedia.org/wiki/Bryn_Cader_Faner"
     },
@@ -488,7 +506,7 @@
       "lat": 53.1772,
       "lng": -4.3021,
       "category": "location",
-      "region": "Wales",
+      "region": "Brynsiencyn, Anglesey, Wales",
       "summary": "The Bryn Gwyn Stones or Bryn Gwyn Standing Stones are neolithic stones in Brynsiencyn on Anglesey.",
       "source": "https://en.wikipedia.org/wiki/Bryn_Gwyn_stones"
     },
@@ -497,7 +515,7 @@
       "lat": 53.6928,
       "lng": -6.4493,
       "category": "location",
-      "region": "Ireland",
+      "region": "Boyne Valley, County Meath",
       "summary": "Brú na Bóinne, also called the Boyne Valley tombs, is an ancient monument complex and ritual landscape in County Meath, Ireland, located in a bend of the River Boyne. It is one of the world's most important Neolithic landscapes, comprising at least ninety monuments including passage tombs, burial mounds, standing stones and enclosures. The site is dominated by the passage tombs of Newgrange, Knowth and Dowth, built during the 32nd century BC.",
       "source": "https://en.wikipedia.org/wiki/Br%C3%BA_na_B%C3%B3inne"
     },
@@ -542,7 +560,7 @@
       "lat": 51.6103,
       "lng": -2.9558,
       "category": "location",
-      "region": "Wales",
+      "region": "Caerleon, Newport, Wales",
       "summary": "A Roman fortress town deeply folded into Arthurian tradition. Geoffrey of Monmouth made it one of Arthur's chief courts, turning its ruins into a gateway between Roman Britain and medieval romance.",
       "source": "https://en.wikipedia.org/wiki/Caerleon"
     },
@@ -575,10 +593,10 @@
     },
     {
       "name": "Cantre'r Gwaelod",
-      "lat": 52.5,
-      "lng": -4.5,
+      "lat": 52.488,
+      "lng": -4.052,
       "category": "location",
-      "region": "Wales",
+      "region": "Cardigan Bay, Wales",
       "summary": "Cantre'r Gwaelod, also known as Cantref Gwaelod or Cantref y Gwaelod, is a legendary ancient sunken kingdom said to have occupied a tract of fertile land lying between Ramsey Island and Bardsey Island in what is now Cardigan Bay to the west of Wales. It has been described as a \"Welsh Atlantis\" and has featured in folklore, literature, and song.",
       "source": "https://en.wikipedia.org/wiki/Cantre%27r_Gwaelod"
     },
@@ -596,7 +614,7 @@
       "lat": 54.3348,
       "lng": -8.0045,
       "category": "location",
-      "region": "Ireland",
+      "region": "Carricknagat, County Sligo",
       "summary": "Carricknagat Megalithic Tombs are megalithic tombs and a National Monument located in County Sligo, Ireland.",
       "source": "https://en.wikipedia.org/wiki/Carricknagat_Megalithic_Tombs"
     },
@@ -605,7 +623,7 @@
       "lat": 52.0004,
       "lng": -8.9163,
       "category": "location",
-      "region": "Ireland",
+      "region": "Carrigagulla, County Cork",
       "summary": "Carrigagulla is a megalithic complex 2.9 km north-east of Ballinagree, County Cork, Ireland.",
       "source": "https://en.wikipedia.org/wiki/Carrigagulla"
     },
@@ -614,7 +632,7 @@
       "lat": 51.9096,
       "lng": -9.025,
       "category": "location",
-      "region": "Ireland",
+      "region": "Carrigaphooca, County Cork",
       "summary": "Carrigaphooca Stone Circle is a stone circle and National Monument located in County Cork, Ireland. It is situated 4.4 km (2.7 mi) west of Macroom, immediately east of Carrigaphooca Castle, north of the N22, and near the confluence of the River Sullane and River Foherish. The name means \"stone of the púca\".",
       "source": "https://en.wikipedia.org/wiki/Carrigaphooca_Stone_Circle"
     },
@@ -623,7 +641,7 @@
       "lat": 54.2509,
       "lng": -8.5192,
       "category": "location",
-      "region": "Ireland",
+      "region": "Carrowmore, County Sligo",
       "summary": "Carrowmore is a large group of megalithic monuments on the Coolera Peninsula to the west of Sligo, Ireland. They were built in the 4th millennium BC, during the Neolithic. There are 30 surviving tombs with another 25 which have been destroyed since 1800, making Carrowmore one of the largest clusters of megalithic tombs in Ireland, and one of the 'big four' along with Carrowkeel, Loughcrew and Brú na Bóinne.",
       "source": "https://en.wikipedia.org/wiki/Carrowmore"
     },
@@ -632,7 +650,7 @@
       "lat": 53.0872,
       "lng": -9.5757,
       "category": "location",
-      "region": "Ireland",
+      "region": "Carrownlisheen, County Clare",
       "summary": "Carrownlisheen Wedge Tomb is a wedge-shaped gallery grave and National Monument located on Inishmaan, Ireland.",
       "source": "https://en.wikipedia.org/wiki/Carrownlisheen_Wedge_Tomb"
     },
@@ -749,7 +767,7 @@
       "lat": 51.6981,
       "lng": -9.2242,
       "category": "location",
-      "region": "Ireland",
+      "region": "Clodagh, County Cork",
       "summary": "Clodagh Standing Stones is a pair of standing stones forming a stone row and National Monument located in County Cork, Ireland.",
       "source": "https://en.wikipedia.org/wiki/Clodagh_Standing_Stones"
     },
@@ -758,7 +776,7 @@
       "lat": 54.6892,
       "lng": -8.7458,
       "category": "location",
-      "region": "Ireland",
+      "region": "Glencolmcille, County Donegal",
       "summary": "Cloghanmore (translated as \"the great stone heap\" is a megalithic chamber tomb of the court tomb type located about 8 km east from Carrick in Malin More, Glencolmcille, in County Donegal, Ireland.",
       "source": "https://en.wikipedia.org/wiki/Cloghanmore"
     },
@@ -776,7 +794,7 @@
       "lat": 51.5967,
       "lng": -9.5433,
       "category": "location",
-      "region": "Ireland",
+      "region": "Coolcoulaghta, County Cork",
       "summary": "The Coolcoulaghta Standing Stones are a pair of standing stones forming a stone row and a National Monument located in County Cork, Ireland.",
       "source": "https://en.wikipedia.org/wiki/Coolcoulaghta_Standing_Stones"
     },
@@ -812,7 +830,7 @@
       "lat": 54.9936,
       "lng": -6.4785,
       "category": "location",
-      "region": "Ireland",
+      "region": "Craigs, County Antrim",
       "summary": "Craigs Dolmen is a megalithic tomb in County Antrim, Northern Ireland. It is 5 mi (8 km) south of Ballymoney, off Finvoy Road, at a height of 200m on the Long Mountain. Craigs Dolmen passage tomb is a State Care Historic Monument in the townland of Craigs, in Borough of Ballymoney. Its grid reference is C9740 1729.",
       "source": "https://en.wikipedia.org/wiki/Craigs_Dolmen"
     },
@@ -824,6 +842,15 @@
       "region": "County Mayo, Ireland",
       "summary": "Ireland's holy mountain, where Saint Patrick fasted for forty days and drove the serpents from Ireland. Before Patrick, it was the sacred mountain of the god Lugh, and his festival Lughnasadh was celebrated on its summit. Pilgrims still climb it barefoot on the last Sunday of July, as they have for three thousand years.",
       "source": "https://en.wikipedia.org/wiki/Croagh_Patrick"
+    },
+    {
+      "name": "Crom Cruach",
+      "lat": 54.043,
+      "lng": -7.461,
+      "category": "deity",
+      "region": "Magh Slécht (Killycluggin), County Cavan, Ireland",
+      "summary": "Crom Cruach was a feared idol of pre-Christian Irish tradition, said to stand at Magh Slécht, the Plain of Prostrations, encircled by twelve lesser stones. Medieval sources tell how St Patrick destroyed the idol. The broken and decorated Killycluggin Stone was found near a stone circle in County Cavan and is often associated with the tradition.",
+      "source": "https://en.wikipedia.org/wiki/Crom_Cruach"
     },
     {
       "name": "Cu Sith",
@@ -956,9 +983,18 @@
       "lat": 54.107,
       "lng": -9.1658,
       "category": "location",
-      "region": "Ireland",
+      "region": "Ballina, County Mayo",
       "summary": "The Dolmen of the Four Maols is a cist and National Monument located in County Mayo, Ireland.",
       "source": "https://en.wikipedia.org/wiki/Dolmen_of_the_Four_Maols"
+    },
+    {
+      "name": "Donn",
+      "lat": 51.59202,
+      "lng": -10.30122,
+      "category": "deity",
+      "region": "Bull Rock (Tech Duinn), Beara Peninsula, County Cork, Munster",
+      "summary": "Donn, the Dark One, is the Irish lord of the dead and one of the Milesian ancestors of the Gaels. His dwelling, Tech Duinn or the House of Donn, is identified with Bull Rock off Dursey Island, a sea stack pierced by a natural tunnel like a portal to another world. Folklore describes him as a phantom horseman riding across the Atlantic before storms.",
+      "source": "https://en.wikipedia.org/wiki/Donn"
     },
     {
       "name": "Doom Bar",
@@ -1082,7 +1118,7 @@
       "lat": 51.8149,
       "lng": -10.1581,
       "category": "location",
-      "region": "Ireland",
+      "region": "Waterville, County Kerry",
       "summary": "Eightercua Irish: Íoċtar Ċua , meaning ' \"the place or holy place or harbor\" that is Íoċ or \"below\" - the word is a specifically geographical term that does not adequately translate into English which does not designate a \"place down below\" with categorically geographical differentiation') is a four-stone alignment (stone-row) Megalithic tomb, located 1.5 km south-south-east of Waterville, Kerry, Ireland.",
       "source": "https://en.wikipedia.org/wiki/Eightercua"
     },
@@ -1112,6 +1148,15 @@
       "region": "Roman Britain",
       "summary": "A Celtic horse goddess worshipped across the Roman world, including Britain. She protected horses, riders, cavalry, and journeys, often shown with mares, foals, or a cornucopia.",
       "source": "https://en.wikipedia.org/wiki/Epona"
+    },
+    {
+      "name": "Fachan",
+      "lat": 56.549,
+      "lng": -4.987,
+      "category": "beast",
+      "region": "Glen Etive and West Highlands, Argyll, Scotland",
+      "summary": "The Fachan, also called Direach Ghlinn Eitidh, is a terrifying creature of Scottish Highland folklore documented by J. F. Campbell. It has a single eye, one hand emerging from its chest, and one leg, topped by a solitary tuft of feathers. Glen Etive in Argyll is the named haunt most associated with it.",
+      "source": "https://en.wikipedia.org/wiki/Fachan"
     },
     {
       "name": "Fad Felen",
@@ -1145,7 +1190,7 @@
       "lat": 51.7949,
       "lng": -9.1389,
       "category": "location",
-      "region": "Ireland",
+      "region": "Farranahineeny, County Kerry",
       "summary": "Farranahineeny Stone Row is a stone row and National Monument located in County Cork, Ireland.",
       "source": "https://en.wikipedia.org/wiki/Farranahineeny_Stone_Row"
     },
@@ -1154,7 +1199,7 @@
       "lat": 55.5771,
       "lng": -2.6494,
       "category": "fairy",
-      "region": "Scotland",
+      "region": "Jedburgh Castle Jail, Scottish Borders",
       "summary": "Fat Lips is the name given to a legendary spirit dwelling in Dryburgh Abbey in Berwickshire, Scotland.",
       "source": "https://en.wikipedia.org/wiki/Fat_Lips"
     },
@@ -1199,7 +1244,7 @@
       "lat": 54.0175,
       "lng": -7.2914,
       "category": "location",
-      "region": "Britain",
+      "region": "Shantemon Mountain, County Cavan",
       "summary": "Finn McCools Fingers are a set of five standing stones on Shantemon mountain in County Cavan. The name is derived from the story that giant Celtic warrior Fionn mac Cumhaill lost a hand in battle. The stones are arranged in a south-east/north-west orientation.",
       "source": "https://en.wikipedia.org/wiki/Finn_McCools_Fingers"
     },
@@ -1240,11 +1285,20 @@
       "source": "https://www.historic-uk.com/HistoryUK/HistoryofWales/The-legend-of-brave-Gelert/"
     },
     {
+      "name": "Giant of Petta Water",
+      "lat": 60.31378,
+      "lng": -1.25017,
+      "category": "giant",
+      "region": "Petta Water and Kneefell, Shetland Mainland, Scotland",
+      "summary": "A Shetland giant once lived near Petta Water alongside trows who tormented him until he tried to carry them away in a kishie basket and throw them into the sea. The weight of the trows broke the basket, scattering them across the landscape. Local tradition says the giant's footprint remains as Petta Water and the hollow where he set down his knee survives in Kneefell.",
+      "source": "https://www.shetland.org/blog/shetland-folklore"
+    },
+    {
       "name": "Giant's Causeway",
       "lat": 55.2408,
       "lng": -6.5117,
       "category": "location",
-      "region": "Ireland",
+      "region": "Bushmills, County Antrim",
       "summary": "A volcanic shore of interlocking basalt columns explained in legend as the road built by Fionn mac Cumhaill to reach his Scottish giant rival. Geology and giantcraft shake hands here.",
       "source": "https://en.wikipedia.org/wiki/Giant%27s_Causeway"
     },
@@ -1262,7 +1316,7 @@
       "lat": 52.0044,
       "lng": -9.0449,
       "category": "location",
-      "region": "Ireland",
+      "region": "Glantane, County Cork",
       "summary": "Glantane East is a megalithic complex situated 6.4 kilometres (4.0 mi) from Millstreet, County Cork, Ireland. It is set in the Keel River valley on the north-west upper slopes of Musherabeg mountain, in the townland of Glantane. The complex includes a wedge tomb, two stone circles and a pair of stone alignments.",
       "source": "https://en.wikipedia.org/wiki/Glantane_East"
     },
@@ -1357,6 +1411,15 @@
       "source": "https://en.wikipedia.org/wiki/Griffin"
     },
     {
+      "name": "Gruagach",
+      "lat": 56.503,
+      "lng": -6.883,
+      "category": "fairy",
+      "region": "Hebrides, Scotland",
+      "summary": "The Gruagach, or Long-Haired One, is a tutelary fairy spirit of the Hebrides and Highland Scotland believed to protect cattle and livestock. Libations of warm milk were left in hollowed stones called clach na gruagaich. Such offering stones have been recorded across islands including Lewis, Islay, Mull, Tiree, Arran, and St Kilda.",
+      "source": "https://en.wikipedia.org/wiki/Gruagach"
+    },
+    {
       "name": "Grubstones",
       "lat": 53.8984,
       "lng": -1.794,
@@ -1370,7 +1433,7 @@
       "lat": 56.155,
       "lng": -5.7278,
       "category": "location",
-      "region": "Scotland",
+      "region": "Between Jura and Scarba, Argyll",
       "summary": "One of the world's great whirlpools, feared in Gaelic tradition and tied to tales of sea trials, drowned princes, and the Cailleach washing her plaid in the roaring waters.",
       "source": "https://en.wikipedia.org/wiki/Gulf_of_Corryvreckan"
     },
@@ -1393,6 +1456,15 @@
       "source": "https://en.wikipedia.org/wiki/Gwrach-y-Rhibyn"
     },
     {
+      "name": "Gwragedd Annwn",
+      "lat": 52.644,
+      "lng": -3.992,
+      "category": "fairy",
+      "region": "Llyn Barfog, Gwynedd, Wales",
+      "summary": "The Gwragedd Annwn, or Wives of the Underworld, are beautiful lake-dwelling fairies of Welsh tradition. They emerge from mountain lakes to marry mortals under strict conditions, returning beneath the water if those conditions are broken. Llyn Barfog, the Bearded Lake, is among the places most closely associated with them.",
+      "source": "https://en.wikipedia.org/wiki/Gwragedd_Annwn"
+    },
+    {
       "name": "Gwy",
       "lat": 51.617,
       "lng": -2.66,
@@ -1400,6 +1472,15 @@
       "region": "Welsh Marches",
       "summary": "The second daughter of the giant Plynlimon, who raced her sisters from the mountain summit to the sea. She became the River Wye — a liminal boundary between Wales and England, civilisation and wilderness. Her valley holds Tintern Abbey and some of the oldest oak forest in Britain.",
       "source": "https://en.wikipedia.org/wiki/River_Wye"
+    },
+    {
+      "name": "Gwyllgi",
+      "lat": 53.147,
+      "lng": -3.241,
+      "category": "beast",
+      "region": "Nant y Garth Pass, Denbighshire, Wales",
+      "summary": "The Gwyllgi, the Dog of Darkness, is a great phantom black hound of Welsh folklore with blazing eyes and a shaggy pelt. Unlike the spectral pack of the Cŵn Annwn, it is a solitary creature of roads and hedgerows. A local tradition places it in the Nant y Garth Pass in the Clwydian Hills.",
+      "source": "https://en.wikipedia.org/wiki/Gwyllgi"
     },
     {
       "name": "Gwyn ap Nudd",
@@ -1432,7 +1513,7 @@
       "name": "Hartlepool Monkey",
       "lat": 54.696,
       "lng": -1.181,
-      "category": "location",
+      "category": "beast",
       "region": "Hartlepool, County Durham",
       "summary": "Hartlepool folklore says that during the Napoleonic Wars townspeople found a monkey from a wrecked ship, mistook it for a French spy and hanged it. The story is an enduring local legend and the source of the town's Monkey Hangers nickname.",
       "source": "https://www.historic-uk.com/HistoryUK/HistoryofEngland/The-Hanging-of-the-Hartlepool-Monkey/"
@@ -1451,7 +1532,7 @@
       "lat": 54.095,
       "lng": -8.3483,
       "category": "location",
-      "region": "Ireland",
+      "region": "Heapstown, County Sligo",
       "summary": "Heapstown Cairn is a large ancient cairn and protected National Monument in County Sligo, Ireland. It was built in the Neolithic, around 3000 BC, and is believed to cover a passage tomb. The cairn is one of the largest in Ireland and is near Carrowkeel Megalithic Cemetery.",
       "source": "https://en.wikipedia.org/wiki/Heapstown_Cairn"
     },
@@ -1469,7 +1550,7 @@
       "lat": 56.6812,
       "lng": -5.096,
       "category": "location",
-      "region": "Scotland",
+      "region": "Ardgour, Lochaber",
       "summary": "The Henderson Stone is a granite boulder in a field in the Glencoe (Carnoch) area of Scotland. Clach Eanruig is translated alternatively as Henderson Stone or Henry's Stone.",
       "source": "https://en.wikipedia.org/wiki/Henderson_Stone"
     },
@@ -1658,7 +1739,7 @@
       "lat": 52.0068,
       "lng": -9.0245,
       "category": "location",
-      "region": "Ireland",
+      "region": "Knocknakilla, County Cork",
       "summary": "Knocknakilla is the site of a megalithic complex situated between Macroom and Millstreet, in County Cork, Ireland. It is set in blanket peatland on the north-west upper slopes of Musherabeg mountain and is thought to be 3500 years old.",
       "source": "https://en.wikipedia.org/wiki/Knocknakilla"
     },
@@ -1694,9 +1775,18 @@
       "lat": 52.1742,
       "lng": -8.3345,
       "category": "location",
-      "region": "Ireland",
+      "region": "Glanworth, County Cork",
       "summary": "Labbacallee Wedge Tomb is a large pre-historic burial monument, located 8 km (5.0 mi) north-west of Fermoy and 2 km (1.2 mi) south-east of Glanworth, County Cork, Ireland. It is the largest Irish wedge tomb and dates from roughly 2300 BC. The tomb is a National Monument in State Care no. 318. It was the first megalithic tomb in the country to be described by an antiquarian writer, in John Aubrey’s manuscript of 1693.",
       "source": "https://en.wikipedia.org/wiki/Labbacallee_wedge_tomb"
+    },
+    {
+      "name": "Lady Howard of Okehampton",
+      "lat": 50.738,
+      "lng": -4.003,
+      "category": "ghost",
+      "region": "Okehampton, Devon, England",
+      "summary": "Devon tradition condemns Lady Mary Howard to ride each night from Tavistock to Okehampton Castle in a carriage made from the bones of her husbands. A black dog runs before the carriage and plucks one blade of grass from the castle mound on arrival. Only when every blade is gone will the haunting end.",
+      "source": "https://www.legendarydartmoor.co.uk/2016/03/25/lady_how/"
     },
     {
       "name": "Laidly Worm of Spindleston Heugh",
@@ -1757,7 +1847,7 @@
       "lat": 54.2488,
       "lng": -8.5186,
       "category": "location",
-      "region": "Ireland",
+      "region": "Carrowmore, County Sligo",
       "summary": "Listoghil is the large central monument in the Carrowmore group of prehistoric tombs in County Sligo, Ireland. The Carrowmore group consists of about 35 monuments surrounding Listoghil. It was numbered as Carrowmore 51 by George Petrie in 1837 and this designation is still used. Although the district of Cúil Iorra is steeped in legend, Listoghil has never been satisfactorily connected with the ancient legends in the way that say Newgrange has.",
       "source": "https://en.wikipedia.org/wiki/Listoghil"
     },
@@ -1769,6 +1859,15 @@
       "region": "Llyn Gwynant, Gwynedd",
       "summary": "The Llamhigyn y Dŵr, or Water Leaper, is a Welsh aquatic creature described as a monstrous winged toad with a long tail. Folklore associates it with attacks on livestock and fishermen, including stories around Llyn Gwynant.",
       "source": "https://en.wikipedia.org/wiki/Llamhigyn_y_D%C5%B5r"
+    },
+    {
+      "name": "Llangorse Lake",
+      "lat": 51.9,
+      "lng": -3.267,
+      "category": "location",
+      "region": "Bannau Brycheiniog, Powys, Wales",
+      "summary": "Llangorse Lake, or Llyn Syfaddan, was recorded by Gerald of Wales as a place of strange phenomena. Local tradition tells of a drowned settlement beneath the water whose bells can be heard on still days. A royal crannog, an artificial island associated with the kings of Brycheiniog, has been archaeologically confirmed in the lake.",
+      "source": "https://en.wikipedia.org/wiki/Llangorse_Lake"
     },
     {
       "name": "Llyn Cwm Llwch",
@@ -1784,7 +1883,7 @@
       "lat": 51.8819,
       "lng": -3.7419,
       "category": "water",
-      "region": "Wales",
+      "region": "Bannau Brycheiniog, Carmarthenshire",
       "summary": "A Welsh lake famed for the Lady of the Lake, who married a mortal under strict conditions before returning beneath the water. Their sons became the legendary Physicians of Myddfai.",
       "source": "https://en.wikipedia.org/wiki/Llyn_y_Fan_Fach"
     },
@@ -1802,7 +1901,7 @@
       "lat": 54.9839,
       "lng": -3.0761,
       "category": "location",
-      "region": "Scotland",
+      "region": "Gretna, Dumfries and Galloway",
       "summary": "A megalith on the Solway Firth linked by name and tradition to Maponos or Mabon, a youthful Celtic divine figure. It also marks a landscape of border law, ritual, and deep time.",
       "source": "https://en.wikipedia.org/wiki/Lochmaben_Stone"
     },
@@ -1811,7 +1910,7 @@
       "lat": 52.1487,
       "lng": -6.9106,
       "category": "ghost",
-      "region": "Ireland",
+      "region": "Hook Peninsula, County Wexford",
       "summary": "Loftus Hall is a large country house on the Hook peninsula, County Wexford, Ireland. Built on the site of the original Redmond Hall, it is said to have been haunted by the devil and the ghost of a woman.",
       "source": "https://en.wikipedia.org/wiki/Loftus_Hall"
     },
@@ -1955,7 +2054,7 @@
       "lat": 53.4119,
       "lng": -8.0197,
       "category": "location",
-      "region": "Ireland",
+      "region": "Meehambee, County Roscommon",
       "summary": "The Meehambee Dolmen, also known as the Mihanboy Portal Tomb, is a Neolithic portal tomb located in the townland of Mihanboy, near Athlone in County Roscommon, Ireland. The monument is dated to around 3500 BC and is listed as a Recorded Monument under the National Monuments Acts.",
       "source": "https://en.wikipedia.org/wiki/Meehambee_Dolmen"
     },
@@ -1982,7 +2081,7 @@
       "lat": 51.8606,
       "lng": -4.2989,
       "category": "location",
-      "region": "Wales",
+      "region": "Carmarthen, Wales",
       "summary": "Merlin's Oak, also known as the Old Oak and Priory Oak, was a pedunculate oak that once stood on the corner of Oak Lane and Priory Street in Carmarthen, South Wales. Merlin's Oak is associated with the legend of Merlin in the local lore, but it is also said to have been planted by a schoolmaster in 1659 or 1660, to celebrate the return of King Charles II of England to the throne.",
       "source": "https://en.wikipedia.org/wiki/Merlin%27s_Oak"
     },
@@ -2009,7 +2108,7 @@
       "lat": 54.2587,
       "lng": -8.5746,
       "category": "location",
-      "region": "Ireland",
+      "region": "Knocknarea, County Sligo",
       "summary": "Miosgán Meadhbha, anglicized Miosgan Meva and also called Maeve's Cairn, is a large cairn on the summit of Knocknarea in County Sligo, Ireland. It is thought to conceal a passage tomb from the Neolithic. It is the largest cairn in Ireland, excepting those at Brú na Bóinne in Meath.",
       "source": "https://en.wikipedia.org/wiki/Miosg%C3%A1n_Meadhbha"
     },
@@ -2018,7 +2117,7 @@
       "lat": 52.9233,
       "lng": -3.4055,
       "category": "location",
-      "region": "Wales",
+      "region": "Llandrillo, Denbighshire, Wales",
       "summary": "Moel Tŷ Uchaf is a stone circle near the village of Llandrillo, Denbighshire, north Wales.",
       "source": "https://en.wikipedia.org/wiki/Moel_T%C5%B7_Uchaf"
     },
@@ -2072,7 +2171,7 @@
       "lat": 53.2607,
       "lng": -6.3109,
       "category": "location",
-      "region": "Ireland",
+      "region": "Rathfarnham, County Dublin",
       "summary": "\n\nMount Venus is a megalithic site on the Mount Venus Road in Edmondstown, County Dublin, Ireland. It is a national heritage site.",
       "source": "https://en.wikipedia.org/wiki/Mount_Venus"
     },
@@ -2081,7 +2180,7 @@
       "lat": 54.1742,
       "lng": -6.6694,
       "category": "location",
-      "region": "Ireland",
+      "region": "Mullyash, County Armagh",
       "summary": "Mullyash Kerbed Cairn is a kerb cairn and National Monument located in County Monaghan, Ireland.",
       "source": "https://en.wikipedia.org/wiki/Mullyash_Kerbed_Cairn"
     },
@@ -2126,7 +2225,7 @@
       "lat": 54.3481,
       "lng": -6.6972,
       "category": "location",
-      "region": "Ireland",
+      "region": "Emain Macha, County Armagh",
       "summary": "Navan Fort is an ancient ceremonial monument near Armagh, Northern Ireland. According to tradition it was one of the great royal sites of pre-Christian Gaelic Ireland and the capital of the Ulaidh. It is a large circular hilltop enclosure—marked by a bank and ditch—inside which is a circular mound and the remains of a ring barrow.",
       "source": "https://en.wikipedia.org/wiki/Navan_Fort"
     },
@@ -2144,7 +2243,7 @@
       "lat": 53.6951,
       "lng": -6.4731,
       "category": "location",
-      "region": "Ireland",
+      "region": "Newgrange, County Meath",
       "summary": "The Newgrange cursus is a Neolithic monument used as a ceremonial procession route within the Brú na Bóinne complex. The ancient trackway is 100m long and 20m wide. It is located at Newgrange, in County Meath, Ireland.",
       "source": "https://en.wikipedia.org/wiki/Newgrange_cursus"
     },
@@ -2378,7 +2477,7 @@
       "lat": 52.947,
       "lng": -6.6832,
       "category": "location",
-      "region": "Ireland",
+      "region": "Baltinglass, County Wicklow",
       "summary": "Rathcoran is an ancient passage tomb and surrounding hillfort atop Baltinglass Hill, County Wicklow, Ireland. The passage tomb is contemporaneous with Newgrange, i.e. it was built 3500–3000 BC, during the Neolithic. The ringfort dates to the Bronze Age, c. 1000 BC. It is part of the Baltinglass hillfort complex, and is a National Monument.",
       "source": "https://en.wikipedia.org/wiki/Rathcoran"
     },
@@ -2387,7 +2486,7 @@
       "lat": 53.802,
       "lng": -8.304,
       "category": "location",
-      "region": "Ireland",
+      "region": "Rathcroghan, County Roscommon",
       "summary": "Rathcroghan is a complex of archaeological sites near Tulsk in County Roscommon, Ireland. It is identified as the site of Cruachan, the traditional capital of the Connachta, the prehistoric and early medieval rulers of the kingdom of Connacht. Rathcroghan is one of the royal sites of Ireland.",
       "source": "https://en.wikipedia.org/wiki/Rathcroghan"
     },
@@ -2495,7 +2594,7 @@
       "lat": 53.71,
       "lng": -6.352,
       "category": "water",
-      "region": "Ireland",
+      "region": "River Boyne, County Meath",
       "summary": "The greatest fish in the world, which fed on nine hazelnuts of wisdom fallen into the Well of Segais. Whoever tasted it first would gain all knowledge. The druid Finnegas caught it after seven years of searching — but his servant Fionn, burning his thumb on it as he cooked, licked the blister and gained the gift instead.",
       "source": "https://en.wikipedia.org/wiki/Salmon_of_Knowledge"
     },
@@ -2887,7 +2986,7 @@
       "source": "https://en.wikipedia.org/wiki/The_Ratman_of_Southend"
     },
     {
-      "name": "The Selkie (Irish tradition)",
+      "name": "The Selkie",
       "lat": 54.992,
       "lng": -8.706,
       "category": "water",
@@ -2918,7 +3017,7 @@
       "lat": 52.49,
       "lng": -1.83,
       "category": "ghost",
-      "region": "Britain",
+      "region": "Ward End, Birmingham",
       "summary": "The Thornton Road Poltergeist refers to stone-throwing incidents in a residential area of Birmingham, England, in 1981 and the subsequent police investigation.",
       "source": "https://en.wikipedia.org/wiki/Thornton_Road_poltergeist_claim"
     },
@@ -2945,7 +3044,7 @@
       "lat": 52.9003,
       "lng": -7.7201,
       "category": "location",
-      "region": "Ireland",
+      "region": "Timoney, County Tipperary",
       "summary": "The Timoney Stones are a collection of standing stones forming a National Monument in County Tipperary, Ireland.",
       "source": "https://en.wikipedia.org/wiki/Timoney_Stones"
     },
@@ -2968,6 +3067,15 @@
       "source": "https://en.wikipedia.org/wiki/Tintagel_Castle"
     },
     {
+      "name": "Tom Hickathrift",
+      "lat": 52.666,
+      "lng": 0.16,
+      "category": "hero",
+      "region": "Marshland, Cambridgeshire and Norfolk, England",
+      "summary": "Tom Hickathrift is a folk hero of the Fenlands, famed for extraordinary strength. In the best-known tale, he killed an ogre terrorising the Smeeth near Wisbech using a cart wheel and axle as an improvised shield and club. His story appears in early chapbooks and was collected by Joseph Jacobs.",
+      "source": "https://en.wikipedia.org/wiki/Tom_Hickathrift"
+    },
+    {
       "name": "Towednack",
       "lat": 50.191,
       "lng": -5.52,
@@ -2981,7 +3089,7 @@
       "lat": 53.7212,
       "lng": -6.4513,
       "category": "location",
-      "region": "Ireland",
+      "region": "Townleyhall, County Louth",
       "summary": "Townleyhall passage grave is a chamber tomb located around 2 km north of Dowth tomb. It is part of the megalithic complex of Brú na Bóinne in County Louth, Ireland.",
       "source": "https://en.wikipedia.org/wiki/Townleyhall_passage_grave"
     },
@@ -3008,7 +3116,7 @@
       "lat": 53.2524,
       "lng": -8.5612,
       "category": "location",
-      "region": "Ireland",
+      "region": "Bullaun, County Galway",
       "summary": "The Turoe stone is a 1.2 metre tall granite stone decorated in a Celtic style normally located in the village of Bullaun, County Galway, Ireland, 6 km north of Loughrea off the R350 regional road. It probably dates to about the period 100 BC to AD 100. The stone is usually positioned on the lawn in front of Turoe House, set in a concrete base surrounded by a metal cattle grill.\nThe Turoe stone is National Monument of Ireland Number 327 (NM#327).",
       "source": "https://en.wikipedia.org/wiki/Turoe_Stone"
     },
@@ -3098,7 +3206,7 @@
       "lat": 51.9716,
       "lng": -4.7912,
       "category": "location",
-      "region": "Wales",
+      "region": "Preseli Hills, Pembrokeshire, Wales",
       "summary": "Waun Mawn is a megalithic site in the Preseli Mountains of Pembrokeshire, Wales. Following excavations in 2018, it became the site of a supposed dismantled Neolithic stone circle. The diameter of the postulated circle was estimated to be 110 m (360 ft), making it the fifth largest diameter for a British stone circle, after Avebury, Stanton Drew, Karl Lofts, Long Meg, and slightly larger than the Ring of Brodgar.",
       "source": "https://en.wikipedia.org/wiki/Waun_Mawn"
     },
@@ -3121,15 +3229,6 @@
       "source": "https://en.wikipedia.org/wiki/Wayland%27s_Smithy"
     },
     {
-      "name": "Whetstones (stone circle)",
-      "lat": 52.5711,
-      "lng": -3.028,
-      "category": "location",
-      "region": "Wales",
-      "summary": "The Whetstones are, or were, a stone circle beneath Corndon Hill in the parish of Church Stoke, Montgomeryshire, Wales, near the border with Shropshire, England. They lie immediately to the west of the village of White Grit and close to Priestweston. The site is also a short distance from the better-known Hoarstones and Mitchell's Fold circles.",
-      "source": "https://en.wikipedia.org/wiki/Whetstones_%28stone_circle%29"
-    },
-    {
       "name": "Wights",
       "lat": 54.978,
       "lng": -2.045,
@@ -3137,6 +3236,15 @@
       "region": "Northern England",
       "summary": "Spirits that inhabit places, objects, and the land itself in Norse and Anglo-Saxon tradition. Some are protective, some malevolent. The land-wights of Britain were the spiritual guardians of the island that Norse settlers had to negotiate with before they could truly belong here.",
       "source": "https://en.wikipedia.org/wiki/Wight_(mythology)"
+    },
+    {
+      "name": "Wild Edric",
+      "lat": 52.597,
+      "lng": -2.931,
+      "category": "hero",
+      "region": "Clun Forest and Stiperstones, Shropshire, England",
+      "summary": "Wild Edric was an Anglo-Saxon thane of Shropshire who became the subject of an early English fairy-bride legend. He broke a condition imposed by his otherworldly wife Godda, causing her to vanish. Later tradition says his spirit rides with a ghostly cavalcade over the Stiperstones whenever England faces danger.",
+      "source": "https://en.wikipedia.org/wiki/Eadric_the_Wild"
     },
     {
       "name": "Will-o'-the-Wisp",
@@ -3260,7 +3368,7 @@
       "lat": 55.8906,
       "lng": -2.7105,
       "category": "location",
-      "region": "Scotland",
+      "region": "Gifford, East Lothian",
       "summary": "A ruined East Lothian castle famed for the Goblin Ha', an underground vaulted chamber said to have been built by magical arts for the wizard-like Hugo de Giffard.",
       "source": "https://en.wikipedia.org/wiki/Yester_Castle"
     },
@@ -3269,7 +3377,7 @@
       "lat": 52.415,
       "lng": -4.082,
       "category": "deity",
-      "region": "Wales",
+      "region": "Ceredigion, Wales",
       "summary": "In some later retellings of the Three Sisters of Plynlimon, Ystwyth replaces Rheidol as one of the mountain's daughters. She flows west through Ceredigion to Cardigan Bay.",
       "source": "https://en.wikipedia.org/wiki/Afon_Ystwyth"
     },
@@ -3281,6 +3389,24 @@
       "region": "Cornwall",
       "summary": "Zennor is a village and civil parish in Cornwall, England, United Kingdom. The parish includes the villages of Zennor, Boswednack and Porthmeor and the hamlet of Treen. Zennor lies on the north coast, about 6 miles (10 km) north of Penzance, along the B3306 road which connects St Ives to the A30 road. Alphabetically, the parish is the last in Britain. Its name comes from the Cornish name for the local saint, Saint Senara.",
       "source": "https://en.wikipedia.org/wiki/Zennor"
+    },
+    {
+      "name": "Áine",
+      "lat": 52.503,
+      "lng": -8.499,
+      "category": "deity",
+      "region": "Knockainey (Cnoc Áine), County Limerick, Munster",
+      "summary": "Áine is a sovereign goddess and fairy queen of Munster, associated with Cnoc Áine in County Limerick and the waters of Lough Gur. She presided over summer, love, fertility, crops, and cattle. On St John's Eve, communities lit torches on her hill and processed through fields and herds to invoke her blessing.",
+      "source": "https://en.wikipedia.org/wiki/%C3%81ine"
+    },
+    {
+      "name": "Étaín",
+      "lat": 53.761,
+      "lng": -7.748,
+      "category": "fairy",
+      "region": "Brí Léith (Ardagh Hill), County Longford, Ireland",
+      "summary": "Étaín is the heroine of The Wooing of Étaín, a tale of the Irish Mythological Cycle. Transformed by a jealous sorceress into a pool, a worm, and then a scarlet fly, she is reborn as a mortal queen with no memory of her past. The fairy king Midir, whose otherworldly mound Brí Léith is associated with Ardagh Hill, pursues her across two lifetimes.",
+      "source": "https://en.wikipedia.org/wiki/%C3%89ta%C3%ADn"
     }
   ]
 }

@@ -4,3 +4,4 @@ __pycache__/
 .env.*
 legends.*-review.json
 legends.review.json
+source_snapshots/

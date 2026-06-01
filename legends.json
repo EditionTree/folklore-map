@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-01T19:13:23.381047Z",
-  "total": 382,
+  "generated": "2026-06-01T21:06:11.597999Z",
+  "total": 384,
   "categories": {
     "beast": "Beasts",
     "ghost": "Ghosts",
@@ -158,6 +158,15 @@
       "region": "Tory Island, County Donegal, Ireland",
       "summary": "The terrible king of the Fomorians, whose single great eye — kept shut by a ring — would kill all it looked upon when opened. It took four men to lift his eyelid in battle. His own grandson Lugh slew him with a slingshot through the eye, fulfilling a prophecy Balor had tried all his life to prevent.",
       "source": "https://en.wikipedia.org/wiki/Balor"
+    },
+    {
+      "name": "Bampfylde Moore Carew",
+      "lat": 50.856,
+      "lng": -3.507,
+      "category": "hero",
+      "region": "Bickleigh, Devon",
+      "summary": "Bampfylde Moore Carew was a Devon-born rogue whose embellished life story made him the self-styled King of the Beggars and Gypsies. Chapbook accounts turned his disguises, escapes, and confidence tricks into a durable popular legend, blending historical fact with folk invention across 18th-century England.",
+      "source": "https://www.gutenberg.org/ebooks/27210"
     },
     {
       "name": "Banshee",
@@ -2084,6 +2093,15 @@
       "region": "Meehambee, County Roscommon",
       "summary": "The Meehambee Dolmen, also known as the Mihanboy Portal Tomb, is a Neolithic portal tomb located in the townland of Mihanboy, near Athlone in County Roscommon, Ireland. The monument is dated to around 3500 BC and is listed as a Recorded Monument under the National Monuments Acts.",
       "source": "https://en.wikipedia.org/wiki/Meehambee_Dolmen"
+    },
+    {
+      "name": "Meg Shelton",
+      "lat": 53.8077,
+      "lng": -2.7615,
+      "category": "witch",
+      "region": "Woodplumpton, Lancashire",
+      "summary": "Meg Shelton, the Fylde Hag, is said to be buried beneath a large boulder in the churchyard of St Anne's at Woodplumpton. Tradition holds that her body repeatedly rose from the grave until she was buried face-down with the stone placed over her to hold her down. Stories credit her with souring milk, spoiling crops, and harming cattle across the Fylde.",
+      "source": "https://en.wikipedia.org/wiki/Meg_Shelton"
     },
     {
       "name": "Merlin",

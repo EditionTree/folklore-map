@@ -109,17 +109,13 @@
       background: linear-gradient(90deg, transparent 0%, rgba(176,144,96,0.6) 20%, rgba(196,98,42,0.8) 50%, rgba(176,144,96,0.6) 80%, transparent 100%);
     }
     .header-emblem {
-      width: 54px; height: 54px;
+      width: 58px; height: 58px;
       flex-shrink: 0;
-      border-radius: 50%;
-      object-fit: cover;
-      mix-blend-mode: luminosity;
-      opacity: 0.82;
-      filter: sepia(0.4) brightness(0.85) contrast(1.1);
-      mask-image: radial-gradient(circle, black 55%, transparent 82%);
-      -webkit-mask-image: radial-gradient(circle, black 55%, transparent 82%);
+      object-fit: contain;
+      opacity: 0.92;
+      filter: drop-shadow(0 0 6px rgba(196,98,42,0.3));
     }
-    @media (max-width: 640px) { .header-emblem { width: 38px; height: 38px; } }
+    @media (max-width: 640px) { .header-emblem { width: 40px; height: 40px; } }
     .header-title { display: flex; align-items: center; gap: 14px; }
     .header-title-row { display: flex; align-items: baseline; gap: 14px; }
     .mobile-title { display: none; }

@@ -46,7 +46,7 @@
     "author": { "@type": "Person", "name": "EditionTree" }
   }
   </script>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg"/>
+  <link rel="icon" type="image/png" href="green-man.png"/>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"/>
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"/>
@@ -109,12 +109,17 @@
       background: linear-gradient(90deg, transparent 0%, rgba(176,144,96,0.6) 20%, rgba(196,98,42,0.8) 50%, rgba(176,144,96,0.6) 80%, transparent 100%);
     }
     .header-emblem {
-      width: 40px; height: 40px;
+      width: 54px; height: 54px;
       flex-shrink: 0;
-      opacity: 0.92;
-      filter: drop-shadow(0 0 6px rgba(196,98,42,0.4));
+      border-radius: 50%;
+      object-fit: cover;
+      mix-blend-mode: luminosity;
+      opacity: 0.82;
+      filter: sepia(0.4) brightness(0.85) contrast(1.1);
+      mask-image: radial-gradient(circle, black 55%, transparent 82%);
+      -webkit-mask-image: radial-gradient(circle, black 55%, transparent 82%);
     }
-    @media (max-width: 640px) { .header-emblem { width: 30px; height: 30px; } }
+    @media (max-width: 640px) { .header-emblem { width: 38px; height: 38px; } }
     .header-title { display: flex; align-items: center; gap: 14px; }
     .header-title-row { display: flex; align-items: baseline; gap: 14px; }
     .mobile-title { display: none; }
@@ -345,16 +350,19 @@
       opacity: 0.5;
     }
     .popup-summary {
-      font-size: 14px;
-      line-height: 1.7;
-      color: var(--ink);
+      font-size: 13.5px;
+      line-height: 1.75;
+      color: #4a3820;
       margin-bottom: 10px;
+      letter-spacing: 0.01em;
     }
     .popup-summary::first-letter {
       font-family: var(--font-display);
-      font-size: 1.45em;
+      font-size: 2.2em;
       font-weight: 600;
       color: var(--accent);
+      vertical-align: bottom;
+      line-height: 1;
     }
     .popup-footer { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 10px; padding-top: 8px; border-top: 1px solid rgba(176,144,96,0.4); }
     .popup-source {
@@ -578,7 +586,7 @@
 
 <header>
   <div class="header-title">
-    <img src="favicon.svg" class="header-emblem" alt=""/>
+    <img src="green-man.png" class="header-emblem" alt="Green Man"/>
     <div class="header-title-row">
       <h1 class="desktop-title">Folklore Map of the British Isles</h1>
       <h1 class="mobile-title">Folklore of the British Isles</h1>

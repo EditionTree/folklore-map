@@ -3005,7 +3005,7 @@ SEED_LEGENDS = [
         "name": "North Berwick Witch Trials",
         "lat": 56.058, "lng": -2.718,
         "category": "witch", "region": "North Berwick, East Lothian",
-        "summary": "The North Berwick witch trials began in the late sixteenth century after accusations that witches had raised storms against King James VI. Local tradition centres on gatherings at St Andrew's Kirk and on attempts to summon destructive weather.",
+        "summary": "The North Berwick witch trials began in the late sixteenth century after accusations that witches had raised storms against King James VI. Local tradition centres on gatherings at St Andrew's Kirk and on attempts to summon destructive weather. Among those accused were Agnes Sampson, a midwife, and Gellie Duncan, a healer; their confessions were extracted under torture.",
         "source": "https://www.historic-uk.com/HistoryUK/HistoryofScotland/North-Berwick-Witch-Trials/"
     },
     {
@@ -3259,6 +3259,13 @@ SEED_LEGENDS = [
         "category": "ghost", "region": "Okehampton, Devon, England",
         "summary": "Devon tradition condemns Lady Mary Howard to ride each night from Tavistock to Okehampton Castle in a carriage made from the bones of her husbands. A black dog runs before the carriage and plucks one blade of grass from the castle mound on arrival. Only when every blade is gone will the haunting end.",
         "source": "https://www.legendarydartmoor.co.uk/2016/03/25/lady_how/"
+    },
+    {
+        "name": "Kilkenny Witch Trials",
+        "lat": 52.654, "lng": -7.252,
+        "category": "witch", "region": "Kilkenny, County Kilkenny, Ireland",
+        "summary": "The Kilkenny witch trials of 1324 centred on accusations against the wealthy Alice Kyteler and eleven associates. Kyteler escaped, but Petronilla de Meath was tortured and burned at the stake for alleged witchcraft and heresy. The case remains a dark landmark in Irish history.",
+        "source": "https://kilkennyheritage.ie/cultural-heritage/kilkenny-witch-trials/"
     },
 ]
 

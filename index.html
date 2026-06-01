@@ -357,8 +357,8 @@
     .bookmark-btn.bookmarked { color: var(--accent); }
     .bookmark-icon { display: block; width: 13px; height: 17px; }
     .filter-icon .bookmark-icon { width: 12px; height: 15px; }
-    .popup-bookmark { position: absolute; top: 12px; right: 14px; }
-    .popup-bookmark .bookmark-icon { width: 14px; height: 18px; }
+    .popup-bookmark { position: absolute; top: -1px; right: 38px; }
+    .popup-bookmark .bookmark-icon { width: 18px; height: 24px; }
 
     /* ── LEGEND PANEL ── */
     .legend-panel {
@@ -504,7 +504,10 @@
       /* Filter bar: icon + count only, no text label */
       .filter-bar { flex-wrap: nowrap; padding: 6px 12px; }
       .btn-label { display: none; }
+      .filter-btn[data-cat="all"] .btn-label { display: inline; }
       .filter-btn { padding: 3px 8px; }
+      .popup-bookmark { top: -2px; right: 42px; }
+      .popup-bookmark .bookmark-icon { width: 20px; height: 27px; }
 
       /* Sidebar: overlay from content-area top (which is below header+filterbar) */
       .sidebar { position: absolute; top: 0; bottom: 0; left: 0; z-index: 850; box-shadow: 4px 0 20px rgba(0,0,0,0.3); }
@@ -587,7 +590,8 @@ CATEGORIES.pirate.label = "Pirates & Smugglers";
 
 let nightMode = false;
 let markers = [];
-let activeFilter = 'all';
+let activeFilters = new Set();
+let bookmarksOnly = false;
 const BOOKMARKS_STORAGE_KEY = 'folkloreMapBookmarks';
 let bookmarks = loadBookmarks();
 const isMobile = () => window.innerWidth <= 640;
@@ -747,7 +751,7 @@ function toggleBookmark(name) {
   saveBookmarks();
   markers.forEach(marker => marker.setPopupContent(buildPopup(marker._legendData)));
   buildFilters();
-  filterMarkers(activeFilter);
+  filterMarkers();
 }
 
 let LEGENDS = [];
@@ -800,23 +804,39 @@ function makeFilterBtn(cat, label, colour, count) {
   }
   const cntHtml = count !== undefined ? '<span class="count-badge">' + count + '</span>' : '';
   btn.innerHTML  = iconHtml + '<span class="btn-label">' + label + '</span>' + (cntHtml ? ' ' + cntHtml : '');
-  btn.classList.toggle('active', activeFilter === cat);
+  btn.classList.toggle('active',
+    cat === 'all' ? !bookmarksOnly && activeFilters.size === 0 :
+    cat === 'bookmarks' ? bookmarksOnly :
+    activeFilters.has(cat)
+  );
   btn.setAttribute('aria-label', label);
   btn.onclick    = () => filterMarkers(cat);
   return btn;
 }
 
 function filterMarkers(cat) {
-  activeFilter = cat;
+  if (cat === 'all') {
+    activeFilters.clear();
+    bookmarksOnly = false;
+  } else if (cat === 'bookmarks') {
+    bookmarksOnly = !bookmarksOnly;
+  } else if (cat) {
+    if (activeFilters.has(cat)) activeFilters.delete(cat);
+    else activeFilters.add(cat);
+  }
   document.querySelectorAll('.filter-btn').forEach(b => {
-    b.classList.toggle('active', b.dataset.cat === cat);
+    b.classList.toggle('active',
+      b.dataset.cat === 'all' ? !bookmarksOnly && activeFilters.size === 0 :
+      b.dataset.cat === 'bookmarks' ? bookmarksOnly :
+      activeFilters.has(b.dataset.cat)
+    );
   });
   clusterGroup.clearLayers();
-  const visible = markers.filter(m =>
-    cat === 'all' ||
-    (cat === 'bookmarks' && isBookmarked(m._legendData.name)) ||
-    m._legendData.category === cat
-  );
+  const visible = markers.filter(m => {
+    const matchesCategory = activeFilters.size === 0 || activeFilters.has(m._legendData.category);
+    const matchesBookmark = !bookmarksOnly || isBookmarked(m._legendData.name);
+    return matchesCategory && matchesBookmark;
+  });
   clusterGroup.addLayers(visible);
   updateCount(visible.length);
   buildSidebarList(visible.map(m => m._legendData));
@@ -888,7 +908,9 @@ function focusLegend(name) {
   document.getElementById('searchInput').value = '';
   const leg = LEGENDS.find(l => l.name === name);
   if (!leg) return;
-  if (activeFilter !== 'all' && activeFilter !== leg.category && !(activeFilter === 'bookmarks' && isBookmarked(name))) filterMarkers('all');
+  if ((activeFilters.size && !activeFilters.has(leg.category)) || (bookmarksOnly && !isBookmarked(name))) {
+    filterMarkers('all');
+  }
   const marker = markers.find(m => m._legendData.name === name);
   if (!marker) return;
   highlightSidebarItem(name);
@@ -916,7 +938,11 @@ function buildSidebarList(legends) {
   const list = document.getElementById('sidebarList');
   const sub  = document.getElementById('sidebarSubtitle');
   const sorted = [...legends].sort((a, b) => a.name.localeCompare(b.name));
-  sub.textContent = sorted.length + (activeFilter === 'all' ? ' entries' : ' ' + (activeFilter === 'bookmarks' ? 'saved entries' : (CATEGORIES[activeFilter]?.label || 'entries')));
+  const filterLabels = [...activeFilters].map(cat => CATEGORIES[cat]?.label).filter(Boolean);
+  const suffix = bookmarksOnly
+    ? (filterLabels.length ? ' saved ' + filterLabels.join(' + ') : ' saved entries')
+    : (filterLabels.length ? ' ' + filterLabels.join(' + ') : ' entries');
+  sub.textContent = sorted.length + suffix;
   list.replaceChildren();
   sorted.forEach(leg => {
     const cat = CATEGORIES[leg.category] || CATEGORIES.beast;

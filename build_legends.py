@@ -2395,9 +2395,9 @@ SEED_LEGENDS = [
     },
     {
         "name": "Balor of the Evil Eye",
-        "lat": 55.229, "lng": -8.329,
+        "lat": 55.2644, "lng": -8.2372,
         "category": "giant",
-        "region": "County Donegal, Ireland",
+        "region": "Tory Island, County Donegal, Ireland",
         "summary": "The terrible king of the Fomorians, whose single great eye — kept shut by a ring — would kill all it looked upon when opened. It took four men to lift his eyelid in battle. His own grandson Lugh slew him with a slingshot through the eye, fulfilling a prophecy Balor had tried all his life to prevent.",
         "source": "https://en.wikipedia.org/wiki/Balor"
     },

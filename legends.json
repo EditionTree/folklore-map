@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-01T18:48:27.835879Z",
-  "total": 378,
+  "generated": "2026-06-01T19:13:23.381047Z",
+  "total": 382,
   "categories": {
     "beast": "Beasts",
     "ghost": "Ghosts",
@@ -152,10 +152,10 @@
     },
     {
       "name": "Balor of the Evil Eye",
-      "lat": 55.229,
-      "lng": -8.329,
+      "lat": 55.2644,
+      "lng": -8.2372,
       "category": "giant",
-      "region": "County Donegal, Ireland",
+      "region": "Tory Island, County Donegal, Ireland",
       "summary": "The terrible king of the Fomorians, whose single great eye — kept shut by a ring — would kill all it looked upon when opened. It took four men to lift his eyelid in battle. His own grandson Lugh slew him with a slingshot through the eye, fulfilling a prophecy Balor had tried all his life to prevent.",
       "source": "https://en.wikipedia.org/wiki/Balor"
     },
@@ -266,6 +266,15 @@
       "region": "Anglo-Saxon England",
       "summary": "The great hero of the Old English epic, monster-slayer of Grendel, Grendel's mother, and finally a dragon. Though set in Scandinavia, the poem is a cornerstone of England's mythic inheritance.",
       "source": "https://en.wikipedia.org/wiki/Beowulf"
+    },
+    {
+      "name": "Billy Marshall",
+      "lat": 54.8352,
+      "lng": -4.0593,
+      "category": "hero",
+      "region": "Kirkcudbright, Galloway, Scotland",
+      "summary": "Billy Marshall was the legendary King of the Gypsies of Galloway, a folk hero of the Scottish Romani tradition said to have lived to the extraordinary age of one hundred and twenty (c.1672–1792). Francis Hindes Groome called Galloway 'Billy Marshall's old kingdom' in Gypsy Folk-Tales. Tradition says he fought at Sheriffmuir at forty-three and survived to see Culloden, married seventeen wives and fathered numerous children across south-west Scotland. Walter Scott drew on his legend for the Romani characters in Guy Mannering. His grave is said to lie in Kirkcudbright kirkyard.",
+      "source": "https://www.gutenberg.org/ebooks/71092"
     },
     {
       "name": "Bisterne Dragon",
@@ -1130,6 +1139,15 @@
       "region": "East Midlands",
       "summary": "The spirit who lives within the elder tree — she must be asked permission before any branch is cut. To burn elder wood without asking brings death to the household within the year. In Scandinavia she is Hyldemor; in England she has no name, only the quiet authority of very old wood.",
       "source": "https://en.wikipedia.org/wiki/Elder_(tree)#Folklore"
+    },
+    {
+      "name": "Elfhame",
+      "lat": 55.713,
+      "lng": -4.713,
+      "category": "fairy",
+      "region": "Lynn, Dalry, North Ayrshire, Scotland",
+      "summary": "The Court of Elfhame is the fairy otherworld of Scottish tradition — a parallel realm whose queen and courtiers could be encountered by those with supernatural gifts. Bessie Dunlop of Lynn near Dalry was tried for witchcraft in 1576 after claiming her healing powers came from Thomas Reid, a man dead since Pinkie, who now walked with the fairy court. Eight women and four men from Elfhame visited her home — called 'good wights' by Reid — and the Queen herself had once come to her door seeking a drink. Andro Man of Aberdeen (tried 1597) claimed a lifelong relationship with the Queen of Elphame. James VI drew on such confessions when writing Daemonologie, making Elfhame the distinctly Scottish name for the fairy kingdom as it appeared in witch-trial testimony and popular belief.",
+      "source": "https://en.wikipedia.org/wiki/Bessie_Dunlop"
     },
     {
       "name": "Enfield Poltergeist",
@@ -2183,6 +2201,15 @@
       "region": "Rathfarnham, County Dublin",
       "summary": "\n\nMount Venus is a megalithic site on the Mount Venus Road in Edmondstown, County Dublin, Ireland. It is a national heritage site.",
       "source": "https://en.wikipedia.org/wiki/Mount_Venus"
+    },
+    {
+      "name": "Mousehold Heath (Heviskey Tan)",
+      "lat": 52.641,
+      "lng": 1.319,
+      "category": "location",
+      "region": "Norwich, Norfolk",
+      "summary": "Mousehold Heath near Norwich is known in Romani as Heviskey Tan — the place of holes. George Borrow recorded in Romano Lavo-Lil that the last two practitioners of wholly traditional Romani life were buried there: 'some six feet deep beneath the moss of a wild, hilly heath — called in Gypsy the Heviskey Tan, or place of holes; in English, Mousehold — near an ancient city which the Gentiles call Norwich.' The old Romani who refused Christian burial chose this heath as their resting place, making it a distinctly named sacred site preserved in the Romani language itself.",
+      "source": "https://www.gutenberg.org/ebooks/2733"
     },
     {
       "name": "Mullyash Kerbed Cairn",
@@ -3344,6 +3371,15 @@
       "region": "Scottish Borders",
       "summary": "A venomous border worm that laired in a hollow near Linton, poisoning the countryside with its breath. Somerville of Lariston slew it with a lance tipped by a burning peat or wheel of pitch.",
       "source": "https://en.wikipedia.org/wiki/Worm_of_Linton"
+    },
+    {
+      "name": "Wraith",
+      "lat": 55.9533,
+      "lng": -3.1883,
+      "category": "ghost",
+      "region": "Scotland",
+      "summary": "In Scottish tradition, a wraith is the spectral double of a living person — appearing to friends or family in their likenesse before death, presaging fate. James VI defined the term in Daemonologie (1597): 'When they appeare vpon that occasion, they are called Wraithes in our language.' Unlike a revenant ghost, the wraith appears before death, not after; it is an omen wearing a living face. The tradition is distinct from the Highland Bean Nighe or Banshee — the wraith is the dying person's own double, and to meet your own wraith on the road is the surest sign.",
+      "source": "https://www.gutenberg.org/ebooks/25929"
     },
     {
       "name": "Wulver",

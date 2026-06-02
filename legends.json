@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-01T22:03:20.208925Z",
-  "total": 384,
+  "generated": "2026-06-02T20:27:42.795730Z",
+  "total": 397,
   "categories": {
     "beast": "Beasts",
     "ghost": "Ghosts",
@@ -32,6 +32,15 @@
       "region": "Gwynedd, Wales",
       "summary": "A monstrous creature of the deep lakes of Wales — part crocodile, part demon — the Afanc devoured any who entered its waters. Llyn Barfog in the Dyfi valley is one of its most enduring haunting grounds. In some versions it was dragged from the water by King Arthur's horse Llamrei and cast into a loch too deep and cold for it ever to resurface.",
       "source": "https://en.wikipedia.org/wiki/Afanc"
+    },
+    {
+      "name": "Aillen mac Midgna",
+      "lat": 53.578,
+      "lng": -6.611,
+      "category": "fairy",
+      "region": "Hill of Tara, County Meath, Ireland",
+      "summary": "Each Samhain, Aillen mac Midgna lulled the defenders of Tara to sleep with enchanted music before burning the royal hall. Fionn mac Cumhaill resisted the spell and slew him, earning leadership of the Fianna.",
+      "source": "https://en.wikipedia.org/wiki/Aillen"
     },
     {
       "name": "Alderley Edge",
@@ -250,6 +259,15 @@
       "source": "https://en.wikipedia.org/wiki/Behy_court_tomb"
     },
     {
+      "name": "Beithir",
+      "lat": 55.784,
+      "lng": -6.29,
+      "category": "dragon",
+      "region": "Islay, Scotland",
+      "summary": "The Beithir is a venomous serpent-dragon of Scottish Gaelic folklore. An Islay tradition tells of a beast travelling from Scanlastle toward Loch Indaal, where sailors killed it using flesh-covered barrels armed with iron spikes.",
+      "source": "https://en.wikipedia.org/wiki/Beithir"
+    },
+    {
       "name": "Belenus",
       "lat": 51.381,
       "lng": -2.36,
@@ -302,6 +320,15 @@
       "region": "Leicestershire",
       "summary": "A blue-faced hag with iron claws who dwelt in a cave she carved from the sandstone of the Dane Hills near Leicester. She crouched in her oak tree waiting to snatch children and lambs, tanning their skins to wear around her waist. Cottages in Leicestershire were built with small windows to keep her out.",
       "source": "https://en.wikipedia.org/wiki/Black_Annis"
+    },
+    {
+      "name": "Black Dog of Bouley Bay",
+      "lat": 49.255,
+      "lng": -2.08,
+      "category": "beast",
+      "region": "Bouley Bay, Jersey",
+      "summary": "The Black Dog of Bouley Bay, or Lé Tchian du Bouôlay, is a Jersey storm hound said to haunt the cliffs above the bay. Its glowing eyes, dragging chain and howls warned fishermen of bad weather; one tradition suggests smugglers encouraged the tale.",
+      "source": "https://www.jerseyheritage.org/history/the-black-dog-of-bouley-bay/"
     },
     {
       "name": "Black Lady of Bradley Woods",
@@ -682,6 +709,15 @@
       "source": "https://en.wikipedia.org/wiki/Castle_Downs%2C_Cornwall"
     },
     {
+      "name": "Ceasg",
+      "lat": 57.487,
+      "lng": -4.243,
+      "category": "water",
+      "region": "North Kessock, Black Isle, Highland",
+      "summary": "The ceasg is a Scottish Gaelic mermaid with the lower body of a grilse, a young salmon, also called maighdean na tuinne, the maid of the wave. The most famous local tradition is the Mermaid of Kessock: a man named Paterson caught her on the shore by the Kessock Ferry and removed scales from her tail to force her into human form, married her and had children, until a child found the hidden scales and she returned forever to the sea. If captured she grants three wishes, but her song can also lure men to drown.",
+      "source": "https://en.wikipedia.org/wiki/Ceasg"
+    },
+    {
       "name": "Ceridwen",
       "lat": 52.74,
       "lng": -3.852,
@@ -943,6 +979,15 @@
       "source": "https://en.wikipedia.org/wiki/Devil%27s_Arrows"
     },
     {
+      "name": "Devil's Bridge",
+      "lat": 52.377,
+      "lng": -3.841,
+      "category": "location",
+      "region": "Pontarfynach, Ceredigion, Wales",
+      "summary": "At Devil's Bridge in Ceredigion, local legend says the Devil offered to bridge the gorge in exchange for the soul of the first living creature to cross. An old woman outwitted him by throwing bread across the bridge for her dog to chase.",
+      "source": "https://www.discoverceredigion.wales/areas-of-ceredigion/cambrian-mountains/communities-of-the-cambrian-mountains/devils-bridge/"
+    },
+    {
       "name": "Devil's Dyke",
       "lat": 50.8929,
       "lng": -0.2121,
@@ -1013,6 +1058,15 @@
       "region": "Bull Rock (Tech Duinn), Beara Peninsula, County Cork, Munster",
       "summary": "Donn, the Dark One, is the Irish lord of the dead and one of the Milesian ancestors of the Gaels. His dwelling, Tech Duinn or the House of Donn, is identified with Bull Rock off Dursey Island, a sea stack pierced by a natural tunnel like a portal to another world. Folklore describes him as a phantom horseman riding across the Atlantic before storms.",
       "source": "https://en.wikipedia.org/wiki/Donn"
+    },
+    {
+      "name": "Donn Fírinne",
+      "lat": 52.468,
+      "lng": -8.754,
+      "category": "fairy",
+      "region": "Knockfierna (Cnoc Fírinne), County Limerick, Ireland",
+      "summary": "Donn Fírinne is the fairy king of Knockfierna, the Hill of Truth, in County Limerick. Local tradition says he rides a white horse through storm clouds and punishes attempts to disturb the hill's fairy forts with violent weather.",
+      "source": "https://www.duchas.ie/en/cbes/4922104/4852452/4948524"
     },
     {
       "name": "Doom Bar",
@@ -1474,6 +1528,15 @@
       "source": "https://en.wikipedia.org/wiki/Gurt_Worm"
     },
     {
+      "name": "Guy of Warwick",
+      "lat": 52.307,
+      "lng": -1.574,
+      "category": "hero",
+      "region": "Warwick and Guy's Cliffe, Warwickshire, England",
+      "summary": "Guy of Warwick is the great hero of Warwickshire romance, credited with slaying the Dun Cow and defeating the Danish champion Colbrand. Tradition says he ended his life as a hermit at Guy's Cliffe beside the River Avon.",
+      "source": "https://www.ourwarwickshire.org.uk/content/article/guy-warwick-english-hero"
+    },
+    {
       "name": "Gwrach-y-Rhibyn",
       "lat": 52.415,
       "lng": -4.082,
@@ -1688,6 +1751,15 @@
       "region": "Faversham, Kent",
       "summary": "The Faversham-born corsair Jack Ward became England's notorious Arch-Pirate. Plays, pamphlets and ballads followed him in his own lifetime. The traditional song Captain Ward and the Rainbow casts him as a king of the sea who defeats the royal ship sent against him.",
       "source": "https://en.wikipedia.org/wiki/Jack_Ward"
+    },
+    {
+      "name": "Jack o' Kent",
+      "lat": 51.921,
+      "lng": -2.836,
+      "category": "hero",
+      "region": "Kentchurch and Grosmont, Welsh Marches",
+      "summary": "Jack o' Kent is a trickster of the Welsh Marches who repeatedly defeats the Devil in wagers. His legends cluster around Kentchurch and Grosmont, including a tale in which he secures a bridge over the River Monnow while denying the Devil a human soul.",
+      "source": "https://en.wikipedia.org/wiki/Jack_o%27_Kent"
     },
     {
       "name": "Jan Tregeagle",
@@ -1987,6 +2059,15 @@
       "source": "https://en.wikipedia.org/wiki/Lough_Derg_(Ulster)"
     },
     {
+      "name": "Lough na Súil",
+      "lat": 54.088,
+      "lng": -8.334,
+      "category": "location",
+      "region": "Geevagh, County Sligo, Ireland",
+      "summary": "Lough na Súil, the Lake of the Eye, is linked to the death of Balor at the Second Battle of Mag Tuired: his fallen eye is said to have burned a hollow into the ground. The Sligo lake periodically drains through its limestone bed and later refills.",
+      "source": "https://www.rte.ie/archives/2019/0930/1079090-disappearing-sligo-lake/"
+    },
+    {
       "name": "Lugh",
       "lat": 54.003,
       "lng": -6.415,
@@ -2057,6 +2138,15 @@
       "region": "Wales",
       "summary": "A winter wassailing custom in which a decorated horse skull is carried from door to door. The party trades verses with householders before being admitted for food, drink, and seasonal chaos.",
       "source": "https://en.wikipedia.org/wiki/Mari_Lwyd"
+    },
+    {
+      "name": "Marool",
+      "lat": 60.154,
+      "lng": -1.145,
+      "category": "water",
+      "region": "Shetland Islands, Scotland",
+      "summary": "The Marool is a Shetland sea-devil associated with mareel, the glow of phosphorescent water. Folklore describes a many-eyed fish-like creature with a fiery crest that revels in storms and shipwrecks.",
+      "source": "https://abookofcreatures.com/2016/03/04/marool/"
     },
     {
       "name": "Martin Mere",
@@ -2156,6 +2246,15 @@
       "region": "Knocknarea, County Sligo",
       "summary": "Miosgán Meadhbha, anglicized Miosgan Meva and also called Maeve's Cairn, is a large cairn on the summit of Knocknarea in County Sligo, Ireland. It is thought to conceal a passage tomb from the Neolithic. It is the largest cairn in Ireland, excepting those at Brú na Bóinne in Meath.",
       "source": "https://en.wikipedia.org/wiki/Miosg%C3%A1n_Meadhbha"
+    },
+    {
+      "name": "Moddey Dhoo",
+      "lat": 54.225,
+      "lng": -4.697,
+      "category": "beast",
+      "region": "Peel Castle, Isle of Man",
+      "summary": "The Moddey Dhoo is the phantom black dog of Peel Castle. Guards became accustomed to its nightly presence, but tradition tells that a soldier who followed it alone through a passage returned terrified and died soon afterwards.",
+      "source": "https://www.manxnationalheritage.im/wp-content/uploads/2016/11/Peel-Castle-Audio-Guide-Transcript.pdf"
     },
     {
       "name": "Moel Tŷ Uchaf",
@@ -2779,6 +2878,15 @@
       "source": "https://en.wikipedia.org/wiki/Tristan_and_Iseult"
     },
     {
+      "name": "Sluagh",
+      "lat": 58.212,
+      "lng": -6.363,
+      "category": "ghost",
+      "region": "Western Isles, Scotland",
+      "summary": "The Sluagh are airborne hosts of the unforgiven dead in Scottish Gaelic folklore. Hebridean tradition warns that they sweep in from the west seeking souls, so west-facing doors and windows were kept shut when death was near.",
+      "source": "https://en.wikipedia.org/wiki/Sluagh"
+    },
+    {
       "name": "Sockburn Worm",
       "lat": 54.489,
       "lng": -1.467,
@@ -3182,6 +3290,15 @@
       "region": "Yorkshire",
       "summary": "The Twelve Apostles is a stone circle near Ilkley and Burley in Wharfedale in West Yorkshire, England.",
       "source": "https://en.wikipedia.org/wiki/Twelve_Apostles%2C_West_Yorkshire"
+    },
+    {
+      "name": "Twrch Trwyth",
+      "lat": 51.867,
+      "lng": -5.277,
+      "category": "beast",
+      "region": "Porth Clais, Pembrokeshire, Wales",
+      "summary": "Twrch Trwyth is the enchanted boar hunted by Arthur's warband in the Welsh tale Culhwch and Olwen. Carrying a comb, razor and shears between his ears, the creature lands near Porth Clais and leaves a destructive trail across Wales before fleeing toward Cornwall.",
+      "source": "https://en.wikipedia.org/wiki/Twrch_Trwyth"
     },
     {
       "name": "Tylwyth Teg",

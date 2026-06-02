@@ -5,3 +5,7 @@ __pycache__/
 legends.*-review.json
 legends.review.json
 source_snapshots/
+
+# Operational logs and local config — not needed for the live site
+bug_reports/
+.claude/

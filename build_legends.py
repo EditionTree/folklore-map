@@ -32,8 +32,8 @@ USER_AGENT     = "FolkloreMap-BuildScript/1.0 (one-time data build; https://gith
 TIMEOUT        = 20
 RATE_LIMIT     = 0.3    # seconds between requests
 
-# UK bounding box for coordinate sanity check
-UK_BOUNDS = {"lat_min": 49.5, "lat_max": 61.5, "lng_min": -10.5, "lng_max": 2.5}  # expanded to include Ireland
+# British Isles bounding box for coordinate sanity check
+UK_BOUNDS = {"lat_min": 49.0, "lat_max": 61.5, "lng_min": -10.5, "lng_max": 2.5}  # includes Ireland and the Channel Islands
 
 
 # ---------------------------------------------------------------------------
@@ -3267,6 +3267,90 @@ SEED_LEGENDS = [
         "summary": "The Kilkenny witch trials of 1324 centred on accusations against the wealthy Alice Kyteler and eleven associates. Kyteler escaped, but Petronilla de Meath was tortured and burned at the stake for alleged witchcraft and heresy. The case remains a dark landmark in Irish history.",
         "source": "https://kilkennyheritage.ie/cultural-heritage/kilkenny-witch-trials/"
     },
+    {
+        "name": "Donn Fírinne",
+        "lat": 52.468, "lng": -8.754,
+        "category": "fairy", "region": "Knockfierna (Cnoc Fírinne), County Limerick, Ireland",
+        "summary": "Donn Fírinne is the fairy king of Knockfierna, the Hill of Truth, in County Limerick. Local tradition says he rides a white horse through storm clouds and punishes attempts to disturb the hill's fairy forts with violent weather.",
+        "source": "https://www.duchas.ie/en/cbes/4922104/4852452/4948524"
+    },
+    {
+        "name": "Aillen mac Midgna",
+        "lat": 53.578, "lng": -6.611,
+        "category": "fairy", "region": "Hill of Tara, County Meath, Ireland",
+        "summary": "Each Samhain, Aillen mac Midgna lulled the defenders of Tara to sleep with enchanted music before burning the royal hall. Fionn mac Cumhaill resisted the spell and slew him, earning leadership of the Fianna.",
+        "source": "https://en.wikipedia.org/wiki/Aillen"
+    },
+    {
+        "name": "Lough na Súil",
+        "lat": 54.088, "lng": -8.334,
+        "category": "location", "region": "Geevagh, County Sligo, Ireland",
+        "summary": "Lough na Súil, the Lake of the Eye, is linked to the death of Balor at the Second Battle of Mag Tuired: his fallen eye is said to have burned a hollow into the ground. The Sligo lake periodically drains through its limestone bed and later refills.",
+        "source": "https://www.rte.ie/archives/2019/0930/1079090-disappearing-sligo-lake/"
+    },
+    {
+        "name": "Marool",
+        "lat": 60.154, "lng": -1.145,
+        "category": "water", "region": "Shetland Islands, Scotland",
+        "summary": "The Marool is a Shetland sea-devil associated with mareel, the glow of phosphorescent water. Folklore describes a many-eyed fish-like creature with a fiery crest that revels in storms and shipwrecks.",
+        "source": "https://abookofcreatures.com/2016/03/04/marool/"
+    },
+    {
+        "name": "Sluagh",
+        "lat": 58.212, "lng": -6.363,
+        "category": "ghost", "region": "Western Isles, Scotland",
+        "summary": "The Sluagh are airborne hosts of the unforgiven dead in Scottish Gaelic folklore. Hebridean tradition warns that they sweep in from the west seeking souls, so west-facing doors and windows were kept shut when death was near.",
+        "source": "https://en.wikipedia.org/wiki/Sluagh"
+    },
+    {
+        "name": "Beithir",
+        "lat": 55.784, "lng": -6.290,
+        "category": "dragon", "region": "Islay, Scotland",
+        "summary": "The Beithir is a venomous serpent-dragon of Scottish Gaelic folklore. An Islay tradition tells of a beast travelling from Scanlastle toward Loch Indaal, where sailors killed it using flesh-covered barrels armed with iron spikes.",
+        "source": "https://en.wikipedia.org/wiki/Beithir"
+    },
+    {
+        "name": "Twrch Trwyth",
+        "lat": 51.867, "lng": -5.277,
+        "category": "beast", "region": "Porth Clais, Pembrokeshire, Wales",
+        "summary": "Twrch Trwyth is the enchanted boar hunted by Arthur's warband in the Welsh tale Culhwch and Olwen. Carrying a comb, razor and shears between his ears, the creature lands near Porth Clais and leaves a destructive trail across Wales before fleeing toward Cornwall.",
+        "source": "https://en.wikipedia.org/wiki/Twrch_Trwyth"
+    },
+    {
+        "name": "Devil's Bridge",
+        "lat": 52.377, "lng": -3.841,
+        "category": "location", "region": "Pontarfynach, Ceredigion, Wales",
+        "summary": "At Devil's Bridge in Ceredigion, local legend says the Devil offered to bridge the gorge in exchange for the soul of the first living creature to cross. An old woman outwitted him by throwing bread across the bridge for her dog to chase.",
+        "source": "https://www.discoverceredigion.wales/areas-of-ceredigion/cambrian-mountains/communities-of-the-cambrian-mountains/devils-bridge/"
+    },
+    {
+        "name": "Jack o' Kent",
+        "lat": 51.921, "lng": -2.836,
+        "category": "hero", "region": "Kentchurch and Grosmont, Welsh Marches",
+        "summary": "Jack o' Kent is a trickster of the Welsh Marches who repeatedly defeats the Devil in wagers. His legends cluster around Kentchurch and Grosmont, including a tale in which he secures a bridge over the River Monnow while denying the Devil a human soul.",
+        "source": "https://en.wikipedia.org/wiki/Jack_o%27_Kent"
+    },
+    {
+        "name": "Guy of Warwick",
+        "lat": 52.307, "lng": -1.574,
+        "category": "hero", "region": "Warwick and Guy's Cliffe, Warwickshire, England",
+        "summary": "Guy of Warwick is the great hero of Warwickshire romance, credited with slaying the Dun Cow and defeating the Danish champion Colbrand. Tradition says he ended his life as a hermit at Guy's Cliffe beside the River Avon.",
+        "source": "https://www.ourwarwickshire.org.uk/content/article/guy-warwick-english-hero"
+    },
+    {
+        "name": "Moddey Dhoo",
+        "lat": 54.225, "lng": -4.697,
+        "category": "beast", "region": "Peel Castle, Isle of Man",
+        "summary": "The Moddey Dhoo is the phantom black dog of Peel Castle. Guards became accustomed to its nightly presence, but tradition tells that a soldier who followed it alone through a passage returned terrified and died soon afterwards.",
+        "source": "https://www.manxnationalheritage.im/wp-content/uploads/2016/11/Peel-Castle-Audio-Guide-Transcript.pdf"
+    },
+    {
+        "name": "Black Dog of Bouley Bay",
+        "lat": 49.255, "lng": -2.080,
+        "category": "beast", "region": "Bouley Bay, Jersey",
+        "summary": "The Black Dog of Bouley Bay, or Lé Tchian du Bouôlay, is a Jersey storm hound said to haunt the cliffs above the bay. Its glowing eyes, dragging chain and howls warned fishermen of bad weather; one tradition suggests smugglers encouraged the tale.",
+        "source": "https://www.jerseyheritage.org/history/the-black-dog-of-bouley-bay/"
+    },
 ]
 
 
@@ -3509,7 +3593,7 @@ def get_article_summary(title: str, verbose: bool) -> str:
 
 
 def is_in_uk(lat: float, lng: float) -> bool:
-    """Rough bounding box check — filters out entries placed outside Britain."""
+    """Rough bounding box check — filters out entries placed outside the British Isles."""
     return (UK_BOUNDS["lat_min"] <= lat <= UK_BOUNDS["lat_max"] and
             UK_BOUNDS["lng_min"] <= lng <= UK_BOUNDS["lng_max"])
 

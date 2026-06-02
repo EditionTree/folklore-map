@@ -109,7 +109,7 @@
       background: linear-gradient(90deg, transparent 0%, rgba(176,144,96,0.6) 20%, rgba(196,98,42,0.8) 50%, rgba(176,144,96,0.6) 80%, transparent 100%);
     }
     .header-emblem-wrap {
-      width: 72px; height: 72px;
+      width: 64px; height: 64px;
       flex-shrink: 0;
     }
     .header-emblem {
@@ -118,7 +118,7 @@
       display: block;
     }
     @media (max-width: 640px) {
-      .header-emblem-wrap { width: 44px; height: 44px; }
+      .header-emblem-wrap { width: 42px; height: 42px; }
     }
     .header-title { display: flex; align-items: center; gap: 14px; }
     .header-title-row { display: flex; align-items: baseline; gap: 14px; }
@@ -469,6 +469,81 @@
     }
     footer a { color: var(--border); text-decoration: none; }
     footer a:hover { color: var(--parchment); }
+    .bug-report-btn {
+      background: none; border: 1px solid rgba(176,144,96,0.3); border-radius: 2px;
+      padding: 3px 10px; cursor: pointer;
+      font-family: var(--font-body); font-size: 10px; color: rgba(176,144,96,0.6);
+      letter-spacing: 0.04em; white-space: nowrap;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .bug-report-btn:hover { border-color: rgba(196,98,42,0.6); color: var(--accent-glow); }
+
+    /* ── BUG REPORT MODAL ── */
+    .bug-modal-overlay {
+      position: fixed; inset: 0; z-index: 9000;
+      background: rgba(30,20,8,0.75);
+      display: flex; align-items: center; justify-content: center;
+      padding: 20px;
+    }
+    .bug-modal {
+      background: var(--parchment);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      width: 100%; max-width: 420px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+    }
+    .bug-modal-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 12px 16px 10px;
+      border-bottom: 1px solid rgba(176,144,96,0.3);
+    }
+    .bug-modal-title {
+      font-family: var(--font-display); font-size: 13px;
+      letter-spacing: 0.08em; color: var(--ink);
+    }
+    .bug-modal-close {
+      background: none; border: none; cursor: pointer;
+      font-size: 14px; color: var(--ink-light); padding: 0 2px;
+      transition: color 0.15s;
+    }
+    .bug-modal-close:hover { color: var(--accent); }
+    .bug-modal-body { padding: 14px 16px; }
+    .bug-label {
+      display: block; font-family: var(--font-display);
+      font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--ink-light); margin-bottom: 5px; margin-top: 10px;
+    }
+    .bug-label:first-child { margin-top: 0; }
+    .bug-required { color: var(--accent); }
+    .bug-textarea {
+      width: 100%; padding: 8px 10px;
+      font-family: var(--font-body); font-size: 13px; color: var(--ink);
+      background: rgba(255,255,255,0.5); border: 1px solid var(--border);
+      border-radius: 2px; resize: vertical; outline: none;
+      transition: border-color 0.15s;
+    }
+    .bug-textarea:focus { border-color: var(--accent-glow); background: rgba(255,255,255,0.7); }
+    .bug-status {
+      margin-top: 10px; padding: 8px 10px; border-radius: 2px;
+      font-family: var(--font-body); font-size: 12px;
+    }
+    .bug-status.success { background: rgba(60,120,60,0.12); color: #3a6e3a; border: 1px solid rgba(60,120,60,0.25); }
+    .bug-status.error   { background: rgba(180,50,30,0.1);  color: var(--accent); border: 1px solid rgba(180,50,30,0.25); }
+    .bug-modal-footer {
+      display: flex; align-items: center; justify-content: space-between; gap: 10px;
+      padding: 10px 16px 14px;
+      border-top: 1px solid rgba(176,144,96,0.3);
+    }
+    .bug-note { font-size: 10px; color: var(--ink-light); font-style: italic; flex: 1; }
+    .bug-submit-btn {
+      font-family: var(--font-display); font-size: 10px; letter-spacing: 0.1em;
+      text-transform: uppercase; padding: 6px 16px;
+      background: var(--ink); color: var(--parchment);
+      border: none; border-radius: 2px; cursor: pointer;
+      transition: background 0.15s; white-space: nowrap;
+    }
+    .bug-submit-btn:hover { background: var(--accent); }
+    .bug-submit-btn:disabled { opacity: 0.5; cursor: default; }
     .footer-brand {
       font-family: var(--font-display);
       font-size: 10px;
@@ -632,7 +707,29 @@
 <footer>
   <div class="footer-brand">Folklore Map of the British Isles<span>✦</span>© EditionTree</div>
   <div class="footer-tiles">Map tiles © <a href="https://stadiamaps.com/">Stadia Maps</a> / <a href="https://stamen.com">Stamen Design</a> · Data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors</div>
+  <button class="bug-report-btn" onclick="openBugReport()">⚑ Report a bug</button>
 </footer>
+
+<!-- Bug report modal -->
+<div id="bugModal" class="bug-modal-overlay" style="display:none" onclick="if(event.target===this)closeBugReport()">
+  <div class="bug-modal">
+    <div class="bug-modal-header">
+      <span class="bug-modal-title">Report a Bug</span>
+      <button class="bug-modal-close" onclick="closeBugReport()">✕</button>
+    </div>
+    <div class="bug-modal-body">
+      <label class="bug-label">What went wrong? <span class="bug-required">*</span></label>
+      <textarea id="bugDescription" class="bug-textarea" placeholder="Describe what happened…" rows="4" maxlength="1000"></textarea>
+      <label class="bug-label">What were you doing when it happened?</label>
+      <textarea id="bugSteps" class="bug-textarea" placeholder="e.g. I searched for 'Black Shuck', clicked the pin, then…" rows="3" maxlength="500"></textarea>
+      <div id="bugStatus" class="bug-status" style="display:none"></div>
+    </div>
+    <div class="bug-modal-footer">
+      <span class="bug-note">Your browser and device info will be included automatically.</span>
+      <button class="bug-submit-btn" onclick="submitBugReport()">Send Report</button>
+    </div>
+  </div>
+</div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
@@ -1002,10 +1099,15 @@ document.addEventListener('click', e => {
 
 
 function toggleSidebar() {
+  const list = document.getElementById('sidebarList');
+  if (sidebarOpen && list) list._savedScrollTop = list.scrollTop;
   sidebarOpen = !sidebarOpen;
   document.getElementById('sidebar').classList.toggle('collapsed', !sidebarOpen);
   document.getElementById('sidebarToggleBtn').textContent = sidebarOpen ? '✕ Entries' : '☰ Entries';
   if (!isMobile()) localStorage.setItem('sidebarOpen', sidebarOpen);
+  if (sidebarOpen && list && list._savedScrollTop !== undefined) {
+    requestAnimationFrame(() => { list.scrollTop = list._savedScrollTop; });
+  }
   setTimeout(() => map.invalidateSize(), 300);
 }
 
@@ -1121,6 +1223,78 @@ if (SUPABASE_URL && SUPABASE_ANON_KEY) {
   // ── Fallback: fetch from legends.json ────────────────────────────────
   loadLocalLegends().then(onDataLoaded).catch(onDataError);
 }
+
+// ── BUG REPORT ──────────────────────────────────────────────────────────
+function openBugReport() {
+  document.getElementById('bugDescription').value = '';
+  document.getElementById('bugSteps').value = '';
+  const s = document.getElementById('bugStatus');
+  s.style.display = 'none'; s.className = 'bug-status';
+  document.querySelector('.bug-submit-btn').disabled = false;
+  document.getElementById('bugModal').style.display = 'flex';
+}
+
+function closeBugReport() {
+  document.getElementById('bugModal').style.display = 'none';
+}
+
+async function submitBugReport() {
+  const description = document.getElementById('bugDescription').value.trim();
+  const steps       = document.getElementById('bugSteps').value.trim();
+  const statusEl    = document.getElementById('bugStatus');
+  const submitBtn   = document.querySelector('.bug-submit-btn');
+
+  if (!description) {
+    statusEl.textContent = 'Please describe the bug before submitting.';
+    statusEl.className = 'bug-status error';
+    statusEl.style.display = 'block';
+    return;
+  }
+
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Sending…';
+
+  const payload = {
+    description,
+    steps:   steps || null,
+    url:     location.href,
+    browser: navigator.userAgent,
+    device:  /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent) ? 'mobile' : 'desktop'
+  };
+
+  try {
+    const res = await fetch(`${SUPABASE_URL}/rest/v1/bug_reports`, {
+      method: 'POST',
+      headers: {
+        'apikey':        SUPABASE_ANON_KEY,
+        'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+        'Content-Type':  'application/json',
+        'Prefer':        'return=minimal'
+      },
+      body: JSON.stringify(payload)
+    });
+
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+    statusEl.textContent = 'Thank you — your report has been received.';
+    statusEl.className = 'bug-status success';
+    statusEl.style.display = 'block';
+    submitBtn.textContent = 'Sent';
+    setTimeout(closeBugReport, 2000);
+
+  } catch (err) {
+    statusEl.textContent = 'Something went wrong. Please try again.';
+    statusEl.className = 'bug-status error';
+    statusEl.style.display = 'block';
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Send Report';
+  }
+}
+
+// Close modal on Escape key
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeBugReport();
+});
 </script>
 </body>
 </html>

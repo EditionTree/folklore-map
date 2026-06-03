@@ -65,8 +65,17 @@ PAGE = """<!DOCTYPE html>
 <style>
 *{{box-sizing:border-box;margin:0;padding:0}}
 body{{background:#e0d0b0;color:#2c1f0e;font-family:'Crimson Text',serif;line-height:1.7;min-height:100vh}}
-header{{background:linear-gradient(180deg,#1e1408,#2c1f0e);padding:14px 20px;text-align:center;border-bottom:1px solid rgba(176,144,96,.4)}}
-header a{{color:#f2e8d5;text-decoration:none;font-family:'Cinzel',serif;font-size:15px;letter-spacing:.08em}}
+.site-banner{{position:relative;background:linear-gradient(180deg,#1e1408,#2c1f0e 75%);padding:16px 20px;text-align:center}}
+.site-banner::before{{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,#8b3a1a 15%,#b09060 50%,#8b3a1a 85%,transparent)}}
+.site-banner::after{{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(176,144,96,.6) 20%,rgba(196,98,42,.8) 50%,rgba(176,144,96,.6) 80%,transparent)}}
+.banner-link{{display:inline-flex;align-items:center;gap:13px;text-decoration:none}}
+.banner-emblem{{width:48px;height:48px;object-fit:contain;flex-shrink:0}}
+.banner-text{{display:flex;flex-direction:column;align-items:flex-start;line-height:1.15}}
+.banner-title{{font-family:'Cinzel',serif;font-size:21px;font-weight:600;color:#f2e8d5;letter-spacing:.09em}}
+.banner-title i{{color:#c4622a;font-style:normal;font-size:.6em;vertical-align:middle;margin:0 6px}}
+.banner-sub{{font-family:'Crimson Text',serif;font-size:12px;font-style:italic;color:rgba(176,144,96,.8);letter-spacing:.04em}}
+.watermark{{display:block;width:200px;height:200px;margin:34px auto 0;color:#8b3a1a;opacity:.07}}
+@media(max-width:560px){{.banner-title{{font-size:15px}}.banner-emblem{{width:38px;height:38px}}.banner-sub{{font-size:11px}}}}
 .wrap{{max-width:680px;margin:0 auto;padding:0 20px 60px}}
 .card{{background:#f2e8d5;border:1px solid #b09060;border-radius:6px;margin-top:30px;padding:32px;box-shadow:0 4px 20px rgba(44,31,14,.18)}}
 .cat{{font-family:'Cinzel',serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#fff;background:#8b3a1a;display:inline-block;padding:3px 10px;border-radius:2px}}
@@ -83,7 +92,7 @@ footer{{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}}
 </style>
 </head>
 <body>
-<header><a href="{base}/"><img src="{base}/green-man.png" alt="" width="30" height="30" style="vertical-align:middle;margin-right:10px"/>Folklore Map of the British Isles</a></header>
+<header class="site-banner"><a class="banner-link" href="{base}/"><img src="{base}/green-man.png" class="banner-emblem" alt=""/><span class="banner-text"><span class="banner-title"><i>&#10022;</i> Folklore Map of the British Isles <i>&#10022;</i></span><span class="banner-sub">Myths, Legends &amp; Spectral Encounters</span></span></a></header>
 <div class="wrap">
 <article class="card">
 <span class="cat">{catname}</span>
@@ -94,6 +103,7 @@ footer{{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}}
 <span class="src">Source: <a href="{src}" target="_blank" rel="noopener">{srchost}</a></span>
 </article>
 <a class="back" href="{base}/legends/">&#8592; Browse all legends</a>
+<svg class="watermark" viewBox="0 0 512 512" aria-hidden="true"><path d="{watermark}" fill="currentColor"/></svg>
 </div>
 <footer>Part of the Folklore Map of the British Isles &#183; &#169; EditionTree</footer>
 </body>
@@ -101,10 +111,23 @@ footer{{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}}
 """
 
 
+def load_category_icons():
+    """Extract category -> SVG path from index.html (single source of truth)."""
+    try:
+        text = io.open("index.html", encoding="utf-8").read()
+    except Exception:
+        return {}
+    icons = {}
+    for m in re.finditer(r"(\w+):\s*\{[^{}]*?iconPath:\s*[`']([^`']+)[`']", text):
+        icons[m.group(1)] = m.group(2)
+    return icons
+
+
 def build():
     d = json.load(io.open("legends.json", encoding="utf-8"))
     cats = d.get("categories", {})
     legends = sorted(d["legends"], key=lambda l: l["name"].lower())
+    icons = load_category_icons()
     os.makedirs(OUT_DIR, exist_ok=True)
 
     # Unique slugs
@@ -157,6 +180,7 @@ def build():
             maplink=esc(maplink),
             src=esc(src),
             srchost=esc(host_of(src)),
+            watermark=icons.get(leg.get("category", ""), ""),
         )
         with io.open(os.path.join(OUT_DIR, f"{slug}.html"), "w", encoding="utf-8") as f:
             f.write(out)
@@ -180,8 +204,17 @@ def build():
 <style>
 *{{box-sizing:border-box;margin:0;padding:0}}
 body{{background:#e0d0b0;color:#2c1f0e;font-family:'Crimson Text',serif;min-height:100vh}}
-header{{background:linear-gradient(180deg,#1e1408,#2c1f0e);padding:14px 20px;text-align:center;border-bottom:1px solid rgba(176,144,96,.4)}}
-header a{{color:#f2e8d5;text-decoration:none;font-family:'Cinzel',serif;font-size:15px;letter-spacing:.08em}}
+.site-banner{{position:relative;background:linear-gradient(180deg,#1e1408,#2c1f0e 75%);padding:16px 20px;text-align:center}}
+.site-banner::before{{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,#8b3a1a 15%,#b09060 50%,#8b3a1a 85%,transparent)}}
+.site-banner::after{{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(176,144,96,.6) 20%,rgba(196,98,42,.8) 50%,rgba(176,144,96,.6) 80%,transparent)}}
+.banner-link{{display:inline-flex;align-items:center;gap:13px;text-decoration:none}}
+.banner-emblem{{width:48px;height:48px;object-fit:contain;flex-shrink:0}}
+.banner-text{{display:flex;flex-direction:column;align-items:flex-start;line-height:1.15}}
+.banner-title{{font-family:'Cinzel',serif;font-size:21px;font-weight:600;color:#f2e8d5;letter-spacing:.09em}}
+.banner-title i{{color:#c4622a;font-style:normal;font-size:.6em;vertical-align:middle;margin:0 6px}}
+.banner-sub{{font-family:'Crimson Text',serif;font-size:12px;font-style:italic;color:rgba(176,144,96,.8);letter-spacing:.04em}}
+.watermark{{display:block;width:200px;height:200px;margin:34px auto 0;color:#8b3a1a;opacity:.07}}
+@media(max-width:560px){{.banner-title{{font-size:15px}}.banner-emblem{{width:38px;height:38px}}.banner-sub{{font-size:11px}}}}
 .wrap{{max-width:760px;margin:0 auto;padding:24px 20px 60px}}
 h1{{font-family:'Cinzel',serif;font-size:26px;margin-bottom:18px}}
 ul{{list-style:none;columns:2;column-gap:30px}}
@@ -191,7 +224,7 @@ li a{{color:#8b3a1a;text-decoration:none;font-size:16px}}
 li span{{display:block;font-size:12px;font-style:italic;color:#5c4a2a}}
 </style></head>
 <body>
-<header><a href="{BASE}/">&#10022; Folklore Map of the British Isles &#10022;</a></header>
+<header class="site-banner"><a class="banner-link" href="{BASE}/"><img src="{BASE}/green-man.png" class="banner-emblem" alt=""/><span class="banner-text"><span class="banner-title"><i>&#10022;</i> Folklore Map of the British Isles <i>&#10022;</i></span><span class="banner-sub">Myths, Legends &amp; Spectral Encounters</span></span></a></header>
 <div class="wrap"><h1>All Legends ({written})</h1><ul>
 {items}
 </ul></div></body></html>"""

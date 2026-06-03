@@ -23,8 +23,17 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:#e0d0b0;color:#2c1f0e;font-family:'Crimson Text',serif;line-height:1.7;min-height:100vh}
-header{background:linear-gradient(180deg,#1e1408,#2c1f0e);padding:14px 20px;text-align:center;border-bottom:1px solid rgba(176,144,96,.4)}
-header a{color:#f2e8d5;text-decoration:none;font-family:'Cinzel',serif;font-size:15px;letter-spacing:.08em}
+.site-banner{position:relative;background:linear-gradient(180deg,#1e1408,#2c1f0e 75%);padding:16px 20px;text-align:center}
+.site-banner::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,#8b3a1a 15%,#b09060 50%,#8b3a1a 85%,transparent)}
+.site-banner::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(176,144,96,.6) 20%,rgba(196,98,42,.8) 50%,rgba(176,144,96,.6) 80%,transparent)}
+.banner-link{display:inline-flex;align-items:center;gap:13px;text-decoration:none}
+.banner-emblem{width:48px;height:48px;object-fit:contain;flex-shrink:0}
+.banner-text{display:flex;flex-direction:column;align-items:flex-start;line-height:1.15}
+.banner-title{font-family:'Cinzel',serif;font-size:21px;font-weight:600;color:#f2e8d5;letter-spacing:.09em}
+.banner-title i{color:#c4622a;font-style:normal;font-size:.6em;vertical-align:middle;margin:0 6px}
+.banner-sub{font-family:'Crimson Text',serif;font-size:12px;font-style:italic;color:rgba(176,144,96,.8);letter-spacing:.04em}
+.watermark{display:block;width:200px;height:200px;margin:34px auto 0;color:#8b3a1a;opacity:.07}
+@media(max-width:560px){.banner-title{font-size:15px}.banner-emblem{width:38px;height:38px}.banner-sub{font-size:11px}}
 .wrap{max-width:680px;margin:0 auto;padding:0 20px 60px}
 .card{background:#f2e8d5;border:1px solid #b09060;border-radius:6px;margin-top:30px;padding:32px;box-shadow:0 4px 20px rgba(44,31,14,.18)}
 .cat{font-family:'Cinzel',serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#fff;background:#8b3a1a;display:inline-block;padding:3px 10px;border-radius:2px}
@@ -41,7 +50,7 @@ footer{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}
 </style>
 </head>
 <body>
-<header><a href="https://editiontree.github.io/folklore-map/"><img src="https://editiontree.github.io/folklore-map/green-man.png" alt="" width="30" height="30" style="vertical-align:middle;margin-right:10px"/>Folklore Map of the British Isles</a></header>
+<header class="site-banner"><a class="banner-link" href="https://editiontree.github.io/folklore-map/"><img src="https://editiontree.github.io/folklore-map/green-man.png" class="banner-emblem" alt=""/><span class="banner-text"><span class="banner-title"><i>&#10022;</i> Folklore Map of the British Isles <i>&#10022;</i></span><span class="banner-sub">Myths, Legends &amp; Spectral Encounters</span></span></a></header>
 <div class="wrap">
 <article class="card">
 <span class="cat">Aquatic Legends</span>
@@ -52,6 +61,7 @@ footer{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}
 <span class="src">Source: <a href="https://en.wikipedia.org/wiki/Llyn_y_Fan_Fach" target="_blank" rel="noopener">en.wikipedia.org</a></span>
 </article>
 <a class="back" href="https://editiontree.github.io/folklore-map/legends/">&#8592; Browse all legends</a>
+<svg class="watermark" viewBox="0 0 512 512" aria-hidden="true"><path d="M319.406 75.156c-50.542.49-104.39 20.876-150.094 72.844-10.232 9.65-19.88 19.59-29.187 29.313-20.516 21.433-39.694 41.877-60.22 56.468-18.484 13.142-37.73 21.617-61 22.75v89.876c53.93-32.793 59.934-67.832 115.595-136.312 6.38-6.524 12.727-13.19 19.125-19.875 9.96-10.407 20.016-20.803 30.563-30.657 46.422-36.83 92.022-27.93 107.218 2.5 4.6-49.27 57.958-30.564 66.813 18.875 6.91-33.696 20.327-44.354 34.03-31.625-28.136 49.585-26.61 110.87-8.406 164.937 20.51 60.915 61.743 114.13 110.344 133.75v-20.563c-38.34-19.194-74.662-65.71-92.657-119.156-15.937-47.336-17.777-99.07 2.75-141.655 8.492 16.92 16.342 43.406 21.94 79.53 17.992-84.587 54.762-72.463 56.624-10.593 42.998-66.287-52.197-161.48-163.438-160.406zm-35.656 95.78C194.225 181.69 66.158 359.648 43.625 494.97h91.25c1.02-133.954 71.114-282.045 148.875-324.033zm32.406 13.69c-76.76 49.056-114.574 208.732-109.812 310.343h78.437c-41.213-80.74-23.207-252.666 31.376-310.345zm21.875 26.218c-34.686 82.23-25.705 191.077 25.158 284.125h78c-75.605-53.774-120.09-190.455-103.157-284.126z" fill="currentColor"/></svg>
 </div>
 <footer>Part of the Folklore Map of the British Isles &#183; &#169; EditionTree</footer>
 </body>

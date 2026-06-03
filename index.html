@@ -272,6 +272,8 @@
       color: var(--ink-light);
     }
     .filter-btn.active .count-badge { background: rgba(255,255,255,0.2); color: var(--parchment); }
+    .filter-random { border-color: var(--accent); color: var(--accent); font-weight: 600; }
+    .filter-random:hover { background: var(--accent); color: var(--parchment); }
 
     /* ── MAP CONTAINER ── */
     .map-wrap {
@@ -958,6 +960,13 @@ function buildFilters() {
 
   bar.appendChild(makeFilterBtn('bookmarks', 'Saved', null, bookmarks.size));
 
+  const randomBtn = document.createElement('button');
+  randomBtn.className = 'filter-btn filter-random';
+  randomBtn.title = 'Jump to a random legend';
+  randomBtn.innerHTML = '<span class="btn-label">🎲 Surprise me</span>';
+  randomBtn.onclick = randomLegend;
+  bar.appendChild(randomBtn);
+
   const usedCats = [...new Set(LEGENDS.map(l => l.category))];
   usedCats.forEach(cat => {
     const count = LEGENDS.filter(l => l.category === cat).length;
@@ -1073,6 +1082,12 @@ function handleSearch(query) {
     box.appendChild(item);
   });
   box.classList.add('open');
+}
+
+function randomLegend() {
+  if (!LEGENDS.length) return;
+  const leg = LEGENDS[Math.floor(Math.random() * LEGENDS.length)];
+  focusLegend(leg.name);
 }
 
 function focusLegend(name) {

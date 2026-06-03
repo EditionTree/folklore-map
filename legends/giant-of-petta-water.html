@@ -23,8 +23,17 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:#e0d0b0;color:#2c1f0e;font-family:'Crimson Text',serif;line-height:1.7;min-height:100vh}
-header{background:linear-gradient(180deg,#1e1408,#2c1f0e);padding:14px 20px;text-align:center;border-bottom:1px solid rgba(176,144,96,.4)}
-header a{color:#f2e8d5;text-decoration:none;font-family:'Cinzel',serif;font-size:15px;letter-spacing:.08em}
+.site-banner{position:relative;background:linear-gradient(180deg,#1e1408,#2c1f0e 75%);padding:16px 20px;text-align:center}
+.site-banner::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,#8b3a1a 15%,#b09060 50%,#8b3a1a 85%,transparent)}
+.site-banner::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(176,144,96,.6) 20%,rgba(196,98,42,.8) 50%,rgba(176,144,96,.6) 80%,transparent)}
+.banner-link{display:inline-flex;align-items:center;gap:13px;text-decoration:none}
+.banner-emblem{width:48px;height:48px;object-fit:contain;flex-shrink:0}
+.banner-text{display:flex;flex-direction:column;align-items:flex-start;line-height:1.15}
+.banner-title{font-family:'Cinzel',serif;font-size:21px;font-weight:600;color:#f2e8d5;letter-spacing:.09em}
+.banner-title i{color:#c4622a;font-style:normal;font-size:.6em;vertical-align:middle;margin:0 6px}
+.banner-sub{font-family:'Crimson Text',serif;font-size:12px;font-style:italic;color:rgba(176,144,96,.8);letter-spacing:.04em}
+.watermark{display:block;width:200px;height:200px;margin:34px auto 0;color:#8b3a1a;opacity:.07}
+@media(max-width:560px){.banner-title{font-size:15px}.banner-emblem{width:38px;height:38px}.banner-sub{font-size:11px}}
 .wrap{max-width:680px;margin:0 auto;padding:0 20px 60px}
 .card{background:#f2e8d5;border:1px solid #b09060;border-radius:6px;margin-top:30px;padding:32px;box-shadow:0 4px 20px rgba(44,31,14,.18)}
 .cat{font-family:'Cinzel',serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#fff;background:#8b3a1a;display:inline-block;padding:3px 10px;border-radius:2px}
@@ -41,7 +50,7 @@ footer{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}
 </style>
 </head>
 <body>
-<header><a href="https://editiontree.github.io/folklore-map/"><img src="https://editiontree.github.io/folklore-map/green-man.png" alt="" width="30" height="30" style="vertical-align:middle;margin-right:10px"/>Folklore Map of the British Isles</a></header>
+<header class="site-banner"><a class="banner-link" href="https://editiontree.github.io/folklore-map/"><img src="https://editiontree.github.io/folklore-map/green-man.png" class="banner-emblem" alt=""/><span class="banner-text"><span class="banner-title"><i>&#10022;</i> Folklore Map of the British Isles <i>&#10022;</i></span><span class="banner-sub">Myths, Legends &amp; Spectral Encounters</span></span></a></header>
 <div class="wrap">
 <article class="card">
 <span class="cat">Giants</span>
@@ -52,6 +61,7 @@ footer{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}
 <span class="src">Source: <a href="https://www.shetland.org/blog/shetland-folklore" target="_blank" rel="noopener">shetland.org</a></span>
 </article>
 <a class="back" href="https://editiontree.github.io/folklore-map/legends/">&#8592; Browse all legends</a>
+<svg class="watermark" viewBox="0 0 512 512" aria-hidden="true"><path d="M246.625 18.375c-11.817-.153-23.918 8.608-29.375 22.438-6.716 17.02-.85 35.28 13.094 40.78 13.943 5.502 30.69-3.822 37.406-20.843 6.716-17.02.85-35.28-13.094-40.78a22.512 22.512 0 0 0-8.03-1.595zm74.75 15.938c-10.97.006-22.743 6.024-30.78 16.874-12.25 16.534-11.2 38.06 2.342 48.094 13.544 10.035 34.44 4.754 46.688-11.78 12.25-16.534 11.2-38.06-2.344-48.094-4.654-3.45-10.16-5.097-15.905-5.093zm67.25 37.53c-10.336-.127-21.542 4.263-30.47 12.907-15.87 15.368-18.525 38.344-5.936 51.344 12.587 13 35.66 11.086 51.53-4.28 15.87-15.37 18.526-38.345 5.938-51.345-5.508-5.69-13.024-8.527-21.063-8.626zm-156.438 32.063c-22.51-.28-44.378 6.893-63.5 24C107.65 182.513 48.192 261.012 28.28 386.97 5.023 534.1 186.257 507.523 168.313 428.936c-22.922-100.387 34.13-141.11 108-124.156 32.838 7.54 66.54-4.9 86-40.436 23.402-42.733-7.428-106.817-62.875-139.625-21.61-12.79-44.74-20.534-67.25-20.814zM449.438 134c-10.52.022-21.654 2.82-32.093 8.625-27.837 15.48-40.15 46.51-27.47 69.313 12.682 22.802 45.54 28.73 73.376 13.25 27.837-15.48 40.118-46.51 27.438-69.313-7.926-14.252-23.717-21.91-41.25-21.875z" fill="currentColor"/></svg>
 </div>
 <footer>Part of the Folklore Map of the British Isles &#183; &#169; EditionTree</footer>
 </body>

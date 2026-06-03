@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-03T18:34:04.747193Z",
-  "total": 397,
+  "generated": "2026-06-03T19:28:33.662790Z",
+  "total": 413,
   "categories": {
     "beast": "Beasts",
     "ghost": "Ghosts",
@@ -115,6 +115,15 @@
       "source": "https://en.wikipedia.org/wiki/Arawn"
     },
     {
+      "name": "Ascapart",
+      "lat": 50.906,
+      "lng": -1.403,
+      "category": "giant",
+      "region": "Southampton, Hampshire, England",
+      "summary": "Ascapart is the giant of Hampshire legend, famous as the adversary of the medieval hero Bevis of Hampton. Thirty feet tall, he wielded a club made from a whole tree and challenged Bevis to single combat; when his great swing stuck in soft ground, Bevis took the advantage and defeated him. Rather than killing him, Bevis made Ascapart his squire and the giant served him loyally — until he later betrayed Bevis and stole his wife Josiane, meeting his end at the hands of Bevis's allies. Medieval paintings of both Ascapart and Bevis survive in the Southampton Bargate Monument Gallery, and an effigy of Ascapart once stood at the Bargate itself.",
+      "source": "https://en.wikipedia.org/wiki/Ascapart"
+    },
+    {
       "name": "Ashleypark Burial Mound",
       "lat": 52.9339,
       "lng": -8.1889,
@@ -185,6 +194,15 @@
       "region": "Ireland",
       "summary": "The bean sídhe — the woman of the fairy mound — whose keening wail in the night foretells the death of someone from one of the great Irish families. She may appear as a young woman combing her hair, a matron, or a hideous hag. To hear her is not to cause death, only to be warned of it.",
       "source": "https://en.wikipedia.org/wiki/Banshee"
+    },
+    {
+      "name": "Baobhan Sith",
+      "lat": 57.015,
+      "lng": -4.741,
+      "category": "fairy",
+      "region": "Scottish Highlands, Scotland",
+      "summary": "The Baobhan Sith are a class of female vampiric spirits from the folklore of the Scottish Highlands, described as supernaturally beautiful women in long green dresses whose feet are concealed because they end in deer hooves. They appear to hunters and travellers in remote shielings, enticing men to dance with them before slashing their throats with elongated talon-like nails and drinking their blood. The most documented legend follows four huntsmen who shelter for the night; four women appear at their request for partners, three of the men are drained of blood, and only the fourth survives by taking refuge among the horses — the iron of the horseshoes repelling the spirits. The folklorist Katharine Briggs identified iron as their traditional weakness.",
+      "source": "https://en.wikipedia.org/wiki/Baobhan_sith"
     },
     {
       "name": "Barclodiad y Gawres",
@@ -286,6 +304,15 @@
       "source": "https://en.wikipedia.org/wiki/Beltane_Fire_Festival"
     },
     {
+      "name": "Ben Varrey",
+      "lat": 54.083,
+      "lng": -4.624,
+      "category": "water",
+      "region": "Isle of Man",
+      "summary": "The Ben Varrey ('Woman of the Sea') is the Manx mermaid, a creature of ambivalent character who appears along the Isle of Man's rocky coastline: enchanting fishermen with her singing to draw them into danger, yet also guiding those she favours to rich herring grounds. In the well-known tale of Juan and the Mermaid, a fisherman won the confidence of a Ben Varrey by giving her apples from the shore; she returned his kindness with information about where the shoals ran, and eventually gave her an apple tree planted at the waterline as her own. Another tale describes a Ben Varrey falling in love with a shepherd boy on coastal rocks, bringing him coral and pearls, and hurling a stone in fury when he fled. A.W. Moore documented multiple traditions from island fishing communities.",
+      "source": "https://www.transceltic.com/manx/ben-varrey-manx-mermaid-and-story-of-mermaid-and-apple-tree"
+    },
+    {
       "name": "Beowulf",
       "lat": 52.6,
       "lng": 1.3,
@@ -293,6 +320,15 @@
       "region": "Anglo-Saxon England",
       "summary": "The great hero of the Old English epic, monster-slayer of Grendel, Grendel's mother, and finally a dragon. Though set in Scandinavia, the poem is a cornerstone of England's mythic inheritance.",
       "source": "https://en.wikipedia.org/wiki/Beowulf"
+    },
+    {
+      "name": "Bevis of Hampton",
+      "lat": 50.897,
+      "lng": -1.407,
+      "category": "hero",
+      "region": "Southampton, Hampshire, England",
+      "summary": "Bevis of Hampton is one of England's great medieval romance heroes, a legendary knight whose adventures were set in and around Southampton from the 12th century onward. The son of the Earl of Southampton, Bevis was sold into slavery as a child, became a knight, slew the dragon Garcy and the giant Ascapart, and eventually reclaimed his father's title. His legend became so embedded in local identity that Southampton's western hill bears the name Bevois Mount, a tower called Bevis's Tower once formed part of the city's medieval walls, and his effigy stands at the Bargate alongside Ascapart. Multiple medieval versions of his story circulated in Anglo-Norman, English, and Italian.",
+      "source": "https://en.wikipedia.org/wiki/Bevis_of_Hampton"
     },
     {
       "name": "Billy Marshall",
@@ -581,6 +617,15 @@
       "region": "Wales",
       "summary": "A Welsh household spirit similar to a brownie, rewarding good housekeeping and punishing idleness or disrespect. In later tales it gained a sharp dislike for teetotallers and dissenting ministers.",
       "source": "https://en.wikipedia.org/wiki/Bwbach"
+    },
+    {
+      "name": "Byard's Leap",
+      "lat": 53.027,
+      "lng": -0.455,
+      "category": "witch",
+      "region": "Cranwell, Lincolnshire, England",
+      "summary": "Byard's Leap is a hamlet on Ermine Street near Cranwell in Lincolnshire, the site of a famous local legend recorded by folklorist Ethel Rudkin. Old Meg, an evil witch living in a spinney by the road, plagued the local countryside. A retired soldier selected a blind horse called Blind Byard by dropping a stone into a drinking pond and choosing the horse that reacted fastest — blindness being believed to prevent enchantment. When Old Meg crept up and sank her long nails into the horse's flank, it leaped over sixty feet in terror; the soldier drove his sword into the witch's heart during the commotion. Four iron horseshoes set in stone at the hamlet still mark the spots where Byard's hooves landed.",
+      "source": "https://en.wikipedia.org/wiki/Byard%27s_Leap"
     },
     {
       "name": "Cadair Idris",
@@ -914,6 +959,15 @@
       "region": "Isle of Skye, Scotland",
       "summary": "A great fairy hound the size of a young bull, the Cu Sith roamed the Scottish Highlands in silence, its paw prints the width of a man's hand. It hunted on behalf of the fairy court and when it gave voice it bayed three times — after which those who had not found shelter were seized by fatal terror. Especially associated with the Hebrides and Skye, it was said to guard the entrances to the fairy mounds.",
       "source": "https://en.wikipedia.org/wiki/C%C3%B9_S%C3%ACth"
+    },
+    {
+      "name": "Cyhyraeth",
+      "lat": 51.856,
+      "lng": -4.312,
+      "category": "ghost",
+      "region": "River Tywi Valley and Glamorganshire coast, Wales",
+      "summary": "The Cyhyraeth is a Welsh death-omen spirit whose disembodied wailing voice sounds three times before a person's death — each cry growing weaker and more despairing than the last. Unlike the Irish Banshee, the Cyhyraeth has no visible form: it is heard as a horrible groaning and sighing, as of someone gravely ill, travelling through the night toward the house of the dying. It is especially associated with the Tywi Valley in Dyfed and with the Glamorganshire coast, where it is said to wail at sea before a shipwreck, accompanied by a Corpse-light (canwyll corff). Like the Banshee, it mourns for Welsh natives dying far from home.",
+      "source": "https://en.wikipedia.org/wiki/Cyhyraeth"
     },
     {
       "name": "Cú Chulainn",
@@ -1375,6 +1429,15 @@
       "source": "https://www.shetland.org/blog/shetland-folklore"
     },
     {
+      "name": "Giant of the Wrekin",
+      "lat": 52.674,
+      "lng": -2.548,
+      "category": "giant",
+      "region": "The Wrekin, Shropshire, England",
+      "summary": "The Wrekin, Shropshire's great solitary hill near Telford, was said in local legend to have been created by a Welsh giant named Gwendol Wrekin ap Shenkin ap Mynyddmawr who bore a grudge against the people of Shrewsbury. Carrying a colossal spadeful of earth intended to dam the River Severn and flood the town, the giant was tricked by a cobbler who showed him a sackful of worn-out shoes as proof that Shrewsbury was impossibly far away. Weary and deceived, the giant dumped his load where it became the Wrekin, and cleaned his boots on a smaller heap nearby that became the Ercall. The tale was collected in Charlotte Burne and G.F. Jackson's Shropshire Folk-Lore (1883).",
+      "source": "https://www.mysteriousbritain.co.uk/folklore/the-origin-of-the-wrekin/"
+    },
+    {
       "name": "Giant's Causeway",
       "lat": 55.2408,
       "lng": -6.5117,
@@ -1400,6 +1463,15 @@
       "region": "Glantane, County Cork",
       "summary": "Glantane East is a megalithic complex situated 6.4 kilometres (4.0 mi) from Millstreet, County Cork, Ireland. It is set in the Keel River valley on the north-west upper slopes of Musherabeg mountain, in the townland of Glantane. The complex includes a wedge tomb, two stone circles and a pair of stone alignments.",
       "source": "https://en.wikipedia.org/wiki/Glantane_East"
+    },
+    {
+      "name": "Glashtyn",
+      "lat": 54.228,
+      "lng": -4.539,
+      "category": "water",
+      "region": "Isle of Man",
+      "summary": "The Glashtyn is the water horse of Manx folklore, a shape-shifting creature that emerges from the sea and from inland streams to mingle with land-roving horses, and which sometimes appears as a handsome young man betrayed by his horse-ears. In equine form, the Glashtyn's hooves point backwards — a characteristic visible to the observant. It was said to come ashore to cross-breed with ordinary ponies; the resulting foals were prized but the creature itself was treacherous to ride. A parallel Manx glashan figure was a helpful farm spirit who performed threshing and herding, suggesting a dual nature of helpful and dangerous variants under the same name. Primary source: A.W. Moore, The Folklore of the Isle of Man (1891).",
+      "source": "https://en.wikipedia.org/wiki/Glashtyn"
     },
     {
       "name": "Glastonbury Holy Thorn",
@@ -1582,6 +1654,15 @@
       "source": "https://en.wikipedia.org/wiki/Gwyn_ap_Nudd"
     },
     {
+      "name": "Habetrot",
+      "lat": 55.551,
+      "lng": -2.836,
+      "category": "fairy",
+      "region": "Selkirkshire, Scottish Borders, Scotland",
+      "summary": "Habetrot is a benevolent but physically grotesque fairy from the folklore of Selkirkshire and the Scottish Borders, patron spirit of spinsters and mistress of the spinning wheel. She lives underground near burns and farms, accompanied by a community of other spinners all physically deformed by their work — elongated lips, splayed feet, and flattened thumbs. In the primary Border legend, she rescues a girl who cannot spin seven heads of flax by completing the task herself, then secures the girl a husband by persuading him his wife should never spin again, showing him the hideous toll spinning takes. Habetrot also had the power to cure disease: those who wore garments spun by her were safeguarded against illness.",
+      "source": "https://en.wikipedia.org/wiki/Habetrot"
+    },
+    {
       "name": "Hafren",
       "lat": 51.856,
       "lng": -2.241,
@@ -1607,6 +1688,15 @@
       "region": "Hartlepool, County Durham",
       "summary": "Hartlepool folklore says that during the Napoleonic Wars townspeople found a monkey from a wrecked ship, mistook it for a French spy and hanged it. The story is an enduring local legend and the source of the town's Monkey Hangers nickname.",
       "source": "https://www.historic-uk.com/HistoryUK/HistoryofEngland/The-Hanging-of-the-Hartlepool-Monkey/"
+    },
+    {
+      "name": "Haxey Hood",
+      "lat": 53.505,
+      "lng": -0.797,
+      "category": "location",
+      "region": "Haxey, North Lincolnshire, England",
+      "summary": "The Haxey Hood is an annual folk tradition held on 6 January (Twelfth Night) in the village of Haxey, said to have originated in the 14th century when Lady de Mowbray's silk riding hood blew away across the hill. Thirteen farm labourers gave chase; the man who caught it was so bashful he gave it to another to present to the lady, and she declared the catcher had acted like a Lord and the giver a Fool. She donated thirteen acres on condition that the chase be re-enacted each year. The tradition involves the Lord of the Hood, eleven Boggins, a Fool ceremonially smoked over a fire, and a chaotic communal sway toward four local pubs.",
+      "source": "https://en.wikipedia.org/wiki/Haxey_Hood"
     },
     {
       "name": "Headless Horseman of the Staffordshire Moors",
@@ -2536,6 +2626,15 @@
       "source": "https://www.historic-uk.com/HistoryUK/HistoryofEngland/Phantom-Battle-of-Edgehill/"
     },
     {
+      "name": "Phantom Hare of Bolingbroke Castle",
+      "lat": 53.134,
+      "lng": -0.018,
+      "category": "ghost",
+      "region": "Old Bolingbroke, Lincolnshire, England",
+      "summary": "Bolingbroke Castle in Old Bolingbroke, Lincolnshire — birthplace of the future King Henry IV — was haunted from at least the 1630s by a phantom hare believed to be the ghost of a witch once held prisoner there. The earliest written account, by Gervase Holles (1634-42), records that the spirit took the form of a hare that ran between the legs of auditors at meetings held in the castle; when chased into the castle yard, witnesses saw it vanish through a grating into a cellar below, and any dog sent after it would return howling in terror. Nineteenth-century Lincolnshire tradition held that white phantom hares were the spirits of the dead, and it was deeply unlucky to see one.",
+      "source": "https://occult-world.com/bolingbroke-castle/"
+    },
+    {
       "name": "Piskie",
       "lat": 50.266,
       "lng": -5.052,
@@ -2932,6 +3031,24 @@
       "source": "https://www.historic-uk.com/HistoryUK/HistoryofWales/St-Dwynwens-Day/"
     },
     {
+      "name": "St Guthlac of Crowland",
+      "lat": 52.675,
+      "lng": -0.165,
+      "category": "hero",
+      "region": "Crowland, Lincolnshire, England",
+      "summary": "St Guthlac (c. 674-714) was an Anglo-Saxon nobleman who renounced warfare to become a hermit on the remote island of Croyland in the Lincolnshire fens. His 8th-century biographer Felix records that the marshy island was so plagued by demons that no one before Guthlac had endured there; the demons entered his cell in terrifying forms, dragged him to the freezing waters of the fen, and transported him bodily to the mouth of hell. Uniquely, Felix notes Guthlac could understand the demons' speech because they spoke in British (Brittonic), and he routed them with prayer and a three-thonged whip given to him by St Bartholomew. Crowland Abbey was founded in his honour.",
+      "source": "https://en.wikipedia.org/wiki/Guthlac_of_Crowland"
+    },
+    {
+      "name": "St Kevin of Glendalough",
+      "lat": 53.005,
+      "lng": -6.328,
+      "category": "hero",
+      "region": "Glendalough, County Wicklow, Leinster, Ireland",
+      "summary": "St Kevin (Coemgen, d. c. 618) was an early Irish hermit saint who settled in the secluded valley of Glendalough, County Wicklow, and became the subject of a rich cycle of miraculous animal legends. The most celebrated tells that Kevin held his hand outstretched in prayer so perfectly still throughout Lent that a blackbird built her nest in his palm, laid eggs, and raised her chicks to flight before he stirred. An otter brought him fish from the lake each day when he stood neck-deep in icy water to pray, and once retrieved his psalter unharmed from the lake's depths. When a monk coveted the otter's pelt, the creature vanished forever.",
+      "source": "https://en.wikipedia.org/wiki/Kevin_of_Glendalough"
+    },
+    {
       "name": "St Swithin's Day",
       "lat": 51.061,
       "lng": -1.313,
@@ -3011,6 +3128,15 @@
       "region": "Northern England",
       "summary": "The Celtic god of thunder, his wheel-symbol found carved across Roman Britain from Chester to Hadrian's Wall. Like Jupiter but wilder — his rumbling marked the turning of fate. Worshipped with fire and offering.",
       "source": "https://en.wikipedia.org/wiki/Taranis"
+    },
+    {
+      "name": "Tarbh Uisge",
+      "lat": 55.77,
+      "lng": -6.22,
+      "category": "water",
+      "region": "Islay, Inner Hebrides, Scotland",
+      "summary": "The Tarbh Uisge (Scottish Gaelic: water bull) is a creature of Hebridean and Highland folklore, generally more benign than the Each-Uisge but sharing similar amphibious and shape-shifting qualities. Usually described as a bull-shaped creature of unnatural darkness emerging from moorland lochs at night, the Tarbh Uisge is distinguished from ordinary bulls by having no ears, and its hybrid offspring with mortal cattle are born with abnormally small ears. On the island of Islay, folklorist J.F. Campbell collected a tale in which a witch identifies a calf as the offspring of a water bull; the Tarbh Uisge's calves were prized by some communities as superior stock. The creature was documented across Islay, Gigha, and Lorn into the late 19th century.",
+      "source": "https://en.wikipedia.org/wiki/Water_bull"
     },
     {
       "name": "Teran",
@@ -3400,6 +3526,15 @@
       "source": "https://en.wikipedia.org/wiki/Wayland%27s_Smithy"
     },
     {
+      "name": "Werewolves of Ossory",
+      "lat": 52.654,
+      "lng": -7.249,
+      "category": "beast",
+      "region": "Kingdom of Ossory (County Kilkenny / County Laois), Leinster, Ireland",
+      "summary": "The Werewolves of Ossory are one of the most historically documented shape-shifting legends in Irish tradition, recorded c. 1188 by Gerald of Wales in his Topographia Hibernica. A priest travelling from Ulster encountered a wolf in the woods who spoke to him, explaining that the people of Ossory were cursed by Saint Natalis — every seven years, a man and a woman must leave human form to roam as wolves; if they survive, they are replaced by another pair. Gerald recounts that the female wolf drew back her skin to reveal an elderly woman beneath, so that the priest could administer last rites to her dying companion. The kings of Ossory were said to claim descent from Laignech Faelad, the first of their line to adopt the wolf-shape.",
+      "source": "https://en.wikipedia.org/wiki/Werewolves_of_Ossory"
+    },
+    {
       "name": "Wights",
       "lat": 54.978,
       "lng": -2.045,
@@ -3533,6 +3668,15 @@
       "region": "Snowdonia, Wales",
       "summary": "The Red Dragon of Wales, buried beneath Dinas Emrys, locked in eternal battle with a white dragon. The young Merlin prophesied that the red dragon — the true Britons — would ultimately prevail.",
       "source": "https://en.wikipedia.org/wiki/Y_Ddraig_Goch"
+    },
+    {
+      "name": "Y Ladi Wen",
+      "lat": 51.475,
+      "lng": -3.576,
+      "category": "ghost",
+      "region": "Ogmore Castle, Vale of Glamorgan, Wales",
+      "summary": "Y Ladi Wen (Welsh: 'The White Lady') is a distinctly Welsh apparition tradition appearing at specific sites associated with tragedy or hidden treasure, most strongly documented at Ogmore Castle in the Vale of Glamorgan. Unlike an ordinary ghost, Y Ladi Wen is not the spirit of a named individual but a genius loci — a white-robed female presence marking a site of significance. At Ogmore Castle, a brave man who greeted the spirit was led to a cauldron of gold hidden beneath a heavy stone. At St Athan, the Ladi Wen is sometimes identified with Gwenllian Berkerolles, a Norman noblewoman buried alive by a cruel lord. The spirit was also invoked to warn children away from dangerous places, particularly at Nos Galan Gaeaf (Welsh Halloween).",
+      "source": "https://en.wikipedia.org/wiki/Y_Ladi_Wen"
     },
     {
       "name": "Yallery Brown",

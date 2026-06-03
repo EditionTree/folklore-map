@@ -388,6 +388,13 @@
       color: var(--ink-light); transition: border-color 0.15s, color 0.15s;
     }
     .popup-copylink:hover { color: var(--accent); border-color: rgba(139,58,26,0.5); }
+    .popup-fullpage {
+      font-family: var(--font-display); font-size: 10px; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--ink-light); text-decoration: none;
+      padding: 4px 10px; border: 1px solid rgba(92,74,42,0.25); border-radius: 2px;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .popup-fullpage:hover { color: var(--accent); border-color: rgba(139,58,26,0.5); }
     .bookmark-btn {
       background: none; border: none; padding: 0; cursor: pointer;
       color: var(--ink-light); line-height: 1; transition: color 0.15s, transform 0.15s;
@@ -896,6 +903,7 @@ function buildPopup(leg) {
     <p class="popup-summary">${escapeHtml(leg.summary)}</p>
     <div class="popup-footer">
       <a class="popup-source" href="${escapeHtml(safeSourceUrl(leg.source))}" target="_blank" rel="noopener">Read more</a>
+      <a class="popup-fullpage" href="legends/${legendSlug(leg.name)}.html">full page</a>
       <button class="popup-copylink" data-legend="${encoded}">copy link</button>
     </div>
   </div>`;
@@ -1082,6 +1090,11 @@ function handleSearch(query) {
     box.appendChild(item);
   });
   box.classList.add('open');
+}
+
+function legendSlug(name) {
+  return name.normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/[^\x00-\x7f]/g, '')
+             .toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'legend';
 }
 
 function randomLegend() {

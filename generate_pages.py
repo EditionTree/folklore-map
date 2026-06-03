@@ -74,10 +74,12 @@ body{{background:#e0d0b0;color:#2c1f0e;font-family:'Crimson Text',serif;line-hei
 .banner-title{{font-family:'Cinzel',serif;font-size:21px;font-weight:600;color:#f2e8d5;letter-spacing:.09em}}
 .banner-title i{{color:#c4622a;font-style:normal;font-size:.6em;vertical-align:middle;margin:0 6px}}
 .banner-sub{{font-family:'Crimson Text',serif;font-size:12px;font-style:italic;color:rgba(176,144,96,.8);letter-spacing:.04em}}
-.watermark{{display:block;width:200px;height:200px;margin:34px auto 0;color:#8b3a1a;opacity:.07}}
+.watermark{{position:absolute;top:26px;right:24px;width:88px;height:88px;color:#8b3a1a;opacity:.1;pointer-events:none;z-index:0}}
 @media(max-width:560px){{.banner-title{{font-size:15px}}.banner-emblem{{width:38px;height:38px}}.banner-sub{{font-size:11px}}}}
 .wrap{{max-width:680px;margin:0 auto;padding:0 20px 60px}}
-.card{{background:#f2e8d5;border:1px solid #b09060;border-radius:6px;margin-top:30px;padding:32px;box-shadow:0 4px 20px rgba(44,31,14,.18)}}
+.card{{position:relative;overflow:hidden;background:#f2e8d5;border:1px solid #b09060;border-radius:6px;margin-top:30px;padding:32px;box-shadow:0 4px 20px rgba(44,31,14,.18)}}
+.card>*:not(.watermark){{position:relative;z-index:1}}
+.card>.watermark{{position:absolute;top:26px;right:24px;width:88px;height:88px;z-index:0}}
 .cat{{font-family:'Cinzel',serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#fff;background:#8b3a1a;display:inline-block;padding:3px 10px;border-radius:2px}}
 h1{{font-family:'Cinzel',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;line-height:1.15}}
 .region{{font-style:italic;color:#5c4a2a;margin-bottom:18px}}
@@ -101,9 +103,9 @@ footer{{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}}
 <p class="summary">{summary}</p>
 <a class="cta" href="{maplink}">Explore on the interactive map &#8594;</a>
 <span class="src">Source: <a href="{src}" target="_blank" rel="noopener">{srchost}</a></span>
+<svg class="watermark" viewBox="0 0 512 512" aria-hidden="true"><path d="{watermark}" fill="currentColor"/></svg>
 </article>
 <a class="back" href="{base}/legends/">&#8592; Browse all legends</a>
-<svg class="watermark" viewBox="0 0 512 512" aria-hidden="true"><path d="{watermark}" fill="currentColor"/></svg>
 </div>
 <footer>Part of the Folklore Map of the British Isles &#183; &#169; EditionTree</footer>
 </body>
@@ -213,7 +215,6 @@ body{{background:#e0d0b0;color:#2c1f0e;font-family:'Crimson Text',serif;min-heig
 .banner-title{{font-family:'Cinzel',serif;font-size:21px;font-weight:600;color:#f2e8d5;letter-spacing:.09em}}
 .banner-title i{{color:#c4622a;font-style:normal;font-size:.6em;vertical-align:middle;margin:0 6px}}
 .banner-sub{{font-family:'Crimson Text',serif;font-size:12px;font-style:italic;color:rgba(176,144,96,.8);letter-spacing:.04em}}
-.watermark{{display:block;width:200px;height:200px;margin:34px auto 0;color:#8b3a1a;opacity:.07}}
 @media(max-width:560px){{.banner-title{{font-size:15px}}.banner-emblem{{width:38px;height:38px}}.banner-sub{{font-size:11px}}}}
 .wrap{{max-width:760px;margin:0 auto;padding:24px 20px 60px}}
 h1{{font-family:'Cinzel',serif;font-size:26px;margin-bottom:18px}}

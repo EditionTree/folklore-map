@@ -366,35 +366,24 @@
       vertical-align: bottom;
       line-height: 1;
     }
-    .popup-footer { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 10px; padding-top: 8px; border-top: 1px solid rgba(176,144,96,0.4); }
-    .popup-source {
-      font-family: var(--font-display);
-      font-size: 10px;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--accent);
-      text-decoration: none;
-      padding: 4px 10px;
-      border: 1px solid rgba(139,58,26,0.35);
-      border-radius: 2px;
-      transition: background 0.15s, color 0.15s;
+    .popup-footer {
+      display: flex; align-items: center; gap: 12px;
+      margin-top: 10px; padding-top: 8px;
+      border-top: 1px solid rgba(176,144,96,0.35);
     }
-    .popup-source:hover { background: var(--accent); color: var(--parchment); }
+    .popup-source, .popup-fullpage {
+      font-family: var(--font-body); font-size: 12px; font-style: italic;
+      color: var(--ink-light); text-decoration: none;
+      transition: color 0.15s;
+    }
+    .popup-source:hover, .popup-fullpage:hover { color: var(--accent); }
+    .popup-source { color: var(--accent); }
     .popup-copylink {
-      background: none; border: 1px solid rgba(92,74,42,0.25); border-radius: 2px;
-      padding: 4px 10px; cursor: pointer;
-      font-family: var(--font-display); font-size: 10px; letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--ink-light); transition: border-color 0.15s, color 0.15s;
+      background: none; border: none; padding: 0; cursor: pointer;
+      font-family: var(--font-body); font-size: 12px; font-style: italic;
+      color: var(--ink-light); transition: color 0.15s; margin-left: auto;
     }
-    .popup-copylink:hover { color: var(--accent); border-color: rgba(139,58,26,0.5); }
-    .popup-fullpage {
-      font-family: var(--font-display); font-size: 10px; letter-spacing: 0.1em;
-      text-transform: uppercase; color: var(--ink-light); text-decoration: none;
-      padding: 4px 10px; border: 1px solid rgba(92,74,42,0.25); border-radius: 2px;
-      transition: border-color 0.15s, color 0.15s;
-    }
-    .popup-fullpage:hover { color: var(--accent); border-color: rgba(139,58,26,0.5); }
+    .popup-copylink:hover { color: var(--accent); }
     .bookmark-btn {
       background: none; border: none; padding: 0; cursor: pointer;
       color: var(--ink-light); line-height: 1; transition: color 0.15s, transform 0.15s;

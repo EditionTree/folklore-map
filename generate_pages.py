@@ -70,7 +70,7 @@ body{{background:#e0d0b0;color:#2c1f0e;font-family:'Crimson Text',serif;line-hei
 .site-banner::after{{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(176,144,96,.6) 20%,rgba(196,98,42,.8) 50%,rgba(176,144,96,.6) 80%,transparent)}}
 .banner-link{{display:inline-flex;align-items:center;gap:13px;text-decoration:none}}
 .banner-emblem{{width:48px;height:48px;object-fit:contain;flex-shrink:0}}
-.banner-text{{display:flex;flex-direction:column;align-items:flex-start;line-height:1.15}}
+.banner-text{{display:flex;flex-direction:column;align-items:center;line-height:1.15}}
 .banner-title{{font-family:'Cinzel',serif;font-size:21px;font-weight:600;color:#f2e8d5;letter-spacing:.09em}}
 .banner-title i{{color:#c4622a;font-style:normal;font-size:.6em;vertical-align:middle;margin:0 6px}}
 .banner-sub{{font-family:'Crimson Text',serif;font-size:12px;font-style:italic;color:rgba(176,144,96,.8);letter-spacing:.04em}}
@@ -97,7 +97,7 @@ footer{{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}}
 <header class="site-banner"><a class="banner-link" href="{base}/"><img src="{base}/green-man.png" class="banner-emblem" alt=""/><span class="banner-text"><span class="banner-title"><i>&#10022;</i> Folklore Map of the British Isles <i>&#10022;</i></span><span class="banner-sub">Myths, Legends &amp; Spectral Encounters</span></span></a></header>
 <div class="wrap">
 <article class="card">
-<span class="cat">{catname}</span>
+<span class="cat" style="background:{catcolour}">{catname}</span>
 <h1>{name}</h1>
 <div class="region">{region}</div>
 <p class="summary">{summary}</p>
@@ -113,23 +113,26 @@ footer{{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}}
 """
 
 
-def load_category_icons():
-    """Extract category -> SVG path from index.html (single source of truth)."""
+def load_category_meta():
+    """Extract category -> {colour, iconPath} from index.html (single source of truth)."""
     try:
         text = io.open("index.html", encoding="utf-8").read()
     except Exception:
         return {}
-    icons = {}
-    for m in re.finditer(r"(\w+):\s*\{[^{}]*?iconPath:\s*[`']([^`']+)[`']", text):
-        icons[m.group(1)] = m.group(2)
-    return icons
+    meta = {}
+    for m in re.finditer(
+        r"(\w+):\s*\{[^{}]*?colour:\s*[\"']([^\"']+)[\"'][^{}]*?iconPath:\s*[`']([^`']+)[`']",
+        text,
+    ):
+        meta[m.group(1)] = {"colour": m.group(2), "iconPath": m.group(3)}
+    return meta
 
 
 def build():
     d = json.load(io.open("legends.json", encoding="utf-8"))
     cats = d.get("categories", {})
     legends = sorted(d["legends"], key=lambda l: l["name"].lower())
-    icons = load_category_icons()
+    meta = load_category_meta()
     os.makedirs(OUT_DIR, exist_ok=True)
 
     # Unique slugs
@@ -182,7 +185,8 @@ def build():
             maplink=esc(maplink),
             src=esc(src),
             srchost=esc(host_of(src)),
-            watermark=icons.get(leg.get("category", ""), ""),
+            watermark=meta.get(leg.get("category", ""), {}).get("iconPath", ""),
+            catcolour=esc(meta.get(leg.get("category", ""), {}).get("colour", "#8b3a1a")),
         )
         with io.open(os.path.join(OUT_DIR, f"{slug}.html"), "w", encoding="utf-8") as f:
             f.write(out)
@@ -211,7 +215,7 @@ body{{background:#e0d0b0;color:#2c1f0e;font-family:'Crimson Text',serif;min-heig
 .site-banner::after{{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(176,144,96,.6) 20%,rgba(196,98,42,.8) 50%,rgba(176,144,96,.6) 80%,transparent)}}
 .banner-link{{display:inline-flex;align-items:center;gap:13px;text-decoration:none}}
 .banner-emblem{{width:48px;height:48px;object-fit:contain;flex-shrink:0}}
-.banner-text{{display:flex;flex-direction:column;align-items:flex-start;line-height:1.15}}
+.banner-text{{display:flex;flex-direction:column;align-items:center;line-height:1.15}}
 .banner-title{{font-family:'Cinzel',serif;font-size:21px;font-weight:600;color:#f2e8d5;letter-spacing:.09em}}
 .banner-title i{{color:#c4622a;font-style:normal;font-size:.6em;vertical-align:middle;margin:0 6px}}
 .banner-sub{{font-family:'Crimson Text',serif;font-size:12px;font-style:italic;color:rgba(176,144,96,.8);letter-spacing:.04em}}

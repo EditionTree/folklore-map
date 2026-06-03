@@ -32,10 +32,12 @@ body{background:#e0d0b0;color:#2c1f0e;font-family:'Crimson Text',serif;line-heig
 .banner-title{font-family:'Cinzel',serif;font-size:21px;font-weight:600;color:#f2e8d5;letter-spacing:.09em}
 .banner-title i{color:#c4622a;font-style:normal;font-size:.6em;vertical-align:middle;margin:0 6px}
 .banner-sub{font-family:'Crimson Text',serif;font-size:12px;font-style:italic;color:rgba(176,144,96,.8);letter-spacing:.04em}
-.watermark{display:block;width:200px;height:200px;margin:34px auto 0;color:#8b3a1a;opacity:.07}
+.watermark{position:absolute;top:26px;right:24px;width:88px;height:88px;color:#8b3a1a;opacity:.1;pointer-events:none;z-index:0}
 @media(max-width:560px){.banner-title{font-size:15px}.banner-emblem{width:38px;height:38px}.banner-sub{font-size:11px}}
 .wrap{max-width:680px;margin:0 auto;padding:0 20px 60px}
-.card{background:#f2e8d5;border:1px solid #b09060;border-radius:6px;margin-top:30px;padding:32px;box-shadow:0 4px 20px rgba(44,31,14,.18)}
+.card{position:relative;overflow:hidden;background:#f2e8d5;border:1px solid #b09060;border-radius:6px;margin-top:30px;padding:32px;box-shadow:0 4px 20px rgba(44,31,14,.18)}
+.card>*:not(.watermark){position:relative;z-index:1}
+.card>.watermark{position:absolute;top:26px;right:24px;width:88px;height:88px;z-index:0}
 .cat{font-family:'Cinzel',serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#fff;background:#8b3a1a;display:inline-block;padding:3px 10px;border-radius:2px}
 h1{font-family:'Cinzel',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;line-height:1.15}
 .region{font-style:italic;color:#5c4a2a;margin-bottom:18px}
@@ -59,9 +61,9 @@ footer{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}
 <p class="summary">Carrowmore is a large group of megalithic monuments on the Coolera Peninsula to the west of Sligo, Ireland. They were built in the 4th millennium BC, during the Neolithic. There are 30 surviving tombs with another 25 which have been destroyed since 1800, making Carrowmore one of the largest clusters of megalithic tombs in Ireland, and one of the &#x27;big four&#x27; along with Carrowkeel, Loughcrew and Brú na Bóinne.</p>
 <a class="cta" href="https://editiontree.github.io/folklore-map/?legend=Carrowmore">Explore on the interactive map &#8594;</a>
 <span class="src">Source: <a href="https://en.wikipedia.org/wiki/Carrowmore" target="_blank" rel="noopener">en.wikipedia.org</a></span>
+<svg class="watermark" viewBox="0 0 512 512" aria-hidden="true"><path d="M436 26.98 285.9 63.63l-.5.1c-55.8 7.67-118.7 11.48-199.56 4.93L19.18 116.4l54.99 40.2L482.2 125l10.6-29.75c-4.3-5.21-7.9-10.15-11.7-15.12l-60.4 23.77-43.2-11.41 94-26.19C462.1 52.2 452 38.8 436 26.98zM290.7 90.3l-7.2 21.7H136.3l-57.42 5.3 26.72-21.32zm169.6 54.8-40 1.1-17.1 90-14.5 20.9-15.5-41.6 30-68.9-9.7.3-39.2 60.4c-3.1 87.2-22.3 176.8-7.6 265.4 19 7.3 40.7 9.7 61.5 10.2L401 358.3l22.5-33 1.5 95.8 27.5 60.1c10.8-1.1 21.6-2.5 34.4-4.9l-36.1-154.2zm-330.7 28-34.48 2.7-38.78 219 9.33 77.9c6.7 4.3 13.59 6.6 20.5 8.1l-8.99-101.6 12.18-43.3 2.16 81.7 15.38 66.5c22.6 2.4 45.9.1 66.4-5.1l-5.6-173.6z" fill="currentColor"/></svg>
 </article>
 <a class="back" href="https://editiontree.github.io/folklore-map/legends/">&#8592; Browse all legends</a>
-<svg class="watermark" viewBox="0 0 512 512" aria-hidden="true"><path d="M436 26.98 285.9 63.63l-.5.1c-55.8 7.67-118.7 11.48-199.56 4.93L19.18 116.4l54.99 40.2L482.2 125l10.6-29.75c-4.3-5.21-7.9-10.15-11.7-15.12l-60.4 23.77-43.2-11.41 94-26.19C462.1 52.2 452 38.8 436 26.98zM290.7 90.3l-7.2 21.7H136.3l-57.42 5.3 26.72-21.32zm169.6 54.8-40 1.1-17.1 90-14.5 20.9-15.5-41.6 30-68.9-9.7.3-39.2 60.4c-3.1 87.2-22.3 176.8-7.6 265.4 19 7.3 40.7 9.7 61.5 10.2L401 358.3l22.5-33 1.5 95.8 27.5 60.1c10.8-1.1 21.6-2.5 34.4-4.9l-36.1-154.2zm-330.7 28-34.48 2.7-38.78 219 9.33 77.9c6.7 4.3 13.59 6.6 20.5 8.1l-8.99-101.6 12.18-43.3 2.16 81.7 15.38 66.5c22.6 2.4 45.9.1 66.4-5.1l-5.6-173.6z" fill="currentColor"/></svg>
 </div>
 <footer>Part of the Folklore Map of the British Isles &#183; &#169; EditionTree</footer>
 </body>

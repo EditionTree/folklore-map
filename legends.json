@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-03T19:28:33.662790Z",
-  "total": 413,
+  "generated": "2026-06-04T21:15:04.429319Z",
+  "total": 425,
   "categories": {
     "beast": "Beasts",
     "ghost": "Ghosts",
@@ -259,6 +259,15 @@
       "source": "https://en.wikipedia.org/wiki/Beast_of_Bodmin"
     },
     {
+      "name": "Beast of Dean",
+      "lat": 51.787,
+      "lng": -2.554,
+      "category": "beast",
+      "region": "Forest of Dean, Gloucestershire, England",
+      "summary": "The Beast of Dean is a folkloric creature said to roam the ancient Forest of Dean in Gloucestershire, described as a massive boar-like animal of abnormal size with black fur and glowing red eyes, capable of crushing hedges and felling trees. The tradition traces to at least the early 19th century: farmers from Parkend organised an expedition to capture or kill the creature in 1802 but found nothing. The beast has occasionally been nicknamed the ‘Moose-Pig’ in local parlance. The legend has persisted through the 20th century with occasional reported sightings, and forms part of the broader supernatural tradition of the Forest of Dean — a landscape with deep pre-Roman sacred associations bounded by the rivers Severn and Wye.",
+      "source": "https://en.wikipedia.org/wiki/Beast_of_Dean"
+    },
+    {
       "name": "Beenalaght",
       "lat": 52.0358,
       "lng": -8.7512,
@@ -385,6 +394,15 @@
       "source": "https://en.wikipedia.org/wiki/Black_Shuck"
     },
     {
+      "name": "Black Vaughan of Hergest Court",
+      "lat": 52.198,
+      "lng": -3.05,
+      "category": "ghost",
+      "region": "Kington, Herefordshire, England",
+      "summary": "Black Vaughan (Sir Thomas Vaughan, d. 1469) was a Herefordshire knight killed at the Battle of Banbury during the Wars of the Roses, whose restless ghost became one of England’s most celebrated phantom traditions. After his headless body was returned to Kington, his spirit is said to have terrorised the neighbourhood in the form of a monstrous black bull and a great phantom hound with glowing red eyes — the hound reportedly had its own room at Hergest Court and would appear to members of the Vaughan family as a death omen. Twelve clergymen were eventually summoned to exorcise the spirit, shrinking it to fit inside a snuff box before sealing it beneath a large stone in the bottom of Hergest Pool. The Hergest phantom dog is widely considered a primary inspiration for Sir Arthur Conan Doyle’s Hound of the Baskervilles, following Doyle’s known visit to Hergest Court.",
+      "source": "https://folklorethursday.com/halloween/herefordshire-folklore-legend-black-vaughan-ellen-terrible/"
+    },
+    {
       "name": "Blackbeard",
       "lat": 51.4545,
       "lng": -2.5879,
@@ -473,6 +491,15 @@
       "region": "Shropshire",
       "summary": "A great pike of monstrous size said to inhabit Bomere Pool near Shrewsbury, guardian of a drowned village said to lie beneath its waters. The fish surfaces only to herald disaster for the local gentry — and the pool has a dark reputation that survives to this day.",
       "source": "https://en.wikipedia.org/wiki/Bomere_Pool"
+    },
+    {
+      "name": "Boobrie",
+      "lat": 56.25,
+      "lng": -5.35,
+      "category": "beast",
+      "region": "Argyll, Scotland",
+      "summary": "The Boobrie is a shape-shifting water monster from the loch traditions of Argyllshire and the Hebridean coast, first recorded by folklorist J.F. Campbell of Islay in the 19th century. In its primary manifestation it resembles an enormous great northern diver or cormorant — described as ‘larger than seventeen of the biggest eagles put together’ — with white markings and a loud, bellowing call. It is said to prey on livestock being transported by boat (especially calves and sheep), carrying its victims to the deepest water before consuming them; it also voraciously eats otters. In its secondary form it takes the shape of a water horse (each-uisge), capable of galloping across the surface of lochs. Campbell speculated that the tradition may originate in folk-memory of sightings of the great auk before its extinction.",
+      "source": "https://en.wikipedia.org/wiki/Boobrie"
     },
     {
       "name": "Bossiney Castle",
@@ -1213,6 +1240,15 @@
       "source": "https://en.wikipedia.org/wiki/Duergar"
     },
     {
+      "name": "Dun Cow of Dunsmore Heath",
+      "lat": 52.352,
+      "lng": -1.393,
+      "category": "beast",
+      "region": "Dunsmore Heath, Warwickshire, England",
+      "summary": "The Dun Cow of Dunsmore Heath is a legendary giant bovine beast from Warwickshire folklore, reputedly slain by the hero Guy of Warwick in the area west of Dunchurch near Rugby. According to the legend, the enormous cow (described as ‘as big as a house’ with eighteen teats) originally belonged to a giant and had been kept at Mitchell’s Fold in Shropshire, where her milk was inexhaustible — until a witch filled a riddle (sieve) with milk rather than a pail, enraging the animal. The cow broke loose and devastated Dunsmore Heath until Guy cut off her head. A large whale bone exhibited at Warwick Castle is traditionally displayed as one of the Dun Cow’s ribs, a physical relic that sustained the legend for centuries. The creature has its own Wikipedia article separate from the Guy of Warwick entry.",
+      "source": "https://en.wikipedia.org/wiki/Dun_Cow"
+    },
+    {
       "name": "Dunnie",
       "lat": 55.168,
       "lng": -1.688,
@@ -1283,6 +1319,15 @@
       "region": "Roman Britain",
       "summary": "A Celtic horse goddess worshipped across the Roman world, including Britain. She protected horses, riders, cavalry, and journeys, often shown with mares, foals, or a cornucopia.",
       "source": "https://en.wikipedia.org/wiki/Epona"
+    },
+    {
+      "name": "Epworth Poltergeist",
+      "lat": 53.539,
+      "lng": -0.811,
+      "category": "ghost",
+      "region": "Epworth, Lincolnshire, England",
+      "summary": "The Epworth Poltergeist, nicknamed ‘Old Jeffrey’ by the Wesley family, is one of England’s best-documented claimed hauntings. Between December 1716 and January 1717, the Old Rectory in Epworth — home of the Reverend Samuel Wesley and his nineteen children, including the future founder of Methodism John Wesley — was plagued by violent knockings, crashing sounds, footsteps, and a groaning apparition described as resembling ‘a headless badger’. The spirit was named after a former caretaker who had died shortly before the disturbances began. Samuel Wesley recorded the events in his diary; multiple family members and servants left testimony, making this one of the most extensively written-up poltergeist cases of the 18th century. Hetty Wesley coined the name ‘Old Jeffrey’ after it mimicked the sound of a hunting horn.",
+      "source": "https://en.wikipedia.org/wiki/Old_Rectory,_Epworth"
     },
     {
       "name": "Fachan",
@@ -1690,6 +1735,15 @@
       "source": "https://www.historic-uk.com/HistoryUK/HistoryofEngland/The-Hanging-of-the-Hartlepool-Monkey/"
     },
     {
+      "name": "Havelok the Dane",
+      "lat": 53.568,
+      "lng": -0.08,
+      "category": "hero",
+      "region": "Grimsby, Lincolnshire, England",
+      "summary": "Havelok the Dane is a 13th-century Middle English romance (composed c. 1285–1310) rooted in the oral traditions of Lincolnshire and its Danish Viking heritage. The legend tells of Havelok, rightful heir to the Danish throne, who is entrusted to a fisherman named Grim with orders to drown him — but Grim spares the boy, and together they sail to England, founding the town of Grimsby (Grim’s by). Havelok grows up among the poor, marries the English princess Goldborow under duress, and eventually reclaims both the Danish and English thrones. The town seal of Grimsby still depicts Grim, Havelok, and Goldborow, and the ‘Havelok-stone’ at Lincoln and the ‘Grim-stone’ at Grimsby are said to commemorate the legend. The poem is the second-oldest surviving Middle English romance.",
+      "source": "https://en.wikipedia.org/wiki/Havelok_the_Dane"
+    },
+    {
       "name": "Haxey Hood",
       "lat": 53.505,
       "lng": -0.797,
@@ -2068,6 +2122,15 @@
       "source": "https://en.wikipedia.org/wiki/Llangorse_Lake"
     },
     {
+      "name": "Llyn Barfog",
+      "lat": 52.58,
+      "lng": -3.974,
+      "category": "location",
+      "region": "Aberdyfi, Gwynedd, Wales",
+      "summary": "Llyn Barfog (‘the Bearded Lake’) is a remote upland lake in southern Snowdonia above the coastal village of Aberdyfi, named either for the water lilies and reeds that fringe its banks or for a legendary bearded being said to dwell there. The lake is associated with the Gwragedd Annwn — the fairy lake maidens of Welsh tradition — who tended herds of milk-white otherworldly cattle along its shores. A separate Arthurian legend records that King Arthur was summoned to rid the valley of an Afanc (water monster) dwelling in the lake; he crept up on the beast with his mare Llamrei and chained it, dragging it out in a mighty struggle so fierce that Llamrei’s hoof prints were impressed into the rocks near the lake. Sir John Rhys in Celtic Folklore identified the ‘Bearded One’ (Barfog) as a primordial mythical being associated with the lake.",
+      "source": "https://www.atlasobscura.com/places/llyn-barfog"
+    },
+    {
       "name": "Llyn Cwm Llwch",
       "lat": 51.8875,
       "lng": -3.45167,
@@ -2311,6 +2374,15 @@
       "source": "https://en.wikipedia.org/wiki/Merlin%27s_Oak"
     },
     {
+      "name": "Mermaid of Marden",
+      "lat": 52.097,
+      "lng": -2.683,
+      "category": "water",
+      "region": "Marden, Herefordshire, England",
+      "summary": "The Mermaid of Marden is a well-known Herefordshire legend associated with the River Lugg, a remarkable tradition because the mermaid lives far inland rather than at the sea. The story tells how a church bell fell from St Mary the Virgin church into the River Lugg, and a mermaid who had wrapped herself around it refused to return it, complaining that the ringing disturbed her peace. Attempts to retrieve the bell using twelve white heifers yoked in mountain ash and yew failed when a driver cried out and woke the mermaid, who dragged the bell back into the river. Physical evidence supports the tradition: a large early medieval hand bell (Celtic style, 9th–11th century) was discovered when a pond at Marden was drained in 1848 and is now held in Herefordshire Museum.",
+      "source": "https://www.eatsleepliveherefordshire.co.uk/the-mermaid-of-marden/"
+    },
+    {
       "name": "Mersey Mermaid",
       "lat": 53.4,
       "lng": -3,
@@ -2534,6 +2606,15 @@
       "region": "Orkney",
       "summary": "The most feared creature in Orcadian mythology — a skinless, horse-like demon from the sea. Its single eye blazes red, its black blood visible through exposed veins. It brings plague and famine.",
       "source": "https://en.wikipedia.org/wiki/Nuckelavee"
+    },
+    {
+      "name": "Oilliphéist",
+      "lat": 53.423,
+      "lng": -7.94,
+      "category": "water",
+      "region": "River Shannon, Ireland",
+      "summary": "The Oillipheíst (Old Irish: ‘great worm’ or ‘great beast’) is a serpentine lake and river monster from Irish mythology, with its most celebrated tradition attached to the River Shannon. When the Oillipheíst heard that St Patrick had come to drive all serpents from Ireland, it cut a frantic course through the land trying to escape, and in doing so carved out the winding channel of the Shannon — Ireland’s longest river. In a comical and beloved continuation of the legend, the creature swallowed a drunken piper named Ó Ruairc who was too insensible to realise his predicament and continued to play his pipes inside the monster’s stomach; the Oillipheíst was so tormented by the music that it eventually coughed the piper back up unharmed. The creature is distinct from Caoranach (the demonic mother banished to Lough Derg, already in the dataset).",
+      "source": "https://en.wikipedia.org/wiki/Oilliph%C3%A9ist"
     },
     {
       "name": "Oisin",
@@ -2869,6 +2950,15 @@
       "source": "https://www.historic-uk.com/HistoryUK/HistoryofScotland/Sawney-Bean-Scotlands-most-famous-cannibal/"
     },
     {
+      "name": "Screaming Skull of Bettiscombe",
+      "lat": 50.765,
+      "lng": -2.84,
+      "category": "ghost",
+      "region": "Bettiscombe, Dorset, England",
+      "summary": "The Screaming Skull of Bettiscombe is Dorset’s most celebrated haunting tradition, associated with Bettiscombe Manor near Bridport. A skull has been kept in the manor house for centuries; tradition holds that it was the skull of an enslaved African servant brought from Nevis by plantation owner John Frederick Pinney in the late 17th century, who swore on his deathbed to haunt the estate if his remains were not returned to his homeland. When the body was buried in the local churchyard, screaming was heard from the grave, illness struck the village, and the skull was brought back inside the manor. Later scientific analysis revealed the skull is actually that of a young European woman from the Iron Age (3,000–4,000 years old), suggesting the tradition may be far older than the Pinney story. The legend is attested at least since 1897 and inspired Francis Marion Crawford’s 1908 horror story ‘The Screaming Skull’.",
+      "source": "https://en.wikipedia.org/wiki/Bettiscombe"
+    },
+    {
       "name": "Sea Mither",
       "lat": 58.984,
       "lng": -2.959,
@@ -3040,6 +3130,15 @@
       "source": "https://en.wikipedia.org/wiki/Guthlac_of_Crowland"
     },
     {
+      "name": "St Helier",
+      "lat": 49.181,
+      "lng": -2.121,
+      "category": "hero",
+      "region": "St Helier, Jersey, Channel Islands",
+      "summary": "Helier (d. c. 555) is the patron saint of Jersey, a Belgian-born hermit who settled on a tidal islet off the coast of the island, now occupied by the 16th-century Elizabeth Castle. His most celebrated legend tells that he was beheaded by marauding pirates at his hermitage around 555 AD, yet in a final miraculous act, he picked up his own head and walked to shore — a cephalophore tradition that gave rise to the crossed axes on the parish crest of St Helier. The town and parish of St Helier, capital of Jersey, is named in his honour. A rock chapel on the islet (now within Elizabeth Castle) was built on the site of his hermitage and remains a place of pilgrimage. Separate miracles attributed to him include the destruction of a dragon on Jersey and the resurrection of a drowned fisherman.",
+      "source": "https://en.wikipedia.org/wiki/Helier"
+    },
+    {
       "name": "St Kevin of Glendalough",
       "lat": 53.005,
       "lng": -6.328,
@@ -3047,6 +3146,15 @@
       "region": "Glendalough, County Wicklow, Leinster, Ireland",
       "summary": "St Kevin (Coemgen, d. c. 618) was an early Irish hermit saint who settled in the secluded valley of Glendalough, County Wicklow, and became the subject of a rich cycle of miraculous animal legends. The most celebrated tells that Kevin held his hand outstretched in prayer so perfectly still throughout Lent that a blackbird built her nest in his palm, laid eggs, and raised her chicks to flight before he stirred. An otter brought him fish from the lake each day when he stood neck-deep in icy water to pray, and once retrieved his psalter unharmed from the lake's depths. When a monk coveted the otter's pelt, the creature vanished forever.",
       "source": "https://en.wikipedia.org/wiki/Kevin_of_Glendalough"
+    },
+    {
+      "name": "St Magloire of Sark",
+      "lat": 49.432,
+      "lng": -2.361,
+      "category": "hero",
+      "region": "Sark, Channel Islands",
+      "summary": "Magloire (d. c. 575) was a 6th-century Celtic bishop and monastic founder who eventually retired to the island of Sark with 62 monks, establishing one of the Channel Islands’ earliest monasteries above the bay of Port du Moulin. His most celebrated Sark legend records that he resurrected a drowned fisherman. His wider hagiography includes destroying a dragon on Jersey, miraculously healing Count Loisescon’s illness on Guernsey, and curing a girl’s deafness and intellectual disability — earning grants of land from grateful lords. When he died on Sark he was buried on the island; later, Viking raiders who attempted to desecrate his tomb were struck blind and turned on one another. The Priory of Saint-Magloire on Sark, founded in the 10th century near his original monastery site, perpetuated his veneration throughout the medieval period.",
+      "source": "https://en.wikipedia.org/wiki/Magloire"
     },
     {
       "name": "St Swithin's Day",

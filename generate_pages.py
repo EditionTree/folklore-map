@@ -107,7 +107,7 @@ footer{{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}}
 </article>
 <a class="back" href="{base}/legends/">&#8592; Browse all legends</a>
 </div>
-<footer>Part of the Folklore Map of the British Isles &#183; &#169; EditionTree</footer>
+<footer>Part of the Folklore Map of the British Isles &#183; &#169; EditionTree &#183; <a href="{base}/privacy.html" style="color:#5c4a2a">Privacy</a></footer>
 </body>
 </html>
 """
@@ -232,13 +232,15 @@ li span{{display:block;font-size:12px;font-style:italic;color:#5c4a2a}}
 <header class="site-banner"><a class="banner-link" href="{BASE}/"><img src="{BASE}/green-man.png" class="banner-emblem" alt=""/><span class="banner-text"><span class="banner-title"><i>&#10022;</i> Folklore Map of the British Isles <i>&#10022;</i></span><span class="banner-sub">Myths, Legends &amp; Spectral Encounters</span></span></a></header>
 <div class="wrap"><h1>All Legends ({written})</h1><ul>
 {items}
-</ul></div></body></html>"""
+</ul></div>
+<footer style="text-align:center;padding:24px 20px;font-size:12px;color:#5c4a2a">Part of the Folklore Map of the British Isles &#183; &#169; EditionTree &#183; <a href="{BASE}/privacy.html" style="color:#5c4a2a">Privacy</a></footer>
+</body></html>"""
     with io.open(os.path.join(OUT_DIR, "index.html"), "w", encoding="utf-8") as f:
         f.write(index_html)
 
     # sitemap.xml
     today = datetime.date.today().isoformat()
-    urls = [f"{BASE}/", f"{BASE}/{OUT_DIR}/"]
+    urls = [f"{BASE}/", f"{BASE}/{OUT_DIR}/", f"{BASE}/privacy.html"]
     urls += [f"{BASE}/{OUT_DIR}/{slugmap[l['name']]}.html" for l in legends]
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']

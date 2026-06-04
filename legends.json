@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-04T21:15:04.429319Z",
+  "generated": "2026-06-04T21:39:39.866844Z",
   "total": 425,
   "categories": {
     "beast": "Beasts",
@@ -363,8 +363,9 @@
       "lng": -1.152,
       "category": "beast",
       "region": "Leicestershire",
-      "summary": "A blue-faced hag with iron claws who dwelt in a cave she carved from the sandstone of the Dane Hills near Leicester. She crouched in her oak tree waiting to snatch children and lambs, tanning their skins to wear around her waist. Cottages in Leicestershire were built with small windows to keep her out.",
-      "source": "https://en.wikipedia.org/wiki/Black_Annis"
+      "summary": "A blue-faced hag with iron claws who haunted the Dane Hills near Leicester, snatching stray children and lambs from her cave. Cottages were built with small windows so she could not reach a clawed arm inside.",
+      "source": "https://en.wikipedia.org/wiki/Black_Annis",
+      "detail": "Black Annis was the terror of the Dane Hills, west of Leicester — a hag with a blue face, iron talons and a single eye, said to have clawed her own cavern, 'Black Annis' Bower', out of the sandstone with her bare nails. From a great pollarded oak she would spring upon stray children and lambs, devour them, and tan their skins to hang from the boughs or wear about her waist. Old cottages in the district were built with deliberately small windows so that she could not reach a clawed arm inside.\n\nFolklorists suspect a far older figure behind the bogey: Annis may descend from a Celtic mother-goddess, Anu, or from the winter hag, the Cailleach, demonised and shrunk into a children's frightener. Into the nineteenth century a 'drag-hunt' was held each Easter Monday — a dead cat soaked in aniseed dragged from the Bower to the Mayor's house — a faint, festive echo of some older ritual long forgotten."
     },
     {
       "name": "Black Dog of Bouley Bay",
@@ -391,7 +392,8 @@
       "category": "beast",
       "region": "Norfolk",
       "summary": "A spectral black dog with blazing eyes the size of saucers, said to roam the coastline and heathlands of East Anglia. A single glance is an omen of death within the year.",
-      "source": "https://en.wikipedia.org/wiki/Black_Shuck"
+      "source": "https://en.wikipedia.org/wiki/Black_Shuck",
+      "detail": "Black Shuck — his name thought to derive from the Old English 'scucca', meaning demon — has prowled the lonely lanes, marshes and shingle of Norfolk and Suffolk for centuries. He is most often met on dark, storm-wracked nights: a dog the size of a calf, shaggy and black, with a single fiery eye or a pair of them glowing like coals. To meet his gaze, tradition holds, is to be marked for death within the twelvemonth.\n\nHis most infamous appearance came on 4 August 1577, when a great black dog is said to have burst into the church at Bungay during a thunderstorm, running down the nave and killing two parishioners at prayer before bolting for Blythburgh, where he left scorch marks said to be visible on the north door to this day. The Reverend Abraham Fleming recorded the terror in a breathless pamphlet, and the beast has haunted the East Anglian imagination ever since."
     },
     {
       "name": "Black Vaughan of Hergest Court",
@@ -2946,8 +2948,9 @@
       "lng": -4.97,
       "category": "beast",
       "region": "Bennane Cave, South Ayrshire",
-      "summary": "Sawney Bean is the subject of a Scottish legend about a cannibal clan said to have lived in a coastal cave and preyed on travellers. The story is not treated as verified history, but it remains a well-known piece of Scottish folklore.",
-      "source": "https://www.historic-uk.com/HistoryUK/HistoryofScotland/Sawney-Bean-Scotlands-most-famous-cannibal/"
+      "summary": "The legendary head of a cannibal clan said to have lived in a sea-cave on the Ayrshire coast, ambushing and devouring travellers for a quarter of a century before the king himself rode out to destroy them.",
+      "source": "https://www.historic-uk.com/HistoryUK/HistoryofScotland/Sawney-Bean-Scotlands-most-famous-cannibal/",
+      "detail": "According to the legend — first popularised in eighteenth-century broadsides and The Newgate Calendar — Alexander 'Sawney' Bean and his wife retreated to a deep tidal cave at Bennane Head on the Galloway–Ayrshire coast, where over some twenty-five years they raised a clan of dozens of inbred children and grandchildren. The family lived entirely by ambush, dragging travellers and their horses into the dark, robbing them, and pickling and eating the remains. Vanishing travellers were blamed on innkeepers and passers-by, many of whom were wrongly hanged.\n\nThe clan was undone, the tale says, when a man fought free of an ambush and raised the alarm. King James VI himself led a posse of four hundred men and bloodhounds to the cave, where they found its grisly larder of salted human flesh. The whole family was taken to Edinburgh and executed without trial. Historians find no contemporary record of any of it, and most regard Sawney Bean as anti-Scottish propaganda dressed as history — but as folklore he has proved immortal."
     },
     {
       "name": "Screaming Skull of Bettiscombe",

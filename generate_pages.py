@@ -85,6 +85,7 @@ h1{{font-family:'Cinzel',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;li
 .region{{font-style:italic;color:#5c4a2a;margin-bottom:18px}}
 .summary{{font-size:17px}}
 .summary::first-letter{{font-family:'Cinzel',serif;font-size:2.4em;font-weight:600;color:#8b3a1a;line-height:1}}
+.summary-cont{{font-size:17px;margin-top:14px}}
 .cta{{display:inline-block;margin-top:26px;background:#2c1f0e;color:#f2e8d5;font-family:'Cinzel',serif;font-size:13px;letter-spacing:.08em;text-transform:uppercase;padding:12px 22px;border-radius:3px;text-decoration:none}}
 .cta:hover{{background:#8b3a1a}}
 .src{{display:block;margin-top:18px;font-size:13px;font-style:italic;color:#5c4a2a}}
@@ -100,7 +101,7 @@ footer{{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}}
 <span class="cat" style="background:{catcolour}">{catname}</span>
 <h1>{name}</h1>
 <div class="region">{region}</div>
-<p class="summary">{summary}</p>
+{body}
 <a class="cta" href="{maplink}">Explore on the interactive map &#8594;</a>
 <span class="src">Source: <a href="{src}" target="_blank" rel="noopener">{srchost}</a></span>
 <svg class="watermark" viewBox="0 0 512 512" aria-hidden="true"><path d="{watermark}" fill="currentColor"/></svg>
@@ -150,6 +151,14 @@ def build():
         name = leg["name"]
         slug = slugmap[name]
         desc = short_desc(leg.get("summary", ""))
+        # Full-page body: use the longer `detail` if present, else the summary.
+        # Split on blank lines into paragraphs; first paragraph gets the drop cap.
+        body_text = leg.get("detail") or leg.get("summary", "")
+        paras = [p.strip() for p in body_text.split("\n\n") if p.strip()]
+        body_html = "".join(
+            f'<p class="{"summary" if i == 0 else "summary-cont"}">{esc(p)}</p>'
+            for i, p in enumerate(paras)
+        ) or '<p class="summary"></p>'
         catname = cats.get(leg.get("category", ""), leg.get("category", "Legend"))
         maplink = f"{BASE}/?legend=" + urllib.parse.quote(name)
         src = leg.get("source", "")
@@ -181,7 +190,7 @@ def build():
             catname=esc(catname),
             name=esc(name),
             region=esc(leg.get("region", "")),
-            summary=esc(leg.get("summary", "")),
+            body=body_html,
             maplink=esc(maplink),
             src=esc(src),
             srchost=esc(host_of(src)),

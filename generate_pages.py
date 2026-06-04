@@ -65,7 +65,7 @@ PAGE = """<!DOCTYPE html>
 <style>
 *{{box-sizing:border-box;margin:0;padding:0}}
 body{{background:#e0d0b0;color:#2c1f0e;font-family:'Crimson Text',serif;line-height:1.7;min-height:100vh}}
-.site-banner{{position:relative;background:linear-gradient(180deg,#1e1408,#2c1f0e 75%);padding:16px 20px;text-align:center}}
+.site-banner{{position:relative;background:repeating-linear-gradient(45deg,rgba(176,144,96,0) 0,rgba(176,144,96,0.06) 2.5px,rgba(176,144,96,0.06) 4.5px,rgba(176,144,96,0) 7px,rgba(176,144,96,0) 13px),repeating-linear-gradient(-45deg,rgba(176,144,96,0) 0,rgba(176,144,96,0.05) 2.5px,rgba(176,144,96,0.05) 4.5px,rgba(176,144,96,0) 7px,rgba(176,144,96,0) 12px),linear-gradient(180deg,#1e1408,#2c1f0e 75%);padding:16px 20px;text-align:center}}
 .site-banner::before{{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,#8b3a1a 15%,#b09060 50%,#8b3a1a 85%,transparent)}}
 .site-banner::after{{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(176,144,96,.6) 20%,rgba(196,98,42,.8) 50%,rgba(176,144,96,.6) 80%,transparent)}}
 .banner-link{{display:inline-flex;align-items:center;gap:13px;text-decoration:none}}
@@ -210,7 +210,7 @@ def build():
 <style>
 *{{box-sizing:border-box;margin:0;padding:0}}
 body{{background:#e0d0b0;color:#2c1f0e;font-family:'Crimson Text',serif;min-height:100vh}}
-.site-banner{{position:relative;background:linear-gradient(180deg,#1e1408,#2c1f0e 75%);padding:16px 20px;text-align:center}}
+.site-banner{{position:relative;background:repeating-linear-gradient(45deg,rgba(176,144,96,0) 0,rgba(176,144,96,0.06) 2.5px,rgba(176,144,96,0.06) 4.5px,rgba(176,144,96,0) 7px,rgba(176,144,96,0) 13px),repeating-linear-gradient(-45deg,rgba(176,144,96,0) 0,rgba(176,144,96,0.05) 2.5px,rgba(176,144,96,0.05) 4.5px,rgba(176,144,96,0) 7px,rgba(176,144,96,0) 12px),linear-gradient(180deg,#1e1408,#2c1f0e 75%);padding:16px 20px;text-align:center}}
 .site-banner::before{{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,#8b3a1a 15%,#b09060 50%,#8b3a1a 85%,transparent)}}
 .site-banner::after{{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(176,144,96,.6) 20%,rgba(196,98,42,.8) 50%,rgba(176,144,96,.6) 80%,transparent)}}
 .banner-link{{display:inline-flex;align-items:center;gap:13px;text-decoration:none}}

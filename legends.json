@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-05T17:11:50.482243Z",
+  "generated": "2026-06-05T18:04:53.969160Z",
   "total": 425,
   "categories": {
     "beast": "Beasts",
@@ -330,8 +330,9 @@
       "lng": 1.3,
       "category": "hero",
       "region": "Anglo-Saxon England",
-      "summary": "The great hero of the Old English epic, monster-slayer of Grendel, Grendel's mother, and finally a dragon. Though set in Scandinavia, the poem is a cornerstone of England's mythic inheritance.",
-      "source": "https://en.wikipedia.org/wiki/Beowulf"
+      "summary": "Anglo-Saxon hero who slew the monster Grendel with his bare hands in the Danish hall of Heorot, then killed Grendel's mother in the depths of her mere, and finally died old, fighting a dragon alone, for the sake of his people.",
+      "source": "https://en.wikipedia.org/wiki/Beowulf",
+      "detail": "Beowulf is the great epic poem of Old English literature — over three thousand lines of alliterative verse, preserved in a single manuscript dated to around 1000 AD but describing a world of the fifth and sixth centuries, set in Scandinavia among the Geats, Danes, and other Germanic peoples. It is the foundational text of English literature: the oldest surviving major poem in the language.\n\nThe hero Beowulf crosses the sea to help Hrothgar, King of the Danes, whose great mead-hall Heorot has been terrorised for twelve years by the monster Grendel. In the most famous scene in the poem, Beowulf waits in the darkened hall and fights Grendel bare-handed, tearing the monster's arm from its socket. Grendel retreats to die in the fens; his mother comes in the night for revenge. Beowulf dives into her mere and kills her in the depths.\n\nThe poem's final section takes place decades later. Beowulf is now an old king whose land is threatened by a dragon woken by a theft from its hoard. His companions flee; one returns. The old king and the dragon kill each other. He is buried in a barrow on the headland where his people will see it from the sea. The poem ends not in triumph but in elegy — a meditation on transience, loyalty, and what it means to lead well in a world that cannot be saved."
     },
     {
       "name": "Bevis of Hampton",
@@ -469,8 +470,9 @@
       "lng": -5.102,
       "category": "ghost",
       "region": "Highland, Scotland",
-      "summary": "A dark old man spirit of Scottish Gaelic tradition, the Bodach descends chimneys at night to steal or torment children. In some accounts he is an omen of death — seen before a killing or appearing to warn of misfortune — in others a straightforward malevolent presence in isolated Highland houses. His counterpart the Cailleach rules winter; the Bodach haunts the darkness within the home itself.",
-      "source": "https://en.wikipedia.org/wiki/Bodach"
+      "summary": "A dark old man spirit of Scottish Gaelic tradition who descends chimneys at night to steal or terrify children. In some Highland accounts he appears before a death — the domestic shadow to the Cailleach's winter rule.",
+      "source": "https://en.wikipedia.org/wiki/Bodach",
+      "detail": "The Bodach — the Old Man — is a figure of Scottish Gaelic tradition who enters houses through the chimney after dark, a detail that connects him to a pre-flue world where the hearth-opening was both the home's warmest point and its most vulnerable. He is not a ghost or a fairy in the usual sense but something more elemental: a presence associated with darkness, threat, and the small hours.\n\nHis primary role is terrifying children — stealing them in some versions, tormenting them in others, appearing at bedsides in the night. He serves in this function as the domestic equivalent of the outdoor dangers that highland tradition populates with kelpies, each-uisge, and the sluagh. But he has a second, darker aspect: in some accounts he appears as a death omen, seen near a house before a killing or a fatal illness, moving silently along the edge of vision.\n\nThe pairing of the Bodach with the Cailleach — the winter hag, his female counterpart — gives the Scottish supernatural world a domestic axis. She rules the outdoor cold; he haunts the inside of the house. Both are old, both are dark, and both have been used to explain misfortune since before records began."
     },
     {
       "name": "Boggart of Boggart Hole Clough",
@@ -524,8 +526,9 @@
       "lng": 1.317,
       "category": "hero",
       "region": "Norfolk",
-      "summary": "Queen of the Iceni, Boudicca rallied the tribes of Britain against Roman occupation after her daughters were violated and her kingdom seized. She burned Camulodunum, Verulamium and Londinium to the ground before meeting the legions in a final battle. Her spirit is held never to have left East Anglia — invoked still in times of resistance, her name become shorthand for the unconquerable.",
-      "source": "https://en.wikipedia.org/wiki/Boudica"
+      "summary": "Queen of the Iceni who burned Camulodunum, Verulamium and Londinium to the ground in revolt against Rome. She was not defeated — she chose her own end. Her spirit is held never to have left East Anglia.",
+      "source": "https://en.wikipedia.org/wiki/Boudica",
+      "detail": "Boudicca — or Boudica, her name perhaps meaning Victory — was queen of the Iceni tribe of what is now Norfolk and Suffolk. When her husband Prasutagus died, Rome ignored his will and seized the kingdom, flogged her, and violated her daughters. She united the Iceni with the Trinovantes of Essex, and what followed was one of the most devastating revolts in the history of Roman Britain.\n\nIn 60 or 61 AD her forces destroyed Camulodunum (Colchester), Verulamium (St Albans), and Londinium (London) in sequence — burning them to the ground and killing an estimated 70,000–80,000 people, according to Tacitus. The charred layer from this destruction is still found in excavations beneath the City of London. The Roman governor Suetonius Paulinus, who had been campaigning in Wales, marched back to meet her. The final battle's location is unknown; she died there, either by poison or illness, by her own hand.\n\nHer legend grew after her death far beyond what the Roman sources record. Victorian Britain made her a national symbol — the bronze statue at Westminster Bridge, queen in her war chariot, was unveiled in 1902. In East Anglian tradition she never left: her spirit is invoked in times of resistance, and the flat fields of Norfolk have been held to still contain something of what she put into them."
     },
     {
       "name": "Brahan Seer",
@@ -813,8 +816,9 @@
       "lng": -2.4747,
       "category": "giant",
       "region": "Dorset",
-      "summary": "The Cerne Abbas Giant, or Cerne Giant, is a hill figure near the village of Cerne Abbas, in Dorset, England. It is currently owned by the National Trust, and listed as a scheduled monument of England. Measuring 55 metres (180 ft) in length, the hill figure depicts a bald, nude male with a prominent erection, holding his left hand out to the side and wielding a large club in his right hand.",
-      "source": "https://en.wikipedia.org/wiki/Cerne_Abbas_Giant"
+      "summary": "A 55-metre chalk giant cut into the hillside above Cerne Abbas in Dorset — naked, ithyphallic, and carrying a great club. His age is debated, his identity disputed, and his connection to fertility rites very much alive.",
+      "source": "https://en.wikipedia.org/wiki/Cerne_Abbas_Giant",
+      "detail": "The Cerne Abbas Giant dominates the hillside above the village of Cerne Abbas in Dorset: a 55-metre figure cut in chalk, male, naked, and unmistakably aroused, wielding a knotted club in his right hand. He is one of the most startling prehistoric figures in Britain — and one of the most mysterious, because unlike the Uffington White Horse, no medieval or earlier documentary record of him has yet been found.\n\nThe silence of the medieval record has led some historians to suggest he was cut relatively recently — perhaps in the seventeenth century as a political satire. Others maintain his origins are genuinely ancient, pointing to parallels with the Roman Hercules (club, nakedness, heroic scale) and suggesting he was created or adapted during the Roman period. The National Trust now owns and maintains him; the debate about his age continues.\n\nWhatever his origin, the fertility tradition attached to him has been persistent and energetic. Women wishing to conceive were said to sleep on the figure, and particularly within the outline of his most prominent feature. The Maypole at Cerne Abbas was historically erected just above the giant's head. The tradition has been documented from the eighteenth century and continues informally today."
     },
     {
       "name": "Cernunnos",
@@ -831,8 +835,9 @@
       "lng": -2.7145,
       "category": "location",
       "region": "Somerset",
-      "summary": "At the foot of Glastonbury Tor, the Chalice Well has flowed without ceasing for at least two thousand years, its waters stained red-brown with iron. Joseph of Arimathea is said to have concealed the cup of the Last Supper within its depths when he brought Christianity to Britain. The spring never runs dry even in drought — taken by many as proof that something sacred still lies within.",
-      "source": "https://en.wikipedia.org/wiki/Chalice_Well"
+      "summary": "A spring at the foot of Glastonbury Tor that has flowed without ceasing for two thousand years, its iron-red waters said to conceal the Holy Grail. It never runs dry even in drought — taken as proof that something sacred lies within.",
+      "source": "https://en.wikipedia.org/wiki/Chalice_Well",
+      "detail": "The Chalice Well runs at the foot of Glastonbury Tor, its waters coloured a deep rust-red by the iron-rich limestone through which they flow. It has been flowing at a consistent rate — approximately 25,000 litres a day — for as long as records exist, and almost certainly for thousands of years before that. In the driest English summers, when neighbouring springs fail, the Chalice Well continues.\n\nThe tradition that Joseph of Arimathea brought the cup of the Last Supper to Glastonbury, and concealed it in or near this spring, is a medieval accretion to what is clearly a much older sacred site. The well's iron-stained stones suggest continuous use as a ritual site long before Christianity arrived in Somerset. The water's colour — the colour of old blood — and its unfailing nature gave it obvious sacred significance to pre-Christian inhabitants.\n\nThe site is now managed as a contemplative garden, and draws pilgrims of many traditions. The two interlocking circles of the Chalice Well symbol — known as the Vesica Piscis — appear in the iron cover made for the well in 1919 by Frederick Bligh Bond, and have become one of the most recognised spiritual symbols associated with Glastonbury. Whether the Grail lies within or not, the spring runs on."
     },
     {
       "name": "Chanctonbury Ring",
@@ -921,8 +926,9 @@
       "lng": -0.1024,
       "category": "ghost",
       "region": "Norfolk",
-      "summary": "The Cock Lane ghost was a purported haunting that attracted mass public attention in 1762. The location was a lodging in Cock Lane, a short road adjacent to London's Smithfield market and a few minutes' walk from St Paul's Cathedral. The event centred on three people: William Kent, a usurer from Norfolk; Richard Parsons, a parish clerk; and Parsons' daughter Elizabeth.",
-      "source": "https://en.wikipedia.org/wiki/Cock_Lane_ghost"
+      "summary": "A sensational 1762 haunting in London's Smithfield — scratching sounds, a ghostly presence, and accusations of murder — that drew crowds, fascinated Dr Johnson, and ended with the exposure of a twelve-year-old girl producing the knockings with a piece of wood hidden in her stays.",
+      "source": "https://en.wikipedia.org/wiki/Cock_Lane_ghost",
+      "detail": "The Cock Lane ghost was the great supernatural scandal of Georgian London. In 1762, a lodging house off Smithfield market became the centre of a haunting: scratching and knocking sounds that seemed to emanate from within the walls, reportedly making accusations against a William Kent — a lodger who had recently left — of poisoning his common-law wife, Fanny. The sounds could apparently answer yes-or-no questions by knocking.\n\nThe case drew enormous public attention. Crowds packed the narrow street; society figures and clergymen held vigils; Dr Johnson attended and took the matter seriously enough to write a report when the ghost failed to perform on command. The 'ghost' was ultimately identified as the twelve-year-old daughter of the house's owner, Richard Parsons, who was found to have hidden a piece of wood in her stays and was making the scratching sounds herself.\n\nParsons was convicted of conspiracy and sentenced to stand in the pillory. The affair became a byword for credulity and fraud, satirised by Hogarth in his print Credulity, Superstition, and Fanaticism. It remains one of the best-documented cases in the history of poltergeist claims: a complete record from first report to exposure, with named witnesses on every side, including several who never quite lost their unease about what they had heard."
     },
     {
       "name": "Coolcoulaghta Standing Stones",
@@ -1012,8 +1018,9 @@
       "lng": -8.288,
       "category": "hero",
       "region": "County Sligo, Ireland",
-      "summary": "The Hound of Ulster — Ireland's greatest hero, son of the sun god Lugh, who single-handedly defended Ulster against the armies of Connacht while his warriors lay cursed. He entered his battle-fury called the ríastrad, a contortion so terrible his own allies fled from him.",
-      "source": "https://en.wikipedia.org/wiki/Cú_Chulainn"
+      "summary": "The Hound of Ulster — Ireland's greatest hero, son of the sun god Lugh. He single-handedly held the ford against the armies of Connacht while Ulster's warriors lay cursed, entering the battle-fury called the ríastrad that made him unrecognisable even to himself.",
+      "source": "https://en.wikipedia.org/wiki/Cú_Chulainn",
+      "detail": "Cú Chulainn — the Hound of Culann, born Sétanta — is the hero of the Ulster Cycle, the Irish equivalent of Achilles: the greatest warrior of his generation, fated to die young, consuming himself in battle against forces he cannot defeat. His father is the sun god Lugh; his conception is complicated. He takes his name from killing the hound of the smith Culann as a boy and offering himself as replacement.\n\nThe ríastrad — the warp-spasm or battle-fury — is his most distinctive attribute. When it takes him, his body transforms in ways described with visceral particularity in the medieval texts: one eye sinks into his skull, the other protrudes, his hair stands up and sparks fly from it, his muscles shift and distort, heat rises from him in a visible haze. In this state he is not recognisable as himself and cannot stop. His charioteer Láeg learns to recognise the signs and knows to stay clear.\n\nHis great ordeal is the Cattle Raid of Cooley — Táin Bó Cúailnge — in which the armies of Connacht, led by Queen Medb, invade Ulster to steal the Brown Bull. All the warriors of Ulster are laid low by Macha's curse, but Cú Chulainn is exempt because his father is divine. He holds the ford alone, fighting single combats by day and recovering by night, including the agonising combat with his foster-brother Fer Diad that lasts three days. He is eventually killed by multiple enemies in coalition, but only through the violation of every taboo placed on him — and by the manipulation of the Morrigan, who has never forgiven him."
     },
     {
       "name": "Cú Roí mac Dáire",
@@ -1283,8 +1290,9 @@
       "lng": -5.073,
       "category": "water",
       "region": "Argyll, Scotland",
-      "summary": "The each-uisge — the water horse of the Highland lochs — was far more dangerous than the river kelpie. Taking the form of a fine grey horse or a handsome man, those who mounted it found themselves unable to dismount as it plunged back into the depths. Only iron or the smell of horsehair broke the glamour. Loch Etive in Argyll is among its most feared haunting grounds.",
-      "source": "https://en.wikipedia.org/wiki/Each-uisge"
+      "summary": "The water horse of the Highland lochs — more dangerous than the Kelpie of rivers. It took the form of a fine grey horse or a beautiful stranger; those who mounted it could not dismount as it plunged into the depths. Only iron or the scent of horsehair could break the glamour.",
+      "source": "https://en.wikipedia.org/wiki/Each-uisge",
+      "detail": "The Each-Uisge — the water horse — inhabits the deep lochs of the Scottish Highlands and Islands, and is distinguished from the Kelpie of rivers by its superior malevolence and the particular horror of its attack. Where the Kelpie haunts fords and shallows and is somewhat predictable, the Each-Uisge comes from water without bottom, takes forms that are harder to detect, and leaves its victims no chance of survival once they are mounted.\n\nIn its horse form it is supernaturally beautiful: a fine grey or black stallion, perfectly formed, appearing near the water's edge as if waiting to be ridden. Anyone who mounts it finds themselves unable to dismount — their legs fuse to its sides. The horse plunges into the water and drowns its rider, devouring everything but the liver, which washes ashore. In its human form it appears as a handsome stranger, always with slightly damp hair, and may be detected by the weeds in its hair or the sand at its collar.\n\nThe only reliable protection is iron — a clasp knife, a horseshoe, any piece of iron carried on the person. The smell of burning horsehair can also repel it. Loch Etive in Argyll, Loch Ness, and the sea-lochs of the Hebrides are among the most commonly cited haunting grounds. J. F. Campbell collected numerous accounts in the 1860s from Argyll farmers and fishermen who treated the Each-Uisge as a genuine occupational hazard."
     },
     {
       "name": "Eightercua",
@@ -1446,8 +1454,9 @@
       "lng": -7.309,
       "category": "hero",
       "region": "County Antrim, Ireland",
-      "summary": "Leader of the Fianna and Ireland's great warrior-hero, who gained all wisdom by burning his thumb on the Salmon of Knowledge and touching it to his lips. He built the Giant's Causeway to fight his Scottish rival. He sleeps in a cave with his warriors, ready to wake when Ireland truly needs him.",
-      "source": "https://en.wikipedia.org/wiki/Fionn_mac_Cumhaill"
+      "summary": "Leader of the Fianna — Ireland's warrior band — who gained the gift of all wisdom by accidentally tasting the Salmon of Knowledge, then spent his life hunting, fighting, and loving across a legendary Ireland. He sleeps in a cave beneath Ireland, ready to return when needed.",
+      "source": "https://en.wikipedia.org/wiki/Fionn_mac_Cumhaill",
+      "detail": "Fionn mac Cumhaill — known in Scotland as Fingal — is the central hero of the Fenian Cycle, the second great cycle of Irish mythology. Where the Ulster Cycle is heroic and tragic, the Fenian Cycle is more lyrical, more connected to the landscape, and more tinged with elegy. Fionn is older than the Fianna he leads, older than the Ireland he patrols, and the cycle ends in his disappearance rather than his death.\n\nThe story of how he gained his extraordinary wisdom — touching the Salmon of Knowledge while cooking it for his druid-teacher Finnegas, burning his thumb and reflexively putting it in his mouth — is one of the most famous origin stories in Irish mythology. The salmon had absorbed the wisdom of the world by eating the hazel nuts that fell into the Well of Wisdom; Fionn got it all by accident, and ever after could access that wisdom by sucking his thumb.\n\nFionn is associated with specific landscapes across Ireland and Scotland — the Giant's Causeway, Fingal's Cave, dozens of hills and loughs bear his name or his legend. He is said to sleep beneath a hill in Ireland (various hills claim the honour) with the Fianna around him, ready to rise when three blasts on his great horn summon them. The sleeping-king tradition attaches to him in Ireland as firmly as it attaches to Arthur in Britain."
     },
     {
       "name": "Francis Drake",
@@ -1482,8 +1491,9 @@
       "lng": -1.25017,
       "category": "giant",
       "region": "Petta Water and Kneefell, Shetland Mainland, Scotland",
-      "summary": "A Shetland giant once lived near Petta Water alongside trows who tormented him until he tried to carry them away in a kishie basket and throw them into the sea. The weight of the trows broke the basket, scattering them across the landscape. Local tradition says the giant's footprint remains as Petta Water and the hollow where he set down his knee survives in Kneefell.",
-      "source": "https://www.shetland.org/blog/shetland-folklore"
+      "summary": "A Shetland giant who tried to carry off the trows that pestered him, but his kishie basket broke under their weight and scattered them across the landscape. His footprint became Petta Water, and the hollow where he knelt became Kneefell.",
+      "source": "https://www.shetland.org/blog/shetland-folklore",
+      "detail": "Petta Water, a small loch in the Shetland mainland, takes its name from the word for pit or hollow — and local tradition explains the hollow by a giant. The giant lived near the water and was plagued by trows, the mischievous underground spirits particular to Shetland and Orkney. After suffering their torments for too long, he resolved to carry them off and throw them into the sea.\n\nHe gathered them into a kishie — the traditional Shetland basket carried on the back — and set off. But the trows were too many or too heavy, and the kishie broke. The scattered trows ran back to their underground haunts across the island. The giant knelt in frustration, and the hollow his knee pressed into the ground became Kneefell. The pit his foot made, or the basin of his footprint, became Petta Water.\n\nThe legend belongs to a pattern common across Orkney and Shetland of landscape features explained by the actions of giants, trows, and other supernatural beings — a geography of folklore that reads every unusual hill, loch, or hollow as the trace of something that happened before memory. It also reflects the distinctive Shetland and Orkney tradition of trows as a constant, domestic, almost neighbourly supernatural presence rather than the dramatic terrors of the Highland tradition."
     },
     {
       "name": "Giant of the Wrekin",
@@ -1838,8 +1848,9 @@
       "lng": -0.604,
       "category": "ghost",
       "region": "Berkshire",
-      "summary": "The ghost of a royal huntsman who hanged himself from an ancient oak in Windsor Forest. He rides through the night with a spectral pack of hounds, his antlered helm gleaming.",
-      "source": "https://en.wikipedia.org/wiki/Herne_the_Hunter"
+      "summary": "A spectral huntsman said to haunt Windsor Great Park — horned, rattling chains, leading a phantom hunt through the forest at midnight. First named in Shakespeare's Merry Wives of Windsor; his origins reach back further into the wild-hunt tradition.",
+      "source": "https://en.wikipedia.org/wiki/Herne_the_Hunter",
+      "detail": "Herne the Hunter appears by name in Shakespeare's Merry Wives of Windsor (1597), where a character describes him as a gamekeeper who hanged himself from an oak in the park and now haunts it as a ghost with great ragged horns, blasting the trees and taking cattle. Whether Shakespeare invented the figure or drew on a genuine Windsor tradition is unknown — but the legend took root after him and grew.\n\nHerne's Oak, the specific tree he was said to haunt, was pointed to and venerated for centuries. One candidate was felled by order of George III in 1796; another, identified during Queen Victoria's reign, fell in a storm in 1863. Victoria herself had a new tree planted as a replacement, demonstrating both the persistence of the tradition and the crown's willingness to accommodate it. The park keeps its Herne's Oak.\n\nThe wider question of Herne's origins connects him to the Wild Hunt tradition — spectral hunts of the dead that cross the sky and countryside in European folklore — and to the horned god figure whose presence in British prehistory is evidenced from the antlered figure at Cerne Abbas to the carved head at Rhenish altars. Whether Herne is a specific ghost, an echo of a forest deity, or a confluence of both, he remains one of the most compelling supernatural figures in southern English tradition."
     },
     {
       "name": "Hexham Heads",
@@ -2081,8 +2092,9 @@
       "lng": -1.826,
       "category": "hero",
       "region": "Arthurian Britain",
-      "summary": "The greatest knight of the Round Table and its undoing — his love for Guinevere split Arthur's fellowship and opened the road to Camlann. Raised beneath the waters of the Lady of the Lake, he bears a name that echoes with the supernatural. In the end he became a hermit, not far from the Table's ruins.",
-      "source": "https://en.wikipedia.org/wiki/Lancelot"
+      "summary": "The greatest knight of the Round Table and Arthur's closest companion — until love for Guinevere destroyed both. A French invention grafted onto the older British cycle, but now inseparable from it.",
+      "source": "https://en.wikipedia.org/wiki/Lancelot",
+      "detail": "Lancelot du Lac — Lancelot of the Lake — is the great tragic hero of the Arthurian cycle, though he is not its oldest figure. He was invented by the French poet Chrétien de Troyes in the late twelfth century and grafted onto a pre-existing British tradition that knew nothing of him. The graft took so completely that it is now impossible to imagine the story without him.\n\nHis biography is the most fully developed in the cycle: raised by the Lady of the Lake, trained as a knight in a fairy otherworld, arriving at Camelot as the greatest warrior in the world, and immediately, irrevocably, falling in love with Guinevere. The love is adulterous, sinful, and fully acknowledged by both parties as destructive — and neither can stop. It is a story about being unable to choose between what you love, and what you are for.\n\nLancelot is also Galahad's father, conceived by enchantment with Elaine of Astolat, and it is his son who achieves the Grail that Lancelot — too stained by sin — cannot. In the final reckoning it is Lancelot's affair that Mordred uses to fracture the Round Table. He spends his last years as a hermit. When Guinevere dies, he refuses food and water and follows her within days — not suicide by action but by surrender, which amounts to the same thing."
     },
     {
       "name": "Lantern Man",
@@ -2325,8 +2337,9 @@
       "lng": -2.869,
       "category": "location",
       "region": "Lancashire",
-      "summary": "Lancashire tradition holds that Martin Mere — a great shallow lake in the flat country north of Ormskirk — was where Sir Bedivere finally cast Excalibur after Arthur fell at Camlann, a hand rising from the water to receive the blade before it vanished. The mere was drained in the eighteenth century by the Fleetwood-Hesketh family. Whether the sword went with the water, none can say.",
-      "source": "https://en.wikipedia.org/wiki/Martin_Mere"
+      "summary": "A great shallow lake in the flat country of Lancashire, drained in the 18th century, that tradition holds to be where Sir Bedivere finally cast Excalibur — a hand rising from the water to receive the sword before it vanished beneath the surface.",
+      "source": "https://en.wikipedia.org/wiki/Martin_Mere",
+      "detail": "Martin Mere was one of the largest lakes in England — a broad, shallow expanse of water in the flat moss-lands north of Ormskirk in Lancashire, fed by the rivers Martin and Douglas. For centuries it was a feature of the landscape that shaped settlement patterns, drove wildfowling and fishing economies, and accumulated its own mythology.\n\nThe Arthurian tradition attached to it is local and persistent: Martin Mere is the water to which the dying Arthur commanded Sir Bedivere to cast Excalibur, and into which the hand and arm rose to receive the sword. The identification is not found in Malory or the major Arthurian texts, but in the folklore of the Lancashire district — a regional claim to the ending of the great story.\n\nThe Fleetwood-Hesketh family drained the mere in the eighteenth century, converting it to agricultural land. Much of that land has since been restored to wetland as a Wildfowl and Wetlands Trust reserve, where wild geese and whooper swans now winter on water that once lay over a drowned Arthurian legend. Whether the sword went with the water, and whether the hand is still there somewhere in the dark peaty ground, Lancashire tradition declines to settle."
     },
     {
       "name": "Mary Read",
@@ -2388,8 +2401,9 @@
       "lng": -4.2989,
       "category": "location",
       "region": "Carmarthen, Wales",
-      "summary": "Merlin's Oak, also known as the Old Oak and Priory Oak, was a pedunculate oak that once stood on the corner of Oak Lane and Priory Street in Carmarthen, South Wales. Merlin's Oak is associated with the legend of Merlin in the local lore, but it is also said to have been planted by a schoolmaster in 1659 or 1660, to celebrate the return of King Charles II of England to the throne.",
-      "source": "https://en.wikipedia.org/wiki/Merlin%27s_Oak"
+      "summary": "A dead oak that stood for centuries in the centre of Carmarthen, tied to a prophecy — attributed to Merlin — that the town would flood when the oak fell. When its last fragment was finally removed in 1978, Carmarthen flooded.",
+      "source": "https://en.wikipedia.org/wiki/Merlin%27s_Oak",
+      "detail": "Merlin's Oak stood for centuries at the corner of Oak Lane and Priory Street in the centre of Carmarthen — Caerfyrddin, the fort of Myrddin, the town that bears Merlin's name. It was a dead tree, or nearly dead, preserved in a cage of iron railings long after it ceased to be botanically interesting, because the tradition attached to it was too serious to ignore.\n\nThe prophecy, attributed to Merlin himself, was simple and absolute: When Merlin's Oak shall tumble down, Then shall fall Carmarthen town. The oak was damaged on several occasions — a branch was removed in the 1850s during road improvements, and for years the trunk was held together with metal bands — and each time there were reported local accidents or floods. The town absorbed these events without taking them as conclusive proof either way.\n\nIn 1978 the stump was finally removed entirely, to make way for road works. Within hours, or within days depending on the account, Carmarthen flooded. The event was widely reported and widely argued over. The remains of the tree are preserved in Carmarthen County Museum, where they can be seen. The town has not flooded catastrophically since, which either refutes the prophecy or suggests the museum is doing its job."
     },
     {
       "name": "Mermaid of Marden",
@@ -2551,8 +2565,9 @@
       "lng": -4.065,
       "category": "location",
       "region": "Ceredigion, Wales",
-      "summary": "A battered fragment of olive wood, worn smooth by centuries of lips pressed against it, the Nanteos Cup was kept by the monks of Strata Florida Abbey and later at Nanteos Mansion near Aberystwyth. Borrowed by the sick on surety of its return, it was said to possess healing powers. Some held it to be the very cup of the Last Supper — the Holy Grail in relic form, hidden quietly in the Welsh hills.",
-      "source": "https://en.wikipedia.org/wiki/Nanteos_Cup"
+      "summary": "A battered fragment of olive wood kept at Nanteos Mansion in Wales, borrowed by the sick and returned — said to be the Holy Grail itself, hidden quietly in the Welsh hills.",
+      "source": "https://en.wikipedia.org/wiki/Nanteos_Cup",
+      "detail": "The Nanteos Cup is one of the most haunting relics in British folklore: a small, badly worn fragment of olive wood, its rim eaten away by centuries of lips pressed against it by the sick who hoped it would heal them. It was preserved by the monks of Strata Florida Abbey in Ceredigion, who reportedly carried it from the abbey at the Dissolution and entrusted it to the Powells of Nanteos Mansion near Aberystwyth.\n\nThe tradition of borrowing the Cup for healing persisted into the twentieth century. The sick would come to the mansion, take the fragment home on surety of its return, and drink water from it or press it to their ailments. Letters in the National Library of Wales record its use well into the 1900s — an almost unbroken chain of belief spanning nearly four centuries.\n\nThe Grail identification is a later addition to the legend, first appearing in Victorian and Edwardian accounts. The Cup's actual origin is uncertain; dendrochronology suggests the wood is medieval but not necessarily first-century Palestinian. It now resides at the National Library of Wales, where it remains one of the most quietly extraordinary objects in British folklore."
     },
     {
       "name": "Navan Fort",
@@ -2569,8 +2584,9 @@
       "lng": -6.476,
       "category": "location",
       "region": "County Meath, Ireland",
-      "summary": "A passage tomb older than Stonehenge, built to align with the rising sun on the winter solstice — when light floods the inner chamber for seventeen minutes at dawn. In Irish mythology it is the home of Aengus, god of love and youth, who tricked his father the Dagda out of it by asking to stay for a day and a night — and claiming all days and nights are made of those.",
-      "source": "https://en.wikipedia.org/wiki/Newgrange"
+      "summary": "A passage tomb older than Stonehenge, built to align with the rising sun on the winter solstice — light flooding the inner chamber for seventeen minutes at dawn. In Irish mythology it is the home of Aengus, who tricked his father the Dagda out of it for eternity.",
+      "source": "https://en.wikipedia.org/wiki/Newgrange",
+      "detail": "Newgrange was built around 3200 BC, making it five centuries older than the Great Pyramid of Giza and a thousand years older than Stonehenge. Its passage and chamber were aligned with such precision that once a year, at the winter solstice, the rising sun shines directly down the 19-metre passage and illuminates the inner chamber for approximately seventeen minutes — flooding with light a space that is otherwise in complete darkness. The builders achieved this without instruments, without metal tools, and without the wheel.\n\nIn Irish mythology, Newgrange — Brú na Bóinne, the Palace of the Boyne — is the home of the Dagda, the father-god, and later of his son Aengus Óg, the god of love and youth. The myth of how Aengus came to possess it is one of the most elegant in the cycle: he asked his father for the brú for a day and a night. When the Dagda tried to take it back, Aengus pointed out that all time is composed of a day and a night — and so he holds it still.\n\nNewgrange continued to be a sacred site through the Bronze Age, Iron Age, and into the early Christian period. It was known to the people of every age who came after its builders, who interpreted it according to their own cosmologies. The winter solstice sunrise it was built to capture is still observed today; the chamber is open to those who win the annual lottery draw, and thousands more watch the event streamed live."
     },
     {
       "name": "Newgrange cursus",
@@ -2605,8 +2621,9 @@
       "lng": -2.718,
       "category": "witch",
       "region": "North Berwick, East Lothian",
-      "summary": "The North Berwick witch trials began in the late sixteenth century after accusations that witches had raised storms against King James VI. Local tradition centres on gatherings at St Andrew's Kirk and on attempts to summon destructive weather. Among those accused were Agnes Sampson, a midwife, and Gellie Duncan, a healer; their confessions were extracted under torture.",
-      "source": "https://www.historic-uk.com/HistoryUK/HistoryofScotland/North-Berwick-Witch-Trials/"
+      "summary": "Scotland's most spectacular witch trial — begun in 1590 when Agnes Sampson confessed under torture to raising storms against James VI's ship. The king interrogated the accused himself, and the case shaped his book Daemonologie and Scotland's subsequent witch-hunting frenzy.",
+      "source": "https://www.historic-uk.com/HistoryUK/HistoryofScotland/North-Berwick-Witch-Trials/",
+      "detail": "The North Berwick witch trials of 1590–91 are among the most dramatic in British history, partly because the king himself took a personal interest. James VI of Scotland — returning from Denmark with his new queen, Anne — believed his ships had been assailed by supernatural storms, and when a servant of his chamberlain was accused of witchcraft, the case rapidly grew into something much larger.\n\nOver a hundred people were eventually accused. The confessions described sabbats at the old Kirk of North Berwick: dances in the kirkyard, sermons delivered backwards, wax images of the king being passed hand to hand, and a coven led by Francis Stewart, Earl of Bothwell. Agnes Sampson — a respected midwife and healer — was among the accused. She was tortured with the bridle and deprived of sleep until she confessed, then recanted, then confessed again.\n\nJames VI interrogated Sampson personally at Holyroodhouse and was reportedly persuaded of her guilt when she whispered in his ear the exact words he had exchanged privately with his queen on their wedding night — words she could not have known by natural means. He went on to write Daemonologie (1597), a learned treatise on witchcraft that argued for its reality and the legitimacy of persecution. The North Berwick trials were the direct catalyst for Scotland's century of sustained witch-hunting."
     },
     {
       "name": "Nuada of the Silver Hand",
@@ -2614,8 +2631,9 @@
       "lng": -8.373,
       "category": "deity",
       "region": "County Sligo, Ireland",
-      "summary": "First king of the Tuatha De Danann, Nuada lost his arm at the First Battle of Mag Tuired and was forced from his throne — kingship requiring physical wholeness. The healer-god Dian Cecht fashioned him a working arm of silver, and Nuada was restored. He led the Tuatha against the Fomorians at the Second Battle of Mag Tuired, where he fell, giving way to Lugh to carry the final victory.",
-      "source": "https://en.wikipedia.org/wiki/Nuada_Airgetl%C3%A1m"
+      "summary": "First king of the Tuatha Dé Danann, deposed when he lost his arm in battle — kingship requiring wholeness. Given a working arm of silver by the healer-god, he was restored and led the Tuatha against the Fomorians before falling in the final victory.",
+      "source": "https://en.wikipedia.org/wiki/Nuada_Airgetl%C3%A1m",
+      "detail": "Nuada Airgetlám — Nuada of the Silver Hand — is the first king of the Tuatha Dé Danann, the divine race who ruled Ireland before the Gaels arrived. His story turns on a single catastrophe: at the First Battle of Mag Tuired against the Fir Bolg, his right arm was severed at the shoulder. Under the sacred law of the Tuatha, a king must be physically perfect — and so Nuada was deposed, replaced by the dubious and eventually tyrannical Bres.\n\nThe healer-god Dian Cecht fashioned him a silver arm that moved like a real one, restoring his wholeness and his right to reign. In a later version, Dian Cecht's son Miach grew flesh over the silver arm, making it truly organic — an act that so threatened his father's pride that Dian Cecht killed him in jealousy. The herbs that grew from Miach's grave contained every healing property known to medicine.\n\nNuada ruled again and led the Tuatha against the Fomorians at the Second Battle of Mag Tuired, the great cosmic conflict between order and chaos. He was killed in that battle by the Fomorian king Balor of the Evil Eye, making way for Lugh — who then killed Balor with a sling-stone through the eye — to carry the final victory. Nuada's silver arm gave him his epithet and his place in the mythological cycle as the noble king undone and restored."
     },
     {
       "name": "Nuckelavee",
@@ -2670,8 +2688,9 @@
       "lng": 0.8726,
       "category": "location",
       "region": "Norfolk",
-      "summary": "In 1061 a noblewoman of Walsingham was visited by the Virgin Mary and shown a vision of the Holy House of Nazareth, which she was commanded to rebuild in replica. The shrine that grew around it became England's foremost pilgrimage site, drawing monarchs and the faithful alike until its destruction at the Reformation. It remains a place of active pilgrimage to this day.",
-      "source": "https://en.wikipedia.org/wiki/Our_Lady_of_Walsingham"
+      "summary": "In 1061 the Lady Richeldis of Walsingham was commanded in a vision to build a replica of the Holy House of Nazareth in Norfolk. The shrine became England's most important pilgrimage site until Henry VIII destroyed it — and it remains a place of active pilgrimage today.",
+      "source": "https://en.wikipedia.org/wiki/Our_Lady_of_Walsingham",
+      "detail": "The Walsingham shrine traces its origin to 1061, when a noblewoman called Richeldis de Faverches is said to have been transported in spirit to Nazareth and shown the house of the Annunciation. Commanded to build a replica in Norfolk, she chose the site by following a miraculous dew path. The resulting Holy House became the centre of one of the most significant Marian shrines in Europe.\n\nThroughout the medieval period, Walsingham drew pilgrims from across Britain and the continent. Henry III, Edward I, Edward II, Edward III, Henry VII, and Henry VIII all visited on pilgrimage — Henry VIII on foot, barefoot for the last stage, before his break with Rome. Erasmus came in 1512 and described the shrine in detail. The town's single main street was lined with stalls selling badges, ampullae of holy water, and the accumulated commerce of five centuries of pilgrimage.\n\nAt the Dissolution, Henry VIII ordered the destruction of the shrine. The statue of Our Lady was taken to London and burned. The Milky Way — which in England was sometimes called the Walsingham Way, because pilgrims navigated by it at night — lost its destination. The shrine was rebuilt in the twentieth century, in both Anglican and Roman Catholic forms, and Walsingham today remains one of the most active pilgrimage sites in England, the Milky Way still pointing north toward Norfolk."
     },
     {
       "name": "Owlman of Mawnan",
@@ -2824,8 +2843,9 @@
       "lng": -1.081,
       "category": "hero",
       "region": "Yorkshire",
-      "summary": "Legendary Norse king and Viking chieftain, Ragnar was said to have been captured by King Ælla of Northumbria and cast into a pit of serpents at York, where he died singing. His sons — including Ivar the Boneless — launched the Great Heathen Army to avenge him, conquering half of England. Whether man or myth or both, the pit of snakes at York remains the most vivid moment of his legend.",
-      "source": "https://en.wikipedia.org/wiki/Ragnar_Lodbrok"
+      "summary": "Legendary Norse king who raided England, was captured by King Ælla of Northumbria and thrown into a pit of snakes at York — dying there, singing. His sons launched the Great Heathen Army to avenge him and conquered half of England.",
+      "source": "https://en.wikipedia.org/wiki/Ragnar_Lodbrok",
+      "detail": "Ragnar Lothbrok occupies the border between history and legend so completely that separating them may be impossible and is probably beside the point. The sagas describe a great Viking king and raider who terrorised both England and France across the ninth century; the historical record is equivocal, with no contemporary source naming him clearly. But his legend accumulated detail and force long before the sagas fixed it in writing.\n\nThe most vivid moment in his tradition is his death. Having raided Northumbria, he was captured by King Ælla and thrown into a pit of snakes at York. The sagas record that he sang as he died — a death-song called the Krákumál, in which he declared that he was laughing and would soon drink ale with the gods — and that his last words were a warning: 'The little pigs would grunt now if they knew what the old boar suffers.' His sons heard the news.\n\nThe response was the Great Heathen Army of 865, the most significant Scandinavian invasion of England: led by Ivar the Boneless, Halfdan, and Ubbe, it conquered Northumbria, East Anglia, and Mercia. Ælla was killed — according to the sagas, by the blood eagle. Ragnar's sons effectively remade the map of England. The pit of snakes at York, the death-song, and the revenge army have made him one of the most resonant figures in the Norse tradition's collision with Britain."
     },
     {
       "name": "Rathcoran",
@@ -2923,8 +2943,9 @@
       "lng": -1.0632,
       "category": "hero",
       "region": "Nottinghamshire",
-      "summary": "Outlaw of Sherwood Forest, robber of the rich and friend of the poor, Robin Hood haunts the English imagination as the archetypal rebel against unjust authority. Whether Saxon freedom-fighter, displaced nobleman or composite of a dozen forgotten men, his legend has been told since at least the 13th century. The Major Oak in Sherwood is said to have sheltered him and his Merry Men between raids.",
-      "source": "https://en.wikipedia.org/wiki/Robin_Hood"
+      "summary": "Outlaw of Sherwood, robber of the rich and friend of the poor — the archetypal English rebel against unjust authority, told since the 13th century. The Major Oak is said to have sheltered him between raids.",
+      "source": "https://en.wikipedia.org/wiki/Robin_Hood",
+      "detail": "Robin Hood has haunted the English imagination for at least seven centuries, appearing in ballads as early as the late thirteenth century — predating the printing press, the Renaissance, and almost every institution of the England we recognise. Whether he was a specific historical figure, a composite of forgotten outlaws, or a literary invention who then acquired geographical memory, he belongs to the land as much as any named king.\n\nThe core of the legend is simple and endlessly renewable: a skilled archer, living under the greenwood of Sherwood Forest, who robs from those who have too much and gives to those who have nothing, and who cannot be taken by the corrupt sheriff who hunts him. Maid Marian, Friar Tuck, Little John, and Will Scarlet are later additions; the early ballads show a harder, less romantic figure — sometimes violent, sometimes devotional, always elusive.\n\nThe Major Oak, a vast pollarded oak in the heart of Sherwood Forest near Edwinstowe, is traditionally associated with Robin's camp, its hollow trunk large enough to have sheltered men. It is almost certainly far too young to have been there in any historical Robin's time, but tradition does not require botanical accuracy. The tree still stands, propped and protected, and visitors still come."
     },
     {
       "name": "Rollright Stones curse",
@@ -3051,8 +3072,9 @@
       "lng": -2.568,
       "category": "hero",
       "region": "Somerset",
-      "summary": "Last knight standing at Camlann, Bedivere was charged by the dying Arthur with casting Excalibur into the water. Twice he faltered, hiding the sword away; twice Arthur knew. On the third attempt the sword was thrown and a hand rose from the lake to receive it. Bedivere carried the king to the waiting barge and bore witness to his passing — then outlived every knight of the Round Table.",
-      "source": "https://en.wikipedia.org/wiki/Bedivere"
+      "summary": "Last knight at Camlann, charged by the dying Arthur with casting Excalibur into the lake. He faltered twice; on the third attempt the sword was thrown and a hand rose to receive it. Then he carried the king to the barge and outlived every knight of the Round Table.",
+      "source": "https://en.wikipedia.org/wiki/Bedivere",
+      "detail": "Bedivere is the witness of Arthur's ending — the one knight who was there when it was over, and who had to bear both the doing of it and the telling. In Malory's Morte d'Arthur, after the final battle at Camlann where Arthur is mortally wounded, he commands Bedivere to take Excalibur to the nearest water and throw it in, then report what he sees.\n\nTwice Bedivere cannot bring himself to cast the sword away — it is too precious, too storied, too much the king himself. Twice he hides it and returns to say he saw only wind and water. Twice Arthur knows he is lying. On the third try Bedivere hurls the sword as far as he can, and a hand and arm rise from the water, catch it, brandish it three times, and pull it under. He carries Arthur to the shore where three queens receive him onto a barge bound for Avalon.\n\nBedivere then does something remarkable: he lives on. The other knights are dead, dispersed, or disappeared into hermitage. Bedivere goes to a hermitage himself, but he is there when Lancelot arrives years later, and he tells the story. He is the only Arthurian knight whose function is memory — the man who knew how it ended, and stayed to say so."
     },
     {
       "name": "Sir Galahad",
@@ -3069,8 +3091,9 @@
       "lng": -3.635,
       "category": "hero",
       "region": "Gwynedd, Wales",
-      "summary": "Arthur's foster-brother and seneschal of Camelot, Kay was the first to mock and the last to admit error, yet he rode on every quest that mattered. Welsh tradition knows him as Cai Hir — Kay the Tall — a warrior who could breathe underwater for nine days and whose wounds would never fester. Caer Gai, a Roman fort in the hills above Bala, is held by Welsh legend to be his stronghold.",
-      "source": "https://en.wikipedia.org/wiki/Kay_(Arthurian_legend)"
+      "summary": "Arthur's foster-brother and seneschal of Camelot — first to mock, last to admit error, but present on every quest that mattered. Welsh tradition knows him as Cai the Tall, a warrior of near-supernatural endurance whose stronghold may be the Roman fort above Bala.",
+      "source": "https://en.wikipedia.org/wiki/Kay_(Arthurian_legend)",
+      "detail": "Kay — Cai in the Welsh tradition — is one of the oldest figures in Arthurian literature, present in the earliest Welsh texts centuries before the French romances invented Lancelot. In Culhwch and Olwen, one of the earliest Arthurian tales, Cai Hir — Kay the Tall — is a warrior of extraordinary gifts: he could hold his breath for nine days underwater, his wounds would never fester, and he could make himself as tall as the tallest tree when he chose.\n\nThe French romances transformed this elemental figure into a petty bully — a sharp-tongued seneschal who mocks newcomers and fails at quests while greater knights succeed. It is an unkind transformation of an older, stranger hero. But the traces of the original Kay remain: the insults and failures of the romances have a quality of ritual humiliation that suggests a figure who was once important being deliberately diminished.\n\nCaer Gai, a Roman auxiliary fort on the hill above the town of Bala in Gwynedd, preserves his name — Cai's Fort — and is held by local Welsh tradition to be where Kay was born and where he held his stronghold. The Roman earthworks are still visible. The connection between a Roman fort and an Arthurian hero in the Welsh hills feels exactly right: the Dark Ages are precisely where Arthur and his companions live."
     },
     {
       "name": "Sir Percival",
@@ -3326,8 +3349,9 @@
       "lng": -6.776,
       "category": "deity",
       "region": "County Meath, Ireland",
-      "summary": "The Good God of Irish mythology — father-figure of the Tuatha Dé Danann, keeper of the inexhaustible cauldron from which none went hungry, wielder of a club so vast it took eight men to carry. One end killed the living; the other raised the dead. He feasted and loved without shame and ruled with tremendous power.",
-      "source": "https://en.wikipedia.org/wiki/Dagda"
+      "summary": "The Good God of the Tuatha Dé Danann — not good in the moral sense but good at everything. He wields a club that kills with one end and revives with the other, carries an inexhaustible cauldron, and plays a harp whose music controls seasons. Large, crude, and often comic, he is the most powerful figure in Irish mythology.",
+      "source": "https://en.wikipedia.org/wiki/Dagda",
+      "detail": "The Dagda — Dagda Mór, the Great Good God — is the father-god of the Tuatha Dé Danann, but he is not the remote divine patriarch of later religious traditions. He is enormous, pot-bellied, often dressed in a short tunic that does not quite cover him, dragging a vast club behind him on a wheel. He eats cauldrons of porridge stirred with a ladle the size of a man. He is, in other words, deliberately earthly and comic — and also the most powerful being in his world.\n\nHis three treasures define him. His club has two ends: strike a man with one end and he dies; touch him with the other and he revives. His cauldron, the Undry, is inexhaustible — no company ever left it unsatisfied. His harp, the Oak of Two Greens, plays the three strains of Irish music by itself: the strain that makes men weep, the strain that makes them laugh, and the strain that puts them to sleep. These are the tools of a god who controls death, abundance, and time.\n\nThe myths treat him with a mixture of reverence and satirical affection that is characteristic of Irish mythological writing. He negotiates badly at treaties, is tricked out of his home at Brú na Bóinne by his son Aengus, and has a series of improbable lovers. But when it matters — at the battles of Mag Tuired — the Dagda's power is absolute. He is the ground under everything, the force that will not be denied."
     },
     {
       "name": "The Dullahan",
@@ -3389,8 +3413,9 @@
       "lng": -6.497,
       "category": "deity",
       "region": "Ireland & Britain",
-      "summary": "A triple goddess of war, fate and death — crow-headed, battle-hungry. She appeared to heroes before combat as an omen, sometimes aiding them, sometimes sealing their doom. Her crows still circle over ancient hillforts.",
-      "source": "https://en.wikipedia.org/wiki/Morrígan"
+      "summary": "The great goddess of war, fate, and death in Irish mythology — appearing as a crow on the shoulders of dying warriors, as a beautiful woman who tests heroes, or as a hideous hag washing blood-stained armour at a ford. She is neither good nor evil but inevitable.",
+      "source": "https://en.wikipedia.org/wiki/Morrígan",
+      "detail": "The Morrigan is a collective and a singular — she appears as one goddess and as three, in various combinations with Badb and Macha and Nemain. Her name has been interpreted as Great Queen or Phantom Queen, and she is both: a sovereign goddess of the land, a prophetess of battle-death, and a figure whose presence on the margins of a fight means the fight has already been decided.\n\nIn the Ulster Cycle she appears to Cú Chulainn in multiple guises — as a beautiful woman who offers herself and is refused, as a heifer, as an eel, as a wolf — each time testing him and being wounded by him, each time returning in a new form. At his final stand on the ford, she appears as a crow on the post he tied himself to when dying, and the warriors around him knew he was dead when she landed. The crow — particularly the hooded crow — is her bird across all traditions.\n\nShe is also associated with sovereignty itself: the goddess who confers legitimacy on kingship, who must be won or appeased by the king, who is the land in its most uncanny aspect. She appears at the Second Battle of Mag Tuired as a power who can determine the outcome. She is perhaps the most complex supernatural figure in the Irish tradition — impossible to ally with fully, impossible to ignore, and never, in any version of the stories, quite on any human's side."
     },
     {
       "name": "The Pipers",
@@ -3533,8 +3558,9 @@
       "lng": -6.776,
       "category": "deity",
       "region": "Ireland",
-      "summary": "The divine race who ruled Ireland before the Gaels arrived — gods of skill, craft, beauty and war. Defeated at the Battle of Tailteann, they retreated into the hollow hills and became the Aos Sí. Their four treasures — the Spear of Lugh, the Sword of Light, the Cauldron of Plenty, and the Stone of Destiny — are the foundation of Irish sovereignty.",
-      "source": "https://en.wikipedia.org/wiki/Tuatha_Dé_Danann"
+      "summary": "The divine race of Irish mythology — gods of skill, beauty, and power who came to Ireland before the Gaels and were eventually driven underground into the fairy mounds. They became the aos sí, the people of the hills, and their descendants are the fairy folk of Irish tradition.",
+      "source": "https://en.wikipedia.org/wiki/Tuatha_Dé_Danann",
+      "detail": "The Tuatha Dé Danann — the peoples of the goddess Danu, or more precisely the peoples of skill and craft — arrived in Ireland, according to the mythological cycle, in a cloud of mist from the northern islands of the world, where they had learned their knowledge in great cities. They were the fourth of the mythological invasions of Ireland and they came to stay, at least for a time.\n\nThey brought four treasures: the Lia Fáil, the Sword of Lugh, the Spear of Lugh, and the Cauldron of the Dagda. They fought two great battles at Mag Tuired — first against the Fir Bolg, then against the Fomorians — and won both, establishing their rule over Ireland. Their king, Nuada, was wounded and restored; their champion, Lugh, killed the monstrous Balor of the Evil Eye with a sling-shot. For a time, Ireland was their world.\n\nWhen the Gaels arrived under the sons of Míl, the Tuatha were defeated not by force but by negotiation and magic. They retreated underground, into the hollow hills — the sídhe — and became the people of the mounds. In this form they continued to interact with the human world, now as the aos sí: the fairy people whose mounds must not be disturbed, whose paths must not be blocked, and who can be generous or terrible depending entirely on whether you have shown them the respect that was once owed to gods."
     },
     {
       "name": "Turoe Stone",

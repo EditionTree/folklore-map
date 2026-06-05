@@ -71,6 +71,48 @@
     html {
       background: #1e1408;
     }
+
+    /* ── NIGHT MODE — UI THEME ── */
+    body.night {
+      --parchment:    #1c2840;
+      --parchment-dk: #141e30;
+      --ink:          #c8d8f0;
+      --ink-light:    #7a90b8;
+      --accent:       #5878b8;
+      --accent-glow:  #7090d8;
+      --border:       #2e4870;
+      --shadow:       rgba(0, 10, 40, 0.5);
+    }
+    body.night header {
+      background:
+        linear-gradient(135deg, rgba(70,100,180,0.15) 0%, rgba(40,60,120,0.06) 35%, transparent 60%),
+        linear-gradient(180deg, #0d1525 0%, #080e1c 45%, #0f1a2e 100%);
+      border-bottom-color: rgba(60,90,160,0.35);
+    }
+    body.night header::before {
+      background: linear-gradient(90deg, transparent, #2a4880 15%, #3a5a9a 50%, #2a4880 85%, transparent);
+    }
+    body.night header::after {
+      background: linear-gradient(90deg, transparent, rgba(60,90,160,0.5) 20%, rgba(70,100,180,0.7) 50%, rgba(60,90,160,0.5) 80%, transparent);
+    }
+    body.night .subtitle { color: rgba(100,140,200,0.75); }
+    body.night .filter-bar { background: #141e30; border-bottom-color: #2e4870; }
+    body.night .search-result-item { border-bottom-color: #1e2e4a; }
+    body.night .map-vignette {
+      background: radial-gradient(ellipse at center, transparent 55%, rgba(8,14,30,0.4) 100%);
+    }
+    body.night footer {
+      background: linear-gradient(180deg, #0a1020 0%, #060c18 100%);
+    }
+
+    /* Smooth transitions for UI colour change */
+    header, .sidebar, footer,
+    .leaflet-popup-content-wrapper, .leaflet-popup-tip {
+      transition: background 0.6s ease, border-color 0.6s ease, color 0.4s ease;
+    }
+    /* filter-bar driven via JS to avoid compositor layer interference */
+    .filter-bar { transition: border-bottom-color 0.6s ease; }
+
     body {
       background: var(--parchment-dk);
       font-family: var(--font-body);
@@ -1082,7 +1124,13 @@ function toggleLegend() {
 function toggleNight() {
   nightMode = !nightMode;
   document.getElementById('map').classList.toggle('night', nightMode);
+  document.body.classList.toggle('night', nightMode);
   document.getElementById('modeTrack').classList.toggle('on', nightMode);
+  // Force filter-bar repaint (composited layer bypasses CSS variable cascade)
+  const fb = document.querySelector('.filter-bar');
+  fb.style.transition = 'background 0.6s ease, border-bottom-color 0.6s ease';
+  fb.style.background = nightMode ? '#141e30' : '';
+  fb.style.borderBottomColor = nightMode ? '#2e4870' : '';
   document.getElementById('modeLabel').textContent = nightMode ? 'Night' : 'Day';
   markers.forEach(m => {
     m.setIcon(makeIcon(m._legendData.category, nightMode));

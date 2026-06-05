@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-05T22:10:22.405270Z",
-  "total": 438,
+  "generated": "2026-06-05T22:16:04.815853Z",
+  "total": 442,
   "categories": {
     "beast": "Beasts",
     "ghost": "Ghosts",
@@ -976,6 +976,16 @@
       "source": "https://en.wikipedia.org/wiki/Craddock_Moor_stone_circle"
     },
     {
+      "name": "Craig y Ddinas",
+      "lat": 51.759,
+      "lng": -3.617,
+      "category": "hero",
+      "region": "Pontneddfechan, Neath, Wales",
+      "summary": "A limestone crag in the Vale of Neath beneath which King Arthur and his knights sleep in an enchanted cave, surrounded by gold and silver, awaiting the day Britain calls them back. A Welsh traveller once stumbled in, accidentally struck a bell, and was beaten and cast out — never finding the entrance again.",
+      "source": "https://www.fforestfawrgeopark.org.uk/understanding/myths-and-legends/the-sleeping-warriors-of-craig-y-ddinas/",
+      "detail": "Craig y Ddinas — the Rock of the Fortress — rises above the village of Pontneddfechan at the head of the Vale of Neath, a striking limestone crag that has drawn to itself one of the most widespread legends in Welsh tradition: the sleeping warriors waiting for their country's darkest hour. In the version attached to this site, a Welshman is led by a wise man through a hidden entrance beneath a broad flat stone into a cavern of vast dimensions. Inside lie thousands of armoured warriors in enchanted sleep, their weapons laid ready, heaps of gold and silver piled around them. At the centre, marked by a golden crown and a battle-axe across his chest, sleeps Arthur himself. The warriors will wake, the legend says, when the Black Eagle and the Golden Eagle go to war — the day when Britain faces its final need.\n\nThe wise man warns the traveller not to strike a bell hanging in the passage. On the way out he stumbles against it. A warrior lifts his head: \"Is it day?\" Following his instructions, the traveller answers \"No, sleep on\" — and escapes with a handful of gold. A second visit ends worse. He forgets the words, the warriors wake in fury, beat him and strip him of everything, and cast him back to the surface. He searches for the entrance for the rest of his life and never finds it again.\n\nThe sleeping king tradition is one of the oldest and most geographically widespread in British folklore, recorded at Cadbury Hill, Sewingshields, Alderley Edge, Eildon Hills, and a dozen other sites. The Craig y Ddinas version was written down by Iolo Morgannwg (Edward Williams, 1747-1826), a Glamorgan stonemason and poet who collected and preserved genuine Welsh lore but was also known to embellish traditions. He described it as \"a popular tale in Glamorgan\", which at minimum suggests it was in circulation in the late 18th century. Whether the Craig y Ddinas attribution predates Iolo is unconfirmed, but the legend's place in the living tradition of the Vale of Neath is well established."
+    },
+    {
       "name": "Craigs Dolmen",
       "lat": 54.9936,
       "lng": -6.4785,
@@ -992,6 +1002,16 @@
       "region": "County Mayo, Ireland",
       "summary": "Ireland's holy mountain, where Saint Patrick fasted for forty days and drove the serpents from Ireland. Before Patrick, it was the sacred mountain of the god Lugh, and his festival Lughnasadh was celebrated on its summit. Pilgrims still climb it barefoot on the last Sunday of July, as they have for three thousand years.",
       "source": "https://en.wikipedia.org/wiki/Croagh_Patrick"
+    },
+    {
+      "name": "Crodh Mara",
+      "lat": 57.78,
+      "lng": -7.02,
+      "category": "water",
+      "region": "Hebrides, Scottish Highlands",
+      "summary": "Fairy cattle of the Scottish sea — hornless, dun-coloured beasts that emerge from the ocean and interbreed with mortal herds, improving the stock. They bring prosperity while they stay, but if called back by the sea they lead the entire herd into the waves and vanish.",
+      "source": "https://www.oxfordreference.com/display/10.1093/oi/authority.20110803095648814",
+      "detail": "Crodh Mara — literally \"cattle of the sea\" in Scottish Gaelic — are among the most practically-minded creatures in Highland fairy lore. Unlike the murderous Each-Uisge or the spectral Black Dog, the sea cattle are not inherently malevolent; their danger is more like that of borrowed luck. They emerge from the sea or from deep freshwater lochs along the western coast of Scotland, particularly around the Hebrides, and will graze contentedly alongside mortal herds. Their bulls are especially prized: any cow that mates with a crodh mara bull will improve the entire bloodline, producing hardier, more productive animals than any natural breeding could achieve.\n\nThe folklore recorded by John Gregorson Campbell in Superstitions of the Highlands and Islands of Scotland (1900) describes how a crofting couple on the island of Pabbay once found a stray cow among their herd which they took in and bred from, eventually building their whole stock from her descendants. The cow was one of the crodh mara, and for a generation the herd thrived beyond anything normal. But the sea cattle carry a condition: they may be lured back. If a fairy cow in a mortal herd hears a particular calling — a note played on a pipe, a change in the tide, or simply the will of whatever being sent her — she will turn and walk toward the water. The danger is that the rest of the herd will follow. More than one Highland legend ends with a cowherd watching helplessly as his entire stock walks into a loch or off a headland into the sea, following the fairy cow home.\n\nIn Wales, a near-identical tradition describes the Gwartheg y Llyn — cattle of the lake — which emerge from lakes such as Llyn y Fan Fach in the Brecon Beacons under similar conditions. The parallel traditions across Celtic-speaking cultures suggest the crodh mara belongs to a deep stratum of livestock-focused fairy belief, rooted in the practical anxieties of pastoral communities for whom the loss of a herd was catastrophic."
     },
     {
       "name": "Crom Cruach",
@@ -1067,6 +1087,16 @@
       "summary": "Two men buried at Burton rose that same night, walking the village with their coffins on their shoulders and spreading pestilence — until the Bishop of Lincoln ordered the bodies exhumed and burned. Among the oldest revenant records in English, c.1140.",
       "source": "https://en.wikipedia.org/wiki/Burton_Abbey",
       "detail": "The account appears in the Vita Sanctae Moduennae, a Latin hagiography compiled by Geoffrey, Abbot of Burton, around 1140 — making it one of the earliest and most detailed written revenant narratives in the English historical record. According to Geoffrey's chronicle, two peasant serfs from the Burton estates fled their lord and died of sudden illness in a nearby village. The very day they were buried they rose again, and over the following nights they were seen walking through the village carrying their own coffins on their shoulders. They appeared first in human form, then as bears, then as dogs or other animals, knocking on doors and calling the occupants by name. Those who heard their names called or whose doors the dead men touched sickened and died; within days, all but one of the village's inhabitants lay ill with a raging fever.\n\nThe bishop, after deliberation, ordered the bodies exhumed. The diggers found the corpses fresh and uncorrupted despite the elapsed time — a sign consistent with medieval revenant lore, in which the undead preserved their bodies through the vital force they drained from the living. The heads were severed, the hearts cut out, and the bodies burned to ash; the pestilence immediately abated. The account was later known to the historian William of Newburgh, who in his Historia Rerum Anglicarum (c.1196) documented a series of similar revenant cases — the Buckinghamshire revenant, the Berwick revenant — as part of a systematic attempt to understand the phenomenon. Geoffrey's version is notable for two details that echo much older traditions: the shapeshifting of the dead into animal forms, which appears in Irish and Germanic folklore, and the explicit link between revenants and epidemic disease — a connection that would persist in the European vampire tradition for another seven centuries."
+    },
+    {
+      "name": "Dearg Due",
+      "lat": 52.257,
+      "lng": -7.119,
+      "category": "ghost",
+      "region": "Strongbow's Tree, Waterford, Ireland",
+      "summary": "Ireland's most feared female vampire — a woman of great beauty forced into a cruel marriage who died of despair and rose from her grave to drain the blood of men. She is buried near Strongbow's Tree in Waterford, and locals traditionally pile stones on the grave to keep her below ground.",
+      "source": "https://www.irishcentral.com/roots/dearg-dur-waterford-legend",
+      "detail": "Dearg Due — the name means roughly \"red blood-drinker\" in Irish — is the most prominent female vampire figure in Irish folklore, and one of the few Irish supernatural beings specifically associated with blood-drinking rather than the more usual fairy mischief or ghostly haunting. The legend as most commonly told centres on a beautiful woman in ancient Waterford, beloved throughout the region, whose father refused her chosen partner and sold her instead into marriage with a wealthy but brutal chieftain. Treated as property rather than a person, she wasted away and died. On the first anniversary of her death she rose from her grave, killed her father and her husband by draining their blood, and has walked since as a creature of appetite and revenge.\n\nThe specific location — a grave near a landmark known as Strongbow's Tree in Waterford — gives the legend an unusual geographical anchor for Irish vampire lore, and the annual folk custom of piling stones on the grave to weigh her down is still noted in local tradition. This detail connects the Dearg Due to a genuinely ancient class of European corpse-suppression practices intended to prevent the restless dead from rising.\n\nIt should be noted that the legend's earliest clearly datable written source is Dudley Wright's Vampires and Vampirism (1924), and some folklorists have questioned whether the figure has deep medieval Irish roots or whether she represents an early 20th century reworking of older motifs. Nevertheless, the Waterford tradition is well established in local memory, and the Dearg Due sits within a genuine Irish tradition of dangerous revenants — of which Abhartach, the vampire-dwarf of County Londonderry, is the most thoroughly documented example."
     },
     {
       "name": "Deirdre of the Sorrows",
@@ -3864,6 +3894,16 @@
       "summary": "Smugglers caught raking a moonlit pond told excise men they were fishing for a round cheese — the moon's reflection. The officers laughed and rode on; Wiltshire has worn 'Moonraker' as a badge of cunning ever since.",
       "source": "https://en.wikipedia.org/wiki/Moonraker_(smuggler)",
       "detail": "The Moonrakers legend belongs to the 18th-century English smuggling trade, when Wiltshire lay directly on the inland route from south-coast ports to Midlands consumers. Contraband French brandy and Dutch gin moved through the county in hidden caches, buried in ponds or haystacks to evade the revenue men patrolling the roads. The pivotal incident — men raking a pond by night, claiming to be fishing for a round cheese floating in the water — was first recorded in print by Francis Grose in his Provincial Glossary (1787). Grose noted it as an existing folk tale, suggesting the story circulated well before that date. The Crammer, a pond at Southbroom in Devizes, has the strongest local claim to being the original scene, though Bishops Cannings and several other Wiltshire villages dispute that honour.\n\nWhat makes the story culturally distinctive is that the joke is entirely on the excise men. The Moonrakers are celebrated not as romantic outlaws — though that framing applies — but as exemplars of a specifically English rural cunning: winning through apparent stupidity, letting the enemy's contempt do the work. The Dutch and Flemish wool merchants who maintained permanent headquarters in Wiltshire towns brought their taste for Hollands gin with them, and the trade that developed to supply it without paying duty gave the region both a strong smuggling tradition and an economic logic behind the subterfuge. Wiltshire men adopted 'Moonraker' as a badge of pride rather than mockery, and it has remained the county's folk nickname ever since."
+    },
+    {
+      "name": "Winchester Round Table",
+      "lat": 51.062,
+      "lng": -1.316,
+      "category": "location",
+      "region": "Winchester Great Hall, Hampshire",
+      "summary": "A massive oak tabletop hanging in Winchester Great Hall, long venerated as King Arthur's original Round Table. Dendrochronology dates it to around 1250-1280, made under Edward I — a king so devoted to the Arthurian legend he hosted Round Table tournaments himself. The current paintwork was ordered by Henry VIII.",
+      "source": "https://www.medievalchronicles.com/medieval-knights/famous-medieval-knights/the-knights-of-the-round-table/winchester-round-table/",
+      "detail": "The Winchester Round Table is one of the most tangible objects in the entire Arthurian tradition — a physical artefact that has been venerated as Arthur's own table for at least seven centuries. It hangs on the wall of Winchester Great Hall, measures 5.5 metres across, weighs over 1,200 kilograms, and is divided into 25 segments painted with the names of Arthurian knights radiating from a central Tudor rose. The figure of Arthur himself sits at the top, bearing a distinct resemblance to Henry VIII.\n\nThe romantic attribution — that this is the original table of Camelot — was already well established when Edward I visited Winchester in 1285. Dendrochronology has since dated the timber to around 1250-1280, placing its construction firmly in Edward's reign. Edward was an extraordinary Arthurian enthusiast: he attended at least five Round Table tournaments during his kingship, hosted one near Winchester in 1290 to celebrate his daughter's betrothal, and used the Arthurian mythology as deliberate political theatre to legitimise his claim to sovereignty over Britain. The table was almost certainly built for one such occasion — a prop in a carefully staged chivalric performance rather than an ancient relic.\n\nThe current painted surface dates from the early 16th century, when Henry VIII ordered it repainted — probably in 1522 before a state visit from the Holy Roman Emperor Charles V, when Winchester was presented as the site of Camelot. The portrait of Arthur was given Henry's own features, blending the two kings into one Arthurian lineage. Despite its medieval rather than ancient origins, the table remains one of the most visited and most evocative Arthurian objects in Britain, a monument to the enduring power of the legend as much as to the historical Arthur himself."
     },
     {
       "name": "Wisht Hounds",

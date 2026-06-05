@@ -352,7 +352,7 @@ footer a{color:var(--ink-light)}
   <img src="green-man.png" class="hero-emblem" alt="Green Man emblem"/>
   <h1 class="hero-title"><i>&#10022;</i> Folklore Map of the British Isles <i>&#10022;</i></h1>
   <p class="hero-sub">Myths, Legends &amp; Spectral Encounters</p>
-  <p class="hero-lede">An interactive atlas of the myths, monsters, sacred sites and spectral figures that haunt the landscape of Britain and Ireland — over 425 entries, each pinned to the place where its story lives.</p>
+  <p class="hero-lede">An interactive atlas of the myths, monsters, sacred sites and spectral figures that haunt the landscape of Britain and Ireland — over <span id="heroCount">442</span> entries, each pinned to the place where its story lives.</p>
 
   <div class="search-wrap">
     <div class="search-inner">
@@ -371,7 +371,7 @@ footer a{color:var(--ink-light)}
 
 <!-- ── STATS ── -->
 <div class="stats">
-  <div class="stat"><span class="stat-num">425</span><span class="stat-label">Entries</span></div>
+  <div class="stat"><span class="stat-num" id="statCount">442</span><span class="stat-label">Entries</span></div>
   <div class="stat"><span class="stat-num">11</span><span class="stat-label">Categories</span></div>
   <div class="stat"><span class="stat-num">120+</span><span class="stat-label">Regions</span></div>
   <div class="stat"><span class="stat-num">500+</span><span class="stat-label">Years of sources</span></div>
@@ -453,7 +453,12 @@ footer a{color:var(--ink-light)}
 
   fetch('./legends.json')
     .then(r => r.json())
-    .then(data => { LEGENDS = data.legends || []; });
+    .then(data => {
+      LEGENDS = data.legends || [];
+      const n = data.total || LEGENDS.length;
+      document.getElementById('heroCount').textContent = n;
+      document.getElementById('statCount').textContent = n;
+    });
 
   const input = document.getElementById('heroSearch');
   const results = document.getElementById('heroResults');

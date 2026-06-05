@@ -83,8 +83,9 @@
     /* ── HEADER ── */
     header {
       background:
-        repeating-linear-gradient(45deg, rgba(176,144,96,0) 0, rgba(176,144,96,0.06) 2.5px, rgba(176,144,96,0.06) 4.5px, rgba(176,144,96,0) 7px, rgba(176,144,96,0) 13px),
-        repeating-linear-gradient(-45deg, rgba(176,144,96,0) 0, rgba(176,144,96,0.05) 2.5px, rgba(176,144,96,0.05) 4.5px, rgba(176,144,96,0) 7px, rgba(176,144,96,0) 12px),
+        radial-gradient(ellipse 110% 90% at 50% 130%, rgba(196,98,42,0.13) 0%, transparent 55%),
+        radial-gradient(ellipse 55% 120% at 15% 50%, rgba(176,144,96,0.07) 0%, transparent 55%),
+        radial-gradient(ellipse 55% 120% at 85% 50%, rgba(176,144,96,0.05) 0%, transparent 55%),
         linear-gradient(180deg, #1e1408 0%, var(--ink) 75%);
       border-bottom: 1px solid rgba(176,144,96,0.35);
       padding: 18px 24px 16px;
@@ -603,7 +604,11 @@
     .sidebar-toggle-btn:hover { background: rgba(255,255,255,0.14); }
     .submit-legend-btn { border-color: rgba(196,98,42,0.55); color: var(--accent-glow); }
     .submit-legend-btn:hover { background: rgba(196,98,42,0.18); border-color: var(--accent-glow); }
-    @media (max-width: 640px) { .submit-legend-btn { display: none; } }
+    .submit-btn-label { display: inline; }
+    @media (max-width: 640px) {
+      .submit-btn-label { display: none; }
+      .submit-legend-btn { padding: 4px 8px; }
+    }
 
     /* ── MOBILE ── */
     @media (max-width: 640px) {
@@ -625,7 +630,7 @@
         width: 100%;
         min-width: 0;
         display: grid;
-        grid-template-columns: auto minmax(0, 1fr) auto;
+        grid-template-columns: auto auto minmax(0, 1fr) auto;
         gap: 7px;
       }
       #modeLabel { display: none; }
@@ -664,7 +669,7 @@
   </div>
   <div class="header-controls">
     <button class="sidebar-toggle-btn" id="sidebarToggleBtn" onclick="toggleSidebar()">☰ Entries</button>
-    <button class="sidebar-toggle-btn submit-legend-btn" onclick="openSubmitLegend()">✦ Submit</button>
+    <button class="sidebar-toggle-btn submit-legend-btn" onclick="openSubmitLegend()">✦ <span class="submit-btn-label">Submit</span></button>
     <div class="search-wrap">
       <span class="search-icon">⚲</span>
       <input type="text" id="searchInput" placeholder="Search legends..." autocomplete="off" oninput="handleSearch(this.value)"/>

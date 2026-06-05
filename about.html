@@ -69,6 +69,7 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Crimson Text',
   margin-bottom:6px;
 }
 .hero-title i{color:var(--accent-warm);font-style:normal;font-size:.55em;vertical-align:middle;margin:0 10px}
+.title-text{display:inline}
 
 .hero-sub{
   font-family:'Crimson Text',serif;
@@ -339,6 +340,10 @@ footer a{color:var(--ink-light)}
   .hero{min-height:auto;padding:48px 20px 56px}
   .hero-emblem{width:120px;height:120px}
   .cat-grid,.steps{grid-template-columns:1fr 1fr}
+  .hero-title{display:flex;flex-direction:column;align-items:center;gap:4px}
+  .title-text{display:block;text-align:center;order:2}
+  .title-gem{display:none}
+  .hero-title::before{content:'✦          ✦';display:block;order:1;color:#c4622a;font-size:.55em;letter-spacing:.3em;text-align:center;font-style:normal}
 }
 @media(max-width:380px){
   .cat-grid,.steps{grid-template-columns:1fr}
@@ -350,7 +355,7 @@ footer a{color:var(--ink-light)}
 <!-- ── HERO ── -->
 <section class="hero">
   <img src="green-man.png" class="hero-emblem" alt="Green Man emblem"/>
-  <h1 class="hero-title"><i>&#10022;</i> Folklore Map of the British Isles <i>&#10022;</i></h1>
+  <h1 class="hero-title"><i class="title-gem">&#10022;</i><span class="title-text">Folklore Map of the British Isles</span><i class="title-gem">&#10022;</i></h1>
   <p class="hero-sub">Myths, Legends &amp; Spectral Encounters</p>
   <p class="hero-lede">An interactive atlas of the myths, monsters, sacred sites and spectral figures that haunt the landscape of Britain and Ireland — over <span id="heroCount">442</span> entries, each pinned to the place where its story lives.</p>
 

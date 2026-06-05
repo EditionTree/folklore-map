@@ -97,6 +97,17 @@
     }
     body.night .subtitle { color: rgba(100,140,200,0.75); }
     body.night .filter-bar { background: #141e30; border-bottom-color: #2e4870; }
+    /* Elements that use --parchment as text colour (light text on dark bg) — keep light in night mode */
+    body.night h1 { color: #c8d8f0; }
+    body.night .sidebar-toggle-btn { color: #c8d8f0; border-color: rgba(70,100,180,0.4); }
+    body.night .sidebar-toggle-btn:hover { background: rgba(70,100,180,0.15); }
+    /* Legend panel — hardcoded background */
+    body.night .legend-panel { background: rgba(20,30,50,0.97); border-color: #2e4870; }
+    body.night .legend-header { border-bottom-color: rgba(60,90,160,0.3); }
+    body.night .legend-header:hover { background: rgba(60,90,160,0.1); }
+    /* Popup summary — hardcoded colour */
+    body.night .popup-summary { color: #b0c4e0; }
+    body.night .popup-summary::first-letter { color: var(--accent-glow); }
     body.night .search-result-item { border-bottom-color: #1e2e4a; }
     body.night .map-vignette {
       background: radial-gradient(ellipse at center, transparent 55%, rgba(8,14,30,0.4) 100%);
@@ -1131,6 +1142,8 @@ function toggleNight() {
   fb.style.transition = 'background 0.6s ease, border-bottom-color 0.6s ease';
   fb.style.background = nightMode ? '#141e30' : '';
   fb.style.borderBottomColor = nightMode ? '#2e4870' : '';
+  // Persist preference
+  try { localStorage.setItem('folklore_night', nightMode ? '1' : '0'); } catch(e) {}
   document.getElementById('modeLabel').textContent = nightMode ? 'Night' : 'Day';
   markers.forEach(m => {
     m.setIcon(makeIcon(m._legendData.category, nightMode));
@@ -1286,6 +1299,8 @@ function onDataLoaded(legends) {
   const deepLink = params.get('legend');
   if (deepLink) setTimeout(() => focusLegend(deepLink), 100);
   if (params.get('submit') === '1') setTimeout(() => openSubmitLegend(), 300);
+  // Restore night mode preference
+  try { if (localStorage.getItem('folklore_night') === '1') toggleNight(); } catch(e) {}
 }
 
 function onDataError(err) {

@@ -9,3 +9,9 @@ source_snapshots/
 # Operational logs and local config — not needed for the live site
 bug_reports/
 .claude/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example

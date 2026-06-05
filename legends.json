@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-05T18:04:53.969160Z",
-  "total": 425,
+  "generated": "2026-06-05T21:48:56.616865Z",
+  "total": 437,
   "categories": {
     "beast": "Beasts",
     "ghost": "Ghosts",
@@ -585,6 +585,15 @@
       "source": "https://en.wikipedia.org/wiki/Scottish_folklore"
     },
     {
+      "name": "Brother Simon of Swineshead",
+      "lat": 52.897,
+      "lng": -0.168,
+      "category": "location",
+      "region": "Swineshead, Lincolnshire, England",
+      "summary": "A legend dating to at least the late 15th century holds that King John was poisoned at Swineshead Abbey in Lincolnshire in October 1216. According to the tale, a monk named Brother Simon, having first obtained absolution from Abbot William, put toad's venom into the king's cup of ale, then drank from it himself to allay suspicion — and both men died. The story appears in William Caxton's chronicle (c.1480) and in John Foxe's Book of Martyrs with a detailed woodcut entitled 'The Description of the Poysoning of King John, by a monk of Swinestead Abbeye in Lincolnshire'. The tale also circulates in the Lincolnshire Folk Tales tradition via Henry Winn's verse account. Historically, John is believed to have died of dysentery; the poisoning legend developed as a Protestant-era morality tale.",
+      "source": "https://www.lincolnshirelife.co.uk/heritage/king-johns-stay-at-swineshead-abbey/"
+    },
+    {
       "name": "Brown Lady of Raynham Hall",
       "lat": 52.796,
       "lng": 0.79,
@@ -1055,8 +1064,9 @@
       "lng": -1.6441,
       "category": "ghost",
       "region": "Staffordshire",
-      "summary": "A 12th-century chronicle records that two recently buried men of Burton rose from their graves and wandered the village by night, knocking on doors and spreading pestilence. The Bishop of Lincoln ordered the bodies disinterred and burned, whereupon the hauntings ceased. The account is among the earliest written descriptions of revenants in English literature.",
-      "source": "https://en.wikipedia.org/wiki/Burton_Abbey"
+      "summary": "Two men buried at Burton rose that same night, walking the village with their coffins on their shoulders and spreading pestilence — until the Bishop of Lincoln ordered the bodies exhumed and burned. Among the oldest revenant records in English, c.1140.",
+      "source": "https://en.wikipedia.org/wiki/Burton_Abbey",
+      "detail": "The account appears in the Vita Sanctae Moduennae, a Latin hagiography compiled by Geoffrey, Abbot of Burton, around 1140 — making it one of the earliest and most detailed written revenant narratives in the English historical record. According to Geoffrey's chronicle, two peasant serfs from the Burton estates fled their lord and died of sudden illness in a nearby village. The very day they were buried they rose again, and over the following nights they were seen walking through the village carrying their own coffins on their shoulders. They appeared first in human form, then as bears, then as dogs or other animals, knocking on doors and calling the occupants by name. Those who heard their names called or whose doors the dead men touched sickened and died; within days, all but one of the village's inhabitants lay ill with a raging fever.\n\nThe bishop, after deliberation, ordered the bodies exhumed. The diggers found the corpses fresh and uncorrupted despite the elapsed time — a sign consistent with medieval revenant lore, in which the undead preserved their bodies through the vital force they drained from the living. The heads were severed, the hearts cut out, and the bodies burned to ash; the pestilence immediately abated. The account was later known to the historian William of Newburgh, who in his Historia Rerum Anglicarum (c.1196) documented a series of similar revenant cases — the Buckinghamshire revenant, the Berwick revenant — as part of a systematic attempt to understand the phenomenon. Geoffrey's version is notable for two details that echo much older traditions: the shapeshifting of the dead into animal forms, which appears in Irish and Germanic folklore, and the explicit link between revenants and epidemic disease — a connection that would persist in the European vampire tradition for another seven centuries."
     },
     {
       "name": "Deirdre of the Sorrows",
@@ -1075,6 +1085,15 @@
       "region": "North Yorkshire",
       "summary": "Three great standing stones near Boroughbridge, said to have been hurled by the Devil at the town of Aldborough. He missed, which is exactly the kind of thing folklore remembers forever.",
       "source": "https://en.wikipedia.org/wiki/Devil%27s_Arrows"
+    },
+    {
+      "name": "Devil's Bit Mountain",
+      "lat": 52.867,
+      "lng": -7.935,
+      "category": "location",
+      "region": "County Tipperary, Ireland",
+      "summary": "Devil's Bit Mountain (Bearnán Éile) is a prominent hill in County Tipperary, Ireland, featuring a striking gap in its ridge. According to legend, the Devil was crossing Ireland when he bit a chunk from the mountain — breaking his teeth on the hard rock — and spat the piece southwards: that flying boulder became the Rock of Cashel, the legendary seat of the Kings of Munster. Variants of the story describe a chase involving Fionn mac Cumhaill or a confrontation with a bishop. The legend is attested in 17th-century sources and in the duchas.ie Schools' Collection (collected 1937–38). The geographical alignment between the missing chunk and the Rock of Cashel is strikingly plausible and clearly inspired the tradition.",
+      "source": "https://en.wikipedia.org/wiki/Devil%27s_Bit"
     },
     {
       "name": "Devil's Bridge",
@@ -1201,6 +1220,15 @@
       "region": "Oxfordshire",
       "summary": "A low chalk hill below the Uffington White Horse, said to be where Saint George slew the dragon. The bare chalk patch on top marks where the dragon's blood poisoned the grass.",
       "source": "https://en.wikipedia.org/wiki/Dragon_Hill,_Uffington"
+    },
+    {
+      "name": "Dragon of Deerhurst",
+      "lat": 51.978,
+      "lng": -2.154,
+      "category": "dragon",
+      "region": "Deerhurst, Gloucestershire, England",
+      "summary": "A celebrated Gloucestershire dragon legend first recorded in Sir Robert Atkyns' The Ancient and Present State of Glostershire (1712). A dragon terrorised the parish of Deerhurst near Tewkesbury, poisoning the air with its breath and devouring cattle; the king promised an estate in the parish to whoever slew it. A local labourer named John Smith succeeded by setting out a trough of milk — the dragon drank its fill, lay down in the sun with scales spread open to cool itself, and Smith drove a large axe through its neck between the scales. In the early 18th century, the Smith family still held the estate and the ancestral axe was still being passed down. Carved dragon heads survive on the Saxon church at Deerhurst, providing visual continuity for the tradition.",
+      "source": "https://www.gloucestershire.gov.uk/archives/learning-for-all/families/ugly-mugs/the-dragons-of-gloucestershire/"
     },
     {
       "name": "Dragon of Mordiford",
@@ -1858,8 +1886,9 @@
       "lng": -2.1011,
       "category": "ghost",
       "region": "Northumberland",
-      "summary": "Two carved stone heads unearthed in a Hexham garden in 1971 were said to trigger apparitions of a half-man, half-beast creature in every household that held them. Dr Anne Ross, who received them for study, woke in the night to find a werewolf-like shape descending her staircase. The heads were eventually lost to history, but the sightings continued regardless.",
-      "source": "https://en.wikipedia.org/wiki/Hexham_Heads"
+      "summary": "Two stone heads unearthed in a Hexham garden in 1971 triggered apparitions of a half-wolf figure in every home that held them — including on a folklore scholar's staircase. The heads eventually vanished; the hauntings reportedly did not.",
+      "source": "https://en.wikipedia.org/wiki/Hexham_Heads",
+      "detail": "In 1971, brothers Colin and Leslie Robson unearthed two small, crudely carved stone heads in the garden of their Hexham home — roughly 6 centimetres high, one male-looking and one female-looking, with large staring eyes and rough, archaic features. Within days, both the Robson household and the neighbouring Dodd family began experiencing disturbing phenomena: objects moved, a boy's hair was pulled in the night, and Nelly Dodd, woken by a noise, saw a half-man, half-beast figure leaving her son's room before vanishing into the street. When the heads were passed to Dr. Anne Ross — a specialist in Celtic ritual objects at the University of Southampton — she woke in the night to find a tall, dark, wolf-like figure standing in her bedroom doorway. She followed it downstairs, where it disappeared. Her daughter Berenice, arriving home from school a few days later, encountered the same figure on the staircase and watched it vault the banisters before vanishing.\n\nThe heads passed through several owners and eventually went missing entirely, but the legend they generated became permanently entangled with Northumberland's older supernatural geography. Researchers pointed to the 1904 Hexham Wolf affair — documented sightings of a large wolf-like animal across the same area decades before — as evidence of a pre-existing local tradition into which the heads had tapped. The archaeological origin of the heads was never settled. Some experts considered them genuine pre-Roman Celtic cult objects, a type well-attested in northern England; others concluded they were modern pieces, possibly carved in the 1950s by a former resident. The question remains open, making the Hexham Heads unusual even within paranormal folklore: an object-legend in which the physical object is both the cause of the haunting and the one thing that has been completely lost."
     },
     {
       "name": "Hill of Tara",
@@ -1988,6 +2017,15 @@
       "source": "https://en.wikipedia.org/wiki/Kelpie"
     },
     {
+      "name": "Kelpie of Loch Garve",
+      "lat": 57.567,
+      "lng": -4.742,
+      "category": "water",
+      "region": "Ross-shire, Highland Scotland",
+      "summary": "A distinctive kelpie legend from Loch Garve in Ross-shire, Highland Scotland, notable for its unusually compassionate resolution. Unlike most kelpie tales, this story describes a water horse that falls genuinely in love with a woman he has abducted, taking her to his underwater realm at the loch's bottom. Realising she missed warmth and firelight, the kelpie transformed into a horse and sought out a master stonemason, agreeing to spare the mason's life in exchange for building an underwater chimney and fireplace. The pact was honoured — and to this day a section of Loch Garve never freezes over, attributed to the heat from the kelpie's chimney below. The legend is one of the few in the Scottish water-horse tradition with a narrative of mutual obligation rather than malice.",
+      "source": "https://garve.org/the-loch-garve-kelpie"
+    },
+    {
       "name": "Kilkenny Witch Trials",
       "lat": 52.654,
       "lng": -7.252,
@@ -2049,6 +2087,15 @@
       "region": "Orkney",
       "summary": "A vast many-armed creature rising from the deep. Norse sagas describe it as large enough to be mistaken for an island — only revealing itself when it submerged beneath the waves.",
       "source": "https://en.wikipedia.org/wiki/Kraken"
+    },
+    {
+      "name": "La Gran'mère du Chimquière",
+      "lat": 49.447,
+      "lng": -2.539,
+      "category": "deity",
+      "region": "St Martin's Parish, Guernsey",
+      "summary": "La Gran'mère du Chimquière ('Grandmother of the Cemetery') is a Neolithic granite statue menhir standing at the gate of St Martin's Parish Church in Guernsey, carved approximately 2500–1800 BCE and reworked during the Roman period to add a headdress and cape. Venerated as a mother-goddess figure for millennia, she received votive offerings of coins, flowers, and food from locals into the 19th century. In 1860 a churchwarden ordered her destruction as tantamount to idolatry; she was broken in two but outraged parishioners demanded she be cemented back together and returned to her gateside position. Newly-wed couples still leave flowers at her feet for luck.",
+      "source": "https://en.wikipedia.org/wiki/La_Gran'_M%C3%A8re_de_Chimquiere"
     },
     {
       "name": "Labbacallee wedge tomb",
@@ -2305,6 +2352,15 @@
       "source": "https://en.wikipedia.org/wiki/Maeshowe"
     },
     {
+      "name": "Manannán mac Lir",
+      "lat": 54.121,
+      "lng": -4.588,
+      "category": "deity",
+      "region": "Isle of Man",
+      "summary": "Manannán mac Lir is the sea god, ruler of the Otherworld, and first king of the Isle of Man in Gaelic mythology — an island named in his honour. He protected the island by concealing it in mist from invaders and is said to have moved across its hills as three legs joined at the thigh, spinning like a wheel — the image behind the Isle of Man's triskelion symbol. His sacred hill is South Barrule, where he accepted annual tribute from the Manx people. Manx National Heritage commemorates Laa Columb Killey as his associated festival. He wields the sword Fragarach ('The Answerer'), which could cut through any armour, and owns a self-navigating boat and a cloak of invisibility.",
+      "source": "https://en.wikipedia.org/wiki/Manann%C3%A1n_mac_Lir"
+    },
+    {
       "name": "Maponos",
       "lat": 54.99,
       "lng": -3.18,
@@ -2356,8 +2412,9 @@
       "lng": 0.8931,
       "category": "witch",
       "region": "Essex",
-      "summary": "Self-styled Witch Finder General, Matthew Hopkins conducted a brutal campaign across East Anglia between 1644 and 1647, sending hundreds to trial and over a hundred to the gallows. He claimed authority from Parliament and charged by the accused, growing rich on fear. His own death was swiftly followed by rumours that he had been tried by his own methods and hanged.",
-      "source": "https://en.wikipedia.org/wiki/Matthew_Hopkins"
+      "summary": "Self-styled Witchfinder General Matthew Hopkins sent more people to the gallows for witchcraft in three years than all English witch-hunters of the previous century combined — dying young of illness, though legend insists he was hanged by his own test.",
+      "source": "https://en.wikipedia.org/wiki/Matthew_Hopkins",
+      "detail": "Matthew Hopkins began his career as a witch-hunter in March 1644 from his base in Manningtree, Essex, and rapidly expanded his reach across Suffolk, Norfolk, Cambridgeshire, and Huntingdonshire. He held no formal parliamentary appointment — the title 'Witchfinder General' was entirely his own invention — but he exploited the chaos of the English Civil War, when normal legal safeguards had collapsed and local magistrates welcomed any authority willing to act. Working alongside his associate John Stearne and a team of female 'searchers', Hopkins employed three principal methods: sleep deprivation to extract confessions, bodily pricking with a needle to find the Devil's mark (a spot of insensible flesh), and the notorious swimming test, in which the bound suspect was dropped into water — floating indicated guilt, sinking innocence. Between 1644 and 1647 he was responsible for the deaths of perhaps 230 people, more than all other English witch trials of the previous century and a half combined. He charged each town a fee for his services, growing genuinely wealthy from the trade in accusation and fear.\n\nHis death in August 1647, almost certainly from tuberculosis, came swiftly after his last documented expedition. Almost immediately a counter-legend formed: the 19th-century Essex folklorist William Andrews described a tradition in which Hopkins had been seized by villagers, forced to undergo his own swimming test, floated — proving his guilt — and then hanged. The story is almost certainly apocryphal, but its persistence reveals how deeply he had made himself hated. Hopkins has since become one of the defining bogeymen of English history, his mythology amplified by the 1968 horror film Witchfinder General (starring Vincent Price) and by the continuing dark tourism of his home county. For historians, he remains a case study in how legal and moral authority can collapse under wartime stress — and how quickly individuals can monetise that collapse."
     },
     {
       "name": "Meehambee Dolmen",
@@ -2607,6 +2664,15 @@
       "source": "https://en.wikipedia.org/wiki/Nine_Maidens_stone_row"
     },
     {
+      "name": "Njuggle",
+      "lat": 60.254,
+      "lng": -1.277,
+      "category": "water",
+      "region": "Shetland, Scotland",
+      "summary": "The njuggle (also nuggle, neugle, or shoopiltee) is a shapeshifting water spirit unique to Shetland folklore, most often appearing as a grey horse to lure riders into lochs and rivers. Unlike the malicious Scottish kelpie or the terrifying each-uisge, the Shetland njuggle is described as mischievous rather than murderous — more prone to pranks than killings — though it can still drown the unwary. A distinctive identifying feature is its curling, wheel-like tail, and its habit of haunting watermills. Etymologically, the name derives from Old Norse nykr (water demon), reflecting Shetland's deep Norse heritage. One well-known tale describes a blacksmith who must outwit the njuggle to reclaim his horse.",
+      "source": "https://en.wikipedia.org/wiki/Nuggle"
+    },
+    {
       "name": "Nodens",
       "lat": 51.708,
       "lng": -2.53,
@@ -2691,6 +2757,15 @@
       "summary": "In 1061 the Lady Richeldis of Walsingham was commanded in a vision to build a replica of the Holy House of Nazareth in Norfolk. The shrine became England's most important pilgrimage site until Henry VIII destroyed it — and it remains a place of active pilgrimage today.",
       "source": "https://en.wikipedia.org/wiki/Our_Lady_of_Walsingham",
       "detail": "The Walsingham shrine traces its origin to 1061, when a noblewoman called Richeldis de Faverches is said to have been transported in spirit to Nazareth and shown the house of the Annunciation. Commanded to build a replica in Norfolk, she chose the site by following a miraculous dew path. The resulting Holy House became the centre of one of the most significant Marian shrines in Europe.\n\nThroughout the medieval period, Walsingham drew pilgrims from across Britain and the continent. Henry III, Edward I, Edward II, Edward III, Henry VII, and Henry VIII all visited on pilgrimage — Henry VIII on foot, barefoot for the last stage, before his break with Rome. Erasmus came in 1512 and described the shrine in detail. The town's single main street was lined with stalls selling badges, ampullae of holy water, and the accumulated commerce of five centuries of pilgrimage.\n\nAt the Dissolution, Henry VIII ordered the destruction of the shrine. The statue of Our Lady was taken to London and burned. The Milky Way — which in England was sometimes called the Walsingham Way, because pilgrims navigated by it at night — lost its destination. The shrine was rebuilt in the twentieth century, in both Anglican and Roman Catholic forms, and Walsingham today remains one of the most active pilgrimage sites in England, the Milky Way still pointing north toward Norfolk."
+    },
+    {
+      "name": "Oweynagat",
+      "lat": 53.797,
+      "lng": -8.311,
+      "category": "location",
+      "region": "Rathcroghan, County Roscommon, Ireland",
+      "summary": "Oweynagat (Uaimh na gCat, 'Cave of the Cats') is a souterrain attached to a natural limestone cave within the Rathcroghan royal site in County Roscommon, Connacht. Described in the 12th-century Book of Leinster as 'dorus ifrinn na hÉrenn' — Ireland's Gateway to Hell — it is the mythological lair of the Mórrígan and the site from which monstrous creatures issued each year at Samhain: a three-headed monster, red copper birds whose breath withered crops, and pigs that decayed whatever they touched. Medieval texts (Dindshenchas, Adventures of Nera) place the origin of the Cattle Raid of Cooley here. The cave is distinct from the Rathcroghan mound itself and has its own extensive textual tradition.",
+      "source": "https://www.tuatha.ie/oweynagat-cave/"
     },
     {
       "name": "Owlman of Mawnan",
@@ -3004,6 +3079,15 @@
       "detail": "Bettiscombe Manor in the Marshwood Vale has kept its skull for centuries, and the tradition surrounding it is one of the most persistent in English folklore. The skull — small, possibly female — screams if carried from the house, and any attempt to bury it is said to bring ruin: crops fail, cattle sicken, and the family knows no peace until it is returned to its shelf.\n\nThe most popular origin story dates the skull to an enslaved man brought to Dorset from the Caribbean by Azariah Pinney in the late seventeenth century, who is said to have sworn before death that his bones would never rest until they were returned to his homeland. When the body was buried in the churchyard strange disturbances began, and the skull was disinterred and brought indoors — where, contrary to the curse, it has apparently been content ever since.\n\nArchaeologists who examined the skull in the twentieth century determined it was far older than the Pinney legend: a pre-Roman Iron Age skull, probably of a young woman. The legend attached to it seems to be a later accretion. Whatever its origin, it sits in the manor still."
     },
     {
+      "name": "Scáthach",
+      "lat": 57.136,
+      "lng": -5.976,
+      "category": "hero",
+      "region": "Sleat Peninsula, Isle of Skye, Scotland",
+      "summary": "Scáthach ('The Shadowy One') is a legendary warrior woman and martial-arts teacher of the Ulster Cycle whose fortress, Dún Scáith (Castle of Shadows), stood on the Isle of Skye. In the mythology, Cú Chulainn travels to her island stronghold — penetrating its formidable defences — and she trains him and his companion Ferdiad in advanced combat arts, including the use of the deadly barbed spear Gáe Bulg which she bestows upon him. She is described as semi-divine, the equal of any male warrior, and her school accepted only those already exceptionally brave and skilled. The ruins of Dunscaith Castle at Tokavaig on the Sleat Peninsula, Skye, are identified with her legendary stronghold.",
+      "source": "https://en.wikipedia.org/wiki/Sc%C3%A1thach"
+    },
+    {
       "name": "Sea Mither",
       "lat": 58.984,
       "lng": -2.959,
@@ -3299,6 +3383,15 @@
       "detail": "The Tarbh Uisge — the water bull — inhabits the same lochs and coastal waters as the Each-Uisge (the water horse), but the two creatures are temperamentally very different. Where the Each-Uisge is murderous, the Tarbh Uisge is largely indifferent to human beings. Its interest is in the cattle.\n\nIt was said to emerge from lochs on dark nights to mate with domestic cattle, and the calves born of these unions were immediately recognisable: larger than normal, oddly tempered, and with their ears split or notched in a way that marked their supernatural parentage. These calves were considered lucky — or at least, they were considered too dangerous to provoke. A herd containing a water-bull calf was sometimes thought to be under the loch's protection.\n\nJ. F. Campbell documented the Tarbh Uisge extensively in Popular Tales of the West Highlands, and it appears in Orcadian and Shetlandic tradition alongside its Hebridean accounts. Unlike the Each-Uisge, no ritual method of avoiding it was thought necessary — it had no interest in taking human life."
     },
     {
+      "name": "Tehi Tegi",
+      "lat": 54.152,
+      "lng": -4.481,
+      "category": "witch",
+      "region": "Isle of Man",
+      "summary": "In Manx folklore, Tehi Tegi ('Fair Chooser') was a supernatural enchantress who appeared on the Isle of Man as the most beautiful woman ever seen. Men from all corners of the island became enslaved to her beauty, neglecting homes and work until the island fell into ruin. She eventually led her followers to a river; when they waded after her, the spell broke and the waters swallowed them. In Sophia Morrison's Manx Fairy Tales (1911) she transformed afterwards into a bat; in other versions she was banished from the island by the sea-god Manannán and condemned to return each year in the form of a wren — linking her directly to the ancient Manx tradition of the Hunt the Wren ceremony on St Stephen's Day.",
+      "source": "https://asmanxasthehills.com/tehi-tegi-the-enchantress/"
+    },
+    {
       "name": "Teran",
       "lat": 58.984,
       "lng": -2.959,
@@ -3581,6 +3674,15 @@
       "source": "https://en.wikipedia.org/wiki/Twelve_Apostles%2C_West_Yorkshire"
     },
     {
+      "name": "Twm Siôn Cati",
+      "lat": 52.125,
+      "lng": -3.699,
+      "category": "hero",
+      "region": "Ceredigion / Carmarthenshire, Wales",
+      "summary": "Twm Siôn Cati (Thomas Jones, c.1532–1609) was a real Welsh gentleman, bard, and genealogist whose outlaw exploits made him the archetypal Welsh folk hero — dubbed 'the Welsh Robin Hood' and 'the Welsh Rob Roy'. Legends of his tricks proliferated: he outwitted merchants, lawmen, and criminals alike with cunning disguises and wordplay. His legendary hideout was a cave on Dinas Hill near Rhandirmwyn, Carmarthenshire, overlooking the confluence of the rivers Towy and Pysgotwr, and the site remains a pilgrimage spot. He eventually received a royal pardon, likely from Elizabeth I, married a wealthy widow, and became a justice of the peace — the classic folk-hero arc of the outlaw redeemed.",
+      "source": "https://en.wikipedia.org/wiki/Twm_Si%C3%B4n_Cati"
+    },
+    {
       "name": "Twrch Trwyth",
       "lat": 51.867,
       "lng": -5.277,
@@ -3749,8 +3851,9 @@
       "lng": -1.8764,
       "category": "location",
       "region": "Wiltshire",
-      "summary": "Caught by excise men moving contraband brandy, a band of Wiltshire smugglers claimed to be raking the pond for a great round cheese — the moon's reflection. The revenue men rode on laughing, believing them simple country fools, while the smugglers retrieved their hidden casks from the water. Wiltshire men have been called Moonrakers as a badge of cunning ever since.",
-      "source": "https://en.wikipedia.org/wiki/Moonraker_(smuggler)"
+      "summary": "Smugglers caught raking a moonlit pond told excise men they were fishing for a round cheese — the moon's reflection. The officers laughed and rode on; Wiltshire has worn 'Moonraker' as a badge of cunning ever since.",
+      "source": "https://en.wikipedia.org/wiki/Moonraker_(smuggler)",
+      "detail": "The Moonrakers legend belongs to the 18th-century English smuggling trade, when Wiltshire lay directly on the inland route from south-coast ports to Midlands consumers. Contraband French brandy and Dutch gin moved through the county in hidden caches, buried in ponds or haystacks to evade the revenue men patrolling the roads. The pivotal incident — men raking a pond by night, claiming to be fishing for a round cheese floating in the water — was first recorded in print by Francis Grose in his Provincial Glossary (1787). Grose noted it as an existing folk tale, suggesting the story circulated well before that date. The Crammer, a pond at Southbroom in Devizes, has the strongest local claim to being the original scene, though Bishops Cannings and several other Wiltshire villages dispute that honour.\n\nWhat makes the story culturally distinctive is that the joke is entirely on the excise men. The Moonrakers are celebrated not as romantic outlaws — though that framing applies — but as exemplars of a specifically English rural cunning: winning through apparent stupidity, letting the enemy's contempt do the work. The Dutch and Flemish wool merchants who maintained permanent headquarters in Wiltshire towns brought their taste for Hollands gin with them, and the trade that developed to supply it without paying duty gave the region both a strong smuggling tradition and an economic logic behind the subterfuge. Wiltshire men adopted 'Moonraker' as a badge of pride rather than mockery, and it has remained the county's folk nickname ever since."
     },
     {
       "name": "Wisht Hounds",
@@ -3769,6 +3872,15 @@
       "region": "Dartmoor, Devon",
       "summary": "A Dartmoor folk tale tells of a witch able to take the shape of a large hare. The transformed witch is pursued after stealing food, but her uncanny speed and shifting form mark the story as part of the moor's witchcraft tradition.",
       "source": "https://oldechronicles.org.uk/the-witch-hare-of-dartmoor/"
+    },
+    {
+      "name": "Witches of Belvoir",
+      "lat": 52.879,
+      "lng": -0.807,
+      "category": "witch",
+      "region": "Belvoir, Leicestershire, England",
+      "summary": "The Witches of Belvoir were Joan Flower and her daughters Margaret and Philippa, from Bottesford, accused of causing the deaths of two young sons of Francis Manners, 6th Earl of Rutland, at Belvoir Castle. The Flower women had worked for the earl and been dismissed; they were accused of working a fatal curse using stolen grave-soil and a stolen glove. Joan Flower died in Lincoln gaol in 1618 — allegedly choking on bread-and-butter after calling down divine punishment on herself if guilty. Margaret and Philippa were hanged in 1619. A pamphlet published that year spread the story widely; the dead boys are commemorated by effigies in St Mary's Church, Bottesford, which bear an inscription referencing 'wicked practise and sorcerye'.",
+      "source": "https://en.wikipedia.org/wiki/Witches_of_Belvoir"
     },
     {
       "name": "Witches' Well",

@@ -42,6 +42,8 @@
   }
   </script>
   <link rel="icon" type="image/png" href="favicon.png"/>
+  <!-- Cloudflare Turnstile (user submissions) -->
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"/>
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"/>
@@ -697,6 +699,7 @@
   <div class="footer-brand">Folklore Map of the British Isles<span>✦</span>© EditionTree</div>
   <div class="footer-tiles">Map tiles © <a href="https://stadiamaps.com/">Stadia Maps</a> / <a href="https://stamen.com">Stamen Design</a> · Data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors</div>
   <a class="bug-report-btn" href="privacy.html" style="text-decoration:none">Privacy</a>
+  <button class="bug-report-btn" onclick="openSubmitLegend()" style="border-color:rgba(176,144,96,0.45);color:rgba(176,144,96,0.75)">✦ Submit a legend</button>
   <button class="bug-report-btn" onclick="openBugReport()">⚑ Report a bug</button>
 </footer>
 
@@ -717,6 +720,35 @@
     <div class="bug-modal-footer">
       <span class="bug-note">Your browser and device info are included automatically. See our <a href="privacy.html" target="_blank" rel="noopener noreferrer" style="color:var(--accent)">Privacy Notice</a>.</span>
       <button class="bug-submit-btn" onclick="submitBugReport()">Send Report</button>
+    </div>
+  </div>
+</div>
+
+<!-- Submit legend modal -->
+<div id="submitModal" class="bug-modal-overlay" style="display:none" onclick="if(event.target===this)closeSubmitLegend()">
+  <div class="bug-modal" style="max-width:460px">
+    <div class="bug-modal-header">
+      <span class="bug-modal-title">Submit a Legend</span>
+      <button class="bug-modal-close" onclick="closeSubmitLegend()">✕</button>
+    </div>
+    <div class="bug-modal-body">
+      <p style="font-size:13px;color:var(--ink-light);font-style:italic;margin-bottom:14px">
+        Know a legend, creature, or sacred site we've missed? Share a lead and our research team will investigate and verify it before adding it to the map.
+      </p>
+      <label class="bug-label">Legend or creature name <span class="bug-required">*</span></label>
+      <input id="submitName" class="bug-textarea" type="text" placeholder="e.g. The Shropshire Skriker" maxlength="100" style="resize:none;height:auto;padding:8px 10px"/>
+      <label class="bug-label">Location or region <span class="bug-required">*</span></label>
+      <input id="submitRegion" class="bug-textarea" type="text" placeholder="e.g. Near Clun, Shropshire" maxlength="200" style="resize:none;height:auto;padding:8px 10px"/>
+      <label class="bug-label">What is the legend? <span class="bug-required">*</span></label>
+      <textarea id="submitDescription" class="bug-textarea" placeholder="Briefly describe the legend, creature, or tradition…" rows="3" maxlength="500"></textarea>
+      <label class="bug-label">Source URL <span class="bug-required">*</span></label>
+      <input id="submitSource" class="bug-textarea" type="url" placeholder="https://en.wikipedia.org/wiki/…" maxlength="500" style="resize:none;height:auto;padding:8px 10px"/>
+      <div class="cf-turnstile" data-sitekey="0x4AAAAAADfezA3JRgZ9GJlD" data-theme="light" style="margin-top:12px"></div>
+      <div id="submitStatus" class="bug-status" style="display:none"></div>
+    </div>
+    <div class="bug-modal-footer">
+      <span class="bug-note">Submissions are researched and verified before publication. See our <a href="privacy.html" target="_blank" rel="noopener noreferrer" style="color:var(--accent)">Privacy Notice</a>.</span>
+      <button class="bug-submit-btn" onclick="submitLegend()">Submit</button>
     </div>
   </div>
 </div>
@@ -1302,8 +1334,93 @@ async function submitBugReport() {
 
 // Close modal on Escape key
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') closeBugReport();
+  if (e.key === 'Escape') { closeBugReport(); closeSubmitLegend(); }
 });
+
+// ── SUBMIT A LEGEND ─────────────────────────────────────────────────────
+const SUBMIT_ENDPOINT = 'https://canjzkpvjwvkbjcduaaj.supabase.co/functions/v1/submit-legend';
+
+function openSubmitLegend() {
+  ['submitName','submitRegion','submitDescription','submitSource'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.value = '';
+  });
+  const st = document.getElementById('submitStatus');
+  st.style.display = 'none'; st.className = 'bug-status';
+  document.querySelector('#submitModal .bug-submit-btn').disabled = false;
+  document.querySelector('#submitModal .bug-submit-btn').textContent = 'Submit';
+  if (window.turnstile) turnstile.reset();
+  document.getElementById('submitModal').style.display = 'flex';
+}
+
+function closeSubmitLegend() {
+  document.getElementById('submitModal').style.display = 'none';
+}
+
+async function submitLegend() {
+  const name   = document.getElementById('submitName').value.trim();
+  const region = document.getElementById('submitRegion').value.trim();
+  const desc   = document.getElementById('submitDescription').value.trim();
+  const source = document.getElementById('submitSource').value.trim();
+  const statusEl = document.getElementById('submitStatus');
+  const btn      = document.querySelector('#submitModal .bug-submit-btn');
+
+  if (!name || !region || !desc || !source) {
+    statusEl.textContent = 'Please fill in all required fields.';
+    statusEl.className = 'bug-status error';
+    statusEl.style.display = 'block';
+    return;
+  }
+
+  // Basic URL check client-side
+  try { new URL(source); } catch {
+    statusEl.textContent = 'Please enter a valid source URL (must start with https://).';
+    statusEl.className = 'bug-status error';
+    statusEl.style.display = 'block';
+    return;
+  }
+
+  // Get Turnstile token
+  const tokenEl = document.querySelector('[name="cf-turnstile-response"]');
+  const token   = tokenEl ? tokenEl.value : '';
+  if (!token) {
+    statusEl.textContent = 'Please wait for the security check to complete.';
+    statusEl.className = 'bug-status error';
+    statusEl.style.display = 'block';
+    return;
+  }
+
+  btn.disabled = true;
+  btn.textContent = 'Submitting…';
+
+  try {
+    const res = await fetch(SUBMIT_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        legend_name: name, region, description: desc,
+        source_url: source, cf_turnstile_response: token,
+      }),
+    });
+    const data = await res.json();
+    if (res.ok && data.success) {
+      statusEl.textContent = 'Thank you — your submission has been received and will be researched.';
+      statusEl.className = 'bug-status success';
+      statusEl.style.display = 'block';
+      btn.textContent = 'Submitted';
+      setTimeout(closeSubmitLegend, 2500);
+    } else {
+      throw new Error(data.error || 'Unexpected error');
+    }
+  } catch (err) {
+    statusEl.textContent = err.message || 'Something went wrong — please try again.';
+    statusEl.className = 'bug-status error';
+    statusEl.style.display = 'block';
+    btn.disabled = false;
+    btn.textContent = 'Submit';
+    if (window.turnstile) turnstile.reset();
+  }
+}
 </script>
 </body>
 </html>

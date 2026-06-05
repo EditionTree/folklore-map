@@ -340,9 +340,11 @@ footer a{color:var(--ink-light)}
   .hero{min-height:auto;padding:48px 20px 56px}
   .hero-emblem{width:120px;height:120px}
   .cat-grid,.steps{grid-template-columns:1fr 1fr}
-  .hero-title{display:flex;flex-wrap:wrap;justify-content:center;align-items:baseline;gap:0 8px}
-  .title-text{text-align:center}
-  .title-gem{flex-shrink:0}
+  .hero-title{position:relative;text-align:center;padding:0 26px}
+  .title-gem{position:absolute;top:.1em;font-size:.55em}
+  .title-gem:first-child{left:0}
+  .title-gem:last-child{right:0}
+  .title-text{display:inline}
 }
 @media(max-width:380px){
   .cat-grid,.steps{grid-template-columns:1fr}

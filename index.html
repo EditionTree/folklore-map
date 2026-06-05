@@ -601,6 +601,9 @@
     .sidebar-bookmark { flex-shrink: 0; font-size: 17px; margin-top: 1px; }
     .sidebar-toggle-btn { background: rgba(255,255,255,0.08); border: 1px solid var(--border); border-radius: 4px; color: var(--parchment); font-family: var(--font-body); font-size: 12px; padding: 4px 10px; cursor: pointer; white-space: nowrap; }
     .sidebar-toggle-btn:hover { background: rgba(255,255,255,0.14); }
+    .submit-legend-btn { border-color: rgba(196,98,42,0.55); color: var(--accent-glow); }
+    .submit-legend-btn:hover { background: rgba(196,98,42,0.18); border-color: var(--accent-glow); }
+    @media (max-width: 640px) { .submit-legend-btn { display: none; } }
 
     /* ── MOBILE ── */
     @media (max-width: 640px) {
@@ -661,6 +664,7 @@
   </div>
   <div class="header-controls">
     <button class="sidebar-toggle-btn" id="sidebarToggleBtn" onclick="toggleSidebar()">☰ Entries</button>
+    <button class="sidebar-toggle-btn submit-legend-btn" onclick="openSubmitLegend()">✦ Submit</button>
     <div class="search-wrap">
       <span class="search-icon">⚲</span>
       <input type="text" id="searchInput" placeholder="Search legends..." autocomplete="off" oninput="handleSearch(this.value)"/>
@@ -699,7 +703,6 @@
   <div class="footer-brand">Folklore Map of the British Isles<span>✦</span>© EditionTree</div>
   <div class="footer-tiles">Map tiles © <a href="https://stadiamaps.com/">Stadia Maps</a> / <a href="https://stamen.com">Stamen Design</a> · Data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors</div>
   <a class="bug-report-btn" href="privacy.html" style="text-decoration:none">Privacy</a>
-  <button class="bug-report-btn" onclick="openSubmitLegend()" style="border-color:rgba(176,144,96,0.45);color:rgba(176,144,96,0.75)">✦ Submit a legend</button>
   <button class="bug-report-btn" onclick="openBugReport()">⚑ Report a bug</button>
 </footer>
 

@@ -274,11 +274,6 @@
     .filter-random:hover { background: var(--accent); color: var(--parchment); }
 
     /* ── MAP CONTAINER ── */
-    .map-wrap {
-      flex: 1;
-      position: relative;
-      min-height: 500px;
-    }
     #map {
       position: absolute; inset: 0;
     }
@@ -439,7 +434,7 @@
       margin-bottom: 5px;
     }
     .legend-item:last-child { margin-bottom: 0; }
-    .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+    .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; display: flex; align-items: center; }
 
     /* ── FOOTER ── */
     footer {
@@ -572,8 +567,6 @@
     }
     .filter-icon { display: flex; align-items: center; margin-right: 3px; opacity: 0.75; }
     .filter-btn.active .filter-icon { opacity: 1; filter: brightness(10); }
-    .legend-dot { display: flex; align-items: center; }
-
     /* ── LAYOUT ── */
     body { overflow: hidden; height: 100vh; height: 100dvh; }
     .content-area { flex: 1; display: flex; overflow: hidden; position: relative; }
@@ -722,7 +715,7 @@
       <div id="bugStatus" class="bug-status" style="display:none"></div>
     </div>
     <div class="bug-modal-footer">
-      <span class="bug-note">Your browser and device info are included automatically. See our <a href="privacy.html" target="_blank" style="color:var(--accent)">Privacy Notice</a>.</span>
+      <span class="bug-note">Your browser and device info are included automatically. See our <a href="privacy.html" target="_blank" rel="noopener noreferrer" style="color:var(--accent)">Privacy Notice</a>.</span>
       <button class="bug-submit-btn" onclick="submitBugReport()">Send Report</button>
     </div>
   </div>
@@ -890,7 +883,7 @@ function buildPopup(leg) {
     <hr class="popup-divider"/>
     <p class="popup-summary">${escapeHtml(leg.summary)}</p>
     <div class="popup-footer">
-      <a class="popup-source" href="${escapeHtml(safeSourceUrl(leg.source))}" target="_blank" rel="noopener">Read More</a>
+      <a class="popup-source" href="${escapeHtml(safeSourceUrl(leg.source))}" target="_blank" rel="noopener noreferrer">Read More</a>
       <a class="popup-fullpage" href="legends/${legendSlug(leg.name)}.html">Full Page</a>
       <button class="popup-copylink" data-legend="${encoded}">Copy</button>
     </div>
@@ -1176,9 +1169,9 @@ function highlightSidebarItem(name) {
 }
 
 // ── DATA SOURCE ───────────────────────────────────────────────────────────
-// Set SUPABASE_URL and SUPABASE_ANON_KEY to fetch from Supabase.
-// Leave empty to use legends.json. Supabase failures also fall back to local JSON.
-// The anon key is safe to put here — it's read-only by design.
+// Supabase is the primary data source; legends.json is the fallback.
+// The anon key is intentionally public — it is scoped to SELECT on the legends
+// table and INSERT on bug_reports only. Row-level security enforces this.
 const SUPABASE_URL      = 'https://canjzkpvjwvkbjcduaaj.supabase.co';
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhbmp6a3B2and2a2JqY2R1YWFqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODAyMDkxODIsImV4cCI6MjA5NTc4NTE4Mn0.7RJu-aV_WYHgbvV732FMoCPNH_sXeLSFg2CQTaYi4kI';
 

@@ -11,7 +11,7 @@ Run after legends.json changes:  python generate_pages.py
 """
 import json, io, os, re, unicodedata, html, urllib.parse, datetime
 
-BASE = "https://editiontree.github.io/folklore-map"
+BASE = "https://fmotbi.pages.dev"
 OUT_DIR = "legends"
 
 

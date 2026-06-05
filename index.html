@@ -340,10 +340,9 @@ footer a{color:var(--ink-light)}
   .hero{min-height:auto;padding:48px 20px 56px}
   .hero-emblem{width:120px;height:120px}
   .cat-grid,.steps{grid-template-columns:1fr 1fr}
-  .hero-title{display:flex;flex-direction:column;align-items:center;gap:4px}
-  .title-text{display:block;text-align:center;order:2}
-  .title-gem{display:none}
-  .hero-title::before{content:'✦          ✦';display:block;order:1;color:#c4622a;font-size:.55em;letter-spacing:.3em;text-align:center;font-style:normal}
+  .hero-title{display:flex;flex-wrap:wrap;justify-content:center;align-items:baseline;gap:0 8px}
+  .title-text{text-align:center}
+  .title-gem{flex-shrink:0}
 }
 @media(max-width:380px){
   .cat-grid,.steps{grid-template-columns:1fr}
@@ -443,7 +442,7 @@ footer a{color:var(--ink-light)}
     <h2>Know a legend we've missed?</h2>
     <p>The islands hold far more than any one map can hold, and local stories are easily lost. Share a lead and we'll research and verify it before it joins the map.</p>
     <div class="bottom-cta-btns">
-      <a class="btn btn-primary" href="./map.html#submit">Submit a legend</a>
+      <a class="btn btn-primary" href="./map.html?submit=1">Submit a legend</a>
       <a class="btn btn-secondary" href="./map.html">Back to the map</a>
     </div>
   </div>

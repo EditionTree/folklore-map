@@ -5,7 +5,7 @@ plus an A-Z index page and a full sitemap.xml.
 
 These pages are served by GitHub Pages independently of the main map app.
 A visitor only ever loads one of them at a time (arriving from search or a
-shared link); the interactive map (index.html) is unaffected.
+shared link); the interactive map (map.html) is unaffected.
 
 Run after legends.json changes:  python generate_pages.py
 """
@@ -117,7 +117,7 @@ footer{{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}}
 def load_category_meta():
     """Extract category -> {colour, iconPath} from index.html (single source of truth)."""
     try:
-        text = io.open("index.html", encoding="utf-8").read()
+        text = io.open("map.html", encoding="utf-8").read()
     except Exception:
         return {}
     meta = {}
@@ -160,7 +160,7 @@ def build():
             for i, p in enumerate(paras)
         ) or '<p class="summary"></p>'
         catname = cats.get(leg.get("category", ""), leg.get("category", "Legend"))
-        maplink = f"{BASE}/?legend=" + urllib.parse.quote(name)
+        maplink = f"{BASE}/map.html?legend=" + urllib.parse.quote(name)
         src = leg.get("source", "")
         jsonld = json.dumps({
             "@context": "https://schema.org",

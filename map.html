@@ -1234,8 +1234,10 @@ function onDataLoaded(legends) {
     history.replaceState(null, '', location.pathname);
   });
 
-  const deepLink = new URLSearchParams(location.search).get('legend');
+  const params = new URLSearchParams(location.search);
+  const deepLink = params.get('legend');
   if (deepLink) setTimeout(() => focusLegend(deepLink), 100);
+  if (params.get('submit') === '1') setTimeout(() => openSubmitLegend(), 300);
 }
 
 function onDataError(err) {

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-05T17:03:25.906123Z",
+  "generated": "2026-06-05T17:11:50.482243Z",
   "total": 425,
   "categories": {
     "beast": "Beasts",
@@ -120,8 +120,9 @@
       "lng": -1.403,
       "category": "giant",
       "region": "Southampton, Hampshire, England",
-      "summary": "Ascapart is the giant of Hampshire legend, famous as the adversary of the medieval hero Bevis of Hampton. Thirty feet tall, he wielded a club made from a whole tree and challenged Bevis to single combat; when his great swing stuck in soft ground, Bevis took the advantage and defeated him. Rather than killing him, Bevis made Ascapart his squire and the giant served him loyally — until he later betrayed Bevis and stole his wife Josiane, meeting his end at the hands of Bevis's allies. Medieval paintings of both Ascapart and Bevis survive in the Southampton Bargate Monument Gallery, and an effigy of Ascapart once stood at the Bargate itself.",
-      "source": "https://en.wikipedia.org/wiki/Ascapart"
+      "summary": "A thirty-foot giant encountered by the knight Bevis of Hampton on the coast of Southampton Water — first his enemy, then his devoted servant, and the most vivid character in the whole Bevis romance. His name and memory survive in Southampton's Bargate and in local heraldry.",
+      "source": "https://en.wikipedia.org/wiki/Ascapart",
+      "detail": "Ascapart enters the Bevis romance as an adversary: a giant standing thirty feet tall, with a face a foot wide and a foot between his eyes, employed as guard to the Saracen king. He is the kind of figure who could carry Bevis, his horse Arundel, and his wife Josian all under one arm and stride away with them, which he eventually does.\n\nBut the most interesting thing about Ascapart is what comes next. After Bevis defeats him in single combat, Ascapart does not die — he becomes Bevis's follower and companion, the loyal giant-servant who carries out tasks too large for any human knight. He is, in his way, the most human character in the story: petulant, devoted, occasionally treacherous, and capable of being persuaded back from betrayal by the right words.\n\nSouthampton kept him as a civic monument: a figure of Ascapart was carved on the Bargate — the old town gate — alongside Bevis himself, and giant effigy figures of both were paraded in processions until the seventeenth century. A giant figure of Ascapart carrying Bevis under his arm is recorded in the heraldry of the Southampton area. He is one of the few giants in English legend to have a personality rather than merely a size."
     },
     {
       "name": "Ashleypark Burial Mound",
@@ -201,7 +202,7 @@
       "lng": -4.741,
       "category": "fairy",
       "region": "Scottish Highlands, Scotland",
-      "summary": "The Baobhan Sith are a class of female vampiric spirits from the folklore of the Scottish Highlands, described as supernaturally beautiful women in long green dresses whose feet are concealed because they end in deer hooves. They appear to hunters and travellers in remote shielings, enticing men to dance with them before slashing their throats with elongated talon-like nails and drinking their blood. The most documented legend follows four huntsmen who shelter for the night; four women appear at their request for partners, three of the men are drained of blood, and only the fourth survives by taking refuge among the horses — the iron of the horseshoes repelling the spirits. The folklorist Katharine Briggs identified iron as their traditional weakness.",
+      "summary": "Highland vampiric spirits — beautiful women in green gowns who appear to hunters in the wilderness, dance with them through the night, and drain their blood. Iron is the only protection; one man survived by sheltering among his horses.",
       "source": "https://en.wikipedia.org/wiki/Baobhan_sith"
     },
     {
@@ -338,8 +339,9 @@
       "lng": -1.407,
       "category": "hero",
       "region": "Southampton, Hampshire, England",
-      "summary": "Bevis of Hampton is one of England's great medieval romance heroes, a legendary knight whose adventures were set in and around Southampton from the 12th century onward. The son of the Earl of Southampton, Bevis was sold into slavery as a child, became a knight, slew the dragon Garcy and the giant Ascapart, and eventually reclaimed his father's title. His legend became so embedded in local identity that Southampton's western hill bears the name Bevois Mount, a tower called Bevis's Tower once formed part of the city's medieval walls, and his effigy stands at the Bargate alongside Ascapart. Multiple medieval versions of his story circulated in Anglo-Norman, English, and Italian.",
-      "source": "https://en.wikipedia.org/wiki/Bevis_of_Hampton"
+      "summary": "One of England's great medieval romance heroes — a knight of Southampton who slew giants, fought Saracens, rode the matchless horse Arundel, wielded the sword Morglay, and whose adventures filled a hugely popular tale told from the 13th century onward. His giant companion Ascapart and his bones lie buried, according to tradition, in Arundel Castle.",
+      "source": "https://en.wikipedia.org/wiki/Bevis_of_Hampton",
+      "detail": "Bevis of Hampton is one of the most widely read English romances of the Middle Ages — translated into a dozen European languages, adapted into chapbooks, and still being printed as a popular tale well into the eighteenth century. The hero is a Southampton knight whose father is murdered by his mother and her lover; sold into slavery in the East, he rises by strength and courage, wins the horse Arundel and the sword Morglay, falls in love with the Saracen princess Josian, and undertakes a lifetime of adventures before returning to claim his inheritance.\n\nThe geography is specific and local in a way that marks the romance as rooted in real landscape: Arundel Castle, Southampton Water, the figure of Ascapart carved on the Bargate, the tradition of Bevis's bones in Arundel. The poem uses English place names with the same confidence it uses exotic Eastern settings, anchoring an improbable romance in recognisable southern England.\n\nBevis is arguably the founding figure of Hampshire and Sussex popular legend — his name given to Bevis's Tower in Winchester and to streets in Southampton. Where Arthur is the mythic king and Robin Hood the outlaw, Bevis is the exile who fights his way home: a knight whose glory is inseparable from the particular stretch of English coast he calls his own."
     },
     {
       "name": "Billy Marshall",
@@ -549,7 +551,7 @@
       "lng": -4.394,
       "category": "hero",
       "region": "Anglesey, Wales",
-      "summary": "Daughter of Llyr and sister of Bran the Blessed, Branwen was given in marriage to the King of Ireland, where she was reduced to servitude in the kitchens. She trained a starling to carry a message to her brother; Bran came with all the warriors of Britain to free her, and the war that followed destroyed both islands. Branwen died of grief at her homecoming and was buried beside the River Alaw in Anglesey, her grave mound still visible.",
+      "summary": "Daughter of Llyr and sister of Bran the Blessed, Branwen was given in marriage to the King of Ireland and reduced to working in the kitchens. She trained a starling to carry a message to her brother; he came with all the warriors of Britain, and the war that followed destroyed both islands.",
       "source": "https://en.wikipedia.org/wiki/Branwen"
     },
     {
@@ -576,7 +578,7 @@
       "lng": -4.6,
       "category": "ghost",
       "region": "Highland, Scotland",
-      "summary": "A formless, voiceless spirit of the Scottish Highlands, the Brollachan has no fixed shape of its own and takes the form of whatever vessel or hollow it inhabits. It can speak only two words — itself and thee — and when threatened becomes whatever thing causes most fear. Rannoch Moor, bleak and depthless, is the kind of landscape it is said to haunt: vast, shapeless, and indifferent to those who wander into it.",
+      "summary": "A formless, voiceless spirit of the Scottish Highlands — the Brollachan has no fixed shape and takes the form of whatever vessel or hollow it inhabits. It speaks only two words — 'myself' and 'thee' — and when threatened becomes whatever thing causes most fear.",
       "source": "https://en.wikipedia.org/wiki/Scottish_folklore"
     },
     {
@@ -612,7 +614,7 @@
       "lng": -4.0114,
       "category": "location",
       "region": "Ardudwy, Gwynedd, Wales",
-      "summary": "The Bryn Cader Faner is a Bronze Age round cairn which lies to the east of the small hamlet of Talsarnau in the Ardudwy area of Gwynedd in Wales. The diameter is 8.7 metres (29 ft) and there are 18 thin jagged pillars which jut upwards from the low cairn. It is thought to date back to the late third millennium BC.\nThe site was disturbed by 19th-century treasure hunters, who left a hole in the centre, indicating the position of a cist or a grave.",
+      "summary": "A Bronze Age ring cairn on the hills above Talsarnau in Gwynedd — its eighteen remaining jagged stone pillars jutting from a low circular mound like the rays of a dark crown. One of the most striking and mysterious prehistoric monuments in Wales, disturbed by 19th-century treasure hunters who left a hole at its heart.",
       "source": "https://en.wikipedia.org/wiki/Bryn_Cader_Faner"
     },
     {
@@ -657,8 +659,9 @@
       "lng": -0.455,
       "category": "witch",
       "region": "Cranwell, Lincolnshire, England",
-      "summary": "Byard's Leap is a hamlet on Ermine Street near Cranwell in Lincolnshire, the site of a famous local legend recorded by folklorist Ethel Rudkin. Old Meg, an evil witch living in a spinney by the road, plagued the local countryside. A retired soldier selected a blind horse called Blind Byard by dropping a stone into a drinking pond and choosing the horse that reacted fastest — blindness being believed to prevent enchantment. When Old Meg crept up and sank her long nails into the horse's flank, it leaped over sixty feet in terror; the soldier drove his sword into the witch's heart during the commotion. Four iron horseshoes set in stone at the hamlet still mark the spots where Byard's hooves landed.",
-      "source": "https://en.wikipedia.org/wiki/Byard%27s_Leap"
+      "summary": "A hamlet on Ermine Street in Lincolnshire marking the spot where a local hero's horse Bayard leapt a prodigious distance to escape a witch — its hoofprints cut into the stone, four pairs of horseshoes nailed to a post, and the witch left dead in the ditch.",
+      "source": "https://en.wikipedia.org/wiki/Byard%27s_Leap",
+      "detail": "Four pairs of horseshoes nailed to a post on the old Roman road of Ermine Street, near Cranwell in Lincolnshire, mark the spot where the legendary horse Bayard made his famous leap. The tradition is simple and extremely local: a man tasked with killing a dangerous witch found her in a pool and spurred his horse to flee. Bayard sprang an impossible distance — variously given as sixty feet or more — and landed so hard that his hoofprints were cut into the stone.\n\nThe witch, thrown from behind the rider by the force of the jump, was killed in the fall. Her three eyes — she had a third in the back of her head, the traditional sign of a witch with the evil eye — were said to have been cast aside and become three stones still visible in the field. The horseshoes were renewed over the centuries as the originals wore out, keeping the tradition alive on the same site.\n\nThe leap is one of the more vivid examples of landscape-attached folklore in Lincolnshire, where the flat, ancient road-crossed countryside has generated an unusually rich tradition of local legends tied to specific named spots. The post and shoes still stand."
     },
     {
       "name": "Cadair Idris",
@@ -864,7 +867,7 @@
       "lng": -2.431,
       "category": "location",
       "region": "Lancashire",
-      "summary": "Cheetham Close is a megalithic site and scheduled ancient monument located in Lancashire, very close to the boundary with Greater Manchester, England. The megalith was in good condition until a farmer from Turton sledgehammered the circle in the 1870s. According to an article published in 1829, Cheetham Close was once a druidical ritual place and a Roman road passed 'within two hundred yards' of the megalith.",
+      "summary": "A Bronze Age megalithic site on the Lancashire–Greater Manchester border — a scheduled ancient monument described in 1829 as a druidical ritual place, damaged by a farmer in the 1870s. The Roman road passes within 200 yards, suggesting the site was already ancient when Rome came through.",
       "source": "https://en.wikipedia.org/wiki/Cheetham_Close"
     },
     {
@@ -990,7 +993,7 @@
       "lng": -6.215,
       "category": "beast",
       "region": "Isle of Skye, Scotland",
-      "summary": "A great fairy hound the size of a young bull, the Cu Sith roamed the Scottish Highlands in silence, its paw prints the width of a man's hand. It hunted on behalf of the fairy court and when it gave voice it bayed three times — after which those who had not found shelter were seized by fatal terror. Especially associated with the Hebrides and Skye, it was said to guard the entrances to the fairy mounds.",
+      "summary": "A vast fairy hound of the Scottish Highlands — the size of a young bull, dark green, paw-prints the width of a man's hand, and silent until it bayed. It gave voice three times; after the third bay, those who had not reached shelter were seized by fatal terror. It hunted for the fairy court.",
       "source": "https://en.wikipedia.org/wiki/C%C3%B9_S%C3%ACth"
     },
     {
@@ -999,8 +1002,9 @@
       "lng": -4.312,
       "category": "ghost",
       "region": "River Tywi Valley and Glamorganshire coast, Wales",
-      "summary": "The Cyhyraeth is a Welsh death-omen spirit whose disembodied wailing voice sounds three times before a person's death — each cry growing weaker and more despairing than the last. Unlike the Irish Banshee, the Cyhyraeth has no visible form: it is heard as a horrible groaning and sighing, as of someone gravely ill, travelling through the night toward the house of the dying. It is especially associated with the Tywi Valley in Dyfed and with the Glamorganshire coast, where it is said to wail at sea before a shipwreck, accompanied by a Corpse-light (canwyll corff). Like the Banshee, it mourns for Welsh natives dying far from home.",
-      "source": "https://en.wikipedia.org/wiki/Cyhyraeth"
+      "summary": "A Welsh death omen — a disembodied wailing voice heard in the dark, always three times, always before a death. It has no body to see, only a sound described as a fading, groaning cry, most often heard near water or along the coast of Glamorgan before a wreck.",
+      "source": "https://en.wikipedia.org/wiki/Cyhyraeth",
+      "detail": "The Cyhyraeth ('the skeleton' in some interpretations, from the Welsh word for joints or bones) occupies a specific role in Welsh folklore that is both similar to and distinct from the Irish Banshee. Where the Banshee is associated with particular families and takes a visible form, the Cyhyraeth is purely acoustic — a sound without a body, heard in the night but never seen.\n\nThe cry sounds three times, always diminishing: the first call loud, the second quieter, the third barely a whisper, as if whatever makes it is retreating toward the world of the dead. Witnesses described it as a faint, moaning, drawn-out groan — sometimes confused at first for the wind in trees, but always recognisable in retrospect. Hearing it three times meant a death in the household or among the hearers was imminent.\n\nThe strongest Cyhyraeth tradition comes from coastal Glamorgan, particularly around the Gower Peninsula and the Vale of Glamorgan, where it was associated with storms and shipwrecks: the sound heard offshore before a vessel came in to grief. The folklorist John Rhys collected extensive accounts in the 1880s and noted that the belief was still very much alive in the farming communities along the Bristol Channel coast."
     },
     {
       "name": "Cú Chulainn",
@@ -1053,7 +1057,7 @@
       "lng": -4.9393,
       "category": "hero",
       "region": "Argyll, Scotland",
-      "summary": "Prophesied at birth to bring ruin to Ulster, Deirdre grew up to love the warrior Naoise above the king who claimed her. She and Naoise fled to Scotland and hid in Glen Etive before being lured back to Ireland under false promise of safety. Naoise was slain and Deirdre, refusing every comfort, dashed her head against a stone rather than live without him. The glen still carries her name in Gaelic memory.",
+      "summary": "Prophesied at birth to bring ruin to Ulster, Deirdre chose the warrior Naoise over the king who claimed her, fled with him to Scotland, and was lured back under a false promise of safe conduct. Naoise was killed. Deirdre, refusing every comfort, dashed her head against a stone rather than live without him.",
       "source": "https://en.wikipedia.org/wiki/Deirdre"
     },
     {
@@ -1089,7 +1093,7 @@
       "lng": -8.4953,
       "category": "hero",
       "region": "County Sligo, Ireland",
-      "summary": "Grainne, promised to the ageing Fionn mac Cumhaill, placed a geis on the young warrior Diarmuid to flee with her on their wedding night. The lovers were pursued across Ireland and into Scotland for sixteen years, leaving their names on stone beds and hollow hills from Connacht to the Hebrides. Their flight ended on Ben Bulben in Sligo, where a boar sent by the jealous Fionn delivered Diarmuid's fatal wound.",
+      "summary": "Grainne placed a geis on the young warrior Diarmuid to flee with her on their wedding night rather than marry the ageing Fionn. For sixteen years they were hunted across Ireland and Scotland, leaving their names on hollow hills and stone beds. He died on Ben Bulben, killed by the boar Fionn refused to help him fight.",
       "source": "https://en.wikipedia.org/wiki/Diarmuid_and_Gr%C3%A1inne"
     },
     {
@@ -1233,7 +1237,7 @@
       "lng": -6.231,
       "category": "fairy",
       "region": "Isle of Islay, Scotland",
-      "summary": "The Du Sith — the Black Elf of Islay — is a dark fairy of the Inner Hebrides, malevolent and elusive, said to haunt the moorland and coastal margins of the island. Unlike the more familiar fairy folk, the Du Sith carries no playful mischief; it is wholly hostile to human encounter. Islay's folklore tradition keeps it distinct from the broader Highland fairy world, a creature particular to that island's own ancient dark.",
+      "summary": "The Black Elf of Islay — a wholly malevolent fairy of the Inner Hebrides, said to haunt the moorland and coastal margins of the island. Unlike the mischievous fairy folk, the Du Sith bears nothing but hostility toward any human it encounters.",
       "source": "https://en.wikipedia.org/wiki/Scottish_folklore"
     },
     {
@@ -1242,7 +1246,7 @@
       "lng": -1.9418,
       "category": "fairy",
       "region": "Northumberland",
-      "summary": "Dark, malevolent dwarf-like creatures of the Border hills, the Duergar lure travellers off safe paths on moonless nights and abandon them on cliff edges or in bogs. They are associated particularly with the Simonside Hills in Northumberland, where their lights have long been reported moving through the crags after dark. Unlike helpful brownies, the Duergar bear no goodwill toward humans and cannot be placated.",
+      "summary": "Malevolent dwarf-like spirits of the Northumberland border hills, the Duergar lure travellers off safe paths with lights on moonless nights and abandon them on cliff edges. Associated specifically with the Simonside Hills, they are among the most ill-disposed fairy beings in northern English tradition.",
       "source": "https://en.wikipedia.org/wiki/Duergar"
     },
     {
@@ -1251,8 +1255,9 @@
       "lng": -1.393,
       "category": "beast",
       "region": "Dunsmore Heath, Warwickshire, England",
-      "summary": "The Dun Cow of Dunsmore Heath is a legendary giant bovine beast from Warwickshire folklore, reputedly slain by the hero Guy of Warwick in the area west of Dunchurch near Rugby. According to the legend, the enormous cow (described as ‘as big as a house’ with eighteen teats) originally belonged to a giant and had been kept at Mitchell’s Fold in Shropshire, where her milk was inexhaustible — until a witch filled a riddle (sieve) with milk rather than a pail, enraging the animal. The cow broke loose and devastated Dunsmore Heath until Guy cut off her head. A large whale bone exhibited at Warwick Castle is traditionally displayed as one of the Dun Cow’s ribs, a physical relic that sustained the legend for centuries. The creature has its own Wikipedia article separate from the Guy of Warwick entry.",
-      "source": "https://en.wikipedia.org/wiki/Dun_Cow"
+      "summary": "A legendary giant dun cow that terrorised Warwickshire, providing unlimited milk until a witch milked her dry into a sieve, driving her mad with rage. The hero Guy of Warwick eventually slew her on Dunsmore Heath, and her gigantic rib-bone was kept as a relic in Warwick Castle for centuries.",
+      "source": "https://en.wikipedia.org/wiki/Dun_Cow",
+      "detail": "The Dun Cow of Dunsmore Heath is one of the great Warwickshire legends, and one of the oldest documented giant-beast traditions in England. The cow began benevolently: a miraculous animal of inexhaustible milk, she wandered the county providing freely for all who came to her. The trouble began when a witch — in most versions an old woman of malicious intent — sat down with a sieve instead of a pail and milked her without stopping until the supply ran dry. The cow, maddened by the experience, turned savage and ravaged the heath.\n\nHer destruction fell to Guy of Warwick, the county's great legendary hero, who fought and killed her on Dunsmore Heath. The encounter was treated as historical fact for centuries: a gigantic bone, said to be her rib, was kept in Warwick Castle and shown to visitors well into the early modern period. It is now believed to have been a whale's rib — but that has not diminished the legend's hold on Warwickshire identity.\n\nThe Dun Cow also lends her name to a scatter of English pubs, a sign that the tradition spread far beyond its Warwickshire origins."
     },
     {
       "name": "Dunnie",
@@ -1486,8 +1491,9 @@
       "lng": -2.548,
       "category": "giant",
       "region": "The Wrekin, Shropshire, England",
-      "summary": "The Wrekin, Shropshire's great solitary hill near Telford, was said in local legend to have been created by a Welsh giant named Gwendol Wrekin ap Shenkin ap Mynyddmawr who bore a grudge against the people of Shrewsbury. Carrying a colossal spadeful of earth intended to dam the River Severn and flood the town, the giant was tricked by a cobbler who showed him a sackful of worn-out shoes as proof that Shrewsbury was impossibly far away. Weary and deceived, the giant dumped his load where it became the Wrekin, and cleaned his boots on a smaller heap nearby that became the Ercall. The tale was collected in Charlotte Burne and G.F. Jackson's Shropshire Folk-Lore (1883).",
-      "source": "https://www.mysteriousbritain.co.uk/folklore/the-origin-of-the-wrekin/"
+      "summary": "The Wrekin — Shropshire's great solitary hill — was created, according to local legend, when a spiteful Welsh giant carrying a spadeful of earth to dam the Severn and flood Shrewsbury was met by a cobbler, tricked into thinking the town was too far, and dumped his load where he stood.",
+      "source": "https://www.mysteriousbritain.co.uk/folklore/the-origin-of-the-wrekin/",
+      "detail": "The Wrekin rises 1,335 feet from the flat Shropshire plain near Telford — an isolated, unmissable hill that has attracted legend since at least the Iron Age, when it was crowned with a major hillfort. The folk explanation for its existence involves a Welsh giant of malicious intent.\n\nThe giant had conceived a grudge against Shrewsbury and set out from Wales with an enormous spadeful of earth, intending to dam the River Severn and drown the town. Near Wellington he met a cobbler making his way home, recognised as such by the enormous bundle of worn boots on his back. When the giant asked how far it was to Shrewsbury, the cobbler — suspecting mischief — showed him the pile of boots and said he had worn all of them out walking from there. The giant, dismayed by the distance, threw down his spade-load where he stood and went home. The mound became the Wrekin; the smaller heap of earth scraped from his boot became the nearby hill of the Ercall.\n\nVersions of this legend attach to several other Shropshire and Welsh hills, but the Wrekin's version is the best known, and the phrase 'all friends round the Wrekin' remains a Shropshire toast."
     },
     {
       "name": "Giant's Causeway",
@@ -1522,8 +1528,9 @@
       "lng": -4.539,
       "category": "water",
       "region": "Isle of Man",
-      "summary": "The Glashtyn is the water horse of Manx folklore, a shape-shifting creature that emerges from the sea and from inland streams to mingle with land-roving horses, and which sometimes appears as a handsome young man betrayed by his horse-ears. In equine form, the Glashtyn's hooves point backwards — a characteristic visible to the observant. It was said to come ashore to cross-breed with ordinary ponies; the resulting foals were prized but the creature itself was treacherous to ride. A parallel Manx glashan figure was a helpful farm spirit who performed threshing and herding, suggesting a dual nature of helpful and dangerous variants under the same name. Primary source: A.W. Moore, The Folklore of the Isle of Man (1891).",
-      "source": "https://en.wikipedia.org/wiki/Glashtyn"
+      "summary": "The water horse of the Isle of Man — a shape-shifting creature that emerges from sea and loch as a fine grey stallion, and, like its Scottish cousin the Each-Uisge, ensures that any rider who mounts it cannot dismount as it plunges back into the deep.",
+      "source": "https://en.wikipedia.org/wiki/Glashtyn",
+      "detail": "The Glashtyn is the Manx water horse, cousin to the Scottish Each-Uisge and the Kelpie, belonging to the Island's own distinct supernatural tradition. It haunts both the sea-inlets and the inland loughs of the Isle of Man, and its preferred form is a handsome grey horse — fine-looking, almost unnaturally so, appearing at dusk near water and apparently waiting to be ridden.\n\nThose who mount it find themselves unable to dismount. The Glashtyn carries them into the water and drowns them, leaving nothing but the liver or lungs to wash ashore the next morning — the universal signature of the water-horse kill across the Gaelic world. Unlike the Kelpie, which is sometimes described as leaving wet bridle-marks or seaweed, the Glashtyn in Manx tradition is particularly associated with the sea-margin, and some accounts describe it emerging directly from the waves.\n\nA variant form of the Glashtyn can take human shape — a dark young man with dripping hair who appears at dances and tries to lead young women away. The clue to his nature is the water that runs from his hair and clothes regardless of weather. Walter Gill collected the strongest Glashtyn traditions in A Manx Scrapbook (1929)."
     },
     {
       "name": "Glastonbury Holy Thorn",
@@ -1531,7 +1538,7 @@
       "lng": -2.7195,
       "category": "location",
       "region": "Somerset",
-      "summary": "Joseph of Arimathea is said to have thrust his pilgrim's staff into the earth on Wearyall Hill above Glastonbury, where it took root and became a hawthorn that flowers twice yearly — at Christmas and at Easter. Cuttings from the original were preserved through the centuries; the trees on the hill today descend from those medieval grafts. A sprig is still sent to the monarch each Christmas, as it has been since the time of James I.",
+      "summary": "Joseph of Arimathea is said to have thrust his pilgrim's staff into the earth on Wearyall Hill above Glastonbury, where it took root as a thorn tree that flowered at Christmas as well as spring. The original was destroyed by a Puritan in the Civil War; descendants grown from its cuttings still stand, and one sends a sprig to the monarch every Christmas.",
       "source": "https://en.wikipedia.org/wiki/Glastonbury_Thorn"
     },
     {
@@ -1711,8 +1718,9 @@
       "lng": -2.836,
       "category": "fairy",
       "region": "Selkirkshire, Scottish Borders, Scotland",
-      "summary": "Habetrot is a benevolent but physically grotesque fairy from the folklore of Selkirkshire and the Scottish Borders, patron spirit of spinsters and mistress of the spinning wheel. She lives underground near burns and farms, accompanied by a community of other spinners all physically deformed by their work — elongated lips, splayed feet, and flattened thumbs. In the primary Border legend, she rescues a girl who cannot spin seven heads of flax by completing the task herself, then secures the girl a husband by persuading him his wife should never spin again, showing him the hideous toll spinning takes. Habetrot also had the power to cure disease: those who wore garments spun by her were safeguarded against illness.",
-      "source": "https://en.wikipedia.org/wiki/Habetrot"
+      "summary": "A grotesque but benevolent fairy spinner from the Scottish Borders — queen of the spindle — who helps young women complete impossible spinning tasks in exchange for their company. Marrying a woman with Habetrot's mark on her lip is said to bring health and good fortune to any household.",
+      "source": "https://en.wikipedia.org/wiki/Habetrot",
+      "detail": "Habetrot is among the more unusual figures in British fairy tradition — entirely benevolent, utterly non-threatening, and physically described with a candour that suggests genuine folk memory rather than literary invention. She is old, with long pendulous lips distorted from a lifetime of pulling thread across them, and she lives underground in a hillside spinning-cave, surrounded by companions equally grotesque.\n\nHer role is invariably helpful: a young woman threatened by an impossible spinning task — set by a mother or a future husband — is guided by a self-bored stone to Habetrot's cave, where the fairy completes the work overnight. The beneficiary is warned not to reveal who spun the thread, and when asked, Habetrot's companions give their names — names so ugly and comical that the questioning husband vows his wife will never spin again, freeing her from that particular domestic burden forever.\n\nThe Scottish Borders versions recorded by Robert Chambers and William Henderson in the nineteenth century are the fullest. Habetrot's domain is specifically located in the Selkirk hills; she is a genius loci as much as a fairy character, and the tale belongs to the same tradition as the English Tom Tit Tot and the German Rumpelstiltskin."
     },
     {
       "name": "Hafren",
@@ -1757,8 +1765,9 @@
       "lng": -0.797,
       "category": "location",
       "region": "Haxey, North Lincolnshire, England",
-      "summary": "The Haxey Hood is an annual folk tradition held on 6 January (Twelfth Night) in the village of Haxey, said to have originated in the 14th century when Lady de Mowbray's silk riding hood blew away across the hill. Thirteen farm labourers gave chase; the man who caught it was so bashful he gave it to another to present to the lady, and she declared the catcher had acted like a Lord and the giver a Fool. She donated thirteen acres on condition that the chase be re-enacted each year. The tradition involves the Lord of the Hood, eleven Boggins, a Fool ceremonially smoked over a fire, and a chaotic communal sway toward four local pubs.",
-      "source": "https://en.wikipedia.org/wiki/Haxey_Hood"
+      "summary": "An ancient midwinter folk custom at Haxey in Lincolnshire, held each Twelfth Night, in which a leather 'hood' is fought over by two competing pubs' teams in a slow, surging, hours-long struggle through the village streets. The Fool, the Lord, and twelve Boggins preside over a tradition that may be eight centuries old.",
+      "source": "https://en.wikipedia.org/wiki/Haxey_Hood",
+      "detail": "The Haxey Hood is held every January 6th in the village of Haxey, Lincolnshire, and has been for as long as anyone can reliably trace — at least to the fourteenth century. The origin legend gives it to Lady de Mowbray, whose silk hood blew away in the wind and was chased by thirteen farmhands; she rewarded them with a field of land on condition that the chase was re-enacted every year.\n\nThe cast of characters is fixed: the Lord of the Hood in top hat and red coat, eleven Boggins in red jerseys, and the Fool — who gives a speech, is symbolically 'smoked' over a fire of burning straw, and presides over the preliminaries. The Hood itself is a stiff leather tube that cannot be thrown or kicked — only pushed, carried, and wrestled over. Two teams representing the village's two pubs attempt to push it to their respective doors; the whole village becomes the playing field, fences and gardens included.\n\nThe game has no fixed duration: it ends when the Hood finally reaches one of the pub doors, which can take hours. It resembles no other sport and has no obvious ancestor — its origins, whatever Lady de Mowbray's legend claims, remain genuinely obscure."
     },
     {
       "name": "Headless Horseman of the Staffordshire Moors",
@@ -2190,7 +2199,7 @@
       "lng": 0.188,
       "category": "giant",
       "region": "Sussex",
-      "summary": "The Long Man of Wilmington or Wilmington Giant is a hill figure on the steep slopes of Windover Hill near Wilmington, East Sussex, England. It is 6 miles (9.7 km) northwest of Eastbourne and 1⁄3 mile (540 m) south of Wilmington. Locally, the figure was once often called the Green Man. The Long Man is 235 feet (72 m) tall, holds two \"staves\", and is designed to look in proportion when viewed from below.",
+      "summary": "A 235-foot chalk outline of a standing figure on the steep slopes of Windover Hill in East Sussex — holding two staves or standing in a gateway. Its age is uncertain, its meaning unknown, and every century produces a new theory about what it represents.",
       "source": "https://en.wikipedia.org/wiki/Long_Man_of_Wilmington"
     },
     {
@@ -2244,7 +2253,7 @@
       "lng": -3.6667,
       "category": "fairy",
       "region": "Scotland",
-      "summary": "The Ly Erg is a fairy from Scottish folklore, particularly associated with the area in and around the Glenmore Forest, part of the present-day Cairngorms National Park. It is dressed as a soldier, distinguishable from a real soldier only by its red right hand, said to be stained with the blood of its victims. While out walking it will stop near water, and by raising its right hand challenge passersby to fight.",
+      "summary": "A solitary Scottish Highland fairy — neither beautiful nor monstrous — who appears as a soldier with a blood-stained hand on lonely roads. To shake that hand is a death sentence; those who meet him on the road rarely reach their destination.",
       "source": "https://en.wikipedia.org/wiki/Ly_Erg"
     },
     {
@@ -2452,7 +2461,7 @@
       "lng": -2.664,
       "category": "hero",
       "region": "East Lothian, Scotland",
-      "summary": "Arthur's nephew — or in the darker tellings, his son — Mordred seized the throne during the Grail quest and forced the king's return to Britain. At Camlann they destroyed each other: Mordred slain, Arthur mortally wounded. His kingdom of Lothian centred on Traprain Law, the great hill fort above the Firth of Forth that dominated southern Scotland through the Arthurian age and still looms over the landscape.",
+      "summary": "Arthur's nephew — or in the darker tellings, his son — who seized the throne while Arthur was on the Grail quest, forced Guinevere toward remarriage, and at Camlann fatally wounded the king he had been. The one who ends the Round Table, and cannot be entirely condemned for it.",
       "source": "https://en.wikipedia.org/wiki/Mordred"
     },
     {
@@ -2623,8 +2632,9 @@
       "lng": -7.94,
       "category": "water",
       "region": "River Shannon, Ireland",
-      "summary": "The Oillipheíst (Old Irish: ‘great worm’ or ‘great beast’) is a serpentine lake and river monster from Irish mythology, with its most celebrated tradition attached to the River Shannon. When the Oillipheíst heard that St Patrick had come to drive all serpents from Ireland, it cut a frantic course through the land trying to escape, and in doing so carved out the winding channel of the Shannon — Ireland’s longest river. In a comical and beloved continuation of the legend, the creature swallowed a drunken piper named Ó Ruairc who was too insensible to realise his predicament and continued to play his pipes inside the monster’s stomach; the Oillipheíst was so tormented by the music that it eventually coughed the piper back up unharmed. The creature is distinct from Caoranach (the demonic mother banished to Lough Derg, already in the dataset).",
-      "source": "https://en.wikipedia.org/wiki/Oilliph%C3%A9ist"
+      "summary": "A monstrous serpent of Irish myth — a 'great worm' — said to have carved the River Shannon as it writhed and fled from Saint Patrick. Primordial, enormous, and older than Christian memory.",
+      "source": "https://en.wikipedia.org/wiki/Oilliph%C3%A9ist",
+      "detail": "The Oilliphéist is one of the oldest creatures in Irish tradition — a vast serpentine monster whose name, from Old Irish, means simply 'great beast' or 'great worm'. Where most Irish lake and river monsters are creatures of local legend, the Oilliphéist belongs to a more ancient stratum: a primordial serpent woven into the mythology of the land itself.\n\nThe most persistent tradition links it to the creation of the River Shannon. As Saint Patrick drove the serpents from Ireland, the Oilliphéist fled westward, and its enormous body writhing through the limestone carved the course of the great river as it went — the landscape itself as scar of the monster's passing. Other accounts place it in specific loughs, where it waits in the cold dark far below the surface.\n\nThe Oilliphéist sits in a tradition that connects Irish water-monsters to the pre-Christian cosmology of serpents as embodiments of the underworld and the wild — the same ancient dread that underlies the Afanc in Wales and the Worm in northern England."
     },
     {
       "name": "Oisin",
@@ -2632,8 +2642,9 @@
       "lng": -6.934,
       "category": "hero",
       "region": "County Kildare, Ireland",
-      "summary": "Son of Fionn mac Cumhaill, Oisin was lured to Tir na nOg — the Land of Eternal Youth beneath the western waves — by the goddess Niamh of the Golden Hair. He spent three hundred years there believing only months had passed, before returning to find Ireland transformed and Fionn long dead. When his foot touched Irish soil he aged three centuries in moments, his legend becoming the great lament for a vanished heroic age.",
-      "source": "https://en.wikipedia.org/wiki/Ois%C3%ADn"
+      "summary": "Son of Fionn mac Cumhaill, lured to Tír na nÓg by the fairy woman Niamh, Oisin spent what seemed like three years in the Land of Youth while three hundred years passed in Ireland. Returning against Niamh's warning, he touched the ground, aged three centuries in a moment, and lived just long enough to dictate his father's deeds to Saint Patrick.",
+      "source": "https://en.wikipedia.org/wiki/Ois%C3%ADn",
+      "detail": "Oisin is the great poet of the Fenian Cycle — the blind bard, in later tradition, who outlived his world by three hundred years and sat with Saint Patrick to dictate the deeds of the Fianna to a Christian scribe. The contrast between Oisin's pagan heroic values and Patrick's Christianity is the animating tension of the Acallam na Senórach (Colloquy of the Old Men), one of the masterpieces of early Irish literature.\n\nThe story of his departure begins with Niamh of the Golden Hair, daughter of the king of Tír na nÓg, who came to the Fianna's hunting ground, chose Oisin, and carried him away on a white horse across the western sea. In the Land of Eternal Youth no one aged and no one died; what felt like three years was three hundred. When Oisin grew homesick for Ireland, Niamh gave him a white horse and warned him never to touch the ground — if he dismounted, he would become his true age.\n\nHe reached Ireland to find the Fianna gone, the Ireland he knew buried under a Christian age. Helping some men move a stone from a road, his saddle-girth broke and he fell. He aged three centuries in a moment and died in Patrick's arms, having just enough time to give his testimony."
     },
     {
       "name": "Old Cockern",
@@ -2722,8 +2733,9 @@
       "lng": -0.018,
       "category": "ghost",
       "region": "Old Bolingbroke, Lincolnshire, England",
-      "summary": "Bolingbroke Castle in Old Bolingbroke, Lincolnshire — birthplace of the future King Henry IV — was haunted from at least the 1630s by a phantom hare believed to be the ghost of a witch once held prisoner there. The earliest written account, by Gervase Holles (1634-42), records that the spirit took the form of a hare that ran between the legs of auditors at meetings held in the castle; when chased into the castle yard, witnesses saw it vanish through a grating into a cellar below, and any dog sent after it would return howling in terror. Nineteenth-century Lincolnshire tradition held that white phantom hares were the spirits of the dead, and it was deeply unlucky to see one.",
-      "source": "https://occult-world.com/bolingbroke-castle/"
+      "summary": "A phantom white hare said to haunt the ruined castle at Old Bolingbroke in Lincolnshire — birthplace of Henry IV — appearing at dusk among the broken walls as an omen of misfortune, and impossible to catch despite the most determined pursuit.",
+      "source": "https://occult-world.com/bolingbroke-castle/",
+      "detail": "Bolingbroke Castle, now a picturesque ruin in the Lincolnshire Wolds, was a seat of the Duchy of Lancaster and the birthplace of Henry of Bolingbroke, the future King Henry IV. Its gradual decline after the Civil War left it a haunted shell, and local tradition populated the ruins with a phantom white hare.\n\nWhite hares in British folklore are almost universally unlucky — they appear before disasters, follow the condemned, and cannot be killed by any ordinary means. The Bolingbroke hare was pursued by hunters on several recorded occasions, always to no effect: it would lead the pack across the ruins and the surrounding fields, then vanish completely at the edge of the castle ditch. Dogs that gave chase too eagerly were said to return shaken, and occasionally one would not return at all.\n\nWhether the tradition predates or postdates the castle's ruin is unclear, but white hare hauntings tend to attach themselves to sites of historical significance or violent death — both of which Bolingbroke can supply, having been slighted during the Lincolnshire Rising and again in the Civil War."
     },
     {
       "name": "Piskie",
@@ -2785,7 +2797,7 @@
       "lng": -4.734,
       "category": "hero",
       "region": "Pembrokeshire, Wales",
-      "summary": "Son of Pwyll and Rhiannon, Pryderi is the only figure to appear in all four branches of the Mabinogion — the thread connecting the entire mythology of medieval Wales. Stolen in the night as an infant and growing to become lord of Dyfed, he was enchanted, imprisoned, freed, and finally killed in single combat with the magician Gwydion. Pembrokeshire's ancient landscape carries his memory at every turn.",
+      "summary": "Son of Pwyll and Rhiannon, the only figure to appear in all four branches of the Mabinogion. Snatched at birth by a monstrous hand, raised in a horse-lord's stable, and finally killed in single combat by Gwydion after a war over stolen pigs. His whole life is the thread on which the Welsh mythological cycle hangs.",
       "source": "https://en.wikipedia.org/wiki/Pryderi"
     },
     {
@@ -3048,7 +3060,7 @@
       "lng": -2.7183,
       "category": "hero",
       "region": "Somerset",
-      "summary": "Son of Lancelot and the purest knight of the Round Table, Galahad appeared at Camelot on Pentecost and sat in the Siege Perilous — the seat that destroyed all unworthy claimants. He alone was destined to achieve the Holy Grail. Having looked upon it in full at Sarras, he asked to be taken from the world, and was. The Grail's long tradition in Glastonbury makes the Somerset levels his spiritual territory.",
+      "summary": "Son of Lancelot, conceived by enchantment, and the only knight pure enough to achieve the Grail. He appeared at Camelot on Pentecost, sat unharmed in the Siege Perilous, and rode out. When he finally held the Grail he asked to die at that moment of perfection, and was taken bodily into heaven.",
       "source": "https://en.wikipedia.org/wiki/Galahad"
     },
     {
@@ -3066,7 +3078,7 @@
       "lng": -3.169,
       "category": "hero",
       "region": "Denbighshire, Wales",
-      "summary": "Raised in the wilderness by his mother, ignorant of chivalry, Percival came to Camelot a laughing-stock and grew into its purest knight. At the Fisher King's castle he witnessed the Grail procession in silence — failing to ask the one question that would have healed the Wasteland. Welsh tradition places his Grail castle on the crags of Dinas Bran above Llangollen, where the ruins still command the valley.",
+      "summary": "Raised in the wilderness, ignorant of all chivalry, Percival came to Camelot a laughingstock and became its purest knight. He was the first to reach the Grail castle — and asked the wrong question, or failed to ask any at all, and the Grail withdrew. He spent the rest of his life finding his way back.",
       "source": "https://en.wikipedia.org/wiki/Percival"
     },
     {
@@ -3075,7 +3087,7 @@
       "lng": -4.697,
       "category": "hero",
       "region": "Cornwall",
-      "summary": "Sent to bring the Irish princess Iseult as bride for his uncle King Mark of Cornwall, Tristan drank a love potion intended for the royal couple and was bound to her irrevocably. Their hidden love, discovered and betrayed, played out against the Cornish coast for years. Near Fowey the Tristan Stone still stands — a sixth-century memorial bearing an inscription that may be the earliest reference to the legend.",
+      "summary": "Sent to fetch the Irish princess Iseult as bride for his uncle King Mark of Cornwall, Tristan drank a love potion with her by accident on the voyage home. Bound together by a love neither could resist or escape, they spent their lives between bliss and ruin — and he died calling her name.",
       "source": "https://en.wikipedia.org/wiki/Tristan_and_Iseult"
     },
     {
@@ -3138,8 +3150,9 @@
       "lng": -0.165,
       "category": "hero",
       "region": "Crowland, Lincolnshire, England",
-      "summary": "St Guthlac (c. 674-714) was an Anglo-Saxon nobleman who renounced warfare to become a hermit on the remote island of Croyland in the Lincolnshire fens. His 8th-century biographer Felix records that the marshy island was so plagued by demons that no one before Guthlac had endured there; the demons entered his cell in terrifying forms, dragged him to the freezing waters of the fen, and transported him bodily to the mouth of hell. Uniquely, Felix notes Guthlac could understand the demons' speech because they spoke in British (Brittonic), and he routed them with prayer and a three-thonged whip given to him by St Bartholomew. Crowland Abbey was founded in his honour.",
-      "source": "https://en.wikipedia.org/wiki/Guthlac_of_Crowland"
+      "summary": "An Anglo-Saxon warrior saint who gave up arms at 24 to become a hermit in the Lincolnshire Fens, where demons plagued him nightly — dragging him into freezing bogs, hauling him into the sky — until he drove them back with hymns and a scourge. His island of Crowland became one of England's most celebrated holy places.",
+      "source": "https://en.wikipedia.org/wiki/Guthlac_of_Crowland",
+      "detail": "Guthlac was born around 674 into a noble Mercian family, spent his youth as a successful warrior-chieftain, and then, at the age of 24, underwent a sudden conversion so complete that he gave up everything and sought the most punishing solitude available: the fenland island of Crowland, a low, boggy, unreachable place deep in the Lincolnshire marshes that no other hermit had managed to inhabit.\n\nHe stayed for the rest of his life, and the demons that came with the territory were not symbolic. Felix's Life of Guthlac, written within living memory of the saint, describes physical attacks: being seized by crowds of howling, stinking demons and hauled into the freezing black water; being dragged bodily into the air and threatened; being assailed with voices in the British tongue — probably Welsh, suggesting these were the tormented souls of Britons dispossessed by the Anglo-Saxon advance. Guthlac repelled them all with psalm-singing, prayer, and a scourge.\n\nAfter his death in 714 he became one of the most popular English saints, and the abbey built over his hermitage at Crowland (now Crowland Abbey) became a major pilgrimage site. The Guthlac Roll — a remarkable twelfth-century illustrated scroll depicting his life and miracles — survives in the British Library."
     },
     {
       "name": "St Helier",
@@ -3147,8 +3160,9 @@
       "lng": -2.121,
       "category": "hero",
       "region": "St Helier, Jersey, Channel Islands",
-      "summary": "Helier (d. c. 555) is the patron saint of Jersey, a Belgian-born hermit who settled on a tidal islet off the coast of the island, now occupied by the 16th-century Elizabeth Castle. His most celebrated legend tells that he was beheaded by marauding pirates at his hermitage around 555 AD, yet in a final miraculous act, he picked up his own head and walked to shore — a cephalophore tradition that gave rise to the crossed axes on the parish crest of St Helier. The town and parish of St Helier, capital of Jersey, is named in his honour. A rock chapel on the islet (now within Elizabeth Castle) was built on the site of his hermitage and remains a place of pilgrimage. Separate miracles attributed to him include the destruction of a dragon on Jersey and the resurrection of a drowned fisherman.",
-      "source": "https://en.wikipedia.org/wiki/Helier"
+      "summary": "The patron saint of Jersey — a 6th-century Belgian hermit who lived on a tidal rock off the island's coast, was beheaded by Saxon raiders, and according to legend walked headless across the tidal causeway carrying his own head before finally lying down to die.",
+      "source": "https://en.wikipedia.org/wiki/Helier",
+      "detail": "Helier is one of the most dramatically legendary of the early Celtic saints. Born in what is now Belgium, he renounced his wealthy family and made his way to Jersey, where a hermit named Marculf directed him to a rock exposed at low tide in what is now St Aubin's Bay. There he lived alone for years, visited by Marculf by boat, and drew enough local following to trouble the Saxon pirates who raided the island.\n\nThe manner of his death became the centre of his legend: he was beheaded by Saxon raiders around 555 AD, and the tradition holds that he then walked headless back across the tidal causeway carrying his own head — a cephalophoric miracle of the kind recorded for Saint Denis in Paris and a handful of other early martyrs — before collapsing and dying. His body was discovered by Marculf, who had been warned in a vision.\n\nJersey's capital bears his name, and the tidal rock where he lived — now accessible from the seafront — is still known as the Hermitage Rock. A small chapel stands there, maintained by the local Catholic diocese."
     },
     {
       "name": "St Kevin of Glendalough",
@@ -3156,8 +3170,9 @@
       "lng": -6.328,
       "category": "hero",
       "region": "Glendalough, County Wicklow, Leinster, Ireland",
-      "summary": "St Kevin (Coemgen, d. c. 618) was an early Irish hermit saint who settled in the secluded valley of Glendalough, County Wicklow, and became the subject of a rich cycle of miraculous animal legends. The most celebrated tells that Kevin held his hand outstretched in prayer so perfectly still throughout Lent that a blackbird built her nest in his palm, laid eggs, and raised her chicks to flight before he stirred. An otter brought him fish from the lake each day when he stood neck-deep in icy water to pray, and once retrieved his psalter unharmed from the lake's depths. When a monk coveted the otter's pelt, the creature vanished forever.",
-      "source": "https://en.wikipedia.org/wiki/Kevin_of_Glendalough"
+      "summary": "The hermit saint of Glendalough — who fled human society to live naked in a hollow tree, was discovered when a cow found him and gave miraculous milk, and is best remembered for holding his hand out of his cell window in prayer for so long that a blackbird built her nest in it and he kept still until the eggs hatched.",
+      "source": "https://en.wikipedia.org/wiki/Kevin_of_Glendalough",
+      "detail": "Kevin — Coemgen in Irish, 'fair-begotten' — is said to have been of royal blood, educated by monks, and then overcome by a revulsion for human company so complete that he retreated to the two lakes and wooded valley of Glendalough in County Wicklow, where he lived for years as a solitary in a hollow tree, wearing animal skins, eating nettles and herbs.\n\nHe was discovered, the tradition says, when a local cow began to give miraculous quantities of milk — traced back to the fact that she had been feeding the hermit, licking the salt from his skin. His retreat became a monastery despite himself, and Glendalough grew into one of Ireland's great monastic cities, its round tower and cluster of stone churches still standing in the valley.\n\nThe blackbird story is the most famous image attached to him: Kevin was praying with his hand extended from his cell window when a blackbird alighted and began to build a nest in it. He remained motionless — held by the principle that nothing seeking refuge should be disturbed — until the eggs were laid, hatched, and the chicks fledged. Seamus Heaney made the legend the subject of one of his most celebrated poems."
     },
     {
       "name": "St Magloire of Sark",
@@ -3165,8 +3180,9 @@
       "lng": -2.361,
       "category": "hero",
       "region": "Sark, Channel Islands",
-      "summary": "Magloire (d. c. 575) was a 6th-century Celtic bishop and monastic founder who eventually retired to the island of Sark with 62 monks, establishing one of the Channel Islands’ earliest monasteries above the bay of Port du Moulin. His most celebrated Sark legend records that he resurrected a drowned fisherman. His wider hagiography includes destroying a dragon on Jersey, miraculously healing Count Loisescon’s illness on Guernsey, and curing a girl’s deafness and intellectual disability — earning grants of land from grateful lords. When he died on Sark he was buried on the island; later, Viking raiders who attempted to desecrate his tomb were struck blind and turned on one another. The Priory of Saint-Magloire on Sark, founded in the 10th century near his original monastery site, perpetuated his veneration throughout the medieval period.",
-      "source": "https://en.wikipedia.org/wiki/Magloire"
+      "summary": "The patron saint of Sark — a 6th-century Celtic monk who founded a monastery on the island before retreating to an even more remote hermitage, and whose life is inseparable from the strange, half-mythical world of the early Celtic saints.",
+      "source": "https://en.wikipedia.org/wiki/Magloire",
+      "detail": "Magloire — or Maelor in the Welsh tradition that also claims him — was a 6th-century Celtic monk, cousin to Saint Samson of Dol, and a figure who embodies the wandering, sea-crossing spirituality of the early Celtic church. After time in Wales and Brittany, he settled on Sark, established a monastery, and eventually withdrew to Jersey in search of still greater solitude, founding a hermitage at what is now Saint Helier's parish.\n\nThe traditions surrounding him are shot through with the miraculous: a stag that guided him to fresh water, healing of the sick, the taming of wild animals. His life as recorded is as much legend as biography — the earliest sources are centuries later, and the miracles multiply with each retelling.\n\nSark retains him as its patron saint, and his monastery there — placed by tradition near the modern village — gives the island one of its oldest continuing religious associations. His feast day is October 24."
     },
     {
       "name": "St Swithin's Day",
@@ -3183,7 +3199,7 @@
       "lng": -4.5799,
       "category": "location",
       "region": "Isle of Man",
-      "summary": "St Trinian's Church is the roofless ruin of a small chapel at the foot of Greeba Mountain, adjacent to the main A1 Douglas - Peel Road in the parish of Marown, Isle of Man. Referred to in the Manx language as a \"Keeil Brisht\", the church is the source of an ancient Manx folk tale concerning the Buggane, a huge mythical ogre who lived on Greeba Mountain and who vowed that the church should never be completed.",
+      "summary": "A roofless medieval chapel ruin at the foot of Greeba Mountain on the Isle of Man, traditionally haunted by a Buggane — a hideous shape-shifting demon that demolished the roof each time it was built, until the tailor Timothy (Teeval) outran it with the finished cloth under his arm.",
       "source": "https://en.wikipedia.org/wiki/St_Trinian%27s_Church"
     },
     {
@@ -3201,7 +3217,7 @@
       "lng": -3.432,
       "category": "location",
       "region": "Perthshire, Scotland",
-      "summary": "A plain block of red sandstone, the Stone of Destiny served as the coronation seat of Scottish kings at Scone Abbey for centuries. Tradition holds it to be Jacob's Pillow from the Old Testament, carried through Egypt, Spain and Ireland before coming to rest in Scotland. Seized by Edward I in 1296 and kept beneath the English throne at Westminster for seven centuries, it was returned to Scotland in 1996 and remains a talisman of sovereignty.",
+      "summary": "A plain block of red sandstone that served as the coronation seat of Scottish kings at Scone Abbey for centuries. Edward I stole it for Westminster in 1296 as a trophy of conquest. Scottish tradition insists the real stone was hidden and the English got a copy — and the question has never quite been settled.",
       "source": "https://en.wikipedia.org/wiki/Stone_of_Scone"
     },
     {
@@ -3391,7 +3407,7 @@
       "lng": 0.711,
       "category": "ghost",
       "region": "Essex",
-      "summary": "The Ratman of Southend is an English urban legend originating in Southend-on-Sea, Essex.\nThe story of the Ratman tells of an old homeless man, who while seeking shelter from the cold in an underpass, was set upon by a group of youths and beaten to near-death. The cold and blood loss finished his life. As he died, the numerous vermin who inhabit the area gathered, and were found to have devoured his face.",
+      "summary": "A modern urban legend from Southend-on-Sea in Essex — a half-human, half-rat creature said to lurk in the storm drains and sewers beneath the seafront. One of the more persistent pieces of contemporary English folklore, kept alive on local social media and in playground tradition.",
       "source": "https://en.wikipedia.org/wiki/The_Ratman_of_Southend"
     },
     {
@@ -3625,7 +3641,7 @@
       "lng": -4.7912,
       "category": "location",
       "region": "Preseli Hills, Pembrokeshire, Wales",
-      "summary": "Waun Mawn is a megalithic site in the Preseli Mountains of Pembrokeshire, Wales. Following excavations in 2018, it became the site of a supposed dismantled Neolithic stone circle. The diameter of the postulated circle was estimated to be 110 m (360 ft), making it the fifth largest diameter for a British stone circle, after Avebury, Stanton Drew, Karl Lofts, Long Meg, and slightly larger than the Ring of Brodgar.",
+      "summary": "A dismantled stone circle in the Preseli Mountains of Pembrokeshire — excavated in 2018 and found to predate Stonehenge, with bluestones whose sockets perfectly match holes at Stonehenge. The leading hypothesis is that Waun Mawn was dismantled and its stones transported to Wiltshire, making it Stonehenge's direct ancestor.",
       "source": "https://en.wikipedia.org/wiki/Waun_Mawn"
     },
     {
@@ -3652,8 +3668,9 @@
       "lng": -7.249,
       "category": "beast",
       "region": "Kingdom of Ossory (County Kilkenny / County Laois), Leinster, Ireland",
-      "summary": "The Werewolves of Ossory are one of the most historically documented shape-shifting legends in Irish tradition, recorded c. 1188 by Gerald of Wales in his Topographia Hibernica. A priest travelling from Ulster encountered a wolf in the woods who spoke to him, explaining that the people of Ossory were cursed by Saint Natalis — every seven years, a man and a woman must leave human form to roam as wolves; if they survive, they are replaced by another pair. Gerald recounts that the female wolf drew back her skin to reveal an elderly woman beneath, so that the priest could administer last rites to her dying companion. The kings of Ossory were said to claim descent from Laignech Faelad, the first of their line to adopt the wolf-shape.",
-      "source": "https://en.wikipedia.org/wiki/Werewolves_of_Ossory"
+      "summary": "An extraordinary 12th-century account by the cleric Giraldus Cambrensis, who claimed to have met a priest sheltering in a forest with a dying she-wolf who was in fact a cursed woman from Ossory — her people condemned by a saint to become wolves for seven years before returning to human form.",
+      "source": "https://en.wikipedia.org/wiki/Werewolves_of_Ossory",
+      "detail": "The Werewolves of Ossory are remarkable among shapeshifting traditions because they were recorded as a first-hand encounter by a named, educated witness. In his Topographia Hibernica (1188), the Welsh cleric Gerald of Wales — Giraldus Cambrensis — described meeting a priest in the forests of Meath who had been stopped by a wolf that spoke to him in human speech, asking him to administer last rites to a dying wolf companion.\n\nThe wolf revealed that his people, the people of Ossory in Leinster, had been cursed by the abbot Saint Natalis to send two of their number out as wolves for seven years at a time, resuming human form at the end of the period while two new victims took their place. The dying wolf tore back the skin of her companion to reveal a woman's face beneath — Gerald examined her and gave the rites. The male wolf assured him they were Christians under an enchantment, not damned.\n\nGerald was careful to note he could not vouch for the truth of it but recorded it faithfully. The story entered the broader medieval European literature on werewolves and remains one of the most detailed and circumstantially specific accounts in the genre — a genuine 12th-century encounter narrative rather than the usual moral fable."
     },
     {
       "name": "Wights",
@@ -3697,7 +3714,7 @@
       "lng": -3.9165,
       "category": "hero",
       "region": "Stirlingshire, Scotland",
-      "summary": "Guardian of Scotland, Wallace defeated the English at Stirling Bridge in 1297 and became the symbol of resistance so enduring his legend outgrew his history. Betrayed, captured and executed in London in 1305, he refused every offer of pardon that required submission. The Wallace Monument on Abbey Craig above Stirling draws pilgrims as much as tourists, housing the great two-handed sword said to be his own.",
+      "summary": "Guardian of Scotland, Wallace defeated the English at Stirling Bridge in 1297 and became the symbol of resistance so enduring that the English king broke all rules of war to make his execution a maximum public spectacle. The folk tradition grew far larger than the man.",
       "source": "https://en.wikipedia.org/wiki/William_Wallace"
     },
     {
@@ -3742,7 +3759,7 @@
       "lng": -3.6604,
       "category": "location",
       "region": "Somerset",
-      "summary": "Withypool Stone Circle, also known as Withypool Hill Stone Circle, is a stone circle located on the Exmoor moorland, near the village of Withypool in the southwestern English county of Somerset. The ring is part of a tradition of stone circle construction that spread throughout much of Britain, Ireland, and Brittany during the Late Neolithic and Early Bronze Age, over a period between 3300 and 900 BCE.",
+      "summary": "A moorland stone circle of about a hundred small stones on the high ground of Exmoor above Withypool — quiet, unassuming, and extremely old. Local tradition once held that counting the stones three times and getting the same number twice was impossible, and that the attempt would bring bad luck.",
       "source": "https://en.wikipedia.org/wiki/Withypool_Stone_Circle"
     },
     {
@@ -3796,8 +3813,9 @@
       "lng": -3.576,
       "category": "ghost",
       "region": "Ogmore Castle, Vale of Glamorgan, Wales",
-      "summary": "Y Ladi Wen (Welsh: 'The White Lady') is a distinctly Welsh apparition tradition appearing at specific sites associated with tragedy or hidden treasure, most strongly documented at Ogmore Castle in the Vale of Glamorgan. Unlike an ordinary ghost, Y Ladi Wen is not the spirit of a named individual but a genius loci — a white-robed female presence marking a site of significance. At Ogmore Castle, a brave man who greeted the spirit was led to a cauldron of gold hidden beneath a heavy stone. At St Athan, the Ladi Wen is sometimes identified with Gwenllian Berkerolles, a Norman noblewoman buried alive by a cruel lord. The spirit was also invoked to warn children away from dangerous places, particularly at Nos Galan Gaeaf (Welsh Halloween).",
-      "source": "https://en.wikipedia.org/wiki/Y_Ladi_Wen"
+      "summary": "The White Lady of Welsh tradition — a death-omen apparition that appears at wells, crossroads, and ancient ruins on dark nights, sometimes asking for a hand to hold. Those who see her are marked; those who give her their hand may not return.",
+      "source": "https://en.wikipedia.org/wiki/Y_Ladi_Wen",
+      "detail": "Y Ladi Wen — the White Lady — is one of the most persistent apparitions in Welsh folk tradition, appearing at specific ancient sites: old wells, field crossroads, the ruins of pre-Norman churches, lonely stiles between parishes. She is always white, always female, always nocturnal, and her appearance is never a good sign.\n\nUnlike the English White Lady, who tends to be the ghost of a specific wronged woman, Y Ladi Wen is more elemental — not a person's spirit but a presence of the old landscape, associated with thresholds, boundaries, and liminal places where the membrane between worlds is thin. She is sometimes described as cold and insubstantial; sometimes she extends a hand and asks for company on the road, and those who take it are led away and not seen again until morning, if at all.\n\nThe strongest traditions cluster in Pembrokeshire and Ceredigion, where particular sites — a well near Fishguard, a stile above the Teifi valley — have named White Lady associations recorded in nineteenth-century county folklore collections. The figure is distinct from but clearly related to the Gwrach-y-Rhibyn, the Irish Banshee, and the broader tradition of female death-omens across the Celtic world."
     },
     {
       "name": "Yallery Brown",
@@ -3832,8 +3850,9 @@
       "lng": -5.568,
       "category": "location",
       "region": "Cornwall",
-      "summary": "Zennor is a village and civil parish in Cornwall, England, United Kingdom. The parish includes the villages of Zennor, Boswednack and Porthmeor and the hamlet of Treen. Zennor lies on the north coast, about 6 miles (10 km) north of Penzance, along the B3306 road which connects St Ives to the A30 road. Alphabetically, the parish is the last in Britain. Its name comes from the Cornish name for the local saint, Saint Senara.",
-      "source": "https://en.wikipedia.org/wiki/Zennor"
+      "summary": "A granite village on the wild north Cornish coast, famous for the carved mermaid on a 600-year-old bench-end in its church — left to commemorate the mermaid who heard Matthew Trewhella sing, lured him down to her underwater home, and kept him there. Ships still sometimes hear his voice singing under the sea off Pendour Cove.",
+      "source": "https://en.wikipedia.org/wiki/Zennor",
+      "detail": "Zennor sits on the north Cornish cliff-coast between St Ives and St Just, a place of granite walls, ancient field systems, and weather that comes in hard off the Atlantic. The church of Saint Senara contains one of the most famous pieces of wood-carving in Cornwall: a medieval bench-end showing a mermaid holding a comb and a mirror, cut at least six hundred years ago.\n\nThe legend attached to it runs like this: for years a beautiful and richly dressed woman came to the church at Zennor to hear a young man named Matthew Trewhella sing. She came and went without anyone learning her name or where she lived. Then she came no more — and Matthew was gone with her. Neither was seen again on land.\n\nA ship anchoring in Pendour Cove some time later was hailed by a mermaid, who asked the captain to raise his anchor because it was blocking the door of her home — she needed to get back to her children and to Matthew. The anchor was weighed, the ship moved, and the mermaid dove below the surface. Ships in the cove are said to sometimes hear Trewhella's voice rising from the water, still singing."
     },
     {
       "name": "Áine",

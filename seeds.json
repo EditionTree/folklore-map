@@ -1101,22 +1101,6 @@
     ]
   },
   {
-    "name": "Giant's Causeway",
-    "lat": 55.2408,
-    "lng": -6.5117,
-    "category": "giant",
-    "region": "Ireland",
-    "summary": "A volcanic shore of interlocking basalt columns explained in legend as the road built by Fionn mac Cumhaill to reach his Scottish giant rival. Geology and giantcraft shake hands here.",
-    "source": "https://en.wikipedia.org/wiki/Giant%27s_Causeway",
-    "date_added": "2026-06-03",
-    "tags": [
-      "coast",
-      "road",
-      "ireland",
-      "county-antrim"
-    ]
-  },
-  {
     "name": "Glastonbury Tor",
     "lat": 51.144,
     "lng": -2.699,
@@ -3939,7 +3923,7 @@
       "vanishing",
       "celtic",
       "arthurian",
-      "ireland",
+      "northern-ireland",
       "county-antrim"
     ]
   },
@@ -4090,22 +4074,6 @@
       "mountain",
       "ireland",
       "county-mayo"
-    ]
-  },
-  {
-    "name": "Giant's Causeway",
-    "lat": 55.24,
-    "lng": -6.511,
-    "category": "giant",
-    "region": "County Antrim, Ireland",
-    "summary": "Forty thousand interlocking basalt columns on the Antrim coast, built by the giant Fionn mac Cumhaill as a road to Scotland so he could fight his rival Benandonner. When Fionn saw his opponent's size, his wife disguised him as a baby — and Benandonner, terrified by the size of the 'infant', fled back to Scotland, tearing up the road behind him.",
-    "source": "https://en.wikipedia.org/wiki/Giant%27s_Causeway",
-    "date_added": "2026-06-03",
-    "tags": [
-      "coast",
-      "road",
-      "ireland",
-      "county-antrim"
     ]
   },
   {
@@ -5359,7 +5327,7 @@
     "tags": [
       "cave",
       "island",
-      "ireland",
+      "northern-ireland",
       "county-antrim"
     ]
   },
@@ -5392,7 +5360,7 @@
     "tags": [
       "castle",
       "celtic",
-      "ireland",
+      "northern-ireland",
       "county-armagh"
     ]
   },
@@ -5407,7 +5375,7 @@
     "date_added": "2026-06-03",
     "tags": [
       "spectral",
-      "ireland",
+      "northern-ireland",
       "county-londonderry"
     ]
   },
@@ -7233,7 +7201,7 @@
       "standing-stones",
       "barrow",
       "road",
-      "ireland",
+      "northern-ireland",
       "county-antrim"
     ]
   },
@@ -7551,7 +7519,7 @@
     "date_added": "2026-05-30",
     "tags": [
       "barrow",
-      "ireland",
+      "northern-ireland",
       "county-armagh"
     ]
   },
@@ -7569,7 +7537,7 @@
       "barrow",
       "castle",
       "celtic",
-      "ireland",
+      "northern-ireland",
       "county-armagh"
     ]
   },
@@ -7695,6 +7663,22 @@
       "mountain",
       "wales",
       "ceredigion"
+    ]
+  },
+  {
+    "name": "Giant's Causeway",
+    "lat": 55.24,
+    "lng": -6.511,
+    "category": "giant",
+    "region": "County Antrim, Ireland",
+    "summary": "Forty thousand interlocking basalt columns on the Antrim coast, built by the giant Fionn mac Cumhaill as a road to Scotland so he could fight his rival Benandonner. When Fionn saw his opponent's size, his wife disguised him as a baby — and Benandonner, terrified by the size of the 'infant', fled back to Scotland, tearing up the road behind him.",
+    "source": "https://en.wikipedia.org/wiki/Giant%27s_Causeway",
+    "date_added": "2026-06-03",
+    "tags": [
+      "coast",
+      "road",
+      "northern-ireland",
+      "county-antrim"
     ]
   }
 ]

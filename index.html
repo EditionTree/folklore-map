@@ -45,12 +45,33 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Crimson Text',
   position:absolute;inset:0;
   background:radial-gradient(ellipse 70% 55% at 50% 60%,rgba(196,98,42,0.10) 0%,transparent 70%);
   pointer-events:none;
+  z-index:2;
 }
 .hero::after{
   content:'';
   position:absolute;bottom:0;left:0;right:0;height:2px;
   background:linear-gradient(90deg,transparent,var(--gold) 20%,var(--accent-warm) 50%,var(--gold) 80%,transparent);
+  z-index:4;
 }
+/* Faded map peeking up from the bottom of the hero */
+.hero-map{
+  position:absolute;left:0;right:0;bottom:0;
+  height:64%;
+  background:url('hero-map.jpg') center bottom / cover no-repeat;
+  opacity:.55;
+  -webkit-mask-image:linear-gradient(to top,rgba(0,0,0,1) 0%,rgba(0,0,0,.9) 20%,rgba(0,0,0,.4) 58%,transparent 100%);
+  mask-image:linear-gradient(to top,rgba(0,0,0,1) 0%,rgba(0,0,0,.9) 20%,rgba(0,0,0,.4) 58%,transparent 100%);
+  pointer-events:none;
+  z-index:1;
+}
+.hero-scrim{
+  position:absolute;left:0;right:0;bottom:0;
+  height:64%;
+  background:linear-gradient(to top,rgba(26,14,6,0.55) 0%,rgba(26,14,6,0.30) 38%,transparent 78%);
+  pointer-events:none;
+  z-index:2;
+}
+.hero>*:not(.hero-map):not(.hero-scrim){position:relative;z-index:3}
 
 .hero-emblem{
   width:160px;height:160px;
@@ -395,6 +416,8 @@ footer a{color:var(--ink-light)}
 
 <!-- ── HERO ── -->
 <section class="hero">
+  <div class="hero-map" aria-hidden="true"></div>
+  <div class="hero-scrim" aria-hidden="true"></div>
   <img src="green-man.png" class="hero-emblem" alt="Green Man emblem"/>
   <h1 class="hero-title"><i class="title-gem">&#10022;</i><span class="title-text">Folklore Map of the British Isles</span><i class="title-gem">&#10022;</i></h1>
   <p class="hero-sub">Myths, Legends &amp; Spectral Encounters</p>

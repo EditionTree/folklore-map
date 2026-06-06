@@ -172,6 +172,7 @@ body{background:#e0d0b0;color:#2c1f0e;font-family:'Crimson Text',serif;line-heig
 
 def build_browse_page(page_title, desc, url, h1, intro, crumb, nav_html, cards_html):
     return ('<!DOCTYPE html>\n<html lang="en"><head><meta charset="UTF-8"/>\n'
+            '<script>if(location.hostname.indexOf("pages.dev")>-1){location.replace("https://folklorefinder.uk"+location.pathname+location.search+location.hash);}</script>\n'
             '<meta name="viewport" content="width=device-width, initial-scale=1.0"/>\n'
             '<title>' + esc(page_title) + '</title>\n'
             '<meta name="description" content="' + esc(desc) + '"/>\n'
@@ -225,6 +226,7 @@ PAGE = """<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8"/>
+<script>if(location.hostname.indexOf("pages.dev")>-1){{location.replace("https://folklorefinder.uk"+location.pathname+location.search+location.hash);}}</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>{title}</title>
 <meta name="description" content="{desc}"/>
@@ -524,6 +526,7 @@ def build():
     )
     index_html = f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"/>
+<script>if(location.hostname.indexOf("pages.dev")>-1){{location.replace("https://folklorefinder.uk"+location.pathname+location.search+location.hash);}}</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>All Legends &#8212; Folklore Map of the British Isles</title>
 <meta name="description" content="Browse all {written} myths, legends, ghosts and folklore entries across Britain and Ireland."/>

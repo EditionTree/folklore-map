@@ -85,7 +85,7 @@ def compute_related(legends, limit=10):
 
 
 # ── Browse-by-category / browse-by-region support ──────────────────────────
-NATIONS = ["england", "scotland", "wales", "ireland", "isle-of-man", "channel-islands"]
+NATIONS = ["england", "scotland", "wales", "ireland", "northern-ireland", "isle-of-man", "channel-islands"]
 
 
 def prettify_region(tag):

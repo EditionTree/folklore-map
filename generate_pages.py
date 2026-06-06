@@ -109,6 +109,7 @@ def banner_html():
 def footer_html():
     return ('<footer style="text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a">'
             'Part of the Folklore Map of the British Isles &#183; &#169; EditionTree &#183; '
+            '<a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener" style="color:#5c4a2a">&#9749; Ko-fi</a> &#183; '
             '<a href="' + BASE + '/privacy.html" style="color:#5c4a2a">Privacy</a></footer>')
 
 
@@ -309,7 +310,7 @@ footer{{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}}
 {related}
 <a class="back" href="{base}/legends/">&#8592; Browse all legends</a>
 </div>
-<footer>Part of the Folklore Map of the British Isles &#183; &#169; EditionTree &#183; <a href="{base}/privacy.html" style="color:#5c4a2a">Privacy</a></footer>
+<footer>Part of the Folklore Map of the British Isles &#183; &#169; EditionTree &#183; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener" style="color:#5c4a2a">&#9749; Ko-fi</a> &#183; <a href="{base}/privacy.html" style="color:#5c4a2a">Privacy</a></footer>
 <script>
 document.querySelectorAll('.carousel').forEach(function(c){{
   var t=c.querySelector('.carousel-track');
@@ -564,7 +565,7 @@ li span{{display:block;font-size:12px;font-style:italic;color:#5c4a2a}}
 <div class="wrap"><h1>All Legends ({written})</h1>{browse_sections}<ul>
 {items}
 </ul></div>
-<footer style="text-align:center;padding:24px 20px;font-size:12px;color:#5c4a2a">Part of the Folklore Map of the British Isles &#183; &#169; EditionTree &#183; <a href="{BASE}/privacy.html" style="color:#5c4a2a">Privacy</a></footer>
+<footer style="text-align:center;padding:24px 20px;font-size:12px;color:#5c4a2a">Part of the Folklore Map of the British Isles &#183; &#169; EditionTree &#183; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener" style="color:#5c4a2a">&#9749; Ko-fi</a> &#183; <a href="{BASE}/privacy.html" style="color:#5c4a2a">Privacy</a></footer>
 </body></html>"""
     with io.open(os.path.join(OUT_DIR, "index.html"), "w", encoding="utf-8") as f:
         f.write(index_html)

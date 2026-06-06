@@ -60,14 +60,6 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Crimson Text',
 .release ul{margin:0;padding-left:20px}
 .release li{margin-bottom:7px;font-size:16px}
 
-/* ── ADDITIONS ── */
-.add-group{margin-bottom:20px}
-.add-date{font-family:'Cinzel',serif;font-size:14px;color:var(--ink);margin-bottom:10px;padding-bottom:5px;border-bottom:1px solid rgba(176,144,96,.35)}
-.add-chips{display:flex;flex-wrap:wrap;gap:8px}
-.add-chip{font-size:13px;color:var(--accent);background:var(--parchment);border:1px solid var(--gold);border-radius:3px;padding:4px 10px;text-decoration:none;transition:border-color .15s}
-.add-chip:hover{border-color:var(--accent-warm)}
-.add-note{font-style:italic;color:var(--ink-light);font-size:14px}
-
 /* ── FOOTER ── */
 footer{text-align:center;padding:28px 20px;font-size:12px;color:var(--ink-light);border-top:1px solid rgba(176,144,96,0.2)}
 footer a{color:var(--ink-light)}
@@ -96,12 +88,6 @@ footer a{color:var(--ink-light)}
     <div id="siteUpdates"></div>
   </section>
 
-  <section class="section">
-    <div class="section-rule"><span>Latest Additions</span></div>
-    <p class="add-note" id="addNote">Loading the latest legends to join the map&hellip;</p>
-    <div id="additions"></div>
-  </section>
-
 </div>
 
 <footer>Part of the Folklore Map of the British Isles &nbsp;&#183;&nbsp; &copy; EditionTree &nbsp;&#183;&nbsp; <a href="./">Home</a> &nbsp;&#183;&nbsp; <a href="privacy.html">Privacy</a></footer>
@@ -114,7 +100,6 @@ footer a{color:var(--ink-light)}
       "New welcome page with a weekly featured legend, recently-added entries and instant search.",
       "Related Legends added to the foot of every entry page, linking kindred tales nearby and alike.",
       "Browse the whole collection by category or by region.",
-      "A clear distinction drawn between Ireland and Northern Ireland across the map.",
       "A dusk (night) mode for the map, easier on the eyes after dark.",
       "Moved to faster, more secure hosting."
     ] }
@@ -130,54 +115,6 @@ footer a{color:var(--ink-light)}
     box.appendChild(ul);
     su.appendChild(box);
   });
-
-  // ── Latest additions, grouped by date_added (newest first) ──
-  fetch('./legends.json')
-    .then(function(r){ return r.json(); })
-    .then(function(data){
-      var L = data.legends || [];
-      var byDate = {};
-      L.forEach(function(l){ if(l.date_added){ (byDate[l.date_added] = byDate[l.date_added] || []).push(l); } });
-      var dates = Object.keys(byDate).sort().reverse();
-      var wrap = document.getElementById('additions');
-      var note = document.getElementById('addNote');
-      if(!dates.length){ note.textContent = 'Additions will appear here as new legends join the map.'; return; }
-      note.textContent = 'The most recent legends to join the map.';
-      var founding = 0, shown = 0;
-      dates.forEach(function(date){
-        var items = byDate[date].slice().sort(function(a,b){ return a.name.localeCompare(b.name); });
-        // Large batches (the initial build & early bulk imports) are folded into one line.
-        if(items.length > 30){ founding += items.length; return; }
-        if(shown >= 15){ return; }
-        shown++;
-        var g = document.createElement('div'); g.className = 'add-group';
-        var h = document.createElement('div'); h.className = 'add-date';
-        var dt = new Date(date + 'T00:00:00');
-        var label = isNaN(dt) ? date : dt.toLocaleDateString('en-GB', {day:'numeric', month:'long', year:'numeric'});
-        h.textContent = label + ' — ' + items.length + (items.length === 1 ? ' legend' : ' legends');
-        g.appendChild(h);
-        var chips = document.createElement('div'); chips.className = 'add-chips';
-        items.forEach(function(l){
-          var a = document.createElement('a'); a.className = 'add-chip';
-          a.href = './map.html?legend=' + encodeURIComponent(l.name);
-          a.textContent = l.name;
-          chips.appendChild(a);
-        });
-        g.appendChild(chips);
-        wrap.appendChild(g);
-      });
-      if(founding){
-        var fg = document.createElement('div'); fg.className = 'add-group';
-        var fh = document.createElement('div'); fh.className = 'add-date';
-        fh.textContent = 'The founding collection — ' + founding + ' legends';
-        fg.appendChild(fh);
-        var fp = document.createElement('p'); fp.className = 'add-note';
-        fp.textContent = 'The legends the map first launched with.';
-        fg.appendChild(fp);
-        wrap.appendChild(fg);
-      }
-    })
-    .catch(function(){ document.getElementById('addNote').textContent = 'Could not load the latest additions just now.'; });
 })();
 </script>
 </body>

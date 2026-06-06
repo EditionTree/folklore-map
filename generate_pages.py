@@ -11,7 +11,7 @@ Run after legends.json changes:  python generate_pages.py
 """
 import json, io, os, re, unicodedata, html, urllib.parse, datetime, math
 
-BASE = "https://fmotbi.pages.dev"
+BASE = "https://folklorefinder.uk"
 OUT_DIR = "legends"
 
 # Thematic tag vocabulary (5 facets). Any tag NOT in here is treated as a

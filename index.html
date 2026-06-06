@@ -123,15 +123,15 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Crimson Text',
 .search-inner{
   display:flex;
   align-items:center;
-  background:rgba(242,232,213,0.10);
-  border:1px solid rgba(176,144,96,0.45);
+  background:rgba(26,14,6,0.5);
+  border:1px solid rgba(176,144,96,0.55);
   border-radius:4px;
   padding:0 14px;
   transition:border-color .15s, background .15s;
 }
 .search-inner:focus-within{
   border-color:var(--accent-warm);
-  background:rgba(242,232,213,0.15);
+  background:rgba(26,14,6,0.65);
 }
 .search-icon{
   color:var(--gold);
@@ -183,9 +183,10 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Crimson Text',
 .search-result-item .rr{font-style:italic;font-size:12px;color:var(--gold);margin-left:auto;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:160px}
 .search-hint{
   font-size:12px;
-  color:rgba(176,144,96,0.5);
+  color:rgba(228,206,160,0.85);
   margin-top:8px;
   font-style:italic;
+  text-shadow:0 1px 3px rgba(26,14,6,0.7);
 }
 
 /* ── CTA BUTTONS ── */
@@ -206,8 +207,8 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Crimson Text',
 }
 .btn-primary{background:var(--accent-warm);color:#f2e8d5;border:1px solid var(--accent-warm)}
 .btn-primary:hover{background:#a84d1e}
-.btn-secondary{background:transparent;color:rgba(242,232,213,0.8);border:1px solid rgba(176,144,96,0.45)}
-.btn-secondary:hover{border-color:var(--gold);color:#f2e8d5}
+.btn-secondary{background:rgba(26,14,6,0.55);color:#f2e8d5;border:1px solid rgba(176,144,96,0.55)}
+.btn-secondary:hover{background:rgba(26,14,6,0.78);border-color:var(--gold);color:#fff}
 
 /* ── BODY ── */
 .wrap{max-width:780px;margin:0 auto;padding:0 20px 70px}

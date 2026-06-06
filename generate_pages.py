@@ -571,7 +571,7 @@ li span{{display:block;font-size:12px;font-style:italic;color:#5c4a2a}}
 
     # sitemap.xml
     today = datetime.date.today().isoformat()
-    urls = [f"{BASE}/", f"{BASE}/{OUT_DIR}/", f"{BASE}/about.html", f"{BASE}/privacy.html"]
+    urls = [f"{BASE}/", f"{BASE}/{OUT_DIR}/", f"{BASE}/about.html", f"{BASE}/updates.html", f"{BASE}/privacy.html"]
     urls += browse_urls
     urls += [f"{BASE}/{OUT_DIR}/{slugmap[l['name']]}.html" for l in legends]
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',

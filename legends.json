@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-06T18:08:33.492413Z",
+  "generated": "2026-06-06T20:28:26.237194Z",
   "total": 462,
   "categories": {
     "beast": "Beasts",
@@ -332,7 +332,8 @@
         "death-omen",
         "spectral",
         "ireland"
-      ]
+      ],
+      "detail": "The banshee — from the Irish bean sídhe, 'woman of the fairy mound' — is the keening herald of death in Irish tradition. Her cry, heard in the night near a house, was the surest sign that one of the family would soon die. She is most often described as a woman with long streaming hair, dressed in white, grey or green, sometimes glimpsed combing her tresses, her face wet with weeping. Certain old Gaelic families — particularly those whose names begin with O' and Mac — were said to have their own banshee who mourned only their dead.\n\nHer wail echoes the caoineadh, the ritual keen once performed by living women over the bodies of the dead, here transformed into something otherworldly and prophetic. Related figures appear across the Celtic world, from the Scottish bean nighe, the washerwoman seen scrubbing the bloodstained linen of the doomed at a ford, to the Welsh cyhyraeth. Far from a malevolent spirit, the banshee does not cause death but grieves it in advance — a mournful guardian who attends a family's losses across the generations."
     },
     {
       "name": "Baobhan Sith",
@@ -1114,14 +1115,18 @@
       "lng": -0.168,
       "category": "location",
       "region": "Swineshead, Lincolnshire, England",
-      "summary": "A legend dating to at least the late 15th century holds that King John was poisoned at Swineshead Abbey in Lincolnshire in October 1216. According to the tale, a monk named Brother Simon, having first obtained absolution from Abbot William, put toad's venom into the king's cup of ale, then drank from it himself to allay suspicion — and both men died. The story appears in William Caxton's chronicle (c.1480) and in John Foxe's Book of Martyrs with a detailed woodcut entitled 'The Description of the Poysoning of King John, by a monk of Swinestead Abbeye in Lincolnshire'. The tale also circulates in the Lincolnshire Folk Tales tradition via Henry Winn's verse account. Historically, John is believed to have died of dysentery; the poisoning legend developed as a Protestant-era morality tale.",
+      "summary": "At Swineshead Abbey in 1216, a monk named Brother Simon allegedly poisoned King John's ale with toad venom, then drank it himself to allay suspicion — both men died.",
       "source": "https://www.lincolnshirelife.co.uk/heritage/king-johns-stay-at-swineshead-abbey/",
       "date_added": "2026-06-05",
       "tags": [
         "church",
         "england",
-        "lincolnshire"
-      ]
+        "lincolnshire",
+        "trickery",
+        "sacrifice",
+        "death-omen"
+      ],
+      "detail": "The earliest hint is a Norman French manuscript noting King John 'was poisoned by a brother of the house' at Swineshead Abbey in October 1216. The legend was first set in print by William Caxton in his Chronicles of England (c.1480) and received its most dramatic retelling in John Foxe's Acts and Monuments (1570), which included a sequence of woodcuts depicting the poisoning in near-comic-strip fashion. In Foxe's version, Brother Simon first obtained absolution from Abbot William, then introduced toad's venom into the king's ale cup; when John grew suspicious, Simon drank from it himself to prove it harmless. Both men died — the monk in his cell, the king days later at Newark Castle on 18–19 October 1216.\n\nAn unusual piece of physical evidence survives near the abbey ruins: a tomb effigy long described as depicting Brother Simon. It shows not a monk but a knight — leading some antiquarians to suggest he may have been a Knight Templar rather than a Cistercian brother, a detail that has never been resolved and adds an additional layer of mystery to the tale.\n\nHistorians are confident John died of dysentery contracted while campaigning in the Fens, and contemporaries like Roger of Wendover make no mention of poison. The legend developed in Protestant England as a morality tale: a treacherous monk willing to die to rid England of a king who had defied the Pope. Henry Winn's verse retelling circulated in Lincolnshire folk tradition, keeping the story vivid locally long after Swineshead Abbey itself crumbled."
     },
     {
       "name": "Brown Lady of Raynham Hall",
@@ -1924,7 +1929,8 @@
         "coast",
         "scotland",
         "skye"
-      ]
+      ],
+      "detail": "The Cù Sìth — the 'fairy dog' of the Scottish Highlands — is a spectral hound the size of a young bull, with a shaggy dark-green coat and a long braided or coiled tail. Unlike the black dogs of England it is green as the fairy mounds it haunts, and it moves in eerie silence save for the three great bays it gives when on the hunt. Those bays were a death-warning: anyone who heard them and failed to reach safety before the third was said to be overcome, or carried off.\n\nIn Highland belief the Cù Sìth served the fairies, ranging the moors and glens, and was especially feared as a stealer of nursing mothers, spirited away to suckle the children of the Otherworld. It was said to travel in a straight line across the land, often by hidden tracks, and its appearance was an omen no one wished to meet. The creature belongs to the rich Gaelic tradition of supernatural hounds and survives as one of the most distinctive of all the fairy beasts of Scotland."
     },
     {
       "name": "Cyhyraeth",
@@ -2343,7 +2349,7 @@
       "lng": -2.154,
       "category": "dragon",
       "region": "Deerhurst, Gloucestershire, England",
-      "summary": "A celebrated Gloucestershire dragon legend first recorded in Sir Robert Atkyns' The Ancient and Present State of Glostershire (1712). A dragon terrorised the parish of Deerhurst near Tewkesbury, poisoning the air with its breath and devouring cattle; the king promised an estate in the parish to whoever slew it. A local labourer named John Smith succeeded by setting out a trough of milk — the dragon drank its fill, lay down in the sun with scales spread open to cool itself, and Smith drove a large axe through its neck between the scales. In the early 18th century, the Smith family still held the estate and the ancestral axe was still being passed down. Carved dragon heads survive on the Saxon church at Deerhurst, providing visual continuity for the tradition.",
+      "summary": "The dragon of Deerhurst poisoned the air and cattle of Gloucestershire until a labourer named John Smith drove an axe between its scales — the Smith family held the promised royal estate until at least 1712.",
       "source": "https://www.gloucestershire.gov.uk/archives/learning-for-all/families/ugly-mugs/the-dragons-of-gloucestershire/",
       "date_added": "2026-06-05",
       "tags": [
@@ -2353,7 +2359,8 @@
         "serpent",
         "england",
         "gloucestershire"
-      ]
+      ],
+      "detail": "A serpent of prodigious size had settled near Deerhurst, close to Tewkesbury, poisoning the air with its breath and slaughtering the livestock of the surrounding parishes. The king issued a proclamation: whoever slew the dragon would receive the royal estate at Walton Hill in the parish. No knight or lord came forward. The task fell to a labourer named John Smith, who had observed the creature's habits. He set out a large trough of milk, waited for the dragon to drink its fill and settle in the sun with its scales spread open to cool itself, then drove a heavy axe through the gap between the scales and severed its head.\n\nThe legend is documented by Sir Robert Atkyns in The Ancient and Present State of Glostershire (1712), where he records not only the story but its physical continuity: the Smith family were still in possession of the Walton Hill estate at the time of writing, and an axe described as the ancestral weapon was in the hands of a Mr Lane, who had married a Smith widow. This is unusual in British dragon tradition — a legend with a documented inheritance chain traceable to within living memory of Atkyns' own informants.\n\nThe Saxon church of St Mary the Virgin at Deerhurst, one of England's finest pre-Conquest buildings, bears carved dragon heads on its exterior stonework. Whether the stone dragons inspired the legend or merely reinforced it, they have bound the church and the tale together in parish memory for centuries. The Deerhurst dragon belongs to a tradition of saint-free dragon-slaying: a pragmatic Englishman solving a local problem with an axe and a trough of milk, his reward a piece of land his family kept for half a millennium."
     },
     {
       "name": "Dragon of Mordiford",
@@ -2571,14 +2578,17 @@
       "lng": -4.713,
       "category": "fairy",
       "region": "Lynn, Dalry, North Ayrshire, Scotland",
-      "summary": "The Court of Elfhame is the fairy otherworld of Scottish tradition — a parallel realm whose queen and courtiers could be encountered by those with supernatural gifts. Bessie Dunlop of Lynn near Dalry was tried for witchcraft in 1576 after claiming her healing powers came from Thomas Reid, a man dead since Pinkie, who now walked with the fairy court. Eight women and four men from Elfhame visited her home — called 'good wights' by Reid — and the Queen herself had once come to her door seeking a drink. Andro Man of Aberdeen (tried 1597) claimed a lifelong relationship with the Queen of Elphame. James VI drew on such confessions when writing Daemonologie, making Elfhame the distinctly Scottish name for the fairy kingdom as it appeared in witch-trial testimony and popular belief.",
+      "summary": "Elfhame is the fairy otherworld of Scottish tradition, known from 1576 witch-trial testimony where Bessie Dunlop claimed her healing gifts came from a Pinkie soldier now walking with the fairy court.",
       "source": "https://en.wikipedia.org/wiki/Bessie_Dunlop",
       "date_added": "2026-06-01",
       "tags": [
         "healing",
         "scotland",
-        "ayrshire"
-      ]
+        "ayrshire",
+        "prophecy",
+        "celtic"
+      ],
+      "detail": "Bessie Dunlop of Lynn, near Dalry in Ayrshire, was tried for witchcraft at the High Court of Justiciary in Dalkeith in September 1576. Her defence was unusual: she insisted her powers of healing and prophecy came entirely from Thomas Reid, a barony officer killed at the Battle of Pinkie in 1547, who had returned to walk with the Court of Elfhame. She was not a witch who had made a pact with the devil, she argued — she was a healer guided by a dead neighbour and his fairy companions. The court did not share the distinction. Found guilty, she was strangled and burned.\n\nBessie's trial testimony is remarkably specific about the Elfhame court's visits to her home. Eight women and four men came, described by Thomas Reid as 'good wights' — the Good Neighbours. The Queen of Elfhame herself had once appeared at Bessie's door seeking a drink of water. Andro Man of Aberdeen, tried in 1597, claimed a lifelong relationship with the Queen of Elphame begun in his youth, further confirming the recurring figure of an Elfhame queen across Scottish witchcraft confessions of the period.\n\nJames VI took a close interest in such confessions and drew on them when writing his Daemonologie (1597), which attempted to systematise demonic belief and distinguish it from fairy superstition. Elfhame occupies a distinctive position in British supernatural geography: not quite hell, not quite the romanticised fairyland of later centuries, but a morally ambiguous parallel realm — one whose queen could be invoked as a defence in a capital trial."
     },
     {
       "name": "Enfield Poltergeist",
@@ -3072,7 +3082,8 @@
         "guardian",
         "england",
         "london"
-      ]
+      ],
+      "detail": "Gog and Magog are the guardian giants of the City of London, the last survivors of a race of giants said to have inhabited Britain — or Albion — before the coming of man. In the legendary history popularised by Geoffrey of Monmouth, Brutus of Troy and his companion Corineus came to these shores and overcame the native giants; the greatest was hurled into the sea, and the survivors set to labour as porters at the gate of the founders' new city.\n\nFor centuries their effigies have stood guard at London's Guildhall, and carved figures of the two giants are carried through the streets in the Lord Mayor's Show, a custom recorded since the fifteenth century. The wickerwork and wooden giants have been destroyed and remade many times — lost in the Great Fire, shattered in the Blitz — and always restored, for the city regards them as its protectors. Gog and Magog bind London to the oldest layer of British legend: the myth of the giants of Albion who walked the land before history began."
     },
     {
       "name": "Gogmagog",
@@ -3785,7 +3796,8 @@
         "river",
         "england",
         "lancashire"
-      ]
+      ],
+      "detail": "Jenny Greenteeth is a river hag of north-west England, a grasping water demon long used to frighten children away from dangerous ponds and weed-choked pools. She lurks beneath the green scum of stagnant water — the duckweed that gives her her name — and seizes those who stray too near, dragging them under with long sinewy arms and pallid green skin, her sharp teeth bared. Mothers across Lancashire, Cheshire and Shropshire invoked her to keep the young from the water's edge.\n\nShe belongs to a wider family of British 'nursery bogies' — water-dwelling threats like Peg Powler of the Tees and the grindylows of Yorkshire — whose real purpose was protective: a vivid supernatural stand-in for the genuine danger of drowning. The very weed she hides beneath is itself a hazard, masking deep water as solid ground. In this Jenny Greenteeth endures as folklore doing practical work, a monster conjured to keep children alive."
     },
     {
       "name": "Jingling Geordie's Hole",
@@ -3846,7 +3858,8 @@
         "shapeshifter",
         "scotland",
         "highland"
-      ]
+      ],
+      "detail": "The kelpie is Scotland's most notorious water spirit, a shape-shifting horse that haunts the country's lochs and rivers. It appears most often as a fine grey or black pony lingering at the water's edge, its coat dripping, inviting the weary or the curious to climb onto its back. The moment a rider mounts they find themselves stuck fast as the creature plunges into the deep to drown and devour them — only the liver or entrails, it was said, would later wash ashore.\n\nThe kelpie could also take human form, usually a handsome stranger, betrayed by the water weed or sand tangled in its hair. Folklorists recorded the belief across the Highlands as both a genuine dread of treacherous waters and a warning to keep children from dangerous banks. Tales tell of those who escaped by seizing its enchanted bridle, which was said to grant mastery over the beast. The kelpie's enduring hold on the Scottish imagination is now made monumental in The Kelpies, the colossal steel horse-heads that rise beside the canal at Falkirk."
     },
     {
       "name": "Kelpie of Loch Garve",
@@ -3854,7 +3867,7 @@
       "lng": -4.742,
       "category": "water",
       "region": "Ross-shire, Highland Scotland",
-      "summary": "A distinctive kelpie legend from Loch Garve in Ross-shire, Highland Scotland, notable for its unusually compassionate resolution. Unlike most kelpie tales, this story describes a water horse that falls genuinely in love with a woman he has abducted, taking her to his underwater realm at the loch's bottom. Realising she missed warmth and firelight, the kelpie transformed into a horse and sought out a master stonemason, agreeing to spare the mason's life in exchange for building an underwater chimney and fireplace. The pact was honoured — and to this day a section of Loch Garve never freezes over, attributed to the heat from the kelpie's chimney below. The legend is one of the few in the Scottish water-horse tradition with a narrative of mutual obligation rather than malice.",
+      "summary": "The kelpie of Loch Garve fell in love with his captive and built her an underwater fireplace — and to this day one stretch of the loch never freezes, said to be warmed by the chimney below.",
       "source": "https://garve.org/the-loch-garve-kelpie",
       "date_added": "2026-06-05",
       "tags": [
@@ -3866,7 +3879,8 @@
         "love",
         "scotland",
         "highland"
-      ]
+      ],
+      "detail": "A young woman walking the shores of Loch Garve in Ross-shire was drawn to an extraordinarily beautiful stallion standing at the water's edge. She approached, mounted it — and the horse plunged beneath the surface, transforming as it descended into its true each-uisge form. Unlike most water-horse legends, which end in drowning and consumption, this one diverges into something stranger: the creature had genuinely fallen in love. Using his power, he allowed her to breathe underwater and brought her to his realm at the loch's bottom.\n\nAs time passed, the woman grew miserable with cold and dark. The kelpie, determined to give her warmth, sought out the finest stonemason in the Highlands. He transformed into a horse and confronted the mason — but rather than terrorising him, he made a pact: build a fireplace and chimney beneath the loch, and I will spare your life. The stonemason created something extraordinary: sculpted arches, ornate pillars, a chimney shaft rising to just below the surface. Both parties honoured the agreement.\n\nThe legend offers a kind of proof that can still be verified. There is a section of Loch Garve well-known locally — that does not freeze over even in the sharpest Highland winters, while the surrounding water ices normally. This is attributed to the heat rising from the kelpie's chimney far below. The tale stands apart in the Scottish water-horse tradition for its resolution of mutual obligation: not a warning against approaching strange horses, but a story of desire, bargain, and an otherworldly love that left its mark on the physical landscape."
     },
     {
       "name": "Kilkenny Witch Trials",
@@ -3895,7 +3909,8 @@
         "arthurian",
         "england",
         "somerset"
-      ]
+      ],
+      "detail": "Arthur is the once and future king of British legend: a war-leader who, in the chaos following the Roman withdrawal, is said to have united the Britons and held back the advancing Saxons through a series of battles culminating in the great victory at Mount Badon. Around this possibly historical figure gathered the richest story-cycle in these islands — the sword drawn from the stone, the fellowship of the Round Table at Camelot, the wizard Merlin, the quest for the Holy Grail, the love of Lancelot and Guinevere, and the final betrayal that brought it all down at the Battle of Camlann.\n\nHe is woven into the landscape from Cornwall to Scotland, but the West Country holds his strongest claims: Glastonbury, identified since the Middle Ages with the Isle of Avalon where the mortally wounded king was carried, and where the monks claimed to have unearthed his grave in 1191. Tradition holds that Arthur never truly died but sleeps beneath a hill with his knights, ready to return in Britain's hour of greatest need. His legend was shaped above all by Geoffrey of Monmouth's 'History of the Kings of Britain' (c.1136) and Sir Thomas Malory's 'Le Morte d'Arthur' (1485), and has never loosened its grip on the imagination since."
     },
     {
       "name": "Kirkcudbright Tolbooth",
@@ -4075,7 +4090,8 @@
         "hill",
         "england",
         "durham"
-      ]
+      ],
+      "detail": "The Lambton Worm is the great dragon-legend of north-east England. The story tells how the young heir of Lambton, fishing in the River Wear one Sunday instead of going to church, hauled out a small, foul, worm-like creature and, in disgust, threw it down a well. There it grew monstrous, emerging at last to coil itself three times around a nearby hill and to lay waste the countryside, devouring livestock and milk while the heir was away at the Crusades.\n\nOn his return he sought the counsel of a wise woman, who told him to fight the worm wearing armour studded with spear-blades and to do battle in the middle of the river. As the creature wrapped him in its coils they were sliced apart against the blades, and the current swept the pieces away before they could rejoin. But the wise woman had set a price: he must then slay the first living thing he met, or a curse would fall on nine generations of Lambtons. When his own father ran to greet him he could not do it — and the curse, the legend says, duly followed the family for lifetimes. The tale is beloved in County Durham, kept alive above all by the celebrated Victorian music-hall song that recounts it in broad Geordie dialect."
     },
     {
       "name": "Lancashire Witches Walk",
@@ -4684,7 +4700,8 @@
         "prophecy",
         "arthurian",
         "wales"
-      ]
+      ],
+      "detail": "Merlin is the archetypal wizard of British legend — prophet, shape-shifter and kingmaker, the guiding intelligence behind the rise of Arthur. Born, in the medieval telling, of a mortal woman and an incubus, he turned his uncanny parentage to good. As a boy he confounded the tyrant Vortigern by revealing the two dragons, red and white, battling beneath his ever-collapsing tower — a prophecy of the long struggle between Britons and Saxons. He went on to contrive Arthur's birth, to set the sword in the stone, and to counsel the young king until his own undoing.\n\nMerlin draws on at least two older figures: Geoffrey of Monmouth's Merlinus, derived in part from the Welsh prophet Myrddin, and a wild man of the northern woods driven mad by grief in battle. Geoffrey's 'Prophecies of Merlin' and 'History of the Kings of Britain' (c.1136) fixed him in the European imagination. Welsh tradition ties him to Carmarthen — Caerfyrddin, 'Merlin's fort' — and to the great works of the past such as Stonehenge, which legend says he raised by magic. He ends ensnared by his own pupil, the Lady of the Lake, sealed forever in a cave or a tree: the seer who foresaw all things but his own fall."
     },
     {
       "name": "Merlin's Cave",
@@ -4873,7 +4890,8 @@
         "arthurian",
         "england",
         "cornwall"
-      ]
+      ],
+      "detail": "Morgan le Fay is the great enchantress of the Arthurian legend, a figure who shifts across the centuries from benevolent healer to formidable adversary. In her earliest appearances she is an otherworldly woman of Avalon, chief of nine sisters skilled in healing and shape-changing, who receives the wounded Arthur after his last battle and tends him on the magical isle. In later medieval romance she hardens into Arthur's half-sister and rival, a sorceress who schemes against Camelot, steals the scabbard of Excalibur and tests the virtue of his knights.\n\nHer very name links her to older Celtic goddesses and to the fairy Otherworld — 'le Fay' means 'the fairy' — and she keeps throughout an ambiguity that sets her apart from simple villainy. Whatever her mood, it is she who returns at the end to bear Arthur away across the water to Avalon, the healer once more. Geoffrey of Monmouth named her in his 'Life of Merlin' (c.1150) and Sir Thomas Malory gave her the darker cast best known today; through both she remains one of the most complex and enduring women of British legend."
     },
     {
       "name": "Morgawrr",
@@ -5194,7 +5212,8 @@
         "sea",
         "scotland",
         "orkney"
-      ]
+      ],
+      "detail": "The Nuckelavee is the most monstrous and dreaded creature in the folklore of Orkney — a demon of the sea so horrible that even other spirits were said to fear it. It took the shape of a skinless horse-like beast fused with a rider that was part of its own body: a single great eye burning red, an enormous lolling head, and a man's torso whose arms reached almost to the ground — all of it raw red flesh and black blood coursing through yellow veins, with no skin to cover it. Its very breath blighted crops, sickened livestock and brought the wasting epidemic the islanders called mortasheen.\n\nThe Nuckelavee could not abide fresh water, and the one sure escape was to cross a running stream, which it would not follow. It was held in check only by the Mither o' the Sea, a summer spirit who confined it through the warmer months. The fullest account comes from the nineteenth-century Orkney folklorist Walter Traill Dennison, who gathered the tale from islanders for whom it was a living dread. Skinless, sea-born and pestilent, the Nuckelavee stands among the most genuinely frightening monsters in all of British and Irish legend."
     },
     {
       "name": "Oilliphéist",
@@ -5382,7 +5401,8 @@
         "hill",
         "england",
         "lancashire"
-      ]
+      ],
+      "detail": "The trial of the Pendle witches in 1612 is the most famous and best-documented witch case in English history. In the shadow of Pendle Hill, two rival families headed by the aged 'cunning women' known as Old Demdike and Old Chattox stood accused, with several neighbours, of a string of murders by witchcraft. The case grew from a beggar's curse that supposedly struck a pedlar lame, and unravelled into accusations of a witches' gathering at Malkin Tower on Good Friday.\n\nMuch of the testimony came from nine-year-old Jennet Device, whose evidence helped condemn members of her own family, including her mother. Ten of the accused were hanged at Lancaster and one died in gaol. The proceedings were recorded in extraordinary detail by the clerk of the court, Thomas Potts, in 'The Wonderfull Discoverie of Witches in the Countie of Lancaster' (1613) — which remains our fullest window onto a Jacobean witch trial. Today Pendle Hill is inseparable from that history, drawing visitors to a landscape that has become a byword for English witchcraft."
     },
     {
       "name": "Penhale Sands",
@@ -5677,7 +5697,8 @@
         "battle",
         "scotland",
         "border"
-      ]
+      ],
+      "detail": "The Redcap is among the most bloodthirsty of all the goblins of British folklore — a squat, powerful old man with burning red eyes, iron claws and great teeth, who haunts the ruined peel towers and castles of the Anglo-Scottish border, the blood-soaked ground of centuries of reiving and war. He takes his name from the cap he dyes afresh in the blood of travellers unlucky enough to shelter in his keep, for the legend holds that should the blood in his cap ever dry, he will die.\n\nDespite the iron boots he wears he moves with terrible speed, and no strength of arm can stop him. The one defence recorded against him is scripture: confronted with words of the Bible or the brandished cross, the Redcap gives a great screech and vanishes, leaving a single tooth behind. He is bound tightly to the lawless history of the Borders, where the abandoned strongholds of feuding families made fitting lairs, and he remains one of the darkest figures in the folklore of that long-contested country."
     },
     {
       "name": "Renwick Cockatrice",
@@ -7440,7 +7461,7 @@
       "lng": -0.807,
       "category": "witch",
       "region": "Belvoir, Leicestershire, England",
-      "summary": "The Witches of Belvoir were Joan Flower and her daughters Margaret and Philippa, from Bottesford, accused of causing the deaths of two young sons of Francis Manners, 6th Earl of Rutland, at Belvoir Castle. The Flower women had worked for the earl and been dismissed; they were accused of working a fatal curse using stolen grave-soil and a stolen glove. Joan Flower died in Lincoln gaol in 1618 — allegedly choking on bread-and-butter after calling down divine punishment on herself if guilty. Margaret and Philippa were hanged in 1619. A pamphlet published that year spread the story widely; the dead boys are commemorated by effigies in St Mary's Church, Bottesford, which bear an inscription referencing 'wicked practise and sorcerye'.",
+      "summary": "Joan Flower and her daughters were hanged in 1619 for cursing the sons of the Earl of Rutland at Belvoir Castle; Joan herself died in gaol after calling divine punishment on herself if she were guilty.",
       "source": "https://en.wikipedia.org/wiki/Witches_of_Belvoir",
       "date_added": "2026-06-05",
       "tags": [
@@ -7448,8 +7469,10 @@
         "church",
         "curse",
         "england",
-        "leicestershire"
-      ]
+        "leicestershire",
+        "revenge"
+      ],
+      "detail": "Joan Flower and her daughters Margaret and Philippa lived in Bottesford near Belvoir Castle, the seat of Francis Manners, 6th Earl of Rutland. Joan and at least one daughter had worked at the castle and been dismissed, apparently for pilfering. When two of the earl's young sons — Henry Lord Roos, who died in 1613, and his brother Francis, who died in 1620 — fell into mysterious fatal illness, suspicion turned to the Flowers. They were accused of working a wasting curse using stolen graveyard soil and a glove belonging to one of the boys, buried and left to rot as the child sickened alongside it.\n\nJoan Flower was arrested around Christmas 1618. She died before reaching Lincoln, allegedly in the act of calling a curse on herself: demanding that a piece of bread and butter stick in her throat if she were guilty of witchcraft, whereupon she choked and died. Margaret and Philippa were tried at Lincoln assizes and hanged on 11 March 1619. The only surviving record of the trial is the pamphlet published that same year — The Wonderful Discoverie of the Witchcrafts of Margaret and Phillippa Flower — since the Lincoln assize records have been lost. A broadside ballad, Damnable Practises of Three Lincolnshire Witches, spread the story further.\n\nThe two dead Manners boys are commemorated by alabaster effigies in St Mary the Virgin church at Bottesford, laid alongside their parents' monument. The inscription carved into the tomb openly references 'wicked practise and sorcerye' — the only monument in an English parish church known to record a witchcraft accusation explicitly. The case circulated widely in a period when James I, author of Daemonologie before his accession, took a close personal interest in witchcraft prosecutions."
     },
     {
       "name": "Witches' Well",

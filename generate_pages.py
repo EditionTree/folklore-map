@@ -3,7 +3,7 @@
 generate_pages.py — emit static, SEO-indexable HTML pages, one per legend,
 plus an A-Z index page and a full sitemap.xml.
 
-These pages are served by GitHub Pages independently of the main map app.
+These pages are served by Cloudflare Pages independently of the main map app.
 A visitor only ever loads one of them at a time (arriving from search or a
 shared link); the interactive map (map.html) is unaffected.
 

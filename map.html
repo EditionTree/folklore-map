@@ -906,7 +906,12 @@ const EXCLUDED_LEGEND_NAMES = new Set([
   'English Channel',
 ]);
 
-const BOUNDS = L.latLngBounds([44.0, -16.0], [67.0, 9.0]);
+// Viewing/pan bounds only — NOT the legend-acceptance range (that lives in the
+// QC agent). Mobile gets a much larger pan box (~2x linear span) so the isles
+// aren't clamped against the edge on a narrow screen.
+const DESKTOP_BOUNDS = L.latLngBounds([44.0, -16.0], [67.0, 9.0]);
+const MOBILE_BOUNDS  = L.latLngBounds([34.0, -27.0], [76.0, 20.0]);
+const BOUNDS = window.matchMedia('(max-width: 640px)').matches ? MOBILE_BOUNDS : DESKTOP_BOUNDS;
 const map = L.map('map', {
   zoomControl: true, minZoom: 5, maxZoom: 17,
   maxBounds: BOUNDS, maxBoundsViscosity: 0.7,

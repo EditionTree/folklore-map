@@ -670,10 +670,28 @@ def is_duplicate(name: str, existing_names: set) -> bool:
     return False
 
 
+# A few seed names are genuine duplicates of an existing canonical entry
+# (e.g. "Cerne Abbas Giant"). These stay on the blocklist even though they
+# may appear in seeds, so we never get a double pin on the map.
+BLOCKLIST_KEEP = {
+    "The Giant of Cerne Abbas",
+    "St Leonard's Forest Dragons",
+    "Mordiford Dragon",
+}
+
+
 def apply_cleanup(legends: dict) -> dict:
     removed = fixed = renamed = 0
+    # Hand-curated seeds always take priority and must never be silently
+    # dropped by the junk blocklist. Subtract seed names from the effective
+    # remove set (except the explicit BLOCKLIST_KEEP duplicates above) so a
+    # deliberately-curated entry can never be killed by a stale REMOVE_ENTRIES
+    # line — this previously lost ~20 real entries (Sutton Hoo, Overtoun
+    # Bridge, the white horses, etc.).
+    seed_names = {l["name"] for l in SEED_LEGENDS}
+    effective_remove = REMOVE_ENTRIES - (seed_names - BLOCKLIST_KEEP)
     for name in list(legends.keys()):
-        if name in REMOVE_ENTRIES:
+        if name in effective_remove:
             del legends[name]
             removed += 1
             continue

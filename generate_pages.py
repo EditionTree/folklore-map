@@ -84,6 +84,117 @@ def compute_related(legends, limit=10):
     return related
 
 
+# ── Browse-by-category / browse-by-region support ──────────────────────────
+NATIONS = ["england", "scotland", "wales", "ireland", "isle-of-man", "channel-islands"]
+
+
+def prettify_region(tag):
+    special = {"isle-of-man": "Isle of Man", "channel-islands": "Channel Islands"}
+    if tag in special:
+        return special[tag]
+    if tag.startswith("county-"):
+        return "County " + tag[7:].replace("-", " ").title()
+    return tag.replace("-", " ").title()
+
+
+def banner_html():
+    return ('<header class="site-banner"><a class="banner-link" href="' + BASE + '/">'
+            '<img src="' + BASE + '/green-man.png" class="banner-emblem" alt=""/>'
+            '<span class="banner-text"><span class="banner-title"><i>&#10022;</i> '
+            'Folklore Map of the British Isles <i>&#10022;</i></span>'
+            '<span class="banner-sub">Myths, Legends &amp; Spectral Encounters</span>'
+            '</span></a></header>')
+
+
+def footer_html():
+    return ('<footer style="text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a">'
+            'Part of the Folklore Map of the British Isles &#183; &#169; EditionTree &#183; '
+            '<a href="' + BASE + '/privacy.html" style="color:#5c4a2a">Privacy</a></footer>')
+
+
+def nav_links(items, active):
+    """items: list of (url, label, key)."""
+    parts = ['<nav class="browse-nav">']
+    for url, label, key in items:
+        cls = ' class="active"' if key == active else ''
+        parts.append('<a href="' + url + '"' + cls + '>' + esc(label) + '</a>')
+    parts.append('</nav>')
+    return ''.join(parts)
+
+
+def browse_card(leg, slugmap, cats, meta, show_cat):
+    cat = leg.get("category", "")
+    href = BASE + "/" + OUT_DIR + "/" + slugmap[leg["name"]] + ".html"
+    chip = ""
+    if show_cat:
+        colour = meta.get(cat, {}).get("colour", "#8b3a1a")
+        chip = ('<span class="b-cat" style="background:' + esc(colour) + '">'
+                + esc(cats.get(cat, cat)) + '</span>')
+    return ('<a class="b-card" href="' + href + '">' + chip
+            + '<span class="b-name">' + esc(leg["name"]) + '</span>'
+            + '<span class="b-region">' + esc(leg.get("region", "")) + '</span></a>')
+
+
+BROWSE_STYLE = """
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#e0d0b0;color:#2c1f0e;font-family:'Crimson Text',serif;line-height:1.7;min-height:100vh}
+.site-banner{position:relative;background:linear-gradient(135deg,rgba(196,98,42,0.18) 0%,rgba(176,144,96,0.06) 35%,transparent 60%),linear-gradient(180deg,#3d2510 0%,#1a0e06 45%,#2c1f0e 100%);padding:16px 20px;text-align:center}
+.site-banner::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,#8b3a1a 15%,#b09060 50%,#8b3a1a 85%,transparent)}
+.site-banner::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(176,144,96,.6) 20%,rgba(196,98,42,.8) 50%,rgba(176,144,96,.6) 80%,transparent)}
+.banner-link{display:inline-flex;align-items:center;gap:13px;text-decoration:none}
+.banner-emblem{width:48px;height:48px;object-fit:contain;flex-shrink:0}
+.banner-text{display:flex;flex-direction:column;align-items:center;line-height:1.15}
+.banner-title{font-family:'Cinzel',serif;font-size:21px;font-weight:600;color:#f2e8d5;letter-spacing:.09em;display:flex;align-items:center;justify-content:center;gap:9px}
+.banner-title i{color:#c4622a;font-style:normal;font-size:.6em;flex-shrink:0}
+.banner-sub{font-family:'Crimson Text',serif;font-size:12px;font-style:italic;color:rgba(176,144,96,.8);letter-spacing:.04em}
+@media(max-width:560px){.banner-title{font-size:15px}.banner-emblem{width:38px;height:38px}.banner-sub{font-size:11px}}
+.wrap{max-width:760px;margin:0 auto;padding:24px 20px 60px}
+.crumb{font-size:12px;color:#5c4a2a;margin-bottom:14px}
+.crumb a{color:#8b3a1a;text-decoration:none}
+.browse-h1{font-family:'Cinzel',serif;font-size:27px;margin-bottom:6px;color:#2c1f0e;line-height:1.15}
+.browse-intro{font-size:16px;color:#5c4a2a;margin-bottom:16px}
+.browse-nav{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}
+.browse-nav a{font-family:'Cinzel',serif;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#8b3a1a;border:1px solid #b09060;border-radius:3px;padding:5px 11px;text-decoration:none}
+.browse-nav a:hover,.browse-nav a.active{background:#8b3a1a;color:#f2e8d5;border-color:#8b3a1a}
+.browse-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+.b-card{background:#f2e8d5;border:1px solid #b09060;border-radius:5px;padding:14px 15px;text-decoration:none;color:#2c1f0e;transition:border-color .15s,transform .1s}
+.b-card:hover{border-color:#c4622a;transform:translateY(-2px)}
+.b-card span{display:block}
+.b-cat{font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:#8b3a1a;padding:2px 8px;border-radius:3px;margin-bottom:8px;width:max-content;max-width:100%}
+.b-name{font-family:'Cinzel',serif;font-size:15px;line-height:1.25;margin-bottom:4px}
+.b-region{font-style:italic;font-size:12px;color:#5c4a2a}
+.back{display:inline-block;margin-top:24px;font-size:13px;color:#5c4a2a}
+@media(max-width:560px){.browse-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:380px){.browse-grid{grid-template-columns:1fr}}
+"""
+
+
+def build_browse_page(page_title, desc, url, h1, intro, crumb, nav_html, cards_html):
+    return ('<!DOCTYPE html>\n<html lang="en"><head><meta charset="UTF-8"/>\n'
+            '<meta name="viewport" content="width=device-width, initial-scale=1.0"/>\n'
+            '<title>' + esc(page_title) + '</title>\n'
+            '<meta name="description" content="' + esc(desc) + '"/>\n'
+            '<link rel="canonical" href="' + url + '"/>\n'
+            '<link rel="icon" type="image/png" href="' + BASE + '/favicon.png"/>\n'
+            '<meta property="og:type" content="website"/>\n'
+            '<meta property="og:title" content="' + esc(h1) + '"/>\n'
+            '<meta property="og:description" content="' + esc(desc) + '"/>\n'
+            '<meta property="og:url" content="' + url + '"/>\n'
+            '<meta property="og:image" content="' + BASE + '/og/preview.png"/>\n'
+            '<link rel="preconnect" href="https://fonts.googleapis.com">\n'
+            '<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">\n'
+            '<style>' + BROWSE_STYLE + '</style></head>\n<body>\n'
+            + banner_html() + '\n<div class="wrap">\n'
+            '<nav class="crumb"><a href="' + BASE + '/">Home</a> &#8250; '
+            '<a href="' + BASE + '/' + OUT_DIR + '/">All legends</a> &#8250; '
+            '<span>' + esc(crumb) + '</span></nav>\n'
+            '<h1 class="browse-h1">' + esc(h1) + '</h1>\n'
+            '<p class="browse-intro">' + esc(intro) + '</p>\n'
+            + nav_html + '\n<div class="browse-grid">\n' + cards_html
+            + '\n</div>\n<a class="back" href="' + BASE + '/' + OUT_DIR + '/">&#8592; Browse all legends</a>\n'
+            '</div>\n' + footer_html() + '\n</body></html>')
+
+
 def slugify(name):
     s = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode("ascii")
     s = s.lower()
@@ -326,6 +437,84 @@ def build():
             f.write(out)
         written += 1
 
+    # ── Browse-by-category & browse-by-region pages ────────────────────────
+    cat_dir = os.path.join(OUT_DIR, "category")
+    reg_dir = os.path.join(OUT_DIR, "region")
+    os.makedirs(cat_dir, exist_ok=True)
+    os.makedirs(reg_dir, exist_ok=True)
+
+    cat_groups, region_groups = {}, {}
+    for leg in legends:
+        cat_groups.setdefault(leg.get("category", ""), []).append(leg)
+        for tag in (set(leg.get("tags") or []) - THEMATIC_TAGS):
+            region_groups.setdefault(tag, []).append(leg)
+
+    browse_urls = []
+
+    # Category pages
+    cat_order = sorted(cat_groups, key=lambda c: -len(cat_groups[c]))
+    cat_nav_items = [(f"{BASE}/{OUT_DIR}/category/{c}.html", cats.get(c, c), c) for c in cat_order]
+    for c in cat_order:
+        entries = sorted(cat_groups[c], key=lambda l: l["name"].lower())
+        label = cats.get(c, c)
+        url = f"{BASE}/{OUT_DIR}/category/{c}.html"
+        cards = "\n".join(browse_card(l, slugmap, cats, meta, show_cat=False) for l in entries)
+        page = build_browse_page(
+            page_title=f"{label} of Britain & Ireland — Folklore Map",
+            desc=f"Browse {len(entries)} {label.lower()} from across British and Irish folklore — each pinned to the place its story is rooted.",
+            url=url,
+            h1=label,
+            intro=f"{len(entries)} {label.lower()} and related folklore from across Britain and Ireland.",
+            crumb=label,
+            nav_html=nav_links(cat_nav_items, c),
+            cards_html=cards,
+        )
+        with io.open(os.path.join(cat_dir, f"{c}.html"), "w", encoding="utf-8") as f:
+            f.write(page)
+        browse_urls.append(url)
+
+    # Region pages — nations always, other areas only if >= 4 entries (avoid thin pages)
+    region_eligible = [t for t in region_groups if t in NATIONS or len(region_groups[t]) >= 4]
+    region_order = sorted(region_eligible, key=lambda t: (0 if t in NATIONS else 1, -len(region_groups[t])))
+    nation_nav_items = [(f"{BASE}/{OUT_DIR}/region/{t}.html", prettify_region(t), t)
+                        for t in NATIONS if t in region_groups]
+    for t in region_order:
+        entries = sorted(region_groups[t], key=lambda l: l["name"].lower())
+        rn = prettify_region(t)
+        url = f"{BASE}/{OUT_DIR}/region/{t}.html"
+        cards = "\n".join(browse_card(l, slugmap, cats, meta, show_cat=True) for l in entries)
+        page = build_browse_page(
+            page_title=f"Folklore of {rn} — Myths, Legends & Ghosts",
+            desc=f"{len(entries)} myths, legends, ghosts and folklore entries rooted in {rn}.",
+            url=url,
+            h1=f"Folklore of {rn}",
+            intro=f"{len(entries)} legends, ghosts and folklore entries rooted in {rn}.",
+            crumb=rn,
+            nav_html=nav_links(nation_nav_items, t),
+            cards_html=cards,
+        )
+        with io.open(os.path.join(reg_dir, f"{t}.html"), "w", encoding="utf-8") as f:
+            f.write(page)
+        browse_urls.append(url)
+
+    # Browse sections for the A-Z index page
+    cat_links = "".join(
+        '<a href="' + f"{BASE}/{OUT_DIR}/category/{c}.html" + '">'
+        '<span class="c-dot" style="background:' + esc(meta.get(c, {}).get("colour", "#8b3a1a")) + '"></span>'
+        + esc(cats.get(c, c)) + ' <span class="c-count">' + str(len(cat_groups[c])) + '</span></a>'
+        for c in cat_order
+    )
+    region_links = "".join(
+        '<a href="' + f"{BASE}/{OUT_DIR}/region/{t}.html" + '">'
+        + esc(prettify_region(t)) + ' <span class="c-count">' + str(len(region_groups[t])) + '</span></a>'
+        for t in region_order
+    )
+    browse_sections = (
+        '<div class="browse-sec"><h2>Browse by category</h2><div class="cat-links">' + cat_links + '</div></div>'
+        '<div class="browse-sec"><h2>Browse by region</h2><div class="region-links">' + region_links + '</div></div>'
+        '<h2 class="azh">A&#8211;Z</h2>'
+    )
+
     # A-Z index page
     items = "\n".join(
         f'<li><a href="{BASE}/{OUT_DIR}/{slugmap[l["name"]]}.html">{esc(l["name"])}</a>'
@@ -361,10 +550,18 @@ ul{{list-style:none;columns:2;column-gap:30px}}
 li{{break-inside:avoid;padding:5px 0;border-bottom:.5px solid rgba(176,144,96,.3)}}
 li a{{color:#8b3a1a;text-decoration:none;font-size:16px}}
 li span{{display:block;font-size:12px;font-style:italic;color:#5c4a2a}}
+.browse-sec{{margin-bottom:26px}}
+.browse-sec h2,.azh{{font-family:'Cinzel',serif;font-size:18px;margin-bottom:13px;color:#2c1f0e}}
+.azh{{margin-top:6px}}
+.cat-links,.region-links{{display:flex;flex-wrap:wrap;gap:9px}}
+.cat-links a,.region-links a{{display:inline-flex;align-items:center;gap:7px;font-family:'Cinzel',serif;font-size:13px;color:#2c1f0e;background:#f2e8d5;border:1px solid #b09060;border-radius:4px;padding:7px 13px;text-decoration:none}}
+.cat-links a:hover,.region-links a:hover{{border-color:#c4622a}}
+.c-count{{font-size:11px;color:#5c4a2a;font-style:italic}}
+.c-dot{{width:10px;height:10px;border-radius:50%;display:inline-block;flex-shrink:0}}
 </style></head>
 <body>
 <header class="site-banner"><a class="banner-link" href="{BASE}/"><img src="{BASE}/green-man.png" class="banner-emblem" alt=""/><span class="banner-text"><span class="banner-title"><i>&#10022;</i> Folklore Map of the British Isles <i>&#10022;</i></span><span class="banner-sub">Myths, Legends &amp; Spectral Encounters</span></span></a></header>
-<div class="wrap"><h1>All Legends ({written})</h1><ul>
+<div class="wrap"><h1>All Legends ({written})</h1>{browse_sections}<ul>
 {items}
 </ul></div>
 <footer style="text-align:center;padding:24px 20px;font-size:12px;color:#5c4a2a">Part of the Folklore Map of the British Isles &#183; &#169; EditionTree &#183; <a href="{BASE}/privacy.html" style="color:#5c4a2a">Privacy</a></footer>
@@ -374,7 +571,8 @@ li span{{display:block;font-size:12px;font-style:italic;color:#5c4a2a}}
 
     # sitemap.xml
     today = datetime.date.today().isoformat()
-    urls = [f"{BASE}/", f"{BASE}/{OUT_DIR}/", f"{BASE}/privacy.html"]
+    urls = [f"{BASE}/", f"{BASE}/{OUT_DIR}/", f"{BASE}/about.html", f"{BASE}/privacy.html"]
+    urls += browse_urls
     urls += [f"{BASE}/{OUT_DIR}/{slugmap[l['name']]}.html" for l in legends]
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']

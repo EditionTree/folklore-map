@@ -49,6 +49,26 @@ h1{font-family:'Cinzel',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;lin
 .src{display:block;margin-top:18px;font-size:13px;font-style:italic;color:#5c4a2a}
 .src a{color:#8b3a1a}
 .back{display:inline-block;margin-top:22px;font-size:13px;color:#5c4a2a}
+.related{margin-top:36px}
+.related-head{font-family:'Cinzel',serif;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#8b3a1a;display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.related-head::before,.related-head::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,#b09060)}
+.related-head::after{background:linear-gradient(90deg,#b09060,transparent)}
+.carousel{position:relative}
+.carousel-track{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding-bottom:8px;-webkit-overflow-scrolling:touch}
+.carousel-track::-webkit-scrollbar{height:6px}
+.carousel-track::-webkit-scrollbar-track{background:rgba(176,144,96,.15);border-radius:3px}
+.carousel-track::-webkit-scrollbar-thumb{background:rgba(139,58,26,.4);border-radius:3px}
+.rel-card{flex:0 0 198px;scroll-snap-align:start;background:#f2e8d5;border:1px solid #b09060;border-radius:5px;padding:14px 15px;text-decoration:none;color:#2c1f0e;transition:border-color .15s,transform .1s}
+.rel-card:hover{border-color:#c4622a;transform:translateY(-2px)}
+.rel-card span{display:block}
+.rel-cat{font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:#8b3a1a;padding:2px 8px;border-radius:3px;margin-bottom:8px;width:max-content;max-width:100%}
+.rel-name{font-family:'Cinzel',serif;font-size:15px;line-height:1.25;margin-bottom:4px}
+.rel-region{font-style:italic;font-size:12px;color:#5c4a2a}
+.carousel-btn{position:absolute;top:42%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;border:1px solid #b09060;background:#f2e8d5;color:#8b3a1a;font-family:'Cinzel',serif;font-size:18px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2;box-shadow:0 2px 8px rgba(44,31,14,.25)}
+.carousel-btn:hover{background:#8b3a1a;color:#f2e8d5}
+.carousel-btn.prev{left:-10px}
+.carousel-btn.next{right:-10px}
+@media(max-width:560px){.carousel-btn{display:none}.rel-card{flex-basis:170px}}
 footer{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}
 </style>
 </head>
@@ -64,8 +84,17 @@ footer{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}
 <span class="src">Source: <a href="https://en.wikipedia.org/wiki/Stone_of_Scone" target="_blank" rel="noopener">en.wikipedia.org</a></span>
 <svg class="watermark" viewBox="0 0 512 512" aria-hidden="true"><path d="M436 26.98 285.9 63.63l-.5.1c-55.8 7.67-118.7 11.48-199.56 4.93L19.18 116.4l54.99 40.2L482.2 125l10.6-29.75c-4.3-5.21-7.9-10.15-11.7-15.12l-60.4 23.77-43.2-11.41 94-26.19C462.1 52.2 452 38.8 436 26.98zM290.7 90.3l-7.2 21.7H136.3l-57.42 5.3 26.72-21.32zm169.6 54.8-40 1.1-17.1 90-14.5 20.9-15.5-41.6 30-68.9-9.7.3-39.2 60.4c-3.1 87.2-22.3 176.8-7.6 265.4 19 7.3 40.7 9.7 61.5 10.2L401 358.3l22.5-33 1.5 95.8 27.5 60.1c10.8-1.1 21.6-2.5 34.4-4.9l-36.1-154.2zm-330.7 28-34.48 2.7-38.78 219 9.33 77.9c6.7 4.3 13.59 6.6 20.5 8.1l-8.99-101.6 12.18-43.3 2.16 81.7 15.38 66.5c22.6 2.4 45.9.1 66.4-5.1l-5.6-173.6z" fill="currentColor"/></svg>
 </article>
+<section class="related"><div class="related-head">Related Legends</div><div class="carousel"><button class="carousel-btn prev" type="button" aria-label="Scroll left">&#8249;</button><div class="carousel-track"><a class="rel-card" href="https://fmotbi.pages.dev/legends/beltane-fire-festival.html"><span class="rel-cat" style="background:#5a3a18">Sacred Sites</span><span class="rel-name">Beltane Fire Festival</span><span class="rel-region">Edinburgh, Scotland</span></a><a class="rel-card" href="https://fmotbi.pages.dev/legends/owlman-of-mawnan.html"><span class="rel-cat" style="background:#2d6a8a">Beasts</span><span class="rel-name">Owlman of Mawnan</span><span class="rel-region">Cornwall</span></a><a class="rel-card" href="https://fmotbi.pages.dev/legends/fat-lips.html"><span class="rel-cat" style="background:#e655e3">Fae &amp; Spirits</span><span class="rel-name">Fat Lips</span><span class="rel-region">Jedburgh Castle Jail, Scottish Borders</span></a><a class="rel-card" href="https://fmotbi.pages.dev/legends/black-rock-gorge.html"><span class="rel-cat" style="background:#5a3a18">Sacred Sites</span><span class="rel-name">Black Rock Gorge</span><span class="rel-region">Scotland</span></a><a class="rel-card" href="https://fmotbi.pages.dev/legends/nuckelavee.html"><span class="rel-cat" style="background:#1a5a6a">Aquatic Legends</span><span class="rel-name">Nuckelavee</span><span class="rel-region">Orkney</span></a><a class="rel-card" href="https://fmotbi.pages.dev/legends/seonaidh.html"><span class="rel-cat" style="background:#1e4a3a">Deities</span><span class="rel-name">Seonaidh</span><span class="rel-region">Eoropie, Isle of Lewis</span></a><a class="rel-card" href="https://fmotbi.pages.dev/legends/dragon-of-strathmartine.html"><span class="rel-cat" style="background:#8b2a1a">Dragons</span><span class="rel-name">Dragon of Strathmartine</span><span class="rel-region">Angus, Scotland</span></a><a class="rel-card" href="https://fmotbi.pages.dev/legends/seelie-court.html"><span class="rel-cat" style="background:#e655e3">Fae &amp; Spirits</span><span class="rel-name">Seelie Court</span><span class="rel-region">Scotland</span></a><a class="rel-card" href="https://fmotbi.pages.dev/legends/william-kidd.html"><span class="rel-cat" style="background:#6b6b6b">Pirates</span><span class="rel-name">William Kidd</span><span class="rel-region">Dundee, Scotland</span></a><a class="rel-card" href="https://fmotbi.pages.dev/legends/william-wallace.html"><span class="rel-cat" style="background:#6a3a2a">Legendary Figures</span><span class="rel-name">William Wallace</span><span class="rel-region">Stirlingshire, Scotland</span></a></div><button class="carousel-btn next" type="button" aria-label="Scroll right">&#8250;</button></div></section>
 <a class="back" href="https://fmotbi.pages.dev/legends/">&#8592; Browse all legends</a>
 </div>
 <footer>Part of the Folklore Map of the British Isles &#183; &#169; EditionTree &#183; <a href="https://fmotbi.pages.dev/privacy.html" style="color:#5c4a2a">Privacy</a></footer>
+<script>
+document.querySelectorAll('.carousel').forEach(function(c){
+  var t=c.querySelector('.carousel-track');
+  var p=c.querySelector('.prev'), n=c.querySelector('.next');
+  if(p)p.addEventListener('click',function(){t.scrollBy({left:-220,behavior:'smooth'});});
+  if(n)n.addEventListener('click',function(){t.scrollBy({left:220,behavior:'smooth'});});
+});
+</script>
 </body>
 </html>

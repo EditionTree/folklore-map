@@ -49,6 +49,26 @@ h1{font-family:'Cinzel',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;lin
 .src{display:block;margin-top:18px;font-size:13px;font-style:italic;color:#5c4a2a}
 .src a{color:#8b3a1a}
 .back{display:inline-block;margin-top:22px;font-size:13px;color:#5c4a2a}
+.related{margin-top:36px}
+.related-head{font-family:'Cinzel',serif;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#8b3a1a;display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.related-head::before,.related-head::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,#b09060)}
+.related-head::after{background:linear-gradient(90deg,#b09060,transparent)}
+.carousel{position:relative}
+.carousel-track{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding-bottom:8px;-webkit-overflow-scrolling:touch}
+.carousel-track::-webkit-scrollbar{height:6px}
+.carousel-track::-webkit-scrollbar-track{background:rgba(176,144,96,.15);border-radius:3px}
+.carousel-track::-webkit-scrollbar-thumb{background:rgba(139,58,26,.4);border-radius:3px}
+.rel-card{flex:0 0 198px;scroll-snap-align:start;background:#f2e8d5;border:1px solid #b09060;border-radius:5px;padding:14px 15px;text-decoration:none;color:#2c1f0e;transition:border-color .15s,transform .1s}
+.rel-card:hover{border-color:#c4622a;transform:translateY(-2px)}
+.rel-card span{display:block}
+.rel-cat{font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:#8b3a1a;padding:2px 8px;border-radius:3px;margin-bottom:8px;width:max-content;max-width:100%}
+.rel-name{font-family:'Cinzel',serif;font-size:15px;line-height:1.25;margin-bottom:4px}
+.rel-region{font-style:italic;font-size:12px;color:#5c4a2a}
+.carousel-btn{position:absolute;top:42%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;border:1px solid #b09060;background:#f2e8d5;color:#8b3a1a;font-family:'Cinzel',serif;font-size:18px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2;box-shadow:0 2px 8px rgba(44,31,14,.25)}
+.carousel-btn:hover{background:#8b3a1a;color:#f2e8d5}
+.carousel-btn.prev{left:-10px}
+.carousel-btn.next{right:-10px}
+@media(max-width:560px){.carousel-btn{display:none}.rel-card{flex-basis:170px}}
 footer{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}
 </style>
 </head>
@@ -64,8 +84,17 @@ footer{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}
 <span class="src">Source: <a href="https://en.wikipedia.org/wiki/Blue_men_of_the_Minch" target="_blank" rel="noopener">en.wikipedia.org</a></span>
 <svg class="watermark" viewBox="0 0 512 512" aria-hidden="true"><path d="M319.406 75.156c-50.542.49-104.39 20.876-150.094 72.844-10.232 9.65-19.88 19.59-29.187 29.313-20.516 21.433-39.694 41.877-60.22 56.468-18.484 13.142-37.73 21.617-61 22.75v89.876c53.93-32.793 59.934-67.832 115.595-136.312 6.38-6.524 12.727-13.19 19.125-19.875 9.96-10.407 20.016-20.803 30.563-30.657 46.422-36.83 92.022-27.93 107.218 2.5 4.6-49.27 57.958-30.564 66.813 18.875 6.91-33.696 20.327-44.354 34.03-31.625-28.136 49.585-26.61 110.87-8.406 164.937 20.51 60.915 61.743 114.13 110.344 133.75v-20.563c-38.34-19.194-74.662-65.71-92.657-119.156-15.937-47.336-17.777-99.07 2.75-141.655 8.492 16.92 16.342 43.406 21.94 79.53 17.992-84.587 54.762-72.463 56.624-10.593 42.998-66.287-52.197-161.48-163.438-160.406zm-35.656 95.78C194.225 181.69 66.158 359.648 43.625 494.97h91.25c1.02-133.954 71.114-282.045 148.875-324.033zm32.406 13.69c-76.76 49.056-114.574 208.732-109.812 310.343h78.437c-41.213-80.74-23.207-252.666 31.376-310.345zm21.875 26.218c-34.686 82.23-25.705 191.077 25.158 284.125h78c-75.605-53.774-120.09-190.455-103.157-284.126z" fill="currentColor"/></svg>
 </article>
+<section class="related"><div class="related-head">Related Legends</div><div class="carousel"><button class="carousel-btn prev" type="button" aria-label="Scroll left">&#8249;</button><div class="carousel-track"><a class="rel-card" href="https://fmotbi.pages.dev/legends/granny-kempock-stone.html"><span class="rel-cat" style="background:#5a3a18">Sacred Sites</span><span class="rel-name">Granny Kempock Stone</span><span class="rel-region">Gourock, Scotland</span></a><a class="rel-card" href="https://fmotbi.pages.dev/legends/glaistig.html"><span class="rel-cat" style="background:#e655e3">Fae &amp; Spirits</span><span class="rel-name">Glaistig</span><span class="rel-region">Highland, Scotland</span></a><a class="rel-card" href="https://fmotbi.pages.dev/legends/scathach.html"><span class="rel-cat" style="background:#6a3a2a">Legendary Figures</span><span class="rel-name">Scáthach</span><span class="rel-region">Sleat Peninsula, Isle of Skye, Scotland</span></a><a class="rel-card" href="https://fmotbi.pages.dev/legends/deirdre-of-the-sorrows.html"><span class="rel-cat" style="background:#6a3a2a">Legendary Figures</span><span class="rel-name">Deirdre of the Sorrows</span><span class="rel-region">Argyll, Scotland</span></a><a class="rel-card" href="https://fmotbi.pages.dev/legends/each-uisge.html"><span class="rel-cat" style="background:#1a5a6a">Aquatic Legends</span><span class="rel-name">Each-Uisge</span><span class="rel-region">Argyll, Scotland</span></a><a class="rel-card" href="https://fmotbi.pages.dev/legends/am-fear-liath-mor.html"><span class="rel-cat" style="background:#2d6a8a">Beasts</span><span class="rel-name">Am Fear Liath Mòr</span><span class="rel-region">Cairngorms, Scotland</span></a><a class="rel-card" href="https://fmotbi.pages.dev/legends/grey-man-of-ben-macdhui.html"><span class="rel-cat" style="background:#2d6a8a">Beasts</span><span class="rel-name">Grey Man of Ben MacDhui</span><span class="rel-region">Ben Macdui, Cairngorms</span></a><a class="rel-card" href="https://fmotbi.pages.dev/legends/stoor-worm.html"><span class="rel-cat" style="background:#8b2a1a">Dragons</span><span class="rel-name">Stoor Worm</span><span class="rel-region">Caithness, Scotland</span></a><a class="rel-card" href="https://fmotbi.pages.dev/legends/william-wallace.html"><span class="rel-cat" style="background:#6a3a2a">Legendary Figures</span><span class="rel-name">William Wallace</span><span class="rel-region">Stirlingshire, Scotland</span></a><a class="rel-card" href="https://fmotbi.pages.dev/legends/battle-of-barry.html"><span class="rel-cat" style="background:#5a3a18">Sacred Sites</span><span class="rel-name">Battle of Barry</span><span class="rel-region">Barry, Angus, Scotland</span></a></div><button class="carousel-btn next" type="button" aria-label="Scroll right">&#8250;</button></div></section>
 <a class="back" href="https://fmotbi.pages.dev/legends/">&#8592; Browse all legends</a>
 </div>
 <footer>Part of the Folklore Map of the British Isles &#183; &#169; EditionTree &#183; <a href="https://fmotbi.pages.dev/privacy.html" style="color:#5c4a2a">Privacy</a></footer>
+<script>
+document.querySelectorAll('.carousel').forEach(function(c){
+  var t=c.querySelector('.carousel-track');
+  var p=c.querySelector('.prev'), n=c.querySelector('.next');
+  if(p)p.addEventListener('click',function(){t.scrollBy({left:-220,behavior:'smooth'});});
+  if(n)n.addEventListener('click',function(){t.scrollBy({left:220,behavior:'smooth'});});
+});
+</script>
 </body>
 </html>

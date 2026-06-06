@@ -164,7 +164,11 @@
     .header-emblem-wrap {
       width: 64px; height: 64px;
       flex-shrink: 0;
+      display: block;
+      cursor: pointer;
+      transition: opacity .15s, transform .15s;
     }
+    .header-emblem-wrap:hover { opacity: .82; transform: scale(1.04); }
     .header-emblem {
       width: 100%; height: 100%;
       object-fit: contain;
@@ -713,7 +717,7 @@
 
 <header>
   <div class="header-title">
-    <div class="header-emblem-wrap"><img src="green-man.png" class="header-emblem" alt="Green Man"/></div>
+    <a href="./" class="header-emblem-wrap" title="Back to home" aria-label="Back to home"><img src="green-man.png" class="header-emblem" alt="Green Man"/></a>
     <div class="header-title-row">
       <h1 class="desktop-title">Folklore Map of the British Isles</h1>
       <h1 class="mobile-title">Folklore of the British Isles</h1>

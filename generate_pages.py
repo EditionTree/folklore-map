@@ -9,10 +9,79 @@ shared link); the interactive map (map.html) is unaffected.
 
 Run after legends.json changes:  python generate_pages.py
 """
-import json, io, os, re, unicodedata, html, urllib.parse, datetime
+import json, io, os, re, unicodedata, html, urllib.parse, datetime, math
 
 BASE = "https://fmotbi.pages.dev"
 OUT_DIR = "legends"
+
+# Thematic tag vocabulary (5 facets). Any tag NOT in here is treated as a
+# region tag (nation / county), which is weighted lower for "relatedness".
+THEMATIC_TAGS = {
+    # creature/form
+    "dog", "horse", "cattle", "serpent", "fish", "bird", "hare", "cat",
+    "wolf", "shapeshifter", "headless", "spectral",
+    # colour
+    "black", "white", "green", "red", "grey", "golden",
+    # setting
+    "lake", "river", "sea", "coast", "well", "spring", "waterfall", "cave",
+    "hill", "mountain", "forest", "bog", "moor", "island", "standing-stones",
+    "barrow", "castle", "church", "bridge", "road",
+    # motif/theme
+    "death-omen", "curse", "treasure", "transformation", "healing",
+    "prophecy", "drowning", "abduction", "battle", "revenge", "love",
+    "trickery", "sacrifice", "fertility", "guardian", "haunting",
+    "vanishing", "hill-figure",
+    # tradition
+    "celtic", "norse", "arthurian",
+}
+
+
+def haversine_km(lat1, lng1, lat2, lng2):
+    try:
+        la1, lo1, la2, lo2 = map(math.radians, [lat1, lng1, lat2, lng2])
+    except (TypeError, ValueError):
+        return 9999.0
+    dla, dlo = la2 - la1, lo2 - lo1
+    h = math.sin(dla / 2) ** 2 + math.cos(la1) * math.cos(la2) * math.sin(dlo / 2) ** 2
+    return 2 * 6371 * math.asin(math.sqrt(h))
+
+
+def compute_related(legends, limit=10):
+    """Return {name: [related legend dicts]} by tag similarity + proximity."""
+    # Pre-split each legend's tags into thematic vs region sets.
+    info = []
+    for l in legends:
+        tags = set(l.get("tags") or [])
+        info.append({
+            "leg": l,
+            "thematic": tags & THEMATIC_TAGS,
+            "region": tags - THEMATIC_TAGS,
+            "lat": l.get("lat"), "lng": l.get("lng"),
+        })
+    related = {}
+    for i, a in enumerate(info):
+        scored = []
+        for j, b in enumerate(info):
+            if i == j:
+                continue
+            shared_theme = len(a["thematic"] & b["thematic"])
+            shared_region = len(a["region"] & b["region"])
+            dist = haversine_km(a["lat"], a["lng"], b["lat"], b["lng"])
+            if dist < 25:
+                prox = 3
+            elif dist < 75:
+                prox = 2
+            elif dist < 160:
+                prox = 1
+            else:
+                prox = 0
+            score = 3 * shared_theme + shared_region + prox
+            if score <= 0:
+                continue
+            scored.append((score, -dist, b["leg"]))
+        scored.sort(key=lambda t: (t[0], t[1]), reverse=True)
+        related[a["leg"]["name"]] = [t[2] for t in scored[:limit]]
+    return related
 
 
 def slugify(name):
@@ -91,6 +160,26 @@ h1{{font-family:'Cinzel',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;li
 .src{{display:block;margin-top:18px;font-size:13px;font-style:italic;color:#5c4a2a}}
 .src a{{color:#8b3a1a}}
 .back{{display:inline-block;margin-top:22px;font-size:13px;color:#5c4a2a}}
+.related{{margin-top:36px}}
+.related-head{{font-family:'Cinzel',serif;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#8b3a1a;display:flex;align-items:center;gap:12px;margin-bottom:16px}}
+.related-head::before,.related-head::after{{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,#b09060)}}
+.related-head::after{{background:linear-gradient(90deg,#b09060,transparent)}}
+.carousel{{position:relative}}
+.carousel-track{{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding-bottom:8px;-webkit-overflow-scrolling:touch}}
+.carousel-track::-webkit-scrollbar{{height:6px}}
+.carousel-track::-webkit-scrollbar-track{{background:rgba(176,144,96,.15);border-radius:3px}}
+.carousel-track::-webkit-scrollbar-thumb{{background:rgba(139,58,26,.4);border-radius:3px}}
+.rel-card{{flex:0 0 198px;scroll-snap-align:start;background:#f2e8d5;border:1px solid #b09060;border-radius:5px;padding:14px 15px;text-decoration:none;color:#2c1f0e;transition:border-color .15s,transform .1s}}
+.rel-card:hover{{border-color:#c4622a;transform:translateY(-2px)}}
+.rel-card span{{display:block}}
+.rel-cat{{font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:#8b3a1a;padding:2px 8px;border-radius:3px;margin-bottom:8px;width:max-content;max-width:100%}}
+.rel-name{{font-family:'Cinzel',serif;font-size:15px;line-height:1.25;margin-bottom:4px}}
+.rel-region{{font-style:italic;font-size:12px;color:#5c4a2a}}
+.carousel-btn{{position:absolute;top:42%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;border:1px solid #b09060;background:#f2e8d5;color:#8b3a1a;font-family:'Cinzel',serif;font-size:18px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2;box-shadow:0 2px 8px rgba(44,31,14,.25)}}
+.carousel-btn:hover{{background:#8b3a1a;color:#f2e8d5}}
+.carousel-btn.prev{{left:-10px}}
+.carousel-btn.next{{right:-10px}}
+@media(max-width:560px){{.carousel-btn{{display:none}}.rel-card{{flex-basis:170px}}}}
 footer{{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}}
 </style>
 </head>
@@ -106,9 +195,18 @@ footer{{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}}
 <span class="src">Source: <a href="{src}" target="_blank" rel="noopener">{srchost}</a></span>
 <svg class="watermark" viewBox="0 0 512 512" aria-hidden="true"><path d="{watermark}" fill="currentColor"/></svg>
 </article>
+{related}
 <a class="back" href="{base}/legends/">&#8592; Browse all legends</a>
 </div>
 <footer>Part of the Folklore Map of the British Isles &#183; &#169; EditionTree &#183; <a href="{base}/privacy.html" style="color:#5c4a2a">Privacy</a></footer>
+<script>
+document.querySelectorAll('.carousel').forEach(function(c){{
+  var t=c.querySelector('.carousel-track');
+  var p=c.querySelector('.prev'), n=c.querySelector('.next');
+  if(p)p.addEventListener('click',function(){{t.scrollBy({{left:-220,behavior:'smooth'}});}});
+  if(n)n.addEventListener('click',function(){{t.scrollBy({{left:220,behavior:'smooth'}});}});
+}});
+</script>
 </body>
 </html>
 """
@@ -146,6 +244,8 @@ def build():
         seen.add(s)
         slugmap[leg["name"]] = s
 
+    related_map = compute_related(legends)
+
     written = 0
     for leg in legends:
         name = leg["name"]
@@ -179,6 +279,30 @@ def build():
                          "name": "Folklore Map of the British Isles", "url": BASE + "/"},
         }, ensure_ascii=False)
 
+        # Related legends carousel
+        rel = related_map.get(name, [])
+        if rel:
+            cards = []
+            for r in rel:
+                rcat = cats.get(r.get("category", ""), r.get("category", ""))
+                rcolour = meta.get(r.get("category", ""), {}).get("colour", "#8b3a1a")
+                cards.append(
+                    f'<a class="rel-card" href="{BASE}/{OUT_DIR}/{slugmap[r["name"]]}.html">'
+                    f'<span class="rel-cat" style="background:{esc(rcolour)}">{esc(rcat)}</span>'
+                    f'<span class="rel-name">{esc(r["name"])}</span>'
+                    f'<span class="rel-region">{esc(r.get("region", ""))}</span></a>'
+                )
+            related_html = (
+                '<section class="related"><div class="related-head">Related Legends</div>'
+                '<div class="carousel">'
+                '<button class="carousel-btn prev" type="button" aria-label="Scroll left">&#8249;</button>'
+                '<div class="carousel-track">' + "".join(cards) + '</div>'
+                '<button class="carousel-btn next" type="button" aria-label="Scroll right">&#8250;</button>'
+                '</div></section>'
+            )
+        else:
+            related_html = ""
+
         page_path_url = f"{BASE}/{OUT_DIR}/{slug}.html"
         out = PAGE.format(
             title=esc(f"{name} — Folklore of the British Isles"),
@@ -191,6 +315,7 @@ def build():
             name=esc(name),
             region=esc(leg.get("region", "")),
             body=body_html,
+            related=related_html,
             maplink=esc(maplink),
             src=esc(src),
             srchost=esc(host_of(src)),

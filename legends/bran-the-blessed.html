@@ -49,6 +49,26 @@ h1{font-family:'Cinzel',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;lin
 .src{display:block;margin-top:18px;font-size:13px;font-style:italic;color:#5c4a2a}
 .src a{color:#8b3a1a}
 .back{display:inline-block;margin-top:22px;font-size:13px;color:#5c4a2a}
+.related{margin-top:36px}
+.related-head{font-family:'Cinzel',serif;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#8b3a1a;display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.related-head::before,.related-head::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,#b09060)}
+.related-head::after{background:linear-gradient(90deg,#b09060,transparent)}
+.carousel{position:relative}
+.carousel-track{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding-bottom:8px;-webkit-overflow-scrolling:touch}
+.carousel-track::-webkit-scrollbar{height:6px}
+.carousel-track::-webkit-scrollbar-track{background:rgba(176,144,96,.15);border-radius:3px}
+.carousel-track::-webkit-scrollbar-thumb{background:rgba(139,58,26,.4);border-radius:3px}
+.rel-card{flex:0 0 198px;scroll-snap-align:start;background:#f2e8d5;border:1px solid #b09060;border-radius:5px;padding:14px 15px;text-decoration:none;color:#2c1f0e;transition:border-color .15s,transform .1s}
+.rel-card:hover{border-color:#c4622a;transform:translateY(-2px)}
+.rel-card span{display:block}
+.rel-cat{font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:#8b3a1a;padding:2px 8px;border-radius:3px;margin-bottom:8px;width:max-content;max-width:100%}
+.rel-name{font-family:'Cinzel',serif;font-size:15px;line-height:1.25;margin-bottom:4px}
+.rel-region{font-style:italic;font-size:12px;color:#5c4a2a}
+.carousel-btn{position:absolute;top:42%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;border:1px solid #b09060;background:#f2e8d5;color:#8b3a1a;font-family:'Cinzel',serif;font-size:18px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2;box-shadow:0 2px 8px rgba(44,31,14,.25)}
+.carousel-btn:hover{background:#8b3a1a;color:#f2e8d5}
+.carousel-btn.prev{left:-10px}
+.carousel-btn.next{right:-10px}
+@media(max-width:560px){.carousel-btn{display:none}.rel-card{flex-basis:170px}}
 footer{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}
 </style>
 </head>
@@ -64,8 +84,17 @@ footer{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}
 <span class="src">Source: <a href="https://en.wikipedia.org/wiki/Brân_the_Blessed" target="_blank" rel="noopener">en.wikipedia.org</a></span>
 <svg class="watermark" viewBox="0 0 512 512" aria-hidden="true"><path d="M246.625 18.375c-11.817-.153-23.918 8.608-29.375 22.438-6.716 17.02-.85 35.28 13.094 40.78 13.943 5.502 30.69-3.822 37.406-20.843 6.716-17.02.85-35.28-13.094-40.78a22.512 22.512 0 0 0-8.03-1.595zm74.75 15.938c-10.97.006-22.743 6.024-30.78 16.874-12.25 16.534-11.2 38.06 2.342 48.094 13.544 10.035 34.44 4.754 46.688-11.78 12.25-16.534 11.2-38.06-2.344-48.094-4.654-3.45-10.16-5.097-15.905-5.093zm67.25 37.53c-10.336-.127-21.542 4.263-30.47 12.907-15.87 15.368-18.525 38.344-5.936 51.344 12.587 13 35.66 11.086 51.53-4.28 15.87-15.37 18.526-38.345 5.938-51.345-5.508-5.69-13.024-8.527-21.063-8.626zm-156.438 32.063c-22.51-.28-44.378 6.893-63.5 24C107.65 182.513 48.192 261.012 28.28 386.97 5.023 534.1 186.257 507.523 168.313 428.936c-22.922-100.387 34.13-141.11 108-124.156 32.838 7.54 66.54-4.9 86-40.436 23.402-42.733-7.428-106.817-62.875-139.625-21.61-12.79-44.74-20.534-67.25-20.814zM449.438 134c-10.52.022-21.654 2.82-32.093 8.625-27.837 15.48-40.15 46.51-27.47 69.313 12.682 22.802 45.54 28.73 73.376 13.25 27.837-15.48 40.118-46.51 27.438-69.313-7.926-14.252-23.717-21.91-41.25-21.875z" fill="currentColor"/></svg>
 </article>
+<section class="related"><div class="related-head">Related Legends</div><div class="carousel"><button class="carousel-btn prev" type="button" aria-label="Scroll left">&#8249;</button><div class="carousel-track"><a class="rel-card" href="https://fmotbi.pages.dev/legends/gog-and-magog.html"><span class="rel-cat" style="background:#4a3820">Giants</span><span class="rel-name">Gog and Magog</span><span class="rel-region">London</span></a><a class="rel-card" href="https://fmotbi.pages.dev/legends/morgan-le-fay.html"><span class="rel-cat" style="background:#e655e3">Fae &amp; Spirits</span><span class="rel-name">Morgan le Fay</span><span class="rel-region">Tintagel, Cornwall</span></a><a class="rel-card" href="https://fmotbi.pages.dev/legends/tintagel.html"><span class="rel-cat" style="background:#5a3a18">Sacred Sites</span><span class="rel-name">Tintagel</span><span class="rel-region">Cornwall</span></a><a class="rel-card" href="https://fmotbi.pages.dev/legends/merlin-s-cave.html"><span class="rel-cat" style="background:#5a3a18">Sacred Sites</span><span class="rel-name">Merlin&#x27;s Cave</span><span class="rel-region">Cornwall</span></a><a class="rel-card" href="https://fmotbi.pages.dev/legends/tintagel-castle.html"><span class="rel-cat" style="background:#5a3a18">Sacred Sites</span><span class="rel-name">Tintagel Castle</span><span class="rel-region">Cornwall</span></a><a class="rel-card" href="https://fmotbi.pages.dev/legends/the-loe.html"><span class="rel-cat" style="background:#1a5a6a">Aquatic Legends</span><span class="rel-name">The Loe</span><span class="rel-region">Cornwall</span></a><a class="rel-card" href="https://fmotbi.pages.dev/legends/gogmagog.html"><span class="rel-cat" style="background:#4a3820">Giants</span><span class="rel-name">Gogmagog</span><span class="rel-region">Cornwall</span></a><a class="rel-card" href="https://fmotbi.pages.dev/legends/griffin.html"><span class="rel-cat" style="background:#2d6a8a">Beasts</span><span class="rel-name">Griffin</span><span class="rel-region">Britain (heraldic)</span></a><a class="rel-card" href="https://fmotbi.pages.dev/legends/epona.html"><span class="rel-cat" style="background:#1e4a3a">Deities</span><span class="rel-name">Epona</span><span class="rel-region">Roman Britain</span></a><a class="rel-card" href="https://fmotbi.pages.dev/legends/the-ratman-of-southend.html"><span class="rel-cat" style="background:#4a3d6e">Ghosts</span><span class="rel-name">The Ratman of Southend</span><span class="rel-region">Essex</span></a></div><button class="carousel-btn next" type="button" aria-label="Scroll right">&#8250;</button></div></section>
 <a class="back" href="https://fmotbi.pages.dev/legends/">&#8592; Browse all legends</a>
 </div>
 <footer>Part of the Folklore Map of the British Isles &#183; &#169; EditionTree &#183; <a href="https://fmotbi.pages.dev/privacy.html" style="color:#5c4a2a">Privacy</a></footer>
+<script>
+document.querySelectorAll('.carousel').forEach(function(c){
+  var t=c.querySelector('.carousel-track');
+  var p=c.querySelector('.prev'), n=c.querySelector('.next');
+  if(p)p.addEventListener('click',function(){t.scrollBy({left:-220,behavior:'smooth'});});
+  if(n)n.addEventListener('click',function(){t.scrollBy({left:220,behavior:'smooth'});});
+});
+</script>
 </body>
 </html>

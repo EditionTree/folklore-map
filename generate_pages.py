@@ -101,14 +101,14 @@ def banner_html():
     return ('<header class="site-banner"><a class="banner-link" href="' + BASE + '/">'
             '<img src="' + BASE + '/green-man.png" class="banner-emblem" alt=""/>'
             '<span class="banner-text"><span class="banner-title"><i>&#10022;</i> '
-            'Folklore Map of the British Isles <i>&#10022;</i></span>'
+            'Folklore Map of Britain &amp; Ireland <i>&#10022;</i></span>'
             '<span class="banner-sub">Myths, Legends &amp; Spectral Encounters</span>'
             '</span></a></header>')
 
 
 def footer_html():
     return ('<footer style="text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a">'
-            'Part of the Folklore Map of the British Isles &#183; &#169; EditionTree &#183; '
+            'Part of the Folklore Map of Britain &amp; Ireland &#183; &#169; EditionTree &#183; '
             '<a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener" style="color:#5c4a2a">&#9749; Ko-fi</a> &#183; '
             '<a href="' + BASE + '/privacy.html" style="color:#5c4a2a">Privacy</a></footer>')
 
@@ -237,7 +237,7 @@ PAGE = """<!DOCTYPE html>
 <meta property="og:title" content="{ogtitle}"/>
 <meta property="og:description" content="{desc}"/>
 <meta property="og:image" content="{base}/og/preview.png"/>
-<meta property="og:site_name" content="Folklore Map of the British Isles"/>
+<meta property="og:site_name" content="Folklore Map of Britain &amp; Ireland"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="{ogtitle}"/>
 <meta name="twitter:description" content="{desc}"/>
@@ -298,7 +298,7 @@ footer{{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}}
 </style>
 </head>
 <body>
-<header class="site-banner"><a class="banner-link" href="{base}/"><img src="{base}/green-man.png" class="banner-emblem" alt=""/><span class="banner-text"><span class="banner-title"><i>&#10022;</i> Folklore Map of the British Isles <i>&#10022;</i></span><span class="banner-sub">Myths, Legends &amp; Spectral Encounters</span></span></a></header>
+<header class="site-banner"><a class="banner-link" href="{base}/"><img src="{base}/green-man.png" class="banner-emblem" alt=""/><span class="banner-text"><span class="banner-title"><i>&#10022;</i> Folklore Map of Britain &amp; Ireland <i>&#10022;</i></span><span class="banner-sub">Myths, Legends &amp; Spectral Encounters</span></span></a></header>
 <div class="wrap">
 <article class="card">
 <span class="cat" style="background:{catcolour}">{catname}</span>
@@ -312,7 +312,7 @@ footer{{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}}
 {related}
 <a class="back" href="{base}/legends/">&#8592; Browse all legends</a>
 </div>
-<footer>Part of the Folklore Map of the British Isles &#183; &#169; EditionTree &#183; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener" style="color:#5c4a2a">&#9749; Ko-fi</a> &#183; <a href="{base}/privacy.html" style="color:#5c4a2a">Privacy</a></footer>
+<footer>Part of the Folklore Map of Britain &amp; Ireland &#183; &#169; EditionTree &#183; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener" style="color:#5c4a2a">&#9749; Ko-fi</a> &#183; <a href="{base}/privacy.html" style="color:#5c4a2a">Privacy</a></footer>
 <script>
 document.querySelectorAll('.carousel').forEach(function(c){{
   var t=c.querySelector('.carousel-track');
@@ -390,7 +390,7 @@ def build():
                         "latitude": leg.get("lat"), "longitude": leg.get("lng")},
             },
             "isPartOf": {"@type": "WebSite",
-                         "name": "Folklore Map of the British Isles", "url": BASE + "/"},
+                         "name": "Folklore Map of Britain & Ireland", "url": BASE + "/"},
         }, ensure_ascii=False)
 
         # Related legends carousel
@@ -419,7 +419,7 @@ def build():
 
         page_path_url = f"{BASE}/{OUT_DIR}/{slug}.html"
         out = PAGE.format(
-            title=esc(f"{name} — Folklore of the British Isles"),
+            title=esc(f"{name} — Folklore of Britain & Ireland"),
             ogtitle=esc(name),
             desc=esc(desc),
             url=page_path_url,
@@ -463,7 +463,7 @@ def build():
         url = f"{BASE}/{OUT_DIR}/category/{c}.html"
         cards = "\n".join(browse_card(l, slugmap, cats, meta, show_cat=False) for l in entries)
         page = build_browse_page(
-            page_title=f"{label} of Britain & Ireland — Folklore Map",
+            page_title=f"{label} of Britain &amp; Ireland — Folklore Map",
             desc=f"Browse {len(entries)} {label.lower()} from across British and Irish folklore — each pinned to the place its story is rooted.",
             url=url,
             h1=label,
@@ -528,7 +528,7 @@ def build():
 <html lang="en"><head><meta charset="UTF-8"/>
 <script>if(location.hostname.indexOf("pages.dev")>-1){{location.replace("https://folklorefinder.uk"+location.pathname+location.search+location.hash);}}</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>All Legends &#8212; Folklore Map of the British Isles</title>
+<title>All Legends &#8212; Folklore Map of Britain &amp; Ireland</title>
 <meta name="description" content="Browse all {written} myths, legends, ghosts and folklore entries across Britain and Ireland."/>
 <link rel="canonical" href="{BASE}/{OUT_DIR}/"/>
 <link rel="icon" type="image/png" href="{BASE}/favicon.png"/>
@@ -564,11 +564,11 @@ li span{{display:block;font-size:12px;font-style:italic;color:#5c4a2a}}
 .c-dot{{width:10px;height:10px;border-radius:50%;display:inline-block;flex-shrink:0}}
 </style></head>
 <body>
-<header class="site-banner"><a class="banner-link" href="{BASE}/"><img src="{BASE}/green-man.png" class="banner-emblem" alt=""/><span class="banner-text"><span class="banner-title"><i>&#10022;</i> Folklore Map of the British Isles <i>&#10022;</i></span><span class="banner-sub">Myths, Legends &amp; Spectral Encounters</span></span></a></header>
+<header class="site-banner"><a class="banner-link" href="{BASE}/"><img src="{BASE}/green-man.png" class="banner-emblem" alt=""/><span class="banner-text"><span class="banner-title"><i>&#10022;</i> Folklore Map of Britain &amp; Ireland <i>&#10022;</i></span><span class="banner-sub">Myths, Legends &amp; Spectral Encounters</span></span></a></header>
 <div class="wrap"><h1>All Legends ({written})</h1>{browse_sections}<ul>
 {items}
 </ul></div>
-<footer style="text-align:center;padding:24px 20px;font-size:12px;color:#5c4a2a">Part of the Folklore Map of the British Isles &#183; &#169; EditionTree &#183; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener" style="color:#5c4a2a">&#9749; Ko-fi</a> &#183; <a href="{BASE}/privacy.html" style="color:#5c4a2a">Privacy</a></footer>
+<footer style="text-align:center;padding:24px 20px;font-size:12px;color:#5c4a2a">Part of the Folklore Map of Britain &amp; Ireland &#183; &#169; EditionTree &#183; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener" style="color:#5c4a2a">&#9749; Ko-fi</a> &#183; <a href="{BASE}/privacy.html" style="color:#5c4a2a">Privacy</a></footer>
 </body></html>"""
     with io.open(os.path.join(OUT_DIR, "index.html"), "w", encoding="utf-8") as f:
         f.write(index_html)

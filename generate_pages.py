@@ -247,6 +247,7 @@ PAGE = """<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 <script type="application/ld+json">{jsonld}</script>
+{breadcrumb_jsonld}
 <style>
 *{{box-sizing:border-box;margin:0;padding:0}}
 body{{background:#e0d0b0;color:#2c1f0e;font-family:'Crimson Text',serif;line-height:1.7;min-height:100vh}}
@@ -268,6 +269,11 @@ body{{background:#e0d0b0;color:#2c1f0e;font-family:'Crimson Text',serif;line-hei
 .cat{{font-family:'Cinzel',serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#fff;background:#8b3a1a;display:inline-block;padding:3px 10px;border-radius:2px}}
 h1{{font-family:'Cinzel',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;line-height:1.15}}
 .region{{font-style:italic;color:#5c4a2a;margin-bottom:18px}}
+.crumb{{font-size:12.5px;color:#5c4a2a;margin-bottom:16px;line-height:1.5}}
+.crumb a{{color:#8b3a1a;text-decoration:none}}
+.crumb a:hover{{text-decoration:underline}}
+.crumb .sep{{color:#b09060;margin:0 6px}}
+.crumb .here{{color:#5c4a2a}}
 .summary{{font-size:17px}}
 .summary::first-letter{{font-family:'Cinzel',serif;font-size:2.4em;font-weight:600;color:#8b3a1a;line-height:1}}
 .summary-cont{{font-size:17px;margin-top:14px}}
@@ -302,6 +308,7 @@ footer{{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}}
 <body>
 <header class="site-banner"><a class="banner-link" href="{base}/"><img src="{base}/green-man.png" class="banner-emblem" alt=""/><span class="banner-text"><span class="banner-title"><i>&#10022;</i> Folklore Map of Britain &amp; Ireland <i>&#10022;</i></span><span class="banner-sub">Myths, Legends &amp; Spectral Encounters</span></span></a></header>
 <div class="wrap">
+{breadcrumb}
 <article class="card">
 <span class="cat" style="background:{catcolour}">{catname}</span>
 <h1>{name}</h1>
@@ -359,6 +366,28 @@ def build():
             s = f"{b}-{i}"; i += 1
         seen.add(s)
         slugmap[leg["name"]] = s
+
+    # Group entries once — used for browse pages AND per-legend breadcrumbs
+    cat_groups, region_groups = {}, {}
+    for leg in legends:
+        cat_groups.setdefault(leg.get("category", ""), []).append(leg)
+        for tag in (set(leg.get("tags") or []) - THEMATIC_TAGS):
+            region_groups.setdefault(tag, []).append(leg)
+    generated_regions = {t for t in region_groups if t in NATIONS or len(region_groups[t]) >= 4}
+
+    def breadcrumb_for(leg):
+        """Legends > Category > Region (most specific page that exists)."""
+        parts = [("Legends", f"{BASE}/{OUT_DIR}/")]
+        cat = leg.get("category", "")
+        if cat in cat_groups:
+            parts.append((cats.get(cat, cat), f"{BASE}/{OUT_DIR}/category/{cat}.html"))
+        rtags = (set(leg.get("tags") or []) - THEMATIC_TAGS) & generated_regions
+        counties = sorted(t for t in rtags if t not in NATIONS)
+        nats = sorted(t for t in rtags if t in NATIONS)
+        rtag = counties[0] if counties else (nats[0] if nats else None)
+        if rtag:
+            parts.append((prettify_region(rtag), f"{BASE}/{OUT_DIR}/region/{rtag}.html"))
+        return parts
 
     related_map = compute_related(legends)
 
@@ -420,6 +449,22 @@ def build():
             related_html = ""
 
         page_path_url = f"{BASE}/{OUT_DIR}/{slug}.html"
+
+        # Breadcrumb: Legends > Category > Region > Name (visible + structured data)
+        crumb_parts = breadcrumb_for(leg)
+        breadcrumb = '<nav class="crumb" aria-label="Breadcrumb">' + "".join(
+            f'<a href="{u}">{esc(lbl)}</a><span class="sep">&#8250;</span>' for lbl, u in crumb_parts
+        ) + f'<span class="here">{esc(name)}</span></nav>'
+        crumb_items = [
+            {"@type": "ListItem", "position": i + 1, "name": lbl, "item": u}
+            for i, (lbl, u) in enumerate(crumb_parts)
+        ]
+        crumb_items.append({"@type": "ListItem", "position": len(crumb_parts) + 1,
+                            "name": name, "item": page_path_url})
+        breadcrumb_jsonld = '<script type="application/ld+json">' + json.dumps(
+            {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": crumb_items},
+            ensure_ascii=False) + '</script>'
+
         out = PAGE.format(
             title=esc(f"{name} — Folklore of Britain & Ireland"),
             ogtitle=esc(name),
@@ -432,6 +477,8 @@ def build():
             region=esc(leg.get("region", "")),
             body=body_html,
             related=related_html,
+            breadcrumb=breadcrumb,
+            breadcrumb_jsonld=breadcrumb_jsonld,
             maplink=esc(maplink),
             src=esc(src),
             srchost=esc(host_of(src)),
@@ -447,12 +494,6 @@ def build():
     reg_dir = os.path.join(OUT_DIR, "region")
     os.makedirs(cat_dir, exist_ok=True)
     os.makedirs(reg_dir, exist_ok=True)
-
-    cat_groups, region_groups = {}, {}
-    for leg in legends:
-        cat_groups.setdefault(leg.get("category", ""), []).append(leg)
-        for tag in (set(leg.get("tags") or []) - THEMATIC_TAGS):
-            region_groups.setdefault(tag, []).append(leg)
 
     browse_urls = []
 

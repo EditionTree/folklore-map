@@ -561,12 +561,26 @@ def build():
         '<h2 class="azh">A&#8211;Z</h2>'
     )
 
-    # A-Z index page
-    items = "\n".join(
-        f'<li><a href="{BASE}/{OUT_DIR}/{slugmap[l["name"]]}.html">{esc(l["name"])}</a>'
-        f' <span>{esc(l.get("region",""))}</span></li>'
-        for l in legends
-    )
+    # A-Z index page — grouped by first letter with letter headings
+    az_groups = {}
+    az_order = []
+    for l in legends:  # already sorted by name.lower()
+        ch = l["name"].lstrip()[:1].upper()
+        if not ch.isalpha():
+            ch = "#"
+        if ch not in az_groups:
+            az_groups[ch] = []
+            az_order.append(ch)
+        az_groups[ch].append(l)
+    az_parts = []
+    for letter in az_order:
+        lis = "".join(
+            f'<li><a href="{BASE}/{OUT_DIR}/{slugmap[x["name"]]}.html">{esc(x["name"])}</a>'
+            f'<span>{esc(x.get("region",""))}</span></li>'
+            for x in az_groups[letter]
+        )
+        az_parts.append(f'<h3 class="az-letter" id="az-{letter}">{letter}</h3><ul>{lis}</ul>')
+    az_content = "\n".join(az_parts)
     index_html = f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"/>
 <script>if(location.hostname.indexOf("pages.dev")>-1){{location.replace("https://folklorefinder.uk"+location.pathname+location.search+location.hash);}}</script>
@@ -593,11 +607,15 @@ body{{background:#e0d0b0;color:#2c1f0e;font-family:'Crimson Text',serif;min-heig
 @media(max-width:560px){{.banner-title{{font-size:15px}}.banner-emblem{{width:38px;height:38px}}.banner-sub{{font-size:11px}}}}
 .wrap{{max-width:760px;margin:0 auto;padding:24px 20px 60px}}
 h1{{font-family:'Cinzel',serif;font-size:26px;margin-bottom:18px}}
-ul{{list-style:none;columns:2;column-gap:30px}}
-@media(max-width:560px){{ul{{columns:1}}}}
-li{{break-inside:avoid;padding:5px 0;border-bottom:.5px solid rgba(176,144,96,.3)}}
-li a{{color:#8b3a1a;text-decoration:none;font-size:16px}}
-li span{{display:block;font-size:12px;font-style:italic;color:#5c4a2a}}
+.az{{column-count:4;column-gap:26px}}
+@media(max-width:900px){{.az{{column-count:3}}}}
+@media(max-width:620px){{.az{{column-count:2}}}}
+@media(max-width:400px){{.az{{column-count:1}}}}
+.az-letter{{font-family:'Cinzel',serif;font-size:17px;color:#8b3a1a;margin:0 0 7px;padding-bottom:3px;border-bottom:1px solid #b09060;break-after:avoid;break-inside:avoid}}
+.az ul{{list-style:none;margin:0 0 16px}}
+.az li{{break-inside:avoid;padding:5px 0;border-bottom:.5px solid rgba(176,144,96,.3)}}
+.az li a{{color:#8b3a1a;text-decoration:none;font-size:15px}}
+.az li span{{display:block;font-size:11.5px;font-style:italic;color:#5c4a2a}}
 .browse-sec{{margin-bottom:26px}}
 .browse-sec h2,.azh{{font-family:'Cinzel',serif;font-size:18px;margin-bottom:13px;color:#2c1f0e}}
 .azh{{margin-top:6px}}
@@ -609,9 +627,9 @@ li span{{display:block;font-size:12px;font-style:italic;color:#5c4a2a}}
 </style></head>
 <body>
 <header class="site-banner"><a class="banner-link" href="{BASE}/"><img src="{BASE}/green-man.png" class="banner-emblem" alt=""/><span class="banner-text"><span class="banner-title"><i>&#10022;</i> Folklore Map of Britain &amp; Ireland <i>&#10022;</i></span><span class="banner-sub">Myths, Legends &amp; Spectral Encounters</span></span></a></header>
-<div class="wrap"><h1>All Legends ({written})</h1>{browse_sections}<ul>
-{items}
-</ul></div>
+<div class="wrap"><h1>All Legends ({written})</h1>{browse_sections}<div class="az">
+{az_content}
+</div></div>
 <footer style="text-align:center;padding:24px 20px;font-size:12px;color:#5c4a2a">Part of the Folklore Map of Britain &amp; Ireland &#183; &#169; EditionTree &#183; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener" style="color:#5c4a2a">&#9749; Ko-fi</a> &#183; <a href="{BASE}/privacy.html" style="color:#5c4a2a">Privacy</a></footer>
 </body></html>"""
     with io.open(os.path.join(OUT_DIR, "index.html"), "w", encoding="utf-8") as f:

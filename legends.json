@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-08T19:18:41.737390Z",
+  "generated": "2026-06-08T20:09:04.886998Z",
   "total": 490,
   "categories": {
     "beast": "Beasts",
@@ -674,7 +674,7 @@
       "lng": -4.0593,
       "category": "hero",
       "region": "Kirkcudbright, Galloway, Scotland",
-      "summary": "Billy Marshall was the legendary King of the Gypsies of Galloway, a folk hero of the Scottish Romani tradition said to have lived to the extraordinary age of one hundred and twenty (c.1672–1792). Francis Hindes Groome called Galloway 'Billy Marshall's old kingdom' in Gypsy Folk-Tales. Tradition says he fought at Sheriffmuir at forty-three and survived to see Culloden, married seventeen wives and fathered numerous children across south-west Scotland. Walter Scott drew on his legend for the Romani characters in Guy Mannering. His grave is said to lie in Kirkcudbright kirkyard.",
+      "summary": "King of Galloway's Gypsies, boxer, deserter from seven armies — Billy Marshall lived 120 years and sired 68 children. Walter Scott put him in Guy Mannering; he's buried in Kirkcudbright kirkyard.",
       "source": "https://www.gutenberg.org/ebooks/71092",
       "date_added": "2026-06-01",
       "tags": [
@@ -682,7 +682,8 @@
         "love",
         "scotland",
         "galloway"
-      ]
+      ],
+      "detail": "Billy Marshall was born in Ayrshire around 1672 and accumulated a cluster of titles: King of the Gypsies, King of the Randies, and the Caird of Barullion — \"caird\" being the Romani word for a craftsman, and Barullion his home territory in Galloway. His trade was that of tinker and horner, working horn into useful goods, but his authority extended far beyond a single craft. He led the Romani and travelling communities of south-west Scotland with a force of personality and reputation that earned him the kingship — partly hereditary within the Scottish Gypsy tradition, partly the result of being manifestly ungovernable by anyone else.\n\nThe legends attached to Marshall are openly extravagant. He is said to have fought with William of Orange at the Battle of the Boyne in 1690 and later with the Duke of Marlborough in Flanders during the Nine Years' War — but to have deserted from the army seven times, and from the navy three times, always contriving to return for Keltonhill Fair near Castle Douglas, two miles from his heartland. He married seventeen wives and fathered sixty-eight children; tradition insists four were born after his hundredth birthday. His recorded accounts are prefaced with words like \"allegedly\" and \"it is reported that\" — the legend acknowledged its own improbability while continuing to grow.\n\nWalter Scott drew on Marshall's reputation when writing the Romani characters in Guy Mannering (1815), particularly the character of Meg Merrilies, and Galloway's Romani identity in the novel is inseparable from Marshall's shadow. Francis Hindes Groome called Galloway \"Billy Marshall's old kingdom\" in Gypsy Folk-Tales (1899), cementing the legend in Scottish Romani scholarship. Marshall died on 28 November 1792 and was buried in Kirkcudbright Kirkyard; the Parish Register entry recording his burial at the approximate age of one hundred and twenty provides the nearest documentary anchor to a life that had otherwise long since departed into myth. His restored grave is still visited."
     },
     {
       "name": "Bisterne Dragon",
@@ -4272,14 +4273,17 @@
       "lng": -2.539,
       "category": "deity",
       "region": "St Martin's Parish, Guernsey",
-      "summary": "La Gran'mère du Chimquière ('Grandmother of the Cemetery') is a Neolithic granite statue menhir standing at the gate of St Martin's Parish Church in Guernsey, carved approximately 2500–1800 BCE and reworked during the Roman period to add a headdress and cape. Venerated as a mother-goddess figure for millennia, she received votive offerings of coins, flowers, and food from locals into the 19th century. In 1860 a churchwarden ordered her destruction as tantamount to idolatry; she was broken in two but outraged parishioners demanded she be cemented back together and returned to her gateside position. Newly-wed couples still leave flowers at her feet for luck.",
+      "summary": "A 4,500-year-old goddess stands at St Martin's church gate in Guernsey. A churchwarden smashed her in 1860; parishioners glued her back. Newlyweds still leave flowers at her feet for luck.",
       "source": "https://en.wikipedia.org/wiki/La_Gran'_M%C3%A8re_de_Chimquiere",
       "date_added": "2026-06-05",
       "tags": [
         "standing-stones",
         "church",
-        "channel-islands"
-      ]
+        "channel-islands",
+        "fertility",
+        "guernsey"
+      ],
+      "detail": "La Gran'mère du Chimquière is one of the few surviving Western European statue menhirs still standing on its original site and still attracting active veneration. She began as a plain Neolithic standing stone, erected somewhere between 2500 and 1800 BCE. During the La Tène period — the later Iron Age — Celtic hands reworked the stone into a recognizable human figure, carving a face, defining the neck and shoulders, and engraving what appears to be a necklace or collar at her throat. A further reworking in the Roman period added a headdress and draped cape around her shoulders, giving the figure a layered biographical history written in the stone itself across roughly two thousand years of habitation. Standing 1.65 metres tall, she was placed at the most symbolic position a stone could occupy: the gateway between the secular world and the churchyard.\n\nUntil the nineteenth century La Gran'mère was an object of genuine popular devotion. Locals left coins, flowers, and food at her feet — offerings characteristic of an earth-mother or fertility goddess — and she was believed to bring good fortune to newly-wed couples who paused at her gate. That tradition has persisted to the present day, absorbed into local custom in a way that outlasted its conscious religious meaning. She was understood as a grandmother figure in the archaic sense: the oldest ancestral presence in the community, predating the church built around her by more than two thousand years.\n\nIn 1860 the churchwarden of St Martin's Parish ordered her destruction, judging the offerings to be tantamount to idolatry in a Christian churchyard. She was broken into two pieces. But the reaction from parishioners was so fierce that the churchwarden was compelled to have the pieces cemented back together and the restored statue returned to her position at the gate. The episode is remarkable: a mid-Victorian Channel Islands community fought, and won, to preserve the veneration of a pre-Christian idol. Today she is a listed historic monument under the States of Guernsey, and the flowers left by bridal parties at her feet confirm that four-and-a-half millennia of attention have not been exhausted by modernity."
     },
     {
       "name": "Labbacallee wedge tomb",
@@ -4827,7 +4831,7 @@
       "lng": -4.588,
       "category": "deity",
       "region": "Isle of Man",
-      "summary": "Manannán mac Lir is the sea god, ruler of the Otherworld, and first king of the Isle of Man in Gaelic mythology — an island named in his honour. He protected the island by concealing it in mist from invaders and is said to have moved across its hills as three legs joined at the thigh, spinning like a wheel — the image behind the Isle of Man's triskelion symbol. His sacred hill is South Barrule, where he accepted annual tribute from the Manx people. Manx National Heritage commemorates Laa Columb Killey as his associated festival. He wields the sword Fragarach ('The Answerer'), which could cut through any armour, and owns a self-navigating boat and a cloak of invisibility.",
+      "summary": "The sea god wraps Man in mist and walks its hills as three spinning legs — the triskelion still on Man's flag. Each midsummer his people brought tribute of rushes to South Barrule, or faced his wrath.",
       "source": "https://en.wikipedia.org/wiki/Manann%C3%A1n_mac_Lir",
       "date_added": "2026-06-05",
       "tags": [
@@ -4837,7 +4841,8 @@
         "guardian",
         "celtic",
         "isle-of-man"
-      ]
+      ],
+      "detail": "Manannán mac Lir is one of the Tuatha Dé Danann, the divine race of Gaelic mythology, and appears across all four cycles of Irish mythology — a breadth of presence shared by almost no other figure. In Manx tradition he was the first king of the island, its protector and presiding deity long before Christianity arrived. He concealed Man from enemy fleets by surrounding it in magical mist, and the Manx people understood his movement on their hills as the turning of three legs joined at the thigh — spinning like a wheel — which became the triskelion, still the symbol on Man's coat of arms and flag today. His sacred hill is South Barrule in the south of the island, where tradition required the Manx people to bring a tribute of rushes on Midsummer's Eve (Laa Columb Killey); those who failed risked poverty and bad fortune through the year.\n\nIn the Irish literary tradition Manannán comes laden with magical possessions. He carries Fragarach (\"The Answerer\"), a sword that compelled truth from anyone at whose throat it was held and could cut through any armour. He sails in Scuabtuinne (\"Wave Sweeper\"), a self-navigating boat, and rides Enbarr (\"Water Foam\"), a horse that can gallop across the sea without breaking the surface. A cloak of invisibility and a bag of illusions complete his arsenal. He is also the primary guardian of Tír na nÓg, the Land of Eternal Youth, guiding worthy souls across the water to a realm beyond the western horizon.\n\nThe root of his name is inseparable from the island: \"Manannán\" appears to derive from the same ancient root as Manavia, the Latin name for the Isle of Man — a deity who is literally the genius loci of his place, not visiting it but emanating from it. He appears in the Lebor Gabála Érenn (\"Book of Invasions\") and across the mythological, Ulster, and Fenian cycles, making him uniquely threaded through all of Gaelic literary tradition. For the Manx, his cult has never fully dissolved: South Barrule remains a place of popular reverence, and Manannán's name continues to resonate through Manx culture in a way that speaks to an unbroken tradition of an island knowing itself through its first and greatest king."
     },
     {
       "name": "Maponos",
@@ -5225,14 +5230,15 @@
       "lng": 1.319,
       "category": "location",
       "region": "Norwich, Norfolk",
-      "summary": "Mousehold Heath near Norwich is known in Romani as Heviskey Tan — the place of holes. George Borrow recorded in Romano Lavo-Lil that the last two practitioners of wholly traditional Romani life were buried there: 'some six feet deep beneath the moss of a wild, hilly heath — called in Gypsy the Heviskey Tan, or place of holes; in English, Mousehold — near an ancient city which the Gentiles call Norwich.' The old Romani who refused Christian burial chose this heath as their resting place, making it a distinctly named sacred site preserved in the Romani language itself.",
+      "summary": "Near Norwich lies Mousehold Heath — 'Heviskey Tan' in Romani, the place of holes. George Borrow recorded that those who kept wholly to old Romani ways were buried here rather than in churchyards.",
       "source": "https://www.gutenberg.org/ebooks/2733",
       "date_added": "2026-06-01",
       "tags": [
         "moor",
         "england",
         "norfolk"
-      ]
+      ],
+      "detail": "Mousehold Heath is a stretch of open common land northeast of Norwich that served as a camping and gathering ground for Romani communities for generations. George Borrow encountered the Romani people there as a boy in the early nineteenth century, forming a connection that shaped his life. He became a skilled Romani speaker through those meetings on the heath and eventually drew on the friendships in his autobiographical works Lavengro (1851) and Romany Rye (1857), where the character of Jasper Petulengro is drawn from his friend Ambrose, one of the heath's encampment regulars. The heath stands a short walk from Norwich — close enough to the city to be marginal ground, far enough to remain outside it.\n\nIn Romano Lavo-Lil (1874), his Romani-English dictionary and phrasebook, Borrow records the name the Romani gave to the site: Heviskey Tan, which he translates as \"the place of holes.\" The name reflects the heath's distinctive terrain — its rolling topography, pits, and hollows — perceived and named independently in the Romani tongue, a parallel geography invisible to the \"Gentiles\" who called the same place Mousehold. In the same work, Borrow records the passage in which the last practitioners of wholly traditional Romani life chose burial \"six feet deep beneath the moss\" of this heath rather than in Christian churchyards — a deliberate refusal of assimilation, preserved in a specifically Romani sacred site.\n\nThe significance of Heviskey Tan lies precisely in the naming act. This is not a place-name derived from an external legend but the Romani community's own designation for ground that mattered to them, recorded by a sympathetic outsider at a moment when the fully traditional Romani way of life was already becoming rare. Mousehold Heath today is a managed urban nature reserve and a popular recreational space on the edge of the city, but the name Heviskey Tan belongs to a layer of the landscape that no Ordnance Survey map records: a geography made in a living language by people who had their own deep reasons to know the ground."
     },
     {
       "name": "Mullyash Kerbed Cairn",
@@ -6241,7 +6247,7 @@
       "lng": -5.976,
       "category": "hero",
       "region": "Sleat Peninsula, Isle of Skye, Scotland",
-      "summary": "Scáthach ('The Shadowy One') is a legendary warrior woman and martial-arts teacher of the Ulster Cycle whose fortress, Dún Scáith (Castle of Shadows), stood on the Isle of Skye. In the mythology, Cú Chulainn travels to her island stronghold — penetrating its formidable defences — and she trains him and his companion Ferdiad in advanced combat arts, including the use of the deadly barbed spear Gáe Bulg which she bestows upon him. She is described as semi-divine, the equal of any male warrior, and her school accepted only those already exceptionally brave and skilled. The ruins of Dunscaith Castle at Tokavaig on the Sleat Peninsula, Skye, are identified with her legendary stronghold.",
+      "summary": "Only Cú Chulainn was brave enough to leap the chasm guarding Scáthach's fortress on Skye — and she rewarded him with the Gáe Bulg, a barbed spear whose wounds can never be healed.",
       "source": "https://en.wikipedia.org/wiki/Sc%C3%A1thach",
       "date_added": "2026-06-05",
       "tags": [
@@ -6252,7 +6258,8 @@
         "celtic",
         "scotland",
         "skye"
-      ]
+      ],
+      "detail": "The Tochmarc Emire tells how Cú Chulainn journeys to Alba (Scotland) to train with Scáthach at Dún Scáith, her Fortress of Shadows on the Isle of Skye. To reach it he must cross the Bridge of Leaps — a bridge that buckles at its midpoint when anyone steps on an end; only the most perfectly timed leap from the far bank can land a warrior safely. Once inside, Cú Chulainn trains alongside his companion Ferdiad in the most advanced combat arts of the mythological world: the salmon leap, the feat of the chariot-wheel, and the arts of underwater fighting. Scáthach accepts only those already exceptionally brave; the school's sole criterion is demonstrated courage.\n\nScáthach bestows on Cú Chulainn her most fearsome weapon: the Gáe Bulg, a javelin thrown with the foot that opens into thirty barbs on entering the body and cannot be removed without cutting away all the surrounding flesh. She also gives him a prophecy of the battles ahead, seeing his fate with the clear eye of a seeress. Before he departs, Cú Chulainn fights Scáthach's twin sister and rival Aife — described in the text as the most dangerous warrior in the world — and defeats her. The encounter produces a son, Connla, whose tragic death later at Cú Chulainn's unknowing hand is one of the great sorrows of the Ulster Cycle.\n\nThe primary source is Tochmarc Emire, a foretale to the great Táin Bó Cúailnge that survives in the twelfth-century Book of the Dun Cow (Lebor na hUidre) and other manuscripts. Scáthach is culturally exceptional: a female teacher whose authority over the most dangerous men in mythology is entirely unchallenged. She is not a goddess but a semi-divine mortal of extraordinary skill, and her prophecy-gift places her in a tradition of warrior-seers who straddle combat and foresight. The ruins called Dun Sgathaich near Tokavaig on the Sleat Peninsula, built in the fourteenth century, mark where the mythological fortress was anchored in the landscape of Skye."
     },
     {
       "name": "Sea Mither",

@@ -547,8 +547,19 @@ footer a{color:var(--ink-light)}
     // Prefer entries that have full detail prose for a richer feature card.
     let pool = LEGENDS.filter(l => l.detail && l.detail.length > 60);
     if (!pool.length) pool = LEGENDS.slice();
-    pool.sort((a,b) => a.name.localeCompare(b.name));
-    const pick = pool[isoWeekSeed(new Date()) % pool.length];
+    // Deterministic weekly pick that stays stable as the dataset grows:
+    // pick the entry whose hash of (name + ISO-week) is highest. The week seed
+    // is constant Mon–Sun, so the featured legend only changes once a week —
+    // previously it used (seed % pool.length), which shifted daily as entries
+    // were added or gained detail.
+    const wk = isoWeekSeed(new Date());
+    let pick = null, bestH = -1;
+    for (let i = 0; i < pool.length; i++) {
+      let s = pool[i].name + '|' + wk, h = 2166136261;
+      for (let j = 0; j < s.length; j++) { h ^= s.charCodeAt(j); h = Math.imul(h, 16777619); }
+      h = h >>> 0;
+      if (h > bestH) { bestH = h; pick = pool[i]; }
+    }
     if (!pick) return;
     const meta = CATMETA[pick.category];
     document.getElementById('lotwCat').textContent = catLabel(pick.category);

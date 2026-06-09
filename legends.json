@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-09T18:46:49.600945Z",
-  "total": 502,
+  "generated": "2026-06-09T18:50:50.876691Z",
+  "total": 504,
   "categories": {
     "beast": "Beasts",
     "ghost": "Ghosts",
@@ -3142,6 +3142,24 @@
         "england",
         "devon"
       ]
+    },
+    {
+      "name": "Garman Garbh of Loch Garman",
+      "lat": 52.336,
+      "lng": -6.463,
+      "category": "water",
+      "region": "Wexford, County Wexford, Ireland",
+      "summary": "The Irish name for Wexford — Loch Garman — recalls Garman, drowned when an enchanted well burst its banks and flooded the plain, the new lake taking the dead man's name.",
+      "source": "https://ianmiddleton.co.uk/mysterious-ireland-part-1-leinster/",
+      "tags": [
+        "lake",
+        "drowning",
+        "ireland",
+        "county-wexford",
+        "celtic"
+      ],
+      "date_added": "2026-06-09",
+      "detail": "Loch Garman — the Irish name for Wexford and its harbour — carries one of the eponymous origin-legends gathered in the medieval Dindshenchas, the great Irish lore of place-names. In the tale a magical well or spring on the plain beside the River Slaney must be kept covered, for if it is neglected it will overflow and drown the land. When it is left open — in some tellings by a careless woman, in others amid the distraction of a great assembly — the waters burst forth across the plain and drown a man named Garman, and the new lake is named Loch Garman after him.\n\nA second strand of the tradition makes Garman a thief, Garman Glas, who steals the queen's golden diadem during the Beltane gathering and is pursued and drowned in the rising waters as his punishment. Either way the legend belongs to the distinctively Irish genre of the dindshenchas, in which the landscape itself is read as a memorial — every lough, hill and ford carrying the name and the fate of someone out of the mythic past. In Garman, the very harbour of Wexford remembers a drowning."
     },
     {
       "name": "Gawain",
@@ -7054,6 +7072,23 @@
         "england",
         "warwickshire"
       ]
+    },
+    {
+      "name": "Stronsay Beast",
+      "lat": 59.117,
+      "lng": -2.6,
+      "category": "beast",
+      "region": "Stronsay, Orkney, Scotland",
+      "summary": "In 1808 the rotting carcass of a 55-foot 'sea serpent' washed ashore on Stronsay; Edinburgh naturalists hailed it as a new species before London experts pronounced it a decayed basking shark.",
+      "source": "https://en.wikipedia.org/wiki/Stronsay_Beast",
+      "tags": [
+        "sea",
+        "coast",
+        "scotland",
+        "orkney"
+      ],
+      "date_added": "2026-06-09",
+      "detail": "In the autumn of 1808 the decomposing carcass of an enormous creature was washed up on the rocks of Stronsay in Orkney. Measured at some fifty-five feet long, with a small head, a long serpentine neck and what looked like a mane and three pairs of fin-like limbs, it astonished all who saw it. Sketches and sworn descriptions were sent to Edinburgh, where the Wernerian Natural History Society declared it a previously unknown animal and gave it the grand name Halsydrus pontoppidani — 'Pontoppidan's sea-snake', after the Norwegian bishop who had once catalogued the monsters of the deep.\n\nThe London anatomist Sir Everard Home soon poured cold water on the claim, arguing the remains were those of a large basking shark, whose cartilaginous body rots into just such a deceptive long-necked shape — the same decay that has produced 'sea serpent' carcasses the world over. Modern opinion agrees it was a basking shark, though even so a giant of perhaps thirty feet. Yet the Stronsay Beast endures in Orkney lore as the islands' own sea-monster — a vivid moment where folklore, natural history and the romance of the unknown all washed up together on a northern shore."
     },
     {
       "name": "Sulis",

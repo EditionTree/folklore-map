@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-09T18:50:50.876691Z",
-  "total": 504,
+  "generated": "2026-06-09T18:58:21.490150Z",
+  "total": 509,
   "categories": {
     "beast": "Beasts",
     "ghost": "Ghosts",
@@ -100,6 +100,24 @@
         "cairngorm"
       ],
       "detail": "Am Fear Liath Mòr — the Big Grey Man — is the eerie presence said to haunt Ben Macdui, the highest peak of the Cairngorms and the second-highest mountain in Britain. Climbers have long reported a creeping sense of dread near the summit, the sound of slow, heavy footsteps crunching behind them in the mist, and an overwhelming urge to flee downhill in panic. A few have glimpsed a vast grey figure, many feet tall, looming in the cloud.\n\nThe phenomenon gained fame when the respected mountaineer and scientist Professor Norman Collie described, before the Cairngorm Club in 1925, his own terrified flight from the mountain years earlier. Sceptics point to the Brocken spectre — a climber's own shadow cast huge upon the mist — and to the disorienting effects of altitude and solitude; believers hold that something truly walks the heights of Ben Macdui. Either way, it is the most famous mountain haunting in Britain."
+    },
+    {
+      "name": "Anantis Castle Revenant",
+      "lat": 55.4126,
+      "lng": -1.706,
+      "category": "ghost",
+      "region": "Alnwick, Northumberland, England",
+      "summary": "William of Newburgh's most dreadful revenant: a wicked man of 'Anantis castle' (often identified with Alnwick) rose blood-bloated to spread a deadly pestilence, until two brothers dug him up and burned his heart.",
+      "source": "https://en.wikipedia.org/wiki/William_of_Newburgh",
+      "tags": [
+        "spectral",
+        "haunting",
+        "death-omen",
+        "england",
+        "northumberland"
+      ],
+      "date_added": "2026-06-09",
+      "detail": "The most elaborate of William of Newburgh's revenant tales concerns a thoroughly wicked man who had settled near the 'castle of Anantis' — a place long debated by scholars, but often identified with Alnwick in Northumberland. Spying jealously on his unfaithful wife, he fell from a beam, died unconfessed, and was buried; thereafter his corpse roamed abroad by night, and wherever it passed the air grew foul and a wasting sickness spread, until whole families were dying and the town was emptying.\n\nOn Palm Sunday two brothers whose own father had died of the plague resolved to end it. They dug up the body and found it gorged and swollen with the blood it had drained from the living; striking it open, they tore out the heart and burned the whole corpse to ashes, after which the pestilence ceased. The Anantis revenant — a blood-bloated, plague-bringing corpse destroyed by burning — is the closest the medieval English record comes to the later folklore of the vampire, and among the earliest such accounts in Europe."
     },
     {
       "name": "Andraste",
@@ -647,6 +665,24 @@
       ]
     },
     {
+      "name": "Berwick Revenant",
+      "lat": 55.7682,
+      "lng": -2.005,
+      "category": "ghost",
+      "region": "Berwick-upon-Tweed, Northumberland, England",
+      "summary": "A 12th-century revenant of Berwick-upon-Tweed: a rich man's corpse roamed the streets by night pursued by howling dogs, until the townsfolk dug it up, hacked it apart and burned it to ward off plague.",
+      "source": "https://en.wikipedia.org/wiki/William_of_Newburgh",
+      "tags": [
+        "spectral",
+        "haunting",
+        "death-omen",
+        "england",
+        "northumberland"
+      ],
+      "date_added": "2026-06-09",
+      "detail": "William of Newburgh records that in the town of Berwick-upon-Tweed a man of wealth but evil life, lately dead, would not stay in his grave. By night his corpse wandered the streets, and packs of dogs followed it with terrible howling, so that the townspeople shut themselves indoors for fear of meeting it in the dark. As the haunting went on, dread grew that the very air would be corrupted and pestilence follow — a common medieval link between the restless dead and disease.\n\nTen bold young men were chosen to deal with it. They dug up the body, hacked it apart and burned it utterly — the standard remedy in these northern revenant tales — and the walking ceased. Yet, William notes pointedly, a plague broke out in Berwick afterwards regardless, though it spared the men who had destroyed the corpse. The Berwick case, like its fellows, shows how seriously the twelfth-century border country took the threat of the bodily undead."
+    },
+    {
       "name": "Bevis of Hampton",
       "lat": 50.897,
       "lng": -1.407,
@@ -987,7 +1023,8 @@
         "trickery",
         "england",
         "manchester"
-      ]
+      ],
+      "detail": "Boggart Hole Clough, a deep wooded ravine on the edge of Manchester, takes its name from the boggart said to haunt it — and gives its name in turn to one of the most famous of all English boggart tales. The boggart is the malevolent household and field spirit of the north-west, and this one plagued the family of a farmer named George Cheetham: it snatched food, frightened the children, snorted and laughed in the night, and dragged the bedclothes from sleepers.\n\nIn the classic story the family at last resolve to flee, loading their cart to escape the torment — only for a neighbour to call out, 'So you're flitting?', and for the boggart's own voice to pipe up from inside the churn on the cart, 'Aye, we're flitting!' Realising they can never leave the creature behind however far they move, the family give up and stay. The 'flitting boggart' is among the best-loved motifs in English folklore, and Boggart Hole Clough — now a public park — still carries in its name the memory of the thing in the dark."
     },
     {
       "name": "Boggarts",
@@ -1296,6 +1333,23 @@
         "england",
         "cornwall"
       ]
+    },
+    {
+      "name": "Buckinghamshire Revenant",
+      "lat": 51.9954,
+      "lng": -0.987,
+      "category": "ghost",
+      "region": "Buckinghamshire, England",
+      "summary": "Recorded by William of Newburgh c.1196: a dead man rose from his grave to return night after night to his widow's bed, terrorising his village until a bishop's written absolution laid him to rest.",
+      "source": "https://en.wikipedia.org/wiki/William_of_Newburgh",
+      "tags": [
+        "spectral",
+        "haunting",
+        "england",
+        "buckinghamshire"
+      ],
+      "date_added": "2026-06-09",
+      "detail": "Among the most matter-of-fact ghost stories of the Middle Ages is the Buckinghamshire revenant, set down by the chronicler William of Newburgh around 1196 as something that had genuinely happened. A man recently buried was said to leave his grave by night and return to the bed of his terrified widow; when she barred her door with the help of watchful neighbours, he turned instead to harassing his brothers, and then the wider village, even troubling the animals by day.\n\nThe desperate villagers sought the counsel of the archdeacon, who wrote to Hugh of Avalon, Bishop of Lincoln. Rather than the burning that other revenant tales prescribe, the bishop's remedy was a written one: a scroll of absolution was laid upon the corpse's breast in its reopened grave, and from that hour the dead man walked no more. William offers the case as one of several proofs that, in his own day, the recently dead could rise bodily from their tombs — a striking glimpse of medieval English belief in the corporeal walking dead."
     },
     {
       "name": "Bures Dragon",
@@ -2174,7 +2228,8 @@
         "spectral",
         "england",
         "cornwall"
-      ]
+      ],
+      "detail": "Dando and his dogs are a Cornish form of the Wild Hunt — a cautionary tale of a worldly, hard-hunting priest of the parish of St Germans who cared more for the chase and his pleasures than for his calling. Hunting one Sunday and crying that he would go to hell itself for a drink if none could be found on earth, Dando was answered: a dark stranger appeared, handed him a draught, and when the priest's hounds turned snarling on the newcomer, the stranger swept up Dando and his whole pack onto his black horse and plunged with them into the river and away.\n\nEver since, the country folk said, Dando and his dogs may be heard on stormy nights sweeping across the Cornish sky and moors in a spectral hunt, the baying of the hounds carrying on the wind. Collected by the Cornish folklorist Robert Hunt in his 'Popular Romances of the West of England' (1865), Dando's Dogs is Cornwall's own telling of the demon huntsman carried off for his impiety — a local strand of the great European Wild Hunt tradition."
     },
     {
       "name": "Dead Men of Burton-on-Trent",
@@ -2696,7 +2751,8 @@
         "vanishing",
         "england",
         "northumberland"
-      ]
+      ],
+      "detail": "The Hazelrigg Dunnie is a shape-shifting bogle of Northumberland, haunting the country around Belford and the crags near Hazelrigg. Like the Border bogles generally, it was a creature of mischief rather than real malice — but its favourite trick was a cruel one. It would take the shape of a horse and offer itself to be saddled; the moment the rider or ploughman mounted, the Dunnie would vanish, dropping its victim into the mud or the burn and braying with laughter from a safe distance.\n\nIt was blamed for leading travellers astray, miscalling the hours, and meddling with the farm work. Tradition tied it especially to a cave in the Hazelrigg crags, and some stories make it the restless ghost of a Border reiver who hid his plunder there and died before he could recover it, doomed to haunt the spot. The Dunnie is a fine example of the trickster-spirit of the Anglo-Scottish border — half practical joker, half ghost."
     },
     {
       "name": "Dunstan and the Devil",
@@ -3895,6 +3951,24 @@
       ]
     },
     {
+      "name": "Hereford Revenant",
+      "lat": 52.0565,
+      "lng": -2.716,
+      "category": "ghost",
+      "region": "Hereford, Herefordshire, England",
+      "summary": "Recorded by Walter Map c.1190: a dead Welshman returned nightly to his border village, calling out the names of neighbours who then sickened and died — until his corpse was beheaded with a spade.",
+      "source": "https://en.wikipedia.org/wiki/Walter_Map",
+      "tags": [
+        "spectral",
+        "haunting",
+        "death-omen",
+        "england",
+        "herefordshire"
+      ],
+      "date_added": "2026-06-09",
+      "detail": "Walter Map, the worldly courtier-cleric of the Welsh border, set down in his 'De nugis curialium' (c.1190) a revenant tale from his own country. A wicked Welshman, recently dead, returned from the grave night after night to wander his village near the Hereford march, calling aloud the names of his former neighbours — and each man so named would sicken and be dead within three days.\n\nThe bishop, consulted, advised that the grave be reopened, the corpse's head struck off with a spade, the body sprinkled with holy water and reburied. When that was done, the hauntings ceased. Map, writing at almost the same moment as William of Newburgh, presents the affair as recent and credible — valuable evidence that belief in the malignant, name-calling walking dead was alive along the English–Welsh border in the twelfth century, and not only in the cold north."
+    },
+    {
       "name": "Hereward the Wake",
       "lat": 52.3994,
       "lng": 0.2651,
@@ -4032,6 +4106,23 @@
         "wales",
         "pembrokeshire"
       ]
+    },
+    {
+      "name": "Hundeprest of Melrose",
+      "lat": 55.599,
+      "lng": -2.717,
+      "category": "ghost",
+      "region": "Melrose, Scottish Borders, Scotland",
+      "summary": "The 'dog-priest' of Melrose Abbey: a worldly chaplain's corpse rose to haunt the cloister and a noblewoman's house, until a watching monk struck it with an axe and the body was dug up and burned.",
+      "source": "https://en.wikipedia.org/wiki/Melrose_Abbey",
+      "tags": [
+        "spectral",
+        "haunting",
+        "church",
+        "scotland"
+      ],
+      "date_added": "2026-06-09",
+      "detail": "At Melrose Abbey in the Scottish Borders, William of Newburgh tells, there died a priest so given to hunting and worldly pleasure that the local people nicknamed him the 'Hundeprest' — the dog-priest. After his death his corpse would not rest: by night it tried to force its way into the abbey cloister where he had been so unworthy in life and, repulsed there, went to groan horribly outside the bedchamber of a noblewoman he had once served.\n\nOne of the abbey's monks, with three companions, kept watch by the grave through a bitter winter's night. When the revenant rose, the monk struck it a great blow with a battle-axe; the creature fled back to its tomb, which seemed to open to receive it. In the morning they dug it up, found the very wound the axe had made, and burned the body, scattering the ashes. The Hundeprest is among the most vivid of the medieval Scottish revenant accounts — a cautionary tale of a churchman whose corruption followed him beyond the grave."
     },
     {
       "name": "Hy-Brasil",
@@ -5255,7 +5346,8 @@
         "prophecy",
         "england",
         "merseyside"
-      ]
+      ],
+      "detail": "The Mersey Mermaid belongs to the folklore of the Lancashire and Wirral shores about the mouth of the River Mersey, where mermaids were long said to rise from the tide to lure sailors and fishermen. In the best-remembered form of the tale a young fisherman meets a mermaid on the rocks; she offers him the wealth of the sea — sunken treasure and good catches — in return for his love, but he scorns or betrays her, and her gift curdles into a curse that draws him at last beneath the waves.\n\nLike mermaid legends all around the British coast, the story wraps a clear warning in romance: the sea is beautiful and generous but never to be trusted, and the man who takes its gifts lightly pays with his life. The Mersey's mermaids are the maritime lore of a great estuary and port — a reminder that even the busy north-western waters once held their own alluring and dangerous spirits."
     },
     {
       "name": "Metheringham Lass",
@@ -5864,7 +5956,8 @@
         "black",
         "england",
         "yorkshire"
-      ]
+      ],
+      "detail": "The Padfoot is a spectral black beast of the West Riding of Yorkshire, especially around Leeds — a death-omen creature akin to the Barghest, named for the soft padding of its feet heard following the traveller on a dark road. It appears most often as a large shaggy black dog with broad glowing eyes, but it is a shape-shifter: it may show as a white dog, a woolly fleece rolling along the ground, or a donkey, and it drags a clanking chain.\n\nTo meet the Padfoot — or merely to hear its padding tread and the rattle of its chain behind you — was an omen of death in the household. It was as often invisible as seen, and was said to follow people home; some tales warn that to speak to it or strike at it brings its power down upon you, while leaving it be lets it pass. One of the classic Yorkshire 'black dogs', the Padfoot stands beside the Barghest and the Gytrash in the county's rich tradition of spectral, death-foretelling beasts of the road."
     },
     {
       "name": "Pendle Witches",
@@ -7260,7 +7353,8 @@
         "haunting",
         "england",
         "london"
-      ]
+      ],
+      "detail": "The Black Dog of Newgate is the spectral hound said to haunt London's notorious Newgate Prison — a black shape that appeared before executions, gliding along the prison walls as an omen of death. Its legend was popularised in a lurid pamphlet first printed around 1596 and reprinted for generations, which traced the apparition to a grisly origin: in the reign of Henry III, during a famine, a scholar imprisoned for supposed sorcery was killed and eaten by his starving fellow inmates — and returned as a fearsome black dog to take his revenge, so terrifying the murderers that they broke out and fled.\n\nThereafter, the tradition held, the Black Dog walked the night before each hanging, and condemned prisoners dreaded the sight of it. As one of the few black-dog legends rooted in a city and a prison rather than a lonely country lane, it is a distinctly urban member of Britain's great spectral-hound family — the doom of Newgate given shape in the dark."
     },
     {
       "name": "The Buggane of St Trinian's",
@@ -8354,7 +8448,8 @@
         "serpent",
         "scotland",
         "border"
-      ]
+      ],
+      "detail": "The Worm of Linton is the dragon-legend of the village of Linton in the Scottish Borders, in the old county of Roxburghshire. A great serpent or 'worm' was said to lair in a hollow on Linton Hill — still called the Worm's Den — emerging to devour livestock and people and to blight the country with its venomous breath, until the laird, John Somerville, undertook to destroy it.\n\nKnowing no ordinary blow could pierce its hide, he had a long lance tipped with a wheel of burning peat steeped in pitch and brimstone; riding up to the creature as it opened its jaws, he thrust the blazing mass down its throat and burned it from within. For the deed Somerville was, by tradition, knighted and granted the barony of Linton — and a weathered carved stone above the door of Linton church is said to commemorate the slaying. The Worm of Linton is one of the classic 'worm' legends of the Borders, blending the universal dragon-fight with a real family's claim to its lands."
     },
     {
       "name": "Wraith",

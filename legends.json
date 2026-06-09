@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-08T20:43:00.058996Z",
-  "total": 490,
+  "generated": "2026-06-09T18:46:49.600945Z",
+  "total": 502,
   "categories": {
     "beast": "Beasts",
     "ghost": "Ghosts",
@@ -744,6 +744,24 @@
       "detail": "The Black Dog of Bouley Bay is the spectral hound of Jersey — a huge black dog with eyes like saucers and a dragging chain, said to haunt the steep lanes and the wild north-coast bay of Bouley on dark and stormy nights. To meet it was an omen of misfortune or of coming storm, and islanders dreaded the rattle of its chain on the wind. It belongs to the same broad family as the black dogs of mainland Britain — Black Shuck, the Barghest — but is wholly Jersey's own.\n\nThere is a sly local tradition, too, that the legend was deliberately encouraged — if not invented — by the island's smugglers, who found a man-eating phantom hound an excellent way to keep the curious and the law-abiding shut indoors and off the coastal paths while contraband moved by night. Whether genuine apparition or smugglers' ruse grown real in the telling, the Black Dog of Bouley Bay is the best-known ghost-beast of the Channel Islands."
     },
     {
+      "name": "Black Eric of Shetland",
+      "lat": 59.905,
+      "lng": -1.378,
+      "category": "ghost",
+      "region": "Fitful Head, Shetland, Scotland",
+      "summary": "Black Eric was the feared hermit-rustler of Fitful Head who terrorised Shetland crofts by night, aided by a supernatural Tangie sea-horse, until crofter Sandy Breamer killed him in single combat; his cursed iron staff, repurposed as a mill spindle, tore the mill apart on Halloween night and vanished into darkness.",
+      "source": "https://en.wikipedia.org/wiki/Tangie",
+      "date_added": "2026-06-09",
+      "tags": [
+        "scotland",
+        "shetland",
+        "sea",
+        "horse",
+        "haunting"
+      ],
+      "detail": "Black Eric is a dark figure in Shetland folklore, associated with the dramatic cliffs of Fitful Head at the southernmost point of Mainland Shetland. He is described as a hermit living in a sea-cave who survived by sheep-rustling, which he undertook with supernatural assistance: he rode a Tangie—the Shetland and Orcadian water spirit, which appears as a powerful dark horse dripping with seaweed and brine, or as a wild seaweed-clad man—on his nocturnal raids through the crofting townships. The combination of human cunning and supernatural aid made Eric effectively unstoppable, and the fear he generated was such that farmers preferred to leave out offerings rather than risk confrontation.\n\nHis end came when a crofter named Sandy Breamer refused to be intimidated. In their final confrontation at the edge of Fitful Head's cliffs, Eric fell into the sea and was drowned. His heavy iron staff washed ashore afterward and was salvaged as what appeared to be a useful piece of scrap metal, fitted as the spindle of a local watermill. But from that point on, on every Halloween night, the mill became a place of unearthly screams and groaning; witnesses claimed to see the spectral shape of Black Eric himself spinning on the flying millstone. The haunting reached its climax on one Halloween when a storm of supernatural violence tore the mill completely apart and the spindle disappeared back into darkness, never to be found.\n\nThe legend is recorded in George Stewart's Shetland Fireside Tales (1892), one of the principal early collections of Shetland oral tradition, and has been discussed by the Archaeology Shetland project. It connects the figure of Black Eric to the broader tradition of the Tangie—a specifically named Shetland/Orkney water spirit distinct from the more widely known kelpie—which is attested in the Wikipedia article on Tangie and in spookyscotland.net."
+    },
+    {
       "name": "Black Lady of Bradley Woods",
       "lat": 53.53,
       "lng": -0.13,
@@ -1280,6 +1298,23 @@
       ]
     },
     {
+      "name": "Bures Dragon",
+      "lat": 51.974,
+      "lng": 0.734,
+      "category": "dragon",
+      "region": "Bures, Suffolk, England",
+      "summary": "In 1405 a crested, serrated-toothed dragon descended on the village of Bures in Suffolk, killing a shepherd and his flock—all arrows bounced off its scales—before finally retreating into the marsh; the attack was recorded by a monk at St Albans Abbey, making it one of the best-documented English dragon legends.",
+      "source": "https://www.atlasobscura.com/places/bures-dragon",
+      "date_added": "2026-06-09",
+      "tags": [
+        "england",
+        "suffolk",
+        "river",
+        "battle"
+      ],
+      "detail": "The Bures Dragon legend is one of only a handful of medieval English dragon accounts tied to a specific date and locale in a surviving primary chronicle. The story was first recorded in 1405 by Henry de Blaneford, a monk at St Albans Abbey, in his chronicle; the church guidebook at St Mary the Virgin, Bures, identifies this as the probable source. The dragon is described as having a crested head, serrated teeth, a massive body, and a long tail, and it emerged near the village of Bures on the Essex-Suffolk border, close to the River Stour.\n\nLocal men attempted to kill the beast with arrows, but the shafts rebounded harmlessly off its scales. A shepherd and his entire flock were devoured before the villagers managed to drive the creature off. Sir Richard Waldegrave of Bures was credited in some later retellings with eventually slaying or repelling the beast, though the original chronicle gives the impression it simply retreated. Some later versions suggest the dragon fled toward the adjacent hamlet of Wormingford in Essex—whose first element many interpreted as Old English wyrm (dragon or serpent)—though modern etymologists dispute this derivation.\n\nIn 2012, a dragon figure 75 metres by 95 metres was cut into the hillside near Bures as part of the Diamond Jubilee celebrations, creating a new physical landmark for the tradition. The legend has been examined in detail by Atlas Obscura, by C. M. Rosens in a survey of East Anglian dragon folklore, and by the East Anglian Daily Times. It provides Suffolk—an underrepresented county in the current dataset—with a strongly sourced dragon entry rooted in a medieval chronicle."
+    },
+    {
       "name": "Bwbach",
       "lat": 51.482,
       "lng": -3.179,
@@ -1593,7 +1628,7 @@
       "lng": -4.243,
       "category": "water",
       "region": "North Kessock, Black Isle, Highland",
-      "summary": "The ceasg is a Scottish Gaelic mermaid with the lower body of a grilse, a young salmon, also called maighdean na tuinne, the maid of the wave. The most famous local tradition is the Mermaid of Kessock: a man named Paterson caught her on the shore by the Kessock Ferry and removed scales from her tail to force her into human form, married her and had children, until a child found the hidden scales and she returned forever to the sea. If captured she grants three wishes, but her song can also lure men to drown.",
+      "summary": "Scotland's ceasg—half-woman, half-young salmon—grants three wishes if caught, but lures unwary men to drown with her singing. At Kessock on the Black Isle, Paterson stripped scales from her tail to bind her into human form, married her, and fathered children—until one of his own children found the hidden scales and she vanished into the firth forever.",
       "source": "https://en.wikipedia.org/wiki/Ceasg",
       "date_added": "2026-06-02",
       "tags": [
@@ -1605,7 +1640,8 @@
         "celtic",
         "scotland",
         "highland"
-      ]
+      ],
+      "detail": "The ceasg (also maighdean na tuinne, 'maid of the wave,' or maighdean mhara, 'maid of the sea') is a Scottish Gaelic mermaid distinguished from the standard European mermaid by having the lower body of a grilse—a young salmon—rather than a generic fish tail. This salmon-body marks her out as a freshwater as well as a sea creature; ceasgan are recorded in lochs and rivers as well as the open sea, reflecting the salmon's own migration between salt and fresh water. The Scottish folklorist Donald MacKenzie suggested that the ceasg may originally have been a sea goddess to whom offerings—possibly human—were made, and her transformation into a wish-granting captive represents the domestication of an older and more fearful tradition.\n\nIf a man can capture a ceasg, she is obliged to grant him three wishes in return for her release. In some variants she sheds her fish tail permanently to assume human form, marrying into the human world and bearing children who become famed sailors and pilots—inheriting their mother's mastery of water. However, the marriages are uniformly temporary: something always reveals her true nature and she returns to the sea, leaving her human family behind. The Kessock tradition—the best-documented local variant—differs in that the transformation is forced by removing scales from her tail; this variant emphasises violation and captivity rather than a bargain freely made.\n\nThe ceasg's song is described as irresistible, luring men into the water to drown. This double nature—a wish-granting wife on one hand, a lethal siren on the other—places her in the broader tradition of ambivalent water-women that includes the Welsh Gwragedd Annwn (lake maidens of the Otherworld) and the Irish merrow. The Spooky Isles article on the ceasg and the Scottish folklore survey at Culloden Battlefield both note that descendants of men who married ceasgan were said to carry a trace of supernatural luck at sea—a benevolent inheritance from their vanished mothers."
     },
     {
       "name": "Ceridwen",
@@ -1887,6 +1923,24 @@
         "england",
         "cornwall"
       ]
+    },
+    {
+      "name": "Corrag of Glencoe",
+      "lat": 56.68,
+      "lng": -5.104,
+      "category": "witch",
+      "region": "Glencoe, Highland, Scotland",
+      "summary": "Corrag was a lone Highland wise-woman who foresaw the 1692 Massacre of Glencoe and tried in vain to warn the MacDonalds; she then threw the chief's broadsword into Loch Leven with a prophecy that no Glencoe man would die in battle while it lay undisturbed—a prophecy apparently kept until 1 July 1916.",
+      "source": "https://www.glencoemuseum.com/post/corrag-of-glencoe",
+      "date_added": "2026-06-09",
+      "tags": [
+        "scotland",
+        "highland",
+        "lake",
+        "prophecy",
+        "death-omen"
+      ],
+      "detail": "Corrag is a figure of Highland folklore associated with the valley of Glencoe in Argyll, described as a solitary woman—sometimes called a witch, sometimes simply a woman of second sight—who lived in the mountains above the glen and was feared for her prophetic gifts. She is not presented as malevolent but as someone whose warnings were ignored at terrible cost. According to the tradition, she foresaw the impending massacre of the MacDonalds of Glencoe by soldiers billeted in the glen, which took place on 13 February 1692 on the orders of William III. She warned the chief but was not believed, fled to the hills the night before, and returned at dawn to find the village destroyed.\n\nStanding over the place where the chief had been killed, Corrag found his broadsword, carried it to the shore of Loch Leven, and threw it into the water. She pronounced a prophecy: no man of Glencoe would die in battle while the blade lay undisturbed beneath the loch. For over two centuries the tradition appeared to hold; the MacDonalds fought at Culloden and later Victorian conflicts with no recorded Glencoe battle deaths. This changed in June 1916, when a dredger operating on the loch bed recovered an old sword handle and a crew member brandished it in a local bar that evening. The following day—1 July 1916, the first day of the Battle of the Somme—seven men from the village of Glencoe were killed in action, the first battle deaths since 1692.\n\nA second prophecy attributed to Corrag concerns Ballachulish Bridge over the narrows of Loch Leven, built in the 1970s: she had warned that if the narrows were ever bridged, a flood would destroy Glencoe. Engineers are said to have left one of the 24 concrete approach bolts undriven to ensure the bridge was never technically complete. The legend is documented by the Glencoe Museum and the National Trust for Scotland, and referenced in National Trust interpretive material for Glencoe."
     },
     {
       "name": "Coventina",
@@ -2396,6 +2450,24 @@
       ]
     },
     {
+      "name": "Dorrington Witch",
+      "lat": 53.073,
+      "lng": -0.446,
+      "category": "witch",
+      "region": "Dorrington, Lincolnshire, England",
+      "summary": "A witch of Dorrington who took the form of a rat was kicked hard by a villager one night, and the next morning was found confined to her bed, badly beaten in human form—a transformation tale from the tradition of Lincolnshire witch-belief gathered by folklorist Ethel Rudkin in the 1930s.",
+      "source": "https://lincolnshirefolktalesproject.com/2024/02/20/the-dorrington-demons-witches/",
+      "date_added": "2026-06-09",
+      "tags": [
+        "england",
+        "lincolnshire",
+        "shapeshifter",
+        "curse",
+        "transformation"
+      ],
+      "detail": "The Dorrington Witch is one of a cluster of Lincolnshire transformation tales collected by the folklorist Ethel H. Rudkin (1893–1985) during her fieldwork among villages between Metheringham and Ruskington in the 1920s and 1930s. Rudkin published a selection in Lincolnshire Folklore (1936), and a substantial body of material survives in her archive at the North Lincolnshire Museum at Scunthorpe. Her fieldwork represents the most systematic collection of Lincolnshire oral tradition ever undertaken, drawn directly from local people rather than literary sources.\n\nIn the specific Dorrington tale, a woman locally suspected of witchcraft was known to take animal form. One night a villager encountered a rat on the road and gave it a hard kick in passing. The following morning, the suspected witch was found indoors, unable to leave her bed, covered in bruises and injuries corresponding exactly to the kick—the classic Lincolnshire 'wound transfer' motif. This belief—that injury sustained in animal form would manifest in human form on the witch's return—recurs consistently across the county's witch lore. A closely parallel story from Rowston, about two miles away, concerns a witch who transformed into a hare, was shot with a silver bullet, and was found dying of a gunshot wound in human form the next day.\n\nThe tale is recorded in Lincolnshire Life, April 1986 (Mary Borrows, 'Ghosts, Witches and Wild Men in the Valley'), and is indexed on the Lincolnshire Folk Tales Project website. Dorrington appears in the lincolnshire_leads.json manual leads file under the category 'Witches & Wizards.'"
+    },
+    {
       "name": "Dorset Ooser",
       "lat": 50.887,
       "lng": -2.605,
@@ -2660,6 +2732,24 @@
         "church"
       ],
       "detail": "Dunwich was the capital of the Anglo-Saxon Kingdom of the East Angles and by the 13th century one of the busiest ports in England — comparable in area to contemporary London. A catastrophic storm surge in 1286, followed by further great storms in 1287, began the systematic destruction of the city. Eight churches, the royal mint, and thousands of homes gradually toppled into the North Sea as the coastline retreated. By the Victorian period nothing of significance remained above water except a small coastal village, and all eight medieval churches now lie submerged beneath the seabed.\n\nThe folklore tradition that grew from this catastrophic loss is specific and enduring: during storms and high tides, the bells of the sunken churches can still be heard ringing beneath the waves. The tradition has been recorded by multiple sources across several centuries and is firmly embedded in Suffolk coastal culture. Dunwich has been called 'Britain's Atlantis,' and the legend connects it to a widespread pattern of 'drowned kingdom' traditions found in Welsh folklore (Cantre'r Gwaelod), Breton legend (Ys), and Irish myth — cultures where the sea's encroachment on human settlement was processed through legend.\n\nWhile geologists have attributed sounds near the Dunwich coast to underwater stone movement and the resonance of submerged structures, the bell tradition has persisted independently of rational explanation. The underwater ruins at Dunwich are now a protected archaeological site, and their presence has been mapped by marine archaeologists, adding an unusual empirical dimension to one of England's most atmospheric folk legends."
+    },
+    {
+      "name": "Dòideag of Mull",
+      "lat": 56.623,
+      "lng": -6.068,
+      "category": "witch",
+      "region": "Isle of Mull, Argyll, Scotland",
+      "summary": "The Dòideag—'Little Frizzle'—was the most feared storm-witch of the Isle of Mull, famed for raising tempests; in 1588 she is said to have called down fire that sank a Spanish Armada galleon in Tobermory harbour, whose treasure-laden wreck lies unraised to this day.",
+      "source": "https://en.wikipedia.org/wiki/D%C3%B2ideag",
+      "date_added": "2026-06-09",
+      "tags": [
+        "scotland",
+        "argyll",
+        "island",
+        "sea",
+        "curse"
+      ],
+      "detail": "Dòideag (also Na Dòideagan in her plural form) was a legendary witch associated with the Isle of Mull in the Inner Hebrides, whose name—probably meaning 'little frizzle'—is thought to allude to her wild or dishevelled hair. She was connected in tradition with the powerful Clan Maclean of Duart and was feared throughout the island for her ability to summon storms and tempests. She belongs to a recognised category of named Hebridean storm-witches that also includes Gormshuil of Moy, Laorag of Tiree, and Maol-odhar of Kintyre.\n\nThe most vivid tale attached to Dòideag concerns the Spanish Armada galleon that put in to Tobermory harbour in 1588—almost certainly the San Juan de Sicilia. In one version, the wife of a local man sought the witch's help because a Spanish princess aboard the ship was pursuing her husband; in another, Dòideag acted on behalf of Clan Maclean. Either way, the witch used her power to set the vessel ablaze or blow it apart, killing everyone on board. The Tobermory Galleon—whatever its true identity—has indeed lain at the bottom of Tobermory Bay ever since; numerous salvage attempts over four centuries have found little of value, and the wreck's stubborn resistance to raising has kept the Dòideag's legend alive.\n\nThe tradition is recorded in the Wikipedia article on Dòideag, discussed in Country Life's 'The Witches of Mull,' and treated in surveys of Hebridean mythology and folklore. It represents a rare example of a named Hebridean witch with a specific historical event anchoring her legend."
     },
     {
       "name": "Each-Uisge",
@@ -3224,7 +3314,7 @@
       "lng": -2.7195,
       "category": "location",
       "region": "Somerset",
-      "summary": "Joseph of Arimathea is said to have thrust his pilgrim's staff into the earth on Wearyall Hill above Glastonbury, where it took root as a thorn tree that flowered at Christmas as well as spring. The original was destroyed by a Puritan in the Civil War; descendants grown from its cuttings still stand, and one sends a sprig to the monarch every Christmas.",
+      "summary": "Joseph of Arimathea is said to have thrust his pilgrim's staff into Wearyall Hill above Glastonbury—crying 'we are weary all'—and it took root as a hawthorn that flowers both at Christmas and in spring. Puritans burned the original in the Civil War; descendants grown from cuttings still send a sprig to the monarch every December.",
       "source": "https://en.wikipedia.org/wiki/Glastonbury_Thorn",
       "date_added": "2026-06-03",
       "tags": [
@@ -3234,7 +3324,8 @@
         "battle",
         "england",
         "somerset"
-      ]
+      ],
+      "detail": "The Glastonbury Thorn (Crataegus monogyna 'Biflora') is a cultivar of common hawthorn that flowers twice a year—once in early spring and once in winter, typically around Christmas—which distinguishes it from every native British hawthorn. This unusual flowering habit is the botanical foundation on which a remarkable body of Christian legend has been built, linking Glastonbury to the earliest arrival of Christianity in the British Isles.\n\nThe legend of Joseph of Arimathea planting his staff on Wearyall Hill (from 'we are weary all'—a folk etymology for the hill's name) and having it take miraculous root does not appear in its full form until the 17th century; the most famous version of the story is first recorded in 1662. Earlier medieval sources, including the 12th-century writings of William of Malmesbury and Gerald of Wales, connect Joseph to Glastonbury as the founder of Britain's first Christian community, but they do not mention the thorn or the staffplanting. The biflora flowering appears to have attracted the Joseph legend to it rather than the legend generating the tree. The hawthorn's winter flowering was consistently interpreted as a miraculous sign: even after the Reformation, and despite Puritan hostility, locals preserved cuttings from successive trees.\n\nThe tradition of sending a flowering sprig to the sovereign at Christmas—which is maintained to this day by the vicar of St John the Baptist, Glastonbury—was formalised no later than the early 17th century and has continued through multiple monarchs. The 'original' tree on Wearyall Hill was destroyed during the English Civil War; a replacement planted on the hill in 1951 was vandalised in 2010, with all its branches cut off. The tree in the churchyard of St John's and a specimen at Glastonbury Abbey remain the principal living representatives of the tradition. The University of Reading's Glastonbury Abbey Archaeology Project has published scholarly analysis of the thorn's place in the Joseph legend."
     },
     {
       "name": "Glastonbury Tor",
@@ -3986,7 +4077,7 @@
       "lng": -1.5508,
       "category": "hero",
       "region": "Derbyshire",
-      "summary": "Son of Ragnar Lothbrok and commander of the Great Heathen Army that swept into England in 865, Ivar took York and exacted vengeance on King Aella with the blood eagle. A great Viking burial excavated at Repton in Derbyshire — where the army wintered in 873 — is believed by some scholars to be his grave, surrounded by the bones of over two hundred warriors.",
+      "summary": "Son of Ragnar Lothbrok, Ivar co-led the 865 Great Heathen Army that swept into England, took York, and reputedly executed King Aella by the blood eagle ritual. A high-status Viking burial at Repton, Derbyshire—ringed by over 250 warrior bones and dated to 873—is believed by scholars to be his grave.",
       "source": "https://en.wikipedia.org/wiki/Ivar_the_Boneless",
       "date_added": "2026-06-03",
       "tags": [
@@ -3996,7 +4087,8 @@
         "norse",
         "england",
         "derbyshire"
-      ]
+      ],
+      "detail": "Ivar the Boneless (Old Norse: Ívarr inn Beinlausi) was one of the sons of the legendary Viking Ragnar Lothbrok and co-commander of the micel here—the Great Heathen Army—that invaded England in 865. The force was unprecedented in scale: it swept through Northumbria, Mercia, and East Anglia over the following years, permanently transforming the political geography of Anglo-Saxon England. At York in 866, Ivar and his brothers captured and executed King Aella of Northumbria; later Norse sagas claim Aella was subjected to the blood eagle (ristning blóðörn), a ritual mutilation in which the ribs are severed from the spine and the lungs drawn out to form wings. Whether the blood eagle was a genuine execution method or a later literary invention is debated by historians, but the story was current by the time of the 13th-century Ragnarssona þáttr.\n\nThe meaning of 'the Boneless' is disputed. Proposed interpretations include a reference to a physical condition (Marfan syndrome, osteogenesis imperfecta, or severe mobility impairment are all cited), an unusual flexibility that made him a wrestler, or simply a kenning for his strategic subtlety—boneless in the sense of boneless cunning rather than muscular strength. The sagas depict Ivar as primarily a strategist rather than a battlefield warrior, suggesting the last reading may have the most traction.\n\nIn 873 the Great Heathen Army wintered at Repton in Derbyshire, a site of royal Mercian significance: they occupied the monastery of St Wystan and drove King Burgred into exile, effectively ending Mercian independence. Excavations by Martin Biddle and Birthe Kjølbye-Biddle in the 1970s–1980s uncovered a mass burial of over 250 individuals arranged around a single high-status male interment, accompanied by a Thor's hammer amulet, a fine iron sword, and silver pennies minted 872–4. Isotopic analysis confirmed the individuals were from Scandinavia. The identification of the central burial as Ivar himself is speculative but has been seriously argued in academic literature, including a 2022 paper in the Journal of Archaeological Science. If correct, Repton was the Great Heathen Army's British Valhalla."
     },
     {
       "name": "Jack Ward",
@@ -4081,6 +4173,24 @@
         "england",
         "tynemouth"
       ]
+    },
+    {
+      "name": "John Callis, Welsh Pirate",
+      "lat": 51.687,
+      "lng": -5.052,
+      "category": "pirate",
+      "region": "Pembrokeshire, Wales",
+      "summary": "John Callis terrorised the Bristol Channel in the 1560s–70s from his Pembrokeshire base, selling stolen cargo openly at Laugharne and Carew and using a white-masted ship as a decoy—his powerful family connections kept him at large for years before he was finally taken to the Marshalsea in 1576.",
+      "source": "https://www.historic-uk.com/HistoryUK/HistoryofWales/John-Callis-Callice-Welsh-Pirate/",
+      "date_added": "2026-06-09",
+      "tags": [
+        "wales",
+        "pembrokeshire",
+        "sea",
+        "coast",
+        "trickery"
+      ],
+      "detail": "John Callis (also Callice; fl. 1560s–1576) was born in Monmouthshire and became the most notorious Welsh pirate of the 16th century, predating better-known Pembrokeshire figures such as Bartholomew Roberts by over a century. His operational territory ran between Cardiff and Haverfordwest, exploiting the hidden coves and inlets of the Pembrokeshire coast and the approaches to the Bristol Channel. Unlike the oceanic voyagers of the Golden Age of Piracy, Callis was principally a coastal raider, intercepting merchant shipping in the Bristol Channel and selling stolen cargoes openly in the villages of South Wales—particularly Laugharne in Carmarthenshire and Carew in Pembrokeshire—where corrupt local officials looked the other way.\n\nCallis benefited from social protection: his father-in-law Nicholas Herbert came from a wealthy and influential Monmouthshire family, and he maintained the Point House Inn at Angle in Pembrokeshire as a base and a refuge. One documented deceptive tactic was his use of a white mast to mimic an innocent trader before attacking. Despite sustained efforts by the English Crown to capture him, Callis evaded arrest for years. He was finally taken in 1576 and committed to the Marshalsea Prison in London.\n\nHis ultimate fate is disputed. Some accounts say he was tried and hanged at Newport; others claim that his connections enabled him to negotiate a pardon, after which he was allegedly commissioned to join Sir Humphrey Gilbert's 1578 voyage to North America, sailing alongside a young Walter Raleigh. This unresolved ambiguity has become part of his legendary status in Welsh maritime tradition. His story is told in full in the Historic UK article and in the Wikipedia article on John Callis (pirate)."
     },
     {
       "name": "John Gow",
@@ -4274,6 +4384,25 @@
         "scotland",
         "orkney"
       ]
+    },
+    {
+      "name": "La Bête De La Tour",
+      "lat": 49.47,
+      "lng": -2.55,
+      "category": "beast",
+      "region": "Guernsey, Channel Islands",
+      "summary": "La Bête De La Tour—'the Beast of the Tower'—is Guernsey's most feared phantom: a massive black dog wrapped in clanking chains with eyes like burning coals, whose very appearance was believed to foretell the viewer's death.",
+      "source": "https://channeleye.media/11-supernatural-hotspots-in-the-channel-islands/",
+      "date_added": "2026-06-09",
+      "tags": [
+        "channel-islands",
+        "guernsey",
+        "dog",
+        "black",
+        "death-omen",
+        "haunting"
+      ],
+      "detail": "La Bête De La Tour ('the Beast of the Tower') is the most distinctive spectral creature in Guernsey folklore, a massive black dog whose body is wound in heavy iron chains that clank and rattle as it moves. Unlike the phantom black dogs of mainland England—such as Black Shuck of East Anglia or the Barghest of Yorkshire—the Bête is not presented primarily as an omen of death but as a being whose mere sighting was believed, with near certainty, to cause the viewer's death. Its name links it to the old coastal towers and fortifications that punctuate the Guernsey shoreline, where isolated night watchmen endured the full force of the island's supernatural landscape.\n\nGuernsey sits at the heart of a Channel Islands tradition of spectral dogs that includes the Tchico of Sark (a headless phantom identified with a past Bailiff of Guernsey) and the Black Dog of Bouley Bay on Jersey—all drawing on a shared Norman-Celtic cultural substrate. The Bête's specific association with a tower suggests a tradition shaped by the garrisoned military architecture that dominated the island's history from the medieval period through the Napoleonic era and beyond.\n\nGuernsey's supernatural tradition is exceptionally dense for an island of its size: between 1560 and 1640 some 44 people were burned at the stake for witchcraft there, one of the densest concentrations in any community in the British Isles. The Bête De La Tour is recorded in the Channel Eye article '11 Supernatural Hotspots in the Channel Islands,' in Guernsey Folklore compilations at the Priaulx Library (which holds Louisa Lane Clarke's Guernsey and Sark folklore records), and in Condor Ferries' Guernsey Folklore guide."
     },
     {
       "name": "La Gran'mère du Chimquière",
@@ -4646,6 +4775,24 @@
       ]
     },
     {
+      "name": "Long Compton Witches",
+      "lat": 51.986,
+      "lng": -1.607,
+      "category": "witch",
+      "region": "Long Compton, Warwickshire, England",
+      "summary": "Long Compton in Warwickshire was believed to harbour a coven of sixteen witches, a tradition so alive that in 1875 John Haywood stabbed 79-year-old Ann Turner to death with a pitchfork, claiming she had overlooked his cattle—a murder that exposed the unbroken force of witch-belief in Victorian England.",
+      "source": "https://www.greatbritishlife.co.uk/magazines/cotswold/22564723.witchcraft-necromancy-long-compton/",
+      "date_added": "2026-06-09",
+      "tags": [
+        "england",
+        "warwickshire",
+        "standing-stones",
+        "curse",
+        "haunting"
+      ],
+      "detail": "Long Compton, a village at the foot of the Rollright Hills in Warwickshire, built an exceptional reputation for witchcraft from the 17th century onward. Folklore held that sixteen witches operated in the village—enough, one local saying ran, to pull a wagon up Meon Hill. An area by the Red Lion pub became known as 'Witch End.' Specific tales circulated: one witch was said to ride along the road in a 'dough kibbler' (a dough-cutting machine); another concerned a dying woman who could not expire until her relatives stepped out and a black pigeon flew from the window; necromancy and the raising of the dead was attributed to local practitioners. The Rollright Stones, a prehistoric stone circle a mile south of the village, were themselves believed to be a king and his army petrified by a local witch—a tradition whose earliest documented form dates to the mid-19th century but may draw on much older belief.\n\nThe tradition reached its violent endpoint on 15 September 1875, when John Haywood, aged 44, attacked Ann Turner, aged 79, in the road at the edge of the village, stabbing her repeatedly with a pitchfork. At trial Haywood declared Turner had tormented him for years with the Evil Eye, had bewitched his cattle, and that 'she kept toads in her garden.' Rather than convicted of murder, Haywood was committed to Broadmoor Criminal Lunatic Asylum—a verdict that implicitly acknowledged the living force of the belief system behind the killing. The case attracted national newspaper attention and was reported in the Illustrated Police News.\n\nThe Long Compton witch tradition has been examined by Michael Howard (writing for The Cauldron magazine), by folklorist Jennifer Westwood, and by researchers at Our Warwickshire. It represents a rare case where rural witch-belief survived in documented form into the Victorian period with a specific named victim, a named killer, and a court record."
+    },
+    {
       "name": "Long Man of Wilmington",
       "lat": 50.81,
       "lng": 0.188,
@@ -4916,6 +5063,23 @@
       ]
     },
     {
+      "name": "Mary Butters, the Carnmoney Witch",
+      "lat": 54.683,
+      "lng": -5.93,
+      "category": "witch",
+      "region": "Carnmoney, County Antrim, Northern Ireland",
+      "summary": "In 1807 the Carnmoney wise-woman Mary Butters was called to cure a bewitched cow; she sealed a farmhouse in foul smoke to perform her rite and two people were found dead by dawn—yet she was acquitted at the spring assizes and continued curing bewitched cattle for decades afterwards.",
+      "source": "https://en.wikipedia.org/wiki/Mary_Butters",
+      "date_added": "2026-06-09",
+      "tags": [
+        "northern-ireland",
+        "county-antrim",
+        "curse",
+        "healing"
+      ],
+      "detail": "Mary Butters (c.1770–c.1850) was a cunning-woman from the Carrickfergus area of County Antrim who practiced folk healing and magical cures, becoming locally celebrated for lifting bewitchments from cattle. Fear that a neighbour's ill-wishing could prevent a cow's milk from churning into butter was widespread in early 19th-century Ulster, and Butters had a well-established reputation for diagnosing and remedying such cases.\n\nOn a Tuesday night in August 1807, farmer Alexander Montgomery brought Butters to his Carnmoney holding to tend his bewitched cow. Following traditional practice, she filled a pot with sweet milk and dropped in crooked nails, pins, and needles, then ordered all windows and doors sealed so that the purifying smoke could work without interruption. She told Montgomery to stand guard outside with his shirt turned inside out. By dawn he returned to find his wife Elizabeth and their son David dead on the floor, with Butters herself and a young servant woman barely alive; they had all been overcome by the toxic fumes of her concoction.\n\nAt the 1808 spring assizes, the jury found that the deaths resulted from accidental suffocation. Unusually for Ireland of the period, the 'Carnmoney Witch' emerged from the episode with her reputation and livelihood largely intact: a comic ballad was written celebrating—or mocking—the affair, and Butters continued to be consulted about bewitched cows and stolen horses. She has an entry in the Oxford Dictionary of National Biography (ed. McGuire & Quinn) and her case is examined in detail by St. John D. Seymour in Irish Witchcraft and Demonology (1913), making her one of the best-documented named cunning-women in 19th-century Irish history."
+    },
+    {
       "name": "Mary Read",
       "lat": 51.5072,
       "lng": -0.1276,
@@ -4968,7 +5132,7 @@
       "lng": -2.7615,
       "category": "witch",
       "region": "Woodplumpton, Lancashire",
-      "summary": "Meg Shelton, the Fylde Hag, is said to be buried beneath a large boulder in the churchyard of St Anne's at Woodplumpton. Tradition holds that her body repeatedly rose from the grave until she was buried face-down with the stone placed over her to hold her down. Stories credit her with souring milk, spoiling crops, and harming cattle across the Fylde.",
+      "summary": "Meg Shelton—the Fylde Hag, real name Margary Hilton—died in 1705 crushed between a cottage wall and a barrel, and kept rising from her grave at Woodplumpton until buried face-down under a great boulder that pins her still. She was blamed for souring milk, spoiling crops, and shifting into a hare to steal butter.",
       "source": "https://en.wikipedia.org/wiki/Meg_Shelton",
       "date_added": "2026-06-01",
       "tags": [
@@ -4976,7 +5140,8 @@
         "fertility",
         "england",
         "lancashire"
-      ]
+      ],
+      "detail": "Meg Shelton (died 1705), whose real name is recorded by St Anne's Church as Margary Hilton, was a woman of the Fylde in Lancashire reputed during her lifetime to be a witch. The Fylde—the low, flat plain west of Preston—had an established tradition of witch-belief sustained well into the 18th century, and Shelton occupied a specific role within it: she was accused not of malicious magic at a distance but of practical mischief, particularly the transformation of herself into animal form to steal from her neighbours. Local accounts describe her shifting into a hare to run undetected to farms, where she would suck milk directly from cows or steal freshly churned butter. In one characteristic tale she was caught mid-transformation, half-woman and half-hare, and struck with a stick.\n\nHer death is itself a folkloric set piece. She was found dead in her cottage crushed between a wall and a large barrel—an ending interpreted by neighbours as the Devil's work, or as justice for her own sorcery. Burial at St Anne's churchyard at Woodplumpton proved problematic: her body was said to claw its way back to the surface repeatedly. The parish's solution was to bury her face-down (so that if she dug, she would dig downward) in a narrow vertical shaft, and to place a heavy boulder over the site. That boulder remains in the churchyard to this day, marked as her grave and a draw for visitors to the village.\n\nMeg Shelton is sometimes presented alongside the better-known Pendle Witches (tried 1612) as evidence of the depth and longevity of Lancashire witch-belief, though her case differs significantly: she was never formally tried, and her legend is entirely folkloric rather than judicial. Mysterious Britain & Ireland, Spooky Isles, and the Lancaster Castle heritage pages all document her tradition; the UCLan Publishing title The Witching Stone (2020) uses her story as the basis for a children's historical novel."
     },
     {
       "name": "Merlin",
@@ -6164,6 +6329,24 @@
       ]
     },
     {
+      "name": "Ruari Mòr MacNeil of Barra",
+      "lat": 56.955,
+      "lng": -7.493,
+      "category": "pirate",
+      "region": "Isle of Barra, Outer Hebrides, Scotland",
+      "summary": "Roderick 'Ruari the Turbulent' MacNeil, 35th chief of Clan MacNeil, ran his piracy from the sea-girt fortress of Kisimul Castle on Barra, raiding along the Irish Sea and West Coast; each evening his herald proclaimed that since Ruairi Mòr had dined, the kings of the earth might now eat.",
+      "source": "https://hiddenscotland.co/the-pirate-laird-of-kisimul-castle/",
+      "date_added": "2026-06-09",
+      "tags": [
+        "scotland",
+        "western-isles",
+        "sea",
+        "castle",
+        "trickery"
+      ],
+      "detail": "Ruari Mòr MacNeil (fl. 1560s–1590s), known as Ruaraidh an Tartair—'Rory the Turbulent'—was a pirate chieftain who operated from Kisimul Castle, a small island fortress in Castlebay on the Isle of Barra in the Outer Hebrides. He raided merchant shipping the length of the west coast and as far as the Irish Sea, targeting English vessels in particular with an enthusiasm that became a matter of legend. His most celebrated piece of self-mythologisation was the instruction he gave to have a herald ascend Kisimul's tower each evening and blow his horn to announce that Ruairi Mòr had dined—after which the kings and princes of the earth might at last eat. The expression became one of the most quoted examples of Highland chiefly hauteur in all of Scottish tradition.\n\nHis capture required deception rather than force: according to the most common account, Mackenzie sailed to Kisimul disguised as a wine merchant, plied Ruari with drink until he passed out, and carried the unconscious chief to Edinburgh in chains. At trial, Ruari's plea—that he had attacked only English ships to avenge the unjust execution of Mary Queen of Scots—flattered King James VI enough to spare his life, though the MacNeil lands were temporarily forfeited before being leased back to the clan.\n\nOn Barra itself, Ruari Mòr was remembered as a hero who brought wealth to the island and defended his people; his story has been treated in Hidden Scotland, the Historic Environment Scotland history of Kisimul Castle, and the academic study 'Scotland's Pirate Havens: Piracy in the Western Isles and Orkneys, 1590–1724' (Stanford, EIU Historia, 2014). John Gow (already in the dataset) is Orkney's contribution to the tradition; Ruari Mòr is Barra's."
+    },
+    {
       "name": "Rudston Monolith",
       "lat": 54.094,
       "lng": -0.323,
@@ -6177,6 +6360,24 @@
         "england",
         "yorkshire"
       ]
+    },
+    {
+      "name": "Saint Edmund and the Wolf",
+      "lat": 52.351,
+      "lng": 1.185,
+      "category": "hero",
+      "region": "Hoxne, Suffolk, England",
+      "summary": "When Danish forces tied King Edmund of East Anglia to an oak tree, shot him with arrows, and beheaded him in 869, his followers heard his severed head calling 'Here! Here! Here!' from the forest—and found a grey wolf standing guard over it; the head miraculously reattached, sparking a cult that made Bury St Edmunds one of England's greatest pilgrimage sites.",
+      "source": "https://en.wikipedia.org/wiki/Edmund_the_Martyr",
+      "date_added": "2026-06-09",
+      "tags": [
+        "england",
+        "suffolk",
+        "wolf",
+        "forest",
+        "battle"
+      ],
+      "detail": "Edmund, King of East Anglia from around 855, was martyred by the Great Heathen Army of the Danes in 869 after refusing to renounce Christianity or share his kingdom with pagan overlords. The earliest detailed account, written by Abbo of Fleury c.985 based on oral tradition from Edmund's armour-bearer, describes Edmund being tied to a tree in the forest, shot through with arrows until he resembled a hedgehog, and then decapitated. The traditional martyrdom site is Hoxne in Suffolk, though scholarly opinion has periodically pointed to Bradfield St Clare as an alternative.\n\nThe wolf legend is the most celebrated supernatural element of Edmund's cult. When his followers searched the forest for his severed head, they heard it crying out 'Here! Here! Here!' (or in Latin, 'Hic! Hic! Hic!'), calling to guide them. Following the voice, they discovered a great grey wolf sitting between the head's paws, protecting it from scavengers. The wolf escorted them back to the body and then melted into the forest. Edmund's head was found to miraculously reattach to his body, with only a thin red line visible at the neck—and when the body was examined many years later at Bury, it was found uncorrupted.\n\nThe wolf became the heraldic animal of Bury St Edmunds (granted to the town crest in 1606) and appears on multiple church dedications across Suffolk and beyond. The Abbey of Bury St Edmunds, founded over his remains, became one of the wealthiest and most frequented pilgrimage sites in medieval England. Edmund is discussed in the Oxford Dictionary of Saints and holds a place as one of the earliest patron saints of England, predating the adoption of George. His story is treated in the Wikipedia article on Edmund the Martyr and in Visit Bury St Edmunds heritage guides."
     },
     {
       "name": "Salmon of Knowledge",
@@ -7992,6 +8193,24 @@
       ]
     },
     {
+      "name": "Witch of Berkeley",
+      "lat": 51.692,
+      "lng": -2.466,
+      "category": "witch",
+      "region": "Berkeley, Gloucestershire, England",
+      "summary": "A 12th-century chronicle by William of Malmesbury tells of a Berkeley woman who sold her soul to the Devil and begged her children to bind her corpse in iron chains after death—but demons broke the chains each night until the Devil himself rode off with her screaming on a spike-backed black horse.",
+      "source": "https://en.wikipedia.org/wiki/Witch_of_Berkeley",
+      "date_added": "2026-06-09",
+      "tags": [
+        "england",
+        "gloucestershire",
+        "church",
+        "curse",
+        "haunting"
+      ],
+      "detail": "The Witch of Berkeley is a medieval English legend recorded by the monk William of Malmesbury in his Gesta Regum Anglorum (c. 1125), making it one of the earliest named witch legends in English writing. The tale is set around 1065 and concerns a woman of Berkeley in Gloucestershire, described as 'addicted to witchcraft, excessively gluttonous, perfectly lascivious,' who had made a pact with the Devil in exchange for his protection and assistance.\n\nWarned by her pet jackdaw—a possible early instance of a familiar—that her death was imminent, the woman confessed her sins to her surviving children, a monk and a nun, and begged them to take elaborate precautions. Her body was to be sewn inside a stag's hide, laid in a stone coffin fastened with three iron chains, and guarded by monks and nuns chanting psalms for three successive nights; only then was she to be buried. The plan failed. On the first night demons tore asunder the outer chain; on the second, the middle chain; on the third, the Devil appeared on 'a black horse of immense size with iron hooks projecting over the whole of its back,' snapped the last chain, dragged the body from the coffin, and galloped off into the night with the woman screaming on his back; her cries could be heard for four miles.\n\nMalmesbury presented the tale as an allegory of the fate of sinners, but scholars note it draws on a genuine local tradition. The jackdaw familiar and the motif of the iron hooks (linking the legend to the Wild Hunt) have roots in Germanic and Christian tradition. Katharine Briggs discussed it in A Dictionary of Fairies; it is examined in detail at the William of Malmesbury and the Witch of Berkeley blog (2018) by Stephen R. Gordon. The village of Berkeley is the same settlement as Berkeley Castle, where Edward II was murdered in 1327."
+    },
+    {
       "name": "Witch-hare of Dartmoor",
       "lat": 50.571,
       "lng": -3.92,
@@ -8108,7 +8327,7 @@
       "lng": -3.1883,
       "category": "ghost",
       "region": "Scotland",
-      "summary": "In Scottish tradition, a wraith is the spectral double of a living person — appearing to friends or family in their likenesse before death, presaging fate. James VI defined the term in Daemonologie (1597): 'When they appeare vpon that occasion, they are called Wraithes in our language.' Unlike a revenant ghost, the wraith appears before death, not after; it is an omen wearing a living face. The tradition is distinct from the Highland Bean Nighe or Banshee — the wraith is the dying person's own double, and to meet your own wraith on the road is the surest sign.",
+      "summary": "Scotland's wraith is the exact spectral double of a living person—seen by loved ones just before their death, wearing a familiar face. Unlike a ghost, it appears before dying, not after; James VI defined it in Daemonologie (1597), and to meet your own wraith on the road is the surest sign of all.",
       "source": "https://www.gutenberg.org/ebooks/25929",
       "date_added": "2026-06-01",
       "tags": [
@@ -8116,7 +8335,8 @@
         "road",
         "death-omen",
         "scotland"
-      ]
+      ],
+      "detail": "The word 'wraith' is first attested in Scots in 1513, and appears to derive from Old Norse vörðr, meaning 'guardian'—suggesting an original function as a soul-guardian or fetch rather than purely a death-herald. The most authoritative early definition comes from King James VI's Daemonologie (1597), where he distinguishes wraiths from demonic apparitions: 'When they appeare vpon that occasion, they are called Wraithes in our language.' He recorded the tradition as something known and accepted across Scotland.\n\nThe Scottish wraith belongs to a family of 'fetch' traditions widespread across the British Isles, but has a distinctive emphasis: it is seen by others rather than by the dying person themselves, and it appears in the likeness of a living person—not a corpse—moving silently through a location they do not normally frequent. In some accounts it appears simultaneously with the person; in others it is glimpsed on a road or in a field at an uncanny distance. Witnesses with second sight (an fiosaiche in Gaelic) were considered especially liable to see wraiths, and their testimony in communities that valued the gift carried genuine social weight. The tradition distinguishes the wraith from two other Scottish death-omens: the Bean Nighe, a supernatural washerwoman who washes a shroud at a ford, and the Banshee, who wails. Those are beings in their own right; the wraith is specifically the double of a named living person, making it a more intimate and individually targeted form of omen.\n\nIn Orkney and Shetland a closely related figure appears under the Scandinavian name vardøger—an 'echo-person' who arrives ahead of their living counterpart, so that household members hear familiar footsteps and sounds in the house minutes before the person themselves walks in. The vardøger is more benign than an omen of death, but both traditions share the same underlying notion of the soul's double existing independently of the body."
     },
     {
       "name": "Wroth Silver at Knightlow Hill",

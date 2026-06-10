@@ -1726,7 +1726,7 @@
     "lng": -7.52,
     "category": "location",
     "region": "County Offaly",
-    "summary": "Mag Lena, Mag Léna, or Mag Léne was the name of a plain or heath in the Gaelic Irish territory of Firceall, between modern Tullamore and Durrow in County Offaly. Mag Lena straddled the Esker Riada, was near the border between Mide and Laigin (Leinster), and is mentioned in Irish manuscripts as the site of several legendary, pseudohistorical, and historical events.",
+    "summary": "A battle on this Offaly plain split Ireland in two — Conn of the Hundred Battles took the north, Eógan Mór the south — a division remembered for centuries as Conn's Half and Mug's Half.",
     "source": "https://en.wikipedia.org/wiki/Mag_Lena",
     "date_added": "2026-06-03",
     "tags": [
@@ -1734,7 +1734,8 @@
       "celtic",
       "ireland",
       "county-offaly"
-    ]
+    ],
+    "detail": "Mag Lena — also written Mag Léna or Mag Léne — was a plain in the ancient territory of Firceall, lying between modern Tullamore and Durrow in County Offaly. It straddled the Esker Riada, the great ridge of glacial gravel that formed Ireland's principal east-west highway and the traditional boundary between the northern and southern halves of the island. The dindshenchas, Ireland's medieval lore of place-names, derives 'Lena' from a son of the hospitaller Mac Da Thó, said to have been buried on the plain.\n\nThe plain's central place in Irish legendary history comes from the Battle of Mag Lena, fought, by tradition, in the second century AD between Conn Cétchathach — Conn of the Hundred Battles — and Eógan Mór, also called Mug Nuadat. The battle ended with Ireland divided along the line of the Esker Riada into two halves: Leath Cuinn, 'Conn's Half', in the north, and Leath Mogha, 'Mug's Half', in the south. This division remained a fundamental way of describing Ireland's geography and politics for centuries afterward, and the medieval account of the battle was translated and published by the scholar Eugene O'Curry in 1855.\n\nMag Lena's role as a contested crossing-point did not end with legend. The plain hosted a real synod around 630 AD, called to settle the controversy over the correct dating of Easter, a battle in 906 AD involving Cormac mac Cuilennáin, the celebrated king-bishop of Munster, and a further conflict in 1090 AD during a struggle over the High Kingship — a thousand years of history layered onto a single stretch of Offaly heath."
   },
   {
     "name": "Maponos",
@@ -2215,7 +2216,7 @@
     "lng": -1.4839,
     "category": "ancient_site",
     "region": "South Warwickshire",
-    "summary": "\nThe Red Horse of Tysoe was a hill figure in the parish of Tysoe, South Warwickshire, England, cut into the red clay below the escarpment of Edgehill. It gave its name to the surrounding area, which is still known as the Vale of Red Horse or Red Horse Vale. The figure was first recorded in 1607, and in its earliest form was nearly 100 yards long.",
+    "summary": "A 100-yard horse cut into Warwickshire's red clay was scoured each Palm Sunday for centuries — until a farmer ploughed it under, and the Vale of the Red Horse lost its horse.",
     "source": "https://en.wikipedia.org/wiki/Red_Horse_of_Tysoe",
     "date_added": "2026-06-03",
     "tags": [
@@ -2225,7 +2226,8 @@
       "hill-figure",
       "england",
       "warwickshire"
-    ]
+    ],
+    "detail": "The Red Horse of Tysoe was a great hill figure cut into the red clay of the escarpment below Edge Hill in south Warwickshire, giving its name to the Vale of the Red Horse that stretches beneath it. The earliest description comes from William Camden's Britannia of 1607, which notes 'the shape of a horse cut out in a red hill by the country people, hard by Pillerton'; in its original form the figure was a galloping horse some 285 feet long and 95 feet high — comparable in scale to the white horses of Wiltshire. William Dugdale, writing in 1656, recorded that the figure was 'yearly scoured by a Freeholder in this Lordship, who holds certain lands there by that service' — maintenance of the horse was, quite literally, the rent owed on the land.\n\nTwo rival explanations have grown up around the horse's origins. The Reverend Francis Wise argued that the annual scouring took place on Palm Sunday in commemoration of Richard Neville, the 16th Earl of Warwick — 'Warwick the Kingmaker' — and his part in the Battle of Towton in 1461, though the Reverend William Asplin disputed the connection. An older possibility lies in the parish name itself: 'Tysoe' may derive from 'Tiw's hoh', a spur of land dedicated to Tiw, the Anglo-Saxon god of war, raising the possibility that a horse has marked this hillside since pagan Saxon times, long before any horse cut for a medieval earl.\n\nThe Red Horse did not survive into the modern era. Around the time of the Enclosure Acts in the 1790s, an innkeeper named Simon Nicholls ploughed up the original 'Great Horse' — and, finding that the loss of the horse-scouring fair was costing him trade, promptly cut a smaller replacement nearby. Over the centuries at least five different horse figures appeared in the vale, the last vanishing under planted trees by around 1910–14. Aerial surveys and excavations in the 1960s rediscovered traces of the original Great Horse beneath the soil, confirming Camden's account of its size — a ghost of a hill figure that gave an entire valley its name, long after the horse itself had disappeared."
   },
   {
     "name": "Redcap",
@@ -4547,7 +4549,7 @@
     "lng": 0.1868,
     "category": "ghost",
     "region": "Cambridgeshire",
-    "summary": "The iron-age earthworks atop the Gog Magog Hills south of Cambridge are said to be haunted by a great phantom warrior — perhaps the giant Gogmagog himself, Britain's last titan. Some accounts describe a mounted figure who challenges travellers at dusk; others speak only of an oppressive silence and the feeling of being watched from the ancient ramparts.",
+    "summary": "Iron-age earthworks at Wandlebury Ring, Cambridge, are said to be haunted by a phantom warrior — perhaps Gogmagog himself — while a 1950s dig claimed giant figures lay carved beneath the turf.",
     "source": "https://en.wikipedia.org/wiki/Wandlebury_Camp",
     "date_added": "2026-06-03",
     "tags": [
@@ -4557,7 +4559,8 @@
       "haunting",
       "england",
       "cambridgeshire"
-    ]
+    ],
+    "detail": "Wandlebury Ring, an Iron Age hillfort atop the Gog Magog Hills just south of Cambridge, takes its name from one of Britain's oldest giant-legends. The biblical Gog and Magog were reimagined in British folklore as Gogmagog, the last and greatest of the giants said to have inhabited the island before the Trojan hero Brutus arrived — the same figure whose defeat by Corineus is remembered in Cornwall. A 1574 decree of Cambridge University, forbidding students to visit the hills on pain of a fine, is the earliest record of the 'Gog Magog' name being attached to this stretch of chalk downland, and antiquarians of the 17th and 18th centuries described a huge hill figure of the giant cut into the turf at Wandlebury — though all trace of it had vanished by the 19th century.\n\nThe giant lingered on in the folklore of nearby villages long after his image faded from the hillside. Children in Cherry Hinton were warned to keep out of the local chalk pits, lest the buried giants Gog and Magog wake and give chase. Another tale told that Gog once quarrelled with his wife Magog and hurled a great clod of earth at her; it missed, and where it landed a new hill rose from the ground.\n\nIn 1955–56, the dowser and archaeologist T.C. Lethbridge reignited the legend when he claimed to have uncovered, beneath the turf of Wandlebury, the outlines of three enormous figures cut into the chalk: a sun-god, a moon-goddess, and a warrior-god riding a horse-drawn chariot. Mainstream archaeologists rejected the find as natural ice-age scarring, but Lethbridge's 'warrior-god' chimed with an older local belief that the ramparts themselves were haunted — walkers reporting a mounted figure who challenges travellers at dusk, or simply an oppressive sense of being watched from the ancient earthworks, as if Gogmagog's last guardian still kept watch over his hill."
   },
   {
     "name": "Wiltshire Moonrakers",
@@ -5588,7 +5591,7 @@
     "lng": -10.30122,
     "category": "deity",
     "region": "Bull Rock (Tech Duinn), Beara Peninsula, County Cork, Munster",
-    "summary": "Donn, the Dark One, is the Irish lord of the dead and one of the Milesian ancestors of the Gaels. His dwelling, Tech Duinn or the House of Donn, is identified with Bull Rock off Dursey Island, a sea stack pierced by a natural tunnel like a portal to another world. Folklore describes him as a phantom horseman riding across the Atlantic before storms.",
+    "summary": "Donn, the Dark One, drowned during the Milesian invasion of Ireland and was buried on Bull Rock — Tech Duinn, the House of the Dead, where he decreed all souls must gather after death.",
     "source": "https://en.wikipedia.org/wiki/Donn",
     "date_added": "2026-06-03",
     "tags": [
@@ -5598,7 +5601,8 @@
       "island",
       "ireland",
       "county-cork"
-    ]
+    ],
+    "detail": "Donn — 'the Dark One' — appears in the Lebor Gabála Érenn as one of the sons of Míl Espáine, the legendary ancestors of the Gaels who invaded Ireland from Spain. During the invasion he insulted Ériu, the goddess who gave Ireland her name, and according to the Metrical Dindshenchas the druids of the Tuatha Dé Danann raised a magical storm that wrecked his ship. Donn drowned and was buried on a remote rocky island off the tip of the Beara Peninsula — a sea stack today called Bull Rock, pierced clean through by a natural tunnel, which the dindshenchas decrees shall forever after be known as Tech Duinn, the House of Donn.\n\nTech Duinn became, in Irish tradition, nothing less than the gathering-place of the dead. A ninth-century poem records Donn's dying instruction to his descendants: 'To me, to my house, you shall all come after your deaths.' Later texts describe the souls of sinners visiting Tech Duinn before continuing on to judgement, and the saga Togail Bruidne Dá Derga names Donn outright as 'king of the dead', whose otherworldly red horsemen ride 'the horses of Donn' across the sky. The rock's natural tunnel, through which the Atlantic surges and withdraws, gave physical form to the idea of a threshold between this world and the next.\n\nDonn never entirely vanished from living folklore. In County Limerick, Donn Fírinne was said to dwell inside Cnoc Fírinne (Knockfierna) and to ride out as a phantom horseman on a white horse — thunder and lightning marked his passage, and gathering clouds meant he was brewing rain for the harvest. A parallel figure, Donn na Duimhche, 'Donn of the dunes', haunted the coast of County Clare. Over time 'Donn' became almost a generic title for any otherworldly lord of a hill or headland, a faint echo of the Milesian ancestor still waiting in his house in the western sea."
   },
   {
     "name": "Áine",
@@ -7441,7 +7445,7 @@
     "lng": -8.3345,
     "category": "location",
     "region": "Glanworth, County Cork",
-    "summary": "Labbacallee Wedge Tomb is a large pre-historic burial monument, located 8 km (5.0 mi) north-west of Fermoy and 2 km (1.2 mi) south-east of Glanworth, County Cork, Ireland. It is the largest Irish wedge tomb and dates from roughly 2300 BC. The tomb is a National Monument in State Care no. 318. It was the first megalithic tomb in the country to be described by an antiquarian writer, in John Aubrey’s manuscript of 1693.",
+    "summary": "Ireland's largest wedge tomb is known as Leaba Caillighe — the Hag's Bed — and treasure-hunters who dared dig here met an enchanted cat with a tail of fire.",
     "source": "https://en.wikipedia.org/wiki/Labbacallee_wedge_tomb",
     "date_added": "2026-05-30",
     "tags": [
@@ -7449,7 +7453,8 @@
       "barrow",
       "ireland",
       "county-cork"
-    ]
+    ],
+    "detail": "Labbacallee Wedge Tomb, near Glanworth in County Cork, is the largest wedge-shaped gallery grave in Ireland, raised around 2300 BC. Its Irish name, Leaba Caillighe — 'the Hag's Bed' — ties the monument to the Cailleach, the ancient divine hag of Gaelic tradition associated with the Beara Peninsula not far to the south. The tomb has the distinction of being the first megalithic monument in Ireland ever described in writing, noted by the antiquarian John Aubrey in a 1693 manuscript, and it remains a National Monument in state care.\n\nWhen the tomb was excavated in 1934, archaeologists found the headless skeleton of a woman in the eastern chamber, with her skull discovered separately, upright, in the main chamber — a find local people had long called 'the Old Hag's Head' even before the dig confirmed a body lay there. The coincidence between the folk name and the archaeological discovery has made Labbacallee one of the most evocative examples in Ireland of a place-name legend that turned out to have a real burial behind it.\n\nA second tradition warns against disturbing the tomb at all. According to local lore, four men once came to Labbacallee by night hoping to dig up treasure said to be buried within. As they broke ground, an enchanted cat appeared from nowhere, its tail ablaze with fire, and the dazzling apparition sent the men fleeing in terror. In the panic one of them stumbled into the nearby river and drowned — a cautionary tale that the Hag's Bed keeps its secrets, and punishes those who go looking for them."
   },
   {
     "name": "Leprechaun",
@@ -8626,5 +8631,241 @@
     ],
     "date_added": "2026-06-09",
     "detail": "Walter Map, the worldly courtier-cleric of the Welsh border, set down in his 'De nugis curialium' (c.1190) a revenant tale from his own country. A wicked Welshman, recently dead, returned from the grave night after night to wander his village near the Hereford march, calling aloud the names of his former neighbours — and each man so named would sicken and be dead within three days.\n\nThe bishop, consulted, advised that the grave be reopened, the corpse's head struck off with a spade, the body sprinkled with holy water and reburied. When that was done, the hauntings ceased. Map, writing at almost the same moment as William of Newburgh, presents the affair as recent and credible — valuable evidence that belief in the malignant, name-calling walking dead was alive along the English–Welsh border in the twelfth century, and not only in the cold north."
+  },
+  {
+    "name": "Alice Kyteler",
+    "lat": 52.651,
+    "lng": -7.253,
+    "category": "witch",
+    "region": "Kilkenny, County Kilkenny, Ireland",
+    "summary": "Dame Alice Kyteler was Ireland's first convicted witch — accused in 1324 of poisoning four husbands with potions brewed from their nightgowns and consorting with a demon called Robin Artisson.",
+    "source": "https://en.wikipedia.org/wiki/Alice_Kyteler",
+    "date_added": "2026-06-10",
+    "tags": [
+      "curse",
+      "trickery",
+      "ireland",
+      "county-kilkenny"
+    ],
+    "detail": "Alice Kyteler (c.1260 – after 1324) was a wealthy Flemish merchant's daughter from Kilkenny who outlived four husbands — and in 1324 her own stepchildren accused her of poisoning each one with potions concocted at night using ingredients taken from their own nightgowns. The case, brought by Bishop Richard de Ledrede, was among the earliest formal witchcraft prosecutions anywhere in Europe, predating the continental witch panics by over a century.\n\nKyteler was further accused of holding nocturnal meetings with a demon familiar named Robin Artisson, who reportedly appeared to her as a black dog, a black cat, or a dark-skinned man, and to whom she made offerings of cockerels and peacock feathers in exchange for wealth and power. As the bishop closed in, Alice fled to England and was never seen again, escaping the fate that befell her household.\n\nHer maidservant Petronilla de Meath was not so fortunate. Tortured until she confessed to sorcery and implicated her mistress, Petronilla was flogged six times and burned at the stake in Kilkenny on 3 November 1324 — the first recorded burning for witchcraft in Ireland, and one of the earliest in the British Isles. Kyteler's townhouse on St Kieran's Street survives today as Kyteler's Inn, still trading under her name seven centuries later."
+  },
+  {
+    "name": "Ynys Enlli",
+    "lat": 52.754,
+    "lng": -4.793,
+    "category": "location",
+    "region": "Llŷn Peninsula, Gwynedd, Wales",
+    "summary": "Ynys Enlli (Bardsey Island) is said to hold the graves of 20,000 saints, a sleeping Merlin in a glass cave guarding Britain's Thirteen Treasures — and a Welsh claim to be the true Avalon.",
+    "source": "https://en.wikipedia.org/wiki/Bardsey_Island",
+    "date_added": "2026-06-10",
+    "tags": [
+      "island",
+      "arthurian",
+      "treasure",
+      "wales",
+      "gwynedd"
+    ],
+    "detail": "Ynys Enlli — 'Island in the Currents', known in English as Bardsey Island — lies two miles off the tip of the Llŷn Peninsula in north Wales, separated from the mainland by a notoriously treacherous sound. For centuries it was one of the most important pilgrimage sites in Britain: tradition held that three pilgrimages to Bardsey were equal in merit to one to Rome, and that anyone who died on the island, having lived a holy life there, was guaranteed never to go to hell. The island became known as 'the island of 20,000 saints', supposedly the burial place of that many monks and holy men over the centuries.\n\nA separate strand of legend ties Bardsey to the Arthurian cycle. One tradition holds that Merlin sleeps in a glass cave somewhere on or beneath the island, guarding the Thirteen Treasures of the Island of Britain until the day he is needed again. Another identifies Ynys Enlli itself as the true Avalon — the island to which the mortally wounded King Arthur was carried after his last battle — offering a distinctly Welsh rival to the more famous Glastonbury identification.\n\nWhether as a saints' graveyard, Merlin's resting place, or Arthur's Avalon, Ynys Enlli's isolation and the danger of crossing its sound have long given the island an otherworldly reputation. Visit Wales and other modern guides still promote these layered legends as part of Enlli's appeal, and a working lighthouse and small farming community remain its only year-round residents today."
+  },
+  {
+    "name": "Allison Balfour",
+    "lat": 58.9764,
+    "lng": -3.205,
+    "category": "witch",
+    "region": "Stenness, Orkney, Scotland",
+    "summary": "Tortured for two days with her husband and children, Allison Balfour 'confessed' to plotting against the Earl of Orkney by witchcraft — then retracted it before being strangled and burned in 1594.",
+    "source": "https://en.wikipedia.org/wiki/Allison_Balfour",
+    "tags": [
+      "scotland",
+      "orkney",
+      "curse"
+    ],
+    "detail": "In 1594, Allison Balfour of Stenness was caught up in a political conspiracy: associates of Patrick Stewart, the powerful 2nd Earl of Orkney, accused her of agreeing to use witchcraft against him on their behalf. To extract a confession, the authorities subjected her to forty-eight hours of torture in the caschielawis, a leg-crushing iron frame, while — in a horrifying display of collective punishment — her elderly husband was placed in the 'lang irons', her son was tortured in the boots, and her seven-year-old daughter had her fingers crushed in pilliwinks (thumbscrews) before her eyes.\n\nBroken by the ordeal, Balfour confessed. But on the scaffold, before her execution by strangulation and burning on 16 December 1594, she publicly retracted everything, declaring the confession false and extracted only by torture.\n\nHer case is one of the earliest and most thoroughly documented of Orkney's witch trials, cited repeatedly by historians such as Julian Goodare as a textbook example of how torture, politics, and the witch-hunting frenzy combined to destroy an entire family. The Orkney Heritage Society's witchcraft trial memorial in Kirkwall now commemorates her alongside Orkney's other victims.",
+    "date_added": "2026-06-10"
+  },
+  {
+    "name": "Janet Forsyth, the Westray Storm Witch",
+    "lat": 59.3167,
+    "lng": -2.9833,
+    "category": "witch",
+    "region": "Westray, Orkney, Scotland",
+    "summary": "Janet Forsyth supposedly saved a storm-wrecked crew by piloting their ship into Pierowall Bay — then was arrested for witchcraft days later and burned in 1629, a tale later softened into a romance.",
+    "source": "https://ferries.orkney.com/attractions/westray-storm-witch",
+    "tags": [
+      "scotland",
+      "orkney",
+      "sea",
+      "curse"
+    ],
+    "detail": "Folk tradition on Westray remembers Janet Forsyth as a woman who warned her sweetheart, Ben Garrioch, not to go fishing on a day she had dreamed he would die. He went anyway and never returned, leaving Janet a recluse whose grief was said to have given her strange power over wind, fog and storm. Years later, when a sailing ship floundered off Westray in foul weather, Janet rowed out, took command, and guided the vessel safely to anchor in Pierowall Bay.\n\nDays after this rescue, she was arrested, taken to Kirkwall, and tried for witchcraft. The surviving 1629 court record paints a far harsher picture than the legend: she was accused of slaughtering four pigs (causing illness in a woman who later ate the pork), of bewitching two men and then 'curing' them, of magically stripping the fat from neighbours' milk and the nourishment from their grain, and of cursing those who refused her alms. Found guilty on 11 November 1629, she was sentenced to be strangled and burned.\n\nThe folk legend later grafted on a happy ending — Garrioch, it was said, had merely been press-ganged and washed up on the Orkney mainland, returning just in time to spirit Janet away from the executioner to a quiet life in England. The gap between this romantic rescue story and the grim trial record makes Janet Forsyth one of the most poignant examples of how Orkney folk memory reshaped a real execution into legend.",
+    "date_added": "2026-06-10"
+  },
+  {
+    "name": "Fan o' the Fens",
+    "lat": 53.367,
+    "lng": -0.005,
+    "category": "witch",
+    "region": "near Louth, Lincolnshire, England",
+    "summary": "A magpie's gossip, a cat that wakes on the guilty party's shoulder, and a girl engulfed in flames near Louth — the brutal mob 'trial' of 'Fan' captures fenland witch-panic at its cruellest.",
+    "source": "https://lincolnshirefolktalesproject.com/2024/02/20/fan-o-the-fens/",
+    "tags": [
+      "england",
+      "lincolnshire",
+      "bog",
+      "curse"
+    ],
+    "detail": "The tale of Fan o' the Fens tells of Fanny, a beautiful young woman living near Louth with her widowed mother. When the mother complains that a magpie keeps following her about, repeating everything she says, she consults the wiseman of Louth, who declares her bewitched. At a gathering he arranges, a sleeping cat is left by the fire with the prediction that when it wakes it will sit on the shoulder of whoever cast the spell — and the cat chooses Fan.\n\nFan is instantly shunned by the village, including her sweetheart Simon, who soon takes up with another woman. Simon then begins to swell in size and, alarmed, consults a different wizard, who tells him he too is under a curse and that the responsible witch will be revealed that very day, wreathed in fire. Walking home past Fan's house, Simon sees her run out screaming, engulfed in flames and nearly dead.\n\nThe villagers seize on this as proof and drag Fan to the river, threatening to drown her unless she confesses to witchcraft. She confesses — and they try to kill her anyway. She escapes, but is beaten with sticks and driven away, never to return. The story was recorded by Christopher Marlowe in 'Legends of the Fenland People' (1926) and retold by Susanna O'Neill in 'Folklore of Lincolnshire' (1992), and stands as a vivid fenland portrait of how quickly suspicion could curdle into mob violence.",
+    "date_added": "2026-06-10"
+  },
+  {
+    "name": "Yawkins, the Galloway Smuggler",
+    "lat": 54.83,
+    "lng": -4.15,
+    "category": "pirate",
+    "region": "Kirkcudbright, Dumfries and Galloway, Scotland",
+    "summary": "Dutch smuggler captain Jack Yawkins once sailed his lugger the Black Prince directly between two Royal Navy revenue cutters near Kirkcudbright, escaping before they could fire — and inspired Scott's Dirk Hatteraick.",
+    "source": "https://www.bartleby.com/lit-hub/hc/guy-mannering-or-the-astrologer/additional-note/",
+    "tags": [
+      "scotland",
+      "dumfries-and-galloway",
+      "cave",
+      "coast"
+    ],
+    "detail": "Captain Jack Yawkins was a real Dutch skipper who, in the late 18th century, ran the smuggling lugger Black Prince along the Solway coast, carrying contraband for French, Dutch, Manx and Scottish trading syndicates. His reputation rested on his ship's speed and his own nerve: in one celebrated episode, while landing cargo near Manxman's Lake at Kirkcudbright, two revenue cutters appeared and began to close in. Rather than flee, Yawkins sailed the Black Prince directly between the two government ships — passing so close, it was said, that he could have tossed his hat onto either deck — and was clear away before they could bring their guns to bear.\n\nA large sea cave on the coast near Kirkdale and Barholm, frequently used by Yawkins to store smuggled spirits, became known as Dirk Hatteraick's Cave; rows of small rectangular recesses cut into its walls, resembling a dovecote, are said to have held bottles. The cave remains a noted feature of the Galloway coast.\n\nYawkins's fame outlived his smuggling career thanks to Sir Walter Scott, who based the smuggler-villain Dirk Hatteraick in 'Guy Mannering' (1815) directly on him — a debt Scott acknowledged in a letter to the Manx historian Mr Train. The fictional name then attached itself permanently to the real cave, fusing history and literature in the local landscape.",
+    "date_added": "2026-06-10"
+  },
+  {
+    "name": "Jonka Dyneis of Fetlar",
+    "lat": 60.6167,
+    "lng": -0.8667,
+    "category": "witch",
+    "region": "Fetlar, Shetland, Scotland",
+    "summary": "In Shetland's first major witch trial of 1616, Jonka Dyneis of Fetlar was condemned after falling into a trance the very moment her husband's fishing boat began to sink six miles offshore.",
+    "source": "https://www.shetlandmuseumandarchives.org.uk/blog/shetland-witches",
+    "tags": [
+      "scotland",
+      "shetland",
+      "sea",
+      "drowning"
+    ],
+    "detail": "Jonka Dyneis was one of three women caught up in Shetland's first major witchcraft prosecution in 1616, and her case became one of its most remembered. According to the accusation, while her husband was at sea his boat was struck by sudden danger some six miles offshore — and at that exact moment, Jonka collapsed into a trance at home in Fetlar. When the boat went down, the trance was taken as proof that she had used witchcraft to cause the wreck, and she was tried and executed alongside the other accused women.\n\nFetlar's folklore preserves related beliefs about the supernatural dangers of the sea around the island: another tradition describes women of Fetlar gathering around a well, muttering charms over a wooden bowl that shook and trembled of its own accord whenever a boat's crew had been lost in the nearby Bay of Funzie — a kind of communal second sight for drowning.\n\nTogether these stories reflect a broader pattern in Shetland belief, where freak storms, wrecks and drownings were routinely blamed on the malice of women thought to have power over wind and water — a belief system that the 1616 trials turned lethal.",
+    "date_added": "2026-06-10"
+  },
+  {
+    "name": "The Bute Witches",
+    "lat": 55.84,
+    "lng": -5.0533,
+    "category": "witch",
+    "region": "Rothesay, Isle of Bute, Scotland",
+    "summary": "Four named women — Margaret McLevin, Margaret McWilliam, Janet Morrison and Isobell McNicoll — were tried at Rothesay in 1661-62 during the Great Scottish Witch Hunt; one was said to keep a fairy of her own.",
+    "source": "https://en.wikipedia.org/wiki/Bute_witches",
+    "tags": [
+      "scotland",
+      "argyll-and-bute",
+      "curse"
+    ],
+    "detail": "During the Great Scottish Witch Hunt of 1661-62, six women from the parish of Rothesay on the Isle of Bute were interrogated for witchcraft. Historians identify four of them — Margaret McLevin, Margaret McWilliam, Janet Morrison and Isobell McNicoll — as having been executed in 1662, with a fifth possibly dying in custody before sentence could be carried out.\n\nMargaret McWilliam was the most notorious of the group: she had been regarded by her neighbours as a witch for more than thirty years before the trial. Her reputation was entangled with an earlier Bute tragedy — in 1630, a group of women starved to death while imprisoned in Rothesay Castle, and before dying they accused McWilliam of being a fairy herself, claiming she 'soon brought home a little fairy of her own to nurse.'\n\nThe Bute case is unusually well documented for an island trial of this period and illustrates how, in the Scottish islands, accusations of witchcraft were frequently inseparable from older beliefs about fairies, changelings and the 'good neighbours' — the accused were as likely to be feared as intermediaries with the fairy world as they were as servants of the Devil.",
+    "date_added": "2026-06-10"
+  },
+  {
+    "name": "Jinny the Witch (Joney Lowney)",
+    "lat": 54.19,
+    "lng": -4.49,
+    "category": "witch",
+    "region": "Braddan, Isle of Man",
+    "summary": "Joney Lowney of Braddan was tried in 1715 for stopping a corn mill with witchcraft — and was reborn in folk memory as 'Jinny the Witch', the figure Manx children still chant about every Hop tu Naa.",
+    "source": "https://www.transceltic.com/blog/isle-of-man-hop-tu-naa-who-was-jinny-witch",
+    "tags": [
+      "isle-of-man",
+      "curse",
+      "trickery"
+    ],
+    "detail": "Joney Lowney lived in the parish of Braddan on the Isle of Man and was brought before the ecclesiastical court at Bishop's Court in 1715-16, accused of using witchcraft to stop the Ballaughton Corn Mill from working. Found guilty, she was sentenced to fourteen days' imprisonment, fined three pounds, and made to stand in sackcloth at each of the island's four market crosses as public penance.\n\nFar from ending her notoriety, the punishment seems to have launched a second career: afterwards Joney traded under the name 'The Great Witch', travelling between towns and villages threatening curses and selling charms — by most accounts more a colourful entertainer trading on her reputation than a practising sorceress, and eventually a figure used to delight and frighten children.\n\nOver the following two centuries her name was gradually transformed in oral tradition — passing through forms like Jenny Swinny, Jinny Squinney and Jinny the Spinney — until it settled as 'Jinny the Witch'. In that form she became permanently attached to Hop tu Naa, the Manx Celtic New Year festival held on 31 October, where children still carry carved turnip lanterns and sing songs naming Jinny the Witch as they go house to house.",
+    "date_added": "2026-06-10"
+  },
+  {
+    "name": "Daniel Fall, the Pirate of the Norfolk Coast",
+    "lat": 52.6064,
+    "lng": 1.7286,
+    "category": "pirate",
+    "region": "Great Yarmouth, Norfolk, England",
+    "summary": "Privateer Daniel Fall, sailing under American colours with letters of marque from three nations, terrorised the Norfolk coast in 1780-82 — a Yarmouth gravestone still marks 'the infamy of Fall the Pirate'.",
+    "source": "https://enjoyingnorfolk.co.uk/here-be-pirates/",
+    "tags": [
+      "england",
+      "norfolk",
+      "sea",
+      "battle"
+    ],
+    "detail": "Daniel Fall — sometimes recorded as John Fall, and known locally as 'Fall the Pirate' — first appears in the records in November 1780, when 'the noted Daniel Fall, a smuggler and captain of a large privateer' cut out two coal-carrying colliers from Lowestoft South Roads. Sailing under American colours and holding letters of marque from Holland, France and America, he commanded fast cutters named the Fearnought and the Liberty, and in February 1781 brazenly hoisted the thirteen stripes as he passed a Harwich mail packet.\n\nHis most notorious action came on 31 January 1781. Captain David Bartleman, just twenty-five years old, was sailing the lightly-armed packet Alexander & Margaret along the Norfolk coast with only three-pounder guns and a crew of ten when Fall's far heavier cutter — eighteen four-pounders and over a hundred men — attacked. Bartleman fought his ship clear and limped into Yarmouth, but died of his wounds on 14 February 1781. His father had a memorial stone erected over the grave, commemorating his son's gallantry and explicitly marking 'the infamy of Fall the Pirate'.\n\nBy April 1782 Fall had moved his operations into the Irish Sea, and the East Coast records fall silent on him after that — leaving Bartleman's Yarmouth gravestone as the most enduring local trace of his career.",
+    "date_added": "2026-06-10"
+  },
+  {
+    "name": "The Wizards of Cwrt y Cadno",
+    "lat": 52.0167,
+    "lng": -3.9667,
+    "category": "witch",
+    "region": "Cwrt y Cadno, Carmarthenshire, Wales",
+    "summary": "Three generations of the Harries family of Cwrt y Cadno were Wales's most famous dynion hysbys — astrologer-healers consulted on stolen rings, broken curses, and even a murder enquiry.",
+    "source": "https://historiamag.com/wizards-of-west-wales/",
+    "tags": [
+      "wales",
+      "carmarthenshire",
+      "healing",
+      "prophecy"
+    ],
+    "detail": "John Harries (1785-1839) and his son Henry Harries (1821-1849) of Cwrt y Cadno in Carmarthenshire were the best-known of Wales's dynion hysbys, or 'cunning men' — educated, respected practitioners combining medicine, astrology and folk magic. John reportedly trained as a surgeon and practised on Harley Street in London, alongside the well-known astrologer Robert Cross Smith ('Raphael'), before returning to rural Wales to set up practice at Pantycoy.\n\nPeople travelled from across Wales and the English border counties to consult the Harries family on recovering stolen or lost property, healing humans and animals, breaking curses, casting protective charms, and predicting the future. Anecdotes about their powers circulated widely: one tells of a man convinced he had swallowed a tadpole that had grown into a frog inside him, cured when Dr Harries induced vomiting and produced 'the frog'; another describes Harries locating a woman's stolen wedding ring, which her son returned just two days before his own death. In a more serious case, Harries is said to have identified the burial site of a murdered girl with such uncanny precision that he was himself arrested as an accessory — until he demonstrated his astrological methods to the magistrates and was released.\n\nDistinguished visitors to Pantycoy reportedly included the actress Sarah Siddons and the writer George Borrow during his 1854 walking tour of Wales. John Harries died in a house fire in 1839 — a death he is said to have predicted for himself through his own astrology, despite his efforts to avoid it.",
+    "date_added": "2026-06-10"
+  },
+  {
+    "name": "Iula, Princess of the Giants of Islay",
+    "lat": 55.6228,
+    "lng": -6.0397,
+    "category": "giant",
+    "region": "Islay, Argyll and Bute, Scotland",
+    "summary": "A giant princess named Iula fled Denmark dropping enchanted stones from her apron — Ireland, Rathlin, Texa — until the last stone became Islay itself, and the storm finally claimed her.",
+    "source": "https://peatzeria.com/blog/scottish-folklore-islay-myths-legends/",
+    "tags": [
+      "scotland",
+      "argyll-and-bute",
+      "island",
+      "drowning"
+    ],
+    "detail": "According to Hebridean tradition, Iula (also rendered Yula) was a princess of the giants who set out from her homeland of Denmark in search of adventure, travelling across the sea and carrying a great apron full of magical stones. As she journeyed, stones fell from her apron and became islands — one became Ireland, another Rathlin, and a third the small isle of Texa off Islay's southern coast.\n\nMore stones spilled out to form the chain of islands stretching from Ardbeg to Kildalton on Islay's south-east shore. Finally, in a storm, Iula dropped her last and largest stone — which became the island of Islay itself — and was swept away and drowned by the same storm. Tradition holds that she was buried afterwards on a hilltop above Loch Cnoc.\n\nThe legend doubles as a folk-etymology for the island's name, Ila in Gaelic, said to derive from Iula herself — though scholars note the name's true root is pre-Gaelic and of unknown origin, recorded as 'Ilea' by Adomnán in the 7th century and as 'Íl' in Old Norse. The tale nonetheless remains one of the more vivid giant-origin stories of the Inner Hebrides, explaining not just one island but an entire scatter of them as the wreckage of a single giant's journey.",
+    "date_added": "2026-06-10"
+  },
+  {
+    "name": "Gwen ferch Ellis",
+    "lat": 53.1814,
+    "lng": -3.4188,
+    "category": "witch",
+    "region": "Denbigh, Denbighshire, Wales",
+    "summary": "A healer and charm-maker from the Vale of Clwyd, Gwen ferch Ellis became the first person executed for witchcraft in Wales in 1594, after one of her protective charms was found written backwards.",
+    "source": "https://en.wikipedia.org/wiki/Gwen_ferch_Ellis",
+    "tags": [
+      "wales",
+      "denbighshire",
+      "curse",
+      "healing"
+    ],
+    "detail": "Gwen ferch Ellis (c.1542-1594) was a spinner and linen-maker from Llandyrnog in the Vale of Clwyd, well known locally as a healer who made salves and remedies for animals and used rhyming charms to protect and heal the sick, including children, in exchange for small gifts of food or wool.\n\nHer downfall began when a charm, written backwards, was discovered at Gloddaeth, the home of the powerful landowner and justice of the peace Sir Thomas Mostyn. Written backwards, the charm was assumed to carry a curse rather than a blessing, and gossip linked it to a recent quarrel between Mostyn and Jane Conwy, a gentry woman who counted Gwen as a friend — implying Gwen had been hired to curse Mostyn's household. Further accusations piled on: that she had bewitched Robert Evans, breaking his arm; that she had bewitched Lowri ferch John ap Ieuan, who lost the use of her limbs; and that she had murdered Lewis ap John by witchcraft.\n\nIn October 1594, Gwen ferch Ellis was hanged in Denbigh town square under the 1563 Witchcraft Act, aged about forty-two. Her case is the earliest documented witchcraft execution in Wales — one of only around five executions out of roughly forty recorded Welsh witch trials, in a country where the witch panics that swept much of Europe were comparatively rare. Her story has recently drawn renewed attention, including interest from filmmakers in dramatising her life.",
+    "date_added": "2026-06-10"
+  },
+  {
+    "name": "The Witch of Knocknashee",
+    "lat": 54.0394,
+    "lng": -8.7461,
+    "category": "witch",
+    "region": "Knocknashee, County Sligo, Ireland",
+    "summary": "An embittered ex-fairy turned witch tried to bury the 'Good People' of Knocknashee under a hill of cursed English soil — until a wizard, transformed into a black pig, spilled her pack and made Muckalty Hill instead.",
+    "source": "https://technotink.net/lore/knocknashee/",
+    "tags": [
+      "ireland",
+      "county-sligo",
+      "hill",
+      "transformation"
+    ],
+    "detail": "Knocknashee — Cnoc na Sí, 'Hill of the Fairies' — is a vast Bronze Age hillfort in the Ox Mountains of County Sligo, its flat summit traditionally said to be the dancing-ground where the Good People gathered every full moon.\n\nLocal tradition tells of an old witch who had once belonged to the fairies herself before being cast out, and who watched their gatherings with bitter hatred. To destroy them, she travelled to 'Pagan England' and gathered soil that she enchanted so that it would swell into a hill the moment it touched Irish ground. Carrying this soil home in a pack on her back, she planned to drop it on top of Knocknashee and crush the fairy mansion beneath it. But the fairies learned of her plan and asked their own wizard for help; he transformed himself into a black pig and, as the witch passed, leapt onto her pack and knocked it from her shoulder.\n\nThe spell still worked — the spilled clay swelled into a new hill on the spot — but not where the witch intended. Seeing what had happened and spotting the pig, she cried out 'Muc Allta!' ('wild pig'), and the new hill took that name, softened over time into Muckalty. The story survives in the Dúchas Schools' Collection alongside other Knocknashee fairy traditions, and the hillfort itself remains one of Ireland's largest Bronze Age monuments.",
+    "date_added": "2026-06-10"
   }
 ]

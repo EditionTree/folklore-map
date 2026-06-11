@@ -7086,7 +7086,7 @@
     "lng": -6.4493,
     "category": "location",
     "region": "Boyne Valley, County Meath",
-    "summary": "Brú na Bóinne, also called the Boyne Valley tombs, is an ancient monument complex and ritual landscape in County Meath, Ireland, located in a bend of the River Boyne. It is one of the world's most important Neolithic landscapes, comprising at least ninety monuments including passage tombs, burial mounds, standing stones and enclosures. The site is dominated by the passage tombs of Newgrange, Knowth and Dowth, built during the 32nd century BC.",
+    "summary": "The 'Palace of the Boyne', Otherworld home of the god Dagda — won from him forever by his son Aengus Óg through a trick: claiming the house for just 'a day and night'.",
     "source": "https://en.wikipedia.org/wiki/Br%C3%BA_na_B%C3%B3inne",
     "date_added": "2026-05-30",
     "tags": [
@@ -7094,7 +7094,8 @@
       "standing-stones",
       "ireland",
       "county-meath"
-    ]
+    ],
+    "detail": "Brú na Bóinne — 'the palace' or 'mansion of the Boyne' — is the great bend of the River Boyne in County Meath that holds the passage tombs of Newgrange, Knowth and Dowth along with around ninety other Neolithic monuments, raised in the 32nd century BC. In Irish mythology it was no mere graveyard but the chief dwelling-place of the Tuatha Dé Danann, the otherworldly race said to live on inside the great mounds after their defeat by the Milesians.\n\nIts central myth concerns the Dagda, the chief god, who desired Boann, goddess of the river and wife of Elcmar, the Brú's keeper. He sent Elcmar away on an errand and cast a spell to make 'the sun stand still' for what seemed like a single day — long enough for Boann to conceive and bear a son, Aengus Óg, without Elcmar ever noticing the months that had passed.\n\nWhen Aengus came of age and learned the truth of his birth, he claimed his own inheritance with a trick to match his father's: he asked to be given Brú na Bóinne for 'a day and night', then pointed out that, since all time consists of days and nights, the gift was eternal — winning the Otherworld palace for himself forever. Some scholars connect the tale to Newgrange's famous winter solstice illumination, when a beam of sunlight enters the inner chamber at dawn, reading it as the moment of Aengus's conception. The site recurs elsewhere in Irish myth too — Aengus later brings his lover Caer, transformed into a swan, to sing the dwellers of the mounds to sleep at Brú na Bóinne, reaffirming it as the great meeting-place between the human world and the Otherworld."
   },
   {
     "name": "Carricknagat Megalithic Tombs",
@@ -7149,7 +7150,7 @@
     "lng": -8.5192,
     "category": "location",
     "region": "Carrowmore, County Sligo",
-    "summary": "Carrowmore is a large group of megalithic monuments on the Coolera Peninsula to the west of Sligo, Ireland. They were built in the 4th millennium BC, during the Neolithic. There are 30 surviving tombs with another 25 which have been destroyed since 1800, making Carrowmore one of the largest clusters of megalithic tombs in Ireland, and one of the 'big four' along with Carrowkeel, Loughcrew and Brú na Bóinne.",
+    "summary": "One of Europe's oldest tomb clusters — older than Newgrange — said to be stones spilled from the sky by the Cailleach, and the resting place of the eloping lovers Diarmuid and Gráinne.",
     "source": "https://en.wikipedia.org/wiki/Carrowmore",
     "date_added": "2026-05-30",
     "tags": [
@@ -7157,7 +7158,8 @@
       "standing-stones",
       "ireland",
       "county-sligo"
-    ]
+    ],
+    "detail": "Spread across the Coolera Peninsula west of Sligo, Carrowmore is one of Ireland's largest and oldest megalithic cemeteries — around thirty surviving tombs out of an original sixty or so, raised some 5,500–6,000 years ago, centuries before Newgrange and the other monuments of Brú na Bóinne. Most are small passage tombs and dolmens ringed by boulder kerbs, clustered around the larger central mound of Listoghil.\n\nLocal tradition explains the scattering of so many great stones across the peninsula with a tale told of the Cailleach, the divine hag-figure found across Irish and Scottish folklore: flying from the Ox Mountains toward Knocknarea with a load of boulders gathered in her apron to build a pen for her cattle, she stumbled or dropped her load mid-flight, and where the stones fell to earth, the tombs of Carrowmore now stand.\n\nCarrowmore is also counted among the many leaba Dhiarmada agus Ghráinne — 'beds of Diarmuid and Gráinne' — found across western Ireland, sites where the eloping lovers of the Fenian Cycle are said to have slept on the run from the jealous Fionn mac Cumhaill. More than a hundred such megalithic 'beds' survive, repurposed in oral tradition as resting-places for the famous couple, and at Carrowmore local belief holds that their bones lie among its ancient stones — a much later legend laid over a monument already three thousand years old when the Fianna's stories were first told."
   },
   {
     "name": "Carrownlisheen Wedge Tomb",
@@ -7311,7 +7313,7 @@
     "lng": -10.1581,
     "category": "location",
     "region": "Waterville, County Kerry",
-    "summary": "Eightercua Irish: Íoċtar Ċua , meaning ' \"the place or holy place or harbor\" that is Íoċ or \"below\" - the word is a specifically geographical term that does not adequately translate into English which does not designate a \"place down below\" with categorically geographical differentiation') is a four-stone alignment (stone-row) Megalithic tomb, located 1.5 km south-south-east of Waterville, Kerry, Ireland.",
+    "summary": "A lonely Bronze Age stone row on the Ring of Kerry marks the grave of Scéine, wife of the poet Amergin, who died at sea moments before the Milesians' first landing in Ireland.",
     "source": "https://en.wikipedia.org/wiki/Eightercua",
     "date_added": "2026-05-30",
     "tags": [
@@ -7319,7 +7321,8 @@
       "barrow",
       "ireland",
       "county-kerry"
-    ]
+    ],
+    "detail": "On the Iveragh Peninsula near Waterville, four standing stones — the tallest over 2.7 metres — run in a line across a low horseshoe-shaped mound, aligned toward the mountain of Cnoc Bhólais across Ballinskelligs Bay. The alignment dates from the Bronze Age, around 1700 BC, and sits on what was likely once a ritual enclosure.\n\nTradition gives the stones a much later story, drawn from the Lebor Gabála Érenn (Book of Invasions). When the Milesians — the legendary ancestors of the Gaels — sailed to Ireland to take it from the Tuatha Dé Danann, the poet and judge Amergin brought his wife Scéine with him. She died at sea within sight of land, and the grieving Amergin vowed to name their landing place after her; the bay nearby is still known as Inbhear Scéine, the 'Bay of Scéine'. Local tradition holds that the four stones of Eightercua were raised over her grave.\n\nAmergin himself is said to have been the first of the Milesians to set foot on Irish soil, where he chanted the 'Song of Amergin' — a strange, riddling poem of self-identification with the land ('I am the wind on the sea... I am a hawk on a cliff...') preserved as one of the oldest pieces of verse in the Irish tradition. Eightercua thus stands at the symbolic threshold of the Gaelic foundation myth: the spot where myth says the old Ireland of the Tuatha Dé Danann gave way to the new, at the cost of the first Milesian death."
   },
   {
     "name": "Elfhame",
@@ -7697,7 +7700,7 @@
     "lng": -8.5612,
     "category": "location",
     "region": "Bullaun, County Galway",
-    "summary": "The Turoe stone is a 1.2 metre tall granite stone decorated in a Celtic style normally located in the village of Bullaun, County Galway, Ireland, 6 km north of Loughrea off the R350 regional road. It probably dates to about the period 100 BC to AD 100. The stone is usually positioned on the lawn in front of Turoe House, set in a concrete base surrounded by a metal cattle grill.\nThe Turoe stone is National Monument of Ireland Number 327 (NM#327).",
+    "summary": "A phallic granite pillar swirling with La Tène spirals, thought to have crowned a fertility or kingship rite at an Iron Age ringfort before being carted off to a country-house lawn.",
     "source": "https://en.wikipedia.org/wiki/Turoe_Stone",
     "date_added": "2026-05-30",
     "tags": [
@@ -7706,7 +7709,8 @@
       "celtic",
       "ireland",
       "county-galway"
-    ]
+    ],
+    "detail": "The Turoe Stone is a 1.2-metre granite pillar carved across its upper half with flowing La Tène-style spirals and trumpet curves — the same swirling 'Celtic' art style found on the finest Iron Age metalwork of Ireland and Britain, dated to roughly 100 BC–AD 100. Its rounded, faintly bulbous form has long been read as deliberately phallic, and it is usually grouped with a small handful of similarly carved 'decorated stones', including the Castlestrange Stone in County Roscommon and the Killycluggin Stone in County Cavan.\n\nIts original setting was the Rath of Feerwore, an Iron Age ringfort a short distance away, from where it was moved at some point to stand on the lawn of nearby Turoe House, its long-time site near Bullaun. That move from a ceremonial enclosure to an ornamental lawn has not stopped antiquarians speculating about its original purpose: theories range from a focus for fertility rites to a stone used in the inauguration of local kings, perhaps marking the sacred centre, or omphalos, of a Connacht over-kingdom.\n\nThe Killycluggin Stone, one of its closest artistic relatives, has itself been linked to the legendary idol Crom Cruach, said to have stood at Magh Slécht until destroyed by St Patrick — hinting that Iron Age Ireland's carved standing stones may have shared a common role as cult images or sacred markers, even where their individual stories have been lost. The Turoe Stone was removed for conservation in 2014, the latest move in a long history of relocation for a monument whose true original meaning remains debated."
   },
   {
     "name": "Wraith",
@@ -8867,5 +8871,110 @@
     ],
     "detail": "Knocknashee — Cnoc na Sí, 'Hill of the Fairies' — is a vast Bronze Age hillfort in the Ox Mountains of County Sligo, its flat summit traditionally said to be the dancing-ground where the Good People gathered every full moon.\n\nLocal tradition tells of an old witch who had once belonged to the fairies herself before being cast out, and who watched their gatherings with bitter hatred. To destroy them, she travelled to 'Pagan England' and gathered soil that she enchanted so that it would swell into a hill the moment it touched Irish ground. Carrying this soil home in a pack on her back, she planned to drop it on top of Knocknashee and crush the fairy mansion beneath it. But the fairies learned of her plan and asked their own wizard for help; he transformed himself into a black pig and, as the witch passed, leapt onto her pack and knocked it from her shoulder.\n\nThe spell still worked — the spilled clay swelled into a new hill on the spot — but not where the witch intended. Seeing what had happened and spotting the pig, she cried out 'Muc Allta!' ('wild pig'), and the new hill took that name, softened over time into Muckalty. The story survives in the Dúchas Schools' Collection alongside other Knocknashee fairy traditions, and the hillfort itself remains one of Ireland's largest Bronze Age monuments.",
     "date_added": "2026-06-10"
+  },
+  {
+    "name": "Witch's Stone of Westleton",
+    "lat": 52.2865,
+    "lng": 1.6188,
+    "category": "witch",
+    "region": "Westleton, Suffolk, England",
+    "summary": "A fallen 14th-century gravestone at St Peter's Church where running anti-clockwise with a handkerchief is said to summon the Devil.",
+    "source": "https://www.greatbritishlife.co.uk/magazines/suffolk/25327663.suffolk-legend-witchs-stone-westleton/",
+    "tags": [
+      "england",
+      "suffolk",
+      "church",
+      "curse",
+      "vanishing"
+    ],
+    "detail": "In the churchyard of St Peter's Church in Westleton, Suffolk, lies a flat 14th-century gravestone known as the Witch's Stone — said to be perpetually free of grass and the focus of one of Suffolk's most enduring pieces of devil-lore. According to the legend, anyone bold enough to leave a handkerchief inside the church, then run anti-clockwise around the stone a set number of times, will return to find the handkerchief gone, spirited away by the Devil himself, with the clank of hellish chains audible in the distance.\n\nThe story is sometimes linked to the wider history of witchcraft accusations in the area: Katherine Tooly of Westleton was hanged in 1645, accused of using a familiar spirit to attempt murder, during the height of the East Anglian witch trials associated with Matthew Hopkins. Other local historians offer a more earthly origin, suggesting the tale of a devil-haunted churchyard was deliberately spread or embellished by smugglers moving contraband from the nearby Sizewell Gap, since a reputation for supernatural danger kept villagers and revenue men away from the church's crypts at night.\n\nWhatever its origin, the legend remains a fixture of Suffolk ghost-story collections and 'Weird Suffolk' features — though, fittingly, no one now seems willing to actually test the ritual.",
+    "date_added": "2026-06-11"
+  },
+  {
+    "name": "Jack Rattenbury",
+    "lat": 50.6939,
+    "lng": -3.0879,
+    "category": "pirate",
+    "region": "Beer, Devon, England",
+    "summary": "Devon's 'Rob Roy of the West' — a notorious smuggler from Beer whose dictated 1837 memoir is a rare first-hand account of the free-trade era.",
+    "source": "https://en.wikipedia.org/wiki/Jack_Rattenbury",
+    "tags": [
+      "england",
+      "devon",
+      "coast",
+      "cave"
+    ],
+    "detail": "Jack Rattenbury (c.1778–1844) was born in the small fishing village of Beer on the Devon coast and spent most of his life as a fisherman, pilot, privateer, and — most famously — a smuggler, earning him the local nickname 'the Rob Roy of the West' after the Scottish outlaw. Beer's sheltered cove and network of caves made it one of the most active smuggling villages on the south coast, and Rattenbury was at the centre of its illicit trade in brandy, tea, tobacco, and other contraband for decades, repeatedly evading capture by excise cutters and the Royal Navy.\n\nLate in life, suffering from gout and largely retired from the trade — though, by his own account, not from the desire for it — the illiterate Rattenbury dictated his life story to a local clergyman. The result, published in 1837 as 'Memoirs of a Smuggler, Compiled from his Diary and Journal', is one of the few first-person accounts of the smuggling trade to survive from the period, describing narrow escapes, shipwrecks, brushes with press gangs, and a life lived constantly on the wrong side of the customs men.\n\nRattenbury's memoir has kept his name alive in Devon folklore ever since, and Beer continues to celebrate its smuggling heritage, with local tours and histories pointing out the caves and coves associated with his exploits.",
+    "date_added": "2026-06-11"
+  },
+  {
+    "name": "Molly Downer",
+    "lat": 50.6766,
+    "lng": -1.1147,
+    "category": "witch",
+    "region": "Hillway, Isle of Wight, England",
+    "summary": "Reputed to be the last witch of the Isle of Wight, she lived at 'Witches Hatch' near Bembridge and cursed a tormentor with fatal bad luck.",
+    "source": "https://en.wikipedia.org/wiki/Molly_Downer",
+    "tags": [
+      "england",
+      "isle-of-wight",
+      "curse",
+      "drowning"
+    ],
+    "detail": "Molly Downer is remembered as the last person on the Isle of Wight to be popularly branded a witch. She lived in the late 18th and early 19th centuries in a thatched cottage at Hillway, near Bembridge — a building still known locally as 'Witches Hatch'. Accounts of her background differ: some say she was the illegitimate daughter of a Niton clergyman, the Reverend Barwis, who left her a small inheritance; others connect her family to smuggling wealth.\n\nAs an unmarried woman living alone, Molly attracted the suspicion common to women in her position, and a local woman named Harriet took to taunting and harassing her. According to the legend, Molly cursed Harriet, declaring that any good fortune coming her way would kill her before she could enjoy it — and when Harriet later came into money, she reportedly died before she could claim it. Villagers subjected Molly to traditional tests for witchcraft, including baking a 'witch cake' from her hair and blood to feed to a dog, and the notorious 'swimming' ordeal, in which the accused was thrown into water on the belief that a true witch would float.\n\nMolly's story has remained part of Isle of Wight folk memory, inspiring a 2023 community musical, 'The Molly Downer Musical', performed by the Tide Nor Time Players during the Ventnor Fringe.",
+    "date_added": "2026-06-11"
+  },
+  {
+    "name": "Llanddona Witches",
+    "lat": 53.301,
+    "lng": -4.1372,
+    "category": "witch",
+    "region": "Llanddona, Anglesey, Wales",
+    "summary": "Exiled witches washed ashore at Llanddona in a rudderless boat, conjured a freshwater spring from the sand, and settled to terrorise the parish.",
+    "source": "http://www.welsh-mythsandlegends.walesdirectory.co.uk/Witches/The_Witches_of_Llanddona.html",
+    "tags": [
+      "wales",
+      "anglesey",
+      "coast",
+      "spring",
+      "curse"
+    ],
+    "detail": "According to one of Anglesey's most famous folk legends, a group of men and women — said to speak with Irish accents — were cast adrift in an oarless, rudderless boat as punishment for witchcraft in their homeland. They washed ashore at Llanddona Beach on the east coast of Anglesey, more dead than alive from thirst and hunger. When the local Welsh tried to drive the strangers back into the sea, the newcomers are said to have struck the sand and caused a freshwater spring to burst forth, a miracle that convinced the villagers to let them stay.\n\nThe Llanddona witches went on to settle in the parish, where tradition holds they terrorised their neighbours for generations, blamed for crop blight, swarms of biting flies, and any misfortune that befell the village. Their menfolk turned to smuggling and were said to be nearly unbeatable in a fight, since they carried flies hidden in their neckerchiefs that would dart at an opponent's eyes and blind them. The witching power was believed to pass down the female line, and two names recur most often in the tradition: Bella Fawr and Siani Bwt, remembered as the most formidable of the Llanddona witches.\n\nThe legend remains a celebrated part of Anglesey heritage, marked today at the 'Site of the Witches' Landing' on Llanddona Beach and retold in local history collections and occasional theatrical performances.",
+    "date_added": "2026-06-11"
+  },
+  {
+    "name": "Hellfire Club, Montpelier Hill",
+    "lat": 53.2362,
+    "lng": -6.3719,
+    "category": "ghost",
+    "region": "Montpelier Hill, County Dublin, Ireland",
+    "summary": "A ruined hunting lodge built atop a desecrated passage tomb, where a card-playing stranger was unmasked as the Devil with cloven hooves.",
+    "source": "https://en.wikipedia.org/wiki/Montpelier_Hill",
+    "tags": [
+      "ireland",
+      "county-dublin",
+      "hill",
+      "barrow",
+      "haunting"
+    ],
+    "detail": "Atop Montpelier Hill in the Dublin Mountains stand the ruins of a hunting lodge built in 1725 for William 'Speaker' Conolly, one of the wealthiest and most powerful men in 18th-century Ireland. The site already carried an ominous reputation: it had been the location of an ancient passage tomb and cairn, which Conolly's builders demolished, reportedly using one of the tomb's standing stones as the lintel for the lodge's main fireplace — an act of desecration locals blamed for a run of bad luck that followed, including the lodge's roof being torn off by storms not long after completion.\n\nAfter Conolly's death the lodge passed into the hands of the Irish Hellfire Club, founded around 1735 by figures including Richard Parsons, a group notorious among Dublin's aristocracy for hard drinking, gambling, and rumoured devil-worship and black magic. The building's grim, blackened appearance and the club's scandalous reputation fused into the site's most famous legend: that during a card game, a player dropped a card, and on bending to retrieve it saw that a stranger seated at the table had a cloven hoof instead of a foot. The 'stranger' — the Devil himself — vanished in a burst of flame, leaving the lodge gutted by fire.\n\nToday the ruined lodge is one of Ireland's most visited 'haunted' sites, with visitors reporting strange smells, sounds, and a heavy atmosphere inside its roofless rooms — a reputation built on three centuries of layered history, from desecrated tomb to aristocratic den of vice to supernatural landmark.",
+    "date_added": "2026-06-11"
+  },
+  {
+    "name": "Lilias Adie",
+    "lat": 56.0539,
+    "lng": -3.5667,
+    "category": "witch",
+    "region": "Torryburn, Fife, Scotland",
+    "summary": "Accused of witchcraft and consorting with the Devil, she died in prison and was buried in a unique intertidal grave to stop her returning.",
+    "source": "https://en.wikipedia.org/wiki/Lilias_Adie",
+    "tags": [
+      "scotland",
+      "fife",
+      "coast",
+      "curse"
+    ],
+    "detail": "Lilias Adie (c.1640–1704) was an elderly woman from the small coastal village of Torryburn in Fife who, in 1704, was accused of witchcraft after a local woman blamed her for a sudden illness. Under pressure and likely sleep deprivation during interrogation, Adie confessed to a catalogue of charges typical of Scotland's witch panics, including attending a witches' sabbath and having sexual relations with the Devil, whom she described in vivid detail. She died in prison before she could be formally tried and executed, possibly by suicide or as a result of her confinement.\n\nBecause she died before sentencing, Adie could not be burned at the stake as convicted witches usually were, but the community still feared her. She was buried not in consecrated ground but on the foreshore at Torryburn, between the high and low tide marks, with a heavy stone slab placed over the grave. This reflected a widespread Scottish belief that running or tidal water would prevent a witch's spirit from rising to harm the living, making her grave the only known intertidal burial of an accused witch in Scotland.\n\nIn 2014, the historian Dr Louise Yeoman and archaeologist Douglas Speirs relocated the long-lost grave site using 19th-century records, rediscovering the slab and a fragment of an iron ring exactly where described. A memorial service was held at the site in 2019, 315 years after her death, as part of a wider movement to formally remember and pardon Scotland's accused witches.",
+    "date_added": "2026-06-11"
   }
 ]

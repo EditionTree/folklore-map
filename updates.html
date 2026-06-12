@@ -20,7 +20,7 @@
 <meta property="og:image" content="https://folklorefinder.uk/og/preview.png"/>
 <meta property="og:site_name" content="Folklore Map of Britain &amp; Ireland"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 
@@ -35,11 +35,11 @@
   --dark:#1a0e06;
 }
 
-body{background:var(--parchment-dk);color:var(--ink);font-family:'Crimson Text',serif;line-height:1.7}
+body{background:var(--parchment-dk);color:var(--ink);font-family:'Spectral',serif;line-height:1.7}
 
 /* ── TOP NAV ── */
 .topnav{display:flex;align-items:center;justify-content:center;gap:4px;background:var(--dark);padding:12px 16px;border-bottom:1px solid rgba(176,144,96,0.2);flex-wrap:wrap}
-.topnav a{font-family:'Cinzel',serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:rgba(242,232,213,0.78);text-decoration:none;padding:6px 14px;border-radius:3px;transition:background .15s,color .15s}
+.topnav a{font-family:'Fraunces',serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:rgba(242,232,213,0.78);text-decoration:none;padding:6px 14px;border-radius:3px;transition:background .15s,color .15s}
 .topnav a:hover{color:#f2e8d5;background:rgba(196,98,42,0.18)}
 .topnav a.active{color:var(--accent-warm)}
 
@@ -47,7 +47,7 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Crimson Text',
 .page-head{position:relative;background:linear-gradient(135deg,rgba(196,98,42,0.18) 0%,rgba(176,144,96,0.06) 35%,transparent 60%),linear-gradient(180deg,#1a0e06 0%,#2c1510 55%,#3d1e0c 100%);padding:54px 20px 56px;text-align:center;overflow:hidden}
 .page-head::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold) 20%,var(--accent-warm) 50%,var(--gold) 80%,transparent)}
 .page-head img{width:96px;height:96px;object-fit:contain;margin-bottom:18px;filter:drop-shadow(0 4px 18px rgba(196,98,42,0.45))}
-.page-head h1{font-family:'Cinzel',serif;font-size:clamp(22px,4vw,36px);font-weight:600;color:#f2e8d5;letter-spacing:.06em;line-height:1.2;margin-bottom:8px}
+.page-head h1{font-family:'Fraunces',serif;font-size:clamp(22px,4vw,36px);font-weight:600;color:#f2e8d5;letter-spacing:.06em;line-height:1.2;margin-bottom:8px}
 .page-head p{font-style:italic;color:rgba(176,144,96,0.85);font-size:clamp(14px,2.5vw,17px)}
 
 /* ── BODY ── */
@@ -56,12 +56,12 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Crimson Text',
 .section-rule{display:flex;align-items:center;gap:14px;margin-bottom:22px}
 .section-rule::before,.section-rule::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
 .section-rule::after{background:linear-gradient(90deg,var(--gold),transparent)}
-.section-rule span{font-family:'Cinzel',serif;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);white-space:nowrap}
+.section-rule span{font-family:'Fraunces',serif;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);white-space:nowrap}
 
 /* ── RELEASES ── */
 .release{background:var(--parchment);border:1px solid var(--gold);border-radius:6px;padding:20px 24px;margin-bottom:16px;position:relative;overflow:hidden}
 .release::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--accent-warm) 40%,var(--gold) 60%,transparent)}
-.release-date{font-family:'Cinzel',serif;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+.release-date{font-family:'Fraunces',serif;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
 .release ul{margin:0;padding-left:20px}
 .release li{margin-bottom:7px;font-size:16px}
 
@@ -76,6 +76,7 @@ footer a{color:var(--ink-light)}
   <a href="./">Home</a>
   <a href="map">Map</a>
   <a href="legends/">Browse</a>
+  <a href="legends/collections">Collections</a>
   <a href="about">About</a>
   <a href="updates" class="active">Updates</a>
 </nav>

@@ -1397,13 +1397,16 @@ def write_to_supabase(
     print(f"      Syncing {total} legends to Supabase ...")
     for i in range(0, total, batch_size):
         batch = [{
-            "name":     r["name"],
-            "lat":      r["lat"],
-            "lng":      r["lng"],
-            "category": r.get("category", "beast"),
-            "region":   r.get("region", "Britain"),
-            "summary":  r.get("summary", ""),
-            "source":   r.get("source", ""),
+            "name":       r["name"],
+            "lat":        r["lat"],
+            "lng":        r["lng"],
+            "category":   r.get("category", "beast"),
+            "region":     r.get("region", "Britain"),
+            "summary":    r.get("summary", ""),
+            "source":     r.get("source", ""),
+            "detail":     r.get("detail") or None,
+            "tags":       r.get("tags") or [],
+            "date_added": r.get("date_added") or None,
         } for r in rows[i:i + batch_size]]
         _supabase_request("POST", url, json=batch)
         success += len(batch)

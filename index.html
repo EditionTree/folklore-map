@@ -25,7 +25,7 @@
 <meta name="twitter:image" content="https://folklorefinder.uk/og/preview.png"/>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Folklore Map of Britain & Ireland","alternateName":"Folklore Finder","url":"https://folklorefinder.uk/"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 
@@ -40,7 +40,7 @@
   --dark:#1a0e06;
 }
 
-body{background:var(--parchment-dk);color:var(--ink);font-family:'Crimson Text',serif;line-height:1.7}
+body{background:var(--parchment-dk);color:var(--ink);font-family:'Spectral',serif;line-height:1.7}
 
 /* ── HERO ── */
 .hero{
@@ -97,7 +97,7 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Crimson Text',
 }
 
 .hero-title{
-  font-family:'Cinzel',serif;
+  font-family:'Fraunces',serif;
   font-size:clamp(24px,5vw,46px);
   font-weight:600;
   color:#f2e8d5;
@@ -114,7 +114,7 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Crimson Text',
 .title-text{display:inline-block}
 
 .hero-sub{
-  font-family:'Crimson Text',serif;
+  font-family:'Spectral',serif;
   font-size:clamp(14px,2.5vw,18px);
   font-style:italic;
   color:rgba(176,144,96,0.85);
@@ -166,7 +166,7 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Crimson Text',
   background:transparent;
   border:none;
   outline:none;
-  font-family:'Crimson Text',serif;
+  font-family:'Spectral',serif;
   font-size:16px;
   color:#f2e8d5;
   padding:13px 0;
@@ -186,20 +186,19 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Crimson Text',
 }
 .search-results.open{display:block}
 .search-result-item{
-  padding:9px 14px;
+  padding:8px 14px;
   cursor:pointer;
   font-size:14px;
   color:#f2e8d5;
   border-bottom:0.5px solid rgba(176,144,96,0.15);
   display:flex;
-  align-items:baseline;
-  gap:8px;
+  flex-direction:column;
+  gap:2px;
 }
 .search-result-item:last-child{border-bottom:none}
 .search-result-item:hover,.search-result-item.active{background:rgba(196,98,42,0.18)}
-.search-result-item .ri{font-size:11px;color:var(--gold);flex-shrink:0}
 .search-result-item .rn{font-weight:600}
-.search-result-item .rr{font-style:italic;font-size:12px;color:var(--gold);margin-left:auto;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:160px}
+.search-result-item .rmeta{font-size:12px;color:var(--gold);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .search-hint{
   font-size:12px;
   color:rgba(228,206,160,0.85);
@@ -214,7 +213,7 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Crimson Text',
 }
 .btn{
   display:inline-block;
-  font-family:'Cinzel',serif;
+  font-family:'Fraunces',serif;
   font-size:13px;
   letter-spacing:.07em;
   text-transform:uppercase;
@@ -247,7 +246,7 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Crimson Text',
 }
 .stat:last-child{border-right:none}
 .stat-num{
-  font-family:'Cinzel',serif;
+  font-family:'Fraunces',serif;
   font-size:clamp(20px,4vw,30px);
   color:#f2e8d5;
   display:block;
@@ -280,7 +279,7 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Crimson Text',
   background:linear-gradient(90deg,var(--gold),transparent);
 }
 .section-rule span{
-  font-family:'Cinzel',serif;
+  font-family:'Fraunces',serif;
   font-size:13px;
   letter-spacing:.1em;
   text-transform:uppercase;
@@ -290,15 +289,6 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Crimson Text',
 
 p{margin-bottom:14px;font-size:16.5px}
 .intro{font-size:17.5px}
-.intro::first-letter{
-  font-family:'Cinzel',serif;
-  font-size:2.6em;
-  font-weight:600;
-  color:var(--accent);
-  line-height:1;
-  float:left;
-  margin:2px 6px 0 0;
-}
 
 /* ── LEGEND OF THE WEEK ── */
 .lotw{
@@ -316,8 +306,8 @@ p{margin-bottom:14px;font-size:16.5px}
 }
 .lotw-watermark{position:absolute;top:22px;right:22px;width:84px;height:84px;color:var(--accent);opacity:.10;pointer-events:none;z-index:0}
 .lotw>*:not(.lotw-watermark){position:relative;z-index:1}
-.lotw-cat{font-family:'Cinzel',serif;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
-.lotw-name{font-family:'Cinzel',serif;font-size:clamp(20px,4vw,28px);color:var(--ink);margin:6px 0 2px;letter-spacing:.03em;line-height:1.2}
+.lotw-cat{font-family:'Fraunces',serif;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.lotw-name{font-family:'Fraunces',serif;font-size:clamp(20px,4vw,28px);color:var(--ink);margin:6px 0 2px;letter-spacing:.03em;line-height:1.2}
 .lotw-region{font-style:italic;color:var(--ink-light);font-size:14px;margin-bottom:14px}
 .lotw-summary{font-size:16.5px;color:var(--ink);margin-bottom:20px}
 .lotw .btn-primary{background:var(--accent);border-color:var(--accent)}
@@ -340,7 +330,7 @@ p{margin-bottom:14px;font-size:16.5px}
   transition:border-color .15s,transform .1s;
 }
 .recent-card:hover{border-color:var(--accent-warm);transform:translateY(-2px)}
-.recent-name{font-family:'Cinzel',serif;font-size:14.5px;color:var(--ink);margin-bottom:3px;line-height:1.25}
+.recent-name{font-family:'Fraunces',serif;font-size:14.5px;color:var(--ink);margin-bottom:3px;line-height:1.25}
 .recent-region{font-style:italic;font-size:12px;color:var(--ink-light)}
 .recent-cat{display:inline-block;font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:var(--accent);padding:2px 8px;border-radius:3px;margin-top:9px;line-height:1.5}
 
@@ -376,7 +366,7 @@ p{margin-bottom:14px;font-size:16.5px}
 }
 .howlink a{
   color:var(--accent);
-  font-family:'Cinzel',serif;
+  font-family:'Fraunces',serif;
   font-size:13px;
   letter-spacing:.05em;
   text-decoration:none;
@@ -400,7 +390,7 @@ p{margin-bottom:14px;font-size:16.5px}
   background:linear-gradient(90deg,transparent,var(--gold) 30%,var(--accent-warm) 50%,var(--gold) 70%,transparent);
 }
 .bottom-cta h2{
-  font-family:'Cinzel',serif;
+  font-family:'Fraunces',serif;
   font-size:clamp(16px,3vw,22px);
   color:#f2e8d5;
   margin-bottom:10px;
@@ -433,9 +423,21 @@ footer a{color:var(--ink-light)}
 @media(max-width:380px){
   .cat-grid,.recent-grid{grid-template-columns:1fr}
 }
+.topnav{display:flex;align-items:center;justify-content:center;gap:4px;background:var(--dark);padding:11px 16px;border-bottom:1px solid rgba(176,144,96,0.2);flex-wrap:wrap;position:relative;z-index:6}
+.topnav a{font-family:'Fraunces',serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:rgba(242,232,213,0.78);text-decoration:none;padding:6px 14px;border-radius:3px;transition:background .15s,color .15s}
+.topnav a:hover{color:#f2e8d5;background:rgba(196,98,42,0.18)}
+.topnav a.active{color:var(--accent-warm)}
 </style>
 </head>
 <body>
+<nav class="topnav">
+  <a href="./" class="active">Home</a>
+  <a href="map">Map</a>
+  <a href="legends/">Browse</a>
+  <a href="legends/collections">Collections</a>
+  <a href="about">About</a>
+  <a href="updates">Updates</a>
+</nav>
 
 <!-- ── HERO ── -->
 <section class="hero">
@@ -444,14 +446,15 @@ footer a{color:var(--ink-light)}
   <img src="green-man.png" class="hero-emblem" alt="Green Man emblem"/>
   <h1 class="hero-title"><i class="title-gem">&#10022;</i><span class="title-text">Folklore Map of Britain &amp; Ireland</span><i class="title-gem">&#10022;</i></h1>
   <p class="hero-sub">Myths, Legends &amp; Spectral Encounters</p>
-  <p class="hero-lede">An interactive atlas of the myths, monsters, sacred sites and spectral figures that haunt the landscape of Britain and Ireland — over <span id="heroCount">460</span> entries, each pinned to the place where its story lives.</p>
+  <p class="hero-lede">An interactive atlas of the myths, monsters, sacred sites and spectral figures that haunt the landscape of Britain and Ireland — over <span id="heroCount">553</span> entries, each pinned to the place where its story lives.</p>
 
   <div class="search-wrap">
     <div class="search-inner">
-      <span class="search-icon">&#9906;</span>
-      <input class="search-input" id="heroSearch" type="text" placeholder="Search a legend, place or creature…" autocomplete="off" spellcheck="false"/>
+      <span class="search-icon" aria-hidden="true">&#9906;</span>
+      <input class="search-input" id="heroSearch" type="text" placeholder="Search a legend, place, creature or theme…" autocomplete="off" spellcheck="false"
+             role="combobox" aria-expanded="false" aria-controls="heroResults" aria-autocomplete="list" aria-label="Search legends"/>
     </div>
-    <div class="search-results" id="heroResults"></div>
+    <div class="search-results" id="heroResults" role="listbox" aria-label="Search results"></div>
   </div>
   <p class="search-hint">Search to find an entry, then follow it onto the map</p>
 
@@ -464,7 +467,7 @@ footer a{color:var(--ink-light)}
 
 <!-- ── STATS ── -->
 <div class="stats">
-  <div class="stat"><span class="stat-num" id="statCount">460</span><span class="stat-label">Entries</span></div>
+  <div class="stat"><span class="stat-num" id="statCount">553</span><span class="stat-label">Entries</span></div>
   <div class="stat"><span class="stat-num">11</span><span class="stat-label">Categories</span></div>
   <div class="stat"><span class="stat-num">120+</span><span class="stat-label">Regions</span></div>
   <div class="stat"><span class="stat-num">500+</span><span class="stat-label">Years of sources</span></div>
@@ -616,43 +619,105 @@ footer a{color:var(--ink-light)}
   });
 
   // ── Search ──
+  // Searches name, region, friendly category, tags and summary. Each legend is
+  // scored by its strongest match (exact name > prefix > name > region >
+  // category > tag > summary) so precise hits rank above broad summary matches.
   const input = document.getElementById('heroSearch');
   const results = document.getElementById('heroResults');
   let activeIdx = -1;
+  let currentMatches = [];
 
-  function renderResults(items) {
+  // Return {score, reason} for a legend against query q, or null if no match.
+  function scoreLegend(leg, q){
+    const name = (leg.name || '').toLowerCase();
+    const region = (leg.region || '').toLowerCase();
+    const cat = catLabel(leg.category).toLowerCase();
+    const summary = (leg.summary || '').toLowerCase();
+    const tags = leg.tags || [];
+
+    let score = 0;
+    if (name === q) score = 100;
+    else if (name.startsWith(q)) score = 80;
+    else if (name.includes(q)) score = 60;
+    else if (region.includes(q)) score = 45;
+    else if (cat.includes(q)) score = 35;
+    else if (tags.some(t => t.toLowerCase().includes(q))) score = 30;
+    else if (summary.includes(q)) score = 15;
+    else return null;
+
+    // Secondary line shows where it sits: region · category.
+    const parts = [];
+    if (leg.region) parts.push(leg.region);
+    if (catLabel(leg.category)) parts.push(catLabel(leg.category));
+    return { score: score, reason: parts.join(' · ') };
+  }
+
+  function search(q){
+    const scored = [];
+    for (const leg of LEGENDS){
+      const r = scoreLegend(leg, q);
+      if (r) scored.push({ leg: leg, score: r.score, reason: r.reason });
+    }
+    scored.sort((a, b) => b.score - a.score || a.leg.name.localeCompare(b.leg.name));
+    return scored.slice(0, 8);
+  }
+
+  function setExpanded(open){
+    input.setAttribute('aria-expanded', open ? 'true' : 'false');
+    results.classList.toggle('open', open);
+    if (!open) input.removeAttribute('aria-activedescendant');
+  }
+
+  function renderResults(items, q){
     results.innerHTML = '';
     activeIdx = -1;
-    if (!items.length) { results.classList.remove('open'); return; }
-    items.slice(0, 8).forEach((leg, i) => {
+    currentMatches = items;
+    input.removeAttribute('aria-activedescendant');
+    if (!items.length) { setExpanded(false); return; }
+    items.forEach((it, i) => {
       const el = document.createElement('div');
       el.className = 'search-result-item';
-      const nm = document.createElement('span'); nm.className = 'rn'; nm.textContent = leg.name;
-      const rr = document.createElement('span'); rr.className = 'rr'; rr.textContent = leg.region || '';
-      el.appendChild(nm); el.appendChild(rr);
+      el.id = 'heroResult-' + i;
+      el.setAttribute('role', 'option');
+      el.setAttribute('aria-selected', 'false');
+      const nm = document.createElement('span'); nm.className = 'rn'; nm.textContent = it.leg.name;
+      const meta = document.createElement('span'); meta.className = 'rmeta';
+      meta.textContent = it.reason || '';
+      el.appendChild(nm); el.appendChild(meta);
       el.addEventListener('mousedown', e => {
         e.preventDefault();
-        goToLegend(leg.name);
+        goToLegend(it.leg.name);
       });
       results.appendChild(el);
     });
-    results.classList.add('open');
+    setExpanded(true);
+  }
+
+  function setActive(idx){
+    const items = results.querySelectorAll('.search-result-item');
+    items.forEach((el, i) => {
+      const on = i === idx;
+      el.classList.toggle('active', on);
+      el.setAttribute('aria-selected', on ? 'true' : 'false');
+    });
+    if (idx >= 0 && items[idx]){
+      input.setAttribute('aria-activedescendant', items[idx].id);
+      items[idx].scrollIntoView({ block: 'nearest' });
+    } else {
+      input.removeAttribute('aria-activedescendant');
+    }
   }
 
   function goToLegend(name) {
-    results.classList.remove('open');
+    setExpanded(false);
     input.value = '';
     window.location.href = mapLink(name);
   }
 
   input.addEventListener('input', () => {
     const q = input.value.trim().toLowerCase();
-    if (q.length < 2) { results.classList.remove('open'); return; }
-    const matches = LEGENDS.filter(l =>
-      l.name.toLowerCase().includes(q) ||
-      (l.region && l.region.toLowerCase().includes(q))
-    );
-    renderResults(matches);
+    if (q.length < 2) { setExpanded(false); return; }
+    renderResults(search(q), q);
   });
 
   input.addEventListener('keydown', e => {
@@ -661,25 +726,23 @@ footer a{color:var(--ink-light)}
     if (e.key === 'ArrowDown') {
       e.preventDefault();
       activeIdx = Math.min(activeIdx + 1, items.length - 1);
+      setActive(activeIdx);
     } else if (e.key === 'ArrowUp') {
       e.preventDefault();
       activeIdx = Math.max(activeIdx - 1, -1);
+      setActive(activeIdx);
     } else if (e.key === 'Enter') {
       e.preventDefault();
-      const active = results.querySelector('.search-result-item.active');
-      if (active) { active.dispatchEvent(new MouseEvent('mousedown')); return; }
-      const first = results.querySelector('.search-result-item');
-      if (first) first.dispatchEvent(new MouseEvent('mousedown'));
-      return;
+      const pick = activeIdx >= 0 ? currentMatches[activeIdx] : currentMatches[0];
+      if (pick) goToLegend(pick.leg.name);
     } else if (e.key === 'Escape') {
-      results.classList.remove('open'); return;
+      setExpanded(false);
     }
-    items.forEach((el, i) => el.classList.toggle('active', i === activeIdx));
   });
 
   document.addEventListener('click', e => {
     if (!e.target.closest('#heroSearch') && !e.target.closest('#heroResults'))
-      results.classList.remove('open');
+      setExpanded(false);
   });
 })();
 </script>

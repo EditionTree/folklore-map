@@ -134,6 +134,9 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Crimson Text',
   position:relative;
   width:100%;
   max-width:460px;
+  /* .hero>*:not(...):not(...) sets z-index:3 with higher specificity (0,3,0) —
+     override it so the dropdown stacks above the sibling .hero-cta buttons */
+  z-index:5 !important;
 }
 .search-inner{
   display:flex;

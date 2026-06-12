@@ -178,7 +178,7 @@ def banner_html():
 TOPNAV_CSS = (
     ".topnav{display:flex;align-items:center;justify-content:center;gap:4px;"
     "background:#1a0e06;padding:11px 16px;border-bottom:1px solid rgba(176,144,96,0.2);flex-wrap:wrap}"
-    ".topnav a{font-family:'Fraunces',serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase;"
+    ".topnav a{font-family:'Marcellus',serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase;"
     "color:rgba(242,232,213,0.78);text-decoration:none;padding:6px 14px;border-radius:3px;"
     "transition:background .15s,color .15s}"
     ".topnav a:hover{color:#f2e8d5;background:rgba(196,98,42,0.18)}"
@@ -247,29 +247,29 @@ body{background:#e0d0b0;color:#2c1f0e;font-family:'Spectral',serif;line-height:1
 .banner-link{display:inline-flex;align-items:center;gap:13px;text-decoration:none}
 .banner-emblem{width:48px;height:48px;object-fit:contain;flex-shrink:0}
 .banner-text{display:flex;flex-direction:column;align-items:center;line-height:1.15}
-.banner-title{font-family:'Fraunces',serif;font-size:21px;font-weight:600;color:#f2e8d5;letter-spacing:.09em;display:flex;align-items:center;justify-content:center;gap:9px}
+.banner-title{font-family:'Marcellus',serif;font-size:21px;font-weight:400;color:#f2e8d5;letter-spacing:.09em;display:flex;align-items:center;justify-content:center;gap:9px}
 .banner-title i{color:#c4622a;font-style:normal;font-size:.6em;flex-shrink:0}
 .banner-sub{font-family:'Spectral',serif;font-size:12px;font-style:italic;color:rgba(176,144,96,.8);letter-spacing:.04em}
 @media(max-width:560px){.banner-title{font-size:15px}.banner-emblem{width:38px;height:38px}.banner-sub{font-size:11px}}
 .wrap{max-width:760px;margin:0 auto;padding:24px 20px 60px}
 .crumb{font-size:12px;color:#5c4a2a;margin-bottom:14px}
 .crumb a{color:#8b3a1a;text-decoration:none}
-.browse-h1{font-family:'Fraunces',serif;font-size:27px;margin-bottom:6px;color:#2c1f0e;line-height:1.15}
+.browse-h1{font-family:'Marcellus',serif;font-size:27px;margin-bottom:6px;color:#2c1f0e;line-height:1.15}
 .browse-intro{font-size:16px;color:#5c4a2a;margin-bottom:16px}
 .browse-nav{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}
-.browse-nav a{font-family:'Fraunces',serif;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#8b3a1a;border:1px solid #b09060;border-radius:3px;padding:5px 11px;text-decoration:none}
+.browse-nav a{font-family:'Marcellus',serif;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#8b3a1a;border:1px solid #b09060;border-radius:3px;padding:5px 11px;text-decoration:none}
 .browse-nav a:hover,.browse-nav a.active{background:#8b3a1a;color:#f2e8d5;border-color:#8b3a1a}
 .browse-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
 .b-card{background:#f2e8d5;border:1px solid #b09060;border-radius:5px;padding:14px 15px;text-decoration:none;color:#2c1f0e;transition:border-color .15s,transform .1s}
 .b-card:hover{border-color:#c4622a;transform:translateY(-2px)}
 .b-card span{display:block}
 .b-cat{font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:#8b3a1a;padding:2px 8px;border-radius:3px;margin-bottom:8px;width:max-content;max-width:100%}
-.b-name{font-family:'Fraunces',serif;font-size:15px;line-height:1.25;margin-bottom:4px}
+.b-name{font-family:'Marcellus',serif;font-size:15px;line-height:1.25;margin-bottom:4px}
 .b-region{font-style:italic;font-size:12px;color:#5c4a2a}
 .b-summary{font-size:13.5px;color:#3a2c14;margin-top:8px;line-height:1.5}
 .back{display:inline-block;margin-top:24px;font-size:13px;color:#5c4a2a}
 .pagination{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:7px;margin-top:30px}
-.pagination a,.pagination span{font-family:'Fraunces',serif;font-size:13px;min-width:34px;text-align:center;padding:6px 10px;border:1px solid #b09060;border-radius:3px;text-decoration:none;color:#8b3a1a}
+.pagination a,.pagination span{font-family:'Marcellus',serif;font-size:13px;min-width:34px;text-align:center;padding:6px 10px;border:1px solid #b09060;border-radius:3px;text-decoration:none;color:#8b3a1a}
 .pagination a:hover{background:#8b3a1a;color:#f2e8d5;border-color:#8b3a1a}
 .pagination .current{background:#8b3a1a;color:#f2e8d5;border-color:#8b3a1a}
 .pagination .disabled{color:#b09060;border-color:#d8c8a8;cursor:default}
@@ -296,7 +296,7 @@ def build_browse_page(page_title, desc, url, h1, intro, crumb, nav_html, cards_h
             '<meta property="og:url" content="' + url + '"/>\n'
             '<meta property="og:image" content="' + (ogimage or (BASE + '/og/preview.png')) + '"/>\n'
             '<link rel="preconnect" href="https://fonts.googleapis.com">\n'
-            '<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">\n'
+            '<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">\n'
             + jsonld_html + head_extra
             + '<style>' + BROWSE_STYLE + TOPNAV_CSS + '</style></head>\n<body>\n'
             + topnav_html(nav_active) + '\n' + banner_html() + '\n<div class="wrap">\n'
@@ -358,7 +358,7 @@ PAGE = """<!DOCTYPE html>
 <meta name="twitter:description" content="{desc}"/>
 <meta name="twitter:image" content="{ogimage}"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <script type="application/ld+json">{jsonld}</script>
 {breadcrumb_jsonld}
 <style>
@@ -370,7 +370,7 @@ body{{background:#e0d0b0;color:#2c1f0e;font-family:'Spectral',serif;line-height:
 .banner-link{{display:inline-flex;align-items:center;gap:13px;text-decoration:none}}
 .banner-emblem{{width:48px;height:48px;object-fit:contain;flex-shrink:0}}
 .banner-text{{display:flex;flex-direction:column;align-items:center;line-height:1.15}}
-.banner-title{{font-family:'Fraunces',serif;font-size:21px;font-weight:600;color:#f2e8d5;letter-spacing:.09em;display:flex;align-items:center;justify-content:center;gap:9px}}
+.banner-title{{font-family:'Marcellus',serif;font-size:21px;font-weight:400;color:#f2e8d5;letter-spacing:.09em;display:flex;align-items:center;justify-content:center;gap:9px}}
 .banner-title i{{color:#c4622a;font-style:normal;font-size:.6em;flex-shrink:0}}
 .banner-sub{{font-family:'Spectral',serif;font-size:12px;font-style:italic;color:rgba(176,144,96,.8);letter-spacing:.04em}}
 .watermark{{position:absolute;top:26px;right:24px;width:88px;height:88px;color:#8b3a1a;opacity:.1;pointer-events:none;z-index:0}}
@@ -379,8 +379,8 @@ body{{background:#e0d0b0;color:#2c1f0e;font-family:'Spectral',serif;line-height:
 .card{{position:relative;overflow:hidden;background:#f2e8d5;border:1px solid #b09060;border-radius:6px;margin-top:30px;padding:32px;box-shadow:0 4px 20px rgba(44,31,14,.18)}}
 .card>*:not(.watermark){{position:relative;z-index:1}}
 .card>.watermark{{position:absolute;top:26px;right:24px;width:88px;height:88px;z-index:0}}
-.cat{{font-family:'Fraunces',serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#fff;background:#8b3a1a;display:inline-block;padding:3px 10px;border-radius:2px}}
-h1{{font-family:'Fraunces',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;line-height:1.15}}
+.cat{{font-family:'Marcellus',serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#fff;background:#8b3a1a;display:inline-block;padding:3px 10px;border-radius:2px}}
+h1{{font-family:'Marcellus',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;line-height:1.15}}
 .region{{font-style:italic;color:#5c4a2a;margin-bottom:18px}}
 .crumb{{font-size:12.5px;color:#5c4a2a;margin-bottom:16px;line-height:1.5}}
 .crumb a{{color:#8b3a1a;text-decoration:none}}
@@ -389,13 +389,13 @@ h1{{font-family:'Fraunces',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;
 .crumb .here{{color:#5c4a2a}}
 .summary{{font-size:17px}}
 .summary-cont{{font-size:17px;margin-top:14px}}
-.cta{{display:inline-block;margin-top:26px;background:#2c1f0e;color:#f2e8d5;font-family:'Fraunces',serif;font-size:13px;letter-spacing:.08em;text-transform:uppercase;padding:12px 22px;border-radius:3px;text-decoration:none}}
+.cta{{display:inline-block;margin-top:26px;background:#2c1f0e;color:#f2e8d5;font-family:'Marcellus',serif;font-size:13px;letter-spacing:.08em;text-transform:uppercase;padding:12px 22px;border-radius:3px;text-decoration:none}}
 .cta:hover{{background:#8b3a1a}}
 .src{{display:block;margin-top:18px;font-size:13px;font-style:italic;color:#5c4a2a}}
 .src a{{color:#8b3a1a}}
 .back{{display:inline-block;margin-top:22px;font-size:13px;color:#5c4a2a}}
 .related{{margin-top:36px}}
-.related-head{{font-family:'Fraunces',serif;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#8b3a1a;display:flex;align-items:center;gap:12px;margin-bottom:16px}}
+.related-head{{font-family:'Marcellus',serif;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#8b3a1a;display:flex;align-items:center;gap:12px;margin-bottom:16px}}
 .related-head::before,.related-head::after{{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,#b09060)}}
 .related-head::after{{background:linear-gradient(90deg,#b09060,transparent)}}
 .carousel{{position:relative}}
@@ -407,9 +407,9 @@ h1{{font-family:'Fraunces',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;
 .rel-card:hover{{border-color:#c4622a;transform:translateY(-2px)}}
 .rel-card span{{display:block}}
 .rel-cat{{font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:#8b3a1a;padding:2px 8px;border-radius:3px;margin-bottom:8px;width:max-content;max-width:100%}}
-.rel-name{{font-family:'Fraunces',serif;font-size:15px;line-height:1.25;margin-bottom:4px}}
+.rel-name{{font-family:'Marcellus',serif;font-size:15px;line-height:1.25;margin-bottom:4px}}
 .rel-region{{font-style:italic;font-size:12px;color:#5c4a2a}}
-.carousel-btn{{position:absolute;top:42%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;border:1px solid #b09060;background:#f2e8d5;color:#8b3a1a;font-family:'Fraunces',serif;font-size:18px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2;box-shadow:0 2px 8px rgba(44,31,14,.25)}}
+.carousel-btn{{position:absolute;top:42%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;border:1px solid #b09060;background:#f2e8d5;color:#8b3a1a;font-family:'Marcellus',serif;font-size:18px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2;box-shadow:0 2px 8px rgba(44,31,14,.25)}}
 .carousel-btn:hover{{background:#8b3a1a;color:#f2e8d5}}
 .carousel-btn.prev{{left:-10px}}
 .carousel-btn.next{{right:-10px}}
@@ -862,7 +862,7 @@ def build():
 <link rel="canonical" href="{BASE}/{OUT_DIR}/"/>
 <link rel="icon" type="image/png" href="{BASE}/favicon.png"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <style>
 *{{box-sizing:border-box;margin:0;padding:0}}
 body{{background:#e0d0b0;color:#2c1f0e;font-family:'Spectral',serif;min-height:100vh}}
@@ -872,28 +872,28 @@ body{{background:#e0d0b0;color:#2c1f0e;font-family:'Spectral',serif;min-height:1
 .banner-link{{display:inline-flex;align-items:center;gap:13px;text-decoration:none}}
 .banner-emblem{{width:48px;height:48px;object-fit:contain;flex-shrink:0}}
 .banner-text{{display:flex;flex-direction:column;align-items:center;line-height:1.15}}
-.banner-title{{font-family:'Fraunces',serif;font-size:21px;font-weight:600;color:#f2e8d5;letter-spacing:.09em;display:flex;align-items:center;justify-content:center;gap:9px}}
+.banner-title{{font-family:'Marcellus',serif;font-size:21px;font-weight:400;color:#f2e8d5;letter-spacing:.09em;display:flex;align-items:center;justify-content:center;gap:9px}}
 .banner-title i{{color:#c4622a;font-style:normal;font-size:.6em;flex-shrink:0}}
 .banner-sub{{font-family:'Spectral',serif;font-size:12px;font-style:italic;color:rgba(176,144,96,.8);letter-spacing:.04em}}
 @media(max-width:560px){{.banner-title{{font-size:15px}}.banner-emblem{{width:38px;height:38px}}.banner-sub{{font-size:11px}}}}
 .wrap{{max-width:1180px;margin:0 auto;padding:24px 20px 60px}}
-h1{{font-family:'Fraunces',serif;font-size:26px;margin-bottom:18px}}
+h1{{font-family:'Marcellus',serif;font-size:26px;margin-bottom:18px}}
 .az{{column-count:8;column-gap:20px}}
 @media(max-width:1100px){{.az{{column-count:6}}}}
 @media(max-width:880px){{.az{{column-count:4}}}}
 @media(max-width:680px){{.az{{column-count:3}}}}
 @media(max-width:520px){{.az{{column-count:2}}}}
 @media(max-width:380px){{.az{{column-count:1}}}}
-.az-letter{{font-family:'Fraunces',serif;font-size:17px;color:#8b3a1a;margin:0 0 7px;padding-bottom:3px;border-bottom:1px solid #b09060;break-after:avoid;break-inside:avoid}}
+.az-letter{{font-family:'Marcellus',serif;font-size:17px;color:#8b3a1a;margin:0 0 7px;padding-bottom:3px;border-bottom:1px solid #b09060;break-after:avoid;break-inside:avoid}}
 .az ul{{list-style:none;margin:0 0 16px}}
 .az li{{break-inside:avoid;padding:5px 0;border-bottom:.5px solid rgba(176,144,96,.3)}}
 .az li a{{color:#8b3a1a;text-decoration:none;font-size:15px}}
 .az li span{{display:block;font-size:11.5px;font-style:italic;color:#5c4a2a}}
 .browse-sec{{margin-bottom:26px}}
-.browse-sec h2,.azh{{font-family:'Fraunces',serif;font-size:18px;margin-bottom:13px;color:#2c1f0e}}
+.browse-sec h2,.azh{{font-family:'Marcellus',serif;font-size:18px;margin-bottom:13px;color:#2c1f0e}}
 .azh{{margin-top:6px}}
 .cat-links,.region-links{{display:flex;flex-wrap:wrap;gap:9px}}
-.cat-links a,.region-links a{{display:inline-flex;align-items:center;gap:7px;font-family:'Fraunces',serif;font-size:13px;color:#2c1f0e;background:#f2e8d5;border:1px solid #b09060;border-radius:4px;padding:7px 13px;text-decoration:none}}
+.cat-links a,.region-links a{{display:inline-flex;align-items:center;gap:7px;font-family:'Marcellus',serif;font-size:13px;color:#2c1f0e;background:#f2e8d5;border:1px solid #b09060;border-radius:4px;padding:7px 13px;text-decoration:none}}
 .cat-links a:hover,.region-links a:hover{{border-color:#c4622a}}
 .c-count{{font-size:11px;color:#5c4a2a;font-style:italic}}
 .c-dot{{width:10px;height:10px;border-radius:50%;display:inline-block;flex-shrink:0}}

@@ -49,7 +49,7 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" integrity="sha384-pmjIAcz2bAn0xukfxADbZIb3t8oRT9Sv0rvO+BR5Csr6Dhqq+nZs59P0pPKQJkEV" crossorigin="anonymous"/>
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" integrity="sha384-wgw+aLYNQ7dlhK47ZPK7FRACiq7ROZwgFNg0m04avm4CaXS+Z9Y7nMu8yNjBKYC+" crossorigin="anonymous"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -62,7 +62,7 @@
       --accent-glow:  #c4622a;
       --border:       #b09060;
       --shadow:       rgba(44, 31, 14, 0.25);
-      --font-display: 'Fraunces', serif;
+      --font-display: 'Marcellus', serif;
       --font-body:    'Spectral', serif;
 
       --map-filter-day:   sepia(0.8) brightness(0.9) contrast(1.1) saturate(0.7);
@@ -182,7 +182,7 @@
     h1 {
       font-family: var(--font-display);
       font-size: 26px;
-      font-weight: 600;
+      font-weight:400;
       color: var(--parchment);
       letter-spacing: 0.1em;
       text-shadow: 0 1px 3px rgba(0,0,0,0.55), 0 0 14px rgba(196,98,42,0.22);
@@ -362,7 +362,9 @@
       padding: 0 !important;
     }
     .leaflet-popup-tip { background: var(--parchment) !important; }
-    .leaflet-popup-content { margin: 0 !important; width: auto !important; }
+    /* Leaflet sets its own font on .leaflet-container; restore the site body
+       font so popup text (summary, region) matches the rest of the site. */
+    .leaflet-popup-content { margin: 0 !important; width: auto !important; font-family: var(--font-body); }
     .leaflet-popup-close-button {
       color: var(--ink-light) !important;
       font-size: 16px !important;
@@ -385,7 +387,7 @@
     .popup-title {
       font-family: var(--font-display);
       font-size: 15px;
-      font-weight: 600;
+      font-weight:400;
       color: var(--ink);
       margin-bottom: 3px;
       line-height: 1.3;
@@ -601,7 +603,7 @@
     .marker-cluster { border-radius: 50% !important; background: transparent !important; }
     .marker-cluster-small, .marker-cluster-medium, .marker-cluster-large { background: none !important; }
     .marker-cluster div {
-      font-family: var(--font-display); font-size: 11px; font-weight: 600;
+      font-family: var(--font-display); font-size: 11px; font-weight:400;
       display: flex; align-items: center; justify-content: center;
       border-radius: 50%; width: 100% !important; height: 100% !important;
       border: 2px solid rgba(255,255,255,0.6);
@@ -645,7 +647,7 @@
     .sidebar-item.active { background: rgba(139,58,26,0.1); }
     .sidebar-item-icon { display: flex; align-items: center; flex-shrink: 0; margin-top: 2px; opacity: 0.75; }
     .sidebar-item-text { min-width: 0; flex: 1; }
-    .sidebar-item-name { font-family: var(--font-display); font-size: 11px; color: var(--ink); font-weight: 600; line-height: 1.3; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .sidebar-item-name { font-family: var(--font-display); font-size: 11px; color: var(--ink); font-weight:400; line-height: 1.3; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .sidebar-item-region { font-size: 10px; color: var(--ink-light); font-style: italic; }
     .sidebar-bookmark { flex-shrink: 0; font-size: 17px; margin-top: 1px; }
     .sidebar-toggle-btn { background: rgba(255,255,255,0.08); border: 1px solid var(--border); border-radius: 4px; color: var(--parchment); font-family: var(--font-body); font-size: 12px; padding: 4px 10px; cursor: pointer; white-space: nowrap; }

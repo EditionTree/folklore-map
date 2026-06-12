@@ -170,7 +170,7 @@ body{background:#e0d0b0;color:#2c1f0e;font-family:'Crimson Text',serif;line-heig
 """
 
 
-def build_browse_page(page_title, desc, url, h1, intro, crumb, nav_html, cards_html):
+def build_browse_page(page_title, desc, url, h1, intro, crumb, nav_html, cards_html, ogimage=None):
     return ('<!DOCTYPE html>\n<html lang="en"><head><meta charset="UTF-8"/>\n'
             '<script>if(location.hostname.indexOf("pages.dev")>-1){location.replace("https://folklorefinder.uk"+location.pathname+location.search+location.hash);}</script>\n'
             '<script defer src=\'https://static.cloudflareinsights.com/beacon.min.js\' data-cf-beacon=\'{"token": "64d1fd37251d426f8a0d8fbc83ea350b"}\'></script>\n'
@@ -183,7 +183,7 @@ def build_browse_page(page_title, desc, url, h1, intro, crumb, nav_html, cards_h
             '<meta property="og:title" content="' + esc(h1) + '"/>\n'
             '<meta property="og:description" content="' + esc(desc) + '"/>\n'
             '<meta property="og:url" content="' + url + '"/>\n'
-            '<meta property="og:image" content="' + BASE + '/og/preview.png"/>\n'
+            '<meta property="og:image" content="' + (ogimage or (BASE + '/og/preview.png')) + '"/>\n'
             '<link rel="preconnect" href="https://fonts.googleapis.com">\n'
             '<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">\n'
             '<style>' + BROWSE_STYLE + '</style></head>\n<body>\n'
@@ -238,12 +238,12 @@ PAGE = """<!DOCTYPE html>
 <meta property="og:url" content="{url}"/>
 <meta property="og:title" content="{ogtitle}"/>
 <meta property="og:description" content="{desc}"/>
-<meta property="og:image" content="{base}/og/preview.png"/>
+<meta property="og:image" content="{ogimage}"/>
 <meta property="og:site_name" content="Folklore Map of Britain &amp; Ireland"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="{ogtitle}"/>
 <meta name="twitter:description" content="{desc}"/>
-<meta name="twitter:image" content="{base}/og/preview.png"/>
+<meta name="twitter:image" content="{ogimage}"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 <script type="application/ld+json">{jsonld}</script>
@@ -484,6 +484,7 @@ def build():
             srchost=esc(host_of(src)),
             watermark=meta.get(leg.get("category", ""), {}).get("iconPath", ""),
             catcolour=esc(meta.get(leg.get("category", ""), {}).get("colour", "#8b3a1a")),
+            ogimage=f"{BASE}/og/category-{leg.get('category', '')}.png" if leg.get("category", "") in meta else f"{BASE}/og/preview.png",
         )
         with io.open(os.path.join(OUT_DIR, f"{slug}.html"), "w", encoding="utf-8") as f:
             f.write(out)
@@ -514,6 +515,7 @@ def build():
             crumb=label,
             nav_html=nav_links(cat_nav_items, c),
             cards_html=cards,
+            ogimage=f"{BASE}/og/category-{c}.png" if c in meta else None,
         )
         with io.open(os.path.join(cat_dir, f"{c}.html"), "w", encoding="utf-8") as f:
             f.write(page)

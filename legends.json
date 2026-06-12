@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-11T18:50:00.852591Z",
-  "total": 529,
+  "generated": "2026-06-12T14:44:02.578545Z",
+  "total": 539,
   "categories": {
     "beast": "Beasts",
     "ghost": "Ghosts",
@@ -2936,6 +2936,23 @@
       "detail": "Bessie Dunlop of Lynn, near Dalry in Ayrshire, was tried for witchcraft at the High Court of Justiciary in Dalkeith in September 1576. Her defence was unusual: she insisted her powers of healing and prophecy came entirely from Thomas Reid, a barony officer killed at the Battle of Pinkie in 1547, who had returned to walk with the Court of Elfhame. She was not a witch who had made a pact with the devil, she argued — she was a healer guided by a dead neighbour and his fairy companions. The court did not share the distinction. Found guilty, she was strangled and burned.\n\nBessie's trial testimony is remarkably specific about the Elfhame court's visits to her home. Eight women and four men came, described by Thomas Reid as 'good wights' — the Good Neighbours. The Queen of Elfhame herself had once appeared at Bessie's door seeking a drink of water. Andro Man of Aberdeen, tried in 1597, claimed a lifelong relationship with the Queen of Elphame begun in his youth, further confirming the recurring figure of an Elfhame queen across Scottish witchcraft confessions of the period.\n\nJames VI took a close interest in such confessions and drew on them when writing his Daemonologie (1597), which attempted to systematise demonic belief and distinguish it from fairy superstition. Elfhame occupies a distinctive position in British supernatural geography: not quite hell, not quite the romanticised fairyland of later centuries, but a morally ambiguous parallel realm — one whose queen could be invoked as a defence in a capital trial."
     },
     {
+      "name": "Ellén Trechend",
+      "lat": 53.797,
+      "lng": -8.311,
+      "category": "beast",
+      "region": "Rathcroghan, County Roscommon, Ireland",
+      "summary": "A three-headed monster burst from the cave of Cruachan and laid waste to Ireland until the poet-warrior Amergin slew it at Mag Mucrama.",
+      "source": "https://en.wikipedia.org/wiki/Ell%C3%A9n_Trechend",
+      "date_added": "2026-06-12",
+      "tags": [
+        "cave",
+        "celtic",
+        "ireland",
+        "county-roscommon"
+      ],
+      "detail": "According to the medieval tale Cath Maige Mucrama (The Battle of Mag Mucrama), the Ellén Trechend was a monstrous three-headed creature that emerged from the dark cave of Cruachan — known today as Oweynagat, the 'Cave of the Cats' near Rathcroghan in County Roscommon. Once free, it rampaged across Ireland, devastating the land until it reached Mag Mucrama, where it was finally killed by the Ulster poet and warrior Amergin.\n\nThe name itself has long puzzled scholars. 'Trechend' clearly means 'three-headed', but 'ellén' resists easy translation: one reading takes it as a 'swarm' of three-headed beings, the 19th-century Celticist Whitley Stokes proposed a monstrous triple-headed bird, and T. F. O'Rahilly linked it to Aillén, the fire-breathing creature that terrorised Tara before being defeated by Fionn mac Cumhaill.\n\nOweynagat looms large in early Irish literature as one of the chief 'gates to the otherworld', a cave from which supernatural hosts and monstrous beings were said to pour forth, especially at Samhain. The Ellén Trechend's emergence from this cave situates it within that same mythological complex — a distinct creature with its own tale, anchored to the cave mouth that already appears on the map as the Oweynagat entry."
+    },
+    {
       "name": "Enfield Poltergeist",
       "lat": 51.6553,
       "lng": -0.0355,
@@ -3234,6 +3251,21 @@
         "arthurian",
         "northern-ireland",
         "county-antrim"
+      ]
+    },
+    {
+      "name": "Florence Newton",
+      "lat": 51.953,
+      "lng": -7.851,
+      "category": "witch",
+      "region": "Youghal, County Cork, Ireland",
+      "summary": "Florence Newton, the 'Witch of Youghal', was tried for witchcraft in County Cork in 1661 after allegedly bewitching a servant girl with a kiss — one of Ireland's best-documented witch trials.",
+      "source": "https://en.wikipedia.org/wiki/Florence_Newton",
+      "date_added": "2026-06-12",
+      "tags": [
+        "curse",
+        "ireland",
+        "county-cork"
       ]
     },
     {
@@ -4588,6 +4620,20 @@
       "detail": "Arthur is the once and future king of British legend: a war-leader who, in the chaos following the Roman withdrawal, is said to have united the Britons and held back the advancing Saxons through a series of battles culminating in the great victory at Mount Badon. Around this possibly historical figure gathered the richest story-cycle in these islands — the sword drawn from the stone, the fellowship of the Round Table at Camelot, the wizard Merlin, the quest for the Holy Grail, the love of Lancelot and Guinevere, and the final betrayal that brought it all down at the Battle of Camlann.\n\nHe is woven into the landscape from Cornwall to Scotland, but the West Country holds his strongest claims: Glastonbury, identified since the Middle Ages with the Isle of Avalon where the mortally wounded king was carried, and where the monks claimed to have unearthed his grave in 1191. Tradition holds that Arthur never truly died but sleeps beneath a hill with his knights, ready to return in Britain's hour of greatest need. His legend was shaped above all by Geoffrey of Monmouth's 'History of the Kings of Britain' (c.1136) and Sir Thomas Malory's 'Le Morte d'Arthur' (1485), and has never loosened its grip on the imagination since."
     },
     {
+      "name": "Kirk Yetholm, Seat of the Gypsy Kings",
+      "lat": 55.538,
+      "lng": -2.258,
+      "category": "location",
+      "region": "Kirk Yetholm, Scottish Borders, Scotland",
+      "summary": "Kirk Yetholm, on the Scottish Borders, was the traditional seat of the Romani 'Gypsy Kings' — the Faa dynasty — for centuries, culminating in the crowning of the last Gypsy Queen, Esther Faa Blyth, in 1898.",
+      "source": "https://www.gutenberg.org/ebooks/2733",
+      "date_added": "2026-06-12",
+      "tags": [
+        "border",
+        "scotland"
+      ]
+    },
+    {
       "name": "Kirkcudbright Tolbooth",
       "lat": 54.8356,
       "lng": -4.0558,
@@ -4971,6 +5017,23 @@
       "date_added": "2026-06-11"
     },
     {
+      "name": "Llandeilo Graban Dragon",
+      "lat": 52.105,
+      "lng": -3.27,
+      "category": "dragon",
+      "region": "Llandeilo Graban, Powys, Wales",
+      "summary": "A dragon nesting in the church belfry was destroyed by a blacksmith's iron decoy rigged with hidden spikes — said to be Wales's last dragon-slaying.",
+      "source": "https://allaboutdragons.com/dragons/Llandeilo_Graban",
+      "date_added": "2026-06-12",
+      "tags": [
+        "serpent",
+        "church",
+        "wales",
+        "powys"
+      ],
+      "detail": "St Teilo's Church in the small Powys village of Llandeilo Graban, near Painscastle and Builth Wells, is the setting for one of the most distinctive dragon legends of the Welsh borders. Tradition holds that a dragon took up residence in the church's belfry or tower, terrorising the surrounding parish whenever it left its lair to hunt.\n\nUnable to fight the creature directly, a local blacksmith devised a cunning trap: he forged a decoy dragon from iron and placed it in the nest while the real dragon was away. When the dragon returned and found the impostor, it attacked the iron figure in a rage, triggering a hidden mechanism that drove a set of sharp spikes into the beast and killed it on the spot.\n\nThe tale is often cited in surveys of British dragon-lore as one of the last dragons traditionally said to have been killed in Wales, fitting a pattern of 'dragon in the church tower' stories found at a handful of border churches. Llandeilo Graban's version is unusual for the ingenuity of the blacksmith's solution, and the 14th-century church itself still stands as the legend's setting."
+    },
+    {
       "name": "Llangorse Lake",
       "lat": 51.9,
       "lng": -3.267,
@@ -5027,6 +5090,22 @@
       ]
     },
     {
+      "name": "Llyn Morwynion",
+      "lat": 52.946,
+      "lng": -3.938,
+      "category": "location",
+      "region": "Ffestiniog, Gwynedd, Wales",
+      "summary": "Llyn Morwynion, 'Lake of the Maidens' above Ffestiniog, is where Blodeuwedd's maidens drowned fleeing Gwydion in the Mabinogion — and where abducted maidens are said to have chosen the water over capture.",
+      "source": "https://www.mysteriousbritain.co.uk/legends/llyn-morwynion-lake-of-the-maidens/",
+      "date_added": "2026-06-12",
+      "tags": [
+        "lake",
+        "drowning",
+        "wales",
+        "gwynedd"
+      ]
+    },
+    {
       "name": "Llyn y Fan Fach",
       "lat": 51.8819,
       "lng": -3.7419,
@@ -5073,6 +5152,22 @@
       "tags": [
         "lake",
         "death-omen",
+        "scotland",
+        "highland"
+      ]
+    },
+    {
+      "name": "Loch na Beiste Water Horse, Mellon Udrigle",
+      "lat": 57.9833,
+      "lng": -5.5167,
+      "category": "beast",
+      "region": "Mellon Udrigle, Wester Ross, Highland, Scotland",
+      "summary": "Loch na Beiste — 'Loch of the Beast' — near Mellon Udrigle was so feared that a 19th-century minister attempted to drain it after locals reported a creature shaped like an upturned boat-keel.",
+      "source": "https://spookyscotland.net/water-horse-loch-na-beiste/",
+      "date_added": "2026-06-12",
+      "tags": [
+        "lake",
+        "horse",
         "scotland",
         "highland"
       ]
@@ -5347,6 +5442,21 @@
       "date_added": "2026-06-03",
       "tags": [
         "celtic"
+      ]
+    },
+    {
+      "name": "Margaret Finch",
+      "lat": 51.426,
+      "lng": -0.087,
+      "category": "witch",
+      "region": "Norwood, South London, England",
+      "summary": "Margaret Finch, the 'Queen of the Norwood Gypsies', was a celebrated fortune-teller so accustomed to sitting in a crouched posture that she had to be buried in a specially made square box.",
+      "source": "https://www.norwoodsociety.co.uk/articles/the-norwood-gipsies",
+      "date_added": "2026-06-12",
+      "tags": [
+        "prophecy",
+        "england",
+        "london"
       ]
     },
     {
@@ -5984,7 +6094,7 @@
       "region": "North Berwick, East Lothian",
       "summary": "Scotland's most spectacular witch trial — begun in 1590 when Agnes Sampson confessed under torture to raising storms against James VI's ship. The king interrogated the accused himself, and the case shaped his book Daemonologie and Scotland's subsequent witch-hunting frenzy.",
       "source": "https://www.historic-uk.com/HistoryUK/HistoryofScotland/North-Berwick-Witch-Trials/",
-      "detail": "The North Berwick witch trials of 1590–91 are among the most dramatic in British history, partly because the king himself took a personal interest. James VI of Scotland — returning from Denmark with his new queen, Anne — believed his ships had been assailed by supernatural storms, and when a servant of his chamberlain was accused of witchcraft, the case rapidly grew into something much larger.\n\nOver a hundred people were eventually accused. The confessions described sabbats at the old Kirk of North Berwick: dances in the kirkyard, sermons delivered backwards, wax images of the king being passed hand to hand, and a coven led by Francis Stewart, Earl of Bothwell. Agnes Sampson — a respected midwife and healer — was among the accused. She was tortured with the bridle and deprived of sleep until she confessed, then recanted, then confessed again.\n\nJames VI interrogated Sampson personally at Holyroodhouse and was reportedly persuaded of her guilt when she whispered in his ear the exact words he had exchanged privately with his queen on their wedding night — words she could not have known by natural means. He went on to write Daemonologie (1597), a learned treatise on witchcraft that argued for its reality and the legitimacy of persecution. The North Berwick trials were the direct catalyst for Scotland's century of sustained witch-hunting.",
+      "detail": "The North Berwick witch trials of 1590–91 are among the most dramatic in British history, partly because the king himself took a personal interest. James VI of Scotland — returning from Denmark with his new queen, Anne — believed his ships had been assailed by supernatural storms, and when a servant of his chamberlain was accused of witchcraft, the case rapidly grew into something much larger.\n\nOver a hundred people were eventually accused. The confessions described sabbats at the old Kirk of North Berwick: dances in the kirkyard, sermons delivered backwards, wax images of the king being passed hand to hand, and a coven led by Francis Stewart, Earl of Bothwell. Agnes Sampson — a respected midwife and healer — was among the accused. She was tortured with the bridle and deprived of sleep until she confessed, then recanted, then confessed again.\n\nJames VI interrogated Sampson personally at Holyroodhouse and was reportedly persuaded of her guilt when she whispered in his ear the exact words he had exchanged privately with his queen on their wedding night — words she could not have known by natural means. He went on to write Daemonologie (1597), a learned treatise on witchcraft that argued for its reality and the legitimacy of persecution. Among the other accused was John Fian, a schoolmaster who confessed to acting as clerk to the coven, recording its members and rituals, and to helping raise the storms against the king's fleet; like Sampson, he was eventually executed. The North Berwick trials were the direct catalyst for Scotland's century of sustained witch-hunting.",
       "date_added": "2026-06-03",
       "tags": [
         "scotland",
@@ -6249,6 +6359,21 @@
         "haunting",
         "england",
         "yorkshire"
+      ]
+    },
+    {
+      "name": "Petronilla de Meath",
+      "lat": 52.651,
+      "lng": -7.253,
+      "category": "witch",
+      "region": "Kilkenny, County Kilkenny, Ireland",
+      "summary": "Petronilla de Meath, maidservant of Alice Kyteler, was burned at Kilkenny on 3 November 1324 — the first person executed for witchcraft in Ireland, after torture forced her confession while her mistress escaped.",
+      "source": "https://en.wikipedia.org/wiki/Petronilla_de_Meath",
+      "date_added": "2026-06-12",
+      "tags": [
+        "curse",
+        "ireland",
+        "county-kilkenny"
       ]
     },
     {
@@ -6766,6 +6891,22 @@
         "haunting",
         "england",
         "london"
+      ]
+    },
+    {
+      "name": "Sarey Bowers of Kirtlington",
+      "lat": 51.887,
+      "lng": -1.262,
+      "category": "witch",
+      "region": "Kirtlington, Oxfordshire, England",
+      "summary": "Local huntsmen blamed Sarey Bowers of Foxtownsend for bewitching foxes to escape and hounds to lose the scent — one tale has an uncatchable vixen vanish into her cottage, leaving only Sarey panting by the fire.",
+      "source": "https://www.darkoxfordshire.co.uk/explore/foxes-and-witches-in-kirtlington/",
+      "date_added": "2026-06-12",
+      "tags": [
+        "transformation",
+        "fox",
+        "england",
+        "oxfordshire"
       ]
     },
     {
@@ -8689,6 +8830,22 @@
         "revenge"
       ],
       "detail": "Joan Flower and her daughters Margaret and Philippa lived in Bottesford near Belvoir Castle, the seat of Francis Manners, 6th Earl of Rutland. Joan and at least one daughter had worked at the castle and been dismissed, apparently for pilfering. When two of the earl's young sons — Henry Lord Roos, who died in 1613, and his brother Francis, who died in 1620 — fell into mysterious fatal illness, suspicion turned to the Flowers. They were accused of working a wasting curse using stolen graveyard soil and a glove belonging to one of the boys, buried and left to rot as the child sickened alongside it.\n\nJoan Flower was arrested around Christmas 1618. She died before reaching Lincoln, allegedly in the act of calling a curse on herself: demanding that a piece of bread and butter stick in her throat if she were guilty of witchcraft, whereupon she choked and died. Margaret and Philippa were tried at Lincoln assizes and hanged on 11 March 1619. The only surviving record of the trial is the pamphlet published that same year — The Wonderful Discoverie of the Witchcrafts of Margaret and Phillippa Flower — since the Lincoln assize records have been lost. A broadside ballad, Damnable Practises of Three Lincolnshire Witches, spread the story further.\n\nThe two dead Manners boys are commemorated by alabaster effigies in St Mary the Virgin church at Bottesford, laid alongside their parents' monument. The inscription carved into the tomb openly references 'wicked practise and sorcerye' — the only monument in an English parish church known to record a witchcraft accusation explicitly. The case circulated widely in a period when James I, author of Daemonologie before his accession, took a close personal interest in witchcraft prosecutions."
+    },
+    {
+      "name": "Witches of Garway Hill",
+      "lat": 51.9344,
+      "lng": -2.8732,
+      "category": "witch",
+      "region": "Garway, Herefordshire, England",
+      "summary": "Nine wise women said to dwell along Garway Hill, one of whom revealed that a grieving widower's dead wife had really been taken by the fairies.",
+      "source": "https://www.eatsleepliveherefordshire.co.uk/the-witches-of-garway-hill/",
+      "date_added": "2026-06-12",
+      "tags": [
+        "fairy",
+        "england",
+        "herefordshire"
+      ],
+      "detail": "Garway Hill, in southwest Herefordshire near the Welsh border, has long been associated with a community of 'wise women' or witches, remembered in the local rhyme: 'There'll always be nine witches from the bottom of Orcop to the end of Garway Hill, as long as water runs.' Rather than being feared as malevolent, these women were widely consulted by villagers for cures, charms, and guidance, a pattern recorded across the county by the folklorist Ella Mary Leather in her classic study 'The Folk-Lore of Herefordshire'.\n\nOne of the best-known tales tells of a widower from the Mynors family who mourned his dead wife for years until friends urged him to consult one of the wise women of Garway Hill. She told him a startling truth: his wife was not really dead at all — what he had buried was a fairy 'stock', a simulacrum left behind when the fairies took his real wife. Following her precise instructions, the man hid by the spring beside Garway Church on May Eve and won his wife back from the fairy host.\n\nThe tale ends with a flourish typical of Herefordshire fairy-lore: the couple's descendants were known locally for generations afterward as 'the children of the dead woman', a living reminder of the night the wise women of Garway Hill turned back the fairies."
     },
     {
       "name": "Witches' Well",

@@ -110,7 +110,7 @@ def footer_html():
     return ('<footer style="text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a">'
             'Part of the Folklore Map of Britain &amp; Ireland &#183; &#169; EditionTree &#183; '
             '<a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener" style="color:#5c4a2a">&#9749; Ko-fi</a> &#183; '
-            '<a href="' + BASE + '/privacy.html" style="color:#5c4a2a">Privacy</a></footer>')
+            '<a href="' + BASE + '/privacy" style="color:#5c4a2a">Privacy</a></footer>')
 
 
 def nav_links(items, active):
@@ -125,7 +125,7 @@ def nav_links(items, active):
 
 def browse_card(leg, slugmap, cats, meta, show_cat):
     cat = leg.get("category", "")
-    href = BASE + "/" + OUT_DIR + "/" + slugmap[leg["name"]] + ".html"
+    href = BASE + "/" + OUT_DIR + "/" + slugmap[leg["name"]]
     chip = ""
     if show_cat:
         colour = meta.get(cat, {}).get("colour", "#8b3a1a")
@@ -321,7 +321,7 @@ footer{{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}}
 {related}
 <a class="back" href="{base}/legends/">&#8592; Browse all legends</a>
 </div>
-<footer>Part of the Folklore Map of Britain &amp; Ireland &#183; &#169; EditionTree &#183; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener" style="color:#5c4a2a">&#9749; Ko-fi</a> &#183; <a href="{base}/privacy.html" style="color:#5c4a2a">Privacy</a></footer>
+<footer>Part of the Folklore Map of Britain &amp; Ireland &#183; &#169; EditionTree &#183; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener" style="color:#5c4a2a">&#9749; Ko-fi</a> &#183; <a href="{base}/privacy" style="color:#5c4a2a">Privacy</a></footer>
 <script>
 document.querySelectorAll('.carousel').forEach(function(c){{
   var t=c.querySelector('.carousel-track');
@@ -380,13 +380,13 @@ def build():
         parts = [("Legends", f"{BASE}/{OUT_DIR}/")]
         cat = leg.get("category", "")
         if cat in cat_groups:
-            parts.append((cats.get(cat, cat), f"{BASE}/{OUT_DIR}/category/{cat}.html"))
+            parts.append((cats.get(cat, cat), f"{BASE}/{OUT_DIR}/category/{cat}"))
         rtags = (set(leg.get("tags") or []) - THEMATIC_TAGS) & generated_regions
         counties = sorted(t for t in rtags if t not in NATIONS)
         nats = sorted(t for t in rtags if t in NATIONS)
         rtag = counties[0] if counties else (nats[0] if nats else None)
         if rtag:
-            parts.append((prettify_region(rtag), f"{BASE}/{OUT_DIR}/region/{rtag}.html"))
+            parts.append((prettify_region(rtag), f"{BASE}/{OUT_DIR}/region/{rtag}"))
         return parts
 
     related_map = compute_related(legends)
@@ -405,14 +405,14 @@ def build():
             for i, p in enumerate(paras)
         ) or '<p class="summary"></p>'
         catname = cats.get(leg.get("category", ""), leg.get("category", "Legend"))
-        maplink = f"{BASE}/map.html?legend=" + urllib.parse.quote(name)
+        maplink = f"{BASE}/map?legend=" + urllib.parse.quote(name)
         src = leg.get("source", "")
         jsonld = json.dumps({
             "@context": "https://schema.org",
             "@type": "CreativeWork",
             "name": name,
             "description": desc,
-            "url": f"{BASE}/{OUT_DIR}/{slug}.html",
+            "url": f"{BASE}/{OUT_DIR}/{slug}",
             "genre": "Folklore",
             "about": {
                 "@type": "Place",
@@ -432,7 +432,7 @@ def build():
                 rcat = cats.get(r.get("category", ""), r.get("category", ""))
                 rcolour = meta.get(r.get("category", ""), {}).get("colour", "#8b3a1a")
                 cards.append(
-                    f'<a class="rel-card" href="{BASE}/{OUT_DIR}/{slugmap[r["name"]]}.html">'
+                    f'<a class="rel-card" href="{BASE}/{OUT_DIR}/{slugmap[r["name"]]}">'
                     f'<span class="rel-cat" style="background:{esc(rcolour)}">{esc(rcat)}</span>'
                     f'<span class="rel-name">{esc(r["name"])}</span>'
                     f'<span class="rel-region">{esc(r.get("region", ""))}</span></a>'
@@ -448,7 +448,7 @@ def build():
         else:
             related_html = ""
 
-        page_path_url = f"{BASE}/{OUT_DIR}/{slug}.html"
+        page_path_url = f"{BASE}/{OUT_DIR}/{slug}"
 
         # Breadcrumb: Legends > Category > Region > Name (visible + structured data)
         crumb_parts = breadcrumb_for(leg)
@@ -499,11 +499,11 @@ def build():
 
     # Category pages
     cat_order = sorted(cat_groups, key=lambda c: -len(cat_groups[c]))
-    cat_nav_items = [(f"{BASE}/{OUT_DIR}/category/{c}.html", cats.get(c, c), c) for c in cat_order]
+    cat_nav_items = [(f"{BASE}/{OUT_DIR}/category/{c}", cats.get(c, c), c) for c in cat_order]
     for c in cat_order:
         entries = sorted(cat_groups[c], key=lambda l: l["name"].lower())
         label = cats.get(c, c)
-        url = f"{BASE}/{OUT_DIR}/category/{c}.html"
+        url = f"{BASE}/{OUT_DIR}/category/{c}"
         cards = "\n".join(browse_card(l, slugmap, cats, meta, show_cat=False) for l in entries)
         page = build_browse_page(
             page_title=f"{label} of Britain &amp; Ireland — Folklore Map",
@@ -522,12 +522,12 @@ def build():
     # Region pages — nations always, other areas only if >= 4 entries (avoid thin pages)
     region_eligible = [t for t in region_groups if t in NATIONS or len(region_groups[t]) >= 4]
     region_order = sorted(region_eligible, key=lambda t: (0 if t in NATIONS else 1, -len(region_groups[t])))
-    nation_nav_items = [(f"{BASE}/{OUT_DIR}/region/{t}.html", prettify_region(t), t)
+    nation_nav_items = [(f"{BASE}/{OUT_DIR}/region/{t}", prettify_region(t), t)
                         for t in NATIONS if t in region_groups]
     for t in region_order:
         entries = sorted(region_groups[t], key=lambda l: l["name"].lower())
         rn = prettify_region(t)
-        url = f"{BASE}/{OUT_DIR}/region/{t}.html"
+        url = f"{BASE}/{OUT_DIR}/region/{t}"
         cards = "\n".join(browse_card(l, slugmap, cats, meta, show_cat=True) for l in entries)
         page = build_browse_page(
             page_title=f"Folklore of {rn} — Myths, Legends & Ghosts",
@@ -545,13 +545,13 @@ def build():
 
     # Browse sections for the A-Z index page
     cat_links = "".join(
-        '<a href="' + f"{BASE}/{OUT_DIR}/category/{c}.html" + '">'
+        '<a href="' + f"{BASE}/{OUT_DIR}/category/{c}" + '">'
         '<span class="c-dot" style="background:' + esc(meta.get(c, {}).get("colour", "#8b3a1a")) + '"></span>'
         + esc(cats.get(c, c)) + ' <span class="c-count">' + str(len(cat_groups[c])) + '</span></a>'
         for c in cat_order
     )
     region_links = "".join(
-        '<a href="' + f"{BASE}/{OUT_DIR}/region/{t}.html" + '">'
+        '<a href="' + f"{BASE}/{OUT_DIR}/region/{t}" + '">'
         + esc(prettify_region(t)) + ' <span class="c-count">' + str(len(region_groups[t])) + '</span></a>'
         for t in region_order
     )
@@ -575,7 +575,7 @@ def build():
     az_parts = []
     for letter in az_order:
         lis = "".join(
-            f'<li><a href="{BASE}/{OUT_DIR}/{slugmap[x["name"]]}.html">{esc(x["name"])}</a>'
+            f'<li><a href="{BASE}/{OUT_DIR}/{slugmap[x["name"]]}">{esc(x["name"])}</a>'
             f'<span>{esc(x.get("region",""))}</span></li>'
             for x in az_groups[letter]
         )
@@ -630,16 +630,16 @@ h1{{font-family:'Cinzel',serif;font-size:26px;margin-bottom:18px}}
 <div class="wrap"><h1>All Legends ({written})</h1>{browse_sections}<div class="az">
 {az_content}
 </div></div>
-<footer style="text-align:center;padding:24px 20px;font-size:12px;color:#5c4a2a">Part of the Folklore Map of Britain &amp; Ireland &#183; &#169; EditionTree &#183; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener" style="color:#5c4a2a">&#9749; Ko-fi</a> &#183; <a href="{BASE}/privacy.html" style="color:#5c4a2a">Privacy</a></footer>
+<footer style="text-align:center;padding:24px 20px;font-size:12px;color:#5c4a2a">Part of the Folklore Map of Britain &amp; Ireland &#183; &#169; EditionTree &#183; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener" style="color:#5c4a2a">&#9749; Ko-fi</a> &#183; <a href="{BASE}/privacy" style="color:#5c4a2a">Privacy</a></footer>
 </body></html>"""
     with io.open(os.path.join(OUT_DIR, "index.html"), "w", encoding="utf-8") as f:
         f.write(index_html)
 
     # sitemap.xml
     today = datetime.date.today().isoformat()
-    urls = [f"{BASE}/", f"{BASE}/{OUT_DIR}/", f"{BASE}/about.html", f"{BASE}/updates.html", f"{BASE}/privacy.html"]
+    urls = [f"{BASE}/", f"{BASE}/{OUT_DIR}/", f"{BASE}/about", f"{BASE}/updates", f"{BASE}/privacy"]
     urls += browse_urls
-    urls += [f"{BASE}/{OUT_DIR}/{slugmap[l['name']]}.html" for l in legends]
+    urls += [f"{BASE}/{OUT_DIR}/{slugmap[l['name']]}" for l in legends]
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for i, u in enumerate(urls):

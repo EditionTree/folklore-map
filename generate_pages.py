@@ -375,7 +375,7 @@ body{{background:#e0d0b0;color:#2c1f0e;font-family:'Spectral',serif;line-height:
 .banner-sub{{font-family:'Spectral',serif;font-size:12px;font-style:italic;color:rgba(176,144,96,.8);letter-spacing:.04em}}
 .watermark{{position:absolute;top:26px;right:24px;width:88px;height:88px;color:#8b3a1a;opacity:.1;pointer-events:none;z-index:0}}
 @media(max-width:560px){{.banner-title{{font-size:15px}}.banner-emblem{{width:38px;height:38px}}.banner-sub{{font-size:11px}}}}
-.wrap{{max-width:680px;margin:0 auto;padding:22px 20px 60px}}
+.wrap{{max-width:680px;margin:0 auto;padding:11px 20px 60px}}
 .card{{position:relative;overflow:hidden;background:#f2e8d5;border:1px solid #b09060;border-radius:6px;margin-top:30px;padding:32px;box-shadow:0 4px 20px rgba(44,31,14,.18)}}
 .card>*:not(.watermark){{position:relative;z-index:1}}
 .card>.watermark{{position:absolute;top:26px;right:24px;width:88px;height:88px;z-index:0}}

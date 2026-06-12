@@ -14,7 +14,7 @@
   <meta name="description" content="An interactive map of myths, legends, ghosts, sacred sites and folklore entities across Britain and Ireland — 300+ entries from Black Shuck to the Loch Ness Monster."/>
   <meta name="author" content="EditionTree"/>
   <meta name="robots" content="index, follow"/>
-  <link rel="canonical" href="https://folklorefinder.uk/map.html"/>
+  <link rel="canonical" href="https://folklorefinder.uk/map"/>
 
   <!-- Open Graph (Facebook, Discord, iMessage, WhatsApp) -->
   <meta property="og:type"        content="website"/>
@@ -767,7 +767,7 @@
   <div style="display:flex;gap:6px;align-items:center">
     <a class="bug-report-btn" href="./" style="text-decoration:none">About</a>
     <a class="bug-report-btn" href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener" style="text-decoration:none">☕ Ko-fi</a>
-    <a class="bug-report-btn" href="privacy.html" style="text-decoration:none">Privacy</a>
+    <a class="bug-report-btn" href="privacy" style="text-decoration:none">Privacy</a>
     <button class="bug-report-btn" onclick="openBugReport()">⚑ Report a bug</button>
   </div>
 </footer>
@@ -788,7 +788,7 @@
       <div id="bugStatus" class="bug-status" style="display:none"></div>
     </div>
     <div class="bug-modal-footer">
-      <span class="bug-note">Your browser and device info are included automatically. See our <a href="privacy.html" target="_blank" rel="noopener noreferrer" style="color:var(--accent)">Privacy Notice</a>.</span>
+      <span class="bug-note">Your browser and device info are included automatically. See our <a href="privacy" target="_blank" rel="noopener noreferrer" style="color:var(--accent)">Privacy Notice</a>.</span>
       <button class="bug-submit-btn" onclick="submitBugReport()">Send Report</button>
     </div>
   </div>
@@ -817,7 +817,7 @@
       <div id="submitStatus" class="bug-status" style="display:none"></div>
     </div>
     <div class="bug-modal-footer">
-      <span class="bug-note">Submissions are researched and verified before publication. See our <a href="privacy.html" target="_blank" rel="noopener noreferrer" style="color:var(--accent)">Privacy Notice</a>.</span>
+      <span class="bug-note">Submissions are researched and verified before publication. See our <a href="privacy" target="_blank" rel="noopener noreferrer" style="color:var(--accent)">Privacy Notice</a>.</span>
       <button class="bug-submit-btn" onclick="submitLegend()">Submit</button>
     </div>
   </div>
@@ -991,7 +991,7 @@ function buildPopup(leg) {
     <p class="popup-summary">${escapeHtml(leg.summary)}</p>
     <div class="popup-footer">
       <a class="popup-source" href="${escapeHtml(safeSourceUrl(leg.source))}" target="_blank" rel="noopener noreferrer">Read More</a>
-      <a class="popup-fullpage" href="legends/${legendSlug(leg.name)}.html">Full Page</a>
+      <a class="popup-fullpage" href="legends/${legendSlug(leg.name)}">Full Page</a>
       <button class="popup-copylink" data-legend="${encoded}">Copy</button>
     </div>
   </div>`;

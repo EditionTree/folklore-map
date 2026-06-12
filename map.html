@@ -330,6 +330,9 @@
     .filter-btn.active .count-badge { background: rgba(255,255,255,0.2); color: var(--parchment); }
     .filter-random { border-color: var(--accent); color: var(--accent); font-weight: 600; }
     .filter-random:hover { background: var(--accent); color: var(--parchment); }
+    .filter-place { border-color: var(--accent-warm); color: var(--accent); font-weight: 600; }
+    .filter-place.active { background: var(--accent); border-color: var(--accent); }
+    .filter-place-clear { font-size: 16px; line-height: 1; margin-left: 2px; }
 
     /* ── MAP CONTAINER ── */
     #map {
@@ -693,6 +696,7 @@
       .filter-bar { flex-wrap: nowrap; padding: 6px 12px; }
       .btn-label { display: none; }
       .filter-btn[data-cat="all"] .btn-label { display: inline; }
+      .filter-place .btn-label { display: inline; }
       .filter-btn { padding: 3px 8px; }
       /* Sidebar: overlay from content-area top (which is below header+filterbar) */
       .sidebar { position: absolute; top: 0; bottom: 0; left: 0; z-index: 850; box-shadow: 4px 0 20px rgba(0,0,0,0.3); }
@@ -839,6 +843,14 @@ let nightMode = false;
 let markers = [];
 let activeFilters = new Set();
 let bookmarksOnly = false;
+let activeRegion = null;
+const REGION_META = {
+  england: { label: 'England' },
+  scotland: { label: 'Scotland' },
+  wales: { label: 'Wales' },
+  ireland: { label: 'Ireland' },
+  'northern-ireland': { label: 'Northern Ireland' }
+};
 const BOOKMARKS_STORAGE_KEY = 'folkloreMapBookmarks';
 let bookmarks = loadBookmarks();
 const isMobile = () => window.innerWidth <= 640;
@@ -1070,6 +1082,16 @@ function buildFilters() {
   const allBtn = makeFilterBtn('all', 'All', null);
   bar.appendChild(allBtn);
 
+  if (activeRegion) {
+    const placeBtn = document.createElement('button');
+    placeBtn.className = 'filter-btn filter-place active';
+    placeBtn.dataset.region = activeRegion;
+    placeBtn.setAttribute('aria-label', 'Remove ' + REGION_META[activeRegion].label + ' filter');
+    placeBtn.innerHTML = '<span class="btn-label">' + REGION_META[activeRegion].label + '</span><span class="filter-place-clear" aria-hidden="true">&times;</span>';
+    placeBtn.onclick = () => filterMarkers('all');
+    bar.appendChild(placeBtn);
+  }
+
   bar.appendChild(makeFilterBtn('bookmarks', 'Saved', null, bookmarks.size));
 
   const randomBtn = document.createElement('button');
@@ -1098,7 +1120,7 @@ function makeFilterBtn(cat, label, colour, count) {
   const cntHtml = count !== undefined ? '<span class="count-badge">' + count + '</span>' : '';
   btn.innerHTML  = iconHtml + '<span class="btn-label">' + label + '</span>' + (cntHtml ? ' ' + cntHtml : '');
   btn.classList.toggle('active',
-    cat === 'all' ? !bookmarksOnly && activeFilters.size === 0 :
+    cat === 'all' ? !activeRegion && !bookmarksOnly && activeFilters.size === 0 :
     cat === 'bookmarks' ? bookmarksOnly :
     activeFilters.has(cat)
   );
@@ -1111,6 +1133,9 @@ function filterMarkers(cat) {
   if (cat === 'all') {
     activeFilters.clear();
     bookmarksOnly = false;
+    activeRegion = null;
+    history.replaceState(null, '', location.pathname);
+    buildFilters();
   } else if (cat === 'bookmarks') {
     bookmarksOnly = !bookmarksOnly;
   } else if (cat) {
@@ -1118,8 +1143,12 @@ function filterMarkers(cat) {
     else activeFilters.add(cat);
   }
   document.querySelectorAll('.filter-btn').forEach(b => {
+    if (b.dataset.region) {
+      b.classList.toggle('active', b.dataset.region === activeRegion);
+      return;
+    }
     b.classList.toggle('active',
-      b.dataset.cat === 'all' ? !bookmarksOnly && activeFilters.size === 0 :
+      b.dataset.cat === 'all' ? !activeRegion && !bookmarksOnly && activeFilters.size === 0 :
       b.dataset.cat === 'bookmarks' ? bookmarksOnly :
       activeFilters.has(b.dataset.cat)
     );
@@ -1128,11 +1157,25 @@ function filterMarkers(cat) {
   const visible = markers.filter(m => {
     const matchesCategory = activeFilters.size === 0 || activeFilters.has(m._legendData.category);
     const matchesBookmark = !bookmarksOnly || isBookmarked(m._legendData.name);
-    return matchesCategory && matchesBookmark;
+    const matchesPlace = !activeRegion || (m._legendData.tags || []).includes(activeRegion);
+    return matchesCategory && matchesBookmark && matchesPlace;
   });
   clusterGroup.addLayers(visible);
   updateCount(visible.length);
   buildSidebarList(visible.map(m => m._legendData));
+  return visible;
+}
+
+function applyRegionFilter(region, fitMap) {
+  if (!REGION_META[region]) return;
+  activeRegion = region;
+  buildFilters();
+  const visible = filterMarkers();
+  history.replaceState(null, '', '?region=' + encodeURIComponent(region));
+  if (fitMap && visible.length) {
+    const bounds = L.latLngBounds(visible.map(marker => marker.getLatLng()));
+    map.fitBounds(bounds, { padding: [36, 36], maxZoom: 7, animate: false });
+  }
 }
 
 function buildLegend() {
@@ -1220,7 +1263,9 @@ function focusLegend(name) {
   document.getElementById('searchInput').value = '';
   const leg = LEGENDS.find(l => l.name === name);
   if (!leg) return;
-  if ((activeFilters.size && !activeFilters.has(leg.category)) || (bookmarksOnly && !isBookmarked(name))) {
+  if ((activeFilters.size && !activeFilters.has(leg.category)) ||
+      (bookmarksOnly && !isBookmarked(name)) ||
+      (activeRegion && !(leg.tags || []).includes(activeRegion))) {
     filterMarkers('all');
   }
   const marker = markers.find(m => m._legendData.name === name);
@@ -1256,10 +1301,11 @@ function buildSidebarList(legends) {
   const sub  = document.getElementById('sidebarSubtitle');
   const sorted = [...legends].sort((a, b) => a.name.localeCompare(b.name));
   const filterLabels = [...activeFilters].map(cat => CATEGORIES[cat]?.label).filter(Boolean);
+  const placeLabel = activeRegion ? REGION_META[activeRegion].label : '';
   const suffix = bookmarksOnly
     ? (filterLabels.length ? ' saved ' + filterLabels.join(' + ') : ' saved entries')
     : (filterLabels.length ? ' ' + filterLabels.join(' + ') : ' entries');
-  sub.textContent = sorted.length + suffix;
+  sub.textContent = sorted.length + suffix + (placeLabel ? ' in ' + placeLabel : '');
   list.replaceChildren();
   sorted.forEach(leg => {
     const cat = CATEGORIES[leg.category] || CATEGORIES.beast;
@@ -1307,24 +1353,32 @@ const SUPABASE_URL      = 'https://canjzkpvjwvkbjcduaaj.supabase.co';
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhbmp6a3B2and2a2JqY2R1YWFqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODAyMDkxODIsImV4cCI6MjA5NTc4NTE4Mn0.7RJu-aV_WYHgbvV732FMoCPNH_sXeLSFg2CQTaYi4kI';
 
 function onDataLoaded(legends) {
-  LEGENDS = legends.filter(leg => !EXCLUDED_LEGEND_NAMES.has(leg.name));
+  const params = new URLSearchParams(location.search);
+  const requestedRegion = params.get('region');
+  activeRegion = REGION_META[requestedRegion] ? requestedRegion : null;
+  LEGENDS = legends
+    .filter(leg => !EXCLUDED_LEGEND_NAMES.has(leg.name))
+    .map(leg => ({ ...leg, tags: Array.isArray(leg.tags) ? leg.tags : [] }));
   const availableNames = new Set(LEGENDS.map(leg => leg.name));
   bookmarks = new Set([...bookmarks].filter(name => availableNames.has(name)));
   saveBookmarks();
   loadMarkers(LEGENDS);
   buildFilters();
   buildLegend();
-  buildSidebarList(LEGENDS);
-  updateCount(LEGENDS.length);
+  if (activeRegion) applyRegionFilter(activeRegion, true);
+  else {
+    buildSidebarList(LEGENDS);
+    updateCount(LEGENDS.length);
+  }
   markers.forEach(m => m.on('popupopen', () => {
     highlightSidebarItem(m._legendData.name);
     history.replaceState(null, '', '?legend=' + encodeURIComponent(m._legendData.name));
   }));
   clusterGroup.on('popupclose', () => {
-    history.replaceState(null, '', location.pathname);
+    const nextUrl = activeRegion ? '?region=' + encodeURIComponent(activeRegion) : location.pathname;
+    history.replaceState(null, '', nextUrl);
   });
 
-  const params = new URLSearchParams(location.search);
   const deepLink = params.get('legend');
   if (deepLink) setTimeout(() => focusLegend(deepLink), 100);
   if (params.get('submit') === '1') setTimeout(() => openSubmitLegend(), 300);
@@ -1350,8 +1404,8 @@ function loadLocalLegends() {
 if (SUPABASE_URL && SUPABASE_ANON_KEY) {
   // ── Fetch from Supabase ──────────────────────────────────────────────
   // Selects only the fields the map needs, ordered by name, no row limit.
-  // Excludes detail/tags/date_added to keep the initial download small.
-  fetch(`${SUPABASE_URL}/rest/v1/legends?select=name,lat,lng,category,region,summary,source&order=name.asc&limit=10000`, {
+  // Excludes long-form detail/date fields; tags power the place filter.
+  fetch(`${SUPABASE_URL}/rest/v1/legends?select=name,lat,lng,category,region,summary,source,tags&order=name.asc&limit=10000`, {
     headers: {
       'apikey':        SUPABASE_ANON_KEY,
       'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,

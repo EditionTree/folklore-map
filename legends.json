@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-12T14:44:02.578545Z",
-  "total": 539,
+  "generated": "2026-06-12T17:38:05.043703Z",
+  "total": 553,
   "categories": {
     "beast": "Beasts",
     "ghost": "Ghosts",
@@ -1565,12 +1565,30 @@
       ]
     },
     {
+      "name": "Canthrig Bwt",
+      "lat": 53.106,
+      "lng": -4.03,
+      "category": "giant",
+      "region": "Llanberis Pass, Gwynedd, Wales",
+      "summary": "A child-eating giantess-witch lurked beneath a stone bridge in the Llanberis Pass, devouring local children until villagers cornered and beheaded her with a sickle.",
+      "source": "https://visitnorthwales.co.uk/the-cannibal-witch-of-llanberis/",
+      "date_added": "2026-06-12",
+      "tags": [
+        "bridge",
+        "abduction",
+        "celtic",
+        "wales",
+        "gwynedd"
+      ],
+      "detail": "In the folklore of the Llanberis Pass, Canthrig Bwt was a giantess who was also a witch — a figure feared throughout the district around Nant Peris for her taste for children. Tradition places her lair beneath a great stone close to Pont-y-Cromlech, the old bridge partway along the pass, where she was said to lie in wait for unwary youngsters.\n\nAccording to the story, Canthrig had sold her soul to the devil and developed a particular appetite for the brains of children, snatching victims from the surrounding farms until a number had disappeared. Eventually a young man came forward to confront her, arming himself with an iron sword and securing the blessing of both a Christian monk and a 'white' (benevolent) witch before going after her.\n\nThe confrontation ended with Canthrig seized by the arm and beheaded with a sickle; she is said to have been buried afterwards near a place called Tir Coch, not far from Llanberis. The tale, sometimes dated by storytellers to the fourth century, remains one of the best-known pieces of 'cannibal witch' folklore in Gwynedd, and Pont-y-Cromlech is still pointed out to walkers in the pass as her former haunt."
+    },
+    {
       "name": "Cantre'r Gwaelod",
       "lat": 52.488,
       "lng": -4.052,
       "category": "location",
       "region": "Cardigan Bay, Wales",
-      "summary": "Cantre'r Gwaelod, also known as Cantref Gwaelod or Cantref y Gwaelod, is a legendary ancient sunken kingdom said to have occupied a tract of fertile land lying between Ramsey Island and Bardsey Island in what is now Cardigan Bay to the west of Wales. It has been described as a \"Welsh Atlantis\" and has featured in folklore, literature, and song.",
+      "summary": "Wales's 'Atlantis' — a fertile kingdom in what is now Cardigan Bay, drowned overnight when its drunken watchman forgot to shut the sea-gates. Locals say its church bells still toll beneath the waves.",
       "source": "https://en.wikipedia.org/wiki/Cantre%27r_Gwaelod",
       "date_added": "2026-06-03",
       "tags": [
@@ -1579,7 +1597,8 @@
         "drowning",
         "fertility",
         "wales"
-      ]
+      ],
+      "detail": "Long before the waters of Cardigan Bay reached their present shoreline, Welsh tradition holds that a broad, fertile realm called Cantre'r Gwaelod — 'the Lowland Hundred' — stretched out between what are now Ramsey Island and Bardsey Island. Ruled by the prince Gwyddno Garanhir, the land depended for its survival on a system of embankments and sluice gates that held back the sea, much as the polders of the Netherlands do today.\n\nResponsibility for those gates fell to Seithenyn, a nobleman remembered in the stories as a heavy drinker. During a great feast at the royal court, Seithenyn drank himself into a stupor and forgot to close the sluices on a night of storm and high tide; the sea poured through the open gates and swallowed the entire kingdom before morning, drowning its fields, halls and churches beneath the waves. The earliest surviving version of the story, the medieval Welsh poem 'Boddi Maes Gwyddno' ('The Drowning of the Land of Gwyddno') in the Black Book of Carmarthen, actually places the blame on a well-maiden named Mererid who failed to keep a sacred spring covered — Seithenyn's drunken negligence became the dominant version only in later retellings.\n\nThe legend lives on most famously in sound rather than sight: tradition says that on calm days, the bells of Cantre'r Gwaelod's submerged churches can still be heard tolling from beneath Cardigan Bay, a story that inspired the well-known Welsh song 'Clychau Aberdyfi' ('The Bells of Aberdovey'). At low tide, several long gravel ridges called sarnau stretch out from the Welsh coast into the bay — natural formations that generations of storytellers took as the remains of Cantre'r Gwaelod's roads and walls, giving Wales's 'Atlantis' a permanent, if illusory, foothold in the landscape."
     },
     {
       "name": "Caoranach",
@@ -2150,14 +2169,15 @@
       "lng": -7.461,
       "category": "deity",
       "region": "Magh Slécht (Killycluggin), County Cavan, Ireland",
-      "summary": "Crom Cruach was a feared idol of pre-Christian Irish tradition, said to stand at Magh Slécht, the Plain of Prostrations, encircled by twelve lesser stones. Medieval sources tell how St Patrick destroyed the idol. The broken and decorated Killycluggin Stone was found near a stone circle in County Cavan and is often associated with the tradition.",
+      "summary": "A gold idol said to demand child sacrifice stood at Cavan's 'Plain of Prostrations', ringed by twelve lesser stones — until, tradition holds, St Patrick smashed it with his crozier.",
       "source": "https://en.wikipedia.org/wiki/Crom_Cruach",
       "date_added": "2026-06-03",
       "tags": [
         "standing-stones",
         "ireland",
         "county-cavan"
-      ]
+      ],
+      "detail": "In the dindsenchas — the medieval Irish lore explaining the names of places — Magh Slécht in County Cavan was remembered as the most feared religious site in pre-Christian Ireland: the 'Plain of Prostrations', where a great idol called Crom Cruach stood at the centre of a ring of twelve lesser stone figures. Crom Cruach is described as covered in gold, and the High Kings of Ireland, led by Tigernmas, are said to have travelled there on the eve of Samhain to bow down before it.\n\nThe tradition that grew up around Crom Cruach is unusually dark even by the standards of Irish myth: the dindsenchas poems claim that in return for milk and grain, the people of Ireland sacrificed a third of their children to the idol, prostrating themselves so violently in worship that — on one fateful Samhain — Tigernmas and three-quarters of his assembled host reportedly died at Magh Slécht in the act of adoration itself. Whether this reflects a real cult, a later Christian exaggeration meant to blacken pre-Christian religion, or some mixture of both, it made Crom Cruach the most notorious pagan idol named in Irish tradition.\n\nAccording to later legend, it was Saint Patrick himself who ended the cult, striking the great idol with his crozier and shattering it, and toppling the twelve stones around it. In 1921, a broken, cone-shaped stone covered in spiralling Iron Age La Tène carvings was unearthed at Killycluggin, close to Magh Slécht, lying near the remains of a stone circle — and has since been widely proposed as the very stone the stories describe, a rare case of an early Irish legend pointing to a real archaeological find."
     },
     {
       "name": "Cu Sith",
@@ -2336,6 +2356,24 @@
         "scotland",
         "argyll"
       ]
+    },
+    {
+      "name": "Denbigh Dragon",
+      "lat": 53.1857,
+      "lng": -3.4188,
+      "category": "dragon",
+      "region": "Denbigh, Denbighshire, Wales",
+      "summary": "A giant knight with eight fingers and two thumbs on each hand slew the dragon nesting in Denbigh Castle's great hall — and the townsfolk's cry of 'Dim bych!' (No dragon!) is said to have given the town its name.",
+      "source": "https://www.mythslegendsodditiesnorth-east-wales.co.uk/denbigh-dragon",
+      "date_added": "2026-06-12",
+      "tags": [
+        "castle",
+        "battle",
+        "guardian",
+        "wales",
+        "denbighshire"
+      ],
+      "detail": "According to the folklore attached to Denbigh Castle, the great hall of the castle was once the lair of a dragon that had taken over the town, terrorising its people. The task of dealing with the beast fell to a knight remembered in some versions as John Salesbury, but in the oldest form of the tale as Sion y Bodiau — 'John of the Thumbs' — a giant of a man said to have eight fingers and two thumbs on each hand.\n\nWhen Sion confronted the dragon as it emerged from the hall, the two fought for hours, sword against claw and scale, with neither giving ground. The turning point came when Sion spotted two bare patches of unscaled skin at the base of the dragon's wings; waiting for the creature to rear up and spread its wings to attack, he drove his broadsword into one of these unprotected spots and killed it.\n\nRiding back into the town with the dragon's severed head held aloft on his sword, Sion was met by townsfolk who had been hiding from the beast. Their relieved cry — 'Dim bych!', Welsh for 'No dragon!' — is said in this telling to be the origin of the town's name, Dinbych (Denbigh), a folk etymology that has helped keep the story, and the dragon, alive in local memory for centuries."
     },
     {
       "name": "Devil's Arrows",
@@ -2645,6 +2683,25 @@
         "gloucestershire"
       ],
       "detail": "A serpent of prodigious size had settled near Deerhurst, close to Tewkesbury, poisoning the air with its breath and slaughtering the livestock of the surrounding parishes. The king issued a proclamation: whoever slew the dragon would receive the royal estate at Walton Hill in the parish. No knight or lord came forward. The task fell to a labourer named John Smith, who had observed the creature's habits. He set out a large trough of milk, waited for the dragon to drink its fill and settle in the sun with its scales spread open to cool itself, then drove a heavy axe through the gap between the scales and severed its head.\n\nThe legend is documented by Sir Robert Atkyns in The Ancient and Present State of Glostershire (1712), where he records not only the story but its physical continuity: the Smith family were still in possession of the Walton Hill estate at the time of writing, and an axe described as the ancestral weapon was in the hands of a Mr Lane, who had married a Smith widow. This is unusual in British dragon tradition — a legend with a documented inheritance chain traceable to within living memory of Atkyns' own informants.\n\nThe Saxon church of St Mary the Virgin at Deerhurst, one of England's finest pre-Conquest buildings, bears carved dragon heads on its exterior stonework. Whether the stone dragons inspired the legend or merely reinforced it, they have bound the church and the tale together in parish memory for centuries. The Deerhurst dragon belongs to a tradition of saint-free dragon-slaying: a pragmatic Englishman solving a local problem with an axe and a trough of milk, his reward a piece of land his family kept for half a millennium."
+    },
+    {
+      "name": "Dragon of Ludham",
+      "lat": 52.7075,
+      "lng": 1.5126,
+      "category": "dragon",
+      "region": "Ludham, Norfolk, England",
+      "summary": "A dragon tunnelled beneath Ludham's churchyard for years, bursting out nightly until one villager sealed its lair — the enraged beast fled in flames to St Benet's Abbey and vanished forever.",
+      "source": "http://theantonineitineraries.blogspot.com/2020/06/the-norfolk-village-of-ludham-was-said.html",
+      "date_added": "2026-06-12",
+      "tags": [
+        "dragon",
+        "serpent",
+        "church",
+        "vanishing",
+        "england",
+        "norfolk"
+      ],
+      "detail": "In the Norfolk Broads village of Ludham, an undated manuscript preserved in the Norfolk Record Office tells of a dragon that made its lair in a maze of tunnels running between the churchyard and the main street. By night the creature burst from its burrow to terrorise the village, and however thoroughly the villagers packed the entrance with rocks and rubble each morning, the dragon tore its way free again by dusk.\n\nThe standoff was broken, the story goes, on an unusually sunny day when the dragon crawled out to bask in the open at the centre of the village. While it lay sprawled and drowsy, one resident rolled a huge boulder into the mouth of its tunnel, sealing the entrance for good. Furious to find its lair blocked, the dragon thrashed its tail and took to the air, flying along the causeway towards the ruined Abbey of St Benet at Holm, where it passed beneath the great gatehouse arch and disappeared into the vaults below, never to be seen again.\n\nWhether the tale has any basis in fact is impossible to say, but it is intriguing that the Norfolk Chronicle of 1782 reported a giant snake, nearly three feet round and over five and a half feet long, killed at Ludham by a local man — a creature whose head, the paper noted, bore two horn-like growths. Real serpent or folk memory of the dragon, the story has kept Ludham's reputation as a dragon-haunted village alive into the present day."
     },
     {
       "name": "Dragon of Mordiford",
@@ -3417,7 +3474,7 @@
       "lng": -6.511,
       "category": "location",
       "region": "Bushmills, County Antrim",
-      "summary": "Forty thousand interlocking basalt columns on the Antrim coast, built by the giant Fionn mac Cumhaill as a road to Scotland so he could fight his rival Benandonner. When Fionn saw his opponent's size, his wife disguised him as a baby — and Benandonner, terrified by the size of the 'infant', fled back to Scotland, tearing up the road behind him.",
+      "summary": "Fionn mac Cumhaill built a stone road to fight the giant Benandonner — then, seeing his rival's size, hid as a baby. Convinced the 'infant's' father must be monstrous, Benandonner fled, ripping up the road behind him.",
       "source": "https://en.wikipedia.org/wiki/Giant%27s_Causeway",
       "date_added": "2026-06-03",
       "tags": [
@@ -3425,7 +3482,8 @@
         "road",
         "northern-ireland",
         "county-antrim"
-      ]
+      ],
+      "detail": "The Giant's Causeway — some 40,000 hexagonal basalt columns stepping out into the sea from the Antrim coast — was explained for centuries not by geology but by the rivalry between two giants. According to the tale, Fionn mac Cumhaill, champion of Ireland, was challenged by the Scottish giant Benandonner to single combat. Fionn built a causeway of stone across the North Channel so his opponent could cross to fight him on Irish soil.\n\nWhen Fionn finally caught sight of Benandonner striding across the new causeway, he realised — too late — that the Scottish giant dwarfed him completely. His wife Oonagh saved him with a trick: she dressed Fionn as a baby and tucked him into an enormous cradle, then served Benandonner a griddle cake with an iron griddle hidden inside. Benandonner bit down and cracked his teeth, while 'the baby' was fed a normal cake and ate it without trouble. Reasoning that if the infant was this size, its father must be a giant beyond anything he could survive, Benandonner fled back across the causeway to Scotland — tearing it up behind him so that Fionn could not follow.\n\nThe story conveniently accounts for the causeway's abrupt, broken-off appearance, and for the matching hexagonal basalt columns of Fingal's Cave on the Scottish island of Staffa, said to be the Scottish end of the same shattered road. Geologists attribute both formations to the same ancient lava flow, cooling and cracking into columns some 60 million years ago — but the tale of Fionn, Oonagh and the terrified Benandonner remains the version visitors hear first at what is now a UNESCO World Heritage Site and Northern Ireland's most-visited natural attraction."
     },
     {
       "name": "Glaistig",
@@ -3741,6 +3799,24 @@
       ]
     },
     {
+      "name": "Gunby Hall Ghost Walk",
+      "lat": 53.165,
+      "lng": 0.145,
+      "category": "ghost",
+      "region": "Gunby, Lincolnshire, England",
+      "summary": "A jealous squire shot his daughter's lover dead and dumped his body in the pond — the murdered postillion still walks 'Ghost Walk' awaiting his love.",
+      "source": "https://www.mysteriousbritain.co.uk/hauntings/gunby-hall/",
+      "date_added": "2026-06-12",
+      "tags": [
+        "spectral",
+        "haunting",
+        "curse",
+        "england",
+        "lincolnshire"
+      ],
+      "detail": "Gunby Hall, a red-brick house of 1700 near Spilsby, carries one of Lincolnshire's grimmer ghost stories. Tradition holds that Sir William Massingberd discovered his daughter was planning to elope with a postillion in his service. On the night the couple intended to flee, Sir William lay in wait, shot the servant dead, and had the body dragged through the grounds and thrown into the pond — some versions of the story add that, in his rage, he shot his own daughter too.\n\nWord of the killing spread despite efforts to keep it quiet, and locals began to whisper that Gunby was cursed: no male heir of the Massingberd line, it was said, would ever again inherit the house in the direct line — a 'curse' that some later genealogists noted did indeed seem to play out in the family's history.\n\nThe path beside the pond where the postillion's body was dumped became known as 'Ghost Walk', and is said to be haunted by his spectre still — pacing the route forever, waiting for a lover who can never return. Now run by the National Trust, Gunby occasionally opens the hall for Halloween events that draw on this and other tales of the house's haunted past."
+    },
+    {
       "name": "Gurt Worm",
       "lat": 51.108,
       "lng": -3.002,
@@ -3928,6 +4004,24 @@
       ]
     },
     {
+      "name": "Hard Apple Blyth, the Smuggler of Paglesham",
+      "lat": 51.601,
+      "lng": 0.728,
+      "category": "pirate",
+      "region": "Paglesham, Essex, England",
+      "summary": "Paglesham's churchwarden, grocer and parish constable William 'Hard Apple' Blyth ran a smuggling operation under the noses of the very authorities he was sworn to serve.",
+      "source": "https://en.wikipedia.org/wiki/Paglesham",
+      "date_added": "2026-06-12",
+      "tags": [
+        "coast",
+        "church",
+        "trickery",
+        "england",
+        "essex"
+      ],
+      "detail": "The twin hamlets of Paglesham, tucked among the creeks of the Essex coast near Rochford, were for generations one of the county's busiest smuggling centres — and their most celebrated smuggler was, by the standards of the trade, a deeply respectable man. William Blyth (1753-1830), known to everyone as 'Hard Apple', was at various times the village's churchwarden, its grocer, a parish councillor, and — improbably — its local constable.\n\nThat last role gave him an unrivalled vantage point from which to run his real business: moving contraband brandy, tobacco and other goods past the very excise men he was nominally employed to assist. Local tradition remembers him less as a criminal than as a folk hero, a cheerfully two-faced figure who embodied the way an entire Essex coastal community quietly lived off the smuggling trade for over a century.\n\nBlyth is buried in the north churchyard of St Peter's Church, Paglesham, alongside his wife and two sons, and his grave remains a minor point of interest for those exploring the village's smuggling past — a past so embedded in local identity that Paglesham's old inns still trade on the same seafaring, smuggling heritage today."
+    },
+    {
       "name": "Hartlepool Monkey",
       "lat": 54.696,
       "lng": -1.181,
@@ -4112,7 +4206,7 @@
       "lng": 0.2651,
       "category": "hero",
       "region": "Cambridgeshire",
-      "summary": "The last great English rebel against the Norman conquest, Hereward held out in the Isle of Ely long after all others had submitted. His raids deep into Norman territory became legendary, and later tales credited him with a charmed sword and supernatural cunning. Whether he died in battle or vanished into the fens, no chronicle agrees on his fate.",
+      "summary": "When the Normans sent a witch to curse the fens from a wooden tower, Hereward burned it down with her inside — and held the Isle of Ely until even legend lost track of how his story ended.",
       "source": "https://en.wikipedia.org/wiki/Hereward_the_Wake",
       "date_added": "2026-06-03",
       "tags": [
@@ -4122,7 +4216,8 @@
         "vanishing",
         "england",
         "cambridgeshire"
-      ]
+      ],
+      "detail": "By 1071, five years after Hastings, Hereward of Bourne was the last English lord still holding out against William the Conqueror, dug into the natural fortress of the Isle of Ely — then a true island, ringed by reed-choked fen and reachable only by boat or causeway. According to the chroniclers' tales, William's engineers built a vast timber causeway nearly a mile long to carry his army across the marsh, only for it to sink under the weight of mailed knights and horses, swallowing men and equipment into the bog. When that failed, the Normans are said to have brought in a witch to curse the English defenders from atop a wooden siege tower — but Hereward slipped past their lines by night, set the tower alight, and burned the curse-worker inside it.\n\nLater medieval romance dressed Hereward in the full trappings of a folk hero: a magic sword nicknamed 'Brainbiter', uncanny luck in combat, and the ability to cut down a dozen attackers single-handed. Some accounts even have him fighting a giant bear in Northumbria and outwitting Norman lords through disguise and trickery long before Ely fell — material that reads more like outlaw legend than history, and helped make him England's first Robin Hood figure.\n\nEly itself eventually fell, betrayed (so the story goes) by the monks of its own abbey, who showed the Normans a secret path through the marshes in exchange for their lands. What became of Hereward afterwards is where the record dissolves into legend entirely: one tradition has William pardoning him and restoring his estates, another has him ambushed and killed by jealous Norman knights, and a third simply lets him vanish back into the fens. That very uncertainty has kept Hereward 'the Wake' — a nickname attached centuries later — alive as East Anglia's great symbol of resistance, still commemorated in Ely's statue, street names, and the long-distance Hereward Way that crosses the fens he once defended."
     },
     {
       "name": "Herne the Hunter",
@@ -5289,6 +5384,23 @@
       ]
     },
     {
+      "name": "Lough Ree Monster",
+      "lat": 53.4936,
+      "lng": -7.8453,
+      "category": "beast",
+      "region": "Lough Ree, Leinster/Connacht border, Ireland",
+      "summary": "Three priests fishing near Glasson in 1960 watched a 20-foot serpentine creature glide across Lough Ree — the latest in centuries of sightings on Ireland's 'monster lake'.",
+      "source": "https://strangeandtwisted.com/blogs/stories/unveiling-the-depths-irelands-enigmatic-lough-ree-monster",
+      "date_added": "2026-06-12",
+      "tags": [
+        "serpent",
+        "lake",
+        "ireland",
+        "county-westmeath"
+      ],
+      "detail": "Lough Ree, the long lake on the River Shannon where counties Longford, Westmeath and Roscommon meet, has its own resident monster — a creature reported, in one form or another, for centuries by people living along its shores. Descriptions vary, but the most consistent picture is of a long, dark, serpent-like animal with a small head, moving slowly through the water with little more than its neck and head breaking the surface.\n\nThe most celebrated sighting came in 1960, when three Catholic priests on a fishing trip near Glasson, close to Athlone, watched what they described as a strange object moving slowly across the calm water about eighty yards away. They reported a serpent-like head tapering to a point, and estimated the creature's length at over twenty feet — an account that, coming from clergymen rather than tourists, gave the story unusual credibility at the time.\n\nSceptics have suggested more mundane explanations, from large eels to floating debris, and one self-styled monster-hunter has claimed the Lough Ree creature is simply an oversized lamprey. But the lake's reputation has endured regardless, and 'the monster of Lough Ree' remains one of the best-known of Ireland's freshwater cryptids."
+    },
+    {
       "name": "Lough na Súil",
       "lat": 54.088,
       "lng": -8.334,
@@ -5362,6 +5474,25 @@
         "arthurian",
         "wales"
       ]
+    },
+    {
+      "name": "MacKinnon's Cave",
+      "lat": 56.428,
+      "lng": -6.17,
+      "category": "giant",
+      "region": "Isle of Mull, Scotland",
+      "summary": "A clan piper led companions into this sea cave to test his skill against its monstrous cave-dwelling ogress — his pipes still seem to echo from the rock when the wind is right.",
+      "source": "http://faeryfolklorist.blogspot.com/2016/09/the-mystery-of-mackinnons-cave.html",
+      "date_added": "2026-06-12",
+      "tags": [
+        "cave",
+        "sea",
+        "island",
+        "haunting",
+        "scotland",
+        "argyll"
+      ],
+      "detail": "On the wild west coast of Mull near Gribun lies a cave so deep that, by tradition, no one has ever reached its end. According to the old story, twelve men of Clan Fingon (MacKinnon) once set out to explore its full length, led by a piper, while a second party walked the cliffs above, following the sound of his pipes to mark how far the cave ran.\n\nDeep in the dark, the explorers came upon a fearsome being — in most versions a monstrous female ogre, in others a fairy woman of the cave — who attacked the party and killed them one by one. Only the piper was spared, on condition that he keep playing for her; his music was said to be so charming that she let him live as long as the tune continued. When his strength finally failed and the music stopped, she killed him too.\n\nAbove ground, the search party heard the piping falter through the rock and rushed to the cave mouth, arriving just as the last note died away. They found the piper's mangled body, with the remains of his companions beyond him in the dark. Locals say that on certain days, when the wind is right, the cave still seems to breathe out the ghost of a tune — the last performance of Mull's most famous piper."
     },
     {
       "name": "Macha",
@@ -5488,6 +5619,24 @@
         "scotland",
         "shetland"
       ]
+    },
+    {
+      "name": "Marshal Brain of Clongowes Wood",
+      "lat": 53.3108,
+      "lng": -6.6833,
+      "category": "ghost",
+      "region": "Clane, County Kildare, Ireland",
+      "summary": "In 1757, the ghost of an Austrian-army officer appeared to two sisters at Clongowes Wood, describing his uniform in perfect detail — to announce, at the very hour, their brother's death in battle at Prague.",
+      "source": "https://turtlebunbury.com/document/wogan-browne-of-clongowes/",
+      "date_added": "2026-06-12",
+      "tags": [
+        "spectral",
+        "death-omen",
+        "forest",
+        "ireland",
+        "county-kildare"
+      ],
+      "detail": "Clongowes Wood, near Clane in County Kildare, was the seat of the Wogan-Browne family before it became a Jesuit school in the nineteenth century, and one of the most discussed ghost stories of eighteenth-century Ireland is set there. In 1757, two sisters living at the house are said to have seen the apparition of an officer in the uniform of the Austrian army, his chest streaming with blood.\n\nAt the time, the sisters' brother was serving abroad as an officer in Austrian service, far from any news the family could quickly receive. They identified the ghostly visitor as their brother, and within days — before any letter could plausibly have reached them — word arrived that he had indeed been killed in action at the Battle of Prague that same year, at almost exactly the time of the vision.\n\nWhat made the case unusual, and kept it circulating in accounts of Irish ghost-lore for generations afterwards, was a further detail: local people with no knowledge of foreign military dress were said to have been able to describe the Austrian officer's uniform precisely as the sisters had seen it. The episode is still cited today as one of Ireland's best-documented 'crisis apparitions' — a vision of a death occurring at the moment it happened, far away."
     },
     {
       "name": "Martin Mere",
@@ -6193,6 +6342,25 @@
         "england",
         "devon"
       ]
+    },
+    {
+      "name": "Old Man of Storr",
+      "lat": 57.5073,
+      "lng": -6.1745,
+      "category": "giant",
+      "region": "Isle of Skye, Scotland",
+      "summary": "A 55-metre pinnacle on the Trotternish Ridge is said to be the petrified thumb of a buried giant — left jutting from the earth when the rest of him was laid to rest.",
+      "source": "https://www.bitesizedbritain.co.uk/the-old-man-of-storr---the-sleeping-giant-of-skye1111/",
+      "date_added": "2026-06-12",
+      "tags": [
+        "hill",
+        "hill-figure",
+        "transformation",
+        "celtic",
+        "scotland",
+        "highland"
+      ],
+      "detail": "On the Trotternish Ridge above Loch Leathan stands a 55-metre pinnacle of black basalt, the Old Man of Storr, said in Skye tradition to be the petrified thumb of a giant. According to the story, when the giant died and was buried in the hillside, his thumb was left protruding above the ground — and there it has stood ever since, weathering into the jagged spire seen today.\n\nA second version of the tale gives the giant a more dramatic end: he was said to have been chasing a fairy across the ridge when he made the fatal mistake of looking back over his shoulder, and was turned to stone on the spot, along with his pursued quarry nearby.\n\nGeologists explain the Storr and its companions as the result of a vast landslip some 60 million years ago, when a slice of the Trotternish escarpment slid away from the main ridge, leaving isolated towers of rock standing free — but for generations of islanders, the simpler and more memorable explanation was a buried giant, his thumb still reaching for the sky."
     },
     {
       "name": "Orkneyinga Saga",
@@ -7794,6 +7962,25 @@
       ]
     },
     {
+      "name": "The Curse of the Campbells of Jura",
+      "lat": 55.793,
+      "lng": -5.95,
+      "category": "witch",
+      "region": "Isle of Jura, Scotland",
+      "summary": "A witch evicted by the grasping Campbells of Jura cursed their last laird to be one-eyed and leave the island by horse-cart — fulfilled to the letter in 1938.",
+      "source": "https://isleofjura.scot/jura-island-of-deer-or-the-cursed-isle/",
+      "date_added": "2026-06-12",
+      "tags": [
+        "curse",
+        "prophecy",
+        "island",
+        "celtic",
+        "scotland",
+        "argyll"
+      ],
+      "detail": "When Clan Campbell took control of Jura in 1661, their factor Duncan Campbell began steadily raising rents on the island's crofters, driving many families to emigrate to America rather than face ruin. According to island tradition, one of the women evicted in this process — remembered simply as an old witch — turned on the Campbells with a curse before she left: that the last of the Campbell line on Jura would be one-eyed, and would leave the island for good carried to the shore in a cart drawn by a white horse.\n\nThe prophecy passed into local legend and was retold for generations as the Campbells' fortunes on the island slowly declined through the eighteenth and nineteenth centuries, their estate gradually sold off piece by piece.\n\nRemarkably, islanders point to 1938 as the moment the curse came true: Charles Campbell, who had lost an eye fighting in the First World War, sold the last of the family's Jura estate — and, as the old story demanded, his belongings were carried down to the boat in a cart drawn by a white horse. The tale is often told alongside Jura's other great legend, the roaring tidal whirlpool of Corryvreckan off its northern tip, as part of the island's reputation for uncanny goings-on."
+    },
+    {
       "name": "The Dagda",
       "lat": 53.694,
       "lng": -6.776,
@@ -7943,6 +8130,25 @@
         "england",
         "cornwall"
       ]
+    },
+    {
+      "name": "The Pump Hill Smuggler",
+      "lat": 52.82,
+      "lng": 1.536,
+      "category": "ghost",
+      "region": "Happisburgh, Norfolk, England",
+      "summary": "A headless, legless smuggler — his head dangling between his shoulders — still drags a sack of plunder through Happisburgh, groaning from an old well before every storm.",
+      "source": "https://www.spookyisles.com/happisburgh-lighthouse-ghost/",
+      "date_added": "2026-06-12",
+      "tags": [
+        "headless",
+        "spectral",
+        "well",
+        "haunting",
+        "england",
+        "norfolk"
+      ],
+      "detail": "One of the grimmest ghost stories on the Norfolk coast belongs to the village of Happisburgh, where eighteenth-century farmers returning home late at night told of a terrible figure coming up the main street from the direction of Cart Gap: a headless, legless man in a sailor's dark coat and leather belt, a pistol thrust through it, his pigtailed hair so long it trailed on the ground from a head that hung down between his shoulder blades.\n\nThe story behind the apparition traced back to a violent falling-out among Dutch smugglers on the beach at Cart Gap, which ended in gunfire and at least one death. Two men were said to have waylaid the wandering ghost, following it to a well at the top of Pump Hill, where they dropped a bundle — and then the ghost itself — down the shaft.\n\nAfter that, the well became the focus of the haunting: whenever a storm was brewing, low groans were said to rise from it, as if the dead smuggler were still trying to warn the village. The well and its pump have long since gone, but for years afterwards people refused to have the pump removed, fearing that without it the groaning — and whatever it warned of — would return."
     },
     {
       "name": "The Ratman of Southend",
@@ -8589,6 +8795,25 @@
       ]
     },
     {
+      "name": "White Lady of Tattershall Castle",
+      "lat": 53.0964,
+      "lng": -0.0066,
+      "category": "ghost",
+      "region": "Tattershall, Lincolnshire, England",
+      "summary": "A glimmering woman in a medieval headdress has paced the battlements of Tattershall Castle for centuries, forever waiting for a lost love who never returns.",
+      "source": "https://great-castles.com/tattershallghost.html",
+      "date_added": "2026-06-12",
+      "tags": [
+        "castle",
+        "spectral",
+        "haunting",
+        "love",
+        "england",
+        "lincolnshire"
+      ],
+      "detail": "Tattershall Castle, the great brick tower-house built for Ralph Cromwell in the fifteenth century, is said to be haunted by a 'White Lady' — a glimmering figure in a flowing white gown and a French-style medieval headdress, seen wandering the battlements and the castle's private chamber. No record survives of who she might have been; tradition holds only that she walks in search of a lost love who never comes.\n\nVisitors and staff over the years have reported more than just the apparition itself: unexplained taps and bangs echo through the floors, disembodied voices seem to murmur in empty rooms, and leaflets in a turret room have reportedly been found scattered about after the castle was locked for the night.\n\nNow in the care of the National Trust, Tattershall Castle leans into its reputation each Halloween with ghost-story evenings — though the White Lady herself is said to need no special occasion, having reputedly paced the ramparts on quiet nights for centuries."
+    },
+    {
       "name": "Whiteleaf Cross",
       "lat": 51.7287,
       "lng": -0.8115,
@@ -8744,6 +8969,25 @@
       ]
     },
     {
+      "name": "Windhouse",
+      "lat": 60.5987,
+      "lng": -1.0764,
+      "category": "ghost",
+      "region": "Yell, Shetland, Scotland",
+      "summary": "Reputedly Shetland's most haunted house — a 'Lady in Silk' glides the stairs, a phantom dog roams the halls, and a shipwrecked sailor's troll-fight became local legend.",
+      "source": "https://www.northlinkferries.co.uk/shetland-blog/the-haunting-history-of-windhouse/",
+      "date_added": "2026-06-12",
+      "tags": [
+        "dog",
+        "spectral",
+        "haunting",
+        "norse",
+        "scotland",
+        "shetland"
+      ],
+      "detail": "Standing isolated above Whale Firth on the island of Yell, the roofless shell of Windhouse has long been called the most haunted building in Shetland. The house, built on the site of an older dwelling, is said to be troubled by several spirits: a man in a top hat, a phantom dog, a servant girl, and most famously the 'Lady in Silk' — a woman believed to have been a housekeeper or mistress of the house who fell down the stairs and broke her neck. She is said to walk in a circle at the top of the staircase before vanishing with a sigh.\n\nThe haunting gained an eerie corroboration during nineteenth-century renovations, when workers digging beneath the main staircase uncovered a skeleton — by some accounts that of a large man — lending grim substance to the old stories of violent deaths at the house.\n\nA separate strand of local folklore tells of a shipwrecked sailor who came ashore one Christmas Eve and took shelter at Windhouse, ignoring the family's warnings as they fled the house for the night. Left alone, he was confronted by a monstrous troll, which he fought and killed with an axe before dawn — a tale that fused the house's reputation for hauntings with older Shetland troll-lore."
+    },
+    {
       "name": "Wisht Hounds",
       "lat": 50.574,
       "lng": -3.914,
@@ -8776,6 +9020,23 @@
         "haunting"
       ],
       "detail": "The Witch of Berkeley is a medieval English legend recorded by the monk William of Malmesbury in his Gesta Regum Anglorum (c. 1125), making it one of the earliest named witch legends in English writing. The tale is set around 1065 and concerns a woman of Berkeley in Gloucestershire, described as 'addicted to witchcraft, excessively gluttonous, perfectly lascivious,' who had made a pact with the Devil in exchange for his protection and assistance.\n\nWarned by her pet jackdaw—a possible early instance of a familiar—that her death was imminent, the woman confessed her sins to her surviving children, a monk and a nun, and begged them to take elaborate precautions. Her body was to be sewn inside a stag's hide, laid in a stone coffin fastened with three iron chains, and guarded by monks and nuns chanting psalms for three successive nights; only then was she to be buried. The plan failed. On the first night demons tore asunder the outer chain; on the second, the middle chain; on the third, the Devil appeared on 'a black horse of immense size with iron hooks projecting over the whole of its back,' snapped the last chain, dragged the body from the coffin, and galloped off into the night with the woman screaming on his back; her cries could be heard for four miles.\n\nMalmesbury presented the tale as an allegory of the fate of sinners, but scholars note it draws on a genuine local tradition. The jackdaw familiar and the motif of the iron hooks (linking the legend to the Wild Hunt) have roots in Germanic and Christian tradition. Katharine Briggs discussed it in A Dictionary of Fairies; it is examined in detail at the William of Malmesbury and the Witch of Berkeley blog (2018) by Stephen R. Gordon. The village of Berkeley is the same settlement as Berkeley Castle, where Edward II was murdered in 1327."
+    },
+    {
+      "name": "Witch of Slieu Whallian",
+      "lat": 54.1912,
+      "lng": -4.6454,
+      "category": "witch",
+      "region": "St John's, Isle of Man",
+      "summary": "Suspected witches were sealed into spiked barrels and rolled down Slieau Whallian — the bare scar of 'the Witch's Way' still marks where one woman's screams are said to echo every year.",
+      "source": "https://asmanxasthehills.com/the-witch-of-slieu-whallian/",
+      "date_added": "2026-06-12",
+      "tags": [
+        "hill",
+        "haunting",
+        "death-omen",
+        "isle-of-man"
+      ],
+      "detail": "Slieau Whallian, a hill above St John's in the Isle of Man, was traditionally used as the site of a brutal ordeal for people accused of witchcraft. According to the story collected by folklorist Sophia Morrison in her Manx Fairy Tales (1911), a suspected witch would be sealed inside a barrel lined on the inside with sharp iron spikes, and the barrel would then be sent rolling from the summit to the bottom of the hill.\n\nIf the accused survived the descent — torn by the spikes and battered by the fall — they were put to death anyway, the ordeal serving only to 'confirm' their guilt rather than offer any real chance of escape. The same source records that this method was used on 'many other persons of both sexes' at this spot, not only women.\n\nFor generations afterwards, islanders pointed to a bare scar running down the steep slope of Slieau Whallian where, it was said, grass would never grow again — known locally as 'the Witch's Way'. Local tradition added a final, eerie detail: that on the anniversary of her death, the screams of one executed witch could still be heard carried on the wind down the hillside."
     },
     {
       "name": "Witch's Stone of Westleton",
@@ -9139,7 +9400,7 @@
       "lng": -7.748,
       "category": "fairy",
       "region": "Brí Léith (Ardagh Hill), County Longford, Ireland",
-      "summary": "Étaín is the heroine of The Wooing of Étaín, a tale of the Irish Mythological Cycle. Transformed by a jealous sorceress into a pool, a worm, and then a scarlet fly, she is reborn as a mortal queen with no memory of her past. The fairy king Midir, whose otherworldly mound Brí Léith is associated with Ardagh Hill, pursues her across two lifetimes.",
+      "summary": "Turned into a fly and scattered across Ireland for a thousand years by a jealous rival, Étaín was reborn a mortal queen — until her otherworldly husband won her back with a kiss and flew from Tara as a swan.",
       "source": "https://en.wikipedia.org/wiki/%C3%89ta%C3%ADn",
       "date_added": "2026-06-03",
       "tags": [
@@ -9148,7 +9409,8 @@
         "celtic",
         "ireland",
         "county-longford"
-      ]
+      ],
+      "detail": "Étaín, daughter of the King of Ulster, was renowned in early Irish tradition as the most beautiful woman ever to walk in Ireland — beautiful enough that when Midir, lord of the otherworldly mound of Brí Léith (now Ardagh Hill, County Longford), was struck blind in an accident, the price he demanded for his healing was her hand in marriage. His foster-son Aengus won her for him by performing a year of impossible labours — clearing forests, diverting rivers, and raising a causeway across a bog — tasks so vast they were said to reshape the land itself.\n\nMidir's first wife Fúamnach, consumed by jealousy, turned her magic on the new bride. She transformed Étaín first into a pool of water, then into a brilliant purple fly, and finally summoned a great wind that swept the fly across Ireland for seven years, denying her any rest. When the wind at last dropped her into a golden cup of wine, the noblewoman drinking from it swallowed Étaín without ever knowing — and over a thousand years after her first birth, Étaín was reborn as a mortal child, growing up to become the wife of the High King Eochaid Airem at Tara.\n\nMidir tracked her down at last, but rather than simply reclaiming her, he challenged Eochaid to a series of games of fidchell, each time letting the king win so that Eochaid would owe him an ever-larger favour — labours that, by tradition, produced the great Corlea Trackway across the Longford bogs. Only when Midir finally won a game did he name his true prize: a single kiss and embrace from Étaín. The moment he took it, the otherworldly lord and his reclaimed bride transformed into a pair of swans and flew out through the skylight of Tara, leaving Eochaid to tear apart the mounds of Ireland — including Brí Léith itself — in a furious, futile search for them."
     }
   ]
 }

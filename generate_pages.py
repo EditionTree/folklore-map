@@ -639,7 +639,7 @@ h1{{font-family:'Cinzel',serif;font-size:26px;margin-bottom:18px}}
 
     # sitemap.xml
     today = datetime.date.today().isoformat()
-    urls = [f"{BASE}/", f"{BASE}/{OUT_DIR}/", f"{BASE}/about", f"{BASE}/updates", f"{BASE}/privacy"]
+    urls = [f"{BASE}/", f"{BASE}/{OUT_DIR}/", f"{BASE}/about", f"{BASE}/updates", f"{BASE}/privacy", f"{BASE}/feed.xml"]
     urls += browse_urls
     urls += [f"{BASE}/{OUT_DIR}/{slugmap[l['name']]}" for l in legends]
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
@@ -651,7 +651,44 @@ h1{{font-family:'Cinzel',serif;font-size:26px;margin-bottom:18px}}
     with io.open("sitemap.xml", "w", encoding="utf-8") as f:
         f.write("\n".join(sm) + "\n")
 
-    print(f"Generated {written} legend pages + index + sitemap ({len(urls)} URLs)")
+    # feed.xml — RSS feed of the most recently added legends
+    recent = sorted(
+        (l for l in legends if l.get("date_added")),
+        key=lambda l: l["date_added"], reverse=True,
+    )[:30]
+    now_rfc822 = datetime.datetime.now(datetime.timezone.utc).strftime("%a, %d %b %Y %H:%M:%S GMT")
+    items = []
+    for l in recent:
+        url = f"{BASE}/{OUT_DIR}/{slugmap[l['name']]}"
+        cat = cats.get(l.get("category", ""), l.get("category", ""))
+        pub = datetime.datetime.strptime(l["date_added"], "%Y-%m-%d").replace(
+            tzinfo=datetime.timezone.utc).strftime("%a, %d %b %Y 12:00:00 GMT")
+        items.append(
+            "  <item>\n"
+            f"    <title>{esc(l['name'])}</title>\n"
+            f"    <link>{url}</link>\n"
+            f"    <guid isPermaLink=\"true\">{url}</guid>\n"
+            f"    <pubDate>{pub}</pubDate>\n"
+            f"    <category>{esc(cat)}</category>\n"
+            f"    <description>{esc(short_desc(l.get('summary', '')))}</description>\n"
+            "  </item>"
+        )
+    rss = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<rss version="2.0"><channel>\n'
+        '  <title>Folklore Map of Britain &amp; Ireland — New Legends</title>\n'
+        f'  <link>{BASE}/</link>\n'
+        '  <description>Recently added myths, legends, ghosts and folklore from across Britain and Ireland.</description>\n'
+        '  <language>en-gb</language>\n'
+        f'  <lastBuildDate>{now_rfc822}</lastBuildDate>\n'
+        f'  <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="{BASE}/feed.xml" rel="self" type="application/rss+xml"/>\n'
+        + "\n".join(items) + "\n"
+        '</channel></rss>\n'
+    )
+    with io.open("feed.xml", "w", encoding="utf-8") as f:
+        f.write(rss)
+
+    print(f"Generated {written} legend pages + index + sitemap ({len(urls)} URLs) + feed.xml ({len(recent)} items)")
 
 
 if __name__ == "__main__":

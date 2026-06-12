@@ -98,6 +98,11 @@
     }
     body.night .subtitle { color: rgba(100,140,200,0.75); }
     body.night .filter-bar { background: #141e30; border-bottom-color: #2e4870; }
+    body.night .filter-bar {
+      scrollbar-color: #58739c #141e30;
+    }
+    body.night .filter-bar::-webkit-scrollbar-track { background: #141e30; border-top-color: #2e4870; }
+    body.night .filter-bar::-webkit-scrollbar-thumb { background: #58739c; border-color: #141e30; }
     /* Elements that use --parchment as text colour (light text on dark bg) — keep light in night mode */
     body.night h1 { color: #c8d8f0; }
     body.night .sidebar-toggle-btn { color: #c8d8f0; border-color: rgba(70,100,180,0.4); }
@@ -289,9 +294,20 @@
       z-index: 900;
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
-      scrollbar-width: none;
+      scrollbar-width: thin;
+      scrollbar-color: var(--border) var(--parchment-dk);
     }
-    .filter-bar::-webkit-scrollbar { display: none; }
+    .filter-bar::-webkit-scrollbar { height: 9px; }
+    .filter-bar::-webkit-scrollbar-track {
+      background: var(--parchment-dk);
+      border-top: 1px solid rgba(176,144,96,0.25);
+    }
+    .filter-bar::-webkit-scrollbar-thumb {
+      background: var(--border);
+      border: 2px solid var(--parchment-dk);
+      border-radius: 999px;
+    }
+    .filter-bar::-webkit-scrollbar-thumb:hover { background: var(--accent); }
     @media (max-width: 640px) {
       .filter-bar { padding: 6px 12px; }
     }

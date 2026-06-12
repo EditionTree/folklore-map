@@ -1026,7 +1026,30 @@ function toggleBookmark(name) {
 
 let LEGENDS = [];
 
+// Legends sharing (near-)identical coordinates render as perfectly overlapping
+// markers once clustering is disabled (zoom >= 12), hiding all but the topmost
+// one. Spread these into a small ring around the shared point so each stays
+// individually visible/clickable while remaining close enough to still cluster
+// normally at lower zooms.
+const COORD_JITTER_RADIUS = 0.0025; // ~250-300m
+function jitterCoincidentLegends(legends) {
+  const groups = new Map();
+  legends.forEach(leg => {
+    const key = leg.lat.toFixed(4) + ',' + leg.lng.toFixed(4);
+    (groups.get(key) || groups.set(key, []).get(key)).push(leg);
+  });
+  groups.forEach(group => {
+    if (group.length < 2) return;
+    group.forEach((leg, i) => {
+      const angle = (2 * Math.PI * i) / group.length;
+      leg.lat += COORD_JITTER_RADIUS * Math.cos(angle);
+      leg.lng += COORD_JITTER_RADIUS * Math.sin(angle);
+    });
+  });
+}
+
 function loadMarkers(legends) {
+  jitterCoincidentLegends(legends);
   legends.forEach(leg => {
     if (!CATEGORIES[leg.category]) leg.category = 'beast';
     const marker = L.marker([leg.lat, leg.lng], {

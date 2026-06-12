@@ -9,10 +9,14 @@ shared link); the interactive map (map.html) is unaffected.
 
 Run after legends.json changes:  python generate_pages.py
 """
-import json, io, os, re, unicodedata, html, urllib.parse, datetime, math
+import json, io, os, re, unicodedata, html, urllib.parse, datetime, math, hashlib
 
 BASE = "https://folklorefinder.uk"
 OUT_DIR = "legends"
+# Tracks each legend's content fingerprint + last-changed date so date_modified
+# only advances when the published content actually changes (not every rebuild,
+# and not from git commit timestamps). Committed to the repo.
+CONTENT_STATE_FILE = "content_state.json"
 
 # Thematic tag vocabulary (5 facets). Any tag NOT in here is treated as a
 # region tag (nation / county), which is weighted lower for "relatedness".
@@ -34,6 +38,53 @@ THEMATIC_TAGS = {
     # tradition
     "celtic", "norse", "arthurian",
 }
+
+
+def content_fingerprint(leg):
+    """Stable hash of the fields that make up a legend's published content."""
+    parts = [
+        leg.get("name", ""), leg.get("category", ""), leg.get("region", ""),
+        leg.get("summary", ""), leg.get("detail") or "", leg.get("source", ""),
+        repr(leg.get("lat")), repr(leg.get("lng")),
+        ",".join(sorted(leg.get("tags") or [])),
+    ]
+    return hashlib.sha1("\x1f".join(parts).encode("utf-8")).hexdigest()
+
+
+def resolve_modified_dates(legends, today):
+    """Set each legend's date_modified from whether its content changed since the
+    last build, using a persisted fingerprint state. The date only moves when the
+    content genuinely changes — so the sitemap lastmod and "Updated" labels stay
+    honest. New entries baseline to date_added rather than today."""
+    try:
+        state = json.load(io.open(CONTENT_STATE_FILE, encoding="utf-8"))
+    except Exception:
+        state = {}
+    new_state = {}
+    for leg in legends:
+        name = leg["name"]
+        fp = content_fingerprint(leg)
+        added = leg.get("date_added")
+        prev = state.get(name)
+        if prev is None:
+            modified = added or today
+        elif prev.get("hash") == fp:
+            modified = prev.get("modified") or added or today
+        else:
+            modified = today
+        leg["date_modified"] = modified
+        new_state[name] = {"hash": fp, "modified": modified}
+    with io.open(CONTENT_STATE_FILE, "w", encoding="utf-8") as f:
+        json.dump(new_state, f, ensure_ascii=False, indent=0, sort_keys=True)
+
+
+def human_date(iso):
+    """'2026-06-12' -> '12 June 2026' (cross-platform, no %-d)."""
+    try:
+        dt = datetime.datetime.strptime(iso, "%Y-%m-%d")
+        return f"{dt.day} {dt.strftime('%B %Y')}"
+    except Exception:
+        return iso or ""
 
 
 def haversine_km(lat1, lng1, lat2, lng2):
@@ -392,6 +443,7 @@ h1{{font-family:'Marcellus',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e
 .cta{{display:inline-block;margin-top:26px;background:#2c1f0e;color:#f2e8d5;font-family:'Marcellus',serif;font-size:13px;letter-spacing:.08em;text-transform:uppercase;padding:12px 22px;border-radius:3px;text-decoration:none}}
 .cta:hover{{background:#8b3a1a}}
 .src{{display:block;margin-top:18px;font-size:13px;font-style:italic;color:#5c4a2a}}
+.reviewed{{display:block;margin-top:7px;font-size:12px;font-style:italic;color:#7a6a4a}}
 .src a{{color:#8b3a1a}}
 .back{{display:inline-block;margin-top:22px;font-size:13px;color:#5c4a2a}}
 .related{{margin-top:36px}}
@@ -430,6 +482,7 @@ footer{{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}}
 {body}
 <a class="cta" href="{maplink}">Explore on the interactive map &#8594;</a>
 <span class="src">Source: <a href="{src}" target="_blank" rel="noopener">{srchost}</a></span>
+{reviewed}
 <svg class="watermark" viewBox="0 0 512 512" aria-hidden="true"><path d="{watermark}" fill="currentColor"/></svg>
 </article>
 {related}
@@ -483,6 +536,8 @@ def build():
     d = json.load(io.open("legends.json", encoding="utf-8"))
     cats = d.get("categories", {})
     legends = sorted(d["legends"], key=lambda l: l["name"].lower())
+    today = datetime.date.today().isoformat()
+    resolve_modified_dates(legends, today)  # stamps each leg["date_modified"]
     update_homepage_count(len(legends))
     meta = load_category_meta()
     os.makedirs(OUT_DIR, exist_ok=True)
@@ -537,7 +592,9 @@ def build():
         catname = cats.get(leg.get("category", ""), leg.get("category", "Legend"))
         maplink = f"{BASE}/map?legend=" + urllib.parse.quote(name)
         src = leg.get("source", "")
-        jsonld = json.dumps({
+        added = leg.get("date_added")
+        modified = leg.get("date_modified")
+        ld = {
             "@context": "https://schema.org",
             "@type": "CreativeWork",
             "name": name,
@@ -552,7 +609,23 @@ def build():
             },
             "isPartOf": {"@type": "WebSite",
                          "name": "Folklore Map of Britain & Ireland", "url": BASE + "/"},
-        }, ensure_ascii=False)
+        }
+        if added:
+            ld["datePublished"] = added
+        if modified:
+            ld["dateModified"] = modified
+        jsonld = json.dumps(ld, ensure_ascii=False)
+
+        # Visible provenance line — distinguishes newly added from later-enriched.
+        if added and modified and modified != added:
+            reviewed_html = (f'<span class="reviewed">Added {human_date(added)} '
+                             f'&#183; Updated {human_date(modified)}</span>')
+        elif added:
+            reviewed_html = f'<span class="reviewed">Added {human_date(added)}</span>'
+        elif modified:
+            reviewed_html = f'<span class="reviewed">Updated {human_date(modified)}</span>'
+        else:
+            reviewed_html = ""
 
         # Related legends carousel
         rel = related_map.get(name, [])
@@ -612,6 +685,7 @@ def build():
             maplink=esc(maplink),
             src=esc(src),
             srchost=esc(host_of(src)),
+            reviewed=reviewed_html,
             watermark=meta.get(leg.get("category", ""), {}).get("iconPath", ""),
             catcolour=esc(meta.get(leg.get("category", ""), {}).get("colour", "#8b3a1a")),
             ogimage=f"{BASE}/og/category-{leg.get('category', '')}.png" if leg.get("category", "") in meta else f"{BASE}/og/preview.png",
@@ -910,16 +984,19 @@ h1{{font-family:'Marcellus',serif;font-size:26px;margin-bottom:18px}}
     with io.open(os.path.join(OUT_DIR, "index.html"), "w", encoding="utf-8") as f:
         f.write(index_html)
 
-    # sitemap.xml
-    today = datetime.date.today().isoformat()
+    # sitemap.xml — legend pages carry their own date_modified as lastmod, so the
+    # signal is honest; app/aggregation pages use the build date.
     urls = [f"{BASE}/", f"{BASE}/{OUT_DIR}/", f"{BASE}/about", f"{BASE}/updates", f"{BASE}/privacy", f"{BASE}/feed.xml"]
     urls += browse_urls
     urls += [f"{BASE}/{OUT_DIR}/{slugmap[l['name']]}" for l in legends]
+    lastmod_map = {f"{BASE}/{OUT_DIR}/{slugmap[l['name']]}": (l.get("date_modified") or today)
+                   for l in legends}
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for i, u in enumerate(urls):
         pr = "1.0" if i == 0 else ("0.8" if i == 1 else "0.6")
-        sm.append(f"  <url><loc>{u}</loc><lastmod>{today}</lastmod><priority>{pr}</priority></url>")
+        lm = lastmod_map.get(u, today)
+        sm.append(f"  <url><loc>{u}</loc><lastmod>{lm}</lastmod><priority>{pr}</priority></url>")
     sm.append("</urlset>")
     with io.open("sitemap.xml", "w", encoding="utf-8") as f:
         f.write("\n".join(sm) + "\n")

@@ -87,6 +87,74 @@ def compute_related(legends, limit=10):
 # ── Browse-by-category / browse-by-region support ──────────────────────────
 NATIONS = ["england", "scotland", "wales", "ireland", "northern-ireland", "isle-of-man", "channel-islands"]
 
+# Themed collections: a page is only generated when at least this many entries
+# qualify, so curated collections never ship as thin pages.
+MIN_COLLECTION = 12
+# Entries per collection page; larger collections paginate (page 1 = /<slug>,
+# page n = /<slug>-n).
+COLLECTION_PER_PAGE = 24
+
+
+def collection_page_url(slug, page):
+    """URL for a collection page (page 1 has no suffix)."""
+    suffix = "" if page == 1 else f"-{page}"
+    return f"{BASE}/{OUT_DIR}/collection/{slug}{suffix}"
+
+
+def pagination_html(slug, page, total_pages):
+    """Numbered Prev/Next pagination for a paginated collection."""
+    if total_pages <= 1:
+        return ""
+    def cell(label, target, current=False, disabled=False):
+        if current:
+            return f'<span class="current" aria-current="page">{label}</span>'
+        if disabled:
+            return f'<span class="disabled">{label}</span>'
+        return f'<a href="{collection_page_url(slug, target)}">{label}</a>'
+    parts = ['<nav class="pagination" aria-label="Collection pages">']
+    parts.append(cell("&#8249; Prev", page - 1, disabled=(page == 1)))
+    for p in range(1, total_pages + 1):
+        # Always show first, last, and a window around the current page.
+        if p == 1 or p == total_pages or abs(p - page) <= 1:
+            parts.append(cell(str(p), p, current=(p == page)))
+        elif p == 2 and page > 3:
+            parts.append('<span class="gap">&#8230;</span>')
+        elif p == total_pages - 1 and page < total_pages - 2:
+            parts.append('<span class="gap">&#8230;</span>')
+    parts.append(cell("Next &#8250;", page + 1, disabled=(page == total_pages)))
+    parts.append('</nav>')
+    return "".join(parts)
+
+
+def load_collections():
+    """Load curated themed-collection definitions; empty list if absent."""
+    try:
+        return json.load(io.open("collections.json", encoding="utf-8")).get("collections", [])
+    except Exception:
+        return []
+
+
+def _simple_match(leg, cond):
+    """A single condition: tags_all / tags_any / categories, all ANDed."""
+    tags = set(leg.get("tags") or [])
+    if "tags_all" in cond and not set(cond["tags_all"]) <= tags:
+        return False
+    if "tags_any" in cond and not (set(cond["tags_any"]) & tags):
+        return False
+    if "categories" in cond and leg.get("category") not in cond["categories"]:
+        return False
+    return True
+
+
+def matches_collection(leg, match):
+    """Evaluate a collection `match`: an `any`/`all` list of conditions, or a
+    single simple condition."""
+    if "any" in match:
+        return any(_simple_match(leg, c) for c in match["any"])
+    if "all" in match:
+        return all(_simple_match(leg, c) for c in match["all"])
+    return _simple_match(leg, match)
+
 
 def prettify_region(tag):
     special = {"isle-of-man": "Isle of Man", "channel-islands": "Channel Islands"}
@@ -106,6 +174,36 @@ def banner_html():
             '</span></a></header>')
 
 
+# Site-wide top navigation (shown on every page except the interactive map).
+TOPNAV_CSS = (
+    ".topnav{display:flex;align-items:center;justify-content:center;gap:4px;"
+    "background:#1a0e06;padding:11px 16px;border-bottom:1px solid rgba(176,144,96,0.2);flex-wrap:wrap}"
+    ".topnav a{font-family:'Fraunces',serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase;"
+    "color:rgba(242,232,213,0.78);text-decoration:none;padding:6px 14px;border-radius:3px;"
+    "transition:background .15s,color .15s}"
+    ".topnav a:hover{color:#f2e8d5;background:rgba(196,98,42,0.18)}"
+    ".topnav a.active{color:#c4622a}"
+)
+
+TOPNAV_ITEMS = [
+    ("home", "Home", "/"),
+    ("map", "Map", "/map"),
+    ("browse", "Browse", "/" + OUT_DIR + "/"),
+    ("collections", "Collections", "/" + OUT_DIR + "/collections"),
+    ("about", "About", "/about"),
+    ("updates", "Updates", "/updates"),
+]
+
+
+def topnav_html(active=""):
+    parts = ['<nav class="topnav">']
+    for key, label, path in TOPNAV_ITEMS:
+        cls = ' class="active"' if key == active else ''
+        parts.append(f'<a href="{BASE}{path}"{cls}>{label}</a>')
+    parts.append('</nav>')
+    return "".join(parts)
+
+
 def footer_html():
     return ('<footer style="text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a">'
             'Part of the Folklore Map of Britain &amp; Ireland &#183; &#169; EditionTree &#183; '
@@ -123,7 +221,7 @@ def nav_links(items, active):
     return ''.join(parts)
 
 
-def browse_card(leg, slugmap, cats, meta, show_cat):
+def browse_card(leg, slugmap, cats, meta, show_cat, show_summary=False):
     cat = leg.get("category", "")
     href = BASE + "/" + OUT_DIR + "/" + slugmap[leg["name"]]
     chip = ""
@@ -131,46 +229,59 @@ def browse_card(leg, slugmap, cats, meta, show_cat):
         colour = meta.get(cat, {}).get("colour", "#8b3a1a")
         chip = ('<span class="b-cat" style="background:' + esc(colour) + '">'
                 + esc(cats.get(cat, cat)) + '</span>')
+    summary = ""
+    if show_summary and leg.get("summary"):
+        summary = '<span class="b-summary">' + esc(leg["summary"]) + '</span>'
     return ('<a class="b-card" href="' + href + '">' + chip
             + '<span class="b-name">' + esc(leg["name"]) + '</span>'
-            + '<span class="b-region">' + esc(leg.get("region", "")) + '</span></a>')
+            + '<span class="b-region">' + esc(leg.get("region", "")) + '</span>'
+            + summary + '</a>')
 
 
 BROWSE_STYLE = """
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:#e0d0b0;color:#2c1f0e;font-family:'Crimson Text',serif;line-height:1.7;min-height:100vh}
+body{background:#e0d0b0;color:#2c1f0e;font-family:'Spectral',serif;line-height:1.7;min-height:100vh}
 .site-banner{position:relative;background:linear-gradient(135deg,rgba(196,98,42,0.18) 0%,rgba(176,144,96,0.06) 35%,transparent 60%),linear-gradient(180deg,#3d2510 0%,#1a0e06 45%,#2c1f0e 100%);padding:16px 20px;text-align:center}
 .site-banner::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,#8b3a1a 15%,#b09060 50%,#8b3a1a 85%,transparent)}
 .site-banner::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(176,144,96,.6) 20%,rgba(196,98,42,.8) 50%,rgba(176,144,96,.6) 80%,transparent)}
 .banner-link{display:inline-flex;align-items:center;gap:13px;text-decoration:none}
 .banner-emblem{width:48px;height:48px;object-fit:contain;flex-shrink:0}
 .banner-text{display:flex;flex-direction:column;align-items:center;line-height:1.15}
-.banner-title{font-family:'Cinzel',serif;font-size:21px;font-weight:600;color:#f2e8d5;letter-spacing:.09em;display:flex;align-items:center;justify-content:center;gap:9px}
+.banner-title{font-family:'Fraunces',serif;font-size:21px;font-weight:600;color:#f2e8d5;letter-spacing:.09em;display:flex;align-items:center;justify-content:center;gap:9px}
 .banner-title i{color:#c4622a;font-style:normal;font-size:.6em;flex-shrink:0}
-.banner-sub{font-family:'Crimson Text',serif;font-size:12px;font-style:italic;color:rgba(176,144,96,.8);letter-spacing:.04em}
+.banner-sub{font-family:'Spectral',serif;font-size:12px;font-style:italic;color:rgba(176,144,96,.8);letter-spacing:.04em}
 @media(max-width:560px){.banner-title{font-size:15px}.banner-emblem{width:38px;height:38px}.banner-sub{font-size:11px}}
 .wrap{max-width:760px;margin:0 auto;padding:24px 20px 60px}
 .crumb{font-size:12px;color:#5c4a2a;margin-bottom:14px}
 .crumb a{color:#8b3a1a;text-decoration:none}
-.browse-h1{font-family:'Cinzel',serif;font-size:27px;margin-bottom:6px;color:#2c1f0e;line-height:1.15}
+.browse-h1{font-family:'Fraunces',serif;font-size:27px;margin-bottom:6px;color:#2c1f0e;line-height:1.15}
 .browse-intro{font-size:16px;color:#5c4a2a;margin-bottom:16px}
 .browse-nav{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}
-.browse-nav a{font-family:'Cinzel',serif;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#8b3a1a;border:1px solid #b09060;border-radius:3px;padding:5px 11px;text-decoration:none}
+.browse-nav a{font-family:'Fraunces',serif;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#8b3a1a;border:1px solid #b09060;border-radius:3px;padding:5px 11px;text-decoration:none}
 .browse-nav a:hover,.browse-nav a.active{background:#8b3a1a;color:#f2e8d5;border-color:#8b3a1a}
 .browse-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
 .b-card{background:#f2e8d5;border:1px solid #b09060;border-radius:5px;padding:14px 15px;text-decoration:none;color:#2c1f0e;transition:border-color .15s,transform .1s}
 .b-card:hover{border-color:#c4622a;transform:translateY(-2px)}
 .b-card span{display:block}
 .b-cat{font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:#8b3a1a;padding:2px 8px;border-radius:3px;margin-bottom:8px;width:max-content;max-width:100%}
-.b-name{font-family:'Cinzel',serif;font-size:15px;line-height:1.25;margin-bottom:4px}
+.b-name{font-family:'Fraunces',serif;font-size:15px;line-height:1.25;margin-bottom:4px}
 .b-region{font-style:italic;font-size:12px;color:#5c4a2a}
+.b-summary{font-size:13.5px;color:#3a2c14;margin-top:8px;line-height:1.5}
 .back{display:inline-block;margin-top:24px;font-size:13px;color:#5c4a2a}
+.pagination{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:7px;margin-top:30px}
+.pagination a,.pagination span{font-family:'Fraunces',serif;font-size:13px;min-width:34px;text-align:center;padding:6px 10px;border:1px solid #b09060;border-radius:3px;text-decoration:none;color:#8b3a1a}
+.pagination a:hover{background:#8b3a1a;color:#f2e8d5;border-color:#8b3a1a}
+.pagination .current{background:#8b3a1a;color:#f2e8d5;border-color:#8b3a1a}
+.pagination .disabled{color:#b09060;border-color:#d8c8a8;cursor:default}
+.pagination .gap{border:none;color:#5c4a2a;min-width:auto;padding:6px 2px}
 @media(max-width:560px){.browse-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:380px){.browse-grid{grid-template-columns:1fr}}
 """
 
 
-def build_browse_page(page_title, desc, url, h1, intro, crumb, nav_html, cards_html, ogimage=None):
+def build_browse_page(page_title, desc, url, h1, intro, crumb, nav_html, cards_html,
+                      ogimage=None, jsonld=None, head_extra="", after_grid="", nav_active="browse"):
+    jsonld_html = ('<script type="application/ld+json">' + jsonld + '</script>\n') if jsonld else ''
     return ('<!DOCTYPE html>\n<html lang="en"><head><meta charset="UTF-8"/>\n'
             '<script>if(location.hostname.indexOf("pages.dev")>-1){location.replace("https://folklorefinder.uk"+location.pathname+location.search+location.hash);}</script>\n'
             '<script defer src=\'https://static.cloudflareinsights.com/beacon.min.js\' data-cf-beacon=\'{"token": "64d1fd37251d426f8a0d8fbc83ea350b"}\'></script>\n'
@@ -185,16 +296,18 @@ def build_browse_page(page_title, desc, url, h1, intro, crumb, nav_html, cards_h
             '<meta property="og:url" content="' + url + '"/>\n'
             '<meta property="og:image" content="' + (ogimage or (BASE + '/og/preview.png')) + '"/>\n'
             '<link rel="preconnect" href="https://fonts.googleapis.com">\n'
-            '<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">\n'
-            '<style>' + BROWSE_STYLE + '</style></head>\n<body>\n'
-            + banner_html() + '\n<div class="wrap">\n'
+            '<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">\n'
+            + jsonld_html + head_extra
+            + '<style>' + BROWSE_STYLE + TOPNAV_CSS + '</style></head>\n<body>\n'
+            + topnav_html(nav_active) + '\n' + banner_html() + '\n<div class="wrap">\n'
             '<nav class="crumb"><a href="' + BASE + '/">Home</a> &#8250; '
             '<a href="' + BASE + '/' + OUT_DIR + '/">All legends</a> &#8250; '
             '<span>' + esc(crumb) + '</span></nav>\n'
             '<h1 class="browse-h1">' + esc(h1) + '</h1>\n'
             '<p class="browse-intro">' + esc(intro) + '</p>\n'
             + nav_html + '\n<div class="browse-grid">\n' + cards_html
-            + '\n</div>\n<a class="back" href="' + BASE + '/' + OUT_DIR + '/">&#8592; Browse all legends</a>\n'
+            + '\n</div>\n' + after_grid
+            + '<a class="back" href="' + BASE + '/' + OUT_DIR + '/">&#8592; Browse all legends</a>\n'
             '</div>\n' + footer_html() + '\n</body></html>')
 
 
@@ -245,29 +358,29 @@ PAGE = """<!DOCTYPE html>
 <meta name="twitter:description" content="{desc}"/>
 <meta name="twitter:image" content="{ogimage}"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <script type="application/ld+json">{jsonld}</script>
 {breadcrumb_jsonld}
 <style>
 *{{box-sizing:border-box;margin:0;padding:0}}
-body{{background:#e0d0b0;color:#2c1f0e;font-family:'Crimson Text',serif;line-height:1.7;min-height:100vh}}
+body{{background:#e0d0b0;color:#2c1f0e;font-family:'Spectral',serif;line-height:1.7;min-height:100vh}}
 .site-banner{{position:relative;background:linear-gradient(135deg,rgba(196,98,42,0.18) 0%,rgba(176,144,96,0.06) 35%,transparent 60%),linear-gradient(180deg,#3d2510 0%,#1a0e06 45%,#2c1f0e 100%);padding:16px 20px;text-align:center}}
 .site-banner::before{{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,#8b3a1a 15%,#b09060 50%,#8b3a1a 85%,transparent)}}
 .site-banner::after{{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(176,144,96,.6) 20%,rgba(196,98,42,.8) 50%,rgba(176,144,96,.6) 80%,transparent)}}
 .banner-link{{display:inline-flex;align-items:center;gap:13px;text-decoration:none}}
 .banner-emblem{{width:48px;height:48px;object-fit:contain;flex-shrink:0}}
 .banner-text{{display:flex;flex-direction:column;align-items:center;line-height:1.15}}
-.banner-title{{font-family:'Cinzel',serif;font-size:21px;font-weight:600;color:#f2e8d5;letter-spacing:.09em;display:flex;align-items:center;justify-content:center;gap:9px}}
+.banner-title{{font-family:'Fraunces',serif;font-size:21px;font-weight:600;color:#f2e8d5;letter-spacing:.09em;display:flex;align-items:center;justify-content:center;gap:9px}}
 .banner-title i{{color:#c4622a;font-style:normal;font-size:.6em;flex-shrink:0}}
-.banner-sub{{font-family:'Crimson Text',serif;font-size:12px;font-style:italic;color:rgba(176,144,96,.8);letter-spacing:.04em}}
+.banner-sub{{font-family:'Spectral',serif;font-size:12px;font-style:italic;color:rgba(176,144,96,.8);letter-spacing:.04em}}
 .watermark{{position:absolute;top:26px;right:24px;width:88px;height:88px;color:#8b3a1a;opacity:.1;pointer-events:none;z-index:0}}
 @media(max-width:560px){{.banner-title{{font-size:15px}}.banner-emblem{{width:38px;height:38px}}.banner-sub{{font-size:11px}}}}
 .wrap{{max-width:680px;margin:0 auto;padding:0 20px 60px}}
 .card{{position:relative;overflow:hidden;background:#f2e8d5;border:1px solid #b09060;border-radius:6px;margin-top:30px;padding:32px;box-shadow:0 4px 20px rgba(44,31,14,.18)}}
 .card>*:not(.watermark){{position:relative;z-index:1}}
 .card>.watermark{{position:absolute;top:26px;right:24px;width:88px;height:88px;z-index:0}}
-.cat{{font-family:'Cinzel',serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#fff;background:#8b3a1a;display:inline-block;padding:3px 10px;border-radius:2px}}
-h1{{font-family:'Cinzel',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;line-height:1.15}}
+.cat{{font-family:'Fraunces',serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#fff;background:#8b3a1a;display:inline-block;padding:3px 10px;border-radius:2px}}
+h1{{font-family:'Fraunces',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;line-height:1.15}}
 .region{{font-style:italic;color:#5c4a2a;margin-bottom:18px}}
 .crumb{{font-size:12.5px;color:#5c4a2a;margin-bottom:16px;line-height:1.5}}
 .crumb a{{color:#8b3a1a;text-decoration:none}}
@@ -275,15 +388,14 @@ h1{{font-family:'Cinzel',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;li
 .crumb .sep{{color:#b09060;margin:0 6px}}
 .crumb .here{{color:#5c4a2a}}
 .summary{{font-size:17px}}
-.summary::first-letter{{font-family:'Cinzel',serif;font-size:2.4em;font-weight:600;color:#8b3a1a;line-height:1}}
 .summary-cont{{font-size:17px;margin-top:14px}}
-.cta{{display:inline-block;margin-top:26px;background:#2c1f0e;color:#f2e8d5;font-family:'Cinzel',serif;font-size:13px;letter-spacing:.08em;text-transform:uppercase;padding:12px 22px;border-radius:3px;text-decoration:none}}
+.cta{{display:inline-block;margin-top:26px;background:#2c1f0e;color:#f2e8d5;font-family:'Fraunces',serif;font-size:13px;letter-spacing:.08em;text-transform:uppercase;padding:12px 22px;border-radius:3px;text-decoration:none}}
 .cta:hover{{background:#8b3a1a}}
 .src{{display:block;margin-top:18px;font-size:13px;font-style:italic;color:#5c4a2a}}
 .src a{{color:#8b3a1a}}
 .back{{display:inline-block;margin-top:22px;font-size:13px;color:#5c4a2a}}
 .related{{margin-top:36px}}
-.related-head{{font-family:'Cinzel',serif;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#8b3a1a;display:flex;align-items:center;gap:12px;margin-bottom:16px}}
+.related-head{{font-family:'Fraunces',serif;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#8b3a1a;display:flex;align-items:center;gap:12px;margin-bottom:16px}}
 .related-head::before,.related-head::after{{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,#b09060)}}
 .related-head::after{{background:linear-gradient(90deg,#b09060,transparent)}}
 .carousel{{position:relative}}
@@ -295,17 +407,19 @@ h1{{font-family:'Cinzel',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;li
 .rel-card:hover{{border-color:#c4622a;transform:translateY(-2px)}}
 .rel-card span{{display:block}}
 .rel-cat{{font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:#8b3a1a;padding:2px 8px;border-radius:3px;margin-bottom:8px;width:max-content;max-width:100%}}
-.rel-name{{font-family:'Cinzel',serif;font-size:15px;line-height:1.25;margin-bottom:4px}}
+.rel-name{{font-family:'Fraunces',serif;font-size:15px;line-height:1.25;margin-bottom:4px}}
 .rel-region{{font-style:italic;font-size:12px;color:#5c4a2a}}
-.carousel-btn{{position:absolute;top:42%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;border:1px solid #b09060;background:#f2e8d5;color:#8b3a1a;font-family:'Cinzel',serif;font-size:18px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2;box-shadow:0 2px 8px rgba(44,31,14,.25)}}
+.carousel-btn{{position:absolute;top:42%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;border:1px solid #b09060;background:#f2e8d5;color:#8b3a1a;font-family:'Fraunces',serif;font-size:18px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2;box-shadow:0 2px 8px rgba(44,31,14,.25)}}
 .carousel-btn:hover{{background:#8b3a1a;color:#f2e8d5}}
 .carousel-btn.prev{{left:-10px}}
 .carousel-btn.next{{right:-10px}}
 @media(max-width:560px){{.carousel-btn{{display:none}}.rel-card{{flex-basis:170px}}}}
 footer{{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}}
+{topnav_css}
 </style>
 </head>
 <body>
+{topnav}
 <header class="site-banner"><a class="banner-link" href="{base}/"><img src="{base}/green-man.png" class="banner-emblem" alt=""/><span class="banner-text"><span class="banner-title"><i>&#10022;</i> Folklore Map of Britain &amp; Ireland <i>&#10022;</i></span><span class="banner-sub">Myths, Legends &amp; Spectral Encounters</span></span></a></header>
 <div class="wrap">
 {breadcrumb}
@@ -350,10 +464,26 @@ def load_category_meta():
     return meta
 
 
+def update_homepage_count(total):
+    path = "index.html"
+    text = io.open(path, encoding="utf-8").read()
+    patterns = (
+        (r'(<span id="heroCount">)\d+(</span>)', rf'\g<1>{total}\g<2>'),
+        (r'(<span class="stat-num" id="statCount">)\d+(</span>)', rf'\g<1>{total}\g<2>'),
+    )
+    for pattern, replacement in patterns:
+        text, changed = re.subn(pattern, replacement, text, count=1)
+        if changed != 1:
+            raise RuntimeError(f"Could not update homepage count using {pattern}")
+    with io.open(path, "w", encoding="utf-8") as f:
+        f.write(text)
+
+
 def build():
     d = json.load(io.open("legends.json", encoding="utf-8"))
     cats = d.get("categories", {})
     legends = sorted(d["legends"], key=lambda l: l["name"].lower())
+    update_homepage_count(len(legends))
     meta = load_category_meta()
     os.makedirs(OUT_DIR, exist_ok=True)
 
@@ -485,6 +615,8 @@ def build():
             watermark=meta.get(leg.get("category", ""), {}).get("iconPath", ""),
             catcolour=esc(meta.get(leg.get("category", ""), {}).get("colour", "#8b3a1a")),
             ogimage=f"{BASE}/og/category-{leg.get('category', '')}.png" if leg.get("category", "") in meta else f"{BASE}/og/preview.png",
+            topnav_css=TOPNAV_CSS,
+            topnav=topnav_html("browse"),
         )
         with io.open(os.path.join(OUT_DIR, f"{slug}.html"), "w", encoding="utf-8") as f:
             f.write(out)
@@ -507,7 +639,7 @@ def build():
         url = f"{BASE}/{OUT_DIR}/category/{c}"
         cards = "\n".join(browse_card(l, slugmap, cats, meta, show_cat=False) for l in entries)
         page = build_browse_page(
-            page_title=f"{label} of Britain &amp; Ireland — Folklore Map",
+            page_title=f"{label} of Britain & Ireland — Folklore Map",
             desc=f"Browse {len(entries)} {label.lower()} from across British and Irish folklore — each pinned to the place its story is rooted.",
             url=url,
             h1=label,
@@ -545,6 +677,133 @@ def build():
             f.write(page)
         browse_urls.append(url)
 
+    # ── Themed collection pages (curated, cross-cutting) ───────────────────
+    col_dir = os.path.join(OUT_DIR, "collection")
+    collections = load_collections()
+    built_collections = []  # (slug, title, count) for nav / index / sitemap
+    if collections:
+        os.makedirs(col_dir, exist_ok=True)
+        # Resolve membership first so we can build a shared nav of siblings.
+        resolved = []
+        for col in collections:
+            members = sorted(
+                (l for l in legends if matches_collection(l, col.get("match", {}))),
+                key=lambda l: l["name"].lower(),
+            )
+            if len(members) >= MIN_COLLECTION:
+                resolved.append((col, members))
+        col_nav_items = [
+            (f"{BASE}/{OUT_DIR}/collection/{col['slug']}", col["title"], col["slug"])
+            for col, _ in resolved
+        ]
+        for col, members in resolved:
+            slug = col["slug"]
+            total = len(members)
+            desc = short_desc(col["intro"], 155)
+            total_pages = max(1, (total + COLLECTION_PER_PAGE - 1) // COLLECTION_PER_PAGE)
+            for page_no in range(1, total_pages + 1):
+                start = (page_no - 1) * COLLECTION_PER_PAGE
+                page_members = members[start:start + COLLECTION_PER_PAGE]
+                url = collection_page_url(slug, page_no)
+                cards = "\n".join(
+                    browse_card(l, slugmap, cats, meta, show_cat=True, show_summary=True)
+                    for l in page_members
+                )
+                # Page 2+ get a "(page N of M)" suffix in title/intro for clarity.
+                page_tag = "" if total_pages == 1 else f" (page {page_no} of {total_pages})"
+                collection_jsonld = json.dumps({
+                    "@context": "https://schema.org",
+                    "@type": "CollectionPage",
+                    "name": col["title"] + page_tag,
+                    "description": desc,
+                    "url": url,
+                    "isPartOf": {"@type": "WebSite",
+                                 "name": "Folklore Map of Britain & Ireland", "url": BASE + "/"},
+                    "mainEntity": {
+                        "@type": "ItemList",
+                        "numberOfItems": len(page_members),
+                        "itemListElement": [
+                            {"@type": "ListItem", "position": start + i + 1,
+                             "url": f"{BASE}/{OUT_DIR}/{slugmap[m['name']]}", "name": m["name"]}
+                            for i, m in enumerate(page_members)
+                        ],
+                    },
+                }, ensure_ascii=False)
+                # rel=prev/next help crawlers understand the paginated series.
+                rel_links = ""
+                if page_no > 1:
+                    rel_links += f'<link rel="prev" href="{collection_page_url(slug, page_no - 1)}"/>\n'
+                if page_no < total_pages:
+                    rel_links += f'<link rel="next" href="{collection_page_url(slug, page_no + 1)}"/>\n'
+                page = build_browse_page(
+                    page_title=f"{col['title']}{page_tag} — Folklore Map of Britain & Ireland",
+                    desc=desc,
+                    url=url,
+                    h1=col["title"],
+                    intro=col["intro"],
+                    crumb=col["title"] + page_tag,
+                    nav_html=nav_links(col_nav_items, slug),
+                    cards_html=cards,
+                    jsonld=collection_jsonld,
+                    head_extra=rel_links,
+                    after_grid=pagination_html(slug, page_no, total_pages),
+                    nav_active="collections",
+                )
+                fname = f"{slug}.html" if page_no == 1 else f"{slug}-{page_no}.html"
+                with io.open(os.path.join(col_dir, fname), "w", encoding="utf-8") as f:
+                    f.write(page)
+                browse_urls.append(url)
+            built_collections.append((slug, col["title"], total))
+
+        # Collections landing page (the "Collections" nav destination).
+        if resolved:
+            land_url = f"{BASE}/{OUT_DIR}/collections"
+            land_cards = []
+            for col, members in resolved:
+                curl = collection_page_url(col["slug"], 1)
+                land_cards.append(
+                    f'<a class="b-card" href="{curl}">'
+                    f'<span class="b-name">{esc(col["title"])}</span>'
+                    f'<span class="b-region">{len(members)} legends</span>'
+                    f'<span class="b-summary">{esc(col["intro"])}</span></a>'
+                )
+            land_jsonld = json.dumps({
+                "@context": "https://schema.org",
+                "@type": "CollectionPage",
+                "name": "Themed Collections",
+                "description": "Themed collections of British and Irish folklore — black dogs, "
+                               "standing stones, holy wells, Arthurian places and more.",
+                "url": land_url,
+                "isPartOf": {"@type": "WebSite",
+                             "name": "Folklore Map of Britain & Ireland", "url": BASE + "/"},
+                "mainEntity": {
+                    "@type": "ItemList",
+                    "numberOfItems": len(resolved),
+                    "itemListElement": [
+                        {"@type": "ListItem", "position": i + 1,
+                         "url": collection_page_url(col["slug"], 1), "name": col["title"]}
+                        for i, (col, _) in enumerate(resolved)
+                    ],
+                },
+            }, ensure_ascii=False)
+            land_page = build_browse_page(
+                page_title="Themed Collections — Folklore Map of Britain & Ireland",
+                desc="Explore British and Irish folklore by theme — black dogs, standing stones, "
+                     "holy wells, Arthurian places, legends of the sea and more.",
+                url=land_url,
+                h1="Themed Collections",
+                intro="Curated gatherings of legends that share a creature, a landscape or a tradition — "
+                      "ways into the map that the category and region lists don't capture.",
+                crumb="Collections",
+                nav_html="",
+                cards_html="\n".join(land_cards),
+                jsonld=land_jsonld,
+                nav_active="collections",
+            )
+            with io.open(os.path.join(OUT_DIR, "collections.html"), "w", encoding="utf-8") as f:
+                f.write(land_page)
+            browse_urls.append(land_url)
+
     # Browse sections for the A-Z index page
     cat_links = "".join(
         '<a href="' + f"{BASE}/{OUT_DIR}/category/{c}" + '">'
@@ -557,8 +816,18 @@ def build():
         + esc(prettify_region(t)) + ' <span class="c-count">' + str(len(region_groups[t])) + '</span></a>'
         for t in region_order
     )
+    collection_links = "".join(
+        '<a href="' + f"{BASE}/{OUT_DIR}/collection/{slug}" + '">'
+        + esc(title) + ' <span class="c-count">' + str(count) + '</span></a>'
+        for slug, title, count in built_collections
+    )
+    collection_sec = (
+        ('<div class="browse-sec"><h2>Themed collections</h2><div class="region-links">'
+         + collection_links + '</div></div>') if built_collections else ''
+    )
     browse_sections = (
-        '<div class="browse-sec"><h2>Browse by category</h2><div class="cat-links">' + cat_links + '</div></div>'
+        collection_sec
+        + '<div class="browse-sec"><h2>Browse by category</h2><div class="cat-links">' + cat_links + '</div></div>'
         '<div class="browse-sec"><h2>Browse by region</h2><div class="region-links">' + region_links + '</div></div>'
         '<h2 class="azh">A&#8211;Z</h2>'
     )
@@ -593,41 +862,45 @@ def build():
 <link rel="canonical" href="{BASE}/{OUT_DIR}/"/>
 <link rel="icon" type="image/png" href="{BASE}/favicon.png"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Crimson+Text:ital,wght@0,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <style>
 *{{box-sizing:border-box;margin:0;padding:0}}
-body{{background:#e0d0b0;color:#2c1f0e;font-family:'Crimson Text',serif;min-height:100vh}}
+body{{background:#e0d0b0;color:#2c1f0e;font-family:'Spectral',serif;min-height:100vh}}
 .site-banner{{position:relative;background:linear-gradient(135deg,rgba(196,98,42,0.18) 0%,rgba(176,144,96,0.06) 35%,transparent 60%),linear-gradient(180deg,#3d2510 0%,#1a0e06 45%,#2c1f0e 100%);padding:16px 20px;text-align:center}}
 .site-banner::before{{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,#8b3a1a 15%,#b09060 50%,#8b3a1a 85%,transparent)}}
 .site-banner::after{{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(176,144,96,.6) 20%,rgba(196,98,42,.8) 50%,rgba(176,144,96,.6) 80%,transparent)}}
 .banner-link{{display:inline-flex;align-items:center;gap:13px;text-decoration:none}}
 .banner-emblem{{width:48px;height:48px;object-fit:contain;flex-shrink:0}}
 .banner-text{{display:flex;flex-direction:column;align-items:center;line-height:1.15}}
-.banner-title{{font-family:'Cinzel',serif;font-size:21px;font-weight:600;color:#f2e8d5;letter-spacing:.09em;display:flex;align-items:center;justify-content:center;gap:9px}}
+.banner-title{{font-family:'Fraunces',serif;font-size:21px;font-weight:600;color:#f2e8d5;letter-spacing:.09em;display:flex;align-items:center;justify-content:center;gap:9px}}
 .banner-title i{{color:#c4622a;font-style:normal;font-size:.6em;flex-shrink:0}}
-.banner-sub{{font-family:'Crimson Text',serif;font-size:12px;font-style:italic;color:rgba(176,144,96,.8);letter-spacing:.04em}}
+.banner-sub{{font-family:'Spectral',serif;font-size:12px;font-style:italic;color:rgba(176,144,96,.8);letter-spacing:.04em}}
 @media(max-width:560px){{.banner-title{{font-size:15px}}.banner-emblem{{width:38px;height:38px}}.banner-sub{{font-size:11px}}}}
-.wrap{{max-width:760px;margin:0 auto;padding:24px 20px 60px}}
-h1{{font-family:'Cinzel',serif;font-size:26px;margin-bottom:18px}}
-.az{{column-count:4;column-gap:26px}}
-@media(max-width:900px){{.az{{column-count:3}}}}
-@media(max-width:620px){{.az{{column-count:2}}}}
-@media(max-width:400px){{.az{{column-count:1}}}}
-.az-letter{{font-family:'Cinzel',serif;font-size:17px;color:#8b3a1a;margin:0 0 7px;padding-bottom:3px;border-bottom:1px solid #b09060;break-after:avoid;break-inside:avoid}}
+.wrap{{max-width:1180px;margin:0 auto;padding:24px 20px 60px}}
+h1{{font-family:'Fraunces',serif;font-size:26px;margin-bottom:18px}}
+.az{{column-count:8;column-gap:20px}}
+@media(max-width:1100px){{.az{{column-count:6}}}}
+@media(max-width:880px){{.az{{column-count:4}}}}
+@media(max-width:680px){{.az{{column-count:3}}}}
+@media(max-width:520px){{.az{{column-count:2}}}}
+@media(max-width:380px){{.az{{column-count:1}}}}
+.az-letter{{font-family:'Fraunces',serif;font-size:17px;color:#8b3a1a;margin:0 0 7px;padding-bottom:3px;border-bottom:1px solid #b09060;break-after:avoid;break-inside:avoid}}
 .az ul{{list-style:none;margin:0 0 16px}}
 .az li{{break-inside:avoid;padding:5px 0;border-bottom:.5px solid rgba(176,144,96,.3)}}
 .az li a{{color:#8b3a1a;text-decoration:none;font-size:15px}}
 .az li span{{display:block;font-size:11.5px;font-style:italic;color:#5c4a2a}}
 .browse-sec{{margin-bottom:26px}}
-.browse-sec h2,.azh{{font-family:'Cinzel',serif;font-size:18px;margin-bottom:13px;color:#2c1f0e}}
+.browse-sec h2,.azh{{font-family:'Fraunces',serif;font-size:18px;margin-bottom:13px;color:#2c1f0e}}
 .azh{{margin-top:6px}}
 .cat-links,.region-links{{display:flex;flex-wrap:wrap;gap:9px}}
-.cat-links a,.region-links a{{display:inline-flex;align-items:center;gap:7px;font-family:'Cinzel',serif;font-size:13px;color:#2c1f0e;background:#f2e8d5;border:1px solid #b09060;border-radius:4px;padding:7px 13px;text-decoration:none}}
+.cat-links a,.region-links a{{display:inline-flex;align-items:center;gap:7px;font-family:'Fraunces',serif;font-size:13px;color:#2c1f0e;background:#f2e8d5;border:1px solid #b09060;border-radius:4px;padding:7px 13px;text-decoration:none}}
 .cat-links a:hover,.region-links a:hover{{border-color:#c4622a}}
 .c-count{{font-size:11px;color:#5c4a2a;font-style:italic}}
 .c-dot{{width:10px;height:10px;border-radius:50%;display:inline-block;flex-shrink:0}}
+{TOPNAV_CSS}
 </style></head>
 <body>
+{topnav_html("browse")}
 <header class="site-banner"><a class="banner-link" href="{BASE}/"><img src="{BASE}/green-man.png" class="banner-emblem" alt=""/><span class="banner-text"><span class="banner-title"><i>&#10022;</i> Folklore Map of Britain &amp; Ireland <i>&#10022;</i></span><span class="banner-sub">Myths, Legends &amp; Spectral Encounters</span></span></a></header>
 <div class="wrap"><h1>All Legends ({written})</h1>{browse_sections}<div class="az">
 {az_content}

@@ -9,3 +9,4 @@ source_snapshots/
 # Operational logs and local config — not needed for the live site
 bug_reports/
 .claude/
+_drafts/

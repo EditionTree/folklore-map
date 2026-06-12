@@ -27,6 +27,31 @@ set SUPABASE_URL=https://YOUR_PROJECT.supabase.co
 set SUPABASE_SERVICE_KEY=YOUR_SERVICE_ROLE_KEY
 ```
 
+## Supabase Schema
+
+The `legends` table mirrors the fields in `legends.json`:
+
+| Column       | Type        | Notes                                              |
+|--------------|-------------|----------------------------------------------------|
+| `name`       | `text`      | Unique, used as the upsert conflict key            |
+| `lat`, `lng` | `float8`    |                                                      |
+| `category`   | `text`      | Defaults to `beast`                                |
+| `region`     | `text`      | Defaults to `Britain`                              |
+| `summary`    | `text`      | Short description shown on the map                |
+| `source`     | `text`      | Citation URL                                       |
+| `detail`     | `text`      | Optional long-form write-up; `null` when absent    |
+| `tags`       | `text[]`    | Thematic/region tags; empty array when absent      |
+| `date_added` | `date`      | `null` for older records without a recorded date   |
+
+Migrations live in `supabase/migrations/`. The `detail`, `tags` and
+`date_added` columns were added by
+`supabase/migrations/20260612160000_add_legend_detail_tags_date_added.sql`
+(nullable, safe to re-run via `add column if not exists`).
+
+`map.html` only requests `name,lat,lng,category,region,summary,source` from
+Supabase — `detail`, `tags` and `date_added` are stored for future use but
+deliberately excluded from the map's initial data load to keep it small.
+
 ## Clean Database Sync
 
 Use this after reviewing local seed and JSON changes:

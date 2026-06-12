@@ -13,7 +13,7 @@
 <link rel="canonical" href="https://folklorefinder.uk/about"/>
 <link rel="icon" type="image/png" href="favicon.png"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 
@@ -28,7 +28,7 @@
   --dark:#1a0e06;
 }
 
-body{background:var(--parchment-dk);color:var(--ink);font-family:'Crimson Text',serif;line-height:1.7}
+body{background:var(--parchment-dk);color:var(--ink);font-family:'Spectral',serif;line-height:1.7}
 
 /* ── TOP NAV ── */
 .topnav{
@@ -38,7 +38,7 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Crimson Text',
   border-bottom:1px solid rgba(176,144,96,0.2);
 }
 .topnav a{
-  font-family:'Cinzel',serif;
+  font-family:'Fraunces',serif;
   font-size:12px;letter-spacing:.08em;text-transform:uppercase;
   color:rgba(242,232,213,0.78);
   text-decoration:none;
@@ -63,7 +63,7 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Crimson Text',
 }
 .page-head img{width:96px;height:96px;object-fit:contain;margin-bottom:18px;filter:drop-shadow(0 4px 18px rgba(196,98,42,0.45))}
 .page-head h1{
-  font-family:'Cinzel',serif;
+  font-family:'Fraunces',serif;
   font-size:clamp(22px,4vw,36px);
   font-weight:600;color:#f2e8d5;letter-spacing:.06em;line-height:1.2;margin-bottom:8px;
 }
@@ -76,11 +76,10 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Crimson Text',
 .section-rule{display:flex;align-items:center;gap:14px;margin-bottom:22px}
 .section-rule::before,.section-rule::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
 .section-rule::after{background:linear-gradient(90deg,var(--gold),transparent)}
-.section-rule span{font-family:'Cinzel',serif;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);white-space:nowrap}
+.section-rule span{font-family:'Fraunces',serif;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);white-space:nowrap}
 
 p{margin-bottom:14px;font-size:16.5px}
 .intro{font-size:17.5px}
-.intro::first-letter{font-family:'Cinzel',serif;font-size:2.6em;font-weight:600;color:var(--accent);line-height:1;float:left;margin:2px 6px 0 0}
 
 /* ── CATEGORY GRID ── */
 .cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-top:16px}
@@ -90,12 +89,12 @@ p{margin-bottom:14px;font-size:16.5px}
 /* ── HOW-TO STEPS ── */
 .steps{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;margin-top:16px}
 .step{background:var(--parchment);border:1px solid var(--gold);border-radius:4px;padding:18px 16px}
-.step-num{font-family:'Cinzel',serif;font-size:22px;color:var(--accent);line-height:1;margin-bottom:6px}
-.step-title{font-family:'Cinzel',serif;font-size:13px;letter-spacing:.04em;color:var(--ink);margin-bottom:6px}
+.step-num{font-family:'Fraunces',serif;font-size:22px;color:var(--accent);line-height:1;margin-bottom:6px}
+.step-title{font-family:'Fraunces',serif;font-size:13px;letter-spacing:.04em;color:var(--ink);margin-bottom:6px}
 .step-desc{font-size:13.5px;color:var(--ink-light);line-height:1.55}
 
 /* ── BUTTONS ── */
-.btn{display:inline-block;font-family:'Cinzel',serif;font-size:13px;letter-spacing:.07em;text-transform:uppercase;padding:12px 24px;border-radius:3px;text-decoration:none;transition:background .15s,color .15s,border-color .15s;cursor:pointer}
+.btn{display:inline-block;font-family:'Fraunces',serif;font-size:13px;letter-spacing:.07em;text-transform:uppercase;padding:12px 24px;border-radius:3px;text-decoration:none;transition:background .15s,color .15s,border-color .15s;cursor:pointer}
 .btn-primary{background:var(--accent-warm);color:#f2e8d5;border:1px solid var(--accent-warm)}
 .btn-primary:hover{background:#a84d1e}
 .btn-secondary{background:transparent;color:rgba(242,232,213,0.8);border:1px solid rgba(176,144,96,0.45)}
@@ -104,7 +103,7 @@ p{margin-bottom:14px;font-size:16.5px}
 /* ── BOTTOM CTA ── */
 .bottom-cta{margin-top:52px;padding:40px 32px;background:var(--dark);border-radius:6px;text-align:center;position:relative;overflow:hidden}
 .bottom-cta::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold) 30%,var(--accent-warm) 50%,var(--gold) 70%,transparent)}
-.bottom-cta h2{font-family:'Cinzel',serif;font-size:clamp(16px,3vw,22px);color:#f2e8d5;margin-bottom:10px;letter-spacing:.05em}
+.bottom-cta h2{font-family:'Fraunces',serif;font-size:clamp(16px,3vw,22px);color:#f2e8d5;margin-bottom:10px;letter-spacing:.05em}
 .bottom-cta p{color:rgba(242,232,213,0.65);font-size:15.5px;max-width:480px;margin:0 auto 24px}
 .bottom-cta-btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
 
@@ -112,7 +111,7 @@ p{margin-bottom:14px;font-size:16.5px}
 .kofi-card{display:flex;align-items:center;gap:18px;background:var(--parchment);border:1px solid var(--gold);border-radius:6px;padding:22px 24px;position:relative;overflow:hidden}
 .kofi-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--accent-warm) 40%,var(--gold) 60%,transparent)}
 .kofi-emoji{font-size:40px;flex-shrink:0;line-height:1}
-.kofi-text h3{font-family:'Cinzel',serif;font-size:17px;color:var(--ink);margin-bottom:6px;letter-spacing:.02em}
+.kofi-text h3{font-family:'Fraunces',serif;font-size:17px;color:var(--ink);margin-bottom:6px;letter-spacing:.02em}
 .kofi-text p{font-size:15px;color:var(--ink-light);margin-bottom:14px}
 @media(max-width:480px){.kofi-card{flex-direction:column;text-align:center}}
 
@@ -135,6 +134,7 @@ footer a{color:var(--ink-light)}
   <a href="./">Home</a>
   <a href="map">Map</a>
   <a href="legends/">Browse</a>
+  <a href="legends/collections">Collections</a>
   <a href="about" class="active">About</a>
   <a href="updates">Updates</a>
 </nav>

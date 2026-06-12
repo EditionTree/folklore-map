@@ -16,10 +16,14 @@ User types `/research-folklore` or asks to run a folklore research session.
 
 ## Research priorities (in order)
 
-1. **Irish** — regional traditions from Ulster, Leinster, Munster, Connacht; both Northern Ireland and the Republic.
+1. **Irish** — regional traditions from Ulster, Leinster, Munster, Connacht; both Northern Ireland and the Republic. **Northern Ireland is currently under-represented (only 9 of 539 entries tagged `northern-ireland`)** — actively seek named traditions from Antrim, Armagh, Down, Fermanagh, Londonderry/Derry, and Tyrone.
 2. **Scottish islands** — Hebrides (Skye, Islay, Mull, Colonsay, etc.), Orkney, Shetland, Arran, smaller islands.
 3. **Welsh local legends** — specific villages, lakes, mountains, ruins, coastal sites.
 4. **English county traditions** — named local legends, underrepresented counties preferred.
+5. **Achievement-driven targets** (gamification feature in development — see `_drafts/achievements.md`):
+   - **"Black dog" apparitions** — British/Irish spectral black dog legends (in the vein of Black Shuck, Barghest, Padfoot, Wulver, Cù Sìth, Gwyllgi, Church Grim, Black Dog of Newgate, Black Dog of Bouley Bay — these 9 already exist). One or two more strong, distinct named black-dog legends would unlock a "10 black dogs" achievement tier. Reject if it's just a regional rename of an existing one (near-duplicate check applies as normal).
+   - **Maid Marian** — currently has no standalone entry despite Robin Hood, King Arthur, and other Matter-of-Britain figures being present. If a genuine folkloric tradition (not just literary/film history) can be sourced with a defensible map pin, add as a strong candidate.
+6. **Category balance (tiebreaker)** — see Step 1a. When a candidate could reasonably fit more than one category, or when choosing between otherwise-equal candidates, prefer the one in a currently under-represented category.
 
 ## Per-run workflow
 
@@ -27,9 +31,13 @@ User types `/research-folklore` or asks to run a folklore research session.
 
 Read `legends.json`. Extract all `name` values. Keep this list in memory for duplicate checking throughout the run.
 
+### Step 1a — Check category balance
+
+Count entries per `category` value in `legends.json`. Note the 3 categories with the lowest counts (as of the last run: Giants, Pirates, Dragons — but recompute each time, don't rely on this). Keep this list as a soft tiebreaker for Step 2/5 — it does not override priorities 1-5, but when a genuinely strong candidate could fit one of these under-represented categories, favour including it.
+
 ### Step 2 — Research
 
-Search reputable sources for folklore candidates across all four priority areas. Aim for balance: at least two strong candidates per priority area where evidence supports it. Target 8–16 strong candidates total.
+Search reputable sources for folklore candidates across all four priority areas. Aim for balance: at least two strong candidates per priority area where evidence supports it. Target 8–16 strong candidates total. Where a strong candidate naturally fits one of the under-represented categories noted in Step 1a, give it a slight edge when deciding what to include.
 
 **Preferred sources:**
 - Wikipedia articles with folklore/mythology categories
@@ -127,6 +135,7 @@ Write `source_snapshots/research_queue/YYYY-MM-DD_research.json` with the struct
       "3_welsh": 0,
       "4_english": 0
     },
+    "underrepresented_categories_targeted": ["category keys from Step 1a that strong_candidates fall into"],
     "notes": "Researcher notes on this run: gaps, sources used, suggestions for future runs"
   }
 }

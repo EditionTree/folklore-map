@@ -219,6 +219,9 @@
       color: var(--border);
       cursor: pointer;
       user-select: none;
+      background: none;
+      border: 0;
+      padding: 0;
     }
     .toggle-track {
       width: 38px; height: 20px;
@@ -278,7 +281,7 @@
       border-bottom: 0.5px solid #3a2c18;
     }
     .search-result-item:last-child { border-bottom: none; }
-    .search-result-item:hover { background: rgba(255,255,255,0.08); }
+    .search-result-item:hover, .search-result-item.active { background: rgba(255,255,255,0.08); }
     .search-result-item span { color: var(--border); font-size: 11px; margin-left: 6px; }
 
     /* ── FILTER BAR ── */
@@ -741,16 +744,18 @@
     <button class="sidebar-toggle-btn" id="sidebarToggleBtn" onclick="toggleSidebar()">☰ Entries</button>
     <button class="sidebar-toggle-btn submit-legend-btn" onclick="openSubmitLegend()" aria-haspopup="dialog"><span class="submit-btn-icon">✦ </span><span class="submit-btn-label">Submit</span></button>
     <div class="search-wrap">
-      <span class="search-icon">⚲</span>
-      <input type="text" id="searchInput" placeholder="Search legends..." autocomplete="off" oninput="handleSearch(this.value)"/>
-      <div class="search-results" id="searchResults"></div>
+      <span class="search-icon" aria-hidden="true">⚲</span>
+      <input type="text" id="searchInput" placeholder="Search legends..." autocomplete="off"
+             role="combobox" aria-expanded="false" aria-controls="searchResults" aria-autocomplete="list" aria-label="Search legends"
+             oninput="handleSearch(this.value)"/>
+      <div class="search-results" id="searchResults" role="listbox" aria-label="Search results"></div>
     </div>
-    <div class="mode-toggle" onclick="toggleNight()">
-      <div class="toggle-track" id="modeTrack">
+    <button type="button" class="mode-toggle" id="modeToggle" onclick="toggleNight()" role="switch" aria-checked="false" aria-label="Dusk mode">
+      <div class="toggle-track" id="modeTrack" aria-hidden="true">
         <div class="toggle-thumb"></div>
       </div>
       <span id="modeLabel">Day</span>
-    </div>
+    </button>
   </div>
 </header>
 
@@ -1225,6 +1230,7 @@ function toggleNight() {
   document.getElementById('map').classList.toggle('night', nightMode);
   document.body.classList.toggle('night', nightMode);
   document.getElementById('modeTrack').classList.toggle('on', nightMode);
+  document.getElementById('modeToggle').setAttribute('aria-checked', nightMode ? 'true' : 'false');
   // Force filter-bar repaint (composited layer bypasses CSS variable cascade)
   const fb = document.querySelector('.filter-bar');
   fb.style.transition = 'background 0.6s ease, border-bottom-color 0.6s ease';
@@ -1239,21 +1245,54 @@ function toggleNight() {
   if (typeof clusterGroup !== 'undefined') clusterGroup.refreshClusters();
 }
 
+let searchActiveIdx = -1;
+
+function closeSearchResults() {
+  const box = document.getElementById('searchResults');
+  const input = document.getElementById('searchInput');
+  box.classList.remove('open');
+  input.setAttribute('aria-expanded', 'false');
+  input.removeAttribute('aria-activedescendant');
+  searchActiveIdx = -1;
+}
+
+function setSearchActive(idx) {
+  const items = document.querySelectorAll('#searchResults .search-result-item');
+  const input = document.getElementById('searchInput');
+  items.forEach((el, i) => {
+    const on = i === idx;
+    el.classList.toggle('active', on);
+    el.setAttribute('aria-selected', on ? 'true' : 'false');
+  });
+  if (idx >= 0 && items[idx]) {
+    input.setAttribute('aria-activedescendant', items[idx].id);
+    items[idx].scrollIntoView({ block: 'nearest' });
+  } else {
+    input.removeAttribute('aria-activedescendant');
+  }
+}
+
 function handleSearch(query) {
   const box = document.getElementById('searchResults');
-  if (!query.trim()) { box.classList.remove('open'); return; }
+  const input = document.getElementById('searchInput');
+  searchActiveIdx = -1;
+  input.removeAttribute('aria-activedescendant');
+  if (!query.trim()) { closeSearchResults(); return; }
   const q = query.toLowerCase();
   const matches = LEGENDS.filter(l =>
     l.name.toLowerCase().includes(q) ||
     l.region.toLowerCase().includes(q) ||
     l.category.toLowerCase().includes(q)
   ).slice(0, 6);
-  if (!matches.length) { box.classList.remove('open'); return; }
+  if (!matches.length) { closeSearchResults(); return; }
   box.replaceChildren();
-  matches.forEach(leg => {
+  matches.forEach((leg, i) => {
     const item = document.createElement('div');
     const region = document.createElement('span');
     item.className = 'search-result-item';
+    item.id = 'searchResult-' + i;
+    item.setAttribute('role', 'option');
+    item.setAttribute('aria-selected', 'false');
     item.textContent = leg.name;
     item.onclick = () => focusLegend(leg.name);
     region.textContent = leg.region;
@@ -1261,7 +1300,28 @@ function handleSearch(query) {
     box.appendChild(item);
   });
   box.classList.add('open');
+  input.setAttribute('aria-expanded', 'true');
 }
+
+document.getElementById('searchInput').addEventListener('keydown', e => {
+  const items = document.querySelectorAll('#searchResults .search-result-item');
+  if (!items.length) return;
+  if (e.key === 'ArrowDown') {
+    e.preventDefault();
+    searchActiveIdx = Math.min(searchActiveIdx + 1, items.length - 1);
+    setSearchActive(searchActiveIdx);
+  } else if (e.key === 'ArrowUp') {
+    e.preventDefault();
+    searchActiveIdx = Math.max(searchActiveIdx - 1, -1);
+    setSearchActive(searchActiveIdx);
+  } else if (e.key === 'Enter') {
+    e.preventDefault();
+    const pick = searchActiveIdx >= 0 ? items[searchActiveIdx] : items[0];
+    if (pick) pick.click();
+  } else if (e.key === 'Escape') {
+    closeSearchResults();
+  }
+});
 
 function legendSlug(name) {
   return name.normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/[^\x00-\x7f]/g, '')
@@ -1275,7 +1335,7 @@ function randomLegend() {
 }
 
 function focusLegend(name) {
-  document.getElementById('searchResults').classList.remove('open');
+  closeSearchResults();
   document.getElementById('searchInput').value = '';
   const leg = LEGENDS.find(l => l.name === name);
   if (!leg) return;
@@ -1294,7 +1354,7 @@ function focusLegend(name) {
 
 document.addEventListener('click', e => {
   if (!e.target.closest('.search-wrap')) {
-    document.getElementById('searchResults').classList.remove('open');
+    closeSearchResults();
   }
 });
 
@@ -1530,6 +1590,25 @@ async function submitBugReport() {
 // Close modal on Escape key
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape') { closeBugReport(); closeSubmitLegend(); }
+});
+
+// Trap Tab focus inside an open modal dialog.
+function trapModalFocus(e, modal) {
+  if (e.key !== 'Tab') return;
+  const focusables = Array.from(modal.querySelectorAll(
+    'a[href], button:not([disabled]), textarea, input, select, iframe, [tabindex]:not([tabindex="-1"])'
+  )).filter(el => el.offsetParent !== null);
+  if (!focusables.length) return;
+  const first = focusables[0], last = focusables[focusables.length - 1];
+  if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+  else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+}
+document.addEventListener('keydown', e => {
+  if (e.key !== 'Tab') return;
+  const bug = document.getElementById('bugModal');
+  const submit = document.getElementById('submitModal');
+  if (bug && bug.style.display === 'flex') trapModalFocus(e, bug);
+  else if (submit && submit.style.display === 'flex') trapModalFocus(e, submit);
 });
 
 // ── SUBMIT A LEGEND ─────────────────────────────────────────────────────

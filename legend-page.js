@@ -28,28 +28,90 @@
     L.marker([latitude,longitude],{icon:marker,keyboard:false}).addTo(miniMap);
   }
 
+  var canonical=document.querySelector('link[rel=canonical]');
+  var url=canonical?canonical.href:location.href;
   var copyButton=document.getElementById('copyLinkBtn');
+  var shareButton=document.getElementById('webShareBtn');
   var status=document.getElementById('shareStatus');
+  var resetTimer=0;
+
+  function announce(message){
+    if(status)status.textContent=message;
+  }
+
+  function flashButton(button,idleText,activeText){
+    if(!button)return;
+    button.textContent=activeText;
+    clearTimeout(resetTimer);
+    resetTimer=setTimeout(function(){
+      button.textContent=idleText;
+    },1800);
+  }
+
+  function markCopied(){
+    flashButton(copyButton,'Copy link','Copied');
+    announce('Link copied');
+  }
+
+  function fallbackCopy(){
+    try{
+      var textArea=document.createElement('textarea');
+      textArea.value=url;
+      textArea.setAttribute('readonly','');
+      textArea.style.position='absolute';
+      textArea.style.left='-9999px';
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+      markCopied();
+      return Promise.resolve(true);
+    }catch(error){
+      announce("Couldn't copy. Press Ctrl+C to copy the address.");
+      return Promise.resolve(false);
+    }
+  }
+
+  function copyLink(){
+    if(navigator.clipboard&&navigator.clipboard.writeText&&window.isSecureContext){
+      return navigator.clipboard.writeText(url).then(function(){
+        markCopied();
+        return true;
+      }).catch(function(){
+        return fallbackCopy();
+      });
+    }
+    return fallbackCopy();
+  }
+
   if(copyButton){
     copyButton.addEventListener('click',function(){
-      var canonical=document.querySelector('link[rel=canonical]');
-      var url=canonical?canonical.href:location.href;
-      function copied(){
-        copyButton.textContent='Copied';
-        if(status)status.textContent='Link copied';
-        setTimeout(function(){copyButton.textContent='Copy link';},1800);
-      }
-      if(navigator.clipboard&&navigator.clipboard.writeText){
-        navigator.clipboard.writeText(url).then(copied);
-      }
+      copyLink();
     });
   }
 
-  var shareButton=document.getElementById('webShareBtn');
   if(shareButton&&navigator.share){
-    shareButton.hidden=false;
-    shareButton.addEventListener('click',function(){
-      navigator.share({title:document.title,url:location.href}).catch(function(){});
-    });
+    var shareData={title:document.title,url:url};
+    var canShare=true;
+    if(navigator.canShare){
+      try{
+        canShare=navigator.canShare(shareData);
+      }catch(error){
+        canShare=false;
+      }
+    }
+    if(canShare){
+      shareButton.hidden=false;
+      shareButton.addEventListener('click',function(){
+        navigator.share(shareData).catch(function(error){
+          if(error&&error.name==='AbortError')return;
+          copyLink().then(function(copied){
+            if(copied){
+              announce('Sharing unavailable here, so the link was copied instead.');
+            }
+          });
+        });
+      });
+    }
   }
 })();

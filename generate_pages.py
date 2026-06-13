@@ -136,6 +136,28 @@ def compute_related(legends, limit=10):
     return related
 
 
+def compute_nearby(legends, limit=4, max_km=200):
+    """Return {name: [(legend, distance_km), ...]} of the geographically closest
+    entries — pure haversine distance, distinct from the tag-weighted related list.
+    Entries beyond max_km are dropped so remote legends don't list false neighbours."""
+    pts = [(l, l.get("lat"), l.get("lng")) for l in legends]
+    nearby = {}
+    for leg, la, lo in pts:
+        if la is None or lo is None:
+            nearby[leg["name"]] = []
+            continue
+        dists = []
+        for other, ola, olo in pts:
+            if other is leg or ola is None or olo is None:
+                continue
+            d = haversine_km(la, lo, ola, olo)
+            if d <= max_km:
+                dists.append((d, other))
+        dists.sort(key=lambda t: t[0])
+        nearby[leg["name"]] = [(other, d) for d, other in dists[:limit]]
+    return nearby
+
+
 # ── Browse-by-category / browse-by-region support ──────────────────────────
 NATIONS = ["england", "scotland", "wales", "ireland", "northern-ireland", "isle-of-man", "channel-islands"]
 
@@ -732,6 +754,7 @@ $hero_caption
       <article class="article">
         <div class="article-label">The legend</div>
         $featured_body
+        $editorial
         <div class="article-actions" aria-label="Legend actions">
           <a class="button" href="$maplink">Open on full map</a>
           <button class="button secondary" id="copyLinkBtn" type="button">Copy link</button>
@@ -753,6 +776,8 @@ $hero_caption
             <span>$coordinates</span>
           </div>
         </section>
+
+        $featured_nearby
 
         <section class="side-card side-pad">
           <p class="side-kicker">At a glance</p>
@@ -805,7 +830,7 @@ def update_homepage_count(total):
         f.write(text)
 
 
-def render_featured_legend(leg, featured, paras, srcs, rel, cats, meta,
+def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
                            slugmap, catname, maplink, page_path_url, desc,
                            jsonld, breadcrumb, breadcrumb_jsonld):
     """Render the editorial legend layout, with artwork when available."""
@@ -826,6 +851,22 @@ def render_featured_legend(leg, featured, paras, srcs, rel, cats, meta,
         featured_parts.append(f"<h2>{esc(section_heading)}</h2>")
         featured_parts.extend(f"<p>{esc(inline_text(p))}</p>" for p in paras[1:])
     featured_body = "".join(featured_parts) or '<p class="opening"></p>'
+
+    # Editor's note — a curated, named editorial aside (a deliberate human-voice
+    # signal). Taken from featured metadata or the legend's own `editorial` field;
+    # rendered only when written. `editorial_by` supplies the byline.
+    editorial = featured.get("editorial") or leg.get("editorial")
+    if editorial:
+        by = (featured.get("editorial_by") or leg.get("editorial_by")
+              or "Folklore Map editors")
+        editorial_html = (
+            '<aside class="editor-note" aria-label="Editor\'s note">'
+            '<p class="editor-kicker">Editor&#8217;s note</p>'
+            f'<p>{esc(inline_text(editorial))}</p>'
+            f'<p class="editor-by">&#8212; {esc(by)}</p></aside>'
+        )
+    else:
+        editorial_html = ""
 
     fact_items = featured.get("facts") or {
         "Category": catname,
@@ -852,6 +893,27 @@ def render_featured_legend(leg, featured, paras, srcs, rel, cats, meta,
         )
     else:
         featured_sources = ""
+
+    # Nearby legends — geographically closest entries (distinct from the
+    # tag-weighted related list); ties the page back to the mini-map.
+    nearby_items = []
+    for nb, dist in nearby:
+        dist_label = "&lt;1 km" if dist < 1 else f"{round(dist)} km"
+        nb_colour = meta.get(nb.get("category", ""), {}).get("colour", "#8b3a1a")
+        nearby_items.append(
+            f'<li><a href="{BASE}/{OUT_DIR}/{slugmap[nb["name"]]}">'
+            f'<span class="nearby-dot" style="background:{esc(nb_colour)}" aria-hidden="true"></span>'
+            f'<span class="nearby-name">{esc(nb["name"])}</span>'
+            f'<span class="nearby-dist">{dist_label}</span></a></li>'
+        )
+    if nearby_items:
+        featured_nearby = (
+            '<section class="side-card side-pad"><p class="side-kicker">In the area</p>'
+            '<h2>Nearby legends</h2>'
+            f'<ul class="nearby-list">{"".join(nearby_items)}</ul></section>'
+        )
+    else:
+        featured_nearby = ""
 
     featured_cards = []
     for related in rel[:3]:
@@ -925,6 +987,8 @@ def render_featured_legend(leg, featured, paras, srcs, rel, cats, meta,
         name=esc(name),
         standfirst=esc(inline_text(leg.get("summary", ""))),
         featured_body=featured_body,
+        editorial=editorial_html,
+        featured_nearby=featured_nearby,
         maplink=esc(maplink),
         map_title=esc(featured.get("map_title") or leg.get("region", "")),
         lat=f"{lat:.6f}",
@@ -983,6 +1047,7 @@ def build():
         return parts
 
     related_map = compute_related(legends)
+    nearby_map = compute_nearby(legends)
 
     written = 0
     for leg in legends:
@@ -1114,6 +1179,7 @@ def build():
             paras=paras,
             srcs=srcs,
             rel=rel,
+            nearby=nearby_map.get(name, []),
             cats=cats,
             meta=meta,
             slugmap=slugmap,

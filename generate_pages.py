@@ -10,6 +10,7 @@ shared link); the interactive map (map.html) is unaffected.
 Run after legends.json changes:  python generate_pages.py
 """
 import json, io, os, re, unicodedata, html, urllib.parse, datetime, math, hashlib
+from string import Template
 
 BASE = "https://folklorefinder.uk"
 OUT_DIR = "legends"
@@ -193,6 +194,18 @@ def load_page_intros():
         return d.get("categories", {}), d.get("regions", {})
     except Exception:
         return {}, {}
+
+
+def load_featured_pages():
+    """Legend pages that have completed artwork and editorial metadata.
+
+    Keeping this in a manifest lets the redesign roll out gradually without
+    changing image-less pages or hand-editing generated HTML.
+    """
+    try:
+        return json.load(io.open("legend_pages.json", encoding="utf-8")).get("pages", {})
+    except Exception:
+        return {}
 
 
 def _simple_match(leg, cond):
@@ -488,7 +501,7 @@ def legend_sources(leg):
     return out
 
 
-PAGE = """<!DOCTYPE html>
+LEGACY_PAGE = """<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8"/>
@@ -654,6 +667,109 @@ document.querySelectorAll('.carousel').forEach(function(c){{
 """
 
 
+FEATURED_PAGE = Template("""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<script>if(location.hostname.indexOf("pages.dev")>-1){location.replace("https://folklorefinder.uk"+location.pathname+location.search+location.hash);}</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"64d1fd37251d426f8a0d8fbc83ea350b"}'></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>$title</title>
+<meta name="description" content="$desc"/>
+<link rel="canonical" href="$url"/>
+<link rel="icon" type="image/png" href="$base/favicon.png"/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="$url"/>
+<meta property="og:title" content="$ogtitle"/>
+<meta property="og:description" content="$desc"/>
+<meta property="og:image" content="$ogimage"/>
+<meta property="og:site_name" content="Folklore Map of Britain &amp; Ireland"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="$ogtitle"/>
+<meta name="twitter:description" content="$desc"/>
+<meta name="twitter:image" content="$ogimage"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha384-sHL9NAb7lN7rfvG5lfHpm643Xkcjzp4jFvuavGOndn6pjVqS6ny56CAt3nsEVT4H" crossorigin="anonymous"/>
+<link rel="stylesheet" href="$base/legend-page.css"/>
+<script type="application/ld+json">$jsonld</script>
+$breadcrumb_jsonld
+</head>
+<body>
+$topnav
+<header class="brandbar">
+  <a class="brand" href="$base/">
+    <img src="$base/green-man.png" alt=""/>
+    <span>
+      <span class="brand-name">Folklore Map of Britain &amp; Ireland</span>
+      <span class="brand-line">Myths, Legends &amp; Spectral Encounters</span>
+    </span>
+  </a>
+</header>
+<main>
+  <div class="shell">
+    $breadcrumb
+    <section class="hero" aria-labelledby="legend-title">
+      <img src="$hero_url" alt="$hero_alt"/>
+      <div class="hero-copy">
+        <div class="eyebrow">
+          <span class="category" style="background:$catcolour">$catname</span>
+          <span class="place">$region</span>
+        </div>
+        <h1 id="legend-title">$name</h1>
+        <p class="standfirst">$standfirst</p>
+      </div>
+      <span class="hero-caption">$hero_caption</span>
+    </section>
+
+    <div class="content-grid">
+      <article class="article">
+        <div class="article-label">The legend</div>
+        $featured_body
+        <div class="article-actions" aria-label="Legend actions">
+          <a class="button" href="$maplink">Open on full map</a>
+          <button class="button secondary" id="copyLinkBtn" type="button">Copy link</button>
+          <button class="button secondary" id="webShareBtn" type="button" hidden>Share</button>
+        </div>
+        <span class="share-status" id="shareStatus" role="status" aria-live="polite"></span>
+      </article>
+
+      <aside class="sidebar" aria-label="Legend details">
+        <section class="side-card">
+          <div class="side-pad">
+            <p class="side-kicker">Explore the place</p>
+            <h2>$map_title</h2>
+            <p class="map-meta">$region</p>
+          </div>
+          <div id="miniMap" data-lat="$lat" data-lng="$lng" data-colour="$catcolour" data-initial="$initial" aria-label="Map showing the location associated with $name"></div>
+          <div class="map-footer">
+            <a href="$maplink">View full map &#8594;</a>
+            <span>$coordinates</span>
+          </div>
+        </section>
+
+        <section class="side-card side-pad">
+          <p class="side-kicker">At a glance</p>
+          <h2>About this legend</h2>
+          <div class="facts">$facts</div>
+        </section>
+
+        $featured_sources
+      </aside>
+    </div>
+  </div>
+
+  $featured_related
+</main>
+<footer>Part of the Folklore Map of Britain &amp; Ireland &#183; &#169; EditionTree &#183; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener">Ko-fi</a> &#183; <a href="$base/privacy">Privacy</a></footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH" crossorigin="anonymous"></script>
+<script src="$base/legend-page.js"></script>
+</body>
+</html>
+""")
+
+
 def load_category_meta():
     """Extract category -> {colour, iconPath} from index.html (single source of truth)."""
     try:
@@ -684,6 +800,113 @@ def update_homepage_count(total):
         f.write(text)
 
 
+def render_featured_legend(leg, featured, paras, srcs, rel, cats, meta,
+                           slugmap, catname, maplink, page_path_url, desc,
+                           jsonld, breadcrumb, breadcrumb_jsonld):
+    """Render an image-led legend page for entries enabled in the manifest."""
+    name = leg["name"]
+    image_path = featured.get("image", "")
+    if not image_path or not os.path.isfile(image_path):
+        raise RuntimeError(f"Featured legend image is missing for {name}: {image_path}")
+
+    featured_parts = []
+    if paras:
+        featured_parts.append(f'<p class="opening">{esc(paras[0])}</p>')
+    pullquote = featured.get("pullquote")
+    if pullquote:
+        featured_parts.append(f'<blockquote class="pullquote">{esc(pullquote)}</blockquote>')
+    if len(paras) > 1:
+        section_heading = featured.get("section_heading") or "The story"
+        featured_parts.append(f"<h2>{esc(section_heading)}</h2>")
+        featured_parts.extend(f"<p>{esc(p)}</p>" for p in paras[1:])
+    featured_body = "".join(featured_parts) or '<p class="opening"></p>'
+
+    facts_html = "".join(
+        f'<div class="fact"><span>{esc(label)}</span><strong>{esc(value)}</strong></div>'
+        for label, value in (featured.get("facts") or {}).items()
+    )
+
+    if srcs:
+        source_items = "".join(
+            f'<li><a href="{esc(s["url"])}" target="_blank" rel="noopener">'
+            f'{esc(s["publisher"])} &#8594;</a>'
+            + (f' <span class="source-tier">{esc(s["label"])}</span>' if s["label"] else "")
+            + "</li>"
+            for s in srcs
+        )
+        featured_sources = (
+            '<section class="side-card side-pad"><p class="side-kicker">Sources</p>'
+            '<h2>Further reading</h2>'
+            '<p class="source-copy">Sources used to research and locate this legend.</p>'
+            f'<ul class="source-list">{source_items}</ul></section>'
+        )
+    else:
+        featured_sources = ""
+
+    featured_cards = []
+    for related in rel[:3]:
+        related_cat = cats.get(related.get("category", ""), related.get("category", ""))
+        related_colour = meta.get(related.get("category", ""), {}).get("colour", "#8b3a1a")
+        featured_cards.append(
+            f'<a class="related-card" style="--card-glow:{esc(related_colour)}" '
+            f'href="{BASE}/{OUT_DIR}/{slugmap[related["name"]]}">'
+            f'<span class="related-type">{esc(related_cat)}</span>'
+            f'<span class="related-name">{esc(related["name"])}</span>'
+            f'<span class="related-place">{esc(related.get("region", ""))}</span></a>'
+        )
+    if featured_cards:
+        featured_related = (
+            '<section class="related"><div class="shell">'
+            '<div class="section-head"><div><p>Continue exploring</p>'
+            '<h2>Related legends</h2></div>'
+            f'<a href="{BASE}/{OUT_DIR}/">Browse all legends</a></div>'
+            f'<div class="related-grid">{"".join(featured_cards)}</div>'
+            '</div></section>'
+        )
+    else:
+        featured_related = ""
+
+    lat = float(leg.get("lat"))
+    lng = float(leg.get("lng"))
+    coordinates = (
+        f"{abs(lat):.3f} {'N' if lat >= 0 else 'S'}, "
+        f"{abs(lng):.3f} {'E' if lng >= 0 else 'W'}"
+    )
+    catcolour = meta.get(leg.get("category", ""), {}).get("colour", "#8b3a1a")
+    hero_url = f"{BASE}/{image_path.replace(os.sep, '/')}"
+
+    return FEATURED_PAGE.substitute(
+        title=esc(f"{name} — Folklore of Britain & Ireland"),
+        ogtitle=esc(name),
+        desc=esc(desc),
+        url=page_path_url,
+        base=BASE,
+        jsonld=jsonld,
+        breadcrumb_jsonld=breadcrumb_jsonld,
+        topnav=topnav_html("browse"),
+        breadcrumb=breadcrumb,
+        hero_url=hero_url,
+        hero_alt=esc(featured.get("alt", "")),
+        hero_caption=esc(featured.get("caption", "")),
+        catcolour=esc(catcolour),
+        catname=esc(catname),
+        region=esc(leg.get("region", "")),
+        name=esc(name),
+        standfirst=esc(leg.get("summary", "")),
+        featured_body=featured_body,
+        maplink=esc(maplink),
+        map_title=esc(featured.get("map_title") or leg.get("region", "")),
+        lat=f"{lat:.6f}",
+        lng=f"{lng:.6f}",
+        initial=esc(name[:1]),
+        coordinates=coordinates,
+        facts=facts_html,
+        featured_sources=featured_sources,
+        featured_related=featured_related,
+        ogimage=hero_url,
+    )
+
+
 def build():
     d = json.load(io.open("legends.json", encoding="utf-8"))
     cats = d.get("categories", {})
@@ -693,6 +916,7 @@ def build():
     update_homepage_count(len(legends))
     meta = load_category_meta()
     cat_intros, region_intros = load_page_intros()
+    featured_pages = load_featured_pages()
     os.makedirs(OUT_DIR, exist_ok=True)
 
     # Unique slugs
@@ -831,7 +1055,7 @@ def build():
             {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": crumb_items},
             ensure_ascii=False) + '</script>'
 
-        out = PAGE.format(
+        out = LEGACY_PAGE.format(
             title=esc(f"{name} — Folklore of Britain & Ireland"),
             ogtitle=esc(name),
             desc=esc(desc),
@@ -853,6 +1077,25 @@ def build():
             topnav_css=TOPNAV_CSS,
             topnav=topnav_html("browse"),
         )
+        featured = featured_pages.get(name)
+        if featured:
+            out = render_featured_legend(
+                leg=leg,
+                featured=featured,
+                paras=paras,
+                srcs=srcs,
+                rel=rel,
+                cats=cats,
+                meta=meta,
+                slugmap=slugmap,
+                catname=catname,
+                maplink=maplink,
+                page_path_url=page_path_url,
+                desc=desc,
+                jsonld=jsonld,
+                breadcrumb=breadcrumb,
+                breadcrumb_jsonld=breadcrumb_jsonld,
+            )
         with io.open(os.path.join(OUT_DIR, f"{slug}.html"), "w", encoding="utf-8") as f:
             f.write(out)
         written += 1

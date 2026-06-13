@@ -120,3 +120,31 @@ python snapshot_expansion_sources.py --source encyclopedia_com
 This compares Encyclopedia.com metadata against the current `legends.json`
 names and writes `encyclopedia_com_review_candidates.json` without replacing
 the earlier combined candidate report.
+
+## Search Console Insights
+
+`fetch_search_insights.py` pulls Google Search Console performance data and
+writes a short, prioritised report (`search-insights/report.md`) the daily
+research/QC work can act on: pages to retitle (high impressions, low CTR),
+pages ranking just off page 1, search terms not yet covered, and zero-click
+queries. It stores only aggregate query/page metrics — no visitor data — and
+`search-insights/` plus the service-account key are git-ignored.
+
+One-time setup (Google service account, read-only):
+
+1. In Google Cloud, create a project, create a service account, and download
+   its JSON key. Enable the "Google Search Console API" for the project.
+2. In Search Console → Settings → Users and permissions, add the service
+   account's email as a **Restricted** user on the property.
+3. Save the key as `gsc-service-account.json` in the repo root (git-ignored),
+   or point `GSC_SERVICE_ACCOUNT_JSON` at it. Set `GSC_SITE_URL` if the
+   property is not the default `https://folklorefinder.uk/` (use
+   `sc-domain:folklorefinder.uk` for a domain property).
+
+```powershell
+python fetch_search_insights.py            # fetch and write the report
+python fetch_search_insights.py --sample   # preview the report format, no credentials
+```
+
+Run it on a cadence (monthly is plenty at current traffic) and have the
+research step read `search-insights/report.md` when choosing priorities.

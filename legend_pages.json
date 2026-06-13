@@ -91,6 +91,96 @@
         "Setting": "Highland lochs",
         "Motif": "Deadly lure"
       }
+    },
+    "Banshee": {
+      "priority": 7,
+      "image": "legend-images/banshee-hero.jpg",
+      "alt": "A solitary woman in pale dress keening on a rain-dark rural Irish lane beside stone walls at dusk",
+      "caption": "A visual interpretation of the Irish banshee tradition",
+      "map_title": "Ireland",
+      "section_heading": "The keening in the night",
+      "pullquote": "To hear her is not to cause death, only to be warned of it.",
+      "facts": {
+        "Tradition": "Irish folklore",
+        "Type": "Death herald spirit",
+        "Setting": "Ireland",
+        "Motif": "Keening omen"
+      }
+    },
+    "Merlin": {
+      "priority": 8,
+      "image": "legend-images/merlin-hero.jpg",
+      "alt": "An older bearded seer in a dark cloak sitting beside a rocky Welsh cave above a misty valley",
+      "caption": "A visual interpretation of the Merlin tradition in Wales",
+      "map_title": "Carmarthen, Wales",
+      "section_heading": "The seer above the valley",
+      "pullquote": "He ends ensnared by his own pupil, the Lady of the Lake, sealed forever in a cave or a tree: the seer who foresaw all things but his own fall.",
+      "facts": {
+        "Tradition": "Arthurian legend",
+        "Type": "Prophet and wizard",
+        "Setting": "Wales & Britain",
+        "Motif": "Prophecy"
+      }
+    },
+    "Y Ddraig Goch": {
+      "priority": 9,
+      "image": "legend-images/y-ddraig-goch-hero.jpg",
+      "alt": "A red dragon and a pale white dragon confronting each other among the misty ruins and rocky slopes of Dinas Emrys",
+      "caption": "A visual interpretation of the Welsh red dragon prophecy",
+      "map_title": "Dinas Emrys, Snowdonia",
+      "section_heading": "The battle beneath Dinas Emrys",
+      "pullquote": "The young Merlin prophesied that the red dragon — the true Britons — would ultimately prevail.",
+      "facts": {
+        "Tradition": "Welsh legend",
+        "Type": "Prophetic dragon",
+        "Setting": "Dinas Emrys",
+        "Motif": "National prophecy"
+      }
+    },
+    "The Dullahan": {
+      "priority": 10,
+      "image": "legend-images/dullahan-hero.jpg",
+      "alt": "A headless rider on a black horse carrying a severed head that glows like a lantern on a dark Irish lane",
+      "caption": "A visual interpretation of the Irish Dullahan tradition",
+      "map_title": "Northern Ireland",
+      "section_heading": "The rider on the road",
+      "pullquote": "A headless horseman carrying his own severed head, which glows like a lantern.",
+      "facts": {
+        "Tradition": "Irish folklore",
+        "Type": "Headless rider",
+        "Setting": "Rural roads",
+        "Motif": "Death summons"
+      }
+    },
+    "Cailleach": {
+      "priority": 11,
+      "image": "legend-images/cailleach-hero.jpg",
+      "alt": "An ancient one-eyed woman wrapped in dark wool standing among boulders on a stormy Highland mountainside",
+      "caption": "A visual interpretation of the Highland Cailleach tradition",
+      "map_title": "Highland mountains",
+      "section_heading": "The hag of winter",
+      "pullquote": "With her hammer and creel she shapes the land itself, letting boulders fall to raise mountains and carve out glens.",
+      "facts": {
+        "Tradition": "Gaelic mythology",
+        "Type": "Winter goddess",
+        "Setting": "Highland mountains",
+        "Motif": "Weather and stone"
+      }
+    },
+    "The Morrigan": {
+      "priority": 12,
+      "image": "legend-images/the-morrigan-hero.jpg",
+      "alt": "A dark-cloaked woman standing in a shallow Irish ford beneath storm clouds with a crow wheeling nearby",
+      "caption": "A visual interpretation of the Irish Morrigan tradition",
+      "map_title": "Irish ford country",
+      "section_heading": "The goddess at the ford",
+      "pullquote": "She is both: a sovereign goddess of the land, a prophetess of battle-death, and a figure whose presence on the margins of a fight means the fight has already been decided.",
+      "facts": {
+        "Tradition": "Irish mythology",
+        "Type": "War and sovereignty goddess",
+        "Setting": "River fords",
+        "Motif": "Battle prophecy"
+      }
     }
   }
 }

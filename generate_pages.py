@@ -655,6 +655,7 @@ document.querySelectorAll('.carousel').forEach(function(c){{
   var url=(link&&link.href)||location.href;
   var status=document.getElementById('shareStatus');
   var copyBtn=document.getElementById('copyLinkBtn');
+  var shareBtn=document.getElementById('webShareBtn');
   var revertTimer=null;
   function announce(m){{ if(status) status.textContent=m; }}
   function markCopied(){{
@@ -673,19 +674,33 @@ document.querySelectorAll('.carousel').forEach(function(c){{
       document.body.appendChild(ta); ta.select();
       document.execCommand('copy'); document.body.removeChild(ta);
       markCopied();
-    }}catch(e){{ announce("Couldn't copy. Press Ctrl+C to copy the address."); }}
+      return Promise.resolve(true);
+    }}catch(e){{ announce("Couldn't copy. Press Ctrl+C to copy the address."); return Promise.resolve(false); }}
   }}
-  if(copyBtn) copyBtn.addEventListener('click',function(){{
-    if(navigator.clipboard&&navigator.clipboard.writeText){{
-      navigator.clipboard.writeText(url).then(markCopied,fallbackCopy);
-    }} else {{ fallbackCopy(); }}
-  }});
-  var shareBtn=document.getElementById('webShareBtn');
+  function copyLink(){{
+    if(navigator.clipboard&&navigator.clipboard.writeText&&window.isSecureContext){{
+      return navigator.clipboard.writeText(url).then(function(){{ markCopied(); return true; }},fallbackCopy);
+    }}
+    return fallbackCopy();
+  }}
+  if(copyBtn) copyBtn.addEventListener('click',function(){{ copyLink(); }});
   if(shareBtn&&navigator.share){{
-    shareBtn.hidden=false;
-    shareBtn.addEventListener('click',function(){{
-      navigator.share({{title:document.title,url:url}}).catch(function(){{}});
-    }});
+    var shareData={{title:document.title,url:url}};
+    var canShare=true;
+    if(navigator.canShare){{
+      try{{ canShare=navigator.canShare(shareData); }}catch(e){{ canShare=false; }}
+    }}
+    if(canShare){{
+      shareBtn.hidden=false;
+      shareBtn.addEventListener('click',function(){{
+        navigator.share(shareData).catch(function(err){{
+          if(err&&err.name==='AbortError') return;
+          copyLink().then(function(copied){{
+            if(copied) announce('Sharing unavailable here, so the link was copied instead.');
+          }});
+        }});
+      }});
+    }}
   }}
 }})();
 </script>

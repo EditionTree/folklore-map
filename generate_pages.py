@@ -185,6 +185,16 @@ def load_collections():
         return []
 
 
+def load_page_intros():
+    """Curated category/region intros; {} if absent. Missing keys fall back to
+    the generator's auto one-liner, so this can be filled in over time."""
+    try:
+        d = json.load(io.open("page_intros.json", encoding="utf-8"))
+        return d.get("categories", {}), d.get("regions", {})
+    except Exception:
+        return {}, {}
+
+
 def _simple_match(leg, cond):
     """A single condition: tags_all / tags_any / categories, all ANDed."""
     tags = set(leg.get("tags") or [])
@@ -585,6 +595,7 @@ def build():
     resolve_modified_dates(legends, today)  # stamps each leg["date_modified"]
     update_homepage_count(len(legends))
     meta = load_category_meta()
+    cat_intros, region_intros = load_page_intros()
     os.makedirs(OUT_DIR, exist_ok=True)
 
     # Unique slugs
@@ -752,7 +763,7 @@ def build():
             desc=f"Browse {len(entries)} {label.lower()} from across British and Irish folklore — each pinned to the place its story is rooted.",
             url=url,
             h1=label,
-            intro=f"{len(entries)} {label.lower()} and related folklore from across Britain and Ireland.",
+            intro=cat_intros.get(c) or f"{len(entries)} {label.lower()} and related folklore from across Britain and Ireland.",
             crumb=label,
             nav_html=nav_links(cat_nav_items, c),
             cards_html=cards,
@@ -777,7 +788,7 @@ def build():
             desc=f"{len(entries)} myths, legends, ghosts and folklore entries rooted in {rn}.",
             url=url,
             h1=f"Folklore of {rn}",
-            intro=f"{len(entries)} legends, ghosts and folklore entries rooted in {rn}.",
+            intro=region_intros.get(t) or f"{len(entries)} legends, ghosts and folklore entries rooted in {rn}.",
             crumb=rn,
             nav_html=nav_links(nation_nav_items, t),
             cards_html=cards,

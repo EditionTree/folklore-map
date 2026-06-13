@@ -270,6 +270,21 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Spectral',seri
 
 /* ── SECTIONS ── */
 .section{padding:48px 0 0}
+.feature-row{
+  display:grid;
+  grid-template-columns:minmax(0,1.1fr) minmax(280px,.9fr);
+  gap:28px;
+  align-items:start;
+  padding-top:48px;
+  width:min(1080px,calc(100vw - 40px));
+  position:relative;
+  left:50%;
+  transform:translateX(-50%);
+}
+.feature-row .section{padding:0}
+.legend-feature{grid-column:1;grid-row:1}
+.place-feature{grid-column:2;grid-row:1}
+.place-feature .place-map{width:min(100%,360px)}
 
 .section-rule{
   display:flex;align-items:center;gap:14px;
@@ -460,6 +475,8 @@ footer a{color:var(--ink-light)}
   .cat-grid,.recent-grid{grid-template-columns:1fr}
 }
 @media(max-width:820px){
+  .feature-row{grid-template-columns:1fr;gap:42px;width:100%;left:auto;transform:none}
+  .legend-feature,.place-feature{grid-column:1;grid-row:auto}
   .hero-place-map{justify-content:center;margin-top:4px}
   .place-map{width:min(100%,290px)}
 }
@@ -524,8 +541,9 @@ footer a{color:var(--ink-light)}
 <!-- ── BODY ── -->
 <div class="wrap">
 
+  <div class="feature-row">
   <!-- Explore by place -->
-  <section class="section">
+  <section class="section place-feature">
     <div class="section-rule"><span>Explore by place</span></div>
     <div class="hero-place-map place-explorer">
       <svg class="place-map" viewBox="0 0 400 500" role="img" aria-labelledby="placeMapTitle placeMapDesc">
@@ -551,7 +569,7 @@ footer a{color:var(--ink-light)}
   </section>
 
   <!-- Legend of the week -->
-  <section class="section">
+  <section class="section legend-feature">
     <div class="section-rule"><span>Legend of the Week</span></div>
     <div class="lotw" id="lotw">
       <svg class="lotw-watermark" id="lotwMark" viewBox="0 0 512 512" aria-hidden="true" style="display:none"><path id="lotwMarkPath" d="" fill="currentColor"/></svg>
@@ -562,6 +580,7 @@ footer a{color:var(--ink-light)}
       <a class="btn btn-primary" id="lotwLink" href="./map">Read the tale</a>
     </div>
   </section>
+  </div>
 
   <!-- Recently added -->
   <section class="section">

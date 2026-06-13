@@ -409,21 +409,43 @@ p{margin-bottom:14px;font-size:16.5px}
   font-size:14.5px;
   margin:4px 0 2px;
 }
-.place-labels{pointer-events:none}
-.place-label .pl-name{
+.place-explorer{flex-direction:column}
+.place-key{
+  list-style:none;
+  margin:14px 0 0;
+  padding:0;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:7px 9px;
+}
+.place-key a{
+  display:flex;
+  align-items:baseline;
+  gap:7px;
+  padding:5px 12px;
+  border:1px solid rgba(176,144,96,.5);
+  border-radius:999px;
+  background:rgba(243,234,215,.5);
+  text-decoration:none;
+  transition:background .15s,border-color .15s;
+}
+.place-key a:hover,.place-key a:focus{
+  background:var(--accent-warm);
+  border-color:var(--accent);
+}
+.pk-name{
   font-family:'Marcellus',serif;
   font-size:13px;
   letter-spacing:.02em;
-  fill:var(--ink);
+  color:var(--ink);
 }
-.place-label .pl-count{
+.pk-count{
   font-family:'Spectral',serif;
-  font-size:9.5px;
-  font-style:italic;
-  fill:var(--accent);
+  font-size:12.5px;
+  font-weight:600;
+  color:var(--accent);
 }
-.place-label-sm .pl-name{font-size:11px}
-.place-label-sm .pl-count{font-size:8.5px}
 
 /* ── CATEGORY GRID ── */
 .cat-grid{
@@ -607,14 +629,14 @@ footer a{color:var(--ink-light)}
         <a class="place-shape" href="./map?region=scotland" aria-label="Explore legends in Scotland">
           <title>Scotland</title><use href="region-map.svg#region-scotland"></use>
         </a>
-        <g class="place-labels" aria-hidden="true">
-          <text class="place-label" data-region="scotland" x="252" y="150" text-anchor="middle"><tspan class="pl-name">Scotland</tspan><tspan class="pl-count" x="252" dy="12"></tspan></text>
-          <text class="place-label" data-region="england" x="328" y="398" text-anchor="middle"><tspan class="pl-name">England</tspan><tspan class="pl-count" x="328" dy="12"></tspan></text>
-          <text class="place-label" data-region="wales" x="248" y="384" text-anchor="middle"><tspan class="pl-name">Wales</tspan><tspan class="pl-count" x="248" dy="11"></tspan></text>
-          <text class="place-label" data-region="ireland" x="128" y="356" text-anchor="middle"><tspan class="pl-name">Ireland</tspan><tspan class="pl-count" x="128" dy="12"></tspan></text>
-          <text class="place-label place-label-sm" data-region="northern-ireland" x="180" y="294" text-anchor="middle"><tspan class="pl-name">N. Ireland</tspan><tspan class="pl-count" x="180" dy="11"></tspan></text>
-        </g>
       </svg>
+      <ul class="place-key" aria-label="Legend counts by place">
+        <li><a href="./map?region=england" data-region="england"><span class="pk-name">England</span><span class="pk-count"></span></a></li>
+        <li><a href="./map?region=scotland" data-region="scotland"><span class="pk-name">Scotland</span><span class="pk-count"></span></a></li>
+        <li><a href="./map?region=wales" data-region="wales"><span class="pk-name">Wales</span><span class="pk-count"></span></a></li>
+        <li><a href="./map?region=ireland" data-region="ireland"><span class="pk-name">Ireland</span><span class="pk-count"></span></a></li>
+        <li><a href="./map?region=northern-ireland" data-region="northern-ireland"><span class="pk-name">N. Ireland</span><span class="pk-count"></span></a></li>
+      </ul>
     </div>
   </section>
 
@@ -774,11 +796,11 @@ footer a{color:var(--ink-light)}
         if (tags.includes(nation)) counts[nation] = (counts[nation] || 0) + 1;
       }
     }
-    document.querySelectorAll('.place-label').forEach(t => {
-      const nation = t.getAttribute('data-region');
+    document.querySelectorAll('.place-key a[data-region]').forEach(a => {
+      const nation = a.getAttribute('data-region');
       const n = counts[nation] || 0;
-      const c = t.querySelector('.pl-count');
-      if (c) c.textContent = n + (n === 1 ? ' legend' : ' legends');
+      const c = a.querySelector('.pk-count');
+      if (c) c.textContent = n;
     });
     document.querySelectorAll('.place-shape').forEach(a => {
       const m = (a.getAttribute('href') || '').match(/region=([\w-]+)/);

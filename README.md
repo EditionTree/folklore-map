@@ -73,6 +73,23 @@ Migrations live in `supabase/migrations/`. The `detail`, `tags` and
 Supabase — `detail`, `tags` and `date_added` are stored for future use but
 deliberately excluded from the map's initial data load to keep it small.
 
+## Image-Led Legend Pages
+
+The redesigned editorial page is rolled out gradually through
+`legend_pages.json`. An entry becomes image-led only when its compressed hero
+image and page metadata are present; all other records keep the established
+legend template.
+
+Add the hero image under `legend-images/`, add the matching legend name to the
+manifest, then regenerate the static pages:
+
+```powershell
+python generate_pages.py
+```
+
+The shared layout and map behaviour live in `legend-page.css` and
+`legend-page.js`. Do not edit generated files under `legends/` directly.
+
 ## Clean Database Sync
 
 Use this after reviewing local seed and JSON changes:

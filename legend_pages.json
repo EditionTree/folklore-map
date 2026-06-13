@@ -1,0 +1,49 @@
+{
+  "pages": {
+    "Black Shuck": {
+      "priority": 1,
+      "image": "legend-images/black-shuck-hero.jpg",
+      "alt": "A huge black dog crossing a rain-soaked lane near a medieval Norfolk church",
+      "caption": "A visual interpretation of the East Anglian legend",
+      "map_title": "East Anglia",
+      "section_heading": "The storm at Bungay",
+      "pullquote": "To meet his gaze, tradition holds, is to be marked for death within the twelvemonth.",
+      "facts": {
+        "Tradition": "English folklore",
+        "Type": "Spectral hound",
+        "Setting": "East Anglia",
+        "Motif": "Death omen"
+      }
+    },
+    "Lambton Worm": {
+      "priority": 2,
+      "image": "legend-images/lambton-worm-hero.jpg",
+      "alt": "An enormous dark serpent coiling through the shallows of the River Wear",
+      "caption": "A visual interpretation of the County Durham legend",
+      "map_title": "County Durham",
+      "section_heading": "The battle in the river",
+      "pullquote": "He must then slay the first living thing he met, or a curse would fall on nine generations of Lambtons.",
+      "facts": {
+        "Tradition": "English folklore",
+        "Type": "Worm or dragon",
+        "Setting": "River Wear",
+        "Motif": "Family curse"
+      }
+    },
+    "Barghest": {
+      "priority": 3,
+      "image": "legend-images/barghest-hero.jpg",
+      "alt": "A large black hound standing beside an old Yorkshire churchyard",
+      "caption": "A visual interpretation of the Yorkshire legend",
+      "map_title": "Yorkshire",
+      "section_heading": "The black dogs of Britain",
+      "pullquote": "To see the Barghest, or to hear its howl, was widely held to be an omen of death.",
+      "facts": {
+        "Tradition": "Northern English",
+        "Type": "Spectral hound",
+        "Setting": "Yorkshire",
+        "Motif": "Death omen"
+      }
+    }
+  }
+}

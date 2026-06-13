@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-13T18:32:26.354252Z",
+  "generated": "2026-06-13T18:42:36.440839Z",
   "total": 565,
   "categories": {
     "beast": "Beasts",
@@ -2785,7 +2785,7 @@
       "lng": -0.3333,
       "category": "dragon",
       "region": "Sussex",
-      "summary": "For many years a great serpent made its lair in the dense forest south of Horsham, ravaging cattle and poisoning the land. Witnesses in 1614 described it as nine feet long, leaving a trail of slime and a lingering stench. Where its body coiled, white lilies and adder's tongue sprang up — plants said to have grown from its shed venom.",
+      "summary": "In 1614 a nine-foot serpent with two great football-sized lumps was said to lurk in St Leonard's Forest near Horsham — leaving a trail of slime, and killing dogs and a man with its venomous breath.",
       "source": "https://en.wikipedia.org/wiki/Dragon_of_St_Leonard%27s_Forest",
       "date_added": "2026-06-03",
       "tags": [
@@ -2795,7 +2795,8 @@
         "forest",
         "england",
         "sussex"
-      ]
+      ],
+      "detail": "In August 1614, a London printer named John Trundle published an eighteen-page pamphlet describing a monstrous serpent discovered in the woods south of Horsham. According to the account, the creature was some nine feet long, coloured red and black, with two great lumps on its sides \"as big as a football\". It moved swiftly when provoked but otherwise lay still, and everywhere it passed it left behind a glutinous, slime-like trail. The pamphlet named three witnesses — John Steele, Christopher Holder, and a widow living near Faygate — who claimed to have seen the beast at close range, and reported that it had already killed two dogs and a man, apparently by spitting venom rather than biting.\n\nTrundle's pamphlet opens with an unusual disclaimer, admitting that earlier \"true reports\" of monsters in print had sometimes turned out to be false, but insisting this account could be trusted. Whether genuine sighting, escaped exotic animal, or simply a publisher's bid for a bestseller in an age hungry for wonders, the story took hold. Local tradition held that wherever the dragon's coiled body had rested, white lilies and adder's-tongue fern sprang up afterwards, said to have grown from its shed venom.\n\nThe St Leonard's Forest dragon is one of the best-documented \"dragon sightings\" in English folklore, surviving not as an oral tale but as a printed news pamphlet — a format more usually associated with reports of monstrous births, comets, and other portents of the period. It sits within a wider Sussex tradition of serpent-haunted woods and \"knucker holes\", and the forest's association with St Leonard, said to have driven out venomous creatures himself, gave the story an extra frisson of local resonance."
     },
     {
       "name": "Dragon of Strathmartine",
@@ -3691,7 +3692,7 @@
       "lng": -4.8198,
       "category": "location",
       "region": "Gourock, Scotland",
-      "summary": "The megalithic Kempock Stone, popularly known as Granny Kempock, stands on a cliff behind Kempock Street, the main shopping street in Gourock, Scotland. The stone, or menhir, is grey mica schist and of indeterminate origin, but it has been suggested that it is an old altar to the pagan god Baal, or a memorial to an ancient battle.",
+      "summary": "A hooded standing stone above Gourock harbour, walked round seven times by newlyweds and sailors for luck — and, in 1662, the alleged target of a witch coven who tried to topple it into the sea.",
       "source": "https://en.wikipedia.org/wiki/Granny_Kempock_Stone",
       "date_added": "2026-06-03",
       "tags": [
@@ -3700,7 +3701,8 @@
         "standing-stones",
         "battle",
         "scotland"
-      ]
+      ],
+      "detail": "On a low cliff behind Kempock Street in Gourock stands a six-foot block of mica schist, weathered into a shape that locals have long read as a hooded old woman bent over — hence \"Granny\" Kempock. Its origins are unknown: suggestions over the years have ranged from a prehistoric standing stone or altar to a memorial marking an ancient battle, but no record explains who first gave it its name or its grandmotherly nickname.\n\nFor generations the stone was treated as a source of luck for anyone setting out on a journey by sea or into marriage. Fishermen about to sail, and couples newly wed, would carry a bucket of sand up from the shore and walk around the stone seven times against the sun (withershins) while chanting, in the belief that this secured Granny Kempock's blessing for a safe voyage or a fortunate marriage — a wedding in the district was said to be unlucky if the couple skipped the circuit.\n\nThe stone's reputation took a darker turn in 1662, during one of Scotland's many witch-hunts. Mary Lamont, a teenage servant from nearby Innerkip, confessed — after questioning — to having met with a coven of local women who danced around the Kempock Stone on the sabbath and plotted to drag it into the Firth of Clyde, believing this would raise a storm to wreck ships and ruin the local fishing fleet. Lamont and several of her co-accused were burned for witchcraft later that year, a real and brutal episode that has since become inseparable from the stone's folklore — turning a stone for blessing sailors into one supposedly capable, in the wrong hands, of sinking them."
     },
     {
       "name": "Great Bell of Burgh le Marsh",
@@ -3794,7 +3796,7 @@
       "lng": -6.883,
       "category": "fairy",
       "region": "Hebrides, Scotland",
-      "summary": "The Gruagach, or Long-Haired One, is a tutelary fairy spirit of the Hebrides and Highland Scotland believed to protect cattle and livestock. Libations of warm milk were left in hollowed stones called clach na gruagaich. Such offering stones have been recorded across islands including Lewis, Islay, Mull, Tiree, Arran, and St Kilda.",
+      "summary": "A long-haired guardian spirit of Highland byres: leave a nightly bowl of milk on her hollowed \"gruagach stone\", or wake to find the cattle loose — and the best cow dead in the fold.",
       "source": "https://en.wikipedia.org/wiki/Gruagach",
       "date_added": "2026-06-03",
       "tags": [
@@ -3803,7 +3805,8 @@
         "guardian",
         "scotland",
         "hebrides"
-      ]
+      ],
+      "detail": "Across the Highlands and Western Isles, the gruagach — literally the \"long-haired one\" — was a fairy spirit attached not to a person or a house but to a herd of cattle. Accounts of its appearance and temperament vary enormously from district to district: sometimes a shaggy, hairy man, more often, especially in the Hebrides, a young woman in a green dress, and elsewhere closer kin to the brownie or the glaistig. What remained constant was its role as a watcher over the byre and the grazing — a spirit to be kept on good terms, because an unhappy gruagach made for an unlucky herd.\n\nThat good relationship had a price. Every evening at milking time, a libation of milk was poured out for the gruagach, usually onto a flat \"gruagach stone\" — leac na gruagaich — kept near the fold, some with a natural hollow to hold the offering. Folklorist Alexander Carmichael recorded dozens of these stones across Lewis, Harris, Skye, Mull, Tiree, Islay, Arran and St Kilda, many still pointed out by name in the nineteenth century. The consequences of forgetting were said to escalate: first the cattle would break out of the fold overnight and be found trampling the corn, and if the offering was withheld again, the best cow in the herd would be found dead by morning.\n\nThe gruagach belongs to a much wider Gaelic pattern of small, regular offerings made to keep household and farm spirits benevolent rather than hostile — the same logic that lies behind brownie lore across Britain. What makes the gruagach distinctive is how closely it was tied to the practical anxieties of a cattle-based economy: in communities where a single cow's death could be a genuine hardship, a nightly cup of milk was a small price for its protection."
     },
     {
       "name": "Grubstones",
@@ -6252,7 +6255,7 @@
       "lng": -6.6972,
       "category": "location",
       "region": "Emain Macha, County Armagh",
-      "summary": "Navan Fort is an ancient ceremonial monument near Armagh, Northern Ireland. According to tradition it was one of the great royal sites of pre-Christian Gaelic Ireland and the capital of the Ulaidh. It is a large circular hilltop enclosure—marked by a bank and ditch—inside which is a circular mound and the remains of a ring barrow.",
+      "summary": "Iron Age Emain Macha, mythic capital of the Ulaidh, where Cú Chulainn served King Conchobar — and a great timber temple was deliberately built, burned and buried around 95 BC.",
       "source": "https://en.wikipedia.org/wiki/Navan_Fort",
       "date_added": "2026-05-30",
       "tags": [
@@ -6262,7 +6265,8 @@
         "celtic",
         "northern-ireland",
         "county-armagh"
-      ]
+      ],
+      "detail": "In the medieval tales of the Ulster Cycle, Emain Macha was the stronghold of King Conchobar mac Nessa and the setting for some of the earliest and most violent stories in Irish literature. It was here that the boy-hero Cú Chulainn trained among Conchobar's warriors, and from here that the men of Ulster marched out — or failed to, struck down by the curse of Macha — to defend against Queen Medb's army in the Táin Bó Cúailnge, the great cattle raid that forms the centrepiece of the cycle. The site's name itself recalls Macha, a goddess-figure whose mistreatment by the Ulster king was said to have doomed his warriors to recurring bouts of weakness at moments of greatest danger.\n\nArchaeology has matched this legendary importance with a genuinely strange discovery. Around 95 BC, the people who used the hilltop built an enormous circular timber structure some 40 metres across, with a massive central post — then, rather than letting it weather or burn by accident, they deliberately packed it with stones, set it alight, and buried the remains under a mound of turf. No comparable act of ritual construction-and-burial is known elsewhere in prehistoric Ireland, and its purpose remains debated: a temple built for one ceremonial use, a statement of royal power, or an offering on a scale to match the site's later mythic reputation.\n\nNavan Fort is counted among Ireland's great \"royal sites\", alongside the Hill of Tara, Dún Ailinne and Rathcroghan — places where archaeology, place-name lore and medieval saga converge on the same hilltop. Today it is the centrepiece of a visitor centre dedicated to the Ulster Cycle, but the bank-and-ditch enclosure and its buried mound remain much as they have for two thousand years, a quiet field above Armagh that medieval scribes once called the capital of a kingdom."
     },
     {
       "name": "Newgrange",
@@ -8253,7 +8257,7 @@
       "lng": -4.424,
       "category": "water",
       "region": "Highland, Scotland",
-      "summary": "A vast creature said to inhabit the deep waters of Loch Ness. A much earlier River Ness water-beast tradition appears in Adomnan's Life of St Columba: the saint commands the creature to retreat when it threatens one of his followers. Modern Nessie has been hunted by cameras, submarines and sonar for over a century, always elusive.",
+      "summary": "Britain's most famous monster lurks in Loch Ness's peat-dark depths — first recorded in 565 AD when St Columba banished a river-beast, and hunted by camera and sonar ever since.",
       "source": "https://en.wikipedia.org/wiki/Loch_Ness_monster",
       "date_added": "2026-06-03",
       "tags": [
@@ -8261,7 +8265,8 @@
         "river",
         "scotland",
         "highland"
-      ]
+      ],
+      "detail": "The earliest recorded brush with something unusual in the waters around Loch Ness comes from Adomnán's seventh-century Life of St Columba, which describes the saint encountering an \"aquatic monster\" in the River Ness in 565 AD. When the beast lunged at one of his companions, Columba is said to have made the sign of the cross and commanded it to go no further — and it obeyed, retreating as if dragged back by ropes. For centuries afterwards, the loch and its surrounding glens remained part of a Highland landscape rich in tales of water-horses and other lake-dwelling spirits.\n\nThe modern legend began in earnest in 1933, after a new road was cut along the loch's northern shore, giving travellers an unbroken view of the water for the first time. A wave of sightings followed, including a much-publicised report of a \"dragon or prehistoric animal\" crossing the road. The following year brought the so-called Surgeon's Photograph, showing a long-necked head and neck rising from the water — an image that shaped the popular idea of Nessie as a surviving plesiosaur, and which was only revealed decades later to have been staged with a toy submarine and a sculpted head.\n\nDespite repeated sonar sweeps, underwater cameras, and large-scale searches such as Operation Deepscan in 1987, no conclusive evidence of a large unknown animal has ever been found. Yet the loch remains one of the most surveyed bodies of water on earth, and Nessie has become inseparable from Scotland's image abroad — a rare case of a folkloric water-beast outliving its origins to become a modern cultural icon in its own right."
     },
     {
       "name": "The Loe",

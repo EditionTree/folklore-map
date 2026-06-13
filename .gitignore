@@ -10,3 +10,7 @@ source_snapshots/
 bug_reports/
 .claude/
 _drafts/
+
+# Search Console pipe — secret service-account key + local-only output
+gsc-service-account.json
+search-insights/

@@ -85,6 +85,62 @@ button{font:inherit}
   box-shadow:0 18px 45px rgba(36,25,15,.26);
 }
 .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+.hero-placeholder{
+  position:absolute;
+  inset:0;
+  overflow:hidden;
+  color:rgba(243,234,215,.58);
+  background:
+    radial-gradient(circle at 72% 42%,var(--placeholder-colour),transparent 24rem),
+    linear-gradient(135deg,#29231c 0%,#141311 58%,#292018 100%);
+}
+.hero-placeholder::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  opacity:.3;
+  background-image:
+    linear-gradient(rgba(243,234,215,.08) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(243,234,215,.08) 1px,transparent 1px);
+  background-size:48px 48px;
+  transform:rotate(-8deg) scale(1.15);
+}
+.placeholder-lines{
+  position:absolute;
+  inset:11% 7% 12% 46%;
+  opacity:.28;
+  border:1px solid var(--placeholder-colour);
+  border-radius:50%;
+  box-shadow:
+    0 0 0 34px rgba(185,158,114,.09),
+    0 0 0 68px rgba(185,158,114,.06),
+    0 0 0 102px rgba(185,158,114,.035);
+}
+.hero-placeholder svg{
+  position:absolute;
+  top:50%;
+  right:14%;
+  width:min(25vw,260px);
+  height:min(25vw,260px);
+  color:var(--placeholder-colour);
+  opacity:.55;
+  transform:translateY(-55%);
+}
+.hero-placeholder svg path{fill:currentColor}
+.hero-placeholder>span{
+  position:absolute;
+  right:12%;
+  bottom:12%;
+  padding:6px 10px;
+  border:1px solid rgba(243,234,215,.2);
+  border-radius:2px;
+  color:rgba(243,234,215,.62);
+  background:rgba(12,11,9,.45);
+  font-family:'Marcellus',serif;
+  font-size:10px;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
 .hero::after{
   content:'';
   position:absolute;
@@ -320,6 +376,8 @@ footer a{color:#c5b08e}
   .hero{min-height:550px}
   .hero::after{background:linear-gradient(0deg,rgba(10,10,9,.91) 0%,rgba(10,10,9,.55) 56%,rgba(10,10,9,.12) 100%)}
   .hero img{object-position:center}
+  .hero-placeholder svg{right:5%;width:210px;height:210px;opacity:.35}
+  .hero-placeholder>span{right:18px;bottom:16px}
   .hero-copy{width:100%;min-height:550px;padding:35px 25px;justify-content:flex-end}
   h1{font-size:52px}
   .standfirst{font-size:17px}

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <script>if(location.hostname.indexOf("pages.dev")>-1){location.replace("https://folklorefinder.uk"+location.pathname+location.search+location.hash);}</script>
-<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "64d1fd37251d426f8a0d8fbc83ea350b"}'></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"64d1fd37251d426f8a0d8fbc83ea350b"}'></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Redcap — Folklore of Britain &amp; Ireland</title>
 <meta name="description" content="A murderous goblin dwelling in ruined border castles, who dyes his cap with the blood of travellers he has slain. He must kill regularly or die himself.…"/>
@@ -19,145 +19,82 @@
 <meta name="twitter:title" content="Redcap"/>
 <meta name="twitter:description" content="A murderous goblin dwelling in ruined border castles, who dyes his cap with the blood of travellers he has slain. He must kill regularly or die himself.…"/>
 <meta name="twitter:image" content="https://folklorefinder.uk/og/category-fairy.png"/>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha384-sHL9NAb7lN7rfvG5lfHpm643Xkcjzp4jFvuavGOndn6pjVqS6ny56CAt3nsEVT4H" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://folklorefinder.uk/legend-page.css"/>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "CreativeWork", "name": "Redcap", "description": "A murderous goblin dwelling in ruined border castles, who dyes his cap with the blood of travellers he has slain. He must kill regularly or die himself.…", "url": "https://folklorefinder.uk/legends/redcap", "genre": "Folklore", "about": {"@type": "Place", "name": "Scottish Borders", "geo": {"@type": "GeoCoordinates", "latitude": 55.649, "longitude": -2.348}}, "isPartOf": {"@type": "WebSite", "name": "Folklore Map of Britain & Ireland", "url": "https://folklorefinder.uk/"}, "datePublished": "2026-06-03", "dateModified": "2026-06-03", "isBasedOn": {"@type": "CreativeWork", "url": "https://en.wikipedia.org/wiki/Redcap", "publisher": {"@type": "Organization", "name": "Wikipedia"}}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Legends", "item": "https://folklorefinder.uk/legends/"}, {"@type": "ListItem", "position": 2, "name": "Fae & Spirits", "item": "https://folklorefinder.uk/legends/category/fairy"}, {"@type": "ListItem", "position": 3, "name": "Border", "item": "https://folklorefinder.uk/legends/region/border"}, {"@type": "ListItem", "position": 4, "name": "Redcap", "item": "https://folklorefinder.uk/legends/redcap"}]}</script>
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{background:#e0d0b0;color:#2c1f0e;font-family:'Spectral',serif;line-height:1.7;min-height:100vh}
-.site-banner{position:relative;background:linear-gradient(135deg,rgba(196,98,42,0.18) 0%,rgba(176,144,96,0.06) 35%,transparent 60%),linear-gradient(180deg,#3d2510 0%,#1a0e06 45%,#2c1f0e 100%);padding:16px 20px;text-align:center}
-.site-banner::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,#8b3a1a 15%,#b09060 50%,#8b3a1a 85%,transparent)}
-.site-banner::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(176,144,96,.6) 20%,rgba(196,98,42,.8) 50%,rgba(176,144,96,.6) 80%,transparent)}
-.banner-link{display:inline-flex;align-items:center;gap:13px;text-decoration:none}
-.banner-emblem{width:48px;height:48px;object-fit:contain;flex-shrink:0}
-.banner-text{display:flex;flex-direction:column;align-items:center;line-height:1.15}
-.banner-title{font-family:'Marcellus',serif;font-size:21px;font-weight:400;color:#f2e8d5;letter-spacing:.09em;display:flex;align-items:center;justify-content:center;gap:9px}
-.banner-title i{color:#c4622a;font-style:normal;font-size:.6em;flex-shrink:0}
-.banner-sub{font-family:'Spectral',serif;font-size:12px;font-style:italic;color:rgba(176,144,96,.8);letter-spacing:.04em}
-.watermark{position:absolute;top:26px;right:24px;width:88px;height:88px;color:#8b3a1a;opacity:.1;pointer-events:none;z-index:0}
-@media(max-width:560px){.banner-title{font-size:15px}.banner-emblem{width:38px;height:38px}.banner-sub{font-size:11px}}
-.wrap{max-width:680px;margin:0 auto;padding:11px 20px 60px}
-.card{position:relative;overflow:hidden;background:#f2e8d5;border:1px solid #b09060;border-radius:6px;margin-top:30px;padding:32px;box-shadow:0 4px 20px rgba(44,31,14,.18)}
-.card>*:not(.watermark){position:relative;z-index:1}
-.card>.watermark{position:absolute;top:26px;right:24px;width:88px;height:88px;z-index:0}
-.cat{font-family:'Marcellus',serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#fff;background:#8b3a1a;display:inline-block;padding:3px 10px;border-radius:2px}
-h1{font-family:'Marcellus',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;line-height:1.15}
-.region{font-style:italic;color:#5c4a2a;margin-bottom:18px}
-.crumb{font-size:12.5px;color:#5c4a2a;margin-bottom:16px;line-height:1.5}
-.crumb a{color:#8b3a1a;text-decoration:none}
-.crumb a:hover{text-decoration:underline}
-.crumb .sep{color:#b09060;margin:0 6px}
-.crumb .here{color:#5c4a2a}
-.summary{font-size:17px}
-.summary-cont{font-size:17px;margin-top:14px}
-.cta{display:inline-block;margin-top:26px;background:#2c1f0e;color:#f2e8d5;font-family:'Marcellus',serif;font-size:13px;letter-spacing:.08em;text-transform:uppercase;padding:12px 22px;border-radius:3px;text-decoration:none}
-.cta:hover{background:#8b3a1a}
-.share-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
-.share-btn{font-family:'Marcellus',serif;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#8b3a1a;background:transparent;border:1px solid #b09060;border-radius:3px;padding:9px 16px;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
-.share-btn:hover{background:#8b3a1a;color:#f2e8d5;border-color:#8b3a1a}
-.share-status{position:absolute !important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-.src{display:block;margin-top:18px;font-size:13px;font-style:italic;color:#5c4a2a}
-.src-tier{color:#7a6a4a}
-.sources{margin-top:18px;font-size:13px;color:#5c4a2a}
-.sources-head{font-style:italic}
-.sources ul{list-style:none;margin:5px 0 0;padding:0}
-.sources li{margin:3px 0}
-.sources a{color:#8b3a1a}
-.src a{color:#8b3a1a}
-.back{display:inline-block;margin-top:22px;font-size:13px;color:#5c4a2a}
-.related{margin-top:36px}
-.related-head{font-family:'Marcellus',serif;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#8b3a1a;display:flex;align-items:center;gap:12px;margin-bottom:16px}
-.related-head::before,.related-head::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,#b09060)}
-.related-head::after{background:linear-gradient(90deg,#b09060,transparent)}
-.carousel{position:relative}
-.carousel-track{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding-bottom:8px;-webkit-overflow-scrolling:touch}
-.carousel-track::-webkit-scrollbar{height:6px}
-.carousel-track::-webkit-scrollbar-track{background:rgba(176,144,96,.15);border-radius:3px}
-.carousel-track::-webkit-scrollbar-thumb{background:rgba(139,58,26,.4);border-radius:3px}
-.rel-card{flex:0 0 198px;scroll-snap-align:start;background:#f2e8d5;border:1px solid #b09060;border-radius:5px;padding:14px 15px;text-decoration:none;color:#2c1f0e;transition:border-color .15s,transform .1s}
-.rel-card:hover{border-color:#c4622a;transform:translateY(-2px)}
-.rel-card span{display:block}
-.rel-cat{font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:#8b3a1a;padding:2px 8px;border-radius:3px;margin-bottom:8px;width:max-content;max-width:100%}
-.rel-name{font-family:'Marcellus',serif;font-size:15px;line-height:1.25;margin-bottom:4px}
-.rel-region{font-style:italic;font-size:12px;color:#5c4a2a}
-.carousel-btn{position:absolute;top:42%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;border:1px solid #b09060;background:#f2e8d5;color:#8b3a1a;font-family:'Marcellus',serif;font-size:18px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2;box-shadow:0 2px 8px rgba(44,31,14,.25)}
-.carousel-btn:hover{background:#8b3a1a;color:#f2e8d5}
-.carousel-btn.prev{left:-10px}
-.carousel-btn.next{right:-10px}
-@media(max-width:560px){.carousel-btn{display:none}.rel-card{flex-basis:170px}}
-footer{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}
-.topnav{display:flex;align-items:center;justify-content:center;gap:4px;background:#1a0e06;padding:11px 16px;border-bottom:1px solid rgba(176,144,96,0.2);flex-wrap:wrap}.topnav a{font-family:'Marcellus',serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:rgba(242,232,213,0.78);text-decoration:none;padding:6px 14px;border-radius:3px;transition:background .15s,color .15s}.topnav a:hover{color:#f2e8d5;background:rgba(196,98,42,0.18)}.topnav a.active{color:#c4622a}
-</style>
 </head>
 <body>
 <nav class="topnav"><a href="https://folklorefinder.uk/">Home</a><a href="https://folklorefinder.uk/map">Map</a><a href="https://folklorefinder.uk/legends/" class="active">Browse</a><a href="https://folklorefinder.uk/legends/collections">Collections</a><a href="https://folklorefinder.uk/about">About</a><a href="https://folklorefinder.uk/updates">Updates</a></nav>
-<header class="site-banner"><a class="banner-link" href="https://folklorefinder.uk/"><img src="https://folklorefinder.uk/green-man.png" class="banner-emblem" alt=""/><span class="banner-text"><span class="banner-title"><i>&#10022;</i> Folklore Map of Britain &amp; Ireland <i>&#10022;</i></span><span class="banner-sub">Myths, Legends &amp; Spectral Encounters</span></span></a></header>
-<div class="wrap">
-<nav class="crumb" aria-label="Breadcrumb"><a href="https://folklorefinder.uk/legends/">Legends</a><span class="sep">&#8250;</span><a href="https://folklorefinder.uk/legends/category/fairy">Fae &amp; Spirits</a><span class="sep">&#8250;</span><a href="https://folklorefinder.uk/legends/region/border">Border</a><span class="sep">&#8250;</span><span class="here">Redcap</span></nav>
-<article class="card">
-<span class="cat" style="background:#e655e3">Fae &amp; Spirits</span>
-<h1>Redcap</h1>
-<div class="region">Scottish Borders</div>
-<p class="summary">The Redcap is among the most bloodthirsty of all the goblins of British folklore — a squat, powerful old man with burning red eyes, iron claws and great teeth, who haunts the ruined peel towers and castles of the Anglo-Scottish border, the blood-soaked ground of centuries of reiving and war. He takes his name from the cap he dyes afresh in the blood of travellers unlucky enough to shelter in his keep, for the legend holds that should the blood in his cap ever dry, he will die.</p><p class="summary-cont">Despite the iron boots he wears he moves with terrible speed, and no strength of arm can stop him. The one defence recorded against him is scripture: confronted with words of the Bible or the brandished cross, the Redcap gives a great screech and vanishes, leaving a single tooth behind. He is bound tightly to the lawless history of the Borders, where the abandoned strongholds of feuding families made fitting lairs, and he remains one of the darkest figures in the folklore of that long-contested country.</p>
-<a class="cta" href="https://folklorefinder.uk/map?legend=Redcap">Explore on the interactive map &#8594;</a>
-<span class="src">Researched from <a href="https://en.wikipedia.org/wiki/Redcap" target="_blank" rel="noopener">Wikipedia</a> &#183; <span class="src-tier">encyclopedic</span></span>
-<div class="share-row" role="group" aria-label="Share this legend">
-<button type="button" class="share-btn" id="copyLinkBtn">Copy link</button>
-<button type="button" class="share-btn" id="webShareBtn" hidden>Share&#8230;</button>
-</div>
-<span class="share-status" id="shareStatus" role="status" aria-live="polite"></span>
-<svg class="watermark" viewBox="0 0 512 512" aria-hidden="true"><path d="M242.875 25.594c-46.25.117-92.147 12.63-130.375 39.75C68.81 96.34 35.56 146.5 23.625 217c-3.752 22.16 1.91 41.663 14.344 56.47 12.43 14.804 30.868 25.155 52.624 32.78 43.51 15.25 101.268 19.72 157.344 19.72 56.395 0 116.863-7.428 163.218-24 23.178-8.288 42.93-18.84 56.875-32.72 11.43-11.375 18.665-25.59 19.47-41.344h1.094l-1.438-10.594c-15.005-112.175-118.867-183.277-224.47-191-6.6-.482-13.204-.735-19.81-.718zm.063 18.687c6.123-.014 12.238.21 18.375.657 3.214.236 6.418.547 9.625.907-25.16 19.974 10.362 61.325 47.375 54.312 26.565-5.036 32.874-19.8 27.812-33.844 62.617 27.994 112.41 81.343 122.344 152.407l.155 1.06c1.887 14.112-2.827 25.35-13.78 36.25-2.64 2.627-5.673 5.182-9.033 7.658 3.986-14.92-.91-32.102-21.375-45.344-40.378-26.132-96.414 37.186-41.843 72.5.154.1.313.183.47.28-40.09 10.845-89.146 16.157-135.127 16.157-26.117 0-52.553-1.105-77.375-3.717 17.746-9.192 27.433-34.97 1.5-51.75-26.975-17.458-63.925 21.993-34.312 47.187-14.918-2.678-28.762-6.086-41-10.375-8.628-3.024-16.41-6.468-23.22-10.313 15.15-7.296 23.773-29.15 1.94-43.28-11.807-7.64-25.924-2.13-33 7.843-1.682-6.65-1.873-14.094-.407-22.75 3.89-22.972 10.086-43.39 18.156-61.438 2.32 19.157 15.042 34.623 35.56 31.094 62.195-10.696 55.24-98.255 9.22-90.343-1.82.314-3.578.685-5.28 1.126a182.124 182.124 0 0 1 23.593-19.97c12.744-9.04 26.488-16.332 40.906-21.937-.934 7.07 2.093 14.8 11.53 20.907 18.86 12.203 44.305-13.4 28.063-31.876 12.84-2.25 25.943-3.372 39.125-3.406zm-51.844 54.407c-4.59.115-9.263 1.438-13.656 4.282-38.004 24.593 1.004 68.694 29.125 50.5 32.066-20.753 9.32-55.4-15.47-54.782zm191.72 31.594c-24.964.418-21.014 38.305 2.81 45.564 36.154 11.015 34.472-35.725 7.72-43.875-3.954-1.206-7.466-1.74-10.53-1.69zm-116.845 27.626c-9.463.237-19.07 2.983-28.126 8.844-78.328 50.685 2.105 141.54 60.062 104.03 66.09-42.764 19.156-114.15-31.937-112.874zM335 338.594c-55.842 7.335-113.248 7.307-167.406 2.156-21.82 91.642-38.78 153.125 82.687 153.125 129.88 0 110.022-66.537 84.72-155.28z" fill="currentColor"/></svg>
-</article>
-<section class="related"><div class="related-head">Related Legends</div><div class="carousel"><button class="carousel-btn prev" type="button" aria-label="Scroll left">&#8249;</button><div class="carousel-track"><a class="rel-card" href="https://folklorefinder.uk/legends/worm-of-linton"><span class="rel-cat" style="background:#8b2a1a">Dragons</span><span class="rel-name">Worm of Linton</span><span class="rel-region">Scottish Borders</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/andrew-barton"><span class="rel-cat" style="background:#6b6b6b">Pirates</span><span class="rel-name">Andrew Barton</span><span class="rel-region">Leith, Scotland</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/kirk-yetholm-seat-of-the-gypsy-kings"><span class="rel-cat" style="background:#5a3a18">Sacred Sites</span><span class="rel-name">Kirk Yetholm, Seat of the Gypsy Kings</span><span class="rel-region">Kirk Yetholm, Scottish Borders, Scotland</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/battle-of-barry"><span class="rel-cat" style="background:#5a3a18">Sacred Sites</span><span class="rel-name">Battle of Barry</span><span class="rel-region">Barry, Angus, Scotland</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/william-wallace"><span class="rel-cat" style="background:#6a3a2a">Legendary Figures</span><span class="rel-name">William Wallace</span><span class="rel-region">Stirlingshire, Scotland</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/billy-marshall"><span class="rel-cat" style="background:#6a3a2a">Legendary Figures</span><span class="rel-name">Billy Marshall</span><span class="rel-region">Kirkcudbright, Galloway, Scotland</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/granny-kempock-stone"><span class="rel-cat" style="background:#5a3a18">Sacred Sites</span><span class="rel-name">Granny Kempock Stone</span><span class="rel-region">Gourock, Scotland</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/fat-lips"><span class="rel-cat" style="background:#e655e3">Fae &amp; Spirits</span><span class="rel-name">Fat Lips</span><span class="rel-region">Jedburgh Castle Jail, Scottish Borders</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/hundeprest-of-melrose"><span class="rel-cat" style="background:#4a3d6e">Ghosts</span><span class="rel-name">Hundeprest of Melrose</span><span class="rel-region">Melrose, Scottish Borders, Scotland</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/habetrot"><span class="rel-cat" style="background:#e655e3">Fae &amp; Spirits</span><span class="rel-name">Habetrot</span><span class="rel-region">Selkirkshire, Scottish Borders, Scotland</span></a></div><button class="carousel-btn next" type="button" aria-label="Scroll right">&#8250;</button></div></section>
-<a class="back" href="https://folklorefinder.uk/legends/">&#8592; Browse all legends</a>
-</div>
-<footer>Part of the Folklore Map of Britain &amp; Ireland &#183; &#169; EditionTree &#183; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener" style="color:#5c4a2a">&#9749; Ko-fi</a> &#183; <a href="https://folklorefinder.uk/privacy" style="color:#5c4a2a">Privacy</a></footer>
-<script>
-document.querySelectorAll('.carousel').forEach(function(c){
-  var t=c.querySelector('.carousel-track');
-  var p=c.querySelector('.prev'), n=c.querySelector('.next');
-  if(p)p.addEventListener('click',function(){t.scrollBy({left:-220,behavior:'smooth'});});
-  if(n)n.addEventListener('click',function(){t.scrollBy({left:220,behavior:'smooth'});});
-});
-(function(){
-  var link=document.querySelector('link[rel=canonical]');
-  var url=(link&&link.href)||location.href;
-  var status=document.getElementById('shareStatus');
-  var copyBtn=document.getElementById('copyLinkBtn');
-  var revertTimer=null;
-  function announce(m){ if(status) status.textContent=m; }
-  function markCopied(){
-    announce('Link copied');           // for screen readers (visually hidden)
-    if(copyBtn){
-      copyBtn.textContent='Copied';
-      clearTimeout(revertTimer);
-      revertTimer=setTimeout(function(){ copyBtn.textContent='Copy link'; },2000);
-    }
-  }
-  function fallbackCopy(){
-    try{
-      var ta=document.createElement('textarea');
-      ta.value=url; ta.setAttribute('readonly','');
-      ta.style.position='absolute'; ta.style.left='-9999px';
-      document.body.appendChild(ta); ta.select();
-      document.execCommand('copy'); document.body.removeChild(ta);
-      markCopied();
-    }catch(e){ announce("Couldn't copy. Press Ctrl+C to copy the address."); }
-  }
-  if(copyBtn) copyBtn.addEventListener('click',function(){
-    if(navigator.clipboard&&navigator.clipboard.writeText){
-      navigator.clipboard.writeText(url).then(markCopied,fallbackCopy);
-    } else { fallbackCopy(); }
-  });
-  var shareBtn=document.getElementById('webShareBtn');
-  if(shareBtn&&navigator.share){
-    shareBtn.hidden=false;
-    shareBtn.addEventListener('click',function(){
-      navigator.share({title:document.title,url:url}).catch(function(){});
-    });
-  }
-})();
-</script>
+<header class="brandbar">
+  <a class="brand" href="https://folklorefinder.uk/">
+    <img src="https://folklorefinder.uk/green-man.png" alt=""/>
+    <span>
+      <span class="brand-name">Folklore Map of Britain &amp; Ireland</span>
+      <span class="brand-line">Myths, Legends &amp; Spectral Encounters</span>
+    </span>
+  </a>
+</header>
+<main>
+  <div class="shell">
+    <nav class="crumb" aria-label="Breadcrumb"><a href="https://folklorefinder.uk/legends/">Legends</a><span class="sep">&#8250;</span><a href="https://folklorefinder.uk/legends/category/fairy">Fae &amp; Spirits</a><span class="sep">&#8250;</span><a href="https://folklorefinder.uk/legends/region/border">Border</a><span class="sep">&#8250;</span><span class="here">Redcap</span></nav>
+    <section class="hero" aria-labelledby="legend-title">
+      <div class="hero-placeholder" role="img" aria-label="Illustration placeholder for Redcap" style="--placeholder-colour:#7e5577"><div class="placeholder-lines" aria-hidden="true"></div><svg viewBox="0 0 512 512" aria-hidden="true"><path d="M242.875 25.594c-46.25.117-92.147 12.63-130.375 39.75C68.81 96.34 35.56 146.5 23.625 217c-3.752 22.16 1.91 41.663 14.344 56.47 12.43 14.804 30.868 25.155 52.624 32.78 43.51 15.25 101.268 19.72 157.344 19.72 56.395 0 116.863-7.428 163.218-24 23.178-8.288 42.93-18.84 56.875-32.72 11.43-11.375 18.665-25.59 19.47-41.344h1.094l-1.438-10.594c-15.005-112.175-118.867-183.277-224.47-191-6.6-.482-13.204-.735-19.81-.718zm.063 18.687c6.123-.014 12.238.21 18.375.657 3.214.236 6.418.547 9.625.907-25.16 19.974 10.362 61.325 47.375 54.312 26.565-5.036 32.874-19.8 27.812-33.844 62.617 27.994 112.41 81.343 122.344 152.407l.155 1.06c1.887 14.112-2.827 25.35-13.78 36.25-2.64 2.627-5.673 5.182-9.033 7.658 3.986-14.92-.91-32.102-21.375-45.344-40.378-26.132-96.414 37.186-41.843 72.5.154.1.313.183.47.28-40.09 10.845-89.146 16.157-135.127 16.157-26.117 0-52.553-1.105-77.375-3.717 17.746-9.192 27.433-34.97 1.5-51.75-26.975-17.458-63.925 21.993-34.312 47.187-14.918-2.678-28.762-6.086-41-10.375-8.628-3.024-16.41-6.468-23.22-10.313 15.15-7.296 23.773-29.15 1.94-43.28-11.807-7.64-25.924-2.13-33 7.843-1.682-6.65-1.873-14.094-.407-22.75 3.89-22.972 10.086-43.39 18.156-61.438 2.32 19.157 15.042 34.623 35.56 31.094 62.195-10.696 55.24-98.255 9.22-90.343-1.82.314-3.578.685-5.28 1.126a182.124 182.124 0 0 1 23.593-19.97c12.744-9.04 26.488-16.332 40.906-21.937-.934 7.07 2.093 14.8 11.53 20.907 18.86 12.203 44.305-13.4 28.063-31.876 12.84-2.25 25.943-3.372 39.125-3.406zm-51.844 54.407c-4.59.115-9.263 1.438-13.656 4.282-38.004 24.593 1.004 68.694 29.125 50.5 32.066-20.753 9.32-55.4-15.47-54.782zm191.72 31.594c-24.964.418-21.014 38.305 2.81 45.564 36.154 11.015 34.472-35.725 7.72-43.875-3.954-1.206-7.466-1.74-10.53-1.69zm-116.845 27.626c-9.463.237-19.07 2.983-28.126 8.844-78.328 50.685 2.105 141.54 60.062 104.03 66.09-42.764 19.156-114.15-31.937-112.874zM335 338.594c-55.842 7.335-113.248 7.307-167.406 2.156-21.82 91.642-38.78 153.125 82.687 153.125 129.88 0 110.022-66.537 84.72-155.28z"/></svg><span>Illustration in preparation</span></div>
+      <div class="hero-copy">
+        <div class="eyebrow">
+          <span class="category" style="background:#7e5577">Fae &amp; Spirits</span>
+          <span class="place">Scottish Borders</span>
+        </div>
+        <h1 id="legend-title">Redcap</h1>
+        <p class="standfirst">A murderous goblin dwelling in ruined border castles, who dyes his cap with the blood of travellers he has slain. He must kill regularly or die himself. Iron repels him; scripture makes him flee.</p>
+      </div>
+
+    </section>
+
+    <div class="content-grid">
+      <article class="article">
+        <div class="article-label">The legend</div>
+        <p class="opening">The Redcap is among the most bloodthirsty of all the goblins of British folklore — a squat, powerful old man with burning red eyes, iron claws and great teeth, who haunts the ruined peel towers and castles of the Anglo-Scottish border, the blood-soaked ground of centuries of reiving and war. He takes his name from the cap he dyes afresh in the blood of travellers unlucky enough to shelter in his keep, for the legend holds that should the blood in his cap ever dry, he will die.</p><h2>The story</h2><p>Despite the iron boots he wears he moves with terrible speed, and no strength of arm can stop him. The one defence recorded against him is scripture: confronted with words of the Bible or the brandished cross, the Redcap gives a great screech and vanishes, leaving a single tooth behind. He is bound tightly to the lawless history of the Borders, where the abandoned strongholds of feuding families made fitting lairs, and he remains one of the darkest figures in the folklore of that long-contested country.</p>
+        <div class="article-actions" aria-label="Legend actions">
+          <a class="button" href="https://folklorefinder.uk/map?legend=Redcap">Open on full map</a>
+          <button class="button secondary" id="copyLinkBtn" type="button">Copy link</button>
+          <button class="button secondary" id="webShareBtn" type="button" hidden>Share</button>
+        </div>
+        <span class="share-status" id="shareStatus" role="status" aria-live="polite"></span>
+      </article>
+
+      <aside class="sidebar" aria-label="Legend details">
+        <section class="side-card">
+          <div class="side-pad">
+            <p class="side-kicker">Explore the place</p>
+            <h2>Scottish Borders</h2>
+            <p class="map-meta">Scottish Borders</p>
+          </div>
+          <div id="miniMap" data-lat="55.649000" data-lng="-2.348000" data-colour="#7e5577" data-initial="R" aria-label="Map showing the location associated with Redcap"></div>
+          <div class="map-footer">
+            <a href="https://folklorefinder.uk/map?legend=Redcap">View full map &#8594;</a>
+            <span>55.649 N, 2.348 W</span>
+          </div>
+        </section>
+
+        <section class="side-card side-pad">
+          <p class="side-kicker">At a glance</p>
+          <h2>About this legend</h2>
+          <div class="facts"><div class="fact"><span>Category</span><strong>Fae &amp; Spirits</strong></div><div class="fact"><span>Region</span><strong>Scottish Borders</strong></div></div>
+        </section>
+
+        <section class="side-card side-pad"><p class="side-kicker">Sources</p><h2>Further reading</h2><p class="source-copy">Sources used to research and locate this legend.</p><ul class="source-list"><li><a href="https://en.wikipedia.org/wiki/Redcap" target="_blank" rel="noopener">Wikipedia &#8594;</a> <span class="source-tier">encyclopedic</span></li></ul></section>
+      </aside>
+    </div>
+  </div>
+
+  <section class="related"><div class="shell"><div class="section-head"><div><p>Continue exploring</p><h2>Related legends</h2></div><a href="https://folklorefinder.uk/legends/">Browse all legends</a></div><div class="related-grid"><a class="related-card" style="--card-glow:#8b2a1a" href="https://folklorefinder.uk/legends/worm-of-linton"><span class="related-type">Dragons</span><span class="related-name">Worm of Linton</span><span class="related-place">Scottish Borders</span></a><a class="related-card" style="--card-glow:#6b6b6b" href="https://folklorefinder.uk/legends/andrew-barton"><span class="related-type">Pirates</span><span class="related-name">Andrew Barton</span><span class="related-place">Leith, Scotland</span></a><a class="related-card" style="--card-glow:#5a3a18" href="https://folklorefinder.uk/legends/kirk-yetholm-seat-of-the-gypsy-kings"><span class="related-type">Sacred Sites</span><span class="related-name">Kirk Yetholm, Seat of the Gypsy Kings</span><span class="related-place">Kirk Yetholm, Scottish Borders, Scotland</span></a></div></div></section>
+</main>
+<footer>Part of the Folklore Map of Britain &amp; Ireland &#183; &#169; EditionTree &#183; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener">Ko-fi</a> &#183; <a href="https://folklorefinder.uk/privacy">Privacy</a></footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH" crossorigin="anonymous"></script>
+<script src="https://folklorefinder.uk/legend-page.js"></script>
 </body>
 </html>

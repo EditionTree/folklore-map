@@ -75,10 +75,10 @@ deliberately excluded from the map's initial data load to keep it small.
 
 ## Image-Led Legend Pages
 
-The redesigned editorial page is rolled out gradually through
-`legend_pages.json`. An entry becomes image-led only when its compressed hero
-image and page metadata are present; all other records keep the established
-legend template.
+All legend records use the redesigned editorial layout and mini-map. Entries
+without completed artwork show a category-based placeholder. The placeholder
+is replaced automatically when a compressed hero image and editorial metadata
+are added to `legend_pages.json`.
 
 Add the hero image under `legend-images/`, add the matching legend name to the
 manifest, then regenerate the static pages:

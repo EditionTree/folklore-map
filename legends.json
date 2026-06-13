@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-13T18:04:45.568963Z",
-  "total": 553,
+  "generated": "2026-06-13T18:32:26.354252Z",
+  "total": 565,
   "categories": {
     "beast": "Beasts",
     "ghost": "Ghosts",
@@ -717,6 +717,24 @@
       "detail": "William of Newburgh records that in the town of Berwick-upon-Tweed a man of wealth but evil life, lately dead, would not stay in his grave. By night his corpse wandered the streets, and packs of dogs followed it with terrible howling, so that the townspeople shut themselves indoors for fear of meeting it in the dark. As the haunting went on, dread grew that the very air would be corrupted and pestilence follow — a common medieval link between the restless dead and disease.\n\nTen bold young men were chosen to deal with it. They dug up the body, hacked it apart and burned it utterly — the standard remedy in these northern revenant tales — and the walking ceased. Yet, William notes pointedly, a plague broke out in Berwick afterwards regardless, though it spared the men who had destroyed the corpse. The Berwick case, like its fellows, shows how seriously the twelfth-century border country took the threat of the bodily undead."
     },
     {
+      "name": "Bessie Dunlop",
+      "lat": 55.7064,
+      "lng": -4.7223,
+      "category": "witch",
+      "region": "Dalry, Ayrshire",
+      "summary": "A Dalry healer tried in 1576 said her cures came from Tom Reid, a ghostly man slain at Pinkie who led her among the 'gude wichtis' of the Court of Elfame. She was strangled and burned in Edinburgh.",
+      "detail": "Bessie Dunlop was a farmer's wife, midwife and healer from Lynn near Dalry in Ayrshire, brought to trial in 1576 for sorcery and witchcraft. Her defence — extraordinary in its detail — was that her gift for healing and for finding lost goods came not from the Devil but from a spirit named Tom Reid, an honest-looking old man in a grey coat and black bonnet who carried a white wand.\n\nReid, she said, had been killed at the Battle of Pinkie Cleugh in 1547, and now moved between the living world and the 'Court of Elfame', the fairy realm. He acted as her intermediary with the *gude wichtis*, the good wights or fairies, bringing her the knowledge of herbs and charms by which she helped her neighbours. Her testimony is one of the clearest surviving accounts of how Scottish folk healing and fairy belief became fatally entangled with the legal idea of witchcraft.\n\nReported by a neighbour, Dunlop was taken to Edinburgh, and despite a defence rooted entirely in the older fairy faith she was found guilty, strangled and burned on Castle Hill. In 2022 her home community of Dalry gathered to remember her among the many ordinary women caught up in Scotland's witch trials.",
+      "source": "https://en.wikipedia.org/wiki/Bessie_Dunlop",
+      "date_added": "2026-06-13",
+      "tags": [
+        "healing",
+        "prophecy",
+        "scotland",
+        "ayrshire",
+        "celtic"
+      ]
+    },
+    {
       "name": "Bevis of Hampton",
       "lat": 50.897,
       "lng": -1.407,
@@ -737,6 +755,25 @@
         "arthurian",
         "england",
         "hampshire"
+      ]
+    },
+    {
+      "name": "Biddy Early",
+      "lat": 52.927,
+      "lng": -8.616,
+      "category": "witch",
+      "region": "Feakle, County Clare",
+      "summary": "The Wise Woman of Clare read a magic blue bottle said to be a gift of the fairies, healing thousands for a glass of whiskey until priests and landlords cried witchcraft. The bottle lies lost in her lake.",
+      "detail": "Biddy Early (c.1798–1874) was a *bean feasa*, a wise woman or seer, who lived in a small mud cottage above Kilbarron Lake near Feakle in County Clare. People walked for days to reach her door, seeking cures for themselves and their animals, and she is said to have turned no one away — taking no money, only a measure of poitín or whiskey in return.\n\nThe heart of her legend is the blue bottle into which she would gaze, like a clairvoyant with a crystal ball, to see the cause of an affliction or the face of an enemy. Every account agrees that the bottle came from the fairies, and that her uncanny knowledge of things she could not have known by ordinary means set her apart and frightened those in power. When her cures crossed the wishes of the landlords and the Catholic clergy she was denounced and even charged with witchcraft, though no conviction held.\n\nWhen Biddy died, the famous blue bottle was thrown into the lake below her cottage, and though it has been searched for many times it has never been found — the Good People, it is said, took it back. W. B. Yeats and Lady Gregory gathered stories of her, and she remains one of Ireland's most beloved and ambiguous figures, hovering forever between witch and healer.",
+      "source": "https://en.wikipedia.org/wiki/Biddy_Early",
+      "date_added": "2026-06-13",
+      "tags": [
+        "healing",
+        "prophecy",
+        "lake",
+        "ireland",
+        "clare",
+        "celtic"
       ]
     },
     {
@@ -4420,6 +4457,44 @@
       "detail": "Inishbofin — Inis Bó Finne, the Island of the White Cow — lies off the Connemara coast in County Galway, and its founding legend is preserved in the name itself. Two fishermen, lost at sea in an unnatural fog that had hidden the island from the world, made accidental landfall and lit a fire. The flames broke the enchantment; as the mist lifted they saw an old woman driving a white cow across a shingle beach between a small lake and the sea. She struck the cow with her stick, and both woman and animal turned instantly to stone.\n\nThe island's history documents an alternative version linking the white cow to the Glas Gaibhnenn, the magical cow of inexhaustible milk that appears in several strands of Irish mythology. In this telling, the cow was stolen from a mainland blacksmith by Balor of the Evil Eye, the monstrous king of Tory Island, and hidden on Inishbofin. Loch Bó Finne in the island's West Quarter village is said to be where the white cow re-emerges every seven years, or to forewarn of impending disaster.\n\nThe legend encodes the island's genuine liminal character: Inishbofin sits at the edge of the habitable world, where Atlantic weather makes it unpredictable and sometimes unreachable for weeks at a time. The enchanted fog that hides it is also a description of its real condition — an island that appears and disappears from view depending on weather and sea-state. Inishbofin became an important early medieval monastic site under St Colman, who established his community here after the Synod of Whitby, and the older Bó Finne mythology coexisted with Christian settlement for centuries."
     },
     {
+      "name": "Isaac Gulliver",
+      "lat": 50.7664,
+      "lng": -1.9259,
+      "category": "pirate",
+      "region": "Kinson, Dorset",
+      "summary": "Dorset's 'gentle smuggler who never killed a man' ran gin, tea and lace with a livery of powder-haired 'White Wigs', and once escaped the excise by lying powdered in a coffin as though dead.",
+      "detail": "Isaac Gulliver (c.1745–1822) was the most successful smuggler of the Dorset coast, styled the 'King of the Smugglers' yet remembered in local tradition as the gentle smuggler who never killed a man. At his height he controlled the shore from Lymington in Hampshire through Dorset to the edge of Devon, running a fleet of luggers laden with gin, brandy, tea, silk and lace from the Continent into Poole Bay.\n\nHis gang of forty or fifty men wore a kind of livery — smocks and powdered hair — which earned them the nickname the 'White Wigs'. The most famous tale told of him is that, with the revenue men closing in, Gulliver faked his own death, lying in an open coffin with his face powdered white so that the excise officers, filing past to confirm the body, went away believing the smuggler king was gone.\n\nGulliver was never hanged. He used his vast wealth to buy estates and farms, turned respectable banker and citizen, and died peacefully at Wimborne in 1822 leaving a fortune of some sixty thousand pounds. He lies buried at St Andrew's, Kinson, where the church tower is said to bear the marks of ropes used to haul contraband.",
+      "source": "https://en.wikipedia.org/wiki/Isaac_Gulliver",
+      "date_added": "2026-06-13",
+      "tags": [
+        "sea",
+        "coast",
+        "trickery",
+        "treasure",
+        "england",
+        "dorset"
+      ]
+    },
+    {
+      "name": "Isobel Gowdie",
+      "lat": 57.5836,
+      "lng": -3.8147,
+      "category": "witch",
+      "region": "Auldearn, Highland",
+      "summary": "In 1662 a Highland cottar's wife gave four unforced confessions of riding with the Queen of Elfhame, shape-shifting into a hare, and turning sticks into horses — the richest witch-lore ever recorded in Scotland.",
+      "detail": "Isobel Gowdie was a young farmer's wife living near Auldearn, close to Nairn, when in the spring of 1662 she made a series of four remarkable confessions to witchcraft over six weeks. What sets her case apart is that the testimony appears to have been given freely, without the violent torture usual to such trials, and that it is soaked in the imagery of older Highland fairy belief rather than the imported demonology of the courts.\n\nGowdie described slipping out of her own body to fly through the night air, feasting with the fairy folk beneath the hills, and riding with the Queen of Elfhame. She chanted rhymes that turned straws and beanstalks into horses, that let her vanish from sight, and that transformed her into a hare, a cat or a crow and back again — echoes of the Highland *fith-fath*, the charm of shape-changing. Her coven, she said, met to work their magic and to trouble their neighbours' crops and cattle.\n\nIt is uncertain whether Gowdie was executed in the usual way or simply allowed to slip back into obscurity, for the records fall silent after her confessions. What survives is one of the most vivid windows ever opened onto the folk belief of seventeenth-century Scotland, where witchcraft, fairy lore and the charms of the cunning folk were tangled inseparably together.",
+      "source": "https://en.wikipedia.org/wiki/Isobel_Gowdie",
+      "date_added": "2026-06-13",
+      "tags": [
+        "hare",
+        "transformation",
+        "prophecy",
+        "scotland",
+        "highland",
+        "celtic"
+      ]
+    },
+    {
       "name": "Iula, Princess of the Giants of Islay",
       "lat": 55.6228,
       "lng": -6.0397,
@@ -4555,6 +4630,23 @@
         "lancashire"
       ],
       "detail": "Jenny Greenteeth is a river hag of north-west England, a grasping water demon long used to frighten children away from dangerous ponds and weed-choked pools. She lurks beneath the green scum of stagnant water — the duckweed that gives her her name — and seizes those who stray too near, dragging them under with long sinewy arms and pallid green skin, her sharp teeth bared. Mothers across Lancashire, Cheshire and Shropshire invoked her to keep the young from the water's edge.\n\nShe belongs to a wider family of British 'nursery bogies' — water-dwelling threats like Peg Powler of the Tees and the grindylows of Yorkshire — whose real purpose was protective: a vivid supernatural stand-in for the genuine danger of drowning. The very weed she hides beneath is itself a hazard, masking deep water as solid ground. In this Jenny Greenteeth endures as folklore doing practical work, a monster conjured to keep children alive."
+    },
+    {
+      "name": "Jimmy Squarefoot",
+      "lat": 54.135,
+      "lng": -4.558,
+      "category": "beast",
+      "region": "Grenaby, Isle of Man",
+      "summary": "A bipedal, boar-tusked creature once ridden by a stone-throwing giant, Jimmy Squarefoot haunts the Grenaby river as a great white pig, feared for carrying the unwary off to his cave.",
+      "detail": "Jimmy Squarefoot belongs to the older, stranger corners of Manx folklore. He is described as a creature that walks upright with two great tusks like a boar's, and whose broad, squarish feet — swaddled in calico bands — give him his name. For the most part he is a harmless wanderer of the southern hills of the Isle of Man.\n\nIn his more menacing aspect, however, Jimmy Squarefoot is counted a kind of buggane, a phantom haunting the river and bridge at Grenaby, where he appears as a huge white boar. In that shape he is greatly feared, for he is said to be able to seize mortals and carry them off up the river and through a cave somewhere near the slopes of Barrule.\n\nHis origin story is stranger still. He was once, the tale runs, the mount of one of the Foawr — the race of stone-throwing giants of Manx legend — and a hurler of stones himself, whose favourite target was his own wife. When at last she left him, he is said to have taken on his semi-human form and wandered the island alone, a melancholy and grotesque relic of the giants' age.",
+      "source": "https://en.wikipedia.org/wiki/Jimmy_Squarefoot",
+      "date_added": "2026-06-13",
+      "tags": [
+        "transformation",
+        "river",
+        "cave",
+        "isle-of-man"
+      ]
     },
     {
       "name": "Jingling Geordie's Hole",
@@ -5550,6 +5642,23 @@
       "detail": "Mag Lena — also written Mag Léna or Mag Léne — was a plain in the ancient territory of Firceall, lying between modern Tullamore and Durrow in County Offaly. It straddled the Esker Riada, the great ridge of glacial gravel that formed Ireland's principal east-west highway and the traditional boundary between the northern and southern halves of the island. The dindshenchas, Ireland's medieval lore of place-names, derives 'Lena' from a son of the hospitaller Mac Da Thó, said to have been buried on the plain.\n\nThe plain's central place in Irish legendary history comes from the Battle of Mag Lena, fought, by tradition, in the second century AD between Conn Cétchathach — Conn of the Hundred Battles — and Eógan Mór, also called Mug Nuadat. The battle ended with Ireland divided along the line of the Esker Riada into two halves: Leath Cuinn, 'Conn's Half', in the north, and Leath Mogha, 'Mug's Half', in the south. This division remained a fundamental way of describing Ireland's geography and politics for centuries afterward, and the medieval account of the battle was translated and published by the scholar Eugene O'Curry in 1855.\n\nMag Lena's role as a contested crossing-point did not end with legend. The plain hosted a real synod around 630 AD, called to settle the controversy over the correct dating of Easter, a battle in 906 AD involving Cormac mac Cuilennáin, the celebrated king-bishop of Munster, and a further conflict in 1090 AD during a struggle over the High Kingship — a thousand years of history layered onto a single stretch of Offaly heath."
     },
     {
+      "name": "Major Thomas Weir",
+      "lat": 55.9478,
+      "lng": -3.1955,
+      "category": "witch",
+      "region": "West Bow, Edinburgh",
+      "summary": "A respected Covenanter soldier stunned Edinburgh by confessing to witchcraft and was strangled in 1670; his shunned house on the West Bow stood empty for a century, lit at night by phantom revels.",
+      "detail": "Major Thomas Weir was a pillar of Presbyterian Edinburgh — a Covenanting officer and captain of the Town Guard, so austere in his piety that locals called him the 'West Bow Saint'. He shared a narrow flat on the West Bow with his spinster sister Grizel. Then, around 1670, while leading a prayer meeting, the elderly major astonished the company by confessing unbidden to a lifetime of secret crimes and to commerce with the Devil.\n\nWeir was strangled and burned, often named as the last man executed for witchcraft in Scotland, and his sister was hanged soon after. But it was his house that fixed him in the city's folklore. For more than a century the dwelling on the West Bow stood empty, for no one would live in it. Passers-by reported lights moving in the windows of the deserted rooms, the sound of music and laughter, and the shapes of enormous women behind the glass.\n\nWhen an old soldier named William Patullo at last took the cheap house around 1780, he and his wife are said to have fled after a single night, driven out when a spectral calf appeared at the foot of their bed and rested its forelegs on the frame to stare at them in the dark. The 'Wizard of the West Bow' became one of Edinburgh's most enduring ghost stories.",
+      "source": "https://en.wikipedia.org/wiki/Thomas_Weir",
+      "date_added": "2026-06-13",
+      "tags": [
+        "haunting",
+        "curse",
+        "scotland",
+        "edinburgh"
+      ]
+    },
+    {
       "name": "Manannán mac Lir",
       "lat": 54.121,
       "lng": -4.588,
@@ -6489,6 +6598,23 @@
       "detail": "The Padfoot is a spectral black beast of the West Riding of Yorkshire, especially around Leeds — a death-omen creature akin to the Barghest, named for the soft padding of its feet heard following the traveller on a dark road. It appears most often as a large shaggy black dog with broad glowing eyes, but it is a shape-shifter: it may show as a white dog, a woolly fleece rolling along the ground, or a donkey, and it drags a clanking chain.\n\nTo meet the Padfoot — or merely to hear its padding tread and the rattle of its chain behind you — was an omen of death in the household. It was as often invisible as seen, and was said to follow people home; some tales warn that to speak to it or strike at it brings its power down upon you, while leaving it be lets it pass. One of the classic Yorkshire 'black dogs', the Padfoot stands beside the Barghest and the Gytrash in the county's rich tradition of spectral, death-foretelling beasts of the road."
     },
     {
+      "name": "Peg Powler",
+      "lat": 54.6293,
+      "lng": -2.0817,
+      "category": "water",
+      "region": "River Tees, County Durham",
+      "summary": "A green-haired hag of the River Tees who drags the young and unwary under to drown and devour them; the river's drifting froth is still called 'Peg Powler's Suds'.",
+      "detail": "Peg Powler is the water-hag of the River Tees, a bogey invoked across the dales to keep children back from the dangerous banks. She is pictured as a woman crowned with long green tresses — the green hair that marks a river spirit in English folklore — with, in the words of the Victorian folklorist William Henderson, 'an insatiable desire for human life'.\n\nLike her sisters Jenny Greenteeth and Nelly Longarms, Peg Powler lurks at the water's edge and seizes those who stray too close, dragging them down to drown or be devoured. In some tellings she lures men and boys by pretending to be a beautiful young woman in difficulty, so that her would-be rescuers wade in to their doom.\n\nHer presence is written into the river itself. The masses of foam that gather on the higher reaches of the Tees are called 'Peg Powler's Suds', and the thinner scum that rides the surface is 'Peg Powler's Cream' — everyday names that kept the old warning alive long after anyone truly feared the green hag beneath the current.",
+      "source": "https://en.wikipedia.org/wiki/Peg_Powler",
+      "date_added": "2026-06-13",
+      "tags": [
+        "river",
+        "drowning",
+        "england",
+        "durham"
+      ]
+    },
+    {
       "name": "Pendle Witches",
       "lat": 53.87,
       "lng": -2.296,
@@ -6549,6 +6675,24 @@
         "curse",
         "ireland",
         "county-kilkenny"
+      ]
+    },
+    {
+      "name": "Petticoat Loose",
+      "lat": 52.2317,
+      "lng": -7.9131,
+      "category": "ghost",
+      "region": "Bay Lough, County Tipperary",
+      "summary": "Damned for killing an unbaptised child, the ghost Petticoat Loose was banished to Bay Lough in the Knockmealdowns to twist ropes of sand forever; parents still warn children she will get them.",
+      "detail": "Petticoat Loose is among the most feared of Irish ghosts, a malevolent spirit known across the south from Waterford into Tipperary — called Moll Shaughnessy in Cork and Sprid na Bearnan in Limerick. In life, the stories say, she was a woman who murdered an unbaptised child, and for that crime her soul was denied rest.\n\nThe best-known tale tells of a man riding by night to fetch a priest, set upon along the road by the ghost until holy words drive her off. A priest is needed to lay her, and he banishes her — in some versions to the Red Sea, in others to the dark mountain tarn of Bay Lough in the Knockmealdown Mountains — condemned to an impossible, endless task: to twist ropes of sand, or empty the lough with a thimble, so that she can never finish and return.\n\nHer name became a household warning. From Cork to Waterford parents still tell wilful children to behave or 'Petticoat Loose will get you', and the lonely waters of Bay Lough keep their reputation as a haunted place where her restless spirit is said to linger yet.",
+      "source": "https://www.unexplained.ie/article/438-petticoat-loose-moll-shaughnessy-sprid-na-bearnan-irish-ghost/",
+      "date_added": "2026-06-13",
+      "tags": [
+        "haunting",
+        "lake",
+        "curse",
+        "ireland",
+        "tipperary"
       ]
     },
     {
@@ -7899,6 +8043,22 @@
       ]
     },
     {
+      "name": "The Bargarran Witches",
+      "lat": 55.8466,
+      "lng": -4.4295,
+      "category": "witch",
+      "region": "Paisley, Renfrewshire",
+      "summary": "In 1697 eleven-year-old Christian Shaw of Bargarran accused her neighbours of bewitching her; seven were hanged and burned on Paisley's Gallow Green — the last mass execution for witchcraft in western Europe.",
+      "detail": "The affair began at Bargarran House in Renfrewshire in 1696, when eleven-year-old Christian Shaw, daughter of the laird, fell into violent fits after a quarrel with a servant, Katherine Campbell, whom she had reported for stealing a drink of milk. The girl complained of being tormented by unseen tormentors and named a growing list of her neighbours as the witches responsible.\n\nA commission was appointed, and in 1697 seven people — Margaret Lang, Katherine Campbell, Agnes Naismith, Margaret Fulton, John Lindsay, James Lindsay and John Lindsay of Barloch — were found guilty of bewitching the child. On 10 June 1697 they were hanged and then burned on the Gallow Green in Paisley, the last mass execution for witchcraft in western Europe. As she went to her death, Agnes Naismith was said to have laid a dying curse on all present and their descendants, and for generations afterward every misfortune in Paisley was blamed on it.\n\nThe accuser, Christian Shaw, lived on to become a successful businesswoman and a pioneer of the Paisley thread industry. The case has fascinated and troubled historians ever since, read variously as mass hysteria, a child's malice, and a community's readiness to kill on the word of an eleven-year-old.",
+      "source": "https://en.wikipedia.org/wiki/Paisley_witches",
+      "date_added": "2026-06-13",
+      "tags": [
+        "curse",
+        "scotland",
+        "renfrewshire"
+      ]
+    },
+    {
       "name": "The Black Dog of Newgate",
       "lat": 51.5157,
       "lng": -0.1019,
@@ -8053,6 +8213,41 @@
       "detail": "The Green Man is one of the most enigmatic figures in British folk art — a face formed of or sprouting leaves, foliage trailing from the mouth, nostrils and eyes, carved in stone and wood in churches and cathedrals across these islands and far beyond. Though Christian craftsmen cut him into the bosses and capitals of medieval churches, his roots seem far older, and he is widely read as a symbol of nature's wild vitality, of death and rebirth, and of the green world's stubborn persistence even within the house of God.\n\nThe name itself is modern, coined by Lady Raglan in a 1939 article that linked the carvings to older vegetation spirits and to seasonal customs such as the Jack-in-the-Green of the May Day processions. Whether the medieval masons intended a pagan god, a reminder of mortal flesh returning to the earth, or simply a beloved decorative motif is still debated. Either way the Green Man has flourished as a potent emblem of the British landscape and its old, leafy magic — and it is his face that this map takes as its own."
     },
     {
+      "name": "The Hawkhurst Gang",
+      "lat": 51.0456,
+      "lng": 0.5157,
+      "category": "pirate",
+      "region": "Hawkhurst, Kent",
+      "summary": "From the Mermaid Inn at Rye, this ruthless smuggling syndicate terrorised the south-east in the 1740s, raiding the Poole Custom House until the Goudhurst militia broke them in a pitched battle.",
+      "detail": "The Hawkhurst Gang was the most feared smuggling organisation in England, operating from the Kentish village of Hawkhurst on the Sussex border between about 1735 and 1749. At their peak they could muster hundreds of armed men and ran contraband from the Channel coast across Kent and Sussex and up to London, openly drinking and firing their guns at inns such as the Mermaid at Rye.\n\nTheir power rested on terror. They tortured informers, extorted whole villages, and in their most notorious exploit broke into the Custom House at Poole in 1747 to recover a seized cargo of tea. When a witness, the shoemaker Daniel Chater, and a customs officer, William Galley, threatened to expose them, the gang murdered both with appalling cruelty — an outrage that finally turned the country against them.\n\nThe villagers of Goudhurst, drilled into a militia by a former soldier, William Sturt, beat off a gang assault in a pitched battle in 1747. Within two years the leaders, including Arthur Gray and Thomas Kingsmill, had been hanged, and the Hawkhurst Gang passed into folklore as the byword for the violent golden age of English smuggling.",
+      "source": "https://en.wikipedia.org/wiki/Hawkhurst_Gang",
+      "date_added": "2026-06-13",
+      "tags": [
+        "sea",
+        "coast",
+        "battle",
+        "england",
+        "kent"
+      ]
+    },
+    {
+      "name": "The Hedley Kow",
+      "lat": 54.9136,
+      "lng": -1.836,
+      "category": "fairy",
+      "region": "Hedley on the Hill, Northumberland",
+      "summary": "A shape-shifting Northumberland bogie that turned itself into straw, cattle or a pot of changing treasure to bamboozle country folk, then vanished with a snickering, horse-like laugh.",
+      "detail": "The Hedley Kow was the mischievous bogie of Hedley on the Hill, a village near Ebchester in Northumberland. Unlike the malevolent water-hags or the spectral hounds, the Kow was a trickster whose pranks ended in laughter rather than harm — a shape-shifter who could take not only the forms of animals but of ordinary inanimate things.\n\nIn one well-loved tale, recorded by the folklorist Joseph Jacobs, an old woman finds a pot of gold by the roadside; but each time she glances down the treasure has changed — gold to silver, silver to iron, iron at last to a plain stone — which then springs up, reveals itself as the Kow, and capers off. In another, the creature disguises itself as a bundle of straw that grows impossibly heavy in a woman's arms before standing up and shuffling away with a snickering, horse-like laugh.\n\nThe Kow delighted in such deceptions: overturning milk pails, frightening farm servants, leading travellers astray and imitating their sweethearts' voices, always melting away with its braying laugh once the trick was sprung. It belongs to the great family of British hobgoblins and bogies, household spirits who are tolerated, even half-affectionately remembered, for the chaos they cause.",
+      "source": "https://en.wikipedia.org/wiki/The_Hedley_Kow",
+      "date_added": "2026-06-13",
+      "tags": [
+        "transformation",
+        "trickery",
+        "england",
+        "northumberland"
+      ]
+    },
+    {
       "name": "The Loch Ness Monster",
       "lat": 57.321,
       "lng": -4.424,
@@ -8205,6 +8400,24 @@
         "drowning",
         "england",
         "cornwall"
+      ]
+    },
+    {
+      "name": "The Wherwell Cockatrice",
+      "lat": 51.1823,
+      "lng": -1.4442,
+      "category": "dragon",
+      "region": "Wherwell, Hampshire",
+      "summary": "A toad hatched a cock's egg in the priory cellars, loosing a cockatrice on Wherwell until a man named Green lowered a mirror and let the beast battle its own reflection to death.",
+      "detail": "The Hampshire village of Wherwell, once home to a great abbey of Benedictine nuns, keeps the legend of the cockatrice — a serpent with a cockerel's head, hatched, as the old belief held, when a toad broods a cock's egg. The monstrous creature is said to have been born in the cellars beneath Wherwell Priory and to have grown until it terrified the whole village.\n\nUnable to slay it by force, the people drove the cockatrice into the dungeons below the priory and sealed it in, offering a prize of land to anyone who could kill it. At last a man named Green hit upon a cunning plan: he lowered a polished steel mirror into the vault. Believing its own reflection to be a rival, the cockatrice fought itself furiously against the glass until it dropped exhausted, and Green climbed down to dispatch it.\n\nFor his courage Green was rewarded with an estate near the village still remembered as Green's Acres. A weathervane in the shape of the cockatrice once turned above the village church and is now preserved in Andover Museum, keeping the tale fixed to its place long after the priory itself was dissolved.",
+      "source": "https://www.mysteriousbritain.co.uk/cryptozoology/the-wherwell-cockatrice/",
+      "date_added": "2026-06-13",
+      "tags": [
+        "serpent",
+        "church",
+        "bird",
+        "england",
+        "hampshire"
       ]
     },
     {

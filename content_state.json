@@ -167,9 +167,17 @@
 "hash": "abcda83224a96a4748bfb0a97ec104b81b7635e5",
 "modified": "2026-06-09"
 },
+"Bessie Dunlop": {
+"hash": "7359b234c5283b75a3c8392d2880a09cf33e1998",
+"modified": "2026-06-13"
+},
 "Bevis of Hampton": {
 "hash": "c240456db839642d80f11947caaa2dd116cb3863",
 "modified": "2026-06-03"
+},
+"Biddy Early": {
+"hash": "05d07d234b16abb4a3cabf06eefa4818ce424e0e",
+"modified": "2026-06-13"
 },
 "Billy Marshall": {
 "hash": "5f909f8c36316f0fa86780e56cc43f11495d18b7",
@@ -1027,6 +1035,14 @@
 "hash": "7f57a9efed7c8547b7e76d9de55ade0b95923ae4",
 "modified": "2026-06-08"
 },
+"Isaac Gulliver": {
+"hash": "47fe9aee959131b90972afbc406b5e37f9a4234d",
+"modified": "2026-06-13"
+},
+"Isobel Gowdie": {
+"hash": "d213e4d84d3fac7e6fb81944e10fef9657178568",
+"modified": "2026-06-13"
+},
 "Iula, Princess of the Giants of Islay": {
 "hash": "79eaf2ada911f4915596e9de4bd01f3f72c021ba",
 "modified": "2026-06-10"
@@ -1058,6 +1074,10 @@
 "Jenny Greenteeth": {
 "hash": "548ef9118f74c09dd9821d47704e4d3f9da484d3",
 "modified": "2026-06-03"
+},
+"Jimmy Squarefoot": {
+"hash": "4ff87ebcbe50dfc2acc8ed72b1c8a9eaf621ff98",
+"modified": "2026-06-13"
 },
 "Jingling Geordie's Hole": {
 "hash": "f145597bd1d55b57ec43942590c4bac9ee26b66c",
@@ -1299,6 +1319,10 @@
 "hash": "fc1408d8fbdb1feb7539718ad0b67333b86fa147",
 "modified": "2026-06-03"
 },
+"Major Thomas Weir": {
+"hash": "5aeb931aaba7da38a06900e6e877489f9bce268a",
+"modified": "2026-06-13"
+},
 "Manannán mac Lir": {
 "hash": "ec97ca084fcd532cea874da461dc85095d4096df",
 "modified": "2026-06-05"
@@ -1519,6 +1543,10 @@
 "hash": "efee8c1dfb26ca385a64311cb56f105fe561a0f7",
 "modified": "2026-06-03"
 },
+"Peg Powler": {
+"hash": "ff8221d9dd266b62b35d96c515cdbfd779ecfb22",
+"modified": "2026-06-13"
+},
 "Pendle Witches": {
 "hash": "161ae40ab55513fb46010f6139b3b7a814dbfc18",
 "modified": "2026-06-03"
@@ -1534,6 +1562,10 @@
 "Petronilla de Meath": {
 "hash": "849c6688a4c7663a30745679ff8b3e9ad749690a",
 "modified": "2026-06-12"
+},
+"Petticoat Loose": {
+"hash": "2a8e12158c7386531b6eaa36201d50690e54d4ff",
+"modified": "2026-06-13"
 },
 "Phantom Battle of Edgehill": {
 "hash": "01f158e1f25eb73a1ecaced84a292eaa75e03a23",
@@ -1851,6 +1883,10 @@
 "hash": "59db866a2a7e7e59607f4c4bc5f863693e429e3a",
 "modified": "2026-06-03"
 },
+"The Bargarran Witches": {
+"hash": "c5cacc912e916a3731cb32885857487ea914aaa6",
+"modified": "2026-06-13"
+},
 "The Black Dog of Newgate": {
 "hash": "0254a4fc78cbc13a79b0a5ec58e59dbb4a9e8b5a",
 "modified": "2026-06-03"
@@ -1887,6 +1923,14 @@
 "hash": "03548698e6ec6c88cc02bcb1d2ea68edee0e7f29",
 "modified": "2026-06-03"
 },
+"The Hawkhurst Gang": {
+"hash": "057e0d495a4890851415aa8a2ad7887ff28404b7",
+"modified": "2026-06-13"
+},
+"The Hedley Kow": {
+"hash": "c4a16f12ebf06b698dcd537b31509a5457dd26b6",
+"modified": "2026-06-13"
+},
 "The Loch Ness Monster": {
 "hash": "daee536324128e5e7e4afa85355220d715c5ca6b",
 "modified": "2026-06-03"
@@ -1922,6 +1966,10 @@
 "The Towans": {
 "hash": "f0862f18a816f07d0f3f4c6f2d6bcfcb599b2ba0",
 "modified": "2026-06-03"
+},
+"The Wherwell Cockatrice": {
+"hash": "db01c1f36720684df0c134dd4dad0f5d6ebf5e6d",
+"modified": "2026-06-13"
 },
 "The Wild Hunt": {
 "hash": "bba252814d519a9857112a63683b034c516d7d25",

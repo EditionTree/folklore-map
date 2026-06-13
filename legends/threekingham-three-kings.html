@@ -56,9 +56,8 @@ h1{font-family:'Marcellus',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;
 .share-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
 .share-btn{font-family:'Marcellus',serif;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#8b3a1a;background:transparent;border:1px solid #b09060;border-radius:3px;padding:9px 16px;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
 .share-btn:hover{background:#8b3a1a;color:#f2e8d5;border-color:#8b3a1a}
-.share-status{display:block;margin-top:8px;font-size:12px;font-style:italic;color:#5c4a2a;min-height:1.1em}
+.share-status{position:absolute !important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .src{display:block;margin-top:18px;font-size:13px;font-style:italic;color:#5c4a2a}
-.reviewed{display:block;margin-top:7px;font-size:12px;font-style:italic;color:#7a6a4a}
 .src a{color:#8b3a1a}
 .back{display:inline-block;margin-top:22px;font-size:13px;color:#5c4a2a}
 .related{margin-top:36px}
@@ -97,7 +96,6 @@ footer{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}
 <p class="summary">The village of Threekingham in the Kesteven district of Lincolnshire takes its name, in popular tradition, from a violent episode of the Danelaw period. Local legend holds that in 869 or 870 a great battle was fought near the village between Saxon earls — Algar, Morcar, and Leofric — and a Danish force. Three Danish kings were slain and buried on the spot, and the village, previously called Laundon, was renamed in their memory: the &#x27;home of the three kings.&#x27;</p><p class="summary-cont">In St Peter&#x27;s Church three uninscribed fourteenth-century stone effigies lie within the chancel: recumbent figures without names or dates, belonging in scholarly reality to the Trikingham family, descendants of Sir Lambert de Trikingham (d.1280) and once the principal landholders. But the village has always identified them as the Danish kings, their namelessness explained by their paganism and their defeat. In September 2023 the supposed battle was re-enacted by three hundred performers at a special festival — vivid evidence of how deeply the legend is embedded in local identity.</p><p class="summary-cont">Place-name specialists reject the romantic etymology, finding that Threekingham most probably derives from &#x27;the homestead of Tric&#x27;s people&#x27;, Tric being a Brittonic personal name. But the folk etymology is far older than modern scholarship: it appears to have been circulating since at least the late Anglo-Saxon period, when the name was already being read as commemorative. The three stone effigies, the mystery of their namelessness, and the landscape itself continue to give the legend life.</p>
 <a class="cta" href="https://folklorefinder.uk/map?legend=Threekingham%20Three%20Kings">Explore on the interactive map &#8594;</a>
 <span class="src">Source: <a href="https://en.wikipedia.org/wiki/Threekingham" target="_blank" rel="noopener">en.wikipedia.org</a></span>
-<span class="reviewed">Added 8 June 2026</span>
 <div class="share-row" role="group" aria-label="Share this legend">
 <button type="button" class="share-btn" id="copyLinkBtn">Copy link</button>
 <button type="button" class="share-btn" id="webShareBtn" hidden>Share&#8230;</button>
@@ -120,7 +118,17 @@ document.querySelectorAll('.carousel').forEach(function(c){
   var link=document.querySelector('link[rel=canonical]');
   var url=(link&&link.href)||location.href;
   var status=document.getElementById('shareStatus');
+  var copyBtn=document.getElementById('copyLinkBtn');
+  var revertTimer=null;
   function announce(m){ if(status) status.textContent=m; }
+  function markCopied(){
+    announce('Link copied');           // for screen readers (visually hidden)
+    if(copyBtn){
+      copyBtn.textContent='Copied';
+      clearTimeout(revertTimer);
+      revertTimer=setTimeout(function(){ copyBtn.textContent='Copy link'; },2000);
+    }
+  }
   function fallbackCopy(){
     try{
       var ta=document.createElement('textarea');
@@ -128,13 +136,12 @@ document.querySelectorAll('.carousel').forEach(function(c){
       ta.style.position='absolute'; ta.style.left='-9999px';
       document.body.appendChild(ta); ta.select();
       document.execCommand('copy'); document.body.removeChild(ta);
-      announce('Link copied');
+      markCopied();
     }catch(e){ announce("Couldn't copy. Press Ctrl+C to copy the address."); }
   }
-  var copyBtn=document.getElementById('copyLinkBtn');
   if(copyBtn) copyBtn.addEventListener('click',function(){
     if(navigator.clipboard&&navigator.clipboard.writeText){
-      navigator.clipboard.writeText(url).then(function(){announce('Link copied');},fallbackCopy);
+      navigator.clipboard.writeText(url).then(markCopied,fallbackCopy);
     } else { fallbackCopy(); }
   });
   var shareBtn=document.getElementById('webShareBtn');

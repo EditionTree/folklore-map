@@ -56,9 +56,8 @@ h1{font-family:'Marcellus',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;
 .share-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
 .share-btn{font-family:'Marcellus',serif;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#8b3a1a;background:transparent;border:1px solid #b09060;border-radius:3px;padding:9px 16px;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
 .share-btn:hover{background:#8b3a1a;color:#f2e8d5;border-color:#8b3a1a}
-.share-status{display:block;margin-top:8px;font-size:12px;font-style:italic;color:#5c4a2a;min-height:1.1em}
+.share-status{position:absolute !important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .src{display:block;margin-top:18px;font-size:13px;font-style:italic;color:#5c4a2a}
-.reviewed{display:block;margin-top:7px;font-size:12px;font-style:italic;color:#7a6a4a}
 .src a{color:#8b3a1a}
 .back{display:inline-block;margin-top:22px;font-size:13px;color:#5c4a2a}
 .related{margin-top:36px}
@@ -97,7 +96,6 @@ footer{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}
 <p class="summary">Long before the waters of Cardigan Bay reached their present shoreline, Welsh tradition holds that a broad, fertile realm called Cantre&#x27;r Gwaelod — &#x27;the Lowland Hundred&#x27; — stretched out between what are now Ramsey Island and Bardsey Island. Ruled by the prince Gwyddno Garanhir, the land depended for its survival on a system of embankments and sluice gates that held back the sea, much as the polders of the Netherlands do today.</p><p class="summary-cont">Responsibility for those gates fell to Seithenyn, a nobleman remembered in the stories as a heavy drinker. During a great feast at the royal court, Seithenyn drank himself into a stupor and forgot to close the sluices on a night of storm and high tide; the sea poured through the open gates and swallowed the entire kingdom before morning, drowning its fields, halls and churches beneath the waves. The earliest surviving version of the story, the medieval Welsh poem &#x27;Boddi Maes Gwyddno&#x27; (&#x27;The Drowning of the Land of Gwyddno&#x27;) in the Black Book of Carmarthen, actually places the blame on a well-maiden named Mererid who failed to keep a sacred spring covered — Seithenyn&#x27;s drunken negligence became the dominant version only in later retellings.</p><p class="summary-cont">The legend lives on most famously in sound rather than sight: tradition says that on calm days, the bells of Cantre&#x27;r Gwaelod&#x27;s submerged churches can still be heard tolling from beneath Cardigan Bay, a story that inspired the well-known Welsh song &#x27;Clychau Aberdyfi&#x27; (&#x27;The Bells of Aberdovey&#x27;). At low tide, several long gravel ridges called sarnau stretch out from the Welsh coast into the bay — natural formations that generations of storytellers took as the remains of Cantre&#x27;r Gwaelod&#x27;s roads and walls, giving Wales&#x27;s &#x27;Atlantis&#x27; a permanent, if illusory, foothold in the landscape.</p>
 <a class="cta" href="https://folklorefinder.uk/map?legend=Cantre%27r%20Gwaelod">Explore on the interactive map &#8594;</a>
 <span class="src">Source: <a href="https://en.wikipedia.org/wiki/Cantre%27r_Gwaelod" target="_blank" rel="noopener">en.wikipedia.org</a></span>
-<span class="reviewed">Added 3 June 2026</span>
 <div class="share-row" role="group" aria-label="Share this legend">
 <button type="button" class="share-btn" id="copyLinkBtn">Copy link</button>
 <button type="button" class="share-btn" id="webShareBtn" hidden>Share&#8230;</button>
@@ -120,7 +118,17 @@ document.querySelectorAll('.carousel').forEach(function(c){
   var link=document.querySelector('link[rel=canonical]');
   var url=(link&&link.href)||location.href;
   var status=document.getElementById('shareStatus');
+  var copyBtn=document.getElementById('copyLinkBtn');
+  var revertTimer=null;
   function announce(m){ if(status) status.textContent=m; }
+  function markCopied(){
+    announce('Link copied');           // for screen readers (visually hidden)
+    if(copyBtn){
+      copyBtn.textContent='Copied';
+      clearTimeout(revertTimer);
+      revertTimer=setTimeout(function(){ copyBtn.textContent='Copy link'; },2000);
+    }
+  }
   function fallbackCopy(){
     try{
       var ta=document.createElement('textarea');
@@ -128,13 +136,12 @@ document.querySelectorAll('.carousel').forEach(function(c){
       ta.style.position='absolute'; ta.style.left='-9999px';
       document.body.appendChild(ta); ta.select();
       document.execCommand('copy'); document.body.removeChild(ta);
-      announce('Link copied');
+      markCopied();
     }catch(e){ announce("Couldn't copy. Press Ctrl+C to copy the address."); }
   }
-  var copyBtn=document.getElementById('copyLinkBtn');
   if(copyBtn) copyBtn.addEventListener('click',function(){
     if(navigator.clipboard&&navigator.clipboard.writeText){
-      navigator.clipboard.writeText(url).then(function(){announce('Link copied');},fallbackCopy);
+      navigator.clipboard.writeText(url).then(markCopied,fallbackCopy);
     } else { fallbackCopy(); }
   });
   var shareBtn=document.getElementById('webShareBtn');

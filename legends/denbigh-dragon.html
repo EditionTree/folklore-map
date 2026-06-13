@@ -56,9 +56,8 @@ h1{font-family:'Marcellus',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;
 .share-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
 .share-btn{font-family:'Marcellus',serif;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#8b3a1a;background:transparent;border:1px solid #b09060;border-radius:3px;padding:9px 16px;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
 .share-btn:hover{background:#8b3a1a;color:#f2e8d5;border-color:#8b3a1a}
-.share-status{display:block;margin-top:8px;font-size:12px;font-style:italic;color:#5c4a2a;min-height:1.1em}
+.share-status{position:absolute !important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .src{display:block;margin-top:18px;font-size:13px;font-style:italic;color:#5c4a2a}
-.reviewed{display:block;margin-top:7px;font-size:12px;font-style:italic;color:#7a6a4a}
 .src a{color:#8b3a1a}
 .back{display:inline-block;margin-top:22px;font-size:13px;color:#5c4a2a}
 .related{margin-top:36px}
@@ -97,7 +96,6 @@ footer{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}
 <p class="summary">According to the folklore attached to Denbigh Castle, the great hall of the castle was once the lair of a dragon that had taken over the town, terrorising its people. The task of dealing with the beast fell to a knight remembered in some versions as John Salesbury, but in the oldest form of the tale as Sion y Bodiau — &#x27;John of the Thumbs&#x27; — a giant of a man said to have eight fingers and two thumbs on each hand.</p><p class="summary-cont">When Sion confronted the dragon as it emerged from the hall, the two fought for hours, sword against claw and scale, with neither giving ground. The turning point came when Sion spotted two bare patches of unscaled skin at the base of the dragon&#x27;s wings; waiting for the creature to rear up and spread its wings to attack, he drove his broadsword into one of these unprotected spots and killed it.</p><p class="summary-cont">Riding back into the town with the dragon&#x27;s severed head held aloft on his sword, Sion was met by townsfolk who had been hiding from the beast. Their relieved cry — &#x27;Dim bych!&#x27;, Welsh for &#x27;No dragon!&#x27; — is said in this telling to be the origin of the town&#x27;s name, Dinbych (Denbigh), a folk etymology that has helped keep the story, and the dragon, alive in local memory for centuries.</p>
 <a class="cta" href="https://folklorefinder.uk/map?legend=Denbigh%20Dragon">Explore on the interactive map &#8594;</a>
 <span class="src">Source: <a href="https://www.mythslegendsodditiesnorth-east-wales.co.uk/denbigh-dragon" target="_blank" rel="noopener">mythslegendsodditiesnorth-east-wales.co.uk</a></span>
-<span class="reviewed">Added 12 June 2026</span>
 <div class="share-row" role="group" aria-label="Share this legend">
 <button type="button" class="share-btn" id="copyLinkBtn">Copy link</button>
 <button type="button" class="share-btn" id="webShareBtn" hidden>Share&#8230;</button>
@@ -120,7 +118,17 @@ document.querySelectorAll('.carousel').forEach(function(c){
   var link=document.querySelector('link[rel=canonical]');
   var url=(link&&link.href)||location.href;
   var status=document.getElementById('shareStatus');
+  var copyBtn=document.getElementById('copyLinkBtn');
+  var revertTimer=null;
   function announce(m){ if(status) status.textContent=m; }
+  function markCopied(){
+    announce('Link copied');           // for screen readers (visually hidden)
+    if(copyBtn){
+      copyBtn.textContent='Copied';
+      clearTimeout(revertTimer);
+      revertTimer=setTimeout(function(){ copyBtn.textContent='Copy link'; },2000);
+    }
+  }
   function fallbackCopy(){
     try{
       var ta=document.createElement('textarea');
@@ -128,13 +136,12 @@ document.querySelectorAll('.carousel').forEach(function(c){
       ta.style.position='absolute'; ta.style.left='-9999px';
       document.body.appendChild(ta); ta.select();
       document.execCommand('copy'); document.body.removeChild(ta);
-      announce('Link copied');
+      markCopied();
     }catch(e){ announce("Couldn't copy. Press Ctrl+C to copy the address."); }
   }
-  var copyBtn=document.getElementById('copyLinkBtn');
   if(copyBtn) copyBtn.addEventListener('click',function(){
     if(navigator.clipboard&&navigator.clipboard.writeText){
-      navigator.clipboard.writeText(url).then(function(){announce('Link copied');},fallbackCopy);
+      navigator.clipboard.writeText(url).then(markCopied,fallbackCopy);
     } else { fallbackCopy(); }
   });
   var shareBtn=document.getElementById('webShareBtn');

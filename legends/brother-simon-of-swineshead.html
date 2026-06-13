@@ -56,9 +56,8 @@ h1{font-family:'Marcellus',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;
 .share-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
 .share-btn{font-family:'Marcellus',serif;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#8b3a1a;background:transparent;border:1px solid #b09060;border-radius:3px;padding:9px 16px;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
 .share-btn:hover{background:#8b3a1a;color:#f2e8d5;border-color:#8b3a1a}
-.share-status{display:block;margin-top:8px;font-size:12px;font-style:italic;color:#5c4a2a;min-height:1.1em}
+.share-status{position:absolute !important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .src{display:block;margin-top:18px;font-size:13px;font-style:italic;color:#5c4a2a}
-.reviewed{display:block;margin-top:7px;font-size:12px;font-style:italic;color:#7a6a4a}
 .src a{color:#8b3a1a}
 .back{display:inline-block;margin-top:22px;font-size:13px;color:#5c4a2a}
 .related{margin-top:36px}
@@ -97,7 +96,6 @@ footer{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}
 <p class="summary">The earliest hint is a Norman French manuscript noting King John &#x27;was poisoned by a brother of the house&#x27; at Swineshead Abbey in October 1216. The legend was first set in print by William Caxton in his Chronicles of England (c.1480) and received its most dramatic retelling in John Foxe&#x27;s Acts and Monuments (1570), which included a sequence of woodcuts depicting the poisoning in near-comic-strip fashion. In Foxe&#x27;s version, Brother Simon first obtained absolution from Abbot William, then introduced toad&#x27;s venom into the king&#x27;s ale cup; when John grew suspicious, Simon drank from it himself to prove it harmless. Both men died — the monk in his cell, the king days later at Newark Castle on 18–19 October 1216.</p><p class="summary-cont">An unusual piece of physical evidence survives near the abbey ruins: a tomb effigy long described as depicting Brother Simon. It shows not a monk but a knight — leading some antiquarians to suggest he may have been a Knight Templar rather than a Cistercian brother, a detail that has never been resolved and adds an additional layer of mystery to the tale.</p><p class="summary-cont">Historians are confident John died of dysentery contracted while campaigning in the Fens, and contemporaries like Roger of Wendover make no mention of poison. The legend developed in Protestant England as a morality tale: a treacherous monk willing to die to rid England of a king who had defied the Pope. Henry Winn&#x27;s verse retelling circulated in Lincolnshire folk tradition, keeping the story vivid locally long after Swineshead Abbey itself crumbled.</p>
 <a class="cta" href="https://folklorefinder.uk/map?legend=Brother%20Simon%20of%20Swineshead">Explore on the interactive map &#8594;</a>
 <span class="src">Source: <a href="https://www.lincolnshirelife.co.uk/heritage/king-johns-stay-at-swineshead-abbey/" target="_blank" rel="noopener">lincolnshirelife.co.uk</a></span>
-<span class="reviewed">Added 5 June 2026</span>
 <div class="share-row" role="group" aria-label="Share this legend">
 <button type="button" class="share-btn" id="copyLinkBtn">Copy link</button>
 <button type="button" class="share-btn" id="webShareBtn" hidden>Share&#8230;</button>
@@ -120,7 +118,17 @@ document.querySelectorAll('.carousel').forEach(function(c){
   var link=document.querySelector('link[rel=canonical]');
   var url=(link&&link.href)||location.href;
   var status=document.getElementById('shareStatus');
+  var copyBtn=document.getElementById('copyLinkBtn');
+  var revertTimer=null;
   function announce(m){ if(status) status.textContent=m; }
+  function markCopied(){
+    announce('Link copied');           // for screen readers (visually hidden)
+    if(copyBtn){
+      copyBtn.textContent='Copied';
+      clearTimeout(revertTimer);
+      revertTimer=setTimeout(function(){ copyBtn.textContent='Copy link'; },2000);
+    }
+  }
   function fallbackCopy(){
     try{
       var ta=document.createElement('textarea');
@@ -128,13 +136,12 @@ document.querySelectorAll('.carousel').forEach(function(c){
       ta.style.position='absolute'; ta.style.left='-9999px';
       document.body.appendChild(ta); ta.select();
       document.execCommand('copy'); document.body.removeChild(ta);
-      announce('Link copied');
+      markCopied();
     }catch(e){ announce("Couldn't copy. Press Ctrl+C to copy the address."); }
   }
-  var copyBtn=document.getElementById('copyLinkBtn');
   if(copyBtn) copyBtn.addEventListener('click',function(){
     if(navigator.clipboard&&navigator.clipboard.writeText){
-      navigator.clipboard.writeText(url).then(function(){announce('Link copied');},fallbackCopy);
+      navigator.clipboard.writeText(url).then(markCopied,fallbackCopy);
     } else { fallbackCopy(); }
   });
   var shareBtn=document.getElementById('webShareBtn');

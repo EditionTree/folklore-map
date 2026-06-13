@@ -56,9 +56,8 @@ h1{font-family:'Marcellus',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;
 .share-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
 .share-btn{font-family:'Marcellus',serif;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#8b3a1a;background:transparent;border:1px solid #b09060;border-radius:3px;padding:9px 16px;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
 .share-btn:hover{background:#8b3a1a;color:#f2e8d5;border-color:#8b3a1a}
-.share-status{display:block;margin-top:8px;font-size:12px;font-style:italic;color:#5c4a2a;min-height:1.1em}
+.share-status{position:absolute !important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .src{display:block;margin-top:18px;font-size:13px;font-style:italic;color:#5c4a2a}
-.reviewed{display:block;margin-top:7px;font-size:12px;font-style:italic;color:#7a6a4a}
 .src a{color:#8b3a1a}
 .back{display:inline-block;margin-top:22px;font-size:13px;color:#5c4a2a}
 .related{margin-top:36px}
@@ -97,7 +96,6 @@ footer{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}
 <p class="summary">The Dagda — Dagda Mór, the Great Good God — is the father-god of the Tuatha Dé Danann, but he is not the remote divine patriarch of later religious traditions. He is enormous, pot-bellied, often dressed in a short tunic that does not quite cover him, dragging a vast club behind him on a wheel. He eats cauldrons of porridge stirred with a ladle the size of a man. He is, in other words, deliberately earthly and comic — and also the most powerful being in his world.</p><p class="summary-cont">His three treasures define him. His club has two ends: strike a man with one end and he dies; touch him with the other and he revives. His cauldron, the Undry, is inexhaustible — no company ever left it unsatisfied. His harp, the Oak of Two Greens, plays the three strains of Irish music by itself: the strain that makes men weep, the strain that makes them laugh, and the strain that puts them to sleep. These are the tools of a god who controls death, abundance, and time.</p><p class="summary-cont">The myths treat him with a mixture of reverence and satirical affection that is characteristic of Irish mythological writing. He negotiates badly at treaties, is tricked out of his home at Brú na Bóinne by his son Aengus, and has a series of improbable lovers. But when it matters — at the battles of Mag Tuired — the Dagda&#x27;s power is absolute. He is the ground under everything, the force that will not be denied.</p>
 <a class="cta" href="https://folklorefinder.uk/map?legend=The%20Dagda">Explore on the interactive map &#8594;</a>
 <span class="src">Source: <a href="https://en.wikipedia.org/wiki/Dagda" target="_blank" rel="noopener">en.wikipedia.org</a></span>
-<span class="reviewed">Added 3 June 2026</span>
 <div class="share-row" role="group" aria-label="Share this legend">
 <button type="button" class="share-btn" id="copyLinkBtn">Copy link</button>
 <button type="button" class="share-btn" id="webShareBtn" hidden>Share&#8230;</button>
@@ -120,7 +118,17 @@ document.querySelectorAll('.carousel').forEach(function(c){
   var link=document.querySelector('link[rel=canonical]');
   var url=(link&&link.href)||location.href;
   var status=document.getElementById('shareStatus');
+  var copyBtn=document.getElementById('copyLinkBtn');
+  var revertTimer=null;
   function announce(m){ if(status) status.textContent=m; }
+  function markCopied(){
+    announce('Link copied');           // for screen readers (visually hidden)
+    if(copyBtn){
+      copyBtn.textContent='Copied';
+      clearTimeout(revertTimer);
+      revertTimer=setTimeout(function(){ copyBtn.textContent='Copy link'; },2000);
+    }
+  }
   function fallbackCopy(){
     try{
       var ta=document.createElement('textarea');
@@ -128,13 +136,12 @@ document.querySelectorAll('.carousel').forEach(function(c){
       ta.style.position='absolute'; ta.style.left='-9999px';
       document.body.appendChild(ta); ta.select();
       document.execCommand('copy'); document.body.removeChild(ta);
-      announce('Link copied');
+      markCopied();
     }catch(e){ announce("Couldn't copy. Press Ctrl+C to copy the address."); }
   }
-  var copyBtn=document.getElementById('copyLinkBtn');
   if(copyBtn) copyBtn.addEventListener('click',function(){
     if(navigator.clipboard&&navigator.clipboard.writeText){
-      navigator.clipboard.writeText(url).then(function(){announce('Link copied');},fallbackCopy);
+      navigator.clipboard.writeText(url).then(markCopied,fallbackCopy);
     } else { fallbackCopy(); }
   });
   var shareBtn=document.getElementById('webShareBtn');

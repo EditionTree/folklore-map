@@ -56,9 +56,8 @@ h1{font-family:'Marcellus',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;
 .share-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
 .share-btn{font-family:'Marcellus',serif;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#8b3a1a;background:transparent;border:1px solid #b09060;border-radius:3px;padding:9px 16px;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
 .share-btn:hover{background:#8b3a1a;color:#f2e8d5;border-color:#8b3a1a}
-.share-status{display:block;margin-top:8px;font-size:12px;font-style:italic;color:#5c4a2a;min-height:1.1em}
+.share-status{position:absolute !important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .src{display:block;margin-top:18px;font-size:13px;font-style:italic;color:#5c4a2a}
-.reviewed{display:block;margin-top:7px;font-size:12px;font-style:italic;color:#7a6a4a}
 .src a{color:#8b3a1a}
 .back{display:inline-block;margin-top:22px;font-size:13px;color:#5c4a2a}
 .related{margin-top:36px}
@@ -97,7 +96,6 @@ footer{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}
 <p class="summary">The legend of Tyrell&#x27;s Hound roots itself in one of English history&#x27;s most debated deaths: the killing of King William II (William Rufus) in the New Forest on 2 August 1100. Shot through the heart by an arrow attributed to Sir Walter Tirel — whether by accident, design, or divine judgment — the king died where he fell. Local tradition holds that Tirel washed his bloodied hands in Ocknell Pond near Stoney Cross, permanently staining its waters red. Every year the pond is said to turn red again, and with this annual bloodstain comes the reappearance of Tyrell&#x27;s Hound: a great black dog that stalks the forest as a harbinger of death.</p><p class="summary-cont">The hound is specifically named after Sir Walter Tirel, whose dog is said to have dragged the master&#x27;s body to a cave in the forest in grief. In death, the animal became bound to the site as a spectral guardian and omen — a black dog of warning rather than attack. The tradition belongs to the widespread British black-dog folklore but is distinguished by its specific historical anchor (the 1100 AD death of a named monarch), a named location (Ocknell Pond), and a named spectral guardian (Tyrell&#x27;s Hound) rather than an anonymous creature.</p><p class="summary-cont">The New Forest possesses a dense layer of supernatural tradition — Colt Pixies, ghostly monks, the Rufus Stone marker — and Tyrell&#x27;s Hound fits naturally within this landscape, giving the forest&#x27;s more general haunted character a specific historical narrative. The pond itself is a real geographical feature near Stoney Cross, referenced in New Forest folklore literature.</p>
 <a class="cta" href="https://folklorefinder.uk/map?legend=Tyrell%27s%20Hound">Explore on the interactive map &#8594;</a>
 <span class="src">Source: <a href="https://www.historic-uk.com/CultureUK/New-Forest-Hauntings/" target="_blank" rel="noopener">historic-uk.com</a></span>
-<span class="reviewed">Added 8 June 2026</span>
 <div class="share-row" role="group" aria-label="Share this legend">
 <button type="button" class="share-btn" id="copyLinkBtn">Copy link</button>
 <button type="button" class="share-btn" id="webShareBtn" hidden>Share&#8230;</button>
@@ -120,7 +118,17 @@ document.querySelectorAll('.carousel').forEach(function(c){
   var link=document.querySelector('link[rel=canonical]');
   var url=(link&&link.href)||location.href;
   var status=document.getElementById('shareStatus');
+  var copyBtn=document.getElementById('copyLinkBtn');
+  var revertTimer=null;
   function announce(m){ if(status) status.textContent=m; }
+  function markCopied(){
+    announce('Link copied');           // for screen readers (visually hidden)
+    if(copyBtn){
+      copyBtn.textContent='Copied';
+      clearTimeout(revertTimer);
+      revertTimer=setTimeout(function(){ copyBtn.textContent='Copy link'; },2000);
+    }
+  }
   function fallbackCopy(){
     try{
       var ta=document.createElement('textarea');
@@ -128,13 +136,12 @@ document.querySelectorAll('.carousel').forEach(function(c){
       ta.style.position='absolute'; ta.style.left='-9999px';
       document.body.appendChild(ta); ta.select();
       document.execCommand('copy'); document.body.removeChild(ta);
-      announce('Link copied');
+      markCopied();
     }catch(e){ announce("Couldn't copy. Press Ctrl+C to copy the address."); }
   }
-  var copyBtn=document.getElementById('copyLinkBtn');
   if(copyBtn) copyBtn.addEventListener('click',function(){
     if(navigator.clipboard&&navigator.clipboard.writeText){
-      navigator.clipboard.writeText(url).then(function(){announce('Link copied');},fallbackCopy);
+      navigator.clipboard.writeText(url).then(markCopied,fallbackCopy);
     } else { fallbackCopy(); }
   });
   var shareBtn=document.getElementById('webShareBtn');

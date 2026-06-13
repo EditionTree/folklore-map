@@ -56,9 +56,8 @@ h1{font-family:'Marcellus',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;
 .share-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
 .share-btn{font-family:'Marcellus',serif;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#8b3a1a;background:transparent;border:1px solid #b09060;border-radius:3px;padding:9px 16px;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
 .share-btn:hover{background:#8b3a1a;color:#f2e8d5;border-color:#8b3a1a}
-.share-status{display:block;margin-top:8px;font-size:12px;font-style:italic;color:#5c4a2a;min-height:1.1em}
+.share-status{position:absolute !important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .src{display:block;margin-top:18px;font-size:13px;font-style:italic;color:#5c4a2a}
-.reviewed{display:block;margin-top:7px;font-size:12px;font-style:italic;color:#7a6a4a}
 .src a{color:#8b3a1a}
 .back{display:inline-block;margin-top:22px;font-size:13px;color:#5c4a2a}
 .related{margin-top:36px}
@@ -97,7 +96,6 @@ footer{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}
 <p class="summary">La Bête De La Tour (&#x27;the Beast of the Tower&#x27;) is the most distinctive spectral creature in Guernsey folklore, a massive black dog whose body is wound in heavy iron chains that clank and rattle as it moves. Unlike the phantom black dogs of mainland England—such as Black Shuck of East Anglia or the Barghest of Yorkshire—the Bête is not presented primarily as an omen of death but as a being whose mere sighting was believed, with near certainty, to cause the viewer&#x27;s death. Its name links it to the old coastal towers and fortifications that punctuate the Guernsey shoreline, where isolated night watchmen endured the full force of the island&#x27;s supernatural landscape.</p><p class="summary-cont">Guernsey sits at the heart of a Channel Islands tradition of spectral dogs that includes the Tchico of Sark (a headless phantom identified with a past Bailiff of Guernsey) and the Black Dog of Bouley Bay on Jersey—all drawing on a shared Norman-Celtic cultural substrate. The Bête&#x27;s specific association with a tower suggests a tradition shaped by the garrisoned military architecture that dominated the island&#x27;s history from the medieval period through the Napoleonic era and beyond.</p><p class="summary-cont">Guernsey&#x27;s supernatural tradition is exceptionally dense for an island of its size: between 1560 and 1640 some 44 people were burned at the stake for witchcraft there, one of the densest concentrations in any community in the British Isles. The Bête De La Tour is recorded in the Channel Eye article &#x27;11 Supernatural Hotspots in the Channel Islands,&#x27; in Guernsey Folklore compilations at the Priaulx Library (which holds Louisa Lane Clarke&#x27;s Guernsey and Sark folklore records), and in Condor Ferries&#x27; Guernsey Folklore guide.</p>
 <a class="cta" href="https://folklorefinder.uk/map?legend=La%20B%C3%AAte%20De%20La%20Tour">Explore on the interactive map &#8594;</a>
 <span class="src">Source: <a href="https://channeleye.media/11-supernatural-hotspots-in-the-channel-islands/" target="_blank" rel="noopener">channeleye.media</a></span>
-<span class="reviewed">Added 9 June 2026</span>
 <div class="share-row" role="group" aria-label="Share this legend">
 <button type="button" class="share-btn" id="copyLinkBtn">Copy link</button>
 <button type="button" class="share-btn" id="webShareBtn" hidden>Share&#8230;</button>
@@ -120,7 +118,17 @@ document.querySelectorAll('.carousel').forEach(function(c){
   var link=document.querySelector('link[rel=canonical]');
   var url=(link&&link.href)||location.href;
   var status=document.getElementById('shareStatus');
+  var copyBtn=document.getElementById('copyLinkBtn');
+  var revertTimer=null;
   function announce(m){ if(status) status.textContent=m; }
+  function markCopied(){
+    announce('Link copied');           // for screen readers (visually hidden)
+    if(copyBtn){
+      copyBtn.textContent='Copied';
+      clearTimeout(revertTimer);
+      revertTimer=setTimeout(function(){ copyBtn.textContent='Copy link'; },2000);
+    }
+  }
   function fallbackCopy(){
     try{
       var ta=document.createElement('textarea');
@@ -128,13 +136,12 @@ document.querySelectorAll('.carousel').forEach(function(c){
       ta.style.position='absolute'; ta.style.left='-9999px';
       document.body.appendChild(ta); ta.select();
       document.execCommand('copy'); document.body.removeChild(ta);
-      announce('Link copied');
+      markCopied();
     }catch(e){ announce("Couldn't copy. Press Ctrl+C to copy the address."); }
   }
-  var copyBtn=document.getElementById('copyLinkBtn');
   if(copyBtn) copyBtn.addEventListener('click',function(){
     if(navigator.clipboard&&navigator.clipboard.writeText){
-      navigator.clipboard.writeText(url).then(function(){announce('Link copied');},fallbackCopy);
+      navigator.clipboard.writeText(url).then(markCopied,fallbackCopy);
     } else { fallbackCopy(); }
   });
   var shareBtn=document.getElementById('webShareBtn');

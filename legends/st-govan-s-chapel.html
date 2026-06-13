@@ -56,9 +56,8 @@ h1{font-family:'Marcellus',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;
 .share-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
 .share-btn{font-family:'Marcellus',serif;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#8b3a1a;background:transparent;border:1px solid #b09060;border-radius:3px;padding:9px 16px;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
 .share-btn:hover{background:#8b3a1a;color:#f2e8d5;border-color:#8b3a1a}
-.share-status{display:block;margin-top:8px;font-size:12px;font-style:italic;color:#5c4a2a;min-height:1.1em}
+.share-status{position:absolute !important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .src{display:block;margin-top:18px;font-size:13px;font-style:italic;color:#5c4a2a}
-.reviewed{display:block;margin-top:7px;font-size:12px;font-style:italic;color:#7a6a4a}
 .src a{color:#8b3a1a}
 .back{display:inline-block;margin-top:22px;font-size:13px;color:#5c4a2a}
 .related{margin-top:36px}
@@ -97,7 +96,6 @@ footer{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}
 <p class="summary">St Govan&#x27;s Chapel is among the most dramatically situated religious sites in Britain: a tiny stone oratory wedged into a natural cleft in the limestone sea-cliffs at Pembrokeshire&#x27;s southernmost coast, accessible only by a steep flight of steps down the cliff face. Tradition says a 5th or 6th-century saint — possibly a companion of Arthurian legend, possibly an Irish monk — was fleeing pirates along the cliffside when the rock miraculously opened and closed around him. His ribs left an impression in the stone, which pilgrims can still touch today.</p><p class="summary-cont">The most enduring element of the legend concerns St Govan&#x27;s silver bell, used to warn coastal communities of approaching raiders. When pirates succeeded in taking the bell and putting out to sea, an immediate storm wrecked their vessel; angels retrieved the bell and entombed it within a large boulder beside the well at the chapel&#x27;s foot. This tradition appears in Notes and Queries as early as 1859, citing local accounts. The boulder, when struck, was long said to ring with the sound of the bell sealed within.</p><p class="summary-cont">The chapel&#x27;s stone steps are subject to a counting tradition — it is said to be impossible to arrive at the same number ascending and descending — and a legend holds that Sir Gawain himself is buried beneath the stone altar, linking the site to Arthurian tradition as well as hagiography. Cadw lists the chapel among the most significant early ecclesiastical monuments in Wales. The combination of inaccessible coastal setting, a saint hidden by living rock, and a bell that rings from inside a stone makes St Govan&#x27;s one of the richest concentrations of legend in Pembrokeshire.</p>
 <a class="cta" href="https://folklorefinder.uk/map?legend=St%20Govan%27s%20Chapel">Explore on the interactive map &#8594;</a>
 <span class="src">Source: <a href="https://en.wikipedia.org/wiki/Saint_Govan" target="_blank" rel="noopener">en.wikipedia.org</a></span>
-<span class="reviewed">Added 8 June 2026</span>
 <div class="share-row" role="group" aria-label="Share this legend">
 <button type="button" class="share-btn" id="copyLinkBtn">Copy link</button>
 <button type="button" class="share-btn" id="webShareBtn" hidden>Share&#8230;</button>
@@ -120,7 +118,17 @@ document.querySelectorAll('.carousel').forEach(function(c){
   var link=document.querySelector('link[rel=canonical]');
   var url=(link&&link.href)||location.href;
   var status=document.getElementById('shareStatus');
+  var copyBtn=document.getElementById('copyLinkBtn');
+  var revertTimer=null;
   function announce(m){ if(status) status.textContent=m; }
+  function markCopied(){
+    announce('Link copied');           // for screen readers (visually hidden)
+    if(copyBtn){
+      copyBtn.textContent='Copied';
+      clearTimeout(revertTimer);
+      revertTimer=setTimeout(function(){ copyBtn.textContent='Copy link'; },2000);
+    }
+  }
   function fallbackCopy(){
     try{
       var ta=document.createElement('textarea');
@@ -128,13 +136,12 @@ document.querySelectorAll('.carousel').forEach(function(c){
       ta.style.position='absolute'; ta.style.left='-9999px';
       document.body.appendChild(ta); ta.select();
       document.execCommand('copy'); document.body.removeChild(ta);
-      announce('Link copied');
+      markCopied();
     }catch(e){ announce("Couldn't copy. Press Ctrl+C to copy the address."); }
   }
-  var copyBtn=document.getElementById('copyLinkBtn');
   if(copyBtn) copyBtn.addEventListener('click',function(){
     if(navigator.clipboard&&navigator.clipboard.writeText){
-      navigator.clipboard.writeText(url).then(function(){announce('Link copied');},fallbackCopy);
+      navigator.clipboard.writeText(url).then(markCopied,fallbackCopy);
     } else { fallbackCopy(); }
   });
   var shareBtn=document.getElementById('webShareBtn');

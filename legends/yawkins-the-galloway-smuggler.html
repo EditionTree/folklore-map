@@ -56,9 +56,8 @@ h1{font-family:'Marcellus',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;
 .share-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
 .share-btn{font-family:'Marcellus',serif;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#8b3a1a;background:transparent;border:1px solid #b09060;border-radius:3px;padding:9px 16px;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
 .share-btn:hover{background:#8b3a1a;color:#f2e8d5;border-color:#8b3a1a}
-.share-status{display:block;margin-top:8px;font-size:12px;font-style:italic;color:#5c4a2a;min-height:1.1em}
+.share-status{position:absolute !important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .src{display:block;margin-top:18px;font-size:13px;font-style:italic;color:#5c4a2a}
-.reviewed{display:block;margin-top:7px;font-size:12px;font-style:italic;color:#7a6a4a}
 .src a{color:#8b3a1a}
 .back{display:inline-block;margin-top:22px;font-size:13px;color:#5c4a2a}
 .related{margin-top:36px}
@@ -97,7 +96,6 @@ footer{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}
 <p class="summary">Captain Jack Yawkins was a real Dutch skipper who, in the late 18th century, ran the smuggling lugger Black Prince along the Solway coast, carrying contraband for French, Dutch, Manx and Scottish trading syndicates. His reputation rested on his ship&#x27;s speed and his own nerve: in one celebrated episode, while landing cargo near Manxman&#x27;s Lake at Kirkcudbright, two revenue cutters appeared and began to close in. Rather than flee, Yawkins sailed the Black Prince directly between the two government ships — passing so close, it was said, that he could have tossed his hat onto either deck — and was clear away before they could bring their guns to bear.</p><p class="summary-cont">A large sea cave on the coast near Kirkdale and Barholm, frequently used by Yawkins to store smuggled spirits, became known as Dirk Hatteraick&#x27;s Cave; rows of small rectangular recesses cut into its walls, resembling a dovecote, are said to have held bottles. The cave remains a noted feature of the Galloway coast.</p><p class="summary-cont">Yawkins&#x27;s fame outlived his smuggling career thanks to Sir Walter Scott, who based the smuggler-villain Dirk Hatteraick in &#x27;Guy Mannering&#x27; (1815) directly on him — a debt Scott acknowledged in a letter to the Manx historian Mr Train. The fictional name then attached itself permanently to the real cave, fusing history and literature in the local landscape.</p>
 <a class="cta" href="https://folklorefinder.uk/map?legend=Yawkins%2C%20the%20Galloway%20Smuggler">Explore on the interactive map &#8594;</a>
 <span class="src">Source: <a href="https://www.bartleby.com/lit-hub/hc/guy-mannering-or-the-astrologer/additional-note/" target="_blank" rel="noopener">bartleby.com</a></span>
-<span class="reviewed">Added 10 June 2026</span>
 <div class="share-row" role="group" aria-label="Share this legend">
 <button type="button" class="share-btn" id="copyLinkBtn">Copy link</button>
 <button type="button" class="share-btn" id="webShareBtn" hidden>Share&#8230;</button>
@@ -120,7 +118,17 @@ document.querySelectorAll('.carousel').forEach(function(c){
   var link=document.querySelector('link[rel=canonical]');
   var url=(link&&link.href)||location.href;
   var status=document.getElementById('shareStatus');
+  var copyBtn=document.getElementById('copyLinkBtn');
+  var revertTimer=null;
   function announce(m){ if(status) status.textContent=m; }
+  function markCopied(){
+    announce('Link copied');           // for screen readers (visually hidden)
+    if(copyBtn){
+      copyBtn.textContent='Copied';
+      clearTimeout(revertTimer);
+      revertTimer=setTimeout(function(){ copyBtn.textContent='Copy link'; },2000);
+    }
+  }
   function fallbackCopy(){
     try{
       var ta=document.createElement('textarea');
@@ -128,13 +136,12 @@ document.querySelectorAll('.carousel').forEach(function(c){
       ta.style.position='absolute'; ta.style.left='-9999px';
       document.body.appendChild(ta); ta.select();
       document.execCommand('copy'); document.body.removeChild(ta);
-      announce('Link copied');
+      markCopied();
     }catch(e){ announce("Couldn't copy. Press Ctrl+C to copy the address."); }
   }
-  var copyBtn=document.getElementById('copyLinkBtn');
   if(copyBtn) copyBtn.addEventListener('click',function(){
     if(navigator.clipboard&&navigator.clipboard.writeText){
-      navigator.clipboard.writeText(url).then(function(){announce('Link copied');},fallbackCopy);
+      navigator.clipboard.writeText(url).then(markCopied,fallbackCopy);
     } else { fallbackCopy(); }
   });
   var shareBtn=document.getElementById('webShareBtn');

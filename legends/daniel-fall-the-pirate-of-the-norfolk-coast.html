@@ -56,9 +56,8 @@ h1{font-family:'Marcellus',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;
 .share-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
 .share-btn{font-family:'Marcellus',serif;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#8b3a1a;background:transparent;border:1px solid #b09060;border-radius:3px;padding:9px 16px;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
 .share-btn:hover{background:#8b3a1a;color:#f2e8d5;border-color:#8b3a1a}
-.share-status{display:block;margin-top:8px;font-size:12px;font-style:italic;color:#5c4a2a;min-height:1.1em}
+.share-status{position:absolute !important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .src{display:block;margin-top:18px;font-size:13px;font-style:italic;color:#5c4a2a}
-.reviewed{display:block;margin-top:7px;font-size:12px;font-style:italic;color:#7a6a4a}
 .src a{color:#8b3a1a}
 .back{display:inline-block;margin-top:22px;font-size:13px;color:#5c4a2a}
 .related{margin-top:36px}
@@ -97,7 +96,6 @@ footer{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}
 <p class="summary">Daniel Fall — sometimes recorded as John Fall, and known locally as &#x27;Fall the Pirate&#x27; — first appears in the records in November 1780, when &#x27;the noted Daniel Fall, a smuggler and captain of a large privateer&#x27; cut out two coal-carrying colliers from Lowestoft South Roads. Sailing under American colours and holding letters of marque from Holland, France and America, he commanded fast cutters named the Fearnought and the Liberty, and in February 1781 brazenly hoisted the thirteen stripes as he passed a Harwich mail packet.</p><p class="summary-cont">His most notorious action came on 31 January 1781. Captain David Bartleman, just twenty-five years old, was sailing the lightly-armed packet Alexander &amp; Margaret along the Norfolk coast with only three-pounder guns and a crew of ten when Fall&#x27;s far heavier cutter — eighteen four-pounders and over a hundred men — attacked. Bartleman fought his ship clear and limped into Yarmouth, but died of his wounds on 14 February 1781. His father had a memorial stone erected over the grave, commemorating his son&#x27;s gallantry and explicitly marking &#x27;the infamy of Fall the Pirate&#x27;.</p><p class="summary-cont">By April 1782 Fall had moved his operations into the Irish Sea, and the East Coast records fall silent on him after that — leaving Bartleman&#x27;s Yarmouth gravestone as the most enduring local trace of his career.</p>
 <a class="cta" href="https://folklorefinder.uk/map?legend=Daniel%20Fall%2C%20the%20Pirate%20of%20the%20Norfolk%20Coast">Explore on the interactive map &#8594;</a>
 <span class="src">Source: <a href="https://enjoyingnorfolk.co.uk/here-be-pirates/" target="_blank" rel="noopener">enjoyingnorfolk.co.uk</a></span>
-<span class="reviewed">Added 10 June 2026</span>
 <div class="share-row" role="group" aria-label="Share this legend">
 <button type="button" class="share-btn" id="copyLinkBtn">Copy link</button>
 <button type="button" class="share-btn" id="webShareBtn" hidden>Share&#8230;</button>
@@ -120,7 +118,17 @@ document.querySelectorAll('.carousel').forEach(function(c){
   var link=document.querySelector('link[rel=canonical]');
   var url=(link&&link.href)||location.href;
   var status=document.getElementById('shareStatus');
+  var copyBtn=document.getElementById('copyLinkBtn');
+  var revertTimer=null;
   function announce(m){ if(status) status.textContent=m; }
+  function markCopied(){
+    announce('Link copied');           // for screen readers (visually hidden)
+    if(copyBtn){
+      copyBtn.textContent='Copied';
+      clearTimeout(revertTimer);
+      revertTimer=setTimeout(function(){ copyBtn.textContent='Copy link'; },2000);
+    }
+  }
   function fallbackCopy(){
     try{
       var ta=document.createElement('textarea');
@@ -128,13 +136,12 @@ document.querySelectorAll('.carousel').forEach(function(c){
       ta.style.position='absolute'; ta.style.left='-9999px';
       document.body.appendChild(ta); ta.select();
       document.execCommand('copy'); document.body.removeChild(ta);
-      announce('Link copied');
+      markCopied();
     }catch(e){ announce("Couldn't copy. Press Ctrl+C to copy the address."); }
   }
-  var copyBtn=document.getElementById('copyLinkBtn');
   if(copyBtn) copyBtn.addEventListener('click',function(){
     if(navigator.clipboard&&navigator.clipboard.writeText){
-      navigator.clipboard.writeText(url).then(function(){announce('Link copied');},fallbackCopy);
+      navigator.clipboard.writeText(url).then(markCopied,fallbackCopy);
     } else { fallbackCopy(); }
   });
   var shareBtn=document.getElementById('webShareBtn');

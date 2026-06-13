@@ -56,9 +56,8 @@ h1{font-family:'Marcellus',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;
 .share-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
 .share-btn{font-family:'Marcellus',serif;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#8b3a1a;background:transparent;border:1px solid #b09060;border-radius:3px;padding:9px 16px;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
 .share-btn:hover{background:#8b3a1a;color:#f2e8d5;border-color:#8b3a1a}
-.share-status{display:block;margin-top:8px;font-size:12px;font-style:italic;color:#5c4a2a;min-height:1.1em}
+.share-status{position:absolute !important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .src{display:block;margin-top:18px;font-size:13px;font-style:italic;color:#5c4a2a}
-.reviewed{display:block;margin-top:7px;font-size:12px;font-style:italic;color:#7a6a4a}
 .src a{color:#8b3a1a}
 .back{display:inline-block;margin-top:22px;font-size:13px;color:#5c4a2a}
 .related{margin-top:36px}
@@ -97,7 +96,6 @@ footer{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}
 <p class="summary">St Catherine&#x27;s Hill rises sharply south of Winchester, its beech-crowned summit shaped by an Iron Age hillfort whose earthworks enclose the sparse ruins of a Norman chapel, destroyed at the Dissolution. The hill has been used as recreational ground by Winchester College boys since medieval times, and the Mizmaze cut into its chalk plateau reflects that long association. One of only eight surviving turf mazes in England, it is unusually rectangular rather than circular in plan — nine nested loops forming a continuous path of some 624 metres with no junctions or branching.</p><p class="summary-cont">The most persistent legend of the maze concerns its creation. A Winchester College boy, banished to the hill as punishment for some forgotten offence, spent his exile carving the labyrinthine pattern into the turf, drawing on classical maze design he had studied. One version ends simply: the boy went mad in the tracing, his mind confused by the interlocking paths he could not escape in imagination. The darker telling says he completed the maze and walked it once, lost his reason entirely in the confusion of endless turns, and in desperation threw himself from the hill&#x27;s scarp into the River Itchen below.</p><p class="summary-cont">The hill carries further layers of legend: it is said that an ancient king — sometimes identified as Arthur — sleeps beneath the barrow at the summit in the pose of the King Under the Hill, and that the ridge&#x27;s profile, seen from the east, resembles a sleeping dragon. The maze itself is first recorded in documents from 1647 and is maintained by volunteers; its precise medieval origins remain unknown.</p>
 <a class="cta" href="https://folklorefinder.uk/map?legend=St%20Catherine%27s%20Hill%20Mizmaze">Explore on the interactive map &#8594;</a>
 <span class="src">Source: <a href="https://www.worldwidewriter.co.uk/st-catherines-hill-winchester.html" target="_blank" rel="noopener">worldwidewriter.co.uk</a></span>
-<span class="reviewed">Added 8 June 2026</span>
 <div class="share-row" role="group" aria-label="Share this legend">
 <button type="button" class="share-btn" id="copyLinkBtn">Copy link</button>
 <button type="button" class="share-btn" id="webShareBtn" hidden>Share&#8230;</button>
@@ -120,7 +118,17 @@ document.querySelectorAll('.carousel').forEach(function(c){
   var link=document.querySelector('link[rel=canonical]');
   var url=(link&&link.href)||location.href;
   var status=document.getElementById('shareStatus');
+  var copyBtn=document.getElementById('copyLinkBtn');
+  var revertTimer=null;
   function announce(m){ if(status) status.textContent=m; }
+  function markCopied(){
+    announce('Link copied');           // for screen readers (visually hidden)
+    if(copyBtn){
+      copyBtn.textContent='Copied';
+      clearTimeout(revertTimer);
+      revertTimer=setTimeout(function(){ copyBtn.textContent='Copy link'; },2000);
+    }
+  }
   function fallbackCopy(){
     try{
       var ta=document.createElement('textarea');
@@ -128,13 +136,12 @@ document.querySelectorAll('.carousel').forEach(function(c){
       ta.style.position='absolute'; ta.style.left='-9999px';
       document.body.appendChild(ta); ta.select();
       document.execCommand('copy'); document.body.removeChild(ta);
-      announce('Link copied');
+      markCopied();
     }catch(e){ announce("Couldn't copy. Press Ctrl+C to copy the address."); }
   }
-  var copyBtn=document.getElementById('copyLinkBtn');
   if(copyBtn) copyBtn.addEventListener('click',function(){
     if(navigator.clipboard&&navigator.clipboard.writeText){
-      navigator.clipboard.writeText(url).then(function(){announce('Link copied');},fallbackCopy);
+      navigator.clipboard.writeText(url).then(markCopied,fallbackCopy);
     } else { fallbackCopy(); }
   });
   var shareBtn=document.getElementById('webShareBtn');

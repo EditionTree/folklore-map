@@ -56,9 +56,8 @@ h1{font-family:'Marcellus',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;
 .share-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
 .share-btn{font-family:'Marcellus',serif;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#8b3a1a;background:transparent;border:1px solid #b09060;border-radius:3px;padding:9px 16px;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
 .share-btn:hover{background:#8b3a1a;color:#f2e8d5;border-color:#8b3a1a}
-.share-status{display:block;margin-top:8px;font-size:12px;font-style:italic;color:#5c4a2a;min-height:1.1em}
+.share-status{position:absolute !important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .src{display:block;margin-top:18px;font-size:13px;font-style:italic;color:#5c4a2a}
-.reviewed{display:block;margin-top:7px;font-size:12px;font-style:italic;color:#7a6a4a}
 .src a{color:#8b3a1a}
 .back{display:inline-block;margin-top:22px;font-size:13px;color:#5c4a2a}
 .related{margin-top:36px}
@@ -97,7 +96,6 @@ footer{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}
 <p class="summary">In the churchyard of St Peter&#x27;s Church in Westleton, Suffolk, lies a flat 14th-century gravestone known as the Witch&#x27;s Stone — said to be perpetually free of grass and the focus of one of Suffolk&#x27;s most enduring pieces of devil-lore. According to the legend, anyone bold enough to leave a handkerchief inside the church, then run anti-clockwise around the stone a set number of times, will return to find the handkerchief gone, spirited away by the Devil himself, with the clank of hellish chains audible in the distance.</p><p class="summary-cont">The story is sometimes linked to the wider history of witchcraft accusations in the area: Katherine Tooly of Westleton was hanged in 1645, accused of using a familiar spirit to attempt murder, during the height of the East Anglian witch trials associated with Matthew Hopkins. Other local historians offer a more earthly origin, suggesting the tale of a devil-haunted churchyard was deliberately spread or embellished by smugglers moving contraband from the nearby Sizewell Gap, since a reputation for supernatural danger kept villagers and revenue men away from the church&#x27;s crypts at night.</p><p class="summary-cont">Whatever its origin, the legend remains a fixture of Suffolk ghost-story collections and &#x27;Weird Suffolk&#x27; features — though, fittingly, no one now seems willing to actually test the ritual.</p>
 <a class="cta" href="https://folklorefinder.uk/map?legend=Witch%27s%20Stone%20of%20Westleton">Explore on the interactive map &#8594;</a>
 <span class="src">Source: <a href="https://www.greatbritishlife.co.uk/magazines/suffolk/25327663.suffolk-legend-witchs-stone-westleton/" target="_blank" rel="noopener">greatbritishlife.co.uk</a></span>
-<span class="reviewed">Added 11 June 2026</span>
 <div class="share-row" role="group" aria-label="Share this legend">
 <button type="button" class="share-btn" id="copyLinkBtn">Copy link</button>
 <button type="button" class="share-btn" id="webShareBtn" hidden>Share&#8230;</button>
@@ -120,7 +118,17 @@ document.querySelectorAll('.carousel').forEach(function(c){
   var link=document.querySelector('link[rel=canonical]');
   var url=(link&&link.href)||location.href;
   var status=document.getElementById('shareStatus');
+  var copyBtn=document.getElementById('copyLinkBtn');
+  var revertTimer=null;
   function announce(m){ if(status) status.textContent=m; }
+  function markCopied(){
+    announce('Link copied');           // for screen readers (visually hidden)
+    if(copyBtn){
+      copyBtn.textContent='Copied';
+      clearTimeout(revertTimer);
+      revertTimer=setTimeout(function(){ copyBtn.textContent='Copy link'; },2000);
+    }
+  }
   function fallbackCopy(){
     try{
       var ta=document.createElement('textarea');
@@ -128,13 +136,12 @@ document.querySelectorAll('.carousel').forEach(function(c){
       ta.style.position='absolute'; ta.style.left='-9999px';
       document.body.appendChild(ta); ta.select();
       document.execCommand('copy'); document.body.removeChild(ta);
-      announce('Link copied');
+      markCopied();
     }catch(e){ announce("Couldn't copy. Press Ctrl+C to copy the address."); }
   }
-  var copyBtn=document.getElementById('copyLinkBtn');
   if(copyBtn) copyBtn.addEventListener('click',function(){
     if(navigator.clipboard&&navigator.clipboard.writeText){
-      navigator.clipboard.writeText(url).then(function(){announce('Link copied');},fallbackCopy);
+      navigator.clipboard.writeText(url).then(markCopied,fallbackCopy);
     } else { fallbackCopy(); }
   });
   var shareBtn=document.getElementById('webShareBtn');

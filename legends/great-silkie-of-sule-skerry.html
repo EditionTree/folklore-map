@@ -56,9 +56,8 @@ h1{font-family:'Marcellus',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;
 .share-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
 .share-btn{font-family:'Marcellus',serif;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#8b3a1a;background:transparent;border:1px solid #b09060;border-radius:3px;padding:9px 16px;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
 .share-btn:hover{background:#8b3a1a;color:#f2e8d5;border-color:#8b3a1a}
-.share-status{display:block;margin-top:8px;font-size:12px;font-style:italic;color:#5c4a2a;min-height:1.1em}
+.share-status{position:absolute !important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .src{display:block;margin-top:18px;font-size:13px;font-style:italic;color:#5c4a2a}
-.reviewed{display:block;margin-top:7px;font-size:12px;font-style:italic;color:#7a6a4a}
 .src a{color:#8b3a1a}
 .back{display:inline-block;margin-top:22px;font-size:13px;color:#5c4a2a}
 .related{margin-top:36px}
@@ -97,7 +96,6 @@ footer{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}
 <p class="summary">&#x27;The Great Silkie of Sule Skerry&#x27; is one of the most haunting ballads in the British Isles tradition, catalogued as Child Ballad 113. In it, a woman near the sea finds herself with a mysterious child; the father comes to her from the sea — a great selkie — declaring that he lives on Sule Skerry, the remote rock roughly fifty miles south-west of Orkney&#x27;s mainland. He pays her in gold for the boy and takes the child away to be raised in the sea, with only that payment left behind.</p><p class="summary-cont">The ballad&#x27;s tragedy lies in its final verse. Before departing, the Silkie tells the woman that she will marry a gunner, that he will go to sea and shoot a grey seal, and that when he brings home the pelt she will recognise the gold necklace round it as the one she once received as payment. The child inside the killed seal is her son. The great selkie himself is the other kill. The earliest collected version was taken down in Shetland in the 1850s; a full Orkney variant was collected in 1938 from John Sinclair of Flotta by the School of Scottish Studies.</p><p class="summary-cont">Sule Skerry itself — a bare, uninhabited Atlantic rock occupied by large seal colonies — lends the ballad its desolate and inevitable geography. The story encodes the anxieties of seal-hunting communities, where the seals you kill may carry the souls of the sea-dead or the half-human children of silkie unions. Similar traditions of selkie ancestry survived in Orkney and Shetland well into the twentieth century, and the ballad remains distinct from the more general selkie tradition as a specific, tragic narrative set at a named and specific place.</p>
 <a class="cta" href="https://folklorefinder.uk/map?legend=Great%20Silkie%20of%20Sule%20Skerry">Explore on the interactive map &#8594;</a>
 <span class="src">Source: <a href="https://en.wikipedia.org/wiki/The_Great_Silkie_of_Sule_Skerry" target="_blank" rel="noopener">en.wikipedia.org</a></span>
-<span class="reviewed">Added 8 June 2026</span>
 <div class="share-row" role="group" aria-label="Share this legend">
 <button type="button" class="share-btn" id="copyLinkBtn">Copy link</button>
 <button type="button" class="share-btn" id="webShareBtn" hidden>Share&#8230;</button>
@@ -120,7 +118,17 @@ document.querySelectorAll('.carousel').forEach(function(c){
   var link=document.querySelector('link[rel=canonical]');
   var url=(link&&link.href)||location.href;
   var status=document.getElementById('shareStatus');
+  var copyBtn=document.getElementById('copyLinkBtn');
+  var revertTimer=null;
   function announce(m){ if(status) status.textContent=m; }
+  function markCopied(){
+    announce('Link copied');           // for screen readers (visually hidden)
+    if(copyBtn){
+      copyBtn.textContent='Copied';
+      clearTimeout(revertTimer);
+      revertTimer=setTimeout(function(){ copyBtn.textContent='Copy link'; },2000);
+    }
+  }
   function fallbackCopy(){
     try{
       var ta=document.createElement('textarea');
@@ -128,13 +136,12 @@ document.querySelectorAll('.carousel').forEach(function(c){
       ta.style.position='absolute'; ta.style.left='-9999px';
       document.body.appendChild(ta); ta.select();
       document.execCommand('copy'); document.body.removeChild(ta);
-      announce('Link copied');
+      markCopied();
     }catch(e){ announce("Couldn't copy. Press Ctrl+C to copy the address."); }
   }
-  var copyBtn=document.getElementById('copyLinkBtn');
   if(copyBtn) copyBtn.addEventListener('click',function(){
     if(navigator.clipboard&&navigator.clipboard.writeText){
-      navigator.clipboard.writeText(url).then(function(){announce('Link copied');},fallbackCopy);
+      navigator.clipboard.writeText(url).then(markCopied,fallbackCopy);
     } else { fallbackCopy(); }
   });
   var shareBtn=document.getElementById('webShareBtn');

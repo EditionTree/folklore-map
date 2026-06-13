@@ -388,7 +388,7 @@
     "lng": 0.79,
     "category": "ghost",
     "region": "Norfolk",
-    "summary": "The Brown Lady of Raynham Hall is a ghost that reportedly haunts Raynham Hall in Norfolk, England. \nIt became one of the most famous hauntings in the United Kingdom when photographers from Country Life magazine claimed to have captured its image. The \"Brown Lady\" is so named because of the brown brocade dress it is claimed she wears.",
+    "summary": "Britain's most famous ghost photograph: a brown-robed figure descending a staircase at Raynham Hall, said to be Dorothy Walpole, locked away by her husband until her death in 1726.",
     "source": "https://en.wikipedia.org/wiki/Brown_Lady_of_Raynham_Hall",
     "date_added": "2026-06-03",
     "tags": [
@@ -396,7 +396,8 @@
       "haunting",
       "england",
       "norfolk"
-    ]
+    ],
+    "detail": "The Brown Lady is traditionally identified as Dorothy Walpole (1686–1726), sister of Britain's first Prime Minister Robert Walpole. According to the legend, her marriage to the volatile Charles Townshend, 2nd Viscount Townshend, ended after he discovered she had been unfaithful; he is said to have confined her to Raynham Hall, where she lived out her remaining years isolated from her children before dying, officially of smallpox, in 1726.\n\nSightings of a woman in a brown brocade dress with empty eye sockets date back to at least Christmas 1835, when Colonel Loftus and a house guest both reported seeing the figure on the staircase. The following year the novelist Captain Frederick Marryat — a friend of Charles Dickens — stayed at the Hall specifically to investigate, and according to his daughter's account encountered the apparition in a corridor and fired his revolver at it; the bullet passed straight through and lodged in a door. Sightings reportedly grew rarer after that.\n\nThe Brown Lady's fame rests largely on a single photograph taken on 19 September 1936 by Country Life photographers Captain Hubert Provand and Indre Shira, who said they watched a 'vapoury form' descend the staircase as they prepared to shoot the hall's interior. Published that December, the image was examined by paranormal investigator Harry Price, who could find no evidence of fakery. Later skeptics, including Joe Nickell, have argued it shows signs of double exposure, and magician John Booth recreated similar effects using mundane techniques — but no explanation has fully displaced the photograph's reputation as the most iconic ghost image ever taken."
   },
   {
     "name": "Brownie",
@@ -1771,7 +1772,7 @@
     "lng": -4.7594,
     "category": "location",
     "region": "Cornwall",
-    "summary": "Merlin's Cave is a natural sea tunnel beneath Tintagel Castle in Cornwall, England, connecting Tintagel Haven on the east side of the island to West Cove on the west. At low tide, it is possible to walk from one entrance to the other along a sandy floor. At high tide, the tunnel becomes impassable as it fills with seawater from end to end.",
+    "summary": "A sea cave beneath Tintagel Castle that floods twice daily with the tide — and whose Arthurian name turns out to be a Victorian invention, dreamed up for 19th-century guidebooks.",
     "source": "https://en.wikipedia.org/wiki/Merlin%27s_Cave",
     "date_added": "2026-06-03",
     "tags": [
@@ -1783,7 +1784,8 @@
       "arthurian",
       "england",
       "cornwall"
-    ]
+    ],
+    "detail": "Merlin's Cave is a natural tunnel roughly 100 metres long, cut through the headland beneath Tintagel Castle by centuries of wave action along a seam between slate and volcanic rock. At low tide it can be walked from end to end across a sandy floor, linking Tintagel Haven to West Cove; at high tide it fills completely with seawater and becomes impassable, a tidal rhythm that has long added to its otherworldly reputation.\n\nDespite the name, no medieval source places Merlin inside — or anywhere near — this cave. Geoffrey of Monmouth's Historia Regum Britanniae, which first linked Tintagel to Arthur's conception, says nothing of a sea cave, and neither do the later French romances of Robert de Boron or Chrétien de Troyes. The connection is a 19th-century literary graft: Alfred, Lord Tennyson's Idylls of the King (1859–1885) describes the infant Arthur being carried from the waves by Merlin, and Victorian guidebook writers, eager to give Tintagel's dramatic sea cave a story, attached Tennyson's image to this spot.\n\nThe name stuck. By the early 20th century 'Merlin's Cave' was fixed on maps, signposts, and in the popular imagination, despite having no basis earlier than the previous generation's poetry. It is now one of the most visited features of Tintagel, a striking case of a brand-new legend taking root so quickly in an already-legendary landscape that few visitors realise how recent it really is."
   },
   {
     "name": "Merlin's Oak",
@@ -3839,13 +3841,16 @@
     "lng": -3.936,
     "category": "witch",
     "region": "Fife, Scotland",
-    "summary": "The last person imprisoned under Britain's Witchcraft Act of 1735. A medium who claimed to materialise spirits of the dead, she was arrested in 1944 after apparently revealing that HMS Barham had sunk — a fact the Admiralty had not yet made public. Convicted and imprisoned, she died in 1956 shortly after a police raid on one of her séances.",
+    "summary": "Convicted in 1944 as Britain's last accused witch, medium Helen Duncan announced a warship's sinking before the Admiralty did — and was jailed under a 1735 law just years from being scrapped.",
     "source": "https://en.wikipedia.org/wiki/Helen_Duncan",
     "date_added": "2026-06-03",
     "tags": [
       "scotland",
-      "fife"
-    ]
+      "fife",
+      "prophecy",
+      "curse"
+    ],
+    "detail": "Victoria Helen Duncan, born in Perthshire in 1897, became one of Britain's most notorious physical mediums during the 1920s and 30s, holding séances in which she appeared to produce 'ectoplasm' — a substance said to let spirits take form. Investigators found it was nothing more than cheesecloth, paper, and egg white, swallowed before sittings and regurgitated during them; in 1933 she was convicted of fraud in Edinburgh after a sitter seized her 'spirit guide' and found it to be a stockinette undervest stretched over her head.\n\nDespite this, Duncan retained a loyal following, and it was a séance during the Second World War that sealed her fate. She announced that a sailor's spirit had told her his ship, HMS Barham, had been sunk — news the Admiralty was deliberately suppressing to protect morale. Whether she had picked up wartime gossip or genuinely unsettled the authorities, she was arrested in 1944 and, remarkably, prosecuted not for fraud but under the Witchcraft Act of 1735, a statute over two centuries old. Winston Churchill himself complained about the 'obsolete tomfoolery' of tying up the courts with a witchcraft trial in wartime, but Duncan was convicted and served nine months in Holloway prison.\n\nHer case became a rallying point for spiritualists and an embarrassment for the legal system, contributing to the repeal of the Witchcraft Act in 1951 and its replacement with the more narrowly targeted Fraudulent Mediums Act. Duncan continued giving séances after her release, and died in 1956 days after police raided one of her sittings in Nottingham — her supporters maintained that the shock of the raid, mid-trance, had killed her."
   },
   {
     "name": "Mother Ludlam",
@@ -4516,7 +4521,7 @@
     "lng": -0.2121,
     "category": "location",
     "region": "Sussex",
-    "summary": "The great dry valley carved through the South Downs above Brighton was dug by the Devil in a single night, his intent being to flood the Weald and drown the Sussex churches. A woman's candle and a crowing cock tricked him into thinking dawn had broken, and he fled with the work unfinished. The dyke stands as testament to his thwarted design.",
+    "summary": "The Devil carved this gash through the South Downs in one night, set on drowning Sussex's churches — a crowing cockerel tricked him into thinking dawn had broken, and he fled mid-dig.",
     "source": "https://en.wikipedia.org/wiki/Devil%27s_Dyke,_West_Sussex",
     "date_added": "2026-06-03",
     "tags": [
@@ -4524,7 +4529,8 @@
       "trickery",
       "england",
       "sussex"
-    ]
+    ],
+    "detail": "According to legend, the Devil was so enraged by the sight of the Sussex Weald studded with churches that he resolved to dig a channel through the South Downs overnight and let the sea flood in to drown them all. He set to work after dark, hurling great clods of earth aside as he carved out the valley that became known as the Devil's Dyke.\n\nHe was stopped only by a trick. In the most common telling, an old woman living nearby was woken by the noise of his digging; she lit a candle, which in turn woke her cockerel, who began to crow. Seeing the light and hearing the bird, the Devil mistook it for sunrise and fled before dawn could catch him at his work, leaving the dyke unfinished. Another version has the woman hold a sieve in front of her candle so that it glowed like a rising moon — or sun — with the same effect. Either way, the Weald and its churches were saved.\n\nA coda to the story claims that the last clod of earth the Devil threw over his shoulder as he fled landed in the sea off the Hampshire coast and became the Isle of Wight. In reality the dyke is a dry valley shaped by meltwater during the last Ice Age, later fortified as one of the largest Iron Age hillforts in Sussex — but its eerie, oversized scale was more than enough to convince Victorian visitors, who flocked here by the trainload, that nothing short of the Devil could have dug it."
   },
   {
     "name": "Hereward the Wake",
@@ -5012,7 +5018,7 @@
     "lng": -3.989,
     "category": "beast",
     "region": "Gwynedd, Wales",
-    "summary": "A monstrous creature of the deep lakes of Wales — part crocodile, part demon — the Afanc devoured any who entered its waters. Llyn Barfog in the Dyfi valley is one of its most enduring haunting grounds. In some versions it was dragged from the water by King Arthur's horse Llamrei and cast into a loch too deep and cold for it ever to resurface.",
+    "summary": "A shape-shifting water monster that haunted Welsh lakes, the Afanc was lured ashore by a sleeping maiden's lap and bound in chains — only to kill her the instant it woke.",
     "source": "https://en.wikipedia.org/wiki/Afanc",
     "date_added": "2026-06-03",
     "tags": [
@@ -5022,7 +5028,8 @@
       "arthurian",
       "wales",
       "gwynedd"
-    ]
+    ],
+    "detail": "Welsh tradition tells of several Afancs lurking in deep pools and lakes across Wales, sometimes described as crocodile-like, sometimes beaver-like, sometimes simply a 'demon of the lake'. The most famous tale tells how the creature could only be captured through trickery: a young woman was persuaded to let it rest its head in her lap while it slept, allowing local men to bind it in chains. When the Afanc woke and felt itself trapped, it thrashed so violently that it killed the maiden before finally being subdued.\n\nOther versions give the story an Arthurian twist. At Llyn Barfog in the Dyfi valley, King Arthur's horse Llamrei is said to have dragged the bound Afanc from the water using chains looped around its neck, hauling it across the mountains to a lake so deep and cold that it could never climb out again. A still older account, recorded by the antiquarian Iolo Morganwg, has the oxen of Hu Gadarn perform the same feat, dragging the beast to Llyn Llion after it caused a great flood. In the Mabinogion tale of Peredur, a similar 'Addanc of the Lake' is overcome only when the hero is given a stone that renders the invisible creature visible, allowing him to behead it.\n\nThe legend's staying power is written into the map: Llyn yr Afanc near Betws-y-coed takes its name directly from the creature, and several other lakes claim to be its former lair. The modern Welsh word afanc has since settled down to mean simply 'beaver' — a tame fate for a monster once blamed for floods, drownings, and the deaths of those careless enough to wade into the wrong lake."
   },
   {
     "name": "Pryderi",

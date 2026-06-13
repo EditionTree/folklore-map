@@ -396,6 +396,11 @@ def esc(s):
     return html.escape(s or "", quote=True)
 
 
+def inline_text(s):
+    """Collapse source newlines and stray spacing for one HTML text run."""
+    return re.sub(r"\s+", " ", s or "").strip()
+
+
 def short_desc(summary, limit=155):
     s = re.sub(r"\s+", " ", summary or "").strip()
     if len(s) <= limit:
@@ -711,7 +716,7 @@ $topnav
   <div class="shell">
     $breadcrumb
     <section class="hero" aria-labelledby="legend-title">
-      <img src="$hero_url" alt="$hero_alt"/>
+      $hero_media
       <div class="hero-copy">
         <div class="eyebrow">
           <span class="category" style="background:$catcolour">$catname</span>
@@ -720,7 +725,7 @@ $topnav
         <h1 id="legend-title">$name</h1>
         <p class="standfirst">$standfirst</p>
       </div>
-      <span class="hero-caption">$hero_caption</span>
+$hero_caption
     </section>
 
     <div class="content-grid">
@@ -803,27 +808,32 @@ def update_homepage_count(total):
 def render_featured_legend(leg, featured, paras, srcs, rel, cats, meta,
                            slugmap, catname, maplink, page_path_url, desc,
                            jsonld, breadcrumb, breadcrumb_jsonld):
-    """Render an image-led legend page for entries enabled in the manifest."""
+    """Render the editorial legend layout, with artwork when available."""
     name = leg["name"]
     image_path = featured.get("image", "")
-    if not image_path or not os.path.isfile(image_path):
+    has_image = bool(image_path)
+    if has_image and not os.path.isfile(image_path):
         raise RuntimeError(f"Featured legend image is missing for {name}: {image_path}")
 
     featured_parts = []
     if paras:
-        featured_parts.append(f'<p class="opening">{esc(paras[0])}</p>')
+        featured_parts.append(f'<p class="opening">{esc(inline_text(paras[0]))}</p>')
     pullquote = featured.get("pullquote")
     if pullquote:
-        featured_parts.append(f'<blockquote class="pullquote">{esc(pullquote)}</blockquote>')
+        featured_parts.append(f'<blockquote class="pullquote">{esc(inline_text(pullquote))}</blockquote>')
     if len(paras) > 1:
         section_heading = featured.get("section_heading") or "The story"
         featured_parts.append(f"<h2>{esc(section_heading)}</h2>")
-        featured_parts.extend(f"<p>{esc(p)}</p>" for p in paras[1:])
+        featured_parts.extend(f"<p>{esc(inline_text(p))}</p>" for p in paras[1:])
     featured_body = "".join(featured_parts) or '<p class="opening"></p>'
 
+    fact_items = featured.get("facts") or {
+        "Category": catname,
+        "Region": leg.get("region", ""),
+    }
     facts_html = "".join(
         f'<div class="fact"><span>{esc(label)}</span><strong>{esc(value)}</strong></div>'
-        for label, value in (featured.get("facts") or {}).items()
+        for label, value in fact_items.items()
     )
 
     if srcs:
@@ -873,26 +883,47 @@ def render_featured_legend(leg, featured, paras, srcs, rel, cats, meta,
         f"{abs(lng):.3f} {'E' if lng >= 0 else 'W'}"
     )
     catcolour = meta.get(leg.get("category", ""), {}).get("colour", "#8b3a1a")
-    hero_url = f"{BASE}/{image_path.replace(os.sep, '/')}"
+    if has_image:
+        hero_url = f"{BASE}/{image_path.replace(os.sep, '/')}"
+        hero_media = f'<img src="{hero_url}" alt="{esc(featured.get("alt", ""))}"/>'
+        hero_caption = (
+            f'<span class="hero-caption">{esc(featured.get("caption", ""))}</span>'
+            if featured.get("caption") else ""
+        )
+        ogimage = hero_url
+    else:
+        icon_path = meta.get(leg.get("category", ""), {}).get("iconPath", "")
+        hero_media = (
+            f'<div class="hero-placeholder" role="img" '
+            f'aria-label="Illustration placeholder for {esc(name)}" '
+            f'style="--placeholder-colour:{esc(catcolour)}">'
+            '<div class="placeholder-lines" aria-hidden="true"></div>'
+            f'<svg viewBox="0 0 512 512" aria-hidden="true"><path d="{esc(icon_path)}"/></svg>'
+            '<span>Illustration in preparation</span></div>'
+        )
+        hero_caption = ""
+        ogimage = (
+            f"{BASE}/og/category-{leg.get('category', '')}.png"
+            if leg.get("category", "") in meta else f"{BASE}/og/preview.png"
+        )
 
     return FEATURED_PAGE.substitute(
         title=esc(f"{name} — Folklore of Britain & Ireland"),
         ogtitle=esc(name),
-        desc=esc(desc),
+        desc=esc(inline_text(desc)),
         url=page_path_url,
         base=BASE,
         jsonld=jsonld,
         breadcrumb_jsonld=breadcrumb_jsonld,
         topnav=topnav_html("browse"),
         breadcrumb=breadcrumb,
-        hero_url=hero_url,
-        hero_alt=esc(featured.get("alt", "")),
-        hero_caption=esc(featured.get("caption", "")),
+        hero_media=hero_media,
+        hero_caption=hero_caption,
         catcolour=esc(catcolour),
         catname=esc(catname),
         region=esc(leg.get("region", "")),
         name=esc(name),
-        standfirst=esc(leg.get("summary", "")),
+        standfirst=esc(inline_text(leg.get("summary", ""))),
         featured_body=featured_body,
         maplink=esc(maplink),
         map_title=esc(featured.get("map_title") or leg.get("region", "")),
@@ -903,7 +934,7 @@ def render_featured_legend(leg, featured, paras, srcs, rel, cats, meta,
         facts=facts_html,
         featured_sources=featured_sources,
         featured_related=featured_related,
-        ogimage=hero_url,
+        ogimage=ogimage,
     )
 
 
@@ -1077,25 +1108,23 @@ def build():
             topnav_css=TOPNAV_CSS,
             topnav=topnav_html("browse"),
         )
-        featured = featured_pages.get(name)
-        if featured:
-            out = render_featured_legend(
-                leg=leg,
-                featured=featured,
-                paras=paras,
-                srcs=srcs,
-                rel=rel,
-                cats=cats,
-                meta=meta,
-                slugmap=slugmap,
-                catname=catname,
-                maplink=maplink,
-                page_path_url=page_path_url,
-                desc=desc,
-                jsonld=jsonld,
-                breadcrumb=breadcrumb,
-                breadcrumb_jsonld=breadcrumb_jsonld,
-            )
+        out = render_featured_legend(
+            leg=leg,
+            featured=featured_pages.get(name, {}),
+            paras=paras,
+            srcs=srcs,
+            rel=rel,
+            cats=cats,
+            meta=meta,
+            slugmap=slugmap,
+            catname=catname,
+            maplink=maplink,
+            page_path_url=page_path_url,
+            desc=desc,
+            jsonld=jsonld,
+            breadcrumb=breadcrumb,
+            breadcrumb_jsonld=breadcrumb_jsonld,
+        )
         with io.open(os.path.join(OUT_DIR, f"{slug}.html"), "w", encoding="utf-8") as f:
             f.write(out)
         written += 1

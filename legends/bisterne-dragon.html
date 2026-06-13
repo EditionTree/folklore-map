@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <script>if(location.hostname.indexOf("pages.dev")>-1){location.replace("https://folklorefinder.uk"+location.pathname+location.search+location.hash);}</script>
-<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "64d1fd37251d426f8a0d8fbc83ea350b"}'></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"64d1fd37251d426f8a0d8fbc83ea350b"}'></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Bisterne Dragon — Folklore of Britain &amp; Ireland</title>
 <meta name="description" content="A New Forest dragon said to have terrorised Bisterne from its lair near Burley. Sir Maurice de Berkeley slew it after a brutal fight; the body became…"/>
@@ -19,145 +19,82 @@
 <meta name="twitter:title" content="Bisterne Dragon"/>
 <meta name="twitter:description" content="A New Forest dragon said to have terrorised Bisterne from its lair near Burley. Sir Maurice de Berkeley slew it after a brutal fight; the body became…"/>
 <meta name="twitter:image" content="https://folklorefinder.uk/og/category-dragon.png"/>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha384-sHL9NAb7lN7rfvG5lfHpm643Xkcjzp4jFvuavGOndn6pjVqS6ny56CAt3nsEVT4H" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://folklorefinder.uk/legend-page.css"/>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "CreativeWork", "name": "Bisterne Dragon", "description": "A New Forest dragon said to have terrorised Bisterne from its lair near Burley. Sir Maurice de Berkeley slew it after a brutal fight; the body became…", "url": "https://folklorefinder.uk/legends/bisterne-dragon", "genre": "Folklore", "about": {"@type": "Place", "name": "Hampshire", "geo": {"@type": "GeoCoordinates", "latitude": 50.826, "longitude": -1.754}}, "isPartOf": {"@type": "WebSite", "name": "Folklore Map of Britain & Ireland", "url": "https://folklorefinder.uk/"}, "datePublished": "2026-06-03", "dateModified": "2026-06-03", "isBasedOn": {"@type": "CreativeWork", "url": "https://en.wikipedia.org/wiki/Bisterne_Dragon", "publisher": {"@type": "Organization", "name": "Wikipedia"}}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Legends", "item": "https://folklorefinder.uk/legends/"}, {"@type": "ListItem", "position": 2, "name": "Dragons", "item": "https://folklorefinder.uk/legends/category/dragon"}, {"@type": "ListItem", "position": 3, "name": "Hampshire", "item": "https://folklorefinder.uk/legends/region/hampshire"}, {"@type": "ListItem", "position": 4, "name": "Bisterne Dragon", "item": "https://folklorefinder.uk/legends/bisterne-dragon"}]}</script>
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{background:#e0d0b0;color:#2c1f0e;font-family:'Spectral',serif;line-height:1.7;min-height:100vh}
-.site-banner{position:relative;background:linear-gradient(135deg,rgba(196,98,42,0.18) 0%,rgba(176,144,96,0.06) 35%,transparent 60%),linear-gradient(180deg,#3d2510 0%,#1a0e06 45%,#2c1f0e 100%);padding:16px 20px;text-align:center}
-.site-banner::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,#8b3a1a 15%,#b09060 50%,#8b3a1a 85%,transparent)}
-.site-banner::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(176,144,96,.6) 20%,rgba(196,98,42,.8) 50%,rgba(176,144,96,.6) 80%,transparent)}
-.banner-link{display:inline-flex;align-items:center;gap:13px;text-decoration:none}
-.banner-emblem{width:48px;height:48px;object-fit:contain;flex-shrink:0}
-.banner-text{display:flex;flex-direction:column;align-items:center;line-height:1.15}
-.banner-title{font-family:'Marcellus',serif;font-size:21px;font-weight:400;color:#f2e8d5;letter-spacing:.09em;display:flex;align-items:center;justify-content:center;gap:9px}
-.banner-title i{color:#c4622a;font-style:normal;font-size:.6em;flex-shrink:0}
-.banner-sub{font-family:'Spectral',serif;font-size:12px;font-style:italic;color:rgba(176,144,96,.8);letter-spacing:.04em}
-.watermark{position:absolute;top:26px;right:24px;width:88px;height:88px;color:#8b3a1a;opacity:.1;pointer-events:none;z-index:0}
-@media(max-width:560px){.banner-title{font-size:15px}.banner-emblem{width:38px;height:38px}.banner-sub{font-size:11px}}
-.wrap{max-width:680px;margin:0 auto;padding:11px 20px 60px}
-.card{position:relative;overflow:hidden;background:#f2e8d5;border:1px solid #b09060;border-radius:6px;margin-top:30px;padding:32px;box-shadow:0 4px 20px rgba(44,31,14,.18)}
-.card>*:not(.watermark){position:relative;z-index:1}
-.card>.watermark{position:absolute;top:26px;right:24px;width:88px;height:88px;z-index:0}
-.cat{font-family:'Marcellus',serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#fff;background:#8b3a1a;display:inline-block;padding:3px 10px;border-radius:2px}
-h1{font-family:'Marcellus',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;line-height:1.15}
-.region{font-style:italic;color:#5c4a2a;margin-bottom:18px}
-.crumb{font-size:12.5px;color:#5c4a2a;margin-bottom:16px;line-height:1.5}
-.crumb a{color:#8b3a1a;text-decoration:none}
-.crumb a:hover{text-decoration:underline}
-.crumb .sep{color:#b09060;margin:0 6px}
-.crumb .here{color:#5c4a2a}
-.summary{font-size:17px}
-.summary-cont{font-size:17px;margin-top:14px}
-.cta{display:inline-block;margin-top:26px;background:#2c1f0e;color:#f2e8d5;font-family:'Marcellus',serif;font-size:13px;letter-spacing:.08em;text-transform:uppercase;padding:12px 22px;border-radius:3px;text-decoration:none}
-.cta:hover{background:#8b3a1a}
-.share-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
-.share-btn{font-family:'Marcellus',serif;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#8b3a1a;background:transparent;border:1px solid #b09060;border-radius:3px;padding:9px 16px;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
-.share-btn:hover{background:#8b3a1a;color:#f2e8d5;border-color:#8b3a1a}
-.share-status{position:absolute !important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-.src{display:block;margin-top:18px;font-size:13px;font-style:italic;color:#5c4a2a}
-.src-tier{color:#7a6a4a}
-.sources{margin-top:18px;font-size:13px;color:#5c4a2a}
-.sources-head{font-style:italic}
-.sources ul{list-style:none;margin:5px 0 0;padding:0}
-.sources li{margin:3px 0}
-.sources a{color:#8b3a1a}
-.src a{color:#8b3a1a}
-.back{display:inline-block;margin-top:22px;font-size:13px;color:#5c4a2a}
-.related{margin-top:36px}
-.related-head{font-family:'Marcellus',serif;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#8b3a1a;display:flex;align-items:center;gap:12px;margin-bottom:16px}
-.related-head::before,.related-head::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,#b09060)}
-.related-head::after{background:linear-gradient(90deg,#b09060,transparent)}
-.carousel{position:relative}
-.carousel-track{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding-bottom:8px;-webkit-overflow-scrolling:touch}
-.carousel-track::-webkit-scrollbar{height:6px}
-.carousel-track::-webkit-scrollbar-track{background:rgba(176,144,96,.15);border-radius:3px}
-.carousel-track::-webkit-scrollbar-thumb{background:rgba(139,58,26,.4);border-radius:3px}
-.rel-card{flex:0 0 198px;scroll-snap-align:start;background:#f2e8d5;border:1px solid #b09060;border-radius:5px;padding:14px 15px;text-decoration:none;color:#2c1f0e;transition:border-color .15s,transform .1s}
-.rel-card:hover{border-color:#c4622a;transform:translateY(-2px)}
-.rel-card span{display:block}
-.rel-cat{font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:#8b3a1a;padding:2px 8px;border-radius:3px;margin-bottom:8px;width:max-content;max-width:100%}
-.rel-name{font-family:'Marcellus',serif;font-size:15px;line-height:1.25;margin-bottom:4px}
-.rel-region{font-style:italic;font-size:12px;color:#5c4a2a}
-.carousel-btn{position:absolute;top:42%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;border:1px solid #b09060;background:#f2e8d5;color:#8b3a1a;font-family:'Marcellus',serif;font-size:18px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2;box-shadow:0 2px 8px rgba(44,31,14,.25)}
-.carousel-btn:hover{background:#8b3a1a;color:#f2e8d5}
-.carousel-btn.prev{left:-10px}
-.carousel-btn.next{right:-10px}
-@media(max-width:560px){.carousel-btn{display:none}.rel-card{flex-basis:170px}}
-footer{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}
-.topnav{display:flex;align-items:center;justify-content:center;gap:4px;background:#1a0e06;padding:11px 16px;border-bottom:1px solid rgba(176,144,96,0.2);flex-wrap:wrap}.topnav a{font-family:'Marcellus',serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:rgba(242,232,213,0.78);text-decoration:none;padding:6px 14px;border-radius:3px;transition:background .15s,color .15s}.topnav a:hover{color:#f2e8d5;background:rgba(196,98,42,0.18)}.topnav a.active{color:#c4622a}
-</style>
 </head>
 <body>
 <nav class="topnav"><a href="https://folklorefinder.uk/">Home</a><a href="https://folklorefinder.uk/map">Map</a><a href="https://folklorefinder.uk/legends/" class="active">Browse</a><a href="https://folklorefinder.uk/legends/collections">Collections</a><a href="https://folklorefinder.uk/about">About</a><a href="https://folklorefinder.uk/updates">Updates</a></nav>
-<header class="site-banner"><a class="banner-link" href="https://folklorefinder.uk/"><img src="https://folklorefinder.uk/green-man.png" class="banner-emblem" alt=""/><span class="banner-text"><span class="banner-title"><i>&#10022;</i> Folklore Map of Britain &amp; Ireland <i>&#10022;</i></span><span class="banner-sub">Myths, Legends &amp; Spectral Encounters</span></span></a></header>
-<div class="wrap">
-<nav class="crumb" aria-label="Breadcrumb"><a href="https://folklorefinder.uk/legends/">Legends</a><span class="sep">&#8250;</span><a href="https://folklorefinder.uk/legends/category/dragon">Dragons</a><span class="sep">&#8250;</span><a href="https://folklorefinder.uk/legends/region/hampshire">Hampshire</a><span class="sep">&#8250;</span><span class="here">Bisterne Dragon</span></nav>
-<article class="card">
-<span class="cat" style="background:#8b2a1a">Dragons</span>
-<h1>Bisterne Dragon</h1>
-<div class="region">Hampshire</div>
-<p class="summary">A New Forest dragon said to have terrorised Bisterne from its lair near Burley. Sir Maurice de Berkeley slew it after a brutal fight; the body became Bolton&#x27;s Bench, and the knight returned there to die beneath a yew.</p>
-<a class="cta" href="https://folklorefinder.uk/map?legend=Bisterne%20Dragon">Explore on the interactive map &#8594;</a>
-<span class="src">Researched from <a href="https://en.wikipedia.org/wiki/Bisterne_Dragon" target="_blank" rel="noopener">Wikipedia</a> &#183; <span class="src-tier">encyclopedic</span></span>
-<div class="share-row" role="group" aria-label="Share this legend">
-<button type="button" class="share-btn" id="copyLinkBtn">Copy link</button>
-<button type="button" class="share-btn" id="webShareBtn" hidden>Share&#8230;</button>
-</div>
-<span class="share-status" id="shareStatus" role="status" aria-live="polite"></span>
-<svg class="watermark" viewBox="0 0 512 512" aria-hidden="true"><path d="M324.97 17.54c.03.034.057.07.087.106l-34.924 32.428 36.904-3.752-15.396 30.12 38.048-16.075c26.147 69.965.623 154.277-52.555 166.262-6.554-25.37-34.13-37.945-36.055-57.382.303.093.604.187.912.27a27.113 27.113 0 0 0 14.274-.07l25.138 22.89 20.653-16.377c-7.363 2.836-28.588-1.402-33.25-13.923a27.114 27.114 0 0 0 6.793-11.922c.485-1.813.757-3.635.86-5.445l11.524 22.777 5.22-16.94c7.625 5.575 12.474 13.605 11.49 21.136l16.673-29.4-72.14-29.56-58.057-48.03 17.1 31.25-48.206-19.753 35.14 31.237c-40.602 28.158-22.085 85.04-1.796 119.29-57.5-9.685-103.128-77.435-95.763-145.03l49.21-21.366-31.08-5.14 29.207-33.417-32.015 11.54c.037-.067.07-.135.107-.202-168.36 66.33-116.413 367-63.728 417.99-.19-1.317-.364-2.58-.54-3.855-14.922-56.244-20.375-125.624-17.5-190.53 3.02-68.237 14.834-131.16 36.794-169.522l16.22 9.283c-18.894 33.008-31.4 94.563-34.345 161.064-1.942 43.86.106 90.022 6.275 132.082 6.124 1.892 15.046 9.615 27.295 23.24-4.818-13.35-6.78-26.5-6.482-38.28 20.286 41.665 67.34 69.234 104.633 62.308 22.444-4.17 41.803-12.73 57.81-24.475l7.31 15.418c-20.068 5.036-22.807 32.635-14.737 55.112 1.748-19.882 11.36-29.794 21.73-32.303-6.598 15.867-4.698 30.623-3.117 44.158 10.15-12.147 21.47-23.793 23.628-39.354 8.738 7.332 12.317 21.49 1.194 39.057 26.32-15.473 31.565-41.994 7.978-57.685l-32.07-34.297c5.918-5.55 11.24-11.6 15.947-18.066l39.28 15.776c-3.942 13.69 5.833 31.512 19.77 43.31-8.055-17.288-4.826-30.08 2.562-37.103 1.63 17.39 10.64 29.193 18.733 40.064 2.73-15.665 6.79-31.493-.213-45.987 11.016 1.56 21.2 11.568 20.338 31.877 14.362-25.313 6.11-49.702-20.742-51.52l-71.135-9.892c12.757-22.982 18.676-49.823 17.015-77.475 14.188-34.708 50.058-11.816 54.523 49.16C394.924 262.27 434.58 304 426.324 367.13c11.808-23.38 21.835-35.013 29.862-36.247-10.772-91.925-40.458-191.57-77.637-250.748l15.823-9.942c50.328 80.106 85.112 220.65 84.88 331.547 42.403-115.912-2.347-356.61-154.282-384.2zm-29.458 476.913-.026.016-.015.05c.015-.02.027-.044.042-.067zm26.543-318.492h.01v-.007l-.01.008zm-53.348-41.716a9.127 9.127 0 0 1 2.652.313c4.774 1.28 7.467 5.945 6.187 10.72-1.28 4.776-5.943 7.47-10.72 6.19-4.775-1.28-7.468-5.943-6.188-10.72.96-3.584 3.823-5.993 7.21-6.435a8.66 8.66 0 0 1 .857-.068zM204.904 297.13c11.878-.2 22.637 6.756 26.172 22.487-.008 35.88-9.557 68.823-42.137 77.412-27.624 7.283-69.725-11.398-84.12-53.663 12.28-21.078 37.362-21.986 62.838 22.592-12.583-41.596 14.386-68.444 37.246-68.83z" fill="currentColor"/></svg>
-</article>
-<section class="related"><div class="related-head">Related Legends</div><div class="carousel"><button class="carousel-btn prev" type="button" aria-label="Scroll left">&#8249;</button><div class="carousel-track"><a class="rel-card" href="https://folklorefinder.uk/legends/tyrell-s-hound"><span class="rel-cat" style="background:#4a3d6e">Ghosts</span><span class="rel-name">Tyrell&#x27;s Hound</span><span class="rel-region">New Forest, Hampshire, England</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/colt-pixies"><span class="rel-cat" style="background:#e655e3">Fae &amp; Spirits</span><span class="rel-name">Colt Pixies</span><span class="rel-region">New Forest, Hampshire, England</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/dragon-hill-uffington"><span class="rel-cat" style="background:#5a3a18">Sacred Sites</span><span class="rel-name">Dragon Hill, Uffington</span><span class="rel-region">Oxfordshire</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/knucker-of-lyminster"><span class="rel-cat" style="background:#8b2a1a">Dragons</span><span class="rel-name">Knucker of Lyminster</span><span class="rel-region">West Sussex</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/gurt-worm"><span class="rel-cat" style="background:#8b2a1a">Dragons</span><span class="rel-name">Gurt Worm</span><span class="rel-region">Somerset</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/dragon-of-st-leonard-s-forest"><span class="rel-cat" style="background:#8b2a1a">Dragons</span><span class="rel-name">Dragon of St Leonard&#x27;s Forest</span><span class="rel-region">Sussex</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/dragon-of-deerhurst"><span class="rel-cat" style="background:#8b2a1a">Dragons</span><span class="rel-name">Dragon of Deerhurst</span><span class="rel-region">Deerhurst, Gloucestershire, England</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/bevis-of-hampton"><span class="rel-cat" style="background:#6a3a2a">Legendary Figures</span><span class="rel-name">Bevis of Hampton</span><span class="rel-region">Southampton, Hampshire, England</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/ascapart"><span class="rel-cat" style="background:#4a3820">Giants</span><span class="rel-name">Ascapart</span><span class="rel-region">Southampton, Hampshire, England</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/saint-edmund-and-the-wolf"><span class="rel-cat" style="background:#6a3a2a">Legendary Figures</span><span class="rel-name">Saint Edmund and the Wolf</span><span class="rel-region">Hoxne, Suffolk, England</span></a></div><button class="carousel-btn next" type="button" aria-label="Scroll right">&#8250;</button></div></section>
-<a class="back" href="https://folklorefinder.uk/legends/">&#8592; Browse all legends</a>
-</div>
-<footer>Part of the Folklore Map of Britain &amp; Ireland &#183; &#169; EditionTree &#183; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener" style="color:#5c4a2a">&#9749; Ko-fi</a> &#183; <a href="https://folklorefinder.uk/privacy" style="color:#5c4a2a">Privacy</a></footer>
-<script>
-document.querySelectorAll('.carousel').forEach(function(c){
-  var t=c.querySelector('.carousel-track');
-  var p=c.querySelector('.prev'), n=c.querySelector('.next');
-  if(p)p.addEventListener('click',function(){t.scrollBy({left:-220,behavior:'smooth'});});
-  if(n)n.addEventListener('click',function(){t.scrollBy({left:220,behavior:'smooth'});});
-});
-(function(){
-  var link=document.querySelector('link[rel=canonical]');
-  var url=(link&&link.href)||location.href;
-  var status=document.getElementById('shareStatus');
-  var copyBtn=document.getElementById('copyLinkBtn');
-  var revertTimer=null;
-  function announce(m){ if(status) status.textContent=m; }
-  function markCopied(){
-    announce('Link copied');           // for screen readers (visually hidden)
-    if(copyBtn){
-      copyBtn.textContent='Copied';
-      clearTimeout(revertTimer);
-      revertTimer=setTimeout(function(){ copyBtn.textContent='Copy link'; },2000);
-    }
-  }
-  function fallbackCopy(){
-    try{
-      var ta=document.createElement('textarea');
-      ta.value=url; ta.setAttribute('readonly','');
-      ta.style.position='absolute'; ta.style.left='-9999px';
-      document.body.appendChild(ta); ta.select();
-      document.execCommand('copy'); document.body.removeChild(ta);
-      markCopied();
-    }catch(e){ announce("Couldn't copy. Press Ctrl+C to copy the address."); }
-  }
-  if(copyBtn) copyBtn.addEventListener('click',function(){
-    if(navigator.clipboard&&navigator.clipboard.writeText){
-      navigator.clipboard.writeText(url).then(markCopied,fallbackCopy);
-    } else { fallbackCopy(); }
-  });
-  var shareBtn=document.getElementById('webShareBtn');
-  if(shareBtn&&navigator.share){
-    shareBtn.hidden=false;
-    shareBtn.addEventListener('click',function(){
-      navigator.share({title:document.title,url:url}).catch(function(){});
-    });
-  }
-})();
-</script>
+<header class="brandbar">
+  <a class="brand" href="https://folklorefinder.uk/">
+    <img src="https://folklorefinder.uk/green-man.png" alt=""/>
+    <span>
+      <span class="brand-name">Folklore Map of Britain &amp; Ireland</span>
+      <span class="brand-line">Myths, Legends &amp; Spectral Encounters</span>
+    </span>
+  </a>
+</header>
+<main>
+  <div class="shell">
+    <nav class="crumb" aria-label="Breadcrumb"><a href="https://folklorefinder.uk/legends/">Legends</a><span class="sep">&#8250;</span><a href="https://folklorefinder.uk/legends/category/dragon">Dragons</a><span class="sep">&#8250;</span><a href="https://folklorefinder.uk/legends/region/hampshire">Hampshire</a><span class="sep">&#8250;</span><span class="here">Bisterne Dragon</span></nav>
+    <section class="hero" aria-labelledby="legend-title">
+      <div class="hero-placeholder" role="img" aria-label="Illustration placeholder for Bisterne Dragon" style="--placeholder-colour:#8b2a1a"><div class="placeholder-lines" aria-hidden="true"></div><svg viewBox="0 0 512 512" aria-hidden="true"><path d="M324.97 17.54c.03.034.057.07.087.106l-34.924 32.428 36.904-3.752-15.396 30.12 38.048-16.075c26.147 69.965.623 154.277-52.555 166.262-6.554-25.37-34.13-37.945-36.055-57.382.303.093.604.187.912.27a27.113 27.113 0 0 0 14.274-.07l25.138 22.89 20.653-16.377c-7.363 2.836-28.588-1.402-33.25-13.923a27.114 27.114 0 0 0 6.793-11.922c.485-1.813.757-3.635.86-5.445l11.524 22.777 5.22-16.94c7.625 5.575 12.474 13.605 11.49 21.136l16.673-29.4-72.14-29.56-58.057-48.03 17.1 31.25-48.206-19.753 35.14 31.237c-40.602 28.158-22.085 85.04-1.796 119.29-57.5-9.685-103.128-77.435-95.763-145.03l49.21-21.366-31.08-5.14 29.207-33.417-32.015 11.54c.037-.067.07-.135.107-.202-168.36 66.33-116.413 367-63.728 417.99-.19-1.317-.364-2.58-.54-3.855-14.922-56.244-20.375-125.624-17.5-190.53 3.02-68.237 14.834-131.16 36.794-169.522l16.22 9.283c-18.894 33.008-31.4 94.563-34.345 161.064-1.942 43.86.106 90.022 6.275 132.082 6.124 1.892 15.046 9.615 27.295 23.24-4.818-13.35-6.78-26.5-6.482-38.28 20.286 41.665 67.34 69.234 104.633 62.308 22.444-4.17 41.803-12.73 57.81-24.475l7.31 15.418c-20.068 5.036-22.807 32.635-14.737 55.112 1.748-19.882 11.36-29.794 21.73-32.303-6.598 15.867-4.698 30.623-3.117 44.158 10.15-12.147 21.47-23.793 23.628-39.354 8.738 7.332 12.317 21.49 1.194 39.057 26.32-15.473 31.565-41.994 7.978-57.685l-32.07-34.297c5.918-5.55 11.24-11.6 15.947-18.066l39.28 15.776c-3.942 13.69 5.833 31.512 19.77 43.31-8.055-17.288-4.826-30.08 2.562-37.103 1.63 17.39 10.64 29.193 18.733 40.064 2.73-15.665 6.79-31.493-.213-45.987 11.016 1.56 21.2 11.568 20.338 31.877 14.362-25.313 6.11-49.702-20.742-51.52l-71.135-9.892c12.757-22.982 18.676-49.823 17.015-77.475 14.188-34.708 50.058-11.816 54.523 49.16C394.924 262.27 434.58 304 426.324 367.13c11.808-23.38 21.835-35.013 29.862-36.247-10.772-91.925-40.458-191.57-77.637-250.748l15.823-9.942c50.328 80.106 85.112 220.65 84.88 331.547 42.403-115.912-2.347-356.61-154.282-384.2zm-29.458 476.913-.026.016-.015.05c.015-.02.027-.044.042-.067zm26.543-318.492h.01v-.007l-.01.008zm-53.348-41.716a9.127 9.127 0 0 1 2.652.313c4.774 1.28 7.467 5.945 6.187 10.72-1.28 4.776-5.943 7.47-10.72 6.19-4.775-1.28-7.468-5.943-6.188-10.72.96-3.584 3.823-5.993 7.21-6.435a8.66 8.66 0 0 1 .857-.068zM204.904 297.13c11.878-.2 22.637 6.756 26.172 22.487-.008 35.88-9.557 68.823-42.137 77.412-27.624 7.283-69.725-11.398-84.12-53.663 12.28-21.078 37.362-21.986 62.838 22.592-12.583-41.596 14.386-68.444 37.246-68.83z"/></svg><span>Illustration in preparation</span></div>
+      <div class="hero-copy">
+        <div class="eyebrow">
+          <span class="category" style="background:#8b2a1a">Dragons</span>
+          <span class="place">Hampshire</span>
+        </div>
+        <h1 id="legend-title">Bisterne Dragon</h1>
+        <p class="standfirst">A New Forest dragon said to have terrorised Bisterne from its lair near Burley. Sir Maurice de Berkeley slew it after a brutal fight; the body became Bolton&#x27;s Bench, and the knight returned there to die beneath a yew.</p>
+      </div>
+
+    </section>
+
+    <div class="content-grid">
+      <article class="article">
+        <div class="article-label">The legend</div>
+        <p class="opening">A New Forest dragon said to have terrorised Bisterne from its lair near Burley. Sir Maurice de Berkeley slew it after a brutal fight; the body became Bolton&#x27;s Bench, and the knight returned there to die beneath a yew.</p>
+        <div class="article-actions" aria-label="Legend actions">
+          <a class="button" href="https://folklorefinder.uk/map?legend=Bisterne%20Dragon">Open on full map</a>
+          <button class="button secondary" id="copyLinkBtn" type="button">Copy link</button>
+          <button class="button secondary" id="webShareBtn" type="button" hidden>Share</button>
+        </div>
+        <span class="share-status" id="shareStatus" role="status" aria-live="polite"></span>
+      </article>
+
+      <aside class="sidebar" aria-label="Legend details">
+        <section class="side-card">
+          <div class="side-pad">
+            <p class="side-kicker">Explore the place</p>
+            <h2>Hampshire</h2>
+            <p class="map-meta">Hampshire</p>
+          </div>
+          <div id="miniMap" data-lat="50.826000" data-lng="-1.754000" data-colour="#8b2a1a" data-initial="B" aria-label="Map showing the location associated with Bisterne Dragon"></div>
+          <div class="map-footer">
+            <a href="https://folklorefinder.uk/map?legend=Bisterne%20Dragon">View full map &#8594;</a>
+            <span>50.826 N, 1.754 W</span>
+          </div>
+        </section>
+
+        <section class="side-card side-pad">
+          <p class="side-kicker">At a glance</p>
+          <h2>About this legend</h2>
+          <div class="facts"><div class="fact"><span>Category</span><strong>Dragons</strong></div><div class="fact"><span>Region</span><strong>Hampshire</strong></div></div>
+        </section>
+
+        <section class="side-card side-pad"><p class="side-kicker">Sources</p><h2>Further reading</h2><p class="source-copy">Sources used to research and locate this legend.</p><ul class="source-list"><li><a href="https://en.wikipedia.org/wiki/Bisterne_Dragon" target="_blank" rel="noopener">Wikipedia &#8594;</a> <span class="source-tier">encyclopedic</span></li></ul></section>
+      </aside>
+    </div>
+  </div>
+
+  <section class="related"><div class="shell"><div class="section-head"><div><p>Continue exploring</p><h2>Related legends</h2></div><a href="https://folklorefinder.uk/legends/">Browse all legends</a></div><div class="related-grid"><a class="related-card" style="--card-glow:#4a3d6e" href="https://folklorefinder.uk/legends/tyrell-s-hound"><span class="related-type">Ghosts</span><span class="related-name">Tyrell&#x27;s Hound</span><span class="related-place">New Forest, Hampshire, England</span></a><a class="related-card" style="--card-glow:#7e5577" href="https://folklorefinder.uk/legends/colt-pixies"><span class="related-type">Fae &amp; Spirits</span><span class="related-name">Colt Pixies</span><span class="related-place">New Forest, Hampshire, England</span></a><a class="related-card" style="--card-glow:#5a3a18" href="https://folklorefinder.uk/legends/dragon-hill-uffington"><span class="related-type">Sacred Sites</span><span class="related-name">Dragon Hill, Uffington</span><span class="related-place">Oxfordshire</span></a></div></div></section>
+</main>
+<footer>Part of the Folklore Map of Britain &amp; Ireland &#183; &#169; EditionTree &#183; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener">Ko-fi</a> &#183; <a href="https://folklorefinder.uk/privacy">Privacy</a></footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH" crossorigin="anonymous"></script>
+<script src="https://folklorefinder.uk/legend-page.js"></script>
 </body>
 </html>

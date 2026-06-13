@@ -44,6 +44,51 @@
         "Setting": "Yorkshire",
         "Motif": "Death omen"
       }
+    },
+    "The Loch Ness Monster": {
+      "priority": 4,
+      "image": "legend-images/loch-ness-monster-hero.jpg",
+      "alt": "A long dark creature breaking the surface of Loch Ness beneath misty Highland slopes",
+      "caption": "A visual interpretation of the Loch Ness legend",
+      "map_title": "Loch Ness, Highland",
+      "section_heading": "The beast in the water",
+      "pullquote": "Modern Nessie has been hunted by cameras, submarines and sonar for over a century, always elusive.",
+      "facts": {
+        "Tradition": "Scottish folklore",
+        "Type": "Water beast",
+        "Setting": "Loch Ness",
+        "Motif": "Elusive lake monster"
+      }
+    },
+    "The Green Man": {
+      "priority": 5,
+      "image": "legend-images/green-man-hero.jpg",
+      "alt": "A weathered Green Man carving with a leaf-framed face set into the stone of a medieval Gloucestershire church",
+      "caption": "A visual interpretation of the Gloucestershire Green Man tradition",
+      "map_title": "Gloucestershire churches",
+      "section_heading": "Leaves in the stone",
+      "pullquote": "Though Christian craftsmen cut him into the bosses and capitals of medieval churches, his roots seem far older.",
+      "facts": {
+        "Tradition": "British folk art",
+        "Type": "Leaf-faced carving",
+        "Setting": "Medieval churches",
+        "Motif": "Nature and rebirth"
+      }
+    },
+    "Kelpie": {
+      "priority": 6,
+      "image": "legend-images/kelpie-hero.jpg",
+      "alt": "A black horse-like spirit standing chest-deep at the edge of a Highland loch under heavy clouds",
+      "caption": "A visual interpretation of the Highland kelpie tradition",
+      "map_title": "Highland loch country",
+      "section_heading": "The horse at the water's edge",
+      "pullquote": "The moment a rider mounts they find themselves stuck fast as the creature plunges into the deep to drown and devour them.",
+      "facts": {
+        "Tradition": "Scottish folklore",
+        "Type": "Water horse",
+        "Setting": "Highland lochs",
+        "Motif": "Deadly lure"
+      }
     }
   }
 }

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <script>if(location.hostname.indexOf("pages.dev")>-1){location.replace("https://folklorefinder.uk"+location.pathname+location.search+location.hash);}</script>
-<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "64d1fd37251d426f8a0d8fbc83ea350b"}'></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"64d1fd37251d426f8a0d8fbc83ea350b"}'></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Beowulf — Folklore of Britain &amp; Ireland</title>
 <meta name="description" content="Anglo-Saxon hero who slew the monster Grendel with his bare hands in the Danish hall of Heorot, then killed Grendel&#x27;s mother in the depths of her mere,…"/>
@@ -19,145 +19,82 @@
 <meta name="twitter:title" content="Beowulf"/>
 <meta name="twitter:description" content="Anglo-Saxon hero who slew the monster Grendel with his bare hands in the Danish hall of Heorot, then killed Grendel&#x27;s mother in the depths of her mere,…"/>
 <meta name="twitter:image" content="https://folklorefinder.uk/og/category-hero.png"/>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha384-sHL9NAb7lN7rfvG5lfHpm643Xkcjzp4jFvuavGOndn6pjVqS6ny56CAt3nsEVT4H" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://folklorefinder.uk/legend-page.css"/>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "CreativeWork", "name": "Beowulf", "description": "Anglo-Saxon hero who slew the monster Grendel with his bare hands in the Danish hall of Heorot, then killed Grendel's mother in the depths of her mere,…", "url": "https://folklorefinder.uk/legends/beowulf", "genre": "Folklore", "about": {"@type": "Place", "name": "Anglo-Saxon England", "geo": {"@type": "GeoCoordinates", "latitude": 52.6, "longitude": 1.3}}, "isPartOf": {"@type": "WebSite", "name": "Folklore Map of Britain & Ireland", "url": "https://folklorefinder.uk/"}, "datePublished": "2026-06-03", "dateModified": "2026-06-03", "isBasedOn": {"@type": "CreativeWork", "url": "https://en.wikipedia.org/wiki/Beowulf", "publisher": {"@type": "Organization", "name": "Wikipedia"}}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Legends", "item": "https://folklorefinder.uk/legends/"}, {"@type": "ListItem", "position": 2, "name": "Legendary Figures", "item": "https://folklorefinder.uk/legends/category/hero"}, {"@type": "ListItem", "position": 3, "name": "England", "item": "https://folklorefinder.uk/legends/region/england"}, {"@type": "ListItem", "position": 4, "name": "Beowulf", "item": "https://folklorefinder.uk/legends/beowulf"}]}</script>
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{background:#e0d0b0;color:#2c1f0e;font-family:'Spectral',serif;line-height:1.7;min-height:100vh}
-.site-banner{position:relative;background:linear-gradient(135deg,rgba(196,98,42,0.18) 0%,rgba(176,144,96,0.06) 35%,transparent 60%),linear-gradient(180deg,#3d2510 0%,#1a0e06 45%,#2c1f0e 100%);padding:16px 20px;text-align:center}
-.site-banner::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,#8b3a1a 15%,#b09060 50%,#8b3a1a 85%,transparent)}
-.site-banner::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(176,144,96,.6) 20%,rgba(196,98,42,.8) 50%,rgba(176,144,96,.6) 80%,transparent)}
-.banner-link{display:inline-flex;align-items:center;gap:13px;text-decoration:none}
-.banner-emblem{width:48px;height:48px;object-fit:contain;flex-shrink:0}
-.banner-text{display:flex;flex-direction:column;align-items:center;line-height:1.15}
-.banner-title{font-family:'Marcellus',serif;font-size:21px;font-weight:400;color:#f2e8d5;letter-spacing:.09em;display:flex;align-items:center;justify-content:center;gap:9px}
-.banner-title i{color:#c4622a;font-style:normal;font-size:.6em;flex-shrink:0}
-.banner-sub{font-family:'Spectral',serif;font-size:12px;font-style:italic;color:rgba(176,144,96,.8);letter-spacing:.04em}
-.watermark{position:absolute;top:26px;right:24px;width:88px;height:88px;color:#8b3a1a;opacity:.1;pointer-events:none;z-index:0}
-@media(max-width:560px){.banner-title{font-size:15px}.banner-emblem{width:38px;height:38px}.banner-sub{font-size:11px}}
-.wrap{max-width:680px;margin:0 auto;padding:11px 20px 60px}
-.card{position:relative;overflow:hidden;background:#f2e8d5;border:1px solid #b09060;border-radius:6px;margin-top:30px;padding:32px;box-shadow:0 4px 20px rgba(44,31,14,.18)}
-.card>*:not(.watermark){position:relative;z-index:1}
-.card>.watermark{position:absolute;top:26px;right:24px;width:88px;height:88px;z-index:0}
-.cat{font-family:'Marcellus',serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#fff;background:#8b3a1a;display:inline-block;padding:3px 10px;border-radius:2px}
-h1{font-family:'Marcellus',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;line-height:1.15}
-.region{font-style:italic;color:#5c4a2a;margin-bottom:18px}
-.crumb{font-size:12.5px;color:#5c4a2a;margin-bottom:16px;line-height:1.5}
-.crumb a{color:#8b3a1a;text-decoration:none}
-.crumb a:hover{text-decoration:underline}
-.crumb .sep{color:#b09060;margin:0 6px}
-.crumb .here{color:#5c4a2a}
-.summary{font-size:17px}
-.summary-cont{font-size:17px;margin-top:14px}
-.cta{display:inline-block;margin-top:26px;background:#2c1f0e;color:#f2e8d5;font-family:'Marcellus',serif;font-size:13px;letter-spacing:.08em;text-transform:uppercase;padding:12px 22px;border-radius:3px;text-decoration:none}
-.cta:hover{background:#8b3a1a}
-.share-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
-.share-btn{font-family:'Marcellus',serif;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#8b3a1a;background:transparent;border:1px solid #b09060;border-radius:3px;padding:9px 16px;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
-.share-btn:hover{background:#8b3a1a;color:#f2e8d5;border-color:#8b3a1a}
-.share-status{position:absolute !important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-.src{display:block;margin-top:18px;font-size:13px;font-style:italic;color:#5c4a2a}
-.src-tier{color:#7a6a4a}
-.sources{margin-top:18px;font-size:13px;color:#5c4a2a}
-.sources-head{font-style:italic}
-.sources ul{list-style:none;margin:5px 0 0;padding:0}
-.sources li{margin:3px 0}
-.sources a{color:#8b3a1a}
-.src a{color:#8b3a1a}
-.back{display:inline-block;margin-top:22px;font-size:13px;color:#5c4a2a}
-.related{margin-top:36px}
-.related-head{font-family:'Marcellus',serif;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#8b3a1a;display:flex;align-items:center;gap:12px;margin-bottom:16px}
-.related-head::before,.related-head::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,#b09060)}
-.related-head::after{background:linear-gradient(90deg,#b09060,transparent)}
-.carousel{position:relative}
-.carousel-track{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding-bottom:8px;-webkit-overflow-scrolling:touch}
-.carousel-track::-webkit-scrollbar{height:6px}
-.carousel-track::-webkit-scrollbar-track{background:rgba(176,144,96,.15);border-radius:3px}
-.carousel-track::-webkit-scrollbar-thumb{background:rgba(139,58,26,.4);border-radius:3px}
-.rel-card{flex:0 0 198px;scroll-snap-align:start;background:#f2e8d5;border:1px solid #b09060;border-radius:5px;padding:14px 15px;text-decoration:none;color:#2c1f0e;transition:border-color .15s,transform .1s}
-.rel-card:hover{border-color:#c4622a;transform:translateY(-2px)}
-.rel-card span{display:block}
-.rel-cat{font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:#8b3a1a;padding:2px 8px;border-radius:3px;margin-bottom:8px;width:max-content;max-width:100%}
-.rel-name{font-family:'Marcellus',serif;font-size:15px;line-height:1.25;margin-bottom:4px}
-.rel-region{font-style:italic;font-size:12px;color:#5c4a2a}
-.carousel-btn{position:absolute;top:42%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;border:1px solid #b09060;background:#f2e8d5;color:#8b3a1a;font-family:'Marcellus',serif;font-size:18px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2;box-shadow:0 2px 8px rgba(44,31,14,.25)}
-.carousel-btn:hover{background:#8b3a1a;color:#f2e8d5}
-.carousel-btn.prev{left:-10px}
-.carousel-btn.next{right:-10px}
-@media(max-width:560px){.carousel-btn{display:none}.rel-card{flex-basis:170px}}
-footer{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}
-.topnav{display:flex;align-items:center;justify-content:center;gap:4px;background:#1a0e06;padding:11px 16px;border-bottom:1px solid rgba(176,144,96,0.2);flex-wrap:wrap}.topnav a{font-family:'Marcellus',serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:rgba(242,232,213,0.78);text-decoration:none;padding:6px 14px;border-radius:3px;transition:background .15s,color .15s}.topnav a:hover{color:#f2e8d5;background:rgba(196,98,42,0.18)}.topnav a.active{color:#c4622a}
-</style>
 </head>
 <body>
 <nav class="topnav"><a href="https://folklorefinder.uk/">Home</a><a href="https://folklorefinder.uk/map">Map</a><a href="https://folklorefinder.uk/legends/" class="active">Browse</a><a href="https://folklorefinder.uk/legends/collections">Collections</a><a href="https://folklorefinder.uk/about">About</a><a href="https://folklorefinder.uk/updates">Updates</a></nav>
-<header class="site-banner"><a class="banner-link" href="https://folklorefinder.uk/"><img src="https://folklorefinder.uk/green-man.png" class="banner-emblem" alt=""/><span class="banner-text"><span class="banner-title"><i>&#10022;</i> Folklore Map of Britain &amp; Ireland <i>&#10022;</i></span><span class="banner-sub">Myths, Legends &amp; Spectral Encounters</span></span></a></header>
-<div class="wrap">
-<nav class="crumb" aria-label="Breadcrumb"><a href="https://folklorefinder.uk/legends/">Legends</a><span class="sep">&#8250;</span><a href="https://folklorefinder.uk/legends/category/hero">Legendary Figures</a><span class="sep">&#8250;</span><a href="https://folklorefinder.uk/legends/region/england">England</a><span class="sep">&#8250;</span><span class="here">Beowulf</span></nav>
-<article class="card">
-<span class="cat" style="background:#6a3a2a">Legendary Figures</span>
-<h1>Beowulf</h1>
-<div class="region">Anglo-Saxon England</div>
-<p class="summary">Beowulf is the great epic poem of Old English literature — over three thousand lines of alliterative verse, preserved in a single manuscript dated to around 1000 AD but describing a world of the fifth and sixth centuries, set in Scandinavia among the Geats, Danes, and other Germanic peoples. It is the foundational text of English literature: the oldest surviving major poem in the language.</p><p class="summary-cont">The hero Beowulf crosses the sea to help Hrothgar, King of the Danes, whose great mead-hall Heorot has been terrorised for twelve years by the monster Grendel. In the most famous scene in the poem, Beowulf waits in the darkened hall and fights Grendel bare-handed, tearing the monster&#x27;s arm from its socket. Grendel retreats to die in the fens; his mother comes in the night for revenge. Beowulf dives into her mere and kills her in the depths.</p><p class="summary-cont">The poem&#x27;s final section takes place decades later. Beowulf is now an old king whose land is threatened by a dragon woken by a theft from its hoard. His companions flee; one returns. The old king and the dragon kill each other. He is buried in a barrow on the headland where his people will see it from the sea. The poem ends not in triumph but in elegy — a meditation on transience, loyalty, and what it means to lead well in a world that cannot be saved.</p>
-<a class="cta" href="https://folklorefinder.uk/map?legend=Beowulf">Explore on the interactive map &#8594;</a>
-<span class="src">Researched from <a href="https://en.wikipedia.org/wiki/Beowulf" target="_blank" rel="noopener">Wikipedia</a> &#183; <span class="src-tier">encyclopedic</span></span>
-<div class="share-row" role="group" aria-label="Share this legend">
-<button type="button" class="share-btn" id="copyLinkBtn">Copy link</button>
-<button type="button" class="share-btn" id="webShareBtn" hidden>Share&#8230;</button>
-</div>
-<span class="share-status" id="shareStatus" role="status" aria-live="polite"></span>
-<svg class="watermark" viewBox="0 0 512 512" aria-hidden="true"><path d="M101.938 19.938c-8.837 0-15.813 6.978-15.813 15.812 0 7.358 4.84 13.427 11.563 15.25l23.134 55.4c-12.618 7.364-23.065 19.85-30.17 37.528L64.22 163.75l11.218 14.938 8.177-6.135c31.722-21.112 72.4-39.987 110.12-49.975l27.327-4.078-2.78-18.5-33.294 4.982c-13.01-4.957-25.152-7.096-36.113-6.607-3.67.164-7.202.62-10.6 1.334l-23.088-55.304a15.871 15.871 0 0 0 2.532-8.656c0-8.837-6.945-15.813-15.782-15.813zM178.81 147c-17.714 6.11-35.908 13.923-52.875 22.656l68.407 165.03 14.625-7.842 28.28-38.75L178.812 147zm169.094 111.53-68.125 3.033-56.967 78-1.25 1.718-1.875 1.033-65.313 35.03-28.47 117.188h345.25l-15-63.686-165.56-54.688 5.874-17.75 89.905 29.688-38.47-129.563z" fill="currentColor"/></svg>
-</article>
-<section class="related"><div class="related-head">Related Legends</div><div class="carousel"><button class="carousel-btn prev" type="button" aria-label="Scroll left">&#8249;</button><div class="carousel-track"><a class="rel-card" href="https://folklorefinder.uk/legends/ivar-the-boneless"><span class="rel-cat" style="background:#6a3a2a">Legendary Figures</span><span class="rel-name">Ivar the Boneless</span><span class="rel-region">Derbyshire</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/ragnar-lothbrok"><span class="rel-cat" style="background:#6a3a2a">Legendary Figures</span><span class="rel-name">Ragnar Lothbrok</span><span class="rel-region">Yorkshire</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/bevis-of-hampton"><span class="rel-cat" style="background:#6a3a2a">Legendary Figures</span><span class="rel-name">Bevis of Hampton</span><span class="rel-region">Southampton, Hampshire, England</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/blackbeard"><span class="rel-cat" style="background:#6b6b6b">Pirates</span><span class="rel-name">Blackbeard</span><span class="rel-region">Bristol</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/sir-bedivere"><span class="rel-cat" style="background:#6a3a2a">Legendary Figures</span><span class="rel-name">Sir Bedivere</span><span class="rel-region">Somerset</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/daniel-fall-the-pirate-of-the-norfolk-coast"><span class="rel-cat" style="background:#6b6b6b">Pirates</span><span class="rel-name">Daniel Fall, the Pirate of the Norfolk Coast</span><span class="rel-region">Great Yarmouth, Norfolk, England</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/dunwich-the-drowned-city-bells"><span class="rel-cat" style="background:#5a3a18">Sacred Sites</span><span class="rel-name">Dunwich: The Drowned City Bells</span><span class="rel-region">Dunwich, Suffolk, England</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/wild-man-of-orford"><span class="rel-cat" style="background:#2d6a8a">Beasts</span><span class="rel-name">Wild Man of Orford</span><span class="rel-region">Orford, Suffolk, England</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/sawney-bean"><span class="rel-cat" style="background:#2d6a8a">Beasts</span><span class="rel-name">Sawney Bean</span><span class="rel-region">Bennane Cave, South Ayrshire</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/crodh-mara"><span class="rel-cat" style="background:#1a5a6a">Aquatic Legends</span><span class="rel-name">Crodh Mara</span><span class="rel-region">Hebrides, Scottish Highlands</span></a></div><button class="carousel-btn next" type="button" aria-label="Scroll right">&#8250;</button></div></section>
-<a class="back" href="https://folklorefinder.uk/legends/">&#8592; Browse all legends</a>
-</div>
-<footer>Part of the Folklore Map of Britain &amp; Ireland &#183; &#169; EditionTree &#183; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener" style="color:#5c4a2a">&#9749; Ko-fi</a> &#183; <a href="https://folklorefinder.uk/privacy" style="color:#5c4a2a">Privacy</a></footer>
-<script>
-document.querySelectorAll('.carousel').forEach(function(c){
-  var t=c.querySelector('.carousel-track');
-  var p=c.querySelector('.prev'), n=c.querySelector('.next');
-  if(p)p.addEventListener('click',function(){t.scrollBy({left:-220,behavior:'smooth'});});
-  if(n)n.addEventListener('click',function(){t.scrollBy({left:220,behavior:'smooth'});});
-});
-(function(){
-  var link=document.querySelector('link[rel=canonical]');
-  var url=(link&&link.href)||location.href;
-  var status=document.getElementById('shareStatus');
-  var copyBtn=document.getElementById('copyLinkBtn');
-  var revertTimer=null;
-  function announce(m){ if(status) status.textContent=m; }
-  function markCopied(){
-    announce('Link copied');           // for screen readers (visually hidden)
-    if(copyBtn){
-      copyBtn.textContent='Copied';
-      clearTimeout(revertTimer);
-      revertTimer=setTimeout(function(){ copyBtn.textContent='Copy link'; },2000);
-    }
-  }
-  function fallbackCopy(){
-    try{
-      var ta=document.createElement('textarea');
-      ta.value=url; ta.setAttribute('readonly','');
-      ta.style.position='absolute'; ta.style.left='-9999px';
-      document.body.appendChild(ta); ta.select();
-      document.execCommand('copy'); document.body.removeChild(ta);
-      markCopied();
-    }catch(e){ announce("Couldn't copy. Press Ctrl+C to copy the address."); }
-  }
-  if(copyBtn) copyBtn.addEventListener('click',function(){
-    if(navigator.clipboard&&navigator.clipboard.writeText){
-      navigator.clipboard.writeText(url).then(markCopied,fallbackCopy);
-    } else { fallbackCopy(); }
-  });
-  var shareBtn=document.getElementById('webShareBtn');
-  if(shareBtn&&navigator.share){
-    shareBtn.hidden=false;
-    shareBtn.addEventListener('click',function(){
-      navigator.share({title:document.title,url:url}).catch(function(){});
-    });
-  }
-})();
-</script>
+<header class="brandbar">
+  <a class="brand" href="https://folklorefinder.uk/">
+    <img src="https://folklorefinder.uk/green-man.png" alt=""/>
+    <span>
+      <span class="brand-name">Folklore Map of Britain &amp; Ireland</span>
+      <span class="brand-line">Myths, Legends &amp; Spectral Encounters</span>
+    </span>
+  </a>
+</header>
+<main>
+  <div class="shell">
+    <nav class="crumb" aria-label="Breadcrumb"><a href="https://folklorefinder.uk/legends/">Legends</a><span class="sep">&#8250;</span><a href="https://folklorefinder.uk/legends/category/hero">Legendary Figures</a><span class="sep">&#8250;</span><a href="https://folklorefinder.uk/legends/region/england">England</a><span class="sep">&#8250;</span><span class="here">Beowulf</span></nav>
+    <section class="hero" aria-labelledby="legend-title">
+      <div class="hero-placeholder" role="img" aria-label="Illustration placeholder for Beowulf" style="--placeholder-colour:#6a3a2a"><div class="placeholder-lines" aria-hidden="true"></div><svg viewBox="0 0 512 512" aria-hidden="true"><path d="M101.938 19.938c-8.837 0-15.813 6.978-15.813 15.812 0 7.358 4.84 13.427 11.563 15.25l23.134 55.4c-12.618 7.364-23.065 19.85-30.17 37.528L64.22 163.75l11.218 14.938 8.177-6.135c31.722-21.112 72.4-39.987 110.12-49.975l27.327-4.078-2.78-18.5-33.294 4.982c-13.01-4.957-25.152-7.096-36.113-6.607-3.67.164-7.202.62-10.6 1.334l-23.088-55.304a15.871 15.871 0 0 0 2.532-8.656c0-8.837-6.945-15.813-15.782-15.813zM178.81 147c-17.714 6.11-35.908 13.923-52.875 22.656l68.407 165.03 14.625-7.842 28.28-38.75L178.812 147zm169.094 111.53-68.125 3.033-56.967 78-1.25 1.718-1.875 1.033-65.313 35.03-28.47 117.188h345.25l-15-63.686-165.56-54.688 5.874-17.75 89.905 29.688-38.47-129.563z"/></svg><span>Illustration in preparation</span></div>
+      <div class="hero-copy">
+        <div class="eyebrow">
+          <span class="category" style="background:#6a3a2a">Legendary Figures</span>
+          <span class="place">Anglo-Saxon England</span>
+        </div>
+        <h1 id="legend-title">Beowulf</h1>
+        <p class="standfirst">Anglo-Saxon hero who slew the monster Grendel with his bare hands in the Danish hall of Heorot, then killed Grendel&#x27;s mother in the depths of her mere, and finally died old, fighting a dragon alone, for the sake of his people.</p>
+      </div>
+
+    </section>
+
+    <div class="content-grid">
+      <article class="article">
+        <div class="article-label">The legend</div>
+        <p class="opening">Beowulf is the great epic poem of Old English literature — over three thousand lines of alliterative verse, preserved in a single manuscript dated to around 1000 AD but describing a world of the fifth and sixth centuries, set in Scandinavia among the Geats, Danes, and other Germanic peoples. It is the foundational text of English literature: the oldest surviving major poem in the language.</p><h2>The story</h2><p>The hero Beowulf crosses the sea to help Hrothgar, King of the Danes, whose great mead-hall Heorot has been terrorised for twelve years by the monster Grendel. In the most famous scene in the poem, Beowulf waits in the darkened hall and fights Grendel bare-handed, tearing the monster&#x27;s arm from its socket. Grendel retreats to die in the fens; his mother comes in the night for revenge. Beowulf dives into her mere and kills her in the depths.</p><p>The poem&#x27;s final section takes place decades later. Beowulf is now an old king whose land is threatened by a dragon woken by a theft from its hoard. His companions flee; one returns. The old king and the dragon kill each other. He is buried in a barrow on the headland where his people will see it from the sea. The poem ends not in triumph but in elegy — a meditation on transience, loyalty, and what it means to lead well in a world that cannot be saved.</p>
+        <div class="article-actions" aria-label="Legend actions">
+          <a class="button" href="https://folklorefinder.uk/map?legend=Beowulf">Open on full map</a>
+          <button class="button secondary" id="copyLinkBtn" type="button">Copy link</button>
+          <button class="button secondary" id="webShareBtn" type="button" hidden>Share</button>
+        </div>
+        <span class="share-status" id="shareStatus" role="status" aria-live="polite"></span>
+      </article>
+
+      <aside class="sidebar" aria-label="Legend details">
+        <section class="side-card">
+          <div class="side-pad">
+            <p class="side-kicker">Explore the place</p>
+            <h2>Anglo-Saxon England</h2>
+            <p class="map-meta">Anglo-Saxon England</p>
+          </div>
+          <div id="miniMap" data-lat="52.600000" data-lng="1.300000" data-colour="#6a3a2a" data-initial="B" aria-label="Map showing the location associated with Beowulf"></div>
+          <div class="map-footer">
+            <a href="https://folklorefinder.uk/map?legend=Beowulf">View full map &#8594;</a>
+            <span>52.600 N, 1.300 E</span>
+          </div>
+        </section>
+
+        <section class="side-card side-pad">
+          <p class="side-kicker">At a glance</p>
+          <h2>About this legend</h2>
+          <div class="facts"><div class="fact"><span>Category</span><strong>Legendary Figures</strong></div><div class="fact"><span>Region</span><strong>Anglo-Saxon England</strong></div></div>
+        </section>
+
+        <section class="side-card side-pad"><p class="side-kicker">Sources</p><h2>Further reading</h2><p class="source-copy">Sources used to research and locate this legend.</p><ul class="source-list"><li><a href="https://en.wikipedia.org/wiki/Beowulf" target="_blank" rel="noopener">Wikipedia &#8594;</a> <span class="source-tier">encyclopedic</span></li></ul></section>
+      </aside>
+    </div>
+  </div>
+
+  <section class="related"><div class="shell"><div class="section-head"><div><p>Continue exploring</p><h2>Related legends</h2></div><a href="https://folklorefinder.uk/legends/">Browse all legends</a></div><div class="related-grid"><a class="related-card" style="--card-glow:#6a3a2a" href="https://folklorefinder.uk/legends/ivar-the-boneless"><span class="related-type">Legendary Figures</span><span class="related-name">Ivar the Boneless</span><span class="related-place">Derbyshire</span></a><a class="related-card" style="--card-glow:#6a3a2a" href="https://folklorefinder.uk/legends/ragnar-lothbrok"><span class="related-type">Legendary Figures</span><span class="related-name">Ragnar Lothbrok</span><span class="related-place">Yorkshire</span></a><a class="related-card" style="--card-glow:#6a3a2a" href="https://folklorefinder.uk/legends/bevis-of-hampton"><span class="related-type">Legendary Figures</span><span class="related-name">Bevis of Hampton</span><span class="related-place">Southampton, Hampshire, England</span></a></div></div></section>
+</main>
+<footer>Part of the Folklore Map of Britain &amp; Ireland &#183; &#169; EditionTree &#183; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener">Ko-fi</a> &#183; <a href="https://folklorefinder.uk/privacy">Privacy</a></footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH" crossorigin="anonymous"></script>
+<script src="https://folklorefinder.uk/legend-page.js"></script>
 </body>
 </html>

@@ -56,9 +56,8 @@ h1{font-family:'Marcellus',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;
 .share-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
 .share-btn{font-family:'Marcellus',serif;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#8b3a1a;background:transparent;border:1px solid #b09060;border-radius:3px;padding:9px 16px;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
 .share-btn:hover{background:#8b3a1a;color:#f2e8d5;border-color:#8b3a1a}
-.share-status{display:block;margin-top:8px;font-size:12px;font-style:italic;color:#5c4a2a;min-height:1.1em}
+.share-status{position:absolute !important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .src{display:block;margin-top:18px;font-size:13px;font-style:italic;color:#5c4a2a}
-.reviewed{display:block;margin-top:7px;font-size:12px;font-style:italic;color:#7a6a4a}
 .src a{color:#8b3a1a}
 .back{display:inline-block;margin-top:22px;font-size:13px;color:#5c4a2a}
 .related{margin-top:36px}
@@ -97,7 +96,6 @@ footer{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}
 <p class="summary">Black Eric is a dark figure in Shetland folklore, associated with the dramatic cliffs of Fitful Head at the southernmost point of Mainland Shetland. He is described as a hermit living in a sea-cave who survived by sheep-rustling, which he undertook with supernatural assistance: he rode a Tangie—the Shetland and Orcadian water spirit, which appears as a powerful dark horse dripping with seaweed and brine, or as a wild seaweed-clad man—on his nocturnal raids through the crofting townships. The combination of human cunning and supernatural aid made Eric effectively unstoppable, and the fear he generated was such that farmers preferred to leave out offerings rather than risk confrontation.</p><p class="summary-cont">His end came when a crofter named Sandy Breamer refused to be intimidated. In their final confrontation at the edge of Fitful Head&#x27;s cliffs, Eric fell into the sea and was drowned. His heavy iron staff washed ashore afterward and was salvaged as what appeared to be a useful piece of scrap metal, fitted as the spindle of a local watermill. But from that point on, on every Halloween night, the mill became a place of unearthly screams and groaning; witnesses claimed to see the spectral shape of Black Eric himself spinning on the flying millstone. The haunting reached its climax on one Halloween when a storm of supernatural violence tore the mill completely apart and the spindle disappeared back into darkness, never to be found.</p><p class="summary-cont">The legend is recorded in George Stewart&#x27;s Shetland Fireside Tales (1892), one of the principal early collections of Shetland oral tradition, and has been discussed by the Archaeology Shetland project. It connects the figure of Black Eric to the broader tradition of the Tangie—a specifically named Shetland/Orkney water spirit distinct from the more widely known kelpie—which is attested in the Wikipedia article on Tangie and in spookyscotland.net.</p>
 <a class="cta" href="https://folklorefinder.uk/map?legend=Black%20Eric%20of%20Shetland">Explore on the interactive map &#8594;</a>
 <span class="src">Source: <a href="https://en.wikipedia.org/wiki/Tangie" target="_blank" rel="noopener">en.wikipedia.org</a></span>
-<span class="reviewed">Added 9 June 2026</span>
 <div class="share-row" role="group" aria-label="Share this legend">
 <button type="button" class="share-btn" id="copyLinkBtn">Copy link</button>
 <button type="button" class="share-btn" id="webShareBtn" hidden>Share&#8230;</button>
@@ -120,7 +118,17 @@ document.querySelectorAll('.carousel').forEach(function(c){
   var link=document.querySelector('link[rel=canonical]');
   var url=(link&&link.href)||location.href;
   var status=document.getElementById('shareStatus');
+  var copyBtn=document.getElementById('copyLinkBtn');
+  var revertTimer=null;
   function announce(m){ if(status) status.textContent=m; }
+  function markCopied(){
+    announce('Link copied');           // for screen readers (visually hidden)
+    if(copyBtn){
+      copyBtn.textContent='Copied';
+      clearTimeout(revertTimer);
+      revertTimer=setTimeout(function(){ copyBtn.textContent='Copy link'; },2000);
+    }
+  }
   function fallbackCopy(){
     try{
       var ta=document.createElement('textarea');
@@ -128,13 +136,12 @@ document.querySelectorAll('.carousel').forEach(function(c){
       ta.style.position='absolute'; ta.style.left='-9999px';
       document.body.appendChild(ta); ta.select();
       document.execCommand('copy'); document.body.removeChild(ta);
-      announce('Link copied');
+      markCopied();
     }catch(e){ announce("Couldn't copy. Press Ctrl+C to copy the address."); }
   }
-  var copyBtn=document.getElementById('copyLinkBtn');
   if(copyBtn) copyBtn.addEventListener('click',function(){
     if(navigator.clipboard&&navigator.clipboard.writeText){
-      navigator.clipboard.writeText(url).then(function(){announce('Link copied');},fallbackCopy);
+      navigator.clipboard.writeText(url).then(markCopied,fallbackCopy);
     } else { fallbackCopy(); }
   });
   var shareBtn=document.getElementById('webShareBtn');

@@ -56,9 +56,8 @@ h1{font-family:'Marcellus',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;
 .share-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
 .share-btn{font-family:'Marcellus',serif;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#8b3a1a;background:transparent;border:1px solid #b09060;border-radius:3px;padding:9px 16px;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
 .share-btn:hover{background:#8b3a1a;color:#f2e8d5;border-color:#8b3a1a}
-.share-status{display:block;margin-top:8px;font-size:12px;font-style:italic;color:#5c4a2a;min-height:1.1em}
+.share-status{position:absolute !important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .src{display:block;margin-top:18px;font-size:13px;font-style:italic;color:#5c4a2a}
-.reviewed{display:block;margin-top:7px;font-size:12px;font-style:italic;color:#7a6a4a}
 .src a{color:#8b3a1a}
 .back{display:inline-block;margin-top:22px;font-size:13px;color:#5c4a2a}
 .related{margin-top:36px}
@@ -97,7 +96,6 @@ footer{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}
 <p class="summary">Set on windswept cliffs a short walk south of St Davids, St Non&#x27;s Well is said to have burst from the earth at the exact moment of St David&#x27;s birth, around 500 CE. His mother Non — a Pembrokeshire princess who gave birth during a violent thunderstorm at the site now marked by the ruined chapel of St Non — is venerated across Welsh and Breton Christianity, and the spring that sprang in that moment became one of the most important pilgrimage destinations in medieval Wales.</p><p class="summary-cont">The healing tradition attached to the well is highly specific. It was held to be particularly effective for eye complaints — a convention often attached to waters associated with miraculous births — and accounts from 1811 record that &#x27;the fame this consecrated spring has obtained is incredible and it is still resorted to for many complaints.&#x27; The well was restored in 1951 by the Catholic Church, which erected a small shrine using stones from the medieval chapel ruins alongside. The site&#x27;s most popular visiting day was St Non&#x27;s Day, the 2nd of March.</p><p class="summary-cont">The Cadw-listed ruins of the Chapel of St Non stand next to the well and are thought to mark the actual birth site; a standing stone within the former chapel walls may indicate a pre-Christian sacred character absorbed into the saint&#x27;s legend. Unlike many holy wells that survive only as archaeological features, St Non&#x27;s Well continues to attract active devotion: modern pilgrims leave offerings in the water throughout the year, and the coexistence of a Neolithic stone, a ruined medieval chapel, and a living spring makes this one of the most layered sacred sites in Pembrokeshire — and one of the few where the founding legend is still enacted in practice.</p>
 <a class="cta" href="https://folklorefinder.uk/map?legend=St%20Non%27s%20Well">Explore on the interactive map &#8594;</a>
 <span class="src">Source: <a href="https://en.wikipedia.org/wiki/Chapel_of_St_Non" target="_blank" rel="noopener">en.wikipedia.org</a></span>
-<span class="reviewed">Added 8 June 2026</span>
 <div class="share-row" role="group" aria-label="Share this legend">
 <button type="button" class="share-btn" id="copyLinkBtn">Copy link</button>
 <button type="button" class="share-btn" id="webShareBtn" hidden>Share&#8230;</button>
@@ -120,7 +118,17 @@ document.querySelectorAll('.carousel').forEach(function(c){
   var link=document.querySelector('link[rel=canonical]');
   var url=(link&&link.href)||location.href;
   var status=document.getElementById('shareStatus');
+  var copyBtn=document.getElementById('copyLinkBtn');
+  var revertTimer=null;
   function announce(m){ if(status) status.textContent=m; }
+  function markCopied(){
+    announce('Link copied');           // for screen readers (visually hidden)
+    if(copyBtn){
+      copyBtn.textContent='Copied';
+      clearTimeout(revertTimer);
+      revertTimer=setTimeout(function(){ copyBtn.textContent='Copy link'; },2000);
+    }
+  }
   function fallbackCopy(){
     try{
       var ta=document.createElement('textarea');
@@ -128,13 +136,12 @@ document.querySelectorAll('.carousel').forEach(function(c){
       ta.style.position='absolute'; ta.style.left='-9999px';
       document.body.appendChild(ta); ta.select();
       document.execCommand('copy'); document.body.removeChild(ta);
-      announce('Link copied');
+      markCopied();
     }catch(e){ announce("Couldn't copy. Press Ctrl+C to copy the address."); }
   }
-  var copyBtn=document.getElementById('copyLinkBtn');
   if(copyBtn) copyBtn.addEventListener('click',function(){
     if(navigator.clipboard&&navigator.clipboard.writeText){
-      navigator.clipboard.writeText(url).then(function(){announce('Link copied');},fallbackCopy);
+      navigator.clipboard.writeText(url).then(markCopied,fallbackCopy);
     } else { fallbackCopy(); }
   });
   var shareBtn=document.getElementById('webShareBtn');

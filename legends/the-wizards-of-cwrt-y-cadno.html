@@ -56,9 +56,8 @@ h1{font-family:'Marcellus',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;
 .share-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
 .share-btn{font-family:'Marcellus',serif;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#8b3a1a;background:transparent;border:1px solid #b09060;border-radius:3px;padding:9px 16px;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
 .share-btn:hover{background:#8b3a1a;color:#f2e8d5;border-color:#8b3a1a}
-.share-status{display:block;margin-top:8px;font-size:12px;font-style:italic;color:#5c4a2a;min-height:1.1em}
+.share-status{position:absolute !important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .src{display:block;margin-top:18px;font-size:13px;font-style:italic;color:#5c4a2a}
-.reviewed{display:block;margin-top:7px;font-size:12px;font-style:italic;color:#7a6a4a}
 .src a{color:#8b3a1a}
 .back{display:inline-block;margin-top:22px;font-size:13px;color:#5c4a2a}
 .related{margin-top:36px}
@@ -97,7 +96,6 @@ footer{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}
 <p class="summary">John Harries (1785-1839) and his son Henry Harries (1821-1849) of Cwrt y Cadno in Carmarthenshire were the best-known of Wales&#x27;s dynion hysbys, or &#x27;cunning men&#x27; — educated, respected practitioners combining medicine, astrology and folk magic. John reportedly trained as a surgeon and practised on Harley Street in London, alongside the well-known astrologer Robert Cross Smith (&#x27;Raphael&#x27;), before returning to rural Wales to set up practice at Pantycoy.</p><p class="summary-cont">People travelled from across Wales and the English border counties to consult the Harries family on recovering stolen or lost property, healing humans and animals, breaking curses, casting protective charms, and predicting the future. Anecdotes about their powers circulated widely: one tells of a man convinced he had swallowed a tadpole that had grown into a frog inside him, cured when Dr Harries induced vomiting and produced &#x27;the frog&#x27;; another describes Harries locating a woman&#x27;s stolen wedding ring, which her son returned just two days before his own death. In a more serious case, Harries is said to have identified the burial site of a murdered girl with such uncanny precision that he was himself arrested as an accessory — until he demonstrated his astrological methods to the magistrates and was released.</p><p class="summary-cont">Distinguished visitors to Pantycoy reportedly included the actress Sarah Siddons and the writer George Borrow during his 1854 walking tour of Wales. John Harries died in a house fire in 1839 — a death he is said to have predicted for himself through his own astrology, despite his efforts to avoid it.</p>
 <a class="cta" href="https://folklorefinder.uk/map?legend=The%20Wizards%20of%20Cwrt%20y%20Cadno">Explore on the interactive map &#8594;</a>
 <span class="src">Source: <a href="https://historiamag.com/wizards-of-west-wales/" target="_blank" rel="noopener">historiamag.com</a></span>
-<span class="reviewed">Added 10 June 2026</span>
 <div class="share-row" role="group" aria-label="Share this legend">
 <button type="button" class="share-btn" id="copyLinkBtn">Copy link</button>
 <button type="button" class="share-btn" id="webShareBtn" hidden>Share&#8230;</button>
@@ -120,7 +118,17 @@ document.querySelectorAll('.carousel').forEach(function(c){
   var link=document.querySelector('link[rel=canonical]');
   var url=(link&&link.href)||location.href;
   var status=document.getElementById('shareStatus');
+  var copyBtn=document.getElementById('copyLinkBtn');
+  var revertTimer=null;
   function announce(m){ if(status) status.textContent=m; }
+  function markCopied(){
+    announce('Link copied');           // for screen readers (visually hidden)
+    if(copyBtn){
+      copyBtn.textContent='Copied';
+      clearTimeout(revertTimer);
+      revertTimer=setTimeout(function(){ copyBtn.textContent='Copy link'; },2000);
+    }
+  }
   function fallbackCopy(){
     try{
       var ta=document.createElement('textarea');
@@ -128,13 +136,12 @@ document.querySelectorAll('.carousel').forEach(function(c){
       ta.style.position='absolute'; ta.style.left='-9999px';
       document.body.appendChild(ta); ta.select();
       document.execCommand('copy'); document.body.removeChild(ta);
-      announce('Link copied');
+      markCopied();
     }catch(e){ announce("Couldn't copy. Press Ctrl+C to copy the address."); }
   }
-  var copyBtn=document.getElementById('copyLinkBtn');
   if(copyBtn) copyBtn.addEventListener('click',function(){
     if(navigator.clipboard&&navigator.clipboard.writeText){
-      navigator.clipboard.writeText(url).then(function(){announce('Link copied');},fallbackCopy);
+      navigator.clipboard.writeText(url).then(markCopied,fallbackCopy);
     } else { fallbackCopy(); }
   });
   var shareBtn=document.getElementById('webShareBtn');

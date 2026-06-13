@@ -445,9 +445,8 @@ h1{{font-family:'Marcellus',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e
 .share-row{{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}}
 .share-btn{{font-family:'Marcellus',serif;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#8b3a1a;background:transparent;border:1px solid #b09060;border-radius:3px;padding:9px 16px;cursor:pointer;transition:background .15s,color .15s,border-color .15s}}
 .share-btn:hover{{background:#8b3a1a;color:#f2e8d5;border-color:#8b3a1a}}
-.share-status{{display:block;margin-top:8px;font-size:12px;font-style:italic;color:#5c4a2a;min-height:1.1em}}
+.share-status{{position:absolute !important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}}
 .src{{display:block;margin-top:18px;font-size:13px;font-style:italic;color:#5c4a2a}}
-.reviewed{{display:block;margin-top:7px;font-size:12px;font-style:italic;color:#7a6a4a}}
 .src a{{color:#8b3a1a}}
 .back{{display:inline-block;margin-top:22px;font-size:13px;color:#5c4a2a}}
 .related{{margin-top:36px}}
@@ -486,7 +485,6 @@ footer{{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}}
 {body}
 <a class="cta" href="{maplink}">Explore on the interactive map &#8594;</a>
 <span class="src">Source: <a href="{src}" target="_blank" rel="noopener">{srchost}</a></span>
-{reviewed}
 <div class="share-row" role="group" aria-label="Share this legend">
 <button type="button" class="share-btn" id="copyLinkBtn">Copy link</button>
 <button type="button" class="share-btn" id="webShareBtn" hidden>Share&#8230;</button>
@@ -509,7 +507,17 @@ document.querySelectorAll('.carousel').forEach(function(c){{
   var link=document.querySelector('link[rel=canonical]');
   var url=(link&&link.href)||location.href;
   var status=document.getElementById('shareStatus');
+  var copyBtn=document.getElementById('copyLinkBtn');
+  var revertTimer=null;
   function announce(m){{ if(status) status.textContent=m; }}
+  function markCopied(){{
+    announce('Link copied');           // for screen readers (visually hidden)
+    if(copyBtn){{
+      copyBtn.textContent='Copied';
+      clearTimeout(revertTimer);
+      revertTimer=setTimeout(function(){{ copyBtn.textContent='Copy link'; }},2000);
+    }}
+  }}
   function fallbackCopy(){{
     try{{
       var ta=document.createElement('textarea');
@@ -517,13 +525,12 @@ document.querySelectorAll('.carousel').forEach(function(c){{
       ta.style.position='absolute'; ta.style.left='-9999px';
       document.body.appendChild(ta); ta.select();
       document.execCommand('copy'); document.body.removeChild(ta);
-      announce('Link copied');
+      markCopied();
     }}catch(e){{ announce("Couldn't copy. Press Ctrl+C to copy the address."); }}
   }}
-  var copyBtn=document.getElementById('copyLinkBtn');
   if(copyBtn) copyBtn.addEventListener('click',function(){{
     if(navigator.clipboard&&navigator.clipboard.writeText){{
-      navigator.clipboard.writeText(url).then(function(){{announce('Link copied');}},fallbackCopy);
+      navigator.clipboard.writeText(url).then(markCopied,fallbackCopy);
     }} else {{ fallbackCopy(); }}
   }});
   var shareBtn=document.getElementById('webShareBtn');
@@ -653,17 +660,8 @@ def build():
         if modified:
             ld["dateModified"] = modified
         jsonld = json.dumps(ld, ensure_ascii=False)
-
-        # Visible provenance line — distinguishes newly added from later-enriched.
-        if added and modified and modified != added:
-            reviewed_html = (f'<span class="reviewed">Added {human_date(added)} '
-                             f'&#183; Updated {human_date(modified)}</span>')
-        elif added:
-            reviewed_html = f'<span class="reviewed">Added {human_date(added)}</span>'
-        elif modified:
-            reviewed_html = f'<span class="reviewed">Updated {human_date(modified)}</span>'
-        else:
-            reviewed_html = ""
+        # date_added/date_modified stay in the JSON-LD and sitemap, but are not
+        # shown on the page (looked out of place).
 
         # Related legends carousel
         rel = related_map.get(name, [])
@@ -723,7 +721,6 @@ def build():
             maplink=esc(maplink),
             src=esc(src),
             srchost=esc(host_of(src)),
-            reviewed=reviewed_html,
             watermark=meta.get(leg.get("category", ""), {}).get("iconPath", ""),
             catcolour=esc(meta.get(leg.get("category", ""), {}).get("colour", "#8b3a1a")),
             ogimage=f"{BASE}/og/category-{leg.get('category', '')}.png" if leg.get("category", "") in meta else f"{BASE}/og/preview.png",

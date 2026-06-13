@@ -56,9 +56,8 @@ h1{font-family:'Marcellus',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;
 .share-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
 .share-btn{font-family:'Marcellus',serif;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#8b3a1a;background:transparent;border:1px solid #b09060;border-radius:3px;padding:9px 16px;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
 .share-btn:hover{background:#8b3a1a;color:#f2e8d5;border-color:#8b3a1a}
-.share-status{display:block;margin-top:8px;font-size:12px;font-style:italic;color:#5c4a2a;min-height:1.1em}
+.share-status{position:absolute !important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .src{display:block;margin-top:18px;font-size:13px;font-style:italic;color:#5c4a2a}
-.reviewed{display:block;margin-top:7px;font-size:12px;font-style:italic;color:#7a6a4a}
 .src a{color:#8b3a1a}
 .back{display:inline-block;margin-top:22px;font-size:13px;color:#5c4a2a}
 .related{margin-top:36px}
@@ -97,7 +96,6 @@ footer{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}
 <p class="summary">Corrag is a figure of Highland folklore associated with the valley of Glencoe in Argyll, described as a solitary woman—sometimes called a witch, sometimes simply a woman of second sight—who lived in the mountains above the glen and was feared for her prophetic gifts. She is not presented as malevolent but as someone whose warnings were ignored at terrible cost. According to the tradition, she foresaw the impending massacre of the MacDonalds of Glencoe by soldiers billeted in the glen, which took place on 13 February 1692 on the orders of William III. She warned the chief but was not believed, fled to the hills the night before, and returned at dawn to find the village destroyed.</p><p class="summary-cont">Standing over the place where the chief had been killed, Corrag found his broadsword, carried it to the shore of Loch Leven, and threw it into the water. She pronounced a prophecy: no man of Glencoe would die in battle while the blade lay undisturbed beneath the loch. For over two centuries the tradition appeared to hold; the MacDonalds fought at Culloden and later Victorian conflicts with no recorded Glencoe battle deaths. This changed in June 1916, when a dredger operating on the loch bed recovered an old sword handle and a crew member brandished it in a local bar that evening. The following day—1 July 1916, the first day of the Battle of the Somme—seven men from the village of Glencoe were killed in action, the first battle deaths since 1692.</p><p class="summary-cont">A second prophecy attributed to Corrag concerns Ballachulish Bridge over the narrows of Loch Leven, built in the 1970s: she had warned that if the narrows were ever bridged, a flood would destroy Glencoe. Engineers are said to have left one of the 24 concrete approach bolts undriven to ensure the bridge was never technically complete. The legend is documented by the Glencoe Museum and the National Trust for Scotland, and referenced in National Trust interpretive material for Glencoe.</p>
 <a class="cta" href="https://folklorefinder.uk/map?legend=Corrag%20of%20Glencoe">Explore on the interactive map &#8594;</a>
 <span class="src">Source: <a href="https://www.glencoemuseum.com/post/corrag-of-glencoe" target="_blank" rel="noopener">glencoemuseum.com</a></span>
-<span class="reviewed">Added 9 June 2026</span>
 <div class="share-row" role="group" aria-label="Share this legend">
 <button type="button" class="share-btn" id="copyLinkBtn">Copy link</button>
 <button type="button" class="share-btn" id="webShareBtn" hidden>Share&#8230;</button>
@@ -120,7 +118,17 @@ document.querySelectorAll('.carousel').forEach(function(c){
   var link=document.querySelector('link[rel=canonical]');
   var url=(link&&link.href)||location.href;
   var status=document.getElementById('shareStatus');
+  var copyBtn=document.getElementById('copyLinkBtn');
+  var revertTimer=null;
   function announce(m){ if(status) status.textContent=m; }
+  function markCopied(){
+    announce('Link copied');           // for screen readers (visually hidden)
+    if(copyBtn){
+      copyBtn.textContent='Copied';
+      clearTimeout(revertTimer);
+      revertTimer=setTimeout(function(){ copyBtn.textContent='Copy link'; },2000);
+    }
+  }
   function fallbackCopy(){
     try{
       var ta=document.createElement('textarea');
@@ -128,13 +136,12 @@ document.querySelectorAll('.carousel').forEach(function(c){
       ta.style.position='absolute'; ta.style.left='-9999px';
       document.body.appendChild(ta); ta.select();
       document.execCommand('copy'); document.body.removeChild(ta);
-      announce('Link copied');
+      markCopied();
     }catch(e){ announce("Couldn't copy. Press Ctrl+C to copy the address."); }
   }
-  var copyBtn=document.getElementById('copyLinkBtn');
   if(copyBtn) copyBtn.addEventListener('click',function(){
     if(navigator.clipboard&&navigator.clipboard.writeText){
-      navigator.clipboard.writeText(url).then(function(){announce('Link copied');},fallbackCopy);
+      navigator.clipboard.writeText(url).then(markCopied,fallbackCopy);
     } else { fallbackCopy(); }
   });
   var shareBtn=document.getElementById('webShareBtn');

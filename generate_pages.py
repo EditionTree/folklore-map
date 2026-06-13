@@ -425,6 +425,69 @@ def publisher_of(url):
     return PUBLISHERS.get(host_of(url), host_of(url))
 
 
+# Source reliability tier by host. Only confident classifications are listed;
+# unmapped hosts get no tier label (rather than a misleading guess). Entries can
+# override per-source with an explicit "type" in their `sources` list.
+SOURCE_TIERS = {
+    "en.wikipedia.org": "encyclopedic",
+    "oxfordreference.com": "encyclopedic",
+    "duchas.ie": "primary",
+    "gutenberg.org": "primary",
+    "historicengland.org.uk": "heritage",
+    "canmore.org.uk": "heritage",
+    "nationaltrust.org.uk": "heritage",
+    "jerseyheritage.org": "heritage",
+    "calanais.org": "heritage",
+    "wessexmuseums.org.uk": "heritage",
+    "glencoemuseum.com": "heritage",
+    "folklorethursday.com": "secondary",
+    "transceltic.com": "secondary",
+    "mysteriousbritain.co.uk": "secondary",
+    "historic-uk.com": "secondary",
+}
+TIER_LABELS = {
+    "primary": "primary record",
+    "heritage": "heritage record",
+    "secondary": "secondary source",
+    "encyclopedic": "encyclopedic",
+    "popular": "popular source",
+}
+
+
+def source_tier(url, explicit=None):
+    """Reliability tier for a source, or None when not confidently known."""
+    if explicit and explicit in TIER_LABELS:
+        return explicit
+    return SOURCE_TIERS.get(host_of(url))
+
+
+def legend_sources(leg):
+    """Normalise a legend's sourcing into a list of {url, publisher, tier, label}.
+    Supports the new `sources` list (strings or {url,type,publisher} objects) and
+    falls back to the legacy single `source` string."""
+    raw = leg.get("sources")
+    items = []
+    if raw:
+        for s in raw:
+            if isinstance(s, str) and s:
+                items.append({"url": s})
+            elif isinstance(s, dict) and s.get("url"):
+                items.append(s)
+    if not items and leg.get("source"):
+        items = [{"url": leg["source"]}]
+    out = []
+    for s in items:
+        url = s["url"]
+        tier = source_tier(url, s.get("type"))
+        out.append({
+            "url": url,
+            "publisher": s.get("publisher") or publisher_of(url),
+            "tier": tier,
+            "label": TIER_LABELS.get(tier) if tier else None,
+        })
+    return out
+
+
 PAGE = """<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -485,6 +548,12 @@ h1{{font-family:'Marcellus',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e
 .share-btn:hover{{background:#8b3a1a;color:#f2e8d5;border-color:#8b3a1a}}
 .share-status{{position:absolute !important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}}
 .src{{display:block;margin-top:18px;font-size:13px;font-style:italic;color:#5c4a2a}}
+.src-tier{{color:#7a6a4a}}
+.sources{{margin-top:18px;font-size:13px;color:#5c4a2a}}
+.sources-head{{font-style:italic}}
+.sources ul{{list-style:none;margin:5px 0 0;padding:0}}
+.sources li{{margin:3px 0}}
+.sources a{{color:#8b3a1a}}
 .src a{{color:#8b3a1a}}
 .back{{display:inline-block;margin-top:22px;font-size:13px;color:#5c4a2a}}
 .related{{margin-top:36px}}
@@ -522,7 +591,7 @@ footer{{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}}
 <div class="region">{region}</div>
 {body}
 <a class="cta" href="{maplink}">Explore on the interactive map &#8594;</a>
-<span class="src">Researched from <a href="{src}" target="_blank" rel="noopener">{srcpub}</a></span>
+{sources}
 <div class="share-row" role="group" aria-label="Share this legend">
 <button type="button" class="share-btn" id="copyLinkBtn">Copy link</button>
 <button type="button" class="share-btn" id="webShareBtn" hidden>Share&#8230;</button>
@@ -675,7 +744,7 @@ def build():
         ) or '<p class="summary"></p>'
         catname = cats.get(leg.get("category", ""), leg.get("category", "Legend"))
         maplink = f"{BASE}/map?legend=" + urllib.parse.quote(name)
-        src = leg.get("source", "")
+        srcs = legend_sources(leg)
         added = leg.get("date_added")
         modified = leg.get("date_modified")
         ld = {
@@ -698,15 +767,28 @@ def build():
             ld["datePublished"] = added
         if modified:
             ld["dateModified"] = modified
-        if src:
-            ld["isBasedOn"] = {
-                "@type": "CreativeWork",
-                "url": src,
-                "publisher": {"@type": "Organization", "name": publisher_of(src)},
-            }
+        if srcs:
+            based = [{"@type": "CreativeWork", "url": s["url"],
+                      "publisher": {"@type": "Organization", "name": s["publisher"]}}
+                     for s in srcs]
+            ld["isBasedOn"] = based[0] if len(based) == 1 else based
         jsonld = json.dumps(ld, ensure_ascii=False)
         # date_added/date_modified stay in the JSON-LD and sitemap, but are not
         # shown on the page (looked out of place).
+
+        # Sourcing block: single line for one source, a labelled list for more.
+        def src_link(s):
+            tier = f' &#183; <span class="src-tier">{esc(s["label"])}</span>' if s["label"] else ""
+            return (f'<a href="{esc(s["url"])}" target="_blank" rel="noopener">'
+                    f'{esc(s["publisher"])}</a>{tier}')
+        if not srcs:
+            sources_html = ""
+        elif len(srcs) == 1:
+            sources_html = f'<span class="src">Researched from {src_link(srcs[0])}</span>'
+        else:
+            lis = "".join(f"<li>{src_link(s)}</li>" for s in srcs)
+            sources_html = (f'<div class="sources"><span class="sources-head">Researched from:'
+                            f'</span><ul>{lis}</ul></div>')
 
         # Related legends carousel
         rel = related_map.get(name, [])
@@ -764,9 +846,7 @@ def build():
             breadcrumb=breadcrumb,
             breadcrumb_jsonld=breadcrumb_jsonld,
             maplink=esc(maplink),
-            src=esc(src),
-            srchost=esc(host_of(src)),
-            srcpub=esc(publisher_of(src)),
+            sources=sources_html,
             watermark=meta.get(leg.get("category", ""), {}).get("iconPath", ""),
             catcolour=esc(meta.get(leg.get("category", ""), {}).get("colour", "#8b3a1a")),
             ogimage=f"{BASE}/og/category-{leg.get('category', '')}.png" if leg.get("category", "") in meta else f"{BASE}/og/preview.png",

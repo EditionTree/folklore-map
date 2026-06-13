@@ -65,6 +65,23 @@ For each candidate:
 - Near-duplicate check: similar name (variant spelling, translation, alias) or same location + same creature type → flag as `"duplicate_check": "possible near-duplicate of <Name>"`.
 - No match → `"duplicate_check": "none found"`.
 
+### Step 3a — Sourcing (capture for every candidate)
+
+Populate the `sources` list, not just a single link. Aim for **at least two
+sources where the evidence supports it**, and prefer at least one stronger than
+an encyclopedia:
+
+- `primary` — original folklore record/archive (Dúchas/National Folklore Collection, a 19th-c. folklorist's text on Project Gutenberg, an original collection)
+- `heritage` — heritage record (Historic England, Canmore, National Trust, a museum)
+- `secondary` — scholarly or folklore-society secondary writing
+- `encyclopedic` — Wikipedia, Oxford Reference
+- `popular` — tourism sites, regional blogs, general-interest pieces
+
+List the strongest source first. A single encyclopedic/popular source is still
+acceptable for a `medium` candidate, but a corroborating primary/heritage source
+raises confidence. Set `publisher` only when the friendly name isn't obvious
+from the domain.
+
 ### Step 4 — Score confidence
 
 | Level | Criteria |
@@ -99,6 +116,9 @@ Write `source_snapshots/research_queue/YYYY-MM-DD_research.json` with the struct
       "lng": 0.0,
       "summary": "2–4 sentence folklore summary",
       "evidence_links": ["url1", "url2"],
+      "sources": [
+        { "url": "url", "type": "primary | secondary | heritage | encyclopedic | popular", "publisher": "optional human-readable name, e.g. Dúchas, Historic England" }
+      ],
       "confidence": "high | medium",
       "duplicate_check": "none found | possible near-duplicate of <Name>",
       "editorial_notes": "Researcher notes: source quality, caveats, suggested edits"

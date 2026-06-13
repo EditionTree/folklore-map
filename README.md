@@ -38,10 +38,31 @@ The `legends` table mirrors the fields in `legends.json`:
 | `category`   | `text`      | Defaults to `beast`                                |
 | `region`     | `text`      | Defaults to `Britain`                              |
 | `summary`    | `text`      | Short description shown on the map                |
-| `source`     | `text`      | Citation URL                                       |
+| `source`     | `text`      | Primary citation URL (also the map popup's link)   |
 | `detail`     | `text`      | Optional long-form write-up; `null` when absent    |
 | `tags`       | `text[]`    | Thematic/region tags; empty array when absent      |
 | `date_added` | `date`      | `null` for older records without a recorded date   |
+
+### Multiple sources (`sources`)
+
+Beyond the single `source` URL, an entry in `seeds.json`/`legends.json` may
+carry an optional `sources` array for richer, classified sourcing — rendered on
+the static legend page as a labelled list and emitted as multiple `isBasedOn`
+citations in the JSON-LD. It lives in the JSON only (not a Supabase column); the
+map still uses the single `source`. Each item is a URL string or an object:
+
+```json
+"sources": [
+  { "url": "https://www.duchas.ie/...", "type": "primary", "publisher": "Dúchas" },
+  { "url": "https://en.wikipedia.org/wiki/...", "type": "encyclopedic" }
+]
+```
+
+`type` is one of `primary | heritage | secondary | encyclopedic | popular`
+(shown as a small label). When `type`/`publisher` are omitted, the generator
+infers a publisher name from the host and a tier from a known-host map
+(`SOURCE_TIERS` in `generate_pages.py`), showing no label when unsure. List the
+strongest source first.
 
 Migrations live in `supabase/migrations/`. The `detail`, `tags` and
 `date_added` columns were added by

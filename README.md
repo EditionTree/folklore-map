@@ -90,6 +90,17 @@ python generate_pages.py
 The shared layout and map behaviour live in `legend-page.css` and
 `legend-page.js`. Do not edit generated files under `legends/` directly.
 
+**Editor's note (optional).** Any legend can carry a short, named editorial
+aside — a deliberate human-voice signal explaining why the legend was chosen or
+adding curator commentary. Add `editorial` (and optionally `editorial_by`, which
+defaults to "Folklore Map editors") to the legend's entry in `legend_pages.json`,
+or set the same fields directly on a seed in `seeds.json`. It renders as an
+"Editor's note" block in the article and is omitted entirely when unset.
+
+**Nearby legends** are generated automatically on every page from the four
+geographically closest entries (haversine distance, within 200 km) — no manual
+data needed.
+
 ## Clean Database Sync
 
 Use this after reviewing local seed and JSON changes:

@@ -442,6 +442,10 @@ h1{{font-family:'Marcellus',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e
 .summary-cont{{font-size:17px;margin-top:14px}}
 .cta{{display:inline-block;margin-top:26px;background:#2c1f0e;color:#f2e8d5;font-family:'Marcellus',serif;font-size:13px;letter-spacing:.08em;text-transform:uppercase;padding:12px 22px;border-radius:3px;text-decoration:none}}
 .cta:hover{{background:#8b3a1a}}
+.share-row{{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}}
+.share-btn{{font-family:'Marcellus',serif;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#8b3a1a;background:transparent;border:1px solid #b09060;border-radius:3px;padding:9px 16px;cursor:pointer;transition:background .15s,color .15s,border-color .15s}}
+.share-btn:hover{{background:#8b3a1a;color:#f2e8d5;border-color:#8b3a1a}}
+.share-status{{display:block;margin-top:8px;font-size:12px;font-style:italic;color:#5c4a2a;min-height:1.1em}}
 .src{{display:block;margin-top:18px;font-size:13px;font-style:italic;color:#5c4a2a}}
 .reviewed{{display:block;margin-top:7px;font-size:12px;font-style:italic;color:#7a6a4a}}
 .src a{{color:#8b3a1a}}
@@ -483,6 +487,11 @@ footer{{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}}
 <a class="cta" href="{maplink}">Explore on the interactive map &#8594;</a>
 <span class="src">Source: <a href="{src}" target="_blank" rel="noopener">{srchost}</a></span>
 {reviewed}
+<div class="share-row" role="group" aria-label="Share this legend">
+<button type="button" class="share-btn" id="copyLinkBtn">Copy link</button>
+<button type="button" class="share-btn" id="webShareBtn" hidden>Share&#8230;</button>
+</div>
+<span class="share-status" id="shareStatus" role="status" aria-live="polite"></span>
 <svg class="watermark" viewBox="0 0 512 512" aria-hidden="true"><path d="{watermark}" fill="currentColor"/></svg>
 </article>
 {related}
@@ -496,6 +505,35 @@ document.querySelectorAll('.carousel').forEach(function(c){{
   if(p)p.addEventListener('click',function(){{t.scrollBy({{left:-220,behavior:'smooth'}});}});
   if(n)n.addEventListener('click',function(){{t.scrollBy({{left:220,behavior:'smooth'}});}});
 }});
+(function(){{
+  var link=document.querySelector('link[rel=canonical]');
+  var url=(link&&link.href)||location.href;
+  var status=document.getElementById('shareStatus');
+  function announce(m){{ if(status) status.textContent=m; }}
+  function fallbackCopy(){{
+    try{{
+      var ta=document.createElement('textarea');
+      ta.value=url; ta.setAttribute('readonly','');
+      ta.style.position='absolute'; ta.style.left='-9999px';
+      document.body.appendChild(ta); ta.select();
+      document.execCommand('copy'); document.body.removeChild(ta);
+      announce('Link copied');
+    }}catch(e){{ announce("Couldn't copy. Press Ctrl+C to copy the address."); }}
+  }}
+  var copyBtn=document.getElementById('copyLinkBtn');
+  if(copyBtn) copyBtn.addEventListener('click',function(){{
+    if(navigator.clipboard&&navigator.clipboard.writeText){{
+      navigator.clipboard.writeText(url).then(function(){{announce('Link copied');}},fallbackCopy);
+    }} else {{ fallbackCopy(); }}
+  }});
+  var shareBtn=document.getElementById('webShareBtn');
+  if(shareBtn&&navigator.share){{
+    shareBtn.hidden=false;
+    shareBtn.addEventListener('click',function(){{
+      navigator.share({{title:document.title,url:url}}).catch(function(){{}});
+    }});
+  }}
+}})();
 </script>
 </body>
 </html>

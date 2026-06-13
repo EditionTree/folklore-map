@@ -53,6 +53,10 @@ h1{font-family:'Marcellus',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;
 .summary-cont{font-size:17px;margin-top:14px}
 .cta{display:inline-block;margin-top:26px;background:#2c1f0e;color:#f2e8d5;font-family:'Marcellus',serif;font-size:13px;letter-spacing:.08em;text-transform:uppercase;padding:12px 22px;border-radius:3px;text-decoration:none}
 .cta:hover{background:#8b3a1a}
+.share-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.share-btn{font-family:'Marcellus',serif;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#8b3a1a;background:transparent;border:1px solid #b09060;border-radius:3px;padding:9px 16px;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
+.share-btn:hover{background:#8b3a1a;color:#f2e8d5;border-color:#8b3a1a}
+.share-status{display:block;margin-top:8px;font-size:12px;font-style:italic;color:#5c4a2a;min-height:1.1em}
 .src{display:block;margin-top:18px;font-size:13px;font-style:italic;color:#5c4a2a}
 .reviewed{display:block;margin-top:7px;font-size:12px;font-style:italic;color:#7a6a4a}
 .src a{color:#8b3a1a}
@@ -94,6 +98,11 @@ footer{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}
 <a class="cta" href="https://folklorefinder.uk/map?legend=Sea%20Mither">Explore on the interactive map &#8594;</a>
 <span class="src">Source: <a href="https://en.wikipedia.org/wiki/Sea_Mither" target="_blank" rel="noopener">en.wikipedia.org</a></span>
 <span class="reviewed">Added 3 June 2026</span>
+<div class="share-row" role="group" aria-label="Share this legend">
+<button type="button" class="share-btn" id="copyLinkBtn">Copy link</button>
+<button type="button" class="share-btn" id="webShareBtn" hidden>Share&#8230;</button>
+</div>
+<span class="share-status" id="shareStatus" role="status" aria-live="polite"></span>
 <svg class="watermark" viewBox="0 0 512 512" aria-hidden="true"><path d="M319.406 75.156c-50.542.49-104.39 20.876-150.094 72.844-10.232 9.65-19.88 19.59-29.187 29.313-20.516 21.433-39.694 41.877-60.22 56.468-18.484 13.142-37.73 21.617-61 22.75v89.876c53.93-32.793 59.934-67.832 115.595-136.312 6.38-6.524 12.727-13.19 19.125-19.875 9.96-10.407 20.016-20.803 30.563-30.657 46.422-36.83 92.022-27.93 107.218 2.5 4.6-49.27 57.958-30.564 66.813 18.875 6.91-33.696 20.327-44.354 34.03-31.625-28.136 49.585-26.61 110.87-8.406 164.937 20.51 60.915 61.743 114.13 110.344 133.75v-20.563c-38.34-19.194-74.662-65.71-92.657-119.156-15.937-47.336-17.777-99.07 2.75-141.655 8.492 16.92 16.342 43.406 21.94 79.53 17.992-84.587 54.762-72.463 56.624-10.593 42.998-66.287-52.197-161.48-163.438-160.406zm-35.656 95.78C194.225 181.69 66.158 359.648 43.625 494.97h91.25c1.02-133.954 71.114-282.045 148.875-324.033zm32.406 13.69c-76.76 49.056-114.574 208.732-109.812 310.343h78.437c-41.213-80.74-23.207-252.666 31.376-310.345zm21.875 26.218c-34.686 82.23-25.705 191.077 25.158 284.125h78c-75.605-53.774-120.09-190.455-103.157-284.126z" fill="currentColor"/></svg>
 </article>
 <section class="related"><div class="related-head">Related Legends</div><div class="carousel"><button class="carousel-btn prev" type="button" aria-label="Scroll left">&#8249;</button><div class="carousel-track"><a class="rel-card" href="https://folklorefinder.uk/legends/finfolk"><span class="rel-cat" style="background:#1a5a6a">Aquatic Legends</span><span class="rel-name">Finfolk</span><span class="rel-region">Orkney</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/orkneyinga-saga"><span class="rel-cat" style="background:#5a3a18">Sacred Sites</span><span class="rel-name">Orkneyinga Saga</span><span class="rel-region">Orkney &amp; Shetland</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/teran"><span class="rel-cat" style="background:#1a5a6a">Aquatic Legends</span><span class="rel-name">Teran</span><span class="rel-region">Orkney</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/nuckelavee"><span class="rel-cat" style="background:#1a5a6a">Aquatic Legends</span><span class="rel-name">Nuckelavee</span><span class="rel-region">Orkney</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/selkies-of-orkney"><span class="rel-cat" style="background:#1a5a6a">Aquatic Legends</span><span class="rel-name">Selkies of Orkney</span><span class="rel-region">Orkney</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/veasta"><span class="rel-cat" style="background:#1a5a6a">Aquatic Legends</span><span class="rel-name">Veasta</span><span class="rel-region">Orkney</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/stronsay-beast"><span class="rel-cat" style="background:#2d6a8a">Beasts</span><span class="rel-name">Stronsay Beast</span><span class="rel-region">Stronsay, Orkney, Scotland</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/janet-forsyth-the-westray-storm-witch"><span class="rel-cat" style="background:#3a2a4e">Witches</span><span class="rel-name">Janet Forsyth, the Westray Storm Witch</span><span class="rel-region">Westray, Orkney, Scotland</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/stoor-worm"><span class="rel-cat" style="background:#8b2a1a">Dragons</span><span class="rel-name">Stoor Worm</span><span class="rel-region">Caithness, Scotland</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/great-silkie-of-sule-skerry"><span class="rel-cat" style="background:#1a5a6a">Aquatic Legends</span><span class="rel-name">Great Silkie of Sule Skerry</span><span class="rel-region">Orkney, Scotland</span></a></div><button class="carousel-btn next" type="button" aria-label="Scroll right">&#8250;</button></div></section>
@@ -107,6 +116,35 @@ document.querySelectorAll('.carousel').forEach(function(c){
   if(p)p.addEventListener('click',function(){t.scrollBy({left:-220,behavior:'smooth'});});
   if(n)n.addEventListener('click',function(){t.scrollBy({left:220,behavior:'smooth'});});
 });
+(function(){
+  var link=document.querySelector('link[rel=canonical]');
+  var url=(link&&link.href)||location.href;
+  var status=document.getElementById('shareStatus');
+  function announce(m){ if(status) status.textContent=m; }
+  function fallbackCopy(){
+    try{
+      var ta=document.createElement('textarea');
+      ta.value=url; ta.setAttribute('readonly','');
+      ta.style.position='absolute'; ta.style.left='-9999px';
+      document.body.appendChild(ta); ta.select();
+      document.execCommand('copy'); document.body.removeChild(ta);
+      announce('Link copied');
+    }catch(e){ announce("Couldn't copy. Press Ctrl+C to copy the address."); }
+  }
+  var copyBtn=document.getElementById('copyLinkBtn');
+  if(copyBtn) copyBtn.addEventListener('click',function(){
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(url).then(function(){announce('Link copied');},fallbackCopy);
+    } else { fallbackCopy(); }
+  });
+  var shareBtn=document.getElementById('webShareBtn');
+  if(shareBtn&&navigator.share){
+    shareBtn.hidden=false;
+    shareBtn.addEventListener('click',function(){
+      navigator.share({title:document.title,url:url}).catch(function(){});
+    });
+  }
+})();
 </script>
 </body>
 </html>

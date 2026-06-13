@@ -53,6 +53,10 @@ h1{font-family:'Marcellus',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;
 .summary-cont{font-size:17px;margin-top:14px}
 .cta{display:inline-block;margin-top:26px;background:#2c1f0e;color:#f2e8d5;font-family:'Marcellus',serif;font-size:13px;letter-spacing:.08em;text-transform:uppercase;padding:12px 22px;border-radius:3px;text-decoration:none}
 .cta:hover{background:#8b3a1a}
+.share-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.share-btn{font-family:'Marcellus',serif;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#8b3a1a;background:transparent;border:1px solid #b09060;border-radius:3px;padding:9px 16px;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
+.share-btn:hover{background:#8b3a1a;color:#f2e8d5;border-color:#8b3a1a}
+.share-status{display:block;margin-top:8px;font-size:12px;font-style:italic;color:#5c4a2a;min-height:1.1em}
 .src{display:block;margin-top:18px;font-size:13px;font-style:italic;color:#5c4a2a}
 .reviewed{display:block;margin-top:7px;font-size:12px;font-style:italic;color:#7a6a4a}
 .src a{color:#8b3a1a}
@@ -94,6 +98,11 @@ footer{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}
 <a class="cta" href="https://folklorefinder.uk/map?legend=Merlin%27s%20Oak">Explore on the interactive map &#8594;</a>
 <span class="src">Source: <a href="https://en.wikipedia.org/wiki/Merlin%27s_Oak" target="_blank" rel="noopener">en.wikipedia.org</a></span>
 <span class="reviewed">Added 3 June 2026</span>
+<div class="share-row" role="group" aria-label="Share this legend">
+<button type="button" class="share-btn" id="copyLinkBtn">Copy link</button>
+<button type="button" class="share-btn" id="webShareBtn" hidden>Share&#8230;</button>
+</div>
+<span class="share-status" id="shareStatus" role="status" aria-live="polite"></span>
 <svg class="watermark" viewBox="0 0 512 512" aria-hidden="true"><path d="M436 26.98 285.9 63.63l-.5.1c-55.8 7.67-118.7 11.48-199.56 4.93L19.18 116.4l54.99 40.2L482.2 125l10.6-29.75c-4.3-5.21-7.9-10.15-11.7-15.12l-60.4 23.77-43.2-11.41 94-26.19C462.1 52.2 452 38.8 436 26.98zM290.7 90.3l-7.2 21.7H136.3l-57.42 5.3 26.72-21.32zm169.6 54.8-40 1.1-17.1 90-14.5 20.9-15.5-41.6 30-68.9-9.7.3-39.2 60.4c-3.1 87.2-22.3 176.8-7.6 265.4 19 7.3 40.7 9.7 61.5 10.2L401 358.3l22.5-33 1.5 95.8 27.5 60.1c10.8-1.1 21.6-2.5 34.4-4.9l-36.1-154.2zm-330.7 28-34.48 2.7-38.78 219 9.33 77.9c6.7 4.3 13.59 6.6 20.5 8.1l-8.99-101.6 12.18-43.3 2.16 81.7 15.38 66.5c22.6 2.4 45.9.1 66.4-5.1l-5.6-173.6z" fill="currentColor"/></svg>
 </article>
 <section class="related"><div class="related-head">Related Legends</div><div class="carousel"><button class="carousel-btn prev" type="button" aria-label="Scroll left">&#8249;</button><div class="carousel-track"><a class="rel-card" href="https://folklorefinder.uk/legends/merlin"><span class="rel-cat" style="background:#6a3a2a">Legendary Figures</span><span class="rel-name">Merlin</span><span class="rel-region">Wales &amp; Britain</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/bleeding-yew-of-nevern"><span class="rel-cat" style="background:#5a3a18">Sacred Sites</span><span class="rel-name">Bleeding Yew of Nevern</span><span class="rel-region">Pembrokeshire, Wales</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/craig-y-ddinas"><span class="rel-cat" style="background:#6a3a2a">Legendary Figures</span><span class="rel-name">Craig y Ddinas</span><span class="rel-region">Pontneddfechan, Neath, Wales</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/nanteos-cup"><span class="rel-cat" style="background:#5a3a18">Sacred Sites</span><span class="rel-name">Nanteos Cup</span><span class="rel-region">Ceredigion, Wales</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/caerleon"><span class="rel-cat" style="background:#5a3a18">Sacred Sites</span><span class="rel-name">Caerleon</span><span class="rel-region">Caerleon, Newport, Wales</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/sir-kay"><span class="rel-cat" style="background:#6a3a2a">Legendary Figures</span><span class="rel-name">Sir Kay</span><span class="rel-region">Gwynedd, Wales</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/sir-percival"><span class="rel-cat" style="background:#6a3a2a">Legendary Figures</span><span class="rel-name">Sir Percival</span><span class="rel-region">Denbighshire, Wales</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/y-ddraig-goch"><span class="rel-cat" style="background:#8b2a1a">Dragons</span><span class="rel-name">Y Ddraig Goch</span><span class="rel-region">Snowdonia, Wales</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/bossiney-castle"><span class="rel-cat" style="background:#5a3a18">Sacred Sites</span><span class="rel-name">Bossiney Castle</span><span class="rel-region">Cornwall</span></a><a class="rel-card" href="https://folklorefinder.uk/legends/merlin-s-cave"><span class="rel-cat" style="background:#5a3a18">Sacred Sites</span><span class="rel-name">Merlin&#x27;s Cave</span><span class="rel-region">Cornwall</span></a></div><button class="carousel-btn next" type="button" aria-label="Scroll right">&#8250;</button></div></section>
@@ -107,6 +116,35 @@ document.querySelectorAll('.carousel').forEach(function(c){
   if(p)p.addEventListener('click',function(){t.scrollBy({left:-220,behavior:'smooth'});});
   if(n)n.addEventListener('click',function(){t.scrollBy({left:220,behavior:'smooth'});});
 });
+(function(){
+  var link=document.querySelector('link[rel=canonical]');
+  var url=(link&&link.href)||location.href;
+  var status=document.getElementById('shareStatus');
+  function announce(m){ if(status) status.textContent=m; }
+  function fallbackCopy(){
+    try{
+      var ta=document.createElement('textarea');
+      ta.value=url; ta.setAttribute('readonly','');
+      ta.style.position='absolute'; ta.style.left='-9999px';
+      document.body.appendChild(ta); ta.select();
+      document.execCommand('copy'); document.body.removeChild(ta);
+      announce('Link copied');
+    }catch(e){ announce("Couldn't copy. Press Ctrl+C to copy the address."); }
+  }
+  var copyBtn=document.getElementById('copyLinkBtn');
+  if(copyBtn) copyBtn.addEventListener('click',function(){
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(url).then(function(){announce('Link copied');},fallbackCopy);
+    } else { fallbackCopy(); }
+  });
+  var shareBtn=document.getElementById('webShareBtn');
+  if(shareBtn&&navigator.share){
+    shareBtn.hidden=false;
+    shareBtn.addEventListener('click',function(){
+      navigator.share({title:document.title,url:url}).catch(function(){});
+    });
+  }
+})();
 </script>
 </body>
 </html>

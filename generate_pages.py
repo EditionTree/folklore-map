@@ -397,6 +397,34 @@ def host_of(url):
         return "source"
 
 
+# Human-readable publisher names for the sources we cite. Unmapped hosts fall
+# back to the bare hostname, so this only needs the common/known ones.
+PUBLISHERS = {
+    "en.wikipedia.org": "Wikipedia",
+    "historic-uk.com": "Historic UK",
+    "gutenberg.org": "Project Gutenberg",
+    "mysteriousbritain.co.uk": "Mysterious Britain & Ireland",
+    "atlasobscura.com": "Atlas Obscura",
+    "nationaltrust.org.uk": "National Trust",
+    "transceltic.com": "Transceltic",
+    "greatbritishlife.co.uk": "Great British Life",
+    "duchas.ie": "Dúchas (National Folklore Collection of Ireland)",
+    "jerseyheritage.org": "Jersey Heritage",
+    "folklorethursday.com": "Folklore Thursday",
+    "visitwales.com": "Visit Wales",
+    "oxfordreference.com": "Oxford Reference",
+    "irishcentral.com": "IrishCentral",
+    "historicengland.org.uk": "Historic England",
+    "canmore.org.uk": "Canmore",
+    "lincolnshirefolktalesproject.com": "Lincolnshire Folk Tales Project",
+}
+
+
+def publisher_of(url):
+    """Friendly publisher name for a source URL, or the bare host if unmapped."""
+    return PUBLISHERS.get(host_of(url), host_of(url))
+
+
 PAGE = """<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -494,7 +522,7 @@ footer{{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}}
 <div class="region">{region}</div>
 {body}
 <a class="cta" href="{maplink}">Explore on the interactive map &#8594;</a>
-<span class="src">Source: <a href="{src}" target="_blank" rel="noopener">{srchost}</a></span>
+<span class="src">Researched from <a href="{src}" target="_blank" rel="noopener">{srcpub}</a></span>
 <div class="share-row" role="group" aria-label="Share this legend">
 <button type="button" class="share-btn" id="copyLinkBtn">Copy link</button>
 <button type="button" class="share-btn" id="webShareBtn" hidden>Share&#8230;</button>
@@ -670,6 +698,12 @@ def build():
             ld["datePublished"] = added
         if modified:
             ld["dateModified"] = modified
+        if src:
+            ld["isBasedOn"] = {
+                "@type": "CreativeWork",
+                "url": src,
+                "publisher": {"@type": "Organization", "name": publisher_of(src)},
+            }
         jsonld = json.dumps(ld, ensure_ascii=False)
         # date_added/date_modified stay in the JSON-LD and sitemap, but are not
         # shown on the page (looked out of place).
@@ -732,6 +766,7 @@ def build():
             maplink=esc(maplink),
             src=esc(src),
             srchost=esc(host_of(src)),
+            srcpub=esc(publisher_of(src)),
             watermark=meta.get(leg.get("category", ""), {}).get("iconPath", ""),
             catcolour=esc(meta.get(leg.get("category", ""), {}).get("colour", "#8b3a1a")),
             ogimage=f"{BASE}/og/category-{leg.get('category', '')}.png" if leg.get("category", "") in meta else f"{BASE}/og/preview.png",

@@ -811,6 +811,51 @@
         "Setting": "Highland wilderness",
         "Protection": "Iron"
       }
+    },
+    "Gawain": {
+      "priority": 55,
+      "image": "legend-images/gawain-hero.jpg",
+      "alt": "Gawain in mail standing at the Green Chapel at sunrise with a green girdle tied around his waist",
+      "caption": "A visual interpretation of Gawain after the Green Knight's test",
+      "map_title": "Scotland and Arthurian Britain",
+      "section_heading": "The knight whose honour was tested",
+      "pullquote": "His strange bargain with the Green Knight tested not his sword arm but his honour.",
+      "facts": {
+        "Tradition": "Arthurian legend",
+        "Role": "Knight of the Round Table",
+        "Motif": "The Green Knight's bargain",
+        "Gift": "Strength that waxed with the sun"
+      }
+    },
+    "Sir Percival": {
+      "priority": 56,
+      "image": "legend-images/sir-percival-hero.jpg",
+      "alt": "Percival watching a solemn cup and spear procession pass through a candlelit medieval hall",
+      "caption": "A visual interpretation of Percival at the Grail castle",
+      "map_title": "Denbighshire, Wales",
+      "section_heading": "The question left unasked",
+      "pullquote": "He was the first to reach the Grail castle - and asked the wrong question, or failed to ask any at all.",
+      "facts": {
+        "Tradition": "Arthurian legend",
+        "Role": "Knight of the Round Table",
+        "Upbringing": "Raised in the wilderness",
+        "Quest": "The Grail castle"
+      }
+    },
+    "Mordred": {
+      "priority": 57,
+      "image": "legend-images/mordred-hero.jpg",
+      "alt": "Mordred in weathered mail holding an iron crown amid the abandoned shields of Camlann",
+      "caption": "A visual interpretation of Mordred at the end of the Round Table",
+      "map_title": "East Lothian, Scotland",
+      "section_heading": "The man who ended the Round Table",
+      "pullquote": "The one who ends the Round Table, and cannot be entirely condemned for it.",
+      "facts": {
+        "Tradition": "Arthurian legend",
+        "Relation": "Arthur's nephew or son",
+        "Battle": "Camlann",
+        "Motif": "The fall of the Round Table"
+      }
     }
   }
 }

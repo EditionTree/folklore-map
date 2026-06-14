@@ -721,6 +721,51 @@
         "Setting": "Bodmin Moor",
         "Status": "Sightings remain unconfirmed"
       }
+    },
+    "Kraken": {
+      "priority": 49,
+      "image": "legend-images/kraken-hero.jpg",
+      "alt": "A colossal many-armed sea creature surfacing like an island near a sailing vessel off Orkney",
+      "caption": "A visual interpretation of the Kraken revealing itself beneath the Orkney waves",
+      "map_title": "Orkney",
+      "section_heading": "The island that moved",
+      "pullquote": "Norse sagas describe it as large enough to be mistaken for an island.",
+      "facts": {
+        "Tradition": "Norse sea legend",
+        "Type": "Many-armed sea creature",
+        "Setting": "Orkney waters",
+        "Motif": "Mistaken for an island"
+      }
+    },
+    "Lancelot": {
+      "priority": 50,
+      "image": "legend-images/lancelot-hero.jpg",
+      "alt": "Lancelot in weathered mail standing beside his horse on a misty lakeside causeway at dawn",
+      "caption": "A visual interpretation of Lancelot divided between loyalty and love",
+      "map_title": "Arthurian Britain",
+      "section_heading": "The knight divided against himself",
+      "pullquote": "The greatest knight of the Round Table and Arthur's closest companion - until love for Guinevere destroyed both.",
+      "facts": {
+        "Tradition": "Arthurian legend",
+        "Role": "Knight of the Round Table",
+        "Raised by": "The Lady of the Lake",
+        "Motif": "Love and divided loyalty"
+      }
+    },
+    "Arawn": {
+      "priority": 51,
+      "image": "legend-images/arawn-hero.jpg",
+      "alt": "Arawn standing with a white hunting hound in a luminous, misted Welsh Otherworld landscape",
+      "caption": "A visual interpretation of Arawn as the regal king of Annwn",
+      "map_title": "Wales",
+      "section_heading": "The king beyond the mortal world",
+      "pullquote": "He is not a devil, but a ruler of another order of being.",
+      "facts": {
+        "Tradition": "Welsh mythology",
+        "Role": "King of Annwn",
+        "Source": "First Branch of the Mabinogi",
+        "Motif": "Exchange of places with Pwyll"
+      }
     }
   }
 }

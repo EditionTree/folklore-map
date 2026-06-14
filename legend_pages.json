@@ -316,6 +316,321 @@
         "Setting": "Winter sky and moorland",
         "Motif": "Portent of disaster"
       }
+    },
+    "Giant's Causeway": {
+      "priority": 22,
+      "image": "legend-images/giants-causeway-hero.jpg",
+      "alt": "Fionn mac Cumhaill watching a far larger giant approach across the wet basalt columns of the Antrim coast",
+      "caption": "A visual interpretation of Fionn and Benandonner at the Giant's Causeway",
+      "map_title": "Giant's Causeway, County Antrim",
+      "section_heading": "The giant across the sea",
+      "pullquote": "Reasoning that if the infant was this size, its father must be a giant beyond anything he could survive, Benandonner fled.",
+      "facts": {
+        "Tradition": "Irish folklore",
+        "Type": "Legendary stone road",
+        "Setting": "County Antrim",
+        "Motif": "A giant outwitted"
+      }
+    },
+    "Cú Chulainn": {
+      "priority": 23,
+      "image": "legend-images/cu-chulainn-hero.jpg",
+      "alt": "Cú Chulainn standing alone with spear and shield in a rain-dark Irish river ford as an army waits beyond",
+      "caption": "A visual interpretation of Cú Chulainn holding the ford",
+      "map_title": "County Sligo, Ireland",
+      "section_heading": "The warrior at the ford",
+      "pullquote": "He holds the ford alone, fighting single combats by day and recovering by night.",
+      "facts": {
+        "Tradition": "Ulster Cycle",
+        "Type": "Heroic warrior",
+        "Setting": "Ancient Ireland",
+        "Motif": "Battle-fury and sacrifice"
+      }
+    },
+    "Selkies of Orkney": {
+      "priority": 24,
+      "image": "legend-images/selkies-of-orkney-hero.jpg",
+      "alt": "A woman kneeling beside a grey seal skin on a cold Orkney shore while a seal watches from the shallows",
+      "caption": "A visual interpretation of the selkie tradition in Orkney",
+      "map_title": "Orkney",
+      "section_heading": "The skin beside the sea",
+      "pullquote": "If a fisherman steals a selkie's skin, she cannot return to the sea and must live as his wife — yearning always for the ocean.",
+      "facts": {
+        "Tradition": "Northern Scottish folklore",
+        "Type": "Seal shapeshifter",
+        "Setting": "Orkney coast",
+        "Motif": "Captivity and longing"
+      }
+    },
+    "Herne the Hunter": {
+      "priority": 25,
+      "image": "legend-images/herne-the-hunter-hero.jpg",
+      "alt": "A horned spectral huntsman dissolving into mist and leaves as phantom hounds and riders cross Windsor Great Park",
+      "caption": "A visual interpretation of Herne the Hunter and his phantom hunt",
+      "map_title": "Windsor Great Park, Berkshire",
+      "section_heading": "The ghost beneath the oak",
+      "pullquote": "He now haunts it as a ghost with great ragged horns, blasting the trees and taking cattle.",
+      "facts": {
+        "Tradition": "English ghost lore",
+        "Type": "Horned spectral huntsman",
+        "Setting": "Windsor Great Park",
+        "Motif": "The phantom hunt"
+      }
+    },
+    "Nuckelavee": {
+      "priority": 26,
+      "image": "legend-images/nuckelavee-hero.jpg",
+      "alt": "A skinless horse demon fused with a long-armed human torso emerging from the stormy sea on an Orkney shore",
+      "caption": "A visual interpretation of the dreaded Orcadian Nuckelavee",
+      "map_title": "Orkney",
+      "section_heading": "The demon from the sea",
+      "pullquote": "Its very breath blighted crops, sickened livestock and brought the wasting epidemic the islanders called mortasheen.",
+      "facts": {
+        "Tradition": "Orcadian folklore",
+        "Type": "Sea demon",
+        "Setting": "Orkney coast",
+        "Motif": "Plague and famine"
+      }
+    },
+    "Brownie": {
+      "priority": 27,
+      "image": "legend-images/brownie-hero.jpg",
+      "alt": "A small shaggy household spirit with oversized hands working a wooden churn beside a Scottish farmhouse hearth",
+      "caption": "A visual interpretation of the Scottish Brownie at its night work",
+      "map_title": "Scotland and Northern England",
+      "section_heading": "The work done by night",
+      "pullquote": "He asks no wage, only a bowl of cream or a fresh bannock left quietly by the hearth.",
+      "facts": {
+        "Tradition": "Scottish and northern English folklore",
+        "Type": "Household spirit",
+        "Setting": "Farm and hearth",
+        "Motif": "Secret night labour"
+      }
+    },
+    "Redcap": {
+      "priority": 28,
+      "image": "legend-images/redcap-hero.jpg",
+      "alt": "A squat red-eyed goblin with iron claws and boots crouching inside a rain-dark ruined Scottish border tower",
+      "caption": "A visual interpretation of the murderous Redcap of the Scottish Borders",
+      "map_title": "Scottish Borders",
+      "section_heading": "The goblin in the ruined keep",
+      "pullquote": "Should the blood in his cap ever dry, he will die.",
+      "facts": {
+        "Tradition": "Scottish Borders folklore",
+        "Type": "Murderous goblin",
+        "Setting": "Ruined peel towers",
+        "Motif": "The blood-red cap"
+      }
+    },
+    "Puck": {
+      "priority": 29,
+      "image": "legend-images/puck-hero.jpg",
+      "alt": "An ancient horned woodland spirit with bark-like skin standing in a mossy sunken lane in the Sussex Weald",
+      "caption": "A visual interpretation of Puck as an ancient spirit of the Sussex Weald",
+      "map_title": "East Sussex",
+      "section_heading": "The oldest Old Thing",
+      "pullquote": "An ancient spirit of place tied to the Sussex Weald, known since before the Normans came.",
+      "facts": {
+        "Tradition": "English folklore",
+        "Type": "Spirit of place",
+        "Setting": "Sussex Weald",
+        "Motif": "England's deep memory"
+      }
+    },
+    "Bodach": {
+      "priority": 30,
+      "image": "legend-images/bodach-hero.jpg",
+      "alt": "A long-limbed soot and smoke apparition descending through the chimney of a dark Highland blackhouse",
+      "caption": "A visual interpretation of the Highland Bodach entering through the chimney",
+      "map_title": "Highland Scotland",
+      "section_heading": "The shadow above the hearth",
+      "pullquote": "He is not a ghost or a fairy in the usual sense but something more elemental: a presence associated with darkness, threat, and the small hours.",
+      "facts": {
+        "Tradition": "Scottish Gaelic folklore",
+        "Type": "Domestic night spirit",
+        "Setting": "Highland homes",
+        "Motif": "Terror and death omen"
+      }
+    },
+    "Each-Uisge": {
+      "priority": 31,
+      "image": "legend-images/each-uisge-hero.jpg",
+      "alt": "A weed-draped grey water horse standing at the edge of a misty Highland loch in Argyll",
+      "caption": "A visual interpretation of the Each-Uisge waiting beside a Highland loch",
+      "map_title": "Argyll, Scotland",
+      "section_heading": "The glamour at the water's edge",
+      "pullquote": "Those who mounted it could not dismount as it plunged into the depths.",
+      "facts": {
+        "Tradition": "Scottish Highland folklore",
+        "Type": "Water horse",
+        "Setting": "Highland lochs",
+        "Defence": "Iron or horsehair"
+      }
+    },
+    "Jenny Greenteeth": {
+      "priority": 32,
+      "image": "legend-images/jenny-greenteeth-hero.jpg",
+      "alt": "A green-skinned river hag with pondweed hair emerging from a still Lancashire pond",
+      "caption": "A visual interpretation of Jenny Greenteeth beneath a weed-covered pond",
+      "map_title": "Lancashire",
+      "section_heading": "The hag beneath still water",
+      "pullquote": "She drags the unwary - particularly children - to their deaths in the depths.",
+      "facts": {
+        "Tradition": "Lancashire folklore",
+        "Type": "River hag",
+        "Setting": "Ponds and slow rivers",
+        "Motif": "Danger beneath the surface"
+      }
+    },
+    "Blue Men of the Minch": {
+      "priority": 33,
+      "image": "legend-images/blue-men-of-the-minch-hero.jpg",
+      "alt": "Blue-grey sea beings rising from Atlantic waves between the Hebridean islands as a sailing ship passes",
+      "caption": "A visual interpretation of the Blue Men challenging a vessel in the Minch",
+      "map_title": "The Minch, Outer Hebrides",
+      "section_heading": "The challenge in the storm",
+      "pullquote": "They challenge passing captains to a battle of rhyming verse - fail and they drag the vessel under.",
+      "facts": {
+        "Tradition": "Hebridean folklore",
+        "Type": "Storm kelpies",
+        "Setting": "Lewis and the Shiant Isles",
+        "Motif": "A battle of rhyming verse"
+      }
+    },
+    "Abhartach": {
+      "priority": 34,
+      "image": "legend-images/abhartach-hero.jpg",
+      "alt": "An earth-stained dwarf-magician revenant standing beside a disturbed stone burial monument in Slaghtaverty",
+      "caption": "A visual interpretation of Abhartach returning from his burial at Slaghtaverty",
+      "map_title": "Slaghtaverty, County Londonderry",
+      "section_heading": "The magician who would not stay buried",
+      "pullquote": "A cruel dwarf-magician who repeatedly returned after burial.",
+      "facts": {
+        "Tradition": "Irish revenant legend",
+        "Type": "Dwarf-magician",
+        "Setting": "Slaghtaverty",
+        "Defeat": "Buried upside-down beneath stone"
+      }
+    },
+    "Afanc": {
+      "priority": 35,
+      "image": "legend-images/afanc-hero.jpg",
+      "alt": "A chained amphibious lake monster with wet fur, scales and a powerful tail on a Gwynedd shore",
+      "caption": "A visual interpretation of the Afanc bound beside a Welsh mountain lake",
+      "map_title": "Gwynedd, Wales",
+      "section_heading": "The monster drawn from the lake",
+      "pullquote": "A shape-shifting water monster that haunted Welsh lakes.",
+      "facts": {
+        "Tradition": "Welsh folklore",
+        "Type": "Shape-shifting water monster",
+        "Setting": "Welsh lakes",
+        "Motif": "Lured ashore and chained"
+      }
+    },
+    "Balor of the Evil Eye": {
+      "priority": 36,
+      "image": "legend-images/balor-of-the-evil-eye-hero.jpg",
+      "alt": "Four warriors straining to lift the single glowing eye of the giant Balor on a windswept Tory Island battlefield",
+      "caption": "A visual interpretation of Balor's deadly eye being opened for battle",
+      "map_title": "Tory Island, County Donegal",
+      "section_heading": "The eye that killed all it saw",
+      "pullquote": "It took four men to lift his eyelid in battle.",
+      "facts": {
+        "Tradition": "Irish mythology",
+        "Role": "King of the Fomorians",
+        "Setting": "Tory Island",
+        "Downfall": "Slain by his grandson Lugh"
+      }
+    },
+    "Aillen mac Midgna": {
+      "priority": 37,
+      "image": "legend-images/aillen-mac-midgna-hero.jpg",
+      "alt": "An otherworldly musician playing before sleeping defenders as Tara's timber hall burns on Samhain night",
+      "caption": "A visual interpretation of Aillen enchanting the defenders of Tara",
+      "map_title": "Hill of Tara, County Meath",
+      "section_heading": "The music before the fire",
+      "pullquote": "Each Samhain, Aillen mac Midgna lulled the defenders of Tara to sleep with enchanted music before burning the royal hall.",
+      "facts": {
+        "Tradition": "Irish mythology",
+        "Type": "Otherworldly musician",
+        "Setting": "Hill of Tara",
+        "Defeat": "Slain by Fionn mac Cumhaill"
+      }
+    },
+    "Alderley Edge": {
+      "priority": 38,
+      "image": "legend-images/alderley-edge-hero.jpg",
+      "alt": "An old guide leading a farmer and white horse into a sandstone cavern where Arthur and his knights sleep",
+      "caption": "A visual interpretation of the sleeping king beneath Alderley Edge",
+      "map_title": "Alderley Edge, Cheshire",
+      "section_heading": "The knights beneath the hill",
+      "pullquote": "Arthur and his knights sleep beneath the rock until Britain needs them.",
+      "facts": {
+        "Tradition": "Cheshire folklore",
+        "Type": "Sleeping king legend",
+        "Setting": "Sandstone escarpment",
+        "Motif": "The hidden king"
+      }
+    },
+    "Alice Kyteler": {
+      "priority": 39,
+      "image": "legend-images/alice-kyteler-hero.jpg",
+      "alt": "Alice Kyteler beside herbs and a stone mortar in a medieval Kilkenny townhouse as a black dog waits in shadow",
+      "caption": "A visual interpretation of the accusations surrounding Alice Kyteler in medieval Kilkenny",
+      "map_title": "Kilkenny, County Kilkenny",
+      "section_heading": "The case that shook Kilkenny",
+      "pullquote": "Her own stepchildren accused her of poisoning each of her four husbands.",
+      "facts": {
+        "Period": "Early 14th century",
+        "Role": "Wealthy Kilkenny merchant",
+        "Case": "Early witchcraft prosecution",
+        "Alleged familiar": "Robin Artisson"
+      }
+    },
+    "Blackbeard": {
+      "priority": 40,
+      "image": "legend-images/blackbeard-hero.jpg",
+      "alt": "Blackbeard standing on a weathered sailing ship at dawn with smoking match cords beneath his hat",
+      "caption": "A visual interpretation of Blackbeard's fearsome image at sea",
+      "map_title": "Bristol",
+      "section_heading": "The pirate who became a legend",
+      "pullquote": "His fearsome image outgrew his short career.",
+      "facts": {
+        "Historical name": "Edward Teach",
+        "Type": "Pirate and folklore figure",
+        "Possible birthplace": "Bristol",
+        "Legend": "Buried treasure and a headless spirit"
+      }
+    },
+    "Boudicca": {
+      "priority": 41,
+      "image": "legend-images/boudicca-hero.jpg",
+      "alt": "Boudicca commanding Iceni warriors from a two-horse chariot beneath a storm-lit East Anglian sky",
+      "caption": "A visual interpretation of Boudicca leading the revolt against Rome",
+      "map_title": "Norfolk, East Anglia",
+      "section_heading": "The queen who defied Rome",
+      "pullquote": "She united the Iceni with the Trinovantes of Essex.",
+      "facts": {
+        "Period": "60 or 61 AD",
+        "Role": "Queen of the Iceni",
+        "Setting": "Roman Britain",
+        "Legacy": "Symbol of resistance"
+      }
+    },
+    "Unicorn": {
+      "priority": 42,
+      "image": "legend-images/unicorn-hero.jpg",
+      "alt": "A powerful silver-grey unicorn with a broken iron chain standing in a sunlit Scottish glen",
+      "caption": "A visual interpretation of Scotland's proud and untameable unicorn",
+      "map_title": "Scotland",
+      "section_heading": "The beast too wild for kings",
+      "pullquote": "In Scottish heraldry, the unicorn is always shown chained, because an unchained unicorn is too dangerous and too free to be trusted near a king.",
+      "facts": {
+        "Tradition": "Scottish heraldry",
+        "Type": "Mythical beast",
+        "Status": "National animal of Scotland",
+        "Motif": "Proud untameability"
+      }
     }
   }
 }

@@ -676,6 +676,51 @@
         "Traditional birthplace": "Near Cork",
         "Legacy": "Books, songs, theatre and screen"
       }
+    },
+    "Leprechaun": {
+      "priority": 46,
+      "image": "legend-images/leprechaun-hero.jpg",
+      "alt": "A small, weathered fairy shoemaker working at a leather shoe in a hidden workshop beneath a hawthorn bank",
+      "caption": "A visual interpretation of the solitary leprechaun at his shoemaker's bench",
+      "map_title": "Ireland",
+      "section_heading": "The shoemaker with hidden treasure",
+      "pullquote": "A solitary fairy shoemaker famous for hidden treasure and impossible bargains.",
+      "facts": {
+        "Tradition": "Irish folklore",
+        "Type": "Solitary fairy",
+        "Craft": "Shoemaker",
+        "Motif": "Treasure and trickery"
+      }
+    },
+    "Morgan le Fay": {
+      "priority": 47,
+      "image": "legend-images/morgan-le-fay-hero.jpg",
+      "alt": "Morgan le Fay standing beside a rain-filled stone basin above the sea near Tintagel at dawn",
+      "caption": "A visual interpretation of Morgan le Fay as healer, enchantress and otherworldly protector",
+      "map_title": "Tintagel, Cornwall",
+      "section_heading": "The enchantress who changes with the tale",
+      "pullquote": "Her character shifts between healer, magical adversary and Arthur's otherworldly protector.",
+      "facts": {
+        "Tradition": "Arthurian legend",
+        "Type": "Enchantress and healer",
+        "Setting": "Tintagel and Avalon",
+        "Motif": "Ambiguous otherworldly power"
+      }
+    },
+    "Beast of Bodmin": {
+      "priority": 48,
+      "image": "legend-images/beast-of-bodmin-hero.jpg",
+      "alt": "A large black panther-like cat moving through wet bracken beneath the granite tors of Bodmin Moor",
+      "caption": "A visual interpretation of a Beast of Bodmin sighting at dusk",
+      "map_title": "Bodmin Moor, Cornwall",
+      "section_heading": "The cat in the Cornish dusk",
+      "pullquote": "Official investigations found no conclusive evidence, yet sightings persist to this day.",
+      "facts": {
+        "Tradition": "Modern British cryptid folklore",
+        "Type": "Phantom big cat",
+        "Setting": "Bodmin Moor",
+        "Status": "Sightings remain unconfirmed"
+      }
     }
   }
 }

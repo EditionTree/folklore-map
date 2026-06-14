@@ -279,6 +279,11 @@ TOPNAV_CSS = (
     "transition:background .15s,color .15s}"
     ".topnav a:hover{color:#f2e8d5;background:rgba(196,98,42,0.18)}"
     ".topnav a.active{color:#c4622a}"
+    # Mobile: one horizontally-scrolling row instead of wrapping to two lines.
+    "@media(max-width:640px){.topnav{flex-wrap:nowrap;overflow-x:auto;"
+    "justify-content:flex-start;scrollbar-width:none}"
+    ".topnav::-webkit-scrollbar{display:none}"
+    ".topnav a{flex:0 0 auto;white-space:nowrap}}"
 )
 
 TOPNAV_ITEMS = [

@@ -991,6 +991,96 @@
         "Setting": "Wiltshire village landscape",
         "Motif": "Moving, counting and dancing stones"
       }
+    },
+    "Blarney Stone": {
+      "priority": 67,
+      "image": "legend-images/blarney-stone-hero.jpg",
+      "alt": "A visitor leaning backwards to kiss the Blarney Stone while an attendant supports them on the castle battlements",
+      "caption": "A visual interpretation of the Blarney Stone tradition at Blarney Castle",
+      "map_title": "Blarney Castle, County Cork",
+      "section_heading": "The stone that grants eloquence",
+      "pullquote": "According to legend, kissing the stone endows the kisser with the gift of the gab.",
+      "facts": {
+        "Type": "Carboniferous limestone",
+        "Setting": "Blarney Castle",
+        "Tradition": "The gift of the gab",
+        "Castle tower": "Built in 1446"
+      }
+    },
+    "Blodeuwedd": {
+      "priority": 68,
+      "image": "legend-images/blodeuwedd-hero.jpg",
+      "alt": "Blodeuwedd transforming from a flower-made woman into an owl among broom and meadowsweet in the Welsh mountains",
+      "caption": "A visual interpretation of Blodeuwedd's transformation in the Mabinogi",
+      "map_title": "Gwynedd, Wales",
+      "section_heading": "The woman made from flowers",
+      "pullquote": "As punishment the wizard Gwydion turned her into an owl.",
+      "facts": {
+        "Tradition": "Welsh mythology",
+        "Created from": "Nine flowers",
+        "Husband": "Lleu",
+        "Transformation": "Owl"
+      }
+    },
+    "Will-o'-the-Wisp": {
+      "priority": 69,
+      "image": "legend-images/will-o-the-wisp-hero.jpg",
+      "alt": "Cold blue-white lights hovering above flooded reeds as a lone traveller hesitates in the dark Cambridgeshire Fens",
+      "caption": "A visual interpretation of deceptive marsh lights in the English Fens",
+      "map_title": "The Fens, Cambridgeshire",
+      "section_heading": "The lights beyond the path",
+      "pullquote": "Mischievous spirits were believed to lure travellers off safe paths into treacherous bogs.",
+      "facts": {
+        "Tradition": "English folklore",
+        "Form": "Flickering marsh lights",
+        "Setting": "The Fens",
+        "Danger": "Luring travellers into bogs"
+      }
+    },
+    "Ceridwen": {
+      "priority": 70,
+      "image": "legend-images/ceridwen-hero.jpg",
+      "alt": "Ceridwen reaching across her steaming cauldron as three drops of inspiration leap toward the startled Gwion Bach",
+      "caption": "A visual interpretation of Gwion Bach tasting the cauldron of inspiration",
+      "map_title": "Powys, Wales",
+      "section_heading": "The three drops of inspiration",
+      "pullquote": "When Gwion Bach accidentally tasted three drops, Ceridwen pursued him through a cycle of transformations.",
+      "facts": {
+        "Tradition": "Welsh mythology",
+        "Cauldron": "Inspiration and knowledge",
+        "Servant": "Gwion Bach",
+        "Legacy": "Birth of the poet Taliesin"
+      }
+    },
+    "Tintagel Castle": {
+      "priority": 71,
+      "image": "legend-images/tintagel-castle-hero.jpg",
+      "alt": "The sea-cut ruins of Tintagel Castle rising above stormy Atlantic cliffs on the Cornish coast",
+      "caption": "A visual interpretation of Tintagel Castle after an Atlantic storm",
+      "map_title": "Tintagel, Cornwall",
+      "section_heading": "Arthur's castle above the sea",
+      "pullquote": "Its sea-cut ruins keep Arthurian legend pinned to the Cornish coast.",
+      "facts": {
+        "Tradition": "Arthurian legend",
+        "Type": "Cliff-edge stronghold",
+        "Setting": "Cornish coast",
+        "Association": "Arthur's conception"
+      }
+    },
+    "Brown Lady of Raynham Hall": {
+      "priority": 72,
+      "image": "legend-images/brown-lady-of-raynham-hall-hero.jpg",
+      "alt": "A translucent brown-robed apparition descending the dark wooden staircase of a Norfolk country house",
+      "caption": "A visual interpretation of the Brown Lady descending the staircase at Raynham Hall",
+      "map_title": "Raynham Hall, Norfolk",
+      "section_heading": "The figure on the staircase",
+      "pullquote": "Britain's most famous ghost photograph shows a brown-robed figure descending a staircase at Raynham Hall.",
+      "facts": {
+        "Tradition": "English ghost lore",
+        "Identity": "Said to be Dorothy Walpole",
+        "Setting": "Raynham Hall",
+        "Famous photograph": "Taken in 1936"
+      }
     }
   }
 }

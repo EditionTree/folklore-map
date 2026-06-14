@@ -631,6 +631,51 @@
         "Status": "National animal of Scotland",
         "Motif": "Proud untameability"
       }
+    },
+    "Camelot": {
+      "priority": 43,
+      "image": "legend-images/camelot-hero.jpg",
+      "alt": "A great timber hall and fortified royal settlement crowning South Cadbury hill above the Somerset landscape",
+      "caption": "A visual interpretation of Camelot as a post-Roman hillfort at South Cadbury",
+      "map_title": "South Cadbury, Somerset",
+      "section_heading": "The kingdom on the hill",
+      "pullquote": "The legendary seat of Arthur's kingdom is most often identified with South Cadbury hillfort in Somerset.",
+      "facts": {
+        "Tradition": "Arthurian legend",
+        "Type": "Legendary royal seat",
+        "Possible site": "South Cadbury hillfort",
+        "Archaeology": "Dark Age feasting hall"
+      }
+    },
+    "Griffin": {
+      "priority": 44,
+      "image": "legend-images/griffin-hero.jpg",
+      "alt": "A lion-bodied, eagle-headed griffin with broad feathered wings guarding treasure in a high rocky nest",
+      "caption": "A visual interpretation of the griffin as a vigilant guardian of treasure",
+      "map_title": "Britain, heraldic tradition",
+      "section_heading": "The guardian with eagle eyes",
+      "pullquote": "A lion-bodied, eagle-headed guardian of treasure, enemy of horses, and one of the great beasts of British heraldry.",
+      "facts": {
+        "Tradition": "Medieval bestiaries and heraldry",
+        "Form": "Lion body and eagle head",
+        "Role": "Guardian of treasure",
+        "Legend": "Talons that detect poison"
+      }
+    },
+    "Anne Bonny": {
+      "priority": 45,
+      "image": "legend-images/anne-bonny-hero.jpg",
+      "alt": "Anne Bonny standing watchfully with a cutlass on the deck of an early eighteenth-century sailing ship",
+      "caption": "A visual interpretation of Anne Bonny during the Golden Age of Piracy",
+      "map_title": "County Cork, Ireland",
+      "section_heading": "The pirate beyond the record",
+      "pullquote": "Sparse historical records left room for a much larger legend.",
+      "facts": {
+        "Period": "Golden Age of Piracy",
+        "Role": "Pirate",
+        "Traditional birthplace": "Near Cork",
+        "Legacy": "Books, songs, theatre and screen"
+      }
     }
   }
 }

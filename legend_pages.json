@@ -766,6 +766,51 @@
         "Source": "First Branch of the Mabinogi",
         "Motif": "Exchange of places with Pwyll"
       }
+    },
+    "Sir Galahad": {
+      "priority": 52,
+      "image": "legend-images/sir-galahad-hero.jpg",
+      "alt": "Sir Galahad in mail kneeling before a simple luminous cup in a quiet medieval chapel",
+      "caption": "A visual interpretation of Galahad achieving the Holy Grail",
+      "map_title": "Somerset",
+      "section_heading": "The knight who reached the Grail",
+      "pullquote": "The only knight pure enough to achieve the Grail.",
+      "facts": {
+        "Tradition": "Arthurian legend",
+        "Role": "Knight of the Round Table",
+        "Father": "Lancelot",
+        "Quest": "The Holy Grail"
+      }
+    },
+    "Andraste": {
+      "priority": 53,
+      "image": "legend-images/andraste-hero.jpg",
+      "alt": "The warrior goddess Andraste appearing in an East Anglian grove before gathered Iceni fighters",
+      "caption": "A visual interpretation of Andraste invoked before Boudicca's revolt",
+      "map_title": "East Anglia",
+      "section_heading": "The goddess at the edge of history",
+      "pullquote": "A warrior goddess invoked by Boudica before her revolt against Rome.",
+      "facts": {
+        "Tradition": "Ancient British religion",
+        "Role": "Warrior goddess",
+        "Setting": "East Anglia",
+        "Association": "Boudicca's revolt"
+      }
+    },
+    "Baobhan Sith": {
+      "priority": 54,
+      "image": "legend-images/baobhan-sith-hero.jpg",
+      "alt": "Three pale supernatural women in green gowns dancing near horses and an iron gate in the moonlit Highlands",
+      "caption": "A visual interpretation of the Baobhan Sith dancing in the Highland wilderness",
+      "map_title": "Scottish Highlands",
+      "section_heading": "The dancers in green",
+      "pullquote": "Beautiful women in green gowns who appear to hunters in the wilderness, dance with them through the night, and drain their blood.",
+      "facts": {
+        "Tradition": "Scottish Highland folklore",
+        "Type": "Vampiric fairy spirits",
+        "Setting": "Highland wilderness",
+        "Protection": "Iron"
+      }
     }
   }
 }

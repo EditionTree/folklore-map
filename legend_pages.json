@@ -181,6 +181,141 @@
         "Setting": "River fords",
         "Motif": "Battle prophecy"
       }
+    },
+    "The Dagda": {
+      "priority": 13,
+      "image": "legend-images/the-dagda-hero.jpg",
+      "alt": "A huge weathered man beside an iron cauldron, old harp and wooden club near an earthen mound in County Meath",
+      "caption": "A visual interpretation of the Dagda in Irish mythology",
+      "map_title": "County Meath",
+      "section_heading": "The three treasures",
+      "pullquote": "These are the tools of a god who controls death, abundance, and time.",
+      "facts": {
+        "Tradition": "Irish mythology",
+        "Type": "Father-god",
+        "Setting": "County Meath",
+        "Motif": "Power and abundance"
+      }
+    },
+    "King Arthur": {
+      "priority": 14,
+      "image": "legend-images/king-arthur-hero.jpg",
+      "alt": "A weathered British war-leader with a sword and dark horse standing to the right of misty Glastonbury Tor",
+      "caption": "A visual interpretation of King Arthur in the Somerset landscape",
+      "map_title": "Glastonbury, Somerset",
+      "section_heading": "The once and future king",
+      "pullquote": "Tradition holds that Arthur never truly died but sleeps beneath a hill with his knights, ready to return in Britain's hour of greatest need.",
+      "facts": {
+        "Tradition": "Arthurian legend",
+        "Type": "Legendary king",
+        "Setting": "Britain",
+        "Motif": "The returning king"
+      }
+    },
+    "Avalon": {
+      "priority": 15,
+      "image": "legend-images/avalon-hero.jpg",
+      "alt": "A small wooden boat carrying a wounded cloaked figure toward a misty island across the flooded Somerset Levels",
+      "caption": "A visual interpretation of Arthur's journey to Avalon",
+      "map_title": "Glastonbury and the Somerset Levels",
+      "section_heading": "The isle of rest",
+      "pullquote": "Arthur sleeps here still, waiting to return when Britain needs him most.",
+      "facts": {
+        "Tradition": "Arthurian legend",
+        "Type": "Otherworldly island",
+        "Setting": "Somerset",
+        "Motif": "Rest and return"
+      }
+    },
+    "Robin Hood": {
+      "priority": 16,
+      "image": "legend-images/robin-hood-hero.jpg",
+      "alt": "A weathered medieval archer standing beside a massive oak in the shadowed depths of Sherwood Forest",
+      "caption": "A visual interpretation of Robin Hood in Sherwood Forest",
+      "map_title": "Sherwood Forest, Nottinghamshire",
+      "section_heading": "The outlaw under the greenwood",
+      "pullquote": "The core of the legend is simple and endlessly renewable: a skilled archer, living under the greenwood of Sherwood Forest.",
+      "facts": {
+        "Tradition": "English ballad tradition",
+        "Type": "Legendary outlaw",
+        "Setting": "Sherwood Forest",
+        "Motif": "Rebellion against injustice"
+      }
+    },
+    "Stonehenge": {
+      "priority": 17,
+      "image": "legend-images/stonehenge-hero.jpg",
+      "alt": "The weathered stones of Stonehenge standing on Salisbury Plain as pale midsummer light breaks through mist",
+      "caption": "A visual interpretation of Stonehenge at midsummer dawn",
+      "map_title": "Salisbury Plain, Wiltshire",
+      "section_heading": "Giants, Merlin and the solstice",
+      "pullquote": "Raised by giants according to Geoffrey of Monmouth, or conjured by Merlin from Ireland.",
+      "facts": {
+        "Tradition": "British folklore",
+        "Type": "Legendary monument",
+        "Setting": "Wiltshire",
+        "Motif": "Giants and enchantment"
+      }
+    },
+    "The Green Knight": {
+      "priority": 18,
+      "image": "legend-images/the-green-knight-hero.jpg",
+      "alt": "A towering green knight in dark plate and mail entering Arthur's winter hall with an iron axe and holly branch",
+      "caption": "A visual interpretation of the Green Knight's challenge at Arthur's court",
+      "map_title": "Arthurian Britain",
+      "section_heading": "The beheading game",
+      "pullquote": "His beheading game with Gawain tests courage, courtesy, truth, and the strangeness of winter.",
+      "facts": {
+        "Tradition": "Arthurian romance",
+        "Type": "Supernatural challenger",
+        "Setting": "Arthur's court",
+        "Motif": "The beheading game"
+      }
+    },
+    "Beowulf": {
+      "priority": 19,
+      "image": "legend-images/beowulf-hero.jpg",
+      "alt": "An unarmed early medieval warrior facing a huge shadowed figure inside the dark timber hall of Heorot",
+      "caption": "A visual interpretation of Beowulf awaiting Grendel in Heorot",
+      "map_title": "Anglo-Saxon England",
+      "section_heading": "The fight in Heorot",
+      "pullquote": "Beowulf waits in the darkened hall and fights Grendel bare-handed.",
+      "facts": {
+        "Tradition": "Old English epic",
+        "Type": "Geatish hero",
+        "Setting": "Heorot",
+        "Motif": "Courage and loyalty"
+      }
+    },
+    "Fionn mac Cumhaill": {
+      "priority": 20,
+      "image": "legend-images/fionn-mac-cumhaill-hero.jpg",
+      "alt": "Young Fionn tasting his burned thumb beside a salmon cooking over a small fire on a wooded Irish riverbank",
+      "caption": "A visual interpretation of Fionn gaining wisdom from the Salmon of Knowledge",
+      "map_title": "Northern Ireland",
+      "section_heading": "The Salmon of Knowledge",
+      "pullquote": "Fionn got it all by accident, and ever after could access that wisdom by sucking his thumb.",
+      "facts": {
+        "Tradition": "Fenian Cycle",
+        "Type": "Warrior and hunter",
+        "Setting": "Ireland and Scotland",
+        "Motif": "Wisdom and return"
+      }
+    },
+    "The Wild Hunt": {
+      "priority": 21,
+      "image": "legend-images/the-wild-hunt-hero.jpg",
+      "alt": "Spectral medieval riders and howling hounds sweeping through rain across a moonlit North Yorkshire moor",
+      "caption": "A visual interpretation of the Wild Hunt over the Yorkshire moors",
+      "map_title": "North Yorkshire",
+      "section_heading": "The riders in the storm",
+      "pullquote": "To witness the Hunt is to receive a portent of war, plague, or the death of a king.",
+      "facts": {
+        "Tradition": "British and European folklore",
+        "Type": "Spectral cavalcade",
+        "Setting": "Winter sky and moorland",
+        "Motif": "Portent of disaster"
+      }
     }
   }
 }

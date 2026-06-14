@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-13T18:46:11.753765Z",
-  "total": 569,
+  "generated": "2026-06-14T18:45:59.835964Z",
+  "total": 576,
   "categories": {
     "beast": "Beasts",
     "ghost": "Ghosts",
@@ -553,6 +553,25 @@
         "haunting",
         "england",
         "gloucestershire"
+      ]
+    },
+    {
+      "name": "Bedd Dorti, the Witch's Grave",
+      "lat": 52.927,
+      "lng": -4.072,
+      "category": "witch",
+      "region": "Llyn Tecwyn Uchaf, Meirionnydd, Gwynedd, Wales",
+      "summary": "A 17th-century woman feared as a witch was hurled in a cask from the cliffs above Llyn Tecwyn Uchaf — and the cairn of stones marking where she landed, Bedd Dorti, is said to bring death within a year to anyone who passes without adding a stone to the pile.",
+      "detail": "On the high ground above Llyn Tecwyn Uchaf, on the old road between Llandecwyn and Maentwrog in Meirionnydd, stands a stone-covered mound known as Bedd Dorti — 'Dorti's Grave'. Local tradition holds that Dorti was a 17th-century woman widely feared as a witch, always seen with a black cat on her shoulder, who was seized by her neighbours, sealed inside a cask and thrown from the rocks above the lake. The mound marks the spot where the cask came to rest.\n\nThe site carries its own surviving superstition: travellers passing the mound are expected to add a white stone to the heap, on pain of dying within the year if they fail to do so. The Royal Commission on the Ancient and Historical Monuments of Wales recorded the tradition in the 20th century, noting that even by 1943 the original arrangement of stones had been disturbed by the construction of a nearby dam — yet the cairn, and the story of Dorti, survive as one of Meirionnydd's best-known pieces of witch-lore.",
+      "source": "https://rcahmw.gov.uk/bedd-dorti-a-legendary-witchs-grave/",
+      "date_added": "2026-06-14",
+      "tags": [
+        "cat",
+        "barrow",
+        "curse",
+        "death-omen",
+        "wales",
+        "gwynedd"
       ]
     },
     {
@@ -3418,6 +3437,25 @@
       ]
     },
     {
+      "name": "Furbaide Ferbend",
+      "lat": 53.838,
+      "lng": -7.739,
+      "category": "hero",
+      "region": "Carn Clonhugh (Corn Hill), County Longford, Ireland",
+      "summary": "A hero of the Ulster Cycle avenged his mother's murder by killing Queen Medb with a sling-shot of hard cheese on a Shannon island — and was buried, legend says, beneath the great cairn on Corn Hill, Longford's highest summit.",
+      "detail": "In the Ulster Cycle of Irish mythology, Furbaide Ferbend was the son of King Conchobar mac Nessa and Clothru, who was murdered — while pregnant with him — by her own sister, Medb, in a struggle for the kingship of Connacht. Furbaide was cut from his dying mother's womb and grew up determined to avenge her death.\n\nYears later, learning that Medb (by then queen of Connacht) bathed every morning in a pool on an island in Lough Ree, on the Shannon, Furbaide practised for months with a sling, stretching a cord between two stakes set at the exact distance to the island and firing stone after stone until he could strike an apple balanced on a post every time. When his aim was perfected, he loaded his sling with a piece of hard cheese and, from the shore, struck Medb in the forehead as she bathed, killing her instantly in payment for his mother's death.\n\nLocal tradition holds that Furbaide was afterwards buried in the great passage-tomb cairn atop Carn Clonhugh — now known as Corn Hill or Cairn Hill, the highest point in County Longford — and the dindshenchas (place-name lore) of the hill preserves his name in its older title, Carn Furbaide.",
+      "source": "https://en.wikipedia.org/wiki/Furbaide_Ferbend",
+      "date_added": "2026-06-14",
+      "tags": [
+        "hill",
+        "barrow",
+        "revenge",
+        "celtic",
+        "ireland",
+        "county-longford"
+      ]
+    },
+    {
       "name": "Garman Garbh of Loch Garman",
       "lat": 52.336,
       "lng": -6.463,
@@ -5172,7 +5210,7 @@
       "lng": -0.5392,
       "category": "fairy",
       "region": "Lincolnshire",
-      "summary": "Sent by the Devil to cause mischief across England, a young imp flew into Lincoln Cathedral and began tormenting the angels within. An angel turned the creature to stone where it sat perched on a pillar, and there it remains — a leering figure carved into the stonework of the Angel Choir, grinning down at visitors to this day.",
+      "summary": "Sent by the Devil to wreak havoc, two imps were blown to Lincoln — one flew straight into the cathedral, taunted the angels of the Angel Choir, and was turned to stone where it still grins down today.",
       "source": "https://en.wikipedia.org/wiki/Lincoln_Imp",
       "date_added": "2026-06-03",
       "tags": [
@@ -5180,7 +5218,8 @@
         "trickery",
         "england",
         "lincolnshire"
-      ]
+      ],
+      "detail": "According to a tale told in Lincoln for generations, the Devil once sent a host of imps out into the world to cause mischief, and the wind carried two of them to the city of Lincoln. At first the pair were so awed by the size and splendour of the newly built cathedral that they hung back, afraid to go in. Eventually one grew bold enough to fly inside, where he set about his work with relish — tripping up the Bishop, knocking down the Dean, and pulling faces at the choir as they sang.\n\nWhen the imp began smashing the cathedral's stained glass, a band of angels carved into the newly finished Angel Choir told him to stop. His reply was a single defiant taunt: 'Stop me if you can!' The angels duly did — turning the imp instantly to stone and fixing him forever in the cleft of a column high on the north side of the choir, where, the story goes, his fellow imp escaped and was last seen riding away on the back of a witch.\n\nThe Angel Choir was built between about 1250 and 1280, and the carving the legend explains — a grinning, horned, cross-legged figure barely a foot tall — has been there ever since. Whatever its original purpose among the choir's many grotesques, the Lincoln Imp went on to become the unofficial emblem of the city itself, reproduced on everything from regimental badges to jewellery and souvenirs, and is now probably the best-known carving in the cathedral."
     },
     {
       "name": "Listoghil",
@@ -5252,7 +5291,7 @@
       "lng": -3.267,
       "category": "location",
       "region": "Bannau Brycheiniog, Powys, Wales",
-      "summary": "Llangorse Lake, or Llyn Syfaddan, was recorded by Gerald of Wales as a place of strange phenomena. Local tradition tells of a drowned settlement beneath the water whose bells can be heard on still days. A royal crannog, an artificial island associated with the kings of Brycheiniog, has been archaeologically confirmed in the lake.",
+      "summary": "Gerald of Wales recorded in 1188 that a whole town once sank beneath Llangorse Lake in an earthquake — and locals still say its church bells can be heard tolling under the water on still days.",
       "source": "https://en.wikipedia.org/wiki/Llangorse_Lake",
       "date_added": "2026-06-03",
       "tags": [
@@ -5261,7 +5300,8 @@
         "drowning",
         "wales",
         "powys"
-      ]
+      ],
+      "detail": "Llangorse Lake — Llyn Syfaddan in Welsh — is the largest natural lake in South Wales, lying beneath the Black Mountains in the old kingdom of Brycheiniog. When the Welsh churchman and chronicler Gerald of Wales passed by in 1188 while touring with Archbishop Baldwin to preach the Third Crusade, he recorded the lake as a place of wonders: in winter its ice was said to groan and roar like a pack of wolves, the water could turn green or red as if stained with blood, and on calm days the lake appeared to be 'covered with buildings'.\n\nOut of these reported marvels grew a more concrete local legend: that a town once stood where the lake now lies, and that it was destroyed in a single night when the ground split open and water poured out, drowning the settlement and everyone in it. Walkers and fishermen have long claimed that on still days the muffled sound of church bells can be heard ringing up from beneath the surface — the buried town's bells, tolling on even after the people who rang them were lost.\n\nThe legend gained an unexpected layer of truth in the 1980s and 90s, when archaeologists excavating a low island near the lake's eastern shore confirmed it to be a man-made crannog — a fortified timber platform built around AD 889-893 for the kings of Brycheiniog, generally identified with the royal stronghold the Anglo-Saxon Chronicle records as destroyed by Aethelflaed's Mercian forces in 916. The crannog is not the drowned town of legend, but its discovery shows that Gerald of Wales was, in his own way, reporting a real submerged settlement — just one far smaller than the lost city of folk memory."
     },
     {
       "name": "Llyn Barfog",
@@ -5386,6 +5426,25 @@
       ]
     },
     {
+      "name": "Loch nan Dubhrachan Water Horse",
+      "lat": 57.158,
+      "lng": -5.793,
+      "category": "beast",
+      "region": "Sleat, Isle of Skye, Scotland",
+      "summary": "A dark loch on Skye's Sleat peninsula was said to be the lair of a vicious each-uisge with a taste for pretty girls — so feared that in 1870 the laird ordered the loch dragged with nets to capture it.",
+      "detail": "Loch nan Dubhrachan lies beside the old road between Isle Ornsay and Knock on the Sleat peninsula of Skye, and 19th-century folklorists recorded it as the haunt of an each-uisge, the deadly Highland water-horse. Unlike the more familiar kelpie, the each-uisge could take the form of a fine horse or a handsome young man, and this one was said to have a particular fondness for pretty girls — though, as the old tellers warned, his attentions never ended well for them. Travellers near the loch reported being waylaid by a mysterious 'beast', and the stories grew so persistent that by 1870 the laird ordered a full-scale dragging of the loch to settle the matter once and for all.\n\nA Skye man named MacRae, who as a boy was present at the attempt, recalled that the nets — manned by terrified villagers on both shores — suddenly snagged on something huge and powerful in the depths. Convinced they had hooked the water-horse itself, the men dropped the ropes and fled in panic. When the nets were finally recovered they held nothing but mud and two small pike — but the loch's reputation as a dwelling-place of the each-uisge endured, recorded a generation later in J. A. MacCulloch's 'The Misty Isle of Skye' (1905).",
+      "source": "http://faeryfolklorist.blogspot.com/2012/07/loch-nan-dubhrachan-water-horse-isle-of.html",
+      "date_added": "2026-06-14",
+      "tags": [
+        "horse",
+        "shapeshifter",
+        "lake",
+        "celtic",
+        "scotland",
+        "highland"
+      ]
+    },
+    {
       "name": "Lochmaben Stone",
       "lat": 54.9839,
       "lng": -3.0761,
@@ -5490,7 +5549,7 @@
       "lng": -7.863,
       "category": "location",
       "region": "County Donegal, Ireland",
-      "summary": "An island in Lough Derg said to contain a cave leading directly to Purgatory — revealed to Saint Patrick so he could show doubters what awaited sinners. Medieval pilgrims came from across Europe to descend into it. The penitential tradition continues to this day: three days without sleep, barefoot on the cold stone island.",
+      "summary": "St Patrick is said to have been shown a cave on this island leading straight into Purgatory — and for 800 years pilgrims have crossed to it to go barefoot, fast, and stay awake for three days and nights.",
       "source": "https://en.wikipedia.org/wiki/Lough_Derg_(Ulster)",
       "date_added": "2026-06-03",
       "tags": [
@@ -5499,7 +5558,8 @@
         "island",
         "ireland",
         "county-donegal"
-      ]
+      ],
+      "detail": "On Station Island in Lough Derg, County Donegal, tradition holds that Saint Patrick once fasted and prayed until Christ showed him a pit on the island leading directly down into Purgatory — proof of the torments awaiting sinners, given so that Patrick could convince doubters of the reality of the afterlife. The cave itself, later sealed up, became known as 'St Patrick's Purgatory' and made the island one of the most important pilgrimage sites in medieval Christendom.\n\nIts fame spread across Europe through the Tractatus de Purgatorio Sancti Patricii, written around 1184 by an English monk known only as 'H.', recounting the experience of an Irish knight named Owein who entered the cave and was led through the torments of Purgatory before reaching a vision of Paradise. Copied and translated into most major European languages, Owein's vision became one of the most popular texts of the Middle Ages, and many scholars believe it influenced Dante's descriptions of Purgatory and Hell in the Divine Comedy two centuries later.\n\nThe pilgrimage tradition has never stopped. Modern pilgrims still travel to Station Island between June and August to take part in the 'three-day station': going barefoot over the island's stone 'beds', fasting on dry bread, black tea and coffee, and keeping an all-night vigil without sleep. It remains one of the most physically demanding pilgrimages in the Christian world, and one of the few places where a tradition first recorded in the twelfth century is still practised, largely unchanged, today."
     },
     {
       "name": "Lough Ree Monster",
@@ -6907,7 +6967,7 @@
       "lng": -8.553,
       "category": "deity",
       "region": "County Sligo, Ireland",
-      "summary": "Queen of Connacht and one of the most formidable figures in Irish mythology — she launched the great Cattle Raid of Cooley to steal the Brown Bull of Ulster from Cú Chulainn's people. Sovereign goddess as much as warrior queen, no king could rule Connacht without first mating with her. She was finally slain by a piece of cheese.",
+      "summary": "Medb of Connacht was sovereignty itself — no king could rule without her — and the queen who launched Ireland's greatest cattle raid against Ulster was finally brought down by a single shot of hard cheese.",
       "source": "https://en.wikipedia.org/wiki/Medb",
       "date_added": "2026-06-03",
       "tags": [
@@ -6915,7 +6975,8 @@
         "battle",
         "ireland",
         "county-sligo"
-      ]
+      ],
+      "detail": "In the Ulster Cycle of early Irish literature, Medb is queen of Connacht, ruling from the great royal site of Cruachan (modern Rathcroghan, County Roscommon). She is no ordinary monarch: many scholars read her as a personification of the sovereignty of Connacht itself, a goddess in human form whose favour — and bed — a man had to win before he could claim the kingship. Across the sagas she takes and discards husbands, among them Ailill mac Mata, and is consistently portrayed as more powerful, more decisive, and more dangerous than any of the men around her.\n\nMedb's most famous exploit is the Tain Bo Cuailnge, the Cattle Raid of Cooley, Ireland's great epic. Determined that her own wealth should at least match her husband Ailill's — down to the last bull — she led the armies of Connacht against Ulster to seize the great brown bull Donn Cuailnge. With Ulster's warriors disabled by a curse, the boy-hero Cu Chulainn held the invading army at bay alone in a months-long series of single combats at fords, one of the central narratives of the entire Ulster Cycle.\n\nMedb's end was as dramatic as her life. Years earlier she had murdered her pregnant sister Clothru; Clothru's son, Furbaide Ferbend, grew up vowing revenge. Learning that Medb bathed each morning in a pool on an island in Lough Ree, Furbaide practised for months with a sling until he could hit a mark at the exact range — then killed the queen of Connacht with a single shot of hard cheese. Medb is said to be buried standing upright, facing her enemies in Ulster, beneath the great cairn known as Meascan Meabha (Maeve's Cairn) on the summit of Knocknarea in County Sligo."
     },
     {
       "name": "Ragnar Lothbrok",
@@ -8220,6 +8281,25 @@
       ]
     },
     {
+      "name": "The Giant Bica of Llangrannog",
+      "lat": 52.1518,
+      "lng": -4.479,
+      "category": "giant",
+      "region": "Llangrannog, Ceredigion, Wales",
+      "summary": "A giant who lived in the hills above Llangrannog suffered such terrible toothache that he spat the offending tooth onto the beach below — where it still stands today as the rock called Carreg Bica.",
+      "detail": "On the beach at Llangrannog in Ceredigion stands a tall, jagged outcrop of rock known as Carreg Bica, or 'Bica's Tooth'. According to local legend it takes its name from Bica, a giant who lived in the hills overlooking the village and watched over its people. One day Bica was struck down by an agonising toothache, and in his fury he wrenched out the offending tooth and spat it down onto the sands, where it lodged upright and has remained ever since.\n\nA related tale ties Bica to the small headland and island just north of the village. In gratitude to a companion, Lochtyn, who had helped free him from his toothache, Bica is said to have run his finger along the coastline to carve out a peninsula and create an island just for him — the rocky promontory and tidal islet still known today as Ynys Lochtyn. Both landmarks remain popular stops on the Ceredigion coast path, where the giant's 'tooth' towers over walkers on the beach below.",
+      "source": "http://www.discoverceredigion.co.uk/English/more/legends/Pages/landofgiants.aspx",
+      "date_added": "2026-06-14",
+      "tags": [
+        "coast",
+        "island",
+        "guardian",
+        "transformation",
+        "wales",
+        "ceredigion"
+      ]
+    },
+    {
       "name": "The Green Knight",
       "lat": 52.0,
       "lng": -2.0,
@@ -8392,6 +8472,24 @@
       ]
     },
     {
+      "name": "The Pirates of Dollar Bay",
+      "lat": 52.122,
+      "lng": -6.935,
+      "category": "pirate",
+      "region": "Dollar Bay, Hook Peninsula, County Wexford, Ireland",
+      "summary": "Four mutineers murdered their captain at sea in 1765 and buried 250 sacks of Spanish silver on a lonely Wexford beach south of Duncannon Fort — giving Dollar Bay the name it carries to this day.",
+      "detail": "In late November 1765, the brig Earl of Sandwich was making for London with a fortune in Spanish silver dollars, gold dust and 'pieces of eight' aboard when four of her crew — George Gidley, Richard St Quintin, Andreas Zekerman and Peter McKinlie — mutinied, killing the captain and several others on board and throwing them overboard. The mutineers turned the ship for the Irish coast and ran her close to the Hook Peninsula, where they waded ashore with around 250 sacks of coin and buried most of the hoard in the dunes, fearing they would be searched if they passed too close to the guns of Duncannon Fort.\n\nWord of strangers spending unusual quantities of foreign silver soon reached the authorities in New Ross, and in mid-December a magistrate's party, backed by soldiers from Duncannon Fort, recovered the buried treasure and shipped it under guard to the Custom House. The four mutineers were captured, tried, and executed on 3 March 1766 for the murder of their captain and the theft of the ship's cargo. The stretch of beach where the silver dollars were dug from the sand has been known ever since as Dollar Bay, and the story is still told along the Hook Peninsula as one of Ireland's great pirate-treasure legends — one some say helped inspire Robert Louis Stevenson's 'Treasure Island'.",
+      "source": "https://waterfordtreasures.com/murder-aboard-the-earl-of-sandwich-the-pirates-of-dollar-bay/",
+      "date_added": "2026-06-14",
+      "tags": [
+        "coast",
+        "sea",
+        "treasure",
+        "ireland",
+        "county-wexford"
+      ]
+    },
+    {
       "name": "The Pump Hill Smuggler",
       "lat": 52.82,
       "lng": 1.536,
@@ -8514,6 +8612,25 @@
         "yorkshire"
       ],
       "detail": "The Wild Hunt is among the most dreaded apparitions of British and European folklore — a spectral cavalcade of huntsmen, horses and baying hounds that storms across the night sky or over the wild moors, often heralded by a rising wind and the cry of the pack. To see it was perilous, and to be swept up in it could mean being carried off; its passing was widely held to foretell war, plague or death.\n\nAcross Britain the Hunt rides under many names and many leaders — the Devil, Herne the Hunter in Windsor Forest, Sir Francis Drake, and in older strata Woden or Odin himself. In the north its hounds are the Gabriel Ratchets, whose cries pass unseen overhead; on Dartmoor they are the Wisht Hounds; in Wales they are the Cŵn Annwn, the white red-eared hounds of the Otherworld. Whatever its guise, the Wild Hunt embodies the terror of the wild night and the thin border between the living and the dead."
+    },
+    {
+      "name": "The Witch of East Somerton",
+      "lat": 52.7383,
+      "lng": 1.5775,
+      "category": "witch",
+      "region": "East Somerton, Norfolk, England",
+      "summary": "A woman accused of witchcraft was said to have been buried alive in the nave of St Mary's Church at East Somerton — and her wooden leg took root and grew into the great oak that still stands inside the ruined church today.",
+      "detail": "In the ruins of St Mary's Church at East Somerton, deep in a Norfolk wood, a massive oak tree now grows where the nave once stood — its trunk rising through the roofless walls of the abandoned 15th-century church. Local legend says the tree marks the grave of a woman from the village who was accused of witchcraft and buried alive within the church by her neighbours. As she was interred, her wooden leg was said to have been planted with her, and over the centuries it took root and grew into the oak that dominates the ruin today, sometimes called 'the Witch's Leg' or 'the Witch's Finger'.\n\nThe legend carries its own piece of living folk-practice: it is said that anyone who walks around the tree three times will release the witch's spirit. The story has become one of the best-known pieces of 'Weird Norfolk' folklore, regularly retold by local newspapers and the Norfolk Folklore Society, and the atmospheric ruin — oak growing through broken flint walls in dense woodland — remains a popular, if eerie, walking destination near Winterton-on-Sea.",
+      "source": "https://www.norfolkfolkloresociety.co.uk/post/the-witch-of-east-somerton",
+      "date_added": "2026-06-14",
+      "tags": [
+        "church",
+        "forest",
+        "haunting",
+        "transformation",
+        "england",
+        "norfolk"
+      ]
     },
     {
       "name": "The Witch of Knocknashee",
@@ -8979,7 +9096,7 @@
       "lng": -0.9897,
       "category": "location",
       "region": "Oxfordshire",
-      "summary": "Watlington White Mark is a chalk hill figure located on Watlington Hill, a mile from the village of Watlington, Oxfordshire. It is 270 feet tall and 36 feet wide, and is one of several hill figures cut into the Chilterns, alongside the Whiteleaf Cross, Bledlow Cross and Whipsnade White Lion. The site is owned by the National Trust.",
+      "summary": "A local squire cut this giant chalk arrow into the hill in 1764 so his steeple-less church would appear, from his window, to wear a spire — though some say the shape is a far older fertility symbol.",
       "source": "https://en.wikipedia.org/wiki/Watlington_White_Mark",
       "date_added": "2026-06-03",
       "tags": [
@@ -8988,7 +9105,8 @@
         "hill-figure",
         "england",
         "oxfordshire"
-      ]
+      ],
+      "detail": "High on Watlington Hill in the Chiltern Hills above the Oxfordshire town of Watlington, a giant obelisk-and-triangle shape has been cut into the chalk since 1764. According to the most popular account, the local squire Edward Horne was unhappy that the parish church of St Leonard, down in the village below, had no spire. From the window of his home, he had the figure cut into the hillside at exactly the angle needed to sit directly above the church tower, completing — by optical illusion — the spire the building had always lacked.\n\nNot everyone accepts the squire's-folly story. Some antiquarians, among them the writer H. J. Massingham, argued the mark is far older than the eighteenth century, pointing to its position just below the ancient Icknield Way — the prehistoric ridgeway track that runs the length of the Chiltern escarpment — and suggesting it may once have served as a fertility symbol, comparable to the famously priapic Cerne Abbas Giant in Dorset. On this reading, Horne's 1764 cutting would have been a re-scouring of a much older figure rather than a fresh creation.\n\nWhichever story is true, the White Mark remains one of several chalk figures carved into the Chiltern escarpment, alongside the Whiteleaf Cross and Bledlow Cross. The hill and its mark are now owned by the National Trust, and the viewpoint from which the 'spire' illusion was supposedly designed to work remains a popular target for walkers tracing the story for themselves."
     },
     {
       "name": "Waun Mawn",
@@ -9210,6 +9328,24 @@
         "transformation",
         "scotland",
         "dundee"
+      ]
+    },
+    {
+      "name": "William Owen, the Smuggler General of Pembrokeshire",
+      "lat": 52.0517,
+      "lng": -4.8136,
+      "category": "pirate",
+      "region": "Nevern, Pembrokeshire, Wales",
+      "summary": "Born to a respectable farming family in Nevern in 1717, William Owen became one of Wales's most notorious smugglers — running brandy and salt across Cardigan Bay before commanding an armed 'siege' of a Cardiganshire mansion and ending on the gallows.",
+      "detail": "William Owen was born in 1717 in Nevern, Pembrokeshire, the son of a well-to-do farmer who hoped his clever son would become a clergyman. Instead, Owen ran away to sea as a teenager and, by the 1720s and 1730s, had become one of the most successful smugglers on the Welsh coast, running brandy, salt and other contraband across Cardigan Bay between the Isle of Man and the harbours of Pembrokeshire and the Llyn Peninsula.\n\nOwen's most notorious exploit came when he led an armed band of Pembrokeshire and Cardiganshire men — gathered to support a friend, 'Mr Parry', in a dispute with the powerful Johnes family of Aber-mad — in a march on the Johnes' mansion near Aberystwyth. Nominated 'general' of the assembled men, Owen led them to the gates of the great house, but at the sight of its armed and well-manned defences his troops lost their nerve and the siege collapsed without a shot fired. Owen's luck finally ran out in 1747, when he was convicted of murder at the Carmarthen assizes and hanged on 2 May that year — his trial and exploits recorded in the Great Sessions records that survive as one of the best-documented smuggler's lives of 18th-century Wales.",
+      "source": "http://sharonhoward.org/waleslaw/owentrial.html",
+      "date_added": "2026-06-14",
+      "tags": [
+        "coast",
+        "sea",
+        "battle",
+        "wales",
+        "pembrokeshire"
       ]
     },
     {

@@ -131,6 +131,10 @@
 "hash": "b718f6d2ccfc8568bcfd4a0c7f2bbd39886b6646",
 "modified": "2026-06-04"
 },
+"Bedd Dorti, the Witch's Grave": {
+"hash": "4212492e561b38a487978e2d2dcb6e6e7a5952cd",
+"modified": "2026-06-14"
+},
 "Beenalaght": {
 "hash": "a4f7c5523c1d6ef11586808d31ec3fd5f1847deb",
 "modified": "2026-05-30"
@@ -795,6 +799,10 @@
 "hash": "7927710d7cddc9ba4e2e8b8bda4fb5362e88bb1d",
 "modified": "2026-06-03"
 },
+"Furbaide Ferbend": {
+"hash": "226e2fb6087b0f30000b67c5a011d0cfdc46d6ed",
+"modified": "2026-06-14"
+},
 "Garman Garbh of Loch Garman": {
 "hash": "53de21c08aa6a0746f70218a54cdf8ab899fd011",
 "modified": "2026-06-09"
@@ -1204,8 +1212,8 @@
 "modified": "2026-06-11"
 },
 "Lincoln Imp": {
-"hash": "bd587ab60bc89f2c19a7647ba6fc7d9e51782813",
-"modified": "2026-06-03"
+"hash": "869fc675d9da210a7a8a94f33b778a8b13c94491",
+"modified": "2026-06-14"
 },
 "Listoghil": {
 "hash": "85573a9e4cf0691cc13823b29bb21e2366057727",
@@ -1224,8 +1232,8 @@
 "modified": "2026-06-12"
 },
 "Llangorse Lake": {
-"hash": "ff48feb4ac7e37fefbe92539324cc4773815b466",
-"modified": "2026-06-03"
+"hash": "739abc9c18216391aa2c8cf07d6cf156c160cb7c",
+"modified": "2026-06-14"
 },
 "Llyn Barfog": {
 "hash": "04ea46f14ba370539ef115b78be345c7367657b9",
@@ -1255,6 +1263,10 @@
 "hash": "315e9970a4beae6bce4d1c28fe6bacffbdd68971",
 "modified": "2026-06-12"
 },
+"Loch nan Dubhrachan Water Horse": {
+"hash": "50a82cb269a0d9950b34e33e3445d8e2505a1e45",
+"modified": "2026-06-14"
+},
 "Lochmaben Stone": {
 "hash": "0cf2d3d88441836dd1b51f0222d37f332e0ab1c0",
 "modified": "2026-06-03"
@@ -1280,8 +1292,8 @@
 "modified": "2026-06-03"
 },
 "Lough Derg (St Patrick's Purgatory)": {
-"hash": "ceec3e0305a8432ce75774ad0f0af704d1eca10e",
-"modified": "2026-06-03"
+"hash": "b85bf0166709d3e27a2e024e5b668862282c9260",
+"modified": "2026-06-14"
 },
 "Lough Ree Monster": {
 "hash": "8cfbd67710b71a65a84602c6e8eab0c71b65e442",
@@ -1616,8 +1628,8 @@
 "modified": "2026-06-08"
 },
 "Queen Medb": {
-"hash": "0f25fe6bae6d221323b614b2fd8ce324ea96a1d7",
-"modified": "2026-06-03"
+"hash": "c7910ae006f0c046565986f1ba3a891e45706085",
+"modified": "2026-06-14"
 },
 "Ragnar Lothbrok": {
 "hash": "d27cc32b84d957c0e03c3094e748a79aa08fd5ab",
@@ -1923,6 +1935,10 @@
 "hash": "d52a39c95e1d0515336574ca7e90124ea6006607",
 "modified": "2026-06-13"
 },
+"The Giant Bica of Llangrannog": {
+"hash": "f9a6219a53593bd314f28defae5de34fdc46e732",
+"modified": "2026-06-14"
+},
 "The Green Knight": {
 "hash": "ad85768c0a488702b4d8a927a262edfc508e1df9",
 "modified": "2026-06-03"
@@ -1963,6 +1979,10 @@
 "hash": "0de1bfe964af0f8b388dad4a39f3b9ec47030c92",
 "modified": "2026-06-03"
 },
+"The Pirates of Dollar Bay": {
+"hash": "48bea7351a96a5231d7ebbd48df032a87a6267a4",
+"modified": "2026-06-14"
+},
 "The Pump Hill Smuggler": {
 "hash": "b436788e4ae6a7e37335557a21ff3ef2e8f2e762",
 "modified": "2026-06-12"
@@ -1990,6 +2010,10 @@
 "The Wild Hunt": {
 "hash": "bba252814d519a9857112a63683b034c516d7d25",
 "modified": "2026-06-03"
+},
+"The Witch of East Somerton": {
+"hash": "143a8fbeaca47e72ca82084b9a896ff4bc285220",
+"modified": "2026-06-14"
 },
 "The Witch of Knocknashee": {
 "hash": "2eafe593cecb7255f89abae38d70b3ed7cf2a900",
@@ -2104,8 +2128,8 @@
 "modified": "2026-06-03"
 },
 "Watlington White Mark": {
-"hash": "c7e88648e5cf16185747d389330d2f894f697624",
-"modified": "2026-06-03"
+"hash": "0660d83e57e4c7fcd7d7040d91aaf20f6fac2b2b",
+"modified": "2026-06-14"
 },
 "Waun Mawn": {
 "hash": "9ff7c6939a01702842fe0de175ddaea634a58644",
@@ -2158,6 +2182,10 @@
 "William Kidd": {
 "hash": "a2c8fd5e2d6895b422508806efa192e3510e4e95",
 "modified": "2026-06-03"
+},
+"William Owen, the Smuggler General of Pembrokeshire": {
+"hash": "e8123c75ed8427ca90361719866d30390d796ce1",
+"modified": "2026-06-14"
 },
 "William Wallace": {
 "hash": "1c513d0ab00becd0ce32ccb47c53cd58a991aea6",

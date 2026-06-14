@@ -33,16 +33,16 @@
   <url><loc>https://folklorefinder.uk/legends/region/county-cork</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/gwynedd</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/northumberland</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/county-sligo</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/norfolk</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/county-sligo</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/pembrokeshire</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/hampshire</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/devon</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/shetland</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/london</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/ceredigion</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/argyll</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/suffolk</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/ceredigion</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/oxfordshire</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/warwickshire</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/county-meath</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority></url>
@@ -118,6 +118,7 @@
   <url><loc>https://folklorefinder.uk/legends/bean-nighe</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/beast-of-bodmin</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/beast-of-dean</loc><lastmod>2026-06-04</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/bedd-dorti-the-witch-s-grave</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/beenalaght</loc><lastmod>2026-05-30</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/behy-court-tomb</loc><lastmod>2026-05-30</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/beinn-a-bheithir</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
@@ -284,6 +285,7 @@
   <url><loc>https://folklorefinder.uk/legends/florence-newton</loc><lastmod>2026-06-12</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/folkestone-white-horse</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/francis-drake</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/furbaide-ferbend</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/garman-garbh-of-loch-garman</loc><lastmod>2026-06-09</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/gawain</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/gearoid-iarla-of-lough-gur</loc><lastmod>2026-06-08</lastmod><priority>0.6</priority></url>
@@ -386,12 +388,12 @@
   <url><loc>https://folklorefinder.uk/legends/leprechaun</loc><lastmod>2026-05-30</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/lia-fail</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/lilias-adie</loc><lastmod>2026-06-11</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/lincoln-imp</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/lincoln-imp</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/listoghil</loc><lastmod>2026-05-30</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/llamhigyn-y-dwr</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/llanddona-witches</loc><lastmod>2026-06-11</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/llandeilo-graban-dragon</loc><lastmod>2026-06-12</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/llangorse-lake</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/llangorse-lake</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/llyn-barfog</loc><lastmod>2026-06-04</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/llyn-cwm-llwch</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/llyn-morwynion</loc><lastmod>2026-06-12</lastmod><priority>0.6</priority></url>
@@ -399,13 +401,14 @@
   <url><loc>https://folklorefinder.uk/legends/loch-frisa-water-horse</loc><lastmod>2026-06-08</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/loch-morar</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/loch-na-beiste-water-horse-mellon-udrigle</loc><lastmod>2026-06-12</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/loch-nan-dubhrachan-water-horse</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/lochmaben-stone</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/loftus-hall</loc><lastmod>2026-05-30</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/long-compton-witches</loc><lastmod>2026-06-09</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/long-man-of-wilmington</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/long-meg-and-her-daughters</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/longwitton-dragon</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/lough-derg-st-patrick-s-purgatory</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/lough-derg-st-patrick-s-purgatory</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/lough-na-suil</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/lough-ree-monster</loc><lastmod>2026-06-12</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/lugh</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
@@ -489,7 +492,7 @@
   <url><loc>https://folklorefinder.uk/legends/pryderi</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/puck</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/pwyll-prince-of-dyfed</loc><lastmod>2026-06-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/queen-medb</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/queen-medb</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/ragnar-lothbrok</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/rathcoran</loc><lastmod>2026-05-30</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/rathcroghan</loc><lastmod>2026-05-30</lastmod><priority>0.6</priority></url>
@@ -566,6 +569,7 @@
   <url><loc>https://folklorefinder.uk/legends/the-dagda</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/the-dullahan</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/the-ghosts-of-doddington-hall</loc><lastmod>2026-06-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/the-giant-bica-of-llangrannog</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/the-green-knight</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/the-green-man</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/the-hawkhurst-gang</loc><lastmod>2026-06-13</lastmod><priority>0.6</priority></url>
@@ -576,6 +580,7 @@
   <url><loc>https://folklorefinder.uk/legends/the-morrigan</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/the-nine-witches-of-gloucester</loc><lastmod>2026-06-13</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/the-pipers</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/the-pirates-of-dollar-bay</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/the-pump-hill-smuggler</loc><lastmod>2026-06-12</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/the-ratman-of-southend</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/the-selkie</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
@@ -583,6 +588,7 @@
   <url><loc>https://folklorefinder.uk/legends/the-wherwell-cockatrice</loc><lastmod>2026-06-13</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/the-whitwick-giant</loc><lastmod>2026-06-13</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/the-wild-hunt</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/the-witch-of-east-somerton</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/the-witch-of-knocknashee</loc><lastmod>2026-06-10</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/the-wizards-of-cwrt-y-cadno</loc><lastmod>2026-06-10</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/thornton-road-poltergeist-claim</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
@@ -611,7 +617,7 @@
   <url><loc>https://folklorefinder.uk/legends/urisk</loc><lastmod>2026-06-08</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/veasta</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/warrior-of-the-gog-magog-hills</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/watlington-white-mark</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/watlington-white-mark</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/waun-mawn</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/wayland-the-smith</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/wayland-s-smithy</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
@@ -625,6 +631,7 @@
   <url><loc>https://folklorefinder.uk/legends/wild-man-of-orford</loc><lastmod>2026-06-08</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/will-o-the-wisp</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/william-kidd</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/william-owen-the-smuggler-general-of-pembrokeshire</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/william-wallace</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/wiltshire-moonrakers</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/winchester-round-table</loc><lastmod>2026-06-05</lastmod><priority>0.6</priority></url>

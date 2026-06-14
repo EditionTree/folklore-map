@@ -42,6 +42,7 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Spectral',seri
 .topnav a{font-family:'Marcellus',serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:rgba(242,232,213,0.78);text-decoration:none;padding:6px 14px;border-radius:3px;transition:background .15s,color .15s}
 .topnav a:hover{color:#f2e8d5;background:rgba(196,98,42,0.18)}
 .topnav a.active{color:var(--accent-warm)}
+@media(max-width:640px){.topnav{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;scrollbar-width:none}.topnav::-webkit-scrollbar{display:none}.topnav a{flex:0 0 auto;white-space:nowrap}}
 
 /* ── PAGE HEAD ── */
 .page-head{position:relative;background:linear-gradient(135deg,rgba(196,98,42,0.18) 0%,rgba(176,144,96,0.06) 35%,transparent 60%),linear-gradient(180deg,#1a0e06 0%,#2c1510 55%,#3d1e0c 100%);padding:54px 20px 56px;text-align:center;overflow:hidden}

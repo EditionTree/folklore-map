@@ -409,13 +409,20 @@ footer a{color:#c5b08e}
   .shell{width:min(100% - 24px,1180px)}
   .brand-name{font-size:14px}
   .brand-line{font-size:10px}
-  .hero{min-height:550px}
-  .hero::after{background:linear-gradient(0deg,rgba(10,10,9,.91) 0%,rgba(10,10,9,.55) 56%,rgba(10,10,9,.12) 100%)}
-  .hero img{object-position:center}
-  .hero-placeholder svg{right:5%;width:210px;height:210px;opacity:.35}
-  .hero-placeholder>span{right:18px;bottom:16px}
-  .hero-copy{width:100%;min-height:550px;padding:35px 25px;justify-content:flex-end}
-  h1{font-size:52px}
+  /* Single scrolling row of nav links instead of wrapping onto two lines. */
+  .topnav{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;scrollbar-width:none}
+  .topnav::-webkit-scrollbar{display:none}
+  .topnav a{flex:0 0 auto;white-space:nowrap}
+  /* Stack the hero on mobile: full 16:9 image banner above the text, instead
+     of overlaying the copy on a tall, heavily-cropped slice of the image. */
+  .hero{min-height:0}
+  .hero::after{display:none}
+  .hero img{position:static;display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+  .hero-placeholder{position:relative;aspect-ratio:16/9;height:auto}
+  .hero-placeholder svg{right:6%;width:40%;height:auto;aspect-ratio:1;opacity:.4}
+  .hero-placeholder>span{right:14px;bottom:12px}
+  .hero-copy{position:static;width:100%;min-height:0;padding:26px 24px 32px;background:#161b1e;justify-content:flex-start}
+  h1{font-size:46px}
   .standfirst{font-size:17px}
   .hero-caption{display:none}
   .content-grid{padding:38px 0 51px}

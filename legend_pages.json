@@ -740,8 +740,8 @@
     "Lancelot": {
       "priority": 50,
       "image": "legend-images/lancelot-hero.jpg",
-      "alt": "Lancelot in weathered mail standing beside his horse on a misty lakeside causeway at dawn",
-      "caption": "A visual interpretation of Lancelot divided between loyalty and love",
+      "alt": "Lancelot and a young squire carefully helping a wounded older knight down from a horse beside a misty lake",
+      "caption": "A visual interpretation of Lancelot as knight, companion and rescuer",
       "map_title": "Arthurian Britain",
       "section_heading": "The knight divided against himself",
       "pullquote": "The greatest knight of the Round Table and Arthur's closest companion - until love for Guinevere destroyed both.",
@@ -815,8 +815,8 @@
     "Gawain": {
       "priority": 55,
       "image": "legend-images/gawain-hero.jpg",
-      "alt": "Gawain in mail standing at the Green Chapel at sunrise with a green girdle tied around his waist",
-      "caption": "A visual interpretation of Gawain after the Green Knight's test",
+      "alt": "Gawain riding away from the distant Green Chapel while examining the green girdle wrapped around his hand",
+      "caption": "A visual interpretation of Gawain leaving the Green Chapel after his test",
       "map_title": "Scotland and Arthurian Britain",
       "section_heading": "The knight whose honour was tested",
       "pullquote": "His strange bargain with the Green Knight tested not his sword arm but his honour.",
@@ -845,8 +845,8 @@
     "Mordred": {
       "priority": 57,
       "image": "legend-images/mordred-hero.jpg",
-      "alt": "Mordred in weathered mail holding an iron crown amid the abandoned shields of Camlann",
-      "caption": "A visual interpretation of Mordred at the end of the Round Table",
+      "alt": "A shaved-headed Mordred seated over a campaign map with uneasy captains before Camlann",
+      "caption": "A visual interpretation of Mordred planning the campaign that ends the Round Table",
       "map_title": "East Lothian, Scotland",
       "section_heading": "The man who ended the Round Table",
       "pullquote": "The one who ends the Round Table, and cannot be entirely condemned for it.",
@@ -945,6 +945,51 @@
         "Setting": "A cave after defeat",
         "Symbol": "The persistent spider",
         "Local association": "Rathlin Island"
+      }
+    },
+    "Brigid": {
+      "priority": 64,
+      "image": "legend-images/brigid-hero.jpg",
+      "alt": "A cloaked woman tending a low sacred fire beside a timber church in an early Irish settlement at dawn",
+      "caption": "A visual interpretation of Brigid and the sacred flame tradition",
+      "map_title": "Ireland & Britain",
+      "section_heading": "The flame of spring",
+      "pullquote": "Christianised as Saint Brigid, her flame was tended for centuries at Kildare.",
+      "facts": {
+        "Type": "Goddess",
+        "Domains": "Fire, poetry, healing and smithcraft",
+        "Festival": "Imbolc",
+        "Legacy": "Saint Brigid and the Kildare flame"
+      }
+    },
+    "Children of Lir": {
+      "priority": 65,
+      "image": "legend-images/children-of-lir-hero.jpg",
+      "alt": "Four white swans gliding across dark coastal water beneath the cliffs of County Mayo at dawn",
+      "caption": "A visual interpretation of the Children of Lir on the western Irish coast",
+      "map_title": "County Mayo, Ireland",
+      "section_heading": "The long exile on the water",
+      "pullquote": "Their singing was so beautiful that all who heard it forgot their sorrows.",
+      "facts": {
+        "Form": "Four transformed swans",
+        "Duration": "Nine hundred years",
+        "Waters": "Lough Derravaragh, the Sea of Moyle and Erris",
+        "Gift": "Song that banishes sorrow"
+      }
+    },
+    "Avebury": {
+      "priority": 66,
+      "image": "legend-images/avebury-hero.jpg",
+      "alt": "Towering standing stones at Avebury rising from misty grass with the village beyond at dawn",
+      "caption": "A visual interpretation of Avebury at dawn",
+      "map_title": "Avebury, Wiltshire",
+      "section_heading": "The stones that move by night",
+      "pullquote": "At night the stones are said to move, drink from the stream, and return before dawn.",
+      "facts": {
+        "Type": "Stone circle",
+        "Scale": "Largest in the world",
+        "Setting": "Wiltshire village landscape",
+        "Motif": "Moving, counting and dancing stones"
       }
     }
   }

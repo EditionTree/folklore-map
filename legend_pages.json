@@ -856,6 +856,51 @@
         "Battle": "Camlann",
         "Motif": "The fall of the Round Table"
       }
+    },
+    "Henry Morgan": {
+      "priority": 58,
+      "image": "legend-images/henry-morgan-hero.jpg",
+      "alt": "Henry Morgan studying a sea chart with sailors in a storm-cleared seventeenth-century Caribbean harbour",
+      "caption": "A visual interpretation of Henry Morgan planning a Caribbean voyage",
+      "map_title": "Llanrumney, Cardiff",
+      "section_heading": "The privateer who became a pirate legend",
+      "pullquote": "Later retellings turned the historical governor and plantation owner into a larger-than-life pirate figure.",
+      "facts": {
+        "Period": "17th century",
+        "Role": "Welsh privateer",
+        "Traditional birthplace": "Llanrumney or Pencarn",
+        "Legacy": "Caribbean raider and governor"
+      }
+    },
+    "Fairy Flag of Dunvegan": {
+      "priority": 59,
+      "image": "legend-images/fairy-flag-of-dunvegan-hero.jpg",
+      "alt": "Clan custodians carefully unfurling an ancient silk banner in the storm-lit hall of Dunvegan Castle",
+      "caption": "A visual interpretation of the Fairy Flag being unfurled in a time of peril",
+      "map_title": "Dunvegan Castle, Isle of Skye",
+      "section_heading": "The banner kept for the darkest hour",
+      "pullquote": "Clan tradition says it can be unfurled in times of peril to bring victory.",
+      "facts": {
+        "Tradition": "Clan MacLeod folklore",
+        "Type": "Protective silk banner",
+        "Setting": "Dunvegan Castle",
+        "Limit": "Its magic can be used three times"
+      }
+    },
+    "Giant of the Wrekin": {
+      "priority": 60,
+      "image": "legend-images/giant-of-the-wrekin-hero.jpg",
+      "alt": "A colossal giant carrying a spadeful of earth meeting a travelling cobbler on the Shropshire plain",
+      "caption": "A visual interpretation of the trick that created the Wrekin",
+      "map_title": "The Wrekin, Shropshire",
+      "section_heading": "The hill made by a clever lie",
+      "pullquote": "A spiteful Welsh giant carrying a spadeful of earth to dam the Severn was tricked into thinking Shrewsbury was too far.",
+      "facts": {
+        "Tradition": "Shropshire folklore",
+        "Type": "Landscape creation legend",
+        "Setting": "The Wrekin",
+        "Motif": "A giant outwitted by a cobbler"
+      }
     }
   }
 }

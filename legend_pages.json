@@ -901,6 +901,51 @@
         "Setting": "The Wrekin",
         "Motif": "A giant outwitted by a cobbler"
       }
+    },
+    "William Wallace": {
+      "priority": 61,
+      "image": "legend-images/william-wallace-hero.jpg",
+      "alt": "William Wallace seen from behind directing Scottish spearmen across the narrow wooden bridge at Stirling",
+      "caption": "A visual interpretation of Wallace commanding at Stirling Bridge",
+      "map_title": "Stirlingshire, Scotland",
+      "section_heading": "The victory that became a legend",
+      "pullquote": "Wallace defeated the English at Stirling Bridge in 1297 and became an enduring symbol of resistance.",
+      "facts": {
+        "Period": "Late 13th century",
+        "Role": "Guardian of Scotland",
+        "Battle": "Stirling Bridge",
+        "Legacy": "Symbol of resistance"
+      }
+    },
+    "Spring-Heeled Jack": {
+      "priority": 62,
+      "image": "legend-images/spring-heeled-jack-hero.jpg",
+      "alt": "Spring-Heeled Jack breathing blue flame as he leaps between rooftops above a gaslit Victorian London street",
+      "caption": "A visual interpretation of Spring-Heeled Jack escaping across the London rooftops",
+      "map_title": "London",
+      "section_heading": "The terror above the gaslights",
+      "pullquote": "He could leap over rooftops, breathe blue flame, and vanished whenever cornered.",
+      "facts": {
+        "Period": "Victorian era",
+        "Type": "Urban supernatural figure",
+        "Setting": "London",
+        "Status": "Never caught or explained"
+      }
+    },
+    "Robert the Bruce": {
+      "priority": 63,
+      "image": "legend-images/robert-the-bruce-hero.jpg",
+      "alt": "A red-bearded Robert the Bruce seated in profile inside a sea cave, watching a spider rebuild its web",
+      "caption": "A visual interpretation of the spider inspiring Robert the Bruce",
+      "map_title": "Rathlin Island, County Antrim",
+      "section_heading": "The lesson in the cave",
+      "pullquote": "When the spider finally succeeded, its persistence inspired Bruce to continue his own struggle.",
+      "facts": {
+        "Tradition": "Scottish historical legend",
+        "Setting": "A cave after defeat",
+        "Symbol": "The persistent spider",
+        "Local association": "Rathlin Island"
+      }
     }
   }
 }

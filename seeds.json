@@ -544,14 +544,15 @@
     "lng": 0.7444,
     "category": "witch",
     "region": "Essex",
-    "summary": "Canewdon is a village and civil parish in the Rochford district of Essex, England. The village is located approximately 4 miles (6.4 km) northeast of the town of Rochford, while the parish extends for several miles on the southern side of the River Crouch. At the 2021 census the parish had a population of 1,656.",
+    "summary": "The Essex village of Canewdon was held to harbour six witches at all times — 'as many witches as there are trees in the churchyard' — and a master witch while the church tower stood, lore tied to the cunning-man George Pickingill.",
     "source": "https://en.wikipedia.org/wiki/Canewdon",
     "date_added": "2026-06-03",
     "tags": [
       "river",
       "england",
       "essex"
-    ]
+    ],
+    "detail": "Canewdon, on the high ground above the River Crouch, was for generations reckoned the most bewitched village in Essex. The saying ran that so long as the old church tower stood there would always be six witches in the parish, or in another telling 'as many witches as there are trees in the churchyard' — and that whenever a witch died, a stone would fall from the tower and another woman would take up the power.\n\nThe tradition gathered around the figure of George Pickingill, a nineteenth-century farm labourer and reputed cunning-man of Canewdon, said to command the local witches and to halt farm machinery until he was paid his due. Other tales told of running round the church at midnight to raise the spirits, or of witches who could stop a wagon dead in the road. Whatever the truth of Pickingill himself, the village's reputation made it a fixed point in the witch-lore of the Essex countryside."
   },
   {
     "name": "Cantre'r Gwaelod",
@@ -2397,7 +2398,7 @@
     "lng": 0.3333,
     "category": "beast",
     "region": "Cambridgeshire",
-    "summary": "\nIn the folklore of Cambridgeshire, the Shug Monkey is a creature that shares features of a dog and monkey, which reportedly haunted Slough Hill Lane. The creature, believed to have the body of a jet-black shaggy sheepdog and the face of a monkey with staring eyes, was believed to be a supernatural ghost or demon.",
+    "summary": "A creature half-shaggy-dog and half-ape said to haunt 'Shug Monkey Lane' near Brinkley in Cambridgeshire, padding the dark road on its hind legs with great saucer eyes and rattling claws.",
     "source": "https://en.wikipedia.org/wiki/Shug_Monkey",
     "date_added": "2026-06-03",
     "tags": [
@@ -2409,7 +2410,8 @@
       "haunting",
       "england",
       "cambridgeshire"
-    ]
+    ],
+    "detail": "The Shug Monkey belongs to the folklore of the Cambridgeshire fens and chalk, a nightmarish hybrid reported along a lane near Brinkley sometimes called Shug Monkey Lane. Witnesses described it as part shaggy black dog and part ape, able to shamble upright on its hind legs, with huge gleaming eyes and claws that scraped the road — a thing that would pad behind a lone walker or rush at children sent out after dark.\n\nIts name ties it to the wider East Anglian family of 'shuck' or 'shug' beasts — from Old English scucca, a demon — of which the Norfolk Black Shuck is the most famous. Where Shuck is a spectral hound, the Shug Monkey is stranger, a creature of indeterminate shape that captures the particular dread of the dark country lane, and it survived chiefly as a bogey to keep children off the road at night."
   },
   {
     "name": "Simonside Dwarfs",
@@ -3212,7 +3214,8 @@
       "church",
       "england",
       "cumbria"
-    ]
+    ],
+    "detail": "The Cumbrian village of Renwick, in the Eden valley below the Pennines, keeps a curious tale tied to the rebuilding of its church in 1733. As workmen pulled down the old building, they are said to have disturbed a monstrous winged creature — a cockatrice, or in some tellings a great bat — that flew up out of the foundations and terrified the parish until a brave villager, named in tradition as John Tallantire, killed it with a branch of rowan, the wood proof against evil.\n\nFor his deed Tallantire and his lands were said to have been freed from tithes, a detail that hints at a real local dispute dressed in legendary clothing. The story also gave the villagers their nickname, the 'Renwick Bats', and stands among the small clutch of English cockatrice legends — with Wherwell in Hampshire and others — in which a serpent-fowl hatched from a hidden egg must be put down by cunning or by a charmed weapon."
   },
   {
     "name": "Fad Felen",
@@ -3804,7 +3807,8 @@
       "guardian",
       "england",
       "isle of wight"
-    ]
+    ],
+    "detail": "The Gooseberry Wife is a nursery bogey of the Isle of Wight, conjured to keep children out of the fruit bushes before the gooseberries were ripe. She was said to take the form of a great hairy caterpillar, swollen and slow, who guarded the bushes and would seize any child who came creeping among them — 'if ye goos out in the gearden, the Gooseberry Wife'll be sure to ketch ye'.\n\nLike Peg Powler at the riverbank or the Awd Goggie among the orchards, she belongs to the class of 'nursery sprites' or 'cautionary spirits' that English country parents invoked to fence off danger or temptation. There is no grand legend attached to her, only the vivid threat of the watching caterpillar — but that small, strange figure preserves a whole vanished world of garden-magic and the careful guarding of a summer crop."
   },
   {
     "name": "Brown Man of the Muirs",
@@ -3869,7 +3873,8 @@
       "church",
       "england",
       "surrey"
-    ]
+    ],
+    "detail": "Mother Ludlam was the benevolent witch of Moor Park near Farnham in Surrey, who dwelt in a cave by the River Wey from which a spring still flows, called Mother Ludlam's Hole. Tradition held that she would lend household goods to any neighbour who came to the cave at midnight and asked aloud, provided the loan was returned within two days; pots, pans and tools would be found waiting at the cave mouth.\n\nThe spell broke when a borrower kept her great cauldron beyond the appointed time. In her anger Mother Ludlam refused ever to lend again, and the cauldron, passed from hand to hand, is said to have ended up in Frensham church a few miles off, where a large old copper cauldron is indeed kept and shown as hers to this day. In some versions the vessel is instead the Devil's, snatched from him as he leapt across the heath — leaving a chain of hollows known as the Devil's Jumps — a sign of how the kindly witch and the older spirit of the place became entangled."
   },
   {
     "name": "Dick Turpin",
@@ -4461,7 +4466,8 @@
       "trickery",
       "scotland",
       "angus"
-    ]
+    ],
+    "detail": "The legend is fixed to the country north of Dundee, around Strathmartine and Baldragon, whose very names were said to recall the tale. A farmer's nine daughters went one by one to a well in the moor, and each was seized and devoured by a great serpent or dragon that lay coiled there. When the last did not return, the father raised the alarm, and a young man named Martin — betrothed to one of the daughters — took up a club and went out against the beast.\n\nDriving it back blow by blow, the people cried 'Strike, Martin!' as he beat it down, and the place where it died was said to be remembered in the name Strathmartine, while a nearby spot was called Baldragon, the dragon's dwelling. The Martin Stone, a Pictish symbol stone still standing near Bridgefoot, bears a carved serpent that local tradition links to the slain dragon, tying the story to a real monument in the fields."
   },
   {
     "name": "Dragon of St Leonard's Forest",
@@ -4520,7 +4526,8 @@
       "spectral",
       "england",
       "staffordshire"
-    ]
+    ],
+    "detail": "On the lonely moorland road between Onecote and Leek, in the Staffordshire uplands, travellers have long told of a headless rider who appears at dusk. The horse is described as unnaturally large and dark, and where the rider's head should be there is only a severed neck; the apparition is said to ride down on the unwary before vanishing, sometimes blamed for spooking horses and overturning carts.\n\nLike many such hauntings of the English uplands, the tale gathers local detail without a single fixed origin — variously explained as a murdered drover, a highwayman, or a victim of some forgotten violence on the moor. The headless horseman belongs to a wider family of decapitated revenants found across Britain and Ireland, restless figures whose missing heads mark a death that was sudden, unjust, or unconsecrated."
   },
   {
     "name": "Devil's Dyke",
@@ -4968,7 +4975,8 @@
       "battle",
       "ireland",
       "county-sligo"
-    ]
+    ],
+    "detail": "One of the great love-tales of the Irish Fenian Cycle, the pursuit of Diarmuid and Grainne begins when Grainne, betrothed to the ageing Fionn mac Cumhaill, instead lays a binding geis on the young and handsome warrior Diarmuid Ua Duibhne, compelling him to carry her away on the eve of the wedding. For years the lovers are hunted the length of Ireland by Fionn and the Fianna, sheltering in woods and cromlechs — many a dolmen is still called 'the bed of Diarmuid and Grainne'.\n\nAt last a grudging peace is made, but Fionn's jealousy is not spent. Diarmuid is fated to die by a great boar, and when he is gored hunting the wild pig of Ben Bulben in Sligo, Fionn — who alone could heal him with a drink of water carried in his hands — twice lets the water slip away until it is too late. The tale, with its old king, young lovers and doomed hero, is a clear forerunner of the later romance of Tristan and Iseult."
   },
   {
     "name": "Deirdre of the Sorrows",
@@ -5053,7 +5061,8 @@
       "celtic",
       "wales",
       "pembrokeshire"
-    ]
+    ],
+    "detail": "Pryderi son of Pwyll and Rhiannon is the one figure who appears in all four branches of the Mabinogi, binding the great medieval Welsh prose cycle together. He is born at Dyfed and vanishes from his cradle the same night, snatched by a monstrous clawed arm; far away, the horse-lord Teyrnon cuts off the arm to save a foal, finds the child, and rears him until his likeness to Pwyll reveals him. Restored to his mother Rhiannon — falsely accused of his murder — he is given the name Pryderi, 'care' or 'anxiety'.\n\nAs a man he rules Dyfed, befriends Manawydan, and suffers the enchantment that lays his land waste in the third branch, when he and his mother are trapped at a magical fortress. In the fourth branch he is drawn into war with Gwynedd over a gift of otherworldly swine and is killed in single combat by the magician Gwydion, by magic as much as by strength. His life, from the stolen cradle to the enchanted ending, carries the deep folk-motifs of the lost and recovered child that run through the whole Mabinogi."
   },
   {
     "name": "Each-Uisge",
@@ -5131,7 +5140,8 @@
       "hill",
       "england",
       "northumberland"
-    ]
+    ],
+    "detail": "The Duergar are the malevolent dwarfs of the Northumberland border, taking their name and nature from the dark dwarves of Norse legend but localised to the wild country of the Simonside Hills above Rothbury. Unlike the helpful brownie, they mean only harm: solitary and cunning, they are said to kindle false lights on moonless nights to lure benighted travellers from the safe track and lead them to the edge of a crag or bog before vanishing, leaving the victim stranded in the dark.\n\nThe best-known tale tells of a traveller who shelters in a lonely hut and finds a Duergar sharing his fire. Through the long night the creature tries to trick him into crossing the hearth or gathering wood from beyond it, but the man sits fast until dawn — when hut, fire and dwarf all melt away and he finds himself on the lip of a sheer drop, saved only by his stillness. The Simonside Hills kept their reputation as a place no wise man crossed after dark."
   },
   {
     "name": "Bodach",
@@ -5757,7 +5767,8 @@
       "mountain",
       "wales",
       "gwynedd"
-    ]
+    ],
+    "detail": "The Gwragedd Annwn — the wives or maidens of Annwn, the Welsh otherworld — are the lake-fairies of the mountain tarns of Wales, gentler than the treacherous water-spirits of other traditions. Unlike the kelpie or the nix, they are beautiful and benign, and the tales most often tell of one taken as a mortal man's wife. At Llyn Barfog above Aberdyfi they were remembered with their fairy cattle, the gwartheg y llyn, that came up out of the water.\n\nThe most famous version is the Lady of Llyn y Fan Fach, who agreed to marry a young farmer on the condition that he never strike her three causeless blows. Over the years three light, accidental taps — at a christening, a wedding and a funeral — fulfilled the geas, and she returned to the lake with all her dowry of cattle. Before she vanished she had borne sons who became the Physicians of Myddfai, whose celebrated herbal cures were said to be her parting gift to the mortal world."
   },
   {
     "name": "Gwyllgi",
@@ -5827,7 +5838,8 @@
       "vanishing",
       "england",
       "shropshire"
-    ]
+    ],
+    "detail": "Wild Edric — Eadric the Wild — was a real Anglo-Saxon thane of the Welsh Marches who led resistance against the Normans after 1066, and around his name the Shropshire hills wove an early fairy-bride legend. Riding home through the forest, he is said to have come upon a company of beautiful women dancing in a great house and seized one of them, Godda, for his wife. She consented on the condition that he never reproach her with her sisters or her fairy origin; for years they were happy, until in anger he taunted her and she vanished, and grief soon brought about his death.\n\nIn another and older strand, Edric does not die but is bound beneath the earth, condemned with his men and his lady to ride forever through the lead mines of the Stiperstones. There they sleep until England is in danger, when Wild Edric's host is said to ride out across the hills — a sighting reported, the tradition claims, before the Crimean War and again before the World Wars, marking him as one of Britain's many sleeping deliverers."
   },
   {
     "name": "Tom Hickathrift",

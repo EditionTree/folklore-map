@@ -9904,5 +9904,425 @@
       "england",
       "norfolk"
     ]
+  },
+  {
+    "name": "Gill, the Hammer-Throwing Giant of Mount Caburn",
+    "lat": 50.8814,
+    "lng": 0.0186,
+    "category": "giant",
+    "region": "Mount Caburn, East Sussex",
+    "summary": "Sussex tradition set a giant named Gill on the Iron-Age hillfort of Mount Caburn above Lewes, who amused himself by hurling his great hammer from the summit out across the Downs.",
+    "detail": "Mount Caburn, the steep Iron-Age hillfort that rises above the village of Glynde near Lewes, is remembered in Sussex folklore as the seat of a giant named Gill. Like the giants said to have once walked the whole chalk range of the South Downs, he was a hill-dweller of enormous strength, and the tale most often told of him is that he passed the time by flinging his huge hammer from the top of the Caburn far out over the surrounding country.\n\nThe motif of the hammer-throwing giant — measuring his might by the distance of the cast, and leaving the landing-place marked in the landscape — is common across the chalk hills of southern England, where prominent earthworks and barrows were readily explained as the work or the playthings of giants. Gill of the Caburn belongs to that older imaginative geography, in which the great green ramparts above Lewes were not the labour of Iron-Age people but the home of a being vast enough to throw his hammer across the Downs.",
+    "source": "http://www.sussexarch.org.uk/saaf/giants.html",
+    "date_added": "2026-06-14",
+    "tags": [
+      "hill",
+      "england",
+      "sussex"
+    ]
+  },
+  {
+    "name": "Janet Horne",
+    "lat": 57.881,
+    "lng": -4.028,
+    "category": "witch",
+    "region": "Dornoch, Sutherland",
+    "summary": "At Dornoch in 1727, an old and confused woman became the last person legally executed for witchcraft in the British Isles — accused of turning her own daughter into a pony shod by the Devil.",
+    "detail": "Janet Horne — the name is partly a convention, 'Jenny Horne' being a generic Highland nickname for a witch — was an elderly woman of Dornoch in Sutherland, by all accounts senile, whose daughter had a deformity of the hands and feet. Her neighbours seized on this, accusing the old woman of having used her daughter as a pony to ride to the Devil, who had shod the girl for the journey.\n\nThe local sheriff-depute condemned her, and in 1727 Janet Horne was stripped, smeared with tar, paraded through the town in a barrel and burned. Tradition holds that, bewildered to the end, she warmed her hands at the very fire being readied to kill her. Her death is remembered as the last legal execution for witchcraft in the British Isles; the Witchcraft Act was repealed nine years later. A stone in the Littletown district of Dornoch, the Witch's Stone, is said to mark the spot, though even the date is disputed between 1722 and 1727 — a measure of how poorly the killing of a confused old woman was recorded.",
+    "source": "https://en.wikipedia.org/wiki/Janet_Horne",
+    "date_added": "2026-06-14",
+    "tags": [
+      "curse",
+      "scotland",
+      "sutherland",
+      "highland"
+    ]
+  },
+  {
+    "name": "Maggie Wall",
+    "lat": 56.304,
+    "lng": -3.595,
+    "category": "witch",
+    "region": "Dunning, Perthshire",
+    "summary": "A 20-foot cairn near Dunning, topped with a cross and painted 'Maggie Wall burnt here 1657 as a witch', memorialises a woman for whom no historical record exists — a monument to all Scotland's accused.",
+    "detail": "On a quiet road outside Dunning in Perthshire stands one of Scotland's strangest monuments: a rough cairn some twenty feet high, crowned by a cross, on which is painted in white letters 'Maggie Wall burnt here 1657 as a witch'. Visitors leave coins, feathers, flowers and candles at its foot, and the inscription is repainted by unknown hands to keep it legible.\n\nThe mystery is that no Maggie Wall appears in any record. The exhaustive Survey of Scottish Witchcraft, which lists every documented trial between 1563 and 1736, contains no such woman, and the monument itself seems to date only from the late eighteenth century. Whether she existed, or whether the cairn commemorates some half-remembered local victim under an invented name, has never been resolved. In its very anonymity the monument has become something larger — a memorial to the thousands of mostly poor women accused and killed in Scotland's witch-hunts, a named stone standing in for all the nameless.",
+    "source": "https://en.wikipedia.org/wiki/Maggie_Wall",
+    "date_added": "2026-06-14",
+    "tags": [
+      "curse",
+      "scotland",
+      "perthshire"
+    ]
+  },
+  {
+    "name": "Tamsin Blight",
+    "lat": 50.103,
+    "lng": -5.272,
+    "category": "witch",
+    "region": "Helston, Cornwall",
+    "summary": "Known as 'Tammy Blee', the White Witch of Helston was the most famous of Cornwall's pellars — a healer and curse-breaker so sought after that the dying were carried to her bedside to be cured.",
+    "detail": "Tamsin Blight (1798–1856), called locally Tammy Blee, was the best-remembered of the Cornish pellars — the conjurors, charmers and white witches of the far west who undid the spells of others and dealt in cures and charms. From her home at Helston she was sought out by fishermen wanting protection at sea, farmers with sick beasts, and the bewitched wanting their ill-wishing lifted; young women came to learn the name of their future husbands.\n\nHer fame was such that, on her deathbed, the sick are said to have been carried to her on stretchers and laid beside her, only to rise up cured and walk down the stairs. A darker Cornish tale, 'The Ghost of Stythians', remembers her raising a dead woman's spirit in the churchyard to reveal where hidden money lay, working within a charmed ring and calling on the spirits of fire, air, earth and water amid groans and crashing. Tamsin Blight preserves the living memory of Cornish folk-magic, where the line between healer and witch was one the community itself was content to leave blurred.",
+    "source": "https://www.cornwallforever.co.uk/people/tamsin-blight",
+    "date_added": "2026-06-14",
+    "tags": [
+      "healing",
+      "prophecy",
+      "england",
+      "cornwall"
+    ]
+  },
+  {
+    "name": "Cruel Coppinger",
+    "lat": 50.91,
+    "lng": -4.554,
+    "category": "pirate",
+    "region": "Morwenstow, Cornwall",
+    "summary": "A fearsome Dane flung ashore by shipwreck on the north Cornish coast, 'Cruel Coppinger' press-ganged the locals into a band of smugglers and wreckers, ruling the cliffs by terror.",
+    "detail": "Cruel Coppinger is the dark legend of the north Cornish coast around Morwenstow and Welcombe, a semi-historical figure swollen by folklore into something near demonic. The story tells of a huge and terrible Dane cast ashore from a wreck in a storm, who seized a local heiress, took over her house and lands, and gathered the smugglers and wreckers of the coast into a gang that he ruled by fear, threatening death to any who showed mercy to shipwrecked sailors.\n\nThe legend as it survives was largely shaped by the Reverend Robert Stephen Hawker, vicar of Morwenstow, who collected the local tales and published them — with embellishments of his own — in Charles Dickens's magazine All the Year Round in 1866. Behind the myth lie probably one or two real Coppingers, shipwreck survivors and smugglers active around 1792–93, conflated and magnified into a single monstrous outlaw. He is said to have vanished as he came, carried off the coast in a storm, leaving the cliffs of Hartland and Morwenstow to keep his fearsome name.",
+    "source": "https://en.wikipedia.org/wiki/Cruel_Coppinger",
+    "date_added": "2026-06-14",
+    "tags": [
+      "sea",
+      "coast",
+      "england",
+      "cornwall"
+    ]
+  },
+  {
+    "name": "John Carter, the King of Prussia",
+    "lat": 50.097,
+    "lng": -5.409,
+    "category": "pirate",
+    "region": "Prussia Cove, Cornwall",
+    "summary": "The most successful smuggler of the Penzance coast renamed his secret cove 'Prussia Cove' for his hero Frederick the Great, and once broke into the Penzance Custom House to take back his own seized goods.",
+    "detail": "John Carter (active c.1777–1807) was the leader of a famous smuggling family of the south Cornish coast and went by the nickname the 'King of Prussia' — given him, it is said, because as a boy he always insisted on being king in his brothers' games and idolised Frederick the Great. The secluded inlet his family worked, once called Porthleah, became known as Prussia Cove in his honour, and with its neighbouring coves of Bessie's and Pisky's it was so hidden beneath the cliffs that no revenue cutter could spot a vessel unloading there.\n\nThe Carters ran a large, well-armed and famously well-organised operation, with their own gun-cutter and lugger and an intimate knowledge of the Cornish and French shores. The most celebrated tale of John Carter is that, when a cargo of his tea was seized and locked in the Custom House at Penzance, he and his men broke in by night and carried off only what was rightfully his — leaving everything else untouched, so that the officers concluded 'honest John Carter' had been there. He died in 1803, a smuggler whose reputation for fair dealing made him a folk-hero of the Cornish coast.",
+    "source": "https://en.wikipedia.org/wiki/Carters_of_Prussia_Cove",
+    "date_added": "2026-06-14",
+    "tags": [
+      "sea",
+      "coast",
+      "trickery",
+      "england",
+      "cornwall"
+    ]
+  },
+  {
+    "name": "Eustace the Monk",
+    "lat": 51.276,
+    "lng": 1.34,
+    "category": "pirate",
+    "region": "English Channel",
+    "summary": "A renegade monk turned mercenary pirate, Eustace terrorised the Channel for both England and France in the early 1200s — and was rumoured to have learned black magic in a cave at Toledo.",
+    "detail": "Eustace Busket, known as Eustace the Monk, was the most feared pirate of the English Channel in the early thirteenth century. Born to a noble family near Boulogne around 1170, he entered a monastery as a young man but abandoned it for a career as an outlaw, mercenary and sea-captain, at one point commanding a fleet of some thirty ships and seizing the Channel Islands as a base from which to dominate the Strait of Dover.\n\nHe sold his services to whoever paid — first to King John of England, then to the French — and the romance written about him after his death gave him a sinister glamour, claiming he had travelled to Toledo to study black magic in a cave, learning to make ships invisible and to raise storms. None of the sorcery is found in sober sources, but it shows how completely legend had claimed him. His career ended at the naval Battle of Sandwich in 1217, when his fleet was defeated; captured aboard his flagship, he was beheaded on the deck and his head paraded on a lance through the towns of the Cinque Ports.",
+    "source": "https://en.wikipedia.org/wiki/Eustace_the_Monk",
+    "date_added": "2026-06-14",
+    "tags": [
+      "sea",
+      "battle",
+      "trickery",
+      "english-channel"
+    ]
+  },
+  {
+    "name": "Jack o' Legs",
+    "lat": 51.952,
+    "lng": -0.158,
+    "category": "giant",
+    "region": "Weston, Hertfordshire",
+    "summary": "A giant outlaw of Weston in Hertfordshire who robbed the rich to feed the poor like a giant Robin Hood, and at his execution shot a final arrow three miles to mark his own grave.",
+    "detail": "In Hertfordshire folklore Jack o' Legs was a giant — fourteen feet tall in some tellings — who lived in a cave in the woods near Weston and behaved like a giant Robin Hood, a famous archer who robbed wealthy travellers, especially the grasping bakers of Baldock, and shared the spoils with the poor of the district. At last the bakers caught him, blinded him, and condemned him to hang at Baldock.\n\nGranted a final request, Jack asked to shoot one last arrow and to be buried where it fell. He loosed it from the gallows and it flew three miles to land in the churchyard of Holy Trinity at Weston, where two stones set some fourteen feet apart are still pointed out as the head and foot of his grave. The legend was old by the sixteenth century — the poet John Skelton alluded to 'the gibbet of Baldock... made for Jack Leg' around 1521, and the antiquary Nathanael Salmon recorded the full tale in his History of Hertfordshire in 1728.",
+    "source": "https://en.wikipedia.org/wiki/Jack_o%27_Legs",
+    "date_added": "2026-06-14",
+    "tags": [
+      "cave",
+      "guardian",
+      "england",
+      "hertfordshire"
+    ]
+  },
+  {
+    "name": "Wade and Bell",
+    "lat": 54.495,
+    "lng": -0.687,
+    "category": "giant",
+    "region": "Mulgrave, North Yorkshire",
+    "summary": "The giant Wade and his wife Bell built castles by throwing their single hammer to each other across the moors, and Wade laid a great paved road so Bell could cross to milk her cow.",
+    "detail": "In the folklore of the North York Moors, the giant Wade and his wife Bell were the builders of the landscape. Bell raised Mulgrave Castle and Wade built Pickering Castle, working at the same time across the moors and sharing a single great hammer that they flung back and forth to one another over the miles between. To help Bell reach the cow she pastured on the far side of the high moor, Wade is said to have laid down a great paved road — the ancient causeway on Wheeldale Moor still called Wade's Causeway.\n\nOther features were credited to their domestic quarrels: in a fit of temper Wade scooped up a handful of earth to hurl at Bell, and the hollow he tore out became the great natural amphitheatre of the Hole of Horcum, while the flung clod missed her and landed as the hill of Blakey Topping. Behind the giant may lie a dim memory of a real Wada, an Anglian nobleman of considerable power in eighth-century Northumbria; folklore simply enlarged him, and his wife, to a scale fit to shape the moors themselves.",
+    "source": "https://www.mysteriousbritain.co.uk/legends/wade-and-his-wife/",
+    "date_added": "2026-06-14",
+    "tags": [
+      "road",
+      "castle",
+      "england",
+      "yorkshire"
+    ]
+  },
+  {
+    "name": "The Dragon of Loschy Hill",
+    "lat": 54.204,
+    "lng": -0.957,
+    "category": "dragon",
+    "region": "Nunnington, North Yorkshire",
+    "summary": "A knight named Peter Loschy fought a self-healing dragon in razor-edged armour while his faithful hound carried the severed pieces away — then the dog's grateful lick of poison killed them both.",
+    "detail": "The Dragon of Loschy Hill, in the parish of Stonegrave near Nunnington in North Yorkshire, was a beast with the power to knit its severed body back together, so that no blow could finish it. A knight named Peter Loschy resolved to kill it, and had armour made set all over with razor blades, so that every time the dragon coiled to crush him it cut itself to pieces against him.\n\nStill the parts crawled back together — until Loschy's faithful hound seized each severed piece in its jaws and carried it off to a hill a mile away, keeping the dragon from healing while its master hacked it apart. When at last the beast was dead, the joyful dog leapt up to lick its master's face; but Loschy's armour and skin were smeared with the dragon's venom, and the loving lick poisoned them both. The grateful villagers buried the knight beside his hound in Nunnington church, where a worn effigy of a knight with a dog at his feet is still shown as the memorial of the tale, recorded by the Reverend Thomas Parkinson in 1888.",
+    "source": "https://www.mysteriousbritain.co.uk/legends/all-saints-church-nunnington-and-the-dragon-of-loschy-wood/",
+    "date_added": "2026-06-14",
+    "tags": [
+      "serpent",
+      "dog",
+      "death-omen",
+      "england",
+      "yorkshire"
+    ]
+  },
+  {
+    "name": "The Henham Dragon",
+    "lat": 51.946,
+    "lng": 0.222,
+    "category": "dragon",
+    "region": "Henham, Essex",
+    "summary": "In 1669 a pamphlet, 'The Flying Serpent, or Strange News out of Essex', reported a nine-foot winged serpent at Henham — almost certainly a hoax, but one that gave the village a festival and a legend.",
+    "detail": "In the summer of 1669 the Essex village of Henham, near Saffron Walden, was gripped by reports of a flying serpent or dragon haunting the woods. The writer William Winstanley published a sensational pamphlet, The Flying Serpent, or Strange News out of Essex, describing a creature some nine feet long with curious feathers about its eyes and small wings, seen on the 27th and 28th of May and witnessed, it claimed, by a churchwarden, a constable and other respectable men.\n\nIt was almost certainly a hoax — likely Winstanley's own — got up with a wood-and-canvas serpent worked by a hidden man and paraded about Birch Wood, the 'witnesses' being his friends in on the joke. But the dragon took root: a few years later the villagers were said to hold the Henham Fair, selling little models of the serpent, and the creature still appears on the village sign. The episode is one of the best-documented 'monster' panics of seventeenth-century England, and is sometimes counted among the inspirations for Sarah Perry's novel The Essex Serpent.",
+    "source": "https://www.henhamhistory.org/henham-dragon/",
+    "date_added": "2026-06-14",
+    "tags": [
+      "serpent",
+      "bird",
+      "trickery",
+      "england",
+      "essex"
+    ]
+  },
+  {
+    "name": "Piers Shonks",
+    "lat": 51.972,
+    "lng": 0.058,
+    "category": "hero",
+    "region": "Brent Pelham, Hertfordshire",
+    "summary": "A giant lord of Brent Pelham slew a dragon under a yew, then outwitted the vengeful Devil by being buried inside the church wall — neither in the church nor out of it, beyond the Devil's claim.",
+    "detail": "Sir Piers Shonks is the dragon-slayer of Brent Pelham in Hertfordshire, remembered as a benevolent giant, twenty feet tall, who was lord of the manor and rid the district of a monstrous serpent that lairing in a cave beneath an ancient yew. Riding out from his moated house with his hounds, he drove his lance down the dragon's throat and killed it.\n\nNo sooner was the beast dead than the Devil appeared, furious at the loss of his favourite, and swore to have Shonks's soul whether he were buried inside the church or outside it. Dying, Shonks called for his bow and loosed a last arrow, vowing to be buried wherever it fell; it flew across the village and struck the north wall of St Mary's church, lodging in the stone — and there he was entombed, neither within the church nor without, so cheating the Devil of his claim. His coffin-slab, carved with a cross, a dragon, and an angel bearing up a soul, is set into the church wall at Brent Pelham to this day.",
+    "source": "https://en.wikipedia.org/wiki/Piers_Shonks",
+    "date_added": "2026-06-14",
+    "tags": [
+      "serpent",
+      "church",
+      "guardian",
+      "england",
+      "hertfordshire"
+    ]
+  },
+  {
+    "name": "The Anwick Dragon",
+    "lat": 53.027,
+    "lng": -0.341,
+    "category": "dragon",
+    "region": "Anwick, Lincolnshire",
+    "summary": "At Anwick a ploughman's horse was swallowed by quicksand and a winged drake flew from the hole; the boulders left behind, the Drake Stones, are said to guard the Devil's hidden treasure.",
+    "detail": "The Lincolnshire village of Anwick keeps the legend of the Drake Stones, two great boulders that stand outside the churchyard wall of St Edith's. The tale tells of a farmer ploughing the field when his horse and plough were suddenly sucked down into a patch of quicksand and lost; as the horse vanished beneath the ground, a drake — a dragon — rose up out of the hole and flew away. Where it had been, the villagers found a stone shaped like a drake's head.\n\nThe stones were believed to cap the Devil's cave and to hide buried treasure, but they could not be moved. One man yoked all the oxen he could borrow and chained them to the great stone; the beasts strained and shifted it a little, but the chains snapped, the oxen collapsed, and the guardian spirit of the hoard burst out from beneath in the form of a drake. In the nineteenth century the larger stone was dragged to the church and broke in the moving, becoming the two 'Drake Stones' shown today — glacial erratics that folklore turned into the lair of a treasure-guarding dragon.",
+    "source": "https://lincolnshirefolktalesproject.com/2024/02/09/the-drake-stone/",
+    "date_added": "2026-06-14",
+    "tags": [
+      "serpent",
+      "treasure",
+      "church",
+      "england",
+      "lincolnshire"
+    ]
+  },
+  {
+    "name": "The Girt Dog of Ennerdale",
+    "lat": 54.522,
+    "lng": -3.378,
+    "category": "beast",
+    "region": "Ennerdale, Cumbria",
+    "summary": "Through the summer of 1810 a mysterious dog killed hundreds of sheep across the Cumberland fells, draining their blood and eating only the choicest parts, eluding huge hunts before it was finally shot.",
+    "detail": "The Girt Dog of Ennerdale was a real terror of the Cumberland fells in 1810, but one that passed swiftly into legend. From May to September a single elusive animal killed between three and four hundred sheep across the high ground around Ennerdale, and what unnerved the dalesmen was its manner: it drained its victims of blood, ate only the choicest parts, and slew far more than it could eat, sometimes eight sheep in a night.\n\nA reward was posted and great hunts were mounted — on one July day two hundred men with hounds combed the Kinniside fells — but the creature evaded them all, seeming to vanish and reappear at will. It was finally shot in September 1810 by a man named John Steel; the carcass weighed over a hundredweight and was stuffed and displayed in a Keswick museum. Its strange habits — the blood-draining, the taste for soft organs — have led some to wonder, fancifully, whether it was an escaped thylacine; in the dales it simply became the 'Girt Dog', a flesh-and-blood beast that hunted like a phantom.",
+    "source": "https://en.wikipedia.org/wiki/Girt_dog_of_Ennerdale",
+    "date_added": "2026-06-14",
+    "tags": [
+      "dog",
+      "death-omen",
+      "england",
+      "cumbria"
+    ]
+  },
+  {
+    "name": "Skriker",
+    "lat": 53.79,
+    "lng": -2.4,
+    "category": "beast",
+    "region": "Lancashire",
+    "summary": "A death-omen of Lancashire and the Pennines, the Skriker wanders the night woods uttering a horrible shriek, or pads unseen on great splashing feet — to hear it was to know a death was near.",
+    "detail": "The Skriker — its name from the dialect word for a shriek — is a spectral death-omen of Lancashire and the West Riding, a creature that haunts the night woods and lonely roads of the Pennine country. Often it gives its warning not by being seen but by its dreadful cry, a piercing screech in the dark; to hear it was to know that a death would soon come to one's family or close friends.\n\nWhen it does take shape it appears as a huge black dog with broad, drooping ears, shaggy hair and great glowing eyes, padding along on enormous feet that make a wet splashing sound — 'like old shoes in soft mud' — from which it earns its other name, Trash. It can also show itself as a white cow or horse, and walks backwards before the traveller, or vanishes into the ground when challenged. The Skriker belongs to the great northern family of barguests and padfoots, the phantom hounds that patrol the threshold between the living and the dead across the hills of northern England.",
+    "source": "https://britishfairies.wordpress.com/tag/skriker/",
+    "date_added": "2026-06-14",
+    "tags": [
+      "dog",
+      "black",
+      "death-omen",
+      "england",
+      "lancashire"
+    ]
+  },
+  {
+    "name": "The Drummer of Tedworth",
+    "lat": 51.234,
+    "lng": -1.66,
+    "category": "ghost",
+    "region": "Tidworth, Wiltshire",
+    "summary": "After a Wiltshire magistrate confiscated a vagrant drummer's drum in 1662, his house was tormented by phantom drumming and flying objects — England's most famous early poltergeist case.",
+    "detail": "The Drummer of Tedworth is England's most celebrated early poltergeist, centred on the household of John Mompesson, a magistrate of Tedworth (modern Tidworth) in Wiltshire, between 1662 and 1663. Mompesson had prosecuted a wandering ex-soldier and drummer, William Drury, for collecting money under false pretences, and had his drum confiscated. Soon after the drum was brought to Mompesson's house, the family began to suffer nightly torments: phantom drumming on the roof and walls, scratchings, objects flung about, children lifted in their beds, and foul smells.\n\nThe disturbances drew sightseers from across the country, including agents of the king, and Drury — by then transported for theft — was said to have boasted that he had plagued the magistrate and would give him no peace until his drum was returned. The clergyman Joseph Glanvill investigated and made the case the centrepiece of his Saducismus Triumphatus (1681), arguing it as proof of the reality of spirits against the new scepticism of the age. Whether trickery, hysteria or something stranger, the Tedworth drumming became the model for every English poltergeist story that followed.",
+    "source": "https://en.wikipedia.org/wiki/Drummer_of_Tedworth",
+    "date_added": "2026-06-14",
+    "tags": [
+      "haunting",
+      "curse",
+      "england",
+      "wiltshire"
+    ]
+  },
+  {
+    "name": "Cat Sìth",
+    "lat": 57.0,
+    "lng": -4.8,
+    "category": "beast",
+    "region": "Scottish Highlands",
+    "summary": "A great spectral black cat with a white spot on its breast, the Cat Sìth of the Highlands was feared as a fairy or a witch in disguise, and could steal the soul of a corpse before burial.",
+    "detail": "The Cat Sìth — the 'fairy cat' — is a creature of Scottish Highland and Gaelic folklore, a large black cat the size of a dog with a single white spot upon its breast, seen slipping through the night with its back arched and fur bristling. Some held it to be a fairy; others believed it was a witch who could take cat-form nine times, but who would be trapped in the shape forever if she changed a ninth time.\n\nThe Cat Sìth was most feared around death. It was believed that the fairy cat would try to steal the soul of a corpse before it was buried, by passing over the body, and so the Highlanders kept the 'Late Wake' or Fèill Fhadalach — watching the dead night and day, distracting the cat with games, riddles and music, and keeping no fire in the room, since warmth was thought to draw it. At Samhain a saucer of milk left out would win a household the Cat Sìth's blessing, while those who offered none would find their cows dry. The creature is often linked to the King of the Cats tales told across the Highlands.",
+    "source": "https://en.wikipedia.org/wiki/Cat_s%C3%ACth",
+    "date_added": "2026-06-14",
+    "tags": [
+      "cat",
+      "black",
+      "transformation",
+      "death-omen",
+      "scotland",
+      "highland",
+      "celtic"
+    ]
+  },
+  {
+    "name": "The Hairy Hands",
+    "lat": 50.595,
+    "lng": -3.91,
+    "category": "ghost",
+    "region": "Dartmoor, Devon",
+    "summary": "On a lonely stretch of Dartmoor road, a pair of disembodied hairy hands are said to seize the steering or handlebars of passing travellers and wrench them off the road to their doom.",
+    "detail": "The Hairy Hands haunt a stretch of the B3212 road across Dartmoor, between Postbridge and Two Bridges, where a run of crashes in the early twentieth century gave rise to one of the moor's most unsettling legends. Motorists and motorcyclists told of a disembodied pair of large, muscular, hairy hands that would suddenly appear and grip the steering wheel or handlebars, forcing the vehicle off the road; a noted case in 1921 involved an army medical officer thrown from his motorcycle after, he said, a force wrenched the controls from his grasp.\n\nReports multiplied through the 1920s — a caravan was said to be visited at night by the hands pressing against the window — and the local belief grew that some malevolent presence on that bleak crossing of the moor reached out for the unwary. The road was eventually re-cambered, and the crashes were doubtless owed to a genuinely dangerous bend, but the Hairy Hands have kept their grip on Dartmoor's imagination as a peculiarly modern haunting, a ghost of the motor age clinging to one of the loneliest roads in England.",
+    "source": "https://www.legendarydartmoor.co.uk/hairy_hand.htm",
+    "date_added": "2026-06-14",
+    "tags": [
+      "haunting",
+      "road",
+      "death-omen",
+      "england",
+      "devon"
+    ]
+  },
+  {
+    "name": "The Mistletoe Bough",
+    "lat": 51.797,
+    "lng": -1.531,
+    "category": "ghost",
+    "region": "Minster Lovell, Oxfordshire",
+    "summary": "A young bride, hiding in an old oak chest during a wedding game of hide-and-seek, was trapped by its spring-lock and never found — her skeleton discovered in the chest long years after.",
+    "detail": "The legend of the Mistletoe Bough is one of England's most haunting domestic tragedies, attached to several great houses — Minster Lovell Hall in Oxfordshire and Bramshill in Hampshire chief among them. On her wedding night, the story runs, the young bride proposed a game of hide-and-seek through the rambling old house, and chose as her hiding place a great oak chest in a forgotten attic. The heavy lid fell and its hidden spring-lock snapped shut, and she could neither raise it nor be heard.\n\nThe wedding party searched in vain; the bridegroom spent his life grieving for a wife who had simply vanished on the night of their marriage. Only many years later, the tale ends, was the old chest opened and the skeleton found within, still in its bridal dress, a withered garland beside it — the bride who had hidden too well. Popularised by Thomas Haynes Bayly's nineteenth-century ballad 'The Mistletoe Bough', the story fixed itself to crumbling manor houses across the country, each claiming the fatal chest, and remains a favourite of English Christmas ghost-telling.",
+    "source": "https://en.wikipedia.org/wiki/The_Mistletoe_Bough",
+    "date_added": "2026-06-14",
+    "tags": [
+      "haunting",
+      "love",
+      "england",
+      "oxfordshire"
+    ]
+  },
+  {
+    "name": "Owain Glyndŵr",
+    "lat": 52.974,
+    "lng": -3.32,
+    "category": "hero",
+    "region": "Glyndyfrdwy, Denbighshire, Wales",
+    "summary": "The last native Prince of Wales, who raised a great revolt against English rule and then vanished without trace — and whom tradition makes a sleeping hero who will return at his country's need.",
+    "detail": "Owain Glyndŵr (c.1359–c.1415) was the last Welshman to hold the title Prince of Wales, who in 1400 rose in revolt against the rule of Henry IV and for over a decade led a war that at its height controlled much of the country, summoned a Welsh parliament and dreamed of an independent Wales with its own church and universities. As the rebellion failed and his strongholds fell, Glyndŵr did not surrender or die in any recorded battle: he simply disappeared around 1415, and no one ever learned where he was buried.\n\nThat vanishing turned the historical prince into a figure of legend. Like Arthur and other 'sleeping heroes', Owain is said in folk tradition not to be dead but hidden — sleeping in a cave with his men, or simply waiting unseen — ready to return and lead his people when Wales has need of him again. Shakespeare gave him an air of the uncanny in Henry IV, having him 'call spirits from the vasty deep', and across Wales his name became, and remains, the enduring symbol of national identity and the hope of deliverance.",
+    "source": "https://en.wikipedia.org/wiki/Owain_Glynd%C5%75r",
+    "date_added": "2026-06-14",
+    "tags": [
+      "prophecy",
+      "cave",
+      "wales",
+      "denbighshire"
+    ]
+  },
+  {
+    "name": "The Brag",
+    "lat": 55.2,
+    "lng": -1.9,
+    "category": "beast",
+    "region": "Northumberland",
+    "summary": "A mischievous shape-shifting goblin of Northumberland, the Brag took the form of a white horse, a calf or a naked man to lure travellers into mounting it — then tipped them into a pond and fled laughing.",
+    "detail": "The Brag is a shape-shifting bogie of Northumberland, kin to the Picktree Brag and the wider family of mischievous Border goblins. Its favourite trick was to appear as a fine white horse, saddled and inviting, standing by a lonely road; any traveller who climbed onto its back would be carried off at a wild gallop, plunged through a hedge or into a pond, and left soaked and shaken as the creature bolted away with a great neighing laugh.\n\nBut the Brag was a true shape-changer and took many other forms — a calf with a white handkerchief about its neck, four men carrying a white sheet, a dog, or even a naked headless man — each meant to startle, mislead or terrify the benighted wayfarer rather than to do real harm. Like the Hedley Kow of the same county, it belonged to the impish rather than the malevolent end of the spirit world, a creature of the dark lane and the field gate whose pleasure was in the fright and the fall, and which a bold or pious traveller could sometimes drive off with a prayer.",
+    "source": "https://en.wikipedia.org/wiki/Brag_(folklore)",
+    "date_added": "2026-06-14",
+    "tags": [
+      "horse",
+      "white",
+      "transformation",
+      "trickery",
+      "england",
+      "northumberland"
+    ]
+  },
+  {
+    "name": "Marie Lamont",
+    "lat": 55.905,
+    "lng": -4.87,
+    "category": "witch",
+    "region": "Inverkip, Renfrewshire",
+    "summary": "An eighteen-year-old servant of Inverkip whose vivid 1662 confession told of dancing with the Devil, turning into a cat, and meeting the fairy folk — among the most colourful of Scotland's witch testimonies.",
+    "detail": "Marie Lamont was a young woman of about eighteen from Inverkip in Renfrewshire, on the Firth of Clyde, whose confession in 1662 is one of the richest and strangest in the records of Scottish witchcraft. Like Isobel Gowdie's in the same year, her testimony seems to have been given with a startling, vivid fluency, drawing as much on older fairy belief as on the demonology of her accusers.\n\nShe told of being taken by a neighbour to meet the Devil, of renouncing her baptism and being given a new name, of meeting by night to dance and feast, and of transforming into a cat with her companions to creep into houses and work mischief. She spoke too of the fairy folk and of charms for healing and harming cattle. Inverkip had a particular reputation as a haunt of witches, and Marie Lamont's account — half confession, half folk-tale — survives as a remarkable window onto the imaginative world of a Clyde-side girl caught up in the witch-fear of the seventeenth century; like most so accused, she is believed to have been executed.",
+    "source": "https://en.wikipedia.org/wiki/Marie_Lamont",
+    "date_added": "2026-06-14",
+    "tags": [
+      "cat",
+      "transformation",
+      "healing",
+      "scotland",
+      "renfrewshire",
+      "celtic"
+    ]
+  },
+  {
+    "name": "The Giant of Carn Galver",
+    "lat": 50.163,
+    "lng": -5.624,
+    "category": "giant",
+    "region": "Carn Galver, Cornwall",
+    "summary": "A gentle Cornish giant who guarded the people of Zennor from rival giants, and who accidentally killed the village lad he loved with a playful tap on the head — then died of grief.",
+    "detail": "The Giant of Carn Galver was one of the kindlier giants of Cornish folklore, dwelling among the granite tors of Carn Galver on the wild coast between Morvah and Zennor. Far from a terror, he was the protector of the little farming and fishing folk of the parish, guarding them against the fiercer giants of the country round about, and asking in return only company and the occasional gift of food.\n\nHis story is a tender and tragic one. He had grown especially fond of a young man of Choon, who would come to play games of quoits and bowls with him among the rocks. One evening, in pure affection, the giant tapped the lad playfully on the head with his fingertips as he left — forgetting his own enormous strength — and the young man fell dead at his feet, his skull broken like an eggshell. The giant was inconsolable; he sat among his tors and pined, refusing to eat, and within seven years he had died of grief, leaving the rock-piles of Carn Galver as the only monument to the gentle giant who loved a mortal too roughly.",
+    "source": "https://www.cornwalls.co.uk/myths-legends/carn_galva.htm",
+    "date_added": "2026-06-14",
+    "tags": [
+      "guardian",
+      "love",
+      "england",
+      "cornwall"
+    ]
+  },
+  {
+    "name": "The Cottingley Fairies",
+    "lat": 53.847,
+    "lng": -1.851,
+    "category": "fairy",
+    "region": "Cottingley, West Yorkshire",
+    "summary": "In 1917 two Yorkshire girls photographed themselves with 'fairies' by a beck at Cottingley; the pictures fooled Sir Arthur Conan Doyle and the world for over sixty years before the cousins confessed the hoax.",
+    "detail": "The Cottingley Fairies are the most famous fairy story of the modern age, born not from old tradition but from a camera. In 1917, in the West Yorkshire village of Cottingley, two cousins — sixteen-year-old Elsie Wright and nine-year-old Frances Griffiths — took photographs of themselves beside the beck at the bottom of the garden, apparently in the company of dancing winged fairies and a gnome.\n\nThe pictures came to the attention of Sir Arthur Conan Doyle, the creator of Sherlock Holmes and a fervent spiritualist, who published them in 1920 as possible proof of the existence of fairies, igniting a sensation that ran for decades. The fairies were in fact cut-out drawings, copied from a popular illustrated book and fixed in place with hatpins — but the girls, embarrassed at having fooled so eminent a man, did not fully confess until the early 1980s, more than sixty years later, though Frances always maintained that the fifth and final photograph was genuine. The Cottingley affair endures as a fable about belief and the longing to find magic at the bottom of an ordinary garden.",
+    "source": "https://en.wikipedia.org/wiki/Cottingley_Fairies",
+    "date_added": "2026-06-14",
+    "tags": [
+      "trickery",
+      "river",
+      "england",
+      "yorkshire"
+    ]
   }
 ]

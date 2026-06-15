@@ -939,9 +939,16 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
     for related in rel[:3]:
         related_cat = cats.get(related.get("category", ""), related.get("category", ""))
         related_colour = meta.get(related.get("category", ""), {}).get("colour", "#8b3a1a")
+        rslug = slugmap[related["name"]]
+        # Show the related legend's hero artwork as the card background when it
+        # exists; otherwise fall back to the category-colour glow.
+        if os.path.isfile(os.path.join("legend-images", f"{rslug}-hero.jpg")):
+            card_cls, card_style = "related-card has-img", f"--card-img:url('{BASE}/legend-images/{rslug}-hero.jpg')"
+        else:
+            card_cls, card_style = "related-card", f'--card-glow:{esc(related_colour)}'
         featured_cards.append(
-            f'<a class="related-card" style="--card-glow:{esc(related_colour)}" '
-            f'href="{BASE}/{OUT_DIR}/{slugmap[related["name"]]}">'
+            f'<a class="{card_cls}" style="{card_style}" '
+            f'href="{BASE}/{OUT_DIR}/{rslug}">'
             f'<span class="related-type">{esc(related_cat)}</span>'
             f'<span class="related-name">{esc(related["name"])}</span>'
             f'<span class="related-place">{esc(related.get("region", ""))}</span></a>'

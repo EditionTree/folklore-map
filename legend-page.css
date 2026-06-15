@@ -374,6 +374,12 @@ h1{
   text-decoration:none;
   transition:transform .18s ease,border-color .18s ease;
 }
+.related-card.has-img{
+  background:
+    linear-gradient(0deg,rgba(18,13,9,.93) 0%,rgba(18,13,9,.34) 55%,rgba(18,13,9,.12) 100%),
+    var(--card-img) center/cover no-repeat,
+    #4e4437;
+}
 .related-card:hover{transform:translateY(-3px);border-color:var(--rust)}
 .related-type{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#d0baa0}
 .related-name{margin-top:6px;font-family:'Marcellus',serif;font-size:20px;line-height:1.2}

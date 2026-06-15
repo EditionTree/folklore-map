@@ -97,7 +97,6 @@
     body.night header {
       background:
         radial-gradient(ellipse at 15% 32%, rgba(78,106,150,.18) 0 3%, transparent 12%),
-        repeating-linear-gradient(2deg, transparent 0 5px, rgba(100,135,185,.035) 6px, transparent 8px),
         linear-gradient(135deg, rgba(70,100,180,0.15) 0%, rgba(40,60,120,0.06) 35%, transparent 60%),
         linear-gradient(180deg, #0d1525 0%, #080e1c 45%, #0f1a2e 100%);
       border-bottom-color: rgba(60,90,160,0.35);
@@ -129,7 +128,16 @@
     body.night .legend-panel { background: rgba(20,30,50,0.97); border-color: #2e4870; }
     body.night .legend-header { border-bottom-color: rgba(60,90,160,0.3); }
     body.night .legend-header:hover { background: rgba(60,90,160,0.1); }
-    body.night .filter-btn.active { background: linear-gradient(180deg,#263957,#15243a); }
+    body.night .filter-btn.active {
+      color: #e5edf9;
+      background: linear-gradient(180deg,#30486c,#182a43);
+      border-color: #7796c2;
+      text-shadow: 0 1px 2px rgba(0,5,16,.8);
+    }
+    body.night .filter-btn.active .count-badge {
+      color: #f2f6fc;
+      background: rgba(220,234,252,.18);
+    }
     body.night .sidebar-item:hover { background: rgba(46,72,112,.25); }
     body.night .sidebar-item.active { background: rgba(88,120,184,.18); }
     /* Popup summary — hardcoded colour */
@@ -137,6 +145,12 @@
     body.night .search-result-item { border-bottom-color: #1e2e4a; }
     body.night .map-vignette {
       background: radial-gradient(ellipse at center, transparent 55%, rgba(8,14,30,0.4) 100%);
+    }
+    body.night .content-area {
+      background:
+        radial-gradient(ellipse at 18% 20%, rgba(61,91,132,.25) 0 2%, transparent 11%),
+        radial-gradient(ellipse at 73% 76%, rgba(42,68,104,.25) 0 2%, transparent 10%),
+        linear-gradient(180deg,var(--wood-light),var(--wood-mid) 38%,var(--wood-dark));
     }
     body.night .map-border {
       border-color: rgba(117,151,196,.48);
@@ -183,8 +197,6 @@
       background:
         radial-gradient(ellipse at 14% 25%, rgba(132,84,36,.24) 0 2%, transparent 11%),
         radial-gradient(ellipse at 78% 70%, rgba(112,66,27,.2) 0 2%, transparent 10%),
-        repeating-linear-gradient(2deg, transparent 0 5px, rgba(233,192,122,.035) 6px, transparent 8px),
-        repeating-linear-gradient(88deg, rgba(17,8,3,.05) 0 1px, transparent 1px 56px),
         linear-gradient(135deg, rgba(196,98,42,0.18) 0%, rgba(176,144,96,0.06) 35%, transparent 60%),
         linear-gradient(180deg, #3d2510 0%, #1a0e06 45%, #2c1f0e 100%);
       border-bottom: 1px solid rgba(176,144,96,0.35);
@@ -741,8 +753,6 @@
       background:
         radial-gradient(ellipse at 18% 20%, rgba(147,94,43,.28) 0 2%, transparent 11%),
         radial-gradient(ellipse at 73% 76%, rgba(117,67,27,.24) 0 2%, transparent 10%),
-        repeating-linear-gradient(2deg, transparent 0 5px, rgba(238,194,119,.04) 6px, transparent 9px),
-        repeating-linear-gradient(91deg, rgba(20,10,4,.09) 0 1px, transparent 1px 66px),
         linear-gradient(180deg,var(--wood-light),var(--wood-mid) 38%,var(--wood-dark));
       box-shadow:
         inset 0 2px 5px rgba(10,5,2,.75),

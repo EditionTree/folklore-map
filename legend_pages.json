@@ -1171,6 +1171,141 @@
         "Setting": "Moonlit lakes",
         "Fate": "Melts in sunlight"
       }
+    },
+    "Wulver": {
+      "priority": 79,
+      "image": "legend-images/wulver-hero.jpg",
+      "alt": "The wolf-headed Wulver seated on a coastal rock in Shetland while pulling a fish from a handline",
+      "caption": "A visual interpretation of the gentle Wulver fishing alone in Shetland",
+      "map_title": "Shetland",
+      "section_heading": "The fisherman on the stone",
+      "pullquote": "The Wulver fishes alone and is said to leave food for poor families on windowsills.",
+      "facts": {
+        "Tradition": "Shetland folklore",
+        "Type": "Wolf-headed spirit",
+        "Nature": "Gentle and solitary",
+        "Gift": "Fish for poor families"
+      }
+    },
+    "Y Ladi Wen": {
+      "priority": 80,
+      "image": "legend-images/y-ladi-wen-hero.jpg",
+      "alt": "A translucent White Lady extending her hand to a hesitant traveller beside the flooded ford at Ogmore Castle",
+      "caption": "A visual interpretation of Y Ladi Wen waiting at a threshold in the Welsh landscape",
+      "map_title": "Ogmore Castle, Vale of Glamorgan",
+      "section_heading": "The hand at the threshold",
+      "pullquote": "Sometimes she extends a hand and asks for company on the road.",
+      "facts": {
+        "Tradition": "Welsh ghost lore",
+        "Type": "White Lady apparition",
+        "Haunts": "Wells, crossroads and ruins",
+        "Motif": "Death omen"
+      }
+    },
+    "Anantis Castle Revenant": {
+      "priority": 81,
+      "image": "legend-images/anantis-castle-revenant-hero.jpg",
+      "alt": "A swollen shrouded revenant stalking a foggy medieval Northumbrian lane as two men watch from a doorway",
+      "caption": "A visual interpretation of William of Newburgh's plague-bringing Anantis revenant",
+      "map_title": "Alnwick, Northumberland",
+      "section_heading": "The corpse that carried pestilence",
+      "pullquote": "Thereafter his corpse roamed abroad by night, and wherever it passed the air grew foul and a wasting sickness spread.",
+      "facts": {
+        "Source": "William of Newburgh",
+        "Type": "Medieval revenant",
+        "Setting": "Anantis castle, often linked to Alnwick",
+        "Motif": "Pestilence and the walking dead"
+      }
+    },
+    "Andrew Barton": {
+      "priority": 82,
+      "image": "legend-images/andrew-barton-hero.jpg",
+      "alt": "The wounded Scottish captain Andrew Barton directing sailors aboard his storm-battered ship during a 1511 sea battle",
+      "caption": "A visual interpretation of Andrew Barton fighting the Lion to the last",
+      "map_title": "Leith, Scotland",
+      "section_heading": "The captain in the ballad",
+      "pullquote": "Fight on, my men, I am hurt but I am not slain.",
+      "facts": {
+        "Period": "Early 16th century",
+        "Role": "Scottish privateer",
+        "Ship": "The Lion",
+        "Legacy": "English and Scottish ballads"
+      }
+    },
+    "Awd Goggie": {
+      "priority": 83,
+      "image": "legend-images/awd-goggie-hero.jpg",
+      "alt": "A small mossy orchard bogey rising from a gooseberry bush as a farm child pulls their hand away",
+      "caption": "A visual interpretation of Awd Goggie guarding unripe fruit in a Yorkshire orchard",
+      "map_title": "Yorkshire orchards",
+      "section_heading": "The rustle in the gooseberries",
+      "pullquote": "Its rustling presence in the leaves was enough to keep small hands at bay.",
+      "facts": {
+        "Tradition": "Yorkshire folklore",
+        "Type": "Nursery sprite",
+        "Haunt": "Orchards and fruit bushes",
+        "Purpose": "Guarding unripe fruit"
+      }
+    },
+    "Glaistig": {
+      "priority": 84,
+      "image": "legend-images/glaistig-hero.jpg",
+      "alt": "A grey-clad Highland Glaistig with a goat's lower body guiding a calf back toward its herd",
+      "caption": "A visual interpretation of the protective Glaistig tending Highland cattle",
+      "map_title": "The Scottish Highlands",
+      "section_heading": "The keeper of the cattle",
+      "pullquote": "She could be protective — herding cattle and caring for children — or predatory.",
+      "facts": {
+        "Tradition": "Highland folklore",
+        "Type": "Goat-bodied fairy spirit",
+        "Role": "Guardian or predator",
+        "Offering": "Milk"
+      }
+    },
+    "Pendle Witches": {
+      "priority": 85,
+      "image": "legend-images/pendle-witches-hero.jpg",
+      "alt": "A group of accused Pendle women walking under guard across the Lancashire moor beneath Pendle Hill",
+      "caption": "A visual interpretation of the accused Pendle women being taken across the Lancashire landscape",
+      "map_title": "Pendle Hill, Lancashire",
+      "section_heading": "The trial that defined English witchcraft",
+      "pullquote": "The trial of the Pendle witches in 1612 is the most famous and best-documented witch case in English history.",
+      "facts": {
+        "Period": "1612",
+        "Accused": "Twelve people",
+        "Executed": "Ten were hanged",
+        "Record": "Thomas Potts's 1613 account"
+      }
+    },
+    "Grace O'Malley": {
+      "priority": 86,
+      "image": "legend-images/grace-o-malley-hero.jpg",
+      "alt": "Grace O'Malley commanding a Gaelic galley through Clew Bay with Rockfleet Castle beyond",
+      "caption": "A visual interpretation of Grace O'Malley leading her crew past Rockfleet Castle",
+      "map_title": "Clew Bay and Rockfleet Castle",
+      "section_heading": "The sea-captain of Clew Bay",
+      "pullquote": "The sea-captain Gráinne Ní Mháille ruled the shores of Clew Bay and negotiated with Elizabeth I as an equal.",
+      "facts": {
+        "Irish name": "Gráinne Ní Mháille",
+        "Role": "Sea-captain",
+        "Stronghold": "Rockfleet Castle",
+        "Setting": "Clew Bay"
+      }
+    },
+    "Rhiannon": {
+      "priority": 87,
+      "image": "legend-images/rhiannon-hero.jpg",
+      "alt": "Rhiannon riding a pale horse calmly along a sunlit Welsh ridge while mounted pursuers follow behind",
+      "caption": "A visual interpretation of Rhiannon riding calmly beyond mortal pursuit",
+      "map_title": "Wales",
+      "section_heading": "The rider beyond pursuit",
+      "pullquote": "She first appears riding calmly beyond mortal pursuit, impossible to catch unless asked to stop.",
+      "facts": {
+        "Tradition": "Welsh mythology",
+        "Association": "Horses and sovereignty",
+        "Quality": "Endurance",
+        "First appearance": "Beyond mortal pursuit"
+      }
     }
   }
 }

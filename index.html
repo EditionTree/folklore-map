@@ -292,7 +292,7 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Spectral',seri
   display:grid;
   grid-template-columns:minmax(0,1.1fr) minmax(280px,.9fr);
   gap:28px;
-  align-items:start;
+  align-items:stretch;
   padding-top:48px;
   width:min(1080px,calc(100vw - 40px));
   position:relative;
@@ -300,7 +300,10 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Spectral',seri
   transform:translateX(-50%);
 }
 .feature-row .section{padding:0}
-.legend-feature{grid-column:1;grid-row:1}
+.legend-feature{grid-column:1;grid-row:1;display:flex;flex-direction:column}
+/* Keep the heading aligned with the map's heading, but vertically centre the
+   banner against the (taller) region map beside it. */
+.lotw-wrap{margin-top:auto;margin-bottom:auto}
 .place-feature{grid-column:2;grid-row:1}
 .place-feature .place-map{width:min(100%,360px)}
 
@@ -652,6 +655,7 @@ footer a{color:var(--ink-light)}
   <!-- Legend of the week -->
   <section class="section legend-feature">
     <div class="section-rule"><span>Legend of the Week</span></div>
+    <div class="lotw-wrap">
     <a class="lotw-hero" id="lotwLink" href="legends/">
       <div class="lotw-hero-media" id="lotwMedia">
         <div class="lotw-hero-ph" id="lotwPh" aria-hidden="true">
@@ -667,6 +671,7 @@ footer a{color:var(--ink-light)}
       </div>
     </a>
     <a class="lotw-maplink" id="lotwMapLink" href="./map">Show on the map &#8594;</a>
+    </div>
   </section>
   </div>
 

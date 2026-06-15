@@ -419,6 +419,10 @@
 "hash": "1e13246d531b095a2b31722c24318465b8ea953d",
 "modified": "2026-06-03"
 },
+"Cat Sìth": {
+"hash": "aa529b1b93fbc4e69a050b45bd922c2ba3b2bd66",
+"modified": "2026-06-14"
+},
 "Ceasg": {
 "hash": "1c849f0cc5da8cb51d56d65352998609751b3529",
 "modified": "2026-06-02"
@@ -526,6 +530,10 @@
 "Crom Cruach": {
 "hash": "b7dd28f15f2b36e3c1d4c5788b8acb5c654e38aa",
 "modified": "2026-06-03"
+},
+"Cruel Coppinger": {
+"hash": "a67aa36bbc950bb45436ee7c4be0e39062a2d748",
+"modified": "2026-06-14"
 },
 "Cu Sith": {
 "hash": "69c23534186907b1b70c1eb08b7635be2730ca22",
@@ -727,6 +735,10 @@
 "hash": "8550ac14b6559b770581ecfd7fac6380a616e896",
 "modified": "2026-06-04"
 },
+"Eustace the Monk": {
+"hash": "dc73068e46ac38c28a8c748c776f0dcf7734fecb",
+"modified": "2026-06-14"
+},
 "Fachan": {
 "hash": "c8c3f4274c213e9441ad84d6dfc28e1d01f26a2f",
 "modified": "2026-06-14"
@@ -830,6 +842,10 @@
 "Giant's Causeway": {
 "hash": "0fa84d80050879691e7206e4ef6402f1add04033",
 "modified": "2026-06-03"
+},
+"Gill, the Hammer-Throwing Giant of Mount Caburn": {
+"hash": "67fbdb4325594327bdae9162048a3efe92f066be",
+"modified": "2026-06-14"
 },
 "Glaistig": {
 "hash": "cc463b0d7dd8f3cd697847134ec942deefd0cd6b",
@@ -1075,6 +1091,10 @@
 "hash": "c534bcad61469e27ba1bb9886da52f3a930681c3",
 "modified": "2026-06-03"
 },
+"Jack o' Legs": {
+"hash": "c480cdf813c8c0f716d60f218ab4c0b7902d96d2",
+"modified": "2026-06-14"
+},
 "Jan Tregeagle": {
 "hash": "831fb6dfeb5e52ad959d0a7eadd11c8c8a45563e",
 "modified": "2026-06-03"
@@ -1082,6 +1102,10 @@
 "Janet Forsyth, the Westray Storm Witch": {
 "hash": "caebcc963f131584de11422f1fb21b7b12d5621c",
 "modified": "2026-06-10"
+},
+"Janet Horne": {
+"hash": "7fbcbc530b03087d170e3670319504ca5d9289a2",
+"modified": "2026-06-14"
 },
 "Jenny Greenteeth": {
 "hash": "548ef9118f74c09dd9821d47704e4d3f9da484d3",
@@ -1102,6 +1126,10 @@
 "John Callis, Welsh Pirate": {
 "hash": "7c093947d492b7a6498298ac12ed54aaeace6a32",
 "modified": "2026-06-09"
+},
+"John Carter, the King of Prussia": {
+"hash": "65b95935430bedab7191399b7650d2e299fcf306",
+"modified": "2026-06-14"
 },
 "John Gow": {
 "hash": "3611add341600977ce6a4a196ab0532d98572bf2",
@@ -1335,6 +1363,10 @@
 "hash": "fc1408d8fbdb1feb7539718ad0b67333b86fa147",
 "modified": "2026-06-03"
 },
+"Maggie Wall": {
+"hash": "01b4bf0f56d5ec6dbbabe9db52e1e9952e6e3ed7",
+"modified": "2026-06-14"
+},
 "Major Thomas Weir": {
 "hash": "5aeb931aaba7da38a06900e6e877489f9bce268a",
 "modified": "2026-06-13"
@@ -1354,6 +1386,10 @@
 "Mari Lwyd": {
 "hash": "7865df325123e648554ffd25aa9c9761465b36af",
 "modified": "2026-06-03"
+},
+"Marie Lamont": {
+"hash": "164e51e8b5103e3030c6a344e2ea533bb0ac5c4b",
+"modified": "2026-06-14"
 },
 "Marool": {
 "hash": "0b882645495730e67d97aa3e0155d38262b6a8e5",
@@ -1547,6 +1583,10 @@
 "hash": "599ebc57b7e148354d6eb8808e43676ff5902083",
 "modified": "2026-06-03"
 },
+"Owain Glyndŵr": {
+"hash": "3bf5ab422ff2615a5840caacf94fffec4eb52626",
+"modified": "2026-06-14"
+},
 "Oweynagat": {
 "hash": "6bb28dc659885a96a321fbc777663c446d3526bf",
 "modified": "2026-06-05"
@@ -1590,6 +1630,10 @@
 "Phantom Hare of Bolingbroke Castle": {
 "hash": "1a89affa16a51e5d25c0baf0a5cb58a4e3f414dc",
 "modified": "2026-06-03"
+},
+"Piers Shonks": {
+"hash": "ebdf22f7d914a47687662e63895d0c75c5630dd8",
+"modified": "2026-06-14"
 },
 "Piskie": {
 "hash": "aae912e1fa8bd4c47444a0324a42bc8be600f4a4",
@@ -1771,6 +1815,10 @@
 "hash": "812fee9b19a5b95dfc17a275ce0d318ba46e2044",
 "modified": "2026-06-14"
 },
+"Skriker": {
+"hash": "93dba44a2bdf3eb37e425d289dbcb97c7ec20453",
+"modified": "2026-06-14"
+},
 "Sluagh": {
 "hash": "9fee51d8899a65b873958d4e3824b5be60cefe01",
 "modified": "2026-06-03"
@@ -1871,6 +1919,10 @@
 "hash": "87f567734834602d7095778ef6592745690bef59",
 "modified": "2026-06-03"
 },
+"Tamsin Blight": {
+"hash": "e723784322a24edd7f99bb1444ddd2e2fefebfa4",
+"modified": "2026-06-14"
+},
 "Taranis": {
 "hash": "c6f12fe05d42fa726f1def37c771abbd25a2d6d2",
 "modified": "2026-06-03"
@@ -1899,6 +1951,10 @@
 "hash": "59db866a2a7e7e59607f4c4bc5f863693e429e3a",
 "modified": "2026-06-03"
 },
+"The Anwick Dragon": {
+"hash": "e46149560d2724435251411a0f6c3666cee5c392",
+"modified": "2026-06-14"
+},
 "The Bargarran Witches": {
 "hash": "c5cacc912e916a3731cb32885857487ea914aaa6",
 "modified": "2026-06-13"
@@ -1906,6 +1962,10 @@
 "The Black Dog of Newgate": {
 "hash": "0254a4fc78cbc13a79b0a5ec58e59dbb4a9e8b5a",
 "modified": "2026-06-03"
+},
+"The Brag": {
+"hash": "36205fc8adcc5a5fc2a1aa68b06972d72ae36196",
+"modified": "2026-06-14"
 },
 "The Buggane of St Trinian's": {
 "hash": "5c8888a37e2f86a994010bdda5ddb6e45c3184cf",
@@ -1919,6 +1979,10 @@
 "hash": "50961c2327549d632df2462d33f5e5e9cd89a524",
 "modified": "2026-06-03"
 },
+"The Cottingley Fairies": {
+"hash": "36b6e0a6a7cbbecfc150ce0344219c40c69a804d",
+"modified": "2026-06-14"
+},
 "The Curse of the Campbells of Jura": {
 "hash": "edebc85be7eb13723e8fb5bd6245695e8094bfe3",
 "modified": "2026-06-12"
@@ -1926,6 +1990,14 @@
 "The Dagda": {
 "hash": "b583565145610ca5079c0736828ab5262ec76523",
 "modified": "2026-06-03"
+},
+"The Dragon of Loschy Hill": {
+"hash": "32e9646be6941aa32c1504229b0aceacf1cf7faf",
+"modified": "2026-06-14"
+},
+"The Drummer of Tedworth": {
+"hash": "5d916c8d600022d451c4c6fc0e59644cd6e33d07",
+"modified": "2026-06-14"
 },
 "The Dullahan": {
 "hash": "1a1deaa3b0c2f9e3eecdc3815c7860f810e8f4c1",
@@ -1939,6 +2011,14 @@
 "hash": "f9a6219a53593bd314f28defae5de34fdc46e732",
 "modified": "2026-06-14"
 },
+"The Giant of Carn Galver": {
+"hash": "f5d207e574a40a9a926b1d2392931a7ed6b8e1b5",
+"modified": "2026-06-14"
+},
+"The Girt Dog of Ennerdale": {
+"hash": "2a3aaa5bf63751f36fcc1ae5795a9a5c9179c03f",
+"modified": "2026-06-14"
+},
 "The Green Knight": {
 "hash": "ad85768c0a488702b4d8a927a262edfc508e1df9",
 "modified": "2026-06-03"
@@ -1947,6 +2027,10 @@
 "hash": "03548698e6ec6c88cc02bcb1d2ea68edee0e7f29",
 "modified": "2026-06-03"
 },
+"The Hairy Hands": {
+"hash": "904db904be1a2beb90cbfb0a41c4ff99ea625dfe",
+"modified": "2026-06-14"
+},
 "The Hawkhurst Gang": {
 "hash": "057e0d495a4890851415aa8a2ad7887ff28404b7",
 "modified": "2026-06-13"
@@ -1954,6 +2038,10 @@
 "The Hedley Kow": {
 "hash": "c4a16f12ebf06b698dcd537b31509a5457dd26b6",
 "modified": "2026-06-13"
+},
+"The Henham Dragon": {
+"hash": "a7a0dc72b2c9d5c321489bd6435403346ccf4fcf",
+"modified": "2026-06-14"
 },
 "The Loch Ness Monster": {
 "hash": "fd941ab0cbe7f751a2ae099a1ad1faff490c5180",
@@ -1966,6 +2054,10 @@
 "The Merry Maidens": {
 "hash": "a843296fae8cd37b04749a949d52d11efe0994a5",
 "modified": "2026-06-03"
+},
+"The Mistletoe Bough": {
+"hash": "f9532a2dbdc3f7041cb3f4a3f8ed1d2f9e4edff4",
+"modified": "2026-06-14"
 },
 "The Morrigan": {
 "hash": "3356074f2c073be907b1a916c8c7f700df5532b3",
@@ -2122,6 +2214,10 @@
 "Veasta": {
 "hash": "775d367dd88396781253019a812c7e0288e3b134",
 "modified": "2026-06-03"
+},
+"Wade and Bell": {
+"hash": "01cb0cb3320d9b50500b7bb36c5b649d87ffa677",
+"modified": "2026-06-14"
 },
 "Warrior of the Gog Magog Hills": {
 "hash": "881018efd4349b8873903ae292da8644445d9f43",

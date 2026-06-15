@@ -1306,6 +1306,51 @@
         "Quality": "Endurance",
         "First appearance": "Beyond mortal pursuit"
       }
+    },
+    "Glastonbury Tor": {
+      "priority": 88,
+      "image": "legend-images/glastonbury-tor-hero.jpg",
+      "alt": "A small boat carrying a cloaked wounded figure across flooded reeds toward Glastonbury Tor at dawn",
+      "caption": "A visual interpretation of Glastonbury Tor as the island of Avalon",
+      "map_title": "Glastonbury Tor, Somerset",
+      "section_heading": "The hill beyond the reeds",
+      "pullquote": "An entrance to the fairy underworld is hidden in its flanks.",
+      "facts": {
+        "Tradition": "Somerset and Arthurian folklore",
+        "Type": "Sacred hill",
+        "Setting": "Somerset Levels",
+        "Motif": "Avalon and the otherworld"
+      }
+    },
+    "Sawney Bean": {
+      "priority": 89,
+      "image": "legend-images/sawney-bean-hero.jpg",
+      "alt": "Ragged watchers of the Sawney Bean clan crouching at a cave mouth above the Ayrshire coast as a lone rider approaches",
+      "caption": "A visual interpretation of the Sawney Bean legend on the Ayrshire coast",
+      "map_title": "Bennane Cave, South Ayrshire",
+      "section_heading": "The cave above the road",
+      "pullquote": "King James VI himself led a posse of four hundred men and bloodhounds to the cave.",
+      "facts": {
+        "Tradition": "Scottish cautionary legend",
+        "Setting": "Bennane Cave",
+        "Motif": "Coastal ambush",
+        "Record": "No contemporary record"
+      }
+    },
+    "Pooka": {
+      "priority": 90,
+      "image": "legend-images/pooka-hero.jpg",
+      "alt": "A black horse with glowing eyes carrying a terrified rider through a flooded Irish bog lane at dusk",
+      "caption": "A visual interpretation of the Irish pooka in horse form",
+      "map_title": "Ireland",
+      "section_heading": "The ride before dawn",
+      "pullquote": "Sweeping up the unwary and setting them down again, shaken and far from home, by dawn.",
+      "facts": {
+        "Tradition": "Irish folklore",
+        "Type": "Shape-shifting spirit",
+        "Common form": "Black horse",
+        "Season": "After Samhain"
+      }
     }
   }
 }

@@ -9,7 +9,7 @@ shared link); the interactive map (map.html) is unaffected.
 
 Run after legends.json changes:  python generate_pages.py
 """
-import json, io, os, re, unicodedata, html, urllib.parse, datetime, math, hashlib
+import json, io, os, re, unicodedata, html, urllib.parse, datetime, math, hashlib, glob
 from string import Template
 
 BASE = "https://folklorefinder.uk"
@@ -1557,7 +1557,16 @@ h1{{font-family:'Marcellus',serif;font-size:26px;margin-bottom:18px}}
     with io.open("feed.xml", "w", encoding="utf-8") as f:
         f.write(rss)
 
-    print(f"Generated {written} legend pages + index + sitemap ({len(urls)} URLs) + feed.xml ({len(recent)} items)")
+    # legend-images/manifest.json — slugs that have a hero image, so the
+    # homepage's Legend of the Week can prefer entries with artwork.
+    imaged = sorted(
+        os.path.basename(p)[:-len("-hero.jpg")]
+        for p in glob.glob(os.path.join("legend-images", "*-hero.jpg"))
+    )
+    with io.open(os.path.join("legend-images", "manifest.json"), "w", encoding="utf-8") as f:
+        json.dump(imaged, f, ensure_ascii=False)
+
+    print(f"Generated {written} legend pages + index + sitemap ({len(urls)} URLs) + feed.xml ({len(recent)} items) + image manifest ({len(imaged)})")
 
 
 if __name__ == "__main__":

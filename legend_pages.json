@@ -1081,6 +1081,96 @@
         "Setting": "Raynham Hall",
         "Famous photograph": "Taken in 1936"
       }
+    },
+    "Black Annis": {
+      "priority": 73,
+      "image": "legend-images/black-annis-hero.jpg",
+      "alt": "The one-eyed blue-faced Black Annis reaching iron claws toward a tiny cottage window in the Dane Hills",
+      "caption": "A visual interpretation of Black Annis unable to reach through a Leicestershire cottage window",
+      "map_title": "Dane Hills, Leicestershire",
+      "section_heading": "The terror of the Dane Hills",
+      "pullquote": "Old cottages in the district were built with deliberately small windows so that she could not reach a clawed arm inside.",
+      "facts": {
+        "Tradition": "Leicestershire folklore",
+        "Type": "One-eyed blue-faced hag",
+        "Lair": "Black Annis' Bower",
+        "Defining feature": "Iron claws"
+      }
+    },
+    "Aos Sí": {
+      "priority": 74,
+      "image": "legend-images/aos-si-hero.jpg",
+      "alt": "A procession of luminous otherworldly people emerging from an ancient grass-covered mound in Ireland",
+      "caption": "A visual interpretation of the Aos Sí emerging from a hollow hill at twilight",
+      "map_title": "The fairy mounds of Ireland",
+      "section_heading": "The people beneath the hills",
+      "pullquote": "To disturb their homes brings ruin. To be taken by them is to never fully return.",
+      "facts": {
+        "Tradition": "Irish and Scottish Gaelic",
+        "Type": "People of the mounds",
+        "Dwelling": "Hollow hills, raths and lakes",
+        "Festival times": "Samhain and Bealtaine"
+      }
+    },
+    "Am Fear Liath Mòr": {
+      "priority": 75,
+      "image": "legend-images/am-fear-liath-mor-hero.jpg",
+      "alt": "A mountaineer fleeing across the misty Ben Macdui plateau as a vast grey spectral figure looms behind",
+      "caption": "A visual interpretation of the Big Grey Man haunting Ben Macdui",
+      "map_title": "Ben Macdui, Cairngorms",
+      "section_heading": "The footsteps in the mist",
+      "pullquote": "Experienced mountaineers have reported crushing dread, phantom footsteps in the snow, and a looming presence that drives men from the mountain in blind terror.",
+      "facts": {
+        "Tradition": "Scottish mountain folklore",
+        "Type": "Spectral mountain presence",
+        "Setting": "Ben Macdui",
+        "Reported sign": "Phantom footsteps"
+      }
+    },
+    "Allison Balfour": {
+      "priority": 76,
+      "image": "legend-images/allison-balfour-hero.jpg",
+      "alt": "Allison Balfour standing resolutely with two officials on a timber platform above a wintry Orkney shore",
+      "caption": "A visual interpretation of Allison Balfour publicly retracting her forced confession",
+      "map_title": "Stenness, Orkney",
+      "section_heading": "The confession retracted",
+      "pullquote": "On the scaffold, before her execution, she publicly retracted everything, declaring the confession false and extracted only by torture.",
+      "facts": {
+        "Period": "1594",
+        "Setting": "Stenness, Orkney",
+        "Accusation": "Witchcraft against the Earl of Orkney",
+        "Legacy": "Remembered among Orkney's witch-trial victims"
+      }
+    },
+    "Angelystor": {
+      "priority": 77,
+      "image": "legend-images/angelystor-hero.jpg",
+      "alt": "A spectral angelic presence forming in the ancient Llangernyw yew as a lone tailor listens in the moonlit churchyard",
+      "caption": "A visual interpretation of Angelystor speaking from the yew at St Digain's Church",
+      "map_title": "Llangernyw, Conwy",
+      "section_heading": "The names from the churchyard",
+      "pullquote": "Each Halloween night, the spirit announces the names of parishioners who will die in the coming year.",
+      "facts": {
+        "Tradition": "Welsh ghost lore",
+        "Type": "Recording Angel",
+        "Setting": "St Digain's Church",
+        "Night": "Halloween"
+      }
+    },
+    "Asrai": {
+      "priority": 78,
+      "image": "legend-images/asrai-hero.jpg",
+      "alt": "A translucent Asrai dissolving into silver water beside a fishing boat as dawn reaches an English lake",
+      "caption": "A visual interpretation of an Asrai melting away in the first sunlight",
+      "map_title": "The lakes of England",
+      "section_heading": "The spirit that vanished at dawn",
+      "pullquote": "A delicate water spirit said to melt away if captured or exposed to sunlight.",
+      "facts": {
+        "Tradition": "English fairy lore",
+        "Type": "Water spirit",
+        "Setting": "Moonlit lakes",
+        "Fate": "Melts in sunlight"
+      }
     }
   }
 }

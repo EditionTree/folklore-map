@@ -730,11 +730,15 @@ FEATURED_PAGE = Template("""<!DOCTYPE html>
 <meta property="og:title" content="$ogtitle"/>
 <meta property="og:description" content="$desc"/>
 <meta property="og:image" content="$ogimage"/>
+<meta property="og:image:width" content="$og_w"/>
+<meta property="og:image:height" content="$og_h"/>
+<meta property="og:image:alt" content="$og_alt"/>
 <meta property="og:site_name" content="Folklore Map of Britain &amp; Ireland"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="$ogtitle"/>
 <meta name="twitter:description" content="$desc"/>
 <meta name="twitter:image" content="$ogimage"/>
+<meta name="twitter:image:alt" content="$og_alt"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap" rel="stylesheet"/>
@@ -980,6 +984,8 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
             if featured.get("caption") else ""
         )
         ogimage = hero_url
+        og_w, og_h = "1600", "900"  # Codex hero artwork is 16:9 at this size
+        og_alt = featured.get("alt") or f"Illustration of {name}"
     else:
         icon_path = meta.get(leg.get("category", ""), {}).get("iconPath", "")
         hero_media = (
@@ -995,6 +1001,8 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
             f"{BASE}/og/category-{leg.get('category', '')}.png"
             if leg.get("category", "") in meta else f"{BASE}/og/preview.png"
         )
+        og_w, og_h = "1200", "630"  # category / preview OG cards
+        og_alt = f"{name} — {catname}, folklore of Britain & Ireland"
 
     return FEATURED_PAGE.substitute(
         title=esc(f"{name} — Folklore of Britain & Ireland"),
@@ -1026,6 +1034,9 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
         featured_sources=featured_sources,
         featured_related=featured_related,
         ogimage=ogimage,
+        og_w=og_w,
+        og_h=og_h,
+        og_alt=esc(og_alt),
     )
 
 

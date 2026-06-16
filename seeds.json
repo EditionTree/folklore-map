@@ -2542,14 +2542,15 @@
     "lng": -2.576,
     "category": "ancient_site",
     "region": "Somerset",
-    "summary": "The Stanton Drew stone circles are just outside the village of Stanton Drew in the English county of Somerset. The largest stone circle is the Great Circle, 113 metres (371 ft) in diameter and the second largest stone circle in Britain ; it is considered to be one of the largest Neolithic monuments to have been built.",
+    "summary": "The great stone circles at Stanton Drew in Somerset are said to be a wedding party who danced through Saturday night into the Sabbath — their midnight fiddler turned out to be the Devil himself, and when Sunday came he froze them all in stone exactly where they stood, still arranged in the order of their dance.",
     "source": "https://en.wikipedia.org/wiki/Stanton_Drew_stone_circles",
     "date_added": "2026-06-03",
     "tags": [
       "standing-stones",
       "england",
       "somerset"
-    ]
+    ],
+    "detail": "Stanton Drew in Somerset contains one of the largest Neolithic ceremonial complexes in Britain: three stone circles, two stone avenues, and a standing stone called the Cove in the garden of the local inn, all built around 3000 BC. The Great Circle, about 113 metres in diameter, is the second largest stone circle in England after Avebury. Yet for most of its history the site's fame rested not on antiquarian interest but on the vivid folk tradition that explains it.\n\nThe legend of Stanton Drew runs as follows: a wedding party assembled in the meadow on a Saturday in ancient times and danced with great merriment through the afternoon and into the evening. As Saturday turned to Sunday, their musician refused to play further — it being the Sabbath. The revellers were desperate for music and a stranger appeared, offering to play in the departing fiddler's place. He played magnificently, faster and faster, until the dancers found they could not stop. When dawn came and they saw the fiddler clearly in the light, they recognised the Devil. He stopped playing and the entire company — bride, groom, guests, and all — were frozen in stone exactly where they stood, in the circles and rows their dancing had formed. The wedding party remains there still.\n\nThe antiquary John Aubrey noted the Stanton Drew circles in the seventeenth century, and the Devil-fiddler tradition was well established by the time William Stukeley visited in the eighteenth. The stones themselves are popularly called 'the Weddings'. A magnetometry survey in 1997 revealed a previously unknown feature — a circle of pits surrounding the Great Circle — suggesting the monument was even more elaborate than the standing stones indicate. The tradition linking dancing, the Sabbath, and supernatural petrification is not unique to Stanton Drew: it appears at several other English stone circles, suggesting a widely shared medieval folk explanation for prehistoric monuments whose true origin had been forgotten."
   },
   {
     "name": "Stonehenge",
@@ -3485,7 +3486,7 @@
     "lng": -5.518,
     "category": "water",
     "region": "Highland, Scotland",
-    "summary": "A Highland spirit who appears as a beautiful grey-clad woman concealing the lower body of a goat beneath her long skirts. She could be protective — herding cattle and caring for children — or predatory, luring men to dance with her until she drained their blood. Milk offerings kept her benevolent.",
+    "summary": "The glaistig — grey-clad, goat-legged — haunted Highland bogs and lochs: she could be a cattle-herding guardian who accepted a nightly bowl of milk, or a seductress who coaxed men to dance until she drained their blood; which version appeared depended entirely on whether you left the milk offering.",
     "source": "https://en.wikipedia.org/wiki/Glaistig",
     "date_added": "2026-06-03",
     "tags": [
@@ -3494,7 +3495,8 @@
       "guardian",
       "scotland",
       "highland"
-    ]
+    ],
+    "detail": "The glaistig (also glastig, literally 'grey woman' or 'green woman') is one of the most ambivalent supernatural figures in Highland Scottish tradition, combining the attributes of a benevolent guardian and a predatory spirit in a single form. She is described in Gaelic oral sources and in the nineteenth-century collections of J.F. Campbell and Alexander Carmichael as appearing as a beautiful woman of grey or green complexion, wearing a long flowing dress that conceals her most revealing feature: the legs and hooves of a goat. The hybrid form — human from the waist up, goat below — marks her as belonging to neither the world of humans nor the animal world entirely.\n\nThe glaistig's behaviour fell into two modes depending entirely on context. In her benevolent aspect she attached herself to a farmstead and served as an invisible herder of the cattle, bringing them home, guarding them through the night, and preventing straying. She also watched over children left in her care. Households acknowledging her presence would leave a bowl of milk by the doorstep each evening — an offering too rich or too poor risked offending her. In her malevolent aspect she haunted lonely lochs and river crossings, drawing men with her beauty, luring them to dance with her, and then opening a vein with her nails to drink their blood. The transition between guardian and predator could be triggered by disrespect, neglect of the milk offering, or simply bad fortune.\n\nThe glaistig tradition is richest in Argyll and the Western Isles, with named glastigean attached to specific farms recorded in the Scottish Gaelic folklore archive. John Gregorson Campbell's Superstitions of the Highlands and Islands of Scotland (1900) contains some of the fullest documentation. Some scholars have connected the glaistig with the broader class of Irish and Scottish fairy women — the leanan sídhe and bean sídhe — who serve as both muse and destroyer; others see in the milk-offering element a survival of an older pastoral cult of cattle-protection that predates the Christian era."
   },
   {
     "name": "Bean Nighe",
@@ -3597,7 +3599,7 @@
     "lng": -3.946,
     "category": "deity",
     "region": "Gwynedd, Wales",
-    "summary": "Created from nine flowers — broom, meadowsweet and oak among them — as a wife for the hero Lleu, who could not marry a mortal. She betrayed him with a lover and conspired to kill him. As punishment the wizard Gwydion turned her into an owl, and since that day all other birds mob the owl wherever they find it.",
+    "summary": "The wizard Gwydion conjured a woman from nine wild flowers of Wales — meadowsweet, broom, oak, and six others — to be a wife for the cursed hero Lleu; she fell in love with a passing hunter, conspired to kill her husband, and was turned into an owl condemned to haunt the night forever shunned by every other bird.",
     "source": "https://en.wikipedia.org/wiki/Blodeuwedd",
     "date_added": "2026-06-03",
     "tags": [
@@ -3605,7 +3607,8 @@
       "love",
       "wales",
       "gwynedd"
-    ]
+    ],
+    "detail": "Blodeuwedd ('Flower Face') is the created woman of the Fourth Branch of the Welsh Mabinogi, one of the most morally ambiguous figures in Welsh mythology. Lleu Llaw Gyffes had been cursed by his mother Arianrhod never to have a wife of the human race. His uncle, the great sorcerer Gwydion fab Dôn, and the mathematician-wizard Math fab Mathonwy circumvented the curse by creating a woman from the flowers of the oak, the broom, and the meadowsweet — and from six other blossoms the tale does not name. The flowers were worked into human form with an act of Gwydion's magic, and Blodeuwedd — 'flower face' — came into being.\n\nShe was given to Lleu as his wife and they lived together at the court of Ardudwy in Gwynedd. But when a lord named Gronw Pebr came hunting in the area, Blodeuwedd fell immediately and deeply in love with him. She and Gronw plotted Lleu's death, but this was complicated by the conditions of another curse: Lleu could only be killed at a precise moment — neither by day nor night, neither indoors nor outdoors, neither on horseback nor on foot — and only with a spear that had been a year in the making on Sundays. Blodeuwedd coaxed the conditions from Lleu himself, staged the precise scenario, and Gronw's spear struck him. Lleu transformed into a wounded eagle and flew to an oak tree in the mountains of Gwynedd.\n\nGwydion tracked the eagle by following a sow that fed on the flesh falling from the tree, sang three englyns to coax Lleu down, and restored him to human form. Gronw Pebr was killed and Gwydion turned Blodeuwedd into an owl — to wander ashamed through the night, hated by all other birds. The Welsh name for owl, tylluan, is said to derive from this story. The tale is a sophisticated study in agency, creation, and moral responsibility: Blodeuwedd acts on authentic feeling, but she was made without choice and without a past. Whether she is villain or victim is a question the Mabinogi deliberately refuses to answer."
   },
   {
     "name": "Gwyn ap Nudd",
@@ -3711,7 +3714,7 @@
     "lng": -2.695,
     "category": "location",
     "region": "Somerset",
-    "summary": "The legendary seat of Arthur's kingdom — most often identified with South Cadbury hillfort in Somerset, where excavations revealed a great Dark Age feasting hall rebuilt exactly when Arthur is said to have lived. Local tradition calls the hill Camelot still, and a lane at its foot is named Arthur's Lane.",
+    "summary": "Britain's most enduring legendary fortress — identified by centuries of local tradition with South Cadbury hillfort in Somerset, where a great Dark Age feasting hall was rebuilt at exactly the period Arthur is said to have lived, and where the lane at the hill's foot is still named Arthur's Lane.",
     "source": "https://en.wikipedia.org/wiki/Camelot",
     "date_added": "2026-06-03",
     "tags": [
@@ -3720,7 +3723,8 @@
       "arthurian",
       "england",
       "somerset"
-    ]
+    ],
+    "detail": "Camelot is the legendary court of King Arthur, the centre of the Round Table fellowship, and the seat from which Arthur ruled Britain. The name appears first in Chrétien de Troyes's twelfth-century French romance Lancelot, le Chevalier de la Charrette, and became firmly embedded in the tradition through Malory's Le Morte d'Arthur (1485), where it is Arthur's principal residence.\n\nOf the many proposed locations for Camelot, the strongest local tradition in England attaches it to South Cadbury hillfort in Somerset. John Leland, the royal antiquary, wrote in the 1540s that 'at the very south ende of the church of South-Cadbyri standith Camallate, sumtyme a famose toun or castelle … the people can tell nothing thar but that they have hard say that Arture much resortid to Camalat.' He recorded that local people called the hill Camelot and dug up coins and horseshoes on its summit. When John Camden visited in the late sixteenth century the tradition was already established. A lane running below the north side of the hill is still called Arthur's Lane.\n\nThe legend received dramatic archaeological support from the Camelot Research Committee's excavations of 1966–1970, led by Leslie Alcock. On the summit of South Cadbury they found evidence of massive post-Roman refortification — a great feasting hall and a new circuit of timber-and-stone ramparts — reliably dated to around 470–500 AD, exactly the period in which Arthur is placed by the ninth-century Welsh text Historia Brittonum. The site also yielded imported Byzantine pottery of the type found at several important sub-Roman power centres. While no inscription named Arthur, the coincidence of a major feasting hall refortified in the Arthurian period at a place locally called Camelot since at least the sixteenth century made the identification impossible to dismiss."
   },
   {
     "name": "Avalon",
@@ -3863,7 +3867,7 @@
     "lng": -6.352,
     "category": "water",
     "region": "Ireland",
-    "summary": "The greatest fish in the world, which fed on nine hazelnuts of wisdom fallen into the Well of Segais. Whoever tasted it first would gain all knowledge. The druid Finnegas caught it after seven years of searching — but his servant Fionn, burning his thumb on it as he cooked, licked the blister and gained the gift instead.",
+    "summary": "After seven years hunting the Salmon of Knowledge on the River Boyne, the druid Finnegas finally caught it — but when his servant Fionn mac Cumhaill burned his thumb on it while cooking and sucked the blister, all wisdom passed to the boy instead.",
     "source": "https://en.wikipedia.org/wiki/Salmon_of_Knowledge",
     "date_added": "2026-06-03",
     "tags": [
@@ -3871,7 +3875,8 @@
       "well",
       "celtic",
       "ireland"
-    ]
+    ],
+    "detail": "The Salmon of Knowledge (Irish: An Bradán Feasa) is one of the oldest and most philosophically charged figures in Irish mythology. The legend begins with a sacred well — the Well of Segais, the source of the River Boyne — surrounded by nine hazel trees of wisdom. Their nuts fell into the water and were eaten by the salmon that lived there, infusing the fish with all the knowledge in the world. Whoever first tasted its flesh would receive that knowledge whole and entire.\n\nThe druid Finnegas had spent seven years searching the Boyne for the salmon. When he finally caught it, he gave it to his young servant, Fionn mac Cumhaill, to cook — with strict instructions not to eat any. As the fish cooked, a blister rose on its skin; Fionn pressed his thumb against it to burst it, burned himself, and instinctively sucked the burn. When he brought the cooked fish to Finnegas, the druid immediately saw that something had changed in the boy's face. On learning what had happened, Finnegas told the boy to eat the rest of the salmon, for the prophecy had been fulfilled in another. From that moment Fionn could access all knowledge by pressing his burned thumb to his tooth — the gift that became the basis of his prophetic ability (Teinm Láida).\n\nThe tale appears in the twelfth-century Acallam na Senórach and in the later prose Fenian texts, and is one of the most analysed moments in the Finn Cycle. The detail that wisdom passes not to the seeker but to his accidental servant is typically Irish in its subversion of expectation — wisdom, like sovereignty, goes where it will rather than to the man who pursues it hardest. The Well of Segais is identified in the Dindshenchas with a mythological source of the Boyne, and a particular pool near Slane has been associated with the tradition for centuries."
   },
   {
     "name": "Helen Duncan",
@@ -4066,7 +4071,7 @@
     "lng": -9.05,
     "category": "deity",
     "region": "County Mayo, Ireland",
-    "summary": "Four children transformed into swans by their jealous stepmother for nine hundred years — three hundred on the waters of Lough Derravaragh, three hundred on the Sea of Moyle between Ireland and Scotland, three hundred on the waters of Erris. Their singing was so beautiful that all who heard it forgot their sorrows.",
+    "summary": "Lir's four children — Fionnuala, Aodh, Conn, and Fiachra — were turned into swans by their jealous stepmother Aoife and spent nine hundred years on Irish and Scottish waters, their voices so heartbreakingly beautiful that all who heard them forgot every grief — until a monk's bell finally broke the curse at the very moment of their death.",
     "source": "https://en.wikipedia.org/wiki/Children_of_Lir",
     "date_added": "2026-06-03",
     "tags": [
@@ -4075,7 +4080,8 @@
       "transformation",
       "ireland",
       "county-mayo"
-    ]
+    ],
+    "detail": "The Tragedy of the Children of Lir (Oidheadh Chlainne Lir) is one of the Three Sorrows of Storytelling in Irish mythology, and arguably the most emotionally sustained of the group. Lir was a chieftain of the Tuatha Dé Danann; his first wife Aoibh bore him four children before dying. He married her sister Aoife, who grew consumed with jealousy of the children's closeness to their father. Taking them to Lake Derravaragh in Westmeath, she struck them with a druid's wand and transformed them into four white swans, sentenced to spend three hundred years on Lough Derravaragh, three hundred on the Sea of Moyle between Ireland and Scotland, and three hundred on the Atlantic off Erris in Mayo.\n\nThe curse preserved their human minds, emotions, and voices within the swans' bodies. It was their singing that became legendary: when they settled on the waters of Lough Derravaragh, they sang so sweetly that the entire Tuatha Dé Danann came from across Ireland to camp on the shore and listen. Warriors wept, enemies made peace, and the ordinary sorrows of the world dissolved. During the bitter second period on the Sea of Moyle, the four swans endured storms, ice, and violent separation; the oldest sister Fionnuala would warm her brothers under her wings. Their father died, the Tuatha Dé Danann entered their mounds, and the children of Lir were left alone in a world that had moved on.\n\nThe transformation was broken when the bells of a Christian monk dissolved the enchantment. The swans returned to human form as ancient, dying men and woman, baptised by the monk Mochaomhóg before they died. The tale is first attested in full in fourteenth-century manuscripts but draws on much older material; it is documented in the work of Jeremiah Curtin, Patrick Weston Joyce, and forms a central text of the Irish Folklore Commission archive. The Children of Lir have become an Irish national symbol — four swans appear on the old Irish fifty-pence coin and form part of the Fairy Chess Institute's emblem for Irish cultural heritage."
   },
   {
     "name": "Balor of the Evil Eye",
@@ -4100,7 +4106,7 @@
     "lng": -8.706,
     "category": "water",
     "region": "County Donegal, Ireland",
-    "summary": "The rón — seal-folk of Irish and Scottish tradition who shed their skins to walk as humans on land. Along the Donegal coast, many families claim selkie ancestry. A fisherman who hides a selkie woman's skin keeps her on land as his wife, but if she ever finds it hidden, she will return to the sea without a backward glance.",
+    "summary": "The rón — seal-folk of Donegal and the Scottish isles — shed their skins to walk on land as humans; a fisherman who hides a selkie woman's pelt keeps her as his wife, but the day she finds her skin she returns to the sea, and never once looks back.",
     "source": "https://en.wikipedia.org/wiki/Selkie",
     "date_added": "2026-06-03",
     "tags": [
@@ -4109,7 +4115,8 @@
       "coast",
       "ireland",
       "county-donegal"
-    ]
+    ],
+    "detail": "The selkie tradition is one of the most emotionally resonant strands of folklore in the Atlantic fringe. In Irish the seal is the rón, and in the most enduring version of the legend, a fisherman discovers a group of seal-women who have laid their skins on the shore to dance in human form. He steals and hides one of the skins; when the others return to the sea, the woman whose pelt is missing cannot follow. She becomes his wife, bears his children, and lives quietly on the croft or in the village — but she never stops searching. When she eventually finds the hidden skin, she puts it on at once, walks into the waves without hesitation, and does not look back at husband or children. The abandonment is total and without malice: she has simply become what she truly is.\n\nAlong the Donegal coast particularly, the tradition is woven into local genealogy. Several clans — the MacNamaras and certain families around Tory Island and the Rosses — are said to carry selkie blood and to recognise it in an unusual affinity for the sea, a restlessness on land, and the ability to shed tears that taste of salt water. W.B. Yeats collected several variants and included them in Celtic Twilight; the tradition is also richly documented in the Blasket Island memoirs and in Rionach Uí Ógáin's folklore fieldwork for the Irish Folklore Commission.\n\nThe selkie legend differs subtly from the Scottish and Orcadian versions. In the Northern Isles the motive for stealing the skin is often explicit courtship and sometimes force; in the Irish tradition it is more often longing and accident. The selkie wife tends to be depicted with greater agency — she chooses to stay, she quietly endures, and she chooses to go. Scholars of comparative mythology have identified the selkie pattern across the whole North Atlantic arc, from Ireland through Scotland, the Faroes, Iceland, and Greenland, suggesting a shared maritime culture with deep pre-Christian roots."
   },
   {
     "name": "Hill of Tara",
@@ -4117,7 +4124,7 @@
     "lng": -6.611,
     "category": "location",
     "region": "County Meath, Ireland",
-    "summary": "The ancient seat of the High Kings of Ireland, where sovereignty itself was tested by the Lia Fáil — the Stone of Destiny that cried out beneath the rightful king. The Banquet Hall could seat the whole of Ireland. Below it the Tuatha Dé Danann built their great mound. It is the spiritual centre of Ireland.",
+    "summary": "At the Hill of Tara in County Meath — spiritual heart of Ireland — the Lia Fáil, the Stone of Destiny, cried out beneath any man rightfully born to be High King; beneath the hill the Tuatha Dé Danann withdrew into their great mound, and the Banquet Hall was built large enough to seat the heroes of the entire island.",
     "source": "https://en.wikipedia.org/wiki/Hill_of_Tara",
     "date_added": "2026-06-03",
     "tags": [
@@ -4125,7 +4132,8 @@
       "celtic",
       "ireland",
       "county-meath"
-    ]
+    ],
+    "detail": "The Hill of Tara (Irish: Teamhair na Rí, 'Tara of the Kings') in County Meath is a low but commanding ridge rising above the central plain of Ireland, visible for many miles in all directions. In the mythological tradition it served as the sacred seat of the High Kings of Ireland, and its landscape is layered with monuments spanning Neolithic, Bronze Age, Iron Age, and early medieval occupation — many of them identified with specific mythological events and figures.\n\nThe most famous object on Tara is the Lia Fáil, the Stone of Destiny, a standing stone near the mound of the inauguration. According to tradition — recorded in the eleventh-century Lebor Gabála Érenn — the Lia Fáil was one of the four treasures brought by the Tuatha Dé Danann from their northern cities of learning. Its property was simple and spectacular: it screamed aloud when the rightful High King stepped on or touched it. The inauguration of kings at Tara involved the Feis Temro, a great feast at which the stone's silence or cry confirmed or denied legitimacy. The stone still stands on the hill — though some traditions hold that the real Lia Fáil was taken to Scotland as the Stone of Scone, and the standing stone at Tara is a later substitute.\n\nThe Mound of the Hostages (Dumha na nGiall) is the oldest surviving structure on Tara, a Neolithic passage tomb dated to around 3200 BC, contemporary with Newgrange. The Banquet Hall (Tech Midchuarta) was an enormous building recorded in the Dindshenchas as seating the entire island's population during the Feis Temro, with specific sections assigned to warriors, poets, physicians, clergy, and craftsmen by rank. Tara's cultural authority persists in Daniel O'Connell's choice of it as the site of the 1843 'monster meeting' attended by over a million people — the largest political gathering in Irish history — where the ancient seat of the High Kings was summoned in the cause of Catholic Emancipation."
   },
   {
     "name": "Newgrange",
@@ -4151,14 +4159,15 @@
     "lng": -9.659,
     "category": "location",
     "region": "County Mayo, Ireland",
-    "summary": "Ireland's holy mountain, where Saint Patrick fasted for forty days and drove the serpents from Ireland. Before Patrick, it was the sacred mountain of the god Lugh, and his festival Lughnasadh was celebrated on its summit. Pilgrims still climb it barefoot on the last Sunday of July, as they have for three thousand years.",
+    "summary": "Saint Patrick fasted forty days on Croagh Patrick in 441 AD, driving serpents from Ireland and wrestling an angel for the right to judge the Irish at the Last Day — but long before Patrick, the summit was already sacred to Lugh, and the barefoot pilgrims climbing it each July follow a path three thousand years old.",
     "source": "https://en.wikipedia.org/wiki/Croagh_Patrick",
     "date_added": "2026-06-03",
     "tags": [
       "mountain",
       "ireland",
       "county-mayo"
-    ]
+    ],
+    "detail": "Croagh Patrick (Irish: Cruach Phádraig, 'Patrick's Stack') rises 764 metres above Clew Bay in County Mayo, and the tradition of sacred pilgrimage to its summit predates Christianity by at least two millennia. The mountain was already a focal point for Lughnasadh, the harvest festival of the god Lugh, around which Bronze Age communities gathered on the summit every August. Its Christianisation is one of the most literal palimpsests in Irish religious history.\n\nPatrick's own fifth-century document Confessio mentions fasting in isolation, and later tradition located his great Lenten fast of 441 AD on the summit of the mountain. According to the earliest hagiographies, it was here that Patrick drove the snakes and pestilent creatures from Ireland over the cliff known as Lugnademon — the hollow of the demons — and rang his bell (the Bachall Ísu) so furiously that it cracked. He then wrestled with the angel Victoricus, who had brought him to Ireland in his childhood visions, demanding the right to be Ireland's special intercessor at the Last Judgement. The angel eventually conceded. Patrick threw the cracked bell into the hollow and a new one miraculously appeared on the summit.\n\nThe pattern (Irish: turas) of Croagh Patrick — Reek Sunday, the last Sunday of July — draws tens of thousands of pilgrims each year, many barefoot on the quartzite scree. The tradition is documented continuously from the fifth century through medieval pilgrimage accounts to modern ethnographic fieldwork by the Irish Folklore Commission. Archaeological surveys have confirmed evidence of prehistoric activity at the summit, and the oratory of St Patrick (rebuilt in 1905) marks the traditional location of his vigil. The mountain's dual identity — as Lugh's hill and Patrick's purgatory — makes it one of the most layered sacred sites in Ireland."
   },
   {
     "name": "Cailleach Bhéara",
@@ -4183,7 +4192,7 @@
     "lng": -8.553,
     "category": "location",
     "region": "County Sligo, Ireland",
-    "summary": "A great limestone hill above Sligo Bay, crowned with a vast cairn said to be the tomb of Queen Medb of Connacht. She is buried standing upright, facing Ulster, her eternal enemy. By tradition, every visitor adds a stone to the cairn — to take one away brings misfortune. Medb may still be inside, armed and waiting.",
+    "summary": "Queen Medb of Connacht is said to lie buried upright in the great cairn crowning Knocknarea above Sligo Bay, facing her eternal enemies in Ulster, still armed and waiting; every visitor who adds a stone to the pile strengthens the mound over her — and anyone who takes a stone away courts misfortune.",
     "source": "https://en.wikipedia.org/wiki/Knocknarea",
     "date_added": "2026-06-03",
     "tags": [
@@ -4192,7 +4201,8 @@
       "barrow",
       "ireland",
       "county-sligo"
-    ]
+    ],
+    "detail": "Knocknarea (Irish: Cnoc na Ríogh, 'Hill of the Kings') rises 327 metres above Sligo Bay, its summit dominated by the massive unexcavated cairn of Miosgán Médhbha — Queen Medb's Lump — approximately 55 metres in diameter and 10 metres high. The cairn is one of the largest in Ireland and is estimated to contain some 40,000 tonnes of stone. Despite being the most prominent prehistoric monument in the Sligo landscape, it has never been excavated, partly out of respect for local tradition and partly because survey evidence suggests multiple burial phases within the mound.\n\nQueen Medb (Maeve) of Connacht is the great sovereign queen of the Ulster Cycle, the instigator of the Táin Bó Cúailnge, and one of the most powerful female figures in all Irish mythology. Her connection to Knocknarea is ancient: tradition holds that she was buried standing upright within the cairn, spear in hand, fully armed and facing northeast towards Ulster — the province she spent her life fighting. The stance is one of enduring defiance rather than death. The Connacht provincial identity absorbed into her legend made Knocknarea a symbol of regional power for centuries.\n\nLocal custom demands that every visitor adds a stone to the cairn as they pass. The tradition preserves the mound against erosion but carries a symbolic weight: the stones are a tribute to Medb, an acknowledgement of her presence, and a form of protection for the visitor. To take a stone from the cairn is held to invite misfortune. W.B. Yeats, who lived in Sligo and drew heavily on its mythology, used Knocknarea as a powerful image in his poetry, most famously in The Hosting of the Sidhe and in references to Maeve throughout his work. The Sligo landscape, with Knocknarea to the west and Benbulben to the north, formed the essential mythological geography of his imagination."
   },
   {
     "name": "Queen Medb",
@@ -5477,7 +5487,7 @@
     "lng": -6.679,
     "category": "deity",
     "region": "Navan Fort, County Armagh",
-    "summary": "Macha is an Irish sovereignty goddess associated with Emain Macha, now Navan Fort. In the Ulster Cycle she is forced to race the king's horses while pregnant; after winning and giving birth to twins, she curses the men of Ulster to suffer the pains of childbirth in their hour of greatest need.",
+    "summary": "Forced to race the King of Ulster's horses while nine months pregnant, the goddess Macha won — and in giving birth on the finish line cursed the men of Ulster to suffer the pains of labour in their greatest hour of need; the curse struck them all down at the very outset of the Táin Bó Cúailnge, leaving only Cú Chulainn to defend the province alone.",
     "source": "https://visitarmagh.com/stories/live-our-celtic-myths-legends-in-the-ancient-site-of-navan-fort/the-curse-of-macha/",
     "date_added": "2026-06-03",
     "tags": [
@@ -5485,7 +5495,8 @@
       "celtic",
       "northern-ireland",
       "county-armagh"
-    ]
+    ],
+    "detail": "Macha is one of three aspects of the Morrígan in Irish mythology, and in her own right a sovereignty goddess of considerable complexity, associated above all with Emain Macha (Navan Fort) in County Armagh. Three distinct figures called Macha appear in the mythological sources, but the most dramatically influential is the pregnant woman of the Ulster Cycle who becomes the origin of one of the great narrative engines of the Táin.\n\nThe story is told in Noínden Ulad, the Debility of the Ulstermen. Macha's husband Crunniuc mac Agnomain boasted at a royal assembly that his wife could outrun the king's fastest horses. King Conchobar mac Nessa insisted on a race to prove it, despite Macha's advanced pregnancy. She begged for delay until the child was born; the king refused. Macha ran and won — but at the finish line she went into labour, and as she gave birth to twins she screamed out her curse on the men of Ulster: that whenever Ulster faced its greatest hour of need, the men of the province would be struck by the pains of childbirth and be prostrate for five days and four nights, as she had been forced to suffer. The place was named Emain Macha — the twins of Macha — in memory of the birth.\n\nThe curse — ces noinden Ulad, the debility of the Ulstermen — is the foundational dramatic premise of the Táin Bó Cúailnge. When Queen Medb of Connacht invades Ulster to seize Donn Cúailnge, every warrior in Ulster is struck down by Macha's curse at the moment of crisis, leaving only the seventeen-year-old Cú Chulainn — exempt because he is not a native Ulsterman — to defend the province alone through a series of single combats. Navan Fort (Scheduled Ancient Monument near Armagh city) was the royal site of Ulster for over a thousand years and the geographical anchor of Macha's legend; its name commemorates the birth that preceded the curse."
   },
   {
     "name": "Abhartach",
@@ -5501,7 +5512,13 @@
       "northern-ireland",
       "county-londonderry"
     ],
-    "detail": "Abhartach is a figure from the folklore of County Londonderry whose legend is among the most striking of Ireland's undead traditions. As recorded by the antiquarian Patrick Weston Joyce, Abhartach was a cruel and tyrannical dwarf-chieftain — some say a magician — so hated that a neighbouring chief named Cathán killed and buried him. But the next day Abhartach returned, more terrible than before, demanding a bowl of blood from his subjects' veins to sustain him.\n\nTwice more he was slain and twice more he rose, until Cathán sought the counsel of a saint or druid, who revealed that Abhartach was one of the marbh bheo, the 'walking dead', and could not be truly killed — only restrained. He must be slain with a sword of yew, buried upside down, and covered with thorns and a great stone, and so he was, at a townland still called Slaghtaverty, 'the dwarf's grave', where a leaning stone and thorn tree are pointed out. Some have argued that this blood-drinking revenant, fixed in the earth by yew and stone, fed into Bram Stoker's conception of the vampire."
+    "detail": "Abhartach is a figure from the folklore of County Londonderry whose legend is among the most striking of Ireland's undead traditions. As recorded by the antiquarian Patrick Weston Joyce, Abhartach was a cruel and tyrannical dwarf-chieftain — some say a magician — so hated that a neighbouring chief named Cathán killed and buried him. But the next day Abhartach returned, more terrible than before, demanding a bowl of blood from his subjects' veins to sustain him.\n\nTwice more he was slain and twice more he rose, until Cathán sought the counsel of a saint or druid, who revealed that Abhartach was one of the marbh bheo, the 'walking dead', and could not be truly killed — only restrained. He must be slain with a sword of yew, buried upside down, and covered with thorns and a great stone, and so he was, at a townland still called Slaghtaverty, 'the dwarf's grave', where a leaning stone and thorn tree are pointed out. Some have argued that this blood-drinking revenant, fixed in the earth by yew and stone, fed into Bram Stoker's conception of the vampire.",
+    "sources": [
+      "https://www.mysteriousbritain.co.uk/ancient-sites/slaghtaverty-dolmen/",
+      "https://www.irishnews.com/arts/2015/10/28/news/northern-frights-at-halloween---the-vampire-of-co-derry-307407/",
+      "https://www.derryjournal.com/news/derry-halloween-abhartach-the-vampire-2195857",
+      "https://moonmausoleum.com/the-legend-of-irelands-vampire-king-abhartach-and-the-haunted-giants-grave/"
+    ]
   },
   {
     "name": "Caoranach",
@@ -5690,7 +5707,7 @@
     "lng": -8.499,
     "category": "deity",
     "region": "Knockainey (Cnoc Áine), County Limerick, Munster",
-    "summary": "Áine is a sovereign goddess and fairy queen of Munster, associated with Cnoc Áine in County Limerick and the waters of Lough Gur. She presided over summer, love, fertility, crops, and cattle. On St John's Eve, communities lit torches on her hill and processed through fields and herds to invoke her blessing.",
+    "summary": "Ireland's radiant goddess of summer and sovereignty, Áine presided over love, cattle, and the harvest from her hill at Knockainey in County Limerick; on Midsummer's Eve, farmers climbed her hill with burning torches of hay and swept the fire through the fields and over the herds to secure her blessing for the year.",
     "source": "https://en.wikipedia.org/wiki/%C3%81ine",
     "date_added": "2026-06-03",
     "tags": [
@@ -5701,7 +5718,8 @@
       "fertility",
       "ireland",
       "county-limerick"
-    ]
+    ],
+    "detail": "Áine is one of the most fully realised sovereignty goddesses in Irish mythology, closely associated with the hill of Cnoc Áine (anglicised Knockainey) in County Limerick and with the nearby waters of Lough Gur. She belongs to the Tuatha Dé Danann and is identified in medieval sources as both a goddess and a fairy queen — the distinction was not sharp in the Irish tradition — and sometimes as the daughter of Manannán mac Lir, the sea god. Her spheres were summer, love, fertility, crops, cattle, and the abundance of the earth.\n\nThe primary documentation of Áine's cult comes from John O'Donovan's nineteenth-century letters for the Ordnance Survey of Ireland and from the Irish Folklore Commission fieldwork in Limerick in the early twentieth century. O'Donovan recorded an annual ritual on St John's Eve (Midsummer) in which local families climbed Cnoc Áine carrying torches of hay and straw tied to hazel poles. The torches were lit at the top, and people ran through the fields and herds driving the flames among the crops and cattle — a sympathetic magic of summer fire to invoke Áine's blessing for the coming harvest and the health of the livestock. The ritual continued in attenuated form into the late nineteenth century.\n\nÁine's mythology intersects with the Geraldine Earls of Desmond: she appears in one tradition as the mother of Gearóid Iarla, the Fourth Earl of Desmond, by the human lord Gearóid Mór — who seized her cloak while she bathed in Lough Gur, making her his wife. Gerald — who in legend was a shape-shifter who could transform into any creature — was said to ride around Lough Gur on a white horse once every seven years, waiting to return to power. Áine was also known as the Lady of the Lake of Lough Gur, whose waters hold their own tradition of a drowned town audible to those who listen on certain nights."
   },
   {
     "name": "Crom Cruach",
@@ -8412,7 +8430,12 @@
       "sea",
       "curse"
     ],
-    "detail": "Dòideag (also Na Dòideagan in her plural form) was a legendary witch associated with the Isle of Mull in the Inner Hebrides, whose name—probably meaning 'little frizzle'—is thought to allude to her wild or dishevelled hair. She was connected in tradition with the powerful Clan Maclean of Duart and was feared throughout the island for her ability to summon storms and tempests. She belongs to a recognised category of named Hebridean storm-witches that also includes Gormshuil of Moy, Laorag of Tiree, and Maol-odhar of Kintyre.\n\nThe most vivid tale attached to Dòideag concerns the Spanish Armada galleon that put in to Tobermory harbour in 1588—almost certainly the San Juan de Sicilia. In one version, the wife of a local man sought the witch's help because a Spanish princess aboard the ship was pursuing her husband; in another, Dòideag acted on behalf of Clan Maclean. Either way, the witch used her power to set the vessel ablaze or blow it apart, killing everyone on board. The Tobermory Galleon—whatever its true identity—has indeed lain at the bottom of Tobermory Bay ever since; numerous salvage attempts over four centuries have found little of value, and the wreck's stubborn resistance to raising has kept the Dòideag's legend alive.\n\nThe tradition is recorded in the Wikipedia article on Dòideag, discussed in Country Life's 'The Witches of Mull,' and treated in surveys of Hebridean mythology and folklore. It represents a rare example of a named Hebridean witch with a specific historical event anchoring her legend."
+    "detail": "Dòideag (also Na Dòideagan in her plural form) was a legendary witch associated with the Isle of Mull in the Inner Hebrides, whose name—probably meaning 'little frizzle'—is thought to allude to her wild or dishevelled hair. She was connected in tradition with the powerful Clan Maclean of Duart and was feared throughout the island for her ability to summon storms and tempests. She belongs to a recognised category of named Hebridean storm-witches that also includes Gormshuil of Moy, Laorag of Tiree, and Maol-odhar of Kintyre.\n\nThe most vivid tale attached to Dòideag concerns the Spanish Armada galleon that put in to Tobermory harbour in 1588—almost certainly the San Juan de Sicilia. In one version, the wife of a local man sought the witch's help because a Spanish princess aboard the ship was pursuing her husband; in another, Dòideag acted on behalf of Clan Maclean. Either way, the witch used her power to set the vessel ablaze or blow it apart, killing everyone on board. The Tobermory Galleon—whatever its true identity—has indeed lain at the bottom of Tobermory Bay ever since; numerous salvage attempts over four centuries have found little of value, and the wreck's stubborn resistance to raising has kept the Dòideag's legend alive.\n\nThe tradition is recorded in the Wikipedia article on Dòideag, discussed in Country Life's 'The Witches of Mull,' and treated in surveys of Hebridean mythology and folklore. It represents a rare example of a named Hebridean witch with a specific historical event anchoring her legend.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/D%C3%B2ideag",
+      "https://www.countrylife.co.uk/travel/the-witches-of-mull-247999",
+      "https://mulldirectory.co.uk/whispers-in-the-mist-folklore-ghost-stories-of-the-isle-of-mull/"
+    ]
   },
   {
     "name": "Ruari Mòr MacNeil of Barra",
@@ -8447,7 +8470,11 @@
       "curse",
       "healing"
     ],
-    "detail": "Mary Butters (c.1770–c.1850) was a cunning-woman from the Carrickfergus area of County Antrim who practiced folk healing and magical cures, becoming locally celebrated for lifting bewitchments from cattle. Fear that a neighbour's ill-wishing could prevent a cow's milk from churning into butter was widespread in early 19th-century Ulster, and Butters had a well-established reputation for diagnosing and remedying such cases.\n\nOn a Tuesday night in August 1807, farmer Alexander Montgomery brought Butters to his Carnmoney holding to tend his bewitched cow. Following traditional practice, she filled a pot with sweet milk and dropped in crooked nails, pins, and needles, then ordered all windows and doors sealed so that the purifying smoke could work without interruption. She told Montgomery to stand guard outside with his shirt turned inside out. By dawn he returned to find his wife Elizabeth and their son David dead on the floor, with Butters herself and a young servant woman barely alive; they had all been overcome by the toxic fumes of her concoction.\n\nAt the 1808 spring assizes, the jury found that the deaths resulted from accidental suffocation. Unusually for Ireland of the period, the 'Carnmoney Witch' emerged from the episode with her reputation and livelihood largely intact: a comic ballad was written celebrating—or mocking—the affair, and Butters continued to be consulted about bewitched cows and stolen horses. She has an entry in the Oxford Dictionary of National Biography (ed. McGuire & Quinn) and her case is examined in detail by St. John D. Seymour in Irish Witchcraft and Demonology (1913), making her one of the best-documented named cunning-women in 19th-century Irish history."
+    "detail": "Mary Butters (c.1770–c.1850) was a cunning-woman from the Carrickfergus area of County Antrim who practiced folk healing and magical cures, becoming locally celebrated for lifting bewitchments from cattle. Fear that a neighbour's ill-wishing could prevent a cow's milk from churning into butter was widespread in early 19th-century Ulster, and Butters had a well-established reputation for diagnosing and remedying such cases.\n\nOn a Tuesday night in August 1807, farmer Alexander Montgomery brought Butters to his Carnmoney holding to tend his bewitched cow. Following traditional practice, she filled a pot with sweet milk and dropped in crooked nails, pins, and needles, then ordered all windows and doors sealed so that the purifying smoke could work without interruption. She told Montgomery to stand guard outside with his shirt turned inside out. By dawn he returned to find his wife Elizabeth and their son David dead on the floor, with Butters herself and a young servant woman barely alive; they had all been overcome by the toxic fumes of her concoction.\n\nAt the 1808 spring assizes, the jury found that the deaths resulted from accidental suffocation. Unusually for Ireland of the period, the 'Carnmoney Witch' emerged from the episode with her reputation and livelihood largely intact: a comic ballad was written celebrating—or mocking—the affair, and Butters continued to be consulted about bewitched cows and stolen horses. She has an entry in the Oxford Dictionary of National Biography (ed. McGuire & Quinn) and her case is examined in detail by St. John D. Seymour in Irish Witchcraft and Demonology (1913), making her one of the best-documented named cunning-women in 19th-century Irish history.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mary_Butters",
+      "https://irishfolklore.wordpress.com/2022/05/27/irish-witch-trials-the-carnmoney-witch-mary-butters/"
+    ]
   },
   {
     "name": "Corrag of Glencoe",
@@ -10323,6 +10350,325 @@
       "river",
       "england",
       "yorkshire"
+    ]
+  },
+  {
+    "name": "Carman the Sorceress",
+    "lat": 52.336,
+    "lng": -6.461,
+    "category": "witch",
+    "region": "County Wexford, Ireland",
+    "summary": "An Athenian sorceress who invaded Ireland during the age of the Tuatha Dé Danann, blighting every fruit in the land with dark magic, until imprisoned by the gods; she died of longing in Wexford and her grave became the site of Leinster’s greatest triennial festival.",
+    "detail": "In the oldest layers of Irish mythology recorded in the Metrical Dindshenchas, Carman (Carmán) is described as a sorceress-warrior from Athens who came to Ireland with her three sons — Dub (Darkness), Dother (Evil), and Dian (Violence) — intent on laying the land to waste. Where her sons trampled and plundered, she worked a subtler devastation, magically blighting the fruit of every tree and plant in the country. Four champions of the Tuatha Dé Danann rose against the invaders: Crichinbel, Lug, Bé Chuille, and Aoi. They drove Carman’s sons out of Ireland never to return, while Carman herself was bound and imprisoned at the place that would take her name.\n\nHeld captive among the very gods she had tried to destroy, Carman wasted away from grief and longing for her homeland and her absent sons. She died in County Wexford, buried amongst oak trees, and the place became known as Carman — an echo still preserved in the modern Wexford landscape. Bres of the Tuatha Dé Danann himself is said to have dug her grave. The Metrical Dindshenchas poem composed in her honour records her last wish: that the Tuatha Dé Danann celebrate a great gathering at her tomb every three years on the first of August, the festival of Lughnasad.\n\nThe Óenach Carmán became the great fair of the province of Leinster, reportedly held every three years in early August. The LibraryIreland text of Social History of Ancient Ireland enumerates its events: horse-racing, markets, music, athletic contests, and the proclamation of Leinster law. The fair maintained its prestige well into the historical period, and Oxford Reference includes Carman in its dictionary of Celtic mythology. Her story is one of the rare Irish traditions in which a destructive supernatural interloper is converted, through defeat and death, into a beneficent genius loci whose grave becomes the centre of communal celebration.",
+    "source": "https://en.wikipedia.org/wiki/Carman",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Carman",
+      "https://emeraldisle.ie/carmun-the-sorceress",
+      "https://www.libraryireland.com/SocialHistoryAncientIreland/III-XXV-2.php",
+      "https://yourirish.com/folklore/carman-witch-warrior-from-athens",
+      "https://www.oxfordreference.com/display/10.1093/oi/authority.20110803095550376"
+    ],
+    "date_added": "2026-06-16",
+    "tags": [
+      "ireland",
+      "county-wexford",
+      "celtic",
+      "curse",
+      "sacrifice",
+      "forest"
+    ]
+  },
+  {
+    "name": "Islandmagee Witch Trial",
+    "lat": 54.816,
+    "lng": -5.728,
+    "category": "witch",
+    "region": "Islandmagee, County Antrim, Northern Ireland",
+    "summary": "Ireland’s last witch trial took place on the Islandmagee peninsula in 1711: eight County Antrim women were convicted of bewitching eighteen-year-old Mary Dunbar, sentenced to pillory and imprisonment under a law still on the books from 1586.",
+    "detail": "In the autumn of 1710, an eighteen-year-old woman named Mary Dunbar arrived at Knowehead House in the townland of Kilcoan More, Islandmagee, County Antrim, to comfort a recently bereaved family. Within weeks she began exhibiting alarming symptoms: convulsions, blasphemy, and the vomiting of household objects — pins, buttons, nails, thread, and glass. She claimed she was being tormented by spectral visitors who entered through the bedroom keyhole, and by early 1711 had named eight local women as her tormentors in spirit form: Janet Carson, Janet Latimer, Janet Main, Janet Millar, Margaret Mitchell, Catherine McCalmond, Janet Liston, and Elizabeth Sellor.\n\nOn 31 March 1711, the spring session of the Carrickfergus Assize Court heard their case. Under the Irish Witchcraft Act of 1586, the eight women were convicted and sentenced to a year’s imprisonment with four appearances in the pillory on market day — a relatively lenient outcome, since witchcraft had ceased to carry the death penalty. A ninth accused, William Sellor, was tried separately at the Summer Assizes in September 1711. By then Mary Dunbar had died, converting his lesser offence into a capital charge for which he was probably executed. The Islandmagee trial is now recognised as the last witchcraft prosecution in Ireland.\n\nThe case has attracted serious academic attention from Andrew Sneddon of Ulster University, who has examined its intersection with Presbyterian covenant theology and the social tensions of early eighteenth-century Ulster. Unlike earlier British and Irish witch trials driven largely by landholding disputes or malicious accusation, the Islandmagee convictions appear to have grown from a genuine communal belief in demonic possession shaped by the community’s Protestant religious culture. The tradition of the Islandmagee Witches persisted in oral memory on the peninsula well into the nineteenth and twentieth centuries, and a dedicated heritage project (w1711.org) now documents the trial’s history.",
+    "source": "https://en.wikipedia.org/wiki/Islandmagee_witch_trial",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Islandmagee_witch_trial",
+      "https://w1711.org/history/",
+      "https://www.irishcentral.com/roots/history/islandmagee-last-irish-witch-trial",
+      "https://socialhistory.org.uk/shs_exchange/toil-and-trouble-irelands-last-witch-trial/"
+    ],
+    "date_added": "2026-06-16",
+    "tags": [
+      "northern-ireland",
+      "county-antrim",
+      "coast",
+      "haunting",
+      "curse"
+    ]
+  },
+  {
+    "name": "Maoveen, the Banshee of Shane’s Castle",
+    "lat": 54.617,
+    "lng": -6.291,
+    "category": "fairy",
+    "region": "Randalstown, County Antrim, Northern Ireland",
+    "summary": "Maoveen — ‘little Mab’ — is the O’Neill family banshee, bound to wail at Shane’s Castle on Lough Neagh before every clan death; legend holds she burned the castle to the ground in 1816 after an earl dared to use the room forever kept reserved for her use.",
+    "detail": "Shane’s Castle, an O’Neill stronghold on the northeastern shore of Lough Neagh in County Antrim, had an unusual domestic arrangement: a room was permanently kept vacant for the family’s own banshee, known as Maoveen (‘little Mab’ or Maeveen). The origin of this obligation is rooted in a legend from the time of the O’Neill chieftains: one of the lords, on his way to assist in a raid by McQuillan, passed a thorn tree held sacred by the fairy folk, in which a cow had become entangled. Taking pity on the animal, he cut a branch to free her, angering the fairies, who retaliated by seizing his daughter Kathleen and dragging her to the depths of Lough Neagh. They relented enough to allow Kathleen to tell her father she was safe, but imposed two conditions: that she appear and wail whenever misfortune threatened the O’Neill family, and that a room in the castle remain always ready for her.\n\nFor generations the agreement was honoured, Maoveen regarded with a sort of affectionate awe — a protective spirit who gave warning rather than caused harm. The eighteenth-century accounts also mention a White Lady, a silent spectral figure who glides along the misty shores of Lough Neagh just before heavy fog descends. The crisis came when an Earl O’Neill held a party so large that every room was needed, including Maoveen’s. On the night of 10 October 1816 a fire broke out and destroyed most of the castle. According to the persistent tradition, Maoveen herself was seen floating above the flames.\n\nLibraryIreland’s nineteenth-century account of Shane’s Castle, drawing on Belfast topographical writing, is the fullest early documentation of Maoveen’s name and origin legend. Shane’s Castle was originally known as Eden-duff-carrick before being renamed after Shane O’Neill, and has stood on the lakeshore in some form since its medieval foundation.",
+    "source": "https://www.libraryireland.com/Belfast-History/Shanes-Castle.php",
+    "sources": [
+      "https://www.libraryireland.com/Belfast-History/Shanes-Castle.php",
+      "https://spiritedisle.ie/explore-listing/shanes-castle/",
+      "https://en.wikipedia.org/wiki/Shane%27s_Castle",
+      "https://www.ireland.com/en-nz/magazine/culture/banshees/",
+      "https://www.spookyisles.com/banshee-top-10/"
+    ],
+    "date_added": "2026-06-16",
+    "tags": [
+      "northern-ireland",
+      "county-antrim",
+      "lake",
+      "castle",
+      "death-omen",
+      "haunting"
+    ]
+  },
+  {
+    "name": "Black Pig's Dyke",
+    "lat": 54.27,
+    "lng": -7.49,
+    "category": "beast",
+    "region": "Fermanagh/Armagh border, Northern Ireland",
+    "summary": "The great Iron Age earthwork barriers running along the old Ulster border are explained in legend as the furrow torn by a schoolmaster transformed into a raging black pig by a pupil who stole his book of spells — or, in an older version, the track of a colossal worm.",
+    "detail": "The Black Pig’s Dyke (Irish: Claí na Muice Duibhe) is a series of imposing but discontinuous earthwork barriers running from County Leitrim in the west to County Armagh in the east, broadly tracing the southern border of the ancient province of Ulster. Constructed probably in the late Iron Age to defend against cattle raids, the earthworks consist of a raised bank with ditches on either side, some sections still reaching several metres in depth and width. Remnants survive in County Leitrim, County Longford, County Cavan, County Monaghan, and County Fermanagh.\n\nThe Gaelic folk tradition explaining the dykes exists in two main forms. In the most widely recorded version, a schoolmaster in Ulster ran a punishing and feared regime over his pupils; one of them, managing to get hold of the master’s hidden book of magic spells, transformed him into a vast and furious black pig. The maddened beast plunged through the countryside, its tusks ripping open the earth and throwing up the long embankments visible today as it ran. A second and older tradition gives the same earthworks to a colossal worm or serpent, and the Irish name Claí na Péiste (‘Worm’s Ditch’) preserves this alternative folklore.\n\nThe earthwork is documented on the 1837 Ordnance Survey of Ireland maps and has been examined in the Ulster Archaeological Journal and by field archaeologists. The dedicated heritage website blackpigsdyke.ie records the oral traditions associated with it, and the site is listed among Irish prehistoric monuments with significant attached mythology by Voices from the Dawn. The County Fermanagh sections of the dyke remain among the most visible, running through the townlands of Lislea and Mullynavannoge in the northwest of the county.",
+    "source": "https://en.wikipedia.org/wiki/Black_Pig%27s_Dyke",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Black_Pig%27s_Dyke",
+      "https://voicesfromthedawn.com/black-pigs-dyke/",
+      "http://www.blackpigsdyke.ie/what-is-it/mythology/"
+    ],
+    "date_added": "2026-06-16",
+    "tags": [
+      "northern-ireland",
+      "county-fermanagh",
+      "shapeshifter",
+      "black",
+      "transformation"
+    ]
+  },
+  {
+    "name": "Oonagh of Knockmany Hill",
+    "lat": 54.416,
+    "lng": -7.124,
+    "category": "hero",
+    "region": "Augher, County Tyrone, Northern Ireland",
+    "summary": "On Knockmany Hill in County Tyrone, Fionn mac Cumhaill’s quick-witted wife Oonagh wrapped her giant husband in swaddling clothes and served the dreaded Cú Chulainn loaves packed with iron griddles — outwitting the Ulster hero so completely that Finn bit off his finger and drove him away.",
+    "detail": "Knockmany Hill, rising above the Clogher Valley in County Tyrone, is the setting for one of the most beloved comic episodes in the Finn Cycle of Irish legend. When the feared warrior Cú Chulainn came searching for Fionn mac Cumhaill to settle the question of who was the greater fighter, Finn fled to Knockmany to seek help from Oonagh — his famously sharp-witted wife. Oonagh’s plan was characteristically ingenious: she dressed the vast Finn in a baby’s clothes, laid him in an enormous cradle, and greeted Cú Chulainn as the proud mother of an extraordinary infant.\n\nShe prepared a batch of griddle bread for her guest, but the loaves she served Cú Chulainn were secretly baked around iron griddles; when he bit down, he recoiled in pain. She offered the ‘baby’ one of the real loaves, which the disguised Finn ate with apparent ease, implying to Cú Chulainn that if even the child had teeth that strong, the father must be unconquerable. Cú Chulainn asked to feel the baby’s teeth; Finn bit down on the warrior’s outstretched finger, severing it at the middle joint and by some accounts robbing Cú Chulainn of the source of his supernatural knowledge — for it was by sucking the same finger that he gained prophetic insight. Defeated without a blow being exchanged, Cú Chulainn fled from Knockmany.\n\nThe tale is classified by Story Archaeology scholars as a late addition to the Finn Cycle, drawing on older traditions of Ulster-Connacht rivalry. It survives in multiple late manuscript versions and was collected from oral tradition in the nineteenth century. Knockmany Hill itself preserves a Neolithic chambered cairn on its summit, whose presence may have contributed to the hill’s enduring reputation as a place where heroes and supernatural beings converge.",
+    "source": "https://storyarchaeology.com/the-legend-of-knockmany-hill-a-late-tale-of-cu-chulainn/",
+    "sources": [
+      "https://storyarchaeology.com/the-legend-of-knockmany-hill-a-late-tale-of-cu-chulainn/",
+      "https://www.northernireland.org/blog/northern-ireland-myths-legends/",
+      "https://finn-mccool.co.uk/irish-mythology/the-legend-of-finn-mccool/"
+    ],
+    "date_added": "2026-06-16",
+    "tags": [
+      "northern-ireland",
+      "county-tyrone",
+      "hill",
+      "trickery",
+      "celtic"
+    ]
+  },
+  {
+    "name": "Gwydion fab Dôn",
+    "lat": 52.991,
+    "lng": -4.394,
+    "category": "witch",
+    "region": "Gwynedd, Wales",
+    "summary": "The supreme magician of Welsh mythology, Gwydion conjured phantom armies from leaves and mushrooms, transformed men into animal pairs as punishment, and tracked his nephew Lleu — who had become a wounded eagle in an oak tree — down with three enchanted verses in Gwynedd.",
+    "detail": "Gwydion fab Dôn is the great conjuror of Welsh mythology, the son of the goddess Dôn and the central figure of the Fourth Branch of the Welsh Mabinogi. His primary association is with the north Welsh kingdom of Gwynedd, where Caer Dathyl — his stronghold, tentatively identified with the promontory fort at Dinas Dinlle near Caernarfon — served as the base for his schemes and sorceries. The Milky Way is still called Caer Wydion (‘Gwydion’s Castle’) in Welsh, preserving his cosmological dimension.\n\nHis most celebrated feat of trickery was the creation of phantom war spoils — horses, hunting dogs, and golden shields conjured from toadstools and leaves — to provoke Pryderi of Dyfed into single combat, enabling him to steal the magical pigs of the Otherworld. More morally troubling is his role in the assault on Goewin: Gwydion manufactured a false war to distract Pryderi and cover his brother Gilfaethwy’s crime, for which King Math transformed both men into successive pairs of animals — deer, boar, wolves — forcing them to live together, mate, and return to Math bearing animal offspring for three years as punishment.\n\nIt is in the role of father-protector that Gwydion is most sympathetically drawn. After his sister Arianrhod placed three curses on her son Lleu Llaw Gyffes, Gwydion used magical deception at each turn to provide the boy with a name, weapons, and ultimately a wife made from flowers. When Lleu was betrayed and transformed into a dying eagle perched high in an oak tree in the mountains of Gwynedd, it was Gwydion who tracked the eagle, sang three englyns to coax it down, and restored him to human form. Lleu’s recovery is located in the Fourth Branch at a site in the shadow of the mountains near Nantlle, fixing the legend firmly in northwest Wales.",
+    "source": "https://en.wikipedia.org/wiki/Gwydion",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Gwydion",
+      "https://www.britannica.com/topic/Gwydion",
+      "https://mythopedia.com/topics/gwydion/",
+      "https://timelessmyths.com/gods/celtic/gwydion/"
+    ],
+    "date_added": "2026-06-16",
+    "tags": [
+      "wales",
+      "gwynedd",
+      "celtic",
+      "transformation",
+      "shapeshifter",
+      "trickery"
+    ]
+  },
+  {
+    "name": "Lady Mary Killigrew",
+    "lat": 50.157,
+    "lng": -5.069,
+    "category": "pirate",
+    "region": "Penryn, Cornwall, England",
+    "summary": "In January 1582, the grey-haired wife of Cornwall’s Vice Admiral sent her servants to board a Spanish ship anchored under royal safe conduct opposite Arwenack, seized its cargo, and was sentenced to death — only for Queen Elizabeth to pardon the redoubtable Lady Killigrew.",
+    "detail": "Lady Mary Killigrew (née Mary Wolverston; c.1525–after 1582) was the daughter of a Suffolk privateer and wife of Sir John Killigrew IV, Vice Admiral of Cornwall and governor of Pendennis Castle, whose ancient seat of Arwenack House stood on the neck of land that would later become Falmouth. The Killigrew family had an unusually frank relationship with piracy: they sheltered ships in Penryn harbour, traded in stolen cargoes, and were suspected of worse. Mary was in her late fifties when she committed her most notorious act.\n\nIn January 1582, a Spanish vessel, the Marie of San Sebastian, was anchored at Penryn under a letter of safe conduct from Queen Elizabeth I. Having heard that it carried a rich cargo, Lady Killigrew directed her servants to row out at night, board the ship, overpower the crew, and strip its hold. Her men were later caught, tried, and condemned to death. Mary herself was arrested, tried, and sentenced to execution — a remarkable fate for a woman of her rank, wife of the royal governor of Pendennis Castle. Through the intercession of powerful connections the sentence was commuted and Elizabeth issued a pardon, but not before Lady Killigrew had spent a period imprisoned.\n\nThe incident left a lasting mark on Cornish coastal folklore. Mary appears in nineteenth-century Cornish antiquarian literature as a byword for high-born audacity, and her legend was kept alive in oral traditions associated with the Killigrew seat. Stories of a lantern hung in a tower window to lure ships onto the rocks of the Fal estuary cluster around the family; various women of the Killigrew line were accused of similar crimes across several generations, suggesting that ‘Lady Killigrew, the pirate’ became a composite figure in popular tradition.",
+    "source": "https://en.wikipedia.org/wiki/Mary_Wolverston",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mary_Wolverston",
+      "https://cornwall-plus.co.uk/pirates-of-penryn/",
+      "https://www.badreputation.org.uk/2011/01/20/five-pirate-women-from-the-pages-of-history-number-one-lady-killigrew/",
+      "https://cornishbirdblog.com/the-notorious-women-of-the-killigrew-family/"
+    ],
+    "date_added": "2026-06-16",
+    "tags": [
+      "england",
+      "cornwall",
+      "sea",
+      "coast",
+      "trickery"
+    ]
+  },
+  {
+    "name": "Gobán Saor",
+    "lat": 53.494,
+    "lng": -6.148,
+    "category": "hero",
+    "region": "Donabate, County Dublin, Ireland",
+    "summary": "Ireland’s legendary master-builder — said to have raised every round tower and monastery in the land with supernatural speed — the Gobán Saor was born on the Donabate peninsula and survives in folklore as both a cunning craftsman who outwits kings and a humanised echo of the divine smith Goibhniu.",
+    "detail": "The Gobán Saor (Irish: ‘the builder’ or ‘the free craftsman’) is one of the most enduring figures in Irish popular legend, a cunning architect and mason who, according to tradition, built more round towers, churches, and stone oratories than any other person in Irish history. The Catholic Encyclopedia, citing early medieval sources, regards him as a real seventh-century figure born at Turvey on the Donabate peninsula in north County Dublin around 560 AD, and he appears in an eighth-century Irish poem preserved in a Carinthian monastery, testifying to his fame before the Norman period.\n\nIn hagiographic tradition the Gobán Saor is employed by the saints themselves: the Life of St Abban declares that ‘the fame of Gobban as a builder in wood as well as stone would exist in Ireland to the end of time.’ He appears in the Lives of St Carthage, St Finbarr, and numerous other early medieval saints as the superhuman craftsman called in to complete works that no ordinary builder could achieve — depicted as working with preternatural speed, often finishing a church in a single night. The askaboutireland.ie folklore archives record the breadth of this tradition across Leinster and Ulster.\n\nIn the later folk tales gathered by Patrick Kennedy and preserved in LibraryIreland’s Legendary Fictions of the Irish Celts, the Gobán Saor becomes a sharp-witted father who tests his son before undertaking dangerous journeys, sends him home with cryptic riddles to solve, and outwits castle-building kings who attempt to trap him at the top of towers. Scholars of Irish mythology have traced his lineage back through the divine craftsman Goibhniu, the immortality-granting smith of the Tuatha Dé Danann; the Gobán Saor represents the humanised, comic-heroic folk avatar of that divine tradition — a bridge between the mythological and the everyday in Irish oral culture.",
+    "source": "https://en.wikipedia.org/wiki/Gob%C3%A1n_Saor",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Gob%C3%A1n_Saor",
+      "https://www.libraryireland.com/LegendaryFictionsIrishCelts/I-9-1.php",
+      "https://emeraldisle.ie/the-box-of-goban-saor",
+      "https://www.askaboutireland.ie/reading-room/history-heritage/folklore-of-ireland/folklore-folk-tales-and-c/the-goban-saor-or-gubbawn/",
+      "https://bardmythologies.com/goban-saor/"
+    ],
+    "date_added": "2026-06-16",
+    "tags": [
+      "ireland",
+      "county-dublin",
+      "celtic",
+      "trickery",
+      "guardian",
+      "church"
+    ]
+  },
+  {
+    "name": "Malekin of Dagworth",
+    "lat": 52.228,
+    "lng": 1.032,
+    "category": "fairy",
+    "region": "Dagworth, Suffolk, England",
+    "summary": "In the 1190s at Dagworth manor in Suffolk, a small invisible being called Malekin haunted the household, claiming to be a human child stolen from Lavenham by the fairies seven years earlier — and that she would be restored to the world of the living when seven more years had passed.",
+    "detail": "The account of Malekin survives in the Chronicon Anglicanum of Ralph of Coggeshall, a Cistercian monk writing around 1200, making it one of the earliest and most circumstantial fairy-encounter narratives in medieval English literature. Ralph records that during the reign of Richard I (1189–1199), a being called Malekin began haunting the household of Sir Osbern de Bradwell at his manor of Dagworth in Suffolk, communicating freely with members of the household in both Latin and the local Suffolk vernacular — which Ralph notes as surprising.\n\nMalekin described herself as a human child from Lavenham, stolen by the fairies while her mother worked in the fields. She claimed to have been in her present fairy condition for seven years, and that in seven more she would be returned to human society. She spoke from invisible places, sometimes let members of the household hear her moving about the rooms, and on one occasion revealed herself to a maid as a tiny child in a white tunic — but vanished the moment the maid tried to touch her. She asked for access to the household’s food, discussed religious matters in ways Ralph considered orthodox, and showed both homesickness and piety.\n\nThe story sits at the intersection of the changeling tradition and the poltergeist narrative: unlike the classic changeling, Malekin was not exchanged for a human child but simply taken, and she expressed grief and longing rather than malice. Katherine Briggs discusses the case in A Dictionary of Fairies, and it is referenced in modern studies of medieval English supernatural belief including the FolkloreThursday platform. The incident is also discussed in Fire Springs Folk Tales as an early example of the Suffolk fairy tradition. Ralph of Coggeshall’s original Latin is the primary source.",
+    "source": "https://www.eadt.co.uk/news/21475143.weird-suffolk-malekin-dagworth/",
+    "sources": [
+      "https://www.eadt.co.uk/news/21475143.weird-suffolk-malekin-dagworth/",
+      "https://folklorethursday.com/folktales/fairies-in-a-flat-landscape-the-fairylore-of-suffolk/",
+      "https://firespringsfolktales.wordpress.com/2013/06/22/malekin-the-poltergiest-of-dagworth-and-a-damned-roman-lord/"
+    ],
+    "date_added": "2026-06-16",
+    "tags": [
+      "england",
+      "suffolk",
+      "abduction",
+      "haunting",
+      "white"
+    ]
+  },
+  {
+    "name": "Dragon of Brinsop",
+    "lat": 52.115,
+    "lng": -2.776,
+    "category": "dragon",
+    "region": "Brinsop, Herefordshire, England",
+    "summary": "Herefordshire’s own St George legend places the dragon in the well of Duck Pool meadow at Brinsop, where the saint fought and slew it in the field behind the church — a battle commemorated on a magnificent Norman tympanum carved around 1150 that still stands in the north aisle.",
+    "detail": "The village of Brinsop in Herefordshire, about five miles north of Hereford, possesses one of the few English churches entirely dedicated to St George, and the local dragon tradition explaining that dedication is one of the more richly localised variants of the saint’s legend in Britain. According to folk memory preserved in Herefordshire, a dragon made its lair in the well at Duck Pool meadow in front of the church, from which it emerged to terrorise the surrounding countryside. St George fought and killed the beast in the field immediately behind the church, an enclosure still known as Lower Stanks.\n\nThe Norman builders of St George’s Church, constructing around 1140–1160, carved the tradition directly into the fabric of the building: the tympanum above the doorway of the north aisle depicts St George on horseback, lance levelled, trampling a writhing serpent-dragon underfoot. Described by the National Churches Trust as one of the finest Romanesque tympana in Herefordshire, this is an unusually early visual record of the St George and dragon tradition in England — predating the saint’s adoption as the national patron by more than a century. Herefordshire Historic Churches Trust has highlighted the carving as part of its coverage of the county’s dragon lore.\n\nThe specificity of the tradition is notable: named fields (Duck Pool meadow, Lower Stanks) and a named well anchor the legend to a precise local topography. This pattern — a dragon associated with a watery lair near a church dedicated to its slayer — is echoed in the Dragon of Mordiford tradition about ten miles away, suggesting a deeper Herefordshire stratum of dragon belief linked to marshy or spring-fed landscapes.",
+    "source": "https://www.nationalchurchestrust.org/church/st-george-brinsop",
+    "sources": [
+      "https://www.nationalchurchestrust.org/church/st-george-brinsop",
+      "https://www.hhct.co.uk/saints-dragons-and-film-stars/",
+      "https://en.wikipedia.org/wiki/Brinsop",
+      "https://www.britainexpress.com/attractions.htm?attraction=3898"
+    ],
+    "date_added": "2026-06-16",
+    "tags": [
+      "england",
+      "herefordshire",
+      "well",
+      "church",
+      "serpent",
+      "battle"
+    ]
+  },
+  {
+    "name": "Conn-eda and the Golden Apples of Lough Erne",
+    "lat": 54.343,
+    "lng": -7.796,
+    "category": "hero",
+    "region": "Lough Erne, County Fermanagh, Northern Ireland",
+    "summary": "In a Fermanagh fairy tale first published in 1879, Prince Conn-eda must dive beneath the waters of Lough Erne to the palace of the Firbolg king and return with three golden apples, a black steed, and a magic hound — all demanded by his scheming stepmother as a fatal geis.",
+    "detail": "The tale of Conn-eda and the Golden Apples of Lough Erne was translated from the Irish by Nicholas O’Kearney and published in Volume 2 of The Folk-Lore Record in 1879, one of the foundational academic journals of British and Irish folklore studies. The story was later included by W.B. Yeats in his anthology of Irish fairy and folk tales, and the original Irish manuscript was catalogued by the National Library of Australia. It draws on an old layer of Irish mythology in which the waters of Lough Erne conceal the underground kingdom of the Firbolg — one of the pre-Tuatha Dé Danann peoples of Ireland.\n\nThe story opens with Conn-eda, a prince beloved of his father’s court, falling under the jealous power of a stepmother who is a daughter of the Arch-Druid and a practitioner of magic. She imposes upon him a geis — a binding obligation — requiring him to obtain, within a year and a day, three treasures kept by the Firbolg king beneath the lake: three golden apples that grow in the palace garden, an each dubh (supernatural black steed), and the cuileen con na mbuadh (a hound of supernatural powers). The task is designed to be fatal, requiring a hero to descend to the watery Otherworld.\n\nConn-eda accomplishes his quest through the guidance of a Druid who provides a protective apple given by his dying mother’s ghost, and with the help of a magic horse. He enters the Firbolg kingdom beneath Lough Erne, passes tests of strength and hospitality, and returns with all three treasures. The stepmother’s schemes are ultimately exposed. The tale preserves a pre-Christian cosmology of Lough Erne as a liminal portal between the world of the living and the subterranean Otherworld — a belief echoed in the many island shrines and carved stone figures found in the real lake, and in the experience-enniskillen.com local heritage documentation.",
+    "source": "https://www.jstor.org/stable/1252472",
+    "sources": [
+      "https://www.jstor.org/stable/1252472",
+      "https://sacred-texts.com/neu/yeats/fip/fip78.htm",
+      "https://experience-enniskillen.com/blog/conn-eda-and-the-golden-apples/",
+      "https://archive.org/details/storyofconnedaor00okea"
+    ],
+    "date_added": "2026-06-16",
+    "tags": [
+      "northern-ireland",
+      "county-fermanagh",
+      "lake",
+      "treasure",
+      "celtic",
+      "abduction"
+    ]
+  },
+  {
+    "name": "Oran of Iona",
+    "lat": 56.333,
+    "lng": -6.388,
+    "category": "ghost",
+    "region": "Isle of Iona, Scotland",
+    "summary": "When St Columba’s first chapel walls kept collapsing overnight, his companion Oran volunteered to be buried alive in the foundations; three days later Columba opened the grave to find him speaking heresy from the dead — and had him immediately reinterred to silence him.",
+    "detail": "The legend of Oran of Iona is one of the most striking foundation stories in early medieval British Christianity, and one of the few surviving instances of apparent foundation sacrifice in the British Isles. When St Columba arrived on Iona around 563 to establish his monastic community, the tradition holds that a voice or vision revealed to him that the walls of the first building would not stand until a living man was buried in the foundations — each morning the builders arrived to find the previous day’s work undone. Oran (Odhrain), one of Columba’s twelve companions on the voyage from Ireland, volunteered for this role.\n\nThree days after Oran’s burial, Columba returned to the site and opened the grave to look once more on his companion’s face. What he found was not a corpse but a living man: Oran opened his eyes and spoke, declaring — in the most widely recorded version — ‘There is no wonder in death, nor is Hell what it has been described.’ Columba’s response to this theological irregularity was immediate: crying out in Gaelic ‘Uir, ùir, air sùil Odhrain! mu’n labhair e tuille comhraidh’ (‘Earth, earth on Oran’s eyes, lest he further blab’), he had the grave closed again and Oran permanently entombed.\n\nOran is commemorated on Iona in the Reilig Odhráin, the ancient cemetery adjacent to the abbey traditionally said to contain the graves of forty-eight Scottish and Norwegian kings, and in St Oran’s Chapel — the oldest surviving building on the island, dating to the late eleventh or early twelfth century. The legend, while absent from Adomén’s authoritative seventh-century Life of Columba, is analysed by Celtic scholars including George Henderson as preserving a pre-Christian stratum of foundation-sacrifice belief within a Christian hagiographic frame. Historic Environment Scotland’s blog has examined the tradition as part of Iona’s layered sacred history.",
+    "source": "https://en.wikipedia.org/wiki/Oran_of_Iona",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Oran_of_Iona",
+      "https://blog.historicenvironment.scot/2021/10/st-oran/",
+      "https://www.undiscoveredscotland.co.uk/iona/storanschapel/index.html",
+      "https://blog.mullmonastery.com/on-the-feast-day-of-st-oran-of-iona/"
+    ],
+    "date_added": "2026-06-16",
+    "tags": [
+      "scotland",
+      "argyll",
+      "island",
+      "church",
+      "sacrifice",
+      "haunting"
+    ]
+  },
+  {
+    "name": "Donn Cúailnge",
+    "lat": 54.113,
+    "lng": -6.382,
+    "category": "beast",
+    "region": "Cooley Peninsula, County Louth, Ireland",
+    "summary": "The great Brown Bull of Cooley — originally a divine pig-keeper reincarnated through a millennia-long chain of shape-shifting — was the prize that sparked the Táin Bó Cúailnge; after defeating his Connacht rival in a catastrophic battle, he bellowed three times and fell dead at Cooley.",
+    "detail": "Donn Cúailnge (‘the Brown One of Cooley’) was no ordinary bull but a supernatural creature with a complex mythological origin. According to the earliest tellings in the Ulster Cycle, the brown bull and its Connacht counterpart Finnbhennach (‘White-Horned’) began their existence as two divine swineherds in the service of the gods who fell into bitter quarrel. The two enemies passed through a chain of animal and supernatural reincarnations — ravens, stags, warriors, phantoms, maggots swallowed by cows — and were finally born as bulls. As Donn Cúailnge, the Brown Bull belonged to Dáire mac Fiachna on the Cooley Peninsula in Ulster (modern County Louth); Finnbhennach had migrated west and joined the herds of Ailill, king of Connacht.\n\nThe bull’s powers were extraordinary: he could serve fifty heifers a day, his bellowing filled the valley with sound, a hundred warriors could shelter in his shadow, and his mere presence repelled spectral beings. It was Queen Medb’s desire to match Donn Cúailnge against Finnbhennach — whose matching in size to Ailill’s bull had made her jealous — that provoked the great invasion of Ulster described in the Táin Bó Cúailnge, the central epic of the Ulster Cycle.\n\nAfter the war the bull was finally brought to Connacht, but Finnbhennach challenged him immediately. The two fought with apocalyptic ferocity across the landscape of Ireland — the noise of their hooves and horns audible across all provinces — until Donn Cúailnge killed his rival and dragged pieces of Finnbhennach’s body across the country in his horns, with place-names formed at the spots where each part fell. Exhausted and mortally wounded, the Brown Bull returned alone to the Cooley Peninsula, bellowed three times, and fell dead. He is documented in the Wikipedia article on Donn Cúailnge, the Irish Gods and Goddesses mythology site, and the Eel & Otter Celtic studies blog.",
+    "source": "https://en.wikipedia.org/wiki/Donn_Cu%C3%A1ilnge",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Donn_Cu%C3%A1ilnge",
+      "https://irishgodsandgoddesses.net/myths/tain-bo-cualnge/",
+      "https://eelandotter.net/blogs/celtic/the-bulls-of-cruachan-the-white-bull-of-connaught-and-the-brown-bull-of-ulster"
+    ],
+    "date_added": "2026-06-16",
+    "tags": [
+      "ireland",
+      "county-louth",
+      "cattle",
+      "battle",
+      "transformation",
+      "celtic"
     ]
   }
 ]

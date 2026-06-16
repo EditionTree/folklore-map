@@ -207,6 +207,10 @@
 "hash": "1bff5c33a5cd51bc50ce9a7fd2623c7632b674d1",
 "modified": "2026-06-03"
 },
+"Black Pig's Dyke": {
+"hash": "1b64dcacfcb4de91514c94a13778543825ce5de5",
+"modified": "2026-06-16"
+},
 "Black Rock Gorge": {
 "hash": "4ecd82d7e4fbeb3cf60f81c1857715c86be77f98",
 "modified": "2026-06-03"
@@ -232,8 +236,8 @@
 "modified": "2026-06-08"
 },
 "Blodeuwedd": {
-"hash": "9aa3b2f1539505c38663aa9d45322bb8e4d7949b",
-"modified": "2026-06-03"
+"hash": "fd3af97ec62f1c98ce9f822de4cbbb595373c1c2",
+"modified": "2026-06-16"
 },
 "Blue Ben of Kilve": {
 "hash": "1a089a9d868986048d2307b8ac0e6d315483c661",
@@ -372,8 +376,8 @@
 "modified": "2026-06-08"
 },
 "Camelot": {
-"hash": "47a591739df6e409285121ad390dcb210cb4de2b",
-"modified": "2026-06-03"
+"hash": "ddd9ada99c1619e0eb19bd85fb1f22ecc2b25ea8",
+"modified": "2026-06-16"
 },
 "Canewdon": {
 "hash": "6a4f7d747930e6fdaae812abc729825163749183",
@@ -390,6 +394,10 @@
 "Caoranach": {
 "hash": "3ce2972b4c004f1f43f4102c3bbc96b5601a0eca",
 "modified": "2026-06-03"
+},
+"Carman the Sorceress": {
+"hash": "3727c2a4c1720318dd17441d337a0b5d63ec7048",
+"modified": "2026-06-16"
 },
 "Carningli": {
 "hash": "06a39211ca3c3ea80c673860ab5ef3a8ac2cea08",
@@ -460,8 +468,8 @@
 "modified": "2026-06-03"
 },
 "Children of Lir": {
-"hash": "e6c9e665e8ba6d3180faf53cccdbecc78f10b5f4",
-"modified": "2026-06-03"
+"hash": "8fc8d8cf025e6bbbaecee33cae458fd9be4d07b0",
+"modified": "2026-06-16"
 },
 "Church Grim": {
 "hash": "5749a03df717874ac2ff85970550e09fae8f52d5",
@@ -486,6 +494,10 @@
 "Colt Pixies": {
 "hash": "f8f6751aa895136fe25c00f33c0f2c49fc155236",
 "modified": "2026-06-08"
+},
+"Conn-eda and the Golden Apples of Lough Erne": {
+"hash": "bdcce9b60c8f0a35f26a51c5e786cc97d925df71",
+"modified": "2026-06-16"
 },
 "Coolcoulaghta Standing Stones": {
 "hash": "5e3d65756e988355fb53e0d3931f641aebc0d2e8",
@@ -520,8 +532,8 @@
 "modified": "2026-06-13"
 },
 "Croagh Patrick": {
-"hash": "907c69b51f010dbbae904fd0d83449dfb53a2e90",
-"modified": "2026-06-03"
+"hash": "dd6e2e3198fc7fc14fa2730c58639751d7960195",
+"modified": "2026-06-16"
 },
 "Crodh Mara": {
 "hash": "3cca1296be3f359f2a2bac048e6f1bcf6e5b25ec",
@@ -623,6 +635,10 @@
 "hash": "8c1da10be1288d2218c991f61ab7c9ec73d603c3",
 "modified": "2026-06-03"
 },
+"Donn Cúailnge": {
+"hash": "c7e5d327181e725b5937c41ff0e00e76b6b988ce",
+"modified": "2026-06-16"
+},
 "Donn Fírinne": {
 "hash": "0ccd541f839ad99720a09be6b2ddf5730fb7f045",
 "modified": "2026-06-03"
@@ -646,6 +662,10 @@
 "Dragon Hill, Uffington": {
 "hash": "6dc8800bdc55c224ef879c5a1a8ac30a6b6950b2",
 "modified": "2026-06-03"
+},
+"Dragon of Brinsop": {
+"hash": "4f744523a621551185c02645f452daa40424856a",
+"modified": "2026-06-16"
 },
 "Dragon of Deerhurst": {
 "hash": "4e710bb21715e405ef1fe58cda3413503826e484",
@@ -848,8 +868,8 @@
 "modified": "2026-06-14"
 },
 "Glaistig": {
-"hash": "cc463b0d7dd8f3cd697847134ec942deefd0cd6b",
-"modified": "2026-06-03"
+"hash": "5c94625f731ae74f9dc7450f77a3cffce1ae9b93",
+"modified": "2026-06-16"
 },
 "Glantane East": {
 "hash": "0edfa54e1fc1953247e254d4ee2d82fb3c1196ef",
@@ -866,6 +886,10 @@
 "Glastonbury Tor": {
 "hash": "8510d3c09cd2bb7fa61ec036f6f0c7124b4a796e",
 "modified": "2026-06-03"
+},
+"Gobán Saor": {
+"hash": "8b39d3c24aab19a4ec277b75acad4e33effe7241",
+"modified": "2026-06-16"
 },
 "Gog and Magog": {
 "hash": "5ba50df95c3badbe5adf0201d4d2fcc158ae30d1",
@@ -946,6 +970,10 @@
 "Gwy": {
 "hash": "acd41293d18e0e6a6561af258015d118d855bcb1",
 "modified": "2026-06-03"
+},
+"Gwydion fab Dôn": {
+"hash": "aeaa99b63849e3c02ca4b4f14f6718ccf1bdfbf4",
+"modified": "2026-06-16"
 },
 "Gwyllgi": {
 "hash": "e206a0cc9f46854756fbd6816e1fbeb6ca61ea10",
@@ -1032,8 +1060,8 @@
 "modified": "2026-06-08"
 },
 "Hill of Tara": {
-"hash": "a432b4f4e15787358071b42dcdc5639ac9a413b3",
-"modified": "2026-06-03"
+"hash": "677722a5207832c2e374a13cb164f9340a2e4973",
+"modified": "2026-06-16"
 },
 "Hob Hole, Runswick Bay": {
 "hash": "9ed91a274f0dbfa3e22d1708e24a72c2d610fa70",
@@ -1066,6 +1094,10 @@
 "Isaac Gulliver": {
 "hash": "47fe9aee959131b90972afbc406b5e37f9a4234d",
 "modified": "2026-06-13"
+},
+"Islandmagee Witch Trial": {
+"hash": "2854dbb22f10f72f2d2d3723740c39458c9c2f3b",
+"modified": "2026-06-16"
 },
 "Isobel Gowdie": {
 "hash": "d213e4d84d3fac7e6fb81944e10fef9657178568",
@@ -1176,8 +1208,8 @@
 "modified": "2026-05-30"
 },
 "Knocknarea": {
-"hash": "e1f35e2b31d6274c7d7684ec5a8a64bb36314f9d",
-"modified": "2026-06-03"
+"hash": "d9deaf36b2664501a88acc8c706263d73b5b425f",
+"modified": "2026-06-16"
 },
 "Knucker of Lyminster": {
 "hash": "416d99c63f0f2fa34547c716ca7dfd6b4eb7cd69",
@@ -1202,6 +1234,10 @@
 "Lady Howard of Okehampton": {
 "hash": "e269b559b1011681c215252f61b5d415343c4bbd",
 "modified": "2026-06-14"
+},
+"Lady Mary Killigrew": {
+"hash": "825588c567aa989a2083d03dd21293b78848fbcc",
+"modified": "2026-06-16"
 },
 "Laidly Worm of Spindleston Heugh": {
 "hash": "51f6ee07dd187e5e8f148d5cc3232a7675ca3f0a",
@@ -1352,8 +1388,8 @@
 "modified": "2026-06-12"
 },
 "Macha": {
-"hash": "e3d4470903b3ce7beb39b1b502da9fa96ed03573",
-"modified": "2026-06-03"
+"hash": "d4be1e2841b6130548f54fe779c3662ecbc87028",
+"modified": "2026-06-16"
 },
 "Maeshowe Runes": {
 "hash": "b288c41b6bdc6bb2711a144896c153e5244aa02e",
@@ -1371,9 +1407,17 @@
 "hash": "5aeb931aaba7da38a06900e6e877489f9bce268a",
 "modified": "2026-06-13"
 },
+"Malekin of Dagworth": {
+"hash": "5e111e5ac735e324de8293c3c2f9e242d4507309",
+"modified": "2026-06-16"
+},
 "Manannán mac Lir": {
 "hash": "ec97ca084fcd532cea874da461dc85095d4096df",
 "modified": "2026-06-05"
+},
+"Maoveen, the Banshee of Shane’s Castle": {
+"hash": "09f4790a008296dc1b35976162e2f4b58e0221f9",
+"modified": "2026-06-16"
 },
 "Maponos": {
 "hash": "0765b373b443a3b6d9effe29aae3e9167dba9468",
@@ -1567,6 +1611,14 @@
 "hash": "6669773d54e6c0136ee4237f9eb5483dfbf50753",
 "modified": "2026-06-12"
 },
+"Oonagh of Knockmany Hill": {
+"hash": "6653cffe4aec079beebde9b486cf92bf74c88e9c",
+"modified": "2026-06-16"
+},
+"Oran of Iona": {
+"hash": "77eb10d5423b2f905ec2acc08ba68cb9932d5256",
+"modified": "2026-06-16"
+},
 "Orkneyinga Saga": {
 "hash": "952cc779fc00669f19a6ba7189cd7d30901da7f2",
 "modified": "2026-06-03"
@@ -1744,8 +1796,8 @@
 "modified": "2026-06-09"
 },
 "Salmon of Knowledge": {
-"hash": "191ea1a95f10be02f8e34e471c7953c35d0aae3e",
-"modified": "2026-06-03"
+"hash": "b124927ecffb6e1bf3495ba12c636f2f9a4eefe6",
+"modified": "2026-06-16"
 },
 "Sarah Whitehead": {
 "hash": "c59ea68967102b7dbd7f0e01c07707c3576790a5",
@@ -1884,8 +1936,8 @@
 "modified": "2026-06-03"
 },
 "Stanton Drew Stone Circles": {
-"hash": "dc93e52aea8d22b8f7ca2d10f535194f1a63b395",
-"modified": "2026-06-03"
+"hash": "3504351b04c7c10fda320cfa1b5d0386ca73cd08",
+"modified": "2026-06-16"
 },
 "Stone of Scone": {
 "hash": "6e440aa4a27dd92a6fd9cf26da82d8cd9171e931",
@@ -2084,8 +2136,8 @@
 "modified": "2026-06-14"
 },
 "The Selkie": {
-"hash": "2062ca57ef175207087036375c2b389254618758",
-"modified": "2026-06-03"
+"hash": "b24bc6b4fb6f8b77450e8f2a4fb6fc836b3ad490",
+"modified": "2026-06-16"
 },
 "The Towans": {
 "hash": "f0862f18a816f07d0f3f4c6f2d6bcfcb599b2ba0",
@@ -2392,8 +2444,8 @@
 "modified": "2026-06-03"
 },
 "Áine": {
-"hash": "52f918a9c89875b13244a0729ad19e6c97ecf0fa",
-"modified": "2026-06-03"
+"hash": "e5b618751ec0e9439b6e0ad42238475e18d3b5e8",
+"modified": "2026-06-16"
 },
 "Étaín": {
 "hash": "eee58679fb6dc19c3621feda219e055834161655",

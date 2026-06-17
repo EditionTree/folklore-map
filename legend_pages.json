@@ -1396,6 +1396,51 @@
         "Setting": "Scilly Isles",
         "Motif": "Flooded land and bells"
       }
+    },
+    "Bean Nighe": {
+      "priority": 94,
+      "image": "legend-images/bean-nighe-hero.jpg",
+      "alt": "The Bean Nighe crouched beside a stony Highland burn washing pale grave-clothes at dusk",
+      "caption": "A visual interpretation of the Highland Bean Nighe at a lonely ford",
+      "map_title": "Highland, Scotland",
+      "section_heading": "The washer at the ford",
+      "pullquote": "To see her is to know that death is coming.",
+      "facts": {
+        "Tradition": "Highland folklore",
+        "Type": "Death-omen washerwoman",
+        "Setting": "Ford or stream",
+        "Motif": "Warning of death"
+      }
+    },
+    "Boggarts": {
+      "priority": 95,
+      "image": "legend-images/boggarts-hero.jpg",
+      "alt": "A lone child pausing before a narrow stone footbridge over a dark boggy clough at dusk in northern England",
+      "caption": "A visual interpretation of boggart-haunted country in Yorkshire and Lancashire",
+      "map_title": "Yorkshire & Lancashire",
+      "section_heading": "The thing in the churn",
+      "pullquote": "Aye, we're flitting.",
+      "facts": {
+        "Tradition": "Northern English folklore",
+        "Type": "Malicious house-and-field spirit",
+        "Setting": "Houses, lanes and cloughs",
+        "Motif": "Inescapable haunting"
+      }
+    },
+    "Brahan Seer": {
+      "priority": 96,
+      "image": "legend-images/brahan-seer-hero.jpg",
+      "alt": "The Brahan Seer standing on a Ross-shire shore holding a holed stone beneath a low Highland sky",
+      "caption": "A visual interpretation of the Brahan Seer on the Ross-shire coast",
+      "map_title": "Brahan, Ross-shire",
+      "section_heading": "The stone and the prophecy",
+      "pullquote": "Long strings of carriages without horses.",
+      "facts": {
+        "Tradition": "Highland prophecy",
+        "Type": "Second Sight seer",
+        "Setting": "Ross-shire coast",
+        "Motif": "Prophecy and doom"
+      }
     }
   }
 }

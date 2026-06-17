@@ -68,8 +68,8 @@
 "modified": "2026-06-03"
 },
 "Avalon": {
-"hash": "618f348b530f02341d01e52660c5b27761ba797f",
-"modified": "2026-06-03"
+"hash": "ddc7ed527cf604eb4bd41920323a710c1c6ae6d8",
+"modified": "2026-06-17"
 },
 "Avebury": {
 "hash": "de90713e492b2578e8e1fc0d383046b5d5ededb6",
@@ -108,16 +108,16 @@
 "modified": "2026-06-03"
 },
 "Barns of Ayr": {
-"hash": "719d0059ca822e26251e1841861d62454e570906",
-"modified": "2026-06-03"
+"hash": "004f69c61413ac17beb00891ef1281d4f64b89af",
+"modified": "2026-06-17"
 },
 "Bartholomew Roberts": {
 "hash": "9c01548a8fc6e3f04c604d526c9f1f89ca93ccb1",
 "modified": "2026-06-03"
 },
 "Battle of Barry": {
-"hash": "b01db893cacf06cd81a2e882fcbd0b793ed1b686",
-"modified": "2026-05-29"
+"hash": "c4f64b80282a87f896d9523f06f8be06066b17ca",
+"modified": "2026-06-17"
 },
 "Bean Nighe": {
 "hash": "a08110c180f4416e872abae1db363a2cb8468ce0",
@@ -228,8 +228,8 @@
 "modified": "2026-06-14"
 },
 "Blarney Stone": {
-"hash": "8024fceee3b1aa1c03b292ab687195fafdcdc256",
-"modified": "2026-05-30"
+"hash": "6bb21398c5c8619d10fc0680b67ad209c63e3c5a",
+"modified": "2026-06-17"
 },
 "Bleeding Yew of Nevern": {
 "hash": "4682b53d3142a625834baaaaafa6ff1de172a19e",
@@ -719,6 +719,10 @@
 "hash": "7fedf1471e08ec4c7b0dd6b78cf529fd9d4bee99",
 "modified": "2026-06-08"
 },
+"Dwarfie Stane": {
+"hash": "dc03b817cac6484956537c9e16e7945450b8c32c",
+"modified": "2026-06-17"
+},
 "Dòideag of Mull": {
 "hash": "297c75b9387e7a0f9a98e34cc0555a0e6337dad7",
 "modified": "2026-06-09"
@@ -732,8 +736,8 @@
 "modified": "2026-05-30"
 },
 "Elder Mother": {
-"hash": "9cccc41cd6c0d51c9f69c42441f2064b4a4d118f",
-"modified": "2026-06-03"
+"hash": "68b68c4b41fc8247eb5a6ce3bcab0b5bbfebcc0c",
+"modified": "2026-06-17"
 },
 "Elfhame": {
 "hash": "7228621f8966c64e9a6072bb6360b7e8b6cb8814",
@@ -790,6 +794,10 @@
 "Fenodyree": {
 "hash": "881270b12bc78a2b88e72ac87049124d97d4ca90",
 "modified": "2026-06-16"
+},
+"Fiddler Fynes of Kirkstead": {
+"hash": "18559174a0810f588773d0fa1fb9bd135b1354e2",
+"modified": "2026-06-17"
 },
 "Filey Dragon": {
 "hash": "56c07a393fd178370e2802c0ef64652ac95a01e5",
@@ -1367,6 +1375,10 @@
 "hash": "0985bad1aa004bdc4dab88cd73e4be5ebe2a1449",
 "modified": "2026-06-03"
 },
+"Loughareema, the Vanishing Lake": {
+"hash": "c0631e1eb05ec6d77ced732960dcc977b29d9b85",
+"modified": "2026-06-17"
+},
 "Lugh": {
 "hash": "d4c9d9b5cc3cd354f31f21dad8b5f75e77cee04f",
 "modified": "2026-06-03"
@@ -1390,6 +1402,10 @@
 "Macha": {
 "hash": "d4be1e2841b6130548f54fe779c3662ecbc87028",
 "modified": "2026-06-16"
+},
+"Macphie and the Black Dog of Colonsay": {
+"hash": "611fe7f55f2506ae4599807709a9c929b88356b3",
+"modified": "2026-06-17"
 },
 "Maeshowe Runes": {
 "hash": "b288c41b6bdc6bb2711a144896c153e5244aa02e",
@@ -1478,6 +1494,10 @@
 "Merlin's Oak": {
 "hash": "555b9185f42f0789bc76fc26a585a75fdc69f605",
 "modified": "2026-06-03"
+},
+"Mermaid of Benbecula": {
+"hash": "63c17ba37bfd87363b6982d0f1140a5219287314",
+"modified": "2026-06-17"
 },
 "Mermaid of Marden": {
 "hash": "763518128a145f46ebf41de6e520b1c18b353320",
@@ -1611,6 +1631,10 @@
 "hash": "6669773d54e6c0136ee4237f9eb5483dfbf50753",
 "modified": "2026-06-12"
 },
+"Old Moll of Brandy Cove": {
+"hash": "c5d35114cd78784747ac09b2e66cb17b1c3e4149",
+"modified": "2026-06-17"
+},
 "Oonagh of Knockmany Hill": {
 "hash": "6653cffe4aec079beebde9b486cf92bf74c88e9c",
 "modified": "2026-06-16"
@@ -1632,8 +1656,8 @@
 "modified": "2026-06-03"
 },
 "Overtoun Bridge": {
-"hash": "599ebc57b7e148354d6eb8808e43676ff5902083",
-"modified": "2026-06-03"
+"hash": "ba58523db0ed86a7f022cd371c738666dd39f293",
+"modified": "2026-06-17"
 },
 "Owain Glyndŵr": {
 "hash": "3bf5ab422ff2615a5840caacf94fffec4eb52626",
@@ -1736,8 +1760,12 @@
 "modified": "2026-05-30"
 },
 "Rathcroghan": {
-"hash": "8837d5dbca04f19145e5b027a6d976a01ec53a2b",
-"modified": "2026-05-30"
+"hash": "b808b6910e9bcc723c18a40fd6669bf3a3886f90",
+"modified": "2026-06-17"
+},
+"Red Hand of Ulster": {
+"hash": "ad9be4a21d8dd541a216c6546bf676f48b740260",
+"modified": "2026-06-17"
 },
 "Red Horse of Tysoe": {
 "hash": "5288887645a2a6e4cbd57c79beaf39de64cd41b4",
@@ -1815,6 +1843,10 @@
 "hash": "012389d66b4c8e139bf46263ea5e25cce2aa2211",
 "modified": "2026-06-04"
 },
+"Screaming Skull of Calgarth": {
+"hash": "42e67ed300a97c15ac06dc6e27efc614dc7f25c8",
+"modified": "2026-06-17"
+},
 "Scáthach": {
 "hash": "30ad7a70e693b37def56341c4725376b2734d520",
 "modified": "2026-06-05"
@@ -1870,6 +1902,10 @@
 "Skriker": {
 "hash": "93dba44a2bdf3eb37e425d289dbcb97c7ec20453",
 "modified": "2026-06-14"
+},
+"Slemish Mountain": {
+"hash": "dae4b627201d12df172463311fdc086688e675a8",
+"modified": "2026-06-17"
 },
 "Sluagh": {
 "hash": "ac70b36ce3c0b87b555be417cf8e6055d4e86280",
@@ -1940,8 +1976,8 @@
 "modified": "2026-06-16"
 },
 "Stone of Scone": {
-"hash": "6e440aa4a27dd92a6fd9cf26da82d8cd9171e931",
-"modified": "2026-06-03"
+"hash": "fb6fa6311cacba58b4d309d462a350a7be1f3195",
+"modified": "2026-06-17"
 },
 "Stonehenge": {
 "hash": "a230c533a91ea18e8c29e4613916c0067e6ccf5e",
@@ -1975,6 +2011,10 @@
 "hash": "e723784322a24edd7f99bb1444ddd2e2fefebfa4",
 "modified": "2026-06-14"
 },
+"Tangie": {
+"hash": "196aa0094e5c67f5900d0b58841084c9d10b2286",
+"modified": "2026-06-17"
+},
 "Taranis": {
 "hash": "c6f12fe05d42fa726f1def37c771abbd25a2d6d2",
 "modified": "2026-06-03"
@@ -2000,8 +2040,8 @@
 "modified": "2026-06-08"
 },
 "Thanet Sea Monster": {
-"hash": "59db866a2a7e7e59607f4c4bc5f863693e429e3a",
-"modified": "2026-06-03"
+"hash": "ffc3484ff80675173deb6cd2c946a57922b83288",
+"modified": "2026-06-17"
 },
 "The Anwick Dragon": {
 "hash": "e46149560d2724435251411a0f6c3666cee5c392",
@@ -2388,8 +2428,8 @@
 "modified": "2026-06-03"
 },
 "Withypool Stone Circle": {
-"hash": "cf16330d75caee7878c87cc83cfd21d6fa656aab",
-"modified": "2026-06-03"
+"hash": "dd2d1c2e191ee20e61a7780402c5fcf4c28cc5f0",
+"modified": "2026-06-17"
 },
 "Woden": {
 "hash": "e392b5df670bfff507e551f2260abe1141062920",

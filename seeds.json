@@ -99,13 +99,16 @@
     "lng": -4.6275,
     "category": "location",
     "region": "Scotland",
-    "summary": "A building in Ayr used as English barracks in the 1290s, according to Blind Harry's 15th-century epic poem on William Wallace. Wallace is said to have burned it down with the English garrison inside — one of the acts of revenge that marked his shift from outlawed knight to guerrilla leader.",
+    "summary": "Blind Harry's Wallace tells how the English lured Scottish nobles to Ayr's barracks under a flag of peace, hanged them — and condemned Wallace as an outlaw. He came back that night with fire.",
     "source": "https://en.wikipedia.org/wiki/Barns_of_Ayr",
     "date_added": "2026-06-03",
     "tags": [
       "revenge",
-      "scotland"
-    ]
+      "scotland",
+      "castle",
+      "battle"
+    ],
+    "detail": "The legend of the Barns of Ayr comes to us from Blind Harry's The Wallace, a late 15th-century verse epic written around 1477, more than a century and a half after the events it purports to describe. In Harry's account, English soldiers gathered Scottish nobles of Ayrshire — including Sir Ronald Crawford, Sheriff of Ayr, Sir Bryce Blair of Blair, Sir Neil Montgomerie, Crystal of Seton, and Sir Hugh Montgomerie — to a supposed meeting at a large building in Ayr being used as an English military garrison. When the nobles arrived, they were set upon: the more prominent among them were hanged on the spot. The massacre, in Harry's telling, was deliberate treachery by an occupying power, a violation of the peace flag under which the meeting had been called.\n\nThe act of revenge that followed became one of the defining moments of Wallace's legendary biography. Wallace assembled a force, surrounded the barracks at night, and set the building on fire with the English garrison inside. In The Wallace, this act of burning is presented not as atrocity but as righteous retribution — the English had used the law against Scotland's nobles; Wallace used fire. Modern historians have found no corroborating documentary evidence for a mass killing of Scottish nobles in Ayrshire at this time, and Blind Harry is now regarded as an unreliable historian who drew on oral tradition and political motivation to create a Wallace who embodied the full extent of Scottish grievance against the English crown.\n\nThe historical kernel is real: Edward I's Scottish campaign of 1296–1307 was brutal, and the Barns of Ayr legend functions as a compression of genuine oppression into a single memorable image of treachery and fire. The legend passed into Scottish popular culture with considerable force, eventually appearing in Braveheart as the film's emotional turning point. The site at Ayr — no longer standing — appeared in early maps of the town, and the legend was preserved locally long before Blind Harry committed it to verse, suggesting it had circulated as oral tradition in Ayrshire for generations."
   },
   {
     "name": "Beast of Bodmin",
@@ -2074,14 +2077,18 @@
     "lng": -4.5252,
     "category": "location",
     "region": "Scotland",
-    "summary": "Overtoun Bridge is a category B-listed structure over the Overtoun Burn on the approach road from the west to Overtoun House, near Dumbarton in West Dunbartonshire, Scotland. It was completed in 1895, based on a design by the landscape architect H. E. Milner. It spans a ditch known as Spardie Linn.",
+    "summary": "Since the 1950s, over three hundred dogs have leapt from Overtoun Bridge onto the rocks of the gorge below. The White Lady of Overtoun — a grief-haunted ghost — is said to call them to the edge.",
     "source": "https://en.wikipedia.org/wiki/Overtoun_Bridge",
     "date_added": "2026-06-03",
     "tags": [
       "bridge",
       "road",
-      "scotland"
-    ]
+      "scotland",
+      "death-omen",
+      "haunting",
+      "west-dunbartonshire"
+    ],
+    "detail": "Overtoun Bridge spans the Overtoun Burn on the approach to Overtoun House near Dumbarton, a Victorian Gothic mansion built in 1863. The bridge, completed in 1895, is a handsome stone arch with raised parapets — raised just high enough that dogs reaching the top and looking over the edge may perceive it as a flat, solid surface that appears safe to step onto. Over fifty years beginning in the 1950s, local records accumulated of dogs, usually of spaniel and labrador breeds, leaping from the same stretch of the bridge — always from the same side, always at the same spot — and falling more than fifteen metres to the rocks of the burn below. The number of cases is estimated at over three hundred, though formal records are fragmentary.\n\nThe White Lady of Overtoun emerged as the supernatural explanation of choice. She is identified by local tradition as Lady Overtoun, the widow of the industrialist James White, first Baron Overtoun, who resided at the house after her husband's death in the early twentieth century. Her figure, dressed in white, was said to be seen drifting near the bridge and along the estate grounds in silence on misty days. Some accounts hold that she drew animals to the edge in the way that folklore's spirits of lonely places — the German Lorelei, the Irish Bean Sídhe — compel susceptible creatures toward water and rock. In 1994 a more violent incident added a layer of tragedy: a man threw his infant son from the bridge, and survivors later described a sense of supernatural compulsion at the location, reinforcing the existing narrative.\n\nThe scientific investigation by animal behaviourist David Sands pointed toward mink. European mink nest beneath the bridge's granite and parapet ledges in the deep ivy of the burn-side vegetation, and dogs with especially acute olfactory senses — precisely the long-nosed retriever and spaniel breeds most frequently involved — may be overwhelmed by the scent and leap, misjudging the drop that the raised parapet wall conceals from them. The Celtic tradition of 'thin places' — locales where the barrier between the living world and the Otherworld is unusually permeable — has been invoked as a third framework, one which Overtoun House's isolated valley position, its mist, and its history of strange events conspire to make feel plausible."
   },
   {
     "name": "Owlman of Mawnan",
@@ -2999,14 +3006,17 @@
     "lng": -3.6604,
     "category": "ancient_site",
     "region": "Somerset",
-    "summary": "A moorland stone circle of about a hundred small stones on the high ground of Exmoor above Withypool — quiet, unassuming, and extremely old. Local tradition once held that counting the stones three times and getting the same number twice was impossible, and that the attempt would bring bad luck.",
+    "summary": "A ring of nearly a hundred small stones on Exmoor moorland — where the pixies come to thresh at harvest, and where no one has ever counted the stones twice and arrived at the same number.",
     "source": "https://en.wikipedia.org/wiki/Withypool_Stone_Circle",
     "date_added": "2026-06-03",
     "tags": [
       "standing-stones",
       "england",
-      "somerset"
-    ]
+      "somerset",
+      "moor",
+      "fairy"
+    ],
+    "detail": "Withypool Stone Circle stands on the upland moor above the village of Withypool in Somerset, approximately forty-five metres in diameter and containing around a hundred small stones, most worn low into the heather. It is one of only two prehistoric stone circles on Exmoor — the other being the Porlock Stone Circle — and has been a scheduled ancient monument since 1928. The site dates broadly to the Bronze Age, and like most Exmoor monuments has no surviving written record of the ritual that originally organised its construction. Historic England records that there were perhaps a hundred and eight stones originally; by 1905, thirty-seven remained visible above ground, with evidence that more lie just beneath the turf.\n\nThe counting tradition documented in the existing record holds that no one can count the stones three times and arrive at the same number twice — and that attempting to do so brings misfortune. This echoes a widespread British folk belief associated with large stone circles: at the Rollright Stones in Oxfordshire, at Stanton Drew in Somerset, and at Long Meg in Cumbria, the same motif recurs. It belongs to a deeper tradition in which prehistoric monuments resist counting, confuse travellers, and punish those who try to take inventory of the sacred. To count the dead is to disturb them; the stones do not consent to be numbered.\n\nThe pixie traditions of the Withypool area, documented by Jack Hurley in Legends of Exmoor (1973), add a second layer. According to accounts preserved from the farming community, pixies came to Withypool farms on harvest nights to thresh the corn, performing the labour silently and without payment. When a farmer's wife, curious to see them, left out gifts of clothing in gratitude, the pixies were offended — in the standard logic of brownie folklore, gifts of clothes mean dismissal — and they never came again. The stone circle and the pixies of the surrounding farms belong to the same imaginative landscape: a moor where the boundaries between ordinary farmland and something older and wilder remain permeable."
   },
   {
     "name": "Woden",
@@ -3363,7 +3373,7 @@
     "lng": 1.395,
     "category": "water",
     "region": "Kent",
-    "summary": "A vast sea creature reported off the Isle of Thanet at various points in history, its silhouette glimpsed through sea mist by fishermen. The waters around Thanet have a dark reputation — the isle was once separated from mainland Kent by the Wantsum Channel, and old stories speak of things that came through it.",
+    "summary": "Off the Isle of Thanet, something vast has broken the surface across three centuries of sightings — scales, crest, and a head like a horse. The crew of one vessel opened fire and hit it in 1917.",
     "source": "https://en.wikipedia.org/wiki/Isle_of_Thanet",
     "date_added": "2026-06-03",
     "tags": [
@@ -3371,7 +3381,8 @@
       "island",
       "england",
       "kent"
-    ]
+    ],
+    "detail": "The waters around the Isle of Thanet have produced some of England's most specific sea-serpent reports. The first well-documented encounter dates to 1917, when a vessel off the Thanet coast encountered a creature its crew described as approximately fifteen metres long with dark-green scales and a spiny dorsal fin resembling 'some gigantic conger eel.' The sailors opened fire; at least one shot struck the dorsal fin, causing the creature to thrash violently before sinking beneath the surface. The report was filed and preserved, though wartime disruption meant it attracted little immediate attention beyond local coverage.\n\nIn 1934, sightings off Herne Bay generated enough excitement to draw motor boats in pursuit. The creature — reported as twenty feet long with a dark back and yellow underside — evaded boats travelling at forty miles per hour. A crowd gathered on the shore to watch the pursuit. The same year is famous in British cryptozoology for the first 'surgeon's photograph' from Loch Ness, suggesting a cultural climate unusually receptive to sea-monster accounts, though the Thanet sightings predate the Ness photographs by several months.\n\nThe most distinctively folkloric account came in 1950 at Cliftonville, when a swimmer named John Handley observed a creature surfacing approximately three hundred feet away. His description — two feet wide, with the head of a horse complete with ears — echoes the traditional Celtic descriptions of the Each-Uisge and Irish kelpie, raising the intriguing possibility that older folk-memory of aquatic horse-headed spirits shaped how observers reported unfamiliar things in the water. The Wantsum Channel, which once separated Thanet from mainland Kent and made it a true island, was historically a treacherous waterway; local tradition long held it home to creatures that navigated between the worlds of sea and land."
   },
   {
     "name": "Stratford Lion",
@@ -3739,7 +3750,7 @@
     "lng": -2.699,
     "category": "location",
     "region": "Somerset",
-    "summary": "The isle of eternal rest where Arthur was carried after his final battle — identified with Glastonbury by monks who claimed to have found his grave. Arthur sleeps here still, waiting to return when Britain needs him most. Many believe the monks lied about the grave. Few doubt the legend.",
+    "summary": "The Isle of Apples where Arthur sleeps and Morgan le Fay governs — first named by Geoffrey of Monmouth in 1136, later claimed by Glastonbury monks who 'discovered' Arthur's grave to fund their rebuilding appeal.",
     "source": "https://en.wikipedia.org/wiki/Avalon",
     "date_added": "2026-06-03",
     "tags": [
@@ -3747,8 +3758,11 @@
       "battle",
       "arthurian",
       "england",
-      "somerset"
-    ]
+      "somerset",
+      "healing",
+      "celtic"
+    ],
+    "detail": "Avalon makes its first appearance in Geoffrey of Monmouth's Historia Regum Britanniae, completed around 1136. Here Geoffrey records that after Arthur's defeat at the Battle of Camlann, the mortally wounded king was carried to the island of Avalon for his wounds to be healed. Geoffrey elaborated in the Vita Merlini (c.1150), calling it 'Insula Pomorum' — the Isle of Apples — and describing it as a fortunate island far in the Atlantic, ruled by nine enchantresses, the greatest of whom was Morgan, Arthur's half-sister and a skilled healer. The name Avalon derives from the Celtic root *aballo (apple), cognate with the Welsh afal and the Old Irish aball; Geoffrey was adapting an existing Celtic concept of a blessed island of the dead reached by sea, related to the Irish Tír na nÓg and the tradition of Emain Ablach ('Emhain of the Apple Trees'), the island realm of the sea god Manannán mac Lir.\n\nThe Glastonbury connection was made decisively in 1191, when monks at Glastonbury Abbey claimed to have unearthed, in their graveyard, a stone slab inscribed 'Hic iacet sepultus inclytus rex Arthurus' — Here lies buried the renowned King Arthur. Glastonbury sits on a natural hill that was once nearly surrounded by the Somerset marshes and could genuinely be described as an island; the Welsh name for Glastonbury, Ynys Wydryn (the Isle of Glass), was conveniently suggestive of Avalon. Modern archaeological consensus holds that the discovery was a fabrication by the monks, who needed funds to rebuild the abbey after a catastrophic fire in 1184. King Henry II, who had political interest in promoting Arthur as permanently dead rather than a sleeping king awaiting return, may have encouraged the story.\n\nThe 'once and future king' tradition — that Arthur does not die but sleeps in Avalon, waiting to return when Britain needs him most — was current in Welsh and Breton poetry before Geoffrey's account and proved far more resilient than the Glastonbury grave. Thomas Malory's Morte d'Arthur (completed c.1469, printed 1485) preserves both strands: Arthur is carried to Avalon by three queens, and the hermit who claims to have buried him cannot say whether his grave is real. Avalon has been identified with the Canary Islands, the Scilly Isles, and multiple sites in Wales and Scotland, but its power as mythological geography — a borderland between death and continued existence — has never required a physical address."
   },
   {
     "name": "Plynlimon",
@@ -3824,7 +3838,7 @@
     "lng": -0.993,
     "category": "deity",
     "region": "East Midlands",
-    "summary": "The spirit who lives within the elder tree — she must be asked permission before any branch is cut. To burn elder wood without asking brings death to the household within the year. In Scandinavia she is Hyldemor; in England she has no name, only the quiet authority of very old wood.",
+    "summary": "The spirit who lives within the elder tree must be asked before the first cut is made. To burn elder without asking brings death to the household within the year — a warning recorded across England from at least the 17th century.",
     "source": "https://en.wikipedia.org/wiki/Elder_(tree)#Folklore",
     "date_added": "2026-06-03",
     "tags": [
@@ -3832,7 +3846,8 @@
       "norse",
       "england",
       "east midlands"
-    ]
+    ],
+    "detail": "The Elder Mother — known as Hyldemor in Denmark and under various local names in England — is a plant spirit tied to the elder tree (Sambucus nigra). In English folk tradition, the elder was regarded as one of the most supernaturally charged trees in the country, and the customs surrounding it were recorded by 17th and 18th-century antiquaries across the Midlands and the south of England. The most widely attested belief was that before cutting any part of an elder — branch, root, or leaf — the cutter must remove their hat and ask permission aloud. Without this permission, the spirit within the tree would take its revenge on the household.\n\nThe consequences of burning elder wood without asking were considered particularly severe. The tradition held that a death would follow within the household before the year was out — not general bad luck but specific retributive logic: the Elder Mother had been killed without her consent and would take a life in exchange. Katharine Briggs, in the Dictionary of British Folk-Tales (1970) and An Encyclopedia of Fairies (1976), documents the elder-spirit tradition as one of the most persistent plant-spirit beliefs in England, continuous from at least the Tudor period into the living memory of her informants. The exact form of the danger varied by county — in some regions it was the children of the household who were most at risk — but the prohibition on burning elder was remarkably consistent across England.\n\nThe elder's ambiguous status ran deeper than a single spirit. In Christian tradition, Judas Iscariot was said to have hanged himself on an elder, explaining the tree's drooping habit; in another strand of tradition, the Cross was made from elder wood. These associations with betrayal and execution reinforced the elder's reputation as a dangerous tree to interfere with. Medicinally, however, the elder was one of the most useful plants in the hedgerow — its flowers made anti-inflammatory cordials, its berries produced medicines for colds and fevers — giving it a double identity: a tree that healed when approached correctly but killed when treated carelessly. The Elder Mother figure reconciles this duality, offering wood and medicine freely to those who ask but exacting full payment from those who take without asking."
   },
   {
     "name": "Gooseberry Wife",
@@ -4474,7 +4489,12 @@
       "england",
       "cornwall"
     ],
-    "detail": "Jan Tregeagle is the great damned soul of Cornish legend — a corrupt seventeenth-century magistrate and steward remembered for fraud, cruelty and worse, whose spirit was summoned back from the grave to give evidence in a Bodmin courtroom. Once raised, he could not be returned to rest, and to keep his howling ghost from the world he was set a series of impossible, eternal tasks meant to occupy him until Judgement Day.\n\nHe was condemned to empty bottomless Dozmary Pool on Bodmin Moor with a limpet shell pierced full of holes; fleeing the demons that guarded him, he was set instead to weave ropes of sand on the northern shore, and to sweep the sand from Porthcurno round to Nanjizal — labours forever undone by tide and wind. On wild nights his roaring is still said to be heard across the moors and cliffs as the Devil's hounds pursue him. Collected by Robert Hunt in his 'Popular Romances of the West of England' (1865), Tregeagle is Cornwall's definitive tale of damnation and of the torment of the eternally, futilely punished."
+    "detail": "Jan Tregeagle is the great damned soul of Cornish legend — a corrupt seventeenth-century magistrate and steward remembered for fraud, cruelty and worse, whose spirit was summoned back from the grave to give evidence in a Bodmin courtroom. Once raised, he could not be returned to rest, and to keep his howling ghost from the world he was set a series of impossible, eternal tasks meant to occupy him until Judgement Day.\n\nHe was condemned to empty bottomless Dozmary Pool on Bodmin Moor with a limpet shell pierced full of holes; fleeing the demons that guarded him, he was set instead to weave ropes of sand on the northern shore, and to sweep the sand from Porthcurno round to Nanjizal — labours forever undone by tide and wind. On wild nights his roaring is still said to be heard across the moors and cliffs as the Devil's hounds pursue him. Collected by Robert Hunt in his 'Popular Romances of the West of England' (1865), Tregeagle is Cornwall's definitive tale of damnation and of the torment of the eternally, futilely punished.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Jan_Tregeagle",
+      "https://www.cornwallheritagetrust.org/learn/resources/stories-and-rhymes/tregeagle/",
+      "https://www.cornwalls.co.uk/myths-legends/jan-tregeagle.htm"
+    ]
   },
   {
     "name": "Am Fear Liath Mòr",
@@ -4755,15 +4775,18 @@
     "lng": -3.432,
     "category": "location",
     "region": "Perthshire, Scotland",
-    "summary": "A plain block of red sandstone that served as the coronation seat of Scottish kings at Scone Abbey for centuries. Edward I stole it for Westminster in 1296 as a trophy of conquest. Scottish tradition insists the real stone was hidden and the English got a copy — and the question has never quite been settled.",
+    "summary": "Stolen from Scone by Edward I in 1296 as a trophy of conquest, Scotland's coronation stone carries legends of Jacob's pillow and the screaming Irish Lia Fáil — and possibly the real stone was never taken at all.",
     "source": "https://en.wikipedia.org/wiki/Stone_of_Scone",
     "date_added": "2026-06-03",
     "tags": [
       "red",
       "church",
       "scotland",
-      "perthshire"
-    ]
+      "perthshire",
+      "prophecy",
+      "guardian"
+    ],
+    "detail": "The legend of the Stone of Scone reaches back long before the Wars of Scottish Independence. One tradition, carried in medieval chronicles and Christian origin-legend, identifies it as the stone that the patriarch Jacob used as a pillow at Bethel when he dreamed of a ladder to heaven (Genesis 28). This stone was said to have passed via Egypt, Spain, and Ireland into the possession of the Dalriada kings, becoming the Lia Fáil — the Stone of Destiny kept at the Hill of Tara — which would cry out when the rightful King of Ireland stepped upon it. The 5th-century Irish prince Fergus Mór mac Eirc supposedly carried it to Dalriada in Scotland around 500 AD, and the Scottish kings used it for coronations at Scone from at least the 9th century. Kenneth MacAlpin, first King of Scotland, placed it at Scone Abbey in 843 when he consolidated the Pictish and Gaelic kingdoms.\n\nEdward I of England seized the Stone in 1296 during his conquest of Scotland, placing it beneath the throne in Westminster Abbey as a permanent symbol of English dominance. The gesture was deliberate: controlling the stone was controlling the legitimacy of Scottish kingship. The stone remained at Westminster for seven hundred years — used in every English and British coronation — with one notable interruption: on Christmas Day 1950, four Scottish nationalist students broke into Westminster Abbey and removed the stone, cracking it in the process. It was recovered at Arbroath Abbey in April 1951, to considerable public attention. The Stone was formally repatriated to Scotland in 1996, and resides today in the Crown Room of Edinburgh Castle.\n\nThe most persistent legend, however, is that Edward never got the real stone at all. The Stone of Scone is a plain block of Old Red Sandstone, likely quarried near Scone itself — a description wholly inconsistent with an ancient Middle Eastern relic brought from Tara. The medieval historian John of Fordun and later Scottish tradition hold that the monks of Scone Abbey hid the genuine coronation stone and presented Edward with a substitute. No one has produced the hidden stone, if it exists; but the geological evidence confirms that whatever rests beneath the English throne is local Scottish sandstone, and the legend that Scotland outsmarted its conqueror in the very act of submission has never quite gone away."
   },
   {
     "name": "Nanteos Cup",
@@ -6264,6 +6287,11 @@
       "battle",
       "england",
       "lincolnshire"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Guthlac_of_Crowland",
+      "https://crowlandabbey.org.uk/history/",
+      "https://www.lincolnshirelife.co.uk/heritage/st-guthlac-and-crowland-abbey/"
     ]
   },
   {
@@ -7127,14 +7155,16 @@
     "lng": -2.7083,
     "category": "location",
     "region": "Barry, Angus, Scotland",
-    "summary": "The Battle of Barry is a legendary battle in which the Scots, purportedly led by Malcolm II, defeated a Danish invasion force in 1010 AD. Its supposed site in Carnoustie, Angus can be seen in early Ordnance Survey maps. The history of the event relies heavily on tradition and it is considered to be apocryphal.",
+    "summary": "Malcolm II's army supposedly crushed a Danish fleet at Carnoustie in 1010 — a legend so compelling it shaped the town's identity, though modern archaeology suggests the 'Danish graves' were Pictish long-cists all along.",
     "source": "https://en.wikipedia.org/wiki/Battle_of_Barry",
     "date_added": "2026-05-29",
     "tags": [
       "battle",
       "scotland",
-      "angus"
-    ]
+      "angus",
+      "norse"
+    ],
+    "detail": "The Battle of Barry occupies a specific place on early Ordnance Survey maps of Angus, marked near the eastern boundary of the old parish of Barry, close to the Lochty burn at what became the town of Carnoustie. The tradition holds that King Malcolm II of Scotland defeated a Danish invasion force here in 1010, five years before his decisive victory at Carham that established Scottish control over Lothian. Malcolm II had a substantial military reputation, and the existence of multiple battle traditions around his reign gave the Barry legend a plausible dynastic context. The site's marked position on early OS maps conferred a degree of official recognition on what was in origin a local oral tradition.\n\nThe legend was first written down by the 16th-century Scottish historian Hector Boece in his Scotorum Historia (1527). Boece was a native of Dundee — close enough to the supposed battlefield to draw on local oral tradition — and his account was widely read, though he is now regarded as an unreliable narrator who embroidered royal chronicles with popular memory. His account centred on a Danish fleet entering the Tay estuary and a Scottish force under Malcolm meeting them at Barry. Burial mounds on the edge of the parish were identified as Danish warrior graves, giving the legend physical anchoring in the visible landscape.\n\nThe decisive challenge came from archaeology. Investigation of the burial mounds — some opened during 19th-century building work in Carnoustie — revealed a Pictish long-cist cemetery rather than a mass grave of fallen warriors. The goods found included no weapons; the skeletal remains included the body of a middle-aged woman who had died of tuberculosis, a profile wholly inconsistent with a battlefield burial. The 'Danish graves' were domestic Pictish burials whose anonymous mounds had been pressed into service as evidence for a battle that almost certainly never took place at Barry. The legend survives intact in Carnoustie's local heritage, continuing to function as the town's foundational origin story even after its historical basis dissolved."
   },
   {
     "name": "Beenalaght",
@@ -7194,14 +7224,16 @@
     "lng": -8.5706,
     "category": "location",
     "region": "Blarney Castle, County Cork",
-    "summary": "The Blarney Stone is a block of Carboniferous limestone built into the battlements of Blarney Castle, Blarney, about 8 kilometres from the centre of Cork City, Ireland. According to legend, kissing the stone endows the kisser with the gift of the gab. The stone was set into a tower of the castle in 1446.",
+    "summary": "On the battlements of Blarney Castle, a limestone block offers the gift of eloquence to those who kiss it backwards over a sheer drop — but its power may come from Clíodhna, the Munster goddess of the waves.",
     "source": "https://en.wikipedia.org/wiki/Blarney_Stone",
     "date_added": "2026-05-30",
     "tags": [
       "castle",
       "ireland",
-      "county-cork"
-    ]
+      "county-cork",
+      "trickery"
+    ],
+    "detail": "The legend of the Blarney Stone centres on Cormac Laidir MacCarthy, lord of Blarney, who is said to have been facing a legal case in the 15th century that he feared he could not win. He appealed to Clíodhna, the Munster goddess of love and beauty, for aid. She instructed him to kiss the first stone he found in the morning on the way to court. He did so, pleaded his case with extraordinary eloquence, and won. In gratitude he built the stone into the castle's parapet, where it has endured since the fortification was completed in 1446. A separate tradition credits Robert the Bruce with sending the stone as a gift to Cormac MacCarthy in thanks for Irish support at Bannockburn in 1314; a third legend involves a wandering old woman who revealed the stone's power to a Lord of Blarney nervous about a meeting with Queen Elizabeth I.\n\nThe origin of the phrase 'the gift of the gab' — or simply 'blarney', meaning flattering and persuasive but not quite trustworthy talk — is itself disputed. William Henry Hurlbert, writing in 1888, noted that the legend of the stone's powers appeared to be less than a hundred years old at that point, suggesting it coalesced in the late 18th century. Whatever the legend's age, the castle and stone are documented far earlier: Blarney Castle stands in good condition and the limestone block is original to the upper battlements. Kissing the stone requires the visitor to lie on their back and lean out backwards over a significant drop, held by an attendant, to press their lips to the underside of the parapet.\n\nThe stone is now visited by roughly a million tourists annually and has become one of Ireland's most enduring cultural exports, lending the word 'blarney' to dictionaries worldwide as a common noun. Yet the Clíodhna tradition preserves an older and more specifically Irish framework: Clíodhna ('the shapely one') was the fairy queen of Munster, associated with the sea caves near Glandore in County Cork, and her blessing transforms flattery into a goddess-given gift rather than a mere tourist trick. The MacCarthy lords of Blarney and Muskerry were prominent Munster figures for four centuries, and the castle's standing today bears out a family that had, at the very least, a gift for political survival."
   },
   {
     "name": "Breeny More Stone Circle",
@@ -7795,13 +7827,17 @@
     "lng": -8.304,
     "category": "location",
     "region": "Rathcroghan, County Roscommon",
-    "summary": "Rathcroghan is a complex of archaeological sites near Tulsk in County Roscommon, Ireland. It is identified as the site of Cruachan, the traditional capital of the Connachta, the prehistoric and early medieval rulers of the kingdom of Connacht. Rathcroghan is one of the royal sites of Ireland.",
+    "summary": "The ancient capital of Connacht, where Queen Medb held her court. Over 240 monuments survive at Cruachan — including Oweynagat, the cave that opens to the Irish Otherworld on Samhain and is said to be the origin of Halloween.",
     "source": "https://en.wikipedia.org/wiki/Rathcroghan",
     "date_added": "2026-05-30",
     "tags": [
       "ireland",
-      "county-roscommon"
-    ]
+      "county-roscommon",
+      "celtic",
+      "battle",
+      "fertility"
+    ],
+    "detail": "Rathcroghan — Ráth Cruachan, 'the fort of Cruachan' — is a ritual landscape of over six square kilometres in County Roscommon containing more than 240 recorded archaeological sites, sixty of which are National Monuments of Ireland. It is identified in the early Irish literary corpus as Cruachan, the traditional seat of the Connachta, and in the mythological tradition as the royal palace of Queen Medb, the warrior-queen of the Ulster Cycle. The Táin Bó Cúailnge — the Cattle Raid of Cooley, one of the great epics of early Irish literature — begins at Rathcroghan: it is here that Medb and her consort Ailill compare their wealth in the pillow-talk that leads to the raid on Ulster and Medb's confrontation with Cú Chulainn.\n\nThe mythological landscape extends far beyond Medb. The complex includes mounds associated with Dáithí, the last pagan High King of Ireland; the Mound of the Three Witches; and the Ogham stone of Fráech, son of Medb. Crucially, the complex contains Oweynagat — the Cave of the Cats — which the medieval text Dindshenchas identifies as the literal gate of Hell, the entrance to the Irish Otherworld. Through Oweynagat, on the night of Samhain, the creatures of the Otherworld pour into the world of the living: this tradition, preserved at Rathcroghan, underlies the modern festival of Halloween. The cave's Ogham inscription reads 'VRACCI MAQI MEDVVI' — 'Fráech, son of Medb' — confirming the site's mythological associations in a medieval hand.\n\nRathcroghan remained a site of inauguration for the kings of Connacht well into the medieval period, functioning alongside Tara and Cashel as one of the provincial royal sites of Ireland. The inauguration rite, Feis Crúachan, was performed on the central mound, and the surrounding landscape served as the ritual and symbolic backdrop of Connacht's political identity. The site has never been fully excavated, making it one of the largest intact prehistoric ceremonial landscapes in Europe, and ongoing survey work by University College Dublin continues to reveal new monuments within the complex."
   },
   {
     "name": "Timoney Stones",
@@ -8224,7 +8260,11 @@
       "prophecy",
       "death-omen"
     ],
-    "detail": "'The Great Silkie of Sule Skerry' is one of the most haunting ballads in the British Isles tradition, catalogued as Child Ballad 113. In it, a woman near the sea finds herself with a mysterious child; the father comes to her from the sea — a great selkie — declaring that he lives on Sule Skerry, the remote rock roughly fifty miles south-west of Orkney's mainland. He pays her in gold for the boy and takes the child away to be raised in the sea, with only that payment left behind.\n\nThe ballad's tragedy lies in its final verse. Before departing, the Silkie tells the woman that she will marry a gunner, that he will go to sea and shoot a grey seal, and that when he brings home the pelt she will recognise the gold necklace round it as the one she once received as payment. The child inside the killed seal is her son. The great selkie himself is the other kill. The earliest collected version was taken down in Shetland in the 1850s; a full Orkney variant was collected in 1938 from John Sinclair of Flotta by the School of Scottish Studies.\n\nSule Skerry itself — a bare, uninhabited Atlantic rock occupied by large seal colonies — lends the ballad its desolate and inevitable geography. The story encodes the anxieties of seal-hunting communities, where the seals you kill may carry the souls of the sea-dead or the half-human children of silkie unions. Similar traditions of selkie ancestry survived in Orkney and Shetland well into the twentieth century, and the ballad remains distinct from the more general selkie tradition as a specific, tragic narrative set at a named and specific place."
+    "detail": "'The Great Silkie of Sule Skerry' is one of the most haunting ballads in the British Isles tradition, catalogued as Child Ballad 113. In it, a woman near the sea finds herself with a mysterious child; the father comes to her from the sea — a great selkie — declaring that he lives on Sule Skerry, the remote rock roughly fifty miles south-west of Orkney's mainland. He pays her in gold for the boy and takes the child away to be raised in the sea, with only that payment left behind.\n\nThe ballad's tragedy lies in its final verse. Before departing, the Silkie tells the woman that she will marry a gunner, that he will go to sea and shoot a grey seal, and that when he brings home the pelt she will recognise the gold necklace round it as the one she once received as payment. The child inside the killed seal is her son. The great selkie himself is the other kill. The earliest collected version was taken down in Shetland in the 1850s; a full Orkney variant was collected in 1938 from John Sinclair of Flotta by the School of Scottish Studies.\n\nSule Skerry itself — a bare, uninhabited Atlantic rock occupied by large seal colonies — lends the ballad its desolate and inevitable geography. The story encodes the anxieties of seal-hunting communities, where the seals you kill may carry the souls of the sea-dead or the half-human children of silkie unions. Similar traditions of selkie ancestry survived in Orkney and Shetland well into the twentieth century, and the ballad remains distinct from the more general selkie tradition as a specific, tragic narrative set at a named and specific place.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Great_Silkie_of_Sule_Skerry",
+      "https://en.wikipedia.org/wiki/Sule_Skerry"
+    ]
   },
   {
     "name": "Bleeding Yew of Nevern",
@@ -10442,7 +10482,8 @@
       "https://spiritedisle.ie/explore-listing/shanes-castle/",
       "https://en.wikipedia.org/wiki/Shane%27s_Castle",
       "https://www.ireland.com/en-nz/magazine/culture/banshees/",
-      "https://www.spookyisles.com/banshee-top-10/"
+      "https://www.spookyisles.com/banshee-top-10/",
+      "https://www.ireland.com/magazine/culture/banshees/"
     ],
     "date_added": "2026-06-16",
     "tags": [
@@ -10696,5 +10737,241 @@
       "transformation",
       "celtic"
     ]
+  },
+  {
+    "name": "Slemish Mountain",
+    "lat": 54.8819,
+    "lng": -6.0969,
+    "category": "hero",
+    "region": "County Antrim, Northern Ireland",
+    "summary": "St Patrick was enslaved on Slemish's volcanic peak at sixteen, tending sheep for six years until a dream voice urged his escape. On 17 March pilgrims still climb the summit in his memory.",
+    "source": "https://en.wikipedia.org/wiki/Slemish",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Slemish",
+      "https://www.broughshane.org.uk/saint-patrick-slemish",
+      "https://discovernorthernireland.com/things-to-do/slemish-mountain-p673471",
+      "https://www.hillwalktours.com/walking-hiking-blog/story-of-st-patrick/"
+    ],
+    "date_added": "2026-06-17",
+    "tags": [
+      "northern-ireland",
+      "county-antrim",
+      "mountain",
+      "celtic"
+    ],
+    "detail": "Around 401 AD, a raiding party — traditionally identified as Irish pirates — seized the teenage Patrick from his father's estate in Roman Britain and brought him to Ireland, where he was sold to Miliucc moccu Bain, a chieftain who put him to work as a shepherd on the slopes of Slemish Mountain in what is now County Antrim. Patrick later recorded those six years in his own words in the Confessio, describing them as a period of intense spiritual awakening: cut off from home and family, exposed to the weather day and night, he turned to prayer as his only consolation, sometimes praying hundreds of times a day before sunrise.\n\nAccording to the tradition, a divine voice came to him in a dream announcing that his ship was ready — a journey of two hundred miles to the coast awaited him. Patrick made his escape, found a vessel, and eventually made his way home to his family. The decisive moment on Slemish, however, planted a love of Ireland he could not shake: years later he returned, now as a bishop, driven by what he described as a vision of the Irish people calling him back.\n\nSlemish today is a distinctive volcanic plug rising sharply above the Antrim Plateau, immediately recognisable from many miles. It has been a site of annual St Patrick's Day pilgrimage for centuries; crowds still hike to the rocky summit on 17 March regardless of weather, making it one of the most tangible and consistently maintained pilgrimage traditions in Northern Ireland. The Confessio of St Patrick, first written in the fifth century, remains the earliest primary source for the legend, lending Slemish an unusually firm documentary foundation."
+  },
+  {
+    "name": "Loughareema, the Vanishing Lake",
+    "lat": 55.1569,
+    "lng": -6.1081,
+    "category": "ghost",
+    "region": "County Antrim, Northern Ireland",
+    "summary": "Loughareema drains underground in hours, leaving a dry road across its bed. When a coachman drove his horses into the full lake at night, all three drowned — and their ghosts still haunt the shoreline when the waters return.",
+    "source": "https://en.wikipedia.org/wiki/Loughareema",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Loughareema",
+      "https://www.belfastentries.com/places/loughareema-the-vanishing-lake/",
+      "https://www.newsletter.co.uk/retro/strange-lake-comes-and-goes-ghosts-and-ghouls-its-shoreline-131349",
+      "https://www.geolsoc.org.uk/science-and-policy/100-great-geosites/landscape/loughareema/"
+    ],
+    "date_added": "2026-06-17",
+    "tags": [
+      "northern-ireland",
+      "county-antrim",
+      "lake",
+      "drowning",
+      "haunting",
+      "death-omen"
+    ],
+    "detail": "Loughareema, whose name derives from the Irish Loch an Rith Amach ('the lake that runs out'), is an upland lake near Ballycastle in north Antrim that empties through a sinkhole in its limestone basin and refills from three feeder streams, sometimes within a single day. The lake can be brimming at dusk and bone-dry by morning, leaving its bed as passable ground. A road was constructed through the lake — sensible enough when it was empty — but fatally misleading when water returned in the dark of night.\n\nLocal tradition holds that in the nineteenth century Captain McNeill's coachman drove a two-horse brougham across the hidden lake surface on just such a night. The horses, sensing the rising water, panicked, rearing and plunging until the carriage was dragged beneath the surface. The coachman and both horses were drowned after what witnesses described as 'a terrible struggle for life'. The event passed quickly into folklore, and from there into ghost story: the phantom coach and horses are said to appear at the shoreline on nights when the lake is full, replaying the fatal crossing for those who wait in the dark.\n\nThe lake's dual nature — vanishing lake by day, ghost-haunted water at night — made it a persistent subject of local legend along the Antrim coast. The Geological Society of London has since recognised Loughareema as a significant geological site for its remarkable ephemeral behaviour, and the lake is documented in both scientific and folklore literature. Several Ulster folk accounts record the ghost story, emphasising the coachman's inability to distinguish the road from the water surface in darkness."
+  },
+  {
+    "name": "Red Hand of Ulster",
+    "lat": 54.5964,
+    "lng": -5.9301,
+    "category": "hero",
+    "region": "Ulster, Northern Ireland",
+    "summary": "Two chieftains race by boat for Ulster's kingship — first hand to touch shore wins the kingdom. One drew his sword, cut off his right hand, and hurled it ashore to claim victory in blood.",
+    "source": "https://en.wikipedia.org/wiki/Red_Hand_of_Ulster",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Red_Hand_of_Ulster",
+      "https://belfastchildis.com/2015/10/14/red-hand-of-ulster/",
+      "https://www.theirishrose.com/irish-rose-blog/meet-the-oneillsand-their-blood-red-hand/",
+      "https://tellstory.net/stories/irish/fairy-tale/the-red-hand-of-ulster/"
+    ],
+    "date_added": "2026-06-17",
+    "tags": [
+      "northern-ireland",
+      "sacrifice",
+      "battle",
+      "celtic"
+    ],
+    "detail": "The Red Hand of Ulster is one of the most enduring origin legends of the province, attached to the O'Neill dynasty and recorded in multiple variants across Irish Gaelic tradition. In the most widely told version, the kingdom of Ulster had fallen without an agreed heir, and it was decreed that a boat race would decide the matter: whichever chieftain first touched the shore of Ireland would become king. As one contestant saw he was losing the race, he drew his blade, severed his own right hand, and flung it onto the strand — its blood-red palm landing before any other claimant could beach his vessel.\n\nAn older version, recorded by Diarmaid Mac an Bhaird, associates the Red Hand with Conall Cernach, the great Ulaid warrior of the Ulster Cycle, who is said to have pressed his bloodied hand upon a war-banner as he avenged the death of Cú Chulainn, and whose descendants carried that emblem ever after. A further tradition links the symbol to the mythical Labraid Lámh Dhearg (Red Hand Labraid) from the Fenian Cycle. The multiple origin stories reflect how deeply embedded the emblem is in Gaelic Ulster's sense of identity, with different noble houses adapting the legend to underpin their own legitimacy.\n\nThe Red Hand appears in the heraldry of the O'Neill kings, who dominated Ulster politics from the medieval period until the Flight of the Earls in 1607, and it survives today in the arms of Ulster, the flag of Northern Ireland, and the emblems of several counties in both jurisdictions. The legend has been treated as an etiological myth — explaining how a symbol came to be — but its roots run deep into the mythological cycles of early Irish literature, giving it a cultural resonance unusual in heraldic lore."
+  },
+  {
+    "name": "Screaming Skull of Calgarth",
+    "lat": 54.3889,
+    "lng": -2.9273,
+    "category": "ghost",
+    "region": "Windermere, Cumbria, England",
+    "summary": "Dorothy Cook cursed Myles Philipson from the scaffold: two screaming skulls would haunt Calgarth Hall until his family was ruined. Cast into Windermere, burned, powdered, buried — they returned each time.",
+    "source": "https://www.mysteriousbritain.co.uk/hauntings/calgarth-hall/",
+    "sources": [
+      "https://www.mysteriousbritain.co.uk/hauntings/calgarth-hall/",
+      "https://esmeraldamac.wordpress.com/2011/07/18/mind-yer-head/",
+      "https://en.wikipedia.org/wiki/Screaming_skull",
+      "https://historicengland.org.uk/listing/the-list/list-entry/1124682"
+    ],
+    "date_added": "2026-06-17",
+    "tags": [
+      "england",
+      "cumbria",
+      "lake",
+      "curse",
+      "haunting",
+      "revenge"
+    ],
+    "detail": "The story begins with Myles Philipson, a Justice of the Peace in sixteenth-century Cumbria, who coveted the farmstead of Kraster Cook and his wife Dorothy. Unable to persuade the Cooks to sell, Philipson invited them to Christmas dinner, had a silver cup concealed in their belongings, and then arranged for soldiers to search their home and 'discover' the stolen article. As Philipson was also the judge in the ensuing trial, conviction was certain. Dorothy Cook delivered a curse from the scaffold, swearing that the Philipson family would never prosper, that she and her husband would never leave the hall, and that two screaming skulls would haunt the house until the family was gone.\n\nThe morning after the execution, two skulls were found in a niche on the staircase at Calgarth Hall. Every attempt to remove them failed: they were thrown into Windermere, burned, powdered and interred, limed and scattered, yet they reappeared each time on the staircase, accompanied by unearthly screaming. The Philipson family's fortunes duly declined — they sold the estate and the last of the line died in 1705 — and tradition holds that the skulls were never seen again once the family was gone.\n\nThe tale is distinct from the better-known Screaming Skull of Bettiscombe in Dorset: it has its own full narrative of injustice, curse, and fulfilment rooted in the Lake District. The legend was widely recorded by the mid-eighteenth century, and later attracted the attention of several Cumbrian folklore collectors. Historical scrutiny has not identified a Myles Philipson as Calgarth's owner in the relevant period, suggesting the narrative may have accreted around the site over time — a pattern typical of English haunted-house legend. Historic England lists Calgarth Hall as a scheduled monument."
+  },
+  {
+    "name": "Dwarfie Stane",
+    "lat": 58.8845,
+    "lng": -3.3143,
+    "category": "location",
+    "region": "Hoy, Orkney, Scotland",
+    "summary": "Britain's only rock-cut Neolithic tomb — a massive sandstone block hollowed on Hoy. Local legend says a giant gnawed his way out through the roof; the adjacent valley Trowieglen is where trows still steal from unwary walkers.",
+    "source": "https://en.wikipedia.org/wiki/Dwarfie_Stane",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Dwarfie_Stane",
+      "https://www.orkney.com/news/stories-of-the-dwarfie-stane",
+      "https://www.northlinkferries.co.uk/orkney-blog/all-about-the-dwarfie-stane/",
+      "https://britishfolklore.com/dwarfie-stane/"
+    ],
+    "date_added": "2026-06-17",
+    "tags": [
+      "scotland",
+      "orkney",
+      "island",
+      "barrow",
+      "norse"
+    ],
+    "detail": "The Dwarfie Stane is a block of Old Red Sandstone roughly nine metres long and five metres wide, cut from the valley wall and hollowed into two chambers sometime around 3000 BCE. It is unique in Britain: while rock-cut tombs are relatively common in the Mediterranean and North Africa, this is the only known example on British soil. Its isolation in a steep glaciated valley between Quoys and Rackwick on the island of Hoy gives it a theatrical quality that made it irresistible to folklore.\n\nOrkney legend associates the Stane with giants and trows (the island's fairy-folk, descended from Norse trolls). In one Orkney fable, a giant carved the chambers for his pregnant wife but the couple were imprisoned inside when a rival sealed the entrance block with a great stone; the trapped giant eventually gnawed through the roof with his bare teeth to escape, leaving the hole still visible today. The adjacent valley is called Trowieglen — the glen of the trows — and local tradition warns that anything taken there will be stolen by the fairy-folk who inhabit it. Walter Scott incorporated the Stane into his 1822 novel The Pirate, where a dwarf named Trolld regards it as his favourite residence, helping spread knowledge of the site beyond Orkney.\n\nThe monument is in the care of Historic Environment Scotland and is listed as a Scheduled Ancient Monument. The combination of Neolithic archaeology and layered folklore — Norse, Orkney vernacular, and literary — makes the Dwarfie Stane one of the most atmospherically resonant sites in the Scottish Islands."
+  },
+  {
+    "name": "Macphie and the Black Dog of Colonsay",
+    "lat": 56.0739,
+    "lng": -6.1967,
+    "category": "beast",
+    "region": "Colonsay, Argyll, Scotland",
+    "summary": "A supernatural black dog appeared unbidden in the Laird of Colonsay's hunting boat and sailed with the party to Jura. When they sheltered in a cave that night, only Macphie emerged alive — dog, men, and answers all gone.",
+    "source": "https://scotlands-stories.com/macphie-black-dog/",
+    "sources": [
+      "https://scotlands-stories.com/macphie-black-dog/",
+      "https://hiddenscotland.com/journal/the-fairies-of-jura-macphies-black-dog/",
+      "https://discoverhighlandsandislands.scot/en/story/colonsay-cave-folklore"
+    ],
+    "date_added": "2026-06-17",
+    "tags": [
+      "scotland",
+      "argyll",
+      "black",
+      "dog",
+      "island",
+      "death-omen"
+    ],
+    "detail": "The Macphie (MacDhubhsith) clan were the hereditary lords of Colonsay, regarded in island tradition as almost magical protectors of their people. The principal legend involves the last great Macphie laird, who on the third day of a failed hunting voyage found a jet-black puppy — its coat dark as ink — sitting patiently in his boat without having been called or placed there. Macphie took it as an omen, shouting 'The black dog's day is growing near!' The seas calmed and the wind turned favourable; the party sailed to Jura for the hunt.\n\nThat night the men took shelter in a cave, feasting and boasting around the fire while the black dog slept at the laird's feet. When daylight came, Macphie found every man in his party dead. No cause was given, no enemy identified — only Macphie walked out of the cave alive, and neither dog nor men were seen again. The tale passed into proverbial use across the west Highlands: 'The black dog's day will come yet' is recorded as an Argyll saying for one now despised who will eventually prove useful — or, depending on the teller, one whose reckoning is merely deferred.\n\nA separate cave tradition on Colonsay concerns another desperate Macphie laird who fled his enemies the MacNeills and hid in the Slochd dubh Mhic a Phi (MacPhee's Dark Cave), placing his three hounds at the sea entrance and cutting off the heads of each MacNeill who crawled through. Together these legends give Colonsay an unusually rich body of clan-specific supernatural folklore, documented through the Highlands and Islands folk tradition."
+  },
+  {
+    "name": "Old Moll of Brandy Cove",
+    "lat": 51.5665,
+    "lng": -3.9823,
+    "category": "witch",
+    "region": "Gower Peninsula, Swansea, Wales",
+    "summary": "Old Moll haunted a sea-cave at Brandy Cove and blighted the Gower for miles around — until villagers cast silver bullets and shot her in the leg, driving her inland to spread her curse elsewhere.",
+    "source": "https://www.paranormaldatabase.com/wales/WestGlamorgan.php",
+    "sources": [
+      "https://www.paranormaldatabase.com/wales/WestGlamorgan.php",
+      "https://www.barnesandnoble.com/w/welsh-gothic-jane-aaron/1114940551"
+    ],
+    "date_added": "2026-06-17",
+    "tags": [
+      "wales",
+      "swansea",
+      "coast",
+      "cave",
+      "curse"
+    ],
+    "detail": "Brandy Cove is a small smugglers' bay on the eastern Gower Peninsula, tucked under limestone cliffs that once served as cover for contraband runs. In local folklore, the caves there became associated with Old Moll, a witch regarded as both cursed and cursing: wherever she walked, misfortune followed in her wake. Children in her vicinity suffered night terrors, animals went lame, and crops rotted in the ground. She was feared rather than pitied, and in some versions of the tradition she was active during the height of the smuggling era, her presence providing a ready explanation for accidents and losses that could not otherwise be accounted for.\n\nThe community eventually organised against her. A vigilante group gathered silver coins and had them melted down and cast into bullets, since standard lead was held to have no power against a witch. They hunted her to the cave, and the volley of silver struck her in the leg. She escaped — wounded but alive — and left the Gower Peninsula entirely, travelling inland and reportedly carrying her ill-luck with her wherever she went. The tradition does not record her death or ultimate fate, only her expulsion.\n\nThe Old Moll legend is documented in Jane Aaron's academic study Welsh Gothic (University of Wales Press) as part of the broader tradition of female supernatural figures on the Gower coast, alongside Gwrach-y-Rhibyn sightings at Pennard Castle and the wider use of caves as liminal spaces in south Welsh folk narrative. The name 'Brandy Cove' itself derives from the smuggling trade that made the bay famous, and local storytelling has long intertwined the supernatural with the criminal at this site."
+  },
+  {
+    "name": "Tangie",
+    "lat": 58.9842,
+    "lng": -2.9607,
+    "category": "beast",
+    "region": "Orkney and Shetland, Scotland",
+    "summary": "The Tangie haunts Orkney and Shetland in two terrible forms — a shaggy horse dripping with seaweed or a wild old man clad in kelp — snatching lone travellers from roads near the lochs and dragging them under the waves.",
+    "source": "https://en.wikipedia.org/wiki/Tangie",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tangie",
+      "https://spookyscotland.net/tangie/",
+      "https://realmwhispers.com/aquatic/tangie-the-enigmatic-shapeshifter-of-scottish-folklore/"
+    ],
+    "date_added": "2026-06-17",
+    "tags": [
+      "scotland",
+      "orkney",
+      "horse",
+      "shapeshifter",
+      "lake",
+      "drowning",
+      "norse"
+    ],
+    "detail": "The Tangie (also spelt tongie) is a malevolent shape-shifting water spirit native to the Northern Isles, its name derived from 'tang' — the seaweed of the genus Fucus that coats its body in both forms. It most commonly appears either as a rough-haired, seaweed-drenched horse waiting at the roadside near a loch, or as a wild and matted old man who approaches travellers, apparently in need of help. Both forms are equally dangerous: like the kelpie further south, anyone who mounts the horse-form or allows the man-form to draw close is liable to be carried beneath the surface and devoured.\n\nThe Tangie is considered particularly dangerous to women travelling alone after dark, and unlike the kelpie it is also credited with causing a form of supernatural disorientation — a kind of madness that overcomes both humans and animals near its haunts, making victims easier to capture. This element has parallels in the Shetland njuggle (a water horse already in the dataset) but the Tangie is the specifically Orkney variant, distinct enough in character and origin to merit a separate entry. Its roots appear to lie in Norse mythology adapted to island conditions: the Norse word tangi ('spit of land, cape') may have provided the name, with troll-like attributes from Scandinavian tradition blending into the local Orcadian spirit world.\n\nThe Tangie was collected and described in nineteenth-century Scottish folklore compendia alongside the trow (its terrestrial fairy counterpart in Orkney), and receives coverage in Walter Traill Dennison's Orkney folklore collections. It is distinct from the Finfolk, selkies, and each-uisge that populate other parts of the Scottish Islands' supernatural bestiary."
+  },
+  {
+    "name": "Mermaid of Benbecula",
+    "lat": 57.4414,
+    "lng": -7.3513,
+    "category": "water",
+    "region": "Benbecula, Outer Hebrides, Scotland",
+    "summary": "Around 1830, crofters on Benbecula found a tiny mermaid dead in the dunes — killed by a stone thrown by a local boy. The local factor ordered a coffin and shroud made, and she was buried in proper churchyard fashion.",
+    "source": "https://en.wikipedia.org/wiki/Benbecula",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Benbecula",
+      "https://clan.com/blog/folklore-friday-the-mermaid-of-benbecula/",
+      "https://www.scotsman.com/whats-on/arts-and-entertainment/the-myth-of-the-hebridean-mermaid-1480328",
+      "http://anomalyinfo.com/Stories/ca-1830-mermaid-killed-benbecula-scotland"
+    ],
+    "date_added": "2026-06-17",
+    "tags": [
+      "scotland",
+      "highland",
+      "island",
+      "coast",
+      "celtic"
+    ],
+    "detail": "The account, recorded by Alexander Carmichael in his monumental Carmina Gadelica (1900), describes an event of around 1820–1830 on the west coast of Benbecula in the Outer Hebrides. Crofters cutting seaweed at Sgeir na Duchadh near Grimnis spotted a small creature in the shallows behaving like a tiny woman. Several boys began throwing stones; one struck the creature in the back. She was not seen again alive. A few days later her body washed up at Cuile, Nunton, nearly two miles away.\n\nThe physical description given by eyewitnesses and preserved by Carmichael was unexpectedly precise: the upper body was about the size of a well-nourished child of three or four, with long dark glossy hair, white and tender skin, and developed breasts. The lower half resembled a salmon but was without scales. The creature was not dismissed as a dead seal or unusual fish: Mr Duncan Shaw, the factor for Clanranald and the legal authority in the district, ordered a small coffin and shroud to be made. The burial took place publicly, with many witnesses present, a short distance above the shoreline at Nunton.\n\nCarmichael's documentation in Carmina Gadelica gives the account an unusually rigorous provenance for mermaid folklore — it is a named official acting on a firsthand account, within living memory of the collector. A later investigation commissioned by the National Museum of Scotland identified an isolated stone in the dunes at Culla Bay that may mark the grave site, though the NMS was unable to confirm this definitively. The story was also reported in the Stornoway Gazette and has been treated as one of the most seriously documented mermaid accounts in Scottish island tradition."
+  },
+  {
+    "name": "Fiddler Fynes of Kirkstead",
+    "lat": 53.1655,
+    "lng": -0.2157,
+    "category": "witch",
+    "region": "Kirkstead, Lincolnshire, England",
+    "summary": "A schoolmaster at Kirkstead Abbey doubled as the county's best-known cunning man: farmers brought him stolen goods cases and he would name the thief via a mirror, then crack the glass so the guilty party bore a matching wound.",
+    "source": "https://lincolnshirefolktalesproject.com/2024/02/20/fiddler-fynes/",
+    "sources": [
+      "https://lincolnshirefolktalesproject.com/2024/02/20/fiddler-fynes/",
+      "https://lincolnshirelife.co.uk/heritage/ghosts-witches-andwild-men-in-the-valley/",
+      "https://sites.exeter.ac.uk/magic/2024/10/18/witchcraft-in-lincolnshire/"
+    ],
+    "date_added": "2026-06-17",
+    "tags": [
+      "england",
+      "lincolnshire",
+      "trickery"
+    ],
+    "detail": "In nineteenth-century Lincolnshire, the schoolmaster known as 'Fiddler' Fynes operated from Kirkstead — a hamlet by the ruins of a Cistercian abbey near Woodhall Spa — as one of the county's most prominent wise men or cunning folk. Unlike many practitioners who worked in secret, Fynes was openly Christian, attending church services regularly while simultaneously maintaining his reputation for solving supernatural problems and crimes by magical means. The Lincolnshire Folk Tales project, drawing on the 1934 fieldwork of folklorist Ethel Rudkin, has documented his practice as the most fully recorded cunning-man tradition in the county.\n\nHis most celebrated technique involved the mirror oracle. When a farmer came to him to identify a thief, Fynes would have the farmer look into a mirror, where the thief's face would appear. The farmer would recognise someone — usually a labourer or neighbour — and Fynes would then instruct him to crack the mirror over the image. According to the tradition, the thief would develop a wound on his face corresponding to where the glass was struck, serving simultaneously as punishment, identification, and proof of Fynes's power. The technique had parallels in broader cunning-folk practice across England but was particularly strongly associated with Fynes locally.\n\nFynes sits within a rich Lincolnshire tradition of cunning folk who exploited the county's flat, marsh-edged landscape and its folklore of boggarts, fen lights, and witch-hares. He is distinct from the named witches already in the dataset (Dorrington Witch, Tetford Witch, Crazy Kate of Swineshead) by virtue of being a male practitioner explicitly identified as a wise man rather than a condemned witch, making him a counterpoint to the predominantly female Lincolnshire witch tradition."
   }
 ]

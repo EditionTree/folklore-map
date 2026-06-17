@@ -1351,6 +1351,51 @@
         "Common form": "Black horse",
         "Season": "After Samhain"
       }
+    },
+    "Dick Turpin": {
+      "priority": 91,
+      "image": "legend-images/dick-turpin-hero.jpg",
+      "alt": "A cloaked rider on a black horse galloping along a moonlit muddy Yorkshire road past a distant coaching inn",
+      "caption": "A visual interpretation of Dick Turpin haunting the old Yorkshire roads",
+      "map_title": "Yorkshire coach roads",
+      "section_heading": "Black Bess on the road",
+      "pullquote": "Turpin's ghost, or the ghost of the gallant Black Bess who died under him on that legendary ride, is said to haunt the old coaching roads, glimpsed by night where the highway runs lonely.",
+      "facts": {
+        "Tradition": "English ghost lore",
+        "Type": "Ghostly highwayman",
+        "Setting": "Yorkshire roads",
+        "Motif": "Outlaw turned folk hero"
+      }
+    },
+    "Gelert": {
+      "priority": 92,
+      "image": "legend-images/gelert-hero.jpg",
+      "alt": "A great shaggy hound standing beside an overturned cradle in a torchlit medieval Welsh chamber with a dead wolf behind",
+      "caption": "A visual interpretation of Gelert in the hall at Beddgelert",
+      "map_title": "Beddgelert, Snowdonia",
+      "section_heading": "The hound by the cradle",
+      "pullquote": "Too late Llywelyn understood, and he is said never to have smiled again.",
+      "facts": {
+        "Tradition": "Welsh legend",
+        "Type": "Faithful hound",
+        "Setting": "Beddgelert",
+        "Motif": "Misjudged loyalty"
+      }
+    },
+    "Lyonesse": {
+      "priority": 93,
+      "image": "legend-images/lyonesse-hero.jpg",
+      "alt": "A lone rider crossing a storm-lashed stone causeway above the sea with distant half-submerged towers off Cornwall",
+      "caption": "A visual interpretation of the drowned land of Lyonesse",
+      "map_title": "Cornwall and the Isles of Scilly",
+      "section_heading": "The land beneath the waves",
+      "pullquote": "A drowned kingdom said to lie beneath the waves between Cornwall and the Isles of Scilly - a land of a hundred and forty churches, lost in a single night of catastrophic flooding.",
+      "facts": {
+        "Tradition": "Cornish legend",
+        "Type": "Lost kingdom",
+        "Setting": "Scilly Isles",
+        "Motif": "Flooded land and bells"
+      }
     }
   }
 }

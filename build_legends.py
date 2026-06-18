@@ -538,7 +538,7 @@ FORCE_CATEGORY = {
     "Lantern Man": "ghost", "Banshee": "ghost", "Wights": "ghost",
     "Nanny Rutt": "water", "Glaistig": "fairy",
     "Blue Men of the Minch": "water", "Salmon of Knowledge": "water",
-    "Maeshowe Runes": "location", "Orkneyinga Saga": "location",
+    "Maeshowe Runes": "location", "Orkneyinga Saga": "hero",
     "Beltane Fire Festival": "location",
     "Hobby Horse of Padstow": "location",
     "Mari Lwyd": "location", "Up Helly Aa": "location",

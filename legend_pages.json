@@ -1486,6 +1486,51 @@
         "Setting": "Cliffs above Bouley Bay",
         "Motif": "Storm warning and dread"
       }
+    },
+    "Ruari Mòr MacNeil of Barra": {
+      "priority": 100,
+      "image": "legend-images/ruari-mor-macneil-of-barra-hero.jpg",
+      "alt": "Ruari Mòr MacNeil standing beside the sea at Kisimul Castle with Castlebay behind him under a low Hebridean sky",
+      "caption": "A visual interpretation of Ruari Mòr MacNeil at Kisimul Castle",
+      "map_title": "Kisimul Castle, Barra",
+      "section_heading": "The pirate laird of Kisimul",
+      "pullquote": "Each evening his herald proclaimed that since Ruairi Mòr had dined, the kings of the earth might now eat.",
+      "facts": {
+        "Tradition": "Hebridean pirate lore",
+        "Type": "Pirate chief",
+        "Setting": "Kisimul Castle, Barra",
+        "Motif": "Sea-raiding and chiefly pride"
+      }
+    },
+    "Witch of Berkeley": {
+      "priority": 101,
+      "image": "legend-images/witch-of-berkeley-hero.jpg",
+      "alt": "A black horse with iron hooks across its harness carrying away a shrouded woman through a moonlit Gloucestershire churchyard",
+      "caption": "A visual interpretation of the Witch of Berkeley legend in the churchyard at night",
+      "map_title": "Berkeley, Gloucestershire",
+      "section_heading": "The last chain broken",
+      "pullquote": "The Devil appeared on 'a black horse of immense size with iron hooks projecting over the whole of its back'.",
+      "facts": {
+        "Tradition": "Medieval English legend",
+        "Type": "Witch legend",
+        "Setting": "Berkeley churchyard",
+        "Motif": "Diabolic punishment"
+      }
+    },
+    "Molly Downer": {
+      "priority": 102,
+      "image": "legend-images/molly-downer-hero.jpg",
+      "alt": "Molly Downer standing outside a thatched cottage near Bembridge at winter dusk with the muddy lane falling away beside her",
+      "caption": "A visual interpretation of Molly Downer at Witches Hatch near Bembridge",
+      "map_title": "Hillway, Isle of Wight",
+      "section_heading": "The woman at Witches Hatch",
+      "pullquote": "Reputed to be the last witch of the Isle of Wight, she lived at 'Witches Hatch' near Bembridge and cursed a tormentor with fatal bad luck.",
+      "facts": {
+        "Tradition": "Isle of Wight folklore",
+        "Type": "Cunning-woman turned witch figure",
+        "Setting": "Hillway near Bembridge",
+        "Motif": "Curse and local suspicion"
+      }
     }
   }
 }

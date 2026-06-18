@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-17T21:15:24.062200Z",
-  "total": 623,
+  "generated": "2026-06-18T21:51:53.697074Z",
+  "total": 625,
   "categories": {
     "beast": "Beasts",
     "ghost": "Ghosts",
@@ -2226,6 +2226,28 @@
         "cornwall"
       ],
       "detail": "Corineus is the founding giant-slayer of Cornwall in the legendary history of Britain set down by Geoffrey of Monmouth. A Trojan warrior and companion of Brutus, the supposed first king of Britain, Corineus was famed above all for his delight in wrestling giants, and when the Trojans found the island of Albion held by a race of them, he relished the fight.\n\nFor his prowess he was granted the western land that took his name, Corineia — Cornwall — the corner of Britain where the giants were thickest. His greatest bout was with their champion, Gogmagog, a monster of huge stature: the two grappled on the cliffs above the sea near Plymouth until Corineus, having had three ribs broken, heaved the giant up and hurled him from the heights to be dashed on the rocks below, at a place long called 'Gogmagog's Leap'. Through Corineus the medieval British were given a heroic, Trojan pedigree and an explanation for the giant-haunted reputation of their westernmost county."
+    },
+    {
+      "name": "Cormoran, the Giant of St Michael's Mount",
+      "lat": 50.1167,
+      "lng": -5.4775,
+      "category": "giant",
+      "region": "St Michael's Mount, Cornwall",
+      "summary": "The cattle-thieving Cornish giant who raised St Michael's Mount, until young Jack of Marazion lured him into a pit and earned the name Jack the Giant Killer.",
+      "detail": "Cormoran was the giant of St Michael's Mount, the tidal island that rises from Mount's Bay near Marazion. In the old Cornish tradition he and his wife Cormelian were said to have built the Mount themselves, hauling great blocks of white granite to heap up their island home — Cormelian forced to carry the stones in her apron, and (in one telling) dropping a green slab that still stands in the causeway when she tried to sneak an easier rock past her husband.\n\nFrom his stronghold Cormoran preyed on the mainland. When his hunger stirred he would wade ashore at low tide and seize the cattle and sheep of the local farmers, slinging whole oxen over his shoulder, until the whole district lived in dread of him. None dared face the giant until Jack, a farmer's son from Marazion, set out to be rid of him. By night Jack dug a deep pit on the side of the Mount and covered it over with sticks and straw, then at dawn blew a horn to wake the giant. Cormoran came charging down in a fury, blind in the early light, and tumbled headlong into the pit, where Jack despatched him with his pick — winning the treasure of the Mount and the title by which he is still remembered, Jack the Giant Killer. A heart-shaped stone set in the cobbled path up the Mount is pointed out to this day as the giant's own heart.",
+      "source": "https://stmichaelsmount.co.uk/explore-the-mount/history-legends/",
+      "sources": [
+        "https://stmichaelsmount.co.uk/explore-the-mount/history-legends/",
+        "https://en.wikipedia.org/wiki/Cormoran"
+      ],
+      "date_added": "2026-06-18",
+      "tags": [
+        "cattle",
+        "coast",
+        "sea",
+        "england",
+        "cornwall"
+      ]
     },
     {
       "name": "Corrag of Glencoe",
@@ -10172,6 +10194,28 @@
         "drowning"
       ],
       "detail": "The Urisk (ùruisg in Scottish Gaelic) is one of the most distinctive supernatural beings in Highland tradition: a solitary figure of half-human, half-goat form who inhabits the wild places of the hills — rocky corries, fast-running burns, and waterfalls far above human settlement. Unlike the Brownie, which attaches itself to a household and hearth, the Urisk is a creature of the wilderness, appearing at the margins of the tamed world to offer help or to serve as a warning of the mountains' danger.\n\nTraditions of the Urisk are strongly concentrated in Lochaber, Breadalbane, and Perthshire. A specific Urisk named Peallaidh an Spuit ('the Shaggy One of the Waterfall') was said to inhabit the rocks of the Upper Falls of the Moness Burn above Aberfeldy in Perthshire. A waterfall near Clifton at Tyndrum carries the Gaelic name Eas na h-uruisg — the Urisk's Cascade. These place-name survivals indicate a tradition deep enough to have shaped the landscape vocabulary of the region, where the names themselves serve as a record of where these beings were believed to dwell.\n\nIn many accounts the Urisk is neither malevolent nor entirely benign, mirroring the landscape it inhabits: generous when treated with proper respect, dangerous when offended. J.G. Campbell, in his foundational works on Gaelic supernatural traditions, described the Urisk as capable of performing farm labour when handled well — a characteristic shared with the Brownie — though its wild, solitary nature and half-animal form set it quite apart from the domestic spirit of the homestead, giving it a wilder and more ambiguous character."
+    },
+    {
+      "name": "Uther Pendragon and Pendragon Castle",
+      "lat": 54.3621,
+      "lng": -2.3433,
+      "category": "hero",
+      "region": "Mallerstang, Cumbria",
+      "summary": "The ruined keep above the River Eden where legend makes Uther Pendragon, father of King Arthur, try and fail to bend the river into a moat: 'Eden will run where Eden ran.'",
+      "detail": "Pendragon Castle stands as a lonely ruin in the Mallerstang valley of Cumbria, on a green knoll above a bend of the young River Eden. Though the stone keep that survives was raised by the Normans in the 12th century, local tradition reaches far further back and credits its founding to Uther Pendragon, the legendary king of the Britons and father of Arthur — the chieftain who, in Geoffrey of Monmouth's telling, took the name Pendragon, 'dragon's head', after a blazing dragon-shaped comet appeared at the death of his brother.\n\nThe best-loved legend of the place tells how Uther tried to dig a channel to divert the Eden and draw its waters around his castle as a moat. The river refused to be tamed, returning stubbornly to its old course, and the failure is remembered in a couplet still repeated in the dale: 'Let Uther Pendragon do what he can, Eden will run where Eden ran.' A grimmer story adds that Uther and a hundred of his men were poisoned here by Saxon enemies who fouled the castle well. Historians find no trace of any building on the site before the Normans, but the name and the old rhyme have kept the founder-king's memory rooted in this corner of the northern hills.",
+      "source": "https://en.wikipedia.org/wiki/Pendragon_Castle",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Pendragon_Castle",
+        "https://www.visitcumbria.com/evnp/pendragon-castle/"
+      ],
+      "date_added": "2026-06-18",
+      "tags": [
+        "arthurian",
+        "castle",
+        "river",
+        "england",
+        "cumbria"
+      ]
     },
     {
       "name": "Veasta",

@@ -4,8 +4,24 @@
   <link>https://folklorefinder.uk/</link>
   <description>Recently added myths, legends, ghosts and folklore from across Britain and Ireland.</description>
   <language>en-gb</language>
-  <lastBuildDate>Wed, 17 Jun 2026 21:20:39 GMT</lastBuildDate>
+  <lastBuildDate>Thu, 18 Jun 2026 21:52:07 GMT</lastBuildDate>
   <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://folklorefinder.uk/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Cormoran, the Giant of St Michael&#x27;s Mount</title>
+    <link>https://folklorefinder.uk/legends/cormoran-the-giant-of-st-michael-s-mount</link>
+    <guid isPermaLink="true">https://folklorefinder.uk/legends/cormoran-the-giant-of-st-michael-s-mount</guid>
+    <pubDate>Thu, 18 Jun 2026 12:00:00 GMT</pubDate>
+    <category>Giants</category>
+    <description>The cattle-thieving Cornish giant who raised St Michael&#x27;s Mount, until young Jack of Marazion lured him into a pit and earned the name Jack the Giant…</description>
+  </item>
+  <item>
+    <title>Uther Pendragon and Pendragon Castle</title>
+    <link>https://folklorefinder.uk/legends/uther-pendragon-and-pendragon-castle</link>
+    <guid isPermaLink="true">https://folklorefinder.uk/legends/uther-pendragon-and-pendragon-castle</guid>
+    <pubDate>Thu, 18 Jun 2026 12:00:00 GMT</pubDate>
+    <category>Legendary Figures</category>
+    <description>The ruined keep above the River Eden where legend makes Uther Pendragon, father of King Arthur, try and fail to bend the river into a moat: &#x27;Eden will run…</description>
+  </item>
   <item>
     <title>Dwarfie Stane</title>
     <link>https://folklorefinder.uk/legends/dwarfie-stane</link>
@@ -229,21 +245,5 @@
     <pubDate>Sun, 14 Jun 2026 12:00:00 GMT</pubDate>
     <category>Legendary Figures</category>
     <description>A hero of the Ulster Cycle avenged his mother&#x27;s murder by killing Queen Medb with a sling-shot of hard cheese on a Shannon island — and was buried, legend…</description>
-  </item>
-  <item>
-    <title>Gill, the Hammer-Throwing Giant of Mount Caburn</title>
-    <link>https://folklorefinder.uk/legends/gill-the-hammer-throwing-giant-of-mount-caburn</link>
-    <guid isPermaLink="true">https://folklorefinder.uk/legends/gill-the-hammer-throwing-giant-of-mount-caburn</guid>
-    <pubDate>Sun, 14 Jun 2026 12:00:00 GMT</pubDate>
-    <category>Giants</category>
-    <description>Sussex tradition set a giant named Gill on the Iron-Age hillfort of Mount Caburn above Lewes, who amused himself by hurling his great hammer from the…</description>
-  </item>
-  <item>
-    <title>Jack o&#x27; Legs</title>
-    <link>https://folklorefinder.uk/legends/jack-o-legs</link>
-    <guid isPermaLink="true">https://folklorefinder.uk/legends/jack-o-legs</guid>
-    <pubDate>Sun, 14 Jun 2026 12:00:00 GMT</pubDate>
-    <category>Giants</category>
-    <description>A giant outlaw of Weston in Hertfordshire who robbed the rich to feed the poor like a giant Robin Hood, and at his execution shot a final arrow three…</description>
   </item>
 </channel></rss>

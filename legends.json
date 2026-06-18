@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-18T21:51:53.697074Z",
-  "total": 625,
+  "generated": "2026-06-18T21:57:51.322390Z",
+  "total": 626,
   "categories": {
     "beast": "Beasts",
     "ghost": "Ghosts",
@@ -9307,6 +9307,28 @@
         "headless",
         "spectral",
         "ireland"
+      ]
+    },
+    {
+      "name": "The Fenland Mandrake",
+      "lat": 52.3981,
+      "lng": 0.2622,
+      "category": "witch",
+      "region": "The Fens, Cambridgeshire",
+      "summary": "True mandrake never grew in England, so the fen men carved its magic from white bryony roots — judged at the inn for the one most like a human figure, and feared like the screaming root of legend.",
+      "detail": "The mandrake of legend — the man-shaped root that shrieked when torn from the earth and struck dead any who heard it — never grew wild in Britain. Across medieval and early-modern Europe it was the most dreaded of magical plants: harvesters were said to plug their ears, dig a trench around it, and tie the root to a black dog whose dash would wrench it free, the dog dropping dead in the man's place. It was reputed to spring up beneath the gallows, where the body-fluids of hanged men fell, which bound it ever after to witchcraft, crossroads and the charms of cunning-folk.\n\nLacking the true plant, the English made their own. The fat, forked root of white bryony — a hedgerow climber of the gourd family — became the 'English mandrake', carved and trimmed into human shape, sometimes with grains of wheat set in to sprout as hair. In the Cambridgeshire Fens this took on a life of its own as a local custom. The folklorist Enid Porter recorded that old fen men would dig up bryony roots, choosing those most human in form, wash them, cut their own marks into them, and carry them to the village inn. There, arranged along the taproom mantelshelf, the roots were judged in a competition — the landlord's wife called in to award a prize to whichever most resembled the female figure. The same roots were crushed into rat-holes to drive off vermin, and bryony beads were strung into teething-necklaces for fen children, keeping the old mandrake magic alive in the flatlands long after anyone believed the root could scream.",
+      "source": "https://www.plant-lore.com/plantofthemonth/white-bryony-or-english-mandrake/",
+      "sources": [
+        "https://www.plant-lore.com/plantofthemonth/white-bryony-or-english-mandrake/",
+        "https://hauntedpalaceblog.com/2018/10/28/the-screaming-mandrake-power-potions-and-witchcraft/"
+      ],
+      "date_added": "2026-06-18",
+      "tags": [
+        "charm",
+        "witchcraft",
+        "plant",
+        "england",
+        "cambridgeshire"
       ]
     },
     {

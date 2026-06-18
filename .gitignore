@@ -11,6 +11,8 @@ bug_reports/
 .claude/
 _drafts/
 
-# Search Console pipe — secret service-account key + local-only output
+# Search Console pipe — secret credentials + local-only output
 gsc-service-account.json
+gsc-oauth-client.json
+gsc-token.json
 search-insights/

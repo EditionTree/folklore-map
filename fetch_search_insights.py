@@ -8,16 +8,34 @@ aggregate query/page metrics from Search Console (no visitor-level data) and
 turns them into a to-do list (titles to rewrite, pages to nudge onto page 1,
 search terms we don't cover yet).
 
-Auth: a Google service account with read access to the Search Console property.
-  - Create a service account in Google Cloud and download its JSON key.
-  - Enable the "Google Search Console API" for that project.
-  - In Search Console → Settings → Users and permissions, add the service
-    account's email as a Restricted user on the property.
-  - Point GSC_SERVICE_ACCOUNT_JSON at the key file (or place it at
-    ./gsc-service-account.json, which is git-ignored).
+Auth: two supported methods (OAuth is preferred; service account is a fallback).
+
+  OAuth 2.0 user login (recommended — works even when org policy blocks
+  service-account keys):
+    - In Google Cloud, configure the OAuth consent screen (External, Testing)
+      and add your own Google account as a test user.
+    - Create an OAuth client ID of type "Desktop app" and download its JSON.
+    - Save it as ./gsc-oauth-client.json (or set GSC_OAUTH_CLIENT_JSON).
+    - First run opens a browser to authorise; a refresh token is cached at
+      ./gsc-token.json so later runs are non-interactive.
+    - The Google account you log in with must have access to the property in
+      Search Console (you, the owner, already do).
+    - Requires: pip install google-auth google-auth-oauthlib requests
+
+  Service account (only if your org allows downloadable keys):
+    - Create a service account in Google Cloud and download its JSON key.
+    - In Search Console → Settings → Users and permissions, add the service
+      account's email as a Restricted user on the property.
+    - Point GSC_SERVICE_ACCOUNT_JSON at the key file (or place it at
+      ./gsc-service-account.json).
+
+Both key files are git-ignored. Enable the "Google Search Console API" for the
+project either way.
 
 Env vars:
-  GSC_SERVICE_ACCOUNT_JSON  path to the service-account key (default: ./gsc-service-account.json)
+  GSC_OAUTH_CLIENT_JSON     path to the OAuth client secret (default: ./gsc-oauth-client.json)
+  GSC_TOKEN_JSON            path to the cached user token (default: ./gsc-token.json)
+  GSC_SERVICE_ACCOUNT_JSON  path to a service-account key (default: ./gsc-service-account.json)
   GSC_SITE_URL              property, e.g. "https://folklorefinder.uk/" (URL-prefix)
                             or "sc-domain:folklorefinder.uk" (domain property).
                             Default: https://folklorefinder.uk/
@@ -32,6 +50,8 @@ BASE = "https://folklorefinder.uk"
 OUT_DIR = "search-insights"
 SCOPE = "https://www.googleapis.com/auth/webmasters.readonly"
 DEFAULT_KEY_FILE = "gsc-service-account.json"
+DEFAULT_OAUTH_CLIENT = "gsc-oauth-client.json"
+DEFAULT_TOKEN_FILE = "gsc-token.json"
 
 # Low-traffic-friendly thresholds. Raise these as traffic grows.
 MIN_IMPR_TITLE = 25      # pages with at least this many impressions ...
@@ -54,15 +74,89 @@ def date_window(lag_days=3, span_days=28):
     return start.isoformat(), end.isoformat()
 
 
-def fetch_gsc(site_url, key_file, start, end):
-    """Return (page_rows, query_rows) from the Search Analytics API."""
-    # Imported lazily so --sample works without google-auth installed.
+def oauth_credentials(client_file, token_file):
+    """Return user OAuth credentials, refreshing or running the consent flow as
+    needed. The refresh token is cached at token_file so later runs are silent."""
+    from google.oauth2.credentials import Credentials
+    from google.auth.transport.requests import Request as GAuthRequest
+    from google_auth_oauthlib.flow import InstalledAppFlow
+
+    creds = None
+    if os.path.exists(token_file):
+        creds = Credentials.from_authorized_user_file(token_file, [SCOPE])
+    if not creds or not creds.valid:
+        if creds and creds.expired and creds.refresh_token:
+            creds.refresh(GAuthRequest())
+        else:
+            if not os.path.exists(client_file):
+                sys.exit(f"OAuth client file not found: {client_file}\n"
+                         "Download a 'Desktop app' OAuth client JSON from Google Cloud "
+                         "and save it there (or set GSC_OAUTH_CLIENT_JSON).")
+            flow = InstalledAppFlow.from_client_secrets_file(client_file, [SCOPE])
+            # Opens a browser once; falls back to a console URL on headless boxes.
+            creds = flow.run_local_server(port=0)
+        with io.open(token_file, "w", encoding="utf-8") as f:
+            f.write(creds.to_json())
+    return creds
+
+
+def service_account_credentials(key_file):
+    """Return service-account credentials (fallback when org policy allows keys)."""
     from google.oauth2 import service_account
     from google.auth.transport.requests import Request as GAuthRequest
-    import requests
-
     creds = service_account.Credentials.from_service_account_file(key_file, scopes=[SCOPE])
     creds.refresh(GAuthRequest())
+    return creds
+
+
+def get_credentials():
+    """Pick an auth method: OAuth if a client file is present, else a service
+    account key, else explain what to set up."""
+    oauth_client = _env("GSC_OAUTH_CLIENT_JSON", DEFAULT_OAUTH_CLIENT)
+    token_file = _env("GSC_TOKEN_JSON", DEFAULT_TOKEN_FILE)
+    key_file = _env("GSC_SERVICE_ACCOUNT_JSON", DEFAULT_KEY_FILE)
+    # Prefer an existing cached token, then an OAuth client, then a service key.
+    if os.path.exists(token_file) or os.path.exists(oauth_client):
+        return oauth_credentials(oauth_client, token_file)
+    if os.path.exists(key_file):
+        return service_account_credentials(key_file)
+    sys.exit("No credentials found. Set up OAuth (save the Desktop-app client as ./"
+             + DEFAULT_OAUTH_CLIENT + ") or place a service-account key at ./"
+             + DEFAULT_KEY_FILE + ".  Or run with --sample to preview the format.")
+
+
+def list_sites(creds):
+    """Return the Search Console properties this account can see (siteEntry list)."""
+    import requests
+    r = requests.get("https://searchconsole.googleapis.com/webmasters/v3/sites",
+                     headers={"Authorization": "Bearer " + creds.token}, timeout=60)
+    r.raise_for_status()
+    return r.json().get("siteEntry", [])
+
+
+def resolve_site(creds, preferred):
+    """Pick which property to query. Use `preferred` if the account can access it;
+    otherwise auto-detect the folklorefinder property (domain OR URL-prefix form).
+    If nothing matches, list what the account CAN see so the cause is obvious."""
+    sites = list_sites(creds)
+    usable = [s for s in sites if s.get("permissionLevel") != "siteUnverifiedUser"]
+    urls = [s["siteUrl"] for s in usable]
+    if preferred and preferred in urls:
+        return preferred
+    for u in urls:
+        if "folklorefinder.uk" in u:
+            return u
+    listing = "\n".join("  - " + s["siteUrl"] + "  (" + s.get("permissionLevel", "?") + ")"
+                        for s in sites) or "  (this account has no properties)"
+    sys.exit("No accessible folklorefinder.uk property for the account you logged in with.\n"
+             "Properties this account CAN see:\n" + listing +
+             "\n\nFix: in Search Console, confirm folklorefinder.uk is added & verified "
+             "under the SAME Google account you authorised with.")
+
+
+def fetch_gsc(site_url, creds, start, end):
+    """Return (page_rows, query_rows) from the Search Analytics API."""
+    import requests
     endpoint = ("https://searchconsole.googleapis.com/webmasters/v3/sites/"
                 + urllib.parse.quote(site_url, safe="") + "/searchAnalytics/query")
     headers = {"Authorization": "Bearer " + creds.token, "Content-Type": "application/json"}
@@ -214,13 +308,12 @@ def main():
     if sample:
         page_rows, query_rows = SAMPLE_PAGES, SAMPLE_QUERIES
     else:
-        site_url = _env("GSC_SITE_URL", BASE + "/")
-        key_file = _env("GSC_SERVICE_ACCOUNT_JSON", DEFAULT_KEY_FILE)
-        if not os.path.exists(key_file):
-            sys.exit(f"Service-account key not found: {key_file}\n"
-                     "Set GSC_SERVICE_ACCOUNT_JSON or place the key at ./" + DEFAULT_KEY_FILE
-                     + "  (or run with --sample to preview the report format).")
-        page_rows, query_rows = fetch_gsc(site_url, key_file, start, end)
+        creds = get_credentials()
+        # If GSC_SITE_URL is set, honour it; otherwise auto-detect the property
+        # (domain vs URL-prefix) from the account's accessible sites.
+        site_url = resolve_site(creds, _env("GSC_SITE_URL") or None)
+        print("Using Search Console property:", site_url)
+        page_rows, query_rows = fetch_gsc(site_url, creds, start, end)
 
     os.makedirs(OUT_DIR, exist_ok=True)
     report = build_report(page_rows, query_rows, start, end)

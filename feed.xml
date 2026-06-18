@@ -4,7 +4,7 @@
   <link>https://folklorefinder.uk/</link>
   <description>Recently added myths, legends, ghosts and folklore from across Britain and Ireland.</description>
   <language>en-gb</language>
-  <lastBuildDate>Thu, 18 Jun 2026 21:52:07 GMT</lastBuildDate>
+  <lastBuildDate>Thu, 18 Jun 2026 21:57:57 GMT</lastBuildDate>
   <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://folklorefinder.uk/feed.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>Cormoran, the Giant of St Michael&#x27;s Mount</title>
@@ -13,6 +13,14 @@
     <pubDate>Thu, 18 Jun 2026 12:00:00 GMT</pubDate>
     <category>Giants</category>
     <description>The cattle-thieving Cornish giant who raised St Michael&#x27;s Mount, until young Jack of Marazion lured him into a pit and earned the name Jack the Giant…</description>
+  </item>
+  <item>
+    <title>The Fenland Mandrake</title>
+    <link>https://folklorefinder.uk/legends/the-fenland-mandrake</link>
+    <guid isPermaLink="true">https://folklorefinder.uk/legends/the-fenland-mandrake</guid>
+    <pubDate>Thu, 18 Jun 2026 12:00:00 GMT</pubDate>
+    <category>Witches</category>
+    <description>True mandrake never grew in England, so the fen men carved its magic from white bryony roots — judged at the inn for the one most like a human figure, and…</description>
   </item>
   <item>
     <title>Uther Pendragon and Pendragon Castle</title>
@@ -237,13 +245,5 @@
     <pubDate>Sun, 14 Jun 2026 12:00:00 GMT</pubDate>
     <category>Pirates</category>
     <description>A renegade monk turned mercenary pirate, Eustace terrorised the Channel for both England and France in the early 1200s — and was rumoured to have learned…</description>
-  </item>
-  <item>
-    <title>Furbaide Ferbend</title>
-    <link>https://folklorefinder.uk/legends/furbaide-ferbend</link>
-    <guid isPermaLink="true">https://folklorefinder.uk/legends/furbaide-ferbend</guid>
-    <pubDate>Sun, 14 Jun 2026 12:00:00 GMT</pubDate>
-    <category>Legendary Figures</category>
-    <description>A hero of the Ulster Cycle avenged his mother&#x27;s murder by killing Queen Medb with a sling-shot of hard cheese on a Shannon island — and was buried, legend…</description>
   </item>
 </channel></rss>

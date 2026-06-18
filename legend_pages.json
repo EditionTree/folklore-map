@@ -1441,6 +1441,51 @@
         "Setting": "Ross-shire coast",
         "Motif": "Prophecy and doom"
       }
+    },
+    "Lincoln Imp": {
+      "priority": 97,
+      "image": "legend-images/lincoln-imp-hero.jpg",
+      "alt": "The tiny horned Lincoln Imp carved high on a stone column inside the Angel Choir of Lincoln Cathedral",
+      "caption": "A visual interpretation of the Lincoln Imp in the Angel Choir",
+      "map_title": "Lincoln Cathedral, Lincolnshire",
+      "section_heading": "The imp in the choir",
+      "pullquote": "The angels duly did - turning the imp instantly to stone and fixing him forever in the cleft of a column high on the north side of the choir.",
+      "facts": {
+        "Tradition": "Lincolnshire folklore",
+        "Type": "Mischievous cathedral imp",
+        "Setting": "Lincoln Cathedral",
+        "Legacy": "Emblem of Lincoln"
+      }
+    },
+    "Spectre of Newby Church": {
+      "priority": 98,
+      "image": "legend-images/spectre-of-newby-church-hero.jpg",
+      "alt": "A tall hooded figure draped in a pale shroud standing beside the altar inside a small Yorkshire church",
+      "caption": "A visual interpretation of the Spectre of Newby Church near the altar",
+      "map_title": "Skelton-on-Ure, North Yorkshire",
+      "section_heading": "The figure in the photograph",
+      "pullquote": "The image circulated for decades as apparent evidence of the supernatural.",
+      "facts": {
+        "Tradition": "British ghost lore",
+        "Type": "Photographic apparition",
+        "Setting": "Church of Christ the Consoler",
+        "Famous image": "Photographed in 1963"
+      }
+    },
+    "Black Dog of Bouley Bay": {
+      "priority": 99,
+      "image": "legend-images/black-dog-of-bouley-bay-hero.jpg",
+      "alt": "A huge black hound with a dragging chain on the cliff lane above Bouley Bay under storm clouds",
+      "caption": "A visual interpretation of the Black Dog of Bouley Bay on Jersey's north coast",
+      "map_title": "Bouley Bay, Jersey",
+      "section_heading": "The hound above the bay",
+      "pullquote": "To meet it was an omen of misfortune or of coming storm.",
+      "facts": {
+        "Tradition": "Jersey folklore",
+        "Type": "Spectral storm hound",
+        "Setting": "Cliffs above Bouley Bay",
+        "Motif": "Storm warning and dread"
+      }
     }
   }
 }

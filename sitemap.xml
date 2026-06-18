@@ -8,8 +8,8 @@
   <url><loc>https://folklorefinder.uk/feed.xml</loc><lastmod>2026-06-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/category/location</loc><lastmod>2026-06-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/category/ghost</loc><lastmod>2026-06-18</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/category/fairy</loc><lastmod>2026-06-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/category/witch</loc><lastmod>2026-06-18</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/category/fairy</loc><lastmod>2026-06-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/category/hero</loc><lastmod>2026-06-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/category/beast</loc><lastmod>2026-06-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/category/water</loc><lastmod>2026-06-18</lastmod><priority>0.6</priority></url>
@@ -58,6 +58,7 @@
   <url><loc>https://folklorefinder.uk/legends/region/powys</loc><lastmod>2026-06-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/dorset</loc><lastmod>2026-06-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/denbighshire</loc><lastmod>2026-06-18</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/cambridgeshire</loc><lastmod>2026-06-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/cumbria</loc><lastmod>2026-06-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/county-kilkenny</loc><lastmod>2026-06-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/anglesey</loc><lastmod>2026-06-18</lastmod><priority>0.6</priority></url>
@@ -67,7 +68,6 @@
   <url><loc>https://folklorefinder.uk/legends/region/border</loc><lastmod>2026-06-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/durham</loc><lastmod>2026-06-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/fife</loc><lastmod>2026-06-18</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/cambridgeshire</loc><lastmod>2026-06-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/collection/black-dogs</loc><lastmod>2026-06-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/collection/black-dogs-2</loc><lastmod>2026-06-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/collection/arthurian-places</loc><lastmod>2026-06-18</lastmod><priority>0.6</priority></url>
@@ -613,6 +613,7 @@
   <url><loc>https://folklorefinder.uk/legends/the-dragon-of-loschy-hill</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/the-drummer-of-tedworth</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/the-dullahan</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/the-fenland-mandrake</loc><lastmod>2026-06-18</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/the-ghosts-of-doddington-hall</loc><lastmod>2026-06-13</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/the-giant-bica-of-llangrannog</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/the-giant-of-carn-galver</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority></url>

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-18T21:57:51.322390Z",
+  "generated": "2026-06-18T22:01:01.561790Z",
   "total": 626,
   "categories": {
     "beast": "Beasts",
@@ -7315,7 +7315,7 @@
       "name": "Orkneyinga Saga",
       "lat": 58.984,
       "lng": -2.959,
-      "category": "location",
+      "category": "hero",
       "region": "Orkney & Shetland",
       "summary": "The Old Norse saga of the earls of Orkney, binding the Northern Isles to Norway, Scotland, feud, conversion, sea-kings, and bloodline memory.",
       "source": "https://en.wikipedia.org/wiki/Orkneyinga_saga",

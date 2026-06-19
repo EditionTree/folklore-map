@@ -7,6 +7,10 @@
 "hash": "824a5826f20ccfccf39496150da9e620e913d6b5",
 "modified": "2026-06-13"
 },
+"Agnes Waterhouse": {
+"hash": "0e51da1e27cc72776c2f74db3f4a8202007d93ed",
+"modified": "2026-06-19"
+},
 "Aillen mac Midgna": {
 "hash": "427d628d4c4e9578c2cfe596c8d70fee42489d98",
 "modified": "2026-06-16"
@@ -72,8 +76,8 @@
 "modified": "2026-06-17"
 },
 "Avebury": {
-"hash": "de90713e492b2578e8e1fc0d383046b5d5ededb6",
-"modified": "2026-06-03"
+"hash": "c3ef4bbc064c1ec4360a5fd8b8b995aa11f26355",
+"modified": "2026-06-19"
 },
 "Awd Goggie": {
 "hash": "a0663aa57ccda624dd589688714ed2a36ef9b36a",
@@ -608,8 +612,8 @@
 "modified": "2026-06-05"
 },
 "Devil's Bridge": {
-"hash": "a2309532739cdfbb94395c1717232b3295ada900",
-"modified": "2026-06-03"
+"hash": "daab34cd9aedf61b51c008c3e366f8301c46433d",
+"modified": "2026-06-19"
 },
 "Devil's Dyke": {
 "hash": "1c13170eb8c4778a20b926c7a4d33c3e8d61f4f2",
@@ -660,8 +664,12 @@
 "modified": "2026-06-09"
 },
 "Dorset Ooser": {
-"hash": "705f25643fbf5545c3ea1d4216f222a9d8ec0260",
-"modified": "2026-06-03"
+"hash": "0e38b6c097669ac1f8932664060beee6fc92674c",
+"modified": "2026-06-19"
+},
+"Downpatrick and the Three Saints": {
+"hash": "c17ba4efb6d2bf29e932f81e96271909bf27d7c8",
+"modified": "2026-06-19"
 },
 "Dozmary Pool": {
 "hash": "09e80e5ed2c64ab93cdeddba4665ae33f6d89a09",
@@ -820,8 +828,8 @@
 "modified": "2026-06-14"
 },
 "Finn McCools Fingers": {
-"hash": "ab43776a3ee4e68a9a99436209dd261906d05c5d",
-"modified": "2026-05-30"
+"hash": "4b0e5e8dfcad5a8c5a7e4469563a3f29ef62024d",
+"modified": "2026-06-19"
 },
 "Fintan's Grave": {
 "hash": "5673903a1a9c570279a7dcce483e4c6e59b6299e",
@@ -900,8 +908,8 @@
 "modified": "2026-06-03"
 },
 "Glastonbury Tor": {
-"hash": "8510d3c09cd2bb7fa61ec036f6f0c7124b4a796e",
-"modified": "2026-06-03"
+"hash": "d30cb3040a39ba712ff784a29e09a77573c325e4",
+"modified": "2026-06-19"
 },
 "Gobán Saor": {
 "hash": "8b39d3c24aab19a4ec277b75acad4e33effe7241",
@@ -988,8 +996,8 @@
 "modified": "2026-06-14"
 },
 "Gwy": {
-"hash": "acd41293d18e0e6a6561af258015d118d855bcb1",
-"modified": "2026-06-03"
+"hash": "b69751c07071519ae0b111d44f94359fadb40e20",
+"modified": "2026-06-19"
 },
 "Gwydion fab Dôn": {
 "hash": "aeaa99b63849e3c02ca4b4f14f6718ccf1bdfbf4",
@@ -1008,8 +1016,8 @@
 "modified": "2026-06-03"
 },
 "Hafren": {
-"hash": "291420759acfc6b73e18b8ca21ec45085f5f8aaa",
-"modified": "2026-06-03"
+"hash": "3ff01d243549dc217f7ca4f668c2e32bfa14cea7",
+"modified": "2026-06-19"
 },
 "Hagg Worm": {
 "hash": "cc9879789198c2cccc32f432897b1322a3cd7150",
@@ -1020,8 +1028,8 @@
 "modified": "2026-06-12"
 },
 "Hartlepool Monkey": {
-"hash": "a57095e7e65c305d0f18fdedd692270caf8ce6d7",
-"modified": "2026-06-03"
+"hash": "2073800e14ce38834f3e9fd3ab9d89dffd95affe",
+"modified": "2026-06-19"
 },
 "Havelok the Dane": {
 "hash": "53b037fc8ab2d182465d9a9a9c215d1972c08c4d",
@@ -1415,6 +1423,10 @@
 "hash": "7922c1cc69672669d080bd7e0eb5d8f9ff2509d7",
 "modified": "2026-06-18"
 },
+"Lí Ban of Lough Neagh": {
+"hash": "46bc5fb7c6b74f6348b8caa8e7bda809a3e48543",
+"modified": "2026-06-19"
+},
 "Mabon ap Modron": {
 "hash": "98a6522845401db630025faa5b03acebd3827556",
 "modified": "2026-06-19"
@@ -1691,6 +1703,10 @@
 "hash": "3bf5ab422ff2615a5840caacf94fffec4eb52626",
 "modified": "2026-06-14"
 },
+"Owain Lawgoch": {
+"hash": "200eac649c16cd44d4fa161d23b08459e42f18c6",
+"modified": "2026-06-19"
+},
 "Oweynagat": {
 "hash": "6bb28dc659885a96a321fbc777663c446d3526bf",
 "modified": "2026-06-05"
@@ -1712,12 +1728,16 @@
 "modified": "2026-06-03"
 },
 "Penhale Sands": {
-"hash": "25c9c16408461e782ea9b4a5287cfdfd3a1966a8",
-"modified": "2026-06-03"
+"hash": "21767dd8fff99e874fc130d1fe5e63461f4c1ea3",
+"modified": "2026-06-19"
 },
 "Penhill Giant": {
 "hash": "0d370bb70fe92122189f0ab05a354cb6b73a1eb2",
 "modified": "2026-06-14"
+},
+"Penllyne Dragon": {
+"hash": "02176f704baf94260b582bfe61fe7b5691a063d0",
+"modified": "2026-06-19"
 },
 "Petronilla de Meath": {
 "hash": "f47d77d3512ddfdd576711f275b7da93b8fb0501",
@@ -1808,8 +1828,8 @@
 "modified": "2026-06-14"
 },
 "Rheidol": {
-"hash": "d9e4e3288a3d7c6d1968119786f0756fd1b75049",
-"modified": "2026-06-03"
+"hash": "c5ec416cf9acf9d25b208fb959882d5af7394be1",
+"modified": "2026-06-19"
 },
 "Rhiannon": {
 "hash": "25fe9e9737369473c7f815bfbc992c7fb1704f86",
@@ -1846,6 +1866,10 @@
 "Rudston Monolith": {
 "hash": "a249ec9928a3e00869b029b57c900ef7d6708067",
 "modified": "2026-06-03"
+},
+"Sack of Baltimore": {
+"hash": "e8b8137572d333d5729a939f910b2cc23fc29fa9",
+"modified": "2026-06-19"
 },
 "Saint Edmund and the Wolf": {
 "hash": "f34597d7047d2046385b5c548bfc7c20c955e73d",
@@ -1894,6 +1918,10 @@
 "Seonaidh": {
 "hash": "c0a78e9bbc1be6044b7ac2e0688f161832f1a17a",
 "modified": "2026-06-18"
+},
+"Seven Whistlers": {
+"hash": "c5eefc83704ee32105afded889285859f61edafa",
+"modified": "2026-06-19"
 },
 "Shellycoat": {
 "hash": "b88590656ab7c3073fa2085c03a4fea94e28c225",
@@ -1996,8 +2024,8 @@
 "modified": "2026-06-16"
 },
 "St Trinian's Church": {
-"hash": "e510c5517b0599420572d315e42aef45036d159e",
-"modified": "2026-06-03"
+"hash": "942d2b3378d9d5a598f37384be24b0ed4c9c4b71",
+"modified": "2026-06-19"
 },
 "Stanton Drew Stone Circles": {
 "hash": "3504351b04c7c10fda320cfa1b5d0386ca73cd08",
@@ -2008,8 +2036,8 @@
 "modified": "2026-06-17"
 },
 "Stonehenge": {
-"hash": "a230c533a91ea18e8c29e4613916c0067e6ccf5e",
-"modified": "2026-06-03"
+"hash": "255319c42d0d3590e197f278fb03dbef55e1c21e",
+"modified": "2026-06-19"
 },
 "Stoor Worm": {
 "hash": "15dd00e63759c4bda9587ad263752d226dd8416f",
@@ -2175,6 +2203,10 @@
 "hash": "a7a0dc72b2c9d5c321489bd6435403346ccf4fcf",
 "modified": "2026-06-14"
 },
+"The Hunt of Slieve Gullion": {
+"hash": "241fed259e3cfc4626d19a161bf40de6cb85d1aa",
+"modified": "2026-06-19"
+},
 "The Lady of the Lake": {
 "hash": "62def8880c41b9cd93d9aeb9402a2114fc60f7e0",
 "modified": "2026-06-19"
@@ -2267,6 +2299,10 @@
 "hash": "5baab2c38d91888920e7944bb6841e547cdfe2f3",
 "modified": "2026-06-03"
 },
+"Tichborne Dole": {
+"hash": "cf340e956927eaeb4e3351c6954bfbc0169dc4ed",
+"modified": "2026-06-19"
+},
 "Tiddy Mun": {
 "hash": "b6f83eba3499135250694782acddcad884aca75d",
 "modified": "2026-06-03"
@@ -2358,6 +2394,10 @@
 "Uther Pendragon and Pendragon Castle": {
 "hash": "dd2757a141bb3b340c955a6282cc56d0e411ea61",
 "modified": "2026-06-18"
+},
+"Vanishing Keepers of the Flannan Isles": {
+"hash": "fcb28bcd37b62dddad54c82f6d29e34f0c83b80a",
+"modified": "2026-06-19"
 },
 "Veasta": {
 "hash": "775d367dd88396781253019a812c7e0288e3b134",
@@ -2458,6 +2498,10 @@
 "Witch of Slieu Whallian": {
 "hash": "91b515cc556ee9d01fcfe339e5a782dcaa5d4d01",
 "modified": "2026-06-12"
+},
+"Witch of Wookey Hole": {
+"hash": "3f55f6f6b26f2d59a96eabbd3d3296b9ba679627",
+"modified": "2026-06-19"
 },
 "Witch's Stone of Westleton": {
 "hash": "867be3bb94178b6829cd82a181baf74e80dea81f",

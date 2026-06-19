@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-19T15:59:26.472463Z",
-  "total": 637,
+  "generated": "2026-06-19T18:48:50.481003Z",
+  "total": 648,
   "categories": {
     "beast": "Beasts",
     "ghost": "Ghosts",
@@ -55,6 +55,30 @@
         "gwynedd"
       ],
       "detail": "Welsh tradition tells of several Afancs lurking in deep pools and lakes across Wales, sometimes described as crocodile-like, sometimes beaver-like, sometimes simply a 'demon of the lake'. The most famous tale tells how the creature could only be captured through trickery: a young woman was persuaded to let it rest its head in her lap while it slept, allowing local men to bind it in chains. When the Afanc woke and felt itself trapped, it thrashed so violently that it killed the maiden before finally being subdued.\n\nOther versions give the story an Arthurian twist. At Llyn Barfog in the Dyfi valley, King Arthur's horse Llamrei is said to have dragged the bound Afanc from the water using chains looped around its neck, hauling it across the mountains to a lake so deep and cold that it could never climb out again. A still older account, recorded by the antiquarian Iolo Morganwg, has the oxen of Hu Gadarn perform the same feat, dragging the beast to Llyn Llion after it caused a great flood. In the Mabinogion tale of Peredur, a similar 'Addanc of the Lake' is overcome only when the hero is given a stone that renders the invisible creature visible, allowing him to behead it.\n\nThe legend's staying power is written into the map: Llyn yr Afanc near Betws-y-coed takes its name directly from the creature, and several other lakes claim to be its former lair. The modern Welsh word afanc has since settled down to mean simply 'beaver' — a tame fate for a monster once blamed for floods, drownings, and the deaths of those careless enough to wade into the wrong lake."
+    },
+    {
+      "name": "Agnes Waterhouse",
+      "lat": 51.7572,
+      "lng": 0.627,
+      "category": "witch",
+      "region": "Hatfield Peverel, Essex, England",
+      "summary": "In 1566 Agnes Waterhouse of Hatfield Peverel became the first woman hanged for witchcraft in England — confessing that her demonic cat Sathan could kill cattle, sink ships, and murder a husband on command.",
+      "source": "https://en.wikipedia.org/wiki/Agnes_Waterhouse",
+      "date_added": "2026-06-19",
+      "tags": [
+        "england",
+        "essex",
+        "cat",
+        "curse",
+        "death-omen"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Agnes_Waterhouse",
+        "https://www.essexrecordofficeblog.co.uk/the-trial-of-agnes-waterhouse-witchcraft-in-essex-1566/",
+        "https://www.history.co.uk/articles/chelmsford-witch-trials-hatfield-perevel-agnes-waterhouse",
+        "https://www.ancient-origins.net/history-famous-people/agnes-waterhouse-first-woman-executed-witchcraft-england-005747"
+      ],
+      "detail": "On 29 July 1566, Agnes Waterhouse of Hatfield Peverel in Essex was hanged at Chelmsford — the first person executed for witchcraft in England under the Elizabethan Witchcraft Act of 1562. Her trial was one of three heard together that summer in what became known as the Chelmsford witch trials, alongside those of her neighbour Elizabeth Francis and Agnes's own daughter Joan Waterhouse. All three women were said to have shared the same familiar spirit: a cat named Sathan which could perform malicious services in exchange for a drop of the witch's blood.\n\nThe pamphlet account of the trial, published shortly after the hanging, gives a vivid portrait of Agnes's alleged practices. She confessed to having received Sathan from Elizabeth Francis after converting the cat into a toad for easier concealment. In its toad form, she kept it in a pot and fed it on bread and milk. The familiar was credited with drowning a neighbour's livestock, killing her own husband, and destroying the property of those against whom she bore ill-will. The pamphlet — 'The Examination and Confession of certaine Wytches at Chensford' — is one of the earliest and most detailed English witch-trial documents and was reprinted extensively, helping establish the template for subsequent witch pamphlet literature over the following century.\n\nAgnes was sixty-three at the time of her trial, described in the pamphlet as 'a very old woman.' Her confession was extracted without formal torture — English law generally forbade it — though the testimony of a twelve-year-old child witness, Agnes Brown, who claimed Sathan had appeared to her as a black dog, must have made resistance extremely difficult. The Essex Record Office holds the original documentary record and has published detailed academic analysis; the trials preceded the more famous Pendle witch crisis of 1612 by nearly fifty years and are considered foundational in the development of English witch-trial procedure and literature."
     },
     {
       "name": "Aillen mac Midgna",
@@ -331,15 +355,17 @@
       "lng": -1.854,
       "category": "location",
       "region": "Wiltshire",
-      "summary": "The largest stone circle in the world — so vast a village was built inside it. The Devil is said to have danced here. At night the stones are said to move, drink from the stream, and return before dawn. No one has ever counted them twice and got the same number.",
+      "summary": "The largest stone circle in the world — so vast a village was built inside it. The Devil is said to have danced here, one stone crosses the road at midnight, and a medieval barber lies crushed beneath the megaliths where he fell trying to bury them.",
       "source": "https://en.wikipedia.org/wiki/Avebury",
       "date_added": "2026-06-03",
       "tags": [
         "river",
         "standing-stones",
         "england",
-        "wiltshire"
-      ]
+        "wiltshire",
+        "curse"
+      ],
+      "detail": "Avebury in Wiltshire is the largest stone circle in the world, its outer ring enclosing an area so vast that the medieval village of Avebury grew up inside it, with houses, a pub, and a church nestled among the megaliths. The stones have attracted folklore for centuries, and the legends cluster around a single theme: the circle is dangerous, alive, and not entirely of this world.\n\nThe best-known tale is the petrified wedding party. The stones of the Great Circle are said to be the remains of revellers who were tricked by a fiddle-playing Devil into dancing on a Sunday and turned to stone for their sin — a legend shared with the Stanton Drew circle in Somerset and the Merry Maidens in Cornwall. A particular stone known as the Devil’s Chair, shaped like a rough throne with a natural seat, is said to be the spot where the Devil himself sat to watch his handiwork. Local tradition holds that running anticlockwise around the Devil’s Chair one hundred times will summon him. The Diamond Stone, a smaller megalith near the northern entrance, is said to uproot itself and cross the road at the stroke of midnight, returning to its position before dawn — one of several ‘walking stone’ legends attached to British megalithic sites.\n\nThe most historically grounded legend concerns the Barber Surgeon. In the fourteenth century, the medieval Church ordered the stones buried to suppress the pagan rituals that had revived around them. During the burial campaign, a stone fell on one of the workers and crushed him. When archaeologist Alexander Keiller re-excavated the circle in the 1930s, he found a skeleton pinned beneath a fallen megalith, accompanied by a pair of scissors and a lancet — the tools of a barber-surgeon. The discovery confirmed a folk memory that had persisted for six hundred years and may explain why the stone-felling campaign stopped abruptly: the villagers believed the Devil had taken his revenge."
     },
     {
       "name": "Awd Goggie",
@@ -1655,7 +1681,12 @@
         "ireland",
         "county-cork"
       ],
-      "detail": "The Cailleach Bhéarra — the Hag of Beara — is one of the most ancient and powerful figures of Irish mythology, the Irish kin of the Scottish Cailleach. A divine hag of the Beara Peninsula in the south-west, she is a goddess of the land, of winter and of sovereignty, said to have lived seven lifetimes and outlasted seven husbands, watching generations and even mountains rise and pass away. She is credited with shaping the country, letting stones fall from her apron to raise hills and cairns.\n\nHer most celebrated expression is the medieval poem 'The Lament of the Hag of Beara', in which the once-young queen, now aged and newly Christian, mourns her lost beauty and the passing of the old pagan world — among the great poems in the Irish language. On the Beara Peninsula a weathered rock above the sea, An Chailleach, is said to be the Hag herself, turned to stone and gazing out across the water as she awaits her return. She embodies the deep Irish identification of the goddess with the enduring land itself."
+      "detail": "The Cailleach Bhéarra — the Hag of Beara — is one of the most ancient and powerful figures of Irish mythology, the Irish kin of the Scottish Cailleach. A divine hag of the Beara Peninsula in the south-west, she is a goddess of the land, of winter and of sovereignty, said to have lived seven lifetimes and outlasted seven husbands, watching generations and even mountains rise and pass away. She is credited with shaping the country, letting stones fall from her apron to raise hills and cairns.\n\nHer most celebrated expression is the medieval poem 'The Lament of the Hag of Beara', in which the once-young queen, now aged and newly Christian, mourns her lost beauty and the passing of the old pagan world — among the great poems in the Irish language. On the Beara Peninsula a weathered rock above the sea, An Chailleach, is said to be the Hag herself, turned to stone and gazing out across the water as she awaits her return. She embodies the deep Irish identification of the goddess with the enduring land itself.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cailleach",
+        "https://en.wikipedia.org/wiki/Slieve_Gullion",
+        "https://voicesfromthedawn.com/slieve-gullion/"
+      ]
     },
     {
       "name": "Callanish Standing Stones",
@@ -2213,7 +2244,9 @@
         "https://www.jstor.org/stable/1252472",
         "https://sacred-texts.com/neu/yeats/fip/fip78.htm",
         "https://experience-enniskillen.com/blog/conn-eda-and-the-golden-apples/",
-        "https://archive.org/details/storyofconnedaor00okea"
+        "https://archive.org/details/storyofconnedaor00okea",
+        "https://loughneaghtours.com/myths-and-legends-of-lough-neagh/",
+        "https://riverbannloughneagh.org/legends/"
       ],
       "date_added": "2026-06-16",
       "tags": [
@@ -2698,7 +2731,7 @@
       "lng": -3.841,
       "category": "location",
       "region": "Pontarfynach, Ceredigion, Wales",
-      "summary": "At Devil's Bridge in Ceredigion, local legend says the Devil offered to bridge the gorge in exchange for the soul of the first living creature to cross. An old woman outwitted him by throwing bread across the bridge for her dog to chase.",
+      "summary": "At Devil’s Bridge in Ceredigion, the Devil offered to span a gorge in exchange for the first soul to cross. An old woman agreed — then threw bread across the bridge so her dog ran over first. Three bridges now stand stacked above the falls, the Devil’s at the bottom.",
       "source": "https://www.discoverceredigion.wales/areas-of-ceredigion/cambrian-mountains/communities-of-the-cambrian-mountains/devils-bridge/",
       "date_added": "2026-06-03",
       "tags": [
@@ -2707,7 +2740,8 @@
         "trickery",
         "wales",
         "ceredigion"
-      ]
+      ],
+      "detail": "Devil’s Bridge — Pontarfynach in Welsh, ‘the bridge over the Mynach’ — is a village in the Cambrian Mountains of Ceredigion where three bridges stand stacked one above another over a spectacular gorge carved by the Mynach and Rheidol rivers. The lowest and oldest bridge, believed to date from between 1075 and 1200, is the one the legend claims the Devil built.\n\nThe story follows a pattern found across Europe wherever an improbably difficult bridge exists: the Devil appears and offers to build it in exchange for the soul of the first living creature to cross. At Devil’s Bridge the human party to the bargain is Megan, an old woman whose cow has strayed to the far side of the gorge. The Devil constructs the bridge overnight and stands at the far end, waiting for Megan to walk across and forfeit her soul. But the old woman, cannier than the Devil expected, pulls a crust of bread from her apron and throws it across the bridge. Her little dog chases after it, becoming the first living creature to cross. The Devil, bound by his own terms, is left with the soul of a dog — which is no use to him — and vanishes in fury.\n\nThe three-bridge structure is not legendary but geological and architectural fact. The lowest (Devil’s) bridge is a single stone arch of Norman or early medieval construction; above it sits a second bridge built in 1753; above that, a modern road bridge erected in 1901. The stacking occurred because each generation built over the previous bridge rather than demolishing it, and the result — three arches receding into the spray of the Mynach Falls — is one of the most photographed sites in Wales. The gorge itself drops nearly 90 metres through ancient oak woodland, and the Devil’s Punchbowl at the base of the falls adds to the infernal nomenclature. The legend is treated by History Hit, History Points, and Discover Ceredigion, and the site is managed by Natural Resources Wales."
     },
     {
       "name": "Devil's Dyke",
@@ -2933,13 +2967,38 @@
       "lng": -2.605,
       "category": "location",
       "region": "Melbury Osmond, Dorset",
-      "summary": "The Dorset Ooser is a horned folk mask recorded in nineteenth-century Melbury Osmond. Its grim hinged jaws and half-human, half-beast appearance were used in village customs to frighten revellers or shame people judged to have behaved badly.",
+      "summary": "A horned wooden mask from nineteenth-century Melbury Osmond — its grim hinged jaws and half-human face were paraded through the village to shame adulterers and sinners, until it vanished around 1897. A replica still rides out on May Day at the Cerne Abbas Giant.",
       "source": "https://wessexmuseums.org.uk/collections-showcase/dorset-ooser/",
       "date_added": "2026-06-03",
       "tags": [
         "england",
         "dorset"
-      ]
+      ],
+      "detail": "The Dorset Ooser is a hollow wooden head carved from a single timber block, featuring a humanoid face with bullock’s horns, a beard, staring eyes, a rounded boss between the brows, and a hinged lower jaw operated by a string that allowed the mouth to snap open and shut. The historian Ronald Hutton described it as ‘a terrifying horned mask with human face, staring eyes, beard, and gnashing teeth.’ Although hollow enough to wear, it had no eye holes — the wearer would have been as blind as the target was terrified.\n\nThe head belonged to the Cave family of Holt Farm in Melbury Osmond, Dorset, ‘from time out of mind’ according to the earliest published account in 1891. Its primary recorded use was in skimity riding — the Dorset form of the charivari or ‘rough music’ custom — in which it was paraded through crowds banging pots, kettles, and bones to publicly humiliate those accused of adultery, wife-beating, cuckoldry, or other breaches of village morality. It was also used to frighten children confined to the tallét (hayloft) and once sent a stable hand leaping through a window in panic. The mask functioned as the community’s anonymous enforcer: a face that was no one’s face, delivering a judgement that was everyone’s.\n\nThe original Ooser vanished around 1897 when Edward Cave, a doctor who had inherited it, took it to Crewkerne in Somerset. His coachman hung it in a loft where it deteriorated; the building was later demolished to make way for a post office, and the head was almost certainly destroyed with it. In 1975 the Morris dancer John Byfleet carved a replica from a log using a penknife, and it is now held by the Dorset Museum. Twice a year — May Day and St George’s Day — the Wessex Morris Men carry it to the hilltop above the Cerne Abbas Giant for their seasonal ceremony. The name ‘Ooser’ may derive from the Old English wurse (devil) or from guisard (a masked performer in mummers’ plays); the etymology, like the head itself, has never been definitively settled."
+    },
+    {
+      "name": "Downpatrick and the Three Saints",
+      "lat": 54.331,
+      "lng": -5.708,
+      "category": "hero",
+      "region": "Downpatrick, County Down, Northern Ireland",
+      "summary": "Medieval tradition holds that St Patrick, St Brigid, and St Columba — Ireland's three patron saints — share a single grave beneath Down Cathedral: 'In Down three saints one grave do fill — Patrick, Brigid and Colmcille.'",
+      "source": "https://www.atlasobscura.com/places/the-grave-of-st-patrick",
+      "date_added": "2026-06-19",
+      "tags": [
+        "northern-ireland",
+        "county-down",
+        "celtic",
+        "church",
+        "hero"
+      ],
+      "sources": [
+        "https://www.atlasobscura.com/places/the-grave-of-st-patrick",
+        "https://www.saintpatrickcentre.com/st-patricks-grave/",
+        "https://matadornetwork.com/read/county-down-northern-ireland-saint-patrick/",
+        "https://www.visitwarrenpoint.com/st-patricks-grave-burial-site-downpatrick/"
+      ],
+      "detail": "The hill above the town of Downpatrick in County Down is known in Irish as Dún Pádraig — the fort of Patrick — and the tradition that St Patrick died and was buried there stretches back to the early medieval period. The earliest sources place his death at Saul, a few miles away, where his confessor Tírechán wrote that the ox pulling the saint's funeral cart refused to move until it reached a small hill near Downpatrick, where Patrick was laid to rest. An eighth-century hymn by St Fiacc identifies a 'fertile fountain' near the burial site — almost certainly the well complex at Struell — suggesting the sacred geography of Downpatrick was well-established within three centuries of Patrick's death in the 5th century.\n\nThe gathering of three saints under one stone is attributed to the Anglo-Norman knight John de Courcy, who conquered Ulster in 1177 and sought to establish his legitimacy through conspicuous patronage of Irish sacred sites. According to the tradition recorded by Jocelin of Furness in his Life of Saint Patrick (1185), de Courcy had the relics of St Brigid transferred from Kildare and those of St Columba from Iona, then interred them together with Patrick's remains on Cathedral Hill. From this act of relic-assembly grew the famous couplet that became a pilgrimage formula across the Gaelic world: 'In Down three saints one grave do fill — Patrick, Brigid and Colmcille.'\n\nThe modern grave marker — a large granite slab inscribed simply 'Patrick' with a Celtic cross — was placed on Cathedral Hill in the early twentieth century to protect the traditional burial spot from pilgrims who had been scooping earth from the site to take with them on emigrating, a practice of devotional material culture that testifies to the depth of attachment the legend inspired. Down Cathedral (Church of Ireland) stands on the hill today and the grave remains a focus of continuous pilgrimage, especially on St Patrick's Day. The Atlas Obscura entry for the site and the St Patrick's Centre in Downpatrick both document the tradition in detail. The legend of the triple burial — whatever its historical accuracy — gave County Down a symbolic centrality in Irish Christian memory that it has never lost."
     },
     {
       "name": "Dozmary Pool",
@@ -3657,7 +3716,7 @@
       "lng": -7.2914,
       "category": "location",
       "region": "Shantemon Mountain, County Cavan",
-      "summary": "Finn McCools Fingers are a set of five standing stones on Shantemon mountain in County Cavan. The name is derived from the story that giant Celtic warrior Fionn mac Cumhaill lost a hand in battle. The stones are arranged in a south-east/north-west orientation.",
+      "summary": "Five standing stones on Shantemon mountain in County Cavan — said to be the fingers of Fionn mac Cumhaill’s severed hand, lost in battle and turned to stone where they fell. The hill was also the inauguration place of the O’Reilly chieftains.",
       "source": "https://en.wikipedia.org/wiki/Finn_McCools_Fingers",
       "date_added": "2026-05-30",
       "tags": [
@@ -3667,7 +3726,8 @@
         "celtic",
         "ireland",
         "county-cavan"
-      ]
+      ],
+      "detail": "Finn McCool’s Fingers are a Bronze Age stone row on the north side of Shantemon Hill, about four kilometres from Ballyhaise in County Cavan. The row consists of five stones aligned on a northeast-southwest axis — four massive menhirs, the tallest nearly two metres high, and a smaller fallen boulder at the northeastern end. They are classified archaeologically as a stone row dating from between 1750 and 500 BC, but the name they carry belongs to a different and more vivid tradition.\n\nThe legend says the stones are the fingers of the giant warrior Fionn mac Cumhaill, severed from his hand in battle and turned to stone where they landed on the hillside. An alternative version holds that Fionn carried the five stones from Cuilcagh Mountain in west Cavan and planted them on Shantemon as territorial markers. Either way, the naming anchors the Cavan landscape to the Fionn cycle — the body of mythology centred on the hero and his warrior band the Fianna — and gives a remote Border county a direct claim on one of Ireland’s most celebrated legendary figures. The Dúchas Schools’ Collection, gathered from Cavan schoolchildren in the 1930s, preserves local variants of the tradition.\n\nShantemon Hill itself carries additional layers of significance. It was the traditional inauguration site of the O’Reilly chieftains, the ruling Gaelic family of East Bréifne (roughly modern Cavan), and the hill was the scene of an annual harvest gathering on Bilberry Sunday — a survival of the pre-Christian festival of Lughnasadh. The convergence of megalithic archaeology, Fenian mythology, and Gaelic political ceremony on a single hilltop makes the site unusually dense in meaning, even by Irish standards. The stones are a protected National Monument and are accessible via a signposted walk from the Ballyhaise road."
     },
     {
       "name": "Fintan's Grave",
@@ -3727,6 +3787,10 @@
         "arthurian",
         "northern-ireland",
         "county-antrim"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Fionn_mac_Cumhaill",
+        "https://brehonacademy.org/finn-mccool-and-the-creation-of-lough-neagh-and-the-isle-of-man/"
       ]
     },
     {
@@ -4026,7 +4090,7 @@
       "lng": -2.699,
       "category": "location",
       "region": "Somerset",
-      "summary": "The sacred hill rising from the Somerset Levels — said to be the Isle of Avalon where Arthur was carried after his final battle. An entrance to the fairy underworld is hidden in its flanks. Saint Collen once descended into it and found a shining court.",
+      "summary": "The sacred hill rising from the Somerset Levels — said to be the Isle of Avalon where Arthur was carried after his final battle. Beneath it lies the entrance to Annwn, the Celtic otherworld, ruled by Gwyn ap Nudd.",
       "source": "https://en.wikipedia.org/wiki/Glastonbury_Tor",
       "date_added": "2026-06-03",
       "tags": [
@@ -4035,8 +4099,10 @@
         "battle",
         "arthurian",
         "england",
-        "somerset"
-      ]
+        "somerset",
+        "celtic"
+      ],
+      "detail": "Glastonbury Tor rises 158 metres from the flat expanse of the Somerset Levels, a terraced conical hill crowned by the roofless tower of the medieval Church of St Michael. A millennium ago, when the water table was higher and the surrounding marshes flooded regularly, the Tor would have appeared as an island — and it is this island character that anchors its identification with Avalon, the place where King Arthur was carried after his mortal wounding at the Battle of Camlann. Geoffrey of Monmouth named Avalon the ‘Isle of Apples’ and described it as a place of healing presided over by Morgan le Fay; later writers, including the monks of Glastonbury Abbey, cemented the connection by claiming to have discovered Arthur’s grave in the abbey grounds in 1191.\n\nBut the Tor’s mythology runs deeper than Arthur. In Welsh tradition it is the palace of Gwyn ap Nudd, Lord of Annwn — the Celtic otherworld, a realm parallel to the living world where the dead and the fair folk coexist. A hidden cave beneath the hill is said to open into Annwn, and those who enter may find the Cauldron of Rebirth but will struggle to return. St Collen, a sixth-century Welsh saint, is said to have descended into the Tor and confronted Gwyn ap Nudd in his fairy court, flinging holy water at the assembled spirits until they vanished and left him standing alone on the bare hillside.\n\nThe terraces that spiral around the Tor’s slopes have been interpreted by some researchers as the remains of a Neolithic processional labyrinth — a ceremonial path winding seven times around the hill to the summit. Whether this interpretation is correct or the terraces are simply medieval strip lynchets, they give the Tor an unmistakable sense of deliberate shaping. The ruined tower of St Michael’s at the summit dates from the fourteenth century, built to replace an earlier church destroyed by earthquake in 1275. The National Trust, which manages the site, records that Glastonbury Tor remains one of the most visited sacred landscapes in Britain."
     },
     {
       "name": "Gobán Saor",
@@ -4428,7 +4494,7 @@
       "lng": -2.66,
       "category": "deity",
       "region": "Welsh Marches",
-      "summary": "The second daughter of the giant Plynlimon, who raced her sisters from the mountain summit to the sea. She became the River Wye — a liminal boundary between Wales and England, civilisation and wilderness. Her valley holds Tintern Abbey and some of the oldest oak forest in Britain.",
+      "summary": "The second daughter of the giant Plynlimon, who raced her sisters from the mountain summit to the sea. She became the River Wye — threading a quiet, winding path through borderland woods while her sisters rushed and roared.",
       "source": "https://en.wikipedia.org/wiki/River_Wye",
       "date_added": "2026-06-03",
       "tags": [
@@ -4438,7 +4504,8 @@
         "forest",
         "church",
         "wales"
-      ]
+      ],
+      "detail": "In the folklore of mid Wales, the mountain Pumlumon (Plynlimon) is father to three daughters — river spirits or Niskai in the Celtic tradition — who were set a challenge: each was given a single day to reach the sea, and whichever territory they covered before nightfall would be their dowry forever. The legend was first recorded by the Celtic scholar John Rhŷs, who heard it told in his youth in 1840s Ceredigion, and was later retold and analysed by Arthur Granville Bradley in 1920.\n\nGwy, the second sister, chose the path of beauty and contemplation. Where Hafren (the Severn) set out ambitiously eastward on a vast 220-mile journey through England, and Rheidol ran wild and short straight to Cardigan Bay, Gwy meandered south through the borderlands of Wales and England. She threaded her way through the wooded gorges of what is now the Wye Valley, lingering in the quiet stretches between Builth Wells and Hay-on-Wye before curving down through Herefordshire and the Forest of Dean to meet her sister Hafren at the Severn Estuary. Her 134-mile journey made her neither the longest nor the shortest of the three sisters, but the most serene.\n\nThe three-sisters legend belongs to a broader tradition of mythologising Welsh river origins through kinship narratives, giving landscape features the emotional logic of family relationships. The River Wye itself has been a designated Area of Outstanding Natural Beauty since 1971, and its passage through the border country — neither wholly Welsh nor wholly English — echoes the liminal character that the folklore assigns to Gwy: a spirit who chose to explore the boundary rather than commit to one side."
     },
     {
       "name": "Gwydion fab Dôn",
@@ -4524,7 +4591,7 @@
       "lng": -2.241,
       "category": "deity",
       "region": "Welsh Marches",
-      "summary": "Britain's longest river, named for Sabrina — a princess drowned in its waters by a wicked stepmother and transformed into a river goddess. Milton gave her immortal verse in Comus. The river was once considered sacred, its banks the boundary between Britain and the Otherworld.",
+      "summary": "Britain’s longest river, named for Sabrina — a princess drowned in its waters by a wicked stepmother and transformed into a river goddess. Milton gave her immortal verse in Comus; the Welsh still call the Severn Afon Hafren.",
       "source": "https://en.wikipedia.org/wiki/Sabrina_(goddess)",
       "date_added": "2026-06-03",
       "tags": [
@@ -4532,7 +4599,8 @@
         "transformation",
         "drowning",
         "wales"
-      ]
+      ],
+      "detail": "Hafren is the Welsh name for the River Severn, and the legend behind it is one of the oldest origin stories in British mythology. According to Geoffrey of Monmouth’s twelfth-century Historia Regum Britanniae, Hafren was the daughter of Locrinus, legendary king of Britain, and his secret mistress Estrildis, a Germanic princess whom Locrinus had concealed in underground chambers for seven years while married to Gwendolen, daughter of the Cornish king Corineus. When Corineus died, Locrinus abandoned Gwendolen and elevated Estrildis to queen. Gwendolen raised an army in Cornwall, defeated and killed Locrinus in battle, then ordered both Estrildis and the innocent Hafren drowned in the river that would thereafter bear the girl’s name.\n\nThe Latinised form Sabrina entered English literature through Geoffrey’s text and achieved its most celebrated expression in John Milton’s masque Comus (1634), where Sabrina rises from the river as a benevolent water goddess to free a maiden from enchantment: ‘Sabrina fair, / Listen where thou art sitting / Under the glassie, cool, translucent wave.’ Milton’s portrayal transformed the drowned princess into a protective nymph, and the name Sabrina has been used for the river in English poetry ever since.\n\nIn the separate Welsh folklore tradition recorded by John Rhŷs, Hafren is one of three daughters of the mountain giant Plynlimon, who raced her sisters Gwy and Rheidol to the sea. Hafren chose the longest and most ambitious route — 220 miles eastward through the English Midlands before curving back to the Bristol Channel — covering more territory than either sibling. The two traditions are distinct in origin but have coexisted for centuries, giving the Severn a double mythological identity: a river of tragedy in the Galfridian chronicle and a river of ambition in Welsh mountain folklore."
     },
     {
       "name": "Hagg Worm",
@@ -4575,14 +4643,17 @@
       "lng": -1.181,
       "category": "beast",
       "region": "Hartlepool, County Durham",
-      "summary": "Hartlepool folklore says that during the Napoleonic Wars townspeople found a monkey from a wrecked ship, mistook it for a French spy and hanged it. The story is an enduring local legend and the source of the town's Monkey Hangers nickname.",
+      "summary": "During the Napoleonic Wars, Hartlepool fishermen found a monkey from a shipwreck dressed in a French uniform, tried it on the beach for espionage, and hanged it. The town has never been allowed to forget — its football mascot is H’Angus the Monkey.",
       "source": "https://www.historic-uk.com/HistoryUK/HistoryofEngland/The-Hanging-of-the-Hartlepool-Monkey/",
       "date_added": "2026-06-03",
       "tags": [
         "battle",
         "england",
-        "durham"
-      ]
+        "durham",
+        "coast",
+        "sea"
+      ],
+      "detail": "The legend of the Hartlepool monkey is one of the most enduring and self-aware pieces of folklore in northern England. The story, set during the Napoleonic Wars of the early nineteenth century, tells of a French vessel that was wrecked off the coast of Hartlepool in County Durham. The only survivor to wash ashore was the ship’s pet monkey, dressed in a miniature military uniform — a common practice aboard warships of the period, where monkeys and other animals served as mascots and were sometimes costumed for the amusement of the crew.\n\nThe fishermen of Hartlepool, who had never seen a Frenchman and whose understanding of the enemy was shaped by satirical cartoons depicting the French as small, gibbering, monkey-like creatures, are said to have convened an impromptu court on the beach. The monkey, unable to answer their questions in English, was convicted of espionage and hanged from the mast of the wrecked ship. The tale may carry a darker undertone: some historians have suggested that the ‘monkey’ was in fact a powder-monkey — the term for the young boys employed on warships to carry gunpowder to the cannons — and that the hanging was of a child rather than an animal.\n\nNo contemporary record of the event has been found. The first known version of the story appears in a comic song by Ned Corvan, a Tyneside music-hall performer, in the 1850s, and Historic UK found no evidence of French shipwrecks off Hartlepool during the Napoleonic period. What makes the legend remarkable is not its historical accuracy but its afterlife: rather than burying the story, Hartlepool embraced it. The town’s football club adopted H’Angus the Monkey as its mascot, and in 2002 the man inside the suit, Stuart Drummond, stood for mayor of Hartlepool on a joke ticket and won — serving three terms. A bronze statue of the monkey now stands in the town’s marina. The legend has become an act of civic self-identification, a joke the town tells on itself with enough warmth to disarm the mockery."
     },
     {
       "name": "Havelok the Dane",
@@ -6305,6 +6376,33 @@
       "detail": "Lyonesse is the lost country of Cornish legend — a rich and fertile land said once to have stretched west from the tip of Cornwall to the Isles of Scilly, where now there is only open sea. In the tradition it was a realm of a hundred and forty churches, with towns and farms and fair fields, until in a single terrible night it was overwhelmed and drowned beneath the waves, its people swallowed by the inrushing tide.\n\nLegend remembers one survivor: a man named Trevilian (or Trevelyan), who saw the flood coming and outran the water on a swift white horse, galloping ahead of the wave until he reached the safety of high ground at Perranuthnoe — an escape commemorated, it is said, in the white horse of the Trevelyan family arms. The Arthurian romances drew Lyonesse into their world too, naming it as the birthplace of Tristan, the tragic lover of Iseult, which fixed the drowned land firmly in the literature of medieval chivalry.\n\nFishermen and Scillonians long claimed that the bells of the sunken churches could still be heard tolling beneath the sea on quiet days, and that fragments of walls and field-walls were sometimes glimpsed or snagged in nets between the islands. The folklore has a real geological shadow: the seabed of the area does preserve drowned land surfaces from prehistory, and the very name of the reef called the Seven Stones, between Land's End and Scilly, is said by tradition to mark a lost city — keeping the memory of Lyonesse alive on the western horizon."
     },
     {
+      "name": "Lí Ban of Lough Neagh",
+      "lat": 54.6152,
+      "lng": -6.4032,
+      "category": "water",
+      "region": "Lough Neagh, Northern Ireland",
+      "summary": "When a sacred well drowned her entire family and created Lough Neagh, the Ulster princess Lí Ban survived underwater for 300 years — half woman, half salmon — before surfacing in a fisherman's net and choosing to die a saint.",
+      "source": "https://en.wikipedia.org/wiki/L%C3%AD_Ban_(mermaid)",
+      "date_added": "2026-06-19",
+      "tags": [
+        "northern-ireland",
+        "county-antrim",
+        "lake",
+        "transformation",
+        "celtic",
+        "drowning",
+        "fish",
+        "sea"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/L%C3%AD_Ban_(mermaid)",
+        "https://www.irishcentral.com/roots/history/irelands-little-known-mermaid-saint",
+        "https://riverbannloughneagh.org/legends/",
+        "https://www.duchas.ie/en/cbes/4742043/4730378/4952273"
+      ],
+      "detail": "In the mythology of early Ireland, the formation of Lough Neagh — the largest lake in the British Isles, spreading across five Northern Irish counties — was bound up with the legend of Lí Ban. She was the daughter of Eochaidh mac Mairidh, a king of Ulster whose palace stood where the lake now lies. A sacred well on the estate had been left uncovered one night, and the water burst free in a great flood that killed Eochaidh and all his household. Lí Ban survived for a year in an air-locked chamber beneath the waves, listening to the world of fish and current, until she prayed to be transformed into their kind. The prayer was answered: from that day she swam as a salmon from the waist down, her upper body and face remaining human. Her lap-dog, companion through the years of isolation, was similarly transformed into an otter.\n\nFor three centuries Lí Ban roamed the seas between Ireland and Scotland, her singing said to be of unearthly beauty. In the time of St Comgall of Bangor (6th century), a monk named Beoan heard her angelic voice while out on the water near what is now Larne on the Antrim coast and reported it to the abbot. A party was sent to find her; Lí Ban agreed to come ashore at a place called Ollarba, was baptised Muirgen — meaning 'sea-born' — by a bishop, and died almost immediately, ascending to heaven as a saint. She had chosen the brevity of a Christian soul over another three hundred years of immortal swimming.\n\nThe legend is recorded in multiple early Irish annals and hagiographic sources, and the Dúchas Schools' Collection preserves oral variants gathered from County Antrim and Derry communities in the twentieth century. Lí Ban is venerated as a saint on 27 January in the Martyrology of Tallaght, one of the earliest Irish saints' calendars. Her legend is notable for bridging pagan and Christian tradition in a single narrative arc: she is simultaneously a water spirit whose origins lie in the pre-Christian sacred well cult, and a baptised saint who earns her place in heaven. Lough Neagh takes its Irish name Loch nEachach from her drowned father Eochaidh. The Seamus Heaney HomePlace in County Derry has featured the legend as part of its survey of Ulster's mythological heritage."
+    },
+    {
       "name": "Mabon ap Modron",
       "lat": 51.703,
       "lng": -2.904,
@@ -7548,6 +7646,31 @@
       ]
     },
     {
+      "name": "Owain Lawgoch",
+      "lat": 51.88,
+      "lng": -3.9402,
+      "category": "hero",
+      "region": "Carmarthenshire / Gwynedd, Wales",
+      "summary": "Wales's red-handed prince sleeps in a hidden cave with his warriors, sword across his knees, waiting for the trumpet call that will wake him to reclaim the kingdom — a 14th-century soldier whom prophecy refuses to let die.",
+      "source": "https://en.wikipedia.org/wiki/Owain_Lawgoch",
+      "date_added": "2026-06-19",
+      "tags": [
+        "wales",
+        "carmarthenshire",
+        "cave",
+        "battle",
+        "celtic",
+        "hero"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Owain_Lawgoch",
+        "https://www.grahamwatkins.info/post/2019/08/15/the-sleeping-prince-of-carreg-cennen",
+        "https://pantheon.org/articles/l/lawgoch.html",
+        "https://www.wales.com/about/history-and-heritage/welsh-traditions-myths-and-legends/welsh-myths-and-legends"
+      ],
+      "detail": "Owain ap Thomas ap Rhodri (d. 1378), known in Welsh as Owain Lawgoch — Owain of the Red Hand — was a legitimate great-nephew of Llywelyn the Last and the most credible claimant to the Principality of Wales for much of the fourteenth century. He spent his adult life as a mercenary commander of considerable reputation in the service of the French crown, leading expeditions against England and launching two abortive attempts to land in Wales with French backing. He was assassinated near Mortagne-sur-Gironde in 1378 by an English agent named John Lamb, hired specifically to remove him before he could land in Wales and ignite a rising.\n\nThe Welsh refused to accept his death as final. A sleeping-hero legend grew up around Owain that closely mirrors those attached to Fionn mac Cumhaill in Ireland and King Arthur in England. The most vivid version of the tradition was recorded in Cardiganshire: a farmer named Dafydd encountered a stranger who led him to a stone step beside a bush and told him to dig. Steps led down into a vast lamp-lit cave where a giant red-handed man lay asleep among silent warriors. The stranger identified the sleeper as Owain Lawgoch, 'who sleeps until the appointed time; when he wakes he will be king of the Britons.' A bell hung in the cave was not to be rung on pain of death. A lake at Aberllefenni in Gwynedd was historically known as Llyn Owain Lawgoch, and Carreg Cennen Castle in Carmarthenshire carries a separate oral tradition of a sleeping prince in its caves — the pin for this entry is placed there.\n\nThe legend draws specifically on the injustice of Owain's death by treachery — murdered by an assassin rather than killed in honest battle — to explain why his rest cannot be permanent. As a direct male-line descendant of the old Welsh royal house, he represented the unfulfilled promise of an independent Wales, and the sleeping-king tradition allowed that promise to persist across the centuries. The tradition is distinct from the better-known Owain Glyndŵr sleeping-king legend, which attaches to different sites and a different historical moment; Graham Watkins's study of the sleeping prince of Carreg Cennen is among the more recent scholarly examinations of the specifically Carmarthenshire version."
+    },
+    {
       "name": "Oweynagat",
       "lat": 53.797,
       "lng": -8.311,
@@ -7641,14 +7764,17 @@
       "lng": -5.122,
       "category": "location",
       "region": "Cornwall",
-      "summary": "Beneath these vast dunes lies the lost city of Langarrow, swallowed by the encroaching sands as divine punishment for the wickedness of its people. On quiet evenings, some say they can hear the muffled toll of church bells beneath the sand.",
+      "summary": "Beneath these vast Cornish dunes lies the lost city of Langarrow, swallowed by a divine sandstorm as punishment for the wickedness of its people. On stormy nights you can still hear the bells of its buried churches tolling underground.",
       "source": "https://en.wikipedia.org/wiki/Penhale_Sands",
       "date_added": "2026-06-03",
       "tags": [
         "church",
         "england",
-        "cornwall"
-      ]
+        "cornwall",
+        "coast",
+        "curse"
+      ],
+      "detail": "Penhale Sands — Peran Treth in Cornish, meaning St Piran’s Sands — is the most extensive dune system in Cornwall, stretching along the north coast between Perranporth and Holywell Bay. Beneath its shifting sand, legend holds, lies the lost city of Langarrow (also called Langona or Langorrac), a prosperous trading town that once stood where the dunes now rise. The story follows the archetype of the drowned or buried city punished for sin: Langarrow was wealthy, its people had grown decadent and cruel, and God sent a catastrophic sandstorm that raged for three days and three nights, burying the city and all its inhabitants under tons of wind-driven sand.\n\nThe number of churches claimed for Langarrow varies with the telling — five in some versions, seven in others — but all agree that the bells survived their burial. On stormy nights, when the wind drives the sand into new configurations, the bells of the lost churches are said to toll underground, their muffled ringing audible to anyone walking the dunes after dark. The legend has earned Langarrow comparisons to the Cornish Sodom and Gomorrah, and the moral structure of the tale — prosperity, wickedness, divine punishment, spectral remnant — places it firmly in the tradition of warning legends found along the coasts of Britain and Brittany.\n\nThe sands themselves are genuinely ancient. St Piran’s Oratory, dating from the sixth century and believed to be one of the oldest Christian sites in Britain, was buried by the advancing dunes and rediscovered in the nineteenth century before being reburied for its own protection. The oratory’s fate — a real building genuinely swallowed by sand — may have fed the Langarrow legend or drawn credibility from it. The Cornwall Heritage project and the Cornish Bird blog have both documented the tradition in detail. Whether Langarrow ever existed as a physical settlement remains unproven, but the legend has shaped the identity of Penhale Sands for centuries, turning a landscape of ecological and military significance into one of Cornwall’s most atmospheric folklore sites."
     },
     {
       "name": "Penhill Giant",
@@ -7667,6 +7793,31 @@
         "yorkshire"
       ],
       "detail": "The Penhill Giant haunted the long whaleback hill of Penhill above Wensleydale in the Yorkshire Dales, a brutal ogre who kept a pack of savage hounds and lorded it over the shepherds of the dale, seizing their flocks and crushing any who crossed him. The legend tells how his cruelty brought his downfall: when one of his hounds savaged a shepherd's child, or in other versions a maiden he had wronged, the giant met defiance at last.\n\nA local hermit or holy man is said to have foretold the giant's doom, and the monster, raging, perished — struck down, or swallowed by the earth, or destroyed by the curse his own brutality had earned. The story belongs to the rich seam of Yorkshire giant- and ogre-lore tied to particular hills, in which the looming landmark of Penhill is given a tyrant for a former master, and his fall becomes the dale's deliverance."
+    },
+    {
+      "name": "Penllyne Dragon",
+      "lat": 51.4565,
+      "lng": -3.358,
+      "category": "dragon",
+      "region": "Penllyne, Vale of Glamorgan, Wales",
+      "summary": "In the woods around Penllyne Castle, winged serpents covered in peacock-bright jewels terrorised farmyards and killed livestock within living memory of people alive in the 1890s. Marie Trevelyan collected the last known eyewitness accounts in 1909.",
+      "source": "https://archive.org/details/afl2317.0001.001.umich.edu",
+      "date_added": "2026-06-19",
+      "tags": [
+        "wales",
+        "vale-of-glamorgan",
+        "forest",
+        "serpent",
+        "treasure",
+        "celtic"
+      ],
+      "sources": [
+        "https://archive.org/details/afl2317.0001.001.umich.edu",
+        "https://karlshuker.blogspot.com/2012/07/peacock-plumed-winged-serpents-of.html",
+        "https://en.wikipedia.org/wiki/Marie_Trevelyan",
+        "https://www.academia.edu/123155037/Marie_Trevelyan_Folk_lore_and_Folk_stories_of_Wales_London_E_Stock_1909_"
+      ],
+      "detail": "The woods enclosing Penllyne Castle in the Vale of Glamorgan had, within the memory of elderly people alive in the 1890s, a reputation for being frequented by winged serpents. The folklorist Marie Trevelyan collected this tradition for her landmark volume Folk-Lore and Folk-Stories of Wales (1909), recording accounts from people whose parents and grandparents had encountered these creatures firsthand. The serpents were described as beautiful rather than monstrous: coiled in repose, their scaled bodies gave the impression of being set with jewels of every colour, and their crests, when spread in anger, sparkled with the iridescent splendour of a peacock's tail.\n\nAccording to Trevelyan's informants, the creatures were treated as real natural hazards rather than supernatural visitors. They were considered 'as bad as foxes for poultry' — a frank comparison with the most ordinary of farmyard pests — and the fathers and uncles of her elderly sources had actively hunted and killed them. Their territory was the wooded ravines and moorlands around the castle, and they were said to guard hoards of gold and gems buried in lonely places, a belief linking the Penllyne tradition to the wider European dragon mythology of treasure-guardianship. The last reported encounters dated to the early-to-mid 19th century, placing the creatures within the living-memory chain of people still alive when Trevelyan was writing.\n\nThe Penllyne dragon tradition is one of the more carefully sourced local dragon legends in the Welsh corpus. Trevelyan (1853–1922) was a rigorous collector who spent decades gathering material across Wales, and her attribution of the Penllyne accounts to named family traditions — 'his father and uncles had killed some of them' — gives the record a chain of custody unusual in creature folklore. The zoologist and cryptozoologist Karl Shuker has analysed the accounts in detail, noting that the physical description — plume-crested, jewel-scaled, aggressively territorial — is consistent across all Trevelyan's variants, suggesting stable oral transmission rather than individual embellishment. The full text of Folk-Lore and Folk-Stories of Wales is freely available via the Internet Archive. The tradition is distinct from Y Ddraig Goch (the national dragon symbol) and from the named dragon traditions of north Wales; the Penllyne serpents lived alongside their human neighbours rather than arriving as legendary visitors from another world."
     },
     {
       "name": "Petronilla de Meath",
@@ -8061,7 +8212,7 @@
       "lng": -3.982,
       "category": "deity",
       "region": "Ceredigion, Wales",
-      "summary": "The third daughter of the giant Plynlimon, who raced her sisters Hafren and Gwy to the sea. She became the River Rheidol — shorter and wilder than her sisters, tumbling through gorges to Aberystwyth. Of the three, she is the least known but perhaps the most spirited.",
+      "summary": "The wildest of Plynlimon’s three daughters — she scorned the long roads her sisters took and tore straight down the mountain to Cardigan Bay, arriving first and leaving a valley of cataracts behind her.",
       "source": "https://en.wikipedia.org/wiki/River_Rheidol",
       "date_added": "2026-06-03",
       "tags": [
@@ -8069,7 +8220,8 @@
         "sea",
         "wales",
         "ceredigion"
-      ]
+      ],
+      "detail": "In the folklore of mid Wales, the Afon Rheidol is the third and youngest daughter of the mountain giant Plynlimon, sister to Hafren (the Severn) and Gwy (the Wye). When their father challenged the three river spirits to race to the sea — promising each the territory she could cover in a single day as her dowry — Rheidol chose the boldest and most direct strategy. She flung herself straight west down the mountainside, carving a steep and narrow valley through rock and forest, and reached Cardigan Bay at the place now called Aberystwyth before either of her sisters had even cleared the foothills.\n\nHer victory came at a cost: her territory was the smallest of the three, a mere twenty-four miles of mountain stream compared to Hafren’s 220-mile empire or Gwy’s graceful 134-mile border journey. But what Rheidol lacked in length she made up in ferocity. The valley she carved is one of the steepest river gorges in Wales, dropping from the boggy plateau of Plynlimon at over 600 metres to sea level in a succession of falls and rapids that have made the Rheidol a byword for wild water. The Vale of Rheidol Railway, built in 1902 to serve the lead mines of Devil’s Bridge, follows her course and gives passengers a visceral sense of the gradient the legend describes.\n\nThe three-sisters legend was first recorded by the Celtic scholar John Rhŷs from oral tradition in 1840s Ceredigion. Some versions substitute the Ystwyth for Rheidol as the third sister — both rivers rise on Plynlimon and reach the sea near Aberystwyth — but the Rheidol variant is the more widely told, perhaps because her short, dramatic descent makes the better story. The legend gives each river a personality — Hafren the ambitious, Gwy the contemplative, Rheidol the impetuous — and in doing so transforms the hydrology of central Wales into a family drama."
     },
     {
       "name": "Rhiannon",
@@ -8222,6 +8374,31 @@
         "england",
         "yorkshire"
       ]
+    },
+    {
+      "name": "Sack of Baltimore",
+      "lat": 51.4782,
+      "lng": -9.3706,
+      "category": "pirate",
+      "region": "Baltimore, County Cork, Ireland",
+      "summary": "Just after midnight on 20 June 1631, over 200 Algerian corsairs descended on the sleeping village of Baltimore and carried 107 people into North African slavery — the largest Barbary pirate raid ever launched on British or Irish soil.",
+      "source": "https://en.wikipedia.org/wiki/Sack_of_Baltimore",
+      "date_added": "2026-06-19",
+      "tags": [
+        "ireland",
+        "county-cork",
+        "pirate",
+        "sea",
+        "coast",
+        "abduction"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sack_of_Baltimore",
+        "https://historyireland.com/from-baltimore-to-barbary-the-1631-sack-of-baltimore/",
+        "https://www.irishcentral.com/roots/history/sack-baltimore-irelands-pirate",
+        "https://www.baltimore.ie/the-sack-of-baltimore"
+      ],
+      "detail": "The attack was planned with local knowledge. A Cork fisherman named John Hackett, whose boat had been captured by the corsairs of Algiers, agreed — willingly or under duress — to guide the fleet of Murad Reis the Younger (a Dutch-born convert to Islam in the service of the Regency of Algiers) through the channels of Roaringwater Bay to the village of Baltimore on the West Cork coast. More than two hundred raiders rowed ashore under cover of darkness and swept through the sleeping settlement, carrying off men, women and children. In less than an hour it was done. The fisherman Hackett was returned to Baltimore by the departing corsairs and subsequently hanged from the clifftop above the village for his role in guiding the attack.\n\nOf the 107 people seized that night, very few were ever seen in Ireland again: at most three women were ransomed back over the following fourteen years. The rest disappeared into the slave markets of Algiers and Salé — men to the galley benches, women to domestic servitude. A darker conspiracy theory documented by historian Des Ekin in The Stolen Village (O'Brien Press, 2006) suggests that a wealthy local landowner, Sir Walter Coppinger, may have bribed the corsairs to eliminate a rival English colony, though definitive proof is lacking. The village never fully recovered; the English settlers largely abandoned it, and the original English character of Baltimore faded back into the Gaelic landscape.\n\nThe sack of Baltimore left its mark deep in the Irish consciousness. The poet Thomas Davis immortalised it in the ballad 'The Sack of Baltimore' (1844): 'The yell of Allah breaks above the prayer, and shriek, and roar.' The event remains the largest Barbary coast raid on mainland Britain or Ireland on record, and its combination of maritime horror, betrayal, and lost community has given it the character of a national wound that time cannot quite close. It is treated in depth in History Ireland (the leading Irish historical journal), in Des Ekin's book-length account, and in the official heritage interpretation at Baltimore harbour."
     },
     {
       "name": "Saint Edmund and the Wolf",
@@ -8439,6 +8616,29 @@
         "lewis"
       ],
       "detail": "Seonaidh — anglicised as Shony or Shoney — was a sea-spirit or sea-god of the Isle of Lewis in the Outer Hebrides, propitiated by the islanders to bring a good harvest from the shore. Our knowledge of him rests above all on the account of the traveller Martin Martin, a Lewisman himself, who in his late-17th-century Description of the Western Islands of Scotland recorded the ritual offering made to Seonaidh in his own lifetime, before the Reformed Church suppressed it.\n\nBy Martin's account the people of the parish gathered at Hallowtide at the old church of St Mulvay (Eoropie, in the far north of Lewis). Each family brought malt, which was brewed into ale, and one man was sent to wade out into the sea up to his waist carrying a cup of it. There he poured the ale into the waves and called aloud to Seonaidh, asking the spirit to send a plentiful crop of seaware — the seaweed cast up by winter storms, which the islanders spread on their thin fields as fertiliser. The company then returned to the church, where after a moment's silence by a candle on the altar they put out the light and spent the night drinking, dancing and singing in the fields.\n\nThe rite is a remarkable survival of pre-Christian sea-worship clinging on within the forms of the old church calendar, and it scandalised the ministers, who stamped it out. Seonaidh endures as one of the clearest recorded examples of a Hebridean offering to the sea itself — a bargain with the ocean for the gift of the seaweed on which the islanders' crops, and so their survival, depended."
+    },
+    {
+      "name": "Seven Whistlers",
+      "lat": 52.51,
+      "lng": -2.082,
+      "category": "beast",
+      "region": "Black Country / Worcestershire, England",
+      "summary": "Seven supernatural birds cry together only once in a generation — and when they do, Black Country miners refuse to go underground that day. Their shriek has foretold every great mining disaster in the Midlands within living memory.",
+      "source": "https://en.wikipedia.org/wiki/Seven_Whistlers",
+      "date_added": "2026-06-19",
+      "tags": [
+        "england",
+        "worcestershire",
+        "bird",
+        "death-omen",
+        "spectral"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Seven_Whistlers",
+        "https://archive.org/details/folkloreofherefo00leat",
+        "https://en.wikipedia.org/wiki/Charles_Swainson_(ornithologist)"
+      ],
+      "detail": "The Seven Whistlers are a collective supernatural entity in the folklore of the English Midlands and Welsh Marches: seven birds that fly together in darkness, emitting an eerie, plaintive cry. The tradition is particularly strong in the Black Country and Worcestershire mining communities, where it functioned as a genuine working warning system — colliers who heard the Whistlers overnight refused to descend the pit the following morning, and no foreman's authority could override the omen. The folklorist Ella Mary Leather documented the tradition in The Folk-Lore of Herefordshire (1912), recording that miners in the border country held the belief with complete conviction; a man who went underground on a Whistlers night was considered to have courted his own death.\n\nThe identities assigned to the birds vary by district. In some Worcestershire accounts the Whistlers are the souls of Jews who had been present at the Crucifixion and were condemned to eternal aerial wandering. In other versions they are the souls of unbaptised children, or of drowned sailors seeking their way to land. The Victorian naturalist Charles Swainson, in The Folk Lore and Provincial Names of British Birds (1885), noted that in Lancashire and the Midlands the Whistlers were frequently identified with golden plover or curlew — birds whose massed flight-calls at night are genuinely unsettling to hear in the dark. Swainson also recorded a tradition from Staffordshire where only six of the seven are heard on any given night; if the seventh joins its companions, it will signal the end of the world.\n\nThe supernatural number seven links the Whistlers to a broader tradition of numerated omens in British folklore, but the Midlands version is grounded in an industrial context that gives it a particular edge. It was not a legend told in drawing rooms; it was a practical working rule with lives attached to it. The tradition appears in Notes and Queries (vol. IV, 1851) as a living and widely believed custom, and Katharine Briggs treats it in A Dictionary of British Folk-Tales (1970–71). The geographic range of belief extends from the Black Country into Worcestershire, Staffordshire, Shropshire, and the Vale of Gloucester, making the Seven Whistlers one of the most widely distributed named supernatural entities in the English Midlands."
     },
     {
       "name": "Shellycoat",
@@ -8900,7 +9100,7 @@
       "lng": -4.5799,
       "category": "location",
       "region": "Isle of Man",
-      "summary": "A roofless medieval chapel ruin at the foot of Greeba Mountain on the Isle of Man, traditionally haunted by a Buggane — a hideous shape-shifting demon that demolished the roof each time it was built, until the tailor Timothy (Teeval) outran it with the finished cloth under his arm.",
+      "summary": "A roofless chapel at the foot of Greeba Mountain where a monstrous Buggane tore off every roof ever built — until a young tailor sewed a pair of breeches inside the church at midnight and outran the creature to consecrated ground.",
       "source": "https://en.wikipedia.org/wiki/St_Trinian%27s_Church",
       "date_added": "2026-06-03",
       "tags": [
@@ -8910,7 +9110,8 @@
         "church",
         "haunting",
         "isle-of-man"
-      ]
+      ],
+      "detail": "St Trinian’s is the roofless ruin of a medieval chapel at the foot of Greeba Mountain in the parish of Marown, Isle of Man, dedicated to the fourth-century Pictish saint Ninian. Known in Manx as a keeil brisht — a broken church — it owes its permanent rootlessness to one of the island’s most celebrated folk tales. A Buggane, a huge shape-shifting ogre that lived inside Greeba Mountain, had sworn that the church would never be completed. Every time builders finished the roof, the creature tore it off overnight, flinging timbers across the countryside and bellowing with fury.\n\nAfter several failed attempts at roofing, a young tailor named Timothy Clucas wagered he could break the curse. He sat alone inside the church at nightfall with needle and thread, determined to complete a pair of breeches before the Buggane came. As the last stitches went in, the ground shook and the creature burst through the floor — vast, tusked, and furious. Timothy snatched up the breeches and sprinted for Marown Church, whose consecrated ground the Buggane could not enter. The ogre, maddened at losing its prey, tore off its own head and hurled it over the churchyard wall, where it burst at the tailor’s feet in a shower of sparks. The Buggane was never seen again, but the church at St Trinian’s was never re-roofed either.\n\nThe tale appears in Sophia Morrison’s Manx Fairy Tales (1911), the foundational collection of Manx folklore, and is retold by Culture Vannin, the Isle of Man’s official cultural body. The historical reason for the church’s unfinished state is probably more prosaic — construction likely halted around 1343 when William Montagu conquered the island and expelled the Scottish monks of Whithorn Priory who had been building it — but the Buggane legend has long since displaced the political explanation in popular memory. The ruin stands beside the A1 Douglas-to-Peel road and remains one of the most visited folklore sites on the island."
     },
     {
       "name": "Stanton Drew Stone Circles",
@@ -8953,15 +9154,18 @@
       "lng": -1.826,
       "category": "location",
       "region": "Wiltshire",
-      "summary": "Raised by giants according to Geoffrey of Monmouth, or conjured by Merlin from Ireland — Stonehenge defies rational explanation. For five thousand years it has aligned with the solstice sun. Druids still gather here at midsummer.",
+      "summary": "Raised by giants according to Geoffrey of Monmouth, or conjured by Merlin from Ireland — Stonehenge defies rational explanation. For five thousand years it has been Britain’s supreme monument, and for nearly a thousand its legends have made it Merlin’s stage.",
       "source": "https://en.wikipedia.org/wiki/Stonehenge",
       "date_added": "2026-06-03",
       "tags": [
         "celtic",
         "arthurian",
         "england",
-        "wiltshire"
-      ]
+        "wiltshire",
+        "standing-stones",
+        "giant"
+      ],
+      "detail": "The folklore of Stonehenge is dominated by Geoffrey of Monmouth’s account in his twelfth-century Historia Regum Britanniae. According to Geoffrey, the stones originally formed a circle called the Giants’ Dance (Chorea Gigantum) on Mount Killaraus in Ireland, where they had been raised by giants who brought them from the farthest shores of Africa for their healing properties — water poured over the stones and collected in baths below could cure any ailment. When the fifth-century British king Aurelius Ambrosius wished to build a fitting memorial to the Celtic nobles massacred by the Saxons at Salisbury, the wizard Merlin advised him to fetch the Giants’ Dance from Ireland. An army of fifteen thousand men under Uther Pendragon sailed to Ireland but could not shift the stones by force; Merlin dismantled them by his arts, transported them across the sea, and reassembled them on Salisbury Plain in a single night.\n\nGeoffrey’s narrative was not idle invention — or at least, modern archaeology has given it an uncanny resonance. The bluestones at Stonehenge’s inner ring were quarried in the Preseli Hills of Pembrokeshire, over 150 miles away, and recent excavations at Waun Mawn have identified a dismantled stone circle whose empty sockets match the Stonehenge bluestones almost exactly. Whether the legend preserves a genuine folk memory of long-distance stone transport or whether Geoffrey simply guessed well remains one of British archaeology’s most provocative open questions.\n\nBeyond Geoffrey, Stonehenge has accumulated layers of folklore. The Heel Stone — the outlier that marks the midsummer sunrise — is said to bear the imprint of the Devil’s heel after he threw it at a friar who had recognised him in disguise. The stones are popularly believed to be uncountable: anyone who counts them twice will get a different number each time. Defoe recorded this tradition in the 1720s, and it persists in local belief. The site is managed by English Heritage and draws over a million visitors a year, making it the most visited prehistoric monument in Europe."
     },
     {
       "name": "Stoor Worm",
@@ -9705,6 +9909,32 @@
       ]
     },
     {
+      "name": "The Hunt of Slieve Gullion",
+      "lat": 54.1228,
+      "lng": -6.4328,
+      "category": "fairy",
+      "region": "Slieve Gullion, County Armagh, Northern Ireland",
+      "summary": "Milucra — a fairy woman jealous of her sister's hold over Fionn mac Cumhaill — enchanted the summit lake of Slieve Gullion so that anyone who swam in it would instantly age. She tricked Fionn into fetching a golden ring from the water; he emerged white-haired and bent.",
+      "source": "https://en.wikipedia.org/wiki/Slieve_Gullion",
+      "date_added": "2026-06-19",
+      "tags": [
+        "northern-ireland",
+        "county-armagh",
+        "lake",
+        "mountain",
+        "transformation",
+        "celtic",
+        "trickery"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Slieve_Gullion",
+        "https://voicesfromthedawn.com/slieve-gullion/",
+        "https://wildswim.ie/cursed-lake-slieve-gullion/",
+        "https://www.newgrange.com/slieve-gullion.htm"
+      ],
+      "detail": "Slieve Gullion in south County Armagh is one of the most mythologically dense mountains in Northern Ireland: a ring of hills surrounds a volcanic plug where a passage tomb sits beside a small, dark summit lake. That lake — Loch Caillighe Birra, the Hag's Lake — is the setting for the legend known as the Hunt of Slieve Gullion (Feis Tighe Conáin in Irish). Two sisters, Áine and Milucra, both desire the hero Fionn mac Cumhaill. Knowing that Áine has vowed never to marry a grey-haired man, the jealous Milucra secretly enchants the summit lake so that any man who swims in its water will emerge ancient and white.\n\nMilucra presents herself to Fionn at the lakeside in the guise of a weeping woman, lamenting that her golden ring has fallen into the water. Fionn, ever chivalrous, dives in to retrieve it. He emerges — ring in hand — as a bent old man with white hair and withered limbs. His warriors, the Fianna, surround Milucra and force her to restore him from the cornucopia she carries; she produces a restorative drink that returns his youth and strength, but his hair never reverts to its original dark colour. This, the legend says, is the origin of his name: Fionn, meaning 'white' or 'fair,' had been a battle-name, but after Slieve Gullion it became permanent.\n\nIn several versions Milucra is identified as an aspect of the Cailleach Bhéara, the ancient hag of winter who haunts both Irish and Scottish mountain lore. The identification is geographically grounded: the passage tomb on the summit is already known as Calliagh Birra's House, and the ring of hills encircling the mountain is explicitly understood in tradition as the Cailleach's domain. Voices from the Dawn, which surveys Ireland's mythological heritage sites with academic rigour, provides detailed treatment of both the archaeological and mythological dimensions of Slieve Gullion. The summit lake retains a reputation for cold and strangeness, and wild-swimming accounts note that the water is unusually dark and frigid even in high summer."
+    },
+    {
       "name": "The Lady of the Lake",
       "lat": 53.0707,
       "lng": -4.042,
@@ -10117,6 +10347,29 @@
       ]
     },
     {
+      "name": "Tichborne Dole",
+      "lat": 51.0648,
+      "lng": -1.194,
+      "category": "hero",
+      "region": "Tichborne, Hampshire, England",
+      "summary": "Lady Mabella Tichborne, dying on her bed, crawled 23 acres before her torch burned out to establish a charity for the poor — then cursed her family: if the dole ever ceased, seven sons then seven daughters would be born, and the Tichborne name would die. In 1796 it ceased. Seven sons had already been born.",
+      "source": "https://en.wikipedia.org/wiki/Tichborne_Dole",
+      "date_added": "2026-06-19",
+      "tags": [
+        "england",
+        "hampshire",
+        "curse",
+        "prophecy"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Tichborne_Dole",
+        "https://www.historic-uk.com/CultureUK/The-Tichborne-Dole/",
+        "https://tradfolk.co/customs/customs-customs/the-tichborne-dole/",
+        "https://calendarcustoms.com/articles/tichborne-dole/"
+      ],
+      "detail": "The Tichborne Dole is one of England's most fully documented curse legends, rooted in a medieval Hampshire tradition that has been continuously enacted since the thirteenth century. Lady Mabella Tichborne, bedridden with a wasting illness, implored her husband Sir Roger to set aside land whose corn would feed the poor of the parish every year after her death. Sir Roger, far from moved, agreed to give as much land as she could crawl around before a torch she was holding burned out — a challenge clearly designed to fail. Lady Mabella had herself carried onto the fields and, with extraordinary determination, crawled around a twenty-three-acre field that is still known today as 'The Crawls,' just north of Tichborne village near Alresford in Hampshire.\n\nAs she completed her crawl — torch still burning — she pronounced a curse of remarkable precision on any generation of Tichbornes that dared stop the annual dole. A family that withheld it would first produce seven sons, then seven daughters; after that generation, the Tichborne name would die out and the ancient house would fall. For over five centuries the dole ran without interruption, distributed every Lady Day (25 March) as a gallon of flour to each adult and half a gallon to each child of Tichborne, Cheriton, and Lane End. Then, in 1796, local magistrates banned the distribution on the grounds that it was attracting unruly crowds and disrupting public order.\n\nThe curse unfolded almost immediately. Sir Henry Tichborne, 8th Baronet, who had allowed the dole to lapse, was himself the eldest of seven sons. He fathered seven daughters and no male heir. Alarmed by the apparent activation of Lady Mabella's prediction, the family resumed the dole in the early nineteenth century — and it has not been interrupted since. The Tichborne Dole is documented in the Oxford Reference Dictionary of English Folklore, on the Historic UK website, in the Tradfolk custom database, and in Calendar Customs. The annual ceremony continues today, with a parish priest blessing the flour before distribution; the field called The Crawls remains named in Lady Mabella's memory, and the curse's precise fulfilment — seven sons, seven daughters — sets the tradition apart from mere philanthropy and gives it the character of a living supernatural contract."
+    },
+    {
       "name": "Tiddy Mun",
       "lat": 53.508,
       "lng": -0.726,
@@ -10507,6 +10760,32 @@
         "england",
         "cumbria"
       ]
+    },
+    {
+      "name": "Vanishing Keepers of the Flannan Isles",
+      "lat": 58.292,
+      "lng": -7.5875,
+      "category": "ghost",
+      "region": "Flannan Isles, Outer Hebrides, Scotland",
+      "summary": "Three lighthouse keepers vanished from the remote Flannan Isles on 15 December 1900 — clocks stopped, meals untouched, one oilskin left behind. Subsequent keepers reported voices in the wind calling the dead men's names.",
+      "source": "https://en.wikipedia.org/wiki/Flannan_Isles",
+      "date_added": "2026-06-19",
+      "tags": [
+        "scotland",
+        "outer-hebrides",
+        "island",
+        "sea",
+        "haunting",
+        "vanishing",
+        "spectral"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Flannan_Isles",
+        "https://nrscotland.gov.uk/learning-and-events/research-guides/lighthouses/the-mystery-of-the-flannan-islands-lighthouse",
+        "https://www.history.co.uk/articles/the-flannan-isle-mystery-the-three-lighthouse-keepers-who-vanished",
+        "https://www.iflscience.com/the-flannan-isle-mystery-what-happened-to-three-lighthouse-keepers-123-years-ago-68462"
+      ],
+      "detail": "The Flannan Isles — seven tiny rocks about 32 kilometres west of Lewis in the Outer Hebrides — were known to local fishermen as the Seven Hunters and regarded with unease long before the lighthouse was built. Celtic monks had used the islands as a remote hermitage, and island tradition held that they were haunted: sailors would remove their hats on approaching and observe protective rituals to avoid ill fortune. When the Northern Lighthouse Board completed the Eilean Mòr lighthouse in 1899, the island's supernatural reputation followed it into the modern age.\n\nOn 26 December 1900, the relief vessel Hesperus arrived to relieve the crew and found the lighthouse empty. The keepers James Ducat, Thomas Marshall, and William MacArthur had vanished sometime around 15 December — the date a passing steamer had noted the light was out. Inside, the table was set for a meal, food was half-prepared, and the clocks had stopped. One of the three oilskins hung still on its hook, suggesting at least one man had gone outside in conditions for which he was underdressed. The last log entry, dated 13 December, described extraordinary storm conditions and an atmosphere of great fear among the men — yet meteorological records for that day show the weather was calm. The official inquiry concluded the most probable explanation was that two men had gone to secure equipment on the western cliffs and were swept away by a rogue wave, with the third following to help them and perishing in turn.\n\nThe official explanation has done little to diminish the legend. Wilfred Gibson's 1912 poem 'Flannan Isle' gave the event its definitive literary shape, emphasising the unearthly stillness of the abandoned lighthouse. Later keepers stationed on Eilean Mòr reported hearing voices in the wind calling the names of the three dead men — an aural haunting rooted in the older supernatural character of the islands. The National Records of Scotland hold the official inquiry documents and provide an authoritative account of the historical facts. The mystery of the three vanishing keepers remains officially unresolved and the Flannan Isles continue to be regarded as among the most haunted maritime sites in British waters."
     },
     {
       "name": "Veasta",
@@ -10944,6 +11223,31 @@
         "isle-of-man"
       ],
       "detail": "Slieau Whallian, a hill above St John's in the Isle of Man, was traditionally used as the site of a brutal ordeal for people accused of witchcraft. According to the story collected by folklorist Sophia Morrison in her Manx Fairy Tales (1911), a suspected witch would be sealed inside a barrel lined on the inside with sharp iron spikes, and the barrel would then be sent rolling from the summit to the bottom of the hill.\n\nIf the accused survived the descent — torn by the spikes and battered by the fall — they were put to death anyway, the ordeal serving only to 'confirm' their guilt rather than offer any real chance of escape. The same source records that this method was used on 'many other persons of both sexes' at this spot, not only women.\n\nFor generations afterwards, islanders pointed to a bare scar running down the steep slope of Slieau Whallian where, it was said, grass would never grow again — known locally as 'the Witch's Way'. Local tradition added a final, eerie detail: that on the anniversary of her death, the screams of one executed witch could still be heard carried on the wind down the hillside."
+    },
+    {
+      "name": "Witch of Wookey Hole",
+      "lat": 51.2284,
+      "lng": -2.672,
+      "category": "witch",
+      "region": "Wookey Hole, Somerset, England",
+      "summary": "A jilted woman cursed every love match she could see from her cave in the Mendip Hills — until a monk from Glastonbury blessed the underground river and petrified her where she stood. The stalactite is still there.",
+      "source": "https://en.wikipedia.org/wiki/Wookey_Hole_Caves",
+      "date_added": "2026-06-19",
+      "tags": [
+        "england",
+        "somerset",
+        "cave",
+        "curse",
+        "love",
+        "revenge"
+      ],
+      "sources": [
+        "https://en.wikipedia.org/wiki/Wookey_Hole_Caves",
+        "https://www.wookey.co.uk/wookey-hole-witch",
+        "https://medievalhistory.info/the-witch-of-wookey-hole/",
+        "https://www.icysedgwick.com/witch-of-wookey-hole/"
+      ],
+      "detail": "The cave system at Wookey Hole in the Mendip Hills has been occupied by humans since the Palaeolithic, but the legend that defines it is medieval: a witch, said to have been jilted in love as a young woman, retreated to the innermost chambers of the caves and turned her bitterness outward. From her stone lair above the subterranean River Axe she laid curses on the young couples of the surrounding village, blighting romances, souring betrothals, and ensuring the happiness she had been denied would not grow for others. Cattle sickened; marriages failed; the witch's malice was particular about its targets but universal in its radius.\n\nThe community's remedy came from Glastonbury Abbey, whose monks had a reputation for practical supernatural intervention. A monk — sometimes given as a young man who had himself suffered from the witch's interference in his own courtship — tracked her into the caves and followed her to a dark corner beside the underground river. He blessed the water and splashed it on the lurking figure; instantly, the witch was turned to stone, her form preserved in the mineral calcite that the cave's limestone geology continuously deposits. The stalactite formation she became is still pointed out to visitors as the Witch of Wookey Hole, a roughly human silhouette in the gloom. A smaller stone nearby is said to be her sleeping dog.\n\nThe first firm written reference to a witch in the caves appears in a manuscript compiled by Bulstrode Whitelocke in 1628, which mentions 'the witch of Ochies Hole.' Excavations by Herbert Balch in 1912 unearthed a Romano-British female skeleton in the cave — buried with a goat's skull, a knife, and a polished stalagmite ball — which popular accounts have since identified as the 'real witch,' though the forensic evidence is consistent with a range of Romano-British burial practices. The skeleton is held by the Wells and Mendip Museum. The Wookey Hole Caves visitor attraction, which has operated commercially since the Victorian era, maintains the witch legend as the centre of its public interpretation, and the site's official account closely follows the 17th-century manuscript record."
     },
     {
       "name": "Witch's Stone of Westleton",

@@ -1578,43 +1578,199 @@
       }
     },
     "William Kidd": {
-      "priority": 106
+      "priority": 106,
+      "image": "legend-images/william-kidd-hero.jpg",
+      "alt": "Captain William Kidd standing on the rain-wet deck of a seventeenth-century privateer off the Scottish coast",
+      "caption": "A visual interpretation of Captain Kidd before piracy and privateering became inseparable in legend",
+      "map_title": "Dundee and the North Atlantic",
+      "section_heading": "The privateer accused of piracy",
+      "pullquote": "He was sent to hunt pirates and returned accused of piracy himself.",
+      "facts": {
+        "Tradition": "Scottish maritime lore",
+        "Type": "Privateer and alleged pirate",
+        "Setting": "Dundee and the Atlantic",
+        "Motif": "Buried treasure and disputed guilt"
+      }
     },
     "Oilliphéist": {
-      "priority": 107
+      "priority": 107,
+      "image": "legend-images/oillipheist-hero.jpg",
+      "alt": "The vast black-scaled Oilliphéist forcing a new river channel through rain-soaked Irish bogland",
+      "caption": "A visual interpretation of the Oilliphéist carving the course of the River Shannon",
+      "map_title": "River Shannon, Ireland",
+      "section_heading": "The great beast in the land",
+      "pullquote": "Its enormous body writhing through the limestone carved the course of the great river as it went.",
+      "facts": {
+        "Tradition": "Irish mythology",
+        "Type": "Primordial serpent",
+        "Setting": "River Shannon",
+        "Motif": "Landscape shaped by a monster"
+      }
     },
     "Enfield Poltergeist": {
-      "priority": 108
+      "priority": 108,
+      "image": "legend-images/enfield-poltergeist-hero.jpg",
+      "alt": "A wooden chair and household objects moving inexplicably in an empty 1970s north-London living room",
+      "caption": "A restrained visual interpretation of the reported disturbances in the Enfield house",
+      "map_title": "Enfield, London",
+      "section_heading": "The house on Green Street",
+      "pullquote": "The family described knockings, furniture that slid and overturned, and objects that flew across rooms.",
+      "facts": {
+        "Tradition": "Modern British ghost lore",
+        "Type": "Poltergeist case",
+        "Setting": "Enfield, 1977-1979",
+        "Motif": "Unexplained domestic disturbance"
+      }
     },
     "Glastonbury Holy Thorn": {
-      "priority": 109
+      "priority": 109,
+      "image": "legend-images/glastonbury-holy-thorn-hero.jpg",
+      "alt": "A weathered hawthorn flowering in frost on Wearyall Hill with Glastonbury Tor beyond the winter mist",
+      "caption": "A visual interpretation of the Glastonbury Holy Thorn flowering at Christmas",
+      "map_title": "Glastonbury, Somerset",
+      "section_heading": "The thorn that flowers twice",
+      "pullquote": "Joseph of Arimathea's staff took root as a hawthorn that flowers both at Christmas and in spring.",
+      "facts": {
+        "Tradition": "Christian legend",
+        "Type": "Miraculous tree",
+        "Setting": "Glastonbury",
+        "Motif": "Winter flowering"
+      }
     },
     "Mersey Mermaid": {
-      "priority": 110
+      "priority": 110,
+      "image": "legend-images/mersey-mermaid-hero.jpg",
+      "alt": "A dark-haired mermaid watching an approaching storm from tidal rocks in the Mersey estuary",
+      "caption": "A visual interpretation of the Mersey Mermaid as a warning from the deep",
+      "map_title": "Mersey Estuary",
+      "section_heading": "The warning in the tide",
+      "pullquote": "The sea is beautiful and generous but never to be trusted.",
+      "facts": {
+        "Tradition": "North-west English maritime lore",
+        "Type": "Mermaid",
+        "Setting": "Mersey Estuary",
+        "Motif": "Storm omen and dangerous gift"
+      }
     },
     "Denbigh Dragon": {
-      "priority": 111
+      "priority": 111,
+      "image": "legend-images/denbigh-dragon-hero.jpg",
+      "alt": "Sion y Bodiau facing the Denbigh Dragon outside the castle great hall in driving rain",
+      "caption": "A visual interpretation of Sion y Bodiau confronting the Denbigh Dragon",
+      "map_title": "Denbigh Castle, Wales",
+      "section_heading": "The dragon in the great hall",
+      "pullquote": "He drove his broadsword into the unscaled skin at the base of the dragon's wing.",
+      "facts": {
+        "Tradition": "Welsh local legend",
+        "Type": "Castle dragon",
+        "Setting": "Denbigh Castle",
+        "Motif": "The hidden weak spot"
+      }
     },
     "Du Sith": {
-      "priority": 112
+      "priority": 112,
+      "image": "legend-images/du-sith-hero.jpg",
+      "alt": "The black-clad archer Du Sith drawing his bow above a rain-swept battlefield on Islay",
+      "caption": "A visual interpretation of Du Sith at the Battle of Traigh Ghruinneard",
+      "map_title": "Isle of Islay, Scotland",
+      "section_heading": "The Black Elf of Islay",
+      "pullquote": "A sinister black-clad archer of supernatural skill decided the day from concealment.",
+      "facts": {
+        "Tradition": "Hebridean fairy lore",
+        "Type": "Malevolent fairy archer",
+        "Setting": "Islay, 1598",
+        "Motif": "The otherworld in clan warfare"
+      }
     },
     "Osmington White Horse": {
-      "priority": 113
+      "priority": 113,
+      "image": "legend-images/osmington-white-horse-hero.jpg",
+      "alt": "The chalk figure of King George III on horseback cut across Osmington Hill above Weymouth Bay",
+      "caption": "A visual interpretation of the Osmington White Horse being cut into the Dorset hillside",
+      "map_title": "Osmington Hill, Dorset",
+      "section_heading": "The king riding from Weymouth",
+      "pullquote": "The mounted figure has looked out across Weymouth Bay since 1808.",
+      "facts": {
+        "Tradition": "English hill-figure lore",
+        "Type": "Chalk geoglyph",
+        "Setting": "Osmington Hill",
+        "Created": "1808"
+      }
     },
     "Havelok the Dane": {
-      "priority": 114
+      "priority": 114,
+      "image": "legend-images/havelok-the-dane-hero.jpg",
+      "alt": "Havelok sleeping in a fisherman's house as a small golden flame rises from his mouth and Goldborough watches",
+      "caption": "A visual interpretation of Goldborough discovering Havelok's royal nature",
+      "map_title": "Grimsby, Lincolnshire",
+      "section_heading": "The flame and the golden cross",
+      "pullquote": "At night Goldborough saw a miraculous flame issuing from her sleeping husband's mouth.",
+      "facts": {
+        "Tradition": "Middle English romance",
+        "Type": "Exiled prince and hero",
+        "Setting": "Grimsby",
+        "Motif": "Hidden royal identity"
+      }
     },
     "Hagg Worm": {
-      "priority": 115
+      "priority": 115,
+      "image": "legend-images/hagg-worm-hero.jpg",
+      "alt": "A huge dark-scaled Hagg Worm coiled in a rain-soaked wooded gully on the North Yorkshire Moors",
+      "caption": "A visual interpretation of the Hagg Worm in its moorland lair",
+      "map_title": "North Yorkshire Moors",
+      "section_heading": "The wyrm in the hagg",
+      "pullquote": "Something old and dangerous might still be coiled in the wild, sucking bogs of the haggs.",
+      "facts": {
+        "Tradition": "Northern English dragon lore",
+        "Type": "Venomous wingless wyrm",
+        "Setting": "Moorland gullies",
+        "Motif": "The monster bound to the land"
+      }
     },
     "Mari Lwyd": {
-      "priority": 116
+      "priority": 116,
+      "image": "legend-images/mari-lwyd-hero.jpg",
+      "alt": "A lantern-lit Mari Lwyd party carrying a ribboned horse skull to the door of a Welsh stone cottage",
+      "caption": "A visual interpretation of the Mari Lwyd winter wassailing custom",
+      "map_title": "South Wales",
+      "section_heading": "The horse at the door",
+      "pullquote": "The party trades verses with householders before being admitted for food, drink, and seasonal chaos.",
+      "facts": {
+        "Tradition": "Welsh winter custom",
+        "Type": "Wassailing procession",
+        "Setting": "South Wales",
+        "Motif": "Ritual challenge and hospitality"
+      }
     },
     "Changeling": {
-      "priority": 117
+      "priority": 117,
+      "image": "legend-images/changeling-hero.jpg",
+      "alt": "An old farmhouse cradle holding an uncanny substitute woven from roots, moss and cloth beside an open window",
+      "caption": "A symbolic visual interpretation of the changeling belief",
+      "map_title": "Wales and the British Isles",
+      "section_heading": "The substitute in the cradle",
+      "pullquote": "The fairies would steal a human child and leave a substitute in the cradle.",
+      "facts": {
+        "Tradition": "British and Irish fairy lore",
+        "Type": "Fairy substitute",
+        "Setting": "The household cradle",
+        "Motif": "Abduction and mistaken identity"
+      }
     },
     "Dearg Due": {
-      "priority": 118
+      "priority": 118,
+      "image": "legend-images/dearg-due-hero.jpg",
+      "alt": "Dearg Due standing beside a stone-weighted grave beneath an ancient tree in misty Waterford",
+      "caption": "A visual interpretation of Dearg Due rising near Strongbow's Tree",
+      "map_title": "Waterford, Ireland",
+      "section_heading": "The red blood-drinker",
+      "pullquote": "On the first anniversary of her death she rose from her grave and returned as a creature of appetite and revenge.",
+      "facts": {
+        "Tradition": "Irish revenant lore",
+        "Type": "Female vampire",
+        "Setting": "Strongbow's Tree, Waterford",
+        "Motif": "Revenge from the grave"
+      }
     }
   }
 }

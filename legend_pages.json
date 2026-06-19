@@ -1771,6 +1771,186 @@
         "Setting": "Strongbow's Tree, Waterford",
         "Motif": "Revenge from the grave"
       }
+    },
+    "The Henham Dragon": {
+      "priority": 119,
+      "image": "legend-images/the-henham-dragon-hero.jpg",
+      "alt": "A small winged serpent with feathered eyes rising above the bracken beside a dark Essex woodland track",
+      "caption": "A visual interpretation of the flying serpent reported at Henham in 1669",
+      "map_title": "Henham, Essex",
+      "section_heading": "Strange news out of Essex",
+      "pullquote": "A nine-foot winged serpent was reported in the woods - almost certainly a hoax, but one that became a village legend.",
+      "facts": {
+        "Tradition": "English monster lore",
+        "Type": "Flying serpent",
+        "Setting": "Henham, Essex",
+        "First reported": "1669"
+      }
+    },
+    "Mary Read": {
+      "priority": 120,
+      "image": "legend-images/mary-read-hero.jpg",
+      "alt": "Mary Read gripping a cutlass and the rail of a rain-lashed pirate sloop as another vessel approaches",
+      "caption": "A visual interpretation of Mary Read defending Rackham's sloop in 1720",
+      "map_title": "London and the Caribbean",
+      "section_heading": "The last fighter on the deck",
+      "pullquote": "It was said that Read and Bonny were the only two still defending the deck while the men hid below.",
+      "facts": {
+        "Tradition": "Golden Age pirate lore",
+        "Type": "Pirate and soldier",
+        "Setting": "Caribbean, 1720",
+        "Motif": "A life lived across every boundary"
+      }
+    },
+    "Merlin's Oak": {
+      "priority": 121,
+      "image": "legend-images/merlins-oak-hero.jpg",
+      "alt": "The dead trunk of Merlin's Oak bound with iron bands beside a flooded street in Carmarthen",
+      "caption": "A visual interpretation of Merlin's Oak before its final removal",
+      "map_title": "Carmarthen, Wales",
+      "section_heading": "When the oak shall tumble down",
+      "pullquote": "When Merlin's Oak shall tumble down, then shall fall Carmarthen town.",
+      "facts": {
+        "Tradition": "Welsh prophetic folklore",
+        "Type": "Prophetic tree",
+        "Setting": "Carmarthen",
+        "Motif": "The fall of the oak and the flood"
+      }
+    },
+    "Blue Ben of Kilve": {
+      "priority": 122,
+      "image": "legend-images/blue-ben-of-kilve-hero.jpg",
+      "alt": "The slate-blue dragon Blue Ben struggling in a collapsing section of the layered cliffs at Kilve",
+      "caption": "A visual interpretation of Blue Ben falling from the fossil-rich Somerset cliffs",
+      "map_title": "Kilve, Somerset",
+      "section_heading": "The blue dragon in the cliffs",
+      "pullquote": "When it fell into the sea, fossil bones in the cliffs were pointed to as proof of the beast.",
+      "facts": {
+        "Tradition": "Somerset dragon lore",
+        "Type": "Blue dragon",
+        "Setting": "Kilve coast",
+        "Motif": "Fossils as a dragon's bones"
+      }
+    },
+    "Morgawrr": {
+      "priority": 123,
+      "image": "legend-images/morgawrr-hero.jpg",
+      "alt": "A long-necked humped sea creature surfacing beside a small fishing boat in stormy Falmouth Bay",
+      "caption": "A visual interpretation of Morgawrr surfacing in Falmouth Bay",
+      "map_title": "Falmouth Bay, Cornwall",
+      "section_heading": "The monster in the bay",
+      "pullquote": "Witnesses describe a humped creature fifteen to twenty feet long, raising a small head on a long neck from the swell.",
+      "facts": {
+        "Tradition": "Modern Cornish monster lore",
+        "Type": "Sea serpent",
+        "Setting": "Falmouth Bay",
+        "Motif": "The elusive coastal sighting"
+      }
+    },
+    "Bran the Blessed": {
+      "priority": 124,
+      "image": "legend-images/bran-the-blessed-hero.jpg",
+      "alt": "The giant king Bran the Blessed wading through the Irish Sea while carrying warriors and musicians",
+      "caption": "A visual interpretation of Bran carrying his host across the Irish Sea",
+      "map_title": "Britain, Ireland and the White Hill",
+      "section_heading": "The king no house could contain",
+      "pullquote": "He waded the Irish Sea at the head of his host, his musicians playing on his back.",
+      "facts": {
+        "Tradition": "Welsh mythology",
+        "Type": "Giant king",
+        "Setting": "Britain, Ireland and London",
+        "Motif": "The protecting head of Britain"
+      }
+    },
+    "Owlman of Mawnan": {
+      "priority": 125,
+      "image": "legend-images/owlman-of-mawnan-hero.jpg",
+      "alt": "A tall owl-headed humanoid with separate arms and folded wings standing on Mawnan church tower at twilight",
+      "caption": "A visual interpretation of the humanoid Owlman reported at Mawnan in 1976",
+      "map_title": "Mawnan, Cornwall",
+      "section_heading": "The figure above the church",
+      "pullquote": "Witnesses described a huge owl-like humanoid with red eyes and black pincer-like claws.",
+      "facts": {
+        "Tradition": "Modern Cornish cryptid lore",
+        "Type": "Winged humanoid",
+        "Setting": "Mawnan church",
+        "First reported": "1976"
+      }
+    },
+    "Piskie": {
+      "priority": 126,
+      "image": "legend-images/piskie-hero.jpg",
+      "alt": "A small ragged Piskie beckoning toward a misleading light beside a foggy path on Bodmin Moor",
+      "caption": "A visual interpretation of a traveller being piskie-led on the West Country moors",
+      "map_title": "Cornwall and Devon",
+      "section_heading": "The path that circles back",
+      "pullquote": "To be piskie-led is to wander in circles while the familiar world quietly rearranges itself.",
+      "facts": {
+        "Tradition": "West Country fairy lore",
+        "Type": "Mischievous moorland fae",
+        "Setting": "Cornwall and Devon",
+        "Motif": "Leading travellers astray"
+      }
+    },
+    "Pixie": {
+      "priority": 127,
+      "image": "legend-images/pixie-hero.jpg",
+      "alt": "Three small ragged pixies secretly riding and braiding the mane of a dark pony in a Devon stable",
+      "caption": "A visual interpretation of West Country pixies at their night mischief",
+      "map_title": "Cornwall and Devon",
+      "section_heading": "The riders in the stable",
+      "pullquote": "They steal horses to ride through the night, returning them exhausted and sweated by dawn.",
+      "facts": {
+        "Tradition": "West Country fairy lore",
+        "Type": "Small mischievous fae",
+        "Setting": "Moors, lanes and farms",
+        "Motif": "Night riding and tangled manes"
+      }
+    },
+    "Corineus": {
+      "priority": 128,
+      "image": "legend-images/corineus-hero.jpg",
+      "alt": "The Trojan hero Corineus lifting the giant Gogmagog across his shoulders beside a storm-dark Cornish cliff",
+      "caption": "A visual interpretation of Corineus overcoming Gogmagog at the cliff edge",
+      "map_title": "Cornwall and Plymouth Sound",
+      "section_heading": "The wrestler of giants",
+      "pullquote": "Having had three ribs broken, he heaved the giant up and hurled him from the heights.",
+      "facts": {
+        "Tradition": "Legendary history of Britain",
+        "Type": "Trojan hero and giant-slayer",
+        "Setting": "Cornwall",
+        "Motif": "The founding wrestling match"
+      }
+    },
+    "Ragnar Lothbrok": {
+      "priority": 129,
+      "image": "legend-images/ragnar-lothbrok-hero.jpg",
+      "alt": "Ragnar Lothbrok standing defiantly among snakes in a rain-dark stone pit at York",
+      "caption": "A visual interpretation of Ragnar singing his final death-song in King Ælla's snake pit",
+      "map_title": "York, Northumbria",
+      "section_heading": "The old boar in the snake pit",
+      "pullquote": "He sang as he died and warned that the little pigs would grunt if they knew what the old boar suffered.",
+      "facts": {
+        "Tradition": "Norse saga",
+        "Type": "Legendary Viking king",
+        "Setting": "York",
+        "Motif": "Death-song and vengeance"
+      }
+    },
+    "Salmon of Knowledge": {
+      "priority": 130,
+      "image": "legend-images/salmon-of-knowledge-hero.jpg",
+      "alt": "A great silver salmon swallowing fallen hazelnuts beneath ancient trees in the clear Well of Segais",
+      "caption": "A visual interpretation of the Salmon of Knowledge at the source of the Boyne",
+      "map_title": "River Boyne, County Meath",
+      "section_heading": "The fish that ate all wisdom",
+      "pullquote": "The hazelnuts fell into the water and were eaten by the salmon, infusing it with all the knowledge in the world.",
+      "facts": {
+        "Tradition": "Irish mythology",
+        "Type": "Sacred salmon",
+        "Setting": "Well of Segais and River Boyne",
+        "Motif": "Wisdom passing by accident"
+      }
     }
   }
 }

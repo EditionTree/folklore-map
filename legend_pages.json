@@ -1531,6 +1531,90 @@
         "Setting": "Hillway near Bembridge",
         "Motif": "Curse and local suspicion"
       }
+    },
+    "Uther Pendragon and Pendragon Castle": {
+      "priority": 103,
+      "image": "legend-images/uther-pendragon-and-pendragon-castle-hero.jpg",
+      "alt": "Uther Pendragon standing beside a failed river channel below his stronghold in the rain-dark Mallerstang valley",
+      "caption": "A visual interpretation of Uther Pendragon and the untamed River Eden",
+      "map_title": "Pendragon Castle, Cumbria",
+      "section_heading": "Eden will run where Eden ran",
+      "pullquote": "Let Uther Pendragon do what he can, Eden will run where Eden ran.",
+      "facts": {
+        "Tradition": "Arthurian legend",
+        "Type": "Legendary king and castle founder",
+        "Setting": "Mallerstang, Cumbria",
+        "Motif": "The river that would not be tamed"
+      }
+    },
+    "Cormoran, the Giant of St Michael's Mount": {
+      "priority": 104,
+      "image": "legend-images/cormoran-the-giant-of-st-michaels-mount-hero.jpg",
+      "alt": "The giant Cormoran carrying a stolen ox across the flooded causeway below St Michael's Mount",
+      "caption": "A visual interpretation of Cormoran returning to St Michael's Mount",
+      "map_title": "St Michael's Mount, Cornwall",
+      "section_heading": "The giant of the Mount",
+      "pullquote": "When his hunger stirred he would wade ashore at low tide and seize the cattle and sheep of the local farmers.",
+      "facts": {
+        "Tradition": "Cornish giant lore",
+        "Type": "Man-eating giant",
+        "Setting": "St Michael's Mount",
+        "Motif": "Jack the Giant Killer"
+      }
+    },
+    "Gogmagog": {
+      "priority": 105,
+      "image": "legend-images/gogmagog-hero.jpg",
+      "alt": "The giant Gogmagog wrestling Corineus at the edge of a storm-dark cliff above the sea",
+      "caption": "A visual interpretation of Gogmagog's legendary wrestling match with Corineus",
+      "map_title": "Cornwall and Plymouth Sound",
+      "section_heading": "The last giant of Albion",
+      "pullquote": "Corineus heaved the giant onto his shoulders and hurled him from the heights to the rocks below.",
+      "facts": {
+        "Tradition": "Legendary history of Britain",
+        "Type": "Giant of Albion",
+        "Setting": "The south-western cliffs",
+        "Motif": "The wrestling match"
+      }
+    },
+    "William Kidd": {
+      "priority": 106
+    },
+    "Oilliphéist": {
+      "priority": 107
+    },
+    "Enfield Poltergeist": {
+      "priority": 108
+    },
+    "Glastonbury Holy Thorn": {
+      "priority": 109
+    },
+    "Mersey Mermaid": {
+      "priority": 110
+    },
+    "Denbigh Dragon": {
+      "priority": 111
+    },
+    "Du Sith": {
+      "priority": 112
+    },
+    "Osmington White Horse": {
+      "priority": 113
+    },
+    "Havelok the Dane": {
+      "priority": 114
+    },
+    "Hagg Worm": {
+      "priority": 115
+    },
+    "Mari Lwyd": {
+      "priority": 116
+    },
+    "Changeling": {
+      "priority": 117
+    },
+    "Dearg Due": {
+      "priority": 118
     }
   }
 }

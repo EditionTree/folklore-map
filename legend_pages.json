@@ -1951,6 +1951,186 @@
         "Setting": "Well of Segais and River Boyne",
         "Motif": "Wisdom passing by accident"
       }
+    },
+    "Thanet Sea Monster": {
+      "priority": 131,
+      "image": "legend-images/thanet-sea-monster-hero.jpg",
+      "alt": "Three sailors watch a huge dark sea creature surface in rough water off the chalk cliffs of Thanet",
+      "caption": "A visual interpretation of the 1917 sea-monster report off the Isle of Thanet",
+      "map_title": "Isle of Thanet coast, Kent",
+      "section_heading": "The creature off Thanet",
+      "pullquote": "The sailors opened fire; at least one shot struck the dorsal fin, causing the creature to thrash violently before sinking beneath the surface.",
+      "facts": {
+        "Tradition": "English sea-monster lore",
+        "Type": "Sea-serpent report",
+        "Setting": "Isle of Thanet coast",
+        "Motif": "Repeated sightings"
+      }
+    },
+    "Janet Forsyth, the Westray Storm Witch": {
+      "priority": 132,
+      "image": "legend-images/janet-forsyth-the-westray-storm-witch-hero.jpg",
+      "alt": "Janet Forsyth grips the tiller of a storm-battered sailing vessel approaching the low shore of Westray",
+      "caption": "A visual interpretation of Janet Forsyth guiding a vessel into Pierowall Bay",
+      "map_title": "Pierowall Bay, Westray",
+      "section_heading": "The rescue remembered",
+      "pullquote": "The gap between this romantic rescue story and the grim trial record makes Janet Forsyth one of the most poignant examples of how Orkney folk memory reshaped a real execution into legend.",
+      "facts": {
+        "Tradition": "Orkney folk tradition",
+        "Type": "Storm-witch legend",
+        "Setting": "Westray and Kirkwall",
+        "Motif": "Rescue and persecution"
+      }
+    },
+    "Bures Dragon": {
+      "priority": 133,
+      "image": "legend-images/bures-dragon-hero.jpg",
+      "alt": "Villagers with longbows confront a crested dragon beside the River Stour marsh near Bures",
+      "caption": "A visual interpretation of the dragon encounter recorded near Bures in 1405",
+      "map_title": "Bures and the River Stour",
+      "section_heading": "Arrows against the scales",
+      "pullquote": "Local men attempted to kill the beast with arrows, but the shafts rebounded harmlessly off its scales.",
+      "facts": {
+        "Tradition": "English dragon lore",
+        "Type": "Medieval dragon",
+        "Setting": "River Stour marsh",
+        "Motif": "Arrows turned aside"
+      }
+    },
+    "Gog and Magog": {
+      "priority": 134,
+      "image": "legend-images/gog-and-magog-hero.jpg",
+      "alt": "Two giant wickerwork effigies of Gog and Magog carried through a crowded medieval London street",
+      "caption": "A visual interpretation of Gog and Magog in the medieval Lord Mayor's Show",
+      "map_title": "Guildhall, City of London",
+      "section_heading": "Guardians remade",
+      "pullquote": "The wickerwork and wooden giants have been destroyed and remade many times — lost in the Great Fire, shattered in the Blitz — and always restored, for the city regards them as its protectors.",
+      "facts": {
+        "Tradition": "London civic folklore",
+        "Type": "Guardian giants",
+        "Setting": "City of London",
+        "Motif": "Destruction and renewal"
+      }
+    },
+    "Tylwyth Teg": {
+      "priority": 135,
+      "image": "legend-images/tylwyth-teg-hero.jpg",
+      "alt": "Pale-clothed dancers form a fairy ring beside a moonlit Welsh lake as a traveller watches from a stone wall",
+      "caption": "A visual interpretation of the Fair Family dancing in the Welsh hills",
+      "map_title": "The hills and lakes of mid Wales",
+      "section_heading": "A night in the fairy ring",
+      "pullquote": "A mortal drawn into their ring to dance might find, on stepping out, that a single night had been a hundred years.",
+      "facts": {
+        "Tradition": "Welsh fairy tradition",
+        "Type": "The Fair Family",
+        "Setting": "Lakes, hills and green mounds",
+        "Motif": "Time lost in fairy dance"
+      }
+    },
+    "Rheidol": {
+      "priority": 136,
+      "image": "legend-images/rheidol-hero.jpg",
+      "alt": "A young woman personifying the Rheidol runs beside a mountain stream descending from Plynlimon toward Cardigan Bay",
+      "caption": "A visual interpretation of Rheidol racing from Plynlimon to the sea",
+      "map_title": "Afon Rheidol, Ceredigion",
+      "section_heading": "The race down Plynlimon",
+      "pullquote": "She flung herself straight west down the mountainside, carving a steep and narrow valley through rock and forest, and reached Cardigan Bay at the place now called Aberystwyth before either of her sisters had even cleared the foothills.",
+      "facts": {
+        "Tradition": "Welsh river legend",
+        "Type": "River spirit",
+        "Setting": "Plynlimon to Cardigan Bay",
+        "Motif": "Race of the three sisters"
+      }
+    },
+    "The Selkie": {
+      "priority": 137,
+      "image": "legend-images/the-selkie-hero.jpg",
+      "alt": "A Donegal selkie woman carries her recovered dark seal skin toward the Atlantic as a fisherman watches from a stone croft",
+      "caption": "A visual interpretation of the selkie wife's return to the sea",
+      "map_title": "Donegal Atlantic coast",
+      "section_heading": "The skin beneath the stones",
+      "pullquote": "When she eventually finds the hidden skin, she puts it on at once, walks into the waves without hesitation, and does not look back at husband or children.",
+      "facts": {
+        "Tradition": "Irish Atlantic folklore",
+        "Type": "Seal shapeshifter",
+        "Setting": "Donegal coast",
+        "Motif": "Lost skin and return"
+      }
+    },
+    "Tintagel": {
+      "priority": 138,
+      "image": "legend-images/tintagel-hero.jpg",
+      "alt": "Tintagel's ruined castle rises above Merlin's Cave as a lone cloaked figure stands at the low-tide entrance",
+      "caption": "A visual interpretation of Merlin's Cave beneath the Tintagel headland",
+      "map_title": "Tintagel headland, Cornwall",
+      "section_heading": "The cave beneath the castle",
+      "pullquote": "Whether or not any historical Arthur ever trod the headland, Tintagel remains the single place most powerfully bound to his legend, where landscape, ruin and story meet above the Cornish sea.",
+      "facts": {
+        "Tradition": "Arthurian legend",
+        "Type": "Legendary birthplace",
+        "Setting": "Castle headland and Merlin's Cave",
+        "Motif": "Arthur's conception"
+      }
+    },
+    "Westbury White Horse": {
+      "priority": 139,
+      "image": "legend-images/westbury-white-horse-hero.jpg",
+      "alt": "A white horse walks beside a moonlit spring below the Westbury White Horse chalk figure and Bratton church",
+      "caption": "A visual interpretation of the Westbury horse descending to drink at midnight",
+      "map_title": "Bratton Down, Wiltshire",
+      "section_heading": "The horse that walks at midnight",
+      "pullquote": "Wiltshire folklore holds that when the church clock at Bratton strikes midnight, the horse descends the steep hillside to drink from the Briddle Springs at its foot.",
+      "facts": {
+        "Tradition": "Wiltshire folklore",
+        "Type": "Chalk hill figure",
+        "Setting": "Bratton Down and Briddle Springs",
+        "Motif": "Midnight journey"
+      }
+    },
+    "Long Compton Witches": {
+      "priority": 140,
+      "image": "legend-images/long-compton-witches-hero.jpg",
+      "alt": "An elderly woman walks alone along a muddy Victorian village lane while Long Compton neighbours watch from a distance",
+      "caption": "A visual interpretation of the climate of witch-belief in Long Compton in 1875",
+      "map_title": "Long Compton and the Rollright Hills",
+      "section_heading": "The belief that outlived the trials",
+      "pullquote": "It represents a rare case where rural witch-belief survived in documented form into the Victorian period with a specific named victim, a named killer, and a court record.",
+      "facts": {
+        "Tradition": "English rural folklore",
+        "Type": "Documented witch-belief",
+        "Setting": "Long Compton",
+        "Motif": "Victorian persistence"
+      }
+    },
+    "Brown Man of the Muirs": {
+      "priority": 141,
+      "image": "legend-images/brown-man-of-the-muirs-hero.jpg",
+      "alt": "A bracken-clad moor guardian warns a seated hunter beside a spring on the Northumberland moors",
+      "caption": "A visual interpretation of the Brown Man confronting hunters on the Border moors",
+      "map_title": "Northumberland Border moors",
+      "section_heading": "The warning at the well",
+      "pullquote": "The Brown Man stands among the oldest expressions of a folk idea that the wilderness has its own keeper, who exacts a price from those who abuse it.",
+      "facts": {
+        "Tradition": "Border folklore",
+        "Type": "Moorland guardian",
+        "Setting": "Northumberland moors",
+        "Motif": "Protection of wild animals"
+      }
+    },
+    "Petticoat Loose": {
+      "priority": 142,
+      "image": "legend-images/petticoat-loose-hero.jpg",
+      "alt": "A solitary woman kneels beside moonlit Bay Lough trying to twist a crumbling rope from wet sand",
+      "caption": "A visual interpretation of Petticoat Loose's endless task at Bay Lough",
+      "map_title": "Bay Lough, Knockmealdown Mountains",
+      "section_heading": "The rope that can never hold",
+      "pullquote": "Condemned to an impossible, endless task: to twist ropes of sand, or empty the lough with a thimble, so that she can never finish and return.",
+      "facts": {
+        "Tradition": "Irish ghost lore",
+        "Type": "Banished spirit",
+        "Setting": "Bay Lough",
+        "Motif": "Endless impossible task"
+      }
     }
   }
 }

@@ -2131,6 +2131,231 @@
         "Setting": "Bay Lough",
         "Motif": "Endless impossible task"
       }
+    },
+    "Marool": {
+      "priority": 143,
+      "image": "legend-images/marool-hero.jpg",
+      "alt": "A many-eyed dark sea creature surfaces in glowing mareel near a small Shetland fishing boat during a gale",
+      "caption": "A visual interpretation of the Marool moving through Shetland's phosphorescent sea",
+      "map_title": "Shetland's northern waters",
+      "section_heading": "The sea-fire in the storm",
+      "pullquote": "Where the islanders saw that eerie green-blue luminescence, they might fear the presence of the Marool beneath.",
+      "facts": {
+        "Tradition": "Shetland sea folklore",
+        "Type": "Sea-devil",
+        "Setting": "Mareel-lit waters",
+        "Motif": "Storms and shipwrecks"
+      }
+    },
+    "Stronsay Beast": {
+      "priority": 144,
+      "image": "legend-images/stronsay-beast-hero.jpg",
+      "alt": "Orkney islanders measure and sketch an enormous decayed sea-creature carcass on the rocky shore of Stronsay in 1808",
+      "caption": "A visual interpretation of the 1808 examination of the Stronsay Beast",
+      "map_title": "Stronsay, Orkney",
+      "section_heading": "A monster measured on shore",
+      "pullquote": "Yet the Stronsay Beast endures in Orkney lore as the islands' own sea-monster — a vivid moment where folklore, natural history and the romance of the unknown all washed up together on a northern shore.",
+      "facts": {
+        "Tradition": "Orkney natural-history lore",
+        "Type": "Unidentified carcass",
+        "Setting": "Stronsay shore",
+        "Motif": "Sea serpent or basking shark"
+      }
+    },
+    "Macha": {
+      "priority": 145,
+      "image": "legend-images/macha-hero.jpg",
+      "alt": "The pregnant goddess Macha races two dark horses below the royal earthworks of Emain Macha",
+      "caption": "A visual interpretation of Macha's coerced race against the horses of Ulster",
+      "map_title": "Navan Fort, County Armagh",
+      "section_heading": "The race that cursed Ulster",
+      "pullquote": "She begged for delay until the child was born; the king refused.",
+      "facts": {
+        "Tradition": "Irish mythology",
+        "Type": "Sovereignty goddess",
+        "Setting": "Emain Macha, Navan Fort",
+        "Motif": "Debility of the Ulstermen"
+      }
+    },
+    "Crom Cruach": {
+      "priority": 146,
+      "image": "legend-images/crom-cruach-hero.jpg",
+      "alt": "Adult worshippers bow around a gold-covered central idol and twelve lesser stones on the rain-dark Plain of Prostrations",
+      "caption": "A visual reconstruction of the Crom Cruach tradition at Magh Slécht",
+      "map_title": "Magh Slécht, County Cavan",
+      "section_heading": "The idol at the centre",
+      "pullquote": "In 1921, a broken, cone-shaped stone covered in spiralling Iron Age La Tène carvings was unearthed at Killycluggin, close to Magh Slécht.",
+      "facts": {
+        "Tradition": "Medieval Irish place-lore",
+        "Type": "Pagan idol",
+        "Setting": "Magh Slécht",
+        "Motif": "Destruction by Saint Patrick"
+      }
+    },
+    "Donn": {
+      "priority": 147,
+      "image": "legend-images/donn-hero.jpg",
+      "alt": "Donn stands beside the sea tunnel through storm-dark Bull Rock as wreckage pitches in the Atlantic below",
+      "caption": "A visual interpretation of Donn reaching Tech Duinn, the House of the Dead",
+      "map_title": "Bull Rock, Beara Peninsula",
+      "section_heading": "The house in the western sea",
+      "pullquote": "To me, to my house, you shall all come after your deaths.",
+      "facts": {
+        "Tradition": "Irish mythology",
+        "Type": "Lord of the dead",
+        "Setting": "Tech Duinn, Bull Rock",
+        "Motif": "Gathering place of souls"
+      }
+    },
+    "Njuggle": {
+      "priority": 148,
+      "image": "legend-images/njuggle-hero.jpg",
+      "alt": "A Shetland blacksmith fits an iron shoe to a wet grey pony with a wheel-curled tail beside an old watermill",
+      "caption": "A visual interpretation of the blacksmith breaking the njuggle's power with iron",
+      "map_title": "Shetland watermill country",
+      "section_heading": "Iron at the mill",
+      "pullquote": "Iron, in the Scottish and Norse supernatural tradition, is proof against magical creatures, and once the shoes were nailed on, the njuggle lost its power entirely.",
+      "facts": {
+        "Tradition": "Shetland folklore",
+        "Type": "Water horse",
+        "Setting": "Lochs, burns and mills",
+        "Motif": "Iron breaks enchantment"
+      }
+    },
+    "Nuada of the Silver Hand": {
+      "priority": 149,
+      "image": "legend-images/nuada-of-the-silver-hand-hero.jpg",
+      "alt": "The healer Dian Cecht fits a jointed silver right arm to the seated king Nuada in a misty early Irish encampment",
+      "caption": "A visual interpretation of Nuada receiving the silver arm that restored his kingship",
+      "map_title": "Mag Tuired, County Sligo",
+      "section_heading": "The arm that restored a king",
+      "pullquote": "The healer-god Dian Cecht fashioned him a silver arm that moved like a real one, restoring his wholeness and his right to reign.",
+      "facts": {
+        "Tradition": "Irish mythology",
+        "Type": "King of the Tuatha Dé Danann",
+        "Setting": "Mag Tuired",
+        "Motif": "Kingship lost and restored"
+      }
+    },
+    "Gearóid Iarla of Lough Gur": {
+      "priority": 150,
+      "image": "legend-images/gearoid-iarla-of-lough-gur-hero.jpg",
+      "alt": "Gearóid Iarla rides a white horse with silver shoes across the moonlit surface of Lough Gur",
+      "caption": "A visual interpretation of Gearóid Iarla's seven-year ride across Lough Gur",
+      "map_title": "Lough Gur, County Limerick",
+      "section_heading": "The rider beneath the lake",
+      "pullquote": "Every seven years, when conditions are right, he rides out across the surface of the horseshoe-shaped lake on a white horse whose hooves are shod in silver.",
+      "facts": {
+        "Tradition": "Irish lake folklore",
+        "Type": "Enchanted earl",
+        "Setting": "Lough Gur",
+        "Motif": "Return every seven years"
+      }
+    },
+    "Trow": {
+      "priority": 151,
+      "image": "legend-images/trow-hero.jpg",
+      "alt": "A Shetland fiddler listens outside a snowy burial mound while short grey-clad trows feast and play music within",
+      "caption": "A visual interpretation of a human fiddler learning music from the trows beneath a mound",
+      "map_title": "Shetland and Orkney",
+      "section_heading": "The tune beneath the mound",
+      "pullquote": "They were famous for stealing fiddle-tunes, and many a Shetland reel was said to have been learned by a human fiddler who overheard the trows playing in their mound.",
+      "facts": {
+        "Tradition": "Northern Isles folklore",
+        "Type": "Norse-rooted mound beings",
+        "Setting": "Shetland and Orkney",
+        "Motif": "Music stolen and learned"
+      }
+    },
+    "Gurt Worm": {
+      "priority": 152,
+      "image": "legend-images/gurt-worm-hero.jpg",
+      "alt": "A Somerset woodman discovers that the mossy log beneath his bread and cheese is a huge serpent in Shervage Wood",
+      "caption": "A visual interpretation of the woodman's encounter with the Gurt Worm",
+      "map_title": "Quantock Hills, Somerset",
+      "section_heading": "The log that moved",
+      "pullquote": "Rather than flee, the unflappable countryman set about the worm with his axe, cutting it in two.",
+      "facts": {
+        "Tradition": "Somerset folklore",
+        "Type": "Great worm or serpent",
+        "Setting": "Shervage Wood",
+        "Motif": "Working man as dragon-slayer"
+      }
+    },
+    "Jinny the Witch (Joney Lowney)": {
+      "priority": 153,
+      "image": "legend-images/jinny-the-witch-joney-lowney-hero.jpg",
+      "alt": "Joney Lowney stands in a sackcloth penitential garment beside a stone market cross as Manx villagers watch",
+      "caption": "A visual interpretation of Joney Lowney's public penance on the Isle of Man",
+      "map_title": "Braddan, Isle of Man",
+      "section_heading": "From court record to festival song",
+      "pullquote": "In that form she became permanently attached to Hop tu Naa, the Manx Celtic New Year festival held on 31 October.",
+      "facts": {
+        "Tradition": "Manx folk memory",
+        "Type": "Accused witch",
+        "Setting": "Braddan and the market crosses",
+        "Motif": "History becoming festival song"
+      }
+    },
+    "Loch na Beiste Water Horse, Mellon Udrigle": {
+      "priority": 154,
+      "image": "legend-images/loch-na-beiste-water-horse-mellon-udrigle-hero.jpg",
+      "alt": "Nineteenth-century Highland workers cut a drainage channel and pour quicklime beside Loch na Beiste as a dark keel-shaped form moves offshore",
+      "caption": "A visual interpretation of the attempt to drain Loch na Beiste in the 1840s",
+      "map_title": "Mellon Udrigle, Wester Ross",
+      "section_heading": "The loch they tried to drain",
+      "pullquote": "The creature, needless to say, was never found, and the loch defeated its would-be exterminators.",
+      "facts": {
+        "Tradition": "Highland water-horse lore",
+        "Type": "Loch monster",
+        "Setting": "Loch na Beiste",
+        "Motif": "Failed monster hunt"
+      }
+    },
+    "Waun Mawn": {
+      "priority": 155,
+      "image": "legend-images/waun-mawn-hero.jpg",
+      "alt": "A Neolithic community uses ropes and timber levers to lower a bluestone from the Waun Mawn circle at dawn",
+      "caption": "A visual reconstruction of the dismantling of the Waun Mawn stone circle",
+      "map_title": "Preseli Hills, Pembrokeshire",
+      "section_heading": "The circle that travelled",
+      "pullquote": "The evidence suggests that Neolithic communities dismantled their great Welsh circle and dragged its stones 150 miles eastward to Wiltshire, carrying not just stone but the cultural memory of their monument.",
+      "facts": {
+        "Tradition": "Welsh Stonehenge legend",
+        "Type": "Dismantled stone circle",
+        "Setting": "Preseli Hills",
+        "Motif": "Stones carried east"
+      }
+    },
+    "Ynys Enlli": {
+      "priority": 156,
+      "image": "legend-images/ynys-enlli-hero.jpg",
+      "alt": "A medieval pilgrim boat crosses rough Bardsey Sound toward the mist-covered slopes and monastery of Ynys Enlli",
+      "caption": "A visual interpretation of the pilgrim crossing to Ynys Enlli",
+      "map_title": "Bardsey Sound and Ynys Enlli",
+      "section_heading": "The island beyond the current",
+      "pullquote": "Whether as a saints' graveyard, Merlin's resting place, or Arthur's Avalon, Ynys Enlli's isolation and the danger of crossing its sound have long given the island an otherworldly reputation.",
+      "facts": {
+        "Tradition": "Welsh sacred and Arthurian lore",
+        "Type": "Pilgrimage island",
+        "Setting": "Llŷn Peninsula",
+        "Motif": "Saints, Merlin and Avalon"
+      }
+    },
+    "Long Man of Wilmington": {
+      "priority": 157,
+      "image": "legend-images/long-man-of-wilmington-hero.jpg",
+      "alt": "An early eighteenth-century antiquarian sketches the enormous white outline of the Long Man on Windover Hill",
+      "caption": "A visual interpretation of the Long Man around the time of its earliest surviving record",
+      "map_title": "Windover Hill, East Sussex",
+      "section_heading": "A figure without an answer",
+      "pullquote": "Its age and meaning are genuine mysteries.",
+      "facts": {
+        "Tradition": "Sussex hill-figure lore",
+        "Type": "Turf outline",
+        "Setting": "Windover Hill",
+        "Motif": "Unknown age and meaning"
+      }
     }
   }
 }

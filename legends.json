@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-19T21:07:36.415040Z",
+  "generated": "2026-06-20T18:47:26.919180Z",
   "total": 648,
   "categories": {
     "beast": "Beasts",
@@ -1009,13 +1009,22 @@
       "lng": -4.37,
       "category": "location",
       "region": "Scotland",
-      "summary": "Black Rock Gorge is a deep and narrow cleft in Old Red Sandstone conglomerate through which the Allt Graad flows at Evanton in Easter Ross, Scotland. It was formed by down-cutting by sediment-laden water during post-glacial rebound.",
+      "summary": "A deep Highland gorge where the Lady of Balconie was lured to her death by a mysterious man in green — believed to be the Devil — and her cries still echo from the depths.",
       "source": "https://en.wikipedia.org/wiki/Black_Rock_Gorge",
       "date_added": "2026-06-03",
       "tags": [
         "black",
-        "red",
-        "scotland"
+        "green",
+        "cave",
+        "haunting",
+        "death-omen",
+        "scotland",
+        "highland"
+      ],
+      "detail": "Black Rock Gorge cuts through ancient Old Red Sandstone near Evanton in Easter Ross, its sheer walls plunging into shadow where the Allt Graad tumbles below. The gorge’s most enduring legend tells of the Lady of Balconie, a noblewoman from nearby Balconie Castle who encountered a dark-looking man dressed in green while walking in the surrounding woods. Charmed by his manner, she followed him deeper into the forest until he led her to the gorge’s edge and over it to her death. Local tradition holds that the man was the Devil in disguise, and that the Lady’s anguished cries can still be heard rising from the depths.\n\nThe tale does not end with her fall. When she plunged into the gorge, the Lady is said to have dropped her house keys, leaving a permanent impression in the rock face that visitors claim to see to this day. A later strand of the legend tells of a fisherman who followed mysterious tracks into a cave within the gorge, where he discovered the Grey Lady baking cakes for the Devil himself. When the Devil’s hounds caught the fisherman’s scent, the Grey Lady threw her cakes to distract the beasts, giving the terrified man just enough time to flee.\n\nThe gorge’s eerie atmosphere has continued to inspire — in 2004, its dramatic setting was used as a filming location for Harry Potter and the Goblet of Fire. Yet for centuries before the cameras arrived, locals knew Black Rock Gorge as a place where the boundary between the natural and supernatural felt dangerously thin.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Black_Rock_Gorge",
+        "https://thirdeyetraveller.com/black-rock-gorge-harry-potter/"
       ]
     },
     {
@@ -1508,15 +1517,18 @@
       "lng": -4.0114,
       "category": "location",
       "region": "Ardudwy, Gwynedd, Wales",
-      "summary": "A Bronze Age ring cairn on the hills above Talsarnau in Gwynedd — its eighteen remaining jagged stone pillars jutting from a low circular mound like the rays of a dark crown. One of the most striking and mysterious prehistoric monuments in Wales, disturbed by 19th-century treasure hunters who left a hole at its heart.",
+      "summary": "Jagged stone pillars jut from a moorland cairn like a dark crown — a Bronze Age burial above Talsarnau whose Welsh name means ‘the hill of the throne with the flag,’ hinting at forgotten power and prestige.",
       "source": "https://en.wikipedia.org/wiki/Bryn_Cader_Faner",
       "date_added": "2026-06-03",
       "tags": [
         "hill",
         "barrow",
         "treasure",
-        "wales"
-      ]
+        "moor",
+        "wales",
+        "gwynedd"
+      ],
+      "detail": "High on the remote hills of Ardudwy in Gwynedd, Bryn Cader Faner rises from the heather like something not quite of this world. Its fifteen remaining stone slabs — each roughly two metres long — lean outward from a low circular mound at dramatic angles, earning the monument its popular nickname: the Crown of Thorns. The Welsh name translates approximately as ‘the hill crowned with the throne of the flag,’ a title suggesting this was once a place of considerable ritual or political significance, perhaps marking the burial of a chieftain whose authority demanded visible commemoration in the landscape.\n\nThe cairn’s centre shows clear evidence of disturbance. Nineteenth-century treasure hunters dug into its heart, leaving a depression where a cist or grave once held its contents. Whatever offerings or remains accompanied the original burial were lost to these early antiquarians, who rifled the site long before any systematic archaeology could record what they found. The damage continued in the twentieth century when, before the Second World War, the British Army used the cairn for gunnery practice, destroying stones on its eastern side and reducing the original complement of perhaps thirty pillars to the eighteen that survived.\n\nDespite these violations, Bryn Cader Faner retains a power that draws visitors across difficult terrain to reach it. The monument stands in a landscape dense with prehistoric remains — stone circles, standing stones, and cairns dot the surrounding hills — suggesting that this stretch of upland Wales was deeply sacred to Bronze Age communities. In recent years, Buddhist pilgrims have conducted rituals at the site, recognising in its ancient stones a spiritual resonance that transcends any single tradition."
     },
     {
       "name": "Bryn Gwyn stones",
@@ -1652,14 +1664,22 @@
       "lng": -5.627,
       "category": "location",
       "region": "Cornwall",
-      "summary": "An Iron Age hillfort whose name evokes Bran, the giant king of Welsh tradition. The site sits in a landscape thick with Cornish legend, standing stones, and tales of buried ancient power.",
+      "summary": "An Iron Age hillfort in Penwith named for Bran the Blessed, the giant raven-king of Welsh myth, and long reputed as a sanctuary from evil spirits and home of the Pobel Vean — Cornwall’s fairy folk.",
       "source": "https://en.wikipedia.org/wiki/Caer_Bran",
       "date_added": "2026-06-03",
       "tags": [
         "standing-stones",
         "castle",
+        "hill",
+        "celtic",
+        "guardian",
         "england",
         "cornwall"
+      ],
+      "detail": "Caer Bran crowns a hilltop in the heart of the Penwith peninsula, commanding views of both coastline and countryside from its position near Land’s End. The hillfort enfolds three earlier Bronze Age ring cairns within its banks, representing perhaps two thousand years of ritual use at this single elevated site. Its outermost rampart still stands up to four metres high, fronted by a broad ditch, enclosing a space some sixty metres across — a substantial fortification that speaks to the site’s enduring importance.\n\nThe name Caer Bran links the hillfort to one of Celtic mythology’s most resonant figures: Bendigeidfran, or Bran the Blessed, the giant king of Britain who appears in the second branch of the Mabinogion. Scholar Helaine Newstead traced the etymology through the nearby hamlet of Brane — a corruption of Boswran, possibly meaning ‘house of Bran’ — making Caer Bran ‘the castle near the house of Bran.’ In Welsh tradition, Bran’s severed head was buried in London to protect Britain from invasion, and his name simply means ‘raven’ or ‘crow.’ A related legend attaches to the standing stone Mên Scryfa, several miles north, which commemorates Rialobran (‘Royal Bran’), a prince said to have died reclaiming his father’s usurped castle.\n\nIn Cornish folk belief, Caer Bran was considered a sanctuary from evil spirits and the dwelling place of the Pobel Vean — the ‘little people’ of Cornish fairy tradition. The surrounding landscape is threaded with fogous, holy wells, and megaliths, each carrying its own cargo of legend, making the hillfort the centrepiece of one of Cornwall’s most densely mythologised stretches of countryside.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Caer_Bran",
+        "https://singinghead.wordpress.com/2013/07/25/caer-bran-a-cornish-hillfort/"
       ]
     },
     {
@@ -5998,12 +6018,20 @@
       "lng": -8.5186,
       "category": "location",
       "region": "Carrowmore, County Sligo",
-      "summary": "Listoghil is the large central monument in the Carrowmore group of prehistoric tombs in County Sligo, Ireland. The Carrowmore group consists of about 35 monuments surrounding Listoghil. It was numbered as Carrowmore 51 by George Petrie in 1837 and this designation is still used. Although the district of Cúil Iorra is steeped in legend, Listoghil has never been satisfactorily connected with the ancient legends in the way that say Newgrange has.",
+      "summary": "The great central tomb of Carrowmore, aligned on sunrise at Samhain and Imbolc, whose entrance stone bears a footprint-like carving echoing the coronation rituals of ancient Irish kings.",
       "source": "https://en.wikipedia.org/wiki/Listoghil",
       "date_added": "2026-05-30",
       "tags": [
+        "barrow",
+        "standing-stones",
+        "celtic",
         "ireland",
         "county-sligo"
+      ],
+      "detail": "Listoghil stands at the heart of the Carrowmore complex in County Sligo, the largest of some thirty-five Neolithic monuments scattered across the Cúil Irra peninsula. Its cairn, thirty-four metres in diameter, was erected around 3500 BC and recently restored to something approaching its original profile — a great mound dominating a ritual landscape that stretches from the peninsula to the cairn-crowned summit of Knocknarea, where Queen Maeve is said to lie buried upright with her spear facing Ulster.\n\nThe monument’s entrance kerbstone carries a feature that has drawn particular attention: a depression resembling a human footprint, echoing the tradition of coronation stones in Irish mythology. At Tara, the Lia Fáil was said to scream when the rightful king placed his foot upon it. Medieval texts describe inauguration rituals in which kings symbolically married the sovereignty goddess Maeve on ancient mounds, renewing a sacred bond between ruler, land, and the divine feminine. Whether Listoghil served a similar ceremonial function remains unproven, but its alignment on sunrise at Samhain and Imbolc — two of the most potent dates in the Celtic calendar — places it firmly within a world where the movements of the sun, the turning of the seasons, and the authority of kingship were deeply intertwined.\n\nThough the surrounding district is steeped in legend — stories of druids, fairy hosts, and the great cattle raid of Cooley swirl around the Sligo landscape — Listoghil itself has never been satisfactorily identified with a single named myth. It belongs instead to a deeper, older layer of tradition: a monument whose builders encoded their beliefs in stone and alignment rather than in words that survived into the age of writing.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Listoghil",
+        "https://mythicalireland.com/blogs/ancient-sites/sligo-carrowkeel-carrowmore-and-queen-medbs-cairn"
       ]
     },
     {
@@ -6895,15 +6923,17 @@
       "lng": -8.0197,
       "category": "location",
       "region": "Meehambee, County Roscommon",
-      "summary": "The Meehambee Dolmen, also known as the Mihanboy Portal Tomb, is a Neolithic portal tomb located in the townland of Mihanboy, near Athlone in County Roscommon, Ireland. The monument is dated to around 3500 BC and is listed as a Recorded Monument under the National Monuments Acts.",
+      "summary": "A Neolithic portal tomb known locally as the Giant’s Bed, its twenty-four-tonne capstone now tilted at a dramatic angle after the rear support collapsed sometime in the medieval period.",
       "source": "https://en.wikipedia.org/wiki/Meehambee_Dolmen",
       "date_added": "2026-05-30",
       "tags": [
         "standing-stones",
         "barrow",
+        "celtic",
         "ireland",
         "county-roscommon"
-      ]
+      ],
+      "detail": "The Meehambee Dolmen rises from the fields of Mihanboy near Athlone, its massive sandstone capstone — estimated at twenty-four tonnes — resting at a forty-five degree angle where it slid when the rear support stone collapsed sometime after the medieval period. In its original form around 3500 BC, the tomb would have presented a very different aspect: a great flat stone held level on tall portal stones over two metres high, a monument visible for miles across the Roscommon landscape and intended to impress.\n\nThe dolmen carries the weight of local naming traditions that hint at older beliefs. It was known as the Giant’s Bed, a designation common to Irish portal tombs where the sheer scale of the stones invited stories of superhuman builders. In the 1930s, the Dúchas Schools’ Folklore Collection — an extraordinary project in which over fifty thousand schoolchildren recorded oral traditions from their communities — documented the tomb under the name Leabaidh Éirn, ‘Éirn’s Bed,’ preserving a personal name otherwise lost to history. The same collection noted a nearby earthwork known simply as ‘the Fort,’ which carried fairy associations in local belief.\n\nTwo stone axes discovered near the tomb in the 1960s by local schoolchildren confirmed sustained Neolithic activity in the surrounding landscape. The dolmen is one of over 1,200 portal tombs identified across Ireland, each believed to mark either a high-status individual burial or a communal tomb for a local kinship group. At Meehambee, the collapse that tilted the capstone has paradoxically given the monument its most distinctive and dramatic quality — the stone appears frozen in the act of falling, caught between its ancient purpose and the slow geological patience of gravity."
     },
     {
       "name": "Meg Shelton",
@@ -7418,12 +7448,21 @@
       "lng": -6.4731,
       "category": "location",
       "region": "Newgrange, County Meath",
-      "summary": "The Newgrange cursus is a Neolithic monument used as a ceremonial procession route within the Brú na Bóinne complex. The ancient trackway is 100m long and 20m wide. It is located at Newgrange, in County Meath, Ireland.",
+      "summary": "A Neolithic procession route through Brú na Bóinne, the sacred landscape where the Dagda halted the sun and Aengus Óg won eternal possession of the Otherworld palace through a trick of language.",
       "source": "https://en.wikipedia.org/wiki/Newgrange_cursus",
       "date_added": "2026-05-30",
       "tags": [
+        "celtic",
+        "love",
+        "transformation",
+        "river",
         "ireland",
         "county-meath"
+      ],
+      "detail": "The Newgrange cursus is a hundred-metre-long ceremonial trackway bordered by parallel embankments and ditches, threading through the Brú na Bóinne complex in the Boyne Valley. Excavations in 2018 revealed pit alignments and deposits of feasting debris along its route, evidence that Late Neolithic communities used the cursus for organised processions linking the great passage tombs with surrounding enclosures. The vista from the trackway encompasses the monumental landscape of Newgrange, Knowth, and Dowth — a theatre of ritual whose organisers used the river valley itself as a stage.\n\nIn medieval Irish literature, Brú na Bóinne became the palace of the gods. The Dagda, the ‘good god’ of the Tuatha Dé Danann, ruled the mound until his son Aengus Óg claimed it through a famous trick: denied his inheritance, the young god asked only to stay ‘a day and a night.’ The Dagda agreed — whereupon Aengus declared that all time consists of days and nights, and claimed eternal possession. Aengus’s mother was Boann, the goddess who personified the River Boyne itself and whose name still flows through the landscape. The Dagda had magically halted the sun for nine months so that Aengus could be conceived, gestated, and born in a single day, earning him the title Mac-an-Óg, ‘son of youth.’\n\nThe most haunting story tells of Aengus searching for a woman he had seen only in a dream — Caer Ibormeith, who transformed into a swan every other Samhain. Finding her at the Lake of the Dragon’s Mouth, Aengus took swan form himself, and together they flew to Brú na Bóinne, singing music so sweet that all who heard it slept for three days. Through such legends, the processional landscape of the cursus was reimagined as a pathway between the mortal world and the Otherworld, walked by gods and heroes long before the monuments crumbled.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Newgrange_cursus",
+        "https://voicesfromthedawn.com/newgrange/"
       ]
     },
     {
@@ -8229,14 +8268,22 @@
       "lng": -6.6832,
       "category": "location",
       "region": "Baltinglass, County Wicklow",
-      "summary": "Rathcoran is an ancient passage tomb and surrounding hillfort atop Baltinglass Hill, County Wicklow, Ireland. The passage tomb is contemporaneous with Newgrange, i.e. it was built 3500–3000 BC, during the Neolithic. The ringfort dates to the Bronze Age, c. 1000 BC. It is part of the Baltinglass hillfort complex, and is a National Monument.",
+      "summary": "A Neolithic passage tomb and Bronze Age hillfort crowning Baltinglass Hill, where locals long believed a secret underground passage ran from the cairn to the Cistercian abbey a mile below.",
       "source": "https://en.wikipedia.org/wiki/Rathcoran",
       "date_added": "2026-05-30",
       "tags": [
         "hill",
         "barrow",
+        "church",
+        "celtic",
+        "white",
         "ireland",
         "county-wicklow"
+      ],
+      "detail": "Rathcoran commands the summit of Baltinglass Hill in County Wicklow, a passage tomb built between 3500 and 3000 BC — contemporaneous with Newgrange — later enclosed by a Bronze Age ringfort around 1000 BC. The doubling of monument types at a single site, separated by two and a half millennia, speaks to the enduring hold this hilltop exercised over the communities who lived in its shadow. Its name may derive from the Irish Ráth Charnáin, ‘ring fort of the cairn,’ suggesting that even in the era of the later fortification, the older tomb at its centre remained the site’s defining feature.\n\nThe most persistent local legend held that a collapsed passage within the cairn once led underground all the way to the Cistercian abbey of Baltinglass at the foot of the hill, over a mile to the west. No archaeological evidence supports such a tunnel, but the story captures something real about the way the monastic and the prehistoric coexisted in the Irish landscape — the abbey’s medieval builders would have looked up daily at the ancient cairn above them, and the idea of a physical connection between the two sacred places felt intuitively right to generations of local people.\n\nExcavations in the 1930s by P. T. Walshe revealed cremated remains of at least three adults and a child, along with pottery, flint scrapers, bone pins, and — most strikingly — large quantities of white quartz deliberately placed over the interior stones before the mound was sealed. Quartz appears to have held particular ritual significance for passage tomb builders; its luminous, light-catching qualities may have carried symbolic associations with the boundary between life and death. Among the finds was a polished, egg-shaped white stone and a basin-shaped vessel still holding burnt bone, suggesting careful curation of the dead rather than casual disposal.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Rathcoran",
+        "https://visionsofthepastblog.com/2017/01/05/baltinglass-hill-wicklow-ireland/"
       ]
     },
     {
@@ -11029,12 +11076,21 @@
       "lng": -4.7912,
       "category": "location",
       "region": "Preseli Hills, Pembrokeshire, Wales",
-      "summary": "A dismantled stone circle in the Preseli Mountains of Pembrokeshire — excavated in 2018 and found to predate Stonehenge, with bluestones whose sockets perfectly match holes at Stonehenge. The leading hypothesis is that Waun Mawn was dismantled and its stones transported to Wiltshire, making it Stonehenge's direct ancestor.",
+      "summary": "Dismantled bluestones from this Preseli mountain circle may be the very stones Merlin carried to build Stonehenge — a twelfth-century legend now backed by startling archaeological evidence.",
       "source": "https://en.wikipedia.org/wiki/Waun_Mawn",
       "date_added": "2026-06-03",
       "tags": [
         "standing-stones",
-        "wales"
+        "hill",
+        "arthurian",
+        "healing",
+        "wales",
+        "pembrokeshire"
+      ],
+      "detail": "In 1136, Geoffrey of Monmouth wrote that Stonehenge’s stones originally belonged to a monument in Ireland called the Giants’ Dance, and that the wizard Merlin transported them to Salisbury Plain for their healing properties. For centuries the tale was dismissed as pure fantasy. Then, in 2018, excavations at Waun Mawn in the Preseli Mountains of Pembrokeshire revealed something remarkable: the remains of a dismantled stone circle whose diameter of 110 metres exactly matches the enclosing ditch of Stonehenge, and whose orientation aligns on the midsummer solstice sunrise — precisely like its famous successor.\n\nRadiocarbon dating placed Waun Mawn’s construction around 3000 BC, shortly before work began at Stonehenge. Of the original stones, only four remain standing; six empty sockets were excavated, their shapes matching specific bluestone pillars now at Stonehenge. The evidence suggests that Neolithic communities dismantled their great Welsh circle and dragged its stones 150 miles eastward to Wiltshire, carrying not just stone but the cultural memory of their monument. The circle they left behind had been the third largest in Britain.\n\nGeoffrey of Monmouth placed the original stones in Ireland, not Wales, but the Preseli Mountains lie on the sea route between Ireland and southern England, and the cultural geography of the deep Neolithic did not observe modern national boundaries. What matters is that a medieval chronicler preserved, in the language of wizardry and giants, a genuine memory of stones that travelled — a folk tradition that survived three thousand years before archaeology caught up with it.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Waun_Mawn",
+        "https://www.cambridge.org/core/journals/antiquity/article/abs/original-stonehenge-a-dismantled-stone-circle-in-the-preseli-hills-of-west-wales/B7DAA4A7792B4DAB57DDE0E3136FBC33"
       ]
     },
     {

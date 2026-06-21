@@ -1,0 +1,674 @@
+/* Folklore Finder shared visual foundation.
+   Editorial first, cartographic second, ornamental only where it earns its place. */
+
+:root {
+  --ff-parchment: #f6f1e6;
+  --ff-aged-paper: #efe4cf;
+  --ff-burnt-orange: #c4622a;
+  --ff-burnt-orange-dark: #9d461f;
+  --ff-antique-gold: #b09060;
+  --ff-oak-brown: #5a4632;
+  --ff-sage-green: #66735a;
+  --ff-slate-blue: #53667a;
+  --ff-ink: #3f3023;
+  --ff-night: #1d1712;
+  --ff-line: rgba(90, 70, 50, 0.24);
+
+  /* Compatibility aliases while the older page styles are consolidated. */
+  --parchment: var(--ff-parchment);
+  --parchment-dk: var(--ff-aged-paper);
+  --ink: var(--ff-ink);
+  --ink-light: var(--ff-oak-brown);
+  --accent: var(--ff-burnt-orange);
+  --accent-warm: var(--ff-burnt-orange);
+  --gold: var(--ff-antique-gold);
+  --dark: var(--ff-night);
+}
+
+body.ff-paper {
+  background:
+    radial-gradient(circle at 18% 22%, rgba(176, 144, 96, 0.055), transparent 28%),
+    radial-gradient(circle at 78% 12%, rgba(196, 98, 42, 0.035), transparent 22%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(246, 241, 230, 0.94)),
+    var(--ff-parchment);
+}
+
+.ff-leaf-cap {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.ff-leaf-cap::before {
+  content: "";
+  width: 68px;
+  height: 28px;
+  flex: 0 0 auto;
+  opacity: 0.56;
+  background: url("assets/ornaments/generated-variants/oak-divider-horizontal.png") center / contain no-repeat;
+}
+
+.ff-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 3rem auto;
+  color: var(--ff-oak-brown);
+  opacity: 0.68;
+}
+
+.ff-divider::before,
+.ff-divider::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: linear-gradient(90deg, transparent, rgba(90, 70, 50, 0.36), transparent);
+}
+
+.ff-divider img {
+  width: 150px;
+  max-width: 34vw;
+}
+
+.ff-knot-panel {
+  position: relative;
+  border: 1px solid var(--ff-line);
+  background: rgba(246, 241, 230, 0.82);
+  padding: 1.5rem;
+}
+
+.ff-knot-panel::before {
+  content: none;
+}
+
+/* Homepage proof of direction */
+.home-page .topnav {
+  background: var(--ff-night);
+  border-bottom-color: rgba(176, 144, 96, 0.28);
+}
+
+.home-page .topnav a {
+  border-radius: 0;
+}
+
+.home-page .hero {
+  min-height: 620px;
+  padding: clamp(64px, 8vw, 104px) 24px 88px;
+  background: var(--ff-night);
+}
+
+.home-page .hero-map {
+  opacity: 0.6;
+  background-position: 61% center;
+}
+
+.home-page .hero-scrim {
+  background: linear-gradient(90deg, rgba(29, 23, 18, 0.96) 0%, rgba(29, 23, 18, 0.88) 42%, rgba(29, 23, 18, 0.3) 78%, rgba(29, 23, 18, 0.2) 100%);
+}
+
+.home-page .hero-layout {
+  width: min(1120px, 100%);
+}
+
+.home-page .hero-content {
+  align-items: flex-start;
+  max-width: 680px;
+  text-align: left;
+}
+
+.home-page .hero-edition {
+  margin: 0 0 24px;
+  color: var(--ff-antique-gold);
+  font-family: 'Marcellus', serif;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.home-page .hero-emblem {
+  width: 94px;
+  height: 94px;
+  margin: 0 0 22px;
+  filter: drop-shadow(0 4px 20px rgba(196, 98, 42, 0.32));
+}
+
+.home-page .hero-title {
+  justify-content: flex-start;
+  padding: 0;
+  font-size: clamp(43px, 7vw, 76px);
+  letter-spacing: 0.025em;
+  text-wrap: balance;
+}
+
+.home-page .hero-title .title-gem {
+  display: none;
+}
+
+.home-page .hero-sub {
+  margin-bottom: 25px;
+  color: var(--ff-antique-gold);
+  font-size: clamp(17px, 2.2vw, 22px);
+}
+
+.home-page .hero-lede {
+  margin-bottom: 34px;
+  color: rgba(246, 241, 230, 0.82);
+}
+
+.home-page .search-wrap {
+  max-width: 540px;
+}
+
+.home-page .search-inner {
+  border-radius: 0;
+  border-color: rgba(176, 144, 96, 0.72);
+  background: rgba(29, 23, 18, 0.72);
+}
+
+.home-page .hero-cta {
+  justify-content: flex-start;
+}
+
+.home-page .btn {
+  border-radius: 0;
+}
+
+.home-page .btn-primary {
+  background: var(--ff-burnt-orange-dark);
+  border-color: var(--ff-burnt-orange-dark);
+}
+
+.home-page .btn-primary:hover {
+  background: #843818;
+  border-color: #843818;
+}
+
+.home-page .stats {
+  justify-content: center;
+  background: var(--ff-slate-blue);
+  border: 0;
+}
+
+.home-page .stat {
+  flex: 0 1 220px;
+  padding: 15px 18px 14px;
+  border-right-color: rgba(246, 241, 230, 0.18);
+}
+
+.home-page .stat-num {
+  display: inline;
+  margin-right: 6px;
+  font-size: 17px;
+}
+
+.home-page .stat-label {
+  color: rgba(246, 241, 230, 0.78);
+  font-size: 12px;
+}
+
+.home-page .stats-method {
+  margin-top: 18px;
+  color: var(--ff-slate-blue);
+}
+
+.home-page .wrap {
+  max-width: 900px;
+}
+
+.home-page .feature-row {
+  width: min(1160px, calc(100vw - 48px));
+  grid-template-columns: minmax(0, 1.25fr) minmax(300px, 0.75fr);
+  gap: clamp(34px, 6vw, 76px);
+  padding-top: 72px;
+}
+
+.home-page .section {
+  padding-top: 64px;
+}
+
+.home-page .section-rule {
+  justify-content: flex-start;
+  margin-bottom: 18px;
+}
+
+.home-page .section-rule::before {
+  flex: 0 0 104px;
+  height: 42px;
+  background: url("assets/ornaments/generated-variants/oak-divider-horizontal.png") center / contain no-repeat;
+  opacity: 0.58;
+}
+
+.home-page .section-rule::after {
+  background: linear-gradient(90deg, rgba(90, 70, 50, 0.32), transparent);
+}
+
+.home-page .section-rule span {
+  color: var(--ff-oak-brown);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+}
+
+.home-page .lotw-hero {
+  border-radius: 0;
+  border-color: var(--ff-oak-brown);
+  box-shadow: 14px 16px 0 rgba(83, 102, 122, 0.13);
+}
+
+.home-page .place-key {
+  justify-content: flex-start;
+}
+
+.home-page .place-key a {
+  border-radius: 0;
+  background: transparent;
+}
+
+.home-page .recent-grid {
+  display: block;
+  border-top: 1px solid var(--ff-line);
+}
+
+.home-page .recent-card {
+  display: grid;
+  grid-template-columns: minmax(190px, 1.2fr) minmax(150px, 1fr) auto;
+  align-items: baseline;
+  gap: 18px;
+  padding: 15px 4px;
+  border: 0;
+  border-bottom: 1px solid var(--ff-line);
+  border-radius: 0;
+  background: transparent;
+}
+
+.home-page .recent-card:hover {
+  transform: none;
+  border-bottom-color: var(--ff-burnt-orange);
+  background: rgba(176, 144, 96, 0.07);
+}
+
+.home-page .recent-name,
+.home-page .recent-region,
+.home-page .recent-cat {
+  margin: 0;
+}
+
+.home-page .recent-cat {
+  justify-self: end;
+  border-radius: 0;
+  background: var(--ff-sage-green);
+}
+
+.home-page .bottom-cta {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px 34px;
+  align-items: center;
+  margin-top: 76px;
+  padding: 34px 0;
+  border-top: 1px solid var(--ff-antique-gold);
+  border-bottom: 1px solid var(--ff-antique-gold);
+  border-radius: 0;
+  background: transparent;
+  text-align: left;
+}
+
+.home-page .bottom-cta::before {
+  display: none;
+}
+
+.home-page .bottom-cta h2,
+.home-page .bottom-cta p {
+  max-width: 620px;
+  margin: 0;
+  color: var(--ff-ink);
+}
+
+.home-page .bottom-cta p {
+  grid-column: 1;
+  color: var(--ff-oak-brown);
+}
+
+.home-page .bottom-cta-btns {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+
+@media (max-width: 820px) {
+  .home-page .hero {
+    min-height: auto;
+  }
+
+  .home-page .hero-map {
+    background-position: 68% center;
+  }
+
+  .home-page .feature-row {
+    width: 100%;
+    gap: 54px;
+  }
+
+  .home-page .bottom-cta {
+    grid-template-columns: 1fr;
+  }
+
+  .home-page .bottom-cta-btns {
+    grid-column: 1;
+    grid-row: auto;
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 560px) {
+  .home-page .hero {
+    padding: 52px 20px 60px;
+  }
+
+  .home-page .hero-scrim {
+    background: rgba(29, 23, 18, 0.82);
+  }
+
+  .home-page .hero-emblem {
+    width: 72px;
+    height: 72px;
+  }
+
+  .home-page .hero-title {
+    font-size: clamp(40px, 14vw, 58px);
+  }
+
+  .home-page .stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .home-page .stat {
+    border-bottom: 1px solid rgba(246, 241, 230, 0.18);
+  }
+
+  .home-page .recent-card {
+    grid-template-columns: 1fr auto;
+    gap: 4px 12px;
+  }
+
+  .home-page .recent-region {
+    grid-column: 1;
+  }
+
+  .home-page .recent-cat {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-page .lotw-hero-media,
+  .home-page .recent-card,
+  .home-page .btn {
+    transition: none;
+  }
+}
+
+/* Second-pass landing page composition */
+.home-page .hero {
+  min-height: 560px;
+  padding: clamp(34px, 5vw, 58px) 24px 64px;
+}
+
+.home-page .hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 660px) minmax(280px, 370px);
+  gap: clamp(44px, 7vw, 92px);
+  align-items: center;
+  width: min(1180px, 100%);
+  margin-left: max(0px, calc((100vw - 1240px) / 2));
+  margin-right: auto;
+}
+
+.home-page .hero-content {
+  max-width: 660px;
+}
+
+.home-page .hero-edition {
+  margin-bottom: 15px;
+}
+
+.home-page .hero-emblem {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 15px;
+}
+
+.home-page .hero-title {
+  font-size: clamp(42px, 6vw, 70px);
+}
+
+.home-page .hero-sub {
+  margin-bottom: 18px;
+}
+
+.home-page .hero-lede {
+  margin-bottom: 27px;
+  max-width: 610px;
+}
+
+.home-page .hero-feature {
+  position: relative;
+  width: 100%;
+  padding: 14px 13px 13px;
+  border: 1px solid rgba(176, 144, 96, 0.28);
+  background: rgba(29, 23, 18, 0.64);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(2px);
+}
+
+.home-page .hero-feature::before {
+  content: none;
+}
+
+.home-page .hero-feature > * {
+  position: relative;
+  z-index: 1;
+}
+
+.home-page .hero-feature-label {
+  margin: 0 3px 12px;
+  color: var(--ff-antique-gold);
+  font-family: 'Marcellus', serif;
+  font-size: 10px;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+}
+
+.home-page .hero-feature .lotw-hero {
+  margin: 25px 22px 20px;
+  aspect-ratio: 4 / 3;
+  overflow: visible;
+  border: 0;
+  box-shadow: 0 16px 30px rgba(0,0,0,.28);
+}
+
+.home-page .hero-feature .lotw-hero::after {
+  content: "";
+  position: absolute;
+  inset: -29px;
+  z-index: 4;
+  background: url("assets/ornaments/generated-variants/celtic-frame-realistic-v2.png") center / 100% 100% no-repeat;
+  filter: drop-shadow(0 6px 7px rgba(0,0,0,.35));
+  pointer-events: none;
+}
+
+.home-page .hero-feature .lotw-hero:hover .lotw-hero-media,
+.home-page .hero-feature .lotw-hero:focus-visible .lotw-hero-media {
+  transform: none;
+}
+
+.home-page .hero-feature .lotw-hero-copy {
+  padding: 17px 36px 37px;
+}
+
+.home-page .hero-feature .lotw-name {
+  font-size: clamp(20px, 2.4vw, 27px);
+}
+
+.home-page .hero-feature .lotw-maplink {
+  margin: 9px 3px 1px;
+  color: var(--ff-antique-gold);
+}
+
+.home-page .wrap {
+  max-width: 960px;
+  padding-top: 46px;
+}
+
+.home-page .recent-panel {
+  position: relative;
+  overflow: hidden;
+  margin-top: 0;
+  padding: 34px 38px 39px;
+  border: 1px solid rgba(90, 70, 50, 0.3);
+  outline: 1px solid rgba(176, 144, 96, 0.26);
+  outline-offset: -7px;
+  background:
+    linear-gradient(105deg, rgba(255,255,255,.5), transparent 44%),
+    rgba(246, 241, 230, 0.78);
+  box-shadow: 0 18px 46px rgba(63, 48, 35, 0.08);
+  backdrop-filter: blur(3px);
+}
+
+.home-page .recent-panel::before,
+.home-page .recent-panel::after {
+  content: "";
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+.home-page .recent-panel::before {
+  left: -45px;
+  bottom: -50px;
+  background: url("assets/ornaments/generated-variants/oak-corner-v1.png") left bottom / contain no-repeat;
+}
+
+.home-page .recent-panel::after {
+  top: -48px;
+  right: -34px;
+  background: url("assets/ornaments/generated-variants/oak-corner-upper-right.png") right top / contain no-repeat;
+}
+
+.home-page .recent-panel .section-rule {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 4px;
+}
+
+.home-page .recent-intro {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 22px 82px;
+  color: var(--ff-oak-brown);
+  font-size: 14px;
+  font-style: italic;
+}
+
+.home-page .recent-panel .recent-grid {
+  position: relative;
+  z-index: 1;
+  border: 1px solid rgba(90,70,50,.2);
+  background: rgba(255,255,255,.24);
+}
+
+.home-page .recent-panel .recent-card {
+  grid-template-columns: 34px minmax(180px, 1.2fr) minmax(130px, .8fr) 92px auto 16px;
+  padding: 15px 14px;
+}
+
+.home-page .recent-panel .recent-card:nth-child(even) {
+  background: rgba(176,144,96,.07);
+}
+
+.home-page .recent-index {
+  color: var(--ff-antique-gold);
+  font-family: 'Marcellus', serif;
+  font-size: 10px;
+  letter-spacing: .08em;
+}
+
+.home-page .recent-date {
+  color: var(--ff-slate-blue);
+  font-size: 11px;
+  font-style: italic;
+  white-space: nowrap;
+}
+
+.home-page .recent-panel .recent-card::after {
+  content: "›";
+  color: var(--ff-antique-gold);
+  font-size: 19px;
+  line-height: 1;
+  transition: transform .15s, color .15s;
+}
+
+.home-page .recent-panel .recent-card:hover::after {
+  color: var(--ff-burnt-orange);
+  transform: translateX(2px);
+}
+
+@media (max-width: 900px) {
+  .home-page .hero-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(250px, 320px);
+    gap: 34px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 760px) {
+  .home-page .hero-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .home-page .hero-feature {
+    max-width: 430px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 560px) {
+  .home-page .hero {
+    padding-top: 34px;
+  }
+
+  .home-page .recent-panel {
+    padding: 23px 20px 26px;
+  }
+
+  .home-page .recent-intro {
+    margin-left: 0;
+  }
+
+  .home-page .recent-panel .recent-card {
+    grid-template-columns: 28px 1fr auto 14px;
+    gap: 5px 9px;
+  }
+
+  .home-page .recent-region,
+  .home-page .recent-date {
+    grid-column: 2;
+  }
+
+  .home-page .recent-date {
+    display: none;
+  }
+
+  .home-page .recent-panel .recent-cat {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+  }
+
+  .home-page .recent-panel .recent-card::after {
+    grid-column: 4;
+    grid-row: 1 / span 2;
+  }
+}

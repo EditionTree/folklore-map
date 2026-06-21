@@ -2356,6 +2356,51 @@
         "Setting": "Windover Hill",
         "Motif": "Unknown age and meaning"
       }
+    },
+    "Zennor": {
+      "priority": 158,
+      "image": "legend-images/zennor-hero.jpg",
+      "alt": "The carved medieval mermaid bench-end inside St Senara Church at Zennor in soft Cornish daylight",
+      "caption": "A visual interpretation of the mermaid bench-end at St Senara Church, Zennor",
+      "map_title": "St Senara Church, Zennor",
+      "section_heading": "The singer beneath Pendour Cove",
+      "pullquote": "Ships in the cove are said to sometimes hear Trewhella's voice rising from the water, still singing.",
+      "facts": {
+        "Tradition": "Cornish folklore",
+        "Landmark": "Mermaid bench-end",
+        "Setting": "St Senara Church",
+        "Motif": "Song beneath the sea"
+      }
+    },
+    "Wayland the Smith": {
+      "priority": 159,
+      "image": "legend-images/wayland-the-smith-hero.jpg",
+      "alt": "Wayland's Smithy at dawn with an unshod horse waiting beside the Neolithic barrow on the Ridgeway",
+      "caption": "A visual interpretation of Wayland the Smith at Wayland's Smithy on the Ridgeway",
+      "map_title": "Wayland's Smithy, Oxfordshire",
+      "section_heading": "The smith at the barrow",
+      "pullquote": "Tradition — already old when the Saxons named the place — held that a traveller whose horse had cast a shoe need only leave the beast there with a coin overnight, and by morning the unseen smith would have shod it.",
+      "facts": {
+        "Tradition": "Anglo-Saxon legend",
+        "Type": "Supernatural smith",
+        "Setting": "Wayland's Smithy",
+        "Motif": "Horse shod overnight"
+      }
+    },
+    "Old Man of Storr": {
+      "priority": 160,
+      "image": "legend-images/old-man-of-storr-hero.jpg",
+      "alt": "The black basalt pinnacle of the Old Man of Storr rising above wet grass on Skye with sea beyond",
+      "caption": "A visual interpretation of the Old Man of Storr on the Trotternish Ridge",
+      "map_title": "Trotternish Ridge, Skye",
+      "section_heading": "The giant in the hillside",
+      "pullquote": "When the giant died and was buried in the hillside, his thumb was left protruding above the ground — and there it has stood ever since, weathering into the jagged spire seen today.",
+      "facts": {
+        "Tradition": "Skye giant lore",
+        "Type": "Petrified giant",
+        "Setting": "Trotternish Ridge",
+        "Motif": "A giant's thumb"
+      }
     }
   }
 }

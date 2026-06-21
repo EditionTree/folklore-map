@@ -1,12 +1,14 @@
 :root{
-  --ink:#24190f;
-  --ink-soft:#594735;
-  --paper:#f3ead7;
-  --paper-deep:#e5d5b8;
+  --ink:#3f3023;
+  --ink-soft:#5a4632;
+  --paper:#f6f1e6;
+  --paper-deep:#efe4cf;
   --night:#17130f;
-  --rust:#a64c24;
-  --rust-dark:#783319;
-  --line:#b99e72;
+  --rust:#c4622a;
+  --rust-dark:#9d461f;
+  --line:#b09060;
+  --sage:#66735a;
+  --slate:#53667a;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -15,7 +17,7 @@ body{
   color:var(--ink);
   background:
     radial-gradient(circle at 8% 8%,rgba(166,76,36,.09),transparent 25rem),
-    linear-gradient(180deg,#d7c29e 0,#ede1ca 36rem,var(--paper-deep) 100%);
+    linear-gradient(180deg,#e5d7bd 0,var(--paper) 36rem,var(--paper-deep) 100%);
   font-family:'Spectral',Georgia,serif;
   line-height:1.72;
 }
@@ -52,6 +54,7 @@ button{font:inherit}
   background:linear-gradient(130deg,#3d2818,#17100b 58%,#291a10);
   border-bottom:1px solid rgba(185,158,114,.45);
 }
+.brandbar::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,rgba(176,144,96,.62),rgba(196,98,42,.5),rgba(176,144,96,.62),transparent)}
 .brand{
   display:inline-flex;
   align-items:center;
@@ -80,7 +83,7 @@ button{font:inherit}
   min-height:570px;
   overflow:hidden;
   border:1px solid rgba(71,51,29,.55);
-  border-radius:8px 8px 3px 3px;
+  border-radius:0;
   background:#161b1e;
   box-shadow:0 18px 45px rgba(36,25,15,.26);
 }
@@ -220,7 +223,8 @@ h1{
   letter-spacing:.16em;
   text-transform:uppercase;
 }
-.article-label::after{content:'';width:90px;height:1px;background:var(--line)}
+.article-label::before{content:"";width:76px;height:32px;flex:0 0 auto;opacity:.56;background:url("assets/ornaments/generated-variants/oak-divider-horizontal.png") center/contain no-repeat}
+.article-label::after{content:'';width:90px;height:1px;background:linear-gradient(90deg,var(--line),transparent)}
 .article p{margin:0 0 22px;font-size:18px}
 .article .opening::first-letter{
   float:left;
@@ -254,7 +258,7 @@ h1{
   min-height:44px;
   padding:10px 18px;
   border:1px solid var(--ink);
-  border-radius:3px;
+  border-radius:0;
   background:var(--ink);
   color:var(--paper);
   font-family:'Marcellus',serif;
@@ -269,12 +273,14 @@ h1{
 .share-status{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .sidebar{display:grid;gap:18px;position:sticky;top:18px}
 .side-card{
+  position:relative;
   overflow:hidden;
   border:1px solid var(--line);
-  border-radius:5px;
-  background:rgba(243,234,215,.9);
+  border-radius:0;
+  background:rgba(246,241,230,.78);
   box-shadow:0 7px 22px rgba(36,25,15,.09);
 }
+.side-card:first-child::after{content:"";position:absolute;top:-42px;right:-42px;width:160px;height:160px;opacity:.08;background:url("assets/ornaments/generated-variants/oak-corner-upper-right.png") right top/contain no-repeat;pointer-events:none;z-index:401}
 .side-pad{padding:22px}
 .side-kicker{
   margin:0 0 4px;
@@ -317,7 +323,7 @@ h1{
   padding:18px 22px;
   border:1px solid var(--line);
   border-left:3px solid var(--rust);
-  border-radius:5px;
+  border-radius:0;
   background:rgba(229,213,184,.5);
 }
 .editor-note .editor-kicker{
@@ -365,7 +371,7 @@ h1{
   justify-content:flex-end;
   padding:22px;
   border:1px solid #a88c61;
-  border-radius:4px;
+  border-radius:0;
   color:#f4ead7;
   background:
     linear-gradient(0deg,rgba(18,13,9,.92),rgba(18,13,9,.18)),

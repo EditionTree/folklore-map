@@ -54,17 +54,19 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --parchment:    #f2e8d5;
-      --parchment-dk: #e0d0b0;
-      --ink:          #2c1f0e;
-      --ink-light:    #5c4a2a;
-      --accent:       #8b3a1a;
-      --accent-glow:  #c4622a;
+      --parchment:    #f6f1e6;
+      --parchment-dk: #e8dcc5;
+      --ink:          #3f3023;
+      --ink-light:    #5a4632;
+      --accent:       #c4622a;
+      --accent-glow:  #d37a49;
       --border:       #b09060;
-      --shadow:       rgba(44, 31, 14, 0.25);
-      --wood-dark:    #211308;
-      --wood-mid:     #4a2d16;
-      --wood-light:   #6a4524;
+      --sage:         #66735a;
+      --slate:        #53667a;
+      --shadow:       rgba(63, 48, 35, 0.22);
+      --wood-dark:    #211812;
+      --wood-mid:     #5a4632;
+      --wood-light:   #756049;
       --frame-metal:  #b7955d;
       --frame-leaf:   rgba(216,190,133,0.58);
       --font-display: 'Marcellus', serif;
@@ -161,7 +163,7 @@
     }
     body.night .map-border::before,
     body.night .map-border::after {
-      opacity: .52;
+      opacity: .2;
       filter: sepia(.2) hue-rotate(165deg) saturate(.7) drop-shadow(0 1px rgba(0,4,12,.7));
     }
     body.night .sidebar {
@@ -392,7 +394,7 @@
       font-size: 13px;
       min-height: 30px;
       padding: 4px 11px;
-      border-radius: 3px;
+      border-radius: 0;
       border: 1px solid var(--border);
       background: transparent;
       color: var(--ink-light);
@@ -453,13 +455,13 @@
     .map-border::after {
       content: '';
       position: absolute;
-      width: 128px;
-      height: 82px;
-      opacity: .78;
+      width: 190px;
+      height: 190px;
+      opacity: .22;
       background-repeat: no-repeat;
       background-size: contain;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 100'%3E%3Cg fill='none' stroke='%23d8be85' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 92C36 75 49 47 54 10M22 82C18 68 25 59 40 56M38 64C52 58 59 48 59 34M49 45C38 35 38 24 48 15M56 33C67 23 78 21 90 26M72 25C73 12 83 6 98 8'/%3E%3Cpath d='M24 79c-13-1-19-8-18-20 12-1 20 5 18 20zm17-23c-12-5-15-14-10-24 12 3 17 11 10 24zm14-15c7-11 16-14 27-8-5 11-14 15-27 8zm19-16c4-12 13-18 25-14-2 12-11 18-25 14z' fill='%23d8be85' fill-opacity='.2'/%3E%3C/g%3E%3C/svg%3E");
-      filter: drop-shadow(0 1px rgba(19,10,4,.5));
+      background-image: url("assets/ornaments/generated-variants/oak-corner-upper-left.png");
+      filter: sepia(.12) saturate(.7) drop-shadow(0 2px 2px rgba(19,10,4,.22));
     }
     .map-border::before {
       top: -2px;
@@ -474,7 +476,7 @@
     .leaflet-popup-content-wrapper {
       background: var(--parchment) !important;
       border: 1px solid var(--border) !important;
-      border-radius: 4px !important;
+      border-radius: 0 !important;
       box-shadow: 0 4px 20px var(--shadow) !important;
       padding: 0 !important;
     }
@@ -751,8 +753,7 @@
       position: relative;
       padding: 8px 9px 9px;
       background:
-        radial-gradient(ellipse at 18% 20%, rgba(147,94,43,.28) 0 2%, transparent 11%),
-        radial-gradient(ellipse at 73% 76%, rgba(117,67,27,.24) 0 2%, transparent 10%),
+        linear-gradient(90deg, rgba(176,144,96,.1), transparent 28%, rgba(29,23,18,.12)),
         linear-gradient(180deg,var(--wood-light),var(--wood-mid) 38%,var(--wood-dark));
       box-shadow:
         inset 0 2px 5px rgba(10,5,2,.75),
@@ -764,7 +765,7 @@
       overflow: hidden;
       min-height: 0;
       border: 2px solid var(--frame-metal);
-      border-radius: 3px;
+      border-radius: 0;
       box-shadow:
         0 0 0 2px rgba(31,17,7,.88),
         0 4px 12px rgba(18,9,3,.42),
@@ -792,7 +793,8 @@
         inset -7px 0 12px rgba(70,43,18,.06);
     }
     .sidebar.collapsed { width: 0; opacity: 0; pointer-events: none; }
-    .sidebar-header { padding: 17px 17px 13px; border-bottom: 1px solid var(--border); flex-shrink: 0; }
+    .sidebar-header { position:relative;padding:17px 17px 33px;border-bottom:1px solid var(--border);flex-shrink:0; }
+    .sidebar-header::after { content:"";position:absolute;left:15px;bottom:2px;width:92px;height:28px;opacity:.48;background:url("assets/ornaments/generated-variants/oak-divider-horizontal.png") left center/contain no-repeat;pointer-events:none; }
     .sidebar-title { font-family: var(--font-display); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); margin-bottom: 3px; }
     .sidebar-subtitle { font-size: 12px; color: var(--ink-light); font-style: italic; }
     .sidebar-list { flex: 1; overflow-y: auto; overflow-x: hidden; padding: 5px 0 10px; }
@@ -890,7 +892,7 @@
     }
   </style>
 </head>
-<body>
+<body class="map-page">
 
 <header>
   <div class="header-title">

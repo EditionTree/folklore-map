@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-20T18:47:26.919180Z",
+  "generated": "2026-06-21T19:07:45.079302Z",
   "total": 648,
   "categories": {
     "beast": "Beasts",
@@ -1976,13 +1976,23 @@
       "lng": -4.8938,
       "category": "location",
       "region": "Cornwall",
-      "summary": "A Cornish hillfort landscape linked to Castle an Dinas and the old legendary geography of giants, saints, and hidden strongholds. Its height and isolation made it a natural home for stories.",
+      "summary": "Crowning the hilltop of Castle an Dinas, this triple-ringed Iron Age fort served as King Arthur’s legendary hunting seat — a place where ghost soldiers still drill by moonlight.",
       "source": "https://en.wikipedia.org/wiki/Castle_Downs%2C_Cornwall",
       "date_added": "2026-06-03",
       "tags": [
         "castle",
+        "hill",
+        "moor",
+        "haunting",
+        "spectral",
+        "arthurian",
         "england",
         "cornwall"
+      ],
+      "detail": "Castle an Dinas, the great hillfort at the summit of Castle Downs near St Columb Major, is one of Cornwall’s most storied ancient sites. Arthurian tradition names it as King Arthur’s hunting lodge, from which he rode out to hunt across Tregoss Moor. A lost stone near St Columb was once said to bear the four hoofprints of his horse. William of Worcester recorded the site’s legends during his 1478 visit to Cornwall, noting that Gorlois, Duke of Cornwall and husband of Ygraine — Arthur’s mother — was slain here. The 1504 Cornish-language play Beunans Meriasek further cemented the fort as a seat of the Dukes of Cornwall in local tradition.\n\nThe hillfort’s supernatural reputation extends beyond Arthurian romance. Cornish historian Samuel Drew recorded an extraordinary sighting from around the late eighteenth century: a spectral army appeared in the sky above the fort, possibly an unusual atmospheric phenomenon that locals interpreted through the lens of legend. In 1867, the Cornish scholar Henry Jenner collected a story from an elderly man at nearby Quoit who claimed to have witnessed the ghosts of King Arthur’s soldiers drilling within the ramparts, their muskets glinting in the moonlight. The Old Cornwall Society maintains ancient tradition by holding midsummer bonfires at the summit each year, honouring the Summer Solstice with ceremonies rooted in pre-Christian observance.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Castle_an_Dinas,_St_Columb_Major",
+        "https://www.cornwallheritagetrust.org/our_sites/castle-an-dinas/"
       ]
     },
     {
@@ -10355,15 +10365,25 @@
       "lng": -5.4077,
       "category": "location",
       "region": "Cornwall",
-      "summary": "A dune landscape in Cornwall associated with shifting sands, lost paths, and buried traces of earlier settlements. It sits within the same legendary coastline as Lyonesse and drowned church-bell tales.",
+      "summary": "Beneath these Cornish dunes lies the Lost City of Connor, swallowed by sand along with St Gwithian’s ancient church — while storm winds are said to reveal the turrets of a tyrant king’s castle.",
       "source": "https://en.wikipedia.org/wiki/The_Towans",
       "date_added": "2026-06-03",
       "tags": [
         "coast",
+        "sea",
         "church",
+        "castle",
+        "vanishing",
         "drowning",
+        "sacrifice",
         "england",
         "cornwall"
+      ],
+      "detail": "The Towans — from the Cornish tewyn, meaning sand dune — stretch for three miles along St Ives Bay between the Hayle estuary and Gwithian beach. Beneath their shifting surface lie the remains of the Lost City of Connor, once so significant it served as the administrative seat of the Hundred of Penwith before successive sand inundations forced the courts to relocate to Penzance in 1771. The ruins of St Gwithian’s chapel, built around 490 AD and dedicated to the patron saint of good fortune at sea, were briefly uncovered from the beach and dunes in the early nineteenth century before the shifting sands reclaimed them.\n\nLocal legend tells that during fierce gales the turrets of a castle belonging to King Teudar can be glimpsed through the storm. Teudar (sometimes Latinised as Theodoric) was a Breton exile who ruled Penwith from Carnsew near Hayle in the sixth century, and became infamous for martyring Irish missionary saints — including St Gwinear, whom he cast into a pit of serpents, and members of St Breaca’s mission. His cruelty was so notorious that later hagiographers blamed him for persecutions he could not possibly have committed. Beyond legend, the dunes have genuinely swallowed real buildings: sometime after 1650 the farmhouse at Upton Barton was buried overnight when a high dune collapsed, its occupants escaping through the upper windows. The ruins were last seen in the winter of 1808–09, before the sands closed over them for good.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/The_Towans",
+        "https://en.wikipedia.org/wiki/Gwithian",
+        "https://wikishire.co.uk/wiki/The_Towans"
       ]
     },
     {

@@ -352,16 +352,16 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 .banner-title i{color:#c4622a;font-style:normal;font-size:.6em;flex-shrink:0}
 .banner-sub{font-family:'Spectral',serif;font-size:12px;font-style:italic;color:rgba(176,144,96,.8);letter-spacing:.04em}
 @media(max-width:560px){.banner-title{font-size:15px}.banner-emblem{width:38px;height:38px}.banner-sub{font-size:11px}}
-.wrap{max-width:960px;margin:0 auto;padding:30px 20px 64px}
+.wrap{width:min(1440px,calc(100% - 56px));max-width:none;margin:0 auto;padding:34px 0 68px}
 .crumb{font-size:12px;color:#5c4a2a;margin-bottom:14px}
 .crumb a{color:#8b3a1a;text-decoration:none}
-.browse-h1{font-family:'Marcellus',serif;font-size:clamp(27px,4vw,38px);margin-bottom:6px;color:#3f3023;line-height:1.15;font-weight:400}
+.browse-h1{font-family:'Marcellus',serif;font-size:clamp(32px,4vw,48px);margin-bottom:6px;color:#3f3023;line-height:1.12;font-weight:400}
 .browse-h1::after{content:"";display:block;width:132px;height:40px;margin:9px 0 5px;background:url('/assets/ornaments/generated-variants/oak-divider-horizontal.png') left center/contain no-repeat;opacity:.55}
-.browse-intro{font-size:16px;color:#5c4a2a;margin-bottom:16px}
+.browse-intro{max-width:780px;font-size:17px;color:#5c4a2a;margin-bottom:20px;line-height:1.6}
 .browse-nav{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}
 .browse-nav a{font-family:'Marcellus',serif;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#9d461f;border:1px solid rgba(90,70,50,.35);border-radius:0;padding:5px 11px;text-decoration:none}
 .browse-nav a:hover,.browse-nav a.active{background:#5a4632;color:#f6f1e6;border-color:#5a4632}
-.browse-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:13px}
+.browse-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:15px}
 .b-card{position:relative;background:rgba(246,241,230,.74);border:1px solid rgba(90,70,50,.3);border-radius:0;padding:16px 17px;text-decoration:none;color:#3f3023;box-shadow:inset 0 0 0 5px rgba(255,255,255,.15);transition:border-color .15s,transform .1s,background .15s}
 .b-card:hover{border-color:#c4622a;transform:translateY(-2px)}
 .b-card span{display:block}
@@ -376,8 +376,8 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 .pagination .current{background:#8b3a1a;color:#f2e8d5;border-color:#8b3a1a}
 .pagination .disabled{color:#b09060;border-color:#d8c8a8;cursor:default}
 .pagination .gap{border:none;color:#5c4a2a;min-width:auto;padding:6px 2px}
-@media(max-width:560px){.browse-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:380px){.browse-grid{grid-template-columns:1fr}}
+@media(max-width:900px){.wrap{width:calc(100% - 32px)}}
+@media(max-width:620px){.browse-grid{grid-template-columns:1fr}}
 """
 
 
@@ -400,7 +400,7 @@ def build_browse_page(page_title, desc, url, h1, intro, crumb, nav_html, cards_h
             '<link rel="preconnect" href="https://fonts.googleapis.com">\n'
             '<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">\n'
             + jsonld_html + head_extra
-            + '<style>' + BROWSE_STYLE + TOPNAV_CSS + '</style></head>\n<body>\n'
+            + '<style>' + BROWSE_STYLE + TOPNAV_CSS + '</style></head>\n<body class="catalogue-page">\n'
             + topnav_html(nav_active) + '\n' + banner_html() + '\n<div class="wrap">\n'
             '<nav class="crumb"><a href="' + BASE + '/">Home</a> &#8250; '
             '<a href="' + BASE + '/' + OUT_DIR + '/">All legends</a> &#8250; '
@@ -1460,9 +1460,11 @@ def build():
 </section>'''
     browse_sections = (
         place_explorer
+        + '<div class="browse-link-sections">'
         + collection_sec
         + '<div class="browse-sec"><h2>Browse by category</h2><div class="cat-links">' + cat_links + '</div></div>'
         '<div class="browse-sec"><h2>Browse by region</h2><div class="region-links">' + region_links + '</div></div>'
+        '</div>'
         '<h2 class="azh">A&#8211;Z</h2>'
     )
 
@@ -1510,9 +1512,10 @@ body{{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparen
 .banner-title i{{color:#c4622a;font-style:normal;font-size:.6em;flex-shrink:0}}
 .banner-sub{{font-family:'Spectral',serif;font-size:12px;font-style:italic;color:rgba(176,144,96,.8);letter-spacing:.04em}}
 @media(max-width:560px){{.banner-title{{font-size:15px}}.banner-emblem{{width:38px;height:38px}}.banner-sub{{font-size:11px}}}}
-.wrap{{max-width:1180px;margin:0 auto;padding:24px 20px 60px}}
-h1{{font-family:'Marcellus',serif;font-size:26px;margin-bottom:18px}}
-.az{{column-count:8;column-gap:20px}}
+.wrap{{width:min(1600px,calc(100% - 56px));max-width:none;margin:0 auto;padding:30px 0 68px}}
+h1{{font-family:'Marcellus',serif;font-size:clamp(30px,3vw,44px);font-weight:400;margin-bottom:24px}}
+.az{{column-count:10;column-gap:24px}}
+@media(max-width:1450px){{.az{{column-count:8}}}}
 @media(max-width:1100px){{.az{{column-count:6}}}}
 @media(max-width:880px){{.az{{column-count:4}}}}
 @media(max-width:680px){{.az{{column-count:3}}}}
@@ -1523,17 +1526,20 @@ h1{{font-family:'Marcellus',serif;font-size:26px;margin-bottom:18px}}
 .az li{{break-inside:avoid;padding:5px 0;border-bottom:.5px solid rgba(176,144,96,.3)}}
 .az li a{{color:#8b3a1a;text-decoration:none;font-size:15px}}
 .az li span{{display:block;font-size:11.5px;font-style:italic;color:#5c4a2a}}
-.browse-sec{{margin-bottom:26px}}
-.browse-sec h2,.azh{{font-family:'Marcellus',serif;font-size:18px;margin-bottom:13px;color:#2c1f0e}}
-.azh{{margin-top:6px}}
+.browse-link-sections{{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,.9fr) minmax(0,1.3fr);gap:28px;margin:0 0 44px}}
+.browse-sec{{margin:0;padding:22px 24px 24px;border-top:1px solid rgba(90,70,50,.3);background:rgba(246,241,230,.38)}}
+.browse-sec h2,.azh{{font-family:'Marcellus',serif;font-size:19px;font-weight:400;margin-bottom:15px;color:#3f3023}}
+.azh{{margin:0 0 20px;padding-top:24px;border-top:1px solid rgba(90,70,50,.28)}}
+.browse-link-sections .browse-sec:last-child .region-links{{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}}
+.browse-link-sections .browse-sec:last-child .region-links a{{justify-content:space-between}}
 .cat-links,.region-links{{display:flex;flex-wrap:wrap;gap:9px}}
 .cat-links a,.region-links a{{display:inline-flex;align-items:center;gap:7px;font-family:'Marcellus',serif;font-size:13px;color:#3f3023;background:rgba(246,241,230,.72);border:1px solid rgba(90,70,50,.32);border-radius:0;padding:7px 13px;text-decoration:none;box-shadow:inset 0 0 0 3px rgba(255,255,255,.12)}}
 .cat-links a:hover,.region-links a:hover{{border-color:#c4622a}}
 .c-count{{font-size:11px;color:#5c4a2a;font-style:italic}}
 .c-dot{{width:10px;height:10px;border-radius:50%;display:inline-block;flex-shrink:0}}
-.place-explorer{{display:grid;grid-template-columns:minmax(230px,340px) 1fr;align-items:center;gap:clamp(30px,6vw,76px);margin:4px 0 44px;padding:30px 38px;border:1px solid rgba(90,70,50,.22);background:rgba(246,241,230,.72);box-shadow:0 16px 40px rgba(63,48,35,.08)}}
+.place-explorer{{display:grid;grid-template-columns:minmax(320px,520px) minmax(0,1fr);align-items:center;gap:clamp(42px,7vw,110px);margin:4px 0 44px;padding:42px 54px;border:1px solid rgba(90,70,50,.22);background:rgba(246,241,230,.72);box-shadow:0 16px 40px rgba(63,48,35,.08)}}
 .place-map-wrap{{display:flex;justify-content:center;background:radial-gradient(circle,rgba(176,144,96,.15),transparent 68%)}}
-.place-map{{display:block;width:min(100%,290px);height:auto;overflow:visible}}
+.place-map{{display:block;width:min(100%,430px);height:auto;overflow:visible}}
 .place-shape use{{fill:rgba(102,115,90,.2);stroke:#5a4632;stroke-width:1.7;vector-effect:non-scaling-stroke;transition:fill .18s,stroke .18s}}
 .place-shape:hover use,.place-shape:focus use{{fill:#c4622a;stroke:#3f3023}}
 .place-copy{{position:relative}}
@@ -1544,7 +1550,9 @@ h1{{font-family:'Marcellus',serif;font-size:26px;margin-bottom:18px}}
 .place-links{{display:flex;flex-wrap:wrap;gap:8px}}
 .place-links a{{padding:7px 12px;border:1px solid rgba(90,70,50,.35);color:#3f3023;text-decoration:none;font-family:'Marcellus',serif;font-size:12px}}
 .place-links a:hover{{border-color:#c4622a;color:#9d461f}}
-@media(max-width:680px){{.place-explorer{{grid-template-columns:1fr;padding:24px 20px;gap:18px}}.place-map{{width:min(100%,230px)}}}}
+@media(max-width:1000px){{.browse-link-sections{{grid-template-columns:1fr 1fr}}.browse-link-sections .browse-sec:last-child{{grid-column:1/-1}}}}
+@media(max-width:760px){{.wrap{{width:calc(100% - 32px)}}.place-explorer{{grid-template-columns:1fr;padding:28px 22px;gap:22px}}.place-map{{width:min(100%,280px)}}.browse-link-sections{{grid-template-columns:1fr;gap:18px}}.browse-link-sections .browse-sec:last-child{{grid-column:auto}}}}
+@media(max-width:480px){{.browse-link-sections .browse-sec:last-child .region-links{{grid-template-columns:1fr}}}}
 {TOPNAV_CSS}
 </style></head>
 <body>

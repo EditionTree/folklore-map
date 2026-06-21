@@ -28,16 +28,16 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 .banner-title i{color:#c4622a;font-style:normal;font-size:.6em;flex-shrink:0}
 .banner-sub{font-family:'Spectral',serif;font-size:12px;font-style:italic;color:rgba(176,144,96,.8);letter-spacing:.04em}
 @media(max-width:560px){.banner-title{font-size:15px}.banner-emblem{width:38px;height:38px}.banner-sub{font-size:11px}}
-.wrap{max-width:960px;margin:0 auto;padding:30px 20px 64px}
+.wrap{width:min(1440px,calc(100% - 56px));max-width:none;margin:0 auto;padding:34px 0 68px}
 .crumb{font-size:12px;color:#5c4a2a;margin-bottom:14px}
 .crumb a{color:#8b3a1a;text-decoration:none}
-.browse-h1{font-family:'Marcellus',serif;font-size:clamp(27px,4vw,38px);margin-bottom:6px;color:#3f3023;line-height:1.15;font-weight:400}
+.browse-h1{font-family:'Marcellus',serif;font-size:clamp(32px,4vw,48px);margin-bottom:6px;color:#3f3023;line-height:1.12;font-weight:400}
 .browse-h1::after{content:"";display:block;width:132px;height:40px;margin:9px 0 5px;background:url('/assets/ornaments/generated-variants/oak-divider-horizontal.png') left center/contain no-repeat;opacity:.55}
-.browse-intro{font-size:16px;color:#5c4a2a;margin-bottom:16px}
+.browse-intro{max-width:780px;font-size:17px;color:#5c4a2a;margin-bottom:20px;line-height:1.6}
 .browse-nav{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}
 .browse-nav a{font-family:'Marcellus',serif;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#9d461f;border:1px solid rgba(90,70,50,.35);border-radius:0;padding:5px 11px;text-decoration:none}
 .browse-nav a:hover,.browse-nav a.active{background:#5a4632;color:#f6f1e6;border-color:#5a4632}
-.browse-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:13px}
+.browse-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:15px}
 .b-card{position:relative;background:rgba(246,241,230,.74);border:1px solid rgba(90,70,50,.3);border-radius:0;padding:16px 17px;text-decoration:none;color:#3f3023;box-shadow:inset 0 0 0 5px rgba(255,255,255,.15);transition:border-color .15s,transform .1s,background .15s}
 .b-card:hover{border-color:#c4622a;transform:translateY(-2px)}
 .b-card span{display:block}
@@ -52,10 +52,10 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 .pagination .current{background:#8b3a1a;color:#f2e8d5;border-color:#8b3a1a}
 .pagination .disabled{color:#b09060;border-color:#d8c8a8;cursor:default}
 .pagination .gap{border:none;color:#5c4a2a;min-width:auto;padding:6px 2px}
-@media(max-width:560px){.browse-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:380px){.browse-grid{grid-template-columns:1fr}}
+@media(max-width:900px){.wrap{width:calc(100% - 32px)}}
+@media(max-width:620px){.browse-grid{grid-template-columns:1fr}}
 .topnav{display:flex;align-items:center;justify-content:center;gap:4px;background:#1a0e06;padding:11px 16px;border-bottom:1px solid rgba(176,144,96,0.2);flex-wrap:wrap}.topnav a{font-family:'Marcellus',serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:rgba(242,232,213,0.78);text-decoration:none;padding:6px 14px;border-radius:3px;transition:background .15s,color .15s}.topnav a:hover{color:#f2e8d5;background:rgba(196,98,42,0.18)}.topnav a.active{color:#c4622a}@media(max-width:640px){.topnav{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;scrollbar-width:none}.topnav::-webkit-scrollbar{display:none}.topnav a{flex:0 0 auto;white-space:nowrap}}</style></head>
-<body>
+<body class="catalogue-page">
 <nav class="topnav"><a href="https://folklorefinder.uk/">Home</a><a href="https://folklorefinder.uk/map">Map</a><a href="https://folklorefinder.uk/legends/">Browse</a><a href="https://folklorefinder.uk/legends/collections" class="active">Collections</a><a href="https://folklorefinder.uk/about">About</a><a href="https://folklorefinder.uk/updates">Updates</a></nav>
 <header class="site-banner"><a class="banner-link" href="https://folklorefinder.uk/"><img src="https://folklorefinder.uk/green-man.png" class="banner-emblem" alt=""/><span class="banner-text"><span class="banner-title"><i>&#10022;</i> Folklore Finder <i>&#10022;</i></span><span class="banner-sub">An atlas of myths, legends, &amp; stories</span></span></a></header>
 <div class="wrap">

@@ -265,8 +265,8 @@ def banner_html():
     return ('<header class="site-banner"><a class="banner-link" href="' + BASE + '/">'
             '<img src="' + BASE + '/green-man.png" class="banner-emblem" alt=""/>'
             '<span class="banner-text"><span class="banner-title"><i>&#10022;</i> '
-            'Folklore Map of Britain &amp; Ireland <i>&#10022;</i></span>'
-            '<span class="banner-sub">Myths, Legends &amp; Spectral Encounters</span>'
+            'Folklore Finder <i>&#10022;</i></span>'
+            '<span class="banner-sub">An atlas of myths, legends, &amp; stories</span>'
             '</span></a></header>')
 
 
@@ -307,7 +307,7 @@ def topnav_html(active=""):
 
 def footer_html():
     return ('<footer style="text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a">'
-            'Part of the Folklore Map of Britain &amp; Ireland &#183; &#169; EditionTree &#183; '
+            'Folklore Finder &#183; &#169; EditionTree &#183; '
             '<a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener" style="color:#5c4a2a">&#9749; Ko-fi</a> &#183; '
             '<a href="' + BASE + '/privacy" style="color:#5c4a2a">Privacy</a></footer>')
 
@@ -549,7 +549,7 @@ LEGACY_PAGE = """<!DOCTYPE html>
 <meta property="og:title" content="{ogtitle}"/>
 <meta property="og:description" content="{desc}"/>
 <meta property="og:image" content="{ogimage}"/>
-<meta property="og:site_name" content="Folklore Map of Britain &amp; Ireland"/>
+<meta property="og:site_name" content="Folklore Finder"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="{ogtitle}"/>
 <meta name="twitter:description" content="{desc}"/>
@@ -627,7 +627,7 @@ footer{{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}}
 </head>
 <body>
 {topnav}
-<header class="site-banner"><a class="banner-link" href="{base}/"><img src="{base}/green-man.png" class="banner-emblem" alt=""/><span class="banner-text"><span class="banner-title"><i>&#10022;</i> Folklore Map of Britain &amp; Ireland <i>&#10022;</i></span><span class="banner-sub">Myths, Legends &amp; Spectral Encounters</span></span></a></header>
+<header class="site-banner"><a class="banner-link" href="{base}/"><img src="{base}/green-man.png" class="banner-emblem" alt=""/><span class="banner-text"><span class="banner-title"><i>&#10022;</i> Folklore Finder <i>&#10022;</i></span><span class="banner-sub">An atlas of myths, legends, &amp; stories</span></span></a></header>
 <div class="wrap">
 {breadcrumb}
 <article class="card">
@@ -647,7 +647,7 @@ footer{{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}}
 {related}
 <a class="back" href="{base}/legends/">&#8592; Browse all legends</a>
 </div>
-<footer>Part of the Folklore Map of Britain &amp; Ireland &#183; &#169; EditionTree &#183; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener" style="color:#5c4a2a">&#9749; Ko-fi</a> &#183; <a href="{base}/privacy" style="color:#5c4a2a">Privacy</a></footer>
+<footer>Folklore Finder &#183; &#169; EditionTree &#183; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener" style="color:#5c4a2a">&#9749; Ko-fi</a> &#183; <a href="{base}/privacy" style="color:#5c4a2a">Privacy</a></footer>
 <script>
 document.querySelectorAll('.carousel').forEach(function(c){{
   var t=c.querySelector('.carousel-track');
@@ -733,7 +733,7 @@ FEATURED_PAGE = Template("""<!DOCTYPE html>
 <meta property="og:image:width" content="$og_w"/>
 <meta property="og:image:height" content="$og_h"/>
 <meta property="og:image:alt" content="$og_alt"/>
-<meta property="og:site_name" content="Folklore Map of Britain &amp; Ireland"/>
+<meta property="og:site_name" content="Folklore Finder"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="$ogtitle"/>
 <meta name="twitter:description" content="$desc"/>
@@ -753,8 +753,8 @@ $topnav
   <a class="brand" href="$base/">
     <img src="$base/green-man.png" alt=""/>
     <span>
-      <span class="brand-name">Folklore Map of Britain &amp; Ireland</span>
-      <span class="brand-line">Myths, Legends &amp; Spectral Encounters</span>
+      <span class="brand-name">Folklore Finder</span>
+      <span class="brand-line">An atlas of myths, legends, &amp; stories</span>
     </span>
   </a>
 </header>
@@ -816,7 +816,7 @@ $hero_caption
 
   $featured_related
 </main>
-<footer>Part of the Folklore Map of Britain &amp; Ireland &#183; &#169; EditionTree &#183; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener">Ko-fi</a> &#183; <a href="$base/privacy">Privacy</a></footer>
+<footer>Folklore Finder &#183; &#169; EditionTree &#183; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener">Ko-fi</a> &#183; <a href="$base/privacy">Privacy</a></footer>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH" crossorigin="anonymous"></script>
 <script src="$base/legend-page.js"></script>
 </body>
@@ -844,7 +844,6 @@ def update_homepage_count(total):
     text = io.open(path, encoding="utf-8").read()
     patterns = (
         (r'(<span id="heroCount">)\d+(</span>)', rf'\g<1>{total}\g<2>'),
-        (r'(<span class="stat-num" id="statCount">)\d+(</span>)', rf'\g<1>{total}\g<2>'),
     )
     for pattern, replacement in patterns:
         text, changed = re.subn(pattern, replacement, text, count=1)
@@ -1005,7 +1004,7 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
         og_alt = f"{name} — {catname}, folklore of Britain & Ireland"
 
     return FEATURED_PAGE.substitute(
-        title=esc(f"{name} — Folklore of Britain & Ireland"),
+        title=esc(f"{name} — Folklore Finder"),
         ogtitle=esc(name),
         desc=esc(inline_text(desc)),
         url=page_path_url,
@@ -1119,7 +1118,7 @@ def build():
                         "latitude": leg.get("lat"), "longitude": leg.get("lng")},
             },
             "isPartOf": {"@type": "WebSite",
-                         "name": "Folklore Map of Britain & Ireland", "url": BASE + "/"},
+                         "name": "Folklore Finder", "url": BASE + "/"},
         }
         if added:
             ld["datePublished"] = added
@@ -1190,7 +1189,7 @@ def build():
             ensure_ascii=False) + '</script>'
 
         out = LEGACY_PAGE.format(
-            title=esc(f"{name} — Folklore of Britain & Ireland"),
+            title=esc(f"{name} — Folklore Finder"),
             ogtitle=esc(name),
             desc=esc(desc),
             url=page_path_url,
@@ -1329,7 +1328,7 @@ def build():
                     "description": desc,
                     "url": url,
                     "isPartOf": {"@type": "WebSite",
-                                 "name": "Folklore Map of Britain & Ireland", "url": BASE + "/"},
+                                 "name": "Folklore Finder", "url": BASE + "/"},
                     "mainEntity": {
                         "@type": "ItemList",
                         "numberOfItems": len(page_members),
@@ -1347,7 +1346,7 @@ def build():
                 if page_no < total_pages:
                     rel_links += f'<link rel="next" href="{collection_page_url(slug, page_no + 1)}"/>\n'
                 page = build_browse_page(
-                    page_title=f"{col['title']}{page_tag} — Folklore Map of Britain & Ireland",
+                    page_title=f"{col['title']}{page_tag} — Folklore Finder",
                     desc=desc,
                     url=url,
                     h1=col["title"],
@@ -1386,7 +1385,7 @@ def build():
                                "standing stones, holy wells, Arthurian places and more.",
                 "url": land_url,
                 "isPartOf": {"@type": "WebSite",
-                             "name": "Folklore Map of Britain & Ireland", "url": BASE + "/"},
+                             "name": "Folklore Finder", "url": BASE + "/"},
                 "mainEntity": {
                     "@type": "ItemList",
                     "numberOfItems": len(resolved),
@@ -1398,7 +1397,7 @@ def build():
                 },
             }, ensure_ascii=False)
             land_page = build_browse_page(
-                page_title="Themed Collections — Folklore Map of Britain & Ireland",
+                page_title="Themed Collections — Folklore Finder",
                 desc="Explore British and Irish folklore by theme — black dogs, standing stones, "
                      "holy wells, Arthurian places, legends of the sea and more.",
                 url=land_url,
@@ -1436,8 +1435,31 @@ def build():
         ('<div class="browse-sec"><h2>Themed collections</h2><div class="region-links">'
          + collection_links + '</div></div>') if built_collections else ''
     )
+    place_explorer = '''
+<section class="place-explorer" aria-labelledby="place-explorer-title">
+  <div class="place-map-wrap">
+    <svg class="place-map" viewBox="0 0 400 500" role="img" aria-labelledby="place-map-title place-map-desc">
+      <title id="place-map-title">Explore folklore by place</title>
+      <desc id="place-map-desc">Choose England, Scotland, Wales, Ireland or Northern Ireland to see its legends on the map.</desc>
+      <a class="place-shape" href="/map?region=ireland" aria-label="Explore legends in Ireland"><title>Ireland</title><use href="/region-map.svg#region-ireland"></use></a>
+      <a class="place-shape" href="/map?region=northern-ireland" aria-label="Explore legends in Northern Ireland"><title>Northern Ireland</title><use href="/region-map.svg#region-northern-ireland"></use></a>
+      <a class="place-shape" href="/map?region=england" aria-label="Explore legends in England"><title>England</title><use href="/region-map.svg#region-england"></use></a>
+      <a class="place-shape" href="/map?region=wales" aria-label="Explore legends in Wales"><title>Wales</title><use href="/region-map.svg#region-wales"></use></a>
+      <a class="place-shape" href="/map?region=scotland" aria-label="Explore legends in Scotland"><title>Scotland</title><use href="/region-map.svg#region-scotland"></use></a>
+    </svg>
+  </div>
+  <div class="place-copy">
+    <p class="place-kicker">Across the islands</p>
+    <h2 id="place-explorer-title">Explore by place</h2>
+    <p>Follow the stories of a particular country onto the map, or browse the regional index below.</p>
+    <nav class="place-links" aria-label="Explore folklore by country">
+      <a href="/map?region=england">England</a><a href="/map?region=scotland">Scotland</a><a href="/map?region=wales">Wales</a><a href="/map?region=ireland">Ireland</a><a href="/map?region=northern-ireland">Northern Ireland</a>
+    </nav>
+  </div>
+</section>'''
     browse_sections = (
-        collection_sec
+        place_explorer
+        + collection_sec
         + '<div class="browse-sec"><h2>Browse by category</h2><div class="cat-links">' + cat_links + '</div></div>'
         '<div class="browse-sec"><h2>Browse by region</h2><div class="region-links">' + region_links + '</div></div>'
         '<h2 class="azh">A&#8211;Z</h2>'
@@ -1468,7 +1490,7 @@ def build():
 <script>if(location.hostname.indexOf("pages.dev")>-1){{location.replace("https://folklorefinder.uk"+location.pathname+location.search+location.hash);}}</script>
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{{"token": "64d1fd37251d426f8a0d8fbc83ea350b"}}'></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>All Legends &#8212; Folklore Map of Britain &amp; Ireland</title>
+<title>All Legends &#8212; Folklore Finder</title>
 <meta name="description" content="Browse all {written} myths, legends, ghosts and folklore entries across Britain and Ireland."/>
 <link rel="canonical" href="{BASE}/{OUT_DIR}/"/>
 <link rel="icon" type="image/png" href="{BASE}/favicon.png"/>
@@ -1508,15 +1530,29 @@ h1{{font-family:'Marcellus',serif;font-size:26px;margin-bottom:18px}}
 .cat-links a:hover,.region-links a:hover{{border-color:#c4622a}}
 .c-count{{font-size:11px;color:#5c4a2a;font-style:italic}}
 .c-dot{{width:10px;height:10px;border-radius:50%;display:inline-block;flex-shrink:0}}
+.place-explorer{{display:grid;grid-template-columns:minmax(230px,340px) 1fr;align-items:center;gap:clamp(30px,6vw,76px);margin:4px 0 44px;padding:30px 38px;border:1px solid rgba(90,70,50,.22);background:rgba(246,241,230,.72);box-shadow:0 16px 40px rgba(63,48,35,.08)}}
+.place-map-wrap{{display:flex;justify-content:center;background:radial-gradient(circle,rgba(176,144,96,.15),transparent 68%)}}
+.place-map{{display:block;width:min(100%,290px);height:auto;overflow:visible}}
+.place-shape use{{fill:rgba(102,115,90,.2);stroke:#5a4632;stroke-width:1.7;vector-effect:non-scaling-stroke;transition:fill .18s,stroke .18s}}
+.place-shape:hover use,.place-shape:focus use{{fill:#c4622a;stroke:#3f3023}}
+.place-copy{{position:relative;padding-top:24px}}
+.place-copy::before{{content:'';position:absolute;top:-7px;left:0;width:126px;height:44px;background:url('/assets/ornaments/generated-variants/oak-divider-horizontal.png') left center/contain no-repeat;opacity:.6}}
+.place-kicker{{margin:0 0 6px;color:#66735a;font-family:'Marcellus',serif;font-size:10px;letter-spacing:.16em;text-transform:uppercase}}
+.place-copy h2{{font-family:'Marcellus',serif;font-size:clamp(24px,4vw,36px);font-weight:400;margin-bottom:9px;color:#3f3023}}
+.place-copy p:not(.place-kicker){{max-width:520px;margin-bottom:20px;color:#5a4632;font-size:16px;line-height:1.55}}
+.place-links{{display:flex;flex-wrap:wrap;gap:8px}}
+.place-links a{{padding:7px 12px;border:1px solid rgba(90,70,50,.35);color:#3f3023;text-decoration:none;font-family:'Marcellus',serif;font-size:12px}}
+.place-links a:hover{{border-color:#c4622a;color:#9d461f}}
+@media(max-width:680px){{.place-explorer{{grid-template-columns:1fr;padding:24px 20px;gap:18px}}.place-map{{width:min(100%,230px)}}.place-copy{{padding-top:22px}}}}
 {TOPNAV_CSS}
 </style></head>
 <body>
 {topnav_html("browse")}
-<header class="site-banner"><a class="banner-link" href="{BASE}/"><img src="{BASE}/green-man.png" class="banner-emblem" alt=""/><span class="banner-text"><span class="banner-title"><i>&#10022;</i> Folklore Map of Britain &amp; Ireland <i>&#10022;</i></span><span class="banner-sub">Myths, Legends &amp; Spectral Encounters</span></span></a></header>
+<header class="site-banner"><a class="banner-link" href="{BASE}/"><img src="{BASE}/green-man.png" class="banner-emblem" alt=""/><span class="banner-text"><span class="banner-title"><i>&#10022;</i> Folklore Finder <i>&#10022;</i></span><span class="banner-sub">An atlas of myths, legends, &amp; stories</span></span></a></header>
 <div class="wrap"><h1>All Legends ({written})</h1>{browse_sections}<div class="az">
 {az_content}
 </div></div>
-<footer style="text-align:center;padding:24px 20px;font-size:12px;color:#5c4a2a">Part of the Folklore Map of Britain &amp; Ireland &#183; &#169; EditionTree &#183; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener" style="color:#5c4a2a">&#9749; Ko-fi</a> &#183; <a href="{BASE}/privacy" style="color:#5c4a2a">Privacy</a></footer>
+<footer style="text-align:center;padding:24px 20px;font-size:12px;color:#5c4a2a">Folklore Finder &#183; &#169; EditionTree &#183; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener" style="color:#5c4a2a">&#9749; Ko-fi</a> &#183; <a href="{BASE}/privacy" style="color:#5c4a2a">Privacy</a></footer>
 </body></html>"""
     with io.open(os.path.join(OUT_DIR, "index.html"), "w", encoding="utf-8") as f:
         f.write(index_html)
@@ -1563,7 +1599,7 @@ h1{{font-family:'Marcellus',serif;font-size:26px;margin-bottom:18px}}
     rss = (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<rss version="2.0"><channel>\n'
-        '  <title>Folklore Map of Britain &amp; Ireland — New Legends</title>\n'
+        '  <title>Folklore Finder — New Legends</title>\n'
         f'  <link>{BASE}/</link>\n'
         '  <description>Recently added myths, legends, ghosts and folklore from across Britain and Ireland.</description>\n'
         '  <language>en-gb</language>\n'

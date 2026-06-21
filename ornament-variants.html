@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Ornament Variants | Folklore Finder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Spectral:ital,wght@0,400;1,400&display=swap" rel="stylesheet"/>
+  <style>
+    *{box-sizing:border-box}
+    :root{--paper:#f6f1e6;--aged:#efe4cf;--ink:#3f3023;--oak:#5a4632;--orange:#c4622a;--gold:#b09060;--sage:#66735a;--night:#1d1712}
+    body{margin:0;background:var(--aged);color:var(--ink);font-family:'Spectral',serif}
+    header{padding:42px 24px 34px;background:var(--night);color:var(--paper);text-align:center;border-bottom:1px solid var(--gold)}
+    h1,h2,h3{font-family:'Marcellus',serif;font-weight:400}
+    h1{margin:0 0 8px;font-size:clamp(28px,5vw,48px)}
+    header p{margin:0;color:var(--gold);font-style:italic}
+    main{width:min(1180px,calc(100% - 32px));margin:0 auto;padding:44px 0 72px}
+    section+section{margin-top:64px}
+    h2{margin:0 0 8px;font-size:26px}
+    .intro{margin:0 0 24px;color:var(--oak)}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+    .grid-wide{display:grid;grid-template-columns:1fr;gap:30px;width:min(900px,100%);margin:0 auto}
+    .grid-oak-family{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+    .variant{padding:14px;background:rgba(246,241,230,.76);border:1px solid rgba(90,70,50,.24);box-shadow:0 12px 30px rgba(63,48,35,.08)}
+    .variant h3{margin:10px 3px 0;font-size:15px;color:var(--oak)}
+    .frame-demo{position:relative;aspect-ratio:4/3;overflow:hidden;background:linear-gradient(0deg,rgba(8,10,11,.82),rgba(8,10,11,.08)),url('legend-images/black-shuck-hero.jpg') center/cover}
+    .frame-demo::after{content:'Legend of the Week';position:absolute;left:15%;bottom:14%;z-index:1;color:#f6f1e6;font-family:'Marcellus',serif;font-size:clamp(12px,1.5vw,20px);letter-spacing:.04em}
+    .frame-demo img{position:absolute;inset:0;z-index:2;width:100%;height:100%;object-fit:fill;pointer-events:none}
+    .oak-demo{position:relative;aspect-ratio:1;overflow:hidden;background:linear-gradient(145deg,#fffaf0,var(--paper));border:1px solid rgba(176,144,96,.4)}
+    .oak-demo::before{content:'Recently added';position:absolute;left:12%;top:12%;z-index:1;font-family:'Marcellus',serif;font-size:clamp(16px,2vw,28px);color:var(--oak)}
+    .oak-demo::after{content:'A corner ornament at approximate interface scale';position:absolute;left:12%;right:12%;top:23%;z-index:1;color:var(--sage);font-size:12px;font-style:italic}
+    .oak-demo img{position:absolute;right:-5%;bottom:-5%;z-index:2;width:72%;height:72%;object-fit:contain;object-position:right bottom;pointer-events:none}
+    .oak-demo.family img{inset:5%;width:90%;height:90%;object-position:center}
+    .note{margin-top:28px;padding:18px 20px;border-left:3px solid var(--orange);background:rgba(246,241,230,.62);color:var(--oak)}
+    @media(max-width:800px){.grid,.grid-oak-family{grid-template-columns:1fr}.variant{max-width:560px;margin:0 auto;width:100%}}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ornament Study</h1>
+    <p>Celtic frames and English oak corner work at working interface sizes</p>
+  </header>
+  <main>
+    <section>
+      <h2>Realistic Celtic frame studies</h2>
+      <p class="intro">These use heavier borders and tactile historical materials. They are shown larger so the carving and crossings can be judged properly.</p>
+      <div class="grid-wide">
+        <article class="variant"><div class="frame-demo"><img src="assets/ornaments/generated-variants/celtic-frame-realistic-v1.png" alt="Realistic carved oak Celtic frame"/></div><h3>Realistic frame 1 · carved English oak</h3></article>
+        <article class="variant"><div class="frame-demo"><img src="assets/ornaments/generated-variants/celtic-frame-realistic-v2.png" alt="Realistic antique bronze Celtic frame"/></div><h3>Realistic frame 2 · aged bronze</h3></article>
+        <article class="variant"><div class="frame-demo"><img src="assets/ornaments/generated-variants/celtic-frame-realistic-v3.png" alt="Realistic carved sandstone Celtic frame"/></div><h3>Realistic frame 3 · weathered sandstone</h3></article>
+      </div>
+    </section>
+    <section>
+      <h2>Earlier illustrated frame studies</h2>
+      <p class="intro">Retained for comparison only. These are not intended for integration.</p>
+      <div class="grid">
+        <article class="variant"><div class="frame-demo"><img src="assets/ornaments/generated-variants/celtic-frame-v1.png" alt="Celtic frame variant one"/></div><h3>Frame 1 · manuscript ribbon</h3></article>
+        <article class="variant"><div class="frame-demo"><img src="assets/ornaments/generated-variants/celtic-frame-v2.png" alt="Celtic frame variant two"/></div><h3>Frame 2 · carved interlace</h3></article>
+        <article class="variant"><div class="frame-demo"><img src="assets/ornaments/generated-variants/celtic-frame-v3.png" alt="Celtic frame variant three"/></div><h3>Frame 3 · oak interlace</h3></article>
+      </div>
+    </section>
+    <section>
+      <h2>Oak 1 orientation family</h2>
+      <p class="intro">New compositions matching the approved copperplate botanical style for different layout positions.</p>
+      <div class="grid-oak-family">
+        <article class="variant"><div class="oak-demo family"><img src="assets/ornaments/generated-variants/oak-corner-upper-right.png" alt="Oak branch entering from the upper right"/></div><h3>Upper-right corner · descending branch</h3></article>
+        <article class="variant"><div class="oak-demo family"><img src="assets/ornaments/generated-variants/oak-corner-upper-left.png" alt="Oak branch entering from the upper left"/></div><h3>Upper-left corner · arcing branch</h3></article>
+        <article class="variant"><div class="oak-demo family"><img src="assets/ornaments/generated-variants/oak-divider-horizontal.png" alt="Horizontal oak branch divider"/></div><h3>Horizontal · section divider</h3></article>
+        <article class="variant"><div class="oak-demo family"><img src="assets/ornaments/generated-variants/oak-edge-vertical.png" alt="Vertical oak branch edge ornament"/></div><h3>Vertical · page-edge spray</h3></article>
+      </div>
+    </section>
+    <section>
+      <h2>Original oak studies</h2>
+      <p class="intro">Oak 1 remains the approved visual reference.</p>
+      <div class="grid">
+        <article class="variant"><div class="oak-demo"><img src="assets/ornaments/generated-variants/oak-corner-v1.png" alt="Oak corner variant one"/></div><h3>Oak 1 · botanical plate</h3></article>
+        <article class="variant"><div class="oak-demo"><img src="assets/ornaments/generated-variants/oak-corner-v2.png" alt="Oak corner variant two"/></div><h3>Oak 2 · wood engraving</h3></article>
+        <article class="variant"><div class="oak-demo"><img src="assets/ornaments/generated-variants/oak-corner-v3.png" alt="Oak corner variant three"/></div><h3>Oak 3 · illuminated flourish</h3></article>
+      </div>
+      <p class="note">This page is deliberately separate from the live design. Once a frame and oak treatment are chosen, the unsuccessful SVG experiments can be removed cleanly.</p>
+    </section>
+  </main>
+</body>
+</html>

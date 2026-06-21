@@ -7,23 +7,23 @@
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "64d1fd37251d426f8a0d8fbc83ea350b"}'></script>
 <!-- End Cloudflare Web Analytics -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Folklore Map of Britain &amp; Ireland</title>
-<meta name="description" content="An interactive atlas of myths, legends, ghosts, sacred sites and folklore across Britain and Ireland — 500+ entries, from Black Shuck to the Loch Ness Monster."/>
+<title>Folklore Finder | An Atlas of Myths, Legends, &amp; Stories</title>
+<meta name="description" content="An interactive archive of myths, legends, ghosts, sacred sites and folklore across Britain and Ireland. Explore more than 500 entries, from Black Shuck to the Loch Ness Monster."/>
 <meta name="robots" content="index, follow"/>
 <link rel="canonical" href="https://folklorefinder.uk/"/>
 <link rel="alternate" type="application/rss+xml" title="Folklore Map — New Legends" href="https://folklorefinder.uk/feed.xml"/>
 <link rel="icon" type="image/png" href="favicon.png"/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://folklorefinder.uk/"/>
-<meta property="og:title" content="Folklore Map of Britain &amp; Ireland"/>
+<meta property="og:title" content="Folklore Finder"/>
 <meta property="og:description" content="An interactive atlas of myths, legends, ghosts and sacred sites across Britain and Ireland."/>
 <meta property="og:image" content="https://folklorefinder.uk/og/preview.png"/>
-<meta property="og:site_name" content="Folklore Map of Britain &amp; Ireland"/>
+<meta property="og:site_name" content="Folklore Finder"/>
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="Folklore Map of Britain &amp; Ireland"/>
+<meta name="twitter:title" content="Folklore Finder"/>
 <meta name="twitter:description" content="An interactive atlas of myths, legends, ghosts and sacred sites across Britain and Ireland."/>
 <meta name="twitter:image" content="https://folklorefinder.uk/og/preview.png"/>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Folklore Map of Britain & Ireland","alternateName":"Folklore Finder","url":"https://folklorefinder.uk/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Folklore Finder","alternateName":"Folklore Finder: An Atlas of Myths, Legends, & Stories","url":"https://folklorefinder.uk/"}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <style>
@@ -564,8 +564,9 @@ footer a{color:var(--ink-light)}
 .topnav a.active{color:var(--accent-warm)}
 @media(max-width:640px){.topnav{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;scrollbar-width:none}.topnav::-webkit-scrollbar{display:none}.topnav a{flex:0 0 auto;white-space:nowrap}}
 </style>
+<link rel="stylesheet" href="folklorefinder.css"/>
 </head>
-<body>
+<body class="ff-paper home-page">
 <nav class="topnav">
   <a href="./" class="active">Home</a>
   <a href="map">Map</a>
@@ -581,10 +582,11 @@ footer a{color:var(--ink-light)}
   <div class="hero-scrim" aria-hidden="true"></div>
   <div class="hero-layout">
     <div class="hero-content">
+  <p class="hero-edition">A living archive of Britain &amp; Ireland</p>
   <img src="green-man.png" class="hero-emblem" alt="Green Man emblem"/>
-  <h1 class="hero-title"><i class="title-gem">&#10022;</i><span class="title-text">Folklore Map of Britain &amp; Ireland</span><i class="title-gem">&#10022;</i></h1>
-  <p class="hero-sub">Myths, Legends &amp; Spectral Encounters</p>
-  <p class="hero-lede">An interactive atlas of the myths, monsters, sacred sites and spectral figures that haunt the landscape of Britain and Ireland — over <span id="heroCount">648</span> entries, each pinned to the place where its story lives.</p>
+  <h1 class="hero-title"><i class="title-gem">&#10022;</i><span class="title-text">Folklore Finder</span><i class="title-gem">&#10022;</i></h1>
+  <p class="hero-sub">An atlas of myths, legends, &amp; stories</p>
+  <p class="hero-lede">Explore the myths, monsters, sacred sites and spectral figures that haunt the landscape of Britain and Ireland. More than <span id="heroCount">648</span> researched entries are each rooted in the place where their story lives.</p>
 
   <div class="search-wrap">
     <div class="search-inner">
@@ -601,83 +603,35 @@ footer a{color:var(--ink-light)}
     <button class="btn btn-secondary" id="surpriseBtn" type="button">&#10022; Surprise me</button>
   </div>
     </div>
-
+    <aside class="hero-feature" aria-labelledby="weekly-heading">
+      <div class="hero-feature-label" id="weekly-heading">This week&rsquo;s legend</div>
+      <a class="lotw-hero" id="lotwLink" href="legends/">
+        <div class="lotw-hero-media" id="lotwMedia">
+          <div class="lotw-hero-ph" id="lotwPh" aria-hidden="true">
+            <svg class="lotw-ph-icon" id="lotwMark" viewBox="0 0 512 512" aria-hidden="true"><path id="lotwMarkPath" d="" fill="currentColor"/></svg>
+          </div>
+        </div>
+        <div class="lotw-hero-scrim" aria-hidden="true"></div>
+        <div class="lotw-hero-copy">
+          <span class="lotw-cat" id="lotwCat">&nbsp;</span>
+          <span class="lotw-name" id="lotwName">Loading&hellip;</span>
+          <span class="lotw-region" id="lotwRegion"></span>
+          <span class="lotw-cta">Read the tale &#8594;</span>
+        </div>
+      </a>
+      <a class="lotw-maplink" id="lotwMapLink" href="./map">Show on the map &#8594;</a>
+    </aside>
   </div>
 </section>
 
 <!-- ── STATS ── -->
-<div class="stats">
-  <div class="stat"><span class="stat-num" id="statCount">648</span><span class="stat-label">Legends</span></div>
-  <div class="stat"><span class="stat-num">70</span><span class="stat-label">Source publishers</span></div>
-  <div class="stat"><span class="stat-num">11</span><span class="stat-label">Categories</span></div>
-  <div class="stat"><span class="stat-num">90+</span><span class="stat-label">Counties</span></div>
-</div>
-<p class="stats-method">Every entry is researched from cited sources and checked before it joins the map. <a href="about">How we research</a></p>
-
 <!-- ── BODY ── -->
 <div class="wrap">
 
-  <div class="feature-row">
-  <!-- Explore by place -->
-  <section class="section place-feature">
-    <div class="section-rule"><span>Explore by place</span></div>
-    <p class="place-prompt">Choose a place to follow its legends onto the map.</p>
-    <div class="hero-place-map place-explorer">
-      <svg class="place-map" viewBox="0 0 400 500" role="img" aria-labelledby="placeMapTitle placeMapDesc">
-        <title id="placeMapTitle">Explore folklore by place</title>
-        <desc id="placeMapDesc">Select England, Scotland, Wales, Ireland or Northern Ireland to see that place's legends on the map.</desc>
-        <a class="place-shape" href="./map?region=ireland" aria-label="Explore legends in Ireland">
-          <title>Ireland</title><use href="region-map.svg#region-ireland"></use>
-        </a>
-        <a class="place-shape" href="./map?region=northern-ireland" aria-label="Explore legends in Northern Ireland">
-          <title>Northern Ireland</title><use href="region-map.svg#region-northern-ireland"></use>
-        </a>
-        <a class="place-shape" href="./map?region=england" aria-label="Explore legends in England">
-          <title>England</title><use href="region-map.svg#region-england"></use>
-        </a>
-        <a class="place-shape" href="./map?region=wales" aria-label="Explore legends in Wales">
-          <title>Wales</title><use href="region-map.svg#region-wales"></use>
-        </a>
-        <a class="place-shape" href="./map?region=scotland" aria-label="Explore legends in Scotland">
-          <title>Scotland</title><use href="region-map.svg#region-scotland"></use>
-        </a>
-      </svg>
-      <ul class="place-key" aria-label="Legend counts by place">
-        <li><a href="./map?region=england" data-region="england"><span class="pk-name">England</span><span class="pk-count"></span></a></li>
-        <li><a href="./map?region=scotland" data-region="scotland"><span class="pk-name">Scotland</span><span class="pk-count"></span></a></li>
-        <li><a href="./map?region=wales" data-region="wales"><span class="pk-name">Wales</span><span class="pk-count"></span></a></li>
-        <li><a href="./map?region=ireland" data-region="ireland"><span class="pk-name">Ireland</span><span class="pk-count"></span></a></li>
-        <li><a href="./map?region=northern-ireland" data-region="northern-ireland"><span class="pk-name">N. Ireland</span><span class="pk-count"></span></a></li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Legend of the week -->
-  <section class="section legend-feature">
-    <div class="section-rule"><span>Legend of the Week</span></div>
-    <div class="lotw-wrap">
-    <a class="lotw-hero" id="lotwLink" href="legends/">
-      <div class="lotw-hero-media" id="lotwMedia">
-        <div class="lotw-hero-ph" id="lotwPh" aria-hidden="true">
-          <svg class="lotw-ph-icon" id="lotwMark" viewBox="0 0 512 512" aria-hidden="true"><path id="lotwMarkPath" d="" fill="currentColor"/></svg>
-        </div>
-      </div>
-      <div class="lotw-hero-scrim" aria-hidden="true"></div>
-      <div class="lotw-hero-copy">
-        <span class="lotw-cat" id="lotwCat">&nbsp;</span>
-        <span class="lotw-name" id="lotwName">Loading…</span>
-        <span class="lotw-region" id="lotwRegion"></span>
-        <span class="lotw-cta">Read the tale &#8594;</span>
-      </div>
-    </a>
-    <a class="lotw-maplink" id="lotwMapLink" href="./map">Show on the map &#8594;</a>
-    </div>
-  </section>
-  </div>
-
   <!-- Recently added -->
-  <section class="section">
-    <div class="section-rule"><span>Recently Added</span></div>
+  <section class="section recent-panel">
+    <div class="section-rule"><span>Recently added</span></div>
+    <p class="recent-intro">The latest researched stories to join the archive.</p>
     <div class="recent-grid" id="recentGrid"></div>
   </section>
 
@@ -687,13 +641,13 @@ footer a{color:var(--ink-light)}
     <p>The islands hold far more than any one map can hold, and local stories are easily lost. Share a lead and we'll research and verify it before it joins the map.</p>
     <div class="bottom-cta-btns">
       <a class="btn btn-primary" href="./map?submit=1">Submit a legend</a>
-      <a class="btn btn-secondary" href="./map">Back to the map</a>
+      <a class="btn btn-secondary" href="./map">Explore the map</a>
     </div>
   </div>
 
 </div>
 
-<footer>Part of the Folklore Map of Britain &amp; Ireland &nbsp;&#183;&nbsp; &copy; EditionTree &nbsp;&#183;&nbsp; <a href="about">About</a> &nbsp;&#183;&nbsp; <a href="updates">Updates</a> &nbsp;&#183;&nbsp; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener">&#9749; Ko-fi</a> &nbsp;&#183;&nbsp; <a href="privacy">Privacy</a></footer>
+<footer>Folklore Finder &nbsp;&#183;&nbsp; An atlas of myths, legends, &amp; stories &nbsp;&#183;&nbsp; &copy; EditionTree &nbsp;&#183;&nbsp; <a href="about">About</a> &nbsp;&#183;&nbsp; <a href="updates">Updates</a> &nbsp;&#183;&nbsp; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener">&#9749; Ko-fi</a> &nbsp;&#183;&nbsp; <a href="privacy">Privacy</a></footer>
 
 <script>
 (function(){
@@ -783,49 +737,20 @@ footer a{color:var(--ink-light)}
       .slice(0, 8);
     const grid = document.getElementById('recentGrid');
     grid.innerHTML = '';
-    recent.forEach(l => {
+    recent.forEach((l, i) => {
       const a = document.createElement('a');
       a.className = 'recent-card';
       a.href = articleLink(l.name);
+      const ix = document.createElement('span'); ix.className = 'recent-index'; ix.textContent = String(i + 1).padStart(2, '0');
       const nm = document.createElement('div'); nm.className = 'recent-name'; nm.textContent = l.name;
       const rg = document.createElement('div'); rg.className = 'recent-region'; rg.textContent = l.region || '';
+      const dt = document.createElement('time'); dt.className = 'recent-date'; dt.dateTime = l.date_added;
+      dt.textContent = new Date(l.date_added + 'T00:00:00').toLocaleDateString('en-GB', {day:'numeric', month:'short', year:'numeric'});
       const ct = document.createElement('div'); ct.className = 'recent-cat';
       ct.textContent = catLabel(l.category);
       ct.style.background = catColour(l.category);
-      a.appendChild(nm); a.appendChild(rg); a.appendChild(ct);
+      a.appendChild(ix); a.appendChild(nm); a.appendChild(rg); a.appendChild(dt); a.appendChild(ct);
       grid.appendChild(a);
-    });
-  }
-
-  // Fill permanent per-nation counts on the region map ("Wales · 87 legends")
-  // from the nation tags already held in memory, and fold the count into each
-  // shape's accessible name.
-  const NATION_NAMES = {
-    england: 'England', scotland: 'Scotland', wales: 'Wales',
-    ireland: 'Ireland', 'northern-ireland': 'Northern Ireland'
-  };
-  function renderPlaceCounts(){
-    const counts = {};
-    for (const leg of LEGENDS){
-      const tags = leg.tags || [];
-      for (const nation in NATION_NAMES){
-        if (tags.includes(nation)) counts[nation] = (counts[nation] || 0) + 1;
-      }
-    }
-    document.querySelectorAll('.place-key a[data-region]').forEach(a => {
-      const nation = a.getAttribute('data-region');
-      const n = counts[nation] || 0;
-      const c = a.querySelector('.pk-count');
-      if (c) c.textContent = n;
-    });
-    document.querySelectorAll('.place-shape').forEach(a => {
-      const m = (a.getAttribute('href') || '').match(/region=([\w-]+)/);
-      const nation = m && m[1];
-      if (nation && NATION_NAMES[nation]){
-        const n = counts[nation] || 0;
-        a.setAttribute('aria-label',
-          'Explore ' + n + ' legend' + (n === 1 ? '' : 's') + ' in ' + NATION_NAMES[nation]);
-      }
     });
   }
 
@@ -842,10 +767,8 @@ footer a{color:var(--ink-light)}
           LEGENDS = data.legends || [];
           const n = data.total || LEGENDS.length;
           document.getElementById('heroCount').textContent = n;
-          document.getElementById('statCount').textContent = n;
           renderLotw();
           renderRecent();
-          renderPlaceCounts();
         });
     });
 

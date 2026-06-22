@@ -457,7 +457,7 @@
       z-index:900;
       box-sizing:border-box;
       border:34px solid transparent;
-      border-image:url("assets/ornaments/generated-variants/oak-branch-frame-v1.png") 165 / 34px / 0 repeat;
+      border-image:url("assets/ornaments/generated-variants/oak-branch-frame-v1.png") 230 / 34px / 0 repeat;
       opacity:.66;
       filter:saturate(.68) brightness(.9) contrast(.92) drop-shadow(0 3px 3px rgba(35,21,10,.3));
       pointer-events:none;
@@ -858,20 +858,21 @@
       .filter-btn { padding: 3px 8px; }
       .content-area {
         gap: 0;
-        padding: 22px;
+        padding: 0;
+        box-shadow:none;
       }
       .map-wrap {
-        border-width: 1px;
-        border-radius: 1px;
-        box-shadow: 0 0 0 1px rgba(31,17,7,.88);
+        border:0;
+        border-radius:0;
+        box-shadow:none;
       }
       .map-border {
-        inset:-15px;
+        inset:-8px;
         border-width:20px;
         border-image-width:20px;
       }
       /* Sidebar: overlay from content-area top (which is below header+filterbar) */
-      .sidebar { position: absolute; top: 22px; bottom: 22px; left: 22px; z-index: 850; box-shadow: 4px 0 20px rgba(0,0,0,0.3); }
+      .sidebar { position: absolute; top:0; bottom:0; left:0; z-index: 850; box-shadow: 4px 0 20px rgba(0,0,0,0.3); }
       .sidebar.collapsed { width: 0; }
       .leaflet-control-container { position: relative; z-index: 700; }
       .sidebar:not(.collapsed) + .map-wrap .leaflet-control-zoom { display: none; }

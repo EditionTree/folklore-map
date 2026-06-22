@@ -2401,6 +2401,51 @@
         "Setting": "Trotternish Ridge",
         "Motif": "A giant's thumb"
       }
+    },
+    "Fachan": {
+      "priority": 161,
+      "image": "legend-images/fachan-hero.jpg",
+      "alt": "The one-eyed, one-legged Fachan crossing a rain-dark track in Glen Etive beneath heavy Highland cloud",
+      "caption": "A visual interpretation of the Fachan in Glen Etive",
+      "map_title": "Glen Etive, Argyll",
+      "section_heading": "The straight one of Glen Etive",
+      "pullquote": "It is a being of terrible single-ness: one eye in the middle of its face, one hand reaching from its chest, one leg beneath it, and a single tuft of dark feathers or hair on its head.",
+      "facts": {
+        "Tradition": "Scottish Highland folklore",
+        "Type": "One-eyed monster",
+        "Setting": "Glen Etive",
+        "Motif": "Uncanny asymmetry"
+      }
+    },
+    "Cu Sith": {
+      "priority": 162,
+      "image": "legend-images/cu-sith-hero.jpg",
+      "alt": "The shaggy green Cu Sith crossing a wet Skye moor at dusk with its tail curled high above the heather",
+      "caption": "A visual interpretation of the Cu Sith on the moors of Skye",
+      "map_title": "Isle of Skye",
+      "section_heading": "The three bays",
+      "pullquote": "Those bays were a death-warning: anyone who heard them and failed to reach safety before the third was said to be overcome, or carried off.",
+      "facts": {
+        "Tradition": "Scottish Highland folklore",
+        "Type": "Fairy hound",
+        "Setting": "Isle of Skye",
+        "Motif": "Three-bay death warning"
+      }
+    },
+    "Dando's Dogs": {
+      "priority": 163,
+      "image": "legend-images/dando-s-dogs-hero.jpg",
+      "alt": "A dark rider and pack of hounds driving along a storm-struck Cornish track at dusk",
+      "caption": "A visual interpretation of Dando's spectral hunt in Cornwall",
+      "map_title": "St Germans, Cornwall",
+      "section_heading": "The hunt in the storm",
+      "pullquote": "Ever since, the country folk said, Dando and his dogs may be heard on stormy nights sweeping across the Cornish sky and moors in a spectral hunt, the baying of the hounds carrying on the wind.",
+      "facts": {
+        "Tradition": "Cornish folklore",
+        "Type": "Spectral hunt",
+        "Setting": "St Germans and Cornwall",
+        "Motif": "Wild Hunt warning"
+      }
     }
   }
 }

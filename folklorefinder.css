@@ -801,6 +801,7 @@ body.interior-page {
 .home-page .hero-feature .lotw-hero {
   margin: 0 30px 21px;
   aspect-ratio: 16 / 9;
+  isolation: isolate;
   overflow: visible;
   border: 0;
   box-shadow: 0 15px 29px rgba(0,0,0,.24);
@@ -809,11 +810,11 @@ body.interior-page {
 .home-page .hero-feature .lotw-hero::after {
   content: "";
   position: absolute;
-  inset: -36px;
+  inset: -29px;
   z-index: 4;
   box-sizing: border-box;
   border: 36px solid transparent;
-  border-image: url("assets/ornaments/generated-variants/oak-branch-frame-v1.png") 165 / 36px / 0 repeat;
+  border-image: url("assets/ornaments/generated-variants/oak-branch-frame-v1.png") 165 / 36px / 0 round;
   filter: saturate(.62) brightness(.88) contrast(.9) drop-shadow(0 4px 5px rgba(0,0,0,.24));
   pointer-events: none;
 }

@@ -155,16 +155,8 @@
         linear-gradient(180deg,var(--wood-light),var(--wood-mid) 38%,var(--wood-dark));
     }
     body.night .map-border {
-      border-color: rgba(117,151,196,.48);
-      box-shadow:
-        0 0 0 1px rgba(3,8,17,.82),
-        inset 0 0 0 1px rgba(35,57,86,.7),
-        inset 0 0 18px rgba(4,10,22,.22);
-    }
-    body.night .map-border::before,
-    body.night .map-border::after {
-      opacity: .2;
-      filter: sepia(.2) hue-rotate(165deg) saturate(.7) drop-shadow(0 1px rgba(0,4,12,.7));
+      opacity:.45;
+      filter:sepia(.22) hue-rotate(165deg) saturate(.62) brightness(.78) drop-shadow(0 3px 4px rgba(0,4,12,.62));
     }
     body.night .sidebar {
       background:
@@ -202,8 +194,8 @@
         linear-gradient(135deg, rgba(196,98,42,0.18) 0%, rgba(176,144,96,0.06) 35%, transparent 60%),
         linear-gradient(180deg, #3d2510 0%, #1a0e06 45%, #2c1f0e 100%);
       border-bottom: 1px solid rgba(176,144,96,0.35);
-      min-height: 70px;
-      padding: 10px 20px;
+      min-height: 94px;
+      padding: 12px clamp(22px,3.2vw,52px);
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -225,7 +217,7 @@
       background: linear-gradient(90deg, transparent 0%, rgba(176,144,96,0.6) 20%, rgba(196,98,42,0.8) 50%, rgba(176,144,96,0.6) 80%, transparent 100%);
     }
     .header-emblem-wrap {
-      width: 48px; height: 48px;
+      width: 68px; height: 68px;
       flex-shrink: 0;
       display: block;
       cursor: pointer;
@@ -240,12 +232,13 @@
     @media (max-width: 640px) {
       .header-emblem-wrap { width: 42px; height: 42px; }
     }
-    .header-title { display: flex; align-items: center; gap: 12px; min-width: 0; }
-    .header-title-row { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+    .header-title { display: flex; align-items: center; gap: 18px; min-width: 0; }
+    .header-title-row { display:grid;grid-template-columns:auto auto;align-items:baseline;column-gap:18px;row-gap:2px;min-width:0; }
+    .header-kicker { grid-column:1 / -1;color:rgba(176,144,96,.72);font-family:var(--font-display);font-size:9px;letter-spacing:.17em;text-transform:uppercase; }
     .mobile-title { display: none; }
     h1 {
       font-family: var(--font-display);
-      font-size: 23px;
+      font-size: 32px;
       font-weight:400;
       color: var(--parchment);
       letter-spacing: 0.055em;
@@ -260,13 +253,29 @@
       margin: 0 7px;
     }
     .subtitle {
+      grid-column:2;
       font-family: var(--font-body);
-      font-size: 11px;
+      font-size: 13px;
       color: rgba(176,144,96,0.8);
       font-style: italic;
       letter-spacing: 0.05em;
+      padding-left:18px;
+      border-left:1px solid rgba(176,144,96,.36);
+      white-space:nowrap;
     }
-    .header-controls { display: flex; align-items: center; gap: 8px; }
+    .header-controls { display: flex; align-items: center; gap: 8px; margin-left:auto; }
+
+    @media (max-width: 1100px) {
+      header { min-height:82px;padding:10px 22px; }
+      .header-emblem-wrap { width:56px;height:56px; }
+      .header-title { gap:13px; }
+      .header-kicker { display:none; }
+      .header-title-row { column-gap:12px; }
+      h1 { font-size:26px; }
+      .subtitle { font-size:11px;padding-left:12px; }
+      .header-controls { gap:6px; }
+      .search-wrap input { width:190px; }
+    }
 
     /* ── DARK MODE TOGGLE ── */
     .mode-toggle {
@@ -443,34 +452,15 @@
       background: radial-gradient(ellipse at center, transparent 55%, rgba(44,31,14,0.22) 100%);
     }
     .map-border {
-      position: absolute; inset: 7px;
-      pointer-events: none; z-index: 650;
-      border: 1px solid var(--frame-leaf);
-      box-shadow:
-        0 0 0 1px rgba(39,22,10,.66),
-        inset 0 0 0 1px rgba(54,31,13,.38),
-        inset 0 0 18px rgba(34,19,8,.12);
-    }
-    .map-border::before,
-    .map-border::after {
-      content: '';
-      position: absolute;
-      width: 190px;
-      height: 190px;
-      opacity: .22;
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-image: url("assets/ornaments/generated-variants/oak-corner-upper-left.png");
-      filter: sepia(.12) saturate(.7) drop-shadow(0 2px 2px rgba(19,10,4,.22));
-    }
-    .map-border::before {
-      top: -2px;
-      left: -2px;
-    }
-    .map-border::after {
-      right: -2px;
-      bottom: -2px;
-      transform: rotate(180deg);
+      position:absolute;
+      inset:-27px;
+      z-index:900;
+      box-sizing:border-box;
+      border:34px solid transparent;
+      border-image:url("assets/ornaments/generated-variants/oak-branch-frame-v1.png") 165 / 34px / 0 repeat;
+      opacity:.66;
+      filter:saturate(.68) brightness(.9) contrast(.92) drop-shadow(0 3px 3px rgba(35,21,10,.3));
+      pointer-events:none;
     }
     /* ── LEAFLET POPUP OVERRIDES ── */
     .leaflet-popup-content-wrapper {
@@ -576,8 +566,8 @@
     /* ── LEGEND PANEL ── */
     .legend-panel {
       position: absolute;
-      bottom: 24px; right: 12px;
-      z-index: 650;
+      bottom: 44px; right: 38px;
+      z-index: 950;
       background: rgba(242,232,213,0.96);
       border: 1px solid var(--border);
       border-radius: 4px;
@@ -748,10 +738,10 @@
     .content-area {
       flex: 1;
       display: flex;
-      gap: 7px;
+      gap: 36px;
       overflow: hidden;
       position: relative;
-      padding: 8px 9px 9px;
+      padding: 36px;
       background:
         linear-gradient(90deg, rgba(176,144,96,.1), transparent 28%, rgba(29,23,18,.12)),
         linear-gradient(180deg,var(--wood-light),var(--wood-mid) 38%,var(--wood-dark));
@@ -762,12 +752,12 @@
     .map-wrap {
       flex: 1;
       position: relative;
-      overflow: hidden;
+      isolation: isolate;
+      overflow: visible;
       min-height: 0;
-      border: 2px solid var(--frame-metal);
+      border: 1px solid rgba(90,70,50,.38);
       border-radius: 0;
       box-shadow:
-        0 0 0 2px rgba(31,17,7,.88),
         0 4px 12px rgba(18,9,3,.42),
         inset 0 0 0 1px rgba(255,244,210,.25);
     }
@@ -842,8 +832,10 @@
       h1::before, h1::after { display: none; }
       .desktop-title { display: none; }
       .mobile-title { display: block; }
+      .header-kicker { display:none; }
       .subtitle { display: none; }
       .header-title { width: 100%; min-width: 0; }
+      .header-emblem-wrap { width:42px;height:42px; }
       .header-controls {
         width: 100%;
         min-width: 0;
@@ -866,7 +858,7 @@
       .filter-btn { padding: 3px 8px; }
       .content-area {
         gap: 0;
-        padding: 4px;
+        padding: 22px;
       }
       .map-wrap {
         border-width: 1px;
@@ -874,14 +866,12 @@
         box-shadow: 0 0 0 1px rgba(31,17,7,.88);
       }
       .map-border {
-        inset: 4px;
-      }
-      .map-border::before,
-      .map-border::after {
-        display: none;
+        inset:-15px;
+        border-width:20px;
+        border-image-width:20px;
       }
       /* Sidebar: overlay from content-area top (which is below header+filterbar) */
-      .sidebar { position: absolute; top: 4px; bottom: 4px; left: 4px; z-index: 850; box-shadow: 4px 0 20px rgba(0,0,0,0.3); }
+      .sidebar { position: absolute; top: 22px; bottom: 22px; left: 22px; z-index: 850; box-shadow: 4px 0 20px rgba(0,0,0,0.3); }
       .sidebar.collapsed { width: 0; }
       .leaflet-control-container { position: relative; z-index: 700; }
       .sidebar:not(.collapsed) + .map-wrap .leaflet-control-zoom { display: none; }
@@ -898,6 +888,7 @@
   <div class="header-title">
     <a href="./" class="header-emblem-wrap" title="Back to home" aria-label="Back to home"><img src="green-man.png" class="header-emblem" alt="Green Man"/></a>
     <div class="header-title-row">
+      <span class="header-kicker">Interactive folklore map</span>
       <h1 class="desktop-title">Folklore Finder</h1>
       <h1 class="mobile-title">Folklore Finder</h1>
       <span class="subtitle">An atlas of myths, legends, &amp; stories</span>
@@ -938,7 +929,7 @@
   <div class="map-wrap">
     <div id="map"></div>
     <div class="map-vignette"></div>
-    <div class="map-border"></div>
+    <div class="map-border" aria-hidden="true"></div>
     <div class="legend-panel" id="legendPanel"></div>
   </div>
 </div>
@@ -1282,7 +1273,7 @@ function buildFilters() {
   const randomBtn = document.createElement('button');
   randomBtn.className = 'filter-btn filter-random';
   randomBtn.title = 'Jump to a random legend';
-  randomBtn.innerHTML = '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/></svg><span class="btn-label">Surprise me</span>';
+  randomBtn.innerHTML = '<span aria-hidden="true" style="font-family:var(--font-display);font-size:14px;line-height:1;font-weight:600;color:currentColor">?</span><span class="btn-label">Surprise me</span>';
   randomBtn.onclick = randomLegend;
   bar.appendChild(randomBtn);
 

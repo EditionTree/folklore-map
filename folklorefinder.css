@@ -809,10 +809,12 @@ body.interior-page {
 .home-page .hero-feature .lotw-hero::after {
   content: "";
   position: absolute;
-  inset: -27px -34px;
+  inset: -36px;
   z-index: 4;
-  background: url("assets/ornaments/generated-variants/celtic-frame-realistic-v2.png") center / 100% 100% no-repeat;
-  filter: sepia(0.2) saturate(0.46) brightness(1.02) contrast(0.74) drop-shadow(0 4px 5px rgba(0,0,0,.18));
+  box-sizing: border-box;
+  border: 36px solid transparent;
+  border-image: url("assets/ornaments/generated-variants/oak-branch-frame-v1.png") 165 / 36px / 0 repeat;
+  filter: saturate(.62) brightness(.88) contrast(.9) drop-shadow(0 4px 5px rgba(0,0,0,.24));
   pointer-events: none;
 }
 

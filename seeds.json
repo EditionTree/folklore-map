@@ -797,12 +797,23 @@
     "lng": -5.6377,
     "category": "location",
     "region": "Cornwall",
-    "summary": "Chûn Quoit is one of the best preserved of all Neolithic quoits in western Cornwall, England, United Kingdom.",
+    "summary": "Cornwall’s best-preserved Neolithic burial chamber, named from the Cornish for ‘House on the Downs’ — folklore says giants hurled its massive capstone into place during a game of quoits.",
     "source": "https://en.wikipedia.org/wiki/Ch%C3%BBn_Quoit",
     "date_added": "2026-06-03",
     "tags": [
+      "giant",
+      "curse",
+      "barrow",
+      "moor",
+      "standing-stones",
+      "guardian",
       "england",
       "cornwall"
+    ],
+    "detail": "Chûn Quoit stands on the wild granite moorland between Morvah and Madron in west Cornwall, a striking monument of four inward-leaning stone slabs supporting a massive convex capstone nearly four metres square. Dating to around 2400 BCE, it is the best-preserved of Cornwall’s Neolithic quoits — the local name for portal dolmens — and its silhouette against the sky has inspired stories for millennia. The name derives from the Cornish ‘Chy Woone’, meaning ‘the house on the downs’.\n\nThe most enduring legend explains how such impossibly heavy capstones came to rest atop their pillars: giants, the stories say, hurled them into place while playing a game of quoits, much as humans might toss horseshoes. The giant of Chûn Quoit, known in one tradition as Old Denbras the Hurler, was said to guard the surrounding moor and ensure no one disturbed the sacred ground. Cornish folklore warns that any stones removed from a quoit will magically return to their original positions, and that whoever tampers with them will suffer a curse.\n\nArchaeologists believe the chamber originally served as a place of excarnation, where the dead were laid upon the capstone for carrion birds to strip the flesh from their bones before the remains were gathered for communal burial. In Cornish tradition, quoits are regarded as liminal spaces — thresholds where the veil between the physical and spirit worlds grows thin. Local belief held that shamans visited such places to commune with ancestral spirits through trance and altered states of consciousness.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ch%C3%BBn_Quoit",
+      "https://cornishancientsites.com/ancient-sites/chun-quoit/"
     ]
   },
   {
@@ -1369,11 +1380,20 @@
     "lng": -5.096,
     "category": "location",
     "region": "Scotland",
-    "summary": "The Henderson Stone is a granite boulder in a field in the Glencoe (Carnoch) area of Scotland. Clach Eanruig is translated alternatively as Henderson Stone or Henry's Stone.",
+    "summary": "A granite boulder in Glencoe steeped in the legend of a Campbell soldier who warned of the 1692 massacre by speaking his warning to the stone rather than break orders directly.",
     "source": "https://en.wikipedia.org/wiki/Henderson_Stone",
     "date_added": "2026-06-03",
     "tags": [
-      "scotland"
+      "death-omen",
+      "battle",
+      "celtic",
+      "scotland",
+      "highland"
+    ],
+    "detail": "The Henderson Stone — Clach Eanruig in Gaelic — sits in a field south of Carnoch in the Glencoe valley, an unassuming granite boulder carrying one of the Highlands’ most poignant legends. In February 1692, soldiers of the Earl of Argyll’s Regiment of Foot, mostly Campbells, were billeted with the MacDonalds of Glencoe under the pretence of hospitality. After ten days of sharing food and shelter, orders came to put every MacDonald under seventy to the sword before dawn on 13 February.\n\nAccording to oral tradition preserved for over 150 years, at least one Campbell soldier found the order morally unbearable. Unable to warn his host directly without disobeying orders, the soldier walked with a local man past the stone and spoke his warning to it instead: ‘Great stone of the glen! Great is your right to be here. But if you knew what will happen this night you would be up and away.’ The words, addressed to a boulder rather than a person, gave the MacDonald just enough warning to grasp the danger and flee into the winter darkness.\n\nClan Henderson tradition holds that the stone marks the memory of the MacEanruig or Clann Eanruig, a Gaelic-speaking branch who held authority in Glencoe from the early 11th century before displacement by the MacDonalds. Historians debate whether the folklore linking the stone to Clan Henderson’s pipers is ancient tradition or 19th-century elaboration. Either way, the boulder endures as a powerful symbol of conscience tested against obedience.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Henderson_Stone",
+      "https://bagtownclans.com/index.php/2023/02/06/the-henderson-stone-of-glencoe/"
     ]
   },
   {
@@ -2332,13 +2352,22 @@
     "lng": -3.654,
     "category": "location",
     "region": "Somerset",
-    "summary": "A small Exmoor stone circle whose weathered stones sit in a landscape of moorland lore. Its current 'Ireland' label was a scrape error; this belongs firmly to Somerset.",
+    "summary": "A rare Exmoor stone circle haunted by a phantom horse — locals say the sound of invisible hoofbeats echoes along the road at night and living horses refuse to pass after dark.",
     "source": "https://en.wikipedia.org/wiki/Porlock_Stone_Circle",
     "date_added": "2026-06-03",
     "tags": [
+      "horse",
+      "spectral",
+      "haunting",
       "standing-stones",
+      "moor",
       "england",
       "somerset"
+    ],
+    "detail": "Porlock Stone Circle sits on open moorland above the village of Porlock in Somerset, one of only two stone circles surviving on Exmoor. Unlike granite-rich Dartmoor, Exmoor’s Devonian slates and sandstones break easily into small slabs, making large standing stones scarce here. The circle’s thirteen remaining green micaceous sandstone rocks — of perhaps forty-three originally — form a ring about twenty-four metres across, with a cairn and stone row extending to the north-east. The monument dates to the Late Neolithic or Early Bronze Age, somewhere between 3300 and 900 BCE.\n\nThe circle was lost to memory until the early 20th century, when local landowner E. T. MacDermot noticed the stones after heather burning exposed them on Porlock Common. He alerted the archaeologist Harold St George Gray, who surveyed the site in 1928. But it is the folklore that gives the circle its atmosphere. According to local tradition recorded by S. Toulson in 1983, the road passing the stones is haunted by a spectral horse. People tell of hooves clattering hollowly along the hard surface of the road when no horse is there. Hill ponies are rarely seen grazing near the stones after dusk, and riders report their mounts refusing to continue along the lane past the circle at night.\n\nThe phantom hoofbeats place Porlock within a wider pattern of Exmoor lore in which ancient ceremonial sites carry an uncanny charge — places where animals sense something that human senses miss.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Porlock_Stone_Circle",
+      "https://www.themodernantiquarian.com/site/2220/porlock-stone-circle"
     ]
   },
   {
@@ -3124,15 +3153,22 @@
     "lng": -0.8115,
     "category": "location",
     "region": "Buckinghamshire",
-    "summary": "Whiteleaf Cross is a cross-shaped chalk hill carving, with a triangular base, on Whiteleaf Hill in Whiteleaf near Princes Risborough in Buckinghamshire.",
+    "summary": "A mysterious chalk hill figure near Princes Risborough whose origins are lost — theories range from a reshaped pagan phallic symbol to a Saxon victory marker, but nobody knows for certain.",
     "source": "https://en.wikipedia.org/wiki/Whiteleaf_Cross",
     "date_added": "2026-06-03",
     "tags": [
       "white",
       "hill",
       "hill-figure",
+      "transformation",
+      "fertility",
       "england",
       "buckinghamshire"
+    ],
+    "detail": "Whiteleaf Cross is carved into the chalky escarpment of Whiteleaf Hill near Princes Risborough in the Chilterns, a striking cross shape with a broad triangular base visible for miles across the vale. Its date and purpose remain genuinely unknown — first recorded as an antiquity by Francis Wise in 1742, no earlier written reference has ever been found, and theories span from the prehistoric to the post-medieval.\n\nThe most provocative theory, published by the Institute of Geomantic Research, argues that the figure was originally a phallic symbol — a relic of pagan fertility worship — later reshaped into a cross by monks from nearby Monks Risborough who found its form too explicit. Janet and Colin Bord, writing on hill figures, speculated it may have started as an astrological marker. Others have suggested it commemorates a Saxon victory over the Danes, or that it was carved during the Puritan Interregnum of the 1650s as a substitute for banned social activities.\n\nWhat is certain is that the cross sits within an extraordinary archaeological landscape: the Ridgeway, one of Europe’s oldest trackways, passes close by, and the hilltop holds both a Neolithic burial mound and an Iron Age hill fort. A boundary mark on the hill is referenced in a charter of 903 AD, suggesting this ground has held significance for well over a thousand years. The cross continues to be maintained by local volunteers, its origins as obscure as ever.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Whiteleaf_Cross",
+      "https://historicengland.org.uk/listing/the-list/list-entry/1014597"
     ]
   },
   {
@@ -3191,12 +3227,21 @@
     "lng": -3.4027,
     "category": "location",
     "region": "Fife",
-    "summary": "Witchknowe Park is a park and historic site in Inverkeithing in Fife, Scotland.",
+    "summary": "Named for the ‘witch hill’ where dozens of accused witches were executed during the 17th-century persecutions that made Inverkeithing one of Scotland’s most zealous witch-hunting towns.",
     "source": "https://en.wikipedia.org/wiki/Witchknowe_Park",
     "date_added": "2026-06-03",
     "tags": [
+      "hill",
+      "curse",
+      "haunting",
+      "death-omen",
       "scotland",
       "fife"
+    ],
+    "detail": "Witchknowe Park takes its name from the Scots word ‘knowe’ — a hillock — and marks one of the darkest chapters in Inverkeithing’s history. Between 1621 and 1652, at least 51 people were executed for witchcraft in this small Fife town, a staggering toll when the much larger Kirkcaldy saw only 18 executions in the same period. The killings reached their peak during the Great Scottish Witch Hunt of 1649–50, a nationwide frenzy that may have seen more than 300 executions across Scotland in a single year.\n\nThe driving force behind Inverkeithing’s persecutions was the Reverend Walter Bruce, appointed minister of St Peter’s in 1641. Bruce was a zealous witch-finder whose fervour shocked even the Kirk authorities — he was suspended at one point for preaching at a witch’s execution. Under his direction, women confessed to renouncing their baptism, consorting with the Devil, and attending nocturnal sabbaths. Among his accused was Margaret Henderson, Lady Pittadro, one of the few high-status women targeted in the Scottish witch hunts.\n\nThe executions were carried out at Witch Knowe, on land now shared between Witchknowe Park and the adjacent Hope Street Cemetery. The persecutions were fuelled by a toxic combination of cholera outbreaks, famine, and Cromwell’s looming invasion — a perfect storm of fear and superstition that Bruce exploited with lethal effect. Today the park’s name is the sole public reminder of those who died there.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Witchknowe_Park",
+      "https://en.wikipedia.org/wiki/Great_Scottish_Witch_Hunt_of_1649%E2%80%931650"
     ]
   },
   {
@@ -7726,14 +7771,24 @@
     "lng": -9.1658,
     "category": "location",
     "region": "Ballina, County Mayo",
-    "summary": "The Dolmen of the Four Maols is a cist and National Monument located in County Mayo, Ireland.",
+    "summary": "Bronze Age burial cist on Primrose Hill where four brothers — the Maols — were interred after their execution for murdering Bishop Ceallach of Kilmoremoy in a 7th-century tale of kingship, treachery, and revenge.",
     "source": "https://en.wikipedia.org/wiki/Dolmen_of_the_Four_Maols",
     "date_added": "2026-05-30",
     "tags": [
       "standing-stones",
       "barrow",
+      "hill",
+      "revenge",
+      "battle",
+      "celtic",
       "ireland",
       "county-mayo"
+    ],
+    "detail": "The Dolmen of the Four Maols overlooks the River Moy just outside Ballina, sitting atop Primrose Hill. Though its stones date to around 2000 BCE as the remains of a Bronze Age cist grave, its name and fame come from a much later tale rooted in the early Christian period. According to the legend, Ceallach was the rightful heir to the throne of Connacht. When his father fell in battle in 547 CE, Ceallach’s cousin Colman seized power. Rather than contest the crown, Ceallach returned to his religious studies and eventually became Bishop of Kilmoremoy — the ancient diocese of Ballina.\n\nWhen Colman died and his son Guaire Aidne inherited the kingship, Guaire grew fearful that the bishop might one day reclaim his birthright. He hired four brothers — Mael Mac Deoraidh, Maelcroin, Maeldalua, and Maelseanaigh, collectively the Four Maols — to murder Ceallach, promising them land and wealth. The brothers killed the bishop and hid his body inside the trunk of a tree.\n\nCeallach’s brother Cú-Coingelt tracked down the assassins, finding them drunk at a celebratory feast. They were dragged to Ardnaree — the ‘Hill of Execution’ — on the opposite bank of the Moy, where they were killed by quartering. Because the four brothers were of noble birth, tradition demanded a proper burial. Their remains were carried across the river and laid to rest at the ancient cist that now bears their name, giving Ballina one of its most enduring landmarks.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Dolmen_of_the_Four_Maols",
+      "https://voicesfromthedawn.com/ballina-dolmen/",
+      "https://curiousireland.ie/ballina-dolmen-dolmen-of-the-four-maols-ballina-county-mayo-2000bc/"
     ]
   },
   {
@@ -8143,13 +8198,20 @@
     "lng": -7.7201,
     "category": "location",
     "region": "Timoney, County Tipperary",
-    "summary": "The Timoney Stones are a collection of standing stones forming a National Monument in County Tipperary, Ireland.",
+    "summary": "Over a hundred standing stones scattered across a Tipperary hilltop in no clear pattern — local tradition calls the central flat stone a ‘Druid’s altar’ and holds that men of note lie buried beneath every one.",
     "source": "https://en.wikipedia.org/wiki/Timoney_Stones",
     "date_added": "2026-05-30",
     "tags": [
       "standing-stones",
+      "hill",
+      "celtic",
       "ireland",
       "county-tipperary"
+    ],
+    "detail": "The Timoney Stones occupy the slopes of Timoney Hills southeast of Roscrea in County Tipperary, one of the most enigmatic megalithic landscapes in Ireland. Of the 121 stones that survive — 93 still standing, 28 fallen — no obvious plan governs their arrangement. Some stand in threes (a tall stone, a short stone, and a slab), others in pairs aligned north–south or east–west, and sixteen form a rough circle some seventy metres across. Their date is disputed: some scholars place them in the Neolithic or Bronze Age, while others have argued for origins as recent as the 19th century.\n\nLocal folklore, recorded by the Irish Folklore Commission in the late 1930s, insists on the site’s ancient sanctity. Tradition holds that ‘there is supposed to be men of note buried at all those stones’, casting the Timoney Hills as the oldest graveyard in Ireland. A large, flat central boulder became known as the ‘Druid’s altar’, and the Reverend Gleeson’s 1915 historical account of the area linked similar circular stone arrangements in neighbouring parishes to druidic worship. By the 1860s a more playful tradition had emerged, claiming the standing stones marked out an ancient racecourse with judges perched on the altar stone — a reinterpretation that may say more about Victorian sporting culture than Bronze Age ritual.\n\nWhatever their true age and purpose, the Timoney Stones remain Ireland’s largest collection of standing stones and one of its most atmospheric. The absence of definitive archaeological explanation has left the field open to folklore, and the hills continue to resist the kind of neat narrative that more thoroughly excavated sites permit.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Timoney_Stones",
+      "https://thetipperaryantiquarian.blogspot.com/2016/04/timoney-stones.html"
     ]
   },
   {
@@ -8158,14 +8220,22 @@
     "lng": -6.4513,
     "category": "location",
     "region": "Townleyhall, County Louth",
-    "summary": "Townleyhall passage grave is a chamber tomb located around 2 km north of Dowth tomb. It is part of the megalithic complex of Brú na Bóinne in County Louth, Ireland.",
+    "summary": "A 5,000-year-old passage tomb in the Brú na Bóinne complex — its entrance aligns with midsummer sunrise, linking it to the same Otherworld mythology as neighbouring Newgrange and Dowth.",
     "source": "https://en.wikipedia.org/wiki/Townleyhall_passage_grave",
     "date_added": "2026-05-30",
     "tags": [
       "standing-stones",
       "barrow",
+      "celtic",
+      "deity",
+      "transformation",
       "ireland",
       "county-louth"
+    ],
+    "detail": "Townleyhall passage grave sits two kilometres north of Dowth on the rolling farmland of County Louth, part of the Brú na Bóinne complex that includes Newgrange, Knowth, and Dowth — the greatest concentration of Neolithic megalithic art in Western Europe. Built around 3000 BCE, Townleyhall is more modest than its famous neighbours: an undifferentiated passage tomb where the chamber merges seamlessly with the entrance passage rather than opening into a separate cruciform space. Yet it holds its own solar secret — at dawn on the summer solstice, sunlight penetrates the roughly 5.5-metre passage and falls upon two orthostats marking the inner wall.\n\nIn Irish mythology, the passage tombs of Brú na Bóinne are far more than burial sites — they are portals to the Otherworld and dwelling places of the Tuatha Dé Danann. The Dagda, chief of the gods, claimed Newgrange as his home until his son Aengus Óg tricked him out of it by asking to stay ‘a day and a night’, then arguing that phrase encompassed all time. Aengus later transformed into a swan with his beloved Caer, and the pair flew to Brú na Bóinne to serenade the spirits within the tombs with their singing — a myth echoed each winter when swans gather on the bend of the Boyne below Newgrange.\n\nTownleyhall shares this mythological landscape. Its solstice alignment connects it to the same cosmological framework as Newgrange’s famous winter solstice illumination, suggesting a community that tracked the turning of the year through architecture and ceremony, and whose descendants wove those astronomical observations into stories of gods, love, and the passage between worlds.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Townleyhall_passage_grave",
+      "https://www.discoverboynevalley.ie/boyne-valley-drive/heritage-sites/bru-na-boinne-legends-behind-tombs"
     ]
   },
   {

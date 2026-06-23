@@ -2446,6 +2446,96 @@
         "Setting": "St Germans and Cornwall",
         "Motif": "Wild Hunt warning"
       }
+    },
+    "Beltane Fire Festival": {
+      "priority": 164,
+      "image": "legend-images/beltane-fire-festival-hero.jpg",
+      "alt": "Torch-bearing Beltane participants and drummers processing across Calton Hill above Edinburgh at night",
+      "caption": "A visual interpretation of the modern Beltane procession on Calton Hill",
+      "map_title": "Calton Hill, Edinburgh",
+      "section_heading": "Fire on Calton Hill",
+      "pullquote": "Though a contemporary creation rather than an unbroken survival, it consciously revives the imagery and meaning of the old Beltane.",
+      "facts": {
+        "Tradition": "Scottish seasonal folklore",
+        "Type": "Modern fire festival",
+        "Setting": "Calton Hill",
+        "Motif": "Threshold of summer"
+      }
+    },
+    "Duergar": {
+      "priority": 165,
+      "image": "legend-images/duergar-hero.jpg",
+      "alt": "A lone traveller on the Simonside Hills approaching a false lantern light near a crouching Duergar at the cliff edge",
+      "caption": "A visual interpretation of the Duergar luring a traveller on the Simonside Hills",
+      "map_title": "Simonside Hills, Northumberland",
+      "section_heading": "False lights on the hill",
+      "pullquote": "The Simonside Hills kept their reputation as a place no wise man crossed after dark.",
+      "facts": {
+        "Tradition": "Northumbrian folklore",
+        "Type": "Malevolent hill dwarfs",
+        "Setting": "Simonside Hills",
+        "Motif": "False-light lure"
+      }
+    },
+    "Finfolk": {
+      "priority": 166,
+      "image": "legend-images/finfolk-hero.jpg",
+      "alt": "Two dark Finfolk sea-sorcerers in a narrow boat off a rocky Orkney shore at dusk",
+      "caption": "A visual interpretation of Finfolk nearing the Orkney shore",
+      "map_title": "Orkney",
+      "section_heading": "The sorcerers beneath the sea",
+      "pullquote": "They steal mortals for spouses and servants.",
+      "facts": {
+        "Tradition": "Orcadian folklore",
+        "Type": "Sea-sorcerers",
+        "Setting": "Orkney waters",
+        "Motif": "Abduction beneath the sea"
+      }
+    },
+    "Tom Hickathrift": {
+      "priority": 167,
+      "image": "legend-images/tom-hickathrift-hero.jpg",
+      "alt": "Tom Hickathrift facing the giant of the Marshland with a cart wheel and axle on a muddy Fenland causeway",
+      "caption": "A visual interpretation of Tom Hickathrift fighting the giant of the Marshland",
+      "map_title": "Marshland near Wisbech",
+      "section_heading": "The giant on the marsh road",
+      "pullquote": "Tom upended his cart, took the axle for a club and a wheel for a shield, and beat the giant to death, winning his hoard and his land for the people.",
+      "facts": {
+        "Tradition": "English chapbook folklore",
+        "Type": "Giant-killing folk hero",
+        "Setting": "Fenland Marshland",
+        "Motif": "Wheel and axle combat"
+      }
+    },
+    "Mary Butters, the Carnmoney Witch": {
+      "priority": 168,
+      "image": "legend-images/mary-butters-the-carnmoney-witch-hero.jpg",
+      "alt": "Mary Butters tending a smoking pot of milk and nails inside a dark County Antrim farmhouse while a man stands watch outside the door",
+      "caption": "A visual interpretation of Mary Butters performing the Carnmoney bewitchment cure",
+      "map_title": "Carnmoney, County Antrim",
+      "section_heading": "The night of the smoke cure",
+      "pullquote": "She sealed a farmhouse in foul smoke to perform her rite and two people were found dead by dawn.",
+      "facts": {
+        "Tradition": "Ulster folk healing",
+        "Type": "Cunning-woman",
+        "Setting": "Carnmoney farmhouse",
+        "Motif": "Bewitched cattle cure"
+      }
+    },
+    "Bardney Abbey and the Light of Oswald": {
+      "priority": 169,
+      "image": "legend-images/bardney-abbey-and-the-light-of-oswald-hero.jpg",
+      "alt": "Monks at Bardney Abbey watching a pale pillar of light rise from King Oswald's bier outside the timber gate at night",
+      "caption": "A visual interpretation of the miracle at Bardney Abbey",
+      "map_title": "Bardney Abbey, Lincolnshire",
+      "section_heading": "The night at the gate",
+      "pullquote": "During the night, according to Bede, a pillar of light rose from the body of Oswald and blazed upward into the sky, visible across all the surrounding countryside.",
+      "facts": {
+        "Tradition": "Anglo-Saxon saint lore",
+        "Type": "Monastic miracle",
+        "Setting": "Bardney Abbey",
+        "Motif": "Pillar of light"
+      }
     }
   }
 }

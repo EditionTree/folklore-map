@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-22T20:02:20.653251Z",
+  "generated": "2026-06-23T19:59:47.690027Z",
   "total": 648,
   "categories": {
     "beast": "Beasts",
@@ -641,15 +641,21 @@
       "lng": -8.7512,
       "category": "location",
       "region": "Coachford, County Cork",
-      "summary": "\n\nBeenalaght is an alignment of six standing stones located on a flat pasture in Reanthesure, 0.5km west of the village of Bweeng, County Cork, Ireland. It is 13.6km south-west of Mallow, on a hill to the west of the Mallow-Coachford Road.",
+      "summary": "Six tall stones on a Cork hillside known in Irish as An Seisear — ‘the Six’ — commemorating, by local legend, six chieftains buried here in ancient times.",
       "source": "https://en.wikipedia.org/wiki/Beenalaght",
       "date_added": "2026-05-30",
       "tags": [
         "hill",
         "standing-stones",
-        "road",
         "ireland",
-        "county-cork"
+        "county-cork",
+        "celtic",
+        "sacrifice"
+      ],
+      "detail": "Beenalaght stands on a flat pasture in the townland of Reanthesure, half a kilometre west of the village of Bweeng in County Cork. The alignment of six standing stones — five still upright, ranging from 1.8 to 3 metres in height, with a sixth now prostrate — is known locally as An Seisear, the Irish word for a group of six people. The place-name itself, Binn na Leacht, translates as ‘monument hill,’ marking the site as a place of memorial since the language first took root here.\n\nLocal legend holds that the stones commemorate six chieftains who were buried at Beenalaght in ancient times. The use of ‘seisear’ — which refers specifically to six people, not six objects — suggests the folklore is not merely an explanation for why six stones happen to stand in a row, but carries a genuine tradition of the site as a burial ground for persons of rank. Whether or not actual chieftains lie beneath, the tradition speaks to how communities across centuries understood and explained the monuments they inherited.\n\nThe alignment sits within a rich archaeological landscape: megalithic sites lie within a few kilometres in several directions, and the broader Mallow-Coachford corridor is scattered with standing stones and circles dating to the Bronze Age. Beenalaght’s stones, tall and closely spaced, are among the most visually striking in the region.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Beenalaght",
+        "https://kilshannig.heritagecork.org/topics/townlands-of-kilshannig"
       ]
     },
     {
@@ -1379,14 +1385,18 @@
       "lng": -9.3751,
       "category": "location",
       "region": "Breeny More, County Cork",
-      "summary": "Breeny More Stone Circle is an axial stone circle and National Monument located in County Cork, Ireland.",
+      "summary": "An axial stone circle near Kealkill whose Irish name — brúine móra, ‘great dwellings of the fairies’ — marks it as a place the Good People claimed long before archaeologists mapped its solstice alignments.",
       "source": "https://en.wikipedia.org/wiki/Breeny_More_Stone_Circle",
       "date_added": "2026-05-30",
       "tags": [
         "standing-stones",
         "ireland",
-        "county-cork"
-      ]
+        "county-cork",
+        "celtic",
+        "fairy",
+        "barrow"
+      ],
+      "detail": "Breeny More stone circle stands a kilometre southeast of Kealkill village in West Cork, overlooking Bantry Bay. An axial circle with two entrance stones aligned northeast to southwest, it captures both winter and summer solstice — a deliberate astronomical orientation that links it to the wider tradition of Cork-Kerry stone circles built as observatories and ceremonial sites.\n\nThe site’s Irish name, brúine móra — ‘great dwellings of the fairies’ — places it firmly within Ireland’s fairy-fort tradition. Across the country, ancient stone structures were understood as doorways to the Otherworld, homes of the sí who would punish anyone rash enough to disturb their dwelling. That Breeny More earned such a name suggests it retained an atmosphere of supernatural danger long after its Bronze Age builders had passed from memory.\n\nWithin the circle lie four boulder burials dating to the mid to late Bronze Age, between 1500 and 1000 BC. This rare burial type, found only in Cork and Kerry with eighty-four examples in total, represents a regional mortuary tradition found nowhere else in Ireland. No human skeletal material has survived in the acidic soil, leaving the identity of those interred here to the imagination of the fairies and the archaeologists alike."
     },
     {
       "name": "Brigid",
@@ -1536,13 +1546,16 @@
       "lng": -4.3021,
       "category": "location",
       "region": "Brynsiencyn, Anglesey, Wales",
-      "summary": "The Bryn Gwyn Stones or Bryn Gwyn Standing Stones are neolithic stones in Brynsiencyn on Anglesey.",
+      "summary": "The tallest standing stones in Wales — nearly fourteen feet of imported chloritic schist framing Snowdon across the Menai Strait — once part of a lost Neolithic circle destroyed by treasure-seekers.",
       "source": "https://en.wikipedia.org/wiki/Bryn_Gwyn_stones",
       "date_added": "2026-06-03",
       "tags": [
         "standing-stones",
-        "wales"
-      ]
+        "wales",
+        "treasure",
+        "gwynedd"
+      ],
+      "detail": "The Bryn Gwyn stones rise from a field boundary in Brynsiencyn on Anglesey, the taller blade-stone reaching almost fourteen feet high and ten feet across, its companion standing over ten feet. Both are composed of chloritic schist, a stone not native to the island, which means they were deliberately transported here during the Neolithic period — a feat of engineering that underscores the importance early communities placed on this site.\n\nHistorical records tell of a larger monument now lost. In the seventeenth century, writers described twelve stones standing in a circle; by the early 1700s, Reverend Henry Rowlands recorded only three stones and the base of a fourth. An account of 1797 explains the destruction: ‘ignorant country people supposing money was hid under them tore them up.’ The quest for buried treasure beneath standing stones is a recurring motif in Welsh and British folklore, and at Bryn Gwyn it consumed all but the two survivors, which were later incorporated into the gable ends of a cottage.\n\nDespite their scale — the tallest standing stones in all of Wales — modern archaeology has found no evidence of their original purpose. Their proximity to Castell Bryngwyn, which has yielded Neolithic, Iron Age, and Roman-era artefacts, suggests the stones belonged to a broader ceremonial landscape. They frame a view of Snowdon across the Menai Strait, a sightline that may or may not have been intentional but lends them an enduring dramatic presence."
     },
     {
       "name": "Brú na Bóinne",
@@ -1896,14 +1909,19 @@
       "lng": -8.0045,
       "category": "location",
       "region": "Carricknagat, County Sligo",
-      "summary": "Carricknagat Megalithic Tombs are megalithic tombs and a National Monument located in County Sligo, Ireland.",
+      "summary": "Two Neolithic tombs near Ballygawley — the Giant’s Grave and Dermot & Gráinne’s Bed — whose name, ‘the cats’ stone’, hints at wild spirits haunting the ancient dead.",
       "source": "https://en.wikipedia.org/wiki/Carricknagat_Megalithic_Tombs",
       "date_added": "2026-05-30",
       "tags": [
         "standing-stones",
+        "barrow",
+        "celtic",
         "ireland",
-        "county-sligo"
-      ]
+        "county-sligo",
+        "haunting",
+        "love"
+      ],
+      "detail": "Carricknagat sits halfway between Ballygawley and Ballintogher in County Sligo, near a source of the Ballisodare River. Built between 4000 and 2500 BC, the site holds two distinct megalithic structures, each carrying its own folk name. The western tomb, a wedge-shaped gallery grave, is known locally as the Giant’s Grave — its trapezoidal chamber, four metres long with jamb-divided inner sections, evokes the resting place of some colossal ancient being.\n\nThe second structure, a dolmen, bears the name Leaba Dhiarmada agus Ghráinne — Dermot and Gráinne’s Bed. Across Ireland, dozens of megalithic tombs carry this title, each claimed as a stopping place where the legendary lovers rested during their flight from the ageing Fionn mac Cumhaill. That Carricknagat earned its own place in this cycle suggests the site held particular significance in local storytelling traditions.\n\nThe place-name itself carries a darker resonance. Carricknagat translates as ‘the cats’ stone’ or ‘the pine martens’ stone,’ reflecting a widespread folk belief that ancient monuments are haunted by wild animals representing the spirits of the dead who were interred there."
     },
     {
       "name": "Carrigagulla",
@@ -1961,14 +1979,19 @@
       "lng": -9.5757,
       "category": "location",
       "region": "Carrownlisheen, County Clare",
-      "summary": "Carrownlisheen Wedge Tomb is a wedge-shaped gallery grave and National Monument located on Inishmaan, Ireland.",
+      "summary": "A 6,000-year-old tomb on windswept Inishmaan capped by a ten-ton stone — known as the Bed of Diarmuid and Gráinne, where the doomed lovers are said to have spent their last night together.",
       "source": "https://en.wikipedia.org/wiki/Carrownlisheen_Wedge_Tomb",
       "date_added": "2026-05-30",
       "tags": [
         "barrow",
+        "island",
+        "celtic",
+        "love",
+        "death-omen",
         "ireland",
-        "county-clare"
-      ]
+        "county-galway"
+      ],
+      "detail": "The Carrownlisheen Wedge Tomb stands on the eastern lowlands of Inis Meáin, the quietest of the three Aran Islands in Galway Bay. Dating to around 4000 BC, this single-chambered tomb measures 3.5 metres long and 2 metres wide, its vertical stone slabs bearing a massive capstone weighing approximately ten tons. When R.A.S. Macalister excavated the site in 1934, he found fragments of pottery and human bones inside — tangible evidence of the rituals once performed here.\n\nLocally, the tomb is known as Leaba Dhiarmada agus Ghráinne — the Bed of Diarmuid and Gráinne. In Irish mythology, Diarmuid and Gráinne eloped from the ageing warrior Fionn mac Cumhaill, fleeing across Ireland and sheltering at megalithic sites along the way. Some versions of the tale claim Carrownlisheen as the place where they spent their last night together before Diarmuid was killed by a magical boar sent by Fionn.\n\nThe tomb was designated a National Monument in 1937. On an island where limestone karst and ancient walls define every horizon, it sits within a concentrated landscape of prehistoric remains that speak to Inishmaan’s importance as a sacred site long before the early Christian monks arrived."
     },
     {
       "name": "Castle Downs, Cornwall",
@@ -2160,15 +2183,20 @@
       "lng": -2.431,
       "category": "location",
       "region": "Lancashire",
-      "summary": "A Bronze Age megalithic site on the Lancashire–Greater Manchester border — a scheduled ancient monument described in 1829 as a druidical ritual place, damaged by a farmer in the 1870s. The Roman road passes within 200 yards, suggesting the site was already ancient when Rome came through.",
+      "summary": "A Bronze Age stone circle on the Lancashire moors, once imagined as a druidical temple where bards performed rites — its destruction sealed by a Victorian farmer who sledgehammered the stones to keep visitors away.",
       "source": "https://en.wikipedia.org/wiki/Cheetham_Close",
       "date_added": "2026-06-03",
       "tags": [
         "standing-stones",
-        "road",
+        "moor",
         "celtic",
         "england",
         "lancashire"
+      ],
+      "detail": "Cheetham Close sits at around 1,060 feet on exposed moorland near Turton, on the old boundary between Lancashire and Greater Manchester. The stone circle originally comprised eleven uprights arranged in a ring roughly fifteen metres across, with a substantial ring-bank cairn nearby — a second, larger enclosure measuring twenty-four yards across with carefully revetted walls four feet thick. Together, the complex testifies to sustained Bronze Age ceremonial activity in these Pennine uplands.\n\nNineteenth-century antiquarians saw the site through a romantic lens. One writer imagined ‘bards in their different orders’ conducting ‘rites and mysteries’ before assembled crowds, and the site was characterised as a ‘bardic temple.’ A Roman road passed within two hundred yards, prompting speculation that the monument was already ancient when Rome came through. Archaeological finds — a Bronze Age saddle quern, a British copper axe-head discovered around 1819, and a Celtic bronze tool — lent substance to the antiquarians’ sense of deep time, even if their druidical interpretations owed more to imagination than evidence.\n\nThe circle’s destruction came not from time but from deliberate vandalism. A farmer employed by the nineteenth-century landowner James Kay sledgehammered the stones ‘to prevent people visiting the situation.’ By 1871 two stones had been broken almost to fragments; a 1983 survey found only two of the original seven megaliths still in place.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cheetham_Close",
+        "https://www.thenorthernantiquarian.org/2009/02/03/chethams-close/"
       ]
     },
     {
@@ -2337,14 +2365,16 @@
       "lng": -9.5433,
       "category": "location",
       "region": "Coolcoulaghta, County Cork",
-      "summary": "The Coolcoulaghta Standing Stones are a pair of standing stones forming a stone row and a National Monument located in County Cork, Ireland.",
+      "summary": "A Bronze Age stone pair in West Cork, aligned toward nearby Dunbeacon circle — torn from the ground in 1980, then reinstated three years later after local outcry proved ancient stones still command reverence.",
       "source": "https://en.wikipedia.org/wiki/Coolcoulaghta_Standing_Stones",
       "date_added": "2026-05-30",
       "tags": [
         "standing-stones",
         "ireland",
-        "county-cork"
-      ]
+        "county-cork",
+        "celtic"
+      ],
+      "detail": "The Coolcoulaghta Standing Stones are a pair of Bronze Age monoliths standing about 1.8 metres tall in a field three kilometres southwest of Durrus in West Cork. Their alignment points directly toward the Dunbeacon stone circle, approximately four hundred metres to the west, suggesting the two sites formed a deliberate ceremonial pairing in the prehistoric landscape.\n\nIn Irish folklore, standing stone pairs like these are often attributed to Fionn mac Cumhaill, said to have hurled them from nearby mountains. The tradition reflects a deeper truth about how communities have understood these monuments: as objects of superhuman power, placed by beings greater than ordinary mortals. Other stones in the region carry petrification legends — tales of saints turning dairy thieves or transgressors to stone in moments of holy wrath.\n\nThe most remarkable chapter in Coolcoulaghta’s story is modern. In 1980, the stones were removed from their ancient positions. The act provoked such local outcry that the Office of Public Works reinstated them three years later, using a plan and elevation drawing made by Ordnance Survey Ireland archaeologists in 1977. Six thousand years after they were first raised, people fought to put them back — a striking testament to the hold these stones retain on the communities who live among them."
     },
     {
       "name": "Corineus",
@@ -3919,7 +3949,7 @@
       "lng": 1.1397,
       "category": "location",
       "region": "Kent",
-      "summary": "The Folkestone White Horse is a white horse hill figure, carved into Cheriton Hill, Folkestone, Kent, South East England. It overlooks the English terminal of the Channel Tunnel and was completed in June 2003.",
+      "summary": "England’s youngest white horse, carved into the Kent chalk in 2003 by Gurkha soldiers and local volunteers — a millennium landmark inspired by the 3,000-year-old Uffington Horse and the Iron Age fort on Horse Hill below.",
       "source": "https://en.wikipedia.org/wiki/Folkestone_White_Horse",
       "date_added": "2026-06-03",
       "tags": [
@@ -3929,6 +3959,11 @@
         "hill-figure",
         "england",
         "kent"
+      ],
+      "detail": "The Folkestone White Horse stretches ninety metres across Cheriton Hill, overlooking the English terminal of the Channel Tunnel. Designed by local artist Charlie Newington and inspired by both the ancient White Horse of Uffington and a nearby Iron Age fort on a ridge known as Horse Hill, it is the youngest hill figure in England — completed in June 2003 as a millennium landmark intended to regenerate the Folkestone area.\n\nThe project was born in controversy. Planning permission was first sought in April 1998, but English Nature, the Green Party, and Friends of the Earth opposed it: the hillside was protected under the European Habitats Directive as a Site of Special Scientific Interest. The horse was finally approved in March 2002 by the Secretary of State, who ruled that its ‘emotional and symbolic value’ outweighed the possible environmental damage. Construction was completed entirely by hand: volunteers staked out a canvas template directed by the artist via radio, dug shallow trenches into the topsoil, and filled them with limestone slabs.\n\nA team of locally based Gurkha soldiers spent seven days cutting and positioning the stones. A time capsule containing the names and remarks of supporters was buried at the point marking the horse’s heart. In 2004, the Friends of the Folkestone White Horse was formed to maintain the figure, which requires periodic weeding to keep the chalk visible against the advancing grass.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Folkestone_White_Horse",
+        "https://kentdowns.org.uk/blog/2022/07/chalk-hill-figures-in-the-kent-downs/"
       ]
     },
     {
@@ -7345,13 +7380,23 @@
       "lng": -6.6694,
       "category": "location",
       "region": "Mullyash, County Armagh",
-      "summary": "Mullyash Kerbed Cairn is a kerb cairn and National Monument located in County Monaghan, Ireland.",
+      "summary": "On Mullyash Mountain’s summit, a Neolithic cairn guards tales of a nobleman’s murdered daughter and hidden gold — and hosted Lughnasadh matchmaking gatherings until modern times.",
       "source": "https://en.wikipedia.org/wiki/Mullyash_Kerbed_Cairn",
       "date_added": "2026-05-30",
       "tags": [
         "barrow",
-        "northern-ireland",
-        "county-armagh"
+        "hill",
+        "celtic",
+        "ireland",
+        "county-monaghan",
+        "guardian",
+        "treasure",
+        "love"
+      ],
+      "detail": "The cairn atop Mullyash Mountain in County Monaghan dates to around 4000 BC, a stepped two-tiered structure some sixteen metres across that commands views to Slieve Gullion, Loughcrew, and the Mourne Mountains. Local legend holds it contains the urn burial of a nobleman’s daughter, murdered by her father after she eloped with a young prince he deemed unworthy. The tale promises that hidden gold treasure lies within, visible only to those who eat certain foods — an echo, perhaps, of ancient shamanic practice.\n\nFionn mac Cumhaill threads through the mountain’s lore too. A standing stone two hundred metres west of the cairn — once 3.6 metres tall, now broken — is said to be the very stone that Fionn hurled from the summit of Slieve Gullion, some sixteen kilometres distant. The feat places Mullyash within the network of Fenian landscape legends stretching across Ulster and beyond.\n\nUntil modern times, locals climbed Mullyash on the last Sunday in July — Crom Dubh’s Sunday — keeping alive a remnant of the Celtic harvest festival of Lughnasadh. Celebrants ascended from the southwest, danced and celebrated at the cairn, then walked down westward to visit the standing stone. The mountain was also renowned for matchmaking, making the annual gathering a social institution as much as a spiritual one.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mullyash_Kerbed_Cairn",
+        "https://monaghan.ie/heritage/2019/03/29/heritage-podcast-series-episode-2-mullyash-cairn/"
       ]
     },
     {
@@ -11244,15 +11289,24 @@
       "lng": -3.028,
       "category": "location",
       "region": "Welshpool, Powys, Wales",
-      "summary": "The Whetstones are, or were, a stone circle beneath Corndon Hill in the parish of Church Stoke, Montgomeryshire, Wales, near the border with Shropshire, England. They lie immediately to the west of the village of White Grit and close to Priestweston. The site is also a short distance from the better-known Hoarstones and Mitchell's Fold circles.",
+      "summary": "A destroyed stone circle beneath Corndon Hill on the Welsh Marches — one of three sacred rings guarding the slopes where, legend says, a witch was turned to stone for milking a fairy cow dry.",
       "source": "https://en.wikipedia.org/wiki/Whetstones_%28stone_circle%29",
       "date_added": "2026-06-03",
       "tags": [
-        "white",
-        "hill",
         "standing-stones",
-        "church",
-        "wales"
+        "hill",
+        "wales",
+        "celtic",
+        "witch",
+        "curse",
+        "fairy",
+        "cattle",
+        "transformation"
+      ],
+      "detail": "The Whetstones once stood at the foot of Corndon Hill’s northern slope, in the parish of Church Stoke, Montgomeryshire, close to the village of White Grit and the hamlet of Priestweston. Together with nearby Mitchell’s Fold and the Hoarstones, they formed a remarkable concentration of Bronze Age stone circles in the Welsh borderlands — three rings within walking distance, suggesting this stretch of high moorland held deep ritual significance.\n\nThe Welsh Royal Commission’s 1911 report recorded a circle of eight or nine stones, but by then most were already gone. One eyewitness recalled four stones arranged as though forming parts of a circle, with an appendage curving ‘like a hook.’ The larger stones had been incorporated into a boundary wall in the nineteenth century, and in the 1860s most of the remaining stones were blown up. When the last stone was uprooted in 1870, charcoal and bones were found in its hole — a final glimpse of the Bronze Age burials the circle had guarded for millennia.\n\nThe Whetstones share their hillside with the legend of Mitchell’s Fold, one of Shropshire’s most celebrated folk tales. A magical white cow appeared during a famine, giving enough milk for all provided each person took only one pailful. A witch named Mitchell brought a sieve and milked the cow dry, whereupon it fled to Warwickshire. The villagers turned the witch to stone and set a circle of standing stones around her to prevent her escape.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Whetstones_%28stone_circle%29",
+        "https://britishfolklore.com/corndon-hill/"
       ]
     },
     {

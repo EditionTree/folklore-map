@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="robots" content="noindex, nofollow"/>
+<title>Explorer's Guild Development Preview | Folklore Finder</title>
+<link rel="icon" type="image/png" href="favicon.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="folklorefinder.css?v=20260624a"/>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#efe4cf;color:#3f3023;font-family:'Spectral',serif}
+.topnav{display:flex;align-items:center;justify-content:center;gap:4px;background:#1a0e06;padding:11px 16px;border-bottom:1px solid rgba(176,144,96,.2);flex-wrap:wrap}
+.topnav a{font-family:'Marcellus',serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:rgba(242,232,213,.78);text-decoration:none;padding:6px 14px}
+.topnav a:hover{color:#f2e8d5;background:rgba(196,98,42,.18)}
+.dev-banner{padding:30px 24px;text-align:center;background:linear-gradient(180deg,#3d2510,#1a0e06);border-bottom:1px solid rgba(176,144,96,.35)}
+.dev-banner a{display:inline-flex;align-items:center;gap:13px;color:#f6f1e6;text-decoration:none}
+.dev-banner img{width:54px;height:54px;object-fit:contain}
+.dev-title{display:block;font-family:'Marcellus',serif;font-size:24px;letter-spacing:.04em}
+.dev-sub{display:block;margin-top:3px;color:rgba(176,144,96,.8);font-size:12px;font-style:italic}
+.guild-dev-shell{width:min(1500px,calc(100% - 56px));margin:0 auto;padding:42px 0 72px}
+.dev-notice{margin:0 0 20px;padding:13px 16px;color:#5a4632;border:1px solid rgba(90,70,50,.22);background:rgba(246,241,230,.7);font-size:13px}
+.guild-dev-shell .guild-preview{margin-top:0}
+.guild-dev-shell footer{padding:28px 0 0;text-align:center;color:#77644f;font-size:12px}
+@media(max-width:700px){.topnav{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto}.topnav a{white-space:nowrap}.guild-dev-shell{width:calc(100% - 32px);padding-top:24px}}
+</style>
+</head>
+<body class="home-page guild-dev-page">
+<nav class="topnav">
+  <a href="./">Home</a><a href="map">Map</a><a href="legends/">Browse</a><a href="legends/collections">Collections</a><a href="about">About</a>
+</nav>
+<header class="dev-banner">
+  <a href="./"><img src="green-man.png" alt=""/><span><span class="dev-title">Folklore Finder</span><span class="dev-sub">Explorer's Guild development preview</span></span></a>
+</header>
+
+<main class="guild-dev-shell">
+  <p class="dev-notice"><strong>Private development preview:</strong> this page is deliberately unlinked and excluded from search engines. Nothing shown here is for sale.</p>
+
+  <section class="guild-preview" id="guild" aria-labelledby="guild-title">
+    <header class="guild-heading">
+      <div>
+        <p class="guild-kicker">A small experiment</p>
+        <h2 id="guild-title">Explorer&rsquo;s Guild</h2>
+        <p>I&rsquo;m exploring useful, printable companions to the archive. Nothing is for sale yet. This is a first look at what might be worth making properly.</p>
+      </div>
+      <span class="guild-working-title">Working title</span>
+    </header>
+
+    <div class="guild-product-grid">
+      <article class="guild-product guild-product-featured">
+        <div class="guild-sheet" aria-hidden="true">
+          <span class="guild-sheet-kicker">Folklore Finder</span><strong>Cornwall<br/>Explorer Checklist</strong><span class="guild-sheet-rule"></span><span class="guild-sheet-mark">44</span><span class="guild-sheet-caption">stories and places</span>
+        </div>
+        <div class="guild-product-copy">
+          <p class="guild-product-state">Free sample draft</p>
+          <h3>Cornwall Folklore Explorer Checklist</h3>
+          <p>A printer friendly, two page companion containing a starter trail and the complete Cornwall checklist, arranged by folklore type.</p>
+          <ul><li>Eight suggested encounters</li><li>Forty four Cornish entries</li><li>Space for field notes</li></ul>
+          <div class="guild-actions">
+            <a class="btn btn-primary guild-pdf-link" href="output/pdf/folklore-finder-cornwall-explorer-checklist-draft.pdf" target="_blank" rel="noopener">Open the draft PDF</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="guild-product guild-product-idea">
+        <span class="guild-product-number">02</span><p class="guild-product-state">Possible next release</p><h3>Folklore Map Poster</h3><p>An original illustrated map for the wall, available as a printable file before any physical edition is considered.</p>
+      </article>
+
+      <article class="guild-product guild-product-idea">
+        <span class="guild-product-number">03</span><p class="guild-product-state">Possible future release</p><h3>Regional Field Guide</h3><p>A more detailed companion with selected stories, places to explore, notes and small achievements.</p>
+      </article>
+    </div>
+  </section>
+  <footer>Development preview only &nbsp;&middot;&nbsp; <a href="./">Return to Folklore Finder</a></footer>
+</main>
+
+</body>
+</html>

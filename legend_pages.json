@@ -2536,6 +2536,96 @@
         "Setting": "Bardney Abbey",
         "Motif": "Pillar of light"
       }
+    },
+    "Metheringham Lass": {
+      "priority": 170,
+      "image": "legend-images/metheringham-lass-hero.jpg",
+      "alt": "A young WAAF woman raising a hand on a rain-dark Lincolnshire road with the distant lights of RAF Metheringham behind her",
+      "caption": "A visual interpretation of the Metheringham Lass on the road by RAF Metheringham",
+      "map_title": "RAF Metheringham, Lincolnshire",
+      "section_heading": "The woman in the road",
+      "pullquote": "The young woman is said to be accompanied by a strong, sweet smell of lavender as she pleads for help.",
+      "facts": {
+        "Tradition": "Lincolnshire ghost lore",
+        "Type": "Phantom hitchhiker",
+        "Setting": "Roads by RAF Metheringham",
+        "Motif": "Lavender and vanishing"
+      }
+    },
+    "Wayland's Smithy": {
+      "priority": 171,
+      "image": "legend-images/wayland-s-smithy-hero.jpg",
+      "alt": "A saddled horse standing beside the stones of Wayland's Smithy at dawn with a silver coin left on the capstone",
+      "caption": "A visual interpretation of Wayland's Smithy on the Ridgeway",
+      "map_title": "Wayland's Smithy, Oxfordshire",
+      "section_heading": "The coin on the capstone",
+      "pullquote": "It was said that if a traveller's horse had cast a shoe, he need only leave the horse beside the barrow together with a silver coin upon the capstone.",
+      "facts": {
+        "Tradition": "Anglo-Saxon monument lore",
+        "Type": "Neolithic long barrow",
+        "Setting": "Ridgeway, Oxfordshire",
+        "Motif": "Invisible smith"
+      }
+    },
+    "Hobby Horse of Padstow": {
+      "priority": 172,
+      "image": "legend-images/hobby-horse-of-padstow-hero.jpg",
+      "alt": "The black Obby Oss moving through a whitewashed Padstow street with its Teaser and musicians on May Day",
+      "caption": "A visual interpretation of the Obby Oss in Padstow on May Day",
+      "map_title": "Padstow, Cornwall",
+      "section_heading": "The Oss in the street",
+      "pullquote": "From dawn the streets ring with the 'Morning Song', and two great hobby horses - the 'Old' 'Oss and the 'Blue Ribbon' 'Oss - caper through the town.",
+      "facts": {
+        "Tradition": "Cornish May Day custom",
+        "Type": "Living folk ceremony",
+        "Setting": "Padstow streets and harbour",
+        "Motif": "Fertility and rebirth"
+      }
+    },
+    "Chûn Quoit": {
+      "priority": 173,
+      "image": "legend-images/chun-quoit-hero.jpg",
+      "alt": "Chûn Quoit standing on open Cornish moorland beneath heavy Atlantic cloud with the sea in the distance",
+      "caption": "A visual interpretation of Chûn Quoit on the moors above west Cornwall",
+      "map_title": "Morvah and Madron, Cornwall",
+      "section_heading": "The giant's quoit on the downs",
+      "pullquote": "Giants, the stories say, hurled them into place while playing a game of quoits.",
+      "facts": {
+        "Tradition": "Cornish monument lore",
+        "Type": "Neolithic portal dolmen",
+        "Setting": "West Cornwall moorland",
+        "Motif": "Giants hurl the capstone"
+      }
+    },
+    "Callanish Standing Stones": {
+      "priority": 174,
+      "image": "legend-images/callanish-standing-stones-hero.jpg",
+      "alt": "The Callanish Standing Stones rising from rough grass beside Loch Roag in soft Hebridean dawn light",
+      "caption": "A visual interpretation of the Callanish stones at dawn on Lewis",
+      "map_title": "Callanish, Isle of Lewis",
+      "section_heading": "The Shining One at dawn",
+      "pullquote": "Early on the morning of the summer solstice, a mysterious figure known simply as the Shining One is said to walk the length of the main avenue from north to south.",
+      "facts": {
+        "Tradition": "Hebridean stone lore",
+        "Type": "Neolithic stone circle",
+        "Setting": "Loch Roag, Lewis",
+        "Motif": "Midsummer visitation"
+      }
+    },
+    "Branwen": {
+      "priority": 175,
+      "image": "legend-images/branwen-hero.jpg",
+      "alt": "Branwen in early medieval dress holding a starling above the rocky Anglesey shore at dusk",
+      "caption": "A visual interpretation of Branwen sending her message across the sea",
+      "map_title": "Anglesey and the Irish Sea",
+      "section_heading": "The message across the water",
+      "pullquote": "She tamed a starling, taught it speech, and sent it across the sea with word of her misery.",
+      "facts": {
+        "Tradition": "Welsh mythology",
+        "Role": "Heroine of the Mabinogi",
+        "Setting": "Anglesey and Ireland",
+        "Motif": "Starling-borne message"
+      }
     }
   }
 }

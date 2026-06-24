@@ -649,60 +649,6 @@ footer a{color:var(--ink-light)}
 
 </div>
 
-<section class="guild-preview" id="guild" aria-labelledby="guild-title">
-  <header class="guild-heading">
-    <div>
-      <p class="guild-kicker">A small experiment</p>
-      <h2 id="guild-title">Explorer&rsquo;s Guild</h2>
-      <p>I&rsquo;m exploring useful, printable companions to the archive. Nothing is for sale yet. This is a first look at what might be worth making properly.</p>
-    </div>
-    <span class="guild-working-title">Working title</span>
-  </header>
-
-  <div class="guild-product-grid">
-    <article class="guild-product guild-product-featured">
-      <div class="guild-sheet" aria-hidden="true">
-        <span class="guild-sheet-kicker">Folklore Finder</span>
-        <strong>Cornwall<br/>Explorer Checklist</strong>
-        <span class="guild-sheet-rule"></span>
-        <span class="guild-sheet-mark">44</span>
-        <span class="guild-sheet-caption">stories and places</span>
-      </div>
-      <div class="guild-product-copy">
-        <p class="guild-product-state">Draft product available</p>
-        <h3>Cornwall Folklore Explorer Checklist</h3>
-        <p>A printer friendly, two page companion containing a starter trail and the complete Cornwall checklist, arranged by folklore type.</p>
-        <ul>
-          <li>Eight suggested encounters</li>
-          <li>Forty four Cornish entries</li>
-          <li>Space for field notes</li>
-        </ul>
-        <div class="guild-actions">
-          <a class="btn btn-primary" href="output/pdf/folklore-finder-cornwall-explorer-checklist-draft.pdf" target="_blank" rel="noopener">Open the draft PDF</a>
-          <button class="btn btn-secondary guild-interest" type="button" data-guild-product="cornwall-checklist">I&rsquo;d like this</button>
-        </div>
-      </div>
-    </article>
-
-    <article class="guild-product guild-product-idea">
-      <span class="guild-product-number">02</span>
-      <p class="guild-product-state">Possible next release</p>
-      <h3>Folklore Map Poster</h3>
-      <p>An original illustrated map for the wall, available as a printable file before any physical edition is considered.</p>
-      <button class="guild-text-button guild-interest" type="button" data-guild-product="map-poster">I&rsquo;d be interested</button>
-    </article>
-
-    <article class="guild-product guild-product-idea">
-      <span class="guild-product-number">03</span>
-      <p class="guild-product-state">Possible future release</p>
-      <h3>Regional Field Guide</h3>
-      <p>A more detailed companion with selected stories, places to explore, notes and small achievements.</p>
-      <button class="guild-text-button guild-interest" type="button" data-guild-product="regional-guide">I&rsquo;d be interested</button>
-    </article>
-  </div>
-  <p class="guild-interest-status" id="guildInterestStatus" aria-live="polite"></p>
-</section>
-
 </div>
 
 <footer>Folklore Finder &nbsp;&#183;&nbsp; An atlas of myths, legends, &amp; stories &nbsp;&#183;&nbsp; &copy; EditionTree &nbsp;&#183;&nbsp; <a href="about">About</a> &nbsp;&#183;&nbsp; <a href="updates">Updates</a> &nbsp;&#183;&nbsp; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener">&#9749; Ko-fi</a> &nbsp;&#183;&nbsp; <a href="privacy">Privacy</a></footer>
@@ -962,25 +908,6 @@ footer a{color:var(--ink-light)}
   document.addEventListener('click', e => {
     if (!e.target.closest('#heroSearch') && !e.target.closest('#heroResults'))
       setExpanded(false);
-  });
-})();
-</script>
-<script>
-(function(){
-  const status = document.getElementById('guildInterestStatus');
-  document.querySelectorAll('.guild-interest').forEach(button => {
-    const product = button.dataset.guildProduct;
-    const key = 'ff-guild-interest-' + product;
-    if (localStorage.getItem(key)) {
-      button.textContent = 'Interest noted';
-      button.disabled = true;
-    }
-    button.addEventListener('click', () => {
-      localStorage.setItem(key, '1');
-      button.textContent = 'Interest noted';
-      button.disabled = true;
-      status.textContent = 'Thank you. This prototype stores your choice only in this browser and sends no personal information.';
-    });
   });
 })();
 </script>

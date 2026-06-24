@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-23T19:59:47.690027Z",
+  "generated": "2026-06-24T18:40:26.920794Z",
   "total": 648,
   "categories": {
     "beast": "Beasts",
@@ -5729,14 +5729,21 @@
       "lng": -9.0245,
       "category": "location",
       "region": "Knocknakilla, County Cork",
-      "summary": "Knocknakilla is the site of a megalithic complex situated between Macroom and Millstreet, in County Cork, Ireland. It is set in blanket peatland on the north-west upper slopes of Musherabeg mountain and is thought to be 3500 years old.",
+      "summary": "A 3,500-year-old stone circle on Musherabeg Mountain where fairy traditions linger and scattered quartz pebbles hint at ancient rituals tied to the turning of the sun.",
       "source": "https://en.wikipedia.org/wiki/Knocknakilla",
       "date_added": "2026-05-30",
       "tags": [
-        "mountain",
         "standing-stones",
+        "fairy",
+        "mountain",
         "ireland",
-        "county-cork"
+        "county-cork",
+        "celtic"
+      ],
+      "detail": "High on the boggy north-west slopes of Musherabeg Mountain, between Macroom and Millstreet, five standing stones form a circle aligned to the summer and winter solstices. Local tradition holds that faeries and other supernatural forces guard the site, and generations of Cork farming families avoided disturbing the stones for fear of provoking them. The circle sits within a broader complex that includes a pair of outlying standing stones and a ring cairn, suggesting the mountainside served as a significant ritual landscape in the Bronze Age.\n\nWhen the circle was excavated in 1931, archaeologists uncovered a paved floor and a deliberate deposit of white quartz pebbles concentrated around the entrance. Quartz scatters at Irish stone circles are widely interpreted as having spiritual significance — the gleaming stones may have marked a threshold between the everyday world and a sacred interior. The site's Irish name is itself debated: some translate it as Cnoc na Cille, \"Hill of the Church,\" implying later ecclesiastical associations, while others prefer Cnoc na Coille, \"Hill of the Wood,\" recalling the forest that once clothed these uplands before peat blanketed the landscape.\n\nKnocknakilla belongs to the distinctive Cork and Kerry tradition of five-stone circles, a monument type found almost exclusively in Munster. These compact rings, oriented toward solar and lunar events, are thought to have served as ceremonial calendars for early farming communities, marking the turning points of the agricultural year. The survival of fairy beliefs around the site shows how prehistoric sacred places continued to command respect long after the rituals they were built for had been forgotten.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Knocknakilla",
+        "https://secretireland.ie/knocknakilla-stone-circle-a-window-into-irelands-ancient-mysteries/"
       ]
     },
     {

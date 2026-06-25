@@ -2626,6 +2626,186 @@
         "Setting": "Anglesey and Ireland",
         "Motif": "Starling-borne message"
       }
+    },
+    "Ellén Trechend": {
+      "priority": 176,
+      "image": "legend-images/ellen-trechend-hero.jpg",
+      "alt": "A three-headed beast crawling from the dark mouth of Oweynagat above the fields of Rathcroghan under heavy cloud",
+      "caption": "A visual interpretation of the Ellén Trechend emerging at Oweynagat",
+      "map_title": "Oweynagat, Rathcroghan",
+      "section_heading": "The beast from Cruachan",
+      "pullquote": "A monstrous three-headed creature emerged from the dark cave of Cruachan and rampaged across Ireland.",
+      "facts": {
+        "Tradition": "Irish mythology",
+        "Type": "Three-headed monster",
+        "Setting": "Oweynagat, Rathcroghan",
+        "Motif": "Otherworld eruption"
+      }
+    },
+    "Nanteos Cup": {
+      "priority": 177,
+      "image": "legend-images/nanteos-cup-hero.jpg",
+      "alt": "The worn wooden Nanteos Cup on a dark table beside a window overlooking the hills of Ceredigion",
+      "caption": "A visual interpretation of the Nanteos Cup at Nanteos Mansion",
+      "map_title": "Nanteos, Ceredigion",
+      "section_heading": "The cup borrowed for healing",
+      "pullquote": "The sick would come to the mansion, take the fragment home on surety of its return, and drink water from it or press it to their ailments.",
+      "facts": {
+        "Tradition": "Welsh folklore",
+        "Type": "Healing relic",
+        "Setting": "Nanteos Mansion",
+        "Motif": "Grail claim and cure"
+      }
+    },
+    "Pwyll, Prince of Dyfed": {
+      "priority": 178,
+      "image": "legend-images/pwyll-prince-of-dyfed-hero.jpg",
+      "alt": "Pwyll standing on the Gorsedd Arberth mound while Rhiannon waits on a white horse across the Pembrokeshire pasture",
+      "caption": "A visual interpretation of Pwyll witnessing Rhiannon at Gorsedd Arberth",
+      "map_title": "Gorsedd Arberth, Narberth",
+      "section_heading": "The wonder on the mound",
+      "pullquote": "Pwyll sits there and witnesses a woman in gold silk on a white horse circling the mound: Rhiannon.",
+      "facts": {
+        "Tradition": "Welsh mythology",
+        "Type": "Prince of Dyfed",
+        "Setting": "Gorsedd Arberth",
+        "Motif": "Otherworld encounter"
+      }
+    },
+    "Queen Medb": {
+      "priority": 179,
+      "image": "legend-images/queen-medb-hero.jpg",
+      "alt": "Queen Medb standing beside the cairn on Knocknarea above Sligo Bay at dawn",
+      "caption": "A visual interpretation of Queen Medb on Knocknarea in County Sligo",
+      "map_title": "Knocknarea, County Sligo",
+      "section_heading": "The queen in the cairn",
+      "pullquote": "Medb is said to be buried standing upright, facing her enemies in Ulster, beneath the great cairn known as Meascan Meabha.",
+      "facts": {
+        "Tradition": "Ulster Cycle",
+        "Role": "Queen of Connacht",
+        "Setting": "Knocknarea & Cruachan",
+        "Motif": "Sovereignty and vengeance"
+      }
+    },
+    "Hartlepool Monkey": {
+      "priority": 180,
+      "image": "legend-images/hartlepool-monkey-hero.jpg",
+      "alt": "A monkey in a miniature French naval uniform standing before Hartlepool fishermen on a wreck-strewn beach",
+      "caption": "A visual interpretation of the Hartlepool monkey legend on the County Durham coast",
+      "map_title": "Hartlepool, County Durham",
+      "section_heading": "The trial on the beach",
+      "pullquote": "The monkey, unable to answer their questions in English, was convicted of espionage and hanged from the mast of the wrecked ship.",
+      "facts": {
+        "Tradition": "North-east English folklore",
+        "Type": "Napoleonic shipwreck legend",
+        "Setting": "Hartlepool beach",
+        "Legacy": "H’Angus and marina statue"
+      }
+    },
+    "Grey Man of Ben MacDhui": {
+      "priority": 181,
+      "image": "legend-images/grey-man-of-ben-macdhui-hero.jpg",
+      "alt": "A lone walker on the misty summit of Ben Macdui with a vast grey figure suggested in the cloud behind him",
+      "caption": "A visual interpretation of the Grey Man on Ben Macdui in the Cairngorms",
+      "map_title": "Ben Macdui, Cairngorms",
+      "section_heading": "Footsteps in the mist",
+      "pullquote": "Climbers on the lonely plateau have described the unmistakable sound of slow, heavy footsteps crunching behind them in the mist.",
+      "facts": {
+        "Tradition": "Scottish mountain lore",
+        "Type": "Mountain haunting",
+        "Setting": "Ben Macdui summit",
+        "Motif": "Footsteps and dread"
+      }
+    },
+    "Wild Man of Orford": {
+      "priority": 182,
+      "image": "legend-images/wild-man-of-orford-hero.jpg",
+      "alt": "A hairy wild man tangled in fishing nets on the shingle shore below Orford Castle",
+      "caption": "A visual interpretation of the Wild Man of Orford on the Suffolk coast",
+      "map_title": "Orford Castle, Suffolk",
+      "section_heading": "The creature in the nets",
+      "pullquote": "Despite months of captivity and attempts at questioning and torture, he never spoke, communicating only in grunts, and ate raw fish, always wringing out the moisture first.",
+      "facts": {
+        "Tradition": "Medieval English chronicle",
+        "Type": "Wild man or merman",
+        "Setting": "Orford coast and castle",
+        "Motif": "Captured creature escapes"
+      }
+    },
+    "Isobel Gowdie": {
+      "priority": 183,
+      "image": "legend-images/isobel-gowdie-hero.jpg",
+      "alt": "Isobel Gowdie standing on rough ground near Auldearn while a hare darts through the grass",
+      "caption": "A visual interpretation of Isobel Gowdie near Auldearn in 1662",
+      "map_title": "Auldearn, Highland",
+      "section_heading": "The confessions at Auldearn",
+      "pullquote": "Gowdie described slipping out of her own body to fly through the night air, feasting with the fairy folk beneath the hills, and riding with the Queen of Elfhame.",
+      "facts": {
+        "Tradition": "Scottish witch-lore",
+        "Type": "Confessed witch",
+        "Setting": "Auldearn and Nairn",
+        "Motif": "Fairy riding and shape-changing"
+      }
+    },
+    "Twrch Trwyth": {
+      "priority": 184,
+      "image": "legend-images/twrch-trwyth-hero.jpg",
+      "alt": "A huge dark boar charging across the Pembrokeshire coast with distant hunters behind",
+      "caption": "A visual interpretation of Twrch Trwyth near Porth Clais in Pembrokeshire",
+      "map_title": "Porth Clais, Pembrokeshire",
+      "section_heading": "The hunt across Britain",
+      "pullquote": "Carrying a comb, razor and shears between his ears, the creature lands near Porth Clais and leaves a destructive trail across Wales before fleeing toward Cornwall.",
+      "facts": {
+        "Tradition": "Welsh Arthurian tale",
+        "Type": "Enchanted boar",
+        "Setting": "Pembrokeshire coast",
+        "Motif": "Impossible hunt"
+      }
+    },
+    "Ascapart": {
+      "priority": 185,
+      "image": "legend-images/ascapart-hero.jpg",
+      "alt": "The giant Ascapart striding beside Southampton Water with Bevis and his horse following behind",
+      "caption": "A visual interpretation of Ascapart on the coast of Southampton Water",
+      "map_title": "Southampton Water, Hampshire",
+      "section_heading": "The giant who changed sides",
+      "pullquote": "After Bevis defeats him in single combat, Ascapart does not die — he becomes Bevis's follower and companion, the loyal giant-servant who carries out tasks too large for any human knight.",
+      "facts": {
+        "Tradition": "Middle English romance",
+        "Type": "Legendary giant",
+        "Setting": "Southampton Water",
+        "Motif": "Defeat turned to loyalty"
+      }
+    },
+    "Dragon of Ludham": {
+      "priority": 186,
+      "image": "legend-images/dragon-of-ludham-hero.jpg",
+      "alt": "A low dark dragon beside Ludham churchyard with St Benet's Abbey distant across the marshes",
+      "caption": "A visual interpretation of the Dragon of Ludham in the Norfolk Broads",
+      "map_title": "Ludham & St Benet's Abbey",
+      "section_heading": "The lair beneath the village",
+      "pullquote": "Furious to find its lair blocked, the dragon thrashed its tail and took to the air, flying along the causeway towards the ruined Abbey of St Benet at Holm.",
+      "facts": {
+        "Tradition": "Norfolk folklore",
+        "Type": "Village dragon",
+        "Setting": "Ludham churchyard",
+        "Motif": "Sealed lair and flight"
+      }
+    },
+    "Wiltshire Moonrakers": {
+      "priority": 187,
+      "image": "legend-images/wiltshire-moonrakers-hero.jpg",
+      "alt": "Wiltshire smugglers raking a moonlit pond while the reflected moon gleams on the water",
+      "caption": "A visual interpretation of the Moonrakers' pond trick in Wiltshire",
+      "map_title": "The Crammer, Devizes",
+      "section_heading": "The cheese in the pond",
+      "pullquote": "Smugglers caught raking a moonlit pond told excise men they were fishing for a round cheese — the moon's reflection.",
+      "facts": {
+        "Tradition": "Wiltshire folklore",
+        "Type": "Smuggler trick tale",
+        "Setting": "The Crammer pond",
+        "Motif": "Cunning by feigned foolishness"
+      }
     }
   }
 }

@@ -2806,6 +2806,321 @@
         "Setting": "The Crammer pond",
         "Motif": "Cunning by feigned foolishness"
       }
+    },
+    "Boobrie": {
+      "priority": 188,
+      "image": "legend-images/boobrie-hero.jpg",
+      "alt": "The Boobrie as an enormous black water bird standing over a bloodied carcass at the edge of a storm-dark Argyll loch",
+      "caption": "A visual interpretation of the Boobrie on a loch in Argyll",
+      "map_title": "Argyll lochs",
+      "section_heading": "The cry at the lochside",
+      "pullquote": "Its cry, witnesses agreed, was not birdlike at all — it bellowed like a bull.",
+      "facts": {
+        "Tradition": "Highland water lore",
+        "Type": "Shape-shifting loch monster",
+        "Setting": "Argyll lochs and inlets",
+        "Motif": "Livestock dragged under"
+      }
+    },
+    "The Merry Maidens": {
+      "priority": 189,
+      "image": "legend-images/the-merry-maidens-hero.jpg",
+      "alt": "The granite stones of the Merry Maidens standing in rough Cornish grass beneath a clearing storm sky",
+      "caption": "A visual interpretation of the Merry Maidens stone circle near St Buryan",
+      "map_title": "St Buryan, Cornwall",
+      "section_heading": "The dancers in the field",
+      "pullquote": "The stones are said to be young women turned to rock as a punishment for dancing on the Sabbath.",
+      "facts": {
+        "Tradition": "Cornish monument lore",
+        "Type": "Neolithic stone circle",
+        "Setting": "Fields south of St Buryan",
+        "Motif": "Dancers turned to stone"
+      }
+    },
+    "Worm of Linton": {
+      "priority": 190,
+      "image": "legend-images/worm-of-linton-hero.jpg",
+      "alt": "The Worm of Linton rearing from its den on Linton Hill as John Somerville advances with a burning lance",
+      "caption": "A visual interpretation of the Worm of Linton in the Scottish Borders",
+      "map_title": "Linton Hill, Scottish Borders",
+      "section_heading": "The burning lance",
+      "pullquote": "He thrust the blazing mass down its throat and burned it from within.",
+      "facts": {
+        "Tradition": "Borders dragon lore",
+        "Type": "Venomous hill worm",
+        "Setting": "Linton Hill",
+        "Motif": "Dragon slain by stratagem"
+      }
+    },
+    "Billy Marshall": {
+      "priority": 191,
+      "image": "legend-images/billy-marshall-hero.jpg",
+      "alt": "Billy Marshall standing on a muddy Galloway road beside a small horse and wagon near Kirkcudbright kirkyard under a grey sky",
+      "caption": "A visual interpretation of the Billy Marshall legend in Galloway",
+      "map_title": "Kirkcudbright, Galloway",
+      "section_heading": "Billy Marshall's old kingdom",
+      "pullquote": "He married seventeen wives and fathered sixty-eight children; tradition insists four were born after his hundredth birthday.",
+      "facts": {
+        "Tradition": "Scottish Romani tradition",
+        "Figure": "King of the Gypsies",
+        "Setting": "Kirkcudbright, Galloway",
+        "Legacy": "Grave still visited"
+      }
+    },
+    "Jack o' Kent": {
+      "priority": 192,
+      "image": "legend-images/jack-o-kent-hero.jpg",
+      "alt": "Jack o' Kent standing beside a medieval stone bridge while a dog crosses the River Monnow through morning mist",
+      "caption": "A visual interpretation of Jack o' Kent in the Welsh Marches",
+      "map_title": "Kentchurch and Grosmont",
+      "section_heading": "The bargain at the bridge",
+      "pullquote": "He has the Devil build a bridge over the Monnow in a single night in return for the soul of the first to cross it, then sends a dog over first and cheats Satan of his fee.",
+      "facts": {
+        "Tradition": "Welsh Marches folklore",
+        "Type": "Trickster hero",
+        "Setting": "Kentchurch and Grosmont",
+        "Motif": "Outwitting the Devil"
+      }
+    },
+    "Knucker of Lyminster": {
+      "priority": 193,
+      "image": "legend-images/knucker-of-lyminster-hero.jpg",
+      "alt": "The Knucker of Lyminster rising from a dark spring-fed pool beside a cart and horse at dusk in West Sussex",
+      "caption": "A visual interpretation of the Sussex Knucker legend",
+      "map_title": "Lyminster, West Sussex",
+      "section_heading": "The beast in the knucker-hole",
+      "pullquote": "He baked an enormous poisoned pie, carted it out to the Knucker Hole, and let the greedy dragon swallow pie, horse, cart and all.",
+      "facts": {
+        "Tradition": "Sussex folklore",
+        "Type": "Water-dragon",
+        "Setting": "Knucker Hole, Lyminster",
+        "Motif": "Poisoned pie slaying"
+      }
+    },
+    "Cernunnos": {
+      "priority": 194,
+      "image": "legend-images/cernunnos-hero.jpg",
+      "alt": "An antlered figure in worn Iron Age dress standing in an oak woodland beside a stag at dawn",
+      "caption": "A visual interpretation of Cernunnos in a British woodland setting",
+      "map_title": "Britain & Gaul",
+      "section_heading": "The horned god among beasts",
+      "pullquote": "He is depicted as a mature figure crowned with the antlers of a stag.",
+      "facts": {
+        "Tradition": "Celtic religion",
+        "Type": "Antlered deity",
+        "Setting": "Britain & Gaul",
+        "Motif": "Wild nature and abundance"
+      }
+    },
+    "Áine": {
+      "priority": 195,
+      "image": "legend-images/aine-hero.jpg",
+      "alt": "A woman in simple early Irish dress standing on Knockainey at dusk while torchbearers climb the hill behind her",
+      "caption": "A visual interpretation of Áine and the midsummer rite at Knockainey",
+      "map_title": "Knockainey, County Limerick",
+      "section_heading": "The torches on Cnoc Áine",
+      "pullquote": "Local families climbed Cnoc Áine carrying torches of hay and straw tied to hazel poles.",
+      "facts": {
+        "Tradition": "Irish mythology",
+        "Type": "Sovereignty goddess",
+        "Setting": "Knockainey & Lough Gur",
+        "Motif": "Summer fire and fertility"
+      }
+    },
+    "Merlin's Cave": {
+      "priority": 196,
+      "image": "legend-images/merlin-s-cave-hero.jpg",
+      "alt": "A lone cloaked figure standing at the mouth of Merlin's Cave below the cliffs of Tintagel at low tide",
+      "caption": "A visual interpretation of Merlin's Cave beneath the Tintagel headland",
+      "map_title": "Tintagel, Cornwall",
+      "section_heading": "The cave below Tintagel",
+      "pullquote": "Despite the name, no medieval source places Merlin inside — or anywhere near — this cave.",
+      "facts": {
+        "Tradition": "Arthurian landscape lore",
+        "Type": "Tidal sea cave",
+        "Setting": "Tintagel headland",
+        "Motif": "Arthurian association"
+      }
+    },
+    "Rollright Stones curse": {
+      "priority": 197,
+      "image": "legend-images/rollright-stones-curse-hero.jpg",
+      "alt": "Weathered standing stones on high Oxfordshire ground at dusk with a dark cloaked figure among them",
+      "caption": "A visual interpretation of the Rollright Stones curse in Oxfordshire",
+      "map_title": "Rollright Stones, Oxfordshire",
+      "section_heading": "The king in stone",
+      "pullquote": "They were once a would-be conqueror and his army, turned to stone by a witch.",
+      "facts": {
+        "Tradition": "English monument lore",
+        "Type": "Legendary stone circle",
+        "Setting": "Rollright, Oxfordshire",
+        "Motif": "King and knights turned to stone"
+      }
+    },
+    "Bomere Fish": {
+      "priority": 198,
+      "image": "legend-images/bomere-fish-hero.jpg",
+      "alt": "A huge pike-like fish breaking the surface of Bomere Pool beside a half-submerged bell at dusk",
+      "caption": "A visual interpretation of the Bomere Fish in the waters of Bomere Pool",
+      "map_title": "Bomere Pool, Shropshire",
+      "section_heading": "The fish in the mere",
+      "pullquote": "The most famous of its tales concerns a great fish — a pike of monstrous size — said to dwell in its dark waters.",
+      "facts": {
+        "Tradition": "Shropshire water lore",
+        "Type": "Monstrous pike",
+        "Setting": "Bomere Pool",
+        "Motif": "Drowned village and omen"
+      }
+    },
+    "Mermaid of Marden": {
+      "priority": 199,
+      "image": "legend-images/mermaid-of-marden-hero.jpg",
+      "alt": "A dark-haired river spirit in the water hauling a church bell toward the bank of the River Lugg at dusk",
+      "caption": "A visual interpretation of the Mermaid of Marden drawing the church bell back into the river",
+      "map_title": "Marden & the River Lugg",
+      "section_heading": "The bell in the river",
+      "pullquote": "The bell was nearly clear of the water, and a mermaid appeared and seized it back into the depths.",
+      "facts": {
+        "Tradition": "Herefordshire folklore",
+        "Type": "River mermaid",
+        "Setting": "River Lugg at Marden",
+        "Motif": "Stolen church bell"
+      }
+    },
+    "Bisterne Dragon": {
+      "priority": 200,
+      "image": "legend-images/bisterne-dragon-hero.jpg",
+      "alt": "A medieval knight with two mastiffs facing a dragon on open heath near Burley at dusk",
+      "caption": "A visual interpretation of the Bisterne Dragon on the edge of the New Forest",
+      "map_title": "Bisterne, New Forest",
+      "section_heading": "The dragon on the forest edge",
+      "pullquote": "the terrified people set out a daily pail of milk to appease it",
+      "facts": {
+        "Tradition": "New Forest folklore",
+        "Type": "Local dragon",
+        "Setting": "Bisterne and Burley Beacon",
+        "Motif": "Milk tribute and dragon slaying"
+      }
+    },
+    "Penhill Giant": {
+      "priority": 201,
+      "image": "legend-images/penhill-giant-hero.jpg",
+      "alt": "A huge ragged giant striding with a pack of hounds on the slopes of Penhill above Wensleydale",
+      "caption": "A visual interpretation of the Penhill Giant above Wensleydale",
+      "map_title": "Penhill, Wensleydale",
+      "section_heading": "The tyrant of Penhill",
+      "pullquote": "a brutal ogre who kept a pack of savage hounds and lorded it over the shepherds of the dale",
+      "facts": {
+        "Tradition": "Yorkshire giant lore",
+        "Type": "Hill giant",
+        "Setting": "Penhill above Wensleydale",
+        "Motif": "Tyrant and hound pack"
+      }
+    },
+    "Wisht Hounds": {
+      "priority": 202,
+      "image": "legend-images/wisht-hounds-hero.jpg",
+      "alt": "A pack of spectral black hounds racing across wet Dartmoor ground with a hooded huntsman behind them",
+      "caption": "A visual interpretation of the Wisht Hounds near Wistman's Wood on Dartmoor",
+      "map_title": "Wistman's Wood, Dartmoor",
+      "section_heading": "The hunt across the moor",
+      "pullquote": "to hear their baying carried on the wind was an omen of death",
+      "facts": {
+        "Tradition": "Dartmoor folklore",
+        "Type": "Spectral hunt",
+        "Setting": "Wistman's Wood",
+        "Motif": "Wild Hunt death omen"
+      }
+    },
+    "Helen Duncan": {
+      "priority": 203,
+      "image": "legend-images/helen-duncan-hero.jpg",
+      "alt": "Helen Duncan seated at a wartime seance table in a dim parlour with strips of false ectoplasm hanging from her mouth",
+      "caption": "A visual interpretation of Helen Duncan in a wartime séance room",
+      "map_title": "Fife and wartime spiritualism",
+      "section_heading": "The séance that reached the courts",
+      "pullquote": "she appeared to produce 'ectoplasm' — a substance said to let spirits take form",
+      "facts": {
+        "Tradition": "Scottish spiritualist lore",
+        "Type": "Physical medium",
+        "Setting": "Fife and wartime séance rooms",
+        "Motif": "Witchcraft trial in 1944"
+      }
+    },
+    "Matthew Hopkins": {
+      "priority": 204,
+      "image": "legend-images/matthew-hopkins-hero.jpg",
+      "alt": "Matthew Hopkins in black Civil War era dress standing beside a muddy Essex pond with accused women and townspeople under watch",
+      "caption": "A visual interpretation of Matthew Hopkins at work in Civil War era Essex",
+      "map_title": "Manningtree, Essex",
+      "section_heading": "The self-styled Witchfinder General",
+      "pullquote": "the title 'Witchfinder General' was entirely his own invention",
+      "facts": {
+        "Tradition": "English witch-trial lore",
+        "Type": "Witch-hunter",
+        "Setting": "Manningtree and eastern England",
+        "Motif": "Swimming test and accusation"
+      }
+    },
+    "Seonaidh": {
+      "priority": 205,
+      "image": "legend-images/seonaidh-hero.jpg",
+      "alt": "A towering sea spirit rising from kelp-dark water off the coast of Lewis under a stormy dusk sky",
+      "caption": "A visual interpretation of Seonaidh emerging from the Atlantic off Lewis",
+      "map_title": "Eoropie, Isle of Lewis",
+      "section_heading": "The spirit in the sea",
+      "pullquote": "Seonaidh — anglicised as Shony or Shoney — was a sea-spirit or sea-god of the Isle of Lewis",
+      "facts": {
+        "Tradition": "Hebridean sea lore",
+        "Type": "Sea spirit",
+        "Setting": "St Mulvay's Church and shore",
+        "Motif": "Offering for seaware and crops"
+      }
+    },
+    "Red Hand of Ulster": {
+      "priority": 206,
+      "image": "legend-images/red-hand-of-ulster-hero.jpg",
+      "alt": "An early medieval Irish chieftain in a currach hurling his severed right hand toward the shore on the Ulster coast at dawn",
+      "caption": "A visual interpretation of the race for Ulster's kingship",
+      "map_title": "Ulster coast, Northern Ireland",
+      "section_heading": "The race for the kingdom",
+      "pullquote": "As one contestant saw he was losing the race, he drew his blade, severed his own right hand, and flung it onto the strand",
+      "facts": {
+        "Tradition": "Irish Gaelic legend",
+        "Type": "Kingship origin legend",
+        "Setting": "Ulster coast",
+        "Motif": "Hand thrown ashore"
+      }
+    },
+    "Winchester Round Table": {
+      "priority": 207,
+      "image": "legend-images/winchester-round-table-hero.jpg",
+      "alt": "The great painted Round Table hanging on the wall of Winchester Great Hall with a lone visitor standing beneath it",
+      "caption": "A visual interpretation of the Round Table in Winchester Great Hall",
+      "map_title": "Winchester Great Hall, Hampshire",
+      "section_heading": "Arthur's table on the wall",
+      "pullquote": "The table was almost certainly built for one such occasion - a prop in a carefully staged chivalric performance rather than an ancient relic.",
+      "facts": {
+        "Tradition": "Arthurian legend",
+        "Type": "Medieval Round Table",
+        "Setting": "Winchester Great Hall",
+        "Motif": "Camelot and royal pageantry"
+      }
+    },
+    "Tuatha Dé Danann": {
+      "priority": 208,
+      "image": "legend-images/tuatha-de-danann-hero.jpg",
+      "alt": "Cloaked figures of the Tuatha Dé Danann standing beside a grassy mound in the mist at the Hill of Tara in County Meath",
+      "caption": "A visual interpretation of the Tuatha Dé Danann in the Irish mythic landscape",
+      "map_title": "Hill of Tara, County Meath",
+      "section_heading": "The people of the mounds",
+      "pullquote": "They retreated underground, into the hollow hills - the sídhe - and became the people of the mounds.",
+      "facts": {
+        "Tradition": "Irish mythology",
+        "Type": "Divine race",
+        "Setting": "Ireland and the sídhe",
+        "Motif": "Treasures and fairy mounds"
+      }
     }
   }
 }

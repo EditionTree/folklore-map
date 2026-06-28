@@ -4,7 +4,7 @@
   <link>https://folklorefinder.uk/</link>
   <description>Recently added myths, legends, ghosts and folklore from across Britain and Ireland.</description>
   <language>en-gb</language>
-  <lastBuildDate>Sun, 28 Jun 2026 21:31:55 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 28 Jun 2026 21:41:17 GMT</lastBuildDate>
   <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://folklorefinder.uk/feed.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>Bessie Millie of Stromness</title>
@@ -21,6 +21,30 @@
     <pubDate>Sun, 28 Jun 2026 12:00:00 GMT</pubDate>
     <category>Dragons</category>
     <description>An ancient Celtic dragon coiled around this Sussex hilltop, its body cutting the folds still visible in the chalk landscape above a Roman villa.</description>
+  </item>
+  <item>
+    <title>Brutus of Troy</title>
+    <link>https://folklorefinder.uk/legends/brutus-of-troy</link>
+    <guid isPermaLink="true">https://folklorefinder.uk/legends/brutus-of-troy</guid>
+    <pubDate>Sun, 28 Jun 2026 12:00:00 GMT</pubDate>
+    <category>Legendary Figures</category>
+    <description>Great-grandson of Aeneas, exiled from Troy and guided by the goddess Diana to an island of giants, Brutus stepped ashore at Totnes to found Britain —…</description>
+  </item>
+  <item>
+    <title>Clíodhna</title>
+    <link>https://folklorefinder.uk/legends/cliodhna</link>
+    <guid isPermaLink="true">https://folklorefinder.uk/legends/cliodhna</guid>
+    <pubDate>Sun, 28 Jun 2026 12:00:00 GMT</pubDate>
+    <category>Deities</category>
+    <description>Munster&#x27;s goddess of love and queen of the banshees. She left the Otherworld for a mortal lover and was swept away as she slept by the Glandore wave that…</description>
+  </item>
+  <item>
+    <title>Cormoran, the Giant of St Michael&#x27;s Mount</title>
+    <link>https://folklorefinder.uk/legends/cormoran-the-giant-of-st-michael-s-mount</link>
+    <guid isPermaLink="true">https://folklorefinder.uk/legends/cormoran-the-giant-of-st-michael-s-mount</guid>
+    <pubDate>Sun, 28 Jun 2026 12:00:00 GMT</pubDate>
+    <category>Giants</category>
+    <description>The cattle-thieving Cornish giant who raised St Michael&#x27;s Mount, until young Jack of Marazion lured him into a pit and earned the name Jack the Giant…</description>
   </item>
   <item>
     <title>Erne of Lough Erne</title>
@@ -47,6 +71,30 @@
     <description>A friendly Somerset giant sat on Grabbist Hill cooling his feet in the River Avill, until the Devil challenged him to a stone-throwing contest.</description>
   </item>
   <item>
+    <title>Guinevere&#x27;s Grave at Meigle</title>
+    <link>https://folklorefinder.uk/legends/guinevere-s-grave-at-meigle</link>
+    <guid isPermaLink="true">https://folklorefinder.uk/legends/guinevere-s-grave-at-meigle</guid>
+    <pubDate>Sun, 28 Jun 2026 12:00:00 GMT</pubDate>
+    <category>Legendary Figures</category>
+    <description>Local legend names a mound at Meigle as the grave of Vanora — Guinevere — torn apart by wild beasts on Arthur&#x27;s order for her time among the Picts, her…</description>
+  </item>
+  <item>
+    <title>Jack the Giant Killer</title>
+    <link>https://folklorefinder.uk/legends/jack-the-giant-killer</link>
+    <guid isPermaLink="true">https://folklorefinder.uk/legends/jack-the-giant-killer</guid>
+    <pubDate>Sun, 28 Jun 2026 12:00:00 GMT</pubDate>
+    <category>Legendary Figures</category>
+    <description>A Cornish farmer&#x27;s lad who dug a pit to topple the giant Cormoran and won a belt naming him Jack the Giant Killer — then went on slaying giants the length…</description>
+  </item>
+  <item>
+    <title>Lady Godiva</title>
+    <link>https://folklorefinder.uk/legends/lady-godiva</link>
+    <guid isPermaLink="true">https://folklorefinder.uk/legends/lady-godiva</guid>
+    <pubDate>Sun, 28 Jun 2026 12:00:00 GMT</pubDate>
+    <category>Legendary Figures</category>
+    <description>To win mercy from her husband&#x27;s crushing taxes, the lady of Coventry rode naked through the streets clad only in her hair — while every soul looked away,…</description>
+  </item>
+  <item>
     <title>Le Roi des Auxcriniers</title>
     <link>https://folklorefinder.uk/legends/le-roi-des-auxcriniers</link>
     <guid isPermaLink="true">https://folklorefinder.uk/legends/le-roi-des-auxcriniers</guid>
@@ -61,6 +109,22 @@
     <pubDate>Sun, 28 Jun 2026 12:00:00 GMT</pubDate>
     <category>Dragons</category>
     <description>The last serpent to escape St Patrick&#x27;s purge terrorised the Sperrins until a local saint caged it beneath Lough Foyle, where it still churns the tides.</description>
+  </item>
+  <item>
+    <title>Lleu Llaw Gyffes</title>
+    <link>https://folklorefinder.uk/legends/lleu-llaw-gyffes</link>
+    <guid isPermaLink="true">https://folklorefinder.uk/legends/lleu-llaw-gyffes</guid>
+    <pubDate>Sun, 28 Jun 2026 12:00:00 GMT</pubDate>
+    <category>Deities</category>
+    <description>Cursed by his mother to have no name, no arms and no wife, the bright Welsh hero was given a bride made of flowers — who betrayed him to a rival, struck…</description>
+  </item>
+  <item>
+    <title>Mother Shipton</title>
+    <link>https://folklorefinder.uk/legends/mother-shipton</link>
+    <guid isPermaLink="true">https://folklorefinder.uk/legends/mother-shipton</guid>
+    <pubDate>Sun, 28 Jun 2026 12:00:00 GMT</pubDate>
+    <category>Witches</category>
+    <description>Born in a Knaresborough cave in a thunderstorm, the prophetess foretold the Armada&#x27;s defeat and London&#x27;s Great Fire — beside the petrifying well whose…</description>
   </item>
   <item>
     <title>Nicnevin</title>
@@ -79,6 +143,62 @@
     <description>Ireland&#x27;s most celebrated rapparee haunted south Armagh, robbing Cromwellian settlers and becoming a folk hero whose ghost still rides the borderlands.</description>
   </item>
   <item>
+    <title>Tam Lin</title>
+    <link>https://folklorefinder.uk/legends/tam-lin</link>
+    <guid isPermaLink="true">https://folklorefinder.uk/legends/tam-lin</guid>
+    <pubDate>Sun, 28 Jun 2026 12:00:00 GMT</pubDate>
+    <category>Fae &amp; Spirits</category>
+    <description>At Carterhaugh a young man stolen by the Fairy Queen begs Janet to save him: hold fast as they turn him to beast and burning brand on Halloween, and never…</description>
+  </item>
+  <item>
+    <title>The Babes in the Wood</title>
+    <link>https://folklorefinder.uk/legends/the-babes-in-the-wood</link>
+    <guid isPermaLink="true">https://folklorefinder.uk/legends/the-babes-in-the-wood</guid>
+    <pubDate>Sun, 28 Jun 2026 12:00:00 GMT</pubDate>
+    <category>Ghosts</category>
+    <description>Two orphaned children, left to a greedy uncle who paid to have them lost in Wayland Wood, died among the trees where robins covered them with leaves — and…</description>
+  </item>
+  <item>
+    <title>The Fenland Mandrake</title>
+    <link>https://folklorefinder.uk/legends/the-fenland-mandrake</link>
+    <guid isPermaLink="true">https://folklorefinder.uk/legends/the-fenland-mandrake</guid>
+    <pubDate>Sun, 28 Jun 2026 12:00:00 GMT</pubDate>
+    <category>Witches</category>
+    <description>True mandrake never grew in England, so the fen men carved its magic from white bryony roots — judged at the inn for the one most like a human figure, and…</description>
+  </item>
+  <item>
+    <title>The Lady of the Lake</title>
+    <link>https://folklorefinder.uk/legends/the-lady-of-the-lake</link>
+    <guid isPermaLink="true">https://folklorefinder.uk/legends/the-lady-of-the-lake</guid>
+    <pubDate>Sun, 28 Jun 2026 12:00:00 GMT</pubDate>
+    <category>Fae &amp; Spirits</category>
+    <description>The hand that rose from the water to give Arthur Excalibur — and reached up to take it back as he died. The enchantress who raised Lancelot and sealed…</description>
+  </item>
+  <item>
+    <title>Thomas the Rhymer</title>
+    <link>https://folklorefinder.uk/legends/thomas-the-rhymer</link>
+    <guid isPermaLink="true">https://folklorefinder.uk/legends/thomas-the-rhymer</guid>
+    <pubDate>Sun, 28 Jun 2026 12:00:00 GMT</pubDate>
+    <category>Legendary Figures</category>
+    <description>True Thomas met the Queen of Elfland beneath the Eildon Tree and rode to her realm for seven years, returning unable to tell a lie — and gifted with…</description>
+  </item>
+  <item>
+    <title>Tír na nÓg</title>
+    <link>https://folklorefinder.uk/legends/tir-na-nog</link>
+    <guid isPermaLink="true">https://folklorefinder.uk/legends/tir-na-nog</guid>
+    <pubDate>Sun, 28 Jun 2026 12:00:00 GMT</pubDate>
+    <category>Sacred Sites</category>
+    <description>From Lough Leane, golden-haired Niamh rode ashore on a white horse and bore Oisín over the sea to the Land of Youth — where three centuries passed as…</description>
+  </item>
+  <item>
+    <title>Uther Pendragon and Pendragon Castle</title>
+    <link>https://folklorefinder.uk/legends/uther-pendragon-and-pendragon-castle</link>
+    <guid isPermaLink="true">https://folklorefinder.uk/legends/uther-pendragon-and-pendragon-castle</guid>
+    <pubDate>Sun, 28 Jun 2026 12:00:00 GMT</pubDate>
+    <category>Legendary Figures</category>
+    <description>The ruined keep above the River Eden where legend makes Uther Pendragon, father of King Arthur, try and fail to bend the river into a moat: &#x27;Eden will run…</description>
+  </item>
+  <item>
     <title>Ysbaddaden</title>
     <link>https://folklorefinder.uk/legends/ysbaddaden</link>
     <guid isPermaLink="true">https://folklorefinder.uk/legends/ysbaddaden</guid>
@@ -95,22 +215,6 @@
     <description>In 1566 Agnes Waterhouse of Hatfield Peverel became the first woman hanged for witchcraft in England — confessing that her demonic cat Sathan could kill…</description>
   </item>
   <item>
-    <title>Brutus of Troy</title>
-    <link>https://folklorefinder.uk/legends/brutus-of-troy</link>
-    <guid isPermaLink="true">https://folklorefinder.uk/legends/brutus-of-troy</guid>
-    <pubDate>Fri, 19 Jun 2026 12:00:00 GMT</pubDate>
-    <category>Legendary Figures</category>
-    <description>Great-grandson of Aeneas, exiled from Troy and guided by the goddess Diana to an island of giants, Brutus stepped ashore at Totnes to found Britain —…</description>
-  </item>
-  <item>
-    <title>Clíodhna</title>
-    <link>https://folklorefinder.uk/legends/cliodhna</link>
-    <guid isPermaLink="true">https://folklorefinder.uk/legends/cliodhna</guid>
-    <pubDate>Fri, 19 Jun 2026 12:00:00 GMT</pubDate>
-    <category>Deities</category>
-    <description>Munster&#x27;s goddess of love and queen of the banshees. She left the Otherworld for a mortal lover and was swept away as she slept by the Glandore wave that…</description>
-  </item>
-  <item>
     <title>Downpatrick and the Three Saints</title>
     <link>https://folklorefinder.uk/legends/downpatrick-and-the-three-saints</link>
     <guid isPermaLink="true">https://folklorefinder.uk/legends/downpatrick-and-the-three-saints</guid>
@@ -119,52 +223,12 @@
     <description>Medieval tradition holds that St Patrick, St Brigid, and St Columba — Ireland&#x27;s three patron saints — share a single grave beneath Down Cathedral: &#x27;In…</description>
   </item>
   <item>
-    <title>Guinevere&#x27;s Grave at Meigle</title>
-    <link>https://folklorefinder.uk/legends/guinevere-s-grave-at-meigle</link>
-    <guid isPermaLink="true">https://folklorefinder.uk/legends/guinevere-s-grave-at-meigle</guid>
-    <pubDate>Fri, 19 Jun 2026 12:00:00 GMT</pubDate>
-    <category>Legendary Figures</category>
-    <description>Local legend names a mound at Meigle as the grave of Vanora — Guinevere — torn apart by wild beasts on Arthur&#x27;s order for her time among the Picts, her…</description>
-  </item>
-  <item>
-    <title>Jack the Giant Killer</title>
-    <link>https://folklorefinder.uk/legends/jack-the-giant-killer</link>
-    <guid isPermaLink="true">https://folklorefinder.uk/legends/jack-the-giant-killer</guid>
-    <pubDate>Fri, 19 Jun 2026 12:00:00 GMT</pubDate>
-    <category>Legendary Figures</category>
-    <description>A Cornish farmer&#x27;s lad who dug a pit to topple the giant Cormoran and won a belt naming him Jack the Giant Killer — then went on slaying giants the length…</description>
-  </item>
-  <item>
-    <title>Lady Godiva</title>
-    <link>https://folklorefinder.uk/legends/lady-godiva</link>
-    <guid isPermaLink="true">https://folklorefinder.uk/legends/lady-godiva</guid>
-    <pubDate>Fri, 19 Jun 2026 12:00:00 GMT</pubDate>
-    <category>Legendary Figures</category>
-    <description>To win mercy from her husband&#x27;s crushing taxes, the lady of Coventry rode naked through the streets clad only in her hair — while every soul looked away,…</description>
-  </item>
-  <item>
-    <title>Lleu Llaw Gyffes</title>
-    <link>https://folklorefinder.uk/legends/lleu-llaw-gyffes</link>
-    <guid isPermaLink="true">https://folklorefinder.uk/legends/lleu-llaw-gyffes</guid>
-    <pubDate>Fri, 19 Jun 2026 12:00:00 GMT</pubDate>
-    <category>Deities</category>
-    <description>Cursed by his mother to have no name, no arms and no wife, the bright Welsh hero was given a bride made of flowers — who betrayed him to a rival, struck…</description>
-  </item>
-  <item>
     <title>Lí Ban of Lough Neagh</title>
     <link>https://folklorefinder.uk/legends/li-ban-of-lough-neagh</link>
     <guid isPermaLink="true">https://folklorefinder.uk/legends/li-ban-of-lough-neagh</guid>
     <pubDate>Fri, 19 Jun 2026 12:00:00 GMT</pubDate>
     <category>Aquatic Legends</category>
     <description>When a sacred well drowned her entire family and created Lough Neagh, the Ulster princess Lí Ban survived underwater for 300 years — half woman, half…</description>
-  </item>
-  <item>
-    <title>Mother Shipton</title>
-    <link>https://folklorefinder.uk/legends/mother-shipton</link>
-    <guid isPermaLink="true">https://folklorefinder.uk/legends/mother-shipton</guid>
-    <pubDate>Fri, 19 Jun 2026 12:00:00 GMT</pubDate>
-    <category>Witches</category>
-    <description>Born in a Knaresborough cave in a thunderstorm, the prophetess foretold the Armada&#x27;s defeat and London&#x27;s Great Fire — beside the petrifying well whose…</description>
   </item>
   <item>
     <title>Owain Lawgoch</title>
@@ -181,69 +245,5 @@
     <pubDate>Fri, 19 Jun 2026 12:00:00 GMT</pubDate>
     <category>Dragons</category>
     <description>In the woods around Penllyne Castle, winged serpents covered in peacock-bright jewels terrorised farmyards and killed livestock within living memory of…</description>
-  </item>
-  <item>
-    <title>Sack of Baltimore</title>
-    <link>https://folklorefinder.uk/legends/sack-of-baltimore</link>
-    <guid isPermaLink="true">https://folklorefinder.uk/legends/sack-of-baltimore</guid>
-    <pubDate>Fri, 19 Jun 2026 12:00:00 GMT</pubDate>
-    <category>Pirates</category>
-    <description>Just after midnight on 20 June 1631, over 200 Algerian corsairs descended on the sleeping village of Baltimore and carried 107 people into North African…</description>
-  </item>
-  <item>
-    <title>Seven Whistlers</title>
-    <link>https://folklorefinder.uk/legends/seven-whistlers</link>
-    <guid isPermaLink="true">https://folklorefinder.uk/legends/seven-whistlers</guid>
-    <pubDate>Fri, 19 Jun 2026 12:00:00 GMT</pubDate>
-    <category>Beasts</category>
-    <description>Seven supernatural birds cry together only once in a generation — and when they do, Black Country miners refuse to go underground that day. Their shriek…</description>
-  </item>
-  <item>
-    <title>Tam Lin</title>
-    <link>https://folklorefinder.uk/legends/tam-lin</link>
-    <guid isPermaLink="true">https://folklorefinder.uk/legends/tam-lin</guid>
-    <pubDate>Fri, 19 Jun 2026 12:00:00 GMT</pubDate>
-    <category>Fae &amp; Spirits</category>
-    <description>At Carterhaugh a young man stolen by the Fairy Queen begs Janet to save him: hold fast as they turn him to beast and burning brand on Halloween, and never…</description>
-  </item>
-  <item>
-    <title>The Babes in the Wood</title>
-    <link>https://folklorefinder.uk/legends/the-babes-in-the-wood</link>
-    <guid isPermaLink="true">https://folklorefinder.uk/legends/the-babes-in-the-wood</guid>
-    <pubDate>Fri, 19 Jun 2026 12:00:00 GMT</pubDate>
-    <category>Ghosts</category>
-    <description>Two orphaned children, left to a greedy uncle who paid to have them lost in Wayland Wood, died among the trees where robins covered them with leaves — and…</description>
-  </item>
-  <item>
-    <title>The Hunt of Slieve Gullion</title>
-    <link>https://folklorefinder.uk/legends/the-hunt-of-slieve-gullion</link>
-    <guid isPermaLink="true">https://folklorefinder.uk/legends/the-hunt-of-slieve-gullion</guid>
-    <pubDate>Fri, 19 Jun 2026 12:00:00 GMT</pubDate>
-    <category>Fae &amp; Spirits</category>
-    <description>Milucra — a fairy woman jealous of her sister&#x27;s hold over Fionn mac Cumhaill — enchanted the summit lake of Slieve Gullion so that anyone who swam in it…</description>
-  </item>
-  <item>
-    <title>The Lady of the Lake</title>
-    <link>https://folklorefinder.uk/legends/the-lady-of-the-lake</link>
-    <guid isPermaLink="true">https://folklorefinder.uk/legends/the-lady-of-the-lake</guid>
-    <pubDate>Fri, 19 Jun 2026 12:00:00 GMT</pubDate>
-    <category>Fae &amp; Spirits</category>
-    <description>The hand that rose from the water to give Arthur Excalibur — and reached up to take it back as he died. The enchantress who raised Lancelot and sealed…</description>
-  </item>
-  <item>
-    <title>Thomas the Rhymer</title>
-    <link>https://folklorefinder.uk/legends/thomas-the-rhymer</link>
-    <guid isPermaLink="true">https://folklorefinder.uk/legends/thomas-the-rhymer</guid>
-    <pubDate>Fri, 19 Jun 2026 12:00:00 GMT</pubDate>
-    <category>Legendary Figures</category>
-    <description>True Thomas met the Queen of Elfland beneath the Eildon Tree and rode to her realm for seven years, returning unable to tell a lie — and gifted with…</description>
-  </item>
-  <item>
-    <title>Tichborne Dole</title>
-    <link>https://folklorefinder.uk/legends/tichborne-dole</link>
-    <guid isPermaLink="true">https://folklorefinder.uk/legends/tichborne-dole</guid>
-    <pubDate>Fri, 19 Jun 2026 12:00:00 GMT</pubDate>
-    <category>Legendary Figures</category>
-    <description>Lady Mabella Tichborne, dying on her bed, crawled 23 acres before her torch burned out to establish a charity for the poor — then cursed her family: if…</description>
   </item>
 </channel></rss>

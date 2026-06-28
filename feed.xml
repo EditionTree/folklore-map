@@ -4,7 +4,7 @@
   <link>https://folklorefinder.uk/</link>
   <description>Recently added myths, legends, ghosts and folklore from across Britain and Ireland.</description>
   <language>en-gb</language>
-  <lastBuildDate>Sun, 28 Jun 2026 21:41:17 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 28 Jun 2026 21:45:08 GMT</lastBuildDate>
   <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://folklorefinder.uk/feed.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>Bessie Millie of Stromness</title>
@@ -111,12 +111,28 @@
     <description>The last serpent to escape St Patrick&#x27;s purge terrorised the Sperrins until a local saint caged it beneath Lough Foyle, where it still churns the tides.</description>
   </item>
   <item>
+    <title>Limavady Leap of the Dog</title>
+    <link>https://folklorefinder.uk/legends/limavady-leap-of-the-dog</link>
+    <guid isPermaLink="true">https://folklorefinder.uk/legends/limavady-leap-of-the-dog</guid>
+    <pubDate>Sun, 28 Jun 2026 12:00:00 GMT</pubDate>
+    <category>Beasts</category>
+    <description>The O&#x27;Cahan chief&#x27;s faithful wolfhound leapt the treacherous River Roe with a message in its teeth to summon help and save the castle. The town&#x27;s very…</description>
+  </item>
+  <item>
     <title>Lleu Llaw Gyffes</title>
     <link>https://folklorefinder.uk/legends/lleu-llaw-gyffes</link>
     <guid isPermaLink="true">https://folklorefinder.uk/legends/lleu-llaw-gyffes</guid>
     <pubDate>Sun, 28 Jun 2026 12:00:00 GMT</pubDate>
     <category>Deities</category>
     <description>Cursed by his mother to have no name, no arms and no wife, the bright Welsh hero was given a bride made of flowers — who betrayed him to a rival, struck…</description>
+  </item>
+  <item>
+    <title>Loireag of Benbecula</title>
+    <link>https://folklorefinder.uk/legends/loireag-of-benbecula</link>
+    <guid isPermaLink="true">https://folklorefinder.uk/legends/loireag-of-benbecula</guid>
+    <pubDate>Sun, 28 Jun 2026 12:00:00 GMT</pubDate>
+    <category>Fae &amp; Spirits</category>
+    <description>The weaving fairy of the Hebrides — &#x27;a plaintive little thing, stubborn and cunning&#x27; — who presided over the spinning and waulking of cloth and unravelled…</description>
   </item>
   <item>
     <title>Mother Shipton</title>
@@ -135,12 +151,28 @@
     <description>Scotland&#x27;s witch-queen of Samhain rides the night skies with her host of the dead, blurring the line between fairy sovereign and diabolic hag.</description>
   </item>
   <item>
+    <title>Princess Erne and the Creation of Lough Erne</title>
+    <link>https://folklorefinder.uk/legends/princess-erne-and-the-creation-of-lough-erne</link>
+    <guid isPermaLink="true">https://folklorefinder.uk/legends/princess-erne-and-the-creation-of-lough-erne</guid>
+    <pubDate>Sun, 28 Jun 2026 12:00:00 GMT</pubDate>
+    <category>Aquatic Legends</category>
+    <description>Queen Medb&#x27;s lady-in-waiting Erne fled in terror from the monster of Oweynagat, and she and her maidens drowned in the river — their bodies dissolving to…</description>
+  </item>
+  <item>
     <title>Redmond O&#x27;Hanlon</title>
     <link>https://folklorefinder.uk/legends/redmond-o-hanlon</link>
     <guid isPermaLink="true">https://folklorefinder.uk/legends/redmond-o-hanlon</guid>
     <pubDate>Sun, 28 Jun 2026 12:00:00 GMT</pubDate>
     <category>Legendary Figures</category>
     <description>Ireland&#x27;s most celebrated rapparee haunted south Armagh, robbing Cromwellian settlers and becoming a folk hero whose ghost still rides the borderlands.</description>
+  </item>
+  <item>
+    <title>Screaming House of St Aubin</title>
+    <link>https://folklorefinder.uk/legends/screaming-house-of-st-aubin</link>
+    <guid isPermaLink="true">https://folklorefinder.uk/legends/screaming-house-of-st-aubin</guid>
+    <pubDate>Sun, 28 Jun 2026 12:00:00 GMT</pubDate>
+    <category>Ghosts</category>
+    <description>On Mount Arthur a man welcomed Huguenot refugees into his home — then murdered them in their sleep for their goods. Long after his death the victims&#x27;…</description>
   </item>
   <item>
     <title>Tam Lin</title>
@@ -175,6 +207,14 @@
     <description>The hand that rose from the water to give Arthur Excalibur — and reached up to take it back as he died. The enchantress who raised Lancelot and sealed…</description>
   </item>
   <item>
+    <title>The Piper&#x27;s Cave of Arran</title>
+    <link>https://folklorefinder.uk/legends/the-piper-s-cave-of-arran</link>
+    <guid isPermaLink="true">https://folklorefinder.uk/legends/the-piper-s-cave-of-arran</guid>
+    <pubDate>Sun, 28 Jun 2026 12:00:00 GMT</pubDate>
+    <category>Fae &amp; Spirits</category>
+    <description>A piper went into the King&#x27;s Cave at Blackwaterfoot to pipe his way through its endless passage, his dog at his heel. His music faded to a despairing cry…</description>
+  </item>
+  <item>
     <title>Thomas the Rhymer</title>
     <link>https://folklorefinder.uk/legends/thomas-the-rhymer</link>
     <guid isPermaLink="true">https://folklorefinder.uk/legends/thomas-the-rhymer</guid>
@@ -205,45 +245,5 @@
     <pubDate>Sun, 28 Jun 2026 12:00:00 GMT</pubDate>
     <category>Giants</category>
     <description>A terrifying Welsh giant doomed to die when his daughter marries, he set Culhwch forty impossible tasks — and lost to Arthur&#x27;s champions.</description>
-  </item>
-  <item>
-    <title>Agnes Waterhouse</title>
-    <link>https://folklorefinder.uk/legends/agnes-waterhouse</link>
-    <guid isPermaLink="true">https://folklorefinder.uk/legends/agnes-waterhouse</guid>
-    <pubDate>Fri, 19 Jun 2026 12:00:00 GMT</pubDate>
-    <category>Witches</category>
-    <description>In 1566 Agnes Waterhouse of Hatfield Peverel became the first woman hanged for witchcraft in England — confessing that her demonic cat Sathan could kill…</description>
-  </item>
-  <item>
-    <title>Downpatrick and the Three Saints</title>
-    <link>https://folklorefinder.uk/legends/downpatrick-and-the-three-saints</link>
-    <guid isPermaLink="true">https://folklorefinder.uk/legends/downpatrick-and-the-three-saints</guid>
-    <pubDate>Fri, 19 Jun 2026 12:00:00 GMT</pubDate>
-    <category>Legendary Figures</category>
-    <description>Medieval tradition holds that St Patrick, St Brigid, and St Columba — Ireland&#x27;s three patron saints — share a single grave beneath Down Cathedral: &#x27;In…</description>
-  </item>
-  <item>
-    <title>Lí Ban of Lough Neagh</title>
-    <link>https://folklorefinder.uk/legends/li-ban-of-lough-neagh</link>
-    <guid isPermaLink="true">https://folklorefinder.uk/legends/li-ban-of-lough-neagh</guid>
-    <pubDate>Fri, 19 Jun 2026 12:00:00 GMT</pubDate>
-    <category>Aquatic Legends</category>
-    <description>When a sacred well drowned her entire family and created Lough Neagh, the Ulster princess Lí Ban survived underwater for 300 years — half woman, half…</description>
-  </item>
-  <item>
-    <title>Owain Lawgoch</title>
-    <link>https://folklorefinder.uk/legends/owain-lawgoch</link>
-    <guid isPermaLink="true">https://folklorefinder.uk/legends/owain-lawgoch</guid>
-    <pubDate>Fri, 19 Jun 2026 12:00:00 GMT</pubDate>
-    <category>Legendary Figures</category>
-    <description>Wales&#x27;s red-handed prince sleeps in a hidden cave with his warriors, sword across his knees, waiting for the trumpet call that will wake him to reclaim…</description>
-  </item>
-  <item>
-    <title>Penllyne Dragon</title>
-    <link>https://folklorefinder.uk/legends/penllyne-dragon</link>
-    <guid isPermaLink="true">https://folklorefinder.uk/legends/penllyne-dragon</guid>
-    <pubDate>Fri, 19 Jun 2026 12:00:00 GMT</pubDate>
-    <category>Dragons</category>
-    <description>In the woods around Penllyne Castle, winged serpents covered in peacock-bright jewels terrorised farmyards and killed livestock within living memory of…</description>
   </item>
 </channel></rss>

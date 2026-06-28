@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-28T18:39:46.399409Z",
-  "total": 658,
+  "generated": "2026-06-28T21:31:44.744968Z",
+  "total": 659,
   "categories": {
     "beast": "Beasts",
     "ghost": "Ghosts",
@@ -2337,6 +2337,28 @@
         "barrow",
         "ireland",
         "county-donegal"
+      ]
+    },
+    {
+      "name": "Clíodhna",
+      "lat": 51.5625,
+      "lng": -9.119,
+      "category": "deity",
+      "region": "Glandore, County Cork, Ireland",
+      "summary": "Munster's goddess of love and queen of the banshees. She left the Otherworld for a mortal lover and was swept away as she slept by the Glandore wave that still bears her name — Tonn Chlíodhna.",
+      "detail": "Clíodhna (anglicised Cleena) is one of the great goddesses of Irish myth and the presiding supernatural queen of south Munster. A woman of the Tuatha Dé Danann, she is named in the tradition as a goddess of love and beauty, the patroness of County Cork, and the queen of the banshees of Munster — ruler over the sióga, the fairy host of the south. Her palace was said to lie deep within a great pile of rocks some five miles from Mallow, a place still called Carrig-Cleena, 'Clíodhna's Rock', and she was claimed as the guardian spirit of many of the old Munster families, the McCarthys, O'Donovans and O'Keeffes among them, whose deaths her wailing was said to foretell. Three brightly coloured otherworld birds attended her, feeding on the apples of an Otherworld tree, whose sweet song could lull the sick to a healing sleep.\n\nHer most famous and most tragic legend is the tale of the wave that bears her name. Clíodhna left Tír Tairngire, the Land of Promise, having fallen in love with a mortal youth named Ciabhán of the Curling Locks, and sailed with him to the coast of Ireland, landing in the harbour of Glandore in west Cork. There Ciabhán went ashore to hunt, leaving Clíodhna asleep in his boat on the strand. While she slept, a great wave — sent, some say, by the sea-god Manannán mac Lir to draw her back to the Otherworld — surged up the harbour and swept her away, drowning her or carrying her back beneath the sea.\n\nEver after that place was called Tonn Chlíodhna, 'Clíodhna's Wave', one of the three great waves of Ireland, whose roar in storm was held to be a portent. As the powerful queen of the southern fairies she remained woven through Munster folklore long after her drowning: it was to Clíodhna that Cormac Laidir MacCarthy, lord of Blarney, appealed when he feared to lose a lawsuit, and her counsel — to kiss the first stone he met on the road to court — is the origin given for the gift of eloquence in the Blarney Stone. Goddess, banshee-queen and drowned lover, Clíodhna binds together love, the sea and the Otherworld at the heart of the folklore of Cork.",
+      "source": "https://en.wikipedia.org/wiki/Cl%C3%ADodhna",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cl%C3%ADodhna",
+        "https://www.rte.ie/brainstorm/2022/0126/1275970-cliodhna-cork-goddess-banshee-carrigcleena-kilshannig/"
+      ],
+      "date_added": "2026-06-19",
+      "tags": [
+        "sea",
+        "wave",
+        "love",
+        "ireland",
+        "cork"
       ]
     },
     {

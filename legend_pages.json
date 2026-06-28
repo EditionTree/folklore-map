@@ -3121,6 +3121,186 @@
         "Setting": "Ireland and the sídhe",
         "Motif": "Treasures and fairy mounds"
       }
+    },
+    "Whiteleaf Cross": {
+      "priority": 209,
+      "image": "legend-images/whiteleaf-cross-hero.jpg",
+      "alt": "The chalk Whiteleaf Cross cut into the steep grassy slope of Whiteleaf Hill above the Buckinghamshire vale",
+      "caption": "A visual interpretation of Whiteleaf Cross on the Chiltern escarpment",
+      "map_title": "Whiteleaf Hill, Buckinghamshire",
+      "section_heading": "The cross on the hill",
+      "pullquote": "Its date and purpose remain genuinely unknown - first recorded as an antiquity by Francis Wise in 1742, no earlier written reference has ever been found.",
+      "facts": {
+        "Tradition": "English hill-figure lore",
+        "Type": "Chalk hill figure",
+        "Setting": "Whiteleaf Hill",
+        "Motif": "Uncertain origin"
+      }
+    },
+    "Hill of Allen": {
+      "priority": 210,
+      "image": "legend-images/hill-of-allen-hero.jpg",
+      "alt": "The Hill of Allen rising above the Bog of Allen with its summit tower under a heavy sky in County Kildare",
+      "caption": "A visual interpretation of the Hill of Allen, seat of Fionn mac Cumhaill",
+      "map_title": "Hill of Allen, County Kildare",
+      "section_heading": "Fionn's hill in Leinster",
+      "pullquote": "When Victorian workers built the present stone tower on the summit in 1863, they reported uncovering a massive coffin containing what they took to be the hero's own bones, which they respectfully reinterred on the hilltop.",
+      "facts": {
+        "Tradition": "Fenian Cycle",
+        "Type": "Legendary stronghold",
+        "Setting": "County Kildare",
+        "Motif": "Fianna training ground"
+      }
+    },
+    "Dorset Ooser": {
+      "priority": 211,
+      "image": "legend-images/dorset-ooser-hero.jpg",
+      "alt": "The horned wooden Dorset Ooser mask hanging in a rustic farm doorway above the Dorset hills",
+      "caption": "A visual interpretation of the Dorset Ooser of Melbury Osmond",
+      "map_title": "Melbury Osmond, Dorset",
+      "section_heading": "The horned mask in the village",
+      "pullquote": "The mask functioned as the community's anonymous enforcer: a face that was no one's face, delivering a judgement that was everyone's.",
+      "facts": {
+        "Tradition": "English folk custom",
+        "Type": "Horned wooden mask",
+        "Setting": "Melbury Osmond",
+        "Motif": "Skimity riding"
+      }
+    },
+    "La B\u00eate De La Tour": {
+      "priority": 212,
+      "image": "legend-images/la-bete-de-la-tour-hero.jpg",
+      "alt": "A massive black dog wound in heavy iron chains moving beside a Guernsey coastal tower under stormy skies",
+      "caption": "A visual interpretation of Guernsey's Beast of the Tower",
+      "map_title": "Guernsey, Channel Islands",
+      "section_heading": "The dog by the tower",
+      "pullquote": "a massive black dog whose body is wound in heavy iron chains that clank and rattle as it moves",
+      "facts": {
+        "Tradition": "Guernsey folklore",
+        "Type": "Spectral black dog",
+        "Setting": "Guernsey shore towers",
+        "Motif": "Death-foretelling apparition"
+      }
+    },
+    "Plynlimon": {
+      "priority": 213,
+      "image": "legend-images/plynlimon-hero.jpg",
+      "alt": "The high moorland bulk of Plynlimon rendered as a giant-like massif above dark Welsh river sources under heavy cloud",
+      "caption": "A visual interpretation of Plynlimon, father of rivers in Welsh legend",
+      "map_title": "Plynlimon, Ceredigion",
+      "section_heading": "The father of rivers",
+      "pullquote": "Folklore made the rivers his three daughters: Hafren (Severn), Gwy (Wye) and Rheidol.",
+      "facts": {
+        "Tradition": "Welsh giant lore",
+        "Type": "Mountain giant",
+        "Setting": "Cambrian Mountains",
+        "Motif": "Father of rivers"
+      }
+    },
+    "The Bute Witches": {
+      "priority": 214,
+      "image": "legend-images/the-bute-witches-hero.jpg",
+      "alt": "Four accused women in plain seventeenth-century dress standing under guard near Rothesay on the Isle of Bute",
+      "caption": "A visual interpretation of the Bute witch trials at Rothesay",
+      "map_title": "Rothesay, Isle of Bute",
+      "section_heading": "The trial on the island",
+      "pullquote": "she 'soon brought home a little fairy of her own to nurse.'",
+      "facts": {
+        "Tradition": "Scottish witch-trial lore",
+        "Type": "Island witchcraft case",
+        "Setting": "Rothesay, Isle of Bute",
+        "Motif": "Fairy entanglement"
+      }
+    },
+    "Windhouse": {
+      "priority": 215,
+      "image": "legend-images/windhouse-hero.jpg",
+      "alt": "The roofless stone shell of Windhouse standing above Whale Firth on Yell under a dark Shetland sky",
+      "caption": "A visual interpretation of haunted Windhouse on Yell",
+      "map_title": "Yell, Shetland",
+      "section_heading": "The haunted house above the firth",
+      "pullquote": "Standing isolated above Whale Firth on the island of Yell, the roofless shell of Windhouse has long been called the most haunted building in Shetland.",
+      "facts": {
+        "Tradition": "Shetland ghost lore",
+        "Type": "Haunted house",
+        "Setting": "Whale Firth, Yell",
+        "Motif": "Lady in Silk"
+      }
+    },
+    "Witches of Garway Hill": {
+      "priority": 216,
+      "image": "legend-images/witches-of-garway-hill-hero.jpg",
+      "alt": "A small group of wise women gathered by a spring below Garway Hill with the Herefordshire church and hill behind them",
+      "caption": "A visual interpretation of the wise women of Garway Hill",
+      "map_title": "Garway Hill, Herefordshire",
+      "section_heading": "The wise women on the hill",
+      "pullquote": "There'll always be nine witches from the bottom of Orcop to the end of Garway Hill, as long as water runs.",
+      "facts": {
+        "Tradition": "Herefordshire folk tradition",
+        "Type": "Wise women",
+        "Setting": "Garway Hill",
+        "Motif": "Fairy stock and return"
+      }
+    },
+    "Buckinghamshire Revenant": {
+      "priority": 217,
+      "image": "legend-images/buckinghamshire-revenant-hero.jpg",
+      "alt": "A medieval revenant standing in a Buckinghamshire churchyard at night while villagers watch from near a doorway",
+      "caption": "A visual interpretation of the Buckinghamshire revenant returning from the grave",
+      "map_title": "Buckinghamshire, England",
+      "section_heading": "The dead man walks",
+      "pullquote": "a scroll of absolution was laid upon the corpse's breast in its reopened grave, and from that hour the dead man walked no more",
+      "facts": {
+        "Tradition": "Medieval English ghost lore",
+        "Type": "Corporeal revenant",
+        "Setting": "Buckinghamshire village",
+        "Motif": "Absolution lays the dead to rest"
+      }
+    },
+    "Cyhyraeth": {
+      "priority": 218,
+      "image": "legend-images/cyhyraeth-hero.jpg",
+      "alt": "A lone figure listening beside the Welsh coast at night while dark water lies under a bleak sky",
+      "caption": "A visual interpretation of the Welsh death-cry known as the Cyhyraeth",
+      "map_title": "Tywi Valley and Glamorgan coast",
+      "section_heading": "The cry before a death",
+      "pullquote": "A Welsh death omen: a disembodied wailing voice heard in the dark, always three times, always before a death.",
+      "facts": {
+        "Tradition": "Welsh folklore",
+        "Type": "Disembodied death omen",
+        "Setting": "Coast and waterside",
+        "Motif": "Wailing cry before death"
+      }
+    },
+    "C\u00fa Ro\u00ed mac D\u00e1ire": {
+      "priority": 219,
+      "image": "legend-images/cu-roi-mac-daire-hero.jpg",
+      "alt": "An early medieval Irish warrior-king standing by the stone ring-fort on Caherconree with the Kerry mountains behind him",
+      "caption": "A visual interpretation of C\u00fa Ro\u00ed mac D\u00e1ire at Caherconree",
+      "map_title": "Caherconree, County Kerry",
+      "section_heading": "The fortress on the mountain",
+      "pullquote": "His stronghold is associated with Caherconree in the Slieve Mish Mountains, where legend says his fortress revolved at night so that enemies could not find its entrance.",
+      "facts": {
+        "Tradition": "Irish heroic tradition",
+        "Type": "Warrior-king",
+        "Setting": "Caherconree hillfort",
+        "Motif": "Fortress that turns by night"
+      }
+    },
+    "Devil's Dyke": {
+      "priority": 220,
+      "image": "legend-images/devil-s-dyke-hero.jpg",
+      "alt": "The deep dry valley of Devil's Dyke cutting through the South Downs under unsettled dawn light",
+      "caption": "A visual interpretation of the South Downs legend of Devil's Dyke",
+      "map_title": "Devil's Dyke, Sussex",
+      "section_heading": "The gash in the downs",
+      "pullquote": "The Devil carved this gash through the South Downs in one night, set on drowning Sussex's churches - a crowing cockerel tricked him into thinking dawn had broken, and he fled mid-dig.",
+      "facts": {
+        "Tradition": "Sussex folklore",
+        "Type": "Legendary landscape",
+        "Setting": "South Downs",
+        "Motif": "Devil tricked by dawn"
+      }
     }
   }
 }

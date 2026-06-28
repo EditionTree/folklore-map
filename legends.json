@@ -1,6 +1,6 @@
 {
-  "generated": "2026-06-28T21:41:06.459068Z",
-  "total": 659,
+  "generated": "2026-06-28T21:44:57.542883Z",
+  "total": 664,
   "categories": {
     "beast": "Beasts",
     "ghost": "Ghosts",
@@ -6266,6 +6266,27 @@
       "date_added": "2026-06-11"
     },
     {
+      "name": "Limavady Leap of the Dog",
+      "lat": 55.0516,
+      "lng": -6.94,
+      "category": "beast",
+      "region": "Limavady, County Londonderry, Northern Ireland",
+      "summary": "The O'Cahan chief's faithful wolfhound leapt the treacherous River Roe with a message in its teeth to summon help and save the castle. The town's very name, Léim an Mhadaidh, means 'the leap of the dog.'",
+      "detail": "The town of Limavady in County Londonderry carries its legend in its very name: Léim an Mhadaidh, 'the Leap of the Dog'. The stronghold of the O'Cahans (Ó Catháin), the ruling clan of the district, stood above the gorge of the River Roe in what is now the Roe Valley Country Park, where the river runs swift and dangerous through a rocky defile — and it is here that the story is set.\n\nThe legend tells that the O'Cahans were besieged in their castle by an enemy force and in desperate need of reinforcements, but the attackers ringed them so closely that no messenger could slip through to summon aid. In their extremity they turned to the chief's faithful Irish wolfhound. A message calling for help was rolled up and given to the great hound, which broke from the castle and ran for the river — and at the gorge, gathering itself, the wolfhound leapt clear across the treacherous, swirling currents of the Roe, its silhouette thrown against the rising sun, the parchment clenched in its teeth. It carried the message to those who could help, and the O'Cahans' stronghold was saved.\n\nThe leap so impressed itself on local memory that it gave the town its enduring Irish name, Léim an Mhadaidh — anglicised to Limavady. Centuries later the legend was honoured in bronze when the sculptor Maurice Harron created the 'Leap of the Dog' sculpture that now stands in the Roe Valley Country Park, and the Roe Valley's wolfhound remains the emblem of the town. Whether or not any single siege lies behind it, the tale of the faithful hound's leap is one of the best-loved place-name legends of the north.",
+      "source": "https://en.wikipedia.org/wiki/Limavady",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Limavady",
+        "https://www.connollycove.com/limavady/"
+      ],
+      "date_added": "2026-06-28",
+      "tags": [
+        "dog",
+        "siege",
+        "northern-ireland",
+        "londonderry"
+      ]
+    },
+    {
       "name": "Lincoln Imp",
       "lat": 53.2343,
       "lng": -0.5392,
@@ -6577,6 +6598,27 @@
       "sources": [
         "https://en.wikipedia.org/wiki/Loftus_Hall",
         "https://www.irishcentral.com/travel/travel-tips/irelands-most-haunted-house-loftus-hall"
+      ]
+    },
+    {
+      "name": "Loireag of Benbecula",
+      "lat": 57.4414,
+      "lng": -7.3513,
+      "category": "fairy",
+      "region": "Benbecula, Outer Hebrides, Scotland",
+      "summary": "The weaving fairy of the Hebrides — 'a plaintive little thing, stubborn and cunning' — who presided over the spinning and waulking of cloth and unravelled the work of any woman who skimped the proper songs and ceremonies.",
+      "detail": "The Loireag is the weaving-fairy of the Outer Hebrides, known especially from Benbecula and South Uist, and one of the most sharply characterised of all the household spirits recorded in Alexander Carmichael's great folklore collection, the Carmina Gadelica. A man of Benbecula described her to Carmichael as 'a small mite of womanhood that does not belong to this world but to the world thither' — 'a plaintive little thing, stubborn and cunning', a fairy water-maid who took charge of the making of cloth.\n\nThe Loireag presided over every stage of the women's work of clothmaking — the warping, the weaving, the waulking (the rhythmic fulling of the new tweed) and the washing of the web — and she was exacting about the proper way of doing things. The waulking was accompanied by a whole tradition of songs and ceremonies, and if the women neglected any of these usages the Loireag took her revenge: should a song be sung twice over at the waulking, she would come and render the web as thin and useless as before, so that all the work had to be begun again. She was especially wrathful at any woman who sang out of tune in a hard, harsh voice and drowned out the others.\n\nLike many such spirits she also demanded her due of milk — a libation had to be set out for the Loireag, and if it were forgotten she would suck the milk of the goats, sheep and cows of the township dry, and lay a spell on the beasts so that they could not stir. The Loireag is a perfect embodiment of the social discipline of the old island life: the fairy who rewards careful, communal, properly observed labour and punishes haste, carelessness and disrespect for tradition, watching over the looms and waulking-boards of the Hebrides.",
+      "source": "https://sacred-texts.com/neu/celt/cg2/cg2113.htm",
+      "sources": [
+        "https://sacred-texts.com/neu/celt/cg2/cg2113.htm",
+        "https://spookyscotland.net/loireag/"
+      ],
+      "date_added": "2026-06-28",
+      "tags": [
+        "fairy",
+        "weaving",
+        "scotland",
+        "outer-hebrides"
       ]
     },
     {
@@ -8489,6 +8531,27 @@
       ]
     },
     {
+      "name": "Princess Erne and the Creation of Lough Erne",
+      "lat": 54.3333,
+      "lng": -7.625,
+      "category": "water",
+      "region": "County Fermanagh, Northern Ireland",
+      "summary": "Queen Medb's lady-in-waiting Erne fled in terror from the monster of Oweynagat, and she and her maidens drowned in the river — their bodies dissolving to spread across the land as the great lake that bears her name.",
+      "detail": "Lough Erne, the great chain of island-strewn lakes spreading through County Fermanagh, takes its name in Irish legend from a woman called Erne — a lady-in-waiting, the tradition says, to the warrior-queen Medb at her royal seat of Cruachan in Connacht. The story of how the lake came to be is one of the etiological myths so common in Ireland, in which a feature of the land is explained as the drowned, dissolved body of a goddess or noblewoman.\n\nThe tale tells that Erne and a company of her maidens were at Cruachan when terror came upon them: a fearful monster — in the tradition, a being that emerged from the cave of Oweynagat (the 'Cave of the Cats'), the famous Otherworld entrance at Cruachan that breathed out destructive creatures at Samhain. Fleeing the horror in panic, Erne and her maidens ran northward, away from Connacht, until they came to a river, where they were overwhelmed and drowned. Their bodies, the legend says, dissolved into the water and spread out across the low country, and from them formed the broad waters of Lough Erne, which has carried her name ever since.\n\nScholars connect the name more deeply still to an ancient goddess Érann, eponymous deity of the Érainn, one of the early peoples of Ireland, so that Loch Éirne may mean 'the lake of the goddess Érann' — the drowning-legend a folk-memory of a divine figure whose power dissolved into the water to give life to the land. Either way, the great lake of Fermanagh keeps in its very name the memory of a woman of myth who fled a monster and became the water itself.",
+      "source": "https://en.wikipedia.org/wiki/Lough_Erne",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Lough_Erne",
+        "https://www.transceltic.com/irish/magic-and-mystery-of-ireland-s-rivers"
+      ],
+      "date_added": "2026-06-28",
+      "tags": [
+        "lake",
+        "origin",
+        "northern-ireland",
+        "fermanagh"
+      ]
+    },
+    {
       "name": "Pryderi",
       "lat": 51.796,
       "lng": -4.734,
@@ -9009,6 +9072,27 @@
         "vanishing",
         "scotland",
         "ayrshire"
+      ]
+    },
+    {
+      "name": "Screaming House of St Aubin",
+      "lat": 49.1878,
+      "lng": -2.1853,
+      "category": "ghost",
+      "region": "St Aubin, Jersey, Channel Islands",
+      "summary": "On Mount Arthur a man welcomed Huguenot refugees into his home — then murdered them in their sleep for their goods. Long after his death the victims' screams still echoed the hill, stopping only when the house was finally pulled down.",
+      "detail": "The Screaming House gives 'Ghost Hill' at St Aubin in Jersey its name, and the legend behind it is set in 1685, the year the Revocation of the Edict of Nantes loosed a flood of Huguenot refugees from France. St Aubin, on Jersey's south coast, was often their first landfall, and there a man living on the slope known as Mount Arthur made himself conspicuous in his welcome — meeting the refugee boats at the quay, expressing his sympathy for their plight, and pressing the weary travellers to come and take a meal and a bed for the night under his roof.\n\nHis kindness was a trap. Once his guests were soundly asleep, the host turned murderer: he cut their throats as they lay, robbed them of the few possessions they had carried into exile, and disposed of the bodies, before going down to the harbour to play the good Samaritan to the next boatload. How many he killed in this way the legend does not say, but the terror of it was such that the dreadful screams of his victims were said to ring out the length of Mount Arthur.\n\nAnd the screaming did not stop when the murderer himself died. The cries of the slain continued to echo about the hill, haunting the house and the slope so persistently that the place became known as the House of Death, and Ghost Hill. Only when the accursed house was at last pulled down did the screaming cease — and tradition adds that when it was rebuilt with the same stone, the screams came back, until the second house too was levelled. The legend has made Ghost Hill one of the most famous haunted spots in the Channel Islands.",
+      "source": "https://www.jersey.com/inspire-me/inspiration/jerseys-myths-and-legends/",
+      "sources": [
+        "https://www.jersey.com/inspire-me/inspiration/jerseys-myths-and-legends/",
+        "https://arthurlamy.wordpress.com/2016/05/31/ghost-hill-st-aubin/"
+      ],
+      "date_added": "2026-06-28",
+      "tags": [
+        "haunting",
+        "murder",
+        "channel-islands",
+        "jersey"
       ]
     },
     {
@@ -10598,6 +10682,28 @@
         "celtic",
         "england",
         "gloucestershire"
+      ]
+    },
+    {
+      "name": "The Piper's Cave of Arran",
+      "lat": 55.5228,
+      "lng": -5.3725,
+      "category": "fairy",
+      "region": "Isle of Arran, Argyll, Scotland",
+      "summary": "A piper went into the King's Cave at Blackwaterfoot to pipe his way through its endless passage, his dog at his heel. His music faded to a despairing cry — 'two hands for the pipe and one for the sword!' — and only the dog came back, stripped of its hair.",
+      "detail": "The Piper's Cave is one of the legends attached to the King's Caves, a line of great sea-caves in the cliffs north of Blackwaterfoot on the west coast of the Isle of Arran — the largest of which is famous as one of the places where Robert the Bruce is said to have sheltered. Beyond its mouth, tradition held, the cave ran on and on underground, a passage of unknown and uncanny length, and the legend tells of a piper who set out to discover where it led.\n\nThe piper went into the cave playing his pipes, so that those above ground could follow his progress by the sound, with only his faithful dog for company. The listeners traced the music as it moved away beneath their feet, deeper and deeper into the hill — but the playing grew steadily fainter, and then took on a note of terror. The last that was heard of him was a despairing cry rising through the rock: 'Woe is me, woe is me, without three hands — two for the pipe and one for the sword!' — for he had met something underground he could not fight while still he played. After that the pipes fell silent. The piper was never seen again; only his dog came struggling back out of the cave, half-dead with fright and with every hair burned or stripped from its body.\n\nThe tale is one of the most widespread of Scottish migratory legends, told of caves the length of the country, the underground passage imagined to run for miles and to be the haunt of a witch, a fairy, or the Devil himself. At Arran it is fixed to the King's Caves and their long dark interior, and the piper's cry — lacking the third hand for his sword — has become its unforgettable refrain, a vivid image of the brave man lost to the powers beneath the hill.",
+      "source": "https://en.wikipedia.org/wiki/King's_Cave",
+      "sources": [
+        "https://en.wikipedia.org/wiki/King's_Cave",
+        "http://faeryfolklorist.blogspot.com/2017/05/fairy-folklore-of-isle-of-arran.html"
+      ],
+      "date_added": "2026-06-28",
+      "tags": [
+        "fairy",
+        "cave",
+        "music",
+        "scotland",
+        "arran"
       ]
     },
     {

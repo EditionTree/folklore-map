@@ -4,7 +4,7 @@
   <link>https://folklorefinder.uk/</link>
   <description>Recently added myths, legends, ghosts and folklore from across Britain and Ireland.</description>
   <language>en-gb</language>
-  <lastBuildDate>Sun, 28 Jun 2026 18:40:05 GMT</lastBuildDate>
+  <lastBuildDate>Sun, 28 Jun 2026 21:31:55 GMT</lastBuildDate>
   <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://folklorefinder.uk/feed.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>Bessie Millie of Stromness</title>
@@ -101,6 +101,14 @@
     <pubDate>Fri, 19 Jun 2026 12:00:00 GMT</pubDate>
     <category>Legendary Figures</category>
     <description>Great-grandson of Aeneas, exiled from Troy and guided by the goddess Diana to an island of giants, Brutus stepped ashore at Totnes to found Britain —…</description>
+  </item>
+  <item>
+    <title>Clíodhna</title>
+    <link>https://folklorefinder.uk/legends/cliodhna</link>
+    <guid isPermaLink="true">https://folklorefinder.uk/legends/cliodhna</guid>
+    <pubDate>Fri, 19 Jun 2026 12:00:00 GMT</pubDate>
+    <category>Deities</category>
+    <description>Munster&#x27;s goddess of love and queen of the banshees. She left the Otherworld for a mortal lover and was swept away as she slept by the Glandore wave that…</description>
   </item>
   <item>
     <title>Downpatrick and the Three Saints</title>
@@ -237,13 +245,5 @@
     <pubDate>Fri, 19 Jun 2026 12:00:00 GMT</pubDate>
     <category>Legendary Figures</category>
     <description>Lady Mabella Tichborne, dying on her bed, crawled 23 acres before her torch burned out to establish a charity for the poor — then cursed her family: if…</description>
-  </item>
-  <item>
-    <title>Tír na nÓg</title>
-    <link>https://folklorefinder.uk/legends/tir-na-nog</link>
-    <guid isPermaLink="true">https://folklorefinder.uk/legends/tir-na-nog</guid>
-    <pubDate>Fri, 19 Jun 2026 12:00:00 GMT</pubDate>
-    <category>Sacred Sites</category>
-    <description>From Lough Leane, golden-haired Niamh rode ashore on a white horse and bore Oisín over the sea to the Land of Youth — where three centuries passed as…</description>
   </item>
 </channel></rss>

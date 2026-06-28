@@ -3301,6 +3301,51 @@
         "Setting": "South Downs",
         "Motif": "Devil tricked by dawn"
       }
+    },
+    "Henderson Stone": {
+      "priority": 221,
+      "image": "legend-images/henderson-stone-hero.jpg",
+      "alt": "A redcoat soldier gesturing beside the Henderson Stone in snowy Glencoe while a Highland man listens",
+      "caption": "A visual interpretation of the Henderson Stone legend in Glencoe",
+      "map_title": "Glencoe, Lochaber",
+      "section_heading": "The warning by the stone",
+      "pullquote": "Great stone of the glen! Great is your right to be here. But if you knew what will happen this night you would be up and away.",
+      "facts": {
+        "Tradition": "Highland historical legend",
+        "Type": "Warning stone",
+        "Setting": "Glencoe valley",
+        "Motif": "Conscience before massacre"
+      }
+    },
+    "Lilias Adie": {
+      "priority": 222,
+      "image": "legend-images/lilias-adie-hero.jpg",
+      "alt": "An elderly woman standing beside the stone slab over Lilias Adie's grave on the Torryburn foreshore at low tide",
+      "caption": "A visual interpretation of Lilias Adie on the Torryburn shore",
+      "map_title": "Torryburn, Fife",
+      "section_heading": "The grave below the tide",
+      "pullquote": "She was buried not in consecrated ground but on the foreshore at Torryburn, between the high and low tide marks, with a heavy stone slab placed over the grave.",
+      "facts": {
+        "Tradition": "Scottish witch-trial lore",
+        "Type": "Intertidal grave",
+        "Setting": "Torryburn foreshore",
+        "Motif": "Fear of a witch's return"
+      }
+    },
+    "Tehi Tegi": {
+      "priority": 223,
+      "image": "legend-images/tehi-tegi-hero.jpg",
+      "alt": "A dark-haired woman wading through a Manx river while three men follow spellbound behind her",
+      "caption": "A visual interpretation of Tehi Tegi leading her followers into the river",
+      "map_title": "Isle of Man",
+      "section_heading": "The river crossing",
+      "pullquote": "They abandoned homes, farms, and families to trail behind her wherever she walked, and the island fell into ruin.",
+      "facts": {
+        "Tradition": "Manx folklore",
+        "Type": "Enchantress legend",
+        "Setting": "Isle of Man river crossing",
+        "Motif": "Bewitchment and drowning"
+      }
     }
   }
 }

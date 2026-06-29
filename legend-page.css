@@ -51,7 +51,7 @@ button{font:inherit}
   display:flex;
   justify-content:center;
   padding:14px 20px;
-  background:linear-gradient(130deg,#3d2818,#17100b 58%,#291a10);
+  background:linear-gradient(135deg,rgba(196,98,42,0.18) 0%,rgba(176,144,96,0.06) 35%,transparent 60%),linear-gradient(180deg,#1a0e06 0%,#2c1510 55%,#3d1e0c 100%);
   border-bottom:1px solid rgba(185,158,114,.45);
 }
 .brandbar::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,rgba(176,144,96,.62),rgba(196,98,42,.5),rgba(176,144,96,.62),transparent)}

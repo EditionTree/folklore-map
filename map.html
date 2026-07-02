@@ -898,6 +898,7 @@
   <div class="header-controls">
     <button class="sidebar-toggle-btn" id="sidebarToggleBtn" onclick="toggleSidebar()">☰ Entries</button>
     <a class="sidebar-toggle-btn browse-link" href="legends/">Browse</a>
+    <a class="sidebar-toggle-btn browse-link" href="achievements">Achievements</a>
     <button class="sidebar-toggle-btn submit-legend-btn" onclick="openSubmitLegend()" aria-haspopup="dialog"><span class="submit-btn-icon">✦ </span><span class="submit-btn-label">Submit</span></button>
     <div class="search-wrap">
       <span class="search-icon" aria-hidden="true">⚲</span>
@@ -1796,6 +1797,15 @@ function closeSubmitLegend() {
   document.getElementById('submitModal').style.display = 'none';
   restoreModalFocus();
 }
+
+(function trackMapVisitForAchievements(){
+  try{
+    const key = 'ff_behaviour_v1';
+    const behaviour = JSON.parse(localStorage.getItem(key) || '{}') || {};
+    behaviour.mapVisits = (Number(behaviour.mapVisits) || 0) + 1;
+    localStorage.setItem(key, JSON.stringify(behaviour));
+  }catch(error){}
+})();
 
 async function submitLegend() {
   const name   = document.getElementById('submitName').value.trim();

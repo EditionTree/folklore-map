@@ -266,7 +266,7 @@ def banner_html():
             '<img src="' + BASE + '/green-man.png" class="banner-emblem" alt=""/>'
             '<span class="banner-text"><span class="banner-title"><i>&#10022;</i> '
             'Folklore Finder <i>&#10022;</i></span>'
-            '<span class="banner-sub">An atlas of myths, legends, &amp; stories</span>'
+            '<span class="banner-sub">An Atlas of Myths, Legends, &amp; Stories</span>'
             '</span></a></header>')
 
 
@@ -291,6 +291,7 @@ TOPNAV_ITEMS = [
     ("map", "Map", "/map"),
     ("browse", "Browse", "/" + OUT_DIR + "/"),
     ("collections", "Collections", "/" + OUT_DIR + "/collections"),
+    ("achievements", "Achievements", "/achievements"),
     ("about", "About", "/about"),
     ("updates", "Updates", "/updates"),
 ]
@@ -409,7 +410,7 @@ def build_browse_page(page_title, desc, url, h1, intro, crumb, nav_html, cards_h
             '<p class="browse-intro">' + esc(intro) + '</p>\n'
             + nav_html + '\n<div class="browse-grid">\n' + cards_html
             + '\n</div>\n' + after_grid
-            + '<a class="back" href="' + BASE + '/' + OUT_DIR + '/">&#8592; Browse all legends</a>\n'
+            + '<a class="back" href="' + BASE + '/' + OUT_DIR + '/">&#8592; Browse All Legends</a>\n'
             '</div>\n' + footer_html() + '\n</body></html>')
 
 
@@ -441,6 +442,52 @@ def host_of(url):
         return urllib.parse.urlparse(url).netloc.replace("www.", "") or "source"
     except Exception:
         return "source"
+
+
+TITLE_SMALL_WORDS = {
+    "a", "an", "and", "as", "at", "but", "by", "for", "from", "in", "into",
+    "nor", "of", "on", "or", "over", "per", "the", "to", "up", "via", "with",
+}
+
+
+def title_word(word, force=False):
+    """Editorial title case for generated headings without flattening names."""
+    if not word:
+        return word
+    if not force and word.lower() in TITLE_SMALL_WORDS:
+        return word.lower()
+    if any(ch.isupper() for ch in word[1:]) or word.isupper():
+        return word
+    return word[:1].upper() + word[1:]
+
+
+def title_case_text(text):
+    """Capitalise headings while leaving small joining words lower-case."""
+    if not isinstance(text, str):
+        return text
+    text = inline_text(text)
+    if not text:
+        return text
+    parts = re.split(r"(\s+)", text)
+    word_indexes = [i for i, p in enumerate(parts) if p and not p.isspace()]
+    if not word_indexes:
+        return text
+    first, last = word_indexes[0], word_indexes[-1]
+    out = []
+    for i, part in enumerate(parts):
+        if i not in word_indexes:
+            out.append(part)
+            continue
+        bits = re.split(r"([-–—/])", part)
+        cased = []
+        for j, bit in enumerate(bits):
+            if bit in {"-", "–", "—", "/"}:
+                cased.append(bit)
+                continue
+            force = i == first or i == last or (j > 0 and bits[j - 1] in {"-", "–", "—", "/"})
+            cased.append(title_word(bit, force=force))
+        out.append("".join(cased))
+    return "".join(out)
 
 
 # Human-readable publisher names for the sources we cite. Unmapped hosts fall
@@ -594,7 +641,6 @@ h1{{font-family:'Marcellus',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e
 .share-btn:hover{{background:#8b3a1a;color:#f2e8d5;border-color:#8b3a1a}}
 .share-status{{position:absolute !important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}}
 .src{{display:block;margin-top:18px;font-size:13px;font-style:italic;color:#5c4a2a}}
-.src-tier{{color:#7a6a4a}}
 .sources{{margin-top:18px;font-size:13px;color:#5c4a2a}}
 .sources-head{{font-style:italic}}
 .sources ul{{list-style:none;margin:5px 0 0;padding:0}}
@@ -628,7 +674,7 @@ footer{{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}}
 </head>
 <body>
 {topnav}
-<header class="site-banner"><a class="banner-link" href="{base}/"><img src="{base}/green-man.png" class="banner-emblem" alt=""/><span class="banner-text"><span class="banner-title"><i>&#10022;</i> Folklore Finder <i>&#10022;</i></span><span class="banner-sub">An atlas of myths, legends, &amp; stories</span></span></a></header>
+<header class="site-banner"><a class="banner-link" href="{base}/"><img src="{base}/green-man.png" class="banner-emblem" alt=""/><span class="banner-text"><span class="banner-title"><i>&#10022;</i> Folklore Finder <i>&#10022;</i></span><span class="banner-sub">An Atlas of Myths, Legends, &amp; Stories</span></span></a></header>
 <div class="wrap">
 {breadcrumb}
 <article class="card">
@@ -646,7 +692,7 @@ footer{{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}}
 <svg class="watermark" viewBox="0 0 512 512" aria-hidden="true"><path d="{watermark}" fill="currentColor"/></svg>
 </article>
 {related}
-<a class="back" href="{base}/legends/">&#8592; Browse all legends</a>
+<a class="back" href="{base}/legends/">&#8592; Browse All Legends</a>
 </div>
 <footer>Folklore Finder &#183; &#169; EditionTree &#183; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener" style="color:#5c4a2a">&#9749; Ko-fi</a> &#183; <a href="{base}/privacy" style="color:#5c4a2a">Privacy</a></footer>
 <script>
@@ -755,7 +801,7 @@ $topnav
     <img src="$base/green-man.png" alt=""/>
     <span>
       <span class="brand-name">Folklore Finder</span>
-      <span class="brand-line">An atlas of myths, legends, &amp; stories</span>
+          <span class="brand-line">An Atlas of Myths, Legends, &amp; Stories</span>
     </span>
   </a>
 </header>
@@ -777,11 +823,11 @@ $hero_caption
 
     <div class="content-grid">
       <article class="article">
-        <div class="article-label">The legend</div>
+        <div class="article-label">The Legend</div>
         $featured_body
         $editorial
         <div class="article-actions" aria-label="Legend actions">
-          <a class="button" href="$maplink">Open on full map</a>
+          <a class="button" href="$maplink">Open on Full Map</a>
           <button class="button secondary" id="copyLinkBtn" type="button">Copy link</button>
           <button class="button secondary" id="webShareBtn" type="button" hidden>Share</button>
         </div>
@@ -791,13 +837,13 @@ $hero_caption
       <aside class="sidebar" aria-label="Legend details">
         <section class="side-card">
           <div class="side-pad">
-            <p class="side-kicker">Explore the place</p>
+            <p class="side-kicker">Explore the Place</p>
             <h2>$map_title</h2>
             <p class="map-meta">$region</p>
           </div>
           <div id="miniMap" data-lat="$lat" data-lng="$lng" data-colour="$catcolour" data-initial="$initial" aria-label="Map showing the location associated with $name"></div>
           <div class="map-footer">
-            <a href="$maplink">View full map &#8594;</a>
+            <a href="$maplink">View Full Map &#8594;</a>
             <span>$coordinates</span>
           </div>
         </section>
@@ -805,8 +851,8 @@ $hero_caption
         $featured_nearby
 
         <section class="side-card side-pad">
-          <p class="side-kicker">At a glance</p>
-          <h2>About this legend</h2>
+          <p class="side-kicker">At a Glance</p>
+          <h2>About This Legend</h2>
           <div class="facts">$facts</div>
         </section>
 
@@ -871,7 +917,7 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
     if pullquote:
         featured_parts.append(f'<blockquote class="pullquote">{esc(inline_text(pullquote))}</blockquote>')
     if len(paras) > 1:
-        section_heading = featured.get("section_heading") or "The story"
+        section_heading = title_case_text(featured.get("section_heading") or "The story")
         featured_parts.append(f"<h2>{esc(section_heading)}</h2>")
         featured_parts.extend(f"<p>{esc(inline_text(p))}</p>" for p in paras[1:])
     featured_body = "".join(featured_parts) or '<p class="opening"></p>'
@@ -897,21 +943,19 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
         "Region": leg.get("region", ""),
     }
     facts_html = "".join(
-        f'<div class="fact"><span>{esc(label)}</span><strong>{esc(value)}</strong></div>'
+        f'<div class="fact"><span>{esc(title_case_text(label))}</span><strong>{esc(title_case_text(value))}</strong></div>'
         for label, value in fact_items.items()
     )
 
     if srcs:
         source_items = "".join(
             f'<li><a href="{esc(s["url"])}" target="_blank" rel="noopener">'
-            f'{esc(s["publisher"])} &#8594;</a>'
-            + (f' <span class="source-tier">{esc(s["label"])}</span>' if s["label"] else "")
-            + "</li>"
+            f'{esc(s["publisher"])} &#8594;</a></li>'
             for s in srcs
         )
         featured_sources = (
             '<section class="side-card side-pad"><p class="side-kicker">Sources</p>'
-            '<h2>Further reading</h2>'
+            '<h2>Further Reading</h2>'
             '<p class="source-copy">Sources used to research and locate this legend.</p>'
             f'<ul class="source-list">{source_items}</ul></section>'
         )
@@ -927,13 +971,13 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
         nearby_items.append(
             f'<li><a href="{BASE}/{OUT_DIR}/{slugmap[nb["name"]]}">'
             f'<span class="nearby-dot" style="background:{esc(nb_colour)}" aria-hidden="true"></span>'
-            f'<span class="nearby-name">{esc(nb["name"])}</span>'
+        f'<span class="nearby-name">{esc(title_case_text(nb["name"]))}</span>'
             f'<span class="nearby-dist">{dist_label}</span></a></li>'
         )
     if nearby_items:
         featured_nearby = (
-            '<section class="side-card side-pad"><p class="side-kicker">In the area</p>'
-            '<h2>Nearby legends</h2>'
+            '<section class="side-card side-pad"><p class="side-kicker">In the Area</p>'
+            '<h2>Nearby Legends</h2>'
             f'<ul class="nearby-list">{"".join(nearby_items)}</ul></section>'
         )
     else:
@@ -960,9 +1004,9 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
     if featured_cards:
         featured_related = (
             '<section class="related"><div class="shell">'
-            '<div class="section-head"><div><p>Continue exploring</p>'
-            '<h2>Related legends</h2></div>'
-            f'<a href="{BASE}/{OUT_DIR}/">Browse all legends</a></div>'
+            '<div class="section-head"><div><p>Continue Exploring</p>'
+            '<h2>Related Legends</h2></div>'
+            f'<a href="{BASE}/{OUT_DIR}/">Browse All Legends</a></div>'
             f'<div class="related-grid">{"".join(featured_cards)}</div>'
             '</div></section>'
         )
@@ -1025,7 +1069,7 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
         editorial=editorial_html,
         featured_nearby=featured_nearby,
         maplink=esc(maplink),
-        map_title=esc(featured.get("map_title") or leg.get("region", "")),
+        map_title=esc(title_case_text(featured.get("map_title") or leg.get("region", ""))),
         lat=f"{lat:.6f}",
         lng=f"{lng:.6f}",
         initial=esc(name[:1]),
@@ -1136,9 +1180,8 @@ def build():
 
         # Sourcing block: single line for one source, a labelled list for more.
         def src_link(s):
-            tier = f' &#183; <span class="src-tier">{esc(s["label"])}</span>' if s["label"] else ""
             return (f'<a href="{esc(s["url"])}" target="_blank" rel="noopener">'
-                    f'{esc(s["publisher"])}</a>{tier}')
+                    f'{esc(s["publisher"])}</a>')
         if not srcs:
             sources_html = ""
         elif len(srcs) == 1:
@@ -1559,7 +1602,7 @@ h1{{font-family:'Marcellus',serif;font-size:clamp(30px,3vw,44px);font-weight:400
 </style></head>
 <body>
 {topnav_html("browse")}
-<header class="site-banner"><a class="banner-link" href="{BASE}/"><img src="{BASE}/green-man.png" class="banner-emblem" alt=""/><span class="banner-text"><span class="banner-title"><i>&#10022;</i> Folklore Finder <i>&#10022;</i></span><span class="banner-sub">An atlas of myths, legends, &amp; stories</span></span></a></header>
+<header class="site-banner"><a class="banner-link" href="{BASE}/"><img src="{BASE}/green-man.png" class="banner-emblem" alt=""/><span class="banner-text"><span class="banner-title"><i>&#10022;</i> Folklore Finder <i>&#10022;</i></span><span class="banner-sub">An Atlas of Myths, Legends, &amp; Stories</span></span></a></header>
 <div class="wrap"><h1>All Legends ({written})</h1>{browse_sections}<div class="az">
 {az_content}
 </div></div>
@@ -1570,7 +1613,7 @@ h1{{font-family:'Marcellus',serif;font-size:clamp(30px,3vw,44px);font-weight:400
 
     # sitemap.xml — legend pages carry their own date_modified as lastmod, so the
     # signal is honest; app/aggregation pages use the build date.
-    urls = [f"{BASE}/", f"{BASE}/{OUT_DIR}/", f"{BASE}/about", f"{BASE}/updates", f"{BASE}/privacy", f"{BASE}/feed.xml"]
+    urls = [f"{BASE}/", f"{BASE}/{OUT_DIR}/", f"{BASE}/achievements", f"{BASE}/about", f"{BASE}/updates", f"{BASE}/privacy", f"{BASE}/feed.xml"]
     urls += browse_urls
     urls += [f"{BASE}/{OUT_DIR}/{slugmap[l['name']]}" for l in legends]
     lastmod_map = {f"{BASE}/{OUT_DIR}/{slugmap[l['name']]}": (l.get("date_modified") or today)

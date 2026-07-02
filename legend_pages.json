@@ -3167,7 +3167,7 @@
         "Motif": "Skimity riding"
       }
     },
-    "La B\u00eate De La Tour": {
+    "La Bête De La Tour": {
       "priority": 212,
       "image": "legend-images/la-bete-de-la-tour-hero.jpg",
       "alt": "A massive black dog wound in heavy iron chains moving beside a Guernsey coastal tower under stormy skies",
@@ -3272,11 +3272,11 @@
         "Motif": "Wailing cry before death"
       }
     },
-    "C\u00fa Ro\u00ed mac D\u00e1ire": {
+    "Cú Roí mac Dáire": {
       "priority": 219,
       "image": "legend-images/cu-roi-mac-daire-hero.jpg",
       "alt": "An early medieval Irish warrior-king standing by the stone ring-fort on Caherconree with the Kerry mountains behind him",
-      "caption": "A visual interpretation of C\u00fa Ro\u00ed mac D\u00e1ire at Caherconree",
+      "caption": "A visual interpretation of Cú Roí mac Dáire at Caherconree",
       "map_title": "Caherconree, County Kerry",
       "section_heading": "The fortress on the mountain",
       "pullquote": "His stronghold is associated with Caherconree in the Slieve Mish Mountains, where legend says his fortress revolved at night so that enemies could not find its entrance.",
@@ -3345,6 +3345,966 @@
         "Type": "Enchantress legend",
         "Setting": "Isle of Man river crossing",
         "Motif": "Bewitchment and drowning"
+      }
+    },
+    "Gulf of Corryvreckan": {
+      "priority": 224,
+      "image": "legend-images/gulf-of-corryvreckan-hero.jpg",
+      "alt": "The Corryvreckan whirlpool churning beside the dark cliffs between Jura and Scarba under an overcast sky",
+      "caption": "A visual interpretation of the Corryvreckan whirlpool off Jura and Scarba",
+      "map_title": "Jura and Scarba, Argyll",
+      "section_heading": "Breacan's cauldron",
+      "pullquote": "On the third night the rope of maidens' hair broke too, and Breacan was dragged down to his death.",
+      "facts": {
+        "Tradition": "Gaelic sea lore",
+        "Type": "Whirlpool legend",
+        "Setting": "Between Jura and Scarba",
+        "Motif": "Deadly sea trial"
+      }
+    },
+    "St Catherine's Hill Mizmaze": {
+      "priority": 225,
+      "image": "legend-images/st-catherine-s-hill-mizmaze-hero.jpg",
+      "alt": "The rectangular turf mizmaze cut into the chalk summit of St Catherine's Hill beside chapel ruins near Winchester",
+      "caption": "A visual interpretation of the Mizmaze on St Catherine's Hill",
+      "map_title": "St Catherine's Hill, Winchester",
+      "section_heading": "The boy who carved the maze",
+      "pullquote": "A bored Winchester schoolboy carved a turf maze so intricate it broke his mind in the tracing.",
+      "facts": {
+        "Tradition": "English hill lore",
+        "Type": "Rectangular turf maze",
+        "Setting": "St Catherine's Hill, Winchester",
+        "Motif": "Labyrinth and madness"
+      }
+    },
+    "Witches' Well": {
+      "priority": 226,
+      "image": "legend-images/witches-well-hero.jpg",
+      "alt": "The Witches' Well memorial set into the stone wall on Castlehill in Edinburgh above the Royal Mile",
+      "caption": "A visual interpretation of the Edinburgh memorial to accused witches",
+      "map_title": "Castlehill, Edinburgh",
+      "section_heading": "The memorial on the wall",
+      "pullquote": "most of those who suffered were not witches at all but innocent victims of fear and superstition.",
+      "facts": {
+        "Tradition": "Scottish witch-trial memory",
+        "Type": "Memorial well",
+        "Setting": "Castlehill, Edinburgh",
+        "Motif": "Remembrance of the accused"
+      }
+    },
+    "Beithir": {
+      "priority": 227,
+      "image": "legend-images/beithir-hero.jpg",
+      "alt": "A huge serpent-dragon rising from Loch Indaal while Islay sailors prepare spiked barrels on the shore",
+      "caption": "A visual interpretation of the Beithir legend on Islay",
+      "map_title": "Loch Indaal, Islay",
+      "section_heading": "The serpent on the shore",
+      "pullquote": "sailors killed it using flesh-covered barrels armed with iron spikes.",
+      "facts": {
+        "Tradition": "Scottish Gaelic folklore",
+        "Type": "Serpent-dragon",
+        "Setting": "Islay and Loch Indaal",
+        "Motif": "Spiked-barrel slaying"
+      }
+    },
+    "Bignor Hill Dragon": {
+      "priority": 228,
+      "image": "legend-images/bignor-hill-dragon-hero.jpg",
+      "alt": "An ancient dragon coiled around Bignor Hill, its body forming chalk folds above the Sussex landscape",
+      "caption": "A visual interpretation of the dragon said to shape Bignor Hill",
+      "map_title": "Bignor Hill, West Sussex",
+      "section_heading": "The coils in the chalk",
+      "pullquote": "its body cutting the folds still visible in the chalk landscape above a Roman villa.",
+      "facts": {
+        "Tradition": "Sussex hill lore",
+        "Type": "Ancient dragon",
+        "Setting": "Bignor Hill",
+        "Motif": "Landscape shaped by a dragon"
+      }
+    },
+    "Dragon of Brinsop": {
+      "priority": 229,
+      "image": "legend-images/dragon-of-brinsop-hero.jpg",
+      "alt": "Saint George on horseback slaying the Dragon of Brinsop beside the well of Duck Pool meadow",
+      "caption": "A visual interpretation of the Dragon of Brinsop battle near Duck Pool meadow",
+      "map_title": "Brinsop, Herefordshire",
+      "section_heading": "The battle at Duck Pool",
+      "pullquote": "Herefordshire's own St George legend places the dragon in the well of Duck Pool meadow at Brinsop.",
+      "facts": {
+        "Tradition": "Herefordshire dragon lore",
+        "Type": "Saint George dragon",
+        "Setting": "Duck Pool meadow",
+        "Motif": "Dragon battle by the well"
+      }
+    },
+    "Dragon of Deerhurst": {
+      "priority": 230,
+      "image": "legend-images/dragon-of-deerhurst-hero.jpg",
+      "alt": "John Smith driving an axe between the scales of the Dragon of Deerhurst in a Gloucestershire pasture",
+      "caption": "A visual interpretation of the Dragon of Deerhurst and John Smith",
+      "map_title": "Deerhurst, Gloucestershire",
+      "section_heading": "The axe between the scales",
+      "pullquote": "John Smith drove an axe between its scales",
+      "facts": {
+        "Tradition": "Gloucestershire dragon lore",
+        "Type": "Poisonous dragon",
+        "Setting": "Deerhurst pasture",
+        "Motif": "Labourer as dragon-slayer"
+      }
+    },
+    "Dragon of Mordiford": {
+      "priority": 231,
+      "image": "legend-images/dragon-of-mordiford-hero.jpg",
+      "alt": "Maud standing unharmed beside the grown Dragon of Mordiford on the hills above Herefordshire",
+      "caption": "A visual interpretation of Maud and the Dragon of Mordiford",
+      "map_title": "Mordiford, Herefordshire",
+      "section_heading": "Maud's secret serpent",
+      "pullquote": "she found a tiny serpent and raised it in secret until it grew into a dragon.",
+      "facts": {
+        "Tradition": "Herefordshire dragon lore",
+        "Type": "Fostered dragon",
+        "Setting": "Hills above Mordiford",
+        "Motif": "The spared keeper"
+      }
+    },
+    "Dragon of Radnor Forest": {
+      "priority": 232,
+      "image": "legend-images/dragon-of-radnor-forest-hero.jpg",
+      "alt": "The last dragon of Wales sleeping beneath the dark trees of Radnor Forest",
+      "caption": "A visual interpretation of the sleeping Dragon of Radnor Forest",
+      "map_title": "Radnor Forest, Wales",
+      "section_heading": "The last dragon asleep",
+      "pullquote": "Beneath Radnor Forest, the last dragon of Wales sleeps",
+      "facts": {
+        "Tradition": "Welsh dragon lore",
+        "Type": "Sleeping dragon",
+        "Setting": "Radnor Forest",
+        "Motif": "Church ring containment"
+      }
+    },
+    "Dragon of St Leonard's Forest": {
+      "priority": 233,
+      "image": "legend-images/dragon-of-st-leonard-s-forest-hero.jpg",
+      "alt": "A low serpent with two great lumps leaving a slime trail through St Leonard's Forest",
+      "caption": "A visual interpretation of the serpent reported in St Leonard's Forest",
+      "map_title": "St Leonard's Forest, Sussex",
+      "section_heading": "The serpent in the wood",
+      "pullquote": "leaving a trail of slime, and killing dogs and a man with its venomous breath.",
+      "facts": {
+        "Tradition": "Sussex dragon lore",
+        "Type": "Forest serpent",
+        "Setting": "St Leonard's Forest",
+        "Motif": "Venomous breath"
+      }
+    },
+    "Dragon of Strathmartine": {
+      "priority": 234,
+      "image": "legend-images/dragon-of-strathmartine-hero.jpg",
+      "alt": "Martin luring the Dragon of Strathmartine toward a spiked ball of dough on Angus moorland",
+      "caption": "A visual interpretation of Martin outwitting the Dragon of Strathmartine",
+      "map_title": "Strathmartine, Angus",
+      "section_heading": "The spiked ball of dough",
+      "pullquote": "Martin lured the beast to its death with cunning and a spiked ball of dough.",
+      "facts": {
+        "Tradition": "Scottish dragon lore",
+        "Type": "Moorland serpent",
+        "Setting": "Strathmartine",
+        "Motif": "Cunning lure"
+      }
+    },
+    "Dragon of Wantley": {
+      "priority": 235,
+      "image": "legend-images/dragon-of-wantley-hero.jpg",
+      "alt": "More of More Hall charging the Dragon of Wantley across a muddy South Yorkshire hillside",
+      "caption": "A visual interpretation of the comic Dragon of Wantley ballad",
+      "map_title": "Wantley, South Yorkshire",
+      "section_heading": "Muddy boots and ballad laughter",
+      "pullquote": "It is dragon-slaying with muddy boots and tavern laughter.",
+      "facts": {
+        "Tradition": "Yorkshire ballad lore",
+        "Type": "Comic dragon",
+        "Setting": "Wantley",
+        "Motif": "Mock-heroic slaying"
+      }
+    },
+    "Filey Dragon": {
+      "priority": 236,
+      "image": "legend-images/filey-dragon-hero.jpg",
+      "alt": "The Filey Dragon among the tidal rocks of Filey Brigg with sticky parkin cake in its jaws",
+      "caption": "A visual interpretation of the Filey Dragon on the Brigg",
+      "map_title": "Filey Brigg, North Yorkshire",
+      "section_heading": "Parkin on the rocks",
+      "pullquote": "its jaws seized shut and it plunged into the sea to drown.",
+      "facts": {
+        "Tradition": "Yorkshire coastal lore",
+        "Type": "Sea-cliff dragon",
+        "Setting": "Filey Brigg",
+        "Motif": "Sticky parkin trap"
+      }
+    },
+    "Laidly Worm of Spindleston Heugh": {
+      "priority": 237,
+      "image": "legend-images/laidly-worm-of-spindleston-heugh-hero.jpg",
+      "alt": "Childe Wynd approaching the sorrowful Laidly Worm on the Northumberland coast below Bamburgh",
+      "caption": "A visual interpretation of the Laidly Worm enchantment",
+      "map_title": "Bamburgh, Northumberland",
+      "section_heading": "The worm and the spell",
+      "pullquote": "A princess transformed by her jealous stepmother into a loathsome worm around Bamburgh.",
+      "facts": {
+        "Tradition": "Northumbrian romance",
+        "Type": "Enchanted worm",
+        "Setting": "Spindleston Heugh",
+        "Motif": "Transformation and release"
+      }
+    },
+    "Lig-na-Paiste": {
+      "priority": 238,
+      "image": "legend-images/lig-na-paiste-hero.jpg",
+      "alt": "The last serpent of Ireland churning beneath Lough Foyle behind an ancient iron cage",
+      "caption": "A visual interpretation of Lig-na-Paiste beneath Lough Foyle",
+      "map_title": "Lough Foyle, County Derry",
+      "section_heading": "The caged last serpent",
+      "pullquote": "a local saint caged it beneath Lough Foyle, where it still churns the tides.",
+      "facts": {
+        "Tradition": "Irish saint lore",
+        "Type": "Last serpent",
+        "Setting": "Lough Foyle",
+        "Motif": "Caged beneath the tide"
+      }
+    },
+    "Llandeilo Graban Dragon": {
+      "priority": 239,
+      "image": "legend-images/llandeilo-graban-dragon-hero.jpg",
+      "alt": "The Llandeilo Graban Dragon descending from a Welsh church belfry toward a spiked iron decoy",
+      "caption": "A visual interpretation of the last dragon-slaying at Llandeilo Graban",
+      "map_title": "Llandeilo Graban, Powys",
+      "section_heading": "The iron decoy",
+      "pullquote": "A dragon nesting in the church belfry was destroyed by a blacksmith's iron decoy",
+      "facts": {
+        "Tradition": "Welsh dragon lore",
+        "Type": "Belfry dragon",
+        "Setting": "Llandeilo Graban church",
+        "Motif": "Blacksmith's decoy"
+      }
+    },
+    "Longwitton Dragon": {
+      "priority": 240,
+      "image": "legend-images/longwitton-dragon-hero.jpg",
+      "alt": "A knight facing the Longwitton Dragon coiled around three healing wells in Northumberland",
+      "caption": "A visual interpretation of the Longwitton Dragon guarding the wells",
+      "map_title": "Longwitton, Northumberland",
+      "section_heading": "The guardian of the wells",
+      "pullquote": "A Northumbrian dragon that guarded three healing wells near Longwitton and denied villagers their water.",
+      "facts": {
+        "Tradition": "Northumbrian dragon lore",
+        "Type": "Well guardian",
+        "Setting": "Three healing wells",
+        "Motif": "Reflection and timing"
+      }
+    },
+    "Penllyne Dragon": {
+      "priority": 241,
+      "image": "legend-images/penllyne-dragon-hero.jpg",
+      "alt": "A peacock-bright winged serpent in the woods near Penllyne Castle as cattle scatter at dusk",
+      "caption": "A visual interpretation of the jewel-bright Penllyne serpents",
+      "map_title": "Penllyne, Vale of Glamorgan",
+      "section_heading": "Jewelled wings in the wood",
+      "pullquote": "winged serpents covered in peacock-bright jewels terrorised farmyards",
+      "facts": {
+        "Tradition": "Glamorgan dragon lore",
+        "Type": "Winged serpent",
+        "Setting": "Penllyne Castle woods",
+        "Motif": "Jewelled scales"
+      }
+    },
+    "Sockburn Worm": {
+      "priority": 242,
+      "image": "legend-images/sockburn-worm-hero.jpg",
+      "alt": "Sir John Conyers striking the Sockburn Worm with a broad falchion on the River Tees",
+      "caption": "A visual interpretation of Sir John Conyers and the Sockburn Worm",
+      "map_title": "Sockburn, County Durham",
+      "section_heading": "The falchion by the Tees",
+      "pullquote": "A dragon or wyrm slain by Sir John Conyers near Sockburn on the River Tees.",
+      "facts": {
+        "Tradition": "County Durham dragon lore",
+        "Type": "River wyrm",
+        "Setting": "River Tees",
+        "Motif": "Ceremonial falchion"
+      }
+    },
+    "Stoor Worm": {
+      "priority": 243,
+      "image": "legend-images/stoor-worm-hero.jpg",
+      "alt": "The colossal Stoor Worm rising from the Caithness sea before Assipattle's small boat",
+      "caption": "A visual interpretation of Assipattle facing the Stoor Worm",
+      "map_title": "Caithness coast",
+      "section_heading": "The serpent that made islands",
+      "pullquote": "its teeth became the Orkney islands and its coiled body became Iceland.",
+      "facts": {
+        "Tradition": "Scottish sea lore",
+        "Type": "World serpent",
+        "Setting": "Northern sea",
+        "Motif": "Body becoming land"
+      }
+    },
+    "The Anwick Dragon": {
+      "priority": 244,
+      "image": "legend-images/the-anwick-dragon-hero.jpg",
+      "alt": "A winged drake bursting from a muddy hollow near the Drake Stones at Anwick",
+      "caption": "A visual interpretation of the Anwick Dragon and the Drake Stones",
+      "map_title": "Anwick, Lincolnshire",
+      "section_heading": "The drake from the hole",
+      "pullquote": "a winged drake flew from the hole",
+      "facts": {
+        "Tradition": "Lincolnshire dragon lore",
+        "Type": "Winged drake",
+        "Setting": "Drake Stones, Anwick",
+        "Motif": "Quicksand and hidden treasure"
+      }
+    },
+    "The Dragon of Loschy Hill": {
+      "priority": 245,
+      "image": "legend-images/the-dragon-of-loschy-hill-hero.jpg",
+      "alt": "Peter Loschy and his hound fighting the armoured Dragon of Loschy Hill near Nunnington",
+      "caption": "A visual interpretation of Peter Loschy fighting the dragon",
+      "map_title": "Loschy Hill, North Yorkshire",
+      "section_heading": "The hound and the healing dragon",
+      "pullquote": "Peter Loschy fought a self-healing dragon in razor-edged armour",
+      "facts": {
+        "Tradition": "Yorkshire dragon lore",
+        "Type": "Armoured dragon",
+        "Setting": "Loschy Hill",
+        "Motif": "Faithful hound"
+      }
+    },
+    "The Wherwell Cockatrice": {
+      "priority": 246,
+      "image": "legend-images/the-wherwell-cockatrice-hero.jpg",
+      "alt": "Green lowering a mirror before the Wherwell Cockatrice in a damp priory yard",
+      "caption": "A visual interpretation of the Wherwell Cockatrice facing its reflection",
+      "map_title": "Wherwell, Hampshire",
+      "section_heading": "The mirror in the cellar",
+      "pullquote": "Green lowered a mirror and let the beast battle its own reflection to death.",
+      "facts": {
+        "Tradition": "Hampshire monster lore",
+        "Type": "Cockatrice",
+        "Setting": "Wherwell priory",
+        "Motif": "Fatal reflection"
+      }
+    },
+    "Bampfylde Moore Carew": {
+      "priority": 247,
+      "image": "legend-images/bampfylde-moore-carew-hero.jpg",
+      "alt": "Bampfylde Moore Carew watching a Devon road in 18th-century rogue disguise",
+      "caption": "A visual interpretation of Bampfylde Moore Carew on the Devon road",
+      "map_title": "Bickleigh, Devon",
+      "section_heading": "The rogue king on the road",
+      "pullquote": "the self-styled King of the Beggars and Gypsies",
+      "facts": {
+        "Tradition": "Devon chapbook legend",
+        "Type": "Rogue hero",
+        "Setting": "Bickleigh and the road",
+        "Motif": "Disguise and escape"
+      }
+    },
+    "Bevis of Hampton": {
+      "priority": 248,
+      "image": "legend-images/bevis-of-hampton-hero.jpg",
+      "alt": "Bevis of Hampton mounted on Arundel beside Southampton's medieval waterfront",
+      "caption": "A visual interpretation of Bevis of Hampton setting out on Arundel",
+      "map_title": "Southampton, Hampshire",
+      "section_heading": "Arundel and Morglay",
+      "pullquote": "a knight of Southampton who slew giants",
+      "facts": {
+        "Tradition": "English romance",
+        "Type": "Medieval knight",
+        "Setting": "Southampton",
+        "Motif": "Heroic quest"
+      }
+    },
+    "Brutus of Troy": {
+      "priority": 249,
+      "image": "legend-images/brutus-of-troy-hero.jpg",
+      "alt": "Brutus of Troy stepping ashore at Totnes with ships on the misty River Dart",
+      "caption": "A visual interpretation of Brutus of Troy landing at Totnes",
+      "map_title": "Totnes, Devon",
+      "section_heading": "The founder steps ashore",
+      "pullquote": "Brutus stepped ashore at Totnes to found Britain",
+      "facts": {
+        "Tradition": "British origin legend",
+        "Type": "Founder hero",
+        "Setting": "Totnes",
+        "Motif": "Exile and foundation"
+      }
+    },
+    "Conn-eda and the Golden Apples of Lough Erne": {
+      "priority": 250,
+      "image": "legend-images/conn-eda-and-the-golden-apples-of-lough-erne-hero.jpg",
+      "alt": "Prince Conn-eda diving beneath Lough Erne toward three golden apples in an underwater palace glow",
+      "caption": "A visual interpretation of Conn-eda's quest beneath Lough Erne",
+      "map_title": "Lough Erne, County Fermanagh",
+      "section_heading": "The apples below the lake",
+      "pullquote": "return with three golden apples, a black steed, and a magic hound",
+      "facts": {
+        "Tradition": "Fermanagh fairy tale",
+        "Type": "Questing prince",
+        "Setting": "Lough Erne",
+        "Motif": "Underwater quest"
+      }
+    },
+    "Craig y Ddinas": {
+      "priority": 251,
+      "image": "legend-images/craig-y-ddinas-hero.jpg",
+      "alt": "A traveller finding Arthur and his sleeping knights in the torchlit cave beneath Craig y Ddinas",
+      "caption": "A visual interpretation of the sleeping warriors beneath Craig y Ddinas",
+      "map_title": "Craig y Ddinas, Vale of Neath",
+      "section_heading": "The bell in the cave",
+      "pullquote": "King Arthur and his knights sleep in an enchanted cave",
+      "facts": {
+        "Tradition": "Welsh Arthurian legend",
+        "Type": "Sleeping warriors",
+        "Setting": "Craig y Ddinas",
+        "Motif": "Return in Britain's need"
+      }
+    },
+    "Deirdre of the Sorrows": {
+      "priority": 252,
+      "image": "legend-images/deirdre-of-the-sorrows-hero.jpg",
+      "alt": "Deirdre and Naoise in exile above a cold Argyll sea loch",
+      "caption": "A visual interpretation of Deirdre and Naoise in Scottish exile",
+      "map_title": "Argyll, Scotland",
+      "section_heading": "The exile before return",
+      "pullquote": "Deirdre chose the warrior Naoise over the king who claimed her",
+      "facts": {
+        "Tradition": "Ulster Cycle",
+        "Type": "Tragic heroine",
+        "Setting": "Argyll exile",
+        "Motif": "Prophecy and doomed love"
+      }
+    },
+    "Diarmuid and Grainne": {
+      "priority": 253,
+      "image": "legend-images/diarmuid-and-grainne-hero.jpg",
+      "alt": "Diarmuid and Grainne pausing beside a stone bed below Ben Bulben while hunted across Ireland",
+      "caption": "A visual interpretation of Diarmuid and Grainne in flight",
+      "map_title": "Ben Bulben, County Sligo",
+      "section_heading": "The lovers on the run",
+      "pullquote": "For sixteen years they were hunted across Ireland and Scotland",
+      "facts": {
+        "Tradition": "Fenian Cycle",
+        "Type": "Fugitive lovers",
+        "Setting": "County Sligo",
+        "Motif": "Geis and pursuit"
+      }
+    },
+    "Downpatrick and the Three Saints": {
+      "priority": 254,
+      "image": "legend-images/downpatrick-and-the-three-saints-hero.jpg",
+      "alt": "St Patrick, St Brigid and St Columba beside a misty grave at Down Cathedral",
+      "caption": "A visual interpretation of Ireland's three saints at Downpatrick",
+      "map_title": "Downpatrick, County Down",
+      "section_heading": "Three saints, one grave",
+      "pullquote": "St Patrick, St Brigid, and St Columba ? Ireland's three patron saints ? share a single grave",
+      "facts": {
+        "Tradition": "Irish saint lore",
+        "Type": "Patron saints",
+        "Setting": "Down Cathedral",
+        "Motif": "Shared grave"
+      }
+    },
+    "Dunstan and the Devil": {
+      "priority": 255,
+      "image": "legend-images/dunstan-and-the-devil-hero.jpg",
+      "alt": "Saint Dunstan in a smoky Somerset forge holding blacksmith's tongs toward a shadowy tempter",
+      "caption": "A visual interpretation of St Dunstan's forge legend",
+      "map_title": "Somerset",
+      "section_heading": "The tongs in the forge",
+      "pullquote": "Saint Dunstan was said to have seized the Devil by the nose with blacksmith's tongs.",
+      "facts": {
+        "Tradition": "English saint lore",
+        "Type": "Blacksmith saint",
+        "Setting": "Somerset forge",
+        "Motif": "Horseshoe protection"
+      }
+    },
+    "Furbaide Ferbend": {
+      "priority": 256,
+      "image": "legend-images/furbaide-ferbend-hero.jpg",
+      "alt": "Furbaide Ferbend with a sling on a misty Shannon island below Corn Hill",
+      "caption": "A visual interpretation of Furbaide Ferbend's revenge",
+      "map_title": "Corn Hill, County Longford",
+      "section_heading": "The sling from the island",
+      "pullquote": "avenged his mother's murder",
+      "facts": {
+        "Tradition": "Ulster Cycle",
+        "Type": "Avenging hero",
+        "Setting": "Corn Hill and Shannon island",
+        "Motif": "Unusual sling-shot"
+      }
+    },
+    "Guinevere's Grave at Meigle": {
+      "priority": 258,
+      "image": "legend-images/guinevere-s-grave-at-meigle-hero.jpg",
+      "alt": "A spectral Vanora beside the mound and carved Pictish stone at Meigle",
+      "caption": "A visual interpretation of Guinevere's grave at Meigle",
+      "map_title": "Meigle, Perth and Kinross",
+      "section_heading": "Vanora beside the stone",
+      "pullquote": "Local legend names a mound at Meigle as the grave of Vanora ? Guinevere",
+      "facts": {
+        "Tradition": "Scottish Arthurian legend",
+        "Type": "Grave tradition",
+        "Setting": "Meigle",
+        "Motif": "Queen remembered in stone"
+      }
+    },
+    "Guy of Warwick": {
+      "priority": 259,
+      "image": "legend-images/guy-of-warwick-hero.jpg",
+      "alt": "Guy of Warwick as a warrior-hermit beside the misty River Avon at Guy's Cliffe",
+      "caption": "A visual interpretation of Guy of Warwick at Guy's Cliffe",
+      "map_title": "Guy's Cliffe, Warwickshire",
+      "section_heading": "The hero becomes a hermit",
+      "pullquote": "he ended his life as a hermit at Guy's Cliffe",
+      "facts": {
+        "Tradition": "Warwickshire romance",
+        "Type": "Romance hero",
+        "Setting": "River Avon",
+        "Motif": "Heroic penance"
+      }
+    },
+    "Hereward the Wake": {
+      "priority": 260,
+      "image": "legend-images/hereward-the-wake-hero.jpg",
+      "alt": "Hereward the Wake planning a night raid among the misty reed beds of Ely",
+      "caption": "A visual interpretation of Hereward holding the Isle of Ely",
+      "map_title": "Isle of Ely, Cambridgeshire",
+      "section_heading": "The fenland resistance",
+      "pullquote": "held the Isle of Ely until even legend lost track",
+      "facts": {
+        "Tradition": "English resistance legend",
+        "Type": "Outlaw defender",
+        "Setting": "Ely Fens",
+        "Motif": "Fenland cunning"
+      }
+    },
+    "Ivar the Boneless": {
+      "priority": 261,
+      "image": "legend-images/ivar-the-boneless-hero.jpg",
+      "alt": "Ivar the Boneless seated before a winter Viking encampment at Repton",
+      "caption": "A visual interpretation of Ivar the Boneless in Derbyshire",
+      "map_title": "Repton, Derbyshire",
+      "section_heading": "The winter war-leader",
+      "pullquote": "co-led the 865 Great Heathen Army",
+      "facts": {
+        "Tradition": "Norse saga history",
+        "Type": "Viking leader",
+        "Setting": "Repton",
+        "Motif": "Army and burial memory"
+      }
+    },
+    "Jack the Giant Killer": {
+      "priority": 262,
+      "image": "legend-images/jack-the-giant-killer-hero.jpg",
+      "alt": "Jack the Giant Killer standing by a cliffside pit trap at Land's End",
+      "caption": "A visual interpretation of Jack after toppling Cormoran",
+      "map_title": "Land's End, Cornwall",
+      "section_heading": "The farmer's lad and the pit",
+      "pullquote": "A Cornish farmer's lad who dug a pit to topple the giant Cormoran",
+      "facts": {
+        "Tradition": "Cornish Arthurian folklore",
+        "Type": "Giant-killer",
+        "Setting": "Land's End",
+        "Motif": "Clever pit trap"
+      }
+    },
+    "Lady Godiva": {
+      "priority": 263,
+      "image": "legend-images/lady-godiva-hero.jpg",
+      "alt": "Lady Godiva riding modestly through a shuttered medieval Coventry street at dawn",
+      "caption": "A respectful visual interpretation of Lady Godiva's ride through Coventry",
+      "map_title": "Coventry, West Midlands",
+      "section_heading": "The ride through Coventry",
+      "pullquote": "To win mercy from her husband's crushing taxes",
+      "facts": {
+        "Tradition": "Coventry civic legend",
+        "Type": "Merciful noblewoman",
+        "Setting": "Coventry",
+        "Motif": "Sacrifice for the poor"
+      }
+    },
+    "Oisin": {
+      "priority": 264,
+      "image": "legend-images/oisin-hero.jpg",
+      "alt": "Oisin beside Niamh's white horse as he reaches toward Irish ground after centuries in T?r na n?g",
+      "caption": "A visual interpretation of Oisin's return from the Land of Youth",
+      "map_title": "County Kildare, Ireland",
+      "section_heading": "The ground after three centuries",
+      "pullquote": "three hundred years passed in Ireland",
+      "facts": {
+        "Tradition": "Fenian Cycle",
+        "Type": "Returned hero",
+        "Setting": "County Kildare",
+        "Motif": "Time in the Otherworld"
+      }
+    },
+    "Oonagh of Knockmany Hill": {
+      "priority": 265,
+      "image": "legend-images/oonagh-of-knockmany-hill-hero.jpg",
+      "alt": "Oonagh presenting iron-griddle loaves in her hilltop cottage while Fionn lies swaddled nearby",
+      "caption": "A visual interpretation of Oonagh outwitting the Ulster hero",
+      "map_title": "Knockmany Hill, County Tyrone",
+      "section_heading": "The loaves with iron inside",
+      "pullquote": "Oonagh wrapped her giant husband in swaddling clothes",
+      "facts": {
+        "Tradition": "Irish giant lore",
+        "Type": "Clever heroine",
+        "Setting": "Knockmany Hill",
+        "Motif": "Domestic trickery"
+      }
+    },
+    "Orkneyinga Saga": {
+      "priority": 266,
+      "image": "legend-images/orkneyinga-saga-hero.jpg",
+      "alt": "A Norse earl and saga-reciter beside a longship on the Orkney shore at dusk",
+      "caption": "A visual interpretation of Orkneyinga Saga memory on the northern coast",
+      "map_title": "Orkney and Shetland",
+      "section_heading": "The saga by the shore",
+      "pullquote": "binding the Northern Isles to Norway, Scotland, feud, conversion, sea-kings, and bloodline memory",
+      "facts": {
+        "Tradition": "Norse island saga",
+        "Type": "Saga cycle",
+        "Setting": "Northern Isles",
+        "Motif": "Sea-kings and memory"
+      }
+    },
+    "Owain Lawgoch": {
+      "priority": 268,
+      "image": "legend-images/owain-lawgoch-hero.jpg",
+      "alt": "Owain Lawgoch sleeping in a hidden Welsh cave with his sword across his knees",
+      "caption": "A visual interpretation of Owain Lawgoch and the sleeping warriors",
+      "map_title": "Hidden cave of Wales",
+      "section_heading": "The red-handed prince asleep",
+      "pullquote": "sleeps in a hidden cave with his warriors",
+      "facts": {
+        "Tradition": "Welsh sleeping-hero lore",
+        "Type": "Hidden prince",
+        "Setting": "Welsh cave",
+        "Motif": "Trumpet call to wake"
+      }
+    },
+    "Piers Shonks": {
+      "priority": 269,
+      "image": "legend-images/piers-shonks-hero.jpg",
+      "alt": "Piers Shonks standing by a yew and church wall at Brent Pelham with a defeated dragon implied nearby",
+      "caption": "A visual interpretation of Piers Shonks at Brent Pelham",
+      "map_title": "Brent Pelham, Hertfordshire",
+      "section_heading": "Neither in nor out",
+      "pullquote": "outwitted the vengeful Devil by being buried inside the church wall",
+      "facts": {
+        "Tradition": "Hertfordshire local legend",
+        "Type": "Dragon-slaying lord",
+        "Setting": "Brent Pelham church",
+        "Motif": "Burial loophole"
+      }
+    },
+    "Pryderi": {
+      "priority": 270,
+      "image": "legend-images/pryderi-hero.jpg",
+      "alt": "Pryderi among horses at a Pembrokeshire stable with Welsh hills beyond",
+      "caption": "A visual interpretation of Pryderi's recovered identity",
+      "map_title": "Pembrokeshire, Wales",
+      "section_heading": "The child of the horse-lord's stable",
+      "pullquote": "Son of Pwyll and Rhiannon",
+      "facts": {
+        "Tradition": "Mabinogion",
+        "Type": "Welsh prince",
+        "Setting": "Pembrokeshire",
+        "Motif": "Lost child restored"
+      }
+    },
+    "Redmond O'Hanlon": {
+      "priority": 271,
+      "image": "legend-images/redmond-o-hanlon-hero.jpg",
+      "alt": "Redmond O'Hanlon riding a misty south Armagh border road at dusk",
+      "caption": "A visual interpretation of Redmond O'Hanlon on the border road",
+      "map_title": "County Armagh",
+      "section_heading": "The rapparee on the road",
+      "pullquote": "Ireland's most celebrated rapparee",
+      "facts": {
+        "Tradition": "Irish outlaw lore",
+        "Type": "Rapparee hero",
+        "Setting": "South Armagh",
+        "Motif": "Borderland rider"
+      }
+    },
+    "Saint Edmund and the Wolf": {
+      "priority": 272,
+      "image": "legend-images/saint-edmund-and-the-wolf-hero.jpg",
+      "alt": "Saint Edmund of East Anglia in winter woodland with a watchful wolf beside a wrapped relic bundle",
+      "caption": "A visual interpretation of Saint Edmund and the wolf at Hoxne",
+      "map_title": "Hoxne, Suffolk",
+      "section_heading": "The wolf in the wood",
+      "pullquote": "his followers heard his severed head calling",
+      "facts": {
+        "Tradition": "East Anglian saint lore",
+        "Type": "Martyr king",
+        "Setting": "Hoxne",
+        "Motif": "Wolf guardian"
+      }
+    },
+    "Sir Bedivere": {
+      "priority": 274,
+      "image": "legend-images/sir-bedivere-hero.jpg",
+      "alt": "Sir Bedivere casting Excalibur into a misty Somerset lake as a hand rises from the water",
+      "caption": "A visual interpretation of Sir Bedivere returning Excalibur",
+      "map_title": "Somerset lake",
+      "section_heading": "The final cast of Excalibur",
+      "pullquote": "on the third attempt the sword was thrown and a hand rose to receive it",
+      "facts": {
+        "Tradition": "Arthurian romance",
+        "Type": "Last knight",
+        "Setting": "Camlann's aftermath",
+        "Motif": "Return of Excalibur"
+      }
+    },
+    "Sir Kay": {
+      "priority": 275,
+      "image": "legend-images/sir-kay-hero.jpg",
+      "alt": "Sir Kay standing tall beside Arthurian campaign gear on a Gwynedd mountain road",
+      "caption": "A visual interpretation of Sir Kay as Cai the Tall",
+      "map_title": "Gwynedd, Wales",
+      "section_heading": "Arthur's sharp-tongued steward",
+      "pullquote": "Arthur's foster-brother and seneschal of Camelot",
+      "facts": {
+        "Tradition": "Arthurian romance",
+        "Type": "Knight and seneschal",
+        "Setting": "Gwynedd",
+        "Motif": "Loyal service"
+      }
+    },
+    "Sir Tristan": {
+      "priority": 276,
+      "image": "legend-images/sir-tristan-hero.jpg",
+      "alt": "Sir Tristan and Iseult on a medieval ship holding the love-potion cup as Cornwall nears",
+      "caption": "A visual interpretation of Tristan and Iseult after drinking the potion",
+      "map_title": "Cornish coast",
+      "section_heading": "The cup on the voyage",
+      "pullquote": "Tristan drank a love potion with her by accident",
+      "facts": {
+        "Tradition": "Arthurian romance",
+        "Type": "Tragic lovers",
+        "Setting": "Voyage to Cornwall",
+        "Motif": "Love potion"
+      }
+    },
+    "Slemish Mountain": {
+      "priority": 277,
+      "image": "legend-images/slemish-mountain-hero.jpg",
+      "alt": "Young St Patrick tending sheep on the windswept volcanic slopes of Slemish Mountain",
+      "caption": "A visual interpretation of St Patrick on Slemish Mountain",
+      "map_title": "Slemish, County Antrim",
+      "section_heading": "The voice on the mountain",
+      "pullquote": "a dream voice urged his escape",
+      "facts": {
+        "Tradition": "Irish saint lore",
+        "Type": "Shepherd saint",
+        "Setting": "Slemish Mountain",
+        "Motif": "Dream of escape"
+      }
+    },
+    "St Dwynwen": {
+      "priority": 278,
+      "image": "legend-images/st-dwynwen-hero.jpg",
+      "alt": "St Dwynwen beside the holy well and chapel ruins on windswept Llanddwyn Island",
+      "caption": "A visual interpretation of St Dwynwen on Llanddwyn Island",
+      "map_title": "Llanddwyn Island, Anglesey",
+      "section_heading": "The saint of lovers by the well",
+      "pullquote": "St Dwynwen is the Welsh patron saint of lovers.",
+      "facts": {
+        "Tradition": "Welsh saint lore",
+        "Type": "Patron saint",
+        "Setting": "Llanddwyn Island",
+        "Motif": "Pilgrimage for lovers"
+      }
+    },
+    "St Guthlac of Crowland": {
+      "priority": 279,
+      "image": "legend-images/st-guthlac-of-crowland-hero.jpg",
+      "alt": "St Guthlac standing firm in moonlit Crowland fen mist as shadowy forms recede",
+      "caption": "A visual interpretation of St Guthlac's fenland hermitage",
+      "map_title": "Crowland, Lincolnshire",
+      "section_heading": "The hermit in the fen",
+      "pullquote": "demons plagued him nightly",
+      "facts": {
+        "Tradition": "Anglo-Saxon saint lore",
+        "Type": "Hermit saint",
+        "Setting": "Lincolnshire Fens",
+        "Motif": "Temptation in the bog"
+      }
+    },
+    "St Helier": {
+      "priority": 280,
+      "image": "legend-images/st-helier-hero.jpg",
+      "alt": "St Helier standing on a tidal rock off Jersey with rough sea around his hermitage",
+      "caption": "A visual interpretation of St Helier on the Jersey tidal rock",
+      "map_title": "St Helier, Jersey",
+      "section_heading": "The hermit on the rock",
+      "pullquote": "a 6th-century Belgian hermit who lived on a tidal rock",
+      "facts": {
+        "Tradition": "Jersey saint lore",
+        "Type": "Hermit saint",
+        "Setting": "Tidal rock off Jersey",
+        "Motif": "Island hermitage"
+      }
+    },
+    "St Kevin of Glendalough": {
+      "priority": 281,
+      "image": "legend-images/st-kevin-of-glendalough-hero.jpg",
+      "alt": "St Kevin beside a hollow tree with a cow and birds in the misty valley of Glendalough",
+      "caption": "A visual interpretation of St Kevin's kinship with wild nature",
+      "map_title": "Glendalough, County Wicklow",
+      "section_heading": "The hermit and the cow",
+      "pullquote": "a cow found him and gave miraculous milk",
+      "facts": {
+        "Tradition": "Irish saint lore",
+        "Type": "Hermit saint",
+        "Setting": "Glendalough",
+        "Motif": "Wild nature and stillness"
+      }
+    },
+    "St Magloire of Sark": {
+      "priority": 282,
+      "image": "legend-images/st-magloire-of-sark-hero.jpg",
+      "alt": "St Magloire with staff between monastery stones and the wild Sark coast",
+      "caption": "A visual interpretation of St Magloire on Sark",
+      "map_title": "Sark, Channel Islands",
+      "section_heading": "The monk of Sark",
+      "pullquote": "founded a monastery on the island",
+      "facts": {
+        "Tradition": "Channel Islands saint lore",
+        "Type": "Celtic monk",
+        "Setting": "Sark",
+        "Motif": "Remote hermitage"
+      }
+    },
+    "St Swithin's Day": {
+      "priority": 283,
+      "image": "legend-images/st-swithin-s-day-hero.jpg",
+      "alt": "St Swithin standing in rain beside the wet stone of Winchester Cathedral",
+      "caption": "A visual interpretation of St Swithin's Day weather lore",
+      "map_title": "Winchester Cathedral, Hampshire",
+      "section_heading": "Rain on St Swithin's Day",
+      "pullquote": "rain on St Swithin's Day, 15 July, will continue for forty days",
+      "facts": {
+        "Tradition": "English weather lore",
+        "Type": "Weather saint",
+        "Setting": "Winchester Cathedral",
+        "Motif": "Forty days of rain"
+      }
+    },
+    "Thomas the Rhymer": {
+      "priority": 284,
+      "image": "legend-images/thomas-the-rhymer-hero.jpg",
+      "alt": "Thomas the Rhymer meeting the Queen of Elfland beneath the Eildon Tree at twilight",
+      "caption": "A visual interpretation of Thomas the Rhymer leaving for Elfland",
+      "map_title": "Eildon Hills, Scottish Borders",
+      "section_heading": "The queen beneath the tree",
+      "pullquote": "True Thomas met the Queen of Elfland beneath the Eildon Tree",
+      "facts": {
+        "Tradition": "Scottish Borders folklore",
+        "Type": "Prophetic poet",
+        "Setting": "Eildon Hills",
+        "Motif": "Journey to Elfland"
+      }
+    },
+    "Tichborne Dole": {
+      "priority": 285,
+      "image": "legend-images/tichborne-dole-hero.jpg",
+      "alt": "Lady Mabella Tichborne marking the charity boundary by torchlight across wet Hampshire fields",
+      "caption": "A visual interpretation of Lady Mabella and the Tichborne Dole",
+      "map_title": "Tichborne, Hampshire",
+      "section_heading": "The torch and the charity land",
+      "pullquote": "crawled 23 acres before her torch burned out",
+      "facts": {
+        "Tradition": "Hampshire family legend",
+        "Type": "Charity origin legend",
+        "Setting": "Tichborne estate",
+        "Motif": "Boundary and curse"
+      }
+    },
+    "Wild Edric": {
+      "priority": 287,
+      "image": "legend-images/wild-edric-hero.jpg",
+      "alt": "Wild Edric and Godda on a moonlit Shropshire hill road between mortal and otherworldly realms",
+      "caption": "A visual interpretation of Wild Edric and his fairy bride Godda",
+      "map_title": "Clun Forest and Stiperstones",
+      "section_heading": "The fairy bride condition",
+      "pullquote": "became the subject of an early English fairy-bride legend",
+      "facts": {
+        "Tradition": "Shropshire fairy-bride lore",
+        "Type": "Anglo-Saxon thane",
+        "Setting": "Clun Forest",
+        "Motif": "Broken otherworldly condition"
+      }
+    },
+    "Gobán Saor": {
+      "priority": 257,
+      "image": "legend-images/goban-saor-hero.jpg",
+      "alt": "Gob?n Saor overseeing round-tower stonework on the Donabate peninsula",
+      "caption": "A visual interpretation of Ireland's legendary master-builder",
+      "map_title": "Donabate, County Dublin",
+      "section_heading": "The master-builder at work",
+      "pullquote": "Ireland?s legendary master-builder",
+      "facts": {
+        "Tradition": "Irish craftsman lore",
+        "Type": "Master builder",
+        "Setting": "Donabate",
+        "Motif": "Cunning craft"
+      }
+    },
+    "Owain Glyndŵr": {
+      "priority": 267,
+      "image": "legend-images/owain-glyndwr-hero.jpg",
+      "alt": "Owain Glynd?r standing in a Welsh mountain pass as a vanished prince between history and legend",
+      "caption": "A visual interpretation of Owain Glynd?r as Wales's sleeping hero",
+      "map_title": "Glyndyfrdwy, Denbighshire",
+      "section_heading": "The prince who vanished",
+      "pullquote": "raised a great revolt against English rule and then vanished without trace",
+      "facts": {
+        "Tradition": "Welsh national legend",
+        "Type": "Sleeping hero",
+        "Setting": "Glyndyfrdwy",
+        "Motif": "Return at need"
+      }
+    },
+    "Scáthach": {
+      "priority": 273,
+      "image": "legend-images/scathach-hero.jpg",
+      "alt": "Sc?thach presenting the G?e Bulg at her stormy cliff fortress on Skye",
+      "caption": "A visual interpretation of Sc?thach teaching C? Chulainn",
+      "map_title": "Sleat Peninsula, Isle of Skye",
+      "section_heading": "The spear across the chasm",
+      "pullquote": "she rewarded him with the G?e Bulg",
+      "facts": {
+        "Tradition": "Ulster Cycle",
+        "Type": "Warrior teacher",
+        "Setting": "Isle of Skye",
+        "Motif": "Leap and spear"
+      }
+    },
+    "Twm Siôn Cati": {
+      "priority": 286,
+      "image": "legend-images/twm-sion-cati-hero.jpg",
+      "alt": "Twm Si?n Cati emerging from his Dinas Hill cave while pursuers search the Welsh uplands below",
+      "caption": "A visual interpretation of Twm Si?n Cati outwitting the sheriffs",
+      "map_title": "Dinas Hill, Wales",
+      "section_heading": "The rogue in the cave",
+      "pullquote": "tricked sheriffs from his Dinas Hill cave",
+      "facts": {
+        "Tradition": "Welsh outlaw lore",
+        "Type": "Clever rogue",
+        "Setting": "Dinas Hill",
+        "Motif": "Trickery and pardon"
       }
     }
   }

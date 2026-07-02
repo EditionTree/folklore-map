@@ -1,4 +1,43 @@
 (function(){
+  function readJsonStorage(key, fallback){
+    try{
+      var raw=localStorage.getItem(key);
+      return raw?JSON.parse(raw):fallback;
+    }catch(error){
+      return fallback;
+    }
+  }
+
+  function writeJsonStorage(key, value){
+    try{
+      localStorage.setItem(key, JSON.stringify(value));
+    }catch(error){}
+  }
+
+  function markLegendVisited(){
+    var title=document.getElementById('legend-title')||document.querySelector('article.card h1');
+    if(!title)return;
+    var name=(title.textContent||'').trim();
+    if(!name)return;
+
+    var now=new Date();
+    var visited=readJsonStorage('ff_visited_legends_v1',{});
+    var previous=visited[name]||{};
+    visited[name]={
+      firstVisited:previous.firstVisited||now.toISOString(),
+      lastVisited:now.toISOString(),
+      count:(Number(previous.count)||0)+1,
+      url:location.pathname.replace(/\/$/,'')
+    };
+    writeJsonStorage('ff_visited_legends_v1', visited);
+
+    var behaviour=readJsonStorage('ff_behaviour_v1',{});
+    if(now.getHours()<5)behaviour.afterMidnight=true;
+    writeJsonStorage('ff_behaviour_v1', behaviour);
+  }
+
+  markLegendVisited();
+
   var mapElement=document.getElementById('miniMap');
   if(mapElement&&window.L){
     var latitude=Number(mapElement.dataset.lat);

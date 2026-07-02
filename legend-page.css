@@ -317,7 +317,6 @@ h1{
 .source-list{list-style:none;margin:13px 0 0;padding:0}
 .source-list li+li{margin-top:7px}
 .source-list a{color:var(--rust-dark);font-size:13px}
-.source-tier{color:#78664e;font-size:12px;font-style:italic}
 .editor-note{
   margin:30px 0 4px;
   padding:18px 22px;

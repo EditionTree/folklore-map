@@ -185,6 +185,14 @@ h1{
   line-height:.93;
   text-wrap:balance;
 }
+.pronunciation{
+  margin:6px 0 0;
+  font-family:'Spectral',serif;
+  font-size:14px;
+  font-style:italic;
+  color:#c9bda8;
+  letter-spacing:.02em;
+}
 .standfirst{
   max-width:530px;
   margin:22px 0 0;

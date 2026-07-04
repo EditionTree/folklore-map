@@ -1,0 +1,1111 @@
+{
+  "_README": "EDIT THIS FILE BY HAND to shape the achievements feature - no code needed. The mockup page (achievements-mockup.html) renders straight from here, so any change you save shows up on refresh. Fields you'll usually touch: name, req (the short line on the badge), description (longer flavour text), availability, icon.emoji (placeholder) / icon.file (path Codex fills with a generated icon). 'id' is the stable key - keep it unique and DON'T rename it once an icon or save-data is tied to it. 'criteria' is the machine-readable unlock rule for when the feature is built; leave it unless you're changing what triggers the badge. 'hidden:true' marks a secret/easter-egg badge. 'availability.status:draft' means the achievement is designed but should not be shown on the live page until its required legends/tags exist. 'note' carries any feasibility caveat. To add a badge: copy an item, give it a new id. To remove one: delete the item.",
+  "_criteria_help": {
+    "count": "{type:count, scope:total|category|region|tag, value:<cat/region/tag>, n:<number>} - or {all:true} instead of n to mean 'every one'",
+    "regions_all": "{type:regions_all, values:[...] } - visit at least one in each listed region tag",
+    "category_all": "{type:category_all} - visit at least one legend in every category",
+    "specific": "{type:specific, names:[...]} exact entry name(s), or {match:'kelpie'} to match any entry by name/tag substring",
+    "behaviour": "{type:behaviour, kind:after_midnight|streak|visits, days/n:<number>} - client-side behaviour, not legend data"
+  },
+  "sections": [
+    {
+      "id": "milestones",
+      "title": "The Tale-Keeper's Path",
+      "items": [
+        {
+          "id": "folklore-finder",
+          "name": "Folklore Finder",
+          "req": "Visit 1 legend",
+          "description": "Your first step into the folklore of Britain and Ireland.",
+          "icon": {
+            "emoji": "📜",
+            "file": "assets/achievements/wax-seals-v2/achievement-folklore-finder.png"
+          },
+          "criteria": {
+            "type": "count",
+            "scope": "total",
+            "n": 1
+          }
+        },
+        {
+          "id": "folklore-fanatic",
+          "name": "Folklore Fanatic",
+          "req": "Visit 10 legends",
+          "description": "Ten tales in. The stories are starting to take hold.",
+          "icon": {
+            "emoji": "📖",
+            "file": "assets/achievements/wax-seals-v2/achievement-folklore-fanatic.png"
+          },
+          "criteria": {
+            "type": "count",
+            "scope": "total",
+            "n": 10
+          }
+        },
+        {
+          "id": "folklore-fellow",
+          "name": "Folklore Fellow",
+          "req": "Visit 50 legends",
+          "description": "A serious student of the strange and the storied.",
+          "icon": {
+            "emoji": "🗝️",
+            "file": "assets/achievements/wax-seals-v2/achievement-folklore-fellow.png"
+          },
+          "criteria": {
+            "type": "count",
+            "scope": "total",
+            "n": 50
+          }
+        },
+        {
+          "id": "friend-of-the-fae",
+          "name": "Friend of the Fae",
+          "req": "Visit 100 legends",
+          "description": "A hundred legends walked. The Good Folk know your name.",
+          "icon": {
+            "emoji": "🧚",
+            "file": "assets/achievements/wax-seals-v2/achievement-friend-of-the-fae.png"
+          },
+          "criteria": {
+            "type": "count",
+            "scope": "total",
+            "n": 100
+          }
+        },
+        {
+          "id": "keeper-of-tales",
+          "name": "Keeper of Tales",
+          "req": "Visit 250 legends",
+          "description": "You carry a quarter of the whole map's lore.",
+          "icon": {
+            "emoji": "🕯️",
+            "file": "assets/achievements/wax-seals-v2/achievement-keeper-of-tales.png"
+          },
+          "criteria": {
+            "type": "count",
+            "scope": "total",
+            "n": 250
+          }
+        },
+        {
+          "id": "mythwalker",
+          "name": "Mythwalker",
+          "req": "Visit 500 legends",
+          "description": "Few ever walk so far into the old stories.",
+          "icon": {
+            "emoji": "🌌",
+            "file": "assets/achievements/wax-seals-v2/achievement-mythwalker.png"
+          },
+          "criteria": {
+            "type": "count",
+            "scope": "total",
+            "n": 500
+          }
+        },
+        {
+          "id": "loremaster",
+          "name": "Loremaster",
+          "req": "Visit all 600 legends",
+          "description": "Every legend on the map, visited. The whole atlas of wonder is yours.",
+          "icon": {
+            "emoji": "👑",
+            "file": "assets/achievements/wax-seals-v2/achievement-loremaster.png"
+          },
+          "criteria": {
+            "type": "count",
+            "scope": "total",
+            "all": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "geographic",
+      "title": "Across the Isles",
+      "items": [
+        {
+          "id": "four-nations",
+          "name": "Four Nations, One Story",
+          "req": "A legend in every UK nation",
+          "description": "England, Scotland, Wales and Northern Ireland — the whole of the UK in tales.",
+          "icon": {
+            "emoji": "🇬🇧",
+            "file": "assets/achievements/wax-seals-v2/achievement-four-nations.png"
+          },
+          "criteria": {
+            "type": "regions_all",
+            "values": [
+              "england",
+              "scotland",
+              "wales",
+              "northern-ireland"
+            ]
+          }
+        },
+        {
+          "id": "isles-of-wonder",
+          "name": "Isles of Wonder",
+          "req": "England, Scotland, Wales, Ireland & NI",
+          "description": "All five regions of Britain and Ireland represented in your finds.",
+          "icon": {
+            "emoji": "🌍",
+            "file": "assets/achievements/wax-seals-v2/achievement-isles-of-wonder.png"
+          },
+          "criteria": {
+            "type": "regions_all",
+            "values": [
+              "england",
+              "scotland",
+              "wales",
+              "ireland",
+              "northern-ireland"
+            ]
+          }
+        },
+        {
+          "id": "kernow-to-caledonia",
+          "name": "From Kernow to Caledonia",
+          "req": "A legend in Cornwall & Scotland",
+          "description": "From the tip of Cornwall to the Highlands of Scotland.",
+          "icon": {
+            "emoji": "🧭",
+            "file": "assets/achievements/wax-seals-v2/achievement-kernow-to-caledonia.png"
+          },
+          "criteria": {
+            "type": "regions_all",
+            "values": [
+              "cornwall",
+              "scotland"
+            ]
+          }
+        },
+        {
+          "id": "unicorn",
+          "name": "Unicorn",
+          "req": "Visit 25 Scottish legends",
+          "description": "Twenty-five tales of Scotland, land of the chained unicorn.",
+          "icon": {
+            "emoji": "🦄",
+            "file": "assets/achievements/wax-seals-v2/achievement-unicorn.png"
+          },
+          "criteria": {
+            "type": "count",
+            "scope": "region",
+            "value": "scotland",
+            "n": 25
+          }
+        },
+        {
+          "id": "y-ddraig-goch",
+          "name": "Y Ddraig Goch",
+          "req": "Visit 25 Welsh legends",
+          "description": "Twenty-five tales of Wales, the land of the red dragon.",
+          "icon": {
+            "emoji": "🐉",
+            "file": "assets/achievements/wax-seals-v2/achievement-y-ddraig-goch.png"
+          },
+          "criteria": {
+            "type": "count",
+            "scope": "region",
+            "value": "wales",
+            "n": 25
+          }
+        },
+        {
+          "id": "gogmagog",
+          "name": "Gogmagog",
+          "req": "Visit 25 English legends",
+          "description": "Twenty-five tales of England and its giants of old.",
+          "icon": {
+            "emoji": "🗿",
+            "file": "assets/achievements/wax-seals-v2/achievement-gogmagog.png"
+          },
+          "criteria": {
+            "type": "count",
+            "scope": "region",
+            "value": "england",
+            "n": 25
+          }
+        },
+        {
+          "id": "child-of-eire",
+          "name": "Child of Éire",
+          "req": "Visit 25 Irish legends",
+          "description": "Twenty-five tales of Ireland and its people of the mounds.",
+          "icon": {
+            "emoji": "☘️",
+            "file": "assets/achievements/wax-seals-v2/achievement-child-of-eire.png"
+          },
+          "criteria": {
+            "type": "count",
+            "scope": "region",
+            "value": "ireland",
+            "n": 25
+          }
+        },
+        {
+          "id": "red-hand-wanderer",
+          "name": "Red Hand Wanderer",
+          "req": "Visit 5 Northern Irish legends",
+          "description": "Tales from the six counties under the Red Hand of Ulster.",
+          "icon": {
+            "emoji": "🤚",
+            "file": "assets/achievements/wax-seals-v2/achievement-red-hand-wanderer.png"
+          },
+          "criteria": {
+            "type": "count",
+            "scope": "region",
+            "value": "northern-ireland",
+            "n": 5
+          },
+          "note": "Threshold set to 5 because only ~9 NI entries exist; raise as NI coverage grows (it's now a research priority)."
+        }
+      ]
+    },
+    {
+      "id": "creatures",
+      "title": "Bestiary & Otherworld",
+      "items": [
+        {
+          "id": "beast-hunter",
+          "name": "Beast Hunter",
+          "req": "Visit 10 beasts",
+          "description": "Ten monsters tracked across the isles.",
+          "icon": {
+            "emoji": "🐾",
+            "file": "assets/achievements/wax-seals-v2/achievement-beast-hunter.png"
+          },
+          "criteria": {
+            "type": "count",
+            "scope": "category",
+            "value": "beast",
+            "n": 10
+          }
+        },
+        {
+          "id": "monster-manual",
+          "name": "Monster Manual",
+          "req": "Visit 20 beasts",
+          "description": "A growing bestiary of British and Irish creatures.",
+          "icon": {
+            "emoji": "📕",
+            "file": "assets/achievements/wax-seals-v2/achievement-monster-manual.png"
+          },
+          "criteria": {
+            "type": "count",
+            "scope": "category",
+            "value": "beast",
+            "n": 20
+          }
+        },
+        {
+          "id": "cryptozoologist",
+          "name": "Cryptozoologist",
+          "req": "Visit 30 beasts",
+          "description": "You hunt the creatures that science forgot.",
+          "icon": {
+            "emoji": "🔬",
+            "file": "assets/achievements/wax-seals-v2/achievement-cryptozoologist.png"
+          },
+          "criteria": {
+            "type": "count",
+            "scope": "category",
+            "value": "beast",
+            "n": 30
+          }
+        },
+        {
+          "id": "here-be-monsters",
+          "name": "Here Be Monsters",
+          "req": "Visit 50 beasts",
+          "description": "The edges of the map, where the monsters are.",
+          "icon": {
+            "emoji": "🐲",
+            "file": "assets/achievements/wax-seals/achievement-here-be-monsters.png"
+          },
+          "criteria": {
+            "type": "count",
+            "scope": "category",
+            "value": "beast",
+            "n": 50
+          },
+          "note": "Needs the beast category to grow past 50; widen criteria if it stalls.",
+          "availability": {
+            "status": "draft",
+            "reason": "Current dataset has 45 beast-category legends; keep hidden until there are at least 50 or criteria are widened."
+          }
+        },
+        {
+          "id": "padfoot",
+          "name": "Padfoot",
+          "req": "Visit 3 black dogs",
+          "description": "Three of the spectral hounds that haunt the lonely roads.",
+          "icon": {
+            "emoji": "🐕",
+            "file": "assets/achievements/wax-seals/achievement-padfoot.png"
+          },
+          "criteria": {
+            "type": "count",
+            "scope": "tag",
+            "value": "black-dog",
+            "n": 3
+          },
+          "note": "Needs a consistent 'black-dog' tag on the relevant entries (Black Shuck, Barghest, Gwyllgi, Padfoot, etc.).",
+          "availability": {
+            "status": "draft",
+            "reason": "Requires a consistent black-dog tag on relevant legends before it can evaluate correctly."
+          },
+          "hidden": true,
+          "visibility": {
+            "locked": "on_progress",
+            "lockedName": "Undiscovered achievement",
+            "lockedReq": "Progress started"
+          }
+        },
+        {
+          "id": "houndmaster",
+          "name": "Houndmaster",
+          "req": "Visit 10 black dogs",
+          "description": "The whole spectral pack answers to you.",
+          "icon": {
+            "emoji": "🐺",
+            "file": "assets/achievements/wax-seals/achievement-houndmaster.png"
+          },
+          "criteria": {
+            "type": "count",
+            "scope": "tag",
+            "value": "black-dog",
+            "n": 10
+          },
+          "note": "~9 black-dog entries exist; needs one more, or lower to 9.",
+          "availability": {
+            "status": "draft",
+            "reason": "Needs the black-dog tag plus enough tagged entries for the 10-legend tier."
+          },
+          "hidden": true,
+          "visibility": {
+            "locked": "on_progress",
+            "lockedName": "Undiscovered achievement",
+            "lockedReq": "Progress started"
+          }
+        },
+        {
+          "id": "the-wild-hunt",
+          "name": "The Wild Hunt",
+          "req": "Visit every black dog",
+          "description": "Every phantom hound on the map, run to ground.",
+          "icon": {
+            "emoji": "🌙",
+            "file": "assets/achievements/wax-seals/achievement-the-wild-hunt.png"
+          },
+          "hidden": true,
+          "criteria": {
+            "type": "count",
+            "scope": "tag",
+            "value": "black-dog",
+            "all": true
+          },
+          "availability": {
+            "status": "draft",
+            "reason": "Needs the final black-dog set tagged before an all-black-dogs achievement can be fair."
+          },
+          "visibility": {
+            "locked": "on_progress",
+            "lockedName": "Undiscovered achievement",
+            "lockedReq": "Progress started"
+          }
+        },
+        {
+          "id": "fairy-whisperer",
+          "name": "Fairy Whisperer",
+          "req": "Visit 10 fae",
+          "description": "Ten of the Fair Folk and their kin.",
+          "icon": {
+            "emoji": "🧚",
+            "file": "assets/achievements/wax-seals-v2/achievement-fairy-whisperer.png"
+          },
+          "criteria": {
+            "type": "count",
+            "scope": "category",
+            "value": "fairy",
+            "n": 10
+          }
+        },
+        {
+          "id": "friend-of-the-fair-folk",
+          "name": "Friend of the Fair Folk",
+          "req": "Visit 20 fae",
+          "description": "You know to leave milk out and never say thanks.",
+          "icon": {
+            "emoji": "🍄",
+            "file": "assets/achievements/wax-seals-v2/achievement-friend-of-the-fair-folk.png"
+          },
+          "criteria": {
+            "type": "count",
+            "scope": "category",
+            "value": "fairy",
+            "n": 20
+          }
+        },
+        {
+          "id": "dont-eat-the-food",
+          "name": "Don't Eat the Food",
+          "req": "Visit 30 fae",
+          "description": "Thirty tales of Faerie — and you've not been trapped yet.",
+          "icon": {
+            "emoji": "🍽️",
+            "file": "assets/achievements/wax-seals-v2/achievement-dont-eat-the-food.png"
+          },
+          "criteria": {
+            "type": "count",
+            "scope": "category",
+            "value": "fairy",
+            "n": 30
+          }
+        },
+        {
+          "id": "court-of-summer",
+          "name": "Court of Summer",
+          "req": "Visit 50 fae",
+          "description": "You have walked deep into the courts of the Fair Folk.",
+          "icon": {
+            "emoji": "👑",
+            "file": "assets/achievements/wax-seals-v2/achievement-court-of-summer.png"
+          },
+          "criteria": {
+            "type": "count",
+            "scope": "category",
+            "value": "fairy",
+            "n": 50
+          }
+        },
+        {
+          "id": "boo",
+          "name": "Boo!",
+          "req": "Visit 10 ghosts",
+          "description": "Ten restless spirits met and noted.",
+          "icon": {
+            "emoji": "👻",
+            "file": "assets/achievements/wax-seals-v2/achievement-boo.png"
+          },
+          "criteria": {
+            "type": "count",
+            "scope": "category",
+            "value": "ghost",
+            "n": 10
+          }
+        },
+        {
+          "id": "casper-catcher",
+          "name": "Casper Catcher",
+          "req": "Visit 20 ghosts",
+          "description": "Twenty hauntings — friendly and otherwise.",
+          "icon": {
+            "emoji": "📡",
+            "file": "assets/achievements/wax-seals-v2/achievement-casper-catcher.png"
+          },
+          "criteria": {
+            "type": "count",
+            "scope": "category",
+            "value": "ghost",
+            "n": 20
+          }
+        },
+        {
+          "id": "who-you-gonna-call",
+          "name": "Who You Gonna Call?",
+          "req": "Visit 30 ghosts",
+          "description": "Thirty spectres. You're the one they call for.",
+          "icon": {
+            "emoji": "☎️",
+            "file": "assets/achievements/wax-seals-v2/achievement-who-you-gonna-call.png"
+          },
+          "criteria": {
+            "type": "count",
+            "scope": "category",
+            "value": "ghost",
+            "n": 30
+          }
+        },
+        {
+          "id": "spirit-medium",
+          "name": "Spirit Medium",
+          "req": "Visit 50 ghosts",
+          "description": "Fifty ghosts. The veil is thin where you walk.",
+          "icon": {
+            "emoji": "🔮",
+            "file": "assets/achievements/wax-seals-v2/achievement-spirit-medium.png"
+          },
+          "criteria": {
+            "type": "count",
+            "scope": "category",
+            "value": "ghost",
+            "n": 50
+          }
+        }
+      ]
+    },
+    {
+      "id": "sacred-sites",
+      "title": "Old Stones & Sacred Places",
+      "items": [
+        {
+          "id": "pilgrim",
+          "name": "Pilgrim",
+          "req": "Visit 10 sacred sites",
+          "description": "Ten holy and ancient places visited.",
+          "icon": {
+            "emoji": "⛰️",
+            "file": "assets/achievements/wax-seals/achievement-pilgrim.png"
+          },
+          "criteria": {
+            "type": "count",
+            "scope": "category",
+            "value": "ancient_site",
+            "n": 10
+          },
+          "availability": {
+            "status": "draft",
+            "reason": "Sacred-site criteria currently point at ancient_site, but the live dataset has no ancient_site category."
+          }
+        },
+        {
+          "id": "antiquarian",
+          "name": "Antiquarian",
+          "req": "Visit 25 sacred sites",
+          "description": "A connoisseur of stones, wells and old places.",
+          "icon": {
+            "emoji": "📯",
+            "file": "assets/achievements/wax-seals/achievement-antiquarian.png"
+          },
+          "criteria": {
+            "type": "count",
+            "scope": "category",
+            "value": "ancient_site",
+            "n": 25
+          },
+          "availability": {
+            "status": "draft",
+            "reason": "Sacred-site criteria currently point at ancient_site, but the live dataset has no ancient_site category."
+          }
+        },
+        {
+          "id": "stone-whisperer",
+          "name": "Stone Whisperer",
+          "req": "Visit 50 sacred sites",
+          "description": "You hear what the old stones remember.",
+          "icon": {
+            "emoji": "🪨",
+            "file": "assets/achievements/wax-seals/achievement-stone-whisperer.png"
+          },
+          "criteria": {
+            "type": "count",
+            "scope": "category",
+            "value": "ancient_site",
+            "n": 50
+          },
+          "note": "~34 ancient_site entries; widen to relevant 'location' sites or lower the tier.",
+          "availability": {
+            "status": "draft",
+            "reason": "Sacred-site criteria need a real sacred-site category or tag set before this tier can be shown."
+          }
+        },
+        {
+          "id": "keeper-of-the-old-ways",
+          "name": "Keeper of the Old Ways",
+          "req": "Visit every sacred site",
+          "description": "Every ancient place on the map, honoured.",
+          "icon": {
+            "emoji": "🕯️",
+            "file": "assets/achievements/wax-seals/achievement-keeper-of-the-old-ways.png"
+          },
+          "hidden": true,
+          "criteria": {
+            "type": "count",
+            "scope": "category",
+            "value": "ancient_site",
+            "all": true
+          },
+          "availability": {
+            "status": "draft",
+            "reason": "Needs the final sacred-site set defined before an all-sacred-sites achievement can be fair."
+          },
+          "visibility": {
+            "locked": "on_progress",
+            "lockedName": "Undiscovered achievement",
+            "lockedReq": "Progress started"
+          }
+        }
+      ]
+    },
+    {
+      "id": "figures",
+      "title": "Heroes, Outlaws & Sovereigns",
+      "items": [
+        {
+          "id": "once-and-future-king",
+          "name": "The Once and Future King",
+          "req": "Visit King Arthur",
+          "description": "The king who was, and the king who shall be.",
+          "icon": {
+            "emoji": "⚔️",
+            "file": "assets/achievements/wax-seals/achievement-once-and-future-king.png"
+          },
+          "hidden": true,
+          "criteria": {
+            "type": "specific",
+            "names": [
+              "King Arthur"
+            ]
+          },
+          "visibility": {
+            "locked": "on_unlock"
+          }
+        },
+        {
+          "id": "wizard-business",
+          "name": "Wizard Business",
+          "req": "Visit Merlin",
+          "description": "The great enchanter of the Arthurian world.",
+          "icon": {
+            "emoji": "🪄",
+            "file": "assets/achievements/wax-seals/achievement-wizard-business.png"
+          },
+          "hidden": true,
+          "criteria": {
+            "type": "specific",
+            "names": [
+              "Merlin"
+            ]
+          },
+          "note": "Confirm whether Merlin / Merlin's Cave / Merlin's Oak all count.",
+          "visibility": {
+            "locked": "on_unlock"
+          }
+        },
+        {
+          "id": "nice-tights",
+          "name": "Nice Tights",
+          "req": "Visit Robin Hood",
+          "description": "The outlaw of Sherwood, robbing rich for poor.",
+          "icon": {
+            "emoji": "🏹",
+            "file": "assets/achievements/wax-seals/achievement-nice-tights.png"
+          },
+          "hidden": true,
+          "criteria": {
+            "type": "specific",
+            "names": [
+              "Robin Hood"
+            ]
+          },
+          "visibility": {
+            "locked": "on_unlock"
+          }
+        },
+        {
+          "id": "merry-companion",
+          "name": "Merry Companion",
+          "req": "Visit Maid Marian",
+          "description": "Robin Hood's match in the greenwood.",
+          "icon": {
+            "emoji": "🎀",
+            "file": "assets/achievements/wax-seals/achievement-merry-companion.png"
+          },
+          "hidden": true,
+          "criteria": {
+            "type": "specific",
+            "names": [
+              "Maid Marian"
+            ]
+          },
+          "note": "No 'Maid Marian' entry exists yet — add one or drop this badge.",
+          "availability": {
+            "status": "draft",
+            "reason": "Maid Marian is a planned research candidate; keep hidden until that legend exists."
+          },
+          "visibility": {
+            "locked": "on_unlock"
+          }
+        },
+        {
+          "id": "giant-slayer",
+          "name": "Giant Slayer",
+          "req": "Visit Guy of Warwick",
+          "description": "The hero who felled the giant Colbrand.",
+          "icon": {
+            "emoji": "🛡️",
+            "file": "assets/achievements/wax-seals/achievement-giant-slayer.png"
+          },
+          "hidden": true,
+          "criteria": {
+            "type": "specific",
+            "names": [
+              "Guy of Warwick"
+            ]
+          },
+          "visibility": {
+            "locked": "on_unlock"
+          }
+        },
+        {
+          "id": "dead-men-tell-no-tales",
+          "name": "Dead Men Tell No Tales",
+          "req": "Visit Blackbeard",
+          "description": "The most fearsome image of the pirate age.",
+          "icon": {
+            "emoji": "🏴‍☠️",
+            "file": "assets/achievements/wax-seals/achievement-dead-men-tell-no-tales.png"
+          },
+          "hidden": true,
+          "criteria": {
+            "type": "specific",
+            "names": [
+              "Blackbeard"
+            ]
+          },
+          "visibility": {
+            "locked": "on_unlock"
+          }
+        },
+        {
+          "id": "pirate-queen",
+          "name": "Pirate Queen",
+          "req": "Visit Grace O'Malley",
+          "description": "Gráinne Mhaol, the sea-queen of Connacht.",
+          "icon": {
+            "emoji": "👑",
+            "file": "assets/achievements/wax-seals/achievement-pirate-queen.png"
+          },
+          "hidden": true,
+          "criteria": {
+            "type": "specific",
+            "names": [
+              "Grace O'Malley"
+            ]
+          },
+          "visibility": {
+            "locked": "on_unlock"
+          }
+        },
+        {
+          "id": "giants-causeway",
+          "name": "Giant's Causeway",
+          "req": "Visit Fionn mac Cumhaill",
+          "description": "The giant-hero who built the causeway to Scotland.",
+          "icon": {
+            "emoji": "🌉",
+            "file": "assets/achievements/wax-seals/achievement-giants-causeway.png"
+          },
+          "hidden": true,
+          "criteria": {
+            "type": "specific",
+            "names": [
+              "Fionn mac Cumhaill"
+            ]
+          },
+          "visibility": {
+            "locked": "on_unlock"
+          }
+        },
+        {
+          "id": "horned-one",
+          "name": "Horned One",
+          "req": "Visit Herne the Hunter",
+          "description": "The antlered spectre of Windsor Forest.",
+          "icon": {
+            "emoji": "🦌",
+            "file": "assets/achievements/wax-seals/achievement-horned-one.png"
+          },
+          "hidden": true,
+          "criteria": {
+            "type": "specific",
+            "names": [
+              "Herne the Hunter"
+            ]
+          },
+          "visibility": {
+            "locked": "on_unlock"
+          }
+        }
+      ]
+    },
+    {
+      "id": "encounters",
+      "title": "Strange Encounters",
+      "items": [
+        {
+          "id": "simia-ingrata",
+          "name": "Simia Ingrata",
+          "req": "Visit the Hartlepool Monkey",
+          "description": "The monkey they hanged as a French spy.",
+          "icon": {
+            "emoji": "🐒",
+            "file": "assets/achievements/wax-seals/achievement-simia-ingrata.png"
+          },
+          "hidden": true,
+          "criteria": {
+            "type": "specific",
+            "names": [
+              "Hartlepool Monkey"
+            ]
+          },
+          "visibility": {
+            "locked": "on_unlock"
+          }
+        },
+        {
+          "id": "bigger-camera",
+          "name": "We Need a Bigger Camera",
+          "req": "Visit the Loch Ness Monster",
+          "description": "Always just out of focus.",
+          "icon": {
+            "emoji": "📷",
+            "file": "assets/achievements/wax-seals/achievement-bigger-camera.png"
+          },
+          "hidden": true,
+          "criteria": {
+            "type": "specific",
+            "names": [
+              "The Loch Ness Monster"
+            ]
+          },
+          "visibility": {
+            "locked": "on_unlock"
+          }
+        },
+        {
+          "id": "lead-a-horse",
+          "name": "You Can Lead a Horse to Water...",
+          "req": "Visit a Kelpie",
+          "description": "...but don't let it lead you in.",
+          "icon": {
+            "emoji": "🐴",
+            "file": "assets/achievements/wax-seals/achievement-lead-a-horse.png"
+          },
+          "hidden": true,
+          "criteria": {
+            "type": "specific",
+            "match": "kelpie"
+          },
+          "visibility": {
+            "locked": "on_unlock"
+          }
+        },
+        {
+          "id": "near-the-water",
+          "name": "Don't Go Near the Water",
+          "req": "Visit Jenny Greenteeth",
+          "description": "The green-haired hag who pulls children under.",
+          "icon": {
+            "emoji": "🌊",
+            "file": "assets/achievements/wax-seals/achievement-near-the-water.png"
+          },
+          "hidden": true,
+          "criteria": {
+            "type": "specific",
+            "names": [
+              "Jenny Greenteeth"
+            ]
+          },
+          "visibility": {
+            "locked": "on_unlock"
+          }
+        },
+        {
+          "id": "keep-the-hat-red",
+          "name": "Keep the Hat Red",
+          "req": "Visit a Redcap",
+          "description": "The Border goblin who dyes his cap in blood.",
+          "icon": {
+            "emoji": "🧢",
+            "file": "assets/achievements/wax-seals/achievement-keep-the-hat-red.png"
+          },
+          "hidden": true,
+          "criteria": {
+            "type": "specific",
+            "match": "redcap"
+          },
+          "visibility": {
+            "locked": "on_unlock"
+          }
+        },
+        {
+          "id": "good-dog",
+          "name": "Good Dog?",
+          "req": "Visit Black Shuck",
+          "description": "The spectral hound of the East Anglian coast.",
+          "icon": {
+            "emoji": "🐕‍🦺",
+            "file": "assets/achievements/wax-seals/achievement-good-dog.png"
+          },
+          "hidden": true,
+          "criteria": {
+            "type": "specific",
+            "names": [
+              "Black Shuck"
+            ]
+          },
+          "visibility": {
+            "locked": "on_unlock"
+          }
+        },
+        {
+          "id": "thats-moved-again",
+          "name": "That's Moved Again",
+          "req": "Visit a Boggart",
+          "description": "You can't flit from a boggart — it comes too.",
+          "icon": {
+            "emoji": "📦",
+            "file": "assets/achievements/wax-seals/achievement-thats-moved-again.png"
+          },
+          "hidden": true,
+          "criteria": {
+            "type": "specific",
+            "match": "boggart"
+          },
+          "visibility": {
+            "locked": "on_unlock"
+          }
+        },
+        {
+          "id": "are-you-sure",
+          "name": "Are You Sure?",
+          "req": "Visit a Changeling",
+          "description": "Is that really your child in the cradle?",
+          "icon": {
+            "emoji": "🔄",
+            "file": "assets/achievements/wax-seals/achievement-are-you-sure.png"
+          },
+          "hidden": true,
+          "criteria": {
+            "type": "specific",
+            "match": "changeling"
+          },
+          "visibility": {
+            "locked": "on_unlock"
+          }
+        },
+        {
+          "id": "follow-the-light",
+          "name": "Follow the Light",
+          "req": "Visit a Will-o'-the-Wisp",
+          "description": "The marsh-light that leads the unwary astray.",
+          "icon": {
+            "emoji": "🔥",
+            "file": "assets/achievements/wax-seals/achievement-follow-the-light.png"
+          },
+          "hidden": true,
+          "criteria": {
+            "type": "specific",
+            "match": "will-o"
+          },
+          "visibility": {
+            "locked": "on_unlock"
+          }
+        },
+        {
+          "id": "wrong-neighbourhood",
+          "name": "Wrong Neighbourhood",
+          "req": "Visit a Barghest",
+          "description": "The death-dog of the northern towns.",
+          "icon": {
+            "emoji": "🚪",
+            "file": "assets/achievements/wax-seals/achievement-wrong-neighbourhood.png"
+          },
+          "hidden": true,
+          "criteria": {
+            "type": "specific",
+            "match": "barghest"
+          },
+          "visibility": {
+            "locked": "on_unlock"
+          }
+        }
+      ]
+    },
+    {
+      "id": "journey",
+      "title": "The Traveller's Ledger",
+      "items": [
+        {
+          "id": "witching-hour",
+          "name": "Witching Hour",
+          "req": "Visit a legend after midnight",
+          "description": "You walk the map when the veil is thinnest.",
+          "icon": {
+            "emoji": "🌒",
+            "file": "assets/achievements/wax-seals-v2/achievement-witching-hour.png"
+          },
+          "criteria": {
+            "type": "behaviour",
+            "kind": "after_midnight"
+          }
+        },
+        {
+          "id": "tale-chaser",
+          "name": "Tale Chaser",
+          "req": "Visit legends 7 days running",
+          "description": "A week of unbroken wandering.",
+          "icon": {
+            "emoji": "🔥",
+            "file": "assets/achievements/wax-seals-v2/achievement-tale-chaser.png"
+          },
+          "criteria": {
+            "type": "behaviour",
+            "kind": "streak",
+            "days": 7
+          }
+        },
+        {
+          "id": "folklore-obsessive",
+          "name": "Folklore Obsessive",
+          "req": "Visit legends 30 days running",
+          "description": "A month without missing a day.",
+          "icon": {
+            "emoji": "📅",
+            "file": "assets/achievements/wax-seals-v2/achievement-folklore-obsessive.png"
+          },
+          "criteria": {
+            "type": "behaviour",
+            "kind": "streak",
+            "days": 30
+          }
+        },
+        {
+          "id": "local-legend",
+          "name": "Local Legend",
+          "req": "Visit the map 100 times",
+          "description": "You've become a fixture of these isles yourself.",
+          "icon": {
+            "emoji": "🧭",
+            "file": "assets/achievements/wax-seals-v2/achievement-local-legend.png"
+          },
+          "criteria": {
+            "type": "behaviour",
+            "kind": "visits",
+            "n": 100
+          }
+        },
+        {
+          "id": "jack-of-all-tales",
+          "name": "Jack of All Tales",
+          "req": "A legend from every category",
+          "description": "At least one find from each kind of strangeness.",
+          "icon": {
+            "emoji": "🎭",
+            "file": "assets/achievements/wax-seals-v2/achievement-jack-of-all-tales.png"
+          },
+          "criteria": {
+            "type": "category_all"
+          }
+        }
+      ]
+    }
+  ],
+  "_visibility_help": {
+    "visible": "Shown on the achievements page from the start, with progress if applicable.",
+    "on_progress": "Hidden until the user has at least one qualifying visited legend or behaviour event; then shown locked with a progress bar, and fully revealed on unlock.",
+    "on_unlock": "Hidden completely until unlocked; use for single named-legend secrets like King Arthur."
+  }
+}

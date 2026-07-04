@@ -816,6 +816,7 @@ $topnav
           <span class="place">$region</span>
         </div>
         <h1 id="legend-title">$name</h1>
+        $pronunciation
         <p class="standfirst">$standfirst</p>
       </div>
 $hero_caption
@@ -1064,6 +1065,10 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
         catname=esc(catname),
         region=esc(leg.get("region", "")),
         name=esc(name),
+        pronunciation=(
+            f'<p class="pronunciation">{esc(leg.get("pronunciation"))}</p>'
+            if leg.get("pronunciation") else ""
+        ),
         standfirst=esc(inline_text(leg.get("summary", ""))),
         featured_body=featured_body,
         editorial=editorial_html,

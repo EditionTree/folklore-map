@@ -1,0 +1,219 @@
+﻿[
+    {
+        "Section":  "The Tale-Keeper\u0027s Path",
+        "Id":  "folklore-finder",
+        "Name":  "Folklore Finder",
+        "File":  "achievement-folklore-finder.png",
+        "Requirement":  "Visit 1 legend"
+    },
+    {
+        "Section":  "The Tale-Keeper\u0027s Path",
+        "Id":  "folklore-fanatic",
+        "Name":  "Folklore Fanatic",
+        "File":  "achievement-folklore-fanatic.png",
+        "Requirement":  "Visit 10 legends"
+    },
+    {
+        "Section":  "The Tale-Keeper\u0027s Path",
+        "Id":  "folklore-fellow",
+        "Name":  "Folklore Fellow",
+        "File":  "achievement-folklore-fellow.png",
+        "Requirement":  "Visit 50 legends"
+    },
+    {
+        "Section":  "The Tale-Keeper\u0027s Path",
+        "Id":  "friend-of-the-fae",
+        "Name":  "Friend of the Fae",
+        "File":  "achievement-friend-of-the-fae.png",
+        "Requirement":  "Visit 100 legends"
+    },
+    {
+        "Section":  "The Tale-Keeper\u0027s Path",
+        "Id":  "keeper-of-tales",
+        "Name":  "Keeper of Tales",
+        "File":  "achievement-keeper-of-tales.png",
+        "Requirement":  "Visit 250 legends"
+    },
+    {
+        "Section":  "The Tale-Keeper\u0027s Path",
+        "Id":  "mythwalker",
+        "Name":  "Mythwalker",
+        "File":  "achievement-mythwalker.png",
+        "Requirement":  "Visit 500 legends"
+    },
+    {
+        "Section":  "The Tale-Keeper\u0027s Path",
+        "Id":  "loremaster",
+        "Name":  "Loremaster",
+        "File":  "achievement-loremaster.png",
+        "Requirement":  "Visit all 600 legends"
+    },
+    {
+        "Section":  "Across the Isles",
+        "Id":  "four-nations",
+        "Name":  "Four Nations, One Story",
+        "File":  "achievement-four-nations.png",
+        "Requirement":  "A legend in every UK nation"
+    },
+    {
+        "Section":  "Across the Isles",
+        "Id":  "isles-of-wonder",
+        "Name":  "Isles of Wonder",
+        "File":  "achievement-isles-of-wonder.png",
+        "Requirement":  "England, Scotland, Wales, Ireland \u0026 NI"
+    },
+    {
+        "Section":  "Across the Isles",
+        "Id":  "kernow-to-caledonia",
+        "Name":  "From Kernow to Caledonia",
+        "File":  "achievement-kernow-to-caledonia.png",
+        "Requirement":  "A legend in Cornwall \u0026 Scotland"
+    },
+    {
+        "Section":  "Across the Isles",
+        "Id":  "unicorn",
+        "Name":  "Unicorn",
+        "File":  "achievement-unicorn.png",
+        "Requirement":  "Visit 25 Scottish legends"
+    },
+    {
+        "Section":  "Across the Isles",
+        "Id":  "y-ddraig-goch",
+        "Name":  "Y Ddraig Goch",
+        "File":  "achievement-y-ddraig-goch.png",
+        "Requirement":  "Visit 25 Welsh legends"
+    },
+    {
+        "Section":  "Across the Isles",
+        "Id":  "gogmagog",
+        "Name":  "Gogmagog",
+        "File":  "achievement-gogmagog.png",
+        "Requirement":  "Visit 25 English legends"
+    },
+    {
+        "Section":  "Across the Isles",
+        "Id":  "child-of-eire",
+        "Name":  "Child of Ã‰ire",
+        "File":  "achievement-child-of-eire.png",
+        "Requirement":  "Visit 25 Irish legends"
+    },
+    {
+        "Section":  "Across the Isles",
+        "Id":  "red-hand-wanderer",
+        "Name":  "Red Hand Wanderer",
+        "File":  "achievement-red-hand-wanderer.png",
+        "Requirement":  "Visit 5 Northern Irish legends"
+    },
+    {
+        "Section":  "Bestiary \u0026 Otherworld",
+        "Id":  "beast-hunter",
+        "Name":  "Beast Hunter",
+        "File":  "achievement-beast-hunter.png",
+        "Requirement":  "Visit 10 beasts"
+    },
+    {
+        "Section":  "Bestiary \u0026 Otherworld",
+        "Id":  "monster-manual",
+        "Name":  "Monster Manual",
+        "File":  "achievement-monster-manual.png",
+        "Requirement":  "Visit 20 beasts"
+    },
+    {
+        "Section":  "Bestiary \u0026 Otherworld",
+        "Id":  "cryptozoologist",
+        "Name":  "Cryptozoologist",
+        "File":  "achievement-cryptozoologist.png",
+        "Requirement":  "Visit 30 beasts"
+    },
+    {
+        "Section":  "Bestiary \u0026 Otherworld",
+        "Id":  "fairy-whisperer",
+        "Name":  "Fairy Whisperer",
+        "File":  "achievement-fairy-whisperer.png",
+        "Requirement":  "Visit 10 fae"
+    },
+    {
+        "Section":  "Bestiary \u0026 Otherworld",
+        "Id":  "friend-of-the-fair-folk",
+        "Name":  "Friend of the Fair Folk",
+        "File":  "achievement-friend-of-the-fair-folk.png",
+        "Requirement":  "Visit 20 fae"
+    },
+    {
+        "Section":  "Bestiary \u0026 Otherworld",
+        "Id":  "dont-eat-the-food",
+        "Name":  "Don\u0027t Eat the Food",
+        "File":  "achievement-dont-eat-the-food.png",
+        "Requirement":  "Visit 30 fae"
+    },
+    {
+        "Section":  "Bestiary \u0026 Otherworld",
+        "Id":  "court-of-summer",
+        "Name":  "Court of Summer",
+        "File":  "achievement-court-of-summer.png",
+        "Requirement":  "Visit 50 fae"
+    },
+    {
+        "Section":  "Bestiary \u0026 Otherworld",
+        "Id":  "boo",
+        "Name":  "Boo!",
+        "File":  "achievement-boo.png",
+        "Requirement":  "Visit 10 ghosts"
+    },
+    {
+        "Section":  "Bestiary \u0026 Otherworld",
+        "Id":  "casper-catcher",
+        "Name":  "Casper Catcher",
+        "File":  "achievement-casper-catcher.png",
+        "Requirement":  "Visit 20 ghosts"
+    },
+    {
+        "Section":  "Bestiary \u0026 Otherworld",
+        "Id":  "who-you-gonna-call",
+        "Name":  "Who You Gonna Call?",
+        "File":  "achievement-who-you-gonna-call.png",
+        "Requirement":  "Visit 30 ghosts"
+    },
+    {
+        "Section":  "Bestiary \u0026 Otherworld",
+        "Id":  "spirit-medium",
+        "Name":  "Spirit Medium",
+        "File":  "achievement-spirit-medium.png",
+        "Requirement":  "Visit 50 ghosts"
+    },
+    {
+        "Section":  "The Traveller\u0027s Ledger",
+        "Id":  "witching-hour",
+        "Name":  "Witching Hour",
+        "File":  "achievement-witching-hour.png",
+        "Requirement":  "Visit a legend after midnight"
+    },
+    {
+        "Section":  "The Traveller\u0027s Ledger",
+        "Id":  "tale-chaser",
+        "Name":  "Tale Chaser",
+        "File":  "achievement-tale-chaser.png",
+        "Requirement":  "Visit legends 7 days running"
+    },
+    {
+        "Section":  "The Traveller\u0027s Ledger",
+        "Id":  "folklore-obsessive",
+        "Name":  "Folklore Obsessive",
+        "File":  "achievement-folklore-obsessive.png",
+        "Requirement":  "Visit legends 30 days running"
+    },
+    {
+        "Section":  "The Traveller\u0027s Ledger",
+        "Id":  "local-legend",
+        "Name":  "Local Legend",
+        "File":  "achievement-local-legend.png",
+        "Requirement":  "Visit the map 100 times"
+    },
+    {
+        "Section":  "The Traveller\u0027s Ledger",
+        "Id":  "jack-of-all-tales",
+        "Name":  "Jack of All Tales",
+        "File":  "achievement-jack-of-all-tales.png",
+        "Requirement":  "A legend from every category"
+    }
+]

@@ -64,6 +64,17 @@ infers a publisher name from the host and a tier from a known-host map
 (`SOURCE_TIERS` in `generate_pages.py`), showing no label when unsure. List the
 strongest source first.
 
+### Pronunciation (`pronunciation`)
+
+An optional short phonetic hint for legend names that are non-obvious to an
+English reader (Welsh, Irish, Scottish Gaelic, Manx, etc.) — e.g. `"koon
+AN-oon"` for Cŵn Annwn. Rendered as a small line under the legend page's
+title, and omitted entirely when absent (most entries won't have one). Like
+`sources`, it lives in the JSON only (not a Supabase column) — the map doesn't
+need it. **Only add a pronunciation backed by a real source you checked**
+(Forvo, Wiktionary IPA, a BBC/heritage-body guide, etc.) — never a best guess
+from the spelling; leave the field unset rather than guess.
+
 Migrations live in `supabase/migrations/`. The `detail`, `tags` and
 `date_added` columns were added by
 `supabase/migrations/20260612160000_add_legend_detail_tags_date_added.sql`

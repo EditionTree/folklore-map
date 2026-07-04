@@ -4295,8 +4295,8 @@
     "Twm Siôn Cati": {
       "priority": 286,
       "image": "legend-images/twm-sion-cati-hero.jpg",
-      "alt": "Twm Si?n Cati emerging from his Dinas Hill cave while pursuers search the Welsh uplands below",
-      "caption": "A visual interpretation of Twm Si?n Cati outwitting the sheriffs",
+      "alt": "Twm Siôn Cati emerging from his Dinas Hill cave while pursuers search the Welsh uplands below",
+      "caption": "A visual interpretation of Twm Siôn Cati outwitting the sheriffs",
       "map_title": "Dinas Hill, Wales",
       "section_heading": "The rogue in the cave",
       "pullquote": "tricked sheriffs from his Dinas Hill cave",
@@ -4305,6 +4305,396 @@
         "Type": "Clever rogue",
         "Setting": "Dinas Hill",
         "Motif": "Trickery and pardon"
+      }
+    },
+    "Beast of Dean": {
+      "priority": 288,
+      "image": "legend-images/beast-of-dean-hero.jpg",
+      "alt": "A huge black boar-like shadow beast prowling the misty Forest of Dean between ancient trees",
+      "caption": "A visual interpretation of the Beast of Dean haunting the Gloucestershire woods",
+      "map_title": "Forest of Dean, Gloucestershire",
+      "section_heading": "The shadow in the trees",
+      "pullquote": "A shadowy folkloric creature said to haunt the ancient Forest of Dean.",
+      "facts": {
+        "Tradition": "English forest folklore",
+        "Type": "Shadow beast",
+        "Setting": "Forest of Dean",
+        "Motif": "Livestock deaths and strange lights"
+      }
+    },
+    "Black Pig's Dyke": {
+      "priority": 289,
+      "image": "legend-images/black-pig-s-dyke-hero.jpg",
+      "alt": "A colossal black pig tearing a deep furrow through the stormy Ulster borderland",
+      "caption": "A visual interpretation of the transformed black pig that made the dyke",
+      "map_title": "Fermanagh and Armagh border",
+      "section_heading": "The furrow of the black pig",
+      "pullquote": "The earthwork barriers are explained in legend as the furrow torn by a transformed schoolmaster.",
+      "facts": {
+        "Tradition": "Ulster folklore",
+        "Type": "Transformed giant pig",
+        "Setting": "Black Pig's Dyke",
+        "Motif": "Magic, pursuit and earthworks"
+      }
+    },
+    "Dun Cow of Dunsmore Heath": {
+      "priority": 293,
+      "image": "legend-images/dun-cow-of-dunsmore-heath-hero.jpg",
+      "alt": "A gigantic dun cow charging across Warwickshire heath beneath breaking storm clouds",
+      "caption": "A visual interpretation of the giant Dun Cow of Dunsmore Heath",
+      "map_title": "Dunsmore Heath, Warwickshire",
+      "section_heading": "The cow on the heath",
+      "pullquote": "A legendary giant dun cow that terrorised Warwickshire.",
+      "facts": {
+        "Tradition": "English folklore",
+        "Type": "Giant cow",
+        "Setting": "Dunsmore Heath",
+        "Motif": "Enchanted milk and heroic slaying"
+      }
+    },
+    "Fad Felen": {
+      "priority": 294,
+      "image": "legend-images/fad-felen-hero.jpg",
+      "alt": "A yellow mist-serpent rolling down Welsh mountains with a pestilential glow",
+      "caption": "A visual interpretation of Fad Felen, the Yellow Plague",
+      "map_title": "Glamorgan, Wales",
+      "section_heading": "The breath of the plague",
+      "pullquote": "The Yellow Plague was said to take the form of a great serpent or yellow mist.",
+      "facts": {
+        "Tradition": "Welsh folklore",
+        "Type": "Plague creature",
+        "Setting": "Glamorgan mountains",
+        "Motif": "Pestilence breath"
+      }
+    },
+    "Gwyllgi": {
+      "priority": 295,
+      "image": "legend-images/gwyllgi-hero.jpg",
+      "alt": "A shaggy black phantom hound with blazing eyes crouched on a wet Welsh pass road",
+      "caption": "A visual interpretation of the Gwyllgi, the Dog of Darkness",
+      "map_title": "Nant y Garth Pass, Denbighshire",
+      "section_heading": "The dog on the dark road",
+      "pullquote": "The Gwyllgi is a solitary creature of roads and hedgerows.",
+      "facts": {
+        "Tradition": "Welsh folklore",
+        "Type": "Phantom black hound",
+        "Setting": "Nant y Garth Pass",
+        "Motif": "Roadside apparition"
+      }
+    },
+    "Jimmy Squarefoot": {
+      "priority": 296,
+      "image": "legend-images/jimmy-squarefoot-hero.jpg",
+      "alt": "A tusked bipedal white pig creature standing beside the Grenaby river on the Isle of Man",
+      "caption": "A visual interpretation of Jimmy Squarefoot beside the Grenaby river",
+      "map_title": "Grenaby, Isle of Man",
+      "section_heading": "The square-footed thing by the river",
+      "pullquote": "A bipedal, boar-tusked creature once ridden by a stone-throwing giant.",
+      "facts": {
+        "Tradition": "Manx folklore",
+        "Type": "Pig-like beast",
+        "Setting": "Grenaby river",
+        "Motif": "Abduction to a cave"
+      }
+    },
+    "Limavady Leap of the Dog": {
+      "priority": 297,
+      "image": "legend-images/limavady-leap-of-the-dog-hero.jpg",
+      "alt": "A faithful wolfhound leaping the River Roe with a message gripped in its teeth",
+      "caption": "A visual interpretation of the leap that gave Limavady its name",
+      "map_title": "Limavady, County Londonderry",
+      "section_heading": "The leap across the Roe",
+      "pullquote": "The O'Cahan chief's faithful wolfhound leapt the treacherous River Roe with a message in its teeth.",
+      "facts": {
+        "Tradition": "Irish local legend",
+        "Type": "Heroic wolfhound",
+        "Setting": "River Roe",
+        "Motif": "Loyal message bearer"
+      }
+    },
+    "Loch nan Dubhrachan Water Horse": {
+      "priority": 298,
+      "image": "legend-images/loch-nan-dubhrachan-water-horse-hero.jpg",
+      "alt": "A dark each-uisge water horse rising from a black Skye loch with a dripping mane",
+      "caption": "A visual interpretation of the water horse of Loch nan Dubhrachan",
+      "map_title": "Sleat, Isle of Skye",
+      "section_heading": "The horse in the black loch",
+      "pullquote": "A dark loch on Skye's Sleat peninsula was said to be the lair of a vicious each-uisge.",
+      "facts": {
+        "Tradition": "Scottish folklore",
+        "Type": "Water horse",
+        "Setting": "Loch nan Dubhrachan",
+        "Motif": "Loch monster and abduction"
+      }
+    },
+    "Lough Ree Monster": {
+      "priority": 299,
+      "image": "legend-images/lough-ree-monster-hero.jpg",
+      "alt": "A long serpentine lake creature gliding across Lough Ree and leaving an S-shaped wake",
+      "caption": "A visual interpretation of the Lough Ree Monster sighted near Glasson",
+      "map_title": "Lough Ree, Ireland",
+      "section_heading": "The monster lake",
+      "pullquote": "Three priests watched a 20-foot serpentine creature glide across Lough Ree.",
+      "facts": {
+        "Tradition": "Irish cryptid folklore",
+        "Type": "Lake monster",
+        "Setting": "Lough Ree",
+        "Motif": "Modern sighting and older lake lore"
+      }
+    },
+    "Macphie and the Black Dog of Colonsay": {
+      "priority": 300,
+      "image": "legend-images/macphie-and-the-black-dog-of-colonsay-hero.jpg",
+      "alt": "A supernatural black dog standing in a small hunting boat before a rocky Jura cave",
+      "caption": "A visual interpretation of the black dog that sailed with Macphie of Colonsay",
+      "map_title": "Colonsay, Argyll",
+      "section_heading": "The dog in the hunting boat",
+      "pullquote": "A supernatural black dog appeared unbidden in the Laird of Colonsay's hunting boat.",
+      "facts": {
+        "Tradition": "Scottish island folklore",
+        "Type": "Supernatural black dog",
+        "Setting": "Colonsay and Jura",
+        "Motif": "Boat, cave and vanished company"
+      }
+    },
+    "Moddey Dhoo": {
+      "priority": 301,
+      "image": "legend-images/moddey-dhoo-hero.jpg",
+      "alt": "A large black phantom dog materialising in a torchlit stone passage of Peel Castle",
+      "caption": "A visual interpretation of the Moddey Dhoo inside Peel Castle",
+      "map_title": "Peel Castle, Isle of Man",
+      "section_heading": "The dog in the passage",
+      "pullquote": "The Moddey Dhoo is the phantom black dog of Peel Castle.",
+      "facts": {
+        "Tradition": "Manx folklore",
+        "Type": "Phantom black dog",
+        "Setting": "Peel Castle",
+        "Motif": "Castle haunting"
+      }
+    },
+    "Padfoot": {
+      "priority": 302,
+      "image": "legend-images/padfoot-hero.jpg",
+      "alt": "A low shaggy spectral dog following a misty Yorkshire lane with huge padded footprints",
+      "caption": "A visual interpretation of Padfoot following the lonely northern road",
+      "map_title": "Yorkshire",
+      "section_heading": "The padding steps behind you",
+      "pullquote": "A shaggy spectral dog said to follow travellers with soft padding steps.",
+      "facts": {
+        "Tradition": "Northern English folklore",
+        "Type": "Spectral dog",
+        "Setting": "Yorkshire lanes",
+        "Motif": "Warning and threat"
+      }
+    },
+    "Renwick Cockatrice": {
+      "priority": 303,
+      "image": "legend-images/renwick-cockatrice-hero.jpg",
+      "alt": "A winged cockatrice perched on broken Renwick church stone with a rowan branch nearby",
+      "caption": "A visual interpretation of the cockatrice found beneath Renwick church",
+      "map_title": "Renwick, Cumbria",
+      "section_heading": "The thing beneath the church",
+      "pullquote": "A great winged creature flew out from the foundations of the old church at Renwick.",
+      "facts": {
+        "Tradition": "Cumbrian folklore",
+        "Type": "Cockatrice",
+        "Setting": "Renwick church",
+        "Motif": "Deadly gaze and rowan ward"
+      }
+    },
+    "Seven Whistlers": {
+      "priority": 304,
+      "image": "legend-images/seven-whistlers-hero.jpg",
+      "alt": "Seven dark supernatural birds crying in formation over smoky Black Country twilight",
+      "caption": "A visual interpretation of the Seven Whistlers above the Midlands",
+      "map_title": "Black Country and Worcestershire",
+      "section_heading": "The cry above the pits",
+      "pullquote": "Seven supernatural birds cry together only once in a generation.",
+      "facts": {
+        "Tradition": "English industrial folklore",
+        "Type": "Omen birds",
+        "Setting": "Black Country skies",
+        "Motif": "Mining disaster warning"
+      }
+    },
+    "Shug Monkey": {
+      "priority": 305,
+      "image": "legend-images/shug-monkey-hero.jpg",
+      "alt": "A half-dog half-ape creature walking upright on a dark Cambridgeshire lane",
+      "caption": "A visual interpretation of the Shug Monkey of Brinkley",
+      "map_title": "Cambridgeshire",
+      "section_heading": "The thing on the lane",
+      "pullquote": "A creature half-shaggy-dog and half-ape said to haunt Shug Monkey Lane.",
+      "facts": {
+        "Tradition": "Cambridgeshire folklore",
+        "Type": "Hybrid beast",
+        "Setting": "Shug Monkey Lane",
+        "Motif": "Night road apparition"
+      }
+    },
+    "Skriker": {
+      "priority": 306,
+      "image": "legend-images/skriker-hero.jpg",
+      "alt": "A huge shadowy death-omen creature with wet feet looming in Lancashire woodland rain",
+      "caption": "A visual interpretation of the Skriker in the Pennine woods",
+      "map_title": "Lancashire",
+      "section_heading": "The shriek in the woods",
+      "pullquote": "To hear the Skriker was to know a death was near.",
+      "facts": {
+        "Tradition": "Lancashire folklore",
+        "Type": "Death-omen beast",
+        "Setting": "Pennine woods",
+        "Motif": "Shriek and splashing feet"
+      }
+    },
+    "Stratford Lion": {
+      "priority": 307,
+      "image": "legend-images/stratford-lion-hero.jpg",
+      "alt": "A spectral lion with luminous eyes crossing a misty Warwickshire road at night",
+      "caption": "A visual interpretation of the spectral lion of Stratford-upon-Avon",
+      "map_title": "Stratford-upon-Avon, Warwickshire",
+      "section_heading": "The lion on the road",
+      "pullquote": "A spectral lion said to haunt the roads around Stratford-upon-Avon.",
+      "facts": {
+        "Tradition": "Warwickshire folklore",
+        "Type": "Spectral big cat",
+        "Setting": "Stratford roads",
+        "Motif": "Silent night apparition"
+      }
+    },
+    "Tangie": {
+      "priority": 308,
+      "image": "legend-images/tangie-hero.jpg",
+      "alt": "A kelp-draped water horse emerging from a northern loch with seaweed streaming from its mane",
+      "caption": "A visual interpretation of the Tangie of Orkney and Shetland",
+      "map_title": "Orkney and Shetland",
+      "section_heading": "The kelp thing by the water",
+      "pullquote": "The Tangie haunts Orkney and Shetland in two terrible forms.",
+      "facts": {
+        "Tradition": "Northern Isles folklore",
+        "Type": "Water horse or kelp spirit",
+        "Setting": "Lochs and shore roads",
+        "Motif": "Shapeshifting abductor"
+      }
+    },
+    "Tchico": {
+      "priority": 309,
+      "image": "legend-images/tchico-hero.jpg",
+      "alt": "A compact black ghost dog dragging iron chains along old Guernsey stone steps at night",
+      "caption": "A visual interpretation of Tchico, Guernsey's chained ghost dog",
+      "map_title": "Tower Hill, Guernsey",
+      "section_heading": "The chains in winter",
+      "pullquote": "Guernsey's ghost dog of Tower Hill drags rattling chains through the winter nights.",
+      "facts": {
+        "Tradition": "Channel Islands folklore",
+        "Type": "Ghost dog",
+        "Setting": "Tower Hill, Guernsey",
+        "Motif": "Chains and restless spirit"
+      }
+    },
+    "The Brag": {
+      "priority": 310,
+      "image": "legend-images/the-brag-hero.jpg",
+      "alt": "A white horse-like shapeshifter beside a Northumberland pond, caught between horse and calf forms",
+      "caption": "A visual interpretation of The Brag luring travellers by the water",
+      "map_title": "Northumberland",
+      "section_heading": "The trick beside the pond",
+      "pullquote": "The Brag took the form of a white horse, a calf or a naked man to lure travellers.",
+      "facts": {
+        "Tradition": "Northumbrian folklore",
+        "Type": "Shapeshifting trickster",
+        "Setting": "Pond and lane",
+        "Motif": "False mount and humiliation"
+      }
+    },
+    "The Buggane of St Trinian's": {
+      "priority": 311,
+      "image": "legend-images/the-buggane-of-st-trinian-s-hero.jpg",
+      "alt": "A massive dark Manx beast tearing timbers from the roof of St Trinian's church in a storm",
+      "caption": "A visual interpretation of the Buggane tearing the roof from St Trinian's",
+      "map_title": "St Trinian's, Isle of Man",
+      "section_heading": "The roofless church",
+      "pullquote": "A fearsome shape-shifting spirit repeatedly tore off St Trinian's roof whenever rebuilt.",
+      "facts": {
+        "Tradition": "Manx folklore",
+        "Type": "Shape-shifting beast",
+        "Setting": "St Trinian's church",
+        "Motif": "Ruined roof and defiance"
+      }
+    },
+    "The Girt Dog of Ennerdale": {
+      "priority": 312,
+      "image": "legend-images/the-girt-dog-of-ennerdale-hero.jpg",
+      "alt": "A lean mysterious dog striding across cold Cumberland fells with sheep far in the distance",
+      "caption": "A visual interpretation of the Girt Dog of Ennerdale on the fells",
+      "map_title": "Ennerdale, Cumbria",
+      "section_heading": "The fell predator of 1810",
+      "pullquote": "Through the summer of 1810 a mysterious dog killed hundreds of sheep across the Cumberland fells.",
+      "facts": {
+        "Tradition": "Cumbrian folklore",
+        "Type": "Mysterious dog",
+        "Setting": "Ennerdale fells",
+        "Motif": "Elusive predator"
+      }
+    },
+    "Werewolves of Ossory": {
+      "priority": 313,
+      "image": "legend-images/werewolves-of-ossory-hero.jpg",
+      "alt": "A sorrowful intelligent she-wolf sheltering in a medieval Irish forest at winter dusk",
+      "caption": "A visual interpretation of the cursed werewolves of Ossory",
+      "map_title": "Ossory, Leinster",
+      "section_heading": "The wolf with human eyes",
+      "pullquote": "The people of Ossory were said to become wolves for seven years before returning to human form.",
+      "facts": {
+        "Tradition": "Medieval Irish legend",
+        "Type": "Cursed werewolf",
+        "Setting": "Ossory woodland",
+        "Motif": "Seven-year transformation"
+      }
+    },
+    "Cat Sìth": {
+      "priority": 290,
+      "image": "legend-images/cat-sith-hero.jpg",
+      "alt": "An oversized black spectral cat with a white breast spot crouching on a Highland stone threshold",
+      "caption": "A visual interpretation of the Cat Sìth guarding the soul before burial",
+      "map_title": "Scottish Highlands",
+      "section_heading": "The cat at the threshold",
+      "pullquote": "A great spectral black cat with a white spot on its breast.",
+      "facts": {
+        "Tradition": "Scottish Highland folklore",
+        "Type": "Fairy cat",
+        "Setting": "Corpse-watch and Highland homes",
+        "Motif": "Soul stealing"
+      }
+    },
+    "Cŵn Annwn": {
+      "priority": 291,
+      "image": "legend-images/cwn-annwn-hero.jpg",
+      "alt": "A pale pack of red-eared spectral hounds crossing the misty Brecon Beacons by moonlight",
+      "caption": "A visual interpretation of the hounds of Annwn sweeping over the Welsh uplands",
+      "map_title": "Brecon Beacons, Wales",
+      "section_heading": "The hounds of the Otherworld",
+      "pullquote": "Their baying grows quieter as they draw nearer - silence means they are upon you.",
+      "facts": {
+        "Tradition": "Welsh folklore",
+        "Type": "Otherworld hounds",
+        "Setting": "Brecon Beacons",
+        "Motif": "Supernatural hunt"
+      }
+    },
+    "Donn Cúailnge": {
+      "priority": 292,
+      "image": "legend-images/donn-cuailnge-hero.jpg",
+      "alt": "The vast Brown Bull of Cooley standing on rain-dark Irish hills after battle",
+      "caption": "A visual interpretation of Donn Cúailnge, the great Brown Bull of Cooley",
+      "map_title": "Cooley Peninsula, County Louth",
+      "section_heading": "The bull that began a war",
+      "pullquote": "The great Brown Bull of Cooley was the prize that sparked the Táin Bó Cúailnge.",
+      "facts": {
+        "Tradition": "Irish mythology",
+        "Type": "Mythic bull",
+        "Setting": "Cooley Peninsula",
+        "Motif": "War prize and transformation"
       }
     }
   }

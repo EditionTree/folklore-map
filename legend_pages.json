@@ -4696,6 +4696,246 @@
         "Setting": "Cooley Peninsula",
         "Motif": "War prize and transformation"
       }
+    },
+    "Barclodiad y Gawres": {
+      "priority": 314,
+      "image": "legend-images/barclodiad-y-gawres-hero.jpg",
+      "alt": "A giantess on the Anglesey coast dropping great stones from her apron to form a passage tomb",
+      "caption": "A visual interpretation of the giantess whose apronful became Barclodiad y Gawres",
+      "map_title": "Llanfaelog, Anglesey",
+      "section_heading": "The giantess's apronful",
+      "pullquote": "Legend says a giantess dropped the stones from her apron after learning how far she still had to travel.",
+      "facts": {
+        "Tradition": "Welsh giant lore",
+        "Type": "Giantess and tomb legend",
+        "Setting": "Anglesey coast",
+        "Motif": "Stones dropped from an apron"
+      }
+    },
+    "Canthrig Bwt": {
+      "priority": 315,
+      "image": "legend-images/canthrig-bwt-hero.jpg",
+      "alt": "A gaunt giantess-witch crouching beneath a wet stone bridge in the Llanberis Pass",
+      "caption": "A visual interpretation of Canthrig Bwt beneath the bridge",
+      "map_title": "Llanberis Pass, Gwynedd",
+      "section_heading": "The giantess under the bridge",
+      "pullquote": "A child-eating giantess-witch lurked beneath a stone bridge in the Llanberis Pass.",
+      "facts": {
+        "Tradition": "Welsh folklore",
+        "Type": "Giantess-witch",
+        "Setting": "Llanberis Pass",
+        "Motif": "Bridge haunting"
+      }
+    },
+    "Cerne Abbas Giant": {
+      "priority": 316,
+      "image": "legend-images/cerne-abbas-giant-hero.jpg",
+      "alt": "The chalk outline of the Cerne Abbas Giant and raised club glowing on a green Dorset hillside",
+      "caption": "A visual interpretation of the Cerne Abbas Giant cut into the Dorset downs",
+      "map_title": "Cerne Abbas, Dorset",
+      "section_heading": "The chalk giant on the hill",
+      "pullquote": "A 55-metre chalk giant cut into the hillside above Cerne Abbas in Dorset.",
+      "facts": {
+        "Tradition": "English hill figure lore",
+        "Type": "Chalk hill giant",
+        "Setting": "Dorset downs",
+        "Motif": "Fertility and disputed antiquity"
+      }
+    },
+    "Fingal": {
+      "priority": 317,
+      "image": "legend-images/fingal-hero.jpg",
+      "alt": "The giant Fingal placing hexagonal basalt columns into the sea to build a causeway",
+      "caption": "A visual interpretation of Fingal shaping the basalt causeway",
+      "map_title": "Staffa, Scotland",
+      "section_heading": "The giant who built the causeway",
+      "pullquote": "He built the causeway between Scotland and Ireland so he could fight his Ulster rival.",
+      "facts": {
+        "Tradition": "Gaelic giant lore",
+        "Type": "Giant-hero",
+        "Setting": "Staffa and the causeway",
+        "Motif": "Landscape-making challenge"
+      }
+    },
+    "Giant of Grabbist": {
+      "priority": 318,
+      "image": "legend-images/giant-of-grabbist-hero.jpg",
+      "alt": "A friendly Somerset giant cooling his enormous feet in the River Avill below Grabbist Hill",
+      "caption": "A visual interpretation of the Giant of Grabbist by the River Avill",
+      "map_title": "Dunster, Somerset",
+      "section_heading": "The giant with his feet in the river",
+      "pullquote": "A friendly Somerset giant sat on Grabbist Hill cooling his feet in the River Avill.",
+      "facts": {
+        "Tradition": "Somerset folklore",
+        "Type": "Friendly giant",
+        "Setting": "Grabbist Hill",
+        "Motif": "Stone-throwing contest"
+      }
+    },
+    "Giant of Petta Water": {
+      "priority": 319,
+      "image": "legend-images/giant-of-petta-water-hero.jpg",
+      "alt": "A Shetland giant with a broken kishie basket scattering trows beside a water-filled footprint",
+      "caption": "A visual interpretation of the giant whose footprint became Petta Water",
+      "map_title": "Petta Water, Shetland",
+      "section_heading": "The broken basket of trows",
+      "pullquote": "His kishie basket broke under the trows' weight and scattered them across the landscape.",
+      "facts": {
+        "Tradition": "Shetland folklore",
+        "Type": "Island giant",
+        "Setting": "Petta Water and Kneefell",
+        "Motif": "Footprint lake and scattered trows"
+      }
+    },
+    "Gill, the Hammer-Throwing Giant of Mount Caburn": {
+      "priority": 320,
+      "image": "legend-images/gill-the-hammer-throwing-giant-of-mount-caburn-hero.jpg",
+      "alt": "A Sussex giant swinging a huge hammer from Mount Caburn across the South Downs",
+      "caption": "A visual interpretation of Gill throwing his hammer from Mount Caburn",
+      "map_title": "Mount Caburn, East Sussex",
+      "section_heading": "The hammer over the Downs",
+      "pullquote": "Sussex tradition set a giant named Gill on the Iron-Age hillfort of Mount Caburn.",
+      "facts": {
+        "Tradition": "Sussex folklore",
+        "Type": "Hillfort giant",
+        "Setting": "Mount Caburn",
+        "Motif": "Hammer throwing"
+      }
+    },
+    "Iula, Princess of the Giants of Islay": {
+      "priority": 321,
+      "image": "legend-images/iula-princess-of-the-giants-of-islay-hero.jpg",
+      "alt": "The giant princess Iula fleeing through storm waves as island-stones fall from her apron",
+      "caption": "A visual interpretation of Iula dropping the stones that became islands",
+      "map_title": "Islay, Argyll and Bute",
+      "section_heading": "The princess and the island-stones",
+      "pullquote": "A giant princess named Iula fled Denmark dropping enchanted stones from her apron.",
+      "facts": {
+        "Tradition": "Scottish island folklore",
+        "Type": "Giant princess",
+        "Setting": "Islay and the western sea",
+        "Motif": "Island creation"
+      }
+    },
+    "Jack o' Legs": {
+      "priority": 322,
+      "image": "legend-images/jack-o-legs-hero.jpg",
+      "alt": "The giant outlaw Jack o' Legs drawing a huge longbow across misty Hertfordshire fields",
+      "caption": "A visual interpretation of Jack o' Legs loosing his final arrow",
+      "map_title": "Weston, Hertfordshire",
+      "section_heading": "The arrow that marked his grave",
+      "pullquote": "At his execution he shot a final arrow three miles to mark his own grave.",
+      "facts": {
+        "Tradition": "English outlaw lore",
+        "Type": "Giant outlaw",
+        "Setting": "Weston, Hertfordshire",
+        "Motif": "Final arrow"
+      }
+    },
+    "MacKinnon's Cave": {
+      "priority": 323,
+      "image": "legend-images/mackinnon-s-cave-hero.jpg",
+      "alt": "A monstrous ogress crouching in the wet blue darkness of MacKinnon's Cave on Mull",
+      "caption": "A visual interpretation of the cave-dwelling ogress of MacKinnon's Cave",
+      "map_title": "Isle of Mull, Scotland",
+      "section_heading": "The ogress in the sea cave",
+      "pullquote": "A clan piper led companions into this sea cave to test his skill against its monstrous cave-dwelling ogress.",
+      "facts": {
+        "Tradition": "Scottish cave lore",
+        "Type": "Cave ogress",
+        "Setting": "MacKinnon's Cave",
+        "Motif": "Echoing pipes"
+      }
+    },
+    "Rhitta Gawr": {
+      "priority": 324,
+      "image": "legend-images/rhitta-gawr-hero.jpg",
+      "alt": "The giant-king Rhitta Gawr standing on Snowdon in a cloak woven from defeated kings' beards",
+      "caption": "A visual interpretation of Rhitta Gawr demanding Arthur's beard",
+      "map_title": "Snowdonia, Wales",
+      "section_heading": "The king with the beard-cloak",
+      "pullquote": "The great giant-king of Wales made a cloak from the beards of the kings he slew.",
+      "facts": {
+        "Tradition": "Welsh Arthurian legend",
+        "Type": "Giant king",
+        "Setting": "Snowdon",
+        "Motif": "Beard-cloak challenge"
+      }
+    },
+    "The Giant Bica of Llangrannog": {
+      "priority": 325,
+      "image": "legend-images/the-giant-bica-of-llangrannog-hero.jpg",
+      "alt": "A giant clutching his jaw and spitting a huge stone tooth toward the beach at Llangrannog",
+      "caption": "A visual interpretation of the tooth that became Carreg Bica",
+      "map_title": "Llangrannog, Ceredigion",
+      "section_heading": "The tooth on the beach",
+      "pullquote": "He spat the offending tooth onto the beach below, where it still stands today as Carreg Bica.",
+      "facts": {
+        "Tradition": "Welsh coastal folklore",
+        "Type": "Giant origin legend",
+        "Setting": "Llangrannog beach",
+        "Motif": "Stone tooth"
+      }
+    },
+    "The Giant of Carn Galver": {
+      "priority": 326,
+      "image": "legend-images/the-giant-of-carn-galver-hero.jpg",
+      "alt": "A gentle Cornish giant seated in grief beside the granite rocks of Carn Galver at dusk",
+      "caption": "A visual interpretation of the sorrowful Giant of Carn Galver",
+      "map_title": "Carn Galver, Cornwall",
+      "section_heading": "The grieving guardian of Zennor",
+      "pullquote": "A gentle Cornish giant guarded the people of Zennor from rival giants.",
+      "facts": {
+        "Tradition": "Cornish giant lore",
+        "Type": "Gentle giant",
+        "Setting": "Carn Galver",
+        "Motif": "Protection and grief"
+      }
+    },
+    "The Whitwick Giant": {
+      "priority": 327,
+      "image": "legend-images/the-whitwick-giant-hero.jpg",
+      "alt": "A towering Whitwick giant reaching from castle woodland toward the glow of the Holy Well",
+      "caption": "A visual interpretation of the Whitwick giant and the sanctuary of the well",
+      "map_title": "Whitwick, Leicestershire",
+      "section_heading": "The giant and the holy well",
+      "pullquote": "The Comyns of Whitwick Castle were remembered as giants.",
+      "facts": {
+        "Tradition": "Leicestershire folklore",
+        "Type": "Castle giant",
+        "Setting": "Whitwick Castle and Holy Well",
+        "Motif": "Sanctuary rescue"
+      }
+    },
+    "Wade and Bell": {
+      "priority": 328,
+      "image": "legend-images/wade-and-bell-hero.jpg",
+      "alt": "The giant Wade throwing a great hammer across North Yorkshire moors toward Bell and a stone road",
+      "caption": "A visual interpretation of Wade and Bell building across the moors",
+      "map_title": "Mulgrave, North Yorkshire",
+      "section_heading": "The hammer across the moor",
+      "pullquote": "Wade and his wife Bell built castles by throwing their single hammer to each other across the moors.",
+      "facts": {
+        "Tradition": "Yorkshire giant lore",
+        "Type": "Giant couple",
+        "Setting": "North Yorkshire moors",
+        "Motif": "Hammer, castles and paved road"
+      }
+    },
+    "Ysbaddaden": {
+      "priority": 329,
+      "image": "legend-images/ysbaddaden-hero.jpg",
+      "alt": "The giant-king Ysbaddaden seated outside an ancient Welsh hall with impossible-task objects at his feet",
+      "caption": "A visual interpretation of Ysbaddaden, the giant of the impossible tasks",
+      "map_title": "North Wales",
+      "section_heading": "The giant who set forty tasks",
+      "pullquote": "He set Culhwch forty impossible tasks ? and lost to Arthur's champions.",
+      "facts": {
+        "Tradition": "Welsh myth",
+        "Type": "Giant king",
+        "Setting": "Ancient Welsh court",
+        "Motif": "Impossible tasks"
+      }
     }
   }
 }

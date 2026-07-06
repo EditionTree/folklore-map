@@ -5,13 +5,25 @@
       "slug": "black-dogs",
       "title": "Black Dogs of Britain & Ireland",
       "intro": "Across the islands a great spectral hound haunts the lonely lane, the churchyard and the parish boundary — Black Shuck in East Anglia, the Barghest of the north, the Cù Sìth of the Highlands. Almost always larger than any living dog, with eyes like coals, it is most often an omen: to meet its gaze was said to foretell a death within the year.",
-      "match": { "all": [ { "tags_any": ["dog"] }, { "tags_any": ["black", "spectral", "death-omen"] } ] }
+      "match": { "all": [ { "tags_any": ["dog"] }, { "tags_any": ["black", "spectral", "death-omen"] } ] },
+      "context": "Black dog apparitions are recorded across England, Wales, Scotland and Ireland under many local names, and folklorists have long noted the family resemblance between them despite the distances involved. Theories for the tradition's spread range from a shared Norse and Brythonic memory of guardian or psychopomp animals to the more mundane fact that lonely roads, churchyards and boundary paths were where travellers were most likely to frighten themselves after dark. Written accounts thicken from the 16th century onward, but the tradition's oral roots are almost certainly older than any surviving record.",
+      "related_collections": ["haunted-churches", "legends-of-the-sea", "cursed-places"],
+      "resources": [
+        { "label": "Black Shuck — Wikipedia", "url": "https://en.wikipedia.org/wiki/Black_Shuck" },
+        { "label": "Black dog (folklore) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Black_dog_(folklore)" }
+      ]
     },
     {
       "slug": "arthurian-places",
       "title": "Arthurian Places",
       "intro": "The legend of Arthur is rooted in real landscape long before it reached the page. Hills where he is said to sleep, caves that hide his knights, stones marking battles and the lakes that swallowed Excalibur are scattered from Cornwall to the Scottish Lowlands, woven through Welsh tradition and the older Brythonic past from which the cycle grew.",
-      "match": { "tags_any": ["arthurian"] }
+      "match": { "tags_any": ["arthurian"] },
+      "context": "The earliest Arthurian material appears in Welsh and Latin sources — Y Gododdin, the Historia Brittonum, and later Geoffrey of Monmouth's Historia Regum Britanniae — centuries before the French romances that gave the cycle Lancelot, the Grail and much of its familiar shape. Because those early sources are sparse on geography, local tradition filled the gaps: almost every region of Britain eventually claimed a hill, cave or battlefield as genuinely Arthur's, and many of those claims are now folklore in their own right, independent of anything in the medieval texts.",
+      "related_collections": ["standing-stones", "cursed-places"],
+      "resources": [
+        { "label": "Matter of Britain — Wikipedia", "url": "https://en.wikipedia.org/wiki/Matter_of_Britain" },
+        { "label": "Historia Regum Britanniae — Wikipedia", "url": "https://en.wikipedia.org/wiki/Historia_Regum_Britanniae" }
+      ]
     },
     {
       "slug": "haunted-churches",

@@ -54,6 +54,20 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 .pagination .gap{border:none;color:#5c4a2a;min-width:auto;padding:6px 2px}
 @media(max-width:900px){.wrap{width:calc(100% - 32px)}}
 @media(max-width:620px){.browse-grid{grid-template-columns:1fr}}
+.col-hero{position:relative;margin:0 0 20px;border-radius:2px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.25)}
+.col-hero img{display:block;width:100%;max-height:360px;object-fit:cover}
+.col-hero-credit{position:absolute;right:10px;bottom:8px;font-size:10px;color:rgba(255,255,255,.85);background:rgba(0,0,0,.4);padding:2px 8px;border-radius:2px}
+.col-section{margin-top:38px}
+.col-section h2{font-family:'Marcellus',serif;font-size:20px;font-weight:400;color:#3f3023;margin-bottom:12px}
+.col-context{font-size:15.5px;color:#3f3023;max-width:780px;line-height:1.7}
+.col-gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.col-gallery img{width:100%;height:110px;object-fit:cover;border-radius:2px;box-shadow:0 2px 8px rgba(0,0,0,.2)}
+.col-related{display:flex;flex-wrap:wrap;gap:8px}
+.col-related a{font-family:'Marcellus',serif;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#9d461f;border:1px solid rgba(90,70,50,.35);border-radius:0;padding:6px 12px;text-decoration:none}
+.col-related a:hover{background:#5a4632;color:#f6f1e6;border-color:#5a4632}
+.col-resources{list-style:none}
+.col-resources li+li{margin-top:6px}
+.col-resources a{color:#8b3a1a;font-size:14px}
 .topnav{display:flex;align-items:center;justify-content:center;gap:4px;background:#1a0e06;padding:11px 16px;border-bottom:1px solid rgba(176,144,96,0.2);flex-wrap:wrap}.topnav a{font-family:'Marcellus',serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:rgba(242,232,213,0.78);text-decoration:none;padding:6px 14px;border-radius:3px;transition:background .15s,color .15s}.topnav a:hover{color:#f2e8d5;background:rgba(196,98,42,0.18)}.topnav a.active{color:#c4622a}@media(max-width:640px){.topnav{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;scrollbar-width:none}.topnav::-webkit-scrollbar{display:none}.topnav a{flex:0 0 auto;white-space:nowrap}}</style></head>
 <body class="catalogue-page">
 <nav class="topnav"><a href="https://folklorefinder.uk/">Home</a><a href="https://folklorefinder.uk/map">Map</a><a href="https://folklorefinder.uk/legends/">Browse</a><a href="https://folklorefinder.uk/legends/collections" class="active">Collections</a><a href="https://folklorefinder.uk/achievements">Achievements</a><a href="https://folklorefinder.uk/about">About</a><a href="https://folklorefinder.uk/updates">Updates</a></nav>
@@ -61,7 +75,9 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 <div class="wrap">
 <nav class="crumb"><a href="https://folklorefinder.uk/">Home</a> &#8250; <a href="https://folklorefinder.uk/legends/">All legends</a> &#8250; <span>Haunted Churches &amp; Churchyards</span></nav>
 <h1 class="browse-h1">Haunted Churches &amp; Churchyards</h1>
+<div class="col-hero"><img src="https://folklorefinder.uk/legend-images/angelystor-hero.jpg" alt="Haunted Churches &amp; Churchyards"/></div>
 <p class="browse-intro">Consecrated ground draws its own folklore: the grim that guards the first grave, the phantom of a wronged priest, bells that toll for the drowned, and devils held back at the threshold. These traditions cluster where the parish church met older beliefs about the dead, the boundary and what walks after dark.</p>
+<p style="margin:-8px 0 20px"><a class="back" href="https://folklorefinder.uk/map?collection=haunted-churches">View this collection on the Map &#8594;</a></p>
 <nav class="browse-nav"><a href="https://folklorefinder.uk/legends/collection/black-dogs">Black Dogs of Britain &amp; Ireland</a><a href="https://folklorefinder.uk/legends/collection/arthurian-places">Arthurian Places</a><a href="https://folklorefinder.uk/legends/collection/haunted-churches" class="active">Haunted Churches &amp; Churchyards</a><a href="https://folklorefinder.uk/legends/collection/legends-of-the-sea">Legends of the Sea &amp; Shore</a><a href="https://folklorefinder.uk/legends/collection/cursed-places">Cursed Places &amp; Ill-Fated Stones</a><a href="https://folklorefinder.uk/legends/collection/standing-stones">Standing Stones &amp; Stone Circles</a><a href="https://folklorefinder.uk/legends/collection/dragons-and-serpents">Dragons &amp; Serpents</a><a href="https://folklorefinder.uk/legends/collection/holy-wells">Holy Wells &amp; Healing Springs</a></nav>
 <div class="browse-grid">
 <a class="b-card" href="https://folklorefinder.uk/legends/angelystor"><span class="b-cat" style="background:#4a3d6e">Ghosts</span><span class="b-name">Angelystor</span><span class="b-region">Llangernyw, Conwy, Wales</span><span class="b-summary">Angelystor, the Recording Angel, is a supernatural voice said to inhabit the churchyard of St Digain&#x27;s Church in Llangernyw. Each Halloween night, the spirit announces the names of parishioners who will die in the coming year. The tradition is centred on the churchyard&#x27;s ancient yew tree.</span></a>
@@ -85,7 +101,7 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 <a class="b-card" href="https://folklorefinder.uk/legends/witch-s-stone-of-westleton"><span class="b-cat" style="background:#3a2a4e">Witches</span><span class="b-name">Witch&#x27;s Stone of Westleton</span><span class="b-region">Westleton, Suffolk, England</span><span class="b-summary">A fallen 14th-century gravestone at St Peter&#x27;s Church where running anti-clockwise with a handkerchief is said to summon the Devil.</span></a>
 <a class="b-card" href="https://folklorefinder.uk/legends/witches-of-belvoir"><span class="b-cat" style="background:#3a2a4e">Witches</span><span class="b-name">Witches of Belvoir</span><span class="b-region">Belvoir, Leicestershire, England</span><span class="b-summary">Joan Flower and her daughters were hanged in 1619 for cursing the sons of the Earl of Rutland at Belvoir Castle; Joan herself died in gaol after calling divine punishment on herself if she were guilty.</span></a>
 </div>
-<a class="back" href="https://folklorefinder.uk/legends/">&#8592; Browse All Legends</a>
+<section class="col-section"><h2>Gallery</h2><div class="col-gallery"><img src="https://folklorefinder.uk/legend-images/angelystor-hero.jpg" alt=""/><img src="https://folklorefinder.uk/legend-images/bardney-abbey-and-the-light-of-oswald-hero.jpg" alt=""/><img src="https://folklorefinder.uk/legend-images/black-shuck-hero.jpg" alt=""/><img src="https://folklorefinder.uk/legend-images/francis-drake-hero.jpg" alt=""/><img src="https://folklorefinder.uk/legend-images/mermaid-of-marden-hero.jpg" alt=""/><img src="https://folklorefinder.uk/legend-images/nanteos-cup-hero.jpg" alt=""/><img src="https://folklorefinder.uk/legend-images/spectre-of-newby-church-hero.jpg" alt=""/><img src="https://folklorefinder.uk/legend-images/the-buggane-of-st-trinian-s-hero.jpg" alt=""/></div></section><a class="back" href="https://folklorefinder.uk/legends/">&#8592; Browse All Legends</a>
 </div>
 <footer style="text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a">Folklore Finder &#183; &#169; EditionTree &#183; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener" style="color:#5c4a2a">&#9749; Ko-fi</a> &#183; <a href="https://folklorefinder.uk/privacy" style="color:#5c4a2a">Privacy</a></footer>
 </body></html>

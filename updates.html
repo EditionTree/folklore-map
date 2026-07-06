@@ -6,17 +6,18 @@
 <!-- Cloudflare Web Analytics -->
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "64d1fd37251d426f8a0d8fbc83ea350b"}'></script>
 <!-- End Cloudflare Web Analytics -->
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Updates &amp; What's New &#183; Folklore Finder</title>
-<meta name="description" content="What's new on Folklore Finder — recent site updates and the latest legends added to the map."/>
+<title>What's New &#183; Folklore Finder</title>
+<meta name="description" content="What's new on Folklore Finder — recently added legends, new collections, site updates, and the Research Journal."/>
 <meta name="robots" content="index, follow"/>
 <link rel="canonical" href="https://folklorefinder.uk/updates"/>
 <link rel="alternate" type="application/rss+xml" title="Folklore Map — New Legends" href="https://folklorefinder.uk/feed.xml"/>
 <link rel="icon" type="image/png" href="favicon.png"/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://folklorefinder.uk/updates"/>
-<meta property="og:title" content="Updates &amp; What's New"/>
-<meta property="og:description" content="Recent site updates and the latest legends added to Folklore Finder."/>
+<meta property="og:title" content="What's New"/>
+<meta property="og:description" content="Recently added legends, new collections and site updates on Folklore Finder."/>
 <meta property="og:image" content="https://folklorefinder.uk/og/preview-folklore-finder.png"/>
 <meta property="og:site_name" content="Folklore Finder"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,6 +34,7 @@
   --accent-warm:#c4622a;
   --gold:#b09060;
   --dark:#1a0e06;
+  --border:rgba(176,144,96,0.4);
 }
 
 body{background:var(--parchment-dk);color:var(--ink);font-family:'Spectral',serif;line-height:1.7}
@@ -58,6 +60,7 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Spectral',seri
 .section-rule::before,.section-rule::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
 .section-rule::after{background:linear-gradient(90deg,var(--gold),transparent)}
 .section-rule span{font-family:'Marcellus',serif;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);white-space:nowrap}
+.section-intro{font-size:14px;color:var(--ink-light);font-style:italic;margin-bottom:18px}
 
 /* ── RELEASES ── */
 .release{background:var(--parchment);border:1px solid var(--gold);border-radius:6px;padding:20px 24px;margin-bottom:16px;position:relative;overflow:hidden}
@@ -65,6 +68,40 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Spectral',seri
 .release-date{font-family:'Marcellus',serif;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
 .release ul{margin:0;padding-left:20px}
 .release li{margin-bottom:7px;font-size:16px}
+
+/* ── RECENT LEGENDS / COLLECTIONS ── */
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+.card-tile{display:block;background:var(--parchment);border:1px solid var(--gold);border-radius:6px;padding:14px 16px;text-decoration:none;color:var(--ink);transition:transform .15s,box-shadow .15s}
+.card-tile:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,0.15)}
+.card-tile .card-eyebrow{display:block;font-family:'Marcellus',serif;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:5px}
+.card-tile .card-title{font-size:16px;font-weight:600}
+.card-tile .card-sub{display:block;font-size:12px;font-style:italic;color:var(--ink-light);margin-top:3px}
+.empty-note{font-size:13px;font-style:italic;color:var(--ink-light)}
+
+/* ── RESEARCH JOURNAL CALLOUT ── */
+.journal-card{background:linear-gradient(135deg,rgba(196,98,42,0.1),rgba(176,144,96,0.06));border:1px solid var(--gold);border-radius:8px;padding:24px}
+.journal-card h3{font-family:'Marcellus',serif;font-weight:400;font-size:18px;margin-bottom:8px;color:var(--accent)}
+.journal-card p{font-size:15px;margin-bottom:14px}
+.journal-links{display:flex;flex-wrap:wrap;gap:10px}
+.journal-links a{font-family:'Marcellus',serif;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--parchment);background:var(--ink);padding:8px 16px;border-radius:3px;text-decoration:none;transition:background .15s}
+.journal-links a:hover{background:var(--accent)}
+
+/* ── FEEDBACK FORM ── */
+.feedback-card{background:var(--parchment);border:1px solid var(--gold);border-radius:8px;padding:22px 24px}
+.feedback-card p.lead{font-size:15px;margin-bottom:16px}
+.f-label{display:block;font-family:'Marcellus',serif;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-light);margin:14px 0 5px}
+.f-label:first-child{margin-top:0}
+.f-required{color:var(--accent)}
+.f-input,.f-select,.f-textarea{width:100%;padding:9px 11px;font-family:'Spectral',serif;font-size:14px;color:var(--ink);background:rgba(255,255,255,0.6);border:1px solid var(--border);border-radius:3px;outline:none;transition:border-color .15s}
+.f-input:focus,.f-select:focus,.f-textarea:focus{border-color:var(--accent-warm);background:rgba(255,255,255,0.85)}
+.f-textarea{resize:vertical}
+.f-status{margin-top:12px;padding:9px 12px;border-radius:3px;font-size:13px;display:none}
+.f-status.success{display:block;background:rgba(60,120,60,0.12);color:#3a6e3a;border:1px solid rgba(60,120,60,0.25)}
+.f-status.error{display:block;background:rgba(180,50,30,0.1);color:var(--accent);border:1px solid rgba(180,50,30,0.25)}
+.f-submit{margin-top:16px;font-family:'Marcellus',serif;font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:9px 22px;background:var(--ink);color:var(--parchment);border:none;border-radius:3px;cursor:pointer;transition:background .15s}
+.f-submit:hover{background:var(--accent)}
+.f-submit:disabled{opacity:.5;cursor:default}
+.f-note{font-size:11px;color:var(--ink-light);font-style:italic;margin-top:10px}
 
 /* ── FOOTER ── */
 footer{text-align:center;padding:28px 20px;font-size:12px;color:var(--ink-light);border-top:1px solid rgba(176,144,96,0.2)}
@@ -88,15 +125,67 @@ footer a{color:var(--ink-light)}
   <a class="page-head-logo" href="./" aria-label="Folklore Finder home">
     <img src="green-man.png" alt="Green Man emblem"/>
   </a>
-  <h1>Updates &amp; What's New</h1>
-  <p>How the map is growing and changing over time</p>
+  <h1>What's New</h1>
+  <p>How the archive is growing and changing over time</p>
 </header>
 
 <div class="wrap">
 
   <section class="section">
+    <div class="section-rule"><span>Recently Added Legends</span></div>
+    <div id="recentLegends" class="card-grid"></div>
+  </section>
+
+  <section class="section">
+    <div class="section-rule"><span>New Collections</span></div>
+    <div id="newCollections" class="card-grid"></div>
+  </section>
+
+  <section class="section">
     <div class="section-rule"><span>Site Updates</span></div>
     <div id="siteUpdates"></div>
+  </section>
+
+  <section class="section">
+    <div class="section-rule"><span>Research Journal</span></div>
+    <div class="journal-card">
+      <h3>Behind the scenes on Ko-fi</h3>
+      <p>Planned developments, research notes, downloadable field guides and free resources live on the Research Journal — Folklore Finder's companion space on Ko-fi. Core content on the map stays free; the Journal is just somewhere to follow along or, if you'd like, help fund the next round of research and artwork.</p>
+      <div class="journal-links">
+        <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener">Research Journal</a>
+        <a href="https://ko-fi.com/folklorefinder/shop" target="_blank" rel="noopener">Field Guides &amp; Downloads</a>
+        <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener">Support the Archive</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-rule"><span>Have Your Say</span></div>
+    <div class="feedback-card">
+      <p class="lead">Spotted an issue, found a missing legend, or have an idea for Folklore Finder? Send feedback here — it goes straight to the team behind the archive.</p>
+
+      <label class="f-label" for="fbType">What's this about? <span class="f-required">*</span></label>
+      <select id="fbType" class="f-select">
+        <option value="general">General feedback</option>
+        <option value="bug">Bug report</option>
+        <option value="missing_legend">Missing legend</option>
+        <option value="incorrect_info">Incorrect information</option>
+        <option value="feature_suggestion">Feature suggestion</option>
+        <option value="source_suggestion">Source suggestion</option>
+      </select>
+
+      <label class="f-label" for="fbMessage">Your message <span class="f-required">*</span></label>
+      <textarea id="fbMessage" class="f-textarea" rows="4" maxlength="2000" placeholder="Tell us what you found, or what you'd love to see…"></textarea>
+
+      <label class="f-label" for="fbEmail">Contact email (optional)</label>
+      <input id="fbEmail" class="f-input" type="email" maxlength="320" placeholder="Only if you'd like a reply"/>
+
+      <div class="cf-turnstile" data-sitekey="0x4AAAAAADfezA3JRgZ9GJlD" data-theme="light" style="margin-top:14px"></div>
+      <div id="fbStatus" class="f-status" role="status" aria-live="polite"></div>
+
+      <button class="f-submit" onclick="submitFeedback()">Send Feedback</button>
+      <p class="f-note">We don't log your IP address. See our <a href="privacy" style="color:var(--accent)">Privacy Notice</a>.</p>
+    </div>
   </section>
 
 </div>
@@ -126,7 +215,99 @@ footer a{color:var(--ink-light)}
     box.appendChild(ul);
     su.appendChild(box);
   });
+
+  // ── Recently added legends and new collections. Populated at build time by
+  // generate_pages.py (see build_recent_legends()/build_new_collections()); the
+  // empty-array fallbacks below only show if the build step hasn't run yet. ──
+  const RECENT_LEGENDS = [{"slug": "bessie-millie-of-stromness", "name": "Bessie Millie of Stromness", "date_added": "28 June 2026", "region": "Stromness, Orkney"}, {"slug": "bignor-hill-dragon", "name": "Bignor Hill Dragon", "date_added": "28 June 2026", "region": "West Sussex, England"}, {"slug": "brutus-of-troy", "name": "Brutus of Troy", "date_added": "28 June 2026", "region": "Totnes, Devon"}, {"slug": "cliodhna", "name": "Clíodhna", "date_added": "28 June 2026", "region": "Glandore, County Cork, Ireland"}, {"slug": "cormoran-the-giant-of-st-michael-s-mount", "name": "Cormoran, the Giant of St Michael's Mount", "date_added": "28 June 2026", "region": "St Michael's Mount, Cornwall"}, {"slug": "erne-of-lough-erne", "name": "Erne of Lough Erne", "date_added": "28 June 2026", "region": "County Fermanagh, Northern Ireland"}, {"slug": "fairy-invasion-of-guernsey", "name": "Fairy Invasion of Guernsey", "date_added": "28 June 2026", "region": "Guernsey, Channel Islands"}, {"slug": "giant-of-grabbist", "name": "Giant of Grabbist", "date_added": "28 June 2026", "region": "Dunster, Somerset"}];
+  const NEW_COLLECTIONS = [];
+
+  const rl = document.getElementById('recentLegends');
+  if (RECENT_LEGENDS.length) {
+    RECENT_LEGENDS.forEach(function(leg){
+      var a = document.createElement('a');
+      a.className = 'card-tile'; a.href = 'legends/' + leg.slug;
+      a.innerHTML = '<span class="card-eyebrow">' + (leg.date_added || '') + '</span>'
+        + '<span class="card-title">' + leg.name + '</span>'
+        + '<span class="card-sub">' + (leg.region || '') + '</span>';
+      rl.appendChild(a);
+    });
+  } else {
+    rl.innerHTML = '<p class="empty-note">Check back soon for the latest additions to the map.</p>';
+  }
+
+  const nc = document.getElementById('newCollections');
+  if (NEW_COLLECTIONS.length) {
+    NEW_COLLECTIONS.forEach(function(col){
+      var a = document.createElement('a');
+      a.className = 'card-tile'; a.href = 'legends/collection/' + col.slug;
+      a.innerHTML = '<span class="card-eyebrow">Collection</span>'
+        + '<span class="card-title">' + col.title + '</span>';
+      nc.appendChild(a);
+    });
+  } else {
+    nc.innerHTML = '<p class="empty-note">No new collections since the last update — browse the <a href="legends/collections">full list</a>.</p>';
+  }
 })();
+
+// ── FEEDBACK FORM ──────────────────────────────────────────────────────
+const FEEDBACK_SUBMIT_ENDPOINT = 'https://canjzkpvjwvkbjcduaaj.supabase.co/functions/v1/submit-feedback';
+
+async function submitFeedback() {
+  const feedback_type = document.getElementById('fbType').value;
+  const message        = document.getElementById('fbMessage').value.trim();
+  const contact_email  = document.getElementById('fbEmail').value.trim();
+  const statusEl        = document.getElementById('fbStatus');
+  const submitBtn       = document.querySelector('.f-submit');
+
+  if (!message) {
+    statusEl.textContent = 'Please write a message before sending.';
+    statusEl.className = 'f-status error';
+    return;
+  }
+
+  const tokenEl = document.querySelector('[name="cf-turnstile-response"]');
+  const token   = tokenEl ? tokenEl.value : '';
+  if (!token) {
+    statusEl.textContent = 'Please wait for the security check to complete.';
+    statusEl.className = 'f-status error';
+    return;
+  }
+
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Sending…';
+
+  try {
+    const res = await fetch(FEEDBACK_SUBMIT_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        feedback_type,
+        message,
+        page_url: location.href,
+        contact_email: contact_email || null,
+        cf_turnstile_response: token,
+      })
+    });
+    const data = await res.json();
+
+    if (res.ok && data.success) {
+      statusEl.textContent = 'Thank you. Your feedback has been sent for review and may help expand the archive.';
+      statusEl.className = 'f-status success';
+      submitBtn.textContent = 'Sent';
+      document.getElementById('fbMessage').value = '';
+      document.getElementById('fbEmail').value = '';
+    } else {
+      throw new Error(data.error || 'Unexpected error');
+    }
+  } catch (err) {
+    statusEl.textContent = err.message || 'Something went wrong. Please try again.';
+    statusEl.className = 'f-status error';
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Send Feedback';
+    if (window.turnstile) { try { turnstile.reset(document.querySelector('.cf-turnstile')); } catch(e){} }
+  }
+}
 </script>
 </body>
 </html>

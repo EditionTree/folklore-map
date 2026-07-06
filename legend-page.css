@@ -324,31 +324,31 @@ h1{
 .source-copy{margin:12px 0 0;color:var(--ink-soft);font-size:14px;line-height:1.55}
 .hist-caveat{margin:12px 0 0;color:var(--ink-soft);font-size:12px;font-style:italic;line-height:1.5}
 
-.ach-toast-stack{position:fixed;right:16px;bottom:16px;z-index:9500;display:flex;flex-direction:column;gap:8px;pointer-events:none;max-width:calc(100vw - 32px)}
+.ach-toast-stack{position:fixed;right:18px;top:18px;z-index:9500;display:flex;flex-direction:column;gap:10px;pointer-events:none;max-width:calc(100vw - 36px)}
 .ach-toast{
   pointer-events:auto;
-  background:var(--paper);
-  border:1px solid var(--line);
-  border-left:3px solid var(--rust);
-  border-radius:3px;
-  padding:10px 14px;
-  width:290px;
+  background:#f6ead2;
+  border:1px solid rgba(176,144,96,.8);
+  border-left:5px solid var(--rust);
+  border-radius:0;
+  padding:16px 18px 17px;
+  width:340px;
   max-width:100%;
-  box-shadow:0 6px 24px rgba(0,0,0,.25);
+  box-shadow:0 18px 42px rgba(26,14,6,.3),0 0 0 1px rgba(255,255,255,.22) inset;
   opacity:0;
-  transform:translateY(8px);
+  transform:translateY(-10px);
   transition:opacity .25s,transform .25s;
 }
 .ach-toast.show{opacity:1;transform:translateY(0)}
-.ach-toast-title{display:block;font-family:'Marcellus',serif;font-size:12px;letter-spacing:.04em;color:var(--rust-dark);margin-bottom:2px}
-.ach-toast-body{display:block;font-size:13px;color:var(--ink);line-height:1.4}
+.ach-toast-title{display:block;font-family:'Marcellus',serif;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--rust-dark);margin-bottom:5px}
+.ach-toast-body{display:block;font-size:15px;color:var(--ink);line-height:1.38}
 
 /* Unlock toasts get a gold border and a one-off shimmer sweep, distinguishing
    them at a glance from ordinary progress toasts. */
 .ach-toast.unlock{
-  border-color:var(--line);
+  border-color:rgba(201,154,63,.9);
   border-left-color:#c99a3f;
-  box-shadow:0 6px 24px rgba(0,0,0,.25),0 0 0 1px rgba(201,154,63,.35);
+  box-shadow:0 20px 48px rgba(26,14,6,.34),0 0 0 1px rgba(201,154,63,.38);
   position:relative;
   overflow:hidden;
 }
@@ -365,7 +365,7 @@ h1{
   to{left:130%}
 }
 @media(prefers-reduced-motion:reduce){.ach-toast.unlock.show::before{animation:none}}
-@media(max-width:480px){.ach-toast-stack{right:8px;bottom:8px}.ach-toast{width:calc(100vw - 16px)}}
+@media(max-width:480px){.ach-toast-stack{right:8px;top:8px}.ach-toast{width:calc(100vw - 16px)}}
 .source-list{list-style:none;margin:13px 0 0;padding:0}
 .source-list li+li{margin-top:7px}
 .source-list a{color:var(--rust-dark);font-size:13px}

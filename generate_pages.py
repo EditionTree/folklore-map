@@ -275,12 +275,7 @@ def prettify_region(tag):
 
 
 def banner_html():
-    return ('<header class="site-banner"><a class="banner-link" href="' + BASE + '/">'
-            '<img src="' + BASE + '/green-man.png" class="banner-emblem" alt=""/>'
-            '<span class="banner-text"><span class="banner-title"><i>&#10022;</i> '
-            'Folklore Finder <i>&#10022;</i></span>'
-            '<span class="banner-sub">An Atlas of Myths, Legends, &amp; Stories</span>'
-            '</span></a></header>')
+    return ""
 
 
 # Site-wide top navigation (shown on every page except the interactive map).
@@ -435,6 +430,16 @@ def build_browse_page(page_title, desc, url, h1, intro, crumb, nav_html, cards_h
                       ogimage=None, jsonld=None, head_extra="", after_grid="", nav_active="browse",
                       hero_html="", extra_sections="", after_intro="", wrap_class="", track_script=""):
     jsonld_html = ('<script type="application/ld+json">' + jsonld + '</script>\n') if jsonld else ''
+    page_breadcrumb = breadcrumb_list([
+        ("Home", BASE + "/"),
+        ("All legends", f"{BASE}/{OUT_DIR}/"),
+        (crumb, url),
+    ])
+    breadcrumb_jsonld_html = (
+        '<script type="application/ld+json">' +
+        json.dumps(page_breadcrumb, ensure_ascii=False) +
+        '</script>\n'
+    )
     return ('<!DOCTYPE html>\n<html lang="en"><head><meta charset="UTF-8"/>\n'
             '<script>if(location.hostname.indexOf("pages.dev")>-1){location.replace("https://folklorefinder.uk"+location.pathname+location.search+location.hash);}</script>\n'
             '<script defer src=\'https://static.cloudflareinsights.com/beacon.min.js\' data-cf-beacon=\'{"token": "64d1fd37251d426f8a0d8fbc83ea350b"}\'></script>\n'
@@ -450,7 +455,7 @@ def build_browse_page(page_title, desc, url, h1, intro, crumb, nav_html, cards_h
             '<meta property="og:image" content="' + (ogimage or (BASE + '/og/preview.png')) + '"/>\n'
             '<link rel="preconnect" href="https://fonts.googleapis.com">\n'
             '<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">\n'
-            + jsonld_html + head_extra
+            + jsonld_html + breadcrumb_jsonld_html + head_extra
             + '<style>' + BROWSE_STYLE + TOPNAV_CSS + '</style></head>\n<body class="catalogue-page">\n'
             + topnav_html(nav_active) + '\n' + banner_html() + '\n<div class="wrap' + (' ' + wrap_class if wrap_class else '') + '">\n'
             '<nav class="crumb"><a href="' + BASE + '/">Home</a> &#8250; '
@@ -487,6 +492,43 @@ def short_desc(summary, limit=155):
     if len(s) <= limit:
         return s
     return s[:limit].rsplit(" ", 1)[0] + "…"
+
+
+def absolute_asset_url(path):
+    """Convert a repo-relative asset path to the canonical public URL."""
+    return f"{BASE}/{(path or '').replace(os.sep, '/')}".rstrip("/")
+
+
+def image_object(path, name, caption="", width=None, height=None):
+    """Schema.org ImageObject for crawlable generated artwork."""
+    if not path:
+        return None
+    obj = {
+        "@type": "ImageObject",
+        "url": absolute_asset_url(path),
+        "contentUrl": absolute_asset_url(path),
+        "name": name,
+    }
+    if caption:
+        obj["caption"] = caption
+        obj["description"] = caption
+    if width:
+        obj["width"] = width
+    if height:
+        obj["height"] = height
+    return obj
+
+
+def breadcrumb_list(items):
+    """Schema.org BreadcrumbList from [(label, url), ...]."""
+    return {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": i + 1, "name": label, "item": url}
+            for i, (label, url) in enumerate(items)
+        ],
+    }
 
 
 def host_of(url):
@@ -842,7 +884,7 @@ FEATURED_PAGE = Template("""<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha384-sHL9NAb7lN7rfvG5lfHpm643Xkcjzp4jFvuavGOndn6pjVqS6ny56CAt3nsEVT4H" crossorigin="anonymous"/>
-<link rel="stylesheet" href="/legend-page.css?v=20260628a"/>
+<link rel="stylesheet" href="/legend-page.css?v=20260706a"/>
 <script type="application/ld+json">$jsonld</script>
 $breadcrumb_jsonld
 </head>
@@ -1361,7 +1403,6 @@ def build():
                       "publisher": {"@type": "Organization", "name": s["publisher"]}}
                      for s in srcs]
             ld["isBasedOn"] = based[0] if len(based) == 1 else based
-        jsonld = json.dumps(ld, ensure_ascii=False)
         # date_added/date_modified stay in the JSON-LD and sitemap, but are not
         # shown on the page (looked out of place).
 
@@ -1403,6 +1444,44 @@ def build():
             related_html = ""
 
         page_path_url = f"{BASE}/{OUT_DIR}/{slug}"
+        featured_meta = featured_pages.get(name, {})
+        hero_image_path = featured_meta.get("image", "")
+        if hero_image_path:
+            hero_schema_image = image_object(
+                hero_image_path,
+                featured_meta.get("alt") or f"{name} hero artwork",
+                featured_meta.get("caption", ""),
+                1600,
+                900,
+            )
+            if hero_schema_image:
+                ld["image"] = hero_schema_image
+                ld["thumbnailUrl"] = hero_schema_image["contentUrl"]
+                ld["primaryImageOfPage"] = hero_schema_image
+        ld["mainEntityOfPage"] = {
+            "@type": "WebPage",
+            "@id": page_path_url,
+            "url": page_path_url,
+            "name": f"{name} — Folklore Finder",
+        }
+        ld["keywords"] = [catname, leg.get("region", "")] + sorted(leg.get("tags") or [])
+        if rel:
+            ld["hasPart"] = {
+                "@type": "ItemList",
+                "name": f"Related legends for {name}",
+                "itemListOrder": "https://schema.org/ItemListOrderAscending",
+                "numberOfItems": len(rel),
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": i + 1,
+                        "url": f"{BASE}/{OUT_DIR}/{slugmap[r['name']]}",
+                        "name": r["name"],
+                    }
+                    for i, r in enumerate(rel)
+                ],
+            }
+        jsonld = json.dumps(ld, ensure_ascii=False)
 
         # Breadcrumb: Legends > Category > Region > Name (visible + structured data)
         crumb_parts = breadcrumb_for(leg)
@@ -1416,7 +1495,7 @@ def build():
         crumb_items.append({"@type": "ListItem", "position": len(crumb_parts) + 1,
                             "name": name, "item": page_path_url})
         breadcrumb_jsonld = '<script type="application/ld+json">' + json.dumps(
-            {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": crumb_items},
+            breadcrumb_list([(item["name"], item["item"]) for item in crumb_items]),
             ensure_ascii=False) + '</script>'
 
         out = LEGACY_PAGE.format(
@@ -1481,6 +1560,25 @@ def build():
         label = cats.get(c, c)
         url = f"{BASE}/{OUT_DIR}/category/{c}"
         cards = "\n".join(browse_card(l, slugmap, cats, meta, show_cat=False) for l in entries)
+        cat_jsonld = json.dumps({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": label,
+            "description": f"Browse {len(entries)} {label.lower()} from across British and Irish folklore.",
+            "url": url,
+            "isPartOf": {"@type": "WebSite", "name": "Folklore Finder", "url": BASE + "/"},
+            "mainEntity": {
+                "@type": "ItemList",
+                "numberOfItems": len(entries),
+                "itemListElement": [
+                    {"@type": "ListItem", "position": i + 1,
+                     "url": f"{BASE}/{OUT_DIR}/{slugmap[l['name']]}", "name": l["name"]}
+                    for i, l in enumerate(entries)
+                ],
+            },
+            "image": image_object(f"og/category-{c}.png", f"{label} folklore category artwork")
+            if c in meta else image_object("og/preview.png", "Folklore Finder preview artwork"),
+        }, ensure_ascii=False)
         page = build_browse_page(
             page_title=f"{label} of Britain & Ireland — Folklore Map",
             desc=f"Browse {len(entries)} {label.lower()} from across British and Irish folklore — each pinned to the place its story is rooted.",
@@ -1491,6 +1589,7 @@ def build():
             nav_html=nav_links(cat_nav_items, c),
             cards_html=cards,
             ogimage=f"{BASE}/og/category-{c}.png" if c in meta else None,
+            jsonld=cat_jsonld,
         )
         with io.open(os.path.join(cat_dir, f"{c}.html"), "w", encoding="utf-8") as f:
             f.write(page)
@@ -1506,6 +1605,24 @@ def build():
         rn = prettify_region(t)
         url = f"{BASE}/{OUT_DIR}/region/{t}"
         cards = "\n".join(browse_card(l, slugmap, cats, meta, show_cat=True) for l in entries)
+        region_jsonld = json.dumps({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": f"Folklore of {rn}",
+            "description": f"{len(entries)} myths, legends, ghosts and folklore entries rooted in {rn}.",
+            "url": url,
+            "isPartOf": {"@type": "WebSite", "name": "Folklore Finder", "url": BASE + "/"},
+            "about": {"@type": "Place", "name": rn},
+            "mainEntity": {
+                "@type": "ItemList",
+                "numberOfItems": len(entries),
+                "itemListElement": [
+                    {"@type": "ListItem", "position": i + 1,
+                     "url": f"{BASE}/{OUT_DIR}/{slugmap[l['name']]}", "name": l["name"]}
+                    for i, l in enumerate(entries)
+                ],
+            },
+        }, ensure_ascii=False)
         page = build_browse_page(
             page_title=f"Folklore of {rn} — Myths, Legends & Ghosts",
             desc=f"{len(entries)} myths, legends, ghosts and folklore entries rooted in {rn}.",
@@ -1515,6 +1632,7 @@ def build():
             crumb=rn,
             nav_html=nav_links(nation_nav_items, t),
             cards_html=cards,
+            jsonld=region_jsonld,
         )
         with io.open(os.path.join(reg_dir, f"{t}.html"), "w", encoding="utf-8") as f:
             f.write(page)
@@ -1552,7 +1670,12 @@ def build():
                 )
                 # Page 2+ get a "(page N of M)" suffix in title/intro for clarity.
                 page_tag = "" if total_pages == 1 else f" (page {page_no} of {total_pages})"
-                collection_jsonld = json.dumps({
+                member_images = [
+                    featured_pages.get(m["name"], {}).get("image", "") for m in members
+                ]
+                member_images = [p for p in member_images if p]
+                hero_path = col.get("hero_image") or (member_images[0] if member_images else "")
+                collection_ld = {
                     "@context": "https://schema.org",
                     "@type": "CollectionPage",
                     "name": col["title"] + page_tag,
@@ -1569,7 +1692,19 @@ def build():
                             for i, m in enumerate(page_members)
                         ],
                     },
-                }, ensure_ascii=False)
+                }
+                if hero_path:
+                    collection_ld["primaryImageOfPage"] = image_object(
+                        hero_path,
+                        f"{col['title']} collection artwork",
+                        col.get("hero_credit", ""),
+                    )
+                if member_images:
+                    collection_ld["image"] = [
+                        image_object(p, f"{col['title']} gallery image")
+                        for p in member_images[:8]
+                    ]
+                collection_jsonld = json.dumps(collection_ld, ensure_ascii=False)
                 # rel=prev/next help crawlers understand the paginated series.
                 rel_links = ""
                 if page_no > 1:
@@ -1581,11 +1716,6 @@ def build():
                 # collections, resources) — only on page 1; later pages stay plain.
                 hero_html, extra_sections = "", ""
                 if page_no == 1:
-                    member_images = [
-                        featured_pages.get(m["name"], {}).get("image", "") for m in members
-                    ]
-                    member_images = [p for p in member_images if p]
-                    hero_path = col.get("hero_image") or (member_images[0] if member_images else "")
                     if hero_path:
                         hero_credit_html = (
                             f'<span class="col-hero-credit">{esc(col["hero_credit"])}</span>'
@@ -2006,12 +2136,36 @@ h1{{font-family:'Marcellus',serif;font-size:clamp(30px,3vw,44px);font-weight:400
     urls += [f"{BASE}/{OUT_DIR}/{slugmap[l['name']]}" for l in legends]
     lastmod_map = {f"{BASE}/{OUT_DIR}/{slugmap[l['name']]}": (l.get("date_modified") or today)
                    for l in legends}
+    sitemap_images = {}
+    for l in legends:
+        featured = featured_pages.get(l["name"], {})
+        image_path = featured.get("image", "")
+        if image_path:
+            sitemap_images[f"{BASE}/{OUT_DIR}/{slugmap[l['name']]}"] = {
+                "loc": absolute_asset_url(image_path),
+                "title": featured.get("alt") or f"{l['name']} hero artwork",
+                "caption": featured.get("caption", ""),
+            }
     sm = ['<?xml version="1.0" encoding="UTF-8"?>',
-          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
+          'xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">']
     for i, u in enumerate(urls):
         pr = "1.0" if i == 0 else ("0.8" if i == 1 else "0.6")
         lm = lastmod_map.get(u, today)
-        sm.append(f"  <url><loc>{u}</loc><lastmod>{lm}</lastmod><priority>{pr}</priority></url>")
+        img = sitemap_images.get(u)
+        if img:
+            image_bits = [
+                f"    <image:loc>{esc(img['loc'])}</image:loc>",
+                f"    <image:title>{esc(img['title'])}</image:title>",
+            ]
+            if img.get("caption"):
+                image_bits.append(f"    <image:caption>{esc(img['caption'])}</image:caption>")
+            sm.append(
+                f"  <url><loc>{u}</loc><lastmod>{lm}</lastmod><priority>{pr}</priority>\n"
+                "  <image:image>\n" + "\n".join(image_bits) + "\n  </image:image></url>"
+            )
+        else:
+            sm.append(f"  <url><loc>{u}</loc><lastmod>{lm}</lastmod><priority>{pr}</priority></url>")
     sm.append("</urlset>")
     with io.open("sitemap.xml", "w", encoding="utf-8") as f:
         f.write("\n".join(sm) + "\n")

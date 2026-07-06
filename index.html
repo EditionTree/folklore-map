@@ -596,7 +596,7 @@ footer a{color:var(--ink-light)}
 .topnav a.active{color:var(--accent-warm)}
 @media(max-width:640px){.topnav{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;scrollbar-width:none}.topnav::-webkit-scrollbar{display:none}.topnav a{flex:0 0 auto;white-space:nowrap}}
 </style>
-<link rel="stylesheet" href="folklorefinder.css?v=20260629b"/>
+<link rel="stylesheet" href="folklorefinder.css?v=20260706a"/>
 </head>
 <body class="ff-paper home-page">
 <nav class="topnav">
@@ -654,6 +654,7 @@ footer a{color:var(--ink-light)}
       <a class="lotw-maplink" id="lotwMapLink" href="./map">Show on the map &#8594;</a>
 
       <div class="hero-submit-cta">
+        <button class="hero-submit-close" type="button" aria-label="Hide submit a legend prompt">&times;</button>
         <p class="hero-submit-lead">Know a legend we've missed?</p>
         <a class="hero-submit-link" href="./map?submit=1">Submit a legend &#8594;</a>
       </div>
@@ -665,6 +666,20 @@ footer a{color:var(--ink-light)}
 
 <script>
 (function(){
+  var submitPrompt = document.querySelector('.hero-submit-cta');
+  var submitPromptClose = document.querySelector('.hero-submit-close');
+  try {
+    if (submitPrompt && localStorage.getItem('ff_submit_prompt_closed_v1') === '1') {
+      submitPrompt.classList.add('is-hidden');
+    }
+  } catch(e) {}
+  if (submitPromptClose && submitPrompt) {
+    submitPromptClose.addEventListener('click', function(){
+      submitPrompt.classList.add('is-hidden');
+      try { localStorage.setItem('ff_submit_prompt_closed_v1', '1'); } catch(e) {}
+    });
+  }
+
   let LEGENDS = [];
   let IMAGED = new Set(); // slugs with a hero image (legend-images/manifest.json)
 
@@ -898,3 +913,4 @@ footer a{color:var(--ink-light)}
 </script>
 </body>
 </html>
+

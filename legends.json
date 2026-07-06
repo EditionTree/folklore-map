@@ -1109,6 +1109,17 @@
         "haunting",
         "england",
         "norfolk"
+      ],
+      "origin_date": "Uncertain; oral tradition likely predates surviving records",
+      "earliest_record": "1577 pamphlet by Rev. Abraham Fleming, describing the Bungay church incident",
+      "period": "Tudor Britain",
+      "historical_setting": "Elizabethan East Anglia, a region of scattered parishes, marshland and coastal heath",
+      "cultural_tradition": "English folklore",
+      "origin_type": "oral-tradition",
+      "dating_confidence": "medium",
+      "alt_names": [
+        "Old Shuck",
+        "Shuck"
       ]
     },
     {
@@ -5887,7 +5898,17 @@
         "england",
         "somerset"
       ],
-      "detail": "Arthur is the once and future king of British legend: a war-leader who, in the chaos following the Roman withdrawal, is said to have united the Britons and held back the advancing Saxons through a series of battles culminating in the great victory at Mount Badon. Around this possibly historical figure gathered the richest story-cycle in these islands — the sword drawn from the stone, the fellowship of the Round Table at Camelot, the wizard Merlin, the quest for the Holy Grail, the love of Lancelot and Guinevere, and the final betrayal that brought it all down at the Battle of Camlann.\n\nHe is woven into the landscape from Cornwall to Scotland, but the West Country holds his strongest claims: Glastonbury, identified since the Middle Ages with the Isle of Avalon where the mortally wounded king was carried, and where the monks claimed to have unearthed his grave in 1191. Tradition holds that Arthur never truly died but sleeps beneath a hill with his knights, ready to return in Britain's hour of greatest need. His legend was shaped above all by Geoffrey of Monmouth's 'History of the Kings of Britain' (c.1136) and Sir Thomas Malory's 'Le Morte d'Arthur' (1485), and has never loosened its grip on the imagination since."
+      "detail": "Arthur is the once and future king of British legend: a war-leader who, in the chaos following the Roman withdrawal, is said to have united the Britons and held back the advancing Saxons through a series of battles culminating in the great victory at Mount Badon. Around this possibly historical figure gathered the richest story-cycle in these islands — the sword drawn from the stone, the fellowship of the Round Table at Camelot, the wizard Merlin, the quest for the Holy Grail, the love of Lancelot and Guinevere, and the final betrayal that brought it all down at the Battle of Camlann.\n\nHe is woven into the landscape from Cornwall to Scotland, but the West Country holds his strongest claims: Glastonbury, identified since the Middle Ages with the Isle of Avalon where the mortally wounded king was carried, and where the monks claimed to have unearthed his grave in 1191. Tradition holds that Arthur never truly died but sleeps beneath a hill with his knights, ready to return in Britain's hour of greatest need. His legend was shaped above all by Geoffrey of Monmouth's 'History of the Kings of Britain' (c.1136) and Sir Thomas Malory's 'Le Morte d'Arthur' (1485), and has never loosened its grip on the imagination since.",
+      "origin_date": "Uncertain; if based on a historical figure, likely late 5th to early 6th century",
+      "earliest_record": "Historia Brittonum (c. 828), attributed to Nennius",
+      "period": "Sub-Roman Britain",
+      "historical_setting": "Post-Roman Britain during the Anglo-Saxon settlement period",
+      "cultural_tradition": "Brythonic/Welsh tradition, later elaborated in Anglo-Norman and French romance",
+      "origin_type": "literary",
+      "dating_confidence": "low",
+      "alt_names": [
+        "Arthur Pendragon"
+      ]
     },
     {
       "name": "Kirk Yetholm, Seat of the Gypsy Kings",

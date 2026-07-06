@@ -47,10 +47,13 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Spectral',seri
   position:relative;
   background:linear-gradient(135deg,rgba(196,98,42,0.18) 0%,rgba(176,144,96,0.06) 35%,transparent 60%),
              linear-gradient(180deg,#1a0e06 0%,#2c1510 55%,#3d1e0c 100%);
-  min-height:480px;
-  padding:60px 20px 70px;
+  min-height:calc(100vh - 53px);
+  display:flex;
+  align-items:center;
+  padding:48px 20px;
   overflow:hidden;
 }
+@media(max-width:640px){.hero{min-height:auto}}
 .hero::before{
   content:'';
   position:absolute;inset:0;
@@ -500,6 +503,31 @@ p{margin-bottom:14px;font-size:16.5px}
 }
 .howlink a:hover{border-bottom-color:var(--accent)}
 
+/* ── HERO SUBMIT CTA (compact, sits beneath the Weekly Legend) ── */
+.hero-submit-cta{
+  position:relative;
+  margin-top:18px;
+  padding:18px 22px;
+  background:rgba(242,232,213,0.94);
+  border:1px solid var(--gold);
+  border-radius:6px;
+  text-align:center;
+  overflow:hidden;
+}
+.hero-submit-cta::before{
+  content:'';position:absolute;top:-14px;right:-14px;width:88px;height:88px;
+  opacity:.16;pointer-events:none;
+  background:url('assets/ornaments/generated-variants/oak-corner-upper-right.png') right top/contain no-repeat;
+}
+.hero-submit-cta h2{
+  font-family:'Marcellus',serif;font-size:15.5px;font-weight:400;
+  color:var(--ink);letter-spacing:.02em;margin-bottom:5px;position:relative;z-index:1;
+}
+.hero-submit-cta p{
+  color:var(--ink-light);font-size:13.5px;margin:0 0 12px;position:relative;z-index:1;
+}
+.hero-submit-cta .btn{padding:8px 18px;font-size:11.5px;position:relative;z-index:1}
+
 /* ── BOTTOM CTA ── */
 .bottom-cta{
   margin-top:52px;
@@ -621,35 +649,14 @@ footer a{color:var(--ink-light)}
       </a>
       <a class="lotw-maplink" id="lotwMapLink" href="./map">Show on the map &#8594;</a>
     </aside>
-  </div>
-</section>
 
-<!-- ── STATS ── -->
-<!-- ── BODY ── -->
-<div class="wrap">
-
-<div class="landing-lower-grid">
-
-  <!-- Recently added -->
-  <section class="section recent-panel">
-    <div class="section-rule"><span>Recently added</span></div>
-    <p class="recent-intro">The latest researched stories to join the archive.</p>
-    <div class="recent-grid" id="recentGrid"></div>
-  </section>
-
-  <!-- Submit CTA -->
-  <div class="bottom-cta">
-    <h2>Know a legend we've missed?</h2>
-    <p>The islands hold far more than any one map can hold, and local stories are easily lost. Share a lead and we'll research and verify it before it joins the map.</p>
-    <div class="bottom-cta-btns">
+    <div class="hero-submit-cta">
+      <h2>Know a legend we've missed?</h2>
+      <p>Share a lead and we'll research and verify it before it joins the map.</p>
       <a class="btn btn-primary" href="./map?submit=1">Submit a legend</a>
-      <a class="btn btn-secondary" href="./map">Explore the map</a>
     </div>
   </div>
-
-</div>
-
-</div>
+</section>
 
 <footer>Folklore Finder &nbsp;&#183;&nbsp; An atlas of myths, legends, &amp; stories &nbsp;&#183;&nbsp; &copy; EditionTree &nbsp;&#183;&nbsp; <a href="about">About</a> &nbsp;&#183;&nbsp; <a href="updates">Updates</a> &nbsp;&#183;&nbsp; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener">&#9749; Ko-fi</a> &nbsp;&#183;&nbsp; <a href="privacy">Privacy</a></footer>
 
@@ -734,30 +741,6 @@ footer a{color:var(--ink-light)}
     probe.src = imgUrl;
   }
 
-  function renderRecent(){
-    const recent = LEGENDS
-      .filter(l => l.date_added)
-      .sort((a,b) => (a.date_added < b.date_added ? 1 : a.date_added > b.date_added ? -1 : a.name.localeCompare(b.name)))
-      .slice(0, 8);
-    const grid = document.getElementById('recentGrid');
-    grid.innerHTML = '';
-    recent.forEach((l, i) => {
-      const a = document.createElement('a');
-      a.className = 'recent-card';
-      a.href = articleLink(l.name);
-      const ix = document.createElement('span'); ix.className = 'recent-index'; ix.textContent = String(i + 1).padStart(2, '0');
-      const nm = document.createElement('div'); nm.className = 'recent-name'; nm.textContent = l.name;
-      const rg = document.createElement('div'); rg.className = 'recent-region'; rg.textContent = l.region || '';
-      const dt = document.createElement('time'); dt.className = 'recent-date'; dt.dateTime = l.date_added;
-      dt.textContent = new Date(l.date_added + 'T00:00:00').toLocaleDateString('en-GB', {day:'numeric', month:'short', year:'numeric'});
-      const ct = document.createElement('div'); ct.className = 'recent-cat';
-      ct.textContent = catLabel(l.category);
-      ct.style.background = catColour(l.category);
-      a.appendChild(ix); a.appendChild(nm); a.appendChild(rg); a.appendChild(dt); a.appendChild(ct);
-      grid.appendChild(a);
-    });
-  }
-
   // Load the hero-image manifest first (best-effort) so Legend of the Week can
   // prefer entries with artwork, then load the dataset and render.
   fetch('./legend-images/manifest.json')
@@ -772,7 +755,6 @@ footer a{color:var(--ink-light)}
           const n = data.total || LEGENDS.length;
           document.getElementById('heroCount').textContent = n;
           renderLotw();
-          renderRecent();
         });
     });
 

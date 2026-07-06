@@ -408,12 +408,19 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 .col-resources{list-style:none}
 .col-resources li+li{margin-top:6px}
 .col-resources a{color:#8b3a1a;font-size:14px}
+.wrap.ornamented{position:relative}
+.wrap.ornamented::before{
+  content:"";position:absolute;top:-10px;right:-18px;width:150px;height:150px;
+  opacity:.1;pointer-events:none;z-index:0;
+  background:url('/assets/ornaments/generated-variants/oak-corner-upper-right.png') right top/contain no-repeat;
+}
+.wrap.ornamented > *{position:relative;z-index:1}
 """
 
 
 def build_browse_page(page_title, desc, url, h1, intro, crumb, nav_html, cards_html,
                       ogimage=None, jsonld=None, head_extra="", after_grid="", nav_active="browse",
-                      hero_html="", extra_sections="", after_intro=""):
+                      hero_html="", extra_sections="", after_intro="", wrap_class=""):
     jsonld_html = ('<script type="application/ld+json">' + jsonld + '</script>\n') if jsonld else ''
     return ('<!DOCTYPE html>\n<html lang="en"><head><meta charset="UTF-8"/>\n'
             '<script>if(location.hostname.indexOf("pages.dev")>-1){location.replace("https://folklorefinder.uk"+location.pathname+location.search+location.hash);}</script>\n'
@@ -432,7 +439,7 @@ def build_browse_page(page_title, desc, url, h1, intro, crumb, nav_html, cards_h
             '<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">\n'
             + jsonld_html + head_extra
             + '<style>' + BROWSE_STYLE + TOPNAV_CSS + '</style></head>\n<body class="catalogue-page">\n'
-            + topnav_html(nav_active) + '\n' + banner_html() + '\n<div class="wrap">\n'
+            + topnav_html(nav_active) + '\n' + banner_html() + '\n<div class="wrap' + (' ' + wrap_class if wrap_class else '') + '">\n'
             '<nav class="crumb"><a href="' + BASE + '/">Home</a> &#8250; '
             '<a href="' + BASE + '/' + OUT_DIR + '/">All legends</a> &#8250; '
             '<span>' + esc(crumb) + '</span></nav>\n'
@@ -1635,6 +1642,7 @@ def build():
                     hero_html=hero_html,
                     extra_sections=extra_sections,
                     after_intro=f'<p style="margin:-8px 0 20px"><a class="back" href="{BASE}/map?collection={esc(slug)}">View this collection on the Map &#8594;</a></p>\n',
+                    wrap_class="ornamented",
                 )
                 fname = f"{slug}.html" if page_no == 1 else f"{slug}-{page_no}.html"
                 with io.open(os.path.join(col_dir, fname), "w", encoding="utf-8") as f:
@@ -1686,6 +1694,7 @@ def build():
                 cards_html="\n".join(land_cards),
                 jsonld=land_jsonld,
                 nav_active="collections",
+                wrap_class="ornamented",
             )
             with io.open(os.path.join(OUT_DIR, "collections.html"), "w", encoding="utf-8") as f:
                 f.write(land_page)
@@ -1745,6 +1754,7 @@ def build():
                 jsonld=period_jsonld,
                 nav_active="periods",
                 extra_sections=extra_sections,
+                wrap_class="ornamented",
             )
             with io.open(os.path.join(period_dir, f"{slug}.html"), "w", encoding="utf-8") as f:
                 f.write(page)
@@ -1788,6 +1798,7 @@ def build():
             cards_html="\n".join(timeline_cards),
             jsonld=timeline_jsonld,
             nav_active="periods",
+            wrap_class="ornamented",
         )
         with io.open(os.path.join(OUT_DIR, "periods.html"), "w", encoding="utf-8") as f:
             f.write(timeline_page)

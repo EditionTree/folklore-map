@@ -85,6 +85,14 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Spectral',seri
 .mini-list .card-eyebrow{font-family:'Marcellus',serif;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
 .mini-list .card-title{font-size:14px;font-weight:600}
 .mini-list .card-sub{font-size:11.5px;font-style:italic;color:var(--ink-light)}
+
+/* Recently Added cards — same card format used on the homepage, relocated here. */
+.recent-list{list-style:none;display:flex;flex-direction:column;gap:10px}
+.recent-card{display:block;background:var(--parchment);border:1px solid var(--gold);border-radius:4px;padding:12px 14px;text-decoration:none;color:var(--ink);transition:border-color .15s,transform .1s}
+.recent-card:hover{border-color:var(--accent-warm);transform:translateY(-2px)}
+.recent-name{font-family:'Marcellus',serif;font-size:14px;color:var(--ink);margin-bottom:2px;line-height:1.25}
+.recent-region{font-style:italic;font-size:11.5px;color:var(--ink-light)}
+.recent-cat{display:inline-block;font-size:9px;letter-spacing:.06em;text-transform:uppercase;color:#fff;padding:2px 7px;border-radius:3px;margin-top:7px;line-height:1.5}
 .empty-note{font-size:13px;font-style:italic;color:var(--ink-light)}
 
 /* ── RESEARCH JOURNAL CALLOUT ── */
@@ -176,7 +184,7 @@ footer a{color:var(--ink-light)}
     <aside class="updates-col-side">
       <section class="section">
         <div class="section-rule"><span>Recently Added</span></div>
-        <ul id="recentLegends" class="mini-list"></ul>
+        <ul id="recentLegends" class="recent-list"></ul>
       </section>
 
       <section class="section">
@@ -270,7 +278,7 @@ footer a{color:var(--ink-light)}
   // ── Recently added legends and new collections. Populated at build time by
   // generate_pages.py (see build_recent_legends()/build_new_collections()); the
   // empty-array fallbacks below only show if the build step hasn't run yet. ──
-  const RECENT_LEGENDS = [{"slug": "bessie-millie-of-stromness", "name": "Bessie Millie of Stromness", "date_added": "28 June 2026", "region": "Stromness, Orkney"}, {"slug": "bignor-hill-dragon", "name": "Bignor Hill Dragon", "date_added": "28 June 2026", "region": "West Sussex, England"}, {"slug": "brutus-of-troy", "name": "Brutus of Troy", "date_added": "28 June 2026", "region": "Totnes, Devon"}, {"slug": "cliodhna", "name": "Clíodhna", "date_added": "28 June 2026", "region": "Glandore, County Cork, Ireland"}, {"slug": "cormoran-the-giant-of-st-michael-s-mount", "name": "Cormoran, the Giant of St Michael's Mount", "date_added": "28 June 2026", "region": "St Michael's Mount, Cornwall"}, {"slug": "erne-of-lough-erne", "name": "Erne of Lough Erne", "date_added": "28 June 2026", "region": "County Fermanagh, Northern Ireland"}, {"slug": "fairy-invasion-of-guernsey", "name": "Fairy Invasion of Guernsey", "date_added": "28 June 2026", "region": "Guernsey, Channel Islands"}, {"slug": "giant-of-grabbist", "name": "Giant of Grabbist", "date_added": "28 June 2026", "region": "Dunster, Somerset"}];
+  const RECENT_LEGENDS = [{"slug": "bessie-millie-of-stromness", "name": "Bessie Millie of Stromness", "date_added": "28 June 2026", "region": "Stromness, Orkney", "category": "Witches", "colour": "#3a2a4e"}, {"slug": "bignor-hill-dragon", "name": "Bignor Hill Dragon", "date_added": "28 June 2026", "region": "West Sussex, England", "category": "Dragons", "colour": "#8b2a1a"}, {"slug": "brutus-of-troy", "name": "Brutus of Troy", "date_added": "28 June 2026", "region": "Totnes, Devon", "category": "Legendary Figures", "colour": "#6a3a2a"}, {"slug": "cliodhna", "name": "Clíodhna", "date_added": "28 June 2026", "region": "Glandore, County Cork, Ireland", "category": "Deities", "colour": "#1e4a3a"}, {"slug": "cormoran-the-giant-of-st-michael-s-mount", "name": "Cormoran, the Giant of St Michael's Mount", "date_added": "28 June 2026", "region": "St Michael's Mount, Cornwall", "category": "Giants", "colour": "#4a3820"}, {"slug": "erne-of-lough-erne", "name": "Erne of Lough Erne", "date_added": "28 June 2026", "region": "County Fermanagh, Northern Ireland", "category": "Deities", "colour": "#1e4a3a"}, {"slug": "fairy-invasion-of-guernsey", "name": "Fairy Invasion of Guernsey", "date_added": "28 June 2026", "region": "Guernsey, Channel Islands", "category": "Fae & Spirits", "colour": "#7e5577"}, {"slug": "giant-of-grabbist", "name": "Giant of Grabbist", "date_added": "28 June 2026", "region": "Dunster, Somerset", "category": "Giants", "colour": "#4a3820"}];
   const NEW_COLLECTIONS = [];
 
   const rl = document.getElementById('recentLegends');
@@ -278,10 +286,14 @@ footer a{color:var(--ink-light)}
     RECENT_LEGENDS.forEach(function(leg){
       var li = document.createElement('li');
       var a = document.createElement('a');
+      a.className = 'recent-card';
       a.href = 'legends/' + leg.slug;
-      a.innerHTML = '<span class="card-eyebrow">' + (leg.date_added || '') + '</span>'
-        + '<span class="card-title">' + leg.name + '</span>'
-        + '<span class="card-sub">' + (leg.region || '') + '</span>';
+      var nm = document.createElement('div'); nm.className = 'recent-name'; nm.textContent = leg.name;
+      var rg = document.createElement('div'); rg.className = 'recent-region'; rg.textContent = leg.region || '';
+      var ct = document.createElement('div'); ct.className = 'recent-cat';
+      ct.textContent = leg.category || '';
+      ct.style.background = leg.colour || '#8b3a1a';
+      a.appendChild(nm); a.appendChild(rg); a.appendChild(ct);
       li.appendChild(a);
       rl.appendChild(li);
     });

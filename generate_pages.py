@@ -935,7 +935,7 @@ def update_homepage_count(total):
 NEW_COLLECTIONS_STATE_FILE = "collections_state.json"
 
 
-def update_whats_new_page(recent, built_collections, slugmap, limit=8):
+def update_whats_new_page(recent, built_collections, slugmap, cats, meta, limit=8):
     """Inject the Recently Added Legends / New Collections cards into updates.html.
     Release notes further down the page stay hand-written — this only touches the
     two placeholder arrays. "New" collections are those not seen in a previous
@@ -947,6 +947,8 @@ def update_whats_new_page(recent, built_collections, slugmap, limit=8):
             "name": l["name"],
             "date_added": human_date(l.get("date_added")),
             "region": l.get("region", ""),
+            "category": cats.get(l.get("category", ""), l.get("category", "")),
+            "colour": meta.get(l.get("category", ""), {}).get("colour", "#8b3a1a"),
         }
         for l in recent[:limit]
     ]
@@ -2043,7 +2045,7 @@ h1{{font-family:'Marcellus',serif;font-size:clamp(30px,3vw,44px);font-weight:400
         json.dump(imaged, f, ensure_ascii=False)
 
     # updates.html — Recently Added Legends / New Collections cards
-    update_whats_new_page(recent, built_collections, slugmap)
+    update_whats_new_page(recent, built_collections, slugmap, cats, meta)
 
     print(f"Generated {written} legend pages + index + sitemap ({len(urls)} URLs) + feed.xml ({len(recent)} items) + image manifest ({len(imaged)})")
 

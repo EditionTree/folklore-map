@@ -866,6 +866,8 @@ $hero_caption
           </div>
         </section>
 
+        $historical_context
+
         $featured_nearby
 
         $featured_collections
@@ -1007,6 +1009,34 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
         )
     else:
         editorial_html = ""
+
+    # Historical Context — origin date, earliest record, period, setting,
+    # tradition and dating confidence, when the entry has any of them. Dates in
+    # folklore are often approximate (many traditions predate any surviving
+    # written source), so the caveat is shown whenever the section renders.
+    hist_fields = [
+        ("Approximate Origin", leg.get("origin_date")),
+        ("Earliest Written Record", leg.get("earliest_record")),
+        ("Historical Period", title_case_text(leg.get("period", "")) or None),
+        ("Historical Setting", leg.get("historical_setting")),
+        ("Cultural Tradition", leg.get("cultural_tradition")),
+        ("Dating Confidence", title_case_text(leg.get("dating_confidence", "")) or None),
+    ]
+    hist_items = [(label, val) for label, val in hist_fields if val]
+    if hist_items:
+        hist_facts_html = "".join(
+            f'<div class="fact"><span>{esc(label)}</span><strong>{esc(val)}</strong></div>'
+            for label, val in hist_items
+        )
+        historical_context = (
+            '<section class="side-card side-pad"><p class="side-kicker">Historical Context</p>'
+            '<h2>Origins &amp; Dating</h2>'
+            f'<div class="facts">{hist_facts_html}</div>'
+            '<p class="hist-caveat">Folklore dates are often approximate, especially '
+            'where a story predates any surviving written source.</p></section>'
+        )
+    else:
+        historical_context = ""
 
     fact_items = featured.get("facts") or {
         "Category": catname,
@@ -1157,6 +1187,7 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
         standfirst=esc(inline_text(leg.get("summary", ""))),
         featured_body=featured_body,
         editorial=editorial_html,
+        historical_context=historical_context,
         featured_nearby=featured_nearby,
         featured_collections=featured_collections,
         maplink=esc(maplink),

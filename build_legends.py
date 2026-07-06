@@ -1407,6 +1407,14 @@ def write_to_supabase(
             "detail":     r.get("detail") or None,
             "tags":       r.get("tags") or [],
             "date_added": r.get("date_added") or None,
+            "origin_date":         r.get("origin_date") or None,
+            "earliest_record":     r.get("earliest_record") or None,
+            "period":              r.get("period") or None,
+            "historical_setting":  r.get("historical_setting") or None,
+            "cultural_tradition":  r.get("cultural_tradition") or None,
+            "origin_type":         r.get("origin_type") or None,
+            "dating_confidence":   r.get("dating_confidence") or None,
+            "alt_names":           r.get("alt_names") or [],
         } for r in rows[i:i + batch_size]]
         _supabase_request("POST", url, json=batch)
         success += len(batch)

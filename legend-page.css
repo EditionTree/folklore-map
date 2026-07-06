@@ -322,6 +322,7 @@ h1{
 .fact span{display:block;color:#77634a;font-size:10px;letter-spacing:.1em;text-transform:uppercase}
 .fact strong{font-weight:500;font-size:14px}
 .source-copy{margin:12px 0 0;color:var(--ink-soft);font-size:14px;line-height:1.55}
+.hist-caveat{margin:12px 0 0;color:var(--ink-soft);font-size:12px;font-style:italic;line-height:1.5}
 .source-list{list-style:none;margin:13px 0 0;padding:0}
 .source-list li+li{margin-top:7px}
 .source-list a{color:var(--rust-dark);font-size:13px}

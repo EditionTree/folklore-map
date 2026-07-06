@@ -173,9 +173,9 @@ footer a{color:var(--ink-light)}
           <h3>Behind the scenes on Ko-fi</h3>
           <p>Planned developments, research notes, downloadable field guides and free resources live on the Research Journal — Folklore Finder's companion space on Ko-fi. Core content on the map stays free; the Journal is just somewhere to follow along or, if you'd like, help fund the next round of research and artwork.</p>
           <div class="journal-links">
-            <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener">Research Journal</a>
-            <a href="https://ko-fi.com/folklorefinder/shop" target="_blank" rel="noopener">Field Guides &amp; Downloads</a>
-            <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener">Support the Archive</a>
+            <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener" onclick="trackEvent('research_journal_clicked')">Research Journal</a>
+            <a href="https://ko-fi.com/folklorefinder/shop" target="_blank" rel="noopener" onclick="trackEvent('research_journal_clicked')">Field Guides &amp; Downloads</a>
+            <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener" onclick="trackEvent('research_journal_clicked')">Support the Archive</a>
           </div>
         </div>
       </section>
@@ -235,7 +235,7 @@ footer a{color:var(--ink-light)}
   </div>
 </div>
 
-<footer>Folklore Finder &nbsp;&#183;&nbsp; &copy; EditionTree &nbsp;&#183;&nbsp; <a href="./">Home</a> &nbsp;&#183;&nbsp; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener">&#9749; Ko-fi</a> &nbsp;&#183;&nbsp; <a href="privacy">Privacy</a></footer>
+<footer>Folklore Finder &nbsp;&#183;&nbsp; &copy; EditionTree &nbsp;&#183;&nbsp; <a href="./">Home</a> &nbsp;&#183;&nbsp; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener" onclick="trackEvent('kofi_link_clicked')">&#9749; Ko-fi</a> &nbsp;&#183;&nbsp; <a href="privacy">Privacy</a></footer>
 
 <script>
 (function(){
@@ -373,6 +373,7 @@ async function submitFeedback() {
       submitBtn.textContent = 'Sent';
       document.getElementById('fbMessage').value = '';
       document.getElementById('fbEmail').value = '';
+      trackEvent('feedback_submitted', {item_id: feedback_type});
     } else {
       throw new Error(data.error || 'Unexpected error');
     }
@@ -383,6 +384,17 @@ async function submitFeedback() {
     submitBtn.textContent = 'Send Feedback';
     if (window.turnstile) { try { turnstile.reset(document.querySelector('.cf-turnstile')); } catch(e){} }
   }
+}
+
+function trackEvent(eventType, extra){
+  try{
+    var id=sessionStorage.getItem('ff_session_id');
+    if(!id){ id=Math.random().toString(36).slice(2)+Date.now().toString(36); sessionStorage.setItem('ff_session_id', id); }
+    var payload=Object.assign({event_type:eventType,referring_page:location.pathname,session_id:id}, extra||{});
+    fetch('https://canjzkpvjwvkbjcduaaj.supabase.co/functions/v1/submit-event', {
+      method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(payload), keepalive:true
+    }).catch(function(){});
+  }catch(e){}
 }
 </script>
 </body>

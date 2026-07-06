@@ -1,4 +1,31 @@
 (function(){
+  // ── Lightweight, privacy-conscious event tracking ──────────────────────
+  // Anonymous session id (random, session-scoped, no personal data) lets
+  // events from the same visit be grouped without identifying anyone.
+  var EVENT_ENDPOINT='https://canjzkpvjwvkbjcduaaj.supabase.co/functions/v1/submit-event';
+  function sessionId(){
+    try{
+      var id=sessionStorage.getItem('ff_session_id');
+      if(!id){ id=Math.random().toString(36).slice(2)+Date.now().toString(36); sessionStorage.setItem('ff_session_id', id); }
+      return id;
+    }catch(e){ return null; }
+  }
+  function trackEvent(eventType, extra){
+    try{
+      var payload=Object.assign({
+        event_type: eventType,
+        referring_page: location.pathname,
+        session_id: sessionId(),
+      }, extra || {});
+      fetch(EVENT_ENDPOINT, {
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify(payload),
+        keepalive: true,
+      }).catch(function(){});
+    }catch(e){}
+  }
+
   function readJsonStorage(key, fallback){
     try{
       var raw=localStorage.getItem(key);
@@ -151,7 +178,10 @@
         var r=evaluateAchievements(visitedNames, byName, legends, behaviour, a.criteria);
         if(r.unlocked){
           nowUnlocked.push(a.id);
-          if(!previouslyUnlocked.has(a.id)) showAchievementToast('Achievement unlocked', a.name);
+          if(!previouslyUnlocked.has(a.id)){
+            showAchievementToast('Achievement unlocked', a.name);
+            trackEvent('achievement_unlocked', {item_id: a.id});
+          }
           return;
         }
         // Progress toast: only for achievements this specific visit plausibly
@@ -174,8 +204,14 @@
       writeJsonStorage('ff_achievements_unlocked_v1', orderedUnlocked);
       if(!newlyUnlocked.length && bestProgress){
         showAchievementToast('Achievement progress', bestProgress.a.name+', '+bestProgress.r.current+'/'+bestProgress.r.target+' legends discovered');
+        trackEvent('achievement_progress', {item_id: bestProgress.a.id});
       }
     }).catch(function(){ /* Achievement data unavailable — fail silently */ });
+  }
+
+  var pageTitle=document.getElementById('legend-title')||document.querySelector('article.card h1');
+  if(pageTitle){
+    trackEvent('legend_viewed', {legend_name: (pageTitle.textContent||'').trim()});
   }
 
   var firstVisitName=markLegendVisited();

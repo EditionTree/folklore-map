@@ -626,27 +626,7 @@ body.interior-page {
 }
 
 .site-banner {
-  position: relative;
-  overflow: hidden;
-  background:
-    radial-gradient(ellipse at 14% 25%, rgba(132,84,36,.24) 0 2%, transparent 11%),
-    radial-gradient(ellipse at 78% 70%, rgba(112,66,27,.2) 0 2%, transparent 10%),
-    linear-gradient(135deg, rgba(196,98,42,.18) 0%, rgba(176,144,96,.06) 35%, transparent 60%),
-    linear-gradient(180deg, #1a0e06 0%, #2c1510 55%, #3d1e0c 100%);
-  border-bottom: 1px solid rgba(176,144,96,.35);
-}
-
-.site-banner::before {
-  background: linear-gradient(90deg, transparent 0%, var(--ff-burnt-orange) 15%, var(--ff-antique-gold) 50%, var(--ff-burnt-orange) 85%, transparent 100%);
-}
-
-.site-banner::after {
-  background: linear-gradient(90deg, transparent 0%, rgba(176,144,96,.6) 20%, rgba(196,98,42,.8) 50%, rgba(176,144,96,.6) 80%, transparent 100%);
-}
-
-.site-banner .banner-title {
-  color: #f2e8d5;
-  text-shadow: 0 1px 3px rgba(0,0,0,.55), 0 0 14px rgba(196,98,42,.22);
+  display: none !important;
 }
 
 .interior-page .section-rule {
@@ -1538,4 +1518,162 @@ body.interior-page {
 }
 @media (max-width: 820px) {
   .page-hero { grid-template-columns: 1fr; width: calc(100% - 32px); padding-top: 28px; }
+}
+
+/* Final interior-page header pass. Match the calm editorial header on the
+   Achievements page: parchment background, large serif title, no dark banner. */
+.interior-page .page-hero {
+  width: min(1500px, calc(100% - 56px));
+  padding: 42px 0 10px;
+  margin: 0 auto;
+}
+
+.interior-page .page-hero.page-hero-solo {
+  max-width: 1500px;
+}
+
+.interior-page .page-hero .kicker {
+  color: var(--ff-burnt-orange);
+  font-size: 11px;
+  letter-spacing: .17em;
+  margin-bottom: 10px;
+}
+
+.interior-page .page-hero h1 {
+  color: var(--ff-ink);
+  font-size: clamp(42px, 6vw, 74px);
+  line-height: .98;
+  letter-spacing: .025em;
+  text-shadow: none;
+}
+
+.interior-page .page-hero .hero-copy {
+  max-width: 760px;
+  color: var(--ff-oak-brown);
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 18px;
+}
+
+.archive-page .latest-seal {
+  align-items: center;
+  gap: 22px;
+  padding-bottom: 22px;
+  margin-bottom: 20px;
+}
+
+.archive-page .latest-seal img {
+  width: 118px;
+  height: 118px;
+  filter: drop-shadow(0 12px 14px rgba(44,31,14,.24));
+}
+
+.archive-page .latest-seal-text p {
+  font-family: 'Marcellus', serif;
+  font-size: 11px;
+  letter-spacing: .14em;
+}
+
+.archive-page .latest-seal-text h3 {
+  font-size: 25px;
+  line-height: 1.1;
+}
+
+.archive-page .progress-card {
+  border-radius: 0;
+  background: rgba(246,241,230,.76);
+  box-shadow: 0 18px 46px rgba(63,48,35,.08);
+}
+
+.home-page footer {
+  padding: 12px 18px;
+  background: var(--ff-slate-blue);
+  color: rgba(246,241,230,.78);
+  border-top: 0;
+}
+
+.home-page footer a {
+  color: rgba(246,241,230,.9);
+}
+
+.home-page .hero-submit-cta {
+  position: fixed;
+  top: 74px;
+  right: 18px;
+  z-index: 7000;
+  width: min(300px, calc(100vw - 36px));
+  margin: 0;
+  padding: 15px 46px 15px 17px;
+  align-items: flex-start;
+  border-radius: 0;
+  border: 1px solid rgba(176,144,96,.72);
+  background: rgba(246,241,230,.96);
+  box-shadow: 0 18px 38px rgba(26,14,6,.22);
+}
+
+.home-page .hero-submit-cta.is-hidden {
+  display: none;
+}
+
+.home-page .hero-submit-cta::before {
+  width: 82px;
+  height: 82px;
+}
+
+.home-page .hero-submit-lead {
+  flex: 1 1 100%;
+  color: var(--ff-ink);
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.35;
+}
+
+.home-page .hero-submit-link {
+  color: var(--ff-burnt-orange-dark);
+}
+
+.home-page .hero-submit-close {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 28px;
+  height: 28px;
+  border: 0;
+  background: transparent;
+  color: var(--ff-oak-brown);
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.home-page .hero-submit-close:hover,
+.home-page .hero-submit-close:focus-visible {
+  color: var(--ff-burnt-orange);
+}
+
+@media (max-width: 680px) {
+  .interior-page .page-hero {
+    width: calc(100% - 32px);
+    padding-top: 32px;
+  }
+
+  .interior-page .page-hero h1 {
+    font-size: clamp(40px, 13vw, 58px);
+  }
+
+  .archive-page .latest-seal {
+    align-items: flex-start;
+  }
+
+  .archive-page .latest-seal img {
+    width: 96px;
+    height: 96px;
+  }
+
+  .home-page .hero-submit-cta {
+    top: auto;
+    right: 12px;
+    bottom: 12px;
+    width: calc(100vw - 24px);
+  }
 }

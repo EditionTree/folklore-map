@@ -1819,8 +1819,17 @@ def build():
         for slug, title, count in built_collections
     )
     collection_sec = (
-        ('<div class="browse-sec"><h2>Themed collections</h2><div class="region-links">'
+        ('<div class="browse-sec"><div class="region-links">'
          + collection_links + '</div></div>') if built_collections else ''
+    )
+    period_links = "".join(
+        '<a href="' + period_page_url(p["slug"]) + '">'
+        + esc(p["title"]) + ' <span class="c-count">' + str(len(period_members[p["slug"]])) + '</span></a>'
+        for p in periods
+    )
+    period_sec = (
+        ('<div class="browse-sec"><div class="region-links">'
+         + period_links + '</div></div>') if periods else ''
     )
     place_explorer = '''
 <section class="place-explorer" aria-labelledby="place-explorer-title">
@@ -1844,13 +1853,34 @@ def build():
     </nav>
   </div>
 </section>'''
+    browse_tab_defs = [
+        ("category", "By Category", '<div class="browse-sec"><div class="cat-links">' + cat_links + '</div></div>'),
+        ("region", "By Region", '<div class="browse-sec"><div class="region-links">' + region_links + '</div></div>'),
+        ("period", "By Period", period_sec),
+        ("collection", "By Collection", collection_sec),
+    ]
+    browse_tab_buttons = "".join(
+        f'<button type="button" class="browse-tab{" active" if i == 0 else ""}" data-tab="{key}">{esc(label)}</button>'
+        for i, (key, label, _) in enumerate(browse_tab_defs) if _
+    )
+    browse_tab_panels = "".join(
+        f'<div class="browse-tab-panel{" active" if i == 0 else ""}" data-tab-panel="{key}">{panel}</div>'
+        for i, (key, _, panel) in enumerate(browse_tab_defs) if panel
+    )
     browse_sections = (
         place_explorer
-        + '<div class="browse-link-sections">'
-        + collection_sec
-        + '<div class="browse-sec"><h2>Browse by category</h2><div class="cat-links">' + cat_links + '</div></div>'
-        '<div class="browse-sec"><h2>Browse by region</h2><div class="region-links">' + region_links + '</div></div>'
-        '</div>'
+        + '<div class="browse-tabs" role="tablist" aria-label="Browse legends by">' + browse_tab_buttons + '</div>'
+        + '<div class="browse-tab-panels">' + browse_tab_panels + '</div>'
+        + '<script>(function(){'
+          'var tabs=document.querySelectorAll(".browse-tab");'
+          'var panels=document.querySelectorAll(".browse-tab-panel");'
+          'tabs.forEach(function(t){t.addEventListener("click",function(){'
+          'tabs.forEach(function(o){o.classList.remove("active")});'
+          'panels.forEach(function(p){p.classList.remove("active")});'
+          't.classList.add("active");'
+          'document.querySelector(\'.browse-tab-panel[data-tab-panel="\'+t.dataset.tab+\'"]\').classList.add("active");'
+          '});});'
+          '})();</script>'
         '<h2 class="azh">A&#8211;Z</h2>'
     )
 
@@ -1912,12 +1942,16 @@ h1{{font-family:'Marcellus',serif;font-size:clamp(30px,3vw,44px);font-weight:400
 .az li{{break-inside:avoid;padding:5px 0;border-bottom:.5px solid rgba(176,144,96,.3)}}
 .az li a{{color:#8b3a1a;text-decoration:none;font-size:15px}}
 .az li span{{display:block;font-size:11.5px;font-style:italic;color:#5c4a2a}}
-.browse-link-sections{{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,.9fr) minmax(0,1.3fr);gap:28px;margin:0 0 44px}}
-.browse-sec{{margin:0;padding:22px 24px 24px;border-top:1px solid rgba(90,70,50,.3);background:rgba(246,241,230,.38)}}
+.browse-tabs{{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px;border-bottom:1px solid rgba(90,70,50,.28);padding-bottom:0}}
+.browse-tab{{font-family:'Marcellus',serif;font-size:13px;letter-spacing:.04em;text-transform:uppercase;color:#5a4632;background:none;border:none;border-bottom:3px solid transparent;padding:10px 6px 12px;cursor:pointer;transition:color .15s,border-color .15s}}
+.browse-tab:hover{{color:#3f3023}}
+.browse-tab.active{{color:#8b3a1a;border-bottom-color:#8b3a1a}}
+.browse-tab-panels{{margin:0 0 44px}}
+.browse-tab-panel{{display:none}}
+.browse-tab-panel.active{{display:block}}
+.browse-sec{{margin:0;padding:22px 0 0}}
 .browse-sec h2,.azh{{font-family:'Marcellus',serif;font-size:19px;font-weight:400;margin-bottom:15px;color:#3f3023}}
 .azh{{margin:0 0 20px;padding-top:24px;border-top:1px solid rgba(90,70,50,.28)}}
-.browse-link-sections .browse-sec:last-child .region-links{{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}}
-.browse-link-sections .browse-sec:last-child .region-links a{{justify-content:space-between}}
 .cat-links,.region-links{{display:flex;flex-wrap:wrap;gap:9px}}
 .cat-links a,.region-links a{{display:inline-flex;align-items:center;gap:7px;font-family:'Marcellus',serif;font-size:13px;color:#3f3023;background:rgba(246,241,230,.72);border:1px solid rgba(90,70,50,.32);border-radius:0;padding:7px 13px;text-decoration:none;box-shadow:inset 0 0 0 3px rgba(255,255,255,.12)}}
 .cat-links a:hover,.region-links a:hover{{border-color:#c4622a}}

@@ -351,6 +351,14 @@
     .search-result-item:last-child { border-bottom: none; }
     .search-result-item:hover, .search-result-item.active { background: rgba(255,255,255,0.08); }
     .search-result-item span { color: var(--border); font-size: 11px; margin-left: 6px; }
+    .search-result-section {
+      padding: 6px 12px 3px;
+      font-size: 10px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--border);
+      border-top: 0.5px solid #3a2c18;
+    }
 
     /* ── FILTER BAR ── */
     .filter-bar {
@@ -1445,33 +1453,175 @@ function setSearchActive(idx) {
   }
 }
 
+// ── EXPANDED SEARCH ────────────────────────────────────────────────────────
+// Extra data that broadens search beyond name/region/category: themed
+// collections and a gazetteer of major towns for location-radius search
+// (e.g. "York" surfaces both legends near York and legends mentioning it).
+let COLLECTIONS = [];               // [{slug, title, intro}]
+let LEGEND_COLLECTIONS = new Map(); // legend name -> [{slug, title}]
+let UK_PLACES = [];                 // [{name, lat, lng}]
+
+function loadSearchExtras() {
+  fetch('collections.json?v=' + Date.now())
+    .then(r => r.json())
+    .then(data => {
+      COLLECTIONS = data.collections || [];
+      return Promise.all(COLLECTIONS.map(col =>
+        fetch(`legends/collection/${col.slug}.json`)
+          .then(r => r.ok ? r.json() : { legends: [] })
+          .catch(() => ({ legends: [] }))
+          .then(data => ({ col, names: data.legends || [] }))
+      ));
+    })
+    .then(results => {
+      results.forEach(({ col, names }) => {
+        names.forEach(name => {
+          if (!LEGEND_COLLECTIONS.has(name)) LEGEND_COLLECTIONS.set(name, []);
+          LEGEND_COLLECTIONS.get(name).push({ slug: col.slug, title: col.title });
+        });
+      });
+    })
+    .catch(() => {});
+
+  fetch('uk-places.json?v=' + Date.now())
+    .then(r => r.json())
+    .then(data => { UK_PLACES = data.places || []; })
+    .catch(() => {});
+}
+
+function haversineKm(lat1, lng1, lat2, lng2) {
+  const toRad = d => d * Math.PI / 180;
+  const dLat = toRad(lat2 - lat1), dLng = toRad(lng2 - lng1);
+  const a = Math.sin(dLat / 2) ** 2 +
+            Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLng / 2) ** 2;
+  return 2 * 6371 * Math.asin(Math.sqrt(a));
+}
+
+// Cheap edit-distance check (not full Levenshtein) — good enough to catch a
+// single typo/transposition in a short word without the cost of a DP table
+// on every keystroke across hundreds of legend names.
+function closeMatch(a, b) {
+  if (a === b) return true;
+  if (Math.abs(a.length - b.length) > 1) return false;
+  let i = 0, j = 0, mismatches = 0;
+  while (i < a.length && j < b.length) {
+    if (a[i] === b[j]) { i++; j++; continue; }
+    mismatches++;
+    if (mismatches > 1) return false;
+    if (a.length > b.length) i++;
+    else if (b.length > a.length) j++;
+    else { i++; j++; }
+  }
+  return true;
+}
+
+function fuzzyWordMatch(query, text) {
+  if (!text) return false;
+  const words = text.toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
+  return words.some(w => w.length >= 4 && query.length >= 4 && closeMatch(query, w));
+}
+
+const LOCATION_RADIUS_KM = 40;
+
+function findMatchingPlace(q) {
+  return UK_PLACES.find(p => {
+    const name = p.name.toLowerCase();
+    return name === q || name.includes(q) || fuzzyWordMatch(q, name);
+  });
+}
+
+function scoreLegend(leg, q) {
+  const name = leg.name.toLowerCase();
+  const catLabel = (CATEGORIES[leg.category]?.label || leg.category || '').toLowerCase();
+  const region = (leg.region || '').toLowerCase();
+  const summary = (leg.summary || '').toLowerCase();
+  const tags = (leg.tags || []).map(t => t.toLowerCase());
+  const altNames = (leg.alt_names || []).map(n => n.toLowerCase());
+  const period = (leg.period || '').toLowerCase();
+  const tradition = (leg.cultural_tradition || '').toLowerCase();
+  const cols = (LEGEND_COLLECTIONS.get(leg.name) || []).map(c => c.title.toLowerCase());
+
+  if (name === q) return 100;
+  if (altNames.some(n => n === q)) return 95;
+  if (name.startsWith(q)) return 90;
+  if (name.includes(q)) return 80;
+  if (altNames.some(n => n.includes(q))) return 75;
+  if (tags.some(t => t === q || t.includes(q))) return 65;
+  if (catLabel.includes(q)) return 60;
+  if (region.includes(q)) return 55;
+  if (cols.some(c => c.includes(q))) return 45;
+  if (period.includes(q) || tradition.includes(q)) return 40;
+  if (summary.includes(q)) return 25;
+  if (fuzzyWordMatch(q, leg.name)) return 20;
+  return 0;
+}
+
 function handleSearch(query) {
   const box = document.getElementById('searchResults');
   const input = document.getElementById('searchInput');
   searchActiveIdx = -1;
   input.removeAttribute('aria-activedescendant');
   if (!query.trim()) { closeSearchResults(); return; }
-  const q = query.toLowerCase();
-  const matches = LEGENDS.filter(l =>
-    l.name.toLowerCase().includes(q) ||
-    l.region.toLowerCase().includes(q) ||
-    l.category.toLowerCase().includes(q)
-  ).slice(0, 6);
-  if (!matches.length) { closeSearchResults(); return; }
+  const q = query.trim().toLowerCase();
+
+  const place = q.length >= 3 ? findMatchingPlace(q) : null;
+  const nearby = new Map(); // name -> distance km
+  if (place) {
+    LEGENDS.forEach(l => {
+      if (l.lat == null || l.lng == null) return;
+      const d = haversineKm(place.lat, place.lng, l.lat, l.lng);
+      if (d <= LOCATION_RADIUS_KM) nearby.set(l.name, d);
+    });
+  }
+
+  const legendMatches = LEGENDS
+    .map(l => ({ leg: l, score: Math.max(scoreLegend(l, q), nearby.has(l.name) ? 35 : 0) }))
+    .filter(m => m.score > 0)
+    .sort((a, b) => b.score - a.score || (nearby.get(a.leg.name) ?? 999) - (nearby.get(b.leg.name) ?? 999))
+    .slice(0, 8);
+
+  const collectionMatches = COLLECTIONS
+    .filter(c => c.title.toLowerCase().includes(q) || c.intro.toLowerCase().includes(q) ||
+                 (place && c.intro.toLowerCase().includes(place.name.toLowerCase())))
+    .slice(0, 3);
+
+  if (!legendMatches.length && !collectionMatches.length) { closeSearchResults(); return; }
   box.replaceChildren();
-  matches.forEach((leg, i) => {
+  let idx = 0;
+
+  legendMatches.forEach(({ leg }) => {
     const item = document.createElement('div');
-    const region = document.createElement('span');
+    const sub = document.createElement('span');
     item.className = 'search-result-item';
-    item.id = 'searchResult-' + i;
+    item.id = 'searchResult-' + idx++;
     item.setAttribute('role', 'option');
     item.setAttribute('aria-selected', 'false');
     item.textContent = leg.name;
     item.onclick = () => focusLegend(leg.name);
-    region.textContent = leg.region;
-    item.appendChild(region);
+    sub.textContent = nearby.has(leg.name)
+      ? `near ${place.name} · ${Math.round(nearby.get(leg.name))} km`
+      : leg.region;
+    item.appendChild(sub);
     box.appendChild(item);
   });
+
+  if (collectionMatches.length) {
+    const label = document.createElement('div');
+    label.className = 'search-result-section';
+    label.textContent = 'Collections';
+    box.appendChild(label);
+    collectionMatches.forEach(col => {
+      const item = document.createElement('div');
+      item.className = 'search-result-item';
+      item.id = 'searchResult-' + idx++;
+      item.setAttribute('role', 'option');
+      item.setAttribute('aria-selected', 'false');
+      item.textContent = col.title;
+      item.onclick = () => { location.href = `legends/collection/${col.slug}`; };
+      box.appendChild(item);
+    });
+  }
+
   box.classList.add('open');
   input.setAttribute('aria-expanded', 'true');
 }
@@ -1616,6 +1766,7 @@ function onDataLoaded(legends) {
   loadMarkers(LEGENDS);
   buildFilters();
   buildLegend();
+  loadSearchExtras();
   if (activeRegion) applyRegionFilter(activeRegion, true);
   else if (requestedCollection) {
     fetch(`/legends/collection/${encodeURIComponent(requestedCollection)}.json`)
@@ -1669,7 +1820,8 @@ if (SUPABASE_URL && SUPABASE_ANON_KEY) {
   // ── Fetch from Supabase ──────────────────────────────────────────────
   // Selects only the fields the map needs, ordered by name, no row limit.
   // Excludes long-form detail/date fields; tags power the place filter.
-  fetch(`${SUPABASE_URL}/rest/v1/legends?select=name,lat,lng,category,region,summary,source,tags&order=name.asc&limit=10000`, {
+  // period/cultural_tradition/alt_names power expanded search matching.
+  fetch(`${SUPABASE_URL}/rest/v1/legends?select=name,lat,lng,category,region,summary,source,tags,period,cultural_tradition,alt_names&order=name.asc&limit=10000`, {
     headers: {
       'apikey':        SUPABASE_ANON_KEY,
       'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,

@@ -194,8 +194,8 @@
         linear-gradient(135deg, rgba(196,98,42,0.18) 0%, rgba(176,144,96,0.06) 35%, transparent 60%),
         linear-gradient(180deg, #1a0e06 0%, #2c1510 55%, #3d1e0c 100%);
       border-bottom: 1px solid rgba(176,144,96,0.35);
-      min-height: 94px;
-      padding: 12px clamp(22px,3.2vw,52px);
+      min-height: 62px;
+      padding: 8px clamp(22px,3.2vw,52px);
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -217,7 +217,7 @@
       background: linear-gradient(90deg, transparent 0%, rgba(176,144,96,0.6) 20%, rgba(196,98,42,0.8) 50%, rgba(176,144,96,0.6) 80%, transparent 100%);
     }
     .header-emblem-wrap {
-      width: 68px; height: 68px;
+      width: 46px; height: 46px;
       flex-shrink: 0;
       display: block;
       cursor: pointer;
@@ -230,15 +230,15 @@
       display: block;
     }
     @media (max-width: 640px) {
-      .header-emblem-wrap { width: 42px; height: 42px; }
+      .header-emblem-wrap { width: 36px; height: 36px; }
     }
-    .header-title { display: flex; align-items: center; gap: 18px; min-width: 0; }
-    .header-title-row { display:grid;grid-template-columns:auto auto;align-items:baseline;column-gap:18px;row-gap:2px;min-width:0; }
+    .header-title { display: flex; align-items: center; gap: 14px; min-width: 0; }
+    .header-title-row { display:grid;grid-template-columns:auto auto;align-items:baseline;column-gap:14px;row-gap:0;min-width:0; }
     .header-kicker { grid-column:1 / -1;color:rgba(176,144,96,.72);font-family:var(--font-display);font-size:9px;letter-spacing:.17em;text-transform:uppercase; }
     .mobile-title { display: none; }
     h1 {
       font-family: var(--font-display);
-      font-size: 32px;
+      font-size: 24px;
       font-weight:400;
       color: var(--parchment);
       letter-spacing: 0.055em;
@@ -266,15 +266,14 @@
     .header-controls { display: flex; align-items: center; gap: 8px; margin-left:auto; }
 
     @media (max-width: 1100px) {
-      header { min-height:82px;padding:10px 22px; }
-      .header-emblem-wrap { width:56px;height:56px; }
-      .header-title { gap:13px; }
+      header { min-height:58px;padding:8px 22px; }
+      .header-emblem-wrap { width:40px;height:40px; }
+      .header-title { gap:11px; }
       .header-kicker { display:none; }
-      .header-title-row { column-gap:12px; }
-      h1 { font-size:26px; }
-      .subtitle { font-size:11px;padding-left:12px; }
+      .header-title-row { column-gap:10px; }
+      h1 { font-size:20px; }
+      .subtitle { font-size:11px;padding-left:10px; }
       .header-controls { gap:6px; }
-      .search-wrap input { width:190px; }
     }
 
     /* ── DARK MODE TOGGLE ── */
@@ -429,6 +428,37 @@
       box-shadow: 0 2px 7px rgba(44,31,14,.18);
     }
     .filter-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+    /* Entries toggle now lives in the (light) filter bar, replacing the old
+       "Show" label — restyle it to match .filter-btn instead of the dark
+       header look .sidebar-toggle-btn was originally designed for. */
+    .filter-bar .sidebar-toggle-btn {
+      font-family: var(--font-body);
+      font-size: 13px;
+      min-height: 30px;
+      padding: 4px 11px;
+      border-radius: 0;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--ink-light);
+    }
+    .filter-bar .sidebar-toggle-btn:hover { background: var(--parchment-dk); border-color: var(--accent); color: var(--ink); }
+    /* Search bar now lives at the top of the (light) sidebar instead of the
+       dark header — restyle for the parchment background. */
+    .sidebar .search-wrap { margin: 14px 15px 0; }
+    .sidebar .search-wrap input {
+      background: rgba(255,255,255,0.55);
+      border: 1px solid var(--border);
+      color: var(--ink);
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .sidebar .search-wrap input::placeholder { color: var(--ink-light); }
+    .sidebar .search-wrap input:focus { border-color: var(--accent); background: #fff; }
+    .sidebar .search-icon { color: var(--ink-light); }
+    .sidebar .search-results { background: var(--parchment); border-color: var(--border); }
+    .sidebar .search-result-item { color: var(--ink); border-bottom-color: rgba(176,144,96,.25); }
+    .sidebar .search-result-item:hover, .sidebar .search-result-item.active { background: rgba(139,58,26,.08); }
+    .sidebar .search-result-item span { color: var(--ink-light); }
     .count-badge {
       font-size: 10px;
       background: var(--parchment-dk);
@@ -843,19 +873,16 @@
       .header-kicker { display:none; }
       .subtitle { display: none; }
       .header-title { width: 100%; min-width: 0; }
-      .header-emblem-wrap { width:42px;height:42px; }
+      .header-emblem-wrap { width:36px;height:36px; }
       .header-controls {
-        width: 100%;
         min-width: 0;
-        display: grid;
-        grid-template-columns: auto auto minmax(0, 1fr) auto;
+        display: flex;
+        justify-content: flex-end;
         gap: 7px;
       }
       #modeLabel { display: none; }
-      .search-wrap { min-width: 0; }
       .search-wrap input { width: 100%; font-size: 12px; }
       .sidebar-toggle-btn { font-size: 11px; padding: 4px 8px; }
-      .browse-link { display: none; }
       footer { padding-bottom: calc(5px + env(safe-area-inset-bottom)); }
 
       /* Filter bar: icon + count only, no text label */
@@ -904,17 +931,6 @@
     </div>
   </div>
   <div class="header-controls">
-    <button class="sidebar-toggle-btn" id="sidebarToggleBtn" onclick="toggleSidebar()">☰ Entries</button>
-    <a class="sidebar-toggle-btn browse-link" href="legends/">Browse</a>
-    <a class="sidebar-toggle-btn browse-link" href="achievements">Achievements</a>
-    <button class="sidebar-toggle-btn submit-legend-btn" onclick="openSubmitLegend()" aria-haspopup="dialog"><span class="submit-btn-icon">✦ </span><span class="submit-btn-label">Submit</span></button>
-    <div class="search-wrap">
-      <span class="search-icon" aria-hidden="true">⚲</span>
-      <input type="text" id="searchInput" placeholder="Search legends..." autocomplete="off"
-             role="combobox" aria-expanded="false" aria-controls="searchResults" aria-autocomplete="list" aria-label="Search legends"
-             oninput="handleSearch(this.value)"/>
-      <div class="search-results" id="searchResults" role="listbox" aria-label="Search results"></div>
-    </div>
     <button type="button" class="mode-toggle" id="modeToggle" onclick="toggleNight()" role="switch" aria-checked="false" aria-label="Dusk mode">
       <div class="toggle-track" id="modeTrack" aria-hidden="true">
         <div class="toggle-thumb"></div>
@@ -925,11 +941,18 @@
 </header>
 
 <div class="filter-bar" id="filterBar">
-  <span class="filter-label">Show</span>
+  <button class="sidebar-toggle-btn" id="sidebarToggleBtn" onclick="toggleSidebar()">☰ Entries</button>
 </div>
 
 <div class="content-area">
   <div class="sidebar" id="sidebar">
+    <div class="search-wrap">
+      <span class="search-icon" aria-hidden="true">⚲</span>
+      <input type="text" id="searchInput" placeholder="Search legends..." autocomplete="off"
+             role="combobox" aria-expanded="false" aria-controls="searchResults" aria-autocomplete="list" aria-label="Search legends"
+             oninput="handleSearch(this.value)"/>
+      <div class="search-results" id="searchResults" role="listbox" aria-label="Search results"></div>
+    </div>
     <div class="sidebar-header">
       <div class="sidebar-title">All Entries</div>
       <div class="sidebar-subtitle" id="sidebarSubtitle">Loading...</div>
@@ -1262,9 +1285,9 @@ function loadMarkers(legends) {
 
 function buildFilters() {
   const bar = document.getElementById('filterBar');
-  const label = bar.querySelector('.filter-label');
+  const entriesToggle = document.getElementById('sidebarToggleBtn');
   bar.innerHTML = '';
-  bar.appendChild(label);
+  bar.appendChild(entriesToggle);
 
   const allBtn = makeFilterBtn('all', 'All', null);
   bar.appendChild(allBtn);

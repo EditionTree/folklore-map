@@ -166,8 +166,13 @@
         }
       });
 
-      writeJsonStorage('ff_achievements_unlocked_v1', nowUnlocked);
-      if(!nowUnlocked.some(function(id){return !previouslyUnlocked.has(id);}) && bestProgress){
+      // Preserve unlock order (append-only) rather than overwriting positionally,
+      // so the last entry is always the most recently unlocked achievement —
+      // used by My Archive to show the latest seal earned.
+      var newlyUnlocked=nowUnlocked.filter(function(id){return !previouslyUnlocked.has(id);});
+      var orderedUnlocked=Array.from(previouslyUnlocked).concat(newlyUnlocked);
+      writeJsonStorage('ff_achievements_unlocked_v1', orderedUnlocked);
+      if(!newlyUnlocked.length && bestProgress){
         showAchievementToast('Achievement progress', bestProgress.a.name+', '+bestProgress.r.current+'/'+bestProgress.r.target+' legends discovered');
       }
     }).catch(function(){ /* Achievement data unavailable — fail silently */ });

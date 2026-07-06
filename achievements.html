@@ -39,16 +39,22 @@ h1{font-family:'Marcellus',serif;font-size:clamp(42px,6vw,74px);font-weight:400;
 .section{margin:0 0 48px}.section-head{display:flex;align-items:center;gap:14px;margin-bottom:18px}.section-head h2{font-family:'Marcellus',serif;font-size:20px;font-weight:400;color:var(--ink);white-space:nowrap}.section-head::after{content:"";height:34px;flex:1;background:url("assets/ornaments/generated-variants/oak-divider-horizontal.png?v=20260629a") left center/contain no-repeat;opacity:.52}
 .section-count{font-size:12px;color:var(--muted);white-space:nowrap}
 .badge-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:24px 18px}
-.badge{position:relative;min-height:188px;padding:12px 10px 14px;border:0;background:transparent;text-align:center;color:var(--ink)}
+.badge{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;min-height:188px;padding:12px 10px 14px;border:0;background:transparent;text-align:center;color:var(--ink)}
 .badge:focus-visible{outline:2px solid var(--rust);outline-offset:4px}.badge:hover .badge-pop,.badge:focus .badge-pop{opacity:1;transform:translate(-50%,0);pointer-events:auto}
-.seal{width:104px;height:104px;margin:0 auto 10px;display:block;filter:drop-shadow(0 10px 12px rgba(44,31,14,.22))}
-.badge.locked .seal{filter:grayscale(1) opacity(.48) drop-shadow(0 8px 10px rgba(44,31,14,.14))}
-.badge.progress .seal{filter:saturate(.78) opacity(.72) drop-shadow(0 9px 12px rgba(44,31,14,.16))}
+.seal{width:104px;height:104px;margin:0 auto 10px;display:block;filter:hue-rotate(var(--hue,0deg)) saturate(var(--shade-sat,1)) brightness(var(--shade-bright,1)) drop-shadow(0 10px 12px rgba(44,31,14,.22))}
+.badge.progress .seal{filter:hue-rotate(var(--hue,0deg)) saturate(calc(var(--shade-sat,1) * .72)) brightness(calc(var(--shade-bright,1) * .92)) opacity(.72) drop-shadow(0 9px 12px rgba(44,31,14,.16))}
+.seal.seal-placeholder{
+  filter:none;box-sizing:border-box;border:2px dashed rgba(90,70,50,.4);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.22);
+  font-family:'Marcellus',serif;font-size:26px;color:rgba(90,70,50,.42);
+}
 .badge.unlocked::after{content:"✓";position:absolute;right:26px;top:13px;width:20px;height:20px;border-radius:50%;display:grid;place-items:center;background:var(--rust);color:#fff8ec;font-size:12px;font-weight:700}
 .badge-name{font-family:'Marcellus',serif;font-size:14px;line-height:1.18;color:var(--ink)}.badge-req{margin-top:4px;color:var(--muted);font-size:12px;line-height:1.25}.badge-pct{margin-top:5px;color:var(--rust);font-size:11px}
+.badge.not-started .badge-name,.badge.not-started .badge-req{color:rgba(63,48,35,.55)}
 .badge-pop{position:absolute;left:50%;bottom:calc(100% + 12px);z-index:20;width:min(320px,calc(100vw - 32px));padding:24px 24px 22px;border:1px solid rgba(176,144,96,.7);background:#f6ead2;box-shadow:0 18px 38px rgba(26,14,6,.26);opacity:0;pointer-events:none;transform:translate(-50%,8px);transition:.16s ease}
 .badge-pop::after{content:"";position:absolute;left:50%;bottom:-8px;width:14px;height:14px;background:#f6ead2;border-right:1px solid rgba(176,144,96,.7);border-bottom:1px solid rgba(176,144,96,.7);transform:translateX(-50%) rotate(45deg)}
-.badge-pop img{width:132px;height:132px;object-fit:contain;display:block;margin:0 auto 10px;filter:drop-shadow(0 10px 13px rgba(44,31,14,.22))}
+.badge-pop img{width:132px;height:132px;object-fit:contain;display:block;margin:0 auto 10px;filter:hue-rotate(var(--hue,0deg)) saturate(var(--shade-sat,1)) brightness(var(--shade-bright,1)) drop-shadow(0 10px 13px rgba(44,31,14,.22))}
+.badge-pop .seal.seal-placeholder{width:132px;height:132px;font-size:32px;margin:0 auto 10px}
 .pop-name{font-family:'Marcellus',serif;color:var(--rust);font-size:17px;line-height:1.2}.pop-desc{margin-top:7px;color:var(--ink);font-size:14px;line-height:1.45}.pop-req{margin-top:8px;color:var(--muted);font-size:12px}
 .mini-track{height:8px;margin-top:11px;border:1px solid rgba(176,144,96,.7);background:rgba(176,144,96,.22)}.mini-track span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--rust),var(--gold))}
 .empty{padding:38px;border:1px dashed var(--gold);color:var(--muted);text-align:center;background:rgba(246,241,230,.4)}
@@ -102,9 +108,41 @@ footer{text-align:center;padding:30px 20px;font-size:12px;color:var(--muted);bor
   let legends = [];
   let byName = new Map();
 
-  function iconPath(a, locked){
-    if(locked) return 'assets/achievements/wax-seals-v2/achievement-folklore-finder.png';
+  function iconPath(a){
     return a.icon && a.icon.file ? a.icon.file : 'assets/achievements/wax-seals-v2/achievement-folklore-finder.png';
+  }
+
+  // Shade variants so same-category badges don't look identical.
+  const SHADE_VARIANTS = [ {sat:1, bright:1}, {sat:.85, bright:.93}, {sat:1.14, bright:1.07} ];
+
+  // Tiered achievements (e.g. Visit 50 / 100 / 250 legends) share a type +
+  // scope + value but climb in `n`. A later tier should stay fully hidden
+  // until the previous tier in its chain is unlocked, so build that chain
+  // once per section: tierKey -> items sorted by requirement, ascending.
+  function tierKey(a){
+    const c = a.criteria || {};
+    if(c.type !== 'count') return null;
+    return [c.type, c.scope || '', c.value || ''].join('|');
+  }
+  function tierRank(a){
+    const c = a.criteria || {};
+    return c.all ? Infinity : (c.n || 0);
+  }
+  function buildTierChains(items){
+    const groups = new Map();
+    items.forEach(a => {
+      const key = tierKey(a);
+      if(!key) return;
+      if(!groups.has(key)) groups.set(key, []);
+      groups.get(key).push(a);
+    });
+    const prevOf = new Map(); // achievement id -> previous-tier achievement
+    groups.forEach(group => {
+      if(group.length < 2) return;
+      group.sort((x, y) => tierRank(x) - tierRank(y));
+      for(let i = 1; i < group.length; i++) prevOf.set(group[i].id, group[i - 1]);
+    });
+    return prevOf;
   }
 
   function allPublicAchievements(data){
@@ -160,30 +198,45 @@ footer{text-align:center;padding:30px 20px;font-size:12px;color:var(--muted);bor
     return { current, target, pct, unlocked: current >= target && target > 0 };
   }
 
-  function visibleAchievement(a, result){
+  function visibleAchievement(a, result, prevOf){
     if(a.availability && a.availability.status === 'draft') return false;
     const mode = (a.visibility && a.visibility.locked) || (a.hidden ? 'on_unlock' : 'visible');
-    if(result.unlocked) return true;
-    if(mode === 'on_unlock') return false;
-    if(mode === 'on_progress') return result.current > 0;
+    if(!result.unlocked){
+      if(mode === 'on_unlock') return false;
+      if(mode === 'on_progress' && result.current <= 0) return false;
+      // Tier gating: a later tier (e.g. the 100-legend badge) stays fully
+      // hidden until the previous tier (the 50-legend badge) is unlocked.
+      const prev = prevOf.get(a.id);
+      if(prev && !evaluate(prev).unlocked) return false;
+    }
     return true;
   }
 
-  function renderBadge(a){
+  function renderBadge(a, hueDeg, shadeIdx){
     const r = evaluate(a);
-    const mystery = a.hidden && !r.unlocked;
-    const state = r.unlocked ? 'unlocked' : (r.current > 0 ? 'progress' : 'locked');
-    const name = mystery ? (a.visibility?.lockedName || 'Undiscovered Achievement') : a.name;
-    const req = mystery ? (a.visibility?.lockedReq || 'Keep Exploring') : a.req;
-    const desc = mystery ? 'A pattern has begun to emerge. Keep visiting related legends to reveal the full achievement.' : a.description;
-    const img = iconPath(a, state === 'locked' || mystery);
-    return `<button class="badge ${state}" type="button">
-      <img class="seal" src="${img}" alt="" loading="lazy"/>
+    // Every achievement starts as a blank placeholder — real name, requirement
+    // and artwork only reveal once at least one qualifying legend is found;
+    // full colour only once complete.
+    const state = r.unlocked ? 'unlocked' : (r.current > 0 ? 'progress' : 'not-started');
+    const notStarted = state === 'not-started';
+    const name = notStarted ? '???' : a.name;
+    const req = notStarted ? '???' : a.req;
+    const desc = notStarted ? 'Keep exploring the map to reveal this achievement.' : a.description;
+    const shade = SHADE_VARIANTS[shadeIdx % SHADE_VARIANTS.length];
+    const cssVars = `--hue:${hueDeg}deg;--shade-sat:${shade.sat};--shade-bright:${shade.bright}`;
+    const sealHtml = notStarted
+      ? `<span class="seal seal-placeholder" aria-hidden="true">?</span>`
+      : `<img class="seal" src="${iconPath(a)}" alt="" loading="lazy"/>`;
+    const popSealHtml = notStarted
+      ? `<span class="seal seal-placeholder" aria-hidden="true">?</span>`
+      : `<img src="${iconPath(a)}" alt=""/>`;
+    return `<button class="badge ${state}" type="button" style="${cssVars}">
+      ${sealHtml}
       <span class="badge-name">${name}</span>
       <span class="badge-req">${req}</span>
       ${!r.unlocked && r.current > 0 ? `<span class="badge-pct">${r.current} of ${r.target}</span>` : ''}
       <span class="badge-pop">
-        <img src="${img}" alt=""/>
+        ${popSealHtml}
         <span class="pop-name">${name}</span>
         <span class="pop-desc">${desc}</span>
         <span class="pop-req">${req}${!r.unlocked && r.current > 0 ? ` · ${r.current} of ${r.target}` : ''}</span>
@@ -199,11 +252,15 @@ footer{text-align:center;padding:30px 20px;font-size:12px;color:var(--muted);bor
     document.getElementById('unlockedCount').firstChild.nodeValue = unlocked;
     document.getElementById('overallFill').style.width = publicItems.length ? Math.round(unlocked / publicItems.length * 100) + '%' : '0%';
     document.getElementById('overallNote').textContent = unlocked + ' of ' + publicItems.length + ' public achievements unlocked on this browser.';
-    sectionsEl.innerHTML = data.sections.map(section => {
-      const items = section.items.filter(a => visibleAchievement(a, evaluate(a)));
+    const totalSections = data.sections.length;
+    sectionsEl.innerHTML = data.sections.map((section, sectionIdx) => {
+      const prevOf = buildTierChains(section.items);
+      const items = section.items.filter(a => visibleAchievement(a, evaluate(a), prevOf));
       if(!items.length) return '';
       const got = items.filter(a => evaluate(a).unlocked).length;
-      return `<section class="section"><div class="section-head"><h2>${section.title}</h2><span class="section-count">${got} of ${items.length}</span></div><div class="badge-grid">${items.map(renderBadge).join('')}</div></section>`;
+      const hueDeg = Math.round(sectionIdx * (360 / Math.max(totalSections, 1)));
+      const badges = items.map((a, i) => renderBadge(a, hueDeg, i)).join('');
+      return `<section class="section"><div class="section-head"><h2>${section.title}</h2><span class="section-count">${got} of ${items.length}</span></div><div class="badge-grid">${badges}</div></section>`;
     }).join('') || '<div class="empty">No public achievements are available yet.</div>';
   }
 

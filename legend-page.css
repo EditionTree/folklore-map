@@ -361,6 +361,10 @@ h1{
 .nearby-name{flex:1;font-size:14px;line-height:1.3}
 .nearby-list a:hover .nearby-name{color:var(--rust-dark)}
 .nearby-dist{color:#78664e;font-size:12px;font-style:italic;white-space:nowrap}
+.collections-list{list-style:none;margin:13px 0 0;padding:0}
+.collections-list li+li{margin-top:9px;padding-top:9px;border-top:1px solid #d8c6a3}
+.collections-list a{display:block;font-size:14px;line-height:1.3;color:var(--ink);text-decoration:none}
+.collections-list a:hover{color:var(--rust-dark)}
 .related{
   padding:54px 0 68px;
   border-top:1px solid rgba(105,78,47,.35);

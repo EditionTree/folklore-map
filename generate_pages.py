@@ -379,11 +379,26 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 .pagination .gap{border:none;color:#5c4a2a;min-width:auto;padding:6px 2px}
 @media(max-width:900px){.wrap{width:calc(100% - 32px)}}
 @media(max-width:620px){.browse-grid{grid-template-columns:1fr}}
+.col-hero{position:relative;margin:0 0 20px;border-radius:2px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.25)}
+.col-hero img{display:block;width:100%;max-height:360px;object-fit:cover}
+.col-hero-credit{position:absolute;right:10px;bottom:8px;font-size:10px;color:rgba(255,255,255,.85);background:rgba(0,0,0,.4);padding:2px 8px;border-radius:2px}
+.col-section{margin-top:38px}
+.col-section h2{font-family:'Marcellus',serif;font-size:20px;font-weight:400;color:#3f3023;margin-bottom:12px}
+.col-context{font-size:15.5px;color:#3f3023;max-width:780px;line-height:1.7}
+.col-gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.col-gallery img{width:100%;height:110px;object-fit:cover;border-radius:2px;box-shadow:0 2px 8px rgba(0,0,0,.2)}
+.col-related{display:flex;flex-wrap:wrap;gap:8px}
+.col-related a{font-family:'Marcellus',serif;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#9d461f;border:1px solid rgba(90,70,50,.35);border-radius:0;padding:6px 12px;text-decoration:none}
+.col-related a:hover{background:#5a4632;color:#f6f1e6;border-color:#5a4632}
+.col-resources{list-style:none}
+.col-resources li+li{margin-top:6px}
+.col-resources a{color:#8b3a1a;font-size:14px}
 """
 
 
 def build_browse_page(page_title, desc, url, h1, intro, crumb, nav_html, cards_html,
-                      ogimage=None, jsonld=None, head_extra="", after_grid="", nav_active="browse"):
+                      ogimage=None, jsonld=None, head_extra="", after_grid="", nav_active="browse",
+                      hero_html="", extra_sections="", after_intro=""):
     jsonld_html = ('<script type="application/ld+json">' + jsonld + '</script>\n') if jsonld else ''
     return ('<!DOCTYPE html>\n<html lang="en"><head><meta charset="UTF-8"/>\n'
             '<script>if(location.hostname.indexOf("pages.dev")>-1){location.replace("https://folklorefinder.uk"+location.pathname+location.search+location.hash);}</script>\n'
@@ -407,9 +422,11 @@ def build_browse_page(page_title, desc, url, h1, intro, crumb, nav_html, cards_h
             '<a href="' + BASE + '/' + OUT_DIR + '/">All legends</a> &#8250; '
             '<span>' + esc(crumb) + '</span></nav>\n'
             '<h1 class="browse-h1">' + esc(h1) + '</h1>\n'
-            '<p class="browse-intro">' + esc(intro) + '</p>\n'
+            + hero_html
+            + '<p class="browse-intro">' + esc(intro) + '</p>\n'
+            + after_intro
             + nav_html + '\n<div class="browse-grid">\n' + cards_html
-            + '\n</div>\n' + after_grid
+            + '\n</div>\n' + after_grid + extra_sections
             + '<a class="back" href="' + BASE + '/' + OUT_DIR + '/">&#8592; Browse All Legends</a>\n'
             '</div>\n' + footer_html() + '\n</body></html>')
 
@@ -851,6 +868,8 @@ $hero_caption
 
         $featured_nearby
 
+        $featured_collections
+
         <section class="side-card side-pad">
           <p class="side-kicker">At a Glance</p>
           <h2>About This Legend</h2>
@@ -901,9 +920,59 @@ def update_homepage_count(total):
         f.write(text)
 
 
+NEW_COLLECTIONS_STATE_FILE = "collections_state.json"
+
+
+def update_whats_new_page(recent, built_collections, slugmap, limit=8):
+    """Inject the Recently Added Legends / New Collections cards into updates.html.
+    Release notes further down the page stay hand-written — this only touches the
+    two placeholder arrays. "New" collections are those not seen in a previous
+    build, tracked via NEW_COLLECTIONS_STATE_FILE so the list empties out over time
+    rather than re-announcing every collection on every run."""
+    recent_cards = [
+        {
+            "slug": slugmap[l["name"]],
+            "name": l["name"],
+            "date_added": human_date(l.get("date_added")),
+            "region": l.get("region", ""),
+        }
+        for l in recent[:limit]
+    ]
+
+    try:
+        seen_slugs = set(json.load(io.open(NEW_COLLECTIONS_STATE_FILE, encoding="utf-8")))
+    except Exception:
+        seen_slugs = set()
+    current_slugs = {slug for slug, _, _ in built_collections}
+    new_cards = [
+        {"slug": slug, "title": title}
+        for slug, title, _count in built_collections
+        if slug not in seen_slugs
+    ]
+    with io.open(NEW_COLLECTIONS_STATE_FILE, "w", encoding="utf-8") as f:
+        json.dump(sorted(current_slugs), f, ensure_ascii=False, indent=0)
+
+    path = "updates.html"
+    text = io.open(path, encoding="utf-8").read()
+    # Matches both the initial placeholder and a previously-injected array, so
+    # re-running the build stays idempotent.
+    replacements = (
+        (r"const RECENT_LEGENDS = .*?;",
+         "const RECENT_LEGENDS = " + json.dumps(recent_cards, ensure_ascii=False) + ";"),
+        (r"const NEW_COLLECTIONS = .*?;",
+         "const NEW_COLLECTIONS = " + json.dumps(new_cards, ensure_ascii=False) + ";"),
+    )
+    for pattern, replacement in replacements:
+        text, changed = re.subn(pattern, lambda m: replacement, text, count=1)
+        if changed != 1:
+            raise RuntimeError(f"Could not update updates.html using {pattern}")
+    with io.open(path, "w", encoding="utf-8") as f:
+        f.write(text)
+
+
 def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
                            slugmap, catname, maplink, page_path_url, desc,
-                           jsonld, breadcrumb, breadcrumb_jsonld):
+                           jsonld, breadcrumb, breadcrumb_jsonld, collections=()):
     """Render the editorial legend layout, with artwork when available."""
     name = leg["name"]
     image_path = featured.get("image", "")
@@ -983,6 +1052,22 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
         )
     else:
         featured_nearby = ""
+
+    # Part of these Collections — links back to any themed collection this
+    # legend belongs to, so a visitor can jump from one entry into a broader
+    # curated gathering rather than only the map/category/region views.
+    if collections:
+        collection_items = "".join(
+            f'<li><a href="{BASE}/{OUT_DIR}/collection/{esc(slug)}">{esc(title)}</a></li>'
+            for slug, title in collections
+        )
+        featured_collections = (
+            '<section class="side-card side-pad"><p class="side-kicker">Part of</p>'
+            '<h2>These Collections</h2>'
+            f'<ul class="collections-list">{collection_items}</ul></section>'
+        )
+    else:
+        featured_collections = ""
 
     featured_cards = []
     for related in rel[:3]:
@@ -1073,6 +1158,7 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
         featured_body=featured_body,
         editorial=editorial_html,
         featured_nearby=featured_nearby,
+        featured_collections=featured_collections,
         maplink=esc(maplink),
         map_title=esc(title_case_text(featured.get("map_title") or leg.get("region", ""))),
         lat=f"{lat:.6f}",
@@ -1135,6 +1221,23 @@ def build():
 
     related_map = compute_related(legends)
     nearby_map = compute_nearby(legends)
+
+    # Themed-collection membership, resolved once so both the per-legend
+    # "Part of these Collections" sidebar and the collection pages themselves
+    # (below) use the same qualifying set (>= MIN_COLLECTION members).
+    collections = load_collections()
+    collection_members = []  # (col, members) for collections with enough entries
+    for col in collections:
+        members = sorted(
+            (l for l in legends if matches_collection(l, col.get("match", {}))),
+            key=lambda l: l["name"].lower(),
+        )
+        if len(members) >= MIN_COLLECTION:
+            collection_members.append((col, members))
+    legend_collections_map = {}
+    for col, members in collection_members:
+        for l in members:
+            legend_collections_map.setdefault(l["name"], []).append((col["slug"], col["title"]))
 
     written = 0
     for leg in legends:
@@ -1276,6 +1379,7 @@ def build():
             jsonld=jsonld,
             breadcrumb=breadcrumb,
             breadcrumb_jsonld=breadcrumb_jsonld,
+            collections=legend_collections_map.get(name, []),
         )
         with io.open(os.path.join(OUT_DIR, f"{slug}.html"), "w", encoding="utf-8") as f:
             f.write(out)
@@ -1338,19 +1442,12 @@ def build():
 
     # ── Themed collection pages (curated, cross-cutting) ───────────────────
     col_dir = os.path.join(OUT_DIR, "collection")
-    collections = load_collections()
     built_collections = []  # (slug, title, count) for nav / index / sitemap
-    if collections:
+    if collection_members:
         os.makedirs(col_dir, exist_ok=True)
-        # Resolve membership first so we can build a shared nav of siblings.
-        resolved = []
-        for col in collections:
-            members = sorted(
-                (l for l in legends if matches_collection(l, col.get("match", {}))),
-                key=lambda l: l["name"].lower(),
-            )
-            if len(members) >= MIN_COLLECTION:
-                resolved.append((col, members))
+        # Membership was already resolved above (collection_members), shared
+        # with the per-legend "Part of these Collections" sidebar.
+        resolved = collection_members
         col_nav_items = [
             (f"{BASE}/{OUT_DIR}/collection/{col['slug']}", col["title"], col["slug"])
             for col, _ in resolved
@@ -1359,6 +1456,11 @@ def build():
             slug = col["slug"]
             total = len(members)
             desc = short_desc(col["intro"], 155)
+
+            # Precomputed member name-list for the map's `?collection=` filter —
+            # map.html fetches this rather than porting matches_collection() to JS.
+            with io.open(os.path.join(col_dir, f"{slug}.json"), "w", encoding="utf-8") as f:
+                json.dump({"legends": [m["name"] for m in members]}, f, ensure_ascii=False)
             total_pages = max(1, (total + COLLECTION_PER_PAGE - 1) // COLLECTION_PER_PAGE)
             for page_no in range(1, total_pages + 1):
                 start = (page_no - 1) * COLLECTION_PER_PAGE
@@ -1394,6 +1496,62 @@ def build():
                     rel_links += f'<link rel="prev" href="{collection_page_url(slug, page_no - 1)}"/>\n'
                 if page_no < total_pages:
                     rel_links += f'<link rel="next" href="{collection_page_url(slug, page_no + 1)}"/>\n'
+
+                # Richer editorial content (hero image, context, gallery, related
+                # collections, resources) — only on page 1; later pages stay plain.
+                hero_html, extra_sections = "", ""
+                if page_no == 1:
+                    member_images = [
+                        featured_pages.get(m["name"], {}).get("image", "") for m in members
+                    ]
+                    member_images = [p for p in member_images if p]
+                    hero_path = col.get("hero_image") or (member_images[0] if member_images else "")
+                    if hero_path:
+                        hero_credit_html = (
+                            f'<span class="col-hero-credit">{esc(col["hero_credit"])}</span>'
+                            if col.get("hero_credit") else ""
+                        )
+                        hero_html = (
+                            '<div class="col-hero">'
+                            f'<img src="{BASE}/{hero_path.replace(os.sep, "/")}" alt="{esc(col["title"])}"/>'
+                            f'{hero_credit_html}</div>\n'
+                        )
+
+                    sections = []
+                    if col.get("context"):
+                        sections.append(
+                            '<section class="col-section"><h2>Historical &amp; Cultural Context</h2>'
+                            f'<p class="col-context">{esc(col["context"])}</p></section>'
+                        )
+                    gallery_images = member_images[:8]
+                    if gallery_images:
+                        imgs = "".join(
+                            f'<img src="{BASE}/{p.replace(os.sep, "/")}" alt=""/>' for p in gallery_images
+                        )
+                        sections.append(
+                            f'<section class="col-section"><h2>Gallery</h2><div class="col-gallery">{imgs}</div></section>'
+                        )
+                    related_slugs = col.get("related_collections") or []
+                    related_titles = {c["slug"]: c["title"] for c, _ in resolved}
+                    related_links = "".join(
+                        f'<a href="{collection_page_url(rs, 1)}">{esc(related_titles[rs])}</a>'
+                        for rs in related_slugs if rs in related_titles
+                    )
+                    if related_links:
+                        sections.append(
+                            f'<section class="col-section"><h2>Related Collections</h2><div class="col-related">{related_links}</div></section>'
+                        )
+                    resources = col.get("resources") or []
+                    if resources:
+                        items = "".join(
+                            f'<li><a href="{esc(r["url"])}" target="_blank" rel="noopener">{esc(r["label"])} &#8594;</a></li>'
+                            for r in resources
+                        )
+                        sections.append(
+                            f'<section class="col-section"><h2>Further Resources</h2><ul class="col-resources">{items}</ul></section>'
+                        )
+                    extra_sections = "".join(sections)
+
                 page = build_browse_page(
                     page_title=f"{col['title']}{page_tag} — Folklore Finder",
                     desc=desc,
@@ -1407,6 +1565,9 @@ def build():
                     head_extra=rel_links,
                     after_grid=pagination_html(slug, page_no, total_pages),
                     nav_active="collections",
+                    hero_html=hero_html,
+                    extra_sections=extra_sections,
+                    after_intro=f'<p style="margin:-8px 0 20px"><a class="back" href="{BASE}/map?collection={esc(slug)}">View this collection on the Map &#8594;</a></p>\n',
                 )
                 fname = f"{slug}.html" if page_no == 1 else f"{slug}-{page_no}.html"
                 with io.open(os.path.join(col_dir, fname), "w", encoding="utf-8") as f:
@@ -1678,6 +1839,9 @@ h1{{font-family:'Marcellus',serif;font-size:clamp(30px,3vw,44px);font-weight:400
     )
     with io.open(os.path.join("legend-images", "manifest.json"), "w", encoding="utf-8") as f:
         json.dump(imaged, f, ensure_ascii=False)
+
+    # updates.html — Recently Added Legends / New Collections cards
+    update_whats_new_page(recent, built_collections, slugmap)
 
     print(f"Generated {written} legend pages + index + sitemap ({len(urls)} URLs) + feed.xml ({len(recent)} items) + image manifest ({len(imaged)})")
 

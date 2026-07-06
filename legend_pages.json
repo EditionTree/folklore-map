@@ -5566,6 +5566,351 @@
         "Setting": "Kirkcudbright, Dumfries and Galloway, Scotland",
         "Motif": "Sea-raiding and smuggling"
       }
+    },
+    "Berwick Revenant": {
+      "priority": 372,
+      "image": "legend-images/berwick-revenant-hero.jpg",
+      "alt": "A cinematic ghost folklore image of Berwick Revenant, shown as the central apparition or haunting from Berwick-upon-Tweed, Northumberland, England",
+      "caption": "A visual interpretation of Berwick Revenant",
+      "map_title": "Berwick-upon-Tweed, Northumberland, England",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "A 12th-century revenant of Berwick-upon-Tweed: a rich man's corpse roamed the streets by night pursued by howling dogs, until the townsfolk dug it...",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Berwick-upon-Tweed, Northumberland, England",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "Black Eric of Shetland": {
+      "priority": 373,
+      "image": "legend-images/black-eric-of-shetland-hero.jpg",
+      "alt": "A cinematic ghost folklore image of Black Eric of Shetland, shown as the central apparition or haunting from Fitful Head, Shetland, Scotland",
+      "caption": "A visual interpretation of Black Eric of Shetland",
+      "map_title": "Fitful Head, Shetland, Scotland",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "Black Eric was the feared hermit-rustler of Fitful Head who terrorised Shetland crofts by night, aided by a supernatural Tangie sea-horse, until cr...",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Fitful Head, Shetland, Scotland",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "Black Lady of Bradley Woods": {
+      "priority": 374,
+      "image": "legend-images/black-lady-of-bradley-woods-hero.jpg",
+      "alt": "A cinematic ghost folklore image of Black Lady of Bradley Woods, shown as the central apparition or haunting from Lincolnshire",
+      "caption": "A visual interpretation of Black Lady of Bradley Woods",
+      "map_title": "Lincolnshire",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "The Black Lady of Bradley Woods is a ghost which reportedly haunts the woods near the village of Bradley, Lincolnshire, England",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Lincolnshire",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "Black Vaughan of Hergest Court": {
+      "priority": 375,
+      "image": "legend-images/black-vaughan-of-hergest-court-hero.jpg",
+      "alt": "A cinematic ghost folklore image of Black Vaughan of Hergest Court, shown as the central apparition or haunting from Kington, Herefordshire, England",
+      "caption": "A visual interpretation of Black Vaughan of Hergest Court",
+      "map_title": "Kington, Herefordshire, England",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "The ghost of Sir Thomas Vaughan, a Herefordshire knight killed at the Battle of Barnet in 1469, who returned to his estate as a monstrous black bul...",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Kington, Herefordshire, England",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "Brollachan": {
+      "priority": 376,
+      "image": "legend-images/brollachan-hero.jpg",
+      "alt": "A cinematic ghost folklore image of Brollachan, shown as the central apparition or haunting from Highland, Scotland",
+      "caption": "A visual interpretation of Brollachan",
+      "map_title": "Highland, Scotland",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "A formless, voiceless spirit of the Scottish Highlands — the Brollachan has no fixed shape and takes the form of whatever vessel or hollow it inhabits",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Highland, Scotland",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "Church Grim": {
+      "priority": 377,
+      "image": "legend-images/church-grim-hero.jpg",
+      "alt": "A cinematic ghost folklore image of Church Grim, shown as the central apparition or haunting from England & Scandinavia",
+      "caption": "A visual interpretation of Church Grim",
+      "map_title": "England & Scandinavia",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "A guardian spirit said to haunt churchyards, often appearing as a black dog",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "England & Scandinavia",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "Cock Lane ghost": {
+      "priority": 378,
+      "image": "legend-images/cock-lane-ghost-hero.jpg",
+      "alt": "A cinematic ghost folklore image of Cock Lane ghost, shown as the central apparition or haunting from Norfolk",
+      "caption": "A visual interpretation of Cock Lane ghost",
+      "map_title": "Norfolk",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "A sensational 1762 haunting in London's Smithfield — scratching sounds, a ghostly presence, and accusations of murder — that drew crowds, fascinate...",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Norfolk",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "Dead Men of Burton-on-Trent": {
+      "priority": 379,
+      "image": "legend-images/dead-men-of-burton-on-trent-hero.jpg",
+      "alt": "A cinematic ghost folklore image of Dead Men of Burton-on-Trent, shown as the central apparition or haunting from Staffordshire",
+      "caption": "A visual interpretation of Dead Men of Burton-on-Trent",
+      "map_title": "Staffordshire",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "Two men buried at Burton rose that same night, walking the village with their coffins on their shoulders and spreading pestilence — until the Bisho...",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Staffordshire",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "Epworth Poltergeist": {
+      "priority": 380,
+      "image": "legend-images/epworth-poltergeist-hero.jpg",
+      "alt": "A cinematic ghost folklore image of Epworth Poltergeist, shown as the central apparition or haunting from Epworth, Lincolnshire, England",
+      "caption": "A visual interpretation of Epworth Poltergeist",
+      "map_title": "Epworth, Lincolnshire, England",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "A poltergeist that plagued the Rectory at Epworth, Lincolnshire, in the winter of 1716–17, tormenting the household of Samuel Wesley — father of Jo...",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Epworth, Lincolnshire, England",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "Gunby Hall Ghost Walk": {
+      "priority": 381,
+      "image": "legend-images/gunby-hall-ghost-walk-hero.jpg",
+      "alt": "A cinematic ghost folklore image of Gunby Hall Ghost Walk, shown as the central apparition or haunting from Gunby, Lincolnshire, England",
+      "caption": "A visual interpretation of Gunby Hall Ghost Walk",
+      "map_title": "Gunby, Lincolnshire, England",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "A jealous squire shot his daughter's lover dead and dumped his body in the pond — the murdered postillion still walks 'Ghost Walk' awaiting his love",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Gunby, Lincolnshire, England",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "Gwrach-y-Rhibyn": {
+      "priority": 382,
+      "image": "legend-images/gwrach-y-rhibyn-hero.jpg",
+      "alt": "A cinematic ghost folklore image of Gwrach-y-Rhibyn, shown as the central apparition or haunting from Ceredigion, Wales",
+      "caption": "A visual interpretation of Gwrach-y-Rhibyn",
+      "map_title": "Ceredigion, Wales",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "Wales's own banshee — a hideous hag with leathery wings who shrieks at crossroads to foretell the death of those with Welsh blood",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Ceredigion, Wales",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "Headless Horseman of the Staffordshire Moors": {
+      "priority": 383,
+      "image": "legend-images/headless-horseman-of-the-staffordshire-moors-hero.jpg",
+      "alt": "A cinematic ghost folklore image of Headless Horseman of the Staffordshire Moors, shown as the central apparition or haunting from Staffordshire",
+      "caption": "A visual interpretation of Headless Horseman of the Staffordshire Moors",
+      "map_title": "Staffordshire",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "Between the moorland villages of Onecote and Leek, a headless figure on horseback is said to ride at dusk",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Staffordshire",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "Hellfire Club, Montpelier Hill": {
+      "priority": 384,
+      "image": "legend-images/hellfire-club-montpelier-hill-hero.jpg",
+      "alt": "A cinematic ghost folklore image of Hellfire Club, Montpelier Hill, shown as the central apparition or haunting from Montpelier Hill, County Dublin, Ireland",
+      "caption": "A visual interpretation of Hellfire Club, Montpelier Hill",
+      "map_title": "Montpelier Hill, County Dublin, Ireland",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "A ruined hunting lodge built atop a desecrated passage tomb, where a card-playing stranger was unmasked as the Devil with cloven hooves",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Montpelier Hill, County Dublin, Ireland",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "Hereford Revenant": {
+      "priority": 385,
+      "image": "legend-images/hereford-revenant-hero.jpg",
+      "alt": "A cinematic ghost folklore image of Hereford Revenant, shown as the central apparition or haunting from Hereford, Herefordshire, England",
+      "caption": "A visual interpretation of Hereford Revenant",
+      "map_title": "Hereford, Herefordshire, England",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "Recorded by Walter Map c",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Hereford, Herefordshire, England",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "Hexham Heads": {
+      "priority": 386,
+      "image": "legend-images/hexham-heads-hero.jpg",
+      "alt": "A cinematic ghost folklore image of Hexham Heads, shown as the central apparition or haunting from Northumberland",
+      "caption": "A visual interpretation of Hexham Heads",
+      "map_title": "Northumberland",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "Two stone heads unearthed in a Hexham garden in 1971 triggered apparitions of a half-wolf figure in every home that held them — including on a folk...",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Northumberland",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "Hundeprest of Melrose": {
+      "priority": 387,
+      "image": "legend-images/hundeprest-of-melrose-hero.jpg",
+      "alt": "A cinematic ghost folklore image of Hundeprest of Melrose, shown as the central apparition or haunting from Melrose, Scottish Borders, Scotland",
+      "caption": "A visual interpretation of Hundeprest of Melrose",
+      "map_title": "Melrose, Scottish Borders, Scotland",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "The 'dog-priest' of Melrose Abbey: a worldly chaplain's corpse rose to haunt the cloister and a noblewoman's house, until a watching monk struck it...",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Melrose, Scottish Borders, Scotland",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "Jan Tregeagle": {
+      "priority": 388,
+      "image": "legend-images/jan-tregeagle-hero.jpg",
+      "alt": "A cinematic ghost folklore image of Jan Tregeagle, shown as the central apparition or haunting from Cornwall",
+      "caption": "A visual interpretation of Jan Tregeagle",
+      "map_title": "Cornwall",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "A corrupt magistrate in life, Jan Tregeagle was condemned after death to perform impossible tasks for eternity lest demons drag him away",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Cornwall",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "Lady Howard of Okehampton": {
+      "priority": 389,
+      "image": "legend-images/lady-howard-of-okehampton-hero.jpg",
+      "alt": "A cinematic ghost folklore image of Lady Howard of Okehampton, shown as the central apparition or haunting from Okehampton, Devon, England",
+      "caption": "A visual interpretation of Lady Howard of Okehampton",
+      "map_title": "Okehampton, Devon, England",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "Devon tradition condemns Lady Mary Howard to ride each night from Tavistock to Okehampton Castle in a carriage made from the bones of her husbands",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Okehampton, Devon, England",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "Lantern Man": {
+      "priority": 390,
+      "image": "legend-images/lantern-man-hero.jpg",
+      "alt": "A cinematic ghost folklore image of Lantern Man, shown as the central apparition or haunting from Norfolk",
+      "caption": "A visual interpretation of Lantern Man",
+      "map_title": "Norfolk",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "A malevolent will-o-the-wisp of the Norfolk Broads, more dangerous than most — it actively pursues lone travellers across the marshes",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Norfolk",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "Loftus Hall": {
+      "priority": 391,
+      "image": "legend-images/loftus-hall-hero.jpg",
+      "alt": "A cinematic ghost folklore image of Loftus Hall, shown as the central apparition or haunting from Hook Peninsula, County Wexford",
+      "caption": "A visual interpretation of Loftus Hall",
+      "map_title": "Hook Peninsula, County Wexford",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "Loftus Hall is a large country house on the Hook peninsula, County Wexford, Ireland",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Hook Peninsula, County Wexford",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "Loughareema, the Vanishing Lake": {
+      "priority": 392,
+      "image": "legend-images/loughareema-the-vanishing-lake-hero.jpg",
+      "alt": "A cinematic ghost folklore image of Loughareema, the Vanishing Lake, shown as the central apparition or haunting from County Antrim, Northern Ireland",
+      "caption": "A visual interpretation of Loughareema, the Vanishing Lake",
+      "map_title": "County Antrim, Northern Ireland",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "Loughareema drains underground in hours, leaving a dry road across its bed",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "County Antrim, Northern Ireland",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "Marshal Brain of Clongowes Wood": {
+      "priority": 393,
+      "image": "legend-images/marshal-brain-of-clongowes-wood-hero.jpg",
+      "alt": "A cinematic ghost folklore image of Marshal Brain of Clongowes Wood, shown as the central apparition or haunting from Clane, County Kildare, Ireland",
+      "caption": "A visual interpretation of Marshal Brain of Clongowes Wood",
+      "map_title": "Clane, County Kildare, Ireland",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "In 1757, the ghost of an Austrian-army officer appeared to two sisters at Clongowes Wood, describing his uniform in perfect detail — to announce, a...",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Clane, County Kildare, Ireland",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "Old Cockern": {
+      "priority": 394,
+      "image": "legend-images/old-cockern-hero.jpg",
+      "alt": "A cinematic ghost folklore image of Old Cockern, shown as the central apparition or haunting from Dartmoor, Devon",
+      "caption": "A visual interpretation of Old Cockern",
+      "map_title": "Dartmoor, Devon",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "The spectral huntsman of Dartmoor, keeper of the Wisht Hounds, who rides out on stormy nights to gather the souls of the unbaptised",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Dartmoor, Devon",
+        "Motif": "Apparition and unrest"
+      }
     }
   }
 }

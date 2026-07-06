@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<script>if(location.hostname.indexOf("pages.dev")>-1){location.replace("https://folklorefinder.uk"+location.pathname+location.search+location.hash);}</script>
+<!-- Cloudflare Web Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "64d1fd37251d426f8a0d8fbc83ea350b"}'></script>
+<!-- End Cloudflare Web Analytics -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>My Archive &#183; Folklore Finder</title>
+<meta name="description" content="Your saved legends, recently viewed entries, achievement progress and completed collections on Folklore Finder."/>
+<meta name="robots" content="noindex, follow"/>
+<link rel="canonical" href="https://folklorefinder.uk/archive"/>
+<link rel="icon" type="image/png" href="favicon.png"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://folklorefinder.uk/archive"/>
+<meta property="og:title" content="My Archive"/>
+<meta property="og:description" content="Your saved legends, recently viewed entries and achievement progress on Folklore Finder."/>
+<meta property="og:image" content="https://folklorefinder.uk/og/preview-folklore-finder.png"/>
+<meta property="og:site_name" content="Folklore Finder"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --parchment:#f2e8d5;
+  --parchment-dk:#e0d0b0;
+  --ink:#2c1f0e;
+  --ink-light:#5c4a2a;
+  --accent:#8b3a1a;
+  --accent-warm:#c4622a;
+  --gold:#b09060;
+  --dark:#1a0e06;
+  --border:rgba(176,144,96,0.4);
+}
+
+body{background:var(--parchment-dk);color:var(--ink);font-family:'Spectral',serif;line-height:1.7}
+
+/* ── TOP NAV ── */
+.topnav{display:flex;align-items:center;justify-content:center;gap:4px;background:var(--dark);padding:12px 16px;border-bottom:1px solid rgba(176,144,96,0.2);flex-wrap:wrap}
+.topnav a{font-family:'Marcellus',serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:rgba(242,232,213,0.78);text-decoration:none;padding:6px 14px;border-radius:3px;transition:background .15s,color .15s}
+.topnav a:hover{color:#f2e8d5;background:rgba(196,98,42,0.18)}
+.topnav a.active{color:var(--accent-warm)}
+@media(max-width:640px){.topnav{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;scrollbar-width:none}.topnav::-webkit-scrollbar{display:none}.topnav a{flex:0 0 auto;white-space:nowrap}}
+
+/* ── PAGE HEAD ── */
+.page-head{position:relative;background:linear-gradient(135deg,rgba(196,98,42,0.18) 0%,rgba(176,144,96,0.06) 35%,transparent 60%),linear-gradient(180deg,#1a0e06 0%,#2c1510 55%,#3d1e0c 100%);padding:54px 20px 56px;text-align:center;overflow:hidden}
+.page-head::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold) 20%,var(--accent-warm) 50%,var(--gold) 80%,transparent)}
+.page-head img{width:96px;height:96px;object-fit:contain;margin-bottom:18px;filter:drop-shadow(0 4px 18px rgba(196,98,42,0.45))}
+.page-head h1{font-family:'Marcellus',serif;font-size:clamp(22px,4vw,36px);font-weight:400;color:#f2e8d5;letter-spacing:.06em;line-height:1.2;margin-bottom:8px}
+.page-head p{font-style:italic;color:rgba(176,144,96,0.85);font-size:clamp(14px,2.5vw,17px)}
+
+/* ── BODY ── */
+.wrap{max-width:820px;margin:0 auto;padding:0 20px 70px}
+.section{padding:44px 0 0}
+.section-rule{display:flex;align-items:center;gap:14px;margin-bottom:8px}
+.section-rule::before,.section-rule::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
+.section-rule::after{background:linear-gradient(90deg,var(--gold),transparent)}
+.section-rule span{font-family:'Marcellus',serif;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);white-space:nowrap}
+.section-sub{font-size:13px;color:var(--ink-light);font-style:italic;margin:0 0 18px}
+
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+.card-tile{display:block;background:var(--parchment);border:1px solid var(--gold);border-radius:6px;padding:14px 16px;text-decoration:none;color:var(--ink);transition:transform .15s,box-shadow .15s}
+.card-tile:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,0.15)}
+.card-tile .card-eyebrow{display:block;font-family:'Marcellus',serif;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:5px}
+.card-tile .card-title{font-size:16px;font-weight:600}
+.card-tile .card-sub{display:block;font-size:12px;font-style:italic;color:var(--ink-light);margin-top:3px}
+.empty-note{font-size:13px;font-style:italic;color:var(--ink-light)}
+
+.progress-card{background:var(--parchment);border:1px solid var(--gold);border-radius:8px;padding:20px 24px}
+.progress-stats{display:flex;gap:28px;margin-bottom:14px;flex-wrap:wrap}
+.progress-stat{font-family:'Marcellus',serif;font-size:28px;color:var(--accent)}
+.progress-stat span{display:block;font-family:'Spectral',serif;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-light);font-style:normal;margin-top:2px}
+.progress-link{font-size:13px}
+.progress-link a{color:var(--accent)}
+
+.collection-row{display:flex;align-items:center;justify-content:space-between;gap:12px;background:var(--parchment);border:1px solid var(--gold);border-radius:6px;padding:12px 16px;margin-bottom:8px}
+.collection-row.done{border-color:var(--accent-warm)}
+.collection-name{font-size:14px}
+.collection-name a{color:var(--ink);text-decoration:none}
+.collection-name a:hover{color:var(--accent)}
+.collection-frac{font-family:'Marcellus',serif;font-size:12px;color:var(--ink-light);white-space:nowrap}
+.collection-row.done .collection-frac{color:var(--accent-warm)}
+
+/* ── FOOTER ── */
+footer{text-align:center;padding:28px 20px;font-size:12px;color:var(--ink-light);border-top:1px solid rgba(176,144,96,0.2)}
+footer a{color:var(--ink-light)}
+</style>
+<link rel="stylesheet" href="folklorefinder.css?v=20260629a"/>
+</head>
+<body class="ff-paper interior-page archive-page">
+
+<nav class="topnav">
+  <a href="./">Home</a>
+  <a href="map">Map</a>
+  <a href="legends/">Browse</a>
+  <a href="legends/collections">Collections</a>
+  <a href="achievements">Achievements</a>
+  <a href="archive" class="active">My Archive</a>
+  <a href="about">About</a>
+  <a href="updates">Updates</a>
+</nav>
+
+<header class="page-head">
+  <a class="page-head-logo" href="./" aria-label="Folklore Finder home">
+    <img src="green-man.png" alt="Green Man emblem"/>
+  </a>
+  <h1>My Archive</h1>
+  <p>Your saved legends and progress through the map, kept on this browser</p>
+</header>
+
+<div class="wrap">
+
+  <section class="section">
+    <div class="section-rule"><span>Achievement Progress</span></div>
+    <p class="section-sub">Saved locally on this device — see the full <a href="achievements">Achievements</a> page for every seal.</p>
+    <div class="progress-card">
+      <div class="progress-stats">
+        <div class="progress-stat" id="statVisited">0<span>Legends Visited</span></div>
+        <div class="progress-stat" id="statUnlocked">0<span>Seals Unlocked</span></div>
+        <div class="progress-stat" id="statSaved">0<span>Legends Saved</span></div>
+      </div>
+      <p class="progress-link"><a href="achievements">View all achievements &#8594;</a></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-rule"><span>Saved Legends</span></div>
+    <div id="savedLegends" class="card-grid"></div>
+  </section>
+
+  <section class="section">
+    <div class="section-rule"><span>Recently Viewed</span></div>
+    <div id="recentlyViewed" class="card-grid"></div>
+  </section>
+
+  <section class="section">
+    <div class="section-rule"><span>Collection Progress</span></div>
+    <p class="section-sub">How far you've explored each themed collection.</p>
+    <div id="collectionProgress"></div>
+  </section>
+
+</div>
+
+<footer>Folklore Finder &nbsp;&#183;&nbsp; &copy; EditionTree &nbsp;&#183;&nbsp; <a href="./">Home</a> &nbsp;&#183;&nbsp; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener">&#9749; Ko-fi</a> &nbsp;&#183;&nbsp; <a href="privacy">Privacy</a></footer>
+
+<script>
+(function(){
+  function getJSON(key, fallback){
+    try { return JSON.parse(localStorage.getItem(key) || 'null') || fallback; } catch(e) { return fallback; }
+  }
+
+  var bookmarks = Array.from(getJSON('folkloreMapBookmarks', []));
+  var visitedObj = getJSON('ff_visited_legends_v1', {});
+  var visitedNames = Object.keys(visitedObj);
+  var unlockedIds = getJSON('ff_achievements_unlocked_v1', []);
+
+  document.getElementById('statVisited').firstChild.nodeValue = visitedNames.length;
+  document.getElementById('statUnlocked').firstChild.nodeValue = unlockedIds.length;
+  document.getElementById('statSaved').firstChild.nodeValue = bookmarks.length;
+
+  function slugify(name){
+    return String(name || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+      .replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+  }
+
+  function renderCard(container, leg, eyebrow){
+    var a = document.createElement('a');
+    a.className = 'card-tile';
+    a.href = 'legends/' + slugify(leg.name);
+    a.innerHTML = '<span class="card-eyebrow">' + eyebrow + '</span>'
+      + '<span class="card-title"></span>'
+      + '<span class="card-sub"></span>';
+    a.querySelector('.card-title').textContent = leg.name;
+    a.querySelector('.card-sub').textContent = leg.region || '';
+    container.appendChild(a);
+  }
+
+  fetch('legends.json').then(function(r){ return r.json(); }).then(function(data){
+    var legends = data.legends || [];
+    var byName = new Map(legends.map(function(l){ return [l.name, l]; }));
+
+    var savedEl = document.getElementById('savedLegends');
+    var savedLegends = bookmarks.map(function(n){ return byName.get(n); }).filter(Boolean);
+    if(savedLegends.length){
+      savedLegends.forEach(function(l){ renderCard(savedEl, l, 'Saved'); });
+    } else {
+      savedEl.innerHTML = '<p class="empty-note">Nothing saved yet — bookmark a legend from the <a href="map">map</a> or any legend page.</p>';
+    }
+
+    var recentEl = document.getElementById('recentlyViewed');
+    var recent = visitedNames
+      .map(function(n){ return { name: n, last: visitedObj[n].lastVisited, leg: byName.get(n) }; })
+      .filter(function(v){ return v.leg; })
+      .sort(function(a, b){ return new Date(b.last) - new Date(a.last); })
+      .slice(0, 12);
+    if(recent.length){
+      recent.forEach(function(v){ renderCard(recentEl, v.leg, new Date(v.last).toLocaleDateString('en-GB', {day:'numeric', month:'short'})); });
+    } else {
+      recentEl.innerHTML = '<p class="empty-note">Visit a few legend pages and they will show up here.</p>';
+    }
+
+    var visitedSet = new Set(visitedNames);
+    fetch('collections.json').then(function(r){ return r.json(); }).then(function(colData){
+      var collections = colData.collections || [];
+      var colEl = document.getElementById('collectionProgress');
+      if(!collections.length){
+        colEl.innerHTML = '<p class="empty-note">No collections available yet.</p>';
+        return;
+      }
+      Promise.all(collections.map(function(col){
+        return fetch('legends/collection/' + col.slug + '.json')
+          .then(function(r){ return r.ok ? r.json() : { legends: [] }; })
+          .catch(function(){ return { legends: [] }; })
+          .then(function(members){ return { col: col, members: members.legends || [] }; });
+      })).then(function(results){
+        colEl.innerHTML = '';
+        results.filter(function(r){ return r.members.length; }).forEach(function(r){
+          var visitedCount = r.members.filter(function(n){ return visitedSet.has(n); }).length;
+          var done = visitedCount === r.members.length;
+          var row = document.createElement('div');
+          row.className = 'collection-row' + (done ? ' done' : '');
+          row.innerHTML = '<span class="collection-name"><a href="legends/collection/' + r.col.slug + '"></a></span>'
+            + '<span class="collection-frac">' + visitedCount + ' / ' + r.members.length + (done ? ' &#10003;' : '') + '</span>';
+          row.querySelector('a').textContent = r.col.title;
+          colEl.appendChild(row);
+        });
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>

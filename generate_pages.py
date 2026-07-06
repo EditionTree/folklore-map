@@ -832,15 +832,6 @@ $breadcrumb_jsonld
 </head>
 <body>
 $topnav
-<header class="brandbar">
-  <a class="brand" href="$base/">
-    <img src="$base/green-man.png" alt=""/>
-    <span>
-      <span class="brand-name">Folklore Finder</span>
-          <span class="brand-line">An Atlas of Myths, Legends, &amp; Stories</span>
-    </span>
-  </a>
-</header>
 <main>
   <div class="shell">
     $breadcrumb
@@ -869,6 +860,8 @@ $hero_caption
           <button class="button secondary" id="webShareBtn" type="button" hidden>Share</button>
         </div>
         <span class="share-status" id="shareStatus" role="status" aria-live="polite"></span>
+
+        $featured_collections
       </article>
 
       <aside class="sidebar" aria-label="Legend details">
@@ -888,8 +881,6 @@ $hero_caption
         $historical_context
 
         $featured_nearby
-
-        $featured_collections
 
         <section class="side-card side-pad">
           <p class="side-kicker">At a Glance</p>

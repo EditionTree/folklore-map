@@ -5911,6 +5911,366 @@
         "Setting": "Dartmoor, Devon",
         "Motif": "Apparition and unrest"
       }
+    },
+    "Oran of Iona": {
+      "priority": 395,
+      "image": "legend-images/oran-of-iona-hero.jpg",
+      "alt": "A cinematic ghost folklore image of Oran of Iona, shown as the central apparition or haunting from Isle of Iona, Scotland",
+      "caption": "A visual interpretation of Oran of Iona",
+      "map_title": "Isle of Iona, Scotland",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "When St Columba’s first chapel walls kept collapsing overnight, his companion Oran volunteered to be buried alive in the foundations; three days...",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Isle of Iona, Scotland",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "Phantom Battle of Edgehill": {
+      "priority": 396,
+      "image": "legend-images/phantom-battle-of-edgehill-hero.jpg",
+      "alt": "A cinematic ghost folklore image of Phantom Battle of Edgehill, shown as the central apparition or haunting from Edgehill, Warwickshire",
+      "caption": "A visual interpretation of Phantom Battle of Edgehill",
+      "map_title": "Edgehill, Warwickshire",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "After the Battle of Edgehill in 1642, witnesses reported ghostly armies replaying the fighting above the battlefield. The tradition includes...",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Edgehill, Warwickshire",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "Phantom Hare of Bolingbroke Castle": {
+      "priority": 397,
+      "image": "legend-images/phantom-hare-of-bolingbroke-castle-hero.jpg",
+      "alt": "A cinematic ghost folklore image of Phantom Hare of Bolingbroke Castle, shown as the central apparition or haunting from Old Bolingbroke, Lincolnshire, England",
+      "caption": "A visual interpretation of Phantom Hare of Bolingbroke Castle",
+      "map_title": "Old Bolingbroke, Lincolnshire, England",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "A phantom white hare said to haunt the ruined castle at Old Bolingbroke in Lincolnshire — birthplace of Henry IV — appearing at dusk among the broken...",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Old Bolingbroke, Lincolnshire, England",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "Sarah Whitehead": {
+      "priority": 398,
+      "image": "legend-images/sarah-whitehead-hero.jpg",
+      "alt": "A cinematic ghost folklore image of Sarah Whitehead, shown as the central apparition or haunting from London",
+      "caption": "A visual interpretation of Sarah Whitehead",
+      "map_title": "London",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "Sarah Whitehead is the reported name of a woman whose ghost is said to haunt the Bank of England; her ghost became known as The Black Nun.",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "London",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "Screaming House of St Aubin": {
+      "priority": 399,
+      "image": "legend-images/screaming-house-of-st-aubin-hero.jpg",
+      "alt": "A cinematic ghost folklore image of Screaming House of St Aubin, shown as the central apparition or haunting from St Aubin, Jersey, Channel Islands",
+      "caption": "A visual interpretation of Screaming House of St Aubin",
+      "map_title": "St Aubin, Jersey, Channel Islands",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "On Mount Arthur a man welcomed Huguenot refugees into his home — then murdered them in their sleep for their goods. Long after his death the victims'...",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "St Aubin, Jersey, Channel Islands",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "Screaming Skull of Bettiscombe": {
+      "priority": 400,
+      "image": "legend-images/screaming-skull-of-bettiscombe-hero.jpg",
+      "alt": "A cinematic ghost folklore image of Screaming Skull of Bettiscombe, shown as the central apparition or haunting from Bettiscombe, Dorset, England",
+      "caption": "A visual interpretation of Screaming Skull of Bettiscombe",
+      "map_title": "Bettiscombe, Dorset, England",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "A human skull kept at Bettiscombe Manor in Dorset that is said to scream if removed from the house — and to bring pestilence, failed harvests and...",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Bettiscombe, Dorset, England",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "Screaming Skull of Calgarth": {
+      "priority": 401,
+      "image": "legend-images/screaming-skull-of-calgarth-hero.jpg",
+      "alt": "A cinematic ghost folklore image of Screaming Skull of Calgarth, shown as the central apparition or haunting from Windermere, Cumbria, England",
+      "caption": "A visual interpretation of Screaming Skull of Calgarth",
+      "map_title": "Windermere, Cumbria, England",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "Dorothy Cook cursed Myles Philipson from the scaffold: two screaming skulls would haunt Calgarth Hall until his family was ruined. Cast into...",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Windermere, Cumbria, England",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "Sluagh": {
+      "priority": 402,
+      "image": "legend-images/sluagh-hero.jpg",
+      "alt": "A cinematic ghost folklore image of Sluagh, shown as the central apparition or haunting from Western Isles, Scotland",
+      "caption": "A visual interpretation of Sluagh",
+      "map_title": "Western Isles, Scotland",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "The Sluagh are airborne hosts of the unforgiven dead in Scottish Gaelic folklore. Hebridean tradition warns that they sweep in from the west seeking...",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Western Isles, Scotland",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "The Babes in the Wood": {
+      "priority": 403,
+      "image": "legend-images/the-babes-in-the-wood-hero.jpg",
+      "alt": "A cinematic ghost folklore image of The Babes in the Wood, shown as the central apparition or haunting from Wayland Wood, Norfolk",
+      "caption": "A visual interpretation of The Babes in the Wood",
+      "map_title": "Wayland Wood, Norfolk",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "Two orphaned children, left to a greedy uncle who paid to have them lost in Wayland Wood, died among the trees where robins covered them with leaves...",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Wayland Wood, Norfolk",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "The Black Dog of Newgate": {
+      "priority": 404,
+      "image": "legend-images/the-black-dog-of-newgate-hero.jpg",
+      "alt": "A cinematic ghost folklore image of The Black Dog of Newgate, shown as the central apparition or haunting from London",
+      "caption": "A visual interpretation of The Black Dog of Newgate",
+      "map_title": "London",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "The Black Dog of Newgate is a legend concerning the haunting of the former Newgate Prison of London, which was located next to the Old Bailey, close...",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "London",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "The Cauld Lad of Hylton": {
+      "priority": 405,
+      "image": "legend-images/the-cauld-lad-of-hylton-hero.jpg",
+      "alt": "A cinematic ghost folklore image of The Cauld Lad of Hylton, shown as the central apparition or haunting from Sunderland",
+      "caption": "A visual interpretation of The Cauld Lad of Hylton",
+      "map_title": "Sunderland",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "The spirit of a stable boy killed by a lord of Hylton Castle. He haunted the kitchens, tidying if work was left undone — until given a cloak and...",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Sunderland",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "The Drummer of Tedworth": {
+      "priority": 406,
+      "image": "legend-images/the-drummer-of-tedworth-hero.jpg",
+      "alt": "A cinematic ghost folklore image of The Drummer of Tedworth, shown as the central apparition or haunting from Tidworth, Wiltshire",
+      "caption": "A visual interpretation of The Drummer of Tedworth",
+      "map_title": "Tidworth, Wiltshire",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "After a Wiltshire magistrate confiscated a vagrant drummer's drum in 1662, his house was tormented by phantom drumming and flying objects — England's...",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Tidworth, Wiltshire",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "The Ghosts of Doddington Hall": {
+      "priority": 407,
+      "image": "legend-images/the-ghosts-of-doddington-hall-hero.jpg",
+      "alt": "A cinematic ghost folklore image of The Ghosts of Doddington Hall, shown as the central apparition or haunting from Doddington, Lincolnshire",
+      "caption": "A visual interpretation of The Ghosts of Doddington Hall",
+      "map_title": "Doddington, Lincolnshire",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "Two spirits share the Elizabethan hall: a kindly Brown Lady in a stiff old gown who sits smiling beside new brides, and a screaming girl who falls...",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Doddington, Lincolnshire",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "The Hairy Hands": {
+      "priority": 408,
+      "image": "legend-images/the-hairy-hands-hero.jpg",
+      "alt": "A cinematic ghost folklore image of The Hairy Hands, shown as the central apparition or haunting from Dartmoor, Devon",
+      "caption": "A visual interpretation of The Hairy Hands",
+      "map_title": "Dartmoor, Devon",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "On a lonely stretch of Dartmoor road, a pair of disembodied hairy hands are said to seize the steering or handlebars of passing travellers and wrench...",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Dartmoor, Devon",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "The Mistletoe Bough": {
+      "priority": 409,
+      "image": "legend-images/the-mistletoe-bough-hero.jpg",
+      "alt": "A cinematic ghost folklore image of The Mistletoe Bough, shown as the central apparition or haunting from Minster Lovell, Oxfordshire",
+      "caption": "A visual interpretation of The Mistletoe Bough",
+      "map_title": "Minster Lovell, Oxfordshire",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "A young bride, hiding in an old oak chest during a wedding game of hide-and-seek, was trapped by its spring-lock and never found — her skeleton...",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Minster Lovell, Oxfordshire",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "The Pump Hill Smuggler": {
+      "priority": 410,
+      "image": "legend-images/the-pump-hill-smuggler-hero.jpg",
+      "alt": "A cinematic ghost folklore image of The Pump Hill Smuggler, shown as the central apparition or haunting from Happisburgh, Norfolk, England",
+      "caption": "A visual interpretation of The Pump Hill Smuggler",
+      "map_title": "Happisburgh, Norfolk, England",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "A headless, legless smuggler — his head dangling between his shoulders — still drags a sack of plunder through Happisburgh, groaning from an old well...",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Happisburgh, Norfolk, England",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "The Ratman of Southend": {
+      "priority": 411,
+      "image": "legend-images/the-ratman-of-southend-hero.jpg",
+      "alt": "A cinematic ghost folklore image of The Ratman of Southend, shown as the central apparition or haunting from Essex",
+      "caption": "A visual interpretation of The Ratman of Southend",
+      "map_title": "Essex",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "A modern urban legend from Southend-on-Sea in Essex — a half-human, half-rat creature said to lurk in the storm drains and sewers beneath the...",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Essex",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "Thornton Road poltergeist claim": {
+      "priority": 412,
+      "image": "legend-images/thornton-road-poltergeist-claim-hero.jpg",
+      "alt": "A cinematic ghost folklore image of Thornton Road poltergeist claim, shown as the central apparition or haunting from Ward End, Birmingham",
+      "caption": "A visual interpretation of Thornton Road poltergeist claim",
+      "map_title": "Ward End, Birmingham",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "The Thornton Road Poltergeist refers to stone-throwing incidents in a residential area of Birmingham, England, in 1981 and the subsequent police...",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Ward End, Birmingham",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "Tyrell's Hound": {
+      "priority": 413,
+      "image": "legend-images/tyrell-s-hound-hero.jpg",
+      "alt": "A cinematic ghost folklore image of Tyrell's Hound, shown as the central apparition or haunting from New Forest, Hampshire, England",
+      "caption": "A visual interpretation of Tyrell's Hound",
+      "map_title": "New Forest, Hampshire, England",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "Each year Ocknell Pond near Stoney Cross turns red with the blood of King William Rufus — and a great spectral black hound, Tyrell's dog, rises to...",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "New Forest, Hampshire, England",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "Vanishing Keepers of the Flannan Isles": {
+      "priority": 414,
+      "image": "legend-images/vanishing-keepers-of-the-flannan-isles-hero.jpg",
+      "alt": "A cinematic ghost folklore image of Vanishing Keepers of the Flannan Isles, shown as the central apparition or haunting from Flannan Isles, Outer Hebrides, Scotland",
+      "caption": "A visual interpretation of Vanishing Keepers of the Flannan Isles",
+      "map_title": "Flannan Isles, Outer Hebrides, Scotland",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "Three lighthouse keepers vanished from the remote Flannan Isles on 15 December 1900 — clocks stopped, meals untouched, one oilskin left behind....",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Flannan Isles, Outer Hebrides, Scotland",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "Warrior of the Gog Magog Hills": {
+      "priority": 415,
+      "image": "legend-images/warrior-of-the-gog-magog-hills-hero.jpg",
+      "alt": "A cinematic ghost folklore image of Warrior of the Gog Magog Hills, shown as the central apparition or haunting from Cambridgeshire",
+      "caption": "A visual interpretation of Warrior of the Gog Magog Hills",
+      "map_title": "Cambridgeshire",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "Iron-age earthworks at Wandlebury Ring, Cambridge, are said to be haunted by a phantom warrior — perhaps Gogmagog himself — while a 1950s dig claimed...",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Cambridgeshire",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "White Lady of Tattershall Castle": {
+      "priority": 416,
+      "image": "legend-images/white-lady-of-tattershall-castle-hero.jpg",
+      "alt": "A cinematic ghost folklore image of White Lady of Tattershall Castle, shown as the central apparition or haunting from Tattershall, Lincolnshire, England",
+      "caption": "A visual interpretation of White Lady of Tattershall Castle",
+      "map_title": "Tattershall, Lincolnshire, England",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "A glimmering woman in a medieval headdress has paced the battlements of Tattershall Castle for centuries, forever waiting for a lost love who never...",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Tattershall, Lincolnshire, England",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "Wights": {
+      "priority": 417,
+      "image": "legend-images/wights-hero.jpg",
+      "alt": "A cinematic ghost folklore image of Wights, shown as the central apparition or haunting from Northern England",
+      "caption": "A visual interpretation of Wights",
+      "map_title": "Northern England",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "Spirits that inhabit places, objects, and the land itself in Norse and Anglo-Saxon tradition. Some are protective, some malevolent. The land-wights...",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Northern England",
+        "Motif": "Apparition and unrest"
+      }
+    },
+    "Wraith": {
+      "priority": 418,
+      "image": "legend-images/wraith-hero.jpg",
+      "alt": "A cinematic ghost folklore image of Wraith, shown as the central apparition or haunting from Scotland",
+      "caption": "A visual interpretation of Wraith",
+      "map_title": "Scotland",
+      "section_heading": "The haunting at the heart of the tale",
+      "pullquote": "Scotland's wraith is the exact spectral double of a living person—seen by loved ones just before their death, wearing a familiar face. Unlike a...",
+      "facts": {
+        "Tradition": "Ghost folklore",
+        "Type": "Ghost or haunting",
+        "Setting": "Scotland",
+        "Motif": "Apparition and unrest"
+      }
     }
   }
 }

@@ -175,6 +175,10 @@ def collection_page_url(slug, page):
     return f"{BASE}/{OUT_DIR}/collection/{slug}{suffix}"
 
 
+def period_page_url(slug):
+    return f"{BASE}/{OUT_DIR}/period/{slug}"
+
+
 def pagination_html(slug, page, total_pages):
     """Numbered Prev/Next pagination for a paginated collection."""
     if total_pages <= 1:
@@ -204,6 +208,15 @@ def load_collections():
     """Load curated themed-collection definitions; empty list if absent."""
     try:
         return json.load(io.open("collections.json", encoding="utf-8")).get("collections", [])
+    except Exception:
+        return []
+
+
+def load_periods():
+    """Load the canonical historical-period list (Explore Through Time);
+    empty list if absent — in chronological order as authored."""
+    try:
+        return json.load(io.open("periods.json", encoding="utf-8")).get("periods", [])
     except Exception:
         return []
 
@@ -291,6 +304,7 @@ TOPNAV_ITEMS = [
     ("map", "Map", "/map"),
     ("browse", "Browse", "/" + OUT_DIR + "/"),
     ("collections", "Collections", "/" + OUT_DIR + "/collections"),
+    ("periods", "Timeline", "/" + OUT_DIR + "/periods"),
     ("achievements", "Achievements", "/achievements"),
     ("archive", "My Archive", "/archive"),
     ("about", "About", "/about"),
@@ -975,7 +989,8 @@ def update_whats_new_page(recent, built_collections, slugmap, limit=8):
 
 def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
                            slugmap, catname, maplink, page_path_url, desc,
-                           jsonld, breadcrumb, breadcrumb_jsonld, collections=()):
+                           jsonld, breadcrumb, breadcrumb_jsonld, collections=(),
+                           periods_by_title=None):
     """Render the editorial legend layout, with artwork when available."""
     name = leg["name"]
     image_path = featured.get("image", "")
@@ -1015,18 +1030,24 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
     # tradition and dating confidence, when the entry has any of them. Dates in
     # folklore are often approximate (many traditions predate any surviving
     # written source), so the caveat is shown whenever the section renders.
+    period_value = leg.get("period", "")
+    period_slug = (periods_by_title or {}).get(period_value)
+    period_display = (
+        f'<a href="{period_page_url(period_slug)}">{esc(period_value)}</a>'
+        if period_slug else esc(period_value)
+    ) if period_value else None
     hist_fields = [
-        ("Approximate Origin", leg.get("origin_date")),
-        ("Earliest Written Record", leg.get("earliest_record")),
-        ("Historical Period", title_case_text(leg.get("period", "")) or None),
-        ("Historical Setting", leg.get("historical_setting")),
-        ("Cultural Tradition", leg.get("cultural_tradition")),
-        ("Dating Confidence", title_case_text(leg.get("dating_confidence", "")) or None),
+        ("Approximate Origin", esc(leg.get("origin_date")) if leg.get("origin_date") else None),
+        ("Earliest Written Record", esc(leg.get("earliest_record")) if leg.get("earliest_record") else None),
+        ("Historical Period", period_display),
+        ("Historical Setting", esc(leg.get("historical_setting")) if leg.get("historical_setting") else None),
+        ("Cultural Tradition", esc(leg.get("cultural_tradition")) if leg.get("cultural_tradition") else None),
+        ("Dating Confidence", esc(title_case_text(leg.get("dating_confidence", ""))) if leg.get("dating_confidence") else None),
     ]
     hist_items = [(label, val) for label, val in hist_fields if val]
     if hist_items:
         hist_facts_html = "".join(
-            f'<div class="fact"><span>{esc(label)}</span><strong>{esc(val)}</strong></div>'
+            f'<div class="fact"><span>{esc(label)}</span><strong>{val}</strong></div>'
             for label, val in hist_items
         )
         historical_context = (
@@ -1271,6 +1292,19 @@ def build():
         for l in members:
             legend_collections_map.setdefault(l["name"], []).append((col["slug"], col["title"]))
 
+    # Explore Through Time — every canonical period gets a page regardless of
+    # how many legends currently carry it (a fixed historical framework, not
+    # a curated collection that should stay hidden while thin).
+    periods = load_periods()
+    periods_by_title = {p["match"]: p["slug"] for p in periods}
+    period_members = {p["slug"]: [] for p in periods}
+    for l in legends:
+        slug = periods_by_title.get(l.get("period"))
+        if slug:
+            period_members[slug].append(l)
+    for slug in period_members:
+        period_members[slug].sort(key=lambda l: l["name"].lower())
+
     written = 0
     for leg in legends:
         name = leg["name"]
@@ -1412,6 +1446,7 @@ def build():
             breadcrumb=breadcrumb,
             breadcrumb_jsonld=breadcrumb_jsonld,
             collections=legend_collections_map.get(name, []),
+            periods_by_title=periods_by_title,
         )
         with io.open(os.path.join(OUT_DIR, f"{slug}.html"), "w", encoding="utf-8") as f:
             f.write(out)
@@ -1655,6 +1690,108 @@ def build():
             with io.open(os.path.join(OUT_DIR, "collections.html"), "w", encoding="utf-8") as f:
                 f.write(land_page)
             browse_urls.append(land_url)
+
+    # ── Explore Through Time (period pages) ────────────────────────────────
+    period_dir = os.path.join(OUT_DIR, "period")
+    if periods:
+        os.makedirs(period_dir, exist_ok=True)
+        period_nav_items = [
+            (period_page_url(p["slug"]), p["title"], p["slug"]) for p in periods
+        ]
+        timeline_cards = []
+        for p in periods:
+            slug = p["slug"]
+            members = period_members[slug]
+            url = period_page_url(slug)
+            cards = "\n".join(
+                browse_card(l, slugmap, cats, meta, show_cat=True, show_summary=True)
+                for l in members
+            )
+            themes_html = "".join(f"<li>{esc(t)}</li>" for t in p.get("themes", []))
+            extra_sections = (
+                f'<section class="col-section"><h2>Common Folklore Themes</h2>'
+                f'<ul class="col-resources">{themes_html}</ul></section>'
+            ) if themes_html else ""
+            period_jsonld = json.dumps({
+                "@context": "https://schema.org",
+                "@type": "CollectionPage",
+                "name": p["title"],
+                "description": short_desc(p["overview"], 155),
+                "url": url,
+                "isPartOf": {"@type": "WebSite", "name": "Folklore Finder", "url": BASE + "/"},
+                "mainEntity": {
+                    "@type": "ItemList",
+                    "numberOfItems": len(members),
+                    "itemListElement": [
+                        {"@type": "ListItem", "position": i + 1,
+                         "url": f"{BASE}/{OUT_DIR}/{slugmap[m['name']]}", "name": m["name"]}
+                        for i, m in enumerate(members)
+                    ],
+                },
+            }, ensure_ascii=False)
+            empty_note = (
+                '<p class="empty-note" style="font-size:13px;font-style:italic;color:#5c4a2a">'
+                'No legends have been dated to this period yet — check back as the archive grows.</p>'
+            ) if not members else ""
+            page = build_browse_page(
+                page_title=f"{p['title']} Folklore — Folklore Finder",
+                desc=short_desc(p["overview"], 155),
+                url=url,
+                h1=p["title"],
+                intro=p["overview"],
+                crumb=p["title"],
+                nav_html=nav_links(period_nav_items, slug),
+                cards_html=cards or empty_note,
+                jsonld=period_jsonld,
+                nav_active="periods",
+                extra_sections=extra_sections,
+            )
+            with io.open(os.path.join(period_dir, f"{slug}.html"), "w", encoding="utf-8") as f:
+                f.write(page)
+            browse_urls.append(url)
+            timeline_cards.append(
+                f'<a class="b-card" href="{url}">'
+                f'<span class="b-name">{esc(p["title"])}</span>'
+                f'<span class="b-region">{len(members)} legend{"s" if len(members) != 1 else ""}</span>'
+                f'<span class="b-summary">{esc(short_desc(p["overview"], 140))}</span></a>'
+            )
+
+        timeline_url = f"{BASE}/{OUT_DIR}/periods"
+        timeline_jsonld = json.dumps({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "Explore Through Time",
+            "description": "Browse British and Irish folklore by historical period, from prehistoric "
+                           "Britain to modern folklore.",
+            "url": timeline_url,
+            "isPartOf": {"@type": "WebSite", "name": "Folklore Finder", "url": BASE + "/"},
+            "mainEntity": {
+                "@type": "ItemList",
+                "numberOfItems": len(periods),
+                "itemListElement": [
+                    {"@type": "ListItem", "position": i + 1,
+                     "url": period_page_url(p["slug"]), "name": p["title"]}
+                    for i, p in enumerate(periods)
+                ],
+            },
+        }, ensure_ascii=False)
+        timeline_page = build_browse_page(
+            page_title="Explore Through Time — Folklore Finder",
+            desc="Browse British and Irish folklore by historical period, from prehistoric Britain "
+                 "to modern folklore.",
+            url=timeline_url,
+            h1="Explore Through Time",
+            intro="From the standing stones of prehistoric Britain to the urban legends of the present day — "
+                  "browse the archive by the historical period each legend is associated with.",
+            crumb="Explore Through Time",
+            nav_html="",
+            cards_html="\n".join(timeline_cards),
+            jsonld=timeline_jsonld,
+            nav_active="periods",
+        )
+        with io.open(os.path.join(OUT_DIR, "periods.html"), "w", encoding="utf-8") as f:
+            f.write(timeline_page)
+        browse_urls.append(timeline_url)
 
     # Browse sections for the A-Z index page
     cat_links = "".join(

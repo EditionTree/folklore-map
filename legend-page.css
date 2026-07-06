@@ -323,6 +323,26 @@ h1{
 .fact strong{font-weight:500;font-size:14px}
 .source-copy{margin:12px 0 0;color:var(--ink-soft);font-size:14px;line-height:1.55}
 .hist-caveat{margin:12px 0 0;color:var(--ink-soft);font-size:12px;font-style:italic;line-height:1.5}
+
+.ach-toast-stack{position:fixed;right:16px;bottom:16px;z-index:9500;display:flex;flex-direction:column;gap:8px;pointer-events:none;max-width:calc(100vw - 32px)}
+.ach-toast{
+  pointer-events:auto;
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-left:3px solid var(--rust);
+  border-radius:3px;
+  padding:10px 14px;
+  width:290px;
+  max-width:100%;
+  box-shadow:0 6px 24px rgba(0,0,0,.25);
+  opacity:0;
+  transform:translateY(8px);
+  transition:opacity .25s,transform .25s;
+}
+.ach-toast.show{opacity:1;transform:translateY(0)}
+.ach-toast-title{display:block;font-family:'Marcellus',serif;font-size:12px;letter-spacing:.04em;color:var(--rust-dark);margin-bottom:2px}
+.ach-toast-body{display:block;font-size:13px;color:var(--ink);line-height:1.4}
+@media(max-width:480px){.ach-toast-stack{right:8px;bottom:8px}.ach-toast{width:calc(100vw - 16px)}}
 .source-list{list-style:none;margin:13px 0 0;padding:0}
 .source-list li+li{margin-top:7px}
 .source-list a{color:var(--rust-dark);font-size:13px}

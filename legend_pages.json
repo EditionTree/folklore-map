@@ -4936,6 +4936,636 @@
         "Setting": "Ancient Welsh court",
         "Motif": "Impossible tasks"
       }
+    },
+    "Belenus": {
+      "priority": 330,
+      "image": "legend-images/belenus-hero.jpg",
+      "alt": "A cinematic folklore image of Belenus, shown as the central divine figure from Britain & Gaul",
+      "caption": "A visual interpretation of Belenus in Britain & Gaul",
+      "map_title": "Britain & Gaul",
+      "section_heading": "The divine presence",
+      "pullquote": "A Celtic healing and solar god whose cult spread widely across the ancient Celtic world",
+      "facts": {
+        "Tradition": "British and Irish mythology",
+        "Type": "Divine figure",
+        "Setting": "Britain & Gaul",
+        "Motif": "Mythic identity"
+      }
+    },
+    "Cailleach Bhéara": {
+      "priority": 331,
+      "image": "legend-images/cailleach-bheara-hero.jpg",
+      "alt": "A cinematic folklore image of Cailleach Bhéara, shown as the central divine figure from County Cork, Ireland",
+      "caption": "A visual interpretation of Cailleach Bhéara in County Cork, Ireland",
+      "map_title": "County Cork, Ireland",
+      "section_heading": "The divine presence",
+      "pullquote": "The ancient hag of the Beara Peninsula — one of the oldest figures in Irish and Scottish mythology",
+      "facts": {
+        "Tradition": "British and Irish mythology",
+        "Type": "Divine figure",
+        "Setting": "County Cork, Ireland",
+        "Motif": "Mythic identity"
+      }
+    },
+    "Clíodhna": {
+      "priority": 332,
+      "image": "legend-images/cliodhna-hero.jpg",
+      "alt": "A cinematic folklore image of Clíodhna, shown as the central divine figure from Glandore, County Cork, Ireland",
+      "caption": "A visual interpretation of Clíodhna in Glandore, County Cork, Ireland",
+      "map_title": "Glandore, County Cork, Ireland",
+      "section_heading": "The divine presence",
+      "pullquote": "Munster's goddess of love and queen of the banshees",
+      "facts": {
+        "Tradition": "British and Irish mythology",
+        "Type": "Divine figure",
+        "Setting": "Glandore, County Cork, Ireland",
+        "Motif": "Mythic identity"
+      }
+    },
+    "Coventina": {
+      "priority": 333,
+      "image": "legend-images/coventina-hero.jpg",
+      "alt": "A cinematic folklore image of Coventina, shown as the central divine figure from Northumberland",
+      "caption": "A visual interpretation of Coventina in Northumberland",
+      "map_title": "Northumberland",
+      "section_heading": "The divine presence",
+      "pullquote": "A Romano-British goddess of wells and springs, especially associated with Coventina's Well near Carrawburgh on Hadrian's Wall",
+      "facts": {
+        "Tradition": "British and Irish mythology",
+        "Type": "Divine figure",
+        "Setting": "Northumberland",
+        "Motif": "Mythic identity"
+      }
+    },
+    "Elder Mother": {
+      "priority": 334,
+      "image": "legend-images/elder-mother-hero.jpg",
+      "alt": "A cinematic folklore image of Elder Mother, shown as the central divine figure from East Midlands",
+      "caption": "A visual interpretation of Elder Mother in East Midlands",
+      "map_title": "East Midlands",
+      "section_heading": "The divine presence",
+      "pullquote": "The spirit who lives within the elder tree must be asked before the first cut is made",
+      "facts": {
+        "Tradition": "British and Irish mythology",
+        "Type": "Divine figure",
+        "Setting": "East Midlands",
+        "Motif": "Mythic identity"
+      }
+    },
+    "Epona": {
+      "priority": 335,
+      "image": "legend-images/epona-hero.jpg",
+      "alt": "A cinematic folklore image of Epona, shown as the central divine figure from Roman Britain",
+      "caption": "A visual interpretation of Epona in Roman Britain",
+      "map_title": "Roman Britain",
+      "section_heading": "The divine presence",
+      "pullquote": "A Celtic horse goddess worshipped across the Roman world, including Britain",
+      "facts": {
+        "Tradition": "British and Irish mythology",
+        "Type": "Divine figure",
+        "Setting": "Roman Britain",
+        "Motif": "Mythic identity"
+      }
+    },
+    "Erne of Lough Erne": {
+      "priority": 336,
+      "image": "legend-images/erne-of-lough-erne-hero.jpg",
+      "alt": "A cinematic folklore image of Erne of Lough Erne, shown as the central divine figure from County Fermanagh, Northern Ireland",
+      "caption": "A visual interpretation of Erne of Lough Erne in County Fermanagh, Northern Ireland",
+      "map_title": "County Fermanagh, Northern Ireland",
+      "section_heading": "The divine presence",
+      "pullquote": "Queen Méabh's lady-in-waiting fled from a monstrous giant and drowned — her body dissolving to become the waters of Lough Erne",
+      "facts": {
+        "Tradition": "British and Irish mythology",
+        "Type": "Divine figure",
+        "Setting": "County Fermanagh, Northern Ireland",
+        "Motif": "Mythic identity"
+      }
+    },
+    "Gwy": {
+      "priority": 337,
+      "image": "legend-images/gwy-hero.jpg",
+      "alt": "A cinematic folklore image of Gwy, shown as the central divine figure from Welsh Marches",
+      "caption": "A visual interpretation of Gwy in Welsh Marches",
+      "map_title": "Welsh Marches",
+      "section_heading": "The divine presence",
+      "pullquote": "The second daughter of the giant Plynlimon, who raced her sisters from the mountain summit to the sea",
+      "facts": {
+        "Tradition": "British and Irish mythology",
+        "Type": "Divine figure",
+        "Setting": "Welsh Marches",
+        "Motif": "Mythic identity"
+      }
+    },
+    "Gwyn ap Nudd": {
+      "priority": 338,
+      "image": "legend-images/gwyn-ap-nudd-hero.jpg",
+      "alt": "A cinematic folklore image of Gwyn ap Nudd, shown as the central divine figure from Somerset / Wales",
+      "caption": "A visual interpretation of Gwyn ap Nudd in Somerset / Wales",
+      "map_title": "Somerset / Wales",
+      "section_heading": "The divine presence",
+      "pullquote": "King of the Tylwyth Teg and ruler of Annwn — his glass castle lies within Glastonbury Tor, where Saint Collen drove him out with holy water",
+      "facts": {
+        "Tradition": "British and Irish mythology",
+        "Type": "Divine figure",
+        "Setting": "Somerset / Wales",
+        "Motif": "Mythic identity"
+      }
+    },
+    "Hafren": {
+      "priority": 339,
+      "image": "legend-images/hafren-hero.jpg",
+      "alt": "A cinematic folklore image of Hafren, shown as the central divine figure from Welsh Marches",
+      "caption": "A visual interpretation of Hafren in Welsh Marches",
+      "map_title": "Welsh Marches",
+      "section_heading": "The divine presence",
+      "pullquote": "Britain’s longest river, named for Sabrina — a princess drowned in its waters by a wicked stepmother and transformed into a river goddess",
+      "facts": {
+        "Tradition": "British and Irish mythology",
+        "Type": "Divine figure",
+        "Setting": "Welsh Marches",
+        "Motif": "Mythic identity"
+      }
+    },
+    "La Gran'mère du Chimquière": {
+      "priority": 340,
+      "image": "legend-images/la-gran-mere-du-chimquiere-hero.jpg",
+      "alt": "A cinematic folklore image of La Gran'mère du Chimquière, shown as the central divine figure from St Martin's Parish, Guernsey",
+      "caption": "A visual interpretation of La Gran'mère du Chimquière in St Martin's Parish, Guernsey",
+      "map_title": "St Martin's Parish, Guernsey",
+      "section_heading": "The divine presence",
+      "pullquote": "A 4,500-year-old goddess stands at St Martin's church gate in Guernsey",
+      "facts": {
+        "Tradition": "British and Irish mythology",
+        "Type": "Divine figure",
+        "Setting": "St Martin's Parish, Guernsey",
+        "Motif": "Mythic identity"
+      }
+    },
+    "Lleu Llaw Gyffes": {
+      "priority": 341,
+      "image": "legend-images/lleu-llaw-gyffes-hero.jpg",
+      "alt": "A cinematic folklore image of Lleu Llaw Gyffes, shown as the central divine figure from Tomen y Mur, Gwynedd, Wales",
+      "caption": "A visual interpretation of Lleu Llaw Gyffes in Tomen y Mur, Gwynedd, Wales",
+      "map_title": "Tomen y Mur, Gwynedd, Wales",
+      "section_heading": "The divine presence",
+      "pullquote": "Cursed by his mother to have no name, no arms and no wife, the bright Welsh hero was given a bride made of flowers — who betrayed him to a rival, s...",
+      "facts": {
+        "Tradition": "British and Irish mythology",
+        "Type": "Divine figure",
+        "Setting": "Tomen y Mur, Gwynedd, Wales",
+        "Motif": "Mythic identity"
+      }
+    },
+    "Lugh": {
+      "priority": 342,
+      "image": "legend-images/lugh-hero.jpg",
+      "alt": "A cinematic folklore image of Lugh, shown as the central divine figure from Ireland & Northern Britain",
+      "caption": "A visual interpretation of Lugh in Ireland & Northern Britain",
+      "map_title": "Ireland & Northern Britain",
+      "section_heading": "The divine presence",
+      "pullquote": "The shining god of skill and craftsmanship in Celtic tradition — master of every art",
+      "facts": {
+        "Tradition": "British and Irish mythology",
+        "Type": "Divine figure",
+        "Setting": "Ireland & Northern Britain",
+        "Motif": "Mythic identity"
+      }
+    },
+    "Mabon ap Modron": {
+      "priority": 343,
+      "image": "legend-images/mabon-ap-modron-hero.jpg",
+      "alt": "A cinematic folklore image of Mabon ap Modron, shown as the central divine figure from Wales",
+      "caption": "A visual interpretation of Mabon ap Modron in Wales",
+      "map_title": "Wales",
+      "section_heading": "The divine presence",
+      "pullquote": "The divine son stolen from his mother Modron when only three nights old",
+      "facts": {
+        "Tradition": "British and Irish mythology",
+        "Type": "Divine figure",
+        "Setting": "Wales",
+        "Motif": "Mythic identity"
+      }
+    },
+    "Manannán mac Lir": {
+      "priority": 344,
+      "image": "legend-images/manannan-mac-lir-hero.jpg",
+      "alt": "A cinematic folklore image of Manannán mac Lir, shown as the central divine figure from Isle of Man",
+      "caption": "A visual interpretation of Manannán mac Lir in Isle of Man",
+      "map_title": "Isle of Man",
+      "section_heading": "The divine presence",
+      "pullquote": "The sea god wraps Man in mist and walks its hills as three spinning legs — the triskelion still on Man's flag",
+      "facts": {
+        "Tradition": "British and Irish mythology",
+        "Type": "Divine figure",
+        "Setting": "Isle of Man",
+        "Motif": "Mythic identity"
+      }
+    },
+    "Maponos": {
+      "priority": 345,
+      "image": "legend-images/maponos-hero.jpg",
+      "alt": "A cinematic folklore image of Maponos, shown as the central divine figure from Northern Britain",
+      "caption": "A visual interpretation of Maponos in Northern Britain",
+      "map_title": "Northern Britain",
+      "section_heading": "The divine presence",
+      "pullquote": "A youthful Celtic god whose name means something like divine son",
+      "facts": {
+        "Tradition": "British and Irish mythology",
+        "Type": "Divine figure",
+        "Setting": "Northern Britain",
+        "Motif": "Mythic identity"
+      }
+    },
+    "Nodens": {
+      "priority": 346,
+      "image": "legend-images/nodens-hero.jpg",
+      "alt": "A cinematic folklore image of Nodens, shown as the central divine figure from Gloucestershire",
+      "caption": "A visual interpretation of Nodens in Gloucestershire",
+      "map_title": "Gloucestershire",
+      "section_heading": "The divine presence",
+      "pullquote": "A Romano-British god of healing, hunting, dogs, and the sea, worshipped at Lydney Park",
+      "facts": {
+        "Tradition": "British and Irish mythology",
+        "Type": "Divine figure",
+        "Setting": "Gloucestershire",
+        "Motif": "Mythic identity"
+      }
+    },
+    "Sulis": {
+      "priority": 347,
+      "image": "legend-images/sulis-hero.jpg",
+      "alt": "A cinematic folklore image of Sulis, shown as the central divine figure from Bath, Somerset",
+      "caption": "A visual interpretation of Sulis in Bath, Somerset",
+      "map_title": "Bath, Somerset",
+      "section_heading": "The divine presence",
+      "pullquote": "A Celtic goddess of healing waters whose sacred spring at Bath was so powerful the Romans built a great temple around it, naming her Sulis Minerva",
+      "facts": {
+        "Tradition": "British and Irish mythology",
+        "Type": "Divine figure",
+        "Setting": "Bath, Somerset",
+        "Motif": "Mythic identity"
+      }
+    },
+    "Taranis": {
+      "priority": 348,
+      "image": "legend-images/taranis-hero.jpg",
+      "alt": "A cinematic folklore image of Taranis, shown as the central divine figure from Northern England",
+      "caption": "A visual interpretation of Taranis in Northern England",
+      "map_title": "Northern England",
+      "section_heading": "The divine presence",
+      "pullquote": "The Celtic god of thunder, his wheel-symbol found carved across Roman Britain from Chester to Hadrian's Wall",
+      "facts": {
+        "Tradition": "British and Irish mythology",
+        "Type": "Divine figure",
+        "Setting": "Northern England",
+        "Motif": "Mythic identity"
+      }
+    },
+    "Thunor": {
+      "priority": 349,
+      "image": "legend-images/thunor-hero.jpg",
+      "alt": "A cinematic folklore image of Thunor, shown as the central divine figure from Anglo-Saxon England",
+      "caption": "A visual interpretation of Thunor in Anglo-Saxon England",
+      "map_title": "Anglo-Saxon England",
+      "section_heading": "The divine presence",
+      "pullquote": "The Anglo-Saxon thunder god, cognate with Norse Thor",
+      "facts": {
+        "Tradition": "British and Irish mythology",
+        "Type": "Divine figure",
+        "Setting": "Anglo-Saxon England",
+        "Motif": "Mythic identity"
+      }
+    },
+    "Woden": {
+      "priority": 350,
+      "image": "legend-images/woden-hero.jpg",
+      "alt": "A cinematic folklore image of Woden, shown as the central divine figure from Anglo-Saxon England",
+      "caption": "A visual interpretation of Woden in Anglo-Saxon England",
+      "map_title": "Anglo-Saxon England",
+      "section_heading": "The divine presence",
+      "pullquote": "The Anglo-Saxon form of Odin, remembered in royal genealogies, place-names, and Wednesday",
+      "facts": {
+        "Tradition": "British and Irish mythology",
+        "Type": "Divine figure",
+        "Setting": "Anglo-Saxon England",
+        "Motif": "Mythic identity"
+      }
+    },
+    "Ystwyth": {
+      "priority": 351,
+      "image": "legend-images/ystwyth-hero.jpg",
+      "alt": "A cinematic folklore image of Ystwyth, shown as the central divine figure from Ceredigion, Wales",
+      "caption": "A visual interpretation of Ystwyth in Ceredigion, Wales",
+      "map_title": "Ceredigion, Wales",
+      "section_heading": "The divine presence",
+      "pullquote": "In some later retellings of the Three Sisters of Plynlimon, Ystwyth replaces Rheidol as one of the mountain's daughters",
+      "facts": {
+        "Tradition": "British and Irish mythology",
+        "Type": "Divine figure",
+        "Setting": "Ceredigion, Wales",
+        "Motif": "Mythic identity"
+      }
+    },
+    "Bartholomew Roberts": {
+      "priority": 352,
+      "image": "legend-images/bartholomew-roberts-hero.jpg",
+      "alt": "A cinematic historical image of Bartholomew Roberts, shown as the central pirate or smuggler figure from Little Newcastle, Pembrokeshire",
+      "caption": "A visual interpretation of Bartholomew Roberts and the maritime legend",
+      "map_title": "Little Newcastle, Pembrokeshire",
+      "section_heading": "The figure behind the legend",
+      "pullquote": "The Welsh pirate Barti Ddu, later called Black Bart, captured more than four hundred vessels during the Golden Age of Piracy",
+      "facts": {
+        "Tradition": "Maritime folklore",
+        "Type": "Pirate and smuggler lore",
+        "Setting": "Little Newcastle, Pembrokeshire",
+        "Motif": "Sea-raiding and smuggling"
+      }
+    },
+    "Cruel Coppinger": {
+      "priority": 353,
+      "image": "legend-images/cruel-coppinger-hero.jpg",
+      "alt": "A cinematic historical image of Cruel Coppinger, shown as the central pirate or smuggler figure from Morwenstow, Cornwall",
+      "caption": "A visual interpretation of Cruel Coppinger and the maritime legend",
+      "map_title": "Morwenstow, Cornwall",
+      "section_heading": "The figure behind the legend",
+      "pullquote": "A fearsome Dane flung ashore by shipwreck on the north Cornish coast, 'Cruel Coppinger' press-ganged the locals into a band of smugglers and wrecke...",
+      "facts": {
+        "Tradition": "Maritime folklore",
+        "Type": "Pirate and smuggler lore",
+        "Setting": "Morwenstow, Cornwall",
+        "Motif": "Sea-raiding and smuggling"
+      }
+    },
+    "Daniel Fall, the Pirate of the Norfolk Coast": {
+      "priority": 354,
+      "image": "legend-images/daniel-fall-the-pirate-of-the-norfolk-coast-hero.jpg",
+      "alt": "A cinematic historical image of Daniel Fall, the Pirate of the Norfolk Coast, shown as the central pirate or smuggler figure from Great Yarmouth, Norfolk, England",
+      "caption": "A visual interpretation of Daniel Fall, the Pirate of the Norfolk Coast and the maritime legend",
+      "map_title": "Great Yarmouth, Norfolk, England",
+      "section_heading": "The figure behind the legend",
+      "pullquote": "Privateer Daniel Fall, sailing under American colours with letters of marque from three nations, terrorised the Norfolk coast in 1780-82 — a Yarmou...",
+      "facts": {
+        "Tradition": "Maritime folklore",
+        "Type": "Pirate and smuggler lore",
+        "Setting": "Great Yarmouth, Norfolk, England",
+        "Motif": "Sea-raiding and smuggling"
+      }
+    },
+    "Eustace the Monk": {
+      "priority": 355,
+      "image": "legend-images/eustace-the-monk-hero.jpg",
+      "alt": "A cinematic historical image of Eustace the Monk, shown as the central pirate or smuggler figure from English Channel",
+      "caption": "A visual interpretation of Eustace the Monk and the maritime legend",
+      "map_title": "English Channel",
+      "section_heading": "The figure behind the legend",
+      "pullquote": "A renegade monk turned mercenary pirate, Eustace terrorised the Channel for both England and France in the early 1200s — and was rumoured to have l...",
+      "facts": {
+        "Tradition": "Maritime folklore",
+        "Type": "Pirate and smuggler lore",
+        "Setting": "English Channel",
+        "Motif": "Sea-raiding and smuggling"
+      }
+    },
+    "Francis Drake": {
+      "priority": 356,
+      "image": "legend-images/francis-drake-hero.jpg",
+      "alt": "A cinematic historical image of Francis Drake, shown as the central pirate or smuggler figure from Buckland Abbey, Devon",
+      "caption": "A visual interpretation of Francis Drake and the maritime legend",
+      "map_title": "Buckland Abbey, Devon",
+      "section_heading": "The figure behind the legend",
+      "pullquote": "The privateer Sir Francis Drake is tied to Buckland Abbey through the legend of Drake's Drum",
+      "facts": {
+        "Tradition": "Maritime folklore",
+        "Type": "Pirate and smuggler lore",
+        "Setting": "Buckland Abbey, Devon",
+        "Motif": "Sea-raiding and smuggling"
+      }
+    },
+    "Hard Apple Blyth, the Smuggler of Paglesham": {
+      "priority": 357,
+      "image": "legend-images/hard-apple-blyth-the-smuggler-of-paglesham-hero.jpg",
+      "alt": "A cinematic historical image of Hard Apple Blyth, the Smuggler of Paglesham, shown as the central pirate or smuggler figure from Paglesham, Essex, England",
+      "caption": "A visual interpretation of Hard Apple Blyth, the Smuggler of Paglesham and the maritime legend",
+      "map_title": "Paglesham, Essex, England",
+      "section_heading": "The figure behind the legend",
+      "pullquote": "Paglesham's churchwarden, grocer and parish constable William 'Hard Apple' Blyth ran a smuggling operation under the noses of the very authorities...",
+      "facts": {
+        "Tradition": "Maritime folklore",
+        "Type": "Pirate and smuggler lore",
+        "Setting": "Paglesham, Essex, England",
+        "Motif": "Sea-raiding and smuggling"
+      }
+    },
+    "Henry Every": {
+      "priority": 358,
+      "image": "legend-images/henry-every-hero.jpg",
+      "alt": "A cinematic historical image of Henry Every, shown as the central pirate or smuggler figure from Newton Ferrers, Devon",
+      "caption": "A visual interpretation of Henry Every and the maritime legend",
+      "map_title": "Newton Ferrers, Devon",
+      "section_heading": "The figure behind the legend",
+      "pullquote": "Born near Plymouth, the elusive Henry Every became the Arch Pirate after taking an immense Mughal treasure ship in 1695",
+      "facts": {
+        "Tradition": "Maritime folklore",
+        "Type": "Pirate and smuggler lore",
+        "Setting": "Newton Ferrers, Devon",
+        "Motif": "Sea-raiding and smuggling"
+      }
+    },
+    "Howell Davis": {
+      "priority": 359,
+      "image": "legend-images/howell-davis-hero.jpg",
+      "alt": "A cinematic historical image of Howell Davis, shown as the central pirate or smuggler figure from Milford Haven, Pembrokeshire",
+      "caption": "A visual interpretation of Howell Davis and the maritime legend",
+      "map_title": "Milford Haven, Pembrokeshire",
+      "section_heading": "The figure behind the legend",
+      "pullquote": "The Milford Haven pirate Howell Davis relied on disguise and deception as readily as cannon fire",
+      "facts": {
+        "Tradition": "Maritime folklore",
+        "Type": "Pirate and smuggler lore",
+        "Setting": "Milford Haven, Pembrokeshire",
+        "Motif": "Sea-raiding and smuggling"
+      }
+    },
+    "Isaac Gulliver": {
+      "priority": 360,
+      "image": "legend-images/isaac-gulliver-hero.jpg",
+      "alt": "A cinematic historical image of Isaac Gulliver, shown as the central pirate or smuggler figure from Kinson, Dorset",
+      "caption": "A visual interpretation of Isaac Gulliver and the maritime legend",
+      "map_title": "Kinson, Dorset",
+      "section_heading": "The figure behind the legend",
+      "pullquote": "Dorset's 'gentle smuggler who never killed a man' ran gin, tea and lace with a livery of powder-haired 'White Wigs', and once escaped the excise by...",
+      "facts": {
+        "Tradition": "Maritime folklore",
+        "Type": "Pirate and smuggler lore",
+        "Setting": "Kinson, Dorset",
+        "Motif": "Sea-raiding and smuggling"
+      }
+    },
+    "Jack Rattenbury": {
+      "priority": 361,
+      "image": "legend-images/jack-rattenbury-hero.jpg",
+      "alt": "A cinematic historical image of Jack Rattenbury, shown as the central pirate or smuggler figure from Beer, Devon, England",
+      "caption": "A visual interpretation of Jack Rattenbury and the maritime legend",
+      "map_title": "Beer, Devon, England",
+      "section_heading": "The figure behind the legend",
+      "pullquote": "Devon's 'Rob Roy of the West' — a notorious smuggler from Beer whose dictated 1837 memoir is a rare first-hand account of the free-trade era",
+      "facts": {
+        "Tradition": "Maritime folklore",
+        "Type": "Pirate and smuggler lore",
+        "Setting": "Beer, Devon, England",
+        "Motif": "Sea-raiding and smuggling"
+      }
+    },
+    "Jack Ward": {
+      "priority": 362,
+      "image": "legend-images/jack-ward-hero.jpg",
+      "alt": "A cinematic historical image of Jack Ward, shown as the central pirate or smuggler figure from Faversham, Kent",
+      "caption": "A visual interpretation of Jack Ward and the maritime legend",
+      "map_title": "Faversham, Kent",
+      "section_heading": "The figure behind the legend",
+      "pullquote": "The Faversham-born corsair Jack Ward became England's notorious Arch-Pirate",
+      "facts": {
+        "Tradition": "Maritime folklore",
+        "Type": "Pirate and smuggler lore",
+        "Setting": "Faversham, Kent",
+        "Motif": "Sea-raiding and smuggling"
+      }
+    },
+    "John Callis, Welsh Pirate": {
+      "priority": 363,
+      "image": "legend-images/john-callis-welsh-pirate-hero.jpg",
+      "alt": "A cinematic historical image of John Callis, Welsh Pirate, shown as the central pirate or smuggler figure from Pembrokeshire, Wales",
+      "caption": "A visual interpretation of John Callis, Welsh Pirate and the maritime legend",
+      "map_title": "Pembrokeshire, Wales",
+      "section_heading": "The figure behind the legend",
+      "pullquote": "John Callis terrorised the Bristol Channel in the 1560s–70s from his Pembrokeshire base, selling stolen cargo openly at Laugharne and Carew and usi...",
+      "facts": {
+        "Tradition": "Maritime folklore",
+        "Type": "Pirate and smuggler lore",
+        "Setting": "Pembrokeshire, Wales",
+        "Motif": "Sea-raiding and smuggling"
+      }
+    },
+    "John Carter, the King of Prussia": {
+      "priority": 364,
+      "image": "legend-images/john-carter-the-king-of-prussia-hero.jpg",
+      "alt": "A cinematic historical image of John Carter, the King of Prussia, shown as the central pirate or smuggler figure from Prussia Cove, Cornwall",
+      "caption": "A visual interpretation of John Carter, the King of Prussia and the maritime legend",
+      "map_title": "Prussia Cove, Cornwall",
+      "section_heading": "The figure behind the legend",
+      "pullquote": "The most successful smuggler of the Penzance coast renamed his secret cove 'Prussia Cove' for his hero Frederick the Great, and once broke into the...",
+      "facts": {
+        "Tradition": "Maritime folklore",
+        "Type": "Pirate and smuggler lore",
+        "Setting": "Prussia Cove, Cornwall",
+        "Motif": "Sea-raiding and smuggling"
+      }
+    },
+    "John Gow": {
+      "priority": 365,
+      "image": "legend-images/john-gow-hero.jpg",
+      "alt": "A cinematic historical image of John Gow, shown as the central pirate or smuggler figure from Stromness, Orkney",
+      "caption": "A visual interpretation of John Gow and the maritime legend",
+      "map_title": "Stromness, Orkney",
+      "section_heading": "The figure behind the legend",
+      "pullquote": "John Gow was raised in Stromness and returned to Orkney under an assumed name after a short pirate career",
+      "facts": {
+        "Tradition": "Maritime folklore",
+        "Type": "Pirate and smuggler lore",
+        "Setting": "Stromness, Orkney",
+        "Motif": "Sea-raiding and smuggling"
+      }
+    },
+    "Lady Mary Killigrew": {
+      "priority": 366,
+      "image": "legend-images/lady-mary-killigrew-hero.jpg",
+      "alt": "A cinematic historical image of Lady Mary Killigrew, shown as the central pirate or smuggler figure from Penryn, Cornwall, England",
+      "caption": "A visual interpretation of Lady Mary Killigrew and the maritime legend",
+      "map_title": "Penryn, Cornwall, England",
+      "section_heading": "The figure behind the legend",
+      "pullquote": "In January 1582, the grey-haired wife of Cornwall’s Vice Admiral sent her servants to board a Spanish ship anchored under royal safe conduct opposi...",
+      "facts": {
+        "Tradition": "Maritime folklore",
+        "Type": "Pirate and smuggler lore",
+        "Setting": "Penryn, Cornwall, England",
+        "Motif": "Sea-raiding and smuggling"
+      }
+    },
+    "Sack of Baltimore": {
+      "priority": 367,
+      "image": "legend-images/sack-of-baltimore-hero.jpg",
+      "alt": "A cinematic historical image of Sack of Baltimore, shown as the central pirate or smuggler figure from Baltimore, County Cork, Ireland",
+      "caption": "A visual interpretation of Sack of Baltimore and the maritime legend",
+      "map_title": "Baltimore, County Cork, Ireland",
+      "section_heading": "The figure behind the legend",
+      "pullquote": "Just after midnight on 20 June 1631, over 200 Algerian corsairs descended on the sleeping village of Baltimore and carried 107 people into North Af...",
+      "facts": {
+        "Tradition": "Maritime folklore",
+        "Type": "Pirate and smuggler lore",
+        "Setting": "Baltimore, County Cork, Ireland",
+        "Motif": "Sea-raiding and smuggling"
+      }
+    },
+    "The Hawkhurst Gang": {
+      "priority": 368,
+      "image": "legend-images/the-hawkhurst-gang-hero.jpg",
+      "alt": "A cinematic historical image of The Hawkhurst Gang, shown as the central pirate or smuggler figure from Hawkhurst, Kent",
+      "caption": "A visual interpretation of The Hawkhurst Gang and the maritime legend",
+      "map_title": "Hawkhurst, Kent",
+      "section_heading": "The figure behind the legend",
+      "pullquote": "From the Mermaid Inn at Rye, this ruthless smuggling syndicate terrorised the south-east in the 1740s, raiding the Poole Custom House until the Gou...",
+      "facts": {
+        "Tradition": "Maritime folklore",
+        "Type": "Pirate and smuggler lore",
+        "Setting": "Hawkhurst, Kent",
+        "Motif": "Sea-raiding and smuggling"
+      }
+    },
+    "The Pirates of Dollar Bay": {
+      "priority": 369,
+      "image": "legend-images/the-pirates-of-dollar-bay-hero.jpg",
+      "alt": "A cinematic historical image of The Pirates of Dollar Bay, shown as the central pirate or smuggler figure from Dollar Bay, Hook Peninsula, County Wexford, Ireland",
+      "caption": "A visual interpretation of The Pirates of Dollar Bay and the maritime legend",
+      "map_title": "Dollar Bay, Hook Peninsula, County Wexford, Ireland",
+      "section_heading": "The figure behind the legend",
+      "pullquote": "Four mutineers murdered their captain at sea in 1765 and buried 250 sacks of Spanish silver on a lonely Wexford beach south of Duncannon Fort — giv...",
+      "facts": {
+        "Tradition": "Maritime folklore",
+        "Type": "Pirate and smuggler lore",
+        "Setting": "Dollar Bay, Hook Peninsula, County Wexford, Ireland",
+        "Motif": "Sea-raiding and smuggling"
+      }
+    },
+    "William Owen, the Smuggler General of Pembrokeshire": {
+      "priority": 370,
+      "image": "legend-images/william-owen-the-smuggler-general-of-pembrokeshire-hero.jpg",
+      "alt": "A cinematic historical image of William Owen, the Smuggler General of Pembrokeshire, shown as the central pirate or smuggler figure from Nevern, Pembrokeshire, Wales",
+      "caption": "A visual interpretation of William Owen, the Smuggler General of Pembrokeshire and the maritime legend",
+      "map_title": "Nevern, Pembrokeshire, Wales",
+      "section_heading": "The figure behind the legend",
+      "pullquote": "Born to a respectable farming family in Nevern in 1717, William Owen became one of Wales's most notorious smugglers — running brandy and salt acros...",
+      "facts": {
+        "Tradition": "Maritime folklore",
+        "Type": "Pirate and smuggler lore",
+        "Setting": "Nevern, Pembrokeshire, Wales",
+        "Motif": "Sea-raiding and smuggling"
+      }
+    },
+    "Yawkins, the Galloway Smuggler": {
+      "priority": 371,
+      "image": "legend-images/yawkins-the-galloway-smuggler-hero.jpg",
+      "alt": "A cinematic historical image of Yawkins, the Galloway Smuggler, shown as the central pirate or smuggler figure from Kirkcudbright, Dumfries and Galloway, Scotland",
+      "caption": "A visual interpretation of Yawkins, the Galloway Smuggler and the maritime legend",
+      "map_title": "Kirkcudbright, Dumfries and Galloway, Scotland",
+      "section_heading": "The figure behind the legend",
+      "pullquote": "Dutch smuggler captain Jack Yawkins once sailed his lugger the Black Prince directly between two Royal Navy revenue cutters near Kirkcudbright, esc...",
+      "facts": {
+        "Tradition": "Maritime folklore",
+        "Type": "Pirate and smuggler lore",
+        "Setting": "Kirkcudbright, Dumfries and Galloway, Scotland",
+        "Motif": "Sea-raiding and smuggling"
+      }
     }
   }
 }

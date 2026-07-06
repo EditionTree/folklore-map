@@ -442,18 +442,20 @@
       color: var(--ink-light);
     }
     .filter-bar .sidebar-toggle-btn:hover { background: var(--parchment-dk); border-color: var(--accent); color: var(--ink); }
-    /* Search bar now lives at the top of the (light) sidebar instead of the
-       dark header — restyle for the parchment background. */
-    .sidebar .search-wrap { margin: 14px 15px 0; }
+    /* Search bar sits inside the sidebar header, below the entries count and
+       above the oak-leaf divider — borderless so it blends into the sidebar
+       rather than reading as a separate boxed control. */
+    .sidebar-header .search-wrap { margin-top: 12px; }
     .sidebar .search-wrap input {
-      background: rgba(255,255,255,0.55);
-      border: 1px solid var(--border);
+      background: transparent;
+      border: none;
       color: var(--ink);
       width: 100%;
       box-sizing: border-box;
+      border-radius: 0;
     }
     .sidebar .search-wrap input::placeholder { color: var(--ink-light); }
-    .sidebar .search-wrap input:focus { border-color: var(--accent); background: #fff; }
+    .sidebar .search-wrap input:focus { background: rgba(255,255,255,0.3); }
     .sidebar .search-icon { color: var(--ink-light); }
     .sidebar .search-results { background: var(--parchment); border-color: var(--border); }
     .sidebar .search-result-item { color: var(--ink); border-bottom-color: rgba(176,144,96,.25); }
@@ -946,16 +948,16 @@
 
 <div class="content-area">
   <div class="sidebar" id="sidebar">
-    <div class="search-wrap">
-      <span class="search-icon" aria-hidden="true">⚲</span>
-      <input type="text" id="searchInput" placeholder="Search legends..." autocomplete="off"
-             role="combobox" aria-expanded="false" aria-controls="searchResults" aria-autocomplete="list" aria-label="Search legends"
-             oninput="handleSearch(this.value)"/>
-      <div class="search-results" id="searchResults" role="listbox" aria-label="Search results"></div>
-    </div>
     <div class="sidebar-header">
       <div class="sidebar-title">All Entries</div>
       <div class="sidebar-subtitle" id="sidebarSubtitle">Loading...</div>
+      <div class="search-wrap">
+        <span class="search-icon" aria-hidden="true">⚲</span>
+        <input type="text" id="searchInput" placeholder="Search legends..." autocomplete="off"
+               role="combobox" aria-expanded="false" aria-controls="searchResults" aria-autocomplete="list" aria-label="Search legends"
+               oninput="handleSearch(this.value)"/>
+        <div class="search-results" id="searchResults" role="listbox" aria-label="Search results"></div>
+      </div>
     </div>
     <div class="sidebar-list" id="sidebarList"></div>
   </div>

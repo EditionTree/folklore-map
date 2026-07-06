@@ -503,30 +503,34 @@ p{margin-bottom:14px;font-size:16.5px}
 }
 .howlink a:hover{border-bottom-color:var(--accent)}
 
-/* ── HERO SUBMIT CTA (compact, sits beneath the Weekly Legend) ── */
+/* ── HERO SUBMIT CTA (subtle, sits beneath the Weekly Legend) ── */
 .hero-submit-cta{
   position:relative;
-  margin-top:18px;
-  padding:18px 22px;
-  background:rgba(242,232,213,0.94);
-  border:1px solid var(--gold);
-  border-radius:6px;
-  text-align:center;
+  margin:14px 30px 0;
+  padding:10px 16px;
+  background:rgba(242,232,213,0.7);
+  border:1px solid rgba(176,144,96,0.4);
+  border-radius:5px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  flex-wrap:wrap;
   overflow:hidden;
 }
 .hero-submit-cta::before{
-  content:'';position:absolute;top:-14px;right:-14px;width:88px;height:88px;
-  opacity:.16;pointer-events:none;
+  content:'';position:absolute;top:-10px;right:-10px;width:56px;height:56px;
+  opacity:.14;pointer-events:none;
   background:url('assets/ornaments/generated-variants/oak-corner-upper-right.png') right top/contain no-repeat;
 }
-.hero-submit-cta h2{
-  font-family:'Marcellus',serif;font-size:15.5px;font-weight:400;
-  color:var(--ink);letter-spacing:.02em;margin-bottom:5px;position:relative;z-index:1;
+.hero-submit-lead{
+  color:var(--ink-light);font-size:12.5px;font-style:italic;position:relative;z-index:1;margin:0;
 }
-.hero-submit-cta p{
-  color:var(--ink-light);font-size:13.5px;margin:0 0 12px;position:relative;z-index:1;
+.hero-submit-link{
+  font-family:'Marcellus',serif;font-size:11px;letter-spacing:.05em;text-transform:uppercase;
+  color:var(--accent);text-decoration:none;position:relative;z-index:1;white-space:nowrap;
 }
-.hero-submit-cta .btn{padding:8px 18px;font-size:11.5px;position:relative;z-index:1}
+.hero-submit-link:hover{color:var(--accent-warm)}
 
 /* ── BOTTOM CTA ── */
 .bottom-cta{
@@ -648,13 +652,12 @@ footer a{color:var(--ink-light)}
         </div>
       </a>
       <a class="lotw-maplink" id="lotwMapLink" href="./map">Show on the map &#8594;</a>
-    </aside>
 
-    <div class="hero-submit-cta">
-      <h2>Know a legend we've missed?</h2>
-      <p>Share a lead and we'll research and verify it before it joins the map.</p>
-      <a class="btn btn-primary" href="./map?submit=1">Submit a legend</a>
-    </div>
+      <div class="hero-submit-cta">
+        <p class="hero-submit-lead">Know a legend we've missed?</p>
+        <a class="hero-submit-link" href="./map?submit=1">Submit a legend &#8594;</a>
+      </div>
+    </aside>
   </div>
 </section>
 

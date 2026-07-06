@@ -82,6 +82,14 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Spectral',seri
 p{margin-bottom:14px;font-size:16.5px}
 .intro{font-size:17.5px}
 
+.about-cols{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr);gap:28px;align-items:start}
+.about-page .about-intro-section .about-cols p{max-width:none}
+.about-col-updates{background:var(--parchment);border:1px solid var(--gold);border-radius:6px;padding:18px 20px}
+.about-col-updates h3{font-family:'Marcellus',serif;font-weight:400;font-size:17px;color:var(--accent);margin-bottom:8px}
+.about-col-updates p{font-size:14.5px}
+.about-col-updates .btn{display:inline-block;font-size:12px}
+@media(max-width:900px){.about-cols{grid-template-columns:1fr;gap:16px}}
+
 /* ── CATEGORY GRID ── */
 .cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-top:16px}
 .cat-card{background:var(--parchment);border:1px solid var(--gold);border-radius:4px;padding:14px 16px;display:flex;align-items:center;gap:10px;font-size:14.5px;color:var(--ink)}
@@ -155,8 +163,19 @@ footer a{color:var(--ink-light)}
   <!-- About -->
   <section class="section about-intro-section">
     <div class="section-rule"><span>About the Map</span></div>
-<p class="intro">Folklore Finder gathers the supernatural geography of these islands into a single interactive atlas. From Black Shuck loping along the Norfolk coast to the Cailleach shaping the mountains of the Highlands, every entry is pinned to the exact place where its legend is rooted — built from folklore scholarship, heritage records and primary accounts rather than repeated hearsay.</p>
-    <p>The map grows steadily as new legends are researched, verified and added, so there is always more to find than there was last time. Each entry begins as a lead — from old folklore collections, heritage datasets or a story sent in by a visitor — and is independently checked against sources before it earns a pin. Where the evidence is thin or a tale can't be located to a real place, it's held back rather than guessed at.</p>
+    <div class="about-cols">
+      <div class="about-col">
+        <p class="intro">Folklore Finder gathers the supernatural geography of these islands into a single interactive atlas. From Black Shuck loping along the Norfolk coast to the Cailleach shaping the mountains of the Highlands, every entry is pinned to the exact place where its legend is rooted — built from folklore scholarship, heritage records and primary accounts rather than repeated hearsay.</p>
+      </div>
+      <div class="about-col">
+        <p>The map grows steadily as new legends are researched, verified and added, so there is always more to find than there was last time. Each entry begins as a lead — from old folklore collections, heritage datasets or a story sent in by a visitor — and is independently checked against sources before it earns a pin. Where the evidence is thin or a tale can't be located to a real place, it's held back rather than guessed at.</p>
+      </div>
+      <div class="about-col about-col-updates">
+        <h3>Updates</h3>
+        <p>Recently added legends, new collections and release notes are all gathered on the What's New page — the place to check what's changed since your last visit.</p>
+        <a class="btn btn-secondary" href="updates">Read the latest updates &#8594;</a>
+      </div>
+    </div>
   </section>
 
   <!-- Categories -->

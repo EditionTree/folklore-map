@@ -342,6 +342,29 @@ h1{
 .ach-toast.show{opacity:1;transform:translateY(0)}
 .ach-toast-title{display:block;font-family:'Marcellus',serif;font-size:12px;letter-spacing:.04em;color:var(--rust-dark);margin-bottom:2px}
 .ach-toast-body{display:block;font-size:13px;color:var(--ink);line-height:1.4}
+
+/* Unlock toasts get a gold border and a one-off shimmer sweep, distinguishing
+   them at a glance from ordinary progress toasts. */
+.ach-toast.unlock{
+  border-color:var(--line);
+  border-left-color:#c99a3f;
+  box-shadow:0 6px 24px rgba(0,0,0,.25),0 0 0 1px rgba(201,154,63,.35);
+  position:relative;
+  overflow:hidden;
+}
+.ach-toast.unlock::before{
+  content:"";
+  position:absolute;top:0;left:-60%;width:40%;height:100%;
+  background:linear-gradient(100deg,transparent,rgba(255,235,180,.55),transparent);
+  transform:skewX(-20deg);
+}
+.ach-toast.unlock.show::before{animation:ach-shimmer 1.1s ease-out .15s 1;}
+.ach-toast.unlock .ach-toast-title{color:#a97a1e}
+@keyframes ach-shimmer{
+  from{left:-60%}
+  to{left:130%}
+}
+@media(prefers-reduced-motion:reduce){.ach-toast.unlock.show::before{animation:none}}
 @media(max-width:480px){.ach-toast-stack{right:8px;bottom:8px}.ach-toast{width:calc(100vw - 16px)}}
 .source-list{list-style:none;margin:13px 0 0;padding:0}
 .source-list li+li{margin-top:7px}

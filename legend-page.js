@@ -58,7 +58,7 @@
   function showAchievementToast(title, body){
     var stack=ensureToastStack();
     var toast=document.createElement('div');
-    toast.className='ach-toast';
+    toast.className='ach-toast'+(title==='Achievement unlocked'?' unlock':'');
     var titleEl=document.createElement('span'); titleEl.className='ach-toast-title'; titleEl.textContent=title;
     var bodyEl=document.createElement('span'); bodyEl.className='ach-toast-body'; bodyEl.textContent=body;
     toast.appendChild(titleEl); toast.appendChild(bodyEl);

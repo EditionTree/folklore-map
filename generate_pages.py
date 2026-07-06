@@ -415,9 +415,25 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 """
 
 
+def track_event_script(event_type, **fields):
+    """Fire-and-forget analytics beacon for a static page (collection/period
+    views) — mirrors legend-page.js's trackEvent() but standalone since these
+    pages don't load that shared script."""
+    payload = json.dumps({"event_type": event_type, **fields}, ensure_ascii=False)
+    return (
+        "<script>(function(){try{"
+        "var s=sessionStorage.getItem('ff_session_id');"
+        "if(!s){s=Math.random().toString(36).slice(2)+Date.now().toString(36);sessionStorage.setItem('ff_session_id',s);}"
+        "var p=Object.assign({referring_page:location.pathname,session_id:s}," + payload + ");"
+        "fetch('https://canjzkpvjwvkbjcduaaj.supabase.co/functions/v1/submit-event',"
+        "{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(p),keepalive:true}).catch(function(){});"
+        "}catch(e){}})();</script>\n"
+    )
+
+
 def build_browse_page(page_title, desc, url, h1, intro, crumb, nav_html, cards_html,
                       ogimage=None, jsonld=None, head_extra="", after_grid="", nav_active="browse",
-                      hero_html="", extra_sections="", after_intro="", wrap_class=""):
+                      hero_html="", extra_sections="", after_intro="", wrap_class="", track_script=""):
     jsonld_html = ('<script type="application/ld+json">' + jsonld + '</script>\n') if jsonld else ''
     return ('<!DOCTYPE html>\n<html lang="en"><head><meta charset="UTF-8"/>\n'
             '<script>if(location.hostname.indexOf("pages.dev")>-1){location.replace("https://folklorefinder.uk"+location.pathname+location.search+location.hash);}</script>\n'
@@ -447,7 +463,7 @@ def build_browse_page(page_title, desc, url, h1, intro, crumb, nav_html, cards_h
             + nav_html + '\n<div class="browse-grid">\n' + cards_html
             + '\n</div>\n' + after_grid + extra_sections
             + '<a class="back" href="' + BASE + '/' + OUT_DIR + '/">&#8592; Browse All Legends</a>\n'
-            '</div>\n' + footer_html() + '\n</body></html>')
+            '</div>\n' + footer_html() + '\n' + track_script + '</body></html>')
 
 
 def slugify(name):
@@ -1633,6 +1649,7 @@ def build():
                     extra_sections=extra_sections,
                     after_intro=f'<p style="margin:-8px 0 20px"><a class="back" href="{BASE}/map?collection={esc(slug)}">View this collection on the Map &#8594;</a></p>\n',
                     wrap_class="ornamented",
+                    track_script=track_event_script("collection_viewed", collection_slug=slug),
                 )
                 fname = f"{slug}.html" if page_no == 1 else f"{slug}-{page_no}.html"
                 with io.open(os.path.join(col_dir, fname), "w", encoding="utf-8") as f:
@@ -1745,6 +1762,7 @@ def build():
                 nav_active="periods",
                 extra_sections=extra_sections,
                 wrap_class="ornamented",
+                track_script=track_event_script("period_viewed", period_slug=slug),
             )
             with io.open(os.path.join(period_dir, f"{slug}.html"), "w", encoding="utf-8") as f:
                 f.write(page)

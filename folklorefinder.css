@@ -1497,3 +1497,45 @@ body.interior-page {
     grid-row: 1 / span 2;
   }
 }
+
+/* ── Shared page hero (used on About, Updates, My Archive, Privacy, 404 —
+   the achievements page's kicker/h1/copy header, standardised so every
+   secondary page shares one format instead of each having a bespoke
+   dark-gradient banner). Optional .page-hero-card slot for a right-hand
+   stat/summary card; omit it and the hero simply stays single-column. ── */
+.page-hero {
+  width: min(1100px, calc(100% - 56px));
+  margin: 0 auto;
+  padding: 40px 0 6px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 380px);
+  gap: 32px;
+  align-items: end;
+}
+.page-hero.page-hero-solo { grid-template-columns: minmax(0, 1fr); }
+.page-hero .kicker {
+  font-family: 'Marcellus', serif;
+  font-size: 11px;
+  letter-spacing: .17em;
+  text-transform: uppercase;
+  color: var(--ff-burnt-orange-dark);
+  margin-bottom: 8px;
+}
+.page-hero h1 {
+  font-family: 'Marcellus', serif;
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 400;
+  line-height: 1.02;
+  color: var(--ff-ink);
+  letter-spacing: .02em;
+}
+.page-hero .hero-copy {
+  max-width: 640px;
+  color: var(--ff-oak-brown);
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 12px;
+}
+@media (max-width: 820px) {
+  .page-hero { grid-template-columns: 1fr; width: calc(100% - 32px); padding-top: 28px; }
+}

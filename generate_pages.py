@@ -304,11 +304,8 @@ TOPNAV_ITEMS = [
     ("map", "Map", "/map"),
     ("browse", "Browse", "/" + OUT_DIR + "/"),
     ("collections", "Collections", "/" + OUT_DIR + "/collections"),
-    ("periods", "Timeline", "/" + OUT_DIR + "/periods"),
-    ("achievements", "Achievements", "/achievements"),
     ("archive", "My Archive", "/archive"),
     ("about", "About", "/about"),
-    ("updates", "Updates", "/updates"),
 ]
 
 

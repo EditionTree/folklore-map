@@ -12,6 +12,7 @@
   --ff-slate-blue: #53667a;
   --ff-ink: #3f3023;
   --ff-night: #1d1712;
+  --ff-bar-brown: #1a0e06;
   --ff-line: rgba(90, 70, 50, 0.24);
 
   /* Compatibility aliases while the older page styles are consolidated. */
@@ -1582,14 +1583,7 @@ body.interior-page {
 
 .home-page footer {
   padding: 12px 18px;
-  background: #1a0e06;
-  color: rgba(246,241,230,.78);
-  border-top: 0;
   flex-shrink: 0;
-}
-
-.home-page footer a {
-  color: rgba(246,241,230,.9);
 }
 
 /* ── CANONICAL TOP NAV (shared header banner) ───────────────────────────
@@ -1608,9 +1602,7 @@ body.interior-page {
   gap: 4px;
   min-height: 58px;
   padding: 10px clamp(16px, 3vw, 52px);
-  background:
-    linear-gradient(135deg, rgba(196,98,42,0.18) 0%, rgba(176,144,96,0.06) 35%, transparent 60%),
-    linear-gradient(180deg, #1a0e06 0%, #2c1510 55%, #3d1e0c 100%);
+  background: var(--ff-bar-brown);
   border-bottom: none;
 }
 /* Home has no brand lockup, so keep its nav links centered */
@@ -1667,15 +1659,6 @@ body.interior-page {
   white-space: nowrap;
   text-shadow: 0 1px 3px rgba(0,0,0,0.55), 0 0 14px rgba(196,98,42,0.22);
 }
-.topnav-title::before, .topnav-title::after {
-  content: '\2726';
-  font-size: 11px;
-  color: var(--accent-warm);
-  opacity: 0.75;
-  vertical-align: middle;
-  margin: 0 7px;
-}
-
 /* Below 900px: drop the brand so the nav links get the full row */
 @media (max-width: 900px) {
   .topnav-brand { display: none; }
@@ -1691,6 +1674,35 @@ body.interior-page {
   }
   .topnav::-webkit-scrollbar { display: none; }
   .topnav a { flex: 0 0 auto; white-space: nowrap; }
+}
+
+footer {
+  position: relative;
+  text-align: center;
+  padding: 12px 18px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: rgba(246,241,230,.78);
+  background: var(--ff-bar-brown);
+  border-top: 0;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(176,144,96,0.6) 20%, rgba(196,98,42,0.8) 50%, rgba(176,144,96,0.6) 80%, transparent 100%);
+}
+
+footer a {
+  color: rgba(246,241,230,.9);
+  text-decoration: none;
+}
+
+footer a:hover { color: #f2e8d5; }
+
+.updates-page .page-hero h1 {
+  font-size: clamp(42px, 6vw, 74px);
 }
 
 .home-page .hero-submit-cta {

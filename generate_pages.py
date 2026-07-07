@@ -278,15 +278,15 @@ def banner_html():
     return ""
 
 
-# Site-wide top navigation (shown on every page except the interactive map).
+# Site-wide top navigation. The interactive map mirrors these values in its
+# embedded CSS because it has a map-specific header control group.
 TOPNAV_CSS = (
-    # Canonical banner: deep-brown gradient, gilded top piping + bottom
+    # Canonical banner: Home footer brown, gilded top piping + bottom
     # divider, brand lockup (emblem + "Folklore Finder") anchored left, and
     # the centered nav links. Mirrors the .topnav rules in folklorefinder.css.
     ".topnav{position:relative;display:flex;align-items:center;justify-content:flex-start;"
     "flex-wrap:wrap;gap:4px;min-height:58px;padding:10px clamp(16px,3vw,52px);"
-    "background:linear-gradient(135deg,rgba(196,98,42,0.18) 0%,rgba(176,144,96,0.06) 35%,transparent 60%),"
-    "linear-gradient(180deg,#1a0e06 0%,#2c1510 55%,#3d1e0c 100%);border-bottom:none}"
+    "background:#1a0e06;border-bottom:none}"
     ".topnav::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;"
     "background:linear-gradient(90deg,transparent 0%,#8b3a1a 15%,#b09060 50%,#8b3a1a 85%,transparent 100%)}"
     ".topnav::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;"
@@ -304,14 +304,28 @@ TOPNAV_CSS = (
     ".topnav-title{font-family:'Marcellus',serif;font-size:clamp(18px,2.1vw,23px);font-weight:400;"
     "text-transform:none;letter-spacing:0.055em;color:#f2e8d5;white-space:nowrap;"
     "text-shadow:0 1px 3px rgba(0,0,0,0.55),0 0 14px rgba(196,98,42,0.22)}"
-    ".topnav-title::before,.topnav-title::after{content:'\\2726';font-size:11px;color:#c4622a;"
-    "opacity:0.75;vertical-align:middle;margin:0 7px}"
     "@media(max-width:900px){.topnav-brand{display:none}}"
     # Mobile: one horizontally-scrolling row instead of wrapping to two lines.
     "@media(max-width:640px){.topnav{flex-wrap:nowrap;overflow-x:auto;"
     "justify-content:flex-start;scrollbar-width:none;padding-left:16px;padding-right:16px}"
     ".topnav::-webkit-scrollbar{display:none}"
     ".topnav a{flex:0 0 auto;white-space:nowrap}}"
+    "footer{position:relative;text-align:center;padding:12px 18px;font-size:12px;line-height:1.6;"
+    "color:rgba(246,241,230,.78);background:#1a0e06;border-top:0}"
+    "footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;"
+    "background:linear-gradient(90deg,transparent 0%,rgba(176,144,96,.6) 20%,rgba(196,98,42,.8) 50%,rgba(176,144,96,.6) 80%,transparent 100%)}"
+    "footer a{color:rgba(246,241,230,.9);text-decoration:none}"
+    "footer a:hover{color:#f2e8d5}"
+)
+
+FOOTER_HTML = (
+    '<footer>Folklore Finder &nbsp;&#183;&nbsp; '
+    'An atlas of myths, legends, &amp; stories &nbsp;&#183;&nbsp; '
+    '&#169; EditionTree &nbsp;&#183;&nbsp; '
+    '<a href="https://folklorefinder.uk/about">About</a> &nbsp;&#183;&nbsp; '
+    '<a href="https://folklorefinder.uk/updates">Updates</a> &nbsp;&#183;&nbsp; '
+    '<a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener">Ko-fi</a> &nbsp;&#183;&nbsp; '
+    '<a href="https://folklorefinder.uk/privacy">Privacy</a></footer>'
 )
 
 TOPNAV_ITEMS = [
@@ -339,10 +353,7 @@ def topnav_html(active=""):
 
 
 def footer_html():
-    return ('<footer style="text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a">'
-            'Folklore Finder &#183; &#169; EditionTree &#183; '
-            '<a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener" style="color:#5c4a2a">&#9749; Ko-fi</a> &#183; '
-            '<a href="' + BASE + '/privacy" style="color:#5c4a2a">Privacy</a></footer>')
+    return FOOTER_HTML
 
 
 def nav_links(items, active):
@@ -731,7 +742,7 @@ FEATURED_PAGE = Template("""<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha384-sHL9NAb7lN7rfvG5lfHpm643Xkcjzp4jFvuavGOndn6pjVqS6ny56CAt3nsEVT4H" crossorigin="anonymous"/>
-<link rel="stylesheet" href="/legend-page.css?v=20260707d"/>
+<link rel="stylesheet" href="/legend-page.css?v=20260707e"/>
 <script type="application/ld+json">$jsonld</script>
 $breadcrumb_jsonld
 </head>
@@ -800,7 +811,7 @@ $hero_caption
 
   $featured_related
 </main>
-<footer>Folklore Finder &#183; &#169; EditionTree &#183; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener">Ko-fi</a> &#183; <a href="$base/privacy">Privacy</a></footer>
+$footer
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH" crossorigin="anonymous"></script>
 <script src="$base/legend-page.js"></script>
 </body>
@@ -1097,6 +1108,7 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
         jsonld=jsonld,
         breadcrumb_jsonld=breadcrumb_jsonld,
         topnav=topnav_html("browse"),
+        footer=footer_html(),
         breadcrumb=breadcrumb,
         hero_media=hero_media,
         hero_caption=hero_caption,
@@ -1901,7 +1913,7 @@ h1::after{{content:"";display:block;width:132px;height:40px;margin:9px 0 19px;ba
 <div class="wrap"><h1>All Legends ({written})</h1>{browse_sections}<div class="az">
 {az_content}
 </div></div>
-<footer style="text-align:center;padding:24px 20px;font-size:12px;color:#5c4a2a">Folklore Finder &#183; &#169; EditionTree &#183; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener" style="color:#5c4a2a">&#9749; Ko-fi</a> &#183; <a href="{BASE}/privacy" style="color:#5c4a2a">Privacy</a></footer>
+{footer_html()}
 </body></html>"""
     with io.open(os.path.join(OUT_DIR, "index.html"), "w", encoding="utf-8") as f:
         f.write(index_html)

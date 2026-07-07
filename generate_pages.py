@@ -387,7 +387,7 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 @media(max-width:900px){.wrap{width:calc(100% - 32px)}}
 @media(max-width:620px){.browse-grid{grid-template-columns:1fr}}
 .col-hero{position:relative;margin:0 0 20px;border-radius:2px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.25)}
-.col-hero img{display:block;width:100%;max-height:360px;object-fit:cover}
+.col-hero img{display:block;width:100%;height:auto}
 .col-hero-credit{position:absolute;right:10px;bottom:8px;font-size:10px;color:rgba(255,255,255,.85);background:rgba(0,0,0,.4);padding:2px 8px;border-radius:2px}
 .col-section{margin-top:38px}
 .col-section h2{font-family:'Marcellus',serif;font-size:20px;font-weight:400;color:#3f3023;margin-bottom:12px}
@@ -884,7 +884,7 @@ FEATURED_PAGE = Template("""<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha384-sHL9NAb7lN7rfvG5lfHpm643Xkcjzp4jFvuavGOndn6pjVqS6ny56CAt3nsEVT4H" crossorigin="anonymous"/>
-<link rel="stylesheet" href="/legend-page.css?v=20260706a"/>
+<link rel="stylesheet" href="/legend-page.css?v=20260707b"/>
 <script type="application/ld+json">$jsonld</script>
 $breadcrumb_jsonld
 </head>
@@ -918,8 +918,6 @@ $hero_caption
           <button class="button secondary" id="webShareBtn" type="button" hidden>Share</button>
         </div>
         <span class="share-status" id="shareStatus" role="status" aria-live="polite"></span>
-
-        $featured_collections
       </article>
 
       <aside class="sidebar" aria-label="Legend details">
@@ -939,6 +937,8 @@ $hero_caption
         $historical_context
 
         $featured_nearby
+
+        $featured_collections
 
         <section class="side-card side-pad">
           <p class="side-kicker">At a Glance</p>
@@ -2059,18 +2059,9 @@ def build():
 <style>
 *{{box-sizing:border-box;margin:0;padding:0}}
 body{{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent 25rem),linear-gradient(180deg,#e8dcc5,#f6f1e6 34rem,#eadfc9);color:#3f3023;font-family:'Spectral',serif;min-height:100vh}}
-.site-banner{{position:relative;background:linear-gradient(135deg,rgba(196,98,42,0.18) 0%,rgba(176,144,96,0.06) 35%,transparent 60%),linear-gradient(180deg,#1a0e06 0%,#2c1510 55%,#3d1e0c 100%);padding:16px 20px;text-align:center}}
-.site-banner::before{{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,#8b3a1a 15%,#b09060 50%,#8b3a1a 85%,transparent)}}
-.site-banner::after{{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(176,144,96,.6) 20%,rgba(196,98,42,.8) 50%,rgba(176,144,96,.6) 80%,transparent)}}
-.banner-link{{display:inline-flex;align-items:center;gap:13px;text-decoration:none}}
-.banner-emblem{{width:48px;height:48px;object-fit:contain;flex-shrink:0}}
-.banner-text{{display:flex;flex-direction:column;align-items:center;line-height:1.15}}
-.banner-title{{font-family:'Marcellus',serif;font-size:21px;font-weight:400;color:#f2e8d5;letter-spacing:.09em;display:flex;align-items:center;justify-content:center;gap:9px}}
-.banner-title i{{color:#c4622a;font-style:normal;font-size:.6em;flex-shrink:0}}
-.banner-sub{{font-family:'Spectral',serif;font-size:12px;font-style:italic;color:rgba(176,144,96,.8);letter-spacing:.04em}}
-@media(max-width:560px){{.banner-title{{font-size:15px}}.banner-emblem{{width:38px;height:38px}}.banner-sub{{font-size:11px}}}}
 .wrap{{width:min(1600px,calc(100% - 56px));max-width:none;margin:0 auto;padding:30px 0 68px}}
-h1{{font-family:'Marcellus',serif;font-size:clamp(30px,3vw,44px);font-weight:400;margin-bottom:24px}}
+h1{{font-family:'Marcellus',serif;font-size:clamp(30px,3vw,44px);font-weight:400;margin-bottom:6px;color:#3f3023;line-height:1.12}}
+h1::after{{content:"";display:block;width:132px;height:40px;margin:9px 0 19px;background:url('/assets/ornaments/generated-variants/oak-divider-horizontal.png') left center/contain no-repeat;opacity:.55}}
 .az{{column-count:10;column-gap:24px}}
 @media(max-width:1450px){{.az{{column-count:8}}}}
 @media(max-width:1100px){{.az{{column-count:6}}}}
@@ -2120,7 +2111,6 @@ h1{{font-family:'Marcellus',serif;font-size:clamp(30px,3vw,44px);font-weight:400
 </style></head>
 <body>
 {topnav_html("browse")}
-<header class="site-banner"><a class="banner-link" href="{BASE}/"><img src="{BASE}/green-man.png" class="banner-emblem" alt=""/><span class="banner-text"><span class="banner-title"><i>&#10022;</i> Folklore Finder <i>&#10022;</i></span><span class="banner-sub">An Atlas of Myths, Legends, &amp; Stories</span></span></a></header>
 <div class="wrap"><h1>All Legends ({written})</h1>{browse_sections}<div class="az">
 {az_content}
 </div></div>

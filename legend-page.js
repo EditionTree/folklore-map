@@ -82,13 +82,38 @@
     return el;
   }
 
-  function showAchievementToast(title, body){
+  function showAchievementToast(title, body, iconFile){
     var stack=ensureToastStack();
     var toast=document.createElement('div');
-    toast.className='ach-toast'+(title==='Achievement unlocked'?' unlock':'');
+    var isUnlock=title==='Achievement unlocked';
+    toast.className='ach-toast'+(isUnlock?' unlock':'');
+    if(iconFile){
+      var iconEl=document.createElement('img');
+      iconEl.className='ach-toast-icon';
+      iconEl.src='/'+String(iconFile).replace(/^\/+/,'');
+      iconEl.alt='';
+      iconEl.setAttribute('aria-hidden','true');
+      toast.appendChild(iconEl);
+    }
+    var textWrap=document.createElement('span'); textWrap.className='ach-toast-text';
     var titleEl=document.createElement('span'); titleEl.className='ach-toast-title'; titleEl.textContent=title;
     var bodyEl=document.createElement('span'); bodyEl.className='ach-toast-body'; bodyEl.textContent=body;
-    toast.appendChild(titleEl); toast.appendChild(bodyEl);
+    textWrap.appendChild(titleEl); textWrap.appendChild(bodyEl);
+    toast.appendChild(textWrap);
+
+    // Clicking the toast jumps to the achievements page, wherever this page
+    // happens to live (root or /legends/*) — a root-absolute link sidesteps
+    // any directory-depth guesswork.
+    toast.classList.add('ach-toast-clickable');
+    toast.setAttribute('role','link');
+    toast.setAttribute('tabindex','0');
+    toast.setAttribute('aria-label',title+': '+body+'. View achievements.');
+    function go(){ location.href='/achievements.html'; }
+    toast.addEventListener('click', go);
+    toast.addEventListener('keydown', function(e){
+      if(e.key==='Enter'||e.key===' '){ e.preventDefault(); go(); }
+    });
+
     stack.appendChild(toast);
     requestAnimationFrame(function(){ toast.classList.add('show'); });
     setTimeout(function(){
@@ -179,7 +204,8 @@
         if(r.unlocked){
           nowUnlocked.push(a.id);
           if(!previouslyUnlocked.has(a.id)){
-            showAchievementToast('Achievement unlocked', a.name);
+            var sealFile=a.icon&&a.icon.file?a.icon.file:'';
+            showAchievementToast('Achievement unlocked', a.name, sealFile);
             trackEvent('achievement_unlocked', {item_id: a.id});
           }
           return;
@@ -203,7 +229,8 @@
       var orderedUnlocked=Array.from(previouslyUnlocked).concat(newlyUnlocked);
       writeJsonStorage('ff_achievements_unlocked_v1', orderedUnlocked);
       if(!newlyUnlocked.length && bestProgress){
-        showAchievementToast('Achievement progress', bestProgress.a.name+', '+bestProgress.r.current+'/'+bestProgress.r.target+' legends discovered');
+        var progressSeal=bestProgress.a.icon&&bestProgress.a.icon.file?bestProgress.a.icon.file:'';
+        showAchievementToast('Achievement progress', bestProgress.a.name+', '+bestProgress.r.current+'/'+bestProgress.r.target+' legends discovered', progressSeal);
         trackEvent('achievement_progress', {item_id: bestProgress.a.id});
       }
     }).catch(function(){ /* Achievement data unavailable — fail silently */ });

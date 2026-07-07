@@ -70,6 +70,9 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Spectral',seri
 }
 .page-head p{font-style:italic;color:rgba(176,144,96,0.85);font-size:clamp(14px,2.5vw,17px)}
 
+/* Match Collections' .browse-h1 size for this page's hero heading */
+.about-page .page-hero h1{font-size:clamp(32px,4vw,48px)}
+
 /* ── BODY ── */
 .wrap{max-width:780px;margin:0 auto;padding:0 20px 70px}
 
@@ -84,10 +87,11 @@ p{margin-bottom:14px;font-size:16.5px}
 
 .about-cols{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,1fr);gap:28px;align-items:start}
 .about-page .about-intro-section .about-cols p{max-width:none}
-.about-col-updates{background:var(--parchment);border:1px solid var(--gold);border-radius:6px;padding:18px 20px}
-.about-col-updates h3{font-family:'Marcellus',serif;font-weight:400;font-size:17px;color:var(--accent);margin-bottom:8px}
-.about-col-updates p{font-size:14.5px}
-.about-col-updates .btn{display:inline-block;font-size:12px}
+.about-col-updates{background:color-mix(in srgb, var(--parchment-dk) 70%, var(--gold) 30%);border:1px solid var(--gold);border-radius:6px;padding:18px 20px;position:relative;overflow:hidden}
+.about-col-updates::after{content:'';position:absolute;bottom:-14px;right:-14px;width:76px;height:76px;opacity:.35;background:url("assets/ornaments/generated-variants/oak-corner-v1.png") right bottom/contain no-repeat;pointer-events:none}
+.about-col-updates h3{font-family:'Marcellus',serif;font-weight:400;font-size:17px;color:var(--accent);margin-bottom:8px;position:relative}
+.about-col-updates p{font-size:14.5px;position:relative}
+.about-col-updates .btn{display:inline-block;font-size:12px;position:relative}
 @media(max-width:900px){.about-cols{grid-template-columns:1fr;gap:16px}}
 
 /* ── CATEGORY GRID ── */
@@ -135,12 +139,13 @@ footer a{color:var(--ink-light)}
   .cat-grid,.steps{grid-template-columns:1fr}
 }
 </style>
-<link rel="stylesheet" href="folklorefinder.css?v=20260706a"/>
+<link rel="stylesheet" href="folklorefinder.css?v=20260707a"/>
 </head>
 <body class="ff-paper interior-page about-page">
 
 <!-- ── NAV ── -->
 <nav class="topnav">
+  <span class="topnav-title">Folklore Finder — About</span>
   <a href="./">Home</a>
   <a href="map">Map</a>
   <a href="legends/">Browse</a>
@@ -152,7 +157,6 @@ footer a{color:var(--ink-light)}
 <!-- ── HEAD ── -->
 <header class="page-hero page-hero-solo">
   <div>
-    <p class="kicker">The Archive</p>
     <h1>About &amp; How to Use</h1>
     <p class="hero-copy">What you'll find here, and how to make the most of the map.</p>
   </div>
@@ -173,7 +177,7 @@ footer a{color:var(--ink-light)}
       <div class="about-col about-col-updates">
         <h3>Updates</h3>
         <p>Recently added legends, new collections and release notes are all gathered on the What's New page — the place to check what's changed since your last visit.</p>
-        <a class="btn btn-secondary" href="updates">Read the latest updates &#8594;</a>
+        <a class="btn btn-secondary" href="updates">What's New?</a>
       </div>
     </div>
   </section>

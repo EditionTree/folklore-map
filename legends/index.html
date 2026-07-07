@@ -12,18 +12,9 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent 25rem),linear-gradient(180deg,#e8dcc5,#f6f1e6 34rem,#eadfc9);color:#3f3023;font-family:'Spectral',serif;min-height:100vh}
-.site-banner{position:relative;background:linear-gradient(135deg,rgba(196,98,42,0.18) 0%,rgba(176,144,96,0.06) 35%,transparent 60%),linear-gradient(180deg,#1a0e06 0%,#2c1510 55%,#3d1e0c 100%);padding:16px 20px;text-align:center}
-.site-banner::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,#8b3a1a 15%,#b09060 50%,#8b3a1a 85%,transparent)}
-.site-banner::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(176,144,96,.6) 20%,rgba(196,98,42,.8) 50%,rgba(176,144,96,.6) 80%,transparent)}
-.banner-link{display:inline-flex;align-items:center;gap:13px;text-decoration:none}
-.banner-emblem{width:48px;height:48px;object-fit:contain;flex-shrink:0}
-.banner-text{display:flex;flex-direction:column;align-items:center;line-height:1.15}
-.banner-title{font-family:'Marcellus',serif;font-size:21px;font-weight:400;color:#f2e8d5;letter-spacing:.09em;display:flex;align-items:center;justify-content:center;gap:9px}
-.banner-title i{color:#c4622a;font-style:normal;font-size:.6em;flex-shrink:0}
-.banner-sub{font-family:'Spectral',serif;font-size:12px;font-style:italic;color:rgba(176,144,96,.8);letter-spacing:.04em}
-@media(max-width:560px){.banner-title{font-size:15px}.banner-emblem{width:38px;height:38px}.banner-sub{font-size:11px}}
 .wrap{width:min(1600px,calc(100% - 56px));max-width:none;margin:0 auto;padding:30px 0 68px}
-h1{font-family:'Marcellus',serif;font-size:clamp(30px,3vw,44px);font-weight:400;margin-bottom:24px}
+h1{font-family:'Marcellus',serif;font-size:clamp(30px,3vw,44px);font-weight:400;margin-bottom:6px;color:#3f3023;line-height:1.12}
+h1::after{content:"";display:block;width:132px;height:40px;margin:9px 0 19px;background:url('/assets/ornaments/generated-variants/oak-divider-horizontal.png') left center/contain no-repeat;opacity:.55}
 .az{column-count:10;column-gap:24px}
 @media(max-width:1450px){.az{column-count:8}}
 @media(max-width:1100px){.az{column-count:6}}
@@ -73,7 +64,6 @@ h1{font-family:'Marcellus',serif;font-size:clamp(30px,3vw,44px);font-weight:400;
 </style></head>
 <body>
 <nav class="topnav"><a href="https://folklorefinder.uk/">Home</a><a href="https://folklorefinder.uk/map">Map</a><a href="https://folklorefinder.uk/legends/" class="active">Browse</a><a href="https://folklorefinder.uk/legends/collections">Collections</a><a href="https://folklorefinder.uk/archive">My Archive</a><a href="https://folklorefinder.uk/about">About</a></nav>
-<header class="site-banner"><a class="banner-link" href="https://folklorefinder.uk/"><img src="https://folklorefinder.uk/green-man.png" class="banner-emblem" alt=""/><span class="banner-text"><span class="banner-title"><i>&#10022;</i> Folklore Finder <i>&#10022;</i></span><span class="banner-sub">An Atlas of Myths, Legends, &amp; Stories</span></span></a></header>
 <div class="wrap"><h1>All Legends (664)</h1>
 <section class="place-explorer" aria-labelledby="place-explorer-title">
   <div class="place-map-wrap">

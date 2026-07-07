@@ -40,7 +40,8 @@
   --dark:#1a0e06;
 }
 
-body{background:var(--parchment-dk);color:var(--ink);font-family:'Spectral',serif;line-height:1.7}
+html,body{height:100%}
+body{background:var(--parchment-dk);color:var(--ink);font-family:'Spectral',serif;line-height:1.7;min-height:100vh;display:flex;flex-direction:column}
 
 /* ── HERO ── */
 .hero{
@@ -48,6 +49,7 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Spectral',seri
   background:linear-gradient(135deg,rgba(196,98,42,0.18) 0%,rgba(176,144,96,0.06) 35%,transparent 60%),
              linear-gradient(180deg,#1a0e06 0%,#2c1510 55%,#3d1e0c 100%);
   min-height:calc(100vh - 53px);
+  flex:1 0 auto;
   display:flex;
   align-items:center;
   padding:48px 20px;
@@ -596,7 +598,7 @@ footer a{color:var(--ink-light)}
 .topnav a.active{color:var(--accent-warm)}
 @media(max-width:640px){.topnav{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;scrollbar-width:none}.topnav::-webkit-scrollbar{display:none}.topnav a{flex:0 0 auto;white-space:nowrap}}
 </style>
-<link rel="stylesheet" href="folklorefinder.css?v=20260706a"/>
+<link rel="stylesheet" href="folklorefinder.css?v=20260707a"/>
 </head>
 <body class="ff-paper home-page">
 <nav class="topnav">

@@ -265,6 +265,42 @@
     }
     .header-controls { display: flex; align-items: center; gap: 8px; margin-left:auto; }
 
+    /* Map nav — the shared site nav, populated into the map top bar */
+    .map-nav { display: flex; align-items: center; gap: 2px; flex-wrap: wrap; justify-content: center; }
+    .map-nav a {
+      font-family: var(--font-display);
+      font-size: 12px; letter-spacing: .08em; text-transform: uppercase;
+      color: rgba(242,232,213,0.78);
+      text-decoration: none;
+      padding: 6px 13px; border-radius: 3px;
+      transition: background .15s, color .15s;
+      white-space: nowrap;
+    }
+    .map-nav a:hover { color: #f2e8d5; background: rgba(196,98,42,0.18); }
+    .map-nav a.active { color: var(--accent-glow); }
+    @media (max-width: 1100px) {
+      .map-nav { gap: 0; }
+      .map-nav a { padding: 5px 9px; font-size: 11px; }
+    }
+    @media (max-width: 860px) {
+      header { justify-content: space-between; }
+      .map-nav {
+        order: 3; width: 100%;
+        justify-content: flex-start;
+        flex-wrap: nowrap; overflow-x: auto;
+        scrollbar-width: none;
+        margin-top: 6px; padding-top: 6px;
+        border-top: 1px solid rgba(176,144,96,0.22);
+      }
+      .map-nav::-webkit-scrollbar { display: none; }
+      .map-nav a { flex: 0 0 auto; }
+    }
+
+    /* Hide the subtitle once the nav bar shares the header, to make room */
+    @media (max-width: 1240px) {
+      .subtitle { display:none; }
+    }
+
     @media (max-width: 1100px) {
       header { min-height:58px;padding:8px 22px; }
       .header-emblem-wrap { width:40px;height:40px; }
@@ -272,7 +308,6 @@
       .header-kicker { display:none; }
       .header-title-row { column-gap:10px; }
       h1 { font-size:20px; }
-      .subtitle { font-size:11px;padding-left:10px; }
       .header-controls { gap:6px; }
     }
 
@@ -926,11 +961,19 @@
   <div class="header-title">
     <a href="./" class="header-emblem-wrap" title="Back to home" aria-label="Back to home"><img src="green-man.png" class="header-emblem" alt="Green Man"/></a>
     <div class="header-title-row">
-      <h1 class="desktop-title">Folklore Finder — Map</h1>
-      <h1 class="mobile-title">Folklore Finder — Map</h1>
+      <h1 class="desktop-title">Folklore Finder</h1>
+      <h1 class="mobile-title">Folklore Finder</h1>
       <span class="subtitle">An atlas of myths, legends, &amp; stories</span>
     </div>
   </div>
+  <nav class="map-nav">
+    <a href="./">Home</a>
+    <a href="map" class="active">Map</a>
+    <a href="legends/">Browse</a>
+    <a href="legends/collections">Collections</a>
+    <a href="archive">My Archive</a>
+    <a href="about">About</a>
+  </nav>
   <div class="header-controls">
     <button type="button" class="mode-toggle" id="modeToggle" onclick="toggleNight()" role="switch" aria-checked="false" aria-label="Dusk mode">
       <div class="toggle-track" id="modeTrack" aria-hidden="true">
@@ -1243,7 +1286,15 @@ function toggleBookmark(name) {
   saveBookmarks();
   markers.forEach(marker => marker.setPopupContent(buildPopup(marker._legendData)));
   buildFilters();
-  filterMarkers();
+  // Re-filtering clears the cluster layers, which would close the open popup.
+  // Only rebuild the marker layer when the bookmark filter is active (so the
+  // visible set genuinely changes); otherwise just refresh the sidebar in
+  // place so the popup you clicked the bookmark in stays open.
+  if (bookmarksOnly) {
+    filterMarkers();
+  } else {
+    buildSidebarList(markers.filter(matchesActiveFilters).map(m => m._legendData));
+  }
 }
 
 let LEGENDS = [];
@@ -1340,6 +1391,14 @@ function makeFilterBtn(cat, label, colour, count) {
   return btn;
 }
 
+function matchesActiveFilters(m) {
+  const matchesCategory = activeFilters.size === 0 || activeFilters.has(m._legendData.category);
+  const matchesBookmark = !bookmarksOnly || isBookmarked(m._legendData.name);
+  const matchesPlace = !activeRegion || (m._legendData.tags || []).includes(activeRegion);
+  const matchesCollection = !activeCollectionNames || activeCollectionNames.has(m._legendData.name);
+  return matchesCategory && matchesBookmark && matchesPlace && matchesCollection;
+}
+
 function filterMarkers(cat) {
   if (cat === 'all') {
     activeFilters.clear();
@@ -1366,13 +1425,7 @@ function filterMarkers(cat) {
     );
   });
   clusterGroup.clearLayers();
-  const visible = markers.filter(m => {
-    const matchesCategory = activeFilters.size === 0 || activeFilters.has(m._legendData.category);
-    const matchesBookmark = !bookmarksOnly || isBookmarked(m._legendData.name);
-    const matchesPlace = !activeRegion || (m._legendData.tags || []).includes(activeRegion);
-    const matchesCollection = !activeCollectionNames || activeCollectionNames.has(m._legendData.name);
-    return matchesCategory && matchesBookmark && matchesPlace && matchesCollection;
-  });
+  const visible = markers.filter(matchesActiveFilters);
   clusterGroup.addLayers(visible);
   buildSidebarList(visible.map(m => m._legendData));
   return visible;

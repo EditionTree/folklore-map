@@ -83,13 +83,7 @@ body.ff-paper {
 
 /* Homepage proof of direction */
 .home-page .topnav {
-  background: var(--ff-night);
-  border-bottom-color: rgba(176, 144, 96, 0.28);
   flex-shrink: 0;
-}
-
-.home-page .topnav a {
-  border-radius: 0;
 }
 
 .home-page .hero {
@@ -1598,35 +1592,105 @@ body.interior-page {
   color: rgba(246,241,230,.9);
 }
 
-/* ── TOPNAV PAGE TITLE ──────────────────────────────────────────────────
-   Optional page title shown in the topnav banner alongside the nav links,
-   e.g. <nav class="topnav"><span class="topnav-title">Folklore Finder —
-   Map</span><a ...>...</a></nav>. Anchored to the left edge so the existing
-   centered nav links keep their current position; hidden on narrow
-   viewports (where the nav switches to a scrolling single row) so it never
-   crowds the links. Not used on the Home page — its title is already
-   centered on the page itself. */
+/* ── CANONICAL TOP NAV (shared header banner) ───────────────────────────
+   One consistent banner across every page, using the Map page's header as
+   the guide: deep-brown gradient, gilded top piping + bottom divider, a
+   brand lockup (emblem + "Folklore Finder" in the display face) anchored
+   to the left edge, and the centered nav links. The Home page omits the
+   brand title (its title already sits centered in the hero); the Map page
+   additionally keeps the day/night toggle on the right. */
 .topnav {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 4px;
+  min-height: 58px;
+  padding: 10px clamp(16px, 3vw, 52px);
+  background:
+    linear-gradient(135deg, rgba(196,98,42,0.18) 0%, rgba(176,144,96,0.06) 35%, transparent 60%),
+    linear-gradient(180deg, #1a0e06 0%, #2c1510 55%, #3d1e0c 100%);
+  border-bottom: none;
 }
-
-.topnav-title {
+/* Home has no brand lockup, so keep its nav links centered */
+.home-page .topnav {
+  justify-content: center;
+}
+.topnav::before {
+  content: '';
   position: absolute;
-  left: 18px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, transparent 0%, var(--accent) 15%, var(--gold) 50%, var(--accent) 85%, transparent 100%);
+}
+.topnav::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(176,144,96,0.6) 20%, rgba(196,98,42,0.8) 50%, rgba(176,144,96,0.6) 80%, transparent 100%);
+}
+.topnav a {
   font-family: 'Marcellus', serif;
-  font-size: 13px;
-  letter-spacing: 0.06em;
-  color: rgba(242, 232, 213, 0.82);
+  font-size: 12px; letter-spacing: .08em; text-transform: uppercase;
+  color: rgba(242,232,213,0.78);
+  text-decoration: none;
+  padding: 6px 14px; border-radius: 3px;
+  transition: background .15s, color .15s;
+}
+.topnav a:hover { color: #f2e8d5; background: rgba(196,98,42,0.18); }
+.topnav a.active { color: var(--accent-warm); }
+
+/* Brand lockup: emblem + "Folklore Finder" title, first item on the left */
+.topnav-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  margin-right: clamp(10px, 2vw, 26px);
+  padding: 0;
+  text-decoration: none;
+}
+.topnav-emblem {
+  width: 40px; height: 40px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+  transition: opacity .15s, transform .15s;
+}
+.topnav-brand:hover .topnav-emblem { opacity: .85; transform: scale(1.04); }
+.topnav-title {
+  font-family: 'Marcellus', serif;
+  font-size: clamp(18px, 2.1vw, 23px);
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0.055em;
+  color: var(--parchment);
   white-space: nowrap;
-  pointer-events: none;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.55), 0 0 14px rgba(196,98,42,0.22);
+}
+.topnav-title::before, .topnav-title::after {
+  content: '\2726';
+  font-size: 11px;
+  color: var(--accent-warm);
+  opacity: 0.75;
+  vertical-align: middle;
+  margin: 0 7px;
 }
 
+/* Below 900px: drop the brand so the nav links get the full row */
 @media (max-width: 900px) {
-  .topnav-title {
-    display: none;
+  .topnav-brand { display: none; }
+}
+/* Mobile: single horizontally-scrolling row of links */
+@media (max-width: 640px) {
+  .topnav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    scrollbar-width: none;
+    padding-left: 16px; padding-right: 16px;
   }
+  .topnav::-webkit-scrollbar { display: none; }
+  .topnav a { flex: 0 0 auto; white-space: nowrap; }
 }
 
 .home-page .hero-submit-cta {

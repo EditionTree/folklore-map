@@ -23,28 +23,54 @@ body{
 }
 a{color:inherit}
 button{font:inherit}
+/* Canonical banner — matches folklorefinder.css / TOPNAV_CSS */
 .topnav{
-  min-height:48px;
+  position:relative;
+  min-height:58px;
   display:flex;
   align-items:center;
-  justify-content:center;
+  justify-content:flex-start;
   gap:4px;
-  padding:8px 18px;
-  background:#100c09;
-  border-bottom:1px solid rgba(185,158,114,.22);
   flex-wrap:wrap;
+  padding:10px clamp(16px,3vw,52px);
+  background:
+    linear-gradient(135deg,rgba(196,98,42,0.18) 0%,rgba(176,144,96,0.06) 35%,transparent 60%),
+    linear-gradient(180deg,#1a0e06 0%,#2c1510 55%,#3d1e0c 100%);
+  border-bottom:none;
 }
+.topnav::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,transparent 0%,#8b3a1a 15%,#b09060 50%,#8b3a1a 85%,transparent 100%)}
+.topnav::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent 0%,rgba(176,144,96,0.6) 20%,rgba(196,98,42,0.8) 50%,rgba(176,144,96,0.6) 80%,transparent 100%)}
 .topnav a{
-  padding:6px 13px;
-  color:rgba(243,234,215,.76);
+  padding:6px 14px;
+  color:rgba(243,234,215,.78);
   border-radius:3px;
   font-family:'Marcellus',serif;
-  font-size:11px;
-  letter-spacing:.09em;
+  font-size:12px;
+  letter-spacing:.08em;
   text-decoration:none;
   text-transform:uppercase;
+  transition:background .15s,color .15s;
 }
-.topnav a:hover,.topnav a.active{color:#f3ead7;background:rgba(166,76,36,.2)}
+.topnav a:hover{color:#f3ead7;background:rgba(196,98,42,.18)}
+.topnav a.active{color:#c4622a}
+.topnav-brand{display:inline-flex;align-items:center;gap:11px;
+  margin-right:clamp(10px,2vw,26px);padding:0;text-decoration:none}
+.topnav-emblem{width:40px;height:40px;object-fit:contain;display:block;flex-shrink:0;
+  transition:opacity .15s,transform .15s}
+.topnav-brand:hover .topnav-emblem{opacity:.85;transform:scale(1.04)}
+.topnav-title{font-family:'Marcellus',serif;font-size:clamp(18px,2.1vw,23px);font-weight:400;
+  text-transform:none;letter-spacing:.055em;color:#f2e8d5;white-space:nowrap;
+  text-shadow:0 1px 3px rgba(0,0,0,0.55),0 0 14px rgba(196,98,42,0.22)}
+.topnav-title::before,.topnav-title::after{content:'\2726';font-size:11px;color:#c4622a;
+  opacity:.75;vertical-align:middle;margin:0 7px}
+@media(max-width:900px){.topnav-brand{display:none}}
+@media(max-width:640px){
+  .topnav{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;scrollbar-width:none;padding-left:16px;padding-right:16px}
+  .topnav::-webkit-scrollbar{display:none}
+  .topnav a{flex:0 0 auto;white-space:nowrap}
+}
 .brandbar{
   position:relative;
   z-index:2;
@@ -214,8 +240,13 @@ h1{
 }
 .content-grid{
   display:grid;
-  grid-template-columns:minmax(0,1fr) 350px;
-  gap:46px;
+  /* Cap the article column near its own max-width (720px + 22px left padding)
+     so it can't over-expand and dump a big empty gap before the sidebar.
+     Centring the whole grid keeps it balanced within the wide .shell rather
+     than jammed against the left edge. */
+  grid-template-columns:minmax(0,742px) 350px;
+  justify-content:center;
+  gap:40px;
   align-items:start;
   padding:52px 0 72px;
 }
@@ -351,6 +382,12 @@ h1{
   width:46px;
   height:46px;
   object-fit:contain;
+  /* Progress (partial) toasts show the seal greyed out, mirroring the
+     locked/in-progress badges on achievements.html. Fully-unlocked toasts
+     override this back to full colour below (.ach-toast.unlock rule). */
+  filter:grayscale(85%) brightness(.96) opacity(.82) drop-shadow(0 3px 6px rgba(26,14,6,.35));
+}
+.ach-toast.unlock .ach-toast-icon{
   filter:drop-shadow(0 3px 6px rgba(26,14,6,.35));
 }
 .ach-toast-text{display:flex;flex-direction:column;min-width:0}

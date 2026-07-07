@@ -18,12 +18,12 @@
 <meta property="og:site_name" content="Folklore Finder"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="folklorefinder.css?v=20260706a"/>
+<link rel="stylesheet" href="folklorefinder.css?v=20260707d"/>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{--parchment:#f6f1e6;--ink:#3f3023;--muted:#5a4632;--line:rgba(90,70,50,.24);--gold:#b09060;--rust:#c4622a;--dark:#1a0e06}
 body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent 25rem),linear-gradient(180deg,#e8dcc5,#f6f1e6 34rem,#eadfc9);color:var(--ink);font-family:'Spectral',serif;min-height:100vh}
-.topnav{display:flex;align-items:center;justify-content:center;gap:4px;background:var(--dark);padding:11px 16px;border-bottom:1px solid rgba(176,144,96,.2);flex-wrap:wrap}.topnav a{font-family:'Marcellus',serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:rgba(242,232,213,.78);text-decoration:none;padding:6px 14px}.topnav a:hover,.topnav a.active{color:#c4622a}@media(max-width:640px){.topnav{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;scrollbar-width:none}.topnav::-webkit-scrollbar{display:none}.topnav a{flex:0 0 auto;white-space:nowrap}}
+/* canonical banner styles now live in folklorefinder.css */
 .wrap{width:min(1500px,calc(100% - 56px));margin:0 auto;padding:42px 0 76px}
 .ach-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,420px);gap:42px;align-items:end;margin-bottom:34px}
 .kicker{font-family:'Marcellus',serif;font-size:11px;letter-spacing:.17em;text-transform:uppercase;color:var(--rust);margin-bottom:10px}
@@ -66,7 +66,7 @@ footer{text-align:center;padding:30px 20px;font-size:12px;color:var(--muted);bor
 </head>
 <body class="achievements-page">
 <nav class="topnav">
-  <span class="topnav-title">Folklore Finder — Achievements</span>
+  <a class="topnav-brand" href="./" aria-label="Folklore Finder home"><img class="topnav-emblem" src="green-man.png" alt="Green Man"/><span class="topnav-title">Folklore Finder</span></a>
   <a href="./">Home</a>
   <a href="map">Map</a>
   <a href="legends/">Browse</a>

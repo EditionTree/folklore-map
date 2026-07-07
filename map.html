@@ -165,9 +165,7 @@
         linear-gradient(150deg,rgba(88,120,184,.08),transparent 22rem),
         var(--parchment);
     }
-    body.night footer {
-      background: linear-gradient(180deg, #0a1020 0%, #060c18 100%);
-    }
+    body.night footer { background: #1a0e06; }
 
     /* Smooth transitions for UI colour change */
     header, .sidebar, footer,
@@ -188,14 +186,10 @@
 
     /* ── HEADER ── */
     header {
-      background:
-        radial-gradient(ellipse at 14% 25%, rgba(132,84,36,.24) 0 2%, transparent 11%),
-        radial-gradient(ellipse at 78% 70%, rgba(112,66,27,.2) 0 2%, transparent 10%),
-        linear-gradient(135deg, rgba(196,98,42,0.18) 0%, rgba(176,144,96,0.06) 35%, transparent 60%),
-        linear-gradient(180deg, #1a0e06 0%, #2c1510 55%, #3d1e0c 100%);
-      border-bottom: 1px solid rgba(176,144,96,0.35);
-      min-height: 62px;
-      padding: 8px clamp(22px,3.2vw,52px);
+      background: #1a0e06;
+      border-bottom: none;
+      min-height: 58px;
+      padding: 10px clamp(16px,3vw,52px);
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -217,7 +211,7 @@
       background: linear-gradient(90deg, transparent 0%, rgba(176,144,96,0.6) 20%, rgba(196,98,42,0.8) 50%, rgba(176,144,96,0.6) 80%, transparent 100%);
     }
     .header-emblem-wrap {
-      width: 46px; height: 46px;
+      width: 40px; height: 40px;
       flex-shrink: 0;
       display: block;
       cursor: pointer;
@@ -232,27 +226,21 @@
     @media (max-width: 640px) {
       .header-emblem-wrap { width: 36px; height: 36px; }
     }
-    .header-title { display: flex; align-items: center; gap: 14px; min-width: 0; }
-    .header-title-row { display:grid;grid-template-columns:auto auto;align-items:baseline;column-gap:14px;row-gap:0;min-width:0; }
+    .header-title { display: flex; align-items: center; gap: 11px; min-width: 0; margin-right: clamp(10px,2vw,26px); }
+    .header-title-row { display:flex;align-items:center;min-width:0; }
     .header-kicker { grid-column:1 / -1;color:rgba(176,144,96,.72);font-family:var(--font-display);font-size:9px;letter-spacing:.17em;text-transform:uppercase; }
     .mobile-title { display: none; }
     h1 {
       font-family: var(--font-display);
-      font-size: 24px;
+      font-size: clamp(18px,2.1vw,23px);
       font-weight:400;
       color: var(--parchment);
       letter-spacing: 0.055em;
       text-shadow: 0 1px 3px rgba(0,0,0,0.55), 0 0 14px rgba(196,98,42,0.22);
     }
-    h1::before, h1::after {
-      content: '✦';
-      font-size: 11px;
-      color: var(--accent-glow);
-      opacity: 0.75;
-      vertical-align: middle;
-      margin: 0 7px;
-    }
+    h1::before, h1::after { content: none; }
     .subtitle {
+      display: none;
       grid-column:2;
       font-family: var(--font-body);
       font-size: 13px;
@@ -296,17 +284,11 @@
       .map-nav a { flex: 0 0 auto; }
     }
 
-    /* Hide the subtitle once the nav bar shares the header, to make room */
-    @media (max-width: 1240px) {
-      .subtitle { display:none; }
-    }
-
     @media (max-width: 1100px) {
-      header { min-height:58px;padding:8px 22px; }
+      header { min-height:58px;padding:10px 22px; }
       .header-emblem-wrap { width:40px;height:40px; }
       .header-title { gap:11px; }
       .header-kicker { display:none; }
-      .header-title-row { column-gap:10px; }
       h1 { font-size:20px; }
       .header-controls { gap:6px; }
     }
@@ -684,18 +666,17 @@
 
     /* ── FOOTER ── */
     footer {
-      background: linear-gradient(180deg, var(--ink) 0%, #1e1408 100%);
+      background: #1a0e06;
       border-top: none;
-      padding: 8px 20px;
+      padding: 12px 18px;
       font-family: var(--font-body);
-      font-size: 11px;
-      color: var(--border);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      font-size: 12px;
+      line-height: 1.6;
+      color: rgba(246,241,230,.78);
+      display: block;
+      text-align: center;
       position: relative;
       z-index: 1000;
-      gap: 12px;
     }
     footer::before {
       content: '';
@@ -703,7 +684,7 @@
       top: 0; left: 0; right: 0; height: 1px;
       background: linear-gradient(90deg, transparent 0%, rgba(176,144,96,0.6) 20%, rgba(196,98,42,0.8) 50%, rgba(176,144,96,0.6) 80%, transparent 100%);
     }
-    footer a { color: var(--border); text-decoration: none; }
+    footer a { color: rgba(246,241,230,.9); text-decoration: none; }
     footer a:hover { color: var(--parchment); }
     .bug-report-btn {
       background: none; border: 1px solid rgba(176,144,96,0.3); border-radius: 2px;
@@ -780,20 +761,6 @@
     }
     .bug-submit-btn:hover { background: var(--accent); }
     .bug-submit-btn:disabled { opacity: 0.5; cursor: default; }
-    .footer-brand {
-      font-family: var(--font-display);
-      font-size: 10px;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: rgba(176,144,96,0.7);
-      white-space: nowrap;
-    }
-    .footer-brand span { color: rgba(196,98,42,0.8); margin: 0 6px; }
-    .footer-tiles { font-size: 10px; color: rgba(176,144,96,0.5); text-align: right; }
-    @media (max-width: 640px) {
-      .footer-tiles { display: none; }
-    }
-
     .marker-cluster { border-radius: 50% !important; background: transparent !important; }
     .marker-cluster-small, .marker-cluster-medium, .marker-cluster-large { background: none !important; }
     .marker-cluster div {
@@ -904,55 +871,7 @@
       }
       header::before { display: none; }
       h1 { font-size: 15px; letter-spacing: 0.04em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-      h1::before, h1::after { display: none; }
-      .desktop-title { display: none; }
-      .mobile-title { display: block; }
-      .header-kicker { display:none; }
-      .subtitle { display: none; }
-      .header-title { width: 100%; min-width: 0; }
-      .header-emblem-wrap { width:36px;height:36px; }
-      .header-controls {
-        min-width: 0;
-        display: flex;
-        justify-content: flex-end;
-        gap: 7px;
-      }
-      #modeLabel { display: none; }
-      .search-wrap input { width: 100%; font-size: 12px; }
-      .sidebar-toggle-btn { font-size: 11px; padding: 4px 8px; }
-      footer { padding-bottom: calc(5px + env(safe-area-inset-bottom)); }
-
-      /* Filter bar: icon + count only, no text label */
-      .filter-bar { flex-wrap: nowrap; padding: 6px 12px; }
-      .btn-label { display: none; }
-      .filter-btn[data-cat="all"] .btn-label { display: inline; }
-      .filter-place .btn-label { display: inline; }
-      .filter-btn { padding: 3px 8px; }
-      .content-area {
-        gap: 0;
-        padding: 0;
-        box-shadow:none;
-      }
-      .map-wrap {
-        border:0;
-        border-radius:0;
-        box-shadow:none;
-      }
-      .map-border {
-        inset:-8px;
-        border-width:20px;
-        border-image-width:20px;
-      }
-      /* Sidebar: overlay from content-area top (which is below header+filterbar) */
-      .sidebar { position: absolute; top:0; bottom:0; left:0; z-index: 850; box-shadow: 4px 0 20px rgba(0,0,0,0.3); }
-      .sidebar.collapsed { width: 0; }
-      .leaflet-control-container { position: relative; z-index: 700; }
-      .sidebar:not(.collapsed) + .map-wrap .leaflet-control-zoom { display: none; }
-
-      .legend-panel { display: none; }
-      .footer-brand { display: none; }
-      .leaflet-popup-content-wrapper { max-height: 70vh; overflow-y: auto !important; }
-    }
+      h1::before, h1::after { content: none; }
   </style>
 </head>
 <body class="map-page">
@@ -963,7 +882,6 @@
     <div class="header-title-row">
       <h1 class="desktop-title">Folklore Finder</h1>
       <h1 class="mobile-title">Folklore Finder</h1>
-      <span class="subtitle">An atlas of myths, legends, &amp; stories</span>
     </div>
   </div>
   <nav class="map-nav">
@@ -1011,16 +929,7 @@
   </div>
 </div>
 
-<footer>
-  <div class="footer-brand">Folklore Finder<span>✦</span>© EditionTree</div>
-  <div class="footer-tiles">Map tiles © <a href="https://stadiamaps.com/">Stadia Maps</a> / <a href="https://stamen.com">Stamen Design</a> · Data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors</div>
-  <div style="display:flex;gap:6px;align-items:center">
-    <a class="bug-report-btn" href="about" style="text-decoration:none">About</a>
-    <a class="bug-report-btn" href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener" style="text-decoration:none">☕ Ko-fi</a>
-    <a class="bug-report-btn" href="privacy" style="text-decoration:none">Privacy</a>
-    <button class="bug-report-btn" onclick="openBugReport()" aria-haspopup="dialog">⚑ Report a bug</button>
-  </div>
-</footer>
+<footer>Folklore Finder &nbsp;&#183;&nbsp; An atlas of myths, legends, &amp; stories &nbsp;&#183;&nbsp; &copy; EditionTree &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/about">About</a> &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/updates">Updates</a> &nbsp;&#183;&nbsp; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener">Ko-fi</a> &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/privacy">Privacy</a></footer>
 
 <!-- Bug report modal -->
 <div id="bugModal" class="bug-modal-overlay" style="display:none" onclick="if(event.target===this)closeBugReport()" role="dialog" aria-modal="true" aria-labelledby="bugModalTitle">
@@ -1176,7 +1085,7 @@ const BOUNDS = window.matchMedia('(max-width: 640px)').matches ? MOBILE_BOUNDS :
 const map = L.map('map', {
   zoomControl: true, minZoom: 5, maxZoom: 17,
   maxBounds: BOUNDS, maxBoundsViscosity: 0.7,
-  attributionControl: false
+  attributionControl: true
 }).setView([54.5, -2.5], 6);
 
 const clusterGroup = L.markerClusterGroup({

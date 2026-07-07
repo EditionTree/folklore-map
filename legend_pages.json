@@ -6271,6 +6271,231 @@
         "Setting": "Scotland",
         "Motif": "Apparition and unrest"
       }
+    },
+    "Bluecap": {
+      "priority": 419,
+      "image": "legend-images/bluecap-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Bluecap, shown as the central fairy, spirit, or otherworldly presence from Northumberland",
+      "caption": "A visual interpretation of Bluecap",
+      "map_title": "Northumberland",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "A mine spirit seen as a small blue flame in the pit. Unlike crueler goblins, Bluecaps were often helpful workers, but expected fair wages left for...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Northumberland",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "Boggart of Boggart Hole Clough": {
+      "priority": 420,
+      "image": "legend-images/boggart-of-boggart-hole-clough-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Boggart of Boggart Hole Clough, shown as the central fairy, spirit, or otherworldly presence from Manchester",
+      "caption": "A visual interpretation of Boggart of Boggart Hole Clough",
+      "map_title": "Manchester",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "A mischievous household spirit that plagued a farming family — souring milk, tangling hair, pinching children. When the family tried to move away,...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Manchester",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "Bucca": {
+      "priority": 421,
+      "image": "legend-images/bucca-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Bucca, shown as the central fairy, spirit, or otherworldly presence from Cornwall",
+      "caption": "A visual interpretation of Bucca",
+      "map_title": "Cornwall",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "A Cornish spirit of the sea, mines, and weather, sometimes treated as a hobgoblin and sometimes as something older and darker. Fisherfolk left...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Cornwall",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "Bwbach": {
+      "priority": 422,
+      "image": "legend-images/bwbach-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Bwbach, shown as the central fairy, spirit, or otherworldly presence from Wales",
+      "caption": "A visual interpretation of Bwbach",
+      "map_title": "Wales",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "A Welsh household spirit similar to a brownie, rewarding good housekeeping and punishing idleness or disrespect. In later tales it gained a sharp...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Wales",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "Colt Pixies": {
+      "priority": 423,
+      "image": "legend-images/colt-pixies-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Colt Pixies, shown as the central fairy, spirit, or otherworldly presence from New Forest, Hampshire, England",
+      "caption": "A visual interpretation of Colt Pixies",
+      "map_title": "New Forest, Hampshire, England",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "Horse-shaped pixies lead travellers and livestock astray across the New Forest; a Bronze Age barrow on Beaulieu Heath, known as Cold Pixies Cave,...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "New Forest, Hampshire, England",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "Donn Fírinne": {
+      "priority": 424,
+      "image": "legend-images/donn-firinne-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Donn Fírinne, shown as the central fairy, spirit, or otherworldly presence from Knockfierna (Cnoc Fírinne), County Limerick, Ireland",
+      "caption": "A visual interpretation of Donn Fírinne",
+      "map_title": "Knockfierna (Cnoc Fírinne), County Limerick, Ireland",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "Donn Fírinne is the fairy king of Knockfierna, the Hill of Truth, in County Limerick. Local tradition says he rides a white horse through storm...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Knockfierna (Cnoc Fírinne), County Limerick, Ireland",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "Dunnie": {
+      "priority": 425,
+      "image": "legend-images/dunnie-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Dunnie, shown as the central fairy, spirit, or otherworldly presence from Northumberland",
+      "caption": "A visual interpretation of Dunnie",
+      "map_title": "Northumberland",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "A shape-shifting Northumbrian spirit that often appears as a horse or donkey. It delights in tricks, carrying riders only to vanish and dump them...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Northumberland",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "Elfhame": {
+      "priority": 426,
+      "image": "legend-images/elfhame-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Elfhame, shown as the central fairy, spirit, or otherworldly presence from Lynn, Dalry, North Ayrshire, Scotland",
+      "caption": "A visual interpretation of Elfhame",
+      "map_title": "Lynn, Dalry, North Ayrshire, Scotland",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "Elfhame is the fairy otherworld of Scottish tradition, known from 1576 witch-trial testimony where Bessie Dunlop claimed her healing gifts came from...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Lynn, Dalry, North Ayrshire, Scotland",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "Fairy Bridge": {
+      "priority": 427,
+      "image": "legend-images/fairy-bridge-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Fairy Bridge, shown as the central fairy, spirit, or otherworldly presence from Isle of Man",
+      "caption": "A visual interpretation of Fairy Bridge",
+      "map_title": "Isle of Man",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "A small Isle of Man bridge where travellers traditionally greet the fairies as they pass. Failing to acknowledge the Little People is considered...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Isle of Man",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "Fairy Invasion of Guernsey": {
+      "priority": 428,
+      "image": "legend-images/fairy-invasion-of-guernsey-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Fairy Invasion of Guernsey, shown as the central fairy, spirit, or otherworldly presence from Guernsey, Channel Islands",
+      "caption": "A visual interpretation of Fairy Invasion of Guernsey",
+      "map_title": "Guernsey, Channel Islands",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "A fairy prince stole a Guernsey woman as his queen, then returned with an army — the bloody battle gave Rouge Rue its name.",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Guernsey, Channel Islands",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "Fat Lips": {
+      "priority": 429,
+      "image": "legend-images/fat-lips-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Fat Lips, shown as the central fairy, spirit, or otherworldly presence from Jedburgh Castle Jail, Scottish Borders",
+      "caption": "A visual interpretation of Fat Lips",
+      "map_title": "Jedburgh Castle Jail, Scottish Borders",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "Fat Lips is the name given to a legendary spirit dwelling in Dryburgh Abbey in Berwickshire, Scotland.",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Jedburgh Castle Jail, Scottish Borders",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "Fenodyree": {
+      "priority": 430,
+      "image": "legend-images/fenodyree-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Fenodyree, shown as the central fairy, spirit, or otherworldly presence from Glen Rushen, Isle of Man",
+      "caption": "A visual interpretation of Fenodyree",
+      "map_title": "Glen Rushen, Isle of Man",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "The Fenodyree is a hairy Manx fairy known for performing heavy farm work with uncanny speed. Like related household spirits, he is offended by a gift...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Glen Rushen, Isle of Man",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "Finvarra at Knockma Hill": {
+      "priority": 431,
+      "image": "legend-images/finvarra-at-knockma-hill-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Finvarra at Knockma Hill, shown as the central fairy, spirit, or otherworldly presence from County Galway, Ireland",
+      "caption": "A visual interpretation of Finvarra at Knockma Hill",
+      "map_title": "County Galway, Ireland",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "Beneath Knockma Hill in Connacht lives Finvarra, fairy king of the west — a chess-playing, horse-loving sovereign who steals beautiful mortal women...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "County Galway, Ireland",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "Gooseberry Wife": {
+      "priority": 432,
+      "image": "legend-images/gooseberry-wife-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Gooseberry Wife, shown as the central fairy, spirit, or otherworldly presence from Isle of Wight",
+      "caption": "A visual interpretation of Gooseberry Wife",
+      "map_title": "Isle of Wight",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "A great caterpillar-like spirit said to guard gooseberry bushes on the Isle of Wight, keeping children from stealing fruit before it was ripe. Her...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Isle of Wight",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "Green Children of Woolpit": {
+      "priority": 433,
+      "image": "legend-images/green-children-of-woolpit-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Green Children of Woolpit, shown as the central fairy, spirit, or otherworldly presence from Suffolk",
+      "caption": "A visual interpretation of Green Children of Woolpit",
+      "map_title": "Suffolk",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "In the 12th century, two children with green skin emerged from pits near Woolpit, speaking an unknown tongue. The girl survived and spoke of an...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Suffolk",
+        "Motif": "Otherworldly encounter"
+      }
     }
   }
 }

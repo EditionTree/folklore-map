@@ -280,16 +280,36 @@ def banner_html():
 
 # Site-wide top navigation (shown on every page except the interactive map).
 TOPNAV_CSS = (
-    ".topnav{display:flex;align-items:center;justify-content:center;gap:4px;"
-    "background:#1a0e06;padding:11px 16px;border-bottom:1px solid rgba(176,144,96,0.2);flex-wrap:wrap}"
+    # Canonical banner: deep-brown gradient, gilded top piping + bottom
+    # divider, brand lockup (emblem + "Folklore Finder") anchored left, and
+    # the centered nav links. Mirrors the .topnav rules in folklorefinder.css.
+    ".topnav{position:relative;display:flex;align-items:center;justify-content:flex-start;"
+    "flex-wrap:wrap;gap:4px;min-height:58px;padding:10px clamp(16px,3vw,52px);"
+    "background:linear-gradient(135deg,rgba(196,98,42,0.18) 0%,rgba(176,144,96,0.06) 35%,transparent 60%),"
+    "linear-gradient(180deg,#1a0e06 0%,#2c1510 55%,#3d1e0c 100%);border-bottom:none}"
+    ".topnav::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;"
+    "background:linear-gradient(90deg,transparent 0%,#8b3a1a 15%,#b09060 50%,#8b3a1a 85%,transparent 100%)}"
+    ".topnav::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;"
+    "background:linear-gradient(90deg,transparent 0%,rgba(176,144,96,0.6) 20%,rgba(196,98,42,0.8) 50%,rgba(176,144,96,0.6) 80%,transparent 100%)}"
     ".topnav a{font-family:'Marcellus',serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase;"
     "color:rgba(242,232,213,0.78);text-decoration:none;padding:6px 14px;border-radius:3px;"
     "transition:background .15s,color .15s}"
     ".topnav a:hover{color:#f2e8d5;background:rgba(196,98,42,0.18)}"
     ".topnav a.active{color:#c4622a}"
+    ".topnav-brand{display:inline-flex;align-items:center;gap:11px;"
+    "margin-right:clamp(10px,2vw,26px);padding:0;text-decoration:none}"
+    ".topnav-emblem{width:40px;height:40px;object-fit:contain;display:block;flex-shrink:0;"
+    "transition:opacity .15s,transform .15s}"
+    ".topnav-brand:hover .topnav-emblem{opacity:.85;transform:scale(1.04)}"
+    ".topnav-title{font-family:'Marcellus',serif;font-size:clamp(18px,2.1vw,23px);font-weight:400;"
+    "text-transform:none;letter-spacing:0.055em;color:#f2e8d5;white-space:nowrap;"
+    "text-shadow:0 1px 3px rgba(0,0,0,0.55),0 0 14px rgba(196,98,42,0.22)}"
+    ".topnav-title::before,.topnav-title::after{content:'\\2726';font-size:11px;color:#c4622a;"
+    "opacity:0.75;vertical-align:middle;margin:0 7px}"
+    "@media(max-width:900px){.topnav-brand{display:none}}"
     # Mobile: one horizontally-scrolling row instead of wrapping to two lines.
     "@media(max-width:640px){.topnav{flex-wrap:nowrap;overflow-x:auto;"
-    "justify-content:flex-start;scrollbar-width:none}"
+    "justify-content:flex-start;scrollbar-width:none;padding-left:16px;padding-right:16px}"
     ".topnav::-webkit-scrollbar{display:none}"
     ".topnav a{flex:0 0 auto;white-space:nowrap}}"
 )
@@ -306,6 +326,11 @@ TOPNAV_ITEMS = [
 
 def topnav_html(active=""):
     parts = ['<nav class="topnav">']
+    parts.append(
+        f'<a class="topnav-brand" href="{BASE}/" aria-label="Folklore Finder home">'
+        f'<img class="topnav-emblem" src="{BASE}/green-man.png" alt="Green Man"/>'
+        f'<span class="topnav-title">Folklore Finder</span></a>'
+    )
     for key, label, path in TOPNAV_ITEMS:
         cls = ' class="active"' if key == active else ''
         parts.append(f'<a href="{BASE}{path}"{cls}>{label}</a>')
@@ -675,184 +700,6 @@ def legend_sources(leg):
     return out
 
 
-LEGACY_PAGE = """<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8"/>
-<script>if(location.hostname.indexOf("pages.dev")>-1){{location.replace("https://folklorefinder.uk"+location.pathname+location.search+location.hash);}}</script>
-<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{{"token": "64d1fd37251d426f8a0d8fbc83ea350b"}}'></script>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>{title}</title>
-<meta name="description" content="{desc}"/>
-<link rel="canonical" href="{url}"/>
-<link rel="icon" type="image/png" href="{base}/favicon.png"/>
-<meta property="og:type" content="article"/>
-<meta property="og:url" content="{url}"/>
-<meta property="og:title" content="{ogtitle}"/>
-<meta property="og:description" content="{desc}"/>
-<meta property="og:image" content="{ogimage}"/>
-<meta property="og:site_name" content="Folklore Finder"/>
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="{ogtitle}"/>
-<meta name="twitter:description" content="{desc}"/>
-<meta name="twitter:image" content="{ogimage}"/>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-<script type="application/ld+json">{jsonld}</script>
-{breadcrumb_jsonld}
-<style>
-*{{box-sizing:border-box;margin:0;padding:0}}
-body{{background:#e0d0b0;color:#2c1f0e;font-family:'Spectral',serif;line-height:1.7;min-height:100vh}}
-.site-banner{{position:relative;background:linear-gradient(135deg,rgba(196,98,42,0.18) 0%,rgba(176,144,96,0.06) 35%,transparent 60%),linear-gradient(180deg,#1a0e06 0%,#2c1510 55%,#3d1e0c 100%);padding:16px 20px;text-align:center}}
-.site-banner::before{{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,#8b3a1a 15%,#b09060 50%,#8b3a1a 85%,transparent)}}
-.site-banner::after{{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(176,144,96,.6) 20%,rgba(196,98,42,.8) 50%,rgba(176,144,96,.6) 80%,transparent)}}
-.banner-link{{display:inline-flex;align-items:center;gap:13px;text-decoration:none}}
-.banner-emblem{{width:48px;height:48px;object-fit:contain;flex-shrink:0}}
-.banner-text{{display:flex;flex-direction:column;align-items:center;line-height:1.15}}
-.banner-title{{font-family:'Marcellus',serif;font-size:21px;font-weight:400;color:#f2e8d5;letter-spacing:.09em;display:flex;align-items:center;justify-content:center;gap:9px}}
-.banner-title i{{color:#c4622a;font-style:normal;font-size:.6em;flex-shrink:0}}
-.banner-sub{{font-family:'Spectral',serif;font-size:12px;font-style:italic;color:rgba(176,144,96,.8);letter-spacing:.04em}}
-.watermark{{position:absolute;top:26px;right:24px;width:88px;height:88px;color:#8b3a1a;opacity:.1;pointer-events:none;z-index:0}}
-@media(max-width:560px){{.banner-title{{font-size:15px}}.banner-emblem{{width:38px;height:38px}}.banner-sub{{font-size:11px}}}}
-.wrap{{max-width:680px;margin:0 auto;padding:11px 20px 60px}}
-.card{{position:relative;overflow:hidden;background:#f2e8d5;border:1px solid #b09060;border-radius:6px;margin-top:30px;padding:32px;box-shadow:0 4px 20px rgba(44,31,14,.18)}}
-.card>*:not(.watermark){{position:relative;z-index:1}}
-.card>.watermark{{position:absolute;top:26px;right:24px;width:88px;height:88px;z-index:0}}
-.cat{{font-family:'Marcellus',serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#fff;background:#8b3a1a;display:inline-block;padding:3px 10px;border-radius:2px}}
-h1{{font-family:'Marcellus',serif;font-size:30px;margin:14px 0 4px;color:#2c1f0e;line-height:1.15}}
-.region{{font-style:italic;color:#5c4a2a;margin-bottom:18px}}
-.crumb{{font-size:12.5px;color:#5c4a2a;margin-bottom:16px;line-height:1.5}}
-.crumb a{{color:#8b3a1a;text-decoration:none}}
-.crumb a:hover{{text-decoration:underline}}
-.crumb .sep{{color:#b09060;margin:0 6px}}
-.crumb .here{{color:#5c4a2a}}
-.summary{{font-size:17px}}
-.summary-cont{{font-size:17px;margin-top:14px}}
-.cta{{display:inline-block;margin-top:26px;background:#2c1f0e;color:#f2e8d5;font-family:'Marcellus',serif;font-size:13px;letter-spacing:.08em;text-transform:uppercase;padding:12px 22px;border-radius:3px;text-decoration:none}}
-.cta:hover{{background:#8b3a1a}}
-.share-row{{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}}
-.share-btn{{font-family:'Marcellus',serif;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#8b3a1a;background:transparent;border:1px solid #b09060;border-radius:3px;padding:9px 16px;cursor:pointer;transition:background .15s,color .15s,border-color .15s}}
-.share-btn:hover{{background:#8b3a1a;color:#f2e8d5;border-color:#8b3a1a}}
-.share-status{{position:absolute !important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}}
-.src{{display:block;margin-top:18px;font-size:13px;font-style:italic;color:#5c4a2a}}
-.sources{{margin-top:18px;font-size:13px;color:#5c4a2a}}
-.sources-head{{font-style:italic}}
-.sources ul{{list-style:none;margin:5px 0 0;padding:0}}
-.sources li{{margin:3px 0}}
-.sources a{{color:#8b3a1a}}
-.src a{{color:#8b3a1a}}
-.back{{display:inline-block;margin-top:22px;font-size:13px;color:#5c4a2a}}
-.related{{margin-top:36px}}
-.related-head{{font-family:'Marcellus',serif;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#8b3a1a;display:flex;align-items:center;gap:12px;margin-bottom:16px}}
-.related-head::before,.related-head::after{{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,#b09060)}}
-.related-head::after{{background:linear-gradient(90deg,#b09060,transparent)}}
-.carousel{{position:relative}}
-.carousel-track{{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding-bottom:8px;-webkit-overflow-scrolling:touch}}
-.carousel-track::-webkit-scrollbar{{height:6px}}
-.carousel-track::-webkit-scrollbar-track{{background:rgba(176,144,96,.15);border-radius:3px}}
-.carousel-track::-webkit-scrollbar-thumb{{background:rgba(139,58,26,.4);border-radius:3px}}
-.rel-card{{flex:0 0 198px;scroll-snap-align:start;background:#f2e8d5;border:1px solid #b09060;border-radius:5px;padding:14px 15px;text-decoration:none;color:#2c1f0e;transition:border-color .15s,transform .1s}}
-.rel-card:hover{{border-color:#c4622a;transform:translateY(-2px)}}
-.rel-card span{{display:block}}
-.rel-cat{{font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:#8b3a1a;padding:2px 8px;border-radius:3px;margin-bottom:8px;width:max-content;max-width:100%}}
-.rel-name{{font-family:'Marcellus',serif;font-size:15px;line-height:1.25;margin-bottom:4px}}
-.rel-region{{font-style:italic;font-size:12px;color:#5c4a2a}}
-.carousel-btn{{position:absolute;top:42%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;border:1px solid #b09060;background:#f2e8d5;color:#8b3a1a;font-family:'Marcellus',serif;font-size:18px;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2;box-shadow:0 2px 8px rgba(44,31,14,.25)}}
-.carousel-btn:hover{{background:#8b3a1a;color:#f2e8d5}}
-.carousel-btn.prev{{left:-10px}}
-.carousel-btn.next{{right:-10px}}
-@media(max-width:560px){{.carousel-btn{{display:none}}.rel-card{{flex-basis:170px}}}}
-footer{{text-align:center;padding:30px 20px;font-size:12px;color:#5c4a2a}}
-{topnav_css}
-</style>
-</head>
-<body>
-{topnav}
-<header class="site-banner"><a class="banner-link" href="{base}/"><img src="{base}/green-man.png" class="banner-emblem" alt=""/><span class="banner-text"><span class="banner-title"><i>&#10022;</i> Folklore Finder <i>&#10022;</i></span><span class="banner-sub">An Atlas of Myths, Legends, &amp; Stories</span></span></a></header>
-<div class="wrap">
-{breadcrumb}
-<article class="card">
-<span class="cat" style="background:{catcolour}">{catname}</span>
-<h1>{name}</h1>
-<div class="region">{region}</div>
-{body}
-<a class="cta" href="{maplink}">Explore on the interactive map &#8594;</a>
-{sources}
-<div class="share-row" role="group" aria-label="Share this legend">
-<button type="button" class="share-btn" id="copyLinkBtn">Copy link</button>
-<button type="button" class="share-btn" id="webShareBtn" hidden>Share&#8230;</button>
-</div>
-<span class="share-status" id="shareStatus" role="status" aria-live="polite"></span>
-<svg class="watermark" viewBox="0 0 512 512" aria-hidden="true"><path d="{watermark}" fill="currentColor"/></svg>
-</article>
-{related}
-<a class="back" href="{base}/legends/">&#8592; Browse All Legends</a>
-</div>
-<footer>Folklore Finder &#183; &#169; EditionTree &#183; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener" style="color:#5c4a2a">&#9749; Ko-fi</a> &#183; <a href="{base}/privacy" style="color:#5c4a2a">Privacy</a></footer>
-<script>
-document.querySelectorAll('.carousel').forEach(function(c){{
-  var t=c.querySelector('.carousel-track');
-  var p=c.querySelector('.prev'), n=c.querySelector('.next');
-  if(p)p.addEventListener('click',function(){{t.scrollBy({{left:-220,behavior:'smooth'}});}});
-  if(n)n.addEventListener('click',function(){{t.scrollBy({{left:220,behavior:'smooth'}});}});
-}});
-(function(){{
-  var link=document.querySelector('link[rel=canonical]');
-  var url=(link&&link.href)||location.href;
-  var status=document.getElementById('shareStatus');
-  var copyBtn=document.getElementById('copyLinkBtn');
-  var shareBtn=document.getElementById('webShareBtn');
-  var revertTimer=null;
-  function announce(m){{ if(status) status.textContent=m; }}
-  function markCopied(){{
-    announce('Link copied');           // for screen readers (visually hidden)
-    if(copyBtn){{
-      copyBtn.textContent='Copied';
-      clearTimeout(revertTimer);
-      revertTimer=setTimeout(function(){{ copyBtn.textContent='Copy link'; }},2000);
-    }}
-  }}
-  function fallbackCopy(){{
-    try{{
-      var ta=document.createElement('textarea');
-      ta.value=url; ta.setAttribute('readonly','');
-      ta.style.position='absolute'; ta.style.left='-9999px';
-      document.body.appendChild(ta); ta.select();
-      document.execCommand('copy'); document.body.removeChild(ta);
-      markCopied();
-      return Promise.resolve(true);
-    }}catch(e){{ announce("Couldn't copy. Press Ctrl+C to copy the address."); return Promise.resolve(false); }}
-  }}
-  function copyLink(){{
-    if(navigator.clipboard&&navigator.clipboard.writeText&&window.isSecureContext){{
-      return navigator.clipboard.writeText(url).then(function(){{ markCopied(); return true; }},fallbackCopy);
-    }}
-    return fallbackCopy();
-  }}
-  if(copyBtn) copyBtn.addEventListener('click',function(){{ copyLink(); }});
-  if(shareBtn&&navigator.share){{
-    var shareData={{title:document.title,url:url}};
-    var canShare=true;
-    if(navigator.canShare){{
-      try{{ canShare=navigator.canShare(shareData); }}catch(e){{ canShare=false; }}
-    }}
-    if(canShare){{
-      shareBtn.hidden=false;
-      shareBtn.addEventListener('click',function(){{
-        navigator.share(shareData).catch(function(err){{
-          if(err&&err.name==='AbortError') return;
-          copyLink().then(function(copied){{
-            if(copied) announce('Sharing unavailable here, so the link was copied instead.');
-          }});
-        }});
-      }});
-    }}
-  }}
-}})();
-</script>
-</body>
-</html>
-"""
 
 
 FEATURED_PAGE = Template("""<!DOCTYPE html>
@@ -884,7 +731,7 @@ FEATURED_PAGE = Template("""<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha384-sHL9NAb7lN7rfvG5lfHpm643Xkcjzp4jFvuavGOndn6pjVqS6ny56CAt3nsEVT4H" crossorigin="anonymous"/>
-<link rel="stylesheet" href="/legend-page.css?v=20260707b"/>
+<link rel="stylesheet" href="/legend-page.css?v=20260707d"/>
 <script type="application/ld+json">$jsonld</script>
 $breadcrumb_jsonld
 </head>
@@ -1369,10 +1216,6 @@ def build():
         # Split on blank lines into paragraphs; first paragraph gets the drop cap.
         body_text = leg.get("detail") or leg.get("summary", "")
         paras = [p.strip() for p in body_text.split("\n\n") if p.strip()]
-        body_html = "".join(
-            f'<p class="{"summary" if i == 0 else "summary-cont"}">{esc(p)}</p>'
-            for i, p in enumerate(paras)
-        ) or '<p class="summary"></p>'
         catname = cats.get(leg.get("category", ""), leg.get("category", "Legend"))
         maplink = f"{BASE}/map?legend=" + urllib.parse.quote(name)
         srcs = legend_sources(leg)
@@ -1406,42 +1249,8 @@ def build():
         # date_added/date_modified stay in the JSON-LD and sitemap, but are not
         # shown on the page (looked out of place).
 
-        # Sourcing block: single line for one source, a labelled list for more.
-        def src_link(s):
-            return (f'<a href="{esc(s["url"])}" target="_blank" rel="noopener">'
-                    f'{esc(s["publisher"])}</a>')
-        if not srcs:
-            sources_html = ""
-        elif len(srcs) == 1:
-            sources_html = f'<span class="src">Researched from {src_link(srcs[0])}</span>'
-        else:
-            lis = "".join(f"<li>{src_link(s)}</li>" for s in srcs)
-            sources_html = (f'<div class="sources"><span class="sources-head">Researched from:'
-                            f'</span><ul>{lis}</ul></div>')
-
         # Related legends carousel
         rel = related_map.get(name, [])
-        if rel:
-            cards = []
-            for r in rel:
-                rcat = cats.get(r.get("category", ""), r.get("category", ""))
-                rcolour = meta.get(r.get("category", ""), {}).get("colour", "#8b3a1a")
-                cards.append(
-                    f'<a class="rel-card" href="{BASE}/{OUT_DIR}/{slugmap[r["name"]]}">'
-                    f'<span class="rel-cat" style="background:{esc(rcolour)}">{esc(rcat)}</span>'
-                    f'<span class="rel-name">{esc(r["name"])}</span>'
-                    f'<span class="rel-region">{esc(r.get("region", ""))}</span></a>'
-                )
-            related_html = (
-                '<section class="related"><div class="related-head">Related Legends</div>'
-                '<div class="carousel">'
-                '<button class="carousel-btn prev" type="button" aria-label="Scroll left">&#8249;</button>'
-                '<div class="carousel-track">' + "".join(cards) + '</div>'
-                '<button class="carousel-btn next" type="button" aria-label="Scroll right">&#8250;</button>'
-                '</div></section>'
-            )
-        else:
-            related_html = ""
 
         page_path_url = f"{BASE}/{OUT_DIR}/{slug}"
         featured_meta = featured_pages.get(name, {})
@@ -1498,28 +1307,6 @@ def build():
             breadcrumb_list([(item["name"], item["item"]) for item in crumb_items]),
             ensure_ascii=False) + '</script>'
 
-        out = LEGACY_PAGE.format(
-            title=esc(f"{name} — Folklore Finder"),
-            ogtitle=esc(name),
-            desc=esc(desc),
-            url=page_path_url,
-            base=BASE,
-            jsonld=jsonld,
-            catname=esc(catname),
-            name=esc(name),
-            region=esc(leg.get("region", "")),
-            body=body_html,
-            related=related_html,
-            breadcrumb=breadcrumb,
-            breadcrumb_jsonld=breadcrumb_jsonld,
-            maplink=esc(maplink),
-            sources=sources_html,
-            watermark=meta.get(leg.get("category", ""), {}).get("iconPath", ""),
-            catcolour=esc(meta.get(leg.get("category", ""), {}).get("colour", "#8b3a1a")),
-            ogimage=f"{BASE}/og/category-{leg.get('category', '')}.png" if leg.get("category", "") in meta else f"{BASE}/og/preview.png",
-            topnav_css=TOPNAV_CSS,
-            topnav=topnav_html("browse"),
-        )
         out = render_featured_legend(
             leg=leg,
             featured=featured_pages.get(name, {}),

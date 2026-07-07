@@ -85,6 +85,7 @@ body.ff-paper {
 .home-page .topnav {
   background: var(--ff-night);
   border-bottom-color: rgba(176, 144, 96, 0.28);
+  flex-shrink: 0;
 }
 
 .home-page .topnav a {
@@ -1587,13 +1588,45 @@ body.interior-page {
 
 .home-page footer {
   padding: 12px 18px;
-  background: var(--ff-slate-blue);
+  background: #1a0e06;
   color: rgba(246,241,230,.78);
   border-top: 0;
+  flex-shrink: 0;
 }
 
 .home-page footer a {
   color: rgba(246,241,230,.9);
+}
+
+/* ── TOPNAV PAGE TITLE ──────────────────────────────────────────────────
+   Optional page title shown in the topnav banner alongside the nav links,
+   e.g. <nav class="topnav"><span class="topnav-title">Folklore Finder —
+   Map</span><a ...>...</a></nav>. Anchored to the left edge so the existing
+   centered nav links keep their current position; hidden on narrow
+   viewports (where the nav switches to a scrolling single row) so it never
+   crowds the links. Not used on the Home page — its title is already
+   centered on the page itself. */
+.topnav {
+  position: relative;
+}
+
+.topnav-title {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Marcellus', serif;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  color: rgba(242, 232, 213, 0.82);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+@media (max-width: 900px) {
+  .topnav-title {
+    display: none;
+  }
 }
 
 .home-page .hero-submit-cta {

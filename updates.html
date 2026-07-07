@@ -53,6 +53,9 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Spectral',seri
 .page-head h1{font-family:'Marcellus',serif;font-size:clamp(22px,4vw,36px);font-weight:400;color:#f2e8d5;letter-spacing:.06em;line-height:1.2;margin-bottom:8px}
 .page-head p{font-style:italic;color:rgba(176,144,96,0.85);font-size:clamp(14px,2.5vw,17px)}
 
+/* Match Collections' .browse-h1 size for this page's hero heading */
+.updates-page .page-hero h1{font-size:clamp(32px,4vw,48px)}
+
 /* ── BODY ── */
 .wrap{width:min(1160px,calc(100% - 56px));margin:0 auto;padding:0 0 70px}
 .section{padding:40px 0 0}
@@ -137,6 +140,7 @@ footer a{color:var(--ink-light)}
 <body class="ff-paper interior-page updates-page">
 
 <nav class="topnav">
+  <span class="topnav-title">Folklore Finder — Updates</span>
   <a href="./">Home</a>
   <a href="map">Map</a>
   <a href="legends/">Browse</a>
@@ -147,7 +151,6 @@ footer a{color:var(--ink-light)}
 
 <header class="page-hero page-hero-solo">
   <div>
-    <p class="kicker">What's New</p>
     <h1>What's New</h1>
     <p class="hero-copy">How the archive is growing and changing over time.</p>
   </div>

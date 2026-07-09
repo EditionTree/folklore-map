@@ -284,7 +284,7 @@ TOPNAV_CSS = (
     # Canonical banner: Home footer brown, gilded top piping + bottom
     # divider, brand lockup (emblem + "Folklore Finder") anchored left, and
     # the centered nav links. Mirrors the .topnav rules in folklorefinder.css.
-    ".topnav{position:relative;display:flex;align-items:center;justify-content:flex-start;"
+    ".topnav{position:relative;display:flex;align-items:center;justify-content:center;"
     "flex-wrap:wrap;gap:4px;min-height:58px;padding:10px clamp(16px,3vw,52px);"
     "background:#1a0e06;border-bottom:none}"
     ".topnav::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;"
@@ -296,15 +296,16 @@ TOPNAV_CSS = (
     "transition:background .15s,color .15s}"
     ".topnav a:hover{color:#f2e8d5;background:rgba(196,98,42,0.18)}"
     ".topnav a.active{color:#c4622a}"
-    ".topnav-brand{display:inline-flex;align-items:center;gap:11px;"
-    "margin-right:clamp(10px,2vw,26px);padding:0;text-decoration:none}"
+    ".topnav-brand{position:absolute;left:clamp(14px,3vw,52px);top:50%;transform:translateY(-50%);"
+    "display:inline-flex;align-items:center;gap:11px;padding:0;text-decoration:none}"
+    ".topnav a.topnav-brand:hover{background:transparent}"
     ".topnav-emblem{width:40px;height:40px;object-fit:contain;display:block;flex-shrink:0;"
     "transition:opacity .15s,transform .15s}"
     ".topnav-brand:hover .topnav-emblem{opacity:.85;transform:scale(1.04)}"
     ".topnav-title{font-family:'Marcellus',serif;font-size:clamp(18px,2.1vw,23px);font-weight:400;"
     "text-transform:none;letter-spacing:0.055em;color:#f2e8d5;white-space:nowrap;"
     "text-shadow:0 1px 3px rgba(0,0,0,0.55),0 0 14px rgba(196,98,42,0.22)}"
-    "@media(max-width:900px){.topnav-brand{display:none}}"
+    "@media(max-width:1200px){.topnav-brand{display:none}}"
     # Mobile: one horizontally-scrolling row instead of wrapping to two lines.
     "@media(max-width:640px){.topnav{flex-wrap:nowrap;overflow-x:auto;"
     "justify-content:flex-start;scrollbar-width:none;padding-left:16px;padding-right:16px}"
@@ -383,6 +384,36 @@ def browse_card(leg, slugmap, cats, meta, show_cat, show_summary=False):
             + summary + '</a>')
 
 
+def collection_article_html(members, slugmap, cats, meta, featured_pages):
+    """Alternating image/summary rows for a collection's members — an editorial
+    'article' layout (image left/right on alternating rows) instead of a card grid."""
+    rows = []
+    for l in members:
+        name = l["name"]
+        href = BASE + "/" + OUT_DIR + "/" + slugmap[name]
+        cat = l.get("category", "")
+        colour = meta.get(cat, {}).get("colour", "#8b3a1a")
+        catname = cats.get(cat, cat)
+        img = featured_pages.get(name, {}).get("image", "")
+        summary = short_desc(l.get("summary", ""), 260)
+        media = ""
+        if img:
+            media = ('<div class="col-article-media">'
+                     f'<img src="{BASE}/{img.replace(os.sep, "/")}" alt="{esc(name)}" loading="lazy"/></div>')
+        region = (f'<span class="col-article-region">{esc(l.get("region", ""))}</span>'
+                  if l.get("region") else "")
+        rows.append(
+            '<a class="col-article" href="' + href + '">' + media
+            + '<div class="col-article-body">'
+            + f'<span class="col-article-cat" style="background:{esc(colour)}">{esc(catname)}</span>'
+            + f'<h3 class="col-article-name">{esc(name)}</h3>' + region
+            + f'<p class="col-article-summary">{esc(summary)}</p>'
+            + '<span class="col-article-more">Read the legend &#8594;</span>'
+            + '</div></a>'
+        )
+    return "\n".join(rows)
+
+
 BROWSE_STYLE = """
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent 25rem),linear-gradient(180deg,#e8dcc5,#f6f1e6 34rem,#eadfc9);color:#3f3023;font-family:'Spectral',serif;line-height:1.7;min-height:100vh}
@@ -422,12 +453,42 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 .pagination .gap{border:none;color:#5c4a2a;min-width:auto;padding:6px 2px}
 @media(max-width:900px){.wrap{width:calc(100% - 32px)}}
 @media(max-width:620px){.browse-grid{grid-template-columns:1fr}}
-.col-hero{position:relative;margin:0 0 20px;border-radius:2px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.25)}
-.col-hero img{display:block;width:100%;height:auto}
+.col-hero{position:relative;margin:12px 0 22px;border-radius:2px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.25)}
+.col-hero img{display:block;width:100%;height:clamp(170px,24vw,300px);object-fit:cover;object-position:center 38%}
 .col-hero-credit{position:absolute;right:10px;bottom:8px;font-size:10px;color:rgba(255,255,255,.85);background:rgba(0,0,0,.4);padding:2px 8px;border-radius:2px}
+/* Article layout: alternating image/summary rows for collection members */
+.col-articles{display:flex;flex-direction:column;gap:20px}
+.col-article{display:flex;align-items:stretch;background:rgba(246,241,230,.72);border:1px solid rgba(90,70,50,.28);text-decoration:none;color:#3f3023;overflow:hidden;box-shadow:inset 0 0 0 5px rgba(255,255,255,.14);transition:border-color .15s,transform .12s,box-shadow .15s}
+.col-article:hover{border-color:#c4622a;transform:translateY(-2px);box-shadow:0 10px 26px rgba(44,31,14,.14),inset 0 0 0 5px rgba(255,255,255,.14)}
+.col-article:nth-child(even){flex-direction:row-reverse}
+.col-article-media{flex:0 0 40%;position:relative;min-height:232px;background:#241a10}
+.col-article-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.col-article-body{flex:1 1 0;min-width:0;padding:24px 28px;display:flex;flex-direction:column;justify-content:center}
+.col-article-cat{align-self:flex-start;font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:#9d461f;padding:2px 9px;margin-bottom:9px}
+.col-article-name{font-family:'Marcellus',serif;font-weight:400;font-size:22px;line-height:1.15;color:#3f3023;margin-bottom:3px}
+.col-article-region{font-style:italic;font-size:12.5px;color:#5c4a2a}
+.col-article-summary{font-size:14.5px;color:#3a2c14;line-height:1.6;margin:10px 0 12px}
+.col-article-more{font-family:'Marcellus',serif;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#9d461f}
+.col-article:hover .col-article-more{color:#c4622a}
+@media(max-width:680px){.col-article,.col-article:nth-child(even){flex-direction:column}.col-article-media{flex-basis:auto;height:200px;min-height:0}.col-article-body{padding:18px 20px}.col-article-name{font-size:19px}}
+/* Collections index: editorial feature rows (alternating image/text) */
+.col-index{display:flex;flex-direction:column;gap:22px}
+.col-index-row{display:flex;align-items:stretch;background:rgba(246,241,230,.72);border:1px solid rgba(90,70,50,.28);text-decoration:none;color:#3f3023;overflow:hidden;box-shadow:inset 0 0 0 5px rgba(255,255,255,.14);transition:border-color .15s,transform .12s,box-shadow .15s}
+.col-index-row:hover{border-color:#c4622a;transform:translateY(-2px);box-shadow:0 12px 30px rgba(44,31,14,.16),inset 0 0 0 5px rgba(255,255,255,.14)}
+.col-index-row:nth-child(even){flex-direction:row-reverse}
+.col-index-media{flex:0 0 46%;position:relative;min-height:262px;background:#241a10}
+.col-index-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.col-index-body{flex:1 1 0;min-width:0;padding:28px 34px;display:flex;flex-direction:column;justify-content:center}
+.col-index-count{align-self:flex-start;font-family:'Marcellus',serif;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#9d461f;margin-bottom:10px}
+.col-index-name{font-family:'Marcellus',serif;font-weight:400;font-size:clamp(24px,2.5vw,32px);line-height:1.12;color:#3f3023;margin-bottom:10px}
+.col-index-intro{font-size:15px;color:#3a2c14;line-height:1.62;margin-bottom:14px}
+.col-index-more{font-family:'Marcellus',serif;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#9d461f}
+.col-index-row:hover .col-index-more{color:#c4622a}
+@media(max-width:680px){.col-index-row,.col-index-row:nth-child(even){flex-direction:column}.col-index-media{flex-basis:auto;height:212px;min-height:0}.col-index-body{padding:20px 22px}}
 .col-section{margin-top:38px}
 .col-section h2{font-family:'Marcellus',serif;font-size:20px;font-weight:400;color:#3f3023;margin-bottom:12px}
-.col-context{font-size:15.5px;color:#3f3023;max-width:780px;line-height:1.7}
+.col-context{font-size:15.5px;color:#3f3023;max-width:820px;line-height:1.7;margin:0 0 14px}
+.col-maplink{margin:2px 0 26px}
 .col-gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
 .col-gallery img{width:100%;height:110px;object-fit:cover;border-radius:2px;box-shadow:0 2px 8px rgba(0,0,0,.2)}
 .col-related{display:flex;flex-wrap:wrap;gap:8px}
@@ -464,7 +525,8 @@ def track_event_script(event_type, **fields):
 
 def build_browse_page(page_title, desc, url, h1, intro, crumb, nav_html, cards_html,
                       ogimage=None, jsonld=None, head_extra="", after_grid="", nav_active="browse",
-                      hero_html="", extra_sections="", after_intro="", wrap_class="", track_script=""):
+                      hero_html="", extra_sections="", after_intro="", wrap_class="", track_script="",
+                      top_nav_html="", grid_class="browse-grid"):
     jsonld_html = ('<script type="application/ld+json">' + jsonld + '</script>\n') if jsonld else ''
     page_breadcrumb = breadcrumb_list([
         ("Home", BASE + "/"),
@@ -498,10 +560,11 @@ def build_browse_page(page_title, desc, url, h1, intro, crumb, nav_html, cards_h
             '<a href="' + BASE + '/' + OUT_DIR + '/">All legends</a> &#8250; '
             '<span>' + esc(crumb) + '</span></nav>\n'
             '<h1 class="browse-h1">' + esc(h1) + '</h1>\n'
+            + top_nav_html
             + hero_html
             + '<p class="browse-intro">' + esc(intro) + '</p>\n'
             + after_intro
-            + nav_html + '\n<div class="browse-grid">\n' + cards_html
+            + nav_html + '\n<div class="' + grid_class + '">\n' + cards_html
             + '\n</div>\n' + after_grid + extra_sections
             + '<a class="back" href="' + BASE + '/' + OUT_DIR + '/">&#8592; Browse All Legends</a>\n'
             '</div>\n' + footer_html() + '\n' + track_script + '</body></html>')
@@ -742,7 +805,7 @@ FEATURED_PAGE = Template("""<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha384-sHL9NAb7lN7rfvG5lfHpm643Xkcjzp4jFvuavGOndn6pjVqS6ny56CAt3nsEVT4H" crossorigin="anonymous"/>
-<link rel="stylesheet" href="/legend-page.css?v=20260707e"/>
+<link rel="stylesheet" href="/legend-page.css?v=20260707f"/>
 <script type="application/ld+json">$jsonld</script>
 $breadcrumb_jsonld
 </head>
@@ -1193,14 +1256,23 @@ def build():
     # "Part of these Collections" sidebar and the collection pages themselves
     # (below) use the same qualifying set (>= MIN_COLLECTION members).
     collections = load_collections()
-    collection_members = []  # (col, members) for collections with enough entries
+    legends_by_name = {l["name"]: l for l in legends}
+    collection_members = []  # (col, members) for collections that qualify
     for col in collections:
-        members = sorted(
-            (l for l in legends if matches_collection(l, col.get("match", {}))),
-            key=lambda l: l["name"].lower(),
-        )
-        if len(members) >= MIN_COLLECTION:
+        explicit = col.get("members")
+        if explicit is not None:
+            # Hand-curated membership (from the review worksheet): use the exact
+            # list, in the given order, and always render it — the curator chose
+            # these deliberately, so the MIN_COLLECTION gate does not apply.
+            members = [legends_by_name[n] for n in explicit if n in legends_by_name]
             collection_members.append((col, members))
+        else:
+            members = sorted(
+                (l for l in legends if matches_collection(l, col.get("match", {}))),
+                key=lambda l: l["name"].lower(),
+            )
+            if len(members) >= MIN_COLLECTION:
+                collection_members.append((col, members))
     legend_collections_map = {}
     for col, members in collection_members:
         for l in members:
@@ -1463,10 +1535,7 @@ def build():
                 start = (page_no - 1) * COLLECTION_PER_PAGE
                 page_members = members[start:start + COLLECTION_PER_PAGE]
                 url = collection_page_url(slug, page_no)
-                cards = "\n".join(
-                    browse_card(l, slugmap, cats, meta, show_cat=True, show_summary=True)
-                    for l in page_members
-                )
+                cards = collection_article_html(page_members, slugmap, cats, meta, featured_pages)
                 # Page 2+ get a "(page N of M)" suffix in title/intro for clarity.
                 page_tag = "" if total_pages == 1 else f" (page {page_no} of {total_pages})"
                 member_images = [
@@ -1511,9 +1580,13 @@ def build():
                 if page_no < total_pages:
                     rel_links += f'<link rel="next" href="{collection_page_url(slug, page_no + 1)}"/>\n'
 
-                # Richer editorial content (hero image, context, gallery, related
-                # collections, resources) — only on page 1; later pages stay plain.
-                hero_html, extra_sections = "", ""
+                # Editorial content on page 1 only: a compact hero, the collection's
+                # context folded into the summary, and any further-reading resources
+                # after the article rows. The "browse other collections" nav now sits
+                # at the top (top_nav_html), and each member's own image appears in
+                # its article row, so the old gallery / related-collections sections
+                # are dropped as redundant.
+                hero_html, extra_sections, context_html = "", "", ""
                 if page_no == 1:
                     if hero_path:
                         hero_credit_html = (
@@ -1525,42 +1598,22 @@ def build():
                             f'<img src="{BASE}/{hero_path.replace(os.sep, "/")}" alt="{esc(col["title"])}"/>'
                             f'{hero_credit_html}</div>\n'
                         )
-
-                    sections = []
                     if col.get("context"):
-                        sections.append(
-                            '<section class="col-section"><h2>Historical &amp; Cultural Context</h2>'
-                            f'<p class="col-context">{esc(col["context"])}</p></section>'
-                        )
-                    gallery_images = member_images[:8]
-                    if gallery_images:
-                        imgs = "".join(
-                            f'<img src="{BASE}/{p.replace(os.sep, "/")}" alt=""/>' for p in gallery_images
-                        )
-                        sections.append(
-                            f'<section class="col-section"><h2>Gallery</h2><div class="col-gallery">{imgs}</div></section>'
-                        )
-                    related_slugs = col.get("related_collections") or []
-                    related_titles = {c["slug"]: c["title"] for c, _ in resolved}
-                    related_links = "".join(
-                        f'<a href="{collection_page_url(rs, 1)}">{esc(related_titles[rs])}</a>'
-                        for rs in related_slugs if rs in related_titles
-                    )
-                    if related_links:
-                        sections.append(
-                            f'<section class="col-section"><h2>Related Collections</h2><div class="col-related">{related_links}</div></section>'
-                        )
+                        context_html = f'<p class="col-context">{esc(col["context"])}</p>\n'
                     resources = col.get("resources") or []
                     if resources:
                         items = "".join(
                             f'<li><a href="{esc(r["url"])}" target="_blank" rel="noopener">{esc(r["label"])} &#8594;</a></li>'
                             for r in resources
                         )
-                        sections.append(
-                            f'<section class="col-section"><h2>Further Resources</h2><ul class="col-resources">{items}</ul></section>'
+                        extra_sections = (
+                            '<section class="col-section"><h2>Further Resources</h2>'
+                            f'<ul class="col-resources">{items}</ul></section>'
                         )
-                    extra_sections = "".join(sections)
 
+                map_link = (f'<p class="col-maplink"><a class="back" '
+                            f'href="{BASE}/map?collection={esc(slug)}">'
+                            f'View this collection on the Map &#8594;</a></p>\n')
                 page = build_browse_page(
                     page_title=f"{col['title']}{page_tag} — Folklore Finder",
                     desc=desc,
@@ -1568,15 +1621,17 @@ def build():
                     h1=col["title"],
                     intro=col["intro"],
                     crumb=col["title"] + page_tag,
-                    nav_html=nav_links(col_nav_items, slug),
+                    nav_html="",
+                    top_nav_html=nav_links(col_nav_items, slug),
                     cards_html=cards,
+                    grid_class="col-articles",
                     jsonld=collection_jsonld,
                     head_extra=rel_links,
                     after_grid=pagination_html(slug, page_no, total_pages),
                     nav_active="collections",
                     hero_html=hero_html,
                     extra_sections=extra_sections,
-                    after_intro=f'<p style="margin:-8px 0 20px"><a class="back" href="{BASE}/map?collection={esc(slug)}">View this collection on the Map &#8594;</a></p>\n',
+                    after_intro=context_html + map_link,
                     wrap_class="ornamented",
                     track_script=track_event_script("collection_viewed", collection_slug=slug),
                 )
@@ -1592,11 +1647,22 @@ def build():
             land_cards = []
             for col, members in resolved:
                 curl = collection_page_url(col["slug"], 1)
+                rep = col.get("hero_image") or next(
+                    (featured_pages[m["name"]]["image"] for m in members
+                     if featured_pages.get(m["name"], {}).get("image")), "")
+                media = (
+                    '<div class="col-index-media">'
+                    f'<img src="{BASE}/{rep.replace(os.sep, "/")}" alt="{esc(col["title"])}" loading="lazy"/></div>'
+                    if rep else ""
+                )
                 land_cards.append(
-                    f'<a class="b-card" href="{curl}">'
-                    f'<span class="b-name">{esc(col["title"])}</span>'
-                    f'<span class="b-region">{len(members)} legends</span>'
-                    f'<span class="b-summary">{esc(col["intro"])}</span></a>'
+                    f'<a class="col-index-row" href="{curl}">' + media
+                    + '<div class="col-index-body">'
+                    + f'<span class="col-index-count">{len(members)} legends</span>'
+                    + f'<h2 class="col-index-name">{esc(col["title"])}</h2>'
+                    + f'<p class="col-index-intro">{esc(short_desc(col["intro"], 210))}</p>'
+                    + '<span class="col-index-more">Explore the collection &#8594;</span>'
+                    + '</div></a>'
                 )
             land_jsonld = json.dumps({
                 "@context": "https://schema.org",
@@ -1628,6 +1694,7 @@ def build():
                 crumb="Collections",
                 nav_html="",
                 cards_html="\n".join(land_cards),
+                grid_class="col-index",
                 jsonld=land_jsonld,
                 nav_active="collections",
                 wrap_class="ornamented",

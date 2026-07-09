@@ -16,3 +16,7 @@ gsc-service-account.json
 gsc-oauth-client.json
 gsc-token.json
 search-insights/
+
+# Local curation worksheets — personal guides for directing collection /
+# achievement creation, not site content. Never committed.
+*-review.xlsx

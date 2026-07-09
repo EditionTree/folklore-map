@@ -6496,6 +6496,441 @@
         "Setting": "Suffolk",
         "Motif": "Otherworldly encounter"
       }
+    },
+    "Gruagach": {
+      "priority": 434,
+      "image": "legend-images/gruagach-hero-v2.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Gruagach, shown as the central fairy, spirit, or otherworldly presence from Hebrides, Scotland",
+      "caption": "A visual interpretation of Gruagach",
+      "map_title": "Hebrides, Scotland",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "A long-haired guardian spirit of Highland byres: leave a nightly bowl of milk on her hollowed \"gruagach stone\", or wake to find the cattle loose —...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Hebrides, Scotland",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "Gwragedd Annwn": {
+      "priority": 435,
+      "image": "legend-images/gwragedd-annwn-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Gwragedd Annwn, shown as the central fairy, spirit, or otherworldly presence from Llyn Barfog, Gwynedd, Wales",
+      "caption": "A visual interpretation of Gwragedd Annwn",
+      "map_title": "Llyn Barfog, Gwynedd, Wales",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "The Gwragedd Annwn, or Wives of the Underworld, are beautiful lake-dwelling fairies of Welsh tradition. They emerge from mountain lakes to marry...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Llyn Barfog, Gwynedd, Wales",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "Habetrot": {
+      "priority": 436,
+      "image": "legend-images/habetrot-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Habetrot, shown as the central fairy, spirit, or otherworldly presence from Selkirkshire, Scottish Borders, Scotland",
+      "caption": "A visual interpretation of Habetrot",
+      "map_title": "Selkirkshire, Scottish Borders, Scotland",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "A grotesque but benevolent fairy spinner from the Scottish Borders — queen of the spindle — who helps young women complete impossible spinning tasks...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Selkirkshire, Scottish Borders, Scotland",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "Hob Hole, Runswick Bay": {
+      "priority": 437,
+      "image": "legend-images/hob-hole-runswick-bay-hero-v2.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Hob Hole, Runswick Bay, shown as the central fairy, spirit, or otherworldly presence from Runswick Bay, North Yorkshire",
+      "caption": "A visual interpretation of Hob Hole, Runswick Bay",
+      "map_title": "Runswick Bay, North Yorkshire",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "A hob was said to inhabit a cave at Runswick Bay. Local parents brought children suffering from whooping cough to the Hob Holes and called on the...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Runswick Bay, North Yorkshire",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "Hyter Sprite": {
+      "priority": 438,
+      "image": "legend-images/hyter-sprite-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Hyter Sprite, shown as the central fairy, spirit, or otherworldly presence from East Anglia",
+      "caption": "A visual interpretation of Hyter Sprite",
+      "map_title": "East Anglia",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "A shape-shifting spirit of the East Anglian fens, capable of taking the form of a sand martin. Hyter sprites could restore lost children to their...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "East Anglia",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "Knocker": {
+      "priority": 439,
+      "image": "legend-images/knocker-hero-v2.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Knocker, shown as the central fairy, spirit, or otherworldly presence from Cornwall",
+      "caption": "A visual interpretation of Knocker",
+      "map_title": "Cornwall",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "Mine spirits whose tapping warned Cornish miners of danger, rich seams, or unseen company in the dark. They could be helpful if respected and...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Cornwall",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "Latoon Fairy Bush": {
+      "priority": 440,
+      "image": "legend-images/latoon-fairy-bush-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Latoon Fairy Bush, shown as the central fairy, spirit, or otherworldly presence from Ireland",
+      "caption": "A visual interpretation of Latoon Fairy Bush",
+      "map_title": "Ireland",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "A lone whitethorn bush beside the M18 motorway in County Clare, rescued from the road-builders in 1999 when folklore scholar Eddie Lenihan argued it...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Ireland",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "Llyn Cwm Llwch": {
+      "priority": 441,
+      "image": "legend-images/llyn-cwm-llwch-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Llyn Cwm Llwch, shown as the central fairy, spirit, or otherworldly presence from Bannau Brycheiniog, Powys",
+      "caption": "A visual interpretation of Llyn Cwm Llwch",
+      "map_title": "Bannau Brycheiniog, Powys",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "A Welsh tradition says that an enchanted island appeared on Llyn Cwm Llwch each May Day, welcoming visitors into a fairy realm. When a visitor stole...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Bannau Brycheiniog, Powys",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "Loireag of Benbecula": {
+      "priority": 442,
+      "image": "legend-images/loireag-of-benbecula-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Loireag of Benbecula, shown as the central fairy, spirit, or otherworldly presence from Benbecula, Outer Hebrides, Scotland",
+      "caption": "A visual interpretation of Loireag of Benbecula",
+      "map_title": "Benbecula, Outer Hebrides, Scotland",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "The weaving fairy of the Hebrides — 'a plaintive little thing, stubborn and cunning' — who presided over the spinning and waulking of cloth and...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Benbecula, Outer Hebrides, Scotland",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "Ly Erg": {
+      "priority": 443,
+      "image": "legend-images/ly-erg-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Ly Erg, shown as the central fairy, spirit, or otherworldly presence from Scotland",
+      "caption": "A visual interpretation of Ly Erg",
+      "map_title": "Scotland",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "A solitary Scottish Highland fairy — neither beautiful nor monstrous — who appears as a soldier with a blood-stained hand on lonely roads. To shake...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Scotland",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "Malekin of Dagworth": {
+      "priority": 444,
+      "image": "legend-images/malekin-of-dagworth-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Malekin of Dagworth, shown as the central fairy, spirit, or otherworldly presence from Dagworth, Suffolk, England",
+      "caption": "A visual interpretation of Malekin of Dagworth",
+      "map_title": "Dagworth, Suffolk, England",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "In the 1190s at Dagworth manor in Suffolk, a small invisible being called Malekin haunted the household, claiming to be a human child stolen from...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Dagworth, Suffolk, England",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "Maoveen, the Banshee of Shane’s Castle": {
+      "priority": 445,
+      "image": "legend-images/maoveen-the-banshee-of-shanes-castle-hero-v2.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Maoveen, the Banshee of Shane’s Castle, shown as the central fairy, spirit, or otherworldly presence from Randalstown, County Antrim, Northern Ireland",
+      "caption": "A visual interpretation of Maoveen, the Banshee of Shane’s Castle",
+      "map_title": "Randalstown, County Antrim, Northern Ireland",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "Maoveen — ‘little Mab’ — is the O’Neill family banshee, bound to wail at Shane’s Castle on Lough Neagh before every clan death; legend holds she...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Randalstown, County Antrim, Northern Ireland",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "Robert Kirk of Doon Hill": {
+      "priority": 446,
+      "image": "legend-images/robert-kirk-of-doon-hill-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Robert Kirk of Doon Hill, shown as the central fairy, spirit, or otherworldly presence from Stirlingshire, Scotland",
+      "caption": "A visual interpretation of Robert Kirk of Doon Hill",
+      "map_title": "Stirlingshire, Scotland",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "The minister who wrote down fairy secrets was spirited away to Doon Hill in 1692 — his body found on the hill, his spirit said to serve forever as...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Stirlingshire, Scotland",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "Robin Goodfellow": {
+      "priority": 447,
+      "image": "legend-images/robin-goodfellow-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Robin Goodfellow, shown as the central fairy, spirit, or otherworldly presence from England",
+      "caption": "A visual interpretation of Robin Goodfellow",
+      "map_title": "England",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "A puckish household and woodland spirit, prankster, shape-shifter, and night-wanderer. Robin Goodfellow links older English fairy belief to the...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "England",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "Seelie Court": {
+      "priority": 448,
+      "image": "legend-images/seelie-court-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Seelie Court, shown as the central fairy, spirit, or otherworldly presence from Scotland",
+      "caption": "A visual interpretation of Seelie Court",
+      "map_title": "Scotland",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "The blessed court of Scottish fairy tradition — benevolent fae who sometimes aided humans, but whose goodwill was never entirely safe. They moved...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Scotland",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "Shellycoat": {
+      "priority": 449,
+      "image": "legend-images/shellycoat-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Shellycoat, shown as the central fairy, spirit, or otherworldly presence from Lowland Scotland",
+      "caption": "A visual interpretation of Shellycoat",
+      "map_title": "Lowland Scotland",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "A Scottish bogle draped in shells that rattle with every movement. It haunts streams and rivers, delighting in leading travellers astray with...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Lowland Scotland",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "Simonside Dwarfs": {
+      "priority": 450,
+      "image": "legend-images/simonside-dwarfs-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Simonside Dwarfs, shown as the central fairy, spirit, or otherworldly presence from Northumberland",
+      "caption": "A visual interpretation of Simonside Dwarfs",
+      "map_title": "Northumberland",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "Dwarf-like beings said to lure night travellers across the Simonside Hills with false lights. Follow them too far and the moor becomes a trap with no...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Northumberland",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "Spriggan": {
+      "priority": 451,
+      "image": "legend-images/spriggan-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Spriggan, shown as the central fairy, spirit, or otherworldly presence from Cornwall",
+      "caption": "A visual interpretation of Spriggan",
+      "map_title": "Cornwall",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "Ugly, fierce Cornish fae said to guard buried treasure, ruins, and ancient places. Though small at first glance, spriggans can swell into giant forms...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Cornwall",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "Tam Lin": {
+      "priority": 452,
+      "image": "legend-images/tam-lin-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Tam Lin, shown as the central fairy, spirit, or otherworldly presence from Carterhaugh, Selkirkshire, Scotland",
+      "caption": "A visual interpretation of Tam Lin",
+      "map_title": "Carterhaugh, Selkirkshire, Scotland",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "At Carterhaugh a young man stolen by the Fairy Queen begs Janet to save him: hold fast as they turn him to beast and burning brand on Halloween, and...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Carterhaugh, Selkirkshire, Scotland",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "The Cottingley Fairies": {
+      "priority": 453,
+      "image": "legend-images/the-cottingley-fairies-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of The Cottingley Fairies, shown as the central fairy, spirit, or otherworldly presence from Cottingley, West Yorkshire",
+      "caption": "A visual interpretation of The Cottingley Fairies",
+      "map_title": "Cottingley, West Yorkshire",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "In 1917 two Yorkshire girls photographed themselves with 'fairies' by a beck at Cottingley; the pictures fooled Sir Arthur Conan Doyle and the world...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Cottingley, West Yorkshire",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "The Hedley Kow": {
+      "priority": 454,
+      "image": "legend-images/the-hedley-kow-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of The Hedley Kow, shown as the central fairy, spirit, or otherworldly presence from Hedley on the Hill, Northumberland",
+      "caption": "A visual interpretation of The Hedley Kow",
+      "map_title": "Hedley on the Hill, Northumberland",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "A shape-shifting Northumberland bogie that turned itself into straw, cattle or a pot of changing treasure to bamboozle country folk, then vanished...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Hedley on the Hill, Northumberland",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "The Hunt of Slieve Gullion": {
+      "priority": 455,
+      "image": "legend-images/the-hunt-of-slieve-gullion-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of The Hunt of Slieve Gullion, shown as the central fairy, spirit, or otherworldly presence from Slieve Gullion, County Armagh, Northern Ireland",
+      "caption": "A visual interpretation of The Hunt of Slieve Gullion",
+      "map_title": "Slieve Gullion, County Armagh, Northern Ireland",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "Milucra — a fairy woman jealous of her sister's hold over Fionn mac Cumhaill — enchanted the summit lake of Slieve Gullion so that anyone who swam in...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Slieve Gullion, County Armagh, Northern Ireland",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "The Lady of the Lake": {
+      "priority": 456,
+      "image": "legend-images/the-lady-of-the-lake-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of The Lady of the Lake, shown as the central fairy, spirit, or otherworldly presence from Llyn Llydaw, Snowdonia, Wales",
+      "caption": "A visual interpretation of The Lady of the Lake",
+      "map_title": "Llyn Llydaw, Snowdonia, Wales",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "The hand that rose from the water to give Arthur Excalibur — and reached up to take it back as he died. The enchantress who raised Lancelot and...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Llyn Llydaw, Snowdonia, Wales",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "The Piper's Cave of Arran": {
+      "priority": 457,
+      "image": "legend-images/the-piper-s-cave-of-arran-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of The Piper's Cave of Arran, shown as the central fairy, spirit, or otherworldly presence from Isle of Arran, Argyll, Scotland",
+      "caption": "A visual interpretation of The Piper's Cave of Arran",
+      "map_title": "Isle of Arran, Argyll, Scotland",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "A piper went into the King's Cave at Blackwaterfoot to pipe his way through its endless passage, his dog at his heel. His music faded to a despairing...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Isle of Arran, Argyll, Scotland",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "Tiddy Mun": {
+      "priority": 458,
+      "image": "legend-images/tiddy-mun-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Tiddy Mun, shown as the central fairy, spirit, or otherworldly presence from Lincolnshire",
+      "caption": "A visual interpretation of Tiddy Mun",
+      "map_title": "Lincolnshire",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "A small shaggy spirit of the Lincolnshire marshes who controlled the fenland floods. When the land was drained, he brought sickness until appeased by...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Lincolnshire",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "Unseelie Court": {
+      "priority": 459,
+      "image": "legend-images/unseelie-court-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Unseelie Court, shown as the central fairy, spirit, or otherworldly presence from Scotland",
+      "caption": "A visual interpretation of Unseelie Court",
+      "map_title": "Scotland",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "The dark host of Scottish fairy lore — malevolent fae who needed no reason to harm mortals. They flew through the winter night as the Sluagh, pelting...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Scotland",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "Urisk": {
+      "priority": 460,
+      "image": "legend-images/urisk-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Urisk, shown as the central fairy, spirit, or otherworldly presence from Scottish Highlands, Scotland",
+      "caption": "A visual interpretation of Urisk",
+      "map_title": "Scottish Highlands, Scotland",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "Half-human, half-goat and utterly solitary, the Urisk haunts Highland waterfalls and lonely corries — a wild spirit who may help a crofter with...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Scottish Highlands, Scotland",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "Yallery Brown": {
+      "priority": 461,
+      "image": "legend-images/yallery-brown-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Yallery Brown, shown as the central fairy, spirit, or otherworldly presence from Lincolnshire",
+      "caption": "A visual interpretation of Yallery Brown",
+      "map_title": "Lincolnshire",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "A tiny, wizened creature with yellow-brown skin found pinned beneath a flat stone in the Lincolnshire fens. When freed, he offered to help with a...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Lincolnshire",
+        "Motif": "Otherworldly encounter"
+      }
+    },
+    "Étaín": {
+      "priority": 462,
+      "image": "legend-images/etain-hero.jpg",
+      "alt": "A cinematic fae and spirit folklore image of Étaín, shown as the central fairy, spirit, or otherworldly presence from Brí Léith (Ardagh Hill), County Longford, Ireland",
+      "caption": "A visual interpretation of Étaín",
+      "map_title": "Brí Léith (Ardagh Hill), County Longford, Ireland",
+      "section_heading": "The otherworld at the heart of the tale",
+      "pullquote": "Turned into a fly and scattered across Ireland for a thousand years by a jealous rival, Étaín was reborn a mortal queen — until her otherworldly...",
+      "facts": {
+        "Tradition": "Fae and spirit folklore",
+        "Type": "Fairy or spirit",
+        "Setting": "Brí Léith (Ardagh Hill), County Longford, Ireland",
+        "Motif": "Otherworldly encounter"
+      }
     }
   }
 }

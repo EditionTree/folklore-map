@@ -598,7 +598,7 @@ footer a{color:var(--ink-light)}
 .topnav a.active{color:var(--accent-warm)}
 @media(max-width:640px){.topnav{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;scrollbar-width:none}.topnav::-webkit-scrollbar{display:none}.topnav a{flex:0 0 auto;white-space:nowrap}}
 </style>
-<link rel="stylesheet" href="folklorefinder.css?v=20260707e"/>
+<link rel="stylesheet" href="folklorefinder.css?v=20260707f"/>
 </head>
 <body class="ff-paper home-page">
 <nav class="topnav">
@@ -654,15 +654,19 @@ footer a{color:var(--ink-light)}
         </div>
       </a>
       <a class="lotw-maplink" id="lotwMapLink" href="./map">Show on the map &#8594;</a>
-
-      <div class="hero-submit-cta">
-        <button class="hero-submit-close" type="button" aria-label="Hide submit a legend prompt">&times;</button>
-        <p class="hero-submit-lead">Know a legend we've missed?</p>
-        <a class="hero-submit-link" href="./map?submit=1">Submit a legend &#8594;</a>
-      </div>
     </aside>
   </div>
 </section>
+
+<!-- Submit-a-legend prompt: kept a direct child of <body> so its position:fixed
+     anchors to the viewport's top-right. Inside .hero-feature it was mispositioned
+     because that box is transformed (translateX), which makes a transformed
+     ancestor the containing block for fixed descendants. -->
+<div class="hero-submit-cta">
+  <button class="hero-submit-close" type="button" aria-label="Hide submit a legend prompt">&times;</button>
+  <p class="hero-submit-lead">Know a legend we've missed?</p>
+  <a class="hero-submit-link" href="./map?submit=1">Submit a legend &#8594;</a>
+</div>
 
 <footer>Folklore Finder &nbsp;&#183;&nbsp; An atlas of myths, legends, &amp; stories &nbsp;&#183;&nbsp; &copy; EditionTree &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/about">About</a> &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/updates">Updates</a> &nbsp;&#183;&nbsp; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener">Ko-fi</a> &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/privacy">Privacy</a></footer>
 

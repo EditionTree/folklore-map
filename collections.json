@@ -5,61 +5,454 @@
       "slug": "black-dogs",
       "title": "Black Dogs of Britain & Ireland",
       "intro": "Across the islands a great spectral hound haunts the lonely lane, the churchyard and the parish boundary — Black Shuck in East Anglia, the Barghest of the north, the Cù Sìth of the Highlands. Almost always larger than any living dog, with eyes like coals, it is most often an omen: to meet its gaze was said to foretell a death within the year.",
-      "match": { "all": [ { "tags_any": ["dog"] }, { "tags_any": ["black", "spectral", "death-omen"] } ] },
+      "match": {
+        "all": [
+          {
+            "tags_any": [
+              "dog"
+            ]
+          },
+          {
+            "tags_any": [
+              "black",
+              "spectral",
+              "death-omen"
+            ]
+          }
+        ]
+      },
       "context": "Black dog apparitions are recorded across England, Wales, Scotland and Ireland under many local names, and folklorists have long noted the family resemblance between them despite the distances involved. Theories for the tradition's spread range from a shared Norse and Brythonic memory of guardian or psychopomp animals to the more mundane fact that lonely roads, churchyards and boundary paths were where travellers were most likely to frighten themselves after dark. Written accounts thicken from the 16th century onward, but the tradition's oral roots are almost certainly older than any surviving record.",
-      "related_collections": ["haunted-churches", "legends-of-the-sea", "cursed-places"],
+      "related_collections": [
+        "haunted-churches",
+        "legends-of-the-sea",
+        "cursed-places"
+      ],
       "resources": [
-        { "label": "Black Shuck — Wikipedia", "url": "https://en.wikipedia.org/wiki/Black_Shuck" },
-        { "label": "Black dog (folklore) — Wikipedia", "url": "https://en.wikipedia.org/wiki/Black_dog_(folklore)" }
+        {
+          "label": "Black Shuck — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Black_Shuck"
+        },
+        {
+          "label": "Black dog (folklore) — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Black_dog_(folklore)"
+        }
+      ],
+      "members": [
+        "Barghest",
+        "Black Dog of Bouley Bay",
+        "Black Shuck",
+        "Church Grim",
+        "Dando's Dogs",
+        "Gwyllgi",
+        "La Bête De La Tour",
+        "Macphie and the Black Dog of Colonsay",
+        "Moddey Dhoo",
+        "Padfoot",
+        "Tchico",
+        "The Black Dog of Newgate",
+        "The Girt Dog of Ennerdale",
+        "Tyrell's Hound"
       ]
     },
     {
-      "slug": "arthurian-places",
-      "title": "Arthurian Places",
+      "slug": "arthurian-britain",
+      "title": "Arthurian Britain",
       "intro": "The legend of Arthur is rooted in real landscape long before it reached the page. Hills where he is said to sleep, caves that hide his knights, stones marking battles and the lakes that swallowed Excalibur are scattered from Cornwall to the Scottish Lowlands, woven through Welsh tradition and the older Brythonic past from which the cycle grew.",
-      "match": { "tags_any": ["arthurian"] },
+      "match": {
+        "tags_any": [
+          "arthurian"
+        ]
+      },
       "context": "The earliest Arthurian material appears in Welsh and Latin sources — Y Gododdin, the Historia Brittonum, and later Geoffrey of Monmouth's Historia Regum Britanniae — centuries before the French romances that gave the cycle Lancelot, the Grail and much of its familiar shape. Because those early sources are sparse on geography, local tradition filled the gaps: almost every region of Britain eventually claimed a hill, cave or battlefield as genuinely Arthur's, and many of those claims are now folklore in their own right, independent of anything in the medieval texts.",
-      "related_collections": ["standing-stones", "cursed-places"],
+      "related_collections": [
+        "standing-stones",
+        "cursed-places"
+      ],
       "resources": [
-        { "label": "Matter of Britain — Wikipedia", "url": "https://en.wikipedia.org/wiki/Matter_of_Britain" },
-        { "label": "Historia Regum Britanniae — Wikipedia", "url": "https://en.wikipedia.org/wiki/Historia_Regum_Britanniae" }
+        {
+          "label": "Matter of Britain — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Matter_of_Britain"
+        },
+        {
+          "label": "Historia Regum Britanniae — Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Historia_Regum_Britanniae"
+        }
+      ],
+      "members": [
+        "Afanc",
+        "Alderley Edge",
+        "Avalon",
+        "Bossiney Castle",
+        "Caerleon",
+        "Camelot",
+        "Castle Downs, Cornwall",
+        "Chalice Well",
+        "Craig y Ddinas",
+        "Dinas Emrys",
+        "Dozmary Pool",
+        "Fionn mac Cumhaill",
+        "Gawain",
+        "Glastonbury Tor",
+        "Guinevere's Grave at Meigle",
+        "King Arthur",
+        "Lancelot",
+        "Llyn Barfog",
+        "Mabon ap Modron",
+        "Martin Mere",
+        "Merlin",
+        "Merlin's Cave",
+        "Merlin's Oak",
+        "Mordred",
+        "Morgan le Fay",
+        "Nanteos Cup",
+        "Pwyll, Prince of Dyfed",
+        "Rhitta Gawr",
+        "Sir Bedivere",
+        "Sir Galahad",
+        "Sir Kay",
+        "Sir Percival",
+        "Stonehenge",
+        "The Green Knight",
+        "The Lady of the Lake",
+        "The Loe",
+        "Tintagel",
+        "Tintagel Castle",
+        "Twrch Trwyth",
+        "Uther Pendragon and Pendragon Castle",
+        "Waun Mawn",
+        "Winchester Round Table",
+        "Y Ddraig Goch",
+        "Ynys Enlli",
+        "Ysbaddaden"
       ]
     },
     {
       "slug": "haunted-churches",
       "title": "Haunted Churches & Churchyards",
       "intro": "Consecrated ground draws its own folklore: the grim that guards the first grave, the phantom of a wronged priest, bells that toll for the drowned, and devils held back at the threshold. These traditions cluster where the parish church met older beliefs about the dead, the boundary and what walks after dark.",
-      "match": { "all": [ { "tags_any": ["church"] }, { "tags_any": ["haunting", "spectral", "curse", "death-omen"] } ] }
+      "match": {
+        "all": [
+          {
+            "tags_any": [
+              "church"
+            ]
+          },
+          {
+            "tags_any": [
+              "haunting",
+              "spectral",
+              "curse",
+              "death-omen"
+            ]
+          }
+        ]
+      },
+      "context": "Churches and their yards sit where the living and the dead meet, and folklore populates them accordingly — church grims and guardian animals said to protect newly consecrated ground, drummer and phantom ghosts, corpse-lights and boundary hauntings. Many of these traditions preserve older beliefs about consecrated ground, burial custom and the restless dead.",
+      "members": [
+        "Angelystor",
+        "Bardney Abbey and the Light of Oswald",
+        "Black Shuck",
+        "Brother Simon of Swineshead",
+        "Church Grim",
+        "Dunwich: The Drowned City Bells",
+        "Hundeprest of Melrose",
+        "Oran of Iona",
+        "Spectre of Newby Church",
+        "St Trinian's Church",
+        "The Black Dog of Newgate",
+        "The Buggane of St Trinian's",
+        "The Witch of East Somerton",
+        "Witch's Stone of Westleton"
+      ]
     },
     {
       "slug": "legends-of-the-sea",
       "title": "Legends of the Sea & Shore",
       "intro": "The coast and the deep water hold their own company — mermaids and selkies, drowned bells and sunken lands, the ghost ships and warning lights of the wrecking coasts. These are the stories of communities that lived by a sea that gave and took in equal measure, and of the shoreline as a threshold between worlds.",
-      "match": { "tags_any": ["sea", "coast"] }
+      "match": {
+        "tags_any": [
+          "sea",
+          "coast"
+        ]
+      },
+      "context": "The coasts of Britain and Ireland gave rise to a distinctive body of maritime folklore — mermaids and selkies, sea monsters and phantom ships, storm-witches who sold fair winds, drowned bells and lost lands beneath the waves. Such tales carried the hopes and fears of communities whose livelihoods, and often their lives, depended on an unpredictable sea.",
+      "members": [
+        "Ben Varrey",
+        "Bessie Millie of Stromness",
+        "Black Dog of Bouley Bay",
+        "Black Eric of Shetland",
+        "Blackbeard",
+        "Bucca",
+        "Cailleach Bhéara",
+        "Cantre'r Gwaelod",
+        "Ceasg",
+        "Cormoran, the Giant of St Michael's Mount",
+        "Crodh Mara",
+        "Cruel Coppinger",
+        "Daniel Fall, the Pirate of the Norfolk Coast",
+        "Dunwich: The Drowned City Bells",
+        "Dòideag of Mull",
+        "Eustace the Monk",
+        "Finfolk",
+        "Francis Drake",
+        "Giant's Causeway",
+        "Glashtyn",
+        "Grace O'Malley",
+        "Great Silkie of Sule Skerry",
+        "Gulf of Corryvreckan",
+        "Hard Apple Blyth, the Smuggler of Paglesham",
+        "Hartlepool Monkey",
+        "Hy-Brasil",
+        "Inishbofin White Cow",
+        "Isaac Gulliver",
+        "Jack Rattenbury",
+        "Jack Ward",
+        "Janet Forsyth, the Westray Storm Witch",
+        "Jingling Geordie's Hole",
+        "John Callis, Welsh Pirate",
+        "John Carter, the King of Prussia",
+        "Lady Mary Killigrew",
+        "Le Roi des Auxcriniers",
+        "Llanddona Witches",
+        "Lí Ban of Lough Neagh",
+        "MacKinnon's Cave",
+        "Manannán mac Lir",
+        "Marool",
+        "Mermaid of Benbecula",
+        "Mermaid of Marden",
+        "Mersey Mermaid",
+        "Morgawrr",
+        "Nodens",
+        "Nuckelavee",
+        "Old Moll of Brandy Cove",
+        "Orkneyinga Saga",
+        "Ruari Mòr MacNeil of Barra",
+        "Sack of Baltimore",
+        "Sea Mither",
+        "Selkies of Orkney",
+        "Seonaidh",
+        "St Helier",
+        "Stoor Worm",
+        "Tehi Tegi",
+        "Teran",
+        "Thanet Sea Monster",
+        "The Giant Bica of Llangrannog",
+        "The Hawkhurst Gang",
+        "The Pirates of Dollar Bay",
+        "The Selkie",
+        "The Towans",
+        "Tintagel",
+        "Tintagel Castle",
+        "Tyno Helig",
+        "Tír na nÓg",
+        "Vanishing Keepers of the Flannan Isles",
+        "Veasta",
+        "Wild Man of Orford",
+        "William Owen, the Smuggler General of Pembrokeshire",
+        "Yawkins, the Galloway Smuggler"
+      ]
     },
     {
       "slug": "cursed-places",
       "title": "Cursed Places & Ill-Fated Stones",
       "intro": "Some places carry a warning. A stone that must not be moved, a treasure that cannot be lifted, a family doom or a blight laid on a hall — the curse explains misfortune and enforces a boundary the living are not meant to cross. Many attach to tombs, boundary stones and disturbed ground.",
-      "match": { "tags_any": ["curse"] }
+      "match": {
+        "tags_any": [
+          "curse"
+        ]
+      },
+      "context": "Across the islands certain stones, houses and stretches of ground carry a reputation for misfortune — from stones that must not be moved to sites blighted by a saint's or a witch's curse. Such traditions often encode real anxieties about disturbing the dead, breaking an oath, or trespassing on ground held sacred or taboo.",
+      "members": [
+        "Agnes Waterhouse",
+        "Avebury",
+        "Bedd Dorti, the Witch's Grave",
+        "Chûn Quoit",
+        "Doom Bar",
+        "Gulf of Corryvreckan",
+        "Gunby Hall Ghost Walk",
+        "Labbacallee wedge tomb",
+        "Llanddona Witches",
+        "Maggie Wall",
+        "Major Thomas Weir",
+        "Museum of Witchcraft and Magic",
+        "Old Moll of Brandy Cove",
+        "Penhale Sands",
+        "Rollright Stones curse",
+        "Screaming Skull of Bettiscombe",
+        "Screaming Skull of Calgarth",
+        "The Curse of the Campbells of Jura",
+        "The Drummer of Tedworth",
+        "Tichborne Dole",
+        "Werewolves of Ossory",
+        "Whetstones",
+        "Windhouse",
+        "Witch of Wookey Hole",
+        "Witch's Stone of Westleton",
+        "Witches of Belvoir",
+        "Witchknowe Park"
+      ]
     },
     {
       "slug": "standing-stones",
       "title": "Standing Stones & Stone Circles",
       "intro": "The prehistoric monuments of Britain and Ireland gathered folklore for thousands of years after they were raised. Circles said to be dancers or maidens turned to stone, megaliths that cannot be counted, stones that walk to drink at midnight — the traditions preserve a folk memory of the monuments as living, watchful and not to be meddled with.",
-      "match": { "tags_any": ["standing-stones"] }
+      "match": {
+        "tags_any": [
+          "standing-stones"
+        ]
+      },
+      "context": "Britain and Ireland hold thousands of prehistoric standing stones and circles raised in the Neolithic and Bronze Age. Their original purpose is long lost, and folklore filled the gap: many are said to be people, giants or dancers turned to stone for breaking the sabbath, to be impossible to count, or to walk down to water at certain times of year.",
+      "members": [
+        "Avebury",
+        "Beenalaght",
+        "Behy court tomb",
+        "Breeny More Stone Circle",
+        "Bryn Gwyn stones",
+        "Callanish Standing Stones",
+        "Carrigaphooca Stone Circle",
+        "Carrowmore",
+        "Cheetham Close",
+        "Chûn Quoit",
+        "Clodagh Standing Stones",
+        "Cloghanmore",
+        "Coolcoulaghta Standing Stones",
+        "Craddock Moor stone circle",
+        "Craigs Dolmen",
+        "Crom Cruach",
+        "Devil's Arrows",
+        "Dolmen of the Four Maols",
+        "Eightercua",
+        "Farranahineeny Stone Row",
+        "Finn McCools Fingers",
+        "Glantane East",
+        "Granny Kempock Stone",
+        "Grubstones",
+        "Heapstown Cairn",
+        "Knocknakilla",
+        "Listoghil",
+        "Lochmaben Stone",
+        "Long Meg and Her Daughters",
+        "Meehambee Dolmen",
+        "Moel Tŷ Uchaf",
+        "Mên Scryfa",
+        "Mên-an-Tol",
+        "Nine Maidens Stone Row",
+        "Porlock Stone Circle",
+        "Rollright Stones curse",
+        "Rudston Monolith",
+        "Stanton Drew Stone Circles",
+        "Stonehenge",
+        "The Merry Maidens",
+        "The Pipers",
+        "Timoney Stones",
+        "Townleyhall passage grave",
+        "Twelve Apostles, West Yorkshire",
+        "Waun Mawn",
+        "Whetstones",
+        "Withypool Stone Circle"
+      ]
     },
     {
       "slug": "dragons-and-serpents",
       "title": "Dragons & Serpents",
       "intro": "From the Welsh dragons of Dinas Emrys to the wyrms and 'worms' of northern England and the lake serpents of the Highlands, the dragon of British and Irish tradition is usually earthbound and territorial — a guardian of a well, a hill or a hoard, slain by a local hero whose deed is still tied to a named place.",
-      "match": { "any": [ { "categories": ["dragon"] }, { "tags_any": ["serpent"] } ] }
+      "match": {
+        "any": [
+          {
+            "categories": [
+              "dragon"
+            ]
+          },
+          {
+            "tags_any": [
+              "serpent"
+            ]
+          }
+        ]
+      },
+      "context": "Dragon and 'worm' legends are found throughout Britain and Ireland, usually tied to a particular hill, well or church. The worm (from Old Norse ormr) is typically a wingless, venomous serpent slain by a local hero; such tales may preserve memories of real hazards, rival powers, or the Christianising of older serpent symbolism.",
+      "members": [
+        "Beithir",
+        "Bignor Hill Dragon",
+        "Bisterne Dragon",
+        "Blue Ben of Kilve",
+        "Bures Dragon",
+        "Denbigh Dragon",
+        "Dragon of Brinsop",
+        "Dragon of Deerhurst",
+        "Dragon of Ludham",
+        "Dragon of Mordiford",
+        "Dragon of Radnor Forest",
+        "Dragon of St Leonard's Forest",
+        "Dragon of Strathmartine",
+        "Dragon of Wantley",
+        "Fad Felen",
+        "Filey Dragon",
+        "Gurt Worm",
+        "Hagg Worm",
+        "Knucker of Lyminster",
+        "Laidly Worm of Spindleston Heugh",
+        "Lambton Worm",
+        "Lig-na-Paiste",
+        "Llandeilo Graban Dragon",
+        "Longwitton Dragon",
+        "Lough Ree Monster",
+        "Morgawrr",
+        "Oilliphéist",
+        "Penllyne Dragon",
+        "Sockburn Worm",
+        "Stoor Worm",
+        "The Anwick Dragon",
+        "The Dragon of Loschy Hill",
+        "The Henham Dragon",
+        "Worm of Linton",
+        "Y Ddraig Goch"
+      ]
     },
     {
       "slug": "holy-wells",
       "title": "Holy Wells & Healing Springs",
       "intro": "Sacred springs bridge the pre-Christian and the Christian: waters dedicated to a saint yet visited with offerings, rags and pins in the old way, sought for healing of the eyes, of children and of the sick. Many keep a guardian tradition — a fish, a saint or a spirit whose favour the water depends upon.",
-      "match": { "tags_any": ["well", "spring"] }
+      "match": {
+        "tags_any": [
+          "well",
+          "spring"
+        ]
+      },
+      "context": "Springs and wells were venerated long before Christianity and were later drawn into the cult of the saints, each acquiring a patron, a feast day and a reputation for healing particular ailments. Pilgrims left offerings, tied rags to nearby trees and circled the well sunwise — customs that survived at many sites into modern times.",
+      "members": [
+        "Chalice Well",
+        "Coventina",
+        "Glastonbury Holy Thorn",
+        "Nanteos Cup",
+        "St Dwynwen",
+        "St Non's Well",
+        "Sulis",
+        "The Whitwick Giant",
+        "Witches' Well"
+      ]
+    },
+    {
+      "slug": "birth-of-albion",
+      "title": "Birth of Albion",
+      "match": {},
+      "members": [
+        "Bran the Blessed",
+        "Brutus of Troy",
+        "Corineus",
+        "Gog and Magog",
+        "Gogmagog",
+        "Hafren",
+        "Jack the Giant Killer",
+        "Warrior of the Gog Magog Hills"
+      ],
+      "intro": "Before the histories, Britain had a birth-story. Exiled Trojans led by Brutus, great-grandson of Aeneas, are said to have landed at Totnes to find an island held by giants — Gogmagog and his kind — whom they cast down to claim the land, renaming Albion as Britain. These are the legends of that founding: the Trojan founders, the last giants of Albion, and the mythic figures woven into the origin of the island itself.",
+      "context": "The 'Matter of Britain' gave the island a legendary prehistory reaching back to the fall of Troy. Geoffrey of Monmouth's Historia Regum Britanniae (c.1136) fixed the story in its familiar form — Brutus and his followers settling an Albion inhabited only by giants, Corineus wrestling Gogmagog into the sea off the Cornish coast, and a line of legendary kings descending toward Lear, Lud and Cymbeline. Though wholly unhistorical, the tale was widely believed for centuries and left its mark on the landscape, from the Brutus Stone at Totnes to the Gog and Magog effigies still carried in the Lord Mayor's Show.",
+      "related_collections": [
+        "arthurian-britain",
+        "standing-stones",
+        "legends-of-the-sea"
+      ]
     }
   ]
 }

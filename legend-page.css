@@ -29,7 +29,7 @@ button{font:inherit}
   min-height:58px;
   display:flex;
   align-items:center;
-  justify-content:flex-start;
+  justify-content:center;
   gap:4px;
   flex-wrap:wrap;
   padding:10px clamp(16px,3vw,52px);
@@ -53,15 +53,16 @@ button{font:inherit}
 }
 .topnav a:hover{color:#f3ead7;background:rgba(196,98,42,.18)}
 .topnav a.active{color:#c4622a}
-.topnav-brand{display:inline-flex;align-items:center;gap:11px;
-  margin-right:clamp(10px,2vw,26px);padding:0;text-decoration:none}
+.topnav-brand{position:absolute;left:clamp(14px,3vw,52px);top:50%;transform:translateY(-50%);
+  display:inline-flex;align-items:center;gap:11px;padding:0;text-decoration:none}
+.topnav a.topnav-brand:hover{background:transparent}
 .topnav-emblem{width:40px;height:40px;object-fit:contain;display:block;flex-shrink:0;
   transition:opacity .15s,transform .15s}
 .topnav-brand:hover .topnav-emblem{opacity:.85;transform:scale(1.04)}
 .topnav-title{font-family:'Marcellus',serif;font-size:clamp(18px,2.1vw,23px);font-weight:400;
   text-transform:none;letter-spacing:.055em;color:#f2e8d5;white-space:nowrap;
   text-shadow:0 1px 3px rgba(0,0,0,0.55),0 0 14px rgba(196,98,42,0.22)}
-@media(max-width:900px){.topnav-brand{display:none}}
+@media(max-width:1200px){.topnav-brand{display:none}}
 @media(max-width:640px){
   .topnav{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;scrollbar-width:none;padding-left:16px;padding-right:16px}
   .topnav::-webkit-scrollbar{display:none}

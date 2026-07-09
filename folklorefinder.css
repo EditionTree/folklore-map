@@ -1597,17 +1597,13 @@ body.interior-page {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 4px;
   min-height: 58px;
   padding: 10px clamp(16px, 3vw, 52px);
   background: var(--ff-bar-brown);
   border-bottom: none;
-}
-/* Home has no brand lockup, so keep its nav links centered */
-.home-page .topnav {
-  justify-content: center;
 }
 .topnav::before {
   content: '';
@@ -1632,15 +1628,21 @@ body.interior-page {
 .topnav a:hover { color: #f2e8d5; background: rgba(196,98,42,0.18); }
 .topnav a.active { color: var(--accent-warm); }
 
-/* Brand lockup: emblem + "Folklore Finder" title, first item on the left */
+/* Brand lockup: emblem + "Folklore Finder" title, pinned to the left edge
+   (out of flow) so the nav links stay centered across the full bar, exactly
+   like the Home page. No hover highlight box on the brand itself. */
 .topnav-brand {
+  position: absolute;
+  left: clamp(14px, 3vw, 52px);
+  top: 50%;
+  transform: translateY(-50%);
   display: inline-flex;
   align-items: center;
   gap: 11px;
-  margin-right: clamp(10px, 2vw, 26px);
   padding: 0;
   text-decoration: none;
 }
+.topnav a.topnav-brand:hover { background: transparent; }
 .topnav-emblem {
   width: 40px; height: 40px;
   object-fit: contain;
@@ -1659,8 +1661,9 @@ body.interior-page {
   white-space: nowrap;
   text-shadow: 0 1px 3px rgba(0,0,0,0.55), 0 0 14px rgba(196,98,42,0.22);
 }
-/* Below 900px: drop the brand so the nav links get the full row */
-@media (max-width: 900px) {
+/* Below 1200px: drop the brand (its absolute box would overlap the centered
+   links); the links stay centered on their own, exactly like the Home page. */
+@media (max-width: 1200px) {
   .topnav-brand { display: none; }
 }
 /* Mobile: single horizontally-scrolling row of links */

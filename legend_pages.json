@@ -6931,6 +6931,156 @@
         "Setting": "Brí Léith (Ardagh Hill), County Longford, Ireland",
         "Motif": "Otherworldly encounter"
       }
+    },
+    "Ben Varrey": {
+      "priority": 463,
+      "image": "legend-images/ben-varrey-hero.jpg",
+      "alt": "A cinematic aquatic folklore image of Ben Varrey, shown as the central water spirit, lake beast, sea creature, or drowned-place legend from Isle of Man",
+      "caption": "A visual interpretation of Ben Varrey",
+      "map_title": "Isle of Man",
+      "section_heading": "The water legend at the heart of the tale",
+      "pullquote": "The Manx mermaid — 'Woman of the Sea' — a creature of ambivalent character who could grant wishes, warn of storms, or lure fishermen to their deaths....",
+      "facts": {
+        "Tradition": "Aquatic folklore",
+        "Type": "Water spirit or monster",
+        "Setting": "Isle of Man",
+        "Motif": "Water and transformation"
+      }
+    },
+    "Caoranach": {
+      "priority": 464,
+      "image": "legend-images/caoranach-hero.jpg",
+      "alt": "A cinematic aquatic folklore image of Caoranach, shown as the central water spirit, lake beast, sea creature, or drowned-place legend from Lough Derg, County Donegal",
+      "caption": "A visual interpretation of Caoranach",
+      "map_title": "Lough Derg, County Donegal",
+      "section_heading": "The water legend at the heart of the tale",
+      "pullquote": "Caoranach is a monstrous creature of Irish folklore associated with Lough Derg in County Donegal. One local tradition tells that a small worm cast...",
+      "facts": {
+        "Tradition": "Aquatic folklore",
+        "Type": "Water spirit or monster",
+        "Setting": "Lough Derg, County Donegal",
+        "Motif": "Water and transformation"
+      }
+    },
+    "Ceasg": {
+      "priority": 465,
+      "image": "legend-images/ceasg-hero.jpg",
+      "alt": "A cinematic aquatic folklore image of Ceasg, shown as the central water spirit, lake beast, sea creature, or drowned-place legend from North Kessock, Black Isle, Highland",
+      "caption": "A visual interpretation of Ceasg",
+      "map_title": "North Kessock, Black Isle, Highland",
+      "section_heading": "The water legend at the heart of the tale",
+      "pullquote": "Scotland's ceasg—half-woman, half-young salmon—grants three wishes if caught, but lures unwary men to drown with her singing. At Kessock on the Black...",
+      "facts": {
+        "Tradition": "Aquatic folklore",
+        "Type": "Water spirit or monster",
+        "Setting": "North Kessock, Black Isle, Highland",
+        "Motif": "Water and transformation"
+      }
+    },
+    "Crodh Mara": {
+      "priority": 466,
+      "image": "legend-images/crodh-mara-hero.jpg",
+      "alt": "A cinematic aquatic folklore image of Crodh Mara, shown as the central water spirit, lake beast, sea creature, or drowned-place legend from Hebrides, Scottish Highlands",
+      "caption": "A visual interpretation of Crodh Mara",
+      "map_title": "Hebrides, Scottish Highlands",
+      "section_heading": "The water legend at the heart of the tale",
+      "pullquote": "Fairy cattle of the Scottish sea — hornless, dun-coloured beasts that emerge from the ocean and interbreed with mortal herds, improving the stock....",
+      "facts": {
+        "Tradition": "Aquatic folklore",
+        "Type": "Water spirit or monster",
+        "Setting": "Hebrides, Scottish Highlands",
+        "Motif": "Water and transformation"
+      }
+    },
+    "Dobhar-chú": {
+      "priority": 467,
+      "image": "legend-images/dobhar-chu-hero.jpg",
+      "alt": "A cinematic aquatic folklore image of Dobhar-chú, shown as the central water spirit, lake beast, sea creature, or drowned-place legend from County Leitrim, Ireland",
+      "caption": "A visual interpretation of Dobhar-chú",
+      "map_title": "County Leitrim, Ireland",
+      "section_heading": "The water legend at the heart of the tale",
+      "pullquote": "A monstrous water beast resembling a giant hound or otter, said to inhabit lonely lakes and rivers. Tales describe it attacking livestock and people...",
+      "facts": {
+        "Tradition": "Aquatic folklore",
+        "Type": "Water spirit or monster",
+        "Setting": "County Leitrim, Ireland",
+        "Motif": "Water and transformation"
+      }
+    },
+    "Doom Bar": {
+      "priority": 468,
+      "image": "legend-images/doom-bar-hero.jpg",
+      "alt": "A cinematic aquatic folklore image of Doom Bar, shown as the central water spirit, lake beast, sea creature, or drowned-place legend from Cornwall",
+      "caption": "A visual interpretation of Doom Bar",
+      "map_title": "Cornwall",
+      "section_heading": "The water legend at the heart of the tale",
+      "pullquote": "A dangerous sandbar at the mouth of the River Camel, linked to the Mermaid of Padstow. In legend, a dying mermaid cursed the harbour after being...",
+      "facts": {
+        "Tradition": "Aquatic folklore",
+        "Type": "Water spirit or monster",
+        "Setting": "Cornwall",
+        "Motif": "Water and transformation"
+      }
+    },
+    "Dozmary Pool": {
+      "priority": 469,
+      "image": "legend-images/dozmary-pool-hero.jpg",
+      "alt": "A cinematic aquatic folklore image of Dozmary Pool, shown as the central water spirit, lake beast, sea creature, or drowned-place legend from Cornwall",
+      "caption": "A visual interpretation of Dozmary Pool",
+      "map_title": "Cornwall",
+      "section_heading": "The water legend at the heart of the tale",
+      "pullquote": "A lonely pool on Bodmin Moor, often named as one of the places where Arthur's sword Excalibur was returned to the Lady of the Lake. It is also tied...",
+      "facts": {
+        "Tradition": "Aquatic folklore",
+        "Type": "Water spirit or monster",
+        "Setting": "Cornwall",
+        "Motif": "Water and transformation"
+      }
+    },
+    "Garman Garbh of Loch Garman": {
+      "priority": 470,
+      "image": "legend-images/garman-garbh-of-loch-garman-hero.jpg",
+      "alt": "A cinematic aquatic folklore image of Garman Garbh of Loch Garman, shown as the central water spirit, lake beast, sea creature, or drowned-place legend from Wexford, County Wexford, Ireland",
+      "caption": "A visual interpretation of Garman Garbh of Loch Garman",
+      "map_title": "Wexford, County Wexford, Ireland",
+      "section_heading": "The water legend at the heart of the tale",
+      "pullquote": "The Irish name for Wexford — Loch Garman — recalls Garman, drowned when an enchanted well burst its banks and flooded the plain, the new lake taking...",
+      "facts": {
+        "Tradition": "Aquatic folklore",
+        "Type": "Water spirit or monster",
+        "Setting": "Wexford, County Wexford, Ireland",
+        "Motif": "Water and transformation"
+      }
+    },
+    "Glashtyn": {
+      "priority": 471,
+      "image": "legend-images/glashtyn-hero.jpg",
+      "alt": "A cinematic aquatic folklore image of Glashtyn, shown as the central water spirit, lake beast, sea creature, or drowned-place legend from Isle of Man",
+      "caption": "A visual interpretation of Glashtyn",
+      "map_title": "Isle of Man",
+      "section_heading": "The water legend at the heart of the tale",
+      "pullquote": "The water horse of the Isle of Man — a shape-shifting creature that emerges from sea and loch as a fine grey stallion, and, like its Scottish cousin...",
+      "facts": {
+        "Tradition": "Aquatic folklore",
+        "Type": "Water spirit or monster",
+        "Setting": "Isle of Man",
+        "Motif": "Water and transformation"
+      }
+    },
+    "Great Silkie of Sule Skerry": {
+      "priority": 472,
+      "image": "legend-images/great-silkie-of-sule-skerry-hero.jpg",
+      "alt": "A cinematic aquatic folklore image of Great Silkie of Sule Skerry, shown as the central water spirit, lake beast, sea creature, or drowned-place legend from Orkney, Scotland",
+      "caption": "A visual interpretation of Great Silkie of Sule Skerry",
+      "map_title": "Orkney, Scotland",
+      "section_heading": "The water legend at the heart of the tale",
+      "pullquote": "On the lonely rock of Sule Skerry, the Great Silkie sheds his sealskin to father a human child, then claims them both — paying in gold and...",
+      "facts": {
+        "Tradition": "Aquatic folklore",
+        "Type": "Water spirit or monster",
+        "Setting": "Orkney, Scotland",
+        "Motif": "Water and transformation"
+      }
     }
   }
 }

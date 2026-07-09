@@ -1,0 +1,218 @@
+[
+    {
+        "Section": "Bestiary & Otherworld",
+        "Id": "here-be-monsters",
+        "Name": "Here Be Monsters",
+        "File": "achievement-here-be-monsters.png",
+        "Requirement": "Visit 50 beasts",
+        "Description": "The edges of the map, where the monsters are."
+    },
+    {
+        "Section": "Bestiary & Otherworld",
+        "Id": "padfoot",
+        "Name": "Padfoot",
+        "File": "achievement-padfoot.png",
+        "Requirement": "Visit 3 black dogs",
+        "Description": "Three of the spectral hounds that haunt the lonely roads."
+    },
+    {
+        "Section": "Bestiary & Otherworld",
+        "Id": "houndmaster",
+        "Name": "Houndmaster",
+        "File": "achievement-houndmaster.png",
+        "Requirement": "Visit 10 black dogs",
+        "Description": "The whole spectral pack answers to you."
+    },
+    {
+        "Section": "Bestiary & Otherworld",
+        "Id": "the-wild-hunt",
+        "Name": "The Wild Hunt",
+        "File": "achievement-the-wild-hunt.png",
+        "Requirement": "Visit every black dog",
+        "Description": "Every phantom hound on the map, run to ground."
+    },
+    {
+        "Section": "Old Stones & Sacred Places",
+        "Id": "pilgrim",
+        "Name": "Pilgrim",
+        "File": "achievement-pilgrim.png",
+        "Requirement": "Visit 10 sacred sites",
+        "Description": "Ten holy and ancient places visited."
+    },
+    {
+        "Section": "Old Stones & Sacred Places",
+        "Id": "antiquarian",
+        "Name": "Antiquarian",
+        "File": "achievement-antiquarian.png",
+        "Requirement": "Visit 25 sacred sites",
+        "Description": "A connoisseur of stones, wells and old places."
+    },
+    {
+        "Section": "Old Stones & Sacred Places",
+        "Id": "stone-whisperer",
+        "Name": "Stone Whisperer",
+        "File": "achievement-stone-whisperer.png",
+        "Requirement": "Visit 50 sacred sites",
+        "Description": "You hear what the old stones remember."
+    },
+    {
+        "Section": "Old Stones & Sacred Places",
+        "Id": "keeper-of-the-old-ways",
+        "Name": "Keeper of the Old Ways",
+        "File": "achievement-keeper-of-the-old-ways.png",
+        "Requirement": "Visit every sacred site",
+        "Description": "Every ancient place on the map, honoured."
+    },
+    {
+        "Section": "Heroes, Outlaws & Sovereigns",
+        "Id": "once-and-future-king",
+        "Name": "The Once and Future King",
+        "File": "achievement-once-and-future-king.png",
+        "Requirement": "Visit King Arthur",
+        "Description": "The king who was, and the king who shall be."
+    },
+    {
+        "Section": "Heroes, Outlaws & Sovereigns",
+        "Id": "wizard-business",
+        "Name": "Wizard Business",
+        "File": "achievement-wizard-business.png",
+        "Requirement": "Visit Merlin",
+        "Description": "The great enchanter of the Arthurian world."
+    },
+    {
+        "Section": "Heroes, Outlaws & Sovereigns",
+        "Id": "nice-tights",
+        "Name": "Nice Tights",
+        "File": "achievement-nice-tights.png",
+        "Requirement": "Visit Robin Hood",
+        "Description": "The outlaw of Sherwood, robbing rich for poor."
+    },
+    {
+        "Section": "Heroes, Outlaws & Sovereigns",
+        "Id": "merry-companion",
+        "Name": "Merry Companion",
+        "File": "achievement-merry-companion.png",
+        "Requirement": "Visit Maid Marian",
+        "Description": "Robin Hood's match in the greenwood."
+    },
+    {
+        "Section": "Heroes, Outlaws & Sovereigns",
+        "Id": "giant-slayer",
+        "Name": "Giant Slayer",
+        "File": "achievement-giant-slayer.png",
+        "Requirement": "Visit Guy of Warwick",
+        "Description": "The hero who felled the giant Colbrand."
+    },
+    {
+        "Section": "Heroes, Outlaws & Sovereigns",
+        "Id": "dead-men-tell-no-tales",
+        "Name": "Dead Men Tell No Tales",
+        "File": "achievement-dead-men-tell-no-tales.png",
+        "Requirement": "Visit Blackbeard",
+        "Description": "The most fearsome image of the pirate age."
+    },
+    {
+        "Section": "Heroes, Outlaws & Sovereigns",
+        "Id": "pirate-queen",
+        "Name": "Pirate Queen",
+        "File": "achievement-pirate-queen.png",
+        "Requirement": "Visit Grace O'Malley",
+        "Description": "Gráinne Mhaol, the sea-queen of Connacht."
+    },
+    {
+        "Section": "Heroes, Outlaws & Sovereigns",
+        "Id": "giants-causeway",
+        "Name": "Giant's Causeway",
+        "File": "achievement-giants-causeway.png",
+        "Requirement": "Visit Fionn mac Cumhaill",
+        "Description": "The giant-hero who built the causeway to Scotland."
+    },
+    {
+        "Section": "Heroes, Outlaws & Sovereigns",
+        "Id": "horned-one",
+        "Name": "Horned One",
+        "File": "achievement-horned-one.png",
+        "Requirement": "Visit Herne the Hunter",
+        "Description": "The antlered spectre of Windsor Forest."
+    },
+    {
+        "Section": "Strange Encounters",
+        "Id": "simia-ingrata",
+        "Name": "Simia Ingrata",
+        "File": "achievement-simia-ingrata.png",
+        "Requirement": "Visit the Hartlepool Monkey",
+        "Description": "The monkey they hanged as a French spy."
+    },
+    {
+        "Section": "Strange Encounters",
+        "Id": "bigger-camera",
+        "Name": "We Need a Bigger Camera",
+        "File": "achievement-bigger-camera.png",
+        "Requirement": "Visit the Loch Ness Monster",
+        "Description": "Always just out of focus."
+    },
+    {
+        "Section": "Strange Encounters",
+        "Id": "lead-a-horse",
+        "Name": "You Can Lead a Horse to Water...",
+        "File": "achievement-lead-a-horse.png",
+        "Requirement": "Visit a Kelpie",
+        "Description": "...but don't let it lead you in."
+    },
+    {
+        "Section": "Strange Encounters",
+        "Id": "near-the-water",
+        "Name": "Don't Go Near the Water",
+        "File": "achievement-near-the-water.png",
+        "Requirement": "Visit Jenny Greenteeth",
+        "Description": "The green-haired hag who pulls children under."
+    },
+    {
+        "Section": "Strange Encounters",
+        "Id": "keep-the-hat-red",
+        "Name": "Keep the Hat Red",
+        "File": "achievement-keep-the-hat-red.png",
+        "Requirement": "Visit a Redcap",
+        "Description": "The Border goblin who dyes his cap in blood."
+    },
+    {
+        "Section": "Strange Encounters",
+        "Id": "good-dog",
+        "Name": "Good Dog?",
+        "File": "achievement-good-dog.png",
+        "Requirement": "Visit Black Shuck",
+        "Description": "The spectral hound of the East Anglian coast."
+    },
+    {
+        "Section": "Strange Encounters",
+        "Id": "thats-moved-again",
+        "Name": "That's Moved Again",
+        "File": "achievement-thats-moved-again.png",
+        "Requirement": "Visit a Boggart",
+        "Description": "You can't flit from a boggart — it comes too."
+    },
+    {
+        "Section": "Strange Encounters",
+        "Id": "are-you-sure",
+        "Name": "Are You Sure?",
+        "File": "achievement-are-you-sure.png",
+        "Requirement": "Visit a Changeling",
+        "Description": "Is that really your child in the cradle?"
+    },
+    {
+        "Section": "Strange Encounters",
+        "Id": "follow-the-light",
+        "Name": "Follow the Light",
+        "File": "achievement-follow-the-light.png",
+        "Requirement": "Visit a Will-o'-the-Wisp",
+        "Description": "The marsh-light that leads the unwary astray."
+    },
+    {
+        "Section": "Strange Encounters",
+        "Id": "wrong-neighbourhood",
+        "Name": "Wrong Neighbourhood",
+        "File": "achievement-wrong-neighbourhood.png",
+        "Requirement": "Visit a Barghest",
+        "Description": "The death-dog of the northern towns."
+    }
+]

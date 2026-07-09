@@ -55,24 +55,29 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 .pagination .gap{border:none;color:#5c4a2a;min-width:auto;padding:6px 2px}
 @media(max-width:900px){.wrap{width:calc(100% - 32px)}}
 @media(max-width:620px){.browse-grid{grid-template-columns:1fr}}
-.col-hero{position:relative;margin:12px 0 22px;border-radius:2px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.25)}
-.col-hero img{display:block;width:100%;height:clamp(170px,24vw,300px);object-fit:cover;object-position:center 38%}
+/* Collection hero: description on the left, iconic image on the right */
+.col-hero-split{display:flex;gap:30px;align-items:stretch;margin:14px 0 24px}
+.col-hero-desc{flex:1 1 0;min-width:0;display:flex;flex-direction:column;justify-content:center}
+.col-hero-desc p{font-size:17px;color:#5c4a2a;line-height:1.62;max-width:58ch}
+.col-hero-media{flex:0 0 46%;position:relative;min-height:264px;border-radius:2px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.25);background:#241a10}
+.col-hero-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .col-hero-credit{position:absolute;right:10px;bottom:8px;font-size:10px;color:rgba(255,255,255,.85);background:rgba(0,0,0,.4);padding:2px 8px;border-radius:2px}
+@media(max-width:680px){.col-hero-split{flex-direction:column;gap:16px}.col-hero-media{flex-basis:auto;height:220px;min-height:0}}
 /* Article layout: alternating image/summary rows for collection members */
 .col-articles{display:flex;flex-direction:column;gap:20px}
 .col-article{display:flex;align-items:stretch;background:rgba(246,241,230,.72);border:1px solid rgba(90,70,50,.28);text-decoration:none;color:#3f3023;overflow:hidden;box-shadow:inset 0 0 0 5px rgba(255,255,255,.14);transition:border-color .15s,transform .12s,box-shadow .15s}
 .col-article:hover{border-color:#c4622a;transform:translateY(-2px);box-shadow:0 10px 26px rgba(44,31,14,.14),inset 0 0 0 5px rgba(255,255,255,.14)}
 .col-article:nth-child(even){flex-direction:row-reverse}
-.col-article-media{flex:0 0 40%;position:relative;min-height:232px;background:#241a10}
+.col-article-media{flex:0 0 42%;position:relative;aspect-ratio:16/9;background:#241a10}
 .col-article-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.col-article-body{flex:1 1 0;min-width:0;padding:24px 28px;display:flex;flex-direction:column;justify-content:center}
+.col-article-body{flex:1 1 0;min-width:0;padding:16px 26px;display:flex;flex-direction:column;justify-content:center}
 .col-article-cat{align-self:flex-start;font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:#9d461f;padding:2px 9px;margin-bottom:9px}
 .col-article-name{font-family:'Marcellus',serif;font-weight:400;font-size:22px;line-height:1.15;color:#3f3023;margin-bottom:3px}
 .col-article-region{font-style:italic;font-size:12.5px;color:#5c4a2a}
 .col-article-summary{font-size:14.5px;color:#3a2c14;line-height:1.6;margin:10px 0 12px}
 .col-article-more{font-family:'Marcellus',serif;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#9d461f}
 .col-article:hover .col-article-more{color:#c4622a}
-@media(max-width:680px){.col-article,.col-article:nth-child(even){flex-direction:column}.col-article-media{flex-basis:auto;height:200px;min-height:0}.col-article-body{padding:18px 20px}.col-article-name{font-size:19px}}
+@media(max-width:680px){.col-article,.col-article:nth-child(even){flex-direction:column}.col-article-media{flex-basis:auto;min-height:0}.col-article-body{padding:18px 20px}.col-article-name{font-size:19px}}
 /* Collections index: editorial feature rows (alternating image/text) */
 .col-index{display:flex;flex-direction:column;gap:22px}
 .col-index-row{display:flex;align-items:stretch;background:rgba(246,241,230,.72);border:1px solid rgba(90,70,50,.28);text-decoration:none;color:#3f3023;overflow:hidden;box-shadow:inset 0 0 0 5px rgba(255,255,255,.14);transition:border-color .15s,transform .12s,box-shadow .15s}
@@ -113,8 +118,7 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 <div class="wrap ornamented">
 <nav class="crumb"><a href="https://folklorefinder.uk/">Home</a> &#8250; <a href="https://folklorefinder.uk/legends/">All legends</a> &#8250; <span>Holy Wells &amp; Healing Springs</span></nav>
 <h1 class="browse-h1">Holy Wells &amp; Healing Springs</h1>
-<nav class="browse-nav"><a href="https://folklorefinder.uk/legends/collection/black-dogs">Black Dogs of Britain &amp; Ireland</a><a href="https://folklorefinder.uk/legends/collection/arthurian-britain">Arthurian Britain</a><a href="https://folklorefinder.uk/legends/collection/haunted-churches">Haunted Churches &amp; Churchyards</a><a href="https://folklorefinder.uk/legends/collection/legends-of-the-sea">Legends of the Sea &amp; Shore</a><a href="https://folklorefinder.uk/legends/collection/cursed-places">Cursed Places &amp; Ill-Fated Stones</a><a href="https://folklorefinder.uk/legends/collection/standing-stones">Standing Stones &amp; Stone Circles</a><a href="https://folklorefinder.uk/legends/collection/dragons-and-serpents">Dragons &amp; Serpents</a><a href="https://folklorefinder.uk/legends/collection/holy-wells" class="active">Holy Wells &amp; Healing Springs</a><a href="https://folklorefinder.uk/legends/collection/birth-of-albion">Birth of Albion</a></nav><div class="col-hero"><img src="https://folklorefinder.uk/legend-images/coventina-hero.jpg" alt="Holy Wells &amp; Healing Springs"/></div>
-<p class="browse-intro">Sacred springs bridge the pre-Christian and the Christian: waters dedicated to a saint yet visited with offerings, rags and pins in the old way, sought for healing of the eyes, of children and of the sick. Many keep a guardian tradition — a fish, a saint or a spirit whose favour the water depends upon.</p>
+<nav class="browse-nav"><a href="https://folklorefinder.uk/legends/collection/black-dogs">Black Dogs of Britain &amp; Ireland</a><a href="https://folklorefinder.uk/legends/collection/arthurian-britain">Arthurian Britain</a><a href="https://folklorefinder.uk/legends/collection/haunted-churches">Haunted Churches &amp; Churchyards</a><a href="https://folklorefinder.uk/legends/collection/legends-of-the-sea">Legends of the Sea &amp; Shore</a><a href="https://folklorefinder.uk/legends/collection/cursed-places">Cursed Places &amp; Ill-Fated Stones</a><a href="https://folklorefinder.uk/legends/collection/standing-stones">Standing Stones &amp; Stone Circles</a><a href="https://folklorefinder.uk/legends/collection/dragons-and-serpents">Dragons &amp; Serpents</a><a href="https://folklorefinder.uk/legends/collection/holy-wells" class="active">Holy Wells &amp; Healing Springs</a><a href="https://folklorefinder.uk/legends/collection/birth-of-albion">Birth of Albion</a></nav><div class="col-hero-split"><div class="col-hero-desc"><p>Sacred springs bridge the pre-Christian and the Christian: waters dedicated to a saint yet visited with offerings, rags and pins in the old way, sought for healing of the eyes, of children and of the sick. Many keep a guardian tradition — a fish, a saint or a spirit whose favour the water depends upon.</p></div><div class="col-hero-media"><img src="https://folklorefinder.uk/legend-images/coventina-hero.jpg" alt="Holy Wells &amp; Healing Springs"/></div></div>
 <p class="col-context">Springs and wells were venerated long before Christianity and were later drawn into the cult of the saints, each acquiring a patron, a feast day and a reputation for healing particular ailments. Pilgrims left offerings, tied rags to nearby trees and circled the well sunwise — customs that survived at many sites into modern times.</p>
 <p class="col-maplink"><a class="back" href="https://folklorefinder.uk/map?collection=holy-wells">View this collection on the Map &#8594;</a></p>
 

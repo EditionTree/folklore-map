@@ -79,7 +79,6 @@
         }
       ],
       "members": [
-        "Afanc",
         "Alderley Edge",
         "Avalon",
         "Bossiney Castle",
@@ -124,7 +123,8 @@
         "Y Ddraig Goch",
         "Ynys Enlli",
         "Ysbaddaden"
-      ]
+      ],
+      "hero_legend": "King Arthur"
     },
     {
       "slug": "haunted-churches",
@@ -250,7 +250,8 @@
         "Wild Man of Orford",
         "William Owen, the Smuggler General of Pembrokeshire",
         "Yawkins, the Galloway Smuggler"
-      ]
+      ],
+      "hero_legend": "Blackbeard"
     },
     {
       "slug": "cursed-places",
@@ -268,6 +269,7 @@
         "Bedd Dorti, the Witch's Grave",
         "Chûn Quoit",
         "Doom Bar",
+        "Enfield Poltergeist",
         "Gulf of Corryvreckan",
         "Gunby Hall Ghost Walk",
         "Labbacallee wedge tomb",
@@ -290,7 +292,8 @@
         "Witch's Stone of Westleton",
         "Witches of Belvoir",
         "Witchknowe Park"
-      ]
+      ],
+      "hero_legend": "Enfield Poltergeist"
     },
     {
       "slug": "standing-stones",
@@ -452,7 +455,8 @@
         "arthurian-britain",
         "standing-stones",
         "legends-of-the-sea"
-      ]
+      ],
+      "hero_legend": "Brutus of Troy"
     }
   ]
 }

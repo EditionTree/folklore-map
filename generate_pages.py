@@ -453,24 +453,29 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 .pagination .gap{border:none;color:#5c4a2a;min-width:auto;padding:6px 2px}
 @media(max-width:900px){.wrap{width:calc(100% - 32px)}}
 @media(max-width:620px){.browse-grid{grid-template-columns:1fr}}
-.col-hero{position:relative;margin:12px 0 22px;border-radius:2px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.25)}
-.col-hero img{display:block;width:100%;height:clamp(170px,24vw,300px);object-fit:cover;object-position:center 38%}
+/* Collection hero: description on the left, iconic image on the right */
+.col-hero-split{display:flex;gap:30px;align-items:stretch;margin:14px 0 24px}
+.col-hero-desc{flex:1 1 0;min-width:0;display:flex;flex-direction:column;justify-content:center}
+.col-hero-desc p{font-size:17px;color:#5c4a2a;line-height:1.62;max-width:58ch}
+.col-hero-media{flex:0 0 46%;position:relative;min-height:264px;border-radius:2px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.25);background:#241a10}
+.col-hero-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .col-hero-credit{position:absolute;right:10px;bottom:8px;font-size:10px;color:rgba(255,255,255,.85);background:rgba(0,0,0,.4);padding:2px 8px;border-radius:2px}
+@media(max-width:680px){.col-hero-split{flex-direction:column;gap:16px}.col-hero-media{flex-basis:auto;height:220px;min-height:0}}
 /* Article layout: alternating image/summary rows for collection members */
 .col-articles{display:flex;flex-direction:column;gap:20px}
 .col-article{display:flex;align-items:stretch;background:rgba(246,241,230,.72);border:1px solid rgba(90,70,50,.28);text-decoration:none;color:#3f3023;overflow:hidden;box-shadow:inset 0 0 0 5px rgba(255,255,255,.14);transition:border-color .15s,transform .12s,box-shadow .15s}
 .col-article:hover{border-color:#c4622a;transform:translateY(-2px);box-shadow:0 10px 26px rgba(44,31,14,.14),inset 0 0 0 5px rgba(255,255,255,.14)}
 .col-article:nth-child(even){flex-direction:row-reverse}
-.col-article-media{flex:0 0 40%;position:relative;min-height:232px;background:#241a10}
+.col-article-media{flex:0 0 42%;position:relative;aspect-ratio:16/9;background:#241a10}
 .col-article-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.col-article-body{flex:1 1 0;min-width:0;padding:24px 28px;display:flex;flex-direction:column;justify-content:center}
+.col-article-body{flex:1 1 0;min-width:0;padding:16px 26px;display:flex;flex-direction:column;justify-content:center}
 .col-article-cat{align-self:flex-start;font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:#9d461f;padding:2px 9px;margin-bottom:9px}
 .col-article-name{font-family:'Marcellus',serif;font-weight:400;font-size:22px;line-height:1.15;color:#3f3023;margin-bottom:3px}
 .col-article-region{font-style:italic;font-size:12.5px;color:#5c4a2a}
 .col-article-summary{font-size:14.5px;color:#3a2c14;line-height:1.6;margin:10px 0 12px}
 .col-article-more{font-family:'Marcellus',serif;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#9d461f}
 .col-article:hover .col-article-more{color:#c4622a}
-@media(max-width:680px){.col-article,.col-article:nth-child(even){flex-direction:column}.col-article-media{flex-basis:auto;height:200px;min-height:0}.col-article-body{padding:18px 20px}.col-article-name{font-size:19px}}
+@media(max-width:680px){.col-article,.col-article:nth-child(even){flex-direction:column}.col-article-media{flex-basis:auto;min-height:0}.col-article-body{padding:18px 20px}.col-article-name{font-size:19px}}
 /* Collections index: editorial feature rows (alternating image/text) */
 .col-index{display:flex;flex-direction:column;gap:22px}
 .col-index-row{display:flex;align-items:stretch;background:rgba(246,241,230,.72);border:1px solid rgba(90,70,50,.28);text-decoration:none;color:#3f3023;overflow:hidden;box-shadow:inset 0 0 0 5px rgba(255,255,255,.14);transition:border-color .15s,transform .12s,box-shadow .15s}
@@ -562,7 +567,7 @@ def build_browse_page(page_title, desc, url, h1, intro, crumb, nav_html, cards_h
             '<h1 class="browse-h1">' + esc(h1) + '</h1>\n'
             + top_nav_html
             + hero_html
-            + '<p class="browse-intro">' + esc(intro) + '</p>\n'
+            + (('<p class="browse-intro">' + esc(intro) + '</p>\n') if intro else '')
             + after_intro
             + nav_html + '\n<div class="' + grid_class + '">\n' + cards_html
             + '\n</div>\n' + after_grid + extra_sections
@@ -1542,7 +1547,8 @@ def build():
                     featured_pages.get(m["name"], {}).get("image", "") for m in members
                 ]
                 member_images = [p for p in member_images if p]
-                hero_path = col.get("hero_image") or (member_images[0] if member_images else "")
+                hero_legend_img = featured_pages.get(col.get("hero_legend", ""), {}).get("image", "")
+                hero_path = hero_legend_img or col.get("hero_image") or (member_images[0] if member_images else "")
                 collection_ld = {
                     "@context": "https://schema.org",
                     "@type": "CollectionPage",
@@ -1586,18 +1592,30 @@ def build():
                 # at the top (top_nav_html), and each member's own image appears in
                 # its article row, so the old gallery / related-collections sections
                 # are dropped as redundant.
+                # Page 1 leads with a split hero: the description on the left and
+                # the collection's iconic image on the right, at the same level.
+                # The description lives inside the split, so the plain intro
+                # paragraph is suppressed on page 1 (page_intro=""); pages 2+ keep it.
                 hero_html, extra_sections, context_html = "", "", ""
+                page_intro = col["intro"]
                 if page_no == 1:
+                    page_intro = ""
+                    media_html = ""
                     if hero_path:
                         hero_credit_html = (
                             f'<span class="col-hero-credit">{esc(col["hero_credit"])}</span>'
                             if col.get("hero_credit") else ""
                         )
-                        hero_html = (
-                            '<div class="col-hero">'
+                        media_html = (
+                            '<div class="col-hero-media">'
                             f'<img src="{BASE}/{hero_path.replace(os.sep, "/")}" alt="{esc(col["title"])}"/>'
-                            f'{hero_credit_html}</div>\n'
+                            f'{hero_credit_html}</div>'
                         )
+                    hero_html = (
+                        '<div class="col-hero-split">'
+                        f'<div class="col-hero-desc"><p>{esc(col["intro"])}</p></div>'
+                        f'{media_html}</div>\n'
+                    )
                     if col.get("context"):
                         context_html = f'<p class="col-context">{esc(col["context"])}</p>\n'
                     resources = col.get("resources") or []
@@ -1619,7 +1637,7 @@ def build():
                     desc=desc,
                     url=url,
                     h1=col["title"],
-                    intro=col["intro"],
+                    intro=page_intro,
                     crumb=col["title"] + page_tag,
                     nav_html="",
                     top_nav_html=nav_links(col_nav_items, slug),
@@ -1647,9 +1665,10 @@ def build():
             land_cards = []
             for col, members in resolved:
                 curl = collection_page_url(col["slug"], 1)
-                rep = col.get("hero_image") or next(
+                rep = (featured_pages.get(col.get("hero_legend", ""), {}).get("image")
+                       or col.get("hero_image") or next(
                     (featured_pages[m["name"]]["image"] for m in members
-                     if featured_pages.get(m["name"], {}).get("image")), "")
+                     if featured_pages.get(m["name"], {}).get("image")), ""))
                 media = (
                     '<div class="col-index-media">'
                     f'<img src="{BASE}/{rep.replace(os.sep, "/")}" alt="{esc(col["title"])}" loading="lazy"/></div>'

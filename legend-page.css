@@ -64,9 +64,9 @@ button{font:inherit}
   text-shadow:0 1px 3px rgba(0,0,0,0.55),0 0 14px rgba(196,98,42,0.22)}
 @media(max-width:1200px){.topnav-brand{display:none}}
 @media(max-width:640px){
-  .topnav{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;scrollbar-width:none;padding-left:16px;padding-right:16px}
+  .topnav{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;padding-left:12px;padding-right:12px}
   .topnav::-webkit-scrollbar{display:none}
-  .topnav a{flex:0 0 auto;white-space:nowrap}
+  .topnav a{flex:0 0 auto;padding:5px 10px;font-size:11px;white-space:nowrap}
 }
 .brandbar{
   position:relative;
@@ -535,10 +535,9 @@ footer a:hover{color:#f2e8d5}
   .shell{width:min(100% - 24px,1440px)}
   .brand-name{font-size:14px}
   .brand-line{font-size:10px}
-  /* Single scrolling row of nav links instead of wrapping onto two lines. */
-  .topnav{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;scrollbar-width:none}
+  .topnav{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;overflow-y:hidden;scrollbar-width:none}
   .topnav::-webkit-scrollbar{display:none}
-  .topnav a{flex:0 0 auto;white-space:nowrap}
+  .topnav a{flex:0 0 auto;padding:5px 10px;font-size:11px;white-space:nowrap}
   /* Stack the hero on mobile: full 16:9 image banner above the text, instead
      of overlaying the copy on a tall, heavily-cropped slice of the image. */
   .hero{min-height:0}

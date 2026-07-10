@@ -276,13 +276,15 @@
       .map-nav {
         order: 3; width: 100%;
         justify-content: flex-start;
-        flex-wrap: nowrap; overflow-x: auto;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
         scrollbar-width: none;
         margin-top: 6px; padding-top: 6px;
         border-top: 1px solid rgba(176,144,96,0.22);
       }
       .map-nav::-webkit-scrollbar { display: none; }
-      .map-nav a { flex: 0 0 auto; }
+      .map-nav a { flex: 0 0 auto; padding: 5px 9px; }
     }
 
     @media (max-width: 1100px) {
@@ -873,6 +875,23 @@
       header::before { display: none; }
       h1 { font-size: 15px; letter-spacing: 0.04em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
       h1::before, h1::after { content: none; }
+
+      /* Map layout: the map fills the width; the sidebar becomes a slide-in
+         overlay (toggled by the "☰ Entries" button) instead of eating the row. */
+      .content-area { flex-direction: column; padding: 8px; gap: 0; }
+      .map-wrap { width: 100%; flex: 1 1 auto; min-height: 0; }
+      .sidebar {
+        position: absolute; top: 8px; left: 8px; right: 8px; bottom: 8px;
+        width: auto; max-width: 360px; z-index: 1500;
+        /* No width/opacity transition here: added-before-paint it can stick in a
+           running state on some engines and pin the sidebar open over the map. */
+        will-change: auto; transition: none;
+      }
+      .sidebar.collapsed {
+        left: -110%; right: auto; width: min(340px, calc(100% - 16px));
+        opacity: 0; pointer-events: none;
+      }
+    }
   </style>
 </head>
 <body class="map-page">

@@ -7081,6 +7081,381 @@
         "Setting": "Orkney, Scotland",
         "Motif": "Water and transformation"
       }
+    },
+    "Kelpie of Loch Garve": {
+      "priority": 473,
+      "image": "legend-images/kelpie-of-loch-garve-hero.jpg",
+      "alt": "A cinematic aquatic folklore image of Kelpie of Loch Garve, shown as the central water spirit, lake beast, sea creature, or drowned-place legend from Ross-shire, Highland Scotland",
+      "caption": "A visual interpretation of Kelpie of Loch Garve",
+      "map_title": "Ross-shire, Highland Scotland",
+      "section_heading": "The water legend at the heart of the tale",
+      "pullquote": "The kelpie of Loch Garve fell in love with his captive and built her an underwater fireplace — and to this day one stretch of the loch never freezes,...",
+      "facts": {
+        "Tradition": "Aquatic folklore",
+        "Type": "Water spirit or monster",
+        "Setting": "Ross-shire, Highland Scotland",
+        "Motif": "Water and transformation"
+      }
+    },
+    "Le Roi des Auxcriniers": {
+      "priority": 474,
+      "image": "legend-images/le-roi-des-auxcriniers-hero.jpg",
+      "alt": "A cinematic aquatic folklore image of Le Roi des Auxcriniers, shown as the central water spirit, lake beast, sea creature, or drowned-place legend from Guernsey, Channel Islands",
+      "caption": "A visual interpretation of Le Roi des Auxcriniers",
+      "map_title": "Guernsey, Channel Islands",
+      "section_heading": "The water legend at the heart of the tale",
+      "pullquote": "Guernsey's monstrous sea king dances on storm-lashed waves — to glimpse him is to be shipwrecked.",
+      "facts": {
+        "Tradition": "Aquatic folklore",
+        "Type": "Water spirit or monster",
+        "Setting": "Guernsey, Channel Islands",
+        "Motif": "Water and transformation"
+      }
+    },
+    "Llamhigyn y Dŵr": {
+      "priority": 475,
+      "image": "legend-images/llamhigyn-y-dwr-hero.jpg",
+      "alt": "A cinematic aquatic folklore image of Llamhigyn y Dŵr, shown as the central water spirit, lake beast, sea creature, or drowned-place legend from Llyn Gwynant, Gwynedd",
+      "caption": "A visual interpretation of Llamhigyn y Dŵr",
+      "map_title": "Llyn Gwynant, Gwynedd",
+      "section_heading": "The water legend at the heart of the tale",
+      "pullquote": "The Llamhigyn y Dŵr, or Water Leaper, is a Welsh aquatic creature described as a monstrous winged toad with a long tail. Folklore associates it with...",
+      "facts": {
+        "Tradition": "Aquatic folklore",
+        "Type": "Water spirit or monster",
+        "Setting": "Llyn Gwynant, Gwynedd",
+        "Motif": "Water and transformation"
+      }
+    },
+    "Llyn y Fan Fach": {
+      "priority": 476,
+      "image": "legend-images/llyn-y-fan-fach-hero.jpg",
+      "alt": "A cinematic aquatic folklore image of Llyn y Fan Fach, shown as the central water spirit, lake beast, sea creature, or drowned-place legend from Bannau Brycheiniog, Carmarthenshire",
+      "caption": "A visual interpretation of Llyn y Fan Fach",
+      "map_title": "Bannau Brycheiniog, Carmarthenshire",
+      "section_heading": "The water legend at the heart of the tale",
+      "pullquote": "A Welsh lake famed for the Lady of the Lake, who married a mortal under strict conditions before returning beneath the water. Their sons became the...",
+      "facts": {
+        "Tradition": "Aquatic folklore",
+        "Type": "Water spirit or monster",
+        "Setting": "Bannau Brycheiniog, Carmarthenshire",
+        "Motif": "Water and transformation"
+      }
+    },
+    "Loch Frisa Water Horse": {
+      "priority": 477,
+      "image": "legend-images/loch-frisa-water-horse-hero.jpg",
+      "alt": "A cinematic aquatic folklore image of Loch Frisa Water Horse, shown as the central water spirit, lake beast, sea creature, or drowned-place legend from Isle of Mull, Argyll and Bute, Scotland",
+      "caption": "A visual interpretation of Loch Frisa Water Horse",
+      "map_title": "Isle of Mull, Argyll and Bute, Scotland",
+      "section_heading": "The water legend at the heart of the tale",
+      "pullquote": "A water horse dragged the heir of Aros into the depths of Loch Frisa on the Isle of Mull; his grieving bride composed a lament still sung on the...",
+      "facts": {
+        "Tradition": "Aquatic folklore",
+        "Type": "Water spirit or monster",
+        "Setting": "Isle of Mull, Argyll and Bute, Scotland",
+        "Motif": "Water and transformation"
+      }
+    },
+    "Loch Morar": {
+      "priority": 478,
+      "image": "legend-images/loch-morar-hero.jpg",
+      "alt": "A cinematic aquatic folklore image of Loch Morar, shown as the central water spirit, lake beast, sea creature, or drowned-place legend from Highland, Scotland",
+      "caption": "A visual interpretation of Loch Morar",
+      "map_title": "Highland, Scotland",
+      "section_heading": "The water legend at the heart of the tale",
+      "pullquote": "Britain's deepest freshwater loch and home of Morag, a lake spirit or monster traditionally treated less as a curiosity and more as a death omen for...",
+      "facts": {
+        "Tradition": "Aquatic folklore",
+        "Type": "Water spirit or monster",
+        "Setting": "Highland, Scotland",
+        "Motif": "Water and transformation"
+      }
+    },
+    "Lí Ban of Lough Neagh": {
+      "priority": 479,
+      "image": "legend-images/li-ban-of-lough-neagh-hero.jpg",
+      "alt": "A cinematic aquatic folklore image of Lí Ban of Lough Neagh, shown as the central water spirit, lake beast, sea creature, or drowned-place legend from Lough Neagh, Northern Ireland",
+      "caption": "A visual interpretation of Lí Ban of Lough Neagh",
+      "map_title": "Lough Neagh, Northern Ireland",
+      "section_heading": "The water legend at the heart of the tale",
+      "pullquote": "When a sacred well drowned her entire family and created Lough Neagh, the Ulster princess Lí Ban survived underwater for 300 years — half woman, half...",
+      "facts": {
+        "Tradition": "Aquatic folklore",
+        "Type": "Water spirit or monster",
+        "Setting": "Lough Neagh, Northern Ireland",
+        "Motif": "Water and transformation"
+      }
+    },
+    "Mermaid of Benbecula": {
+      "priority": 480,
+      "image": "legend-images/mermaid-of-benbecula-hero.jpg",
+      "alt": "A cinematic aquatic folklore image of Mermaid of Benbecula, shown as the central water spirit, lake beast, sea creature, or drowned-place legend from Benbecula, Outer Hebrides, Scotland",
+      "caption": "A visual interpretation of Mermaid of Benbecula",
+      "map_title": "Benbecula, Outer Hebrides, Scotland",
+      "section_heading": "The water legend at the heart of the tale",
+      "pullquote": "Around 1830, crofters on Benbecula found a tiny mermaid dead in the dunes — killed by a stone thrown by a local boy. The local factor ordered a...",
+      "facts": {
+        "Tradition": "Aquatic folklore",
+        "Type": "Water spirit or monster",
+        "Setting": "Benbecula, Outer Hebrides, Scotland",
+        "Motif": "Water and transformation"
+      }
+    },
+    "Morag of Loch Morar": {
+      "priority": 481,
+      "image": "legend-images/morag-of-loch-morar-hero.jpg",
+      "alt": "A cinematic aquatic folklore image of Morag of Loch Morar, shown as the central water spirit, lake beast, sea creature, or drowned-place legend from Highland, Scotland",
+      "caption": "A visual interpretation of Morag of Loch Morar",
+      "map_title": "Highland, Scotland",
+      "section_heading": "The water legend at the heart of the tale",
+      "pullquote": "A serpentine creature dwelling in Loch Morar — Britain's deepest freshwater loch. Unlike Nessie, Morag is traditionally considered an omen of death...",
+      "facts": {
+        "Tradition": "Aquatic folklore",
+        "Type": "Water spirit or monster",
+        "Setting": "Highland, Scotland",
+        "Motif": "Water and transformation"
+      }
+    },
+    "Nanny Rutt": {
+      "priority": 482,
+      "image": "legend-images/nanny-rutt-hero.jpg",
+      "alt": "A cinematic aquatic folklore image of Nanny Rutt, shown as the central water spirit, lake beast, sea creature, or drowned-place legend from Lincolnshire",
+      "caption": "A visual interpretation of Nanny Rutt",
+      "map_title": "Lincolnshire",
+      "section_heading": "The water legend at the heart of the tale",
+      "pullquote": "Nanny Rutt is a character in a cautionary tale associated with Nanny Rutt's well, an artesian spring in Math Wood, near Northorpe, in the parish of...",
+      "facts": {
+        "Tradition": "Aquatic folklore",
+        "Type": "Water spirit or monster",
+        "Setting": "Lincolnshire",
+        "Motif": "Water and transformation"
+      }
+    },
+    "Peg Powler": {
+      "priority": 483,
+      "image": "legend-images/peg-powler-hero.jpg",
+      "alt": "A cinematic aquatic folklore image of Peg Powler, shown as the central water spirit, lake beast, sea creature, or drowned-place legend from River Tees, County Durham",
+      "caption": "A visual interpretation of Peg Powler",
+      "map_title": "River Tees, County Durham",
+      "section_heading": "The water legend at the heart of the tale",
+      "pullquote": "A green-haired hag of the River Tees who drags the young and unwary under to drown and devour them; the river's drifting froth is still called 'Peg...",
+      "facts": {
+        "Tradition": "Aquatic folklore",
+        "Type": "Water spirit or monster",
+        "Setting": "River Tees, County Durham",
+        "Motif": "Water and transformation"
+      }
+    },
+    "Princess Erne and the Creation of Lough Erne": {
+      "priority": 484,
+      "image": "legend-images/princess-erne-and-the-creation-of-lough-erne-hero.jpg",
+      "alt": "A cinematic aquatic folklore image of Princess Erne and the Creation of Lough Erne, shown as the central water spirit, lake beast, sea creature, or drowned-place legend from County Fermanagh, Northern Ireland",
+      "caption": "A visual interpretation of Princess Erne and the Creation of Lough Erne",
+      "map_title": "County Fermanagh, Northern Ireland",
+      "section_heading": "The water legend at the heart of the tale",
+      "pullquote": "Queen Medb's lady-in-waiting Erne fled in terror from the monster of Oweynagat, and she and her maidens drowned in the river — their bodies...",
+      "facts": {
+        "Tradition": "Aquatic folklore",
+        "Type": "Water spirit or monster",
+        "Setting": "County Fermanagh, Northern Ireland",
+        "Motif": "Water and transformation"
+      }
+    },
+    "Sea Mither": {
+      "priority": 485,
+      "image": "legend-images/sea-mither-hero.jpg",
+      "alt": "A cinematic aquatic folklore image of Sea Mither, shown as the central water spirit, lake beast, sea creature, or drowned-place legend from Orkney",
+      "caption": "A visual interpretation of Sea Mither",
+      "map_title": "Orkney",
+      "section_heading": "The water legend at the heart of the tale",
+      "pullquote": "An Orcadian summer sea-spirit who calms the waters and restrains the monstrous Teran. Her yearly struggle with him explains the turn between gentle...",
+      "facts": {
+        "Tradition": "Aquatic folklore",
+        "Type": "Water spirit or monster",
+        "Setting": "Orkney",
+        "Motif": "Water and transformation"
+      }
+    },
+    "Tarbh Uisge": {
+      "priority": 486,
+      "image": "legend-images/tarbh-uisge-hero.jpg",
+      "alt": "A cinematic aquatic folklore image of Tarbh Uisge, shown as the central water spirit, lake beast, sea creature, or drowned-place legend from Islay, Inner Hebrides, Scotland",
+      "caption": "A visual interpretation of Tarbh Uisge",
+      "map_title": "Islay, Inner Hebrides, Scotland",
+      "section_heading": "The water legend at the heart of the tale",
+      "pullquote": "The water bull of Scottish Gaelic and Hebridean tradition — a creature far less malevolent than his cousin the Each-Uisge, who would come ashore at...",
+      "facts": {
+        "Tradition": "Aquatic folklore",
+        "Type": "Water spirit or monster",
+        "Setting": "Islay, Inner Hebrides, Scotland",
+        "Motif": "Water and transformation"
+      }
+    },
+    "Teran": {
+      "priority": 487,
+      "image": "legend-images/teran-hero.jpg",
+      "alt": "A cinematic aquatic folklore image of Teran, shown as the central water spirit, lake beast, sea creature, or drowned-place legend from Orkney",
+      "caption": "A visual interpretation of Teran",
+      "map_title": "Orkney",
+      "section_heading": "The water legend at the heart of the tale",
+      "pullquote": "The winter sea-spirit of Orkney, enemy of the Sea Mither. When Teran rules, storms rise, waters turn dangerous, and the ocean remembers its teeth.",
+      "facts": {
+        "Tradition": "Aquatic folklore",
+        "Type": "Water spirit or monster",
+        "Setting": "Orkney",
+        "Motif": "Water and transformation"
+      }
+    },
+    "The Loe": {
+      "priority": 488,
+      "image": "legend-images/the-loe-hero.jpg",
+      "alt": "A cinematic aquatic folklore image of The Loe, shown as the central water spirit, lake beast, sea creature, or drowned-place legend from Cornwall",
+      "caption": "A visual interpretation of The Loe",
+      "map_title": "Cornwall",
+      "section_heading": "The water legend at the heart of the tale",
+      "pullquote": "Cornwall's largest natural freshwater lake, separated from the sea by a shingle bar. Local legend links it to Arthurian tradition, including claims...",
+      "facts": {
+        "Tradition": "Aquatic folklore",
+        "Type": "Water spirit or monster",
+        "Setting": "Cornwall",
+        "Motif": "Water and transformation"
+      }
+    },
+    "Veasta": {
+      "priority": 489,
+      "image": "legend-images/veasta-hero.jpg",
+      "alt": "A cinematic aquatic folklore image of Veasta, shown as the central water spirit, lake beast, sea creature, or drowned-place legend from Orkney",
+      "caption": "A visual interpretation of Veasta",
+      "map_title": "Orkney",
+      "section_heading": "The water legend at the heart of the tale",
+      "pullquote": "A sea beast of Orcadian waters, seen offshore during storms in old accounts. Like many Norse-influenced sea legends of Orkney, Veasta sits between...",
+      "facts": {
+        "Tradition": "Aquatic folklore",
+        "Type": "Water spirit or monster",
+        "Setting": "Orkney",
+        "Motif": "Water and transformation"
+      }
+    },
+    "Agnes Waterhouse": {
+      "priority": 490,
+      "image": "legend-images/agnes-waterhouse-hero.jpg",
+      "alt": "Agnes Waterhouse seated in a Tudor Essex cottage beside a hearth while a black cat waits in shadow",
+      "caption": "A visual interpretation of Agnes Waterhouse in Hatfield Peverel before the Chelmsford witch trial",
+      "section_heading": "The first hanging under Elizabeth's witchcraft law",
+      "pullquote": "Agnes Waterhouse became the first woman hanged for witchcraft in England under the Elizabethan Witchcraft Act of 1562."
+    },
+    "Bedd Dorti, the Witch's Grave": {
+      "priority": 491,
+      "image": "legend-images/bedd-dorti-the-witch-s-grave-hero.jpg",
+      "alt": "A lonely stone cairn above Llyn Tecwyn Uchaf with a black cat on a rock beneath storm clouds",
+      "caption": "A visual interpretation of Bedd Dorti above Llyn Tecwyn Uchaf",
+      "section_heading": "The cairn above the lake",
+      "pullquote": "Local tradition holds that anyone who passes Bedd Dorti without adding a stone risks death within a year."
+    },
+    "Bessie Dunlop": {
+      "priority": 492,
+      "image": "legend-images/bessie-dunlop-hero.jpg",
+      "alt": "Bessie Dunlop pauses on an Ayrshire path as the ghostly Tom Reid stands in the mist near Dalry",
+      "caption": "A visual interpretation of Bessie Dunlop meeting Tom Reid near Dalry",
+      "section_heading": "The healer and Tom Reid",
+      "pullquote": "Bessie said her healing gifts came not from the Devil but from Tom Reid, a dead man who led her among the Court of Elfame."
+    },
+    "Bessie Millie of Stromness": {
+      "priority": 493,
+      "image": "legend-images/bessie-millie-of-stromness-hero.jpg",
+      "alt": "Bessie Millie offers a coin and knotted cord to sailors above Stromness harbour under an Orkney sky",
+      "caption": "A visual interpretation of Bessie Millie selling fair winds above Stromness",
+      "section_heading": "Sixpence for a fair wind",
+      "pullquote": "For sixpence, Bessie Millie was said to call up a favourable wind for sailors leaving Stromness harbour."
+    },
+    "Biddy Early": {
+      "priority": 494,
+      "image": "legend-images/biddy-early-hero.jpg",
+      "alt": "Biddy Early studies a small blue bottle by candlelight in a cottage doorway above a misty County Clare lake",
+      "caption": "A visual interpretation of Biddy Early and the blue bottle of Clare tradition",
+      "section_heading": "The blue bottle of Clare",
+      "pullquote": "People walked for days to consult Biddy Early, the Wise Woman of Clare, and the blue bottle said to reveal what troubled them."
+    },
+    "Byard's Leap": {
+      "priority": 495,
+      "image": "legend-images/byard-s-leap-hero.jpg",
+      "alt": "The horse Bayard leaps over a misty Lincolnshire road while a distant figure stands by the fen water",
+      "caption": "A visual interpretation of Bayard's impossible leap on the old road near Cranwell",
+      "section_heading": "The leap across the fen",
+      "pullquote": "Four pairs of horseshoes mark the place where Bayard was said to have leapt clear of a dangerous witch."
+    },
+    "Canewdon": {
+      "priority": 496,
+      "image": "legend-images/canewdon-hero.jpg",
+      "alt": "Women gather among the yew trees of Canewdon churchyard beneath the old tower at dusk",
+      "caption": "A visual interpretation of Canewdon's churchyard witch-lore",
+      "section_heading": "The village of six witches",
+      "pullquote": "So long as the old church tower stood, Canewdon was said to harbour witches in every generation."
+    },
+    "Carman the Sorceress": {
+      "priority": 497,
+      "image": "legend-images/carman-the-sorceress-hero.jpg",
+      "alt": "Carman the Sorceress stands with three shadowed sons in a withered ancient Irish orchard beneath storm clouds",
+      "caption": "A visual interpretation of Carman blighting the land in Irish myth",
+      "section_heading": "The invader who withered Ireland",
+      "pullquote": "In the Metrical Dindshenchas, Carman came to Ireland with her three sons and blighted the fruit of the land."
+    },
+    "Corrag of Glencoe": {
+      "priority": 498,
+      "image": "legend-images/corrag-of-glencoe-hero.jpg",
+      "alt": "Corrag stands in a winter Highland glen holding a broadsword as smoke rises from cottages below",
+      "caption": "A visual interpretation of Corrag warning Glencoe before the massacre",
+      "section_heading": "The warning in the glen",
+      "pullquote": "Corrag's second sight made her warning useless only because no one would believe it in time."
+    },
+    "Crazy Kate, the Witch of Swineshead": {
+      "priority": 499,
+      "image": "legend-images/crazy-kate-the-witch-of-swineshead-hero.jpg",
+      "alt": "Crazy Kate stands beside the Manwar Rings in moonlit Lincolnshire fenland with three cats at her feet",
+      "caption": "A visual interpretation of Crazy Kate at the Manwar Rings near Swineshead",
+      "section_heading": "The woman at the rings",
+      "pullquote": "Crazy Kate's reputation gathered around cats, night journeys and the ancient earthwork of the Manwar Rings."
+    },
+    "Dorrington Witch": {
+      "priority": 500,
+      "image": "legend-images/dorrington-witch-hero.jpg",
+      "alt": "A rat darts across a moonlit Dorrington lane while an elderly woman watches from a cottage doorway",
+      "caption": "A visual interpretation of the Dorrington Witch transformation tale",
+      "section_heading": "The rat in the lane",
+      "pullquote": "The next morning, the woman suspected of witchcraft was found beaten in her bed, just as the rat had been struck."
+    },
+    "Fan o' the Fens": {
+      "priority": 502,
+      "image": "legend-images/fan-o-the-fens-hero.jpg",
+      "alt": "Fan and her mother sit by a cottage hearth as a magpie watches from the window and villagers gather outside",
+      "caption": "A visual interpretation of the accusation at the heart of Fan o' the Fens",
+      "section_heading": "The magpie and the accusation",
+      "pullquote": "A magpie's gossip and a cat by the fire were enough to turn fear into a brutal fenland witch-panic."
+    },
+    "Fiddler Fynes of Kirkstead": {
+      "priority": 503,
+      "image": "legend-images/fiddler-fynes-of-kirkstead-hero.jpg",
+      "alt": "Fiddler Fynes studies a cracked mirror by candlelight while farmers watch and Kirkstead Abbey ruins show through the window",
+      "caption": "A visual interpretation of Fiddler Fynes using a mirror to name a thief",
+      "section_heading": "The cunning man with the mirror",
+      "pullquote": "Farmers came to Fiddler Fynes to recover stolen goods, and the mirror was said to show the thief."
+    },
+    "Florence Newton": {
+      "priority": 504,
+      "image": "legend-images/florence-newton-hero.jpg",
+      "alt": "Florence Newton stands at a Youghal doorway as a servant girl recoils and townspeople watch from the wet street",
+      "caption": "A visual interpretation of Florence Newton, the Witch of Youghal, before the 1661 trial",
+      "section_heading": "The Witch of Youghal",
+      "pullquote": "Florence Newton's case became one of Ireland's best-documented witch trials, beginning with an alleged bewitching kiss."
+    },
+    "Dòideag of Mull": {
+      "priority": 501,
+      "image": "legend-images/doideag-of-mull-hero.jpg",
+      "alt": "Dòideag of Mull raises one hand into a storm above Tobermory harbour and sailing ships",
+      "caption": "A visual interpretation of Dòideag calling a tempest over Mull",
+      "section_heading": "The storm-witch of Mull",
+      "pullquote": "Dòideag was feared throughout Mull for the power to summon storms over the island's harbours."
     }
   }
 }

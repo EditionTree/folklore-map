@@ -1,0 +1,14 @@
+# Cloudflare Pages redirects. One rule per line: <from> <to> <status>
+
+# Renamed collection: "Arthurian Places" -> "Arthurian Britain" (2026-07)
+/legends/collection/arthurian-places      /legends/collection/arthurian-britain     301
+/legends/collection/arthurian-places-2    /legends/collection/arthurian-britain-2   301
+/legends/collection/arthurian-places-3    /legends/collection/arthurian-britain     301
+
+# Collections that lost trailing pagination pages after re-curation (2026-07)
+/legends/collection/black-dogs-2          /legends/collection/black-dogs            301
+/legends/collection/cursed-places-3       /legends/collection/cursed-places         301
+/legends/collection/holy-wells-2          /legends/collection/holy-wells            301
+/legends/collection/standing-stones-3     /legends/collection/standing-stones       301
+/legends/collection/legends-of-the-sea-5  /legends/collection/legends-of-the-sea    301
+/legends/collection/legends-of-the-sea-6  /legends/collection/legends-of-the-sea    301

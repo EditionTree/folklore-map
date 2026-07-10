@@ -306,11 +306,11 @@ TOPNAV_CSS = (
     "text-transform:none;letter-spacing:0.055em;color:#f2e8d5;white-space:nowrap;"
     "text-shadow:0 1px 3px rgba(0,0,0,0.55),0 0 14px rgba(196,98,42,0.22)}"
     "@media(max-width:1200px){.topnav-brand{display:none}}"
-    # Mobile: one horizontally-scrolling row instead of wrapping to two lines.
-    "@media(max-width:640px){.topnav{flex-wrap:nowrap;overflow-x:auto;"
-    "justify-content:flex-start;scrollbar-width:none;padding-left:16px;padding-right:16px}"
+    # Mobile: one horizontally scrolling row instead of wrapped nav links.
+    "@media(max-width:640px){.topnav{flex-wrap:nowrap;justify-content:flex-start;"
+    "overflow-x:auto;overflow-y:hidden;scrollbar-width:none;padding-left:12px;padding-right:12px}"
     ".topnav::-webkit-scrollbar{display:none}"
-    ".topnav a{flex:0 0 auto;white-space:nowrap}}"
+    ".topnav a{flex:0 0 auto;padding:5px 10px;font-size:11px;white-space:nowrap}}"
     "footer{position:relative;text-align:center;padding:12px 18px;font-size:12px;line-height:1.6;"
     "color:rgba(246,241,230,.78);background:#1a0e06;border-top:0}"
     "footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;"
@@ -556,6 +556,11 @@ def build_browse_page(page_title, desc, url, h1, intro, crumb, nav_html, cards_h
             '<meta property="og:description" content="' + esc(desc) + '"/>\n'
             '<meta property="og:url" content="' + url + '"/>\n'
             '<meta property="og:image" content="' + (ogimage or (BASE + '/og/preview.png')) + '"/>\n'
+            '<meta property="og:site_name" content="Folklore Finder"/>\n'
+            '<meta name="twitter:card" content="summary_large_image"/>\n'
+            '<meta name="twitter:title" content="' + esc(h1) + '"/>\n'
+            '<meta name="twitter:description" content="' + esc(desc) + '"/>\n'
+            '<meta name="twitter:image" content="' + (ogimage or (BASE + '/og/preview.png')) + '"/>\n'
             '<link rel="preconnect" href="https://fonts.googleapis.com">\n'
             '<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">\n'
             + jsonld_html + breadcrumb_jsonld_html + head_extra
@@ -810,7 +815,7 @@ FEATURED_PAGE = Template("""<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha384-sHL9NAb7lN7rfvG5lfHpm643Xkcjzp4jFvuavGOndn6pjVqS6ny56CAt3nsEVT4H" crossorigin="anonymous"/>
-<link rel="stylesheet" href="/legend-page.css?v=20260707f"/>
+<link rel="stylesheet" href="/legend-page.css?v=20260707h"/>
 <script type="application/ld+json">$jsonld</script>
 $breadcrumb_jsonld
 </head>
@@ -1636,6 +1641,7 @@ def build():
                     page_title=f"{col['title']}{page_tag} — Folklore Finder",
                     desc=desc,
                     url=url,
+                    ogimage=(absolute_asset_url(hero_path) if hero_path else None),
                     h1=col["title"],
                     intro=page_intro,
                     crumb=col["title"] + page_tag,
@@ -1939,6 +1945,16 @@ def build():
 <meta name="description" content="Browse all {written} myths, legends, ghosts and folklore entries across Britain and Ireland."/>
 <link rel="canonical" href="{BASE}/{OUT_DIR}/"/>
 <link rel="icon" type="image/png" href="{BASE}/favicon.png"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="All Legends &#8212; Folklore Finder"/>
+<meta property="og:description" content="Browse all {written} myths, legends, ghosts and folklore entries across Britain and Ireland."/>
+<meta property="og:url" content="{BASE}/{OUT_DIR}/"/>
+<meta property="og:image" content="{BASE}/og/preview-folklore-finder.png"/>
+<meta property="og:site_name" content="Folklore Finder"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="All Legends &#8212; Folklore Finder"/>
+<meta name="twitter:description" content="Browse all {written} myths, legends, ghosts and folklore entries across Britain and Ireland."/>
+<meta name="twitter:image" content="{BASE}/og/preview-folklore-finder.png"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <style>

@@ -54,6 +54,13 @@ Nav links:
 - Padding: `6px 14px`
 - Border radius: `3px`
 
+Mobile nav:
+
+- At `max-width: 640px`, keep the top nav as one horizontal row.
+- Use `flex-wrap: nowrap`, `overflow-x: auto`, and `scrollbar-width: none`.
+- Each nav link should use `flex: 0 0 auto` and `white-space: nowrap`.
+- Do not wrap the nav links onto multiple rows on mobile.
+
 The Home page keeps its current nav without the brand lockup because the full Folklore Finder title and logo are already the hero identity.
 
 ## Map Page Exception

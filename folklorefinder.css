@@ -1435,6 +1435,9 @@ body.interior-page {
   .home-page .hero-feature .lotw-hero {
     margin-right: 24px;
     margin-left: 24px;
+    /* 16:9 is too short at phone widths, so the bottom-anchored caption
+       overflowed the top of the frame — give it room to sit inside. */
+    min-height: 250px;
   }
 
   .home-page .hero-feature .lotw-hero-copy {
@@ -1666,17 +1669,19 @@ body.interior-page {
 @media (max-width: 1200px) {
   .topnav-brand { display: none; }
 }
-/* Mobile: single horizontally-scrolling row of links */
+/* Mobile: keep nav links on one horizontally scrolling row. */
 @media (max-width: 640px) {
   .topnav {
     flex-wrap: nowrap;
-    overflow-x: auto;
     justify-content: flex-start;
+    overflow-x: auto;
+    overflow-y: hidden;
     scrollbar-width: none;
-    padding-left: 16px; padding-right: 16px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
   .topnav::-webkit-scrollbar { display: none; }
-  .topnav a { flex: 0 0 auto; white-space: nowrap; }
+  .topnav a { flex: 0 0 auto; padding: 5px 10px; font-size: 11px; white-space: nowrap; }
 }
 
 footer {

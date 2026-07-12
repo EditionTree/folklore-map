@@ -21,6 +21,8 @@ body{
   font-family:'Spectral',Georgia,serif;
   line-height:1.72;
 }
+/* Mobile safeguard: keep the page itself from scrolling sideways. */
+@media(max-width:900px){html,body{overflow-x:hidden}}
 a{color:inherit}
 button{font:inherit}
 /* Canonical banner — matches folklorefinder.css / TOPNAV_CSS */

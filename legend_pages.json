@@ -7456,6 +7456,294 @@
       "caption": "A visual interpretation of Dòideag calling a tempest over Mull",
       "section_heading": "The storm-witch of Mull",
       "pullquote": "Dòideag was feared throughout Mull for the power to summon storms over the island's harbours."
+    },
+    "Gwen ferch Ellis": {
+      "alt": "Gwen ferch Ellis standing outside a Welsh cottage with herbs and charm papers in the Vale of Clwyd",
+      "caption": "A visual interpretation of the Vale of Clwyd witchcraft case",
+      "section_heading": "The charm in the Vale",
+      "pullquote": "A healer remembered for protective words became the first person executed for witchcraft in Wales.",
+      "priority": 505,
+      "image": "legend-images/gwen-ferch-ellis-hero.jpg"
+    },
+    "Gwydion fab Dôn": {
+      "alt": "Gwydion fab Don beneath an ancient oak as a wounded eagle and phantom warriors appear in mist",
+      "caption": "A visual interpretation of the Welsh magician of the Mabinogi",
+      "section_heading": "The magician beneath the oak",
+      "pullquote": "Leaves, trees and animals bend around Gwydion, the great conjuror of the Fourth Branch.",
+      "priority": 506,
+      "image": "legend-images/gwydion-fab-don-hero.jpg"
+    },
+    "Islandmagee Witch Trial": {
+      "alt": "A tense Ulster farmhouse interior during the Islandmagee witch trial accusations",
+      "caption": "A visual interpretation of Ireland's last witch trial",
+      "section_heading": "The accusations at Knowehead",
+      "pullquote": "Eight women were convicted after Mary Dunbar named them from the hearthside drama of 1711.",
+      "priority": 507,
+      "image": "legend-images/islandmagee-witch-trial-hero.jpg"
+    },
+    "Janet Horne": {
+      "alt": "Janet Horne standing outside a Highland cottage as officials approach Dornoch through mist",
+      "caption": "A visual interpretation of the Dornoch witchcraft case",
+      "section_heading": "The road to Dornoch",
+      "pullquote": "In 1727, an old woman from Sutherland became the last person legally executed for witchcraft in Britain.",
+      "priority": 508,
+      "image": "legend-images/janet-horne-hero.jpg"
+    },
+    "Jonka Dyneis of Fetlar": {
+      "alt": "Jonka Dyneis in a Shetland croft as a stormy sea and struggling fishing boat show beyond the door",
+      "caption": "A visual interpretation of the Fetlar witch trial tradition",
+      "section_heading": "The trance and the boat",
+      "pullquote": "Her trance was said to begin at the very moment a fishing boat fought for its life offshore.",
+      "priority": 509,
+      "image": "legend-images/jonka-dyneis-of-fetlar-hero.jpg"
+    },
+    "Kilkenny Witch Trials": {
+      "alt": "Medieval Kilkenny officials accusing a group of women in a narrow stone street",
+      "caption": "A visual interpretation of the 1324 Kilkenny witch trials",
+      "section_heading": "The charge in Kilkenny",
+      "pullquote": "Alice Kyteler escaped the trial, but Petronilla de Meath was left to face its terrible force.",
+      "priority": 510,
+      "image": "legend-images/kilkenny-witch-trials-hero.jpg"
+    },
+    "Kirkcudbright Tolbooth": {
+      "alt": "Kirkcudbright Tolbooth at dusk with a woman silhouetted behind a lit prison window",
+      "caption": "A visual interpretation of the tolbooth as a witch-trial prison",
+      "section_heading": "The tolbooth window",
+      "pullquote": "The old stone prison still carries the memory of those held under accusation.",
+      "priority": 511,
+      "image": "legend-images/kirkcudbright-tolbooth-hero.jpg"
+    },
+    "Lancashire Witches Walk": {
+      "alt": "A misty path beneath Pendle Hill with walkers and a distant Lancashire skyline",
+      "caption": "A visual interpretation of the Lancashire Witches Walk",
+      "section_heading": "The path from Pendle",
+      "pullquote": "The modern route turns a landscape of accusation into a long act of remembrance.",
+      "priority": 512,
+      "image": "legend-images/lancashire-witches-walk-hero.jpg"
+    },
+    "Llanddona Witches": {
+      "alt": "A rudderless boat landing on an Anglesey beach as the Llanddona witches step ashore",
+      "caption": "A visual interpretation of the Llanddona witches legend",
+      "section_heading": "The boat on the beach",
+      "pullquote": "They were said to arrive by sea, bringing fear, curses and a spring from the sand.",
+      "priority": 513,
+      "image": "legend-images/llanddona-witches-hero.jpg"
+    },
+    "Maggie Wall": {
+      "alt": "A tall cairn and cross in a misty Perthshire field commemorating Maggie Wall",
+      "caption": "A visual interpretation of the Maggie Wall monument",
+      "section_heading": "The cairn without a record",
+      "pullquote": "The monument names a burning that history cannot quite find, and that is part of its power.",
+      "priority": 514,
+      "image": "legend-images/maggie-wall-hero.jpg"
+    },
+    "Major Thomas Weir": {
+      "alt": "Major Thomas Weir with his staff on a steep night street in old Edinburgh",
+      "caption": "A visual interpretation of the haunted West Bow tradition",
+      "section_heading": "The staff of West Bow",
+      "pullquote": "His confession turned a pious Edinburgh life into one of the city's strangest witchcraft stories.",
+      "priority": 515,
+      "image": "legend-images/major-thomas-weir-hero.jpg"
+    },
+    "Margaret Finch": {
+      "alt": "Margaret Finch reading a visitor's palm beside a campfire in the old Norwood woods",
+      "caption": "A visual interpretation of Margaret Finch of Norwood",
+      "section_heading": "The queen of Norwood",
+      "pullquote": "Her fortune-telling and fierce reputation made her one of South London's best remembered folk figures.",
+      "priority": 516,
+      "image": "legend-images/margaret-finch-hero.jpg"
+    },
+    "Marie Lamont": {
+      "alt": "Marie Lamont on a moonlit Inverkip shore with distant dancers and a black cat in the foreground",
+      "caption": "A visual interpretation of the Inverkip witchcraft confession",
+      "section_heading": "The confession by the Clyde",
+      "pullquote": "Marie Lamont's story moves between court record, fairy light and the dark pressure of accusation.",
+      "priority": 517,
+      "image": "legend-images/marie-lamont-hero.jpg"
+    },
+    "Meg Shelton": {
+      "alt": "A heavy boulder over Meg Shelton's grave in Woodplumpton churchyard at twilight",
+      "caption": "A visual interpretation of the Fylde Hag legend",
+      "section_heading": "The boulder in the churchyard",
+      "pullquote": "The stone over the grave is the legend's answer to a woman who would not stay buried.",
+      "priority": 518,
+      "image": "legend-images/meg-shelton-hero.jpg"
+    },
+    "Mother Ludlam": {
+      "alt": "Mother Ludlam lending a brass cauldron beside a cave spring in Surrey woodland",
+      "caption": "A visual interpretation of Mother Ludlam's cave legend",
+      "section_heading": "The cauldron at the spring",
+      "pullquote": "Unlike many witch tales, Mother Ludlam's legend remembers generosity before fear.",
+      "priority": 519,
+      "image": "legend-images/mother-ludlam-hero.jpg"
+    },
+    "Mother Shipton": {
+      "alt": "Mother Shipton standing beside the Knaresborough cave and petrifying well during a storm",
+      "caption": "A visual interpretation of the Knaresborough prophetess tradition",
+      "section_heading": "The cave by the Nidd",
+      "pullquote": "Prophecy, thunder and the petrifying well made Mother Shipton England's most famous seer.",
+      "priority": 520,
+      "image": "legend-images/mother-shipton-hero.jpg"
+    },
+    "Nicnevin": {
+      "alt": "Nicnevin riding across a moonlit Scottish moor with a shadowy Samhain host",
+      "caption": "A visual interpretation of Scotland's witch-queen of Samhain",
+      "section_heading": "The queen of the night host",
+      "pullquote": "Nicnevin stands where fairy sovereignty, Samhain dread and witch-lore meet.",
+      "priority": 521,
+      "image": "legend-images/nicnevin-hero.jpg"
+    },
+    "North Berwick Witch Trials": {
+      "alt": "Accused women before officials during the North Berwick witch trials as a stormy coast shows beyond",
+      "caption": "A visual interpretation of the North Berwick witch trials",
+      "section_heading": "The king and the storm",
+      "pullquote": "The case turned fear of weather, monarchy and witchcraft into one of Scotland's defining trials.",
+      "priority": 522,
+      "image": "legend-images/north-berwick-witch-trials-hero.jpg"
+    },
+    "Old Moll of Brandy Cove": {
+      "alt": "Old Moll leaving a sea cave at Brandy Cove while villagers approach with lanterns",
+      "caption": "A visual interpretation of the Gower sea-cave witch legend",
+      "section_heading": "The cave at Brandy Cove",
+      "pullquote": "Old Moll belongs to the coast: smuggling caves, salt weather and a curse carried inland.",
+      "priority": 523,
+      "image": "legend-images/old-moll-of-brandy-cove-hero.jpg"
+    },
+    "Petronilla de Meath": {
+      "alt": "Petronilla de Meath standing in a medieval Kilkenny passage as officials gather nearby",
+      "caption": "A visual interpretation of Petronilla de Meath's story",
+      "section_heading": "The servant left behind",
+      "pullquote": "Alice Kyteler escaped Kilkenny, but Petronilla de Meath was made to bear the charge.",
+      "priority": 524,
+      "image": "legend-images/petronilla-de-meath-hero.jpg"
+    },
+    "Pittenweem Witch Trials": {
+      "alt": "Accused townsfolk in a wet Pittenweem harbour street during the Fife witch-trial accusations",
+      "caption": "A visual interpretation of the Pittenweem witch trials",
+      "section_heading": "Fear on the harbour street",
+      "pullquote": "In a fishing burgh at the edge of the sea, accusation spread through neighbours and families.",
+      "priority": 525,
+      "image": "legend-images/pittenweem-witch-trials-hero.jpg"
+    },
+    "Sarey Bowers of Kirtlington": {
+      "alt": "Sarey Bowers at her Oxfordshire cottage as a fox slips from the shadows and huntsmen pass far away",
+      "caption": "A visual interpretation of the Kirtlington witch-hare and fox folklore",
+      "section_heading": "The fox by Foxtownsend",
+      "pullquote": "The hunt could lose the scent, but local memory always found its way back to Sarey Bowers.",
+      "priority": 526,
+      "image": "legend-images/sarey-bowers-of-kirtlington-hero.jpg"
+    },
+    "Tamsin Blight": {
+      "alt": "Tamsin Blight offering a charm or remedy in a candlelit Cornish healer's room",
+      "caption": "A visual interpretation of Tammy Blee, the White Witch of Helston",
+      "section_heading": "The pellar of Helston",
+      "pullquote": "People came to Tammy Blee for cures, charms and the breaking of other people's spells.",
+      "priority": 527,
+      "image": "legend-images/tamsin-blight-hero.jpg"
+    },
+    "Tetford Witch": {
+      "alt": "The Tetford witch beside a cottage wall as a hare runs beneath the moon toward Lincolnshire fields",
+      "caption": "A visual interpretation of the Lincolnshire witch-hare tradition",
+      "section_heading": "The hole in the cottage wall",
+      "pullquote": "A hare at the hedge and a woman at the wall carry the old belief in shape-shifting witches.",
+      "priority": 528,
+      "image": "legend-images/tetford-witch-hero.jpg"
+    },
+    "The Bargarran Witches": {
+      "alt": "The accused Bargarran neighbours gathered outside a Renfrewshire house under a bleak sky",
+      "caption": "A visual interpretation of the Bargarran witchcraft accusations",
+      "section_heading": "The accusations at Bargarran",
+      "pullquote": "One child's accusations helped send seven neighbours into Scotland's last mass witchcraft execution.",
+      "priority": 529,
+      "image": "legend-images/the-bargarran-witches-hero.jpg"
+    },
+    "The Curse of the Campbells of Jura": {
+      "alt": "An evicted Jura woman raising a hand as a cart leaves across the island moor",
+      "caption": "A visual interpretation of the Campbell curse of Jura",
+      "section_heading": "The curse over Jura",
+      "pullquote": "The story remembers eviction as prophecy: a warning thrown across the island landscape.",
+      "priority": 530,
+      "image": "legend-images/the-curse-of-the-campbells-of-jura-hero.jpg"
+    },
+    "The Fenland Mandrake": {
+      "alt": "Fenland people examining pale bryony roots shaped like mandrakes beside misty reed beds",
+      "caption": "A visual interpretation of the Fenland mandrake tradition",
+      "section_heading": "The carved root",
+      "pullquote": "Where true mandrake would not grow, fen folk made its magic from white bryony.",
+      "priority": 531,
+      "image": "legend-images/the-fenland-mandrake-hero.jpg"
+    },
+    "The Nine Witches of Gloucester": {
+      "alt": "Nine warrior-sorceresses overlooking a misty medieval fortress as a lone rider approaches",
+      "caption": "A visual interpretation of the Nine Witches of Gloucester from Peredur",
+      "section_heading": "The shining fortress",
+      "pullquote": "In the romance of Peredur, the witches are not village gossips but rulers of terror and training.",
+      "priority": 532,
+      "image": "legend-images/the-nine-witches-of-gloucester-hero.jpg"
+    },
+    "The Witch of East Somerton": {
+      "alt": "A great oak growing through the nave of St Mary's ruined church at East Somerton",
+      "caption": "A visual interpretation of the East Somerton church-oak legend",
+      "section_heading": "The oak in the nave",
+      "pullquote": "The ruined church keeps its legend in wood and stone: a grave remembered as a tree.",
+      "priority": 533,
+      "image": "legend-images/the-witch-of-east-somerton-hero.jpg"
+    },
+    "The Witch of Knocknashee": {
+      "alt": "The Witch of Knocknashee carrying a sack of dark soil across a moonlit Irish hillfort",
+      "caption": "A visual interpretation of the Knocknashee fairy-hill legend",
+      "section_heading": "The sack of soil",
+      "pullquote": "The hill of the fairies was nearly buried beneath a stranger curse, until the earth was spilled.",
+      "priority": 534,
+      "image": "legend-images/the-witch-of-knocknashee-hero.jpg"
+    },
+    "The Wizards of Cwrt y Cadno": {
+      "alt": "A Welsh cunning man consulting a visitor in a candlelit Cwrt y Cadno room with books, herbs and an astrological chart",
+      "caption": "A visual interpretation of the Harries family of Cwrt y Cadno",
+      "section_heading": "The consulting room in Carmarthenshire",
+      "pullquote": "The Harries family made astrology, healing and Welsh folk magic into a respected rural practice.",
+      "priority": 535,
+      "image": "legend-images/the-wizards-of-cwrt-y-cadno-hero.jpg"
+    },
+    "Witch of Slieu Whallian": {
+      "alt": "An accused woman beside a wooden barrel on the stormy slope of Slieau Whallian on the Isle of Man",
+      "caption": "A visual interpretation of the Witch's Way on Slieau Whallian",
+      "section_heading": "The scar on the hillside",
+      "pullquote": "The bare track of Slieau Whallian keeps one of Manx folklore's bleakest witch legends in the landscape.",
+      "priority": 536,
+      "image": "legend-images/witch-of-slieu-whallian-hero.jpg"
+    },
+    "Witch of Wookey Hole": {
+      "alt": "The Witch of Wookey Hole beside a stalagmite in a dark Mendip cave as a monk approaches with a lantern",
+      "caption": "A visual interpretation of the Wookey Hole cave legend",
+      "section_heading": "The witch in the cave",
+      "pullquote": "The river cave, the monk and the stone figure turn heartbreak into one of Somerset's best-known legends.",
+      "priority": 537,
+      "image": "legend-images/witch-of-wookey-hole-hero.jpg"
+    },
+    "Witch's Stone of Westleton": {
+      "alt": "A fallen gravestone and handkerchief in Westleton churchyard beneath moonlit trees",
+      "caption": "A visual interpretation of the Witch's Stone of Westleton",
+      "section_heading": "The stone in St Peter's churchyard",
+      "pullquote": "A handkerchief, a churchyard circuit and a fallen stone are enough to summon Suffolk devil-lore.",
+      "priority": 538,
+      "image": "legend-images/witch-s-stone-of-westleton-hero.jpg"
+    },
+    "Witch-hare of Dartmoor": {
+      "alt": "A large hare racing across a moonlit Dartmoor farmstead while an old woman watches from a cottage doorway",
+      "caption": "A visual interpretation of the Dartmoor witch-hare tradition",
+      "section_heading": "The hare on the moor",
+      "pullquote": "On Dartmoor, the witch-hare runs between cottage, field and old beliefs about shape-shifting.",
+      "priority": 539,
+      "image": "legend-images/witch-hare-of-dartmoor-hero.jpg"
+    },
+    "Witches of Belvoir": {
+      "alt": "Joan Flower and her daughters standing near Belvoir Castle with a glove and pouch of dark soil in the foreground",
+      "caption": "A visual interpretation of the Belvoir witchcraft accusations",
+      "section_heading": "The curse at Belvoir",
+      "pullquote": "The Flowers were accused of turning household objects and graveyard soil into a wasting curse.",
+      "priority": 540,
+      "image": "legend-images/witches-of-belvoir-hero.jpg"
     }
   }
 }

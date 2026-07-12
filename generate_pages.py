@@ -417,6 +417,8 @@ def collection_article_html(members, slugmap, cats, meta, featured_pages):
 BROWSE_STYLE = """
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent 25rem),linear-gradient(180deg,#e8dcc5,#f6f1e6 34rem,#eadfc9);color:#3f3023;font-family:'Spectral',serif;line-height:1.7;min-height:100vh}
+/* Mobile safeguard: keep the page itself from scrolling sideways. */
+@media(max-width:900px){html,body{overflow-x:hidden}}
 .site-banner{position:relative;background:linear-gradient(135deg,rgba(196,98,42,0.18) 0%,rgba(176,144,96,0.06) 35%,transparent 60%),linear-gradient(180deg,#1a0e06 0%,#2c1510 55%,#3d1e0c 100%);padding:16px 20px;text-align:center}
 .site-banner::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,#8b3a1a 15%,#b09060 50%,#8b3a1a 85%,transparent)}
 .site-banner::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(176,144,96,.6) 20%,rgba(196,98,42,.8) 50%,rgba(176,144,96,.6) 80%,transparent)}
@@ -815,7 +817,7 @@ FEATURED_PAGE = Template("""<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha384-sHL9NAb7lN7rfvG5lfHpm643Xkcjzp4jFvuavGOndn6pjVqS6ny56CAt3nsEVT4H" crossorigin="anonymous"/>
-<link rel="stylesheet" href="/legend-page.css?v=20260707h"/>
+<link rel="stylesheet" href="/legend-page.css?v=20260707i"/>
 <script type="application/ld+json">$jsonld</script>
 $breadcrumb_jsonld
 </head>

@@ -52,6 +52,35 @@ def content_fingerprint(leg):
     return hashlib.sha1("\x1f".join(parts).encode("utf-8")).hexdigest()
 
 
+def build_webp_heroes(quality=80):
+    """Generate a WebP sibling for every legend hero JPG.
+
+    Runs on every build, so newly-added *-hero.jpg files are converted
+    automatically — no separate step to remember. Skips webp that are already
+    up to date (webp newer than its jpg). No-op if Pillow isn't installed, in
+    which case pages fall back to serving the JPG (the <source> is only emitted
+    when the webp exists)."""
+    try:
+        from PIL import Image
+    except Exception:
+        print("  [webp] Pillow not installed — skipping hero WebP generation")
+        return 0
+    made = 0
+    for jpg in glob.glob(os.path.join("legend-images", "*-hero.jpg")):
+        webp = jpg[:-4] + ".webp"
+        if os.path.isfile(webp) and os.path.getmtime(webp) >= os.path.getmtime(jpg):
+            continue
+        try:
+            with Image.open(jpg) as im:
+                im.convert("RGB").save(webp, "WEBP", quality=quality, method=6)
+            made += 1
+        except Exception as e:
+            print(f"  [webp] failed {os.path.basename(jpg)}: {e}")
+    if made:
+        print(f"  [webp] generated/updated {made} hero WebP files")
+    return made
+
+
 def resolve_modified_dates(legends, today):
     """Set each legend's date_modified from whether its content changed since the
     last build, using a persisted fingerprint state. The date only moves when the
@@ -1148,7 +1177,19 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
     catcolour = meta.get(leg.get("category", ""), {}).get("colour", "#8b3a1a")
     if has_image:
         hero_url = f"{BASE}/{image_path.replace(os.sep, '/')}"
-        hero_media = f'<img src="{hero_url}" alt="{esc(featured.get("alt", ""))}"/>'
+        hero_alt = esc(featured.get("alt", ""))
+        # WebP with JPEG fallback. The hero is the LCP image, so load it eagerly
+        # with high priority (never lazy). width/height reserve the 16:9 box to
+        # avoid layout shift. The <source> is only added when the webp exists.
+        webp_rel = image_path.rsplit(".", 1)[0] + ".webp"
+        img_tag = (f'<img src="{hero_url}" alt="{hero_alt}" '
+                   f'width="1600" height="900" fetchpriority="high" decoding="async"/>')
+        if os.path.isfile(webp_rel):
+            webp_url = f"{BASE}/{webp_rel.replace(os.sep, '/')}"
+            hero_media = (f'<picture><source type="image/webp" srcset="{webp_url}"/>'
+                          f'{img_tag}</picture>')
+        else:
+            hero_media = img_tag
         hero_caption = (
             f'<span class="hero-caption">{esc(featured.get("caption", ""))}</span>'
             if featured.get("caption") else ""
@@ -1228,6 +1269,9 @@ def build():
     cat_intros, region_intros = load_page_intros()
     featured_pages = load_featured_pages()
     os.makedirs(OUT_DIR, exist_ok=True)
+
+    # Convert hero JPGs to WebP (auto-picks up newly-added images each build)
+    build_webp_heroes()
 
     # Slim achievement index — legend pages fetch this (not the full 1.3 MB
     # legends.json) purely to evaluate achievement-toast criteria, which only
@@ -2003,7 +2047,7 @@ h1::after{{content:"";display:block;width:132px;height:40px;margin:9px 0 19px;ba
 .c-count{{font-size:11px;color:#5c4a2a;font-style:italic}}
 .c-dot{{width:10px;height:10px;border-radius:50%;display:inline-block;flex-shrink:0}}
 .place-explorer{{position:relative;isolation:isolate;display:grid;grid-template-columns:minmax(320px,520px) minmax(0,1fr);align-items:center;gap:clamp(42px,7vw,110px);margin:48px 42px 82px;padding:58px 70px;border:0;background:rgba(246,241,230,.68);box-shadow:0 16px 40px rgba(63,48,35,.08)}}
-.place-explorer::after{{content:"";position:absolute;inset:-31px;z-index:2;box-sizing:border-box;border:38px solid transparent;border-image:url('/assets/ornaments/generated-variants/oak-branch-frame-v1.png') 115 / 38px / 0 round;filter:saturate(.62) brightness(.9) contrast(.9) drop-shadow(0 4px 5px rgba(63,48,35,.2));pointer-events:none}}
+.place-explorer::after{{content:"";position:absolute;inset:-31px;z-index:2;box-sizing:border-box;border:38px solid transparent;border-image:url('/assets/ornaments/generated-variants/oak-branch-frame-v1.png?v=20260713c') 230 / 38px / 0 round;filter:saturate(.62) brightness(.9) contrast(.9) drop-shadow(0 4px 5px rgba(63,48,35,.2));pointer-events:none}}
 .place-explorer>*{{position:relative;z-index:1}}
 .place-map-wrap{{display:flex;justify-content:center;background:radial-gradient(circle,rgba(176,144,96,.15),transparent 68%)}}
 .place-map{{display:block;width:min(100%,430px);height:auto;overflow:visible}}

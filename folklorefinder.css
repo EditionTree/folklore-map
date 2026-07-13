@@ -46,7 +46,7 @@ body.ff-paper {
   height: 28px;
   flex: 0 0 auto;
   opacity: 0.56;
-  background: url("assets/ornaments/generated-variants/oak-divider-horizontal.png?v=20260629a") center / contain no-repeat;
+  background: url("assets/ornaments/generated-variants/oak-divider-horizontal.webp?v=20260629a") center / contain no-repeat;
 }
 
 .ff-divider {
@@ -230,7 +230,7 @@ body.ff-paper {
 .home-page .section-rule::before {
   flex: 0 0 104px;
   height: 42px;
-  background: url("assets/ornaments/generated-variants/oak-divider-horizontal.png?v=20260629a") center / contain no-repeat;
+  background: url("assets/ornaments/generated-variants/oak-divider-horizontal.webp?v=20260629a") center / contain no-repeat;
   opacity: 0.58;
 }
 
@@ -586,7 +586,7 @@ body.interior-page {
   width: 300px;
   height: 300px;
   opacity: .12;
-  background: url("assets/ornaments/generated-variants/oak-corner-upper-right.png?v=20260629a") right top / contain no-repeat;
+  background: url("assets/ornaments/generated-variants/oak-corner-upper-right.webp?v=20260629a") right top / contain no-repeat;
   pointer-events: none;
 }
 
@@ -633,7 +633,7 @@ body.interior-page {
 .interior-page .section-rule::before {
   flex: 0 0 82px;
   height: 34px;
-  background: url("assets/ornaments/generated-variants/oak-divider-horizontal.png?v=20260629a") center / contain no-repeat;
+  background: url("assets/ornaments/generated-variants/oak-divider-horizontal.webp?v=20260629a") center / contain no-repeat;
   opacity: .58;
 }
 
@@ -678,7 +678,7 @@ body.interior-page {
   width: 190px;
   height: 190px;
   opacity: .13;
-  background: url("assets/ornaments/generated-variants/oak-corner-v1.png?v=20260629a") right bottom / contain no-repeat;
+  background: url("assets/ornaments/generated-variants/oak-corner-v1.webp?v=20260629a") right bottom / contain no-repeat;
   transform: rotate(180deg);
   pointer-events: none;
 }
@@ -703,7 +703,7 @@ body.interior-page {
   width: 220px;
   height: 220px;
   opacity: .1;
-  background: url("assets/ornaments/generated-variants/oak-corner-upper-right.png?v=20260629a") right top / contain no-repeat;
+  background: url("assets/ornaments/generated-variants/oak-corner-upper-right.webp?v=20260629a") right top / contain no-repeat;
   pointer-events: none;
 }
 
@@ -854,7 +854,7 @@ body.interior-page {
   z-index: 4;
   box-sizing: border-box;
   border: 36px solid transparent;
-  border-image: url("assets/ornaments/generated-variants/oak-branch-frame-v1.png?v=20260629a") 230 / 35px / 0 round;
+  border-image: url("assets/ornaments/generated-variants/oak-branch-frame-v1.webp?v=20260629a") 115 / 35px / 0 round;
   filter: saturate(.62) brightness(.88) contrast(.9) drop-shadow(0 4px 5px rgba(0,0,0,.24));
   pointer-events: none;
 }
@@ -919,13 +919,13 @@ body.interior-page {
 .home-page .recent-panel::before {
   left: -45px;
   bottom: -50px;
-  background: url("assets/ornaments/generated-variants/oak-corner-v1.png?v=20260629a") left bottom / contain no-repeat;
+  background: url("assets/ornaments/generated-variants/oak-corner-v1.webp?v=20260629a") left bottom / contain no-repeat;
 }
 
 .home-page .recent-panel::after {
   top: -48px;
   right: -34px;
-  background: url("assets/ornaments/generated-variants/oak-corner-upper-right.png?v=20260629a") right top / contain no-repeat;
+  background: url("assets/ornaments/generated-variants/oak-corner-upper-right.webp?v=20260629a") right top / contain no-repeat;
 }
 
 .home-page .recent-panel .section-rule {
@@ -1009,7 +1009,7 @@ body.interior-page {
   width: 210px;
   height: 210px;
   opacity: .11;
-  background: url("assets/ornaments/generated-variants/oak-corner-v1.png?v=20260629a") right bottom / contain no-repeat;
+  background: url("assets/ornaments/generated-variants/oak-corner-v1.webp?v=20260629a") right bottom / contain no-repeat;
   transform: rotate(180deg);
   pointer-events: none;
 }
@@ -1031,7 +1031,7 @@ body.interior-page {
   height: 36px;
   margin-top: 9px;
   opacity: .46;
-  background: url("assets/ornaments/generated-variants/oak-divider-horizontal.png?v=20260629a") left center / contain no-repeat;
+  background: url("assets/ornaments/generated-variants/oak-divider-horizontal.webp?v=20260629a") left center / contain no-repeat;
 }
 
 .home-page .landing-lower-grid .bottom-cta p {
@@ -1079,7 +1079,7 @@ body.interior-page {
   width: 280px;
   height: 280px;
   opacity: .1;
-  background: url("assets/ornaments/generated-variants/oak-corner-upper-right.png?v=20260629a") right top / contain no-repeat;
+  background: url("assets/ornaments/generated-variants/oak-corner-upper-right.webp?v=20260629a") right top / contain no-repeat;
   pointer-events: none;
 }
 
@@ -1119,7 +1119,7 @@ body.interior-page {
   height: 36px;
   margin-top: 8px;
   opacity: .48;
-  background: url("assets/ornaments/generated-variants/oak-divider-horizontal.png?v=20260629a") left center / contain no-repeat;
+  background: url("assets/ornaments/generated-variants/oak-divider-horizontal.webp?v=20260629a") left center / contain no-repeat;
 }
 
 .home-page .guild-heading p:not(.guild-kicker) {
@@ -1189,7 +1189,7 @@ body.interior-page {
   width: 94px;
   height: 94px;
   opacity: .2;
-  background: url("assets/ornaments/generated-variants/oak-corner-v1.png?v=20260629a") right bottom / contain no-repeat;
+  background: url("assets/ornaments/generated-variants/oak-corner-v1.webp?v=20260629a") right bottom / contain no-repeat;
   transform: rotate(180deg);
 }
 

@@ -8570,6 +8570,286 @@
         "Setting": "Tynemouth",
         "Motif": "Rattling coins"
       }
+    },
+    "Julian's Bower": {
+      "image": "legend-images/julian-s-bower-hero.jpg",
+      "alt": "The circular turf maze of Julian's Bower above the Humber landscape in golden light",
+      "caption": "A visual interpretation of Julian's Bower at Alkborough",
+      "map_title": "Lincolnshire",
+      "section_heading": "The maze in the turf",
+      "pullquote": "The old turf maze keeps a winding ritual path in the North Lincolnshire grass.",
+      "facts": {
+        "Tradition": "English turf-maze lore",
+        "Type": "Turf maze",
+        "Setting": "Alkborough",
+        "Motif": "Winding path"
+      }
+    },
+    "Kirk Yetholm, Seat of the Gypsy Kings": {
+      "image": "legend-images/kirk-yetholm-seat-of-the-gypsy-kings-hero.jpg",
+      "alt": "A ceremonial chair outside old stone buildings at Kirk Yetholm with Border hills beyond",
+      "caption": "A visual interpretation of Kirk Yetholm and the Faa dynasty",
+      "map_title": "Kirk Yetholm, Scottish Borders",
+      "section_heading": "The Border seat",
+      "pullquote": "For centuries Kirk Yetholm was remembered as the seat of the Romani rulers of the Borders.",
+      "facts": {
+        "Tradition": "Scottish Romani history",
+        "Type": "Historic village seat",
+        "Setting": "Kirk Yetholm",
+        "Motif": "Faa dynasty"
+      }
+    },
+    "Knocknakilla": {
+      "image": "legend-images/knocknakilla-hero.jpg",
+      "alt": "Knocknakilla stone circle on Musherabeg Mountain with quartz pebbles in dawn mist",
+      "caption": "A visual interpretation of Knocknakilla stone circle",
+      "map_title": "Knocknakilla, County Cork",
+      "section_heading": "The quartz among the stones",
+      "pullquote": "Quartz glints around the mountain stones where old solar ritual and fairy tradition meet.",
+      "facts": {
+        "Tradition": "Irish megalithic lore",
+        "Type": "Stone circle",
+        "Setting": "Musherabeg Mountain",
+        "Motif": "Quartz ritual"
+      }
+    },
+    "Knocknarea": {
+      "image": "legend-images/knocknarea-hero.jpg",
+      "alt": "The great cairn on Knocknarea summit above Sligo Bay in stormy dawn light",
+      "caption": "A visual interpretation of Knocknarea and Queen Medb's grave",
+      "map_title": "County Sligo, Ireland",
+      "section_heading": "The queen on the summit",
+      "pullquote": "Medb was said to stand buried upright in the cairn, still facing her enemies.",
+      "facts": {
+        "Tradition": "Irish heroic lore",
+        "Type": "Summit cairn",
+        "Setting": "Knocknarea",
+        "Motif": "Queen Medb's grave"
+      }
+    },
+    "Labbacallee wedge tomb": {
+      "image": "legend-images/labbacallee-wedge-tomb-hero.jpg",
+      "alt": "The long stone chamber of Labbacallee wedge tomb in a Cork field at stormy sunset",
+      "caption": "A visual interpretation of Labbacallee, the Hag's Bed",
+      "map_title": "Glanworth, County Cork",
+      "section_heading": "The Hag's Bed",
+      "pullquote": "Ireland's great wedge tomb was remembered as the bed of the hag and guarded by dangerous enchantment.",
+      "facts": {
+        "Tradition": "Irish monument lore",
+        "Type": "Wedge tomb",
+        "Setting": "Glanworth",
+        "Motif": "Hag's bed"
+      }
+    },
+    "Lia Fáil": {
+      "image": "legend-images/lia-fail-hero.jpg",
+      "alt": "The Lia Fáil standing stone on the Hill of Tara above misty green earthworks",
+      "caption": "A visual interpretation of the Stone of Destiny at Tara",
+      "map_title": "Ireland",
+      "section_heading": "The speaking stone",
+      "pullquote": "The Stone of Destiny was said to cry out beneath the rightful High King.",
+      "facts": {
+        "Tradition": "Irish royal lore",
+        "Type": "Coronation stone",
+        "Setting": "Hill of Tara",
+        "Motif": "Rightful king"
+      }
+    },
+    "Listoghil": {
+      "image": "legend-images/listoghil-hero.jpg",
+      "alt": "Listoghil's tomb entrance at Carrowmore lit by sunrise with a carved footprint-like stone",
+      "caption": "A visual interpretation of Listoghil at Carrowmore",
+      "map_title": "Carrowmore, County Sligo",
+      "section_heading": "The sunrise tomb",
+      "pullquote": "The central tomb of Carrowmore turns toward the seasonal sunrise and echoes old rites of sovereignty.",
+      "facts": {
+        "Tradition": "Irish megalithic lore",
+        "Type": "Passage tomb",
+        "Setting": "Carrowmore",
+        "Motif": "Seasonal sunrise"
+      }
+    },
+    "Llangorse Lake": {
+      "image": "legend-images/llangorse-lake-hero.jpg",
+      "alt": "Llangorse Lake at dawn with a submerged bell and stonework visible beneath still water",
+      "caption": "A visual interpretation of the drowned town beneath Llangorse Lake",
+      "map_title": "Bannau Brycheiniog, Powys",
+      "section_heading": "The bells beneath the lake",
+      "pullquote": "Gerald of Wales recorded the tale of a town sunk beneath the water, its bells still tolling on still days.",
+      "facts": {
+        "Tradition": "Welsh lake lore",
+        "Type": "Drowned town legend",
+        "Setting": "Llangorse Lake",
+        "Motif": "Underwater bells"
+      }
+    },
+    "Llyn Barfog": {
+      "image": "legend-images/llyn-barfog-hero.jpg",
+      "alt": "Llyn Barfog beneath misty Welsh mountains with a hoofprint-like hollow in shoreline rock",
+      "caption": "A visual interpretation of Llyn Barfog, the Bearded Lake",
+      "map_title": "Aberdyfi, Gwynedd",
+      "section_heading": "The hoofprint by the water",
+      "pullquote": "Arthur was said to have dragged the Afanc from the lake, leaving a hoofprint in the rock.",
+      "facts": {
+        "Tradition": "Welsh Arthurian lore",
+        "Type": "Upland lake",
+        "Setting": "Southern Snowdonia",
+        "Motif": "Afanc and hoofprint"
+      }
+    },
+    "Llyn Morwynion": {
+      "image": "legend-images/llyn-morwynion-hero.jpg",
+      "alt": "The dark upland waters of Llyn Morwynion with pale flowers and reeds at twilight",
+      "caption": "A visual interpretation of Llyn Morwynion, Lake of the Maidens",
+      "map_title": "Ffestiniog, Gwynedd",
+      "section_heading": "The lake of the maidens",
+      "pullquote": "The waters were remembered for the maidens who fled into the lake rather than be taken.",
+      "facts": {
+        "Tradition": "Welsh Mabinogion lore",
+        "Type": "Upland lake",
+        "Setting": "Ffestiniog",
+        "Motif": "Drowned maidens"
+      }
+    },
+    "Lochmaben Stone": {
+      "image": "legend-images/lochmaben-stone-hero.jpg",
+      "alt": "The Lochmaben Stone standing over the Solway Firth at sunrise",
+      "caption": "A visual interpretation of the Lochmaben Stone",
+      "map_title": "Gretna, Dumfries and Galloway",
+      "section_heading": "The border megalith",
+      "pullquote": "The stone stands in a border landscape of law, ritual, and deep Celtic memory.",
+      "facts": {
+        "Tradition": "Scottish border lore",
+        "Type": "Megalith",
+        "Setting": "Solway Firth",
+        "Motif": "Mabon and border law"
+      }
+    },
+    "Long Meg and Her Daughters": {
+      "image": "legend-images/long-meg-and-her-daughters-hero.jpg",
+      "alt": "Long Meg standing apart from her stone circle in Cumbria under a fiery storm sky",
+      "caption": "A visual interpretation of Long Meg and Her Daughters",
+      "map_title": "Cumbria",
+      "section_heading": "The coven in stone",
+      "pullquote": "The circle was said to be a coven turned to stone for dancing on the Sabbath.",
+      "facts": {
+        "Tradition": "English witch lore",
+        "Type": "Stone circle",
+        "Setting": "Cumbria",
+        "Motif": "Petrified dancers"
+      }
+    },
+    "Lough Derg (St Patrick's Purgatory)": {
+      "image": "legend-images/lough-derg-st-patrick-s-purgatory-hero.jpg",
+      "alt": "Station Island on misty Lough Derg with a small cave-like stone opening on the shore",
+      "caption": "A visual interpretation of Lough Derg and St Patrick's Purgatory",
+      "map_title": "County Donegal, Ireland",
+      "section_heading": "The island of penance",
+      "pullquote": "A cave on the island was said to lead into Purgatory, drawing pilgrims for centuries.",
+      "facts": {
+        "Tradition": "Irish Christian pilgrimage lore",
+        "Type": "Pilgrimage island",
+        "Setting": "Lough Derg",
+        "Motif": "Purgatory cave"
+      }
+    },
+    "Lough na Súil": {
+      "image": "legend-images/lough-na-suil-hero.jpg",
+      "alt": "Lough na Súil in a limestone hollow with an eye-shaped dark pool after the water recedes",
+      "caption": "A visual interpretation of Lough na Súil, the Lake of the Eye",
+      "map_title": "Geevagh, County Sligo",
+      "section_heading": "The lake of the eye",
+      "pullquote": "Balor's fallen eye was said to burn a hollow into the land where the lake drains and returns.",
+      "facts": {
+        "Tradition": "Irish mythological lore",
+        "Type": "Karst lake",
+        "Setting": "County Sligo",
+        "Motif": "Balor's eye"
+      }
+    },
+    "Maeshowe Runes": {
+      "image": "legend-images/maeshowe-runes-hero.jpg",
+      "alt": "Runes scratched into the stone wall inside Maeshowe's ancient chamber",
+      "caption": "A visual interpretation of the Norse runes inside Maeshowe",
+      "map_title": "Orkney",
+      "section_heading": "The tomb as noticeboard",
+      "pullquote": "Norse visitors broke into the Neolithic tomb and left their marks on its stones.",
+      "facts": {
+        "Tradition": "Orcadian Norse lore",
+        "Type": "Chambered cairn",
+        "Setting": "Maeshowe",
+        "Motif": "Runic graffiti"
+      }
+    },
+    "Mag Lena": {
+      "image": "legend-images/mag-lena-hero.jpg",
+      "alt": "A misty Offaly plain divided by an ancient earthwork and marker stone at dawn",
+      "caption": "A visual interpretation of Mag Lena",
+      "map_title": "County Offaly",
+      "section_heading": "The divided plain",
+      "pullquote": "The battle on Mag Lena was remembered as the moment Ireland split into two great halves.",
+      "facts": {
+        "Tradition": "Irish legendary history",
+        "Type": "Battlefield plain",
+        "Setting": "County Offaly",
+        "Motif": "Conn's Half and Mug's Half"
+      }
+    },
+    "Martin Mere": {
+      "image": "legend-images/martin-mere-hero.jpg",
+      "alt": "A sword lying half-submerged among reeds in the waters of Martin Mere at dawn",
+      "caption": "A visual interpretation of Martin Mere and the casting away of Excalibur",
+      "map_title": "Lancashire",
+      "section_heading": "The sword in the mere",
+      "pullquote": "Tradition placed Bedivere's final cast of Excalibur in the waters of the old Lancashire mere.",
+      "facts": {
+        "Tradition": "English Arthurian lore",
+        "Type": "Former lake",
+        "Setting": "Lancashire",
+        "Motif": "Excalibur returned"
+      }
+    },
+    "Meehambee Dolmen": {
+      "image": "legend-images/meehambee-dolmen-hero.jpg",
+      "alt": "Meehambee Dolmen's huge tilted capstone in a quiet Roscommon field",
+      "caption": "A visual interpretation of Meehambee Dolmen, the Giant's Bed",
+      "map_title": "Meehambee, County Roscommon",
+      "section_heading": "The Giant's Bed",
+      "pullquote": "The great capstone rests at a dramatic tilt, giving the portal tomb its giant-sized name.",
+      "facts": {
+        "Tradition": "Irish monument lore",
+        "Type": "Portal tomb",
+        "Setting": "County Roscommon",
+        "Motif": "Giant's bed"
+      }
+    },
+    "Miosgán Meadhbha": {
+      "image": "legend-images/miosgan-meadhbha-hero.jpg",
+      "alt": "Miosgán Meadhbha cairn on Knocknarea summit above Sligo Bay at stormy sunset",
+      "caption": "A visual interpretation of Miosgán Meadhbha, Maeve's Cairn",
+      "map_title": "Knocknarea, County Sligo",
+      "section_heading": "Maeve's cairn",
+      "pullquote": "The immense cairn crowns Knocknarea, where tradition places Queen Medb's tomb.",
+      "facts": {
+        "Tradition": "Irish heroic lore",
+        "Type": "Summit cairn",
+        "Setting": "Knocknarea",
+        "Motif": "Maeve's tomb"
+      }
+    },
+    "Moel Tŷ Uchaf": {
+      "image": "legend-images/moel-ty-uchaf-hero.jpg",
+      "alt": "The Moel Tŷ Uchaf stone circle on a misty Welsh upland slope",
+      "caption": "A visual interpretation of Moel Tŷ Uchaf stone circle",
+      "map_title": "Llandrillo, Denbighshire",
+      "section_heading": "The circle on the hill",
+      "pullquote": "The small circle keeps its place on the high Welsh slope beneath the Berwyn hills.",
+      "facts": {
+        "Tradition": "Welsh megalithic lore",
+        "Type": "Stone circle",
+        "Setting": "Denbighshire",
+        "Motif": "Upland ring"
+      }
     }
   }
 }

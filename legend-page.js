@@ -335,28 +335,66 @@
     });
   }
 
-  if(shareButton&&navigator.share){
-    var shareData={title:document.title,url:url};
-    var canShare=true;
-    if(navigator.canShare){
-      try{
-        canShare=navigator.canShare(shareData);
-      }catch(error){
-        canShare=false;
-      }
+  if(shareButton){
+    // Build an explicit share menu (works on desktop AND mobile, unlike the
+    // Web Share API which is absent on most desktop browsers).
+    shareButton.hidden=false;
+    function metaContent(prop){
+      var m=document.querySelector('meta[property="'+prop+'"]');
+      return m?m.getAttribute('content'):'';
     }
-    if(canShare){
-      shareButton.hidden=false;
-      shareButton.addEventListener('click',function(){
-        navigator.share(shareData).catch(function(error){
-          if(error&&error.name==='AbortError')return;
-          copyLink().then(function(copied){
-            if(copied){
-              announce('Sharing unavailable here, so the link was copied instead.');
-            }
-          });
-        });
-      });
+    var shareTitle=metaContent('og:title')||document.title;
+    var shareImage=metaContent('og:image');
+    var enc=encodeURIComponent;
+    var networks=[
+      ['Reddit','https://www.reddit.com/submit?url='+enc(url)+'&title='+enc(shareTitle)],
+      ['Pinterest','https://www.pinterest.com/pin/create/button/?url='+enc(url)+'&media='+enc(shareImage)+'&description='+enc(shareTitle)],
+      ['X','https://x.com/intent/tweet?url='+enc(url)+'&text='+enc(shareTitle)],
+      ['Facebook','https://www.facebook.com/sharer/sharer.php?u='+enc(url)]
+    ];
+    var wrap=document.createElement('span');
+    wrap.className='share-wrap';
+    shareButton.parentNode.insertBefore(wrap,shareButton);
+    wrap.appendChild(shareButton);
+    var menu=document.createElement('div');
+    menu.className='share-menu';
+    menu.setAttribute('role','menu');
+    menu.hidden=true;
+    networks.forEach(function(n){
+      var a=document.createElement('a');
+      a.className='share-menu-item';
+      a.setAttribute('role','menuitem');
+      a.href=n[1];
+      a.target='_blank';
+      a.rel='noopener noreferrer';
+      a.textContent=n[0];
+      menu.appendChild(a);
+    });
+    wrap.appendChild(menu);
+    shareButton.setAttribute('aria-haspopup','true');
+    shareButton.setAttribute('aria-expanded','false');
+    function onDocClick(e){ if(!wrap.contains(e.target)) closeMenu(); }
+    function onKey(e){ if(e.key==='Escape'){ closeMenu(); shareButton.focus(); } }
+    function openMenu(){
+      menu.hidden=false;
+      shareButton.setAttribute('aria-expanded','true');
+      // defer so the click that opened the menu doesn't immediately close it
+      setTimeout(function(){
+        document.addEventListener('click',onDocClick);
+        document.addEventListener('keydown',onKey);
+      },0);
     }
+    function closeMenu(){
+      menu.hidden=true;
+      shareButton.setAttribute('aria-expanded','false');
+      document.removeEventListener('click',onDocClick);
+      document.removeEventListener('keydown',onKey);
+    }
+    shareButton.addEventListener('click',function(){
+      if(menu.hidden){ openMenu(); } else { closeMenu(); }
+    });
+    menu.addEventListener('click',function(e){
+      if(e.target.closest('.share-menu-item')) closeMenu();
+    });
   }
 })();

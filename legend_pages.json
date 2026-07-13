@@ -319,17 +319,17 @@
     },
     "Giant's Causeway": {
       "priority": 22,
-      "image": "legend-images/giants-causeway-hero.jpg",
-      "alt": "Fionn mac Cumhaill watching a far larger giant approach across the wet basalt columns of the Antrim coast",
-      "caption": "A visual interpretation of Fionn and Benandonner at the Giant's Causeway",
-      "map_title": "Giant's Causeway, County Antrim",
-      "section_heading": "The giant across the sea",
-      "pullquote": "Reasoning that if the infant was this size, its father must be a giant beyond anything he could survive, Benandonner fled.",
+      "image": "legend-images/giant-s-causeway-hero.jpg",
+      "alt": "Wet hexagonal basalt columns of the Giant's Causeway leading into a stormy sea",
+      "caption": "A visual interpretation of the Giant's Causeway at Bushmills",
+      "map_title": "Bushmills, County Antrim",
+      "section_heading": "The road to Scotland",
+      "pullquote": "The causeway was said to be the road Fionn mac Cumhaill built across the sea.",
       "facts": {
-        "Tradition": "Irish folklore",
-        "Type": "Legendary stone road",
-        "Setting": "County Antrim",
-        "Motif": "A giant outwitted"
+        "Tradition": "Irish and Scottish giant lore",
+        "Type": "Basalt causeway",
+        "Setting": "North Antrim coast",
+        "Motif": "Giant-built road"
       }
     },
     "Cú Chulainn": {
@@ -8303,6 +8303,272 @@
         "Type": "Mining landscape",
         "Setting": "West Cornwall",
         "Motif": "Ancient tin working"
+      }
+    },
+    "Dolmen of the Four Maols": {
+      "image": "legend-images/dolmen-of-the-four-maols-hero.jpg",
+      "alt": "A lichen-covered dolmen on Primrose Hill above the River Moy at misty dawn",
+      "caption": "A visual interpretation of the Dolmen of the Four Maols at Ballina",
+      "map_title": "Ballina, County Mayo",
+      "section_heading": "The tomb on Primrose Hill",
+      "pullquote": "Four brothers were said to rest beneath the stones after Ceallach's murder was avenged.",
+      "facts": {
+        "Tradition": "Irish saint and monument lore",
+        "Type": "Burial cist",
+        "Setting": "Primrose Hill, Ballina",
+        "Motif": "Four executed brothers"
+      }
+    },
+    "Dragon Hill, Uffington": {
+      "image": "legend-images/dragon-hill-uffington-hero.jpg",
+      "alt": "The bare chalk patch on Dragon Hill with the Uffington White Horse visible across the downs",
+      "caption": "A visual interpretation of Dragon Hill below the Uffington White Horse",
+      "map_title": "Uffington, Oxfordshire",
+      "section_heading": "The chalk mark of the dragon",
+      "pullquote": "The bare patch on the hill was said to mark where Saint George slew the dragon.",
+      "facts": {
+        "Tradition": "English dragon lore",
+        "Type": "Chalk hill legend",
+        "Setting": "Uffington Downs",
+        "Motif": "Dragon-slaying mark"
+      }
+    },
+    "Dunwich: The Drowned City Bells": {
+      "image": "legend-images/dunwich-the-drowned-city-bells-hero.jpg",
+      "alt": "Storm waves over submerged bells and stonework below the eroding cliffs of Dunwich",
+      "caption": "A visual interpretation of the drowned bells of Dunwich",
+      "map_title": "Dunwich, Suffolk",
+      "section_heading": "The bells beneath the sea",
+      "pullquote": "In storms, the bells of the drowned churches are still said to sound beneath the water.",
+      "facts": {
+        "Tradition": "English drowned-city lore",
+        "Type": "Submerged town legend",
+        "Setting": "Suffolk coast",
+        "Motif": "Drowned bells"
+      }
+    },
+    "Dwarfie Stane": {
+      "image": "legend-images/dwarfie-stane-hero.jpg",
+      "alt": "The rock-cut Dwarfie Stane standing alone on Hoy moorland beneath Orcadian cloud",
+      "caption": "A visual interpretation of the Dwarfie Stane on Hoy",
+      "map_title": "Hoy, Orkney",
+      "section_heading": "The hollowed stone",
+      "pullquote": "The solitary sandstone block was hollowed into a tomb and gathered giant-lore around it.",
+      "facts": {
+        "Tradition": "Orcadian monument lore",
+        "Type": "Rock-cut tomb",
+        "Setting": "Hoy, Orkney",
+        "Motif": "Giant's stone"
+      }
+    },
+    "Eightercua": {
+      "image": "legend-images/eightercua-hero.jpg",
+      "alt": "The Eightercua stone row near Waterville standing above the Kerry coast at sunrise",
+      "caption": "A visual interpretation of Eightercua and the grave of Scéine",
+      "map_title": "Waterville, County Kerry",
+      "section_heading": "The grave by the sea",
+      "pullquote": "The stones were remembered as the grave of Scéine, wife of the poet Amergin.",
+      "facts": {
+        "Tradition": "Irish Milesian legend",
+        "Type": "Bronze Age stone row",
+        "Setting": "Ring of Kerry",
+        "Motif": "Scéine's grave"
+      }
+    },
+    "Farranahineeny Stone Row": {
+      "image": "legend-images/farranahineeny-stone-row-hero.jpg",
+      "alt": "A short row of standing stones in a wet Kerry field with mountains beyond",
+      "caption": "A visual interpretation of Farranahineeny Stone Row",
+      "map_title": "Farranahineeny, County Kerry",
+      "section_heading": "The row in the uplands",
+      "pullquote": "The stones keep their alignment in the rain-bright Kerry fields.",
+      "facts": {
+        "Type": "Stone row",
+        "Setting": "County Kerry upland",
+        "Status": "National Monument",
+        "Motif": "Aligned stones"
+      }
+    },
+    "Finn McCools Fingers": {
+      "image": "legend-images/finn-mccools-fingers-hero.jpg",
+      "alt": "Five standing stones on Shantemon Mountain silhouetted like fingers in golden storm light",
+      "caption": "A visual interpretation of Finn McCools Fingers on Shantemon Mountain",
+      "map_title": "Shantemon Mountain, County Cavan",
+      "section_heading": "The five fingers",
+      "pullquote": "The stones were said to be the severed fingers of Fionn mac Cumhaill.",
+      "facts": {
+        "Tradition": "Irish Fenian lore",
+        "Type": "Standing stones",
+        "Setting": "Shantemon Mountain",
+        "Motif": "Fionn's fingers"
+      }
+    },
+    "Fintan's Grave": {
+      "image": "legend-images/fintan-s-grave-hero.jpg",
+      "alt": "A cave-like stone grave on an Arra Mountain hillside above misty Lough Derg",
+      "caption": "A visual interpretation of Fintan's Grave in the Arra Mountains",
+      "map_title": "Arra Mountains",
+      "section_heading": "The ancient witness",
+      "pullquote": "Fintan was said to remember the oldest ages of Ireland from his mountain refuge.",
+      "facts": {
+        "Tradition": "Irish mythological lore",
+        "Type": "Cave or grave legend",
+        "Setting": "Arra Mountains",
+        "Motif": "Ancient survivor"
+      }
+    },
+    "Folkestone White Horse": {
+      "image": "legend-images/folkestone-white-horse-hero.jpg",
+      "alt": "A white chalk horse cut into a green hillside above Folkestone and the Channel",
+      "caption": "A visual interpretation of the Folkestone White Horse",
+      "map_title": "Kent",
+      "section_heading": "The horse on the downs",
+      "pullquote": "The modern chalk horse carries the old power of hillside figures into the Kent landscape.",
+      "facts": {
+        "Tradition": "English hill-figure lore",
+        "Type": "Chalk hill figure",
+        "Setting": "Folkestone Downs",
+        "Motif": "White horse"
+      }
+    },
+    "Glantane East": {
+      "image": "legend-images/glantane-east-hero.jpg",
+      "alt": "A lichen-covered stone circle and standing stones in the rainy uplands of County Cork",
+      "caption": "A visual interpretation of the Glantane East megalithic site",
+      "map_title": "Glantane, County Cork",
+      "section_heading": "The upland stones",
+      "pullquote": "The stones stand in the Cork hills as part of a wider megalithic landscape.",
+      "facts": {
+        "Type": "Megalithic complex",
+        "Setting": "County Cork uplands",
+        "Status": "National Monument",
+        "Motif": "Stone circle"
+      }
+    },
+    "Granny Kempock Stone": {
+      "image": "legend-images/granny-kempock-stone-hero.jpg",
+      "alt": "The hooded Granny Kempock Stone standing above Gourock harbour at dusk",
+      "caption": "A visual interpretation of the Granny Kempock Stone",
+      "map_title": "Gourock, Scotland",
+      "section_heading": "The luck-giving stone",
+      "pullquote": "Sailors and newlyweds once circled the stone for luck before facing the sea.",
+      "facts": {
+        "Tradition": "Scottish coastal folklore",
+        "Type": "Standing stone",
+        "Setting": "Gourock",
+        "Motif": "Luck and witchcraft"
+      }
+    },
+    "Great Bell of Burgh le Marsh": {
+      "image": "legend-images/great-bell-of-burgh-le-marsh-hero.jpg",
+      "alt": "A bronze church bell in a medieval tower during a storm over Lincolnshire fenland",
+      "caption": "A visual interpretation of the Great Bell of Burgh le Marsh",
+      "map_title": "Lincolnshire, England",
+      "section_heading": "The bell in the storm",
+      "pullquote": "The bell was remembered for ringing through a great storm until the sexton was overcome.",
+      "facts": {
+        "Tradition": "English church legend",
+        "Type": "Bell legend",
+        "Setting": "Burgh le Marsh",
+        "Motif": "Storm warning"
+      }
+    },
+    "Grubstones": {
+      "image": "legend-images/grubstones-hero.jpg",
+      "alt": "A low ring of weathered stones on Yorkshire moorland under a dramatic sunset",
+      "caption": "A visual interpretation of Grubstones on Burley Moor",
+      "map_title": "Yorkshire",
+      "section_heading": "The moorland ring",
+      "pullquote": "The low stones mark an ancient ring in the exposed Yorkshire heather.",
+      "facts": {
+        "Type": "Stone circle or ring cairn",
+        "Setting": "Burley Moor",
+        "Status": "Megalithic monument",
+        "Motif": "Moorland ring"
+      }
+    },
+    "Haxey Hood": {
+      "image": "legend-images/haxey-hood-hero.jpg",
+      "alt": "A worn leather hood lying on frosted grass at the edge of Haxey village",
+      "caption": "A visual interpretation of the Haxey Hood winter custom",
+      "map_title": "Haxey, North Lincolnshire",
+      "section_heading": "The hood in the frost",
+      "pullquote": "The village custom turns a winter field into a living piece of North Lincolnshire folklore.",
+      "facts": {
+        "Tradition": "English folk custom",
+        "Type": "Midwinter game",
+        "Setting": "Haxey",
+        "Motif": "The hood"
+      }
+    },
+    "Heapstown Cairn": {
+      "image": "legend-images/heapstown-cairn-hero.jpg",
+      "alt": "A broad stone cairn in County Sligo catching golden light beneath rain clouds",
+      "caption": "A visual interpretation of Heapstown Cairn",
+      "map_title": "Heapstown, County Sligo",
+      "section_heading": "The cairn in the Sligo fields",
+      "pullquote": "The great cairn holds its place in the Sligo landscape like a memory made of stone.",
+      "facts": {
+        "Type": "Neolithic cairn",
+        "Setting": "County Sligo",
+        "Status": "National Monument",
+        "Motif": "Ancient burial mound"
+      }
+    },
+    "Hill of Tara": {
+      "image": "legend-images/hill-of-tara-hero.jpg",
+      "alt": "The Lia Fáil standing stone on the Hill of Tara above misty earthworks at sunrise",
+      "caption": "A visual interpretation of the Hill of Tara and the Stone of Destiny",
+      "map_title": "County Meath, Ireland",
+      "section_heading": "The royal hill",
+      "pullquote": "Tara was remembered as the seat of Ireland's high kings and the speaking stone of sovereignty.",
+      "facts": {
+        "Tradition": "Irish royal lore",
+        "Type": "Ceremonial hill",
+        "Setting": "County Meath",
+        "Motif": "Stone of Destiny"
+      }
+    },
+    "Hy-Brasil": {
+      "image": "legend-images/hy-brasil-hero.jpg",
+      "alt": "A phantom island emerging from mist on the Atlantic horizon west of Ireland",
+      "caption": "A visual interpretation of Hy-Brasil, the vanishing island",
+      "map_title": "North Atlantic, west of Ireland",
+      "section_heading": "The island in the mist",
+      "pullquote": "Hy-Brasil was said to appear only rarely before the sea and fog closed over it again.",
+      "facts": {
+        "Tradition": "Irish maritime folklore",
+        "Type": "Phantom island",
+        "Setting": "Western Atlantic",
+        "Motif": "Vanishing land"
+      }
+    },
+    "Inishbofin White Cow": {
+      "image": "legend-images/inishbofin-white-cow-hero.jpg",
+      "alt": "A white cow standing on a misty Inishbofin beach as fog lifts from the island shore",
+      "caption": "A visual interpretation of the Inishbofin White Cow legend",
+      "map_title": "County Galway, Ireland",
+      "section_heading": "The cow that revealed the island",
+      "pullquote": "The white cow was the sign by which the hidden island came into human sight.",
+      "facts": {
+        "Tradition": "Irish island folklore",
+        "Type": "Origin legend",
+        "Setting": "Inishbofin",
+        "Motif": "White cow"
+      }
+    },
+    "Jingling Geordie's Hole": {
+      "image": "legend-images/jingling-geordie-s-hole-hero.jpg",
+      "alt": "A dark Tynemouth sea cave with faint coin glints on wet rocks at dusk",
+      "caption": "A visual interpretation of Jingling Geordie's Hole at Tynemouth",
+      "map_title": "Tynemouth",
+      "section_heading": "The coins in the cave",
+      "pullquote": "The cave was said to keep the sound of Geordie's hoarded coins in the dark.",
+      "facts": {
+        "Tradition": "Northumbrian coastal folklore",
+        "Type": "Sea cave legend",
+        "Setting": "Tynemouth",
+        "Motif": "Rattling coins"
       }
     }
   }

@@ -181,7 +181,7 @@
   function checkAchievementToasts(visitedLegendName){
     Promise.all([
       fetch('/assets/achievements/achievements.json').then(function(r){return r.json();}),
-      fetch('/legends.json').then(function(r){return r.json();})
+      fetch('/legends-index.json').then(function(r){return r.json();})
     ]).then(function(results){
       var achData=results[0], legendData=results[1];
       var legends=legendData.legends||[];

@@ -854,7 +854,7 @@ body.interior-page {
   z-index: 4;
   box-sizing: border-box;
   border: 36px solid transparent;
-  border-image: url("assets/ornaments/generated-variants/oak-branch-frame-v1.webp?v=20260629a") 115 / 35px / 0 round;
+  border-image: url("assets/ornaments/generated-variants/oak-branch-frame-v1.png?v=20260629a") 115 / 35px / 0 round;
   filter: saturate(.62) brightness(.88) contrast(.9) drop-shadow(0 4px 5px rgba(0,0,0,.24));
   pointer-events: none;
 }

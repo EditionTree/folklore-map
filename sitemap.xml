@@ -1084,7 +1084,12 @@
     <image:title>A cinematic aquatic folklore image of Dobhar-chú, shown as the central water spirit, lake beast, sea creature, or drowned-place legend from County Leitrim, Ireland</image:title>
     <image:caption>A visual interpretation of Dobhar-chú</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/dolmen-of-the-four-maols</loc><lastmod>2026-06-22</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/dolmen-of-the-four-maols</loc><lastmod>2026-06-22</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/dolmen-of-the-four-maols-hero.jpg</image:loc>
+    <image:title>A lichen-covered dolmen on Primrose Hill above the River Moy at misty dawn</image:title>
+    <image:caption>A visual interpretation of the Dolmen of the Four Maols at Ballina</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/donn</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/donn-hero.jpg</image:loc>
@@ -1133,7 +1138,12 @@
     <image:title>A cinematic aquatic folklore image of Dozmary Pool, shown as the central water spirit, lake beast, sea creature, or drowned-place legend from Cornwall</image:title>
     <image:caption>A visual interpretation of Dozmary Pool</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/dragon-hill-uffington</loc><lastmod>2026-06-19</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/dragon-hill-uffington</loc><lastmod>2026-06-19</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/dragon-hill-uffington-hero.jpg</image:loc>
+    <image:title>The bare chalk patch on Dragon Hill with the Uffington White Horse visible across the downs</image:title>
+    <image:caption>A visual interpretation of Dragon Hill below the Uffington White Horse</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/dragon-of-brinsop</loc><lastmod>2026-06-16</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/dragon-of-brinsop-hero.jpg</image:loc>
@@ -1212,8 +1222,18 @@
     <image:title>Saint Dunstan in a smoky Somerset forge holding blacksmith&#x27;s tongs toward a shadowy tempter</image:title>
     <image:caption>A visual interpretation of St Dunstan&#x27;s forge legend</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/dunwich-the-drowned-city-bells</loc><lastmod>2026-06-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/dwarfie-stane</loc><lastmod>2026-06-17</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/dunwich-the-drowned-city-bells</loc><lastmod>2026-06-08</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/dunwich-the-drowned-city-bells-hero.jpg</image:loc>
+    <image:title>Storm waves over submerged bells and stonework below the eroding cliffs of Dunwich</image:title>
+    <image:caption>A visual interpretation of the drowned bells of Dunwich</image:caption>
+  </image:image></url>
+  <url><loc>https://folklorefinder.uk/legends/dwarfie-stane</loc><lastmod>2026-06-17</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/dwarfie-stane-hero.jpg</image:loc>
+    <image:title>The rock-cut Dwarfie Stane standing alone on Hoy moorland beneath Orcadian cloud</image:title>
+    <image:caption>A visual interpretation of the Dwarfie Stane on Hoy</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/doideag-of-mull</loc><lastmod>2026-06-09</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/doideag-of-mull-hero.jpg</image:loc>
@@ -1226,7 +1246,12 @@
     <image:title>A weed-draped grey water horse standing at the edge of a misty Highland loch in Argyll</image:title>
     <image:caption>A visual interpretation of the Each-Uisge waiting beside a Highland loch</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/eightercua</loc><lastmod>2026-05-30</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/eightercua</loc><lastmod>2026-05-30</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/eightercua-hero.jpg</image:loc>
+    <image:title>The Eightercua stone row near Waterville standing above the Kerry coast at sunrise</image:title>
+    <image:caption>A visual interpretation of Eightercua and the grave of Scéine</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/elder-mother</loc><lastmod>2026-06-17</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/elder-mother-hero.jpg</image:loc>
@@ -1311,7 +1336,12 @@
     <image:title>Fan and her mother sit by a cottage hearth as a magpie watches from the window and villagers gather outside</image:title>
     <image:caption>A visual interpretation of the accusation at the heart of Fan o&#x27; the Fens</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/farranahineeny-stone-row</loc><lastmod>2026-06-29</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/farranahineeny-stone-row</loc><lastmod>2026-06-29</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/farranahineeny-stone-row-hero.jpg</image:loc>
+    <image:title>A short row of standing stones in a wet Kerry field with mountains beyond</image:title>
+    <image:caption>A visual interpretation of Farranahineeny Stone Row</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/fat-lips</loc><lastmod>2026-06-19</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/fat-lips-hero.jpg</image:loc>
@@ -1348,8 +1378,18 @@
     <image:title>The giant Fingal placing hexagonal basalt columns into the sea to build a causeway</image:title>
     <image:caption>A visual interpretation of Fingal shaping the basalt causeway</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/finn-mccools-fingers</loc><lastmod>2026-06-19</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/fintan-s-grave</loc><lastmod>2026-06-19</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/finn-mccools-fingers</loc><lastmod>2026-06-19</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/finn-mccools-fingers-hero.jpg</image:loc>
+    <image:title>Five standing stones on Shantemon Mountain silhouetted like fingers in golden storm light</image:title>
+    <image:caption>A visual interpretation of Finn McCools Fingers on Shantemon Mountain</image:caption>
+  </image:image></url>
+  <url><loc>https://folklorefinder.uk/legends/fintan-s-grave</loc><lastmod>2026-06-19</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/fintan-s-grave-hero.jpg</image:loc>
+    <image:title>A cave-like stone grave on an Arra Mountain hillside above misty Lough Derg</image:title>
+    <image:caption>A visual interpretation of Fintan&#x27;s Grave in the Arra Mountains</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/finvarra-at-knockma-hill</loc><lastmod>2026-06-08</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/finvarra-at-knockma-hill-hero.jpg</image:loc>
@@ -1368,7 +1408,12 @@
     <image:title>Florence Newton stands at a Youghal doorway as a servant girl recoils and townspeople watch from the wet street</image:title>
     <image:caption>A visual interpretation of Florence Newton, the Witch of Youghal, before the 1661 trial</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/folkestone-white-horse</loc><lastmod>2026-06-23</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/folkestone-white-horse</loc><lastmod>2026-06-23</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/folkestone-white-horse-hero.jpg</image:loc>
+    <image:title>A white chalk horse cut into a green hillside above Folkestone and the Channel</image:title>
+    <image:caption>A visual interpretation of the Folkestone White Horse</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/francis-drake</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/francis-drake-hero.jpg</image:loc>
@@ -1425,9 +1470,9 @@
   </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/giant-s-causeway</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority>
   <image:image>
-    <image:loc>https://folklorefinder.uk/legend-images/giants-causeway-hero.jpg</image:loc>
-    <image:title>Fionn mac Cumhaill watching a far larger giant approach across the wet basalt columns of the Antrim coast</image:title>
-    <image:caption>A visual interpretation of Fionn and Benandonner at the Giant&#x27;s Causeway</image:caption>
+    <image:loc>https://folklorefinder.uk/legend-images/giant-s-causeway-hero.jpg</image:loc>
+    <image:title>Wet hexagonal basalt columns of the Giant&#x27;s Causeway leading into a stormy sea</image:title>
+    <image:caption>A visual interpretation of the Giant&#x27;s Causeway at Bushmills</image:caption>
   </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/gill-the-hammer-throwing-giant-of-mount-caburn</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority>
   <image:image>
@@ -1441,7 +1486,12 @@
     <image:title>A grey-clad Highland Glaistig with a goat&#x27;s lower body guiding a calf back toward its herd</image:title>
     <image:caption>A visual interpretation of the protective Glaistig tending Highland cattle</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/glantane-east</loc><lastmod>2026-05-30</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/glantane-east</loc><lastmod>2026-05-30</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/glantane-east-hero.jpg</image:loc>
+    <image:title>A lichen-covered stone circle and standing stones in the rainy uplands of County Cork</image:title>
+    <image:caption>A visual interpretation of the Glantane East megalithic site</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/glashtyn</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/glashtyn-hero.jpg</image:loc>
@@ -1490,8 +1540,18 @@
     <image:title>Grace O&#x27;Malley commanding a Gaelic galley through Clew Bay with Rockfleet Castle beyond</image:title>
     <image:caption>A visual interpretation of Grace O&#x27;Malley leading her crew past Rockfleet Castle</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/granny-kempock-stone</loc><lastmod>2026-06-13</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/great-bell-of-burgh-le-marsh</loc><lastmod>2026-06-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/granny-kempock-stone</loc><lastmod>2026-06-13</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/granny-kempock-stone-hero.jpg</image:loc>
+    <image:title>The hooded Granny Kempock Stone standing above Gourock harbour at dusk</image:title>
+    <image:caption>A visual interpretation of the Granny Kempock Stone</image:caption>
+  </image:image></url>
+  <url><loc>https://folklorefinder.uk/legends/great-bell-of-burgh-le-marsh</loc><lastmod>2026-06-08</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/great-bell-of-burgh-le-marsh-hero.jpg</image:loc>
+    <image:title>A bronze church bell in a medieval tower during a storm over Lincolnshire fenland</image:title>
+    <image:caption>A visual interpretation of the Great Bell of Burgh le Marsh</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/great-silkie-of-sule-skerry</loc><lastmod>2026-06-08</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/great-silkie-of-sule-skerry-hero.jpg</image:loc>
@@ -1522,7 +1582,12 @@
     <image:title>A cinematic fae and spirit folklore image of Gruagach, shown as the central fairy, spirit, or otherworldly presence from Hebrides, Scotland</image:title>
     <image:caption>A visual interpretation of Gruagach</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/grubstones</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/grubstones</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/grubstones-hero.jpg</image:loc>
+    <image:title>A low ring of weathered stones on Yorkshire moorland under a dramatic sunset</image:title>
+    <image:caption>A visual interpretation of Grubstones on Burley Moor</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/guinevere-s-grave-at-meigle</loc><lastmod>2026-06-19</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/guinevere-s-grave-at-meigle-hero.jpg</image:loc>
@@ -1631,14 +1696,24 @@
     <image:title>Havelok sleeping in a fisherman&#x27;s house as a small golden flame rises from his mouth and Goldborough watches</image:title>
     <image:caption>A visual interpretation of Goldborough discovering Havelok&#x27;s royal nature</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/haxey-hood</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/haxey-hood</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/haxey-hood-hero.jpg</image:loc>
+    <image:title>A worn leather hood lying on frosted grass at the edge of Haxey village</image:title>
+    <image:caption>A visual interpretation of the Haxey Hood winter custom</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/headless-horseman-of-the-staffordshire-moors</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/headless-horseman-of-the-staffordshire-moors-hero.jpg</image:loc>
     <image:title>A cinematic ghost folklore image of Headless Horseman of the Staffordshire Moors, shown as the central apparition or haunting from Staffordshire</image:title>
     <image:caption>A visual interpretation of Headless Horseman of the Staffordshire Moors</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/heapstown-cairn</loc><lastmod>2026-06-19</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/heapstown-cairn</loc><lastmod>2026-06-19</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/heapstown-cairn-hero.jpg</image:loc>
+    <image:title>A broad stone cairn in County Sligo catching golden light beneath rain clouds</image:title>
+    <image:caption>A visual interpretation of Heapstown Cairn</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/helen-duncan</loc><lastmod>2026-06-13</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/helen-duncan-hero.jpg</image:loc>
@@ -1699,7 +1774,12 @@
     <image:title>The Hill of Allen rising above the Bog of Allen with its summit tower under a heavy sky in County Kildare</image:title>
     <image:caption>A visual interpretation of the Hill of Allen, seat of Fionn mac Cumhaill</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/hill-of-tara</loc><lastmod>2026-06-16</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/hill-of-tara</loc><lastmod>2026-06-16</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/hill-of-tara-hero.jpg</image:loc>
+    <image:title>The Lia Fáil standing stone on the Hill of Tara above misty earthworks at sunrise</image:title>
+    <image:caption>A visual interpretation of the Hill of Tara and the Stone of Destiny</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/hob-hole-runswick-bay</loc><lastmod>2026-06-19</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/hob-hole-runswick-bay-hero-v2.jpg</image:loc>
@@ -1724,14 +1804,24 @@
     <image:title>A cinematic ghost folklore image of Hundeprest of Melrose, shown as the central apparition or haunting from Melrose, Scottish Borders, Scotland</image:title>
     <image:caption>A visual interpretation of Hundeprest of Melrose</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/hy-brasil</loc><lastmod>2026-06-05</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/hy-brasil</loc><lastmod>2026-06-05</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/hy-brasil-hero.jpg</image:loc>
+    <image:title>A phantom island emerging from mist on the Atlantic horizon west of Ireland</image:title>
+    <image:caption>A visual interpretation of Hy-Brasil, the vanishing island</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/hyter-sprite</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/hyter-sprite-hero.jpg</image:loc>
     <image:title>A cinematic fae and spirit folklore image of Hyter Sprite, shown as the central fairy, spirit, or otherworldly presence from East Anglia</image:title>
     <image:caption>A visual interpretation of Hyter Sprite</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/inishbofin-white-cow</loc><lastmod>2026-06-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/inishbofin-white-cow</loc><lastmod>2026-06-08</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/inishbofin-white-cow-hero.jpg</image:loc>
+    <image:title>A white cow standing on a misty Inishbofin beach as fog lifts from the island shore</image:title>
+    <image:caption>A visual interpretation of the Inishbofin White Cow legend</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/isaac-gulliver</loc><lastmod>2026-06-13</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/isaac-gulliver-hero.jpg</image:loc>
@@ -1822,7 +1912,12 @@
     <image:title>A tusked bipedal white pig creature standing beside the Grenaby river on the Isle of Man</image:title>
     <image:caption>A visual interpretation of Jimmy Squarefoot beside the Grenaby river</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/jingling-geordie-s-hole</loc><lastmod>2026-06-19</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/jingling-geordie-s-hole</loc><lastmod>2026-06-19</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/jingling-geordie-s-hole-hero.jpg</image:loc>
+    <image:title>A dark Tynemouth sea cave with faint coin glints on wet rocks at dusk</image:title>
+    <image:caption>A visual interpretation of Jingling Geordie&#x27;s Hole at Tynemouth</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/jinny-the-witch-joney-lowney</loc><lastmod>2026-06-10</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/jinny-the-witch-joney-lowney-hero.jpg</image:loc>

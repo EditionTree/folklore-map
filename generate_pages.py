@@ -817,7 +817,7 @@ FEATURED_PAGE = Template("""<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha384-sHL9NAb7lN7rfvG5lfHpm643Xkcjzp4jFvuavGOndn6pjVqS6ny56CAt3nsEVT4H" crossorigin="anonymous"/>
-<link rel="stylesheet" href="/legend-page.css?v=20260713a"/>
+<link rel="stylesheet" href="/legend-page.css?v=20260713b"/>
 <script type="application/ld+json">$jsonld</script>
 $breadcrumb_jsonld
 </head>
@@ -1228,6 +1228,16 @@ def build():
     cat_intros, region_intros = load_page_intros()
     featured_pages = load_featured_pages()
     os.makedirs(OUT_DIR, exist_ok=True)
+
+    # Slim achievement index — legend pages fetch this (not the full 1.3 MB
+    # legends.json) purely to evaluate achievement-toast criteria, which only
+    # needs name/category/region. See legend-page.js checkAchievementToasts().
+    slim_index = {"legends": [
+        {"name": l.get("name"), "category": l.get("category"), "region": l.get("region")}
+        for l in legends
+    ]}
+    with io.open("legends-index.json", "w", encoding="utf-8") as f:
+        json.dump(slim_index, f, ensure_ascii=False, separators=(",", ":"))
 
     # Unique slugs
     slugmap, seen = {}, set()
@@ -1993,7 +2003,7 @@ h1::after{{content:"";display:block;width:132px;height:40px;margin:9px 0 19px;ba
 .c-count{{font-size:11px;color:#5c4a2a;font-style:italic}}
 .c-dot{{width:10px;height:10px;border-radius:50%;display:inline-block;flex-shrink:0}}
 .place-explorer{{position:relative;isolation:isolate;display:grid;grid-template-columns:minmax(320px,520px) minmax(0,1fr);align-items:center;gap:clamp(42px,7vw,110px);margin:48px 42px 82px;padding:58px 70px;border:0;background:rgba(246,241,230,.68);box-shadow:0 16px 40px rgba(63,48,35,.08)}}
-.place-explorer::after{{content:"";position:absolute;inset:-31px;z-index:2;box-sizing:border-box;border:38px solid transparent;border-image:url('/assets/ornaments/generated-variants/oak-branch-frame-v1.webp') 115 / 38px / 0 round;filter:saturate(.62) brightness(.9) contrast(.9) drop-shadow(0 4px 5px rgba(63,48,35,.2));pointer-events:none}}
+.place-explorer::after{{content:"";position:absolute;inset:-31px;z-index:2;box-sizing:border-box;border:38px solid transparent;border-image:url('/assets/ornaments/generated-variants/oak-branch-frame-v1.png') 115 / 38px / 0 round;filter:saturate(.62) brightness(.9) contrast(.9) drop-shadow(0 4px 5px rgba(63,48,35,.2));pointer-events:none}}
 .place-explorer>*{{position:relative;z-index:1}}
 .place-map-wrap{{display:flex;justify-content:center;background:radial-gradient(circle,rgba(176,144,96,.15),transparent 68%)}}
 .place-map{{display:block;width:min(100%,430px);height:auto;overflow:visible}}

@@ -7744,6 +7744,566 @@
       "pullquote": "The Flowers were accused of turning household objects and graveyard soil into a wasting curse.",
       "priority": 540,
       "image": "legend-images/witches-of-belvoir-hero.jpg"
+    },
+    "Ashleypark Burial Mound": {
+      "image": "legend-images/ashleypark-burial-mound-hero.jpg",
+      "alt": "A grass-covered passage tomb mound in a misty County Tipperary pasture at dawn",
+      "caption": "A visual interpretation of Ashleypark Burial Mound in County Tipperary",
+      "map_title": "Ashleypark, County Tipperary",
+      "section_heading": "The mound in the pasture",
+      "pullquote": "A grassed-over tomb keeps watch over the fields of Ashleypark.",
+      "facts": {
+        "Type": "Passage tomb",
+        "Setting": "County Tipperary pasture",
+        "Status": "National Monument",
+        "Motif": "Ancient burial mound"
+      }
+    },
+    "Barns of Ayr": {
+      "image": "legend-images/barns-of-ayr-hero.jpg",
+      "alt": "A timber garrison at Ayr burning by moonlight while armed Scots watch from the dark foreground",
+      "caption": "A visual interpretation of Wallace's revenge at the Barns of Ayr",
+      "map_title": "Ayr, Scotland",
+      "section_heading": "The night of fire",
+      "pullquote": "Blind Harry made the burning barns one of Wallace's great acts of revenge.",
+      "facts": {
+        "Tradition": "Scottish Wallace legend",
+        "Type": "Place and revenge legend",
+        "Setting": "Medieval Ayr",
+        "Motif": "Treachery answered by fire"
+      }
+    },
+    "Battle of Barry": {
+      "image": "legend-images/battle-of-barry-hero.jpg",
+      "alt": "Ancient burial mounds near the Angus coast with scattered shields and distant ships under storm clouds",
+      "caption": "A visual interpretation of the legendary Battle of Barry near Carnoustie",
+      "map_title": "Barry, Angus",
+      "section_heading": "The Danish graves",
+      "pullquote": "The mounds once taken for Danish graves proved to be older Pictish long-cists.",
+      "facts": {
+        "Tradition": "Scottish battle legend",
+        "Type": "Legendary battlefield",
+        "Setting": "Angus coast",
+        "Motif": "Battle memory and mistaken graves"
+      }
+    },
+    "Beenalaght": {
+      "image": "legend-images/beenalaght-hero.jpg",
+      "alt": "Six tall standing stones receding across a County Cork hillside in early morning light",
+      "caption": "A visual interpretation of Beenalaght and the six chieftains remembered there",
+      "map_title": "Coachford, County Cork",
+      "section_heading": "The Six on monument hill",
+      "pullquote": "The Irish name An Seisear remembers six people, not merely six stones.",
+      "facts": {
+        "Tradition": "Irish monument lore",
+        "Type": "Standing stone alignment",
+        "Setting": "County Cork hillside",
+        "Motif": "Six buried chieftains"
+      }
+    },
+    "Behy court tomb": {
+      "image": "legend-images/behy-court-tomb-hero.jpg",
+      "alt": "A court tomb on a windy Mayo hillside above the Atlantic with old field walls behind it",
+      "caption": "A visual interpretation of Behy court tomb above the north Mayo coast",
+      "map_title": "Belderrig, County Mayo",
+      "section_heading": "The tomb above the sea",
+      "pullquote": "The court tomb looks north across the Atlantic from the Céide Fields landscape.",
+      "facts": {
+        "Type": "Court tomb",
+        "Setting": "Céide Fields landscape",
+        "Region": "County Mayo",
+        "Motif": "Sea-facing megalith"
+      }
+    },
+    "Beinn a' Bheithir": {
+      "image": "legend-images/beinn-a-bheithir-hero.jpg",
+      "alt": "The dark Highland slopes of Beinn a' Bheithir rising above Loch Leven under storm light",
+      "caption": "A visual interpretation of the mountain named for the beithir of Ballachulish",
+      "map_title": "Ballachulish, Highland",
+      "section_heading": "The mountain of the beithir",
+      "pullquote": "The dragon was said to haunt Corrie Liath above the shore of Loch Leven.",
+      "facts": {
+        "Tradition": "Highland dragon lore",
+        "Type": "Mountain legend",
+        "Setting": "Loch Leven",
+        "Motif": "Serpent of the corrie"
+      }
+    },
+    "Black Rock Gorge": {
+      "image": "legend-images/black-rock-gorge-hero.jpg",
+      "alt": "A deep mossy Highland gorge with a small green-cloaked figure standing on the rim",
+      "caption": "A visual interpretation of the Lady of Balconie legend at Black Rock Gorge",
+      "map_title": "Evanton, Highland",
+      "section_heading": "The cry from the gorge",
+      "pullquote": "The Lady of Balconie is said to have been led to the gorge by a dark man in green.",
+      "facts": {
+        "Tradition": "Highland haunting",
+        "Type": "Gorge legend",
+        "Setting": "Easter Ross woodland",
+        "Motif": "The Devil in green"
+      }
+    },
+    "Bleeding Yew of Nevern": {
+      "image": "legend-images/bleeding-yew-of-nevern-hero.jpg",
+      "alt": "An ancient twisted yew tree in Nevern churchyard with red sap streaking its bark at twilight",
+      "caption": "A visual interpretation of the Bleeding Yew of Nevern",
+      "map_title": "Nevern, Pembrokeshire",
+      "section_heading": "The yew that bleeds",
+      "pullquote": "In Nevern churchyard, the ancient yew is said to drip blood-red sap without ceasing.",
+      "facts": {
+        "Tradition": "Welsh churchyard lore",
+        "Type": "Sacred tree",
+        "Setting": "Nevern churchyard",
+        "Motif": "Blood-red sap"
+      }
+    },
+    "Bossiney Castle": {
+      "image": "legend-images/bossiney-castle-hero.jpg",
+      "alt": "Grassy Cornish earthworks near Tintagel overlooking storm-lit Atlantic cliffs",
+      "caption": "A visual interpretation of Bossiney Castle in Tintagel country",
+      "map_title": "Bossiney, Cornwall",
+      "section_heading": "The vanished court",
+      "pullquote": "In Tintagel country, low earthworks are enough for legend to imagine hidden courts.",
+      "facts": {
+        "Tradition": "Cornish Arthurian lore",
+        "Type": "Legendary castle site",
+        "Setting": "North Cornwall coast",
+        "Motif": "Vanished stronghold"
+      }
+    },
+    "Breeny More Stone Circle": {
+      "image": "legend-images/breeny-more-stone-circle-hero.jpg",
+      "alt": "A misty West Cork stone circle at dawn with lichen-covered stones in rough upland grass",
+      "caption": "A visual interpretation of Breeny More Stone Circle near Kealkill",
+      "map_title": "Breeny More, County Cork",
+      "section_heading": "Great dwellings of the fairies",
+      "pullquote": "The Irish name of Breeny More carries the memory of fairy dwellings in the hills.",
+      "facts": {
+        "Tradition": "Irish fairy-place lore",
+        "Type": "Axial stone circle",
+        "Setting": "West Cork upland",
+        "Motif": "Fairy dwelling"
+      }
+    },
+    "Brother Simon of Swineshead": {
+      "image": "legend-images/brother-simon-of-swineshead-hero.jpg",
+      "alt": "A monk's hand setting down a cup of ale in a candlelit medieval abbey refectory during a storm",
+      "caption": "A visual interpretation of the poisoned ale legend at Swineshead Abbey",
+      "map_title": "Swineshead, Lincolnshire",
+      "section_heading": "The cup in the abbey",
+      "pullquote": "The tale says Brother Simon drank first to prove the cup was safe.",
+      "facts": {
+        "Tradition": "English royal death legend",
+        "Type": "Abbey legend",
+        "Setting": "Swineshead Abbey",
+        "Motif": "Poisoned ale"
+      }
+    },
+    "Bryn Cader Faner": {
+      "image": "legend-images/bryn-cader-faner-hero.jpg",
+      "alt": "The jagged crown-like stones of Bryn Cader Faner silhouetted against Snowdonia at sunrise",
+      "caption": "A visual interpretation of Bryn Cader Faner above Talsarnau",
+      "map_title": "Ardudwy, Gwynedd",
+      "section_heading": "The hill of the throne with the flag",
+      "pullquote": "Its leaning slabs make the Bronze Age cairn look like a crown set on the moor.",
+      "facts": {
+        "Type": "Bronze Age cairn",
+        "Setting": "Gwynedd upland",
+        "Region": "Ardudwy",
+        "Motif": "Crown of stones"
+      }
+    },
+    "Bryn Gwyn stones": {
+      "image": "legend-images/bryn-gwyn-stones-hero.jpg",
+      "alt": "Two massive standing stones on Anglesey framing Snowdonia across the Menai Strait",
+      "caption": "A visual interpretation of the Bryn Gwyn stones near Brynsiencyn",
+      "map_title": "Brynsiencyn, Anglesey",
+      "section_heading": "The stones that frame Snowdon",
+      "pullquote": "The tallest standing stones in Wales still command the view toward Snowdonia.",
+      "facts": {
+        "Type": "Standing stones",
+        "Setting": "Anglesey pasture",
+        "Scale": "Tallest standing stones in Wales",
+        "Motif": "Monumental gateway"
+      }
+    },
+    "Brú na Bóinne": {
+      "image": "legend-images/bru-na-boinne-hero.jpg",
+      "alt": "The great white-faced mound of Brú na Bóinne glowing at sunrise above the misty Boyne Valley",
+      "caption": "A visual interpretation of Brú na Bóinne as the Palace of the Boyne",
+      "map_title": "Boyne Valley, County Meath",
+      "section_heading": "The Palace of the Boyne",
+      "pullquote": "Aengus Óg won the house by asking for a day and a night, then keeping it forever.",
+      "facts": {
+        "Tradition": "Irish myth",
+        "Type": "Passage tomb and Otherworld dwelling",
+        "Setting": "Boyne Valley",
+        "Motif": "The house won by a trick"
+      }
+    },
+    "Cadair Idris": {
+      "image": "legend-images/cadair-idris-hero.jpg",
+      "alt": "A stone seat-like rock on Cadair Idris overlooking a dark mountain lake before dawn",
+      "caption": "A visual interpretation of Cadair Idris at blue hour",
+      "map_title": "Gwynedd, Wales",
+      "section_heading": "The night on the mountain",
+      "pullquote": "Those who slept on the summit were said to wake mad, dead, or a poet.",
+      "facts": {
+        "Tradition": "Welsh mountain lore",
+        "Type": "Sacred mountain",
+        "Setting": "Southern Snowdonia",
+        "Motif": "Mad, dead, or poet"
+      }
+    },
+    "Caer Bran": {
+      "image": "legend-images/caer-bran-hero.jpg",
+      "alt": "The circular ramparts of Caer Bran glowing at sunset above the Penwith moors and sea",
+      "caption": "A visual interpretation of Caer Bran, the hillfort named for Bran the Blessed",
+      "map_title": "Penwith, Cornwall",
+      "section_heading": "The fort of Bran",
+      "pullquote": "The hillfort's name ties Penwith earthworks to the giant raven-king of Welsh myth.",
+      "facts": {
+        "Tradition": "Cornish and Welsh legendary geography",
+        "Type": "Iron Age hillfort",
+        "Setting": "Penwith moorland",
+        "Motif": "Sanctuary from evil spirits"
+      }
+    },
+    "Caerleon": {
+      "image": "legend-images/caerleon-hero.jpg",
+      "alt": "Roman ruins and amphitheatre earthworks at misty Caerleon with warm torchlight in the distance",
+      "caption": "A visual interpretation of Caerleon as a Roman town folded into Arthurian legend",
+      "map_title": "Caerleon, Newport",
+      "section_heading": "Arthur's Roman court",
+      "pullquote": "Geoffrey of Monmouth made the Roman fortress town one of Arthur's chief courts.",
+      "facts": {
+        "Tradition": "Arthurian legend",
+        "Type": "Roman fortress town",
+        "Setting": "South Wales",
+        "Motif": "Arthur's court"
+      }
+    },
+    "Cantre'r Gwaelod": {
+      "image": "legend-images/cantre-r-gwaelod-hero.jpg",
+      "alt": "A stormy Cardigan Bay shoreline with submerged stonework and a drowned bell tower shape beneath the water",
+      "caption": "A visual interpretation of the drowned kingdom of Cantre'r Gwaelod",
+      "map_title": "Cardigan Bay, Wales",
+      "section_heading": "The open sea-gates",
+      "pullquote": "The fertile kingdom was lost when the sea-gates were left open overnight.",
+      "facts": {
+        "Tradition": "Welsh drowned-land legend",
+        "Type": "Submerged kingdom",
+        "Setting": "Cardigan Bay",
+        "Motif": "Forgotten sea-gates"
+      }
+    },
+    "Carningli": {
+      "image": "legend-images/carningli-hero.jpg",
+      "alt": "The rocky summit of Carningli above the Pembrokeshire coast at radiant dawn",
+      "caption": "A visual interpretation of Carningli, the Rocky Summit of Angels",
+      "map_title": "Pembrokeshire, Wales",
+      "section_heading": "The summit of angels",
+      "pullquote": "Saint Brynach climbed the mountain to pray and found heavenly voices answering him.",
+      "facts": {
+        "Tradition": "Welsh saint lore",
+        "Type": "Sacred mountain",
+        "Setting": "Newport, Pembrokeshire",
+        "Motif": "Heavenly voices"
+      }
+    },
+    "Carricknagat Megalithic Tombs": {
+      "image": "legend-images/carricknagat-megalithic-tombs-hero.jpg",
+      "alt": "Two lichen-covered megalithic tombs in wet County Sligo pasture beneath a clearing sky",
+      "caption": "A visual interpretation of Carricknagat's Giant's Grave and Dermot and Gráinne's Bed",
+      "map_title": "Carricknagat, County Sligo",
+      "section_heading": "The cats' stone",
+      "pullquote": "The Giant's Grave and Dermot and Gráinne's Bed keep old names alive in the Sligo fields.",
+      "facts": {
+        "Tradition": "Irish monument lore",
+        "Type": "Megalithic tombs",
+        "Setting": "County Sligo pasture",
+        "Motif": "Giant's grave and lovers' bed"
+      }
+    },
+    "Carrigagulla": {
+      "image": "legend-images/carrigagulla-hero.jpg",
+      "alt": "Lichen-covered megalithic stones at Carrigagulla in a misty County Cork upland pasture",
+      "caption": "A visual interpretation of the Carrigagulla megalithic complex",
+      "map_title": "Carrigagulla, County Cork",
+      "section_heading": "The stones near Ballinagree",
+      "pullquote": "The megalithic complex keeps its old silence in the Cork uplands.",
+      "facts": {
+        "Type": "Megalithic complex",
+        "Setting": "County Cork upland",
+        "Region": "Carrigagulla",
+        "Motif": "Ancient standing stones"
+      }
+    },
+    "Carrigaphooca Stone Circle": {
+      "image": "legend-images/carrigaphooca-stone-circle-hero.jpg",
+      "alt": "A small stone circle below a dark rocky crag and ruined castle at Carrigaphooca in twilight",
+      "caption": "A visual interpretation of Carrigaphooca, the Rock of the Púca",
+      "map_title": "Carrigaphooca, County Cork",
+      "section_heading": "The rock of the Púca",
+      "pullquote": "The stone circle and castle share a name with one of Ireland's most feared night spirits.",
+      "facts": {
+        "Tradition": "Irish Púca lore",
+        "Type": "Stone circle",
+        "Setting": "Near Macroom",
+        "Motif": "Rock of the Púca"
+      }
+    },
+    "Carrowmore": {
+      "image": "legend-images/carrowmore-hero.jpg",
+      "alt": "A dolmen and scattered tombs at Carrowmore glowing at sunrise below Knocknarea",
+      "caption": "A visual interpretation of the tomb cluster at Carrowmore",
+      "map_title": "Carrowmore, County Sligo",
+      "section_heading": "Stones from the Cailleach's apron",
+      "pullquote": "The Cailleach's spilled stones became one of Ireland's oldest tomb clusters.",
+      "facts": {
+        "Tradition": "Irish megalithic lore",
+        "Type": "Passage tomb cemetery",
+        "Setting": "Coolera Peninsula",
+        "Motif": "Cailleach and lovers' beds"
+      }
+    },
+    "Carrownlisheen Wedge Tomb": {
+      "image": "legend-images/carrownlisheen-wedge-tomb-hero.jpg",
+      "alt": "A heavy wedge tomb on the limestone fields of Inis Meáin with the Atlantic beyond",
+      "caption": "A visual interpretation of Carrownlisheen Wedge Tomb on Inis Meáin",
+      "map_title": "Carrownlisheen, County Clare",
+      "section_heading": "The lovers' last bed",
+      "pullquote": "Local tradition names the tomb as the Bed of Diarmuid and Gráinne.",
+      "facts": {
+        "Tradition": "Irish Fenian lore",
+        "Type": "Wedge tomb",
+        "Setting": "Inis Meáin",
+        "Motif": "Diarmuid and Gráinne"
+      }
+    },
+    "Castle Downs, Cornwall": {
+      "image": "legend-images/castle-downs-cornwall-hero.jpg",
+      "alt": "The moonlit ramparts of Castle an Dinas on Castle Downs with faint spectral soldiers inside",
+      "caption": "A visual interpretation of Castle Downs and Arthur's ghostly soldiers",
+      "map_title": "Castle Downs, Cornwall",
+      "section_heading": "Arthur's hunting seat",
+      "pullquote": "Ghost soldiers are said to drill by moonlight within the hillfort's ramparts.",
+      "facts": {
+        "Tradition": "Cornish Arthurian lore",
+        "Type": "Iron Age hillfort",
+        "Setting": "Castle an Dinas",
+        "Motif": "Arthur's soldiers"
+      }
+    },
+    "Chalice Well": {
+      "image": "legend-images/chalice-well-hero.jpg",
+      "alt": "Iron-red water flowing through Chalice Well garden below Glastonbury Tor at sunrise",
+      "caption": "A visual interpretation of Chalice Well at the foot of Glastonbury Tor",
+      "map_title": "Glastonbury, Somerset",
+      "section_heading": "The red spring",
+      "pullquote": "The iron-red spring has long been tied to the Grail and to older sacred water rites.",
+      "facts": {
+        "Tradition": "Glastonbury Grail lore",
+        "Type": "Sacred spring",
+        "Setting": "Foot of Glastonbury Tor",
+        "Motif": "Iron-red water"
+      }
+    },
+    "Chanctonbury Ring": {
+      "image": "legend-images/chanctonbury-ring-hero.jpg",
+      "alt": "The beech trees and ramparts of Chanctonbury Ring under moonlight with a distant dark figure",
+      "caption": "A visual interpretation of Chanctonbury Ring at midnight",
+      "map_title": "West Sussex",
+      "section_heading": "Seven times at midnight",
+      "pullquote": "Walk the Ring seven times at midnight, tradition says, and the Devil will appear.",
+      "facts": {
+        "Tradition": "South Downs folklore",
+        "Type": "Hillfort and tree ring",
+        "Setting": "West Sussex Downs",
+        "Motif": "Midnight circuit"
+      }
+    },
+    "Cheesewring": {
+      "image": "legend-images/cheesewring-hero.jpg",
+      "alt": "The impossible granite stack of the Cheesewring rising from Bodmin Moor under storm light",
+      "caption": "A visual interpretation of the Cheesewring on Bodmin Moor",
+      "map_title": "Bodmin Moor, Cornwall",
+      "section_heading": "The saint and the giant",
+      "pullquote": "The balanced stones were read as the frozen record of a contest between old powers and new.",
+      "facts": {
+        "Tradition": "Cornish giant and saint lore",
+        "Type": "Granite tor",
+        "Setting": "Bodmin Moor",
+        "Motif": "Stone-throwing contest"
+      }
+    },
+    "Cheetham Close": {
+      "image": "legend-images/cheetham-close-hero.jpg",
+      "alt": "Broken and surviving stones of Cheetham Close on a bleak Lancashire moor beneath heavy cloud",
+      "caption": "A visual interpretation of the damaged stone circle at Cheetham Close",
+      "map_title": "Turton, Lancashire",
+      "section_heading": "The broken temple",
+      "pullquote": "Antiquarians imagined rites and bards here before the stones were shattered.",
+      "facts": {
+        "Tradition": "Antiquarian monument lore",
+        "Type": "Bronze Age stone circle",
+        "Setting": "Lancashire moor",
+        "Motif": "Ruined bardic temple"
+      }
+    },
+    "Clodagh Standing Stones": {
+      "image": "legend-images/clodagh-standing-stones-hero.jpg",
+      "alt": "Two standing stones in a misty County Cork pasture at sunrise",
+      "caption": "A visual interpretation of Clodagh Standing Stones",
+      "map_title": "Clodagh, County Cork",
+      "section_heading": "The paired stones",
+      "pullquote": "The two uprights form a quiet stone row in the Cork countryside.",
+      "facts": {
+        "Type": "Standing stone pair",
+        "Setting": "County Cork pasture",
+        "Status": "National Monument",
+        "Motif": "Paired stones"
+      }
+    },
+    "Cloghanmore": {
+      "image": "legend-images/cloghanmore-hero.jpg",
+      "alt": "The great stone heap and court tomb of Cloghanmore on a stormy Donegal hillside",
+      "caption": "A visual interpretation of Cloghanmore near Glencolmcille",
+      "map_title": "Glencolmcille, County Donegal",
+      "section_heading": "The great stone heap",
+      "pullquote": "Cloghanmore's name remembers the great heap of stone raised on the Donegal hills.",
+      "facts": {
+        "Type": "Court tomb",
+        "Setting": "Donegal upland",
+        "Region": "Glencolmcille",
+        "Motif": "Great stone heap"
+      }
+    },
+    "Coolcoulaghta Standing Stones": {
+      "image": "legend-images/coolcoulaghta-standing-stones-hero.jpg",
+      "alt": "Two reinstated standing stones at Coolcoulaghta aligned toward a distant stone circle at dawn",
+      "caption": "A visual interpretation of Coolcoulaghta Standing Stones in West Cork",
+      "map_title": "Coolcoulaghta, County Cork",
+      "section_heading": "The stones set upright again",
+      "pullquote": "Torn from the ground in 1980, the stones were raised again three years later.",
+      "facts": {
+        "Type": "Standing stone pair",
+        "Setting": "West Cork",
+        "Status": "National Monument",
+        "Motif": "Restored alignment"
+      }
+    },
+    "Craddock Moor stone circle": {
+      "image": "legend-images/craddock-moor-stone-circle-hero.jpg",
+      "alt": "A low stone circle on Craddock Moor among heather and granite tors under clearing storm light",
+      "caption": "A visual interpretation of Craddock Moor stone circle",
+      "map_title": "Bodmin Moor, Cornwall",
+      "section_heading": "The low ring on the moor",
+      "pullquote": "The stones sit low in the heather near Minions, part of Bodmin Moor's ancient landscape.",
+      "facts": {
+        "Type": "Stone circle",
+        "Setting": "Bodmin Moor",
+        "Region": "Cornwall",
+        "Motif": "Moorland ring"
+      }
+    },
+    "Craigs Dolmen": {
+      "image": "legend-images/craigs-dolmen-hero.jpg",
+      "alt": "A massive lichen-covered dolmen in County Antrim pasture at misty dawn",
+      "caption": "A visual interpretation of Craigs Dolmen in County Antrim",
+      "map_title": "Craigs, County Antrim",
+      "section_heading": "The tomb south of Ballymoney",
+      "pullquote": "The great capstone rests over the quiet fields of County Antrim.",
+      "facts": {
+        "Type": "Megalithic tomb",
+        "Setting": "County Antrim countryside",
+        "Region": "Craigs",
+        "Motif": "Capstone tomb"
+      }
+    },
+    "Croagh Patrick": {
+      "image": "legend-images/croagh-patrick-hero.jpg",
+      "alt": "The rocky pilgrim path climbing Croagh Patrick above Clew Bay in golden morning mist",
+      "caption": "A visual interpretation of Croagh Patrick above Clew Bay",
+      "map_title": "County Mayo",
+      "section_heading": "The forty days on the mountain",
+      "pullquote": "Saint Patrick's fast on the mountain became one of Ireland's great sacred-place traditions.",
+      "facts": {
+        "Tradition": "Irish saint lore",
+        "Type": "Sacred mountain",
+        "Setting": "Clew Bay",
+        "Motif": "Patrick's fast"
+      }
+    },
+    "Devil's Arrows": {
+      "image": "legend-images/devil-s-arrows-hero.jpg",
+      "alt": "The three tall Devil's Arrows standing stones near Boroughbridge under a stormy dawn sky",
+      "caption": "A visual interpretation of the Devil's Arrows near Boroughbridge",
+      "map_title": "Boroughbridge, North Yorkshire",
+      "section_heading": "The stones that missed",
+      "pullquote": "The Devil hurled them at Aldborough, the story says, and missed.",
+      "facts": {
+        "Tradition": "English Devil lore",
+        "Type": "Standing stones",
+        "Setting": "North Yorkshire",
+        "Motif": "Thrown stones"
+      }
+    },
+    "Devil's Bit Mountain": {
+      "image": "legend-images/devil-s-bit-mountain-hero.jpg",
+      "alt": "Devil's Bit Mountain in County Tipperary with its bite-shaped notch under stormy sunset light",
+      "caption": "A visual interpretation of the Devil's Bit Mountain legend",
+      "map_title": "County Tipperary",
+      "section_heading": "The bite in the mountain",
+      "pullquote": "The gap in the ridge was said to be the Devil's bite out of Tipperary.",
+      "facts": {
+        "Tradition": "Irish Devil lore",
+        "Type": "Mountain legend",
+        "Setting": "County Tipperary",
+        "Motif": "Bitten ridge"
+      }
+    },
+    "Devil's Bridge": {
+      "image": "legend-images/devil-s-bridge-hero.jpg",
+      "alt": "The stone arches of Devil's Bridge crossing a mossy Welsh gorge with a small dog on the bridge",
+      "caption": "A visual interpretation of Devil's Bridge at Pontarfynach",
+      "map_title": "Pontarfynach, Ceredigion",
+      "section_heading": "The first soul to cross",
+      "pullquote": "The old woman sent her dog across first and won the bridge without losing her soul.",
+      "facts": {
+        "Tradition": "Welsh Devil lore",
+        "Type": "Bridge legend",
+        "Setting": "Ceredigion gorge",
+        "Motif": "The first soul"
+      }
+    },
+    "Dinas Emrys": {
+      "image": "legend-images/dinas-emrys-hero.jpg",
+      "alt": "The misty hillfort of Dinas Emrys in Snowdonia with red and white light glowing beneath the rocks",
+      "caption": "A visual interpretation of the dragons beneath Dinas Emrys",
+      "map_title": "Beddgelert, Gwynedd",
+      "section_heading": "The dragons below the hill",
+      "pullquote": "Merlin revealed that two dragons were fighting beneath Vortigern's collapsing walls.",
+      "facts": {
+        "Tradition": "Welsh Arthurian prophecy",
+        "Type": "Hillfort legend",
+        "Setting": "Beddgelert",
+        "Motif": "Red and white dragons"
+      }
+    },
+    "Ding Dong mines": {
+      "image": "legend-images/ding-dong-mines-hero.jpg",
+      "alt": "Ruined Cornish mine buildings and old shafts at Ding Dong mines glowing in dawn light above the sea",
+      "caption": "A visual interpretation of Ding Dong mines and old Cornish tin lore",
+      "map_title": "Cornwall",
+      "section_heading": "Tin country in legend",
+      "pullquote": "The ancient mining landscape drew traditions of Joseph of Arimathea and old tin-working lore.",
+      "facts": {
+        "Tradition": "Cornish mining lore",
+        "Type": "Mining landscape",
+        "Setting": "West Cornwall",
+        "Motif": "Ancient tin working"
+      }
     }
   }
 }

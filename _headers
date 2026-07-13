@@ -3,4 +3,17 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Strict-Transport-Security: max-age=15552000; includeSubDomains
   Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://challenges.cloudflare.com https://static.cloudflareinsights.com https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://*.tile.openstreetmap.org https://*.stamen.com https://*.stadiamaps.com https://stamen-tiles.a.ssl.fastly.net https://*.basemaps.cartocdn.com blob:; connect-src 'self' https://*.supabase.co https://challenges.cloudflare.com; frame-src https://challenges.cloudflare.com; worker-src blob:; base-uri 'self'; object-src 'none'; frame-ancestors 'none';
+
+# Versioned/static assets (ornaments carry ?v= cache-busters, achievement art is stable) — cache hard
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Fonts, once self-hosted, are immutable
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Legend hero art can be re-generated under the same name, so cache long but not immutable
+/legend-images/*
+  Cache-Control: public, max-age=2592000

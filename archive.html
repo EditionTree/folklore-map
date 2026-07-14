@@ -79,7 +79,7 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Spectral',seri
 /* ── ACHIEVEMENT PROGRESS (latest seal) ── */
 .progress-card{background:var(--parchment);border:1px solid var(--gold);border-radius:8px;padding:20px 24px}
 .latest-seal{display:flex;align-items:center;gap:14px;margin-bottom:16px;padding-bottom:16px;border-bottom:1px solid rgba(176,144,96,.4)}
-.latest-seal img{width:56px;height:56px;object-fit:contain;flex-shrink:0;filter:drop-shadow(0 4px 8px rgba(44,31,14,.25))}
+.latest-seal img{width:56px;height:56px;object-fit:contain;flex-shrink:0;filter:hue-rotate(var(--hue,0deg)) saturate(var(--shade-sat,1)) brightness(var(--shade-bright,1)) drop-shadow(0 4px 8px rgba(44,31,14,.25))}
 .latest-seal-text p{margin:0;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-light)}
 .latest-seal-text h3{font-family:'Marcellus',serif;font-weight:400;font-size:16px;color:var(--accent);margin-top:2px}
 .progress-stats{display:flex;gap:28px;margin-bottom:14px;flex-wrap:wrap}
@@ -119,6 +119,7 @@ footer a{color:var(--ink-light)}
 <link rel="stylesheet" href="folklorefinder.css?v=20260713b"/>
 </head>
 <body class="ff-paper interior-page archive-page">
+<a class="skip-link" href="#main-content">Skip to content</a>
 
 <nav class="topnav">
   <a class="topnav-brand" href="./" aria-label="Folklore Finder home"><img class="topnav-emblem" src="green-man.png" alt="Green Man"/><span class="topnav-title">Folklore Finder</span></a>
@@ -129,6 +130,7 @@ footer a{color:var(--ink-light)}
   <a href="archive" class="active">My Archive</a>
   <a href="about">About</a>
 </nav>
+<main id="main-content" tabindex="-1">
 
 <header class="page-hero page-hero-solo">
   <div>
@@ -179,6 +181,7 @@ footer a{color:var(--ink-light)}
 
 </div>
 
+</main>
 <footer>Folklore Finder &nbsp;&#183;&nbsp; An atlas of myths, legends, &amp; stories &nbsp;&#183;&nbsp; &copy; EditionTree &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/about">About</a> &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/updates">Updates</a> &nbsp;&#183;&nbsp; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener">Ko-fi</a> &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/privacy">Privacy</a></footer>
 
 <script>
@@ -217,13 +220,21 @@ footer a{color:var(--ink-light)}
   // unlock order (see legend-page.js), so the last entry is the most recent.
   if (unlockedIds.length) {
     fetch('assets/achievements/achievements.json').then(function(r){ return r.json(); }).then(function(ach){
-      var allItems = (ach.sections || []).reduce(function(acc, s){ return acc.concat(s.items); }, []);
+      // Tint each seal to its section hue, mirroring achievements.html.
+      var SHADE_VARIANTS = [{sat:1,bright:1},{sat:.85,bright:.93},{sat:1.14,bright:1.07}];
+      var totalSections = (ach.sections || []).length;
+      var allItems = (ach.sections || []).reduce(function(acc, s, sIdx){
+        var hueDeg = Math.round(sIdx * (360 / Math.max(totalSections, 1)));
+        s.items.forEach(function(a, i){ var sh = SHADE_VARIANTS[i % SHADE_VARIANTS.length]; a._tint = {hue:hueDeg, sat:sh.sat, bright:sh.bright}; });
+        return acc.concat(s.items);
+      }, []);
       var byId = new Map(allItems.map(function(a){ return [a.id, a]; }));
       var latest = byId.get(unlockedIds[unlockedIds.length - 1]);
       if (latest) {
         var box = document.getElementById('latestSeal');
+        var t = latest._tint || {hue:0, sat:1, bright:1};
         box.innerHTML = '<div class="latest-seal">'
-          + '<img src="' + (latest.icon && latest.icon.file || '') + '" alt=""/>'
+          + '<img src="' + (latest.icon && latest.icon.file || '') + '" alt="" style="--hue:' + t.hue + 'deg;--shade-sat:' + t.sat + ';--shade-bright:' + t.bright + '"/>'
           + '<div class="latest-seal-text"><p>Latest Achievement</p><h3></h3></div>'
           + '</div>';
         box.querySelector('h3').textContent = latest.name;

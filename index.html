@@ -8,7 +8,7 @@
 <!-- End Cloudflare Web Analytics -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Folklore Finder | An Atlas of Myths, Legends, &amp; Stories</title>
-<meta name="description" content="An interactive archive of myths, legends, ghosts, sacred sites and folklore across Britain and Ireland. Explore more than 500 entries, from Black Shuck to the Loch Ness Monster."/>
+<meta name="description" content="An interactive archive of myths, legends, ghosts, sacred sites and folklore across Britain and Ireland. Explore more than 660 entries, from Black Shuck to the Loch Ness Monster."/>
 <meta name="robots" content="index, follow"/>
 <link rel="canonical" href="https://folklorefinder.uk/"/>
 <link rel="alternate" type="application/rss+xml" title="Folklore Map — New Legends" href="https://folklorefinder.uk/feed.xml"/>
@@ -601,6 +601,7 @@ footer a{color:var(--ink-light)}
 <link rel="stylesheet" href="folklorefinder.css?v=20260713b"/>
 </head>
 <body class="ff-paper home-page">
+<a class="skip-link" href="#main-content">Skip to content</a>
 <nav class="topnav">
   <a href="./" class="active">Home</a>
   <a href="map">Map</a>
@@ -610,6 +611,7 @@ footer a{color:var(--ink-light)}
   <a href="about">About</a>
 </nav>
 
+<main id="main-content" tabindex="-1">
 <!-- ── HERO ── -->
 <section class="hero">
   <div class="hero-map" aria-hidden="true"></div>
@@ -657,6 +659,7 @@ footer a{color:var(--ink-light)}
     </aside>
   </div>
 </section>
+</main>
 
 <!-- Submit-a-legend prompt: kept a direct child of <body> so its position:fixed
      anchors to the viewport's top-right. Inside .hero-feature it was mispositioned

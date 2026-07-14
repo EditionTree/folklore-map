@@ -25,6 +25,8 @@ body{
 @media(max-width:900px){html,body{overflow-x:hidden}}
 a{color:inherit}
 button{font:inherit}
+.skip-link{position:absolute;left:8px;top:-48px;z-index:10000;padding:9px 16px;background:#1a0e06;color:#f2e8d5;font-family:'Marcellus',serif;font-size:13px;letter-spacing:.04em;text-decoration:none;border:1px solid var(--gold,#b09060);border-radius:0 0 4px 4px;transition:top .15s ease}
+.skip-link:focus{top:0;outline:2px solid var(--gold,#b09060);outline-offset:2px}
 /* Canonical banner — matches folklorefinder.css / TOPNAV_CSS */
 .topnav{
   position:relative;
@@ -394,7 +396,7 @@ h1{
   filter:grayscale(85%) brightness(.96) opacity(.82) drop-shadow(0 3px 6px rgba(26,14,6,.35));
 }
 .ach-toast.unlock .ach-toast-icon{
-  filter:drop-shadow(0 3px 6px rgba(26,14,6,.35));
+  filter:hue-rotate(var(--hue,0deg)) saturate(var(--shade-sat,1)) brightness(var(--shade-bright,1)) drop-shadow(0 3px 6px rgba(26,14,6,.35));
 }
 .ach-toast-text{display:flex;flex-direction:column;min-width:0}
 .ach-toast-title{display:block;font-family:'Marcellus',serif;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--rust-dark);margin-bottom:5px}

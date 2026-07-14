@@ -340,6 +340,8 @@ TOPNAV_CSS = (
     "overflow-x:auto;overflow-y:hidden;scrollbar-width:none;padding-left:12px;padding-right:12px}"
     ".topnav::-webkit-scrollbar{display:none}"
     ".topnav a{flex:0 0 auto;padding:5px 10px;font-size:11px;white-space:nowrap}}"
+    ".skip-link{position:absolute;left:8px;top:-48px;z-index:10000;padding:9px 16px;background:#1a0e06;color:#f2e8d5;font-family:'Marcellus',serif;font-size:13px;letter-spacing:.04em;text-decoration:none;border:1px solid #b09060;border-radius:0 0 4px 4px;transition:top .15s ease}"
+    ".skip-link:focus{top:0;outline:2px solid #b09060;outline-offset:2px}"
     "footer{position:relative;text-align:center;padding:12px 18px;font-size:12px;line-height:1.6;"
     "color:rgba(246,241,230,.78);background:#1a0e06;border-top:0}"
     "footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;"
@@ -369,7 +371,8 @@ TOPNAV_ITEMS = [
 
 
 def topnav_html(active=""):
-    parts = ['<nav class="topnav">']
+    parts = ['<a class="skip-link" href="#main-content">Skip to content</a>',
+             '<nav class="topnav">']
     parts.append(
         f'<a class="topnav-brand" href="{BASE}/" aria-label="Folklore Finder home">'
         f'<img class="topnav-emblem" src="{BASE}/green-man.png" alt="Green Man"/>'
@@ -596,7 +599,7 @@ def build_browse_page(page_title, desc, url, h1, intro, crumb, nav_html, cards_h
             '<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">\n'
             + jsonld_html + breadcrumb_jsonld_html + head_extra
             + '<style>' + BROWSE_STYLE + TOPNAV_CSS + '</style></head>\n<body class="catalogue-page">\n'
-            + topnav_html(nav_active) + '\n' + banner_html() + '\n<div class="wrap' + (' ' + wrap_class if wrap_class else '') + '">\n'
+            + topnav_html(nav_active) + '\n<main id="main-content" tabindex="-1">\n' + banner_html() + '\n<div class="wrap' + (' ' + wrap_class if wrap_class else '') + '">\n'
             '<nav class="crumb"><a href="' + BASE + '/">Home</a> &#8250; '
             '<a href="' + BASE + '/' + OUT_DIR + '/">All legends</a> &#8250; '
             '<span>' + esc(crumb) + '</span></nav>\n'
@@ -608,7 +611,7 @@ def build_browse_page(page_title, desc, url, h1, intro, crumb, nav_html, cards_h
             + nav_html + '\n<div class="' + grid_class + '">\n' + cards_html
             + '\n</div>\n' + after_grid + extra_sections
             + '<a class="back" href="' + BASE + '/' + OUT_DIR + '/">&#8592; Browse All Legends</a>\n'
-            '</div>\n' + footer_html() + '\n' + track_script + '</body></html>')
+            '</div>\n</main>\n' + footer_html() + '\n' + track_script + '</body></html>')
 
 
 def slugify(name):
@@ -852,7 +855,7 @@ $breadcrumb_jsonld
 </head>
 <body>
 $topnav
-<main>
+<main id="main-content" tabindex="-1">
   <div class="shell">
     $breadcrumb
     <section class="hero" aria-labelledby="legend-title">
@@ -1007,7 +1010,7 @@ def update_whats_new_page(recent, built_collections, slugmap, cats, meta, limit=
 def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
                            slugmap, catname, maplink, page_path_url, desc,
                            jsonld, breadcrumb, breadcrumb_jsonld, collections=(),
-                           periods_by_title=None):
+                           periods_by_title=None, featured_pages=None):
     """Render the editorial legend layout, with artwork when available."""
     name = leg["name"]
     image_path = featured.get("image", "")
@@ -1144,9 +1147,23 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
         related_colour = meta.get(related.get("category", ""), {}).get("colour", "#8b3a1a")
         rslug = slugmap[related["name"]]
         # Show the related legend's hero artwork as the card background when it
-        # exists; otherwise fall back to the category-colour glow.
-        if os.path.isfile(os.path.join("legend-images", f"{rslug}-hero.jpg")):
-            card_cls, card_style = "related-card has-img", f"--card-img:url('{BASE}/legend-images/{rslug}-hero.jpg')"
+        # exists. Use the STORED image path, not a slug-derived filename: some
+        # names slugify differently from how their image was named (e.g.
+        # apostrophes — "St Michael's" -> slug "michael-s" but file "michaels"),
+        # which was hiding real preview images (e.g. Cormoran).
+        rel_img = featured_pages.get(related["name"], {}).get("image", "")
+        if rel_img and os.path.isfile(rel_img):
+            jpg_u = f"{BASE}/{rel_img.replace(os.sep, '/')}"
+            # Prefer WebP (with JPEG fallback via image-set) — related cards load
+            # the full hero as a background, so this is a real weight saving.
+            webp_path = rel_img.rsplit(".", 1)[0] + ".webp"
+            if os.path.isfile(webp_path):
+                webp_u = f"{BASE}/{webp_path.replace(os.sep, '/')}"
+                card_img = (f"image-set(url('{webp_u}') type('image/webp'), "
+                            f"url('{jpg_u}') type('image/jpeg'))")
+            else:
+                card_img = f"url('{jpg_u}')"
+            card_cls, card_style = "related-card has-img", f"--card-img:{card_img}"
         else:
             card_cls, card_style = "related-card", f'--card-glow:{esc(related_colour)}'
         featured_cards.append(
@@ -1460,6 +1477,7 @@ def build():
         out = render_featured_legend(
             leg=leg,
             featured=featured_pages.get(name, {}),
+            featured_pages=featured_pages,
             paras=paras,
             srcs=srcs,
             rel=rel,

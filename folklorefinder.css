@@ -752,6 +752,21 @@ body.interior-page {
   padding: clamp(34px, 5vw, 58px) 24px 64px;
 }
 
+body.home-page {
+  background: var(--ff-bar-brown);
+}
+
+.home-page main {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  background: var(--ff-night);
+}
+
+.home-page main .hero {
+  flex: 1 0 auto;
+}
+
 .home-page .hero-layout {
   display: grid;
   grid-template-columns: minmax(0, 610px) minmax(410px, 510px);
@@ -1447,8 +1462,10 @@ body.interior-page {
   }
 
   .home-page .hero-feature .lotw-hero {
-    margin-right: 24px;
-    margin-left: 24px;
+    width: calc(100% - 56px);
+    max-width: calc(100% - 56px);
+    margin-right: 28px;
+    margin-left: 28px;
     /* 16:9 is too short at phone widths, so the bottom-anchored caption
        overflowed the top of the frame — give it room to sit inside. */
     min-height: 250px;
@@ -1610,29 +1627,6 @@ body.interior-page {
    to the left edge, and the centered nav links. The Home page omits the
    brand title (its title already sits centered in the hero); the Map page
    additionally keeps the day/night toggle on the right. */
-/* Skip-to-content link — visually hidden until keyboard-focused. */
-.skip-link {
-  position: absolute;
-  left: 8px;
-  top: -48px;
-  z-index: 10000;
-  padding: 9px 16px;
-  background: #1a0e06;
-  color: #f2e8d5;
-  font-family: 'Marcellus', serif;
-  font-size: 13px;
-  letter-spacing: 0.04em;
-  text-decoration: none;
-  border: 1px solid var(--gold, #b09060);
-  border-radius: 0 0 4px 4px;
-  transition: top 0.15s ease;
-}
-.skip-link:focus {
-  top: 0;
-  outline: 2px solid var(--gold, #b09060);
-  outline-offset: 2px;
-}
-
 .topnav {
   position: relative;
   display: flex;

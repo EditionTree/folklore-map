@@ -101,14 +101,14 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Spectral',seri
 .recent-viewed-card .card-title{font-family:'Marcellus',serif;font-size:15px;display:block;margin-top:2px}
 
 /* ── COLLECTION PROGRESS (filled bars) ── */
-.collection-row{position:relative;display:flex;align-items:center;justify-content:space-between;gap:12px;background:var(--parchment);border:1px solid var(--gold);border-radius:6px;padding:12px 16px;margin-bottom:8px;overflow:hidden}
+.collection-row{position:relative;display:flex;align-items:center;justify-content:space-between;gap:12px;background:var(--parchment);border:1px solid var(--gold);border-radius:6px;padding:12px 16px;margin-bottom:8px;overflow:hidden;color:var(--ink);text-decoration:none}
 .collection-row::before{content:'';position:absolute;inset:0;width:var(--pct,0%);background:rgba(196,98,42,.38);z-index:0;transition:width .3s}
+.collection-row:hover{border-color:var(--accent-warm)}
 .collection-row.done::before{background:rgba(196,98,42,.55)}
 .collection-row.done{border-color:var(--accent-warm)}
 .collection-name,.collection-frac{position:relative;z-index:1}
 .collection-name{font-size:14px}
-.collection-name a{color:var(--ink);text-decoration:none}
-.collection-name a:hover{color:var(--accent)}
+.collection-row:hover .collection-name{color:var(--accent)}
 .collection-frac{font-family:'Marcellus',serif;font-size:12px;color:var(--ink-light);white-space:nowrap}
 .collection-row.done .collection-frac{color:var(--accent-warm)}
 
@@ -119,7 +119,6 @@ footer a{color:var(--ink-light)}
 <link rel="stylesheet" href="folklorefinder.css?v=20260713b"/>
 </head>
 <body class="ff-paper interior-page archive-page">
-<a class="skip-link" href="#main-content">Skip to content</a>
 
 <nav class="topnav">
   <a class="topnav-brand" href="./" aria-label="Folklore Finder home"><img class="topnav-emblem" src="green-man.png" alt="Green Man"/><span class="topnav-title">Folklore Finder</span></a>
@@ -297,12 +296,14 @@ footer a{color:var(--ink-light)}
           var visitedCount = r.members.filter(function(n){ return visitedSet.has(n); }).length;
           var pct = Math.round(visitedCount / r.members.length * 100);
           var done = visitedCount === r.members.length;
-          var row = document.createElement('div');
+          var row = document.createElement('a');
           row.className = 'collection-row' + (done ? ' done' : '');
+          row.href = 'legends/collection/' + r.col.slug;
+          row.setAttribute('aria-label', 'View ' + r.col.title + ' collection progress');
           row.style.setProperty('--pct', pct + '%');
-          row.innerHTML = '<span class="collection-name"><a href="legends/collection/' + r.col.slug + '"></a></span>'
+          row.innerHTML = '<span class="collection-name"></span>'
             + '<span class="collection-frac">' + visitedCount + ' / ' + r.members.length + (done ? ' &#10003;' : '') + '</span>';
-          row.querySelector('a').textContent = r.col.title;
+          row.querySelector('.collection-name').textContent = r.col.title;
           colEl.appendChild(row);
         });
       });

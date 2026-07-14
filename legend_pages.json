@@ -9130,6 +9130,356 @@
         "Setting": "Pembrokeshire",
         "Motif": "Pilgrimage and saint"
       }
+    },
+    "St Govan's Chapel": {
+      "image": "legend-images/st-govan-s-chapel-hero.jpg",
+      "alt": "St Govan's Chapel tucked into a Pembrokeshire sea cliff beside a stone well at sunset",
+      "caption": "A visual interpretation of St Govan's Chapel",
+      "map_title": "Pembrokeshire, Wales",
+      "section_heading": "The chapel in the cleft",
+      "pullquote": "The rock was said to open for St Govan, hiding him from pirates on the clifftop.",
+      "facts": {
+        "Tradition": "Welsh saint lore",
+        "Type": "Cliff chapel",
+        "Setting": "Pembrokeshire coast",
+        "Motif": "Rock refuge"
+      }
+    },
+    "St Non's Well": {
+      "image": "legend-images/st-non-s-well-hero.jpg",
+      "alt": "St Non's Well on a storm-cleared Pembrokeshire clifftop with sunlight on the spring water",
+      "caption": "A visual interpretation of St Non's Well",
+      "map_title": "Pembrokeshire, Wales",
+      "section_heading": "The spring at the birth",
+      "pullquote": "The spring was said to rise from the earth as St David was born in a thunderstorm.",
+      "facts": {
+        "Tradition": "Welsh saint lore",
+        "Type": "Holy well",
+        "Setting": "St Davids clifftop",
+        "Motif": "Healing water"
+      }
+    },
+    "St Trinian's Church": {
+      "image": "legend-images/st-trinian-s-church-hero.jpg",
+      "alt": "The roofless stone walls of St Trinian's Church beneath Greeba Mountain in storm light",
+      "caption": "A visual interpretation of St Trinian's Church",
+      "map_title": "Isle of Man",
+      "section_heading": "The church without a roof",
+      "pullquote": "Every roof was said to be torn away until the chapel's midnight test was won.",
+      "facts": {
+        "Tradition": "Manx folklore",
+        "Type": "Roofless chapel",
+        "Setting": "Greeba Mountain",
+        "Motif": "Buggane legend"
+      }
+    },
+    "Stanton Drew Stone Circles": {
+      "image": "legend-images/stanton-drew-stone-circles-hero.jpg",
+      "alt": "The stones of Stanton Drew curving through misty Somerset pasture at dawn",
+      "caption": "A visual interpretation of Stanton Drew Stone Circles",
+      "map_title": "Somerset",
+      "section_heading": "The wedding in stone",
+      "pullquote": "The circles were said to be a wedding party fixed forever for dancing into Sunday.",
+      "facts": {
+        "Tradition": "English stone-circle lore",
+        "Type": "Stone circles",
+        "Setting": "Somerset",
+        "Motif": "Petrified wedding"
+      }
+    },
+    "Stone of Scone": {
+      "image": "legend-images/stone-of-scone-hero.jpg",
+      "alt": "A weathered coronation stone on a misty mound at Scone with ruins beyond",
+      "caption": "A visual interpretation of the Stone of Scone",
+      "map_title": "Perthshire, Scotland",
+      "section_heading": "The coronation stone",
+      "pullquote": "The stone carries stories of conquest, coronation, and whether the true stone ever left Scotland.",
+      "facts": {
+        "Tradition": "Scottish royal lore",
+        "Type": "Coronation stone",
+        "Setting": "Scone",
+        "Motif": "Stone of destiny"
+      }
+    },
+    "Stow Minster and the Staff of Etheldreda": {
+      "image": "legend-images/stow-minster-and-the-staff-of-etheldreda-hero.jpg",
+      "alt": "A green ash staff sprouting beside Stow Minster in golden dawn light",
+      "caption": "A visual interpretation of Stow Minster and the Staff of Etheldreda",
+      "map_title": "Lincolnshire, England",
+      "section_heading": "The staff that rooted",
+      "pullquote": "Etheldreda's ash staff was said to burst into leaf where the minster would stand.",
+      "facts": {
+        "Tradition": "English saint lore",
+        "Type": "Minster legend",
+        "Setting": "Stow",
+        "Motif": "Miraculous staff"
+      }
+    },
+    "Sutton Hoo": {
+      "image": "legend-images/sutton-hoo-hero.jpg",
+      "alt": "The burial mounds of Sutton Hoo above a misty Suffolk river landscape at sunrise",
+      "caption": "A visual interpretation of Sutton Hoo",
+      "map_title": "Suffolk",
+      "section_heading": "The ship beneath the mound",
+      "pullquote": "The great burial mounds keep the shape of an Anglo-Saxon world beneath the turf.",
+      "facts": {
+        "Tradition": "Anglo-Saxon heritage",
+        "Type": "Burial mounds",
+        "Setting": "Woodbridge",
+        "Motif": "Ship burial"
+      }
+    },
+    "The Pipers": {
+      "image": "legend-images/the-pipers-hero.jpg",
+      "alt": "The two Pipers standing stones on Bodmin Moor with distant circles under stormy light",
+      "caption": "A visual interpretation of The Pipers on Bodmin Moor",
+      "map_title": "Cornwall",
+      "section_heading": "The musicians in stone",
+      "pullquote": "The pair of stones stand near The Hurlers, part of Bodmin Moor's petrified-dance landscape.",
+      "facts": {
+        "Tradition": "Cornish stone lore",
+        "Type": "Standing stones",
+        "Setting": "Bodmin Moor",
+        "Motif": "Petrified musicians"
+      }
+    },
+    "The Towans": {
+      "image": "legend-images/the-towans-hero.jpg",
+      "alt": "Storm-lit Cornish dunes with buried church stonework emerging beneath windblown sand",
+      "caption": "A visual interpretation of The Towans and the Lost City of Connor",
+      "map_title": "Cornwall",
+      "section_heading": "The church under the sand",
+      "pullquote": "The dunes were said to hide Connor and St Gwithian's old church beneath the sand.",
+      "facts": {
+        "Tradition": "Cornish lost-city lore",
+        "Type": "Dune legend",
+        "Setting": "The Towans",
+        "Motif": "Buried church"
+      }
+    },
+    "Threekingham Three Kings": {
+      "image": "legend-images/threekingham-three-kings-hero.jpg",
+      "alt": "Three frosted mounds in Threekingham churchyard beneath a pale Lincolnshire dawn",
+      "caption": "A visual interpretation of the Threekingham Three Kings",
+      "map_title": "Lincolnshire, England",
+      "section_heading": "The three kings in the churchyard",
+      "pullquote": "Village tradition placed three Danish kings beneath the churchyard earth.",
+      "facts": {
+        "Tradition": "English village lore",
+        "Type": "Churchyard legend",
+        "Setting": "Threekingham",
+        "Motif": "Danish kings"
+      }
+    },
+    "Timoney Stones": {
+      "image": "legend-images/timoney-stones-hero.jpg",
+      "alt": "A Tipperary hilltop crowded with standing stones around a flat central stone at sunrise",
+      "caption": "A visual interpretation of the Timoney Stones",
+      "map_title": "Timoney, County Tipperary",
+      "section_heading": "The stones on the hill",
+      "pullquote": "The hilltop is scattered with stones, one remembered locally as a Druid's altar.",
+      "facts": {
+        "Tradition": "Irish megalithic lore",
+        "Type": "Standing-stone complex",
+        "Setting": "Timoney",
+        "Motif": "Druid's altar"
+      }
+    },
+    "Towednack": {
+      "image": "legend-images/towednack-hero.jpg",
+      "alt": "Towednack church and granite moorland stones in a misty West Penwith landscape",
+      "caption": "A visual interpretation of Towednack",
+      "map_title": "Cornwall",
+      "section_heading": "The magical parish",
+      "pullquote": "Towednack belongs to the stone-country geography of saints, piskies, and old spirits.",
+      "facts": {
+        "Tradition": "Cornish parish lore",
+        "Type": "Church and moorland",
+        "Setting": "West Penwith",
+        "Motif": "Pisky landscape"
+      }
+    },
+    "Townleyhall passage grave": {
+      "image": "legend-images/townleyhall-passage-grave-hero.jpg",
+      "alt": "Midsummer sunrise shining through the entrance of Townleyhall passage grave",
+      "caption": "A visual interpretation of Townleyhall passage grave",
+      "map_title": "Townleyhall, County Louth",
+      "section_heading": "The midsummer passage",
+      "pullquote": "The tomb's entrance turns toward midsummer sunrise within the wider Bru na Boinne world.",
+      "facts": {
+        "Tradition": "Irish Neolithic lore",
+        "Type": "Passage grave",
+        "Setting": "County Louth",
+        "Motif": "Midsummer sunrise"
+      }
+    },
+    "Turoe Stone": {
+      "image": "legend-images/turoe-stone-hero.jpg",
+      "alt": "The carved spirals of the Turoe Stone catching sunset light beside a Galway earthwork",
+      "caption": "A visual interpretation of the Turoe Stone",
+      "map_title": "Bullaun, County Galway",
+      "section_heading": "The stone of spirals",
+      "pullquote": "Its La Tene curves suggest Iron Age ceremony, fertility, and kingship.",
+      "facts": {
+        "Tradition": "Irish Iron Age lore",
+        "Type": "Decorated stone",
+        "Setting": "County Galway",
+        "Motif": "La Tene spirals"
+      }
+    },
+    "Twelve Apostles, West Yorkshire": {
+      "image": "legend-images/twelve-apostles-west-yorkshire-hero.jpg",
+      "alt": "The Twelve Apostles stone circle on West Yorkshire moorland at stormy sunset",
+      "caption": "A visual interpretation of Twelve Apostles, West Yorkshire",
+      "map_title": "Yorkshire",
+      "section_heading": "The circle on the moor",
+      "pullquote": "The low ring of stones keeps watch over the high ground above Wharfedale.",
+      "facts": {
+        "Tradition": "English moorland lore",
+        "Type": "Stone circle",
+        "Setting": "West Yorkshire",
+        "Motif": "Moorland ring"
+      }
+    },
+    "Tyno Helig": {
+      "image": "legend-images/tyno-helig-hero.jpg",
+      "alt": "Conwy Bay at low tide with faint submerged foundations below silver water",
+      "caption": "A visual interpretation of Tyno Helig beneath Conwy Bay",
+      "map_title": "Conwy Bay, Wales",
+      "section_heading": "The lost land under the bay",
+      "pullquote": "Prince Helig's palace was said to lie beneath the water off the Great Orme.",
+      "facts": {
+        "Tradition": "Welsh drowned-land lore",
+        "Type": "Lost land",
+        "Setting": "Conwy Bay",
+        "Motif": "Welsh Atlantis"
+      }
+    },
+    "Tír na nÓg": {
+      "image": "legend-images/tir-na-nog-hero.jpg",
+      "alt": "A white horse standing on the misty shore of Lough Leane beneath golden Otherworld light",
+      "caption": "A visual interpretation of Tir na nOg from Lough Leane",
+      "map_title": "Lough Leane, County Kerry",
+      "section_heading": "The shore of youth",
+      "pullquote": "From Lough Leane, Niamh's white horse carried Oisin toward the Land of Youth.",
+      "facts": {
+        "Tradition": "Irish Otherworld lore",
+        "Type": "Lake threshold",
+        "Setting": "County Kerry",
+        "Motif": "Land of Youth"
+      }
+    },
+    "Uffington White Horse": {
+      "image": "legend-images/uffington-white-horse-hero.jpg",
+      "alt": "The Uffington White Horse cut into bright chalk downs beneath a windy sky",
+      "caption": "A visual interpretation of the Uffington White Horse",
+      "map_title": "Oxfordshire",
+      "section_heading": "The horse on the downs",
+      "pullquote": "The ancient chalk horse watches over a landscape of saint legend and prehistoric monuments.",
+      "facts": {
+        "Tradition": "English hill-figure lore",
+        "Type": "Chalk horse",
+        "Setting": "Berkshire Downs",
+        "Motif": "Prehistoric figure"
+      }
+    },
+    "Up Helly Aa": {
+      "image": "legend-images/up-helly-aa-hero.jpg",
+      "alt": "Torchlight around a Viking-style galley on a dark Shetland winter night",
+      "caption": "A visual interpretation of Up Helly Aa",
+      "map_title": "Shetland",
+      "section_heading": "The galley in the firelight",
+      "pullquote": "The winter procession ends in flame, turning Norse revival imagery into Shetland identity.",
+      "facts": {
+        "Tradition": "Shetland festival lore",
+        "Type": "Fire festival",
+        "Setting": "Shetland",
+        "Motif": "Burning galley"
+      }
+    },
+    "Watlington White Mark": {
+      "image": "legend-images/watlington-white-mark-hero.jpg",
+      "alt": "The Watlington White Mark chalk arrow cut into an Oxfordshire hill with the village church below",
+      "caption": "A visual interpretation of the Watlington White Mark",
+      "map_title": "Oxfordshire",
+      "section_heading": "The chalk spire on the hill",
+      "pullquote": "The white mark was cut to make a steeple-less church appear to wear a spire.",
+      "facts": {
+        "Tradition": "English chalk-mark lore",
+        "Type": "Chalk hill mark",
+        "Setting": "Watlington",
+        "Motif": "False spire"
+      }
+    },
+    "Whetstones": {
+      "image": "legend-images/whetstones-hero.jpg",
+      "alt": "Broken stones below Corndon Hill marking the trace of a lost Welsh Marches circle",
+      "caption": "A visual interpretation of the Whetstones",
+      "map_title": "Welshpool, Powys",
+      "section_heading": "The lost ring under Corndon",
+      "pullquote": "The destroyed circle was one of the sacred rings guarding Corndon Hill's slopes.",
+      "facts": {
+        "Tradition": "Welsh Marches folklore",
+        "Type": "Destroyed stone circle",
+        "Setting": "Corndon Hill",
+        "Motif": "Witch turned to stone"
+      }
+    },
+    "Witchknowe Park": {
+      "image": "legend-images/witchknowe-park-hero.jpg",
+      "alt": "A misty Fife park mound with a dark stone marker at dawn",
+      "caption": "A visual interpretation of Witchknowe Park",
+      "map_title": "Fife",
+      "section_heading": "The witch hill",
+      "pullquote": "The park's name remembers the hill where accused witches were executed in the 17th century.",
+      "facts": {
+        "Tradition": "Scottish witch-trial history",
+        "Type": "Execution site",
+        "Setting": "Inverkeithing",
+        "Motif": "Witch hill"
+      }
+    },
+    "Withypool Stone Circle": {
+      "image": "legend-images/withypool-stone-circle-hero.jpg",
+      "alt": "Many small stones of Withypool Stone Circle scattered through Exmoor grass at harvest dusk",
+      "caption": "A visual interpretation of Withypool Stone Circle",
+      "map_title": "Somerset",
+      "section_heading": "The uncountable circle",
+      "pullquote": "The Exmoor ring was said never to yield the same count of stones twice.",
+      "facts": {
+        "Tradition": "English moorland lore",
+        "Type": "Stone circle",
+        "Setting": "Exmoor",
+        "Motif": "Uncountable stones"
+      }
+    },
+    "Wroth Silver at Knightlow Hill": {
+      "image": "legend-images/wroth-silver-at-knightlow-hill-hero.jpg",
+      "alt": "A hollow stone on Knightlow Hill holding old pennies before dawn",
+      "caption": "A visual interpretation of Wroth Silver at Knightlow Hill",
+      "map_title": "Warwickshire, England",
+      "section_heading": "The pennies before dawn",
+      "pullquote": "For centuries, villages cast pennies into the hollow stone before sunrise on Martinmas.",
+      "facts": {
+        "Tradition": "English custom lore",
+        "Type": "Rent ceremony",
+        "Setting": "Knightlow Hill",
+        "Motif": "Wroth Silver"
+      }
+    },
+    "Yester Castle": {
+      "image": "legend-images/yester-castle-hero.jpg",
+      "alt": "A ruined East Lothian castle with a dark vaulted underground chamber entrance at dusk",
+      "caption": "A visual interpretation of Yester Castle and the Goblin Ha'",
+      "map_title": "Gifford, East Lothian",
+      "section_heading": "The vaulted chamber",
+      "pullquote": "Yester's underground hall was said to have been made by magical arts for Hugo de Giffard.",
+      "facts": {
+        "Tradition": "Scottish castle lore",
+        "Type": "Ruined castle",
+        "Setting": "East Lothian",
+        "Motif": "Goblin Ha'"
+      }
     }
   }
 }

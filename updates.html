@@ -134,7 +134,6 @@ footer a{color:var(--ink-light)}
 <link rel="stylesheet" href="folklorefinder.css?v=20260713b"/>
 </head>
 <body class="ff-paper interior-page updates-page">
-<a class="skip-link" href="#main-content">Skip to content</a>
 
 <nav class="topnav">
   <a class="topnav-brand" href="./" aria-label="Folklore Finder home"><img class="topnav-emblem" src="green-man.png" alt="Green Man"/><span class="topnav-title">Folklore Finder</span></a>
@@ -288,7 +287,7 @@ footer a{color:var(--ink-light)}
   // generate_pages.py (see build_recent_legends()/build_new_collections()); the
   // empty-array fallbacks below only show if the build step hasn't run yet. ──
   const RECENT_LEGENDS = [{"slug": "bessie-millie-of-stromness", "name": "Bessie Millie of Stromness", "date_added": "28 June 2026", "region": "Stromness, Orkney", "category": "Witches", "colour": "#3a2a4e"}, {"slug": "bignor-hill-dragon", "name": "Bignor Hill Dragon", "date_added": "28 June 2026", "region": "West Sussex, England", "category": "Dragons", "colour": "#8b2a1a"}, {"slug": "brutus-of-troy", "name": "Brutus of Troy", "date_added": "28 June 2026", "region": "Totnes, Devon", "category": "Legendary Figures", "colour": "#6a3a2a"}, {"slug": "cliodhna", "name": "Clíodhna", "date_added": "28 June 2026", "region": "Glandore, County Cork, Ireland", "category": "Deities", "colour": "#1e4a3a"}, {"slug": "cormoran-the-giant-of-st-michael-s-mount", "name": "Cormoran, the Giant of St Michael's Mount", "date_added": "28 June 2026", "region": "St Michael's Mount, Cornwall", "category": "Giants", "colour": "#4a3820"}, {"slug": "erne-of-lough-erne", "name": "Erne of Lough Erne", "date_added": "28 June 2026", "region": "County Fermanagh, Northern Ireland", "category": "Deities", "colour": "#1e4a3a"}, {"slug": "fairy-invasion-of-guernsey", "name": "Fairy Invasion of Guernsey", "date_added": "28 June 2026", "region": "Guernsey, Channel Islands", "category": "Fae & Spirits", "colour": "#7e5577"}, {"slug": "giant-of-grabbist", "name": "Giant of Grabbist", "date_added": "28 June 2026", "region": "Dunster, Somerset", "category": "Giants", "colour": "#4a3820"}];
-  const NEW_COLLECTIONS = [];
+  const NEW_COLLECTIONS = [{"slug": "birth-of-albion", "title": "Birth of Albion"}];
 
   const rl = document.getElementById('recentLegends');
   if (RECENT_LEGENDS.length) {

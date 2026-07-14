@@ -25,8 +25,6 @@ body{
 @media(max-width:900px){html,body{overflow-x:hidden}}
 a{color:inherit}
 button{font:inherit}
-.skip-link{position:absolute;left:8px;top:-48px;z-index:10000;padding:9px 16px;background:#1a0e06;color:#f2e8d5;font-family:'Marcellus',serif;font-size:13px;letter-spacing:.04em;text-decoration:none;border:1px solid var(--gold,#b09060);border-radius:0 0 4px 4px;transition:top .15s ease}
-.skip-link:focus{top:0;outline:2px solid var(--gold,#b09060);outline-offset:2px}
 /* Canonical banner — matches folklorefinder.css / TOPNAV_CSS */
 .topnav{
   position:relative;

@@ -340,8 +340,6 @@ TOPNAV_CSS = (
     "overflow-x:auto;overflow-y:hidden;scrollbar-width:none;padding-left:12px;padding-right:12px}"
     ".topnav::-webkit-scrollbar{display:none}"
     ".topnav a{flex:0 0 auto;padding:5px 10px;font-size:11px;white-space:nowrap}}"
-    ".skip-link{position:absolute;left:8px;top:-48px;z-index:10000;padding:9px 16px;background:#1a0e06;color:#f2e8d5;font-family:'Marcellus',serif;font-size:13px;letter-spacing:.04em;text-decoration:none;border:1px solid #b09060;border-radius:0 0 4px 4px;transition:top .15s ease}"
-    ".skip-link:focus{top:0;outline:2px solid #b09060;outline-offset:2px}"
     "footer{position:relative;text-align:center;padding:12px 18px;font-size:12px;line-height:1.6;"
     "color:rgba(246,241,230,.78);background:#1a0e06;border-top:0}"
     "footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;"
@@ -371,8 +369,7 @@ TOPNAV_ITEMS = [
 
 
 def topnav_html(active=""):
-    parts = ['<a class="skip-link" href="#main-content">Skip to content</a>',
-             '<nav class="topnav">']
+    parts = ['<nav class="topnav">']
     parts.append(
         f'<a class="topnav-brand" href="{BASE}/" aria-label="Folklore Finder home">'
         f'<img class="topnav-emblem" src="{BASE}/green-man.png" alt="Green Man"/>'
@@ -491,8 +488,8 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 .col-hero-split{display:flex;gap:30px;align-items:stretch;margin:14px 0 24px}
 .col-hero-desc{flex:1 1 0;min-width:0;display:flex;flex-direction:column;justify-content:center}
 .col-hero-desc p{font-size:17px;color:#5c4a2a;line-height:1.62;max-width:58ch}
-.col-hero-media{flex:0 0 46%;position:relative;min-height:264px;border-radius:2px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.25);background:#241a10}
-.col-hero-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.col-hero-media{flex:0 0 42%;position:relative;min-height:320px;aspect-ratio:4/3;border-radius:2px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.25);background:#241a10}
+.col-hero-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
 .col-hero-credit{position:absolute;right:10px;bottom:8px;font-size:10px;color:rgba(255,255,255,.85);background:rgba(0,0,0,.4);padding:2px 8px;border-radius:2px}
 @media(max-width:680px){.col-hero-split{flex-direction:column;gap:16px}.col-hero-media{flex-basis:auto;height:220px;min-height:0}}
 /* Article layout: alternating image/summary rows for collection members */
@@ -515,8 +512,8 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 .col-index-row{display:flex;align-items:stretch;background:rgba(246,241,230,.72);border:1px solid rgba(90,70,50,.28);text-decoration:none;color:#3f3023;overflow:hidden;box-shadow:inset 0 0 0 5px rgba(255,255,255,.14);transition:border-color .15s,transform .12s,box-shadow .15s}
 .col-index-row:hover{border-color:#c4622a;transform:translateY(-2px);box-shadow:0 12px 30px rgba(44,31,14,.16),inset 0 0 0 5px rgba(255,255,255,.14)}
 .col-index-row:nth-child(even){flex-direction:row-reverse}
-.col-index-media{flex:0 0 46%;position:relative;min-height:262px;background:#241a10}
-.col-index-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.col-index-media{flex:0 0 42%;position:relative;min-height:320px;background:#241a10}
+.col-index-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
 .col-index-body{flex:1 1 0;min-width:0;padding:28px 34px;display:flex;flex-direction:column;justify-content:center}
 .col-index-count{align-self:flex-start;font-family:'Marcellus',serif;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#9d461f;margin-bottom:10px}
 .col-index-name{font-family:'Marcellus',serif;font-weight:400;font-size:clamp(24px,2.5vw,32px);line-height:1.12;color:#3f3023;margin-bottom:10px}
@@ -976,6 +973,9 @@ def update_whats_new_page(recent, built_collections, slugmap, cats, meta, limit=
         for l in recent[:limit]
     ]
 
+    path = "updates.html"
+    text = io.open(path, encoding="utf-8").read()
+
     try:
         seen_slugs = set(json.load(io.open(NEW_COLLECTIONS_STATE_FILE, encoding="utf-8")))
     except Exception:
@@ -986,11 +986,22 @@ def update_whats_new_page(recent, built_collections, slugmap, cats, meta, limit=
         for slug, title, _count in built_collections
         if slug not in seen_slugs
     ]
+    if not new_cards:
+        match = re.search(r"const NEW_COLLECTIONS = (.*?);", text, flags=re.S)
+        if match:
+            try:
+                existing_cards = json.loads(match.group(1))
+            except Exception:
+                existing_cards = []
+            titles_by_slug = {slug: title for slug, title, _count in built_collections}
+            new_cards = [
+                {"slug": card["slug"], "title": titles_by_slug[card["slug"]]}
+                for card in existing_cards
+                if isinstance(card, dict) and card.get("slug") in current_slugs
+            ]
     with io.open(NEW_COLLECTIONS_STATE_FILE, "w", encoding="utf-8") as f:
         json.dump(sorted(current_slugs), f, ensure_ascii=False, indent=0)
 
-    path = "updates.html"
-    text = io.open(path, encoding="utf-8").read()
     # Matches both the initial placeholder and a previously-injected array, so
     # re-running the build stays idempotent.
     replacements = (
@@ -1665,9 +1676,9 @@ def build():
                 if page_no < total_pages:
                     rel_links += f'<link rel="next" href="{collection_page_url(slug, page_no + 1)}"/>\n'
 
-                # Editorial content on page 1 only: a compact hero, the collection's
-                # context folded into the summary, and any further-reading resources
-                # after the article rows. The "browse other collections" nav now sits
+                # Editorial content on page 1 only: a compact hero and the
+                # collection's context folded into the summary. The "browse other
+                # collections" nav now sits
                 # at the top (top_nav_html), and each member's own image appears in
                 # its article row, so the old gallery / related-collections sections
                 # are dropped as redundant.
@@ -1697,16 +1708,6 @@ def build():
                     )
                     if col.get("context"):
                         context_html = f'<p class="col-context">{esc(col["context"])}</p>\n'
-                    resources = col.get("resources") or []
-                    if resources:
-                        items = "".join(
-                            f'<li><a href="{esc(r["url"])}" target="_blank" rel="noopener">{esc(r["label"])} &#8594;</a></li>'
-                            for r in resources
-                        )
-                        extra_sections = (
-                            '<section class="col-section"><h2>Further Resources</h2>'
-                            f'<ul class="col-resources">{items}</ul></section>'
-                        )
 
                 map_link = (f'<p class="col-maplink"><a class="back" '
                             f'href="{BASE}/map?collection={esc(slug)}">'

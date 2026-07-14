@@ -180,6 +180,7 @@
       font-family: var(--font-body);
       color: var(--ink);
       min-height: 100vh;
+      min-height: 100dvh;
       display: flex;
       flex-direction: column;
     }
@@ -257,10 +258,10 @@
     .map-nav { display: flex; align-items: center; gap: 2px; flex-wrap: wrap; justify-content: center; }
     .map-nav a {
       font-family: var(--font-display);
-      font-size: 12px; letter-spacing: .08em; text-transform: uppercase;
+      font-size: 11px; letter-spacing: .08em; text-transform: uppercase;
       color: rgba(242,232,213,0.78);
       text-decoration: none;
-      padding: 6px 13px; border-radius: 3px;
+      padding: 6px 11px; border-radius: 3px;
       transition: background .15s, color .15s;
       white-space: nowrap;
     }
@@ -268,7 +269,7 @@
     .map-nav a.active { color: var(--accent-glow); }
     @media (max-width: 1100px) {
       .map-nav { gap: 0; }
-      .map-nav a { padding: 5px 9px; font-size: 11px; }
+      .map-nav a { padding: 5px 8px; font-size: 10.5px; }
     }
     @media (max-width: 860px) {
       header { justify-content: space-between; }
@@ -284,7 +285,7 @@
         border-top: 1px solid rgba(176,144,96,0.22);
       }
       .map-nav::-webkit-scrollbar { display: none; }
-      .map-nav a { flex: 0 0 auto; padding: 5px 9px; }
+      .map-nav a { flex: 0 0 auto; padding: 5px 8px; font-size: 10.5px; }
     }
 
     @media (max-width: 1100px) {
@@ -878,8 +879,21 @@
 
       /* Map layout: the map fills the width; the sidebar becomes a slide-in
          overlay (toggled by the "☰ Entries" button) instead of eating the row. */
-      .content-area { flex-direction: column; padding: 8px; gap: 0; }
-      .map-wrap { width: 100%; flex: 1 1 auto; min-height: 0; }
+      .content-area {
+        flex-direction: column;
+        padding: 0;
+        gap: 0;
+        box-shadow: none;
+      }
+      .map-wrap {
+        width: 100%;
+        flex: 1 1 auto;
+        min-height: 0;
+        border: 0;
+        box-shadow: none;
+      }
+      .map-border { display: none; }
+      footer { display: none; }
       .sidebar {
         position: absolute; top: 8px; left: 8px; right: 8px; bottom: 8px;
         width: auto; max-width: 360px; z-index: 1500;
@@ -892,12 +906,9 @@
         opacity: 0; pointer-events: none;
       }
     }
-    .skip-link{position:absolute;left:8px;top:-48px;z-index:10000;padding:9px 16px;background:#1a0e06;color:#f2e8d5;font-family:'Marcellus',serif;font-size:13px;letter-spacing:.04em;text-decoration:none;border:1px solid #b09060;border-radius:0 0 4px 4px;transition:top .15s ease}
-    .skip-link:focus{top:0;outline:2px solid #b09060;outline-offset:2px}
   </style>
 </head>
 <body class="map-page">
-<a class="skip-link" href="#main-content">Skip to content</a>
 
 <header>
   <div class="header-title">

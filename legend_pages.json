@@ -8850,6 +8850,286 @@
         "Setting": "Denbighshire",
         "Motif": "Upland ring"
       }
+    },
+    "Mount Venus": {
+      "image": "legend-images/mount-venus-hero.jpg",
+      "alt": "A mossy megalithic tomb at Mount Venus in the wooded Dublin foothills",
+      "caption": "A visual interpretation of Mount Venus near Rathfarnham",
+      "map_title": "Rathfarnham, County Dublin",
+      "section_heading": "The tomb in the trees",
+      "pullquote": "The quiet stones of Mount Venus keep their place on the wooded edge of Dublin.",
+      "facts": {
+        "Tradition": "Irish megalithic lore",
+        "Type": "Megalithic site",
+        "Setting": "Edmondstown",
+        "Status": "National heritage site"
+      }
+    },
+    "Mousehold Heath (Heviskey Tan)": {
+      "image": "legend-images/mousehold-heath-heviskey-tan-hero.jpg",
+      "alt": "Sandy hollows and gorse on Mousehold Heath above misty Norwich at dawn",
+      "caption": "A visual interpretation of Mousehold Heath, Heviskey Tan",
+      "map_title": "Norwich, Norfolk",
+      "section_heading": "The place of holes",
+      "pullquote": "Heviskey Tan was remembered in Romani tradition as a burial place on the heath above Norwich.",
+      "facts": {
+        "Tradition": "English Romani lore",
+        "Type": "Heathland burial tradition",
+        "Setting": "Mousehold Heath",
+        "Motif": "The place of holes"
+      }
+    },
+    "Mullyash Kerbed Cairn": {
+      "image": "legend-images/mullyash-kerbed-cairn-hero.jpg",
+      "alt": "Mullyash Kerbed Cairn on a heather-covered Armagh summit at late-summer sunset",
+      "caption": "A visual interpretation of Mullyash Kerbed Cairn",
+      "map_title": "Mullyash, County Armagh",
+      "section_heading": "The cairn on the summit",
+      "pullquote": "The mountain cairn gathered stories of hidden gold, sorrow, and Lughnasadh meetings.",
+      "facts": {
+        "Tradition": "Irish mountain lore",
+        "Type": "Kerbed cairn",
+        "Setting": "Mullyash Mountain",
+        "Motif": "Lughnasadh gathering"
+      }
+    },
+    "Museum of Witchcraft and Magic": {
+      "image": "legend-images/museum-of-witchcraft-and-magic-hero.jpg",
+      "alt": "Glass cases of folk magic artefacts in a warm lamplit Cornish museum room",
+      "caption": "A visual interpretation of the Museum of Witchcraft and Magic at Boscastle",
+      "map_title": "Cornwall",
+      "section_heading": "The cabinet of charms",
+      "pullquote": "Boscastle's museum gathers the objects and traces of folk magic into one extraordinary collection.",
+      "facts": {
+        "Tradition": "British folk magic",
+        "Type": "Museum collection",
+        "Setting": "Boscastle",
+        "Motif": "Charms and artefacts"
+      }
+    },
+    "Mên Scryfa": {
+      "image": "legend-images/men-scryfa-hero.jpg",
+      "alt": "The inscribed Mên Scryfa standing stone on a storm-lit Cornish moor",
+      "caption": "A visual interpretation of Mên Scryfa",
+      "map_title": "Cornwall",
+      "section_heading": "The written stone",
+      "pullquote": "The early medieval inscription names Rialobranus, leaving a human trace on the moorland stone.",
+      "facts": {
+        "Tradition": "Cornish monument lore",
+        "Type": "Inscribed standing stone",
+        "Setting": "Cornwall",
+        "Motif": "Memorial inscription"
+      }
+    },
+    "Mên-an-Tol": {
+      "image": "legend-images/men-an-tol-hero.jpg",
+      "alt": "The circular holed stone of Mên-an-Tol with dawn light shining through it",
+      "caption": "A visual interpretation of Mên-an-Tol, the Crick Stone",
+      "map_title": "Cornwall",
+      "section_heading": "The stone with the hole",
+      "pullquote": "The holed stone was remembered for healing rites and the strange power of passing through.",
+      "facts": {
+        "Tradition": "Cornish healing lore",
+        "Type": "Holed standing stone",
+        "Setting": "Madron",
+        "Motif": "Healing passage"
+      }
+    },
+    "Navan Fort": {
+      "image": "legend-images/navan-fort-hero.jpg",
+      "alt": "The circular earthworks and mound of Navan Fort lit by storm-clearing dawn",
+      "caption": "A visual interpretation of Navan Fort, Emain Macha",
+      "map_title": "Emain Macha, County Armagh",
+      "section_heading": "The royal earthwork",
+      "pullquote": "Emain Macha was remembered as the royal seat of the Ulaidh and the world of Cú Chulainn.",
+      "facts": {
+        "Tradition": "Ulster Cycle lore",
+        "Type": "Iron Age royal site",
+        "Setting": "County Armagh",
+        "Motif": "Burned timber temple"
+      }
+    },
+    "Newgrange": {
+      "image": "legend-images/newgrange-hero.jpg",
+      "alt": "Newgrange passage tomb catching winter solstice sunrise across its white quartz facade",
+      "caption": "A visual interpretation of Newgrange at winter solstice",
+      "map_title": "County Meath, Ireland",
+      "section_heading": "The chamber of sunrise",
+      "pullquote": "At midwinter dawn, light enters the passage and reaches the heart of the tomb.",
+      "facts": {
+        "Tradition": "Irish megalithic and mythic lore",
+        "Type": "Passage tomb",
+        "Setting": "Brú na Bóinne",
+        "Motif": "Solstice sunrise"
+      }
+    },
+    "Newgrange cursus": {
+      "image": "legend-images/newgrange-cursus-hero.jpg",
+      "alt": "Parallel grass banks of the Newgrange cursus leading toward the distant mound at sunrise",
+      "caption": "A visual interpretation of the Newgrange cursus",
+      "map_title": "Newgrange, County Meath",
+      "section_heading": "The processional way",
+      "pullquote": "The cursus marks a ceremonial route through the sacred landscape of Brú na Bóinne.",
+      "facts": {
+        "Tradition": "Irish Neolithic landscape lore",
+        "Type": "Cursus earthwork",
+        "Setting": "Brú na Bóinne",
+        "Motif": "Procession route"
+      }
+    },
+    "Nine Maidens Stone Row": {
+      "image": "legend-images/nine-maidens-stone-row-hero.jpg",
+      "alt": "The Nine Maidens stone row stretching across a Cornish field at sunset",
+      "caption": "A visual interpretation of Nine Maidens Stone Row",
+      "map_title": "Cornwall",
+      "section_heading": "The maidens in stone",
+      "pullquote": "The aligned stones carry the old Cornish memory of maidens fixed forever in the field.",
+      "facts": {
+        "Tradition": "Cornish stone-row lore",
+        "Type": "Stone row",
+        "Setting": "St Columb Major",
+        "Motif": "Petrified maidens"
+      }
+    },
+    "Our Lady of Walsingham": {
+      "image": "legend-images/our-lady-of-walsingham-hero.jpg",
+      "alt": "A candlelit medieval shrine doorway at Walsingham in misty Norfolk morning light",
+      "caption": "A visual interpretation of Our Lady of Walsingham",
+      "map_title": "Norfolk",
+      "section_heading": "The Holy House in Norfolk",
+      "pullquote": "A vision commanded Richeldis to build a holy house, and Walsingham became a great pilgrimage shrine.",
+      "facts": {
+        "Tradition": "English pilgrimage lore",
+        "Type": "Marian shrine",
+        "Setting": "Walsingham",
+        "Motif": "Vision-built holy house"
+      }
+    },
+    "Overtoun Bridge": {
+      "image": "legend-images/overtoun-bridge-hero.jpg",
+      "alt": "Overtoun Bridge crossing a misty wooded gorge in blue-grey Scottish dusk",
+      "caption": "A visual interpretation of Overtoun Bridge",
+      "map_title": "Scotland",
+      "section_heading": "The bridge over the gorge",
+      "pullquote": "The bridge's grim reputation gathers around the drop, the woodland, and the White Lady tale.",
+      "facts": {
+        "Tradition": "Scottish ghost lore",
+        "Type": "Haunted bridge",
+        "Setting": "Overtoun",
+        "Motif": "White Lady"
+      }
+    },
+    "Oweynagat": {
+      "image": "legend-images/oweynagat-hero.jpg",
+      "alt": "The dark cave mouth of Oweynagat at Rathcroghan glowing faintly at Samhain dusk",
+      "caption": "A visual interpretation of Oweynagat, Ireland's Gate to Hell",
+      "map_title": "Rathcroghan, County Roscommon",
+      "section_heading": "The gate at Samhain",
+      "pullquote": "At Samhain, the cave was said to open into the Otherworld and the realm of the Morrígan.",
+      "facts": {
+        "Tradition": "Irish Otherworld lore",
+        "Type": "Cave portal",
+        "Setting": "Rathcroghan",
+        "Motif": "Gate to the Otherworld"
+      }
+    },
+    "Penhale Sands": {
+      "image": "legend-images/penhale-sands-hero.jpg",
+      "alt": "Storm-lit Cornish dunes at Penhale Sands with half-buried stonework under blowing sand",
+      "caption": "A visual interpretation of Penhale Sands and the lost city of Langarrow",
+      "map_title": "Cornwall",
+      "section_heading": "The city under the dunes",
+      "pullquote": "The dunes were said to cover Langarrow, swallowed by sand and heard again in storms.",
+      "facts": {
+        "Tradition": "Cornish lost-city lore",
+        "Type": "Buried city legend",
+        "Setting": "Penhale Sands",
+        "Motif": "Divine sandstorm"
+      }
+    },
+    "Porlock Stone Circle": {
+      "image": "legend-images/porlock-stone-circle-hero.jpg",
+      "alt": "Porlock Stone Circle on Exmoor beside a misty moonlit track",
+      "caption": "A visual interpretation of Porlock Stone Circle",
+      "map_title": "Somerset",
+      "section_heading": "The hoofbeats on the moor",
+      "pullquote": "Invisible hoofbeats were said to sound near the Exmoor circle after dark.",
+      "facts": {
+        "Tradition": "English moorland haunting",
+        "Type": "Stone circle",
+        "Setting": "Exmoor",
+        "Motif": "Phantom hoofbeats"
+      }
+    },
+    "Rathcoran": {
+      "image": "legend-images/rathcoran-hero.jpg",
+      "alt": "Rathcoran passage tomb and hillfort earthworks on Baltinglass Hill at sunrise",
+      "caption": "A visual interpretation of Rathcoran on Baltinglass Hill",
+      "map_title": "Baltinglass, County Wicklow",
+      "section_heading": "The passage on the hill",
+      "pullquote": "Local tradition carried a hidden passage from the hilltop cairn toward the abbey below.",
+      "facts": {
+        "Tradition": "Irish monument lore",
+        "Type": "Passage tomb and hillfort",
+        "Setting": "Baltinglass Hill",
+        "Motif": "Secret passage"
+      }
+    },
+    "Rathcroghan": {
+      "image": "legend-images/rathcroghan-hero.jpg",
+      "alt": "The green mounds and ring earthworks of Rathcroghan glowing in Roscommon dawn mist",
+      "caption": "A visual interpretation of Rathcroghan, ancient capital of Connacht",
+      "map_title": "Rathcroghan, County Roscommon",
+      "section_heading": "The royal landscape",
+      "pullquote": "Cruachan was Queen Medb's royal landscape and a threshold to the Irish Otherworld.",
+      "facts": {
+        "Tradition": "Irish heroic lore",
+        "Type": "Royal ceremonial complex",
+        "Setting": "County Roscommon",
+        "Motif": "Queen Medb's court"
+      }
+    },
+    "Red Horse of Tysoe": {
+      "image": "legend-images/red-horse-of-tysoe-hero.jpg",
+      "alt": "A red clay horse outline fading into the grass above the Vale of the Red Horse",
+      "caption": "A visual interpretation of the lost Red Horse of Tysoe",
+      "map_title": "South Warwickshire",
+      "section_heading": "The vanished hill figure",
+      "pullquote": "The red horse was scoured for centuries before ploughing erased it from the hillside.",
+      "facts": {
+        "Tradition": "English hill-figure lore",
+        "Type": "Lost clay hill figure",
+        "Setting": "Tysoe",
+        "Motif": "Vanished horse"
+      }
+    },
+    "Rudston Monolith": {
+      "image": "legend-images/rudston-monolith-hero.jpg",
+      "alt": "The Rudston Monolith towering above an East Yorkshire churchyard at sunrise",
+      "caption": "A visual interpretation of the Rudston Monolith",
+      "map_title": "East Yorkshire",
+      "section_heading": "The tallest standing stone",
+      "pullquote": "Britain's tallest standing stone rises in the churchyard like a remnant of an older sacred order.",
+      "facts": {
+        "Tradition": "English megalithic lore",
+        "Type": "Standing stone",
+        "Setting": "Rudston",
+        "Motif": "Old religion beside new"
+      }
+    },
+    "St Davids Cathedral": {
+      "image": "legend-images/st-davids-cathedral-hero.jpg",
+      "alt": "St Davids Cathedral in its green Pembrokeshire valley beneath a storm-lit western sky",
+      "caption": "A visual interpretation of St Davids Cathedral",
+      "map_title": "Wales",
+      "section_heading": "The cathedral in the valley",
+      "pullquote": "The cathedral anchors the sacred landscape of St Davids near the western edge of Wales.",
+      "facts": {
+        "Tradition": "Welsh Christian heritage",
+        "Type": "Cathedral",
+        "Setting": "Pembrokeshire",
+        "Motif": "Pilgrimage and saint"
+      }
     }
   }
 }

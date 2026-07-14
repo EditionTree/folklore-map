@@ -1417,11 +1417,25 @@ body.interior-page {
 
 @media (max-width: 760px) {
   .home-page .hero-layout {
-    grid-template-columns: 1fr;
+    /* minmax(0,1fr) lets the single column shrink to the container instead of
+       expanding to the content's min-content, which was overflowing narrow
+       phones and getting clipped by the hero's overflow:hidden. */
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .home-page .hero-content,
+  .home-page .hero-feature {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  /* The weekly-legend card sizes off aspect-ratio; pin its width to the column
+     so it derives height from width (not the reverse, which overflowed). */
+  .home-page .lotw-hero {
+    width: 100%;
   }
 
   .home-page .hero-feature {
-    max-width: 520px;
     margin-top: 18px;
     justify-self: start;
   }
@@ -1564,7 +1578,7 @@ body.interior-page {
 .archive-page .latest-seal img {
   width: 118px;
   height: 118px;
-  filter: drop-shadow(0 12px 14px rgba(44,31,14,.24));
+  filter: hue-rotate(var(--hue,0deg)) saturate(var(--shade-sat,1)) brightness(var(--shade-bright,1)) drop-shadow(0 12px 14px rgba(44,31,14,.24));
 }
 
 .archive-page .latest-seal-text p {
@@ -1596,6 +1610,29 @@ body.interior-page {
    to the left edge, and the centered nav links. The Home page omits the
    brand title (its title already sits centered in the hero); the Map page
    additionally keeps the day/night toggle on the right. */
+/* Skip-to-content link — visually hidden until keyboard-focused. */
+.skip-link {
+  position: absolute;
+  left: 8px;
+  top: -48px;
+  z-index: 10000;
+  padding: 9px 16px;
+  background: #1a0e06;
+  color: #f2e8d5;
+  font-family: 'Marcellus', serif;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  border: 1px solid var(--gold, #b09060);
+  border-radius: 0 0 4px 4px;
+  transition: top 0.15s ease;
+}
+.skip-link:focus {
+  top: 0;
+  outline: 2px solid var(--gold, #b09060);
+  outline-offset: 2px;
+}
+
 .topnav {
   position: relative;
   display: flex;

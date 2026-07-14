@@ -892,9 +892,12 @@
         opacity: 0; pointer-events: none;
       }
     }
+    .skip-link{position:absolute;left:8px;top:-48px;z-index:10000;padding:9px 16px;background:#1a0e06;color:#f2e8d5;font-family:'Marcellus',serif;font-size:13px;letter-spacing:.04em;text-decoration:none;border:1px solid #b09060;border-radius:0 0 4px 4px;transition:top .15s ease}
+    .skip-link:focus{top:0;outline:2px solid #b09060;outline-offset:2px}
   </style>
 </head>
 <body class="map-page">
+<a class="skip-link" href="#main-content">Skip to content</a>
 
 <header>
   <div class="header-title">
@@ -941,7 +944,7 @@
     </div>
     <div class="sidebar-list" id="sidebarList"></div>
   </div>
-  <div class="map-wrap">
+  <div class="map-wrap" id="main-content" tabindex="-1" role="main">
     <div id="map"></div>
     <div class="map-vignette"></div>
     <div class="map-border" aria-hidden="true"></div>

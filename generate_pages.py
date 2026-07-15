@@ -339,7 +339,7 @@ TOPNAV_CSS = (
     "@media(max-width:640px){.topnav{flex-wrap:nowrap;justify-content:flex-start;"
     "overflow-x:auto;overflow-y:hidden;scrollbar-width:none;padding-left:12px;padding-right:12px}"
     ".topnav::-webkit-scrollbar{display:none}"
-    ".topnav a{flex:0 0 auto;padding:5px 10px;font-size:11px;white-space:nowrap}}"
+    ".topnav a{flex:0 0 auto;padding:9px 11px;font-size:11px;white-space:nowrap}}"
     "footer{position:relative;text-align:center;padding:12px 18px;font-size:12px;line-height:1.6;"
     "color:rgba(246,241,230,.78);background:#1a0e06;border-top:0}"
     "footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;"

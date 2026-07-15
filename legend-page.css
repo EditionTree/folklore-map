@@ -68,7 +68,7 @@ button{font:inherit}
 @media(max-width:640px){
   .topnav{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;padding-left:12px;padding-right:12px}
   .topnav::-webkit-scrollbar{display:none}
-  .topnav a{flex:0 0 auto;padding:5px 10px;font-size:11px;white-space:nowrap}
+  .topnav a{flex:0 0 auto;padding:9px 11px;font-size:11px;white-space:nowrap}
 }
 .brandbar{
   position:relative;
@@ -560,7 +560,7 @@ footer a:hover{color:#f2e8d5}
   .brand-line{font-size:10px}
   .topnav{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;overflow-y:hidden;scrollbar-width:none}
   .topnav::-webkit-scrollbar{display:none}
-  .topnav a{flex:0 0 auto;padding:5px 10px;font-size:11px;white-space:nowrap}
+  .topnav a{flex:0 0 auto;padding:9px 11px;font-size:11px;white-space:nowrap}
   /* Stack the hero on mobile: full 16:9 image banner above the text, instead
      of overlaying the copy on a tall, heavily-cropped slice of the image. */
   .hero{min-height:0;display:block;aspect-ratio:auto}

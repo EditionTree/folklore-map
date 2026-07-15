@@ -312,10 +312,24 @@ h1{
 .button:hover{background:var(--rust-dark);border-color:var(--rust-dark);color:#fff}
 .share-status{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .share-wrap{position:relative;display:inline-flex}
-.share-menu{position:absolute;z-index:40;top:calc(100% + 6px);left:0;min-width:174px;display:flex;flex-direction:column;gap:1px;padding:5px;background:#f6f1e6;border:1px solid rgba(71,51,29,.45);border-radius:2px;box-shadow:0 12px 30px rgba(36,25,15,.3)}
-.share-menu[hidden]{display:none}
-.share-menu-item{padding:9px 13px;font-family:'Spectral',serif;font-size:14px;color:var(--ink);text-decoration:none;border-radius:2px}
+.share-menu{position:absolute;z-index:60;top:calc(100% + 6px);left:0;min-width:190px;display:flex;flex-direction:column;gap:1px;padding:6px;background:#f6f1e6;border:1px solid rgba(71,51,29,.45);border-radius:3px;box-shadow:0 14px 34px rgba(36,25,15,.32)}
+.share-menu[hidden],.share-backdrop[hidden]{display:none}
+.share-menu-head{display:none}
+.share-menu-item{display:flex;align-items:center;gap:11px;padding:10px 14px;font-family:'Spectral',serif;font-size:14.5px;color:var(--ink);text-decoration:none;border-radius:3px}
 .share-menu-item:hover,.share-menu-item:focus-visible{background:rgba(139,58,26,.1);color:var(--rust);outline:none}
+.share-ico{flex:0 0 auto;width:20px;height:20px;display:block}
+.share-backdrop{position:fixed;inset:0;z-index:55;background:rgba(20,12,6,.5);display:none}
+@media(max-width:680px){
+  .share-backdrop{display:block}
+  .share-menu{position:fixed;left:0;right:0;bottom:0;top:auto;min-width:0;gap:2px;padding:8px 12px calc(12px + env(safe-area-inset-bottom));border-radius:16px 16px 0 0;border:0;box-shadow:0 -8px 30px rgba(36,25,15,.4);animation:shareSheetUp .22s ease}
+  .share-menu-head{display:block;text-align:center;font-family:'Marcellus',serif;font-size:13px;letter-spacing:.05em;color:#5a4632;margin:0;padding:8px 0 10px;border-bottom:1px solid rgba(71,51,29,.14)}
+  .share-menu-item{padding:15px 14px;font-size:16px}
+  .share-ico{width:24px;height:24px}
+}
+/* Gentle rise only (not a full-height slide) so the sheet is always on-screen
+   even if the animation is interrupted or skipped. */
+@keyframes shareSheetUp{from{transform:translateY(14px);opacity:.4}to{transform:translateY(0);opacity:1}}
+@media(prefers-reduced-motion:reduce){.share-menu{animation:none}}
 .sidebar{display:grid;gap:18px;position:sticky;top:18px}
 .side-card{
   position:relative;

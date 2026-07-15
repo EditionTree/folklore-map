@@ -360,11 +360,13 @@
     var shareTitle=metaContent('og:title')||document.title;
     var shareImage=metaContent('og:image');
     var enc=encodeURIComponent;
+    // [label, url, brand colour, SVG path] — official brand marks (Simple Icons
+    // paths), used in brand colours per each platform's share-button guidelines.
     var networks=[
-      ['Reddit','https://www.reddit.com/submit?url='+enc(url)+'&title='+enc(shareTitle)],
-      ['Pinterest','https://www.pinterest.com/pin/create/button/?url='+enc(url)+'&media='+enc(shareImage)+'&description='+enc(shareTitle)],
-      ['X','https://x.com/intent/tweet?url='+enc(url)+'&text='+enc(shareTitle)],
-      ['Facebook','https://www.facebook.com/sharer/sharer.php?u='+enc(url)]
+      ['Reddit','https://www.reddit.com/submit?url='+enc(url)+'&title='+enc(shareTitle),'#FF4500','M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-6.993 4.87-3.863 0-6.993-2.176-6.993-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z'],
+      ['Pinterest','https://www.pinterest.com/pin/create/button/?url='+enc(url)+'&media='+enc(shareImage)+'&description='+enc(shareTitle),'#BD081C','M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345c-.091.378-.293 1.194-.333 1.361-.052.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z'],
+      ['X','https://x.com/intent/tweet?url='+enc(url)+'&text='+enc(shareTitle),'#000000','M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z'],
+      ['Facebook','https://www.facebook.com/sharer/sharer.php?u='+enc(url),'#1877F2','M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z']
     ];
     var wrap=document.createElement('span');
     wrap.className='share-wrap';
@@ -374,6 +376,10 @@
     menu.className='share-menu';
     menu.setAttribute('role','menu');
     menu.hidden=true;
+    var sheetHead=document.createElement('p');
+    sheetHead.className='share-menu-head';
+    sheetHead.textContent='Share this legend';
+    menu.appendChild(sheetHead);
     networks.forEach(function(n){
       var a=document.createElement('a');
       a.className='share-menu-item';
@@ -381,16 +387,23 @@
       a.href=n[1];
       a.target='_blank';
       a.rel='noopener noreferrer';
-      a.textContent=n[0];
+      a.innerHTML='<svg class="share-ico" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="'+n[2]+'" d="'+n[3]+'"></path></svg><span>'+n[0]+'</span>';
       menu.appendChild(a);
     });
     wrap.appendChild(menu);
+    // Backdrop for the mobile bottom-sheet (hidden on desktop via CSS).
+    var backdrop=document.createElement('div');
+    backdrop.className='share-backdrop';
+    backdrop.hidden=true;
+    document.body.appendChild(backdrop);
+    backdrop.addEventListener('click',function(){ closeMenu(); });
     shareButton.setAttribute('aria-haspopup','true');
     shareButton.setAttribute('aria-expanded','false');
     function onDocClick(e){ if(!wrap.contains(e.target)) closeMenu(); }
     function onKey(e){ if(e.key==='Escape'){ closeMenu(); shareButton.focus(); } }
     function openMenu(){
       menu.hidden=false;
+      backdrop.hidden=false;
       shareButton.setAttribute('aria-expanded','true');
       // defer so the click that opened the menu doesn't immediately close it
       setTimeout(function(){
@@ -400,6 +413,7 @@
     }
     function closeMenu(){
       menu.hidden=true;
+      backdrop.hidden=true;
       shareButton.setAttribute('aria-expanded','false');
       document.removeEventListener('click',onDocClick);
       document.removeEventListener('keydown',onKey);

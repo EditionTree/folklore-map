@@ -1065,13 +1065,14 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
         f'<a href="{period_page_url(period_slug)}">{esc(period_value)}</a>'
         if period_slug else esc(period_value)
     ) if period_value else None
+    # Trimmed to the fields that can be populated corpus-wide (with uncertainty
+    # caveats): approximate origin, earliest written record, and the period
+    # (which links to the time-filter page). Setting/tradition/dating-confidence
+    # were dropped — the general caveat below already conveys the uncertainty.
     hist_fields = [
         ("Approximate Origin", esc(leg.get("origin_date")) if leg.get("origin_date") else None),
         ("Earliest Written Record", esc(leg.get("earliest_record")) if leg.get("earliest_record") else None),
         ("Historical Period", period_display),
-        ("Historical Setting", esc(leg.get("historical_setting")) if leg.get("historical_setting") else None),
-        ("Cultural Tradition", esc(leg.get("cultural_tradition")) if leg.get("cultural_tradition") else None),
-        ("Dating Confidence", esc(title_case_text(leg.get("dating_confidence", ""))) if leg.get("dating_confidence") else None),
     ]
     hist_items = [(label, val) for label, val in hist_fields if val]
     if hist_items:
@@ -2094,7 +2095,7 @@ h1::after{{content:"";display:block;width:132px;height:40px;margin:9px 0 19px;ba
 
     # sitemap.xml — legend pages carry their own date_modified as lastmod, so the
     # signal is honest; app/aggregation pages use the build date.
-    urls = [f"{BASE}/", f"{BASE}/{OUT_DIR}/", f"{BASE}/achievements", f"{BASE}/about", f"{BASE}/updates", f"{BASE}/privacy", f"{BASE}/feed.xml"]
+    urls = [f"{BASE}/", f"{BASE}/map", f"{BASE}/{OUT_DIR}/", f"{BASE}/achievements", f"{BASE}/about", f"{BASE}/updates", f"{BASE}/privacy", f"{BASE}/feed.xml"]
     urls += browse_urls
     urls += [f"{BASE}/{OUT_DIR}/{slugmap[l['name']]}" for l in legends]
     lastmod_map = {f"{BASE}/{OUT_DIR}/{slugmap[l['name']]}": (l.get("date_modified") or today)

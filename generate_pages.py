@@ -592,8 +592,8 @@ def build_browse_page(page_title, desc, url, h1, intro, crumb, nav_html, cards_h
             '<meta name="twitter:title" content="' + esc(h1) + '"/>\n'
             '<meta name="twitter:description" content="' + esc(desc) + '"/>\n'
             '<meta name="twitter:image" content="' + (ogimage or (BASE + '/og/preview.png')) + '"/>\n'
-            '<link rel="preconnect" href="https://fonts.googleapis.com">\n'
-            '<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">\n'
+            '\n'
+            '<link rel="stylesheet" href="/fonts/fonts.css"/>\n'
             + jsonld_html + breadcrumb_jsonld_html + head_extra
             + '<style>' + BROWSE_STYLE + TOPNAV_CSS + '</style></head>\n<body class="catalogue-page">\n'
             + topnav_html(nav_active) + '\n<main id="main-content" tabindex="-1">\n' + banner_html() + '\n<div class="wrap' + (' ' + wrap_class if wrap_class else '') + '">\n'
@@ -842,10 +842,8 @@ FEATURED_PAGE = Template("""<!DOCTYPE html>
 <meta name="twitter:description" content="$desc"/>
 <meta name="twitter:image" content="$ogimage"/>
 <meta name="twitter:image:alt" content="$og_alt"/>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha384-sHL9NAb7lN7rfvG5lfHpm643Xkcjzp4jFvuavGOndn6pjVqS6ny56CAt3nsEVT4H" crossorigin="anonymous"/>
+<link rel="stylesheet" href="/fonts/fonts.css"/>
+<link rel="stylesheet" href="/assets/leaflet/leaflet.css"/>
 <link rel="stylesheet" href="/legend-page.css?v=20260713b"/>
 <script type="application/ld+json">$jsonld</script>
 $breadcrumb_jsonld
@@ -916,7 +914,7 @@ $hero_caption
   $featured_related
 </main>
 $footer
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha384-cxOPjt7s7Iz04uaHJceBmS+qpjv2JkIHNVcuOrM+YHwZOmJGBXI00mdUXEq65HTH" crossorigin="anonymous"></script>
+<script src="/assets/leaflet/leaflet.js"></script>
 <script src="$base/legend-page.js"></script>
 </body>
 </html>
@@ -2030,8 +2028,7 @@ def build():
 <meta name="twitter:title" content="All Legends &#8212; Folklore Finder"/>
 <meta name="twitter:description" content="Browse all {written} myths, legends, ghosts and folklore entries across Britain and Ireland."/>
 <meta name="twitter:image" content="{BASE}/og/preview-folklore-finder.png"/>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/fonts/fonts.css"/>
 <style>
 *{{box-sizing:border-box;margin:0;padding:0}}
 body{{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent 25rem),linear-gradient(180deg,#e8dcc5,#f6f1e6 34rem,#eadfc9);color:#3f3023;font-family:'Spectral',serif;min-height:100vh}}

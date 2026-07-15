@@ -1444,10 +1444,12 @@ body.home-page {
     max-width: 100%;
   }
 
-  /* The weekly-legend card sizes off aspect-ratio; pin its width to the column
-     so it derives height from width (not the reverse, which overflowed). */
+  /* The weekly-legend card sizes off aspect-ratio, so pin an explicit width so
+     it derives height from width (not the reverse, which overflowed). Subtract
+     the card's own 30px side margins (60px total) — a bare 100% + margins spills
+     the card and its oak frame past the hero's right edge and gets clipped. */
   .home-page .lotw-hero {
-    width: 100%;
+    width: calc(100% - 60px);
   }
 
   .home-page .hero-feature {
@@ -1712,7 +1714,7 @@ body.home-page {
     padding-right: 12px;
   }
   .topnav::-webkit-scrollbar { display: none; }
-  .topnav a { flex: 0 0 auto; padding: 5px 10px; font-size: 11px; white-space: nowrap; }
+  .topnav a { flex: 0 0 auto; padding: 9px 11px; font-size: 11px; white-space: nowrap; }
 }
 
 footer {

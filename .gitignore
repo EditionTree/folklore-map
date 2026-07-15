@@ -20,3 +20,9 @@ search-insights/
 # Local curation worksheets — personal guides for directing collection /
 # achievement creation, not site content. Never committed.
 *-review.xlsx
+
+# Ornament art masters (*-source.png) + unused generated variants — kept
+# locally but never deployed. Only oak-branch-frame-v1.png is used as a PNG
+# (the other live ornaments are WebP), so ignore every other PNG in the dir.
+assets/ornaments/generated-variants/*.png
+!assets/ornaments/generated-variants/oak-branch-frame-v1.png

@@ -321,7 +321,7 @@
           "description": "The edges of the map, where the monsters are.",
           "icon": {
             "emoji": "🐲",
-            "file": "assets/achievements/wax-seals/achievement-here-be-monsters.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-here-be-monsters.png"
           },
           "criteria": {
             "type": "count",
@@ -342,7 +342,7 @@
           "description": "Three of the spectral hounds that haunt the lonely roads.",
           "icon": {
             "emoji": "🐕",
-            "file": "assets/achievements/wax-seals/achievement-padfoot.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-padfoot.png"
           },
           "criteria": {
             "type": "count",
@@ -369,7 +369,7 @@
           "description": "The whole spectral pack answers to you.",
           "icon": {
             "emoji": "🐺",
-            "file": "assets/achievements/wax-seals/achievement-houndmaster.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-houndmaster.png"
           },
           "criteria": {
             "type": "count",
@@ -396,7 +396,7 @@
           "description": "Every phantom hound on the map, run to ground.",
           "icon": {
             "emoji": "🌙",
-            "file": "assets/achievements/wax-seals/achievement-the-wild-hunt.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-the-wild-hunt.png"
           },
           "hidden": true,
           "criteria": {
@@ -556,7 +556,7 @@
           "description": "Ten holy and ancient places visited.",
           "icon": {
             "emoji": "⛰️",
-            "file": "assets/achievements/wax-seals/achievement-pilgrim.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-pilgrim.png"
           },
           "criteria": {
             "type": "count",
@@ -576,7 +576,7 @@
           "description": "A connoisseur of stones, wells and old places.",
           "icon": {
             "emoji": "📯",
-            "file": "assets/achievements/wax-seals/achievement-antiquarian.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-antiquarian.png"
           },
           "criteria": {
             "type": "count",
@@ -596,7 +596,7 @@
           "description": "You hear what the old stones remember.",
           "icon": {
             "emoji": "🪨",
-            "file": "assets/achievements/wax-seals/achievement-stone-whisperer.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-stone-whisperer.png"
           },
           "criteria": {
             "type": "count",
@@ -617,7 +617,7 @@
           "description": "Every ancient place on the map, honoured.",
           "icon": {
             "emoji": "🕯️",
-            "file": "assets/achievements/wax-seals/achievement-keeper-of-the-old-ways.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-keeper-of-the-old-ways.png"
           },
           "hidden": true,
           "criteria": {
@@ -649,7 +649,7 @@
           "description": "The king who was, and the king who shall be.",
           "icon": {
             "emoji": "⚔️",
-            "file": "assets/achievements/wax-seals/achievement-once-and-future-king.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-once-and-future-king.png"
           },
           "hidden": true,
           "criteria": {
@@ -669,7 +669,7 @@
           "description": "The great enchanter of the Arthurian world.",
           "icon": {
             "emoji": "🪄",
-            "file": "assets/achievements/wax-seals/achievement-wizard-business.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-wizard-business.png"
           },
           "hidden": true,
           "criteria": {
@@ -690,7 +690,7 @@
           "description": "The outlaw of Sherwood, robbing rich for poor.",
           "icon": {
             "emoji": "🏹",
-            "file": "assets/achievements/wax-seals/achievement-nice-tights.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-nice-tights.png"
           },
           "hidden": true,
           "criteria": {
@@ -710,7 +710,7 @@
           "description": "Robin Hood's match in the greenwood.",
           "icon": {
             "emoji": "🎀",
-            "file": "assets/achievements/wax-seals/achievement-merry-companion.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-merry-companion.png"
           },
           "hidden": true,
           "criteria": {
@@ -735,7 +735,7 @@
           "description": "The hero who felled the giant Colbrand.",
           "icon": {
             "emoji": "🛡️",
-            "file": "assets/achievements/wax-seals/achievement-giant-slayer.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-giant-slayer.png"
           },
           "hidden": true,
           "criteria": {
@@ -755,7 +755,7 @@
           "description": "The most fearsome image of the pirate age.",
           "icon": {
             "emoji": "🏴‍☠️",
-            "file": "assets/achievements/wax-seals/achievement-dead-men-tell-no-tales.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-dead-men-tell-no-tales.png"
           },
           "hidden": true,
           "criteria": {
@@ -775,7 +775,7 @@
           "description": "Gráinne Mhaol, the sea-queen of Connacht.",
           "icon": {
             "emoji": "👑",
-            "file": "assets/achievements/wax-seals/achievement-pirate-queen.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-pirate-queen.png"
           },
           "hidden": true,
           "criteria": {
@@ -795,7 +795,7 @@
           "description": "The giant-hero who built the causeway to Scotland.",
           "icon": {
             "emoji": "🌉",
-            "file": "assets/achievements/wax-seals/achievement-giants-causeway.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-giants-causeway.png"
           },
           "hidden": true,
           "criteria": {
@@ -815,7 +815,7 @@
           "description": "The antlered spectre of Windsor Forest.",
           "icon": {
             "emoji": "🦌",
-            "file": "assets/achievements/wax-seals/achievement-horned-one.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-horned-one.png"
           },
           "hidden": true,
           "criteria": {
@@ -841,7 +841,7 @@
           "description": "The monkey they hanged as a French spy.",
           "icon": {
             "emoji": "🐒",
-            "file": "assets/achievements/wax-seals/achievement-simia-ingrata.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-simia-ingrata.png"
           },
           "hidden": true,
           "criteria": {
@@ -861,7 +861,7 @@
           "description": "Always just out of focus.",
           "icon": {
             "emoji": "📷",
-            "file": "assets/achievements/wax-seals/achievement-bigger-camera.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-bigger-camera.png"
           },
           "hidden": true,
           "criteria": {
@@ -881,7 +881,7 @@
           "description": "...but don't let it lead you in.",
           "icon": {
             "emoji": "🐴",
-            "file": "assets/achievements/wax-seals/achievement-lead-a-horse.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-lead-a-horse.png"
           },
           "hidden": true,
           "criteria": {
@@ -899,7 +899,7 @@
           "description": "The green-haired hag who pulls children under.",
           "icon": {
             "emoji": "🌊",
-            "file": "assets/achievements/wax-seals/achievement-near-the-water.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-near-the-water.png"
           },
           "hidden": true,
           "criteria": {
@@ -919,7 +919,7 @@
           "description": "The Border goblin who dyes his cap in blood.",
           "icon": {
             "emoji": "🧢",
-            "file": "assets/achievements/wax-seals/achievement-keep-the-hat-red.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-keep-the-hat-red.png"
           },
           "hidden": true,
           "criteria": {
@@ -937,7 +937,7 @@
           "description": "The spectral hound of the East Anglian coast.",
           "icon": {
             "emoji": "🐕‍🦺",
-            "file": "assets/achievements/wax-seals/achievement-good-dog.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-good-dog.png"
           },
           "hidden": true,
           "criteria": {
@@ -957,7 +957,7 @@
           "description": "You can't flit from a boggart — it comes too.",
           "icon": {
             "emoji": "📦",
-            "file": "assets/achievements/wax-seals/achievement-thats-moved-again.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-thats-moved-again.png"
           },
           "hidden": true,
           "criteria": {
@@ -975,7 +975,7 @@
           "description": "Is that really your child in the cradle?",
           "icon": {
             "emoji": "🔄",
-            "file": "assets/achievements/wax-seals/achievement-are-you-sure.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-are-you-sure.png"
           },
           "hidden": true,
           "criteria": {
@@ -993,7 +993,7 @@
           "description": "The marsh-light that leads the unwary astray.",
           "icon": {
             "emoji": "🔥",
-            "file": "assets/achievements/wax-seals/achievement-follow-the-light.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-follow-the-light.png"
           },
           "hidden": true,
           "criteria": {
@@ -1011,7 +1011,7 @@
           "description": "The death-dog of the northern towns.",
           "icon": {
             "emoji": "🚪",
-            "file": "assets/achievements/wax-seals/achievement-wrong-neighbourhood.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-wrong-neighbourhood.png"
           },
           "hidden": true,
           "criteria": {

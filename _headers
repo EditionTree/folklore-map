@@ -10,6 +10,13 @@
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
 
+# achievements.json is hand-edited DATA, not art — the immutable /assets/* rule
+# above would freeze edits in returning visitors' browsers for a year. Keep it
+# short-lived so hand-edits actually reach people. (More specific path, declared
+# after the broad rule, so it wins the Cache-Control conflict.)
+/assets/achievements/achievements.json
+  Cache-Control: public, max-age=300, must-revalidate
+
 # Fonts, once self-hosted, are immutable
 /fonts/*
   Cache-Control: public, max-age=31536000, immutable

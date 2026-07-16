@@ -81,6 +81,41 @@ def build_webp_heroes(quality=80):
     return made
 
 
+def build_card_thumbs(width=800, quality=75):
+    """Generate a small *-card.webp sibling for every legend hero JPG.
+
+    Related-legend cards use a hero as a `cover` background in a ~469x190 box
+    (3-up in the 1440px .shell), so shipping the full 1600px hero costs ~3x more
+    than it can show — and there are 3 cards on every legend page. The card image
+    also sits under a heavy dark gradient, which hides compression artefacts, so
+    these can be encoded far harder than a hero (measured >42dB PSNR as rendered).
+
+    Same contract as build_webp_heroes: runs every build, skips up-to-date files,
+    no-op without Pillow (callers only reference the thumb when it exists)."""
+    try:
+        from PIL import Image
+    except Exception:
+        print("  [card] Pillow not installed — skipping card thumbnail generation")
+        return 0
+    made = 0
+    for jpg in glob.glob(os.path.join("legend-images", "*-hero.jpg")):
+        thumb = jpg[:-4] + "-card.webp"
+        if os.path.isfile(thumb) and os.path.getmtime(thumb) >= os.path.getmtime(jpg):
+            continue
+        try:
+            with Image.open(jpg) as im:
+                w, h = im.size
+                if w > width:
+                    im = im.resize((width, round(h * width / w)), Image.LANCZOS)
+                im.convert("RGB").save(thumb, "WEBP", quality=quality, method=6)
+            made += 1
+        except Exception as e:
+            print(f"  [card] failed {os.path.basename(jpg)}: {e}")
+    if made:
+        print(f"  [card] generated/updated {made} related-card thumbnails")
+    return made
+
+
 def resolve_modified_dates(legends, today):
     """Set each legend's date_modified from whether its content changed since the
     last build, using a persisted fingerprint state. The date only moves when the
@@ -1170,9 +1205,14 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
             jpg_u = f"{BASE}/{rel_img.replace(os.sep, '/')}"
             # Prefer WebP (with JPEG fallback via image-set) — related cards load
             # the full hero as a background, so this is a real weight saving.
-            webp_path = rel_img.rsplit(".", 1)[0] + ".webp"
-            if os.path.isfile(webp_path):
-                webp_u = f"{BASE}/{webp_path.replace(os.sep, '/')}"
+            # Prefer the card-sized thumb over the full hero: the card only ever
+            # paints a ~469px-wide box, so the 1600px hero is ~3x oversized.
+            base_path = rel_img.rsplit(".", 1)[0]
+            thumb_path = base_path + "-card.webp"
+            webp_path = base_path + ".webp"
+            webp_src = thumb_path if os.path.isfile(thumb_path) else webp_path
+            if os.path.isfile(webp_src):
+                webp_u = f"{BASE}/{webp_src.replace(os.sep, '/')}"
                 card_img = (f"image-set(url('{webp_u}') type('image/webp'), "
                             f"url('{jpg_u}') type('image/jpeg'))")
             else:
@@ -1303,6 +1343,8 @@ def build():
 
     # Convert hero JPGs to WebP (auto-picks up newly-added images each build)
     build_webp_heroes()
+    # ...and a card-sized thumb for the related-legend cards on every legend page
+    build_card_thumbs()
 
     # Slim achievement index — legend pages fetch this (not the full 1.3 MB
     # legends.json) purely to evaluate achievement-toast criteria, which only

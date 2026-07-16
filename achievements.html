@@ -108,7 +108,7 @@ footer{position:relative;text-align:center;padding:12px 18px;font-size:12px;line
   let byName = new Map();
 
   function iconPath(a){
-    return a.icon && a.icon.file ? a.icon.file : 'assets/achievements/wax-seals-v2/achievement-folklore-finder.png';
+    return a.icon && a.icon.file ? a.icon.file : 'assets/achievements/wax-seals-v2/achievement-folklore-finder.webp';
   }
 
   // Shade variants so same-category badges don't look identical.
@@ -264,7 +264,7 @@ footer{position:relative;text-align:center;padding:12px 18px;font-size:12px;line
   }
 
   Promise.all([
-    fetch('assets/achievements/achievements.json').then(r => r.json()),
+    fetch('assets/achievements/achievements.json?v=20260716a').then(r => r.json()),
     fetch('legends.json').then(r => r.json())
   ]).then(([ach, data]) => {
     legends = data.legends || [];

@@ -19,7 +19,7 @@
           "description": "Your first step into the folklore of Britain and Ireland.",
           "icon": {
             "emoji": "📜",
-            "file": "assets/achievements/wax-seals-v2/achievement-folklore-finder.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-folklore-finder.webp"
           },
           "criteria": {
             "type": "count",
@@ -34,7 +34,7 @@
           "description": "Ten tales in. The stories are starting to take hold.",
           "icon": {
             "emoji": "📖",
-            "file": "assets/achievements/wax-seals-v2/achievement-folklore-fanatic.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-folklore-fanatic.webp"
           },
           "criteria": {
             "type": "count",
@@ -49,7 +49,7 @@
           "description": "A serious student of the strange and the storied.",
           "icon": {
             "emoji": "🗝️",
-            "file": "assets/achievements/wax-seals-v2/achievement-folklore-fellow.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-folklore-fellow.webp"
           },
           "criteria": {
             "type": "count",
@@ -64,7 +64,7 @@
           "description": "A hundred legends walked. The Good Folk know your name.",
           "icon": {
             "emoji": "🧚",
-            "file": "assets/achievements/wax-seals-v2/achievement-friend-of-the-fae.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-friend-of-the-fae.webp"
           },
           "criteria": {
             "type": "count",
@@ -79,7 +79,7 @@
           "description": "You carry a quarter of the whole map's lore.",
           "icon": {
             "emoji": "🕯️",
-            "file": "assets/achievements/wax-seals-v2/achievement-keeper-of-tales.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-keeper-of-tales.webp"
           },
           "criteria": {
             "type": "count",
@@ -94,7 +94,7 @@
           "description": "Few ever walk so far into the old stories.",
           "icon": {
             "emoji": "🌌",
-            "file": "assets/achievements/wax-seals-v2/achievement-mythwalker.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-mythwalker.webp"
           },
           "criteria": {
             "type": "count",
@@ -109,7 +109,7 @@
           "description": "Every legend on the map, visited. The whole atlas of wonder is yours.",
           "icon": {
             "emoji": "👑",
-            "file": "assets/achievements/wax-seals-v2/achievement-loremaster.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-loremaster.webp"
           },
           "criteria": {
             "type": "count",
@@ -130,7 +130,7 @@
           "description": "England, Scotland, Wales and Northern Ireland — the whole of the UK in tales.",
           "icon": {
             "emoji": "🇬🇧",
-            "file": "assets/achievements/wax-seals-v2/achievement-four-nations.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-four-nations.webp"
           },
           "criteria": {
             "type": "regions_all",
@@ -149,7 +149,7 @@
           "description": "All five regions of Britain and Ireland represented in your finds.",
           "icon": {
             "emoji": "🌍",
-            "file": "assets/achievements/wax-seals-v2/achievement-isles-of-wonder.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-isles-of-wonder.webp"
           },
           "criteria": {
             "type": "regions_all",
@@ -169,7 +169,7 @@
           "description": "From the tip of Cornwall to the Highlands of Scotland.",
           "icon": {
             "emoji": "🧭",
-            "file": "assets/achievements/wax-seals-v2/achievement-kernow-to-caledonia.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-kernow-to-caledonia.webp"
           },
           "criteria": {
             "type": "regions_all",
@@ -186,7 +186,7 @@
           "description": "Twenty-five tales of Scotland, land of the chained unicorn.",
           "icon": {
             "emoji": "🦄",
-            "file": "assets/achievements/wax-seals-v2/achievement-unicorn.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-unicorn.webp"
           },
           "criteria": {
             "type": "count",
@@ -202,7 +202,7 @@
           "description": "Twenty-five tales of Wales, the land of the red dragon.",
           "icon": {
             "emoji": "🐉",
-            "file": "assets/achievements/wax-seals-v2/achievement-y-ddraig-goch.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-y-ddraig-goch.webp"
           },
           "criteria": {
             "type": "count",
@@ -218,7 +218,7 @@
           "description": "Twenty-five tales of England and its giants of old.",
           "icon": {
             "emoji": "🗿",
-            "file": "assets/achievements/wax-seals-v2/achievement-gogmagog.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-gogmagog.webp"
           },
           "criteria": {
             "type": "count",
@@ -234,7 +234,7 @@
           "description": "Twenty-five tales of Ireland and its people of the mounds.",
           "icon": {
             "emoji": "☘️",
-            "file": "assets/achievements/wax-seals-v2/achievement-child-of-eire.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-child-of-eire.webp"
           },
           "criteria": {
             "type": "count",
@@ -250,7 +250,7 @@
           "description": "Tales from the six counties under the Red Hand of Ulster.",
           "icon": {
             "emoji": "🤚",
-            "file": "assets/achievements/wax-seals-v2/achievement-red-hand-wanderer.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-red-hand-wanderer.webp"
           },
           "criteria": {
             "type": "count",
@@ -273,7 +273,7 @@
           "description": "Ten monsters tracked across the isles.",
           "icon": {
             "emoji": "🐾",
-            "file": "assets/achievements/wax-seals-v2/achievement-beast-hunter.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-beast-hunter.webp"
           },
           "criteria": {
             "type": "count",
@@ -289,7 +289,7 @@
           "description": "A growing bestiary of British and Irish creatures.",
           "icon": {
             "emoji": "📕",
-            "file": "assets/achievements/wax-seals-v2/achievement-monster-manual.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-monster-manual.webp"
           },
           "criteria": {
             "type": "count",
@@ -305,7 +305,7 @@
           "description": "You hunt the creatures that science forgot.",
           "icon": {
             "emoji": "🔬",
-            "file": "assets/achievements/wax-seals-v2/achievement-cryptozoologist.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-cryptozoologist.webp"
           },
           "criteria": {
             "type": "count",
@@ -321,7 +321,7 @@
           "description": "The edges of the map, where the monsters are.",
           "icon": {
             "emoji": "🐲",
-            "file": "assets/achievements/wax-seals-v2/achievement-here-be-monsters.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-here-be-monsters.webp"
           },
           "criteria": {
             "type": "count",
@@ -342,7 +342,7 @@
           "description": "Three of the spectral hounds that haunt the lonely roads.",
           "icon": {
             "emoji": "🐕",
-            "file": "assets/achievements/wax-seals-v2/achievement-padfoot.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-padfoot.webp"
           },
           "criteria": {
             "type": "count",
@@ -369,7 +369,7 @@
           "description": "The whole spectral pack answers to you.",
           "icon": {
             "emoji": "🐺",
-            "file": "assets/achievements/wax-seals-v2/achievement-houndmaster.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-houndmaster.webp"
           },
           "criteria": {
             "type": "count",
@@ -396,7 +396,7 @@
           "description": "Every phantom hound on the map, run to ground.",
           "icon": {
             "emoji": "🌙",
-            "file": "assets/achievements/wax-seals-v2/achievement-the-wild-hunt.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-the-wild-hunt.webp"
           },
           "hidden": true,
           "criteria": {
@@ -422,7 +422,7 @@
           "description": "Ten of the Fair Folk and their kin.",
           "icon": {
             "emoji": "🧚",
-            "file": "assets/achievements/wax-seals-v2/achievement-fairy-whisperer.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-fairy-whisperer.webp"
           },
           "criteria": {
             "type": "count",
@@ -438,7 +438,7 @@
           "description": "You know to leave milk out and never say thanks.",
           "icon": {
             "emoji": "🍄",
-            "file": "assets/achievements/wax-seals-v2/achievement-friend-of-the-fair-folk.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-friend-of-the-fair-folk.webp"
           },
           "criteria": {
             "type": "count",
@@ -454,7 +454,7 @@
           "description": "Thirty tales of Faerie — and you've not been trapped yet.",
           "icon": {
             "emoji": "🍽️",
-            "file": "assets/achievements/wax-seals-v2/achievement-dont-eat-the-food.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-dont-eat-the-food.webp"
           },
           "criteria": {
             "type": "count",
@@ -470,7 +470,7 @@
           "description": "You have walked deep into the courts of the Fair Folk.",
           "icon": {
             "emoji": "👑",
-            "file": "assets/achievements/wax-seals-v2/achievement-court-of-summer.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-court-of-summer.webp"
           },
           "criteria": {
             "type": "count",
@@ -486,7 +486,7 @@
           "description": "Ten restless spirits met and noted.",
           "icon": {
             "emoji": "👻",
-            "file": "assets/achievements/wax-seals-v2/achievement-boo.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-boo.webp"
           },
           "criteria": {
             "type": "count",
@@ -502,7 +502,7 @@
           "description": "Twenty hauntings — friendly and otherwise.",
           "icon": {
             "emoji": "📡",
-            "file": "assets/achievements/wax-seals-v2/achievement-casper-catcher.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-casper-catcher.webp"
           },
           "criteria": {
             "type": "count",
@@ -518,7 +518,7 @@
           "description": "Thirty spectres. You're the one they call for.",
           "icon": {
             "emoji": "☎️",
-            "file": "assets/achievements/wax-seals-v2/achievement-who-you-gonna-call.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-who-you-gonna-call.webp"
           },
           "criteria": {
             "type": "count",
@@ -534,7 +534,7 @@
           "description": "Fifty ghosts. The veil is thin where you walk.",
           "icon": {
             "emoji": "🔮",
-            "file": "assets/achievements/wax-seals-v2/achievement-spirit-medium.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-spirit-medium.webp"
           },
           "criteria": {
             "type": "count",
@@ -556,7 +556,7 @@
           "description": "Ten holy and ancient places visited.",
           "icon": {
             "emoji": "⛰️",
-            "file": "assets/achievements/wax-seals-v2/achievement-pilgrim.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-pilgrim.webp"
           },
           "criteria": {
             "type": "count",
@@ -576,7 +576,7 @@
           "description": "A connoisseur of stones, wells and old places.",
           "icon": {
             "emoji": "📯",
-            "file": "assets/achievements/wax-seals-v2/achievement-antiquarian.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-antiquarian.webp"
           },
           "criteria": {
             "type": "count",
@@ -596,7 +596,7 @@
           "description": "You hear what the old stones remember.",
           "icon": {
             "emoji": "🪨",
-            "file": "assets/achievements/wax-seals-v2/achievement-stone-whisperer.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-stone-whisperer.webp"
           },
           "criteria": {
             "type": "count",
@@ -617,7 +617,7 @@
           "description": "Every ancient place on the map, honoured.",
           "icon": {
             "emoji": "🕯️",
-            "file": "assets/achievements/wax-seals-v2/achievement-keeper-of-the-old-ways.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-keeper-of-the-old-ways.webp"
           },
           "hidden": true,
           "criteria": {
@@ -649,7 +649,7 @@
           "description": "The king who was, and the king who shall be.",
           "icon": {
             "emoji": "⚔️",
-            "file": "assets/achievements/wax-seals-v2/achievement-once-and-future-king.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-once-and-future-king.webp"
           },
           "hidden": true,
           "criteria": {
@@ -669,7 +669,7 @@
           "description": "The great enchanter of the Arthurian world.",
           "icon": {
             "emoji": "🪄",
-            "file": "assets/achievements/wax-seals-v2/achievement-wizard-business.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-wizard-business.webp"
           },
           "hidden": true,
           "criteria": {
@@ -690,7 +690,7 @@
           "description": "The outlaw of Sherwood, robbing rich for poor.",
           "icon": {
             "emoji": "🏹",
-            "file": "assets/achievements/wax-seals-v2/achievement-nice-tights.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-nice-tights.webp"
           },
           "hidden": true,
           "criteria": {
@@ -710,7 +710,7 @@
           "description": "Robin Hood's match in the greenwood.",
           "icon": {
             "emoji": "🎀",
-            "file": "assets/achievements/wax-seals-v2/achievement-merry-companion.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-merry-companion.webp"
           },
           "hidden": true,
           "criteria": {
@@ -735,7 +735,7 @@
           "description": "The hero who felled the giant Colbrand.",
           "icon": {
             "emoji": "🛡️",
-            "file": "assets/achievements/wax-seals-v2/achievement-giant-slayer.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-giant-slayer.webp"
           },
           "hidden": true,
           "criteria": {
@@ -755,7 +755,7 @@
           "description": "The most fearsome image of the pirate age.",
           "icon": {
             "emoji": "🏴‍☠️",
-            "file": "assets/achievements/wax-seals-v2/achievement-dead-men-tell-no-tales.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-dead-men-tell-no-tales.webp"
           },
           "hidden": true,
           "criteria": {
@@ -775,7 +775,7 @@
           "description": "Gráinne Mhaol, the sea-queen of Connacht.",
           "icon": {
             "emoji": "👑",
-            "file": "assets/achievements/wax-seals-v2/achievement-pirate-queen.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-pirate-queen.webp"
           },
           "hidden": true,
           "criteria": {
@@ -795,7 +795,7 @@
           "description": "The giant-hero who built the causeway to Scotland.",
           "icon": {
             "emoji": "🌉",
-            "file": "assets/achievements/wax-seals-v2/achievement-giants-causeway.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-giants-causeway.webp"
           },
           "hidden": true,
           "criteria": {
@@ -815,7 +815,7 @@
           "description": "The antlered spectre of Windsor Forest.",
           "icon": {
             "emoji": "🦌",
-            "file": "assets/achievements/wax-seals-v2/achievement-horned-one.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-horned-one.webp"
           },
           "hidden": true,
           "criteria": {
@@ -841,7 +841,7 @@
           "description": "The monkey they hanged as a French spy.",
           "icon": {
             "emoji": "🐒",
-            "file": "assets/achievements/wax-seals-v2/achievement-simia-ingrata.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-simia-ingrata.webp"
           },
           "hidden": true,
           "criteria": {
@@ -861,7 +861,7 @@
           "description": "Always just out of focus.",
           "icon": {
             "emoji": "📷",
-            "file": "assets/achievements/wax-seals-v2/achievement-bigger-camera.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-bigger-camera.webp"
           },
           "hidden": true,
           "criteria": {
@@ -881,7 +881,7 @@
           "description": "...but don't let it lead you in.",
           "icon": {
             "emoji": "🐴",
-            "file": "assets/achievements/wax-seals-v2/achievement-lead-a-horse.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-lead-a-horse.webp"
           },
           "hidden": true,
           "criteria": {
@@ -899,7 +899,7 @@
           "description": "The green-haired hag who pulls children under.",
           "icon": {
             "emoji": "🌊",
-            "file": "assets/achievements/wax-seals-v2/achievement-near-the-water.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-near-the-water.webp"
           },
           "hidden": true,
           "criteria": {
@@ -919,7 +919,7 @@
           "description": "The Border goblin who dyes his cap in blood.",
           "icon": {
             "emoji": "🧢",
-            "file": "assets/achievements/wax-seals-v2/achievement-keep-the-hat-red.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-keep-the-hat-red.webp"
           },
           "hidden": true,
           "criteria": {
@@ -937,7 +937,7 @@
           "description": "The spectral hound of the East Anglian coast.",
           "icon": {
             "emoji": "🐕‍🦺",
-            "file": "assets/achievements/wax-seals-v2/achievement-good-dog.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-good-dog.webp"
           },
           "hidden": true,
           "criteria": {
@@ -957,7 +957,7 @@
           "description": "You can't flit from a boggart — it comes too.",
           "icon": {
             "emoji": "📦",
-            "file": "assets/achievements/wax-seals-v2/achievement-thats-moved-again.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-thats-moved-again.webp"
           },
           "hidden": true,
           "criteria": {
@@ -975,7 +975,7 @@
           "description": "Is that really your child in the cradle?",
           "icon": {
             "emoji": "🔄",
-            "file": "assets/achievements/wax-seals-v2/achievement-are-you-sure.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-are-you-sure.webp"
           },
           "hidden": true,
           "criteria": {
@@ -993,7 +993,7 @@
           "description": "The marsh-light that leads the unwary astray.",
           "icon": {
             "emoji": "🔥",
-            "file": "assets/achievements/wax-seals-v2/achievement-follow-the-light.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-follow-the-light.webp"
           },
           "hidden": true,
           "criteria": {
@@ -1011,7 +1011,7 @@
           "description": "The death-dog of the northern towns.",
           "icon": {
             "emoji": "🚪",
-            "file": "assets/achievements/wax-seals-v2/achievement-wrong-neighbourhood.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-wrong-neighbourhood.webp"
           },
           "hidden": true,
           "criteria": {
@@ -1035,7 +1035,7 @@
           "description": "You walk the map when the veil is thinnest.",
           "icon": {
             "emoji": "🌒",
-            "file": "assets/achievements/wax-seals-v2/achievement-witching-hour.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-witching-hour.webp"
           },
           "criteria": {
             "type": "behaviour",
@@ -1049,7 +1049,7 @@
           "description": "A week of unbroken wandering.",
           "icon": {
             "emoji": "🔥",
-            "file": "assets/achievements/wax-seals-v2/achievement-tale-chaser.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-tale-chaser.webp"
           },
           "criteria": {
             "type": "behaviour",
@@ -1064,7 +1064,7 @@
           "description": "A month without missing a day.",
           "icon": {
             "emoji": "📅",
-            "file": "assets/achievements/wax-seals-v2/achievement-folklore-obsessive.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-folklore-obsessive.webp"
           },
           "criteria": {
             "type": "behaviour",
@@ -1079,7 +1079,7 @@
           "description": "You've become a fixture of these isles yourself.",
           "icon": {
             "emoji": "🧭",
-            "file": "assets/achievements/wax-seals-v2/achievement-local-legend.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-local-legend.webp"
           },
           "criteria": {
             "type": "behaviour",
@@ -1094,7 +1094,7 @@
           "description": "At least one find from each kind of strangeness.",
           "icon": {
             "emoji": "🎭",
-            "file": "assets/achievements/wax-seals-v2/achievement-jack-of-all-tales.png"
+            "file": "assets/achievements/wax-seals-v2/achievement-jack-of-all-tales.webp"
           },
           "criteria": {
             "type": "category_all"

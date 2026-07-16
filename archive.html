@@ -217,7 +217,7 @@ footer a{color:var(--ink-light)}
   // Latest unlocked achievement — ff_achievements_unlocked_v1 is appended to in
   // unlock order (see legend-page.js), so the last entry is the most recent.
   if (unlockedIds.length) {
-    fetch('assets/achievements/achievements.json').then(function(r){ return r.json(); }).then(function(ach){
+    fetch('assets/achievements/achievements.json?v=20260716a').then(function(r){ return r.json(); }).then(function(ach){
       // Tint each seal to its section hue, mirroring achievements.html.
       var SHADE_VARIANTS = [{sat:1,bright:1},{sat:.85,bright:.93},{sat:1.14,bright:1.07}];
       var totalSections = (ach.sections || []).length;

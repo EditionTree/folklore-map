@@ -1,5 +1,8 @@
 # Cloudflare Pages redirects. One rule per line: <from> <to> <status>
 
+# RFC 9116 convenience alias — crawlers/tools also check the bare path
+/security.txt  /.well-known/security.txt  301
+
 # Renamed collection: "Arthurian Places" -> "Arthurian Britain" (2026-07)
 /legends/collection/arthurian-places      /legends/collection/arthurian-britain     301
 /legends/collection/arthurian-places-2    /legends/collection/arthurian-britain-2   301

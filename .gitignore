@@ -26,3 +26,6 @@ search-insights/
 # (the other live ornaments are WebP), so ignore every other PNG in the dir.
 assets/ornaments/generated-variants/*.png
 !assets/ornaments/generated-variants/oak-branch-frame-v1.png
+
+# Font cache for scripts/build_og_card.py (re-downloaded on demand)
+tmp/ogfonts/

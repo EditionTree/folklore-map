@@ -1594,7 +1594,7 @@ def build():
         }, ensure_ascii=False)
         page = build_browse_page(
             page_title=f"Folklore of {rn} — Myths, Legends & Ghosts",
-            desc=f"{len(entries)} myths, legends, ghosts and folklore entries rooted in {rn}.",
+            desc=f"Discover {len(entries)} myths, legends, ghosts and folklore stories rooted in {rn}, each pinned to its exact location on our interactive folklore map.",
             url=url,
             h1=f"Folklore of {rn}",
             intro=region_intros.get(t) or f"{len(entries)} legends, ghosts and folklore entries rooted in {rn}.",
@@ -2027,18 +2027,18 @@ def build():
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{{"token": "64d1fd37251d426f8a0d8fbc83ea350b"}}'></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>All Legends &#8212; Folklore Finder</title>
-<meta name="description" content="Browse all {written} myths, legends, ghosts and folklore entries across Britain and Ireland."/>
+<meta name="description" content="Browse all {written} myths, legends, ghosts and folklore stories from every region of Britain and Ireland, each pinned to its place of origin on our interactive folklore map."/>
 <link rel="canonical" href="{BASE}/{OUT_DIR}/"/>
 <link rel="icon" type="image/png" href="{BASE}/favicon.png"/>
 <meta property="og:type" content="website"/>
 <meta property="og:title" content="All Legends &#8212; Folklore Finder"/>
-<meta property="og:description" content="Browse all {written} myths, legends, ghosts and folklore entries across Britain and Ireland."/>
+<meta property="og:description" content="Browse all {written} myths, legends, ghosts and folklore stories from every region of Britain and Ireland, each pinned to its place of origin on our interactive folklore map."/>
 <meta property="og:url" content="{BASE}/{OUT_DIR}/"/>
 <meta property="og:image" content="{BASE}/og/preview-folklore-finder.jpg"/>
 <meta property="og:site_name" content="Folklore Finder"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="All Legends &#8212; Folklore Finder"/>
-<meta name="twitter:description" content="Browse all {written} myths, legends, ghosts and folklore entries across Britain and Ireland."/>
+<meta name="twitter:description" content="Browse all {written} myths, legends, ghosts and folklore stories from every region of Britain and Ireland, each pinned to its place of origin on our interactive folklore map."/>
 <meta name="twitter:image" content="{BASE}/og/preview-folklore-finder.jpg"/>
 <link rel="stylesheet" href="/fonts/fonts.css"/>
 <style>

@@ -19,10 +19,6 @@ from __future__ import annotations
 import json, io, os, re, sys, unicodedata, math
 from pathlib import Path
 
-import matplotlib
-matplotlib.use("Agg")
-import matplotlib.pyplot as plt
-
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.colors import HexColor, Color
 from reportlab.lib.utils import ImageReader
@@ -38,6 +34,7 @@ PAPER = FG / "paper-texture.png"
 VIGNETTE = FG / "vignette.png"
 OUT_DIR = ROOT / "output" / "pdf"
 SITE = "folklorefinder.uk"
+FIELD_ICON_DIR = ROOT / "assets" / "field-guide" / "marks"
 
 # ── palette ────────────────────────────────────────────────────────────────
 INK       = HexColor("#2c1f0e")
@@ -60,6 +57,26 @@ BODY = "Spectral"
 BODY_MED = "Spectral-Med"
 BODY_SB = "Spectral-SB"
 BODY_IT = "Spectral-It"
+
+ICON_IMAGE_FOR = {
+    "book": "book.png",
+    "scroll": "feather.png",
+    "pin": "distribution.png",
+    "feather": "feather.png",
+    "eye": "dog.png",
+    "signpost": "signpost.png",
+    "paw": "boot.png",
+    "check": "check.png",
+    "hourglass": "hourglass.png",
+    "moon": "moon.png",
+    "flame": "flame.png",
+    "chain": "flame.png",
+    "compass": "compass.png",
+    "map": "map.png",
+    "distribution": "distribution.png",
+    "dog": "dog.png",
+    "boot": "boot.png",
+}
 
 
 def register_fonts():
@@ -122,6 +139,15 @@ def motifs_of(m):
 
 def short_region(region):
     return (region or "").split(",")[0].strip()
+
+
+def hero_image_path(slug):
+    """Return the best available hero image for a legend slug."""
+    for ext in (".jpg", ".webp", ".png", ".jpeg"):
+        p = ROOT / "legend-images" / ("%s-hero%s" % (slug, ext))
+        if p.exists():
+            return p
+    return ROOT / "legend-images" / ("%s-hero.jpg" % slug)
 
 
 # ── text helpers ────────────────────────────────────────────────────────────
@@ -344,25 +370,33 @@ ICONS = {"book": _book, "scroll": _scroll, "pin": _pin, "feather": _feather, "ey
          "moon": _moon, "flame": _flame, "chain": _chain, "compass": _compass}
 
 
-# Decorative graphics (icons / seals / frames) are intentionally left as empty,
-# reserved placeholder slots so bespoke artwork can be dropped in afterwards.
 PLACEHOLDER = Color(0.50, 0.42, 0.30, 0.40)
 
 
+def field_icon_path(name):
+    fn = ICON_IMAGE_FOR.get(name, "book.webp")
+    return FIELD_ICON_DIR / fn
+
+
 def icon(c, name, x, y, s, col=ACCENT):
-    """Reserved icon slot — draw your own symbol here."""
+    """Draw a small generated field-guide mark inline with text."""
     c.saveState()
-    c.setStrokeColor(PLACEHOLDER); c.setLineWidth(0.6); c.setDash(2, 2)
-    c.roundRect(x, y, s, s, 2, stroke=1, fill=0)
+    c.setDash()
+    p = field_icon_path(name)
+    if p.exists():
+        c.drawImage(str(p), x, y, s, s, mask="auto")
+    else:
+        c.setFillColor(Color(0.86, 0.76, 0.56, 0.58))
+        c.setStrokeColor(Color(0.58, 0.40, 0.20, 0.70))
+        c.setLineWidth(0.65)
+        c.roundRect(x, y, s, s, max(2, s * 0.12), stroke=0, fill=1)
     c.restoreState()
 
 
 def wax_seal(c, cx, cy, r, glyph="paw"):
-    """Reserved seal/stamp slot — drop your own wax seal here."""
-    c.saveState()
-    c.setStrokeColor(PLACEHOLDER); c.setLineWidth(0.6); c.setDash(2, 2)
-    c.circle(cx, cy, r, stroke=1, fill=0)
-    c.restoreState()
+    """Draw a larger generated field-guide vignette."""
+    s = r * 2.15
+    icon(c, glyph, cx - s / 2, cy - s / 2, s, ACCENT)
 
 
 # ── image + background ───────────────────────────────────────────────────────
@@ -370,7 +404,8 @@ def fit_image(c, path, x, y, w, h, radius=0):
     try:
         img = ImageReader(str(path)); iw, ih = img.getSize()
     except Exception:
-        c.setFillColor(HexColor("#241a10")); c.rect(x, y, w, h, stroke=0, fill=1); return
+        archive_plate(c, x, y, w, h, radius)
+        return
     scale = max(w / iw, h / ih); dw, dh = iw * scale, ih * scale
     c.saveState(); p = c.beginPath()
     p.roundRect(x, y, w, h, radius) if radius else p.rect(x, y, w, h)
@@ -379,10 +414,32 @@ def fit_image(c, path, x, y, w, h, radius=0):
 
 
 def framed_image(c, path, x, y, w, h, radius=3):
-    # Image + vignette only; the frame is left for you to add your own.
+    # Mounted art plate with a soft shadow and vignette.
+    c.saveState()
+    c.setDash()
+    c.setFillColor(Color(0.20, 0.13, 0.07, 0.18))
+    c.roundRect(x + 3, y - 3, w, h, radius + 2, stroke=0, fill=1)
+    c.setFillColor(Color(0.96, 0.90, 0.76)); c.setStrokeColor(GOLD); c.setLineWidth(1.0)
+    c.roundRect(x - 5, y - 5, w + 10, h + 10, radius + 4, stroke=1, fill=1)
+    c.setStrokeColor(Color(0.43, 0.29, 0.14)); c.setLineWidth(0.7)
+    c.roundRect(x - 1, y - 1, w + 2, h + 2, radius + 1, stroke=1, fill=0)
     fit_image(c, path, x, y, w, h, radius)
     if VIGNETTE.exists():
         c.drawImage(str(VIGNETTE), x, y, w, h, mask="auto")
+    c.restoreState()
+
+
+def archive_plate(c, x, y, w, h, radius=3):
+    c.saveState()
+    c.setDash()
+    c.setFillColor(HexColor("#241a10"))
+    c.roundRect(x, y, w, h, radius, stroke=0, fill=1)
+    c.setStrokeColor(Color(0.74, 0.56, 0.34, 0.55)); c.setLineWidth(0.7)
+    c.roundRect(x + 10, y + 10, w - 20, h - 20, max(1, radius), stroke=1, fill=0)
+    s = min(w, h) * 0.22
+    icon(c, "feather", x + w / 2 - s / 2, y + h / 2 - s / 2 + 12, s, GOLD_SOFT)
+    tracked(c, "IMAGE TO ADD", x, y + h / 2 - 20, DISP, 8.5, GOLD_SOFT, 1.8, center_w=w)
+    c.restoreState()
 
 
 def page_bg(c, dark=False):
@@ -395,10 +452,22 @@ def page_bg(c, dark=False):
 
 
 def page_frame(c, col=GOLD, inset=30):
-    """Reserved border area — add your own frame/ornament in this inset margin."""
+    """Draw the reusable page border and corner ornaments."""
     c.saveState()
-    c.setStrokeColor(PLACEHOLDER); c.setLineWidth(0.6); c.setDash(3, 3)
+    c.setDash()
+    c.setStrokeColor(Color(0.70, 0.52, 0.30, 0.65)); c.setLineWidth(0.9)
     c.rect(inset, inset, W - 2 * inset, H - 2 * inset, stroke=1, fill=0)
+    c.setStrokeColor(Color(0.70, 0.52, 0.30, 0.30)); c.setLineWidth(0.45)
+    c.rect(inset + 6, inset + 6, W - 2 * (inset + 6), H - 2 * (inset + 6), stroke=1, fill=0)
+    c.setStrokeColor(col); c.setLineWidth(1.0)
+    l = 34
+    for sx in (inset + 13, W - inset - 13):
+        for sy in (inset + 13, H - inset - 13):
+            dx = 1 if sx < W / 2 else -1
+            dy = 1 if sy < H / 2 else -1
+            c.line(sx, sy, sx + dx * l, sy)
+            c.line(sx, sy, sx, sy + dy * l)
+            c.circle(sx + dx * 7, sy + dy * 7, 2.2, stroke=1, fill=0)
     c.restoreState()
 
 
@@ -411,6 +480,10 @@ def footer(c, page_no, guide_name):
 
 # ── distribution map ─────────────────────────────────────────────────────────
 def build_distribution_map(points, out_png):
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+
     ink, gold, accent, parch, land = "#2c1f0e", "#b09060", "#8b3a1a", "#efe4cb", "#ddcca6"
     geo = json.load(io.open(OUTLINE, encoding="utf-8"))
     fig, ax = plt.subplots(figsize=(6.2, 8.2), dpi=220)
@@ -449,7 +522,7 @@ def load(slug):
         if not l:
             continue
         l = dict(l); l["_slug"] = slugify(nm)
-        l["_img"] = ROOT / "legend-images" / ("%s-hero.jpg" % l["_slug"])
+        l["_img"] = hero_image_path(l["_slug"])
         members.append(l)
     return col, members
 
@@ -475,15 +548,7 @@ def cover(c, col, members):
     # framed art plate, lower portion
     plate_x, plate_w = 64, W - 128
     plate_y, plate_h = 74, H * 0.44
-    if Path(cover_img).exists():
-        fit_image(c, cover_img, plate_x, plate_y, plate_w, plate_h, radius=2)
-        if VIGNETTE.exists():
-            c.drawImage(str(VIGNETTE), plate_x, plate_y, plate_w, plate_h, mask="auto")
-    # reserved plate + outer border slots (add your own frames)
-    c.saveState()
-    c.setStrokeColor(PLACEHOLDER); c.setLineWidth(0.6); c.setDash(2, 2)
-    c.rect(plate_x, plate_y, plate_w, plate_h, stroke=1, fill=0)
-    c.restoreState()
+    framed_image(c, cover_img, plate_x, plate_y, plate_w, plate_h, radius=2)
     page_frame(c, GOLD, inset=26)
     # masthead
     gm = ROOT / "green-man.png"
@@ -501,7 +566,7 @@ def cover(c, col, members):
     if sub:
         c.setFont(DISP, 25); c.setFillColor(GOLD_SOFT); c.drawCentredString(W / 2, H - 275, sub)
     tracked(c, "LEGENDS · SIGHTINGS · HISTORY · LOCATIONS", 0, H - 305, DISP, 9.5, GOLD, 2.2, center_w=W)
-    wax_seal(c, W / 2, plate_y + plate_h + 30, 15, "paw")
+    wax_seal(c, W / 2, plate_y + plate_h + 30, 15, "dog")
     # foot tagline (over the plate base)
     c.setFont(BODY_IT, 11); c.setFillColor(Color(0.88, 0.81, 0.66))
     c.drawCentredString(W / 2, plate_y + 14, "A companion to the Folklore Finder Atlas")
@@ -572,13 +637,13 @@ def map_page(c, col, members, map_png, page_no):
 SIGNS = [
     ("eye", "Eyes like coals", "Burning eyes — red, yellow, or 'the size of saucers' — are the surest mark. "
      "To meet that gaze was, in most tellings, to be marked for a death within the year."),
-    ("paw", "Unnatural size", "Larger than any living dog; 'big as a calf' is the phrase used from Norfolk to the "
+    ("dog", "Unnatural size", "Larger than any living dog; 'big as a calf' is the phrase used from Norfolk to the "
      "Highlands. Sheer size is what sets the spectral hound apart from a stray."),
     ("moon", "Silence & vanishing", "It makes little sound and leaves no track. It falls into step beside you, then is "
      "simply gone — most often at a boundary: a gate, a bridge, a stile."),
     ("signpost", "Thresholds & crossroads", "Black dogs keep to in-between places — parish bounds, old roads, lychgates and "
      "crossroads — the very ground where the living and the dead were thought to meet."),
-    ("chain", "Chains & fire", "A dragging chain, a reek of sulphur, or a body wreathed in flame mark the more "
+    ("flame", "Chains & fire", "A dragging chain, a reek of sulphur, or a body wreathed in flame mark the more "
      "demonic hounds, especially in the tales of the south-west."),
     ("book", "Omen or guardian?", "Not every black dog brings death. Some, like the church grim, guard consecrated "
      "ground; others walk a lone traveller safely home. Read the errand, not just the beast."),
@@ -616,12 +681,11 @@ def profile(c, m, guide, page_no):
     c.setFont(DISP, 30); c.setFillColor(INK); c.drawCentredString(W / 2, y, m["name"]); y -= 18
     tracked(c, (m.get("region", "") or "").upper(), 0, y, DISP, 9.5, ACCENT_W, 1.8, center_w=W); y -= 20
     img_h = 168
-    if m["_img"].exists():
-        framed_image(c, m["_img"], MARGIN, y - img_h, W - 2 * MARGIN, img_h, radius=3)
+    framed_image(c, m["_img"], MARGIN, y - img_h, W - 2 * MARGIN, img_h, radius=3)
     y -= img_h + 26
     side_w = 170; story_w = W - 2 * MARGIN - side_w - 28
     sx = MARGIN; tx = MARGIN + story_w + 28
-    wax_seal(c, sx + 8, y + 8, 12, "paw")
+    wax_seal(c, sx + 8, y + 8, 12, "book")
     c.setFont(DISP, 13); c.setFillColor(ACCENT); c.drawString(sx + 28, y + 3, "The Story")
     story_y = dropcap(c, m.get("detail") or m.get("summary", ""), sx, y - 22, story_w, BODY, 10.5, 15.5, INK)
     # pull-quote
@@ -655,8 +719,7 @@ def places_page(c, col, members, page_no):
     row_h = (y - 128) / len(picks)
     for m in picks:
         iw2 = 148
-        if m["_img"].exists():
-            framed_image(c, m["_img"], MARGIN, y - row_h + 16, iw2, row_h - 22, radius=3)
+        framed_image(c, m["_img"], MARGIN, y - row_h + 16, iw2, row_h - 22, radius=3)
         tx = MARGIN + iw2 + 22
         c.setFont(DISP, 15); c.setFillColor(INK); c.drawString(tx, y - 14, m["name"])
         tracked(c, (m.get("region", "") or "").upper(), tx, y - 28, DISP, 8, ACCENT_W, 1.3)
@@ -677,7 +740,7 @@ FIELD = [
      "bridges and the coast path. Black dogs keep to edges."),
     ("eye", "What to note", "The eyes, the size, the sound (or silence), and where it appears and vanishes. "
      "Mark the exact spot — the tradition is rooted in real places."),
-    ("paw", "Field etiquette", "Never trespass; ask permission on private land. Don't go alone after dark, tell "
+    ("boot", "Field etiquette", "Never trespass; ask permission on private land. Don't go alone after dark, tell "
      "someone your route, and leave every site as you found it."),
 ]
 
@@ -766,9 +829,11 @@ def main(slug):
     col, members = load(slug)
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     map_png = FG / ("dist-%s.png" % slug)
-    build_distribution_map([(m["lat"], m["lng"]) for m in members if m.get("lat") is not None], map_png)
+    if not map_png.exists():
+        build_distribution_map([(m["lat"], m["lng"]) for m in members if m.get("lat") is not None], map_png)
     sample = members[:4]
-    out = OUT_DIR / ("folklore-finder-%s-field-guide-draft.pdf" % slug)
+    suffix = os.environ.get("FIELD_GUIDE_OUTPUT_SUFFIX", "draft")
+    out = OUT_DIR / ("folklore-finder-%s-field-guide-%s.pdf" % (slug, suffix))
     c = canvas.Canvas(str(out), pagesize=A4, pageCompression=1)
     c.setTitle("%s — Folklore Finder Field Guide" % col["title"]); c.setAuthor("Folklore Finder")
     p = 1

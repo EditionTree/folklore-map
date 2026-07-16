@@ -488,6 +488,10 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 .col-hero-split{display:flex;gap:30px;align-items:stretch;margin:14px 0 24px}
 .col-hero-desc{flex:1 1 0;min-width:0;display:flex;flex-direction:column;justify-content:center}
 .col-hero-desc p{font-size:17px;color:#5c4a2a;line-height:1.62;max-width:58ch}
+/* The context paragraph now sits inside the text column under the lede — keep
+   its smaller size (.col-hero-desc p would otherwise win on specificity) and
+   drop the 820px cap, since the column already constrains it. */
+.col-hero-desc .col-context{font-size:15.5px;max-width:none;margin:12px 0 0}
 .col-hero-media{flex:0 0 42%;position:relative;min-height:320px;aspect-ratio:4/3;border-radius:2px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.25);background:#241a10}
 .col-hero-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
 .col-hero-credit{position:absolute;right:10px;bottom:8px;font-size:10px;color:rgba(255,255,255,.85);background:rgba(0,0,0,.4);padding:2px 8px;border-radius:2px}
@@ -586,12 +590,12 @@ def build_browse_page(page_title, desc, url, h1, intro, crumb, nav_html, cards_h
             '<meta property="og:title" content="' + esc(h1) + '"/>\n'
             '<meta property="og:description" content="' + esc(desc) + '"/>\n'
             '<meta property="og:url" content="' + url + '"/>\n'
-            '<meta property="og:image" content="' + (ogimage or (BASE + '/og/preview.png')) + '"/>\n'
+            '<meta property="og:image" content="' + (ogimage or (BASE + '/og/preview.jpg')) + '"/>\n'
             '<meta property="og:site_name" content="Folklore Finder"/>\n'
             '<meta name="twitter:card" content="summary_large_image"/>\n'
             '<meta name="twitter:title" content="' + esc(h1) + '"/>\n'
             '<meta name="twitter:description" content="' + esc(desc) + '"/>\n'
-            '<meta name="twitter:image" content="' + (ogimage or (BASE + '/og/preview.png')) + '"/>\n'
+            '<meta name="twitter:image" content="' + (ogimage or (BASE + '/og/preview.jpg')) + '"/>\n'
             '\n'
             '<link rel="stylesheet" href="/fonts/fonts.css"/>\n'
             + jsonld_html + breadcrumb_jsonld_html + head_extra
@@ -1237,7 +1241,7 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
         hero_caption = ""
         ogimage = (
             f"{BASE}/og/category-{leg.get('category', '')}.png"
-            if leg.get("category", "") in meta else f"{BASE}/og/preview.png"
+            if leg.get("category", "") in meta else f"{BASE}/og/preview.jpg"
         )
         og_w, og_h = "1200", "630"  # category / preview OG cards
         og_alt = f"{name} — {catname}, folklore of Britain & Ireland"
@@ -1542,7 +1546,7 @@ def build():
                 ],
             },
             "image": image_object(f"og/category-{c}.png", f"{label} folklore category artwork")
-            if c in meta else image_object("og/preview.png", "Folklore Finder preview artwork"),
+            if c in meta else image_object("og/preview.jpg", "Folklore Finder preview artwork"),
         }, ensure_ascii=False)
         page = build_browse_page(
             page_title=f"{label} of Britain & Ireland — Folklore Map",
@@ -1700,13 +1704,20 @@ def build():
                             f'<img src="{BASE}/{hero_path.replace(os.sep, "/")}" alt="{esc(col["title"])}"/>'
                             f'{hero_credit_html}</div>'
                         )
+                    # Both intro paragraphs belong in the text column, stacked
+                    # beside the image. Emitting the context paragraph after the
+                    # split let the tall (320px, 4:3) media push it way down the
+                    # page instead of sitting under the lede.
+                    context_para = (
+                        f'<p class="col-context">{esc(col["context"])}</p>'
+                        if col.get("context") else ""
+                    )
                     hero_html = (
                         '<div class="col-hero-split">'
-                        f'<div class="col-hero-desc"><p>{esc(col["intro"])}</p></div>'
+                        f'<div class="col-hero-desc"><p>{esc(col["intro"])}</p>'
+                        f'{context_para}</div>'
                         f'{media_html}</div>\n'
                     )
-                    if col.get("context"):
-                        context_html = f'<p class="col-context">{esc(col["context"])}</p>\n'
 
                 map_link = (f'<p class="col-maplink"><a class="back" '
                             f'href="{BASE}/map?collection={esc(slug)}">'
@@ -2023,12 +2034,12 @@ def build():
 <meta property="og:title" content="All Legends &#8212; Folklore Finder"/>
 <meta property="og:description" content="Browse all {written} myths, legends, ghosts and folklore entries across Britain and Ireland."/>
 <meta property="og:url" content="{BASE}/{OUT_DIR}/"/>
-<meta property="og:image" content="{BASE}/og/preview-folklore-finder.png"/>
+<meta property="og:image" content="{BASE}/og/preview-folklore-finder.jpg"/>
 <meta property="og:site_name" content="Folklore Finder"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="All Legends &#8212; Folklore Finder"/>
 <meta name="twitter:description" content="Browse all {written} myths, legends, ghosts and folklore entries across Britain and Ireland."/>
-<meta name="twitter:image" content="{BASE}/og/preview-folklore-finder.png"/>
+<meta name="twitter:image" content="{BASE}/og/preview-folklore-finder.jpg"/>
 <link rel="stylesheet" href="/fonts/fonts.css"/>
 <style>
 *{{box-sizing:border-box;margin:0;padding:0}}

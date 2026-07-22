@@ -285,6 +285,18 @@ def load_periods():
         return []
 
 
+def load_sightings():
+    """Load curated 'recent sightings' news entries per legend, keyed by legend
+    name; {} if absent. Each entry: date, title, source_name, url, confidence
+    ('reported' for mainstream coverage, 'possible' for lower-confidence
+    hobbyist/tracker sources). This is hand-curated (backfilled, then reviewed
+    monthly), never auto-published — see content-style-guide.md."""
+    try:
+        return json.load(io.open("sightings.json", encoding="utf-8"))
+    except Exception:
+        return {}
+
+
 def load_page_intros():
     """Curated category/region intros; {} if absent. Missing keys fall back to
     the generator's auto one-liner, so this can be filled in over time."""
@@ -883,7 +895,7 @@ FEATURED_PAGE = Template("""<!DOCTYPE html>
 <meta name="twitter:image:alt" content="$og_alt"/>
 <link rel="stylesheet" href="/fonts/fonts.css"/>
 <link rel="stylesheet" href="/assets/leaflet/leaflet.css"/>
-<link rel="stylesheet" href="/legend-page.css?v=20260716a"/>
+<link rel="stylesheet" href="/legend-page.css?v=20260721a"/>
 <script type="application/ld+json">$jsonld</script>
 $breadcrumb_jsonld
 </head>
@@ -932,6 +944,8 @@ $hero_caption
             <span>$coordinates</span>
           </div>
         </section>
+
+        $featured_sightings
 
         $historical_context
 
@@ -1058,7 +1072,7 @@ def update_whats_new_page(recent, built_collections, slugmap, cats, meta, limit=
 def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
                            slugmap, catname, maplink, page_path_url, desc,
                            jsonld, breadcrumb, breadcrumb_jsonld, collections=(),
-                           periods_by_title=None, featured_pages=None):
+                           periods_by_title=None, featured_pages=None, sightings=None):
     """Render the editorial legend layout, with artwork when available."""
     name = leg["name"]
     image_path = featured.get("image", "")
@@ -1137,6 +1151,43 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
         f'<div class="fact"><span>{esc(title_case_text(label))}</span><strong>{esc(title_case_text(value))}</strong></div>'
         for label, value in fact_items.items()
     )
+
+    # Recent Sightings — curated news coverage of modern reports for the small
+    # subset of legends with an active sighting culture (cryptids, big-cat
+    # reports, etc.). Entries older than the freshness window are dropped at
+    # build time so the box can't calcify into stale news; a legend with no
+    # current entries gets no box at all rather than an empty placeholder.
+    SIGHTING_FRESHNESS_DAYS = 730
+    fresh_sightings = []
+    for s in (sightings or []):
+        try:
+            age = (datetime.date.today() - datetime.datetime.strptime(s["date"], "%Y-%m-%d").date()).days
+        except Exception:
+            continue
+        if age <= SIGHTING_FRESHNESS_DAYS:
+            fresh_sightings.append(s)
+    fresh_sightings.sort(key=lambda s: s["date"], reverse=True)
+    if fresh_sightings:
+        sighting_items = []
+        for s in fresh_sightings:
+            flag = (
+                '<span class="sighting-flag">Possible sighting</span>'
+                if s.get("confidence") == "possible" else ""
+            )
+            sighting_items.append(
+                f'<li><a href="{esc(s["url"])}" target="_blank" rel="noopener">'
+                f'<span class="sighting-date">{esc(human_date(s["date"]))}</span>'
+                f'<span class="sighting-title">{esc(s["title"])}</span></a>'
+                f'<span class="sighting-source">{esc(s["source_name"])}</span>{flag}</li>'
+            )
+        featured_sightings = (
+            '<section class="side-card side-pad"><p class="side-kicker">Recent Sightings</p>'
+            '<h2>Reported in the Wild</h2>'
+            '<p class="source-copy">Recent news coverage mentioning this legend.</p>'
+            f'<ul class="sighting-list">{"".join(sighting_items)}</ul></section>'
+        )
+    else:
+        featured_sightings = ""
 
     if srcs:
         source_items = "".join(
@@ -1310,6 +1361,7 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
         standfirst=esc(inline_text(leg.get("summary", ""))),
         featured_body=featured_body,
         editorial=editorial_html,
+        featured_sightings=featured_sightings,
         historical_context=historical_context,
         featured_nearby=featured_nearby,
         featured_collections=featured_collections,
@@ -1422,6 +1474,7 @@ def build():
     # a curated collection that should stay hidden while thin).
     periods = load_periods()
     periods_by_title = {p["match"]: p["slug"] for p in periods}
+    sightings_map = load_sightings()
     period_members = {p["slug"]: [] for p in periods}
     for l in legends:
         slug = periods_by_title.get(l.get("period"))
@@ -1550,6 +1603,7 @@ def build():
             breadcrumb_jsonld=breadcrumb_jsonld,
             collections=legend_collections_map.get(name, []),
             periods_by_title=periods_by_title,
+            sightings=sightings_map.get(name, []),
         )
         with io.open(os.path.join(OUT_DIR, f"{slug}.html"), "w", encoding="utf-8") as f:
             f.write(out)

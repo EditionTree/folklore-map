@@ -453,6 +453,13 @@ h1{
 .source-list{list-style:none;margin:13px 0 0;padding:0}
 .source-list li+li{margin-top:7px}
 .source-list a{color:var(--rust-dark);font-size:13px}
+.sighting-list{list-style:none;margin:13px 0 0;padding:0}
+.sighting-list li+li{margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
+.sighting-list a{display:block;text-decoration:none;color:inherit}
+.sighting-date{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--ink-soft)}
+.sighting-title{display:block;margin-top:2px;font-size:13px;line-height:1.4;color:var(--rust-dark)}
+.sighting-source{display:block;margin-top:4px;font-size:11.5px;color:var(--ink-soft)}
+.sighting-flag{display:inline-block;margin-top:5px;padding:2px 7px;font-size:10px;text-transform:uppercase;letter-spacing:.04em;border:1px solid var(--ink-soft);border-radius:3px;color:var(--ink-soft)}
 .editor-note{
   margin:30px 0 4px;
   padding:18px 22px;

@@ -378,6 +378,16 @@
       color: var(--border);
       border-top: 0.5px solid #3a2c18;
     }
+    .search-no-results {
+      padding: 10px 12px;
+      font-size: 12.5px;
+      line-height: 1.5;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .search-no-results .hint { font-style: italic; }
+    .sidebar .search-no-results { color: var(--ink-light); }
 
     /* ── FILTER BAR ── */
     .filter-bar {
@@ -466,6 +476,12 @@
        above the oak-leaf divider — borderless so it blends into the sidebar
        rather than reading as a separate boxed control. */
     .sidebar-header .search-wrap { margin-top: 12px; }
+    .sidebar-search-hint {
+      margin: 7px 2px 0;
+      font-size: 11.5px;
+      font-style: italic;
+      color: var(--ink-light);
+    }
     .sidebar .search-wrap input {
       background: transparent;
       border: none;
@@ -951,6 +967,7 @@
                oninput="handleSearch(this.value)"/>
         <div class="search-results" id="searchResults" role="listbox" aria-label="Search results"></div>
       </div>
+      <p class="sidebar-search-hint" id="sidebarSearchHint"></p>
     </div>
     <div class="sidebar-list" id="sidebarList"></div>
   </div>
@@ -1098,6 +1115,19 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!sidebarOpen) {
     sidebar.classList.add('collapsed');
     btn.textContent = '☰ Entries';
+  }
+
+  // Contextual example prompts — one picked at random per page load, not
+  // rotated during the visit, to stay calm rather than draw the eye.
+  const SEARCH_HINT_EXAMPLES = [
+    'Try searching your hometown or county',
+    'Try "dragon" or "black dog"',
+    'Try "Cornwall" or "the Highlands"',
+    'Search a creature, place or theme'
+  ];
+  const hintEl = document.getElementById('sidebarSearchHint');
+  if (hintEl) {
+    hintEl.textContent = SEARCH_HINT_EXAMPLES[Math.floor(Math.random() * SEARCH_HINT_EXAMPLES.length)];
   }
 });
 
@@ -1456,6 +1486,26 @@ function closeSearchResults() {
   searchActiveIdx = -1;
 }
 
+function showNoResults(q) {
+  const box = document.getElementById('searchResults');
+  const input = document.getElementById('searchInput');
+  box.replaceChildren();
+  const msg = document.createElement('div');
+  msg.className = 'search-no-results';
+  const line1 = document.createElement('span');
+  line1.textContent = 'No legends found for “' + q + '”.';
+  const line2 = document.createElement('span');
+  line2.className = 'hint';
+  line2.textContent = 'Try a place name, creature or theme — for example “dragon” or “Cornwall”.';
+  msg.appendChild(line1);
+  msg.appendChild(line2);
+  box.appendChild(msg);
+  box.classList.add('open');
+  input.setAttribute('aria-expanded', 'true');
+  input.removeAttribute('aria-activedescendant');
+  searchActiveIdx = -1;
+}
+
 function setSearchActive(idx) {
   const items = document.querySelectorAll('#searchResults .search-result-item');
   const input = document.getElementById('searchInput');
@@ -1604,7 +1654,7 @@ function handleSearch(query) {
                  (place && c.intro.toLowerCase().includes(place.name.toLowerCase())))
     .slice(0, 3);
 
-  if (!legendMatches.length && !collectionMatches.length) { closeSearchResults(); return; }
+  if (!legendMatches.length && !collectionMatches.length) { showNoResults(q); return; }
   box.replaceChildren();
   let idx = 0;
 

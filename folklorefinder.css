@@ -181,7 +181,7 @@ body.ff-paper {
 
 .home-page .stats {
   justify-content: center;
-  background: var(--ff-slate-blue);
+  background: var(--ff-bar-brown);
   border: 0;
 }
 
@@ -204,7 +204,7 @@ body.ff-paper {
 
 .home-page .stats-method {
   margin-top: 18px;
-  color: var(--ff-slate-blue);
+  color: var(--ff-oak-brown);
 }
 
 .home-page .wrap {

@@ -228,16 +228,29 @@ h1{
   line-height:1.55;
   text-wrap:balance;
 }
-.hero-caption{
+.hero-caption-wrap{
   position:absolute;
   z-index:2;
   right:17px;
   bottom:13px;
+  max-width:78%;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-end;
+  gap:3px;
+}
+.hero-caption-wrap .hero-caption,
+.hero-caption-wrap .hero-ai-note{
   padding:5px 8px;
   color:rgba(255,255,255,.7);
   background:rgba(11,10,9,.55);
   border-radius:2px;
   font-size:10px;
+  text-align:right;
+}
+.hero-caption-wrap .hero-ai-note{
+  color:rgba(255,255,255,.55);
+  font-style:italic;
 }
 .content-grid{
   display:grid;
@@ -583,7 +596,7 @@ footer a:hover{color:#f2e8d5}
   .hero-copy{position:static;width:100%;min-height:0;padding:26px 24px 32px;background:#161b1e;justify-content:flex-start}
   h1{font-size:46px}
   .standfirst{font-size:17px}
-  .hero-caption{display:none}
+  .hero-caption-wrap .hero-caption{display:none}
   .content-grid{padding:38px 0 51px}
   .article{padding:0 5px}
   .article p{font-size:17px}

@@ -1,0 +1,110 @@
+{
+  "_note": "Standalone seed data mirroring the planned Supabase schema. Each record is a denormalised join of names + name_variants + name_pronunciations + historical_name_forms. When the concept is proven, this shape maps 1:1 onto the anon REST reads described in the plan. Meanings/OE forms are hand-reviewed; do NOT auto-generate.",
+  "names": [
+    {
+      "slug": "gregory",
+      "canonical_name": "Gregory",
+      "variants": ["greg", "gregg", "gregor", "gregory"],
+      "origin_language": "Greek",
+      "historical_root": "Gregorios",
+      "meaning_summary": "watchful or vigilant",
+      "historical_notes": "From Greek Gregorios, 'watchful'. Entered Britain through Christian usage after several early popes and saints bore the name; it was never an Old English personal name.",
+      "confidence": "high",
+      "pronunciation_uk": "greg",
+      "phonemes_uk": ["g", "r", "e", "g"],
+      "historical_forms": [
+        {
+          "language": "Old English",
+          "historical_form": null,
+          "relationship_type": "no_direct_equivalent",
+          "status": "reviewed",
+          "explanation": "No attested Old English equivalent — the name arrived with Christian Latin/Greek usage, not the Germanic naming stock."
+        }
+      ]
+    },
+    {
+      "slug": "edward",
+      "canonical_name": "Edward",
+      "variants": ["ed", "eddie", "eddy", "ted", "teddy", "ned", "edward"],
+      "origin_language": "Old English",
+      "historical_root": "Ēadweard",
+      "meaning_summary": "rich guard / blessed protector",
+      "historical_notes": "A genuine Old English name, Ēadweard, from éad 'wealth, blessing' + weard 'guard, protector'. Borne by kings and saints; one of the few Anglo-Saxon names to survive the Norman Conquest in common use.",
+      "confidence": "high",
+      "pronunciation_uk": "ed-wuhd",
+      "phonemes_uk": ["e", "d", "w", "u", "d"],
+      "historical_forms": [
+        {
+          "language": "Old English",
+          "historical_form": "Ēadweard",
+          "relationship_type": "direct_ancestor",
+          "status": "attested",
+          "explanation": "Directly attested Old English form; modern Edward descends from it."
+        }
+      ]
+    },
+    {
+      "slug": "siobhan",
+      "canonical_name": "Siobhán",
+      "variants": ["siobhan", "shevaun", "chevonne", "siobhán"],
+      "origin_language": "Irish (from Norman French Jehanne)",
+      "historical_root": "Siobhán",
+      "meaning_summary": "God is gracious (feminine of John)",
+      "historical_notes": "Irish form of the Norman-French Jehanne (Jane), ultimately from Hebrew Yoḥanan. Spelling and pronunciation diverge sharply — the 'bh' is a /v/ sound — which is exactly why user pronunciation confirmation matters.",
+      "confidence": "high",
+      "pronunciation_uk": "shuh-vawn",
+      "phonemes_uk": ["sh", "u", "v", "aw", "n"],
+      "historical_forms": [
+        {
+          "language": "Old English",
+          "historical_form": null,
+          "relationship_type": "no_direct_equivalent",
+          "status": "reviewed",
+          "explanation": "No Old English equivalent — the name reached Ireland via Norman French, long after the Old English period."
+        }
+      ]
+    },
+    {
+      "slug": "alice",
+      "canonical_name": "Alice",
+      "variants": ["alice", "allie", "ally", "alison", "alyce"],
+      "origin_language": "Germanic (via Old French)",
+      "historical_root": "Adalhaidis",
+      "meaning_summary": "noble sort / of noble kind",
+      "historical_notes": "From Germanic Adalhaidis (adal 'noble' + haid 'kind, sort'), reaching English through Old French Aalis. Popularised in Britain after the Conquest.",
+      "confidence": "high",
+      "pronunciation_uk": "al-iss",
+      "phonemes_uk": ["a", "l", "i", "s"],
+      "historical_forms": [
+        {
+          "language": "Old English",
+          "historical_form": null,
+          "relationship_type": "no_direct_equivalent",
+          "status": "reviewed",
+          "explanation": "No attested Old English equivalent; the name is a post-Conquest import."
+        }
+      ]
+    },
+    {
+      "slug": "william",
+      "canonical_name": "William",
+      "variants": ["will", "bill", "billy", "liam", "willy", "william", "wills"],
+      "origin_language": "Germanic (via Old Norman French)",
+      "historical_root": "Willahelm",
+      "meaning_summary": "resolute protection / will + helmet",
+      "historical_notes": "From Germanic Willahelm (wil 'will, desire' + helm 'helmet, protection'), brought to England by the Normans in 1066 and rapidly dominant. The Old English cognate elements existed (willa, helm) but 'William' itself is not an Old English name.",
+      "confidence": "high",
+      "pronunciation_uk": "wil-yuhm",
+      "phonemes_uk": ["w", "i", "l", "y", "u", "m"],
+      "historical_forms": [
+        {
+          "language": "Old English",
+          "historical_form": null,
+          "relationship_type": "no_direct_equivalent",
+          "status": "reviewed",
+          "explanation": "No Old English personal name William; it arrived with the Normans. (Its roots wil- and helm did exist in Old English vocabulary.)"
+        }
+      ]
+    }
+  ]
+}

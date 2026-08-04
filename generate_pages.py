@@ -571,6 +571,16 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 .col-index-intro{font-size:15px;color:#3a2c14;line-height:1.62;margin-bottom:14px}
 .col-index-more{font-family:'Marcellus',serif;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#9d461f}
 .col-index-row:hover .col-index-more{color:#c4622a}
+/* Per-visitor collection progress — populated client-side from localStorage,
+   hidden by default so nothing flashes before JS resolves it. */
+.col-index-progress,.col-progress{display:flex;align-items:center;gap:8px;margin:2px 0 12px}
+.col-index-progress[hidden],.col-progress[hidden]{display:none}
+.cip-bar{position:relative;flex:0 1 120px;height:4px;border-radius:2px;background:rgba(90,70,50,.18);overflow:hidden}
+.cip-fill{position:absolute;inset:0;width:0%;background:#9d461f;border-radius:2px;transition:width .3s}
+.cip-label{font-size:11px;color:#5c4a2a;white-space:nowrap}
+.col-index-row.done{border-color:#c4622a}
+.col-index-row.done .cip-label{color:#9d461f}
+.col-progress .cip-bar{flex:0 1 200px}
 @media(max-width:680px){.col-index-row,.col-index-row:nth-child(even){flex-direction:column}.col-index-media{flex-basis:auto;height:212px;min-height:0}.col-index-body{padding:20px 22px}}
 .col-section{margin-top:38px}
 .col-section h2{font-family:'Marcellus',serif;font-size:20px;font-weight:400;color:#3f3023;margin-bottom:12px}
@@ -606,6 +616,66 @@ def track_event_script(event_type, **fields):
         "var p=Object.assign({referring_page:location.pathname,session_id:s}," + payload + ");"
         "fetch('https://canjzkpvjwvkbjcduaaj.supabase.co/functions/v1/submit-event',"
         "{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(p),keepalive:true}).catch(function(){});"
+        "}catch(e){}})();</script>\n"
+    )
+
+
+def collection_index_progress_script():
+    """Populates the begin/continue/complete state on each collection card on
+    the collections landing page, from the same ff_visited_legends_v1
+    localStorage key My Archive reads. One small JSON fetch per card
+    (collection/<slug>.json, already generated for the map's collection
+    filter), so cost stays proportional to the number of collections shown."""
+    return (
+        "<script>(function(){try{"
+        "var visited=JSON.parse(localStorage.getItem('ff_visited_legends_v1')||'null')||{};"
+        "var set=new Set(Object.keys(visited));"
+        "document.querySelectorAll('.col-index-row[data-slug]').forEach(function(row){"
+        "var slug=row.getAttribute('data-slug');"
+        "fetch('collection/'+slug+'.json').then(function(r){return r.json();}).then(function(d){"
+        "var members=d.legends||[];"
+        "if(!members.length)return;"
+        "var count=members.filter(function(n){return set.has(n);}).length;"
+        "var pct=Math.round(count/members.length*100);"
+        "var done=count===members.length;"
+        "var prog=row.querySelector('.col-index-progress');"
+        "var more=row.querySelector('.col-index-more');"
+        "if(prog){"
+        "prog.hidden=false;"
+        "prog.querySelector('.cip-fill').style.width=pct+'%';"
+        "prog.querySelector('.cip-label').textContent=done?'Collection complete \\u2713':(count+' of '+members.length+' discovered');"
+        "}"
+        "if(more)more.textContent=done?'Revisit the collection \\u2192':(count>0?'Continue collection \\u2192':'Begin collection \\u2192');"
+        "if(done)row.classList.add('done');"
+        "}).catch(function(){});"
+        "});"
+        "}catch(e){}})();</script>\n"
+    )
+
+
+def collection_detail_progress_script(slug):
+    """Same progress computation as collection_index_progress_script(), but
+    for the single collection page itself — one summary bar near the top
+    rather than one per card. Fetches its own membership JSON relative to
+    the page (same directory), since the full member list isn't known
+    client-side otherwise (pages 2+ only carry that page's slice)."""
+    return (
+        "<script>(function(){try{"
+        "var visited=JSON.parse(localStorage.getItem('ff_visited_legends_v1')||'null')||{};"
+        "var set=new Set(Object.keys(visited));"
+        "fetch('" + slug + ".json').then(function(r){return r.json();}).then(function(d){"
+        "var members=d.legends||[];"
+        "if(!members.length)return;"
+        "var count=members.filter(function(n){return set.has(n);}).length;"
+        "var pct=Math.round(count/members.length*100);"
+        "var done=count===members.length;"
+        "var el=document.querySelector('.col-progress');"
+        "if(!el)return;"
+        "el.hidden=false;"
+        "el.classList.toggle('done',done);"
+        "el.querySelector('.cip-fill').style.width=pct+'%';"
+        "el.querySelector('.cip-label').textContent=done?'Collection complete \\u2713':(count+' of '+members.length+' discovered');"
+        "}).catch(function(){});"
         "}catch(e){}})();</script>\n"
     )
 
@@ -1312,10 +1382,15 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
                           f'{img_tag}</picture>')
         else:
             hero_media = img_tag
-        hero_caption = (
+        # Hero art is AI-generated (Codex), so the disclosure note is always
+        # shown here regardless of whether an editorial caption exists —
+        # see the editorial & AI-use policy at /editorial.
+        caption_span = (
             f'<span class="hero-caption">{esc(featured.get("caption", ""))}</span>'
             if featured.get("caption") else ""
         )
+        ai_note_span = '<span class="hero-ai-note">Illustration created with the assistance of generative AI.</span>'
+        hero_caption = f'<div class="hero-caption-wrap">{caption_span}{ai_note_span}</div>'
         ogimage = hero_url
         og_w, og_h = "1600", "900"  # Codex hero artwork is 16:9 at this size
         og_alt = featured.get("alt") or f"Illustration of {name}"
@@ -1791,9 +1866,14 @@ def build():
                     page_intro = ""
                     media_html = ""
                     if hero_path:
+                        # Collection hero art is drawn from the same AI-generated
+                        # legend-image pool, so it carries the same disclosure.
                         hero_credit_html = (
-                            f'<span class="col-hero-credit">{esc(col["hero_credit"])}</span>'
-                            if col.get("hero_credit") else ""
+                            f'<span class="col-hero-credit">{esc(col["hero_credit"])} &middot; '
+                            'Illustration created with the assistance of generative AI.</span>'
+                            if col.get("hero_credit") else
+                            '<span class="col-hero-credit">Illustration created with the '
+                            'assistance of generative AI.</span>'
                         )
                         media_html = (
                             '<div class="col-hero-media">'
@@ -1818,6 +1898,11 @@ def build():
                 map_link = (f'<p class="col-maplink"><a class="back" '
                             f'href="{BASE}/map?collection={esc(slug)}">'
                             f'View this collection on the Map &#8594;</a></p>\n')
+                progress_html = (
+                    '<div class="col-progress" hidden>'
+                    '<span class="cip-bar"><span class="cip-fill"></span></span>'
+                    '<span class="cip-label"></span></div>\n'
+                )
                 page = build_browse_page(
                     page_title=f"{col['title']}{page_tag} — Folklore Finder",
                     desc=desc,
@@ -1836,9 +1921,10 @@ def build():
                     nav_active="collections",
                     hero_html=hero_html,
                     extra_sections=extra_sections,
-                    after_intro=context_html + map_link,
+                    after_intro=context_html + progress_html + map_link,
                     wrap_class="ornamented",
-                    track_script=track_event_script("collection_viewed", collection_slug=slug),
+                    track_script=track_event_script("collection_viewed", collection_slug=slug)
+                                 + collection_detail_progress_script(slug),
                 )
                 fname = f"{slug}.html" if page_no == 1 else f"{slug}-{page_no}.html"
                 with io.open(os.path.join(col_dir, fname), "w", encoding="utf-8") as f:
@@ -1862,11 +1948,14 @@ def build():
                     if rep else ""
                 )
                 land_cards.append(
-                    f'<a class="col-index-row" href="{curl}">' + media
+                    f'<a class="col-index-row" href="{curl}" data-slug="{esc(col["slug"])}">' + media
                     + '<div class="col-index-body">'
                     + f'<span class="col-index-count">{len(members)} legends</span>'
                     + f'<h2 class="col-index-name">{esc(col["title"])}</h2>'
                     + f'<p class="col-index-intro">{esc(short_desc(col["intro"], 210))}</p>'
+                    + '<span class="col-index-progress" hidden>'
+                    + '<span class="cip-bar"><span class="cip-fill"></span></span>'
+                    + '<span class="cip-label"></span></span>'
                     + '<span class="col-index-more">Explore the collection &#8594;</span>'
                     + '</div></a>'
                 )
@@ -1904,6 +1993,7 @@ def build():
                 jsonld=land_jsonld,
                 nav_active="collections",
                 wrap_class="ornamented",
+                track_script=collection_index_progress_script(),
             )
             with io.open(os.path.join(OUT_DIR, "collections.html"), "w", encoding="utf-8") as f:
                 f.write(land_page)
@@ -2202,7 +2292,7 @@ h1::after{{content:"";display:block;width:132px;height:40px;margin:9px 0 19px;ba
 
     # sitemap.xml — legend pages carry their own date_modified as lastmod, so the
     # signal is honest; app/aggregation pages use the build date.
-    urls = [f"{BASE}/", f"{BASE}/map", f"{BASE}/{OUT_DIR}/", f"{BASE}/achievements", f"{BASE}/about", f"{BASE}/updates", f"{BASE}/privacy", f"{BASE}/feed.xml"]
+    urls = [f"{BASE}/", f"{BASE}/map", f"{BASE}/{OUT_DIR}/", f"{BASE}/achievements", f"{BASE}/about", f"{BASE}/editorial", f"{BASE}/updates", f"{BASE}/privacy", f"{BASE}/feed.xml"]
     urls += browse_urls
     urls += [f"{BASE}/{OUT_DIR}/{slugmap[l['name']]}" for l in legends]
     lastmod_map = {f"{BASE}/{OUT_DIR}/{slugmap[l['name']]}": (l.get("date_modified") or today)

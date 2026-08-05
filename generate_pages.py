@@ -985,7 +985,6 @@ $topnav
         $pronunciation
         <p class="standfirst">$standfirst</p>
       </div>
-$hero_caption
     </section>
 
     <div class="content-grid">
@@ -1407,7 +1406,15 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
             if featured.get("caption") else ""
         )
         ai_note_span = '<span class="hero-ai-note">Illustration created with the assistance of generative AI.</span>'
-        hero_caption = f'<div class="hero-caption-wrap">{caption_span}{ai_note_span}</div>'
+        # The caption wrap is nested INSIDE hero-media-wrap (with the image),
+        # not left as a sibling of the whole hero section — on mobile the
+        # hero stacks image-then-text instead of overlaying, so a caption
+        # positioned against the full hero box used to land over the title
+        # text instead of the image. Scoping it to a wrapper that's sized to
+        # just the image keeps it correctly placed in both layouts.
+        hero_caption_html = f'<div class="hero-caption-wrap">{caption_span}{ai_note_span}</div>'
+        hero_media = f'<div class="hero-media-wrap">{hero_media}{hero_caption_html}</div>'
+        hero_caption = ""
         ogimage = hero_url
         og_w, og_h = "1600", "900"  # Codex hero artwork is 16:9 at this size
         og_alt = featured.get("alt") or f"Illustration of {name}"

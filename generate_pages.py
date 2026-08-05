@@ -1063,12 +1063,14 @@ def load_category_meta():
 
 def update_homepage_count(total):
     """Patch the static (pre-JS) homepage count fallbacks. Rounded down to the
-    nearest 50 and shown as "X+" — matches roundedCountPlus() in index.html's
-    own script, which overwrites these same spans at runtime once legends.json
-    loads, so the two must stay in lockstep."""
+    nearest 50 and shown as "X+", or just "X" with no "+" if the total happens
+    to land on an exact multiple of 50 — matches roundedCountPlus() in
+    index.html's own script, which overwrites these same spans at runtime once
+    legends.json loads, so the two must stay in lockstep."""
     path = "index.html"
     text = io.open(path, encoding="utf-8").read()
-    rounded = f"{(total // 50) * 50}+"
+    rounded_num = (total // 50) * 50
+    rounded = f"{rounded_num}+" if rounded_num < total else str(rounded_num)
     patterns = (
         (r'(<span id="heroCount">)[^<]*(</span>)', rf'\g<1>{rounded}\g<2>'),
         (r'(<span class="stat-num" id="statLegends">)[^<]*(</span>)', rf'\g<1>{rounded}\g<2>'),

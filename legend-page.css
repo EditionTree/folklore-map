@@ -523,6 +523,10 @@ h1{
 .section-head h2{margin:3px 0 0;font-family:'Marcellus',serif;font-size:31px;font-weight:400}
 .section-head a{color:var(--rust-dark);font-size:13px}
 .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+/* Cards 4-6 are an extra candidate pool for legend-page.js to pick from
+   (preferring ones not yet visited) — hidden until JS decides which 3 to
+   show, and simply stay hidden if JS is unavailable. */
+.related-card.extra{display:none}
 .related-card{
   min-height:190px;
   display:flex;

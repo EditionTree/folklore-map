@@ -258,6 +258,30 @@
   var firstVisitName=markLegendVisited();
   if(firstVisitName) checkAchievementToasts(firstVisitName);
 
+  // Of the 6 related-legend candidates the page ships (see generate_pages.py),
+  // show the 3 not yet in ff_visited_legends_v1 first, keeping each group's
+  // original relevance order — steers a returning visitor toward something
+  // new rather than the same 3 cards every time they open this page.
+  (function prioritizeUnvisitedRelated(){
+    try{
+      var grid=document.querySelector('.related-grid');
+      if(!grid)return;
+      var cards=Array.from(grid.querySelectorAll('.related-card'));
+      if(cards.length<=3)return;
+      var visited=readJsonStorage('ff_visited_legends_v1',{});
+      function isVisited(card){
+        var nameEl=card.querySelector('.related-name');
+        var name=nameEl?nameEl.textContent.trim():'';
+        return !!visited[name];
+      }
+      var unvisited=cards.filter(function(c){return !isVisited(c);});
+      var alreadyVisited=cards.filter(isVisited);
+      var chosen=unvisited.concat(alreadyVisited).slice(0,3);
+      cards.forEach(function(c){c.classList.add('extra');});
+      chosen.forEach(function(c){c.classList.remove('extra');});
+    }catch(e){}
+  })();
+
   var mapElement=document.getElementById('miniMap');
   if(mapElement&&window.L){
     var latitude=Number(mapElement.dataset.lat);

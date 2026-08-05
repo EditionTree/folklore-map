@@ -146,12 +146,7 @@
     body.night .search-result-item { border-bottom-color: #1e2e4a; }
     body.night .map-vignette {
       background: radial-gradient(ellipse at center, transparent 55%, rgba(8,14,30,0.4) 100%);
-    }
-    body.night .content-area {
-      background:
-        radial-gradient(ellipse at 18% 20%, rgba(61,91,132,.25) 0 2%, transparent 11%),
-        radial-gradient(ellipse at 73% 76%, rgba(42,68,104,.25) 0 2%, transparent 10%),
-        linear-gradient(180deg,var(--wood-light),var(--wood-mid) 38%,var(--wood-dark));
+      box-shadow: inset 0 0 70px 6px rgba(7,13,23,.6);
     }
     body.night .map-border {
       opacity:.45;
@@ -257,15 +252,15 @@
     .map-nav { display: flex; align-items: center; gap: 2px; flex-wrap: wrap; justify-content: center; }
     .map-nav a {
       font-family: var(--font-display);
-      font-size: 11px; letter-spacing: .08em; text-transform: uppercase;
+      font-size: 12px; letter-spacing: .08em; text-transform: uppercase;
       color: rgba(242,232,213,0.78);
       text-decoration: none;
-      padding: 6px 11px; border-radius: 3px;
+      padding: 6px 14px; border-radius: 3px;
       transition: background .15s, color .15s;
       white-space: nowrap;
     }
     .map-nav a:hover { color: #f2e8d5; background: rgba(196,98,42,0.18); }
-    .map-nav a.active { color: var(--accent-glow); }
+    .map-nav a.active { color: var(--accent); }
     @media (max-width: 1100px) {
       .map-nav { gap: 0; }
       .map-nav a { padding: 5px 8px; font-size: 10.5px; }
@@ -458,20 +453,22 @@
       box-shadow: 0 2px 7px rgba(44,31,14,.18);
     }
     .filter-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
-    /* Entries toggle now lives in the (light) filter bar, replacing the old
-       "Show" label — restyle it to match .filter-btn instead of the dark
-       header look .sidebar-toggle-btn was originally designed for. */
+    /* Entries toggle now lives in the (light) filter bar. It's the main way
+       into the map's navigation (the full legend list), so it's styled as
+       the one solid/filled control in the bar — everything else here is an
+       outlined filter toggle of equal, deliberately lower, visual weight. */
     .filter-bar .sidebar-toggle-btn {
       font-family: var(--font-body);
       font-size: 13px;
+      font-weight: 600;
       min-height: 30px;
-      padding: 4px 11px;
+      padding: 4px 13px;
       border-radius: 0;
-      border: 1px solid var(--border);
-      background: transparent;
-      color: var(--ink-light);
+      border: 1px solid var(--ink);
+      background: linear-gradient(180deg,#3a2917,var(--ink));
+      color: var(--parchment);
     }
-    .filter-bar .sidebar-toggle-btn:hover { background: var(--parchment-dk); border-color: var(--accent); color: var(--ink); }
+    .filter-bar .sidebar-toggle-btn:hover { background: linear-gradient(180deg,#4a3624,#2a1d10); border-color: var(--ink); color: #fff; }
     /* Search bar sits inside the sidebar header, below the entries count and
        above the oak-leaf divider — borderless so it blends into the sidebar
        rather than reading as a separate boxed control. */
@@ -521,15 +518,21 @@
     }
     #map.night .leaflet-tile-pane { filter: var(--map-filter-night); }
 
-    /* Parchment vignette overlay — sits above tiles (200) but below markers (600) */
+    /* Parchment vignette overlay — sits above tiles (200) but below markers (600).
+       The inset box-shadow adds a soft edge fade so map tiles gradually darken
+       into the leaf frame rather than cutting off sharply beneath it. */
     .map-vignette {
       position: absolute; inset: 0;
       pointer-events: none; z-index: 399;
       background: radial-gradient(ellipse at center, transparent 55%, rgba(44,31,14,0.22) 100%);
+      box-shadow: inset 0 0 70px 6px rgba(33,24,18,.55);
     }
+    /* Drawn directly on the map's own edge (inset:0, matching .map-wrap)
+       rather than bleeding into a surrounding margin, so the map can fill
+       the content area completely with no wood-panel background showing. */
     .map-border {
       position:absolute;
-      inset:-27px;
+      inset:0;
       z-index:900;
       box-sizing:border-box;
       border:34px solid transparent;
@@ -798,35 +801,29 @@
     body { overflow: hidden; height: 100vh; height: 100dvh; }
     .content-area {
       flex: 1;
-      display: flex;
-      gap: 36px;
+      position: relative;
       overflow: hidden;
-      position: relative;
-      padding: 36px;
-      background:
-        linear-gradient(90deg, rgba(176,144,96,.1), transparent 28%, rgba(29,23,18,.12)),
-        linear-gradient(180deg,var(--wood-light),var(--wood-mid) 38%,var(--wood-dark));
-      box-shadow:
-        inset 0 2px 5px rgba(10,5,2,.75),
-        inset 0 -1px rgba(218,176,105,.2);
     }
+    /* The map always fills the full content area, edge to edge — the sidebar
+       (below) floats over it as an overlay rather than sharing a flex row,
+       so there's no reserved column of dead space when it's closed and no
+       map resize/invalidateSize churn needed when it opens. The leaf frame
+       (.map-border) is drawn directly on top of this box's own edge rather
+       than in a surrounding margin, so no wood-panel background shows. */
     .map-wrap {
-      flex: 1;
-      position: relative;
+      position: absolute;
+      inset: 0;
       isolation: isolate;
       overflow: visible;
       min-height: 0;
-      border: 1px solid rgba(90,70,50,.38);
-      border-radius: 0;
-      box-shadow:
-        0 4px 12px rgba(18,9,3,.42),
-        inset 0 0 0 1px rgba(255,244,210,.25);
     }
     :root { --sidebar-w: 320px; }
 
-    /* ── SIDEBAR ── */
+    /* ── SIDEBAR (floating overlay, not a layout column) ── */
     .sidebar {
-      width: var(--sidebar-w); flex-shrink: 0;
+      position: absolute;
+      top: 14px; left: 14px; bottom: 14px;
+      width: var(--sidebar-w); max-width: calc(100% - 28px);
       background:
         repeating-linear-gradient(0deg, rgba(102,73,38,.024) 0 1px, transparent 1px 4px),
         repeating-linear-gradient(90deg, rgba(102,73,38,.018) 0 1px, transparent 1px 8px),
@@ -835,15 +832,15 @@
       border: 1px solid var(--frame-metal);
       border-radius: 2px;
       display: flex; flex-direction: column;
-      transition: width 0.28s ease, opacity 0.28s ease;
-      overflow: hidden; z-index: 800;
-      will-change: width, opacity;
+      transition: transform 0.28s ease, opacity 0.28s ease;
+      overflow: hidden; z-index: 1500;
+      will-change: transform, opacity;
       box-shadow:
+        0 12px 30px rgba(10,5,2,.4),
         0 0 0 2px rgba(31,17,7,.72),
-        3px 4px 10px rgba(18,9,3,.28),
         inset -7px 0 12px rgba(70,43,18,.06);
     }
-    .sidebar.collapsed { width: 0; opacity: 0; pointer-events: none; }
+    .sidebar.collapsed { transform: translateX(calc(-100% - 20px)); opacity: 0; pointer-events: none; }
     .sidebar-header { position:relative;padding:17px 17px 33px;border-bottom:1px solid var(--border);flex-shrink:0; }
     .sidebar-header::after { content:"";position:absolute;left:15px;bottom:2px;width:92px;height:28px;opacity:.48;background:url("assets/ornaments/generated-variants/oak-divider-horizontal.webp?v=20260629a") left center/contain no-repeat;pointer-events:none; }
     .sidebar-title { font-family: var(--font-display); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); margin-bottom: 3px; }
@@ -892,33 +889,20 @@
       h1 { font-size: 15px; letter-spacing: 0.04em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
       h1::before, h1::after { content: none; }
 
-      /* Map layout: the map fills the width; the sidebar becomes a slide-in
-         overlay (toggled by the "☰ Entries" button) instead of eating the row. */
-      .content-area {
-        flex-direction: column;
-        padding: 0;
-        gap: 0;
-        box-shadow: none;
-      }
-      .map-wrap {
-        width: 100%;
-        flex: 1 1 auto;
-        min-height: 0;
-        border: 0;
-        box-shadow: none;
-      }
+      /* Map layout: the sidebar-as-overlay behaviour now lives in the base
+         (non-mobile) rules above; this block only trims the leaf-frame
+         breathing room, which a phone screen can't spare, and narrows the
+         sidebar's insets to match. */
+      .content-area { padding: 0; box-shadow: none; }
+      .map-wrap { inset: 0; border: 0; box-shadow: none; }
       .map-border { display: none; }
       footer { display: none; }
       .sidebar {
-        position: absolute; top: 8px; left: 8px; right: 8px; bottom: 8px;
-        width: auto; max-width: 360px; z-index: 1500;
-        /* No width/opacity transition here: added-before-paint it can stick in a
-           running state on some engines and pin the sidebar open over the map. */
+        top: 8px; left: 8px; bottom: 8px;
+        width: auto; max-width: min(360px, calc(100% - 16px));
+        /* No transition here: added-before-paint it can stick in a running
+           state on some engines and pin the sidebar open over the map. */
         will-change: auto; transition: none;
-      }
-      .sidebar.collapsed {
-        left: -110%; right: auto; width: min(340px, calc(100% - 16px));
-        opacity: 0; pointer-events: none;
       }
     }
   </style>
@@ -1496,7 +1480,7 @@ function showNoResults(q) {
   line1.textContent = 'No legends found for “' + q + '”.';
   const line2 = document.createElement('span');
   line2.className = 'hint';
-  line2.textContent = 'Try a place name, creature or theme — for example “dragon” or “Cornwall”.';
+  line2.textContent = 'Try a place name, creature or theme, such as “dragon” or “Cornwall”.';
   msg.appendChild(line1);
   msg.appendChild(line2);
   box.appendChild(msg);

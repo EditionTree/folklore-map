@@ -75,6 +75,16 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Spectral',seri
 .release ul{margin:0;padding-left:20px}
 .release li{margin-bottom:7px;font-size:16px}
 
+/* Technical changelog: present but deliberately quiet — a collapsed <details>
+   under the visitor-facing release notes rather than mixed into that list. */
+.tech-changelog{margin-top:12px}
+.tech-changelog summary{cursor:pointer;font-family:'Marcellus',serif;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-light);padding:4px 2px;list-style:none}
+.tech-changelog summary::-webkit-details-marker{display:none}
+.tech-changelog summary::before{content:'+ ';color:var(--accent)}
+.tech-changelog[open] summary::before{content:'\2212 '}
+.tech-changelog ul{margin:8px 0 0;padding-left:20px}
+.tech-changelog li{margin-bottom:5px;font-size:13.5px;color:var(--ink-light)}
+
 /* ── RECENT LEGENDS / COLLECTIONS (compact side lists) ── */
 .mini-list{list-style:none}
 .mini-list li+li{margin-top:2px}
@@ -88,6 +98,7 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Spectral',seri
 .recent-list{list-style:none;display:flex;flex-direction:column;gap:10px}
 .recent-card{display:block;background:var(--parchment);border:1px solid var(--gold);border-radius:4px;padding:12px 14px;text-decoration:none;color:var(--ink);transition:border-color .15s,transform .1s}
 .recent-card:hover{border-color:var(--accent-warm);transform:translateY(-2px)}
+.recent-added-date{display:block;font-family:'Marcellus',serif;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:3px}
 .recent-name{font-family:'Marcellus',serif;font-size:14px;color:var(--ink);margin-bottom:2px;line-height:1.25}
 .recent-region{font-style:italic;font-size:11.5px;color:var(--ink-light)}
 .recent-cat{display:inline-block;font-size:9px;letter-spacing:.06em;text-transform:uppercase;color:#fff;padding:2px 7px;border-radius:3px;margin-top:7px;line-height:1.5}
@@ -239,8 +250,23 @@ footer a{color:var(--ink-light)}
 
 <script>
 (function(){
-  // ── Curated site updates (newest first). Append new release blocks at the top. ──
+  // ── Curated site updates (newest first). Append new release blocks at the
+  // top. Each item is either a plain string (shown as a visitor-facing
+  // update, the default) or {text, tech:true} for a technical/dev note —
+  // those render in a collapsed "Technical changelog" below the main list
+  // instead of mixed into it. ──
   const UPDATES = [
+    { date: "August 2026", items: [
+      "A new homepage guidance carousel: quick routes into My Archive, achievements, collections and what's new, with a first card that adapts to how far you've explored.",
+      "Find folklore near me: a button that uses your device's location to jump straight to the nearest legend.",
+      "My Archive redesigned for first-time visitors, with a clear starting point and a prompt to pick up an in-progress collection where you left off.",
+      "Collection pages now show your own progress: begin, continue or complete, for every themed collection.",
+      "The map now fills the full page, with the entries panel opening over the top instead of squeezing it into a smaller column.",
+      "A new Editorial & AI-Use Policy page explains how entries are researched, sourced and, where AI-generated, illustrated.",
+      "AI-generated legend illustrations are now labelled on the page.",
+      { text: "Search-engine rules updated to keep AI training crawlers out while normal search indexing continues as before.", tech: true },
+      { text: "A recurring sourcing-audit tool now flags thin or single-sourced entries for the ongoing research process to revisit.", tech: true }
+    ] },
     { date: "July 2026", items: [
       "Themed collections reimagined — each now reads as an illustrated article, an image beside every tale.",
       "A new Birth of Albion collection, tracing the mythic founding of Britain from Brutus and the fall of Troy to the last giants of Albion.",
@@ -269,10 +295,24 @@ footer a{color:var(--ink-light)}
     const rel = UPDATES[monthIdx];
     su.innerHTML = '';
     if (!rel) { su.innerHTML = '<p class="empty-note">No updates recorded yet.</p>'; return; }
+    var visitorItems = rel.items.filter(function(it){ return !(it && it.tech); });
+    var techItems = rel.items.filter(function(it){ return it && it.tech; });
     var box = document.createElement('div'); box.className = 'release';
     var ul = document.createElement('ul');
-    rel.items.forEach(function(it){ var li = document.createElement('li'); li.textContent = it; ul.appendChild(li); });
+    visitorItems.forEach(function(it){
+      var li = document.createElement('li');
+      li.textContent = typeof it === 'string' ? it : it.text;
+      ul.appendChild(li);
+    });
     box.appendChild(ul);
+    if (techItems.length) {
+      var details = document.createElement('details'); details.className = 'tech-changelog';
+      var summary = document.createElement('summary'); summary.textContent = 'Technical changelog (' + techItems.length + ')';
+      var techUl = document.createElement('ul');
+      techItems.forEach(function(it){ var li = document.createElement('li'); li.textContent = it.text; techUl.appendChild(li); });
+      details.appendChild(summary); details.appendChild(techUl);
+      box.appendChild(details);
+    }
     su.appendChild(box);
     label.textContent = rel.date;
     prevBtn.disabled = monthIdx >= UPDATES.length - 1;
@@ -295,12 +335,14 @@ footer a{color:var(--ink-light)}
       var a = document.createElement('a');
       a.className = 'recent-card';
       a.href = 'legends/' + leg.slug;
+      var dt = document.createElement('div'); dt.className = 'recent-added-date';
+      dt.textContent = leg.date_added ? 'Added ' + leg.date_added : 'Newly added';
       var nm = document.createElement('div'); nm.className = 'recent-name'; nm.textContent = leg.name;
       var rg = document.createElement('div'); rg.className = 'recent-region'; rg.textContent = leg.region || '';
       var ct = document.createElement('div'); ct.className = 'recent-cat';
       ct.textContent = leg.category || '';
       ct.style.background = leg.colour || '#8b3a1a';
-      a.appendChild(nm); a.appendChild(rg); a.appendChild(ct);
+      a.appendChild(dt); a.appendChild(nm); a.appendChild(rg); a.appendChild(ct);
       li.appendChild(a);
       rl.appendChild(li);
     });

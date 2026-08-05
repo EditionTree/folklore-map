@@ -38,6 +38,9 @@ THEMATIC_TAGS = {
     "vanishing", "hill-figure",
     # tradition
     "celtic", "norse", "arthurian",
+    # category-shaped tags that aren't place names — excluded so they don't
+    # generate fake "region" pages (e.g. legends/region/fairy.html)
+    "fairy", "hero", "giant", "origin", "border",
 }
 
 

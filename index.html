@@ -693,7 +693,7 @@ footer a{color:var(--ink-light)}
   <img src="green-man.png" class="hero-emblem" alt="Green Man emblem"/>
   <h1 class="hero-title"><i class="title-gem">&#10022;</i><span class="title-text">Folklore Finder</span><i class="title-gem">&#10022;</i></h1>
   <p class="hero-sub">An atlas of myths, legends, &amp; stories</p>
-  <p class="hero-lede">Explore the myths, monsters, sacred sites and spectral figures that haunt the landscape of Britain and Ireland. More than <span id="heroCount">695</span> researched entries are each rooted in the place where their story lives.</p>
+  <p class="hero-lede">Explore the myths, monsters, sacred sites and spectral figures that haunt the landscape of Britain and Ireland. <span id="heroCount">650+</span> researched entries are each rooted in the place where their story lives.</p>
 
   <div class="search-wrap">
     <div class="search-inner">
@@ -742,7 +742,7 @@ footer a{color:var(--ink-light)}
 </section>
 
 <section class="stats" aria-label="Folklore Finder at a glance">
-  <div class="stat"><span class="stat-num" id="statLegends">664</span><span class="stat-label">Legends</span></div>
+  <div class="stat"><span class="stat-num" id="statLegends">650+</span><span class="stat-label">Legends</span></div>
   <div class="stat"><span class="stat-num" id="statCollections">&ndash;</span><span class="stat-label">Collections</span></div>
   <div class="stat"><span class="stat-num" id="statCategories">11</span><span class="stat-label">Categories</span></div>
   <div class="stat"><span class="stat-num" id="statRegions">&ndash;</span><span class="stat-label">Nations covered</span></div>
@@ -810,6 +810,11 @@ footer a{color:var(--ink-light)}
   }
   function articleLink(name){ return './legends/' + slugify(name); }
 
+  // Round the published legend count down to the nearest 50 and show it as
+  // "X+" (e.g. 664 -> "650+") wherever it's displayed — keeps the headline
+  // number stable as entries are added rather than ticking up by ones.
+  function roundedCountPlus(n){ return (Math.floor(n / 50) * 50) + '+'; }
+
   function getJSON(key, fallback){
     try { return JSON.parse(localStorage.getItem(key) || 'null') || fallback; } catch(e) { return fallback; }
   }
@@ -820,7 +825,7 @@ footer a{color:var(--ink-light)}
     const elCategories = document.getElementById('statCategories');
     const elRegions = document.getElementById('statRegions');
     const elCollections = document.getElementById('statCollections');
-    if (elLegends) elLegends.textContent = data.total || LEGENDS.length;
+    if (elLegends) elLegends.textContent = roundedCountPlus(data.total || LEGENDS.length);
     if (elCategories) elCategories.textContent = Object.keys(CATMETA).length;
     if (elRegions) {
       // l.region is free text ("Slaghtaverty, County Londonderry") rather than a
@@ -1170,7 +1175,7 @@ footer a{color:var(--ink-light)}
         .then(data => {
           LEGENDS = data.legends || [];
           const n = data.total || LEGENDS.length;
-          document.getElementById('heroCount').textContent = n;
+          document.getElementById('heroCount').textContent = roundedCountPlus(n);
           renderLotw();
           renderStats(data);
           computeAdaptiveCard().then(renderCarousel);

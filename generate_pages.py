@@ -1265,11 +1265,20 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
             f'{esc(s["publisher"])} &#8594;</a></li>'
             for s in srcs
         )
+        # Small provenance line, not a headline stat — a previous pass tried
+        # date_added more prominently and it "looked out of place" (see the
+        # dropped JSON-LD-only comment above); tucking it under the source
+        # list instead reads as quiet metadata rather than a marketing stat.
+        added_raw = leg.get("date_added")
+        added_html = (
+            f'<p class="hist-caveat">Added to the map {esc(human_date(added_raw))}.</p>'
+            if added_raw else ""
+        )
         featured_sources = (
             '<section class="side-card side-pad"><p class="side-kicker">Sources</p>'
             '<h2>Further Reading</h2>'
             '<p class="source-copy">Sources used to research and locate this legend.</p>'
-            f'<ul class="source-list">{source_items}</ul></section>'
+            f'<ul class="source-list">{source_items}</ul>{added_html}</section>'
         )
     else:
         featured_sources = ""
@@ -1311,8 +1320,14 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
     else:
         featured_collections = ""
 
+    # Emit 6 candidates (compute_related keeps up to 10, ranked by relevance)
+    # instead of just the top 3 — legend-page.js picks the 3 actually shown,
+    # preferring ones not yet in ff_visited_legends_v1, so a repeat visitor
+    # gets steered toward something new rather than the same 3 every time.
+    # Cards beyond the first 3 start hidden (.extra) so there's no flash of
+    # 6 cards before JS runs, and it degrades gracefully with JS disabled.
     featured_cards = []
-    for related in rel[:3]:
+    for idx, related in enumerate(rel[:6]):
         related_cat = cats.get(related.get("category", ""), related.get("category", ""))
         related_colour = meta.get(related.get("category", ""), {}).get("colour", "#8b3a1a")
         rslug = slugmap[related["name"]]
@@ -1341,6 +1356,8 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
             card_cls, card_style = "related-card has-img", f"--card-img:{card_img}"
         else:
             card_cls, card_style = "related-card", f'--card-glow:{esc(related_colour)}'
+        if idx >= 3:
+            card_cls += " extra"
         featured_cards.append(
             f'<a class="{card_cls}" style="{card_style}" '
             f'href="{BASE}/{OUT_DIR}/{rslug}">'

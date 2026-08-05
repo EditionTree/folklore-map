@@ -35,6 +35,12 @@ h1{font-family:'Marcellus',serif;font-size:clamp(42px,6vw,74px);font-weight:400;
 .track{position:relative;z-index:1;height:12px;margin-top:24px;border:1px solid rgba(176,144,96,.76);background:rgba(176,144,96,.2);overflow:hidden}.fill{height:100%;width:0;background:linear-gradient(90deg,var(--rust),var(--gold))}
 .progress-note{position:relative;z-index:1;margin-top:10px;color:var(--muted);font-size:13px;font-style:italic}
 .intro-panel{margin:0 0 44px;padding:18px 22px;border-left:3px solid var(--gold);background:rgba(246,241,230,.48);color:var(--muted);line-height:1.55}
+.ach-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.btn{display:inline-block;font-family:'Marcellus',serif;font-size:13px;letter-spacing:.06em;text-transform:uppercase;padding:11px 22px;border-radius:3px;text-decoration:none;cursor:pointer;border:1px solid var(--rust);transition:background .15s,color .15s,border-color .15s}
+.btn-primary{background:var(--rust);color:#fff8ec}
+.btn-primary:hover{background:#a84d1e}
+.btn-secondary{background:transparent;color:var(--rust);border-color:var(--gold)}
+.btn-secondary:hover{border-color:var(--rust)}
 .section{margin:0 0 48px}.section-head{display:flex;align-items:center;gap:14px;margin-bottom:18px}.section-head h2{font-family:'Marcellus',serif;font-size:20px;font-weight:400;color:var(--ink);white-space:nowrap}.section-head::after{content:"";height:34px;flex:1;background:url("assets/ornaments/generated-variants/oak-divider-horizontal.webp?v=20260629a") left center/contain no-repeat;opacity:.52}
 .section-count{font-size:12px;color:var(--muted);white-space:nowrap}
 .badge-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:24px 18px}
@@ -78,7 +84,11 @@ footer{position:relative;text-align:center;padding:12px 18px;font-size:12px;line
     <div>
       <p class="kicker">Explorer Progress</p>
       <h1>Your Achievements</h1>
-      <p class="hero-copy">Track the legends you have visited and unlock wax-seal badges as you wander through the folklore of Britain and Ireland.</p>
+      <p class="hero-copy">Track the legends you have visited and unlock wax-seal badges as you wander through the folklore of Britain and Ireland. It's a way to mark your journey and lead you on to the next discovery.</p>
+      <div class="ach-cta">
+        <a class="btn btn-primary" href="./map">Explore the map</a>
+        <a class="btn btn-secondary" href="./archive">Return to My Archive</a>
+      </div>
     </div>
     <aside class="progress-card" aria-label="Overall achievement progress">
       <div class="stat-row">

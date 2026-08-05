@@ -65,6 +65,7 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Spectral',seri
 
 /* ── THREE-COLUMN LAYOUT ── */
 .archive-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0 32px;align-items:start}
+.archive-grid[hidden]{display:none}
 @media(max-width:900px){.archive-grid{grid-template-columns:1fr}}
 
 .card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
@@ -74,6 +75,27 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Spectral',seri
 .card-tile .card-title{font-size:16px;font-weight:600}
 .card-tile .card-sub{display:block;font-size:12px;font-style:italic;color:var(--ink-light);margin-top:3px}
 .empty-note{font-size:13px;font-style:italic;color:var(--ink-light)}
+
+/* ── STORAGE NOTE ── */
+.storage-note{max-width:640px;margin:0 auto 8px;text-align:center;font-size:12.5px;font-style:italic;color:var(--ink-light)}
+
+/* ── FIRST-VISIT EMPTY STATE ── */
+.archive-empty{max-width:560px;margin:8px auto 12px;text-align:center;padding:36px 28px}
+.archive-empty h2{font-family:'Marcellus',serif;font-weight:400;font-size:26px;color:var(--ink);margin-bottom:12px}
+.archive-empty p{font-size:16px;color:var(--ink-light);margin-bottom:22px}
+.archive-empty-btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.archive-empty .btn{display:inline-block;font-family:'Marcellus',serif;font-size:13px;letter-spacing:.06em;text-transform:uppercase;padding:12px 22px;border-radius:3px;text-decoration:none;cursor:pointer;border:1px solid var(--accent-warm)}
+.archive-empty .btn-primary{background:var(--accent-warm);color:#f2e8d5}
+.archive-empty .btn-primary:hover{background:#a84d1e}
+.archive-empty .btn-secondary{background:transparent;color:var(--accent);border-color:var(--gold)}
+.archive-empty .btn-secondary:hover{border-color:var(--accent-warm)}
+
+/* ── CONTINUATION BANNER ── */
+.continuation-banner{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;background:var(--parchment);border:1px solid var(--gold);border-radius:8px;padding:14px 20px;margin:8px 0 6px}
+.continuation-banner[hidden]{display:none}
+.continuation-banner p{margin:0;font-size:14.5px;color:var(--ink)}
+.continuation-banner a.btn{flex-shrink:0;font-family:'Marcellus',serif;font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--accent-warm);text-decoration:none;border-bottom:1px solid rgba(196,98,42,.4);padding-bottom:1px}
+.continuation-banner a.btn:hover{color:#a84d1e;border-bottom-color:#a84d1e}
 
 /* ── ACHIEVEMENT PROGRESS (latest seal) ── */
 .progress-card{background:var(--parchment);border:1px solid var(--gold);border-radius:8px;padding:20px 24px}
@@ -139,11 +161,28 @@ footer a{color:var(--ink-light)}
 
 <div class="wrap">
 
-  <div class="archive-grid">
+  <p class="storage-note">Your archive is saved on this device only. No account is required. If you clear your browser&rsquo;s storage, or switch to a new device or browser, your archive starts fresh there; nothing is synced or backed up.</p>
+
+  <section class="archive-empty" id="archiveEmpty" hidden>
+    <h2>Your archive begins with your first legend.</h2>
+    <p>Every legend you visit is recorded on this device. Save favourites, complete themed collections and unlock explorer seals as you wander.</p>
+    <div class="archive-empty-btns">
+      <button class="btn btn-primary" id="firstLegendBtn" type="button">Discover my first legend &#8594;</button>
+      <a class="btn btn-secondary" href="map">Explore near me</a>
+      <a class="btn btn-secondary" href="legends/collections">Begin a collection</a>
+    </div>
+  </section>
+
+  <div class="continuation-banner" id="continuationBanner" hidden>
+    <p id="continuationText"></p>
+    <a class="btn" id="continuationLink" href="#">Continue &#8594;</a>
+  </div>
+
+  <div class="archive-grid" id="archiveGrid">
     <div class="archive-col-achievements">
       <section class="section">
         <div class="section-rule"><span>Achievement Progress</span></div>
-        <p class="section-sub">Saved locally on this device — see the full <a href="achievements">Achievements</a> page for every seal.</p>
+        <p class="section-sub">Saved locally on this device. See the full <a href="achievements">Achievements</a> page for every seal.</p>
         <div class="progress-card">
           <div id="latestSeal"></div>
           <div class="progress-stats">
@@ -171,7 +210,7 @@ footer a{color:var(--ink-light)}
     </aside>
   </div>
 
-  <section class="section">
+  <section class="section" id="collectionProgressSection">
     <div class="section-rule"><span>Collection Progress</span></div>
     <p class="section-sub">How far you've explored each themed collection.</p>
     <div id="collectionProgress"></div>
@@ -192,10 +231,19 @@ footer a{color:var(--ink-light)}
   var visitedObj = getJSON('ff_visited_legends_v1', {});
   var visitedNames = Object.keys(visitedObj);
   var unlockedIds = getJSON('ff_achievements_unlocked_v1', []);
+  var isEmpty = !visitedNames.length && !bookmarks.length && !unlockedIds.length;
 
   document.getElementById('statVisited').firstChild.nodeValue = visitedNames.length;
   document.getElementById('statUnlocked').firstChild.nodeValue = unlockedIds.length;
   document.getElementById('statSaved').firstChild.nodeValue = bookmarks.length;
+
+  // First-time visitor: replace the (currently empty) grid with a single
+  // welcoming call to action rather than three separate "nothing yet" notes.
+  if (isEmpty) {
+    document.getElementById('archiveEmpty').hidden = false;
+    document.getElementById('archiveGrid').hidden = true;
+    document.getElementById('collectionProgressSection').hidden = true;
+  }
 
   function slugify(name){
     return String(name || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
@@ -243,6 +291,15 @@ footer a{color:var(--ink-light)}
   fetch('legends.json').then(function(r){ return r.json(); }).then(function(data){
     var legends = data.legends || [];
     var byName = new Map(legends.map(function(l){ return [l.name, l]; }));
+
+    var firstLegendBtn = document.getElementById('firstLegendBtn');
+    if (firstLegendBtn) {
+      firstLegendBtn.addEventListener('click', function(){
+        if (!legends.length) return;
+        var pick = legends[Math.floor(Math.random() * legends.length)];
+        window.location.href = 'legends/' + slugify(pick.name);
+      });
+    }
 
     var savedEl = document.getElementById('savedLegends');
     var savedLegends = bookmarks.map(function(n){ return byName.get(n); }).filter(Boolean);
@@ -305,6 +362,37 @@ footer a{color:var(--ink-light)}
           row.querySelector('.collection-name').textContent = r.col.title;
           colEl.appendChild(row);
         });
+
+        // Continuation banner: prefer the collection you're furthest into
+        // (but not finished), matching the homepage's adaptive-card logic.
+        // Falls back to the most recently viewed legend if no collection is
+        // in progress. Only shown once there's something to continue.
+        if (!isEmpty) {
+          var partial = results
+            .filter(function(r){ return r.members.length; })
+            .map(function(r){
+              var visitedCount = r.members.filter(function(n){ return visitedSet.has(n); }).length;
+              return { col: r.col, visitedCount: visitedCount, total: r.members.length };
+            })
+            .filter(function(r){ return r.visitedCount > 0 && r.visitedCount < r.total; })
+            .sort(function(a, b){ return (b.visitedCount / b.total) - (a.visitedCount / a.total); })[0];
+
+          var banner = document.getElementById('continuationBanner');
+          var text = document.getElementById('continuationText');
+          var link = document.getElementById('continuationLink');
+          if (partial) {
+            text.textContent = 'You have discovered ' + partial.visitedCount + ' of ' + partial.total
+              + ' legends in ' + partial.col.title + '.';
+            link.textContent = 'Continue collection →';
+            link.href = 'legends/collection/' + partial.col.slug;
+            banner.hidden = false;
+          } else if (recent.length) {
+            text.textContent = 'Pick up where you left off with ' + recent[0].leg.name + '.';
+            link.textContent = 'Continue exploring →';
+            link.href = 'legends/' + slugify(recent[0].leg.name);
+            banner.hidden = false;
+          }
+        }
       });
     });
   });

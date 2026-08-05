@@ -918,6 +918,7 @@ footer a{color:var(--ink-light)}
     cards.forEach((c, i) => {
       const slide = document.createElement('div');
       slide.className = 'gc-card';
+      slide.setAttribute('data-card-id', c.id);
       slide.setAttribute('role', 'group');
       slide.setAttribute('aria-roledescription', 'slide');
       slide.setAttribute('aria-label', (i + 1) + ' of ' + cards.length + ': ' + c.title);
@@ -970,6 +971,27 @@ footer a{color:var(--ink-light)}
     });
 
     updateControls();
+    enhanceAchievementsCard();
+  }
+
+  // Rewrites the "Unlock achievements" carousel card with a live count once
+  // achievements.json loads, instead of the static description — matches the
+  // adaptive card's "show real numbers" treatment rather than generic copy.
+  function enhanceAchievementsCard(){
+    const desc = document.querySelector('.gc-card[data-card-id="achievements"] .gc-desc');
+    if (!desc) return;
+    fetch('./assets/achievements/achievements.json')
+      .then(r => r.json())
+      .then(data => {
+        const total = (data.sections || []).reduce((sum, s) =>
+          sum + (s.items || []).filter(a => !(a.availability && a.availability.status === 'draft')).length, 0);
+        if (!total) return;
+        const unlocked = getJSON('ff_achievements_unlocked_v1', []).length;
+        desc.textContent = unlocked
+          ? unlocked + ' of ' + total + ' explorer seals unlocked so far.'
+          : total + ' explorer seals to discover as you explore the map.';
+      })
+      .catch(() => {});
   }
 
   // ── Find folklore near me ──

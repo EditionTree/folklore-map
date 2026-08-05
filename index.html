@@ -693,7 +693,7 @@ footer a{color:var(--ink-light)}
   <img src="green-man.png" class="hero-emblem" alt="Green Man emblem"/>
   <h1 class="hero-title"><i class="title-gem">&#10022;</i><span class="title-text">Folklore Finder</span><i class="title-gem">&#10022;</i></h1>
   <p class="hero-sub">An atlas of myths, legends, &amp; stories</p>
-  <p class="hero-lede">Explore the myths, monsters, sacred sites and spectral figures that haunt the landscape of Britain and Ireland. <span id="heroCount">700+</span> researched entries are each rooted in the place where their story lives.</p>
+  <p class="hero-lede">Explore the myths, monsters, sacred sites and spectral figures that haunt the landscape of Britain and Ireland. <span id="heroCount">700</span> researched entries are each rooted in the place where their story lives.</p>
 
   <div class="search-wrap">
     <div class="search-inner">
@@ -742,7 +742,7 @@ footer a{color:var(--ink-light)}
 </section>
 
 <section class="stats" aria-label="Folklore Finder at a glance">
-  <div class="stat"><span class="stat-num" id="statLegends">700+</span><span class="stat-label">Legends</span></div>
+  <div class="stat"><span class="stat-num" id="statLegends">700</span><span class="stat-label">Legends</span></div>
   <div class="stat"><span class="stat-num" id="statCollections">&ndash;</span><span class="stat-label">Collections</span></div>
   <div class="stat"><span class="stat-num" id="statCategories">11</span><span class="stat-label">Categories</span></div>
   <div class="stat"><span class="stat-num" id="statRegions">&ndash;</span><span class="stat-label">Nations covered</span></div>
@@ -812,8 +812,13 @@ footer a{color:var(--ink-light)}
 
   // Round the published legend count down to the nearest 50 and show it as
   // "X+" (e.g. 664 -> "650+") wherever it's displayed — keeps the headline
-  // number stable as entries are added rather than ticking up by ones.
-  function roundedCountPlus(n){ return (Math.floor(n / 50) * 50) + '+'; }
+  // number stable as entries are added rather than ticking up by ones. No
+  // "+" when the total lands exactly on a multiple of 50 (e.g. 700 -> "700"),
+  // since it isn't "more than" in that case.
+  function roundedCountPlus(n){
+    const r = Math.floor(n / 50) * 50;
+    return r + (r < n ? '+' : '');
+  }
 
   function getJSON(key, fallback){
     try { return JSON.parse(localStorage.getItem(key) || 'null') || fallback; } catch(e) { return fallback; }

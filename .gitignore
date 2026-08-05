@@ -6,6 +6,23 @@ legends.*-review.json
 legends.review.json
 source_snapshots/
 
+# Scratch / working files — one-off session output, review drafts, contact
+# sheets. Never intended to be committed; if you're writing a throwaway
+# script or note, prefix the filename with _tmp_ so it's caught here too.
+_tmp_*
+tmp/
+output/
+
+# Monthly "recent sightings" research worksheets — same category as the
+# *-review.xlsx files below (a personal review draft, not published content;
+# see sightings.json for what's actually live).
+sighting-research/
+
+# On-hold PDF field-guide build pipeline. Kept on disk locally (don't want
+# to redo the font/asset setup if it's picked back up) but not tracked —
+# it's build tooling + generated output, not site content.
+_fieldguide_build/
+
 # Operational logs and local config — not needed for the live site
 bug_reports/
 .claude/

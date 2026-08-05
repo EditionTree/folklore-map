@@ -215,6 +215,16 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Spectral',seri
   text-shadow:0 1px 3px rgba(26,14,6,0.7);
 }
 
+/* ── NEAR ME STATUS ── */
+.near-me-status{
+  margin-top:12px;
+  font-size:13px;
+  color:rgba(242,232,213,0.82);
+  text-shadow:0 1px 3px rgba(26,14,6,0.7);
+}
+.near-me-status a{color:var(--accent-warm);text-decoration:underline;text-underline-offset:2px}
+.near-me-status a:hover{color:#e0834a}
+
 /* ── CTA BUTTONS ── */
 .hero-cta{
   display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:28px;
@@ -700,6 +710,7 @@ footer a{color:var(--ink-light)}
     <button class="btn btn-secondary" id="nearMeBtn" type="button" data-track="find_near_me">Find folklore near me</button>
     <button class="btn btn-secondary" id="surpriseBtn" type="button" data-track="surprise_me">&#10022; Surprise me</button>
   </div>
+  <p class="near-me-status" id="nearMeStatus" role="status" aria-live="polite" hidden></p>
     </div>
     <aside class="hero-feature" aria-labelledby="weekly-heading">
       <div class="gc-wrap" role="region" aria-roledescription="carousel" aria-label="Ways to explore Folklore Finder">
@@ -1001,6 +1012,10 @@ footer a{color:var(--ink-light)}
     const a = Math.sin(dLat / 2) ** 2 + Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLng / 2) ** 2;
     return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
   }
+  // Beyond this, the "nearest" match is too far to be meaningfully near —
+  // roughly the corner-to-corner span of Britain & Ireland — so a visitor
+  // outside that area gets an honest message instead of a misleading match.
+  const NEAR_ME_MAX_KM = 650;
   function nearestLegend(lat, lng){
     let best = null, bestD = Infinity;
     LEGENDS.forEach(l => {
@@ -1008,26 +1023,72 @@ footer a{color:var(--ink-light)}
       const d = haversineKm(lat, lng, l.lat, l.lng);
       if (d < bestD) { bestD = d; best = l; }
     });
-    return best;
+    return best ? { legend: best, distanceKm: bestD } : null;
   }
+
   const nearMeBtn = document.getElementById('nearMeBtn');
+  const nearMeStatus = document.getElementById('nearMeStatus');
+
+  function statusLink(text, href){
+    const a = document.createElement('a');
+    a.href = href; a.textContent = text;
+    return a;
+  }
+  // Accepts a mix of plain strings and link elements (from statusLink) so
+  // every outcome — including denial, timeout and out-of-range — gets a
+  // visible explanation instead of a silent redirect.
+  function setNearMeStatus(...parts){
+    if (!nearMeStatus) return;
+    nearMeStatus.innerHTML = '';
+    if (!parts.length) { nearMeStatus.hidden = true; return; }
+    parts.forEach(part => {
+      nearMeStatus.appendChild(typeof part === 'string' ? document.createTextNode(part) : part);
+    });
+    nearMeStatus.hidden = false;
+  }
+
   if (nearMeBtn) {
     const nearMeDefaultText = nearMeBtn.textContent;
+    function resetNearMeBtn(){
+      nearMeBtn.disabled = false;
+      nearMeBtn.textContent = nearMeDefaultText;
+    }
     nearMeBtn.addEventListener('click', () => {
-      if (!navigator.geolocation) { window.location.href = './map'; return; }
+      setNearMeStatus();
+      if (!navigator.geolocation) {
+        setNearMeStatus("Your browser doesn't support location lookup. ", statusLink('Explore the map instead →', './map'));
+        return;
+      }
       nearMeBtn.disabled = true;
       nearMeBtn.textContent = 'Locating…';
+      setNearMeStatus('Requesting your location. Look for a permission prompt from your browser.');
       navigator.geolocation.getCurrentPosition(
         pos => {
-          const nearest = nearestLegend(pos.coords.latitude, pos.coords.longitude);
-          nearMeBtn.disabled = false;
-          nearMeBtn.textContent = nearMeDefaultText;
-          window.location.href = nearest ? articleLink(nearest.name) : './map';
+          resetNearMeBtn();
+          const result = nearestLegend(pos.coords.latitude, pos.coords.longitude);
+          if (!result) {
+            setNearMeStatus("Couldn't match your location to a legend. ", statusLink('Explore the map instead →', './map'));
+            return;
+          }
+          if (result.distanceKm > NEAR_ME_MAX_KM) {
+            setNearMeStatus(
+              'Folklore Finder currently covers Britain & Ireland, so nothing is truly nearby from where you are. The closest entry on the map is ' + result.legend.name + '. ',
+              statusLink('See it anyway →', articleLink(result.legend.name)),
+              ' or ',
+              statusLink('explore the full map →', './map')
+            );
+            return;
+          }
+          setNearMeStatus('Found it: ' + result.legend.name + ', about ' + Math.round(result.distanceKm) + ' km away. Taking you there…');
+          window.location.href = articleLink(result.legend.name);
         },
-        () => {
-          nearMeBtn.disabled = false;
-          nearMeBtn.textContent = nearMeDefaultText;
-          window.location.href = './map';
+        err => {
+          resetNearMeBtn();
+          let msg;
+          if (err.code === err.PERMISSION_DENIED) msg = "Location access was declined, so we can't find your nearest legend. ";
+          else if (err.code === err.TIMEOUT) msg = "Couldn't get your location in time. ";
+          else msg = "Couldn't get your location. ";
+          setNearMeStatus(msg, statusLink('Explore the map instead →', './map'));
         },
         { timeout: 8000 }
       );

@@ -2,6 +2,12 @@
 
 Conduct a British and Irish folklore research session and write a dated JSON review report to `source_snapshots/research_queue/`.
 
+This skill only finds and proposes brand-new candidate legends. The daily
+scheduled task at `C:\Users\Greg\.claude\scheduled-tasks\research-folklore-weekly\SKILL.md`
+does that AND a full enrichment pass (dating, sourcing, no-ai-slop-checked
+summary rewrites) on existing entries each run — see that file for the
+current, actually-running version of this workflow.
+
 ## Trigger
 
 User types `/research-folklore` or asks to run a folklore research session.

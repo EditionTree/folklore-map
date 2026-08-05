@@ -314,7 +314,10 @@
       "haunting",
       "england",
       "norfolk"
-    ]
+    ],
+    "origin_date": "Uncertain; oral tradition likely predates surviving records",
+    "earliest_record": "1577 pamphlet by Rev. Abraham Fleming, describing the Bungay church incident",
+    "period": "Tudor Britain"
   },
   {
     "name": "Blue Ben of Kilve",
@@ -382,11 +385,15 @@
       "england",
       "cornwall"
     ],
-    "detail": "Bossiney, near Tintagel on the north coast of Cornwall, is a small place with a great Arthurian legend, centred on Bossiney Mound — a grassy, man-made motte that was once the heart of a Norman castle and earlier earthworks, set in the very heart of Cornwall's Arthurian country. While the castle that crowned it is long gone, the mound is the focus of one of the most evocative of all the local Arthur traditions.\n\nLegend holds that King Arthur's golden Round Table lies buried beneath Bossiney Mound — and that once each year, at midnight on Midsummer Eve, the great table rises up out of the ground to stand glittering in the moonlight, throwing a flash of light into the sky before it sinks again into the earth. The yearly rising is said to herald, or to await, the prophesied return of Arthur and his knights from their long sleep, ready to come again in Britain's hour of need.\n\nThe tradition belongs to the wider Cornish landscape of Arthurian belief around Tintagel — the headland of his conception, Merlin's Cave below it — and to the great British myth of the sleeping king who is not dead but only waiting. In a Christianised version of the tale, the golden Round Table will rise at the end of the world to be carried up to heaven, the saints seated round it. With its buried golden table and its midsummer rising, Bossiney Mound keeps the promise of Arthur's return fixed to a quiet green hillock on the Cornish coast.",
+    "detail": "Bossiney, near Tintagel on the north coast of Cornwall, is a small place with a great Arthurian legend, centred on Bossiney Mound — a grassy, man-made motte that was once the heart of a Norman castle, set in the very heart of Cornwall's Arthurian country. The manor was recorded in the Domesday Book of 1086 as Botcinnii, held by Robert, Count of Mortain, the Conqueror's half-brother, who built the neighbouring castles of Launceston and Trematon and may have raised Bossiney's motte himself, or left the work to his successors in the century that followed. By the mid-13th century the earls of Cornwall had shifted their seat to neighbouring Tintagel, and Bossiney's own castle faded from use, leaving only the motte and the legend it carries.\n\nLegend holds that King Arthur's golden Round Table lies buried beneath Bossiney Mound — and that once each year, at midnight on Midsummer Eve, the great table rises up out of the ground to stand glittering in the moonlight, throwing a flash of light into the sky before it sinks again into the earth. The yearly rising is said to herald, or to await, the prophesied return of Arthur and his knights from their long sleep, ready to come again in Britain's hour of need.\n\nThe tradition belongs to the wider Cornish landscape of Arthurian belief around Tintagel — the headland of his conception, Merlin's Cave below it — and to the great British myth of the sleeping king who is not dead but only waiting. In a Christianised version of the tale, the golden Round Table will rise at the end of the world to be carried up to heaven, the saints seated round it. With its buried golden table and its midsummer rising, Bossiney Mound keeps the promise of Arthur's return fixed to a quiet green hillock on the Cornish coast.",
     "sources": [
       "https://www.themodernantiquarian.com/site/820/bossiney-mound",
-      "https://www.cornwalls.co.uk/myths-legends/king_arthur.htm"
-    ]
+      "https://www.cornwalls.co.uk/myths-legends/king_arthur.htm",
+      "https://historicengland.org.uk/listing/the-list/list-entry/1006708"
+    ],
+    "origin_date": "motte likely 11th-12th century; the Round Table folklore itself is undated",
+    "earliest_record": "Domesday Book, 1086 (manor of Botcinnii); earliest antiquarian survey of the mound by Henry MacLauchlan, 1852",
+    "period": "Norman, 11th-12th century (the physical site); the folklore's own age is unrecorded"
   },
   {
     "name": "Bran the Blessed",
@@ -4286,7 +4293,12 @@
       "scotland",
       "hebrides"
     ],
-    "detail": "The Blue Men of the Minch are storm spirits said to haunt the strait between Lewis and the Shiant Islands off the west of Scotland — the only stretch of water where they were known to dwell. Blue-skinned and human in form, they swam alongside passing ships, raising sudden gales and reaching up to drag vessels and sailors down beneath the waves. The notoriously treacherous currents of the Minch were reckoned their doing.\n\nA ship might be spared, tradition held, if its captain could outmatch the Blue Men's chief in a contest of verse: the chief would call out the opening lines of a rhyme, and the skipper had to cap them instantly and keep the last word, or be lost. Folklorists have linked the Blue Men variously to fallen angels, to the old sea-deities of the region, or to a memory of captured North African sailors; whatever their origin, they are among the most distinctive sea-spirits in the folklore of the Hebrides."
+    "detail": "The Blue Men of the Minch are storm spirits said to haunt the strait between Lewis and the Shiant Islands off the west of Scotland — the only stretch of water where they were known to dwell. Blue-skinned and human in form, they swam alongside passing ships, raising sudden gales and reaching up to drag vessels and sailors down beneath the waves. The notoriously treacherous currents of the Minch were reckoned their doing.\n\nA ship might be spared, tradition held, if its captain could outmatch the Blue Men's chief in a contest of verse: the chief would call out the opening lines of a rhyme, and the skipper had to cap them instantly and keep the last word, or be lost. Folklorists have linked the Blue Men variously to fallen angels, to the old sea-deities of the region, or to a memory of captured North African sailors; whatever their origin, they are among the most distinctive sea-spirits in the folklore of the Hebrides.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Blue_men_of_the_Minch",
+      "https://www.icysedgwick.com/blue-men-of-the-minch/",
+      "https://scotlands-stories.com/blue-men-of-the-minch/"
+    ]
   },
   {
     "name": "The Dagda",
@@ -5492,7 +5504,12 @@
       "gwynedd"
     ],
     "detail": "Welsh tradition tells of several Afancs lurking in deep pools and lakes across Wales, sometimes described as crocodile-like, sometimes beaver-like, sometimes simply a 'demon of the lake'. The most famous tale tells how the creature could only be captured through trickery: a young woman was persuaded to let it rest its head in her lap while it slept, allowing local men to bind it in chains. When the Afanc woke and felt itself trapped, it thrashed so violently that it killed the maiden before finally being subdued.\n\nOther versions give the story an Arthurian twist. At Llyn Barfog in the Dyfi valley, King Arthur's horse Llamrei is said to have dragged the bound Afanc from the water using chains looped around its neck, hauling it across the mountains to a lake so deep and cold that it could never climb out again. A still older account, recorded by the antiquarian Iolo Morganwg, has the oxen of Hu Gadarn perform the same feat, dragging the beast to Llyn Llion after it caused a great flood. In the Mabinogion tale of Peredur, a similar 'Addanc of the Lake' is overcome only when the hero is given a stone that renders the invisible creature visible, allowing him to behead it.\n\nThe legend's staying power is written into the map: Llyn yr Afanc near Betws-y-coed takes its name directly from the creature, and several other lakes claim to be its former lair. The modern Welsh word afanc has since settled down to mean simply 'beaver' — a tame fate for a monster once blamed for floods, drownings, and the deaths of those careless enough to wade into the wrong lake.",
-    "pronunciation": "AH-vank"
+    "pronunciation": "AH-vank",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Afanc",
+      "https://folklorethursday.com/legends/folklore-legends-welsh-lakes-llyn-barfog/",
+      "https://www.historic-uk.com/HistoryUK/HistoryofWales/The-Legend-of-the-River-Conwy-Afanc/"
+    ]
   },
   {
     "name": "Pryderi",
@@ -5870,7 +5887,12 @@
       "northern-ireland",
       "county-antrim"
     ],
-    "detail": "The most enduring legend of Robert the Bruce belongs not to the battlefield but to a cave, where the future King of Scots is said to have hidden at the lowest ebb of his fortunes after defeat by the English. Tradition most often sets the cave on Rathlin Island off the Antrim coast, where Bruce had fled in 1306. Sheltering there, despairing, he watched a spider try again and again to swing a thread across a gap in the rock to anchor its web.\n\nSix times the spider failed, and six times it tried once more, until at last the thread held and the web was begun. Bruce, who had himself been defeated six times, took the spider's persistence as a sign, resolved to fight on, and returned to win back his kingdom — crowned by victory at Bannockburn in 1314. The tale, popularised in the nineteenth century, gave the English-speaking world its proverb of 'if at first you don't succeed, try, try again', and several caves in Scotland and Ireland claim to be the one."
+    "detail": "The most enduring legend of Robert the Bruce belongs not to the battlefield but to a cave, where the future King of Scots is said to have hidden at the lowest ebb of his fortunes after defeat by the English. Tradition most often sets the cave on Rathlin Island off the Antrim coast, where Bruce had fled in 1306. Sheltering there, despairing, he watched a spider try again and again to swing a thread across a gap in the rock to anchor its web.\n\nSix times the spider failed, and six times it tried once more, until at last the thread held and the web was begun. Bruce, who had himself been defeated six times, took the spider's persistence as a sign, resolved to fight on, and returned to win back his kingdom — crowned by victory at Bannockburn in 1314. The tale, popularised in the nineteenth century, gave the English-speaking world its proverb of 'if at first you don't succeed, try, try again', and several caves in Scotland and Ireland claim to be the one.",
+    "sources": [
+      "https://niarchive.org/projectitems/2-bruces-cave/",
+      "https://discoverulsterscots.com/history-culture/robert-bruce-700/king-robert-bruce-and-rathlin-island",
+      "https://discoverulsterscots.com/history-culture/robert-bruce-700/was-it-really-rathlin"
+    ]
   },
   {
     "name": "Witch-hare of Dartmoor",
@@ -5906,7 +5928,12 @@
       "county-armagh"
     ],
     "detail": "Macha is one of three aspects of the Morrígan in Irish mythology, and in her own right a sovereignty goddess of considerable complexity, associated above all with Emain Macha (Navan Fort) in County Armagh. Three distinct figures called Macha appear in the mythological sources, but the most dramatically influential is the pregnant woman of the Ulster Cycle who becomes the origin of one of the great narrative engines of the Táin.\n\nThe story is told in Noínden Ulad, the Debility of the Ulstermen. Macha's husband Crunniuc mac Agnomain boasted at a royal assembly that his wife could outrun the king's fastest horses. King Conchobar mac Nessa insisted on a race to prove it, despite Macha's advanced pregnancy. She begged for delay until the child was born; the king refused. Macha ran and won — but at the finish line she went into labour, and as she gave birth to twins she screamed out her curse on the men of Ulster: that whenever Ulster faced its greatest hour of need, the men of the province would be struck by the pains of childbirth and be prostrate for five days and four nights, as she had been forced to suffer. The place was named Emain Macha — the twins of Macha — in memory of the birth.\n\nThe curse — ces noinden Ulad, the debility of the Ulstermen — is the foundational dramatic premise of the Táin Bó Cúailnge. When Queen Medb of Connacht invades Ulster to seize Donn Cúailnge, every warrior in Ulster is struck down by Macha's curse at the moment of crisis, leaving only the seventeen-year-old Cú Chulainn — exempt because he is not a native Ulsterman — to defend the province alone through a series of single combats. Navan Fort (Scheduled Ancient Monument near Armagh city) was the royal site of Ulster for over a thousand years and the geographical anchor of Macha's legend; its name commemorates the birth that preceded the curse.",
-    "pronunciation": "MOKH-uh"
+    "pronunciation": "MOKH-uh",
+    "sources": [
+      "https://visitarmagh.com/stories/live-our-celtic-myths-legends-in-the-ancient-site-of-navan-fort/the-curse-of-macha/",
+      "https://www.morrigan.academy/blog/curse-of-macha",
+      "https://secretireland.ie/exploring-navan-fort-history-mythology-and-natures-wonder/"
+    ]
   },
   {
     "name": "Abhartach",
@@ -6259,7 +6286,13 @@
       "conwy"
     ],
     "detail": "At St Digain's Church in the Conwy village of Llangernyw stands a yew said to be among the oldest living things in Wales, and with it the tradition of Angelystor — the 'Recording Angel'. On Halloween night, and again on the eve of St John's, a solemn disembodied voice was said to be heard from within the church, naming aloud in Welsh those of the parish who would die in the coming year.\n\nThe best-known story tells of a sceptical local tailor, Siôn Ap Robert, who scoffed at the belief and went to the church on Halloween to disprove it — only to hear his own name called by the Angelystor. He is said to have protested that he was not ready, but died within the year as foretold. The legend bound the parish's reckoning of mortality to its ancient tree and churchyard, a yearly reminder voiced by an unseen angel in the dark.",
-    "pronunciation": "an-geh-LUHS-tor"
+    "pronunciation": "an-geh-LUHS-tor",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Llangernyw_Yew",
+      "https://welshgiftshop.com/blogs/welsh-gift-shop/13921057-llangernyw-yew-the-oldest-tree-in-wales-the-angelystor-spirit",
+      "https://www.atlasobscura.com/places/llangernyw-yew",
+      "https://nation.cymru/culture/top-10-ghosts-wales-black-nun-llangrannog/"
+    ]
   },
   {
     "name": "Gwragedd Annwn",
@@ -6334,7 +6367,12 @@
       "anglesey"
     ],
     "detail": "Barclodiad y Gawres — 'the Giantess's Apronful' — is a fine Neolithic passage tomb on the cliffs of Anglesey, famous for the spiral and zigzag carvings on its stones, and its name preserves a folk explanation for how such a great mound of stones came to be. A giantess, the story runs, was carrying an apronful of stones across the island when the strings of her apron broke, spilling the load — and the scattered heap became the cairn.\n\nThe motif is widespread across Britain and Ireland, where many a chambered cairn, standing stone or boulder field is credited to a giant or giantess who dropped, threw or built it. Such tales reflect the way later generations, finding monuments far older than memory, reached for the only builders vast enough to have raised them. At Barclodiad y Gawres the apron-spill legend gave a homely, human-scaled story to one of Wales's most important prehistoric tombs.",
-    "pronunciation": "bark-LOD-yad uh GOW-ress"
+    "pronunciation": "bark-LOD-yad uh GOW-ress",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Barclodiad_y_Gawres",
+      "https://cadw.gov.wales/visit/places-to-visit/barclodiad-y-gawres-chambered-tomb",
+      "https://www.anglesey-history.co.uk/places/prehistoric-monuments/barclodiad-y-gawres/"
+    ]
   },
   {
     "name": "Wild Edric",
@@ -6673,6 +6711,10 @@
       "road",
       "england",
       "lincolnshire"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Byard%27s_Leap",
+      "https://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MLI89280&resourceID=1006"
     ]
   },
   {
@@ -6903,6 +6945,10 @@
       "curse",
       "love",
       "isle-of-man"
+    ],
+    "sources": [
+      "https://www.transceltic.com/manx/ben-varrey-manx-mermaid-and-story-of-mermaid-and-apple-tree",
+      "https://britishfairies.wordpress.com/tag/ben-varrey/"
     ]
   },
   {
@@ -7205,7 +7251,16 @@
       "sacrifice",
       "death-omen"
     ],
-    "detail": "The earliest hint is a Norman French manuscript noting King John 'was poisoned by a brother of the house' at Swineshead Abbey in October 1216. The legend was first set in print by William Caxton in his Chronicles of England (c.1480) and received its most dramatic retelling in John Foxe's Acts and Monuments (1570), which included a sequence of woodcuts depicting the poisoning in near-comic-strip fashion. In Foxe's version, Brother Simon first obtained absolution from Abbot William, then introduced toad's venom into the king's ale cup; when John grew suspicious, Simon drank from it himself to prove it harmless. Both men died — the monk in his cell, the king days later at Newark Castle on 18–19 October 1216.\n\nAn unusual piece of physical evidence survives near the abbey ruins: a tomb effigy long described as depicting Brother Simon. It shows not a monk but a knight — leading some antiquarians to suggest he may have been a Knight Templar rather than a Cistercian brother, a detail that has never been resolved and adds an additional layer of mystery to the tale.\n\nHistorians are confident John died of dysentery contracted while campaigning in the Fens, and contemporaries like Roger of Wendover make no mention of poison. The legend developed in Protestant England as a morality tale: a treacherous monk willing to die to rid England of a king who had defied the Pope. Henry Winn's verse retelling circulated in Lincolnshire folk tradition, keeping the story vivid locally long after Swineshead Abbey itself crumbled."
+    "detail": "The earliest hint is a 13th-century Norman French manuscript in the British Library, Cotton MS Vitellius A XIII, which notes King John 'was poisoned by a brother of the house' at Swineshead Abbey in October 1216. The legend was first set in print by William Caxton in his Chronicles of England (c.1480) and received its most dramatic retelling in John Foxe's Acts and Monuments (1570), which included a sequence of woodcuts depicting the poisoning in near-comic-strip fashion. In Foxe's version, Brother Simon first obtained absolution from Abbot William, then introduced toad's venom into the king's ale cup; when John grew suspicious, Simon drank from it himself to prove it harmless. Both men died — the monk in his cell, the king days later at Newark Castle on 18–19 October 1216.\n\nAn unusual piece of physical evidence survives near the abbey ruins: a tomb effigy long described as depicting Brother Simon. It shows not a monk but a knight — leading some antiquarians to suggest he may have been a Knight Templar rather than a Cistercian brother, a detail that has never been resolved and adds an additional layer of mystery to the tale.\n\nHistorians are confident John died of dysentery contracted while campaigning in the Fens, and contemporaries like Roger of Wendover make no mention of poison. The legend developed in Protestant England as a morality tale: a treacherous monk willing to die to rid England of a king who had defied the Pope. Henry Winn's verse retelling circulated in Lincolnshire folk tradition, keeping the story vivid locally long after Swineshead Abbey itself crumbled. The abbey site is now a Scheduled Monument.",
+    "sources": [
+      "https://www.lincolnshirelife.co.uk/heritage/king-johns-stay-at-swineshead-abbey/",
+      "https://historicengland.org.uk/listing/the-list/list-entry/1018687",
+      "https://en.wikipedia.org/wiki/Swineshead_Abbey",
+      "https://worcestercathedrallibrary.wordpress.com/2015/09/07/how-did-king-john-die-a-comic-strip-answer/"
+    ],
+    "origin_date": "1216 (the alleged poisoning, during King John's final campaign)",
+    "earliest_record": "13th-century Norman French manuscript, British Library Cotton MS Vitellius A XIII, which records that John 'fuit enpoysóné par une frere de la meson' (was poisoned by a brother of the house)",
+    "period": "High Medieval, 13th century in origin; the fullest tellings are 15th-16th century"
   },
   {
     "name": "Twm Siôn Cati",
@@ -7519,7 +7574,7 @@
     "region": "Pontneddfechan, Neath, Wales",
     "summary": "A limestone crag in the Vale of Neath beneath which King Arthur and his knights sleep in an enchanted cave, surrounded by gold and silver, awaiting the day Britain calls them back. A Welsh traveller once stumbled in, accidentally struck a bell, and was beaten and cast out — never finding the entrance again.",
     "source": "https://www.fforestfawrgeopark.org.uk/understanding/myths-and-legends/the-sleeping-warriors-of-craig-y-ddinas/",
-    "detail": "Craig y Ddinas — the Rock of the Fortress — rises above the village of Pontneddfechan at the head of the Vale of Neath, a striking limestone crag that has drawn to itself one of the most widespread legends in Welsh tradition: the sleeping warriors waiting for their country's darkest hour. In the version attached to this site, a Welshman is led by a wise man through a hidden entrance beneath a broad flat stone into a cavern of vast dimensions. Inside lie thousands of armoured warriors in enchanted sleep, their weapons laid ready, heaps of gold and silver piled around them. At the centre, marked by a golden crown and a battle-axe across his chest, sleeps Arthur himself. The warriors will wake, the legend says, when the Black Eagle and the Golden Eagle go to war — the day when Britain faces its final need.\n\nThe wise man warns the traveller not to strike a bell hanging in the passage. On the way out he stumbles against it. A warrior lifts his head: \"Is it day?\" Following his instructions, the traveller answers \"No, sleep on\" — and escapes with a handful of gold. A second visit ends worse. He forgets the words, the warriors wake in fury, beat him and strip him of everything, and cast him back to the surface. He searches for the entrance for the rest of his life and never finds it again.\n\nThe sleeping king tradition is one of the oldest and most geographically widespread in British folklore, recorded at Cadbury Hill, Sewingshields, Alderley Edge, Eildon Hills, and a dozen other sites. The Craig y Ddinas version was written down by Iolo Morgannwg (Edward Williams, 1747-1826), a Glamorgan stonemason and poet who collected and preserved genuine Welsh lore but was also known to embellish traditions. He described it as \"a popular tale in Glamorgan\", which at minimum suggests it was in circulation in the late 18th century. Whether the Craig y Ddinas attribution predates Iolo is unconfirmed, but the legend's place in the living tradition of the Vale of Neath is well established.",
+    "detail": "Craig y Ddinas — the Rock of the Fortress — rises above the village of Pontneddfechan at the head of the Vale of Neath, a striking limestone crag that has drawn to itself one of the most widespread legends in Welsh tradition: the sleeping warriors waiting for their country's darkest hour. In the version attached to this site, a Welshman is led by a wise man through a hidden entrance beneath a broad flat stone into a cavern of vast dimensions. Inside lie thousands of armoured warriors in enchanted sleep, their weapons laid ready, heaps of gold and silver piled around them. At the centre, marked by a golden crown and a battle-axe across his chest, sleeps Arthur himself. The warriors will wake, the legend says, when the Black Eagle and the Golden Eagle go to war — the day when Britain faces its final need.\n\nThe wise man warns the traveller not to strike a bell hanging in the passage. On the way out he stumbles against it. A warrior lifts his head: \"Is it day?\" Following his instructions, the traveller answers \"No, sleep on\" — and escapes with a handful of gold. A second visit ends worse. He forgets the words, the warriors wake in fury, beat him and strip him of everything, and cast him back to the surface. He searches for the entrance for the rest of his life and never finds it again.\n\nThe sleeping king tradition is one of the oldest and most geographically widespread in British folklore, recorded at Cadbury Hill, Sewingshields, Alderley Edge, Eildon Hills, and a dozen other sites. The earliest substantial print account of the Craig y Ddinas version is Edwin Sidney Hartland's The Science of Fairy Tales (1891), which set down the tale as it circulated from Iolo Morganwg (Edward Williams, 1747–1826), the Glamorgan stonemason and poet who collected genuine Welsh lore but was also known to embellish it. The Welsh scholar Gomer Roberts judged the Arthur version specifically to be Iolo's own early-19th-century addition to an older, plainer fairy-treasure tale about the rock. Wirt Sikes' British Goblins (1880) independently records Craig y Ddinas as a reputed fairy stronghold, with no mention of Arthur at all — evidence that the sleeping-king detail may be Iolo's alone. Whether the Arthurian attribution predates him is unconfirmed, but the legend's place in the living tradition of the Vale of Neath is well established.",
     "date_added": "2026-06-05",
     "tags": [
       "bird",
@@ -7533,7 +7588,14 @@
       "arthurian",
       "wales"
     ],
-    "pronunciation": "KRYG uh THIN-ass"
+    "pronunciation": "KRYG uh THIN-ass",
+    "sources": [
+      "https://www.fforestfawrgeopark.org.uk/understanding/myths-and-legends/the-sleeping-warriors-of-craig-y-ddinas/",
+      "https://www.gutenberg.org/files/24614/24614-h/24614-h.htm"
+    ],
+    "origin_date": "Early 19th century for the Arthur/sleeping-warriors attribution specifically; the site's reputation as a fairy stronghold is older and undated",
+    "earliest_record": "Edwin Sidney Hartland, The Science of Fairy Tales: An Inquiry into Fairy Mythology (1891), which set down the tale as it circulated from Iolo Morganwg (Edward Williams, 1747-1826)",
+    "period": "The Arthur version dates to the Welsh antiquarian/bardic revival of the late 18th-early 19th century"
   },
   {
     "name": "Ashleypark Burial Mound",
@@ -8055,7 +8117,10 @@
       "england",
       "somerset"
     ],
-    "detail": "Arthur is the once and future king of British legend: a war-leader who, in the chaos following the Roman withdrawal, is said to have united the Britons and held back the advancing Saxons through a series of battles culminating in the great victory at Mount Badon. Around this possibly historical figure gathered the richest story-cycle in these islands — the sword drawn from the stone, the fellowship of the Round Table at Camelot, the wizard Merlin, the quest for the Holy Grail, the love of Lancelot and Guinevere, and the final betrayal that brought it all down at the Battle of Camlann.\n\nHe is woven into the landscape from Cornwall to Scotland, but the West Country holds his strongest claims: Glastonbury, identified since the Middle Ages with the Isle of Avalon where the mortally wounded king was carried, and where the monks claimed to have unearthed his grave in 1191. Tradition holds that Arthur never truly died but sleeps beneath a hill with his knights, ready to return in Britain's hour of greatest need. His legend was shaped above all by Geoffrey of Monmouth's 'History of the Kings of Britain' (c.1136) and Sir Thomas Malory's 'Le Morte d'Arthur' (1485), and has never loosened its grip on the imagination since."
+    "detail": "Arthur is the once and future king of British legend: a war-leader who, in the chaos following the Roman withdrawal, is said to have united the Britons and held back the advancing Saxons through a series of battles culminating in the great victory at Mount Badon. Around this possibly historical figure gathered the richest story-cycle in these islands — the sword drawn from the stone, the fellowship of the Round Table at Camelot, the wizard Merlin, the quest for the Holy Grail, the love of Lancelot and Guinevere, and the final betrayal that brought it all down at the Battle of Camlann.\n\nHe is woven into the landscape from Cornwall to Scotland, but the West Country holds his strongest claims: Glastonbury, identified since the Middle Ages with the Isle of Avalon where the mortally wounded king was carried, and where the monks claimed to have unearthed his grave in 1191. Tradition holds that Arthur never truly died but sleeps beneath a hill with his knights, ready to return in Britain's hour of greatest need. His legend was shaped above all by Geoffrey of Monmouth's 'History of the Kings of Britain' (c.1136) and Sir Thomas Malory's 'Le Morte d'Arthur' (1485), and has never loosened its grip on the imagination since.",
+    "origin_date": "Uncertain; if based on a historical figure, likely late 5th to early 6th century",
+    "earliest_record": "Historia Brittonum (c. 828), attributed to Nennius",
+    "period": "Sub-Roman Britain"
   },
   {
     "name": "Knocknakilla",
@@ -8601,7 +8666,16 @@
       "healing",
       "haunting"
     ],
-    "detail": "The legend of Bardney is one of the oldest pieces of Lincolnshire folklore, recorded with precision by the Venerable Bede in his Ecclesiastical History of the English People (c.731 AD). Around 679, Queen Osthryth of Mercia brought the bones of her uncle, the martyred King Oswald of Northumbria, to Bardney Abbey for interment. But the monks — whose house lay in the formerly independent kingdom of Lindsey, once conquered by Oswald — refused to accept the relics of their old enemy. The cart bearing the bier was left outside the monastery gates overnight.\n\nDuring the night, according to Bede, a pillar of light rose from the body of Oswald and blazed upward into the sky, visible across all the surrounding countryside. In the morning the monks declared it a miracle, accepted the relics with full ceremony, and hung the king's purple and gold banner over the tomb. Their penance was public and permanent: they removed the great wooden doors of the abbey and never hung new ones, so that Bardney should always stand open to every pilgrim who came. From this came the Lincolnshire proverb 'Do you come from Bardney?' — still used today to chide anyone who has left a door open.\n\nThe water in which Oswald's bones were washed was poured into a corner of the monastic garden, and Bede records both a miraculous healing of a boy with ague who kept vigil at the tomb and the healing properties of the soil where the washing water fell. Bardney Abbey later became a major Benedictine house before its dissolution in 1538; its ruins and the site of the miraculous light remain in the Lincolnshire landscape."
+    "detail": "The legend of Bardney is one of the oldest pieces of Lincolnshire folklore, recorded with precision by the Venerable Bede in his Ecclesiastical History of the English People (c.731 AD). Around 679, Queen Osthryth of Mercia brought the bones of her uncle, the martyred King Oswald of Northumbria, to Bardney Abbey for interment. But the monks — whose house lay in the formerly independent kingdom of Lindsey, once conquered by Oswald — refused to accept the relics of their old enemy. The cart bearing the bier was left outside the monastery gates overnight.\n\nDuring the night, according to Bede, a pillar of light rose from the body of Oswald and blazed upward into the sky, visible across all the surrounding countryside. In the morning the monks declared it a miracle, accepted the relics with full ceremony, and hung the king's purple and gold banner over the tomb. Their penance was public and permanent: they removed the great wooden doors of the abbey and never hung new ones, so that Bardney should always stand open to every pilgrim who came. From this came the Lincolnshire proverb 'Do you come from Bardney?' — still used today to chide anyone who has left a door open.\n\nThe water in which Oswald's bones were washed was poured into a corner of the monastic garden, and Bede records both a miraculous healing of a boy with ague who kept vigil at the tomb and the healing properties of the soil where the washing water fell. Bardney Abbey later became a major Benedictine house before its dissolution in 1538; its ruins and the site of the miraculous light remain in the Lincolnshire landscape.",
+    "sources": [
+      "https://lincolnshirefolktalesproject.com/2024/02/16/bardney-abbey-oswald-and-the-shaft-of-light/",
+      "https://www.british-history.ac.uk/vch/lincs/vol2/pp97-104",
+      "https://www.ccel.org/ccel/bede/history.v.iii.xi.html",
+      "https://www.mysteriousbritain.co.uk/folklore/bardney-abbey/"
+    ],
+    "origin_date": "c. 679 AD (translation of Oswald's relics to Bardney)",
+    "earliest_record": "Bede, Historia Ecclesiastica Gentis Anglorum, Book III, Chapter 11 (completed c. 731 AD)",
+    "period": "Anglo-Saxon, 7th century"
   },
   {
     "name": "Callanish Standing Stones",
@@ -8734,7 +8808,11 @@
       "shapeshifter",
       "curse"
     ],
-    "detail": "Near Tetford church in the Lincolnshire Wolds, a woman long believed to be a witch was said to have a small hole bored in the wall of her cottage — an opening through which she was seen to pass in the form of a hare, the classic supernatural disguise of a Lincolnshire witch. She had a local reputation for ill-wishing and cursing, and her neighbours held her responsible for bewitching several family members to death.\n\nThe tale was collected by James Alpass Penny and published in Folklore Round Horncastle (Morton & Sons, 1915), making it one of the better-documented witch legends of the county. In Penny's version a hunter encountered an unusual hare that stood its ground and held his gaze before he peppered it with shot. The following day the woman was found at home barely alive, her body covered in wounds or boils that corresponded exactly to every pellet he had fired. A later variant collected locally has a hunter wound a hare in the leg, then discover his own mother at home with a matching injury.\n\nThe witch-as-hare tradition is ancient and widespread across Britain and Ireland, but the Lincolnshire variants recorded by Penny and later retold by Susanna O'Neill in Folklore of Lincolnshire (1992) give it a vivid local character rooted in specific communities and named individuals. The detail of the cottage hole — a deliberate domestic arrangement for shapeshifting — is particularly memorable, suggesting a woman whose supernatural life was as practically organised as her ordinary one."
+    "detail": "Near Tetford church in the Lincolnshire Wolds, a woman long believed to be a witch was said to have a small hole bored in the wall of her cottage — an opening through which she was seen to pass in the form of a hare, the classic supernatural disguise of a Lincolnshire witch. She had a local reputation for ill-wishing and cursing, and her neighbours held her responsible for bewitching several family members to death.\n\nThe tale was collected by James Alpass Penny and published in Folklore Round Horncastle (Morton & Sons, 1915), making it one of the better-documented witch legends of the county. In Penny's version a hunter encountered an unusual hare that stood its ground and held his gaze before he peppered it with shot. The following day the woman was found at home barely alive, her body covered in wounds or boils that corresponded exactly to every pellet he had fired. A later variant collected locally has a hunter wound a hare in the leg, then discover his own mother at home with a matching injury.\n\nThe witch-as-hare tradition is ancient and widespread across Britain and Ireland, but the Lincolnshire variants recorded by Penny and later retold by Susanna O'Neill in Folklore of Lincolnshire (1992) give it a vivid local character rooted in specific communities and named individuals. The detail of the cottage hole — a deliberate domestic arrangement for shapeshifting — is particularly memorable, suggesting a woman whose supernatural life was as practically organised as her ordinary one.",
+    "sources": [
+      "https://lincolnshirefolktalesproject.com/2024/02/20/the-tetford-witch/",
+      "https://tellinghistory.co.uk/content/additional-information-not-included-lincolnshire-folk-tales-maureen-james-published-history"
+    ]
   },
   {
     "name": "Hill of Allen",
@@ -8816,7 +8894,12 @@
       "prophecy",
       "celtic"
     ],
-    "detail": "Within the churchyard of St Brynach's in Nevern, Pembrokeshire, grows one of the most arresting natural phenomena in Welsh folklore: an ancient yew tree, several centuries old, from which a thick blood-red sap seeps continuously from a wound in its bark. The flow has generated three distinct local traditions. One says the tree mourns for a man hanged unjustly in the village. A second holds that the bleeding will not cease until a Welsh prince is seated in nearby Nevern Castle. The third says it weeps until the world is at peace — a condition that gives the tradition an open-ended permanence.\n\nThe churchyard of St Brynach's is an ancient sacred site on a pre-Christian foundation, containing one of the finest early medieval carved crosses in Wales — the Nevern Cross — whose interlace pattern draws on both Irish and Welsh traditions. St Brynach himself is said to have communed with angels on the summit of Carn Ingli, the hill overlooking Newport Bay, and a tradition records that his special bird, a cuckoo, would always come to sing at Nevern before visiting anywhere else in West Wales. The church and its enclosing landscape form one of the richest layered sacred sites in Pembrokeshire.\n\nThe Pembrokeshire Coast National Park documents the bleeding yew as one of the county's most distinctive traditions. The sap itself is a genuine natural phenomenon — a dark resin exudate from the heartwood — and the prosaic explanation does nothing to diminish the legend: the sight of the dark liquid running down ancient bark makes the story feel, for a moment, entirely credible. The three competing narratives give the tree a rare quality: it can be read as mourning, hope, or eschatology depending on the teller."
+    "detail": "Within the churchyard of St Brynach's in Nevern, Pembrokeshire, grows one of the most arresting natural phenomena in Welsh folklore: an ancient yew tree, several centuries old, from which a thick blood-red sap seeps continuously from a wound in its bark. The flow has generated three distinct local traditions. One says the tree mourns for a man hanged unjustly in the village. A second holds that the bleeding will not cease until a Welsh prince is seated in nearby Nevern Castle. The third says it weeps until the world is at peace — a condition that gives the tradition an open-ended permanence.\n\nThe churchyard of St Brynach's is an ancient sacred site on a pre-Christian foundation, containing one of the finest early medieval carved crosses in Wales — the Nevern Cross — whose interlace pattern draws on both Irish and Welsh traditions. St Brynach himself is said to have communed with angels on the summit of Carn Ingli, the hill overlooking Newport Bay, and a tradition records that his special bird, a cuckoo, would always come to sing at Nevern before visiting anywhere else in West Wales. The church and its enclosing landscape form one of the richest layered sacred sites in Pembrokeshire.\n\nThe Pembrokeshire Coast National Park documents the bleeding yew as one of the county's most distinctive traditions. The sap itself is a genuine natural phenomenon — a dark resin exudate from the heartwood — and the prosaic explanation does nothing to diminish the legend: the sight of the dark liquid running down ancient bark makes the story feel, for a moment, entirely credible. The three competing narratives give the tree a rare quality: it can be read as mourning, hope, or eschatology depending on the teller.",
+    "sources": [
+      "https://www.pembrokeshirecoast.wales/about-the-national-park/culture-and-heritage/land-of-legends/nevern/",
+      "https://www.nevern-church.org.uk/the-bleeding-yews/",
+      "https://www.britainexpress.com/attractions.htm?attraction=625"
+    ]
   },
   {
     "name": "Inishbofin White Cow",
@@ -9074,7 +9157,9 @@
     "detail": "Mary Butters (c.1770–c.1850) was a cunning-woman from the Carrickfergus area of County Antrim who practiced folk healing and magical cures, becoming locally celebrated for lifting bewitchments from cattle. Fear that a neighbour's ill-wishing could prevent a cow's milk from churning into butter was widespread in early 19th-century Ulster, and Butters had a well-established reputation for diagnosing and remedying such cases.\n\nOn a Tuesday night in August 1807, farmer Alexander Montgomery brought Butters to his Carnmoney holding to tend his bewitched cow. Following traditional practice, she filled a pot with sweet milk and dropped in crooked nails, pins, and needles, then ordered all windows and doors sealed so that the purifying smoke could work without interruption. She told Montgomery to stand guard outside with his shirt turned inside out. By dawn he returned to find his wife Elizabeth and their son David dead on the floor, with Butters herself and a young servant woman barely alive; they had all been overcome by the toxic fumes of her concoction.\n\nAt the 1808 spring assizes, the jury found that the deaths resulted from accidental suffocation. Unusually for Ireland of the period, the 'Carnmoney Witch' emerged from the episode with her reputation and livelihood largely intact: a comic ballad was written celebrating—or mocking—the affair, and Butters continued to be consulted about bewitched cows and stolen horses. She has an entry in the Oxford Dictionary of National Biography (ed. McGuire & Quinn) and her case is examined in detail by St. John D. Seymour in Irish Witchcraft and Demonology (1913), making her one of the best-documented named cunning-women in 19th-century Irish history.",
     "sources": [
       "https://en.wikipedia.org/wiki/Mary_Butters",
-      "https://irishfolklore.wordpress.com/2022/05/27/irish-witch-trials-the-carnmoney-witch-mary-butters/"
+      "https://irishfolklore.wordpress.com/2022/05/27/irish-witch-trials-the-carnmoney-witch-mary-butters/",
+      "https://sacred-texts.com/pag/iwd/iwd10.htm",
+      "https://www.belfastentries.com/stories/true-stories/the-carnmoney-witch-and-the-bewitched-cow/"
     ]
   },
   {
@@ -9148,7 +9233,14 @@
       "horse",
       "haunting"
     ],
-    "detail": "Black Eric is a dark figure in Shetland folklore, associated with the dramatic cliffs of Fitful Head at the southernmost point of Mainland Shetland. He is described as a hermit living in a sea-cave who survived by sheep-rustling, which he undertook with supernatural assistance: he rode a Tangie—the Shetland and Orcadian water spirit, which appears as a powerful dark horse dripping with seaweed and brine, or as a wild seaweed-clad man—on his nocturnal raids through the crofting townships. The combination of human cunning and supernatural aid made Eric effectively unstoppable, and the fear he generated was such that farmers preferred to leave out offerings rather than risk confrontation.\n\nHis end came when a crofter named Sandy Breamer refused to be intimidated. In their final confrontation at the edge of Fitful Head's cliffs, Eric fell into the sea and was drowned. His heavy iron staff washed ashore afterward and was salvaged as what appeared to be a useful piece of scrap metal, fitted as the spindle of a local watermill. But from that point on, on every Halloween night, the mill became a place of unearthly screams and groaning; witnesses claimed to see the spectral shape of Black Eric himself spinning on the flying millstone. The haunting reached its climax on one Halloween when a storm of supernatural violence tore the mill completely apart and the spindle disappeared back into darkness, never to be found.\n\nThe legend is recorded in George Stewart's Shetland Fireside Tales (1892), one of the principal early collections of Shetland oral tradition, and has been discussed by the Archaeology Shetland project. It connects the figure of Black Eric to the broader tradition of the Tangie—a specifically named Shetland/Orkney water spirit distinct from the more widely known kelpie—which is attested in the Wikipedia article on Tangie and in spookyscotland.net."
+    "detail": "Black Eric is a dark figure in Shetland folklore, associated with the dramatic cliffs of Fitful Head at the southernmost point of Mainland Shetland. He is described as a hermit living in a sea-cave who survived by sheep-rustling, which he undertook with supernatural assistance: he rode a Tangie—the Shetland and Orcadian water spirit, which appears as a powerful dark horse dripping with seaweed and brine, or as a wild seaweed-clad man—on his nocturnal raids through the crofting townships. The combination of human cunning and supernatural aid made Eric effectively unstoppable, and the fear he generated was such that farmers preferred to leave out offerings rather than risk confrontation.\n\nHis end came when a crofter named Sandy Breamer refused to be intimidated. In their final confrontation at the edge of Fitful Head's cliffs, Eric fell into the sea and was drowned. His heavy iron staff washed ashore afterward and was salvaged as what appeared to be a useful piece of scrap metal, fitted as the spindle of a local watermill. But from that point on, on every Halloween night, the mill became a place of unearthly screams and groaning; witnesses claimed to see the spectral shape of Black Eric himself spinning on the flying millstone. The haunting reached its climax on one Halloween when a storm of supernatural violence tore the mill completely apart and the spindle disappeared back into darkness, never to be found.\n\nThe legend is recorded in George Stewart's Shetland Fireside Tales (1892), one of the principal early collections of Shetland oral tradition, and has been discussed by the Archaeology Shetland project. It connects the figure of Black Eric to the broader tradition of the Tangie—a specifically named Shetland/Orkney water spirit distinct from the more widely known kelpie—which is attested in the Wikipedia article on Tangie and in spookyscotland.net.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tangie",
+      "https://en.wikipedia.org/wiki/Fitful_Head",
+      "https://scotlands-stories.com/a-guide-to-shetland-folklore/",
+      "https://www.paranormaldatabase.com/islands/Shetdata.php",
+      "https://www.shetland.org/blog/spooky-tales-from-shetland"
+    ]
   },
   {
     "name": "Bures Dragon",
@@ -9165,7 +9257,14 @@
       "river",
       "battle"
     ],
-    "detail": "The Bures Dragon legend is one of only a handful of medieval English dragon accounts tied to a specific date and locale in a surviving primary chronicle. The story was first recorded in 1405 by Henry de Blaneford, a monk at St Albans Abbey, in his chronicle; the church guidebook at St Mary the Virgin, Bures, identifies this as the probable source. The dragon is described as having a crested head, serrated teeth, a massive body, and a long tail, and it emerged near the village of Bures on the Essex-Suffolk border, close to the River Stour.\n\nLocal men attempted to kill the beast with arrows, but the shafts rebounded harmlessly off its scales. A shepherd and his entire flock were devoured before the villagers managed to drive the creature off. Sir Richard Waldegrave of Bures was credited in some later retellings with eventually slaying or repelling the beast, though the original chronicle gives the impression it simply retreated. Some later versions suggest the dragon fled toward the adjacent hamlet of Wormingford in Essex—whose first element many interpreted as Old English wyrm (dragon or serpent)—though modern etymologists dispute this derivation.\n\nIn 2012, a dragon figure 75 metres by 95 metres was cut into the hillside near Bures as part of the Diamond Jubilee celebrations, creating a new physical landmark for the tradition. The legend has been examined in detail by Atlas Obscura, by C. M. Rosens in a survey of East Anglian dragon folklore, and by the East Anglian Daily Times. It provides Suffolk—an underrepresented county in the current dataset—with a strongly sourced dragon entry rooted in a medieval chronicle."
+    "detail": "The Bures Dragon legend is one of only a handful of medieval English dragon accounts tied to a specific date and locale in a surviving primary chronicle. The story was first recorded in 1405 by Henry de Blaneford, a monk at St Albans Abbey, in his chronicle; the church guidebook at St Mary the Virgin, Bures, identifies this as the probable source. The dragon is described as having a crested head, serrated teeth, a massive body, and a long tail, and it emerged near the village of Bures on the Essex-Suffolk border, close to the River Stour.\n\nLocal men attempted to kill the beast with arrows, but the shafts rebounded harmlessly off its scales. A shepherd and his entire flock were devoured before the villagers managed to drive the creature off. Sir Richard Waldegrave of Bures was credited in some later retellings with eventually slaying or repelling the beast, though the original chronicle gives the impression it simply retreated. Some later versions suggest the dragon fled toward the adjacent hamlet of Wormingford in Essex—whose first element many interpreted as Old English wyrm (dragon or serpent)—though modern etymologists dispute this derivation.\n\nIn 2012, a dragon figure 75 metres by 95 metres was cut into the hillside near Bures as part of the Diamond Jubilee celebrations, creating a new physical landmark for the tradition. The legend has been examined in detail by Atlas Obscura, by C. M. Rosens in a survey of East Anglian dragon folklore, and by the East Anglian Daily Times. It provides Suffolk—an underrepresented county in the current dataset—with a strongly sourced dragon entry rooted in a medieval chronicle.",
+    "sources": [
+      "https://www.atlasobscura.com/places/bures-dragon",
+      "https://en.wikipedia.org/wiki/Bures,_England"
+    ],
+    "origin_date": "1405 (as recorded by Henry de Blaneford in the St Albans Abbey chronicle)",
+    "earliest_record": "Henry de Blaneford's continuation of the St Albans Abbey chronicle, 1405",
+    "period": "Late medieval, early 15th century"
   },
   {
     "name": "Saint Edmund and the Wolf",
@@ -9414,7 +9513,13 @@
       "curse"
     ],
     "detail": "In 1594, Allison Balfour of Stenness was caught up in a political conspiracy: associates of Patrick Stewart, the powerful 2nd Earl of Orkney, accused her of agreeing to use witchcraft against him on their behalf. To extract a confession, the authorities subjected her to forty-eight hours of torture in the caschielawis, a leg-crushing iron frame, while — in a horrifying display of collective punishment — her elderly husband was placed in the 'lang irons', her son was tortured in the boots, and her seven-year-old daughter had her fingers crushed in pilliwinks (thumbscrews) before her eyes.\n\nBroken by the ordeal, Balfour confessed. But on the scaffold, before her execution by strangulation and burning on 16 December 1594, she publicly retracted everything, declaring the confession false and extracted only by torture.\n\nHer case is one of the earliest and most thoroughly documented of Orkney's witch trials, cited repeatedly by historians such as Julian Goodare as a textbook example of how torture, politics, and the witch-hunting frenzy combined to destroy an entire family. The Orkney Heritage Society's witchcraft trial memorial in Kirkwall now commemorates her alongside Orkney's other victims.",
-    "date_added": "2026-06-10"
+    "date_added": "2026-06-10",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Allison_Balfour",
+      "https://orkneyheritagesociety.org.uk/projects/orkney-witchcraft-trial-memorial/history-of-witchcraft-trials-in-orkney/",
+      "https://www.executedtoday.com/2007/12/16/1594-alison-balfour/",
+      "https://en.wikipedia.org/wiki/Witchcraft_in_Orkney"
+    ]
   },
   {
     "name": "Janet Forsyth, the Westray Storm Witch",
@@ -10139,7 +10244,11 @@
       "wales",
       "gwynedd"
     ],
-    "detail": "In the folklore of the Llanberis Pass, Canthrig Bwt was a giantess who was also a witch — a figure feared throughout the district around Nant Peris for her taste for children. Tradition places her lair beneath a great stone close to Pont-y-Cromlech, the old bridge partway along the pass, where she was said to lie in wait for unwary youngsters.\n\nAccording to the story, Canthrig had sold her soul to the devil and developed a particular appetite for the brains of children, snatching victims from the surrounding farms until a number had disappeared. Eventually a young man came forward to confront her, arming himself with an iron sword and securing the blessing of both a Christian monk and a 'white' (benevolent) witch before going after her.\n\nThe confrontation ended with Canthrig seized by the arm and beheaded with a sickle; she is said to have been buried afterwards near a place called Tir Coch, not far from Llanberis. The tale, sometimes dated by storytellers to the fourth century, remains one of the best-known pieces of 'cannibal witch' folklore in Gwynedd, and Pont-y-Cromlech is still pointed out to walkers in the pass as her former haunt."
+    "detail": "In the folklore of the Llanberis Pass, Canthrig Bwt was a giantess who was also a witch — a figure feared throughout the district around Nant Peris for her taste for children. Tradition places her lair beneath a great stone close to Pont-y-Cromlech, the old bridge partway along the pass, where she was said to lie in wait for unwary youngsters.\n\nAccording to the story, Canthrig had sold her soul to the devil and developed a particular appetite for the brains of children, snatching victims from the surrounding farms until a number had disappeared. Eventually a young man came forward to confront her, arming himself with an iron sword and securing the blessing of both a Christian monk and a 'white' (benevolent) witch before going after her.\n\nThe confrontation ended with Canthrig seized by the arm and beheaded with a sickle; she is said to have been buried afterwards near a place called Tir Coch, not far from Llanberis. The tale, sometimes dated by storytellers to the fourth century, remains one of the best-known pieces of 'cannibal witch' folklore in Gwynedd, and Pont-y-Cromlech is still pointed out to walkers in the pass as her former haunt.",
+    "sources": [
+      "https://visitnorthwales.co.uk/the-cannibal-witch-of-llanberis/",
+      "https://www.mysteriousbritain.co.uk/folklore/canrig-bwt/"
+    ]
   },
   {
     "name": "Isobel Gowdie",
@@ -10536,7 +10645,14 @@
       "death-omen",
       "wales",
       "gwynedd"
-    ]
+    ],
+    "sources": [
+      "https://rcahmw.gov.uk/bedd-dorti-a-legendary-witchs-grave/",
+      "https://coflein.gov.uk/en/site/800208"
+    ],
+    "origin_date": "17th century (traditional; the event itself is not precisely dated in any surviving record)",
+    "earliest_record": "W. J. Hemp's 1943 note to the Royal Commission on the Ancient and Historical Monuments of Wales, preserved in the RCAHMW/Coflein record (NPRN 800208)",
+    "period": "17th century (traditional setting); earliest written record 20th century"
   },
   {
     "name": "The Witch of East Somerton",
@@ -12465,7 +12581,8 @@
     "source": "https://en.wikipedia.org/wiki/Limavady",
     "sources": [
       "https://en.wikipedia.org/wiki/Limavady",
-      "https://www.connollycove.com/limavady/"
+      "https://www.connollycove.com/limavady/",
+      "https://nationalpurebreddogday.com/the-legendary-dog-leap/"
     ],
     "date_added": "2026-06-28",
     "tags": [
@@ -12495,6 +12612,695 @@
       "music",
       "scotland",
       "arran"
+    ]
+  },
+  {
+    "name": "Betty Wells, the Witch of Kirton in Lindsey",
+    "lat": 53.478,
+    "lng": -0.585,
+    "category": "witch",
+    "region": "Kirton in Lindsey, Lincolnshire, England",
+    "summary": "An elderly neighbour swore for decades that Betty Wells was a 'real witch' — a belief villagers still repeated a century after her supposed heyday.",
+    "source": "https://lincolnshirefolktalesproject.com/2025/06/30/the-village-behind-the-folklore/",
+    "detail": "In the village of Kirton in Lindsey, folklorist Ethel Rudkin (Mrs 'Peter' Rudkin), the pioneering Lincolnshire archaeologist and writer, collected first-hand testimony about a reputed witch named Betty Wells. A neighbour, Jenny Andrew, insisted to Rudkin that Betty had been a 'real witch', a conviction that reportedly persisted among villagers into the 1930s — nearly a century after Betty's supposed period of activity in the 1830s. The tale is notable less for a single dramatic incident than for the durability of village conviction: an ordinary woman's reputation for witchcraft outliving her by generations, passed down as accepted local fact rather than a story told for entertainment.\n\nRudkin's fieldwork in and around Kirton in Lindsey, later distilled into her academic article 'Lincolnshire Folklore: Witches and Devils' (Folklore journal, 1934) and her landmark 1936 book Lincolnshire Folklore, is among the most respected primary sources for the county's witch-belief, built from real conversations with villagers rather than secondhand retellings. Kirton in Lindsey's folklore is further coloured by its 'Boggle' of Low Road — a distinct, unfriendly spirit said to haunt a sunken lane on the edge of the village — showing a community with a genuinely active supernatural tradition beyond Betty's case alone.\n\nTogether these anecdotes illustrate how deeply and specifically English witch-belief persisted into living memory in rural Lincolnshire, long after the county's formal witchcraft prosecutions had ended.",
+    "date_added": "2026-08-05",
+    "tags": [
+      "england",
+      "lincolnshire",
+      "haunting"
+    ],
+    "sources": [
+      "https://lincolnshirefolktalesproject.com/2025/06/30/the-village-behind-the-folklore/",
+      "https://en.wikipedia.org/wiki/Ethel_Rudkin"
+    ]
+  },
+  {
+    "name": "Marion Pardone, the Witch of Scalloway",
+    "lat": 60.1339,
+    "lng": -1.2814,
+    "category": "witch",
+    "region": "Scalloway, Shetland, Scotland",
+    "summary": "Accused of drowning four fishermen off Hillswick while disguised as a porpoise, Marion Pardone was strangled and burned on the hill above Scalloway in 1644.",
+    "source": "https://www.shetland.org/blog/da-fateful-tale-o-marion-pardone-witchcraft-in-shetland",
+    "detail": "Marion Pardone was tried for witchcraft in Shetland in 1644, one of dozens of islanders swept up in the Scottish witch trials that followed the 1563 Witchcraft Act. Her surviving trial papers, held at Shetland Archives, run to some ten pages of accusations: cursing named individuals, spoiling brewing, contaminating cows' milk, consorting with the devil alongside another accused witch, and — most strikingly — drowning four fishermen in fair weather off the shore at Hillswick while disguised in the shape of a porpoise. She was also said never to have learned the Lord's Prayer in her life, a common mark of suspicion in Scottish witch trials.\n\nAs supposed proof of her guilt, Marion and her husband Swane were brought, days after the drowning, to touch the recovered bodies of the dead fishermen; one corpse was reported to bleed afresh at the collarbone, hands and fingers in her presence, taken at the time as a supernatural sign of her responsibility for the deaths. She was convicted, then strangled and burned on the hill above Scalloway, Shetland's former capital — the same fate met by several other accused Shetlanders of the period, including Andrew 'Luggie' Stephenson, executed at around the same time.\n\nMarion's case is one of many documented in Shetland Museum & Archives' record of the islands' witch trials, and her story has since been revisited in a modern radio play examining how testimony and rumour could be twisted into a capital charge. In 2024 a memorial to the victims of Shetland's witch trials was unveiled on Scalloway's Gallow Hill, the same site where Marion is recorded to have died.",
+    "date_added": "2026-08-05",
+    "tags": [
+      "scotland",
+      "shetland",
+      "curse",
+      "drowning",
+      "sea"
+    ],
+    "sources": [
+      "https://www.shetland.org/blog/da-fateful-tale-o-marion-pardone-witchcraft-in-shetland",
+      "https://www.shetlandmuseumandarchives.org.uk/blog/shetland-witches"
+    ]
+  },
+  {
+    "name": "Haltadans, the Petrified Trows of Fetlar",
+    "lat": 60.6136,
+    "lng": -0.8908,
+    "category": "fairy",
+    "region": "Fetlar, Shetland, Scotland",
+    "summary": "A stone circle on Fetlar marks the spot where a band of trows danced so wildly to a captured fiddler's tune that dawn caught and turned them all to stone.",
+    "source": "https://en.wikipedia.org/wiki/Trow_(folklore)",
+    "detail": "On the small Shetland island of Fetlar stands a low stone circle known as the Haltadans, Shetland dialect for 'limping dance'. According to island tradition, the stones are the petrified remains of a band of trows — the mischievous, sometimes giant-like fairy folk of Orkney and Shetland lore — caught by daylight after a night of wild revelry. The story tells how the trows dragged a human fiddler into their circle at the height of a summer night and forced him to play tune after tune, growing wilder with every reel; the trows danced their distinctive 'henking' step, hopping on bent legs with hands locked between knees and calves, moving strangely to human eyes yet keeping perfect time with the music. So absorbed were they in the dance that they failed to notice the approach of dawn, and were turned to stone where they stood — the ring of stones said to be the trows themselves, with two outlying stones representing the fiddler and his wife.\n\nThe name Haltadans was recorded and analysed by the Faroese-Danish philologist Jakob Jakobsen during his pioneering survey of Shetland place-names and dialect at the turn of the twentieth century, who linked the 'limping' element of the name to the traditional belief that trows and fairies danced with an awkward, halting gait. The site sits within a broader Shetland tradition of trow-lore, in which trows are variously described as monstrous giants or as small grey-clad fairy folk, and are blamed for everything from mischief to outright peril for anyone who lingers too long near their mounds after dark.\n\nThe Haltadans remains a rare case of a British stone circle whose name and associated legend were transmitted together through direct oral and etymological record, rather than being a modern label applied to an unexplained monument.",
+    "date_added": "2026-08-05",
+    "tags": [
+      "scotland",
+      "shetland",
+      "standing-stones",
+      "transformation"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Trow_(folklore)",
+      "https://blog.geolsoc.org.uk/2015/12/09/funzie-and-the-trows-of-shetland/",
+      "https://www.shetland.org/visit/areas/fetlar"
+    ]
+  },
+  {
+    "name": "John Olliver, the Miller of Highdown Hill",
+    "lat": 50.8236,
+    "lng": -0.4256,
+    "category": "pirate",
+    "region": "Highdown Hill, Ferring, Sussex, England",
+    "summary": "A Sussex windmiller built his own tomb 27 years before he died, then reputedly used it to store contraband while signalling smugglers with his sails.",
+    "source": "https://www.tandfonline.com/doi/abs/10.1080/00155870500140230",
+    "detail": "John Olliver was the miller of Highdown Hill, near Worthing on the Sussex coast, in the late eighteenth century. Around 1766, some 27 years before his eventual death in 1793, Olliver had an elaborate tomb built for himself on the hilltop beside his windmill, reportedly keeping the coffin under his own bed for years before he needed it — a piece of eccentricity that made him a local celebrity in his own lifetime, with visitors said to have come from across the region to see the tomb of the miller who had prepared for his own death decades early.\n\nLocal tradition holds that Olliver was also the leader of a gang of local smugglers, using the elevated position of his windmill to watch for revenue officers and setting the angle of his mill's sails as a coded signal to smuggling vessels working the coast below, warning them whether it was safe to land contraband. The tomb itself was said to double as a hiding place for smuggled goods, its raised, monument-like structure providing cover that an ordinary shed would not. A later popular embellishment held that Olliver asked to be buried upside down so that he would be the right way up when the world turned over at the end of days — a detail modern folklorists believe was borrowed from the unrelated and genuinely upside-down grave of Major Peter Labilliere on Box Hill, and mistakenly attached to Olliver's story.\n\nOlliver's tomb and its associated legend have been the subject of sustained antiquarian and academic interest, including a dedicated study in the journal Folklore ('The Miller's Tomb: Facts, Gossip and Legend'), which traces how the historical miller and his real burial monument accumulated smuggling lore and increasingly exaggerated detail over the two centuries since his death — making it an unusually well-documented example of how a smuggling reputation can attach itself to a real, identifiable person and monument.",
+    "date_added": "2026-08-05",
+    "tags": [
+      "england",
+      "sussex",
+      "hill",
+      "trickery"
+    ],
+    "sources": [
+      "https://www.tandfonline.com/doi/abs/10.1080/00155870500140230",
+      "https://www.mysteriousbritain.co.uk/folklore/millers-tomb/",
+      "https://en.wikipedia.org/wiki/Highdown_Hill"
+    ]
+  },
+  {
+    "name": "Benlli Gawr, the Tyrant of Foel Fenlli",
+    "lat": 53.0886,
+    "lng": -3.3286,
+    "category": "giant",
+    "region": "Foel Fenlli, Denbighshire, Wales",
+    "summary": "A tyrant giant-king of Powys who turned away a wandering saint was consumed, with his entire hillfort, by fire that fell from heaven that same night.",
+    "source": "https://en.wikipedia.org/wiki/Benlli",
+    "detail": "Benlli Gawr ('Benlli the Giant') appears in the earliest layer of Welsh legendary history as a cruel and tyrannical king ruling part of Powys in the early fifth century, based at the hillfort now known as Foel Fenlli in the Clwydian Range of Denbighshire, which still bears his name. His story is preserved in the ninth-century Historia Brittonum, traditionally attributed to the Welsh monk Nennius, making it one of the oldest recorded Welsh giant-legends rather than a later folk invention.\n\nAccording to the Historia, Saint Germanus of Auxerre travelled to Benlli's court seeking hospitality and was refused entry, left to wait outside as night fell. Only one of Benlli's household, a servant named Cadell, took pity on the saint and secretly brought him food and shelter; Germanus, recognising Cadell's piety, warned him to leave the tyrant's fortress before it was too late. That same night, fire fell from heaven and consumed Benlli's fortress along with the king and his entire household — 'so that not one escaped', in the words of the Historia — while Cadell, spared for his kindness to the saint, was said to go on to found a new royal line in Powys.\n\nThe tale functions as an origin myth explaining both the fiery destruction implied by the hillfort's dramatic hilltop position and the legitimacy of later Powys kings claiming descent from the pious Cadell rather than the destroyed tyrant. Foel Fenlli's Iron Age hillfort remains, later reoccupied in the early medieval period, still crown the hill today, giving the legend an unusually direct and visitable physical setting.",
+    "date_added": "2026-08-05",
+    "tags": [
+      "wales",
+      "denbighshire",
+      "hill",
+      "celtic"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Benlli",
+      "https://en.wikipedia.org/wiki/Foel_Fenlli",
+      "https://www.mythslegendsodditiesnorth-east-wales.co.uk/benlli-gawr"
+    ]
+  },
+  {
+    "name": "Melangell and the Hare",
+    "lat": 52.8383,
+    "lng": -3.4547,
+    "category": "hero",
+    "region": "Pennant Melangell, Powys, Wales",
+    "summary": "A hare fled beneath a hermit princess's skirts to escape the hounds of a Powys prince, who was so struck by her courage that he gifted her the whole valley as a sanctuary.",
+    "source": "https://en.wikipedia.org/wiki/Melangell",
+    "detail": "Melangell was a seventh-century Irish princess who, according to her medieval Historia, fled to Wales rather than accept an arranged marriage, settling as a hermit in a remote valley of Powys now known as Pennant Melangell. She lived alone there for fifteen years in prayer and solitude until Brochwel Ysgithrog, the ruling prince of Powys, arrived in the valley while hunting a hare. As his hounds closed in, the hare ran to Melangell and hid beneath the folds of her cloak; when Brochwel urged the dogs on, they fled howling, unable to approach her, and his hunting horn stuck fast to his lips so that he could not sound it again.\n\nStruck by what he had witnessed, Brochwel granted Melangell the entire valley as a permanent place of sanctuary and asylum, declaring that anyone who took refuge there — human or animal — should never be pursued or harmed. Melangell went on to found a small community of women at the site and lived a further thirty-seven years in the valley, during which hares were said to gather fearlessly around her as tame companions; she became venerated as the patron saint of hares and small wild creatures, and local tradition held for centuries afterward that hares in the parish should never be hunted, being known locally as 'Melangell's lambs'.\n\nA twelfth-century church, St Melangell's, was built over her supposed grave at Pennant Melangell and remains a place of pilgrimage to this day, housing what is believed to be the oldest Romanesque shrine still standing in its original location in Britain. The valley's remoteness and the shrine's continuous use as a pilgrimage site over nearly a thousand years give the legend an unusually well-preserved physical and devotional record for a Welsh saint's tale of this age.",
+    "date_added": "2026-08-05",
+    "tags": [
+      "wales",
+      "powys",
+      "hare",
+      "guardian",
+      "celtic"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Melangell",
+      "https://www.nationalchurchestrust.org/church/st-melangell-pennant-melangell",
+      "https://stmelangell.org/saint-melangell/"
+    ]
+  },
+  {
+    "name": "Mount Killaraus and the Giant's Dance",
+    "lat": 53.5289,
+    "lng": -7.5697,
+    "category": "giant",
+    "region": "Hill of Uisneach, County Westmeath, Ireland",
+    "summary": "Merlin is said to have torn a giant-built stone circle called the Giant's Dance from an Irish hilltop and shipped it to Britain — where it was raised again as Stonehenge.",
+    "source": "https://en.wikipedia.org/wiki/Mount_Killaraus",
+    "detail": "The earliest known written legend of Stonehenge's origin comes not from Britain but from Ireland. In Geoffrey of Monmouth's twelfth-century Historia Regum Britanniae, King Aurelius Ambrosius wants to raise a permanent memorial over the graves of British nobles treacherously slain by the Saxons, but no mason of the day can build anything worthy of the dead. The wizard Merlin tells him of a stone circle called the Giant's Ring, or Giant's Dance, standing on Mount Killaraus in Ireland — stones with healing and magical properties, said to have originally been carried from Africa by giants and set up on the mountain by their own strength, beyond the power of any living man to move.\n\nAmbrosius sends his brother Uther Pendragon (father of the future King Arthur) to Ireland with fifteen thousand men to seize the stones. The Irish king Gillomanius raises an army to stop them, mocking the Britons for thinking they need Irish stones when they have plenty of their own, but is defeated in battle. When the Britons try to shift the huge stones by main force and fail, Merlin steps in with his own devices and 'engines', dismantling the circle and loading the stones onto ships. Carried back across the sea, the stones are re-erected on Salisbury Plain in exactly the pattern they had stood on Killaraus, becoming Stonehenge.\n\nThe Latin name mons Killaraus is generally read by scholars as 'the hill of Killare', pointing to the Hill of Uisneach in County Westmeath, a real hill long regarded as the ceremonial and mythological centre of Ireland and covered in genuine prehistoric monuments, including its own large stone, the Cat Stone (Ail na Míreann). While Geoffrey's history is treated by modern scholars as legendary rather than factual, the tale gained an unexpected real-world echo in 2021 when archaeologist Mike Parker Pearson's team found evidence that part of Stonehenge's bluestones had first stood as a stone circle at Waun Mawn in Wales's Preseli Hills before being dismantled and moved — a genuine prehistoric stone-circle relocation eerily close to the shape of the medieval legend, even if the specific Irish origin recorded by Geoffrey has never been archaeologically confirmed.",
+    "date_added": "2026-08-05",
+    "tags": [
+      "ireland",
+      "county-westmeath",
+      "standing-stones",
+      "hill",
+      "arthurian"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mount_Killaraus",
+      "https://en.wikipedia.org/wiki/Giant%27s_Dance",
+      "https://irishmyths.com/2024/08/19/irish-stonehenge/",
+      "https://www.westmeathindependent.ie/2024/08/26/stonehenge-research-a-reminder-of-ancient-claim-of-uisneach-links/"
+    ]
+  },
+  {
+    "name": "The Cooneen Ghost",
+    "lat": 54.32,
+    "lng": -7.3,
+    "category": "ghost",
+    "region": "Cooneen (Cornarooslan townland), County Fermanagh, Northern Ireland",
+    "summary": "After Michael Murphy died in 1907, his widow's cottage near Brookeborough erupted into decades of knocking, flying dishes, and levitating beds — one of Ireland's best-documented poltergeist cases.",
+    "source": "https://www.belfastentries.com/stories/cooneen-ghost/",
+    "detail": "Michael Murphy of Cornarooslan townland, near Brookeborough, died from a head injury on 7 November 1907, leaving his pregnant wife Bridget with what would become eight children on a modest farm. Not long after, the family began reporting disembodied knocking and footsteps in the loft, followed by escalating disturbances: crockery flying across rooms, bedsteads lifting off the floor, and unexplained music. Two exorcisms performed around 1910-1912 by Fr Eugene Coyle, with the bishop's own permission, failed to quiet the house, and local MP Cahir Healy is recorded among those who witnessed the phenomena firsthand.\n\nOstracised and desperate, Bridget emigrated to America with her children in 1913 — but the disturbances reportedly followed them aboard ship, with the captain himself reporting strange noises during the crossing. One daughter is said to have spent the rest of her life in an American institution, her trauma blamed on the years of upheaval. The case is unusually well anchored in the historical record: the 1901 and 1911 Irish censuses confirm the family, and Michael's death certificate corroborates the fatal injury.\n\nThe abandoned cottage lay hidden under overgrowth for decades until forestry clearing exposed it again in 2016, and it remains a site of local pilgrimage and paranormal interest, including a 2010 BBC-featured investigation.",
+    "date_added": "2026-08-05",
+    "tags": [
+      "northern-ireland",
+      "county-fermanagh",
+      "haunting"
+    ],
+    "sources": [
+      "https://www.belfastentries.com/stories/cooneen-ghost/",
+      "https://www.fermanaghroots.com/wiki/index.php?title=Cooneen_Ghost",
+      "https://crypticinquiry.com/2023/07/05/the-cooneen-ghost/"
+    ]
+  },
+  {
+    "name": "The Black Nun of Bonamargy",
+    "lat": 55.202,
+    "lng": -6.231,
+    "category": "ghost",
+    "region": "Bonamargy Friary, Ballycastle, County Antrim, Northern Ireland",
+    "summary": "Julia McQuillan, the recluse who lived among Bonamargy Friary's ruins in her black cloak, foretold a river running red and a burning ship heralding Irish freedom — prophecies locals say came true.",
+    "source": "https://antrimhistory.net/whats-that-black-nuns-grave-at-bonamargy-friary-ballycastle/",
+    "detail": "Julia McQuillan chose to live alone in the ruins of Bonamargy Friary near Ballycastle after the friary fell into disuse, earning the name \"the Black Nun\" for the dark habit she wore. Tradition credits her with the gift of prophecy: she is said to have foretold that the Tow River would one day run red, a claim locals connect to an accident two centuries later when a mill worker was dragged through a water wheel and stained the stream with his blood. She is also said to have predicted that two standing stones four miles apart, at Carnduff and Barnish, would eventually be joined, and that Ballycastle would learn of Irish independence when a ship entered the bay with its sails ablaze.\n\nBefore her death she asked, as an act of humility, to be buried at the friary's ruined west doorway so that everyone entering would walk over her grave — and a holed disc-headed cross still marks the spot today. Her story has become a fixture of Antrim ghost-lore, with the friary described locally as haunted by her spirit, and she has her own dedicated local-history site and appears in regional heritage press coverage.",
+    "date_added": "2026-08-05",
+    "tags": [
+      "northern-ireland",
+      "county-antrim",
+      "prophecy",
+      "haunting",
+      "church"
+    ],
+    "sources": [
+      "https://antrimhistory.net/whats-that-black-nuns-grave-at-bonamargy-friary-ballycastle/",
+      "https://www.theblacknun.com/",
+      "https://www.findagrave.com/memorial/13696899/julia-mcquillan"
+    ]
+  },
+  {
+    "name": "The White Trout of Cong",
+    "lat": 53.5417,
+    "lng": -9.2835,
+    "category": "water",
+    "region": "Cong, County Mayo, Connacht, Ireland",
+    "summary": "A noblewoman whose betrothed was murdered and thrown into a Cong lake vanished after him — and reappeared forever after as a white trout that bleeds when cut and heals when returned to the water.",
+    "source": "https://www.sacred-texts.com/neu/celt/lasi/lasi06.htm",
+    "detail": "According to the tale as collected by Samuel Lover from local storytellers and later reprinted by W. B. Yeats in his 1888 anthology of Irish peasant folklore, a beautiful young woman near Cong was promised in marriage to a king's son. When her betrothed was murdered and his body thrown into the lake, grief drove her out of her mind, and she disappeared — swallowed, tradition says, by the fairies who followed him into the water. From that day a white trout appeared in the lake and was never caught, since the people came to believe it was no ordinary fish.\n\nThe legend's most vivid episode concerns a soldier who caught the trout regardless and set it in a frying pan to cook. No matter how long he cooked it, the fish would not brown — until he cut into it with a knife, at which point it screamed, leapt from the pan, and became a bleeding woman in white and gold, who rebuked him for the wound before asking to be returned to the water. When he threw the trout back, the lake ran red for a time, and the fish is said to carry the scar of the cut to this day.\n\nThe tale is one of the most frequently anthologised pieces of Connacht folklore, distinct from — though sometimes confused with — the region's separate Dobhar-chú legend from County Leitrim.",
+    "date_added": "2026-08-05",
+    "tags": [
+      "ireland",
+      "county-mayo",
+      "fish",
+      "lake",
+      "transformation"
+    ],
+    "sources": [
+      "https://www.sacred-texts.com/neu/celt/lasi/lasi06.htm",
+      "https://www.mayo-ireland.ie/en/about-mayo/arts-culture/tales-visions-beliefs/the-white-trout.html",
+      "https://sacred-texts.com/neu/yeats/fip/fip11.htm"
+    ]
+  },
+  {
+    "name": "The Hogboon of Helliehow",
+    "lat": 59.25,
+    "lng": -2.567,
+    "category": "fairy",
+    "region": "Sanday, Orkney, Scotland",
+    "summary": "A mound-dwelling guardian spirit kept Helliehow farm prosperous for generations in exchange for offerings of milk and ale — until a disrespectful new wife let the farm fall to ruin.",
+    "source": "https://brodgar.co.uk/2016/04/24/the-hogboon-of-helliehow/",
+    "detail": "The hogboon (from Old Norse haug-búi, \"mound-dweller\") is Orkney's name for a family guardian spirit believed to live in an earthen mound beside a farm. At Helliehow, a farm on the island of Sanday, tradition held that the resident hogboon protected the household and ensured good fortune so long as the family shared its produce with him — pouring milk or ale over his mound and leaving butter and bannocks as offerings after a birth or marriage.\n\nThe story's turning point comes when a new wife arrives at Helliehow and refuses to keep up the old customs, withholding the hogboon's due. The farm's fortunes collapse soon after and it falls into ruin, told locally as a cautionary demonstration of what happens when the old obligations to the mound-spirit are broken. The tale belongs to a wider Orcadian tradition of named hogboons tied to specific farms (a similar figure is recorded at Maeshowe itself, described in an 1862 antiquarian account as a supernaturally strong \"person named Hogboy\"), but the Helliehow version is one of the best-preserved individual accounts, having been collected in published local folklore anthologies.",
+    "date_added": "2026-08-05",
+    "tags": [
+      "scotland",
+      "orkney",
+      "guardian",
+      "barrow"
+    ],
+    "sources": [
+      "https://brodgar.co.uk/2016/04/24/the-hogboon-of-helliehow/",
+      "https://spookyscotland.net/hogboon/",
+      "https://www.orcadian.co.uk/shop/folklore-and-myth/45-the-hogboon-of-hellihowe.html"
+    ]
+  },
+  {
+    "name": "The Giant Snake of Penhesgyn",
+    "lat": 53.2465,
+    "lng": -4.2351,
+    "category": "dragon",
+    "region": "Penmynydd, Anglesey, Wales",
+    "summary": "A venomous giant viper terrorised a Penmynydd farm until a villager tricked it into striking its own reflection in a polished brass pan — but a fortune-teller's prophecy still claimed a life.",
+    "source": "https://www.anglesey-today.com/the-giant-snake-of-penhesgyn-an-old-anglesey-legend.html",
+    "detail": "Tradition tells of a huge, poisonous serpent that took up residence in the wilder corners of Penhesgyn farm, in the parish of Penmynydd on Anglesey, terrorising the local community with its size and venom. A fortune teller warned the farm's owners that the snake would kill their only son, so the family sent him away to England for safety.\n\nA local villager devised a trick to be rid of the creature: he dug a deep pit and set within it a large, shallow brass pan, polished until it shone like a mirror. Mistaking its own reflection for a rival, the viper attacked the pan again and again until it had exhausted itself and spent its venom, at which point the villager killed it with a single blow. The prophecy proved impossible to escape, though: years later the son returned home, visited the burial spot, and contemptuously kicked the serpent's skull — a splinter of which pierced his thin shoe and delivered a final dose of venom that killed him within hours.\n\nThe tale is a distinctively local variant of Wales's broader serpent-and-dragon folklore (echoing the Dinas Emrys tradition), and it is recorded independently in both a dedicated Anglesey local-history site and a folklore blog.",
+    "date_added": "2026-08-05",
+    "tags": [
+      "wales",
+      "anglesey",
+      "serpent",
+      "prophecy"
+    ],
+    "sources": [
+      "https://www.anglesey-today.com/the-giant-snake-of-penhesgyn-an-old-anglesey-legend.html",
+      "https://www.icysedgwick.com/anglesey-folklore/"
+    ]
+  },
+  {
+    "name": "St Botolph and the Devil",
+    "lat": 52.976,
+    "lng": -0.0224,
+    "category": "hero",
+    "region": "Boston, Lincolnshire, England",
+    "summary": "The Devil, cornered by St Botolph at his new seventh-century chapel, could only huff and puff in fury — and the whirlwind around \"Boston Stump\" is said never to have entirely subsided since.",
+    "source": "https://lincolnshirefolktalesproject.com/2024/02/20/st-botolph-the-devil/",
+    "detail": "According to an account first printed in Roger Quaint's 1841 Traditions of Lincolnshire, St Botolph — who founded a chapel at Boston in the seventh century — grew briefly proud of his achievement, a weakness the Devil moved to exploit. Botolph recognised the temptation for what it was and confronted Satan directly; the ensuing struggle was so one-sided that \"the poor devil puffed and blowed so violently as to raise a whirlwind, which has never since entirely subsided.\"\n\nThe legend survives today as a piece of living folk-explanation: the exposed footpath beside St Botolph's parish church tower — universally known as \"Boston Stump\" — is one of the windiest spots in the churchyard, and locals still attribute the gusts to the Devil's furious, unending exhalation. The Paranormal Database independently records the same tradition under its Lincolnshire devil-lore entries, describing the winds as \"the Devil's breath.\"\n\nThe tale sits alongside a small cluster of Lincolnshire saint-versus-devil stories, including the Lincoln Imp and the curse laid on Crowland Abbey, and follows the same pattern as other English \"the Devil is thwarted by a local holy man\" legends already on the map, such as Dunstan and the Devil.",
+    "date_added": "2026-08-05",
+    "tags": [
+      "england",
+      "lincolnshire",
+      "church"
+    ],
+    "sources": [
+      "https://lincolnshirefolktalesproject.com/2024/02/20/st-botolph-the-devil/",
+      "https://www.paranormaldatabase.com/lincolnshire/lincdata.php"
+    ]
+  },
+  {
+    "name": "The Binbrook Bewitched Farm (1905)",
+    "lat": 53.446,
+    "lng": -0.201,
+    "category": "witch",
+    "region": "Binbrook, Lincolnshire, England",
+    "summary": "Flying sausages, a dead rabbit that kept coming back to its hook, and a wagon six horses couldn't shift — the 1905 \"witching\" of Walk Farm made national news before the trail went cold.",
+    "source": "https://aboutalford.com/2022/10/30/witchcraft-in-the-wolds/",
+    "detail": "In the winter of 1904-1905, foreman Henry White and his wife Sarah Jane, tenants of Walk Farm near Binbrook on the Lincolnshire Wolds, reported an escalating run of inexplicable events: potted plants tilting and righting themselves on the windowsill, a dead rabbit that detached itself from a hook, ran about, and returned to the hook, and brooms that came \"dancing\" across the floor at dinnertime. The disturbances were widely reported in the local and national press through January and February 1905, and grew steadily more sensational — strings of home-made sausages breaking apart after being re-hung three times, a dozen dinner plates found relocated unbroken from a high shelf, and eventually a loaded wagon that six horses together could not move, while the foreman was reportedly wheeled about the yard at speed in a wheelbarrow by unseen hands.\n\nThe household's servant girl, Mabel Sheldrick, was seriously burned when her clothing caught fire while she stood well clear of any hearth, and spent nearly a month recovering in Louth Hospital — an injury that hardened suspicions of witchcraft against her specifically. Offers to \"lay the witch\" poured in from around the country, and the Whites eventually accepted help from a professional witch-doctor, John Dunn of Grimsby. Mrs White later disputed many of the more fantastical newspaper embellishments, and by March 1905 press interest had faded and the case went cold.\n\nThe episode is documented independently in period-newspaper reprints and in local folklore history, and is notable for being investigated as recently as 1905 — remarkably late for an English witchcraft scare.",
+    "date_added": "2026-08-05",
+    "tags": [
+      "england",
+      "lincolnshire",
+      "curse",
+      "haunting"
+    ],
+    "sources": [
+      "https://aboutalford.com/2022/10/30/witchcraft-in-the-wolds/",
+      "http://hauntedohiobooks.com/news/a-bewitched-farmhouse-at-binbrook/"
+    ]
+  },
+  {
+    "name": "The Ghost of Hellens Manor",
+    "lat": 51.9928,
+    "lng": -2.4988,
+    "category": "ghost",
+    "region": "Much Marcle, Herefordshire, England",
+    "summary": "Locked in her room for thirty years after an unsanctioned marriage, Hetty Walwyn scratched her despair into the windowpane with a diamond ring — and is said to haunt the chamber still.",
+    "source": "https://www.haunted-britain.com/hellens.htm",
+    "detail": "Hellens Manor at Much Marcle, first recorded in 1180, is home to one of Herefordshire's best-known ghost stories. Mehetabel \"Hetty\" Walwyn, the youngest daughter of the 17th-century owner, eloped with a man her family considered beneath her station; by the time she was twenty her husband had died, and she returned home to find her family unforgiving. They locked her in an upstairs bedchamber for the following thirty years as punishment for the disgrace, giving her only a bell to summon servants. She is said to have gone mad in confinement, and to have scratched a mournful verse into the windowpane with her diamond ring: \"it is a part of virtue to abstain from what we love if it should prove our bane.\" Tradition holds that she eventually took her own life in the room.\n\nHetty's ghost is said to still haunt her old bedchamber; the current custodian of Hellens has reported sensing her presence while sleeping in the room above. A second, unrelated haunting is attached to the house: an elderly Catholic priest sheltering at Hellens during the Civil War was reportedly cornered and killed by Parliamentarian soldiers in a separate room.\n\nThe story is recorded across multiple independent paranormal-history and local-history sources, distinct from Herefordshire's better-known Mordiford dragon and Black Vaughan legends already on the map.",
+    "date_added": "2026-08-05",
+    "tags": [
+      "england",
+      "herefordshire",
+      "haunting"
+    ],
+    "sources": [
+      "https://www.haunted-britain.com/hellens.htm",
+      "https://tracymonger.wordpress.com/2013/02/23/hellens-manor-much-marcle-herefordshire/",
+      "https://www.catherinecavendish.com/2013/10/hellens-heart-history-and-hauntings.html"
+    ]
+  },
+  {
+    "name": "Cloughmore Stone",
+    "lat": 54.098,
+    "lng": -6.192,
+    "category": "giant",
+    "region": "Rostrevor, County Down, Northern Ireland",
+    "summary": "A 50-tonne boulder Finn McCool supposedly hurled clean across Carlingford Lough at a rival giant, gouging a 'wishing chair' where it landed above Rostrevor.",
+    "source": "https://en.wikipedia.org/wiki/Cloughmore",
+    "detail": "High on the slopes of Slieve Martin, nearly a thousand feet above the County Down village of Rostrevor, sits Cloughmore — from the Irish An Chloch Mhór, 'the big stone'. Geologists identify it as a glacial erratic, a fifty-tonne block of granite carried from an island off the Scottish coast and dropped here some ten thousand years ago as the last ice age retreated. Local tradition tells a different story entirely: that the giant warrior Fionn mac Cumhaill, locked in a three-day battle with a rival giant who styled himself the Giant of Snow and Ice, tore the boulder from the Cooley Mountains across the water in County Louth and flung it bodily over Carlingford Lough, crushing his opponent beneath it on impact.\n\nThe stone's landing is said to have carved out a hollow at its base known as Finn's Wishing Chair, and a persistent local custom holds that circling the boulder seven times will bring good luck to the walker who does it. The site now sits within Kilbroney Park and forms part of a National Nature Reserve, drawing hikers up the Cloughmore Stone trail for the view over Carlingford Lough and the Cooley Peninsula as much as for the folklore — a rare case of a scientifically explained landscape feature that has kept its giant's-throw legend fully alive alongside the geology.",
+    "date_added": "2026-08-05",
+    "tags": [
+      "northern-ireland",
+      "county-down",
+      "hill",
+      "battle"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Cloughmore",
+      "https://www.thelastleprechaunsofireland.com/stories/finn-mccool-and-the-cloc-mor-stone-above-rostrevor/",
+      "https://secretireland.ie/the-cloughmore-stone-myths-history-and-hiking-tales/"
+    ]
+  },
+  {
+    "name": "Daft Eddie and the Merry Hearts of Down",
+    "lat": 54.531,
+    "lng": -5.652,
+    "category": "pirate",
+    "region": "Killinchy and Sketrick Island, Strangford Lough, County Down, Northern Ireland",
+    "summary": "A gang of 18th-century smugglers called the Merry Hearts of Down ran contraband brandy through Strangford Lough's islands — with a simple foundling boy, Daft Eddie, as their unlikely go-between.",
+    "source": "http://www.arts.ulster.ac.uk/ulsterscots/usep_pdf/Final%20English%20Texts/Lyttle,%20Wesley%20Guard.%20Daft%20Eddie%20or.%20the%20smugglers%20of%20Strangford%20Lough.%20Belfast%20c.%201890.pdf",
+    "detail": "In the eighteenth century, a band of smugglers known as the Merry Hearts of Down worked the maze of drumlin islands on Strangford Lough, running brandy, tobacco and other contraband up from the Irish Sea and unloading it at hidden coves along the Ards Peninsula. At the centre of the legend that grew up around them is Daft Eddie — said to have been an illegitimate infant left on the doorstep of a family named White on Mahee Island in 1842, raised as a simple-minded local boy who came to know every channel and hiding place in the lough. Eddie fell in with the smugglers, meeting their luggers among the islands and helping guide contraband through to Sketrick Island, where the ruins of the fifteenth-century Sketrick Castle still stand.\n\nThe tale was fixed in local memory by the Bangor journalist W. G. Lyttle, who serialised it in his newspaper in 1889 as 'Daft Eddie; or, the Smugglers of Strangford Lough: A Tale of Killinchy', drawing on real smuggling activity recorded around Kircubbin and the Ards Peninsula. In Lyttle's telling, Eddie's shadowing of the gang draws him into a plot involving an abducted magistrate and his daughter. The story turned Eddie into a genuine local folk hero — a restaurant on Sketrick Island, Daft Eddy's, still carries his name today, keeping the smugglers' legend attached to the actual causeway and castle where it is set.",
+    "date_added": "2026-08-05",
+    "tags": [
+      "northern-ireland",
+      "county-down",
+      "island",
+      "castle"
+    ],
+    "sources": [
+      "http://www.arts.ulster.ac.uk/ulsterscots/usep_pdf/Final%20English%20Texts/Lyttle,%20Wesley%20Guard.%20Daft%20Eddie%20or.%20the%20smugglers%20of%20Strangford%20Lough.%20Belfast%20c.%201890.pdf",
+      "http://clydesburn.blogspot.com/2020/07/daft-eddie-and-smugglers-of-strangford.html",
+      "https://www.abovedown.co.uk/Items/kircubbin"
+    ]
+  },
+  {
+    "name": "Cribarth, the Sleeping Giant",
+    "lat": 51.814,
+    "lng": -3.701,
+    "category": "giant",
+    "region": "Ystradgynlais, Powys, Wales",
+    "summary": "A mountain silhouette above the Tawe Valley is said to be a giant named Yscydion, lying asleep until Arthur returns and calls him to defend his people.",
+    "source": "https://www.beacons-npa.gov.uk/the-authority/press-and-news/archive/2009-2/november-2009/awakening-the-sleeping-giant-of-the-cribarth/",
+    "detail": "Cribarth rises at the southern gateway to the Tawe Valley in the Brecon Beacons, and from the right angle its ridgeline reads unmistakably as a reclining human figure — head to one side, body sloping away down the hill, which has earned the area the local nickname 'the Land of the Sleeping Giant'. Welsh folklore gives the recumbent figure a name, Yscydion, and holds that he lies in enchanted sleep waiting to be roused when his people need him most, echoing the wider Welsh and British tradition of a sleeping hero-defender kept in reserve — the same role played by Arthur himself in numerous Welsh cave legends.\n\nThe mountain sits above one of the most folklore-dense valleys in South Wales: at its foot lies Cerrig Duon, a Bronze Age stone circle and stone row complex sometimes called the most sacred pagan site in Wales, and the surrounding Fforest Fawr has its own scattering of ghost and giant tales tied to the old drovers' roads. A related but separate story attaches the name Cribwr to an earlier giant associated with Arthur's court, who answered to the names Hot Pottage, Warm Porridge and Morsel of Bread when summoned by three sisters — a folk-memory variant that shows the sleeping-giant tradition here has been retold and reshaped across several centuries rather than fixed in a single telling.",
+    "date_added": "2026-08-05",
+    "tags": [
+      "wales",
+      "powys",
+      "mountain",
+      "arthurian"
+    ],
+    "sources": [
+      "https://www.beacons-npa.gov.uk/the-authority/press-and-news/archive/2009-2/november-2009/awakening-the-sleeping-giant-of-the-cribarth/",
+      "https://singinghead.wordpress.com/2015/12/02/the-sleeping-giant-of-cribarth/",
+      "https://www.breconbeacons.org/discover/great-days-out/days-out-in-the-black-mountain-range-and-fforest-fawr/cwm-tawe-history-giants-and-ghosts"
+    ]
+  },
+  {
+    "name": "Culver Hole and the Smugglers of Port Eynon",
+    "lat": 51.5376,
+    "lng": -4.2118,
+    "category": "pirate",
+    "region": "Port Eynon, Gower, Swansea, Wales",
+    "summary": "A stone-walled sea cave on the Gower coast was said to be smuggler John Lucas's contraband store, reached by a tunnel wide enough to ride a horse through.",
+    "source": "https://www.atlasobscura.com/places/culver-hole-port-eynon",
+    "detail": "Culver Hole is a narrow cleft in the cliffs near Port Eynon on the Gower Peninsula, sealed since at least the thirteenth or fourteenth century behind a sixty-foot stone wall pierced with irregular window openings — most likely built originally as a dovecote, 'culver' being an old English word for pigeon. Local legend attached to the site a far more colourful history: that the eighteenth-century smuggler John Lucas, a Gower man reputed to have spent years abroad as a pirate before returning home, refitted nearby Salthouse as his smuggling headquarters and used Culver Hole itself as a hidden store for contraband brandy and tobacco, connected to the Salthouse by a secret tunnel said to be wide enough to ride a horse through.\n\nThe legend has a well-documented origin of its own: research by the National Trust has shown that the Lucas smuggling story was largely invented in the 1830s by the Reverend Dr J. H. Spry, who wrote it up as a family history in connection with a lawsuit over ownership of the property. That the tale is a nineteenth-century fabrication rather than an authentic eighteenth-century tradition does not appear to have dented its staying power — Culver Hole is still presented across Gower tourism and heritage sites today as 'the Smuggler's Cove', and the fictional John Lucas remains the cave's best-known association, making this as much a legend about the manufacture of folklore as a smuggling tale in its own right.",
+    "date_added": "2026-08-05",
+    "tags": [
+      "wales",
+      "swansea",
+      "cave",
+      "coast",
+      "trickery"
+    ],
+    "sources": [
+      "https://www.atlasobscura.com/places/culver-hole-port-eynon",
+      "https://thathistorycouple.co.uk/2025/06/30/culver-hole-the-smugglers-cove-gower-wales/",
+      "https://www.grahamwatkins.info/post/2018/11/09/the-smugglers-of-culver-hole"
+    ]
+  },
+  {
+    "name": "The Gwybr of Llanrhaeadr",
+    "lat": 52.855,
+    "lng": -3.377,
+    "category": "dragon",
+    "region": "Pistyll Rhaeadr, Llanrhaeadr-ym-Mochnant, Powys, Wales",
+    "summary": "A winged serpent living in the lake above Wales's tallest waterfall swooped down to carry off villagers, until they tricked it into impaling itself on hidden spikes.",
+    "source": "https://www.pistyllrhaeadr.co.uk/dragon.html",
+    "detail": "Above Pistyll Rhaeadr — at over 240 feet the tallest waterfall in Wales, near Llanrhaeadr-ym-Mochnant in Powys — local tradition places the lair of a winged serpent called the Gwybr, said to have lived in Llyn Luncaws, the lake feeding the falls. The Gwybr was no shy lake-dweller: it flew down from its pool to seize children, women and livestock from the village below, carrying them back up to the lake to be devoured, terrorising the community for years.\n\nThe villagers eventually turned the creature's own aggression against it. According to the story, they built a decoy — a mock dragon set with hidden iron spikes — and needled the real Gwybr into attacking it. The creature threw itself at its rival with such force that it impaled itself on the spikes and died, freeing the village from its reign of terror. The tale belongs to a small but distinct cluster of North and Mid Wales dragon-and-waterfall legends, sitting alongside the much more famous Dinas Emrys story, but anchored to its own waterfall and its own named creature rather than retelling the red-and-white dragon myth.",
+    "date_added": "2026-08-05",
+    "tags": [
+      "wales",
+      "powys",
+      "serpent",
+      "waterfall",
+      "abduction"
+    ],
+    "sources": [
+      "https://www.pistyllrhaeadr.co.uk/dragon.html",
+      "https://www.visitmidwales.co.uk/Oswestry-Local-Legend-Gwybr-of-Llanrhaeadr/details/?dms=3&feature=1000&venue=1120537",
+      "https://theroyalvictoria.co.uk/journal/the-dragons-of-north-wales-and-where-to-find-them"
+    ]
+  },
+  {
+    "name": "St Osyth Witches and Ursula Kemp",
+    "lat": 51.7992,
+    "lng": 1.0777,
+    "category": "witch",
+    "region": "St Osyth, Essex, England",
+    "summary": "A cunning woman's falling-out with a neighbour over a nursemaid's job triggered a 1582 witch-hunt that swept up fourteen women from one small Essex village.",
+    "source": "https://en.wikipedia.org/wiki/St_Osyth_Witches",
+    "detail": "Ursula Kemp worked in the Essex village of St Osyth as a cunning woman, valued by her neighbours for curing illness through charms and folk remedies. Her friendship with a local woman, Grace Thurlow, soured after Ursula, having helped cure Grace's son Davy, hoped to be taken on as nursemaid to Grace's infant daughter Joan and was passed over. When baby Joan later died after falling from her cradle, suspicion fell on the spurned Ursula, and in 1582 she was brought before the Chelmsford Assizes accused of witchcraft.\n\nUnder questioning, Ursula confessed and named four other women as witches — Elizabeth Bennet, Alice Hunt, Alice Newman and Margery Sammon — who in turn implicated a further nine, dragging a total of fourteen women from the single village of St Osyth into the trial. Only Ursula Kemp and Elizabeth Bennett are known to have been sentenced to hang. The case remained more than a historical footnote: in 1921, the skeletons of two women were unearthed in a St Osyth garden by Charles Brooker, one widely believed at the time to be Ursula Kemp's own remains, pinned in the ground with iron rivets in a manner recalling folk practices for preventing revenants from rising — a grim echo, in a real prosecuted case, of the same fear of the restless dead found in more overtly supernatural folklore.",
+    "date_added": "2026-08-05",
+    "tags": [
+      "england",
+      "essex",
+      "curse"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/St_Osyth_Witches",
+      "https://en.wikipedia.org/wiki/Ursula_Kemp",
+      "https://www.history.co.uk/articles/the-st-osyth-witches-when-an-elizabethan-sorcery-trial-shook-a-quiet-essex-village"
+    ]
+  },
+  {
+    "name": "The Killing of Charles Walton",
+    "lat": 52.1062,
+    "lng": -1.7432,
+    "category": "ghost",
+    "region": "Meon Hill, Lower Quinton, Warwickshire, England",
+    "summary": "A black dog met on nine straight nights, and a headless woman seen the night before an old farmhand's ritualistic murder on Meon Hill, fed Britain's most famous unsolved 'witchcraft' killing.",
+    "source": "https://en.wikipedia.org/wiki/Killing_of_Charles_Walton",
+    "detail": "On St Valentine's Day 1945, seventy-four-year-old farm labourer Charles Walton was found murdered at The Firs farm on the slopes of Meon Hill near Lower Quinton, Warwickshire, his throat and chest slashed in the shape of a cross with his own billhook, which was left embedded in one of the wounds, and his body pinned to the ground by a hay-fork driven through his neck. Scotland Yard's Chief Inspector Robert Fabian, one of the most celebrated detectives of the era, led the investigation, focusing suspicion on farm manager Alfred Potter, but no charge was ever brought, and the killing remains the oldest unsolved murder in Warwickshire.\n\nWhat turned a brutal but otherwise unremarkable rural murder into enduring folklore was the local reporting that followed it: the ritualistic staging of the wounds, and a story that a teenage Walton had once claimed to see a phantom black dog on nine consecutive evenings — an animal locally associated with death omens — followed by a headless woman in a silk dress, after which his sister died the next day. The Coventry Telegraph dubbed it a 'whodunnit witchcraft murder,' and the case has been retold ever since as evidence of a folk-magic ritual killing intended to fertilise the soil with a victim's blood, despite Fabian's own contemporary case notes making no mention of witchcraft, black dogs or ritual at all. The gap between the documented police investigation and the folklore that grew up around it makes this one of the clearest modern examples of a real event hardening into a named supernatural legend within living memory.",
+    "date_added": "2026-08-05",
+    "tags": [
+      "england",
+      "warwickshire",
+      "dog",
+      "black",
+      "death-omen",
+      "hill"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Killing_of_Charles_Walton",
+      "https://www.stratford-herald.com/news/witchcraft-and-murder-on-meon-hill-9223403/",
+      "https://morbidology.com/the-witchcraft-murder-of-charles-walton/"
+    ]
+  },
+  {
+    "name": "Betty's Grave",
+    "lat": 51.7172,
+    "lng": -1.8523,
+    "category": "witch",
+    "region": "Poulton, Gloucestershire, England",
+    "summary": "A lone Gloucestershire crossroads is named for a woman hanged as a witch, gypsy, poisoner or sheep-thief depending who you ask — and villagers left her flowers for two centuries so she wouldn't return.",
+    "source": "https://www.spookyisles.com/bettys-grave/",
+    "detail": "A quiet rural crossroads a quarter-mile from the Gloucestershire village of Poulton, near Cirencester, has been marked on maps since at least 1830 as Betty's Grave, named for a woman called Elizabeth Bastre said to have been buried there in 1786. What Elizabeth actually was depends entirely on which version of the story is told: a witch hanged or burned for her craft, a highwaywoman who lured travellers to their doom, a suicide denied burial in consecrated ground, a gypsy, a murderess who poisoned her employer, or a housemaid poisoned by hers, or simply a thief hanged for stealing sheep. Crossroads burial was itself the traditional English punishment for suicides and executed criminals considered unfit for a churchyard, which may explain why so many conflicting explanations have grown up to fill in an anonymous grave's story.\n\nThe most vivid version of the tale casts Betty as an outright witch, dancing naked under the moon, reciting spells, and coughing up crows and sharp needles — powers she was said to use to lure and rob travellers on the lonely crossroads. Whatever she was, local custom held that her spirit would return to trouble the village unless her grave was kept decorated with fresh flowers, a practice that persisted, remarkably, until the 1970s, when it stopped as abruptly and inexplicably as it had apparently been observed for nearly two centuries.",
+    "date_added": "2026-08-05",
+    "tags": [
+      "england",
+      "gloucestershire",
+      "road",
+      "haunting",
+      "curse"
+    ],
+    "sources": [
+      "https://www.spookyisles.com/bettys-grave/",
+      "https://www.sabre-roads.org.uk/wiki/index.php?title=Betty's_Grave",
+      "http://www.greatbritishghosttour.co.uk/Pages/England/Gloucestershire/Poulton.html"
+    ]
+  },
+  {
+    "name": "Tavish Dhu (Black Tom), the Pirate of the Skerries",
+    "lat": 55.211,
+    "lng": -6.635,
+    "category": "pirate",
+    "region": "Portrush, County Antrim, Northern Ireland",
+    "summary": "A 14th-century sea raider who plundered the Antrim coast for Robert the Bruce is said to lie buried with his silver on the Skerries off Portrush, his ghost still guarding it.",
+    "source": "https://discoverportrush.com/cultural/myths-legends/tavish-dhu/",
+    "detail": "In the early 14th century, during the wars of Scottish and Irish independence, a privateer named Tavish Dhu (or Tavish Dubh — \"Black Tavish\", later anglicised to Black Tom) used the Skerries, a scatter of rocky islets just off Portrush on the north Antrim coast, as his base. Sailing loosely under the banner of Robert the Bruce, he raided English shipping and settlements along the Irish Sea; in 1315 he is said to have delivered captured English supply ships to Edward Bruce's forces up the River Bann, and to have ferried Scottish troops across the water in support of the Bruce invasion of Ireland.\n\nHis career ended in 1317, when Edward II dispatched a squadron to hunt him down; after a bloody engagement in which forty of his crew were killed, Tavish was captured and executed, his head reputedly sent to Dublin as a trophy. Local tradition insists his men carried his body back to the Skerries for burial with three bullock-skins of silver, and that his ghost — and those of his crew — still stand guard over the hoard. The easternmost of the islets, Island Dubh, is said to take its name from him, as does the mainland district of Dhuvarren.\n\nThe legend has stayed remarkably alive in Portrush: it was recorded in early-20th-century local histories and is retold today by the town's heritage trust, which stages an annual \"Pirates Off Portrush\" festival built around his story. Whether or not the historical Tavish Dhu ever set foot on the Skerries, the tale binds a documented Bruce-era privateer to a very specific stretch of Antrim coastline, giving Portrush its own outlaw founding myth.",
+    "date_added": "2026-08-05",
+    "tags": [
+      "northern-ireland",
+      "county-antrim",
+      "sea",
+      "treasure",
+      "battle"
+    ],
+    "sources": [
+      "https://discoverportrush.com/cultural/myths-legends/tavish-dhu/",
+      "http://timhodkinson.blogspot.com/2015/07/medieval-pirates-tale-of-tavish-dhu.html",
+      "https://causewaycoastandglens.gov.uk/news/Pirates-Off-Portrush-700-Years-Dead",
+      "https://discoverportrush.com/media/2022/01/Heritage-Newsletter-64-The-Skerries.pdf"
+    ]
+  },
+  {
+    "name": "Cermand Cestach, the Oracle of Clogher",
+    "lat": 54.414,
+    "lng": -7.161,
+    "category": "deity",
+    "region": "Clogher, County Tyrone, Northern Ireland",
+    "summary": "A gold-sheathed idol once stood on this hill, consulted like a Delphic oracle by pagan Ulster kings, until a devil's voice was said to speak from the stone itself.",
+    "source": "https://en.wikipedia.org/wiki/Cermand_Cestach",
+    "detail": "Long before Clogher had a cathedral, tradition holds that a gold-covered cult stone called Cermand Cestach (also recorded as Cermand Celstach or Kermand Kelstach) stood on the hill as the oracle of Ulster, consulted through the druids much as Greek petitioners consulted the oracle at Delphi. The place-name itself preserves the memory: Clogher derives from Cloch-Óir, \"the golden stone.\" The earliest reference to the idol appears in the medieval Life of St Macartan, Clogher's founding bishop (c.430–505 AD), which describes it as a sacred stone given to the saint by an elderly pagan nobleman when the old religion gave way to the new.\n\nAn eighth-century gloss on the story is blunter about what the stone represented, recording that \"there had once been a stone covered in gold which heathens worshipped: and out of it a devil used to speak\" — casting the oracle not as a benign wonder but as a mouthpiece for a pre-Christian spirit that Macartan's mission had to silence. According to legend it was consulted by King Conchobar of Ulster himself when he sought guidance on securing his kingship.\n\nWhat makes the tradition unusually well anchored is that the stone was said to survive as a physical relic long after its oracular days: the Ulster annalist Cathal Óg Mac Maghnusa (Cathal Maguire), who died in 1498, recorded that the idol was still preserved as a curiosity in the porch of Clogher Cathedral in his own lifetime, and a stone answering that description is still kept inside the cathedral today — one of the few places in Ireland where an object from a documented pre-Christian cult is said to have survived, more or less continuously, into the modern church that replaced it.",
+    "date_added": "2026-08-05",
+    "tags": [
+      "northern-ireland",
+      "county-tyrone",
+      "golden",
+      "prophecy",
+      "church"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Cermand_Cestach",
+      "https://ancientclans.org/heritage-site/st-mccarrans-cathedral-the-clogh-oir-or-golden-stone-clogher-cathedral/",
+      "https://www.catholicireland.net/saintoftheday/st-macartan-of-clogher-d-506/"
+    ]
+  },
+  {
+    "name": "Saxa and Herman, the Rival Giants of Unst",
+    "lat": 60.83,
+    "lng": -0.878,
+    "category": "giant",
+    "region": "Unst, Shetland, Scotland",
+    "summary": "Two feuding giants hurled boulders at each other across a Shetland inlet until a mermaid lured both to their deaths in a swimming race to the North Pole.",
+    "source": "https://shetlandwithlaurie.com/the-blog/shetland-folklore-series-a-land-of-giants",
+    "detail": "On Unst, Britain's northernmost inhabited island, local tradition names two giants, Herman and Saxa, as the makers of its wildest headlands. Herman held Hermaness on the island's northwest tip, and Saxa held the opposing headland of Saxa Vord across the narrow inlet of Burrafirth; the two were sworn enemies who spent their days hurling great boulders at one another across the water. The landscape is still read as evidence of the feud — a submerged rock offshore is known as Saxa's Baa, and a flat rock on Herman's side as Herman's Hellyacraig — place names that fossilise the story into the map itself.\n\nAccording to the tale both giants fell for the same mermaid, a temptress who used their rivalry to destroy them both: she challenged whichever of them could swim fastest to the North Pole to win her heart. Neither Herman nor Saxa could swim a stroke, but pride sent both wading in after her, and both drowned in the attempt, leaving the headlands named for two giants who never got the girl.\n\nShetland folklorists count this among the oldest surviving stories from Orkney and Shetland, part of a wider Northern Isles tradition of giants shaping the coastline through their quarrels — a Norse-flavoured strand of folklore distinct from the Gaelic giant lore of the Hebrides and the Scottish mainland further south.",
+    "date_added": "2026-08-05",
+    "tags": [
+      "scotland",
+      "shetland",
+      "sea",
+      "drowning",
+      "norse"
+    ],
+    "sources": [
+      "https://shetlandwithlaurie.com/the-blog/shetland-folklore-series-a-land-of-giants",
+      "https://www.shetland.org/blog/shetland-folklore",
+      "https://kerrieanngardner.co.uk/landscape/giants-and-ghosts-on-hermaness/"
+    ]
+  },
+  {
+    "name": "The Serpent of Church Island",
+    "lat": 54.245,
+    "lng": -8.351,
+    "category": "dragon",
+    "region": "Lough Gill, County Sligo, Ireland",
+    "summary": "Beneath a great stone on this Lough Gill island lies a crock of gold guarded by a serpent — legend insists a life must be lost before anyone can take it.",
+    "source": "https://www.irishexaminer.com/lifestyle/outdoors/arid-41024195.html",
+    "detail": "Church Island, the largest of the wooded islands scattered across Lough Gill outside Sligo town, carries a double legend. Historically it was the site of a monastery founded in the sixth century by St Lomán of Trim, later home to a bardic school run by the O'Cuirnín family and destroyed by fire in 1416 — a blaze the Annals of the Four Masters record as having consumed a legendary harp, an ornamental cup, and the manuscript known as the Leabhar Gearr along with the church itself. It is out of the wreck of that lost wealth that the island's folk legend grows.\n\nLocal tradition holds that a crock of gold — some say the remnants of the monastery's own treasures — lies hidden beneath a large stone on the island, guarded by a serpent coiled beneath it. The guardianship comes with a grim condition: a life must be lost before the gold can ever be recovered. The story is kept alive by a widely repeated modern anecdote in which two botanists, searching the island for rare mosses, were caught in a sudden thunderstorm and found dead the next day — a tragedy locals folded straight into the old curse as proof it still holds.\n\nChurch Island's serpent belongs to a distinctively Irish strand of dragon lore: rather than a fire-breathing beast, it is one of the country's many treasure-guarding \"ollphéisteanna\", a lake-bound worm whose danger lies less in tooth and claw than in the price it exacts from anyone greedy enough to go looking for what it protects.",
+    "date_added": "2026-08-05",
+    "tags": [
+      "ireland",
+      "county-sligo",
+      "serpent",
+      "lake",
+      "treasure"
+    ],
+    "sources": [
+      "https://www.irishexaminer.com/lifestyle/outdoors/arid-41024195.html",
+      "https://emeraldisle.ie/the-great-wyrms-of-ireland",
+      "https://en.wikipedia.org/wiki/Church_Island_(Lough_Gill)",
+      "https://irishheritagenews.ie/church-island-on-lough-gill/"
+    ]
+  },
+  {
+    "name": "The Pirates' Ambush at Sark",
+    "lat": 49.434,
+    "lng": -2.364,
+    "category": "pirate",
+    "region": "Sark, Channel Islands",
+    "summary": "In 1356 pirates who had seized Sark were tricked and slaughtered by merchants who smuggled swords ashore inside a fake funeral coffin.",
+    "source": "http://guernseydonkey.com/?p=2821",
+    "detail": "During the depths of the Hundred Years' War, with plague, French raids and Scottish attacks emptying Sark of its population, the island fell into the hands of pirates and wreckers who lit false beacons on stormy nights to lure passing ships onto its rocks. England's garrison amounted to little more than a handful of archers, leaving the pirates effectively in control. In 1356, so the story goes, a party of merchants from the Cinque Ports towns of Rye and Winchelsea decided to take the island back by trickery rather than force.\n\nThey sailed to Sark and told the pirates that their captain had died at sea, asking permission to bury him according to Christian rite at St Magloire's chapel. The pirates, promised payment and having searched the newcomers for weapons, allowed them to carry the coffin up the island's 300-foot cliff path into the chapel. Once inside, during what looked like a private funeral service, the merchants broke open the coffin — packed not with a body but with swords and longbows — armed themselves, and burst out to slaughter the pirate garrison. Only one elderly woman is said to have survived, escaping with a loaf of bread to hide in the Convanche Chasm until a passing Guernsey fisherman rescued her.\n\nHistorians have long noted how closely the tale echoes the Trojan Horse, and it has been current on Sark for at least four centuries — Sir Walter Raleigh recycled essentially the same coffin-and-weapons trick in his History of the World to describe Flemish corsairs retaking Sark from the French in 1553, suggesting the story had already become a kind of stock local legend for how the tiny island changes hands.",
+    "date_added": "2026-08-05",
+    "tags": [
+      "channel-islands",
+      "battle",
+      "trickery",
+      "church"
+    ],
+    "sources": [
+      "http://guernseydonkey.com/?p=2821",
+      "https://www.sark.co.uk/history/monks-pirates-folklore"
+    ]
+  },
+  {
+    "name": "Aimee Lake, the Last Witch of Guernsey",
+    "lat": 49.478,
+    "lng": -2.513,
+    "category": "witch",
+    "region": "St Sampson's, Guernsey, Channel Islands",
+    "summary": "As late as January 1914, a Guernsey fortune-teller was convicted of practising witchcraft — three centuries after the island's last burnings, under the same old law.",
+    "source": "https://museumofwitchcraftandmagic.co.uk/news/the-last-witch-trial-in-guernsey/",
+    "detail": "On 20 January 1914, Aimée Lake, a fortune-teller living at Robergerie in St Sampson's, was formally charged before the Royal Court of Guernsey with \"fortune telling, the explanation of dreams and practising the art of witchcraft\" between August 1913 and January 1914 — making her the last person tried for witchcraft on the island, and one of the last in the British Isles under a genuinely old statute rather than a modern fraud law.\n\nThe complaint came from a farm widow of St Martin's whose cattle had died and who had begun suffering severe headaches. Desperate, she consulted Mrs Lake, who read her tea leaves, told her the deaths were the result of sorcery worked against her, and sold her charmed packets of powder for £3 10s to counter the curse — with a demand for a further £3 when the trouble didn't lift. Frightened, the widow went to the police, who dug up the buried packets from her garden and had them analysed: the \"charms\" turned out to be nothing more than baking powder, brown starch and cornflour, the everyday ingredients Mrs Lake bought to make blancmange.\n\nDespite the harmlessness of the powders, the Royal Court under Bailiff William Carey convicted her and sentenced her to eight days' imprisonment — the maximum available — with the court reportedly expressing regret it could not impose something harsher. The case is remembered today less as a genuine brush with the supernatural than as a vivid glimpse of how long Guernsey's witchcraft law, and the folk belief that sustained it, survived into the twentieth century.",
+    "date_added": "2026-08-05",
+    "tags": [
+      "channel-islands",
+      "guernsey",
+      "curse",
+      "trickery"
+    ],
+    "sources": [
+      "https://museumofwitchcraftandmagic.co.uk/news/the-last-witch-trial-in-guernsey/",
+      "https://guernseydonkey.com/the-last-witchcraft-trial-in-guernsey/",
+      "https://history.gg/guernseys-witch-trial/"
+    ]
+  },
+  {
+    "name": "Old Mother Digby of East Harting",
+    "lat": 50.968,
+    "lng": -0.896,
+    "category": "witch",
+    "region": "East Harting, West Sussex, England",
+    "summary": "A Sussex hare-witch could be caught out only by her own wounds — when a hound tore the hare she had become, the injury turned up on her body at home.",
+    "source": "https://www.gutenberg.org/files/20696/20696-h/20696-h.htm",
+    "detail": "In a cottage on Hog's Lane in East Harting, at the foot of the South Downs, lived a woman remembered as Old Mother Digby (born Mollen), reputed in the 18th century to have the witch's classic gift of turning herself into a hare. Like the goddess Hecate she was said to keep the company of dogs, and the local squire, Squire Russell of Tye Oak, made a habit of hunting a hare that always escaped him at the same spot — a drain by a sink-hole close to the old woman's house.\n\nOne day his hounds finally caught the hare by its hindquarters as it fled for the drain, tearing at it before it vanished down the hole. Squire Russell, suspecting what everyone already whispered, went straight to Mother Digby's door and let himself in — to find the old woman nursing a fresh wound on exactly the part of her body where the dog had seized the hare, the classic proof-by-injury that closes so many British witch-hare tales.\n\nThe story survives because it was collected and printed by the essayist E. V. Lucas in Highways and Byways in Sussex (1904), one of the standard Edwardian topographical guides to the county, which helped fix a number of otherwise oral South Downs traditions in print before they were lost. It sits alongside other Sussex hare-witch tales — an unnamed witch of Ditchling Common, a witch of Plumpton who could stop carts in the road — as part of a distinctly Wealden and Downland vein of the shapeshifting-witch legend that runs the length of southern England.",
+    "date_added": "2026-08-05",
+    "tags": [
+      "england",
+      "west-sussex",
+      "hare",
+      "shapeshifter",
+      "transformation"
+    ],
+    "sources": [
+      "https://www.gutenberg.org/files/20696/20696-h/20696-h.htm",
+      "https://en.wikisource.org/wiki/Highways_and_Byways_in_Sussex/Chapter_2"
+    ]
+  },
+  {
+    "name": "Mermaid of Mahee",
+    "lat": 54.5423,
+    "lng": -5.6975,
+    "category": "water",
+    "region": "Mahee Island, Strangford Lough, County Down, Northern Ireland",
+    "summary": "A sea-maiden with a golden harp haunted the monks of Nendrum, luring one beneath the waves — until the sound of the monastery bells called him home to be shut in the round tower for his trouble.",
+    "source": "https://throughthearchives.wordpress.com/2021/05/11/the-mermaid-of-mahee-island-and-the-nendrum-monastic-site/",
+    "detail": "On Mahee Island, in the sheltered reaches of Strangford Lough, the fifth-century monastery of Nendrum stands on ground sacred long before Christianity arrived in County Down. Local tradition holds that a mermaid haunted the waters below the monastic walls, rising at dusk with a golden harp to sing the fishermen and monks into a trance. Those who heard her music followed her voice into the lough and were never quite themselves again, the story says, living out their days as creatures of the sea in caves beneath the water.\n\nOne monk of Nendrum, so the tale goes, dived in after her and lived beneath the waves as her husband, forgetting his old life entirely, until the sound of the monastery's bells carried down through the water and called him back to shore. His brothers, certain he had lost his reason, shut him in the top of Nendrum's round tower, where he spent the rest of his days ringing the very bells that had once saved him.\n\nThe legend survives chiefly through the Belfast antiquarian John Vinycomb, MRIA, who set it down as a poem in his pamphlet The Monks of Mahee Island, alongside an account of the site's archaeology and history. Nendrum itself is real and remarkable: founded in the fifth century by St Mochaoi, excavated in the 1920s by H. C. Lawlor, and still ringed by three concentric enclosure walls. The mermaid has since been claimed by Mount Stewart's gardens on the far shore of the lough, where a weathered stone sculpture of her, harp and all, keeps the story visible on the Ards Peninsula.",
+    "date_added": "2026-08-05",
+    "tags": [
+      "northern-ireland",
+      "county-down",
+      "island",
+      "sea",
+      "transformation"
+    ],
+    "sources": [
+      "https://throughthearchives.wordpress.com/2021/05/11/the-mermaid-of-mahee-island-and-the-nendrum-monastic-site/",
+      "https://www.newsletter.co.uk/heritage-and-retro/retro/stepping-back-in-time-saints-scholars-and-mermaid-of-mahee-island-3138636",
+      "https://katielarmour.com/blogs/journal/mermaid-of-mahee-strangford-lough-county-down"
     ]
   }
 ]

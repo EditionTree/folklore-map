@@ -15,6 +15,10 @@
 "hash": "427d628d4c4e9578c2cfe596c8d70fee42489d98",
 "modified": "2026-06-16"
 },
+"Aimee Lake, the Last Witch of Guernsey": {
+"hash": "b69df9a92bd37972e189b8db26afe7185fc07877",
+"modified": "2026-08-05"
+},
 "Alderley Edge": {
 "hash": "e84ced3268a54f52a7599163f64dc040b340d2e2",
 "modified": "2026-06-18"
@@ -72,8 +76,8 @@
 "modified": "2026-06-19"
 },
 "Avalon": {
-"hash": "276ab496a2c5741aa7eff836c78b289f848cc388",
-"modified": "2026-07-20"
+"hash": "ddc7ed527cf604eb4bd41920323a710c1c6ae6d8",
+"modified": "2026-08-05"
 },
 "Avebury": {
 "hash": "c3ef4bbc064c1ec4360a5fd8b8b995aa11f26355",
@@ -92,8 +96,8 @@
 "modified": "2026-06-14"
 },
 "Banshee": {
-"hash": "1ba8165b29900011218a5081831f32a4df6c267b",
-"modified": "2026-07-20"
+"hash": "7844b649ae0ea1f31de5edd6dc968453f79fcf1d",
+"modified": "2026-08-05"
 },
 "Baobhan Sith": {
 "hash": "78e6b95d9ed99cf401688db6f84abff1c4221417",
@@ -167,6 +171,10 @@
 "hash": "d9c5e8e17e21f3334dde1ef79943d8ae797ae1bc",
 "modified": "2026-06-03"
 },
+"Benlli Gawr, the Tyrant of Foel Fenlli": {
+"hash": "47047ba304000afa1313260258b4ff3ad6b76bf8",
+"modified": "2026-08-05"
+},
 "Beowulf": {
 "hash": "aa3a519531f1898fbd3a8de813688915fc29f778",
 "modified": "2026-06-03"
@@ -182,6 +190,14 @@
 "Bessie Millie of Stromness": {
 "hash": "0379021ea917be12193e9116359fe4f5386a0c21",
 "modified": "2026-06-28"
+},
+"Betty Wells, the Witch of Kirton in Lindsey": {
+"hash": "3e5405fba609cb00ee8607d0f990032dd9453862",
+"modified": "2026-08-05"
+},
+"Betty's Grave": {
+"hash": "340013d5c54aa5eb6740c44b87e8b83eff246c8f",
+"modified": "2026-08-05"
 },
 "Bevis of Hampton": {
 "hash": "c240456db839642d80f11947caaa2dd116cb3863",
@@ -228,8 +244,8 @@
 "modified": "2026-06-20"
 },
 "Black Shuck": {
-"hash": "e6209bada91fa7aa156503c8ea2d8dc435ab23d6",
-"modified": "2026-07-20"
+"hash": "bddd2ff59bba9e787ba3296d74c0f0964347f46a",
+"modified": "2026-08-05"
 },
 "Black Vaughan of Hergest Court": {
 "hash": "c8605979579174b01b3817ce4bd46cecee1fd7d5",
@@ -264,8 +280,8 @@
 "modified": "2026-06-19"
 },
 "Bodach": {
-"hash": "f448c46531f2bc505fc60b12e204012bd15665a3",
-"modified": "2026-07-20"
+"hash": "a4ee075a7262f034d20539d09d2adffacf074e89",
+"modified": "2026-08-05"
 },
 "Boggart of Boggart Hole Clough": {
 "hash": "d860c5187a5a4395be463446ba530f6997d07614",
@@ -284,8 +300,8 @@
 "modified": "2026-06-04"
 },
 "Bossiney Castle": {
-"hash": "42181bdde1805d952cf1c2f31633914dd0e38ccc",
-"modified": "2026-06-19"
+"hash": "fc0166765cd13f429a9d1e4f661ff99b3b01f57c",
+"modified": "2026-08-05"
 },
 "Boudicca": {
 "hash": "d1bfa4f702829e0ab4e3cf6d85868b789ba600db",
@@ -316,8 +332,8 @@
 "modified": "2026-06-14"
 },
 "Brother Simon of Swineshead": {
-"hash": "1d1f38638005f4e3dcc082811ac4af6884f6c00f",
-"modified": "2026-06-05"
+"hash": "de0d311cfaafd37c198f27158c4bd5ca15bffa7c",
+"modified": "2026-08-05"
 },
 "Brown Lady of Raynham Hall": {
 "hash": "916743a9fc8a894983413b99424d3f54578615f9",
@@ -328,8 +344,8 @@
 "modified": "2026-06-14"
 },
 "Brownie": {
-"hash": "0a63dd48912235c9a3ae17aa3cb4ecdbdf18a0e8",
-"modified": "2026-07-20"
+"hash": "6d1433a37fc0e9f67b4a1f05f0261ae09dd30942",
+"modified": "2026-08-05"
 },
 "Brutus of Troy": {
 "hash": "15a71aa428fc7edda204edcdb7442ec9560cc192",
@@ -380,8 +396,8 @@
 "modified": "2026-06-19"
 },
 "Cailleach": {
-"hash": "d95c49e2b7c3184e208404feb48917798eb2136f",
-"modified": "2026-07-20"
+"hash": "59bb471cd821f93c70418fbf1de1348c5f205874",
+"modified": "2026-08-05"
 },
 "Cailleach Bhéara": {
 "hash": "9bdd60b3125b185d63656f2e451d25c12c1f1afc",
@@ -455,6 +471,10 @@
 "hash": "07d0447c56a0f9757c2f2e999940c1bc7aa19d0c",
 "modified": "2026-06-18"
 },
+"Cermand Cestach, the Oracle of Clogher": {
+"hash": "97b8ad58a27bedba8486d3aa03c7c0fafcdcb7ac",
+"modified": "2026-08-05"
+},
 "Cerne Abbas Giant": {
 "hash": "f0cad0a81df51672337da32742ce0b11d76143a8",
 "modified": "2026-06-03"
@@ -503,6 +523,10 @@
 "hash": "8c0875ea2581c3d3a910cf86539ffa35b11cbc62",
 "modified": "2026-05-30"
 },
+"Cloughmore Stone": {
+"hash": "659f7c4121c9126101cc22fc994916e123adb51c",
+"modified": "2026-08-05"
+},
 "Clíodhna": {
 "hash": "8b0eb93c066569f5b3875b96e808ed04784892b6",
 "modified": "2026-06-19"
@@ -544,8 +568,8 @@
 "modified": "2026-06-03"
 },
 "Craig y Ddinas": {
-"hash": "c3b8446dcfef958a304c0ded084425ee81edaf33",
-"modified": "2026-06-05"
+"hash": "ae0e9e970c50d601271661bed872115a7a8d28cf",
+"modified": "2026-08-05"
 },
 "Craigs Dolmen": {
 "hash": "8bcb3ef89f5c2a4e2aa6df3fc283ece8f68a3f20",
@@ -554,6 +578,10 @@
 "Crazy Kate, the Witch of Swineshead": {
 "hash": "0bfd36a2d6ef0793b0a73a625afd6f464ed1f77a",
 "modified": "2026-06-13"
+},
+"Cribarth, the Sleeping Giant": {
+"hash": "2af56100d0edde3a44e23afc3f864635b9776d9d",
+"modified": "2026-08-05"
 },
 "Croagh Patrick": {
 "hash": "dd6e2e3198fc7fc14fa2730c58639751d7960195",
@@ -575,13 +603,17 @@
 "hash": "69c23534186907b1b70c1eb08b7635be2730ca22",
 "modified": "2026-06-03"
 },
+"Culver Hole and the Smugglers of Port Eynon": {
+"hash": "3ce1491e0ead2af5046ff22b674fd6197be96c96",
+"modified": "2026-08-05"
+},
 "Cyhyraeth": {
 "hash": "ede1c0f06b5f4f8da0350af8a49c64da939b4f6a",
 "modified": "2026-06-03"
 },
 "Cú Chulainn": {
-"hash": "28304dc956d0a1685f2a38b452b6d2ce90627056",
-"modified": "2026-07-20"
+"hash": "a32c131ff48eb8281bdce36699c069b149b1f058",
+"modified": "2026-08-05"
 },
 "Cú Roí mac Dáire": {
 "hash": "6f7dc096fd6b5759018cd3865d9f3620af78d844",
@@ -590,6 +622,10 @@
 "Cŵn Annwn": {
 "hash": "ceb38fa2f4a2da0fd074b371e1a17d936d0858a0",
 "modified": "2026-06-19"
+},
+"Daft Eddie and the Merry Hearts of Down": {
+"hash": "aef49e3ec86440054e84ed9e53c0208284fe7942",
+"modified": "2026-08-05"
 },
 "Dando's Dogs": {
 "hash": "c6bc72b1d7ca85ae7a5f8ac336065ca515826c74",
@@ -860,8 +896,8 @@
 "modified": "2026-06-08"
 },
 "Fionn mac Cumhaill": {
-"hash": "2f52dfd9b99e8777886da28c79e21b6d114d58a4",
-"modified": "2026-07-20"
+"hash": "0a9067fce05c92895649441625927636934d3b63",
+"modified": "2026-08-05"
 },
 "Florence Newton": {
 "hash": "327adac7bdef4f77295cad4e8058014a7a29ec05",
@@ -908,8 +944,8 @@
 "modified": "2026-06-03"
 },
 "Giant's Causeway": {
-"hash": "13412ce7db2f2da680f01bff8e956d3ac797ccdb",
-"modified": "2026-07-20"
+"hash": "0fa84d80050879691e7206e4ef6402f1add04033",
+"modified": "2026-08-05"
 },
 "Gill, the Hammer-Throwing Giant of Mount Caburn": {
 "hash": "67fbdb4325594327bdae9162048a3efe92f066be",
@@ -1047,6 +1083,10 @@
 "hash": "cc9879789198c2cccc32f432897b1322a3cd7150",
 "modified": "2026-06-16"
 },
+"Haltadans, the Petrified Trows of Fetlar": {
+"hash": "70d716ee4555cef4428a60cfe21fc21f2a231e94",
+"modified": "2026-08-05"
+},
 "Hard Apple Blyth, the Smuggler of Paglesham": {
 "hash": "ab295eeb3e69dc9d421f9b9ed46715d031e9937b",
 "modified": "2026-06-12"
@@ -1100,8 +1140,8 @@
 "modified": "2026-06-03"
 },
 "Herne the Hunter": {
-"hash": "6b5209cf28eb4fd6a15e437eb0f58aba8bcfc545",
-"modified": "2026-07-20"
+"hash": "21cb695c20a707ea6951d5e160c006229e787ab2",
+"modified": "2026-08-05"
 },
 "Hexham Heads": {
 "hash": "a11e992681484cf9c342c7a28a4ff22d0f740568",
@@ -1222,6 +1262,10 @@
 "John Gow": {
 "hash": "3611add341600977ce6a4a196ab0532d98572bf2",
 "modified": "2026-06-14"
+},
+"John Olliver, the Miller of Highdown Hill": {
+"hash": "6b1a4a6b0af39f1463c895c59640e1194bb62d68",
+"modified": "2026-08-05"
 },
 "Jonka Dyneis of Fetlar": {
 "hash": "101d5f16aef53c457cacd6e4ce27db59678f87de",
@@ -1527,6 +1571,10 @@
 "hash": "164e51e8b5103e3030c6a344e2ea533bb0ac5c4b",
 "modified": "2026-06-14"
 },
+"Marion Pardone, the Witch of Scalloway": {
+"hash": "935771ee3cd5fd6a129c139db03ab3669a5cc567",
+"modified": "2026-08-05"
+},
 "Marool": {
 "hash": "6ab9064f7e441ffe397077b8f863c6709bceae5e",
 "modified": "2026-06-19"
@@ -1559,9 +1607,13 @@
 "hash": "9eed5b62595ba707679dfa63d413c706fdcab60e",
 "modified": "2026-06-01"
 },
+"Melangell and the Hare": {
+"hash": "a7fbd55b5d4c746a7791fad23651fcdb4c69a07c",
+"modified": "2026-08-05"
+},
 "Merlin": {
-"hash": "a1f866b5a72369288b9e59037c2ba777e87d2628",
-"modified": "2026-07-20"
+"hash": "f689210b4edafc89a908cbb3f7e1e57eddacb484",
+"modified": "2026-08-05"
 },
 "Merlin's Cave": {
 "hash": "503b41c64740d7ba51bdc09096802403d397618a",
@@ -1574,6 +1626,10 @@
 "Mermaid of Benbecula": {
 "hash": "63c17ba37bfd87363b6982d0f1140a5219287314",
 "modified": "2026-06-17"
+},
+"Mermaid of Mahee": {
+"hash": "f6b0755c12badf5d799db43f96fe2118c3d90f36",
+"modified": "2026-08-05"
 },
 "Mermaid of Marden": {
 "hash": "763518128a145f46ebf41de6e520b1c18b353320",
@@ -1626,6 +1682,10 @@
 "Mother Shipton": {
 "hash": "caf714e036aa65aa1fdd232fa2ed419b5c60e149",
 "modified": "2026-06-19"
+},
+"Mount Killaraus and the Giant's Dance": {
+"hash": "74392e8b87b52ab06dd02d74d00c510f14c4cdff",
+"modified": "2026-08-05"
 },
 "Mount Venus": {
 "hash": "ee8de01b3e380a3be04fb9b5bac58f1a90b7d0c9",
@@ -1696,8 +1756,8 @@
 "modified": "2026-06-03"
 },
 "Nuckelavee": {
-"hash": "92f7b78a90ffb2d551319c09907c1d5e6d17f17f",
-"modified": "2026-07-20"
+"hash": "6720543a453baa0f272c0f7e729ea14d8a55a4c7",
+"modified": "2026-08-05"
 },
 "Oilliphéist": {
 "hash": "815b2a0cc217896e89606128d7f300bca218ac4f",
@@ -1718,6 +1778,10 @@
 "Old Moll of Brandy Cove": {
 "hash": "c5d35114cd78784747ac09b2e66cb17b1c3e4149",
 "modified": "2026-06-17"
+},
+"Old Mother Digby of East Harting": {
+"hash": "b30b3d3adb3e5a73f6f9e1ff59057d480d515f68",
+"modified": "2026-08-05"
 },
 "Oonagh of Knockmany Hill": {
 "hash": "6653cffe4aec079beebde9b486cf92bf74c88e9c",
@@ -1836,8 +1900,8 @@
 "modified": "2026-06-14"
 },
 "Puck": {
-"hash": "aae2cb434921756c12a325a504df5663873b7839",
-"modified": "2026-07-20"
+"hash": "839649709a5aeb9923aad272561ba8abc5164ef0",
+"modified": "2026-08-05"
 },
 "Pwyll, Prince of Dyfed": {
 "hash": "b1633beb96ad1466d737e7e2d8d7eacb464212eb",
@@ -1904,8 +1968,8 @@
 "modified": "2026-06-03"
 },
 "Robin Hood": {
-"hash": "18d89d43fdd9fa4b4cb55cc346d6b6d8533c4f22",
-"modified": "2026-07-20"
+"hash": "cf0df53ff8cbadd77dc4b540c28c1f37ae8e7850",
+"modified": "2026-08-05"
 },
 "Rollright Stones curse": {
 "hash": "835688bc0e4192fdae813a955ab5f217ea55ce99",
@@ -1943,6 +2007,10 @@
 "hash": "0c632819ca6745342d64a92ba70262a7148522b2",
 "modified": "2026-06-03"
 },
+"Saxa and Herman, the Rival Giants of Unst": {
+"hash": "cf1ec7b6c84326c4d426dc0afc54265fad483c93",
+"modified": "2026-08-05"
+},
 "Screaming House of St Aubin": {
 "hash": "e356b305dcf590743da37d25b03023ecedb2204e",
 "modified": "2026-06-28"
@@ -1968,8 +2036,8 @@
 "modified": "2026-06-14"
 },
 "Selkies of Orkney": {
-"hash": "a039618476833dfdfa7ead3c19d35402caf990e2",
-"modified": "2026-07-20"
+"hash": "7072da2a7cbc95e2688a59b6aee268bb54a46699",
+"modified": "2026-08-05"
 },
 "Seonaidh": {
 "hash": "c0a78e9bbc1be6044b7ac2e0688f161832f1a17a",
@@ -2039,6 +2107,10 @@
 "hash": "cace0c90472873451c359310f97a6eb33ddf9f70",
 "modified": "2026-06-03"
 },
+"St Botolph and the Devil": {
+"hash": "980c5ca22497a5c09e11f8418b652593ecec8db5",
+"modified": "2026-08-05"
+},
 "St Catherine's Hill Mizmaze": {
 "hash": "4b898a9c0b07233e30477355b9661fdb5e142eb7",
 "modified": "2026-06-08"
@@ -2075,6 +2147,10 @@
 "hash": "6a74fd867180b9031604764ba8664071fc2cc03f",
 "modified": "2026-06-08"
 },
+"St Osyth Witches and Ursula Kemp": {
+"hash": "6b2222a31427f434390e97bd47fc79a78401553c",
+"modified": "2026-08-05"
+},
 "St Swithin's Day": {
 "hash": "fcd7230decc47aab24575105dc3b4724c4964f83",
 "modified": "2026-06-16"
@@ -2092,8 +2168,8 @@
 "modified": "2026-06-17"
 },
 "Stonehenge": {
-"hash": "f75fd9baf76e78c2315140811ea6c4a8852712f7",
-"modified": "2026-07-20"
+"hash": "255319c42d0d3590e197f278fb03dbef55e1c21e",
+"modified": "2026-08-05"
 },
 "Stoor Worm": {
 "hash": "15dd00e63759c4bda9587ad263752d226dd8416f",
@@ -2139,6 +2215,10 @@
 "hash": "6a18daa90923d1ac5a615790bd5a32cabf87509b",
 "modified": "2026-06-03"
 },
+"Tavish Dhu (Black Tom), the Pirate of the Skerries": {
+"hash": "b6d86e3c8bc86d8c1a9aa79fdde07d1599b0c317",
+"modified": "2026-08-05"
+},
 "Tchico": {
 "hash": "f9810eda188d0f14a3873908d7293497d5ddc482",
 "modified": "2026-06-08"
@@ -2171,9 +2251,17 @@
 "hash": "c5cacc912e916a3731cb32885857487ea914aaa6",
 "modified": "2026-06-13"
 },
+"The Binbrook Bewitched Farm (1905)": {
+"hash": "d32befc60dae644fa9fe283b80a53a9f27eee9dc",
+"modified": "2026-08-05"
+},
 "The Black Dog of Newgate": {
 "hash": "0254a4fc78cbc13a79b0a5ec58e59dbb4a9e8b5a",
 "modified": "2026-06-03"
+},
+"The Black Nun of Bonamargy": {
+"hash": "53282161977a02a35e18741a7f75532e8cfae8f7",
+"modified": "2026-08-05"
 },
 "The Brag": {
 "hash": "36205fc8adcc5a5fc2a1aa68b06972d72ae36196",
@@ -2191,6 +2279,10 @@
 "hash": "29e0b34873dc1d2b17f97b0778441becfd4e7be0",
 "modified": "2026-06-19"
 },
+"The Cooneen Ghost": {
+"hash": "bfd40ef51ca782c4fe4c32279818eddd6b262cc8",
+"modified": "2026-08-05"
+},
 "The Cottingley Fairies": {
 "hash": "36b6e0a6a7cbbecfc150ce0344219c40c69a804d",
 "modified": "2026-06-14"
@@ -2200,8 +2292,8 @@
 "modified": "2026-06-12"
 },
 "The Dagda": {
-"hash": "5a0188b8d420ae54346b908714de7afe4bfc07c8",
-"modified": "2026-07-20"
+"hash": "b583565145610ca5079c0736828ab5262ec76523",
+"modified": "2026-08-05"
 },
 "The Dragon of Loschy Hill": {
 "hash": "32e9646be6941aa32c1504229b0aceacf1cf7faf",
@@ -2212,12 +2304,16 @@
 "modified": "2026-06-14"
 },
 "The Dullahan": {
-"hash": "3e9f2a62fcdf659fd9e4f6490e8eb587510b8d5a",
-"modified": "2026-07-20"
+"hash": "ad1be470a560b44d816b552969c83b59dd3e82f1",
+"modified": "2026-08-05"
 },
 "The Fenland Mandrake": {
 "hash": "66f3b66a0fddf0dc82f286ad3ceee07224aaac7a",
 "modified": "2026-06-18"
+},
+"The Ghost of Hellens Manor": {
+"hash": "aab3eb9e7fcdd79e9cbcade14bd8003312af7528",
+"modified": "2026-08-05"
 },
 "The Ghosts of Doddington Hall": {
 "hash": "d52a39c95e1d0515336574ca7e90124ea6006607",
@@ -2226,6 +2322,10 @@
 "The Giant Bica of Llangrannog": {
 "hash": "f9a6219a53593bd314f28defae5de34fdc46e732",
 "modified": "2026-06-14"
+},
+"The Giant Snake of Penhesgyn": {
+"hash": "692cf8d7f055c66e35f6ede1f567c3e6e0accf54",
+"modified": "2026-08-05"
 },
 "The Giant of Carn Galver": {
 "hash": "f5d207e574a40a9a926b1d2392931a7ed6b8e1b5",
@@ -2236,12 +2336,16 @@
 "modified": "2026-06-14"
 },
 "The Green Knight": {
-"hash": "638725f23b11c1bdbf31e20a8c8650eb5bcc06bf",
-"modified": "2026-07-20"
+"hash": "1ab621c6d219e9b148ac7d251018058bd03ca0a0",
+"modified": "2026-08-05"
 },
 "The Green Man": {
 "hash": "03548698e6ec6c88cc02bcb1d2ea68edee0e7f29",
 "modified": "2026-06-03"
+},
+"The Gwybr of Llanrhaeadr": {
+"hash": "588c0a4dafa72825a7e63cb0041e2d7b7fa37d0b",
+"modified": "2026-08-05"
 },
 "The Hairy Hands": {
 "hash": "904db904be1a2beb90cbfb0a41c4ff99ea625dfe",
@@ -2259,9 +2363,17 @@
 "hash": "a7a0dc72b2c9d5c321489bd6435403346ccf4fcf",
 "modified": "2026-06-14"
 },
+"The Hogboon of Helliehow": {
+"hash": "e48fc57a05a76cfb953e47a8f878331ba348a6b6",
+"modified": "2026-08-05"
+},
 "The Hunt of Slieve Gullion": {
 "hash": "241fed259e3cfc4626d19a161bf40de6cb85d1aa",
 "modified": "2026-06-19"
+},
+"The Killing of Charles Walton": {
+"hash": "5251e2de9a265aa5e3371294e487f8efee5b3a0b",
+"modified": "2026-08-05"
 },
 "The Lady of the Lake": {
 "hash": "62def8880c41b9cd93d9aeb9402a2114fc60f7e0",
@@ -2284,8 +2396,8 @@
 "modified": "2026-06-14"
 },
 "The Morrigan": {
-"hash": "00a5fc9d22228fbb0236dc23b277c01665d38e35",
-"modified": "2026-07-20"
+"hash": "3356074f2c073be907b1a916c8c7f700df5532b3",
+"modified": "2026-08-05"
 },
 "The Nine Witches of Gloucester": {
 "hash": "d94c6b0bfd7b7a8cc91ae88a76b218aef330a78b",
@@ -2303,6 +2415,10 @@
 "hash": "48bea7351a96a5231d7ebbd48df032a87a6267a4",
 "modified": "2026-06-14"
 },
+"The Pirates' Ambush at Sark": {
+"hash": "5fa2d7e366473065d1c460a3f9cd841f3eee5ed2",
+"modified": "2026-08-05"
+},
 "The Pump Hill Smuggler": {
 "hash": "b436788e4ae6a7e37335557a21ff3ef2e8f2e762",
 "modified": "2026-06-12"
@@ -2315,6 +2431,10 @@
 "hash": "b24bc6b4fb6f8b77450e8f2a4fb6fc836b3ad490",
 "modified": "2026-06-16"
 },
+"The Serpent of Church Island": {
+"hash": "169fb90eb0c3fe77f3a1892c184263fbad5bf871",
+"modified": "2026-08-05"
+},
 "The Towans": {
 "hash": "0de6ba3b3a33c24f97fecde9e8c18e70d3ac71d0",
 "modified": "2026-06-21"
@@ -2322,6 +2442,10 @@
 "The Wherwell Cockatrice": {
 "hash": "db01c1f36720684df0c134dd4dad0f5d6ebf5e6d",
 "modified": "2026-06-13"
+},
+"The White Trout of Cong": {
+"hash": "aa3fedf4531d3e28a2b91750bdeff779179300a8",
+"modified": "2026-08-05"
 },
 "The Whitwick Giant": {
 "hash": "b6116efba2d58fbed7fb179cd38744afbd421f5c",

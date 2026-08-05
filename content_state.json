@@ -867,6 +867,10 @@
 "hash": "881270b12bc78a2b88e72ac87049124d97d4ca90",
 "modified": "2026-06-16"
 },
+"Feolagan of Kebock Head": {
+"hash": "0b67a47d0fb61ea60fd7c30be1b9e4335a440572",
+"modified": "2026-08-05"
+},
 "Fiddler Fynes of Kirkstead": {
 "hash": "18559174a0810f588773d0fa1fb9bd135b1354e2",
 "modified": "2026-06-17"
@@ -1495,6 +1499,10 @@
 "hash": "c0631e1eb05ec6d77ced732960dcc977b29d9b85",
 "modified": "2026-06-17"
 },
+"Lowri and Siân Owen, the Witches of Llanarmon": {
+"hash": "128fe41460209d74a22729380bb2b748b3f921f1",
+"modified": "2026-08-05"
+},
 "Lugh": {
 "hash": "f2dfde7dd7d3b028c1faf09b6c51cdd15c8c8629",
 "modified": "2026-06-19"
@@ -1530,6 +1538,10 @@
 "Maeshowe Runes": {
 "hash": "70926017146ea502f4201c92eeb9ffb210ebd3d6",
 "modified": "2026-06-19"
+},
+"Maeve Roe, the Banshee of Dunluce Castle": {
+"hash": "0dd00148bbd1d61c93e192e73f81561e532d19cd",
+"modified": "2026-08-05"
 },
 "Mag Lena": {
 "hash": "fc1408d8fbdb1feb7539718ad0b67333b86fa147",
@@ -2455,6 +2467,10 @@
 "hash": "bba252814d519a9857112a63683b034c516d7d25",
 "modified": "2026-06-03"
 },
+"The Witch of Ditchling Common": {
+"hash": "df4bb1aec6e835bd74a79cbc4d69225e2dd20aa9",
+"modified": "2026-08-05"
+},
 "The Witch of East Somerton": {
 "hash": "143a8fbeaca47e72ca82084b9a896ff4bc285220",
 "modified": "2026-06-14"
@@ -2462,6 +2478,10 @@
 "The Witch of Knocknashee": {
 "hash": "2eafe593cecb7255f89abae38d70b3ed7cf2a900",
 "modified": "2026-06-10"
+},
+"The Witches Circle of Weelsby Woods": {
+"hash": "0e65366c3331f291936fb64e2baaa3561fee82e3",
+"modified": "2026-08-05"
 },
 "The Wizards of Cwrt y Cadno": {
 "hash": "4b22c8401b971ad073105b26fc64bdfd418d3579",

@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-05T21:57:03.694295Z",
-  "total": 695,
+  "generated": "2026-08-05T22:16:40.296617Z",
+  "total": 700,
   "categories": {
     "beast": "Beasts",
     "ghost": "Ghosts",
@@ -4230,6 +4230,27 @@
       "pronunciation": "fuh-NAH-thuh-ree"
     },
     {
+      "name": "Feolagan of Kebock Head",
+      "lat": 58.1,
+      "lng": -6.33,
+      "category": "fairy",
+      "region": "Kebock Head, Isle of Lewis, Outer Hebrides, Scotland",
+      "summary": "A mouse-sized fairy at Kebock Head paralysed grazing sheep by walking across their backs — curable only by making it retrace its steps, or trapping it in a jar of salt.",
+      "detail": "Hebridean sheep-herding tradition, especially around Kebock Head on the Isle of Lewis, told of a small, mouse-sized fairy creature called the feolagan that would cross a sheep's back and leave it paralysed, unable to eat or drink, so that it would die unless the spell was broken. The only remedies were to catch the feolagan and force it to retrace its steps across the same sheep in the opposite direction, or — if many animals were afflicted at once — to trap the creature in a jar of salt and use the grains from the jar to treat the flock.\n\nThe creature is recorded in more than one online folklore reference with matching detail, but its provenance and antiquity could not be traced back to an older printed or academic folklore collection within the research session's search budget.",
+      "source": "https://www.paranormaldatabase.com/islands/outedata.php",
+      "sources": [
+        "https://www.paranormaldatabase.com/islands/outedata.php",
+        "https://what-when-how.com/celtic-mythology-and-folklore/fachan-athach-to-fergus-feargus-celtic-mythology-and-folklore/"
+      ],
+      "date_added": "2026-08-05",
+      "tags": [
+        "scotland",
+        "hebrides",
+        "curse",
+        "healing"
+      ]
+    },
+    {
       "name": "Fiddler Fynes of Kirkstead",
       "lat": 53.1655,
       "lng": -0.2157,
@@ -7191,6 +7212,26 @@
       "detail": "Loughareema, whose name derives from the Irish Loch an Rith Amach ('the lake that runs out'), is an upland lake near Ballycastle in north Antrim that empties through a sinkhole in its limestone basin and refills from three feeder streams, sometimes within a single day. The lake can be brimming at dusk and bone-dry by morning, leaving its bed as passable ground. A road was constructed through the lake — sensible enough when it was empty — but fatally misleading when water returned in the dark of night.\n\nLocal tradition holds that in the nineteenth century Captain McNeill's coachman drove a two-horse brougham across the hidden lake surface on just such a night. The horses, sensing the rising water, panicked, rearing and plunging until the carriage was dragged beneath the surface. The coachman and both horses were drowned after what witnesses described as 'a terrible struggle for life'. The event passed quickly into folklore, and from there into ghost story: the phantom coach and horses are said to appear at the shoreline on nights when the lake is full, replaying the fatal crossing for those who wait in the dark.\n\nThe lake's dual nature — vanishing lake by day, ghost-haunted water at night — made it a persistent subject of local legend along the Antrim coast. The Geological Society of London has since recognised Loughareema as a significant geological site for its remarkable ephemeral behaviour, and the lake is documented in both scientific and folklore literature. Several Ulster folk accounts record the ghost story, emphasising the coachman's inability to distinguish the road from the water surface in darkness."
     },
     {
+      "name": "Lowri and Siân Owen, the Witches of Llanarmon",
+      "lat": 52.911,
+      "lng": -4.316,
+      "category": "witch",
+      "region": "Llanarmon, near Pwllheli, Gwynedd, Wales",
+      "summary": "Two sisters near Pwllheli ran a cottage \"school\" where they cast out unclean spirits by ceremony and could read the sea's ebb and flow before it turned.",
+      "source": "https://www.peoplescollection.wales/items/1762761",
+      "sources": [
+        "https://www.peoplescollection.wales/items/1762761",
+        "https://nation.cymru/culture/they-were-blamed-for-things-people-didnt-understand-celebrating-international-womens-day-with-efa-lois-welsh-witches/"
+      ],
+      "date_added": "2026-08-05",
+      "tags": [
+        "wales",
+        "gwynedd",
+        "sea",
+        "healing"
+      ]
+    },
+    {
       "name": "Lugh",
       "lat": 54.003,
       "lng": -6.415,
@@ -7365,6 +7406,30 @@
         "orkney"
       ],
       "detail": "Maeshowe is one of the finest Neolithic chambered cairns in Europe, a great grass-covered mound on the Mainland of Orkney enclosing a magnificent stone-built central chamber, raised some five thousand years ago and aligned so that the light of the setting midwinter sun shines straight down the entrance passage to illuminate the back wall — a deliberate marriage of architecture and the turning year. But Maeshowe's most famous fame comes from a much later intrusion: the largest collection of runic inscriptions found anywhere outside Scandinavia.\n\nIn the 12th century, Norsemen — Orkney was then a Norse earldom — broke into the ancient tomb, probably crusaders or shelterers from a storm, and carved their runes into its stones. The graffiti they left is wonderfully, humanly ordinary: boasts that 'these runes were carved by the most skilled rune-carver in the western ocean'; claims that great treasure had been carried off from the howe; a note that 'Thorni bedded Helgi' and other ribald remarks; and the names of men recording simply that they had been there — a Viking-age noticeboard scratched into a tomb already three thousand years old when they entered it.\n\nNorse tradition also peopled such mounds with their original inhabitants made monstrous — the howe-dwellers or 'haugbui', and the trows of Orkney lore were associated with just such ancient mounds. Maeshowe stands at a remarkable crossroads of belief and history: a Neolithic temple of the dead and the midwinter sun, reopened and inscribed by Norsemen whose runes turned the sacred cairn into a record of human curiosity, greed and bravado across the centuries."
+    },
+    {
+      "name": "Maeve Roe, the Banshee of Dunluce Castle",
+      "lat": 55.2103,
+      "lng": -6.5678,
+      "category": "ghost",
+      "region": "Dunluce Castle, County Antrim, Northern Ireland",
+      "summary": "Locked in Dunluce Castle's tower for refusing an arranged marriage, Maeve Roe drowned fleeing by boat with her lover — and her wails are still said to echo from the tower on stormy nights.",
+      "detail": "According to Ulster legend, Maeve Roe was the only daughter of Lord MacQuillan, ruling lord of Dunluce Castle on the County Antrim coast. Her father demanded she marry a suitor of his choosing, but Maeve had already given her heart to Reginald O'Cahan (in some tellings, a MacDonnell), the son of a rival clan. When she refused the arranged match, MacQuillan had her locked in the castle's northeastern tower overlooking the sea.\n\nOn a stormy night, Reginald came to rescue her, and the couple fled down through the sea cave beneath the castle known today as Mermaid's Cave, launching a small boat to cross to the safety of Portrush. The crossing proved fatal: the boat was overwhelmed by the rough waters, and the couple drowned together, Maeve's body never recovered from the sea. Her grieving spirit is said to remain at Dunluce, and visitors and staff have long reported wailing cries and screams from the northeastern tower, particularly during storms — the origin of the site's popular name, the Banshee's Tower.\n\nThe legend has been retold in numerous popular collections of Ulster folklore and ghost stories over the past century, including a dedicated modern retelling, Maeve Roe of Dunluce: The Banshee of Dunluce Castle, and appears alongside other Ulster tales of the MacQuillan and MacDonnell clans who successively held Dunluce. While no contemporary medieval record confirms Maeve Roe's historical existence, the story is consistently associated with the specific architectural features of the castle — the North Tower and Mermaid's Cave — giving it an unusually concrete physical anchor for a legend of this kind.",
+      "source": "https://celticelegance.com/dunluce-castle/",
+      "sources": [
+        "https://celticelegance.com/dunluce-castle/",
+        "https://lovetovisitireland.com/the-woman-locked-in-irelands-most-dramatic-castle-and-why-she-never-left/",
+        "https://www.bohosilver.co.uk/mermaidgate"
+      ],
+      "date_added": "2026-08-05",
+      "tags": [
+        "northern-ireland",
+        "county-antrim",
+        "castle",
+        "sea",
+        "drowning",
+        "love"
+      ]
     },
     {
       "name": "Mag Lena",
@@ -11799,6 +11864,28 @@
       "detail": "The Wild Hunt is among the most dreaded apparitions of British and European folklore — a spectral cavalcade of huntsmen, horses and baying hounds that storms across the night sky or over the wild moors, often heralded by a rising wind and the cry of the pack. To see it was perilous, and to be swept up in it could mean being carried off; its passing was widely held to foretell war, plague or death.\n\nAcross Britain the Hunt rides under many names and many leaders — the Devil, Herne the Hunter in Windsor Forest, Sir Francis Drake, and in older strata Woden or Odin himself. In the north its hounds are the Gabriel Ratchets, whose cries pass unseen overhead; on Dartmoor they are the Wisht Hounds; in Wales they are the Cŵn Annwn, the white red-eared hounds of the Otherworld. Whatever its guise, the Wild Hunt embodies the terror of the wild night and the thin border between the living and the dead."
     },
     {
+      "name": "The Witch of Ditchling Common",
+      "lat": 50.9483,
+      "lng": -0.1004,
+      "category": "witch",
+      "region": "Ditchling Common, East Sussex, England",
+      "summary": "A Sussex witch who turned into a hare by night was unmasked when the hare, bitten while fleeing hunters' dogs, showed the same wound as an old woman's leg the next morning.",
+      "detail": "Ditchling Common in East Sussex carries a pair of linked witch legends recorded by local heritage bodies. In the best-known version, a hare seen bounding across the common at night was long suspected by locals of being an old woman from the area in disguise. When men hunting with dogs cornered and bit the hare on the leg one night, they let it escape — and the following day, an old woman in the village was seen limping home nursing an injured ankle, confirming what everyone had already believed. The shapeshifting-witch-as-hare motif recurs across Sussex folklore, but the Ditchling Common telling is distinguished by its specific, verifiable injury as proof, a common device in English witch legend used to convert suspicion into supposed evidence.\n\nA second, related tradition ties an unnamed witch of Ditchling Common to a different power entirely: the ability to stop carts and wagons dead in the road. According to the story, however hard the horses pulled, a cart could not be made to move past a certain point on the common until the witch's spell was lifted — a variant on the widespread English 'stayed cart' witch legend, in which a witch demonstrates her power over travellers passing through her territory rather than over animals or the weather. Together the two tales place Ditchling Common within the broader documented tradition of South Downs witch-lore that the South Downs National Park Authority has actively catalogued in recent years.",
+      "source": "https://www.eastsussex.gov.uk/leisure-tourism/countryside-sites/ditchling-common/history-and-folklore",
+      "sources": [
+        "https://www.eastsussex.gov.uk/leisure-tourism/countryside-sites/ditchling-common/history-and-folklore",
+        "https://www.southdowns.gov.uk/who-were-the-witches-of-the-south-downs/"
+      ],
+      "date_added": "2026-08-05",
+      "tags": [
+        "england",
+        "sussex",
+        "hare",
+        "shapeshifter",
+        "road"
+      ]
+    },
+    {
       "name": "The Witch of East Somerton",
       "lat": 52.7383,
       "lng": 1.5775,
@@ -11833,6 +11920,27 @@
       ],
       "detail": "Knocknashee — Cnoc na Sí, 'Hill of the Fairies' — is a vast Bronze Age hillfort in the Ox Mountains of County Sligo, its flat summit traditionally said to be the dancing-ground where the Good People gathered every full moon.\n\nLocal tradition tells of an old witch who had once belonged to the fairies herself before being cast out, and who watched their gatherings with bitter hatred. To destroy them, she travelled to 'Pagan England' and gathered soil that she enchanted so that it would swell into a hill the moment it touched Irish ground. Carrying this soil home in a pack on her back, she planned to drop it on top of Knocknashee and crush the fairy mansion beneath it. But the fairies learned of her plan and asked their own wizard for help; he transformed himself into a black pig and, as the witch passed, leapt onto her pack and knocked it from her shoulder.\n\nThe spell still worked — the spilled clay swelled into a new hill on the spot — but not where the witch intended. Seeing what had happened and spotting the pig, she cried out 'Muc Allta!' ('wild pig'), and the new hill took that name, softened over time into Muckalty. The story survives in the Dúchas Schools' Collection alongside other Knocknashee fairy traditions, and the hillfort itself remains one of Ireland's largest Bronze Age monuments.",
       "date_added": "2026-06-10"
+    },
+    {
+      "name": "The Witches Circle of Weelsby Woods",
+      "lat": 53.552,
+      "lng": -0.086,
+      "category": "witch",
+      "region": "Weelsby Woods, Grimsby, Lincolnshire, England",
+      "summary": "A ring in Grimsby's Weelsby Woods known as the Witches Circle, where covens are said to have met since the woods opened to the public in 1951 — locals still dispute what really happens there.",
+      "detail": "Weelsby Woods on the edge of Grimsby is home to a distinctive local legend: a clearing known as the Witches Circle, previously called the Fairy Ring until around the 1950s. According to local tradition, practitioners of witchcraft have gathered there on Friday and Saturday evenings since the woods opened to the public in 1951, performing rituals inside the circle. The tradition took on extra colour once Gerald Gardner's Wicca movement became publicly known in the mid-20th century, with the circle becoming associated with organised modern Pagan witchcraft rather than older cunning-folk practice.\n\nThe legend has generated persistent local disputes: rumours of animal sacrifice at the site have circulated for decades, consistently denied by practising Wiccans who point out that sacrifice plays no part in their religion. Some locals instead believe the circle to be an Anglo-Saxon burial mound reused by later visitors, though no archaeological evidence has been found to confirm this, and the site's true origin remains disputed among local historians. Ghost-hunting groups have also investigated the location, reporting unexplained EVP responses, adding a paranormal layer to the folklore.\n\nWhatever its true origin, the Witches Circle has become a well-known piece of Grimsby's local identity, straddling the line between genuine folk memory and a modern urban legend that grew up around a patch of woodland after it was opened to the public.",
+      "source": "https://www.grimsbytelegraph.co.uk/news/grimsby-news/weelsby-woods-war-witches-history-2557985",
+      "sources": [
+        "https://www.grimsbytelegraph.co.uk/news/grimsby-news/weelsby-woods-war-witches-history-2557985",
+        "https://www.grimsbytelegraph.co.uk/news/grimsby-news/mystery-behind-witches-circle-grimsby-4741179"
+      ],
+      "date_added": "2026-08-05",
+      "tags": [
+        "england",
+        "lincolnshire",
+        "forest",
+        "haunting"
+      ]
     },
     {
       "name": "The Wizards of Cwrt y Cadno",

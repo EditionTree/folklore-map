@@ -45,7 +45,11 @@ h1{font-family:'Marcellus',serif;font-size:clamp(42px,6vw,74px);font-weight:400;
 .section-count{font-size:12px;color:var(--muted);white-space:nowrap}
 .badge-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:24px 18px}
 .badge{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;min-height:188px;padding:12px 10px 14px;border:0;background:transparent;text-align:center;color:var(--ink)}
-.badge:focus-visible{outline:2px solid var(--rust);outline-offset:4px}.badge:hover .badge-pop,.badge:focus .badge-pop{opacity:1;transform:translate(-50%,0);pointer-events:auto}
+.badge:focus-visible{outline:2px solid var(--rust);outline-offset:4px}.badge:hover .badge-pop,.badge:focus-within .badge-pop{opacity:1;transform:translate(-50%,0);pointer-events:auto}
+.badge-share-btn{display:block;margin:12px auto 0;font-family:'Marcellus',serif;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--rust);background:transparent;border:1px solid var(--gold);border-radius:3px;padding:7px 14px;cursor:pointer;transition:border-color .15s,color .15s}
+.badge-share-btn:hover,.badge-share-btn:focus-visible{border-color:var(--rust);color:#9d461f}
+.badge-share-btn[disabled]{opacity:.6;cursor:default}
+.badge-share-status{display:block;margin-top:6px;font-size:11px;color:var(--muted);text-align:center;min-height:1.4em}
 .seal{width:104px;height:104px;margin:0 auto 10px;display:block;filter:hue-rotate(var(--hue,0deg)) saturate(var(--shade-sat,1)) brightness(var(--shade-bright,1)) drop-shadow(0 10px 12px rgba(44,31,14,.22))}
 .badge.progress .seal{filter:grayscale(85%) brightness(calc(var(--shade-bright,1) * .96)) opacity(.78) drop-shadow(0 9px 12px rgba(44,31,14,.16))}
 .seal.seal-placeholder{
@@ -116,6 +120,7 @@ footer{position:relative;text-align:center;padding:12px 18px;font-size:12px;line
   const visitedNames = new Set(Object.keys(visitedObj));
   let legends = [];
   let byName = new Map();
+  const shareIndex = new Map(); // achievement id -> {a, hueDeg, shade}, for the share-card renderer
 
   function iconPath(a){
     return a.icon && a.icon.file ? a.icon.file : 'assets/achievements/wax-seals-v2/achievement-folklore-finder.webp';
@@ -239,7 +244,12 @@ footer{position:relative;text-align:center;padding:12px 18px;font-size:12px;line
     const popSealHtml = notStarted
       ? `<span class="seal seal-placeholder" aria-hidden="true">?</span>`
       : `<img src="${iconPath(a)}" alt=""/>`;
-    return `<button class="badge ${state}" type="button" style="${cssVars}">
+    // A share button has to be a real <button>, which can't nest inside the
+    // badge's own <button> — so the badge itself is a focusable <div> (still
+    // reachable by keyboard via tabindex, still triggers the CSS :focus
+    // popover) rather than a <button>. It never had a click handler of its
+    // own; hover/focus-revealing .badge-pop was always the only behaviour.
+    return `<div class="badge ${state}" tabindex="0" role="group" aria-label="${name}" style="${cssVars}">
       ${sealHtml}
       <span class="badge-name">${name}</span>
       <span class="badge-req">${req}</span>
@@ -250,8 +260,9 @@ footer{position:relative;text-align:center;padding:12px 18px;font-size:12px;line
         <span class="pop-desc">${desc}</span>
         <span class="pop-req">${req}${!r.unlocked && r.current > 0 ? ` · ${r.current} of ${r.target}` : ''}</span>
         ${!r.unlocked && r.current > 0 ? `<span class="mini-track"><span style="width:${r.pct}%"></span></span>` : ''}
+        ${r.unlocked ? `<button type="button" class="badge-share-btn" data-share-id="${a.id}">Share this seal</button><span class="badge-share-status" aria-live="polite"></span>` : ''}
       </span>
-    </button>`;
+    </div>`;
   }
 
   function render(data){
@@ -262,16 +273,190 @@ footer{position:relative;text-align:center;padding:12px 18px;font-size:12px;line
     document.getElementById('overallFill').style.width = publicItems.length ? Math.round(unlocked / publicItems.length * 100) + '%' : '0%';
     document.getElementById('overallNote').textContent = unlocked + ' of ' + publicItems.length + ' public achievements unlocked on this browser.';
     const totalSections = data.sections.length;
+    shareIndex.clear();
     sectionsEl.innerHTML = data.sections.map((section, sectionIdx) => {
       const prevOf = buildTierChains(section.items);
       const items = section.items.filter(a => visibleAchievement(a, evaluate(a), prevOf));
       if(!items.length) return '';
       const got = items.filter(a => evaluate(a).unlocked).length;
       const hueDeg = Math.round(sectionIdx * (360 / Math.max(totalSections, 1)));
-      const badges = items.map((a, i) => renderBadge(a, hueDeg, i)).join('');
+      const badges = items.map((a, i) => {
+        shareIndex.set(a.id, {a, sectionTitle: section.title, hueDeg, shade: SHADE_VARIANTS[i % SHADE_VARIANTS.length]});
+        return renderBadge(a, hueDeg, i);
+      }).join('');
       return `<section class="section"><div class="section-head"><h2>${section.title}</h2><span class="section-count">${got} of ${items.length}</span></div><div class="badge-grid">${badges}</div></section>`;
     }).join('') || '<div class="empty">No public achievements are available yet.</div>';
   }
+
+  // ── Shareable achievement card ──────────────────────────────────────────
+  // Renders a 1080x1080 PNG (canvas 2D, client-side — the site is static
+  // with no server to generate personalised images) matching the seal's own
+  // tint, then hands it to the native share sheet where available, falling
+  // back to a plain download.
+  const CARD_SIZE = 1080;
+
+  function wrapCanvasText(ctx, text, maxWidth){
+    const words = String(text || '').split(/\s+/).filter(Boolean);
+    const lines = [];
+    let line = '';
+    words.forEach(word => {
+      const test = line ? line + ' ' + word : word;
+      if(ctx.measureText(test).width > maxWidth && line){
+        lines.push(line);
+        line = word;
+      } else {
+        line = test;
+      }
+    });
+    if(line) lines.push(line);
+    return lines;
+  }
+
+  function loadImage(src){
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+      img.onload = () => resolve(img);
+      img.onerror = reject;
+      img.src = src;
+    });
+  }
+
+  async function renderAchievementCard(meta){
+    const { a, sectionTitle, hueDeg, shade } = meta;
+    await (document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve());
+    const [sealImg] = await Promise.all([loadImage(iconPath(a))]);
+
+    const canvas = document.createElement('canvas');
+    canvas.width = CARD_SIZE;
+    canvas.height = CARD_SIZE;
+    const ctx = canvas.getContext('2d');
+
+    // Parchment background, matching the page's own gradient.
+    const bg = ctx.createLinearGradient(0, 0, 0, CARD_SIZE);
+    bg.addColorStop(0, '#e8dcc5');
+    bg.addColorStop(0.65, '#f6f1e6');
+    bg.addColorStop(1, '#eadfc9');
+    ctx.fillStyle = bg;
+    ctx.fillRect(0, 0, CARD_SIZE, CARD_SIZE);
+
+    // Border frame.
+    ctx.strokeStyle = 'rgba(176,144,96,.55)';
+    ctx.lineWidth = 3;
+    ctx.strokeRect(28, 28, CARD_SIZE - 56, CARD_SIZE - 56);
+
+    ctx.textAlign = 'center';
+
+    // Kicker.
+    ctx.fillStyle = '#c4622a';
+    ctx.font = '600 26px Marcellus, serif';
+    ctx.fillText('FOLKLORE FINDER · ACHIEVEMENT UNLOCKED', CARD_SIZE / 2, 148);
+    if(sectionTitle){
+      ctx.fillStyle = '#5a4632';
+      ctx.font = 'italic 24px Spectral, serif';
+      ctx.fillText(sectionTitle, CARD_SIZE / 2, 184);
+    }
+
+    // Seal, tinted to match its section (mirrors the CSS .seal filter).
+    const sealSize = 340;
+    const sealX = (CARD_SIZE - sealSize) / 2;
+    const sealY = 230;
+    ctx.save();
+    ctx.shadowColor = 'rgba(44,31,14,.35)';
+    ctx.shadowBlur = 28;
+    ctx.shadowOffsetY = 14;
+    if('filter' in ctx){
+      ctx.filter = `hue-rotate(${hueDeg}deg) saturate(${shade.sat}) brightness(${shade.bright})`;
+    }
+    ctx.drawImage(sealImg, sealX, sealY, sealSize, sealSize);
+    ctx.restore();
+
+    // Achievement name.
+    ctx.fillStyle = '#3f3023';
+    ctx.font = '400 64px Marcellus, serif';
+    ctx.fillText(a.name, CARD_SIZE / 2, 700);
+
+    // Description, wrapped.
+    ctx.fillStyle = '#5a4632';
+    ctx.font = '28px Spectral, serif';
+    const descLines = wrapCanvasText(ctx, a.description, CARD_SIZE - 220);
+    let descY = 760;
+    descLines.slice(0, 3).forEach(line => {
+      ctx.fillText(line, CARD_SIZE / 2, descY);
+      descY += 38;
+    });
+
+    // Divider + site URL.
+    ctx.strokeStyle = 'rgba(176,144,96,.6)';
+    ctx.lineWidth = 1.5;
+    ctx.beginPath();
+    ctx.moveTo(CARD_SIZE / 2 - 70, 940);
+    ctx.lineTo(CARD_SIZE / 2 + 70, 940);
+    ctx.stroke();
+    ctx.fillStyle = '#c4622a';
+    ctx.font = '600 24px Marcellus, serif';
+    ctx.fillText('folklorefinder.uk', CARD_SIZE / 2, 984);
+
+    return new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
+  }
+
+  async function shareOrDownloadBlob(blob, filename, shareTitle, shareText){
+    if(navigator.canShare){
+      try{
+        const file = new File([blob], filename, { type: 'image/png' });
+        if(navigator.canShare({ files: [file] })){
+          await navigator.share({ files: [file], title: shareTitle, text: shareText });
+          return 'shared';
+        }
+      }catch(err){
+        if(err && err.name === 'AbortError') return 'cancelled';
+        // fall through to download on any other failure
+      }
+    }
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 4000);
+    return 'downloaded';
+  }
+
+  sectionsEl.addEventListener('click', async event => {
+    const btn = event.target.closest('.badge-share-btn');
+    if(!btn) return;
+    event.preventDefault();
+    const meta = shareIndex.get(btn.dataset.shareId);
+    const statusEl = btn.nextElementSibling;
+    if(!meta){
+      if(statusEl) statusEl.textContent = "Couldn't find that achievement.";
+      return;
+    }
+    const idleLabel = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = 'Generating…';
+    if(statusEl) statusEl.textContent = '';
+    try{
+      const blob = await renderAchievementCard(meta);
+      const filename = `folklore-finder-${slugify(meta.a.name)}-seal.png`;
+      const outcome = await shareOrDownloadBlob(
+        blob, filename,
+        `${meta.a.name} — Folklore Finder`,
+        `I unlocked the "${meta.a.name}" achievement on Folklore Finder!`
+      );
+      if(statusEl){
+        statusEl.textContent = outcome === 'shared' ? 'Shared!'
+          : outcome === 'downloaded' ? 'Image saved'
+          : '';
+      }
+    }catch(err){
+      if(statusEl) statusEl.textContent = "Couldn't generate the image — try again.";
+    }finally{
+      btn.disabled = false;
+      btn.textContent = idleLabel;
+    }
+  });
 
   Promise.all([
     fetch('assets/achievements/achievements.json?v=20260716a').then(r => r.json()),

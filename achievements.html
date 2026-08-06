@@ -338,6 +338,32 @@ footer{position:relative;text-align:center;padding:12px 18px;font-size:12px;line
     ctx.drawImage(img, x + (w - dw) / 2, y + (h - dh) / 2, dw, dh);
   }
 
+  // The site's own "gilded piping" motif — a thin transparent -> accent ->
+  // gold -> accent -> transparent stripe, the same treatment .topnav::before
+  // and the footer rule use — drawn as a rectangle so it reads as a gilt mat
+  // line between the leafy oak frame and the card's own content.
+  function drawGoldPiping(ctx, inset){
+    const x0 = inset, y0 = inset, x1 = CARD_SIZE - inset, y1 = CARD_SIZE - inset;
+    ctx.lineWidth = 2;
+    function edge(ax, ay, bx, by){
+      const g = ctx.createLinearGradient(ax, ay, bx, by);
+      g.addColorStop(0, 'rgba(196,98,42,0)');
+      g.addColorStop(0.15, '#c4622a');
+      g.addColorStop(0.5, '#b09060');
+      g.addColorStop(0.85, '#c4622a');
+      g.addColorStop(1, 'rgba(196,98,42,0)');
+      ctx.strokeStyle = g;
+      ctx.beginPath();
+      ctx.moveTo(ax, ay);
+      ctx.lineTo(bx, by);
+      ctx.stroke();
+    }
+    edge(x0, y0, x1, y0); // top
+    edge(x0, y1, x1, y1); // bottom
+    edge(x0, y0, x0, y1); // left
+    edge(x1, y0, x1, y1); // right
+  }
+
   // ── Generic share-card chrome ────────────────────────────────────────
   // Background, frame, kicker, headline, body copy and the site URL — the
   // part every card variant (achievement unlock now; nearest-legend and
@@ -369,6 +395,10 @@ footer{position:relative;text-align:center;padding:12px 18px;font-size:12px;line
     vignette.addColorStop(1, 'rgba(232,220,197,.85)');
     ctx.fillStyle = vignette;
     ctx.fillRect(0, 0, CARD_SIZE, CARD_SIZE);
+
+    // Gilded piping, inset just inside the frame's leafy border, as a thin
+    // gold mat line between the frame and the card's own content.
+    drawGoldPiping(ctx, 120);
 
     ctx.textAlign = 'center';
 

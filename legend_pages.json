@@ -9480,6 +9480,186 @@
         "Setting": "East Lothian",
         "Motif": "Goblin Ha'"
       }
+    },
+    "Aimee Lake, the Last Witch of Guernsey": {
+      "image": "legend-images/aimee-lake-the-last-witch-of-guernsey-hero.jpg",
+      "alt": "An elderly cloaked figure walking a wet Guernsey lane between granite cottages at dusk",
+      "caption": "A visual interpretation of the Guernsey legend"
+    },
+    "Benlli Gawr, the Tyrant of Foel Fenlli": {
+      "image": "legend-images/benlli-gawr-the-tyrant-of-foel-fenlli-hero.jpg",
+      "alt": "A giant warrior silhouette standing amid fire on the ramparts of a Welsh hillfort",
+      "caption": "A visual interpretation of the Denbighshire legend"
+    },
+    "Betty Wells, the Witch of Kirton in Lindsey": {
+      "image": "legend-images/betty-wells-the-witch-of-kirton-in-lindsey-hero.jpg",
+      "alt": "A hooded woman on a muddy Lincolnshire village lane beneath a stormy evening sky",
+      "caption": "A visual interpretation of the Lincolnshire legend"
+    },
+    "Betty's Grave": {
+      "image": "legend-images/betty-s-grave-hero.jpg",
+      "alt": "A lonely crossroads grave marker with faded flowers beside a rain-wet Gloucestershire lane",
+      "caption": "A visual interpretation of the Gloucestershire legend"
+    },
+    "Cermand Cestach, the Oracle of Clogher": {
+      "image": "legend-images/cermand-cestach-the-oracle-of-clogher-hero.jpg",
+      "alt": "A weathered idol-like standing stone on a hilltop earthwork under storm clouds",
+      "caption": "A visual interpretation of the County Tyrone legend"
+    },
+    "Cloughmore Stone": {
+      "image": "legend-images/cloughmore-stone-hero.jpg",
+      "alt": "A huge mossy boulder with a hollow overlooking Carlingford Lough at dawn",
+      "caption": "A visual interpretation of the County Down legend"
+    },
+    "Cribarth, the Sleeping Giant": {
+      "image": "legend-images/cribarth-the-sleeping-giant-hero.jpg",
+      "alt": "A misty Welsh mountain ridge whose silhouette resembles a sleeping giant",
+      "caption": "A visual interpretation of the Powys legend"
+    },
+    "Culver Hole and the Smugglers of Port Eynon": {
+      "image": "legend-images/culver-hole-and-the-smugglers-of-port-eynon-hero.jpg",
+      "alt": "A stone-walled sea cave holding barrels on the stormy Gower coast",
+      "caption": "A visual interpretation of the Gower legend"
+    },
+    "Daft Eddie and the Merry Hearts of Down": {
+      "image": "legend-images/daft-eddie-and-the-merry-hearts-of-down-hero.jpg",
+      "alt": "Smugglers unloading barrels by lamplight on the dark shore of Strangford Lough",
+      "caption": "A visual interpretation of the County Down legend"
+    },
+    "Feolagan of Kebock Head": {
+      "image": "legend-images/feolagan-of-kebock-head-hero.jpg",
+      "alt": "Sheep grazing on a windswept Lewis headland with a tiny cold glimmer on one fleece",
+      "caption": "A visual interpretation of the Isle of Lewis legend"
+    },
+    "Haltadans, the Petrified Trows of Fetlar": {
+      "image": "legend-images/haltadans-the-petrified-trows-of-fetlar-hero.jpg",
+      "alt": "A Shetland stone circle on open moorland at cold dawn above the sea",
+      "caption": "A visual interpretation of the Shetland legend"
+    },
+    "John Olliver, the Miller of Highdown Hill": {
+      "image": "legend-images/john-olliver-the-miller-of-highdown-hill-hero.jpg",
+      "alt": "A windmill and prepared tomb on Highdown Hill with distant smuggler lights near the coast",
+      "caption": "A visual interpretation of the Sussex legend"
+    },
+    "Maeve Roe, the Banshee of Dunluce Castle": {
+      "image": "legend-images/maeve-roe-the-banshee-of-dunluce-castle-hero.jpg",
+      "alt": "A pale apparition in a ruined tower of Dunluce Castle above stormy sea cliffs",
+      "caption": "A visual interpretation of the County Antrim legend"
+    },
+    "Marion Pardone, the Witch of Scalloway": {
+      "image": "legend-images/marion-pardone-the-witch-of-scalloway-hero.jpg",
+      "alt": "A dark-cloaked figure watching Scalloway harbour as porpoise shapes surface below",
+      "caption": "A visual interpretation of the Shetland legend"
+    },
+    "Melangell and the Hare": {
+      "image": "legend-images/melangell-and-the-hare-hero.jpg",
+      "alt": "A hare sheltering near a veiled woman in a secluded Welsh valley by an ancient church",
+      "caption": "A visual interpretation of the Powys legend"
+    },
+    "Mermaid of Mahee": {
+      "image": "legend-images/mermaid-of-mahee-hero.jpg",
+      "alt": "A harp-bearing mermaid silhouette in misty water beside Mahee Island monastery ruins",
+      "caption": "A visual interpretation of the County Down legend"
+    },
+    "Mount Killaraus and the Giant's Dance": {
+      "image": "legend-images/mount-killaraus-and-the-giant-s-dance-hero.jpg",
+      "alt": "An ancient stone circle on an Irish hilltop with a distant robed figure in mist",
+      "caption": "A visual interpretation of the County Westmeath legend"
+    },
+    "Old Mother Digby of East Harting": {
+      "image": "legend-images/old-mother-digby-of-east-harting-hero.jpg",
+      "alt": "A hare racing along a wet Sussex lane with a cloaked figure near a flint cottage",
+      "caption": "A visual interpretation of the Sussex legend"
+    },
+    "Saxa and Herman, the Rival Giants of Unst": {
+      "image": "legend-images/saxa-and-herman-the-rival-giants-of-unst-hero.jpg",
+      "alt": "Two giant silhouettes facing each other across a stormy Shetland inlet",
+      "caption": "A visual interpretation of the Shetland legend"
+    },
+    "St Botolph and the Devil": {
+      "image": "legend-images/st-botolph-and-the-devil-hero.jpg",
+      "alt": "A dark whirlwind twisting beside a medieval church tower on the Lincolnshire fen",
+      "caption": "A visual interpretation of the Lincolnshire legend"
+    },
+    "St Osyth Witches and Ursula Kemp": {
+      "image": "legend-images/st-osyth-witches-and-ursula-kemp-hero.jpg",
+      "alt": "A hooded woman being led through a muddy Essex village lane under heavy clouds",
+      "caption": "A visual interpretation of the Essex legend"
+    },
+    "Tavish Dhu (Black Tom), the Pirate of the Skerries": {
+      "image": "legend-images/tavish-dhu-black-tom-the-pirate-of-the-skerries-hero.jpg",
+      "alt": "A cloaked sea raider beside spilled silver on moonlit rocks off Portrush",
+      "caption": "A visual interpretation of the County Antrim legend"
+    },
+    "The Binbrook Bewitched Farm (1905)": {
+      "image": "legend-images/the-binbrook-bewitched-farm-1905-hero.jpg",
+      "alt": "An Edwardian farmyard with a stuck wooden wagon and small objects suspended above the mud",
+      "caption": "A visual interpretation of the Lincolnshire legend"
+    },
+    "The Black Nun of Bonamargy": {
+      "image": "legend-images/the-black-nun-of-bonamargy-hero.jpg",
+      "alt": "A black-cloaked figure standing among Bonamargy Friary ruins beside a misty river",
+      "caption": "A visual interpretation of the County Antrim legend"
+    },
+    "The Cooneen Ghost": {
+      "image": "legend-images/the-cooneen-ghost-hero.jpg",
+      "alt": "An isolated Fermanagh cottage at night with a lamplit room disturbed by unseen force",
+      "caption": "A visual interpretation of the County Fermanagh legend"
+    },
+    "The Ghost of Hellens Manor": {
+      "image": "legend-images/the-ghost-of-hellens-manor-hero.jpg",
+      "alt": "A pale figure behind a scratched window of Hellens Manor on a rain-dark evening",
+      "caption": "A visual interpretation of the Herefordshire legend"
+    },
+    "The Giant Snake of Penhesgyn": {
+      "image": "legend-images/the-giant-snake-of-penhesgyn-hero.jpg",
+      "alt": "A huge dark viper striking at its reflection in a brass pan beside a Welsh farmyard",
+      "caption": "A visual interpretation of the Anglesey legend"
+    },
+    "The Gwybr of Llanrhaeadr": {
+      "image": "legend-images/the-gwybr-of-llanrhaeadr-hero.jpg",
+      "alt": "A distant winged serpent shape in the mist above Pistyll Rhaeadr waterfall",
+      "caption": "A visual interpretation of the Powys legend"
+    },
+    "The Hogboon of Helliehow": {
+      "image": "legend-images/the-hogboon-of-helliehow-hero.jpg",
+      "alt": "A grassy Orkney mound with milk and ale offerings near a windswept stone farm",
+      "caption": "A visual interpretation of the Orkney legend"
+    },
+    "The Killing of Charles Walton": {
+      "image": "legend-images/the-killing-of-charles-walton-hero.jpg",
+      "alt": "A black dog on a muddy Warwickshire hill track with a faint figure in the fog beyond",
+      "caption": "A visual interpretation of the Warwickshire legend"
+    },
+    "The Pirates' Ambush at Sark": {
+      "image": "legend-images/the-pirates-ambush-at-sark-hero.jpg",
+      "alt": "Cloaked figures carrying a coffin onto a rocky Sark cove beneath a fortified hillside",
+      "caption": "A visual interpretation of the Sark legend"
+    },
+    "The Serpent of Church Island": {
+      "image": "legend-images/the-serpent-of-church-island-hero.jpg",
+      "alt": "A dark serpent coiled around a mossy stone beside Lough Gill with hidden gold below",
+      "caption": "A visual interpretation of the County Sligo legend"
+    },
+    "The White Trout of Cong": {
+      "image": "legend-images/the-white-trout-of-cong-hero.jpg",
+      "alt": "A pale trout beneath still lake water near reeds and misty trees at dawn",
+      "caption": "A visual interpretation of the County Mayo legend"
+    },
+    "The Witch of Ditchling Common": {
+      "image": "legend-images/the-witch-of-ditchling-common-hero.jpg",
+      "alt": "A hare fleeing across Ditchling Common with a dark figure on the heath behind",
+      "caption": "A visual interpretation of the Sussex legend"
+    },
+    "The Witches Circle of Weelsby Woods": {
+      "image": "legend-images/the-witches-circle-of-weelsby-woods-hero.jpg",
+      "alt": "A candlelit ring in a wet winter woodland clearing at blue dusk",
+      "caption": "A visual interpretation of the Lincolnshire legend"
+    },
+    "Lowri and Siân Owen, the Witches of Llanarmon": {
+      "image": "legend-images/lowri-and-sian-owen-the-witches-of-llanarmon-hero.jpg",
+      "alt": "Two cloaked women beside a stone Welsh cottage looking out toward a grey sea",
+      "caption": "A visual interpretation of the Gwynedd legend"
     }
   }
 }

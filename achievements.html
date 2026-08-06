@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <script>if(location.hostname.indexOf("pages.dev")>-1){location.replace("https://folklorefinder.uk"+location.pathname+location.search+location.hash);}</script>
+<script src="/share-card.js"></script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"64d1fd37251d426f8a0d8fbc83ea350b"}'></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Achievements · Folklore Finder</title>
@@ -289,262 +290,23 @@ footer{position:relative;text-align:center;padding:12px 18px;font-size:12px;line
   }
 
   // ── Shareable achievement card ──────────────────────────────────────────
-  // Renders a 1080x1080 PNG (canvas 2D, client-side — the site is static
-  // with no server to generate personalised images) matching the seal's own
-  // tint, then hands it to the native share sheet where available, falling
-  // back to a plain download.
-  const CARD_SIZE = 1080;
-
-  function wrapCanvasText(ctx, text, maxWidth){
-    const words = String(text || '').split(/\s+/).filter(Boolean);
-    const lines = [];
-    let line = '';
-    words.forEach(word => {
-      const test = line ? line + ' ' + word : word;
-      if(ctx.measureText(test).width > maxWidth && line){
-        lines.push(line);
-        line = word;
-      } else {
-        line = test;
-      }
-    });
-    if(line) lines.push(line);
-    return lines;
-  }
-
-  function loadImage(src){
-    return new Promise((resolve, reject) => {
-      const img = new Image();
-      img.onload = () => resolve(img);
-      img.onerror = reject;
-      img.src = src;
-    });
-  }
-
-  // Two brand assets shared by every share-card variant, cached after first
-  // load so re-sharing (or later card types — nearest-legend, collection-
-  // complete) doesn't refetch them: the oak-branch frame that already
-  // borders the homepage's place-explorer panel, and the antique nautical
-  // chart the homepage hero and OG card are built from — using both here
-  // ties the card to the rest of the site's "atlas" identity instead of
-  // being a bare text card.
-  let framePromise, chartPromise;
-  function loadFrame(){ return framePromise || (framePromise = loadImage('assets/ornaments/generated-variants/oak-branch-frame-v1.png')); }
-  function loadChart(){ return chartPromise || (chartPromise = loadImage('hero-nautical-chart.jpg')); }
-
-  function drawCoverImage(ctx, img, x, y, w, h){
-    const scale = Math.max(w / img.width, h / img.height);
-    const dw = img.width * scale, dh = img.height * scale;
-    ctx.drawImage(img, x + (w - dw) / 2, y + (h - dh) / 2, dw, dh);
-  }
-
-  // The site's own "gilded piping" motif — a thin transparent -> accent ->
-  // gold -> accent -> transparent stripe, the same treatment .topnav::before
-  // and the footer rule use — drawn as a rectangle so it reads as a gilt mat
-  // line between the leafy oak frame and the card's own content.
-  function drawGoldPiping(ctx, inset){
-    const x0 = inset, y0 = inset, x1 = CARD_SIZE - inset, y1 = CARD_SIZE - inset;
-    ctx.lineWidth = 2;
-    function edge(ax, ay, bx, by){
-      const g = ctx.createLinearGradient(ax, ay, bx, by);
-      g.addColorStop(0, 'rgba(196,98,42,0)');
-      g.addColorStop(0.15, '#c4622a');
-      g.addColorStop(0.5, '#b09060');
-      g.addColorStop(0.85, '#c4622a');
-      g.addColorStop(1, 'rgba(196,98,42,0)');
-      ctx.strokeStyle = g;
-      ctx.beginPath();
-      ctx.moveTo(ax, ay);
-      ctx.lineTo(bx, by);
-      ctx.stroke();
-    }
-    edge(x0, y0, x1, y0); // top
-    edge(x0, y1, x1, y1); // bottom
-    edge(x0, y0, x0, y1); // left
-    edge(x1, y0, x1, y1); // right
-  }
-
-  // ── Generic share-card chrome ────────────────────────────────────────
-  // Background, frame, kicker, headline, body copy and the site URL — the
-  // part every card variant (achievement unlock now; nearest-legend and
-  // collection-complete later) shares. Callers draw their own centerpiece
-  // (a tinted seal, a legend photo, …) into the gap this leaves between
-  // subKickerY and the headline.
-  async function drawShareCardChrome(ctx, { kicker, subKicker, title, body }){
-    const chart = await loadChart();
-
-    // Parchment base, then the nautical chart worked in at low opacity so
-    // the card reads as "a page from the atlas," not a plain text card.
-    const bg = ctx.createLinearGradient(0, 0, 0, CARD_SIZE);
-    bg.addColorStop(0, '#e8dcc5');
-    bg.addColorStop(0.65, '#f6f1e6');
-    bg.addColorStop(1, '#eadfc9');
-    ctx.fillStyle = bg;
-    ctx.fillRect(0, 0, CARD_SIZE, CARD_SIZE);
-    ctx.save();
-    ctx.globalAlpha = 0.24;
-    drawCoverImage(ctx, chart, 0, 0, CARD_SIZE, CARD_SIZE);
-    ctx.restore();
-    // Warm the centre back up over the chart so text stays legible —
-    // darkest at the frame edge, clear in the middle where the art sits.
-    const vignette = ctx.createRadialGradient(
-      CARD_SIZE / 2, CARD_SIZE / 2, CARD_SIZE * 0.28,
-      CARD_SIZE / 2, CARD_SIZE / 2, CARD_SIZE * 0.72
-    );
-    vignette.addColorStop(0, 'rgba(246,241,230,0)');
-    vignette.addColorStop(1, 'rgba(232,220,197,.85)');
-    ctx.fillStyle = vignette;
-    ctx.fillRect(0, 0, CARD_SIZE, CARD_SIZE);
-
-    // Gilded piping, inset just inside the frame's leafy border, as a thin
-    // gold mat line between the frame and the card's own content.
-    drawGoldPiping(ctx, 120);
-
-    ctx.textAlign = 'center';
-
-    // Safe interior: measured from the actual frame PNG (its leafy border
-    // is organic, not a uniform band — stray leaf tips reach up to ~180px
-    // deep at 1080-canvas scale on every side). Keep all text within
-    // roughly y=205..900 and +/-170px margin either side of center.
-    //
-    // Every card variant carries the site name and a one-line explainer —
-    // shared out of context (downloaded, reposted, forwarded), the card
-    // has no surrounding page to lean on, so it has to be self-explanatory:
-    // what site this is from, and — via `body`, which callers should pass
-    // as the achievement's literal `req` + its flavour description — what
-    // was actually done to earn it, not just mood-setting copy.
-
-    // Kicker.
-    ctx.fillStyle = '#c4622a';
-    ctx.font = '600 26px Marcellus, serif';
-    ctx.fillText(`FOLKLORE FINDER · ${kicker}`, CARD_SIZE / 2, 210);
-    if(subKicker){
-      ctx.fillStyle = '#5a4632';
-      ctx.font = 'italic 24px Spectral, serif';
-      ctx.fillText(subKicker, CARD_SIZE / 2, 244);
-    }
-
-    // Headline — drawn by the caller's centerpiece step in between, so this
-    // just reserves/returns the baseline it should render at.
-    const titleY = 712;
-    ctx.fillStyle = '#3f3023';
-    ctx.font = '400 66px Marcellus, serif';
-    ctx.fillText(title, CARD_SIZE / 2, titleY);
-
-    let afterBodyY = titleY + 36;
-    if(body){
-      ctx.fillStyle = '#5a4632';
-      ctx.font = '27px Spectral, serif';
-      const bodyLines = wrapCanvasText(ctx, body, CARD_SIZE - 380);
-      let bodyY = titleY + 46;
-      bodyLines.slice(0, 2).forEach(line => {
-        ctx.fillText(line, CARD_SIZE / 2, bodyY);
-        bodyY += 28;
-      });
-      afterBodyY = bodyY;
-    }
-
-    // Site explainer — the achievement/legend copy above says what was
-    // earned; this says what earned it *on*, for a viewer with zero context.
-    ctx.fillStyle = '#8a7256';
-    ctx.font = 'italic 19px Spectral, serif';
-    ctx.fillText('An interactive folklore map of Britain & Ireland', CARD_SIZE / 2, afterBodyY + 12);
-
-    // Divider + site URL.
-    const dividerY = afterBodyY + 26;
-    ctx.strokeStyle = 'rgba(176,144,96,.7)';
-    ctx.lineWidth = 1.5;
-    ctx.beginPath();
-    ctx.moveTo(CARD_SIZE / 2 - 70, dividerY);
-    ctx.lineTo(CARD_SIZE / 2 + 70, dividerY);
-    ctx.stroke();
-    ctx.fillStyle = '#c4622a';
-    ctx.font = '600 24px Marcellus, serif';
-    ctx.fillText('folklorefinder.uk', CARD_SIZE / 2, dividerY + 26);
-
-    // Deliberately NOT drawing the oak-branch frame here — it has to stay
-    // the true topmost layer over each card variant's own centerpiece
-    // (seal, photo, …), so callers draw it last via drawShareCardFrame().
-  }
-
-  async function drawShareCardFrame(ctx){
-    const frame = await loadFrame();
-    // Its centre is transparent, so this only ever reads as a decorative
-    // border around whatever the caller already drew.
-    ctx.drawImage(frame, 0, 0, CARD_SIZE, CARD_SIZE);
-  }
-
+  // Uses the shared renderer in /share-card.js (also used by legend pages
+  // for the nearest-legend-found card and generated collection pages for
+  // the collection-complete card) so all three read as the same template.
   async function renderAchievementCard(meta){
     const { a, sectionTitle, hueDeg, shade } = meta;
-    await (document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve());
-    const sealImg = await loadImage(iconPath(a));
-
-    const canvas = document.createElement('canvas');
-    canvas.width = CARD_SIZE;
-    canvas.height = CARD_SIZE;
-    const ctx = canvas.getContext('2d');
-
-    await drawShareCardChrome(ctx, {
+    return window.ShareCard.renderSealCard({
       kicker: 'ACHIEVEMENT UNLOCKED',
       subKicker: sectionTitle,
       title: a.name,
       // `req` is the literal, unambiguous "what you did" ("Visit Black
-      // Shuck"); `description` is the flavour line. Neither alone is enough
+      // Shuck"); `description" is the flavour line. Neither alone is enough
       // out of context — the flavour text especially can read as a random
       // sentence with no seal, no achievement name, and no site attached.
       body: a.req ? `${a.req}. ${a.description}` : a.description,
+      sealSrc: iconPath(a),
+      tint: { hue: hueDeg, sat: shade.sat, bright: shade.bright },
     });
-
-    // Seal centerpiece: a warm glow "spotlight" behind it, then the seal
-    // itself tinted to match its section (mirrors the CSS .seal filter).
-    const sealSize = 400;
-    const sealX = (CARD_SIZE - sealSize) / 2;
-    const sealY = 254;
-    const glow = ctx.createRadialGradient(
-      CARD_SIZE / 2, sealY + sealSize / 2, sealSize * 0.15,
-      CARD_SIZE / 2, sealY + sealSize / 2, sealSize * 0.85
-    );
-    glow.addColorStop(0, 'rgba(196,98,42,.45)');
-    glow.addColorStop(1, 'rgba(196,98,42,0)');
-    ctx.fillStyle = glow;
-    ctx.fillRect(0, 0, CARD_SIZE, CARD_SIZE);
-
-    ctx.save();
-    ctx.shadowColor = 'rgba(44,31,14,.4)';
-    ctx.shadowBlur = 30;
-    ctx.shadowOffsetY = 14;
-    if('filter' in ctx){
-      ctx.filter = `hue-rotate(${hueDeg}deg) saturate(${shade.sat}) brightness(${shade.bright})`;
-    }
-    ctx.drawImage(sealImg, sealX, sealY, sealSize, sealSize);
-    ctx.restore();
-
-    await drawShareCardFrame(ctx);
-    return new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
-  }
-
-  async function shareOrDownloadBlob(blob, filename, shareTitle, shareText){
-    if(navigator.canShare){
-      try{
-        const file = new File([blob], filename, { type: 'image/png' });
-        if(navigator.canShare({ files: [file] })){
-          await navigator.share({ files: [file], title: shareTitle, text: shareText });
-          return 'shared';
-        }
-      }catch(err){
-        if(err && err.name === 'AbortError') return 'cancelled';
-        // fall through to download on any other failure
-      }
-    }
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = filename;
-    document.body.appendChild(link);
-    link.click();
-    link.remove();
-    setTimeout(() => URL.revokeObjectURL(url), 4000);
-    return 'downloaded';
   }
 
   sectionsEl.addEventListener('click', async event => {
@@ -564,7 +326,7 @@ footer{position:relative;text-align:center;padding:12px 18px;font-size:12px;line
     try{
       const blob = await renderAchievementCard(meta);
       const filename = `folklore-finder-${slugify(meta.a.name)}-seal.png`;
-      const outcome = await shareOrDownloadBlob(
+      const outcome = await window.ShareCard.shareOrDownload(
         blob, filename,
         `${meta.a.name} — Folklore Finder`,
         `I unlocked the "${meta.a.name}" achievement on Folklore Finder!`

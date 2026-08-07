@@ -1,6 +1,6 @@
 {
-  "generated": "2026-08-05T22:16:40.296617Z",
-  "total": 700,
+  "generated": "2026-08-07T18:42:47.402001Z",
+  "total": 705,
   "categories": {
     "beast": "Beasts",
     "ghost": "Ghosts",
@@ -125,7 +125,10 @@
         "https://museumofwitchcraftandmagic.co.uk/news/the-last-witch-trial-in-guernsey/",
         "https://guernseydonkey.com/the-last-witchcraft-trial-in-guernsey/",
         "https://history.gg/guernseys-witch-trial/"
-      ]
+      ],
+      "origin_date": "1914",
+      "earliest_record": "Royal Court of Guernsey trial records and contemporary press coverage, January 1914",
+      "period": "Edwardian era"
     },
     {
       "name": "Alderley Edge",
@@ -585,6 +588,29 @@
       "detail": "The legend of the Barns of Ayr comes to us from Blind Harry's The Wallace, a late 15th-century verse epic written around 1477, more than a century and a half after the events it purports to describe. In Harry's account, English soldiers gathered Scottish nobles of Ayrshire — including Sir Ronald Crawford, Sheriff of Ayr, Sir Bryce Blair of Blair, Sir Neil Montgomerie, Crystal of Seton, and Sir Hugh Montgomerie — to a supposed meeting at a large building in Ayr being used as an English military garrison. When the nobles arrived, they were set upon: the more prominent among them were hanged on the spot. The massacre, in Harry's telling, was deliberate treachery by an occupying power, a violation of the peace flag under which the meeting had been called.\n\nThe act of revenge that followed became one of the defining moments of Wallace's legendary biography. Wallace assembled a force, surrounded the barracks at night, and set the building on fire with the English garrison inside. In The Wallace, this act of burning is presented not as atrocity but as righteous retribution — the English had used the law against Scotland's nobles; Wallace used fire. Modern historians have found no corroborating documentary evidence for a mass killing of Scottish nobles in Ayrshire at this time, and Blind Harry is now regarded as an unreliable historian who drew on oral tradition and political motivation to create a Wallace who embodied the full extent of Scottish grievance against the English crown.\n\nThe historical kernel is real: Edward I's Scottish campaign of 1296–1307 was brutal, and the Barns of Ayr legend functions as a compression of genuine oppression into a single memorable image of treachery and fire. The legend passed into Scottish popular culture with considerable force, eventually appearing in Braveheart as the film's emotional turning point. The site at Ayr — no longer standing — appeared in early maps of the town, and the legend was preserved locally long before Blind Harry committed it to verse, suggesting it had circulated as oral tradition in Ayrshire for generations."
     },
     {
+      "name": "Baron Kitter and the Witch Ada",
+      "lat": 54.056,
+      "lng": -4.797,
+      "category": "witch",
+      "region": "Calf of Man, Isle of Man",
+      "summary": "A Norwegian tyrant hunted the Isle of Man's wildlife to extinction until the witch Ada burned his castle behind his back — his drowned crew giving their name to the islet of Kitterland forever after.",
+      "detail": "Manx tradition holds that, generations before recorded history, a Norwegian baron named Kitter ruled the Isle of Man from a castle on the mountain of Barrule. Kitter was an obsessive hunter, and in time he wiped out the island's native bison and elk entirely. The Manx people, fearing he would turn next to their livestock and to the wild creatures of the hills, went to the wisest of the island's witches for help.\n\nWhen Kitter crossed to the Calf of Man to hunt red deer, he left his castle in the care of his cook, Eaoch. While Eaoch slept, the witch Ada worked a spell on the cooking pot left over the fire, so that the fat boiled over and set the castle alight. Eaoch's cries carried across the water to Kitter on the Calf, and he and his companions launched a small currach to race back and save it. Partway across the sound, the currach struck a rock in the treacherous currents and everyone aboard was drowned. The rock has been called Kitterland ever since.\n\nThe story was collected by Sophia Morrison in her 1911 Manx Fairy Tales, itself drawing on folklore already circulating in earlier 19th-century collections of Manx tradition, and it remains attached to a real, named place: Kitterland is a small islet in the Calf Sound between the Isle of Man and the Calf of Man, now in the care of the Manx National Trust and known today chiefly as a haven for seabirds rather than the site of a drowned baron's ambition.",
+      "source": "https://en.wikipedia.org/wiki/Kitterland",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Kitterland",
+        "https://www.gutenberg.org/ebooks/51762",
+        "https://www.transceltic.com/manx/sophia-morrison-s-manx-fairy-tales-story-of-baron-kitterland-whose-reckless-behaviour-was"
+      ],
+      "date_added": "2026-08-07",
+      "tags": [
+        "isle-of-man",
+        "island",
+        "curse",
+        "guardian",
+        "shapeshifter"
+      ]
+    },
+    {
       "name": "Bartholomew Roberts",
       "lat": 51.9223,
       "lng": -4.9388,
@@ -988,8 +1014,12 @@
       "sources": [
         "https://www.spookyisles.com/bettys-grave/",
         "https://www.sabre-roads.org.uk/wiki/index.php?title=Betty's_Grave",
-        "http://www.greatbritishghosttour.co.uk/Pages/England/Gloucestershire/Poulton.html"
-      ]
+        "http://www.greatbritishghosttour.co.uk/Pages/England/Gloucestershire/Poulton.html",
+        "https://historicengland.org.uk/images-books/photos/item/LON01/01/GC/040"
+      ],
+      "origin_date": "1786 (traditional burial date)",
+      "earliest_record": "Ordnance Survey map, 1830 (first cartographic record of the 'Betty's Grave' name)",
+      "period": "Georgian era"
     },
     {
       "name": "Bevis of Hampton",
@@ -1856,6 +1886,24 @@
       "period": "Late medieval, early 15th century"
     },
     {
+      "name": "Burial Place of the Big Women",
+      "lat": 56.448,
+      "lng": -6.895,
+      "category": "ghost",
+      "region": "Hynish, Isle of Tiree, Inner Hebrides, Scotland",
+      "summary": "A farm shed built from the robbed stones of an ancient women's graveyard on Tiree left a servant hearing faint voices repeat: \"This is the stone that was at my head.\"",
+      "detail": "At Hynish on the Isle of Tiree stood a disused burial ground known in Gaelic as Cladh nam Ban Mòra, the Burial Place of the Big Women, likely once linked to a chapel and, by local tradition, associated with a community of religious women. By the nineteenth century the graveyard had long fallen out of use, and its stones were considered fair game for building material: some were taken to construct an outbuilding on the Hynish farm.\n\nThe ghost story attached to that reuse was recorded by the folklorist Rev. John Gregorson Campbell in his 1902 collection Witchcraft and Second Sight in the Highlands and Islands of Scotland. A servant from the neighbouring island of Mull, sent to sleep in the newly built shed, found his dog would not settle, repeatedly leaping onto the bed and snarling at something unseen in the dark. Through the night the servant heard faint voices around the building, each repeating the same complaint: \"This is the stone that was at my head.\" He refused ever to sleep there again, convinced the graveyard's disturbed dead had followed their headstones into the new building.\n\nGregorson Campbell's account allows that the servant may have been the victim of a hoax, but records the story as it was told and believed locally. The scholar Ronald Black later discussed the tale in his annotated edition The Gaelic Otherworld, situating it within a wider Hebridean tradition of \"big women\" place-names, which range from this specific haunted graveyard at Hynish to a broader, older strand of legend on the nearby Isle of Eigg (whose Gaelic name likewise translates as the Island of the Big Women) about a vanished race of giant women. The Hynish story is the more concrete and place-anchored of the two: a named graveyard, a named building, and a specific, quotable haunting rather than a general legendary ancestry.",
+      "source": "http://www.tireeplacenames.org/hynish/the-burial-place-of-the-big-women-or-cladh-nam-ban-mora/",
+      "date_added": "2026-08-07",
+      "tags": [
+        "scotland",
+        "highland",
+        "island",
+        "haunting",
+        "guardian"
+      ]
+    },
+    {
       "name": "Bwbach",
       "lat": 51.482,
       "lng": -3.179,
@@ -1905,8 +1953,15 @@
         "wales",
         "gwynedd"
       ],
-      "detail": "Cadair Idris — 'the Chair of Idris' — is a great mountain rising above the southern edge of Snowdonia in Gwynedd, and its very name is steeped in legend. Tradition holds it to be the seat of Idris, a giant (Idris Gawr) or, in some tellings, a mighty prince, warrior and astronomer-poet who would sit upon the mountain to study the stars, the broad hollow of the summit forming his chair. The mountain's dramatic cliffs, dark lake-filled cwms and frequent crown of cloud have long made it a place of awe.\n\nIts most famous legend concerns the danger and the gift of sleeping there. It is said that anyone who spends a night alone on the summit of Cadair Idris will come down in the morning either a madman or a poet — the mountain bestowing either inspiration or ruin on whoever dares the vigil, with no middle path. The belief, recorded in the 18th and 19th centuries and woven into Welsh Romantic tradition, casts the mountain as a threshold of the Otherworld, a place where the boundary between mortal mind and the powers beyond it grows thin.\n\nThe dark lake of Llyn Cau, cradled in the mountain's flank, has its own legends of a bottomless depth and a lurking monster, and the Cŵn Annwn, the spectral hounds of the Welsh Otherworld, were said to course the heights. Between the giant's chair, the poet's perilous sleep and the haunted lake, Cadair Idris stands as one of the most legend-laden mountains in Wales — a peak where landscape and myth are inseparable.",
-      "pronunciation": "KAD-air ID-riss"
+      "detail": "Cadair Idris — 'the Chair of Idris' — is a great mountain rising above the southern edge of Snowdonia in Gwynedd, and its very name is steeped in legend. Tradition holds it to be the seat of Idris, a giant (Idris Gawr) or, in some tellings, a mighty prince, warrior and astronomer-poet who would sit upon the mountain to study the stars, the broad hollow of the summit forming his chair. The mountain's dramatic cliffs, dark lake-filled cwms and frequent crown of cloud have long made it a place of awe.\n\nIts most famous legend concerns the danger and the gift of sleeping there. It is said that anyone who spends a night alone on the summit of Cadair Idris will come down in the morning either a madman or a poet — the mountain bestowing either inspiration or ruin on whoever dares the vigil, with no middle path. The earliest known record of the belief appears in Edward Jones's The Bardic Museum of Primitive British Literature (1802), and it was repeated and embroidered throughout the 19th-century Welsh Romantic revival, casting the mountain as a threshold of the Otherworld, a place where the boundary between mortal mind and the powers beyond it grows thin.\n\nThe dark lake of Llyn Cau, cradled in the mountain's flank, has its own legends of a bottomless depth and a lurking monster, and the Cŵn Annwn, the spectral hounds of the Welsh Otherworld, were said to course the heights. Between the giant's chair, the poet's perilous sleep and the haunted lake, Cadair Idris stands as one of the most legend-laden mountains in Wales — a peak where landscape and myth are inseparable.",
+      "pronunciation": "KAD-air ID-riss",
+      "sources": [
+        "https://www.visitwales.com/things-do/adventure-and-activities/walking/guide-to-walking-up-cader-idris",
+        "https://en.wikipedia.org/wiki/Cadair_Idris"
+      ],
+      "origin_date": "at least 1802 (earliest print record); the mountain's giant/bardic associations are likely older oral tradition",
+      "earliest_record": "Edward Jones, The Bardic Museum of Primitive British Literature (1802), the second volume of his Musical and Poetical Relicks of the Welsh Bards",
+      "period": "documented at the start of the Welsh Romantic revival, 19th century"
     },
     {
       "name": "Caer Bran",
@@ -2666,7 +2721,8 @@
         "https://experience-enniskillen.com/blog/conn-eda-and-the-golden-apples/",
         "https://archive.org/details/storyofconnedaor00okea",
         "https://loughneaghtours.com/myths-and-legends-of-lough-neagh/",
-        "https://riverbannloughneagh.org/legends/"
+        "https://riverbannloughneagh.org/legends/",
+        "https://www.gutenberg.org/ebooks/33887"
       ],
       "date_added": "2026-06-16",
       "tags": [
@@ -2841,7 +2897,7 @@
       "category": "witch",
       "region": "Swineshead, Lincolnshire",
       "summary": "A reclusive fenland woman with three cats for familiars was said to summon the Devil at the Manwar Rings earthwork, until a mob who came to spy on her found only her cats and broom — and her curse.",
-      "detail": "Crazy Kate is the witch of Swineshead in the Lincolnshire fens, a figure of the kind that gathered around any solitary, unliked woman in a superstitious age. She was said to keep three cats as her familiars and, by night, to make her way to the Manwar Rings — an ancient earthwork east of the village, reputed to date from the time of Canute and long held to be a place where witches met to take their instruction from the Devil.\n\nThe best-known tale tells how suspicious villagers resolved to watch her. For three nights they hid in her garden, but never once saw her come or go; they concluded that she had sensed them, made herself invisible, and slipped away. When at last they broke into her cottage they found only her cats and her broom — and then Kate herself fell upon them, promising to curse the whole pack of them for their trespass. In some tellings the angry mob later burned her cottage and her cats, and she was never seen again.\n\nThe legend is preserved in modern Lincolnshire folklore collections, including Polly Howat's *Ghosts and Legends of Lincolnshire and the Fen Country* and the Lincolnshire Folk Tales Project. Crazy Kate is distinct from the older Swineshead legend of Brother Simon, the monk said to have poisoned King John at the nearby abbey.",
+      "detail": "Crazy Kate is the witch of Swineshead in the Lincolnshire fens, a figure of the kind that gathered around any solitary, unliked woman in a superstitious age. She was said to keep three cats as her familiars and, by night, to make her way to the Manwar Rings, earthworks east of the village long held in local tradition to date from the time of Canute and to be a place where witches met to take their instruction from the Devil. Historic England schedules the site as the remains of a 12th-century motte-and-bailey castle raised by the Norman de Gresley family, the same lords of the manor who founded Swineshead Abbey — centuries later than the Danish-era origin the legend gives it.\n\nThe best-known tale tells how suspicious villagers resolved to watch her. For three nights they hid in her garden, but never once saw her come or go; they concluded that she had sensed them, made herself invisible, and slipped away. When at last they broke into her cottage they found only her cats and her broom — and then Kate herself fell upon them, promising to curse the whole pack of them for their trespass. In some tellings the angry mob later burned her cottage and her cats, and she was never seen again.\n\nThe legend is preserved in modern Lincolnshire folklore collections, including Polly Howat's *Ghosts and Legends of Lincolnshire and the Fen Country* and the Lincolnshire Folk Tales Project. Crazy Kate is distinct from the older Swineshead legend of Brother Simon, the monk said to have poisoned King John at the nearby abbey.",
       "source": "https://lincolnshirefolktalesproject.com/2024/02/06/crazy-kate-the-witch-of-swineshead/",
       "date_added": "2026-06-13",
       "tags": [
@@ -2849,7 +2905,12 @@
         "curse",
         "england",
         "lincolnshire"
-      ]
+      ],
+      "sources": [
+        "https://lincolnshirefolktalesproject.com/2024/02/06/crazy-kate-the-witch-of-swineshead/",
+        "https://historicengland.org.uk/listing/the-list/list-entry/1018684"
+      ],
+      "earliest_record": "Polly Howat, Ghosts and Legends of Lincolnshire and the Fen Country (Countryside Books, 1992)"
     },
     {
       "name": "Cribarth, the Sleeping Giant",
@@ -2990,8 +3051,12 @@
       "sources": [
         "https://www.atlasobscura.com/places/culver-hole-port-eynon",
         "https://thathistorycouple.co.uk/2025/06/30/culver-hole-the-smugglers-cove-gower-wales/",
-        "https://www.grahamwatkins.info/post/2018/11/09/the-smugglers-of-culver-hole"
-      ]
+        "https://www.grahamwatkins.info/post/2018/11/09/the-smugglers-of-culver-hole",
+        "https://ancientmonuments.uk/129230-culver-hole-dovecot-port-eynon",
+        "https://coflein.gov.uk/en/sites/37514"
+      ],
+      "earliest_record": "A castle at Port Eynon is referenced in a lawsuit dated 1396, cited in Cadw's Scheduled Monument record (Cadw Source ID 3633 / Legacy ID GM325) as the likely context for the dovecote's construction. The smuggling legend itself is a documented 19th-century fabrication, first written up in the 1830s by Rev. Dr J. H. Spry.",
+      "period": "Structure: medieval/post-medieval; smuggling legend: fabricated 1830s"
     },
     {
       "name": "Cyhyraeth",
@@ -3124,7 +3189,15 @@
         "battle"
       ],
       "detail": "Daniel Fall — sometimes recorded as John Fall, and known locally as 'Fall the Pirate' — first appears in the records in November 1780, when 'the noted Daniel Fall, a smuggler and captain of a large privateer' cut out two coal-carrying colliers from Lowestoft South Roads. Sailing under American colours and holding letters of marque from Holland, France and America, he commanded fast cutters named the Fearnought and the Liberty, and in February 1781 brazenly hoisted the thirteen stripes as he passed a Harwich mail packet.\n\nHis most notorious action came on 31 January 1781. Captain David Bartleman, just twenty-five years old, was sailing the lightly-armed packet Alexander & Margaret along the Norfolk coast with only three-pounder guns and a crew of ten when Fall's far heavier cutter — eighteen four-pounders and over a hundred men — attacked. Bartleman fought his ship clear and limped into Yarmouth, but died of his wounds on 14 February 1781. His father had a memorial stone erected over the grave, commemorating his son's gallantry and explicitly marking 'the infamy of Fall the Pirate'.\n\nBy April 1782 Fall had moved his operations into the Irish Sea, and the East Coast records fall silent on him after that — leaving Bartleman's Yarmouth gravestone as the most enduring local trace of his career.",
-      "date_added": "2026-06-10"
+      "date_added": "2026-06-10",
+      "sources": [
+        "https://enjoyingnorfolk.co.uk/here-be-pirates/",
+        "https://www.genuki.org.uk/big/eng/NFK/Newspapers/Nfkchron/1781/02",
+        "https://www.greatyarmouthmercury.co.uk/news/21024280.hear-story-sailor-killed-pirate-buried-churchyard/",
+        "https://www.greatyarmouthmercury.co.uk/news/21030190.brave-young-captain-died-yarmouth-defending-ship-pirates/"
+      ],
+      "earliest_record": "Contemporary reporting in the Norfolk Chronicle, including its February 1781 issue, which named 'that notorious villain FALL' directly and reported his prize-taking as it happened.",
+      "period": "1780-1782"
     },
     {
       "name": "Dead Men of Burton-on-Trent",
@@ -3198,7 +3271,8 @@
         "wales",
         "denbighshire"
       ],
-      "detail": "According to the folklore attached to Denbigh Castle, the great hall of the castle was once the lair of a dragon that had taken over the town, terrorising its people. The task of dealing with the beast fell to a knight remembered in some versions as John Salesbury, but in the oldest form of the tale as Sion y Bodiau — 'John of the Thumbs' — a giant of a man said to have eight fingers and two thumbs on each hand.\n\nWhen Sion confronted the dragon as it emerged from the hall, the two fought for hours, sword against claw and scale, with neither giving ground. The turning point came when Sion spotted two bare patches of unscaled skin at the base of the dragon's wings; waiting for the creature to rear up and spread its wings to attack, he drove his broadsword into one of these unprotected spots and killed it.\n\nRiding back into the town with the dragon's severed head held aloft on his sword, Sion was met by townsfolk who had been hiding from the beast. Their relieved cry — 'Dim bych!', Welsh for 'No dragon!' — is said in this telling to be the origin of the town's name, Dinbych (Denbigh), a folk etymology that has helped keep the story, and the dragon, alive in local memory for centuries."
+      "detail": "According to the folklore attached to Denbigh Castle, the great hall of the castle was once the lair of a dragon that had taken over the town, terrorising its people. The task of dealing with the beast fell to a knight remembered in some versions as John Salesbury, but in the oldest form of the tale as Sion y Bodiau — 'John of the Thumbs' — a giant of a man said to have eight fingers and two thumbs on each hand.\n\nWhen Sion confronted the dragon as it emerged from the hall, the two fought for hours, sword against claw and scale, with neither giving ground. The turning point came when Sion spotted two bare patches of unscaled skin at the base of the dragon's wings; waiting for the creature to rear up and spread its wings to attack, he drove his broadsword into one of these unprotected spots and killed it.\n\nRiding back into the town with the dragon's severed head held aloft on his sword, Sion was met by townsfolk who had been hiding from the beast. Their relieved cry — 'Dim bych!', Welsh for 'No dragon!' — is said in this telling to be the origin of the town's name, Dinbych (Denbigh), a folk etymology that has helped keep the story, and the dragon, alive in local memory for centuries.",
+      "period": "Some tellings attach the giant-slayer to John Salusbury of Lleweni (d. 1578), though the 'oldest form' of the tale, which names the giant Sion y Bodiau, cannot itself be firmly dated"
     },
     {
       "name": "Devil's Arrows",
@@ -3249,7 +3323,14 @@
         "wales",
         "ceredigion"
       ],
-      "detail": "Devil’s Bridge — Pontarfynach in Welsh, ‘the bridge over the Mynach’ — is a village in the Cambrian Mountains of Ceredigion where three bridges stand stacked one above another over a spectacular gorge carved by the Mynach and Rheidol rivers. The lowest and oldest bridge, believed to date from between 1075 and 1200, is the one the legend claims the Devil built.\n\nThe story follows a pattern found across Europe wherever an improbably difficult bridge exists: the Devil appears and offers to build it in exchange for the soul of the first living creature to cross. At Devil’s Bridge the human party to the bargain is Megan, an old woman whose cow has strayed to the far side of the gorge. The Devil constructs the bridge overnight and stands at the far end, waiting for Megan to walk across and forfeit her soul. But the old woman, cannier than the Devil expected, pulls a crust of bread from her apron and throws it across the bridge. Her little dog chases after it, becoming the first living creature to cross. The Devil, bound by his own terms, is left with the soul of a dog — which is no use to him — and vanishes in fury.\n\nThe three-bridge structure is not legendary but geological and architectural fact. The lowest (Devil’s) bridge is a single stone arch of Norman or early medieval construction; above it sits a second bridge built in 1753; above that, a modern road bridge erected in 1901. The stacking occurred because each generation built over the previous bridge rather than demolishing it, and the result — three arches receding into the spray of the Mynach Falls — is one of the most photographed sites in Wales. The gorge itself drops nearly 90 metres through ancient oak woodland, and the Devil’s Punchbowl at the base of the falls adds to the infernal nomenclature. The legend is treated by History Hit, History Points, and Discover Ceredigion, and the site is managed by Natural Resources Wales."
+      "detail": "Devil’s Bridge — Pontarfynach in Welsh, ‘the bridge over the Mynach’ — is a village in the Cambrian Mountains of Ceredigion where three bridges stand stacked one above another over a spectacular gorge carved by the Mynach and Rheidol rivers. The lowest and oldest bridge, believed to date from between 1075 and 1200, is the one the legend claims the Devil built.\n\nThe story follows a pattern found across Europe wherever an improbably difficult bridge exists: the Devil appears and offers to build it in exchange for the soul of the first living creature to cross. At Devil’s Bridge the human party to the bargain is Megan, an old woman whose cow has strayed to the far side of the gorge. The Devil constructs the bridge overnight and stands at the far end, waiting for Megan to walk across and forfeit her soul. But the old woman, cannier than the Devil expected, pulls a crust of bread from her apron and throws it across the bridge. Her little dog chases after it, becoming the first living creature to cross. The Devil, bound by his own terms, is left with the soul of a dog — which is no use to him — and vanishes in fury.\n\nThe three-bridge structure is not legendary but geological and architectural fact. The lowest (Devil’s) bridge is a single stone arch of Norman or early medieval construction; above it sits a second bridge built in 1753; above that, a modern road bridge erected in 1901. The stacking occurred because each generation built over the previous bridge rather than demolishing it, and the result — three arches receding into the spray of the Mynach Falls — is one of the most photographed sites in Wales. The gorge itself drops nearly 90 metres through ancient oak woodland, and the Devil’s Punchbowl at the base of the falls adds to the infernal nomenclature. The legend is treated by History Hit, History Points, and Discover Ceredigion, and the site is managed by Natural Resources Wales.",
+      "sources": [
+        "https://www.discoverceredigion.wales/areas-of-ceredigion/cambrian-mountains/communities-of-the-cambrian-mountains/devils-bridge/",
+        "https://historypoints.org/index.php?page=devils-bridge-aberystwyth",
+        "https://sublimewales.wordpress.com/places/devils-bridge-near-aberystwyth/"
+      ],
+      "earliest_record": "The English name 'Devil's Bridge' is attested in deeds from 1734. The earliest known written account of the devil-built-bridge legend itself comes from the Hutton family: Catherine Hutton visited with her parents in 1787, and her father William Hutton published his version of the story in 1803, with her own account following later.",
+      "period": "The lower stone bridge is traditionally dated to around 1087, built by the monks of Strata Florida (Ystrad Fflur) Abbey; the devil-built legend attached to it is first recorded in writing in the late 18th/early 19th century Picturesque-tourism era"
     },
     {
       "name": "Devil's Dyke",
@@ -3490,7 +3571,11 @@
         "curse",
         "transformation"
       ],
-      "detail": "The Dorrington Witch is one of a cluster of Lincolnshire transformation tales collected by the folklorist Ethel H. Rudkin (1893–1985) during her fieldwork among villages between Metheringham and Ruskington in the 1920s and 1930s. Rudkin published a selection in Lincolnshire Folklore (1936), and a substantial body of material survives in her archive at the North Lincolnshire Museum at Scunthorpe. Her fieldwork represents the most systematic collection of Lincolnshire oral tradition ever undertaken, drawn directly from local people rather than literary sources.\n\nIn the specific Dorrington tale, a woman locally suspected of witchcraft was known to take animal form. One night a villager encountered a rat on the road and gave it a hard kick in passing. The following morning, the suspected witch was found indoors, unable to leave her bed, covered in bruises and injuries corresponding exactly to the kick—the classic Lincolnshire 'wound transfer' motif. This belief—that injury sustained in animal form would manifest in human form on the witch's return—recurs consistently across the county's witch lore. A closely parallel story from Rowston, about two miles away, concerns a witch who transformed into a hare, was shot with a silver bullet, and was found dying of a gunshot wound in human form the next day.\n\nThe tale is recorded in Lincolnshire Life, April 1986 (Mary Borrows, 'Ghosts, Witches and Wild Men in the Valley'), and is indexed on the Lincolnshire Folk Tales Project website. Dorrington appears in the lincolnshire_leads.json manual leads file under the category 'Witches & Wizards.'"
+      "detail": "The Dorrington Witch is one of a cluster of Lincolnshire transformation tales collected by the folklorist Ethel H. Rudkin (1893–1985) during her fieldwork among villages between Metheringham and Ruskington in the 1920s and 1930s. Rudkin published a selection in Lincolnshire Folklore (1936), and a substantial body of material survives in her archive at the North Lincolnshire Museum at Scunthorpe. Her fieldwork represents the most systematic collection of Lincolnshire oral tradition ever undertaken, drawn directly from local people rather than literary sources.\n\nIn the specific Dorrington tale, a woman locally suspected of witchcraft was known to take animal form. One night a villager encountered a rat on the road and gave it a hard kick in passing. The following morning, the suspected witch was found indoors, unable to leave her bed, covered in bruises and injuries corresponding exactly to the kick—the classic Lincolnshire 'wound transfer' motif. This belief—that injury sustained in animal form would manifest in human form on the witch's return—recurs consistently across the county's witch lore. A closely parallel story from Rowston, about two miles away, concerns a witch who transformed into a hare, was shot with a silver bullet, and was found dying of a gunshot wound in human form the next day.\n\nThe tale is recorded in Lincolnshire Life, April 1986 (Mary Borrows, 'Ghosts, Witches and Wild Men in the Valley'), and is indexed on the Lincolnshire Folk Tales Project website. Dorrington appears in the lincolnshire_leads.json manual leads file under the category 'Witches & Wizards.'",
+      "sources": [
+        "https://lincolnshirefolktalesproject.com/2024/02/20/the-dorrington-demons-witches/",
+        "https://northlincolnshiremuseum.co.uk/discover/ethel-rudkin-1893-1984/"
+      ]
     },
     {
       "name": "Dorset Ooser",
@@ -3527,9 +3612,14 @@
         "https://www.atlasobscura.com/places/the-grave-of-st-patrick",
         "https://www.saintpatrickcentre.com/st-patricks-grave/",
         "https://matadornetwork.com/read/county-down-northern-ireland-saint-patrick/",
-        "https://www.visitwarrenpoint.com/st-patricks-grave-burial-site-downpatrick/"
+        "https://www.visitwarrenpoint.com/st-patricks-grave-burial-site-downpatrick/",
+        "https://www.dib.ie/biography/jocelin-furness-a4280",
+        "https://www.nationalchurchestrust.org/explore/story/sacred-places-patrick"
       ],
-      "detail": "The hill above the town of Downpatrick in County Down is known in Irish as Dún Pádraig — the fort of Patrick — and the tradition that St Patrick died and was buried there stretches back to the early medieval period. The earliest sources place his death at Saul, a few miles away, where his confessor Tírechán wrote that the ox pulling the saint's funeral cart refused to move until it reached a small hill near Downpatrick, where Patrick was laid to rest. An eighth-century hymn by St Fiacc identifies a 'fertile fountain' near the burial site — almost certainly the well complex at Struell — suggesting the sacred geography of Downpatrick was well-established within three centuries of Patrick's death in the 5th century.\n\nThe gathering of three saints under one stone is attributed to the Anglo-Norman knight John de Courcy, who conquered Ulster in 1177 and sought to establish his legitimacy through conspicuous patronage of Irish sacred sites. According to the tradition recorded by Jocelin of Furness in his Life of Saint Patrick (1185), de Courcy had the relics of St Brigid transferred from Kildare and those of St Columba from Iona, then interred them together with Patrick's remains on Cathedral Hill. From this act of relic-assembly grew the famous couplet that became a pilgrimage formula across the Gaelic world: 'In Down three saints one grave do fill — Patrick, Brigid and Colmcille.'\n\nThe modern grave marker — a large granite slab inscribed simply 'Patrick' with a Celtic cross — was placed on Cathedral Hill in the early twentieth century to protect the traditional burial spot from pilgrims who had been scooping earth from the site to take with them on emigrating, a practice of devotional material culture that testifies to the depth of attachment the legend inspired. Down Cathedral (Church of Ireland) stands on the hill today and the grave remains a focus of continuous pilgrimage, especially on St Patrick's Day. The Atlas Obscura entry for the site and the St Patrick's Centre in Downpatrick both document the tradition in detail. The legend of the triple burial — whatever its historical accuracy — gave County Down a symbolic centrality in Irish Christian memory that it has never lost."
+      "detail": "The hill above the town of Downpatrick in County Down is known in Irish as Dún Pádraig — the fort of Patrick — and the tradition that St Patrick died and was buried there stretches back to the early medieval period. The earliest sources place his death at Saul, a few miles away, where his confessor Tírechán wrote that the ox pulling the saint's funeral cart refused to move until it reached a small hill near Downpatrick, where Patrick was laid to rest. An eighth-century hymn by St Fiacc identifies a 'fertile fountain' near the burial site — almost certainly the well complex at Struell — suggesting the sacred geography of Downpatrick was well-established within three centuries of Patrick's death in the 5th century.\n\nThe gathering of three saints under one stone is attributed to the Anglo-Norman knight John de Courcy, who conquered Ulster in 1177 and sought to establish his legitimacy through conspicuous patronage of Irish sacred sites. According to the tradition recorded by Jocelin of Furness in his Life of Saint Patrick (1185), de Courcy had the relics of St Brigid transferred from Kildare and those of St Columba from Iona, then interred them together with Patrick's remains on Cathedral Hill. From this act of relic-assembly grew the famous couplet that became a pilgrimage formula across the Gaelic world: 'In Down three saints one grave do fill — Patrick, Brigid and Colmcille.'\n\nThe modern grave marker — a large granite slab inscribed simply 'Patrick' with a Celtic cross — was placed on Cathedral Hill in the early twentieth century to protect the traditional burial spot from pilgrims who had been scooping earth from the site to take with them on emigrating, a practice of devotional material culture that testifies to the depth of attachment the legend inspired. Down Cathedral (Church of Ireland) stands on the hill today and the grave remains a focus of continuous pilgrimage, especially on St Patrick's Day. The Atlas Obscura entry for the site and the St Patrick's Centre in Downpatrick both document the tradition in detail. The legend of the triple burial — whatever its historical accuracy — gave County Down a symbolic centrality in Irish Christian memory that it has never lost.",
+      "origin_date": "5th century (traditional date of Patrick's death and burial)",
+      "earliest_record": "Jocelin of Furness, Vita sancti Patricii episcopi (Life of Saint Patrick), commissioned by John de Courcy and written c. 1185, describing the 1185 finding/translation of the relics of Patrick, Brigid and Colum Cille to Downpatrick",
+      "period": "Early Christian Ireland (5th century) through the Anglo-Norman conquest of Ulster (John de Courcy, from 1177)"
     },
     {
       "name": "Dozmary Pool",
@@ -3613,7 +3703,13 @@
         "england",
         "gloucestershire"
       ],
-      "detail": "A serpent of prodigious size had settled near Deerhurst, close to Tewkesbury, poisoning the air with its breath and slaughtering the livestock of the surrounding parishes. The king issued a proclamation: whoever slew the dragon would receive the royal estate at Walton Hill in the parish. No knight or lord came forward. The task fell to a labourer named John Smith, who had observed the creature's habits. He set out a large trough of milk, waited for the dragon to drink its fill and settle in the sun with its scales spread open to cool itself, then drove a heavy axe through the gap between the scales and severed its head.\n\nThe legend is documented by Sir Robert Atkyns in The Ancient and Present State of Glostershire (1712), where he records not only the story but its physical continuity: the Smith family were still in possession of the Walton Hill estate at the time of writing, and an axe described as the ancestral weapon was in the hands of a Mr Lane, who had married a Smith widow. This is unusual in British dragon tradition — a legend with a documented inheritance chain traceable to within living memory of Atkyns' own informants.\n\nThe Saxon church of St Mary the Virgin at Deerhurst, one of England's finest pre-Conquest buildings, bears carved dragon heads on its exterior stonework. Whether the stone dragons inspired the legend or merely reinforced it, they have bound the church and the tale together in parish memory for centuries. The Deerhurst dragon belongs to a tradition of saint-free dragon-slaying: a pragmatic Englishman solving a local problem with an axe and a trough of milk, his reward a piece of land his family kept for half a millennium."
+      "detail": "A serpent of prodigious size had settled near Deerhurst, close to Tewkesbury, poisoning the air with its breath and slaughtering the livestock of the surrounding parishes. The king issued a proclamation: whoever slew the dragon would receive the royal estate at Walton Hill in the parish. No knight or lord came forward. The task fell to a labourer named John Smith, who had observed the creature's habits. He set out a large trough of milk, waited for the dragon to drink its fill and settle in the sun with its scales spread open to cool itself, then drove a heavy axe through the gap between the scales and severed its head.\n\nThe legend is documented by Sir Robert Atkyns in The Ancient and Present State of Glostershire (1712), where he records not only the story but its physical continuity: the Smith family were still in possession of the Walton Hill estate at the time of writing, and an axe described as the ancestral weapon was in the hands of a Mr Lane, who had married a Smith widow. This is unusual in British dragon tradition — a legend with a documented inheritance chain traceable to within living memory of Atkyns' own informants.\n\nThe Saxon church of St Mary the Virgin at Deerhurst, one of England's finest pre-Conquest buildings, bears carved dragon heads on its exterior stonework. Whether the stone dragons inspired the legend or merely reinforced it, they have bound the church and the tale together in parish memory for centuries. The Deerhurst dragon belongs to a tradition of saint-free dragon-slaying: a pragmatic Englishman solving a local problem with an axe and a trough of milk, his reward a piece of land his family kept for half a millennium.",
+      "sources": [
+        "https://www.gloucestershire.gov.uk/archives/learning-for-all/families/ugly-mugs/the-dragons-of-gloucestershire/",
+        "https://sites.pitt.edu/~dash/britishdragons.html"
+      ],
+      "earliest_record": "Sir Robert Atkyns, The Ancient and Present State of Glostershire (London: W. Bowyer, 1712), p. 388",
+      "period": "Undated legendary event; first securely recorded in writing in 1712"
     },
     {
       "name": "Dragon of Ludham",
@@ -6284,6 +6380,23 @@
       "detail": "The sixteenth-century tolbooth of Kirkcudbright, the old civic and prison building of the Galloway burgh, is bound into the region's dark history of witch persecution. Its cells held those accused of witchcraft in south-west Scotland, among them Elspeth McEwen, who was imprisoned there before being burned in 1698 — by tradition the last woman put to death for witchcraft in Galloway.\n\nMcEwen was accused of bewitching her neighbours' hens and stealing their milk and eggs by uncanny means, and a local minister's prosecution sealed her fate; she was strangled and her body burned on the Whinny Hill. The tolbooth, which in later years also briefly held the privateer John Paul Jones, stands as a tangible relic of the witch-hunt — an ordinary town building whose stones witnessed the imprisonment and condemnation of the poor and friendless women who were the witch-trials' usual victims."
     },
     {
+      "name": "Kitty Kilroy, the Witch of Huntsfield",
+      "lat": 53.871,
+      "lng": -8.85,
+      "category": "witch",
+      "region": "Huntsfield, Kilkelly, County Mayo, Ireland",
+      "summary": "A priest's horse was said to collapse paralysed on the Huntsfield road, and the villagers who watched dared suggest fetching the local witch to cure it.",
+      "detail": "In the townland of Huntsfield near Kilkelly, County Mayo, local memory preserved the story of a woman named Kitty Kilroy who was reputed to practise witchcraft, roughly a generation before the account was written down. What marked her out as much as any spell was her absence from the parish's religious life: she was said never to attend Mass or take the Sacraments, a defiance that drew open hostility from the local priests.\n\nThe one incident remembered in detail concerns a priest travelling the Huntsfield road on horseback, whose horse suddenly \"got paralized\" and collapsed beneath him. As villagers gathered to help, someone in the crowd suggested sending for the witch, since her reputed power might be the only thing able to undo whatever had struck the animal down. The suggestion itself was recorded as a scandal, \"a great insult to the priest,\" caught between the parish's official religious authority and an informal, grudging belief in Kitty Kilroy's own power that the priest's own flock could not quite shake off.\n\nThe account comes from the National Folklore Collection's Schools' Collection, gathered in the 1930s when Irish schoolchildren were sent to record local tradition from older relatives and neighbours. This version was collected by Annie M. Dunleavy from Mrs Patrick Boyle of nearby Urlaur. Like most Schools' Collection witch stories, it preserves a community's reputation and rumour about a named local figure rather than any court record or formal accusation, and should be read as a piece of living oral folklore rather than documented history.",
+      "source": "https://www.duchas.ie/en/cbes/4427912/4357042/4452859",
+      "date_added": "2026-08-07",
+      "tags": [
+        "ireland",
+        "county-mayo",
+        "curse",
+        "healing"
+      ]
+    },
+    {
       "name": "Knocker",
       "lat": 50.119,
       "lng": -5.537,
@@ -7389,6 +7502,29 @@
         "death-omen"
       ],
       "detail": "The Macphie (MacDhubhsith) clan were the hereditary lords of Colonsay, regarded in island tradition as almost magical protectors of their people. The principal legend involves the last great Macphie laird, who on the third day of a failed hunting voyage found a jet-black puppy — its coat dark as ink — sitting patiently in his boat without having been called or placed there. Macphie took it as an omen, shouting 'The black dog's day is growing near!' The seas calmed and the wind turned favourable; the party sailed to Jura for the hunt.\n\nThat night the men took shelter in a cave, feasting and boasting around the fire while the black dog slept at the laird's feet. When daylight came, Macphie found every man in his party dead. No cause was given, no enemy identified — only Macphie walked out of the cave alive, and neither dog nor men were seen again. The tale passed into proverbial use across the west Highlands: 'The black dog's day will come yet' is recorded as an Argyll saying for one now despised who will eventually prove useful — or, depending on the teller, one whose reckoning is merely deferred.\n\nA separate cave tradition on Colonsay concerns another desperate Macphie laird who fled his enemies the MacNeills and hid in the Slochd dubh Mhic a Phi (MacPhee's Dark Cave), placing his three hounds at the sea entrance and cutting off the heads of each MacNeill who crawled through. Together these legends give Colonsay an unusually rich body of clan-specific supernatural folklore, documented through the Highlands and Islands folk tradition."
+    },
+    {
+      "name": "Madame's Blow-well",
+      "lat": 53.489,
+      "lng": -0.01,
+      "category": "water",
+      "region": "Tetney, Lincolnshire, England",
+      "summary": "Circular ponds on the Lincolnshire coast were said to be bottomless, and one is still called Madame's Blow-well for the great lady whose coach and four vanished into it and were never seen again.",
+      "detail": "Tetney, on the Lincolnshire coast near the Humber, sits above a cluster of natural artesian springs known as the Blow Wells, where fresh water forces itself up through the clay in circular pools. Local tradition long held these ponds to be bottomless: one 19th-century account records that a local landowner had some of them sounded and found no bottom, and that they were popularly said to run clean through to the Antipodes.\n\nOne well in particular carries its own name and its own story. Rev. J. Wild's 1901 account of Tetney parish records that a great lady, travelling with her coach and four horses, was swallowed bodily into one of the ponds and never seen again, and that the pool has been called Madame's Blow-well ever since. The tale was collected alongside other Lincolnshire ghost and water lore by Eliza Gutch and Mabel Peacock for the Folk-Lore Society's County Folk-Lore series in 1908, one of the more rigorous county-by-county folklore surveys of its era. Related accounts describe the wider blow-hole ponds in this corner of the county as haunted by a phantom coach and four and a grey lady, suggesting Madame's Blow-well anchors a broader local tradition of a vanished noblewoman still abroad on the marsh.\n\nThe wells themselves are real and still flowing: the site is now a Lincolnshire Wildlife Trust nature reserve southeast of Tetney church, its four spring-fed pools and surrounding wetland protected for the plant and bird life the constant flow of water supports, a quietly persistent landscape for a story about something that never stops disappearing into it.",
+      "source": "https://archive.org/stream/in.ernet.dli.2015.106716/2015.106716.Lincolnshire-Examples-Of-Printed-Folk-lore-Concerning_djvu.txt",
+      "sources": [
+        "https://archive.org/stream/in.ernet.dli.2015.106716/2015.106716.Lincolnshire-Examples-Of-Printed-Folk-lore-Concerning_djvu.txt",
+        "https://www.lincstrust.org.uk/nature-reserves/tetney-blow-wells",
+        "https://insearchofholywellsandhealingsprings.wordpress.com/2013/04/19/holy-wells-and-healing-springs-of-lincolnshire-an-overview/"
+      ],
+      "date_added": "2026-08-07",
+      "tags": [
+        "england",
+        "lincolnshire",
+        "well",
+        "vanishing",
+        "haunting"
+      ]
     },
     {
       "name": "Maeshowe Runes",
@@ -9737,6 +9873,28 @@
         "https://shetlandwithlaurie.com/the-blog/shetland-folklore-series-a-land-of-giants",
         "https://www.shetland.org/blog/shetland-folklore",
         "https://kerrieanngardner.co.uk/landscape/giants-and-ghosts-on-hermaness/"
+      ]
+    },
+    {
+      "name": "Scota Bess",
+      "lat": 59.158,
+      "lng": -2.636,
+      "category": "witch",
+      "region": "Stronsay, Orkney Islands, Scotland",
+      "summary": "A storm-witch ruled the Mermaid's Chair on Stronsay's shore, cursing fishermen with endless gales, until islanders beat her to death and still couldn't keep her in the ground.",
+      "detail": "On the Orkney island of Stronsay, tradition holds that a witch called Scota Bess once occupied a rock seat on the shore of Mill Bay, known as the Mermaid's Chair. From there she was said to order up storms, keeping the island's fishing boats trapped in harbour through weeks of unbroken January gales. When the islanders had endured enough, they drove her from her chair and beat her to death in a barn at Huip, one of Stronsay's farming settlements near the loch of Meikle Water.\n\nThe story does not end with her death. Each time the islanders buried Scota Bess, her body was found lying disinterred beside the grave the following morning, as though the ground itself refused her. Unable to keep her under, the men finally carried her body to Meikle Water and threw it in; a mound of earth is said to have grown up in the loch afterwards, later used as a nesting site by swans, read by some as a sign of the witch's uneasy rest, by others as evidence she was still scheming beneath the water.\n\nNo historical record of an actual woman behind the name survives, and Scota Bess reads as much like a Norse-inflected storm-hag or minor local deity as a remembered individual, of a piece with Orkney's wider tradition of weather-witches blamed for wrecking boats and ruining harvests. The Mermaid's Chair itself carries a second, gentler strand of folklore alongside hers: local tradition holds that a girl who sits in it will come to understand the mysteries of life and be able to foretell the future, folding the site's fearsome history into a piece of everyday island courting-lore.",
+      "source": "https://visitstronsay.com/things-to-do/mysteries-legends/",
+      "sources": [
+        "https://visitstronsay.com/things-to-do/mysteries-legends/",
+        "https://www.undiscoveredscotland.co.uk/stronsay/stronsay/index.html"
+      ],
+      "date_added": "2026-08-07",
+      "tags": [
+        "scotland",
+        "orkney",
+        "coast",
+        "curse",
+        "death-omen"
       ]
     },
     {

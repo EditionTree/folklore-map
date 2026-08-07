@@ -576,7 +576,7 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 .col-index-row:hover .col-index-more{color:#c4622a}
 /* Per-visitor collection progress — populated client-side from localStorage,
    hidden by default so nothing flashes before JS resolves it. */
-.col-index-progress,.col-progress{display:flex;align-items:center;gap:8px;margin:2px 0 12px}
+.col-index-progress,.col-progress{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:2px 0 12px}
 .col-index-progress[hidden],.col-progress[hidden]{display:none}
 .cip-bar{position:relative;flex:0 1 120px;height:4px;border-radius:2px;background:rgba(90,70,50,.18);overflow:hidden}
 .cip-fill{position:absolute;inset:0;width:0%;background:#9d461f;border-radius:2px;transition:width .3s}
@@ -584,6 +584,10 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 .col-index-row.done{border-color:#c4622a}
 .col-index-row.done .cip-label{color:#9d461f}
 .col-progress .cip-bar{flex:0 1 200px}
+.col-share-btn{font-family:'Marcellus',serif;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#c4622a;background:transparent;border:1px solid #b09060;border-radius:3px;padding:5px 12px;cursor:pointer;transition:border-color .15s,color .15s;margin-left:8px}
+.col-share-btn:hover,.col-share-btn:focus-visible{border-color:#c4622a;color:#9d461f}
+.col-share-btn[disabled]{opacity:.6;cursor:default}
+.col-share-status{font-size:11px;color:#5c4a2a}
 @media(max-width:680px){.col-index-row,.col-index-row:nth-child(even){flex-direction:column}.col-index-media{flex-basis:auto;height:212px;min-height:0}.col-index-body{padding:20px 22px}}
 .col-section{margin-top:38px}
 .col-section h2{font-family:'Marcellus',serif;font-size:20px;font-weight:400;color:#3f3023;margin-bottom:12px}
@@ -656,13 +660,27 @@ def collection_index_progress_script():
     )
 
 
-def collection_detail_progress_script(slug):
+def collection_detail_progress_script(slug, title):
     """Same progress computation as collection_index_progress_script(), but
     for the single collection page itself — one summary bar near the top
     rather than one per card. Fetches its own membership JSON relative to
     the page (same directory), since the full member list isn't known
-    client-side otherwise (pages 2+ only carry that page's slice)."""
+    client-side otherwise (pages 2+ only carry that page's slice).
+
+    Also reveals the "Share this collection" button (only present in the
+    page-1 markup, since it needs the .col-hero-media photo that only page 1
+    renders) once the collection is complete, and wires it to the shared
+    /share-card.js renderer — same template as the achievement-unlock and
+    nearest-legend cards, with the collection's own hero photo as a circular
+    medallion instead of a wax seal."""
+    share_title = f"{title} — complete!"
+    share_text = f'I completed the "{title}" collection on Folklore Finder!'
+    filename_prefix = f"folklore-finder-{slug}-collection"
     return (
+        # Loaded first (and left as a normal blocking <script src>, not
+        # defer/async) so it's guaranteed to have executed — and
+        # window.ShareCard to exist — before the inline script below runs.
+        '<script src="/share-card.js"></script>\n'
         "<script>(function(){try{"
         "var visited=JSON.parse(localStorage.getItem('ff_visited_legends_v1')||'null')||{};"
         "var set=new Set(Object.keys(visited));"
@@ -678,6 +696,30 @@ def collection_detail_progress_script(slug):
         "el.classList.toggle('done',done);"
         "el.querySelector('.cip-fill').style.width=pct+'%';"
         "el.querySelector('.cip-label').textContent=done?'Collection complete \\u2713':(count+' of '+members.length+' discovered');"
+        "var shareBtn=el.querySelector('.col-share-btn');"
+        "var heroImg=document.querySelector('.col-hero-media img');"
+        "if(!shareBtn||!done||!heroImg||!window.ShareCard)return;"
+        "shareBtn.hidden=false;"
+        "shareBtn.addEventListener('click',function(){"
+        "var statusEl=el.querySelector('.col-share-status');"
+        "var idle=shareBtn.textContent;"
+        "shareBtn.disabled=true;shareBtn.textContent='Generating\\u2026';"
+        "if(statusEl)statusEl.textContent='';"
+        "window.ShareCard.renderPhotoCard({"
+        "kicker:'COLLECTION COMPLETE',"
+        "subKicker:members.length+' legends discovered',"
+        "title:" + json.dumps(title, ensure_ascii=False) + ","
+        "body:'Every legend in this collection, found.',"
+        "photoSrc:heroImg.currentSrc||heroImg.src"
+        "}).then(function(blob){"
+        "return window.ShareCard.shareOrDownload(blob," + json.dumps(filename_prefix + ".png", ensure_ascii=False) + ","
+        + json.dumps(share_title, ensure_ascii=False) + "," + json.dumps(share_text, ensure_ascii=False) + ");"
+        "}).then(function(outcome){"
+        "if(statusEl)statusEl.textContent=outcome==='shared'?'Shared!':(outcome==='downloaded'?'Image saved':'');"
+        "}).catch(function(){"
+        "if(statusEl)statusEl.textContent=\"Couldn't generate the image \\u2014 try again.\";"
+        "}).then(function(){shareBtn.disabled=false;shareBtn.textContent=idle;});"
+        "});"
         "}).catch(function(){});"
         "}catch(e){}})();</script>\n"
     )
@@ -1040,6 +1082,7 @@ $topnav
 </main>
 $footer
 <script src="/assets/leaflet/leaflet.js"></script>
+<script src="/share-card.js"></script>
 <script src="$base/legend-page.js"></script>
 </body>
 </html>
@@ -1936,7 +1979,9 @@ def build():
                 progress_html = (
                     '<div class="col-progress" hidden>'
                     '<span class="cip-bar"><span class="cip-fill"></span></span>'
-                    '<span class="cip-label"></span></div>\n'
+                    '<span class="cip-label"></span>'
+                    '<button type="button" class="col-share-btn" hidden>Share this collection</button>'
+                    '<span class="col-share-status" aria-live="polite"></span></div>\n'
                 )
                 page = build_browse_page(
                     page_title=f"{col['title']}{page_tag} — Folklore Finder",
@@ -1959,7 +2004,7 @@ def build():
                     after_intro=context_html + progress_html + map_link,
                     wrap_class="ornamented",
                     track_script=track_event_script("collection_viewed", collection_slug=slug)
-                                 + collection_detail_progress_script(slug),
+                                 + collection_detail_progress_script(slug, col["title"]),
                 )
                 fname = f"{slug}.html" if page_no == 1 else f"{slug}-{page_no}.html"
                 with io.open(os.path.join(col_dir, fname), "w", encoding="utf-8") as f:

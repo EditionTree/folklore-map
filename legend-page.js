@@ -127,6 +127,83 @@
     }, 5000);
   }
 
+  // ── "Nearest legend found" toast ────────────────────────────────────────
+  // Fires once, right after arriving here via the homepage's "Find folklore
+  // near me" — the homepage's own redirect-on-success flow is left exactly
+  // as tuned, so this reads the handoff from sessionStorage rather than
+  // changing that flow to pause for a share prompt. Unlike the achievement
+  // toast, this one isn't click-to-navigate: it holds a real "Share this
+  // discovery" button, so it needs its own dismiss timer that pauses while
+  // a share is in flight instead of a flat 5s auto-hide.
+  function showNearMeToast(find){
+    var stack=ensureToastStack();
+    var toast=document.createElement('div');
+    toast.className='ach-toast near-me-toast';
+
+    var textWrap=document.createElement('span'); textWrap.className='ach-toast-text';
+    var titleEl=document.createElement('span'); titleEl.className='ach-toast-title'; titleEl.textContent='Nearest legend found';
+    var bodyEl=document.createElement('span'); bodyEl.className='ach-toast-body';
+    bodyEl.textContent=find.name+', about '+find.distanceKm+' km away';
+    textWrap.appendChild(titleEl); textWrap.appendChild(bodyEl);
+    toast.appendChild(textWrap);
+
+    var actions=document.createElement('span'); actions.className='ach-toast-actions';
+    var shareBtn=document.createElement('button');
+    shareBtn.type='button'; shareBtn.className='ach-toast-share-btn'; shareBtn.textContent='Share this discovery';
+    var statusEl=document.createElement('span'); statusEl.className='ach-toast-share-status'; statusEl.setAttribute('aria-live','polite');
+    actions.appendChild(shareBtn); actions.appendChild(statusEl);
+    toast.appendChild(actions);
+
+    var closeBtn=document.createElement('button');
+    closeBtn.type='button'; closeBtn.className='ach-toast-close'; closeBtn.setAttribute('aria-label','Dismiss');
+    closeBtn.textContent='×';
+    toast.appendChild(closeBtn);
+
+    stack.appendChild(toast);
+    requestAnimationFrame(function(){ toast.classList.add('show'); });
+
+    var dismissTimer=setTimeout(dismiss, 12000);
+    function dismiss(){
+      clearTimeout(dismissTimer);
+      toast.classList.remove('show');
+      setTimeout(function(){ toast.remove(); }, 400);
+    }
+    closeBtn.addEventListener('click', dismiss);
+
+    shareBtn.addEventListener('click', function(){
+      if(!window.ShareCard) return;
+      clearTimeout(dismissTimer); // keep the toast open while a share is in flight
+      var heroImg=document.querySelector('.hero-media-wrap img');
+      var photoSrc=heroImg?(heroImg.currentSrc||heroImg.src):null;
+      var idle=shareBtn.textContent;
+      shareBtn.disabled=true; shareBtn.textContent='Generating…'; statusEl.textContent='';
+      var renderP=photoSrc
+        ? window.ShareCard.renderPhotoCard({
+            kicker:'NEAREST LEGEND FOUND',
+            subKicker: find.region||find.category||'',
+            title: find.name,
+            body: 'Found about '+find.distanceKm+' km from your location.',
+            photoSrc: photoSrc,
+          })
+        : Promise.reject(new Error('no hero photo on this page'));
+      renderP.then(function(blob){
+        var filename='folklore-finder-'+slugify(find.name)+'-nearby.png';
+        return window.ShareCard.shareOrDownload(
+          blob, filename,
+          find.name+' — nearest legend on Folklore Finder',
+          'I found my nearest legend on Folklore Finder: '+find.name+'!'
+        );
+      }).then(function(outcome){
+        statusEl.textContent = outcome==='shared' ? 'Shared!' : (outcome==='downloaded' ? 'Image saved' : '');
+      }).catch(function(){
+        statusEl.textContent="Couldn't generate the image — try again.";
+      }).then(function(){
+        shareBtn.disabled=false; shareBtn.textContent=idle;
+        dismissTimer=setTimeout(dismiss, 6000);
+      });
+    });
+  }
+
   function slugify(s){
     return String(s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'')
       .replace(/&/g,' and ').replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'');
@@ -257,6 +334,21 @@
 
   var firstVisitName=markLegendVisited();
   if(firstVisitName) checkAchievementToasts(firstVisitName);
+
+  // "Find folklore near me" hands off here via sessionStorage rather than a
+  // URL param, so it survives the redirect without cluttering the URL. Read
+  // once and clear immediately so it can never fire again on a reload or a
+  // later visit to this same page.
+  (function checkNearMeArrival(){
+    try{
+      var raw=sessionStorage.getItem('ff_near_me_find');
+      if(!raw) return;
+      sessionStorage.removeItem('ff_near_me_find');
+      var find=JSON.parse(raw);
+      var pageName=pageTitle?(pageTitle.textContent||'').trim():'';
+      if(find&&find.name&&find.name===pageName) showNearMeToast(find);
+    }catch(e){}
+  })();
 
   // Of the 6 related-legend candidates the page ships (see generate_pages.py),
   // show the 3 not yet in ff_visited_legends_v1 first, keeping each group's

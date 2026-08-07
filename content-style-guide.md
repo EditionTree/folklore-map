@@ -41,9 +41,20 @@ one uses at least one em dash in its opening paragraph alone, several use 3–4.
 
 **Rule: at most one em dash per paragraph, and only when a comma or colon
 genuinely can't do the job. Prefer:**
-- A colon, when the second half explains or lists what the first half named.
 - A full stop, when the second half is really its own sentence.
 - A comma, for a short appositive (three words or fewer).
+- A colon, only when the second half genuinely explains or lists what the
+  first half named — not as the default swap.
+
+**Don't just trade the dash tell for a colon tell.** A 2026-08-07 re-read of
+pages that had already been through a dash-cutting pass found the same
+frequency problem had reappeared one punctuation mark over: paragraphs with
+a colon in nearly every sentence, doing the exact job the em dashes used to
+do. Colon overuse is exactly as much of a tell as em-dash overuse. If a
+paragraph is gaining colons as it loses dashes, that's not a fix, it's the
+same crutch under a new name — reach for the full stop and the comma first,
+and use a colon only where it's structurally called for (a list, a label,
+an introduced quote), not as a punctuation-of-convenience.
 
 ## Other AI tropes to avoid
 

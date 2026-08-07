@@ -8,7 +8,7 @@
 <!-- End Cloudflare Web Analytics -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Folklore Finder | An Interactive Folklore Map of Britain &amp; Ireland</title>
-<meta name="description" content="An interactive folklore map of Britain and Ireland — myths, legends, ghosts and sacred sites across more than 660 locations. Explore by region, category or story, from Black Shuck to the Loch Ness Monster."/>
+<meta name="description" content="An interactive folklore map of Britain and Ireland — myths, legends, ghosts and sacred sites across 700+ locations. Explore by region, category or story, from Black Shuck to the Loch Ness Monster."/>
 <meta name="robots" content="index, follow"/>
 <link rel="canonical" href="https://folklorefinder.uk/"/>
 <link rel="alternate" type="application/rss+xml" title="Folklore Map — New Legends" href="https://folklorefinder.uk/feed.xml"/>
@@ -1180,24 +1180,27 @@ footer a{color:var(--ink-light)}
     probe.src = imgUrl;
   }
 
-  // Load the hero-image manifest first (best-effort) so Legend of the Week can
-  // prefer entries with artwork, then load the dataset and render.
-  fetch('./legend-images/manifest.json')
-    .then(r => r.ok ? r.json() : [])
-    .catch(() => [])
-    .then(slugs => { IMAGED = new Set(slugs || []); })
-    .finally(() => {
-      fetch('./legends.json')
-        .then(r => r.json())
-        .then(data => {
-          LEGENDS = data.legends || [];
-          const n = data.total || LEGENDS.length;
-          document.getElementById('heroCount').textContent = roundedCountPlus(n);
-          renderLotw();
-          renderStats(data);
-          computeAdaptiveCard().then(renderCarousel);
-        });
-    });
+  // The carousel's adaptive card only needs localStorage + collections.json
+  // (see computeAdaptiveCard) — it has no dependency on legends.json at all,
+  // so it fires immediately rather than waiting on the ~500KB fetch below.
+  // Previously this was nested inside that fetch's .then(), which is why the
+  // carousel visibly lagged behind the rest of the page: it was stuck behind
+  // an unrelated request for no real reason.
+  computeAdaptiveCard().then(renderCarousel);
+
+  // manifest.json (tiny) and legends.json (~500KB) are independent too —
+  // fetch them together instead of one after the other.
+  Promise.all([
+    fetch('./legend-images/manifest.json').then(r => r.ok ? r.json() : []).catch(() => []),
+    fetch('./legends.json').then(r => r.json()),
+  ]).then(([slugs, data]) => {
+    IMAGED = new Set(slugs || []);
+    LEGENDS = data.legends || [];
+    const n = data.total || LEGENDS.length;
+    document.getElementById('heroCount').textContent = roundedCountPlus(n);
+    renderLotw();
+    renderStats(data);
+  });
 
   // Surprise me
   document.getElementById('surpriseBtn').addEventListener('click', () => {

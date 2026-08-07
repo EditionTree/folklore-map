@@ -1105,18 +1105,23 @@ def load_category_meta():
 
 
 def update_homepage_count(total):
-    """Patch the static (pre-JS) homepage count fallbacks. Rounded down to the
-    nearest 50 and shown as "X+", or just "X" with no "+" if the total happens
-    to land on an exact multiple of 50 — matches roundedCountPlus() in
-    index.html's own script, which overwrites these same spans at runtime once
-    legends.json loads, so the two must stay in lockstep."""
-    path = "index.html"
-    text = io.open(path, encoding="utf-8").read()
+    """Patch every static, hand-written mention of the total entry count —
+    the homepage's pre-JS count fallbacks, plus its and map.html's meta/OG/
+    Twitter descriptions (search-snippet copy, so it's worth keeping honest).
+    Rounded down to the nearest 50 and shown as "X+", or just "X" with no
+    "+" if the total happens to land on an exact multiple of 50 — matches
+    roundedCountPlus() in index.html's own script, which overwrites the
+    heroCount/statLegends spans at runtime once legends.json loads, so the
+    two must stay in lockstep."""
     rounded_num = (total // 50) * 50
     rounded = f"{rounded_num}+" if rounded_num < total else str(rounded_num)
+
+    path = "index.html"
+    text = io.open(path, encoding="utf-8").read()
     patterns = (
         (r'(<span id="heroCount">)[^<]*(</span>)', rf'\g<1>{rounded}\g<2>'),
         (r'(<span class="stat-num" id="statLegends">)[^<]*(</span>)', rf'\g<1>{rounded}\g<2>'),
+        (r'(sacred sites across )\d+\+?( locations)', rf'\g<1>{rounded}\g<2>'),
     )
     for pattern, replacement in patterns:
         text, changed = re.subn(pattern, replacement, text, count=1)
@@ -1124,6 +1129,17 @@ def update_homepage_count(total):
             raise RuntimeError(f"Could not update homepage count using {pattern}")
     with io.open(path, "w", encoding="utf-8") as f:
         f.write(text)
+
+    map_path = "map.html"
+    map_text = io.open(map_path, encoding="utf-8").read()
+    map_text, changed = re.subn(r'\d+\+? entries', f'{rounded} entries', map_text, count=1)
+    if changed != 1:
+        raise RuntimeError("Could not update map.html description count")
+    map_text, changed = re.subn(r'Explore \d+\+? myths', f'Explore {rounded} myths', map_text)
+    if changed != 2:
+        raise RuntimeError("Could not update map.html og/twitter description counts")
+    with io.open(map_path, "w", encoding="utf-8") as f:
+        f.write(map_text)
 
 
 NEW_COLLECTIONS_STATE_FILE = "collections_state.json"

@@ -121,6 +121,14 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Spectral',seri
 .recent-viewed-card .card-eyebrow{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#d0baa0;display:block}
 .recent-viewed-card .card-title{font-family:'Marcellus',serif;font-size:15px;display:block;margin-top:2px}
 
+/* Saved Legends reuses the recent-viewed-card look (image-backed), but the
+   list can grow arbitrarily long as you save more, so it's capped to about
+   4 cards tall (4*140px cards + 3*10px gaps) with a scroll for the rest. */
+.saved-scroll{max-height:600px;overflow-y:auto;padding-right:6px;scrollbar-width:thin;scrollbar-color:var(--gold) transparent}
+.saved-scroll::-webkit-scrollbar{width:7px}
+.saved-scroll::-webkit-scrollbar-track{background:transparent}
+.saved-scroll::-webkit-scrollbar-thumb{background:var(--gold);border-radius:4px}
+
 /* ── COLLECTION PROGRESS (filled bars) ── */
 .collection-row{position:relative;display:flex;align-items:center;justify-content:space-between;gap:12px;background:var(--parchment);border:1px solid var(--gold);border-radius:6px;padding:12px 16px;margin-bottom:8px;overflow:hidden;color:var(--ink);text-decoration:none}
 .collection-row::before{content:'';position:absolute;inset:0;width:var(--pct,0%);background:rgba(196,98,42,.38);z-index:0;transition:width .3s}
@@ -198,7 +206,9 @@ footer a{color:var(--ink-light)}
     <div class="archive-col-saved">
       <section class="section">
         <div class="section-rule"><span>Saved Legends</span></div>
-        <div id="savedLegends" class="card-grid"></div>
+        <div class="saved-scroll">
+          <div id="savedLegends" class="recent-viewed-list"></div>
+        </div>
       </section>
     </div>
 
@@ -250,15 +260,17 @@ footer a{color:var(--ink-light)}
       .replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
   }
 
+  // Matches the recent-viewed-card look (image-backed, .recent-viewed-list
+  // layout) so Saved Legends and Recently Viewed read as the same pattern.
   function renderCard(container, leg, eyebrow){
+    var slug = slugify(leg.name);
     var a = document.createElement('a');
-    a.className = 'card-tile';
-    a.href = 'legends/' + slugify(leg.name);
-    a.innerHTML = '<span class="card-eyebrow">' + eyebrow + '</span>'
-      + '<span class="card-title"></span>'
-      + '<span class="card-sub"></span>';
+    a.className = 'recent-viewed-card';
+    a.href = 'legends/' + slug;
+    a.style.setProperty('--card-img', "url('legend-images/" + slug + "-hero.jpg')");
+    a.innerHTML = '<span><span class="card-eyebrow"></span><span class="card-title"></span></span>';
+    a.querySelector('.card-eyebrow').textContent = leg.region || eyebrow;
     a.querySelector('.card-title').textContent = leg.name;
-    a.querySelector('.card-sub').textContent = leg.region || '';
     container.appendChild(a);
   }
 

@@ -288,7 +288,12 @@
     <image:title>A timber garrison at Ayr burning by moonlight while armed Scots watch from the dark foreground</image:title>
     <image:caption>A visual interpretation of Wallace&#x27;s revenge at the Barns of Ayr</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/baron-kitter-and-the-witch-ada</loc><lastmod>2026-08-07</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/baron-kitter-and-the-witch-ada</loc><lastmod>2026-08-07</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/baron-kitter-and-the-witch-ada-hero.jpg</image:loc>
+    <image:title>The witch Ada gestures beside an overflowing cauldron as Baron Kitter&#x27;s hall burns above the stormy Calf Sound</image:title>
+    <image:caption>A visual interpretation of the Manx legend of Ada and Baron Kitter</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/bartholomew-roberts</loc><lastmod>2026-06-19</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/bartholomew-roberts-hero.jpg</image:loc>
@@ -673,7 +678,12 @@
     <image:title>Villagers with longbows confront a crested dragon beside the River Stour marsh near Bures</image:title>
     <image:caption>A visual interpretation of the dragon encounter recorded near Bures in 1405</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/burial-place-of-the-big-women</loc><lastmod>2026-08-07</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/burial-place-of-the-big-women</loc><lastmod>2026-08-07</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/burial-place-of-the-big-women-hero.jpg</image:loc>
+    <image:title>Two towering spectral women reclaim a carved grave stone in a moonlit Tiree farm shed as a servant and dog watch</image:title>
+    <image:caption>A visual interpretation of the haunting at Cladh nam Ban Mora</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/bwbach</loc><lastmod>2026-06-19</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/bwbach-hero.jpg</image:loc>
@@ -1328,7 +1338,12 @@
     <image:title>A three-headed beast crawling from the dark mouth of Oweynagat above the fields of Rathcroghan under heavy cloud</image:title>
     <image:caption>A visual interpretation of the Ellén Trechend emerging at Oweynagat</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/elspeth-reoch</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/elspeth-reoch</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/elspeth-reoch-hero.jpg</image:loc>
+    <image:title>Elspeth Reoch kneels beside a Highland loch with a steaming egg and yarrow while two uncanny men watch from the mist</image:title>
+    <image:caption>A visual interpretation of Elspeth Reoch&#x27;s account of receiving second sight</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/enfield-poltergeist</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/enfield-poltergeist-hero.jpg</image:loc>
@@ -2019,7 +2034,12 @@
     <image:title>A windmill and prepared tomb on Highdown Hill with distant smuggler lights near the coast</image:title>
     <image:caption>A visual interpretation of the Sussex legend</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/john-walsh-the-cunning-man-of-netherbury</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/john-walsh-the-cunning-man-of-netherbury</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/john-walsh-the-cunning-man-of-netherbury-hero.jpg</image:loc>
+    <image:title>John Walsh consults a circle book beside his grey dog while white, green and black fairy companies cross a moonlit Dorset hill</image:title>
+    <image:caption>A visual interpretation of John Walsh and the otherworldly beings in his testimony</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/jonka-dyneis-of-fetlar</loc><lastmod>2026-06-10</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/jonka-dyneis-of-fetlar-hero.jpg</image:loc>
@@ -2056,8 +2076,18 @@
     <image:title>A weathered British war-leader with a sword and dark horse standing to the right of misty Glastonbury Tor</image:title>
     <image:caption>A visual interpretation of King Arthur in the Somerset landscape</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/king-bladud</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/king-lud</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/king-bladud</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/king-bladud-hero.jpg</image:loc>
+    <image:title>The exiled Bladud discovers pigs wallowing in the steaming black mud of a Somerset hot spring</image:title>
+    <image:caption>A visual interpretation of King Bladud discovering Bath&#x27;s healing springs</image:caption>
+  </image:image></url>
+  <url><loc>https://folklorefinder.uk/legends/king-lud</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/king-lud-hero.jpg</image:loc>
+    <image:title>King Lud and a master builder overlook the construction of a timber gate above the pre-Roman Thames settlement</image:title>
+    <image:caption>A visual interpretation of King Lud rebuilding the settlement later linked with London</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/kirk-yetholm-seat-of-the-gypsy-kings</loc><lastmod>2026-06-19</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/kirk-yetholm-seat-of-the-gypsy-kings-hero.jpg</image:loc>
@@ -2070,7 +2100,12 @@
     <image:title>Kirkcudbright Tolbooth at dusk with a woman silhouetted behind a lit prison window</image:title>
     <image:caption>A visual interpretation of the tolbooth as a witch-trial prison</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/kitty-kilroy-the-witch-of-huntsfield</loc><lastmod>2026-08-07</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/kitty-kilroy-the-witch-of-huntsfield</loc><lastmod>2026-08-07</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/kitty-kilroy-the-witch-of-huntsfield-hero.jpg</image:loc>
+    <image:title>Kitty Kilroy tends a fallen chestnut horse on a wet County Mayo road while a priest and villagers look on</image:title>
+    <image:caption>A visual interpretation of the Huntsfield story of Kitty Kilroy and the priest&#x27;s horse</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/knocker</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/knocker-hero-v2.jpg</image:loc>
@@ -2419,7 +2454,12 @@
     <image:title>A supernatural black dog standing in a small hunting boat before a rocky Jura cave</image:title>
     <image:caption>A visual interpretation of the black dog that sailed with Macphie of Colonsay</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/madame-s-blow-well</loc><lastmod>2026-08-07</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/madame-s-blow-well</loc><lastmod>2026-08-07</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/madame-s-blow-well-hero.jpg</image:loc>
+    <image:title>A black coach and four pale horses sink into a dark circular spring on the stormy Lincolnshire marsh</image:title>
+    <image:caption>A visual interpretation of the vanished coach at Madame&#x27;s Blow-well</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/maeshowe-runes</loc><lastmod>2026-06-19</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/maeshowe-runes-hero.jpg</image:loc>
@@ -3098,7 +3138,12 @@
     <image:title>Weathered standing stones on high Oxfordshire ground at dusk with a dark cloaked figure among them</image:title>
     <image:caption>A visual interpretation of the Rollright Stones curse in Oxfordshire</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/rose-cullender-and-amy-duny-the-lowestoft-witches</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/rose-cullender-and-amy-duny-the-lowestoft-witches</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/rose-cullender-and-amy-duny-the-lowestoft-witches-hero.jpg</image:loc>
+    <image:title>Rose Cullender and Amy Duny stand with an empty basket at a wet Lowestoft fish market as a merchant refuses them herring</image:title>
+    <image:caption>A visual interpretation of the incident that preceded the Lowestoft witch accusations</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/ruari-mor-macneil-of-barra</loc><lastmod>2026-06-09</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/ruari-mor-macneil-of-barra-hero.jpg</image:loc>
@@ -3153,7 +3198,12 @@
     <image:title>Two giant silhouettes facing each other across a stormy Shetland inlet</image:title>
     <image:caption>A visual interpretation of the Shetland legend</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/scota-bess</loc><lastmod>2026-08-07</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/scota-bess</loc><lastmod>2026-08-07</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/scota-bess-hero.jpg</image:loc>
+    <image:title>Scota Bess sits in the Mermaid&#x27;s Chair above Stronsay and raises a winter gale over fishing boats trapped near shore</image:title>
+    <image:caption>A visual interpretation of Stronsay&#x27;s storm-witch Scota Bess</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/screaming-house-of-st-aubin</loc><lastmod>2026-06-28</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/screaming-house-of-st-aubin-hero.jpg</image:loc>
@@ -3208,7 +3258,12 @@
     <image:title>Seven dark supernatural birds crying in formation over smoky Black Country twilight</image:title>
     <image:caption>A visual interpretation of the Seven Whistlers above the Midlands</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/shane-bernagh</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/shane-bernagh</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/shane-bernagh-hero.jpg</image:loc>
+    <image:title>Shane Bernagh watches a coach road from his rocky mountain chair while passing provisions to an elderly neighbour</image:title>
+    <image:caption>A visual interpretation of the County Tyrone outlaw Shane Bernagh</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/shellycoat</loc><lastmod>2026-06-19</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/shellycoat-hero.jpg</image:loc>

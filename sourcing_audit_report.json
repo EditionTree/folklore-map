@@ -1,46 +1,26 @@
 {
   "generated": true,
-  "total_legends": 664,
-  "flagged_count": 656,
+  "total_legends": 705,
+  "flagged_count": 695,
   "flagged": [
     {
-      "name": "Bardney Abbey and the Light of Oswald",
+      "name": "Aimee Lake, the Last Witch of Guernsey",
       "severity_rank": 1,
       "reason": "no source could be classified by reliability tier",
-      "source_count": 1,
+      "source_count": 3,
       "tiers": [
+        "unclassified",
+        "unclassified",
         "unclassified"
       ],
       "urls": [
-        "https://lincolnshirefolktalesproject.com/2024/02/16/bardney-abbey-oswald-and-the-shaft-of-light/"
+        "https://museumofwitchcraftandmagic.co.uk/news/the-last-witch-trial-in-guernsey/",
+        "https://guernseydonkey.com/the-last-witchcraft-trial-in-guernsey/",
+        "https://history.gg/guernseys-witch-trial/"
       ]
     },
     {
       "name": "Bedd Dorti, the Witch's Grave",
-      "severity_rank": 1,
-      "reason": "no source could be classified by reliability tier",
-      "source_count": 1,
-      "tiers": [
-        "unclassified"
-      ],
-      "urls": [
-        "https://rcahmw.gov.uk/bedd-dorti-a-legendary-witchs-grave/"
-      ]
-    },
-    {
-      "name": "Bleeding Yew of Nevern",
-      "severity_rank": 1,
-      "reason": "no source could be classified by reliability tier",
-      "source_count": 1,
-      "tiers": [
-        "unclassified"
-      ],
-      "urls": [
-        "https://www.pembrokeshirecoast.wales/about-the-national-park/culture-and-heritage/land-of-legends/nevern/"
-      ]
-    },
-    {
-      "name": "Bossiney Castle",
       "severity_rank": 1,
       "reason": "no source could be classified by reliability tier",
       "source_count": 2,
@@ -49,65 +29,60 @@
         "unclassified"
       ],
       "urls": [
-        "https://www.themodernantiquarian.com/site/820/bossiney-mound",
-        "https://www.cornwalls.co.uk/myths-legends/king_arthur.htm"
+        "https://rcahmw.gov.uk/bedd-dorti-a-legendary-witchs-grave/",
+        "https://coflein.gov.uk/en/site/800208"
       ]
     },
     {
-      "name": "Brother Simon of Swineshead",
+      "name": "Bleeding Yew of Nevern",
       "severity_rank": 1,
       "reason": "no source could be classified by reliability tier",
-      "source_count": 1,
-      "tiers": [
-        "unclassified"
-      ],
-      "urls": [
-        "https://www.lincolnshirelife.co.uk/heritage/king-johns-stay-at-swineshead-abbey/"
-      ]
-    },
-    {
-      "name": "Bures Dragon",
-      "severity_rank": 1,
-      "reason": "no source could be classified by reliability tier",
-      "source_count": 1,
-      "tiers": [
-        "unclassified"
-      ],
-      "urls": [
-        "https://www.atlasobscura.com/places/bures-dragon"
-      ]
-    },
-    {
-      "name": "Cadair Idris",
-      "severity_rank": 1,
-      "reason": "no source could be classified by reliability tier",
-      "source_count": 1,
-      "tiers": [
-        "unclassified"
-      ],
-      "urls": [
-        "https://www.visitwales.com/things-do/adventure-and-activities/walking/guide-to-walking-up-cader-idris"
-      ]
-    },
-    {
-      "name": "Canthrig Bwt",
-      "severity_rank": 1,
-      "reason": "no source could be classified by reliability tier",
-      "source_count": 1,
-      "tiers": [
-        "unclassified"
-      ],
-      "urls": [
-        "https://visitnorthwales.co.uk/the-cannibal-witch-of-llanberis/"
-      ]
-    },
-    {
-      "name": "Conn-eda and the Golden Apples of Lough Erne",
-      "severity_rank": 1,
-      "reason": "no source could be classified by reliability tier",
-      "source_count": 6,
+      "source_count": 3,
       "tiers": [
         "unclassified",
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://www.pembrokeshirecoast.wales/about-the-national-park/culture-and-heritage/land-of-legends/nevern/",
+        "https://www.nevern-church.org.uk/the-bleeding-yews/",
+        "https://www.britainexpress.com/attractions.htm?attraction=625"
+      ]
+    },
+    {
+      "name": "Burial Place of the Big Women",
+      "severity_rank": 1,
+      "reason": "no source could be classified by reliability tier",
+      "source_count": 1,
+      "tiers": [
+        "unclassified"
+      ],
+      "urls": [
+        "http://www.tireeplacenames.org/hynish/the-burial-place-of-the-big-women-or-cladh-nam-ban-mora/"
+      ]
+    },
+    {
+      "name": "Cribarth, the Sleeping Giant",
+      "severity_rank": 1,
+      "reason": "no source could be classified by reliability tier",
+      "source_count": 3,
+      "tiers": [
+        "unclassified",
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://www.beacons-npa.gov.uk/the-authority/press-and-news/archive/2009-2/november-2009/awakening-the-sleeping-giant-of-the-cribarth/",
+        "https://singinghead.wordpress.com/2015/12/02/the-sleeping-giant-of-cribarth/",
+        "https://www.breconbeacons.org/discover/great-days-out/days-out-in-the-black-mountain-range-and-fforest-fawr/cwm-tawe-history-giants-and-ghosts"
+      ]
+    },
+    {
+      "name": "Culver Hole and the Smugglers of Port Eynon",
+      "severity_rank": 1,
+      "reason": "no source could be classified by reliability tier",
+      "source_count": 5,
+      "tiers": [
         "unclassified",
         "unclassified",
         "unclassified",
@@ -115,48 +90,45 @@
         "unclassified"
       ],
       "urls": [
-        "https://www.jstor.org/stable/1252472",
-        "https://sacred-texts.com/neu/yeats/fip/fip78.htm",
-        "https://experience-enniskillen.com/blog/conn-eda-and-the-golden-apples/",
-        "https://archive.org/details/storyofconnedaor00okea",
-        "https://loughneaghtours.com/myths-and-legends-of-lough-neagh/",
-        "https://riverbannloughneagh.org/legends/"
+        "https://www.atlasobscura.com/places/culver-hole-port-eynon",
+        "https://thathistorycouple.co.uk/2025/06/30/culver-hole-the-smugglers-cove-gower-wales/",
+        "https://www.grahamwatkins.info/post/2018/11/09/the-smugglers-of-culver-hole",
+        "https://ancientmonuments.uk/129230-culver-hole-dovecot-port-eynon",
+        "https://coflein.gov.uk/en/sites/37514"
       ]
     },
     {
-      "name": "Craig y Ddinas",
+      "name": "Daft Eddie and the Merry Hearts of Down",
       "severity_rank": 1,
       "reason": "no source could be classified by reliability tier",
-      "source_count": 1,
+      "source_count": 3,
       "tiers": [
+        "unclassified",
+        "unclassified",
         "unclassified"
       ],
       "urls": [
-        "https://www.fforestfawrgeopark.org.uk/understanding/myths-and-legends/the-sleeping-warriors-of-craig-y-ddinas/"
-      ]
-    },
-    {
-      "name": "Crazy Kate, the Witch of Swineshead",
-      "severity_rank": 1,
-      "reason": "no source could be classified by reliability tier",
-      "source_count": 1,
-      "tiers": [
-        "unclassified"
-      ],
-      "urls": [
-        "https://lincolnshirefolktalesproject.com/2024/02/06/crazy-kate-the-witch-of-swineshead/"
+        "http://www.arts.ulster.ac.uk/ulsterscots/usep_pdf/Final%20English%20Texts/Lyttle,%20Wesley%20Guard.%20Daft%20Eddie%20or.%20the%20smugglers%20of%20Strangford%20Lough.%20Belfast%20c.%201890.pdf",
+        "http://clydesburn.blogspot.com/2020/07/daft-eddie-and-smugglers-of-strangford.html",
+        "https://www.abovedown.co.uk/Items/kircubbin"
       ]
     },
     {
       "name": "Daniel Fall, the Pirate of the Norfolk Coast",
       "severity_rank": 1,
       "reason": "no source could be classified by reliability tier",
-      "source_count": 1,
+      "source_count": 4,
       "tiers": [
+        "unclassified",
+        "unclassified",
+        "unclassified",
         "unclassified"
       ],
       "urls": [
-        "https://enjoyingnorfolk.co.uk/here-be-pirates/"
+        "https://enjoyingnorfolk.co.uk/here-be-pirates/",
+        "https://www.genuki.org.uk/big/eng/NFK/Newspapers/Nfkchron/1781/02",
+        "https://www.greatyarmouthmercury.co.uk/news/21024280.hear-story-sailor-killed-pirate-buried-churchyard/",
+        "https://www.greatyarmouthmercury.co.uk/news/21030190.brave-young-captain-died-yarmouth-defending-ship-pirates/"
       ]
     },
     {
@@ -187,32 +159,40 @@
       "name": "Devil's Bridge",
       "severity_rank": 1,
       "reason": "no source could be classified by reliability tier",
-      "source_count": 1,
+      "source_count": 3,
       "tiers": [
+        "unclassified",
+        "unclassified",
         "unclassified"
       ],
       "urls": [
-        "https://www.discoverceredigion.wales/areas-of-ceredigion/cambrian-mountains/communities-of-the-cambrian-mountains/devils-bridge/"
+        "https://www.discoverceredigion.wales/areas-of-ceredigion/cambrian-mountains/communities-of-the-cambrian-mountains/devils-bridge/",
+        "https://historypoints.org/index.php?page=devils-bridge-aberystwyth",
+        "https://sublimewales.wordpress.com/places/devils-bridge-near-aberystwyth/"
       ]
     },
     {
       "name": "Dorrington Witch",
       "severity_rank": 1,
       "reason": "no source could be classified by reliability tier",
-      "source_count": 1,
+      "source_count": 2,
       "tiers": [
+        "unclassified",
         "unclassified"
       ],
       "urls": [
-        "https://lincolnshirefolktalesproject.com/2024/02/20/the-dorrington-demons-witches/"
+        "https://lincolnshirefolktalesproject.com/2024/02/20/the-dorrington-demons-witches/",
+        "https://northlincolnshiremuseum.co.uk/discover/ethel-rudkin-1893-1984/"
       ]
     },
     {
       "name": "Downpatrick and the Three Saints",
       "severity_rank": 1,
       "reason": "no source could be classified by reliability tier",
-      "source_count": 4,
+      "source_count": 6,
       "tiers": [
+        "unclassified",
+        "unclassified",
         "unclassified",
         "unclassified",
         "unclassified",
@@ -222,19 +202,23 @@
         "https://www.atlasobscura.com/places/the-grave-of-st-patrick",
         "https://www.saintpatrickcentre.com/st-patricks-grave/",
         "https://matadornetwork.com/read/county-down-northern-ireland-saint-patrick/",
-        "https://www.visitwarrenpoint.com/st-patricks-grave-burial-site-downpatrick/"
+        "https://www.visitwarrenpoint.com/st-patricks-grave-burial-site-downpatrick/",
+        "https://www.dib.ie/biography/jocelin-furness-a4280",
+        "https://www.nationalchurchestrust.org/explore/story/sacred-places-patrick"
       ]
     },
     {
       "name": "Dragon of Deerhurst",
       "severity_rank": 1,
       "reason": "no source could be classified by reliability tier",
-      "source_count": 1,
+      "source_count": 2,
       "tiers": [
+        "unclassified",
         "unclassified"
       ],
       "urls": [
-        "https://www.gloucestershire.gov.uk/archives/learning-for-all/families/ugly-mugs/the-dragons-of-gloucestershire/"
+        "https://www.gloucestershire.gov.uk/archives/learning-for-all/families/ugly-mugs/the-dragons-of-gloucestershire/",
+        "https://sites.pitt.edu/~dash/britishdragons.html"
       ]
     },
     {
@@ -275,6 +259,20 @@
       ],
       "urls": [
         "https://lincolnshirefolktalesproject.com/2024/02/20/fan-o-the-fens/"
+      ]
+    },
+    {
+      "name": "Feolagan of Kebock Head",
+      "severity_rank": 1,
+      "reason": "no source could be classified by reliability tier",
+      "source_count": 2,
+      "tiers": [
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://www.paranormaldatabase.com/islands/outedata.php",
+        "https://what-when-how.com/celtic-mythology-and-folklore/fachan-athach-to-fergus-feargus-celtic-mythology-and-folklore/"
       ]
     },
     {
@@ -644,6 +642,20 @@
       ]
     },
     {
+      "name": "Lowri and Siân Owen, the Witches of Llanarmon",
+      "severity_rank": 1,
+      "reason": "no source could be classified by reliability tier",
+      "source_count": 2,
+      "tiers": [
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://www.peoplescollection.wales/items/1762761",
+        "https://nation.cymru/culture/they-were-blamed-for-things-people-didnt-understand-celebrating-international-womens-day-with-efa-lois-welsh-witches/"
+      ]
+    },
+    {
       "name": "MacKinnon's Cave",
       "severity_rank": 1,
       "reason": "no source could be classified by reliability tier",
@@ -659,12 +671,16 @@
       "name": "Macha",
       "severity_rank": 1,
       "reason": "no source could be classified by reliability tier",
-      "source_count": 1,
+      "source_count": 3,
       "tiers": [
+        "unclassified",
+        "unclassified",
         "unclassified"
       ],
       "urls": [
-        "https://visitarmagh.com/stories/live-our-celtic-myths-legends-in-the-ancient-site-of-navan-fort/the-curse-of-macha/"
+        "https://visitarmagh.com/stories/live-our-celtic-myths-legends-in-the-ancient-site-of-navan-fort/the-curse-of-macha/",
+        "https://www.morrigan.academy/blog/curse-of-macha",
+        "https://secretireland.ie/exploring-navan-fort-history-mythology-and-natures-wonder/"
       ]
     },
     {
@@ -684,6 +700,38 @@
       ]
     },
     {
+      "name": "Madame's Blow-well",
+      "severity_rank": 1,
+      "reason": "no source could be classified by reliability tier",
+      "source_count": 3,
+      "tiers": [
+        "unclassified",
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://archive.org/stream/in.ernet.dli.2015.106716/2015.106716.Lincolnshire-Examples-Of-Printed-Folk-lore-Concerning_djvu.txt",
+        "https://www.lincstrust.org.uk/nature-reserves/tetney-blow-wells",
+        "https://insearchofholywellsandhealingsprings.wordpress.com/2013/04/19/holy-wells-and-healing-springs-of-lincolnshire-an-overview/"
+      ]
+    },
+    {
+      "name": "Maeve Roe, the Banshee of Dunluce Castle",
+      "severity_rank": 1,
+      "reason": "no source could be classified by reliability tier",
+      "source_count": 3,
+      "tiers": [
+        "unclassified",
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://celticelegance.com/dunluce-castle/",
+        "https://lovetovisitireland.com/the-woman-locked-in-irelands-most-dramatic-castle-and-why-she-never-left/",
+        "https://www.bohosilver.co.uk/mermaidgate"
+      ]
+    },
+    {
       "name": "Margaret Finch",
       "severity_rank": 1,
       "reason": "no source could be classified by reliability tier",
@@ -695,6 +743,20 @@
       "urls": [
         "https://www.norwoodsociety.co.uk/articles/156-margaret-finch-the-norwood-gipsy.html",
         "https://www.spookyisles.com/gypsy-queen-norwood-margaret-finch/"
+      ]
+    },
+    {
+      "name": "Marion Pardone, the Witch of Scalloway",
+      "severity_rank": 1,
+      "reason": "no source could be classified by reliability tier",
+      "source_count": 2,
+      "tiers": [
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://www.shetland.org/blog/da-fateful-tale-o-marion-pardone-witchcraft-in-shetland",
+        "https://www.shetlandmuseumandarchives.org.uk/blog/shetland-witches"
       ]
     },
     {
@@ -719,6 +781,22 @@
       ],
       "urls": [
         "https://turtlebunbury.com/document/wogan-browne-of-clongowes/"
+      ]
+    },
+    {
+      "name": "Mermaid of Mahee",
+      "severity_rank": 1,
+      "reason": "no source could be classified by reliability tier",
+      "source_count": 3,
+      "tiers": [
+        "unclassified",
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://throughthearchives.wordpress.com/2021/05/11/the-mermaid-of-mahee-island-and-the-nendrum-monastic-site/",
+        "https://www.newsletter.co.uk/heritage-and-retro/retro/stepping-back-in-time-saints-scholars-and-mermaid-of-mahee-island-3138636",
+        "https://katielarmour.com/blogs/journal/mermaid-of-mahee-strangford-lough-county-down"
       ]
     },
     {
@@ -823,12 +901,16 @@
       "name": "Robert the Bruce",
       "severity_rank": 1,
       "reason": "no source could be classified by reliability tier",
-      "source_count": 1,
+      "source_count": 3,
       "tiers": [
+        "unclassified",
+        "unclassified",
         "unclassified"
       ],
       "urls": [
-        "https://niarchive.org/projectitems/2-bruces-cave/"
+        "https://niarchive.org/projectitems/2-bruces-cave/",
+        "https://discoverulsterscots.com/history-culture/robert-bruce-700/king-robert-bruce-and-rathlin-island",
+        "https://discoverulsterscots.com/history-culture/robert-bruce-700/was-it-really-rathlin"
       ]
     },
     {
@@ -856,6 +938,36 @@
       ]
     },
     {
+      "name": "Saxa and Herman, the Rival Giants of Unst",
+      "severity_rank": 1,
+      "reason": "no source could be classified by reliability tier",
+      "source_count": 3,
+      "tiers": [
+        "unclassified",
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://shetlandwithlaurie.com/the-blog/shetland-folklore-series-a-land-of-giants",
+        "https://www.shetland.org/blog/shetland-folklore",
+        "https://kerrieanngardner.co.uk/landscape/giants-and-ghosts-on-hermaness/"
+      ]
+    },
+    {
+      "name": "Scota Bess",
+      "severity_rank": 1,
+      "reason": "no source could be classified by reliability tier",
+      "source_count": 2,
+      "tiers": [
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://visitstronsay.com/things-to-do/mysteries-legends/",
+        "https://www.undiscoveredscotland.co.uk/stronsay/stronsay/index.html"
+      ]
+    },
+    {
       "name": "Screaming House of St Aubin",
       "severity_rank": 1,
       "reason": "no source could be classified by reliability tier",
@@ -879,6 +991,20 @@
       ],
       "urls": [
         "https://britishfairies.wordpress.com/tag/skriker/"
+      ]
+    },
+    {
+      "name": "St Botolph and the Devil",
+      "severity_rank": 1,
+      "reason": "no source could be classified by reliability tier",
+      "source_count": 2,
+      "tiers": [
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://lincolnshirefolktalesproject.com/2024/02/20/st-botolph-the-devil/",
+        "https://www.paranormaldatabase.com/lincolnshire/lincdata.php"
       ]
     },
     {
@@ -918,6 +1044,24 @@
       ]
     },
     {
+      "name": "Tavish Dhu (Black Tom), the Pirate of the Skerries",
+      "severity_rank": 1,
+      "reason": "no source could be classified by reliability tier",
+      "source_count": 4,
+      "tiers": [
+        "unclassified",
+        "unclassified",
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://discoverportrush.com/cultural/myths-legends/tavish-dhu/",
+        "http://timhodkinson.blogspot.com/2015/07/medieval-pirates-tale-of-tavish-dhu.html",
+        "https://causewaycoastandglens.gov.uk/news/Pirates-Off-Portrush-700-Years-Dead",
+        "https://discoverportrush.com/media/2022/01/Heritage-Newsletter-64-The-Skerries.pdf"
+      ]
+    },
+    {
       "name": "Tchico",
       "severity_rank": 1,
       "reason": "no source could be classified by reliability tier",
@@ -945,12 +1089,14 @@
       "name": "Tetford Witch",
       "severity_rank": 1,
       "reason": "no source could be classified by reliability tier",
-      "source_count": 1,
+      "source_count": 2,
       "tiers": [
+        "unclassified",
         "unclassified"
       ],
       "urls": [
-        "https://lincolnshirefolktalesproject.com/2024/02/20/the-tetford-witch/"
+        "https://lincolnshirefolktalesproject.com/2024/02/20/the-tetford-witch/",
+        "https://tellinghistory.co.uk/content/additional-information-not-included-lincolnshire-folk-tales-maureen-james-published-history"
       ]
     },
     {
@@ -963,6 +1109,52 @@
       ],
       "urls": [
         "https://lincolnshirefolktalesproject.com/2024/02/09/the-drake-stone/"
+      ]
+    },
+    {
+      "name": "The Binbrook Bewitched Farm (1905)",
+      "severity_rank": 1,
+      "reason": "no source could be classified by reliability tier",
+      "source_count": 2,
+      "tiers": [
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://aboutalford.com/2022/10/30/witchcraft-in-the-wolds/",
+        "http://hauntedohiobooks.com/news/a-bewitched-farmhouse-at-binbrook/"
+      ]
+    },
+    {
+      "name": "The Black Nun of Bonamargy",
+      "severity_rank": 1,
+      "reason": "no source could be classified by reliability tier",
+      "source_count": 3,
+      "tiers": [
+        "unclassified",
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://antrimhistory.net/whats-that-black-nuns-grave-at-bonamargy-friary-ballycastle/",
+        "https://www.theblacknun.com/",
+        "https://www.findagrave.com/memorial/13696899/julia-mcquillan"
+      ]
+    },
+    {
+      "name": "The Cooneen Ghost",
+      "severity_rank": 1,
+      "reason": "no source could be classified by reliability tier",
+      "source_count": 3,
+      "tiers": [
+        "unclassified",
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://www.belfastentries.com/stories/cooneen-ghost/",
+        "https://www.fermanaghroots.com/wiki/index.php?title=Cooneen_Ghost",
+        "https://crypticinquiry.com/2023/07/05/the-cooneen-ghost/"
       ]
     },
     {
@@ -992,6 +1184,22 @@
       ]
     },
     {
+      "name": "The Ghost of Hellens Manor",
+      "severity_rank": 1,
+      "reason": "no source could be classified by reliability tier",
+      "source_count": 3,
+      "tiers": [
+        "unclassified",
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://www.haunted-britain.com/hellens.htm",
+        "https://tracymonger.wordpress.com/2013/02/23/hellens-manor-much-marcle-herefordshire/",
+        "https://www.catherinecavendish.com/2013/10/hellens-heart-history-and-hauntings.html"
+      ]
+    },
+    {
       "name": "The Ghosts of Doddington Hall",
       "severity_rank": 1,
       "reason": "no source could be classified by reliability tier",
@@ -1016,6 +1224,20 @@
       ]
     },
     {
+      "name": "The Giant Snake of Penhesgyn",
+      "severity_rank": 1,
+      "reason": "no source could be classified by reliability tier",
+      "source_count": 2,
+      "tiers": [
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://www.anglesey-today.com/the-giant-snake-of-penhesgyn-an-old-anglesey-legend.html",
+        "https://www.icysedgwick.com/anglesey-folklore/"
+      ]
+    },
+    {
       "name": "The Giant of Carn Galver",
       "severity_rank": 1,
       "reason": "no source could be classified by reliability tier",
@@ -1025,6 +1247,22 @@
       ],
       "urls": [
         "https://www.cornwalls.co.uk/myths-legends/carn_galva.htm"
+      ]
+    },
+    {
+      "name": "The Gwybr of Llanrhaeadr",
+      "severity_rank": 1,
+      "reason": "no source could be classified by reliability tier",
+      "source_count": 3,
+      "tiers": [
+        "unclassified",
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://www.pistyllrhaeadr.co.uk/dragon.html",
+        "https://www.visitmidwales.co.uk/Oswestry-Local-Legend-Gwybr-of-Llanrhaeadr/details/?dms=3&feature=1000&venue=1120537",
+        "https://theroyalvictoria.co.uk/journal/the-dragons-of-north-wales-and-where-to-find-them"
       ]
     },
     {
@@ -1052,6 +1290,22 @@
       ]
     },
     {
+      "name": "The Hogboon of Helliehow",
+      "severity_rank": 1,
+      "reason": "no source could be classified by reliability tier",
+      "source_count": 3,
+      "tiers": [
+        "unclassified",
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://brodgar.co.uk/2016/04/24/the-hogboon-of-helliehow/",
+        "https://spookyscotland.net/hogboon/",
+        "https://www.orcadian.co.uk/shop/folklore-and-myth/45-the-hogboon-of-hellihowe.html"
+      ]
+    },
+    {
       "name": "The Pirates of Dollar Bay",
       "severity_rank": 1,
       "reason": "no source could be classified by reliability tier",
@@ -1061,6 +1315,20 @@
       ],
       "urls": [
         "https://waterfordtreasures.com/murder-aboard-the-earl-of-sandwich-the-pirates-of-dollar-bay/"
+      ]
+    },
+    {
+      "name": "The Pirates' Ambush at Sark",
+      "severity_rank": 1,
+      "reason": "no source could be classified by reliability tier",
+      "source_count": 2,
+      "tiers": [
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "http://guernseydonkey.com/?p=2821",
+        "https://www.sark.co.uk/history/monks-pirates-folklore"
       ]
     },
     {
@@ -1076,6 +1344,22 @@
       ]
     },
     {
+      "name": "The White Trout of Cong",
+      "severity_rank": 1,
+      "reason": "no source could be classified by reliability tier",
+      "source_count": 3,
+      "tiers": [
+        "unclassified",
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://www.sacred-texts.com/neu/celt/lasi/lasi06.htm",
+        "https://www.mayo-ireland.ie/en/about-mayo/arts-culture/tales-visions-beliefs/the-white-trout.html",
+        "https://sacred-texts.com/neu/yeats/fip/fip11.htm"
+      ]
+    },
+    {
       "name": "The Whitwick Giant",
       "severity_rank": 1,
       "reason": "no source could be classified by reliability tier",
@@ -1085,6 +1369,20 @@
       ],
       "urls": [
         "https://eastmidlandsfolklore.wordpress.com/2014/05/28/the-legend-of-holy-well-haw-loughborough-leicestershire/"
+      ]
+    },
+    {
+      "name": "The Witch of Ditchling Common",
+      "severity_rank": 1,
+      "reason": "no source could be classified by reliability tier",
+      "source_count": 2,
+      "tiers": [
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://www.eastsussex.gov.uk/leisure-tourism/countryside-sites/ditchling-common/history-and-folklore",
+        "https://www.southdowns.gov.uk/who-were-the-witches-of-the-south-downs/"
       ]
     },
     {
@@ -1109,6 +1407,20 @@
       ],
       "urls": [
         "https://technotink.net/lore/knocknashee/"
+      ]
+    },
+    {
+      "name": "The Witches Circle of Weelsby Woods",
+      "severity_rank": 1,
+      "reason": "no source could be classified by reliability tier",
+      "source_count": 2,
+      "tiers": [
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://www.grimsbytelegraph.co.uk/news/grimsby-news/weelsby-woods-war-witches-history-2557985",
+        "https://www.grimsbytelegraph.co.uk/news/grimsby-news/mystery-behind-witches-circle-grimsby-4741179"
       ]
     },
     {
@@ -1302,15 +1614,35 @@
       ]
     },
     {
-      "name": "Ben Varrey",
+      "name": "Bardney Abbey and the Light of Oswald",
       "severity_rank": 2,
       "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
+      "source_count": 4,
       "tiers": [
+        "unclassified",
+        "unclassified",
+        "unclassified",
         "secondary"
       ],
       "urls": [
-        "https://www.transceltic.com/manx/ben-varrey-manx-mermaid-and-story-of-mermaid-and-apple-tree"
+        "https://lincolnshirefolktalesproject.com/2024/02/16/bardney-abbey-oswald-and-the-shaft-of-light/",
+        "https://www.british-history.ac.uk/vch/lincs/vol2/pp97-104",
+        "https://www.ccel.org/ccel/bede/history.v.iii.xi.html",
+        "https://www.mysteriousbritain.co.uk/folklore/bardney-abbey/"
+      ]
+    },
+    {
+      "name": "Ben Varrey",
+      "severity_rank": 2,
+      "reason": "only secondary/popular sources, no primary or heritage record",
+      "source_count": 2,
+      "tiers": [
+        "secondary",
+        "unclassified"
+      ],
+      "urls": [
+        "https://www.transceltic.com/manx/ben-varrey-manx-mermaid-and-story-of-mermaid-and-apple-tree",
+        "https://britishfairies.wordpress.com/tag/ben-varrey/"
       ]
     },
     {
@@ -1335,6 +1667,20 @@
       ],
       "urls": [
         "https://www.historic-uk.com/HistoryUK/HistoryofScotland/The-Brahan-Seer-the-Scottish-Nostradamus/"
+      ]
+    },
+    {
+      "name": "Canthrig Bwt",
+      "severity_rank": 2,
+      "reason": "only secondary/popular sources, no primary or heritage record",
+      "source_count": 2,
+      "tiers": [
+        "unclassified",
+        "secondary"
+      ],
+      "urls": [
+        "https://visitnorthwales.co.uk/the-cannibal-witch-of-llanberis/",
+        "https://www.mysteriousbritain.co.uk/folklore/canrig-bwt/"
       ]
     },
     {
@@ -1570,18 +1916,6 @@
       ]
     },
     {
-      "name": "Afanc",
-      "severity_rank": 3,
-      "reason": "only a single source",
-      "source_count": 1,
-      "tiers": [
-        "encyclopedic"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Afanc"
-      ]
-    },
-    {
       "name": "Aillen mac Midgna",
       "severity_rank": 3,
       "reason": "only a single source",
@@ -1615,18 +1949,6 @@
       ],
       "urls": [
         "https://en.wikipedia.org/wiki/Alice_Kyteler"
-      ]
-    },
-    {
-      "name": "Allison Balfour",
-      "severity_rank": 3,
-      "reason": "only a single source",
-      "source_count": 1,
-      "tiers": [
-        "encyclopedic"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Allison_Balfour"
       ]
     },
     {
@@ -1675,18 +1997,6 @@
       ],
       "urls": [
         "https://en.wikipedia.org/wiki/Andrew_Barton_(privateer)"
-      ]
-    },
-    {
-      "name": "Angelystor",
-      "severity_rank": 3,
-      "reason": "only a single source",
-      "source_count": 1,
-      "tiers": [
-        "encyclopedic"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Llangernyw_Yew"
       ]
     },
     {
@@ -1843,18 +2153,6 @@
       ],
       "urls": [
         "https://en.wikipedia.org/wiki/Baobhan_sith"
-      ]
-    },
-    {
-      "name": "Barclodiad y Gawres",
-      "severity_rank": 3,
-      "reason": "only a single source",
-      "source_count": 1,
-      "tiers": [
-        "encyclopedic"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Barclodiad_y_Gawres"
       ]
     },
     {
@@ -2086,18 +2384,6 @@
       ]
     },
     {
-      "name": "Black Eric of Shetland",
-      "severity_rank": 3,
-      "reason": "only a single source",
-      "source_count": 1,
-      "tiers": [
-        "encyclopedic"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Tangie"
-      ]
-    },
-    {
       "name": "Black Shuck",
       "severity_rank": 3,
       "reason": "only a single source",
@@ -2155,18 +2441,6 @@
       ],
       "urls": [
         "https://en.wikipedia.org/wiki/List_of_dragons_in_mythology_and_folklore"
-      ]
-    },
-    {
-      "name": "Blue Men of the Minch",
-      "severity_rank": 3,
-      "reason": "only a single source",
-      "source_count": 1,
-      "tiers": [
-        "encyclopedic"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Blue_men_of_the_Minch"
       ]
     },
     {
@@ -2419,18 +2693,6 @@
       ],
       "urls": [
         "https://en.wikipedia.org/wiki/Bwbach"
-      ]
-    },
-    {
-      "name": "Byard's Leap",
-      "severity_rank": 3,
-      "reason": "only a single source",
-      "source_count": 1,
-      "tiers": [
-        "encyclopedic"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Byard%27s_Leap"
       ]
     },
     {
@@ -4279,6 +4541,18 @@
       ],
       "urls": [
         "https://en.wikipedia.org/wiki/Kirkcudbright_Tolbooth"
+      ]
+    },
+    {
+      "name": "Kitty Kilroy, the Witch of Huntsfield",
+      "severity_rank": 3,
+      "reason": "only a single source",
+      "source_count": 1,
+      "tiers": [
+        "primary"
+      ],
+      "urls": [
+        "https://www.duchas.ie/en/cbes/4427912/4357042/4452859"
       ]
     },
     {
@@ -6928,6 +7202,58 @@
       ]
     },
     {
+      "name": "Allison Balfour",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 4,
+      "tiers": [
+        "encyclopedic",
+        "unclassified",
+        "unclassified",
+        "encyclopedic"
+      ],
+      "urls": [
+        "https://en.wikipedia.org/wiki/Allison_Balfour",
+        "https://orkneyheritagesociety.org.uk/projects/orkney-witchcraft-trial-memorial/history-of-witchcraft-trials-in-orkney/",
+        "https://www.executedtoday.com/2007/12/16/1594-alison-balfour/",
+        "https://en.wikipedia.org/wiki/Witchcraft_in_Orkney"
+      ]
+    },
+    {
+      "name": "Angelystor",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 4,
+      "tiers": [
+        "encyclopedic",
+        "unclassified",
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://en.wikipedia.org/wiki/Llangernyw_Yew",
+        "https://welshgiftshop.com/blogs/welsh-gift-shop/13921057-llangernyw-yew-the-oldest-tree-in-wales-the-angelystor-spirit",
+        "https://www.atlasobscura.com/places/llangernyw-yew",
+        "https://nation.cymru/culture/top-10-ghosts-wales-black-nun-llangrannog/"
+      ]
+    },
+    {
+      "name": "Barclodiad y Gawres",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 3,
+      "tiers": [
+        "encyclopedic",
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://en.wikipedia.org/wiki/Barclodiad_y_Gawres",
+        "https://cadw.gov.wales/visit/places-to-visit/barclodiad-y-gawres-chambered-tomb",
+        "https://www.anglesey-history.co.uk/places/prehistoric-monuments/barclodiad-y-gawres/"
+      ]
+    },
+    {
       "name": "Bartholomew Roberts",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
@@ -6970,6 +7296,22 @@
       ]
     },
     {
+      "name": "Benlli Gawr, the Tyrant of Foel Fenlli",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 3,
+      "tiers": [
+        "encyclopedic",
+        "encyclopedic",
+        "unclassified"
+      ],
+      "urls": [
+        "https://en.wikipedia.org/wiki/Benlli",
+        "https://en.wikipedia.org/wiki/Foel_Fenlli",
+        "https://www.mythslegendsodditiesnorth-east-wales.co.uk/benlli-gawr"
+      ]
+    },
+    {
       "name": "Bessie Millie of Stromness",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
@@ -6986,6 +7328,38 @@
       ]
     },
     {
+      "name": "Betty Wells, the Witch of Kirton in Lindsey",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 2,
+      "tiers": [
+        "unclassified",
+        "encyclopedic"
+      ],
+      "urls": [
+        "https://lincolnshirefolktalesproject.com/2025/06/30/the-village-behind-the-folklore/",
+        "https://en.wikipedia.org/wiki/Ethel_Rudkin"
+      ]
+    },
+    {
+      "name": "Betty's Grave",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 4,
+      "tiers": [
+        "unclassified",
+        "unclassified",
+        "unclassified",
+        "heritage"
+      ],
+      "urls": [
+        "https://www.spookyisles.com/bettys-grave/",
+        "https://www.sabre-roads.org.uk/wiki/index.php?title=Betty's_Grave",
+        "http://www.greatbritishghosttour.co.uk/Pages/England/Gloucestershire/Poulton.html",
+        "https://historicengland.org.uk/images-books/photos/item/LON01/01/GC/040"
+      ]
+    },
+    {
       "name": "Bignor Hill Dragon",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
@@ -6999,6 +7373,26 @@
         "https://en.wikipedia.org/wiki/Bignor_Hill",
         "http://www.sussexarch.org.uk/saaf/dragon.html",
         "https://sites.pitt.edu/~dash/britishdragons.html"
+      ]
+    },
+    {
+      "name": "Black Eric of Shetland",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 5,
+      "tiers": [
+        "encyclopedic",
+        "encyclopedic",
+        "unclassified",
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://en.wikipedia.org/wiki/Tangie",
+        "https://en.wikipedia.org/wiki/Fitful_Head",
+        "https://scotlands-stories.com/a-guide-to-shetland-folklore/",
+        "https://www.paranormaldatabase.com/islands/Shetdata.php",
+        "https://www.shetland.org/blog/spooky-tales-from-shetland"
       ]
     },
     {
@@ -7046,6 +7440,56 @@
       ]
     },
     {
+      "name": "Blue Men of the Minch",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 3,
+      "tiers": [
+        "encyclopedic",
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://en.wikipedia.org/wiki/Blue_men_of_the_Minch",
+        "https://www.icysedgwick.com/blue-men-of-the-minch/",
+        "https://scotlands-stories.com/blue-men-of-the-minch/"
+      ]
+    },
+    {
+      "name": "Bossiney Castle",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 3,
+      "tiers": [
+        "unclassified",
+        "unclassified",
+        "heritage"
+      ],
+      "urls": [
+        "https://www.themodernantiquarian.com/site/820/bossiney-mound",
+        "https://www.cornwalls.co.uk/myths-legends/king_arthur.htm",
+        "https://historicengland.org.uk/listing/the-list/list-entry/1006708"
+      ]
+    },
+    {
+      "name": "Brother Simon of Swineshead",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 4,
+      "tiers": [
+        "unclassified",
+        "heritage",
+        "encyclopedic",
+        "unclassified"
+      ],
+      "urls": [
+        "https://www.lincolnshirelife.co.uk/heritage/king-johns-stay-at-swineshead-abbey/",
+        "https://historicengland.org.uk/listing/the-list/list-entry/1018687",
+        "https://en.wikipedia.org/wiki/Swineshead_Abbey",
+        "https://worcestercathedrallibrary.wordpress.com/2015/09/07/how-did-king-john-die-a-comic-strip-answer/"
+      ]
+    },
+    {
       "name": "Brutus of Troy",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
@@ -7057,6 +7501,48 @@
       "urls": [
         "https://visittotnes.co.uk/troy-totnes-tale-brutus-stone/",
         "https://en.wikipedia.org/wiki/Brutus_of_Troy"
+      ]
+    },
+    {
+      "name": "Bures Dragon",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 2,
+      "tiers": [
+        "unclassified",
+        "encyclopedic"
+      ],
+      "urls": [
+        "https://www.atlasobscura.com/places/bures-dragon",
+        "https://en.wikipedia.org/wiki/Bures,_England"
+      ]
+    },
+    {
+      "name": "Byard's Leap",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 2,
+      "tiers": [
+        "encyclopedic",
+        "unclassified"
+      ],
+      "urls": [
+        "https://en.wikipedia.org/wiki/Byard%27s_Leap",
+        "https://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MLI89280&resourceID=1006"
+      ]
+    },
+    {
+      "name": "Cadair Idris",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 2,
+      "tiers": [
+        "unclassified",
+        "encyclopedic"
+      ],
+      "urls": [
+        "https://www.visitwales.com/things-do/adventure-and-activities/walking/guide-to-walking-up-cader-idris",
+        "https://en.wikipedia.org/wiki/Cadair_Idris"
       ]
     },
     {
@@ -7124,6 +7610,22 @@
       ]
     },
     {
+      "name": "Cermand Cestach, the Oracle of Clogher",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 3,
+      "tiers": [
+        "encyclopedic",
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://en.wikipedia.org/wiki/Cermand_Cestach",
+        "https://ancientclans.org/heritage-site/st-mccarrans-cathedral-the-clogh-oir-or-golden-stone-clogher-cathedral/",
+        "https://www.catholicireland.net/saintoftheday/st-macartan-of-clogher-d-506/"
+      ]
+    },
+    {
       "name": "Cheetham Close",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
@@ -7152,6 +7654,22 @@
       ]
     },
     {
+      "name": "Cloughmore Stone",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 3,
+      "tiers": [
+        "encyclopedic",
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://en.wikipedia.org/wiki/Cloughmore",
+        "https://www.thelastleprechaunsofireland.com/stories/finn-mccool-and-the-cloc-mor-stone-above-rostrevor/",
+        "https://secretireland.ie/the-cloughmore-stone-myths-history-and-hiking-tales/"
+      ]
+    },
+    {
       "name": "Clíodhna",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
@@ -7166,6 +7684,30 @@
       ]
     },
     {
+      "name": "Conn-eda and the Golden Apples of Lough Erne",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 7,
+      "tiers": [
+        "unclassified",
+        "unclassified",
+        "unclassified",
+        "unclassified",
+        "unclassified",
+        "unclassified",
+        "primary"
+      ],
+      "urls": [
+        "https://www.jstor.org/stable/1252472",
+        "https://sacred-texts.com/neu/yeats/fip/fip78.htm",
+        "https://experience-enniskillen.com/blog/conn-eda-and-the-golden-apples/",
+        "https://archive.org/details/storyofconnedaor00okea",
+        "https://loughneaghtours.com/myths-and-legends-of-lough-neagh/",
+        "https://riverbannloughneagh.org/legends/",
+        "https://www.gutenberg.org/ebooks/33887"
+      ]
+    },
+    {
       "name": "Cormoran, the Giant of St Michael's Mount",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
@@ -7177,6 +7719,34 @@
       "urls": [
         "https://stmichaelsmount.co.uk/explore-the-mount/history-legends/",
         "https://en.wikipedia.org/wiki/Cormoran"
+      ]
+    },
+    {
+      "name": "Craig y Ddinas",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 2,
+      "tiers": [
+        "unclassified",
+        "primary"
+      ],
+      "urls": [
+        "https://www.fforestfawrgeopark.org.uk/understanding/myths-and-legends/the-sleeping-warriors-of-craig-y-ddinas/",
+        "https://www.gutenberg.org/files/24614/24614-h/24614-h.htm"
+      ]
+    },
+    {
+      "name": "Crazy Kate, the Witch of Swineshead",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 2,
+      "tiers": [
+        "unclassified",
+        "heritage"
+      ],
+      "urls": [
+        "https://lincolnshirefolktalesproject.com/2024/02/06/crazy-kate-the-witch-of-swineshead/",
+        "https://historicengland.org.uk/listing/the-list/list-entry/1018684"
       ]
     },
     {
@@ -7406,6 +7976,22 @@
       ]
     },
     {
+      "name": "Haltadans, the Petrified Trows of Fetlar",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 3,
+      "tiers": [
+        "encyclopedic",
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://en.wikipedia.org/wiki/Trow_(folklore)",
+        "https://blog.geolsoc.org.uk/2015/12/09/funzie-and-the-trows-of-shetland/",
+        "https://www.shetland.org/visit/areas/fetlar"
+      ]
+    },
+    {
       "name": "Henderson Stone",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
@@ -7512,6 +8098,22 @@
       ]
     },
     {
+      "name": "John Olliver, the Miller of Highdown Hill",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 3,
+      "tiers": [
+        "unclassified",
+        "secondary",
+        "encyclopedic"
+      ],
+      "urls": [
+        "https://www.tandfonline.com/doi/abs/10.1080/00155870500140230",
+        "https://www.mysteriousbritain.co.uk/folklore/millers-tomb/",
+        "https://en.wikipedia.org/wiki/Highdown_Hill"
+      ]
+    },
+    {
       "name": "Knocknakilla",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
@@ -7561,14 +8163,16 @@
       "name": "Limavady Leap of the Dog",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
-      "source_count": 2,
+      "source_count": 3,
       "tiers": [
         "encyclopedic",
+        "unclassified",
         "unclassified"
       ],
       "urls": [
         "https://en.wikipedia.org/wiki/Limavady",
-        "https://www.connollycove.com/limavady/"
+        "https://www.connollycove.com/limavady/",
+        "https://nationalpurebreddogday.com/the-legendary-dog-leap/"
       ]
     },
     {
@@ -7675,14 +8279,34 @@
       "name": "Mary Butters, the Carnmoney Witch",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
-      "source_count": 2,
+      "source_count": 4,
       "tiers": [
         "encyclopedic",
+        "unclassified",
+        "unclassified",
         "unclassified"
       ],
       "urls": [
         "https://en.wikipedia.org/wiki/Mary_Butters",
-        "https://irishfolklore.wordpress.com/2022/05/27/irish-witch-trials-the-carnmoney-witch-mary-butters/"
+        "https://irishfolklore.wordpress.com/2022/05/27/irish-witch-trials-the-carnmoney-witch-mary-butters/",
+        "https://sacred-texts.com/pag/iwd/iwd10.htm",
+        "https://www.belfastentries.com/stories/true-stories/the-carnmoney-witch-and-the-bewitched-cow/"
+      ]
+    },
+    {
+      "name": "Melangell and the Hare",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 3,
+      "tiers": [
+        "encyclopedic",
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://en.wikipedia.org/wiki/Melangell",
+        "https://www.nationalchurchestrust.org/church/st-melangell-pennant-melangell",
+        "https://stmelangell.org/saint-melangell/"
       ]
     },
     {
@@ -7715,6 +8339,24 @@
       "urls": [
         "https://en.wikipedia.org/wiki/Mother_Shipton's_Cave",
         "https://www.mothershipton.co.uk/the-story/"
+      ]
+    },
+    {
+      "name": "Mount Killaraus and the Giant's Dance",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 4,
+      "tiers": [
+        "encyclopedic",
+        "encyclopedic",
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://en.wikipedia.org/wiki/Mount_Killaraus",
+        "https://en.wikipedia.org/wiki/Giant%27s_Dance",
+        "https://irishmyths.com/2024/08/19/irish-stonehenge/",
+        "https://www.westmeathindependent.ie/2024/08/26/stonehenge-research-a-reminder-of-ancient-claim-of-uisneach-links/"
       ]
     },
     {
@@ -7759,6 +8401,20 @@
         "https://en.wikipedia.org/wiki/Nicnevin",
         "https://britishfairies.wordpress.com/2022/02/06/the-gyre-carlin-nicnevin/",
         "https://spookyscotland.net/nicnevin/"
+      ]
+    },
+    {
+      "name": "Old Mother Digby of East Harting",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 2,
+      "tiers": [
+        "primary",
+        "unclassified"
+      ],
+      "urls": [
+        "https://www.gutenberg.org/files/20696/20696-h/20696-h.htm",
+        "https://en.wikisource.org/wiki/Highways_and_Byways_in_Sussex/Chapter_2"
       ]
     },
     {
@@ -7998,6 +8654,22 @@
       ]
     },
     {
+      "name": "St Osyth Witches and Ursula Kemp",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 3,
+      "tiers": [
+        "encyclopedic",
+        "encyclopedic",
+        "unclassified"
+      ],
+      "urls": [
+        "https://en.wikipedia.org/wiki/St_Osyth_Witches",
+        "https://en.wikipedia.org/wiki/Ursula_Kemp",
+        "https://www.history.co.uk/articles/the-st-osyth-witches-when-an-elizabethan-sorcery-trial-shook-a-quiet-essex-village"
+      ]
+    },
+    {
       "name": "Tam Lin",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
@@ -8062,6 +8734,22 @@
       ]
     },
     {
+      "name": "The Killing of Charles Walton",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 3,
+      "tiers": [
+        "encyclopedic",
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://en.wikipedia.org/wiki/Killing_of_Charles_Walton",
+        "https://www.stratford-herald.com/news/witchcraft-and-murder-on-meon-hill-9223403/",
+        "https://morbidology.com/the-witchcraft-murder-of-charles-walton/"
+      ]
+    },
+    {
       "name": "The Lady of the Lake",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
@@ -8087,6 +8775,24 @@
       "urls": [
         "https://en.wikipedia.org/wiki/King's_Cave",
         "http://faeryfolklorist.blogspot.com/2017/05/fairy-folklore-of-isle-of-arran.html"
+      ]
+    },
+    {
+      "name": "The Serpent of Church Island",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 4,
+      "tiers": [
+        "unclassified",
+        "unclassified",
+        "encyclopedic",
+        "unclassified"
+      ],
+      "urls": [
+        "https://www.irishexaminer.com/lifestyle/outdoors/arid-41024195.html",
+        "https://emeraldisle.ie/the-great-wyrms-of-ireland",
+        "https://en.wikipedia.org/wiki/Church_Island_(Lough_Gill)",
+        "https://irishheritagenews.ie/church-island-on-lough-gill/"
       ]
     },
     {

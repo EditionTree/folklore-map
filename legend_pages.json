@@ -15,7 +15,8 @@
         "Type": "Spectral hound",
         "Setting": "East Anglia",
         "Motif": "Death omen"
-      }
+      },
+      "seo_title": "Black Shuck: East Anglia's Ghostly Black Dog — Folklore Finder"
     },
     "Lambton Worm": {
       "priority": 2,
@@ -30,7 +31,8 @@
         "Type": "Worm or dragon",
         "Setting": "River Wear",
         "Motif": "Family curse"
-      }
+      },
+      "seo_title": "Lambton Worm: County Durham's Monstrous Serpent — Folklore Finder"
     },
     "Barghest": {
       "priority": 3,
@@ -60,7 +62,8 @@
         "Type": "Water beast",
         "Setting": "Loch Ness",
         "Motif": "Elusive lake monster"
-      }
+      },
+      "seo_title": "The Loch Ness Monster: Scotland's Lake Beast — Folklore Finder"
     },
     "The Green Man": {
       "priority": 5,
@@ -75,7 +78,8 @@
         "Type": "Leaf-faced carving",
         "Setting": "Medieval churches",
         "Motif": "Nature and rebirth"
-      }
+      },
+      "seo_title": "The Green Man: Britain's Leafy Nature Spirit — Folklore Finder"
     },
     "Kelpie": {
       "priority": 6,
@@ -90,7 +94,8 @@
         "Type": "Water horse",
         "Setting": "Highland lochs",
         "Motif": "Deadly lure"
-      }
+      },
+      "seo_title": "Kelpie: Scotland's Shape-Shifting Water Horse — Folklore Finder"
     },
     "Banshee": {
       "priority": 7,
@@ -105,7 +110,8 @@
         "Type": "Death herald spirit",
         "Setting": "Ireland",
         "Motif": "Keening omen"
-      }
+      },
+      "seo_title": "Banshee: Ireland's Death-Warning Fairy Woman — Folklore Finder"
     },
     "Merlin": {
       "priority": 8,
@@ -120,7 +126,8 @@
         "Type": "Prophet and wizard",
         "Setting": "Wales & Britain",
         "Motif": "Prophecy"
-      }
+      },
+      "seo_title": "Merlin: Britain's Legendary Wizard and Prophet — Folklore Finder"
     },
     "Y Ddraig Goch": {
       "priority": 9,
@@ -210,7 +217,8 @@
         "Type": "Legendary king",
         "Setting": "Britain",
         "Motif": "The returning king"
-      }
+      },
+      "seo_title": "King Arthur: Britain's Once and Future King — Folklore Finder"
     },
     "Avalon": {
       "priority": 15,
@@ -240,7 +248,8 @@
         "Type": "Legendary outlaw",
         "Setting": "Sherwood Forest",
         "Motif": "Rebellion against injustice"
-      }
+      },
+      "seo_title": "Robin Hood: Sherwood Forest's Legendary Outlaw — Folklore Finder"
     },
     "Stonehenge": {
       "priority": 17,
@@ -255,7 +264,8 @@
         "Type": "Legendary monument",
         "Setting": "Wiltshire",
         "Motif": "Giants and enchantment"
-      }
+      },
+      "seo_title": "Stonehenge: Wiltshire's Legendary Stone Circle — Folklore Finder"
     },
     "The Green Knight": {
       "priority": 18,
@@ -330,7 +340,8 @@
         "Type": "Basalt causeway",
         "Setting": "North Antrim coast",
         "Motif": "Giant-built road"
-      }
+      },
+      "seo_title": "Giant's Causeway: Fionn mac Cumhaill's Road — Folklore Finder"
     },
     "Cú Chulainn": {
       "priority": 23,
@@ -615,7 +626,8 @@
         "Role": "Queen of the Iceni",
         "Setting": "Roman Britain",
         "Legacy": "Symbol of resistance"
-      }
+      },
+      "seo_title": "Boudicca: The Iceni Queen Who Defied Rome — Folklore Finder"
     },
     "Unicorn": {
       "priority": 42,
@@ -690,7 +702,8 @@
         "Type": "Solitary fairy",
         "Craft": "Shoemaker",
         "Motif": "Treasure and trickery"
-      }
+      },
+      "seo_title": "Leprechaun: Ireland's Treasure-Hoarding Fairy — Folklore Finder"
     },
     "Morgan le Fay": {
       "priority": 47,
@@ -930,7 +943,8 @@
         "Type": "Urban supernatural figure",
         "Setting": "London",
         "Status": "Never caught or explained"
-      }
+      },
+      "seo_title": "Spring-Heeled Jack: Victorian London's Terror — Folklore Finder"
     },
     "Robert the Bruce": {
       "priority": 63,
@@ -1035,7 +1049,8 @@
         "Form": "Flickering marsh lights",
         "Setting": "The Fens",
         "Danger": "Luring travellers into bogs"
-      }
+      },
+      "seo_title": "Will-o'-the-Wisp: Ghostly Lights of the Marshes — Folklore Finder"
     },
     "Ceridwen": {
       "priority": 70,
@@ -1275,7 +1290,8 @@
         "Accused": "Twelve people",
         "Executed": "Ten were hanged",
         "Record": "Thomas Potts's 1613 account"
-      }
+      },
+      "seo_title": "Pendle Witches: England's Notorious Witch Trial — Folklore Finder"
     },
     "Grace O'Malley": {
       "priority": 86,
@@ -1620,7 +1636,8 @@
         "Type": "Poltergeist case",
         "Setting": "Enfield, 1977-1979",
         "Motif": "Unexplained domestic disturbance"
-      }
+      },
+      "seo_title": "Enfield Poltergeist: Britain's Famous Haunting — Folklore Finder"
     },
     "Glastonbury Holy Thorn": {
       "priority": 109,
@@ -2085,7 +2102,8 @@
         "Type": "Chalk hill figure",
         "Setting": "Bratton Down and Briddle Springs",
         "Motif": "Midnight journey"
-      }
+      },
+      "seo_title": "Westbury White Horse: Wiltshire's Hill Figure — Folklore Finder"
     },
     "Long Compton Witches": {
       "priority": 140,
@@ -2340,7 +2358,8 @@
         "Type": "Pilgrimage island",
         "Setting": "Llŷn Peninsula",
         "Motif": "Saints, Merlin and Avalon"
-      }
+      },
+      "seo_title": "Ynys Enlli: Bardsey, Isle of 20,000 Saints — Folklore Finder"
     },
     "Long Man of Wilmington": {
       "priority": 157,
@@ -2355,7 +2374,8 @@
         "Type": "Turf outline",
         "Setting": "Windover Hill",
         "Motif": "Unknown age and meaning"
-      }
+      },
+      "seo_title": "Long Man of Wilmington: Sussex's Chalk Giant — Folklore Finder"
     },
     "Zennor": {
       "priority": 158,
@@ -2385,7 +2405,8 @@
         "Type": "Supernatural smith",
         "Setting": "Wayland's Smithy",
         "Motif": "Horse shod overnight"
-      }
+      },
+      "seo_title": "Wayland the Smith: Britain's Legendary Smith — Folklore Finder"
     },
     "Old Man of Storr": {
       "priority": 160,
@@ -2565,7 +2586,8 @@
         "Type": "Neolithic long barrow",
         "Setting": "Ridgeway, Oxfordshire",
         "Motif": "Invisible smith"
-      }
+      },
+      "seo_title": "Wayland's Smithy: A Legendary Smith's Forge — Folklore Finder"
     },
     "Hobby Horse of Padstow": {
       "priority": 172,
@@ -4740,7 +4762,8 @@
         "Type": "Chalk hill giant",
         "Setting": "Dorset downs",
         "Motif": "Fertility and disputed antiquity"
-      }
+      },
+      "seo_title": "Cerne Abbas Giant: Dorset's Chalk Hill Figure — Folklore Finder"
     },
     "Fingal": {
       "priority": 317,
@@ -6795,7 +6818,8 @@
         "Type": "Fairy or spirit",
         "Setting": "Cottingley, West Yorkshire",
         "Motif": "Otherworldly encounter"
-      }
+      },
+      "seo_title": "The Cottingley Fairies: 1917 Fairy Photographs — Folklore Finder"
     },
     "The Hedley Kow": {
       "priority": 454,
@@ -7583,7 +7607,8 @@
       "section_heading": "The cave by the Nidd",
       "pullquote": "Prophecy, thunder and the petrifying well made Mother Shipton England's most famous seer.",
       "priority": 520,
-      "image": "legend-images/mother-shipton-hero.jpg"
+      "image": "legend-images/mother-shipton-hero.jpg",
+      "seo_title": "Mother Shipton: Yorkshire's Prophetic Witch — Folklore Finder"
     },
     "Nicnevin": {
       "alt": "Nicnevin riding across a moonlit Scottish moor with a shadowy Samhain host",
@@ -9381,7 +9406,8 @@
         "Type": "Chalk horse",
         "Setting": "Berkshire Downs",
         "Motif": "Prehistoric figure"
-      }
+      },
+      "seo_title": "Uffington White Horse: Ancient Chalk Figure — Folklore Finder"
     },
     "Up Helly Aa": {
       "image": "legend-images/up-helly-aa-hero.jpg",

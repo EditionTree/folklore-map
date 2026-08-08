@@ -203,7 +203,8 @@ body.ff-paper {
 }
 
 .home-page .stats-method {
-  margin-top: 18px;
+  margin-top: 8px;
+  padding-bottom: 8px;
   color: var(--ff-oak-brown);
 }
 

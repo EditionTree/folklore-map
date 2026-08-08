@@ -228,6 +228,20 @@ def compute_nearby(legends, limit=4, max_km=200):
 # ── Browse-by-category / browse-by-region support ──────────────────────────
 NATIONS = ["england", "scotland", "wales", "ireland", "northern-ireland", "isle-of-man", "channel-islands"]
 
+# <title> for the 7 nation region pages leads with the adjective form
+# ("English Folklore") to match real search phrasing — see
+# project_seo_keyword_research memory. County/area pages keep the
+# "Folklore of X" fallback below; only these 7 get the override.
+NATION_TITLES = {
+    "england": "English Folklore — Myths & Legends",
+    "scotland": "Scottish Folklore — Myths & Legends",
+    "wales": "Welsh Folklore — Myths & Legends",
+    "ireland": "Irish Folklore — Myths & Legends",
+    "northern-ireland": "Northern Irish Folklore — Myths & Legends",
+    "isle-of-man": "Manx Folklore — Myths & Legends",
+    "channel-islands": "Channel Islands Folklore — Myths & Legends",
+}
+
 # Themed collections: a page is only generated when at least this many entries
 # qualify, so curated collections never ship as thin pages.
 MIN_COLLECTION = 12
@@ -1516,7 +1530,7 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
         og_alt = f"{name} — {catname}, folklore of Britain & Ireland"
 
     return FEATURED_PAGE.substitute(
-        title=esc(f"{name} — Folklore Finder"),
+        title=esc(featured.get("seo_title") or f"{name} — Folklore Finder"),
         ogtitle=esc(name),
         desc=esc(inline_text(desc)),
         url=page_path_url,
@@ -1867,7 +1881,7 @@ def build():
             },
         }, ensure_ascii=False)
         page = build_browse_page(
-            page_title=f"Folklore of {rn} — Myths, Legends & Ghosts",
+            page_title=NATION_TITLES.get(t) or f"Folklore of {rn} — Myths & Legends",
             desc=f"Discover {len(entries)} myths, legends, ghosts and folklore stories rooted in {rn}, each pinned to its exact location on our interactive folklore map.",
             url=url,
             h1=f"Folklore of {rn}",

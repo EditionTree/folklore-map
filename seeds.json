@@ -6275,6 +6275,10 @@
       "haunting",
       "scotland",
       "shetland"
+    ],
+    "sources": [
+      "https://www.shetland.org/blog/shetland-folklore",
+      "https://shetlandwithlaurie.com/the-blog/shetland-folklore-series-a-land-of-giants"
     ]
   },
   {
@@ -9577,7 +9581,12 @@
       "curse"
     ],
     "detail": "The tale of Fan o' the Fens tells of Fanny, a beautiful young woman living near Louth with her widowed mother. When the mother complains that a magpie keeps following her about, repeating everything she says, she consults the wiseman of Louth, who declares her bewitched. At a gathering he arranges, a sleeping cat is left by the fire with the prediction that when it wakes it will sit on the shoulder of whoever cast the spell — and the cat chooses Fan.\n\nFan is instantly shunned by the village, including her sweetheart Simon, who soon takes up with another woman. Simon then begins to swell in size and, alarmed, consults a different wizard, who tells him he too is under a curse and that the responsible witch will be revealed that very day, wreathed in fire. Walking home past Fan's house, Simon sees her run out screaming, engulfed in flames and nearly dead.\n\nThe villagers seize on this as proof and drag Fan to the river, threatening to drown her unless she confesses to witchcraft. She confesses — and they try to kill her anyway. She escapes, but is beaten with sticks and driven away, never to return. The story was recorded by Christopher Marlowe in 'Legends of the Fenland People' (1926) and retold by Susanna O'Neill in 'Folklore of Lincolnshire' (1992), and stands as a vivid fenland portrait of how quickly suspicion could curdle into mob violence.",
-    "date_added": "2026-06-10"
+    "date_added": "2026-06-10",
+    "sources": [
+      "https://lincolnshirefolktalesproject.com/2024/02/20/fan-o-the-fens/",
+      "https://catalog.hathitrust.org/Record/001286939",
+      "https://openlibrary.org/works/OL45722W/Legends_of_the_Fenland_people"
+    ]
   },
   {
     "name": "Yawkins, the Galloway Smuggler",
@@ -10038,7 +10047,12 @@
       "england",
       "norfolk"
     ],
-    "detail": "In the Norfolk Broads village of Ludham, an undated manuscript preserved in the Norfolk Record Office tells of a dragon that made its lair in a maze of tunnels running between the churchyard and the main street. By night the creature burst from its burrow to terrorise the village, and however thoroughly the villagers packed the entrance with rocks and rubble each morning, the dragon tore its way free again by dusk.\n\nThe standoff was broken, the story goes, on an unusually sunny day when the dragon crawled out to bask in the open at the centre of the village. While it lay sprawled and drowsy, one resident rolled a huge boulder into the mouth of its tunnel, sealing the entrance for good. Furious to find its lair blocked, the dragon thrashed its tail and took to the air, flying along the causeway towards the ruined Abbey of St Benet at Holm, where it passed beneath the great gatehouse arch and disappeared into the vaults below, never to be seen again.\n\nWhether the tale has any basis in fact is impossible to say, but it is intriguing that the Norfolk Chronicle of 1782 reported a giant snake, nearly three feet round and over five and a half feet long, killed at Ludham by a local man — a creature whose head, the paper noted, bore two horn-like growths. Real serpent or folk memory of the dragon, the story has kept Ludham's reputation as a dragon-haunted village alive into the present day."
+    "detail": "In the Norfolk Broads village of Ludham, an undated manuscript preserved in the Norfolk Record Office tells of a dragon that made its lair in a maze of tunnels running between the churchyard and the main street. By night the creature burst from its burrow to terrorise the village, and however thoroughly the villagers packed the entrance with rocks and rubble each morning, the dragon tore its way free again by dusk.\n\nThe standoff was broken, the story goes, on an unusually sunny day when the dragon crawled out to bask in the open at the centre of the village. While it lay sprawled and drowsy, one resident rolled a huge boulder into the mouth of its tunnel, sealing the entrance for good. Furious to find its lair blocked, the dragon thrashed its tail and took to the air, flying along the causeway towards the ruined Abbey of St Benet at Holm, where it passed beneath the great gatehouse arch and disappeared into the vaults below, never to be seen again.\n\nWhether the tale has any basis in fact is impossible to say, but it is intriguing that the Norfolk Chronicle of 1782 reported a giant snake, nearly three feet round and over five and a half feet long, killed at Ludham by a local man — a creature whose head, the paper noted, bore two horn-like growths. Real serpent or folk memory of the dragon, the story has kept Ludham's reputation as a dragon-haunted village alive into the present day.",
+    "sources": [
+      "http://theantonineitineraries.blogspot.com/2020/06/the-norfolk-village-of-ludham-was-said.html",
+      "https://sites.pitt.edu/~dash/britishdragons.html",
+      "https://www.visitthebroads.co.uk/discover-the-broads/culture-and-heritage/folklore-and-stories/"
+    ]
   },
   {
     "name": "MacKinnon's Cave",
@@ -11691,7 +11705,8 @@
     "sources": [
       "https://lincolnshirefolktalesproject.com/2024/02/20/fiddler-fynes/",
       "https://lincolnshirelife.co.uk/heritage/ghosts-witches-andwild-men-in-the-valley/",
-      "https://sites.exeter.ac.uk/magic/2024/10/18/witchcraft-in-lincolnshire/"
+      "https://sites.exeter.ac.uk/magic/2024/10/18/witchcraft-in-lincolnshire/",
+      "https://books.google.com/books/about/Religion_and_Rural_Society.html?id=55vYAAAAMAAJ"
     ],
     "date_added": "2026-06-17",
     "tags": [
@@ -12432,7 +12447,8 @@
     "sources": [
       "https://islandfolktales.wordpress.com/2016/07/31/the-fairy-folk-of-guernsey/",
       "https://museums.gov.gg/CHttpHandler.ashx?id=121606&p=0",
-      "https://www.visitguernsey.com/articles/2018/folklore-of-the-bailiwick/"
+      "https://www.visitguernsey.com/articles/2018/folklore-of-the-bailiwick/",
+      "https://eprints.chi.ac.uk/3347/1/Channel%20Island%20Fairies%20Chapter%20Magical%20Folk%20Final.doc"
     ]
   },
   {
@@ -12525,7 +12541,9 @@
     "detail": "In the folklore of the Exmoor region of Somerset, a giant known simply as the Giant of Grabbist made his home on Grabbist Hill, a prominent elevation near the town of Dunster. The giant was of enormous proportions — he would sit upon his hilltop seat using the River Avill to cool his feet and Dunster Castle as a drying rack for his clothing. Unlike many of the fearsome giants of British tradition, the Giant of Grabbist was generally portrayed as a benign, if inconvenient, neighbour.\n\nThe giant's most famous appearance in local legend involves a contest with the Devil. At Bossington, near the coast, the two competed to see who could throw stones the farthest from Hurlstone Point. The Hurdlestones on the Mendip Hills are said to be the projectiles from this game of quoits between the Devil and Grabbist. In a related tradition, the burrs from three local oak trees were said to provide the buttons for the giant's breeches, with the centre of each seeded by the Devil himself.\n\nGrabbist Hill stands on the edge of Exmoor National Park, overlooking the Bristol Channel, and the giant's association with the surrounding geography — the river, the castle, and the coastal headlands — anchors the legend firmly in a specific landscape. The tradition connects Dunster's medieval heritage with the deeper stratum of folk belief in territorial giants that once shaped the hills and valleys of Somerset.",
     "sources": [
       "https://internationaltimes.it/somerset-folklore/",
-      "https://www.paranormaldatabase.com/reports/giants.php"
+      "https://www.paranormaldatabase.com/reports/giants.php",
+      "https://www.bibliovault.org/BV.book.epl?ISBN=9780226074948",
+      "https://minehead.storywalks.info/No-1-Hidden-Histories-Higher-Town"
     ]
   },
   {
@@ -13567,6 +13585,140 @@
       "island",
       "haunting",
       "guardian"
+    ],
+    "sources": [
+      "http://www.tireeplacenames.org/hynish/the-burial-place-of-the-big-women-or-cladh-nam-ban-mora/",
+      "https://www.gutenberg.org/cache/epub/58894/pg58894-images.html"
     ]
+  },
+  {
+    "name": "Rose Cullender and Amy Duny, the Lowestoft Witches",
+    "lat": 52.4726,
+    "lng": 1.7495,
+    "category": "witch",
+    "region": "Lowestoft, Suffolk, England",
+    "summary": "A refused herring sale and children vomiting pins hanged two Lowestoft widows in 1662; Sir Thomas Browne's testimony helped convict them, and Salem's judges later cited the trial as precedent.",
+    "source": "https://en.wikipedia.org/wiki/Bury_St_Edmunds_witch_trials",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bury_St_Edmunds_witch_trials",
+      "https://blogs.loc.gov/law/2021/10/sir-matthew-hale-and-evidence-of-witchcraft/",
+      "http://www.executedtoday.com/2013/03/17/1662-rose-cullender-amy-denny-bury-st-edmunds-witches/"
+    ],
+    "date_added": "2026-08-08",
+    "tags": [
+      "england",
+      "suffolk",
+      "curse"
+    ],
+    "detail": "In March 1662 the Suffolk fishing town of Lowestoft accused two elderly widows, Amy Duny and Rose Cullender, of witchcraft after the merchant Samuel Pacy refused to sell them herring and his daughters Elizabeth and Deborah began suffering violent fits, vomiting pins and complaining of biting and pinching by invisible hands. Neighbours added further charges: that a toad had fallen hissing from a child's blanket and vanished into the fire, that a cart had jammed at Duny's gate, and that livestock, chimneys and other household mishaps across the town could be traced back to the two women.\n\nThe case went to trial at the Bury St Edmunds assizes on 10 March 1662 before Sir Matthew Hale, later Lord Chief Baron of the Exchequer, who told the jury they need only decide whether the children were genuinely bewitched and whether the two women were responsible. Crucially, the physician and author Sir Thomas Browne, then living in Norwich, was called as an expert witness and testified that the children's fits were consistent with witchcraft, drawing a comparison to reported cases in Denmark. The jury convicted Duny and Cullender within half an hour; they were hanged at Bury St Edmunds on 17 March 1662.\n\nThe trial's afterlife proved longer than the women's lives. An anonymous account, A Tryal of Witches (1682), circulated in New England and was read closely by Cotton Mather, who cited it in The Wonders of the Invisible World (1692) as a case 'much considered by the judges of New England,' while Increase Mather referenced it that same autumn. Because Sir Matthew Hale was among the most respected jurists in England, his willingness to accept spectral evidence at Lowestoft gave the Salem magistrates a precedent to lean on three decades later, tying a Suffolk fishing town directly into the most notorious witch trials in American history."
+  },
+  {
+    "name": "John Walsh, the Cunning Man of Netherbury",
+    "lat": 50.792,
+    "lng": -2.756,
+    "category": "witch",
+    "region": "Netherbury, Dorset, England",
+    "summary": "Examined by the Bishop of Exeter's court in 1566, Dorset wise-man John Walsh met fairies on the hills at noon and midnight, and kept a familiar that turned into a grey dog or a man with cloven feet.",
+    "source": "https://quod.lib.umich.edu/e/eebo/A14696.0001.001?view=toc",
+    "sources": [
+      "https://quod.lib.umich.edu/e/eebo/A14696.0001.001?view=toc",
+      "https://britishfairies.wordpress.com/tag/john-walsh/",
+      "https://www.taylorfrancis.com/chapters/mono/10.4324/9780203992302-10/examination-john-walsh-1566-marion-gibson"
+    ],
+    "date_added": "2026-08-08",
+    "tags": [
+      "england",
+      "dorset",
+      "hill",
+      "shapeshifter",
+      "prophecy"
+    ],
+    "detail": "In August 1566 the church courts of the diocese of Exeter examined John Walsh, a cunning man from the Dorset village of Netherbury, on suspicion of witchcraft and sorcery. Questioned by Thomas Williams, commissary to the Bishop of Exeter, in front of an audience of local gentlemen, Walsh described a working life spent diagnosing bewitchment, tracing stolen goods, and consulting a familiar spirit, all recorded and printed that same year as The Examination of John Walsh, the earliest surviving pamphlet account of an English church court's interrogation of a cunning-folk practitioner.\n\nWalsh told his questioners that he met with fairies on certain hills between twelve and one at noon, or at midnight, and that he could sort them into three kinds by colour: white, green and black, the black fairies being the most dangerous to deal with. His familiar spirit, he said, appeared to him variously as a grey dog, a dove, or a man in every respect ordinary except for cloven feet, and it was this spirit that told him which of his neighbours were bewitched and helped him recover stolen property, including, he claimed, several missing horses. He also owned what the pamphlet calls a book of circles, used in his consultations.\n\nThe pamphlet, printed in London by John Awdely, survives in a single known copy and gives no account of what became of Walsh after his examination: no verdict, sentence or acquittal is recorded, only the interrogation itself. That silence has left him a genuinely open case in the history of English witchcraft prosecution, and modern scholars, including Marion Gibson in her sourcebook Early Modern Witches, treat his testimony as a rare direct record of what a working Tudor cunning-man actually believed and practised, rather than what his accusers assumed about him."
+  },
+  {
+    "name": "King Bladud",
+    "lat": 51.3812,
+    "lng": -2.359,
+    "category": "hero",
+    "region": "Bath, Somerset, England",
+    "summary": "Exiled with leprosy, a prince turned swineherd watched his pigs cure themselves in Bath's hot mud. He founded the city on the spot, then, legend says, strapped on feathered wings and fell to his death trying to fly.",
+    "source": "https://www.historic-uk.com/HistoryMagazine/DestinationsUK/Bath-Prince-And-Pig/",
+    "sources": [
+      "https://www.historic-uk.com/HistoryMagazine/DestinationsUK/Bath-Prince-And-Pig/",
+      "https://www.buildinghistory.org/bath/medieval/bladud.shtml",
+      "https://www.visitbath.co.uk/blog/read/2018/09/the-remarkable-tale-of-king-bladud-and-his-pigs-b81"
+    ],
+    "date_added": "2026-08-08",
+    "tags": [
+      "england",
+      "somerset",
+      "spring",
+      "healing"
+    ],
+    "detail": "According to Geoffrey of Monmouth's twelfth-century Historia Regum Britanniae, Bladud was the ninth king of the Britons, a prince who studied in Athens, contracted leprosy, and was driven from court and disinherited. Disguised and destitute, he found work as a swineherd near Swainswick, a couple of miles from the later site of Bath. He noticed his pigs would wallow in a warm, black mud fed by a hot spring in a nearby alder-moor, and that the ones that did so were free of the skin disease that plagued the rest of the herd. He tried the mud himself, was cured, and went on to found the city of Bath at the spring, later dedicated to the goddess Sulis.\n\nGeoffrey was the first writer to name Bladud as Bath's founder, claiming to translate from \"a very ancient book written in the British language,\" though he is now thought to have drawn on a much older Roman-era description of Aquae Sulis and grafted the Greek myth of Daedalus and Icarus onto Bladud's death: later in life the king took up magical experiments, fashioned wings, and leaped from a tall building, sometimes placed at a temple of Apollo in London, plunging to his death. The leprous-swineherd episode itself is a later medieval addition, absent from Geoffrey's original text, and some historians trace the figure's root to an earlier Welsh prince, Bleiddudd of Dyfed, praised in a ninth-century poem.\n\nBath still keeps Bladud close: a statue of him overlooks the King's Bath in the Pump Room precinct, and a trail of painted pig sculptures, King Bladud's Pigs, has run through the city's streets in his honour. In Geoffrey's line of legendary kings descended from Brutus of Troy, Bladud is the father of Leir, whose story of a divided kingdom and a favourite daughter later became the basis for Shakespeare's King Lear."
+  },
+  {
+    "name": "King Lud",
+    "lat": 51.5139,
+    "lng": -0.1094,
+    "category": "hero",
+    "region": "City of London, England",
+    "summary": "London's legendary pre-Roman king rebuilt the city and gave Ludgate its name. His own statue, beheaded during the Reformation and rebuilt twice, still stands in a Fleet Street churchyard.",
+    "source": "https://www.mysteriousbritain.co.uk/legends/king-lud-ludgate/",
+    "sources": [
+      "https://www.mysteriousbritain.co.uk/legends/king-lud-ludgate/",
+      "https://en.wikipedia.org/wiki/Lud"
+    ],
+    "date_added": "2026-08-08",
+    "tags": [
+      "england",
+      "london",
+      "guardian"
+    ],
+    "detail": "In Geoffrey of Monmouth's Historia Regum Britanniae, Lud was the son of King Heli and, by Geoffrey's legendary chronology, ruled Britain around 66 BC, late in the line of kings descended from Brutus of Troy. He is credited with rebuilding and fortifying London, renaming it Caer Lud, Lud's fortress, a name later writers connected to both \"London\" itself and to Ludgate, the westernmost of the City's ancient gates, where Lud was said to have been buried. When he died, his sons Androgeus and Tenvantius were judged too young to rule, so the throne passed to his brother Cassibelanus; both sons later distinguished themselves under their uncle, Androgeus as ruler of London and Tenvantius of Cornwall, in the defence of Britain against Julius Caesar.\n\nThe legend gained an unusually durable physical form. In 1260 Henry III commissioned stone figures of Lud and his two sons for Ludgate itself; the statues were beheaded during Edward VI's Reformation-era iconoclasm, repaired under Mary I, and rebuilt entirely in 1586 under Elizabeth I. When Ludgate was finally demolished in 1760, following damage in the Great Fire of London a century earlier, the statues survived: Sir Francis Gosling donated them to the City, the Marquess of Hertford later acquired them, and they now stand in the courtyard of St Dunstan-in-the-West on Fleet Street, close to their original site.\n\nEven contemporaries were sceptical of the story; nineteenth-century antiquarians preferred a more prosaic origin for Ludgate, from an Old English term for \"flood-gate\" or \"Fleet-gate,\" after the River Fleet that once ran past the spot. Geoffrey's Lud, like the rest of his Brutus-descended king-list, is treated by modern historians as literary invention rather than history. What makes the legend unusual within that tradition is the survival of a genuine monument: few of Geoffrey's early British kings can be visited in stone form on a London street corner today."
+  },
+  {
+    "name": "Elspeth Reoch",
+    "lat": 58.9807,
+    "lng": -2.9605,
+    "category": "witch",
+    "region": "Kirkwall, Orkney, Scotland",
+    "summary": "A Caithness girl said fairies taught her second sight at a lochside meeting when she was twelve. Decades later in Orkney, her confession of a dead kinsman's nightly visits sent her to the gallows within a single day.",
+    "source": "https://witches.hca.ed.ac.uk/case/C/EGD/2212",
+    "sources": [
+      "https://witches.hca.ed.ac.uk/case/C/EGD/2212",
+      "https://en.wikipedia.org/wiki/Elspeth_Reoch"
+    ],
+    "date_added": "2026-08-08",
+    "tags": [
+      "scotland",
+      "orkney",
+      "prophecy",
+      "curse"
+    ],
+    "detail": "Elspeth Reoch was born in Caithness, the daughter of a piper to the Earl of Caithness, and spent part of her childhood with relatives on an island in Lochaber before eventually settling on Orkney's mainland. She told her interrogators that at around twelve years old, while staying in Lochaber, she met two men by a loch, one dressed in black and one in green tartan. The man in green told her he could teach her to know \"anything she wanted,\" and instructed her to boil an egg and rub its steam over her eyes and hands, unwashed, to gain the power of second sight.\n\nYears later, after Reoch had settled in Orkney and borne an illegitimate child, she said the man in black returned, this time identified as a dead relative named Johne Stewart, who visited her bedside on three successive nights and became her lover. He told her he was \"neither dead nor alive but was forever trapped between heaven and earth,\" and commanded her to remain silent about their meetings to preserve her powers. Brought before the court at Kirkwall in March 1616, she confessed to these encounters, to curing illness with the herb melefour (yarrow) while reciting the Trinity formula, and to feigning muteness to protect her gift. She was found guilty, executed by strangulation, and her body burned that same afternoon.\n\nReoch's case is preserved in the University of Edinburgh's Survey of Scottish Witchcraft database, drawn from the original Lawting Court records of Orkney and Shetland. Scholars who have studied the case, including Diane Purkiss, have noted that Orkney's court clerks, following Bishop James Law's 1614 reforms, routinely rewrote references to \"fairies\" in testimony as \"the devil\" or \"a demon.\" That editorial habit means Reoch's own account of a fairy initiation survives only filtered through the language of a demonic pact, making her one of the clearest documented instances of fairy-belief testimony absorbed into a Scottish witch trial."
+  },
+  {
+    "name": "Shane Bernagh",
+    "lat": 54.615,
+    "lng": -7.105,
+    "category": "hero",
+    "region": "Cappagh and Altmore, County Tyrone, Northern Ireland",
+    "summary": "A dispossessed Tyrone landowner turned mountain outlaw, robbing coaches on the Dublin road and sharing his takings with the poor like an Ulster Robin Hood, from a hideout still called his Chair.",
+    "source": "https://en.wikipedia.org/wiki/Shane_Bernagh",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Shane_Bernagh",
+      "https://www.duchas.ie/en/cbes/4742049/4730904/4939215",
+      "https://www.altmore.com/Shane_Bearnach.html"
+    ],
+    "date_added": "2026-08-08",
+    "tags": [
+      "northern-ireland",
+      "county-tyrone",
+      "cave",
+      "mountain",
+      "road"
+    ],
+    "detail": "Shane Bernagh Donnelly, according to local tradition, was dispossessed of his family's land at Ballydonnelly, now Castlecaulfield, and retreated into the Altmore mountains above Cappagh, County Tyrone, where he lived in a cave and turned highwayman, holding up coaches on the main Dublin-to-Derry road. He is remembered as targeting the Protestant Ascendancy in particular and sharing his takings with poorer neighbours, earning him a reputation, still current in the area, as a local Robin Hood.\n\nThe authorities took him seriously enough to build Altmore Barracks in 1700 specifically to counter his activities, garrisoning soldiers within sight of the cave still known locally as Shane Bearnach's Sentry Box. Nearby Bernish Glen is said to mark a horseback leap he made to escape pursuing soldiers, and a rock outcrop on the edge of Cappagh and Altmore, shaped like a chair, is still known as Shane Bernagh's Chair. He was eventually captured and executed by the Dublin Castle administration, his body reportedly cast into a lough at the summit of Slieve Beagh, the mountain where the counties of Tyrone, Fermanagh and Monaghan meet.\n\nA related but distinct tradition survives on the Monaghan side of the same mountain: fieldwork gathered for the Irish Folklore Commission's Schools' Collection in the Tydavnet area recorded a \"Shane Bearna,\" active there \"about 1840,\" who drove stolen cattle across Slieve Beagh to hidden stables reached by swimming the animals across a lake, and who reputedly had his horses shod backwards to confuse pursuers. Whether this is the same figure remembered with a different, later date, or a separate cattle-raider whose story merged with the earlier rapparee's, the Schools' Collection account does not resolve, and it is presented here as a second, place-anchored strand of the same regional legend. Bernagh's memory was later carried into print by George Sigerson's ballad \"The Mountains of Pomeroy\" and John Montague's poem \"A Lost Tradition.\""
   }
 ]

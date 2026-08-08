@@ -11,8 +11,8 @@
   <url><loc>https://folklorefinder.uk/feed.xml</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/category/location</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/category/witch</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/category/ghost</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/category/hero</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/category/ghost</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/category/fairy</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/category/water</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/category/beast</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
@@ -30,9 +30,9 @@
   <url><loc>https://folklorefinder.uk/legends/region/cornwall</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/lincolnshire</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/highland</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/orkney</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/yorkshire</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/gwynedd</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/orkney</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/somerset</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/county-cork</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/northumberland</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
@@ -44,9 +44,9 @@
   <url><loc>https://folklorefinder.uk/legends/region/hampshire</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/devon</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/argyll</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/sussex</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/london</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/suffolk</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/sussex</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/powys</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/ceredigion</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/oxfordshire</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
@@ -58,10 +58,10 @@
   <url><loc>https://folklorefinder.uk/legends/region/lancashire</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/county-meath</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/denbighshire</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/dorset</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/wiltshire</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/county-donegal</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/anglesey</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/dorset</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/fife</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/cambridgeshire</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/cumbria</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
@@ -1328,6 +1328,7 @@
     <image:title>A three-headed beast crawling from the dark mouth of Oweynagat above the fields of Rathcroghan under heavy cloud</image:title>
     <image:caption>A visual interpretation of the Ellén Trechend emerging at Oweynagat</image:caption>
   </image:image></url>
+  <url><loc>https://folklorefinder.uk/legends/elspeth-reoch</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/enfield-poltergeist</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/enfield-poltergeist-hero.jpg</image:loc>
@@ -2018,6 +2019,7 @@
     <image:title>A windmill and prepared tomb on Highdown Hill with distant smuggler lights near the coast</image:title>
     <image:caption>A visual interpretation of the Sussex legend</image:caption>
   </image:image></url>
+  <url><loc>https://folklorefinder.uk/legends/john-walsh-the-cunning-man-of-netherbury</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/jonka-dyneis-of-fetlar</loc><lastmod>2026-06-10</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/jonka-dyneis-of-fetlar-hero.jpg</image:loc>
@@ -2054,6 +2056,8 @@
     <image:title>A weathered British war-leader with a sword and dark horse standing to the right of misty Glastonbury Tor</image:title>
     <image:caption>A visual interpretation of King Arthur in the Somerset landscape</image:caption>
   </image:image></url>
+  <url><loc>https://folklorefinder.uk/legends/king-bladud</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/king-lud</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/kirk-yetholm-seat-of-the-gypsy-kings</loc><lastmod>2026-06-19</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/kirk-yetholm-seat-of-the-gypsy-kings-hero.jpg</image:loc>
@@ -3094,6 +3098,7 @@
     <image:title>Weathered standing stones on high Oxfordshire ground at dusk with a dark cloaked figure among them</image:title>
     <image:caption>A visual interpretation of the Rollright Stones curse in Oxfordshire</image:caption>
   </image:image></url>
+  <url><loc>https://folklorefinder.uk/legends/rose-cullender-and-amy-duny-the-lowestoft-witches</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/ruari-mor-macneil-of-barra</loc><lastmod>2026-06-09</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/ruari-mor-macneil-of-barra-hero.jpg</image:loc>
@@ -3203,6 +3208,7 @@
     <image:title>Seven dark supernatural birds crying in formation over smoky Black Country twilight</image:title>
     <image:caption>A visual interpretation of the Seven Whistlers above the Midlands</image:caption>
   </image:image></url>
+  <url><loc>https://folklorefinder.uk/legends/shane-bernagh</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/shellycoat</loc><lastmod>2026-06-19</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/shellycoat-hero.jpg</image:loc>

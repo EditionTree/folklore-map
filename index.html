@@ -864,42 +864,55 @@ footer a{color:var(--ink-light)}
     { id: 'updates', eyebrow: 'What’s New', title: 'See what is new', desc: 'Discover the latest legends, collections and improvements added to the archive.', cta: 'Latest updates', href: './updates' }
   ];
 
-  function computeAdaptiveCard(){
+  // Synchronous first-guess adaptive card — no network fetch, so the carousel
+  // never has to wait on anything to show its first slide. A first-time
+  // visitor's card ("Find folklore near you") is already the best answer, so
+  // this is final for them. A returning visitor's card ("Continue exploring")
+  // is a reasonable placeholder that computeBetterAdaptiveCard() below may
+  // upgrade in place to a "partway through a collection" card once the
+  // (slower, two-fetch) collections data has actually loaded.
+  function adaptiveCardSync(){
     const visited = getJSON('ff_visited_legends_v1', {});
     const visitedNames = Object.keys(visited);
-
-    function continueExploring(){
-      const mostRecent = visitedNames
-        .map(n => ({ name: n, last: visited[n] && visited[n].lastVisited }))
-        .sort((a, b) => new Date(b.last) - new Date(a.last))[0];
-      return {
-        id: 'continue',
-        eyebrow: 'Welcome Back',
-        title: 'Continue exploring',
-        desc: mostRecent ? 'Pick up where you left off and return to ' + mostRecent.name + '.' : 'Pick up where you left off in your archive.',
-        cta: 'Continue exploring',
-        href: mostRecent ? articleLink(mostRecent.name) : './archive'
-      };
-    }
-
     if (!visitedNames.length) {
-      return Promise.resolve({
+      return {
         id: 'near',
         eyebrow: 'Start Here',
         title: 'Find folklore near you',
         desc: 'Search a town, county or landmark to uncover stories rooted nearby.',
         cta: 'Search the map',
         href: './map'
-      });
+      };
     }
+    const mostRecent = visitedNames
+      .map(n => ({ name: n, last: visited[n] && visited[n].lastVisited }))
+      .sort((a, b) => new Date(b.last) - new Date(a.last))[0];
+    return {
+      id: 'continue',
+      eyebrow: 'Welcome Back',
+      title: 'Continue exploring',
+      desc: mostRecent ? 'Pick up where you left off and return to ' + mostRecent.name + '.' : 'Pick up where you left off in your archive.',
+      cta: 'Continue exploring',
+      href: mostRecent ? articleLink(mostRecent.name) : './archive'
+    };
+  }
 
-    // Returning visitor — prefer a collection that's partway complete.
+  // Slower upgrade path for returning visitors only: checks whether any
+  // collection is partway complete, which needs collections.json plus every
+  // collection's own member list (2 sequential fetch stages). Resolves to
+  // null when there's nothing better than the sync fallback already shown,
+  // so the caller knows not to touch the DOM.
+  function computeBetterAdaptiveCard(){
+    const visited = getJSON('ff_visited_legends_v1', {});
+    const visitedNames = Object.keys(visited);
+    if (!visitedNames.length) return Promise.resolve(null);
+    const visitedSet = new Set(visitedNames);
+
     return fetch('./collections.json')
       .then(r => r.json())
       .then(colData => {
         const collections = (colData && colData.collections) || [];
-        if (!collections.length) return continueExploring();
-        const visitedSet = new Set(visitedNames);
+        if (!collections.length) return null;
         return Promise.all(collections.map(col =>
           fetch('./legends/collection/' + col.slug + '.json')
             .then(r => r.ok ? r.json() : { legends: [] })
@@ -911,7 +924,7 @@ footer a{color:var(--ink-light)}
             const count = r.members.filter(n => visitedSet.has(n)).length;
             return count > 0 && count < r.members.length;
           });
-          if (!partial) return continueExploring();
+          if (!partial) return null;
           const count = partial.members.filter(n => visitedSet.has(n)).length;
           return {
             id: 'collection',
@@ -923,7 +936,30 @@ footer a{color:var(--ink-light)}
           };
         });
       })
-      .catch(continueExploring);
+      .catch(() => null);
+  }
+
+  // Patches the already-rendered first slide's text/link in place, instead
+  // of re-rendering the whole carousel — so a late-arriving upgrade never
+  // resets a visitor's scroll position if they've already started browsing.
+  function updateFirstSlideContent(card){
+    const track = document.getElementById('gcTrack');
+    const slide = track && track.children[0];
+    if (!slide) return;
+    slide.setAttribute('data-card-id', card.id);
+    slide.setAttribute('aria-label', '1 of ' + track.children.length + ': ' + card.title);
+    const eyebrow = slide.querySelector('.gc-eyebrow');
+    const title = slide.querySelector('.gc-title');
+    const desc = slide.querySelector('.gc-desc');
+    const cta = slide.querySelector('.gc-cta');
+    if (eyebrow) eyebrow.textContent = card.eyebrow || '';
+    if (title) title.textContent = card.title;
+    if (desc) desc.textContent = card.desc;
+    if (cta) {
+      cta.textContent = card.cta + ' →';
+      cta.href = card.href;
+      cta.setAttribute('data-track', 'carousel_' + card.id);
+    }
   }
 
   function renderCarousel(adaptiveCard){
@@ -1180,13 +1216,19 @@ footer a{color:var(--ink-light)}
     probe.src = imgUrl;
   }
 
-  // The carousel's adaptive card only needs localStorage + collections.json
-  // (see computeAdaptiveCard) — it has no dependency on legends.json at all,
-  // so it fires immediately rather than waiting on the ~500KB fetch below.
-  // Previously this was nested inside that fetch's .then(), which is why the
-  // carousel visibly lagged behind the rest of the page: it was stuck behind
-  // an unrelated request for no real reason.
-  computeAdaptiveCard().then(renderCarousel);
+  // Render the carousel immediately with the synchronous fallback card — no
+  // fetch, no wait. For a returning visitor, computeBetterAdaptiveCard() then
+  // checks in the background whether a partway-complete collection would be
+  // a better first slide (that needs collections.json + every collection's
+  // member list — a real two-stage fetch chain, ~2 round trips) and patches
+  // just that slide's text in place if so, rather than blocking the whole
+  // carousel on it. This is what was still causing carousel lag for
+  // returning visitors even after decoupling it from the unrelated
+  // legends.json fetch below.
+  renderCarousel(adaptiveCardSync());
+  computeBetterAdaptiveCard().then(better => {
+    if (better) updateFirstSlideContent(better);
+  });
 
   // manifest.json (tiny) and legends.json (~500KB) are independent too —
   // fetch them together instead of one after the other.

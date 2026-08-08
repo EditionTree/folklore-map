@@ -1,113 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url><loc>https://folklorefinder.uk/</loc><lastmod>2026-08-08</lastmod><priority>1.0</priority></url>
-  <url><loc>https://folklorefinder.uk/map</loc><lastmod>2026-08-08</lastmod><priority>0.8</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/achievements</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/about</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/editorial</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/updates</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/privacy</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/feed.xml</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/category/location</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/category/witch</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/category/hero</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/category/ghost</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/category/fairy</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/category/water</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/category/beast</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/category/deity</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/category/dragon</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/category/pirate</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/category/giant</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/england</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/scotland</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/ireland</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/wales</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/northern-ireland</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/isle-of-man</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/channel-islands</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/cornwall</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/lincolnshire</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/highland</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/orkney</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/yorkshire</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/gwynedd</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/somerset</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/county-cork</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/northumberland</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/norfolk</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/county-sligo</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/county-antrim</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/pembrokeshire</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/shetland</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/hampshire</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/devon</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/argyll</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/london</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/suffolk</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/sussex</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/powys</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/ceredigion</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/oxfordshire</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/warwickshire</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/essex</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/gloucestershire</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/county-mayo</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/herefordshire</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/lancashire</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/county-meath</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/denbighshire</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/dorset</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/wiltshire</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/county-donegal</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/anglesey</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/fife</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/cambridgeshire</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/cumbria</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/county-kilkenny</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/county-fermanagh</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/hebrides</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/county-wexford</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/county-galway</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/county-down</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/county-roscommon</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/kent</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/durham</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/county-armagh</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/collection/black-dogs</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/collection/arthurian-britain</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/collection/arthurian-britain-2</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/collection/haunted-churches</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/collection/legends-of-the-sea</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/collection/legends-of-the-sea-2</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/collection/legends-of-the-sea-3</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/collection/legends-of-the-sea-4</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/collection/cursed-places</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/collection/cursed-places-2</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/collection/standing-stones</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/collection/standing-stones-2</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/collection/dragons-and-serpents</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/collection/dragons-and-serpents-2</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/collection/holy-wells</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/collection/birth-of-albion</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/collections</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/period/prehistoric-britain</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/period/bronze-age</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/period/iron-age</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/period/roman-britain</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/period/sub-roman-britain</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/period/anglo-saxon-england</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/period/viking-age</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/period/norman-britain</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/period/medieval-britain</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/period/tudor-britain</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/period/stuart-britain</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/period/georgian-britain</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/period/victorian-britain</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/period/edwardian-britain</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/period/modern-folklore</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/periods</loc><lastmod>2026-08-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/</loc><lastmod>2026-08-09</lastmod><priority>1.0</priority></url>
+  <url><loc>https://folklorefinder.uk/map</loc><lastmod>2026-08-09</lastmod><priority>0.8</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/achievements</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/about</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/editorial</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/updates</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/privacy</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/feed.xml</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/category/location</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/category/witch</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/category/hero</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/category/ghost</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/category/fairy</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/category/water</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/category/beast</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/category/deity</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/category/dragon</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/category/pirate</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/category/giant</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/england</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/scotland</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/ireland</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/wales</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/northern-ireland</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/isle-of-man</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/channel-islands</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/cornwall</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/lincolnshire</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/highland</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/orkney</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/yorkshire</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/gwynedd</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/somerset</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/county-cork</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/northumberland</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/norfolk</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/county-sligo</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/county-antrim</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/pembrokeshire</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/shetland</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/hampshire</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/devon</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/argyll</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/london</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/suffolk</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/sussex</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/powys</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/ceredigion</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/oxfordshire</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/warwickshire</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/essex</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/gloucestershire</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/county-mayo</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/herefordshire</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/lancashire</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/county-meath</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/denbighshire</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/dorset</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/wiltshire</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/county-donegal</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/anglesey</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/fife</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/cambridgeshire</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/cumbria</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/county-kilkenny</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/county-fermanagh</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/hebrides</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/county-wexford</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/county-galway</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/county-down</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/county-roscommon</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/kent</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/durham</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/county-armagh</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/collection/black-dogs</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/collection/arthurian-britain</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/collection/arthurian-britain-2</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/collection/haunted-churches</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/collection/legends-of-the-sea</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/collection/legends-of-the-sea-2</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/collection/legends-of-the-sea-3</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/collection/legends-of-the-sea-4</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/collection/cursed-places</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/collection/cursed-places-2</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/collection/standing-stones</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/collection/standing-stones-2</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/collection/dragons-and-serpents</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/collection/dragons-and-serpents-2</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/collection/holy-wells</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/collection/birth-of-albion</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/collections</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/period/prehistoric-britain</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/period/bronze-age</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/period/iron-age</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/period/roman-britain</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/period/sub-roman-britain</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/period/anglo-saxon-england</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/period/viking-age</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/period/norman-britain</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/period/medieval-britain</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/period/tudor-britain</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/period/stuart-britain</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/period/georgian-britain</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/period/victorian-britain</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/period/edwardian-britain</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/period/modern-folklore</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/periods</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/abhartach</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/abhartach-hero.jpg</image:loc>
@@ -180,7 +180,7 @@
     <image:title>The wounded Scottish captain Andrew Barton directing sailors aboard his storm-battered ship during a 1511 sea battle</image:title>
     <image:caption>A visual interpretation of Andrew Barton fighting the Lion to the last</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/angelystor</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/angelystor</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/angelystor-hero.jpg</image:loc>
     <image:title>A spectral angelic presence forming in the ancient Llangernyw yew as a lone tailor listens in the moonlit churchyard</image:title>
@@ -210,7 +210,7 @@
     <image:title>The giant Ascapart striding beside Southampton Water with Bevis and his horse following behind</image:title>
     <image:caption>A visual interpretation of Ascapart on the coast of Southampton Water</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/ashleypark-burial-mound</loc><lastmod>2026-05-30</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/ashleypark-burial-mound</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/ashleypark-burial-mound-hero.jpg</image:loc>
     <image:title>A grass-covered passage tomb mound in a misty County Tipperary pasture at dawn</image:title>
@@ -770,7 +770,7 @@
     <image:title>Two lichen-covered megalithic tombs in wet County Sligo pasture beneath a clearing sky</image:title>
     <image:caption>A visual interpretation of Carricknagat&#x27;s Giant&#x27;s Grave and Dermot and Gráinne&#x27;s Bed</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/carrigagulla</loc><lastmod>2026-05-30</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/carrigagulla</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/carrigagulla-hero.jpg</image:loc>
     <image:title>Lichen-covered megalithic stones at Carrigagulla in a misty County Cork upland pasture</image:title>
@@ -890,7 +890,7 @@
     <image:title>Two standing stones in a misty County Cork pasture at sunrise</image:title>
     <image:caption>A visual interpretation of Clodagh Standing Stones</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/cloghanmore</loc><lastmod>2026-05-30</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/cloghanmore</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/cloghanmore-hero.jpg</image:loc>
     <image:title>The great stone heap and court tomb of Cloghanmore on a stormy Donegal hillside</image:title>
@@ -956,7 +956,7 @@
     <image:title>A cinematic folklore image of Coventina, shown as the central divine figure from Northumberland</image:title>
     <image:caption>A visual interpretation of Coventina in Northumberland</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/craddock-moor-stone-circle</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/craddock-moor-stone-circle</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/craddock-moor-stone-circle-hero.jpg</image:loc>
     <image:title>A low stone circle on Craddock Moor among heather and granite tors under clearing storm light</image:title>
@@ -1647,7 +1647,7 @@
     <image:title>A cinematic fae and spirit folklore image of Gruagach, shown as the central fairy, spirit, or otherworldly presence from Hebrides, Scotland</image:title>
     <image:caption>A visual interpretation of Gruagach</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/grubstones</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/grubstones</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/grubstones-hero.jpg</image:loc>
     <image:title>A low ring of weathered stones on Yorkshire moorland under a dramatic sunset</image:title>
@@ -2365,7 +2365,7 @@
     <image:title>A cinematic ghost folklore image of Loughareema, the Vanishing Lake, shown as the central apparition or haunting from County Antrim, Northern Ireland</image:title>
     <image:caption>A visual interpretation of Loughareema, the Vanishing Lake</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/lowri-and-sian-owen-the-witches-of-llanarmon</loc><lastmod>2026-08-05</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/lowri-and-sian-owen-the-witches-of-llanarmon</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/lowri-and-sian-owen-the-witches-of-llanarmon-hero.jpg</image:loc>
     <image:title>Two cloaked women beside a stone Welsh cottage looking out toward a grey sea</image:title>
@@ -3941,7 +3941,7 @@
     <image:title>The carved spirals of the Turoe Stone catching sunset light beside a Galway earthwork</image:title>
     <image:caption>A visual interpretation of the Turoe Stone</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/twelve-apostles-west-yorkshire</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/twelve-apostles-west-yorkshire</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/twelve-apostles-west-yorkshire-hero.jpg</image:loc>
     <image:title>The Twelve Apostles stone circle on West Yorkshire moorland at stormy sunset</image:title>

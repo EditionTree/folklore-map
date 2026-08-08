@@ -879,7 +879,7 @@
     "lng": -4.4717,
     "category": "location",
     "region": "Cornwall",
-    "summary": "Craddock Moor Stone Circle or Craddock Moor Circle is a stone circle located near Minions on Bodmin Moor in Cornwall, UK. It is situated around half a mile Northwest of The Hurlers.",
+    "summary": "Overgrown and reduced to sixteen fallen stones near Bodmin Moor's Hurlers, Craddock Moor may carry the name of Caradoc, a British king folded into Arthurian legend.",
     "source": "https://en.wikipedia.org/wiki/Craddock_Moor_stone_circle",
     "date_added": "2026-06-03",
     "tags": [
@@ -887,7 +887,8 @@
       "standing-stones",
       "england",
       "cornwall"
-    ]
+    ],
+    "detail": "Half a mile north-west of the better-known Hurlers, on Bodmin Moor near Minions, lies a stone circle far less visited and far harder to find. Craddock Moor's circle has fallen entirely: sixteen stones now lie flat in the moor grass, with perhaps one broken stump still upright, the whole site so overgrown that it ranks among the trickiest on the moor to locate.\n\nIts name may preserve an older story than its ruined state suggests. Some antiquarians have argued that \"Craddock\" derives from Caradoc, a British king folded into the wider cycle of Arthurian legend, though no local tale about the circle itself survives to confirm the connection. Archaeologist John Barnatt has proposed a more measurable link to the landscape: the circle appears to have been positioned so that the summit of Brown Willy, Cornwall's highest point, lines up with the sunset at midsummer."
   },
   {
     "name": "Cŵn Annwn",
@@ -1353,7 +1354,7 @@
     "lng": -1.794,
     "category": "location",
     "region": "Yorkshire",
-    "summary": "The Grubstones is a stone circle on Burley Moor in West Yorkshire, England. It is believed to be either an embanked stone circle or a ring cairn.",
+    "summary": "Ordnance Survey misheard the local \"Rum stones\" as \"Grubstones,\" but older tradition called this Yorkshire circle Roms Law, closing its Rogation Day gathering with the words \"This is Rumbles Law!\"",
     "source": "https://en.wikipedia.org/wiki/Grubstones",
     "date_added": "2026-06-03",
     "tags": [
@@ -1362,7 +1363,8 @@
       "barrow",
       "england",
       "yorkshire"
-    ]
+    ],
+    "detail": "The stone circle on Burley Moor now called the Grubstones owes its name to a mishearing. When Ordnance Survey surveyors recorded the site, they mistook the guttural local pronunciation of \"Rum stones\" for \"grub stones,\" and the mistranslation stuck. Older tradition knew the circle, an embanked ring or possibly a ring cairn, by a different name entirely: Roms Law, or Rumbles Law, from old words for a \"clearing\" or \"meeting place\" and a burial mound, together meaning something like \"the place of the dead\" or \"the moot.\"\n\nThat older name points to how the circle was actually used. Local people once gathered here on Rogation Day, a pre-Christian agricultural festival closely tied to Beltane, where a central stone served as a kind of pulpit. An orator addressed the gathered crowd from it, closing the ceremony with the words \"This is Rumbles Law!\" A trackway leading to the circle has been read as a ceremonial \"road of the dead,\" along which the ancestors of those gathered were once carried to rest nearby."
   },
   {
     "name": "Gulf of Corryvreckan",
@@ -3057,14 +3059,15 @@
     "lng": -1.8095,
     "category": "location",
     "region": "Yorkshire",
-    "summary": "The Twelve Apostles is a stone circle near Ilkley and Burley in Wharfedale in West Yorkshire, England.",
+    "summary": "The stones on Rombalds Moor take their name from the apostles, but older folklore blames the giant Rombald, whose wife split the nearby Cow and Calf rocks while chasing him in a rage.",
     "source": "https://en.wikipedia.org/wiki/Twelve_Apostles%2C_West_Yorkshire",
     "date_added": "2026-06-03",
     "tags": [
       "standing-stones",
       "england",
       "yorkshire"
-    ]
+    ],
+    "detail": "Twelve standing stones, all that survive of an original ring of sixteen to twenty, stand on Rombalds Moor between Ilkley and Burley in Wharfedale, high enough at 381 metres to catch the wind off the valley below. Built from local millstone grit in the Bronze Age, the circle takes its familiar name from a rough count of its remaining stones, read as the twelve apostles, though every stone had fallen by the mid-twentieth century and the circle has since been re-erected more than once.\n\nThe moor's older name comes from folklore rather than scripture. Local tradition holds that a giant called Rombald once lived here, and that his wife, pursuing him across the moor in a fury, kicked apart a pair of nearby boulders known ever since as the Cow and Calf. The circle keeps stranger company still: in recent decades it has drawn its share of reported UFO sightings, a modern layer added to a moor already thick with story."
   },
   {
     "name": "Uffington White Horse",
@@ -6287,7 +6290,7 @@
     "lng": -3.697,
     "category": "ghost",
     "region": "Llangernyw, Conwy, Wales",
-    "summary": "Angelystor, the Recording Angel, is a supernatural voice said to inhabit the churchyard of St Digain's Church in Llangernyw. Each Halloween night, the spirit announces the names of parishioners who will die in the coming year. The tradition is centred on the churchyard's ancient yew tree.",
+    "summary": "Every Halloween, a disembodied voice by Llangernyw's ancient yew reads out the names of parishioners who will die within the year, and anyone who goes to listen risks hearing their own.",
     "source": "https://en.wikipedia.org/wiki/Llangernyw_Yew",
     "date_added": "2026-06-03",
     "tags": [
@@ -6296,7 +6299,7 @@
       "wales",
       "conwy"
     ],
-    "detail": "At St Digain's Church in the Conwy village of Llangernyw stands a yew said to be among the oldest living things in Wales, and with it the tradition of Angelystor — the 'Recording Angel'. On Halloween night, and again on the eve of St John's, a solemn disembodied voice was said to be heard from within the church, naming aloud in Welsh those of the parish who would die in the coming year.\n\nThe best-known story tells of a sceptical local tailor, Siôn Ap Robert, who scoffed at the belief and went to the church on Halloween to disprove it — only to hear his own name called by the Angelystor. He is said to have protested that he was not ready, but died within the year as foretold. The legend bound the parish's reckoning of mortality to its ancient tree and churchyard, a yearly reminder voiced by an unseen angel in the dark.",
+    "detail": "At St Digain's Church in the Conwy village of Llangernyw stands a yew said to be among the oldest living things in Wales, and with it the tradition of Angelystor, the \"Recording Angel.\" On Halloween night, and again on the eve of St John's, a solemn disembodied voice was said to be heard from beside the ancient tree, naming aloud in Welsh those of the parish who would die before the year turned. Anyone bold enough to go and listen took a risk. Tradition warned that disturbing the Angelystor could see your own name added to its list.\n\nThe best-known story tells of a sceptical local tailor, Siôn ap Robert, who scoffed at the belief and went to the church on Halloween to disprove it, only to hear his own name called by the Angelystor. He is said to have protested that he was not ready, but died within the year as foretold. The legend bound the parish's reckoning of mortality to its ancient tree and churchyard, a yearly reminder voiced by an unseen angel in the dark.",
     "pronunciation": "an-geh-LUHS-tor",
     "sources": [
       "https://en.wikipedia.org/wiki/Llangernyw_Yew",
@@ -7627,7 +7630,7 @@
     "lng": -8.1889,
     "category": "location",
     "region": "Ashleypark, County Tipperary",
-    "summary": "Ashleypark Burial Mound is a passage tomb and National Monument in the townland of Ashleypark, County Tipperary, Ireland.",
+    "summary": "Workers bulldozing a field in Ashleypark in February 1980 broke open a Bronze Age passage tomb and found three skeletons, one reputedly seven feet tall, just as local tradition had always claimed.",
     "source": "https://en.wikipedia.org/wiki/Ashleypark_Burial_Mound",
     "date_added": "2026-05-30",
     "tags": [
@@ -7635,7 +7638,8 @@
       "barrow",
       "ireland",
       "county-tipperary"
-    ]
+    ],
+    "detail": "The tomb sat as an ordinary field mound for generations until February 1980, when workmen bulldozing the site in Ashleypark, County Tipperary, broke into a passage tomb no one had excavated. Inside lay three skeletons in the burial chamber: one nearly seven feet tall, a second at six foot six, a third just over six feet. Local tradition already held that a king or chieftain lay under the mound, and the size of the bones seemed, to those who heard about the find, to confirm the old story.\n\nBefore excavation the mound had been capped, according to local memory, \"like a pyramid\" with stones gathered from around the field, a description that stuck once archaeologists confirmed a corbelled passage tomb underneath, radiocarbon-dated to around 3350 BC. Local folklore also linked the tall skeletons to the name of the neighbouring parish of Ardcroney: ard for \"high\" or \"great,\" croine for the chief said to be buried within, though the parish name is more usually explained on other grounds.\n\nA second, smaller story survives about the field next to the mound. People cutting barley there once struck a spring that would not stop flowing, and the field flooded into a lake that still holds the name Lough Eorna, the lake of barley, today."
   },
   {
     "name": "Bampfylde Moore Carew",
@@ -7807,14 +7811,15 @@
     "lng": -8.9163,
     "category": "location",
     "region": "Carrigagulla, County Cork",
-    "summary": "Carrigagulla is a megalithic complex 2.9 km north-east of Ballinagree, County Cork, Ireland.",
+    "summary": "None of Carrigagulla's sixteen stones stands higher than three feet, so short that local tradition credits the fairies, not human hands, with raising them.",
     "source": "https://en.wikipedia.org/wiki/Carrigagulla",
     "date_added": "2026-05-30",
     "tags": [
       "standing-stones",
       "ireland",
       "county-cork"
-    ]
+    ],
+    "detail": "On a low hill north-east of Ballinagree, County Cork, sits a stone circle so modest in height that local tradition refused to credit it to human builders at all. Carrigagulla's sixteen stones, arranged around a central slab in a ring about eight metres across, come in at less than three feet at their tallest, and generations of storytelling put that down to the fairies, said to have raised the circle themselves rather than any ordinary hand.\n\nThe circle is only part of a wider complex on the hillside. Close by stood a row of five stones; today four of them do duty as farm gates, moved from their original alignment at some point in the last century, with only one left standing where it was set. An ogham stone once stood nearby too, until it was uncovered by workers cutting turf and taken into the care of Cork Public Museum in 1940, where it has stayed ever since."
   },
   {
     "name": "Carrigaphooca Stone Circle",
@@ -7929,7 +7934,7 @@
     "lng": -8.7458,
     "category": "location",
     "region": "Glencolmcille, County Donegal",
-    "summary": "Cloghanmore (translated as \"the great stone heap\" is a megalithic chamber tomb of the court tomb type located about 8 km east from Carrick in Malin More, Glencolmcille, in County Donegal, Ireland.",
+    "summary": "Convinced by a local belief that three nights of dreaming about gold beneath an ancient monument would make the dream come true, a man called Paddy the Miner took Cloghanmore's court tomb apart stone by stone looking for treasure.",
     "source": "https://en.wikipedia.org/wiki/Cloghanmore",
     "date_added": "2026-05-30",
     "tags": [
@@ -7937,7 +7942,8 @@
       "barrow",
       "ireland",
       "county-donegal"
-    ]
+    ],
+    "detail": "Cloghanmore, \"the great stone heap,\" stands near Malin More, south of Glencolmcille in County Donegal, one of the finest court tombs in Ireland and the only one in the country where megalithic art has been identified on its stones. The monument runs to more than 130 feet in length, built around an oval forecourt some 45 feet across where, in the Neolithic, rites for the dead were most likely performed.\n\nLocal belief held that anyone who dreamed three nights running of finding gold under the stones of an ancient monument would see the dream come true, and Cloghanmore had its believer. A local man named Patrick Byrne, known as Paddy the Miner, lived close to the tomb and was convinced treasure lay beneath it. He and his brother John set about proving it, by their own account taking the tomb \"entirely apart\" stone by stone in the search. They found no gold, but the story of the search outlived the dig."
   },
   {
     "name": "Coolcoulaghta Standing Stones",
@@ -13470,7 +13476,7 @@
     "lng": -4.316,
     "category": "witch",
     "region": "Llanarmon, near Pwllheli, Gwynedd, Wales",
-    "summary": "Two sisters near Pwllheli ran a cottage \"school\" where they cast out unclean spirits by ceremony and could read the sea's ebb and flow before it turned.",
+    "summary": "Two women near Pwllheli, said to run a cottage \"school,\" cast out unclean spirits by ceremony and were reputed to read the sea's ebb and flow before it turned.",
     "source": "https://www.peoplescollection.wales/items/1762761",
     "sources": [
       "https://www.peoplescollection.wales/items/1762761",
@@ -13482,7 +13488,8 @@
       "gwynedd",
       "sea",
       "healing"
-    ]
+    ],
+    "detail": "In Llanarmon, a small parish near Pwllheli on the Llŷn Peninsula, local memory preserves two women named Lowri and Siân Owen as figures of both fear and use. They were said to run a kind of school from a cottage in the village, performing ceremonies that could cast out unclean spirits and demons from those who came to them.\n\nTheir other reputed gift was reading the sea itself. Villagers believed the two women could sense, in advance, the turn of the tide, anticipating its ebb and flow before it happened. Little else survives about them. There are no firm dates and no account of how their reputation began or ended, and their story today rests mainly on oral tradition gathered by recent Welsh folklore projects rather than any older written record."
   },
   {
     "name": "Madame's Blow-well",

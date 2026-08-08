@@ -2318,7 +2318,7 @@ def build():
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{{"token": "64d1fd37251d426f8a0d8fbc83ea350b"}}'></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>All Legends &#8212; Folklore Finder</title>
-<meta name="description" content="Browse all {written} myths, legends, ghosts and folklore stories from every region of Britain and Ireland, each pinned to its place of origin on our interactive folklore map."/>
+<meta name="description" content="Browse all {written} myths, legends, ghosts and folklore stories from Britain and Ireland, each pinned to its place of origin on the map."/>
 <link rel="canonical" href="{BASE}/{OUT_DIR}/"/>
 <link rel="icon" type="image/png" href="{BASE}/favicon.png"/>
 <meta property="og:type" content="website"/>

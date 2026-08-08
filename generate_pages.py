@@ -242,6 +242,23 @@ NATION_TITLES = {
     "channel-islands": "Channel Islands Folklore — Myths & Legends",
 }
 
+# <title> for the 11 category browse pages — leads with a natural search
+# phrase instead of the generic "{label} of Britain & Ireland" pattern.
+# See project_seo_keyword_research memory.
+CATEGORY_TITLES = {
+    "beast": "British Monsters & Mythical Beasts — Folklore Map",
+    "deity": "British & Irish Deities — Folklore Map",
+    "dragon": "British Dragon Legends — Folklore Map",
+    "fairy": "British & Irish Fairies — Folklore Map",
+    "ghost": "British Ghost Stories — Folklore Map",
+    "giant": "British Giant Legends — Folklore Map",
+    "hero": "British Legendary Heroes — Folklore Map",
+    "location": "British Sacred Sites — Folklore Map",
+    "pirate": "British Pirates & Smugglers — Folklore Map",
+    "water": "British Water Monsters & Mermaids — Folklore Map",
+    "witch": "British Witches & Witch Trials — Folklore Map",
+}
+
 # Themed collections: a page is only generated when at least this many entries
 # qualify, so curated collections never ship as thin pages.
 MIN_COLLECTION = 12
@@ -1837,7 +1854,7 @@ def build():
             if c in meta else image_object("og/preview.jpg", "Folklore Finder preview artwork"),
         }, ensure_ascii=False)
         page = build_browse_page(
-            page_title=f"{label} of Britain & Ireland — Folklore Map",
+            page_title=CATEGORY_TITLES.get(c) or f"{label} of Britain & Ireland — Folklore Map",
             desc=f"Browse {len(entries)} {label.lower()} from across British and Irish folklore — each pinned to the place its story is rooted.",
             url=url,
             h1=label,

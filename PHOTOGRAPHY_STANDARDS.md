@@ -1,105 +1,177 @@
-# Photography & Illustration Standards
+# Legend Image Style Guide
 
-Internal reference doc — not published to the site. Covers the visual standard for legend
-hero images (currently 100% AI-generated) and the baseline that would apply if real
-photography is ever added. Pairs with the AI-image-disclosure policy in [BRAND_GUIDE.md](BRAND_GUIDE.md)
-and [editorial.html](editorial.html), which this doc doesn't repeat.
+Internal production reference for Folklore Map legend hero images. Use this before every
+generation batch. It records the visual language established by the existing image library
+and the later art-direction decisions made during the category rollout.
 
-## Core visual system (as established across ~665 hero images)
+The AI-image disclosure policy lives in [BRAND_GUIDE.md](BRAND_GUIDE.md) and
+[editorial.html](editorial.html). This guide covers image selection, generation, and quality.
 
-Every published hero image already follows the same unwritten style. This section writes
-down what's actually there, from inspecting the existing set, so new images stay consistent
-rather than each one being a fresh art-direction decision.
+## Core visual identity
 
-- **Cinematic photoreal, not painterly or illustrative.** Rendered like a still from a nature
-  or historical documentary — sharp, physically plausible detail (weather, stone texture,
-  water, weathered wood), not a flat digital-painting or fantasy-book-cover look.
-- **Low, moody light.** Overcast, dusk, dawn, storm-light or deep blue "magic hour" —
-  overwhelmingly preferred over flat bright daylight. Skies do a lot of the emotional work.
-- **Muted, desaturated, cool-leaning palette.** Slate blues, stone greys, bracken browns,
-  moss greens. Colour is used sparingly as an accent (a lit window, a lantern, a creature's
-  eyes), not as the dominant note.
-- **Landscape-first composition.** The subject (creature, figure, or site) is placed *within*
-  a real-feeling British/Irish landscape or building, usually not dead-centre — a wide
-  establishing shot with the subject integrated, not a portrait/hero-shot crop.
-- **Authentic, period-plausible setting.** Real-feeling vernacular architecture (flint or
-  granite church towers, drystone walls, moorland, coastline), no anachronistic elements,
-  no generic fantasy-world dressing.
-- **Human figures kept distant, obscured, or turned away.** When people appear, they're
-  small in frame, cloaked/hooded, silhouetted, or facing away — never a clear, camera-aware
-  face. This is a deliberate constraint, not an accident: it avoids the image reading as a
-  claimed likeness of a real historical person, and keeps focus on the landscape and the
-  creature/event rather than a posed character.
-- **No on-image text, logos, watermarks, or UI elements** of any kind.
+- **Cinematic photorealism.** Images should resemble a still from a historical, landscape,
+  or natural-history documentary. Use sharp physical detail, believable weather, and tactile
+  stone, water, wool, wood, skin, fur, feathers, or scales. Avoid painterly fantasy-cover art.
+- **The legend is the subject.** Show the named creature, person, apparition, event, or sacred
+  feature. A generic landscape, ritual object, empty building, or symbolic prop is not enough.
+- **Place anchors the story.** Use recognisable British and Irish terrain, geology,
+  vernacular architecture, coast, vegetation, and weather. Do not substitute generic fantasy
+  scenery for the stated region.
+- **Historically plausible worlds.** Match dress, tools, buildings, vessels, roads, and social
+  setting to the legend's period where one is known. Avoid anachronisms and stock medievalism.
+- **Moody natural light.** Overcast, dawn, dusk, storm light, moonlight, sea glare, mist, or
+  firelight are preferred. Bright daylight is acceptable when the narrative calls for it, but
+  flat studio-like illumination is not.
+- **Restrained colour.** The usual base is slate, stone, peat, moss, bracken, sea green, and
+  weathered timber. Add one controlled accent such as fire, tartan, a garment, eyes, flowers,
+  or reflected light. Do not make every image uniformly dark or blue.
+- **No text, logos, borders, watermarks, or UI.** No modern objects unless the legend itself
+  is modern and requires them.
+
+## Composition
+
+- Place the principal subject **in the centre or right half of the frame, never on the left**.
+  Centre-right is the default. The left side can carry landscape, approach, weather, context,
+  or breathing room.
+- Keep the face, head, or defining feature away from the outer 15 percent of the frame. Hero
+  and card layouts crop with `object-fit: cover`, so the subject must survive a centred crop.
+- Vary framing across a batch: establishing wide shot, low wide angle, medium environmental
+  portrait, ground-level action, elevated view, waterline view, and restrained close shot.
+- Use posture to tell the story. Prefer kneeling, seated, crouched, wading, working, turning,
+  watching, climbing, or interacting over repeated upright figures facing the camera.
+- Secondary figures should support the named legend and remain visually subordinate. Avoid
+  crowding every image with witnesses.
+- Sacred-site images may make the site itself the principal subject. Place its defining
+  structure or landform centre or right and show the specific associated event where useful.
+
+## People and dignity
+
+- Named figures may have clearly visible faces when that helps distinguish them, but the
+  image is an interpretation, not a claimed likeness. Avoid glamour poses and camera-aware
+  expressions.
+- Historical victims, accused witches, and people linked to tragedy must be portrayed with
+  dignity. Prefer the human event that created the legend over execution, torture, or lurid
+  horror.
+- Specify identity deliberately: age, build, face shape, hair, skin tone, occupation, dress,
+  and posture. Do not allow every hero to become the same tall bearded man or every witch the
+  same thin hooded woman.
+- Avoid costume shorthand: pointed witch hats, generic wizard robes, horned helmets, fantasy
+  armour, and spotless Robin Hood outfits unless a sourced tradition genuinely requires it.
+
+## Variety control
+
+Treat variety as a batch-level requirement, not an afterthought. Before prompting, give each
+image a distinct combination across these axes:
+
+| Axis | Examples |
+| --- | --- |
+| Subject form | human, pair, crowd, quadruped, serpent, birdlike, amphibious, spectral, site |
+| Human identity | child, young adult, middle-aged, elderly; short, tall, broad, wiry, disabled |
+| Surface and dress | fur, scales, feathers, wet skin; workwear, court dress, fisher wool, armour |
+| Posture | seated, crouched, prone, walking, riding, swimming, emerging, coiled, flying |
+| Lens and distance | low wide, long lens, elevated wide, medium environmental, waterline |
+| Light | dawn, hard overcast, twilight, moonlight, storm break, firelight, winter glare |
+| Palette | slate and rust, peat and green, chalk and blue, black and amber, mist and ochre |
+| Setting | coast, loch, marsh, mountain, road, cottage, market, ruin, forest, open sea |
+
+Do not repeat the same dominant silhouette, facial type, costume, camera height, or palette in
+adjacent images. For groups of related small creatures, change anatomy as well as accessories:
+body proportions, limb length, head shape, ears, skin or coat, age, posture, and behaviour.
+Changing only clothing or background does not create sufficient variety.
+
+## Category direction
+
+- **Dragons and beasts:** Follow the description even when biologically impossible. Vary
+  serpentine, heavy-bodied, winged, aquatic, mammalian, avian, and hybrid anatomy. Show scale
+  through terrain or interaction, not by repeating the same roaring three-quarter pose.
+- **Legendary figures, pirates, and deities:** Build a distinct person and depict a specific
+  deed. Vary gender, age, build, culture, occupation, expression, and social setting.
+- **Giants:** Show environmental scale, but vary body type, activity, camera distance, and
+  relationship to the landscape. A giant need not always stand on a ridge.
+- **Ghosts:** Show the apparition or haunting action. Vary translucence, material presence,
+  number of spirits, period, interior or exterior, and emotional tone. Avoid identical pale
+  women in long dresses.
+- **Fae and spirits:** Follow local descriptions rather than defaulting to winged fairies or
+  goblin-like humanoids. Vary scale, anatomy, age, texture, movement, and social behaviour.
+- **Witches:** Distinguish cunning folk, healers, accused historical people, storm-witches,
+  fairy seers, and folkloric hags. Avoid pointed hats, repeated cauldrons, and repeated occult
+  hand gestures.
+- **Water spirits and monsters:** Show the being or event in, under, or emerging from water.
+  Vary water type, camera position, anatomy, visibility, scale, weather, and relationship to
+  boats or shore.
+- **Sacred sites:** Show the actual defining feature and its real landscape character. Avoid
+  generic standing stones, empty ruins, or invented architecture when the site is documented.
 
 ## Technical specification
 
-- **Aspect ratio / size:** 16:9, master delivered at 1600×900 (a handful of legacy entries are
-  ~1670×940 — near enough, don't chase pixel-perfect uniformity on old assets, but new
-  generations should target 1600×900 exactly).
-- **Format:** JPEG, quality ~82, optimized + progressive. `generate_pages.py`
-  (`build_webp_heroes`, `build_card_thumbs`) automatically derives a WebP sibling and an
-  800px-wide card thumbnail from every `*-hero.jpg` on each build — never hand-create these,
-  just drop the JPEG in and rebuild.
-- **File naming:** `{legend-slug}-hero.jpg`, placed in `legend-images/`. The slug must match
-  the one `generate_pages.py` derives from the legend name (`slugify()`), so it resolves
-  automatically.
-- **Metadata to fill in per image**, in `legend_pages.json` under the legend's entry:
-  - `image` — the path above.
-  - `alt` — a plain, concrete scene description (what's literally visible), not the legend's
-    name or a sales pitch. E.g. *"A huge black dog crossing a rain-soaked lane near a
-    medieval Norfolk church"*, not *"Black Shuck illustration"*.
-  - `caption` — short, e.g. *"A visual interpretation of the East Anglian legend"*. Keep this
-    generic across entries rather than reinventing the phrasing each time.
+- **Aspect ratio:** near-exact 16:9 landscape. Existing accepted masters are `1600x900` and
+  `1672x941`; do not introduce square or portrait heroes.
+- **Format:** JPEG, quality about 82, optimised and progressive.
+- **Filename:** `legend-images/{legend-slug}-hero.jpg`, using the same `slugify()` rules as
+  `generate_pages.py`.
+- **Derived files:** `generate_pages.py` creates WebP heroes and 800-pixel card thumbnails.
+  Do not create those by hand.
+- **Metadata:** add `image`, literal scene `alt`, and a short factual `caption` under the exact
+  legend name in `legend_pages.json`.
+
+Alt text describes what is visible. It should not say only "illustration of...". Captions may
+use the pattern "A visual interpretation of..." and should identify the tradition or event.
+
+## Preflight and non-overwrite rule
+
+Before generating, audit all three sources of truth:
+
+1. The legend record in `legends.json`.
+2. Its exact-name entry and `image` path in `legend_pages.json`.
+3. The actual file under `legend-images/` and the slug in `legend-images/manifest.json`.
+
+The page's real image path and file existence are authoritative. Do not assume a guessed slug
+means an image is missing. Also check the proposed target filename directly before generation.
+
+Never overwrite an existing hero unless replacement was explicitly requested. For a correction,
+write a versioned sibling such as `name-hero-v2.jpg`, inspect it, then update metadata to point to
+the new file. Leave the original in place until a separate cleanup is approved.
 
 ## Prompt template
 
-Use this shape (same pattern as `_drafts/achievement-icon-style-guide.md` uses for
-achievement seals) so new heroes stay stylistically cohesive with the existing set instead of
-drifting per-session:
-
-```
-Use case: hero illustration for a folklore-map legend page
-Asset type: 16:9 cinematic landscape photo, 1600x900
-Primary request: a photorealistic scene depicting {legend / creature / event}
-Subject: {creature or figure}, kept distant/silhouetted/obscured if a human figure is shown
-Setting: {real place name / county}, {specific landscape or building detail — church tower,
-  standing stones, coastline, moor, etc.}
-Style/medium: cinematic photoreal, documentary-still quality, sharp physical detail
-Lighting/mood: overcast / dusk / dawn / storm-light, low and moody, "magic hour" blues
-  preferred over flat daylight
-Color palette: muted, desaturated, cool-leaning (slate, stone, moss, bracken) with colour
-  used only as a small accent
-Composition/framing: landscape-first wide shot, subject integrated into the scene rather
-  than centred as a portrait
-Constraints: no on-image text, no logos, no watermark, no anachronistic objects, no clear
-  camera-aware human face, period-plausible architecture and dress
+```text
+Use case: historical-scene or stylized-concept
+Asset type: folklore atlas legend-page hero, cinematic 16:9 landscape
+Primary request: "{exact legend name}" - depict {specific deed, encounter, or haunting}
+Scene/backdrop: {real region, period, terrain, architecture, and weather}
+Subject: {legend itself; precise anatomy or age, build, face, hair, dress, posture}
+Style/medium: cinematic photorealism, grounded documentary still, tactile physical detail
+Composition/framing: {distinct lens and distance}; subject centre or right, never left;
+  defining features protected from edge crops; contextual space on left
+Lighting/mood: {specific natural light and emotional register}
+Color palette: {muted base plus one controlled accent}
+Constraints: period-plausible; no modern objects; no text, logo, border, or watermark;
+  no generic category shorthand; {legend-specific avoid list}
 ```
 
-## AI-disclosure (mandatory, already automated)
+Write each prompt independently. Do not paste the same character description, composition, or
+lighting block into every item in a batch.
 
-Every hero image on a legend or collection page carries the fixed-wording disclosure —
-*"Illustration created with the assistance of generative AI."* — rendered automatically by
-`generate_pages.py` beneath the image (`.hero-ai-note` / `.col-hero-credit`). This is not
-optional per-image and the wording must not be paraphrased; see BRAND_GUIDE.md's AI-image
-disclosure section for the policy rationale. Nothing in this doc changes that — a future
-switch to real photography for a given entry wouldn't get this caption, so `legend_pages.json`
-would need a way to mark an image as non-AI before that caption logic can be trusted (not
-built yet, since every current image is AI-generated).
+## Quality review
 
-## If real photography is ever used
+Inspect every full image and the batch contact sheet before wiring or committing it. Confirm:
 
-Not currently used anywhere on the site — flagging the baseline now so it doesn't get
-skipped later, since the proposal names photography alongside illustration standards:
+- The exact legend is visible and recognisable.
+- The principal subject is centre or right and survives a centred 16:9 crop.
+- Anatomy, hands, faces, equipment, architecture, and period details are plausible.
+- No text, watermark, duplicated body parts, modern object, or unintended stock-fantasy trope.
+- The batch varies identity, silhouette, posture, camera, light, palette, and setting.
+- Accused or tragic historical people are treated with dignity.
+- The proposed path did not exist before the batch.
 
-- Must be either originally shot for the site, or used under a licence that permits
-  commercial reuse with attribution (e.g. CC BY / CC BY-SA, or explicit permission) — never
-  scraped from an unlicensed source.
-- Photographer/source credit is mandatory in the same caption slot the AI-disclosure uses
-  today, e.g. *"Photograph: {name/source}, {licence}"*.
-- Same technical spec as above (1600×900, JPEG→WebP pipeline) so it drops into the existing
-  template without special-casing.
-- Should meet the same compositional standard where practical (landscape-first, muted
-  palette) so a mixed AI/photo set doesn't look inconsistent — but a genuine historical or
-  site photograph is valuable specifically *because* it's real, so don't force a real photo
-  to imitate the AI look at the cost of authenticity.
+Then update `legend_pages.json`, run `generate_pages.py`, and validate that every legend has an
+existing referenced file and that the regenerated manifest contains its slug.
+
+## AI disclosure
+
+Hero and collection pages automatically render the fixed wording: "Illustration created with
+the assistance of generative AI." Do not add disclosure text inside the image or paraphrase it
+per entry.
+
+If real photography is introduced later, licensing and photographer credit must be recorded,
+and the current automatic AI label will need a non-AI metadata flag before publication.

@@ -91,6 +91,9 @@ without completed artwork show a category-based placeholder. The placeholder
 is replaced automatically when a compressed hero image and editorial metadata
 are added to `legend_pages.json`.
 
+Before generating or replacing artwork, follow the preflight, composition,
+variety, and non-overwrite rules in [PHOTOGRAPHY_STANDARDS.md](PHOTOGRAPHY_STANDARDS.md).
+
 Add the hero image under `legend-images/`, add the matching legend name to the
 manifest, then regenerate the static pages:
 

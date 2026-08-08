@@ -542,10 +542,15 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
    its smaller size (.col-hero-desc p would otherwise win on specificity) and
    drop the 820px cap, since the column already constrains it. */
 .col-hero-desc .col-context{font-size:15.5px;max-width:none;margin:12px 0 0}
-.col-hero-media{flex:0 0 42%;position:relative;min-height:320px;aspect-ratio:4/3;border-radius:2px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.25);background:#241a10}
-.col-hero-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
-.col-hero-credit{position:absolute;right:10px;bottom:8px;font-size:10px;color:rgba(255,255,255,.85);background:rgba(0,0,0,.4);padding:2px 8px;border-radius:2px}
-@media(max-width:680px){.col-hero-split{flex-direction:column;gap:16px}.col-hero-media{flex-basis:auto;height:220px;min-height:0}}
+.col-hero-media{flex:0 0 42%;position:relative;min-height:320px;aspect-ratio:4/3;overflow:visible;box-shadow:0 6px 24px rgba(0,0,0,.25);background:#241a10}
+.col-hero-media img{position:absolute;inset:0;width:100%;height:100%;border-radius:2px;object-fit:cover;object-position:center top}
+/* Same oak-branch leaf frame as the homepage's weekly-legend image
+   (.home-page .hero-feature .lotw-hero::after in folklorefinder.css) —
+   reused here so the collection hero reads as the same kind of "featured
+   artwork," not a plain photo. */
+.col-hero-media::after{content:'';position:absolute;inset:-17px;z-index:2;box-sizing:border-box;border:36px solid transparent;border-image:url('/assets/ornaments/generated-variants/oak-branch-frame-v1.png?v=20260713c') 230 / 35px / 0 round;filter:saturate(.62) brightness(.88) contrast(.9) drop-shadow(0 4px 5px rgba(0,0,0,.24));pointer-events:none}
+.col-hero-credit{position:absolute;right:24px;bottom:24px;z-index:3;font-size:10px;color:rgba(255,255,255,.85);background:rgba(0,0,0,.4);padding:2px 8px;border-radius:2px}
+@media(max-width:680px){.col-hero-split{flex-direction:column;gap:16px}.col-hero-media{flex-basis:auto;height:220px;min-height:0}.col-hero-media::after{inset:-12px;border-width:24px;border-image-width:24px}}
 /* Article layout: alternating image/summary rows for collection members */
 .col-articles{display:flex;flex-direction:column;gap:20px}
 .col-article{display:flex;align-items:stretch;background:rgba(246,241,230,.72);border:1px solid rgba(90,70,50,.28);text-decoration:none;color:#3f3023;overflow:hidden;box-shadow:inset 0 0 0 5px rgba(255,255,255,.14);transition:border-color .15s,transform .12s,box-shadow .15s}
@@ -563,9 +568,13 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 @media(max-width:680px){.col-article,.col-article:nth-child(even){flex-direction:column}.col-article-media{flex-basis:auto;min-height:0}.col-article-body{padding:18px 20px}.col-article-name{font-size:19px}}
 /* Collections index: editorial feature rows (alternating image/text) */
 .col-index{display:flex;flex-direction:column;gap:22px}
-.col-index-row{display:flex;align-items:stretch;background:rgba(228,213,185,.88);border:1px solid rgba(90,70,50,.28);text-decoration:none;color:#3f3023;overflow:hidden;box-shadow:inset 0 0 0 5px rgba(255,255,255,.14);transition:border-color .15s,transform .12s,box-shadow .15s}
+.col-index-row{position:relative;display:flex;align-items:stretch;background:rgba(228,213,185,.88);border:1px solid rgba(90,70,50,.28);text-decoration:none;color:#3f3023;overflow:hidden;box-shadow:inset 0 0 0 5px rgba(255,255,255,.14);transition:border-color .15s,transform .12s,box-shadow .15s}
 .col-index-row:hover{border-color:#c4622a;transform:translateY(-2px);box-shadow:0 12px 30px rgba(44,31,14,.16),inset 0 0 0 5px rgba(255,255,255,.14)}
 .col-index-row:nth-child(even){flex-direction:row-reverse}
+/* Gilded piping — same transparent/rust/gold/rust/transparent stripe as
+   .topnav::before, the footer rule and the share cards — as a top accent
+   so these list-view cards read as a deliberate site motif, not a plain box. */
+.col-index-row::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;z-index:2;background:linear-gradient(90deg,transparent 0%,#c4622a 15%,#b09060 50%,#c4622a 85%,transparent 100%)}
 .col-index-media{flex:0 0 42%;position:relative;min-height:320px;background:#241a10}
 .col-index-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
 .col-index-body{flex:1 1 0;min-width:0;padding:28px 34px;display:flex;flex-direction:column;justify-content:center}

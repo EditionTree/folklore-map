@@ -53,11 +53,11 @@
   <url><loc>https://folklorefinder.uk/legends/region/essex</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/gloucestershire</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/county-mayo</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/denbighshire</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/herefordshire</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/lancashire</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/warwickshire</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/county-meath</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/denbighshire</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/dorset</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/wiltshire</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/county-donegal</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
@@ -107,7 +107,7 @@
   <url><loc>https://folklorefinder.uk/legends/period/edwardian-britain</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/period/modern-folklore</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/periods</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/abhartach</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/abhartach</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/abhartach-hero.jpg</image:loc>
     <image:title>An earth-stained dwarf-magician revenant standing beside a disturbed stone burial monument in Slaghtaverty</image:title>
@@ -257,7 +257,7 @@
     <image:title>A solitary woman in pale dress keening on a rain-dark rural Irish lane beside stone walls at dusk</image:title>
     <image:caption>A visual interpretation of the Irish banshee tradition</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/baobhan-sith</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/baobhan-sith</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/baobhan-sith-hero.jpg</image:loc>
     <image:title>Three pale supernatural women in green gowns dancing near horses and an iron gate in the moonlit Highlands</image:title>
@@ -275,7 +275,7 @@
     <image:title>Monks at Bardney Abbey watching a pale pillar of light rise from King Oswald&#x27;s bier outside the timber gate at night</image:title>
     <image:caption>A visual interpretation of the miracle at Bardney Abbey</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/barghest</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/barghest</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/barghest-hero.jpg</image:loc>
     <image:title>A large black hound standing beside an old Yorkshire churchyard</image:title>
@@ -335,7 +335,7 @@
     <image:title>Six tall standing stones receding across a County Cork hillside in early morning light</image:title>
     <image:caption>A visual interpretation of Beenalaght and the six chieftains remembered there</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/behy-court-tomb</loc><lastmod>2026-05-30</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/behy-court-tomb</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/behy-court-tomb-hero.jpg</image:loc>
     <image:title>A court tomb on a windy Mayo hillside above the Atlantic with old field walls behind it</image:title>
@@ -779,7 +779,7 @@
     <image:title>Two lichen-covered megalithic tombs in wet County Sligo pasture beneath a clearing sky</image:title>
     <image:caption>A visual interpretation of Carricknagat&#x27;s Giant&#x27;s Grave and Dermot and Gráinne&#x27;s Bed</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/carrigagulla</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/carrigagulla</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/carrigagulla-hero.jpg</image:loc>
     <image:title>Lichen-covered megalithic stones at Carrigagulla in a misty County Cork upland pasture</image:title>
@@ -893,7 +893,7 @@
     <image:title>Chûn Quoit standing on open Cornish moorland beneath heavy Atlantic cloud with the sea in the distance</image:title>
     <image:caption>A visual interpretation of Chûn Quoit on the moors above west Cornwall</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/clodagh-standing-stones</loc><lastmod>2026-05-30</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/clodagh-standing-stones</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/clodagh-standing-stones-hero.jpg</image:loc>
     <image:title>Two standing stones in a misty County Cork pasture at sunrise</image:title>
@@ -929,7 +929,7 @@
     <image:title>A cinematic fae and spirit folklore image of Colt Pixies, shown as the central fairy, spirit, or otherworldly presence from New Forest, Hampshire, England</image:title>
     <image:caption>A visual interpretation of Colt Pixies</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/conn-eda-and-the-golden-apples-of-lough-erne</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/conn-eda-and-the-golden-apples-of-lough-erne</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/conn-eda-and-the-golden-apples-of-lough-erne-hero.jpg</image:loc>
     <image:title>Prince Conn-eda diving beneath Lough Erne toward three golden apples in an underwater palace glow</image:title>
@@ -965,7 +965,7 @@
     <image:title>A cinematic folklore image of Coventina, shown as the central divine figure from Northumberland</image:title>
     <image:caption>A visual interpretation of Coventina in Northumberland</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/craddock-moor-stone-circle</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/craddock-moor-stone-circle</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/craddock-moor-stone-circle-hero.jpg</image:loc>
     <image:title>A low stone circle on Craddock Moor among heather and granite tors under clearing storm light</image:title>
@@ -977,7 +977,7 @@
     <image:title>A traveller finding Arthur and his sleeping knights in the torchlit cave beneath Craig y Ddinas</image:title>
     <image:caption>A visual interpretation of the sleeping warriors beneath Craig y Ddinas</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/craigs-dolmen</loc><lastmod>2026-05-30</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/craigs-dolmen</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/craigs-dolmen-hero.jpg</image:loc>
     <image:title>A massive lichen-covered dolmen in County Antrim pasture at misty dawn</image:title>
@@ -1025,7 +1025,7 @@
     <image:title>The shaggy green Cu Sith crossing a wet Skye moor at dusk with its tail curled high above the heather</image:title>
     <image:caption>A visual interpretation of the Cu Sith on the moors of Skye</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/culver-hole-and-the-smugglers-of-port-eynon</loc><lastmod>2026-08-05</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/culver-hole-and-the-smugglers-of-port-eynon</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/culver-hole-and-the-smugglers-of-port-eynon-hero.jpg</image:loc>
     <image:title>A stone-walled sea cave holding barrels on the stormy Gower coast</image:title>
@@ -1193,7 +1193,7 @@
     <image:title>The horned wooden Dorset Ooser mask hanging in a rustic farm doorway above the Dorset hills</image:title>
     <image:caption>A visual interpretation of the Dorset Ooser of Melbury Osmond</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/downpatrick-and-the-three-saints</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/downpatrick-and-the-three-saints</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/downpatrick-and-the-three-saints-hero.jpg</image:loc>
     <image:title>St Patrick, St Brigid and St Columba beside a misty grave at Down Cathedral</image:title>
@@ -1373,7 +1373,7 @@
     <image:title>A cinematic historical image of Eustace the Monk, shown as the central pirate or smuggler figure from English Channel</image:title>
     <image:caption>A visual interpretation of Eustace the Monk and the maritime legend</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/fachan</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/fachan</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/fachan-hero.jpg</image:loc>
     <image:title>The one-eyed, one-legged Fachan crossing a rain-dark track in Glen Etive beneath heavy Highland cloud</image:title>
@@ -1427,7 +1427,7 @@
     <image:title>A cinematic fae and spirit folklore image of Fenodyree, shown as the central fairy, spirit, or otherworldly presence from Glen Rushen, Isle of Man</image:title>
     <image:caption>A visual interpretation of Fenodyree</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/feolagan-of-kebock-head</loc><lastmod>2026-08-05</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/feolagan-of-kebock-head</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/feolagan-of-kebock-head-hero.jpg</image:loc>
     <image:title>Sheep grazing on a windswept Lewis headland with a tiny cold glimmer on one fleece</image:title>
@@ -1649,7 +1649,7 @@
     <image:title>A lone walker on the misty summit of Ben Macdui with a vast grey figure suggested in the cloud behind him</image:title>
     <image:caption>A visual interpretation of the Grey Man on Ben Macdui in the Cairngorms</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/griffin</loc><lastmod>2026-08-10</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/griffin</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/griffin-hero.jpg</image:loc>
     <image:title>A lion-bodied, eagle-headed griffin with broad feathered wings guarding treasure in a high rocky nest</image:title>
@@ -1823,7 +1823,7 @@
     <image:title>A cinematic historical image of Henry Every, shown as the central pirate or smuggler figure from Newton Ferrers, Devon</image:title>
     <image:caption>A visual interpretation of Henry Every and the maritime legend</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/henry-morgan</loc><lastmod>2026-08-10</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/henry-morgan</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/henry-morgan-hero.jpg</image:loc>
     <image:title>Henry Morgan studying a sea chart with sailors in a storm-cleared seventeenth-century Caribbean harbour</image:title>
@@ -2159,7 +2159,7 @@
     <image:title>Lady Godiva riding modestly through a shuttered medieval Coventry street at dawn</image:title>
     <image:caption>A respectful visual interpretation of Lady Godiva&#x27;s ride through Coventry</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/lady-howard-of-okehampton</loc><lastmod>2026-08-10</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/lady-howard-of-okehampton</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/lady-howard-of-okehampton-hero.jpg</image:loc>
     <image:title>A cinematic ghost folklore image of Lady Howard of Okehampton, shown as the central apparition or haunting from Okehampton, Devon, England</image:title>
@@ -2207,7 +2207,7 @@
     <image:title>A cinematic fae and spirit folklore image of Latoon Fairy Bush, shown as the central fairy, spirit, or otherworldly presence from Ireland</image:title>
     <image:caption>A visual interpretation of Latoon Fairy Bush</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/le-roi-des-auxcriniers</loc><lastmod>2026-06-28</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/le-roi-des-auxcriniers</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/le-roi-des-auxcriniers-hero.jpg</image:loc>
     <image:title>A cinematic aquatic folklore image of Le Roi des Auxcriniers, shown as the central water spirit, lake beast, sea creature, or drowned-place legend from Guernsey, Channel Islands</image:title>
@@ -2225,7 +2225,7 @@
     <image:title>The Lia Fáil standing stone on the Hill of Tara above misty green earthworks</image:title>
     <image:caption>A visual interpretation of the Stone of Destiny at Tara</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/lig-na-paiste</loc><lastmod>2026-06-28</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/lig-na-paiste</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/lig-na-paiste-hero.jpg</image:loc>
     <image:title>The last serpent of Ireland churning beneath Lough Foyle behind an ancient iron cage</image:title>
@@ -2399,7 +2399,7 @@
     <image:title>A cinematic ghost folklore image of Loughareema, the Vanishing Lake, shown as the central apparition or haunting from County Antrim, Northern Ireland</image:title>
     <image:caption>A visual interpretation of Loughareema, the Vanishing Lake</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/lowri-and-sian-owen-the-witches-of-llanarmon</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/lowri-and-sian-owen-the-witches-of-llanarmon</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/lowri-and-sian-owen-the-witches-of-llanarmon-hero.jpg</image:loc>
     <image:title>Two cloaked women beside a stone Welsh cottage looking out toward a grey sea</image:title>
@@ -2501,7 +2501,7 @@
     <image:title>A cinematic folklore image of Manannán mac Lir, shown as the central divine figure from Isle of Man</image:title>
     <image:caption>A visual interpretation of Manannán mac Lir in Isle of Man</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/maoveen-the-banshee-of-shanes-castle</loc><lastmod>2026-06-16</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/maoveen-the-banshee-of-shanes-castle</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/maoveen-the-banshee-of-shanes-castle-hero-v2.jpg</image:loc>
     <image:title>A cinematic fae and spirit folklore image of Maoveen, the Banshee of Shane’s Castle, shown as the central fairy, spirit, or otherworldly presence from Randalstown, County Antrim, Northern Ireland</image:title>
@@ -2615,7 +2615,7 @@
     <image:title>A cinematic aquatic folklore image of Mermaid of Benbecula, shown as the central water spirit, lake beast, sea creature, or drowned-place legend from Benbecula, Outer Hebrides, Scotland</image:title>
     <image:caption>A visual interpretation of Mermaid of Benbecula</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/mermaid-of-mahee</loc><lastmod>2026-08-05</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/mermaid-of-mahee</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/mermaid-of-mahee-hero.jpg</image:loc>
     <image:title>A harp-bearing mermaid silhouette in misty water beside Mahee Island monastery ruins</image:title>
@@ -2651,7 +2651,7 @@
     <image:title>A large black phantom dog materialising in a torchlit stone passage of Peel Castle</image:title>
     <image:caption>A visual interpretation of the Moddey Dhoo inside Peel Castle</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/moel-ty-uchaf</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/moel-ty-uchaf</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/moel-ty-uchaf-hero.jpg</image:loc>
     <image:title>The Moel Tŷ Uchaf stone circle on a misty Welsh upland slope</image:title>

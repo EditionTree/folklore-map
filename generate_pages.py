@@ -1402,7 +1402,7 @@ FEATURED_PAGE = Template("""<!DOCTYPE html>
 <meta name="twitter:image:alt" content="$og_alt"/>
 <link rel="stylesheet" href="/fonts/fonts.css"/>
 <link rel="stylesheet" href="/assets/leaflet/leaflet.css"/>
-<link rel="stylesheet" href="/legend-page.css?v=20260721a"/>
+<link rel="stylesheet" href="/legend-page.css?v=20260812a"/>
 <script type="application/ld+json">$jsonld</script>
 $breadcrumb_jsonld
 </head>
@@ -1451,19 +1451,15 @@ $topnav
           </div>
         </section>
 
-        $featured_sightings
-
-        $historical_context
+        $featured_facts
 
         $featured_nearby
 
-        $featured_collections
+        $historical_context
 
-        <section class="side-card side-pad">
-          <p class="side-kicker">At a Glance</p>
-          <h2>About This Legend</h2>
-          <div class="facts">$facts</div>
-        </section>
+        $featured_sightings
+
+        $featured_collections
 
         $featured_sources
       </aside>
@@ -1681,6 +1677,14 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
     facts_html = "".join(
         f'<div class="fact"><span>{esc(title_case_text(label))}</span><strong>{esc(title_case_text(value))}</strong></div>'
         for label, value in fact_items.items()
+    )
+    # Paired with the map card as the sidebar's top row (see .sidebar's 2-column
+    # grid in legend-page.css) — always present, so it's a reliable partner for
+    # the map regardless of which optional cards a given entry has.
+    featured_facts = (
+        '<section class="side-card side-pad"><p class="side-kicker">At a Glance</p>'
+        '<h2>About This Legend</h2>'
+        f'<div class="facts">{facts_html}</div></section>'
     )
 
     # Recent Sightings — curated news coverage of modern reports for the small
@@ -1932,7 +1936,7 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
         lng=f"{lng:.6f}",
         initial=esc(name[:1]),
         coordinates=coordinates,
-        facts=facts_html,
+        featured_facts=featured_facts,
         featured_sources=featured_sources,
         featured_related=featured_related,
         ogimage=ogimage,

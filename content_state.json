@@ -1,7 +1,7 @@
 {
 "Abhartach": {
-"hash": "c4530278a884ef958885f625836300d8487e2322",
-"modified": "2026-06-14"
+"hash": "717f64f0b8b6e9fc448510bee6c9e2ee2c7aa67b",
+"modified": "2026-08-12"
 },
 "Afanc": {
 "hash": "824a5826f20ccfccf39496150da9e620e913d6b5",
@@ -100,11 +100,11 @@
 "modified": "2026-08-09"
 },
 "Baobhan Sith": {
-"hash": "7c5c39eb1e45f8745416ba0c799b13183b6d327a",
-"modified": "2026-08-09"
+"hash": "366cdf1eff8e0efd8abd54d1b09a1fa13a36cf6e",
+"modified": "2026-08-12"
 },
 "Barclodiad y Gawres": {
-"hash": "d96d1bc9e442d6412a48d525826e42742b3003e3",
+"hash": "26e9d1148a51f793432cd36b64cba0ac5520bb89",
 "modified": "2026-08-12"
 },
 "Bardney Abbey and the Light of Oswald": {
@@ -112,8 +112,8 @@
 "modified": "2026-06-08"
 },
 "Barghest": {
-"hash": "f3d02cbabadf3392f1e55c48a99c5a26467f6f3a",
-"modified": "2026-08-09"
+"hash": "e69e4243ee400ccdabc1c6c515d4e5840e00a1f2",
+"modified": "2026-08-12"
 },
 "Barns of Ayr": {
 "hash": "004f69c61413ac17beb00891ef1281d4f64b89af",
@@ -152,8 +152,8 @@
 "modified": "2026-08-09"
 },
 "Behy court tomb": {
-"hash": "c0bb1abade8affe8cf7480a7b5a9d517e905cfb7",
-"modified": "2026-05-30"
+"hash": "c7b7de61e38099432121ca893a51197b020dcfaa",
+"modified": "2026-08-12"
 },
 "Beinn a' Bheithir": {
 "hash": "44e37fb5611ad95907f72d757c975fc758467ebe",
@@ -448,8 +448,8 @@
 "modified": "2026-06-23"
 },
 "Carrigagulla": {
-"hash": "46de88a897f20004f397933dc3dda81be26721ad",
-"modified": "2026-08-09"
+"hash": "9a767384a1d671bf9755adba403c5d536f40f806",
+"modified": "2026-08-12"
 },
 "Carrigaphooca Stone Circle": {
 "hash": "3bc640ef7461fd1ab787a881d18d30c7414bff79",
@@ -524,8 +524,8 @@
 "modified": "2026-08-09"
 },
 "Clodagh Standing Stones": {
-"hash": "269960b04faac42164fe36fc653e265e56ada97b",
-"modified": "2026-05-30"
+"hash": "5c2fd0707429898b204bc73cce0590c94055cd9e",
+"modified": "2026-08-12"
 },
 "Cloghanmore": {
 "hash": "ac120c9ce3ad4189365f69518a555ff33132ccb8",
@@ -548,8 +548,8 @@
 "modified": "2026-08-09"
 },
 "Conn-eda and the Golden Apples of Lough Erne": {
-"hash": "499ea75757519f09338ca29f58eb1ebfc109d18d",
-"modified": "2026-08-09"
+"hash": "7821f34d33744fa2370cb1a977aa9938e189aab9",
+"modified": "2026-08-12"
 },
 "Coolcoulaghta Standing Stones": {
 "hash": "4ba6af555298029c1487e1c215698638736a6fb9",
@@ -572,16 +572,16 @@
 "modified": "2026-06-19"
 },
 "Craddock Moor stone circle": {
-"hash": "bc26bc70702b0e4b1de39f80df48921ed3f5f615",
-"modified": "2026-08-09"
+"hash": "f6709b8020811feaf724143b3e6d6516066a3a0e",
+"modified": "2026-08-12"
 },
 "Craig y Ddinas": {
 "hash": "21e9f221158e29f797fb9f3d92752b66946d72a2",
 "modified": "2026-08-09"
 },
 "Craigs Dolmen": {
-"hash": "8bcb3ef89f5c2a4e2aa6df3fc283ece8f68a3f20",
-"modified": "2026-05-30"
+"hash": "95ecfcce5ff65b4fa8dcb793909a35ab42f03369",
+"modified": "2026-08-12"
 },
 "Crazy Kate, the Witch of Swineshead": {
 "hash": "79d2003e34398ff595bc217b976e0dcf8669e7a1",
@@ -612,8 +612,8 @@
 "modified": "2026-08-09"
 },
 "Culver Hole and the Smugglers of Port Eynon": {
-"hash": "3ce1491e0ead2af5046ff22b674fd6197be96c96",
-"modified": "2026-08-05"
+"hash": "dea3ad55f6c1c414d5559d7ffbeb6fae3bdf6ab7",
+"modified": "2026-08-12"
 },
 "Cyhyraeth": {
 "hash": "ede1c0f06b5f4f8da0350af8a49c64da939b4f6a",
@@ -724,8 +724,8 @@
 "modified": "2026-08-09"
 },
 "Downpatrick and the Three Saints": {
-"hash": "6fd6437b524ec573220a4e6046797a1975659efe",
-"modified": "2026-08-09"
+"hash": "0c6d1569ecda36a5434cc9cef2939183f79bfd50",
+"modified": "2026-08-12"
 },
 "Dozmary Pool": {
 "hash": "973c2990ea5792ef3c0d54a5fcbbdef7f30c7e7b",
@@ -844,8 +844,8 @@
 "modified": "2026-08-09"
 },
 "Fachan": {
-"hash": "7896ae003956027d9fe7ba47671322f03833fd47",
-"modified": "2026-08-09"
+"hash": "8ccaeae98e190f8fc671df27b3c0c61ad6b4265d",
+"modified": "2026-08-12"
 },
 "Fad Felen": {
 "hash": "6d26cdf0556c1d6b1fdfdb36f987876d27b13f28",
@@ -880,8 +880,8 @@
 "modified": "2026-08-09"
 },
 "Feolagan of Kebock Head": {
-"hash": "0b67a47d0fb61ea60fd7c30be1b9e4335a440572",
-"modified": "2026-08-05"
+"hash": "4f02cfcf5a6e68b15855ce4aabc88c6f0b48e8a0",
+"modified": "2026-08-12"
 },
 "Fiddler Fynes of Kirkstead": {
 "hash": "a20071f3b0ff6f7b0585c5039f0301bbd7c486e4",
@@ -1028,8 +1028,8 @@
 "modified": "2026-08-10"
 },
 "Griffin": {
-"hash": "6dad587d296f930efb978fee39850697e4db26c9",
-"modified": "2026-08-10"
+"hash": "8cc934ea0f221004f31d12721b5fe6bb2157d0a5",
+"modified": "2026-08-12"
 },
 "Gruagach": {
 "hash": "a1a3649ff1811e54e1e03fafeaa4ac1fcdd9249c",
@@ -1144,8 +1144,8 @@
 "modified": "2026-06-19"
 },
 "Henry Morgan": {
-"hash": "2c015d4e82c307f62105c01133a0a74ff5831b0d",
-"modified": "2026-08-10"
+"hash": "2e832532028d19ac82dfa2d8b5aba56760d3a75c",
+"modified": "2026-08-12"
 },
 "Hereford Revenant": {
 "hash": "4c590c611c4971ba7e83fb984833b4221bdbb152",
@@ -1368,8 +1368,8 @@
 "modified": "2026-08-10"
 },
 "Lady Howard of Okehampton": {
-"hash": "c475c07d91f0f13862085a041b5f0e8c45f58e4b",
-"modified": "2026-08-10"
+"hash": "00572160f618d6d2875533bf1ae2ba028f75deb5",
+"modified": "2026-08-12"
 },
 "Lady Mary Killigrew": {
 "hash": "825588c567aa989a2083d03dd21293b78848fbcc",
@@ -1400,8 +1400,8 @@
 "modified": "2026-06-03"
 },
 "Le Roi des Auxcriniers": {
-"hash": "470b27dda6673e5e4a7c3bb002c97707d500081e",
-"modified": "2026-06-28"
+"hash": "06391b628e18e324a71e7356f9c691a55e716a02",
+"modified": "2026-08-12"
 },
 "Leprechaun": {
 "hash": "65937c02cd3c5b20ade429997aed06b4c6adbd46",
@@ -1412,8 +1412,8 @@
 "modified": "2026-08-10"
 },
 "Lig-na-Paiste": {
-"hash": "b28ccfbf370c50ecd925efd26606d107f53c0a02",
-"modified": "2026-06-28"
+"hash": "9c53369e694aa1f6105a1ddebf07dd388928c2e4",
+"modified": "2026-08-12"
 },
 "Lilias Adie": {
 "hash": "088bed55266f32633817e17598878bfcfd67f87a",
@@ -1528,8 +1528,8 @@
 "modified": "2026-06-17"
 },
 "Lowri and Siân Owen, the Witches of Llanarmon": {
-"hash": "d8a47b929c7dd5f03c2a51d11ea3152341afc792",
-"modified": "2026-08-09"
+"hash": "b8853115a5a921f281f67bac9b7228aa7f8010cf",
+"modified": "2026-08-12"
 },
 "Lugh": {
 "hash": "f2dfde7dd7d3b028c1faf09b6c51cdd15c8c8629",
@@ -1596,8 +1596,8 @@
 "modified": "2026-08-10"
 },
 "Maoveen, the Banshee of Shane’s Castle": {
-"hash": "09f4790a008296dc1b35976162e2f4b58e0221f9",
-"modified": "2026-06-16"
+"hash": "27d9c8fb0777f2e51e6367f25137a89746f0d5aa",
+"modified": "2026-08-12"
 },
 "Maponos": {
 "hash": "4c9238fc35eee0feded5be2d32a416c09de333b0",
@@ -1672,8 +1672,8 @@
 "modified": "2026-06-17"
 },
 "Mermaid of Mahee": {
-"hash": "f6b0755c12badf5d799db43f96fe2118c3d90f36",
-"modified": "2026-08-05"
+"hash": "732e57b3c8660ad5480b2bd94895e644403d7401",
+"modified": "2026-08-12"
 },
 "Mermaid of Marden": {
 "hash": "763518128a145f46ebf41de6e520b1c18b353320",
@@ -1696,8 +1696,8 @@
 "modified": "2026-06-16"
 },
 "Moel Tŷ Uchaf": {
-"hash": "bc05fea96e05f190bf516930f7aeae12b5a28c5d",
-"modified": "2026-06-03"
+"hash": "4c18a6640c53fd990da396f4978d22355027a944",
+"modified": "2026-08-12"
 },
 "Molly Downer": {
 "hash": "37036cf590d3a4d7bdadc08811d23aca4f6cad8c",
@@ -2316,7 +2316,7 @@
 "modified": "2026-08-12"
 },
 "The Black Nun of Bonamargy": {
-"hash": "f4fc61b81975a4e6726066677db2b638074a8bc9",
+"hash": "8da99d0717dd7cb078b477c313720c647dee004f",
 "modified": "2026-08-12"
 },
 "The Brag": {
@@ -2364,7 +2364,7 @@
 "modified": "2026-08-12"
 },
 "The Ghost of Hellens Manor": {
-"hash": "1940bd00ab69ab1b3a183a856aa32190f9f39af6",
+"hash": "ea44ea76ce09b42fe16d5d5d124a5223ea971473",
 "modified": "2026-08-12"
 },
 "The Ghosts of Doddington Hall": {
@@ -2504,7 +2504,7 @@
 "modified": "2026-06-13"
 },
 "The Wild Hunt": {
-"hash": "aabf79b8e40ab4af21be86d24a2146fe4dbb983a",
+"hash": "12895d0851e382d213a3e658a5739a26e7c9e7bd",
 "modified": "2026-08-12"
 },
 "The Witch of Ditchling Common": {

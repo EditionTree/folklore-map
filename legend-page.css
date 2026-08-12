@@ -260,8 +260,11 @@ h1{
   /* Cap the article column near its own max-width (720px + 22px left padding)
      so it can't over-expand and dump a big empty gap before the sidebar.
      Centring the whole grid keeps it balanced within the wide .shell rather
-     than jammed against the left edge. */
-  grid-template-columns:minmax(0,742px) 350px;
+     than jammed against the left edge. The sidebar column is wide enough to
+     hold two side-cards per row (see .sidebar below) — a single narrow
+     column of stacked cards ran far taller than the article text, making
+     the page read as mostly empty sidebar. */
+  grid-template-columns:minmax(0,742px) minmax(480px,600px);
   justify-content:center;
   gap:40px;
   align-items:start;
@@ -350,7 +353,7 @@ h1{
    even if the animation is interrupted or skipped. */
 @keyframes shareSheetUp{from{transform:translateY(14px);opacity:.4}to{transform:translateY(0);opacity:1}}
 @media(prefers-reduced-motion:reduce){.share-menu{animation:none}}
-.sidebar{display:grid;gap:18px;position:sticky;top:18px}
+.sidebar{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start;position:sticky;top:18px}
 .side-card{
   position:relative;
   overflow:hidden;
@@ -590,7 +593,11 @@ footer a:hover{color:#f2e8d5}
 .legend-pin span{transform:rotate(45deg)}
 .leaflet-control-attribution{font-size:8px!important;background:rgba(243,234,215,.78)!important}
 .leaflet-control-zoom a{color:var(--ink)!important;background:var(--paper)!important}
-@media(max-width:900px){
+/* The side-by-side layout needs room for a 742px article plus a 480-600px
+   two-column sidebar; below that, stack the sidebar under the article as its
+   own full-width row (where its 2-column card grid still applies) rather than
+   squeezing both into too little space. */
+@media(max-width:1220px){
   .content-grid{grid-template-columns:1fr;gap:37px}
   .article{max-width:none;padding:0 18px}
   .sidebar{position:static;grid-template-columns:1.15fr .85fr}

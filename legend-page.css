@@ -353,7 +353,13 @@ h1{
    even if the animation is interrupted or skipped. */
 @keyframes shareSheetUp{from{transform:translateY(14px);opacity:.4}to{transform:translateY(0);opacity:1}}
 @media(prefers-reduced-motion:reduce){.share-menu{animation:none}}
-.sidebar{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start;position:sticky;top:18px}
+/* Two independent columns, not a row-locked grid — a grid would size every
+   row to its tallest card, leaving a gap under a shorter card before the
+   next one in its own column. Each .sidebar-col is its own flex stack so a
+   card always sits flush under the one above it, regardless of how tall its
+   neighbour in the other column is. */
+.sidebar{display:flex;gap:18px;align-items:flex-start;position:sticky;top:18px}
+.sidebar-col{display:flex;flex-direction:column;gap:18px;flex:1;min-width:0}
 .side-card{
   position:relative;
   overflow:hidden;
@@ -600,7 +606,9 @@ footer a:hover{color:#f2e8d5}
 @media(max-width:1220px){
   .content-grid{grid-template-columns:1fr;gap:37px}
   .article{max-width:none;padding:0 18px}
-  .sidebar{position:static;grid-template-columns:1.15fr .85fr}
+  .sidebar{position:static}
+  .sidebar-col:first-child{flex:1.15}
+  .sidebar-col:last-child{flex:.85}
   .related-grid{grid-template-columns:1fr 1fr}
   .related-card:last-child{grid-column:span 2}
 }
@@ -628,7 +636,8 @@ footer a:hover{color:#f2e8d5}
   .article{padding:0 5px}
   .article p{font-size:17px}
   .pullquote{font-size:21px}
-  .sidebar{grid-template-columns:1fr}
+  .sidebar{flex-direction:column}
+  .sidebar-col:first-child,.sidebar-col:last-child{flex:1}
   .related-grid{grid-template-columns:1fr}
   .related-card:last-child{grid-column:auto}
   .section-head{align-items:start;flex-direction:column}

@@ -1402,7 +1402,7 @@ FEATURED_PAGE = Template("""<!DOCTYPE html>
 <meta name="twitter:image:alt" content="$og_alt"/>
 <link rel="stylesheet" href="/fonts/fonts.css"/>
 <link rel="stylesheet" href="/assets/leaflet/leaflet.css"/>
-<link rel="stylesheet" href="/legend-page.css?v=20260812a"/>
+<link rel="stylesheet" href="/legend-page.css?v=20260812b"/>
 <script type="application/ld+json">$jsonld</script>
 $breadcrumb_jsonld
 </head>
@@ -1438,30 +1438,8 @@ $topnav
       </article>
 
       <aside class="sidebar" aria-label="Legend details">
-        <section class="side-card">
-          <div class="side-pad">
-            <p class="side-kicker">Explore the Place</p>
-            <h2>$map_title</h2>
-            <p class="map-meta">$region</p>
-          </div>
-          <div id="miniMap" data-lat="$lat" data-lng="$lng" data-colour="$catcolour" data-initial="$initial" aria-label="Map showing the location associated with $name"></div>
-          <div class="map-footer">
-            <a href="$maplink">View Full Map &#8594;</a>
-            <span>$coordinates</span>
-          </div>
-        </section>
-
-        $featured_facts
-
-        $featured_nearby
-
-        $historical_context
-
-        $featured_sightings
-
-        $featured_collections
-
-        $featured_sources
+        <div class="sidebar-col">$sidebar_col1</div>
+        <div class="sidebar-col">$sidebar_col2</div>
       </aside>
     </div>
   </div>
@@ -1849,6 +1827,37 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
         f"{abs(lng):.3f} {'E' if lng >= 0 else 'W'}"
     )
     catcolour = meta.get(leg.get("category", ""), {}).get("colour", "#8b3a1a")
+
+    # Map card — always present, first in reading order. Built as a variable
+    # (rather than fixed markup in FEATURED_PAGE) so it can take part in the
+    # two-column split below like every other sidebar card.
+    featured_map = (
+        '<section class="side-card">'
+        '<div class="side-pad"><p class="side-kicker">Explore the Place</p>'
+        f'<h2>{esc(title_case_text(featured.get("map_title") or leg.get("region", "")))}</h2>'
+        f'<p class="map-meta">{esc(leg.get("region", ""))}</p></div>'
+        f'<div id="miniMap" data-lat="{lat:.6f}" data-lng="{lng:.6f}" data-colour="{esc(catcolour)}" '
+        f'data-initial="{esc(name[:1])}" aria-label="Map showing the location associated with {esc(name)}"></div>'
+        f'<div class="map-footer"><a href="{esc(maplink)}">View Full Map &#8594;</a>'
+        f'<span>{coordinates}</span></div></section>'
+    )
+
+    # Two independent column stacks, not a row-locked grid: a shorter card in
+    # column A must not leave a gap before the next column-A card just because
+    # column B's card in that "row" happened to be taller. Alternate the fixed
+    # reading-priority order into two lists instead — each renders as its own
+    # flex column (see .sidebar/.sidebar-col in legend-page.css), so every card
+    # sits flush under the one above it in its own column. Map+At a Glance and
+    # Nearby+Origins&Dating still land as the first two cards of each column
+    # (matching the requested pairing); any optional cards beyond that split
+    # evenly by simple alternation, which is as much "balancing" as static HTML
+    # can do without knowing real rendered heights.
+    sidebar_sections = [s for s in (
+        featured_map, featured_facts, featured_nearby, historical_context,
+        featured_sightings, featured_collections, featured_sources,
+    ) if s]
+    sidebar_col1 = "".join(sidebar_sections[0::2])
+    sidebar_col2 = "".join(sidebar_sections[1::2])
     if has_image:
         hero_url = f"{BASE}/{image_path.replace(os.sep, '/')}"
         hero_alt = esc(featured.get("alt", ""))
@@ -1926,18 +1935,9 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
         standfirst=esc(inline_text(leg.get("summary", ""))),
         featured_body=featured_body,
         editorial=editorial_html,
-        featured_sightings=featured_sightings,
-        historical_context=historical_context,
-        featured_nearby=featured_nearby,
-        featured_collections=featured_collections,
         maplink=esc(maplink),
-        map_title=esc(title_case_text(featured.get("map_title") or leg.get("region", ""))),
-        lat=f"{lat:.6f}",
-        lng=f"{lng:.6f}",
-        initial=esc(name[:1]),
-        coordinates=coordinates,
-        featured_facts=featured_facts,
-        featured_sources=featured_sources,
+        sidebar_col1=sidebar_col1,
+        sidebar_col2=sidebar_col2,
         featured_related=featured_related,
         ogimage=ogimage,
         og_w=og_w,

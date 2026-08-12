@@ -3461,7 +3461,12 @@
     <image:title>A green ash staff sprouting beside Stow Minster in golden dawn light</image:title>
     <image:caption>A visual interpretation of Stow Minster and the Staff of Etheldreda</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/stratford-lyon</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/stratford-lyon</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/stratford-lyon-hero.jpg</image:loc>
+    <image:title>An enormous red lion with stag antlers and tusks emerges from torn forest earth as Stratford pulls on its antlers</image:title>
+    <image:caption>A visual interpretation of Stratford hauling the antlered Lyon from the New Forest earth</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/stronsay-beast</loc><lastmod>2026-06-09</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/stronsay-beast-hero.jpg</image:loc>

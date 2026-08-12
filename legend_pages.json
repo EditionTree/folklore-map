@@ -9790,6 +9790,21 @@
       "image": "legend-images/shane-bernagh-hero.jpg",
       "alt": "Shane Bernagh watches a coach road from his rocky mountain chair while passing provisions to an elderly neighbour",
       "caption": "A visual interpretation of the County Tyrone outlaw Shane Bernagh"
+    },
+    "Stratford Lyon": {
+      "priority": 552,
+      "image": "legend-images/stratford-lyon-hero.jpg",
+      "alt": "An enormous red lion with stag antlers and tusks emerges from torn forest earth as Stratford pulls on its antlers",
+      "caption": "A visual interpretation of Stratford hauling the antlered Lyon from the New Forest earth",
+      "map_title": "Boldre and South Baddesley, New Forest",
+      "section_heading": "The red beast beneath the earth",
+      "pullquote": "A blood-red lion with stag's antlers, great tusks and saucer-like yellow eyes, sworn to defend the Stratford family.",
+      "facts": {
+        "Tradition": "New Forest folklore",
+        "Type": "Antlered guardian beast",
+        "Setting": "Boldre and South Baddesley",
+        "Motif": "Unearthed family protector"
+      }
     }
   }
 }

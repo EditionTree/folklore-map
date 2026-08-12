@@ -1,62 +1,22 @@
 {
   "generated": true,
   "total_legends": 711,
-  "flagged_count": 533,
+  "flagged_count": 506,
   "flagged": [
-    {
-      "name": "Abhartach",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 4,
-      "tiers": [
-        "secondary",
-        "secondary",
-        "secondary",
-        "popular"
-      ],
-      "urls": [
-        "https://www.mysteriousbritain.co.uk/ancient-sites/slaghtaverty-dolmen/",
-        "https://www.irishnews.com/arts/2015/10/28/news/northern-frights-at-halloween---the-vampire-of-co-derry-307407/",
-        "https://www.derryjournal.com/news/derry-halloween-abhartach-the-vampire-2195857",
-        "https://moonmausoleum.com/the-legend-of-irelands-vampire-king-abhartach-and-the-haunted-giants-grave/"
-      ]
-    },
     {
       "name": "Ben Varrey",
       "severity_rank": 2,
       "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 2,
+      "source_count": 3,
       "tiers": [
         "secondary",
-        "popular"
+        "popular",
+        "secondary"
       ],
       "urls": [
         "https://www.transceltic.com/manx/ben-varrey-manx-mermaid-and-story-of-mermaid-and-apple-tree",
-        "https://britishfairies.wordpress.com/tag/ben-varrey/"
-      ]
-    },
-    {
-      "name": "Black Vaughan of Hergest Court",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
-      "tiers": [
-        "secondary"
-      ],
-      "urls": [
-        "https://folklorethursday.com/halloween/herefordshire-folklore-legend-black-vaughan-ellen-terrible/"
-      ]
-    },
-    {
-      "name": "Brahan Seer",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
-      "tiers": [
-        "secondary"
-      ],
-      "urls": [
-        "https://www.historic-uk.com/HistoryUK/HistoryofScotland/The-Brahan-Seer-the-Scottish-Nostradamus/"
+        "https://britishfairies.wordpress.com/tag/ben-varrey/",
+        "https://www.isle-of-man.com/manxnotebook/fulltext/folklore/ch04.htm"
       ]
     },
     {
@@ -164,18 +124,6 @@
       ]
     },
     {
-      "name": "Fairy Flag of Dunvegan",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
-      "tiers": [
-        "secondary"
-      ],
-      "urls": [
-        "https://www.historic-uk.com/HistoryUK/HistoryofScotland/The-Fairy-Flag-of-the-MacLeods/"
-      ]
-    },
-    {
       "name": "Feolagan of Kebock Head",
       "severity_rank": 2,
       "reason": "only secondary/popular sources, no primary or heritage record",
@@ -187,18 +135,6 @@
       "urls": [
         "https://www.paranormaldatabase.com/islands/outedata.php",
         "https://what-when-how.com/celtic-mythology-and-folklore/fachan-athach-to-fergus-feargus-celtic-mythology-and-folklore/"
-      ]
-    },
-    {
-      "name": "Gelert",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
-      "tiers": [
-        "secondary"
-      ],
-      "urls": [
-        "https://www.historic-uk.com/HistoryUK/HistoryofWales/The-legend-of-brave-Gelert/"
       ]
     },
     {
@@ -216,39 +152,19 @@
       ]
     },
     {
-      "name": "Giant of the Wrekin",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
-      "tiers": [
-        "secondary"
-      ],
-      "urls": [
-        "https://www.mysteriousbritain.co.uk/folklore/the-origin-of-the-wrekin/"
-      ]
-    },
-    {
-      "name": "Gunby Hall Ghost Walk",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
-      "tiers": [
-        "secondary"
-      ],
-      "urls": [
-        "https://www.mysteriousbritain.co.uk/hauntings/gunby-hall/"
-      ]
-    },
-    {
       "name": "Hartlepool Monkey",
       "severity_rank": 2,
       "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
+      "source_count": 3,
       "tiers": [
-        "secondary"
+        "secondary",
+        "unclassified",
+        "unclassified"
       ],
       "urls": [
-        "https://www.historic-uk.com/HistoryUK/HistoryofEngland/The-Hanging-of-the-Hartlepool-Monkey/"
+        "https://www.historic-uk.com/HistoryUK/HistoryofEngland/The-Hanging-of-the-Hartlepool-Monkey/",
+        "https://www.scottishcorpus.ac.uk/document/?documentid=511",
+        "http://folksongandmusichall.com/index.php/who-hung-the-monkey/"
       ]
     },
     {
@@ -299,24 +215,16 @@
       "name": "Jinny the Witch (Joney Lowney)",
       "severity_rank": 2,
       "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
+      "source_count": 3,
       "tiers": [
-        "secondary"
+        "secondary",
+        "unclassified",
+        "unclassified"
       ],
       "urls": [
-        "https://www.transceltic.com/blog/isle-of-man-hop-tu-naa-who-was-jinny-witch"
-      ]
-    },
-    {
-      "name": "John Callis, Welsh Pirate",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
-      "tiers": [
-        "secondary"
-      ],
-      "urls": [
-        "https://www.historic-uk.com/HistoryUK/HistoryofWales/John-Callis-Callice-Welsh-Pirate/"
+        "https://www.transceltic.com/blog/isle-of-man-hop-tu-naa-who-was-jinny-witch",
+        "https://peelheritagetrust.net/jinny-the-witch-hampton-creer/",
+        "https://culturevannin.im/media/media%20-%20Customs%20and%20traditions/Hop%20tu%20Naa/Jinny%20the%20Witch%20history%20Hampton%20Creer.pdf"
       ]
     },
     {
@@ -336,22 +244,6 @@
       ]
     },
     {
-      "name": "King Bladud",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 3,
-      "tiers": [
-        "secondary",
-        "secondary",
-        "secondary"
-      ],
-      "urls": [
-        "https://www.historic-uk.com/HistoryMagazine/DestinationsUK/Bath-Prince-And-Pig/",
-        "https://www.buildinghistory.org/bath/medieval/bladud.shtml",
-        "https://www.visitbath.co.uk/blog/read/2018/09/the-remarkable-tale-of-king-bladud-and-his-pigs-b81"
-      ]
-    },
-    {
       "name": "Lady Howard of Okehampton",
       "severity_rank": 2,
       "reason": "only secondary/popular sources, no primary or heritage record",
@@ -363,18 +255,6 @@
       "urls": [
         "https://www.legendarydartmoor.co.uk/2016/03/25/lady_how/",
         "https://www.mysteriousbritain.co.uk/hauntings/lady-mary-howard-of-fitzford-house/"
-      ]
-    },
-    {
-      "name": "Llyn Morwynion",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
-      "tiers": [
-        "secondary"
-      ],
-      "urls": [
-        "https://www.mysteriousbritain.co.uk/legends/llyn-morwynion-lake-of-the-maidens/"
       ]
     },
     {
@@ -422,22 +302,6 @@
       ]
     },
     {
-      "name": "Malekin of Dagworth",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 3,
-      "tiers": [
-        "secondary",
-        "secondary",
-        "popular"
-      ],
-      "urls": [
-        "https://www.eadt.co.uk/news/21475143.weird-suffolk-malekin-dagworth/",
-        "https://folklorethursday.com/folktales/fairies-in-a-flat-landscape-the-fairylore-of-suffolk/",
-        "https://firespringsfolktales.wordpress.com/2013/06/22/malekin-the-poltergiest-of-dagworth-and-a-damned-roman-lord/"
-      ]
-    },
-    {
       "name": "Marool",
       "severity_rank": 2,
       "reason": "only secondary/popular sources, no primary or heritage record",
@@ -459,18 +323,6 @@
       ],
       "urls": [
         "https://turtlebunbury.com/document/wogan-browne-of-clongowes/"
-      ]
-    },
-    {
-      "name": "North Berwick Witch Trials",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
-      "tiers": [
-        "secondary"
-      ],
-      "urls": [
-        "https://www.historic-uk.com/HistoryUK/HistoryofScotland/North-Berwick-Witch-Trials/"
       ]
     },
     {
@@ -512,27 +364,17 @@
       ]
     },
     {
-      "name": "Pittenweem Witch Trials",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
-      "tiers": [
-        "secondary"
-      ],
-      "urls": [
-        "https://www.historic-uk.com/HistoryUK/HistoryofScotland/The-Pittenweem-Witch-Trials/"
-      ]
-    },
-    {
       "name": "Ruari Mòr MacNeil of Barra",
       "severity_rank": 2,
       "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
+      "source_count": 2,
       "tiers": [
-        "secondary"
+        "secondary",
+        "unclassified"
       ],
       "urls": [
-        "https://hiddenscotland.co/the-pirate-laird-of-kisimul-castle/"
+        "https://hiddenscotland.co/the-pirate-laird-of-kisimul-castle/",
+        "https://www.historicenvironment.scot/visit-a-place/places/kisimul-castle/history/"
       ]
     },
     {
@@ -545,34 +387,6 @@
       ],
       "urls": [
         "https://www.darkoxfordshire.co.uk/explore/foxes-and-witches-in-kirtlington/"
-      ]
-    },
-    {
-      "name": "Sawney Bean",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
-      "tiers": [
-        "secondary"
-      ],
-      "urls": [
-        "https://www.historic-uk.com/HistoryUK/HistoryofScotland/Sawney-Bean-Scotlands-most-famous-cannibal/"
-      ]
-    },
-    {
-      "name": "Saxa and Herman, the Rival Giants of Unst",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 3,
-      "tiers": [
-        "popular",
-        "secondary",
-        "popular"
-      ],
-      "urls": [
-        "https://shetlandwithlaurie.com/the-blog/shetland-folklore-series-a-land-of-giants",
-        "https://www.shetland.org/blog/shetland-folklore",
-        "https://kerrieanngardner.co.uk/landscape/giants-and-ghosts-on-hermaness/"
       ]
     },
     {
@@ -593,100 +407,32 @@
       "name": "Screaming House of St Aubin",
       "severity_rank": 2,
       "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 2,
+      "source_count": 3,
       "tiers": [
         "secondary",
-        "popular"
+        "popular",
+        "secondary"
       ],
       "urls": [
         "https://www.jersey.com/inspire-me/inspiration/jerseys-myths-and-legends/",
-        "https://arthurlamy.wordpress.com/2016/05/31/ghost-hill-st-aubin/"
-      ]
-    },
-    {
-      "name": "Skriker",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
-      "tiers": [
-        "popular"
-      ],
-      "urls": [
-        "https://britishfairies.wordpress.com/tag/skriker/"
-      ]
-    },
-    {
-      "name": "St Botolph and the Devil",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 2,
-      "tiers": [
-        "secondary",
-        "secondary"
-      ],
-      "urls": [
-        "https://lincolnshirefolktalesproject.com/2024/02/20/st-botolph-the-devil/",
-        "https://www.paranormaldatabase.com/lincolnshire/lincdata.php"
-      ]
-    },
-    {
-      "name": "St Catherine's Hill Mizmaze",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
-      "tiers": [
-        "popular"
-      ],
-      "urls": [
-        "https://www.worldwidewriter.co.uk/st-catherines-hill-winchester.html"
-      ]
-    },
-    {
-      "name": "St Dwynwen",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
-      "tiers": [
-        "secondary"
-      ],
-      "urls": [
-        "https://www.historic-uk.com/HistoryUK/HistoryofWales/St-Dwynwens-Day/"
-      ]
-    },
-    {
-      "name": "St Swithin's Day",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
-      "tiers": [
-        "secondary"
-      ],
-      "urls": [
-        "https://oldechronicles.org.uk/the-story-of-st-swithin/"
+        "https://arthurlamy.wordpress.com/2016/05/31/ghost-hill-st-aubin/",
+        "https://www.paranormaldatabase.com/channelislands/jersey.php"
       ]
     },
     {
       "name": "Tamsin Blight",
       "severity_rank": 2,
       "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
+      "source_count": 3,
       "tiers": [
-        "secondary"
+        "secondary",
+        "unclassified",
+        "unclassified"
       ],
       "urls": [
-        "https://www.cornwallforever.co.uk/people/tamsin-blight"
-      ]
-    },
-    {
-      "name": "Tehi Tegi",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
-      "tiers": [
-        "secondary"
-      ],
-      "urls": [
-        "https://asmanxasthehills.com/tehi-tegi-the-enchantress/"
+        "https://www.cornwallforever.co.uk/people/tamsin-blight",
+        "https://artuk.org/discover/artworks/thomasine-blight-17931856-the-white-witch-of-helston-14290",
+        "https://www.ebsco.com/research-starters/history/tamsin-blight"
       ]
     },
     {
@@ -704,127 +450,55 @@
       ]
     },
     {
-      "name": "The Anwick Dragon",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
-      "tiers": [
-        "secondary"
-      ],
-      "urls": [
-        "https://lincolnshirefolktalesproject.com/2024/02/09/the-drake-stone/"
-      ]
-    },
-    {
-      "name": "The Binbrook Bewitched Farm (1905)",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 2,
-      "tiers": [
-        "secondary",
-        "popular"
-      ],
-      "urls": [
-        "https://aboutalford.com/2022/10/30/witchcraft-in-the-wolds/",
-        "http://hauntedohiobooks.com/news/a-bewitched-farmhouse-at-binbrook/"
-      ]
-    },
-    {
-      "name": "The Black Nun of Bonamargy",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 3,
-      "tiers": [
-        "secondary",
-        "secondary",
-        "secondary"
-      ],
-      "urls": [
-        "https://antrimhistory.net/whats-that-black-nuns-grave-at-bonamargy-friary-ballycastle/",
-        "https://www.theblacknun.com/",
-        "https://www.findagrave.com/memorial/13696899/julia-mcquillan"
-      ]
-    },
-    {
       "name": "The Cooneen Ghost",
       "severity_rank": 2,
       "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 3,
+      "source_count": 5,
       "tiers": [
         "secondary",
         "secondary",
-        "popular"
+        "popular",
+        "unclassified",
+        "unclassified"
       ],
       "urls": [
         "https://www.belfastentries.com/stories/cooneen-ghost/",
         "https://www.fermanaghroots.com/wiki/index.php?title=Cooneen_Ghost",
-        "https://crypticinquiry.com/2023/07/05/the-cooneen-ghost/"
+        "https://crypticinquiry.com/2023/07/05/the-cooneen-ghost/",
+        "http://mccarra.co/cooneen-ghost/",
+        "https://fermanaghherald.com/2017/10/coonian-ghost-house/"
       ]
     },
     {
       "name": "The Curse of the Campbells of Jura",
       "severity_rank": 2,
       "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
+      "source_count": 3,
       "tiers": [
-        "secondary"
+        "secondary",
+        "unclassified",
+        "unclassified"
       ],
       "urls": [
-        "https://isleofjura.scot/jura-island-of-deer-or-the-cursed-isle/"
-      ]
-    },
-    {
-      "name": "The Dragon of Loschy Hill",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
-      "tiers": [
-        "secondary"
-      ],
-      "urls": [
-        "https://www.mysteriousbritain.co.uk/legends/all-saints-church-nunnington-and-the-dragon-of-loschy-wood/"
+        "https://isleofjura.scot/jura-island-of-deer-or-the-cursed-isle/",
+        "https://www.scotclans.com/blogs/bletherskite/prophecy-scottish-second-sight",
+        "https://thetyee.ca/Views/2004/01/22/Living_With_the_Curse_of_the_Campbells/"
       ]
     },
     {
       "name": "The Fenland Mandrake",
       "severity_rank": 2,
       "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 2,
-      "tiers": [
-        "secondary",
-        "secondary"
-      ],
-      "urls": [
-        "https://www.plant-lore.com/plantofthemonth/white-bryony-or-english-mandrake/",
-        "https://hauntedpalaceblog.com/2018/10/28/the-screaming-mandrake-power-potions-and-witchcraft/"
-      ]
-    },
-    {
-      "name": "The Ghost of Hellens Manor",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
       "source_count": 3,
       "tiers": [
         "secondary",
-        "popular",
-        "popular"
+        "secondary",
+        "unclassified"
       ],
       "urls": [
-        "https://www.haunted-britain.com/hellens.htm",
-        "https://tracymonger.wordpress.com/2013/02/23/hellens-manor-much-marcle-herefordshire/",
-        "https://www.catherinecavendish.com/2013/10/hellens-heart-history-and-hauntings.html"
-      ]
-    },
-    {
-      "name": "The Ghosts of Doddington Hall",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
-      "tiers": [
-        "secondary"
-      ],
-      "urls": [
-        "https://hauntedhistoryoflincolnshire.blogs.lincoln.ac.uk/surrounding-areas/doddington-hall/"
+        "https://www.plant-lore.com/plantofthemonth/white-bryony-or-english-mandrake/",
+        "https://hauntedpalaceblog.com/2018/10/28/the-screaming-mandrake-power-potions-and-witchcraft/",
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6509761/"
       ]
     },
     {
@@ -851,18 +525,6 @@
       "urls": [
         "https://www.anglesey-today.com/the-giant-snake-of-penhesgyn-an-old-anglesey-legend.html",
         "https://www.icysedgwick.com/anglesey-folklore/"
-      ]
-    },
-    {
-      "name": "The Giant of Carn Galver",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
-      "tiers": [
-        "secondary"
-      ],
-      "urls": [
-        "https://www.cornwalls.co.uk/myths-legends/carn_galva.htm"
       ]
     },
     {
@@ -894,89 +556,61 @@
       ]
     },
     {
-      "name": "The Henham Dragon",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
-      "tiers": [
-        "secondary"
-      ],
-      "urls": [
-        "https://www.henhamhistory.org/henham-dragon/"
-      ]
-    },
-    {
-      "name": "The Pirates' Ambush at Sark",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 2,
-      "tiers": [
-        "secondary",
-        "secondary"
-      ],
-      "urls": [
-        "http://guernseydonkey.com/?p=2821",
-        "https://www.sark.co.uk/history/monks-pirates-folklore"
-      ]
-    },
-    {
       "name": "The Pump Hill Smuggler",
       "severity_rank": 2,
       "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
+      "source_count": 3,
       "tiers": [
-        "secondary"
+        "secondary",
+        "unclassified",
+        "unclassified"
       ],
       "urls": [
-        "https://www.spookyisles.com/happisburgh-lighthouse-ghost/"
+        "https://www.spookyisles.com/happisburgh-lighthouse-ghost/",
+        "https://www.heritage.norfolk.gov.uk/record-details?MNF7092-Happisburgh-lighthouse-and-associated-buildings=",
+        "https://www.heritage.norfolk.gov.uk/record-details?MNF15435-Site-of-Happisburgh-Low-Lighthouse="
       ]
     },
     {
       "name": "The Wherwell Cockatrice",
       "severity_rank": 2,
       "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
+      "source_count": 2,
       "tiers": [
-        "secondary"
+        "secondary",
+        "unclassified"
       ],
       "urls": [
-        "https://www.mysteriousbritain.co.uk/cryptozoology/the-wherwell-cockatrice/"
-      ]
-    },
-    {
-      "name": "The Whitwick Giant",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
-      "tiers": [
-        "popular"
-      ],
-      "urls": [
-        "https://eastmidlandsfolklore.wordpress.com/2014/05/28/the-legend-of-holy-well-haw-loughborough-leicestershire/"
+        "https://www.mysteriousbritain.co.uk/cryptozoology/the-wherwell-cockatrice/",
+        "https://research.hgt.org.uk/item/wherwell-priory/"
       ]
     },
     {
       "name": "The Witch of East Somerton",
       "severity_rank": 2,
       "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
+      "source_count": 2,
       "tiers": [
-        "secondary"
+        "secondary",
+        "unclassified"
       ],
       "urls": [
-        "https://www.norfolkfolkloresociety.co.uk/post/the-witch-of-east-somerton"
+        "https://www.norfolkfolkloresociety.co.uk/post/the-witch-of-east-somerton",
+        "https://www.heritage.norfolk.gov.uk/record-details?MNF8573-Ruins-of-St-Mary%27s-Church-East-Somerton="
       ]
     },
     {
       "name": "The Witch of Knocknashee",
       "severity_rank": 2,
       "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
+      "source_count": 2,
       "tiers": [
-        "popular"
+        "popular",
+        "unclassified"
       ],
       "urls": [
-        "https://technotink.net/lore/knocknashee/"
+        "https://technotink.net/lore/knocknashee/",
+        "https://excavations.ie/report/2021/Sligo/0030914/"
       ]
     },
     {
@@ -997,160 +631,62 @@
       "name": "The Wizards of Cwrt y Cadno",
       "severity_rank": 2,
       "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
-      "tiers": [
-        "secondary"
-      ],
-      "urls": [
-        "https://historiamag.com/wizards-of-west-wales/"
-      ]
-    },
-    {
-      "name": "Towednack",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
       "source_count": 2,
       "tiers": [
         "secondary",
-        "secondary"
+        "unclassified"
       ],
       "urls": [
-        "https://www.cornwallforever.co.uk/year/towednack-cuckoo-feast",
-        "https://www.cornwalls.co.uk/myths-legends"
-      ]
-    },
-    {
-      "name": "Tyno Helig",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
-      "tiers": [
-        "secondary"
-      ],
-      "urls": [
-        "https://www.historic-uk.com/HistoryUK/HistoryofWales/Tyno-Helig-The-Welsh-Atlantis/"
+        "https://historiamag.com/wizards-of-west-wales/",
+        "https://biography.wales/article/s14-HARR-JOH-1839"
       ]
     },
     {
       "name": "Tyrell's Hound",
       "severity_rank": 2,
       "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
-      "tiers": [
-        "secondary"
-      ],
-      "urls": [
-        "https://www.historic-uk.com/CultureUK/New-Forest-Hauntings/"
-      ]
-    },
-    {
-      "name": "Tír na nÓg",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
       "source_count": 2,
       "tiers": [
         "secondary",
-        "secondary"
+        "unclassified"
       ],
       "urls": [
-        "https://www.irishcentral.com/roots/history/tir-na-nog-legend-eternal-youth",
-        "https://yourirish.com/folklore/legend-of-tir-na-nog"
-      ]
-    },
-    {
-      "name": "Urisk",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
-      "tiers": [
-        "secondary"
-      ],
-      "urls": [
-        "https://spookyscotland.net/urisk/"
-      ]
-    },
-    {
-      "name": "Wade and Bell",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
-      "tiers": [
-        "secondary"
-      ],
-      "urls": [
-        "https://www.mysteriousbritain.co.uk/legends/wade-and-his-wife/"
-      ]
-    },
-    {
-      "name": "White Lady of Tattershall Castle",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
-      "tiers": [
-        "secondary"
-      ],
-      "urls": [
-        "https://great-castles.com/tattershallghost.html"
+        "https://www.historic-uk.com/CultureUK/New-Forest-Hauntings/",
+        "https://new-forest-national-park.com/the-rufus-stone/"
       ]
     },
     {
       "name": "William Owen, the Smuggler General of Pembrokeshire",
       "severity_rank": 2,
       "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
+      "source_count": 4,
       "tiers": [
-        "secondary"
+        "secondary",
+        "unclassified",
+        "unclassified",
+        "unclassified"
       ],
       "urls": [
-        "http://sharonhoward.org/waleslaw/owentrial.html"
-      ]
-    },
-    {
-      "name": "Winchester Round Table",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
-      "tiers": [
-        "secondary"
-      ],
-      "urls": [
-        "https://www.medievalchronicles.com/medieval-knights/famous-medieval-knights/the-knights-of-the-round-table/winchester-round-table/"
-      ]
-    },
-    {
-      "name": "Windhouse",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
-      "tiers": [
-        "popular"
-      ],
-      "urls": [
-        "https://www.northlinkferries.co.uk/shetland-blog/the-haunting-history-of-windhouse/"
+        "http://sharonhoward.org/waleslaw/owentrial.html",
+        "https://discovery.nationalarchives.gov.uk/details/c/F29542",
+        "https://www.library.wales/discover-learn/digital-exhibitions/manuscripts/modern-period/smugglers-autobiography",
+        "http://www.earlymodernweb.org.uk/waleslaw/owentrial2.htm"
       ]
     },
     {
       "name": "Witch of Slieu Whallian",
       "severity_rank": 2,
       "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
+      "source_count": 3,
       "tiers": [
+        "secondary",
+        "secondary",
         "secondary"
       ],
       "urls": [
-        "https://asmanxasthehills.com/the-witch-of-slieu-whallian/"
-      ]
-    },
-    {
-      "name": "Witch's Stone of Westleton",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
-      "tiers": [
-        "secondary"
-      ],
-      "urls": [
-        "https://www.greatbritishlife.co.uk/magazines/suffolk/25327663.suffolk-legend-witchs-stone-westleton/"
+        "https://asmanxasthehills.com/the-witch-of-slieu-whallian/",
+        "https://www.isle-of-man.com/manxnotebook/fulltext/sm1911/p144.htm",
+        "https://isle-of-man.com/manxnotebook/fulltext/folklore/ch05.htm"
       ]
     },
     {
@@ -6503,6 +6039,230 @@
       ],
       "urls": [
         "https://en.wikipedia.org/wiki/%C3%89ta%C3%ADn"
+      ]
+    },
+    {
+      "name": "Brahan Seer",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 3,
+      "tiers": [
+        "secondary",
+        "primary",
+        "unclassified"
+      ],
+      "urls": [
+        "https://www.historic-uk.com/HistoryUK/HistoryofScotland/The-Brahan-Seer-the-Scottish-Nostradamus/",
+        "https://www.gutenberg.org/files/57840/57840-h/57840-h.htm",
+        "https://publicdomainreview.org/collection/brahan-seer/"
+      ]
+    },
+    {
+      "name": "Fairy Flag of Dunvegan",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 4,
+      "tiers": [
+        "secondary",
+        "primary",
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://www.historic-uk.com/HistoryUK/HistoryofScotland/The-Fairy-Flag-of-the-MacLeods/",
+        "https://archive.org/details/tourinscotlandvo01penn",
+        "https://journals.socantscot.org/index.php/psas/article/view/7270",
+        "https://www.dunvegancastle.com/castle/fairy-flag/"
+      ]
+    },
+    {
+      "name": "Sawney Bean",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 3,
+      "tiers": [
+        "secondary",
+        "unclassified",
+        "primary"
+      ],
+      "urls": [
+        "https://www.historic-uk.com/HistoryUK/HistoryofScotland/Sawney-Bean-Scotlands-most-famous-cannibal/",
+        "https://www.exclassics.com/newgate/ng9.htm",
+        "https://www.tandfonline.com/doi/abs/10.1080/0015587X.1997.9715936"
+      ]
+    },
+    {
+      "name": "St Catherine's Hill Mizmaze",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 4,
+      "tiers": [
+        "popular",
+        "unclassified",
+        "unclassified",
+        "encyclopedic"
+      ],
+      "urls": [
+        "https://www.worldwidewriter.co.uk/st-catherines-hill-winchester.html",
+        "https://research.hgt.org.uk/item/st-catherines-hill/",
+        "https://www.britishpilgrimage.org/places/st-catherines-hill-chapel-ruin-winchester",
+        "https://en.wikipedia.org/wiki/Mizmaze"
+      ]
+    },
+    {
+      "name": "St Swithin's Day",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 3,
+      "tiers": [
+        "secondary",
+        "unclassified",
+        "encyclopedic"
+      ],
+      "urls": [
+        "https://oldechronicles.org.uk/the-story-of-st-swithin/",
+        "https://englishcathedrals.co.uk/latest-news/st-swithins-day-whats-with-the-rain/",
+        "https://www.britannica.com/topic/St-Swithins-Day"
+      ]
+    },
+    {
+      "name": "The Binbrook Bewitched Farm (1905)",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 5,
+      "tiers": [
+        "secondary",
+        "popular",
+        "unclassified",
+        "heritage",
+        "unclassified"
+      ],
+      "urls": [
+        "https://aboutalford.com/2022/10/30/witchcraft-in-the-wolds/",
+        "http://hauntedohiobooks.com/news/a-bewitched-farmhouse-at-binbrook/",
+        "https://discovery.nationalarchives.gov.uk/details/r/C14128351",
+        "https://heritage-explorer.lincolnshire.gov.uk/Event/ELI5833",
+        "https://britishlistedbuildings.co.uk/101063129-barn-at-binbrook-walk-farm-binbrook"
+      ]
+    },
+    {
+      "name": "The Black Nun of Bonamargy",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 5,
+      "tiers": [
+        "secondary",
+        "secondary",
+        "secondary",
+        "unclassified",
+        "encyclopedic"
+      ],
+      "urls": [
+        "https://antrimhistory.net/whats-that-black-nuns-grave-at-bonamargy-friary-ballycastle/",
+        "https://www.theblacknun.com/",
+        "https://www.findagrave.com/memorial/13696899/julia-mcquillan",
+        "https://ulsterhistoricalfoundation.com/history-from-headstones/case-studies/bonamargy-friary",
+        "https://en.wikipedia.org/wiki/Bonamargy_Friary"
+      ]
+    },
+    {
+      "name": "The Ghost of Hellens Manor",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 5,
+      "tiers": [
+        "secondary",
+        "popular",
+        "popular",
+        "unclassified",
+        "encyclopedic"
+      ],
+      "urls": [
+        "https://www.haunted-britain.com/hellens.htm",
+        "https://tracymonger.wordpress.com/2013/02/23/hellens-manor-much-marcle-herefordshire/",
+        "https://www.catherinecavendish.com/2013/10/hellens-heart-history-and-hauntings.html",
+        "https://hellensmanor.com/house-and-garden/",
+        "https://en.wikipedia.org/wiki/Hellens"
+      ]
+    },
+    {
+      "name": "The Giant of Carn Galver",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 3,
+      "tiers": [
+        "secondary",
+        "primary",
+        "unclassified"
+      ],
+      "urls": [
+        "https://www.cornwalls.co.uk/myths-legends/carn_galva.htm",
+        "https://archive.org/details/popularromanceso00huntuoft",
+        "https://heritagerecords.nationaltrust.org.uk/HBSMR/MonRecord.aspx?uid=MNA104144"
+      ]
+    },
+    {
+      "name": "The Henham Dragon",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 3,
+      "tiers": [
+        "secondary",
+        "primary",
+        "unclassified"
+      ],
+      "urls": [
+        "https://www.henhamhistory.org/henham-dragon/",
+        "https://quod.lib.umich.edu/e/eebo2/A39848.0001.001?view=toc",
+        "https://blogs.bl.uk/living-knowledge/2016/08/on-the-trail-of-the-essex-serpent.html"
+      ]
+    },
+    {
+      "name": "Wade and Bell",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 3,
+      "tiers": [
+        "secondary",
+        "unclassified",
+        "encyclopedic"
+      ],
+      "urls": [
+        "https://www.mysteriousbritain.co.uk/legends/wade-and-his-wife/",
+        "https://www.english-heritage.org.uk/visit/places/wheeldale-roman-road/history/",
+        "https://en.wikipedia.org/wiki/Wade%27s_Causeway"
+      ]
+    },
+    {
+      "name": "Winchester Round Table",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 3,
+      "tiers": [
+        "secondary",
+        "encyclopedic",
+        "unclassified"
+      ],
+      "urls": [
+        "https://www.medievalchronicles.com/medieval-knights/famous-medieval-knights/the-knights-of-the-round-table/winchester-round-table/",
+        "https://en.wikipedia.org/wiki/Winchester_Round_Table",
+        "https://scholarworks.iu.edu/journals/index.php/tmr/article/download/15212/21330"
+      ]
+    },
+    {
+      "name": "Windhouse",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 3,
+      "tiers": [
+        "popular",
+        "heritage",
+        "unclassified"
+      ],
+      "urls": [
+        "https://www.northlinkferries.co.uk/shetland-blog/the-haunting-history-of-windhouse/",
+        "https://canmore.org.uk/site/178922/yell-windhouse",
+        "https://britishlistedbuildings.co.uk/200392187-windhouse-yell-yell"
       ]
     }
   ]

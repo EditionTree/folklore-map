@@ -105,6 +105,7 @@ button{font:inherit}
 .crumb .sep{color:#977d59}
 .hero{
   position:relative;
+  width:100%;
   aspect-ratio:16/9;
   min-height:570px;
   display:flex;

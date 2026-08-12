@@ -40,8 +40,8 @@
   <url><loc>https://folklorefinder.uk/legends/region/norfolk</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/county-sligo</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/county-antrim</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/shetland</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/hampshire</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/shetland</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/devon</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/argyll</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/london</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
@@ -50,12 +50,12 @@
   <url><loc>https://folklorefinder.uk/legends/region/powys</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/ceredigion</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/oxfordshire</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/warwickshire</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/essex</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/gloucestershire</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/county-mayo</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/herefordshire</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/lancashire</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/warwickshire</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/county-meath</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/denbighshire</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/dorset</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
@@ -82,7 +82,6 @@
   <url><loc>https://folklorefinder.uk/legends/collection/legends-of-the-sea</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/collection/legends-of-the-sea-2</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/collection/legends-of-the-sea-3</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/collection/legends-of-the-sea-4</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/collection/cursed-places</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/collection/cursed-places-2</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/collection/standing-stones</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority></url>
@@ -222,7 +221,7 @@
     <image:title>A translucent Asrai dissolving into silver water beside a fishing boat as dawn reaches an English lake</image:title>
     <image:caption>A visual interpretation of an Asrai melting away in the first sunlight</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/avalon</loc><lastmod>2026-08-05</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/avalon</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/avalon-hero.jpg</image:loc>
     <image:title>A small wooden boat carrying a wounded cloaked figure toward a misty island across the flooded Somerset Levels</image:title>
@@ -264,7 +263,7 @@
     <image:title>Three pale supernatural women in green gowns dancing near horses and an iron gate in the moonlit Highlands</image:title>
     <image:caption>A visual interpretation of the Baobhan Sith dancing in the Highland wilderness</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/barclodiad-y-gawres</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/barclodiad-y-gawres</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/barclodiad-y-gawres-hero.jpg</image:loc>
     <image:title>A giantess on the Anglesey coast dropping great stones from her apron to form a passage tomb</image:title>
@@ -294,7 +293,7 @@
     <image:title>The witch Ada gestures beside an overflowing cauldron as Baron Kitter&#x27;s hall burns above the stormy Calf Sound</image:title>
     <image:caption>A visual interpretation of the Manx legend of Ada and Baron Kitter</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/bartholomew-roberts</loc><lastmod>2026-06-19</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/bartholomew-roberts</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/bartholomew-roberts-hero.jpg</image:loc>
     <image:title>A cinematic historical image of Bartholomew Roberts, shown as the central pirate or smuggler figure from Little Newcastle, Pembrokeshire</image:title>
@@ -342,7 +341,7 @@
     <image:title>A court tomb on a windy Mayo hillside above the Atlantic with old field walls behind it</image:title>
     <image:caption>A visual interpretation of Behy court tomb above the north Mayo coast</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/beinn-a-bheithir</loc><lastmod>2026-06-19</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/beinn-a-bheithir</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/beinn-a-bheithir-hero.jpg</image:loc>
     <image:title>The dark Highland slopes of Beinn a&#x27; Bheithir rising above Loch Leven under storm light</image:title>
@@ -810,7 +809,7 @@
     <image:title>The moonlit ramparts of Castle an Dinas on Castle Downs with faint spectral soldiers inside</image:title>
     <image:caption>A visual interpretation of Castle Downs and Arthur&#x27;s ghostly soldiers</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/cat-sith</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/cat-sith</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/cat-sith-hero.jpg</image:loc>
     <image:title>An oversized black spectral cat with a white breast spot crouching on a Highland stone threshold</image:title>
@@ -1434,7 +1433,7 @@
     <image:title>Sheep grazing on a windswept Lewis headland with a tiny cold glimmer on one fleece</image:title>
     <image:caption>A visual interpretation of the Isle of Lewis legend</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/fiddler-fynes-of-kirkstead</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/fiddler-fynes-of-kirkstead</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/fiddler-fynes-of-kirkstead-hero.jpg</image:loc>
     <image:title>Fiddler Fynes studies a cracked mirror by candlelight while farmers watch and Kirkstead Abbey ruins show through the window</image:title>
@@ -1722,7 +1721,7 @@
     <image:title>A cinematic folklore image of Gwy, shown as the central divine figure from Welsh Marches</image:title>
     <image:caption>A visual interpretation of Gwy in Welsh Marches</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/gwydion-fab-don</loc><lastmod>2026-08-10</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/gwydion-fab-don</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/gwydion-fab-don-hero.jpg</image:loc>
     <image:title>Gwydion fab Don beneath an ancient oak as a wounded eagle and phantom warriors appear in mist</image:title>
@@ -1740,7 +1739,7 @@
     <image:title>A cinematic folklore image of Gwyn ap Nudd, shown as the central divine figure from Somerset / Wales</image:title>
     <image:caption>A visual interpretation of Gwyn ap Nudd in Somerset / Wales</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/habetrot</loc><lastmod>2026-08-10</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/habetrot</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/habetrot-hero.jpg</image:loc>
     <image:title>A cinematic fae and spirit folklore image of Habetrot, shown as the central fairy, spirit, or otherworldly presence from Selkirkshire, Scottish Borders, Scotland</image:title>
@@ -1758,13 +1757,13 @@
     <image:title>A huge dark-scaled Hagg Worm coiled in a rain-soaked wooded gully on the North Yorkshire Moors</image:title>
     <image:caption>A visual interpretation of the Hagg Worm in its moorland lair</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/haltadans-the-petrified-trows-of-fetlar</loc><lastmod>2026-08-05</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/haltadans-the-petrified-trows-of-fetlar</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/haltadans-the-petrified-trows-of-fetlar-hero.jpg</image:loc>
     <image:title>A Shetland stone circle on open moorland at cold dawn above the sea</image:title>
     <image:caption>A visual interpretation of the Shetland legend</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/hard-apple-blyth-the-smuggler-of-paglesham</loc><lastmod>2026-06-12</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/hard-apple-blyth-the-smuggler-of-paglesham</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/hard-apple-blyth-the-smuggler-of-paglesham-hero.jpg</image:loc>
     <image:title>A cinematic historical image of Hard Apple Blyth, the Smuggler of Paglesham, shown as the central pirate or smuggler figure from Paglesham, Essex, England</image:title>
@@ -1776,7 +1775,7 @@
     <image:title>A monkey in a miniature French naval uniform standing before Hartlepool fishermen on a wreck-strewn beach</image:title>
     <image:caption>A visual interpretation of the Hartlepool monkey legend on the County Durham coast</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/havelok-the-dane</loc><lastmod>2026-08-10</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/havelok-the-dane</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/havelok-the-dane-hero.jpg</image:loc>
     <image:title>Havelok sleeping in a fisherman&#x27;s house as a small golden flame rises from his mouth and Goldborough watches</image:title>
@@ -1890,7 +1889,7 @@
     <image:title>A cinematic ghost folklore image of Hundeprest of Melrose, shown as the central apparition or haunting from Melrose, Scottish Borders, Scotland</image:title>
     <image:caption>A visual interpretation of Hundeprest of Melrose</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/hy-brasil</loc><lastmod>2026-08-10</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/hy-brasil</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/hy-brasil-hero.jpg</image:loc>
     <image:title>A phantom island emerging from mist on the Atlantic horizon west of Ireland</image:title>
@@ -2310,7 +2309,7 @@
     <image:title>A cinematic aquatic folklore image of Llyn y Fan Fach, shown as the central water spirit, lake beast, sea creature, or drowned-place legend from Bannau Brycheiniog, Carmarthenshire</image:title>
     <image:caption>A visual interpretation of Llyn y Fan Fach</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/loch-frisa-water-horse</loc><lastmod>2026-08-10</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/loch-frisa-water-horse</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/loch-frisa-water-horse-hero.jpg</image:loc>
     <image:title>A cinematic aquatic folklore image of Loch Frisa Water Horse, shown as the central water spirit, lake beast, sea creature, or drowned-place legend from Isle of Mull, Argyll and Bute, Scotland</image:title>
@@ -2628,7 +2627,7 @@
     <image:title>A dark-haired river spirit in the water hauling a church bell toward the bank of the River Lugg at dusk</image:title>
     <image:caption>A visual interpretation of the Mermaid of Marden drawing the church bell back into the river</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/mersey-mermaid</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/mersey-mermaid</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/mersey-mermaid-hero.jpg</image:loc>
     <image:title>A dark-haired mermaid watching an approaching storm from tidal rocks in the Mersey estuary</image:title>
@@ -2730,7 +2729,7 @@
     <image:title>Glass cases of folk magic artefacts in a warm lamplit Cornish museum room</image:title>
     <image:caption>A visual interpretation of the Museum of Witchcraft and Magic at Boscastle</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/men-scryfa</loc><lastmod>2026-08-10</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/men-scryfa</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/men-scryfa-hero.jpg</image:loc>
     <image:title>The inscribed Mên Scryfa standing stone on a storm-lit Cornish moor</image:title>
@@ -2778,7 +2777,7 @@
     <image:title>Nicnevin riding across a moonlit Scottish moor with a shadowy Samhain host</image:title>
     <image:caption>A visual interpretation of Scotland&#x27;s witch-queen of Samhain</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/nine-maidens-stone-row</loc><lastmod>2026-06-19</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/nine-maidens-stone-row</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/nine-maidens-stone-row-hero.jpg</image:loc>
     <image:title>The Nine Maidens stone row stretching across a Cornish field at sunset</image:title>
@@ -2892,7 +2891,7 @@
     <image:title>Owain Glynd?r standing in a Welsh mountain pass as a vanished prince between history and legend</image:title>
     <image:caption>A visual interpretation of Owain Glynd?r as Wales&#x27;s sleeping hero</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/owain-lawgoch</loc><lastmod>2026-06-19</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/owain-lawgoch</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/owain-lawgoch-hero.jpg</image:loc>
     <image:title>Owain Lawgoch sleeping in a hidden Welsh cave with his sword across his knees</image:title>
@@ -3054,7 +3053,7 @@
     <image:title>Rathcoran passage tomb and hillfort earthworks on Baltinglass Hill at sunrise</image:title>
     <image:caption>A visual interpretation of Rathcoran on Baltinglass Hill</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/rathcroghan</loc><lastmod>2026-06-17</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/rathcroghan</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/rathcroghan-hero.jpg</image:loc>
     <image:title>The green mounds and ring earthworks of Rathcroghan glowing in Roscommon dawn mist</image:title>
@@ -3090,7 +3089,7 @@
     <image:title>A winged cockatrice perched on broken Renwick church stone with a rowan branch nearby</image:title>
     <image:caption>A visual interpretation of the cockatrice found beneath Renwick church</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/rheidol</loc><lastmod>2026-06-19</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/rheidol</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/rheidol-hero.jpg</image:loc>
     <image:title>A young woman personifying the Rheidol runs beside a mountain stream descending from Plynlimon toward Cardigan Bay</image:title>
@@ -3120,7 +3119,7 @@
     <image:title>A red-bearded Robert the Bruce seated in profile inside a sea cave, watching a spider rebuild its web</image:title>
     <image:caption>A visual interpretation of the spider inspiring Robert the Bruce</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/robin-goodfellow</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/robin-goodfellow</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/robin-goodfellow-hero.jpg</image:loc>
     <image:title>A cinematic fae and spirit folklore image of Robin Goodfellow, shown as the central fairy, spirit, or otherworldly presence from England</image:title>
@@ -3294,7 +3293,7 @@
     <image:title>Sir Galahad in mail kneeling before a simple luminous cup in a quiet medieval chapel</image:title>
     <image:caption>A visual interpretation of Galahad achieving the Holy Grail</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/sir-kay</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/sir-kay</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/sir-kay-hero.jpg</image:loc>
     <image:title>Sir Kay standing tall beside Arthurian campaign gear on a Gwynedd mountain road</image:title>
@@ -3414,7 +3413,7 @@
     <image:title>St Non&#x27;s Well on a storm-cleared Pembrokeshire clifftop with sunlight on the spring water</image:title>
     <image:caption>A visual interpretation of St Non&#x27;s Well</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/st-osyth-witches-and-ursula-kemp</loc><lastmod>2026-08-05</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/st-osyth-witches-and-ursula-kemp</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/st-osyth-witches-and-ursula-kemp-hero.jpg</image:loc>
     <image:title>A hooded woman being led through a muddy Essex village lane under heavy clouds</image:title>
@@ -3432,7 +3431,7 @@
     <image:title>The roofless stone walls of St Trinian&#x27;s Church beneath Greeba Mountain in storm light</image:title>
     <image:caption>A visual interpretation of St Trinian&#x27;s Church</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/stanton-drew-stone-circles</loc><lastmod>2026-06-16</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/stanton-drew-stone-circles</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/stanton-drew-stone-circles-hero.jpg</image:loc>
     <image:title>The stones of Stanton Drew curving through misty Somerset pasture at dawn</image:title>
@@ -3462,19 +3461,14 @@
     <image:title>A green ash staff sprouting beside Stow Minster in golden dawn light</image:title>
     <image:caption>A visual interpretation of Stow Minster and the Staff of Etheldreda</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/stratford-lion</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority>
-  <image:image>
-    <image:loc>https://folklorefinder.uk/legend-images/stratford-lion-hero.jpg</image:loc>
-    <image:title>A spectral lion with luminous eyes crossing a misty Warwickshire road at night</image:title>
-    <image:caption>A visual interpretation of the spectral lion of Stratford-upon-Avon</image:caption>
-  </image:image></url>
+  <url><loc>https://folklorefinder.uk/legends/stratford-lyon</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/stronsay-beast</loc><lastmod>2026-06-09</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/stronsay-beast-hero.jpg</image:loc>
     <image:title>Orkney islanders measure and sketch an enormous decayed sea-creature carcass on the rocky shore of Stronsay in 1808</image:title>
     <image:caption>A visual interpretation of the 1808 examination of the Stronsay Beast</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/sulis</loc><lastmod>2026-06-19</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/sulis</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/sulis-hero.jpg</image:loc>
     <image:title>A cinematic folklore image of Sulis, shown as the central divine figure from Bath, Somerset</image:title>
@@ -3594,19 +3588,13 @@
     <image:title>A white horse-like shapeshifter beside a Northumberland pond, caught between horse and calf forms</image:title>
     <image:caption>A visual interpretation of The Brag luring travellers by the water</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/the-buggane-of-st-trinian-s</loc><lastmod>2026-06-19</lastmod><priority>0.6</priority>
-  <image:image>
-    <image:loc>https://folklorefinder.uk/legend-images/the-buggane-of-st-trinian-s-hero.jpg</image:loc>
-    <image:title>A massive dark Manx beast tearing timbers from the roof of St Trinian&#x27;s church in a storm</image:title>
-    <image:caption>A visual interpretation of the Buggane tearing the roof from St Trinian&#x27;s</image:caption>
-  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/the-bute-witches</loc><lastmod>2026-06-10</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/the-bute-witches-hero.jpg</image:loc>
     <image:title>Four accused women in plain seventeenth-century dress standing under guard near Rothesay on the Isle of Bute</image:title>
     <image:caption>A visual interpretation of the Bute witch trials at Rothesay</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/the-cauld-lad-of-hylton</loc><lastmod>2026-06-19</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/the-cauld-lad-of-hylton</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/the-cauld-lad-of-hylton-hero.jpg</image:loc>
     <image:title>A cinematic ghost folklore image of The Cauld Lad of Hylton, shown as the central apparition or haunting from Sunderland</image:title>
@@ -3630,7 +3618,7 @@
     <image:title>An evicted Jura woman raising a hand as a cart leaves across the island moor</image:title>
     <image:caption>A visual interpretation of the Campbell curse of Jura</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/the-dagda</loc><lastmod>2026-08-05</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/the-dagda</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/the-dagda-hero.jpg</image:loc>
     <image:title>A huge weathered man beside an iron cauldron, old harp and wooden club near an earthen mound in County Meath</image:title>
@@ -3690,7 +3678,7 @@
     <image:title>A huge dark viper striking at its reflection in a brass pan beside a Welsh farmyard</image:title>
     <image:caption>A visual interpretation of the Anglesey legend</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/the-girt-dog-of-ennerdale</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/the-girt-dog-of-ennerdale</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/the-girt-dog-of-ennerdale-hero.jpg</image:loc>
     <image:title>A lean mysterious dog striding across cold Cumberland fells with sheep far in the distance</image:title>
@@ -3786,7 +3774,7 @@
     <image:title>A cinematic ghost folklore image of The Mistletoe Bough, shown as the central apparition or haunting from Minster Lovell, Oxfordshire</image:title>
     <image:caption>A visual interpretation of The Mistletoe Bough</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/the-morrigan</loc><lastmod>2026-08-05</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/the-morrigan</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/the-morrigan-hero.jpg</image:loc>
     <image:title>A dark-cloaked woman standing in a shallow Irish ford beneath storm clouds with a crow wheeling nearby</image:title>
@@ -3798,7 +3786,7 @@
     <image:title>Nine warrior-sorceresses overlooking a misty medieval fortress as a lone rider approaches</image:title>
     <image:caption>A visual interpretation of the Nine Witches of Gloucester from Peredur</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/the-piper-s-cave-of-arran</loc><lastmod>2026-06-28</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/the-piper-s-cave-of-arran</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/the-piper-s-cave-of-arran-hero.jpg</image:loc>
     <image:title>A cinematic fae and spirit folklore image of The Piper&#x27;s Cave of Arran, shown as the central fairy, spirit, or otherworldly presence from Isle of Arran, Argyll, Scotland</image:title>
@@ -3840,7 +3828,7 @@
     <image:title>A Donegal selkie woman carries her recovered dark seal skin toward the Atlantic as a fisherman watches from a stone croft</image:title>
     <image:caption>A visual interpretation of the selkie wife&#x27;s return to the sea</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/the-serpent-of-church-island</loc><lastmod>2026-08-05</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/the-serpent-of-church-island</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/the-serpent-of-church-island-hero.jpg</image:loc>
     <image:title>A dark serpent coiled around a mossy stone beside Lough Gill with hidden gold below</image:title>
@@ -3930,7 +3918,7 @@
     <image:title>A cinematic folklore image of Thunor, shown as the central divine figure from Anglo-Saxon England</image:title>
     <image:caption>A visual interpretation of Thunor in Anglo-Saxon England</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/tichborne-dole</loc><lastmod>2026-06-19</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/tichborne-dole</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/tichborne-dole-hero.jpg</image:loc>
     <image:title>Lady Mabella Tichborne marking the charity boundary by torchlight across wet Hampshire fields</image:title>
@@ -3948,17 +3936,11 @@
     <image:title>A Tipperary hilltop crowded with standing stones around a flat central stone at sunrise</image:title>
     <image:caption>A visual interpretation of the Timoney Stones</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/tintagel</loc><lastmod>2026-06-19</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/tintagel</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/tintagel-hero.jpg</image:loc>
     <image:title>Tintagel&#x27;s ruined castle rises above Merlin&#x27;s Cave as a lone cloaked figure stands at the low-tide entrance</image:title>
     <image:caption>A visual interpretation of Merlin&#x27;s Cave beneath the Tintagel headland</image:caption>
-  </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/tintagel-castle</loc><lastmod>2026-06-19</lastmod><priority>0.6</priority>
-  <image:image>
-    <image:loc>https://folklorefinder.uk/legend-images/tintagel-castle-hero.jpg</image:loc>
-    <image:title>The sea-cut ruins of Tintagel Castle rising above stormy Atlantic cliffs on the Cornish coast</image:title>
-    <image:caption>A visual interpretation of Tintagel Castle after an Atlantic storm</image:caption>
   </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/tom-hickathrift</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
@@ -4002,7 +3984,7 @@
     <image:title>The Twelve Apostles stone circle on West Yorkshire moorland at stormy sunset</image:title>
     <image:caption>A visual interpretation of Twelve Apostles, West Yorkshire</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/twm-sion-cati</loc><lastmod>2026-06-05</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/twm-sion-cati</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/twm-sion-cati-hero.jpg</image:loc>
     <image:title>Twm Siôn Cati emerging from his Dinas Hill cave while pursuers search the Welsh uplands below</image:title>
@@ -4170,7 +4152,7 @@
     <image:title>A hairy wild man tangled in fishing nets on the shingle shore below Orford Castle</image:title>
     <image:caption>A visual interpretation of the Wild Man of Orford on the Suffolk coast</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/will-o-the-wisp</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/will-o-the-wisp</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/will-o-the-wisp-hero.jpg</image:loc>
     <image:title>Cold blue-white lights hovering above flooded reeds as a lone traveller hesitates in the dark Cambridgeshire Fens</image:title>
@@ -4182,7 +4164,7 @@
     <image:title>Captain William Kidd standing on the rain-wet deck of a seventeenth-century privateer off the Scottish coast</image:title>
     <image:caption>A visual interpretation of Captain Kidd before piracy and privateering became inseparable in legend</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/william-owen-the-smuggler-general-of-pembrokeshire</loc><lastmod>2026-06-14</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/william-owen-the-smuggler-general-of-pembrokeshire</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/william-owen-the-smuggler-general-of-pembrokeshire-hero.jpg</image:loc>
     <image:title>A cinematic historical image of William Owen, the Smuggler General of Pembrokeshire, shown as the central pirate or smuggler figure from Nevern, Pembrokeshire, Wales</image:title>
@@ -4368,7 +4350,7 @@
     <image:title>A woman in simple early Irish dress standing on Knockainey at dusk while torchbearers climb the hill behind her</image:title>
     <image:caption>A visual interpretation of Áine and the midsummer rite at Knockainey</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/etain</loc><lastmod>2026-06-03</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/etain</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/etain-hero.jpg</image:loc>
     <image:title>A cinematic fae and spirit folklore image of Étaín, shown as the central fairy, spirit, or otherworldly presence from Brí Léith (Ardagh Hill), County Longford, Ireland</image:title>

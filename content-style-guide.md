@@ -31,20 +31,28 @@ Compare the site's own best openings, which never do this:
 "this story has lasted for centuries" framing, if used at all, comes later,
 earned by facts already given — never as the opening move.**
 
-## Cut the em dashes
+## Don't use em dashes
 
 Every AI drafting pass leans hard on em dashes to bolt a parenthetical onto a
-sentence instead of just writing two sentences, or a colon, or a comma. It's
-readable in small doses but the tell is the *frequency* — real prose varies its
-punctuation. A scan of the top 30 legend pages (2026-07-20) found nearly every
-one uses at least one em dash in its opening paragraph alone, several use 3–4.
+sentence instead of just writing two sentences, or a comma, or parentheses.
+It's readable in small doses but the tell is the *frequency* — real prose
+varies its punctuation, and this site's content should read as if a person
+wrote it, not as if it were assembled out of parenthetical asides.
 
-**Rule: at most one em dash per paragraph, and only when a comma or colon
-genuinely can't do the job. Prefer:**
+**Rule: don't use em dashes at all. Rewrite with commas or sentence breaks
+instead, as the sentence calls for. Prefer, in this order:**
 - A full stop, when the second half is really its own sentence.
-- A comma, for a short appositive (three words or fewer).
+- A comma, for a short appositive or aside.
+- Parentheses, when the aside is a genuine side-note that would otherwise
+  interrupt the sentence's flow.
 - A colon, only when the second half genuinely explains or lists what the
-  first half named — not as the default swap.
+  first half named — never as a general-purpose dash replacement.
+
+This is a hard rule, not a frequency cap. A single well-placed em dash is
+still the same tell as three; if a sentence seems to need one, that's a sign
+the sentence needs restructuring, not that this is the rare exception. The
+only place an em dash may survive untouched is inside a direct quotation,
+where altering the original text would misrepresent the source.
 
 **Don't just trade the dash tell for a colon tell.** A 2026-08-07 re-read of
 pages that had already been through a dash-cutting pass found the same

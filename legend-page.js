@@ -414,12 +414,16 @@
     if(status)status.textContent=message;
   }
 
+  // Writes the label span, not the button's textContent: these buttons also
+  // hold an inline Lucide icon, and a textContent write would delete it.
+  // Falls back to the button itself for any markup without the span.
   function flashButton(button,idleText,activeText){
     if(!button)return;
-    button.textContent=activeText;
+    var label=button.querySelector('.btn-label')||button;
+    label.textContent=activeText;
     clearTimeout(resetTimer);
     resetTimer=setTimeout(function(){
-      button.textContent=idleText;
+      label.textContent=idleText;
     },1800);
   }
 

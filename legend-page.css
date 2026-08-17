@@ -55,8 +55,17 @@ button{font:inherit}
 }
 .topnav a:hover{color:#f3ead7;background:rgba(196,98,42,.18)}
 .topnav a.active{color:#c4622a}
+/* Lucide icon + label per link (lucide.dev, ISC). Scoped to .topnav-links so
+   it can't catch the brand lockup, which is also a .topnav a. */
+.topnav-links a{display:inline-flex;align-items:center;gap:6px}
+.topnav-links a svg{flex:0 0 auto}
 .topnav-brand{position:absolute;left:clamp(14px,3vw,52px);top:50%;transform:translateY(-50%);
-  display:inline-flex;align-items:center;gap:11px;padding:0;text-decoration:none}
+  display:inline-flex;align-items:center;gap:11px;text-decoration:none}
+/* padding:0 has to outrank `.topnav a{padding:6px 14px}`, which is the more
+   specific selector -- as `.topnav-brand{padding:0}` it never applied, and the
+   lockup silently carried 28px it was never meant to have. That padding was
+   what pushed the iconned link row into the lockup at ~1200px. */
+.topnav a.topnav-brand{padding:0}
 .topnav a.topnav-brand:hover{background:transparent}
 .topnav-emblem{width:40px;height:40px;object-fit:contain;display:block;flex-shrink:0;
   transition:opacity .15s,transform .15s}
@@ -409,6 +418,10 @@ h1{
 }
 .button.secondary{background:transparent;color:var(--ink)}
 .button:hover{background:var(--rust-dark);border-color:var(--rust-dark);color:#fff}
+/* Lucide icon leading a button label (lucide.dev, ISC). The label is its own
+   span because legend-page.js swaps it for "Copied"/"Sharing" -- writing the
+   button's textContent instead would delete the icon. */
+.button svg{flex:0 0 auto;margin-right:8px}
 .share-status{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .share-wrap{position:relative;display:inline-flex}
 /* z-index must clear the Leaflet mini-map (panes 400, controls up to 1000) and

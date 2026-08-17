@@ -1669,6 +1669,11 @@ body.home-page {
 .topnav a:hover { color: #f2e8d5; background: rgba(196,98,42,0.18); }
 .topnav a.active { color: var(--accent-warm); }
 
+/* Lucide icon + label per link (lucide.dev, ISC). Scoped to .topnav-links so
+   it can't catch the brand lockup, which is also a .topnav a. */
+.topnav-links a { display: inline-flex; align-items: center; gap: 6px; }
+.topnav-links a svg { flex: 0 0 auto; }
+
 /* Brand lockup: emblem + "Folklore Finder" title, pinned to the left edge
    (out of flow) so the nav links stay centered across the full bar, exactly
    like the Home page. No hover highlight box on the brand itself. */
@@ -1680,9 +1685,13 @@ body.home-page {
   display: inline-flex;
   align-items: center;
   gap: 11px;
-  padding: 0;
   text-decoration: none;
 }
+/* padding:0 has to outrank `.topnav a{padding:6px 14px}`, which is the more
+   specific selector — as `.topnav-brand{padding:0}` it never applied, and the
+   lockup silently carried 28px it was never meant to have. That padding was
+   what pushed the iconned link row into the lockup at ~1200px. */
+.topnav a.topnav-brand { padding: 0; }
 .topnav a.topnav-brand:hover { background: transparent; }
 .topnav-emblem {
   width: 40px; height: 40px;

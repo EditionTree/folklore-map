@@ -406,8 +406,17 @@ TOPNAV_CSS = (
     "transition:background .15s,color .15s}"
     ".topnav a:hover{color:#f2e8d5;background:rgba(196,98,42,0.18)}"
     ".topnav a.active{color:#c4622a}"
+    # Lucide icon + label per link. Scoped to .topnav-links so it can't catch
+    # the brand lockup, which is also a .topnav a.
+    ".topnav-links a{display:inline-flex;align-items:center;gap:6px}"
+    ".topnav-links a svg{flex:0 0 auto}"
     ".topnav-brand{position:absolute;left:clamp(14px,3vw,52px);top:50%;transform:translateY(-50%);"
-    "display:inline-flex;align-items:center;gap:11px;padding:0;text-decoration:none}"
+    "display:inline-flex;align-items:center;gap:11px;text-decoration:none}"
+    # padding:0 has to outrank `.topnav a{padding:6px 14px}`, which is the more
+    # specific selector — as `.topnav-brand{padding:0}` it never applied, and
+    # the lockup silently carried 28px it was never meant to have. That padding
+    # was what pushed the iconned link row into the lockup at ~1200px.
+    ".topnav a.topnav-brand{padding:0}"
     ".topnav a.topnav-brand:hover{background:transparent}"
     ".topnav-emblem{width:40px;height:40px;object-fit:contain;display:block;flex-shrink:0;"
     "transition:opacity .15s,transform .15s}"
@@ -497,6 +506,7 @@ TOPNAV_CSS = (
 # lucide-static 1.31.0 — don't hand-tune them, re-copy from lucide.dev instead.
 LUCIDE_BODIES = {
     "search": '<circle cx="11" cy="11" r="8"/><path d="m21 21-4.34-4.34"/>',
+    "map": '<path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"/><path d="M15 5.764v15"/><path d="M9 3.236v15"/>',
     "map-pin": '<path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/>',
     "compass": '<circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"/>',
     "library": '<path d="m16 6 4 14"/><path d="M12 6v14"/><path d="M8 8v12"/><path d="M4 4v16"/>',
@@ -505,6 +515,13 @@ LUCIDE_BODIES = {
     "book-open": '<path d="M12 5v16"/><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z"/>',
     "eye": '<path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/>',
     "coffee": '<path d="M10 2v2"/><path d="M14 2v2"/><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"/><path d="M6 2v2"/>',
+    "house": '<path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>',
+    "list": '<path d="M3 5h.01"/><path d="M3 12h.01"/><path d="M3 19h.01"/><path d="M8 5h13"/><path d="M8 12h13"/><path d="M8 19h13"/>',
+    "layers": '<path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"/><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"/>',
+    "bookmark": '<path d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"/>',
+    "info": '<circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/>',
+    "link": '<path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>',
+    "share-2": '<circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/>',
 }
 
 
@@ -537,13 +554,16 @@ FOOTER_HTML = (
     '<a href="https://folklorefinder.uk/privacy">Privacy</a></footer>'
 )
 
+# key, label, path, Lucide icon. Distinct icons throughout: "map" doubles with
+# the homepage's Explore-the-map button because it is the same destination, but
+# nothing else reuses a glyph the legend sidebar already spends.
 TOPNAV_ITEMS = [
-    ("home", "Home", "/"),
-    ("map", "Map", "/map"),
-    ("browse", "Browse", "/" + OUT_DIR + "/"),
-    ("collections", "Collections", "/" + OUT_DIR + "/collections"),
-    ("archive", "My Archive", "/archive"),
-    ("about", "About", "/about"),
+    ("home", "Home", "/", "house"),
+    ("map", "Map", "/map", "map"),
+    ("browse", "Browse", "/" + OUT_DIR + "/", "list"),
+    ("collections", "Collections", "/" + OUT_DIR + "/collections", "layers"),
+    ("archive", "My Archive", "/archive", "bookmark"),
+    ("about", "About", "/about", "info"),
 ]
 
 
@@ -574,9 +594,12 @@ def topnav_html(active=""):
         f'<span class="topnav-title">Folklore Finder</span></a>'
     )
     parts.append('<div class="topnav-links">')
-    for key, label, path in TOPNAV_ITEMS:
+    for key, label, path, ic in TOPNAV_ITEMS:
         cls = ' class="active"' if key == active else ''
-        parts.append(f'<a href="{BASE}{path}"{cls}>{label}</a>')
+        parts.append(
+            f'<a href="{BASE}{path}"{cls}>{lucide(ic, 13)}'
+            f'<span>{label}</span></a>'
+        )
     parts.append('</div>')
     parts.append(NAV_SEARCH_HTML)
     parts.append('</nav>')
@@ -1623,7 +1646,7 @@ FEATURED_PAGE = Template("""<!DOCTYPE html>
 <meta name="twitter:image:alt" content="$og_alt"/>
 <link rel="stylesheet" href="/fonts/fonts.css"/>
 <link rel="stylesheet" href="/assets/leaflet/leaflet.css"/>
-<link rel="stylesheet" href="/legend-page.css?v=20260817e"/>
+<link rel="stylesheet" href="/legend-page.css?v=20260817f"/>
 <script type="application/ld+json">$jsonld</script>
 $breadcrumb_jsonld
 </head>
@@ -1651,9 +1674,9 @@ $topnav
         $featured_body
         $editorial
         <div class="article-actions" aria-label="Legend actions">
-          <a class="button" href="$maplink">Open on Full Map</a>
-          <button class="button secondary" id="copyLinkBtn" type="button">Copy link</button>
-          <button class="button secondary" id="webShareBtn" type="button" hidden>Share</button>
+          <a class="button" href="$maplink">$icon_map<span class="btn-label">Open on Full Map</span></a>
+          <button class="button secondary" id="copyLinkBtn" type="button">$icon_link<span class="btn-label">Copy link</span></button>
+          <button class="button secondary" id="webShareBtn" type="button" hidden>$icon_share<span class="btn-label">Share</span></button>
         </div>
         <span class="share-status" id="shareStatus" role="status" aria-live="polite"></span>
       </article>
@@ -1670,7 +1693,7 @@ $topnav
 $footer
 <script src="/assets/leaflet/leaflet.js"></script>
 <script src="/share-card.js"></script>
-<script src="$base/legend-page.js"></script>
+<script src="$base/legend-page.js?v=20260817a"></script>
 </body>
 </html>
 """)
@@ -2169,6 +2192,9 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
         featured_body=featured_body,
         editorial=editorial_html,
         maplink=esc(maplink),
+        icon_map=lucide("map", 13),
+        icon_link=lucide("link", 13),
+        icon_share=lucide("share-2", 13),
         sidebar_col1=sidebar_col1,
         sidebar_col2=sidebar_col2,
         featured_related=featured_related,

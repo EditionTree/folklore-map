@@ -18,7 +18,7 @@
 <meta property="og:image" content="https://folklorefinder.uk/og/preview-folklore-finder.jpg"/>
 <meta property="og:site_name" content="Folklore Finder"/>
 <link rel="stylesheet" href="/fonts/fonts.css"/>
-<link rel="stylesheet" href="folklorefinder.css?v=20260808b"/>
+<link rel="stylesheet" href="folklorefinder.css?v=20260817a"/>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{--parchment:#f6f1e6;--ink:#3f3023;--muted:#5a4632;--line:rgba(90,70,50,.24);--gold:#b09060;--rust:#c4622a;--dark:#1a0e06}
@@ -77,22 +77,26 @@ footer{position:relative;text-align:center;padding:12px 18px;font-size:12px;line
 <body class="achievements-page">
 <nav class="topnav">
   <a class="topnav-brand" href="./" aria-label="Folklore Finder home"><img class="topnav-emblem" src="green-man.png" alt="Green Man"/><span class="topnav-title">Folklore Finder</span></a>
-  <a href="./">Home</a>
-  <a href="map">Map</a>
-  <a href="legends/">Browse</a>
-  <a href="legends/collections">Collections</a>
-  <a href="archive">My Archive</a>
-  <a href="about">About</a>
+  <div class="topnav-links">
+    <a href="./">Home</a>
+    <a href="map">Map</a>
+    <a href="legends/">Browse</a>
+    <a href="legends/collections">Collections</a>
+    <a href="archive">My Archive</a>
+    <a href="about">About</a>
+  </div>
   <div class="nav-search" id="navSearch">
-    <button type="button" class="nav-search-toggle" id="navSearchToggle" aria-label="Search legends" aria-expanded="false" aria-controls="navSearchInput"><span aria-hidden="true">&#9906;</span></button>
-    <div class="nav-search-field">
-      <span class="nav-search-icon" aria-hidden="true">&#9906;</span>
-      <input type="text" id="navSearchInput" class="nav-search-input" placeholder="Search legends…" autocomplete="off" spellcheck="false" role="combobox" aria-expanded="false" aria-controls="navSearchResults" aria-autocomplete="list" aria-label="Search legends"/>
+    <button type="button" class="nav-search-toggle" id="navSearchToggle" aria-label="Search legends" aria-expanded="false" aria-controls="navSearchDrop"><span aria-hidden="true">&#9906;</span></button>
+    <div class="nav-search-drop" id="navSearchDrop">
+      <div class="nav-search-field">
+        <span class="nav-search-icon" aria-hidden="true">&#9906;</span>
+        <input type="text" id="navSearchInput" class="nav-search-input" placeholder="Search legends…" autocomplete="off" spellcheck="false" role="combobox" aria-expanded="false" aria-controls="navSearchResults" aria-autocomplete="list" aria-label="Search legends"/>
+      </div>
+      <div class="nav-search-results" id="navSearchResults" role="listbox" aria-label="Search results"></div>
     </div>
-    <div class="nav-search-results" id="navSearchResults" role="listbox" aria-label="Search results"></div>
   </div>
 </nav>
-<script src="/nav-search.js" defer></script>
+<script src="/nav-search.js?v=20260817b" defer></script>
 <main id="main-content" tabindex="-1" class="wrap">
   <section class="ach-hero">
     <div>

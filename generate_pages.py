@@ -416,44 +416,69 @@ TOPNAV_CSS = (
     "text-transform:none;letter-spacing:0.055em;color:#f2e8d5;white-space:nowrap;"
     "text-shadow:0 1px 3px rgba(0,0,0,0.55),0 0 14px rgba(196,98,42,0.22)}"
     "@media(max-width:1200px){.topnav-brand{display:none}}"
+    # Links get their own flex track so the search can pin right without
+    # joining them, and so the mobile scroll below moves the links alone.
+    ".topnav-links{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;"
+    "gap:4px;flex:1 1 auto;min-width:0}"
     # Mobile: one horizontally scrolling row instead of wrapped nav links.
     "@media(max-width:640px){.topnav{flex-wrap:nowrap;justify-content:flex-start;"
-    "overflow-x:auto;overflow-y:hidden;scrollbar-width:none;padding-left:12px;padding-right:12px}"
-    ".topnav::-webkit-scrollbar{display:none}"
+    "padding-left:12px;padding-right:12px}"
+    ".topnav-links{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;"
+    "overflow-y:hidden;scrollbar-width:none}"
+    ".topnav-links::-webkit-scrollbar{display:none}"
     ".topnav a{flex:0 0 auto;padding:9px 11px;font-size:11px;white-space:nowrap}}"
-    # Persistent nav search — compact inline field on desktop/tablet, an
-    # icon that expands into a fixed overlay bar on mobile (see the
-    # max-width:640px block below). Shared behaviour lives in nav-search.js.
-    ".nav-search{position:relative;display:flex;align-items:center;flex:0 0 auto}"
-    ".nav-search-toggle{display:none;background:none;border:none;color:rgba(242,232,213,.78);"
-    "font-size:15px;padding:8px 10px;cursor:pointer;border-radius:3px}"
-    ".nav-search-toggle:hover{color:#f2e8d5;background:rgba(196,98,42,0.18)}"
-    ".nav-search-field{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,0.08);"
-    "border:1px solid rgba(176,144,96,0.35);border-radius:14px;padding:5px 12px;width:168px;"
-    "transition:width .15s,background .15s,border-color .15s;margin-left:6px}"
-    ".nav-search-field:focus-within{width:224px;background:rgba(255,255,255,0.14);"
-    "border-color:rgba(196,98,42,0.6)}"
-    ".nav-search-icon{font-size:12px;color:rgba(242,232,213,.6);flex-shrink:0}"
-    ".nav-search-input{flex:1;min-width:0;background:none;border:none;outline:none;color:#f2e8d5;"
-    "font-family:'Spectral',serif;font-size:12.5px}"
-    ".nav-search-input::placeholder{color:rgba(242,232,213,.45)}"
-    ".nav-search-results{position:absolute;top:calc(100% + 8px);right:0;width:290px;max-height:360px;"
-    "overflow-y:auto;background:#241a10;border:1px solid rgba(176,144,96,.35);border-radius:4px;"
-    "box-shadow:0 10px 30px rgba(0,0,0,.4);display:none;z-index:20;text-align:left}"
+    # Persistent nav search — pinned right (mirroring .topnav-brand's
+    # absolute-left lockup) so the links stay centred in the full bar.
+    # Square edges, antique-gold rule and the gilded-piping stripe on the
+    # dropdown, matching the site's other editorial furniture. Below 1150px
+    # it collapses to an icon opening a panel under the bar. See nav-search.js.
+    # (1150px: links are centred in the full bar, so the room to their
+    # right shrinks by ~half of any viewport shrink.)
+    ".nav-search{position:absolute;right:clamp(14px,3vw,52px);top:50%;"
+    "transform:translateY(-50%);display:flex;align-items:center;width:220px}"
+    ".nav-search-toggle{display:none;align-items:center;justify-content:center;width:34px;"
+    "height:34px;padding:0;background:transparent;border:1px solid rgba(176,144,96,.4);"
+    "border-radius:0;color:rgba(242,232,213,.8);font-size:15px;line-height:1;cursor:pointer;"
+    "transition:border-color .15s,color .15s,background .15s}"
+    ".nav-search-toggle:hover,.nav-search-toggle:focus-visible{border-color:#c4622a;"
+    "background:rgba(196,98,42,.18);color:#f2e8d5;outline:none}"
+    ".nav-search-drop{position:relative;width:100%}"
+    ".nav-search-field{display:flex;align-items:center;gap:8px;width:100%;padding:7px 11px;"
+    "background:rgba(242,232,213,.07);border:1px solid rgba(176,144,96,.4);border-radius:0;"
+    "transition:background .15s,border-color .15s}"
+    ".nav-search-field:focus-within{background:rgba(242,232,213,.13);"
+    "border-color:#c4622a}"
+    ".nav-search-icon{flex:0 0 auto;color:#b09060;font-size:13px;line-height:1}"
+    ".nav-search-input{flex:1;min-width:0;background:none;border:0;outline:none;color:#f2e8d5;"
+    "font-family:'Spectral',serif;font-size:13px}"
+    ".nav-search-input::placeholder{color:rgba(242,232,213,.42);font-style:italic}"
+    ".nav-search-results{position:absolute;top:calc(100% + 9px);right:0;"
+    "width:min(330px,calc(100vw - 24px));max-height:370px;overflow-y:auto;display:none;"
+    "z-index:30;text-align:left;background:#241a10;border:1px solid rgba(176,144,96,.4);"
+    "border-radius:0;box-shadow:0 14px 34px rgba(0,0,0,.45)}"
+    ".nav-search-results::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;"
+    "background:linear-gradient(90deg,transparent 0%,#8b3a1a 15%,#b09060 50%,#8b3a1a 85%,transparent 100%)}"
     ".nav-search-results.open{display:block}"
-    ".nav-search-item{display:block;padding:9px 12px;cursor:pointer;"
-    "border-bottom:1px solid rgba(176,144,96,.15)}"
-    ".nav-search-item:last-child{border-bottom:none}"
-    ".nav-search-item:hover,.nav-search-item.active{background:rgba(196,98,42,.16)}"
-    ".nsi-name{display:block;font-family:'Marcellus',serif;font-size:13px;color:#f2e8d5}"
-    ".nsi-meta{display:block;font-size:11px;color:rgba(242,232,213,.55);margin-top:2px}"
-    ".nav-search-empty{padding:14px 12px;font-size:12px;color:rgba(242,232,213,.55);font-style:italic}"
-    "@media(max-width:640px){"
-    ".nav-search-toggle{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto}"
-    ".nav-search-field{display:none;position:fixed;left:12px;right:12px;top:64px;width:auto;"
-    "z-index:25;background:#241a10;border-color:rgba(176,144,96,.5);padding:9px 14px;margin-left:0}"
-    ".nav-search.open .nav-search-field{display:flex}"
-    ".nav-search-results{position:fixed;left:12px;right:12px;top:114px;width:auto}}"
+    ".nav-search-item{display:block;padding:10px 14px;cursor:pointer;"
+    "border-top:1px solid rgba(176,144,96,.16)}"
+    ".nav-search-item:first-child{border-top:0}"
+    ".nav-search-item:hover,.nav-search-item.active{background:rgba(196,98,42,.18)}"
+    ".nsi-name{display:block;font-family:'Marcellus',serif;font-size:13.5px;color:#f2e8d5}"
+    ".nsi-meta{display:block;margin-top:2px;font-family:'Spectral',serif;font-style:italic;"
+    "font-size:11.5px;color:rgba(242,232,213,.55)}"
+    ".nav-search-empty{padding:15px 14px;font-family:'Spectral',serif;font-style:italic;"
+    "font-size:12.5px;color:rgba(242,232,213,.55)}"
+    "@media(max-width:1149px){"
+    ".nav-search,.nav-search:focus-within{position:static;transform:none;flex:0 0 auto;"
+    "margin-left:14px;width:auto}"
+    ".nav-search-toggle{display:inline-flex}"
+    ".nav-search-drop{display:none;position:absolute;top:calc(100% + 10px);"
+    "right:clamp(12px,3vw,52px);width:min(330px,calc(100vw - 24px));z-index:30}"
+    ".nav-search.open .nav-search-drop{display:block}"
+    ".nav-search-field{padding:10px 13px}"
+    ".nav-search-field{background:#241a10;border-color:rgba(176,144,96,.5);"
+    "box-shadow:0 14px 34px rgba(0,0,0,.45)}"
+    ".nav-search-results{width:100%}}"
     "footer{position:relative;text-align:center;padding:12px 18px;font-size:12px;line-height:1.6;"
     "color:rgba(246,241,230,.78);background:#1a0e06;border-top:0}"
     "footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;"
@@ -485,8 +510,9 @@ TOPNAV_ITEMS = [
 NAV_SEARCH_HTML = (
     '<div class="nav-search" id="navSearch">'
     '<button type="button" class="nav-search-toggle" id="navSearchToggle" '
-    'aria-label="Search legends" aria-expanded="false" aria-controls="navSearchInput">'
+    'aria-label="Search legends" aria-expanded="false" aria-controls="navSearchDrop">'
     '<span aria-hidden="true">&#9906;</span></button>'
+    '<div class="nav-search-drop" id="navSearchDrop">'
     '<div class="nav-search-field">'
     '<span class="nav-search-icon" aria-hidden="true">&#9906;</span>'
     '<input type="text" id="navSearchInput" class="nav-search-input" placeholder="Search legends…" '
@@ -494,6 +520,7 @@ NAV_SEARCH_HTML = (
     'aria-controls="navSearchResults" aria-autocomplete="list" aria-label="Search legends"/>'
     '</div>'
     '<div class="nav-search-results" id="navSearchResults" role="listbox" aria-label="Search results"></div>'
+    '</div>'
     '</div>'
 )
 
@@ -505,12 +532,14 @@ def topnav_html(active=""):
         f'<img class="topnav-emblem" src="{BASE}/green-man.png" alt="Green Man"/>'
         f'<span class="topnav-title">Folklore Finder</span></a>'
     )
+    parts.append('<div class="topnav-links">')
     for key, label, path in TOPNAV_ITEMS:
         cls = ' class="active"' if key == active else ''
         parts.append(f'<a href="{BASE}{path}"{cls}>{label}</a>')
+    parts.append('</div>')
     parts.append(NAV_SEARCH_HTML)
     parts.append('</nav>')
-    parts.append('<script src="/nav-search.js" defer></script>')
+    parts.append('<script src="/nav-search.js?v=20260817b" defer></script>')
     return "".join(parts)
 
 
@@ -1453,7 +1482,7 @@ FEATURED_PAGE = Template("""<!DOCTYPE html>
 <meta name="twitter:image:alt" content="$og_alt"/>
 <link rel="stylesheet" href="/fonts/fonts.css"/>
 <link rel="stylesheet" href="/assets/leaflet/leaflet.css"/>
-<link rel="stylesheet" href="/legend-page.css?v=20260817a"/>
+<link rel="stylesheet" href="/legend-page.css?v=20260817b"/>
 <script type="application/ld+json">$jsonld</script>
 $breadcrumb_jsonld
 </head>

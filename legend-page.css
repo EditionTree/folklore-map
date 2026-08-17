@@ -66,9 +66,66 @@ button{font:inherit}
   text-shadow:0 1px 3px rgba(0,0,0,0.55),0 0 14px rgba(196,98,42,0.22)}
 @media(max-width:1200px){.topnav-brand{display:none}}
 @media(max-width:640px){
-  .topnav{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;padding-left:12px;padding-right:12px}
-  .topnav::-webkit-scrollbar{display:none}
+  .topnav{flex-wrap:nowrap;justify-content:flex-start;padding-left:12px;padding-right:12px}
+  .topnav-links{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;overflow-y:hidden;scrollbar-width:none}
+  .topnav-links::-webkit-scrollbar{display:none}
   .topnav a{flex:0 0 auto;padding:9px 11px;font-size:11px;white-space:nowrap}
+}
+
+/* The links live in their own flex track so the search can pin to the right
+   of the bar without joining them, and so the mobile horizontal scroll below
+   moves the links alone -- the search icon must stay put. */
+.topnav-links{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;
+  gap:4px;flex:1 1 auto;min-width:0}
+/* Persistent nav search. Pinned right (mirroring .topnav-brand's absolute-left
+   lockup) so the links stay centred in the full bar. Square edges, antique-gold
+   rule and the gilded-piping stripe on the dropdown, matching the site's other
+   editorial furniture. Below 1150px there isn't room for a field beside the
+   centred links, so it collapses to an icon opening a panel under the bar.
+   Behaviour lives in nav-search.js. */
+.nav-search{position:absolute;right:clamp(14px,3vw,52px);top:50%;
+  transform:translateY(-50%);display:flex;align-items:center;width:220px}
+.nav-search-toggle{display:none;align-items:center;justify-content:center;width:34px;
+  height:34px;padding:0;background:transparent;border:1px solid rgba(176,144,96,.4);
+  border-radius:0;color:rgba(242,232,213,.8);font-size:15px;line-height:1;cursor:pointer;
+  transition:border-color .15s,color .15s,background .15s}
+.nav-search-toggle:hover,.nav-search-toggle:focus-visible{border-color:#c4622a;
+  background:rgba(196,98,42,.18);color:#f2e8d5;outline:none}
+.nav-search-drop{position:relative;width:100%}
+.nav-search-field{display:flex;align-items:center;gap:8px;width:100%;padding:7px 11px;
+  background:rgba(242,232,213,.07);border:1px solid rgba(176,144,96,.4);border-radius:0;
+  transition:background .15s,border-color .15s}
+.nav-search-field:focus-within{background:rgba(242,232,213,.13);border-color:#c4622a}
+.nav-search-icon{flex:0 0 auto;color:#b09060;font-size:13px;line-height:1}
+.nav-search-input{flex:1;min-width:0;background:none;border:0;outline:none;color:#f2e8d5;
+  font-family:'Spectral',serif;font-size:13px}
+.nav-search-input::placeholder{color:rgba(242,232,213,.42);font-style:italic}
+.nav-search-results{position:absolute;top:calc(100% + 9px);right:0;
+  width:min(330px,calc(100vw - 24px));max-height:370px;overflow-y:auto;display:none;
+  z-index:30;text-align:left;background:#241a10;border:1px solid rgba(176,144,96,.4);
+  border-radius:0;box-shadow:0 14px 34px rgba(0,0,0,.45)}
+.nav-search-results::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,transparent 0%,#8b3a1a 15%,#b09060 50%,#8b3a1a 85%,transparent 100%)}
+.nav-search-results.open{display:block}
+.nav-search-item{display:block;padding:10px 14px;cursor:pointer;
+  border-top:1px solid rgba(176,144,96,.16)}
+.nav-search-item:first-child{border-top:0}
+.nav-search-item:hover,.nav-search-item.active{background:rgba(196,98,42,.18)}
+.nsi-name{display:block;font-family:'Marcellus',serif;font-size:13.5px;color:#f2e8d5}
+.nsi-meta{display:block;margin-top:2px;font-family:'Spectral',serif;font-style:italic;
+  font-size:11.5px;color:rgba(242,232,213,.55)}
+.nav-search-empty{padding:15px 14px;font-family:'Spectral',serif;font-style:italic;
+  font-size:12.5px;color:rgba(242,232,213,.55)}
+@media(max-width:1149px){
+  .nav-search,.nav-search:focus-within{position:static;transform:none;flex:0 0 auto;
+    margin-left:14px;width:auto}
+  .nav-search-toggle{display:inline-flex}
+  .nav-search-drop{display:none;position:absolute;top:calc(100% + 10px);
+    right:clamp(12px,3vw,52px);width:min(330px,calc(100vw - 24px));z-index:30}
+  .nav-search.open .nav-search-drop{display:block}
+  .nav-search-field{padding:10px 13px;background:#241a10;border-color:rgba(176,144,96,.5);
+    box-shadow:0 14px 34px rgba(0,0,0,.45)}
+  .nav-search-results{width:100%}
 }
 .brandbar{
   position:relative;
@@ -625,8 +682,9 @@ footer a:hover{color:#f2e8d5}
   .shell{width:min(100% - 24px,1440px)}
   .brand-name{font-size:14px}
   .brand-line{font-size:10px}
-  .topnav{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;overflow-y:hidden;scrollbar-width:none}
-  .topnav::-webkit-scrollbar{display:none}
+  .topnav{flex-wrap:nowrap;justify-content:flex-start}
+  .topnav-links{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;overflow-y:hidden;scrollbar-width:none}
+  .topnav-links::-webkit-scrollbar{display:none}
   .topnav a{flex:0 0 auto;padding:9px 11px;font-size:11px;white-space:nowrap}
   /* Stack the hero on mobile: full 16:9 image banner above the text, instead
      of overlaying the copy on a tall, heavily-cropped slice of the image. */

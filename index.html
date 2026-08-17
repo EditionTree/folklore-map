@@ -160,14 +160,12 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Spectral',seri
   border-color:var(--accent-warm);
   background:rgba(26,14,6,0.65);
 }
+/* Lucide "search" (lucide.dev, ISC), inlined as SVG. Unlike the ⚲ glyph it
+   replaced, it already points the right way — no scaleX(-1) flip needed. */
 .search-icon{
   color:var(--gold);
-  font-size:18px;
   margin-right:10px;
   flex-shrink:0;
-  line-height:1;
-  transform:scaleX(-1);
-  display:inline-block;
 }
 .search-input{
   flex:1;
@@ -246,6 +244,10 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Spectral',seri
 .btn-secondary{background:rgba(26,14,6,0.55);color:#f2e8d5;border:1px solid rgba(176,144,96,0.55)}
 .btn-secondary:hover{background:rgba(26,14,6,0.78);border-color:var(--gold);color:#fff}
 .btn-secondary:disabled{opacity:.6;cursor:default}
+/* Lucide line icons (lucide.dev, ISC) sitting inside a .btn. The buttons are
+   inline-block rather than flex, so the icon is aligned off the text baseline
+   instead of by the flexbox. */
+.btn svg{display:inline-block;vertical-align:-.22em;margin-right:8px}
 
 /* ── GUIDANCE CAROUSEL ──
    Manual-only (no autoplay) by design: the brand guide calls for a calm,
@@ -670,7 +672,7 @@ footer a{color:var(--ink-light)}
 .topnav a.active{color:var(--accent-warm)}
 @media(max-width:640px){.topnav{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;scrollbar-width:none}.topnav::-webkit-scrollbar{display:none}.topnav a{flex:0 0 auto;white-space:nowrap}}
 </style>
-<link rel="stylesheet" href="folklorefinder.css?v=20260817a"/>
+<link rel="stylesheet" href="folklorefinder.css?v=20260817b"/>
 </head>
 <body class="ff-paper home-page">
 <nav class="topnav">
@@ -683,10 +685,10 @@ footer a{color:var(--ink-light)}
     <a href="about">About</a>
   </div>
   <div class="nav-search" id="navSearch">
-    <button type="button" class="nav-search-toggle" id="navSearchToggle" aria-label="Search legends" aria-expanded="false" aria-controls="navSearchDrop"><span aria-hidden="true">&#9906;</span></button>
+    <button type="button" class="nav-search-toggle" id="navSearchToggle" aria-label="Search legends" aria-expanded="false" aria-controls="navSearchDrop"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.34-4.34"/></svg></button>
     <div class="nav-search-drop" id="navSearchDrop">
       <div class="nav-search-field">
-        <span class="nav-search-icon" aria-hidden="true">&#9906;</span>
+        <svg class="nav-search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.34-4.34"/></svg>
         <input type="text" id="navSearchInput" class="nav-search-input" placeholder="Search legends…" autocomplete="off" spellcheck="false" role="combobox" aria-expanded="false" aria-controls="navSearchResults" aria-autocomplete="list" aria-label="Search legends"/>
       </div>
       <div class="nav-search-results" id="navSearchResults" role="listbox" aria-label="Search results"></div>
@@ -710,7 +712,7 @@ footer a{color:var(--ink-light)}
 
   <div class="search-wrap">
     <div class="search-inner">
-      <span class="search-icon" aria-hidden="true">&#9906;</span>
+      <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.34-4.34"/></svg>
       <input class="search-input" id="heroSearch" type="text" placeholder="Search a legend, place, creature or theme…" autocomplete="off" spellcheck="false"
              role="combobox" aria-expanded="false" aria-controls="heroResults" aria-autocomplete="list" aria-label="Search legends"/>
     </div>
@@ -721,7 +723,7 @@ footer a{color:var(--ink-light)}
   <div class="hero-cta">
     <a class="btn btn-primary" href="./map" data-track="explore_map">Explore the map</a>
     <button class="btn btn-secondary" id="nearMeBtn" type="button" data-track="find_near_me">Find folklore near me</button>
-    <button class="btn btn-secondary" id="surpriseBtn" type="button" data-track="surprise_me">&#10022; Surprise me</button>
+    <button class="btn btn-secondary" id="surpriseBtn" type="button" data-track="surprise_me"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="12" height="12" x="2" y="10" rx="2" ry="2"/><path d="m17.92 14 3.5-3.5a2.24 2.24 0 0 0 0-3l-5-4.92a2.24 2.24 0 0 0-3 0L10 6"/><path d="M6 18h.01"/><path d="M10 14h.01"/><path d="M15 6h.01"/><path d="M18 9h.01"/></svg>Surprise me</button>
   </div>
   <p class="near-me-status" id="nearMeStatus" role="status" aria-live="polite" hidden></p>
     </div>

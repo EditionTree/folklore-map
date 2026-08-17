@@ -448,7 +448,7 @@ TOPNAV_CSS = (
     "transition:background .15s,border-color .15s}"
     ".nav-search-field:focus-within{background:rgba(242,232,213,.13);"
     "border-color:#c4622a}"
-    ".nav-search-icon{flex:0 0 auto;color:#b09060;font-size:13px;line-height:1}"
+    ".nav-search-icon{flex:0 0 auto;color:#b09060}"
     ".nav-search-input{flex:1;min-width:0;background:none;border:0;outline:none;color:#f2e8d5;"
     "font-family:'Spectral',serif;font-size:13px}"
     ".nav-search-input::placeholder{color:rgba(242,232,213,.42);font-style:italic}"
@@ -507,14 +507,25 @@ TOPNAV_ITEMS = [
 ]
 
 
+# Lucide's "search" icon (lucide.dev, ISC), inlined rather than linked: it
+# inherits currentColor from whatever it sits in and costs no extra request.
+# Size is carried on the element so the icon renders correctly with no CSS.
+LUCIDE_SEARCH = (
+    '<svg{cls} width="{size}" height="{size}" viewBox="0 0 24 24" fill="none" '
+    'stroke="currentColor" stroke-width="2" stroke-linecap="round" '
+    'stroke-linejoin="round" aria-hidden="true">'
+    '<circle cx="11" cy="11" r="8"/><path d="m21 21-4.34-4.34"/></svg>'
+)
+
 NAV_SEARCH_HTML = (
     '<div class="nav-search" id="navSearch">'
     '<button type="button" class="nav-search-toggle" id="navSearchToggle" '
     'aria-label="Search legends" aria-expanded="false" aria-controls="navSearchDrop">'
-    '<span aria-hidden="true">&#9906;</span></button>'
+    + LUCIDE_SEARCH.format(size=15, cls="") +
+    '</button>'
     '<div class="nav-search-drop" id="navSearchDrop">'
     '<div class="nav-search-field">'
-    '<span class="nav-search-icon" aria-hidden="true">&#9906;</span>'
+    + LUCIDE_SEARCH.format(size=14, cls=' class="nav-search-icon"') +
     '<input type="text" id="navSearchInput" class="nav-search-input" placeholder="Search legends…" '
     'autocomplete="off" spellcheck="false" role="combobox" aria-expanded="false" '
     'aria-controls="navSearchResults" aria-autocomplete="list" aria-label="Search legends"/>'
@@ -1030,6 +1041,92 @@ PUBLISHERS = {
     "historicengland.org.uk": "Historic England",
     "canmore.org.uk": "Canmore",
     "lincolnshirefolktalesproject.com": "Lincolnshire Folk Tales Project",
+    "archive.org": "Internet Archive",
+    "celt.ucc.ie": "CELT: Corpus of Electronic Texts",
+    "iso.ucc.ie": "Irish Sagas Online",
+    "sacred-texts.com": "Internet Sacred Text Archive",
+    "en.wikisource.org": "Wikisource",
+    "english-heritage.org.uk": "English Heritage",
+    "heritageireland.ie": "Heritage Ireland",
+    "library.wales": "National Library of Wales",
+    "witches.hca.ed.ac.uk": "Survey of Scottish Witchcraft",
+    "britannica.com": "Encyclopaedia Britannica",
+    "isle-of-man.com": "A Manx Notebook",
+    "undiscoveredscotland.co.uk": "Undiscovered Scotland",
+    "britishfairies.wordpress.com": "British Fairies",
+    "spookyisles.com": "Spooky Isles",
+    "icysedgwick.com": "Icy Sedgwick",
+    "coflein.gov.uk": "Coflein (RCAHMW)",
+    "historicenvironment.scot": "Historic Environment Scotland",
+    "cadw.gov.wales": "Cadw",
+    "cudl.lib.cam.ac.uk": "Cambridge Digital Library",
+    "isos.dias.ie": "Irish Script on Screen",
+    "quod.lib.umich.edu": "University of Michigan Digital Collections",
+    "libraryireland.com": "Library Ireland",
+    "british-history.ac.uk": "British History Online",
+    "babel.hathitrust.org": "HathiTrust",
+    "catalog.hathitrust.org": "HathiTrust",
+    "openlibrary.org": "Open Library",
+    "books.google.com": "Google Books",
+    "d.lib.rochester.edu": "University of Rochester (Robbins Library)",
+    "dib.ie": "Dictionary of Irish Biography",
+    "worldhistory.org": "World History Encyclopedia",
+    "encyclopedia.com": "Encyclopedia.com",
+    "cambridge.org": "Cambridge University Press",
+    "tandfonline.com": "Taylor & Francis",
+    "jstor.org": "JSTOR",
+    "historyireland.com": "History Ireland",
+    "academia.edu": "Academia.edu",
+    "codecs.vanhamel.nl": "CODECS (van Hamel Foundation)",
+    "manxnationalheritage.im": "Manx National Heritage",
+    "peoplescollection.wales": "People’s Collection Wales",
+    "heritagegateway.org.uk": "Heritage Gateway",
+    "ancientmonuments.uk": "Ancient Monuments",
+    "paranormaldatabase.com": "The Paranormal Database",
+    "voicesfromthedawn.com": "Voices from the Dawn",
+    "themodernantiquarian.com": "The Modern Antiquarian",
+    "thenorthernantiquarian.org": "The Northern Antiquarian",
+    "legendarydartmoor.co.uk": "Legendary Dartmoor",
+    "mythicalireland.com": "Mythical Ireland",
+    "electricscotland.com": "Electric Scotland",
+    "genuki.org.uk": "GENUKI",
+    "spookyscotland.net": "Spooky Scotland",
+    "scotlands-stories.com": "Scotland’s Stories",
+    "oldechronicles.org.uk": "Olde Chronicles",
+    "belfastentries.com": "Belfast Entries",
+    "faeryfolklorist.blogspot.com": "The Faery Folklorist",
+    "britainexpress.com": "Britain Express",
+    "lincolnshirelife.co.uk": "Lincolnshire Life",
+    "cornwalls.co.uk": "Cornwalls.co.uk",
+    "carrowkeel.com": "Carrowkeel",
+    "shetland.org": "Shetland.org",
+    "rte.ie": "RTÉ",
+    "orcadian.co.uk": "The Orcadian",
+    "tradfolk.co": "Tradfolk",
+    "historyhit.com": "HistoryHit",
+    "countrylife.co.uk": "Country Life",
+    # News outlets and periodicals. These read as sloppy when shown as a bare
+    # domain, and the mapping is unambiguous, so they are worth naming even
+    # though each is only cited a handful of times.
+    "irishnews.com": "The Irish News",
+    "derryjournal.com": "Derry Journal",
+    "irishexaminer.com": "Irish Examiner",
+    "scotsman.com": "The Scotsman",
+    "newsletter.co.uk": "The News Letter",
+    "westmeathindependent.ie": "Westmeath Independent",
+    "eadt.co.uk": "East Anglian Daily Times",
+    "grimsbytelegraph.co.uk": "Grimsby Telegraph",
+    "greatyarmouthmercury.co.uk": "Great Yarmouth Mercury",
+    "stratford-herald.com": "Stratford Herald",
+    "feeds.bbci.co.uk": "BBC News",
+    "bbc.co.uk": "BBC",
+    "history.co.uk": "HISTORY UK",
+    "moonmausoleum.com": "Moon Mausoleum",
+    "nation.cymru": "Nation.Cymru",
+    "irishheritagenews.ie": "Irish Heritage News",
+    "hyperallergic.com": "Hyperallergic",
+    "iflscience.com": "IFLScience",
+    "ancient-origins.net": "Ancient Origins",
 }
 
 
@@ -1053,6 +1150,11 @@ SOURCE_TIERS = {
     "calanais.org": "heritage",
     "wessexmuseums.org.uk": "heritage",
     "glencoemuseum.com": "heritage",
+    # Three national institutions the 2026-08-09 expansion pass missed. The
+    # other hosts cited alongside them are already classified further down.
+    "library.wales": "primary",
+    "english-heritage.org.uk": "heritage",
+    "heritageireland.ie": "heritage",
     "folklorethursday.com": "secondary",
     "transceltic.com": "secondary",
     "mysteriousbritain.co.uk": "secondary",
@@ -1419,6 +1521,15 @@ TIER_LABELS = {
 }
 
 
+TIER_CHIPS = {
+    "primary": "Primary",
+    "heritage": "Heritage",
+    "secondary": "Secondary",
+    "encyclopedic": "Encyclopedic",
+    "popular": "Popular",
+}
+
+
 def source_tier(url, explicit=None):
     """Reliability tier for a source, or None when not confidently known."""
     if explicit and explicit in TIER_LABELS:
@@ -1482,7 +1593,7 @@ FEATURED_PAGE = Template("""<!DOCTYPE html>
 <meta name="twitter:image:alt" content="$og_alt"/>
 <link rel="stylesheet" href="/fonts/fonts.css"/>
 <link rel="stylesheet" href="/assets/leaflet/leaflet.css"/>
-<link rel="stylesheet" href="/legend-page.css?v=20260817b"/>
+<link rel="stylesheet" href="/legend-page.css?v=20260817d"/>
 <script type="application/ld+json">$jsonld</script>
 $breadcrumb_jsonld
 </head>
@@ -1787,11 +1898,18 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
         featured_sightings = ""
 
     if srcs:
-        source_items = "".join(
-            f'<li><a href="{esc(s["url"])}" target="_blank" rel="noopener">'
-            f'{esc(s["publisher"])} &#8594;</a></li>'
-            for s in srcs
-        )
+        def source_item(s):
+            chip = (
+                f'<span class="src-tier" data-tier="{esc(s["tier"])}">'
+                f'{esc(TIER_CHIPS[s["tier"]])}</span>'
+            ) if s.get("tier") in TIER_CHIPS else ""
+            return (
+                f'<li><a href="{esc(s["url"])}" target="_blank" rel="noopener">'
+                f'<span class="src-name">{esc(s["publisher"])} &#8594;</span>'
+                f'{chip}</a></li>'
+            )
+
+        source_items = "".join(source_item(s) for s in srcs)
         # Small provenance line, not a headline stat — a previous pass tried
         # date_added more prominently and it "looked out of place" (see the
         # dropped JSON-LD-only comment above); tucking it under the source

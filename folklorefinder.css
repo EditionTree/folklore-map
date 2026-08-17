@@ -1802,7 +1802,9 @@ body.home-page {
   background: rgba(242,232,213,.13);
   border-color: var(--accent-warm);
 }
-.nav-search-icon { flex: 0 0 auto; color: var(--gold); font-size: 13px; line-height: 1; }
+/* Lucide "search" (lucide.dev, ISC), inlined as SVG — size comes from the
+   element's own width/height, colour from currentColor. */
+.nav-search-icon { flex: 0 0 auto; color: var(--gold); }
 .nav-search-input {
   flex: 1; min-width: 0;
   background: none; border: 0; outline: none;

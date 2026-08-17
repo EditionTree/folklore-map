@@ -154,6 +154,16 @@
   input.addEventListener("input", runQuery);
 
   input.addEventListener("keydown", function (e) {
+    // Escape is handled before the no-results bail-out below: it has to close
+    // an empty collapsed panel too, not just dismiss a populated dropdown.
+    if (e.key === "Escape") {
+      setExpanded(false);
+      if (isCollapsed()) {
+        closeCollapsed();
+        toggle.focus();
+      }
+      return;
+    }
     var items = results.querySelectorAll(".nav-search-item");
     if (!items.length) return;
     if (e.key === "ArrowDown") {
@@ -168,22 +178,25 @@
       e.preventDefault();
       var pick = activeIdx >= 0 ? currentMatches[activeIdx] : currentMatches[0];
       if (pick) goTo(pick.leg.name);
-    } else if (e.key === "Escape") {
-      setExpanded(false);
-      if (toggle) closeMobile();
     }
   });
 
   document.addEventListener("click", function (e) {
     if (!e.target.closest("#navSearch")) {
       setExpanded(false);
-      if (toggle) closeMobile();
+      closeCollapsed();
     }
   });
 
-  // Mobile: the toggle button reveals the field as a fixed overlay bar
-  // (see nav-search CSS) instead of an inline input in the scrolling nav row.
-  function closeMobile() {
+  // Below 1024px there isn't room for the field beside the centred nav links,
+  // so it collapses to the toggle button, which opens the field as a panel
+  // under the bar (see the max-width:1023px block in the nav-search CSS).
+  // The button is display:none above that width, so this open/close dance is
+  // inert on desktop — there, the field is simply always present.
+  function isCollapsed() {
+    return !!toggle && toggle.offsetParent !== null;
+  }
+  function closeCollapsed() {
     root.classList.remove("open");
     if (toggle) toggle.setAttribute("aria-expanded", "false");
   }

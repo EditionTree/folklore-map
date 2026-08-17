@@ -1707,92 +1707,178 @@ body.home-page {
 @media (max-width: 1200px) {
   .topnav-brand { display: none; }
 }
+/* The links live in their own flex track so the search box can pin to the
+   right of the bar without joining them, and so the mobile horizontal
+   scroll below applies to the links alone — the search icon must stay put
+   rather than scrolling off the edge with them. */
+.topnav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  flex: 1 1 auto;
+  min-width: 0;
+}
 /* Mobile: keep nav links on one horizontally scrolling row. */
 @media (max-width: 640px) {
   .topnav {
     flex-wrap: nowrap;
     justify-content: flex-start;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scrollbar-width: none;
     padding-left: 12px;
     padding-right: 12px;
   }
-  .topnav::-webkit-scrollbar { display: none; }
+  .topnav-links {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+  }
+  .topnav-links::-webkit-scrollbar { display: none; }
   .topnav a { flex: 0 0 auto; padding: 9px 11px; font-size: 11px; white-space: nowrap; }
 }
 
-/* Persistent nav search — compact inline field on desktop/tablet, an icon
-   that expands into a fixed overlay bar on mobile (see the max-width:640px
-   block below). Shared behaviour lives in nav-search.js. */
-.nav-search { position: relative; display: flex; align-items: center; flex: 0 0 auto; }
+/* Persistent nav search. Pinned to the right of the bar (mirroring
+   .topnav-brand's absolute-left lockup) so the links stay centred in the
+   full bar rather than being shoved off-centre. Square edges, antique-gold
+   rule and the gilded-piping stripe on the dropdown, to match the site's
+   other editorial furniture. Below 1150px there isn't room for a field
+   beside the centred links (the links are centred in the full bar, so the
+   space to their right shrinks by roughly half of any viewport shrink),
+   so it collapses to a single icon that opens the field as a panel under
+   the bar. Behaviour lives in nav-search.js. */
+.nav-search {
+  position: absolute;
+  right: clamp(14px, 3vw, 52px);
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  /* Width lives here rather than on the field: this element is absolutely
+     positioned, and an abspos flex container does not re-resolve its
+     shrink-to-fit width from a child's width. Fixed rather than widening
+     on focus -- the links are centred in the full bar, so a growing field
+     eats into their clearance, and the focus state is already carried by
+     the border and background. */
+  width: 220px;
+}
 .nav-search-toggle {
   display: none;
-  background: none; border: none;
-  color: rgba(242,232,213,.78);
-  font-size: 15px; padding: 8px 10px;
-  cursor: pointer; border-radius: 3px;
+  align-items: center;
+  justify-content: center;
+  width: 34px; height: 34px;
+  padding: 0;
+  background: transparent;
+  border: 1px solid rgba(176,144,96,.4);
+  border-radius: 0;
+  color: rgba(242,232,213,.8);
+  font-size: 15px;
+  line-height: 1;
+  cursor: pointer;
+  transition: border-color .15s, color .15s, background .15s;
 }
-.nav-search-toggle:hover { color: #f2e8d5; background: rgba(196,98,42,0.18); }
+.nav-search-toggle:hover, .nav-search-toggle:focus-visible {
+  border-color: var(--accent-warm);
+  background: rgba(196,98,42,.18);
+  color: #f2e8d5;
+  outline: none;
+}
+/* Anchors the results panel to the field itself, so the dropdown lands in
+   the right place in both the inline and the collapsed-panel layouts. */
+.nav-search-drop { position: relative; width: 100%; }
 .nav-search-field {
-  display: flex; align-items: center; gap: 6px;
-  background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(176,144,96,0.35);
-  border-radius: 14px;
-  padding: 5px 12px;
-  width: 168px;
-  margin-left: 6px;
-  transition: width .15s, background .15s, border-color .15s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 7px 11px;
+  background: rgba(242,232,213,.07);
+  border: 1px solid rgba(176,144,96,.4);
+  border-radius: 0;
+  transition: background .15s, border-color .15s;
 }
 .nav-search-field:focus-within {
-  width: 224px;
-  background: rgba(255,255,255,0.14);
-  border-color: rgba(196,98,42,0.6);
+  background: rgba(242,232,213,.13);
+  border-color: var(--accent-warm);
 }
-.nav-search-icon { font-size: 12px; color: rgba(242,232,213,.6); flex-shrink: 0; }
+.nav-search-icon { flex: 0 0 auto; color: var(--gold); font-size: 13px; line-height: 1; }
 .nav-search-input {
   flex: 1; min-width: 0;
-  background: none; border: none; outline: none;
+  background: none; border: 0; outline: none;
   color: #f2e8d5;
   font-family: 'Spectral', serif;
-  font-size: 12.5px;
+  font-size: 13px;
 }
-.nav-search-input::placeholder { color: rgba(242,232,213,.45); }
+.nav-search-input::placeholder { color: rgba(242,232,213,.42); font-style: italic; }
 .nav-search-results {
   position: absolute;
-  top: calc(100% + 8px); right: 0;
-  width: 290px; max-height: 360px;
+  top: calc(100% + 9px); right: 0;
+  width: min(330px, calc(100vw - 24px));
+  max-height: 370px;
   overflow-y: auto;
-  background: #241a10;
-  border: 1px solid rgba(176,144,96,.35);
-  border-radius: 4px;
-  box-shadow: 0 10px 30px rgba(0,0,0,.4);
   display: none;
-  z-index: 20;
+  z-index: 30;
   text-align: left;
+  background: #241a10;
+  border: 1px solid rgba(176,144,96,.4);
+  border-radius: 0;
+  box-shadow: 0 14px 34px rgba(0,0,0,.45);
+}
+/* Gilded piping — the same transparent/rust/gold/rust/transparent stripe as
+   .topnav::before and the footer rule, so the dropdown reads as part of the
+   same set of furniture rather than a generic autocomplete box. */
+.nav-search-results::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, transparent 0%, #8b3a1a 15%, var(--gold) 50%, #8b3a1a 85%, transparent 100%);
 }
 .nav-search-results.open { display: block; }
-.nav-search-item { display: block; padding: 9px 12px; cursor: pointer; border-bottom: 1px solid rgba(176,144,96,.15); }
-.nav-search-item:last-child { border-bottom: none; }
-.nav-search-item:hover, .nav-search-item.active { background: rgba(196,98,42,.16); }
-.nsi-name { display: block; font-family: 'Marcellus', serif; font-size: 13px; color: #f2e8d5; }
-.nsi-meta { display: block; font-size: 11px; color: rgba(242,232,213,.55); margin-top: 2px; }
-.nav-search-empty { padding: 14px 12px; font-size: 12px; color: rgba(242,232,213,.55); font-style: italic; }
-@media (max-width: 640px) {
-  .nav-search-toggle { display: inline-flex; align-items: center; justify-content: center; flex: 0 0 auto; }
-  .nav-search-field {
-    display: none;
-    position: fixed;
-    left: 12px; right: 12px; top: 64px;
-    width: auto;
-    z-index: 25;
-    background: #241a10;
-    border-color: rgba(176,144,96,.5);
-    padding: 9px 14px;
-    margin-left: 0;
+.nav-search-item {
+  display: block;
+  padding: 10px 14px;
+  cursor: pointer;
+  border-top: 1px solid rgba(176,144,96,.16);
+}
+.nav-search-item:first-child { border-top: 0; }
+.nav-search-item:hover, .nav-search-item.active { background: rgba(196,98,42,.18); }
+.nsi-name { display: block; font-family: 'Marcellus', serif; font-size: 13.5px; color: #f2e8d5; }
+.nsi-meta {
+  display: block;
+  margin-top: 2px;
+  font-family: 'Spectral', serif;
+  font-style: italic;
+  font-size: 11.5px;
+  color: rgba(242,232,213,.55);
+}
+.nav-search-empty {
+  padding: 15px 14px;
+  font-family: 'Spectral', serif;
+  font-style: italic;
+  font-size: 12.5px;
+  color: rgba(242,232,213,.55);
+}
+/* Collapsed: icon only, opening a panel anchored under the bar. The panel
+   hangs off .topnav (the nearest positioned ancestor once .nav-search goes
+   static), so it can't be clipped by the links' horizontal scroll. */
+@media (max-width: 1149px) {
+  .nav-search, .nav-search:focus-within {
+    position: static; transform: none; flex: 0 0 auto; margin-left: 14px; width: auto;
   }
-  .nav-search.open .nav-search-field { display: flex; }
-  .nav-search-results { position: fixed; left: 12px; right: 12px; top: 114px; width: auto; }
+  .nav-search-toggle { display: inline-flex; }
+  .nav-search-drop {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    right: clamp(12px, 3vw, 52px);
+    width: min(330px, calc(100vw - 24px));
+    z-index: 30;
+  }
+  .nav-search.open .nav-search-drop { display: block; }
+  .nav-search-field { padding: 10px 13px; }
+  .nav-search-field { background: #241a10; border-color: rgba(176,144,96,.5); box-shadow: 0 14px 34px rgba(0,0,0,.45); }
+  .nav-search-results { width: 100%; }
 }
 
 footer {

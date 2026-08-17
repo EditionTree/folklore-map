@@ -485,7 +485,46 @@ TOPNAV_CSS = (
     "background:linear-gradient(90deg,transparent 0%,rgba(176,144,96,.6) 20%,rgba(196,98,42,.8) 50%,rgba(176,144,96,.6) 80%,transparent 100%)}"
     "footer a{color:rgba(246,241,230,.9);text-decoration:none}"
     "footer a:hover{color:#f2e8d5}"
+    # Lucide icon inside a footer link (the Ko-fi cup) — aligned off the
+    # baseline, as the footer is inline text rather than a flex row.
+    "footer a svg{vertical-align:-.15em;margin-right:5px}"
 )
+
+# Lucide line icons (lucide.dev, ISC), inlined rather than linked: they inherit
+# currentColor from whatever they sit in and cost no extra request. Size is
+# carried on the element so an icon renders correctly with no CSS at all. The
+# bodies below are each icon's own geometry, copied unaltered from
+# lucide-static 1.31.0 — don't hand-tune them, re-copy from lucide.dev instead.
+LUCIDE_BODIES = {
+    "search": '<circle cx="11" cy="11" r="8"/><path d="m21 21-4.34-4.34"/>',
+    "map-pin": '<path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/>',
+    "compass": '<circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"/>',
+    "library": '<path d="m16 6 4 14"/><path d="M12 6v14"/><path d="M8 8v12"/><path d="M4 4v16"/>',
+    "scroll-text": '<path d="M15 12h-5"/><path d="M15 8h-5"/><path d="M19 17V5a2 2 0 0 0-2-2H4"/><path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3"/>',
+    "hourglass": '<path d="M5 22h14"/><path d="M5 2h14"/><path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22"/><path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2"/>',
+    "book-open": '<path d="M12 5v16"/><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z"/>',
+    "eye": '<path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/>',
+    "coffee": '<path d="M10 2v2"/><path d="M14 2v2"/><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"/><path d="M6 2v2"/>',
+}
+
+
+def lucide(name, size, cls=""):
+    """One inline Lucide icon. `cls` is an optional class attribute value."""
+    return (
+        '<svg%s width="%d" height="%d" viewBox="0 0 24 24" fill="none" '
+        'stroke="currentColor" stroke-width="2" stroke-linecap="round" '
+        'stroke-linejoin="round" aria-hidden="true">%s</svg>'
+        % (' class="%s"' % cls if cls else "", size, size, LUCIDE_BODIES[name])
+    )
+
+
+def side_head(kicker, heading, icon):
+    """A sidebar card's kicker + icon-led heading."""
+    return (
+        '<p class="side-kicker">%s</p>'
+        '<h2>%s%s</h2>' % (kicker, lucide(icon, 19, "side-icon"), heading)
+    )
+
 
 FOOTER_HTML = (
     '<footer>Folklore Finder &nbsp;&#183;&nbsp; '
@@ -493,7 +532,8 @@ FOOTER_HTML = (
     '&#169; EditionTree &nbsp;&#183;&nbsp; '
     '<a href="https://folklorefinder.uk/about">About</a> &nbsp;&#183;&nbsp; '
     '<a href="https://folklorefinder.uk/updates">Updates</a> &nbsp;&#183;&nbsp; '
-    '<a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener">Ko-fi</a> &nbsp;&#183;&nbsp; '
+    '<a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener">'
+    + lucide("coffee", 13) + 'Ko-fi</a> &nbsp;&#183;&nbsp; '
     '<a href="https://folklorefinder.uk/privacy">Privacy</a></footer>'
 )
 
@@ -507,25 +547,15 @@ TOPNAV_ITEMS = [
 ]
 
 
-# Lucide's "search" icon (lucide.dev, ISC), inlined rather than linked: it
-# inherits currentColor from whatever it sits in and costs no extra request.
-# Size is carried on the element so the icon renders correctly with no CSS.
-LUCIDE_SEARCH = (
-    '<svg{cls} width="{size}" height="{size}" viewBox="0 0 24 24" fill="none" '
-    'stroke="currentColor" stroke-width="2" stroke-linecap="round" '
-    'stroke-linejoin="round" aria-hidden="true">'
-    '<circle cx="11" cy="11" r="8"/><path d="m21 21-4.34-4.34"/></svg>'
-)
-
 NAV_SEARCH_HTML = (
     '<div class="nav-search" id="navSearch">'
     '<button type="button" class="nav-search-toggle" id="navSearchToggle" '
     'aria-label="Search legends" aria-expanded="false" aria-controls="navSearchDrop">'
-    + LUCIDE_SEARCH.format(size=15, cls="") +
+    + lucide("search", 15) +
     '</button>'
     '<div class="nav-search-drop" id="navSearchDrop">'
     '<div class="nav-search-field">'
-    + LUCIDE_SEARCH.format(size=14, cls=' class="nav-search-icon"') +
+    + lucide("search", 14, "nav-search-icon") +
     '<input type="text" id="navSearchInput" class="nav-search-input" placeholder="Search legends…" '
     'autocomplete="off" spellcheck="false" role="combobox" aria-expanded="false" '
     'aria-controls="navSearchResults" aria-autocomplete="list" aria-label="Search legends"/>'
@@ -1593,7 +1623,7 @@ FEATURED_PAGE = Template("""<!DOCTYPE html>
 <meta name="twitter:image:alt" content="$og_alt"/>
 <link rel="stylesheet" href="/fonts/fonts.css"/>
 <link rel="stylesheet" href="/assets/leaflet/leaflet.css"/>
-<link rel="stylesheet" href="/legend-page.css?v=20260817d"/>
+<link rel="stylesheet" href="/legend-page.css?v=20260817e"/>
 <script type="application/ld+json">$jsonld</script>
 $breadcrumb_jsonld
 </head>
@@ -1834,8 +1864,8 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
             for label, val in hist_items
         )
         historical_context = (
-            '<section class="side-card side-pad"><p class="side-kicker">Historical Context</p>'
-            '<h2>Origins &amp; Dating</h2>'
+            '<section class="side-card side-pad">'
+            + side_head("Historical Context", "Origins &amp; Dating", "hourglass") +
             f'<div class="facts facts-stacked">{hist_facts_html}</div>'
             '<p class="hist-caveat">Folklore dates are often approximate, especially '
             'where a story predates any surviving written source.</p></section>'
@@ -1855,8 +1885,8 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
     # grid in legend-page.css) — always present, so it's a reliable partner for
     # the map regardless of which optional cards a given entry has.
     featured_facts = (
-        '<section class="side-card side-pad"><p class="side-kicker">At a Glance</p>'
-        '<h2>About This Legend</h2>'
+        '<section class="side-card side-pad">'
+        + side_head("At a Glance", "About This Legend", "scroll-text") +
         f'<div class="facts">{facts_html}</div></section>'
     )
 
@@ -1889,8 +1919,8 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
                 f'<span class="sighting-source">{esc(s["source_name"])}</span>{flag}</li>'
             )
         featured_sightings = (
-            '<section class="side-card side-pad"><p class="side-kicker">Recent Sightings</p>'
-            '<h2>Reported in the Wild</h2>'
+            '<section class="side-card side-pad">'
+            + side_head("Recent Sightings", "Reported in the Wild", "eye") +
             '<p class="source-copy">Recent news coverage mentioning this legend.</p>'
             f'<ul class="sighting-list">{"".join(sighting_items)}</ul></section>'
         )
@@ -1920,8 +1950,8 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
             if added_raw else ""
         )
         featured_sources = (
-            '<section class="side-card side-pad"><p class="side-kicker">Sources</p>'
-            '<h2>Further Reading</h2>'
+            '<section class="side-card side-pad">'
+            + side_head("Sources", "Further Reading", "book-open") +
             '<p class="source-copy">Sources used to research and locate this legend.</p>'
             f'<ul class="source-list">{source_items}</ul>{added_html}</section>'
         )
@@ -1942,8 +1972,8 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
         )
     if nearby_items:
         featured_nearby = (
-            '<section class="side-card side-pad"><p class="side-kicker">In the Area</p>'
-            '<h2>Nearby Legends</h2>'
+            '<section class="side-card side-pad">'
+            + side_head("In the Area", "Nearby Legends", "compass") +
             f'<ul class="nearby-list">{"".join(nearby_items)}</ul></section>'
         )
     else:
@@ -1958,8 +1988,8 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
             for slug, title in collections
         )
         featured_collections = (
-            '<section class="side-card side-pad"><p class="side-kicker">Part of</p>'
-            '<h2>These Collections</h2>'
+            '<section class="side-card side-pad">'
+            + side_head("Part of", "These Collections", "library") +
             f'<ul class="collections-list">{collection_items}</ul></section>'
         )
     else:
@@ -2036,7 +2066,8 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
     featured_map = (
         '<section class="side-card">'
         '<div class="side-pad"><p class="side-kicker">Explore the Place</p>'
-        f'<h2>{esc(title_case_text(featured.get("map_title") or leg.get("region", "")))}</h2>'
+        f'<h2>{lucide("map-pin", 19, "side-icon")}'
+        f'{esc(title_case_text(featured.get("map_title") or leg.get("region", "")))}</h2>'
         f'<p class="map-meta">{esc(leg.get("region", ""))}</p></div>'
         f'<div id="miniMap" data-lat="{lat:.6f}" data-lng="{lng:.6f}" data-colour="{esc(catcolour)}" '
         f'data-initial="{esc(name[:1])}" aria-label="Map showing the location associated with {esc(name)}"></div>'

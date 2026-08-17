@@ -458,7 +458,14 @@ h1{
   letter-spacing:.15em;
   text-transform:uppercase;
 }
-.side-card h2{margin:0;font-family:'Marcellus',serif;font-size:23px;font-weight:400;line-height:1.25}
+.side-card h2{margin:0;font-family:'Marcellus',serif;font-size:23px;font-weight:400;line-height:1.25;
+  display:flex;align-items:flex-start;gap:10px}
+/* Lucide icon leading each sidebar heading (lucide.dev, ISC), rust so the
+   heading itself stays the dominant element. Aligned to the heading's FIRST
+   line, not the centre of the block: the place card's heading is a full
+   address, which can run to three or four lines. The nudge centres the 19px
+   icon in a 1.25em line box — (1.25em - 19px) / 2 at this font size. */
+.side-icon{flex:0 0 auto;color:var(--rust);margin-top:.21em}
 .map-meta{margin:5px 0 14px;color:var(--ink-soft);font-size:13px;font-style:italic}
 #miniMap{
   height:265px;
@@ -698,6 +705,9 @@ footer{position:relative;padding:12px 18px;background:#1a0e06;color:rgba(246,241
 footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 0%,rgba(176,144,96,.6) 20%,rgba(196,98,42,.8) 50%,rgba(176,144,96,.6) 80%,transparent 100%)}
 footer a{color:rgba(246,241,230,.9);text-decoration:none}
 footer a:hover{color:#f2e8d5}
+/* Lucide icon inside a footer link (the Ko-fi cup) — aligned off the baseline,
+   since the footer is a plain run of inline text rather than a flex row. */
+footer a svg{vertical-align:-.15em;margin-right:5px}
 .legend-marker{background:transparent;border:0}
 .legend-pin{
   width:34px;

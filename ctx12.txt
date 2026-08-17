@@ -1,0 +1,60 @@
+===== The Piper's Cave of Arran =====
+category: fairy
+region: Isle of Arran, Argyll, Scotland
+summary: A piper went into the King's Cave at Blackwaterfoot to pipe his way through its endless passage, his dog at his heel. His music faded to a despairing cry — 'two hands for the pipe and one for the sword!' — and only the dog came back, stripped of its hair.
+sources: ["https://en.wikipedia.org/wiki/King's_Cave", 'http://faeryfolklorist.blogspot.com/2017/05/fairy-folklore-of-isle-of-arran.html']
+
+===== The Pirates of Dollar Bay =====
+category: pirate
+region: Dollar Bay, Hook Peninsula, County Wexford, Ireland
+summary: Four mutineers murdered their captain at sea in 1765 and buried 250 sacks of Spanish silver on a lonely Wexford beach south of Duncannon Fort — giving Dollar Bay the name it carries to this day.
+sources: https://waterfordtreasures.com/murder-aboard-the-earl-of-sandwich-the-pirates-of-dollar-bay/
+
+===== The Ratman of Southend =====
+category: ghost
+region: Essex
+summary: A modern urban legend from Southend-on-Sea in Essex — a half-human, half-rat creature said to lurk in the storm drains and sewers beneath the seafront. One of the more persistent pieces of contemporary English folklore, kept alive on local social media and in playground tradition.
+sources: https://en.wikipedia.org/wiki/The_Ratman_of_Southend
+
+===== The Selkie =====
+category: water
+region: County Donegal, Ireland
+summary: The rón — seal-folk of Donegal and the Scottish isles — shed their skins to walk on land as humans; a fisherman who hides a selkie woman's pelt keeps her as his wife, but the day she finds her skin she returns to the sea, and never once looks back.
+sources: https://en.wikipedia.org/wiki/Selkie
+
+===== The Serpent of Church Island =====
+category: dragon
+region: Lough Gill, County Sligo, Ireland
+summary: Beneath a great stone on this Lough Gill island lies a crock of gold guarded by a serpent — legend insists a life must be lost before anyone can take it.
+sources: ['https://www.irishexaminer.com/lifestyle/outdoors/arid-41024195.html', 'https://emeraldisle.ie/the-great-wyrms-of-ireland', 'https://en.wikipedia.org/wiki/Church_Island_(Lough_Gill)', 'https://irishheritagenews.ie/church-island-on-lough-gill/']
+
+===== The Towans =====
+category: location
+region: Cornwall
+summary: Beneath these Cornish dunes lies the Lost City of Connor, swallowed by sand along with St Gwithian's ancient church — while storm winds are said to reveal the turrets of a tyrant king's castle.
+sources: ['https://en.wikipedia.org/wiki/The_Towans', 'https://en.wikipedia.org/wiki/Gwithian', 'https://wikishire.co.uk/wiki/The_Towans']
+
+===== The Wild Hunt =====
+category: ghost
+region: North Yorkshire
+summary: A host of spectral huntsmen and howling hounds tearing across the winter sky. To witness the Hunt is to receive a portent of war, plague, or the death of a king.
+sources: https://en.wikipedia.org/wiki/Wild_Hunt
+
+===== Thornton Road poltergeist claim =====
+category: ghost
+region: Ward End, Birmingham
+summary: In 1981 a Birmingham house was struck by unexplained stone-throwing so persistent that police opened a formal investigation — one of Britain's stranger unsolved poltergeist claims.
+sources: ['https://en.wikipedia.org/wiki/Poltergeist']
+
+===== Threekingham Three Kings =====
+category: location
+region: Lincolnshire, England
+summary: Three Danish kings lie beneath the churchyard at Threekingham, slain in a bloody battle against the Saxon earls — or so the village has believed since long before anyone thought to question it.
+sources: https://en.wikipedia.org/wiki/Threekingham
+
+===== Thunor =====
+category: deity
+region: Anglo-Saxon England
+summary: The Anglo-Saxon thunder god, cognate with Norse Thor. His name echoes in Thursday and in place-names, a hammer-crack of pre-Christian belief beneath later England.
+sources: https://en.wikipedia.org/wiki/Thor
+

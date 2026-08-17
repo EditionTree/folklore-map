@@ -1894,6 +1894,10 @@ footer {
   border-top: 0;
 }
 
+/* Lucide icon inside a footer link (the Ko-fi cup) — aligned off the baseline,
+   since the footer is a plain run of inline text rather than a flex row. */
+footer a svg { vertical-align: -.15em; margin-right: 5px; }
+
 footer::before {
   content: '';
   position: absolute;

@@ -18,7 +18,7 @@
 <meta property="og:image" content="https://folklorefinder.uk/og/preview-folklore-finder.jpg"/>
 <meta property="og:site_name" content="Folklore Finder"/>
 <link rel="stylesheet" href="/fonts/fonts.css"/>
-<link rel="stylesheet" href="folklorefinder.css?v=20260817b"/>
+<link rel="stylesheet" href="folklorefinder.css?v=20260817c"/>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{--parchment:#f6f1e6;--ink:#3f3023;--muted:#5a4632;--line:rgba(90,70,50,.24);--gold:#b09060;--rust:#c4622a;--dark:#1a0e06}
@@ -69,7 +69,7 @@ h1{font-family:'Marcellus',serif;font-size:clamp(42px,6vw,74px);font-weight:400;
 .pop-name{font-family:'Marcellus',serif;color:var(--rust);font-size:17px;line-height:1.2}.pop-desc{margin-top:7px;color:var(--ink);font-size:14px;line-height:1.45}.pop-req{margin-top:8px;color:var(--muted);font-size:12px}
 .mini-track{height:8px;margin-top:11px;border:1px solid rgba(176,144,96,.7);background:rgba(176,144,96,.22)}.mini-track span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--rust),var(--gold))}
 .empty{padding:38px;border:1px dashed var(--gold);color:var(--muted);text-align:center;background:rgba(246,241,230,.4)}
-footer{position:relative;text-align:center;padding:12px 18px;font-size:12px;line-height:1.6;color:rgba(246,241,230,.78);background:#1a0e06;border-top:0}footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 0%,rgba(176,144,96,.6) 20%,rgba(196,98,42,.8) 50%,rgba(176,144,96,.6) 80%,transparent 100%)}footer a{color:rgba(246,241,230,.9);text-decoration:none}footer a:hover{color:#f2e8d5}
+footer{position:relative;text-align:center;padding:12px 18px;font-size:12px;line-height:1.6;color:rgba(246,241,230,.78);background:#1a0e06;border-top:0}footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 0%,rgba(176,144,96,.6) 20%,rgba(196,98,42,.8) 50%,rgba(176,144,96,.6) 80%,transparent 100%)}footer a{color:rgba(246,241,230,.9);text-decoration:none}footer a:hover{color:#f2e8d5}footer a svg{vertical-align:-.15em;margin-right:5px}
 @media(max-width:820px){.ach-hero{grid-template-columns:1fr}.wrap{width:calc(100% - 32px)}.badge-grid{grid-template-columns:repeat(auto-fill,minmax(124px,1fr));gap:18px 12px}.seal{width:88px;height:88px}.badge{min-height:166px}.badge-pop{position:fixed;left:50%;bottom:18px}.badge-pop::after{display:none}}
 @media(max-width:600px){.badge-grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:20px 12px}.seal{width:116px;height:116px}.seal.seal-placeholder{font-size:30px}.badge{min-height:196px}}
 </style>
@@ -120,7 +120,7 @@ footer{position:relative;text-align:center;padding:12px 18px;font-size:12px;line
   <div class="intro-panel">This is a first live pass. It uses local browser storage, so progress stays on the device you are using. Opening a legend page marks that legend as visited.</div>
   <div id="achievementSections"></div>
 </main>
-<footer>Folklore Finder &nbsp;&#183;&nbsp; An atlas of myths, legends, &amp; stories &nbsp;&#183;&nbsp; &copy; EditionTree &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/about">About</a> &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/updates">Updates</a> &nbsp;&#183;&nbsp; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener">Ko-fi</a> &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/privacy">Privacy</a></footer>
+<footer>Folklore Finder &nbsp;&#183;&nbsp; An atlas of myths, legends, &amp; stories &nbsp;&#183;&nbsp; &copy; EditionTree &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/about">About</a> &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/updates">Updates</a> &nbsp;&#183;&nbsp; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2v2"/><path d="M14 2v2"/><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"/><path d="M6 2v2"/></svg>Ko-fi</a> &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/privacy">Privacy</a></footer>
 <script>
 (function(){
   const VISITED_KEY = 'ff_visited_legends_v1';

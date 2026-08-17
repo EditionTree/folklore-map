@@ -507,7 +507,7 @@
     .filter-random:hover { background: var(--accent); color: var(--parchment); }
     .filter-place { border-color: var(--accent-warm); color: var(--accent); font-weight: 600; }
     .filter-place.active { background: var(--accent); border-color: var(--accent); }
-    .filter-place-clear { font-size: 16px; line-height: 1; margin-left: 2px; }
+    .filter-place-clear { margin-left: 2px; }
 
     /* ── MAP CONTAINER ── */
     #map {
@@ -709,6 +709,9 @@
     }
     footer a { color: rgba(246,241,230,.9); text-decoration: none; }
     footer a:hover { color: var(--parchment); }
+    /* Lucide icon inside a footer link (the Ko-fi cup) — aligned off the
+       baseline, as the footer is inline text rather than a flex row. */
+    footer a svg { vertical-align: -.15em; margin-right: 5px; }
     .bug-report-btn {
       background: none; border: 1px solid rgba(176,144,96,0.3); border-radius: 2px;
       padding: 3px 10px; cursor: pointer;
@@ -963,7 +966,7 @@
   </div>
 </div>
 
-<footer>Folklore Finder &nbsp;&#183;&nbsp; An atlas of myths, legends, &amp; stories &nbsp;&#183;&nbsp; &copy; EditionTree &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/about">About</a> &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/updates">Updates</a> &nbsp;&#183;&nbsp; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener">Ko-fi</a> &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/privacy">Privacy</a></footer>
+<footer>Folklore Finder &nbsp;&#183;&nbsp; An atlas of myths, legends, &amp; stories &nbsp;&#183;&nbsp; &copy; EditionTree &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/about">About</a> &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/updates">Updates</a> &nbsp;&#183;&nbsp; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2v2"/><path d="M14 2v2"/><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"/><path d="M6 2v2"/></svg>Ko-fi</a> &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/privacy">Privacy</a></footer>
 
 <!-- Bug report modal -->
 <div id="bugModal" class="bug-modal-overlay" style="display:none" onclick="if(event.target===this)closeBugReport()" role="dialog" aria-modal="true" aria-labelledby="bugModalTitle">
@@ -1305,7 +1308,9 @@ function buildFilters() {
     placeBtn.className = 'filter-btn filter-place active';
     placeBtn.dataset.region = activeRegion;
     placeBtn.setAttribute('aria-label', 'Remove ' + REGION_META[activeRegion].label + ' filter');
-    placeBtn.innerHTML = '<span class="btn-label">' + REGION_META[activeRegion].label + '</span><span class="filter-place-clear" aria-hidden="true">&times;</span>';
+    // Lucide "x" (lucide.dev, ISC) — replaces a &times; glyph, which rendered
+    // at whatever weight the body serif gave it.
+    placeBtn.innerHTML = '<span class="btn-label">' + REGION_META[activeRegion].label + '</span><svg class="filter-place-clear" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>';
     placeBtn.onclick = () => filterMarkers('all');
     bar.appendChild(placeBtn);
   }

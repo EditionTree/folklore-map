@@ -247,7 +247,12 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Spectral',seri
 /* Lucide line icons (lucide.dev, ISC) sitting inside a .btn. The buttons are
    inline-block rather than flex, so the icon is aligned off the text baseline
    instead of by the flexbox. */
-.btn svg{display:inline-block;vertical-align:-.22em;margin-right:8px}
+.btn svg{display:inline-block;vertical-align:-.22em;margin-right:7px}
+/* All three hero buttons carry an icon, which costs ~22px each. At the hero
+   column's 610px that tipped the row onto a second line, so these three run
+   tighter than a standalone .btn to keep the row intact — 18px leaves ~20px
+   of slack, enough to absorb font-metric differences between platforms. */
+.hero-cta .btn{padding-left:18px;padding-right:18px}
 
 /* ── GUIDANCE CAROUSEL ──
    Manual-only (no autoplay) by design: the brand guide calls for a calm,
@@ -299,7 +304,7 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Spectral',seri
 .gc-controls{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:10px}
 .gc-arrow{
   background:transparent;border:1px solid rgba(176,144,96,0.45);color:rgba(242,232,213,0.82);
-  width:28px;height:28px;border-radius:50%;font-size:16px;line-height:1;cursor:pointer;
+  width:28px;height:28px;border-radius:50%;cursor:pointer;
   display:flex;align-items:center;justify-content:center;
   transition:border-color .15s,color .15s;
 }
@@ -646,6 +651,9 @@ footer{
   border-top:1px solid rgba(176,144,96,0.2);
 }
 footer a{color:var(--ink-light)}
+/* Lucide icon inside a footer link (the Ko-fi cup) — aligned off the baseline,
+   since the footer is a plain run of inline text rather than a flex row. */
+footer a svg{vertical-align:-.15em;margin-right:5px}
 
 @media(max-width:560px){
   .hero{min-height:auto;padding:48px 20px 56px}
@@ -672,7 +680,7 @@ footer a{color:var(--ink-light)}
 .topnav a.active{color:var(--accent-warm)}
 @media(max-width:640px){.topnav{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;scrollbar-width:none}.topnav::-webkit-scrollbar{display:none}.topnav a{flex:0 0 auto;white-space:nowrap}}
 </style>
-<link rel="stylesheet" href="folklorefinder.css?v=20260817b"/>
+<link rel="stylesheet" href="folklorefinder.css?v=20260817c"/>
 </head>
 <body class="ff-paper home-page">
 <nav class="topnav">
@@ -721,8 +729,8 @@ footer a{color:var(--ink-light)}
   <p class="search-hint">Search to find an entry, then follow it onto the map</p>
 
   <div class="hero-cta">
-    <a class="btn btn-primary" href="./map" data-track="explore_map">Explore the map</a>
-    <button class="btn btn-secondary" id="nearMeBtn" type="button" data-track="find_near_me">Find folklore near me</button>
+    <a class="btn btn-primary" href="./map" data-track="explore_map"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"/><path d="M15 5.764v15"/><path d="M9 3.236v15"/></svg>Explore the map</a>
+    <button class="btn btn-secondary" id="nearMeBtn" type="button" data-track="find_near_me"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="2" x2="5" y1="12" y2="12"/><line x1="19" x2="22" y1="12" y2="12"/><line x1="12" x2="12" y1="2" y2="5"/><line x1="12" x2="12" y1="19" y2="22"/><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="3"/></svg><span class="btn-label">Find folklore near me</span></button>
     <button class="btn btn-secondary" id="surpriseBtn" type="button" data-track="surprise_me"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="12" height="12" x="2" y="10" rx="2" ry="2"/><path d="m17.92 14 3.5-3.5a2.24 2.24 0 0 0 0-3l-5-4.92a2.24 2.24 0 0 0-3 0L10 6"/><path d="M6 18h.01"/><path d="M10 14h.01"/><path d="M15 6h.01"/><path d="M18 9h.01"/></svg>Surprise me</button>
   </div>
   <p class="near-me-status" id="nearMeStatus" role="status" aria-live="polite" hidden></p>
@@ -731,9 +739,9 @@ footer a{color:var(--ink-light)}
       <div class="gc-wrap" role="region" aria-roledescription="carousel" aria-label="Ways to explore Folklore Finder">
         <div class="gc-track" id="gcTrack" tabindex="0"></div>
         <div class="gc-controls">
-          <button class="gc-arrow" id="gcPrev" type="button" aria-label="Previous card">&#8249;</button>
+          <button class="gc-arrow" id="gcPrev" type="button" aria-label="Previous card"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
           <div class="gc-dots" id="gcDots"></div>
-          <button class="gc-arrow" id="gcNext" type="button" aria-label="Next card">&#8250;</button>
+          <button class="gc-arrow" id="gcNext" type="button" aria-label="Next card"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
         </div>
       </div>
       <div class="hero-feature-label" id="weekly-heading">This week&rsquo;s legend</div>
@@ -775,7 +783,7 @@ footer a{color:var(--ink-light)}
   <a class="hero-submit-link" href="./map?submit=1">Submit a legend &#8594;</a>
 </div>
 
-<footer>Folklore Finder &nbsp;&#183;&nbsp; An atlas of myths, legends, &amp; stories &nbsp;&#183;&nbsp; &copy; EditionTree &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/about">About</a> &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/updates">Updates</a> &nbsp;&#183;&nbsp; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener">Ko-fi</a> &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/privacy">Privacy</a></footer>
+<footer>Folklore Finder &nbsp;&#183;&nbsp; An atlas of myths, legends, &amp; stories &nbsp;&#183;&nbsp; &copy; EditionTree &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/about">About</a> &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/updates">Updates</a> &nbsp;&#183;&nbsp; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2v2"/><path d="M14 2v2"/><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"/><path d="M6 2v2"/></svg>Ko-fi</a> &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/privacy">Privacy</a></footer>
 
 <script>
 (function(){
@@ -1109,10 +1117,13 @@ footer a{color:var(--ink-light)}
   }
 
   if (nearMeBtn) {
-    const nearMeDefaultText = nearMeBtn.textContent;
+    // Swap the label, not the button's textContent — the button also holds an
+    // inline SVG icon, which a textContent write would wipe out.
+    const nearMeLabel = nearMeBtn.querySelector('.btn-label');
+    const nearMeDefaultText = nearMeLabel.textContent;
     function resetNearMeBtn(){
       nearMeBtn.disabled = false;
-      nearMeBtn.textContent = nearMeDefaultText;
+      nearMeLabel.textContent = nearMeDefaultText;
     }
     nearMeBtn.addEventListener('click', () => {
       setNearMeStatus();
@@ -1121,7 +1132,7 @@ footer a{color:var(--ink-light)}
         return;
       }
       nearMeBtn.disabled = true;
-      nearMeBtn.textContent = 'Locating…';
+      nearMeLabel.textContent = 'Locating…';
       setNearMeStatus('Requesting your location. Look for a permission prompt from your browser.');
       navigator.geolocation.getCurrentPosition(
         pos => {

@@ -402,6 +402,14 @@ h1{
 .fact:nth-child(even){padding-left:15px;border-left:1px solid #cfb990}
 .fact span{display:block;color:#77634a;font-size:10px;letter-spacing:.1em;text-transform:uppercase}
 .fact strong{font-weight:500;font-size:14px}
+/* Origins & Dating: values run much longer than the About/Region facts
+   (dates, source descriptions), so a half-width 2-column grid wrapped them
+   into a tall, ragged mess. One column, full sidebar width, divided by
+   rules instead of the alternating left border. */
+.facts-stacked{grid-template-columns:1fr}
+.facts-stacked .fact{padding:12px 0 8px}
+.facts-stacked .fact:nth-child(even){padding-left:0;border-left:none}
+.facts-stacked .fact:not(:first-child){border-top:1px solid #cfb990}
 .source-copy{margin:12px 0 0;color:var(--ink-soft);font-size:14px;line-height:1.55}
 .hist-caveat{margin:12px 0 0;color:var(--ink-soft);font-size:12px;font-style:italic;line-height:1.5}
 

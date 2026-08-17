@@ -157,7 +157,16 @@ footer a{color:var(--ink-light)}
   <a href="legends/collections">Collections</a>
   <a href="archive" class="active">My Archive</a>
   <a href="about">About</a>
+  <div class="nav-search" id="navSearch">
+    <button type="button" class="nav-search-toggle" id="navSearchToggle" aria-label="Search legends" aria-expanded="false" aria-controls="navSearchInput"><span aria-hidden="true">&#9906;</span></button>
+    <div class="nav-search-field">
+      <span class="nav-search-icon" aria-hidden="true">&#9906;</span>
+      <input type="text" id="navSearchInput" class="nav-search-input" placeholder="Search legends…" autocomplete="off" spellcheck="false" role="combobox" aria-expanded="false" aria-controls="navSearchResults" aria-autocomplete="list" aria-label="Search legends"/>
+    </div>
+    <div class="nav-search-results" id="navSearchResults" role="listbox" aria-label="Search results"></div>
+  </div>
 </nav>
+<script src="/nav-search.js" defer></script>
 <main id="main-content" tabindex="-1">
 
 <header class="page-hero page-hero-solo">

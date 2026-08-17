@@ -421,6 +421,39 @@ TOPNAV_CSS = (
     "overflow-x:auto;overflow-y:hidden;scrollbar-width:none;padding-left:12px;padding-right:12px}"
     ".topnav::-webkit-scrollbar{display:none}"
     ".topnav a{flex:0 0 auto;padding:9px 11px;font-size:11px;white-space:nowrap}}"
+    # Persistent nav search — compact inline field on desktop/tablet, an
+    # icon that expands into a fixed overlay bar on mobile (see the
+    # max-width:640px block below). Shared behaviour lives in nav-search.js.
+    ".nav-search{position:relative;display:flex;align-items:center;flex:0 0 auto}"
+    ".nav-search-toggle{display:none;background:none;border:none;color:rgba(242,232,213,.78);"
+    "font-size:15px;padding:8px 10px;cursor:pointer;border-radius:3px}"
+    ".nav-search-toggle:hover{color:#f2e8d5;background:rgba(196,98,42,0.18)}"
+    ".nav-search-field{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,0.08);"
+    "border:1px solid rgba(176,144,96,0.35);border-radius:14px;padding:5px 12px;width:168px;"
+    "transition:width .15s,background .15s,border-color .15s;margin-left:6px}"
+    ".nav-search-field:focus-within{width:224px;background:rgba(255,255,255,0.14);"
+    "border-color:rgba(196,98,42,0.6)}"
+    ".nav-search-icon{font-size:12px;color:rgba(242,232,213,.6);flex-shrink:0}"
+    ".nav-search-input{flex:1;min-width:0;background:none;border:none;outline:none;color:#f2e8d5;"
+    "font-family:'Spectral',serif;font-size:12.5px}"
+    ".nav-search-input::placeholder{color:rgba(242,232,213,.45)}"
+    ".nav-search-results{position:absolute;top:calc(100% + 8px);right:0;width:290px;max-height:360px;"
+    "overflow-y:auto;background:#241a10;border:1px solid rgba(176,144,96,.35);border-radius:4px;"
+    "box-shadow:0 10px 30px rgba(0,0,0,.4);display:none;z-index:20;text-align:left}"
+    ".nav-search-results.open{display:block}"
+    ".nav-search-item{display:block;padding:9px 12px;cursor:pointer;"
+    "border-bottom:1px solid rgba(176,144,96,.15)}"
+    ".nav-search-item:last-child{border-bottom:none}"
+    ".nav-search-item:hover,.nav-search-item.active{background:rgba(196,98,42,.16)}"
+    ".nsi-name{display:block;font-family:'Marcellus',serif;font-size:13px;color:#f2e8d5}"
+    ".nsi-meta{display:block;font-size:11px;color:rgba(242,232,213,.55);margin-top:2px}"
+    ".nav-search-empty{padding:14px 12px;font-size:12px;color:rgba(242,232,213,.55);font-style:italic}"
+    "@media(max-width:640px){"
+    ".nav-search-toggle{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto}"
+    ".nav-search-field{display:none;position:fixed;left:12px;right:12px;top:64px;width:auto;"
+    "z-index:25;background:#241a10;border-color:rgba(176,144,96,.5);padding:9px 14px;margin-left:0}"
+    ".nav-search.open .nav-search-field{display:flex}"
+    ".nav-search-results{position:fixed;left:12px;right:12px;top:114px;width:auto}}"
     "footer{position:relative;text-align:center;padding:12px 18px;font-size:12px;line-height:1.6;"
     "color:rgba(246,241,230,.78);background:#1a0e06;border-top:0}"
     "footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;"
@@ -449,6 +482,22 @@ TOPNAV_ITEMS = [
 ]
 
 
+NAV_SEARCH_HTML = (
+    '<div class="nav-search" id="navSearch">'
+    '<button type="button" class="nav-search-toggle" id="navSearchToggle" '
+    'aria-label="Search legends" aria-expanded="false" aria-controls="navSearchInput">'
+    '<span aria-hidden="true">&#9906;</span></button>'
+    '<div class="nav-search-field">'
+    '<span class="nav-search-icon" aria-hidden="true">&#9906;</span>'
+    '<input type="text" id="navSearchInput" class="nav-search-input" placeholder="Search legends…" '
+    'autocomplete="off" spellcheck="false" role="combobox" aria-expanded="false" '
+    'aria-controls="navSearchResults" aria-autocomplete="list" aria-label="Search legends"/>'
+    '</div>'
+    '<div class="nav-search-results" id="navSearchResults" role="listbox" aria-label="Search results"></div>'
+    '</div>'
+)
+
+
 def topnav_html(active=""):
     parts = ['<nav class="topnav">']
     parts.append(
@@ -459,7 +508,9 @@ def topnav_html(active=""):
     for key, label, path in TOPNAV_ITEMS:
         cls = ' class="active"' if key == active else ''
         parts.append(f'<a href="{BASE}{path}"{cls}>{label}</a>')
+    parts.append(NAV_SEARCH_HTML)
     parts.append('</nav>')
+    parts.append('<script src="/nav-search.js" defer></script>')
     return "".join(parts)
 
 
@@ -1402,7 +1453,7 @@ FEATURED_PAGE = Template("""<!DOCTYPE html>
 <meta name="twitter:image:alt" content="$og_alt"/>
 <link rel="stylesheet" href="/fonts/fonts.css"/>
 <link rel="stylesheet" href="/assets/leaflet/leaflet.css"/>
-<link rel="stylesheet" href="/legend-page.css?v=20260812c"/>
+<link rel="stylesheet" href="/legend-page.css?v=20260817a"/>
 <script type="application/ld+json">$jsonld</script>
 $breadcrumb_jsonld
 </head>
@@ -1629,11 +1680,15 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
     # were dropped — the general caveat below already conveys the uncertainty.
     hist_fields = [
         ("Approximate Origin", esc(leg.get("origin_date")) if leg.get("origin_date") else None),
-        ("Earliest Written Record", esc(leg.get("earliest_record")) if leg.get("earliest_record") else None),
         ("Historical Period", period_display),
+        ("Earliest Written Record", esc(leg.get("earliest_record")) if leg.get("earliest_record") else None),
     ]
     hist_items = [(label, val) for label, val in hist_fields if val]
     if hist_items:
+        # Stacked single-column, unlike the 2-column .facts grid used elsewhere
+        # in the sidebar: these values (dates, source descriptions) run much
+        # longer than the About/Region facts, and squeezed into a half-width
+        # sidebar column they wrapped into a tall, ragged mess.
         hist_facts_html = "".join(
             f'<div class="fact"><span>{esc(label)}</span><strong>{val}</strong></div>'
             for label, val in hist_items
@@ -1641,7 +1696,7 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
         historical_context = (
             '<section class="side-card side-pad"><p class="side-kicker">Historical Context</p>'
             '<h2>Origins &amp; Dating</h2>'
-            f'<div class="facts">{hist_facts_html}</div>'
+            f'<div class="facts facts-stacked">{hist_facts_html}</div>'
             '<p class="hist-caveat">Folklore dates are often approximate, especially '
             'where a story predates any surviving written source.</p></section>'
         )
@@ -2507,11 +2562,6 @@ def build():
                 browse_card(l, slugmap, cats, meta, show_cat=True, show_summary=True)
                 for l in members
             )
-            themes_html = "".join(f"<li>{esc(t)}</li>" for t in p.get("themes", []))
-            extra_sections = (
-                f'<section class="col-section"><h2>Common Folklore Themes</h2>'
-                f'<ul class="col-resources">{themes_html}</ul></section>'
-            ) if themes_html else ""
             period_jsonld = json.dumps({
                 "@context": "https://schema.org",
                 "@type": "CollectionPage",
@@ -2544,7 +2594,6 @@ def build():
                 cards_html=cards or empty_note,
                 jsonld=period_jsonld,
                 nav_active="periods",
-                extra_sections=extra_sections,
                 wrap_class="ornamented",
                 track_script=track_event_script("period_viewed", period_slug=slug),
             )

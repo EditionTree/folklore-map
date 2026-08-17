@@ -340,10 +340,12 @@
     }
     .search-wrap input::placeholder { color: var(--border); }
     .search-wrap input:focus { border-color: var(--accent-glow); background: rgba(255,255,255,0.12); }
+    /* Lucide "search" (lucide.dev, ISC), inlined as SVG — sized by its own
+       width/height, coloured by currentColor. */
     .search-icon {
       position: absolute; left: 8px; top: 50%;
       transform: translateY(-50%);
-      font-size: 14px; color: var(--border); pointer-events: none;
+      color: var(--border); pointer-events: none;
     }
     .search-results {
       position: absolute; top: calc(100% + 4px); left: 0; right: 0;
@@ -943,7 +945,7 @@
       <div class="sidebar-title">All Entries</div>
       <div class="sidebar-subtitle" id="sidebarSubtitle">Loading...</div>
       <div class="search-wrap">
-        <span class="search-icon" aria-hidden="true">⚲</span>
+        <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.34-4.34"/></svg>
         <input type="text" id="searchInput" placeholder="Search legends..." autocomplete="off"
                role="combobox" aria-expanded="false" aria-controls="searchResults" aria-autocomplete="list" aria-label="Search legends"
                oninput="handleSearch(this.value)"/>
@@ -1313,7 +1315,8 @@ function buildFilters() {
   const randomBtn = document.createElement('button');
   randomBtn.className = 'filter-btn filter-random';
   randomBtn.title = 'Jump to a random legend';
-  randomBtn.innerHTML = '<span aria-hidden="true" style="font-family:var(--font-display);font-size:14px;line-height:1;font-weight:600;color:currentColor">?</span><span class="btn-label">Surprise me</span>';
+  // Lucide "dices" (lucide.dev, ISC) — same icon as the homepage's Surprise me.
+  randomBtn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="12" height="12" x="2" y="10" rx="2" ry="2"/><path d="m17.92 14 3.5-3.5a2.24 2.24 0 0 0 0-3l-5-4.92a2.24 2.24 0 0 0-3 0L10 6"/><path d="M6 18h.01"/><path d="M10 14h.01"/><path d="M15 6h.01"/><path d="M18 9h.01"/></svg><span class="btn-label">Surprise me</span>';
   randomBtn.onclick = randomLegend;
   bar.appendChild(randomBtn);
 

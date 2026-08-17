@@ -96,7 +96,7 @@ button{font:inherit}
   background:rgba(242,232,213,.07);border:1px solid rgba(176,144,96,.4);border-radius:0;
   transition:background .15s,border-color .15s}
 .nav-search-field:focus-within{background:rgba(242,232,213,.13);border-color:#c4622a}
-.nav-search-icon{flex:0 0 auto;color:#b09060;font-size:13px;line-height:1}
+.nav-search-icon{flex:0 0 auto;color:#b09060}
 .nav-search-input{flex:1;min-width:0;background:none;border:0;outline:none;color:#f2e8d5;
   font-family:'Spectral',serif;font-size:13px}
 .nav-search-input::placeholder{color:rgba(242,232,213,.42);font-style:italic}
@@ -176,6 +176,28 @@ button{font:inherit}
 /* Scopes .hero-caption-wrap's positioning to just the image, not the whole
    hero (which on mobile also contains the stacked text copy below it). */
 .hero-media-wrap{position:absolute;inset:0}
+/* Gilded piping mat around the artwork -- the same rust/gold gilt family as
+   .topnav::before, the footer rule and the share cards' inset mat line, so the
+   image reads as a mounted plate. Lives on .hero-media-wrap rather than .hero
+   because on mobile the copy stacks below the picture, and the frame should
+   hug the artwork, not the whole banner. z-index clears the .hero::after
+   scrim, which would otherwise wash the line out down the darkened left side.
+   The border-box/padding-box mask pair is what lets a gradient border follow
+   a border-radius -- border-image ignores rounded corners. */
+.hero-media-wrap::after{
+  content:'';
+  position:absolute;
+  inset:14px;
+  z-index:2;
+  pointer-events:none;
+  border:2px solid transparent;
+  border-radius:4px;
+  background:linear-gradient(135deg,#8b3a1a 0%,#b09060 34%,#c4622a 50%,#b09060 66%,#8b3a1a 100%) border-box;
+  -webkit-mask:linear-gradient(#000 0 0) padding-box,linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor;
+  mask:linear-gradient(#000 0 0) padding-box,linear-gradient(#000 0 0);
+  mask-composite:exclude;
+}
 .hero-placeholder{
   position:absolute;
   inset:0;
@@ -291,9 +313,9 @@ h1{
 }
 .hero-caption-wrap{
   position:absolute;
-  z-index:2;
-  right:17px;
-  bottom:13px;
+  z-index:3;
+  right:30px;
+  bottom:26px;
   max-width:78%;
   display:flex;
   flex-direction:column;
@@ -554,8 +576,37 @@ h1{
 .ach-toast-close{position:absolute;top:8px;right:8px;width:22px;height:22px;line-height:1;border:none;background:transparent;color:var(--ink-soft);font-size:18px;cursor:pointer;border-radius:50%}
 .ach-toast-close:hover,.ach-toast-close:focus-visible{background:rgba(90,70,50,.12);color:var(--ink)}
 .source-list{list-style:none;margin:13px 0 0;padding:0}
-.source-list li+li{margin-top:7px}
-.source-list a{color:var(--rust-dark);font-size:13px}
+.source-list li+li{margin-top:9px}
+/* Publisher name on the left, reliability tier as a chip on the right. The
+   tier was already derived per source (see SOURCE_TIERS in generate_pages.py)
+   and simply never surfaced. Sources whose tier we can't place confidently
+   get no chip rather than a misleading one. */
+.source-list a{
+  display:flex;
+  align-items:baseline;
+  gap:10px;
+  color:var(--rust-dark);
+  font-size:13px;
+  line-height:1.45;
+  text-decoration:none;
+}
+.source-list a:hover .src-name,.source-list a:focus-visible .src-name{text-decoration:underline}
+.src-name{flex:1 1 auto;min-width:0}
+.src-tier{
+  flex:0 0 auto;
+  margin-left:auto;
+  padding:2px 7px;
+  border:1px solid rgba(176,144,96,.55);
+  color:var(--ink-soft);
+  font-family:'Marcellus',serif;
+  font-size:9px;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  white-space:nowrap;
+}
+.src-tier[data-tier="primary"]{color:var(--rust-dark);border-color:rgba(157,70,31,.5)}
+.src-tier[data-tier="heritage"]{color:var(--sage);border-color:rgba(102,115,90,.55)}
+.src-tier[data-tier="encyclopedic"]{color:var(--slate);border-color:rgba(83,102,122,.5)}
 .sighting-list{list-style:none;margin:13px 0 0;padding:0}
 .sighting-list li+li{margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
 .sighting-list a{display:block;text-decoration:none;color:inherit}
@@ -692,6 +743,8 @@ footer a:hover{color:#f2e8d5}
   .hero::after{display:none}
   .hero-media-wrap{position:relative;inset:auto;display:block}
   .hero img{position:static;display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+  .hero-media-wrap::after{inset:10px;border-radius:3px}
+  .hero-caption-wrap{right:22px;bottom:20px}
   .hero-placeholder{position:relative;aspect-ratio:16/9;height:auto}
   .hero-placeholder svg{right:6%;width:40%;height:auto;aspect-ratio:1;opacity:.4}
   .hero-placeholder>span{right:14px;bottom:12px}

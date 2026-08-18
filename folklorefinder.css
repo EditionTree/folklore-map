@@ -1752,11 +1752,10 @@ body.home-page {
    .topnav-brand's absolute-left lockup) so the links stay centred in the
    full bar rather than being shoved off-centre. Square edges, antique-gold
    rule and the gilded-piping stripe on the dropdown, to match the site's
-   other editorial furniture. Below 1150px there isn't room for a field
-   beside the centred links (the links are centred in the full bar, so the
-   space to their right shrinks by roughly half of any viewport shrink),
-   so it collapses to a single icon that opens the field as a panel under
-   the bar. Behaviour lives in nav-search.js. */
+   other editorial furniture. At 1200px and below it collapses to a toggle,
+   the same breakpoint that hides the brand lockup: with icons on the links
+   the row is too wide to sit beside a 220px field once the bar narrows.
+   Behaviour lives in nav-search.js. */
 .nav-search {
   position: absolute;
   right: clamp(14px, 3vw, 52px);
@@ -1873,7 +1872,7 @@ body.home-page {
 /* Collapsed: icon only, opening a panel anchored under the bar. The panel
    hangs off .topnav (the nearest positioned ancestor once .nav-search goes
    static), so it can't be clipped by the links' horizontal scroll. */
-@media (max-width: 1149px) {
+@media (max-width: 1200px) {
   .nav-search, .nav-search:focus-within {
     position: static; transform: none; flex: 0 0 auto; margin-left: 14px; width: auto;
   }

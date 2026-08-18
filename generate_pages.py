@@ -439,10 +439,12 @@ TOPNAV_CSS = (
     # Persistent nav search — pinned right (mirroring .topnav-brand's
     # absolute-left lockup) so the links stay centred in the full bar.
     # Square edges, antique-gold rule and the gilded-piping stripe on the
-    # dropdown, matching the site's other editorial furniture. Below 1150px
-    # it collapses to an icon opening a panel under the bar. See nav-search.js.
-    # (1150px: links are centred in the full bar, so the room to their
-    # right shrinks by ~half of any viewport shrink.)
+    # dropdown, matching the site's other editorial furniture. At 1200px and
+    # below it collapses to an icon opening a panel under the bar -- the same
+    # breakpoint that hides the brand lockup. See nav-search.js. (The links
+    # are centred in the full bar, so the room to their right shrinks by
+    # ~half of any viewport shrink; with icons on the links there is no
+    # longer room for a 220px field below 1200px.)
     ".nav-search{position:absolute;right:clamp(14px,3vw,52px);top:50%;"
     "transform:translateY(-50%);display:flex;align-items:center;width:220px}"
     ".nav-search-toggle{display:none;align-items:center;justify-content:center;width:34px;"
@@ -477,7 +479,7 @@ TOPNAV_CSS = (
     "font-size:11.5px;color:rgba(242,232,213,.55)}"
     ".nav-search-empty{padding:15px 14px;font-family:'Spectral',serif;font-style:italic;"
     "font-size:12.5px;color:rgba(242,232,213,.55)}"
-    "@media(max-width:1149px){"
+    "@media(max-width:1200px){"
     ".nav-search,.nav-search:focus-within{position:static;transform:none;flex:0 0 auto;"
     "margin-left:14px;width:auto}"
     ".nav-search-toggle{display:inline-flex}"
@@ -1646,7 +1648,7 @@ FEATURED_PAGE = Template("""<!DOCTYPE html>
 <meta name="twitter:image:alt" content="$og_alt"/>
 <link rel="stylesheet" href="/fonts/fonts.css"/>
 <link rel="stylesheet" href="/assets/leaflet/leaflet.css"/>
-<link rel="stylesheet" href="/legend-page.css?v=20260817f"/>
+<link rel="stylesheet" href="/legend-page.css?v=20260817g"/>
 <script type="application/ld+json">$jsonld</script>
 $breadcrumb_jsonld
 </head>

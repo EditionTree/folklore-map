@@ -7349,9 +7349,14 @@
     ],
     "detail": "On the lonely moorland road between Onecote and Leek, in the Staffordshire uplands, travellers have long told of a headless rider who appears at dusk and rides the route on through Butterton to Warslow. The horse is described as unnaturally large and dark, and where the rider's head should be there is only a severed neck; the apparition is said to bear down on the unwary before vanishing, sometimes blamed for spooking horses and overturning carts. In the best-known telling, a farmer riding home from Leek market, sleepy and muddled with beer, mistook the rider ahead of him for a neighbour and called out for a lift, only to realise his error as the phantom horse sprang away beneath him, clearing fences and hedges at a terrifying speed.\n\nThe story reached print in the local paper The Sentinel in October 1880, though its roots on the moor run older and its origin was never fixed: some call it an evil spirit cast out of heaven and doomed to wander, others a murderer beheaded for his crimes who searches still for his executioner. The headless horseman belongs to a wider family of decapitated revenants found across Britain and Ireland, restless figures whose missing heads mark a death that was sudden, unjust, or unconsecrated.",
     "sources": [
+      "https://archive.org/details/a-history-of-the-ancient-parish-of-leek",
       "https://oldechronicles.org.uk/the-headless-horseman-of-the-staffordshire-moors/",
       "https://thelocalmythstorian.com/the-phantom-rebel"
-    ]
+    ],
+    "earliest_record": "John Sleigh, A History of the Ancient Parish of Leek, in Staffordshire (1862) -- Sleigh, a Staffordshire antiquarian, is described in secondary retellings as having collected local ghost accounts including the headless rider around 1860, shortly before the book's publication",
+    "period": "Local legend already established by around 1860 per Sleigh's collecting; an annual horseman 'hunt' at the Leek May Fair was established as a tradition by the early 1930s",
+    "origin_type": "oral-tradition",
+    "dating_confidence": "low"
   },
   {
     "name": "Devil's Dyke",
@@ -8626,6 +8631,7 @@
     ],
     "detail": "During the Napoleonic Wars of the early nineteenth century, a French vessel was wrecked off the coast of Hartlepool in County Durham. The only survivor to wash ashore was the ship's pet monkey, dressed in a miniature military uniform — a common practice aboard warships of the period, where monkeys and other animals served as mascots and were sometimes costumed for the amusement of the crew.\n\nThe fishermen of Hartlepool, who had never seen a Frenchman and whose understanding of the enemy was shaped by satirical cartoons depicting the French as small, gibbering, monkey-like creatures, are said to have convened an impromptu court on the beach. The monkey, unable to answer their questions in English, was convicted of espionage and hanged from the mast of the wrecked ship. The tale may carry a darker undertone: some historians have suggested that the ‘monkey’ was in fact a powder-monkey — the term for the young boys employed on warships to carry gunpowder to the cannons — and that the hanging was of a child rather than an animal.\n\nNo contemporary record of the event has been found. The first known version of the story appears in a comic song by Ned Corvan, a Tyneside music-hall performer, in the 1850s, and Historic UK found no evidence of French shipwrecks off Hartlepool during the Napoleonic period. What makes the legend remarkable is not its historical accuracy but its afterlife: rather than burying the story, Hartlepool embraced it. The town’s football club adopted H’Angus the Monkey as its mascot, and in 2002 the man inside the suit, Stuart Drummond, stood for mayor of Hartlepool on a joke ticket and won — serving three terms. A bronze statue of the monkey now stands in the town’s marina. The legend has become an act of civic self-identification, a joke the town tells on itself with enough warmth to disarm the mockery.",
     "sources": [
+      "https://teesvalleymuseums.org/visit/museum-of-hartlepool/",
       "https://www.historic-uk.com/HistoryUK/HistoryofEngland/The-Hanging-of-the-Hartlepool-Monkey/",
       "https://www.scottishcorpus.ac.uk/document/?documentid=511",
       "http://folksongandmusichall.com/index.php/who-hung-the-monkey/"
@@ -9282,9 +9288,14 @@
       "shetland"
     ],
     "sources": [
+      "https://archive.org/stream/shetlandfolklor00spengoog/shetlandfolklor00spengoog_djvu.txt",
       "https://www.shetland.org/blog/shetland-folklore",
       "https://shetlandwithlaurie.com/the-blog/shetland-folklore-series-a-land-of-giants"
-    ]
+    ],
+    "earliest_record": "John Spence, Shetland Folk-lore (Lerwick: Johnson & Greig, 1899), which records Pettawater's reputation as a trow-haunted place: 'the chief haunt of trows or hillfolk... to pass Pettawater alone after nightfall required an extraordinary nerve'",
+    "period": "The place's trow-haunted reputation is attested by 1899 (Spence); the specific giant-and-kishie tale as told today appears in Jessie M.E. Saxby's Shetland Traditional Lore (1932)",
+    "origin_type": "oral-tradition",
+    "dating_confidence": "medium"
   },
   {
     "name": "Angelystor",
@@ -11036,6 +11047,7 @@
       "ireland"
     ],
     "sources": [
+      "https://en.wikipedia.org/wiki/Brasil_(mythical_island)",
       "https://mythicalireland.com/blogs/myths-legends/the-phantom-island-of-hy-brasil-in-irish-myth-fable",
       "https://lostcartography.com/the-phantom-island-of-hy-brasil-a-celtic-mystery/",
       "https://hyperallergic.com/how-an-imaginary-island-stayed-on-maps-for-five-centuries/"
@@ -13457,7 +13469,11 @@
     "sources": [
       "https://lincolnshirefolktalesproject.com/2024/02/20/the-dorrington-demons-witches/",
       "https://northlincolnshiremuseum.co.uk/discover/ethel-rudkin-1893-1984/"
-    ]
+    ],
+    "earliest_record": "Ethel H. Rudkin, 'Lincolnshire Folklore, Witches and Devils,' Folk-Lore vol. 45 (1934), pp. 144-57 and 248-67 -- the journal article predates her 1936 book Lincolnshire Folklore and is the earliest scholarly publication of her Metheringham-Ruskington witch material, which includes the Dorrington rat-witch anecdote",
+    "period": "Collected as living oral tradition among Lincolnshire villages in the 1920s-1930s; first published 1934",
+    "origin_type": "oral-tradition",
+    "dating_confidence": "medium"
   },
   {
     "name": "Black Eric of Shetland",
@@ -13951,7 +13967,11 @@
       "https://lincolnshirefolktalesproject.com/2024/02/20/fan-o-the-fens/",
       "https://catalog.hathitrust.org/Record/001286939",
       "https://openlibrary.org/works/OL45722W/Legends_of_the_Fenland_people"
-    ]
+    ],
+    "earliest_record": "Christopher Marlowe, Legends of the Fenland People (1926)",
+    "period": "Published 1926; retold by Susanna O'Neill in Folklore of Lincolnshire (1992), who notes the tale is set in Louth rather than the Fens proper despite its title",
+    "origin_type": "literary",
+    "dating_confidence": "high"
   },
   {
     "name": "Yawkins, the Galloway Smuggler",
@@ -16887,7 +16907,11 @@
       "lincolnshire",
       "trickery"
     ],
-    "detail": "In nineteenth-century Lincolnshire, the schoolmaster known as 'Fiddler' Fynes operated from Kirkstead, a hamlet by the ruins of a Cistercian abbey near Woodhall Spa, as one of the county's most prominent wise men or cunning folk. Unlike many practitioners who worked in secret, Fynes was openly Christian, attending church services regularly while simultaneously maintaining his reputation for solving supernatural problems and crimes by magical means. The Lincolnshire Folk Tales project, drawing on the 1934 fieldwork of folklorist Ethel Rudkin, has documented his practice as the most fully recorded cunning-man tradition in the county. The historian James Obelkevich, in his 1976 academic study of the district, independently names Fynes as one of three cunning people working South Lindsey in this period.\n\nHis most celebrated technique involved the mirror oracle. When a farmer came to him to identify a thief, Fynes would have the farmer look into a mirror, where the thief's face would appear. The farmer would recognise someone, usually a labourer or neighbour, and Fynes would then instruct him to crack the mirror over the image. According to the tradition, the thief would develop a wound on his face corresponding to where the glass was struck, serving simultaneously as punishment, identification, and proof of Fynes's power. The technique had parallels in broader cunning-folk practice across England but was particularly strongly associated with Fynes locally.\n\nFynes sits within a rich Lincolnshire tradition of cunning folk who exploited the county's flat, marsh-edged landscape and its folklore of boggarts, fen lights, and witch-hares. He is distinct from Lincolnshire's other named witches (Dorrington Witch, Tetford Witch, Crazy Kate of Swineshead) by virtue of being a male practitioner explicitly identified as a wise man rather than a condemned witch, making him a counterpoint to the predominantly female Lincolnshire witch tradition."
+    "detail": "In nineteenth-century Lincolnshire, the schoolmaster known as 'Fiddler' Fynes operated from Kirkstead, a hamlet by the ruins of a Cistercian abbey near Woodhall Spa, as one of the county's most prominent wise men or cunning folk. Unlike many practitioners who worked in secret, Fynes was openly Christian, attending church services regularly while simultaneously maintaining his reputation for solving supernatural problems and crimes by magical means. The Lincolnshire Folk Tales project, drawing on the 1934 fieldwork of folklorist Ethel Rudkin, has documented his practice as the most fully recorded cunning-man tradition in the county. The historian James Obelkevich, in his 1976 academic study of the district, independently names Fynes as one of three cunning people working South Lindsey in this period.\n\nHis most celebrated technique involved the mirror oracle. When a farmer came to him to identify a thief, Fynes would have the farmer look into a mirror, where the thief's face would appear. The farmer would recognise someone, usually a labourer or neighbour, and Fynes would then instruct him to crack the mirror over the image. According to the tradition, the thief would develop a wound on his face corresponding to where the glass was struck, serving simultaneously as punishment, identification, and proof of Fynes's power. The technique had parallels in broader cunning-folk practice across England but was particularly strongly associated with Fynes locally.\n\nFynes sits within a rich Lincolnshire tradition of cunning folk who exploited the county's flat, marsh-edged landscape and its folklore of boggarts, fen lights, and witch-hares. He is distinct from Lincolnshire's other named witches (Dorrington Witch, Tetford Witch, Crazy Kate of Swineshead) by virtue of being a male practitioner explicitly identified as a wise man rather than a condemned witch, making him a counterpoint to the predominantly female Lincolnshire witch tradition.",
+    "period": "Mid-to-late 19th century, within the 1825-75 window covered by James Obelkevitch's Religion and Rural Society: South Lindsey 1825-75 (Oxford, 1976), which documents Fynes as a real Kirkstead schoolmaster and cunning man",
+    "historical_setting": "Kirkstead, Lincolnshire, a hamlet by the ruins of Kirkstead Abbey near Woodhall Spa",
+    "origin_type": "oral-tradition",
+    "dating_confidence": "medium"
   },
   {
     "name": "Cormoran, the Giant of St Michael's Mount",
@@ -17811,11 +17835,16 @@
     ],
     "detail": "One of Guernsey's most dramatic folk tales tells of a fairy prince who arrived on Vazon Beach through the magical gate at L'Erée known as the Creux es Faies, a Neolithic passage grave long associated with the otherworld. The prince discovered a beautiful local woman, traditionally named Michèle De Garis, and fell instantly in love. Using fairy enchantment, he spirited her away to his realm and made her queen.\n\nThe fairies were so delighted with their new queen that they resolved to capture more Guernsey women, and a fairy army invaded the island. In one version of the tale, recorded by the nineteenth-century Guernsey writer Lane-Clarke, it was a young woman out fishing who first raised the alarm, spotting \"a multitude of little men dressed in green, and armed with long bows and arrows\" crossing towards the shore. The battle that followed was savage and prolonged; local tradition places the final confrontation at the site now known as Beau Séjour, and by its end only a man and a boy who had hidden together in an oven at St Andrew's had escaped the slaughter. The fairies took the remaining women as their prize.\n\nThe legend explains several features of local identity. The road where the heaviest fighting occurred ran red with blood and is still called Rouge Rue, 'the Red Road.' More playfully, islanders say that the mixing of fairy and human blood explains why many Guernsey folk are short: anyone under six feet is said to descend from the fairies, while the tall are descended from the handful of survivors. The nineteenth-century Guernsey folklorist Sir Edgar MacCulloch, whose collected material was published posthumously as Guernsey Folk Lore (1903), traced the tale to a real event: the 1372 raid on the island by Owain Lawgoch, a Welsh claimant to the principality fighting in French service and remembered locally as Yvon de Galles, whose foreign mercenaries appear to have been refashioned in island memory into an invading army from fairyland. Later nineteenth-century retellings softened the ending considerably, having the fairy conquerors eventually recalled to \"the kingdom of the Invisible Beings\" and leaving their human wives and children behind on the island rather than carrying them off for good. A related tale tied to the same fairy gate at Creux es Faies explains the origin of the Guernsey lily: a fairy suitor who carried off another island girl is said to have given her the flower's bulb as a keepsake, so that her family would always have something to remember her by.",
     "sources": [
+      "https://www.gutenberg.org/files/52834/52834-h/52834-h.htm",
       "https://islandfolktales.wordpress.com/2016/07/31/the-fairy-folk-of-guernsey/",
       "https://museums.gov.gg/CHttpHandler.ashx?id=121606&p=0",
       "https://www.visitguernsey.com/articles/2018/folklore-of-the-bailiwick/",
       "https://eprints.chi.ac.uk/3347/1/Channel%20Island%20Fairies%20Chapter%20Magical%20Folk%20Final.doc"
-    ]
+    ],
+    "earliest_record": "Sir Edgar MacCulloch's folklore manuscripts, collected in Guernsey in the mid-to-late 19th century (MacCulloch, Guernsey's Bailiff, died in 1896) and posthumously edited by Edith F. Carey and published as Guernsey Folk-Lore (1903)",
+    "period": "Victorian-era collection of Guernsey oral tradition, published 1903",
+    "origin_type": "oral-tradition",
+    "dating_confidence": "medium"
   },
   {
     "name": "Le Roi des Auxcriniers",
@@ -17928,7 +17957,11 @@
       "https://www.paranormaldatabase.com/reports/giants.php",
       "https://www.bibliovault.org/BV.book.epl?ISBN=9780226074948",
       "https://minehead.storywalks.info/No-1-Hidden-Histories-Higher-Town"
-    ]
+    ],
+    "earliest_record": "Ruth L. Tongue's Somerset folklore fieldwork, published in Katharine M. Briggs and Ruth L. Tongue (eds.), Folktales of England (University of Chicago Press, 1965), which includes several Giant of Grabbist tales ('...and the Dorcas Jane', '...and Hawkridge Church', '...and the Whitstones', '...and the Stones of Battlegore')",
+    "period": "Collected by Tongue in the mid-20th century and published 1965",
+    "origin_type": "oral-tradition",
+    "dating_confidence": "low"
   },
   {
     "name": "Clíodhna",

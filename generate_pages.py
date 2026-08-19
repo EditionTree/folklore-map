@@ -394,7 +394,9 @@ TOPNAV_CSS = (
     # Canonical banner: Home footer brown, gilded top piping + bottom
     # divider, brand lockup (emblem + "Folklore Finder") anchored left, and
     # the centered nav links. Mirrors the .topnav rules in folklorefinder.css.
-    ".topnav{position:relative;display:flex;align-items:center;justify-content:center;"
+    # z-index 7500: see the .topnav comment in folklorefinder.css -- without a
+    # stacking context here the search dropdown paints behind hero artwork.
+    ".topnav{position:relative;z-index:7500;display:flex;align-items:center;justify-content:center;"
     "flex-wrap:wrap;gap:4px;min-height:58px;padding:10px clamp(16px,3vw,52px);"
     "background:#1a0e06;border-bottom:none}"
     ".topnav::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;"
@@ -1648,7 +1650,7 @@ FEATURED_PAGE = Template("""<!DOCTYPE html>
 <meta name="twitter:image:alt" content="$og_alt"/>
 <link rel="stylesheet" href="/fonts/fonts.css"/>
 <link rel="stylesheet" href="/assets/leaflet/leaflet.css"/>
-<link rel="stylesheet" href="/legend-page.css?v=20260817g"/>
+<link rel="stylesheet" href="/legend-page.css?v=20260817i"/>
 <script type="application/ld+json">$jsonld</script>
 $breadcrumb_jsonld
 </head>

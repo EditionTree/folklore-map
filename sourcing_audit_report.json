@@ -1,110 +1,40 @@
 {
   "generated": true,
   "total_legends": 709,
-  "flagged_count": 345,
+  "flagged_count": 314,
   "flagged": [
-    {
-      "name": "Ben Varrey",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 3,
-      "tiers": [
-        "secondary",
-        "popular",
-        "secondary"
-      ],
-      "urls": [
-        "https://www.transceltic.com/manx/ben-varrey-manx-mermaid-and-story-of-mermaid-and-apple-tree",
-        "https://britishfairies.wordpress.com/tag/ben-varrey/",
-        "https://www.isle-of-man.com/manxnotebook/fulltext/folklore/ch04.htm"
-      ]
-    },
-    {
-      "name": "Canthrig Bwt",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 2,
-      "tiers": [
-        "secondary",
-        "secondary"
-      ],
-      "urls": [
-        "https://visitnorthwales.co.uk/the-cannibal-witch-of-llanberis/",
-        "https://www.mysteriousbritain.co.uk/folklore/canrig-bwt/"
-      ]
-    },
-    {
-      "name": "Daft Eddie and the Merry Hearts of Down",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 3,
-      "tiers": [
-        "secondary",
-        "popular",
-        "secondary"
-      ],
-      "urls": [
-        "http://www.arts.ulster.ac.uk/ulsterscots/usep_pdf/Final%20English%20Texts/Lyttle,%20Wesley%20Guard.%20Daft%20Eddie%20or.%20the%20smugglers%20of%20Strangford%20Lough.%20Belfast%20c.%201890.pdf",
-        "http://clydesburn.blogspot.com/2020/07/daft-eddie-and-smugglers-of-strangford.html",
-        "https://www.abovedown.co.uk/Items/kircubbin"
-      ]
-    },
     {
       "name": "Daniel Fall, the Pirate of the Norfolk Coast",
       "severity_rank": 2,
       "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 4,
+      "source_count": 5,
       "tiers": [
         "secondary",
         "secondary",
         "secondary",
-        "secondary"
+        "secondary",
+        "unclassified"
       ],
       "urls": [
         "https://enjoyingnorfolk.co.uk/here-be-pirates/",
         "https://www.genuki.org.uk/big/eng/NFK/Newspapers/Nfkchron/1781/02",
         "https://www.greatyarmouthmercury.co.uk/news/21024280.hear-story-sailor-killed-pirate-buried-churchyard/",
-        "https://www.greatyarmouthmercury.co.uk/news/21030190.brave-young-captain-died-yarmouth-defending-ship-pirates/"
-      ]
-    },
-    {
-      "name": "Dearg Due",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
-      "tiers": [
-        "secondary"
-      ],
-      "urls": [
-        "https://www.irishcentral.com/roots/dearg-dur-waterford-legend"
+        "https://www.greatyarmouthmercury.co.uk/news/21030190.brave-young-captain-died-yarmouth-defending-ship-pirates/",
+        "http://www.foxearth.org.uk/1781NorfolkChronicle.html"
       ]
     },
     {
       "name": "Denbigh Dragon",
       "severity_rank": 2,
       "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
-      "tiers": [
-        "secondary"
-      ],
-      "urls": [
-        "https://www.mythslegendsodditiesnorth-east-wales.co.uk/denbigh-dragon"
-      ]
-    },
-    {
-      "name": "Devil's Bridge",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 3,
+      "source_count": 2,
       "tiers": [
         "secondary",
-        "secondary",
-        "popular"
+        "unclassified"
       ],
       "urls": [
-        "https://www.discoverceredigion.wales/areas-of-ceredigion/cambrian-mountains/communities-of-the-cambrian-mountains/devils-bridge/",
-        "https://historypoints.org/index.php?page=devils-bridge-aberystwyth",
-        "https://sublimewales.wordpress.com/places/devils-bridge-near-aberystwyth/"
+        "https://www.mythslegendsodditiesnorth-east-wales.co.uk/denbigh-dragon",
+        "https://www.bywgraffiadur.cymru/article/s-SALU-LLE-1250"
       ]
     },
     {
@@ -672,24 +602,6 @@
       ]
     },
     {
-      "name": "William Owen, the Smuggler General of Pembrokeshire",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 4,
-      "tiers": [
-        "secondary",
-        "unclassified",
-        "unclassified",
-        "unclassified"
-      ],
-      "urls": [
-        "http://sharonhoward.org/waleslaw/owentrial.html",
-        "https://discovery.nationalarchives.gov.uk/details/c/F29542",
-        "https://www.library.wales/discover-learn/digital-exhibitions/manuscripts/modern-period/smugglers-autobiography",
-        "http://www.earlymodernweb.org.uk/waleslaw/owentrial2.htm"
-      ]
-    },
-    {
       "name": "Witch of Slieu Whallian",
       "severity_rank": 2,
       "reason": "only secondary/popular sources, no primary or heritage record",
@@ -876,18 +788,6 @@
       ]
     },
     {
-      "name": "Cheesewring",
-      "severity_rank": 3,
-      "reason": "only a single source",
-      "source_count": 1,
-      "tiers": [
-        "encyclopedic"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Cheesewring"
-      ]
-    },
-    {
       "name": "Church Grim",
       "severity_rank": 3,
       "reason": "only a single source",
@@ -909,18 +809,6 @@
       ],
       "urls": [
         "https://en.wikipedia.org/wiki/Colt_pixie"
-      ]
-    },
-    {
-      "name": "Corrag of Glencoe",
-      "severity_rank": 3,
-      "reason": "only a single source",
-      "source_count": 1,
-      "tiers": [
-        "heritage"
-      ],
-      "urls": [
-        "https://www.glencoemuseum.com/post/corrag-of-glencoe"
       ]
     },
     {
@@ -1439,14 +1327,15 @@
       "name": "Angelystor",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
-      "source_count": 6,
+      "source_count": 7,
       "tiers": [
         "encyclopedic",
         "popular",
         "secondary",
         "secondary",
         "unclassified",
-        "secondary"
+        "secondary",
+        "primary"
       ],
       "urls": [
         "https://en.wikipedia.org/wiki/Llangernyw_Yew",
@@ -1454,7 +1343,8 @@
         "https://www.atlasobscura.com/places/llangernyw-yew",
         "https://nation.cymru/culture/top-10-ghosts-wales-black-nun-llangrannog/",
         "https://www.ancient-yew.org/yew_tree_database/llangernyw/",
-        "https://historypoints.org/index.php?page=st-digain-s-church-llangernyw"
+        "https://historypoints.org/index.php?page=st-digain-s-church-llangernyw",
+        "https://www.gutenberg.org/ebooks/20096"
       ]
     },
     {
@@ -1472,34 +1362,6 @@
       ]
     },
     {
-      "name": "Ashleypark Burial Mound",
-      "severity_rank": 4,
-      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
-      "source_count": 2,
-      "tiers": [
-        "encyclopedic",
-        "unclassified"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Ashleypark_Burial_Mound",
-        "https://heritageireland.ie/unguided-sites/ashleypark-burial-mound/"
-      ]
-    },
-    {
-      "name": "Avebury",
-      "severity_rank": 4,
-      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
-      "source_count": 2,
-      "tiers": [
-        "encyclopedic",
-        "unclassified"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Avebury",
-        "https://www.english-heritage.org.uk/visit/places/avebury/history/"
-      ]
-    },
-    {
       "name": "Bartholomew Roberts",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
@@ -1513,20 +1375,6 @@
         "https://en.wikipedia.org/wiki/Bartholomew_Roberts",
         "https://www.historyhit.com/black-bart-the-most-successful-pirate-of-them-all/",
         "https://pembrokeshire.online/2021/11/black-bart/"
-      ]
-    },
-    {
-      "name": "Behy court tomb",
-      "severity_rank": 4,
-      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
-      "source_count": 2,
-      "tiers": [
-        "encyclopedic",
-        "unclassified"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Behy_court_tomb",
-        "https://heritageireland.ie/places-to-visit/ceide-fields-neolithic-site-visitor-centre/"
       ]
     },
     {
@@ -1600,20 +1448,6 @@
       ]
     },
     {
-      "name": "Breeny More Stone Circle",
-      "severity_rank": 4,
-      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
-      "source_count": 2,
-      "tiers": [
-        "encyclopedic",
-        "unclassified"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Breeny_More_Stone_Circle",
-        "https://heritageireland.ie/unguided-sites/breeny-more-stone-circle/"
-      ]
-    },
-    {
       "name": "Brutus of Troy",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
@@ -1627,20 +1461,6 @@
         "https://visittotnes.co.uk/troy-totnes-tale-brutus-stone/",
         "https://en.wikipedia.org/wiki/Brutus_of_Troy",
         "https://cudl.lib.cam.ac.uk/view/MS-FF-00001-00025-00005/1"
-      ]
-    },
-    {
-      "name": "Brú na Bóinne",
-      "severity_rank": 4,
-      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
-      "source_count": 2,
-      "tiers": [
-        "encyclopedic",
-        "unclassified"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Br%C3%BA_na_B%C3%B3inne",
-        "https://heritageireland.ie/places-to-visit/newgrange/"
       ]
     },
     {
@@ -1706,34 +1526,6 @@
       ]
     },
     {
-      "name": "Carrowmore",
-      "severity_rank": 4,
-      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
-      "source_count": 2,
-      "tiers": [
-        "encyclopedic",
-        "unclassified"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Carrowmore",
-        "https://heritageireland.ie/places-to-visit/carrowmore-megalithic-cemetery/"
-      ]
-    },
-    {
-      "name": "Clodagh Standing Stones",
-      "severity_rank": 4,
-      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
-      "source_count": 2,
-      "tiers": [
-        "encyclopedic",
-        "unclassified"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Clodagh_Standing_Stones",
-        "https://heritageireland.ie/unguided-sites/clodagh-standing-stones/"
-      ]
-    },
-    {
       "name": "Cloughmore Stone",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
@@ -1752,31 +1544,35 @@
       ]
     },
     {
-      "name": "Coolcoulaghta Standing Stones",
+      "name": "Corrag of Glencoe",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
       "source_count": 2,
       "tiers": [
-        "encyclopedic",
+        "heritage",
         "unclassified"
       ],
       "urls": [
-        "https://en.wikipedia.org/wiki/Coolcoulaghta_Standing_Stones",
-        "https://heritageireland.ie/unguided-sites/coolcoulaghta-standing-stones/"
+        "https://www.glencoemuseum.com/post/corrag-of-glencoe",
+        "https://www.nts.org.uk/visit/places/glencoe/highlights/tales-of-the-glen"
       ]
     },
     {
-      "name": "Coventina",
+      "name": "Cribarth, the Sleeping Giant",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
-      "source_count": 2,
+      "source_count": 4,
       "tiers": [
-        "encyclopedic",
+        "heritage",
+        "popular",
+        "heritage",
         "unclassified"
       ],
       "urls": [
-        "https://en.wikipedia.org/wiki/Coventina",
-        "https://www.english-heritage.org.uk/visit/places/temple-of-mithras-carrawburgh-hadrians-wall/collection/"
+        "https://www.beacons-npa.gov.uk/the-authority/press-and-news/archive/2009-2/november-2009/awakening-the-sleeping-giant-of-the-cribarth/",
+        "https://singinghead.wordpress.com/2015/12/02/the-sleeping-giant-of-cribarth/",
+        "https://www.breconbeacons.org/discover/great-days-out/days-out-in-the-black-mountain-range-and-fforest-fawr/cwm-tawe-history-giants-and-ghosts",
+        "http://www.maryjones.us/ctexts/giants_wales.html"
       ]
     },
     {
@@ -1808,20 +1604,6 @@
       ]
     },
     {
-      "name": "Cŵn Annwn",
-      "severity_rank": 4,
-      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
-      "source_count": 2,
-      "tiers": [
-        "encyclopedic",
-        "unclassified"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Cŵn_Annwn",
-        "https://www.library.wales/discover-learn/digital-exhibitions/manuscripts/the-middle-ages/white-book-of-rhydderch"
-      ]
-    },
-    {
       "name": "Dead Men of Burton-on-Trent",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
@@ -1833,20 +1615,6 @@
       "urls": [
         "https://en.wikipedia.org/wiki/Burton_Abbey",
         "https://scholarworks.iu.edu/journals/index.php/tmr/article/view/15467/21585"
-      ]
-    },
-    {
-      "name": "Dragon Hill, Uffington",
-      "severity_rank": 4,
-      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
-      "source_count": 2,
-      "tiers": [
-        "encyclopedic",
-        "unclassified"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Dragon_Hill,_Uffington",
-        "https://www.english-heritage.org.uk/visit/places/uffington-castle-white-horse-and-dragon-hill/history/"
       ]
     },
     {
@@ -2025,20 +1793,6 @@
         "https://archive.org/details/tourinscotlandvo01penn",
         "https://journals.socantscot.org/index.php/psas/article/view/7270",
         "https://www.dunvegancastle.com/castle/fairy-flag/"
-      ]
-    },
-    {
-      "name": "Farranahineeny Stone Row",
-      "severity_rank": 4,
-      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
-      "source_count": 2,
-      "tiers": [
-        "encyclopedic",
-        "unclassified"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Farranahineeny_Stone_Row",
-        "https://heritageireland.ie/unguided-sites/farrannahineeny-stone-row/"
       ]
     },
     {
@@ -2298,26 +2052,6 @@
       ]
     },
     {
-      "name": "Gwydion fab Dôn",
-      "severity_rank": 4,
-      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
-      "source_count": 5,
-      "tiers": [
-        "encyclopedic",
-        "encyclopedic",
-        "encyclopedic",
-        "secondary",
-        "unclassified"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Gwydion",
-        "https://www.britannica.com/topic/Gwydion",
-        "https://mythopedia.com/topics/gwydion/",
-        "https://timelessmyths.com/gods/celtic/gwydion/",
-        "https://www.library.wales/discover-learn/digital-exhibitions/manuscripts/the-middle-ages/white-book-of-rhydderch"
-      ]
-    },
-    {
       "name": "Gwyn ap Nudd",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
@@ -2500,22 +2234,6 @@
       ]
     },
     {
-      "name": "Knocknarea",
-      "severity_rank": 4,
-      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
-      "source_count": 3,
-      "tiers": [
-        "encyclopedic",
-        "primary",
-        "unclassified"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Knocknarea",
-        "https://celt.ucc.ie/published/T106500D.html",
-        "https://heritageireland.ie/unguided-sites/knocknarea-queen-medbs-tomb/"
-      ]
-    },
-    {
       "name": "Lancelot",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
@@ -2541,22 +2259,6 @@
       "urls": [
         "https://en.wikipedia.org/wiki/Lincoln_Imp",
         "https://lincolncathedral.com/product/the-legend-of-the-lincoln-imp/"
-      ]
-    },
-    {
-      "name": "Lleu Llaw Gyffes",
-      "severity_rank": 4,
-      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
-      "source_count": 3,
-      "tiers": [
-        "encyclopedic",
-        "heritage",
-        "unclassified"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Lleu_Llaw_Gyffes",
-        "http://www.cistercianway.wales/directory/cymmer-conway/trawsfynydd-dolwyddelan/legend-lleu-llaw-gyffes-and-blodeuedd/",
-        "https://www.library.wales/discover-learn/digital-exhibitions/manuscripts/the-middle-ages/white-book-of-rhydderch"
       ]
     },
     {
@@ -2728,20 +2430,6 @@
       ]
     },
     {
-      "name": "Merlin's Cave",
-      "severity_rank": 4,
-      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
-      "source_count": 2,
-      "tiers": [
-        "encyclopedic",
-        "unclassified"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Merlin%27s_Cave",
-        "https://www.english-heritage.org.uk/visit/places/tintagel-castle/history-and-stories/tintagel-castle-history/"
-      ]
-    },
-    {
       "name": "Merlin's Oak",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
@@ -2773,22 +2461,6 @@
         "https://www.scotsman.com/whats-on/arts-and-entertainment/the-myth-of-the-hebridean-mermaid-1480328",
         "http://anomalyinfo.com/Stories/ca-1830-mermaid-killed-benbecula-scotland",
         "http://carmichaelwatson.blogspot.com/"
-      ]
-    },
-    {
-      "name": "Miosgán Meadhbha",
-      "severity_rank": 4,
-      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
-      "source_count": 3,
-      "tiers": [
-        "encyclopedic",
-        "primary",
-        "unclassified"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Miosg%C3%A1n_Meadhbha",
-        "https://celt.ucc.ie/published/T106500D.html",
-        "https://heritageireland.ie/unguided-sites/knocknarea-queen-medbs-tomb/"
       ]
     },
     {
@@ -2993,7 +2665,7 @@
       "tiers": [
         "encyclopedic",
         "unclassified",
-        "unclassified",
+        "primary",
         "primary",
         "unclassified"
       ],
@@ -3032,7 +2704,7 @@
       "source_count": 5,
       "tiers": [
         "encyclopedic",
-        "unclassified",
+        "primary",
         "encyclopedic",
         "unclassified",
         "unclassified"
@@ -3578,28 +3250,6 @@
       ]
     },
     {
-      "name": "Sir Bedivere",
-      "severity_rank": 4,
-      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
-      "source_count": 6,
-      "tiers": [
-        "encyclopedic",
-        "encyclopedic",
-        "encyclopedic",
-        "primary",
-        "primary",
-        "unclassified"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Bedivere",
-        "https://en.wikipedia.org/wiki/Pa_%C5%B4r_yw%27r_Porthor%3F",
-        "https://en.wikipedia.org/wiki/Englynion_y_Beddau",
-        "https://www.cambridge.org/core/books/medieval-welsh-englynion-y-beddau/8EEE7FA7CE9941040D45AF51482E2A12/listing",
-        "https://d.lib.rochester.edu/camelot/text/collins-arthurian-court-list-in-culhwch-and-olwen.html",
-        "https://www.library.wales/discover-learn/digital-exhibitions/manuscripts/the-middle-ages/the-black-book-of-carmarthen"
-      ]
-    },
-    {
       "name": "Sir Galahad",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
@@ -3617,26 +3267,6 @@
         "https://en.wikipedia.org/wiki/Queste_del_Saint_Graal",
         "https://www.lancelot-project.pitt.edu/LG-web/TheStory-Summary.htm",
         "https://www.nottingham.ac.uk/manuscriptsandspecialcollections/collectionsindepth/medievalliterarymanuscripts/wollatonlibrarycollection/wlclm7.aspx"
-      ]
-    },
-    {
-      "name": "Sir Kay",
-      "severity_rank": 4,
-      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
-      "source_count": 5,
-      "tiers": [
-        "encyclopedic",
-        "encyclopedic",
-        "unclassified",
-        "encyclopedic",
-        "unclassified"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Kay_(Arthurian_legend)",
-        "https://en.wikipedia.org/wiki/Pa_%C5%B4r_yw%27r_Porthor%3F",
-        "https://www.library.wales/discover/digital-gallery/manuscripts/the-middle-ages/the-black-book-of-carmarthen",
-        "https://en.wikipedia.org/wiki/Culhwch_and_Olwen",
-        "https://www.library.wales/discover-learn/digital-exhibitions/manuscripts/the-middle-ages/white-book-of-rhydderch"
       ]
     },
     {
@@ -3888,7 +3518,7 @@
       "source_count": 4,
       "tiers": [
         "encyclopedic",
-        "unclassified",
+        "heritage",
         "primary",
         "unclassified"
       ],
@@ -3917,26 +3547,6 @@
         "https://www.bgs.ac.uk/news/the-stone-of-destiny/",
         "https://www.lyellcollection.org/doi/abs/10.1144/sjg34020145",
         "https://en.wikipedia.org/wiki/Scone_Abbey"
-      ]
-    },
-    {
-      "name": "Stonehenge",
-      "severity_rank": 4,
-      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
-      "source_count": 5,
-      "tiers": [
-        "encyclopedic",
-        "unclassified",
-        "unclassified",
-        "encyclopedic",
-        "encyclopedic"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Stonehenge",
-        "https://www.english-heritage.org.uk/visit/places/stonehenge/history-and-stories/timeline/",
-        "https://www.english-heritage.org.uk/visit/places/stonehenge/history-and-stories/building-stonehenge/",
-        "https://en.wikipedia.org/wiki/Giant%27s_Dance",
-        "https://en.wikipedia.org/wiki/Historia_Regum_Britanniae"
       ]
     },
     {
@@ -4598,22 +4208,6 @@
       ]
     },
     {
-      "name": "The Nine Witches of Gloucester",
-      "severity_rank": 4,
-      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
-      "source_count": 3,
-      "tiers": [
-        "encyclopedic",
-        "encyclopedic",
-        "unclassified"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Nine_sorceresses",
-        "https://en.wikipedia.org/wiki/Peredur_son_of_Efrawg",
-        "https://www.library.wales/discover-learn/digital-exhibitions/manuscripts/the-middle-ages/white-book-of-rhydderch"
-      ]
-    },
-    {
       "name": "The Piper's Cave of Arran",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
@@ -4639,7 +4233,7 @@
       "tiers": [
         "encyclopedic",
         "heritage",
-        "unclassified",
+        "heritage",
         "unclassified",
         "unclassified"
       ],
@@ -4810,22 +4404,6 @@
       ]
     },
     {
-      "name": "Tintagel",
-      "severity_rank": 4,
-      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
-      "source_count": 3,
-      "tiers": [
-        "encyclopedic",
-        "unclassified",
-        "unclassified"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Tintagel_Castle",
-        "https://www.english-heritage.org.uk/visit/places/tintagel-castle/history-and-legend/history/",
-        "https://www.english-heritage.org.uk/visit/places/tintagel-castle/history-and-legend/history/significance/"
-      ]
-    },
-    {
       "name": "Townleyhall passage grave",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
@@ -4882,7 +4460,7 @@
       "source_count": 3,
       "tiers": [
         "encyclopedic",
-        "unclassified",
+        "heritage",
         "unclassified"
       ],
       "urls": [
@@ -4922,29 +4500,13 @@
       ]
     },
     {
-      "name": "Twrch Trwyth",
-      "severity_rank": 4,
-      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
-      "source_count": 3,
-      "tiers": [
-        "encyclopedic",
-        "unclassified",
-        "encyclopedic"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Twrch_Trwyth",
-        "https://www.library.wales/discover-learn/digital-exhibitions/manuscripts/the-middle-ages/white-book-of-rhydderch",
-        "https://www.britannica.com/art/Culhwch-and-Olwen"
-      ]
-    },
-    {
       "name": "Uffington White Horse",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
       "source_count": 3,
       "tiers": [
         "encyclopedic",
-        "unclassified",
+        "heritage",
         "unclassified"
       ],
       "urls": [
@@ -4983,22 +4545,6 @@
         "https://en.wikipedia.org/wiki/Pendragon_Castle",
         "https://www.visitcumbria.com/evnp/pendragon-castle/",
         "https://www.yorkshiredales.org.uk/places/pendragon_castle/"
-      ]
-    },
-    {
-      "name": "Wade and Bell",
-      "severity_rank": 4,
-      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
-      "source_count": 3,
-      "tiers": [
-        "secondary",
-        "unclassified",
-        "encyclopedic"
-      ],
-      "urls": [
-        "https://www.mysteriousbritain.co.uk/legends/wade-and-his-wife/",
-        "https://www.english-heritage.org.uk/visit/places/wheeldale-roman-road/history/",
-        "https://en.wikipedia.org/wiki/Wade%27s_Causeway"
       ]
     },
     {
@@ -5066,22 +4612,6 @@
       ]
     },
     {
-      "name": "Wayland's Smithy",
-      "severity_rank": 4,
-      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
-      "source_count": 3,
-      "tiers": [
-        "encyclopedic",
-        "unclassified",
-        "unclassified"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Wayland%27s_Smithy",
-        "https://www.english-heritage.org.uk/visit/places/waylands-smithy/history/",
-        "https://www.english-heritage.org.uk/visit/places/waylands-smithy/history/research-and-sources/"
-      ]
-    },
-    {
       "name": "Werewolves of Ossory",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
@@ -5095,20 +4625,6 @@
         "https://en.wikipedia.org/wiki/Werewolves_of_Ossory",
         "https://www.revistamirabilia.com/sites/default/files/ars/pdfs/01.vanrosmalen.pdf",
         "https://holinshedrevisited.wordpress.com/2014/10/09/werewolves-in-the-woods-a-12th-century-account-of-strange-happenings-on-the-borders-of-meath-2/"
-      ]
-    },
-    {
-      "name": "Westbury White Horse",
-      "severity_rank": 4,
-      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
-      "source_count": 2,
-      "tiers": [
-        "encyclopedic",
-        "unclassified"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Westbury_White_Horse",
-        "https://www.english-heritage.org.uk/visit/places/bratton-camp-and-white-horse/history/"
       ]
     },
     {
@@ -5159,6 +4675,24 @@
         "https://en.wikipedia.org/wiki/Will-o%27-the-wisp",
         "https://www.oed.com/dictionary/will-o-the-wisp_n",
         "https://www.etymonline.com/word/will-o%27-the-wisp"
+      ]
+    },
+    {
+      "name": "William Owen, the Smuggler General of Pembrokeshire",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 4,
+      "tiers": [
+        "secondary",
+        "unclassified",
+        "primary",
+        "unclassified"
+      ],
+      "urls": [
+        "http://sharonhoward.org/waleslaw/owentrial.html",
+        "https://discovery.nationalarchives.gov.uk/details/c/F29542",
+        "https://www.library.wales/discover-learn/digital-exhibitions/manuscripts/modern-period/smugglers-autobiography",
+        "http://www.earlymodernweb.org.uk/waleslaw/owentrial2.htm"
       ]
     },
     {

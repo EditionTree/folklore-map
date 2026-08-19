@@ -26,7 +26,18 @@ body{
 a{color:inherit}
 button{font:inherit}
 /* Canonical banner — matches folklorefinder.css / TOPNAV_CSS */
+/* Own stacking context, above page content. Without this the nav sits at the
+   root's default level, and .hero is position:relative with z-index:auto -- so
+   it is NOT a stacking context and its children's z-indexes (.hero-copy 1, the
+   piping frame 2, .hero-caption-wrap 3) resolve against the root and paint
+   over the nav. That put the search dropdown behind the legend artwork,
+   because .nav-search's transform:translateY(-50%) makes it a stacking
+   context, capping the dropdown's own z-index:30 at the nav's root level.
+   7500 clears the Leaflet mini-map (panes 400, controls up to 1000) and the
+   homepage's fixed "Submit a legend" prompt (7000), while staying below the
+   share menu (9001) and the achievement toasts (9500). */
 .topnav{
+  z-index:7500;
   position:relative;
   min-height:58px;
   display:flex;

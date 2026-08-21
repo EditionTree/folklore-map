@@ -52,7 +52,7 @@ MUST_NOT_BE_EXPOSED = [
 ]
 
 PRIVATE_TABLES = ["legends", "bug_reports", "feedback",
-                  "legend_submissions", "analytics_events"]
+                  "legend_submissions", "analytics_events", "csp_reports"]
 
 failures: list[str] = []
 passes = 0
@@ -174,6 +174,15 @@ for fn, payload in [
 ]:
     status, _ = request("POST", f"{FUNCTIONS}/{fn}", body=payload)
     check(f"{fn} handles a non-string field without a 500", status == 400, f"got HTTP {status}")
+
+# record_csp_violation is SECURITY DEFINER. EXECUTE is granted to service_role
+# only, so the browser must not be able to reach it through PostgREST's RPC path.
+status, _ = request("POST", f"{REST}/rpc/record_csp_violation",
+                    body={"p_fingerprint": "probe", "p_document_path": "/",
+                          "p_effective_directive": "script-src",
+                          "p_blocked_uri": None, "p_source_file": None,
+                          "p_line_number": None})
+check("anon cannot call record_csp_violation", status >= 400, f"got HTTP {status}")
 
 print(f"\n{passes} passed, {len(failures)} failed")
 if failures:

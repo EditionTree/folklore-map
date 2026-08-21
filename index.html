@@ -1192,7 +1192,10 @@ footer a svg{vertical-align:-.15em;margin-right:5px}
   }
   document.addEventListener('click', e => {
     const el = e.target.closest('[data-track]');
-    if (el) trackEvent('home_cta_click', { cta: el.getAttribute('data-track') });
+    // item_id, not cta: item_id is the generic column for events that do not
+    // fit the named ones. A `cta` key has no column behind it and was silently
+    // dropped even before home_cta_click was added to the allowlist.
+    if (el) trackEvent('home_cta_click', { item_id: el.getAttribute('data-track') });
   });
 
   function renderLotw(){

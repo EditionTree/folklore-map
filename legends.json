@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-20T22:18:11.978386Z",
+  "generated": "2026-08-21T18:38:52.877515Z",
   "total": 709,
   "categories": {
     "beast": "Beasts",
@@ -6497,7 +6497,8 @@
         "sussex"
       ],
       "sources": [
-        "http://www.sussexarch.org.uk/saaf/giants.html"
+        "http://www.sussexarch.org.uk/saaf/giants.html",
+        "https://www.themodernantiquarian.com/site/3520/mount-caburn"
       ]
     },
     {
@@ -7070,8 +7071,13 @@
       "detail": "Gunby Hall, a red-brick house of 1700 near Spilsby, carries one of Lincolnshire's grimmer ghost stories. Tradition holds that Sir William Massingberd discovered his daughter was planning to elope with a postillion in his service. On the night the couple intended to flee, Sir William lay in wait, shot the servant dead, and had the body dragged through the grounds and thrown into the pond; some versions of the story add that, in his rage, he shot his own daughter too.\n\nWord of the killing spread despite efforts to keep it quiet, and locals began to whisper that Gunby was cursed: no male heir of the Massingberd line, it was said, would ever again inherit the house in the direct line, a 'curse' that some later genealogists noted did indeed seem to play out in the family's history.\n\nThe path beside the pond where the postillion's body was dumped became known as 'Ghost Walk', and is said to be haunted by his spectre still, pacing the route forever, waiting for a lover who can never return. The Massingberd family gave Gunby Hall to the National Trust in 1944, and the Trust now occasionally opens the house for Halloween events that draw on this and other tales of its haunted past.",
       "sources": [
         "https://www.mysteriousbritain.co.uk/hauntings/gunby-hall/",
-        "https://www.nationaltrust.org.uk/visit/nottinghamshire-lincolnshire/gunby-estate-hall-and-gardens/history-of-gunby-hall"
-      ]
+        "https://www.nationaltrust.org.uk/visit/nottinghamshire-lincolnshire/gunby-estate-hall-and-gardens/history-of-gunby-hall",
+        "https://www.thedicamillo.com/house/gunby-hall/"
+      ],
+      "period": "Late 17th - early 18th century (Gunby Hall was built c.1699-1700 for Sir William Massingberd, 2nd Baronet, 1650-1719, and the legend is traditionally set within his residency)",
+      "historical_setting": "Gunby Hall, Lincolnshire, built c.1699-1700 for Sir William Massingberd, 2nd Baronet; remained in Massingberd family ownership until gifted to the National Trust in 1944",
+      "origin_type": "oral-tradition",
+      "dating_confidence": "low"
     },
     {
       "name": "Gurt Worm",
@@ -7384,7 +7390,14 @@
         "england",
         "yorkshire"
       ],
-      "detail": "The Hagg Worm is a venomous serpent-dragon of the North York Moors, its name taken from the 'haggs' — the deep, wooded, boggy gullies that score the high moorland, where such a creature was said to lair. Like the other 'worms' of northern England, it was imagined as a great wingless wyrm, swollen and poisonous, that crept out from its hag to prey on livestock and to poison the ground and water around it.\n\nThe worms of Yorkshire and the north-east form a distinct family of dragon-lore — the Lambton Worm, the Sockburn Worm, the Loschy Hill dragon among them — venomous, self-healing serpents rather than the fire-breathing, winged dragons of heraldry, and almost always tied to a specific wood, hill or stretch of river. The Hagg Worm belongs to this native northern tradition, a reminder that to the moorland communities the wild, sucking bogs of the haggs were places where something old and dangerous might still be coiled."
+      "detail": "The Hagg Worm is a venomous serpent-dragon of the North York Moors, its name taken from the 'haggs' — the deep, wooded, boggy gullies that score the high moorland, where such a creature was said to lair. Like the other 'worms' of northern England, it was imagined as a great wingless wyrm, swollen and poisonous, that crept out from its hag to prey on livestock and to poison the ground and water around it.\n\nThe worms of Yorkshire and the north-east form a distinct family of dragon-lore — the Lambton Worm, the Sockburn Worm, the Loschy Hill dragon among them — venomous, self-healing serpents rather than the fire-breathing, winged dragons of heraldry, and almost always tied to a specific wood, hill or stretch of river. The Hagg Worm belongs to this native northern tradition, a reminder that to the moorland communities the wild, sucking bogs of the haggs were places where something old and dangerous might still be coiled.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Worm_(mythology)",
+        "https://yorkshiredictionary.york.ac.uk/words/hagworm"
+      ],
+      "historical_setting": "'Hagworm' is an attested North Yorkshire dialect term for snakes and the blindworm, recorded in field- and place-names from 1540 onward (e.g. 'Hagworme hole', Brimham, 1540; 'Haggwormereyns', Scriven, 1541; 'the Hag-worm Flatt', Wigglesworth, 1722), per the University of York's Yorkshire Historical Dictionary",
+      "origin_type": "oral-tradition",
+      "dating_confidence": "low"
     },
     {
       "name": "Haltadans, the Petrified Trows of Fetlar",
@@ -9008,8 +9021,13 @@
       "detail": "The Knucker of Lyminster is the water-dragon of West Sussex, said to dwell in the Knucker Hole, a deep, cold spring-fed pool near the village of Lyminster, reputed to be bottomless. The name comes from the Old English *nicor*, a water-monster, and from its pool the Knucker would emerge to ravage the countryside, devouring livestock and villagers until the land lay in terror.\n\nSussex tells two endings to the tale. In the knightly version a wandering hero slays the beast and is rewarded; but the version the locals relish best is that of Jim Pulk (or Jim Puttock), a Wick man who killed the dragon by guile rather than valour. He baked an enormous poisoned pie, carted it out to the Knucker Hole, and let the greedy dragon swallow pie, horse, cart and all; the poison did its work, and Jim lopped off the monster's head with his axe, though in the cruellest telling he later died himself, wiping his mouth with a poisoned hand after toasting his victory in the village inn. His supposed gravestone, a worn carved slab in Lyminster church called the 'Slayer's Slab', is still shown as the resting place of the man who killed the Knucker.",
       "sources": [
         "https://en.wikipedia.org/wiki/Knucker",
-        "https://oldechronicles.org.uk/the-dragon-of-knucker-hole/"
-      ]
+        "https://oldechronicles.org.uk/the-dragon-of-knucker-hole/",
+        "https://www.sussexexpress.co.uk/heritage-and-retro/retro/sussex-folklore-explored-wingless-water-dragons-and-the-knucker-holes-of-lyminster-binsted-and-sompting-4466106"
+      ],
+      "earliest_record": "The best-known version of the tale (Jim Puttock defeating the knucker with a poisoned suet pudding) was first put into print in Sussex County Magazine, 1929; the name and tradition of the Knucker Hole itself circulated orally for generations before that with no earlier written record located",
+      "period": "Oral tradition of unknown age; first substantial print record 1929",
+      "origin_type": "oral-tradition",
+      "dating_confidence": "medium"
     },
     {
       "name": "Kraken",
@@ -9493,7 +9511,8 @@
       "sources": [
         "https://en.wikipedia.org/wiki/Limavady",
         "https://www.connollycove.com/limavady/",
-        "https://nationalpurebreddogday.com/the-legendary-dog-leap/"
+        "https://nationalpurebreddogday.com/the-legendary-dog-leap/",
+        "https://www.causewaycoastalroute.com/limavady-history"
       ],
       "date_added": "2026-06-28",
       "tags": [
@@ -9501,7 +9520,10 @@
         "siege",
         "northern-ireland",
         "londonderry"
-      ]
+      ],
+      "historical_setting": "The O'Cahan clan held Limavady and the Roe Valley from around the 14th century until their chief, Donal Ballagh O'Cahan, surrendered to Sir Henry Docwra in 1602 during the Nine Years' War/Elizabethan conquest of Ulster",
+      "origin_type": "oral-tradition",
+      "dating_confidence": "low"
     },
     {
       "name": "Lincoln Imp",
@@ -12414,7 +12436,8 @@
       "pronunciation": "OH-en-a-gat",
       "sources": [
         "https://www.tuatha.ie/oweynagat-cave/",
-        "https://www.ucc.ie/en/media/academic/seanmeanghaeilge/cdi/texts/Meyer-Echtra-Nerai.pdf"
+        "https://www.ucc.ie/en/media/academic/seanmeanghaeilge/cdi/texts/Meyer-Echtra-Nerai.pdf",
+        "https://voicesfromthedawn.com/rathcroghan/"
       ],
       "earliest_record": "Named in the Old Irish tale Echtra Nerai (\"The Adventure of Nera\"), edited and translated by Kuno Meyer from the Egerton 1782 manuscript with variants from the Yellow Book of Lecan, published in Revue Celtique 10 (1889); the cave also frames the opening of the Táin Bó Cúailnge",
       "period": "Ulster Cycle of early Irish literature; underlying composition generally dated to the Old Irish period (roughly 8th-10th century), preserved in later medieval manuscripts",
@@ -12678,7 +12701,12 @@
       "period": "17th century — English Civil War",
       "historical_setting": "Aftermath of the Battle of Edgehill, the first major pitched battle of the English Civil War",
       "origin_type": "literary",
-      "dating_confidence": "high"
+      "dating_confidence": "high",
+      "sources": [
+        "https://www.historic-uk.com/HistoryUK/HistoryofEngland/Phantom-Battle-of-Edgehill/",
+        "https://historicengland.org.uk/listing/the-list/list-entry/1000009",
+        "https://historicengland.org.uk/content/docs/listing/battlefields/edgehill/"
+      ]
     },
     {
       "name": "Phantom Hare of Bolingbroke Castle",
@@ -13796,7 +13824,8 @@
       ],
       "detail": "Sarey Bowers was the reputed witch of Kirtlington in Oxfordshire, remembered in local folklore from a cottage at Foxtownsend on the Heyford Road, and her legend belongs to the widespread and ancient British belief that a witch could change her shape into that of a hare, or in her case, a fox. Her story is bound up with the local hunt, for Sarey was said to have a particular sympathy with the foxes the huntsmen pursued, and to use her powers to thwart them.\n\nIn the best-remembered tale, the local hunt was repeatedly frustrated by a remarkably fine vixen that always outran the hounds and could never be caught, however close they came. On one occasion the huntsmen pressed the fox so hard that they saw it dart, exhausted, straight into the cottage of Sarey Bowers, the known witch. Bursting in after it, they found no fox anywhere in the house, only the old woman herself, sitting innocently by her fire, but suspiciously out of breath, as though she had been running for her life. The implication was plain: the vixen and the witch were one and the same.\n\nSarey was further blamed for laying her spells on the hunt itself: bewitching the foxes to give them speed and cunning to escape, and confounding the hounds so that they lost the scent and could not follow the trail. Her legend is a classic local example of the shape-shifting witch-hare (or witch-fox) tradition found across England, in which an old woman's affinity with a hunted animal, and her breathlessness after its narrow escape, betray her as a witch able to take its form. The tale survives only in twentieth-century folklore compilations (Christine Bloxham's Folklore of Oxfordshire and Jennifer Westwood and Jacqueline Simpson's The Lore of the Land), with no earlier or contemporary record behind it, reading more as local hunting-country memory than a documented case.",
       "sources": [
-        "https://www.darkoxfordshire.co.uk/explore/foxes-and-witches-in-kirtlington/"
+        "https://www.darkoxfordshire.co.uk/explore/foxes-and-witches-in-kirtlington/",
+        "https://books.google.com/books/about/The_Lore_of_the_Land.html?id=l3USAQAAIAAJ"
       ],
       "earliest_record": "Recorded in 20th-century folklore compilations — Christine Bloxham's Folklore of Oxfordshire and Jennifer Westwood & Jacqueline Simpson's The Lore of the Land — describing events set in the early 20th century; no earlier or contemporary record located",
       "period": "Early 20th century as told; put into print later in the 20th century",

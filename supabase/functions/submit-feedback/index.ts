@@ -30,7 +30,10 @@ const FEEDBACK_TYPES = [
 
 // Injection / abuse patterns — screened against the free-text fields
 const INJECTION = [
-  /\b(ignore|forget|disregard)\s+(previous|prior|all)\s+(instructions?|rules?|commands?)/i,
+  // Matches "ignore all previous instructions" and its variants. The original
+  // pattern allowed exactly one word between the verb and the noun, so the
+  // commonest phrasing of this attack was not caught at all.
+  /\b(?:ignore|forget|disregard|override|bypass)\s+(?:(?:the|all|any|your|these|those|of|previous|prior|above|earlier|preceding|system)\s+){0,4}(?:instructions?|rules?|commands?|prompts?|directives?|guidelines?)/i,
   /\b(DROP\s+TABLE|DELETE\s+FROM|TRUNCATE|INSERT\s+INTO|UPDATE\s+\w+\s+SET|ALTER\s+TABLE)/i,
   /<script/i,
   /javascript:/i,

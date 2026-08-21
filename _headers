@@ -1,8 +1,15 @@
+# Permissions-Policy: geolocation must be (self), NOT (). An empty allowlist
+# disables the Geolocation API outright, so "Find folklore near me" -- the
+# homepage's primary call to action -- could never work: no permission prompt
+# ever appeared, and the error branch reported "Location access was declined",
+# blaming the visitor for a refusal they never made. Coordinates still never
+# leave the browser; the browser's own permission prompt is the real control.
+# camera/microphone stay fully disabled, the site uses neither.
 /*
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
-  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Permissions-Policy: camera=(), microphone=(), geolocation=(self)
   Strict-Transport-Security: max-age=15552000; includeSubDomains
   Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://challenges.cloudflare.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://*.tile.openstreetmap.org https://*.stamen.com https://*.stadiamaps.com https://stamen-tiles.a.ssl.fastly.net https://*.basemaps.cartocdn.com blob:; connect-src 'self' https://*.supabase.co https://challenges.cloudflare.com; frame-src https://challenges.cloudflare.com; worker-src blob:; base-uri 'self'; object-src 'none'; frame-ancestors 'none';
 

@@ -1265,21 +1265,42 @@ document.addEventListener('click', e => {
   });
 });
 
+// Both the popup and the sidebar render a bookmark button carrying the same
+// data-bookmark value, so one query finds every button for a legend wherever it
+// is currently on screen. They use different icons, hence the class check.
+function syncBookmarkButtons(name) {
+  const on = isBookmarked(name);
+  const label = on ? 'Remove bookmark' : 'Bookmark';
+  document.querySelectorAll(`[data-bookmark="${encodeURIComponent(name)}"]`).forEach(btn => {
+    btn.classList.toggle('bookmarked', on);
+    btn.setAttribute('aria-label', label);
+    btn.title = label;
+    btn.innerHTML = btn.classList.contains('popup-bookmark')
+      ? popupBookmarkTabSvg(on)
+      : bookmarkIconSvg(on);
+  });
+}
+
+function updateSavedCount() {
+  const badge = document.querySelector('.filter-btn[data-cat="bookmarks"] .count-badge');
+  if (badge) badge.textContent = bookmarks.size;
+}
+
 function toggleBookmark(name) {
   if (bookmarks.has(name)) bookmarks.delete(name);
   else bookmarks.add(name);
   saveBookmarks();
-  markers.forEach(marker => marker.setPopupContent(buildPopup(marker._legendData)));
-  buildFilters();
-  // Re-filtering clears the cluster layers, which would close the open popup.
-  // Only rebuild the marker layer when the bookmark filter is active (so the
-  // visible set genuinely changes); otherwise just refresh the sidebar in
-  // place so the popup you clicked the bookmark in stays open.
-  if (bookmarksOnly) {
-    filterMarkers();
-  } else {
-    buildSidebarList(markers.filter(matchesActiveFilters).map(m => m._legendData));
-  }
+
+  // One legend changed, so touch only what that legend affects. This used to
+  // rebuild all 709 popup bodies, the entire filter bar, and every one of the
+  // ~4,200 sidebar DOM nodes, on every single click of a star.
+  syncBookmarkButtons(name);
+  updateSavedCount();
+
+  // The visible set only actually changes when the bookmark filter is on.
+  // Re-filtering clears the cluster layers, which closes the popup you just
+  // clicked in, so it stays conditional.
+  if (bookmarksOnly) filterMarkers();
 }
 
 let LEGENDS = [];
@@ -1312,7 +1333,12 @@ function loadMarkers(legends) {
     if (!CATEGORIES[leg.category]) leg.category = 'beast';
     const marker = L.marker([leg.lat, leg.lng], {
       icon: makeIcon(leg.category, false)
-    }).bindPopup(buildPopup(leg), { maxWidth: 330 });
+    // Popup content is bound as a function, not a string. Leaflet calls it when
+    // the popup opens, so the 709 popup bodies are not all built at load, and
+    // anything that changes what a popup should say (a bookmark toggle, the
+    // featured-artwork manifest arriving) needs no rebuild pass at all: the
+    // next open picks up current state on its own.
+    }).bindPopup(() => buildPopup(leg), { maxWidth: 330 });
     marker._legendData = leg;
     markers.push(marker);
   });
@@ -1905,7 +1931,11 @@ fetch('legend_pages.json')
   .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
   .then(data => {
     FEATURED_PAGES = data.pages || {};
-    markers.forEach(marker => marker.setPopupContent(buildPopup(marker._legendData)));
+    // Nothing else to do. Popup content is a function, so every popup opened
+    // from here on reads the manifest itself. This previously rebuilt all 709
+    // popup bodies the moment a 489KB fetch resolved. A popup cannot already be
+    // open at this point: the manifest resolves during load, before any marker
+    // has been clicked.
   })
   .catch(err => console.warn('Featured artwork manifest unavailable:', err));
 

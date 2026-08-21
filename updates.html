@@ -6,7 +6,22 @@
 <!-- Cloudflare Web Analytics -->
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "64d1fd37251d426f8a0d8fbc83ea350b"}'></script>
 <!-- End Cloudflare Web Analytics -->
-<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+<!-- Cloudflare Turnstile (user submissions).
+     render=explicit so the challenge runs when a form is opened, not on page
+     load. Implicit rendering scans the DOM as soon as api.js loads and renders
+     every .cf-turnstile match whether or not its container is visible, so every
+     visitor was running a challenge for modals most of them never open.
+     The queue below exists because api.js is async: a modal opened before it
+     finishes loading would otherwise find window.turnstile undefined. -->
+<script>
+  window.__tsReady = false;
+  window.__tsPending = [];
+  window.onTurnstileLoad = function () {
+    window.__tsReady = true;
+    window.__tsPending.splice(0).forEach(function (fn) { fn(); });
+  };
+</script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onTurnstileLoad&amp;render=explicit" async defer></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>What's New &#183; Folklore Finder</title>
 <meta name="description" content="What's new on Folklore Finder — recently added legends, new collections, site updates, and the Research Journal."/>
@@ -380,9 +395,31 @@ footer a{color:var(--ink-light)}
 })();
 
 // ── FEEDBACK POPUP ──────────────────────────────────────────────────────
+// Turnstile is rendered explicitly, when a modal opens, rather than on page load.
+// Renders on first open, resets on every open after that, so each submission gets
+// a fresh token (they are single-use and expire after 300 seconds). If api.js has
+// not finished loading yet the call is queued and replayed by onTurnstileLoad.
+const turnstileWidgets = new Map();
+function mountTurnstile(selector) {
+  const container = document.querySelector(selector);
+  if (!container) return;
+  if (!window.__tsReady) {
+    window.__tsPending.push(function () { mountTurnstile(selector); });
+    return;
+  }
+  try {
+    const existing = turnstileWidgets.get(container);
+    if (existing !== undefined) { window.turnstile.reset(existing); return; }
+    turnstileWidgets.set(container, window.turnstile.render(container, {
+      sitekey: container.dataset.sitekey,
+      theme:   container.dataset.theme || 'light',
+    }));
+  } catch (e) {}
+}
+
 function openFeedback(){
   document.getElementById('feedbackModalOverlay').classList.add('open');
-  if (window.turnstile) { try { turnstile.reset(document.querySelector('.cf-turnstile')); } catch(e){} }
+  mountTurnstile('.cf-turnstile');
 }
 function closeFeedback(){
   document.getElementById('feedbackModalOverlay').classList.remove('open');
@@ -444,7 +481,7 @@ async function submitFeedback() {
     statusEl.className = 'f-status error';
     submitBtn.disabled = false;
     submitBtn.textContent = 'Send Feedback';
-    if (window.turnstile) { try { turnstile.reset(document.querySelector('.cf-turnstile')); } catch(e){} }
+    mountTurnstile('.cf-turnstile');
   }
 }
 

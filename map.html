@@ -43,8 +43,22 @@
   }
   </script>
   <link rel="icon" type="image/png" href="favicon.png"/>
-  <!-- Cloudflare Turnstile (user submissions) -->
-  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  <!-- Cloudflare Turnstile (user submissions).
+       render=explicit so the challenge runs when a form is opened, not on page
+       load. Implicit rendering scans the DOM as soon as api.js loads and renders
+       every .cf-turnstile match whether or not its container is visible, so every
+       visitor was running a challenge for modals most of them never open.
+       The queue below exists because api.js is async: a modal opened before it
+       finishes loading would otherwise find window.turnstile undefined. -->
+  <script>
+    window.__tsReady = false;
+    window.__tsPending = [];
+    window.onTurnstileLoad = function () {
+      window.__tsReady = true;
+      window.__tsPending.splice(0).forEach(function (fn) { fn(); });
+    };
+  </script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onTurnstileLoad&amp;render=explicit" async defer></script>
   <link rel="stylesheet" href="/assets/leaflet/leaflet.css"/>
   <link rel="stylesheet" href="/assets/leaflet/MarkerCluster.css"/>
   <link rel="stylesheet" href="/assets/leaflet/MarkerCluster.Default.css"/>
@@ -1908,6 +1922,28 @@ function restoreModalFocus() {
   modalReturnFocus = null;
 }
 
+// Turnstile is rendered explicitly, when a modal opens, rather than on page load.
+// Renders on first open, resets on every open after that, so each submission gets
+// a fresh token (they are single-use and expire after 300 seconds). If api.js has
+// not finished loading yet the call is queued and replayed by onTurnstileLoad.
+const turnstileWidgets = new Map();
+function mountTurnstile(selector) {
+  const container = document.querySelector(selector);
+  if (!container) return;
+  if (!window.__tsReady) {
+    window.__tsPending.push(function () { mountTurnstile(selector); });
+    return;
+  }
+  try {
+    const existing = turnstileWidgets.get(container);
+    if (existing !== undefined) { window.turnstile.reset(existing); return; }
+    turnstileWidgets.set(container, window.turnstile.render(container, {
+      sitekey: container.dataset.sitekey,
+      theme:   container.dataset.theme || 'light',
+    }));
+  } catch (e) {}
+}
+
 function openBugReport() {
   document.getElementById('bugDescription').value = '';
   document.getElementById('bugSteps').value = '';
@@ -1915,7 +1951,7 @@ function openBugReport() {
   s.style.display = 'none'; s.className = 'bug-status';
   const btn = document.querySelector('#bugModal .bug-submit-btn');
   btn.disabled = false; btn.textContent = 'Send Report';
-  if (window.turnstile) { try { turnstile.reset(document.querySelector('#bugModal .cf-turnstile')); } catch(e){} }
+  mountTurnstile('#bugModal .cf-turnstile');
   modalReturnFocus = document.activeElement;
   document.getElementById('bugModal').style.display = 'flex';
   document.getElementById('bugDescription').focus();
@@ -1982,7 +2018,7 @@ async function submitBugReport() {
     statusEl.style.display = 'block';
     submitBtn.disabled = false;
     submitBtn.textContent = 'Send Report';
-    if (window.turnstile) { try { turnstile.reset(document.querySelector('#bugModal .cf-turnstile')); } catch(e){} }
+    mountTurnstile('#bugModal .cf-turnstile');
   }
 }
 
@@ -2022,7 +2058,7 @@ function openSubmitLegend() {
   st.style.display = 'none'; st.className = 'bug-status';
   document.querySelector('#submitModal .bug-submit-btn').disabled = false;
   document.querySelector('#submitModal .bug-submit-btn').textContent = 'Submit';
-  if (window.turnstile) { try { turnstile.reset(document.querySelector('#submitModal .cf-turnstile')); } catch(e){} }
+  mountTurnstile('#submitModal .cf-turnstile');
   modalReturnFocus = document.activeElement;
   document.getElementById('submitModal').style.display = 'flex';
   document.getElementById('submitName').focus();
@@ -2103,7 +2139,7 @@ async function submitLegend() {
     statusEl.style.display = 'block';
     btn.disabled = false;
     btn.textContent = 'Submit';
-    if (window.turnstile) { try { turnstile.reset(document.querySelector('#submitModal .cf-turnstile')); } catch(e){} }
+    mountTurnstile('#submitModal .cf-turnstile');
   }
 }
 </script>

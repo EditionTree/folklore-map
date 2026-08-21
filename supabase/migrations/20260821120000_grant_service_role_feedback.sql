@@ -1,0 +1,21 @@
+-- Repair: the submit-feedback edge function has never been able to write a row.
+--
+-- 20260706120000_add_feedback.sql enabled RLS and revoked the anon/authenticated
+-- grants, but never granted anything to service_role. bug_reports and
+-- legend_submissions were created by hand in the dashboard, which grants
+-- service_role automatically -- so that migration reproduced the *revoke* half of
+-- a pattern whose *grant* half had been supplied invisibly, and nobody noticed.
+--
+-- Service role bypasses RLS. It does NOT bypass table-level grants. Every
+-- feedback submission since 2026-07-06 failed with 42501 (permission denied) and
+-- the visitor was shown "Feedback could not be saved -- please try again".
+--
+-- Grants mirror bug_reports exactly: INSERT for the edge function, SELECT/UPDATE
+-- for the triage workflow (status, flagged, flagged_reason).
+--
+-- analytics_events has the identical fault and is deliberately NOT fixed here.
+-- submit-event is unauthenticated, so granting INSERT turns a broken endpoint
+-- into a working wide-open one; that grant ships with its rate limiting and
+-- field validation in one change.
+
+grant insert, select, update on public.feedback to service_role;

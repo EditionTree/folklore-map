@@ -437,6 +437,39 @@ Cheap changes with a high effect on how deliberate the product feels.
 **Explorer Seals**, **Research Journal**. "Collections" is the product label; "themed trails" is
 descriptive copy only, never an interface name.
 
+**Unify the navigation. Do this one first — it is the largest visible inconsistency on the site,
+and it is the reason this section exists.**
+
+There are **four** copies of the nav, not the three recorded in `project_current_state`:
+
+1. `folklorefinder.css` — the 8 hand-written pages
+2. `legend-page.css` — the ~709 generated legend detail pages
+3. `TOPNAV_CSS` inlined in `generate_pages.py` — generated browse/category/region/period/collection pages
+4. **`map.html`'s own 34KB inline `<style>` block — the one that has drifted**
+
+`map.html` is the only top-level page that does not load `folklorefinder.css` at all. Every other
+page renders `<nav class="topnav">` with a `topnav-links` wrapper, an SVG icon per link, and the
+`nav-search` component. `map.html` renders `<nav class="map-nav">`: plain text links, no icons,
+no search. It is a structurally different navigation, not a caching miss.
+
+Two routes, and the choice matters:
+
+- **Add `folklorefinder.css` to `map.html`.** Smallest diff, but map.html carries 34KB of inline
+  CSS that may override it in ways that are invisible until they are not. See the
+  folklorefinder.css override gotcha in `project_folklore_map`.
+- **Port the topnav markup and its CSS into `map.html`.** Larger diff, no cascade risk, but it
+  creates a *fifth* copy unless it lands as part of collapsing all four into one.
+
+Collapsing to one shared source is the actual goal, and it belongs here rather than as a fifth
+patch. This is the same trap that has already been hit twice: a nav change shipped to one copy,
+looking like three separate design bugs. Whatever route is chosen, all four copies must end up
+consuming the same definition, and each `?v=` must be bumped (assets are served immutable for a
+year, so an un-bumped version ships nothing).
+
+**Verification is browser-only and cannot be done from the agent environment** (the browser pane
+crashes the desktop app). Budget a manual pass: desktop and mobile, map and one page of each
+other kind, day and dusk modes.
+
 **Iconography.** Replace emoji category symbols with custom SVG glyphs in a single woodcut or
 engraved style. `map.html` already stores category art as `iconPath` SVG path data, so the
 plumbing exists — this is an art task, not an engineering one.

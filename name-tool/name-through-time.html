@@ -166,7 +166,7 @@
    ============================================================ */
 let NAMES = [];
 async function loadNames() {
-  const res = await fetch('names.json?v=' + Date.now());
+  const res = await fetch('names.json');
   const data = await res.json();
   NAMES = data.names;
 }

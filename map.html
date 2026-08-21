@@ -1547,7 +1547,7 @@ let LEGEND_COLLECTIONS = new Map(); // legend name -> [{slug, title}]
 let UK_PLACES = [];                 // [{name, lat, lng}]
 
 function loadSearchExtras() {
-  fetch('collections.json?v=' + Date.now())
+  fetch('collections.json')
     .then(r => r.json())
     .then(data => {
       COLLECTIONS = data.collections || [];
@@ -1568,7 +1568,7 @@ function loadSearchExtras() {
     })
     .catch(() => {});
 
-  fetch('uk-places.json?v=' + Date.now())
+  fetch('uk-places.json')
     .then(r => r.json())
     .then(data => { UK_PLACES = data.places || []; })
     .catch(() => {});
@@ -1896,12 +1896,12 @@ function onDataError(err) {
 }
 
 function loadLocalLegends() {
-  return fetch('legends.json?v=' + Date.now())
+  return fetch('legends.json')
     .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
     .then(data => data.legends || data);
 }
 
-fetch('legend_pages.json?v=' + Date.now())
+fetch('legend_pages.json')
   .then(r => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json(); })
   .then(data => {
     FEATURED_PAGES = data.pages || {};

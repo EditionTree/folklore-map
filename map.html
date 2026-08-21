@@ -1903,16 +1903,30 @@ fetch('legend_pages.json?v=' + Date.now())
 
 if (SUPABASE_URL && SUPABASE_ANON_KEY) {
   // ── Fetch from Supabase ──────────────────────────────────────────────
-  // Selects only the fields the map needs, ordered by name, no row limit.
+  // Selects only the fields the map needs, ordered by name.
   // Excludes long-form detail/date fields; tags power the place filter.
   // period/cultural_tradition/alt_names power expanded search matching.
-  fetch(`${SUPABASE_URL}/rest/v1/legends?select=name,lat,lng,category,region,summary,source,tags,period,cultural_tradition,alt_names&order=name.asc&limit=10000`, {
+  // A ceiling, not a page size: 709 entries today. Defined once and interpolated
+  // into the URL so the constant and the query cannot drift apart, and checked
+  // on the way back -- hitting the limit would otherwise truncate the map in
+  // silence, which is the failure mode worth avoiding, not the large number.
+  const MAP_QUERY_LIMIT = 2000;
+  // public_legends, not legends: a view exposing only these 11 columns, so a
+  // column added to the base table later is not public by default. anon holds
+  // no grant on the base table at all.
+  fetch(`${SUPABASE_URL}/rest/v1/public_legends?select=name,lat,lng,category,region,summary,source,tags,period,cultural_tradition,alt_names&order=name.asc&limit=${MAP_QUERY_LIMIT}`, {
     headers: {
       'apikey':        SUPABASE_ANON_KEY,
       'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
     }
   })
   .then(r => { if (!r.ok) throw new Error(`Supabase HTTP ${r.status}`); return r.json(); })
+  .then(rows => {
+    if (rows.length >= MAP_QUERY_LIMIT) {
+      console.warn(`Map hit the ${MAP_QUERY_LIMIT}-row query limit, so entries are missing. Raise MAP_QUERY_LIMIT or paginate.`);
+    }
+    return rows;
+  })
   .then(onDataLoaded)
   .catch(err => {
     console.warn('Supabase unavailable, using local legend backup:', err);

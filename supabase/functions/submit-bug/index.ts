@@ -36,8 +36,15 @@ const INJECTION = [
   /sudo\s+/i,
 ]
 
-function sanitise(s: string, max: number): string {
-  return String(s ?? '').trim().slice(0, max).replace(/[\x00-\x08\x0B\x0C\x0E-\x1F]/g, '')
+// JSON.parse yields arbitrary types, so a field the client declares as text can
+// arrive as a number, an array or an object. `?.` guards null and undefined but
+// not the wrong type — `(1)?.trim()` still throws — so narrow to string first.
+function text(v: unknown): string {
+  return typeof v === 'string' ? v : ''
+}
+
+function sanitise(v: unknown, max: number): string {
+  return text(v).trim().slice(0, max).replace(/[\x00-\x08\x0B\x0C\x0E-\x1F]/g, '')
 }
 
 Deno.serve(async (req: Request) => {
@@ -52,7 +59,7 @@ Deno.serve(async (req: Request) => {
     })
   }
 
-  let body: Record<string, string>
+  let body: Record<string, unknown>
   try { body = await req.json() } catch {
     return new Response(JSON.stringify({ error: 'Invalid request' }), {
       status: 400, headers: { ...CORS, 'Content-Type': 'application/json' },
@@ -62,7 +69,7 @@ Deno.serve(async (req: Request) => {
   const { description, steps, url, browser, device, cf_turnstile_response } = body
 
   // ── Required fields ───────────────────────────────────────────────────
-  if (!description?.trim() || !cf_turnstile_response?.trim()) {
+  if (!text(description).trim() || !text(cf_turnstile_response).trim()) {
     return new Response(JSON.stringify({ error: 'A description and the security check are required' }), {
       status: 400, headers: { ...CORS, 'Content-Type': 'application/json' },
     })
@@ -71,7 +78,7 @@ Deno.serve(async (req: Request) => {
   // ── Turnstile server-side verification ────────────────────────────────
   const form = new FormData()
   form.append('secret', TURNSTILE_SECRET)
-  form.append('response', cf_turnstile_response)
+  form.append('response', text(cf_turnstile_response))
   const cfRes  = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
     method: 'POST', body: form,
   })

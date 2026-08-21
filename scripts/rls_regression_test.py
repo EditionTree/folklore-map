@@ -6,7 +6,7 @@ Run this after any migration, and quarterly regardless:
     python scripts/rls_regression_test.py
 
 It tests the live REST API as an anonymous browser would, using the same
-published anon key that ships in map.html. That is deliberate: testing through
+published key that ships in map.html. That is deliberate: testing through
 PostgREST checks what an attacker can actually reach, which is not always what
 the grant tables imply. Two examples this suite exists because of:
 
@@ -32,14 +32,9 @@ REST = f"{BASE}/rest/v1"
 FUNCTIONS = f"{BASE}/functions/v1"
 ORIGIN = "https://folklorefinder.uk"
 
-# The published anon key from map.html. Public by design; it is the whole point
-# of this suite that holding it grants almost nothing.
-ANON_KEY = (
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9."
-    "eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNhbmp6a3B2and2a2JqY2R1YWFqIiwicm9sZSI6"
-    "ImFub24iLCJpYXQiOjE3ODAyMDkxODIsImV4cCI6MjA5NTc4NTE4Mn0."
-    "7RJu-aV_WYHgbvV732FMoCPNH_sXeLSFg2CQTaYi4kI"
-)
+# The published key from map.html. Public by design; it is the whole point of
+# this suite that holding it grants almost nothing.
+PUBLISHABLE_KEY = "sb_publishable_-XlJB_bYZlSjHAn7rQ2MQQ_BFsS5-4v"
 
 # Exactly what the website reads. If a column is added to public.legends it must
 # NOT appear here unless it is genuinely public; that is what the view is for.
@@ -66,8 +61,8 @@ passes = 0
 def request(method, url, body=None, headers=None):
     """Return (status, text). Never raises on an HTTP error status."""
     hdrs = {
-        "apikey": ANON_KEY,
-        "Authorization": f"Bearer {ANON_KEY}",
+        "apikey": PUBLISHABLE_KEY,
+        "Authorization": f"Bearer {PUBLISHABLE_KEY}",
         "Origin": ORIGIN,
         "Content-Type": "application/json",
     }

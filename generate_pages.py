@@ -800,116 +800,44 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 
 
 def track_event_script(event_type, **fields):
-    """Fire-and-forget analytics beacon for a static page (collection/period
-    views) — mirrors legend-page.js's trackEvent() but standalone since these
-    pages don't load that shared script."""
+    """Analytics parameters for a static page (collection/period views).
+
+    Emits a hidden element carrying the payload rather than a <script> block.
+    /js/page.js reads it and fires the same beacon legend-page.js does. It used
+    to inline the whole beacon with the payload baked in, which gave every page
+    a different CSP hash and made script-src 'unsafe-inline' unremovable."""
     payload = json.dumps({"event_type": event_type, **fields}, ensure_ascii=False)
     return (
-        "<script>(function(){try{"
-        "var s=sessionStorage.getItem('ff_session_id');"
-        "if(!s){s=Math.random().toString(36).slice(2)+Date.now().toString(36);sessionStorage.setItem('ff_session_id',s);}"
-        "var p=Object.assign({referring_page:location.pathname,session_id:s}," + payload + ");"
-        "fetch('https://canjzkpvjwvkbjcduaaj.supabase.co/functions/v1/submit-event',"
-        "{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(p),keepalive:true}).catch(function(){});"
-        "}catch(e){}})();</script>\n"
+        # esc(), not json.dumps(): the payload is already JSON, and wrapping it
+        # again yields backslash-quote pairs. A backslash is not an escape inside
+        # an HTML attribute, so the value truncated at the first quote and
+        # JSON.parse saw only '{'. HTML-escaping the raw JSON round-trips.
+        '<div hidden data-track="' + esc(payload) + '"></div>' + chr(10) +
+        '<script src="/js/page.js?v=20260822a"></script>\n'
     )
 
 
 def collection_index_progress_script():
-    """Populates the begin/continue/complete state on each collection card on
-    the collections landing page, from the same ff_visited_legends_v1
-    localStorage key My Archive reads. One small JSON fetch per card
-    (collection/<slug>.json, already generated for the map's collection
-    filter), so cost stays proportional to the number of collections shown."""
-    return (
-        "<script>(function(){try{"
-        "var visited=JSON.parse(localStorage.getItem('ff_visited_legends_v1')||'null')||{};"
-        "var set=new Set(Object.keys(visited));"
-        "document.querySelectorAll('.col-index-row[data-slug]').forEach(function(row){"
-        "var slug=row.getAttribute('data-slug');"
-        "fetch('collection/'+slug+'.json').then(function(r){return r.json();}).then(function(d){"
-        "var members=d.legends||[];"
-        "if(!members.length)return;"
-        "var count=members.filter(function(n){return set.has(n);}).length;"
-        "var pct=Math.round(count/members.length*100);"
-        "var done=count===members.length;"
-        "var prog=row.querySelector('.col-index-progress');"
-        "var more=row.querySelector('.col-index-more');"
-        "if(prog){"
-        "prog.hidden=false;"
-        "prog.querySelector('.cip-fill').style.width=pct+'%';"
-        "prog.querySelector('.cip-label').textContent=done?'Collection complete \\u2713':(count+' of '+members.length+' discovered');"
-        "}"
-        "if(more)more.textContent=done?'Revisit the collection \\u2192':(count>0?'Continue collection \\u2192':'Begin collection \\u2192');"
-        "if(done)row.classList.add('done');"
-        "}).catch(function(){});"
-        "});"
-        "}catch(e){}})();</script>\n"
-    )
+    """The collections landing page needs no parameters: /js/page.js finds the
+    .col-index-row[data-slug] cards itself. Kept as a function so callers do not
+    change, and so the shared script is guaranteed to be present on a page that
+    might not emit a track event."""
+    return '<script src="/js/page.js?v=20260822a"></script>\n'
 
 
 def collection_detail_progress_script(slug, title):
-    """Same progress computation as collection_index_progress_script(), but
-    for the single collection page itself — one summary bar near the top
-    rather than one per card. Fetches its own membership JSON relative to
-    the page (same directory), since the full member list isn't known
-    client-side otherwise (pages 2+ only carry that page's slice).
+    """Progress bar and share card for a single collection page.
 
-    Also reveals the "Share this collection" button (only present in the
-    page-1 markup, since it needs the .col-hero-media photo that only page 1
-    renders) once the collection is complete, and wires it to the shared
-    /share-card.js renderer — same template as the achievement-unlock and
-    nearest-legend cards, with the collection's own hero photo as a circular
-    medallion instead of a wax seal."""
-    share_title = f"{title} — complete!"
-    share_text = f'I completed the "{title}" collection on Folklore Finder!'
-    filename_prefix = f"folklore-finder-{slug}-collection"
+    share-card.js stays a normal blocking <script src> so window.ShareCard is
+    guaranteed to exist before /js/page.js runs. The slug and title travel as
+    data attributes; the share title, body text and filename are derived from
+    them in /js/page.js exactly as they were derived here."""
     return (
-        # Loaded first (and left as a normal blocking <script src>, not
-        # defer/async) so it's guaranteed to have executed — and
-        # window.ShareCard to exist — before the inline script below runs.
         '<script src="/share-card.js"></script>\n'
-        "<script>(function(){try{"
-        "var visited=JSON.parse(localStorage.getItem('ff_visited_legends_v1')||'null')||{};"
-        "var set=new Set(Object.keys(visited));"
-        "fetch('" + slug + ".json').then(function(r){return r.json();}).then(function(d){"
-        "var members=d.legends||[];"
-        "if(!members.length)return;"
-        "var count=members.filter(function(n){return set.has(n);}).length;"
-        "var pct=Math.round(count/members.length*100);"
-        "var done=count===members.length;"
-        "var el=document.querySelector('.col-progress');"
-        "if(!el)return;"
-        "el.hidden=false;"
-        "el.classList.toggle('done',done);"
-        "el.querySelector('.cip-fill').style.width=pct+'%';"
-        "el.querySelector('.cip-label').textContent=done?'Collection complete \\u2713':(count+' of '+members.length+' discovered');"
-        "var shareBtn=el.querySelector('.col-share-btn');"
-        "var heroImg=document.querySelector('.col-hero-media img');"
-        "if(!shareBtn||!done||!heroImg||!window.ShareCard)return;"
-        "shareBtn.hidden=false;"
-        "shareBtn.addEventListener('click',function(){"
-        "var statusEl=el.querySelector('.col-share-status');"
-        "var idle=shareBtn.textContent;"
-        "shareBtn.disabled=true;shareBtn.textContent='Generating\\u2026';"
-        "if(statusEl)statusEl.textContent='';"
-        "window.ShareCard.renderPhotoCard({"
-        "kicker:'COLLECTION COMPLETE',"
-        "subKicker:members.length+' legends discovered',"
-        "title:" + json.dumps(title, ensure_ascii=False) + ","
-        "body:'Every legend in this collection, found.',"
-        "photoSrc:heroImg.currentSrc||heroImg.src"
-        "}).then(function(blob){"
-        "return window.ShareCard.shareOrDownload(blob," + json.dumps(filename_prefix + ".png", ensure_ascii=False) + ","
-        + json.dumps(share_title, ensure_ascii=False) + "," + json.dumps(share_text, ensure_ascii=False) + ");"
-        "}).then(function(outcome){"
-        "if(statusEl)statusEl.textContent=outcome==='shared'?'Shared!':(outcome==='downloaded'?'Image saved':'');"
-        "}).catch(function(){"
-        "if(statusEl)statusEl.textContent=\"Couldn't generate the image \\u2014 try again.\";"
-        "}).then(function(){shareBtn.disabled=false;shareBtn.textContent=idle;});"
-        "});"
-        "}).catch(function(){});"
-        "}catch(e){}})();</script>\n"
+        '<div hidden'
+        ' data-collection-slug="' + esc(slug) + '"'
+        ' data-collection-title="' + esc(title) + '"></div>' + chr(10) +
+        '<script src="/js/page.js?v=20260822a"></script>\n'
     )
 
 
@@ -1704,17 +1632,25 @@ $footer
 
 
 def load_category_meta():
-    """Extract category -> {colour, iconPath} from index.html (single source of truth)."""
-    try:
-        text = io.open("map.html", encoding="utf-8").read()
-    except Exception:
-        return {}
+    """Extract category -> {colour, iconPath} from js/map.js (single source of truth).
+
+    This read map.html until the inline script was extracted to js/map.js. It
+    also used to swallow the failure and return {}, which would have quietly
+    stripped the colour and icon from every generated page rather than stopping
+    the build. It raises now: a missing CATEGORIES block is a broken build, not
+    a page with no icons."""
+    text = io.open(os.path.join("js", "map.js"), encoding="utf-8").read()
     meta = {}
     for m in re.finditer(
         r"(\w+):\s*\{[^{}]*?colour:\s*[\"']([^\"']+)[\"'][^{}]*?iconPath:\s*[`']([^`']+)[`']",
         text,
     ):
         meta[m.group(1)] = {"colour": m.group(2), "iconPath": m.group(3)}
+    if not meta:
+        raise RuntimeError(
+            "No CATEGORIES found in js/map.js. If that block moved again, update "
+            "load_category_meta() rather than letting pages build without icons."
+        )
     return meta
 
 
@@ -1777,7 +1713,10 @@ def update_whats_new_page(recent, built_collections, slugmap, cats, meta, limit=
         for l in recent[:limit]
     ]
 
-    path = "updates.html"
+    # These two constants lived in an inline <script> in updates.html until
+    # Stage 3.4 moved that block to js/updates.js. The release notes further
+    # down updates.html stay hand-written and are not touched either way.
+    path = os.path.join("js", "updates.js")
     text = io.open(path, encoding="utf-8").read()
 
     try:
@@ -1817,7 +1756,7 @@ def update_whats_new_page(recent, built_collections, slugmap, cats, meta, limit=
     for pattern, replacement in replacements:
         text, changed = re.subn(pattern, lambda m: replacement, text, count=1)
         if changed != 1:
-            raise RuntimeError(f"Could not update updates.html using {pattern}")
+            raise RuntimeError(f"Could not update js/updates.js using {pattern}")
     with io.open(path, "w", encoding="utf-8") as f:
         f.write(text)
 
@@ -2923,16 +2862,7 @@ def build():
         place_explorer
         + '<div class="browse-tabs" role="tablist" aria-label="Browse legends by">' + browse_tab_buttons + '</div>'
         + '<div class="browse-tab-panels">' + browse_tab_panels + '</div>'
-        + '<script>(function(){'
-          'var tabs=document.querySelectorAll(".browse-tab");'
-          'var panels=document.querySelectorAll(".browse-tab-panel");'
-          'tabs.forEach(function(t){t.addEventListener("click",function(){'
-          'tabs.forEach(function(o){o.classList.remove("active")});'
-          'panels.forEach(function(p){p.classList.remove("active")});'
-          't.classList.add("active");'
-          'document.querySelector(\'.browse-tab-panel[data-tab-panel="\'+t.dataset.tab+\'"]\').classList.add("active");'
-          '});});'
-          '})();</script>'
+        + '<script src="/js/page.js?v=20260822a"></script>'
         '<h2 class="azh">A&#8211;Z</h2>'
     )
 

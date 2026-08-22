@@ -841,6 +841,54 @@ def collection_detail_progress_script(slug, title):
     )
 
 
+_IMG_WIDTH_CACHE = {}
+
+
+def image_width(path):
+    """Intrinsic pixel width, cached. Heroes are mostly 1600 wide but not all,
+    and a srcset width descriptor that lies makes the browser choose wrongly."""
+    if path not in _IMG_WIDTH_CACHE:
+        try:
+            from PIL import Image
+            with Image.open(path) as im:
+                _IMG_WIDTH_CACHE[path] = im.size[0]
+        except Exception:
+            _IMG_WIDTH_CACHE[path] = 0
+    return _IMG_WIDTH_CACHE[path]
+
+
+def responsive_hero(image_path, alt, sizes, img_attrs=""):
+    """<picture> offering the 800px card variant alongside the full-size hero.
+
+    The card variant is generated for every hero already (build_card_thumbs),
+    so this adds no files, which matters with .git at 799MB. A phone at 390 CSS
+    px was downloading the full ~1600px hero, about 103KB of WebP, to paint a
+    slot it cannot show a third of; it now takes the 800px one at roughly 21KB.
+
+    alt is expected already escaped, as the inline markup this replaces assumed.
+    Falls back to a bare <img> when no WebP sibling exists.
+    """
+    url = BASE + "/" + image_path.replace(os.sep, "/")
+    img_tag = '<img src="' + url + '" alt="' + alt + '" ' + img_attrs + '/>'
+    stem = image_path.rsplit(".", 1)[0]
+    webp_rel, card_rel = stem + ".webp", stem + "-card.webp"
+    if not os.path.isfile(webp_rel):
+        return img_tag
+
+    full_w = image_width(webp_rel) or 1600
+    candidates = []
+    if os.path.isfile(card_rel):
+        card_w = image_width(card_rel) or 800
+        if card_w < full_w:
+            candidates.append(BASE + "/" + card_rel.replace(os.sep, "/") + " " + str(card_w) + "w")
+    candidates.append(BASE + "/" + webp_rel.replace(os.sep, "/") + " " + str(full_w) + "w")
+
+    sizes_attr = ' sizes="' + sizes + '"' if len(candidates) > 1 else ""
+    return ('<picture><source type="image/webp" srcset="' + ", ".join(candidates) + '"'
+            + sizes_attr + "/>" + img_tag + "</picture>")
+
+
+
 def build_browse_page(page_title, desc, url, h1, intro, crumb, nav_html, cards_html,
                       ogimage=None, jsonld=None, head_extra="", after_grid="", nav_active="browse",
                       hero_html="", extra_sections="", after_intro="", wrap_class="", track_script="",
@@ -2064,14 +2112,11 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
         # with high priority (never lazy). width/height reserve the 16:9 box to
         # avoid layout shift. The <source> is only added when the webp exists.
         webp_rel = image_path.rsplit(".", 1)[0] + ".webp"
-        img_tag = (f'<img src="{hero_url}" alt="{hero_alt}" '
-                   f'width="1600" height="900" fetchpriority="high" decoding="async"/>')
-        if os.path.isfile(webp_rel):
-            webp_url = f"{BASE}/{webp_rel.replace(os.sep, '/')}"
-            hero_media = (f'<picture><source type="image/webp" srcset="{webp_url}"/>'
-                          f'{img_tag}</picture>')
-        else:
-            hero_media = img_tag
+        # .hero is width:100% with no max-width container, so the slot is
+        # the full viewport at every breakpoint.
+        hero_media = responsive_hero(
+            image_path, hero_alt, "100vw",
+            'width="1600" height="900" fetchpriority="high" decoding="async"')
         # Hero art is AI-generated (Codex), so the disclosure note is always
         # shown here regardless of whether an editorial caption exists —
         # see the editorial & AI-use policy at /editorial.
@@ -2569,8 +2614,15 @@ def build():
                         )
                         media_html = (
                             '<div class="col-hero-media">'
-                            f'<img src="{BASE}/{hero_path.replace(os.sep, "/")}" alt="{esc(col["title"])}"/>'
-                            f'{hero_credit_html}</div>'
+                            # .col-hero-media is flex-basis 42%, stacking to full width under
+                            # 680px. This was a bare JPG with no WebP source at all.
+                            + responsive_hero(hero_path, esc(col["title"]),
+                                              "(max-width: 680px) 100vw, 42vw",
+                                              # NOT lazy: this sits above the fold at the top of a
+                                              # collection page, so deferring it would delay the
+                                              # largest paint.
+                                              'decoding="async"')
+                            + f'{hero_credit_html}</div>'
                         )
                     # Both intro paragraphs belong in the text column, stacked
                     # beside the image. Emitting the context paragraph after the

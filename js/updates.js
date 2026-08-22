@@ -105,8 +105,11 @@
       var li = document.createElement('li');
       var a = document.createElement('a');
       a.href = 'legends/collection/' + col.slug;
+      // archive.js builds the same card with textContent; this one was
+      // concatenating the title in raw, so an ampersand in a collection name
+      // rendered as broken markup.
       a.innerHTML = '<span class="card-eyebrow">Collection</span>'
-        + '<span class="card-title">' + col.title + '</span>';
+        + '<span class="card-title">' + SafeDOM.escapeHtml(col.title) + '</span>';
       li.appendChild(a);
       nc.appendChild(li);
     });

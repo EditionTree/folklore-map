@@ -154,24 +154,12 @@ function lightenForNight(hex) {
   return hex;
 }
 
-function escapeHtml(value) {
-  return String(value ?? '').replace(/[&<>"']/g, char => ({
-    '&': '&amp;',
-    '<': '&lt;',
-    '>': '&gt;',
-    '"': '&quot;',
-    "'": '&#39;',
-  })[char]);
-}
+// Promoted to js/dom-safe.js so achievements, archive and updates share one
+// definition. Kept as thin wrappers here rather than renamed call sites, so the
+// change is a redirect rather than a rewrite of everything that uses them.
+function escapeHtml(value) { return SafeDOM.escapeHtml(value); }
 
-function safeSourceUrl(value) {
-  try {
-    const url = new URL(String(value ?? ''), window.location.href);
-    return ['http:', 'https:'].includes(url.protocol) ? url.href : '#';
-  } catch {
-    return '#';
-  }
-}
+function safeSourceUrl(value) { return SafeDOM.safeUrl(value); }
 
 function buildPopup(leg) {
   const cat = CATEGORIES[leg.category];

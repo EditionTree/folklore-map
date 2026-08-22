@@ -58,7 +58,9 @@
         var box = document.getElementById('latestSeal');
         var t = latest._tint || {hue:0, sat:1, bright:1};
         box.innerHTML = '<div class="latest-seal">'
-          + '<img src="' + (latest.icon && latest.icon.file || '') + '" alt="" style="--hue:' + t.hue + 'deg;--shade-sat:' + t.sat + ';--shade-bright:' + t.bright + '"/>'
+          // The seal path comes from achievements.json and went straight into a
+          // src attribute. safeAttrUrl allows only http/https and escapes it.
+          + '<img src="' + SafeDOM.safeAttrUrl(latest.icon && latest.icon.file || '') + '" alt="" style="--hue:' + t.hue + 'deg;--shade-sat:' + t.sat + ';--shade-bright:' + t.bright + '"/>'
           + '<div class="latest-seal-text"><p>Latest Achievement</p><h3></h3></div>'
           + '</div>';
         box.querySelector('h3').textContent = latest.name;

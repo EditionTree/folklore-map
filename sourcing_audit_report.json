@@ -1,7 +1,7 @@
 {
   "generated": true,
   "total_legends": 709,
-  "flagged_count": 314,
+  "flagged_count": 309,
   "flagged": [
     {
       "name": "Daniel Fall, the Pirate of the Norfolk Coast",
@@ -68,93 +68,39 @@
       ]
     },
     {
-      "name": "Giant of Petta Water",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 2,
-      "tiers": [
-        "secondary",
-        "popular"
-      ],
-      "urls": [
-        "https://www.shetland.org/blog/shetland-folklore",
-        "https://shetlandwithlaurie.com/the-blog/shetland-folklore-series-a-land-of-giants"
-      ]
-    },
-    {
       "name": "Hartlepool Monkey",
       "severity_rank": 2,
       "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 3,
+      "source_count": 4,
       "tiers": [
+        "unclassified",
         "secondary",
         "unclassified",
         "unclassified"
       ],
       "urls": [
+        "https://teesvalleymuseums.org/visit/museum-of-hartlepool/",
         "https://www.historic-uk.com/HistoryUK/HistoryofEngland/The-Hanging-of-the-Hartlepool-Monkey/",
         "https://www.scottishcorpus.ac.uk/document/?documentid=511",
         "http://folksongandmusichall.com/index.php/who-hung-the-monkey/"
       ]
     },
     {
-      "name": "Headless Horseman of the Staffordshire Moors",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 2,
-      "tiers": [
-        "secondary",
-        "secondary"
-      ],
-      "urls": [
-        "https://oldechronicles.org.uk/the-headless-horseman-of-the-staffordshire-moors/",
-        "https://thelocalmythstorian.com/the-phantom-rebel"
-      ]
-    },
-    {
-      "name": "Hy-Brasil",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 3,
-      "tiers": [
-        "secondary",
-        "secondary",
-        "secondary"
-      ],
-      "urls": [
-        "https://mythicalireland.com/blogs/myths-legends/the-phantom-island-of-hy-brasil-in-irish-myth-fable",
-        "https://lostcartography.com/the-phantom-island-of-hy-brasil-a-celtic-mystery/",
-        "https://hyperallergic.com/how-an-imaginary-island-stayed-on-maps-for-five-centuries/"
-      ]
-    },
-    {
-      "name": "Iula, Princess of the Giants of Islay",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 2,
-      "tiers": [
-        "popular",
-        "secondary"
-      ],
-      "urls": [
-        "https://peatzeria.com/blog/scottish-folklore-islay-myths-legends/",
-        "https://www.icysedgwick.com/islay-folklore/"
-      ]
-    },
-    {
       "name": "Jinny the Witch (Joney Lowney)",
       "severity_rank": 2,
       "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 3,
+      "source_count": 4,
       "tiers": [
         "secondary",
+        "unclassified",
         "unclassified",
         "unclassified"
       ],
       "urls": [
         "https://www.transceltic.com/blog/isle-of-man-hop-tu-naa-who-was-jinny-witch",
         "https://peelheritagetrust.net/jinny-the-witch-hampton-creer/",
-        "https://culturevannin.im/media/media%20-%20Customs%20and%20traditions/Hop%20tu%20Naa/Jinny%20the%20Witch%20history%20Hampton%20Creer.pdf"
+        "https://culturevannin.im/media/media%20-%20Customs%20and%20traditions/Hop%20tu%20Naa/Jinny%20the%20Witch%20history%20Hampton%20Creer.pdf",
+        "https://culturevannin.im/watchlisten/oralhistory/hampton-creer-288508/"
       ]
     },
     {
@@ -171,20 +117,6 @@
         "https://garve.org/the-loch-garve-kelpie",
         "https://www.mysteriousbritain.co.uk/folklore/the-kelpie-of-loch-garve/",
         "https://folklorescotland.com/the-kelpies-chimney/"
-      ]
-    },
-    {
-      "name": "Lady Howard of Okehampton",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 2,
-      "tiers": [
-        "secondary",
-        "secondary"
-      ],
-      "urls": [
-        "https://www.legendarydartmoor.co.uk/2016/03/25/lady_how/",
-        "https://www.mysteriousbritain.co.uk/hauntings/lady-mary-howard-of-fitzford-house/"
       ]
     },
     {
@@ -232,18 +164,6 @@
       ]
     },
     {
-      "name": "Marool",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
-      "tiers": [
-        "secondary"
-      ],
-      "urls": [
-        "https://abookofcreatures.com/2016/03/04/marool/"
-      ]
-    },
-    {
       "name": "Marshal Brain of Clongowes Wood",
       "severity_rank": 2,
       "reason": "only secondary/popular sources, no primary or heritage record",
@@ -259,12 +179,14 @@
       "name": "Old Man of Storr",
       "severity_rank": 2,
       "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 1,
+      "source_count": 2,
       "tiers": [
+        "secondary",
         "secondary"
       ],
       "urls": [
-        "https://www.bitesizedbritain.co.uk/the-old-man-of-storr---the-sleeping-giant-of-skye1111/"
+        "https://www.bitesizedbritain.co.uk/the-old-man-of-storr---the-sleeping-giant-of-skye1111/",
+        "https://www.historyhit.com/locations/old-man-of-storr/"
       ]
     },
     {
@@ -2127,6 +2049,24 @@
         "https://socialhistory.org.uk/shs_exchange/toil-and-trouble-irelands-last-witch-trial/",
         "https://irishcultureandtraditions.org/2025/09/01/witch-trials-in-ireland-the-forgotten-stories-of-fear-and-folklore/",
         "https://pure.ulster.ac.uk/en/publications/roundtable-the-islandmagee-witches-1711-creative-and-digital-proj/"
+      ]
+    },
+    {
+      "name": "Iula, Princess of the Giants of Islay",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 4,
+      "tiers": [
+        "popular",
+        "secondary",
+        "unclassified",
+        "heritage"
+      ],
+      "urls": [
+        "https://peatzeria.com/blog/scottish-folklore-islay-myths-legends/",
+        "https://www.icysedgwick.com/islay-folklore/",
+        "https://www.trove.scot/place/38030",
+        "https://canmore.org.uk/site/38030"
       ]
     },
     {

@@ -123,17 +123,21 @@
     // full colour only once complete.
     const state = r.unlocked ? 'unlocked' : (r.current > 0 ? 'progress' : 'not-started');
     const notStarted = state === 'not-started';
-    const name = notStarted ? '???' : a.name;
-    const req = notStarted ? '???' : a.req;
-    const desc = notStarted ? 'Keep exploring the map to reveal this achievement.' : a.description;
+    // Escaped here rather than at each interpolation below: these three are
+    // locals used only to build markup. The share card deliberately keeps the
+    // RAW a.name / a.req / a.description, because it draws to a canvas where an
+    // escaped entity would render literally as '&amp;'.
+    const name = SafeDOM.escapeHtml(notStarted ? '???' : a.name);
+    const req = SafeDOM.escapeHtml(notStarted ? '???' : a.req);
+    const desc = SafeDOM.escapeHtml(notStarted ? 'Keep exploring the map to reveal this achievement.' : a.description);
     const shade = SHADE_VARIANTS[shadeIdx % SHADE_VARIANTS.length];
     const cssVars = `--hue:${hueDeg}deg;--shade-sat:${shade.sat};--shade-bright:${shade.bright}`;
     const sealHtml = notStarted
       ? `<span class="seal seal-placeholder" aria-hidden="true">?</span>`
-      : `<img class="seal" src="${iconPath(a)}" alt="" loading="lazy"/>`;
+      : `<img class="seal" src="${SafeDOM.safeAttrUrl(iconPath(a))}" alt="" loading="lazy"/>`;
     const popSealHtml = notStarted
       ? `<span class="seal seal-placeholder" aria-hidden="true">?</span>`
-      : `<img src="${iconPath(a)}" alt=""/>`;
+      : `<img src="${SafeDOM.safeAttrUrl(iconPath(a))}" alt=""/>`;
     // A share button has to be a real <button>, which can't nest inside the
     // badge's own <button> — so the badge itself is a focusable <div> (still
     // reachable by keyboard via tabindex, still triggers the CSS :focus
@@ -150,7 +154,7 @@
         <span class="pop-desc">${desc}</span>
         <span class="pop-req">${req}${!r.unlocked && r.current > 0 ? ` · ${r.current} of ${r.target}` : ''}</span>
         ${!r.unlocked && r.current > 0 ? `<span class="mini-track"><span style="width:${r.pct}%"></span></span>` : ''}
-        ${r.unlocked ? `<button type="button" class="badge-share-btn" data-share-id="${a.id}">Share this seal</button><span class="badge-share-status" aria-live="polite"></span>` : ''}
+        ${r.unlocked ? `<button type="button" class="badge-share-btn" data-share-id="${SafeDOM.escapeHtml(a.id)}">Share this seal</button><span class="badge-share-status" aria-live="polite"></span>` : ''}
       </span>
     </div>`;
   }
@@ -174,7 +178,7 @@
         shareIndex.set(a.id, {a, sectionTitle: section.title, hueDeg, shade: SHADE_VARIANTS[i % SHADE_VARIANTS.length]});
         return renderBadge(a, hueDeg, i);
       }).join('');
-      return `<section class="section"><div class="section-head"><h2>${section.title}</h2><span class="section-count">${got} of ${items.length}</span></div><div class="badge-grid">${badges}</div></section>`;
+      return `<section class="section"><div class="section-head"><h2>${SafeDOM.escapeHtml(section.title)}</h2><span class="section-count">${got} of ${items.length}</span></div><div class="badge-grid">${badges}</div></section>`;
     }).join('') || '<div class="empty">No public achievements are available yet.</div>';
   }
 

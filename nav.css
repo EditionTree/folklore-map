@@ -1,0 +1,299 @@
+/* Folklore Finder canonical top navigation.
+ *
+ * SINGLE SOURCE. This file previously existed as four separate copies: the nav
+ * rules in folklorefinder.css, the same rules again in legend-page.css, a third
+ * copy as TOPNAV_CSS inside generate_pages.py, and a structurally different
+ * .map-nav in map.html's inline <style>. A nav change had to be made four times
+ * and was twice made only once, which surfaced as three unrelated-looking
+ * design bugs.
+ *
+ * Load it on every page that renders <nav class="topnav">. Do not copy rules
+ * out of it. See STYLE_GUIDE.md, Canonical Site Chrome and Design System.
+ *
+ * Self-contained by design: the four surfaces that load this file use four
+ * different token vocabularies (--accent-warm, --rust, --accent), so the nav
+ * carries its own --nav-* tokens rather than depending on whichever palette
+ * happens to be in scope. Values are folklorefinder.css's, which the design
+ * system names canonical. Changing the palette means changing them here too.
+ */
+:root {
+  --nav-bar: #1a0e06;        /* --ff-bar-brown, fixed by Canonical Site Chrome */
+  --nav-accent: #c4622a;     /* --ff-burnt-orange */
+  --nav-gold: #b09060;       /* --ff-antique-gold */
+  --nav-parchment: #f6f1e6;  /* --ff-parchment */
+}
+
+/* ── CANONICAL TOP NAV (shared header banner) ───────────────────────────
+   One consistent banner across every page, using the Map page's header as
+   the guide: deep-brown gradient, gilded top piping + bottom divider, a
+   brand lockup (emblem + "Folklore Finder" in the display face) anchored
+   to the left edge, and the centered nav links. The Home page omits the
+   brand title (its title already sits centered in the hero); the Map page
+   additionally keeps the day/night toggle on the right. */
+/* Own stacking context, above page content. Without this the nav sits at the
+   root's default level, and .hero is position:relative with z-index:auto -- so
+   it is NOT a stacking context and its children's z-indexes (.hero-copy 1, the
+   piping frame 2, .hero-caption-wrap 3) resolve against the root and paint
+   over the nav. That put the search dropdown behind the legend artwork,
+   because .nav-search's transform:translateY(-50%) makes it a stacking
+   context, capping the dropdown's own z-index:30 at the nav's root level.
+   7500 clears the Leaflet mini-map (panes 400, controls up to 1000) and the
+   homepage's fixed "Submit a legend" prompt (7000), while staying below the
+   share menu (9001) and the achievement toasts (9500). */
+.topnav {
+  position: relative;
+  z-index: 7500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  min-height: 58px;
+  padding: 10px clamp(16px, 3vw, 52px);
+  background: var(--nav-bar);
+  border-bottom: none;
+}
+.topnav::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, transparent 0%, var(--nav-accent) 15%, var(--nav-gold) 50%, var(--nav-accent) 85%, transparent 100%);
+}
+.topnav::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(176,144,96,0.6) 20%, rgba(196,98,42,0.8) 50%, rgba(176,144,96,0.6) 80%, transparent 100%);
+}
+.topnav a {
+  font-family: 'Marcellus', serif;
+  font-size: 12px; letter-spacing: .08em; text-transform: uppercase;
+  color: rgba(242,232,213,0.78);
+  text-decoration: none;
+  padding: 6px 14px; border-radius: 3px;
+  transition: background .15s, color .15s;
+}
+.topnav a:hover { color: #f2e8d5; background: rgba(196,98,42,0.18); }
+.topnav a.active { color: var(--nav-accent); }
+
+/* Lucide icon + label per link (lucide.dev, ISC). Scoped to .topnav-links so
+   it can't catch the brand lockup, which is also a .topnav a. */
+.topnav-links a { display: inline-flex; align-items: center; gap: 6px; }
+.topnav-links a svg { flex: 0 0 auto; }
+
+/* Brand lockup: emblem + "Folklore Finder" title, pinned to the left edge
+   (out of flow) so the nav links stay centered across the full bar, exactly
+   like the Home page. No hover highlight box on the brand itself. */
+.topnav-brand {
+  position: absolute;
+  left: clamp(14px, 3vw, 52px);
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  text-decoration: none;
+}
+/* padding:0 has to outrank `.topnav a{padding:6px 14px}`, which is the more
+   specific selector — as `.topnav-brand{padding:0}` it never applied, and the
+   lockup silently carried 28px it was never meant to have. That padding was
+   what pushed the iconned link row into the lockup at ~1200px. */
+.topnav a.topnav-brand { padding: 0; }
+.topnav a.topnav-brand:hover { background: transparent; }
+.topnav-emblem {
+  width: 40px; height: 40px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+  transition: opacity .15s, transform .15s;
+}
+.topnav-brand:hover .topnav-emblem { opacity: .85; transform: scale(1.04); }
+.topnav-title {
+  font-family: 'Marcellus', serif;
+  font-size: clamp(18px, 2.1vw, 23px);
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0.055em;
+  color: var(--nav-parchment);
+  white-space: nowrap;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.55), 0 0 14px rgba(196,98,42,0.22);
+}
+/* Below 1200px: drop the brand (its absolute box would overlap the centered
+   links); the links stay centered on their own, exactly like the Home page. */
+@media (max-width: 1200px) {
+  .topnav-brand { display: none; }
+}
+/* The links live in their own flex track so the search box can pin to the
+   right of the bar without joining them, and so the mobile horizontal
+   scroll below applies to the links alone — the search icon must stay put
+   rather than scrolling off the edge with them. */
+.topnav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+/* Mobile: keep nav links on one horizontally scrolling row. */
+@media (max-width: 640px) {
+  .topnav {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .topnav-links {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+  }
+  .topnav-links::-webkit-scrollbar { display: none; }
+  .topnav a { flex: 0 0 auto; padding: 9px 11px; font-size: 11px; white-space: nowrap; }
+}
+
+/* Persistent nav search. Pinned to the right of the bar (mirroring
+   .topnav-brand's absolute-left lockup) so the links stay centred in the
+   full bar rather than being shoved off-centre. Square edges, antique-gold
+   rule and the gilded-piping stripe on the dropdown, to match the site's
+   other editorial furniture. At 1200px and below it collapses to a toggle,
+   the same breakpoint that hides the brand lockup: with icons on the links
+   the row is too wide to sit beside a 220px field once the bar narrows.
+   Behaviour lives in nav-search.js. */
+.nav-search {
+  position: absolute;
+  right: clamp(14px, 3vw, 52px);
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  /* Width lives here rather than on the field: this element is absolutely
+     positioned, and an abspos flex container does not re-resolve its
+     shrink-to-fit width from a child's width. Fixed rather than widening
+     on focus -- the links are centred in the full bar, so a growing field
+     eats into their clearance, and the focus state is already carried by
+     the border and background. */
+  width: 220px;
+}
+.nav-search-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 34px; height: 34px;
+  padding: 0;
+  background: transparent;
+  border: 1px solid rgba(176,144,96,.4);
+  border-radius: 0;
+  color: rgba(242,232,213,.8);
+  font-size: 15px;
+  line-height: 1;
+  cursor: pointer;
+  transition: border-color .15s, color .15s, background .15s;
+}
+.nav-search-toggle:hover, .nav-search-toggle:focus-visible {
+  border-color: var(--nav-accent);
+  background: rgba(196,98,42,.18);
+  color: #f2e8d5;
+  outline: none;
+}
+/* Anchors the results panel to the field itself, so the dropdown lands in
+   the right place in both the inline and the collapsed-panel layouts. */
+.nav-search-drop { position: relative; width: 100%; }
+.nav-search-field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 7px 11px;
+  background: rgba(242,232,213,.07);
+  border: 1px solid rgba(176,144,96,.4);
+  border-radius: 0;
+  transition: background .15s, border-color .15s;
+}
+.nav-search-field:focus-within {
+  background: rgba(242,232,213,.13);
+  border-color: var(--nav-accent);
+}
+/* Lucide "search" (lucide.dev, ISC), inlined as SVG — size comes from the
+   element's own width/height, colour from currentColor. */
+.nav-search-icon { flex: 0 0 auto; color: var(--nav-gold); }
+.nav-search-input {
+  flex: 1; min-width: 0;
+  background: none; border: 0; outline: none;
+  color: #f2e8d5;
+  font-family: 'Spectral', serif;
+  font-size: 13px;
+}
+.nav-search-input::placeholder { color: rgba(242,232,213,.42); font-style: italic; }
+.nav-search-results {
+  position: absolute;
+  top: calc(100% + 9px); right: 0;
+  width: min(330px, calc(100vw - 24px));
+  max-height: 370px;
+  overflow-y: auto;
+  display: none;
+  z-index: 30;
+  text-align: left;
+  background: #241a10;
+  border: 1px solid rgba(176,144,96,.4);
+  border-radius: 0;
+  box-shadow: 0 14px 34px rgba(0,0,0,.45);
+}
+/* Gilded piping — the same transparent/rust/gold/rust/transparent stripe as
+   .topnav::before and the footer rule, so the dropdown reads as part of the
+   same set of furniture rather than a generic autocomplete box. */
+.nav-search-results::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, transparent 0%, #8b3a1a 15%, var(--nav-gold) 50%, #8b3a1a 85%, transparent 100%);
+}
+.nav-search-results.open { display: block; }
+.nav-search-item {
+  display: block;
+  padding: 10px 14px;
+  cursor: pointer;
+  border-top: 1px solid rgba(176,144,96,.16);
+}
+.nav-search-item:first-child { border-top: 0; }
+.nav-search-item:hover, .nav-search-item.active { background: rgba(196,98,42,.18); }
+.nsi-name { display: block; font-family: 'Marcellus', serif; font-size: 13.5px; color: #f2e8d5; }
+.nsi-meta {
+  display: block;
+  margin-top: 2px;
+  font-family: 'Spectral', serif;
+  font-style: italic;
+  font-size: 11.5px;
+  color: rgba(242,232,213,.55);
+}
+.nav-search-empty {
+  padding: 15px 14px;
+  font-family: 'Spectral', serif;
+  font-style: italic;
+  font-size: 12.5px;
+  color: rgba(242,232,213,.55);
+}
+/* Collapsed: icon only, opening a panel anchored under the bar. The panel
+   hangs off .topnav (the nearest positioned ancestor once .nav-search goes
+   static), so it can't be clipped by the links' horizontal scroll. */
+@media (max-width: 1200px) {
+  .nav-search, .nav-search:focus-within {
+    position: static; transform: none; flex: 0 0 auto; margin-left: 14px; width: auto;
+  }
+  .nav-search-toggle { display: inline-flex; }
+  .nav-search-drop {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    right: clamp(12px, 3vw, 52px);
+    width: min(330px, calc(100vw - 24px));
+    z-index: 30;
+  }
+  .nav-search.open .nav-search-drop { display: block; }
+  .nav-search-field { padding: 10px 13px; }
+  .nav-search-field { background: #241a10; border-color: rgba(176,144,96,.5); box-shadow: 0 14px 34px rgba(0,0,0,.45); }
+  .nav-search-results { width: 100%; }
+}

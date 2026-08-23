@@ -388,120 +388,8 @@ def banner_html():
     return ""
 
 
-# Site-wide top navigation. The interactive map mirrors these values in its
-# embedded CSS because it has a map-specific header control group.
-TOPNAV_CSS = (
-    # Canonical banner: Home footer brown, gilded top piping + bottom
-    # divider, brand lockup (emblem + "Folklore Finder") anchored left, and
-    # the centered nav links. Mirrors the .topnav rules in folklorefinder.css.
-    # z-index 7500: see the .topnav comment in folklorefinder.css -- without a
-    # stacking context here the search dropdown paints behind hero artwork.
-    ".topnav{position:relative;z-index:7500;display:flex;align-items:center;justify-content:center;"
-    "flex-wrap:wrap;gap:4px;min-height:58px;padding:10px clamp(16px,3vw,52px);"
-    "background:#1a0e06;border-bottom:none}"
-    ".topnav::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;"
-    "background:linear-gradient(90deg,transparent 0%,#8b3a1a 15%,#b09060 50%,#8b3a1a 85%,transparent 100%)}"
-    ".topnav::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;"
-    "background:linear-gradient(90deg,transparent 0%,rgba(176,144,96,0.6) 20%,rgba(196,98,42,0.8) 50%,rgba(176,144,96,0.6) 80%,transparent 100%)}"
-    ".topnav a{font-family:'Marcellus',serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase;"
-    "color:rgba(242,232,213,0.78);text-decoration:none;padding:6px 14px;border-radius:3px;"
-    "transition:background .15s,color .15s}"
-    ".topnav a:hover{color:#f2e8d5;background:rgba(196,98,42,0.18)}"
-    ".topnav a.active{color:#c4622a}"
-    # Lucide icon + label per link. Scoped to .topnav-links so it can't catch
-    # the brand lockup, which is also a .topnav a.
-    ".topnav-links a{display:inline-flex;align-items:center;gap:6px}"
-    ".topnav-links a svg{flex:0 0 auto}"
-    ".topnav-brand{position:absolute;left:clamp(14px,3vw,52px);top:50%;transform:translateY(-50%);"
-    "display:inline-flex;align-items:center;gap:11px;text-decoration:none}"
-    # padding:0 has to outrank `.topnav a{padding:6px 14px}`, which is the more
-    # specific selector — as `.topnav-brand{padding:0}` it never applied, and
-    # the lockup silently carried 28px it was never meant to have. That padding
-    # was what pushed the iconned link row into the lockup at ~1200px.
-    ".topnav a.topnav-brand{padding:0}"
-    ".topnav a.topnav-brand:hover{background:transparent}"
-    ".topnav-emblem{width:40px;height:40px;object-fit:contain;display:block;flex-shrink:0;"
-    "transition:opacity .15s,transform .15s}"
-    ".topnav-brand:hover .topnav-emblem{opacity:.85;transform:scale(1.04)}"
-    ".topnav-title{font-family:'Marcellus',serif;font-size:clamp(18px,2.1vw,23px);font-weight:400;"
-    "text-transform:none;letter-spacing:0.055em;color:#f2e8d5;white-space:nowrap;"
-    "text-shadow:0 1px 3px rgba(0,0,0,0.55),0 0 14px rgba(196,98,42,0.22)}"
-    "@media(max-width:1200px){.topnav-brand{display:none}}"
-    # Links get their own flex track so the search can pin right without
-    # joining them, and so the mobile scroll below moves the links alone.
-    ".topnav-links{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;"
-    "gap:4px;flex:1 1 auto;min-width:0}"
-    # Mobile: one horizontally scrolling row instead of wrapped nav links.
-    "@media(max-width:640px){.topnav{flex-wrap:nowrap;justify-content:flex-start;"
-    "padding-left:12px;padding-right:12px}"
-    ".topnav-links{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;"
-    "overflow-y:hidden;scrollbar-width:none}"
-    ".topnav-links::-webkit-scrollbar{display:none}"
-    ".topnav a{flex:0 0 auto;padding:9px 11px;font-size:11px;white-space:nowrap}}"
-    # Persistent nav search — pinned right (mirroring .topnav-brand's
-    # absolute-left lockup) so the links stay centred in the full bar.
-    # Square edges, antique-gold rule and the gilded-piping stripe on the
-    # dropdown, matching the site's other editorial furniture. At 1200px and
-    # below it collapses to an icon opening a panel under the bar -- the same
-    # breakpoint that hides the brand lockup. See nav-search.js. (The links
-    # are centred in the full bar, so the room to their right shrinks by
-    # ~half of any viewport shrink; with icons on the links there is no
-    # longer room for a 220px field below 1200px.)
-    ".nav-search{position:absolute;right:clamp(14px,3vw,52px);top:50%;"
-    "transform:translateY(-50%);display:flex;align-items:center;width:220px}"
-    ".nav-search-toggle{display:none;align-items:center;justify-content:center;width:34px;"
-    "height:34px;padding:0;background:transparent;border:1px solid rgba(176,144,96,.4);"
-    "border-radius:0;color:rgba(242,232,213,.8);font-size:15px;line-height:1;cursor:pointer;"
-    "transition:border-color .15s,color .15s,background .15s}"
-    ".nav-search-toggle:hover,.nav-search-toggle:focus-visible{border-color:#c4622a;"
-    "background:rgba(196,98,42,.18);color:#f2e8d5;outline:none}"
-    ".nav-search-drop{position:relative;width:100%}"
-    ".nav-search-field{display:flex;align-items:center;gap:8px;width:100%;padding:7px 11px;"
-    "background:rgba(242,232,213,.07);border:1px solid rgba(176,144,96,.4);border-radius:0;"
-    "transition:background .15s,border-color .15s}"
-    ".nav-search-field:focus-within{background:rgba(242,232,213,.13);"
-    "border-color:#c4622a}"
-    ".nav-search-icon{flex:0 0 auto;color:#b09060}"
-    ".nav-search-input{flex:1;min-width:0;background:none;border:0;outline:none;color:#f2e8d5;"
-    "font-family:'Spectral',serif;font-size:13px}"
-    ".nav-search-input::placeholder{color:rgba(242,232,213,.42);font-style:italic}"
-    ".nav-search-results{position:absolute;top:calc(100% + 9px);right:0;"
-    "width:min(330px,calc(100vw - 24px));max-height:370px;overflow-y:auto;display:none;"
-    "z-index:30;text-align:left;background:#241a10;border:1px solid rgba(176,144,96,.4);"
-    "border-radius:0;box-shadow:0 14px 34px rgba(0,0,0,.45)}"
-    ".nav-search-results::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;"
-    "background:linear-gradient(90deg,transparent 0%,#8b3a1a 15%,#b09060 50%,#8b3a1a 85%,transparent 100%)}"
-    ".nav-search-results.open{display:block}"
-    ".nav-search-item{display:block;padding:10px 14px;cursor:pointer;"
-    "border-top:1px solid rgba(176,144,96,.16)}"
-    ".nav-search-item:first-child{border-top:0}"
-    ".nav-search-item:hover,.nav-search-item.active{background:rgba(196,98,42,.18)}"
-    ".nsi-name{display:block;font-family:'Marcellus',serif;font-size:13.5px;color:#f2e8d5}"
-    ".nsi-meta{display:block;margin-top:2px;font-family:'Spectral',serif;font-style:italic;"
-    "font-size:11.5px;color:rgba(242,232,213,.55)}"
-    ".nav-search-empty{padding:15px 14px;font-family:'Spectral',serif;font-style:italic;"
-    "font-size:12.5px;color:rgba(242,232,213,.55)}"
-    "@media(max-width:1200px){"
-    ".nav-search,.nav-search:focus-within{position:static;transform:none;flex:0 0 auto;"
-    "margin-left:14px;width:auto}"
-    ".nav-search-toggle{display:inline-flex}"
-    ".nav-search-drop{display:none;position:absolute;top:calc(100% + 10px);"
-    "right:clamp(12px,3vw,52px);width:min(330px,calc(100vw - 24px));z-index:30}"
-    ".nav-search.open .nav-search-drop{display:block}"
-    ".nav-search-field{padding:10px 13px}"
-    ".nav-search-field{background:#241a10;border-color:rgba(176,144,96,.5);"
-    "box-shadow:0 14px 34px rgba(0,0,0,.45)}"
-    ".nav-search-results{width:100%}}"
-    "footer{position:relative;text-align:center;padding:12px 18px;font-size:12px;line-height:1.6;"
-    "color:rgba(246,241,230,.78);background:#1a0e06;border-top:0}"
-    "footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;"
-    "background:linear-gradient(90deg,transparent 0%,rgba(176,144,96,.6) 20%,rgba(196,98,42,.8) 50%,rgba(176,144,96,.6) 80%,transparent 100%)}"
-    "footer a{color:rgba(246,241,230,.9);text-decoration:none}"
-    "footer a:hover{color:#f2e8d5}"
-    # Lucide icon inside a footer link (the Ko-fi cup) — aligned off the
-    # baseline, as the footer is inline text rather than a flex row.
-    "footer a svg{vertical-align:-.15em;margin-right:5px}"
-)
+# The canonical top nav lives in nav.css, linked from every generated page.
+# TOPNAV_CSS used to inline a third copy of those rules here.
 
 # Lucide line icons (lucide.dev, ISC), inlined rather than linked: they inherit
 # currentColor from whatever they sit in and cost no extra request. Size is
@@ -924,8 +812,9 @@ def build_browse_page(page_title, desc, url, h1, intro, crumb, nav_html, cards_h
             '<meta name="twitter:image" content="' + (ogimage or (BASE + '/og/preview.jpg')) + '"/>\n'
             '\n'
             '<link rel="stylesheet" href="/fonts/fonts.css"/>\n'
+            '<link rel="stylesheet" href="/nav.css?v=20260823a"/>\n'
             + jsonld_html + breadcrumb_jsonld_html + head_extra
-            + '<style>' + BROWSE_STYLE + TOPNAV_CSS + '</style></head>\n<body class="catalogue-page">\n'
+            + '<style>' + BROWSE_STYLE + '</style></head>\n<body class="catalogue-page">\n'
             + topnav_html(nav_active) + '\n<main id="main-content" tabindex="-1">\n' + banner_html() + '\n<div class="wrap' + (' ' + wrap_class if wrap_class else '') + '">\n'
             '<nav class="crumb"><a href="' + BASE + '/">Home</a> &#8250; '
             '<a href="' + BASE + '/' + OUT_DIR + '/">All legends</a> &#8250; '
@@ -1626,7 +1515,8 @@ FEATURED_PAGE = Template("""<!DOCTYPE html>
 <meta name="twitter:image:alt" content="$og_alt"/>
 <link rel="stylesheet" href="/fonts/fonts.css"/>
 <link rel="stylesheet" href="/assets/leaflet/leaflet.css"/>
-<link rel="stylesheet" href="/legend-page.css?v=20260817i"/>
+<link rel="stylesheet" href="/nav.css?v=20260823a"/>
+<link rel="stylesheet" href="/legend-page.css?v=20260823a"/>
 <script type="application/ld+json">$jsonld</script>
 $breadcrumb_jsonld
 </head>
@@ -2983,6 +2873,7 @@ def build():
 <meta name="twitter:description" content="Browse all {written} myths, legends, ghosts and folklore stories from every region of Britain and Ireland, each pinned to its place of origin on our interactive folklore map."/>
 <meta name="twitter:image" content="{BASE}/og/preview-folklore-finder.jpg"/>
 <link rel="stylesheet" href="/fonts/fonts.css"/>
+<link rel="stylesheet" href="/nav.css?v=20260823a"/>
 <style>
 *{{box-sizing:border-box;margin:0;padding:0}}
 body{{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent 25rem),linear-gradient(180deg,#e8dcc5,#f6f1e6 34rem,#eadfc9);color:#3f3023;font-family:'Spectral',serif;min-height:100vh}}
@@ -3034,7 +2925,6 @@ h1::after{{content:"";display:block;width:132px;height:40px;margin:9px 0 19px;ba
 @media(max-width:1000px){{.browse-link-sections{{grid-template-columns:1fr 1fr}}.browse-link-sections .browse-sec:last-child{{grid-column:1/-1}}}}
 @media(max-width:760px){{.wrap{{width:calc(100% - 32px)}}.place-explorer{{grid-template-columns:1fr;margin:42px 24px 68px;padding:44px 34px;gap:22px}}.place-explorer::after{{inset:-19px;border-width:24px;border-image-width:24px}}.place-map{{width:min(100%,280px)}}.browse-link-sections{{grid-template-columns:1fr;gap:18px}}.browse-link-sections .browse-sec:last-child{{grid-column:auto}}}}
 @media(max-width:480px){{.browse-link-sections .browse-sec:last-child .region-links{{grid-template-columns:1fr}}}}
-{TOPNAV_CSS}
 </style></head>
 <body>
 {topnav_html("browse")}

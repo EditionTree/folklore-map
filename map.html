@@ -63,6 +63,7 @@
   <link rel="stylesheet" href="/assets/leaflet/MarkerCluster.css"/>
   <link rel="stylesheet" href="/assets/leaflet/MarkerCluster.Default.css"/>
   <link rel="stylesheet" href="/fonts/fonts.css"/>
+  <link rel="stylesheet" href="/nav.css?v=20260823a"/>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -207,18 +208,8 @@
       position: relative;
       z-index: 1000;
     }
-    header::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0; height: 3px;
-      background: linear-gradient(90deg, transparent 0%, var(--accent) 15%, var(--border) 50%, var(--accent) 85%, transparent 100%);
-    }
-    header::after {
-      content: '';
-      position: absolute;
-      bottom: 0; left: 0; right: 0; height: 1px;
-      background: linear-gradient(90deg, transparent 0%, rgba(176,144,96,0.6) 20%, rgba(196,98,42,0.8) 50%, rgba(176,144,96,0.6) 80%, transparent 100%);
-    }
+    /* header::before / header::after (the gilded piping) come from nav.css.
+       body.night overrides them further down and still wins on specificity. */
     .header-emblem-wrap {
       width: 40px; height: 40px;
       flex-shrink: 0;
@@ -261,36 +252,23 @@
     }
     .header-controls { position: absolute; right: clamp(16px,3vw,52px); top: 50%; transform: translateY(-50%); display: flex; align-items: center; gap: 8px; }
 
-    /* Map nav — the shared site nav, populated into the map top bar */
-    .map-nav { display: flex; align-items: center; gap: 2px; flex-wrap: wrap; justify-content: center; }
-    .map-nav a {
-      font-family: var(--font-display);
-      font-size: 12px; letter-spacing: .08em; text-transform: uppercase;
-      color: rgba(242,232,213,0.78);
-      text-decoration: none;
-      padding: 6px 14px; border-radius: 3px;
-      transition: background .15s, color .15s;
-      white-space: nowrap;
-      /* Icons ported from .topnav so the map reads as the same navigation
-         as every other page. The type treatment already matched exactly;
-         only the icon and its alignment were missing. Layout, colour and
-         the two mobile overrides are untouched. */
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
+    /* The nav bar, its piping and its link styling now come from nav.css,
+       the single source shared with every other page. Only the genuinely
+       map-specific bits stay here: the wider gap for the three-column header,
+       the z-index the map stacking ladder depends on, and the dusk fade. */
+    header.topnav {
+      gap: 10px;                 /* three columns, not a centred link row */
+      z-index: 1000;             /* .sidebar sits at 1500 and must stay above */
+      transition: background .6s ease, border-color .6s ease;  /* dusk fade */
     }
-    .map-nav a svg { flex-shrink: 0; opacity: .82; }
-    .map-nav a:hover svg, .map-nav a.active svg { opacity: 1; }
-    .map-nav a:hover { color: #f2e8d5; background: rgba(196,98,42,0.18); }
-    .map-nav a.active { color: var(--accent); }
     @media (max-width: 1100px) {
-      .map-nav { gap: 0; }
-      .map-nav a { padding: 5px 8px; font-size: 10.5px; }
+      .topnav-links { gap: 0; }
+      .topnav-links a { padding: 5px 8px; font-size: 10.5px; }
     }
     @media (max-width: 860px) {
       header { justify-content: space-between; }
       .header-title, .header-controls { position: static; transform: none; }
-      .map-nav {
+      .topnav-links {
         order: 3; width: 100%;
         justify-content: flex-start;
         flex-wrap: nowrap;
@@ -300,8 +278,8 @@
         margin-top: 6px; padding-top: 6px;
         border-top: 1px solid rgba(176,144,96,0.22);
       }
-      .map-nav::-webkit-scrollbar { display: none; }
-      .map-nav a { flex: 0 0 auto; padding: 5px 8px; font-size: 10.5px; }
+      .topnav-links::-webkit-scrollbar { display: none; }
+      .topnav-links a { flex: 0 0 auto; padding: 5px 8px; font-size: 10.5px; }
     }
 
     @media (max-width: 1100px) {
@@ -956,14 +934,14 @@
 </head>
 <body class="map-page">
 
-<header>
+<header class="topnav">
   <div class="header-title">
     <a href="./" class="header-emblem-wrap" title="Back to home" aria-label="Back to home"><img src="green-man.png" class="header-emblem" alt="Green Man"/></a>
     <div class="header-title-row">
       <h1 class="desktop-title">Folklore Finder</h1>
     </div>
   </div>
-  <nav class="map-nav">
+  <nav class="topnav-links">
     <a href="./"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg><span>Home</span></a>
     <a href="map" class="active"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"/><path d="M15 5.764v15"/><path d="M9 3.236v15"/></svg><span>Map</span></a>
     <a href="legends/"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5h.01"/><path d="M3 12h.01"/><path d="M3 19h.01"/><path d="M8 5h13"/><path d="M8 12h13"/><path d="M8 19h13"/></svg><span>Browse</span></a>

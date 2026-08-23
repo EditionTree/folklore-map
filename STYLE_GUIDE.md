@@ -13,7 +13,7 @@ Use the Home page footer brown for every top navigation bar and every footer:
 - Footer/link text on dark bars: `rgba(246,241,230,.78)` and `rgba(246,241,230,.9)`
 - Active nav link: `#c4622a`
 
-The shared CSS source of truth is `folklorefinder.css`. Generated browse pages mirror the same rules in `TOPNAV_CSS` inside `generate_pages.py`. Individual legend pages mirror the same rules in `legend-page.css`.
+**The nav lives in one file: `nav.css`.** Every page that renders `<nav class="topnav">` links it, including the map. Do not copy rules out of it and do not add a page-local `.topnav` rule; the only sanctioned overrides are the two page-scoped ones in `folklorefinder.css` (`.home-page .topnav`, `.interior-page .topnav a`) and the map's, listed under Map Page Exception.
 
 ## Top Navigation
 
@@ -67,9 +67,18 @@ The Home page keeps its current nav without the brand lockup because the full Fo
 
 The Map page must match the same nav color, title/logo sizing, nav link styling, and footer styling as the rest of the site.
 
-Allowed difference:
+Allowed differences, and these are the only ones:
 
-- The day/night toggle remains in the top-right header controls.
+- The day and dusk toggle remains in the top-right header controls.
+- The map's `<header>` carries `class="topnav"` and takes its bar, piping and link styling from
+  `nav.css` like every other page. Three declarations stay map-specific, in `header.topnav`:
+  `gap: 10px` (the header is three columns, not a centred link row), `z-index: 1000` (the map
+  stacking ladder puts `.sidebar` at 1500 and `.search-results` at 2000 above it, so the canonical
+  7500 would cover them), and a `transition` for the dusk fade.
+- The map keeps its own responsive breakpoints at 1100px and 860px, where the rest of the site uses
+  1200px and 640px. `nav.css` is linked before the inline `<style>`, so the map's rules win.
+- The map does not carry the `nav-search` component: it already has an equivalent search that
+  navigates to legend pages, and two search fields in one header would be a regression.
 
 Not allowed:
 
@@ -103,7 +112,8 @@ Do not make the What's New heading smaller than the other interior page headings
 
 ## Generated Pages
 
-When changing shared chrome, update all relevant sources:
+The nav is no longer part of this list: change `nav.css` once and every page follows. For other
+shared chrome, update all relevant sources:
 
 - `folklorefinder.css` for root static pages
 - `legend-page.css` for individual legend pages

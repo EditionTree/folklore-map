@@ -87,7 +87,7 @@
         if (more) {
           more.textContent = done
             ? 'Revisit the collection →'
-            : (count > 0 ? 'Continue collection →' : 'Begin collection →');
+            : (count > 0 ? 'Continue collection →' : 'Explore collection →');
         }
         if (done) row.classList.add('done');
       }).catch(function () {});
@@ -117,6 +117,28 @@
       el.querySelector('.cip-label').textContent = done
         ? 'Collection complete ✓'
         : (count + ' of ' + members.length + ' discovered');
+
+      // Point at the next one rather than leaving the reader to work out which
+      // of forty entries they have not opened. First unvisited in the
+      // collection's own order, so it stays stable between visits.
+      var nextEl = el.parentNode && el.parentNode.querySelector('.col-next');
+      if (nextEl) {
+        var entries = d.entries || [];
+        var next = null;
+        for (var i = 0; i < entries.length; i++) {
+          if (!set2.has(entries[i].name)) { next = entries[i]; break; }
+        }
+        if (next && !done) {
+          var a = document.createElement('a');
+          // Root-relative: this page lives at /legends/collection/, so a bare
+          // slug would resolve to /legends/collection/<slug> and 404.
+          a.href = '/legends/' + next.slug;
+          a.textContent = next.name;
+          nextEl.textContent = count > 0 ? 'Next up: ' : 'Start with: ';
+          nextEl.appendChild(a);
+          nextEl.hidden = false;
+        }
+      }
 
       // The share button only exists in the page-1 markup, because it needs
       // the hero photo that only page 1 renders.

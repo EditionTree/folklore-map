@@ -670,6 +670,10 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 .col-section{margin-top:38px}
 .col-section h2{font-family:'Marcellus',serif;font-size:20px;font-weight:400;color:#3f3023;margin-bottom:12px}
 .col-context{font-size:15.5px;color:#3f3023;max-width:820px;line-height:1.7;margin:0 0 14px}
+.col-next{margin:0 0 14px;font-size:13.5px;color:#5a4632}
+.col-next a{color:#9d461f;font-family:'Marcellus',serif;text-decoration:none;border-bottom:1px solid rgba(157,70,31,.35)}
+.col-next a:hover{color:#c4622a;border-bottom-color:#c4622a}
+.col-scope{margin:0 0 14px;font-size:13px;color:#5a4632;font-style:italic}
 .col-maplink{margin:2px 0 26px}
 .col-gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
 .col-gallery img{width:100%;height:110px;object-fit:cover;border-radius:2px;box-shadow:0 2px 8px rgba(0,0,0,.2)}
@@ -703,7 +707,7 @@ def track_event_script(event_type, **fields):
         # an HTML attribute, so the value truncated at the first quote and
         # JSON.parse saw only '{'. HTML-escaping the raw JSON round-trips.
         '<div hidden data-track="' + esc(payload) + '"></div>' + chr(10) +
-        '<script src="/js/page.js?v=20260823a"></script>\n'
+        '<script src="/js/page.js?v=20260823b"></script>\n'
     )
 
 
@@ -712,7 +716,7 @@ def collection_index_progress_script():
     .col-index-row[data-slug] cards itself. Kept as a function so callers do not
     change, and so the shared script is guaranteed to be present on a page that
     might not emit a track event."""
-    return '<script src="/js/page.js?v=20260823a"></script>\n'
+    return '<script src="/js/page.js?v=20260823b"></script>\n'
 
 
 def collection_detail_progress_script(slug, title):
@@ -727,7 +731,7 @@ def collection_detail_progress_script(slug, title):
         '<div hidden'
         ' data-collection-slug="' + esc(slug) + '"'
         ' data-collection-title="' + esc(title) + '"></div>' + chr(10) +
-        '<script src="/js/page.js?v=20260823a"></script>\n'
+        '<script src="/js/page.js?v=20260823b"></script>\n'
     )
 
 
@@ -1657,6 +1661,80 @@ def update_homepage_count(total, legends):
         raise RuntimeError("Could not update map.html og/twitter description counts")
     with io.open(map_path, "w", encoding="utf-8") as f:
         f.write(map_text)
+
+
+# ── Collection geographic scope ───────────────────────────────────────────
+# A collection page said how many entries it held and nothing about where they
+# are, so there was no way to tell "nine sites within an afternoon's drive"
+# from "forty spread across three countries". Both exist in the data. Every
+# legend carries lat/lng, so this is measured rather than described.
+
+# Nations come from each legend's TAGS, not from its free-text `region` field.
+# The region reads "Cornwall" or "Slaghtaverty, County Londonderry", so asking
+# whether it contains "England" under-reports badly: a first cut using it put
+# Arthurian Britain in Scotland, Wales and Northern Ireland with no England at
+# all, and claimed nine Welsh holy wells were spread over 330 miles. The tags
+# are the controlled vocabulary that already drives the region pages, and only
+# 6 of 709 entries lack one.
+
+
+def _miles_between(a, b):
+    """Great-circle distance in miles between two (lat, lng) pairs."""
+    lat1, lng1 = math.radians(a[0]), math.radians(a[1])
+    lat2, lng2 = math.radians(b[0]), math.radians(b[1])
+    dlat, dlng = lat2 - lat1, lng2 - lng1
+    h = math.sin(dlat / 2) ** 2 + math.cos(lat1) * math.cos(lat2) * math.sin(dlng / 2) ** 2
+    return 3958.8 * 2 * math.asin(math.sqrt(h))
+
+
+def _nation_phrase(names):
+    if not names:
+        return ""
+    if len(names) == 1:
+        return names[0]
+    return ", ".join(names[:-1]) + " and " + names[-1]
+
+
+def collection_scope_sentence(members):
+    """One factual line about where a collection's entries actually are.
+
+    Returns "" when too few members carry coordinates to say anything true.
+    The span is the widest distance between any two members, which is the
+    number a reader cares about ("could I do this in a weekend"), not the
+    bounding-box diagonal, which overstates a north-south string of sites.
+    """
+    pts = [(m.get("lat"), m.get("lng")) for m in members
+           if isinstance(m.get("lat"), (int, float)) and isinstance(m.get("lng"), (int, float))]
+    if len(pts) < 2:
+        return ""
+
+    # n is at most a few dozen, so the exact pairwise maximum is affordable and
+    # avoids the bounding-box overestimate.
+    span = 0.0
+    for i in range(len(pts)):
+        for j in range(i + 1, len(pts)):
+            d = _miles_between(pts[i], pts[j])
+            if d > span:
+                span = d
+
+    tags = set()
+    for m in members:
+        tags |= (set(m.get("tags") or []) & set(NATIONS))
+    # NATIONS order is england, scotland, wales, ireland, ... which reads better
+    # than alphabetical and is stable across rebuilds.
+    found = [prettify_region(t) for t in NATIONS if t in tags]
+    # Listing five or more nations reads as noise rather than information, and
+    # at that point the honest summary is simply that it covers the islands.
+    where = "Britain and Ireland" if len(found) >= 5 else _nation_phrase(found)
+    count = len(pts)
+    if span < 60:
+        body = "all within about %d miles of each other" % max(5, int(round(span / 5.0) * 5))
+    else:
+        body = "spread across roughly %d miles" % int(round(span / 10.0) * 10)
+
+    if where:
+        return "%d mapped entries in %s, %s." % (count, where, body)
+    return "%d mapped entries, %s." % (count, body)
 
 
 # ── Image credit and AI disclosure ───────────────────────────────────────
@@ -2625,7 +2703,14 @@ def build():
             # Precomputed member name-list for the map's `?collection=` filter —
             # map.html fetches this rather than porting matches_collection() to JS.
             with io.open(os.path.join(col_dir, f"{slug}.json"), "w", encoding="utf-8") as f:
-                json.dump({"legends": [m["name"] for m in members]}, f, ensure_ascii=False)
+                # "legends" stays a bare name list because map.html's
+                # ?collection= filter reads it. "entries" is additive: the
+                # collection page needs slugs to link the next undiscovered one.
+                json.dump({
+                    "legends": [m["name"] for m in members],
+                    "entries": [{"name": m["name"], "slug": slugmap[m["name"]]}
+                                for m in members if m["name"] in slugmap],
+                }, f, ensure_ascii=False)
             total_pages = max(1, (total + COLLECTION_PER_PAGE - 1) // COLLECTION_PER_PAGE)
             for page_no in range(1, total_pages + 1):
                 start = (page_no - 1) * COLLECTION_PER_PAGE
@@ -2725,6 +2810,13 @@ def build():
                         f'{media_html}</div>\n'
                     )
 
+                # Measured from the members' own coordinates, so it answers
+                # "is this a weekend or a lifetime" before the reader commits.
+                scope_html = ""
+                scope = collection_scope_sentence(members)
+                if scope:
+                    scope_html = f'<p class="col-scope">{esc(scope)}</p>\n'
+
                 map_link = (f'<p class="col-maplink"><a class="back" '
                             f'href="{BASE}/map?collection={esc(slug)}">'
                             f'View this collection on the Map &#8594;</a></p>\n')
@@ -2733,7 +2825,8 @@ def build():
                     '<span class="cip-bar"><span class="cip-fill"></span></span>'
                     '<span class="cip-label"></span>'
                     '<button type="button" class="col-share-btn" hidden>Share this collection</button>'
-                    '<span class="col-share-status" aria-live="polite"></span></div>\n'
+                    '<span class="col-share-status" aria-live="polite"></span></div>'
+                    '<p class="col-next" hidden></p>\n'
                 )
                 page = build_browse_page(
                     page_title=f"{col['title']}{page_tag} · Folklore Finder",
@@ -2753,7 +2846,7 @@ def build():
                     nav_active="collections",
                     hero_html=hero_html,
                     extra_sections=extra_sections,
-                    after_intro=context_html + progress_html + map_link,
+                    after_intro=context_html + scope_html + progress_html + map_link,
                     wrap_class="ornamented",
                     track_script=track_event_script("collection_viewed", collection_slug=slug)
                                  + collection_detail_progress_script(slug, col["title"]),
@@ -3000,7 +3093,7 @@ def build():
         place_explorer
         + '<div class="browse-tabs" role="tablist" aria-label="Browse legends by">' + browse_tab_buttons + '</div>'
         + '<div class="browse-tab-panels">' + browse_tab_panels + '</div>'
-        + '<script src="/js/page.js?v=20260823a"></script>'
+        + '<script src="/js/page.js?v=20260823b"></script>'
         '<h2 class="azh">A-Z</h2>'
     )
 

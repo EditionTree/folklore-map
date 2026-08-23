@@ -139,6 +139,18 @@
     /* Elements that use --parchment as text colour (light text on dark bg) — keep light in night mode */
     body.night h1 { color: #c8d8f0; }
     body.night .sidebar-toggle-btn { color: #c8d8f0; border-color: rgba(70,100,180,0.4); }
+    /* .filter-bar .sidebar-toggle-btn paints a brown gradient at (0,2,0). The
+       night rule above is (0,2,1) so it wins on colour and border, but it never
+       set a background, which left the button brown in dusk while everything
+       around it went blue. Pre-dates the nav work. */
+    body.night .filter-bar .sidebar-toggle-btn {
+      background: linear-gradient(180deg, #213653, #141e30);
+      border-color: rgba(70,100,180,0.4);
+    }
+    body.night .filter-bar .sidebar-toggle-btn:hover {
+      background: linear-gradient(180deg, #2a4880, #18253a);
+      border-color: #58739c;
+    }
     body.night .sidebar-toggle-btn:hover { background: rgba(70,100,180,0.15); }
     /* Legend panel — hardcoded background */
     body.night .legend-panel { background: rgba(20,30,50,0.97); border-color: #2e4870; }
@@ -260,6 +272,16 @@
       gap: 10px;                 /* three columns, not a centred link row */
       z-index: 1000;             /* .sidebar sits at 1500 and must stay above */
       transition: background .6s ease, border-color .6s ease;  /* dusk fade */
+    }
+    /* nav.css styles every <a> inside .topnav as a nav link, including 6px 14px
+       of padding. The brand lockup is an <a> too, and it is a fixed 40x40 box
+       whose <img> fills it, so that padding collapsed the emblem to icon size
+       and shoved the title into its ellipsis on mobile. nav.css exempts its own
+       brand the same way, via .topnav a.topnav-brand; the map's brand uses a
+       different class, so it needs its own exemption. */
+    header.topnav a.header-emblem-wrap {
+      padding: 0;
+      border-radius: 0;
     }
     @media (max-width: 1100px) {
       .topnav-links { gap: 0; }

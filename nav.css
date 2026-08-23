@@ -295,5 +295,10 @@
   .nav-search.open .nav-search-drop { display: block; }
   .nav-search-field { padding: 10px 13px; }
   .nav-search-field { background: #241a10; border-color: rgba(176,144,96,.5); box-shadow: 0 14px 34px rgba(0,0,0,.45); }
-  .nav-search-results { width: 100%; }
+  /* Butt the results panel against the field instead of floating it 9px below.
+     On desktop that gap falls over the dark nav bar and is invisible; here the
+     panel hangs below the nav over light parchment, so the gap read as a bright
+     stripe cutting the popup in two. Overlapping by 1px collapses the doubled
+     border into a single line. */
+  .nav-search-results { width: 100%; top: calc(100% - 1px); }
 }

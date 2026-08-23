@@ -1659,6 +1659,93 @@ def update_homepage_count(total, legends):
         f.write(map_text)
 
 
+# ── Image credit and AI disclosure ───────────────────────────────────────
+# Every hero image used to be AI-generated, so the disclosure was hardcoded on
+# every page. Phase 3 Stage 4 mixes in place photography, historic maps,
+# archival illustration, public-domain engravings and source-document excerpts,
+# and on those the AI line would be a false statement about provenance. This
+# site has already shipped one materially inaccurate disclosure (the Privacy
+# Notice), so provenance is data now rather than an assumption.
+#
+# An entry with no "credit" block is treated as AI-generated, which is what all
+# 712 existing entries are. Nothing has to be backfilled for the current library
+# to keep rendering exactly as it did.
+#
+# Shape, on a legend_pages.json entry or a collections.json collection:
+#
+#   "credit": {
+#     "medium":  "photograph" | "engraving" | "map" | "document" |
+#                "painting" | "illustration" | "ai",
+#     "creator": "Thomas Girtin",              optional
+#     "source":  "National Library of Scotland",
+#     "licence": "Public domain",
+#     "url":     "https://..."                 optional, links the source
+#   }
+
+AI_DISCLOSURE = "Illustration created with the assistance of generative AI."
+
+# Wording per medium. Kept explicit rather than derived from the key so the
+# published sentence is never a guess at grammar.
+CREDIT_MEDIUM_WORDING = {
+    "photograph":   "Photograph",
+    "engraving":    "Engraving",
+    "map":          "Map",
+    "document":     "Source document",
+    "painting":     "Painting",
+    "illustration": "Illustration",
+}
+
+
+def image_credit_html(credit, css_class, extra_prefix=""):
+    """Render the provenance line under a hero image.
+
+    `credit` is the entry's credit block, or a falsy value for the AI default.
+    `extra_prefix` is any existing free-text credit that should sit in front.
+    Raises on a non-AI credit with no licence: an unlicensed third-party image
+    is the one failure here with consequences beyond a wrong-looking page, so it
+    stops the build rather than publishing quietly.
+    """
+    parts = []
+    if extra_prefix:
+        parts.append(esc(extra_prefix))
+
+    medium = (credit or {}).get("medium", "ai").strip().lower() if credit else "ai"
+    if medium == "ai":
+        parts.append(AI_DISCLOSURE)
+        return '<span class="%s">%s</span>' % (css_class, " &middot; ".join(parts))
+
+    licence = (credit.get("licence") or "").strip()
+    source = (credit.get("source") or "").strip()
+    if not licence:
+        raise RuntimeError(
+            "image credit with medium=%r has no licence. Every non-AI image needs "
+            "one; leave the credit block off entirely if the image is AI-generated." % medium
+        )
+
+    lead = CREDIT_MEDIUM_WORDING.get(medium, medium.capitalize())
+    creator = (credit.get("creator") or "").strip()
+    parts.append(esc("%s by %s" % (lead, creator)) if creator else esc(lead))
+    if source:
+        url = (credit.get("url") or "").strip()
+        if url.startswith(("http://", "https://")):
+            parts.append('<a href="%s" target="_blank" rel="noopener">%s</a>'
+                         % (esc(url), esc(source)))
+        else:
+            parts.append(esc(source))
+    parts.append(esc(licence))
+    return '<span class="%s">%s</span>' % (css_class, " &middot; ".join(parts))
+
+
+def credit_summary(pages, collections):
+    """One line at build time showing what the library is made of."""
+    tally = {}
+    for entry in list(pages.values()) + list(collections):
+        medium = ((entry.get("credit") or {}).get("medium") or "ai").lower()
+        tally[medium] = tally.get(medium, 0) + 1
+    order = sorted(tally.items(), key=lambda kv: (-kv[1], kv[0]))
+    return ", ".join("%s %s" % (n, m) for m, n in order)
+
+
 FOUNDER_NOTE_FILE = "founder-note.md"
 FOUNDER_PLACEHOLDER = "Write here. Delete this line first."
 
@@ -2118,14 +2205,15 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
         hero_media = responsive_hero(
             image_path, hero_alt, "100vw",
             'width="1600" height="900" fetchpriority="high" decoding="async"')
-        # Hero art is AI-generated (Codex), so the disclosure note is always
-        # shown here regardless of whether an editorial caption exists —
-        # see the editorial & AI-use policy at /editorial.
+        # Provenance comes from the entry's optional "credit" block; with none,
+        # the image is AI-generated and carries the AI disclosure. Shown whether
+        # or not an editorial caption exists. See the editorial & AI-use policy
+        # at /editorial, and image_credit_html above.
         caption_span = (
             f'<span class="hero-caption">{esc(featured.get("caption", ""))}</span>'
             if featured.get("caption") else ""
         )
-        ai_note_span = '<span class="hero-ai-note">Illustration created with the assistance of generative AI.</span>'
+        ai_note_span = image_credit_html(featured.get("credit"), "hero-ai-note")
         # The caption wrap is nested INSIDE hero-media-wrap (with the image),
         # not left as a sibling of the whole hero section — on mobile the
         # hero stacks image-then-text instead of overlaying, so a caption
@@ -2605,14 +2693,10 @@ def build():
                     page_intro = ""
                     media_html = ""
                     if hero_path:
-                        # Collection hero art is drawn from the same AI-generated
-                        # legend-image pool, so it carries the same disclosure.
-                        hero_credit_html = (
-                            f'<span class="col-hero-credit">{esc(col["hero_credit"])} &middot; '
-                            'Illustration created with the assistance of generative AI.</span>'
-                            if col.get("hero_credit") else
-                            '<span class="col-hero-credit">Illustration created with the '
-                            'assistance of generative AI.</span>'
+                        # Provenance from the collection's optional "credit" block;
+                        # hero_credit stays as a free-text prefix in front of it.
+                        hero_credit_html = image_credit_html(
+                            col.get("credit"), "col-hero-credit", col.get("hero_credit", "")
                         )
                         media_html = (
                             '<div class="col-hero-media">'

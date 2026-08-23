@@ -173,5 +173,93 @@ Hero and collection pages automatically render the fixed wording: "Illustration 
 the assistance of generative AI." Do not add disclosure text inside the image or paraphrase it
 per entry.
 
-If real photography is introduced later, licensing and photographer credit must be recorded,
-and the current automatic AI label will need a non-AI metadata flag before publication.
+That wording is now the default rather than the only option: it renders when an entry has no
+`credit` block, which is every entry in the current library. An entry that carries one prints its
+real provenance instead. See Non-AI imagery below.
+
+## Non-AI imagery
+
+Phase 3 Stage 4 opens the library to place photography, historic maps, archival illustration,
+public-domain engravings and source-document excerpts. The point is not variety for its own
+sake. The site claims entries are rooted in real places and real research, and an image library
+that is entirely synthetic quietly argues the opposite.
+
+Nothing about the existing AI library changes. It stays, it stays labelled, and the guidance
+above still governs every generated image.
+
+### The credit block
+
+Provenance is data, not an assumption. Add an optional `credit` object to the entry in
+`legend_pages.json`, or to the collection in `collections.json`:
+
+```json
+"credit": {
+  "medium":  "engraving",
+  "creator": "Gustave Dore",
+  "source":  "Internet Archive",
+  "licence": "Public domain",
+  "url":     "https://archive.org/details/..."
+}
+```
+
+- **`medium`** is one of `photograph`, `engraving`, `map`, `document`, `painting`,
+  `illustration`, or `ai`. Anything else is printed capitalised, so an unlisted medium degrades
+  to something sensible rather than breaking.
+- **`licence`** is required on everything that is not `ai`. The build **raises** without it. An
+  unlicensed third-party image is the one mistake here whose consequences go beyond a
+  wrong-looking page, so it stops the build rather than publishing quietly.
+- **`creator`**, **`source`** and **`url`** are optional. A `url` is only linked when it is
+  `http` or `https`.
+- **No `credit` block means AI-generated**, which is what all 712 current entries are. Nothing
+  needs backfilling.
+
+The rendered line replaces the AI disclosure, so a photograph reads
+`Photograph by Jane Doe · National Library of Scotland · CC BY 4.0` and never claims to be
+generated. `hero_credit` on a collection still works and is printed in front of the credit line.
+
+### Licence rules
+
+- **Record the licence for the specific item, not the institution.** Holdings are mixed. A
+  library being old does not make a given scan public domain, and several of the archives below
+  serve public-domain originals under their own terms for the digitisation.
+- **Reproduce the licence's own wording** in the `licence` field. "Public domain", "CC BY 4.0",
+  "CC BY-SA 4.0", "CC BY-NC 4.0" and so on. Do not summarise or soften it.
+- **Attribute whatever the licence asks for**, in `creator` and `source`. Where a licence
+  demands a specific credit string, put that string in verbatim rather than reformatting it.
+- **`NC` licences are usable here** while the site takes no payment for content. Ko-fi support
+  is a donation rather than a sale, but if that ever changes, the `NC` items have to be
+  re-checked. Worth knowing before leaning on them heavily.
+- **If the rights are unclear, do not use it.** There is a working AI image already.
+
+### Where to look
+
+These are already in the site's own source-tier table as heritage or primary, so they are
+sources it cites for text and can reasonably cite for images:
+
+- `archive.org` and `babel.hathitrust.org` for scanned nineteenth-century folklore volumes,
+  which is where most usable engravings are.
+- `books.google.com` for the same, though the rights position on individual scans is messier.
+- `canmore.org.uk` and `historicenvironment.scot` for Scottish sites and monuments.
+- `british-history.ac.uk` and `celt.ucc.ie` for source-document excerpts.
+- `duchas.ie` for the Irish folklore collection, including manuscript pages.
+
+Check the terms per item at each of them.
+
+### What is still an editorial call
+
+The mechanism is built and enforced; the direction is not, and should not be decided by
+whoever happens to be adding an image that day.
+
+- **What proportion, and how fast.** A handful of well-chosen archival images does more for the
+  research claim than a scattering of weak ones.
+- **Which entries go first.** The obvious candidates are entries where a real artefact exists:
+  a carved bench-end, a standing stone, a manuscript page, a named person with a period
+  portrait.
+- **Whether medium should follow category or period.** Maps suit place entries, engravings suit
+  nineteenth-century collected tales, photographs suit extant sites. That is a plausible rule,
+  not a decided one.
+- **Whether a real image always beats a generated one.** It usually will for a site that exists
+  and a person who was drawn from life. It will not for a creature nobody has photographed.
+
+Until those are settled, treat every non-AI image as a deliberate one-off rather than the start
+of a rollout.

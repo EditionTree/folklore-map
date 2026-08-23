@@ -59,31 +59,6 @@ window.ShareCard = (function(){
     return lines;
   }
 
-  // The site's own "gilded piping" motif — a thin transparent -> accent ->
-  // gold -> accent -> transparent stripe, the same treatment .topnav::before
-  // and the footer rule use — drawn as a rectangle so it reads as a gilt mat
-  // line between the leafy oak frame and the card's own content.
-  function drawGoldPiping(ctx, inset){
-    const x0 = inset, y0 = inset, x1 = CARD_SIZE - inset, y1 = CARD_SIZE - inset;
-    ctx.lineWidth = 2;
-    function edge(ax, ay, bx, by){
-      const g = ctx.createLinearGradient(ax, ay, bx, by);
-      g.addColorStop(0, 'rgba(196,98,42,0)');
-      g.addColorStop(0.15, '#c4622a');
-      g.addColorStop(0.5, '#b09060');
-      g.addColorStop(0.85, '#c4622a');
-      g.addColorStop(1, 'rgba(196,98,42,0)');
-      ctx.strokeStyle = g;
-      ctx.beginPath();
-      ctx.moveTo(ax, ay);
-      ctx.lineTo(bx, by);
-      ctx.stroke();
-    }
-    edge(x0, y0, x1, y0); // top
-    edge(x0, y1, x1, y1); // bottom
-    edge(x0, y0, x0, y1); // left
-    edge(x1, y0, x1, y1); // right
-  }
 
   // ── Generic chrome ──────────────────────────────────────────────────────
   // Background, frame, kicker, headline, body copy and the site URL — the
@@ -116,9 +91,10 @@ window.ShareCard = (function(){
     ctx.fillStyle = vignette;
     ctx.fillRect(0, 0, CARD_SIZE, CARD_SIZE);
 
-    // Gilded piping, inset just inside the frame's leafy border, as a thin
-    // gold mat line between the frame and the card's own content.
-    drawGoldPiping(ctx, 120);
+    // No gilded piping here. It used to be drawn inset 120px, but the oak
+    // frame is the topmost layer and its leaves reach ~180px in, so the mat
+    // line was partly buried under them and read as a mistake rather than a
+    // border. The frame is the border.
 
     ctx.textAlign = 'center';
 
@@ -306,5 +282,43 @@ window.ShareCard = (function(){
     return 'downloaded';
   }
 
-  return { renderSealCard, renderPhotoCard, shareOrDownload };
+  // ── Social share links ────────────────────────────────────────────────
+  // The card renderer produces an image, and navigator.share can attach it on
+  // a phone, but on a desktop browser that falls back to a download and the
+  // trail ends there. Web intents cannot carry an image, so these share the
+  // page and the sentence instead, and sit alongside the saved image rather
+  // than replacing it.
+  //
+  // Plain links on purpose. No platform SDKs, no embedded buttons, nothing
+  // that phones home before the visitor has chosen to share, which matches
+  // what the Privacy Notice says the site does.
+  var SOCIAL = [
+    { label: 'X',        url: function(t, u){ return 'https://twitter.com/intent/tweet?text=' + t + '&url=' + u; } },
+    { label: 'Bluesky',  url: function(t, u){ return 'https://bsky.app/intent/compose?text=' + t + '%20' + u; } },
+    { label: 'Facebook', url: function(t, u){ return 'https://www.facebook.com/sharer/sharer.php?u=' + u; } },
+    { label: 'WhatsApp', url: function(t, u){ return 'https://wa.me/?text=' + t + '%20' + u; } }
+  ];
+
+  function buildShareLinks(container, text, pageUrl){
+    if(!container) return;
+    var t = encodeURIComponent(text);
+    var u = encodeURIComponent(pageUrl);
+    container.textContent = '';
+    var lead = document.createElement('span');
+    lead.className = 'share-links-lead';
+    lead.textContent = 'Share on ';
+    container.appendChild(lead);
+    SOCIAL.forEach(function(net, i){
+      if(i) container.appendChild(document.createTextNode(' · '));
+      var a = document.createElement('a');
+      a.href = net.url(t, u);
+      a.target = '_blank';
+      a.rel = 'noopener noreferrer';
+      a.textContent = net.label;
+      container.appendChild(a);
+    });
+    container.hidden = false;
+  }
+
+  return { renderSealCard, renderPhotoCard, shareOrDownload, buildShareLinks };
 })();

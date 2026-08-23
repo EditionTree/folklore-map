@@ -154,7 +154,7 @@
         <span class="pop-desc">${desc}</span>
         <span class="pop-req">${req}${!r.unlocked && r.current > 0 ? ` · ${r.current} of ${r.target}` : ''}</span>
         ${!r.unlocked && r.current > 0 ? `<span class="mini-track"><span style="width:${r.pct}%"></span></span>` : ''}
-        ${r.unlocked ? `<button type="button" class="badge-share-btn" data-share-id="${SafeDOM.escapeHtml(a.id)}">Share this seal</button><span class="badge-share-status" aria-live="polite"></span>` : ''}
+        ${r.unlocked ? `<button type="button" class="badge-share-btn" data-share-id="${SafeDOM.escapeHtml(a.id)}">Share this seal</button><span class="badge-share-status" aria-live="polite"></span><span class="badge-share-links" hidden></span>` : ''}
       </span>
     </div>`;
   }
@@ -181,6 +181,8 @@
       return `<section class="section"><div class="section-head"><h2>${SafeDOM.escapeHtml(section.title)}</h2><span class="section-count">${got} of ${items.length}</span></div><div class="badge-grid">${badges}</div></section>`;
     }).join('') || '<div class="empty">No public achievements are available yet.</div>';
   }
+
+
 
   // ── Shareable achievement card ──────────────────────────────────────────
   // Uses the shared renderer in /share-card.js (also used by legend pages
@@ -228,6 +230,16 @@
         statusEl.textContent = outcome === 'shared' ? 'Shared!'
           : outcome === 'downloaded' ? 'Image saved'
           : '';
+      }
+      // Offer the links whenever a card was actually produced. On a phone the
+      // native sheet has already appeared; on a desktop the image just landed
+      // in Downloads and this is the only route onward.
+      if(outcome !== 'cancelled'){
+        window.ShareCard.buildShareLinks(
+          btn.parentNode.querySelector('.badge-share-links'),
+          `I unlocked the "${meta.a.name}" achievement on Folklore Finder!`,
+          location.origin + '/achievements'
+        );
       }
     }catch(err){
       if(statusEl) statusEl.textContent = "Couldn't generate the image. Try again.";

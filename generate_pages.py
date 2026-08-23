@@ -670,6 +670,9 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 .col-section{margin-top:38px}
 .col-section h2{font-family:'Marcellus',serif;font-size:20px;font-weight:400;color:#3f3023;margin-bottom:12px}
 .col-context{font-size:15.5px;color:#3f3023;max-width:820px;line-height:1.7;margin:0 0 14px}
+.col-share-links{display:block;margin-top:6px;font-size:11.5px;color:#5a4632}
+.col-share-links a{color:#9d461f;text-decoration:none;border-bottom:1px solid rgba(157,70,31,.35)}
+.col-share-links a:hover{color:#c4622a;border-bottom-color:#c4622a}
 .col-next{margin:0 0 14px;font-size:13.5px;color:#5a4632}
 .col-next a{color:#9d461f;font-family:'Marcellus',serif;text-decoration:none;border-bottom:1px solid rgba(157,70,31,.35)}
 .col-next a:hover{color:#c4622a;border-bottom-color:#c4622a}
@@ -707,7 +710,7 @@ def track_event_script(event_type, **fields):
         # an HTML attribute, so the value truncated at the first quote and
         # JSON.parse saw only '{'. HTML-escaping the raw JSON round-trips.
         '<div hidden data-track="' + esc(payload) + '"></div>' + chr(10) +
-        '<script src="/js/page.js?v=20260823b"></script>\n'
+        '<script src="/js/page.js?v=20260823c"></script>\n'
     )
 
 
@@ -716,7 +719,7 @@ def collection_index_progress_script():
     .col-index-row[data-slug] cards itself. Kept as a function so callers do not
     change, and so the shared script is guaranteed to be present on a page that
     might not emit a track event."""
-    return '<script src="/js/page.js?v=20260823b"></script>\n'
+    return '<script src="/js/page.js?v=20260823c"></script>\n'
 
 
 def collection_detail_progress_script(slug, title):
@@ -727,11 +730,11 @@ def collection_detail_progress_script(slug, title):
     data attributes; the share title, body text and filename are derived from
     them in /js/page.js exactly as they were derived here."""
     return (
-        '<script src="/share-card.js"></script>\n'
+        '<script src="/share-card.js?v=20260823a"></script>\n'
         '<div hidden'
         ' data-collection-slug="' + esc(slug) + '"'
         ' data-collection-title="' + esc(title) + '"></div>' + chr(10) +
-        '<script src="/js/page.js?v=20260823b"></script>\n'
+        '<script src="/js/page.js?v=20260823c"></script>\n'
     )
 
 
@@ -1570,7 +1573,7 @@ $topnav
 </main>
 $footer
 <script src="/assets/leaflet/leaflet.js"></script>
-<script src="/share-card.js"></script>
+<script src="/share-card.js?v=20260823a"></script>
 <script src="$base/legend-page.js?v=20260823a"></script>
 </body>
 </html>
@@ -2825,7 +2828,7 @@ def build():
                     '<span class="cip-bar"><span class="cip-fill"></span></span>'
                     '<span class="cip-label"></span>'
                     '<button type="button" class="col-share-btn" hidden>Share this collection</button>'
-                    '<span class="col-share-status" aria-live="polite"></span></div>'
+                    '<span class="col-share-status" aria-live="polite"></span><span class="col-share-links" hidden></span></div>'
                     '<p class="col-next" hidden></p>\n'
                 )
                 page = build_browse_page(
@@ -3093,7 +3096,7 @@ def build():
         place_explorer
         + '<div class="browse-tabs" role="tablist" aria-label="Browse legends by">' + browse_tab_buttons + '</div>'
         + '<div class="browse-tab-panels">' + browse_tab_panels + '</div>'
-        + '<script src="/js/page.js?v=20260823b"></script>'
+        + '<script src="/js/page.js?v=20260823c"></script>'
         '<h2 class="azh">A-Z</h2>'
     )
 

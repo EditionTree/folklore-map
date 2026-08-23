@@ -144,7 +144,11 @@
       // the hero photo that only page 1 renders.
       var shareBtn = el.querySelector('.col-share-btn');
       var heroImg = document.querySelector('.col-hero-media img');
-      if (!shareBtn || !done || !heroImg || !window.ShareCard) return;
+      // Sharing used to require completing the collection, which meant the
+      // people most likely to pass it on, the ones part-way through and
+      // enjoying it, had nothing to pass on. The card now states whatever
+      // stage they are actually at.
+      if (!shareBtn || !heroImg || !window.ShareCard) return;
       shareBtn.hidden = false;
       shareBtn.addEventListener('click', function () {
         var statusEl = el.querySelector('.col-share-status');
@@ -152,24 +156,46 @@
         shareBtn.disabled = true;
         shareBtn.textContent = 'Generating…';
         if (statusEl) statusEl.textContent = '';
+        var card = done
+          ? { kicker: 'COLLECTION COMPLETE',
+              subKicker: members.length + ' legends discovered',
+              body: 'Every legend in this collection, found.' }
+          : (count > 0
+              ? { kicker: 'COLLECTION IN PROGRESS',
+                  subKicker: count + ' of ' + members.length + ' discovered',
+                  body: 'Working through the collection, one legend at a time.' }
+              : { kicker: 'FOLKLORE COLLECTION',
+                  subKicker: members.length + ' legends',
+                  body: 'A collection of legends that share a creature, a landscape or a tradition.' });
         window.ShareCard.renderPhotoCard({
-          kicker: 'COLLECTION COMPLETE',
-          subKicker: members.length + ' legends discovered',
+          kicker: card.kicker,
+          subKicker: card.subKicker,
           title: title,
-          body: 'Every legend in this collection, found.',
+          body: card.body,
           photoSrc: heroImg.currentSrc || heroImg.src,
         }).then(function (blob) {
           return window.ShareCard.shareOrDownload(
             blob,
             'folklore-finder-' + slug + '-collection.png',
-            title + ' complete!',
-            'I completed the "' + title + '" collection on Folklore Finder!'
+            title + (done ? ' complete!' : ' on Folklore Finder'),
+            done
+              ? 'I completed the "' + title + '" collection on Folklore Finder!'
+              : 'I am exploring the "' + title + '" collection on Folklore Finder!'
           );
         }).then(function (outcome) {
           if (statusEl) {
             statusEl.textContent = outcome === 'shared'
               ? 'Shared!'
               : (outcome === 'downloaded' ? 'Image saved' : '');
+          }
+          if (outcome !== 'cancelled') {
+            window.ShareCard.buildShareLinks(
+              el.querySelector('.col-share-links'),
+              done
+                ? 'I completed the "' + title + '" collection on Folklore Finder!'
+                : 'I am exploring the "' + title + '" collection on Folklore Finder!',
+              location.origin + location.pathname
+            );
           }
         }).catch(function () {
           if (statusEl) statusEl.textContent = "Couldn't generate the image. Try again.";

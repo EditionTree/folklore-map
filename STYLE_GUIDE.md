@@ -15,6 +15,8 @@ Use the Home page footer brown for every top navigation bar and every footer:
 
 **The nav lives in one file: `nav.css`.** Every page that renders `<nav class="topnav">` links it, including the map. Do not copy rules out of it and do not add a page-local `.topnav` rule; the only sanctioned overrides are the two page-scoped ones in `folklorefinder.css` (`.home-page .topnav`, `.interior-page .topnav a`) and the map's, listed under Map Page Exception.
 
+**The footer lives in one file: `footer.css`,** on the same terms. It had twelve copies, seven of them a dead light-on-parchment version that had been overridden for a long time. The sanctioned overrides are `.home-page footer`, `body.night footer` (dusk, on the map) and the map's own, which win on source order because `footer.css` is linked before each page's inline `<style>`.
+
 ## Top Navigation
 
 Every page except the Home page must show the brand lockup at the far left:

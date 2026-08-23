@@ -390,12 +390,8 @@ def banner_html():
 
 # The canonical top nav lives in nav.css, linked from every generated page.
 # TOPNAV_CSS used to inline a third copy of those rules here.
-# TOPNAV_CSS also carried the footer rules, which are NOT nav and had no other
-# home, so removing the constant stripped the footer from every generated page.
-# They live here until the footer gets the same single-source treatment as the nav.
-FOOTER_CSS = (
-    "footer{position:relative;text-align:center;padding:12px 18px;font-size:12px;line-height:1.6;color:rgba(246,241,230,.78);background:#1a0e06;border-top:0}footer::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 0%,rgba(176,144,96,.6) 20%,rgba(196,98,42,.8) 50%,rgba(176,144,96,.6) 80%,transparent 100%)}footer a{color:rgba(246,241,230,.9);text-decoration:none}footer a:hover{color:#f2e8d5}footer a svg{vertical-align:-.15em;margin-right:5px}"
-)
+# The site footer lives in footer.css, linked from every generated page.
+# FOOTER_CSS briefly held a copy here after TOPNAV_CSS was retired.
 
 # Lucide line icons (lucide.dev, ISC), inlined rather than linked: they inherit
 # currentColor from whatever they sit in and cost no extra request. Size is
@@ -819,8 +815,9 @@ def build_browse_page(page_title, desc, url, h1, intro, crumb, nav_html, cards_h
             '\n'
             '<link rel="stylesheet" href="/fonts/fonts.css"/>\n'
             '<link rel="stylesheet" href="/nav.css?v=20260823b"/>\n'
+            '<link rel="stylesheet" href="/footer.css?v=20260823a"/>\n'
             + jsonld_html + breadcrumb_jsonld_html + head_extra
-            + '<style>' + BROWSE_STYLE + FOOTER_CSS + '</style></head>\n<body class="catalogue-page">\n'
+            + '<style>' + BROWSE_STYLE + '</style></head>\n<body class="catalogue-page">\n'
             + topnav_html(nav_active) + '\n<main id="main-content" tabindex="-1">\n' + banner_html() + '\n<div class="wrap' + (' ' + wrap_class if wrap_class else '') + '">\n'
             '<nav class="crumb"><a href="' + BASE + '/">Home</a> &#8250; '
             '<a href="' + BASE + '/' + OUT_DIR + '/">All legends</a> &#8250; '
@@ -1522,6 +1519,7 @@ FEATURED_PAGE = Template("""<!DOCTYPE html>
 <link rel="stylesheet" href="/fonts/fonts.css"/>
 <link rel="stylesheet" href="/assets/leaflet/leaflet.css"/>
 <link rel="stylesheet" href="/nav.css?v=20260823b"/>
+<link rel="stylesheet" href="/footer.css?v=20260823a"/>
 <link rel="stylesheet" href="/legend-page.css?v=20260823b"/>
 <script type="application/ld+json">$jsonld</script>
 $breadcrumb_jsonld
@@ -2880,6 +2878,7 @@ def build():
 <meta name="twitter:image" content="{BASE}/og/preview-folklore-finder.jpg"/>
 <link rel="stylesheet" href="/fonts/fonts.css"/>
 <link rel="stylesheet" href="/nav.css?v=20260823b"/>
+<link rel="stylesheet" href="/footer.css?v=20260823a"/>
 <style>
 *{{box-sizing:border-box;margin:0;padding:0}}
 body{{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent 25rem),linear-gradient(180deg,#e8dcc5,#f6f1e6 34rem,#eadfc9);color:#3f3023;font-family:'Spectral',serif;min-height:100vh}}
@@ -2931,7 +2930,6 @@ h1::after{{content:"";display:block;width:132px;height:40px;margin:9px 0 19px;ba
 @media(max-width:1000px){{.browse-link-sections{{grid-template-columns:1fr 1fr}}.browse-link-sections .browse-sec:last-child{{grid-column:1/-1}}}}
 @media(max-width:760px){{.wrap{{width:calc(100% - 32px)}}.place-explorer{{grid-template-columns:1fr;margin:42px 24px 68px;padding:44px 34px;gap:22px}}.place-explorer::after{{inset:-19px;border-width:24px;border-image-width:24px}}.place-map{{width:min(100%,280px)}}.browse-link-sections{{grid-template-columns:1fr;gap:18px}}.browse-link-sections .browse-sec:last-child{{grid-column:auto}}}}
 @media(max-width:480px){{.browse-link-sections .browse-sec:last-child .region-links{{grid-template-columns:1fr}}}}
-{FOOTER_CSS}
 </style></head>
 <body>
 {topnav_html("browse")}

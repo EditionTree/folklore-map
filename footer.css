@@ -1,0 +1,51 @@
+/* Folklore Finder canonical site footer.
+ *
+ * SINGLE SOURCE. This existed as TWELVE copies: folklorefinder.css,
+ * legend-page.css, FOOTER_CSS in generate_pages.py, map.html, and a copy in the
+ * inline <style> of eight individual pages. Seven of those page copies were an
+ * older light-on-parchment footer that had been dead for a while, overridden
+ * because the stylesheet link happens to sit after the inline block.
+ *
+ * Load it on every page that renders a <footer>. Do not copy rules out of it.
+ * See STYLE_GUIDE.md, Canonical Site Chrome.
+ *
+ * Self-contained for the same reason nav.css is: the surfaces that load it use
+ * different token vocabularies, so the footer carries its own. Value is
+ * folklorefinder.css's, which the design system names canonical.
+ *
+ * map.html deliberately overrides several of these. Its inline <style> is
+ * parsed after this file and both use plain `footer` selectors, so source order
+ * gives the map the win without needing extra specificity.
+ */
+:root {
+  --footer-bar: #1a0e06;   /* --ff-bar-brown, fixed by Canonical Site Chrome */
+}
+
+footer {
+  position: relative;
+  text-align: center;
+  padding: 12px 18px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: rgba(246,241,230,.78);
+  background: var(--footer-bar);
+  border-top: 0;
+}
+
+/* Lucide icon inside a footer link (the Ko-fi cup) — aligned off the baseline,
+   since the footer is a plain run of inline text rather than a flex row. */
+footer a svg { vertical-align: -.15em; margin-right: 5px; }
+
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(176,144,96,0.6) 20%, rgba(196,98,42,0.8) 50%, rgba(176,144,96,0.6) 80%, transparent 100%);
+}
+
+footer a {
+  color: rgba(246,241,230,.9);
+  text-decoration: none;
+}
+
+footer a:hover { color: #f2e8d5; }

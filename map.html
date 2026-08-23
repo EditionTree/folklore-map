@@ -63,7 +63,7 @@
   <link rel="stylesheet" href="/assets/leaflet/MarkerCluster.css"/>
   <link rel="stylesheet" href="/assets/leaflet/MarkerCluster.Default.css"/>
   <link rel="stylesheet" href="/fonts/fonts.css"/>
-  <link rel="stylesheet" href="/nav.css?v=20260823a"/>
+  <link rel="stylesheet" href="/nav.css?v=20260823b"/>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -288,7 +288,7 @@
       .topnav-links a { padding: 5px 8px; font-size: 10.5px; }
     }
     @media (max-width: 860px) {
-      header { justify-content: space-between; }
+      header.topnav { justify-content: space-between; }
       .header-title, .header-controls { position: static; transform: none; }
       .topnav-links {
         order: 3; width: 100%;
@@ -305,7 +305,7 @@
     }
 
     @media (max-width: 1100px) {
-      header { min-height:58px;padding:10px 22px; }
+      header.topnav { min-height:58px;padding:10px 22px; }
       .header-emblem-wrap { width:40px;height:40px; }
       .header-title { gap:11px; }
       .header-kicker { display:none; }
@@ -926,13 +926,13 @@
     /* ── MOBILE ── */
     @media (max-width: 640px) {
       /* Header: title above a full-width control row so iOS never clips controls */
-      header {
+      header.topnav {
         padding: calc(7px + env(safe-area-inset-top)) 10px 7px;
         gap: 6px;
         flex-wrap: wrap;
         align-items: center;
       }
-      header::before { display: none; }
+      header.topnav::before { display: none; }
       h1 { font-size: 15px; letter-spacing: 0.04em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
       h1::before, h1::after { content: none; }
 

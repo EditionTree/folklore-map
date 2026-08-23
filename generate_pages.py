@@ -818,7 +818,7 @@ def build_browse_page(page_title, desc, url, h1, intro, crumb, nav_html, cards_h
             '<meta name="twitter:image" content="' + (ogimage or (BASE + '/og/preview.jpg')) + '"/>\n'
             '\n'
             '<link rel="stylesheet" href="/fonts/fonts.css"/>\n'
-            '<link rel="stylesheet" href="/nav.css?v=20260823a"/>\n'
+            '<link rel="stylesheet" href="/nav.css?v=20260823b"/>\n'
             + jsonld_html + breadcrumb_jsonld_html + head_extra
             + '<style>' + BROWSE_STYLE + FOOTER_CSS + '</style></head>\n<body class="catalogue-page">\n'
             + topnav_html(nav_active) + '\n<main id="main-content" tabindex="-1">\n' + banner_html() + '\n<div class="wrap' + (' ' + wrap_class if wrap_class else '') + '">\n'
@@ -1521,7 +1521,7 @@ FEATURED_PAGE = Template("""<!DOCTYPE html>
 <meta name="twitter:image:alt" content="$og_alt"/>
 <link rel="stylesheet" href="/fonts/fonts.css"/>
 <link rel="stylesheet" href="/assets/leaflet/leaflet.css"/>
-<link rel="stylesheet" href="/nav.css?v=20260823a"/>
+<link rel="stylesheet" href="/nav.css?v=20260823b"/>
 <link rel="stylesheet" href="/legend-page.css?v=20260823b"/>
 <script type="application/ld+json">$jsonld</script>
 $breadcrumb_jsonld
@@ -2879,7 +2879,7 @@ def build():
 <meta name="twitter:description" content="Browse all {written} myths, legends, ghosts and folklore stories from every region of Britain and Ireland, each pinned to its place of origin on our interactive folklore map."/>
 <meta name="twitter:image" content="{BASE}/og/preview-folklore-finder.jpg"/>
 <link rel="stylesheet" href="/fonts/fonts.css"/>
-<link rel="stylesheet" href="/nav.css?v=20260823a"/>
+<link rel="stylesheet" href="/nav.css?v=20260823b"/>
 <style>
 *{{box-sizing:border-box;margin:0;padding:0}}
 body{{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent 25rem),linear-gradient(180deg,#e8dcc5,#f6f1e6 34rem,#eadfc9);color:#3f3023;font-family:'Spectral',serif;min-height:100vh}}

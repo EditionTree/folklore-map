@@ -293,6 +293,16 @@
     z-index: 30;
   }
   .nav-search.open .nav-search-drop { display: block; }
+  /* Paint the popup container itself, not just the field inside it. On desktop
+     the dropdown sits over the dark nav bar so anything uncovered is invisible;
+     here it hangs below the bar over light parchment, where any part the field
+     does not cover reads as a see-through hole. */
+  .nav-search-drop {
+    background: #241a10;
+    border: 1px solid rgba(176,144,96,.5);
+    box-shadow: 0 14px 34px rgba(0,0,0,.45);
+  }
+  .nav-search-field { border: 0; box-shadow: none; }
   .nav-search-field { padding: 10px 13px; }
   .nav-search-field { background: #241a10; border-color: rgba(176,144,96,.5); box-shadow: 0 14px 34px rgba(0,0,0,.45); }
   /* Butt the results panel against the field instead of floating it 9px below.

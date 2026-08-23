@@ -1,0 +1,165 @@
+/* Folklore Finder share dialog.
+ *
+ * Styling for the dialog built by share-card.js, which is loaded on legend
+ * pages, generated collection pages and the achievements page. Those three
+ * surfaces have three different stylesheets, so this rides with the component
+ * rather than being copied into each, the same way nav.css and footer.css do.
+ *
+ * Self-contained tokens for the same reason: the surfaces use different
+ * vocabularies (--accent, --rust, --ff-burnt-orange), so the dialog carries its
+ * own. Values are folklorefinder.css's, which the design system names canonical.
+ *
+ * z-index sits at 9000, matching the share backdrop already documented in the
+ * stacking ladder: Leaflet 400 to 1000, submit prompt 7000, topnav 7500,
+ * share 9000, achievement toasts 9500.
+ */
+:root {
+  --share-paper: #f6f1e6;
+  --share-panel: #efe4cf;
+  --share-ink: #3f3023;
+  --share-soft: #5a4632;
+  --share-gold: #b09060;
+  --share-accent: #c4622a;
+  --share-accent-dk: #9d461f;
+}
+
+.sharecard-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(29, 23, 18, .72);
+  overflow-y: auto;
+}
+
+.sharecard-panel {
+  position: relative;
+  width: min(420px, 100%);
+  max-height: 100%;
+  overflow-y: auto;
+  padding: 26px 24px 24px;
+  background: var(--share-paper);
+  border: 1px solid var(--share-gold);
+  border-radius: 0;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, .45);
+  text-align: center;
+}
+
+.sharecard-close {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  padding: 4px 8px;
+  font-size: 20px;
+  line-height: 1;
+  color: var(--share-soft);
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.sharecard-close:hover,
+.sharecard-close:focus-visible { color: var(--share-accent); }
+
+.sharecard-head {
+  margin: 0 0 16px;
+  font-family: 'Marcellus', serif;
+  font-size: 13px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--share-soft);
+}
+
+/* The card is square, so this keeps it from dominating a short viewport. */
+.sharecard-preview {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto 18px;
+  border: 1px solid rgba(176, 144, 96, .5);
+  background: var(--share-panel);
+}
+
+.sharecard-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.sharecard-btn {
+  display: inline-block;
+  padding: 9px 18px;
+  font-family: 'Marcellus', serif;
+  font-size: 12px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--share-ink);
+  background: transparent;
+  border: 1px solid var(--share-gold);
+  border-radius: 0;
+  cursor: pointer;
+}
+.sharecard-btn:hover,
+.sharecard-btn:focus-visible { border-color: var(--share-accent); color: var(--share-accent-dk); }
+
+.sharecard-btn-primary {
+  color: var(--share-paper);
+  background: var(--share-accent);
+  border-color: var(--share-accent);
+}
+.sharecard-btn-primary:hover,
+.sharecard-btn-primary:focus-visible {
+  color: var(--share-paper);
+  background: var(--share-accent-dk);
+  border-color: var(--share-accent-dk);
+}
+
+.sharecard-or {
+  margin: 0 0 12px;
+  font-size: 12px;
+  font-style: italic;
+  color: var(--share-soft);
+}
+
+.sharecard-networks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+}
+
+.sharecard-net {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  width: 68px;
+  padding: 9px 4px;
+  font-family: 'Spectral', Georgia, serif;
+  font-size: 11px;
+  text-decoration: none;
+  color: var(--share-soft);
+  border: 1px solid transparent;
+}
+.sharecard-net:hover,
+.sharecard-net:focus-visible {
+  color: var(--share-ink);
+  border-color: rgba(176, 144, 96, .55);
+  background: rgba(246, 241, 230, .6);
+}
+.sharecard-net svg { display: block; }
+
+@media (max-width: 420px) {
+  .sharecard-panel { padding: 22px 16px 18px; }
+  .sharecard-net { width: 60px; font-size: 10px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sharecard-overlay, .sharecard-panel { transition: none; }
+}

@@ -174,29 +174,19 @@
           body: card.body,
           photoSrc: heroImg.currentSrc || heroImg.src,
         }).then(function (blob) {
-          return window.ShareCard.shareOrDownload(
-            blob,
-            'folklore-finder-' + slug + '-collection.png',
-            title + (done ? ' complete!' : ' on Folklore Finder'),
-            done
+          window.ShareCard.openShareDialog({
+            blob: blob,
+            filename: 'folklore-finder-' + slug + '-collection.png',
+            heading: 'Share this collection',
+            previewAlt: 'The ' + title + ' collection, as a share card',
+            title: title + (done ? ' complete!' : ' on Folklore Finder'),
+            text: done
               ? 'I completed the "' + title + '" collection on Folklore Finder!'
-              : 'I am exploring the "' + title + '" collection on Folklore Finder!'
-          );
-        }).then(function (outcome) {
-          if (statusEl) {
-            statusEl.textContent = outcome === 'shared'
-              ? 'Shared!'
-              : (outcome === 'downloaded' ? 'Image saved' : '');
-          }
-          if (outcome !== 'cancelled') {
-            window.ShareCard.buildShareLinks(
-              el.querySelector('.col-share-links'),
-              done
-                ? 'I completed the "' + title + '" collection on Folklore Finder!'
-                : 'I am exploring the "' + title + '" collection on Folklore Finder!',
-              location.origin + location.pathname
-            );
-          }
+              : 'I am exploring the "' + title + '" collection on Folklore Finder!',
+            url: location.origin + location.pathname,
+            image: (document.querySelector('meta[property="og:image"]') || {}).content
+          });
+          if (statusEl) statusEl.textContent = '';
         }).catch(function () {
           if (statusEl) statusEl.textContent = "Couldn't generate the image. Try again.";
         }).then(function () {

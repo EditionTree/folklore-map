@@ -154,7 +154,7 @@
         <span class="pop-desc">${desc}</span>
         <span class="pop-req">${req}${!r.unlocked && r.current > 0 ? ` · ${r.current} of ${r.target}` : ''}</span>
         ${!r.unlocked && r.current > 0 ? `<span class="mini-track"><span style="width:${r.pct}%"></span></span>` : ''}
-        ${r.unlocked ? `<button type="button" class="badge-share-btn" data-share-id="${SafeDOM.escapeHtml(a.id)}">Share this seal</button><span class="badge-share-status" aria-live="polite"></span><span class="badge-share-links" hidden></span>` : ''}
+        ${r.unlocked ? `<button type="button" class="badge-share-btn" data-share-id="${SafeDOM.escapeHtml(a.id)}">Share this seal</button><span class="badge-share-status" aria-live="polite"></span>` : ''}
       </span>
     </div>`;
   }
@@ -220,27 +220,17 @@
     if(statusEl) statusEl.textContent = '';
     try{
       const blob = await renderAchievementCard(meta);
-      const filename = `folklore-finder-${slugify(meta.a.name)}-seal.png`;
-      const outcome = await window.ShareCard.shareOrDownload(
-        blob, filename,
-        `${meta.a.name} · Folklore Finder`,
-        `I unlocked the "${meta.a.name}" achievement on Folklore Finder!`
-      );
-      if(statusEl){
-        statusEl.textContent = outcome === 'shared' ? 'Shared!'
-          : outcome === 'downloaded' ? 'Image saved'
-          : '';
-      }
-      // Offer the links whenever a card was actually produced. On a phone the
-      // native sheet has already appeared; on a desktop the image just landed
-      // in Downloads and this is the only route onward.
-      if(outcome !== 'cancelled'){
-        window.ShareCard.buildShareLinks(
-          btn.parentNode.querySelector('.badge-share-links'),
-          `I unlocked the "${meta.a.name}" achievement on Folklore Finder!`,
-          location.origin + '/achievements'
-        );
-      }
+      window.ShareCard.openShareDialog({
+        blob,
+        filename: `folklore-finder-${slugify(meta.a.name)}-seal.png`,
+        heading: 'Share this seal',
+        previewAlt: `The ${meta.a.name} seal, as a share card`,
+        title: `${meta.a.name} · Folklore Finder`,
+        text: `I unlocked the "${meta.a.name}" achievement on Folklore Finder!`,
+        url: location.origin + '/achievements',
+        image: (document.querySelector('meta[property="og:image"]') || {}).content,
+      });
+      if(statusEl) statusEl.textContent = '';
     }catch(err){
       if(statusEl) statusEl.textContent = "Couldn't generate the image. Try again.";
     }finally{

@@ -1,4 +1,9 @@
 const CATEGORIES = window.FF_CATEGORIES;
+if (!CATEGORIES) {
+  // js/categories.js must load first. It carries data-cfasync="false" so
+  // Cloudflare Rocket Loader cannot defer it behind this file.
+  throw new Error("js/categories.js did not load before js/map.js");
+}
 
 
 let nightMode = false;

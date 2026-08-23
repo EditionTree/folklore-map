@@ -57,6 +57,12 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Spectral',seri
 /* ── BODY ── */
 .wrap{width:min(1100px,calc(100% - 56px));margin:0 auto;padding:0 0 70px}
 .section{padding:40px 0 0}
+/* ── KEEP YOUR ARCHIVE ── */
+.keep-actions{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 12px}
+.keep-note{font-size:13px;color:var(--ink-light);max-width:62ch}
+.keep-status{font-size:13px;margin-top:10px;min-height:1.2em}
+.keep-status.is-error{color:var(--accent)}
+.keep-status.is-ok{color:var(--ink)}
 .section-rule{display:flex;align-items:center;gap:14px;margin-bottom:8px}
 .section-rule::before,.section-rule::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
 .section-rule::after{background:linear-gradient(90deg,var(--gold),transparent)}
@@ -84,11 +90,11 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Spectral',seri
 .archive-empty h2{font-family:'Marcellus',serif;font-weight:400;font-size:26px;color:var(--ink);margin-bottom:12px}
 .archive-empty p{font-size:16px;color:var(--ink-light);margin-bottom:22px}
 .archive-empty-btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
-.archive-empty .btn{display:inline-block;font-family:'Marcellus',serif;font-size:13px;letter-spacing:.06em;text-transform:uppercase;padding:12px 22px;border-radius:3px;text-decoration:none;cursor:pointer;border:1px solid var(--accent-warm)}
-.archive-empty .btn-primary{background:var(--accent-warm);color:#f2e8d5}
-.archive-empty .btn-primary:hover{background:#a84d1e}
-.archive-empty .btn-secondary{background:transparent;color:var(--accent);border-color:var(--gold)}
-.archive-empty .btn-secondary:hover{border-color:var(--accent-warm)}
+.btn{display:inline-block;font-family:'Marcellus',serif;font-size:13px;letter-spacing:.06em;text-transform:uppercase;padding:12px 22px;border-radius:3px;text-decoration:none;cursor:pointer;border:1px solid var(--accent-warm)}
+.btn-primary{background:var(--accent-warm);color:#f2e8d5}
+.btn-primary:hover{background:#a84d1e}
+.btn-secondary{background:transparent;color:var(--accent);border-color:var(--gold)}
+.btn-secondary:hover{border-color:var(--accent-warm)}
 
 /* ── CONTINUATION BANNER ── */
 .continuation-banner{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;background:var(--parchment);border:1px solid var(--gold);border-radius:8px;padding:14px 20px;margin:8px 0 6px}
@@ -182,7 +188,7 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Spectral',seri
 
 <div class="wrap">
 
-  <p class="storage-note">Your archive is saved on this device only. No account is required. If you clear your browser&rsquo;s storage, or switch to a new device or browser, your archive starts fresh there; nothing is synced or backed up.</p>
+  <p class="storage-note">Your archive is saved on this device only. No account is required. If you clear your browser&rsquo;s storage, or switch to a new device or browser, your archive starts fresh there. Nothing is synced, so export a copy if you want to keep it.</p>
 
   <section class="archive-empty" id="archiveEmpty" hidden>
     <h2>Your archive begins with your first legend.</h2>
@@ -233,6 +239,18 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Spectral',seri
     </aside>
   </div>
 
+  <section class="section" id="archiveKeepSection">
+    <div class="section-rule"><span>Keep Your Archive</span></div>
+    <p class="section-sub">Your archive lives in this browser and nowhere else. Export it to a file and you can put it back after clearing your browser, or carry it to another device.</p>
+    <div class="keep-actions">
+      <button type="button" class="btn btn-primary" id="archiveExportBtn">Export archive</button>
+      <button type="button" class="btn btn-secondary" id="archiveImportBtn">Import archive</button>
+      <input type="file" id="archiveImportInput" accept="application/json,.json" hidden/>
+    </div>
+    <p class="keep-note">Importing merges with what is already here, so nothing is overwritten and importing the same file twice changes nothing.</p>
+    <p class="keep-status" id="archiveKeepStatus" role="status" aria-live="polite"></p>
+  </section>
+
   <section class="section" id="collectionProgressSection">
     <div class="section-rule"><span>Collection Progress</span></div>
     <p class="section-sub">How far you've explored each themed collection.</p>
@@ -245,7 +263,7 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Spectral',seri
 <footer>Folklore Finder &nbsp;&#183;&nbsp; An atlas of myths, legends, &amp; stories &nbsp;&#183;&nbsp; &copy; EditionTree &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/about">About</a> &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/updates">Updates</a> &nbsp;&#183;&nbsp; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2v2"/><path d="M14 2v2"/><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"/><path d="M6 2v2"/></svg>Ko-fi</a> &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/privacy">Privacy</a></footer>
 
 <script src="/js/dom-safe.js?v=20260822a"></script>
-<script src="/js/archive.js?v=20260823a"></script>
+<script src="/js/archive.js?v=20260823b"></script>
 </body>
 </html>
 

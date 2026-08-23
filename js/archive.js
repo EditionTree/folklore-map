@@ -177,3 +177,161 @@
     });
   });
 })();
+
+/* ── Export and import ────────────────────────────────────────────────────
+ * My Archive is accountless and lives only in this browser, which is a real
+ * differentiator and also a real way to lose everything. The page has always
+ * said so and offered nothing to do about it. This is the way out.
+ *
+ * Import MERGES rather than replaces, and every merge rule is idempotent, so
+ * importing the same file twice is a no-op rather than something that inflates
+ * visit counts or duplicates entries. Replacing would let one careless import
+ * destroy progress the file does not know about.
+ */
+(function(){
+  var FORMAT = 'folklore-finder-archive';
+  var VERSION = 1;
+
+  // Only real archive data. Device preferences (dusk mode, sidebar state, the
+  // submit-prompt dismissal) are deliberately not carried between browsers.
+  var KEYS = [
+    'ff_visited_legends_v1',
+    'folkloreMapBookmarks',
+    'ff_achievements_unlocked_v1',
+    'ff_behaviour_v1'
+  ];
+
+  var exportBtn = document.getElementById('archiveExportBtn');
+  var importBtn = document.getElementById('archiveImportBtn');
+  var fileInput = document.getElementById('archiveImportInput');
+  var statusEl  = document.getElementById('archiveKeepStatus');
+  if (!exportBtn || !importBtn || !fileInput || !statusEl) return;
+
+  function read(key, fallback){
+    try { return JSON.parse(localStorage.getItem(key) || 'null') || fallback; }
+    catch(e) { return fallback; }
+  }
+  function write(key, value){
+    try { localStorage.setItem(key, JSON.stringify(value)); } catch(e) {}
+  }
+  function say(message, ok){
+    statusEl.textContent = message;
+    statusEl.classList.toggle('is-error', ok === false);
+    statusEl.classList.toggle('is-ok', ok === true);
+  }
+
+  // ── Export ──
+  exportBtn.addEventListener('click', function(){
+    var payload = { format: FORMAT, version: VERSION,
+                    exported: new Date().toISOString(),
+                    site: location.origin, data: {} };
+    KEYS.forEach(function(k){
+      var raw = localStorage.getItem(k);
+      if (raw !== null) { try { payload.data[k] = JSON.parse(raw); } catch(e) {} }
+    });
+    var visited = Object.keys(payload.data.ff_visited_legends_v1 || {}).length;
+    var saved = (payload.data.folkloreMapBookmarks || []).length;
+    var seals = (payload.data.ff_achievements_unlocked_v1 || []).length;
+    if (!visited && !saved && !seals) {
+      say('There is nothing to export yet. Visit a legend first.', false);
+      return;
+    }
+    var blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+    var name = 'folklore-finder-archive-' + new Date().toISOString().slice(0, 10) + '.json';
+    // Same approach share-card.js already uses, so it is known to work under
+    // this site's Content-Security-Policy.
+    var url = URL.createObjectURL(blob);
+    var link = document.createElement('a');
+    link.href = url;
+    link.download = name;
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    setTimeout(function(){ URL.revokeObjectURL(url); }, 4000);
+    say('Exported ' + visited + ' visited, ' + saved + ' saved and ' + seals + ' seals to ' + name, true);
+  });
+
+  // ── Import ──
+  importBtn.addEventListener('click', function(){ fileInput.click(); });
+
+  fileInput.addEventListener('change', function(){
+    var file = fileInput.files && fileInput.files[0];
+    if (!file) return;
+    var reader = new FileReader();
+    reader.onerror = function(){ say('That file could not be read.', false); };
+    reader.onload = function(){
+      var added;
+      try { added = merge(JSON.parse(String(reader.result))); }
+      catch (err) { say(err.message, false); fileInput.value = ''; return; }
+      fileInput.value = '';
+      say('Added ' + added.visited + ' visited, ' + added.saved + ' saved and '
+          + added.seals + ' seals. Reloading.', true);
+      setTimeout(function(){ location.reload(); }, 1200);
+    };
+    reader.readAsText(file);
+  });
+
+  function merge(payload){
+    if (!payload || payload.format !== FORMAT) {
+      throw new Error('That is not a Folklore Finder archive file.');
+    }
+    if (Number(payload.version) > VERSION) {
+      throw new Error('That file came from a newer version of the site.');
+    }
+    var incoming = payload.data || {};
+
+    // Visited: earliest first visit, latest last visit, highest count. Taking
+    // the max rather than summing is what makes a repeat import a no-op.
+    var visited = read('ff_visited_legends_v1', {});
+    var addedVisited = 0;
+    Object.keys(incoming.ff_visited_legends_v1 || {}).forEach(function(name){
+      var them = incoming.ff_visited_legends_v1[name] || {};
+      var mine = visited[name];
+      if (!mine) { visited[name] = them; addedVisited++; return; }
+      visited[name] = {
+        firstVisited: minDate(mine.firstVisited, them.firstVisited),
+        lastVisited:  maxDate(mine.lastVisited, them.lastVisited),
+        count: Math.max(Number(mine.count) || 0, Number(them.count) || 0),
+        url: mine.url || them.url
+      };
+    });
+    write('ff_visited_legends_v1', visited);
+
+    var addedSaved = union('folkloreMapBookmarks', incoming.folkloreMapBookmarks);
+    var addedSeals = union('ff_achievements_unlocked_v1', incoming.ff_achievements_unlocked_v1);
+
+    var behaviour = read('ff_behaviour_v1', {});
+    var theirs = incoming.ff_behaviour_v1 || {};
+    behaviour.mapVisits = Math.max(Number(behaviour.mapVisits) || 0, Number(theirs.mapVisits) || 0);
+    if (theirs.afterMidnight) behaviour.afterMidnight = true;
+    write('ff_behaviour_v1', behaviour);
+
+    return { visited: addedVisited, saved: addedSaved, seals: addedSeals };
+  }
+
+  function union(key, incoming){
+    if (!Array.isArray(incoming)) return 0;
+    var mine = read(key, []);
+    if (!Array.isArray(mine)) mine = [];
+    var seen = {}, out = [], added = 0;
+    mine.concat(incoming).forEach(function(v){
+      var k = String(v);
+      if (seen[k]) return;
+      seen[k] = 1;
+      out.push(v);
+    });
+    added = out.length - mine.length;
+    write(key, out);
+    return added;
+  }
+
+  function minDate(a, b){ return pick(a, b, false); }
+  function maxDate(a, b){ return pick(a, b, true); }
+  function pick(a, b, wantLater){
+    if (!a) return b;
+    if (!b) return a;
+    var later = String(a) > String(b) ? a : b;   // ISO 8601 sorts lexically
+    var earlier = later === a ? b : a;
+    return wantLater ? later : earlier;
+  }
+})();

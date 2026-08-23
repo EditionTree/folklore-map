@@ -112,6 +112,19 @@ p{margin-bottom:14px;font-size:16.5px}
 .bottom-cta p{color:rgba(242,232,213,0.65);font-size:15.5px;max-width:480px;margin:0 auto 24px}
 .bottom-cta-btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
 
+/* ── FOUNDER NOTE ── */
+/* Content comes from founder-note.md via generate_pages.py. Sizes are on the
+   documented type scale: 17px body, 12px credit. Measure is capped so the one
+   first-person section on the site reads like prose, not like interface copy. */
+.founder-note-body{max-width:62ch}
+.founder-note-body p{font-size:17px;line-height:1.75;margin-bottom:16px}
+.founder-note-body p:last-child{margin-bottom:0}
+.founder-note-body a{color:var(--accent);text-decoration:underline;text-underline-offset:2px}
+.founder-note-body a:hover{color:var(--accent-warm)}
+/* p.founder-credit, not .founder-credit: the rule above is (0,1,1) and would
+   otherwise win, printing the credit at body size. */
+.founder-note-body p.founder-credit{font-size:12px;font-style:italic;color:var(--ink-light);margin-top:22px}
+
 /* ── KO-FI CARD ── */
 .kofi-card{display:flex;align-items:center;gap:18px;background:var(--parchment);border:1px solid var(--gold);border-radius:6px;padding:22px 24px;position:relative;overflow:hidden}
 .kofi-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--accent-warm) 40%,var(--gold) 60%,transparent)}
@@ -233,6 +246,10 @@ p{margin-bottom:14px;font-size:16.5px}
       </div>
     </div>
   </section>
+
+  <!-- FOUNDER NOTE START: generated from founder-note.md by generate_pages.py.
+       Do not edit between these markers; edit founder-note.md and rebuild. -->
+<!-- FOUNDER NOTE END -->
 
   <!-- Ko-fi -->
   <section class="section about-support-section">

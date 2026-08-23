@@ -1659,6 +1659,88 @@ def update_homepage_count(total, legends):
         f.write(map_text)
 
 
+FOUNDER_NOTE_FILE = "founder-note.md"
+FOUNDER_PLACEHOLDER = "Write here. Delete this line first."
+
+
+def _founder_inline(text):
+    """Escape, then apply the small formatting subset founder-note.md documents.
+
+    Escaping happens first so the note can contain < and & safely; the tags this
+    adds afterwards are the only markup that survives. Link targets are limited
+    to http(s) so a stray javascript: URL cannot be introduced by hand-editing.
+    """
+    out = esc(text)
+    out = re.sub(r"\[([^\]]+)\]\((https?://[^\s)]+)\)",
+                 lambda m: '<a href="%s" target="_blank" rel="noopener">%s</a>'
+                           % (m.group(2), m.group(1)), out)
+    out = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", out)
+    out = re.sub(r"(?<!\*)\*([^*]+)\*(?!\*)", r"<em>\1</em>", out)
+    return out
+
+
+def render_founder_note():
+    """Render the About page's founder-note section from founder-note.md.
+
+    Returns "" unless PUBLISH is yes and the note has actually been written, so
+    the section is simply absent from the live page until then rather than
+    shipping placeholder prose in the owner's voice.
+    """
+    if not os.path.exists(FOUNDER_NOTE_FILE):
+        return ""
+    raw = io.open(FOUNDER_NOTE_FILE, encoding="utf-8").read()
+
+    def field(name, default=""):
+        m = re.search(r"^%s:[ \t]*(.*)$" % name, raw, re.M)
+        return m.group(1).strip() if m else default
+
+    if field("PUBLISH").lower() != "yes":
+        return ""
+
+    m = re.search(r"^## Note[ \t]*$(.*)", raw, re.M | re.S)
+    body = (m.group(1) if m else "").strip()
+    if not body or FOUNDER_PLACEHOLDER in body:
+        print("  [founder] PUBLISH is yes but the note is still the placeholder; not published")
+        return ""
+
+    if re.search(r"[—–]", body):
+        print("  [founder] WARNING: em or en dash in founder-note.md, house style is neither")
+
+    paras = [p.strip() for p in re.split(r"\n\s*\n", body) if p.strip()]
+    html = "".join("<p>%s</p>" % _founder_inline(" ".join(p.split())) for p in paras)
+
+    credit = field("CREDIT")
+    credit_html = ('<p class="founder-credit">%s</p>' % _founder_inline(credit)) if credit else ""
+    heading = field("HEADING", "Why this exists") or "Why this exists"
+
+    return (
+        '  <section class="section founder-note">\n'
+        '    <div class="section-rule"><span>' + esc(heading) + '</span></div>\n'
+        '    <div class="founder-note-body">' + html + credit_html + '</div>\n'
+        '  </section>\n'
+    )
+
+
+def update_founder_note():
+    """Write the rendered note into about.html between its markers."""
+    path = "about.html"
+    text = io.open(path, encoding="utf-8").read()
+    start = "<!-- FOUNDER NOTE START"
+    end = "<!-- FOUNDER NOTE END -->"
+    i, j = text.find(start), text.find(end)
+    if i == -1 or j == -1:
+        raise RuntimeError(
+            "founder-note markers missing from about.html. They are how the note "
+            "is injected; restore them rather than dropping the section."
+        )
+    head_end = text.find("-->", i) + 3
+    body = render_founder_note()
+    new = text[:head_end] + ("\n" + body if body else "\n") + text[j:]
+    if new != text:
+        io.open(path, "w", encoding="utf-8", newline="").write(new)
+        print("  [founder] about.html updated (%s)" % ("published" if body else "section empty"))
+
+
 NEW_COLLECTIONS_STATE_FILE = "collections_state.json"
 
 
@@ -2119,6 +2201,7 @@ def build():
     today = datetime.date.today().isoformat()
     resolve_modified_dates(legends, today)  # stamps each leg["date_modified"]
     update_homepage_count(len(legends), legends)
+    update_founder_note()
     meta = load_category_meta()
     cat_intros, region_intros = load_page_intros()
     featured_pages = load_featured_pages()

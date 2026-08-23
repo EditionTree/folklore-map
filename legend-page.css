@@ -655,7 +655,11 @@ footer a svg{vertical-align:-.15em;margin-right:5px}
   .hero::after{display:none}
   .hero-media-wrap{position:relative;inset:auto;display:block}
   .hero img{position:static;display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
-  .hero-media-wrap::after{inset:10px;border-radius:3px}
+  /* Mobile stacks the hero into a plain 16:9 plate, where a frame inset from
+     the edge reads as a rectangle floating inside the picture rather than a
+     mount around it. Sit it on the edge instead. The image has no radius
+     here, so the frame takes none either. Desktop keeps the 14px inset. */
+  .hero-media-wrap::after{inset:0;border-radius:0}
   .hero-caption-wrap{right:22px;bottom:20px}
   .hero-placeholder{position:relative;aspect-ratio:16/9;height:auto}
   .hero-placeholder svg{right:6%;width:40%;height:auto;aspect-ratio:1;opacity:.4}

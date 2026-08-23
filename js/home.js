@@ -1,11 +1,36 @@
 (function(){
+  // ── Submit-a-legend prompt ──
+  // This asks the visitor to contribute, so it waits until the site has shown
+  // what it is worth contributing to. It used to appear on a first-ever visit,
+  // before the person had read a single entry. The markup now ships with
+  // .is-hidden and this is the only thing that removes it, so a first-time
+  // visitor never sees it and there is no flash while the check runs.
+  //
+  // "Opened a few legends" is the signal, because it is the one that means the
+  // visitor has actually read something. Collection progress is derived from
+  // the same visits, so it is already covered; opening the map is not, since a
+  // visitor can bounce around the map without reading anything.
+  var SUBMIT_PROMPT_MIN_LEGENDS = 3;
   var submitPrompt = document.querySelector('.hero-submit-cta');
   var submitPromptClose = document.querySelector('.hero-submit-close');
-  try {
-    if (submitPrompt && localStorage.getItem('ff_submit_prompt_closed_v1') === '1') {
-      submitPrompt.classList.add('is-hidden');
-    }
-  } catch(e) {}
+
+  function legendsOpened(){
+    try {
+      var visited = JSON.parse(localStorage.getItem('ff_visited_legends_v1') || '{}') || {};
+      return Object.keys(visited).length;
+    } catch(e) { return 0; }
+  }
+
+  function submitPromptEarned(){
+    try {
+      if (localStorage.getItem('ff_submit_prompt_closed_v1') === '1') return false;
+    } catch(e) { return false; }
+    return legendsOpened() >= SUBMIT_PROMPT_MIN_LEGENDS;
+  }
+
+  if (submitPrompt && submitPromptEarned()) {
+    submitPrompt.classList.remove('is-hidden');
+  }
   if (submitPromptClose && submitPrompt) {
     submitPromptClose.addEventListener('click', function(){
       submitPrompt.classList.add('is-hidden');

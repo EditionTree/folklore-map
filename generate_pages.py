@@ -1680,14 +1680,15 @@ $footer
 
 
 def load_category_meta():
-    """Extract category -> {colour, iconPath} from js/map.js (single source of truth).
+    """Extract category -> {colour, iconPath} from js/categories.js.
 
-    This read map.html until the inline script was extracted to js/map.js. It
-    also used to swallow the failure and return {}, which would have quietly
-    stripped the colour and icon from every generated page rather than stopping
-    the build. It raises now: a missing CATEGORIES block is a broken build, not
-    a page with no icons."""
-    text = io.open(os.path.join("js", "map.js"), encoding="utf-8").read()
+    Followed the definitions: map.html -> js/map.js -> js/categories.js, which is
+    now the single source shared by the map and the homepage. It also used to
+    swallow the failure and return {}, which would have quietly stripped the
+    colour and icon from every generated page rather than stopping the build. It
+    raises now: a missing CATEGORIES block is a broken build, not a page with no
+    icons."""
+    text = io.open(os.path.join("js", "categories.js"), encoding="utf-8").read()
     meta = {}
     for m in re.finditer(
         r"(\w+):\s*\{[^{}]*?colour:\s*[\"']([^\"']+)[\"'][^{}]*?iconPath:\s*[`']([^`']+)[`']",
@@ -1696,7 +1697,7 @@ def load_category_meta():
         meta[m.group(1)] = {"colour": m.group(2), "iconPath": m.group(3)}
     if not meta:
         raise RuntimeError(
-            "No CATEGORIES found in js/map.js. If that block moved again, update "
+            "No categories found in js/categories.js. If that block moved again, update "
             "load_category_meta() rather than letting pages build without icons."
         )
     return meta

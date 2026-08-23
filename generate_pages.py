@@ -1702,15 +1702,35 @@ def load_category_meta():
     return meta
 
 
-def update_homepage_count(total):
+# Mirrors the NATIONS array in js/home.js, which matches against the free-text
+# leg["region"] string. Deliberately NOT the module-level NATIONS at the top of
+# this file: that one holds lowercase region *slugs* and drives the region browse
+# pages. Two different things, so two different names. Kept in lockstep with
+# home.js by hand: if one changes, change both.
+HOME_STAT_NATIONS = ("England", "Scotland", "Wales", "Northern Ireland", "Ireland")
+
+
+def nations_covered(legends):
+    return len({n for leg in legends for n in HOME_STAT_NATIONS
+                if n in (leg.get("region") or "")})
+
+
+def update_homepage_count(total, legends):
     """Patch every static, hand-written mention of the total entry count —
     the homepage's pre-JS count fallbacks, plus its and map.html's meta/OG/
     Twitter descriptions (search-snippet copy, so it's worth keeping honest).
     Rounded down to the nearest 50 and shown as "X+", or just "X" with no
-    "+" if the total happens to land on an exact multiple of 50 — matches
+    "+" if the total happens to land on an exact multiple of 50. Matches
     roundedCountPlus() in index.html's own script, which overwrites the
     heroCount/statLegends spans at runtime once legends.json loads, so the
-    two must stay in lockstep."""
+    two must stay in lockstep.
+
+    Also patches the Collections stat. Every number in the stats strip is a
+    real value rather than a placeholder glyph: js/home.js only ever improves
+    on what is rendered here, so a visitor with slow or failed JS sees correct
+    figures instead of a dash that never resolves. That means this count has to
+    be kept honest from collections.json, or it silently goes stale as
+    collections are added."""
     rounded_num = (total // 50) * 50
     rounded = f"{rounded_num}+" if rounded_num < total else str(rounded_num)
 
@@ -1720,6 +1740,10 @@ def update_homepage_count(total):
         (r'(<span id="heroCount">)[^<]*(</span>)', rf'\g<1>{rounded}\g<2>'),
         (r'(<span class="stat-num" id="statLegends">)[^<]*(</span>)', rf'\g<1>{rounded}\g<2>'),
         (r'(sacred sites across )\d+\+?( locations)', rf'\g<1>{rounded}\g<2>'),
+        (r'(<span class="stat-num" id="statCollections">)[^<]*(</span>)',
+         rf'\g<1>{len(load_collections())}\g<2>'),
+        (r'(<span class="stat-num" id="statRegions">)[^<]*(</span>)',
+         rf'\g<1>{nations_covered(legends)}\g<2>'),
     )
     for pattern, replacement in patterns:
         text, changed = re.subn(pattern, replacement, text, count=1)
@@ -2199,7 +2223,7 @@ def build():
     legends = sorted(d["legends"], key=lambda l: l["name"].lower())
     today = datetime.date.today().isoformat()
     resolve_modified_dates(legends, today)  # stamps each leg["date_modified"]
-    update_homepage_count(len(legends))
+    update_homepage_count(len(legends), legends)
     meta = load_category_meta()
     cat_intros, region_intros = load_page_intros()
     featured_pages = load_featured_pages()

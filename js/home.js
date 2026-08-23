@@ -78,13 +78,20 @@
         const r = l.region || '';
         NATIONS.forEach(n => { if (r.includes(n)) found.add(n); });
       });
-      elRegions.textContent = found.size || '–';
+      // Only ever improve on the server-rendered fallback. Blanking it to a
+      // placeholder when the count comes back empty would replace a correct
+      // number with a worse one.
+      if (found.size) elRegions.textContent = found.size;
     }
     if (elCollections) {
       fetch('./collections.json')
         .then(r => r.json())
-        .then(c => { elCollections.textContent = (c.collections || []).length; })
-        .catch(() => { elCollections.textContent = '–'; });
+        .then(c => {
+          const n = (c.collections || []).length;
+          if (n) elCollections.textContent = n;
+        })
+        // On failure keep the static count that generate_pages.py wrote in.
+        .catch(() => {});
     }
   }
 

@@ -190,13 +190,13 @@
         var filename='folklore-finder-'+slugify(find.name)+'-nearby.png';
         return window.ShareCard.shareOrDownload(
           blob, filename,
-          find.name+' — nearest legend on Folklore Finder',
+          find.name+', the nearest legend on Folklore Finder',
           'I found my nearest legend on Folklore Finder: '+find.name+'!'
         );
       }).then(function(outcome){
         statusEl.textContent = outcome==='shared' ? 'Shared!' : (outcome==='downloaded' ? 'Image saved' : '');
       }).catch(function(){
-        statusEl.textContent="Couldn't generate the image — try again.";
+        statusEl.textContent="Couldn't generate the image. Try again.";
       }).then(function(){
         shareBtn.disabled=false; shareBtn.textContent=idle;
         dismissTimer=setTimeout(dismiss, 6000);

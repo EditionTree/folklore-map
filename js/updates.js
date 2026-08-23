@@ -17,7 +17,7 @@
       { text: "A recurring sourcing-audit tool now flags thin or single-sourced entries for the ongoing research process to revisit.", tech: true }
     ] },
     { date: "July 2026", items: [
-      "Themed collections reimagined — each now reads as an illustrated article, an image beside every tale.",
+      "Collections reimagined. Each one now reads as an illustrated article, with an image beside every tale.",
       "A new Birth of Albion collection, tracing the mythic founding of Britain from Brutus and the fall of Troy to the last giants of Albion.",
       "Every collection trimmed and re-curated to its strongest, best-fitting legends.",
       "A consistent banner across the whole site, with the full navigation now built into the map too.",
@@ -114,7 +114,7 @@
       nc.appendChild(li);
     });
   } else {
-    nc.innerHTML = '<li><p class="empty-note">No new collections since the last update — browse the <a href="legends/collections">full list</a>.</p></li>';
+    nc.innerHTML = '<li><p class="empty-note">No new collections since the last update. Browse the <a href="legends/collections">full list</a>.</p></li>';
   }
 })();
 

@@ -86,7 +86,7 @@
     if(savedLegends.length){
       savedLegends.forEach(function(l){ renderCard(savedEl, l, 'Saved'); });
     } else {
-      savedEl.innerHTML = '<p class="empty-note">Nothing saved yet — bookmark a legend from the <a href="map">map</a> or any legend page.</p>';
+      savedEl.innerHTML = '<p class="empty-note">Nothing saved yet. Bookmark a legend from the <a href="map">map</a> or any legend page.</p>';
     }
 
     // Recently viewed — image-backed list rows, matching the suggested-legends

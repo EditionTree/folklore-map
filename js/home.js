@@ -94,8 +94,8 @@
   // visitor state using the same localStorage keys My Archive reads.
   const STATIC_GC_CARDS = [
     { id: 'archive', eyebrow: 'Your Archive', title: 'Build My Archive', desc: 'Save legends, track what you have discovered and continue where you left off.', cta: 'View My Archive', href: './archive' },
-    { id: 'achievements', eyebrow: 'Explorer Seals', title: 'Unlock achievements', desc: 'Discover creatures, places and traditions to unlock explorer seals.', cta: 'See achievements', href: './achievements' },
-    { id: 'collections', eyebrow: 'Themed Trails', title: 'Explore a collection', desc: 'Follow curated trails through black dogs, dragons, standing stones and more.', cta: 'Browse collections', href: './legends/collections' },
+    { id: 'achievements', eyebrow: 'Achievements', title: 'Unlock achievements', desc: 'Discover creatures, places and traditions to unlock explorer seals.', cta: 'See achievements', href: './achievements' },
+    { id: 'collections', eyebrow: 'Collections', title: 'Explore a collection', desc: 'Follow curated trails through black dogs, dragons, standing stones and more.', cta: 'Browse collections', href: './legends/collections' },
     { id: 'updates', eyebrow: 'What’s New', title: 'See what is new', desc: 'Discover the latest legends, collections and improvements added to the archive.', cta: 'Latest updates', href: './updates' }
   ];
 

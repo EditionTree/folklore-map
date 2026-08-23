@@ -221,7 +221,7 @@
       const filename = `folklore-finder-${slugify(meta.a.name)}-seal.png`;
       const outcome = await window.ShareCard.shareOrDownload(
         blob, filename,
-        `${meta.a.name} — Folklore Finder`,
+        `${meta.a.name} · Folklore Finder`,
         `I unlocked the "${meta.a.name}" achievement on Folklore Finder!`
       );
       if(statusEl){
@@ -230,7 +230,7 @@
           : '';
       }
     }catch(err){
-      if(statusEl) statusEl.textContent = "Couldn't generate the image — try again.";
+      if(statusEl) statusEl.textContent = "Couldn't generate the image. Try again.";
     }finally{
       btn.disabled = false;
       btn.textContent = idleLabel;

@@ -140,7 +140,7 @@
           return window.ShareCard.shareOrDownload(
             blob,
             'folklore-finder-' + slug + '-collection.png',
-            title + ' — complete!',
+            title + ' complete!',
             'I completed the "' + title + '" collection on Folklore Finder!'
           );
         }).then(function (outcome) {
@@ -150,7 +150,7 @@
               : (outcome === 'downloaded' ? 'Image saved' : '');
           }
         }).catch(function () {
-          if (statusEl) statusEl.textContent = "Couldn't generate the image — try again.";
+          if (statusEl) statusEl.textContent = "Couldn't generate the image. Try again.";
         }).then(function () {
           shareBtn.disabled = false;
           shareBtn.textContent = idle;

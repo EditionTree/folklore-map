@@ -1106,7 +1106,7 @@ async function submitBugReport() {
     const data = await res.json();
 
     if (res.ok && data.success) {
-      statusEl.textContent = 'Thank you — your report has been received.';
+      statusEl.textContent = 'Thank you. Your report has been received.';
       statusEl.className = 'bug-status success';
       statusEl.style.display = 'block';
       submitBtn.textContent = 'Sent';
@@ -1228,7 +1228,7 @@ async function submitLegend() {
     });
     const data = await res.json();
     if (res.ok && data.success) {
-      statusEl.textContent = 'Thank you — your submission has been received and will be researched.';
+      statusEl.textContent = 'Thank you. Your submission has been received and will be researched.';
       statusEl.className = 'bug-status success';
       statusEl.style.display = 'block';
       btn.textContent = 'Submitted';
@@ -1237,7 +1237,7 @@ async function submitLegend() {
       throw new Error(data.error || 'Unexpected error');
     }
   } catch (err) {
-    statusEl.textContent = err.message || 'Something went wrong — please try again.';
+    statusEl.textContent = err.message || 'Something went wrong. Please try again.';
     statusEl.className = 'bug-status error';
     statusEl.style.display = 'block';
     btn.disabled = false;

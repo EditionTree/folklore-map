@@ -158,6 +158,31 @@ experience feel like one connected system rather than several separate features.
 | Unlock a seal | Earning an achievement |
 | Build your archive | General framing for My Archive as a destination |
 
+### Canonical product names
+
+Settled in the Stage 4 vocabulary pass (2026-08-23). One name per thing, everywhere: nav labels,
+page titles, h1s, buttons, links, meta descriptions and og/twitter titles.
+
+| Thing | Canonical name | Notes |
+|---|---|---|
+| The interactive map | **Map** | "Explore the map" stays as the CTA verb phrase. |
+| The personal saved-legends area | **My Archive** | Always both words. Never "Your Archive". |
+| Curated groupings of legends | **Collections** | "Themed trails" and "themed collections" are descriptive copy only, never an interface name. |
+| Wax-seal progress rewards | **Achievements** | "Explorer Seals" was considered and rejected. "Seals" is fine for the individual reward ("Seals Unlocked"), "Achievements" is the feature. |
+
+Two names were retired rather than adopted:
+
+- **Explorer Seals** — rejected. The feature keeps the name Achievements, and it gets no nav entry.
+- **Research Journal** — retired. The destination is Ko-fi and the site now calls it Ko-fi, so the
+  second name bought nothing but ambiguity.
+
+### Punctuation
+
+- **No em-dashes or en-dashes in site copy.** Restructure the sentence, or use a comma or full
+  stop. A colon is only for a genuine list, label or quotation.
+- **Page titles use a middot separator**: `Page Name · Folklore Finder`. All 817 pages follow this,
+  including the 64 hand-written `seo_title` overrides in `legend_pages.json`.
+
 Current site copy mostly already matches this vocabulary (e.g. "Explore the map" CTA in
 `index.html` line 636 is correct as-is). See §12 for the specific places that don't yet match.
 

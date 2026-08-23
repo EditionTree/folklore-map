@@ -233,30 +233,30 @@ NATIONS = ["england", "scotland", "wales", "ireland", "northern-ireland", "isle-
 # project_seo_keyword_research memory. County/area pages keep the
 # "Folklore of X" fallback below; only these 7 get the override.
 NATION_TITLES = {
-    "england": "English Folklore — Myths & Legends",
-    "scotland": "Scottish Folklore — Myths & Legends",
-    "wales": "Welsh Folklore — Myths & Legends",
-    "ireland": "Irish Folklore — Myths & Legends",
-    "northern-ireland": "Northern Irish Folklore — Myths & Legends",
-    "isle-of-man": "Manx Folklore — Myths & Legends",
-    "channel-islands": "Channel Islands Folklore — Myths & Legends",
+    "england": "English Folklore · Myths & Legends",
+    "scotland": "Scottish Folklore · Myths & Legends",
+    "wales": "Welsh Folklore · Myths & Legends",
+    "ireland": "Irish Folklore · Myths & Legends",
+    "northern-ireland": "Northern Irish Folklore · Myths & Legends",
+    "isle-of-man": "Manx Folklore · Myths & Legends",
+    "channel-islands": "Channel Islands Folklore · Myths & Legends",
 }
 
 # <title> for the 11 category browse pages — leads with a natural search
 # phrase instead of the generic "{label} of Britain & Ireland" pattern.
 # See project_seo_keyword_research memory.
 CATEGORY_TITLES = {
-    "beast": "British Monsters & Mythical Beasts — Folklore Map",
-    "deity": "British & Irish Deities — Folklore Map",
-    "dragon": "British Dragon Legends — Folklore Map",
-    "fairy": "British & Irish Fairies — Folklore Map",
-    "ghost": "British Ghost Stories — Folklore Map",
-    "giant": "British Giant Legends — Folklore Map",
-    "hero": "British Legendary Heroes — Folklore Map",
-    "location": "British Sacred Sites — Folklore Map",
-    "pirate": "British Pirates & Smugglers — Folklore Map",
-    "water": "British Water Monsters & Mermaids — Folklore Map",
-    "witch": "British Witches & Witch Trials — Folklore Map",
+    "beast": "British Monsters & Mythical Beasts · Folklore Map",
+    "deity": "British & Irish Deities · Folklore Map",
+    "dragon": "British Dragon Legends · Folklore Map",
+    "fairy": "British & Irish Fairies · Folklore Map",
+    "ghost": "British Ghost Stories · Folklore Map",
+    "giant": "British Giant Legends · Folklore Map",
+    "hero": "British Legendary Heroes · Folklore Map",
+    "location": "British Sacred Sites · Folklore Map",
+    "pirate": "British Pirates & Smugglers · Folklore Map",
+    "water": "British Water Monsters & Mermaids · Folklore Map",
+    "witch": "British Witches & Witch Trials · Folklore Map",
 }
 
 # Themed collections: a page is only generated when at least this many entries
@@ -813,7 +813,7 @@ def track_event_script(event_type, **fields):
         # an HTML attribute, so the value truncated at the first quote and
         # JSON.parse saw only '{'. HTML-escaping the raw JSON round-trips.
         '<div hidden data-track="' + esc(payload) + '"></div>' + chr(10) +
-        '<script src="/js/page.js?v=20260822a"></script>\n'
+        '<script src="/js/page.js?v=20260823a"></script>\n'
     )
 
 
@@ -822,7 +822,7 @@ def collection_index_progress_script():
     .col-index-row[data-slug] cards itself. Kept as a function so callers do not
     change, and so the shared script is guaranteed to be present on a page that
     might not emit a track event."""
-    return '<script src="/js/page.js?v=20260822a"></script>\n'
+    return '<script src="/js/page.js?v=20260823a"></script>\n'
 
 
 def collection_detail_progress_script(slug, title):
@@ -837,7 +837,7 @@ def collection_detail_progress_script(slug, title):
         '<div hidden'
         ' data-collection-slug="' + esc(slug) + '"'
         ' data-collection-title="' + esc(title) + '"></div>' + chr(10) +
-        '<script src="/js/page.js?v=20260822a"></script>\n'
+        '<script src="/js/page.js?v=20260823a"></script>\n'
     )
 
 
@@ -1673,7 +1673,7 @@ $topnav
 $footer
 <script src="/assets/leaflet/leaflet.js"></script>
 <script src="/share-card.js"></script>
-<script src="$base/legend-page.js?v=20260817a"></script>
+<script src="$base/legend-page.js?v=20260823a"></script>
 </body>
 </html>
 """)
@@ -1843,7 +1843,7 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
             '<aside class="editor-note" aria-label="Editor\'s note">'
             '<p class="editor-kicker">Editor&#8217;s note</p>'
             f'<p>{esc(inline_text(editorial))}</p>'
-            f'<p class="editor-by">&#8212; {esc(by)}</p></aside>'
+            f'<p class="editor-by">By {esc(by)}</p></aside>'
         )
     else:
         editorial_html = ""
@@ -2153,10 +2153,10 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
             if leg.get("category", "") in meta else f"{BASE}/og/preview.jpg"
         )
         og_w, og_h = "1200", "630"  # category / preview OG cards
-        og_alt = f"{name} — {catname}, folklore of Britain & Ireland"
+        og_alt = f"{name}, {catname}, folklore of Britain & Ireland"
 
     return FEATURED_PAGE.substitute(
-        title=esc(featured.get("seo_title") or f"{name} — Folklore Finder"),
+        title=esc(featured.get("seo_title") or f"{name} · Folklore Finder"),
         ogtitle=esc(name),
         desc=esc(inline_text(desc)),
         url=page_path_url,
@@ -2359,7 +2359,7 @@ def build():
             "@type": "WebPage",
             "@id": page_path_url,
             "url": page_path_url,
-            "name": f"{name} — Folklore Finder",
+            "name": f"{name} · Folklore Finder",
         }
         ld["keywords"] = [catname, leg.get("region", "")] + sorted(leg.get("tags") or [])
         if rel:
@@ -2457,8 +2457,8 @@ def build():
             if c in meta else image_object("og/preview.jpg", "Folklore Finder preview artwork"),
         }, ensure_ascii=False)
         page = build_browse_page(
-            page_title=CATEGORY_TITLES.get(c) or f"{label} of Britain & Ireland — Folklore Map",
-            desc=f"Browse {len(entries)} {label.lower()} from across British and Irish folklore — each pinned to the place its story is rooted.",
+            page_title=CATEGORY_TITLES.get(c) or f"{label} of Britain & Ireland · Folklore Map",
+            desc=f"Browse {len(entries)} {label.lower()} from across British and Irish folklore, each pinned to the place its story is rooted.",
             url=url,
             h1=label,
             intro=cat_intros.get(c) or f"{len(entries)} {label.lower()} and related folklore from across Britain and Ireland.",
@@ -2501,7 +2501,7 @@ def build():
             },
         }, ensure_ascii=False)
         page = build_browse_page(
-            page_title=NATION_TITLES.get(t) or f"Folklore of {rn} — Myths & Legends",
+            page_title=NATION_TITLES.get(t) or f"Folklore of {rn} · Myths & Legends",
             desc=f"Discover {len(entries)} myths, legends, ghosts and folklore stories rooted in {rn}, each pinned to its exact location on our interactive folklore map.",
             url=url,
             h1=f"Folklore of {rn}",
@@ -2650,7 +2650,7 @@ def build():
                     '<span class="col-share-status" aria-live="polite"></span></div>\n'
                 )
                 page = build_browse_page(
-                    page_title=f"{col['title']}{page_tag} — Folklore Finder",
+                    page_title=f"{col['title']}{page_tag} · Folklore Finder",
                     desc=desc,
                     url=url,
                     ogimage=(absolute_asset_url(hero_path) if hero_path else None),
@@ -2708,8 +2708,8 @@ def build():
             land_jsonld = json.dumps({
                 "@context": "https://schema.org",
                 "@type": "CollectionPage",
-                "name": "Themed Collections",
-                "description": "Themed collections of British and Irish folklore — black dogs, "
+                "name": "Collections",
+                "description": "Collections of British and Irish folklore: black dogs, "
                                "standing stones, holy wells, Arthurian places and more.",
                 "url": land_url,
                 "isPartOf": {"@type": "WebSite",
@@ -2725,13 +2725,13 @@ def build():
                 },
             }, ensure_ascii=False)
             land_page = build_browse_page(
-                page_title="Themed Collections — Folklore Finder",
-                desc="Explore British and Irish folklore by theme — black dogs, standing stones, "
+                page_title="Collections · Folklore Finder",
+                desc="Explore British and Irish folklore by theme: black dogs, standing stones, "
                      "holy wells, Arthurian places, legends of the sea and more.",
                 url=land_url,
-                h1="Themed Collections",
-                intro="Curated gatherings of legends that share a creature, a landscape or a tradition — "
-                      "ways into the map that the category and region lists don't capture.",
+                h1="Collections",
+                intro="Curated gatherings of legends that share a creature, a landscape or a tradition. "
+                      "The category and region lists can't group legends this way.",
                 crumb="Collections",
                 nav_html="",
                 cards_html="\n".join(land_cards),
@@ -2780,10 +2780,10 @@ def build():
             }, ensure_ascii=False)
             empty_note = (
                 '<p class="empty-note" style="font-size:13px;font-style:italic;color:#5c4a2a">'
-                'No legends have been dated to this period yet — check back as the archive grows.</p>'
+                'No legends have been dated to this period yet. Check back as the archive grows.</p>'
             ) if not members else ""
             page = build_browse_page(
-                page_title=f"{p['title']} Folklore — Folklore Finder",
+                page_title=f"{p['title']} Folklore · Folklore Finder",
                 desc=short_desc(p["overview"], 155),
                 url=url,
                 h1=p["title"],
@@ -2826,12 +2826,12 @@ def build():
             },
         }, ensure_ascii=False)
         timeline_page = build_browse_page(
-            page_title="Explore Through Time — Folklore Finder",
+            page_title="Explore Through Time · Folklore Finder",
             desc="Browse British and Irish folklore by historical period, from prehistoric Britain "
                  "to modern folklore.",
             url=timeline_url,
             h1="Explore Through Time",
-            intro="From the standing stones of prehistoric Britain to the urban legends of the present day — "
+            intro="From the standing stones of prehistoric Britain to the urban legends of the present day, "
                   "browse the archive by the historical period each legend is associated with.",
             crumb="Explore Through Time",
             nav_html="",
@@ -2914,8 +2914,8 @@ def build():
         place_explorer
         + '<div class="browse-tabs" role="tablist" aria-label="Browse legends by">' + browse_tab_buttons + '</div>'
         + '<div class="browse-tab-panels">' + browse_tab_panels + '</div>'
-        + '<script src="/js/page.js?v=20260822a"></script>'
-        '<h2 class="azh">A&#8211;Z</h2>'
+        + '<script src="/js/page.js?v=20260823a"></script>'
+        '<h2 class="azh">A-Z</h2>'
     )
 
     # A-Z index page — grouped by first letter with letter headings
@@ -2943,18 +2943,18 @@ def build():
 <script>if(location.hostname.indexOf("pages.dev")>-1){{location.replace("https://folklorefinder.uk"+location.pathname+location.search+location.hash);}}</script>
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{{"token": "64d1fd37251d426f8a0d8fbc83ea350b"}}'></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>All Legends &#8212; Folklore Finder</title>
+<title>All Legends &#183; Folklore Finder</title>
 <meta name="description" content="Browse all {written} myths, legends, ghosts and folklore stories from Britain and Ireland, each pinned to its place of origin on the map."/>
 <link rel="canonical" href="{BASE}/{OUT_DIR}/"/>
 <link rel="icon" type="image/png" href="{BASE}/favicon.png"/>
 <meta property="og:type" content="website"/>
-<meta property="og:title" content="All Legends &#8212; Folklore Finder"/>
+<meta property="og:title" content="All Legends &#183; Folklore Finder"/>
 <meta property="og:description" content="Browse all {written} myths, legends, ghosts and folklore stories from every region of Britain and Ireland, each pinned to its place of origin on our interactive folklore map."/>
 <meta property="og:url" content="{BASE}/{OUT_DIR}/"/>
 <meta property="og:image" content="{BASE}/og/preview-folklore-finder.jpg"/>
 <meta property="og:site_name" content="Folklore Finder"/>
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="All Legends &#8212; Folklore Finder"/>
+<meta name="twitter:title" content="All Legends &#183; Folklore Finder"/>
 <meta name="twitter:description" content="Browse all {written} myths, legends, ghosts and folklore stories from every region of Britain and Ireland, each pinned to its place of origin on our interactive folklore map."/>
 <meta name="twitter:image" content="{BASE}/og/preview-folklore-finder.jpg"/>
 <link rel="stylesheet" href="/fonts/fonts.css"/>
@@ -3087,7 +3087,7 @@ h1::after{{content:"";display:block;width:132px;height:40px;margin:9px 0 19px;ba
     rss = (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<rss version="2.0"><channel>\n'
-        '  <title>Folklore Finder — New Legends</title>\n'
+        '  <title>Folklore Finder · New Legends</title>\n'
         f'  <link>{BASE}/</link>\n'
         '  <description>Recently added myths, legends, ghosts and folklore from across Britain and Ireland.</description>\n'
         '  <language>en-gb</language>\n'

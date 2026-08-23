@@ -64,6 +64,51 @@ same crutch under a new name — reach for the full stop and the comma first,
 and use a colon only where it's structurally called for (a list, a label,
 an introduced quote), not as a punctuation-of-convenience.
 
+### Cycle 3: this is a remediation target, not just a drafting rule
+
+The rule above governs new sentences, and new sentences have been fine. The
+back catalogue has not. This rule was declared done on 2026-08-07 and again on
+2026-08-12, and was wrong both times, because a pass over *some pages* was
+reported as a pass over *the dataset*. Cycle 2 closed with the dataset still
+carrying dashes, so Cycle 3 owns clearing them.
+
+**Measured baseline, 2026-08-23** (`python scripts/dash_audit.py`):
+
+| | count |
+|---|---:|
+| dash characters in prose fields | 743 |
+| field values containing at least one | 429 |
+| entries affected | 293 of 709 |
+
+By field: `summary` 144, `detail` 146, `earliest_record` 59,
+`historical_setting` 28, `period` 19, `cultural_tradition` 6, `origin_date` 2.
+
+**Three things that make this go wrong, so plan around them:**
+
+1. **Fix the entry, never the page.** `legends.json` is the source and the HTML
+   is downstream of it. Editing a generated page means the next
+   `python generate_pages.py` puts the dash straight back, and the fix looks
+   done for exactly as long as nobody rebuilds.
+2. **Don't count rendered pages.** A `summary` dash is emitted into
+   `description`, `og:description`, `twitter:description` and the body, so
+   scanning HTML multiplies every dash by three or four and makes the job look
+   roughly three times bigger than it is. Count fields in `legends.json`.
+3. **Leave numeric ranges alone.** 25 values hold a date range
+   ("1560s-1576", "c. 1196-98", "AD 60-61"). A range wants a hyphen, not a
+   rewrite, and `dash_audit.py` already separates these out. They are not
+   failures and should not be counted as progress either.
+
+**Definition of done, and it is checkable:**
+
+```
+python scripts/dash_audit.py --strict
+```
+
+Exit 0 means clear. Any entry an enhancement run touches must come back
+dash-clean across all seven prose fields, not only the field being enhanced,
+otherwise the count drifts back up between sweeps. Do not report this rule as
+satisfied on the strength of a spot-check: run the script and paste the total.
+
 ## Other AI tropes to avoid
 
 - "stands as a testament to...", "is a testament to...", "in the annals of..."

@@ -68,8 +68,10 @@ over:
 ## 7. Visual identity — hold the line
 
 No changes recommended to the existing heritage-cartography identity (parchment, burnt orange,
-antique gold, dark brown linework, wax seals, map motifs — see `STYLE_GUIDE.md` for the exact
-tokens already codified there). Target aesthetic to keep in mind for any new component (carousel
+antique gold, dark brown linework, wax seals, map motifs). The palette, type scale, spacing,
+buttons, cards, labels, borders and dividers are specified in the **Design System** section of
+`STYLE_GUIDE.md`, together with a measured record of where the code does not yet match it.
+Target aesthetic to keep in mind for any new component (carousel
 cards, trust panel, policy page, share cards): **living heritage with a trace of the uncanny.**
 
 Avoid drifting toward: fantasy-game UI, generic Celtic knotwork, Halloween-horror styling,

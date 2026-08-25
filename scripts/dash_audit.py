@@ -54,6 +54,26 @@ FIELDS = [
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
+# Quoted spans are exempt. content-style-guide.md keeps a dash inside a direct
+# quotation because altering the quotation misrepresents the source, so a cited
+# verse or a newspaper headline must not be counted as work outstanding. Without
+# this, --strict could never reach zero and would stop meaning anything.
+# The straight apostrophe doubles as a quote mark, so an opening quote is only
+# recognised at a word boundary. Without that, "Ireland's ... 'In Down three
+# saints...'" spans from the apostrophe to the real opening quote and leaves
+# the verse's dash outside the quoted region.
+QUOTED = re.compile(
+    r"(?<!\w)'[^']{1,200}'(?!\w)"
+    r"|‘[^’]{1,200}’"
+    r"|(?<!\w)\"[^\"]{1,200}\"(?!\w)"
+    r"|“[^”]{1,200}”")
+
+
+def strip_quoted(text):
+    """Blank out quoted spans so dashes inside them are not counted."""
+    return QUOTED.sub(lambda m: " " * len(m.group(0)), text)
+
+
 def load_legends():
     path = os.path.join(REPO, "legends.json")
     with io.open(path, encoding="utf-8") as fh:
@@ -68,11 +88,11 @@ def audit(legends, fields):
         name = leg.get("name", "?")
         for f in fields:
             v = leg.get(f)
-            if not isinstance(v, str) or not DASH.search(v):
+            if not isinstance(v, str) or not DASH.search(strip_quoted(v)):
                 continue
             # A value can hold both a range and a prose dash. Strip the ranges
             # first; if a dash survives that, the value still needs editing.
-            stripped = RANGE.sub("", v)
+            stripped = RANGE.sub("", strip_quoted(v))
             bucket = "prose" if DASH.search(stripped) else "range"
             out[f][bucket].append((name, v))
     return out

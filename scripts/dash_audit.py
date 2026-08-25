@@ -34,7 +34,10 @@ DASH = re.compile(r"[—–]")
 
 # A dash sitting between two digits is doing range duty. Allow an optional
 # apostrophe-decade ("1560s-1576") and a trailing letter-free year fragment.
-RANGE = re.compile(r"\d\s*[—–]\s*\d")
+# Also matches "1560s-70s" and "c.1196-98": the first cut required a digit
+# immediately either side, so an alphanumeric year range slipped through as
+# prose and was rewritten by hand before the gap was spotted.
+RANGE = re.compile(r"\d[\w.]*\s*[—–]\s*[\w.]*\d")
 
 # Prose fields, in the order a reader meets them on the page. `name`, `region`
 # and the slug fields are excluded: they are identifiers, not copy.

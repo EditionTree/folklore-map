@@ -4,8 +4,16 @@
   <link>https://folklorefinder.uk/</link>
   <description>Recently added myths, legends, ghosts and folklore from across Britain and Ireland.</description>
   <language>en-gb</language>
-  <lastBuildDate>Wed, 26 Aug 2026 17:50:05 GMT</lastBuildDate>
+  <lastBuildDate>Wed, 26 Aug 2026 17:57:53 GMT</lastBuildDate>
   <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://folklorefinder.uk/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Bincombe Bumps</title>
+    <link>https://folklorefinder.uk/legends/bincombe-bumps</link>
+    <guid isPermaLink="true">https://folklorefinder.uk/legends/bincombe-bumps</guid>
+    <pubDate>Wed, 26 Aug 2026 12:00:00 GMT</pubDate>
+    <category>Fae &amp; Spirits</category>
+    <description>Six Bronze Age round barrows crown the down above the hamlet of Bincombe, known locally as the Bincombe Bumps. One of them is the Music Barrow, where…</description>
+  </item>
   <item>
     <title>Elspeth Reoch</title>
     <link>https://folklorefinder.uk/legends/elspeth-reoch</link>
@@ -237,13 +245,5 @@
     <pubDate>Wed, 05 Aug 2026 12:00:00 GMT</pubDate>
     <category>Giants</category>
     <description>Merlin is said to have torn a giant-built stone circle called the Giant&#x27;s Dance from an Irish hilltop and shipped it to Britain, where it was raised again…</description>
-  </item>
-  <item>
-    <title>Old Mother Digby of East Harting</title>
-    <link>https://folklorefinder.uk/legends/old-mother-digby-of-east-harting</link>
-    <guid isPermaLink="true">https://folklorefinder.uk/legends/old-mother-digby-of-east-harting</guid>
-    <pubDate>Wed, 05 Aug 2026 12:00:00 GMT</pubDate>
-    <category>Witches</category>
-    <description>A Sussex hare-witch could be caught out only by her own wounds. When a hound tore the hare she had become, the injury turned up on her body at home.</description>
   </item>
 </channel></rss>

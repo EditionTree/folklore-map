@@ -54,11 +54,11 @@
   <url><loc>https://folklorefinder.uk/legends/region/gloucestershire</loc><lastmod>2026-08-26</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/county-mayo</loc><lastmod>2026-08-26</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/denbighshire</loc><lastmod>2026-08-26</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/dorset</loc><lastmod>2026-08-26</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/herefordshire</loc><lastmod>2026-08-26</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/lancashire</loc><lastmod>2026-08-26</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/warwickshire</loc><lastmod>2026-08-26</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/county-meath</loc><lastmod>2026-08-26</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/dorset</loc><lastmod>2026-08-26</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/wiltshire</loc><lastmod>2026-08-26</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/county-donegal</loc><lastmod>2026-08-26</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/anglesey</loc><lastmod>2026-08-26</lastmod><priority>0.6</priority></url>
@@ -437,6 +437,7 @@
     <image:title>Billy Marshall standing on a muddy Galloway road beside a small horse and wagon near Kirkcudbright kirkyard under a grey sky</image:title>
     <image:caption>A visual interpretation of the Billy Marshall legend in Galloway</image:caption>
   </image:image></url>
+  <url><loc>https://folklorefinder.uk/legends/bincombe-bumps</loc><lastmod>2026-08-26</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/bisterne-dragon</loc><lastmod>2026-08-20</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/bisterne-dragon-hero.jpg</image:loc>

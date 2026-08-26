@@ -1,6 +1,6 @@
 {
   "generated": "2026-08-21T18:38:52.877515Z",
-  "total": 709,
+  "total": 710,
   "categories": {
     "beast": "Beasts",
     "ghost": "Ghosts",
@@ -1503,6 +1503,42 @@
       "period": "18th-century Scotland",
       "origin_type": "historical-event",
       "dating_confidence": "high"
+    },
+    {
+      "name": "Bincombe Bumps",
+      "lat": 50.6632,
+      "lng": -2.4386,
+      "category": "fairy",
+      "region": "Bincombe, Dorset",
+      "summary": "Six Bronze Age round barrows crown the down above the hamlet of Bincombe, known locally as the Bincombe Bumps. One of them is the Music Barrow, where country people said that anyone who laid an ear to the top of the mound at midday would hear the sweetest melody playing inside. The players were the fairies, whose halls were held to lie under the turf.",
+      "source": "https://heritage.dorsetcouncil.gov.uk/Designation/DDO16500",
+      "sources": [
+        "https://catalog.hathitrust.org/Record/011569351",
+        "https://heritage.dorsetcouncil.gov.uk/Designation/DDO16500",
+        "https://www.themodernantiquarian.com/post/23546/culliford_tree_barrow.html",
+        "https://dorset-nl.org.uk/the-singing-barrow/"
+      ],
+      "date_added": "2026-08-26",
+      "tags": [
+        "england",
+        "dorset",
+        "barrow",
+        "fairy",
+        "music",
+        "hill"
+      ],
+      "detail": "The Bincombe Bumps sit on the crest of the South Dorset Ridgeway, between Dorchester and Weymouth and directly above the hamlet of Bincombe. Six round barrows run in a line that shrinks from west to east, the largest on the top of the hill and the rest stepping downhill from it. They were raised in the Bronze Age, and the group is a scheduled monument, listed as 'Six round barrows on Bincombe Down'.\n\nThe folklore attaches to one mound rather than to all six. Charles Warne set it down in 'The Celtic Tumuli of Dorset' in 1866: on Bincombe Down there is a 'Music Barrow' of which the rustics say that if the ear be laid close to the apex at midday the sweetest melody will be heard within. J. S. Udal quoted the passage in 'Dorsetshire Folk-Lore' in 1922, which is how it reached the standard county collection and, through that, most retellings since.\n\nThe conditions are as particular as the claim. One barrow and not the group, the ear against the apex, and the hour exactly noon. Dorset holds more than one such mound. Warne recorded the same belief at Culliford Tree a few miles east, and Leslie Grinsell, who catalogued the county's barrows before writing on the folklore of prehistoric sites across Britain, went and tried the test there himself in May 1954. He reported hearing the cuckoo and some jet aircraft.\n\nMusic is the usual way these mounds announce who is inside them. Across Britain and Ireland the old burial mounds are treated as inhabited, and what reaches the living from within is far more often heard than seen. Much barrow lore warns against digging or ploughing them. The Bincombe tradition asks only that you listen, and only at the right hour.\n\nThe story now told about the hill is a modern one. For a Dorset National Landscape myths and legends project, the storyteller Martin Maudsley wrote a tale of a fairy queen who forbids music on the hill and a warrior who breaks the ban and dies for it, his heart turning to stone and his body rising as a skylark whose song lifts the silence. It is credited to him openly, and it is a composition of recent years rather than a tradition collected from the down. The older belief is narrower. It names one barrow, one hour of the day, and one way of listening.",
+      "earliest_record": "Charles Warne, 'The Celtic Tumuli of Dorset' (1866), which records that on Bincombe Down there is a 'Music Barrow' of which the rustics say that if the ear be laid close to the apex at midday the sweetest melody will be heard within. J. S. Udal quoted the passage in 'Dorsetshire Folk-Lore' (1922). No earlier written account of the Bincombe tradition was found.",
+      "period": "Bronze Age barrows; the fairy-music belief is recorded from the 19th century",
+      "origin_date": "Barrows c. 2000-1500 BC. The listening tradition is first recorded in 1866 and was probably in oral currency well before that.",
+      "historical_setting": "Bincombe Down, on the South Dorset Ridgeway between Dorchester and Weymouth. Six round barrows, scheduled as 'Six round barrows on Bincombe Down', list entry 1002744.",
+      "cultural_tradition": "English barrow folklore and fairy belief, in the Dorset 'music barrow' group alongside Culliford Tree",
+      "origin_type": "oral-tradition",
+      "dating_confidence": "medium",
+      "origin": {
+        "type": "follower_suggestion",
+        "received": "2026-08-23"
+      }
     },
     {
       "name": "Bisterne Dragon",

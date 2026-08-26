@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-26T18:12:04.902575Z",
+  "generated": "2026-08-26T18:38:46.530481Z",
   "total": 710,
   "categories": {
     "beast": "Beasts",
@@ -1867,12 +1867,15 @@
         "https://www.britainexpress.com/attractions.htm?attraction=625",
         "https://www.nationalchurchestrust.org/church/st-brynach-nevern",
         "https://en.wikipedia.org/wiki/St_Brynach's_Church,_Nevern",
-        "https://www.ancient-yew.org/yew_tree_database/nevern/"
+        "https://www.ancient-yew.org/yew_tree_database/nevern/",
+        "https://britishlistedbuildings.co.uk/300012747-churchyard-of-church-of-st-brynarch-including-wall-gates-nevern",
+        "https://www.parksandgardens.org/places/st-brynachs-churchyard"
       ],
-      "period": "The specific yew now called the Bleeding Yew is widely stated to be roughly 600 years old, part of a churchyard yew avenue estimated up to c.700 years old (medieval planting); the bleeding legend itself has no dated written source and may postdate the tree by a wide, unknown margin.",
-      "historical_setting": "St Brynach's Church stands on the site of a 6th-century Celtic clas (monastic settlement); the present tower is 12th century and the main church body 15th century, restored in 1864 and 1952.",
+      "period": "The tree itself is estimated at roughly 700 years old (medieval planting), but no earliest written record of the bleeding-yew legend itself could be located; the tale appears to be unattributed local/oral tradition rather than a dated antiquarian record",
+      "historical_setting": "St Brynach's Church, Nevern, Pembrokeshire — a churchyard registered by Cadw (Grade II, Register of Landscapes, Parks and Gardens of Special Historic Interest in Wales) for its avenue of yews probably dating to the medieval period; the churchyard also holds the 10th-11th century Great Cross and Vitalianus Stone",
       "origin_type": "oral-tradition",
-      "dating_confidence": "low"
+      "dating_confidence": "low",
+      "cultural_tradition": "Welsh churchyard folk legend; three competing explanations circulate (a wrongfully hanged monk, sympathetic bleeding for the Crucifixion, and a prophecy tied to Nevern Castle, abandoned 1179) with no single canonical version"
     },
     {
       "name": "Blodeuwedd",
@@ -3443,10 +3446,11 @@
         "https://en.wikipedia.org/wiki/Cheesewring",
         "https://historicengland.org.uk/listing/the-list/list-entry/1012352"
       ],
-      "cultural_tradition": "Cornish giant-lore explaining Bodmin Moor's granite tors, the same tradition that credits giants with the moor's other stone piles",
-      "historical_setting": "Framed as the displacement of pagan giants by Christian saints in early medieval Cornwall, the standard setting for this recurring Cornish motif, though no text ties this specific telling to that period",
+      "cultural_tradition": "Cornish giant-versus-saint contest motif, a recurring type in Cornish folklore (cf. Cormoran, other Bodmin/West Penwith giant tales)",
+      "historical_setting": "Stowe's Hill, Bodmin Moor, Cornwall — the Cheesewring rock stack sits beside Stowe's Pound, a scheduled prehistoric hillfort with Bronze Age cairns and hut circles (Historic England list entry 1012352), so the landscape itself is securely dated even though the giant legend attached to it is not",
       "origin_type": "oral-tradition",
-      "dating_confidence": "low"
+      "dating_confidence": "low",
+      "period": "No dated written source for the giant-and-saint (Uter and St Tue) legend could be located. Wikipedia's own citation for the tale is a 2008 popular book (Chapman & Chapman, Iconic Cornwall), not an earlier folklore collection; searches of Robert Hunt's Popular Romances of the West of England (1865) and William Bottrell's collections did not turn up a Cheesewring-specific version"
     },
     {
       "name": "Cheetham Close",
@@ -4364,7 +4368,9 @@
         "https://www.genuki.org.uk/big/eng/NFK/Newspapers/Nfkchron/1781/02",
         "https://www.greatyarmouthmercury.co.uk/news/21024280.hear-story-sailor-killed-pirate-buried-churchyard/",
         "https://www.greatyarmouthmercury.co.uk/news/21030190.brave-young-captain-died-yarmouth-defending-ship-pirates/",
-        "http://www.foxearth.org.uk/1781NorfolkChronicle.html"
+        "http://www.foxearth.org.uk/1781NorfolkChronicle.html",
+        "https://www.archives.norfolk.gov.uk/help-with-your-research/crime-and-punishment/crimes-and-trials-in-great-yarmouth",
+        "https://www.archives.norfolk.gov.uk/help-with-your-research/maritime-and-overseas/great-yarmouth-maritime-sources"
       ],
       "earliest_record": "Contemporary reporting in the Norfolk Chronicle, including its February 1781 issue, which named 'that notorious villain FALL' directly and reported his prize-taking as it happened.",
       "period": "1780-1782",
@@ -4476,7 +4482,8 @@
       "sources": [
         "https://www.mythslegendsodditiesnorth-east-wales.co.uk/denbigh-dragon",
         "https://www.bywgraffiadur.cymru/article/s-SALU-LLE-1250",
-        "https://www.historyofparliamentonline.org/volume/1509-1558/member/salusbury-john-i-1485-154749"
+        "https://www.historyofparliamentonline.org/volume/1509-1558/member/salusbury-john-i-1485-154749",
+        "https://biography.wales/article/s-SALU-LLE-1250.html"
       ],
       "earliest_record": "No early written text for the dragon tale itself was located; the tale is a folk giant/dragon-slayer motif that became locally attached to the historical Salusbury family of Lleweni, specifically John Salusbury ('Sion y Bodiau', d. 1547/49), a documented 16th-century Denbighshire gentry figure (see History of Parliament Online and the Dictionary of Welsh Biography)",
       "origin_type": "oral-tradition",
@@ -5130,12 +5137,14 @@
         "https://en.wikipedia.org/wiki/Radnor_Forest",
         "https://www.radnorfforest.co.uk/news-views/legands",
         "https://cpat.org.uk/Archive/churches/radnor/16856.htm",
-        "https://en.wikipedia.org/wiki/Llanfihangel_Nant_Melan"
+        "https://en.wikipedia.org/wiki/Llanfihangel_Nant_Melan",
+        "https://heneb.org.uk/archive/cpat/Archive/churches/radnor/16856.htm"
       ],
-      "historical_setting": "The ring of Llanfihangel (St Michael) churches said to contain the sleeping dragon are genuine medieval foundations (Llanfihangel Nant Melan, Cefnllys, Rhydithon, Discoed, Cascob, Helygen), several rebuilt or restored in the 19th century but standing on earlier medieval sites; the Clwyd-Powys Archaeological Trust's Radnorshire Churches Survey documents their architectural history.",
-      "cultural_tradition": "St Michael dedications reflect a widespread medieval pattern of siting churches to the archangel associated with defeating a dragon/serpent, often on hilltop or boundary sites — the Radnor Forest ring is a notable Welsh example.",
+      "historical_setting": "Radnor Forest, Radnorshire, Wales; the five (in some sources four) parish churches dedicated to St Michael, conqueror of the dragon, ring the forest and are sometimes described as forming a protective pentagram",
+      "cultural_tradition": "Welsh Michaelmas dragon-binding legend, tied to the medieval Christian dedication pattern of churches to St Michael as dragon-slayer",
       "origin_type": "oral-tradition",
-      "dating_confidence": "low"
+      "dating_confidence": "low",
+      "period": "No earliest written record of the sleeping-dragon legend itself was located. The ring of St Michael churches said to contain it (Cascob, Cefnllys, Nant Melan, Rhydithon, and in some tellings Discoed) are themselves of varied and partly uncertain date — Llanfihangel Rhydithon's present building is an 1833-4 rebuild on an older site, per the Clwyd-Powys Archaeological Trust's Radnorshire Churches Survey"
     },
     {
       "name": "Dragon of St Leonard's Forest",
@@ -5700,7 +5709,7 @@
         "celtic",
         "transformation"
       ],
-      "detail": "The vast lake system of Lough Erne in County Fermanagh takes its name from a mythical woman named Erne, described in some sources as a lady-in-waiting to Queen Méabh at the royal court of Cruachan. According to the legend, Erne and her maidens were terrified when a fearsome giant emerged from Oweynagat, the infamous Cave of the Cats, an otherworld entrance associated with Samhain and the supernatural.\n\nThe women fled northward through Ulster in blind panic, but they were overtaken by the waters. Erne and her companions drowned in the river, and their bodies dissolved to form the great lake that now bears her name. This motif of a goddess or noblewoman drowning to create a body of water is widespread in Irish mythology, symbolising the transformation of divine power into the life-giving landscape.\n\nScholars including T.F. O'Rahilly have suggested that the name Lough Erne ultimately derives from the Érainn, an ancient Irish population group who may themselves have been named after a goddess called Érann. The Dindshenchas, the medieval Irish lore of place-names, preserves multiple origin stories for the lake, but the drowning of Erne fleeing the giant of Oweynagat remains the most widely told.",
+      "detail": "The vast lake system of Lough Erne in County Fermanagh takes its name from a mythical woman named Erne, described in some sources as a lady-in-waiting to Queen Méabh at the royal court of Cruachan. According to the legend, Erne and her maidens were terrified when a fearsome giant emerged from Oweynagat, the infamous Cave of the Cats, an otherworld entrance associated with Samhain and the supernatural.\n\nThe women fled northward through Ulster in blind panic, but they were overtaken by the waters. Erne and her companions drowned in the river, and their bodies dissolved to form the great lake that now bears her name. This motif of a goddess or noblewoman drowning to create a body of water is widespread in Irish mythology, symbolising the transformation of divine power into the life-giving landscape.\n\nScholars including T.F. O'Rahilly have suggested that the name Lough Erne ultimately derives from the Érainn, an ancient Irish population group who may themselves have been named after a goddess called Érann. Local tradition actually preserves at least three competing origin stories for the lake: Erne's drowning flight from the Oweynagat giant, a sacred spring that burst its banks and flooded the valley, and a legendary battle fought so fiercely that it split the earth open to form the basin. The Dindshenchas, the medieval Irish lore of place-names, preserves this layering of explanation, but the drowning of Erne fleeing the giant of Oweynagat remains the version most widely told.",
       "sources": [
         "https://en.wikipedia.org/wiki/Lough_Erne",
         "https://www.transceltic.com/irish/magic-and-mystery-of-ireland-s-rivers",
@@ -7453,9 +7462,11 @@
         "https://en.wikipedia.org/wiki/Worm_(mythology)",
         "https://yorkshiredictionary.york.ac.uk/words/hagworm"
       ],
-      "historical_setting": "'Hagworm' is an attested North Yorkshire dialect term for snakes and the blindworm, recorded in field- and place-names from 1540 onward (e.g. 'Hagworme hole', Brimham, 1540; 'Haggwormereyns', Scriven, 1541; 'the Hag-worm Flatt', Wigglesworth, 1722), per the University of York's Yorkshire Historical Dictionary",
+      "historical_setting": "North Yorkshire Moors, wooded gullies known locally as 'haggs'",
       "origin_type": "oral-tradition",
-      "dating_confidence": "low"
+      "dating_confidence": "low",
+      "period": "The dialect term 'hagworm' is attested in Yorkshire place-name and documentary records from at least 1541 ('a rode at Haggwormereyns') and 1722 ('the Hag-worm Flatt'), per the University of York's Yorkshire Historical Dictionary — but these are place-name attestations of the word for a snake/adder, not dated tellings of a specific worm-slaying narrative, so the legend's own age cannot be pinned down from this",
+      "cultural_tradition": "One of numerous English 'worm' (wyrm/serpent) legends in the North Country dragon-slaying tradition, alongside the Lambton Worm and Sockburn Worm"
     },
     {
       "name": "Haltadans, the Petrified Trows of Fetlar",
@@ -7531,7 +7542,8 @@
         "https://teesvalleymuseums.org/visit/museum-of-hartlepool/",
         "https://www.historic-uk.com/HistoryUK/HistoryofEngland/The-Hanging-of-the-Hartlepool-Monkey/",
         "https://www.scottishcorpus.ac.uk/document/?documentid=511",
-        "http://folksongandmusichall.com/index.php/who-hung-the-monkey/"
+        "http://folksongandmusichall.com/index.php/who-hung-the-monkey/",
+        "https://archive.org/details/catgutjimfiddler0000hark"
       ],
       "earliest_record": "The earliest known reference to the story is an 1855 music-hall song, 'The Fisherman's Hung the Monkey-O', by Newcastle entertainer Ned Corvan, decades after the Napoleonic Wars in which the story is set",
       "period": "Set during the Napoleonic Wars (1803-1815), but not attested in writing until 1855, forty years after the wars ended",
@@ -9572,7 +9584,8 @@
         "https://en.wikipedia.org/wiki/Limavady",
         "https://www.connollycove.com/limavady/",
         "https://nationalpurebreddogday.com/the-legendary-dog-leap/",
-        "https://www.causewaycoastalroute.com/limavady-history"
+        "https://www.causewaycoastalroute.com/limavady-history",
+        "https://binevenaghaonb.ccght.org/roe-valley-country-park/"
       ],
       "date_added": "2026-06-28",
       "tags": [
@@ -9581,9 +9594,11 @@
         "northern-ireland",
         "londonderry"
       ],
-      "historical_setting": "The O'Cahan clan held Limavady and the Roe Valley from around the 14th century until their chief, Donal Ballagh O'Cahan, surrendered to Sir Henry Docwra in 1602 during the Nine Years' War/Elizabethan conquest of Ulster",
+      "historical_setting": "River Roe gorge at what is now Roe Valley Country Park, near Limavady, County Londonderry — site of the O'Cahan clan's stronghold from the 12th to 17th centuries",
       "origin_type": "oral-tradition",
-      "dating_confidence": "low"
+      "dating_confidence": "low",
+      "period": "No earliest written record of the dog-leap legend itself was located. The O'Cahan (Ó Catháin) lordship of the area is historically documented from the 12th century (the sept first appears on record in 1138) through to the 17th century, which is the historical backdrop the legend is set against, but that dates the clan, not the tale",
+      "cultural_tradition": "Ulster place-name origin legend (dinnseanchas-type tale explaining Leim an Mhadaidh / 'leap of the dog', anglicised as Limavady)"
     },
     {
       "name": "Lincoln Imp",
@@ -9708,12 +9723,15 @@
         "https://www.paranormaldatabase.com/reports/dragons.php",
         "https://cmrosens.com/2022/05/07/dragons-dragon-folklore-in-wales-the-welsh-borders-monstrousmay-day-7/",
         "https://en.wikipedia.org/wiki/Llandeilo_Graban",
-        "https://sites.pitt.edu/~dash/britishdragons.html"
+        "https://sites.pitt.edu/~dash/britishdragons.html",
+        "https://heneb.org.uk/archive/cpat/Archive/churches/radnor/16830.htm"
       ],
       "earliest_record": "D. Edmondes Owen, 'Pre-Reformation Survivals in Radnorshire,' Transactions of the Honourable Society of Cymmrodorion, session 1910-1911 (London: Issued by the Society, 1912), pp. 112-13",
-      "period": "Recorded in the early 20th century by an antiquarian society; the tale itself is framed as happening 'ages ago' with no fixed date given",
+      "period": "No earliest written record of the dragon-in-the-belfry tale itself was located. St Teilo's Church, Llandeilo Graban is first documented in 1291 (Taxatio Ecclesiastica, as 'Ecclesia de Landeylar'); architecturally the nave is thought 14th-century with the chancel and tower added in the 15th century, per the Clwyd-Powys Archaeological Trust's Radnorshire Churches Survey — but this dates the building, not the legend attached to it",
       "origin_type": "oral-tradition",
-      "dating_confidence": "low"
+      "dating_confidence": "low",
+      "historical_setting": "St Teilo's Church, Llandeilo Graban, Powys, Wales",
+      "cultural_tradition": "Welsh church-dragon folk motif (a dragon nesting in or menacing a church, defeated by a decoy/trap rather than direct combat)"
     },
     {
       "name": "Llangorse Lake",
@@ -16504,7 +16522,7 @@
       "category": "fairy",
       "region": "Hedley on the Hill, Northumberland",
       "summary": "A shape-shifting Northumberland bogie that turned itself into straw, cattle or a pot of changing treasure to bamboozle country folk, then vanished with a snickering, horse-like laugh.",
-      "detail": "The Hedley Kow was the mischievous bogie of Hedley on the Hill, a village near Ebchester in Northumberland. Unlike the malevolent water-hags or the spectral hounds, the Kow was a trickster whose pranks ended in laughter rather than harm, a shape-shifter who could take not only the forms of animals but of ordinary inanimate things.\n\nIn one well-loved tale, recorded by the folklorist Joseph Jacobs, an old woman finds a pot of gold by the roadside; but each time she glances down the treasure has changed, gold to silver, silver to iron, iron at last to a plain stone, which then springs up, reveals itself as the Kow, and capers off. In another, the creature disguises itself as a bundle of straw that grows impossibly heavy in a woman's arms before standing up and shuffling away with a snickering, horse-like laugh.\n\nThe Kow delighted in such deceptions: overturning milk pails, frightening farm servants, leading travellers astray and imitating their sweethearts' voices, always melting away with its braying laugh once the trick was sprung. It belongs to the great family of British hobgoblins and bogies, household spirits who are tolerated, even half-affectionately remembered, for the chaos they cause.",
+      "detail": "The Hedley Kow was the mischievous bogie of Hedley on the Hill, a village near Ebchester in Northumberland. Unlike the malevolent water-hags or the spectral hounds, the Kow was a trickster whose pranks ended in laughter rather than harm, a shape-shifter who could take not only the forms of animals but of ordinary inanimate things.\n\nIn one well-loved tale, recorded by the folklorist Joseph Jacobs in More English Fairy Tales (1894), an old woman finds a pot of gold by the roadside; but each time she glances down the treasure has changed, gold to silver, silver to iron, iron at last to a plain stone, which then springs up, reveals itself as the Kow, and capers off. In another, the creature disguises itself as a bundle of straw that grows impossibly heavy in a woman's arms before standing up and shuffling away with a snickering, horse-like laugh.\n\nThe Kow delighted in such deceptions: overturning milk pails, frightening farm servants, leading travellers astray and imitating their sweethearts' voices, always melting away with its braying laugh once the trick was sprung. It belongs to the great family of British hobgoblins and bogies, household spirits who are tolerated, even half-affectionately remembered, for the chaos they cause.",
       "source": "https://en.wikipedia.org/wiki/The_Hedley_Kow",
       "date_added": "2026-06-13",
       "tags": [

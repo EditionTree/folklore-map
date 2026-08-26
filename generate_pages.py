@@ -817,6 +817,7 @@ def build_browse_page(page_title, desc, url, h1, intro, crumb, nav_html, cards_h
             '<meta name="twitter:description" content="' + esc(desc) + '"/>\n'
             '<meta name="twitter:image" content="' + (ogimage or (BASE + '/og/preview.jpg')) + '"/>\n'
             '\n'
+            '<link rel="preload" href="/fonts/marcellus-400-latin.woff2" as="font" type="font/woff2" crossorigin/><link rel="preload" href="/fonts/spectral-400-latin.woff2" as="font" type="font/woff2" crossorigin/>\n'
             '<link rel="stylesheet" href="/fonts/fonts.css"/>\n'
             '<link rel="stylesheet" href="/nav.css?v=20260823b"/>\n'
             '<link rel="stylesheet" href="/footer.css?v=20260823a"/>\n'
@@ -1520,6 +1521,7 @@ FEATURED_PAGE = Template("""<!DOCTYPE html>
 <meta name="twitter:description" content="$desc"/>
 <meta name="twitter:image" content="$ogimage"/>
 <meta name="twitter:image:alt" content="$og_alt"/>
+<link rel="preload" href="/fonts/marcellus-400-latin.woff2" as="font" type="font/woff2" crossorigin/><link rel="preload" href="/fonts/spectral-400-latin.woff2" as="font" type="font/woff2" crossorigin/>
 <link rel="stylesheet" href="/fonts/fonts.css"/>
 <link rel="stylesheet" href="/assets/leaflet/leaflet.css"/>
 <link rel="stylesheet" href="/nav.css?v=20260823b"/>
@@ -3247,6 +3249,7 @@ def build():
 <meta name="twitter:title" content="All Legends &#183; Folklore Finder"/>
 <meta name="twitter:description" content="Browse all {written} myths, legends, ghosts and folklore stories from every region of Britain and Ireland, each pinned to its place of origin on our interactive folklore map."/>
 <meta name="twitter:image" content="{BASE}/og/preview-folklore-finder.jpg"/>
+<link rel="preload" href="/fonts/marcellus-400-latin.woff2" as="font" type="font/woff2" crossorigin/><link rel="preload" href="/fonts/spectral-400-latin.woff2" as="font" type="font/woff2" crossorigin/>
 <link rel="stylesheet" href="/fonts/fonts.css"/>
 <link rel="stylesheet" href="/nav.css?v=20260823b"/>
 <link rel="stylesheet" href="/footer.css?v=20260823a"/>

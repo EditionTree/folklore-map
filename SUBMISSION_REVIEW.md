@@ -121,7 +121,12 @@ When a submission becomes a real entry, record where it came from **on the
 legend itself**, in `seeds.json`:
 
 ```json
-"origin": { "type": "follower_suggestion", "received": "2026-08-23" }
+"origin": {
+  "type": "follower_suggestion",
+  "received": "2026-08-23",
+  "source_supplied": true,
+  "source_outcome": "not_assessed"
+}
 ```
 
 `received` is the submission's `created_at` date, not the date you actioned it.
@@ -130,22 +135,55 @@ Do this at the moment you write the entry. The submitted row is deleted 30 days
 after it is actioned, so nothing else remembers that the entry started with a
 follower, and once the row is gone the fact cannot be recovered.
 
-`generate_pages.py` then renders two things from that block, and nothing
-renders without it:
+`generate_pages.py` renders a **Follower suggestion** tag in the legend page
+hero, beside the category and the place, and a line in the article saying how
+the legend reached us. The Recently Added cards on `updates.html` carry the same
+tag, and the homepage submit prompt counts these entries. Nothing renders
+without the block.
 
-- a **Follower suggestion** tag in the legend page hero, beside the category
-  and the place
-- a line in the article: "A follower suggested this one. We researched it and
-  wrote the entry ourselves."
+### What to put in `source_outcome`
 
-The Recently Added cards on `updates.html` carry the same tag.
+Only read when `source_supplied` is true. Each value prints different wording,
+so pick the one that is actually true. An unrecognised value stops the build
+rather than printing the wrong claim.
+
+| value | when | what the page says |
+|---|---|---|
+| `not_assessed` | a link came with it and nobody has read it yet | a source came with the suggestion, and we followed their lead into the records |
+| `checked_not_cited` | you read it, and it did not clear the sourcing bar | we read what they sent, then followed the trail back to earlier records |
+| `cited` | you read it, and it is good enough to appear in `sources` | we read what they sent and it is credited with the rest |
+
+`not_assessed` is the honest default, and it is where an entry stays until
+somebody reads the link **safely**. Do not upgrade it on the assumption that a
+link that looks fine is fine.
+
+### Reading a submitted source without fetching it
+
+Two different risks get confused here. Reading their URL is a question about
+your machine. Publishing it is a question about vouching for a destination and
+sending readers there. Solving the first does not license the second.
+
+- **Never fetch the live URL**, from an agent or from your everyday browser. The
+  reasons are at the top of this file.
+- **Prefer a Wayback snapshot.** `https://archive.org/wayback/available?url=...`
+  says whether one exists, and reading the snapshot never touches their host, so
+  nothing leaks and nobody learns that a human read it. Not every page has one.
+- **If you must open the live page**, use a browser profile signed in to nothing,
+  as described above.
+- **Publish the link only if it clears the normal sourcing bar on its own.** A
+  popular haunted-places directory usually will not, and by then the entry
+  normally rests on better records anyway. Leaving it out is not a slight.
+
+What a follower gives us is a lead, not a citation, and the lead is the part
+worth crediting. The wording credits exactly that, which is why the entry no
+longer says we wrote it "ourselves": we followed their lead into the records and
+wrote up what we found there.
 
 **The credit is anonymous, and it has to stay that way.** The form collects no
 name, no email and no IP, and the Privacy Notice says so in those words. There
 is no submitter to name, so never add one. The same notice promises that a
-submitter's own text is never published, which is why the line says we wrote
-the entry ourselves. Keep that true: research it properly rather than tidying
-up what they sent.
+submitter's own text is never published. Keep that true: research the tradition
+properly rather than tidying up what they sent.
 
 ## Related
 

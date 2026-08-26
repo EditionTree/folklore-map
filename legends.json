@@ -1537,7 +1537,9 @@
       "dating_confidence": "medium",
       "origin": {
         "type": "follower_suggestion",
-        "received": "2026-08-23"
+        "received": "2026-08-23",
+        "source_supplied": true,
+        "source_outcome": "not_assessed"
       }
     },
     {

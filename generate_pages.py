@@ -1810,7 +1810,17 @@ CREDIT_MEDIUM_WORDING = {
 # with the row. See SUBMISSION_REVIEW.md.
 #
 # Shape on the legend record:
-#     "origin": {"type": "follower_suggestion", "received": "2026-08-23"}
+#     "origin": {
+#       "type": "follower_suggestion",
+#       "received": "2026-08-23",        # the submission's created_at
+#       "source_supplied": true,          # did they send a link with it
+#       "source_outcome": "not_assessed"  # cited | checked_not_cited | not_assessed
+#     }
+#
+# source_outcome is only read when source_supplied is true. "not_assessed"
+# is the honest default: the submitted link is never fetched from here (see
+# SUBMISSION_REVIEW.md), so until someone reads it safely, the page says a
+# source came with the suggestion and claims nothing more.
 #
 # Credit is deliberately anonymous. Never render a submitter name: none is
 # collected, and inventing one would break the promise the form makes.
@@ -1830,18 +1840,44 @@ def follower_tag_html(leg):
     return '<span class="from-follower">Follower suggestion</span>'
 
 
+# What the entry says depends on whether a source came with the suggestion and
+# what became of it. Wording per outcome, so the page never claims a check that
+# was not done and never implies the follower's own text was published.
+FOLLOWER_NOTES = {
+    None: ("A follower pointed us to this legend. We followed it up in the "
+           "records and wrote up what we found."),
+    "not_assessed": ("A follower pointed us to this legend and sent a source "
+                     "with it. We followed their lead into the records and "
+                     "wrote up what we found."),
+    "checked_not_cited": ("A follower pointed us to this legend and sent a "
+                          "source with it. We read what they sent, followed "
+                          "the trail back to earlier records, and wrote up "
+                          "what we found."),
+    "cited": ("A follower pointed us to this legend and sent a source with it. "
+              "We read what they sent, checked it against the records, and it "
+              "is credited below with the rest."),
+}
+
+
 def follower_note_html(leg):
     """The provenance line in the article body.
 
-    Says plainly that a follower pointed us at it and that the entry itself is
-    ours, which is what the Privacy Notice promises: a submitter's own text is
-    never published."""
+    Credits the pointer rather than the prose. What a follower gives us is a
+    lead, and the entry is written from the records that lead opens up, which
+    is also what the Privacy Notice promises: their own text is never
+    published. Raises on an outcome this does not know, because a typo that
+    silently prints the wrong claim is worse than a failed build."""
     if not follower_suggested(leg):
         return ""
+    origin = leg.get("origin") or {}
+    outcome = origin.get("source_outcome") if origin.get("source_supplied") else None
+    if outcome not in FOLLOWER_NOTES:
+        raise RuntimeError(
+            "%s: unknown origin.source_outcome %r (expected one of %s)"
+            % (leg.get("name"), outcome, sorted(k for k in FOLLOWER_NOTES if k)))
     return (
         '<aside class="follower-note" aria-label="How this legend reached us">'
-        '<p>A follower suggested this one. We researched it and wrote the '
-        'entry ourselves.</p></aside>'
+        '<p>' + FOLLOWER_NOTES[outcome] + '</p></aside>'
     )
 
 

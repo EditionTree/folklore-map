@@ -783,6 +783,30 @@ def responsive_hero(image_path, alt, sizes, img_attrs=""):
 
 
 
+# Period accents. Chosen, not derived: a period has no colour in the data the
+# way a category does. Deep earth for the deep past, warming through the Roman
+# and medieval centuries, cooling again into the industrial and modern ones.
+# Keep these muted. They are spent on a 3px rule, an intro edge and one nav
+# pill, never on a fill.
+PERIOD_ACCENTS = {
+    "prehistoric-britain": "#4a3820",   # turned earth
+    "bronze-age":          "#6b5230",   # cast bronze
+    "iron-age":            "#5c5148",   # worked iron
+    "roman-britain":       "#8a3f2e",   # legionary red, dulled to sit with the rest
+    "sub-roman-britain":   "#6a4a3a",   # rust and ruin
+    "anglo-saxon-england": "#7a5a2a",   # gold and garnet
+    "viking-age":          "#38566b",   # cold sea
+    "norman-britain":      "#4a3d6e",   # keep stone at dusk
+    "medieval-britain":    "#6d3f7a",   # manuscript purple, pushed clear of Norman
+    "tudor-britain":       "#1e4a3a",   # tudor green
+    "stuart-britain":      "#3a2a4e",   # civil war indigo
+    "georgian-britain":    "#53667a",   # slate and sea trade
+    "victorian-britain":   "#4a4a52",   # soot and iron
+    "edwardian-britain":   "#66735a",   # sage parlour
+    "modern-folklore":     "#7c8188",   # newsprint grey, lifted off the sage
+}
+
+
 def dominant_accent(entries, meta):
     """The colour of the category most of these entries belong to.
 
@@ -3110,6 +3134,7 @@ def build():
                 jsonld=period_jsonld,
                 nav_active="periods",
                 wrap_class="ornamented",
+                accent=PERIOD_ACCENTS.get(slug, ""),
                 track_script=track_event_script("period_viewed", period_slug=slug),
             )
             with io.open(os.path.join(period_dir, f"{slug}.html"), "w", encoding="utf-8") as f:

@@ -1526,7 +1526,7 @@ FEATURED_PAGE = Template("""<!DOCTYPE html>
 <link rel="stylesheet" href="/assets/leaflet/leaflet.css"/>
 <link rel="stylesheet" href="/nav.css?v=20260823b"/>
 <link rel="stylesheet" href="/footer.css?v=20260823a"/>
-<link rel="stylesheet" href="/legend-page.css?v=20260826a"/>
+<link rel="stylesheet" href="/legend-page.css?v=20260826c"/>
 <script type="application/ld+json">$jsonld</script>
 $breadcrumb_jsonld
 </head>

@@ -420,26 +420,46 @@ h1{
 .hist-caveat{margin:12px 0 0;color:var(--ink-soft);font-size:12px;font-style:italic;line-height:1.5}
 
 .ach-toast-stack{position:fixed;right:18px;top:18px;z-index:9500;display:flex;flex-direction:column;gap:10px;pointer-events:none;max-width:calc(100vw - 36px)}
+/* Depth recipe, shared with the homepage submit prompt in folklorefinder.css:
+   a warm gradient rather than a flat fill, a lit top edge and shaded bottom
+   edge drawn as insets, and three stacked shadows (contact, key, ambient)
+   instead of one. One big blur reads as a flat card with a smudge under it;
+   the stack is what makes it sit above the page. The rust marker is an inset
+   rather than a border-left, so the rounded corners stay clean. */
 .ach-toast{
   pointer-events:auto;
   display:flex;
   align-items:center;
   gap:13px;
-  background:#f6ead2;
-  border:1px solid rgba(176,144,96,.8);
-  border-left:5px solid var(--rust);
-  border-radius:0;
-  padding:14px 18px 14px 16px;
+  background:linear-gradient(177deg,#fbf1dc 0%,#f4e7cd 62%,#efdfc2 100%);
+  border:1px solid rgba(176,144,96,.62);
+  border-radius:8px;
+  padding:14px 18px 14px 19px;
   width:340px;
   max-width:100%;
-  box-shadow:0 18px 42px rgba(26,14,6,.3),0 0 0 1px rgba(255,255,255,.22) inset;
+  box-shadow:
+    inset 4px 0 0 var(--rust),
+    inset 0 1px 0 rgba(255,255,255,.62),
+    inset 0 -1px 0 rgba(120,90,50,.13),
+    0 2px 4px rgba(26,14,6,.11),
+    0 12px 24px -8px rgba(26,14,6,.26),
+    0 30px 60px -22px rgba(26,14,6,.34);
   opacity:0;
-  transform:translateY(-10px);
-  transition:opacity .25s,transform .25s,box-shadow .15s,transform .15s;
+  transform:translateY(-12px) scale(.97);
+  transition:opacity .28s ease,transform .32s cubic-bezier(.2,.85,.3,1.15),box-shadow .18s ease;
 }
-.ach-toast.show{opacity:1;transform:translateY(0)}
+.ach-toast.show{opacity:1;transform:translateY(0) scale(1)}
 .ach-toast-clickable{cursor:pointer}
-.ach-toast-clickable:hover,.ach-toast-clickable:focus-visible{box-shadow:0 22px 50px rgba(26,14,6,.38),0 0 0 1px rgba(255,255,255,.26) inset}
+.ach-toast-clickable:hover,.ach-toast-clickable:focus-visible{
+  transform:translateY(-2px) scale(1);
+  box-shadow:
+    inset 4px 0 0 var(--rust),
+    inset 0 1px 0 rgba(255,255,255,.7),
+    inset 0 -1px 0 rgba(120,90,50,.13),
+    0 3px 6px rgba(26,14,6,.13),
+    0 18px 32px -10px rgba(26,14,6,.3),
+    0 40px 74px -24px rgba(26,14,6,.38);
+}
 .ach-toast-clickable:focus-visible{outline:2px solid var(--rust-dark);outline-offset:2px}
 .ach-toast-icon{
   flex:0 0 auto;
@@ -463,8 +483,14 @@ h1{
    progress toasts. */
 .ach-toast.unlock{
   border-color:rgba(201,154,63,.9);
-  border-left-color:#c99a3f;
-  box-shadow:0 20px 48px rgba(26,14,6,.34),0 0 0 1px rgba(201,154,63,.38);
+  box-shadow:
+    inset 4px 0 0 #c99a3f,
+    inset 0 1px 0 rgba(255,244,214,.7),
+    inset 0 -1px 0 rgba(120,90,50,.13),
+    0 0 0 1px rgba(201,154,63,.3),
+    0 3px 6px rgba(26,14,6,.12),
+    0 16px 30px -10px rgba(26,14,6,.28),
+    0 36px 70px -22px rgba(26,14,6,.36);
   position:relative;
   overflow:hidden;
 }
@@ -488,7 +514,7 @@ h1{
   from{left:-60%}
   to{left:130%}
 }
-@media(prefers-reduced-motion:reduce){.ach-toast.unlock.show::before{animation:none}}
+@media(prefers-reduced-motion:reduce){.ach-toast.unlock.show::before{animation:none}.ach-toast{transform:none;transition:opacity .2s ease}.ach-toast.show{transform:none}.ach-toast-clickable:hover,.ach-toast-clickable:focus-visible{transform:none}}
 @media(max-width:480px){.ach-toast-stack{right:8px;top:8px}.ach-toast{width:calc(100vw - 16px)}}
 
 /* "Nearest legend found" toast — no icon, and it holds a real button (Share)
@@ -518,7 +544,7 @@ h1{
   text-decoration:none;
 }
 .source-list a:hover .src-name,.source-list a:focus-visible .src-name{text-decoration:underline}
-.src-name{flex:1 1 auto;min-width:0}
+.src-name{flex:1 1 auto;min-width:0;overflow-wrap:anywhere;word-break:break-word}
 .src-tier{
   flex:0 0 auto;
   margin-left:auto;

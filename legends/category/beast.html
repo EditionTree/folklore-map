@@ -49,10 +49,10 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 .browse-nav a{font-family:'Marcellus',serif;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#9d461f;border:1px solid rgba(90,70,50,.35);border-radius:0;padding:5px 11px;text-decoration:none}
 .browse-nav a:hover,.browse-nav a.active{background:#5a4632;color:#f6f1e6;border-color:#5a4632}
 .browse-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:15px}
-.b-card{position:relative;background:rgba(246,241,230,.74);border:1px solid rgba(90,70,50,.3);border-radius:0;padding:16px 17px;text-decoration:none;color:#3f3023;box-shadow:inset 0 0 0 5px rgba(255,255,255,.15);transition:border-color .15s,transform .1s,background .15s}
+.b-card{position:relative;overflow:hidden;background:linear-gradient(177deg,#fbf5e9 0%,#f5ecdb 60%,#efe3cd 100%);border:1px solid rgba(90,70,50,.26);border-radius:7px;padding:16px 17px 16px 20px;text-decoration:none;color:#3f3023;box-shadow:inset 3px 0 0 var(--cat,#8b3a1a),inset 0 1px 0 rgba(255,255,255,.6),0 1px 2px rgba(26,14,6,.07),0 8px 16px -8px rgba(26,14,6,.16);transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}.b-card::after{content:'';position:absolute;top:-10px;right:-10px;width:76px;height:76px;opacity:0;pointer-events:none;background:url('/assets/ornaments/generated-variants/oak-corner-upper-right.webp') right top/contain no-repeat;transition:opacity .22s ease}.b-card:hover::after,.b-card:focus-visible::after{opacity:.16}.b-card:hover,.b-card:focus-visible{transform:translateY(-3px);border-color:rgba(90,70,50,.4);box-shadow:inset 4px 0 0 var(--cat,#8b3a1a),inset 0 1px 0 rgba(255,255,255,.72),0 2px 4px rgba(26,14,6,.1),0 16px 30px -10px rgba(26,14,6,.26)}@media(prefers-reduced-motion:reduce){.b-card{transition:box-shadow .16s ease}.b-card:hover,.b-card:focus-visible{transform:none}}
 .b-card:hover{border-color:#c4622a;transform:translateY(-2px)}
 .b-card span{display:block}
-.b-cat{font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:#9d461f;padding:2px 8px;border-radius:0;margin-bottom:8px;width:max-content;max-width:100%}
+.b-cat{font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:#9d461f;padding:2px 9px 3px;border-radius:3px;margin-bottom:9px;width:max-content;max-width:100%;box-shadow:0 1px 2px rgba(26,14,6,.22)}
 .b-name{font-family:'Marcellus',serif;font-size:15px;line-height:1.25;margin-bottom:4px}
 .b-region{font-style:italic;font-size:12px;color:#5c4a2a}
 .b-summary{font-size:13.5px;color:#3a2c14;margin-top:8px;line-height:1.5}
@@ -84,14 +84,14 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 @media(max-width:680px){.col-hero-split{flex-direction:column;gap:16px}.col-hero-media{flex-basis:auto;height:220px;min-height:0}.col-hero-media::after{inset:-12px;border-width:24px;border-image-width:24px}}
 /* Article layout: alternating image/summary rows for collection members */
 .col-articles{display:flex;flex-direction:column;gap:20px}
-.col-article{display:flex;align-items:stretch;background:rgba(246,241,230,.72);border:1px solid rgba(90,70,50,.28);text-decoration:none;color:#3f3023;overflow:hidden;box-shadow:inset 0 0 0 5px rgba(255,255,255,.14);transition:border-color .15s,transform .12s,box-shadow .15s}
-.col-article:hover{border-color:#c4622a;transform:translateY(-2px);box-shadow:0 10px 26px rgba(44,31,14,.14),inset 0 0 0 5px rgba(255,255,255,.14)}
+.col-article{display:flex;align-items:stretch;background:linear-gradient(177deg,#fbf5e9 0%,#f5ecdb 58%,#eee2ca 100%);border:1px solid rgba(90,70,50,.24);border-radius:8px;text-decoration:none;color:#3f3023;overflow:hidden;box-shadow:inset 0 1px 0 rgba(255,255,255,.6),0 1px 2px rgba(26,14,6,.07),0 10px 22px -10px rgba(26,14,6,.2);transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}
+.col-article:hover,.col-article:focus-visible{border-color:rgba(90,70,50,.38);transform:translateY(-3px);box-shadow:inset 0 1px 0 rgba(255,255,255,.72),0 2px 5px rgba(26,14,6,.1),0 20px 38px -12px rgba(26,14,6,.28)}.col-article:hover .col-article-media img{transform:scale(1.04)}@media(prefers-reduced-motion:reduce){.col-article{transition:box-shadow .16s ease}.col-article:hover,.col-article:focus-visible{transform:none}.col-article:hover .col-article-media img{transform:none}}
 .col-article:nth-child(even){flex-direction:row-reverse}
-.col-article-media{flex:0 0 42%;position:relative;aspect-ratio:16/9;background:#241a10}
+.col-article-media{flex:0 0 42%;position:relative;aspect-ratio:16/9;background:#241a10;overflow:hidden}.col-article-media img{transition:transform .3s ease}
 .col-article-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.col-article-body{flex:1 1 0;min-width:0;padding:16px 26px;display:flex;flex-direction:column;justify-content:center}
+.col-article-body{flex:1 1 0;min-width:0;padding:18px 26px 18px 28px;display:flex;flex-direction:column;justify-content:center;box-shadow:inset 3px 0 0 var(--cat,#8b3a1a)}
 .col-article-cat{align-self:flex-start;font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:#9d461f;padding:2px 9px;margin-bottom:9px}
-.col-article-name{font-family:'Marcellus',serif;font-weight:400;font-size:22px;line-height:1.15;color:#3f3023;margin-bottom:3px}
+.col-article-name{font-family:'Marcellus',serif;font-weight:400;font-size:22px;line-height:1.15;color:#3f3023;margin-bottom:3px}.col-article-region+.col-article-summary::before,.col-article-name+.col-article-summary::before{content:'';display:block;width:104px;height:26px;margin:2px 0 8px;opacity:.42;background:url('/assets/ornaments/generated-variants/oak-divider-horizontal.webp') left center/contain no-repeat}
 .col-article-region{font-style:italic;font-size:12.5px;color:#5c4a2a}
 .col-article-summary{font-size:14.5px;color:#3a2c14;line-height:1.6;margin:10px 0 12px}
 .col-article-more{font-family:'Marcellus',serif;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#9d461f}
@@ -163,56 +163,56 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 <p class="browse-intro">Britain and Ireland teem with monstrous beasts, among them the spectral black dogs of lonely lanes, the water-horses that drag riders down to drowning, and the territorial &#x27;worms&#x27; and wild cattle of older belief. Many are bound to a single lake, moor or parish, where the creature guards a boundary or warns of a coming death.</p>
 <nav class="browse-nav"><a href="https://folklorefinder.uk/legends/category/location">Sacred Sites</a><a href="https://folklorefinder.uk/legends/category/witch">Witches</a><a href="https://folklorefinder.uk/legends/category/hero">Legendary Figures</a><a href="https://folklorefinder.uk/legends/category/ghost">Ghosts</a><a href="https://folklorefinder.uk/legends/category/fairy">Fae &amp; Spirits</a><a href="https://folklorefinder.uk/legends/category/water">Aquatic Legends</a><a href="https://folklorefinder.uk/legends/category/beast" class="active">Beasts</a><a href="https://folklorefinder.uk/legends/category/deity">Deities</a><a href="https://folklorefinder.uk/legends/category/dragon">Dragons</a><a href="https://folklorefinder.uk/legends/category/pirate">Pirates</a><a href="https://folklorefinder.uk/legends/category/giant">Giants</a></nav>
 <div class="browse-grid">
-<a class="b-card" href="https://folklorefinder.uk/legends/afanc"><span class="b-name">Afanc</span><span class="b-region">Gwynedd, Wales</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/am-fear-liath-mor"><span class="b-name">Am Fear Liath Mòr</span><span class="b-region">Cairngorms, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/awd-goggie"><span class="b-name">Awd Goggie</span><span class="b-region">Yorkshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/barghest"><span class="b-name">Barghest</span><span class="b-region">Yorkshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/beast-of-bodmin"><span class="b-name">Beast of Bodmin</span><span class="b-region">Cornwall</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/beast-of-dean"><span class="b-name">Beast of Dean</span><span class="b-region">Forest of Dean, Gloucestershire, England</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/black-annis"><span class="b-name">Black Annis</span><span class="b-region">Leicestershire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/black-dog-of-bouley-bay"><span class="b-name">Black Dog of Bouley Bay</span><span class="b-region">Bouley Bay, Jersey</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/black-pig-s-dyke"><span class="b-name">Black Pig&#x27;s Dyke</span><span class="b-region">Fermanagh/Armagh border, Northern Ireland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/black-shuck"><span class="b-name">Black Shuck</span><span class="b-region">Norfolk</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/boobrie"><span class="b-name">Boobrie</span><span class="b-region">Argyll, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/cat-sith"><span class="b-name">Cat Sìth</span><span class="b-region">Scottish Highlands</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/cu-sith"><span class="b-name">Cu Sith</span><span class="b-region">Isle of Skye, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/cwn-annwn"><span class="b-name">Cŵn Annwn</span><span class="b-region">Brecon Beacons, Wales</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/donn-cuailnge"><span class="b-name">Donn Cúailnge</span><span class="b-region">Cooley Peninsula, County Louth, Ireland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/dun-cow-of-dunsmore-heath"><span class="b-name">Dun Cow of Dunsmore Heath</span><span class="b-region">Dunsmore Heath, Warwickshire, England</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/ellen-trechend"><span class="b-name">Ellén Trechend</span><span class="b-region">Rathcroghan, County Roscommon, Ireland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/fachan"><span class="b-name">Fachan</span><span class="b-region">Glen Etive and West Highlands, Argyll, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/fad-felen"><span class="b-name">Fad Felen</span><span class="b-region">Glamorgan, Wales</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/grey-man-of-ben-macdhui"><span class="b-name">Grey Man of Ben MacDhui</span><span class="b-region">Ben Macdui, Cairngorms</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/griffin"><span class="b-name">Griffin</span><span class="b-region">Britain (heraldic)</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/gwyllgi"><span class="b-name">Gwyllgi</span><span class="b-region">Nant y Garth Pass, Denbighshire, Wales</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/hartlepool-monkey"><span class="b-name">Hartlepool Monkey</span><span class="b-region">Hartlepool, County Durham</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/jimmy-squarefoot"><span class="b-name">Jimmy Squarefoot</span><span class="b-region">Grenaby, Isle of Man</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/la-bete-de-la-tour"><span class="b-name">La Bête De La Tour</span><span class="b-region">Guernsey, Channel Islands</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/limavady-leap-of-the-dog"><span class="b-name">Limavady Leap of the Dog</span><span class="b-region">Limavady, County Londonderry, Northern Ireland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/loch-na-beiste-water-horse-mellon-udrigle"><span class="b-name">Loch na Beiste Water Horse, Mellon Udrigle</span><span class="b-region">Mellon Udrigle, Wester Ross, Highland, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/loch-nan-dubhrachan-water-horse"><span class="b-name">Loch nan Dubhrachan Water Horse</span><span class="b-region">Sleat, Isle of Skye, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/lough-ree-monster"><span class="b-name">Lough Ree Monster</span><span class="b-region">Lough Ree, Leinster/Connacht border, Ireland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/macphie-and-the-black-dog-of-colonsay"><span class="b-name">Macphie and the Black Dog of Colonsay</span><span class="b-region">Colonsay, Argyll, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/moddey-dhoo"><span class="b-name">Moddey Dhoo</span><span class="b-region">Peel Castle, Isle of Man</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/owlman-of-mawnan"><span class="b-name">Owlman of Mawnan</span><span class="b-region">Cornwall</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/padfoot"><span class="b-name">Padfoot</span><span class="b-region">Yorkshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/renwick-cockatrice"><span class="b-name">Renwick Cockatrice</span><span class="b-region">Cumbria</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/sawney-bean"><span class="b-name">Sawney Bean</span><span class="b-region">Bennane Cave, South Ayrshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/seven-whistlers"><span class="b-name">Seven Whistlers</span><span class="b-region">Black Country / Worcestershire, England</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/shug-monkey"><span class="b-name">Shug Monkey</span><span class="b-region">Cambridgeshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/skriker"><span class="b-name">Skriker</span><span class="b-region">Lancashire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/stratford-lyon"><span class="b-name">Stratford Lyon</span><span class="b-region">Hampshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/stronsay-beast"><span class="b-name">Stronsay Beast</span><span class="b-region">Stronsay, Orkney, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/tangie"><span class="b-name">Tangie</span><span class="b-region">Orkney and Shetland, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/tchico"><span class="b-name">Tchico</span><span class="b-region">Guernsey, Channel Islands</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/the-brag"><span class="b-name">The Brag</span><span class="b-region">Northumberland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/the-girt-dog-of-ennerdale"><span class="b-name">The Girt Dog of Ennerdale</span><span class="b-region">Ennerdale, Cumbria</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/twrch-trwyth"><span class="b-name">Twrch Trwyth</span><span class="b-region">Porth Clais, Pembrokeshire, Wales</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/unicorn"><span class="b-name">Unicorn</span><span class="b-region">Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/werewolves-of-ossory"><span class="b-name">Werewolves of Ossory</span><span class="b-region">Kingdom of Ossory (County Kilkenny / County Laois), Leinster, Ireland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/wild-man-of-orford"><span class="b-name">Wild Man of Orford</span><span class="b-region">Orford, Suffolk, England</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/wisht-hounds"><span class="b-name">Wisht Hounds</span><span class="b-region">Dartmoor, Devon</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/wulver"><span class="b-name">Wulver</span><span class="b-region">Shetland</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/afanc"><span class="b-name">Afanc</span><span class="b-region">Gwynedd, Wales</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/am-fear-liath-mor"><span class="b-name">Am Fear Liath Mòr</span><span class="b-region">Cairngorms, Scotland</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/awd-goggie"><span class="b-name">Awd Goggie</span><span class="b-region">Yorkshire</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/barghest"><span class="b-name">Barghest</span><span class="b-region">Yorkshire</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/beast-of-bodmin"><span class="b-name">Beast of Bodmin</span><span class="b-region">Cornwall</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/beast-of-dean"><span class="b-name">Beast of Dean</span><span class="b-region">Forest of Dean, Gloucestershire, England</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/black-annis"><span class="b-name">Black Annis</span><span class="b-region">Leicestershire</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/black-dog-of-bouley-bay"><span class="b-name">Black Dog of Bouley Bay</span><span class="b-region">Bouley Bay, Jersey</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/black-pig-s-dyke"><span class="b-name">Black Pig&#x27;s Dyke</span><span class="b-region">Fermanagh/Armagh border, Northern Ireland</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/black-shuck"><span class="b-name">Black Shuck</span><span class="b-region">Norfolk</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/boobrie"><span class="b-name">Boobrie</span><span class="b-region">Argyll, Scotland</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/cat-sith"><span class="b-name">Cat Sìth</span><span class="b-region">Scottish Highlands</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/cu-sith"><span class="b-name">Cu Sith</span><span class="b-region">Isle of Skye, Scotland</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/cwn-annwn"><span class="b-name">Cŵn Annwn</span><span class="b-region">Brecon Beacons, Wales</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/donn-cuailnge"><span class="b-name">Donn Cúailnge</span><span class="b-region">Cooley Peninsula, County Louth, Ireland</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/dun-cow-of-dunsmore-heath"><span class="b-name">Dun Cow of Dunsmore Heath</span><span class="b-region">Dunsmore Heath, Warwickshire, England</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/ellen-trechend"><span class="b-name">Ellén Trechend</span><span class="b-region">Rathcroghan, County Roscommon, Ireland</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/fachan"><span class="b-name">Fachan</span><span class="b-region">Glen Etive and West Highlands, Argyll, Scotland</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/fad-felen"><span class="b-name">Fad Felen</span><span class="b-region">Glamorgan, Wales</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/grey-man-of-ben-macdhui"><span class="b-name">Grey Man of Ben MacDhui</span><span class="b-region">Ben Macdui, Cairngorms</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/griffin"><span class="b-name">Griffin</span><span class="b-region">Britain (heraldic)</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/gwyllgi"><span class="b-name">Gwyllgi</span><span class="b-region">Nant y Garth Pass, Denbighshire, Wales</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/hartlepool-monkey"><span class="b-name">Hartlepool Monkey</span><span class="b-region">Hartlepool, County Durham</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/jimmy-squarefoot"><span class="b-name">Jimmy Squarefoot</span><span class="b-region">Grenaby, Isle of Man</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/la-bete-de-la-tour"><span class="b-name">La Bête De La Tour</span><span class="b-region">Guernsey, Channel Islands</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/limavady-leap-of-the-dog"><span class="b-name">Limavady Leap of the Dog</span><span class="b-region">Limavady, County Londonderry, Northern Ireland</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/loch-na-beiste-water-horse-mellon-udrigle"><span class="b-name">Loch na Beiste Water Horse, Mellon Udrigle</span><span class="b-region">Mellon Udrigle, Wester Ross, Highland, Scotland</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/loch-nan-dubhrachan-water-horse"><span class="b-name">Loch nan Dubhrachan Water Horse</span><span class="b-region">Sleat, Isle of Skye, Scotland</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/lough-ree-monster"><span class="b-name">Lough Ree Monster</span><span class="b-region">Lough Ree, Leinster/Connacht border, Ireland</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/macphie-and-the-black-dog-of-colonsay"><span class="b-name">Macphie and the Black Dog of Colonsay</span><span class="b-region">Colonsay, Argyll, Scotland</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/moddey-dhoo"><span class="b-name">Moddey Dhoo</span><span class="b-region">Peel Castle, Isle of Man</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/owlman-of-mawnan"><span class="b-name">Owlman of Mawnan</span><span class="b-region">Cornwall</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/padfoot"><span class="b-name">Padfoot</span><span class="b-region">Yorkshire</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/renwick-cockatrice"><span class="b-name">Renwick Cockatrice</span><span class="b-region">Cumbria</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/sawney-bean"><span class="b-name">Sawney Bean</span><span class="b-region">Bennane Cave, South Ayrshire</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/seven-whistlers"><span class="b-name">Seven Whistlers</span><span class="b-region">Black Country / Worcestershire, England</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/shug-monkey"><span class="b-name">Shug Monkey</span><span class="b-region">Cambridgeshire</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/skriker"><span class="b-name">Skriker</span><span class="b-region">Lancashire</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/stratford-lyon"><span class="b-name">Stratford Lyon</span><span class="b-region">Hampshire</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/stronsay-beast"><span class="b-name">Stronsay Beast</span><span class="b-region">Stronsay, Orkney, Scotland</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/tangie"><span class="b-name">Tangie</span><span class="b-region">Orkney and Shetland, Scotland</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/tchico"><span class="b-name">Tchico</span><span class="b-region">Guernsey, Channel Islands</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/the-brag"><span class="b-name">The Brag</span><span class="b-region">Northumberland</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/the-girt-dog-of-ennerdale"><span class="b-name">The Girt Dog of Ennerdale</span><span class="b-region">Ennerdale, Cumbria</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/twrch-trwyth"><span class="b-name">Twrch Trwyth</span><span class="b-region">Porth Clais, Pembrokeshire, Wales</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/unicorn"><span class="b-name">Unicorn</span><span class="b-region">Scotland</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/werewolves-of-ossory"><span class="b-name">Werewolves of Ossory</span><span class="b-region">Kingdom of Ossory (County Kilkenny / County Laois), Leinster, Ireland</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/wild-man-of-orford"><span class="b-name">Wild Man of Orford</span><span class="b-region">Orford, Suffolk, England</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/wisht-hounds"><span class="b-name">Wisht Hounds</span><span class="b-region">Dartmoor, Devon</span></a>
+<a class="b-card" style="--cat:#2d6a8a" href="https://folklorefinder.uk/legends/wulver"><span class="b-name">Wulver</span><span class="b-region">Shetland</span></a>
 </div>
 <a class="back" href="https://folklorefinder.uk/legends/">&#8592; Browse All Legends</a>
 </div>

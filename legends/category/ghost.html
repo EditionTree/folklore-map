@@ -49,10 +49,10 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 .browse-nav a{font-family:'Marcellus',serif;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#9d461f;border:1px solid rgba(90,70,50,.35);border-radius:0;padding:5px 11px;text-decoration:none}
 .browse-nav a:hover,.browse-nav a.active{background:#5a4632;color:#f6f1e6;border-color:#5a4632}
 .browse-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:15px}
-.b-card{position:relative;background:rgba(246,241,230,.74);border:1px solid rgba(90,70,50,.3);border-radius:0;padding:16px 17px;text-decoration:none;color:#3f3023;box-shadow:inset 0 0 0 5px rgba(255,255,255,.15);transition:border-color .15s,transform .1s,background .15s}
+.b-card{position:relative;overflow:hidden;background:linear-gradient(177deg,#fbf5e9 0%,#f5ecdb 60%,#efe3cd 100%);border:1px solid rgba(90,70,50,.26);border-radius:7px;padding:16px 17px 16px 20px;text-decoration:none;color:#3f3023;box-shadow:inset 3px 0 0 var(--cat,#8b3a1a),inset 0 1px 0 rgba(255,255,255,.6),0 1px 2px rgba(26,14,6,.07),0 8px 16px -8px rgba(26,14,6,.16);transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}.b-card::after{content:'';position:absolute;top:-10px;right:-10px;width:76px;height:76px;opacity:0;pointer-events:none;background:url('/assets/ornaments/generated-variants/oak-corner-upper-right.webp') right top/contain no-repeat;transition:opacity .22s ease}.b-card:hover::after,.b-card:focus-visible::after{opacity:.16}.b-card:hover,.b-card:focus-visible{transform:translateY(-3px);border-color:rgba(90,70,50,.4);box-shadow:inset 4px 0 0 var(--cat,#8b3a1a),inset 0 1px 0 rgba(255,255,255,.72),0 2px 4px rgba(26,14,6,.1),0 16px 30px -10px rgba(26,14,6,.26)}@media(prefers-reduced-motion:reduce){.b-card{transition:box-shadow .16s ease}.b-card:hover,.b-card:focus-visible{transform:none}}
 .b-card:hover{border-color:#c4622a;transform:translateY(-2px)}
 .b-card span{display:block}
-.b-cat{font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:#9d461f;padding:2px 8px;border-radius:0;margin-bottom:8px;width:max-content;max-width:100%}
+.b-cat{font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:#9d461f;padding:2px 9px 3px;border-radius:3px;margin-bottom:9px;width:max-content;max-width:100%;box-shadow:0 1px 2px rgba(26,14,6,.22)}
 .b-name{font-family:'Marcellus',serif;font-size:15px;line-height:1.25;margin-bottom:4px}
 .b-region{font-style:italic;font-size:12px;color:#5c4a2a}
 .b-summary{font-size:13.5px;color:#3a2c14;margin-top:8px;line-height:1.5}
@@ -84,14 +84,14 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 @media(max-width:680px){.col-hero-split{flex-direction:column;gap:16px}.col-hero-media{flex-basis:auto;height:220px;min-height:0}.col-hero-media::after{inset:-12px;border-width:24px;border-image-width:24px}}
 /* Article layout: alternating image/summary rows for collection members */
 .col-articles{display:flex;flex-direction:column;gap:20px}
-.col-article{display:flex;align-items:stretch;background:rgba(246,241,230,.72);border:1px solid rgba(90,70,50,.28);text-decoration:none;color:#3f3023;overflow:hidden;box-shadow:inset 0 0 0 5px rgba(255,255,255,.14);transition:border-color .15s,transform .12s,box-shadow .15s}
-.col-article:hover{border-color:#c4622a;transform:translateY(-2px);box-shadow:0 10px 26px rgba(44,31,14,.14),inset 0 0 0 5px rgba(255,255,255,.14)}
+.col-article{display:flex;align-items:stretch;background:linear-gradient(177deg,#fbf5e9 0%,#f5ecdb 58%,#eee2ca 100%);border:1px solid rgba(90,70,50,.24);border-radius:8px;text-decoration:none;color:#3f3023;overflow:hidden;box-shadow:inset 0 1px 0 rgba(255,255,255,.6),0 1px 2px rgba(26,14,6,.07),0 10px 22px -10px rgba(26,14,6,.2);transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}
+.col-article:hover,.col-article:focus-visible{border-color:rgba(90,70,50,.38);transform:translateY(-3px);box-shadow:inset 0 1px 0 rgba(255,255,255,.72),0 2px 5px rgba(26,14,6,.1),0 20px 38px -12px rgba(26,14,6,.28)}.col-article:hover .col-article-media img{transform:scale(1.04)}@media(prefers-reduced-motion:reduce){.col-article{transition:box-shadow .16s ease}.col-article:hover,.col-article:focus-visible{transform:none}.col-article:hover .col-article-media img{transform:none}}
 .col-article:nth-child(even){flex-direction:row-reverse}
-.col-article-media{flex:0 0 42%;position:relative;aspect-ratio:16/9;background:#241a10}
+.col-article-media{flex:0 0 42%;position:relative;aspect-ratio:16/9;background:#241a10;overflow:hidden}.col-article-media img{transition:transform .3s ease}
 .col-article-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.col-article-body{flex:1 1 0;min-width:0;padding:16px 26px;display:flex;flex-direction:column;justify-content:center}
+.col-article-body{flex:1 1 0;min-width:0;padding:18px 26px 18px 28px;display:flex;flex-direction:column;justify-content:center;box-shadow:inset 3px 0 0 var(--cat,#8b3a1a)}
 .col-article-cat{align-self:flex-start;font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:#9d461f;padding:2px 9px;margin-bottom:9px}
-.col-article-name{font-family:'Marcellus',serif;font-weight:400;font-size:22px;line-height:1.15;color:#3f3023;margin-bottom:3px}
+.col-article-name{font-family:'Marcellus',serif;font-weight:400;font-size:22px;line-height:1.15;color:#3f3023;margin-bottom:3px}.col-article-region+.col-article-summary::before,.col-article-name+.col-article-summary::before{content:'';display:block;width:104px;height:26px;margin:2px 0 8px;opacity:.42;background:url('/assets/ornaments/generated-variants/oak-divider-horizontal.webp') left center/contain no-repeat}
 .col-article-region{font-style:italic;font-size:12.5px;color:#5c4a2a}
 .col-article-summary{font-size:14.5px;color:#3a2c14;line-height:1.6;margin:10px 0 12px}
 .col-article-more{font-family:'Marcellus',serif;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#9d461f}
@@ -163,80 +163,80 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 <p class="browse-intro">The ghosts of these islands are rarely vague. They are the wronged revenant who will not stay buried, the screaming skull that cannot be moved, the phantom coach, and the weeping or radiant figure tied to a named hall or churchyard, stories that preserve old anxieties about unquiet death, broken oaths and the boundary between the living and the dead.</p>
 <nav class="browse-nav"><a href="https://folklorefinder.uk/legends/category/location">Sacred Sites</a><a href="https://folklorefinder.uk/legends/category/witch">Witches</a><a href="https://folklorefinder.uk/legends/category/hero">Legendary Figures</a><a href="https://folklorefinder.uk/legends/category/ghost" class="active">Ghosts</a><a href="https://folklorefinder.uk/legends/category/fairy">Fae &amp; Spirits</a><a href="https://folklorefinder.uk/legends/category/water">Aquatic Legends</a><a href="https://folklorefinder.uk/legends/category/beast">Beasts</a><a href="https://folklorefinder.uk/legends/category/deity">Deities</a><a href="https://folklorefinder.uk/legends/category/dragon">Dragons</a><a href="https://folklorefinder.uk/legends/category/pirate">Pirates</a><a href="https://folklorefinder.uk/legends/category/giant">Giants</a></nav>
 <div class="browse-grid">
-<a class="b-card" href="https://folklorefinder.uk/legends/abhartach"><span class="b-name">Abhartach</span><span class="b-region">Slaghtaverty, County Londonderry</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/anantis-castle-revenant"><span class="b-name">Anantis Castle Revenant</span><span class="b-region">Alnwick, Northumberland, England</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/angelystor"><span class="b-name">Angelystor</span><span class="b-region">Llangernyw, Conwy, Wales</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/banshee"><span class="b-name">Banshee</span><span class="b-region">Ireland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/bean-nighe"><span class="b-name">Bean Nighe</span><span class="b-region">Highland, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/berwick-revenant"><span class="b-name">Berwick Revenant</span><span class="b-region">Berwick-upon-Tweed, Northumberland, England</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/black-eric-of-shetland"><span class="b-name">Black Eric of Shetland</span><span class="b-region">Fitful Head, Shetland, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/black-lady-of-bradley-woods"><span class="b-name">Black Lady of Bradley Woods</span><span class="b-region">Lincolnshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/black-vaughan-of-hergest-court"><span class="b-name">Black Vaughan of Hergest Court</span><span class="b-region">Kington, Herefordshire, England</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/bodach"><span class="b-name">Bodach</span><span class="b-region">Highland, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/brollachan"><span class="b-name">Brollachan</span><span class="b-region">Highland, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/brown-lady-of-raynham-hall"><span class="b-name">Brown Lady of Raynham Hall</span><span class="b-region">Norfolk</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/buckinghamshire-revenant"><span class="b-name">Buckinghamshire Revenant</span><span class="b-region">Buckinghamshire, England</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/burial-place-of-the-big-women"><span class="b-name">Burial Place of the Big Women</span><span class="b-region">Hynish, Isle of Tiree, Inner Hebrides, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/church-grim"><span class="b-name">Church Grim</span><span class="b-region">England &amp; Scandinavia</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/cock-lane-ghost"><span class="b-name">Cock Lane ghost</span><span class="b-region">Norfolk</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/cyhyraeth"><span class="b-name">Cyhyraeth</span><span class="b-region">River Tywi Valley and Glamorganshire coast, Wales</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/dando-s-dogs"><span class="b-name">Dando&#x27;s Dogs</span><span class="b-region">Cornwall</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/dead-men-of-burton-on-trent"><span class="b-name">Dead Men of Burton-on-Trent</span><span class="b-region">Staffordshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/dearg-due"><span class="b-name">Dearg Due</span><span class="b-region">Strongbow&#x27;s Tree, Waterford, Ireland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/enfield-poltergeist"><span class="b-name">Enfield Poltergeist</span><span class="b-region">London</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/epworth-poltergeist"><span class="b-name">Epworth Poltergeist</span><span class="b-region">Epworth, Lincolnshire, England</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/gunby-hall-ghost-walk"><span class="b-name">Gunby Hall Ghost Walk</span><span class="b-region">Gunby, Lincolnshire, England</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/gwrach-y-rhibyn"><span class="b-name">Gwrach-y-Rhibyn</span><span class="b-region">Ceredigion, Wales</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/headless-horseman-of-the-staffordshire-moors"><span class="b-name">Headless Horseman of the Staffordshire Moors</span><span class="b-region">Staffordshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/hellfire-club-montpelier-hill"><span class="b-name">Hellfire Club, Montpelier Hill</span><span class="b-region">Montpelier Hill, County Dublin, Ireland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/hereford-revenant"><span class="b-name">Hereford Revenant</span><span class="b-region">Hereford, Herefordshire, England</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/herne-the-hunter"><span class="b-name">Herne the Hunter</span><span class="b-region">Berkshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/hexham-heads"><span class="b-name">Hexham Heads</span><span class="b-region">Northumberland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/hundeprest-of-melrose"><span class="b-name">Hundeprest of Melrose</span><span class="b-region">Melrose, Scottish Borders, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/jan-tregeagle"><span class="b-name">Jan Tregeagle</span><span class="b-region">Cornwall</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/lady-howard-of-okehampton"><span class="b-name">Lady Howard of Okehampton</span><span class="b-region">Okehampton, Devon, England</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/lantern-man"><span class="b-name">Lantern Man</span><span class="b-region">Norfolk</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/loftus-hall"><span class="b-name">Loftus Hall</span><span class="b-region">Hook Peninsula, County Wexford</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/loughareema-the-vanishing-lake"><span class="b-name">Loughareema, the Vanishing Lake</span><span class="b-region">County Antrim, Northern Ireland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/maeve-roe-the-banshee-of-dunluce-castle"><span class="b-name">Maeve Roe, the Banshee of Dunluce Castle</span><span class="b-region">Dunluce Castle, County Antrim, Northern Ireland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/marshal-brain-of-clongowes-wood"><span class="b-name">Marshal Brain of Clongowes Wood</span><span class="b-region">Clane, County Kildare, Ireland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/metheringham-lass"><span class="b-name">Metheringham Lass</span><span class="b-region">RAF Metheringham</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/old-cockern"><span class="b-name">Old Cockern</span><span class="b-region">Dartmoor, Devon</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/oran-of-iona"><span class="b-name">Oran of Iona</span><span class="b-region">Isle of Iona, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/petticoat-loose"><span class="b-name">Petticoat Loose</span><span class="b-region">Bay Lough, County Tipperary</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/phantom-battle-of-edgehill"><span class="b-name">Phantom Battle of Edgehill</span><span class="b-region">Edgehill, Warwickshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/phantom-hare-of-bolingbroke-castle"><span class="b-name">Phantom Hare of Bolingbroke Castle</span><span class="b-region">Old Bolingbroke, Lincolnshire, England</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/sarah-whitehead"><span class="b-name">Sarah Whitehead</span><span class="b-region">London</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/screaming-house-of-st-aubin"><span class="b-name">Screaming House of St Aubin</span><span class="b-region">St Aubin, Jersey, Channel Islands</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/screaming-skull-of-bettiscombe"><span class="b-name">Screaming Skull of Bettiscombe</span><span class="b-region">Bettiscombe, Dorset, England</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/screaming-skull-of-calgarth"><span class="b-name">Screaming Skull of Calgarth</span><span class="b-region">Windermere, Cumbria, England</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/sluagh"><span class="b-name">Sluagh</span><span class="b-region">Western Isles, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/spectre-of-newby-church"><span class="b-name">Spectre of Newby Church</span><span class="b-region">Yorkshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/spring-heeled-jack"><span class="b-name">Spring-Heeled Jack</span><span class="b-region">London</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/the-babes-in-the-wood"><span class="b-name">The Babes in the Wood</span><span class="b-region">Wayland Wood, Norfolk</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/the-black-dog-of-newgate"><span class="b-name">The Black Dog of Newgate</span><span class="b-region">London</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/the-black-nun-of-bonamargy"><span class="b-name">The Black Nun of Bonamargy</span><span class="b-region">Bonamargy Friary, Ballycastle, County Antrim, Northern Ireland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/the-cauld-lad-of-hylton"><span class="b-name">The Cauld Lad of Hylton</span><span class="b-region">Sunderland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/the-cooneen-ghost"><span class="b-name">The Cooneen Ghost</span><span class="b-region">Cooneen (Cornarooslan townland), County Fermanagh, Northern Ireland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/the-drummer-of-tedworth"><span class="b-name">The Drummer of Tedworth</span><span class="b-region">Tidworth, Wiltshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/the-dullahan"><span class="b-name">The Dullahan</span><span class="b-region">Northern Ireland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/the-ghost-of-hellens-manor"><span class="b-name">The Ghost of Hellens Manor</span><span class="b-region">Much Marcle, Herefordshire, England</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/the-ghosts-of-doddington-hall"><span class="b-name">The Ghosts of Doddington Hall</span><span class="b-region">Doddington, Lincolnshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/the-hairy-hands"><span class="b-name">The Hairy Hands</span><span class="b-region">Dartmoor, Devon</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/the-killing-of-charles-walton"><span class="b-name">The Killing of Charles Walton</span><span class="b-region">Meon Hill, Lower Quinton, Warwickshire, England</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/the-mistletoe-bough"><span class="b-name">The Mistletoe Bough</span><span class="b-region">Minster Lovell, Oxfordshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/the-pump-hill-smuggler"><span class="b-name">The Pump Hill Smuggler</span><span class="b-region">Happisburgh, Norfolk, England</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/the-ratman-of-southend"><span class="b-name">The Ratman of Southend</span><span class="b-region">Essex</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/the-wild-hunt"><span class="b-name">The Wild Hunt</span><span class="b-region">North Yorkshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/thornton-road-poltergeist-claim"><span class="b-name">Thornton Road poltergeist claim</span><span class="b-region">Ward End, Birmingham</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/tyrell-s-hound"><span class="b-name">Tyrell&#x27;s Hound</span><span class="b-region">New Forest, Hampshire, England</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/vanishing-keepers-of-the-flannan-isles"><span class="b-name">Vanishing Keepers of the Flannan Isles</span><span class="b-region">Flannan Isles, Outer Hebrides, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/warrior-of-the-gog-magog-hills"><span class="b-name">Warrior of the Gog Magog Hills</span><span class="b-region">Cambridgeshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/white-lady-of-tattershall-castle"><span class="b-name">White Lady of Tattershall Castle</span><span class="b-region">Tattershall, Lincolnshire, England</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/wights"><span class="b-name">Wights</span><span class="b-region">Northern England</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/windhouse"><span class="b-name">Windhouse</span><span class="b-region">Yell, Shetland, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/wraith"><span class="b-name">Wraith</span><span class="b-region">Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/y-ladi-wen"><span class="b-name">Y Ladi Wen</span><span class="b-region">Ogmore Castle, Vale of Glamorgan, Wales</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/abhartach"><span class="b-name">Abhartach</span><span class="b-region">Slaghtaverty, County Londonderry</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/anantis-castle-revenant"><span class="b-name">Anantis Castle Revenant</span><span class="b-region">Alnwick, Northumberland, England</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/angelystor"><span class="b-name">Angelystor</span><span class="b-region">Llangernyw, Conwy, Wales</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/banshee"><span class="b-name">Banshee</span><span class="b-region">Ireland</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/bean-nighe"><span class="b-name">Bean Nighe</span><span class="b-region">Highland, Scotland</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/berwick-revenant"><span class="b-name">Berwick Revenant</span><span class="b-region">Berwick-upon-Tweed, Northumberland, England</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/black-eric-of-shetland"><span class="b-name">Black Eric of Shetland</span><span class="b-region">Fitful Head, Shetland, Scotland</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/black-lady-of-bradley-woods"><span class="b-name">Black Lady of Bradley Woods</span><span class="b-region">Lincolnshire</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/black-vaughan-of-hergest-court"><span class="b-name">Black Vaughan of Hergest Court</span><span class="b-region">Kington, Herefordshire, England</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/bodach"><span class="b-name">Bodach</span><span class="b-region">Highland, Scotland</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/brollachan"><span class="b-name">Brollachan</span><span class="b-region">Highland, Scotland</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/brown-lady-of-raynham-hall"><span class="b-name">Brown Lady of Raynham Hall</span><span class="b-region">Norfolk</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/buckinghamshire-revenant"><span class="b-name">Buckinghamshire Revenant</span><span class="b-region">Buckinghamshire, England</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/burial-place-of-the-big-women"><span class="b-name">Burial Place of the Big Women</span><span class="b-region">Hynish, Isle of Tiree, Inner Hebrides, Scotland</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/church-grim"><span class="b-name">Church Grim</span><span class="b-region">England &amp; Scandinavia</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/cock-lane-ghost"><span class="b-name">Cock Lane ghost</span><span class="b-region">Norfolk</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/cyhyraeth"><span class="b-name">Cyhyraeth</span><span class="b-region">River Tywi Valley and Glamorganshire coast, Wales</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/dando-s-dogs"><span class="b-name">Dando&#x27;s Dogs</span><span class="b-region">Cornwall</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/dead-men-of-burton-on-trent"><span class="b-name">Dead Men of Burton-on-Trent</span><span class="b-region">Staffordshire</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/dearg-due"><span class="b-name">Dearg Due</span><span class="b-region">Strongbow&#x27;s Tree, Waterford, Ireland</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/enfield-poltergeist"><span class="b-name">Enfield Poltergeist</span><span class="b-region">London</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/epworth-poltergeist"><span class="b-name">Epworth Poltergeist</span><span class="b-region">Epworth, Lincolnshire, England</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/gunby-hall-ghost-walk"><span class="b-name">Gunby Hall Ghost Walk</span><span class="b-region">Gunby, Lincolnshire, England</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/gwrach-y-rhibyn"><span class="b-name">Gwrach-y-Rhibyn</span><span class="b-region">Ceredigion, Wales</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/headless-horseman-of-the-staffordshire-moors"><span class="b-name">Headless Horseman of the Staffordshire Moors</span><span class="b-region">Staffordshire</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/hellfire-club-montpelier-hill"><span class="b-name">Hellfire Club, Montpelier Hill</span><span class="b-region">Montpelier Hill, County Dublin, Ireland</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/hereford-revenant"><span class="b-name">Hereford Revenant</span><span class="b-region">Hereford, Herefordshire, England</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/herne-the-hunter"><span class="b-name">Herne the Hunter</span><span class="b-region">Berkshire</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/hexham-heads"><span class="b-name">Hexham Heads</span><span class="b-region">Northumberland</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/hundeprest-of-melrose"><span class="b-name">Hundeprest of Melrose</span><span class="b-region">Melrose, Scottish Borders, Scotland</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/jan-tregeagle"><span class="b-name">Jan Tregeagle</span><span class="b-region">Cornwall</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/lady-howard-of-okehampton"><span class="b-name">Lady Howard of Okehampton</span><span class="b-region">Okehampton, Devon, England</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/lantern-man"><span class="b-name">Lantern Man</span><span class="b-region">Norfolk</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/loftus-hall"><span class="b-name">Loftus Hall</span><span class="b-region">Hook Peninsula, County Wexford</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/loughareema-the-vanishing-lake"><span class="b-name">Loughareema, the Vanishing Lake</span><span class="b-region">County Antrim, Northern Ireland</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/maeve-roe-the-banshee-of-dunluce-castle"><span class="b-name">Maeve Roe, the Banshee of Dunluce Castle</span><span class="b-region">Dunluce Castle, County Antrim, Northern Ireland</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/marshal-brain-of-clongowes-wood"><span class="b-name">Marshal Brain of Clongowes Wood</span><span class="b-region">Clane, County Kildare, Ireland</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/metheringham-lass"><span class="b-name">Metheringham Lass</span><span class="b-region">RAF Metheringham</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/old-cockern"><span class="b-name">Old Cockern</span><span class="b-region">Dartmoor, Devon</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/oran-of-iona"><span class="b-name">Oran of Iona</span><span class="b-region">Isle of Iona, Scotland</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/petticoat-loose"><span class="b-name">Petticoat Loose</span><span class="b-region">Bay Lough, County Tipperary</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/phantom-battle-of-edgehill"><span class="b-name">Phantom Battle of Edgehill</span><span class="b-region">Edgehill, Warwickshire</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/phantom-hare-of-bolingbroke-castle"><span class="b-name">Phantom Hare of Bolingbroke Castle</span><span class="b-region">Old Bolingbroke, Lincolnshire, England</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/sarah-whitehead"><span class="b-name">Sarah Whitehead</span><span class="b-region">London</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/screaming-house-of-st-aubin"><span class="b-name">Screaming House of St Aubin</span><span class="b-region">St Aubin, Jersey, Channel Islands</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/screaming-skull-of-bettiscombe"><span class="b-name">Screaming Skull of Bettiscombe</span><span class="b-region">Bettiscombe, Dorset, England</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/screaming-skull-of-calgarth"><span class="b-name">Screaming Skull of Calgarth</span><span class="b-region">Windermere, Cumbria, England</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/sluagh"><span class="b-name">Sluagh</span><span class="b-region">Western Isles, Scotland</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/spectre-of-newby-church"><span class="b-name">Spectre of Newby Church</span><span class="b-region">Yorkshire</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/spring-heeled-jack"><span class="b-name">Spring-Heeled Jack</span><span class="b-region">London</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/the-babes-in-the-wood"><span class="b-name">The Babes in the Wood</span><span class="b-region">Wayland Wood, Norfolk</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/the-black-dog-of-newgate"><span class="b-name">The Black Dog of Newgate</span><span class="b-region">London</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/the-black-nun-of-bonamargy"><span class="b-name">The Black Nun of Bonamargy</span><span class="b-region">Bonamargy Friary, Ballycastle, County Antrim, Northern Ireland</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/the-cauld-lad-of-hylton"><span class="b-name">The Cauld Lad of Hylton</span><span class="b-region">Sunderland</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/the-cooneen-ghost"><span class="b-name">The Cooneen Ghost</span><span class="b-region">Cooneen (Cornarooslan townland), County Fermanagh, Northern Ireland</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/the-drummer-of-tedworth"><span class="b-name">The Drummer of Tedworth</span><span class="b-region">Tidworth, Wiltshire</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/the-dullahan"><span class="b-name">The Dullahan</span><span class="b-region">Northern Ireland</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/the-ghost-of-hellens-manor"><span class="b-name">The Ghost of Hellens Manor</span><span class="b-region">Much Marcle, Herefordshire, England</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/the-ghosts-of-doddington-hall"><span class="b-name">The Ghosts of Doddington Hall</span><span class="b-region">Doddington, Lincolnshire</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/the-hairy-hands"><span class="b-name">The Hairy Hands</span><span class="b-region">Dartmoor, Devon</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/the-killing-of-charles-walton"><span class="b-name">The Killing of Charles Walton</span><span class="b-region">Meon Hill, Lower Quinton, Warwickshire, England</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/the-mistletoe-bough"><span class="b-name">The Mistletoe Bough</span><span class="b-region">Minster Lovell, Oxfordshire</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/the-pump-hill-smuggler"><span class="b-name">The Pump Hill Smuggler</span><span class="b-region">Happisburgh, Norfolk, England</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/the-ratman-of-southend"><span class="b-name">The Ratman of Southend</span><span class="b-region">Essex</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/the-wild-hunt"><span class="b-name">The Wild Hunt</span><span class="b-region">North Yorkshire</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/thornton-road-poltergeist-claim"><span class="b-name">Thornton Road poltergeist claim</span><span class="b-region">Ward End, Birmingham</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/tyrell-s-hound"><span class="b-name">Tyrell&#x27;s Hound</span><span class="b-region">New Forest, Hampshire, England</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/vanishing-keepers-of-the-flannan-isles"><span class="b-name">Vanishing Keepers of the Flannan Isles</span><span class="b-region">Flannan Isles, Outer Hebrides, Scotland</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/warrior-of-the-gog-magog-hills"><span class="b-name">Warrior of the Gog Magog Hills</span><span class="b-region">Cambridgeshire</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/white-lady-of-tattershall-castle"><span class="b-name">White Lady of Tattershall Castle</span><span class="b-region">Tattershall, Lincolnshire, England</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/wights"><span class="b-name">Wights</span><span class="b-region">Northern England</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/windhouse"><span class="b-name">Windhouse</span><span class="b-region">Yell, Shetland, Scotland</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/wraith"><span class="b-name">Wraith</span><span class="b-region">Scotland</span></a>
+<a class="b-card" style="--cat:#4a3d6e" href="https://folklorefinder.uk/legends/y-ladi-wen"><span class="b-name">Y Ladi Wen</span><span class="b-region">Ogmore Castle, Vale of Glamorgan, Wales</span></a>
 </div>
 <a class="back" href="https://folklorefinder.uk/legends/">&#8592; Browse All Legends</a>
 </div>

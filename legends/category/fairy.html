@@ -49,10 +49,10 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 .browse-nav a{font-family:'Marcellus',serif;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#9d461f;border:1px solid rgba(90,70,50,.35);border-radius:0;padding:5px 11px;text-decoration:none}
 .browse-nav a:hover,.browse-nav a.active{background:#5a4632;color:#f6f1e6;border-color:#5a4632}
 .browse-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:15px}
-.b-card{position:relative;background:rgba(246,241,230,.74);border:1px solid rgba(90,70,50,.3);border-radius:0;padding:16px 17px;text-decoration:none;color:#3f3023;box-shadow:inset 0 0 0 5px rgba(255,255,255,.15);transition:border-color .15s,transform .1s,background .15s}
+.b-card{position:relative;overflow:hidden;background:linear-gradient(177deg,#fbf5e9 0%,#f5ecdb 60%,#efe3cd 100%);border:1px solid rgba(90,70,50,.26);border-radius:7px;padding:16px 17px 16px 20px;text-decoration:none;color:#3f3023;box-shadow:inset 3px 0 0 var(--cat,#8b3a1a),inset 0 1px 0 rgba(255,255,255,.6),0 1px 2px rgba(26,14,6,.07),0 8px 16px -8px rgba(26,14,6,.16);transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}.b-card::after{content:'';position:absolute;top:-10px;right:-10px;width:76px;height:76px;opacity:0;pointer-events:none;background:url('/assets/ornaments/generated-variants/oak-corner-upper-right.webp') right top/contain no-repeat;transition:opacity .22s ease}.b-card:hover::after,.b-card:focus-visible::after{opacity:.16}.b-card:hover,.b-card:focus-visible{transform:translateY(-3px);border-color:rgba(90,70,50,.4);box-shadow:inset 4px 0 0 var(--cat,#8b3a1a),inset 0 1px 0 rgba(255,255,255,.72),0 2px 4px rgba(26,14,6,.1),0 16px 30px -10px rgba(26,14,6,.26)}@media(prefers-reduced-motion:reduce){.b-card{transition:box-shadow .16s ease}.b-card:hover,.b-card:focus-visible{transform:none}}
 .b-card:hover{border-color:#c4622a;transform:translateY(-2px)}
 .b-card span{display:block}
-.b-cat{font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:#9d461f;padding:2px 8px;border-radius:0;margin-bottom:8px;width:max-content;max-width:100%}
+.b-cat{font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:#9d461f;padding:2px 9px 3px;border-radius:3px;margin-bottom:9px;width:max-content;max-width:100%;box-shadow:0 1px 2px rgba(26,14,6,.22)}
 .b-name{font-family:'Marcellus',serif;font-size:15px;line-height:1.25;margin-bottom:4px}
 .b-region{font-style:italic;font-size:12px;color:#5c4a2a}
 .b-summary{font-size:13.5px;color:#3a2c14;margin-top:8px;line-height:1.5}
@@ -84,14 +84,14 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 @media(max-width:680px){.col-hero-split{flex-direction:column;gap:16px}.col-hero-media{flex-basis:auto;height:220px;min-height:0}.col-hero-media::after{inset:-12px;border-width:24px;border-image-width:24px}}
 /* Article layout: alternating image/summary rows for collection members */
 .col-articles{display:flex;flex-direction:column;gap:20px}
-.col-article{display:flex;align-items:stretch;background:rgba(246,241,230,.72);border:1px solid rgba(90,70,50,.28);text-decoration:none;color:#3f3023;overflow:hidden;box-shadow:inset 0 0 0 5px rgba(255,255,255,.14);transition:border-color .15s,transform .12s,box-shadow .15s}
-.col-article:hover{border-color:#c4622a;transform:translateY(-2px);box-shadow:0 10px 26px rgba(44,31,14,.14),inset 0 0 0 5px rgba(255,255,255,.14)}
+.col-article{display:flex;align-items:stretch;background:linear-gradient(177deg,#fbf5e9 0%,#f5ecdb 58%,#eee2ca 100%);border:1px solid rgba(90,70,50,.24);border-radius:8px;text-decoration:none;color:#3f3023;overflow:hidden;box-shadow:inset 0 1px 0 rgba(255,255,255,.6),0 1px 2px rgba(26,14,6,.07),0 10px 22px -10px rgba(26,14,6,.2);transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}
+.col-article:hover,.col-article:focus-visible{border-color:rgba(90,70,50,.38);transform:translateY(-3px);box-shadow:inset 0 1px 0 rgba(255,255,255,.72),0 2px 5px rgba(26,14,6,.1),0 20px 38px -12px rgba(26,14,6,.28)}.col-article:hover .col-article-media img{transform:scale(1.04)}@media(prefers-reduced-motion:reduce){.col-article{transition:box-shadow .16s ease}.col-article:hover,.col-article:focus-visible{transform:none}.col-article:hover .col-article-media img{transform:none}}
 .col-article:nth-child(even){flex-direction:row-reverse}
-.col-article-media{flex:0 0 42%;position:relative;aspect-ratio:16/9;background:#241a10}
+.col-article-media{flex:0 0 42%;position:relative;aspect-ratio:16/9;background:#241a10;overflow:hidden}.col-article-media img{transition:transform .3s ease}
 .col-article-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.col-article-body{flex:1 1 0;min-width:0;padding:16px 26px;display:flex;flex-direction:column;justify-content:center}
+.col-article-body{flex:1 1 0;min-width:0;padding:18px 26px 18px 28px;display:flex;flex-direction:column;justify-content:center;box-shadow:inset 3px 0 0 var(--cat,#8b3a1a)}
 .col-article-cat{align-self:flex-start;font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:#9d461f;padding:2px 9px;margin-bottom:9px}
-.col-article-name{font-family:'Marcellus',serif;font-weight:400;font-size:22px;line-height:1.15;color:#3f3023;margin-bottom:3px}
+.col-article-name{font-family:'Marcellus',serif;font-weight:400;font-size:22px;line-height:1.15;color:#3f3023;margin-bottom:3px}.col-article-region+.col-article-summary::before,.col-article-name+.col-article-summary::before{content:'';display:block;width:104px;height:26px;margin:2px 0 8px;opacity:.42;background:url('/assets/ornaments/generated-variants/oak-divider-horizontal.webp') left center/contain no-repeat}
 .col-article-region{font-style:italic;font-size:12.5px;color:#5c4a2a}
 .col-article-summary{font-size:14.5px;color:#3a2c14;line-height:1.6;margin:10px 0 12px}
 .col-article-more{font-family:'Marcellus',serif;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#9d461f}
@@ -163,77 +163,77 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 <p class="browse-intro">The fair folk of British and Irish tradition are neither tiny nor harmless: the Irish sídhe of the hollow hills, the Welsh Tylwyth Teg, the household brownies and boggarts, and the changelings left in a stolen child&#x27;s place. Encounters turn on courtesy, theft, and time that runs strangely beneath the hill.</p>
 <nav class="browse-nav"><a href="https://folklorefinder.uk/legends/category/location">Sacred Sites</a><a href="https://folklorefinder.uk/legends/category/witch">Witches</a><a href="https://folklorefinder.uk/legends/category/hero">Legendary Figures</a><a href="https://folklorefinder.uk/legends/category/ghost">Ghosts</a><a href="https://folklorefinder.uk/legends/category/fairy" class="active">Fae &amp; Spirits</a><a href="https://folklorefinder.uk/legends/category/water">Aquatic Legends</a><a href="https://folklorefinder.uk/legends/category/beast">Beasts</a><a href="https://folklorefinder.uk/legends/category/deity">Deities</a><a href="https://folklorefinder.uk/legends/category/dragon">Dragons</a><a href="https://folklorefinder.uk/legends/category/pirate">Pirates</a><a href="https://folklorefinder.uk/legends/category/giant">Giants</a></nav>
 <div class="browse-grid">
-<a class="b-card" href="https://folklorefinder.uk/legends/aillen-mac-midgna"><span class="b-name">Aillen mac Midgna</span><span class="b-region">Hill of Tara, County Meath, Ireland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/aos-si"><span class="b-name">Aos Sí</span><span class="b-region">Ireland &amp; Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/baobhan-sith"><span class="b-name">Baobhan Sith</span><span class="b-region">Scottish Highlands, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/bincombe-bumps"><span class="b-name">Bincombe Bumps</span><span class="b-region">Bincombe, Dorset</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/bluecap"><span class="b-name">Bluecap</span><span class="b-region">Northumberland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/boggart-of-boggart-hole-clough"><span class="b-name">Boggart of Boggart Hole Clough</span><span class="b-region">Manchester</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/boggarts"><span class="b-name">Boggarts</span><span class="b-region">Yorkshire &amp; Lancashire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/brown-man-of-the-muirs"><span class="b-name">Brown Man of the Muirs</span><span class="b-region">Northumberland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/brownie"><span class="b-name">Brownie</span><span class="b-region">Scotland &amp; Northern England</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/bucca"><span class="b-name">Bucca</span><span class="b-region">Cornwall</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/bwbach"><span class="b-name">Bwbach</span><span class="b-region">Wales</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/changeling"><span class="b-name">Changeling</span><span class="b-region">Wales</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/colt-pixies"><span class="b-name">Colt Pixies</span><span class="b-region">New Forest, Hampshire, England</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/donn-firinne"><span class="b-name">Donn Fírinne</span><span class="b-region">Knockfierna (Cnoc Fírinne), County Limerick, Ireland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/du-sith"><span class="b-name">Du Sith</span><span class="b-region">Isle of Islay, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/duergar"><span class="b-name">Duergar</span><span class="b-region">Northumberland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/dunnie"><span class="b-name">Dunnie</span><span class="b-region">Northumberland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/elfhame"><span class="b-name">Elfhame</span><span class="b-region">Lynn, Dalry, North Ayrshire, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/fairy-bridge"><span class="b-name">Fairy Bridge</span><span class="b-region">Isle of Man</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/fairy-flag-of-dunvegan"><span class="b-name">Fairy Flag of Dunvegan</span><span class="b-region">Dunvegan Castle, Isle of Skye</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/fairy-invasion-of-guernsey"><span class="b-name">Fairy Invasion of Guernsey</span><span class="b-region">Guernsey, Channel Islands</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/fat-lips"><span class="b-name">Fat Lips</span><span class="b-region">Jedburgh Castle Jail, Scottish Borders</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/fenodyree"><span class="b-name">Fenodyree</span><span class="b-region">Glen Rushen, Isle of Man</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/feolagan-of-kebock-head"><span class="b-name">Feolagan of Kebock Head</span><span class="b-region">Kebock Head, Isle of Lewis, Outer Hebrides, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/finvarra-at-knockma-hill"><span class="b-name">Finvarra at Knockma Hill</span><span class="b-region">County Galway, Ireland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/glaistig"><span class="b-name">Glaistig</span><span class="b-region">Highland, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/gooseberry-wife"><span class="b-name">Gooseberry Wife</span><span class="b-region">Isle of Wight</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/green-children-of-woolpit"><span class="b-name">Green Children of Woolpit</span><span class="b-region">Suffolk</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/gruagach"><span class="b-name">Gruagach</span><span class="b-region">Hebrides, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/gwragedd-annwn"><span class="b-name">Gwragedd Annwn</span><span class="b-region">Llyn Barfog, Gwynedd, Wales</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/habetrot"><span class="b-name">Habetrot</span><span class="b-region">Selkirkshire, Scottish Borders, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/haltadans-the-petrified-trows-of-fetlar"><span class="b-name">Haltadans, the Petrified Trows of Fetlar</span><span class="b-region">Fetlar, Shetland, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/hob-hole-runswick-bay"><span class="b-name">Hob Hole, Runswick Bay</span><span class="b-region">Runswick Bay, North Yorkshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/hyter-sprite"><span class="b-name">Hyter Sprite</span><span class="b-region">East Anglia</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/knocker"><span class="b-name">Knocker</span><span class="b-region">Cornwall</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/latoon-fairy-bush"><span class="b-name">Latoon Fairy Bush</span><span class="b-region">Ireland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/leprechaun"><span class="b-name">Leprechaun</span><span class="b-region">Ireland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/lincoln-imp"><span class="b-name">Lincoln Imp</span><span class="b-region">Lincolnshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/llyn-cwm-llwch"><span class="b-name">Llyn Cwm Llwch</span><span class="b-region">Bannau Brycheiniog, Powys</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/loireag-of-benbecula"><span class="b-name">Loireag of Benbecula</span><span class="b-region">Benbecula, Outer Hebrides, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/ly-erg"><span class="b-name">Ly Erg</span><span class="b-region">Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/malekin-of-dagworth"><span class="b-name">Malekin of Dagworth</span><span class="b-region">Dagworth, Suffolk, England</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/maoveen-the-banshee-of-shanes-castle"><span class="b-name">Maoveen, the Banshee of Shane’s Castle</span><span class="b-region">Randalstown, County Antrim, Northern Ireland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/morgan-le-fay"><span class="b-name">Morgan le Fay</span><span class="b-region">Tintagel, Cornwall</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/piskie"><span class="b-name">Piskie</span><span class="b-region">Cornwall &amp; Devon</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/pixie"><span class="b-name">Pixie</span><span class="b-region">Cornwall &amp; Devon</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/pooka"><span class="b-name">Pooka</span><span class="b-region">Ireland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/puck"><span class="b-name">Puck</span><span class="b-region">East Sussex</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/redcap"><span class="b-name">Redcap</span><span class="b-region">Scottish Borders</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/robert-kirk-of-doon-hill"><span class="b-name">Robert Kirk of Doon Hill</span><span class="b-region">Stirlingshire, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/robin-goodfellow"><span class="b-name">Robin Goodfellow</span><span class="b-region">England</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/seelie-court"><span class="b-name">Seelie Court</span><span class="b-region">Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/shellycoat"><span class="b-name">Shellycoat</span><span class="b-region">Lowland Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/simonside-dwarfs"><span class="b-name">Simonside Dwarfs</span><span class="b-region">Northumberland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/spriggan"><span class="b-name">Spriggan</span><span class="b-region">Cornwall</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/tam-lin"><span class="b-name">Tam Lin</span><span class="b-region">Carterhaugh, Selkirkshire, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/the-cottingley-fairies"><span class="b-name">The Cottingley Fairies</span><span class="b-region">Cottingley, West Yorkshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/the-green-man"><span class="b-name">The Green Man</span><span class="b-region">Gloucestershire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/the-hedley-kow"><span class="b-name">The Hedley Kow</span><span class="b-region">Hedley on the Hill, Northumberland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/the-hogboon-of-helliehow"><span class="b-name">The Hogboon of Helliehow</span><span class="b-region">Sanday, Orkney, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/the-hunt-of-slieve-gullion"><span class="b-name">The Hunt of Slieve Gullion</span><span class="b-region">Slieve Gullion, County Armagh, Northern Ireland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/the-lady-of-the-lake"><span class="b-name">The Lady of the Lake</span><span class="b-region">Llyn Llydaw, Snowdonia, Wales</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/the-piper-s-cave-of-arran"><span class="b-name">The Piper&#x27;s Cave of Arran</span><span class="b-region">Isle of Arran, Argyll, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/tiddy-mun"><span class="b-name">Tiddy Mun</span><span class="b-region">Lincolnshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/trow"><span class="b-name">Trow</span><span class="b-region">Shetland &amp; Orkney</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/tylwyth-teg"><span class="b-name">Tylwyth Teg</span><span class="b-region">Wales</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/unseelie-court"><span class="b-name">Unseelie Court</span><span class="b-region">Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/urisk"><span class="b-name">Urisk</span><span class="b-region">Scottish Highlands, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/will-o-the-wisp"><span class="b-name">Will-o&#x27;-the-Wisp</span><span class="b-region">The Fens, Cambridgeshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/yallery-brown"><span class="b-name">Yallery Brown</span><span class="b-region">Lincolnshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/etain"><span class="b-name">Étaín</span><span class="b-region">Brí Léith (Ardagh Hill), County Longford, Ireland</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/aillen-mac-midgna"><span class="b-name">Aillen mac Midgna</span><span class="b-region">Hill of Tara, County Meath, Ireland</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/aos-si"><span class="b-name">Aos Sí</span><span class="b-region">Ireland &amp; Scotland</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/baobhan-sith"><span class="b-name">Baobhan Sith</span><span class="b-region">Scottish Highlands, Scotland</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/bincombe-bumps"><span class="b-name">Bincombe Bumps</span><span class="b-region">Bincombe, Dorset</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/bluecap"><span class="b-name">Bluecap</span><span class="b-region">Northumberland</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/boggart-of-boggart-hole-clough"><span class="b-name">Boggart of Boggart Hole Clough</span><span class="b-region">Manchester</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/boggarts"><span class="b-name">Boggarts</span><span class="b-region">Yorkshire &amp; Lancashire</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/brown-man-of-the-muirs"><span class="b-name">Brown Man of the Muirs</span><span class="b-region">Northumberland</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/brownie"><span class="b-name">Brownie</span><span class="b-region">Scotland &amp; Northern England</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/bucca"><span class="b-name">Bucca</span><span class="b-region">Cornwall</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/bwbach"><span class="b-name">Bwbach</span><span class="b-region">Wales</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/changeling"><span class="b-name">Changeling</span><span class="b-region">Wales</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/colt-pixies"><span class="b-name">Colt Pixies</span><span class="b-region">New Forest, Hampshire, England</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/donn-firinne"><span class="b-name">Donn Fírinne</span><span class="b-region">Knockfierna (Cnoc Fírinne), County Limerick, Ireland</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/du-sith"><span class="b-name">Du Sith</span><span class="b-region">Isle of Islay, Scotland</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/duergar"><span class="b-name">Duergar</span><span class="b-region">Northumberland</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/dunnie"><span class="b-name">Dunnie</span><span class="b-region">Northumberland</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/elfhame"><span class="b-name">Elfhame</span><span class="b-region">Lynn, Dalry, North Ayrshire, Scotland</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/fairy-bridge"><span class="b-name">Fairy Bridge</span><span class="b-region">Isle of Man</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/fairy-flag-of-dunvegan"><span class="b-name">Fairy Flag of Dunvegan</span><span class="b-region">Dunvegan Castle, Isle of Skye</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/fairy-invasion-of-guernsey"><span class="b-name">Fairy Invasion of Guernsey</span><span class="b-region">Guernsey, Channel Islands</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/fat-lips"><span class="b-name">Fat Lips</span><span class="b-region">Jedburgh Castle Jail, Scottish Borders</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/fenodyree"><span class="b-name">Fenodyree</span><span class="b-region">Glen Rushen, Isle of Man</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/feolagan-of-kebock-head"><span class="b-name">Feolagan of Kebock Head</span><span class="b-region">Kebock Head, Isle of Lewis, Outer Hebrides, Scotland</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/finvarra-at-knockma-hill"><span class="b-name">Finvarra at Knockma Hill</span><span class="b-region">County Galway, Ireland</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/glaistig"><span class="b-name">Glaistig</span><span class="b-region">Highland, Scotland</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/gooseberry-wife"><span class="b-name">Gooseberry Wife</span><span class="b-region">Isle of Wight</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/green-children-of-woolpit"><span class="b-name">Green Children of Woolpit</span><span class="b-region">Suffolk</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/gruagach"><span class="b-name">Gruagach</span><span class="b-region">Hebrides, Scotland</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/gwragedd-annwn"><span class="b-name">Gwragedd Annwn</span><span class="b-region">Llyn Barfog, Gwynedd, Wales</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/habetrot"><span class="b-name">Habetrot</span><span class="b-region">Selkirkshire, Scottish Borders, Scotland</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/haltadans-the-petrified-trows-of-fetlar"><span class="b-name">Haltadans, the Petrified Trows of Fetlar</span><span class="b-region">Fetlar, Shetland, Scotland</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/hob-hole-runswick-bay"><span class="b-name">Hob Hole, Runswick Bay</span><span class="b-region">Runswick Bay, North Yorkshire</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/hyter-sprite"><span class="b-name">Hyter Sprite</span><span class="b-region">East Anglia</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/knocker"><span class="b-name">Knocker</span><span class="b-region">Cornwall</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/latoon-fairy-bush"><span class="b-name">Latoon Fairy Bush</span><span class="b-region">Ireland</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/leprechaun"><span class="b-name">Leprechaun</span><span class="b-region">Ireland</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/lincoln-imp"><span class="b-name">Lincoln Imp</span><span class="b-region">Lincolnshire</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/llyn-cwm-llwch"><span class="b-name">Llyn Cwm Llwch</span><span class="b-region">Bannau Brycheiniog, Powys</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/loireag-of-benbecula"><span class="b-name">Loireag of Benbecula</span><span class="b-region">Benbecula, Outer Hebrides, Scotland</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/ly-erg"><span class="b-name">Ly Erg</span><span class="b-region">Scotland</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/malekin-of-dagworth"><span class="b-name">Malekin of Dagworth</span><span class="b-region">Dagworth, Suffolk, England</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/maoveen-the-banshee-of-shanes-castle"><span class="b-name">Maoveen, the Banshee of Shane’s Castle</span><span class="b-region">Randalstown, County Antrim, Northern Ireland</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/morgan-le-fay"><span class="b-name">Morgan le Fay</span><span class="b-region">Tintagel, Cornwall</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/piskie"><span class="b-name">Piskie</span><span class="b-region">Cornwall &amp; Devon</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/pixie"><span class="b-name">Pixie</span><span class="b-region">Cornwall &amp; Devon</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/pooka"><span class="b-name">Pooka</span><span class="b-region">Ireland</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/puck"><span class="b-name">Puck</span><span class="b-region">East Sussex</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/redcap"><span class="b-name">Redcap</span><span class="b-region">Scottish Borders</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/robert-kirk-of-doon-hill"><span class="b-name">Robert Kirk of Doon Hill</span><span class="b-region">Stirlingshire, Scotland</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/robin-goodfellow"><span class="b-name">Robin Goodfellow</span><span class="b-region">England</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/seelie-court"><span class="b-name">Seelie Court</span><span class="b-region">Scotland</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/shellycoat"><span class="b-name">Shellycoat</span><span class="b-region">Lowland Scotland</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/simonside-dwarfs"><span class="b-name">Simonside Dwarfs</span><span class="b-region">Northumberland</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/spriggan"><span class="b-name">Spriggan</span><span class="b-region">Cornwall</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/tam-lin"><span class="b-name">Tam Lin</span><span class="b-region">Carterhaugh, Selkirkshire, Scotland</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/the-cottingley-fairies"><span class="b-name">The Cottingley Fairies</span><span class="b-region">Cottingley, West Yorkshire</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/the-green-man"><span class="b-name">The Green Man</span><span class="b-region">Gloucestershire</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/the-hedley-kow"><span class="b-name">The Hedley Kow</span><span class="b-region">Hedley on the Hill, Northumberland</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/the-hogboon-of-helliehow"><span class="b-name">The Hogboon of Helliehow</span><span class="b-region">Sanday, Orkney, Scotland</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/the-hunt-of-slieve-gullion"><span class="b-name">The Hunt of Slieve Gullion</span><span class="b-region">Slieve Gullion, County Armagh, Northern Ireland</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/the-lady-of-the-lake"><span class="b-name">The Lady of the Lake</span><span class="b-region">Llyn Llydaw, Snowdonia, Wales</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/the-piper-s-cave-of-arran"><span class="b-name">The Piper&#x27;s Cave of Arran</span><span class="b-region">Isle of Arran, Argyll, Scotland</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/tiddy-mun"><span class="b-name">Tiddy Mun</span><span class="b-region">Lincolnshire</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/trow"><span class="b-name">Trow</span><span class="b-region">Shetland &amp; Orkney</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/tylwyth-teg"><span class="b-name">Tylwyth Teg</span><span class="b-region">Wales</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/unseelie-court"><span class="b-name">Unseelie Court</span><span class="b-region">Scotland</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/urisk"><span class="b-name">Urisk</span><span class="b-region">Scottish Highlands, Scotland</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/will-o-the-wisp"><span class="b-name">Will-o&#x27;-the-Wisp</span><span class="b-region">The Fens, Cambridgeshire</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/yallery-brown"><span class="b-name">Yallery Brown</span><span class="b-region">Lincolnshire</span></a>
+<a class="b-card" style="--cat:#7e5577" href="https://folklorefinder.uk/legends/etain"><span class="b-name">Étaín</span><span class="b-region">Brí Léith (Ardagh Hill), County Longford, Ireland</span></a>
 </div>
 <a class="back" href="https://folklorefinder.uk/legends/">&#8592; Browse All Legends</a>
 </div>

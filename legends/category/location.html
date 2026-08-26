@@ -49,10 +49,10 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 .browse-nav a{font-family:'Marcellus',serif;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#9d461f;border:1px solid rgba(90,70,50,.35);border-radius:0;padding:5px 11px;text-decoration:none}
 .browse-nav a:hover,.browse-nav a.active{background:#5a4632;color:#f6f1e6;border-color:#5a4632}
 .browse-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:15px}
-.b-card{position:relative;background:rgba(246,241,230,.74);border:1px solid rgba(90,70,50,.3);border-radius:0;padding:16px 17px;text-decoration:none;color:#3f3023;box-shadow:inset 0 0 0 5px rgba(255,255,255,.15);transition:border-color .15s,transform .1s,background .15s}
+.b-card{position:relative;overflow:hidden;background:linear-gradient(177deg,#fbf5e9 0%,#f5ecdb 60%,#efe3cd 100%);border:1px solid rgba(90,70,50,.26);border-radius:7px;padding:16px 17px 16px 20px;text-decoration:none;color:#3f3023;box-shadow:inset 3px 0 0 var(--cat,#8b3a1a),inset 0 1px 0 rgba(255,255,255,.6),0 1px 2px rgba(26,14,6,.07),0 8px 16px -8px rgba(26,14,6,.16);transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}.b-card::after{content:'';position:absolute;top:-10px;right:-10px;width:76px;height:76px;opacity:0;pointer-events:none;background:url('/assets/ornaments/generated-variants/oak-corner-upper-right.webp') right top/contain no-repeat;transition:opacity .22s ease}.b-card:hover::after,.b-card:focus-visible::after{opacity:.16}.b-card:hover,.b-card:focus-visible{transform:translateY(-3px);border-color:rgba(90,70,50,.4);box-shadow:inset 4px 0 0 var(--cat,#8b3a1a),inset 0 1px 0 rgba(255,255,255,.72),0 2px 4px rgba(26,14,6,.1),0 16px 30px -10px rgba(26,14,6,.26)}@media(prefers-reduced-motion:reduce){.b-card{transition:box-shadow .16s ease}.b-card:hover,.b-card:focus-visible{transform:none}}
 .b-card:hover{border-color:#c4622a;transform:translateY(-2px)}
 .b-card span{display:block}
-.b-cat{font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:#9d461f;padding:2px 8px;border-radius:0;margin-bottom:8px;width:max-content;max-width:100%}
+.b-cat{font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:#9d461f;padding:2px 9px 3px;border-radius:3px;margin-bottom:9px;width:max-content;max-width:100%;box-shadow:0 1px 2px rgba(26,14,6,.22)}
 .b-name{font-family:'Marcellus',serif;font-size:15px;line-height:1.25;margin-bottom:4px}
 .b-region{font-style:italic;font-size:12px;color:#5c4a2a}
 .b-summary{font-size:13.5px;color:#3a2c14;margin-top:8px;line-height:1.5}
@@ -84,14 +84,14 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 @media(max-width:680px){.col-hero-split{flex-direction:column;gap:16px}.col-hero-media{flex-basis:auto;height:220px;min-height:0}.col-hero-media::after{inset:-12px;border-width:24px;border-image-width:24px}}
 /* Article layout: alternating image/summary rows for collection members */
 .col-articles{display:flex;flex-direction:column;gap:20px}
-.col-article{display:flex;align-items:stretch;background:rgba(246,241,230,.72);border:1px solid rgba(90,70,50,.28);text-decoration:none;color:#3f3023;overflow:hidden;box-shadow:inset 0 0 0 5px rgba(255,255,255,.14);transition:border-color .15s,transform .12s,box-shadow .15s}
-.col-article:hover{border-color:#c4622a;transform:translateY(-2px);box-shadow:0 10px 26px rgba(44,31,14,.14),inset 0 0 0 5px rgba(255,255,255,.14)}
+.col-article{display:flex;align-items:stretch;background:linear-gradient(177deg,#fbf5e9 0%,#f5ecdb 58%,#eee2ca 100%);border:1px solid rgba(90,70,50,.24);border-radius:8px;text-decoration:none;color:#3f3023;overflow:hidden;box-shadow:inset 0 1px 0 rgba(255,255,255,.6),0 1px 2px rgba(26,14,6,.07),0 10px 22px -10px rgba(26,14,6,.2);transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}
+.col-article:hover,.col-article:focus-visible{border-color:rgba(90,70,50,.38);transform:translateY(-3px);box-shadow:inset 0 1px 0 rgba(255,255,255,.72),0 2px 5px rgba(26,14,6,.1),0 20px 38px -12px rgba(26,14,6,.28)}.col-article:hover .col-article-media img{transform:scale(1.04)}@media(prefers-reduced-motion:reduce){.col-article{transition:box-shadow .16s ease}.col-article:hover,.col-article:focus-visible{transform:none}.col-article:hover .col-article-media img{transform:none}}
 .col-article:nth-child(even){flex-direction:row-reverse}
-.col-article-media{flex:0 0 42%;position:relative;aspect-ratio:16/9;background:#241a10}
+.col-article-media{flex:0 0 42%;position:relative;aspect-ratio:16/9;background:#241a10;overflow:hidden}.col-article-media img{transition:transform .3s ease}
 .col-article-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.col-article-body{flex:1 1 0;min-width:0;padding:16px 26px;display:flex;flex-direction:column;justify-content:center}
+.col-article-body{flex:1 1 0;min-width:0;padding:18px 26px 18px 28px;display:flex;flex-direction:column;justify-content:center;box-shadow:inset 3px 0 0 var(--cat,#8b3a1a)}
 .col-article-cat{align-self:flex-start;font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:#9d461f;padding:2px 9px;margin-bottom:9px}
-.col-article-name{font-family:'Marcellus',serif;font-weight:400;font-size:22px;line-height:1.15;color:#3f3023;margin-bottom:3px}
+.col-article-name{font-family:'Marcellus',serif;font-weight:400;font-size:22px;line-height:1.15;color:#3f3023;margin-bottom:3px}.col-article-region+.col-article-summary::before,.col-article-name+.col-article-summary::before{content:'';display:block;width:104px;height:26px;margin:2px 0 8px;opacity:.42;background:url('/assets/ornaments/generated-variants/oak-divider-horizontal.webp') left center/contain no-repeat}
 .col-article-region{font-style:italic;font-size:12.5px;color:#5c4a2a}
 .col-article-summary{font-size:14.5px;color:#3a2c14;line-height:1.6;margin:10px 0 12px}
 .col-article-more{font-family:'Marcellus',serif;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#9d461f}
@@ -163,168 +163,168 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 <p class="browse-intro">Some places gathered folklore for thousands of years, from stone circles said to be dancers turned to stone to holy wells sought for healing, barrows that must not be disturbed, and hills where a king and his knights are said to sleep. These are the sites where the supernatural was felt to press closest to the land.</p>
 <nav class="browse-nav"><a href="https://folklorefinder.uk/legends/category/location" class="active">Sacred Sites</a><a href="https://folklorefinder.uk/legends/category/witch">Witches</a><a href="https://folklorefinder.uk/legends/category/hero">Legendary Figures</a><a href="https://folklorefinder.uk/legends/category/ghost">Ghosts</a><a href="https://folklorefinder.uk/legends/category/fairy">Fae &amp; Spirits</a><a href="https://folklorefinder.uk/legends/category/water">Aquatic Legends</a><a href="https://folklorefinder.uk/legends/category/beast">Beasts</a><a href="https://folklorefinder.uk/legends/category/deity">Deities</a><a href="https://folklorefinder.uk/legends/category/dragon">Dragons</a><a href="https://folklorefinder.uk/legends/category/pirate">Pirates</a><a href="https://folklorefinder.uk/legends/category/giant">Giants</a></nav>
 <div class="browse-grid">
-<a class="b-card" href="https://folklorefinder.uk/legends/alderley-edge"><span class="b-name">Alderley Edge</span><span class="b-region">Cheshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/ashleypark-burial-mound"><span class="b-name">Ashleypark Burial Mound</span><span class="b-region">Ashleypark, County Tipperary</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/avalon"><span class="b-name">Avalon</span><span class="b-region">Somerset</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/avebury"><span class="b-name">Avebury</span><span class="b-region">Wiltshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/bardney-abbey-and-the-light-of-oswald"><span class="b-name">Bardney Abbey and the Light of Oswald</span><span class="b-region">Lincolnshire, England</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/barns-of-ayr"><span class="b-name">Barns of Ayr</span><span class="b-region">Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/battle-of-barry"><span class="b-name">Battle of Barry</span><span class="b-region">Barry, Angus, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/beenalaght"><span class="b-name">Beenalaght</span><span class="b-region">Coachford, County Cork</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/behy-court-tomb"><span class="b-name">Behy court tomb</span><span class="b-region">Belderrig, County Mayo</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/beinn-a-bheithir"><span class="b-name">Beinn a&#x27; Bheithir</span><span class="b-region">Highland, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/beltane-fire-festival"><span class="b-name">Beltane Fire Festival</span><span class="b-region">Edinburgh, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/black-rock-gorge"><span class="b-name">Black Rock Gorge</span><span class="b-region">Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/blarney-stone"><span class="b-name">Blarney Stone</span><span class="b-region">Blarney Castle, County Cork</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/bleeding-yew-of-nevern"><span class="b-name">Bleeding Yew of Nevern</span><span class="b-region">Pembrokeshire, Wales</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/bossiney-castle"><span class="b-name">Bossiney Castle</span><span class="b-region">Cornwall</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/breeny-more-stone-circle"><span class="b-name">Breeny More Stone Circle</span><span class="b-region">Breeny More, County Cork</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/brother-simon-of-swineshead"><span class="b-name">Brother Simon of Swineshead</span><span class="b-region">Swineshead, Lincolnshire, England</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/bryn-cader-faner"><span class="b-name">Bryn Cader Faner</span><span class="b-region">Ardudwy, Gwynedd, Wales</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/bryn-gwyn-stones"><span class="b-name">Bryn Gwyn stones</span><span class="b-region">Brynsiencyn, Anglesey, Wales</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/bru-na-boinne"><span class="b-name">Brú na Bóinne</span><span class="b-region">Boyne Valley, County Meath</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/cadair-idris"><span class="b-name">Cadair Idris</span><span class="b-region">Gwynedd, Wales</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/caer-bran"><span class="b-name">Caer Bran</span><span class="b-region">Cornwall</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/caerleon"><span class="b-name">Caerleon</span><span class="b-region">Caerleon, Newport, Wales</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/callanish-standing-stones"><span class="b-name">Callanish Standing Stones</span><span class="b-region">Isle of Lewis, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/camelot"><span class="b-name">Camelot</span><span class="b-region">Somerset</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/cantre-r-gwaelod"><span class="b-name">Cantre&#x27;r Gwaelod</span><span class="b-region">Cardigan Bay, Wales</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/carningli"><span class="b-name">Carningli</span><span class="b-region">Pembrokeshire, Wales</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/carricknagat-megalithic-tombs"><span class="b-name">Carricknagat Megalithic Tombs</span><span class="b-region">Carricknagat, County Sligo</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/carrigagulla"><span class="b-name">Carrigagulla</span><span class="b-region">Carrigagulla, County Cork</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/carrigaphooca-stone-circle"><span class="b-name">Carrigaphooca Stone Circle</span><span class="b-region">Carrigaphooca, County Cork</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/carrowmore"><span class="b-name">Carrowmore</span><span class="b-region">Carrowmore, County Sligo</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/carrownlisheen-wedge-tomb"><span class="b-name">Carrownlisheen Wedge Tomb</span><span class="b-region">Carrownlisheen, County Clare</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/castle-downs-cornwall"><span class="b-name">Castle Downs, Cornwall</span><span class="b-region">Cornwall</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/chalice-well"><span class="b-name">Chalice Well</span><span class="b-region">Somerset</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/chanctonbury-ring"><span class="b-name">Chanctonbury Ring</span><span class="b-region">West Sussex</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/cheesewring"><span class="b-name">Cheesewring</span><span class="b-region">Cornwall</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/cheetham-close"><span class="b-name">Cheetham Close</span><span class="b-region">Lancashire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/chun-quoit"><span class="b-name">Chûn Quoit</span><span class="b-region">Cornwall</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/clodagh-standing-stones"><span class="b-name">Clodagh Standing Stones</span><span class="b-region">Clodagh, County Cork</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/cloghanmore"><span class="b-name">Cloghanmore</span><span class="b-region">Glencolmcille, County Donegal</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/coolcoulaghta-standing-stones"><span class="b-name">Coolcoulaghta Standing Stones</span><span class="b-region">Coolcoulaghta, County Cork</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/craddock-moor-stone-circle"><span class="b-name">Craddock Moor stone circle</span><span class="b-region">Cornwall</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/craigs-dolmen"><span class="b-name">Craigs Dolmen</span><span class="b-region">Craigs, County Antrim</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/croagh-patrick"><span class="b-name">Croagh Patrick</span><span class="b-region">County Mayo, Ireland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/devil-s-arrows"><span class="b-name">Devil&#x27;s Arrows</span><span class="b-region">North Yorkshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/devil-s-bit-mountain"><span class="b-name">Devil&#x27;s Bit Mountain</span><span class="b-region">County Tipperary, Ireland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/devil-s-bridge"><span class="b-name">Devil&#x27;s Bridge</span><span class="b-region">Pontarfynach, Ceredigion, Wales</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/devil-s-dyke"><span class="b-name">Devil&#x27;s Dyke</span><span class="b-region">Sussex</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/dinas-emrys"><span class="b-name">Dinas Emrys</span><span class="b-region">Beddgelert, Gwynedd</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/ding-dong-mines"><span class="b-name">Ding Dong mines</span><span class="b-region">Cornwall</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/dolmen-of-the-four-maols"><span class="b-name">Dolmen of the Four Maols</span><span class="b-region">Ballina, County Mayo</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/dorset-ooser"><span class="b-name">Dorset Ooser</span><span class="b-region">Melbury Osmond, Dorset</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/dragon-hill-uffington"><span class="b-name">Dragon Hill, Uffington</span><span class="b-region">Oxfordshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/dunwich-the-drowned-city-bells"><span class="b-name">Dunwich: The Drowned City Bells</span><span class="b-region">Dunwich, Suffolk, England</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/dwarfie-stane"><span class="b-name">Dwarfie Stane</span><span class="b-region">Hoy, Orkney, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/eightercua"><span class="b-name">Eightercua</span><span class="b-region">Waterville, County Kerry</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/farranahineeny-stone-row"><span class="b-name">Farranahineeny Stone Row</span><span class="b-region">Farranahineeny, County Kerry</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/finn-mccools-fingers"><span class="b-name">Finn McCools Fingers</span><span class="b-region">Shantemon Mountain, County Cavan</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/fintan-s-grave"><span class="b-name">Fintan&#x27;s Grave</span><span class="b-region">Arra Mountains</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/folkestone-white-horse"><span class="b-name">Folkestone White Horse</span><span class="b-region">Kent</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/giant-s-causeway"><span class="b-name">Giant&#x27;s Causeway</span><span class="b-region">Bushmills, County Antrim</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/glantane-east"><span class="b-name">Glantane East</span><span class="b-region">Glantane, County Cork</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/glastonbury-holy-thorn"><span class="b-name">Glastonbury Holy Thorn</span><span class="b-region">Somerset</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/glastonbury-tor"><span class="b-name">Glastonbury Tor</span><span class="b-region">Somerset</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/granny-kempock-stone"><span class="b-name">Granny Kempock Stone</span><span class="b-region">Gourock, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/great-bell-of-burgh-le-marsh"><span class="b-name">Great Bell of Burgh le Marsh</span><span class="b-region">Lincolnshire, England</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/grubstones"><span class="b-name">Grubstones</span><span class="b-region">Yorkshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/gulf-of-corryvreckan"><span class="b-name">Gulf of Corryvreckan</span><span class="b-region">Between Jura and Scarba, Argyll</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/haxey-hood"><span class="b-name">Haxey Hood</span><span class="b-region">Haxey, North Lincolnshire, England</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/heapstown-cairn"><span class="b-name">Heapstown Cairn</span><span class="b-region">Heapstown, County Sligo</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/henderson-stone"><span class="b-name">Henderson Stone</span><span class="b-region">Ardgour, Lochaber</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/hill-of-allen"><span class="b-name">Hill of Allen</span><span class="b-region">County Kildare, Ireland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/hill-of-tara"><span class="b-name">Hill of Tara</span><span class="b-region">County Meath, Ireland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/hobby-horse-of-padstow"><span class="b-name">Hobby Horse of Padstow</span><span class="b-region">Cornwall</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/hy-brasil"><span class="b-name">Hy-Brasil</span><span class="b-region">North Atlantic, off the west coast of Ireland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/inishbofin-white-cow"><span class="b-name">Inishbofin White Cow</span><span class="b-region">County Galway, Ireland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/jingling-geordie-s-hole"><span class="b-name">Jingling Geordie&#x27;s Hole</span><span class="b-region">Tynemouth</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/julian-s-bower"><span class="b-name">Julian&#x27;s Bower</span><span class="b-region">Lincolnshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/kirk-yetholm-seat-of-the-gypsy-kings"><span class="b-name">Kirk Yetholm, Seat of the Gypsy Kings</span><span class="b-region">Kirk Yetholm, Scottish Borders, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/knocknakilla"><span class="b-name">Knocknakilla</span><span class="b-region">Knocknakilla, County Cork</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/knocknarea"><span class="b-name">Knocknarea</span><span class="b-region">County Sligo, Ireland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/labbacallee-wedge-tomb"><span class="b-name">Labbacallee wedge tomb</span><span class="b-region">Glanworth, County Cork</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/lia-fail"><span class="b-name">Lia Fáil</span><span class="b-region">Ireland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/listoghil"><span class="b-name">Listoghil</span><span class="b-region">Carrowmore, County Sligo</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/llangorse-lake"><span class="b-name">Llangorse Lake</span><span class="b-region">Bannau Brycheiniog, Powys, Wales</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/llyn-barfog"><span class="b-name">Llyn Barfog</span><span class="b-region">Aberdyfi, Gwynedd, Wales</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/llyn-morwynion"><span class="b-name">Llyn Morwynion</span><span class="b-region">Ffestiniog, Gwynedd, Wales</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/lochmaben-stone"><span class="b-name">Lochmaben Stone</span><span class="b-region">Gretna, Dumfries and Galloway</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/long-meg-and-her-daughters"><span class="b-name">Long Meg and Her Daughters</span><span class="b-region">Cumbria</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/lough-derg-st-patrick-s-purgatory"><span class="b-name">Lough Derg (St Patrick&#x27;s Purgatory)</span><span class="b-region">County Donegal, Ireland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/lough-na-suil"><span class="b-name">Lough na Súil</span><span class="b-region">Geevagh, County Sligo, Ireland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/lyonesse"><span class="b-name">Lyonesse</span><span class="b-region">Scilly Isles</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/maeshowe-runes"><span class="b-name">Maeshowe Runes</span><span class="b-region">Orkney</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/mag-lena"><span class="b-name">Mag Lena</span><span class="b-region">County Offaly</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/mari-lwyd"><span class="b-name">Mari Lwyd</span><span class="b-region">Wales</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/martin-mere"><span class="b-name">Martin Mere</span><span class="b-region">Lancashire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/meehambee-dolmen"><span class="b-name">Meehambee Dolmen</span><span class="b-region">Meehambee, County Roscommon</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/merlin-s-cave"><span class="b-name">Merlin&#x27;s Cave</span><span class="b-region">Cornwall</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/merlin-s-oak"><span class="b-name">Merlin&#x27;s Oak</span><span class="b-region">Carmarthen, Wales</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/miosgan-meadhbha"><span class="b-name">Miosgán Meadhbha</span><span class="b-region">Knocknarea, County Sligo</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/moel-ty-uchaf"><span class="b-name">Moel Tŷ Uchaf</span><span class="b-region">Llandrillo, Denbighshire, Wales</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/mount-venus"><span class="b-name">Mount Venus</span><span class="b-region">Rathfarnham, County Dublin</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/mousehold-heath-heviskey-tan"><span class="b-name">Mousehold Heath (Heviskey Tan)</span><span class="b-region">Norwich, Norfolk</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/mullyash-kerbed-cairn"><span class="b-name">Mullyash Kerbed Cairn</span><span class="b-region">Mullyash, County Armagh</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/museum-of-witchcraft-and-magic"><span class="b-name">Museum of Witchcraft and Magic</span><span class="b-region">Cornwall</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/men-scryfa"><span class="b-name">Mên Scryfa</span><span class="b-region">Cornwall</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/men-an-tol"><span class="b-name">Mên-an-Tol</span><span class="b-region">Cornwall</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/nanteos-cup"><span class="b-name">Nanteos Cup</span><span class="b-region">Ceredigion, Wales</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/navan-fort"><span class="b-name">Navan Fort</span><span class="b-region">Emain Macha, County Armagh</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/newgrange"><span class="b-name">Newgrange</span><span class="b-region">County Meath, Ireland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/newgrange-cursus"><span class="b-name">Newgrange cursus</span><span class="b-region">Newgrange, County Meath</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/nine-maidens-stone-row"><span class="b-name">Nine Maidens Stone Row</span><span class="b-region">Cornwall</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/osmington-white-horse"><span class="b-name">Osmington White Horse</span><span class="b-region">Dorset</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/our-lady-of-walsingham"><span class="b-name">Our Lady of Walsingham</span><span class="b-region">Norfolk</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/overtoun-bridge"><span class="b-name">Overtoun Bridge</span><span class="b-region">Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/oweynagat"><span class="b-name">Oweynagat</span><span class="b-region">Rathcroghan, County Roscommon, Ireland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/penhale-sands"><span class="b-name">Penhale Sands</span><span class="b-region">Cornwall</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/porlock-stone-circle"><span class="b-name">Porlock Stone Circle</span><span class="b-region">Somerset</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/rathcoran"><span class="b-name">Rathcoran</span><span class="b-region">Baltinglass, County Wicklow</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/rathcroghan"><span class="b-name">Rathcroghan</span><span class="b-region">Rathcroghan, County Roscommon</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/red-horse-of-tysoe"><span class="b-name">Red Horse of Tysoe</span><span class="b-region">South Warwickshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/rollright-stones-curse"><span class="b-name">Rollright Stones curse</span><span class="b-region">Oxfordshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/rudston-monolith"><span class="b-name">Rudston Monolith</span><span class="b-region">East Yorkshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/st-catherine-s-hill-mizmaze"><span class="b-name">St Catherine&#x27;s Hill Mizmaze</span><span class="b-region">Hampshire, England</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/st-davids-cathedral"><span class="b-name">St Davids Cathedral</span><span class="b-region">Wales</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/st-govan-s-chapel"><span class="b-name">St Govan&#x27;s Chapel</span><span class="b-region">Pembrokeshire, Wales</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/st-non-s-well"><span class="b-name">St Non&#x27;s Well</span><span class="b-region">Pembrokeshire, Wales</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/st-trinian-s-church"><span class="b-name">St Trinian&#x27;s Church</span><span class="b-region">Isle of Man</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/stanton-drew-stone-circles"><span class="b-name">Stanton Drew Stone Circles</span><span class="b-region">Somerset</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/stone-of-scone"><span class="b-name">Stone of Scone</span><span class="b-region">Perthshire, Scotland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/stonehenge"><span class="b-name">Stonehenge</span><span class="b-region">Wiltshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/stow-minster-and-the-staff-of-etheldreda"><span class="b-name">Stow Minster and the Staff of Etheldreda</span><span class="b-region">Lincolnshire, England</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/sutton-hoo"><span class="b-name">Sutton Hoo</span><span class="b-region">Suffolk</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/the-merry-maidens"><span class="b-name">The Merry Maidens</span><span class="b-region">Cornwall</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/the-pipers"><span class="b-name">The Pipers</span><span class="b-region">Cornwall</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/the-towans"><span class="b-name">The Towans</span><span class="b-region">Cornwall</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/threekingham-three-kings"><span class="b-name">Threekingham Three Kings</span><span class="b-region">Lincolnshire, England</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/timoney-stones"><span class="b-name">Timoney Stones</span><span class="b-region">Timoney, County Tipperary</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/tintagel"><span class="b-name">Tintagel</span><span class="b-region">Cornwall</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/towednack"><span class="b-name">Towednack</span><span class="b-region">Cornwall</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/townleyhall-passage-grave"><span class="b-name">Townleyhall passage grave</span><span class="b-region">Townleyhall, County Louth</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/turoe-stone"><span class="b-name">Turoe Stone</span><span class="b-region">Bullaun, County Galway</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/twelve-apostles-west-yorkshire"><span class="b-name">Twelve Apostles, West Yorkshire</span><span class="b-region">Yorkshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/tyno-helig"><span class="b-name">Tyno Helig</span><span class="b-region">Conwy Bay, Wales</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/tir-na-nog"><span class="b-name">Tír na nÓg</span><span class="b-region">Lough Leane, County Kerry, Ireland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/uffington-white-horse"><span class="b-name">Uffington White Horse</span><span class="b-region">Oxfordshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/up-helly-aa"><span class="b-name">Up Helly Aa</span><span class="b-region">Shetland</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/watlington-white-mark"><span class="b-name">Watlington White Mark</span><span class="b-region">Oxfordshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/waun-mawn"><span class="b-name">Waun Mawn</span><span class="b-region">Preseli Hills, Pembrokeshire, Wales</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/wayland-s-smithy"><span class="b-name">Wayland&#x27;s Smithy</span><span class="b-region">Oxfordshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/westbury-white-horse"><span class="b-name">Westbury White Horse</span><span class="b-region">Wiltshire, England</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/whetstones"><span class="b-name">Whetstones</span><span class="b-region">Welshpool, Powys, Wales</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/whiteleaf-cross"><span class="b-name">Whiteleaf Cross</span><span class="b-region">Buckinghamshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/wiltshire-moonrakers"><span class="b-name">Wiltshire Moonrakers</span><span class="b-region">Wiltshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/winchester-round-table"><span class="b-name">Winchester Round Table</span><span class="b-region">Winchester Great Hall, Hampshire</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/witches-well"><span class="b-name">Witches&#x27; Well</span><span class="b-region">Edinburgh</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/witchknowe-park"><span class="b-name">Witchknowe Park</span><span class="b-region">Fife</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/withypool-stone-circle"><span class="b-name">Withypool Stone Circle</span><span class="b-region">Somerset</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/wroth-silver-at-knightlow-hill"><span class="b-name">Wroth Silver at Knightlow Hill</span><span class="b-region">Warwickshire, England</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/yester-castle"><span class="b-name">Yester Castle</span><span class="b-region">Gifford, East Lothian</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/ynys-enlli"><span class="b-name">Ynys Enlli</span><span class="b-region">Llŷn Peninsula, Gwynedd, Wales</span></a>
-<a class="b-card" href="https://folklorefinder.uk/legends/zennor"><span class="b-name">Zennor</span><span class="b-region">Cornwall</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/alderley-edge"><span class="b-name">Alderley Edge</span><span class="b-region">Cheshire</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/ashleypark-burial-mound"><span class="b-name">Ashleypark Burial Mound</span><span class="b-region">Ashleypark, County Tipperary</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/avalon"><span class="b-name">Avalon</span><span class="b-region">Somerset</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/avebury"><span class="b-name">Avebury</span><span class="b-region">Wiltshire</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/bardney-abbey-and-the-light-of-oswald"><span class="b-name">Bardney Abbey and the Light of Oswald</span><span class="b-region">Lincolnshire, England</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/barns-of-ayr"><span class="b-name">Barns of Ayr</span><span class="b-region">Scotland</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/battle-of-barry"><span class="b-name">Battle of Barry</span><span class="b-region">Barry, Angus, Scotland</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/beenalaght"><span class="b-name">Beenalaght</span><span class="b-region">Coachford, County Cork</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/behy-court-tomb"><span class="b-name">Behy court tomb</span><span class="b-region">Belderrig, County Mayo</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/beinn-a-bheithir"><span class="b-name">Beinn a&#x27; Bheithir</span><span class="b-region">Highland, Scotland</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/beltane-fire-festival"><span class="b-name">Beltane Fire Festival</span><span class="b-region">Edinburgh, Scotland</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/black-rock-gorge"><span class="b-name">Black Rock Gorge</span><span class="b-region">Scotland</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/blarney-stone"><span class="b-name">Blarney Stone</span><span class="b-region">Blarney Castle, County Cork</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/bleeding-yew-of-nevern"><span class="b-name">Bleeding Yew of Nevern</span><span class="b-region">Pembrokeshire, Wales</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/bossiney-castle"><span class="b-name">Bossiney Castle</span><span class="b-region">Cornwall</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/breeny-more-stone-circle"><span class="b-name">Breeny More Stone Circle</span><span class="b-region">Breeny More, County Cork</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/brother-simon-of-swineshead"><span class="b-name">Brother Simon of Swineshead</span><span class="b-region">Swineshead, Lincolnshire, England</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/bryn-cader-faner"><span class="b-name">Bryn Cader Faner</span><span class="b-region">Ardudwy, Gwynedd, Wales</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/bryn-gwyn-stones"><span class="b-name">Bryn Gwyn stones</span><span class="b-region">Brynsiencyn, Anglesey, Wales</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/bru-na-boinne"><span class="b-name">Brú na Bóinne</span><span class="b-region">Boyne Valley, County Meath</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/cadair-idris"><span class="b-name">Cadair Idris</span><span class="b-region">Gwynedd, Wales</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/caer-bran"><span class="b-name">Caer Bran</span><span class="b-region">Cornwall</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/caerleon"><span class="b-name">Caerleon</span><span class="b-region">Caerleon, Newport, Wales</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/callanish-standing-stones"><span class="b-name">Callanish Standing Stones</span><span class="b-region">Isle of Lewis, Scotland</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/camelot"><span class="b-name">Camelot</span><span class="b-region">Somerset</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/cantre-r-gwaelod"><span class="b-name">Cantre&#x27;r Gwaelod</span><span class="b-region">Cardigan Bay, Wales</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/carningli"><span class="b-name">Carningli</span><span class="b-region">Pembrokeshire, Wales</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/carricknagat-megalithic-tombs"><span class="b-name">Carricknagat Megalithic Tombs</span><span class="b-region">Carricknagat, County Sligo</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/carrigagulla"><span class="b-name">Carrigagulla</span><span class="b-region">Carrigagulla, County Cork</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/carrigaphooca-stone-circle"><span class="b-name">Carrigaphooca Stone Circle</span><span class="b-region">Carrigaphooca, County Cork</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/carrowmore"><span class="b-name">Carrowmore</span><span class="b-region">Carrowmore, County Sligo</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/carrownlisheen-wedge-tomb"><span class="b-name">Carrownlisheen Wedge Tomb</span><span class="b-region">Carrownlisheen, County Clare</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/castle-downs-cornwall"><span class="b-name">Castle Downs, Cornwall</span><span class="b-region">Cornwall</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/chalice-well"><span class="b-name">Chalice Well</span><span class="b-region">Somerset</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/chanctonbury-ring"><span class="b-name">Chanctonbury Ring</span><span class="b-region">West Sussex</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/cheesewring"><span class="b-name">Cheesewring</span><span class="b-region">Cornwall</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/cheetham-close"><span class="b-name">Cheetham Close</span><span class="b-region">Lancashire</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/chun-quoit"><span class="b-name">Chûn Quoit</span><span class="b-region">Cornwall</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/clodagh-standing-stones"><span class="b-name">Clodagh Standing Stones</span><span class="b-region">Clodagh, County Cork</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/cloghanmore"><span class="b-name">Cloghanmore</span><span class="b-region">Glencolmcille, County Donegal</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/coolcoulaghta-standing-stones"><span class="b-name">Coolcoulaghta Standing Stones</span><span class="b-region">Coolcoulaghta, County Cork</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/craddock-moor-stone-circle"><span class="b-name">Craddock Moor stone circle</span><span class="b-region">Cornwall</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/craigs-dolmen"><span class="b-name">Craigs Dolmen</span><span class="b-region">Craigs, County Antrim</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/croagh-patrick"><span class="b-name">Croagh Patrick</span><span class="b-region">County Mayo, Ireland</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/devil-s-arrows"><span class="b-name">Devil&#x27;s Arrows</span><span class="b-region">North Yorkshire</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/devil-s-bit-mountain"><span class="b-name">Devil&#x27;s Bit Mountain</span><span class="b-region">County Tipperary, Ireland</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/devil-s-bridge"><span class="b-name">Devil&#x27;s Bridge</span><span class="b-region">Pontarfynach, Ceredigion, Wales</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/devil-s-dyke"><span class="b-name">Devil&#x27;s Dyke</span><span class="b-region">Sussex</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/dinas-emrys"><span class="b-name">Dinas Emrys</span><span class="b-region">Beddgelert, Gwynedd</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/ding-dong-mines"><span class="b-name">Ding Dong mines</span><span class="b-region">Cornwall</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/dolmen-of-the-four-maols"><span class="b-name">Dolmen of the Four Maols</span><span class="b-region">Ballina, County Mayo</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/dorset-ooser"><span class="b-name">Dorset Ooser</span><span class="b-region">Melbury Osmond, Dorset</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/dragon-hill-uffington"><span class="b-name">Dragon Hill, Uffington</span><span class="b-region">Oxfordshire</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/dunwich-the-drowned-city-bells"><span class="b-name">Dunwich: The Drowned City Bells</span><span class="b-region">Dunwich, Suffolk, England</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/dwarfie-stane"><span class="b-name">Dwarfie Stane</span><span class="b-region">Hoy, Orkney, Scotland</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/eightercua"><span class="b-name">Eightercua</span><span class="b-region">Waterville, County Kerry</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/farranahineeny-stone-row"><span class="b-name">Farranahineeny Stone Row</span><span class="b-region">Farranahineeny, County Kerry</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/finn-mccools-fingers"><span class="b-name">Finn McCools Fingers</span><span class="b-region">Shantemon Mountain, County Cavan</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/fintan-s-grave"><span class="b-name">Fintan&#x27;s Grave</span><span class="b-region">Arra Mountains</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/folkestone-white-horse"><span class="b-name">Folkestone White Horse</span><span class="b-region">Kent</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/giant-s-causeway"><span class="b-name">Giant&#x27;s Causeway</span><span class="b-region">Bushmills, County Antrim</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/glantane-east"><span class="b-name">Glantane East</span><span class="b-region">Glantane, County Cork</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/glastonbury-holy-thorn"><span class="b-name">Glastonbury Holy Thorn</span><span class="b-region">Somerset</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/glastonbury-tor"><span class="b-name">Glastonbury Tor</span><span class="b-region">Somerset</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/granny-kempock-stone"><span class="b-name">Granny Kempock Stone</span><span class="b-region">Gourock, Scotland</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/great-bell-of-burgh-le-marsh"><span class="b-name">Great Bell of Burgh le Marsh</span><span class="b-region">Lincolnshire, England</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/grubstones"><span class="b-name">Grubstones</span><span class="b-region">Yorkshire</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/gulf-of-corryvreckan"><span class="b-name">Gulf of Corryvreckan</span><span class="b-region">Between Jura and Scarba, Argyll</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/haxey-hood"><span class="b-name">Haxey Hood</span><span class="b-region">Haxey, North Lincolnshire, England</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/heapstown-cairn"><span class="b-name">Heapstown Cairn</span><span class="b-region">Heapstown, County Sligo</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/henderson-stone"><span class="b-name">Henderson Stone</span><span class="b-region">Ardgour, Lochaber</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/hill-of-allen"><span class="b-name">Hill of Allen</span><span class="b-region">County Kildare, Ireland</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/hill-of-tara"><span class="b-name">Hill of Tara</span><span class="b-region">County Meath, Ireland</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/hobby-horse-of-padstow"><span class="b-name">Hobby Horse of Padstow</span><span class="b-region">Cornwall</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/hy-brasil"><span class="b-name">Hy-Brasil</span><span class="b-region">North Atlantic, off the west coast of Ireland</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/inishbofin-white-cow"><span class="b-name">Inishbofin White Cow</span><span class="b-region">County Galway, Ireland</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/jingling-geordie-s-hole"><span class="b-name">Jingling Geordie&#x27;s Hole</span><span class="b-region">Tynemouth</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/julian-s-bower"><span class="b-name">Julian&#x27;s Bower</span><span class="b-region">Lincolnshire</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/kirk-yetholm-seat-of-the-gypsy-kings"><span class="b-name">Kirk Yetholm, Seat of the Gypsy Kings</span><span class="b-region">Kirk Yetholm, Scottish Borders, Scotland</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/knocknakilla"><span class="b-name">Knocknakilla</span><span class="b-region">Knocknakilla, County Cork</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/knocknarea"><span class="b-name">Knocknarea</span><span class="b-region">County Sligo, Ireland</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/labbacallee-wedge-tomb"><span class="b-name">Labbacallee wedge tomb</span><span class="b-region">Glanworth, County Cork</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/lia-fail"><span class="b-name">Lia Fáil</span><span class="b-region">Ireland</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/listoghil"><span class="b-name">Listoghil</span><span class="b-region">Carrowmore, County Sligo</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/llangorse-lake"><span class="b-name">Llangorse Lake</span><span class="b-region">Bannau Brycheiniog, Powys, Wales</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/llyn-barfog"><span class="b-name">Llyn Barfog</span><span class="b-region">Aberdyfi, Gwynedd, Wales</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/llyn-morwynion"><span class="b-name">Llyn Morwynion</span><span class="b-region">Ffestiniog, Gwynedd, Wales</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/lochmaben-stone"><span class="b-name">Lochmaben Stone</span><span class="b-region">Gretna, Dumfries and Galloway</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/long-meg-and-her-daughters"><span class="b-name">Long Meg and Her Daughters</span><span class="b-region">Cumbria</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/lough-derg-st-patrick-s-purgatory"><span class="b-name">Lough Derg (St Patrick&#x27;s Purgatory)</span><span class="b-region">County Donegal, Ireland</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/lough-na-suil"><span class="b-name">Lough na Súil</span><span class="b-region">Geevagh, County Sligo, Ireland</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/lyonesse"><span class="b-name">Lyonesse</span><span class="b-region">Scilly Isles</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/maeshowe-runes"><span class="b-name">Maeshowe Runes</span><span class="b-region">Orkney</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/mag-lena"><span class="b-name">Mag Lena</span><span class="b-region">County Offaly</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/mari-lwyd"><span class="b-name">Mari Lwyd</span><span class="b-region">Wales</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/martin-mere"><span class="b-name">Martin Mere</span><span class="b-region">Lancashire</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/meehambee-dolmen"><span class="b-name">Meehambee Dolmen</span><span class="b-region">Meehambee, County Roscommon</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/merlin-s-cave"><span class="b-name">Merlin&#x27;s Cave</span><span class="b-region">Cornwall</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/merlin-s-oak"><span class="b-name">Merlin&#x27;s Oak</span><span class="b-region">Carmarthen, Wales</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/miosgan-meadhbha"><span class="b-name">Miosgán Meadhbha</span><span class="b-region">Knocknarea, County Sligo</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/moel-ty-uchaf"><span class="b-name">Moel Tŷ Uchaf</span><span class="b-region">Llandrillo, Denbighshire, Wales</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/mount-venus"><span class="b-name">Mount Venus</span><span class="b-region">Rathfarnham, County Dublin</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/mousehold-heath-heviskey-tan"><span class="b-name">Mousehold Heath (Heviskey Tan)</span><span class="b-region">Norwich, Norfolk</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/mullyash-kerbed-cairn"><span class="b-name">Mullyash Kerbed Cairn</span><span class="b-region">Mullyash, County Armagh</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/museum-of-witchcraft-and-magic"><span class="b-name">Museum of Witchcraft and Magic</span><span class="b-region">Cornwall</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/men-scryfa"><span class="b-name">Mên Scryfa</span><span class="b-region">Cornwall</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/men-an-tol"><span class="b-name">Mên-an-Tol</span><span class="b-region">Cornwall</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/nanteos-cup"><span class="b-name">Nanteos Cup</span><span class="b-region">Ceredigion, Wales</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/navan-fort"><span class="b-name">Navan Fort</span><span class="b-region">Emain Macha, County Armagh</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/newgrange"><span class="b-name">Newgrange</span><span class="b-region">County Meath, Ireland</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/newgrange-cursus"><span class="b-name">Newgrange cursus</span><span class="b-region">Newgrange, County Meath</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/nine-maidens-stone-row"><span class="b-name">Nine Maidens Stone Row</span><span class="b-region">Cornwall</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/osmington-white-horse"><span class="b-name">Osmington White Horse</span><span class="b-region">Dorset</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/our-lady-of-walsingham"><span class="b-name">Our Lady of Walsingham</span><span class="b-region">Norfolk</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/overtoun-bridge"><span class="b-name">Overtoun Bridge</span><span class="b-region">Scotland</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/oweynagat"><span class="b-name">Oweynagat</span><span class="b-region">Rathcroghan, County Roscommon, Ireland</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/penhale-sands"><span class="b-name">Penhale Sands</span><span class="b-region">Cornwall</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/porlock-stone-circle"><span class="b-name">Porlock Stone Circle</span><span class="b-region">Somerset</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/rathcoran"><span class="b-name">Rathcoran</span><span class="b-region">Baltinglass, County Wicklow</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/rathcroghan"><span class="b-name">Rathcroghan</span><span class="b-region">Rathcroghan, County Roscommon</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/red-horse-of-tysoe"><span class="b-name">Red Horse of Tysoe</span><span class="b-region">South Warwickshire</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/rollright-stones-curse"><span class="b-name">Rollright Stones curse</span><span class="b-region">Oxfordshire</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/rudston-monolith"><span class="b-name">Rudston Monolith</span><span class="b-region">East Yorkshire</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/st-catherine-s-hill-mizmaze"><span class="b-name">St Catherine&#x27;s Hill Mizmaze</span><span class="b-region">Hampshire, England</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/st-davids-cathedral"><span class="b-name">St Davids Cathedral</span><span class="b-region">Wales</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/st-govan-s-chapel"><span class="b-name">St Govan&#x27;s Chapel</span><span class="b-region">Pembrokeshire, Wales</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/st-non-s-well"><span class="b-name">St Non&#x27;s Well</span><span class="b-region">Pembrokeshire, Wales</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/st-trinian-s-church"><span class="b-name">St Trinian&#x27;s Church</span><span class="b-region">Isle of Man</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/stanton-drew-stone-circles"><span class="b-name">Stanton Drew Stone Circles</span><span class="b-region">Somerset</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/stone-of-scone"><span class="b-name">Stone of Scone</span><span class="b-region">Perthshire, Scotland</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/stonehenge"><span class="b-name">Stonehenge</span><span class="b-region">Wiltshire</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/stow-minster-and-the-staff-of-etheldreda"><span class="b-name">Stow Minster and the Staff of Etheldreda</span><span class="b-region">Lincolnshire, England</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/sutton-hoo"><span class="b-name">Sutton Hoo</span><span class="b-region">Suffolk</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/the-merry-maidens"><span class="b-name">The Merry Maidens</span><span class="b-region">Cornwall</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/the-pipers"><span class="b-name">The Pipers</span><span class="b-region">Cornwall</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/the-towans"><span class="b-name">The Towans</span><span class="b-region">Cornwall</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/threekingham-three-kings"><span class="b-name">Threekingham Three Kings</span><span class="b-region">Lincolnshire, England</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/timoney-stones"><span class="b-name">Timoney Stones</span><span class="b-region">Timoney, County Tipperary</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/tintagel"><span class="b-name">Tintagel</span><span class="b-region">Cornwall</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/towednack"><span class="b-name">Towednack</span><span class="b-region">Cornwall</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/townleyhall-passage-grave"><span class="b-name">Townleyhall passage grave</span><span class="b-region">Townleyhall, County Louth</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/turoe-stone"><span class="b-name">Turoe Stone</span><span class="b-region">Bullaun, County Galway</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/twelve-apostles-west-yorkshire"><span class="b-name">Twelve Apostles, West Yorkshire</span><span class="b-region">Yorkshire</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/tyno-helig"><span class="b-name">Tyno Helig</span><span class="b-region">Conwy Bay, Wales</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/tir-na-nog"><span class="b-name">Tír na nÓg</span><span class="b-region">Lough Leane, County Kerry, Ireland</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/uffington-white-horse"><span class="b-name">Uffington White Horse</span><span class="b-region">Oxfordshire</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/up-helly-aa"><span class="b-name">Up Helly Aa</span><span class="b-region">Shetland</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/watlington-white-mark"><span class="b-name">Watlington White Mark</span><span class="b-region">Oxfordshire</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/waun-mawn"><span class="b-name">Waun Mawn</span><span class="b-region">Preseli Hills, Pembrokeshire, Wales</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/wayland-s-smithy"><span class="b-name">Wayland&#x27;s Smithy</span><span class="b-region">Oxfordshire</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/westbury-white-horse"><span class="b-name">Westbury White Horse</span><span class="b-region">Wiltshire, England</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/whetstones"><span class="b-name">Whetstones</span><span class="b-region">Welshpool, Powys, Wales</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/whiteleaf-cross"><span class="b-name">Whiteleaf Cross</span><span class="b-region">Buckinghamshire</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/wiltshire-moonrakers"><span class="b-name">Wiltshire Moonrakers</span><span class="b-region">Wiltshire</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/winchester-round-table"><span class="b-name">Winchester Round Table</span><span class="b-region">Winchester Great Hall, Hampshire</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/witches-well"><span class="b-name">Witches&#x27; Well</span><span class="b-region">Edinburgh</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/witchknowe-park"><span class="b-name">Witchknowe Park</span><span class="b-region">Fife</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/withypool-stone-circle"><span class="b-name">Withypool Stone Circle</span><span class="b-region">Somerset</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/wroth-silver-at-knightlow-hill"><span class="b-name">Wroth Silver at Knightlow Hill</span><span class="b-region">Warwickshire, England</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/yester-castle"><span class="b-name">Yester Castle</span><span class="b-region">Gifford, East Lothian</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/ynys-enlli"><span class="b-name">Ynys Enlli</span><span class="b-region">Llŷn Peninsula, Gwynedd, Wales</span></a>
+<a class="b-card" style="--cat:#5a3a18" href="https://folklorefinder.uk/legends/zennor"><span class="b-name">Zennor</span><span class="b-region">Cornwall</span></a>
 </div>
 <a class="back" href="https://folklorefinder.uk/legends/">&#8592; Browse All Legends</a>
 </div>

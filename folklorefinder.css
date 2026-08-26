@@ -875,6 +875,7 @@ body.home-page {
   box-sizing: border-box;
   border: 36px solid transparent;
   border-image: url("assets/ornaments/generated-variants/oak-branch-frame-v1.png?v=20260713c") 230 / 35px / 0 round;
+  border-image: image-set(url("assets/ornaments/generated-variants/oak-branch-frame-v1.webp?v=20260826a") type("image/webp"), url("assets/ornaments/generated-variants/oak-branch-frame-v1.png?v=20260713c") type("image/png")) 230 / 35px / 0 round;
   filter: saturate(.62) brightness(.88) contrast(.9) drop-shadow(0 4px 5px rgba(0,0,0,.24));
   pointer-events: none;
 }

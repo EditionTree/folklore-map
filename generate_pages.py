@@ -617,7 +617,7 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
    (.home-page .hero-feature .lotw-hero::after in folklorefinder.css) —
    reused here so the collection hero reads as the same kind of "featured
    artwork," not a plain photo. */
-.col-hero-media::after{content:'';position:absolute;inset:-17px;z-index:2;box-sizing:border-box;border:36px solid transparent;border-image:url('/assets/ornaments/generated-variants/oak-branch-frame-v1.png?v=20260713c') 230 / 35px / 0 round;filter:saturate(.62) brightness(.88) contrast(.9) drop-shadow(0 4px 5px rgba(0,0,0,.24));pointer-events:none}
+.col-hero-media::after{content:'';position:absolute;inset:-17px;z-index:2;box-sizing:border-box;border:36px solid transparent;border-image:url('/assets/ornaments/generated-variants/oak-branch-frame-v1.png?v=20260713c') 230 / 35px / 0 round;border-image:image-set(url('/assets/ornaments/generated-variants/oak-branch-frame-v1.webp?v=20260826a') type('image/webp'), url('/assets/ornaments/generated-variants/oak-branch-frame-v1.png?v=20260713c') type('image/png')) 230 / 35px / 0 round;filter:saturate(.62) brightness(.88) contrast(.9) drop-shadow(0 4px 5px rgba(0,0,0,.24));pointer-events:none}
 .col-hero-credit{position:absolute;right:24px;bottom:24px;z-index:3;font-size:10px;color:rgba(255,255,255,.85);background:rgba(0,0,0,.4);padding:2px 8px;border-radius:2px}
 @media(max-width:680px){.col-hero-split{flex-direction:column;gap:16px}.col-hero-media{flex-basis:auto;height:220px;min-height:0}.col-hero-media::after{inset:-12px;border-width:24px;border-image-width:24px}}
 /* Article layout: alternating image/summary rows for collection members */
@@ -727,7 +727,7 @@ def collection_detail_progress_script(slug, title):
     data attributes; the share title, body text and filename are derived from
     them in /js/page.js exactly as they were derived here."""
     return (
-        '<link rel="stylesheet" href="/share.css?v=20260823a"/><script src="/share-card.js?v=20260823b"></script>\n'
+        '<link rel="stylesheet" href="/share.css?v=20260823a"/><script src="/share-card.js?v=20260826b"></script>\n'
         '<div hidden'
         ' data-collection-slug="' + esc(slug) + '"'
         ' data-collection-title="' + esc(title) + '"></div>' + chr(10) +
@@ -1570,7 +1570,7 @@ $topnav
 </main>
 $footer
 <script src="/assets/leaflet/leaflet.js"></script>
-<link rel="stylesheet" href="/share.css?v=20260823a"/><script src="/share-card.js?v=20260823b"></script>
+<link rel="stylesheet" href="/share.css?v=20260823a"/><script src="/share-card.js?v=20260826b"></script>
 <script src="$base/legend-page.js?v=20260823b"></script>
 </body>
 </html>
@@ -3284,7 +3284,7 @@ h1::after{{content:"";display:block;width:132px;height:40px;margin:9px 0 19px;ba
 .c-count{{font-size:11px;color:#5c4a2a;font-style:italic}}
 .c-dot{{width:10px;height:10px;border-radius:50%;display:inline-block;flex-shrink:0}}
 .place-explorer{{position:relative;isolation:isolate;display:grid;grid-template-columns:minmax(320px,520px) minmax(0,1fr);align-items:center;gap:clamp(42px,7vw,110px);margin:48px 42px 82px;padding:58px 70px;border:0;background:rgba(246,241,230,.68);box-shadow:0 16px 40px rgba(63,48,35,.08)}}
-.place-explorer::after{{content:"";position:absolute;inset:-31px;z-index:2;box-sizing:border-box;border:38px solid transparent;border-image:url('/assets/ornaments/generated-variants/oak-branch-frame-v1.png?v=20260713c') 230 / 38px / 0 round;filter:saturate(.62) brightness(.9) contrast(.9) drop-shadow(0 4px 5px rgba(63,48,35,.2));pointer-events:none}}
+.place-explorer::after{{content:"";position:absolute;inset:-31px;z-index:2;box-sizing:border-box;border:38px solid transparent;border-image:url('/assets/ornaments/generated-variants/oak-branch-frame-v1.png?v=20260713c') 230 / 38px / 0 round;border-image:image-set(url('/assets/ornaments/generated-variants/oak-branch-frame-v1.webp?v=20260826a') type('image/webp'), url('/assets/ornaments/generated-variants/oak-branch-frame-v1.png?v=20260713c') type('image/png')) 230 / 38px / 0 round;filter:saturate(.62) brightness(.9) contrast(.9) drop-shadow(0 4px 5px rgba(63,48,35,.2));pointer-events:none}}
 .place-explorer>*{{position:relative;z-index:1}}
 .place-map-wrap{{display:flex;justify-content:center;background:radial-gradient(circle,rgba(176,144,96,.15),transparent 68%)}}
 .place-map{{display:block;width:min(100%,430px);height:auto;overflow:visible}}

@@ -15,7 +15,9 @@
  */
 window.ShareCard = (function(){
   const CARD_SIZE = 1080;
-  const FRAME_SRC = '/assets/ornaments/generated-variants/oak-branch-frame-v1.png';
+  // WebP first (213 KB against the PNG's 974 KB), PNG kept as the fallback.
+  const FRAME_SRC = '/assets/ornaments/generated-variants/oak-branch-frame-v1.webp';
+  const FRAME_SRC_FALLBACK = '/assets/ornaments/generated-variants/oak-branch-frame-v1.png';
   const CHART_SRC = '/hero-nautical-chart.jpg';
 
   function loadImage(src){
@@ -33,7 +35,12 @@ window.ShareCard = (function(){
 
   // Two brand assets shared by every card variant, cached after first load.
   let framePromise, chartPromise;
-  function loadFrame(){ return framePromise || (framePromise = loadImage(FRAME_SRC)); }
+  // A browser that cannot decode WebP fails the load rather than reporting it,
+  // so fall back on error instead of feature-detecting up front.
+  function loadFrame(){
+    return framePromise || (framePromise = loadImage(FRAME_SRC)
+      .catch(function(){ return loadImage(FRAME_SRC_FALLBACK); }));
+  }
   function loadChart(){ return chartPromise || (chartPromise = loadImage(CHART_SRC)); }
 
   function drawCoverImage(ctx, img, x, y, w, h){

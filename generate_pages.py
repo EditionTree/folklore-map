@@ -1614,6 +1614,29 @@ def nations_covered(legends):
                 if n in (leg.get("region") or "")})
 
 
+def follower_suggestion_count(legends):
+    """How many entries on the map began as a follower's submission."""
+    return sum(1 for leg in legends if follower_suggested(leg))
+
+
+def submit_prompt_note(count):
+    """The proof line under the submit prompt's headline.
+
+    Hidden at zero rather than rendered as "0 so far", which would be an
+    argument against submitting. It appears on its own once the first
+    suggestion is actioned, and the paragraph stays in the markup either way
+    so the next build has something to patch."""
+    if count < 1:
+        return '<p class="hero-submit-note" hidden></p>'
+    if count == 1:
+        sentence = ("One legend on the map began as a follower suggestion. "
+                    "Yours could be next.")
+    else:
+        sentence = (f"So far, {count} legends on the map began as follower "
+                    "suggestions. Yours could be next.")
+    return f'<p class="hero-submit-note">{sentence}</p>'
+
+
 def update_homepage_count(total, legends):
     """Patch every static, hand-written mention of the total entry count —
     the homepage's pre-JS count fallbacks, plus its and map.html's meta/OG/
@@ -1643,6 +1666,10 @@ def update_homepage_count(total, legends):
          rf'\g<1>{len(load_collections())}\g<2>'),
         (r'(<span class="stat-num" id="statRegions">)[^<]*(</span>)',
          rf'\g<1>{nations_covered(legends)}\g<2>'),
+        # Whole element, not just its text: the paragraph carries a `hidden`
+        # attribute while no entry has come from a follower yet.
+        (r'(?s)<p class="hero-submit-note".*?</p>',
+         lambda m: submit_prompt_note(follower_suggestion_count(legends))),
     )
     for pattern, replacement in patterns:
         text, changed = re.subn(pattern, replacement, text, count=1)

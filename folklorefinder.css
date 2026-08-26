@@ -1376,6 +1376,18 @@ body.home-page {
   line-height: 1.35;
 }
 
+/* Proof line under the prompt headline: how many entries on the map came
+   from a follower. generate_pages.py writes the sentence and keeps the
+   paragraph hidden while the count is zero, so it appears by itself once the
+   first suggestion is actioned. */
+.home-page .hero-submit-note {
+  flex: 1 1 100%;
+  margin: 7px 0 10px;
+  color: var(--ff-oak-brown);
+  font-size: 12.5px;
+  line-height: 1.45;
+}
+
 .home-page .hero-submit-link {
   color: var(--ff-burnt-orange-dark);
 }

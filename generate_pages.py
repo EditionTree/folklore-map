@@ -581,11 +581,11 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 .crumb{font-size:12px;color:#5c4a2a;margin-bottom:14px}
 .crumb a{color:#8b3a1a;text-decoration:none}
 .browse-h1{font-family:'Marcellus',serif;font-size:clamp(32px,4vw,48px);margin-bottom:6px;color:#3f3023;line-height:1.12;font-weight:400}
-.browse-h1::after{content:"";display:block;width:132px;height:40px;margin:9px 0 5px;background:url('/assets/ornaments/generated-variants/oak-divider-horizontal.webp') left center/contain no-repeat;opacity:.55}
-.browse-intro{max-width:780px;font-size:17px;color:#5c4a2a;margin-bottom:20px;line-height:1.6}
+.browse-h1::after{content:"";display:block;width:132px;height:40px;margin:9px 0 5px;background:url('/assets/ornaments/generated-variants/oak-divider-horizontal.webp') left center/contain no-repeat;opacity:.55}.browse-h1::before{content:'';display:block;width:52px;height:3px;margin:0 0 11px;border-radius:2px;background:var(--accent,#9d461f)}
+.browse-intro{max-width:780px;font-size:17px;color:#5c4a2a;margin-bottom:20px;line-height:1.6;border-left:3px solid var(--accent,#b09060);padding-left:15px}
 .browse-nav{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}
 .browse-nav a{font-family:'Marcellus',serif;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#9d461f;border:1px solid rgba(90,70,50,.35);border-radius:0;padding:5px 11px;text-decoration:none}
-.browse-nav a:hover,.browse-nav a.active{background:#5a4632;color:#f6f1e6;border-color:#5a4632}
+.browse-nav a:hover{background:#5a4632;color:#f6f1e6;border-color:#5a4632}.browse-nav a.active{background:var(--accent,#5a4632);color:#f6f1e6;border-color:var(--accent,#5a4632);box-shadow:0 1px 3px rgba(26,14,6,.22)}
 .browse-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:15px}
 .b-card{position:relative;overflow:hidden;background:linear-gradient(177deg,#fbf5e9 0%,#f5ecdb 60%,#efe3cd 100%);border:1px solid rgba(90,70,50,.26);border-radius:7px;padding:16px 17px 16px 20px;text-decoration:none;color:#3f3023;box-shadow:inset 3px 0 0 var(--cat,#8b3a1a),inset 0 1px 0 rgba(255,255,255,.6),0 1px 2px rgba(26,14,6,.07),0 8px 16px -8px rgba(26,14,6,.16);transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}.b-card::after{content:'';position:absolute;top:-10px;right:-10px;width:76px;height:76px;opacity:0;pointer-events:none;background:url('/assets/ornaments/generated-variants/oak-corner-upper-right.webp') right top/contain no-repeat;transition:opacity .22s ease}.b-card:hover::after,.b-card:focus-visible::after{opacity:.16}.b-card:hover,.b-card:focus-visible{transform:translateY(-3px);border-color:rgba(90,70,50,.4);box-shadow:inset 4px 0 0 var(--cat,#8b3a1a),inset 0 1px 0 rgba(255,255,255,.72),0 2px 4px rgba(26,14,6,.1),0 16px 30px -10px rgba(26,14,6,.26)}@media(prefers-reduced-motion:reduce){.b-card{transition:box-shadow .16s ease}.b-card:hover,.b-card:focus-visible{transform:none}}
 .b-card:hover{border-color:#c4622a;transform:translateY(-2px)}
@@ -783,10 +783,31 @@ def responsive_hero(image_path, alt, sizes, img_attrs=""):
 
 
 
+def dominant_accent(entries, meta):
+    """The colour of the category most of these entries belong to.
+
+    Ties go to whichever appears first in the entry list rather than to an
+    arbitrary sort, so the same page always produces the same colour."""
+    counts = {}
+    for leg in entries:
+        cat = leg.get("category", "")
+        if cat in meta:
+            counts[cat] = counts.get(cat, 0) + 1
+    if not counts:
+        return ""
+    best = max(counts.values())
+    for leg in entries:
+        cat = leg.get("category", "")
+        if counts.get(cat) == best:
+            return meta[cat].get("colour", "")
+    return ""
+
+
 def build_browse_page(page_title, desc, url, h1, intro, crumb, nav_html, cards_html,
                       ogimage=None, jsonld=None, head_extra="", after_grid="", nav_active="browse",
                       hero_html="", extra_sections="", after_intro="", wrap_class="", track_script="",
-                      top_nav_html="", grid_class="browse-grid"):
+                      top_nav_html="", grid_class="browse-grid",
+                      accent=""):
     jsonld_html = ('<script type="application/ld+json">' + jsonld + '</script>\n') if jsonld else ''
     page_breadcrumb = breadcrumb_list([
         ("Home", BASE + "/"),
@@ -823,7 +844,7 @@ def build_browse_page(page_title, desc, url, h1, intro, crumb, nav_html, cards_h
             '<link rel="stylesheet" href="/footer.css?v=20260823a"/>\n'
             + jsonld_html + breadcrumb_jsonld_html + head_extra
             + '<style>' + BROWSE_STYLE + '</style></head>\n<body class="catalogue-page">\n'
-            + topnav_html(nav_active) + '\n<main id="main-content" tabindex="-1">\n' + banner_html() + '\n<div class="wrap' + (' ' + wrap_class if wrap_class else '') + '">\n'
+            + topnav_html(nav_active) + '\n<main id="main-content" tabindex="-1">\n' + banner_html() + '\n<div class="wrap' + (' ' + wrap_class if wrap_class else '') + '"' + (' style=\"--accent:' + esc(accent) + '\"' if accent else '') + '>\n'
             '<nav class="crumb"><a href="' + BASE + '/">Home</a> &#8250; '
             '<a href="' + BASE + '/' + OUT_DIR + '/">All legends</a> &#8250; '
             '<span>' + esc(crumb) + '</span></nav>\n'
@@ -2748,6 +2769,7 @@ def build():
             cards_html=cards,
             ogimage=f"{BASE}/og/category-{c}.png" if c in meta else None,
             jsonld=cat_jsonld,
+            accent=meta.get(c, {}).get("colour", ""),
         )
         with io.open(os.path.join(cat_dir, f"{c}.html"), "w", encoding="utf-8") as f:
             f.write(page)
@@ -2791,6 +2813,7 @@ def build():
             nav_html=nav_links(nation_nav_items, t),
             cards_html=cards,
             jsonld=region_jsonld,
+            accent=dominant_accent(entries, meta),
         )
         with io.open(os.path.join(reg_dir, f"{t}.html"), "w", encoding="utf-8") as f:
             f.write(page)
@@ -2953,6 +2976,7 @@ def build():
                     top_nav_html=nav_links(col_nav_items, slug),
                     cards_html=cards,
                     grid_class="col-articles",
+                    accent=dominant_accent(members, meta),
                     jsonld=collection_jsonld,
                     head_extra=rel_links,
                     after_grid=pagination_html(slug, page_no, total_pages),

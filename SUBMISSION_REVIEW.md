@@ -115,6 +115,38 @@ these come first:
   access. An edge function with a service-role key in its environment is exactly
   the wrong place.
 
+## Credit the follower when you action a submission
+
+When a submission becomes a real entry, record where it came from **on the
+legend itself**, in `seeds.json`:
+
+```json
+"origin": { "type": "follower_suggestion", "received": "2026-08-23" }
+```
+
+`received` is the submission's `created_at` date, not the date you actioned it.
+
+Do this at the moment you write the entry. The submitted row is deleted 30 days
+after it is actioned, so nothing else remembers that the entry started with a
+follower, and once the row is gone the fact cannot be recovered.
+
+`generate_pages.py` then renders two things from that block, and nothing
+renders without it:
+
+- a **Follower suggestion** tag in the legend page hero, beside the category
+  and the place
+- a line in the article: "A follower suggested this one. We researched it and
+  wrote the entry ourselves."
+
+The Recently Added cards on `updates.html` carry the same tag.
+
+**The credit is anonymous, and it has to stay that way.** The form collects no
+name, no email and no IP, and the Privacy Notice says so in those words. There
+is no submitter to name, so never add one. The same notice promises that a
+submitter's own text is never published, which is why the line says we wrote
+the entry ourselves. Keep that true: research it properly rather than tidying
+up what they sent.
+
 ## Related
 
 - `scripts/review_submissions.py` is the tool.

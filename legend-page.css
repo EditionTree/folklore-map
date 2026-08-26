@@ -188,6 +188,20 @@ button{font:inherit}
   text-transform:uppercase;
 }
 .place{font-size:13px;font-style:italic;color:#d3c6b2}
+/* Marks an entry that began as a follower's submission. Sits in the hero
+   eyebrow beside the category and place. Outlined rather than filled, so it
+   reads as a note about the entry and not as a second category. */
+.from-follower{
+  display:inline-block;
+  padding:5px 11px 4px;
+  border:1px solid rgba(214,178,110,.55);
+  border-radius:2px;
+  color:#e2cfa6;
+  font-family:'Marcellus',serif;
+  font-size:10px;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
 h1{
   margin:0;
   font-family:'Marcellus',serif;
@@ -527,6 +541,16 @@ h1{
 .sighting-title{display:block;margin-top:2px;font-size:13px;line-height:1.4;color:var(--rust-dark)}
 .sighting-source{display:block;margin-top:4px;font-size:11.5px;color:var(--ink-soft)}
 .sighting-flag{display:inline-block;margin-top:5px;padding:2px 7px;font-size:10px;text-transform:uppercase;letter-spacing:.04em;border:1px solid var(--ink-soft);border-radius:3px;color:var(--ink-soft)}
+/* Provenance line for a follower-suggested entry. Quieter than the
+   editor's note: no kicker, no byline, since the submission is anonymous. */
+.follower-note{
+  margin:26px 0 4px;
+  padding:13px 18px;
+  border:1px solid var(--line);
+  border-left:3px solid var(--line);
+  background:rgba(229,213,184,.32);
+}
+.follower-note p{margin:0;font-size:14px;line-height:1.6;font-style:italic;color:var(--ink-soft)}
 .editor-note{
   margin:30px 0 4px;
   padding:18px 22px;

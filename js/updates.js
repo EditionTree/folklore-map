@@ -92,6 +92,12 @@
       ct.textContent = leg.category || '';
       ct.style.background = leg.colour || '#8b3a1a';
       a.appendChild(dt); a.appendChild(nm); a.appendChild(rg); a.appendChild(ct);
+      // Only entries that began as a follower's submission carry this flag.
+      if (leg.follower) {
+        var fs = document.createElement('div'); fs.className = 'recent-follower';
+        fs.textContent = 'Follower suggestion';
+        a.appendChild(fs);
+      }
       li.appendChild(a);
       rl.appendChild(li);
     });

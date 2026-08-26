@@ -1524,7 +1524,7 @@ FEATURED_PAGE = Template("""<!DOCTYPE html>
 <link rel="stylesheet" href="/assets/leaflet/leaflet.css"/>
 <link rel="stylesheet" href="/nav.css?v=20260823b"/>
 <link rel="stylesheet" href="/footer.css?v=20260823a"/>
-<link rel="stylesheet" href="/legend-page.css?v=20260823b"/>
+<link rel="stylesheet" href="/legend-page.css?v=20260826a"/>
 <script type="application/ld+json">$jsonld</script>
 $breadcrumb_jsonld
 </head>
@@ -1538,7 +1538,7 @@ $topnav
       <div class="hero-copy">
         <div class="eyebrow">
           <span class="category" style="background:$catcolour">$catname</span>
-          <span class="place">$region</span>
+          <span class="place">$region</span>$follower_tag
         </div>
         <h1 id="legend-title">$name</h1>
         $pronunciation
@@ -1549,7 +1549,7 @@ $topnav
     <div class="content-grid">
       <article class="article">
         <div class="article-label">The Legend</div>
-        $featured_body
+        $featured_body$follower_note
         $editorial
         <div class="article-actions" aria-label="Legend actions">
           <a class="button" href="$maplink">$icon_map<span class="btn-label">Open on Full Map</span></a>
@@ -1774,6 +1774,50 @@ CREDIT_MEDIUM_WORDING = {
 }
 
 
+# ── Follower suggestions ──────────────────────────────────────────────
+# An entry can begin life as a suggestion sent through the submit form. Those
+# submissions are anonymous by design (the form collects no name, no email and
+# no IP, and the Privacy Notice says so), and the stored row is deleted 30 days
+# after it is actioned. So the fact that an entry came from a follower has to be
+# written onto the legend itself when the entry is researched, or it is lost
+# with the row. See SUBMISSION_REVIEW.md.
+#
+# Shape on the legend record:
+#     "origin": {"type": "follower_suggestion", "received": "2026-08-23"}
+#
+# Credit is deliberately anonymous. Never render a submitter name: none is
+# collected, and inventing one would break the promise the form makes.
+FOLLOWER_ORIGIN = "follower_suggestion"
+
+
+def follower_suggested(leg):
+    """True when this entry started as a follower's submission."""
+    origin = leg.get("origin")
+    return isinstance(origin, dict) and origin.get("type") == FOLLOWER_ORIGIN
+
+
+def follower_tag_html(leg):
+    """Small tag for the hero eyebrow, alongside category and place."""
+    if not follower_suggested(leg):
+        return ""
+    return '<span class="from-follower">Follower suggestion</span>'
+
+
+def follower_note_html(leg):
+    """The provenance line in the article body.
+
+    Says plainly that a follower pointed us at it and that the entry itself is
+    ours, which is what the Privacy Notice promises: a submitter's own text is
+    never published."""
+    if not follower_suggested(leg):
+        return ""
+    return (
+        '<aside class="follower-note" aria-label="How this legend reached us">'
+        '<p>A follower suggested this one. We researched it and wrote the '
+        'entry ourselves.</p></aside>'
+    )
+
+
 def image_credit_html(credit, css_class, extra_prefix=""):
     """Render the provenance line under a hero image.
 
@@ -1923,6 +1967,8 @@ def update_whats_new_page(recent, built_collections, slugmap, cats, meta, limit=
             "region": l.get("region", ""),
             "category": cats.get(l.get("category", ""), l.get("category", "")),
             "colour": meta.get(l.get("category", ""), {}).get("colour", "#8b3a1a"),
+            # Only present when true, so the injected array stays small.
+            **({"follower": True} if follower_suggested(l) else {}),
         }
         for l in recent[:limit]
     ]
@@ -2337,6 +2383,8 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
         hero_caption=hero_caption,
         catcolour=esc(catcolour),
         catname=esc(catname),
+        follower_tag=follower_tag_html(leg),
+        follower_note=follower_note_html(leg),
         region=esc(leg.get("region", "")),
         name=esc(name),
         pronunciation=(

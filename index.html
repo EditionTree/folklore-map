@@ -322,26 +322,29 @@ body{background:var(--parchment-dk);color:var(--ink);font-family:'Spectral',seri
 
 /* ── STATS STRIP ── */
 .stats{
+  position:relative;
   display:flex;
   gap:0;
   background:var(--dark);
   border-bottom:1px solid rgba(176,144,96,0.2);
+}
+/* Gilded piping, the same transparent/rust/gold/rust/transparent stripe used on
+   the collections index, the topnav and the share cards. One edge across the
+   whole strip rather than a colour per column, which read as four things. */
+.stats::after{
+  content:'';
+  position:absolute;
+  left:0;right:0;bottom:-1px;
+  height:2px;
+  background:linear-gradient(90deg,transparent 0%,#c4622a 15%,#b09060 50%,#c4622a 85%,transparent 100%);
+  pointer-events:none;
 }
 .stat{
   flex:1;
   text-align:center;
   padding:18px 10px 15px;
   border-right:1px solid rgba(176,144,96,0.15);
-  border-bottom:3px solid var(--stat-accent,transparent);
 }
-/* Four muted accents across the strip. Rust and gold are the brand; sage and
-   slate are tokens that folklorefinder.css already defines and almost nothing
-   uses. Kept to a 3px rule under a dark bar, so it reads as a stripe of colour
-   rather than four coloured boxes. */
-.stat:nth-child(1){--stat-accent:rgba(196,98,42,.85)}
-.stat:nth-child(2){--stat-accent:rgba(176,144,96,.85)}
-.stat:nth-child(3){--stat-accent:rgba(102,115,90,.85)}
-.stat:nth-child(4){--stat-accent:rgba(83,102,122,.85)}
 .stat:last-child{border-right:none}
 .stat-num{
   font-family:'Marcellus',serif;
@@ -457,26 +460,6 @@ p{margin-bottom:14px;font-size:16.5px}
 .lotw-maplink{display:inline-block;margin-top:13px;font-size:13px;font-style:italic;color:var(--accent);text-decoration:none}
 .lotw-maplink:hover{text-decoration:underline}
 
-/* ── RECENTLY ADDED ── */
-.recent-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(210px,1fr));
-  gap:10px;
-}
-.recent-card{
-  background:var(--parchment);
-  border:1px solid var(--gold);
-  border-radius:4px;
-  padding:13px 15px;
-  text-decoration:none;
-  color:var(--ink);
-  display:block;
-  transition:border-color .15s,transform .1s;
-}
-.recent-card:hover{border-color:var(--accent-warm);transform:translateY(-2px)}
-.recent-name{font-family:'Marcellus',serif;font-size:14.5px;color:var(--ink);margin-bottom:3px;line-height:1.25}
-.recent-region{font-style:italic;font-size:12px;color:var(--ink-light)}
-.recent-cat{display:inline-block;font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:var(--accent);padding:2px 8px;border-radius:3px;margin-top:9px;line-height:1.5}
 
 .hero-place-map{
   display:flex;
@@ -553,28 +536,6 @@ p{margin-bottom:14px;font-size:16.5px}
   color:var(--accent);
 }
 
-/* ── CATEGORY GRID ── */
-.cat-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
-  gap:10px;
-  margin-top:16px;
-}
-.cat-card{
-  background:var(--parchment);
-  border:1px solid var(--gold);
-  border-radius:4px;
-  padding:14px 16px;
-  display:flex;
-  align-items:center;
-  gap:10px;
-  font-size:14.5px;
-  color:var(--ink);
-  text-decoration:none;
-  transition:border-color .15s,transform .1s;
-}
-.cat-card:hover{border-color:var(--accent-warm);transform:translateY(-2px)}
-.cat-icon{font-size:18px;flex-shrink:0}
 
 /* ── INLINE LINK CARD ── */
 .howlink{
@@ -659,12 +620,10 @@ p{margin-bottom:14px;font-size:16.5px}
 @media(max-width:560px){
   .hero{min-height:auto;padding:48px 20px 56px}
   .hero-emblem{width:120px;height:120px}
-  .cat-grid,.recent-grid{grid-template-columns:1fr 1fr}
   .lotw{padding:22px 20px}
   .place-map{width:min(100%,260px)}
 }
 @media(max-width:380px){
-  .cat-grid,.recent-grid{grid-template-columns:1fr}
 }
 @media(max-width:820px){
   .feature-row{grid-template-columns:1fr;gap:42px;width:100%;left:auto;transform:none}

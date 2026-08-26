@@ -87,7 +87,7 @@ Deno.serve(async (req: Request) => {
   })
   const cfData = await cfRes.json()
   if (!cfData.success) {
-    return new Response(JSON.stringify({ error: 'Verification failed — please try again' }), {
+    return new Response(JSON.stringify({ error: 'Verification failed, please try again' }), {
       status: 403, headers: { ...CORS, 'Content-Type': 'application/json' },
     })
   }
@@ -118,7 +118,7 @@ Deno.serve(async (req: Request) => {
 
   if (dbErr) {
     console.error('DB insert error:', dbErr)
-    return new Response(JSON.stringify({ error: 'Report could not be saved — please try again' }), {
+    return new Response(JSON.stringify({ error: 'Report could not be saved, please try again' }), {
       status: 500, headers: { ...CORS, 'Content-Type': 'application/json' },
     })
   }

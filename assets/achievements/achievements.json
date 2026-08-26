@@ -127,7 +127,7 @@
           "id": "four-nations",
           "name": "Four Nations, One Story",
           "req": "A legend in every UK nation",
-          "description": "England, Scotland, Wales and Northern Ireland — the whole of the UK in tales.",
+          "description": "England, Scotland, Wales and Northern Ireland, the whole of the UK in tales.",
           "icon": {
             "emoji": "🇬🇧",
             "file": "assets/achievements/wax-seals-v2/achievement-four-nations.webp"
@@ -451,7 +451,7 @@
           "id": "dont-eat-the-food",
           "name": "Don't Eat the Food",
           "req": "Visit 30 fae",
-          "description": "Thirty tales of Faerie — and you've not been trapped yet.",
+          "description": "Thirty tales of Faerie, and you've not been trapped yet.",
           "icon": {
             "emoji": "🍽️",
             "file": "assets/achievements/wax-seals-v2/achievement-dont-eat-the-food.webp"
@@ -499,7 +499,7 @@
           "id": "casper-catcher",
           "name": "Casper Catcher",
           "req": "Visit 20 ghosts",
-          "description": "Twenty hauntings — friendly and otherwise.",
+          "description": "Twenty hauntings, friendly and otherwise.",
           "icon": {
             "emoji": "📡",
             "file": "assets/achievements/wax-seals-v2/achievement-casper-catcher.webp"
@@ -719,7 +719,7 @@
               "Maid Marian"
             ]
           },
-          "note": "No 'Maid Marian' entry exists yet — add one or drop this badge.",
+          "note": "No 'Maid Marian' entry exists yet. Add one or drop this badge.",
           "availability": {
             "status": "draft",
             "reason": "Maid Marian is a planned research candidate; keep hidden until that legend exists."
@@ -954,7 +954,7 @@
           "id": "thats-moved-again",
           "name": "That's Moved Again",
           "req": "Visit a Boggart",
-          "description": "You can't flit from a boggart — it comes too.",
+          "description": "You can't flit from a boggart. It comes too.",
           "icon": {
             "emoji": "📦",
             "file": "assets/achievements/wax-seals-v2/achievement-thats-moved-again.webp"

@@ -18,7 +18,7 @@
           "historical_form": null,
           "relationship_type": "no_direct_equivalent",
           "status": "reviewed",
-          "explanation": "No attested Old English equivalent — the name arrived with Christian Latin/Greek usage, not the Germanic naming stock."
+          "explanation": "No attested Old English equivalent. The name arrived with Christian Latin/Greek usage, not the Germanic naming stock."
         }
       ]
     },
@@ -50,7 +50,7 @@
       "origin_language": "Irish (from Norman French Jehanne)",
       "historical_root": "Siobhán",
       "meaning_summary": "God is gracious (feminine of John)",
-      "historical_notes": "Irish form of the Norman-French Jehanne (Jane), ultimately from Hebrew Yoḥanan. Spelling and pronunciation diverge sharply — the 'bh' is a /v/ sound — which is exactly why user pronunciation confirmation matters.",
+      "historical_notes": "Irish form of the Norman-French Jehanne (Jane), ultimately from Hebrew Yoḥanan. Spelling and pronunciation diverge sharply (the 'bh' is a /v/ sound) which is exactly why user pronunciation confirmation matters.",
       "confidence": "high",
       "pronunciation_uk": "shuh-vawn",
       "phonemes_uk": ["sh", "u", "v", "aw", "n"],
@@ -60,7 +60,7 @@
           "historical_form": null,
           "relationship_type": "no_direct_equivalent",
           "status": "reviewed",
-          "explanation": "No Old English equivalent — the name reached Ireland via Norman French, long after the Old English period."
+          "explanation": "No Old English equivalent. The name reached Ireland via Norman French, long after the Old English period."
         }
       ]
     },

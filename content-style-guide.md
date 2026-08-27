@@ -217,3 +217,33 @@ legend genuinely set in 1837 to 1914 belongs there.
 Delete every clause about being recorded, published, attested, documented,
 collected, first noted or printed. Decide from what is left. If nothing is left,
 the answer is rule 4.
+
+
+## Write about the legend, not about the pipeline
+
+Every field the enrichment pass fills renders on a live page. `earliest_record`
+sits under "Earliest Written Record" in the sidebar, where a visitor reads it as
+a plain fact about the legend. So none of the following belongs in any field:
+
+- **The pipeline.** "the same collection already used for Each-Uisge in an
+  earlier run today". A reader does not know what a run is, and there is no
+  earlier run from where they are standing.
+- **The page's own structure.** "per this entry's own detail text", "already
+  noted in the existing summary". The reader is looking at the page. Pointing
+  them at another part of it adds nothing, and for anyone who reads only the
+  sidebar it is a dead end.
+- **The research process or its budget.** "could not be resolved within budget",
+  "Notable finding, flagged for editorial attention". These are notes to
+  ourselves that shipped to visitors.
+
+The fix is almost always deletion. Cut the clause and keep the fact.
+
+**Honest uncertainty is a different thing and stays.** BRAND_GUIDE.md section 10
+requires stating confidence plainly, so "no earlier version has been found" is
+correct and must not be cut. Only research-log phrasing wants changing: prefer
+"no earlier version has been found" to "no earlier version was located", and
+"the two accounts have not been reconciled" to "this discrepancy could not be
+resolved".
+
+Check it with `python scripts/voice_audit.py --strict`, which fails on the first
+three and only reports the fourth.

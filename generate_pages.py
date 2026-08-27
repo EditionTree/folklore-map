@@ -795,7 +795,7 @@ PERIOD_ACCENTS = {
     "iron-age":            "#5c5148",   # worked iron
     "roman-britain":       "#8a3f2e",   # legionary red, dulled to sit with the rest
     "sub-roman-britain":   "#6a4a3a",   # rust and ruin
-    "anglo-saxon-england": "#7a5a2a",   # gold and garnet
+    "early-medieval-britain": "#7a5a2a",  # gold and garnet
     "viking-age":          "#38566b",   # cold sea
     "norman-britain":      "#4a3d6e",   # keep stone at dusk
     "medieval-britain":    "#6d3f7a",   # manuscript purple, pushed clear of Norman
@@ -2176,7 +2176,13 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
     # folklore are often approximate (many traditions predate any surviving
     # written source), so the caveat is shown whenever the section renders.
     period_value = leg.get("period", "")
-    period_slug = (periods_by_title or {}).get(period_value)
+    # Prefer the controlled slug; fall back to the free-text value's exact match
+    # for as long as the bridge above is in place.
+    period_slug = (leg.get("period_slug") or "").strip() or None
+    if period_slug and period_slug not in set((periods_by_title or {}).values()):
+        period_slug = None
+    if not period_slug:
+        period_slug = (periods_by_title or {}).get(period_value)
     period_display = (
         f'<a href="{period_page_url(period_slug)}">{esc(period_value)}</a>'
         if period_slug else esc(period_value)
@@ -2615,30 +2621,47 @@ def build():
     periods_by_title = {p["match"]: p["slug"] for p in periods}
     sightings_map = load_sightings()
     period_members = {p["slug"]: [] for p in periods}
-    # The period field is written as prose, not as a controlled term, so exact
-    # equality found 8 entries out of 710 and left nine of the fifteen pages
-    # empty. "Bronze Age barrows; the fairy-music belief is recorded from the
-    # 19th century" is a good sentence that matches nothing. Looking for the
-    # period name INSIDE the text finds 83 instead.
+    valid_period_slugs = set(period_members)
+    # `period_slug` is the controlled field, and the only one that means what a
+    # period page claims: WHEN A LEGEND IS SET, never when it was written down.
+    # The enrichment pass writes it under the ladder in content-style-guide.md
+    # ("Assigning period_slug"). An absent value is a correct answer, not a gap:
+    # undatable oral tradition belongs on no period page.
     #
-    # Longest match wins, so "Sub-Roman Britain" is not swallowed by "Roman
-    # Britain", and an entry lands in one period only. This is a reading of the
-    # existing prose, not a replacement for it: a controlled period_slug written
-    # by the enhancement passes is the real fix.
+    # Until its coverage is complete the free-text `period` field is read as a
+    # bridge. Exact match first, then the period name appearing inside the
+    # prose, longest match winning so "Sub-Roman Britain" is not swallowed by
+    # "Roman Britain". The bridge reads prose that mixes setting and record, so
+    # it gets some entries wrong: measured 2026-08-27 it placed 83 entries with
+    # one clear misfile (Red Hand of Ulster). Delete it once period_slug
+    # overtakes it; `python scripts/period_audit.py` reports both counts.
     match_terms = sorted(periods_by_title.items(), key=lambda kv: -len(kv[0]))
+    period_bridged = 0
+    period_bad_slugs = []
     for l in legends:
-        value = (l.get("period") or "").strip()
-        if not value:
-            continue
-        slug = periods_by_title.get(value)
+        slug = (l.get("period_slug") or "").strip() or None
+        if slug and slug not in valid_period_slugs:
+            period_bad_slugs.append((l["name"], slug))
+            slug = None
         if not slug:
-            low = value.lower()
-            for term, term_slug in match_terms:
-                if term.lower() in low:
-                    slug = term_slug
-                    break
+            value = (l.get("period") or "").strip()
+            if not value:
+                continue
+            slug = periods_by_title.get(value)
+            if not slug:
+                low = value.lower()
+                for term, term_slug in match_terms:
+                    if term.lower() in low:
+                        slug = term_slug
+                        break
+            if slug:
+                period_bridged += 1
         if slug:
             period_members[slug].append(l)
+    if period_bad_slugs:
+        print("  WARNING: %d entries carry an unknown period_slug (ignored): %s"
+              % (len(period_bad_slugs),
+                 ", ".join("%s=%s" % nv for nv in period_bad_slugs[:5])))
     for slug in period_members:
         period_members[slug].sort(key=lambda l: l["name"].lower())
 

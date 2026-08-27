@@ -17,6 +17,11 @@
 /legends/collection/legends-of-the-sea-5  /legends/collection/legends-of-the-sea    301
 /legends/collection/legends-of-the-sea-6  /legends/collection/legends-of-the-sea    301
 
+# Explore Through Time: "Anglo-Saxon England" was renamed to cover early
+# Christian Ireland and Pictish/Gaelic Scotland as well, which the old
+# England-only title excluded. 2026-08-27.
+/legends/period/anglo-saxon-england  /legends/period/early-medieval-britain  301
+
 # Deferred name tool. The page was unlinked and absent from the sitemap, and it
 # carried a 26KB inline script that needed its own CSP hash. The supporting
 # files (names.json, schema.sql, submit-name-search.ts) stay in the repo so the

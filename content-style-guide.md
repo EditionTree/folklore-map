@@ -135,3 +135,85 @@ Keep paragraphs short (this is a folklore reference page, not an essay) and
 avoid repeating the same fact in two different paragraphs (the original Robin
 Hood draft repeated "skilled archer... robs from the rich... corrupt sheriff"
 almost verbatim in paragraphs one and two).
+
+
+## Assigning `period_slug`
+
+`period_slug` is a controlled field on every legend. It holds exactly one slug
+from `periods.json` or nothing at all, and it decides which Explore Through Time
+page a legend appears on.
+
+**It means when the legend is SET. Never when it was written down.**
+
+That distinction is the whole point of the field, because the older free-text
+`period` field mixes the two and cannot be normalised into this one. Two worked
+examples, both real:
+
+- Dinas Emrys carries `period` = "Early medieval Wales (textual composition, 9th
+  century)". Every word of that is about the manuscript. The story is Vortigern
+  and Merlin, so the slug is `sub-roman-britain`.
+- Glastonbury Holy Thorn carries `period` = "High Medieval England
+  (Joseph-as-founder tradition, 12th century); the thorn-specific legend
+  attested from the 17th century". Again all record. The story narrates Joseph
+  of Arimathea, so the slug is `roman-britain`.
+
+Read the `summary` and `detail`, not the `period` field. The record axis already
+has a home in `earliest_record`, which renders on the legend page directly
+beneath the period.
+
+### The ladder
+
+Work down it. The first rule that yields an answer wins.
+
+1. **A datable event or person in the story.** Use the period of the event, not
+   of the telling. Dick Turpin is `georgian-britain`. The Witches of Belvoir
+   (tried 1619) are `stuart-britain`. The Kilkenny witch trial (1324) is
+   `medieval-britain`. A legendary figure counts if the tradition places them
+   in time: Arthur is `sub-roman-britain` whether or not he existed, because
+   that is where the tradition puts him.
+
+2. **A monument the tradition explains.** No datable event, but the legend
+   exists to account for a physical feature whose date is known, and the story
+   is about that feature's making or its makers. Wayland's Smithy is
+   `prehistoric-britain`, Chun Quoit is `bronze-age`. The test is strict: a
+   Victorian ghost merely *seen at* a stone circle is not Bronze Age. If the
+   monument is only the stage, this rule does not apply, so fall through.
+
+3. **One defining text, and no setting of its own.** The legend's earliest and
+   defining form is a specific literary work and the story has no independent
+   setting. Sir Gawain and the Green Knight is `medieval-britain`. This is the
+   only place a text's date is allowed, and only because for a genuine literary
+   creation the text date *is* the setting date. It must never be used for a
+   text that merely records an older oral belief. Getting that wrong is exactly
+   the misfile this field exists to prevent.
+
+4. **Otherwise, no `period_slug`.** Omit the field. Baobhan Sith, Brownie,
+   Each-Uisge and Redcap are undated oral tradition and belong on no period
+   page. An absent value is a correct, finished answer, not a gap for a later
+   pass to fill. Do not reach for `modern-folklore` to avoid leaving it blank.
+
+### Boundaries and the two deliberate overlaps
+
+Every period carries `bounds` and a `disambiguation` note in `periods.json`.
+Read the note before assigning. The three that catch people out:
+
+- **793 to 1066** is covered by both `early-medieval-britain` and `viking-age`.
+  Use `viking-age` only for Norse raiders, settlers or Norse-derived belief. In
+  Orkney, Shetland, the Hebrides, the Isle of Man and Norse Ireland it is the
+  default for that window instead.
+- **`norman-britain` is 1066 to 1154 only**, the Conquest and its aftermath.
+  The rest of the Middle Ages is `medieval-britain`.
+- **`prehistoric-britain` is Mesolithic and Neolithic only.** A round barrow is
+  `bronze-age` and a hillfort is `iron-age`. What fills the prehistoric page is
+  long barrows, chambered tombs and causewayed enclosures.
+
+`victorian-britain` and `edwardian-britain` need the same care from the other
+direction. Almost every British and Irish legend was written down by a Victorian
+or Edwardian folklorist, and none of that is grounds for either page. Only a
+legend genuinely set in 1837 to 1914 belongs there.
+
+### The negative test
+
+Delete every clause about being recorded, published, attested, documented,
+collected, first noted or printed. Decide from what is left. If nothing is left,
+the answer is rule 4.

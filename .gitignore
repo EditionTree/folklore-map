@@ -13,6 +13,13 @@ _tmp_*
 tmp/
 output/
 
+# Enhancement-agent working files. Same category as _tmp_*, but the agent
+# writes these names directly and predates that convention, so they need
+# naming here. Live at the repo root during a run and are rewritten each
+# time; nothing downstream reads them once the merge is done.
+_batch_current.json
+scratch_batch.json
+
 # Monthly "recent sightings" research worksheets — same category as the
 # *-review.xlsx files below (a personal review draft, not published content;
 # see sightings.json for what's actually live).

@@ -57,12 +57,16 @@ LEAK = [
                 r"|\bfor\s+editorial\s+attention\b|\bNotable\s+finding\b", re.I)),
 ]
 
+# Narrowed 2026-08-27, after the LEAK cleanup cleared the budget talk. The
+# original pattern also matched "could not be confirmed" and "has been traced
+# earlier than", which only ever read badly in the company of "within budget".
+# On their own they are ordinary honest prose, and flagging them would push an
+# editor to reword sentences that are already fine. "Located" is the tell that
+# survives: research vocabulary, never how anyone describes a legend.
 VOICE = [
     ("research-log phrasing",
      re.compile(r"\b(?:was|were)\s+located\b|\bso\s+far\s+located\b"
-                r"|\bhas\s+been\s+traced\s+earlier\b"
-                r"|\bcould\s+not\s+be\s+(?:independently\s+)?"
-                r"(?:dated|verified|located|traced|confirmed)\b", re.I)),
+                r"|\bcould\s+not\s+be\s+located\b", re.I)),
 ]
 
 

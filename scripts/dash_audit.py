@@ -127,8 +127,12 @@ def main():
     print(f"  {'-' * 22} {'-' * 7} {'-' * 7}")
     print(f"  {'TOTAL':22} {prose_total:>7} {range_total:>7}")
     print()
-    print(f"{prose_total} prose dashes to rewrite, across {len(entries)} entries.")
-    print(f"{range_total} numeric ranges left alone (a range wants a hyphen, not a rewrite).")
+    # These are counts of FIELD VALUES, not of dash characters. A value can
+    # hold several dashes and is rewritten as one unit, so the two numbers
+    # differ a lot: on 2026-08-27 the 100 values below held 236 dashes.
+    print(f"{prose_total} values to rewrite, across {len(entries)} entries.")
+    print(f"{range_total} values hold only a numeric range, left alone "
+          f"(a range wants a hyphen, not a rewrite).")
 
     if args.list:
         for f in fields:
@@ -143,7 +147,7 @@ def main():
 
     if args.strict and prose_total:
         print()
-        print(f"FAIL: {prose_total} prose dashes remain.", file=sys.stderr)
+        print(f"FAIL: {prose_total} values still carry a prose dash.", file=sys.stderr)
         return 1
     return 0
 

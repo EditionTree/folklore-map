@@ -2177,7 +2177,7 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
     # written source), so the caveat is shown whenever the section renders.
     period_value = leg.get("period", "")
     # The controlled slug is the only source for this link. The free-text
-    # fallback that used to sit here went with the bridge on 2026-08-27:
+    # fallback that used to sit here went with the bridge on 2026-08-31:
     # it linked the sidebar to a page the entry had been reviewed OFF.
     period_slug = (leg.get("period_slug") or "").strip() or None
     if period_slug and period_slug not in set((periods_by_title or {}).values()):
@@ -2628,7 +2628,7 @@ def build():
     # oral tradition belongs on no period page.
     #
     # The free-text `period` bridge that used to stand here was DELETED on
-    # 2026-08-27, once all 710 entries had been reviewed by hand. It had to
+    # 2026-08-31, once all 710 entries had been reviewed by hand. It had to
     # go rather than simply fall idle: for 9 entries it was overriding a
     # deliberate "no period" decision and putting them back on a page. Two of
     # those were exactly the misfile this field exists to prevent, Black Shuck

@@ -15,6 +15,8 @@
 -- `early-medieval-britain` on 2026-08-27 so the 600 to 1066 window could cover
 -- early Christian Ireland and Pictish/Gaelic Scotland, which the England-only
 -- title excluded.
+-- Applied to production 2026-08-31 as migration 20260831181305; this file was
+-- renamed from 20260827120000 to match the version Supabase recorded.
 alter table public.legends
   add column if not exists period_slug text
     check (period_slug is null or period_slug in (

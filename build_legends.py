@@ -1410,6 +1410,10 @@ def write_to_supabase(
             "origin_date":         r.get("origin_date") or None,
             "earliest_record":     r.get("earliest_record") or None,
             "period":              r.get("period") or None,
+            # Added 2026-08-31, AFTER the add_period_slug migration was applied.
+            # Order matters: this line without the column is a 23514 that blocks
+            # the whole day's sync.
+            "period_slug":         r.get("period_slug") or None,
             "historical_setting":  r.get("historical_setting") or None,
             "cultural_tradition":  r.get("cultural_tradition") or None,
             "origin_type":         r.get("origin_type") or None,

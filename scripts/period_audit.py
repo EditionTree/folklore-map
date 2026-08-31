@@ -8,12 +8,12 @@ is SET ("Restoration England, 17th century"), some say when it was RECORDED
 only mean one of those, and it means the first: see periods.json's `_comment`
 and content-style-guide.md under "Assigning period_slug".
 
-`period_slug` is the controlled answer, and since 2026-08-27 it is the ONLY
+`period_slug` is the controlled answer, and since 2026-08-31 it is the ONLY
 thing that puts a legend on a period page. All 710 entries have been reviewed
-by hand: 479 carry a slug, 222 were reviewed and deliberately left without one.
+by hand: 479 carry a slug, 231 were reviewed and deliberately left without one.
 
 The free-text bridge this script used to model was deleted from
-generate_pages.py on 2026-08-27, and removed from here in the same change. An
+generate_pages.py on 2026-08-31, and removed from here in the same change. An
 audit that models behaviour the site no longer has is worse than no audit: it
 was reporting 9 entries as placed that the site had already stopped placing.
 

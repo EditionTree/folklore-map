@@ -41,6 +41,12 @@ PUBLISHABLE_KEY = "sb_publishable_-XlJB_bYZlSjHAn7rQ2MQQ_BFsS5-4v"
 EXPECTED_PUBLIC_COLUMNS = {
     "name", "lat", "lng", "category", "region", "summary", "source",
     "tags", "period", "cultural_tradition", "alt_names",
+    # Added 2026-09-01 with the view change. period_slug is the controlled
+    # Explore Through Time period, already visible on every legend page and
+    # on /legends/period/<slug>, so publishing it leaks nothing. This suite
+    # failed on the widened view before this line was added, which is the
+    # guard working.
+    "period_slug",
 }
 
 # Columns that exist on public.legends but must never be reachable through the

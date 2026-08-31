@@ -48,10 +48,16 @@ LEAK = [
      re.compile(r"\b(?:in|from)\s+(?:an|the)\s+(?:earlier|previous|last)\s+run\b"
                 r"|\bthis\s+run\b|\benriched\s+in\b"
                 r"|\balready\s+(?:used|enriched)\s+for\b", re.I)),
+    # Widened 2026-08-31. The first version enumerated the exact phrasings seen
+    # at the time ("this entry's own", "per this entry") and so passed clean
+    # while 7 entries still said "already named in this entry's text", "this
+    # entry already documents" and "already cited by this entry". They were
+    # caught only by a broader SQL query run against Supabase after the sync.
+    # A legend never refers to itself as "this entry" in visitor-facing copy,
+    # so match the phrase itself rather than a list of the ways it can end.
     ("the page's own structure",
-     re.compile(r"this\s+entry's\s+own\b|\balready\s+noted\s+in\s+this\s+entry\b"
-                r"|\bper\s+this\s+entry\b|\bthe\s+existing\s+(?:summary|detail)\b"
-                r"|\bthis\s+entry's\s+(?:summary|detail)\b", re.I)),
+     re.compile(r"\bthis\s+entr(?:y|ies)\b"
+                r"|\bthe\s+existing\s+(?:summary|detail)\b", re.I)),
     ("research process or budget",
      re.compile(r"\bwithin\s+budget\b|\bflagged\s+for\s+editorial\b"
                 r"|\bfor\s+editorial\s+attention\b|\bNotable\s+finding\b", re.I)),

@@ -367,7 +367,8 @@
     "historical_setting": "Traditional legendary setting: a famine at Newgate Prison during the reign of King Henry III (13th century), when a scholar imprisoned on a sorcery charge was killed and eaten by starving fellow inmates and returned as a black dog",
     "period": "13th century (legendary setting); first set down in print in 1596",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Black Lady of Bradley Woods",
@@ -956,7 +957,8 @@
     "earliest_record": "Robert Surtees, The History and Antiquities of the County Palatine of Durham, Vol. III, 1820.",
     "historical_setting": "Local tradition links the ghost to Roger Skelton, a stable boy killed at Hylton Castle on 3 July 1609, accidentally struck by a scythe wielded by Sir Robert Hylton, 13th Baron of Hylton, while mowing; an inquest ruled it 'accident of misfortune' and Hylton received a pardon from Bishop James, recorded 6 September 1609. Surtees himself, in 1820, treated the Cauld Lad primarily as an older brownie/household-spirit tradition and noted that some accounts had merged it with the Skelton death as 'an admixture of English superstition.'",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "stuart-britain"
   },
   {
     "name": "Ceridwen",
@@ -1931,7 +1933,8 @@
     "period": "Late 14th century, Middle English alliterative revival",
     "cultural_tradition": "Middle English Arthurian romance, attributed to the anonymous 'Gawain Poet' (also called the 'Pearl Poet'), who also composed Pearl, Cleanness, and Patience in the same manuscript",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "The Green Man",
@@ -1959,7 +1962,8 @@
     "period": "Carving tradition: Romanesque to Gothic periods in England (11th-15th century), rooted in Roman antiquity (1st-2nd century AD). Term 'Green Man': coined 1939.",
     "cultural_tradition": "Medieval English ecclesiastical architecture (foliate head motif); the pagan-survival interpretation popularised by Lady Raglan has since been contested by folklorists who note she offered no direct evidence the motif was pre-Christian in meaning",
     "origin_type": "archaeological",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Grubstones",
@@ -2243,7 +2247,8 @@
     "period": "Early modern Scotland (building construction, 1625-29; tower added 1644; witch trials through the 17th century; prison fit-out 1750s)",
     "historical_setting": "Also briefly held the American naval officer John Paul Jones in 1770, and was restored as the Tolbooth Art Centre in 1993",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "stuart-britain"
   },
   {
     "name": "Knocker",
@@ -2376,7 +2381,8 @@
     "earliest_record": "Antiquarian William Hutchinson's 1785 account is the earliest published written record; Robert Surtees's fuller version, recorded from oral tradition as told by Elizabeth Cockburn of Offerton, appeared in his 'History and Antiquities of the County Palatine of Durham' (vol. 2, 1820), reviewed and endorsed by the Lambton family themselves",
     "period": "The legend is believed to date orally from the 14th century, though the earliest written record is 1785, a gap of some four centuries",
     "origin_type": "oral-tradition",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Lancashire Witches Walk",
@@ -2401,7 +2407,8 @@
     "origin_date": "2012 (the walk itself); 1612 (the Pendle witch trials it commemorates)",
     "period": "The trials are early-17th-century historical fact; the walk is a 21st-century commemorative project",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "modern-folklore"
   },
   {
     "name": "Latoon Fairy Bush",
@@ -2422,7 +2429,8 @@
     "origin_date": "1999",
     "period": "Contemporary Ireland; the whitethorn/fairy-tree tradition it draws on is much older but this specific bush's fame dates entirely from the 1999 campaign",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "modern-folklore"
   },
   {
     "name": "Lia Fáil",
@@ -2448,7 +2456,8 @@
     "earliest_record": "The Lia Fáil belongs to the Lebor Gabála Érenn tradition (compiled by an anonymous 11th-century writer), the same textual family used for Eightercua, Donn and Hill of Tara in earlier runs today; the fullest manuscript recension is in the Book of Leinster (c.1160)",
     "period": "Early Medieval Ireland (manuscript compilation, 11th-12th century); the Conn of the Hundred Battles episode (2nd century AD in the legend's own internal chronology) belongs to a separate but related medieval Irish text tradition",
     "origin_type": "oral-tradition",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "early-medieval-britain"
   },
   {
     "name": "Llyn y Fan Fach",
@@ -2473,7 +2482,8 @@
     "earliest_record": "Richard Fenton's 'Tours in Wales' (1804-1813) is the earliest modern written account identified; further published in 'The Cambro-Briton' periodical (1821); reached its fullest form as the introduction to William Rees's 'Meddygon Myddfai' (1861), based on oral accounts collected in 1841 from three elderly parish residents. The same chain of dating underlies the Gwragedd Annwn tradition.",
     "period": "Early-19th-century Welsh antiquarian tradition (1804-13 earliest record); the Physicians of Myddfai were a real medieval medical family",
     "origin_type": "oral-tradition",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Loch Morar",
@@ -2494,7 +2504,8 @@
     "origin_date": "1969 (the documented modern boat encounter)",
     "period": "The death-omen tradition among the MacDonalds and other local families is of unknown but presumably older oral currency; 1969 is the only precisely dated incident found",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "modern-folklore"
   },
   {
     "name": "The Loch Ness Monster",
@@ -2524,7 +2535,8 @@
     "historical_setting": "Separately, the modern 'monster' media tradition began with a sighting reported by Aldie Mackay (and her husband) near Abriachan on 14 April 1933, published in the Inverness Courier on 2 May 1933 under the headline 'Strange Spectacle on Loch Ness' -- the first report to use the word 'monster' (earlier local tradition used 'kelpie'). This article is credited with launching the modern Loch Ness Monster phenomenon and subsequent media/tourism interest.",
     "cultural_tradition": "Two distinct strands: (1) early medieval Christian hagiography from the Columban/Ionan monastic tradition (Vita Columbae), and (2) a 20th-century media-driven cryptid legend originating in 1933 press coverage",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "modern-folklore"
   },
   {
     "name": "Lochmaben Stone",
@@ -2548,7 +2560,8 @@
     "earliest_record": "Shares its dating basis with the Maponos tradition. The cult of Maponos/Mabon in this region is epigraphically attested by the 3rd century AD (the precisely-dated 241 AD Ribchester altar being the clearest example, though not at this specific site)",
     "period": "Roman-period Celtic cult (epigraphic evidence, 3rd century AD, from the wider Maponos cult); the stone's later role as a Border March-law meeting place is a separate medieval historical function, not dated more precisely",
     "origin_type": "archaeological",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "roman-britain"
   },
   {
     "name": "The Loe",
@@ -2577,7 +2590,8 @@
     "period": "Geological formation: mid-Holocene (c. 4000-3000 BCE, estimate contested, alternative low estimate c. 700 years); Arthurian folkloric association: 15th-century literary origin (Malory, lake unnamed) through 19th-century specific place-identification (Tennyson, 1869)",
     "historical_setting": "Cornwall, England; largest natural freshwater lake in Cornwall",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Long Man of Wilmington",
@@ -2627,7 +2641,8 @@
     "earliest_record": "William Camden's 'Britannia' (1586) is the earliest documented record of the witches-turned-to-stone legend; it was repeated by John Aubrey and William Stukeley (whose 'Itinerarium Curiosum' was first published 1724, with an expanded posthumous edition in 1776) and later by Wordsworth",
     "period": "Elizabethan England (earliest written record, 1586); repeated through the 17th-18th century antiquarian tradition",
     "origin_type": "oral-tradition",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "bronze-age"
   },
   {
     "name": "Longwitton Dragon",
@@ -2680,7 +2695,8 @@
     "earliest_record": "Cath Maige Tuired ('The (Second) Battle of Mag Tuired'), the text describing Lugh's defeat of Balor, survives complete only in the 16th-century manuscript British Library Harleian 5280 (scribe Giolla Riabhach Ó Cléirigh), but scholars (notably Gerard Murphy) assess it as an 11th-12th century redaction of material substantially dating to the 9th century, with some poetic fragments possibly older still",
     "period": "Early Medieval Ireland (underlying material, c.9th century; redaction, 11th-12th century; earliest surviving manuscript, 16th century)",
     "origin_type": "oral-tradition",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "iron-age"
   },
   {
     "name": "Ly Erg",
@@ -2732,7 +2748,8 @@
     "earliest_record": "Beroul (fl. c.1160) is the earliest writer to specifically name Lyonesse (as Tristan's father Rivalen's kingdom); Geoffrey of Monmouth's Historia Regum Britanniae (1136) established the general 'drowned in a single night' motif for Cornwall's lost lands somewhat earlier but without using the specific name; William of Worcester's 15th-century Itinerary is the earliest specific written mention of a vanished land off the Cornish coast in a more antiquarian, non-Arthurian sense",
     "period": "High Medieval Anglo-Norman romance literature (earliest specific naming, mid-12th century); the Tristan association was further developed in the 13th-century Prose Tristan, where the kingdom is called Leonois",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Mabon ap Modron",
@@ -2758,7 +2775,8 @@
     "earliest_record": "Culhwch and Olwen, in which Mabon's rescue is a central episode, is dated by most scholars to c.1100 (making it perhaps the earliest Arthurian tale and one of Wales's earliest extant prose texts), though a 2005 reassessment by linguist Simon Rodway proposed a later date in the second half of the 12th century; the earliest surviving manuscript is the White Book of Rhydderch (c.1350)",
     "period": "Medieval Wales (composition, c.1100 or 12th century depending on scholarly view; manuscript survival, mid-14th century)",
     "origin_type": "oral-tradition",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Maeshowe Runes",
@@ -2784,7 +2802,8 @@
     "earliest_record": "The runic inscriptions themselves were carved in the 12th century by Norse visitors",
     "period": "Neolithic Orkney (cairn construction); Norse earldom period (rune-carving, 12th century)",
     "origin_type": "archaeological",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "norman-britain"
   },
   {
     "name": "Mag Lena",
@@ -2812,7 +2831,8 @@
     "period": "Legendary battle, 2nd century AD; Dindshenchas manuscript compilation, 12th century; scholarly translation, 1855",
     "historical_setting": "This entry already documents three additional real, precisely-dated historical events at the same location: a synod on Easter dating (c.630 AD), a battle involving Cormac mac Cuilennáin (906 AD), and a High Kingship conflict (1090 AD)",
     "origin_type": "oral-tradition",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "iron-age"
   },
   {
     "name": "Maponos",
@@ -2839,7 +2859,8 @@
     "earliest_record": "The altar RIB 583 at Ribchester (Bremetennacum Veteranorum), dedicated by a unit of Sarmatian cavalry to Apollo Maponus, is precisely dated; further dedications survive at Corbridge (RIB 1120-1122) though without such precise dating",
     "period": "Roman Britain, 3rd century AD (epigraphic evidence); the underlying Celtic deity is understood to be pre-Roman in origin",
     "origin_type": "oral-tradition",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "roman-britain"
   },
   {
     "name": "Mari Lwyd",
@@ -2894,7 +2915,8 @@
     "earliest_record": "Tennyson's Idylls of the King, with Victorian guidebook writers subsequently attaching the image to this specific cave",
     "period": "Victorian Britain; the name was fixed on maps and signposts by the early 20th century",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "victorian-britain"
   },
   {
     "name": "Merlin's Oak",
@@ -2922,7 +2944,8 @@
     "earliest_record": "The Merlin-Carmarthen prophetic association is much older than the tree itself: Merlin is referred to as poet and prophet in Armes Prydein (part of the Book of Taliesin), attested by the 10th century, and the Black Book of Carmarthen (early 13th-century manuscript) is the earliest surviving manuscript preserving substantial early Arthurian/Myrddin material connected to the town",
     "period": "Ancient Welsh prophetic tradition (10th century onward) attached to Carmarthen generally; the specific oak tree that came to embody the 'When Merlin's Oak shall tumble down' prophecy was planted only in 1659-60",
     "origin_type": "oral-tradition",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "stuart-britain"
   },
   {
     "name": "The Merry Maidens",
@@ -2948,7 +2971,8 @@
     "period": "Late Neolithic to Early Bronze Age, circa 2500-1500 BC",
     "earliest_record": "Petrification legend widely stated to be documented in the 19th century (folklore compilations of that era covering West Cornwall); the monument itself was first antiquarian-recorded by William Borlase in 1769",
     "origin_type": "archaeological",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "prehistoric-britain"
   },
   {
     "name": "Metheringham Lass",
@@ -2973,7 +2997,8 @@
     "earliest_record": "A 1998 ITV 'This Morning' phone-in, in which callers reported sightings, prompted a wave of further calls describing the same spot, some reporting sightings going back some fifteen years earlier (i.e. to the early-mid 1980s)",
     "period": "Modern legend (haunting reports informally circulating from the early-mid 1980s; first mass-media documentation, 1998)",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "modern-folklore"
   },
   {
     "name": "Moel Tŷ Uchaf",
@@ -3001,7 +3026,8 @@
     "earliest_record": "The 1974 'Berwyn Mountain incident' (the 'Welsh Roswell'), precisely dated to 23 January 1974, is the earliest specific modern record connecting this site to a documented event",
     "period": "Bronze Age Wales (monument construction); the Gwyn ap Nudd/Cŵn Annwn folklore attached to the wider Berwyn range has no independently dated first record distinct from the general Welsh Otherworld tradition (see Gwyn ap Nudd)",
     "origin_type": "archaeological",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "bronze-age"
   },
   {
     "name": "Morag of Loch Morar",
@@ -3022,7 +3048,8 @@
     "origin_date": "1969 (the documented motorboat encounter)",
     "period": "The MacDonald clan's death-omen tradition is of unknown but presumably older oral currency; 1969 is the only precisely dated incident found, as it is for the separate 'Loch Morar' entry",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "modern-folklore"
   },
   {
     "name": "Morgawrr",
@@ -3048,7 +3075,8 @@
     "earliest_record": "A fisherman's 1876 account is the earliest documented claim located; the modern legend as told today substantially dates from a fresh wave of sightings starting September 1975 (Pendennis Point) and the widely reproduced 1976 'Mary F' photographs sent to the Falmouth Packet newspaper",
     "period": "Scattered 19th-century sightings (from 1876); modern cryptid legend substantially constructed 1975-76",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "victorian-britain"
   },
   {
     "name": "The Morrigan",
@@ -3082,7 +3110,8 @@
     "period": "Manuscripts 11th-12th century, recording pre-existing oral/mythological material of the Ulster Cycle and Mythological Cycle",
     "cultural_tradition": "Irish mythology -- Ulster Cycle (Tain Bo Cuailnge) and Mythological Cycle (Cath Maige Tuired)",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "iron-age"
   },
   {
     "name": "Museum of Witchcraft and Magic",
@@ -3108,7 +3137,8 @@
     "origin_date": "1951 (founded by Cecil Williamson on the Isle of Man); relocated to Boscastle, 1960",
     "period": "Post-war Britain; the 2004 Boscastle flash flood is a further precisely dated modern event in the museum's history",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "modern-folklore"
   },
   {
     "name": "Mên Scryfa",
@@ -3134,7 +3164,8 @@
     "earliest_record": "The inscription itself is the earliest 'record'; scholars date it as contemporary with the post-Roman reoccupation and refortification of nearby Chûn Castle, during the period of native Cornish/Brythonic princely rule between the Roman departure and the coming of the English",
     "historical_setting": "The standing stone itself may be considerably older than the inscription (possibly Bronze Age in origin) and was reused/re-inscribed centuries later to commemorate Rialobran",
     "origin_type": "archaeological",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "early-medieval-britain"
   },
   {
     "name": "Mên-an-Tol",
@@ -3212,7 +3243,8 @@
     "period": "Late Neolithic to Bronze Age Cornwall (monument construction); documented antiquarian tradition from the early 17th century onward",
     "historical_setting": "No source has yet been found that confirms when the specific 'dancers turned to stone for profaning the Sabbath' legend was first attached to this particular row, as distinct from the general Cornish petrifaction motif shared with Long Meg and Her Daughters (earliest record 1586) and the Merry Maidens",
     "origin_type": "archaeological",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "bronze-age"
   },
   {
     "name": "Nodens",
@@ -3239,7 +3271,8 @@
     "earliest_record": "1980-81 excavations at Lydney Park, published in The Antiquaries Journal, revised the temple's dating; earlier scholarship (based on 1928-29 excavations, in which J.R.R. Tolkien participated) had proposed the later AD 364-7 date",
     "period": "Roman Britain; the site was earlier a 2nd-3rd century Romano-British iron-mining community before the temple's construction, with a further refurbishment in the 4th century",
     "origin_type": "archaeological",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "roman-britain"
   },
   {
     "name": "Nuckelavee",
@@ -3289,7 +3322,8 @@
     "earliest_record": "Composed in Iceland around 1200, drawing on older tradition and verse",
     "period": "Medieval Iceland (composition); the narrative itself spans roughly three centuries of Orkney earldom history",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "viking-age"
   },
   {
     "name": "Osmington White Horse",
@@ -3312,7 +3346,8 @@
     "origin_date": "1808",
     "period": "Georgian England; King George III's Weymouth visits, which the figure commemorates, ran from 1789 and are recorded to have ceased around the time of the carving",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Overtoun Bridge",
@@ -3335,7 +3370,8 @@
     "origin_date": "1895 (bridge completion)",
     "period": "Victorian Scotland (bridge construction); the dog-leap phenomenon is documented from the 1950s onward, with a further tragic incident in 1994",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "modern-folklore"
   },
   {
     "name": "Owlman of Mawnan",
@@ -3366,7 +3402,8 @@
     "historical_setting": "Mawnan, Cornwall, summer 1976 -- first reported by two girls (June and Vicky Melling) over St Mawnan and St Stephen's Church tower, with further claimed sightings in July 1976 by Sally Chapman, Barbara Perry, and Jane Greenwood",
     "cultural_tradition": "Modern Cornish cryptid/Fortean tradition, closely tied to Shiels' contemporaneous 'Morgawr' sea-serpent claims",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "modern-folklore"
   },
   {
     "name": "Padfoot",
@@ -3416,7 +3453,8 @@
     "earliest_record": "Thomas Potts's 'The Wonderfull Discoverie of Witches in the Countie of Lancaster' (1613), the court clerk's own contemporary account",
     "period": "Jacobean England",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "stuart-britain"
   },
   {
     "name": "Penhale Sands",
@@ -3470,7 +3508,8 @@
     "period": "Late Neolithic to Early Bronze Age, circa 1500 BC, part of the Hurlers three-stone-circle complex",
     "earliest_record": "Monument scheduled as part of 'The Hurlers: three stone circles with paired outlying stones' (Historic England list entry 1008117), designated 9 October 1981, protected area extended in 1994 to include the Pipers; earliest known written reference to the wider Hurlers site's petrification folklore is John Norden's description (written by 1610, not published until 1728, in Speculi Britanniae), describing the stones as resembling 'men performinge that pastime Hurlinge'",
     "origin_type": "archaeological",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "bronze-age"
   },
   {
     "name": "Piskie",
@@ -3587,7 +3626,8 @@
     "historical_setting": "Southend-on-Sea, Essex, a pedestrian underpass near Southend Victoria station / Shoebury",
     "cultural_tradition": "English contemporary urban legend, sustained through oral retelling, playground tradition and local social media",
     "origin_type": "oral-tradition",
-    "dating_confidence": "low"
+    "dating_confidence": "low",
+    "period_slug": "modern-folklore"
   },
   {
     "name": "Red Horse of Tysoe",
@@ -3677,7 +3717,8 @@
     "historical_setting": "Same manuscript tradition as the wider Mabinogi corpus (Pwyll, Pryderi, Manawydan), part of the courtly literary culture of medieval Wales",
     "cultural_tradition": "Welsh medieval literary tradition (the Mabinogi), with a proposed deeper root in Brittonic/Gaulish Celtic goddess tradition",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Rhitta Gawr",
@@ -3706,7 +3747,8 @@
     "historical_setting": "Legendary pre-Roman/sub-Roman 'Age of Arthur' setting as constructed in Geoffrey of Monmouth's pseudo-history, later absorbed into Welsh national/place-name lore",
     "cultural_tradition": "Welsh Arthurian legend and place-name folklore (llen gwerin) tied to Yr Wyddfa/Snowdon",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Robin Goodfellow",
@@ -3766,7 +3808,8 @@
     "historical_setting": "Prehistoric ceremonial/burial landscape on the Oxfordshire-Warwickshire border, later overlaid with early modern antiquarian folklore",
     "cultural_tradition": "English antiquarian petrification legend (a king and army turned to stone by a witch), attached to a genuine Neolithic/Bronze Age monument complex",
     "origin_type": "archaeological",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "bronze-age"
   },
   {
     "name": "Rudston Monolith",
@@ -3825,7 +3868,8 @@
     "historical_setting": "London; Sarah Whitehead's brother Philip Whitehead was a Bank of England clerk employed 1797-1810, convicted of forging a bill and executed on 29 January 1812. Sarah was kept from the news, then visited the Bank daily asking for him until the Directors paid her an allowance in 1818 to stop; her black mourning crepe earned her the nickname 'the Black Nun'",
     "cultural_tradition": "London urban legend / English Victorian ghost lore",
     "origin_type": "historical-event",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Sea Mither",
@@ -3999,7 +4043,8 @@
     "historical_setting": "County Durham, River Tees at Sockburn. Tied to the real Conyers Falchion, a steel falchion with bronze pommel and guard, dated by heraldic devices on the pommel (arms of Henry III and his brother Richard) to c.1260-1270, now held at Durham Cathedral. Ceremonial presentation of the falchion to incoming Bishops of Durham is documented from an 1396 inquest record; the tradition lapsed into private ceremony after 1826, was donated to the Cathedral in 1947, and was publicly revived in 1984.",
     "cultural_tradition": "English/Durham dragon-slayer legend layered onto a real ceremonial sword-of-tenure custom",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Spectre of Newby Church",
@@ -4027,7 +4072,8 @@
     "earliest_record": "Photograph taken in 1963 by the Reverend Kenneth F. Lord at the Church of Christ the Consoler on the Newby Hall estate, North Yorkshire. No specific day or month within 1963 was found. No contemporary 1960s press citation is known either; the earliest dated published account found in this search is a later retrospective, The People, 23 September 2012 ('World's most famous ghost pictures'), not a primary source for the original event.",
     "historical_setting": "Church of Christ the Consoler, Newby Hall estate, near Ripon, North Yorkshire",
     "origin_type": "historical-event",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "modern-folklore"
   },
   {
     "name": "Spriggan",
@@ -4086,7 +4132,8 @@
     "historical_setting": "South London districts including Clapham, Peckham, Old Ford, and Limehouse, 1837-1838",
     "cultural_tradition": "Victorian London urban legend and mass panic",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "victorian-britain"
   },
   {
     "name": "St Davids Cathedral",
@@ -4116,7 +4163,8 @@
     "historical_setting": "Valley of the River Alun, St Davids, Pembrokeshire, Wales",
     "cultural_tradition": "Welsh ecclesiastical and monastic tradition founded by the patron saint of Wales",
     "origin_type": "archaeological",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "St Trinian's Church",
@@ -4149,7 +4197,8 @@
     "historical_setting": "St Trinian's is a real roofless medieval chapel dedicated to St Ninian, a Manx National Heritage Scheduled Ancient Monument since 25 May 1908. Its ruins combine 12th-century Romanesque features with 13th-14th century walls over an earlier 6th-10th century burial site; the site may have passed to Premonstratensian canons around 1215. The buggane/tailor tale is a separate oral folk legend, first fixed in writing in 1890-1891, though an 18th-century anecdote about a clergyman's prank there suggests the story circulated orally well before that.",
     "cultural_tradition": "Manx folklore, buggane tradition",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Stanton Drew Stone Circles",
@@ -4177,7 +4226,8 @@
     "historical_setting": "The stone circles are a genuine Late Neolithic monument, English Heritage dates construction to around 2500 BC, one of the largest stone circle complexes in Britain. A 1997 geophysical survey found evidence of a large buried timber post structure within the Great Circle, prompting comparisons to Stonehenge's early timber phases. The 'petrified wedding party and the Devil fiddler' legend is a separate, much later oral tradition, first documented by antiquarian John Aubrey in 1664 and elaborated by John Wood the Elder around 1750, roughly 4,000 years after the monument's construction.",
     "cultural_tradition": "West Country English folklore, petrification/Devil's-fiddler legend type",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "prehistoric-britain"
   },
   {
     "name": "Stonehenge",
@@ -4210,7 +4260,8 @@
     "historical_setting": "One of Britain's best-dated prehistoric monuments; English Heritage documents construction across six phases from c.3000 BC to as late as 1520 BC (Late Neolithic to Bronze Age). The Merlin/giants legend is an entirely separate literary tradition, recorded nearly 2,500 years after construction began, in Geoffrey of Monmouth's Historia Regum Britanniae (c.1136), where the stone circle (the 'Giant's Dance') is said to have been transported by Merlin from Mount Killaraus in Ireland.",
     "cultural_tradition": "Arthurian/British legendary history (Geoffrey of Monmouth tradition)",
     "origin_type": "archaeological",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "prehistoric-britain"
   },
   {
     "name": "Stoor Worm",
@@ -4273,7 +4324,8 @@
     "historical_setting": "Roman occupation of Britain, province of Britannia, at the settlement of Aquae Sulis",
     "cultural_tradition": "Romano-British religious syncretism, the Celtic goddess Sulis merged with the Roman goddess Minerva",
     "origin_type": "archaeological",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "roman-britain"
   },
   {
     "name": "Sutton Hoo",
@@ -4303,7 +4355,8 @@
     "historical_setting": "Anglo-Saxon kingdom of East Anglia, likely reign of King Raedwald",
     "cultural_tradition": "Anglo-Saxon",
     "origin_type": "archaeological",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "early-medieval-britain"
   },
   {
     "name": "Taranis",
@@ -4332,7 +4385,8 @@
     "historical_setting": "Roman Gaul (literary source) and Roman Britain (epigraphic evidence, altar dated AD 154)",
     "cultural_tradition": "Gaulish/Celtic, Romano-British",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "roman-britain"
   },
   {
     "name": "Teran",
@@ -4388,7 +4442,8 @@
     "historical_setting": "Thornton Road, Ward End, Birmingham, numbers 32, 34 and 36",
     "cultural_tradition": "Modern English poltergeist/unexplained-phenomena report, notable for a formal police investigation rather than folklore transmission",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "modern-folklore"
   },
   {
     "name": "Thunor",
@@ -4415,7 +4470,8 @@
     "historical_setting": "Pre-Christian Anglo-Saxon England, concentrated in south-eastern England by place-name distribution",
     "cultural_tradition": "Anglo-Saxon/Germanic pagan religion, cognate with Norse Þórr and continental Germanic Donar",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "early-medieval-britain"
   },
   {
     "name": "Tiddy Mun",
@@ -4442,7 +4498,8 @@
     "historical_setting": "Lincolnshire Fens, Ancholme Valley, tied to the historical drainage of the fens beginning in the 17th century",
     "cultural_tradition": "Lincolnshire fenland spirit-of-place folklore, expressing resentment of land drainage and its ecological consequences",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "stuart-britain"
   },
   {
     "name": "Tintagel",
@@ -4474,7 +4531,8 @@
     "historical_setting": "Tintagel Castle headland, Cornwall; a high-status settlement in the 5th-7th centuries, later a 13th-century castle built by Richard, Earl of Cornwall (1230s), largely for its literary prestige rather than strategic value",
     "cultural_tradition": "Arthurian literary legend, deliberately attached to a genuine early medieval archaeological site",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "The Towans",
@@ -4510,7 +4568,8 @@
     "historical_setting": "The Towans, north Cornwall coast between Crantock/Perranporth and Gwithian/St Ives; St Gwithian's church (traditionally founded c. 490 AD) was itself buried by and later partly uncovered from shifting sand in the early 19th century",
     "cultural_tradition": "Cornish lost-city/buried-town legend, part of a wider West Country tradition of towns 'swallowed' as divine punishment",
     "origin_type": "oral-tradition",
-    "dating_confidence": "low"
+    "dating_confidence": "low",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Towednack",
@@ -4590,7 +4649,8 @@
     "historical_setting": "Rombalds Moor, between Ilkley Moor and Burley Moor, West Yorkshire",
     "cultural_tradition": "Bronze Age ritual stone circle with later English giant-folklore (Rombald, Cow and Calf Rocks, Great and Little Skirtful of Stones) layered on afterward",
     "origin_type": "archaeological",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "bronze-age"
   },
   {
     "name": "Uffington White Horse",
@@ -4622,7 +4682,8 @@
     "historical_setting": "Uffington Castle hillfort, Berkshire Downs (historic county Berkshire, now administratively Oxfordshire), overlooking Dragon Hill and Wayland's Smithy",
     "cultural_tradition": "Prehistoric British hill-figure tradition, the oldest known hill figure in Europe",
     "origin_type": "archaeological",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "bronze-age"
   },
   {
     "name": "Up Helly Aa",
@@ -4650,7 +4711,8 @@
     "historical_setting": "Lerwick, Shetland",
     "cultural_tradition": "A modern Victorian-era Shetland tradition, retrospectively styled with Norse-revival imagery rather than an ancient Norse survival",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "victorian-britain"
   },
   {
     "name": "Watlington White Mark",
@@ -4680,7 +4742,8 @@
     "historical_setting": "Watlington Hill, Oxfordshire, in the Chilterns; now owned by the National Trust",
     "cultural_tradition": "18th-century English 'landscape folly' hill-figure tradition, alongside neighbouring Whiteleaf Cross, Bledlow Cross, and the Whipsnade White Lion",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Waun Mawn",
@@ -4712,7 +4775,8 @@
     "historical_setting": "Preseli Hills, Pembrokeshire, Wales, the same region from which Stonehenge's bluestones are known to originate",
     "cultural_tradition": "Prehistoric Welsh/British megalithic tradition; a 12th-century literary legend (Geoffrey of Monmouth) separately credits Merlin with magically transporting the Giants' Dance stones to form Stonehenge, now viewed by some archaeologists as a possible folk-memory echo of a real Neolithic stone transport from Wales",
     "origin_type": "archaeological",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "prehistoric-britain"
   },
   {
     "name": "Wayland the Smith",
@@ -4740,7 +4804,8 @@
     "historical_setting": "Associated in English folklore specifically with Wayland's Smithy, Oxfordshire (historically Berkshire)",
     "cultural_tradition": "Pan-Germanic smith-hero legend (cognate with Norse Völundr), localised onto an English Neolithic long barrow",
     "origin_type": "oral-tradition",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "early-medieval-britain"
   },
   {
     "name": "Wayland's Smithy",
@@ -4768,7 +4833,8 @@
     "historical_setting": "Ashbury, Oxfordshire (historically Berkshire), near the Uffington White Horse",
     "cultural_tradition": "Neolithic chambered long barrow tradition, later folklorised as the forge of the Germanic smith-hero Wayland",
     "origin_type": "archaeological",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "prehistoric-britain"
   },
   {
     "name": "Whetstones",
@@ -4801,7 +4867,8 @@
     "historical_setting": "Beneath Corndon Hill, Church Stoke, on the Powys/Shropshire border. One of five stone circles historically recorded in the area, alongside the surviving Mitchell's Fold and Hoarstones; nearly all its stones were destroyed by blasting in the 1860s",
     "cultural_tradition": "Bronze Age ritual stone-circle tradition of the Welsh Marches, with a later petrification-curse folk motif (a witch turned to stone for over-milking a fairy cow) layered on afterward",
     "origin_type": "archaeological",
-    "dating_confidence": "low"
+    "dating_confidence": "low",
+    "period_slug": "bronze-age"
   },
   {
     "name": "Whiteleaf Cross",
@@ -4914,7 +4981,8 @@
     "historical_setting": "Edinburgh Castle Esplanade, at its junction with the Royal Mile",
     "cultural_tradition": "Victorian/Edwardian civic memorial tradition, commemorating early modern Scottish witch persecution",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "victorian-britain"
   },
   {
     "name": "Witchknowe Park",
@@ -4942,7 +5010,8 @@
     "historical_setting": "Inverkeithing, Fife",
     "cultural_tradition": "Scottish witch-persecution history, commemorated in a place-name ('witch hill')",
     "origin_type": "historical-event",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "stuart-britain"
   },
   {
     "name": "Withypool Stone Circle",
@@ -4972,7 +5041,8 @@
     "historical_setting": "Withypool Hill, Exmoor, Somerset. One of only two surviving stone circles on Exmoor, alongside Porlock Stone Circle",
     "cultural_tradition": "British Late Neolithic/Early Bronze Age stone-circle tradition, comparable to circles found on Dartmoor",
     "origin_type": "archaeological",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "bronze-age"
   },
   {
     "name": "Woden",
@@ -4999,7 +5069,8 @@
     "historical_setting": "Anglo-Saxon England generally; place-names across southern England preserve his name",
     "cultural_tradition": "Anglo-Saxon/Germanic pagan religion, cognate with Norse Óðinn; his role shifted from war-god to legitimising royal ancestor as Christianity spread",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "early-medieval-britain"
   },
   {
     "name": "Worm of Linton",
@@ -5028,7 +5099,8 @@
     "historical_setting": "Linton Hill, Roxburghshire, Scottish Borders, the worm's lair, still known locally as the 'Worm's Den'",
     "cultural_tradition": "Scottish Borders dragon-slaying legend, tied to a real, traceable landowning family (the Somervilles of Lariston/Linton)",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Wulver",
@@ -5087,7 +5159,8 @@
     "historical_setting": "Dinas Emrys, Snowdonia, Wales; set within the narrative of the 5th-century British king Vortigern's collapsing fortress",
     "cultural_tradition": "Welsh national foundation legend; the red dragon later became the central symbol of the Welsh flag",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Yester Castle",
@@ -5116,7 +5189,8 @@
     "historical_setting": "Gifford, East Lothian, Scotland",
     "cultural_tradition": "Scottish wizard/hobgoblin-builder legend attached to a real historical lord and a real, still-surviving underground vaulted chamber",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Zennor",
@@ -5146,7 +5220,8 @@
     "historical_setting": "St Senara's Church, Zennor, and Pendour Cove, on the north Cornwall coast",
     "cultural_tradition": "Cornish mermaid-lure legend, unusually anchored to a specific, precisely-datable physical artefact (the bench-end carving) rather than only a textual record",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Black Annis",
@@ -5333,7 +5408,8 @@
     "historical_setting": "Demolition/rebuilding of the old parish church at Renwick, Cumbria, with the tithe-exemption claim for the Tallentire family of Scalehouses tested (and not upheld) by the 1842 Tithe Commutation Schedule",
     "cultural_tradition": "Local Cumbrian legend blending church history with cockatrice/basilisk bestiary lore; a 15th-century misericord carving of a cockatrice in Carlisle Cathedral shows the creature was already part of regional visual/cultural tradition well before the legend's earliest written record",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Fad Felen",
@@ -5532,7 +5608,8 @@
     ],
     "earliest_record": "The earliest documented Thanet-area sighting located is the July 1917 encounter off North Foreland (see below); a 1999 secondary source (Neil Arnold, Shadows of the Sea) references an undated earlier sighting off Folkestone Pier by a 'Mr Wire' but gives no date. Could not verify the entry's claim of sightings spanning 'three centuries' -- all sightings found in research are from the 20th century (1917, 1934 Herne Bay, 1950 Cliftonville, 1957 and 1968 further along the coast at Seaford, Sussex).",
     "period": "20th century (primarily 1917-1968), per sources found; earlier centuries not corroborated",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "modern-folklore"
   },
   {
     "name": "Stratford Lyon",
@@ -5559,7 +5636,8 @@
     ],
     "earliest_record": "Local New Forest oral tradition, legend set c.1400; earliest written trace in Stratford family bible marginalia (18th century, per local tradition)",
     "origin_type": "oral-tradition",
-    "dating_confidence": "low"
+    "dating_confidence": "low",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Veasta",
@@ -5875,7 +5953,8 @@
     "historical_setting": "Scottish royal heraldry; two unicorns supported the royal arms until the 1603 Union of the Crowns, when James VI/I replaced one with an English lion as a display of unity",
     "cultural_tradition": "Medieval European bestiary belief (the unicorn tamed only by a virgin) adapted into Scottish royal heraldic symbolism",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Griffin",
@@ -5981,7 +6060,8 @@
     "earliest_record": "Geoffrey of Monmouth's works (c.1135-39) gave Merlin his definitive literary form; the older Welsh prophet-figure Myrddin he partly draws on is independently attested earlier, in the 10th-century prophetic poem Armes Prydein (part of the Book of Taliesin) and in the Black Book of Carmarthen (early 13th-century manuscript, though preserving older material)",
     "period": "Older Welsh Myrddin tradition, attested by the 10th century; definitive Galfridian literary form, 1135-39",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Gawain",
@@ -6033,7 +6113,8 @@
     "earliest_record": "Chrétien de Troyes's 'Lancelot, le Chevalier de la Charrette' ('The Knight of the Cart'), commissioned by Marie de Champagne and completed (per the text's own account) by Godefroi de Leigni after Chrétien did not finish it",
     "period": "High Medieval France (Old French romance composition)",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Corineus",
@@ -6357,7 +6438,8 @@
     "historical_setting": "Not tied to a specific historical event; part of the legendary Fenian Cycle centred on the River Boyne, County Meath, associated with the druid/poet Finnegas and the youth of Fionn mac Cumhaill",
     "cultural_tradition": "Irish mythology, Fenian Cycle (an Fhiannaiocht), transmitted through medieval Irish manuscript literature built on earlier oral storytelling tradition",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "iron-age"
   },
   {
     "name": "Helen Duncan",
@@ -6492,7 +6574,8 @@
     "period": "Medieval Irish literature; text composed/redacted c. 9th-12th century, surviving manuscripts 14th-16th century",
     "cultural_tradition": "Irish mythology, Mythological Cycle (Tuatha De Danann)",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "iron-age"
   },
   {
     "name": "Cú Chulainn",
@@ -6588,7 +6671,8 @@
     "historical_setting": "Ireland, as recorded within the medieval Christian monastic literary tradition",
     "cultural_tradition": "Irish mythological cycle; later folk memory identifies their descendants with the aos sí, the fairy folk of Irish tradition",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "iron-age"
   },
   {
     "name": "Banshee",
@@ -6764,7 +6848,8 @@
     "earliest_record": "The Aengus/Dagda myth belongs to the Lebor Gabála Érenn tradition, the same textual family (compiled by an anonymous 11th-century writer, fullest recension in the Book of Leinster, c.1160) behind several other entries in the archive",
     "period": "Neolithic Ireland (monument construction, c.3200 BC); Early Medieval Ireland (earliest manuscript witness to the mythological material, 11th-12th century)",
     "origin_type": "archaeological",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "prehistoric-britain"
   },
   {
     "name": "Croagh Patrick",
@@ -6848,7 +6933,8 @@
     "period": "Neolithic Ireland (cairn construction); Early Medieval Ireland (Dindshenchas attestation of the legend, 12th-century manuscript)",
     "historical_setting": "Modern scholarship treats Medb as a euhemerised sovereignty goddess rather than a historical queen, and the cairn itself predates any plausible historical 'Medb' by at least two millennia. The attribution is medieval folk-mythology layered onto a much older monument",
     "origin_type": "oral-tradition",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "iron-age"
   },
   {
     "name": "Queen Medb",
@@ -6879,7 +6965,8 @@
     "historical_setting": "Legendary Iron Age/pre-Christian Connacht and Ulster, centred on Medb's court at Cruachan (Rathcroghan, Co. Roscommon) rather than Sligo specifically; the Táin Bó Cúailnge narrates her cattle raid against Ulster",
     "cultural_tradition": "Ulster Cycle of early Irish literature/mythology; older scholarship (e.g. Rees & Rees) reads Medb as a euhemerized sovereignty goddess of Iron Age origin, while more recent scholarship (e.g. Sarah Sheehan) treats her primarily as a literary character shaped by medieval scribal/monastic redaction",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "iron-age"
   },
   {
     "name": "Lough Derg (St Patrick's Purgatory)",
@@ -6902,7 +6989,8 @@
     "earliest_record": "The Tractatus de Purgatorio Sancti Patricii, written by an English monk known only as 'H.' around 1184",
     "period": "High Medieval Europe (text composition, 1184); the pilgrimage tradition it describes is understood to be older still, and continues largely unbroken to the present day",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Bartholomew Roberts",
@@ -7044,7 +7132,8 @@
     "historical_setting": "Born Dundee, Scotland; later based in New York City; executed at Wapping, London, 23 May 1701",
     "cultural_tradition": "Historical privateer/pirate whose disputed trial (widely regarded by modern historians as an establishment cover-up) gave rise to enduring buried-treasure legend and folklore",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "stuart-britain"
   },
   {
     "name": "Blackbeard",
@@ -7125,7 +7214,8 @@
     "earliest_record": "Contemporary chronicles: Hall's Chronicle (English) and the histories of Bishop John Leslie and George Buchanan (Scottish); his 1490s trading voyages are also recorded in the Ledger of Andrew Halyburton",
     "historical_setting": "Scottish maritime privateering under a royal letter of marque, reign of James IV",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "tudor-britain"
   },
   {
     "name": "Francis Drake",
@@ -7232,7 +7322,8 @@
     "earliest_record": "Contemporary trial records document his 1725 London hanging; Sir Walter Scott's novel 'The Pirate' (published late 1821, dated 1822) is based on Gow's life (fictionalised as Captain Cleveland)",
     "period": "Georgian Britain (mutiny and piracy, 1724-25); fictionalised in print a century later (1821-22)",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Mary Read",
@@ -7257,7 +7348,8 @@
     "earliest_record": "Contemporary trial records document her 1720 capture and trial; Captain Charles Johnson's 'A General History of the Pyrates' (1724) is the primary early narrative source",
     "period": "Golden Age of Piracy (career and trial, 1720); popularised in print four years later (1724)",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Jan Tregeagle",
@@ -7286,7 +7378,8 @@
     "earliest_record": "Robert Hunt's 'Popular Romances of the West of England' (First Series, 1865)",
     "period": "The historical Jan Tregeagle was a real 17th-century steward to Lord Robartes of Lanhydrock (the same figure who appears in the Dozmary Pool tradition); the supernatural legend was well established in Cornish oral tradition by 1865",
     "origin_type": "oral-tradition",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "stuart-britain"
   },
   {
     "name": "Am Fear Liath Mòr",
@@ -7341,7 +7434,8 @@
     "period": "Carving, late 13th century; narrative legend, late 19th century (1890s onward), a gap of over 600 years",
     "historical_setting": "A related but distinct medieval proverb, 'He looks as the Devil over Lincoln', is attested from at least the mid-16th century (recorded in state papers by 1578) and alludes generally to grotesque carvings on the cathedral, but contains no narrative of a specific mischievous imp and should not be conflated with the modern legend",
     "origin_type": "oral-tradition",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Dragon of Strathmartine",
@@ -7536,7 +7630,8 @@
     "historical_setting": "Wandlebury Ring, Gog Magog Hills, Cambridgeshire",
     "cultural_tradition": "English ghost-lore attached to a genuine Iron Age hillfort, entangled with a disputed 20th-century archaeological claim",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "iron-age"
   },
   {
     "name": "Wiltshire Moonrakers",
@@ -7565,7 +7660,8 @@
     "historical_setting": "Crammer Pond, Devizes (then part of the parish of Bishop's Cannings), Wiltshire; some accounts name the smugglers involved as John Chapman of Devizes and 'Old Mr Mabett' of Tilshead",
     "cultural_tradition": "English smuggler trickster-tale tradition; became an enduring regional nickname and badge of local identity ('Moonrakers')",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Dead Men of Burton-on-Trent",
@@ -7619,7 +7715,8 @@
     "earliest_record": "The Mistley parish register confirms his death date and burial; the counter-legend that he was hanged by his own swimming test, which is apocryphal, is first recorded in William Andrews's 'Bygone Essex' (1892)",
     "period": "English Civil War era (1644-47, historical witch-hunting career); counter-legend recorded in the late-Victorian folklore-collecting tradition (1892)",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "stuart-britain"
   },
   {
     "name": "Our Lady of Walsingham",
@@ -7643,7 +7740,8 @@
     "origin_date": "1061 (traditional foundation legend)",
     "period": "Medieval England; the shrine drew pilgrims for nearly five centuries until its destruction at the Dissolution (Henry VIII's reign, 1530s); Erasmus's visit and written description dates to 1512",
     "origin_type": "oral-tradition",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "early-medieval-britain"
   },
   {
     "name": "Martin Mere",
@@ -7666,7 +7764,8 @@
     "sources": [
       "https://en.wikipedia.org/wiki/Martin_Mere",
       "https://www.wwt.org.uk/wetland-centres/martin-mere"
-    ]
+    ],
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Chalice Well",
@@ -7723,7 +7822,8 @@
     "historical_setting": "Firmly historical-event: Edward I's 1296 removal of the stone from Scone Abbey to Westminster Abbey, its 1950 theft, and its 1996 return to Scotland are all precisely documented. Genuine tension worth flagging: Historic Environment Scotland's own catalogue dates the surviving physical stone to '13th century; Medieval' and geologically sources it to the Scone Sandstone Formation quarried near Scone Palace, which sits awkwardly against the earlier legendary claims (Kenneth MacAlpin bringing it to Scone in the 9th century, and the still-older Jacob's-pillow and Lia Fail traditions) -- part of why some historians argue the stone Edward I took in 1296 may not have been the original ancient coronation stone.",
     "cultural_tradition": "Scottish monarchy and coronation tradition",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Nanteos Cup",
@@ -7753,7 +7853,8 @@
     "earliest_record": "Traditions of the cup's healing power and construction from the True Cross were first printed in 1878 (Archaeologia Cambrensis, following its exhibition at the Cambrian Archaeological Association); the earliest specific Grail comparison appears in William Robert Hall's 1879 guidebook 'Aberystwyth — What to see and how to see it'; the explicit claim that it was the Holy Grail itself was popularised in 1905 by Ethelwyn Mary Amery's book 'Sought and Found: A Story of the Holy Grail'",
     "period": "Late-Victorian to Edwardian Wales (1878-1905); the Grail identification is 'a later addition... first appearing in Victorian and Edwardian accounts'",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "victorian-britain"
   },
   {
     "name": "Glastonbury Holy Thorn",
@@ -7839,7 +7940,8 @@
     "historical_setting": "Probably born near Paisley, Renfrewshire; victory at Stirling Bridge, 1297; executed at Smithfield, London, 1305",
     "cultural_tradition": "Scottish national hero and 'Guardian of Scotland'; the historical record was substantially expanded by later folk and literary tradition, especially Blind Harry's poem",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Robin Hood",
@@ -7870,7 +7972,8 @@
     "historical_setting": "Medieval England; Piers Plowman's reference implies the Robin Hood ballad tradition was already popular and familiar enough by 1377 to be used as a byword for idle recitation instead of proper prayers",
     "cultural_tradition": "English outlaw/greenwood ballad tradition",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Sir Percival",
@@ -7898,7 +8001,8 @@
     "period": "Late 12th century (French verse romance tradition). The Welsh cognate tale Peredur son of Efrawg survives in the White Book of Rhydderch (c.1325-1350) and Red Book of Hergest (c.1375-1425) -- roughly two centuries after Chretien's poem -- and is generally treated by scholars as a translation/adaptation of, or a text in dialogue with, the French Conte du Graal tradition, though it omits the grail itself and contains unique episodes (e.g. Angharad Golden-Hand, the Empress of Constantinople) not found in Chretien.",
     "cultural_tradition": "French Arthurian verse romance (Chretien de Troyes); parallel/derivative Middle Welsh prose tradition (Three Welsh Romances)",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Sir Galahad",
@@ -7926,7 +8030,8 @@
     "period": "early-to-mid 13th century (c.1220-1230)",
     "cultural_tradition": "French Arthurian literary tradition (Vulgate/Lancelot-Grail Cycle), associated with Cistercian religious influence",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Sir Bedivere",
@@ -7959,7 +8064,8 @@
     "period": "9th-10th century (earliest Welsh poetic attestation, Pa Gur and Englynion y Beddau); c.1136 (earliest Latin chronicle attestation, Geoffrey of Monmouth)",
     "cultural_tradition": "Medieval Welsh Arthurian tradition, later absorbed into Anglo-Norman/French Arthurian romance",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Sir Tristan",
@@ -7989,7 +8095,8 @@
     "period": "12th-century Anglo-Norman literary flourishing of the romance, with a possible 6th-century historical/inscriptional root for the name Drystan/Tristan",
     "cultural_tradition": "Anglo-Norman/French courtly romance; Cornish/Brittonic legendary and epigraphic tradition (Welsh Triads, Tristan Stone)",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Sir Kay",
@@ -8021,7 +8128,8 @@
     "period": "Composition date of Pa Gur is disputed: Kenneth Jackson (1959) called it 'probably older than the Norman period' without a precise date; Koch has proposed as early as the 8th-9th century; Bromwich, Bollard and Jarman favoured the 10th-11th century; more recent scholarly opinion has tended toward c.1100. Culhwch and Olwen is usually dated on linguistic grounds to c.1100 (11th century), possibly the earliest surviving Arthurian tale, though a 2005 reassessment by Simon Rodway argued for the later 12th century instead.",
     "cultural_tradition": "Medieval Welsh (Old Welsh / Middle Welsh) literary and oral tradition",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Mordred",
@@ -8046,7 +8154,8 @@
     "earliest_record": "The Annales Cambriae, compiled in the 10th century from older material, is the earliest surviving written mention of both Arthur and Medraut, though it does not itself say they fought on opposite sides; Geoffrey of Monmouth's Historia Regum Britanniae (1136), already named in this entry's text, is the source of the now-standard traitor narrative",
     "period": "Early Medieval Wales (earliest annalistic record, 10th-century compilation of material referring to 537); definitive literary traitor role established 1136",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Ragnar Lothbrok",
@@ -8078,7 +8187,8 @@
     "historical_setting": "The independently historical event behind the legend is the Great Heathen Army's invasion of Anglo-Saxon England, recorded in the Anglo-Saxon Chronicle as beginning in 865 CE; the army captured York in Northumbria in 866-867. The Chronicle names the invasion's leaders as Ivar, Halfdan and (in later tradition) Ubba, and does not itself mention Ragnar or a revenge motive -- that connection comes only from the later Norse sagas",
     "cultural_tradition": "Old Norse saga literature (Ragnars saga lodbrokar, Ragnarssona thattr, Krakumal) and Latin chronicle tradition (Saxo Grammaticus); scholarship (notably Rory McTurk, Studies in Ragnars saga lodbrokar and its Major Scandinavian Analogues, Oxford, 1991) argues Ragnar is a composite legendary figure fusing several historical/legendary persons rather than a single historical individual",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "viking-age"
   },
   {
     "name": "Ivar the Boneless",
@@ -8134,7 +8244,8 @@
     "earliest_record": "Acallam na Senórach ('Colloquy of the Old Men', c.1200), the source of Oisin's dialogue with St Patrick, and the same text that dates the Fionn mac Cumhaill and Clíodhna entries",
     "period": "Late Medieval Ireland (Acallam composition, c.1200)",
     "origin_type": "oral-tradition",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "iron-age"
   },
   {
     "name": "Diarmuid and Grainne",
@@ -8215,7 +8326,8 @@
     "earliest_record": "Nuada's story is told in Cath Maige Tuired Cunga ('The First Battle of Mag Tuired'), a companion text to Cath Maige Tuired (the Second Battle), which dates the Lugh entry; both share a similar manuscript history, with the earliest substantial surviving witness in a 16th-century manuscript tradition, though underlying material is assessed by scholars as considerably older",
     "period": "Early Medieval Ireland (underlying material); 16th-century manuscript survival",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "iron-age"
   },
   {
     "name": "Branwen",
@@ -8304,7 +8416,8 @@
     "historical_setting": "Medieval Wales; legendary pre-Norman/early-medieval narrative setting",
     "cultural_tradition": "Welsh mythological cycle, the Four Branches of the Mabinogi",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Each-Uisge",
@@ -8503,7 +8616,8 @@
     "historical_setting": "coastal Gwynedd/Conwy Bay, legendary 6th-century Welsh kingdom",
     "cultural_tradition": "Welsh 'lost land' / Atlantis-type legend, related to Cantre'r Gwaelod",
     "origin_type": "oral-tradition",
-    "dating_confidence": "low"
+    "dating_confidence": "low",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Fairy Flag of Dunvegan",
@@ -8557,7 +8671,8 @@
       "https://www.historic-uk.com/HistoryUK/HistoryofEngland/Phantom-Battle-of-Edgehill/",
       "https://historicengland.org.uk/listing/the-list/list-entry/1000009",
       "https://historicengland.org.uk/content/docs/listing/battlefields/edgehill/"
-    ]
+    ],
+    "period_slug": "stuart-britain"
   },
   {
     "name": "Brahan Seer",
@@ -8639,7 +8754,8 @@
     "earliest_record": "Newes from Scotland, a pamphlet printed in London in 1591, the earliest printed British document dedicated to a witchcraft trial; the confessions were later folded into King James VI's Daemonologie (1597)",
     "period": "1590-1592, reign of James VI",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "tudor-britain"
   },
   {
     "name": "Pittenweem Witch Trials",
@@ -8664,7 +8780,8 @@
     "earliest_record": "Contemporary Scottish court and kirk-session records, catalogued in the University of Edinburgh's Survey of Scottish Witchcraft database; the mob killing of Janet Cornfoot took place 30 January 1705 and was investigated by the Privy Council",
     "period": "1704-1705",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "stuart-britain"
   },
   {
     "name": "Grey Man of Ben MacDhui",
@@ -8725,7 +8842,8 @@
     "historical_setting": "Kingdom of Gwynedd; traditionally a daughter of King Brychan Brycheiniog",
     "cultural_tradition": "Welsh hagiographic/pilgrimage tradition, Llanddwyn Island",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Hartlepool Monkey",
@@ -8784,7 +8902,8 @@
     "period": "Swithun died 862; reburial and associated storm legend dated to 15 July 971",
     "historical_setting": "Winchester Cathedral (Old Minster), Anglo-Saxon England",
     "origin_type": "historical-event",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "early-medieval-britain"
   },
   {
     "name": "Sawney Bean",
@@ -8840,7 +8959,8 @@
     "period": "Mid-12th-century literary origin (Anglo-Norman Britain), later developed through the Old French Vulgate and Post-Vulgate Cycles and Malory's Le Morte d'Arthur (1485)",
     "historical_setting": "Arthurian Britain / literary Isle of Avalon",
     "cultural_tradition": "Arthurian literary tradition (the Matter of Britain)",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Robert the Bruce",
@@ -8874,7 +8994,8 @@
     "historical_setting": "Robert the Bruce (1274-1329) was crowned King of Scots in March 1306, suffered defeats at Methven and Dail Righ later that year, and went into hiding over the winter of 1306-1307, reportedly including on Rathlin Island, before returning to campaign and eventually winning independence at Bannockburn (1314). The spider tale is not part of any contemporary 14th-century account of these events.",
     "cultural_tradition": "Scottish (and Scots-Irish/Ulster-Scots, via the Rathlin Island association) folk and literary tradition; similar 'try, try again' persistence motifs appear independently in Jewish tales of King David and Persian tales of Tamerlane and an ant, suggesting a migratory folk-motif rather than a uniquely Scottish invention",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Witch-hare of Dartmoor",
@@ -8930,7 +9051,8 @@
     "period": "Ulster Cycle of early Irish literature",
     "historical_setting": "Pre-Christian Ulster; Emain Macha (Navan Fort) as the Ulstermen's royal seat",
     "cultural_tradition": "Ulster Cycle of Irish mythology",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "iron-age"
   },
   {
     "name": "Abhartach",
@@ -9041,7 +9163,8 @@
     "period": "Custom recorded as witnessed/reported during Martin's tour of Lewis in 1699 (part of his wider Western Isles travels of 1695-1699, undertaken under the patronage of Hans Sloane), published 1703",
     "cultural_tradition": "Hebridean (Isle of Lewis) folk custom",
     "origin_type": "oral-tradition",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "stuart-britain"
   },
   {
     "name": "Dinas Emrys",
@@ -9279,7 +9402,8 @@
     "historical_setting": "Cnoc Áine (Knockainey), County Limerick, Munster, her cult centre, where midsummer fire rituals were historically performed",
     "cultural_tradition": "Irish goddess of summer, sovereignty and fertility; her cult's midsummer fire-carrying ritual (torches of burning straw taken up her hill and through the fields and herds) persisted as a folk custom long after her literary attestation",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "iron-age"
   },
   {
     "name": "Crom Cruach",
@@ -9335,7 +9459,8 @@
     "historical_setting": "Brí Léith (Ardagh Hill), County Longford, and Tara, within the wider Irish mythological cycle",
     "cultural_tradition": "Irish mythological cycle tale, part of the Ulster/Mythological Cycle material",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "early-medieval-britain"
   },
   {
     "name": "Fachan",
@@ -9527,7 +9652,8 @@
     "earliest_record": "Gerald of Wales's account of the lake's wonders, written during his 1188 tour with Archbishop Baldwin",
     "period": "High Medieval Wales (earliest written record, 1188); the crannog itself is archaeologically dated to AD 889-893, and its destruction is recorded in the Anglo-Saxon Chronicle under 916",
     "origin_type": "oral-tradition",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Barclodiad y Gawres",
@@ -9588,7 +9714,8 @@
     "historical_setting": "Shropshire and Herefordshire generally; Clun Forest and the Stiperstones specifically for the later ghostly-cavalcade tradition",
     "cultural_tradition": "English fairy-bride/Otherworld-wife folk motif, attached to a real, documented Anglo-Saxon thegn who led resistance to William the Conqueror before submitting in 1070",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "norman-britain"
   },
   {
     "name": "Tom Hickathrift",
@@ -9647,7 +9774,8 @@
     "period": "17th century",
     "historical_setting": "Mary Fitz (Lady Howard), born 1 August 1596, died 17 October 1671, a real historical figure whose life underlies the legend",
     "cultural_tradition": "Devon/Dartmoor ghost-coach folklore",
-    "dating_confidence": "low"
+    "dating_confidence": "low",
+    "period_slug": "stuart-britain"
   },
   {
     "name": "Kilkenny Witch Trials",
@@ -9674,7 +9802,8 @@
     "earliest_record": "Contemporary ecclesiastical proceedings against Dame Alice Kyteler, recorded under Bishop Richard de Ledrede; Petronilla de Meath burned for heresy/witchcraft on 3 November 1324",
     "period": "Medieval Ireland (14th century, Anglo-Norman Kilkenny)",
     "cultural_tradition": "Irish ecclesiastical/legal history, one of Europe's earliest documented witchcraft-as-heresy prosecutions",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Donn Fírinne",
@@ -9754,7 +9883,8 @@
     "period": "Early medieval Irish Mythological Cycle, preserved in a later manuscript",
     "historical_setting": "Pre-Christian mythological setting, the Tuatha Dé Danann's war with the Fomorians",
     "cultural_tradition": "Irish Mythological Cycle place-name legend (dindsenchas-style)",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "early-medieval-britain"
   },
   {
     "name": "Marool",
@@ -9861,7 +9991,8 @@
     "historical_setting": "Porth Clais, Pembrokeshire (where Twrch Trwyth lands from Ireland), and a destructive trail across Wales toward Cornwall, within the wider Arthurian hunting narrative of Culhwch and Olwen",
     "cultural_tradition": "Welsh medieval prose narrative, part of what later became known as the Mabinogion collection",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Devil's Bridge",
@@ -9974,7 +10105,8 @@
     "period": "In circulation and set down in writing by the 1720s-30s",
     "historical_setting": "Peel Castle, Isle of Man, under an early-18th-century garrison",
     "cultural_tradition": "Manx phantom black dog tradition (Moddey Dhoo / Mauthe Doog)",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Black Dog of Bouley Bay",
@@ -10030,7 +10162,8 @@
     "historical_setting": "Kingdom of Ossory (County Kilkenny/County Laois); the priest's encounter with the wolves is said to take place in a forest on the borders of Meath",
     "cultural_tradition": "Irish werewolf/curse legend, recorded through the lens of a 12th-century Anglo-Norman cleric's ethnographic writing about Ireland",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "St Kevin of Glendalough",
@@ -10057,7 +10190,8 @@
     "historical_setting": "Kevin (Irish: Coemgen) is traditionally dated c.498-618 AD (born 498, died 3 June 618), a very long lifespan (120 years) typical of hagiographic exaggeration rather than a reliably documented lifespan. No contemporaneous material survives about his life.",
     "cultural_tradition": "Irish Christian hagiography, Glendalough/Wicklow monastic tradition",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Byard's Leap",
@@ -10117,7 +10251,8 @@
     "historical_setting": "Guthlac himself: a historical Mercian nobleman-turned-hermit, born c.674, died 11 April 714 at Crowland in the Lincolnshire Fens -- reasonably well documented biographical dates. The demon-haunting and miracle narratives are literary elaborations first fixed in writing by Felix roughly 16-26 years after Guthlac's death.",
     "cultural_tradition": "Anglo-Saxon Christian hagiography, Mercian/East Anglian",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "early-medieval-britain"
   },
   {
     "name": "Haxey Hood",
@@ -10650,7 +10785,8 @@
     "historical_setting": "Helier's traditional martyrdom date is given as 555 AD, allegedly killed by Saxon raiders on the tidal islet off Jersey later named after him. Scholars (G.R. Balleine, Charles Grosset) note the Vita contains anachronistic elements -- e.g. it describes 'Norman pirates,' which correspond to 9th-10th century Viking raids rather than plausible 6th-century raiders -- casting doubt on the reliability of the traditional 555 date and even on the account's basic historicity.",
     "cultural_tradition": "Jersey/Channel Islands Christian hagiography, linked to the cult of St Marculf (the Vita is said to draw on two earlier lives of Marculf, recensions A and B)",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Dun Cow of Dunsmore Heath",
@@ -10732,7 +10868,8 @@
     "pronunciation": "OL-li-fisht",
     "period": "Some sources place the earliest recorded tales of the Oilliphéist in the 12th century, though this has not been traced to a specific named manuscript or text",
     "origin_type": "oral-tradition",
-    "dating_confidence": "low"
+    "dating_confidence": "low",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "St Magloire of Sark",
@@ -10761,7 +10898,8 @@
     "historical_setting": "Magloire (Magloire of Dol) traditionally died c.575 AD, per Butler's dating, though the hagiography itself supplies no specific dates -- this figure is explicitly flagged by sources as 'highly approximate.' According to the legend, he resigned an archbishopric (traditionally Dol), founded a monastic community of 62 monks on Sark, and served as abbot there until his death.",
     "cultural_tradition": "Breton/Celtic Christian hagiography, part of the 'Seven Founder Saints of Brittany' tradition circle",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Llyn Barfog",
@@ -10796,7 +10934,8 @@
     "dating_confidence": "medium",
     "earliest_record": "Elias Owen, Welsh Folk-Lore: A Collection of the Folk-Tales and Legends of North Wales (Oswestry & Wrexham: Woodall, Minshall, 1896; originally the prize essay of the National Eisteddfod, 1887)",
     "period": "Localised tale recorded in print in the late 19th century; the afanc motif itself has medieval Welsh roots (avanc named in the Red Book of Hergest and in 15th-century poet Lewys Glyn Cothi)",
-    "origin_type": "oral-tradition"
+    "origin_type": "oral-tradition",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Screaming Skull of Bettiscombe",
@@ -10827,7 +10966,8 @@
     "historical_setting": "Bettiscombe Manor, Dorset, England. Local legend long linked the skull to a West Indian slave owned by the Pinney family (Azariah Pinney), though a 1963 forensic examination found it to be the skull of a woman roughly 3,000-4,000 years old, unconnected to the Pinneys or slavery",
     "cultural_tradition": "Dorset / West Country English folklore; part of the broader English 'screaming skull' guardian-relic tradition",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Brother Simon of Swineshead",
@@ -10888,7 +11028,8 @@
     "historical_setting": "Tregaron, Ceredigion, and Dinas Hill cave, Wales; he later became a respected antiquary, genealogist, poet, and magistrate/mayor of Brecon",
     "cultural_tradition": "Welsh trickster/outlaw folk-hero tradition ('the Welsh Robin Hood'), layered onto a documented historical antiquary and genealogist",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "tudor-britain"
   },
   {
     "name": "Njuggle",
@@ -10968,7 +11109,8 @@
     "earliest_record": "The carving history runs in three stages. Neolithic origin as a plain standing stone (2500-1800 BC); reworked into a human figure during the La Tène period (later Iron Age); further reworked with a headdress and cape during the Roman period",
     "period": "Neolithic Guernsey (original stone); Iron Age (first figurative carving); Roman period (final reworking); 1860 (destruction and restoration, already precisely dated in this entry's text)",
     "origin_type": "archaeological",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "bronze-age"
   },
   {
     "name": "Tehi Tegi",
@@ -11052,7 +11194,8 @@
     "historical_setting": "Belvoir Castle, near Grantham, on the Leicestershire/Lincolnshire border; the accused had served as household staff to Francis Manners, 6th Earl of Rutland",
     "cultural_tradition": "Jacobean English witch-trial case, part of the same broader witch-persecution climate as the North Berwick and Pendle trials",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "stuart-britain"
   },
   {
     "name": "Dragon of Deerhurst",
@@ -11111,7 +11254,8 @@
     "historical_setting": "Ulster Cycle mythological Ireland; Scathach's fortress and warrior school are placed on the Sleat peninsula of the Isle of Skye, Scotland",
     "cultural_tradition": "Irish mythology, Ulster Cycle",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "iron-age"
   },
   {
     "name": "Oweynagat",
@@ -11144,7 +11288,7 @@
     "historical_setting": "Rathcroghan royal complex, pre-Christian Connacht, traditional seat of Ailill and Medb",
     "cultural_tradition": "Irish mythological cycle, Otherworld-entrance/Samhain legend",
     "dating_confidence": "high",
-    "period_slug": "early-medieval-britain",
+    "period_slug": "iron-age",
     "origin_type": "literary"
   },
   {
@@ -11173,7 +11317,8 @@
     "earliest_record": "Manannán appears across the Lebor Gabála Érenn tradition and all four cycles of Irish mythology; the Lebor Gabála material was compiled by an anonymous 11th-century writer, with the fullest recension in the Book of Leinster (c.1160)",
     "period": "Early Medieval Ireland (manuscript compilation, 11th-12th century); his cult as tutelary deity of the Isle of Man is understood to be considerably older, reflected in the island's own name",
     "origin_type": "oral-tradition",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "iron-age"
   },
   {
     "name": "Hy-Brasil",
@@ -11300,7 +11445,8 @@
     "period": "reign of Edward I",
     "historical_setting": "Winchester Great Hall; Edward I's Arthurian enthusiasm and Round Table tournaments",
     "origin_type": "archaeological",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Craig y Ddinas",
@@ -12108,7 +12254,8 @@
     "historical_setting": "The legend developed across several major textual stages: earliest attestation in the Historia Brittonum (c.828); given its fullest and most influential 'historical' form in Geoffrey of Monmouth's Historia Regum Britanniae (c.1136), the same text underlying the Avalon, Brutus and Gogmagog entries; and reaching its definitive English literary form in Sir Thomas Malory's Le Morte d'Arthur (1485)",
     "cultural_tradition": "Welsh/Brythonic oral tradition and hagiography preceded and fed into the Latin chronicle tradition; the Glastonbury 'grave discovery' of 1191 represents the point at which Arthur's story was deliberately anchored to a specific real place for the abbey's own benefit",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Knocknakilla",
@@ -12136,7 +12283,8 @@
     "earliest_record": "Excavated in 1931, when a paved floor and a deliberate quartz-pebble deposit were uncovered",
     "period": "Bronze Age Ireland",
     "origin_type": "archaeological",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "bronze-age"
   },
   {
     "name": "Labbacallee wedge tomb",
@@ -12158,7 +12306,8 @@
     "earliest_record": "John Aubrey's 1693 manuscript, the first written description of a megalithic monument in Ireland",
     "period": "Bronze Age Ireland (construction); first antiquarian description, 1693; archaeological excavation, 1934",
     "origin_type": "archaeological",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "bronze-age"
   },
   {
     "name": "Leprechaun",
@@ -12210,7 +12359,8 @@
     "earliest_record": "Swedish archaeologist Göran Burenhult's excavations (1996-98 for Listoghil specifically, part of wider Carrowmore campaigns 1977-82 and 1994-98) recovered charcoal from beneath a boulder on the platform, radiocarbon dated to approximately 4100 BC",
     "period": "Neolithic Ireland; the oldest constructed monument in the Carrowmore complex",
     "origin_type": "archaeological",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "prehistoric-britain"
   },
   {
     "name": "Loftus Hall",
@@ -12237,7 +12387,8 @@
     "origin_date": "c. 1775 (Anne Tottenham's death, and the most commonly cited date for the legend's setting)",
     "period": "Georgian Ireland; the setting is usually given as 'the 1760s', while other sources place it closer to 1775. The discrepancy itself suggests the exact year was never firmly fixed even in the earliest tellings",
     "origin_type": "oral-tradition",
-    "dating_confidence": "low"
+    "dating_confidence": "low",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Meehambee Dolmen",
@@ -12260,7 +12411,8 @@
     "earliest_record": "The Irish Folklore Commission's Schools' Collection (1930s) documented the site as Leabaidh Éirn; two stone axes found nearby in the 1960s provided further archaeological confirmation of Neolithic activity",
     "period": "Neolithic Ireland (construction, c.3500 BC); 1930s (earliest folklore documentation); 1960s (archaeological find)",
     "origin_type": "archaeological",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "prehistoric-britain"
   },
   {
     "name": "Meg Shelton",
@@ -12285,7 +12437,8 @@
     "origin_date": "1705 (death)",
     "period": "Early 18th-century Lancashire (death); the surrounding folklore was, per multiple sources found, 'probably written long after her death, and embellished over time', with no earliest written record of the shape-shifting or grave-boulder legends independently identified",
     "origin_type": "oral-tradition",
-    "dating_confidence": "low"
+    "dating_confidence": "low",
+    "period_slug": "stuart-britain"
   },
   {
     "name": "Miosgán Meadhbha",
@@ -12313,7 +12466,8 @@
     "earliest_record": "The Medb-burial legend is recorded in the Metrical Dindshenchas poem 'Fert Medba' (Book of Leinster, c.1160), the same source that dates the Knocknarea entry, which covers this identical cairn",
     "period": "Neolithic Ireland (cairn construction); Early Medieval Ireland (Dindshenchas attestation, 12th-century manuscript)",
     "origin_type": "oral-tradition",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "iron-age"
   },
   {
     "name": "Mount Venus",
@@ -12339,7 +12493,8 @@
     "period": "Neolithic Ireland (construction); collapse date genuinely uncertain, possibly 18th century if the earthquake theory holds",
     "origin_type": "archaeological",
     "dating_confidence": "medium",
-    "detail": "In Woodtown, on the edge of Rathfarnham in County Dublin, a Neolithic portal tomb built between 4000 and 2500 BC lies just beyond a gap in the hedge beside the DSPCA, on ground that was once part of a golf course. Its capstone, roughly eighteen feet by nine and estimated at forty-four tonnes, is among the largest of any Irish tomb, and originally rested on two portal stones forming an entrance some fifteen feet high. Sometime after the mid-eighteenth century the structure partly collapsed: one portal stone fell, leaving the great capstone leaning at an angle against the stone still standing, and opening a triangular gap between them. Antiquarians and local tradition alike have blamed the fall on the shockwaves of the 1755 Lisbon earthquake, whose tremors and tsunami were felt as far as Galway and Clare, though the exact cause remains unconfirmed.\n\nThe nineteenth-century antiquarian William Copeland Borlase, surveying Irish megaliths for his 1897 book Dolmens of Ireland, called Mount Venus one of the most magnificent examples he had ever seen, and classified it as an earth-fast dolmen, a type whose capstone touches the ground at the rear rather than standing clear on its supports, a form also seen at Aideen's Grave on Howth Head. The fallen portal stone still lies where it came to rest beside the monument, and a third, dressed stone measuring four metres by one sits in front of the tomb, its original purpose as uncertain today as when Borlase first described the site."
+    "detail": "In Woodtown, on the edge of Rathfarnham in County Dublin, a Neolithic portal tomb built between 4000 and 2500 BC lies just beyond a gap in the hedge beside the DSPCA, on ground that was once part of a golf course. Its capstone, roughly eighteen feet by nine and estimated at forty-four tonnes, is among the largest of any Irish tomb, and originally rested on two portal stones forming an entrance some fifteen feet high. Sometime after the mid-eighteenth century the structure partly collapsed: one portal stone fell, leaving the great capstone leaning at an angle against the stone still standing, and opening a triangular gap between them. Antiquarians and local tradition alike have blamed the fall on the shockwaves of the 1755 Lisbon earthquake, whose tremors and tsunami were felt as far as Galway and Clare, though the exact cause remains unconfirmed.\n\nThe nineteenth-century antiquarian William Copeland Borlase, surveying Irish megaliths for his 1897 book Dolmens of Ireland, called Mount Venus one of the most magnificent examples he had ever seen, and classified it as an earth-fast dolmen, a type whose capstone touches the ground at the rear rather than standing clear on its supports, a form also seen at Aideen's Grave on Howth Head. The fallen portal stone still lies where it came to rest beside the monument, and a third, dressed stone measuring four metres by one sits in front of the tomb, its original purpose as uncertain today as when Borlase first described the site.",
+    "period_slug": "prehistoric-britain"
   },
   {
     "name": "Mousehold Heath (Heviskey Tan)",
@@ -12364,7 +12519,8 @@
     "earliest_record": "George Borrow's 'Romano Lavo-Lil' (1874), the source recording the name 'Heviskey Tan' and the burial custom",
     "period": "Recorded in the Victorian Romani-studies tradition (1874); Borrow's own formative encounters with the Romani community there took place in the early 19th century, decades before this written record",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "victorian-britain"
   },
   {
     "name": "Mullyash Kerbed Cairn",
@@ -12393,7 +12549,8 @@
     "origin_date": "c. 4000 BC (cairn construction)",
     "period": "Neolithic Ireland (monument); the Crom Dubh's Sunday gathering belongs to the wider Lughnasadh/harvest-festival complex studied definitively by folklorist Máire MacNeill in 'The Festival of Lughnasa' (1962), though no source specific to Mullyash's own first written record was found",
     "origin_type": "archaeological",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "prehistoric-britain"
   },
   {
     "name": "Navan Fort",
@@ -12421,7 +12578,8 @@
     "earliest_record": "The Ulster Cycle textual tradition in which Emain Macha appears is preserved from Lebor na hUidre (c.1100), the same manuscript that dates Cú Chulainn and the other Ulster Cycle entries",
     "period": "Iron Age Ireland (archaeological construction event, c.95 BC); Early Medieval Ireland (earliest manuscript witness to the associated sagas, c.1100)",
     "origin_type": "archaeological",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "iron-age"
   },
   {
     "name": "Newgrange cursus",
@@ -12449,7 +12607,8 @@
     "earliest_record": "Excavations in 2018 revealed pit alignments and feasting-debris deposits along the cursus route",
     "period": "Late Neolithic Ireland, broadly contemporary with the wider Brú na Bóinne monument complex (Newgrange itself dated to c.3200 BC); the Aengus/Caer Ibormeith myths belong to the same Lebor Gabála Érenn and wider medieval Irish literary tradition used for Newgrange itself",
     "origin_type": "archaeological",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "prehistoric-britain"
   },
   {
     "name": "Rathcoran",
@@ -12481,7 +12640,8 @@
     "historical_setting": "Passage tomb on the summit of Baltinglass Hill, part of a wider Baltinglass hillfort/passage tomb complex; excavated 1934-1936 by P.T. Walshe, who found cremated remains of at least three adults and a child. Recent geophysical/LiDAR survey has identified up to fifty hut structures inside the hillfort interior, and more recent excavation has suggested early Neolithic activity going back roughly 6,000 years. The underground-passage-to-the-abbey legend is a separate, undated piece of local oral folklore layered onto the monument much later.",
     "cultural_tradition": "Irish Neolithic megalithic tomb-building tradition, succeeded by Bronze Age hillfort construction; the abbey-passage tale belongs to later local oral tradition, not the prehistoric monument itself",
     "origin_type": "archaeological",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "prehistoric-britain"
   },
   {
     "name": "Rathcroghan",
@@ -12513,7 +12673,8 @@
     "historical_setting": "Royal ceremonial/burial complex of Connacht spanning the Neolithic to early medieval periods, later mythologised in the Ulster Cycle as the court of Queen Medb; the Oweynagat souterrain and its Samhain/Otherworld associations belong to the early medieval phase of the site's use",
     "cultural_tradition": "Irish mythological Ulster Cycle (Táin Bó Cúailnge and related tales), preserved in medieval manuscript literature and layered onto an excavated prehistoric-to-early-medieval royal site",
     "origin_type": "archaeological",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "iron-age"
   },
   {
     "name": "Timoney Stones",
@@ -12575,7 +12736,8 @@
     "historical_setting": "Townleyhall, County Louth, part of the wider Brú na Bóinne complex, c. 2km north of Dowth",
     "cultural_tradition": "Irish Neolithic passage-tomb tradition, associated with midsummer solar alignment and Otherworld mythology shared with Newgrange and Dowth",
     "origin_type": "archaeological",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "prehistoric-britain"
   },
   {
     "name": "Turoe Stone",
@@ -12604,7 +12766,8 @@
     "historical_setting": "Originally associated with an Iron Age ringfort at Feerwore, County Galway, before being relocated to Turoe House and later to Bullaun village",
     "cultural_tradition": "Irish Iron Age La Tène decorative/ritual stone tradition, possibly linked to kingship or fertility rites",
     "origin_type": "archaeological",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "iron-age"
   },
   {
     "name": "Wraith",
@@ -12719,7 +12882,8 @@
     "historical_setting": "Robert Kirk, born 1644 (some sources give 1641; one genealogical source cites a specific date of 9 December 1644 that others do not corroborate) in Aberfoyle, Stirlingshire, was minister of Balquhidder from 1664 and of Aberfoyle from 1685 until his death on 14 May 1692. He is buried in Aberfoyle churchyard, though tradition holds his body was replaced by a fairy substitute and his spirit taken into Doon Hill.",
     "cultural_tradition": "Scottish Highland fairy belief / Christian ministerial folklore",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "stuart-britain"
   },
   {
     "name": "Finvarra at Knockma Hill",
@@ -12833,7 +12997,8 @@
     "historical_setting": "Saint Govan (Welsh: Gofan) traditionally died in 586 AD; often identified with the Irish abbot Gobhan/Goban who founded the monastery of Dairinis-Insula near Wexford c.530 AD, and separately (in later folk tradition) conflated with Sir Gawain of Arthurian legend",
     "cultural_tradition": "Welsh/Pembrokeshire Christian hagiographic tradition, with an Irish (Gobhan) origin theory and a secondary Arthurian folk identification (Gawain)",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Carningli",
@@ -12949,7 +13114,8 @@
     "historical_setting": "Knightlow Cross/Hill, in the historic 'hundred of Knightlow', near Ryton-on-Dunsmore, Warwickshire; representatives of 25 villages still pay dues there each 11 November",
     "cultural_tradition": "English feudal/manorial custom (a ward-penny/wroth-silver payment); the picturesque 'white bull with red ears' forfeit is likely a decorative addition by the 2nd Duke of Montagu around 1729 rather than part of the medieval original",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Threekingham Three Kings",
@@ -12979,7 +13145,8 @@
     "historical_setting": "Threekingham, Lincolnshire, and the neighbouring 'Danesfield' between Threekingham and Stow",
     "cultural_tradition": "English place-name folk etymology; a legendary Viking-era battle used to explain a place-name that modern scholarship derives differently",
     "origin_type": "oral-tradition",
-    "dating_confidence": "low"
+    "dating_confidence": "low",
+    "period_slug": "viking-age"
   },
   {
     "name": "St Catherine's Hill Mizmaze",
@@ -13009,7 +13176,8 @@
     "earliest_record": "Earliest known documentary reference is in the Winchester College archives, signed 'J Nowell', falling within the 1647-1710 window",
     "historical_setting": "St Catherine's Hill, an Iron Age hillfort site above Winchester, beside the ruined medieval chapel of St Catherine",
     "origin_type": "archaeological",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "stuart-britain"
   },
   {
     "name": "Stow Minster and the Staff of Etheldreda",
@@ -13040,7 +13208,8 @@
     "historical_setting": "Etheldreda's flight from her marriage to King Ecgfrith of Northumbria, en route to found Ely Abbey",
     "cultural_tradition": "Anglo-Saxon and early medieval English hagiographic tradition",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "early-medieval-britain"
   },
   {
     "name": "Dragon of Radnor Forest",
@@ -13276,7 +13445,8 @@
     "historical_setting": "Guernsey, associated with bailiff Gaultier de la Salle, hanged 1320",
     "cultural_tradition": "Guernsey / Channel Islands",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "St Non's Well",
@@ -13308,7 +13478,8 @@
     "historical_setting": "St Non's Chapel survives only as a few crumbling walls of uncertain date; scheduled as an ancient monument on 6 January 1925, with the nearby well separately Grade II listed on 1 March 1963. Neither structure has been archaeologically dated to St David's lifetime. The healing-water tradition and the storm-birth/spring-miracle story both derive from Rhygyfarch's Life of St David (c.1090), written roughly 500 years after the events it describes.",
     "cultural_tradition": "Welsh Christian hagiography and pilgrimage tradition",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Westbury White Horse",
@@ -13337,7 +13508,8 @@
     "historical_setting": "Bratton Camp hillfort escarpment, near Westbury, Wiltshire, overlooking the site traditionally associated with the Battle of Ethandun (878 AD)",
     "cultural_tradition": "18th-century English hill-figure tradition; the popular link to King Alfred's 878 victory over the Danes has no attestation before the later 18th century and appears to be a retrospective association rather than the figure's true origin",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "early-medieval-britain"
   },
   {
     "name": "Wild Man of Orford",
@@ -13368,7 +13540,8 @@
     "historical_setting": "Orford, Suffolk, at Orford Castle (built by Henry II, completed 1173, so under construction at the time of the reported capture)",
     "cultural_tradition": "Medieval English chronicle report of a 'wild man'/merman, treated by the chronicler as a real contemporary event rather than inherited folklore",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Dunwich: The Drowned City Bells",
@@ -13456,7 +13629,8 @@
     "historical_setting": "New Forest, Hampshire, death of King William II ('Rufus') in a hunting accident, 1100 AD",
     "cultural_tradition": "black-dog/omen-hound folklore attached to a real historical death, comparable to Black Shuck tales",
     "origin_type": "historical-event",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "norman-britain"
   },
   {
     "name": "Pwyll, Prince of Dyfed",
@@ -13489,7 +13663,8 @@
     "historical_setting": "Narrative set in a legendary early-medieval Dyfed (south-west Wales), centred on the court at Arberth (modern Narberth, Pembrokeshire) and Gorsedd Arberth, traditionally identified with the buried Iron Age site at Camp Hill near Narberth Castle",
     "cultural_tradition": "Medieval Welsh prose narrative tradition (Middle Welsh), the 'Pedair Cainc y Mabinogi' (Four Branches of the Mabinogi), rooted in earlier Brythonic oral/legendary material",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Colt Pixies",
@@ -13605,7 +13780,8 @@
     "earliest_record": "Contemporary 1808 spring assizes trial records document the case; St John D. Seymour's academic study 'Irish Witchcraft and Demonology' (1913) gives the fullest early scholarly treatment",
     "period": "Georgian Ireland (incident, 1807; trial, 1808); academic study, 1913",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Corrag of Glencoe",
@@ -13663,7 +13839,8 @@
     "historical_setting": "Berkeley, Gloucestershire",
     "cultural_tradition": "Medieval English monastic 'ghost story'/cautionary-tale tradition",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "early-medieval-britain"
   },
   {
     "name": "Dorrington Witch",
@@ -13775,7 +13952,8 @@
     "historical_setting": "Edmund, King of East Anglia, was killed following a Danish (Great Heathen Army) invasion in 869/870. The wolf-and-severed-head miracle is a hagiographic addition first attested over a century later in Abbo's Passio, not in any contemporary 9th-century record -- the Anglo-Saxon Chronicle records Edmund's death but not the wolf legend.",
     "cultural_tradition": "Anglo-Saxon and later English hagiographic/monastic tradition centred on Bury St Edmunds Abbey, which became one of medieval England's leading pilgrimage sites; the Passio was translated from Latin into Old English (by Aelfric of Eynsham) not long after Abbo wrote it, extending its reach",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "viking-age"
   },
   {
     "name": "John Callis, Welsh Pirate",
@@ -13803,7 +13981,8 @@
     "period": "Elizabethan era, mid-to-late 16th century",
     "historical_setting": "Piracy and coastal raiding in the Bristol Channel under Elizabeth I, when weak enforcement and corrupt local officials let pirates operate openly from Welsh ports",
     "origin_type": "historical-event",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "tudor-britain"
   },
   {
     "name": "La Bête De La Tour",
@@ -13859,7 +14038,8 @@
     "period": "Documented flashpoint in 1875 (Victorian era); the underlying belief that Long Compton harboured a coven is older oral tradition with no fixed origin date",
     "historical_setting": "Rural agricultural labouring community in Victorian South Warwickshire",
     "cultural_tradition": "South Warwickshire witch-belief tradition",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "victorian-britain"
   },
   {
     "name": "Stronsay Beast",
@@ -13888,7 +14068,8 @@
     "period": "Early 19th century",
     "historical_setting": "Early nineteenth-century British natural history debate over the existence of the 'great sea serpent', Orkney Islands, Scotland",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Garman Garbh of Loch Garman",
@@ -14116,7 +14297,8 @@
     "historical_setting": "Bardsey Island (Ynys Enlli), off the tip of the Llŷn Peninsula, Gwynedd, Wales",
     "cultural_tradition": "Welsh Christian pilgrimage-island tradition, later layered with the pan-British 'Merlin sleeping in a cave' motif also told of other sites",
     "origin_type": "oral-tradition",
-    "dating_confidence": "low"
+    "dating_confidence": "low",
+    "period_slug": "early-medieval-britain"
   },
   {
     "name": "Allison Balfour",
@@ -14170,7 +14352,8 @@
     "origin_date": "1629 (trial and execution)",
     "period": "Early modern Scottish witch trials",
     "cultural_tradition": "Orcadian witch-trial folklore, later romanticised",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "stuart-britain"
   },
   {
     "name": "Fan o' the Fens",
@@ -14224,7 +14407,8 @@
     "historical_setting": "Galloway coast, near Kirkcudbright; favoured landing places at the mouths of the Dee and Cree near Rueberry Castle. A nearby cave is still known as Dirk Hatteraick's Cave",
     "cultural_tradition": "Real historical smuggler whose local reputation directly inspired a major literary character, blending documented local history with Scott's fiction",
     "origin_type": "historical-event",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Jonka Dyneis of Fetlar",
@@ -14250,7 +14434,8 @@
     "period": "Early modern Scottish witch trials",
     "historical_setting": "Shetland fishing community",
     "cultural_tradition": "Shetland witch-trial folklore",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "stuart-britain"
   },
   {
     "name": "The Bute Witches",
@@ -14278,7 +14463,8 @@
     "origin_date": "1661-1662",
     "earliest_record": "First recorded statement (Janet Morrison, at her home) 15 January 1662; case documented in 'Papers Relating to Witchcraft, 1662-1677' in Highland Papers, Scottish History Society.",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "stuart-britain"
   },
   {
     "name": "Jinny the Witch (Joney Lowney)",
@@ -14306,7 +14492,8 @@
     "historical_setting": "Bishop's Mill, Braddan, and Bishopscourt ecclesiastical court, Isle of Man",
     "cultural_tradition": "Manx witch-trial tradition, later folded into the Hop-tu-Naa (Manx Halloween) song and story tradition as 'Jinny the Witch'",
     "dating_confidence": "high",
-    "origin_type": "historical-event"
+    "origin_type": "historical-event",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Daniel Fall, the Pirate of the Norfolk Coast",
@@ -14366,7 +14553,8 @@
     "historical_setting": "Cwrt-y-Cadno, Carmarthenshire (Dyfed), Wales; three generations of the Harries family, grandfather Henry Harries (1739-1805, a yeoman farmer with an interest in astrology/medicine), his son John Harries (c.1785-1839, trained as a surgeon and practised as a cunning man/astrologer, reportedly predicting his own death on 11 May 1839), and grandson Henry Harries (d.1849, aged 28, of consumption)",
     "cultural_tradition": "Welsh dynion hysbys (cunning-folk) tradition, healers, astrologers, and diviners consulted for cures, curse-breaking, and locating stolen property",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Iula, Princess of the Giants of Islay",
@@ -14526,7 +14714,8 @@
     "period": "Sources disagree on her active period (early 19th century vs. late 18th century); one source gives a specific date for the resolution of the Harriet curse story (Harriet's death in 1847) which, if accurate, would place at least part of the legend's action in the mid-19th century rather than the 18th",
     "historical_setting": "The cottage known as 'Witches Hatch' itself reportedly dates to 1558, considerably older than Molly's own documented period, meaning the building's age should not be taken as evidence for how old her specific legend is",
     "origin_type": "oral-tradition",
-    "dating_confidence": "low"
+    "dating_confidence": "low",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Llanddona Witches",
@@ -14597,7 +14786,8 @@
     "earliest_record": "Contemporary presbytery/kirk session records of Torryburn parish document her interrogation and confession; the long-lost grave itself was relocated in 2014 by historian Dr Louise Yeoman and archaeologist Douglas Speirs using 19th-century antiquarian records",
     "period": "Early 18th-century Scotland (case, 1704); grave rediscovery, 2014; memorial service, 2019",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "stuart-britain"
   },
   {
     "name": "Sarey Bowers of Kirtlington",
@@ -14649,7 +14839,8 @@
     "period": "Early modern Scotland; the family survived severe persecution, including the 1609 'Act anent the Egyptians' threatening death for any Romani found in Scotland after that date, and the 1624 hanging of Captain John Faa and kinsmen in Edinburgh",
     "historical_setting": "The tradition culminated in the well-documented 1898 coronation of Esther Faa Blythe",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "victorian-britain"
   },
   {
     "name": "Petronilla de Meath",
@@ -14670,7 +14861,8 @@
     "earliest_record": "Bishop Richard de Ledrede's own contemporary register documents the proceedings against Alice Kyteler and Petronilla de Meath; her execution is precisely dated to 3 November 1324",
     "period": "High Medieval Ireland",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Llyn Morwynion",
@@ -14697,7 +14889,8 @@
     "period": "Medieval Wales; manuscript tradition 14th century, with oral roots likely older",
     "cultural_tradition": "Welsh Mabinogion storytelling tradition; an alternative local version (the Men of Ardudwy raid) was recorded by Thomas Pennant in the 18th century",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Margaret Finch",
@@ -14724,7 +14917,8 @@
     "period": "Early-to-mid 18th century; died 1740",
     "historical_setting": "Norwood/Beckenham border, Surrey (now South London), site of a long-standing Romani encampment",
     "cultural_tradition": "London/Surrey Romani Gypsy Queen tradition, the Norwood Gypsies",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Florence Newton",
@@ -14779,7 +14973,8 @@
     "dating_confidence": "medium",
     "historical_setting": "Loch-na-Beiste, Mellon Udrigle, Wester Ross; the estate proprietor is named Mr Bankes in Dixon's 1886 account (existing text says 'Banks'), acting on the testimony of two Free Church of Scotland elders, Sandy McLeod and Kenneth Cameron, both of whom reported seeing the creature",
     "earliest_record": "John H. Dixon, 'Gairloch in North-West Ross-Shire: Its Records, Traditions, Inhabitants, and Natural History' (1886), which dates the draining/quicklime attempt to 'about 1840'. A later newspaper cutting connected to the Crofters Commission, dated 25 May 1888, gives a conflicting date of 1864 for the same draining episode, so the exact year is not fully settled between sources",
-    "origin_type": "oral-tradition"
+    "origin_type": "oral-tradition",
+    "period_slug": "victorian-britain"
   },
   {
     "name": "Ellén Trechend",
@@ -14975,7 +15170,8 @@
     "sources": [
       "https://great-castles.com/tattershallghost.html",
       "https://www.nationaltrust.org.uk/visit/nottinghamshire-lincolnshire/tattershall-castle/the-history-of-tattershall-castle"
-    ]
+    ],
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Old Man of Storr",
@@ -15060,7 +15256,8 @@
     "historical_setting": "Isle of Jura under the Campbell lairdship",
     "cultural_tradition": "Scottish Highland/Hebridean eviction-curse and second-sight tradition",
     "origin_type": "oral-tradition",
-    "dating_confidence": "low"
+    "dating_confidence": "low",
+    "period_slug": "stuart-britain"
   },
   {
     "name": "Hard Apple Blyth, the Smuggler of Paglesham",
@@ -15116,7 +15313,8 @@
     "earliest_record": "Ernest R. Suffling, 'History and Legends of the Broad District [Norfolk]; with a glance at its folk lore, ghosts, churches, etc.' (Jarrold & Sons, 1891), pp.107-111",
     "period": "The haunting is set among 18th-century smuggling on the Norfolk coast; the earliest known published record of the ghost story itself is 1891",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Lough Ree Monster",
@@ -15142,7 +15340,8 @@
     "earliest_record": "A medieval hagiographic reference (the Life of St Mochua of Balla) to a fierce monster in Lough Ree deterring hunters from an island refuge; the best-documented modern account is the July 1960 sighting by three Catholic priests near Glasson",
     "period": "Medieval monastic tradition (precise date of the saint's life text uncertain) revived as a well-documented 20th-century cryptid tradition",
     "cultural_tradition": "Irish lake-monster tradition, comparable to other Irish loughs' cryptid legends",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "modern-folklore"
   },
   {
     "name": "Denbigh Dragon",
@@ -15313,7 +15512,8 @@
     "period": "Restoration-era Scotland; often cited as among the last people executed for witchcraft in Scotland",
     "historical_setting": "The house on the West Bow stood empty for over a century afterward, until William Patullo's brief and frightened tenancy around 1780",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "stuart-britain"
   },
   {
     "name": "Bessie Dunlop",
@@ -15396,7 +15596,8 @@
     "earliest_record": "Francis Grant, Lord Cullen, Sadducismus Debellatus: or, A True Narrative of the Sorceries and Witchcrafts Exercis'd by the Devil and His Instruments upon Mrs. Christian Shaw...from Aug. 1696 to Apr. 1697, London: D. Newman and A. Ball, 1698.",
     "historical_setting": "Christian Shaw's fits began 22 August 1696 after she witnessed Katherine Campbell stealing milk on 17 August 1696; the special Commission opened 5 February 1697 under Lord Blantyre; suspect John Reid was found dead in his cell 22 May 1697; seven of the accused were hanged and burned on Paisley's Gallow Green on 10 June 1697",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "stuart-britain"
   },
   {
     "name": "Isaac Gulliver",
@@ -15449,7 +15650,8 @@
     "period": "Active c. 1735-1749",
     "historical_setting": "18th-century organised smuggling in south-east England (Kent and Sussex), driven by high import duties on tea, spirits, and other goods. First documented reference to the gang dates to c. 1735. The Battle of Goudhurst, in which the Goudhurst militia defeated the gang in a pitched fight around St Mary's Church, took place on 21 April 1747, killing gang leader Thomas Kingsmill's brother George and two other smugglers. The retaliatory raid on Poole Custom House took place on the night of 6-7 October 1747, after the gang's tea cargo (seized by the revenue vessel Swift on 22 September 1747) was stored there. Gang leader Arthur Gray was executed in 1748. Thomas Kingsmill and William Fairall were convicted at the Old Bailey and hanged at Tyburn on 26 April 1749; Kingsmill's body was gibbeted at Goudhurst and Fairall's at Horsmonden.",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "The Wherwell Cockatrice",
@@ -15476,7 +15678,8 @@
     "period": "medieval, before 1538",
     "historical_setting": "Wherwell Priory (a Benedictine nunnery founded c.986 AD by Queen Ælfthryth/Elfrida, widow of King Edgar), Hampshire, on the River Test. The legend is set before the priory's dissolution in 1538",
     "origin_type": "oral-tradition",
-    "dating_confidence": "low"
+    "dating_confidence": "low",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Jimmy Squarefoot",
@@ -15609,7 +15812,8 @@
     "period": "Medieval Wales, 14th-century manuscript attestation of a 12th/13th-century tale",
     "cultural_tradition": "Welsh Arthurian romance / Mabinogion tradition",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Crazy Kate, the Witch of Swineshead",
@@ -15684,7 +15888,8 @@
     "period": "medieval, 12th-13th century (for the historical castle/Comyn context; the giant legend itself is undated)",
     "historical_setting": "Whitwick Castle, Leicestershire, a motte-and-bailey castle held by the Earl of Leicester in the mid-12th century, passing to royal hands by 1204 under King John (keeper William de Seneville) and later to John Comyn, Earl of Buchan, by the late 13th century",
     "origin_type": "oral-tradition",
-    "dating_confidence": "low"
+    "dating_confidence": "low",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Furbaide Ferbend",
@@ -15743,7 +15948,8 @@
     "historical_setting": "The merchant ship Earl of Sandwich, en route from Tenerife to London with Spanish silver dollars and gold dust; the murder/mutiny occurred in late November 1765, with the mutineers landing and burying treasure at Dollar Bay near Duncannon Fort, County Wexford",
     "cultural_tradition": "Irish coastal pirate/treasure legend, tied directly to a documented criminal trial rather than pure oral folklore",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Loch nan Dubhrachan Water Horse",
@@ -15804,7 +16010,8 @@
     "period": "1717-1747",
     "historical_setting": "18th-century Pembrokeshire/Cardigan Bay smuggling trade; Owen was hanged for murder at Carmarthen, 2 May 1747",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "The Giant Bica of Llangrannog",
@@ -15929,7 +16136,8 @@
     "earliest_record": "Historian Lizanne Henderson has noted that the most commonly retold details of Janet Horne's case were not published in print until 92 years after the execution (i.e. c.1814-1819), with no surviving contemporary kirk session or presbytery records",
     "period": "Early 18th-century Scotland (traditional execution date); modern retelling substantially dates from the early 19th century",
     "origin_type": "historical-event",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Maggie Wall",
@@ -15949,7 +16157,8 @@
     "origin_date": "Late 18th century (the monument's own construction date); 1657 is the date painted on the cairn but is entirely unverified. No such person appears in the Survey of Scottish Witchcraft's comprehensive 1563-1736 trial records",
     "period": "The monument itself dates from the late 1700s; the '1657' burning it claims to commemorate has no corroborating historical record of any kind",
     "origin_type": "oral-tradition",
-    "dating_confidence": "low"
+    "dating_confidence": "low",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Tamsin Blight",
@@ -15979,7 +16188,8 @@
     "historical_setting": "Redruth (birth) and Helston, Cornwall",
     "cultural_tradition": "Cornish pellar / cunning-folk tradition",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "victorian-britain"
   },
   {
     "name": "Cruel Coppinger",
@@ -16033,7 +16243,8 @@
     "earliest_record": "19th-century historian Sabine Baring-Gould recorded the origin of Carter's nickname (from a childhood soldiers' game); Carter's own brother Harry Carter left a surviving first-person account, 'The Autobiography of a Cornish Smuggler'",
     "period": "Georgian Cornwall; Carter died in 1803",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Eustace the Monk",
@@ -16110,7 +16321,8 @@
     "historical_setting": "attached to the genuine Roman road 'Wade's Causeway' (Wheeldale, North York Moors), of Roman-era origin, and to Mulgrave and Pickering Castles",
     "cultural_tradition": "North Yorkshire giant-founder legend explaining a Roman road and two castles",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "early-medieval-britain"
   },
   {
     "name": "The Dragon of Loschy Hill",
@@ -16168,7 +16380,8 @@
     "historical_setting": "the village of Henham-on-the-Hill (Henham), Uttlesford, Essex, near Saffron Walden. Part of a wider vogue for English 'monstrous serpent' pamphlets in this period (cf. the 1614 Flying Serpent of Sussex)",
     "cultural_tradition": "17th-century English pamphlet/broadside tradition of reported 'monstrous serpent' sightings; widely regarded by historians as a hoax involving a wood-and-canvas dragon operated by a man in Birch Wood",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "stuart-britain"
   },
   {
     "name": "Piers Shonks",
@@ -16198,7 +16411,8 @@
     "historical_setting": "St Mary's Church, Brent Pelham, Hertfordshire",
     "cultural_tradition": "English local dragon-slayer / outwitting-the-Devil legend, East Hertfordshire",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "The Anwick Dragon",
@@ -16256,7 +16470,8 @@
     "period": "Early 19th century (Georgian era)",
     "historical_setting": "Ennerdale, Kinniside, Eskett Woods and the River Ehen, Cumberland, England, 1810",
     "origin_type": "historical-event",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Skriker",
@@ -16312,7 +16527,8 @@
     "period": "Restoration England, 17th century",
     "historical_setting": "Tedworth (now Tidworth), Wiltshire, England, 1662-1663",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "stuart-britain"
   },
   {
     "name": "Cat Sìth",
@@ -16368,7 +16584,8 @@
     "sources": [
       "https://www.legendarydartmoor.co.uk/hairy_hand.htm",
       "https://www.legendarydartmoor.co.uk/2016/03/25/hairy_hands/"
-    ]
+    ],
+    "period_slug": "modern-folklore"
   },
   {
     "name": "The Mistletoe Bough",
@@ -16425,7 +16642,8 @@
     "historical_setting": "The Welsh Revolt against English rule under Henry IV and Henry V, 1400-1415, centred on Wales and the Marches",
     "cultural_tradition": "Welsh",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "The Brag",
@@ -16481,7 +16699,8 @@
     "earliest_record": "Original confession records held at the National Records of Scotland; her thirteen-article confession (tried 7 May 1662) is also the primary source for the witch-trial folklore of the Granny Kempock Stone",
     "period": "Restoration-era Scotland",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "stuart-britain"
   },
   {
     "name": "The Giant of Carn Galver",
@@ -16537,7 +16756,8 @@
     "period": "Early 20th century (World War I and immediate postwar Britain)",
     "historical_setting": "Cottingley, near Bingley, West Yorkshire, England, 1917-1920, amid a contemporary vogue for spiritualism and photographic novelty",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "modern-folklore"
   },
   {
     "name": "Carman the Sorceress",
@@ -16635,7 +16855,8 @@
     "earliest_record": "The legend was recorded by early Irish antiquarians including Charles Vallancey (active 1760s-1812) and Lady Morgan (Sydney Owenson, early 19th century), both writing on Ulster antiquities; LibraryIreland's account of Shane's Castle draws on 19th-century Belfast topographical writing",
     "period": "Documented Georgian/Regency-era Irish antiquarian tradition (late 18th-early 19th century); the fire itself is precisely dated (1816)",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Black Pig's Dyke",
@@ -16694,7 +16915,8 @@
     "pronunciation": "OO-nuh",
     "period": "The tale is described as 'a late addition to the Finn Cycle... survives in multiple late manuscript versions and was collected from oral tradition in the nineteenth century', but no specific manuscript or collection has been dated more precisely",
     "origin_type": "oral-tradition",
-    "dating_confidence": "low"
+    "dating_confidence": "low",
+    "period_slug": "iron-age"
   },
   {
     "name": "Gwydion fab Dôn",
@@ -16755,7 +16977,8 @@
     "earliest_record": "The Calendar of State Papers, Domestic Series records the official enquiry into the incident, with entries dated 15 January and 2 March 1582",
     "period": "Elizabethan England",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "tudor-britain"
   },
   {
     "name": "Gobán Saor",
@@ -16818,7 +17041,8 @@
     "period": "Late 12th century (narrative setting); chronicle compiled in the early 13th century",
     "historical_setting": "Reign of Richard I, at Dagworth Hall, Suffolk, home of Sir Osbert de Bradwell",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Dragon of Brinsop",
@@ -16914,7 +17138,8 @@
     "period": "Narrative setting, 563 AD (Columba's arrival); earliest saint's-calendar attestation of Oran by name, c.800; earliest surviving version of the specific sacrifice legend, 11th century or later",
     "historical_setting": "St Oran's Chapel itself, the oldest surviving building on Iona, dates from the third quarter of the 12th century, considerably later than either the narrative setting or the earliest textual hints",
     "origin_type": "oral-tradition",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Donn Cúailnge",
@@ -16977,7 +17202,8 @@
     "period": "5th century AD (Patrick's own lifetime/captivity, per the Confessio); the specific Slemish place-identification is a later Middle Irish tradition of c.9th-10th century, and the association was explicitly rejected as unhistorical by early-20th-century historian J.B. Bury",
     "cultural_tradition": "Early Christian Ireland; Middle Irish hagiography",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Loughareema, the Vanishing Lake",
@@ -17034,7 +17260,8 @@
     "historical_setting": "Anglo-Norman and Gaelic Ulster during the rise of the O Neill (Cenel nEogain) kingship, 13th-14th century; the symbol was later adopted into Ulster/Northern Ireland flag and heraldry",
     "cultural_tradition": "Gaelic Irish heraldic and dynastic tradition of the Ui Neill of Ulster, with some tellings linking it to Labraid Lamh Dhearg of the Fenian Cycle",
     "origin_type": "oral-tradition",
-    "dating_confidence": "low"
+    "dating_confidence": "low",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Screaming Skull of Calgarth",
@@ -17067,7 +17294,8 @@
     "period": "In Clarke's 1787 account the tale is attached to Robert Philipson, a Royalist supporter of Charles I during the English Civil War (mid-17th century). The Myles Philipson / Dorothy Cook version given in the entry summary (sometimes placed in the Elizabethan era) is a later 19th-century reattribution, e.g. Wilson Armistead's Tales and Legends of the English Lakes (1891); no documentary evidence supports an actual Elizabethan-era crime.",
     "historical_setting": "Calgarth Hall, Windermere, Westmorland; skull relics reportedly still present in 1788 and described as 'nearly mouldered away' by 1819",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "tudor-britain"
   },
   {
     "name": "Dwarfie Stane",
@@ -17205,7 +17433,8 @@
     "earliest_record": "Alexander Carmichael's Carmina Gadelica (1900)",
     "period": "Recorded in the late-Victorian Hebridean folklore-collecting tradition (1900), describing an incident from within living memory of the collector",
     "origin_type": "oral-tradition",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Fiddler Fynes of Kirkstead",
@@ -17287,7 +17516,8 @@
     "historical_setting": "Mallerstang, Cumbria, on the River Eden; the castle later passed to the Clifford family and was substantially rebuilt by Lady Anne Clifford after 1660",
     "cultural_tradition": "Arthurian literary legend attached retrospectively to a real medieval border castle",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "The Fenland Mandrake",
@@ -17346,7 +17576,8 @@
     "historical_setting": "Eildon Hills and Erceldoune (now Earlston), Berwickshire, Scottish Borders, late 13th century",
     "cultural_tradition": "Scottish Borders fairy/prophecy legend attached to a documented historical laird and poet",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Tam Lin",
@@ -17405,7 +17636,8 @@
     "period": "High Medieval England (earliest written record); the historical Godgifu died in 1067",
     "historical_setting": "The legend is entirely absent from 11th-century contemporary records, including the Anglo-Saxon Chronicle, which documents Leofric's activities and death but never mentions the ride",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "early-medieval-britain"
   },
   {
     "name": "Mother Shipton",
@@ -17431,7 +17663,8 @@
     "origin_date": "c. 1488 (traditional birth date); 1561 (death)",
     "period": "Tudor Yorkshire (lifetime); the attributed prophecies were 'composed and embroidered long after her death'; the cave and Petrifying Well were opened to paying visitors from 1630, making them among the oldest tourist attractions in England",
     "origin_type": "oral-tradition",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "tudor-britain"
   },
   {
     "name": "Guinevere's Grave at Meigle",
@@ -17491,7 +17724,8 @@
     "period": "High medieval (Vulgate Cycle, 13th century) through late medieval (Malory, 15th century); the specific Llyn Llydaw place-association is a distinct, much later Welsh local tradition, not older than 19th-20th century popular/tourist folklore",
     "cultural_tradition": "Arthurian legend / Welsh and French medieval romance",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Lleu Llaw Gyffes",
@@ -17519,7 +17753,8 @@
     "earliest_record": "The Fourth Branch of the Mabinogi, composed c.1060-1120; earliest surviving manuscripts are the White Book of Rhydderch (c.1350) and Red Book of Hergest (c.1382-c.1410)",
     "period": "Medieval Wales (Mabinogi composition, 11th-12th century)",
     "origin_type": "oral-tradition",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Tír na nÓg",
@@ -17549,7 +17784,8 @@
     "period": "medieval (frame narrative, c. 1200) with the popular Niamh version dating to the 18th century",
     "cultural_tradition": "Irish Finn Cycle / Fenian Cycle mythology",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "iron-age"
   },
   {
     "name": "Brutus of Troy",
@@ -17605,7 +17841,8 @@
     "earliest_record": "'The History of Jack and the Giants', the chapbook first printed around 1711, the earliest textual appearance of the Cormoran and pit-trap episode",
     "period": "Early-18th-century English chapbook tradition",
     "origin_type": "oral-tradition",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "The Babes in the Wood",
@@ -17636,7 +17873,8 @@
     "period": "Late 16th century (Elizabethan)",
     "cultural_tradition": "English broadside ballad tradition",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "tudor-britain"
   },
   {
     "name": "Lí Ban of Lough Neagh",
@@ -17669,7 +17907,8 @@
     "earliest_record": "The Martyrology of Tallaght (compiled c.828-833), one of the earliest Irish saints' calendars, the source of her 27 January feast day",
     "period": "Early Medieval Ireland (earliest liturgical record, early 9th century); narrative setting is the era of St Comgall of Bangor, 6th century",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "early-medieval-britain"
   },
   {
     "name": "Sack of Baltimore",
@@ -17702,7 +17941,8 @@
     "historical_setting": "Village of Baltimore, West Cork, a fishing settlement of English (mostly West Country) settlers working the pilchard fishery under lease from Sir Fineen O'Driscoll; raided by a corsair fleet under the Dutch renegade captain Morat Rais (Jan Janszoon), operating out of Algiers, with a mixed crew of Dutch, Algerian, Moroccan, and Ottoman raiders",
     "cultural_tradition": "Irish local/historical memory combined with the wider Barbary-corsair raiding tradition of 17th-century North Africa/Mediterranean; commemorated today via Baltimore's local heritage institutions",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "stuart-britain"
   },
   {
     "name": "Owain Lawgoch",
@@ -17734,7 +17974,8 @@
     "earliest_record": "The Cardiganshire cave version was published in the periodical 'Y Brython' in 1858, contributed by a writer using the pen-name 'Gwynionydd', presenting it as popular belief current in the parish of Troed yr Aur, South Cardiganshire",
     "period": "Historical assassination, 1378; earliest confirmed written record of the sleeping-hero legend, 1858",
     "origin_type": "oral-tradition",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Agnes Waterhouse",
@@ -17826,7 +18067,8 @@
     "earliest_record": "Marie Trevelyan's 'Folk-Lore and Folk-Stories of Wales' (1909)",
     "period": "Recorded in the Edwardian Welsh folklore-collecting tradition (1909); narrative setting is 'within the memory of elderly people alive in the 1890s', placing the last reported encounters in the early-to-mid 19th century",
     "origin_type": "oral-tradition",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "victorian-britain"
   },
   {
     "name": "The Hunt of Slieve Gullion",
@@ -17863,7 +18105,8 @@
     "period": "Fenian Cycle (Fiannaiocht) of medieval Irish literature; underlying narrative material believed to circulate from the 12th century or earlier, first surviving in a 16th-century manuscript, popularised in English via Lady Gregory's Gods and Fighting Men (1904)",
     "cultural_tradition": "Irish mythology, Fenian Cycle",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "iron-age"
   },
   {
     "name": "Tichborne Dole",
@@ -17894,7 +18137,8 @@
     "historical_setting": "Tichborne, Cheriton and Lane End parishes, Hampshire; the dole is distributed annually on Lady Day (25 March)",
     "cultural_tradition": "English calendar custom / charitable dole tradition, with an attached curse legend explaining its continuation",
     "origin_type": "oral-tradition",
-    "dating_confidence": "low"
+    "dating_confidence": "low",
+    "period_slug": "norman-britain"
   },
   {
     "name": "Vanishing Keepers of the Flannan Isles",
@@ -17927,7 +18171,8 @@
     "historical_setting": "Flannan Isles lighthouse, Outer Hebrides, Scotland",
     "cultural_tradition": "Modern maritime mystery/ghost-story tradition, based on a documented real disappearance rather than inherited oral folklore",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "victorian-britain"
   },
   {
     "name": "Downpatrick and the Three Saints",
@@ -18019,7 +18264,8 @@
     "pronunciation": "LIG-na-PAHSH-tyuh",
     "period": "Early medieval (traditional setting: late 6th century, after St Patrick's death)",
     "cultural_tradition": "Irish dragon-slaying tradition linked to the St Patrick serpent-banishing legend",
-    "dating_confidence": "low"
+    "dating_confidence": "low",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Erne of Lough Erne",
@@ -18084,7 +18330,8 @@
     "historical_setting": "Born near Poyntzpass/Tandragee area, County Armagh (some accounts say near Slieve Gullion or County Down), son of Laughlin O'Hanlon, a family of Gaelic nobility whose lands were confiscated under the Cromwellian Act for the Settlement of Ireland (1652), the family deported toward Connacht. O'Hanlon led a tory/rapparee band operating across south Armagh and the Ulster borderlands through the late 1670s and into 1681, defying repeated capture attempts. He was shot dead on 25 April 1681 in a cabin near Eight Mile Bridge, Hilltown, County Down, by his foster-brother/kinsman Art (Arthur) O'Hanlon, reportedly for the bounty on his head.",
     "cultural_tradition": "Irish rapparee/outlaw tradition of the Cromwellian and Restoration periods, later folklorised as an Irish Robin Hood-type figure",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "stuart-britain"
   },
   {
     "name": "Ysbaddaden",
@@ -18115,7 +18362,8 @@
     "historical_setting": "North Wales, within the wider Arthurian narrative of Culhwch and Olwen",
     "cultural_tradition": "Welsh medieval prose narrative, part of what later became known as the Mabinogion collection",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Bignor Hill Dragon",
@@ -18261,7 +18509,8 @@
     "earliest_record": "The earliest literary source is Montgomerie's poem (c.1580). A real historical namesake, Marion Nicneven, was burned at St Andrews in May 1569, predating the poem by about a decade",
     "period": "Late-16th-century Scotland; the Bannatyne Manuscript's Gyre-Carling material, also already named in this entry's text, is a closely related but separate figure from the same period",
     "origin_type": "oral-tradition",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "tudor-britain"
   },
   {
     "name": "Giant of Grabbist",
@@ -18350,7 +18599,8 @@
     "historical_setting": "Legendary Connacht of Queen Medb, centred on Cruachan (Rathcroghan, Co. Roscommon) and the cave of Oweynagat; Erne, described as chief among Medb's maidens/keeper of her combs and caskets, flees north with her attendants and drowns, giving her name to Lough Erne",
     "cultural_tradition": "Irish dindsenchas ('lore of places') tradition -- a medieval genre of origin-legends for place names -- intersecting with the Ulster Cycle/Táin Bó Cúailnge mythological tradition",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "iron-age"
   },
   {
     "name": "Screaming House of St Aubin",
@@ -18376,7 +18626,8 @@
     "historical_setting": "St Aubin was the first Jersey landfall for Huguenot refugees fleeing France after the October 1685 Revocation of the Edict of Nantes; the legend's murderer is said to have preyed on these refugees.",
     "period": "Legend set in the late 17th century",
     "origin_type": "oral-tradition",
-    "dating_confidence": "low"
+    "dating_confidence": "low",
+    "period_slug": "stuart-britain"
   },
   {
     "name": "Loireag of Benbecula",
@@ -18431,7 +18682,8 @@
     "origin_type": "oral-tradition",
     "dating_confidence": "low",
     "period": "No earliest written record of the dog-leap legend itself was located. The O'Cahan (Ó Catháin) lordship of the area is historically documented from the 12th century (the sept first appears on record in 1138) through to the 17th century, which is the historical backdrop the legend is set against, but that dates the clan, not the tale",
-    "cultural_tradition": "Ulster place-name origin legend (dinnseanchas-type tale explaining Leim an Mhadaidh / 'leap of the dog', anglicised as Limavady)"
+    "cultural_tradition": "Ulster place-name origin legend (dinnseanchas-type tale explaining Leim an Mhadaidh / 'leap of the dog', anglicised as Limavady)",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "The Piper's Cave of Arran",
@@ -18515,7 +18767,8 @@
     "period": "Mid-17th century (1644), during the intensified Shetland witchcraft persecutions of roughly 1615-1680",
     "historical_setting": "Scalloway, Shetland, tried under Scotland's 1563 Witchcraft Act",
     "cultural_tradition": "Shetland witch-trial tradition",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "stuart-britain"
   },
   {
     "name": "Haltadans, the Petrified Trows of Fetlar",
@@ -18570,7 +18823,8 @@
     "earliest_record": "The academic study already cited by this entry, 'The Miller's Tomb: Facts, Gossip, and Legend', was published in Folklore, Vol. 116, No. 2 (2005)",
     "period": "Georgian Sussex (Olliver's lifetime); modern academic re-examination in 2005",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Benlli Gawr, the Tyrant of Foel Fenlli",
@@ -18627,7 +18881,8 @@
     "earliest_record": "The Historia Divae Monacellae, the medieval Latin hagiography known as her '12th-century Historia', survives in manuscripts no earlier than the late 16th century (three complete, two incomplete), with a further printed copy of a 17th-century manuscript",
     "period": "Composed sometime in the late Middle Ages based on earlier literature and local folklore (exact composition date unclear); earliest surviving physical manuscripts are 16th-17th century",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "early-medieval-britain"
   },
   {
     "name": "Mount Killaraus and the Giant's Dance",
@@ -18658,7 +18913,8 @@
     "period": "High Medieval Britain (literary composition, 1136)",
     "historical_setting": "A striking modern echo comes from Mike Parker Pearson's 2021 archaeological findings, that part of Stonehenge's bluestones were first erected as a stone circle at Waun Mawn in Wales before being moved, genuine evidence of a prehistoric stone-circle relocation, though not confirming Geoffrey's specifically Irish origin story",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "The Cooneen Ghost",
@@ -18688,7 +18944,8 @@
     "historical_setting": "A widow's farm cottage near Cooneen/Brookeborough, County Fermanagh, after the death of her husband Michael Murphy",
     "cultural_tradition": "Irish poltergeist/haunted-house case, widely reported as one of the best-documented of its type",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "edwardian-britain"
   },
   {
     "name": "The Black Nun of Bonamargy",
@@ -18718,7 +18975,8 @@
     "historical_setting": "Bonamargy Friary after the Franciscan friars departed, traditionally dated to 1642 during the Irish Confederate Wars",
     "cultural_tradition": "Ulster prophecy and ghost-lore tied to the McQuillan clan, who founded the friary c.1500",
     "origin_type": "historical-event",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "stuart-britain"
   },
   {
     "name": "The White Trout of Cong",
@@ -18830,7 +19088,8 @@
     "historical_setting": "St Botolph's monastery is traditionally said to have been founded in 654; the claim rests on the Anglo-Saxon Chronicle and is disputed by modern historians, who consider Iken, Suffolk the more likely site of Botolph's actual foundation.",
     "period": "7th century (historical St Botolph); the devil-and-wind folk tale is undated",
     "origin_type": "oral-tradition",
-    "dating_confidence": "low"
+    "dating_confidence": "low",
+    "period_slug": "early-medieval-britain"
   },
   {
     "name": "The Binbrook Bewitched Farm (1905)",
@@ -18861,7 +19120,8 @@
     "historical_setting": "A tenant farm on the Lincolnshire Wolds, occupied by foreman White under owner William Drakes",
     "cultural_tradition": "English rural witchcraft/poltergeist scare, of the type that regularly attracted national press coverage in this period",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "edwardian-britain"
   },
   {
     "name": "The Ghost of Hellens Manor",
@@ -19056,7 +19316,8 @@
     "historical_setting": "Witchcraft prosecutions tried at the Chelmsford Assizes, Essex, 1582",
     "cultural_tradition": "English witch-hunting and cunning-folk tradition",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "tudor-britain"
   },
   {
     "name": "The Killing of Charles Walton",
@@ -19088,7 +19349,8 @@
     "period": "20th century",
     "historical_setting": "Rural Warwickshire, England, World War II home front (murder occurred 14 February 1945)",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "modern-folklore"
   },
   {
     "name": "Betty's Grave",
@@ -19149,7 +19411,8 @@
     "historical_setting": "Edward Bruce's invasion of Ireland, 1315-1318; Thomas Dun/Tavish Dhu ferried Edward Bruce's invasion force from Ayr to Larne in May 1315, raided Holyhead and Anglesey on 12 September 1315, captured four ships of the Earl of Ulster off Portrush, and was captured and killed in a sea battle with John D'Athy in July 1317, after which his head was reportedly sent to Dublin",
     "cultural_tradition": "Scots-Irish maritime/pirate folklore of the North Antrim coast",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Cermand Cestach, the Oracle of Clogher",
@@ -19257,7 +19520,8 @@
     "period": "mid-16th century (Elizabethan)",
     "historical_setting": "Sark, Channel Islands, before and during Hélier de Carteret's 1565 resettlement of the island under a patent from Elizabeth I; French and other pirate raiders had been using the then-uninhabited island as a base",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Aimee Lake, the Last Witch of Guernsey",
@@ -19310,7 +19574,8 @@
     "earliest_record": "E. V. Lucas's 'Highways and Byways in Sussex' (1904)",
     "period": "Edwardian topographical-guide tradition (1904); narrative setting is the 18th century",
     "origin_type": "oral-tradition",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Mermaid of Mahee",
@@ -19340,7 +19605,8 @@
     "period": "Written down by a named antiquarian-poet in the early 1900s; the Nendrum monastic site itself was traditionally founded in the 5th century by St Mochaoi (d. 497), giving the setting an early medieval frame even though the mermaid legend's own point of origin is unclear",
     "historical_setting": "Nendrum monastic site, Mahee Island, Strangford Lough, County Down",
     "cultural_tradition": "Ulster monastic mermaid/otherworldly-temptation legend",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "early-medieval-britain"
   },
   {
     "name": "The Witches Circle of Weelsby Woods",
@@ -19365,7 +19631,8 @@
     "period": "mid-20th century onward (after 1951)",
     "historical_setting": "Weelsby Woods, Grimsby, Lincolnshire, formerly part of the Weelsby Old Hall Estate, used as a prisoner-of-war camp during and after the Second World War before Fred Parkes (of the Boston Deep Sea Fishing and Ice Company) donated roughly 150 acres of woodland, which opened to the public in 1951; the clearing known as the Witches Circle was called the Fairy Ring before the 1950s",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "modern-folklore"
   },
   {
     "name": "Maeve Roe, the Banshee of Dunluce Castle",
@@ -19395,7 +19662,8 @@
     "period": "First substantial written record mid-19th century (1844); underlying oral tradition likely older and undated",
     "historical_setting": "Dunluce Castle under the MacQuillan family, prior to its passing to the MacDonnells in the mid-16th century",
     "cultural_tradition": "Ulster banshee / doomed-lovers legend",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Feolagan of Kebock Head",
@@ -19564,7 +19832,8 @@
     "period": "Recorded in the 1930s; narrative setting is 'roughly a generation before the account was written down', placing the events themselves around the 1900s-1910s",
     "cultural_tradition": "A community reputation-and-rumour account rather than a documented court case",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "edwardian-britain"
   },
   {
     "name": "Burial Place of the Big Women",
@@ -19623,7 +19892,8 @@
     "historical_setting": "Trial held at the Suffolk assizes in Bury St Edmunds, presided over by Sir Matthew Hale (later Lord Chief Justice), under the Witchcraft Act of 1603. Sir Thomas Browne, author of Religio Medici, testified as a medical expert witness.",
     "cultural_tradition": "English witch-trial / Restoration-era legal and religious tradition; the trial record was later cited as a legal precedent by Salem, Massachusetts magistrates in 1692",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "stuart-britain"
   },
   {
     "name": "John Walsh, the Cunning Man of Netherbury",
@@ -19651,7 +19921,8 @@
     "earliest_record": "'The examination of John Walsh...', a pamphlet printed in London in 1566 recording his examination before the Bishop of Exeter's commissary",
     "period": "Elizabethan England",
     "cultural_tradition": "English cunning-folk / fairy-belief tradition",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "tudor-britain"
   },
   {
     "name": "King Bladud",
@@ -19679,7 +19950,8 @@
     "period": "Legendary pre-Roman Britain. Geoffrey places Bladud as the 10th king in descent from Brutus, reigning roughly in the 9th century BC",
     "cultural_tradition": "Later absorbed into Bath's civic founding-myth tradition, tied to the city's Roman-era hot springs",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "bronze-age"
   },
   {
     "name": "King Lud",
@@ -19705,7 +19977,8 @@
     "earliest_record": "Geoffrey of Monmouth's Historia Regum Britanniae is the source for Lud's legendary reign (c.66 BC in Geoffrey's own internal chronology); the physical statues have their own independently dated history: commissioned 1260, damaged during the Reformation, rebuilt 1586, moved 1760",
     "period": "High Medieval Britain (literary composition, 1135-39); physical monument history spans 1260-1760",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "iron-age"
   },
   {
     "name": "Elspeth Reoch",
@@ -19763,7 +20036,8 @@
     "historical_setting": "Ulster land confiscations affecting the Donnelly clan of County Tyrone. An ancestor, Donnell O'Donnelly, fought at the Battle of Kinsale (1601/1603) with Hugh O'Neill; Shane's father Patrick Donnelly fought with Sir Phelim O'Neill's forces in the 1641 Rebellion, during which Castle Caulfield (built 1611-1619 on former Donnelly lands) was burned",
     "cultural_tradition": "Irish rapparee/outlaw tradition, Ulster",
     "origin_type": "historical-event",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "stuart-britain"
   },
   {
     "name": "Bincombe Bumps",

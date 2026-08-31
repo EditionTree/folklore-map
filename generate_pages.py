@@ -2176,13 +2176,12 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
     # folklore are often approximate (many traditions predate any surviving
     # written source), so the caveat is shown whenever the section renders.
     period_value = leg.get("period", "")
-    # Prefer the controlled slug; fall back to the free-text value's exact match
-    # for as long as the bridge above is in place.
+    # The controlled slug is the only source for this link. The free-text
+    # fallback that used to sit here went with the bridge on 2026-08-27:
+    # it linked the sidebar to a page the entry had been reviewed OFF.
     period_slug = (leg.get("period_slug") or "").strip() or None
     if period_slug and period_slug not in set((periods_by_title or {}).values()):
         period_slug = None
-    if not period_slug:
-        period_slug = (periods_by_title or {}).get(period_value)
     period_display = (
         f'<a href="{period_page_url(period_slug)}">{esc(period_value)}</a>'
         if period_slug else esc(period_value)
@@ -2622,42 +2621,28 @@ def build():
     sightings_map = load_sightings()
     period_members = {p["slug"]: [] for p in periods}
     valid_period_slugs = set(period_members)
-    # `period_slug` is the controlled field, and the only one that means what a
-    # period page claims: WHEN A LEGEND IS SET, never when it was written down.
-    # The enrichment pass writes it under the ladder in content-style-guide.md
-    # ("Assigning period_slug"). An absent value is a correct answer, not a gap:
-    # undatable oral tradition belongs on no period page.
+    # `period_slug` is the controlled field, and the only one that means what
+    # a period page claims: WHEN A LEGEND IS SET, never when it was written
+    # down. Assignment rules are in content-style-guide.md under "Assigning
+    # period_slug". An absent value is a correct, finished answer: undatable
+    # oral tradition belongs on no period page.
     #
-    # Until its coverage is complete the free-text `period` field is read as a
-    # bridge. Exact match first, then the period name appearing inside the
-    # prose, longest match winning so "Sub-Roman Britain" is not swallowed by
-    # "Roman Britain". The bridge reads prose that mixes setting and record, so
-    # it gets some entries wrong: measured 2026-08-27 it placed 83 entries with
-    # one clear misfile (Red Hand of Ulster). Delete it once period_slug
-    # overtakes it; `python scripts/period_audit.py` reports both counts.
-    match_terms = sorted(periods_by_title.items(), key=lambda kv: -len(kv[0]))
-    period_bridged = 0
+    # The free-text `period` bridge that used to stand here was DELETED on
+    # 2026-08-27, once all 710 entries had been reviewed by hand. It had to
+    # go rather than simply fall idle: for 9 entries it was overriding a
+    # deliberate "no period" decision and putting them back on a page. Two of
+    # those were exactly the misfile this field exists to prevent, Black Shuck
+    # to Tudor and Asrai to Victorian, both read off a record date. Do not
+    # reintroduce a fallback that reads `period`.
     period_bad_slugs = []
     for l in legends:
         slug = (l.get("period_slug") or "").strip() or None
-        if slug and slug not in valid_period_slugs:
-            period_bad_slugs.append((l["name"], slug))
-            slug = None
         if not slug:
-            value = (l.get("period") or "").strip()
-            if not value:
-                continue
-            slug = periods_by_title.get(value)
-            if not slug:
-                low = value.lower()
-                for term, term_slug in match_terms:
-                    if term.lower() in low:
-                        slug = term_slug
-                        break
-            if slug:
-                period_bridged += 1
-        if slug:
-            period_members[slug].append(l)
+            continue
+        if slug not in valid_period_slugs:
+            period_bad_slugs.append((l["name"], slug))
+            continue
+        period_members[slug].append(l)
     if period_bad_slugs:
         print("  WARNING: %d entries carry an unknown period_slug (ignored): %s"
               % (len(period_bad_slugs),

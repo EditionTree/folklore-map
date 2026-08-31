@@ -25,7 +25,8 @@
     "earliest_record": "1805 Manchester Mail newspaper account, collected from local oral tradition via Thomas Broadhurst",
     "historical_setting": "Georgian Cheshire; earlier oral versions traced to a telling by a 'Parson Shrigley', who died in 1776, showing the story already circulated locally before that date",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Andraste",
@@ -51,7 +52,8 @@
     "earliest_record": "Cassius Dio, Roman History, Book 62 (Epitome), written c. AD 229",
     "historical_setting": "Roman-occupied Britain, the Boudican revolt",
     "origin_type": "historical-event",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "roman-britain"
   },
   {
     "name": "Arawn",
@@ -75,7 +77,8 @@
     "earliest_record": "First Branch of the Mabinogi, 'Pwyll Pendefig Dyfed'; earliest surviving manuscripts are the White Book of Rhydderch (c. 1350) and Red Book of Hergest (c. 1382-1410), though the text is thought to have been composed in the 11th-12th century; a possible earlier allusion appears in the poem Preiddeu Annwfn in the Book of Taliesin",
     "historical_setting": "Medieval Wales; Welsh mythological Otherworld tradition",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Asrai",
@@ -126,7 +129,8 @@
     "earliest_record": "Archaeological dating of the henge, bank/ditch and stone circles; 2007 excavations suggest initial construction began roughly 4,400 years ago and may have taken up to 200 years",
     "period": "Neolithic Britain",
     "origin_type": "archaeological",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "prehistoric-britain"
   },
   {
     "name": "Barghest",
@@ -177,7 +181,8 @@
     "earliest_record": "Blind Harry's epic poem 'The Wallace' ('The Actes and Deidis of the Illustre and Vallyeant Campioun Schir William Wallace'), composed c. 1477; the earliest surviving copy was transcribed by John Ramsay in 1488",
     "period": "Late Medieval Scotland",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Beast of Bodmin",
@@ -200,7 +205,8 @@
     "earliest_record": "First widely reported sighting 1978, with over 60 reported sightings by the mid-1990s; a 1995 UK Ministry of Agriculture, Fisheries and Food investigation found 'no verifiable evidence' of a big cat but could not rule one out",
     "period": "Late 20th-century Cornwall",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "modern-folklore"
   },
   {
     "name": "Beinn a' Bheithir",
@@ -251,7 +257,8 @@
     ],
     "earliest_record": "Earliest literary attestation: Tertullian, c. 200 AD, naming Belenus as national god of Noricum; earliest epigraphic evidence is a body of votive inscriptions (about 51 known) concentrated at Aquileia, also Roman-period, with dedications continuing into the 4th century AD",
     "period": "Roman-era Celtic Europe (as attested); the cult itself is presumed pre-Roman Iron Age in origin",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "iron-age"
   },
   {
     "name": "Beltane Fire Festival",
@@ -273,7 +280,8 @@
     "earliest_record": "Founded in 1988 by a small group including the musical collective Test Dept, with academic support from the University of Edinburgh's School of Scottish Studies; the first festival drew an audience of about 50, growing to roughly 10,000 by 1999",
     "period": "Late 20th-century Edinburgh (modern revival, deliberately drawing on older Gaelic Beltane fire customs rather than continuing them unbroken)",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "modern-folklore"
   },
   {
     "name": "Beowulf",
@@ -305,7 +313,8 @@
     "earliest_record": "Sole surviving manuscript, the Nowell Codex (British Library, Cotton MS Vitellius A.xv), copied c. 975-1025 AD",
     "period": "Anglo-Saxon England",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "early-medieval-britain"
   },
   {
     "name": "Bisterne Dragon",
@@ -327,7 +336,8 @@
     "earliest_record": "First written down in the margin of a Berkeley family pedigree roll predating 1618, preserved at Berkeley Castle; the legend is believed to have coalesced in the 15th century around Sir Maurice de Berkeley (fl. reign of Henry VI)",
     "period": "Late Medieval to early modern Hampshire",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "The Black Dog of Newgate",
@@ -384,7 +394,8 @@
     ],
     "period": "Narrative setting is the Wars of the Roses (1455-1487), though this is legendary rather than a documented date. The earliest written record traced is 20th-century compilations of Lincolnshire hauntings; the tale's oral currency is presumably older but no earlier record was found",
     "origin_type": "oral-tradition",
-    "dating_confidence": "low"
+    "dating_confidence": "low",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Black Rock Gorge",
@@ -539,7 +550,8 @@
     ],
     "origin_date": "motte likely 11th-12th century; the Round Table folklore itself is undated",
     "earliest_record": "Domesday Book, 1086 (manor of Botcinnii); earliest antiquarian survey of the mound by Henry MacLauchlan, 1852",
-    "period": "Norman, 11th-12th century (the physical site); the folklore's own age is unrecorded"
+    "period": "Norman, 11th-12th century (the physical site); the folklore's own age is unrecorded",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Bran the Blessed",
@@ -565,7 +577,8 @@
     "earliest_record": "Second Branch of the Mabinogi, 'Branwen ferch Llŷr', preserved in the White Book of Rhydderch (c. 1350) and the Red Book of Hergest (c. 1382-1410); scholars agree the tale predates both manuscripts by an uncertain margin",
     "period": "Medieval Wales (recorded); the tale's roots are pre-Norman Welsh oral tradition",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Brigid",
@@ -590,7 +603,8 @@
     "earliest_record": "Cogitosus's Latin 'Vita Sanctae Brigitae' (Life of St Brigid), written not much later than 650 AD and among the earliest specimens of Irish hagiography, addresses the Christian saint; the goddess is first explicitly described in Cormac's Glossary ('Sanas Cormaic'), compiled c. 908 AD, which calls her 'the goddess whom poets adored' and names two sisters connected with healing and smithcraft",
     "period": "Early Christian Ireland (as recorded); presumed pre-Christian Iron Age in origin as a deity",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "iron-age"
   },
   {
     "name": "Brown Lady of Raynham Hall",
@@ -616,7 +630,8 @@
     "earliest_record": "First claimed sighting by Lucia C. Stone at a Christmas gathering, 1835; a further sighting reported by Captain Frederick Marryat in 1836; the famous photograph was taken by Captain Hubert C. Provand and Indre Shira on 19 September 1936, published in Country Life on 26 December 1936",
     "period": "19th-century Norfolk (recorded sightings); traditionally identified with Dorothy, Lady Townshend (1686-1726)",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Brownie",
@@ -668,7 +683,8 @@
     "earliest_record": "Bronze Age round cairn (late third millennium BC), with a peristalith of about fifteen surviving stones; sits on an upland Bronze Age trackway lined with other contemporary monuments beginning at Llanbedr on the coast",
     "period": "Bronze Age Wales",
     "origin_type": "archaeological",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "bronze-age"
   },
   {
     "name": "Bryn Gwyn stones",
@@ -693,7 +709,8 @@
     "earliest_record": "The two surviving stones (first noted by 18th-century visitors, including Somerset vicar John Skinner in 1802) are most likely a Bronze Age ritual or ceremonial stone setting per Coflein's current assessment, though a more recent date and mundane function can't be ruled out; 18th-century observers speculated they were part of a 'Druidical' stone circle, a claim Coflein says has little supporting evidence",
     "period": "Likely Bronze Age Wales, though genuinely uncertain",
     "origin_type": "archaeological",
-    "dating_confidence": "low"
+    "dating_confidence": "low",
+    "period_slug": "prehistoric-britain"
   },
   {
     "name": "Bucca",
@@ -774,7 +791,8 @@
     "period": "Bronze Age (ring cairns) through Iron Age (hillfort) Cornwall",
     "historical_setting": "The Bran/Bendigeidfran name-association and the Pobel Vean sanctuary tradition are separate, later folkloric overlays with no independent date of their own",
     "origin_type": "archaeological",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "iron-age"
   },
   {
     "name": "Caerleon",
@@ -796,7 +814,8 @@
     "earliest_record": "Geoffrey of Monmouth's 'Historia Regum Britanniae' (c. 1136) identifies Caerleon as Arthur's court and coronation site; the identification was picked up soon after in Welsh and French sources including Dafydd ap Gwilym and Chrétien de Troyes. The real Roman fortress underneath the legend, Isca (Isca Augusta/Isca Silurum), was established AD 74-75 and garrisoned by Legio II Augusta until its departure c. AD 290",
     "period": "Roman Britain (the fortress itself); High Medieval Wales (the Arthurian association)",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Cailleach",
@@ -822,7 +841,8 @@
     "earliest_record": "'The Lament of the Old Woman of Beare' (Aithbe dam-sa bés mora), one of the earliest surviving Old Irish poems, dated to roughly the 9th-10th century AD and surviving in several manuscripts including Trinity College Dublin MS 1337",
     "period": "Early medieval Ireland (as recorded); presumed a much older pan-Celtic mythic figure",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "iron-age"
   },
   {
     "name": "Canewdon",
@@ -846,7 +866,8 @@
     "earliest_record": "Folklorist Eric Maple's fieldwork, conducted in the winter of 1959-60, interviewing Canewdon residents about the cunning man George Pickingill (d. 1909) and the village's reputed resident witches. The fieldwork was published as 'The Witches of Canewdon' in Folklore, Vol. 71, No. 4 (1960)",
     "period": "Late 19th/early 20th-century Essex (the specific stories Maple collected); the wider 'six witches' belief pattern is older oral tradition of uncertain age",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "victorian-britain"
   },
   {
     "name": "Cantre'r Gwaelod",
@@ -873,7 +894,8 @@
     "earliest_record": "'Boddi Maes Gwyddno' ('The Drowning of the Land of Gwyddno'), nine Old Welsh englynion preserved in the 13th-century Black Book of Carmarthen, blaming the flood on the well-maiden Mererid and the visiting king Seithennin",
     "period": "Medieval Wales",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Castle Downs, Cornwall",
@@ -904,7 +926,8 @@
     "period": "Late medieval Cornwall (earliest textual attestation, 1478); the hillfort itself is independently dated by archaeology to the 3rd-2nd century BC (Iron Age), with two Bronze Age round barrows inside its ramparts predating even that",
     "historical_setting": "The ghost-soldier sightings are much later additions: Samuel Drew's account dates to the late 18th century and Henry Jenner's collected testimony to 1867",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "The Cauld Lad of Hylton",
@@ -958,7 +981,8 @@
     "earliest_record": "Elis Gruffydd's mid-16th-century 'Ystoria Taliesin' (part of his Chronicle of the Six Ages of the World, National Library of Wales MS 5276) is the earliest complete surviving text of the Ceridwen/Taliesin tale, though Gruffydd's own account points to earlier sources, possibly as old as the 9th century. Some of the 56 poems in the related, older 14th-century Book of Taliesin are considered by scholars to originate in the 10th century or earlier",
     "period": "Early Modern Wales (earliest complete surviving text); the tradition itself is judged considerably older",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Cerne Abbas Giant",
@@ -986,7 +1010,8 @@
     "earliest_record": "A 2021 optically stimulated luminescence (OSL) study by the National Trust, University of Gloucestershire, and Cerne Historical Society dated sediment in the chalk outline to 700-1100 AD, with a mid-point in the late 10th century, around the time nearby Cerne Abbey was founded. This overturned earlier theories of a prehistoric/Roman (Hercules) origin and a 17th-century Cromwell-mocking origin",
     "period": "Late Anglo-Saxon England",
     "origin_type": "archaeological",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "early-medieval-britain"
   },
   {
     "name": "Cernunnos",
@@ -1012,7 +1037,8 @@
     "earliest_record": "The Pillar of the Boatmen, erected in Lutetia (Roman Paris) by the Parisii boatmen's guild between 14-37 AD, is the only surviving inscription naming 'Cernunnos', rediscovered in 1710 during work beneath Notre-Dame de Paris. Earlier, uninscribed antlered-figure iconography appears in Iron Age rock carvings at Val Camonica, Italy (from c. 400 BC) and on the 1st-century BC Gundestrup Cauldron, though these can't be certainly linked to this specific name",
     "period": "Roman Gaul (named attestation); presumed pre-Roman Iron Age in iconographic origin",
     "origin_type": "archaeological",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "iron-age"
   },
   {
     "name": "Chanctonbury Ring",
@@ -1061,7 +1087,7 @@
       "https://historicengland.org.uk/listing/the-list/list-entry/1012352"
     ],
     "cultural_tradition": "Cornish giant-versus-saint contest motif, a recurring type in Cornish folklore (cf. Cormoran, other Bodmin/West Penwith giant tales)",
-    "historical_setting": "Stowe's Hill, Bodmin Moor, Cornwall. The Cheesewring rock stack sits beside Stowe's Pound, a scheduled prehistoric hillfort with Bronze Age cairns and hut circles (Historic England list entry 1012352), so the landscape itself is securely dated even though the giant legend attached to it is not",
+    "historical_setting": "Stowe's Hill, Bodmin Moor, Cornwall — the Cheesewring rock stack sits beside Stowe's Pound, a scheduled prehistoric hillfort with Bronze Age cairns and hut circles (Historic England list entry 1012352), so the landscape itself is securely dated even though the giant legend attached to it is not",
     "origin_type": "oral-tradition",
     "dating_confidence": "low",
     "period": "No dated written source for the giant-and-saint (Uter and St Tue) legend could be located. Wikipedia's own citation for the tale is a 2008 popular book (Chapman & Chapman, Iconic Cornwall), not an earlier folklore collection; searches of Robert Hunt's Popular Romances of the West of England (1865) and William Bottrell's collections did not turn up a Cheesewring-specific version"
@@ -1093,7 +1119,8 @@
     "period": "Early Bronze Age Britain",
     "historical_setting": "The stone circle's destruction is separately and precisely dated: a farmer employed by landowner James Kay sledgehammered the stones in the 1870s, with only two of the original stones still in place by an 1871 record",
     "origin_type": "archaeological",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "bronze-age"
   },
   {
     "name": "Church Grim",
@@ -1150,7 +1177,8 @@
     "period": "Neolithic Cornwall",
     "historical_setting": "The giant-hurler folk explanation for the capstone's placement (and its associated taboo against moving the stones) has no independently dateable origin distinct from the monument itself",
     "origin_type": "archaeological",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "prehistoric-britain"
   },
   {
     "name": "Cock Lane ghost",
@@ -1178,7 +1206,8 @@
     "earliest_record": "A well-documented historical hoax centred on 12-year-old Elizabeth Parsons of Cock Lane, near Smithfield in London; investigated by a commission including Samuel Johnson, who concluded the scratching noises were faked by the girl. The perpetrators, including her father Richard Parsons, were convicted at Guildhall on 10 July 1762",
     "period": "Georgian London",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Coventina",
@@ -1203,7 +1232,8 @@
     "earliest_record": "Coventina's Well shrine was excavated by antiquarian John Clayton in October 1876 at Carrawburgh (Brocolitia) on Hadrian's Wall, yielding over 20 altars, roughly 16,000 coins, and other votive offerings attesting continuous worship from the 2nd to 4th centuries AD. The well was ritually sealed and decommissioned c. 388 AD",
     "period": "Roman Britain",
     "origin_type": "archaeological",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "roman-britain"
   },
   {
     "name": "Craddock Moor stone circle",
@@ -1229,7 +1259,8 @@
     "earliest_record": "An Early-to-Middle Bronze Age stone circle, unusual among Cornish circles for having all sixteen stones recumbent; part of a wider ritual landscape with a nearby stone row and embanked enclosure, possibly aligned with the Hurlers circles and Brown Willy's midsummer sunset. Scheduled by Historic England (list entry 1010329)",
     "period": "Bronze Age Britain",
     "origin_type": "archaeological",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "bronze-age"
   },
   {
     "name": "Cŵn Annwn",
@@ -3967,7 +3998,7 @@
       "england",
       "yorkshire"
     ],
-    "detail": "In 1963 the Reverend Kenneth Lord photographed the interior of the Church of Christ the Consoler at Skelton-on-Ure near Ripon in North Yorkshire; when the film was developed, a tall, hooded figure appeared standing near the altar, seemingly draped in a translucent white shroud over a dark, ravaged face, though the photographer insisted he had seen nothing there at the time. The image has become one of the most reproduced and debated 'ghost photographs' in Britain.\n\nThe image circulated for decades as apparent evidence of the supernatural, the figure's great height (estimated at over nine feet) and veiled, skull-like face lending it a peculiar horror. Sceptics have proposed double exposure or a deliberately posed and draped figure as the explanation, and the truth has never been settled. Belonging to the photographic age rather than to old oral tradition, the Newby spectre shows how the camera created a wholly modern kind of ghost story, fixed forever in a single haunting frame.",
+    "detail": "The Reverend Kenneth Lord photographed the interior of the Church of Christ the Consoler at Skelton-on-Ure near Ripon, North Yorkshire, an event usually dated to 1963, though a 1984 interview with the Lord family for Arthur C. Clarke's World of Strange Powers put it nearer 1954, and other retellings settle on 1960; no contemporary date was ever pinned down. When the film was developed, a tall, hooded figure appeared standing near the altar, draped in a translucent white shroud over a dark, ravaged face, though the photographer insisted he had seen nothing there at the time. The image has become one of the most reproduced and debated 'ghost photographs' in Britain.\n\nThe photograph first reached a wide public in the Sunday People on 13 August 1967, whose own photographic department examined the negative and reported finding no evidence of tampering or deliberate double exposure. Reproductions since have tended to sharpen the contrast well beyond the softer original, exaggerating the figure's outline. Sceptics have since favoured a more mundane explanation than the paper's own investigation allowed for. Lord's camera, a Rolleicord IV with a 75mm lens, was unusual among twin lens reflexes of its day in permitting deliberate double exposures. A hooded assistant, briefly exposed against a stopped down lens, capped and removed before the shutter reopened on the empty altar, would produce exactly this kind of image.\n\nThe church itself, built between 1871 and 1876 as a memorial to Frederick Vyner, a young Englishman murdered by bandits in Greece, was still under a century old when the photograph was taken. Belonging to the photographic age rather than to old oral tradition, the Newby spectre shows how the camera created a wholly modern kind of ghost story, fixed forever in a single disputed frame.",
     "sources": [
       "https://en.wikipedia.org/wiki/Spectre_of_Newby_Church",
       "https://burialsandbeyond.com/2019/03/05/the-spectre-of-newby-church/",
@@ -5254,7 +5285,7 @@
     "historical_setting": "North Yorkshire Moors, wooded gullies known locally as 'haggs'",
     "origin_type": "oral-tradition",
     "dating_confidence": "low",
-    "period": "The dialect term 'hagworm' is attested in Yorkshire place-name and documentary records from at least 1541 ('a rode at Haggwormereyns') and 1722 ('the Hag-worm Flatt'), per the University of York's Yorkshire Historical Dictionary, but these are place-name attestations of the word for a snake/adder, not dated tellings of a specific worm-slaying narrative, so the legend's own age cannot be pinned down from this",
+    "period": "The dialect term 'hagworm' is attested in Yorkshire place-name and documentary records from at least 1541 ('a rode at Haggwormereyns') and 1722 ('the Hag-worm Flatt'), per the University of York's Yorkshire Historical Dictionary — but these are place-name attestations of the word for a snake/adder, not dated tellings of a specific worm-slaying narrative, so the legend's own age cannot be pinned down from this",
     "cultural_tradition": "One of numerous English 'worm' (wyrm/serpent) legends in the North Country dragon-slaying tradition, alongside the Lambton Worm and Sockburn Worm"
   },
   {
@@ -5876,7 +5907,8 @@
     "earliest_record": "Fourth Branch of the Mabinogi ('Math fab Mathonwy'), preserved in the White Book of Rhydderch (Peniarth MS 4, c. 1350) and the Red Book of Hergest (c. 1382-1410); the underlying tale is judged by scholars to be considerably older than either manuscript",
     "period": "Medieval Wales (recorded); the tale's roots are pre-Norman Welsh oral tradition",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Gwyn ap Nudd",
@@ -6005,7 +6037,8 @@
     "earliest_record": "Geoffrey of Monmouth's 'Historia Regum Britanniae' (1135-39) is the earliest surviving developed account of Corineus, Brutus, and the Gogmagog wrestling match. The legend went largely unchallenged until Polydore Vergil (1534) and especially William Camden's 'Britannia' (1586) began the antiquarian critique of Geoffrey's British history",
     "period": "High Medieval Britain",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "bronze-age"
   },
   {
     "name": "Gog and Magog",
@@ -6057,7 +6090,8 @@
     "earliest_record": "First named in Chrétien de Troyes's 'Lancelot, the Knight of the Cart' ('Le Chevalier de la Charrette'), composed between 1177 and 1189. Camelot is mentioned only in passing (Arthur holding court there on Ascension Day), with none of the later importance the name would go on to acquire",
     "period": "High Medieval French/Anglo-Norman Arthurian romance tradition",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Avalon",
@@ -6086,7 +6120,8 @@
     "earliest_record": "Geoffrey of Monmouth's Historia Regum Britanniae (c. 1136), which names 'Insula Avallonis'; expanded in his later Vita Merlini (c. 1150) as 'Insula pomorum', the island of apples, ruled by Morgan le Fay and her eight sisters",
     "period": "High Medieval Britain",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Plynlimon",
@@ -6568,7 +6603,7 @@
       "vanishing",
       "ireland"
     ],
-    "detail": "The Pooka (púca in Irish) is a shape-shifting spirit of Irish folklore, appearing as a sleek black horse, a goat, a hare, a great dog or an eagle, often with burning golden eyes. In its horse form it was notorious for offering, or forcing, a wild night-ride across the country, sweeping up the unwary and setting them down again at dawn, shaken and far from home. Yet the Pooka was not purely malevolent: it could give sound counsel and warnings, and was treated with wary respect.\n\nIt was closely bound to the turning of the year, and especially to the days after Samhain, when by tradition the Pooka spoiled the wild fruits still left on the bushes, which were no longer to be gathered. Its name echoes across the Celtic and Germanic worlds, in the Welsh pwca and the English Puck, marking it as a very old figure indeed. The Pooka remains among the best-loved and least predictable of all Ireland's fairy beings.",
+    "detail": "The Pooka (púca in Irish) is a shape-shifting spirit of Irish folklore, appearing as a sleek black horse, a goat, a hare, a great dog or an eagle, often with burning golden eyes. In its horse form it was notorious for offering, or forcing, a wild night-ride across the country, sweeping up the unwary and setting them down again at dawn, shaken and far from home. Yet the Pooka was not purely malevolent: it could give sound counsel and warnings, and was treated with wary respect.\n\nThe National Folklore Collection, gathered from Irish schoolchildren in the 1930s, preserves a plainer, more physical kind of encounter. In an account from Boher, County Westmeath, a local man named Paddy Ward, known around the parish as a bit of a \"tricester\" and sportsman, took a dare one Halloween night after a wedding to walk through Killan graveyard at two o'clock in the morning. He got about halfway round before something knocked him flat, an encounter neighbours put down to the Pooka ever after.\n\nThe timing was no accident. The Pooka was closely bound to the turning of the year, and especially to the days after Samhain, when by tradition it spoiled the wild fruits still left on the bushes, which were no longer to be gathered. Its name echoes across the Celtic and Germanic worlds, in the Welsh pwca and the English Puck, marking it as a very old figure indeed. The Pooka remains among the best-loved and least predictable of all Ireland's fairy beings.",
     "sources": [
       "https://en.wikipedia.org/wiki/Púca",
       "https://sacred-texts.com/neu/yeats/fip/fip27.htm",
@@ -6603,7 +6638,8 @@
     "earliest_record": "'Oidheadh Chlainne Lir' ('The Violent Death of the Children of Lir'), one of the 'Three Sorrows of Storytelling' alongside the tales of Deirdre and the Children of Tuireann; the earliest surviving manuscript dates to approximately 1500, in Early Modern Irish",
     "period": "Late Medieval/Early Modern Ireland (surviving manuscript); the tale is considered part of an older mythological tradition",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "early-medieval-britain"
   },
   {
     "name": "Balor of the Evil Eye",
@@ -6628,7 +6664,8 @@
     "earliest_record": "Cath Maige Tuired ('The Second Battle of Mag Tuired'), surviving in the 16th-century manuscript Harleian 5280, but composed in the Middle Irish period drawing on Old Irish material scholars trace to as early as the 9th century",
     "period": "Medieval Ireland (recorded); mythological pre-Christian setting",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "early-medieval-britain"
   },
   {
     "name": "The Selkie (Irish tradition)",
@@ -6723,7 +6760,8 @@
     "earliest_record": "Tírechán's 'Breviarium', preserved in the Book of Armagh (c. 807 AD), is the earliest written record associating St Patrick's forty-day fast with the mountain, then known as Cruachán Aigle. Archaeological surveys separately show a dense prehistoric landscape on and around the summit. Stone circles, fulacht fiadh cooking sites, Bronze Age burial cairns and the collapsed walls of a prehistoric hillfort were linked in pre-Christian tradition to the deity Crom Dubh and the Lughnasa harvest festival, and they predate the Patrick association by well over a thousand years",
     "period": "Neolithic/Bronze Age (pre-Christian sacred site); early medieval Ireland (Patrick hagiography)",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Cailleach Bhéara",
@@ -6751,7 +6789,8 @@
     "earliest_record": "'Aithbe damsa bés mora' ('The Lament of the Old Woman of Beare'), an Old Irish poem composed c. late 9th-10th century; the earliest surviving manuscript witness is the Book of Leinster (c.1160), with four further later manuscripts",
     "period": "Early Medieval Ireland (poem composition, c.9th-10th century); the Cailleach figure herself is understood by scholars as a much older pre-Christian goddess-of-the-land archetype, with the poem representing her Christianised literary treatment",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "iron-age"
   },
   {
     "name": "Knocknarea",
@@ -6862,7 +6901,8 @@
     "period": "Golden Age of Piracy (early 18th century)",
     "historical_setting": "Born Casnewydd Bach (Little Newcastle), Pembrokeshire, 17 May 1682; killed in action against HMS Swallow off Cape Lopez, West Africa, 10 February 1722.",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Grace O'Malley",
@@ -7001,7 +7041,8 @@
     "earliest_record": "Real historical pirate (Edward Teach/Thatch); contemporary reports appear in dispatches printed in the Boston News-Letter; killed in battle at Ocracoke Inlet, North Carolina, November 1718",
     "period": "Golden Age of Piracy (early 18th century)",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Anne Bonny",
@@ -7026,7 +7067,8 @@
     "earliest_record": "Trial record, Spanish Town, Jamaica, 28 November 1720; Captain Charles Johnson, 'A General History of the Robberies and Murders of the most notorious Pyrates' (1724)",
     "historical_setting": "Caribbean piracy, Golden Age of Piracy",
     "origin_type": "historical-event",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Andrew Barton (privateer)",
@@ -7236,7 +7278,8 @@
     "earliest_record": "Professor J. Norman Collie's address to the Cairngorm Club's 1925 Annual General Meeting, recounting an experience from 1891; a possibly earlier reference dates to 1791, when poet James Hogg reported a similar encounter",
     "historical_setting": "Cairngorm mountains, Scotland; entered public record in the early 20th-century mountaineering community",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "modern-folklore"
   },
   {
     "name": "Lincoln Imp",
@@ -7607,7 +7650,8 @@
     "earliest_record": "Written history of the well begins in the 13th century; the Holy Grail/Joseph of Arimathea association draws on French poet Robert de Boron's 13th-century grail romance, which introduced Joseph bringing relics to Britain, not a claim specific to this well originally. Modern custodianship began in 1959, when Wellesley Tudor Pole founded the Chalice Well Trust",
     "period": "Medieval Somerset (written history); modern era (present-day custodianship)",
     "origin_type": "oral-tradition",
-    "dating_confidence": "low"
+    "dating_confidence": "low",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Stone of Scone",
@@ -7723,7 +7767,8 @@
     "earliest_record": "Tacitus, 'Annals' (Book 14.29-39), written in the early 2nd century AD, roughly 50 years after the events; also described independently by Cassius Dio, 'Roman History' (62.3-6), written in the early 3rd century AD. The two sources disagree on some details (Tacitus attributes the revolt to Iceni mistreatment after King Prasutagus's death; Dio to a disputed loan)",
     "period": "Roman Britain",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "roman-britain"
   },
   {
     "name": "William Wallace",
@@ -8151,7 +8196,8 @@
     "earliest_record": "Second Branch of the Mabinogi, 'Branwen ferch Llŷr', preserved in the White Book of Rhydderch (c. 1350) and the Red Book of Hergest (c. 1382-1410)",
     "period": "Medieval Wales (recorded); the tale's roots are pre-Norman Welsh oral tradition",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Afanc",
@@ -8492,7 +8538,8 @@
     "period": "Named in passing by 1769; fully compiled from oral Gaelic tradition and published in 1877",
     "historical_setting": "Brahan Castle and the Chanonry of Ross, Scottish Highlands, traditionally set in the 17th century under the Seaforth Mackenzies",
     "cultural_tradition": "Highland second-sight/prophecy tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "stuart-britain"
   },
   {
     "name": "Gelert",
@@ -9458,7 +9505,8 @@
     "period": "Neolithic Wales",
     "historical_setting": "The passage tomb's construction is independently dated by archaeology; the giantess/apron-spill folk explanation is a separate, undateable oral tradition of the kind commonly attached to prehistoric monuments once their true builders were forgotten.",
     "origin_type": "archaeological",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "prehistoric-britain"
   },
   {
     "name": "Wild Edric",
@@ -9624,7 +9672,8 @@
     "historical_setting": "Medieval Ireland; Fenian Cycle tale describing pre-Christian Tara",
     "cultural_tradition": "Irish Fenian Cycle oral tradition, later fixed in writing",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "iron-age"
   },
   {
     "name": "Lough na Súil",
@@ -10067,7 +10116,8 @@
     "earliest_record": "Middle English verse romance 'Bevis of Hampton' (Beves of Hamtoun), oldest surviving manuscript early 14th century; likely translated/adapted from an earlier 12th-century Anglo-Norman original (Boeve de Haumtone)",
     "period": "High Medieval England",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Bevis of Hampton",
@@ -10098,7 +10148,8 @@
     "earliest_record": "Middle English verse romance 'Beves of Hamtoun', oldest surviving manuscript early 14th century; likely descended from a 12th-century Anglo-Norman original (Boeve de Haumtone)",
     "period": "High Medieval England",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Phantom Hare of Bolingbroke Castle",
@@ -10454,7 +10505,8 @@
     "historical_setting": "Execution of Thomas Vaughan ap Rosser following the Yorkist defeat at the Battle of Edgcote, 26 July 1469",
     "cultural_tradition": "Herefordshire/Welsh Marches black dog and ancestral-ghost folklore; the black hound said to haunt Hergest Court is widely cited as a possible influence on Conan Doyle's The Hound of the Baskervilles",
     "origin_type": "historical-event",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Mermaid of Marden",
@@ -10744,7 +10796,8 @@
     ],
     "origin_date": "1216 (the alleged poisoning, during King John's final campaign)",
     "earliest_record": "13th-century Norman French manuscript, British Library Cotton MS Vitellius A XIII, which records that John 'fuit enpoysóné par une frere de la meson' (was poisoned by a brother of the house)",
-    "period": "High Medieval, 13th century in origin; the fullest tellings are 15th-16th century"
+    "period": "High Medieval, 13th century in origin; the fullest tellings are 15th-16th century",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Twm Siôn Cati",
@@ -11024,13 +11077,16 @@
     "sources": [
       "https://www.tuatha.ie/oweynagat-cave/",
       "https://www.ucc.ie/en/media/academic/seanmeanghaeilge/cdi/texts/Meyer-Echtra-Nerai.pdf",
-      "https://voicesfromthedawn.com/rathcroghan/"
+      "https://voicesfromthedawn.com/rathcroghan/",
+      "https://celt.ucc.ie/published/T301012.html"
     ],
     "earliest_record": "Named in the Old Irish tale Echtra Nerai (\"The Adventure of Nera\"), edited and translated by Kuno Meyer from the Egerton 1782 manuscript with variants from the Yellow Book of Lecan, published in Revue Celtique 10 (1889); the cave also frames the opening of the Táin Bó Cúailnge",
     "period": "Ulster Cycle of early Irish literature; underlying composition generally dated to the Old Irish period (roughly 8th-10th century), preserved in later medieval manuscripts",
     "historical_setting": "Rathcroghan royal complex, pre-Christian Connacht, traditional seat of Ailill and Medb",
     "cultural_tradition": "Irish mythological cycle, Otherworld-entrance/Samhain legend",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "early-medieval-britain",
+    "origin_type": "literary"
   },
   {
     "name": "Manannán mac Lir",
@@ -11215,7 +11271,8 @@
     ],
     "origin_date": "Early 19th century for the Arthur/sleeping-warriors attribution specifically; the site's reputation as a fairy stronghold is older and undated",
     "earliest_record": "Edwin Sidney Hartland, The Science of Fairy Tales: An Inquiry into Fairy Mythology (1891), which set down the tale as it circulated from Iolo Morganwg (Edward Williams, 1747-1826)",
-    "period": "The Arthur version dates to the Welsh antiquarian/bardic revival of the late 18th-early 19th century"
+    "period": "The Arthur version dates to the Welsh antiquarian/bardic revival of the late 18th-early 19th century",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Ashleypark Burial Mound",
@@ -11241,7 +11298,8 @@
     "earliest_record": "Radiocarbon dating of the central burial chamber, following excavation by state archaeologist Con Manning after the mound was accidentally breached by bulldozing in February 1980 (first noticed in 1977)",
     "period": "Neolithic Ireland",
     "origin_type": "archaeological",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "prehistoric-britain"
   },
   {
     "name": "Bampfylde Moore Carew",
@@ -11266,7 +11324,8 @@
     "earliest_record": "'The Life and Adventures of Bampfylde-Moore Carew', first published 1745; the better-known expanded edition, 'An Apology for the Life of Mr. Bampfylde-Moore Carew, commonly call'd the King of the Beggars', appeared under printer Robert Goadby in 1749",
     "period": "Georgian Britain",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Battle of Barry",
@@ -11291,7 +11350,8 @@
     "earliest_record": "Hector Boece's 'Scotorum Historia' (1527), which describes a Danish naval force under 'Sueno' defeated near Barry following an earlier Scots victory at Mortlach; the alleged battle date of 1010 has no contemporary corroboration",
     "period": "Early modern Scottish historiography (recorded); claimed setting is early medieval Scotland",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "viking-age"
   },
   {
     "name": "Beenalaght",
@@ -11318,7 +11378,8 @@
     "period": "Presumed Bronze Age Ireland, by typological comparison with other Cork/Munster stone alignments and rows",
     "historical_setting": "Stone alignments of this type in Munster are generally attributed to the Bronze Age on the basis of comparable excavated examples elsewhere in the region, though this specific site has not itself been independently dated by excavation",
     "origin_type": "archaeological",
-    "dating_confidence": "low"
+    "dating_confidence": "low",
+    "period_slug": "bronze-age"
   },
   {
     "name": "Behy court tomb",
@@ -11346,7 +11407,8 @@
     "period": "Neolithic Ireland",
     "origin_type": "archaeological",
     "dating_confidence": "high",
-    "detail": "Behy court tomb sits half swallowed by peat on the slope of Maumakeogh hill above Belderrig, County Mayo, and long before it drew archaeologists it had a name of its own among the people who cut turf around it. They called the buried chamber the Roomeens, the \"little rooms,\" and at some point its sunken hollow was put to a practical use, as a still house where poteen was distilled out of sight of the excise men who might otherwise have come looking.\n\nThe tomb came to formal attention when Ruaidhrí de Valéra and Seán Ó Nualláin surveyed it in 1952, part of their wider study of Ireland's court tombs. It stands within what is now known as the Céide Fields, the oldest known field system in the world, and is the most westerly of some thirty court tombs recorded in the Killala group. From its position 150 metres above sea level, the site commands wide views north across the sea to the Stags of Broadhaven.\n\nToday the Roomeens lies a short walk from the Céide Fields visitor centre, still mostly buried under the same blanket bog that once hid its use as a still, its cruciform gallery a rare survival from a landscape farmed since the Neolithic."
+    "detail": "Behy court tomb sits half swallowed by peat on the slope of Maumakeogh hill above Belderrig, County Mayo, and long before it drew archaeologists it had a name of its own among the people who cut turf around it. They called the buried chamber the Roomeens, the \"little rooms,\" and at some point its sunken hollow was put to a practical use, as a still house where poteen was distilled out of sight of the excise men who might otherwise have come looking.\n\nThe tomb came to formal attention when Ruaidhrí de Valéra and Seán Ó Nualláin surveyed it in 1952, part of their wider study of Ireland's court tombs. It stands within what is now known as the Céide Fields, the oldest known field system in the world, and is the most westerly of some thirty court tombs recorded in the Killala group. From its position 150 metres above sea level, the site commands wide views north across the sea to the Stags of Broadhaven.\n\nToday the Roomeens lies a short walk from the Céide Fields visitor centre, still mostly buried under the same blanket bog that once hid its use as a still, its cruciform gallery a rare survival from a landscape farmed since the Neolithic.",
+    "period_slug": "prehistoric-britain"
   },
   {
     "name": "Billy Marshall",
@@ -11372,7 +11434,8 @@
     "earliest_record": "Real historical figure; died 28 November 1792 and buried in St Cuthbert's churchyard, Kirkcudbright, where his tombstone records his occupation as 'tinker'. His claimed age of 120 and much of the rest (68 children, seven military desertions) is unverifiable embellishment on top of a real burial record. Walter Scott fictionalised him as Gabriel Faa in 'Guy Mannering' (1815)",
     "period": "18th-century Scotland",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Blarney Stone",
@@ -11394,7 +11457,8 @@
     "earliest_record": "The word 'blarney' entered English usage in the early 17th century, popularly linked to Cormac MacCarthy's evasive negotiations with Elizabeth I's officials over surrendering Blarney Castle around 1602. An older, undated alternative foundation legend (Cormac Mac Taidhg Láidir MacCarthy rescuing an old woman or goddess who then blessed the stone) also circulates, with no independent date of its own",
     "period": "Elizabethan Ireland",
     "origin_type": "historical-event",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Breeny More Stone Circle",
@@ -11422,7 +11486,8 @@
     "earliest_record": "Boulder-burial monuments of this type (found only in Cork and Kerry, 84 known examples) are dated on typological grounds to the middle-to-late Bronze Age; no human remains have yet been excavated from these structures",
     "period": "Bronze Age Ireland",
     "origin_type": "archaeological",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "bronze-age"
   },
   {
     "name": "Brú na Bóinne",
@@ -11448,7 +11513,8 @@
     "earliest_record": "Newgrange passage tomb, built c. 3200 BC, predating both Stonehenge and the Great Pyramids of Giza; part of the wider Brú na Bóinne Neolithic complex with Knowth and Dowth, one of only three UNESCO World Heritage Sites in Ireland",
     "period": "Neolithic Ireland",
     "origin_type": "archaeological",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "prehistoric-britain"
   },
   {
     "name": "Carricknagat Megalithic Tombs",
@@ -11473,7 +11539,8 @@
     "earliest_record": "Two Neolithic monuments: a wedge-shaped gallery grave/dolmen known as the Giant's Grave, and a second tomb known as Dermot & Gráinne's Bed, both built c. 4000-2500 BC",
     "period": "Neolithic Ireland",
     "origin_type": "archaeological",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "prehistoric-britain"
   },
   {
     "name": "Carrigagulla",
@@ -11498,7 +11565,8 @@
     "earliest_record": "A megalithic complex comprising an axial stone circle (16 stones, 8.2m diameter), two stone rows, and an ogham stone; radiocarbon dating of stone rows generally in southwest Ireland places construction 1200-900 BC. A 2003 excavation of the eastern stone row confirmed prehistoric context but found no significant artefacts",
     "period": "Bronze Age Ireland",
     "origin_type": "archaeological",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "bronze-age"
   },
   {
     "name": "Carrigaphooca Stone Circle",
@@ -11521,7 +11589,8 @@
     "earliest_record": "Bronze Age stone circle (a type erected across Ireland in the middle-to-late Bronze Age, c. 1700-800 BC); originally five stones (four standing, one inclined), now three survive; a National Monument",
     "period": "Bronze Age Ireland",
     "origin_type": "archaeological",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "bronze-age"
   },
   {
     "name": "Carrowmore",
@@ -11546,7 +11615,8 @@
     "earliest_record": "One of the oldest and largest megalithic tomb clusters in Ireland, predating Newgrange. Dating is genuinely disputed among archaeologists: earlier estimates place construction as far back as c. 4600-3900 BC, while a 2012 re-dating by Bergh and Hensey proposes c. 3800-3000 BC instead",
     "period": "Neolithic Ireland",
     "origin_type": "archaeological",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "prehistoric-britain"
   },
   {
     "name": "Carrownlisheen Wedge Tomb",
@@ -11571,7 +11641,8 @@
     "earliest_record": "Excavated in 1934 by R.A.S. Macalister, who recovered pottery fragments and human bone; a wedge tomb (Neolithic to Early Bronze Age), popularly known as 'Leaba Dhiarmada agus Ghráinne' after the legendary lovers said to have sheltered there",
     "period": "Neolithic to Early Bronze Age Ireland",
     "origin_type": "archaeological",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "prehistoric-britain"
   },
   {
     "name": "Ceasg",
@@ -11650,7 +11721,8 @@
     "period": "Bronze Age Ireland",
     "origin_type": "archaeological",
     "dating_confidence": "high",
-    "detail": "Two standing stones rise unevenly from a field three miles north-east of Drimoleague, County Cork: the taller reaching 1.5 metres, its partner to the south-west barely 0.85 metres, an unequal pair probably raised in the Bronze Age for a purpose no longer recorded. Local tradition gave the pair a homelier reading than archaeology can offer, naming such uneven couples \"Adam and Eve\" stones, one taken for a man and the other for a woman.\n\nAcross Munster, similar stone pairs and rows are often folded into the same story: a stone-throwing contest between Fionn mac Cumhaill and a rival giant, the surviving stones marking where the missiles came down. No specific tale of that kind survives for Clodagh itself, but the pattern was common enough that it likely coloured how local people understood the stones once their original purpose had been forgotten.\n\nThe Clodagh pair is not alone on its hillside. Around 200 metres to the south stands a second pair of standing stones, set just three metres from a complete five-stone circle, part of a wider cluster of Bronze Age monuments that still stands in the fields above Drimoleague."
+    "detail": "Two standing stones rise unevenly from a field three miles north-east of Drimoleague, County Cork: the taller reaching 1.5 metres, its partner to the south-west barely 0.85 metres, an unequal pair probably raised in the Bronze Age for a purpose no longer recorded. Local tradition gave the pair a homelier reading than archaeology can offer, naming such uneven couples \"Adam and Eve\" stones, one taken for a man and the other for a woman.\n\nAcross Munster, similar stone pairs and rows are often folded into the same story: a stone-throwing contest between Fionn mac Cumhaill and a rival giant, the surviving stones marking where the missiles came down. No specific tale of that kind survives for Clodagh itself, but the pattern was common enough that it likely coloured how local people understood the stones once their original purpose had been forgotten.\n\nThe Clodagh pair is not alone on its hillside. Around 200 metres to the south stands a second pair of standing stones, set just three metres from a complete five-stone circle, part of a wider cluster of Bronze Age monuments that still stands in the fields above Drimoleague.",
+    "period_slug": "bronze-age"
   },
   {
     "name": "Cloghanmore",
@@ -11676,7 +11748,8 @@
     "earliest_record": "A court tomb (court cairn) dated c. 4000-3000 BC, one of the finest examples in Ireland and the only one where megalithic art has been found. The 'Paddy the Miner' story (Patrick Byrne digging for gold, based on a three-nights-dreaming belief) is a distinct, much later local tradition layered on top of the monument",
     "period": "Neolithic Ireland",
     "origin_type": "archaeological",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "prehistoric-britain"
   },
   {
     "name": "Coolcoulaghta Standing Stones",
@@ -11701,7 +11774,8 @@
     "earliest_record": "A Bronze Age standing-stone pair aligned toward the Dunbeacon stone circle 400m to the west. Removed by a farmer in 1980; reinstated in 1983 by the Office of Public Works after local outcry, using a 1977 plan and elevation survey by Ordnance Survey Ireland archaeologists",
     "period": "Bronze Age Ireland (original construction, undated precisely); 1980-83 (documented modern removal and reinstatement)",
     "origin_type": "archaeological",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "bronze-age"
   },
   {
     "name": "Craigs Dolmen",
@@ -11725,7 +11799,8 @@
     "period": "Neolithic to Bronze Age Ireland",
     "origin_type": "archaeological",
     "dating_confidence": "high",
-    "detail": "Craigs Dolmen, known locally as the Broad Stone, stands on Long Mountain five miles south of Ballymoney in County Antrim, its huge capstone resting on seven upright stones above an almost semicircular forecourt. Despite the name, the monument is not a simple dolmen at all: it is a passage tomb with three internal chambers, most likely built before 2000 BC and reused for burials well into the Bronze Age.\n\nLightning struck and cracked the great capstone in 1976, and the damage led to a full restoration in 1985 that revealed the tomb's true structure for the first time, its passage and chambers having been hidden under centuries of accumulated stone and soil. The capstone over the entrance chamber was re-erected on an upright that likely was not original to the design. About 800 metres away stands a second, smaller passage tomb, seven tall stones supporting a capstone of its own.\n\nLong before archaeologists took an interest, the Broad Stone had a use of its own: local tradition holds it was a popular gathering place for meetings and assemblies, its flat expanse serving the community that lived in its shadow long after the burials inside had been forgotten."
+    "detail": "Craigs Dolmen, known locally as the Broad Stone, stands on Long Mountain five miles south of Ballymoney in County Antrim, its huge capstone resting on seven upright stones above an almost semicircular forecourt. Despite the name, the monument is not a simple dolmen at all: it is a passage tomb with three internal chambers, most likely built before 2000 BC and reused for burials well into the Bronze Age.\n\nLightning struck and cracked the great capstone in 1976, and the damage led to a full restoration in 1985 that revealed the tomb's true structure for the first time, its passage and chambers having been hidden under centuries of accumulated stone and soil. The capstone over the entrance chamber was re-erected on an upright that likely was not original to the design. About 800 metres away stands a second, smaller passage tomb, seven tall stones supporting a capstone of its own.\n\nLong before archaeologists took an interest, the Broad Stone had a use of its own: local tradition holds it was a popular gathering place for meetings and assemblies, its flat expanse serving the community that lived in its shadow long after the burials inside had been forgotten.",
+    "period_slug": "prehistoric-britain"
   },
   {
     "name": "Dobhar-chú",
@@ -12713,7 +12788,8 @@
     "earliest_record": "The mountain is first recorded as 'Mons Angleorum' in the 12th-century 'Vita Sancti Bernachii' (Life of St Brynach), an anonymous hagiography written in the district of Cemaes. The hillfort itself is a separate, much older monument, generally dated to the Iron Age, with traces of Bronze Age settlement on the lower slopes suggesting some features may be older still",
     "period": "Iron Age (the hillfort); 12th-century Wales (the Brynach/angels legend)",
     "origin_type": "literary",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Bardney Abbey and the Light of Oswald",
@@ -12740,7 +12816,8 @@
     ],
     "origin_date": "c. 679 AD (translation of Oswald's relics to Bardney)",
     "earliest_record": "Bede, Historia Ecclesiastica Gentis Anglorum, Book III, Chapter 11 (completed c. 731 AD)",
-    "period": "Anglo-Saxon, 7th century"
+    "period": "Anglo-Saxon, 7th century",
+    "period_slug": "early-medieval-britain"
   },
   {
     "name": "Callanish Standing Stones",
@@ -12769,7 +12846,8 @@
     "earliest_record": "Neolithic stone circle and alignment; construction estimates range from c. 2900-2600 BC to a more specific c. 2750 BC, with continued ritual use into the Bronze Age. Scheduled as a monument by Historic Scotland on 18 August 1882 (designation SM90054)",
     "period": "Neolithic Scotland",
     "origin_type": "archaeological",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "prehistoric-britain"
   },
   {
     "name": "Wroth Silver at Knightlow Hill",
@@ -12923,7 +13001,7 @@
     "cultural_tradition": "Welsh Michaelmas dragon-binding legend, tied to the medieval Christian dedication pattern of churches to St Michael as dragon-slayer",
     "origin_type": "oral-tradition",
     "dating_confidence": "low",
-    "period": "No written record of the sleeping-dragon legend itself is known. The ring of St Michael churches said to contain it (Cascob, Cefnllys, Nant Melan, Rhydithon, and in some tellings Discoed) are themselves of varied and partly uncertain date. Llanfihangel Rhydithon's present building is an 1833-4 rebuild on an older site, per the Clwyd-Powys Archaeological Trust's Radnorshire Churches Survey"
+    "period": "No earliest written record of the sleeping-dragon legend itself was located. The ring of St Michael churches said to contain it (Cascob, Cefnllys, Nant Melan, Rhydithon, and in some tellings Discoed) are themselves of varied and partly uncertain date — Llanfihangel Rhydithon's present building is an 1833-4 rebuild on an older site, per the Clwyd-Powys Archaeological Trust's Radnorshire Churches Survey"
   },
   {
     "name": "Tetford Witch",
@@ -13067,7 +13145,7 @@
       "https://www.parksandgardens.org/places/st-brynachs-churchyard"
     ],
     "period": "The tree itself is estimated at roughly 700 years old (medieval planting), but no earliest written record of the bleeding-yew legend itself could be located; the tale appears to be unattributed local/oral tradition rather than a dated antiquarian record",
-    "historical_setting": "St Brynach's Church, Nevern, Pembrokeshire, a churchyard registered by Cadw (Grade II, Register of Landscapes, Parks and Gardens of Special Historic Interest in Wales) for its avenue of yews probably dating to the medieval period; the churchyard also holds the 10th-11th century Great Cross and Vitalianus Stone",
+    "historical_setting": "St Brynach's Church, Nevern, Pembrokeshire — a churchyard registered by Cadw (Grade II, Register of Landscapes, Parks and Gardens of Special Historic Interest in Wales) for its avenue of yews probably dating to the medieval period; the churchyard also holds the 10th-11th century Great Cross and Vitalianus Stone",
     "origin_type": "oral-tradition",
     "dating_confidence": "low",
     "cultural_tradition": "Welsh churchyard folk legend; three competing explanations circulate (a wrongfully hanged monk, sympathetic bleeding for the Crucifixion, and a prophecy tied to Nevern Castle, abandoned 1179) with no single canonical version"
@@ -13415,14 +13493,16 @@
     "pronunciation": "ROH-ree MORE",
     "sources": [
       "https://hiddenscotland.co/the-pirate-laird-of-kisimul-castle/",
-      "https://www.historicenvironment.scot/visit-a-place/places/kisimul-castle/history/"
+      "https://www.historicenvironment.scot/visit-a-place/places/kisimul-castle/history/",
+      "https://canmore.org.uk/site/21390/barra-kiessimul-castle"
     ],
     "origin_date": "mid-to-late 16th century (reign of Elizabeth I, 1558-1603)",
     "earliest_record": "No specific contemporary document located beyond clan-history retellings; Historic Environment Scotland's Kisimul Castle history states he held the castle by 1560",
     "period": "16th century, Elizabethan/early Jacobean era",
     "historical_setting": "Clan MacNeil piracy against English shipping from Kisimul Castle, Isle of Barra, amid tensions surrounding Mary, Queen of Scots",
     "origin_type": "historical-event",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "tudor-britain"
   },
   {
     "name": "Mary Butters, the Carnmoney Witch",
@@ -13479,7 +13559,8 @@
     "historical_setting": "The Massacre of Glencoe, 13 February 1692, when Crown troops under Robert Campbell of Glenlyon killed members of Clan MacDonald of Glencoe",
     "cultural_tradition": "Highland second-sight/prophecy tradition",
     "origin_type": "oral-tradition",
-    "dating_confidence": "low"
+    "dating_confidence": "low",
+    "period_slug": "stuart-britain"
   },
   {
     "name": "Witch of Berkeley",
@@ -13588,7 +13669,8 @@
     ],
     "origin_date": "1405 (as recorded by Henry de Blaneford in the St Albans Abbey chronicle)",
     "earliest_record": "Henry de Blaneford's continuation of the St Albans Abbey chronicle, 1405",
-    "period": "Late medieval, early 15th century"
+    "period": "Late medieval, early 15th century",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Saint Edmund and the Wolf",
@@ -13786,7 +13868,8 @@
     "earliest_record": "William of Newburgh, 'Historia rerum Anglicarum', Book V, written c. 1196-98. This is the same chronicle, and the same set of four revenant tales, as the Berwick Revenant.",
     "period": "Late 12th-century England",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Berwick Revenant",
@@ -13813,7 +13896,8 @@
     "earliest_record": "William of Newburgh, 'Historia rerum Anglicarum', Book V, chapters 22-24, written c. 1196-98",
     "period": "Late 12th-century Northern England",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Hundeprest of Melrose",
@@ -13868,7 +13952,8 @@
     "earliest_record": "William of Newburgh, Historia rerum Anglicarum, Book 5, chapters 22-24 (written c. 1198)",
     "historical_setting": "Late 12th-century northern England; 'Anantis Castle' is generally identified by scholars with Alnwick, Northumberland",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Hereford Revenant",
@@ -13923,7 +14008,8 @@
     "earliest_record": "Contemporary ecclesiastical trial proceedings under Richard de Ledrede, Bishop of Ossory, later edited as 'A Contemporary Narrative of the Proceedings against Dame Alice Kyteler' (ed. Thomas Wright, Camden Society, 1843) from the medieval Latin original",
     "historical_setting": "Norman-settled Kilkenny, Ireland, 14th century",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "medieval-britain"
   },
   {
     "name": "Ynys Enlli",
@@ -13981,7 +14067,8 @@
     "period": "Early modern Scotland (Orkney witch trials)",
     "historical_setting": "Political trial tied to a conspiracy against Patrick Stewart, 2nd Earl of Orkney; executed by strangulation and burning at Kirkwall, 16 December 1594.",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "tudor-britain"
   },
   {
     "name": "Janet Forsyth, the Westray Storm Witch",
@@ -14602,12 +14689,15 @@
     "detail": "Loch na Beiste, Gaelic for 'the Loch of the Beast', is a small hill loch near Mellon Udrigle in Wester Ross, in the remote north-west Highlands, and its name records a genuine 19th-century episode of monster-belief and monster-hunting. The local people held that a fearsome creature, a water-horse or each-uisge, dwelt in its dark waters, and described it as a great dark shape like the upturned keel of a boat moving on the surface. So real and so frightening was the belief that the loch became a place of dread, avoided after dark; among those who reported seeing the creature was Sandy McLeod, a Free Church of Scotland elder, returning home from a service at Aultbea.\n\nWhat sets Loch na Beiste apart from the many Highland water-horse lochs is what was done about it. In the 1840s the local estate owner, a Mr Banks, pressed by tenants terrified of the beast, resolved to destroy it. An attempt was made to drain the loch by cutting a channel to let its waters out, and when that failed, quantities of quicklime were tipped into it in the hope of poisoning or driving out whatever lay beneath. The creature, needless to say, was never found, and the loch defeated its would-be exterminators.\n\nThe episode is a vivid snapshot of the each-uisge tradition, the malevolent shape-shifting water-horse of Highland and Hebridean lore, which lured victims onto its back and dragged them under to drown and devour them, colliding with the practical, improving spirit of the 19th century. The beast kept its loch, and its name, and the story endures as one of the best-documented cases of a Highland community living in real fear of its local water-monster.",
     "sources": [
       "https://spookyscotland.net/water-horse-loch-na-beiste/",
-      "https://lovetovisitscotland.com/the-shape-shifting-scottish-beast-that-lured-victims-into-lochs-for-centuries/"
+      "https://lovetovisitscotland.com/the-shape-shifting-scottish-beast-that-lured-victims-into-lochs-for-centuries/",
+      "https://www.gutenberg.org/cache/epub/41227/pg41227-images.html"
     ],
     "period": "19th century (a minister is recorded performing a draining ritual on the loch in that period)",
     "cultural_tradition": "Scottish Highland each-uisge (water-horse) folklore",
     "dating_confidence": "medium",
-    "historical_setting": "Loch-na-Beiste, Mellon Udrigle, Wester Ross; locals petitioned estate owner Mr Banks to deal with the creature, and Sandy McLeod, a Free Church of Scotland elder returning from service at Aultbea, is recorded as the man who reported seeing it"
+    "historical_setting": "Loch-na-Beiste, Mellon Udrigle, Wester Ross; the estate proprietor is named Mr Bankes in Dixon's 1886 account (existing text says 'Banks'), acting on the testimony of two Free Church of Scotland elders, Sandy McLeod and Kenneth Cameron, both of whom reported seeing the creature",
+    "earliest_record": "John H. Dixon, 'Gairloch in North-West Ross-Shire: Its Records, Traditions, Inhabitants, and Natural History' (1886), which dates the draining/quicklime attempt to 'about 1840'. A later newspaper cutting connected to the Crofters Commission, dated 25 May 1888, gives a conflicting date of 1864 for the same draining episode, so the exact year is not fully settled between sources",
+    "origin_type": "oral-tradition"
   },
   {
     "name": "Ellén Trechend",
@@ -14660,7 +14750,7 @@
       "https://heneb.org.uk/archive/cpat/Archive/churches/radnor/16830.htm"
     ],
     "earliest_record": "D. Edmondes Owen, 'Pre-Reformation Survivals in Radnorshire,' Transactions of the Honourable Society of Cymmrodorion, session 1910-1911 (London: Issued by the Society, 1912), pp. 112-13",
-    "period": "No written record of the dragon-in-the-belfry tale itself is known. St Teilo's Church, Llandeilo Graban is first documented in 1291 (Taxatio Ecclesiastica, as 'Ecclesia de Landeylar'); architecturally the nave is thought 14th-century with the chancel and tower added in the 15th century, per the Clwyd-Powys Archaeological Trust's Radnorshire Churches Survey, but this dates the building, not the legend attached to it",
+    "period": "No earliest written record of the dragon-in-the-belfry tale itself was located. St Teilo's Church, Llandeilo Graban is first documented in 1291 (Taxatio Ecclesiastica, as 'Ecclesia de Landeylar'); architecturally the nave is thought 14th-century with the chancel and tower added in the 15th century, per the Clwyd-Powys Archaeological Trust's Radnorshire Churches Survey — but this dates the building, not the legend attached to it",
     "origin_type": "oral-tradition",
     "dating_confidence": "low",
     "historical_setting": "St Teilo's Church, Llandeilo Graban, Powys, Wales",
@@ -14713,7 +14803,8 @@
       "http://theantonineitineraries.blogspot.com/2020/06/the-norfolk-village-of-ludham-was-said.html",
       "https://sites.pitt.edu/~dash/britishdragons.html",
       "https://www.visitthebroads.co.uk/discover-the-broads/culture-and-heritage/folklore-and-stories/",
-      "http://www.foxearth.org.uk/1782NorfolkChronicle.html"
+      "http://www.foxearth.org.uk/1782NorfolkChronicle.html",
+      "https://www.heritage.norfolk.gov.uk/record-details?MNF5199-St-Benet's-Abbey-Cowholme="
     ],
     "historical_setting": "St Benet's Abbey at Horning, founded in the 11th century by King Cnut (Canute) and endowed with the manor of Ludham, gives the legend's chosen destination (the dragon vanishing into the abbey's vaults) a real, dateable medieval anchor, even though the dragon-tale manuscript itself is undated",
     "cultural_tradition": "East Anglian dragon-lore, part of the same regional tradition as Black Shuck, the Bures dragon, and other Norfolk 'worm' legends; some commentators connect these tales to smuggling activity along the Broads (a way of keeping people away from tunnels/hiding places at night)",
@@ -14823,8 +14914,13 @@
     "detail": "On the Trotternish Ridge above Loch Leathan stands a 55-metre pinnacle of black basalt, the Old Man of Storr, said in Skye tradition to be the petrified thumb of a giant. According to the story, when the giant died and was buried in the hillside, his thumb was left protruding above the ground, and there it has stood ever since, weathering into the jagged spire seen today.\n\nA second version of the tale gives the giant a more dramatic end. He was said to have been chasing a fairy across the ridge when he made the fatal mistake of looking back over his shoulder, and was turned to stone on the spot, along with his pursued quarry nearby.\n\nThe pinnacle stands among a cluster of rock towers known as the Sanctuary, on the flank of the Storr itself, which at 719 metres is the high point of the Trotternish Ridge. Geologists explain the whole formation as the product of the Trotternish landslip, the longest such landslip in Britain: around 60 million years ago a vast slice of the escarpment sheared away from the main ridge and slumped downhill, leaving isolated towers of dolerite and basalt standing free where the ground beneath them had given way. The site is also the type locality for the mineral gyrolite, first identified here.\n\nFor generations of islanders the simpler and more memorable explanation was a buried giant, his thumb still reaching for the sky. The pinnacle has since found a very different kind of fame: it stood in for an alien world in Ridley Scott's 2012 film Prometheus, and a photograph of the formation won the Landscape Photographer of the Year award in 2009. A well-built path now carries a steady stream of walkers up from the A855 to stand among the pinnacles, most day-trippers content to reach the Sanctuary without pushing on to the summit.",
     "sources": [
       "https://www.bitesizedbritain.co.uk/the-old-man-of-storr---the-sleeping-giant-of-skye1111/",
-      "https://www.historyhit.com/locations/old-man-of-storr/"
-    ]
+      "https://www.historyhit.com/locations/old-man-of-storr/",
+      "https://www.geolsoc.org.uk/science-and-policy/100-great-geosites/historical-scientific-importance/trotternish/"
+    ],
+    "period": "No earliest written record of the petrified-giant's-thumb tale itself was pinned down with certainty; the earliest print appearance located in search is Otta Swire's 'Skye: the Island and its Legends' (1952, reprinted 1961), a mid-20th-century collection of oral tales she heard from her mother and grandmother, so the tale's oral pedigree is likely much older than its first printing but cannot be dated further back with the sources available in this pass",
+    "cultural_tradition": "Scottish Highland petrified-giant/buried-giant motif, the same type as other Skye and Highland stone-giant tales",
+    "origin_type": "oral-tradition",
+    "dating_confidence": "low"
   },
   {
     "name": "Gunby Hall Ghost Walk",
@@ -15040,7 +15136,13 @@
     "historical_setting": "Clongowes Wood (then Castle Browne), County Kildare, seat of the Wogan-Browne family; the Battle of Prague was fought 6 May 1757 during the Seven Years' War, between Prussia and Habsburg Austria",
     "cultural_tradition": "Irish death-omen/warning-apparition legend tied to a specific historical family",
     "dating_confidence": "medium",
-    "origin_type": "historical-event"
+    "origin_type": "historical-event",
+    "sources": [
+      "https://turtlebunbury.com/document/wogan-browne-of-clongowes/",
+      "https://www.gutenberg.org/ebooks/14099",
+      "https://archive.org/details/trueirishghostst00seymiala"
+    ],
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Canthrig Bwt",
@@ -15151,7 +15253,8 @@
     "earliest_record": "Surviving Scottish court trial record, dated 8 November 1576",
     "period": "Early Modern Scotland",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "tudor-britain"
   },
   {
     "name": "Biddy Early",
@@ -15179,7 +15282,8 @@
     "earliest_record": "A real, documented historical figure (baptised Bridget Connors, 1798-1874) who was tried for witchcraft at Ennis in 1865 but not convicted; the first substantial published life-and-legend account followed not long after Lady Augusta Gregory began collecting stories about her, in the early 1900s",
     "period": "19th-century Ireland",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "victorian-britain"
   },
   {
     "name": "The Bargarran Witches",
@@ -15572,13 +15676,16 @@
     ],
     "sources": [
       "http://faeryfolklorist.blogspot.com/2012/07/loch-nan-dubhrachan-water-horse-isle-of.html",
-      "http://lochnessmystery.blogspot.com/2015/05/skye-water-horses-sea-serpents-and.html"
+      "http://lochnessmystery.blogspot.com/2015/05/skye-water-horses-sea-serpents-and.html",
+      "https://archive.org/details/mistyisleofskyei00macc"
     ],
     "origin_date": "1870",
     "earliest_record": "J.A. MacCulloch, 'The Misty Isle of Skye' (1905), describing the water-horse's reputation and the 1870 netting attempt; the 1870 incident was independently retold via an eyewitness account from John MacRae (present as a child on Isle Ornsay), published later in Alasdair MacGregor's 'Somewhere in Scotland' (1935)",
     "period": "19th century (documented incident, 1870; recorded in print 1905)",
     "cultural_tradition": "Scottish Highland/Skye each-uisge folklore",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "victorian-britain",
+    "origin_type": "oral-tradition"
   },
   {
     "name": "William Owen, the Smuggler General of Pembrokeshire",
@@ -15658,7 +15765,8 @@
     ],
     "origin_date": "17th century (traditional; the event itself is not precisely dated in any surviving record)",
     "earliest_record": "W. J. Hemp's 1943 note to the Royal Commission on the Ancient and Historical Monuments of Wales, preserved in the RCAHMW/Coflein record (NPRN 800208)",
-    "period": "17th century (traditional setting); earliest written record 20th century"
+    "period": "17th century (traditional setting); earliest written record 20th century",
+    "period_slug": "stuart-britain"
   },
   {
     "name": "The Witch of East Somerton",
@@ -16370,7 +16478,8 @@
     "earliest_record": "The Dindshenchas of Carman is preserved in the Book of Leinster (Trinity College Dublin MS 1339, second half of the 12th century), the earliest and only manuscript to contain the complete Metrical Dindshenchas; a later witness survives in the Rennes manuscript (13th-14th century)",
     "period": "Early Medieval Ireland (manuscript compilation, 12th century); narrative setting is Ireland's mythological pre-history, the age of the Tuatha Dé Danann",
     "origin_type": "oral-tradition",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "early-medieval-britain"
   },
   {
     "name": "Islandmagee Witch Trial",
@@ -16463,7 +16572,8 @@
     "earliest_record": "Radiocarbon dating (from excavations including Aidan Walsh's 1982 dig) places the earliest timber palisade and bank at Aghareagh West/Aghnaskew, Co. Monaghan at 390-370 BC, with further construction phases across the wider earthwork dated to 220-160 BC",
     "period": "Late Iron Age Ireland (monument construction). The schoolmaster-turned-pig folk explanation is separately attested on the 1837 Ordnance Survey of Ireland maps but has no independently dateable origin of its own",
     "origin_type": "archaeological",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "iron-age"
   },
   {
     "name": "Oonagh of Knockmany Hill",
@@ -17369,7 +17479,8 @@
     "period": "High Medieval Britain (literary composition); narrative setting is presented as the aftermath of the Trojan War",
     "historical_setting": "The specific Totnes 'Brutus Stone' landing-place tradition is a later, separately undateable local accretion onto Geoffrey's national foundation-myth, not part of his original 12th-century text",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "bronze-age"
   },
   {
     "name": "Jack the Giant Killer",
@@ -17555,7 +17666,8 @@
     "period": "Elizabethan England",
     "historical_setting": "First prosecution under the Witchcraft Act 1562; tried and hanged at Chelmsford, Essex, alongside Elizabeth Francis and her own daughter Joan Waterhouse.",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "tudor-britain"
   },
   {
     "name": "Witch of Wookey Hole",
@@ -17930,7 +18042,8 @@
     "earliest_record": "The Gentleman's Magazine and Historical Chronicle, vol. 86, p.19, under the heading 'Roman Roads, &c. in Sussex'",
     "period": "Early 19th century (the specific year of the Gentleman's Magazine volume has not been independently confirmed, but the magazine's numbering places it in the 1810s)",
     "origin_type": "oral-tradition",
-    "dating_confidence": "low"
+    "dating_confidence": "low",
+    "period_slug": "iron-age"
   },
   {
     "name": "Fairy Invasion of Guernsey",
@@ -18017,7 +18130,8 @@
     "period": "Late 18th to early 19th century (her documented active period); firmly attested by 1814",
     "historical_setting": "Brinkies Brae, Stromness, Orkney; her recollection of the pirate John Gow (who visited Stromness in January 1725) places her own lifetime as spanning from before 1725 into the 1810s, consistent with the claim she was nearly a hundred years old in 1814",
     "origin_type": "historical-event",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Nicnevin",
@@ -18104,7 +18218,8 @@
     "earliest_record": "Acallam na Senórach ('Colloquy of the Ancients'), a Middle Irish narrative dated to c.1200, is the earliest identified text naming Clíodhna as a member of the Tuatha Dé Danann; the earliest surviving manuscripts of the Acallam are three from the 15th century (including the Book of Lismore)",
     "period": "Late Medieval Ireland (Acallam composition, c.1200); narrative setting is Ireland's mythological pre-history",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "iron-age"
   },
   {
     "name": "Princess Erne and the Creation of Lough Erne",
@@ -18212,10 +18327,10 @@
       "northern-ireland",
       "londonderry"
     ],
-    "historical_setting": "River Roe gorge at what is now Roe Valley Country Park, near Limavady, County Londonderry, site of the O'Cahan clan's stronghold from the 12th to 17th centuries",
+    "historical_setting": "River Roe gorge at what is now Roe Valley Country Park, near Limavady, County Londonderry — site of the O'Cahan clan's stronghold from the 12th to 17th centuries",
     "origin_type": "oral-tradition",
     "dating_confidence": "low",
-    "period": "No written record of the dog-leap legend itself is known. The O'Cahan (Ó Catháin) lordship of the area is historically documented from the 12th century (the sept first appears on record in 1138) through to the 17th century, which is the historical backdrop the legend is set against, but that dates the clan, not the tale",
+    "period": "No earliest written record of the dog-leap legend itself was located. The O'Cahan (Ó Catháin) lordship of the area is historically documented from the 12th century (the sept first appears on record in 1138) through to the 17th century, which is the historical backdrop the legend is set against, but that dates the clan, not the tale",
     "cultural_tradition": "Ulster place-name origin legend (dinnseanchas-type tale explaining Leim an Mhadaidh / 'leap of the dog', anglicised as Limavady)"
   },
   {
@@ -18383,7 +18498,8 @@
     "earliest_record": "Historia Brittonum, a Welsh-Latin compilation traditionally attributed to Nennius, internally dateable to c.829-830 (composed in the reign of Merfyn Frych ap Gwriad of Gwynedd, per its own chronological reference to '796 years since the Passion of Christ')",
     "period": "Early medieval Wales; narrative setting is the early-to-mid 5th century, the era of Saint Germanus of Auxerre's documented visits to Britain",
     "origin_type": "literary",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "sub-roman-britain"
   },
   {
     "name": "Melangell and the Hare",
@@ -18698,7 +18814,8 @@
     "origin_date": "c. 10,000 years ago (glacial deposit, not a legendary date)",
     "period": "The stone's own placement is a natural post-glacial event; the Finn mac Cumhaill throwing-legend has no dateable origin of its own beyond an unconfirmed reference to an '18th-century tale' of a fisherman sheltering at the stone, which has not been traced to a specific written source",
     "origin_type": "oral-tradition",
-    "dating_confidence": "low"
+    "dating_confidence": "low",
+    "period_slug": "iron-age"
   },
   {
     "name": "Daft Eddie and the Merry Hearts of Down",
@@ -18897,7 +19014,8 @@
     ],
     "origin_date": "1786 (traditional burial date)",
     "earliest_record": "Ordnance Survey map, 1830 (first cartographic record of the 'Betty's Grave' name)",
-    "period": "Georgian era"
+    "period": "Georgian era",
+    "period_slug": "georgian-britain"
   },
   {
     "name": "Tavish Dhu (Black Tom), the Pirate of the Skerries",
@@ -18958,7 +19076,8 @@
     "period": "Early Medieval Ireland (earliest textual gloss, 8th century); narrative setting is the 5th-century conversion era of Clogher's founding",
     "historical_setting": "Cathal Óg Mac Maghnusa (Cathal Maguire), the Ulster annalist who died in 1498, recorded the stone as still physically preserved in Clogher Cathedral's porch in his own lifetime, giving this legend an unusually continuous physical anchor from the early medieval period into the historical record",
     "origin_type": "oral-tradition",
-    "dating_confidence": "high"
+    "dating_confidence": "high",
+    "period_slug": "iron-age"
   },
   {
     "name": "Saxa and Herman, the Rival Giants of Unst",
@@ -19062,7 +19181,8 @@
     ],
     "origin_date": "1914",
     "earliest_record": "Royal Court of Guernsey trial records and contemporary press coverage, January 1914",
-    "period": "Edwardian era"
+    "period": "Edwardian era",
+    "period_slug": "edwardian-britain"
   },
   {
     "name": "Old Mother Digby of East Harting",
@@ -19298,7 +19418,8 @@
     "earliest_record": "Sophia Morrison, 'Manx Fairy Tales' (1911), which draws on earlier 19th-century Manx folklore collection; the tale is set in an unspecified pre-historical Norse period ('generations before recorded history').",
     "period": "Recorded in the early-20th-century Manx folklore revival; narrative setting is the Norse era of Manx history, though this is legendary rather than historically anchored dating",
     "origin_type": "oral-tradition",
-    "dating_confidence": "medium"
+    "dating_confidence": "medium",
+    "period_slug": "viking-age"
   },
   {
     "name": "Scota Bess",
@@ -19578,6 +19699,7 @@
       "received": "2026-08-23",
       "source_supplied": true,
       "source_outcome": "not_assessed"
-    }
+    },
+    "period_slug": "bronze-age"
   }
 ]

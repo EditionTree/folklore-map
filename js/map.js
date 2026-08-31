@@ -588,6 +588,13 @@ function scoreLegend(leg, q) {
   const tags = (leg.tags || []).map(t => t.toLowerCase());
   const altNames = (leg.alt_names || []).map(n => n.toLowerCase());
   const period = (leg.period || '').toLowerCase();
+  // The controlled Explore Through Time period, searchable in words rather
+  // than as a slug: 'stuart-britain' -> 'stuart britain', so a search for
+  // 'stuart' finds the 49 legends actually SET then. The free-text `period`
+  // above stays in the scoring: it mixes setting with when a legend was
+  // written down, so it matches things the slug cannot, and dropping it
+  // would lose the 231 entries that correctly have no slug at all.
+  const periodSlug = (leg.period_slug || '').replace(/-/g, ' ');
   const tradition = (leg.cultural_tradition || '').toLowerCase();
   const cols = (LEGEND_COLLECTIONS.get(leg.name) || []).map(c => c.title.toLowerCase());
 
@@ -600,7 +607,7 @@ function scoreLegend(leg, q) {
   if (catLabel.includes(q)) return 60;
   if (region.includes(q)) return 55;
   if (cols.some(c => c.includes(q))) return 45;
-  if (period.includes(q) || tradition.includes(q)) return 40;
+  if (period.includes(q) || periodSlug.includes(q) || tradition.includes(q)) return 40;
   if (summary.includes(q)) return 25;
   if (fuzzyWordMatch(q, leg.name)) return 20;
   return 0;
@@ -983,7 +990,7 @@ if (SUPABASE_URL && SUPABASE_PUBLISHABLE_KEY) {
   // public_legends, not legends: a view exposing only these 11 columns, so a
   // column added to the base table later is not public by default. anon holds
   // no grant on the base table at all.
-  fetch(`${SUPABASE_URL}/rest/v1/public_legends?select=name,lat,lng,category,region,summary,source,tags,period,cultural_tradition,alt_names&order=name.asc&limit=${MAP_QUERY_LIMIT}`, {
+  fetch(`${SUPABASE_URL}/rest/v1/public_legends?select=name,lat,lng,category,region,summary,source,tags,period,period_slug,cultural_tradition,alt_names&order=name.asc&limit=${MAP_QUERY_LIMIT}`, {
     headers: {
       'apikey':        SUPABASE_PUBLISHABLE_KEY,
       'Authorization': `Bearer ${SUPABASE_PUBLISHABLE_KEY}`,

@@ -11,8 +11,8 @@
   <url><loc>https://folklorefinder.uk/feed.xml</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/category/location</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/category/witch</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/category/hero</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/category/ghost</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/category/hero</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/category/fairy</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/category/water</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/category/beast</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
@@ -43,6 +43,7 @@
   <url><loc>https://folklorefinder.uk/legends/region/hampshire</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/shetland</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/devon</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/merseyside</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/argyll</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/london</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/suffolk</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
@@ -2699,6 +2700,7 @@
     <image:title>Mother Ludlam lending a brass cauldron beside a cave spring in Surrey woodland</image:title>
     <image:caption>A visual interpretation of Mother Ludlam&#x27;s cave legend</image:caption>
   </image:image></url>
+  <url><loc>https://folklorefinder.uk/legends/mother-redcap-s</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/mother-shipton</loc><lastmod>2026-08-25</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/mother-shipton-hero.jpg</image:loc>
@@ -3575,6 +3577,7 @@
     <image:title>The accused Bargarran neighbours gathered outside a Renfrewshire house under a bleak sky</image:title>
     <image:caption>A visual interpretation of the Bargarran witchcraft accusations</image:caption>
   </image:image></url>
+  <url><loc>https://folklorefinder.uk/legends/the-bidston-hill-carvings</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/the-binbrook-bewitched-farm-1905</loc><lastmod>2026-08-17</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/the-binbrook-bewitched-farm-1905-hero.jpg</image:loc>
@@ -3593,6 +3596,7 @@
     <image:title>A black-cloaked figure standing among Bonamargy Friary ruins beside a misty river</image:title>
     <image:caption>A visual interpretation of the County Antrim legend</image:caption>
   </image:image></url>
+  <url><loc>https://folklorefinder.uk/legends/the-bloody-acre</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/the-brag</loc><lastmod>2026-08-31</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/the-brag-hero.jpg</image:loc>
@@ -3707,6 +3711,7 @@
     <image:title>A weathered Green Man carving with a leaf-framed face set into the stone of a medieval Gloucestershire church</image:title>
     <image:caption>A visual interpretation of the Gloucestershire Green Man tradition</image:caption>
   </image:image></url>
+  <url><loc>https://folklorefinder.uk/legends/the-grey-lady-of-speke-hall</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/the-gwybr-of-llanrhaeadr</loc><lastmod>2026-08-31</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/the-gwybr-of-llanrhaeadr-hero.jpg</image:loc>
@@ -3761,6 +3766,7 @@
     <image:title>A cinematic fae and spirit folklore image of The Lady of the Lake, shown as the central fairy, spirit, or otherworldly presence from Llyn Llydaw, Snowdonia, Wales</image:title>
     <image:caption>A visual interpretation of The Lady of the Lake</image:caption>
   </image:image></url>
+  <url><loc>https://folklorefinder.uk/legends/the-liver-birds</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/the-loch-ness-monster</loc><lastmod>2026-08-25</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/loch-ness-monster-hero.jpg</image:loc>
@@ -3785,6 +3791,7 @@
     <image:title>A cinematic ghost folklore image of The Mistletoe Bough, shown as the central apparition or haunting from Minster Lovell, Oxfordshire</image:title>
     <image:caption>A visual interpretation of The Mistletoe Bough</image:caption>
   </image:image></url>
+  <url><loc>https://folklorefinder.uk/legends/the-monk-s-well</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/the-morrigan</loc><lastmod>2026-08-17</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/the-morrigan-hero.jpg</image:loc>
@@ -3827,6 +3834,7 @@
     <image:title>A cinematic ghost folklore image of The Pump Hill Smuggler, shown as the central apparition or haunting from Happisburgh, Norfolk, England</image:title>
     <image:caption>A visual interpretation of The Pump Hill Smuggler</image:caption>
   </image:image></url>
+  <url><loc>https://folklorefinder.uk/legends/the-queensway-tunnel-hitchhiker</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/the-ratman-of-southend</loc><lastmod>2026-08-17</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/the-ratman-of-southend-hero.jpg</image:loc>
@@ -3911,6 +3919,7 @@
     <image:title>Thomas the Rhymer meeting the Queen of Elfland beneath the Eildon Tree at twilight</image:title>
     <image:caption>A visual interpretation of Thomas the Rhymer leaving for Elfland</image:caption>
   </image:image></url>
+  <url><loc>https://folklorefinder.uk/legends/thor-s-stone</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/thornton-road-poltergeist-claim</loc><lastmod>2026-08-27</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/thornton-road-poltergeist-claim-hero.jpg</image:loc>
@@ -4175,6 +4184,7 @@
     <image:title>Captain William Kidd standing on the rain-wet deck of a seventeenth-century privateer off the Scottish coast</image:title>
     <image:caption>A visual interpretation of Captain Kidd before piracy and privateering became inseparable in legend</image:caption>
   </image:image></url>
+  <url><loc>https://folklorefinder.uk/legends/william-mackenzie-s-pyramid</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/william-owen-the-smuggler-general-of-pembrokeshire</loc><lastmod>2026-08-17</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/william-owen-the-smuggler-general-of-pembrokeshire-hero.jpg</image:loc>

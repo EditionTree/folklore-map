@@ -1212,8 +1212,8 @@
 "modified": "2026-08-17"
 },
 "Isobel Gowdie": {
-"hash": "5fc6863072676afc3d26a1fa1341234e1e453b5d",
-"modified": "2026-08-20"
+"hash": "af6bddab585acbe90dd23e897bce4c4259cec9de",
+"modified": "2026-09-01"
 },
 "Iula, Princess of the Giants of Islay": {
 "hash": "89c74a0deca6b13afbc9849c5693e9216ed32203",
@@ -1480,8 +1480,8 @@
 "modified": "2026-08-25"
 },
 "Loch na Beiste Water Horse, Mellon Udrigle": {
-"hash": "7de897b3ee5f29e06d2833576b9f8ebdd67d87a8",
-"modified": "2026-08-25"
+"hash": "bb981123040ad96b2de17c035e3e8b9151e19ab4",
+"modified": "2026-09-01"
 },
 "Loch nan Dubhrachan Water Horse": {
 "hash": "a784e782a343be3a7d97b0f73de8c4b214b60e65",
@@ -1726,6 +1726,10 @@
 "Mother Ludlam": {
 "hash": "2858514b5bae699c58ac6f112be21b4fa1e3c8da",
 "modified": "2026-08-19"
+},
+"Mother Redcap's": {
+"hash": "f01bbcafb2750a62f9890a666026fce7360d2a7f",
+"modified": "2026-09-01"
 },
 "Mother Shipton": {
 "hash": "7ac61d9cacb805f73fca4ec4a5716731c8be74f6",
@@ -2108,8 +2112,8 @@
 "modified": "2026-08-08"
 },
 "Shellycoat": {
-"hash": "7ed8720382bec19a1ddd355b6120dc10491dd63f",
-"modified": "2026-08-17"
+"hash": "3efba557847fb88b8b48c19938f1134b5a87d9c4",
+"modified": "2026-09-01"
 },
 "Shug Monkey": {
 "hash": "99b7e20389dac00351b6d789d4c2c7ffcfeaf2ed",
@@ -2311,6 +2315,10 @@
 "hash": "217c296a03aff51bf11d9f8beb94569f6354d3d2",
 "modified": "2026-08-17"
 },
+"The Bidston Hill Carvings": {
+"hash": "9630a15860b077e6bea389ca2c9d16a356859016",
+"modified": "2026-09-01"
+},
 "The Binbrook Bewitched Farm (1905)": {
 "hash": "bd0ae2d7020d585aa0701c8257653333b5496dcf",
 "modified": "2026-08-17"
@@ -2322,6 +2330,10 @@
 "The Black Nun of Bonamargy": {
 "hash": "8da99d0717dd7cb078b477c313720c647dee004f",
 "modified": "2026-08-12"
+},
+"The Bloody Acre": {
+"hash": "12c1079e76f2cba4df51dcec985cc68fa5ccc2b3",
+"modified": "2026-09-01"
 },
 "The Brag": {
 "hash": "6f4a0036db7bc7685c8993cccd858b960230aa85",
@@ -2399,6 +2411,10 @@
 "hash": "516047454ec72c594382ba6feefae48508886172",
 "modified": "2026-08-26"
 },
+"The Grey Lady of Speke Hall": {
+"hash": "ec87ee6517ed49e4cddc24462c8d4cc8bb6134fb",
+"modified": "2026-09-01"
+},
 "The Gwybr of Llanrhaeadr": {
 "hash": "1f9067961911640a59aaf49478dbce82db88b346",
 "modified": "2026-08-31"
@@ -2435,6 +2451,10 @@
 "hash": "88cc51aa0e25f9bdc61978c5c9a3a68e6bb04464",
 "modified": "2026-08-26"
 },
+"The Liver Birds": {
+"hash": "ebef0556b625d00a68b0ab536a540d45598c35ec",
+"modified": "2026-09-01"
+},
 "The Loch Ness Monster": {
 "hash": "2fec9cc7be9d597409b53c646358fad7c5f3246b",
 "modified": "2026-08-25"
@@ -2450,6 +2470,10 @@
 "The Mistletoe Bough": {
 "hash": "3ac97c976d79a643feff862d4c38cfc6f77da4bb",
 "modified": "2026-08-25"
+},
+"The Monk's Well": {
+"hash": "0e23eeaba50c4e2a4babf8a07ddd4eb88bb5231b",
+"modified": "2026-09-01"
 },
 "The Morrigan": {
 "hash": "80ba842c5b5f7dc1281ca8d1afee24e92dcc7397",
@@ -2478,6 +2502,10 @@
 "The Pump Hill Smuggler": {
 "hash": "bfdce2574d43d4baf5308b4537ef48c81083a1a1",
 "modified": "2026-08-17"
+},
+"The Queensway Tunnel Hitchhiker": {
+"hash": "cc5e7fb73d8e24c53c7dab5e06c2a78e5b06de9b",
+"modified": "2026-09-01"
 },
 "The Ratman of Southend": {
 "hash": "151a685c9ff4752bb5c39a6dae408d409a9b0d0c",
@@ -2534,6 +2562,10 @@
 "Thomas the Rhymer": {
 "hash": "47cb3436289cfdf384555972070b299b409856ac",
 "modified": "2026-08-17"
+},
+"Thor's Stone": {
+"hash": "fac569c9e7e129b856c278d5cff916c0a2bc05eb",
+"modified": "2026-09-01"
 },
 "Thornton Road poltergeist claim": {
 "hash": "689af6ef16cee1a4910ac7895080940f9bfcb516",
@@ -2711,6 +2743,10 @@
 "hash": "22be19a71e59113253db994a729b94f9d52f10c8",
 "modified": "2026-08-20"
 },
+"William Mackenzie's Pyramid": {
+"hash": "ccd80ff2e89551d4cd550dac3c05837087c661b9",
+"modified": "2026-09-01"
+},
 "William Owen, the Smuggler General of Pembrokeshire": {
 "hash": "3b422b7e70aa958a44c54b8c5a50625c85d492f2",
 "modified": "2026-08-17"
@@ -2752,8 +2788,8 @@
 "modified": "2026-08-25"
 },
 "Witch-hare of Dartmoor": {
-"hash": "a20c24947a95c51e209f47cba535d10145279456",
-"modified": "2026-08-27"
+"hash": "46f82b1072c414ed83e1f7d648244681a4721e75",
+"modified": "2026-09-01"
 },
 "Witches of Belvoir": {
 "hash": "36519daf6b9eb283aa99577687b9785da2ba85d5",

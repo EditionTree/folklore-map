@@ -3941,7 +3941,7 @@
       "haunting",
       "scotland"
     ],
-    "detail": "The Shellycoat is a bogle of Lowland Scottish and Border folklore, a mischievous water-spirit that haunts streams, rivers and pools, and takes its name from the coat of shells it is said to wear, a covering of shells and seaweed that rattles and clatters with its every movement, announcing its approach. Unlike the deadly water-horses and drowning-hags of darker tradition, the Shellycoat is generally more of a prankster than a true menace, given to bewildering and harassing travellers rather than killing them.\n\nIts favourite sport was to lead wayfarers astray, especially at night and near water. A famous tale tells how the Shellycoat would imitate the cries of a drowning person, calling out in distress from the river, luring kindly travellers to stumble up and down the banks in the dark searching for the victim, while the spirit's mocking laughter rang out as it watched them flounder. Two men so deceived are said to have chased the cries half the night, only to hear the Shellycoat hooting with glee at their gullibility as dawn broke.\n\nThe rattling shell-coat marks it as a creature of the water-margin, kin to the brags, bogles and other shape-shifting tricksters of the Scottish Borders. Sir Walter Scott records the Shellycoat among the spirits of the region, and it stands as a characteristic figure of the older Lowland imagination, the uncanny, dripping thing in the stream that meant a traveller no fatal harm, but could not resist leading him a merry and miserable dance.",
+    "detail": "The Shellycoat is a bogle of Lowland Scottish and Border folklore, a mischievous water-spirit that haunts streams, rivers and pools, and takes its name from the coat of shells it is said to wear, a covering of shells and seaweed that rattles and clatters with its every movement, announcing its approach. Unlike the deadly water-horses and drowning-hags of darker tradition, the Shellycoat is generally more of a prankster than a true menace, given to bewildering and harassing travellers rather than killing them.\n\nIts favourite sport was to lead wayfarers astray, especially at night and near water. A famous tale tells how the Shellycoat would imitate the cries of a drowning person, calling out in distress from the river, luring kindly travellers to stumble up and down the banks in the dark searching for the victim, while the spirit's mocking laughter rang out as it watched them flounder. Two men so deceived are said to have chased the cries half the night, only to hear the Shellycoat hooting with glee at their gullibility as dawn broke.\n\nThe rattling shell-coat marks it as a creature of the water-margin, kin to the brags, bogles and other shape-shifting tricksters of the Scottish Borders. Its name first appears in print in 1720, in Allan Ramsay's line about a 'shelly-coated kow', and it is Sir Walter Scott's Minstrelsy of the Scottish Border, eighty years later, that gives the fullest early account, placing its hauntings at Gorinberry on the Hermitage Water and near Leith and remaining the basis for most modern descriptions. It stands as a characteristic figure of the older Lowland imagination, the uncanny, dripping thing in the stream that meant a traveller no fatal harm, but could not resist leading him a merry and miserable dance.",
     "sources": [
       "https://en.wikipedia.org/wiki/Shellycoat",
       "https://archive.org/details/bim_eighteenth-century_poems-by-allan-ramsay-w_ramsay-allan_1733",
@@ -9013,7 +9013,7 @@
       "england",
       "devon"
     ],
-    "detail": "Dartmoor keeps its own vivid version of the shape-shifting witch-hare, one of the most widespread of all British witch beliefs. The tales tell of an old woman able to take the form of a great hare (to steal milk by sucking the cows, to poach, or simply to torment a neighbouring farm), who is repeatedly coursed by hounds but always escapes, slipping back into her cottage just as the dogs close in.\n\nThe witch is unmasked in the usual way: the hare can only be harmed by a charmed shot, traditionally a slug of silver (a melted-down button or sixpence), and when at last the creature is wounded by such a shot and tracked to the old woman's door, she is found within nursing a fresh wound in the very limb where the hare was hit. The proof of the wound is the proof of the witch. The standard references for this material are Ruth St Leger-Gordon's The Witchcraft and Folklore of Dartmoor (1965) and Theo Brown's The Fate of the Dead (1979), though, like most Dartmoor witch-hare tales, no version has been traced earlier than these twentieth-century folklore collections. Found across Devon, Cornwall and beyond, the Dartmoor witch-hare ties the everyday suspicions of the farming community (soured milk, vanished game, an unpopular old woman) to the deep folk-belief in transformation.",
+    "detail": "Dartmoor keeps its own vivid version of the shape-shifting witch-hare, one of the most widespread of all British witch beliefs. The tales tell of an old woman able to take the form of a great hare (to steal milk by sucking the cows, to poach, or simply to torment a neighbouring farm), who is repeatedly coursed by hounds but always escapes, slipping back into her cottage just as the dogs close in.\n\nThe witch is unmasked in the usual way: the hare can only be harmed by a charmed shot, traditionally a slug of silver (a melted-down button or sixpence), and when at last the creature is wounded by such a shot and tracked to the old woman's door, she is found within nursing a fresh wound in the very limb where the hare was hit. The proof of the wound is the proof of the witch. The standard references for this material are Ruth St Leger-Gordon's The Witchcraft and Folklore of Dartmoor (1965) and Theo Brown's The Fate of the Dead (1979), though, like most Dartmoor witch-hare tales, no version has been traced earlier than these twentieth-century folklore collections.\n\nThe witch-into-hare motif is far older than any Dartmoor telling of it. In Scotland, Isobel Gowdie's 1662 witch-trial confession describes the same transformation in exactly the same terms, evidence of how widely this particular shape-change was believed across Britain long before Dartmoor's own collectors wrote it down. Found across Devon, Cornwall and beyond, the Dartmoor witch-hare ties the everyday suspicions of the farming community (soured milk, vanished game, an unpopular old woman) to the deep folk-belief in transformation.",
     "sources": [
       "https://oldechronicles.org.uk/the-witch-hare-of-dartmoor/",
       "https://www.legendarydartmoor.co.uk/2016/03/26/witch_hare/"
@@ -11163,7 +11163,10 @@
       "https://garve.org/the-loch-garve-kelpie",
       "https://www.mysteriousbritain.co.uk/folklore/the-kelpie-of-loch-garve/",
       "https://folklorescotland.com/the-kelpies-chimney/"
-    ]
+    ],
+    "cultural_tradition": "Highland Scottish kelpie and water-horse tradition, associated with Loch Garve in Ross-shire.",
+    "origin_type": "oral-tradition",
+    "dating_confidence": "low"
   },
   {
     "name": "Witches of Belvoir",
@@ -14489,7 +14492,7 @@
     ],
     "earliest_record": "Isle of Man ecclesiastical court records document Joney Lowney's witchcraft case, first before the Bishop's court at Bishopscourt in 1715 and sentenced a second time in 1716 after a four-month evidentiary period; she died in January 1725 and is buried at Old Kirk Braddan",
     "period": "Documented court case, 1715-1716; early 18th century",
-    "historical_setting": "Bishop's Mill, Braddan, and Bishopscourt ecclesiastical court, Isle of Man",
+    "historical_setting": "Joney Lowney's second trial before the Bishop of Sodor and Man at Bishopscourt ran over four months; found guilty, she was sentenced to fourteen days' imprisonment, fined three pounds, and made to stand at the island's market crosses dressed in sackcloth.",
     "cultural_tradition": "Manx witch-trial tradition, later folded into the Hop-tu-Naa (Manx Halloween) song and story tradition as 'Jinny the Witch'",
     "dating_confidence": "high",
     "origin_type": "historical-event",
@@ -14518,7 +14521,8 @@
       "https://www.greatyarmouthmercury.co.uk/news/21030190.brave-young-captain-died-yarmouth-defending-ship-pirates/",
       "http://www.foxearth.org.uk/1781NorfolkChronicle.html",
       "https://www.archives.norfolk.gov.uk/help-with-your-research/crime-and-punishment/crimes-and-trials-in-great-yarmouth",
-      "https://www.archives.norfolk.gov.uk/help-with-your-research/maritime-and-overseas/great-yarmouth-maritime-sources"
+      "https://www.archives.norfolk.gov.uk/help-with-your-research/maritime-and-overseas/great-yarmouth-maritime-sources",
+      "https://www.greatyarmouthmercury.co.uk/news/21030301.yarmouth-gravestone-recounts-dire-sea-battle-pirates/"
     ],
     "earliest_record": "Contemporary reporting in the Norfolk Chronicle, including its February 1781 issue, which named 'that notorious villain FALL' directly and reported his prize-taking as it happened.",
     "period": "1780-1782",
@@ -14967,7 +14971,7 @@
       "scotland",
       "highland"
     ],
-    "detail": "Loch na Beiste, Gaelic for 'the Loch of the Beast', is a small hill loch near Mellon Udrigle in Wester Ross, in the remote north-west Highlands, and its name records a genuine 19th-century episode of monster-belief and monster-hunting. The local people held that a fearsome creature, a water-horse or each-uisge, dwelt in its dark waters, and described it as a great dark shape like the upturned keel of a boat moving on the surface. So real and so frightening was the belief that the loch became a place of dread, avoided after dark; among those who reported seeing the creature was Sandy McLeod, a Free Church of Scotland elder, returning home from a service at Aultbea.\n\nWhat sets Loch na Beiste apart from the many Highland water-horse lochs is what was done about it. In the 1840s the local estate owner, a Mr Banks, pressed by tenants terrified of the beast, resolved to destroy it. An attempt was made to drain the loch by cutting a channel to let its waters out, and when that failed, quantities of quicklime were tipped into it in the hope of poisoning or driving out whatever lay beneath. The creature, needless to say, was never found, and the loch defeated its would-be exterminators.\n\nThe episode is a vivid snapshot of the each-uisge tradition, the malevolent shape-shifting water-horse of Highland and Hebridean lore, which lured victims onto its back and dragged them under to drown and devour them, colliding with the practical, improving spirit of the 19th century. The beast kept its loch, and its name, and the story endures as one of the best-documented cases of a Highland community living in real fear of its local water-monster.",
+    "detail": "Loch na Beiste, Gaelic for 'the Loch of the Beast', is a small hill loch near Mellon Udrigle in Wester Ross, in the remote north-west Highlands, and its name records a genuine 19th-century episode of monster-belief and monster-hunting. The local people held that a fearsome creature, a water-horse or each-uisge, dwelt in its dark waters, and described it as a great dark shape like the upturned keel of a boat moving on the surface. So real and so frightening was the belief that the loch became a place of dread, avoided after dark; among those who reported seeing the creature were Sandy McLeod and Kenneth Cameron, both elders of the Free Church of Scotland, McLeod returning home from a service at Aultbea.\n\nWhat sets Loch na Beiste apart from the many Highland water-horse lochs is what was done about it. In the 1840s the local estate owner, a Mr Bankes, pressed by tenants terrified of the beast, resolved to destroy it. An attempt was made to drain the loch by cutting a channel to let its waters out, and when that failed, quantities of quicklime were tipped into it in the hope of poisoning or driving out whatever lay beneath. The creature, needless to say, was never found, and the loch defeated its would-be exterminators.\n\nThe episode is a vivid snapshot of the each-uisge tradition, the malevolent shape-shifting water-horse of Highland and Hebridean lore, which lured victims onto its back and dragged them under to drown and devour them, colliding with the practical, improving spirit of the 19th century. The beast kept its loch, and its name, and the story endures as one of the best-documented cases of a Highland community living in real fear of its local water-monster.",
     "sources": [
       "https://spookyscotland.net/water-horse-loch-na-beiste/",
       "https://lovetovisitscotland.com/the-shape-shifting-scottish-beast-that-lured-victims-into-lochs-for-centuries/",
@@ -15370,12 +15374,14 @@
       "https://www.mythslegendsodditiesnorth-east-wales.co.uk/denbigh-dragon",
       "https://www.bywgraffiadur.cymru/article/s-SALU-LLE-1250",
       "https://www.historyofparliamentonline.org/volume/1509-1558/member/salusbury-john-i-1485-154749",
-      "https://biography.wales/article/s-SALU-LLE-1250.html"
+      "https://biography.wales/article/s-SALU-LLE-1250.html",
+      "https://www.library.wales/discover/digital-gallery/manuscripts/early-modern-period/salusbury"
     ],
     "earliest_record": "No early written text for the dragon tale itself is known; the tale is a folk giant/dragon-slayer motif that became locally attached to the historical Salusbury family of Lleweni, specifically John Salusbury ('Sion y Bodiau', d. 1547/49), a documented 16th-century Denbighshire gentry figure (see History of Parliament Online and the Dictionary of Welsh Biography)",
     "origin_type": "oral-tradition",
     "dating_confidence": "low",
-    "period_slug": "medieval-britain"
+    "period_slug": "medieval-britain",
+    "historical_setting": "The Dictionary of Welsh Biography notes that two Salusbury family members of Lleweni were nicknamed 'Sion y Bodiau': an uncle, John Salusbury I (d. 1547/49), and his nephew John Salusbury II (d. 1578). The dragon-slaying tale has historically been attached to both, and the two are easily confused."
   },
   {
     "name": "Witch of Slieu Whallian",
@@ -15471,7 +15477,7 @@
     "category": "witch",
     "region": "Auldearn, Highland",
     "summary": "In 1662 a Highland cottar's wife gave four unforced confessions of riding with the Queen of Elfhame, shape-shifting into a hare, and turning sticks into horses, the richest witch-lore ever recorded in Scotland.",
-    "detail": "Isobel Gowdie was a young farmer's wife living near Auldearn, close to Nairn, when in the spring of 1662 she made a series of four remarkable confessions to witchcraft over six weeks. What sets her case apart is that the testimony appears to have been given freely, without the violent torture usual to such trials, and that it is soaked in the imagery of older Highland fairy belief rather than the imported demonology of the courts.\n\nGowdie described slipping out of her own body to fly through the night air, feasting with the fairy folk beneath the hills, and riding with the Queen of Elfhame. She chanted rhymes that turned straws and beanstalks into horses, that let her vanish from sight, and that transformed her into a hare, a cat or a crow and back again, echoes of the Highland *fith-fath*, the charm of shape-changing. Her coven, she said, met to work their magic and to trouble their neighbours' crops and cattle.\n\nIt is uncertain whether Gowdie was executed in the usual way or simply allowed to slip back into obscurity, for the records fall silent after her confessions. What survives is one of the most vivid windows ever opened onto the folk belief of seventeenth-century Scotland, where witchcraft, fairy lore and the charms of the cunning folk were tangled inseparably together.",
+    "detail": "Isobel Gowdie was a young farmer's wife living near Auldearn, close to Nairn, when in the spring of 1662 she made a series of four remarkable confessions to witchcraft over six weeks. What sets her case apart is that the testimony appears to have been given freely, without the violent torture usual to such trials, and that it is soaked in the imagery of older Highland fairy belief rather than the imported demonology of the courts.\n\nGowdie described slipping out of her own body to fly through the night air, feasting with the fairy folk beneath the hills, and riding with the Queen of Elfhame. She chanted rhymes that turned straws and beanstalks into horses, that let her vanish from sight, and that transformed her into a hare, a cat or a crow and back again, echoes of the Highland *fith-fath*, the charm of shape-changing. Her coven, she said, met to work their magic and to trouble their neighbours' crops and cattle.\n\nIt is uncertain whether Gowdie was executed in the usual way or simply allowed to slip back into obscurity, for the records fall silent after her confessions. The confessions themselves came close to vanishing too. The original documents were long thought lost, until the historian Emma Wilby rediscovered them in an uncatalogued box of papers at the National Records of Scotland, work she set out fully in The Visions of Isobel Gowdie (2010). What survives, now that the papers have resurfaced, is one of the most vivid windows ever opened onto the folk belief of seventeenth-century Scotland, where witchcraft, fairy lore and the charms of the cunning folk were tangled inseparably together.",
     "source": "https://en.wikipedia.org/wiki/Isobel_Gowdie",
     "date_added": "2026-06-13",
     "tags": [
@@ -17225,7 +17231,8 @@
       "https://en.wikipedia.org/wiki/Loughareema",
       "https://www.belfastentries.com/places/loughareema-the-vanishing-lake/",
       "https://www.newsletter.co.uk/retro/strange-lake-comes-and-goes-ghosts-and-ghouls-its-shoreline-131349",
-      "https://www.geolsoc.org.uk/science-and-policy/100-great-geosites/landscape/loughareema/"
+      "https://www.geolsoc.org.uk/science-and-policy/100-great-geosites/landscape/loughareema/",
+      "https://antrimhistory.net/the-mc-neills-of-cushendun-and-the-mc-neiles-of-ballycastle/"
     ],
     "date_added": "2026-06-17",
     "tags": [
@@ -17236,7 +17243,14 @@
       "haunting",
       "death-omen"
     ],
-    "detail": "Loughareema, whose name derives from the Irish Loch an Rith Amach ('the lake that runs out'), is an upland lake near Ballycastle in north Antrim that empties through a sinkhole in its limestone basin and refills from three feeder streams, sometimes within a single day. The lake can be brimming at dusk and bone-dry by morning, leaving its bed as passable ground. A road was constructed through the lake, sensible enough when it was empty, but fatally misleading when water returned in the dark of night.\n\nLocal tradition holds that in the nineteenth century Captain McNeill's coachman drove a two-horse brougham across the hidden lake surface on just such a night. The horses, sensing the rising water, panicked, rearing and plunging until the carriage was dragged beneath the surface. The coachman and both horses were drowned after what witnesses described as 'a terrible struggle for life'. The event passed quickly into folklore, and from there into ghost story: the phantom coach and horses are said to appear at the shoreline on nights when the lake is full, replaying the fatal crossing for those who wait in the dark.\n\nThe lake's dual nature, a vanishing lake by day and ghost-haunted water at night, made it a persistent subject of local legend along the Antrim coast. The Geological Society of London has since recognised Loughareema as a significant geological site for its remarkable ephemeral behaviour, and the lake is documented in both scientific and folklore literature. Several Ulster folk accounts record the ghost story, emphasising the coachman's inability to distinguish the road from the water surface in darkness."
+    "detail": "Loughareema, whose name derives from the Irish Loch an Rith Amach ('the lake that runs out'), is an upland lake near Ballycastle in north Antrim that empties through a sinkhole in its limestone basin and refills from three feeder streams, sometimes within a single day. The lake can be brimming at dusk and bone-dry by morning, leaving its bed as passable ground. A road was constructed through the lake, sensible enough when it was empty, but fatally misleading when water returned in the dark of night.\n\nLocal tradition holds that in the nineteenth century Captain McNeill's coachman drove a two-horse brougham across the hidden lake surface on just such a night. The horses, sensing the rising water, panicked, rearing and plunging until the carriage was dragged beneath the surface. The coachman and both horses were drowned after what witnesses described as 'a terrible struggle for life'. The event passed quickly into folklore, and from there into ghost story: the phantom coach and horses are said to appear at the shoreline on nights when the lake is full, replaying the fatal crossing for those who wait in the dark.\n\nThe lake's dual nature, a vanishing lake by day and ghost-haunted water at night, made it a persistent subject of local legend along the Antrim coast. The Geological Society of London has since recognised Loughareema as a significant geological site for its remarkable ephemeral behaviour, and the lake is documented in both scientific and folklore literature. Several Ulster folk accounts record the ghost story, emphasising the coachman's inability to distinguish the road from the water surface in darkness.",
+    "earliest_record": "The Belfast News Letter reported the inquest into the drowning of Colonel John Magee McNeille, his coachman David McNeill, and both horses in Loughareema, published 4 October 1898, four days after the accident of 30 September 1898.",
+    "period": "1898",
+    "period_slug": "victorian-britain",
+    "historical_setting": "Colonel John Magee McNeille of the Royal Engineers was travelling from his uncle's house at Cushendun to catch the 3pm train at Ballycastle when his coachman drove the carriage into the flooded lough; the colonel, coachman David McNeill, and both horses drowned.",
+    "cultural_tradition": "County Antrim ghost tradition; a phantom coach and horses are said to appear on the shoreline when the lough refills.",
+    "origin_type": "historical-event",
+    "dating_confidence": "high"
   },
   {
     "name": "Red Hand of Ulster",
@@ -19687,7 +19701,8 @@
     "source": "https://www.paranormaldatabase.com/islands/outedata.php",
     "sources": [
       "https://www.paranormaldatabase.com/islands/outedata.php",
-      "https://what-when-how.com/celtic-mythology-and-folklore/fachan-athach-to-fergus-feargus-celtic-mythology-and-folklore/"
+      "https://what-when-how.com/celtic-mythology-and-folklore/fachan-athach-to-fergus-feargus-celtic-mythology-and-folklore/",
+      "https://books.google.com/books/about/The_Outer_Hebrides_and_Their_Legends.html?id=uUXYAAAAMAAJ"
     ],
     "date_added": "2026-08-05",
     "tags": [
@@ -19695,7 +19710,11 @@
       "hebrides",
       "curse",
       "healing"
-    ]
+    ],
+    "earliest_record": "Otta F. Swire recorded the Feolagan in 'The Outer Hebrides and Their Legends', published in 1966 by Oliver and Boyd. Swire drew the tale from stories she had heard from her mother and grandmother, so the oral tradition likely predates the book, though no earlier written account has been found.",
+    "cultural_tradition": "Sheep-herding folklore of the Isle of Lewis, Outer Hebrides.",
+    "origin_type": "oral-tradition",
+    "dating_confidence": "low"
   },
   {
     "name": "The Witch of Ditchling Common",
@@ -19735,7 +19754,8 @@
     "source": "https://www.peoplescollection.wales/items/1762761",
     "sources": [
       "https://www.peoplescollection.wales/items/1762761",
-      "https://nation.cymru/culture/they-were-blamed-for-things-people-didnt-understand-celebrating-international-womens-day-with-efa-lois-welsh-witches/"
+      "https://nation.cymru/culture/they-were-blamed-for-things-people-didnt-understand-celebrating-international-womens-day-with-efa-lois-welsh-witches/",
+      "https://www.serenbooks.com/book/gwrachod-cymru-welsh-witches/"
     ],
     "date_added": "2026-08-05",
     "tags": [
@@ -19744,7 +19764,11 @@
       "sea",
       "healing"
     ],
-    "detail": "In Llanarmon, a small parish near Pwllheli on the Llŷn Peninsula, local memory preserves two women named Lowri and Siân Owen as figures of both fear and use. They were said to run a kind of school from a cottage in the village, holding ceremonies that could cast out unclean spirits and demons from those who came to them for help.\n\nTheir other reputed gift was reading the sea itself. Villagers believed the two women could sense the turn of the tide in advance, anticipating its ebb and flow before it happened, a skill valued in a fishing community where the sea set the rhythm of daily life.\n\nLittle else survives about them individually, no firm dates and no account of how their reputation began or ended, but their story fits a pattern found across Wales. The artist Efa Lois has traced around sixty such women through her Gwrachod Cymru (Welsh Witches) project, and found that most functioned less as villains than as healers, using herbal remedies, rituals and chants to treat neighbours for ailments no one else could explain, then taking the blame when something went wrong. Wales prosecuted its accused witches far more rarely than continental Europe did: only five were executed between 1482 and 1782, against tens of thousands killed across Europe in the same period. Lowri and Siân Owen's story today rests mainly on oral tradition gathered by recent Welsh folklore projects rather than any older written record, one small entry in a much larger, and much less bloody, tradition than the word \"witch\" usually suggests."
+    "detail": "In Llanarmon, a small parish near Pwllheli on the Llŷn Peninsula, local memory preserves two women named Lowri and Siân Owen as figures of both fear and use. They were said to run a kind of school from a cottage in the village, holding ceremonies that could cast out unclean spirits and demons from those who came to them for help.\n\nTheir other reputed gift was reading the sea itself. Villagers believed the two women could sense the turn of the tide in advance, anticipating its ebb and flow before it happened, a skill valued in a fishing community where the sea set the rhythm of daily life.\n\nLittle else survives about them individually, no firm dates and no account of how their reputation began or ended, but their story fits a pattern found across Wales. The artist Efa Lois has traced around sixty such women through her Gwrachod Cymru (Welsh Witches) project, and found that most functioned less as villains than as healers, using herbal remedies, rituals and chants to treat neighbours for ailments no one else could explain, then taking the blame when something went wrong. Wales prosecuted its accused witches far more rarely than continental Europe did: only five were executed between 1482 and 1782, against tens of thousands killed across Europe in the same period. Lowri and Siân Owen's story today rests mainly on oral tradition gathered by recent Welsh folklore projects rather than any older written record, one small entry in a much larger, and much less bloody, tradition than the word \"witch\" usually suggests.",
+    "earliest_record": "Efa Lois's 'Gwrachod Cymru / Welsh Witches' (Seren, 2023), with an introduction by the folklorist Dr Juliette Wood, is the fullest published account of Lowri and Siân Owen found. No earlier written record of the pair has been located.",
+    "cultural_tradition": "Llŷn Peninsula folk-witch tradition, North Wales.",
+    "origin_type": "oral-tradition",
+    "dating_confidence": "low"
   },
   {
     "name": "Madame's Blow-well",

@@ -9805,6 +9805,12 @@
         "Setting": "Boldre and South Baddesley",
         "Motif": "Unearthed family protector"
       }
+    },
+    "Bincombe Bumps": {
+      "priority": 553,
+      "image": "legend-images/bincombe-bumps-hero.jpg",
+      "alt": "A Dorset country listener kneeling with an ear to a grass-covered Music Barrow on Bincombe Down while smaller barrows recede toward the coast",
+      "caption": "A visual interpretation of the Music Barrow tradition on Bincombe Down"
     }
   }
 }

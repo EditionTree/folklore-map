@@ -42,8 +42,8 @@
   <url><loc>https://folklorefinder.uk/legends/region/county-antrim</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/hampshire</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/shetland</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/devon</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/merseyside</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/devon</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/argyll</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/london</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/suffolk</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
@@ -76,6 +76,7 @@
   <url><loc>https://folklorefinder.uk/legends/region/kent</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/durham</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/county-armagh</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/wirral</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/collection/black-dogs</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/collection/arthurian-britain</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/collection/arthurian-britain-2</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
@@ -3007,6 +3008,7 @@
     <image:title>The high moorland bulk of Plynlimon rendered as a giant-like massif above dark Welsh river sources under heavy cloud</image:title>
     <image:caption>A visual interpretation of Plynlimon, father of rivers in Welsh legend</image:caption>
   </image:image></url>
+  <url><loc>https://folklorefinder.uk/legends/poldies</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/pooka</loc><lastmod>2026-08-31</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/pooka-hero.jpg</image:loc>

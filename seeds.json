@@ -20332,5 +20332,26 @@
     "period_slug": "georgian-britain",
     "origin_type": "historical-event",
     "dating_confidence": "medium"
+  },
+  {
+    "name": "Poldies",
+    "lat": 53.36,
+    "lng": -3.05,
+    "category": "fairy",
+    "region": "Wirral, Merseyside",
+    "summary": "Poldies are the fairies of the Wirral woods and their business is keeping people out of them. Anyone who breaks a branch can expect an accident shortly afterwards, and children were sent home before dusk because dusk is when the poldies come out. They are never seen, and are known only by what happens to people who take liberties with the trees.",
+    "source": "https://www.oxfordreference.com/view/10.1093/oi/authority.20110803100334165",
+    "date_added": "2026-09-01",
+    "tags": [
+      "forest",
+      "guardian",
+      "england",
+      "merseyside",
+      "wirral"
+    ],
+    "detail": "The belief belongs to the Wirral and the country along the Cheshire and Lancashire border, and it is recorded in the Oxford Dictionary of English Folklore. Poldies are woodland guardians rather than household or water fairies, and what they do to people is proportionate to what those people have done to the wood.\n\nTwo anecdotes carry the tradition. In one, a boy twisted small branches off a tree and threw them away, then sprained his ankle badly a few minutes later, which his cousin put down to the poldies. In the other, a building contractor abandoned plans to clear a Wirral wood after a run of flooding and machinery breakdowns, and local people said the poldies were defending their homes.\n\nThe date is the unusual part. The tradition reaches print through the folklorist Jacqueline Simpson, who had it from a friend recalling childhood visits to the Wirral in the 1950s. Most English fairy belief comes down through nineteenth century collectors describing something they thought was ending. This was current within living memory, in a commuter county across the water from Liverpool, and it passed from parents to children as a practical instruction about getting home.\n\nNo single wood is named in the record. The warning covers woodland in general, which is why the poldies have no shrine, no stone and no one hill to be attached to. They are a rule about how to behave among trees, given a name and a habit of coming out at dusk.",
+    "period": "Attested as living belief in the Wirral in the 1950s and recorded by Jacqueline Simpson in the Oxford Dictionary of English Folklore. No earlier record has been traced, so the age of the tradition is unknown",
+    "origin_type": "oral-tradition",
+    "dating_confidence": "medium"
   }
 ]

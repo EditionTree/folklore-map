@@ -4,7 +4,7 @@
   <link>https://folklorefinder.uk/</link>
   <description>Recently added myths, legends, ghosts and folklore from across Britain and Ireland.</description>
   <language>en-gb</language>
-  <lastBuildDate>Tue, 01 Sep 2026 19:32:27 GMT</lastBuildDate>
+  <lastBuildDate>Tue, 01 Sep 2026 20:11:07 GMT</lastBuildDate>
   <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://folklorefinder.uk/feed.xml" rel="self" type="application/rss+xml"/>
   <item>
     <title>Mother Redcap&#x27;s</title>
@@ -13,6 +13,14 @@
     <pubDate>Tue, 01 Sep 2026 12:00:00 GMT</pubDate>
     <category>Pirates</category>
     <description>A low house stood on the Wallasey shore behind walls nearly three feet thick, with a five inch oak door and a trapdoor inside the entrance that dropped an…</description>
+  </item>
+  <item>
+    <title>Poldies</title>
+    <link>https://folklorefinder.uk/legends/poldies</link>
+    <guid isPermaLink="true">https://folklorefinder.uk/legends/poldies</guid>
+    <pubDate>Tue, 01 Sep 2026 12:00:00 GMT</pubDate>
+    <category>Fae &amp; Spirits</category>
+    <description>Poldies are the fairies of the Wirral woods and their business is keeping people out of them. Anyone who breaks a branch can expect an accident shortly…</description>
   </item>
   <item>
     <title>The Bidston Hill Carvings</title>
@@ -237,13 +245,5 @@
     <pubDate>Wed, 05 Aug 2026 12:00:00 GMT</pubDate>
     <category>Pirates</category>
     <description>A stone-walled sea cave on the Gower coast was said to be smuggler John Lucas&#x27;s contraband store, reached by a tunnel wide enough to ride a horse through.</description>
-  </item>
-  <item>
-    <title>Daft Eddie and the Merry Hearts of Down</title>
-    <link>https://folklorefinder.uk/legends/daft-eddie-and-the-merry-hearts-of-down</link>
-    <guid isPermaLink="true">https://folklorefinder.uk/legends/daft-eddie-and-the-merry-hearts-of-down</guid>
-    <pubDate>Wed, 05 Aug 2026 12:00:00 GMT</pubDate>
-    <category>Pirates</category>
-    <description>A gang of 18th-century smugglers called the Merry Hearts of Down ran contraband brandy through Strangford Lough&#x27;s islands, with a simple foundling boy,…</description>
   </item>
 </channel></rss>

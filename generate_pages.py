@@ -1579,7 +1579,7 @@ FEATURED_PAGE = Template("""<!DOCTYPE html>
 <meta name="twitter:image:alt" content="$og_alt"/>
 <link rel="preload" href="/fonts/marcellus-400-latin.woff2" as="font" type="font/woff2" crossorigin/><link rel="preload" href="/fonts/spectral-400-latin.woff2" as="font" type="font/woff2" crossorigin/>
 <link rel="stylesheet" href="/fonts/fonts.css"/>
-<link rel="stylesheet" href="/assets/leaflet/leaflet.css"/>
+<link rel="stylesheet" href="/assets/leaflet/leaflet.css?v=20260901a"/>
 <link rel="stylesheet" href="/nav.css?v=20260823b"/>
 <link rel="stylesheet" href="/footer.css?v=20260823a"/>
 <link rel="stylesheet" href="/legend-page.css?v=20260826d"/>
@@ -1627,7 +1627,7 @@ $topnav
   $featured_related
 </main>
 $footer
-<script src="/assets/leaflet/leaflet.js"></script>
+<script src="/assets/leaflet/leaflet.js?v=20260901a"></script>
 <link rel="stylesheet" href="/share.css?v=20260823a"/><script src="/share-card.js?v=20260826b"></script>
 <script src="$base/legend-page.js?v=20260823b"></script>
 </body>
@@ -3027,9 +3027,15 @@ def build():
                     '<span class="col-share-status" aria-live="polite"></span></div>'
                     '<p class="col-next" hidden></p>\n'
                 )
+                # The meta description carries the page number too. Without it
+                # all 3 pages of a paginated collection shipped one identical
+                # description while their titles differed, which reads to a
+                # crawler as duplicate content on an otherwise correct
+                # pagination setup (self-canonical plus rel=prev/next).
+                page_desc = desc if not page_tag else f"{desc} Page {page_no} of {total_pages}."
                 page = build_browse_page(
                     page_title=f"{col['title']}{page_tag} · Folklore Finder",
-                    desc=desc,
+                    desc=page_desc,
                     url=url,
                     ogimage=(absolute_asset_url(hero_path) if hero_path else None),
                     h1=col["title"],
@@ -3318,6 +3324,9 @@ def build():
         )
         az_parts.append(f'<h3 class="az-letter" id="az-{letter}">{letter}</h3><ul>{lis}</ul>')
     az_content = "\n".join(az_parts)
+    # The browse index was the last page on the site carrying no structured
+    # data. ld+json is a data block, not executed script, so no CSP hash.
+    browse_index_ld = '<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Browse All Legends","url":"https://folklorefinder.uk/legends/","isPartOf":{"@type":"WebSite","name":"Folklore Finder","url":"https://folklorefinder.uk/"},"publisher":{"@type":"Organization","name":"Folklore Finder","url":"https://folklorefinder.uk/"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://folklorefinder.uk/"},{"@type":"ListItem","position":2,"name":"Browse All Legends","item":"https://folklorefinder.uk/legends/"}]}</script>'
     index_html = f"""<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"/>
 <script>if(location.hostname.indexOf("pages.dev")>-1){{location.replace("https://folklorefinder.uk"+location.pathname+location.search+location.hash);}}</script>
@@ -3392,7 +3401,7 @@ h1::after{{content:"";display:block;width:132px;height:40px;margin:9px 0 19px;ba
 @media(max-width:1000px){{.browse-link-sections{{grid-template-columns:1fr 1fr}}.browse-link-sections .browse-sec:last-child{{grid-column:1/-1}}}}
 @media(max-width:760px){{.wrap{{width:calc(100% - 32px)}}.place-explorer{{grid-template-columns:1fr;margin:42px 24px 68px;padding:44px 34px;gap:22px}}.place-explorer::after{{inset:-19px;border-width:24px;border-image-width:24px}}.place-map{{width:min(100%,280px)}}.browse-link-sections{{grid-template-columns:1fr;gap:18px}}.browse-link-sections .browse-sec:last-child{{grid-column:auto}}}}
 @media(max-width:480px){{.browse-link-sections .browse-sec:last-child .region-links{{grid-template-columns:1fr}}}}
-</style></head>
+</style>{browse_index_ld}</head>
 <body>
 {topnav_html("browse")}
 <div class="wrap"><h1>All Legends ({written})</h1>{browse_sections}<div class="az">

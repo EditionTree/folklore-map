@@ -34,54 +34,6 @@ body.ff-paper {
     var(--ff-parchment);
 }
 
-.ff-leaf-cap {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-}
-
-.ff-leaf-cap::before {
-  content: "";
-  width: 68px;
-  height: 28px;
-  flex: 0 0 auto;
-  opacity: 0.56;
-  background: url("assets/ornaments/generated-variants/oak-divider-horizontal.webp?v=20260629a") center / contain no-repeat;
-}
-
-.ff-divider {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin: 3rem auto;
-  color: var(--ff-oak-brown);
-  opacity: 0.68;
-}
-
-.ff-divider::before,
-.ff-divider::after {
-  content: "";
-  height: 1px;
-  flex: 1;
-  background: linear-gradient(90deg, transparent, rgba(90, 70, 50, 0.36), transparent);
-}
-
-.ff-divider img {
-  width: 150px;
-  max-width: 34vw;
-}
-
-.ff-knot-panel {
-  position: relative;
-  border: 1px solid var(--ff-line);
-  background: rgba(246, 241, 230, 0.82);
-  padding: 1.5rem;
-}
-
-.ff-knot-panel::before {
-  content: none;
-}
-
 /* Homepage proof of direction */
 .home-page .topnav {
   flex-shrink: 0;
@@ -258,11 +210,6 @@ body.ff-paper {
 .home-page .place-key a {
   border-radius: 0;
   background: transparent;
-}
-
-.home-page .recent-grid {
-  display: block;
-  border-top: 1px solid var(--ff-line);
 }
 
 .home-page .recent-card {
@@ -598,24 +545,6 @@ body.interior-page {
   filter: sepia(.12) saturate(.72) drop-shadow(0 4px 13px rgba(0,0,0,.28));
 }
 
-.interior-page .page-head-logo {
-  position: relative;
-  z-index: 1;
-  display: inline-block;
-  color: inherit;
-  text-decoration: none;
-}
-
-.interior-page .page-head-logo img {
-  transition: transform .16s ease, filter .16s ease;
-}
-
-.interior-page .page-head-logo:hover img,
-.interior-page .page-head-logo:focus-visible img {
-  transform: translateY(-1px);
-  filter: sepia(.12) saturate(.82) drop-shadow(0 6px 16px rgba(196,98,42,.24));
-}
-
 .interior-page .page-head h1 {
   letter-spacing: .035em;
   color: #f2e8d5;
@@ -905,13 +834,6 @@ body.home-page {
   padding: 46px 0 70px;
 }
 
-.home-page .landing-lower-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(290px, 340px);
-  gap: 30px;
-  align-items: start;
-}
-
 .home-page .recent-panel {
   position: relative;
   overflow: hidden;
@@ -964,13 +886,6 @@ body.home-page {
   font-style: italic;
 }
 
-.home-page .recent-panel .recent-grid {
-  position: relative;
-  z-index: 1;
-  border: 1px solid rgba(90,70,50,.2);
-  background: rgba(255,255,255,.24);
-}
-
 .home-page .recent-panel .recent-card {
   grid-template-columns: 34px minmax(230px, 1.25fr) minmax(190px, .9fr) 92px 132px 16px;
   padding: 15px 14px;
@@ -978,20 +893,6 @@ body.home-page {
 
 .home-page .recent-panel .recent-card:nth-child(even) {
   background: rgba(176,144,96,.07);
-}
-
-.home-page .recent-index {
-  color: var(--ff-antique-gold);
-  font-family: 'Marcellus', serif;
-  font-size: 10px;
-  letter-spacing: .08em;
-}
-
-.home-page .recent-date {
-  color: var(--ff-slate-blue);
-  font-size: 11px;
-  font-style: italic;
-  white-space: nowrap;
 }
 
 .home-page .recent-panel .recent-card::after {
@@ -1008,96 +909,14 @@ body.home-page {
   transform: translateX(2px);
 }
 
-.home-page .landing-lower-grid .bottom-cta {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 0;
-  padding: 38px 31px 36px;
-  border: 1px solid rgba(176,144,96,.48);
-  background:
-    linear-gradient(145deg, rgba(196,98,42,.1), transparent 50%),
-    linear-gradient(180deg, #251b14, #17110d);
-  box-shadow: 0 18px 42px rgba(29,23,18,.16);
-  text-align: left;
-}
-
-.home-page .landing-lower-grid .bottom-cta::after {
-  content: "";
-  position: absolute;
-  right: -46px;
-  bottom: -54px;
-  width: 210px;
-  height: 210px;
-  opacity: .11;
-  background: url("assets/ornaments/generated-variants/oak-corner-v1.webp?v=20260629a") right bottom / contain no-repeat;
-  transform: rotate(180deg);
-  pointer-events: none;
-}
-
-.home-page .landing-lower-grid .bottom-cta h2 {
-  position: relative;
-  z-index: 1;
-  margin: 0 0 12px;
-  color: var(--ff-parchment);
-  font-size: clamp(22px, 2.2vw, 29px);
-  font-weight: 400;
-  line-height: 1.18;
-}
-
-.home-page .landing-lower-grid .bottom-cta h2::after {
-  content: "";
-  display: block;
-  width: 106px;
-  height: 36px;
-  margin-top: 9px;
-  opacity: .46;
-  background: url("assets/ornaments/generated-variants/oak-divider-horizontal.webp?v=20260629a") left center / contain no-repeat;
-}
-
-.home-page .landing-lower-grid .bottom-cta p {
-  position: relative;
-  z-index: 1;
-  margin: 0 0 25px;
-  color: rgba(246,241,230,.7);
-  font-size: 15px;
-  line-height: 1.62;
-}
-
-.home-page .landing-lower-grid .bottom-cta-btns {
-  position: relative;
-  z-index: 1;
-  display: grid;
-  grid-template-columns: 1fr;
-  width: 100%;
-  gap: 9px;
-  margin-top: auto;
-}
-
-.home-page .landing-lower-grid .bottom-cta .btn {
-  width: 100%;
-  text-align: center;
-}
-
-
 @media (max-width: 920px) {
   .home-page .wrap {
     width: calc(100% - 32px);
   }
 
-  .home-page .landing-lower-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .home-page .landing-lower-grid .bottom-cta {
-    max-width: 560px;
-  }
-
-
 }
 
 @media (max-width: 700px) {
-
 
   .home-page .recent-panel {
     padding: 25px 22px 28px;
@@ -1112,13 +931,8 @@ body.home-page {
     gap: 5px 9px;
   }
 
-  .home-page .recent-region,
-  .home-page .recent-date {
+  .home-page .recent-region {
     grid-column: 2;
-  }
-
-  .home-page .recent-date {
-    display: none;
   }
 
   .home-page .recent-panel .recent-cat {
@@ -1200,13 +1014,8 @@ body.home-page {
     gap: 5px 9px;
   }
 
-  .home-page .recent-region,
-  .home-page .recent-date {
+  .home-page .recent-region {
     grid-column: 2;
-  }
-
-  .home-page .recent-date {
-    display: none;
   }
 
   .home-page .recent-panel .recent-cat {

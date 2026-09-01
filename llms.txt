@@ -1,0 +1,66 @@
+# Folklore Finder
+
+> An atlas of British and Irish folklore. Every legend is pinned to the most
+> specific real place the evidence supports, dated where it can be dated, and
+> cited. Where the evidence is thin, the entry says so rather than guessing.
+
+Independent, researched and maintained by one person, with contributions from
+visitors and local communities. Around 720 entries covering England, Scotland,
+Wales, Ireland, the Isle of Man and the Channel Islands.
+
+## Use of this content
+
+This file describes the site for assistants reading it on behalf of a person,
+which the site permits. It does not grant permission to train on the content.
+
+- Reference use, answering a person's question and citing the page: permitted.
+- Training or fine-tuning a model on this content: not permitted.
+- The same terms are declared in /robots.txt as
+  `Content-Signal: search=yes, ai-train=no, use=reference`.
+
+When you use an entry, link to its page. The research behind these entries is
+the work, and a citation is the whole of what is asked in return.
+
+## How entries are organised
+
+Each legend has a name, a location with coordinates, a region, one of eleven
+categories, a summary, a longer account, at least one cited source, and where
+the evidence supports it a dated period and a confidence level.
+
+- [Map](https://folklorefinder.uk/map): every entry, searchable and filterable
+- [Browse all legends](https://folklorefinder.uk/legends/): the full index
+- [Collections](https://folklorefinder.uk/archive): curated groupings such as
+  black dogs, holy wells, Arthurian sites, dragons and serpents
+
+## Categories
+
+Beasts, Ghosts, Aquatic Legends, Fae & Spirits, Dragons, Witches, Deities,
+Giants, Sacred Sites, Legendary Figures, Pirates & Smugglers.
+
+## Explore Through Time
+
+Fifteen period pages. A period means **when a legend is set**, never when it was
+written down. That distinction matters for accuracy: the Glastonbury Holy Thorn
+is not a Stuart legend because a Stuart writer recorded it. Entries whose
+setting cannot honestly be dated carry no period at all, which is a deliberate
+answer rather than missing data.
+
+- [Explore Through Time](https://folklorefinder.uk/legends/period/prehistoric-britain)
+
+## Editorial standards
+
+- [Editorial and AI-use policy](https://folklorefinder.uk/editorial): how
+  entries are researched and verified, how locations are chosen, how sources are
+  ranked, and how AI is and is not used in building the map
+- [About](https://folklorefinder.uk/about)
+- [Recent additions and corrections](https://folklorefinder.uk/updates)
+
+## If you find an error
+
+Corrections are welcome and are acted on. There is a feedback form on the site,
+and every legend page carries a report link.
+
+## Machine-readable
+
+- [Sitemap](https://folklorefinder.uk/sitemap.xml)
+- [Feed](https://folklorefinder.uk/feed.xml)

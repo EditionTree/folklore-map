@@ -3,13 +3,29 @@
 // Loads legends.json lazily — only once the visitor actually interacts with
 // the field — so it costs nothing on the hundreds of pages that never use it.
 (function () {
-  var CATLABELS = {
-    beast: "Beasts", ghost: "Ghosts", water: "Aquatic Legends",
-    fairy: "Fae & Spirits", dragon: "Dragons", witch: "Witches",
-    deity: "Deities", giant: "Giants", location: "Sacred Sites",
-    hero: "Legendary Figures", pirate: "Pirates"
-  };
-  function catLabel(c) { return CATLABELS[c] || c || ""; }
+  // Scoring and category labels come from js/search-score.js, loaded just
+  // before this file. The local copies that used to live here had drifted:
+  // no period tier at all, and pirate still read "Pirates" months after
+  // js/categories.js renamed it "Pirates & Smugglers".
+  //
+  // FALLBACK exists because this file ships on 829 pages and must not break
+  // if Rocket Loader ever reorders the two scripts. It degrades recall to
+  // name, region and summary rather than failing the search box outright.
+  var FF = window.FF_SEARCH || null;
+  function catLabel(c) {
+    if (FF) return FF.catLabel(c);
+    return c || "";
+  }
+  function scoreOf(leg, q) {
+    if (FF) return FF.score(leg, q);
+    var name = String(leg.name || "").toLowerCase();
+    if (name === q) return 100;
+    if (name.indexOf(q) === 0) return 90;
+    if (name.indexOf(q) > -1) return 80;
+    if (String(leg.region || "").toLowerCase().indexOf(q) > -1) return 55;
+    if (String(leg.summary || "").toLowerCase().indexOf(q) > -1) return 25;
+    return 0;
+  }
 
   function slugify(name) {
     return (name || "")
@@ -46,22 +62,10 @@
   // Same scoring as the homepage hero search: strongest match per legend,
   // exact name > prefix > name > region > category > tag > summary.
   function scoreLegend(leg, q) {
-    var name = (leg.name || "").toLowerCase();
-    var region = (leg.region || "").toLowerCase();
-    var cat = catLabel(leg.category).toLowerCase();
-    var summary = (leg.summary || "").toLowerCase();
-    var tags = leg.tags || [];
+    var score = scoreOf(leg, q);
+    if (!score) return null;
 
-    var score = 0;
-    if (name === q) score = 100;
-    else if (name.indexOf(q) === 0) score = 80;
-    else if (name.indexOf(q) > -1) score = 60;
-    else if (region.indexOf(q) > -1) score = 45;
-    else if (cat.indexOf(q) > -1) score = 35;
-    else if (tags.some(function (t) { return t.toLowerCase().indexOf(q) > -1; })) score = 30;
-    else if (summary.indexOf(q) > -1) score = 15;
-    else return null;
-
+    // Secondary line shows where it sits: region · category.
     var parts = [];
     if (leg.region) parts.push(leg.region);
     if (catLabel(leg.category)) parts.push(catLabel(leg.category));

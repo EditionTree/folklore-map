@@ -136,7 +136,9 @@ CATEGORY_LABELS = {
     "giant":    "Giants",
     "location": "Sacred Sites",
     "hero":     "Legendary Figures",
-    "pirate":   "Pirates",
+    # Renamed 2026-08-23 in js/categories.js; this fourth copy was missed and
+    # still shipped "Pirates" into legends.json for nine days.
+    "pirate":   "Pirates & Smugglers",
 }
 
 # Pirate biographies are admitted deliberately. Wikipedia categories also

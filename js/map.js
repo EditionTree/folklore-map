@@ -550,26 +550,12 @@ function haversineKm(lat1, lng1, lat2, lng2) {
 // Cheap edit-distance check (not full Levenshtein) — good enough to catch a
 // single typo/transposition in a short word without the cost of a DP table
 // on every keystroke across hundreds of legend names.
-function closeMatch(a, b) {
-  if (a === b) return true;
-  if (Math.abs(a.length - b.length) > 1) return false;
-  let i = 0, j = 0, mismatches = 0;
-  while (i < a.length && j < b.length) {
-    if (a[i] === b[j]) { i++; j++; continue; }
-    mismatches++;
-    if (mismatches > 1) return false;
-    if (a.length > b.length) i++;
-    else if (b.length > a.length) j++;
-    else { i++; j++; }
-  }
-  return true;
-}
-
-function fuzzyWordMatch(query, text) {
-  if (!text) return false;
-  const words = text.toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
-  return words.some(w => w.length >= 4 && query.length >= 4 && closeMatch(query, w));
-}
+// closeMatch, fuzzyWordMatch and scoreLegend now live in js/search-score.js,
+// loaded before this file. They were duplicated here, in js/home.js and in
+// nav-search.js, and had drifted: only this copy ever learned about
+// period_slug. See that file's header.
+const closeMatch = (a, b) => FF_SEARCH.closeMatch(a, b);
+const fuzzyWordMatch = (q, text) => FF_SEARCH.fuzzyWordMatch(q, text);
 
 const LOCATION_RADIUS_KM = 40;
 
@@ -580,37 +566,11 @@ function findMatchingPlace(q) {
   });
 }
 
+// The map is the only caller with collection membership loaded, so it is the
+// only one that can score the collections tier.
 function scoreLegend(leg, q) {
-  const name = leg.name.toLowerCase();
-  const catLabel = (CATEGORIES[leg.category]?.label || leg.category || '').toLowerCase();
-  const region = (leg.region || '').toLowerCase();
-  const summary = (leg.summary || '').toLowerCase();
-  const tags = (leg.tags || []).map(t => t.toLowerCase());
-  const altNames = (leg.alt_names || []).map(n => n.toLowerCase());
-  const period = (leg.period || '').toLowerCase();
-  // The controlled Explore Through Time period, searchable in words rather
-  // than as a slug: 'stuart-britain' -> 'stuart britain', so a search for
-  // 'stuart' finds the 49 legends actually SET then. The free-text `period`
-  // above stays in the scoring: it mixes setting with when a legend was
-  // written down, so it matches things the slug cannot, and dropping it
-  // would lose the 231 entries that correctly have no slug at all.
-  const periodSlug = (leg.period_slug || '').replace(/-/g, ' ');
-  const tradition = (leg.cultural_tradition || '').toLowerCase();
-  const cols = (LEGEND_COLLECTIONS.get(leg.name) || []).map(c => c.title.toLowerCase());
-
-  if (name === q) return 100;
-  if (altNames.some(n => n === q)) return 95;
-  if (name.startsWith(q)) return 90;
-  if (name.includes(q)) return 80;
-  if (altNames.some(n => n.includes(q))) return 75;
-  if (tags.some(t => t === q || t.includes(q))) return 65;
-  if (catLabel.includes(q)) return 60;
-  if (region.includes(q)) return 55;
-  if (cols.some(c => c.includes(q))) return 45;
-  if (period.includes(q) || periodSlug.includes(q) || tradition.includes(q)) return 40;
-  if (summary.includes(q)) return 25;
-  if (fuzzyWordMatch(q, leg.name)) return 20;
-  return 0;
+  const cols = (LEGEND_COLLECTIONS.get(leg.name) || []).map(c => c.title);
+  return FF_SEARCH.score(leg, q, cols);
 }
 
 function handleSearch(query) {

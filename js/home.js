@@ -537,22 +537,12 @@
   let currentMatches = [];
 
   // Return {score, reason} for a legend against query q, or null if no match.
+  // Scoring lives in js/search-score.js, loaded before this file. The copy
+  // that used to be here had no period tier, so the homepage search could not
+  // find a legend by the era it is set in while the map could.
   function scoreLegend(leg, q){
-    const name = (leg.name || '').toLowerCase();
-    const region = (leg.region || '').toLowerCase();
-    const cat = catLabel(leg.category).toLowerCase();
-    const summary = (leg.summary || '').toLowerCase();
-    const tags = leg.tags || [];
-
-    let score = 0;
-    if (name === q) score = 100;
-    else if (name.startsWith(q)) score = 80;
-    else if (name.includes(q)) score = 60;
-    else if (region.includes(q)) score = 45;
-    else if (cat.includes(q)) score = 35;
-    else if (tags.some(t => t.toLowerCase().includes(q))) score = 30;
-    else if (summary.includes(q)) score = 15;
-    else return null;
+    const score = window.FF_SEARCH ? window.FF_SEARCH.score(leg, q) : 0;
+    if (!score) return null;
 
     // Secondary line shows where it sits: region · category.
     const parts = [];

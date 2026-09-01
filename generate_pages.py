@@ -497,7 +497,13 @@ def topnav_html(active=""):
     parts.append('</div>')
     parts.append(NAV_SEARCH_HTML)
     parts.append('</nav>')
-    parts.append('<script src="/nav-search.js?v=20260817b" defer></script>')
+    # search-score.js must execute BEFORE nav-search.js. data-cfasync="false"
+    # exempts both from Cloudflare Rocket Loader, which reorders scripts and
+    # would otherwise be free to run the consumer first. nav-search.js also
+    # falls back to a reduced scorer if the global is missing, so a reorder
+    # degrades recall instead of breaking search on 829 pages.
+    parts.append('<script src="/js/search-score.js?v=%s" data-cfasync="false"></script>' % SEARCH_SCORE_V)
+    parts.append('<script src="/nav-search.js?v=20260901a" data-cfasync="false" defer></script>')
     return "".join(parts)
 
 
@@ -789,6 +795,10 @@ def responsive_hero(image_path, alt, sizes, img_attrs=""):
 # and medieval centuries, cooling again into the industrial and modern ones.
 # Keep these muted. They are spent on a 3px rule, an intro edge and one nav
 # pill, never on a fill.
+# Cache key for js/search-score.js. Assets are immutable for a year, so bump
+# this forward whenever that file changes.
+SEARCH_SCORE_V = "20260901a"
+
 PERIOD_ACCENTS = {
     "prehistoric-britain": "#4a3820",   # turned earth
     "bronze-age":          "#6b5230",   # cast bronze

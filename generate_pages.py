@@ -1497,6 +1497,83 @@ SOURCE_TIERS = {
     "tracymonger.wordpress.com": "popular",
     "what-when-how.com": "popular",
     "worldwidewriter.co.uk": "popular",
+    # Added 2026-09-02. The research agent flagged that legitimate heritage hosts
+    # were counting as unrecognised and inflating sourcing_audit.py, which imports
+    # legend_sources from this file and so shares this one list. A sweep of every
+    # host cited in legends.json found 276 unrecognised across 369 citations.
+    # Classified below: national bodies, Historic Environment Records, museums,
+    # manuscript and record archives, academic repositories and specialist
+    # journals. The 216 hosts cited only once are deliberately left unrecognised;
+    # most are personal blogs and one-off pages, and flagging them is the audit
+    # working as intended.
+    # primary
+    "codecs.vanhamel.nl": "primary",  # Celtic manuscript and text database, A. G. van Hamel Foundation
+    "cudl.lib.cam.ac.uk": "primary",  # Cambridge Digital Library
+    "digital.nls.uk": "primary",  # National Library of Scotland digital collections
+    "discovery.nationalarchives.gov.uk": "primary",  # The National Archives catalogue
+    "searcharchives.bl.uk": "primary",  # British Library archives
+    "archives.collections.ed.ac.uk": "primary",  # University of Edinburgh archives
+    "ebba.english.ucsb.edu": "primary",  # English Broadside Ballad Archive, UCSB
+    "romaninscriptionsofbritain.org": "primary",  # Roman Inscriptions of Britain
+    "ancienttexts.org": "primary",  # primary text archive
+    "maryjones.us": "primary",  # Celtic Literature Collective, translated primary texts
+    "balladindex.org": "primary",  # Traditional Ballad Index
+    "academic.oup.com": "primary",  # Oxford University Press journals
+    "ria.ie": "primary",  # Royal Irish Academy
+    "scholarworks.iu.edu": "primary",  # Indiana University research repository
+    "pure.ulster.ac.uk": "primary",  # Ulster University research repository
+    "medievalsourcesbibliography.org": "primary",  # Medieval Sources Bibliography
+    "researchgate.net": "primary",  # academic paper repository
+    "ncbi.nlm.nih.gov": "primary",  # PubMed Central
+    "wikisource.org": "primary",  # bare host; en.wikisource.org was already listed but the bare form was not
+    # heritage
+    "historicenvironment.scot": "heritage",  # Historic Environment Scotland, the national body
+    "hrp.org.uk": "heritage",  # Historic Royal Palaces
+    "heritage.norfolk.gov.uk": "heritage",  # Norfolk Historic Environment Record
+    "archives.norfolk.gov.uk": "heritage",  # Norfolk Record Office
+    "heritage.dorsetcouncil.gov.uk": "heritage",  # Dorset Historic Environment Record
+    "exmoorher.co.uk": "heritage",  # Exmoor Historic Environment Record
+    "historicplacenames.rcahmw.gov.uk": "heritage",  # Royal Commission on the Ancient and Historical Monuments of Wales
+    "heneb.org.uk": "heritage",  # Welsh archaeological trusts
+    "britishlistedbuildings.co.uk": "heritage",  # listed building records
+    "nts.org.uk": "heritage",  # National Trust for Scotland
+    "rmg.co.uk": "heritage",  # Royal Museums Greenwich
+    "romanbaths.co.uk": "heritage",  # Roman Baths, Bath and North East Somerset Council
+    "orkneymuseum.wordpress.com": "heritage",  # Orkney Museum
+    "culturevannin.im": "heritage",  # Culture Vannin, the Manx national heritage body
+    "isleofmanher.im": "heritage",  # Isle of Man Historic Environment Record
+    "peelheritagetrust.net": "heritage",  # Peel Heritage Trust, Isle of Man
+    "rollrightstones.co.uk": "heritage",  # the trust that owns and manages the Rollright Stones
+    "research.hgt.org.uk": "heritage",  # Hampshire Gardens Trust research
+    "hillforts.arch.ox.ac.uk": "heritage",  # Atlas of Hillforts, University of Oxford
+    # encyclopedic
+    "oxforddnb.com": "encyclopedic",  # Oxford Dictionary of National Biography
+    "biography.wales": "encyclopedic",  # Dictionary of Welsh Biography, National Library of Wales
+    "oed.com": "encyclopedic",  # Oxford English Dictionary
+    "dsl.ac.uk": "encyclopedic",  # Dictionary of the Scots Language
+    # secondary
+    "isfnr.org": "secondary",  # International Society for Folk Narrative Research
+    "medievalists.net": "secondary",  # medieval studies news and scholarship
+    "northernearth.co.uk": "secondary",  # Northern Earth, earth-mysteries journal
+    "thebottleimp.org.uk": "secondary",  # Association for Scottish Literature journal
+    "psi-encyclopedia.spr.ac.uk": "secondary",  # Society for Psychical Research encyclopedia
+    "megalithic.co.uk": "secondary",  # The Megalithic Portal, long-running site gazetteer
+    "bernarddeacon.com": "secondary",  # Bernard Deacon, Cornish historian
+    "carmichaelwatson.blogspot.com": "secondary",  # Carmichael Watson Project, University of Edinburgh
+    "howardwilliamsblog.wordpress.com": "secondary",  # Howard Williams, professor of archaeology
+    "stephenrgordon.wordpress.com": "secondary",  # Stephen Gordon, researcher on revenants and magic
+    "britishpilgrimage.org": "secondary",  # British Pilgrimage Trust
+    "ancient-yew.org": "secondary",  # Ancient Yew Group
+    "foxearth.org.uk": "secondary",  # Foxearth and District Local History Society
+    "wirralhistory.uk": "secondary",  # Wirral local history
+    "historyofchildwall.co.uk": "secondary",  # Childwall local history
+    "witchtrials.co.uk": "secondary",  # witch-trial research site
+    "tam-lin.org": "secondary",  # Tam Lin Balladry, scholarly ballad resource
+    "historyofinformation.com": "secondary",  # Jeremy Norman, history of information
+    # popular
+    "advertiserandtimes.co.uk": "popular",  # local newspaper
+    "reynolds-news.com": "popular",  # news site
+    "scotclans.com": "popular",  # clan and heritage general-interest site
 }
 TIER_LABELS = {
     "primary": "primary record",

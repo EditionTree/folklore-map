@@ -14,8 +14,8 @@
   <url><loc>https://folklorefinder.uk/legends/category/ghost</loc><lastmod>2026-09-02</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/category/hero</loc><lastmod>2026-09-02</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/category/fairy</loc><lastmod>2026-09-02</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/category/water</loc><lastmod>2026-09-02</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/category/beast</loc><lastmod>2026-09-02</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/category/water</loc><lastmod>2026-09-02</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/category/deity</loc><lastmod>2026-09-02</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/category/dragon</loc><lastmod>2026-09-02</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/category/pirate</loc><lastmod>2026-09-02</lastmod><priority>0.6</priority></url>
@@ -44,8 +44,8 @@
   <url><loc>https://folklorefinder.uk/legends/region/shetland</loc><lastmod>2026-09-02</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/merseyside</loc><lastmod>2026-09-02</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/devon</loc><lastmod>2026-09-02</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/argyll</loc><lastmod>2026-09-02</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/london</loc><lastmod>2026-09-02</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/argyll</loc><lastmod>2026-09-02</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/suffolk</loc><lastmod>2026-09-02</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/sussex</loc><lastmod>2026-09-02</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/powys</loc><lastmod>2026-09-02</lastmod><priority>0.6</priority></url>
@@ -397,7 +397,7 @@
     <image:title>Bessie Dunlop pauses on an Ayrshire path as the ghostly Tom Reid stands in the mist near Dalry</image:title>
     <image:caption>A visual interpretation of Bessie Dunlop meeting Tom Reid near Dalry</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/bessie-millie-of-stromness</loc><lastmod>2026-08-17</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/bessie-millie-of-stromness</loc><lastmod>2026-09-02</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/bessie-millie-of-stromness-hero.jpg</image:loc>
     <image:title>Bessie Millie offers a coin and knotted cord to sailors above Stromness harbour under an Orkney sky</image:title>
@@ -1099,7 +1099,7 @@
     <image:title>Deirdre and Naoise in exile above a cold Argyll sea loch</image:title>
     <image:caption>A visual interpretation of Deirdre and Naoise in Scottish exile</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/denbigh-dragon</loc><lastmod>2026-08-20</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/denbigh-dragon</loc><lastmod>2026-09-02</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/denbigh-dragon-hero.jpg</image:loc>
     <image:title>Sion y Bodiau facing the Denbigh Dragon outside the castle great hall in driving rain</image:title>
@@ -1513,7 +1513,7 @@
     <image:title>Furbaide Ferbend with a sling on a misty Shannon island below Corn Hill</image:title>
     <image:caption>A visual interpretation of Furbaide Ferbend&#x27;s revenge</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/garman-garbh-of-loch-garman</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/garman-garbh-of-loch-garman</loc><lastmod>2026-09-02</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/garman-garbh-of-loch-garman-hero.jpg</image:loc>
     <image:title>A cinematic aquatic folklore image of Garman Garbh of Loch Garman, shown as the central water spirit, lake beast, sea creature, or drowned-place legend from Wexford, County Wexford, Ireland</image:title>
@@ -1531,6 +1531,7 @@
     <image:title>Gearóid Iarla rides a white horse with silver shoes across the moonlit surface of Lough Gur</image:title>
     <image:caption>A visual interpretation of Gearóid Iarla&#x27;s seven-year ride across Lough Gur</image:caption>
   </image:image></url>
+  <url><loc>https://folklorefinder.uk/legends/gef-the-talking-mongoose</loc><lastmod>2026-09-02</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/gelert</loc><lastmod>2026-08-17</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/gelert-hero.jpg</image:loc>
@@ -3843,6 +3844,8 @@
     <image:title>A cinematic ghost folklore image of The Ratman of Southend, shown as the central apparition or haunting from Essex</image:title>
     <image:caption>A visual interpretation of The Ratman of Southend</image:caption>
   </image:image></url>
+  <url><loc>https://folklorefinder.uk/legends/the-ravens-of-the-tower-of-london</loc><lastmod>2026-09-02</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/the-screaming-skull-of-wardley-hall</loc><lastmod>2026-09-02</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/the-selkie</loc><lastmod>2026-08-25</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/the-selkie-hero.jpg</image:loc>
@@ -3891,7 +3894,7 @@
     <image:title>A hare fleeing across Ditchling Common with a dark figure on the heath behind</image:title>
     <image:caption>A visual interpretation of the Sussex legend</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/the-witch-of-east-somerton</loc><lastmod>2026-08-27</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/the-witch-of-east-somerton</loc><lastmod>2026-09-02</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/the-witch-of-east-somerton-hero.jpg</image:loc>
     <image:title>A great oak growing through the nave of St Mary&#x27;s ruined church at East Somerton</image:title>

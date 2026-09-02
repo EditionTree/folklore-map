@@ -4,8 +4,32 @@
   <link>https://folklorefinder.uk/</link>
   <description>Recently added myths, legends, ghosts and folklore from across Britain and Ireland.</description>
   <language>en-gb</language>
-  <lastBuildDate>Wed, 02 Sep 2026 20:49:28 GMT</lastBuildDate>
+  <lastBuildDate>Wed, 02 Sep 2026 20:59:16 GMT</lastBuildDate>
   <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://folklorefinder.uk/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Gef the Talking Mongoose</title>
+    <link>https://folklorefinder.uk/legends/gef-the-talking-mongoose</link>
+    <guid isPermaLink="true">https://folklorefinder.uk/legends/gef-the-talking-mongoose</guid>
+    <pubDate>Wed, 02 Sep 2026 12:00:00 GMT</pubDate>
+    <category>Beasts</category>
+    <description>From 1931 the Irving family of Doarlish Cashen, a lonely farm above Dalby on the Isle of Man, said they shared their house with a talking mongoose who…</description>
+  </item>
+  <item>
+    <title>The Ravens of the Tower of London</title>
+    <link>https://folklorefinder.uk/legends/the-ravens-of-the-tower-of-london</link>
+    <guid isPermaLink="true">https://folklorefinder.uk/legends/the-ravens-of-the-tower-of-london</guid>
+    <pubDate>Wed, 02 Sep 2026 12:00:00 GMT</pubDate>
+    <category>Sacred Sites</category>
+    <description>Ravens are kept at the Tower of London under the care of a Yeoman Warder titled the Ravenmaster, and tradition holds that if they ever leave, the Crown…</description>
+  </item>
+  <item>
+    <title>The Screaming Skull of Wardley Hall</title>
+    <link>https://folklorefinder.uk/legends/the-screaming-skull-of-wardley-hall</link>
+    <guid isPermaLink="true">https://folklorefinder.uk/legends/the-screaming-skull-of-wardley-hall</guid>
+    <pubDate>Wed, 02 Sep 2026 12:00:00 GMT</pubDate>
+    <category>Ghosts</category>
+    <description>A human skull kept in a niche on the staircase at Wardley Hall is said to answer with storms and uproar whenever anyone tries to remove or bury it.…</description>
+  </item>
   <item>
     <title>Mother Redcap&#x27;s</title>
     <link>https://folklorefinder.uk/legends/mother-redcap-s</link>
@@ -221,29 +245,5 @@
     <pubDate>Wed, 05 Aug 2026 12:00:00 GMT</pubDate>
     <category>Deities</category>
     <description>A gold-sheathed idol once stood on this hill, consulted like a Delphic oracle by pagan Ulster kings, until a devil&#x27;s voice was said to speak from the…</description>
-  </item>
-  <item>
-    <title>Cloughmore Stone</title>
-    <link>https://folklorefinder.uk/legends/cloughmore-stone</link>
-    <guid isPermaLink="true">https://folklorefinder.uk/legends/cloughmore-stone</guid>
-    <pubDate>Wed, 05 Aug 2026 12:00:00 GMT</pubDate>
-    <category>Giants</category>
-    <description>A 50-tonne boulder Finn McCool supposedly hurled clean across Carlingford Lough at a rival giant, gouging a &#x27;wishing chair&#x27; where it landed above…</description>
-  </item>
-  <item>
-    <title>Cribarth, the Sleeping Giant</title>
-    <link>https://folklorefinder.uk/legends/cribarth-the-sleeping-giant</link>
-    <guid isPermaLink="true">https://folklorefinder.uk/legends/cribarth-the-sleeping-giant</guid>
-    <pubDate>Wed, 05 Aug 2026 12:00:00 GMT</pubDate>
-    <category>Giants</category>
-    <description>A mountain silhouette above the Tawe Valley is said to be a giant named Yscydion, lying asleep until Arthur returns and calls him to defend his people.</description>
-  </item>
-  <item>
-    <title>Culver Hole and the Smugglers of Port Eynon</title>
-    <link>https://folklorefinder.uk/legends/culver-hole-and-the-smugglers-of-port-eynon</link>
-    <guid isPermaLink="true">https://folklorefinder.uk/legends/culver-hole-and-the-smugglers-of-port-eynon</guid>
-    <pubDate>Wed, 05 Aug 2026 12:00:00 GMT</pubDate>
-    <category>Pirates &amp; Smugglers</category>
-    <description>A stone-walled sea cave on the Gower coast was said to be smuggler John Lucas&#x27;s contraband store, reached by a tunnel wide enough to ride a horse through.</description>
   </item>
 </channel></rss>

@@ -1,6 +1,6 @@
 {
-  "generated": "2026-09-02T19:28:41.085819Z",
-  "total": 720,
+  "generated": "2026-09-02T20:58:52.987517Z",
+  "total": 723,
   "categories": {
     "beast": "Beasts",
     "ghost": "Ghosts",
@@ -1360,7 +1360,7 @@
         "trickery",
         "coast"
       ],
-      "detail": "Bessie Millie, also spelled Bessie Miller, was a celebrated wind-seller who plied her trade from Brinkies Brae, the hillside overlooking Stromness harbour in Orkney, during the late eighteenth and early nineteenth centuries. For the sum of sixpence, she would offer prayers and perform a little 'artistic flim-flam' to call up a favourable wind for sailors about to embark on their voyages. Fishermen and mariners would climb the brae to her cottage before setting sail, paying for her intercession as routinely as they would provision their ships.\n\nIn 1814, Sir Walter Scott visited Stromness during his tour of the Northern Isles and called on Bessie in her home. By then she was extremely old, reportedly over a hundred years of age, but she was sharp enough to tell him stories of the pirate John Gow, whom she had briefly known as a young woman many decades earlier. Scott was so taken with her character that she became the inspiration for Norna of the Fitful Head in his 1822 novel 'The Pirate.'\n\nBessie's profession was not unique to Orkney, wind-selling by cunning women is documented across the Northern Isles and Scandinavia, but her longevity, her connection to both piracy and literature, and the vivid specificity of her sixpenny trade have made her the best-remembered practitioner. As a young witch, she was reportedly hired by Orcadian smugglers to curse a revenue cutter, frightening the government sailors into staying in port.",
+      "detail": "Bessie Millie, also spelled Bessie Miller, sold fair winds from her cottage on Brinkies Brae, the hillside above Stromness harbour in Orkney, through the late eighteenth century and into the early nineteenth. For sixpence she would, as she explained it, boil her kettle and give the ship 'the advantage of her prayers', disclaiming any unlawful art even as fishermen and mariners climbed the brae before every voyage to pay for her intercession, tribute offered, by one visitor's account, 'with a feeling betwixt jest and earnest'. The wind she promised always came, though sailors sometimes had to wait a good while for it.\n\nSir Walter Scott called on her in 1814 during his tour of the Northern Isles and left the fullest description of her that survives. She was, he wrote, 'withered and dried up like a mummy', with a clay-coloured kerchief, pale blue eyes, rapid speech, and a nose and chin that 'almost met together', an appearance he likened to Hecate. She was reportedly nearly a hundred years old by then. Scott drew on her for Norna of the Fitful Head in his 1822 novel The Pirate, and in the same book modelled Captain Cleveland on another real Stromness figure, the pirate John Gow, whose short career had ended on the gallows in 1725, so two of the novel's most vivid characters both had their roots in the one small Orkney town.\n\nWind-selling by cunning women is documented across the Northern Isles and Scandinavia, so Bessie was not unique in her trade, but her longevity and the vivid specificity of her sixpenny kettle-boiling have made her the best remembered practitioner. Brinkies Brae still stands above Stromness harbour today, the ground she plied her trade from for the best part of a century.",
       "sources": [
         "https://www.orkneyology.com/brinkies-brae.html",
         "https://frontiersmagazine.org/bessie-millie-stromnesss-first-renewables-entrepreneur/",
@@ -4586,7 +4586,7 @@
         "wales",
         "denbighshire"
       ],
-      "detail": "According to the folklore attached to Denbigh Castle, the great hall of the castle was once the lair of a dragon that had taken over the town, terrorising its people. The task of dealing with the beast fell to a knight remembered in some versions as John Salusbury of Lleweni, a documented Denbighshire gentry figure who died in 1547 or 1549, but in the oldest form of the tale as Sion y Bodiau ('John of the Thumbs'), a giant of a man said to have eight fingers and two thumbs on each hand.\n\nWhen Sion confronted the dragon as it emerged from the hall, the two fought for hours, sword against claw and scale, with neither giving ground. The turning point came when Sion spotted two bare patches of unscaled skin at the base of the dragon's wings; waiting for the creature to rear up and spread its wings to attack, he drove his broadsword into one of these unprotected spots and killed it.\n\nRiding back into the town with the dragon's severed head held aloft on his sword, Sion was met by townsfolk who had been hiding from the beast. Their relieved cry, 'Dim bych!', Welsh for 'No dragon!', is said in this telling to be the origin of the town's name, Dinbych (Denbigh), a folk etymology that has helped keep the story, and the dragon, alive in local memory for centuries. No early written text for the dragon tale itself has been located; it appears to be a folk giant-slayer motif that became attached, at some later point, to the real Salusbury family name.",
+      "detail": "According to the folklore attached to Denbigh Castle, the great hall of the castle was once the lair of a dragon that had put the town under siege, dropping from the sky to prey on livestock and people alike. The task of dealing with the beast fell to a knight remembered in some versions as John Salusbury of Lleweni, a documented Denbighshire gentry figure, but in the oldest form of the tale as Sion y Bodiau ('John of the Thumbs'), a giant of a man said to have eight fingers and two thumbs on each hand. The nickname actually belonged to two Salusburys, an uncle who died in 1547 or 1549 and his nephew who died in 1578, and the dragon story has been told of both, so which Sion is meant depends on which telling is followed.\n\nSion rode to the castle in full armour on a great shire horse, carrying a broadsword built for a giant's grip. Onlookers were said to have heard the awful sounds of battle and seen sparks and arcs of fire thrown off by the dragon's breath as the fight dragged on for hours, sword against claw and scale, neither side giving ground. The turning point came when Sion spotted two bare patches of unscaled skin at the base of the dragon's wings; waiting for the creature to rear up and spread its wings to attack, he drove his broadsword into one of the unprotected spots and, after several more blows, cut off its head.\n\nRiding back into the town with the dragon's severed head held aloft on his sword, Sion was met by townsfolk who had been hiding from the beast. Their relieved cry, 'Dim bych!', Welsh for 'No dragon!', is said in this telling to be the origin of the town's name, Dinbych (Denbigh), a folk etymology that has helped keep the story, and the dragon, alive in local memory for centuries. No early written text for the dragon tale itself has been located; it appears to be a folk giant-slayer motif that became attached, at some later point, to the real Salusbury family name.",
       "period": "Some tellings attach the giant-slayer to John Salusbury of Lleweni (d. 1578), though the 'oldest form' of the tale, which names the giant Sion y Bodiau, cannot itself be firmly dated",
       "sources": [
         "https://www.mythslegendsodditiesnorth-east-wales.co.uk/denbigh-dragon",
@@ -5209,10 +5209,11 @@
       ],
       "historical_setting": "St Benet's Abbey at Horning, founded in the 11th century by King Cnut (Canute) and endowed with the manor of Ludham, gives the legend's chosen destination (the dragon vanishing into the abbey's vaults) a real, dateable medieval anchor, even though the dragon-tale manuscript itself is undated",
       "cultural_tradition": "East Anglian dragon-lore, part of the same regional tradition as Black Shuck, the Bures dragon, and other Norfolk 'worm' legends; some commentators connect these tales to smuggling activity along the Broads (a way of keeping people away from tunnels/hiding places at night)",
-      "origin_type": "oral-tradition",
-      "dating_confidence": "medium",
+      "origin_type": "historical-event",
+      "dating_confidence": "high",
       "earliest_record": "The Norfolk Chronicle, 28 September 1782, reports that 'on Monday the 16th, a snake of enormous size was destroyed at Ludham... by Jasper Andrews'. The animal was 5ft 8in long and nearly 3ft in circumference, with horn-like protrusions on its head, and was found living in underground burrows around the village.",
-      "period": "Contemporary newspaper report, 1782; the fuller dragon-in-the-tunnels/St Benet's Abbey narrative is undated and may be older oral tradition later fused with, or partly inspired by, this real 1782 incident."
+      "period": "Contemporary newspaper report, 1782; the fuller dragon-in-the-tunnels/St Benet's Abbey narrative is undated and may be older oral tradition later fused with, or partly inspired by, this real 1782 incident.",
+      "period_slug": "georgian-britain"
     },
     {
       "name": "Dragon of Mordiford",
@@ -6500,7 +6501,7 @@
         "celtic"
       ],
       "date_added": "2026-06-09",
-      "detail": "Loch Garman, the Irish name for Wexford and its harbour, carries one of the eponymous origin-legends gathered in the medieval Dindshenchas, the great Irish lore of place-names. In the tale a magical well or spring on the plain beside the River Slaney must be kept covered, for if it is neglected it will overflow and drown the land. It is left open (in some tellings by a careless woman, in others amid the distraction of a great assembly), and the waters burst forth across the plain and drown a man named Garman; the new lake is named Loch Garman after him.\n\nA second strand of the tradition makes Garman a thief, Garman Glas, who steals the queen's golden diadem during the Beltane gathering and is pursued and drowned in the rising waters as his punishment. Either way the legend belongs to the distinctively Irish genre of the dindshenchas, in which the landscape itself is read as a memorial, every lough, hill and ford carrying the name and the fate of someone out of the mythic past. In Garman, the very harbour of Wexford remembers a drowning.",
+      "detail": "Loch Garman, the Irish name for Wexford and its harbour, carries one of the eponymous origin legends gathered in the Dindshenchas, the medieval Irish lore that explains the country's place-names through the fates of the people behind them. The Metrical Dindshenchas names the man as Garman mac Bomma Licce, a warrior in the household of King Cathair who, during a feast at which the king's retinue had drunk itself senseless, stole a golden ornament, a 'mind óir', belonging to the court. He fled south toward the river Slaney with the king's men in pursuit and was run to ground beside a well on the plain.\n\nForced into the water by his pursuers, Garman triggered whatever power lay beneath the spring: it burst forth 'from rock to sea', in the poem's own words, flooding the plain and drowning him where he stood. The new lake that formed took his name, Loch Garman, and other retellings vary the detail, some placing the theft at a Beltane assembly or naming the stolen object a queen's diadem, but the shape of the story stays constant: a theft, a chase, and a lake born from a death.\n\nThe legend belongs to the distinctively Irish genre of the dindshenchas, in which the landscape itself is read as a memorial, every lough, hill and ford carrying the name and fate of someone out of the mythic past. In Garman, the very harbour of Wexford still remembers a drowning.",
       "pronunciation": "GAR-mun GAR-av",
       "sources": [
         "https://ianmiddleton.co.uk/mysterious-ireland-part-1-leinster/",
@@ -6569,6 +6570,31 @@
       "origin_type": "historical-event",
       "dating_confidence": "medium",
       "period_slug": "medieval-britain"
+    },
+    {
+      "name": "Gef the Talking Mongoose",
+      "lat": 54.1764,
+      "lng": -4.7264,
+      "category": "beast",
+      "region": "Dalby, Isle of Man",
+      "summary": "From 1931 the Irving family of Doarlish Cashen, a lonely farm above Dalby on the Isle of Man, said they shared their house with a talking mongoose who called himself Gef. He scratched behind the panelling, sang, swore, ran errands and reported back what the neighbours were saying. The case drew the psychical researcher Harry Price and became the strangest British newspaper sensation of the 1930s.",
+      "source": "https://en.wikipedia.org/wiki/Gef",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Gef",
+        "https://culturevannin.im/watchlisten/videos/gef-the-dalby-spook-665872/",
+        "https://culturevannin.im/watchlisten/videos/remembering-the-dalby-spook-679639/"
+      ],
+      "date_added": "2026-09-02",
+      "tags": [
+        "haunting",
+        "trickery",
+        "isle-of-man"
+      ],
+      "detail": "Doarlish Cashen was a stone farmhouse high on the slope above Dalby, exposed, remote and without electricity, where James Irving farmed with his wife Margaret and their daughter Voirrey. In the autumn of 1931 the family began to hear scratching and rustling behind the matchboard panelling of the walls. Within months the noises had become a voice, and the voice had a name and a biography. He was Gef, born in India in 1852, a mongoose, and by his own account an extra clever mongoose.\n\nWhat made the case famous was how domestic it became. Gef stayed for years. He killed rabbits and left them for the family, rode the bus to Peel to gather gossip and reported it back, screamed abuse at visitors he disliked and sang hymns. James Irving kept a detailed diary of all of it. The Manx press took the story up, then the London papers, and Gef became known across the island as the Dalby Spook.\n\nThe investigators arrived in 1935. Harry Price, the best known psychical researcher in Britain, came with Richard Lambert, editor of the BBC magazine The Listener, and the two published The Haunting of Cashen's Gap in 1936. Neither of them heard Gef. Hair said to be his went to Julian Huxley and then to the naturalist F. Martin Duncan, who identified it as dog hair, probably from the family sheepdog Mona. Voirrey Irving, a shy girl of thirteen when it began, was widely suspected of ventriloquism and denied it for the rest of her life. The farmhouse was pulled down in the early 1970s and nothing of it stands above ground, so the location shown here is the farm's recorded position on the slope above Dalby rather than a surveyed footprint. The case has never been satisfactorily explained and has never quite gone away.",
+      "period": "The reported events run from autumn 1931 to about 1937, with the Price and Lambert investigation in 1935",
+      "period_slug": "modern-folklore",
+      "origin_type": "historical-event",
+      "dating_confidence": "high"
     },
     {
       "name": "Gelert",
@@ -9033,9 +9059,10 @@
         "https://www.mysteriousbritain.co.uk/folklore/the-kelpie-of-loch-garve/",
         "https://folklorescotland.com/the-kelpies-chimney/"
       ],
-      "cultural_tradition": "Highland Scottish kelpie and water-horse tradition, associated with Loch Garve in Ross-shire.",
+      "cultural_tradition": "Highland Gaelic water horse belief, told here of an each uisge rather than a lowland kelpie",
       "origin_type": "oral-tradition",
-      "dating_confidence": "low"
+      "dating_confidence": "medium",
+      "earliest_record": "Otta F. Swire, The Highlands and Their Legends (Oliver and Boyd, 1963), which appears to be the earliest printed version of the tale of the kelpie and the mason"
     },
     {
       "name": "Kilkenny Witch Trials",
@@ -10800,7 +10827,8 @@
       "sources": [
         "https://scotlands-stories.com/macphie-black-dog/",
         "https://hiddenscotland.com/journal/the-fairies-of-jura-macphies-black-dog/",
-        "https://discoverhighlandsandislands.scot/en/story/colonsay-cave-folklore"
+        "https://discoverhighlandsandislands.scot/en/story/colonsay-cave-folklore",
+        "https://www.gutenberg.org/files/67609/67609-h/67609-h.htm"
       ],
       "date_added": "2026-06-17",
       "tags": [
@@ -10811,7 +10839,11 @@
         "island",
         "death-omen"
       ],
-      "detail": "The Macphie (MacDhubhsith) clan were the hereditary lords of Colonsay and, by clan tradition, hereditary keepers of the records of the Lords of the Isles, regarded in island tradition as almost magical protectors of their people. The principal legend involves the last great Macphie laird, who on the third day of a failed hunting voyage found a jet-black puppy, its coat dark as ink, sitting patiently in his boat without having been called or placed there. Macphie took it as an omen, shouting 'The black dog's day is growing near!' The seas calmed and the wind turned favourable; the party sailed to Jura for the hunt.\n\nThat night the men took shelter in a cave, feasting and boasting around the fire while the black dog slept at the laird's feet. When daylight came, Macphie found every man in his party dead. No cause was given, no enemy identified, only Macphie walked out of the cave alive, and neither dog nor men were seen again. The tale passed into proverbial use across the west Highlands: 'The black dog's day will come yet' is recorded as an Argyll saying for one now despised who will eventually prove useful, or, depending on the teller, one whose reckoning is merely deferred.\n\nA separate cave tradition on Colonsay concerns another desperate Macphie laird who fled his enemies the MacNeills and hid in the Slochd dubh Mhic a Phi (MacPhee's Dark Cave), placing his three hounds at the sea entrance and cutting off the heads of each MacNeill who crawled through. Together these legends give Colonsay a body of clan-specific supernatural folklore that is unusually well documented for the Highlands and Islands."
+      "detail": "The Macphie (MacDhubhsith) clan were the hereditary lords of Colonsay and, by clan tradition, hereditary keepers of the records of the Lords of the Isles, regarded in island tradition as almost magical protectors of their people. The principal legend involves the last great Macphie laird, who on the third day of a failed hunting voyage found a jet-black puppy, its coat dark as ink, sitting patiently in his boat without having been called or placed there. Macphie took it as an omen, shouting 'The black dog's day is growing near!' The seas calmed and the wind turned favourable; the party sailed to Jura for the hunt.\n\nThat night the men took shelter in a cave, feasting and boasting around the fire while the black dog slept at the laird's feet. When daylight came, Macphie found every man in his party dead. No cause was given, no enemy identified, only Macphie walked out of the cave alive, and neither dog nor men were seen again. The tale passed into proverbial use across the west Highlands: 'The black dog's day will come yet' is recorded as an Argyll saying for one now despised who will eventually prove useful, or, depending on the teller, one whose reckoning is merely deferred.\n\nA separate cave tradition on Colonsay concerns another desperate Macphie laird who fled his enemies the MacNeills and hid in the Slochd dubh Mhic a Phi (MacPhee's Dark Cave), placing his three hounds at the sea entrance and cutting off the heads of each MacNeill who crawled through. Together these legends give Colonsay a body of clan-specific supernatural folklore that is unusually well documented for the Highlands and Islands.",
+      "earliest_record": "Collected by the Rev. John Gregorson Campbell and printed as MacPhie's Black Dog in the later nineteenth century, in the Waifs and Strays of Celtic Tradition series of Argyllshire material",
+      "cultural_tradition": "Argyll Gaelic tradition of the MacPhee or MacDuffie of Colonsay, a family whose name has been read as son of the dark fairy",
+      "origin_type": "oral-tradition",
+      "dating_confidence": "medium"
     },
     {
       "name": "Madame's Blow-well",
@@ -11936,13 +11968,16 @@
       "detail": "The house went by several names over the years, among them the Halfway House, the White House and Seabank Nook, but the one that stuck came from the red hood or cap its keeper was said to wear. She is remembered as a Cheshire woman of pleasant manner and formidable competence, trusted with the earnings of men who had nowhere safe to put them.\n\nThe hiding places were not invented. When the building was worked on in 1888 the owner found a large cellar under the yard, reached through flagstones and screened by heaps of coal and manure, along with smaller cavities in the walls, one of them just big enough to take a small man. The defences were built into the fabric by someone who expected to need them.\n\nThe press gang side of it is grounded too. Men rowed ashore near the Red Noses and lay up in the sandhills until their ships had sailed, and the parish register records the ones who drowned trying, among them William Evans in 1762.\n\nThe tunnels are the part that belongs to legend. They are always said to reach somewhere satisfying and have never been traced. The house came down in the 1960s and a nursing home was put up on the ground in 1999.",
       "period": "The building dates from 1595 and the smuggling and press gang traditions belong to the eighteenth and early nineteenth centuries. The hiding places are documented from 1888. The tunnels are not",
       "period_slug": "georgian-britain",
-      "origin_type": "historical-event",
+      "origin_type": "oral-tradition",
       "dating_confidence": "medium",
       "sources": [
         "https://www.wirralhistory.uk/redcap.html",
-        "http://oldwirral.net/files/Whatever_happened_to_Mother_Redcap_s_Treasure.pdf"
+        "http://oldwirral.net/files/Whatever_happened_to_Mother_Redcap_s_Treasure.pdf",
+        "https://h2g2.com/edited_entry/A88003811",
+        "https://www.hiddenwirral.org/legend-of-mother-redcaps/4583650780"
       ],
-      "earliest_record": "The name Poll Jones for the innkeeper is first attested in a 1927 newspaper article by Bertram Furness in the Wallasey and Wirral Chronicle, no earlier record of that name has been found, and no person of that name appears in Cheshire records for the period"
+      "earliest_record": "The smugglers' caves and tunnels of the Red and White Noses are described from firsthand visits by the Liverpool antiquarian James Stonehouse in the mid nineteenth century, well before the 1927 newspaper article that supplies the innkeeper's name",
+      "historical_setting": "Wallasey's reputation as a smuggling and wrecking coast in the eighteenth and early nineteenth centuries, with the tavern said to stand on what is now Egremont Promenade"
     },
     {
       "name": "Mother Shipton",
@@ -14435,7 +14470,8 @@
       "source": "https://visitstronsay.com/things-to-do/mysteries-legends/",
       "sources": [
         "https://visitstronsay.com/things-to-do/mysteries-legends/",
-        "https://www.undiscoveredscotland.co.uk/stronsay/stronsay/index.html"
+        "https://www.undiscoveredscotland.co.uk/stronsay/stronsay/index.html",
+        "https://en.wikipedia.org/wiki/Witchcraft_in_Orkney"
       ],
       "date_added": "2026-08-07",
       "tags": [
@@ -14446,7 +14482,10 @@
         "death-omen"
       ],
       "origin_type": "oral-tradition",
-      "dating_confidence": "low"
+      "dating_confidence": "low",
+      "earliest_record": "Ernest W. Marwick, The Folklore of Orkney and Shetland (Batsford, 1975), which gathers the Stronsay material",
+      "historical_setting": "The Mill Bay coast of Stronsay, at the rock seat known as the Mermaid's Chair, in a fishing community that feared weather witchcraft",
+      "cultural_tradition": "Orkney storm witch tradition, with the figure carrying traces of an older creation or hag figure as well as a witch"
     },
     {
       "name": "Screaming House of St Aubin",
@@ -14470,10 +14509,10 @@
         "channel-islands",
         "jersey"
       ],
-      "historical_setting": "Tied to the aftermath of the 1685 Revocation of the Edict of Nantes, when St Aubin became a landfall for Huguenot refugees fleeing France.",
+      "historical_setting": "St Aubin after the Revocation of the Edict of Nantes in October 1685, when the harbour was a first landfall for Huguenot refugees fleeing France",
       "period": "Legend set in the late 17th century",
       "origin_type": "oral-tradition",
-      "dating_confidence": "medium",
+      "dating_confidence": "low",
       "period_slug": "stuart-britain"
     },
     {
@@ -16180,7 +16219,8 @@
       "detail": "Near Tetford church in the Lincolnshire Wolds, a woman long believed to be a witch was said to have a small hole bored in the wall of her cottage, an opening through which she was seen to pass in the form of a hare, the classic supernatural disguise of a Lincolnshire witch. She had a local reputation for ill-wishing and cursing, and her neighbours held her responsible for bewitching several family members to death.\n\nThe tale was collected by James Alpass Penny and published in Folklore Round Horncastle (Morton & Sons, 1915), making it one of the better-documented witch legends of the county. In Penny's version a hunter encountered an unusual hare that stood its ground and held his gaze before he peppered it with shot. The following day the woman was found at home barely alive, her body covered in wounds or boils that corresponded exactly to every pellet he had fired. A later variant collected locally has a hunter wound a hare in the leg, then discover his own mother at home with a matching injury.\n\nThe witch-as-hare tradition is ancient and widespread across Britain and Ireland, but the Lincolnshire variants recorded by Penny and later retold by Susanna O'Neill in Folklore of Lincolnshire (1992) give it a vivid local character rooted in specific communities and named individuals. The detail of the cottage hole, a deliberate domestic arrangement for shapeshifting, is particularly memorable, suggesting a woman whose supernatural life was as practically organised as her ordinary one.",
       "sources": [
         "https://lincolnshirefolktalesproject.com/2024/02/20/the-tetford-witch/",
-        "https://tellinghistory.co.uk/content/additional-information-not-included-lincolnshire-folk-tales-maureen-james-published-history"
+        "https://tellinghistory.co.uk/content/additional-information-not-included-lincolnshire-folk-tales-maureen-james-published-history",
+        "https://heritage-explorer.lincolnshire.gov.uk/Source/SLI1020"
       ],
       "earliest_record": "James Alpass Penny, Folklore Round Horncastle (Morton & Sons, 1915). Penny was vicar of nearby Stixwould from 1888 and collected local folklore firsthand",
       "cultural_tradition": "Lincolnshire Wolds witch-hare shapeshifting folklore",
@@ -16447,13 +16487,16 @@
       "detail": "All Saints' is the oldest church in Liverpool and the only medieval one left in the borough, founded in the fourteenth century and Grade I listed. The field sits immediately beside it and has served as overspill for the churchyard, which is enough on its own to give a patch of grass a certain atmosphere.\n\nThe historical kernel is reasonably solid. Land seized from the church under Henry VIII passed to new owners, and the quarrel between those owners and the parish turned violent in the 1640s, in the same years the Civil War was being fought across Lancashire. A name meaning the field where blood was shed needs no curse to explain it.\n\nThe curse is the later reading and it is the sort that grows backwards from the name. A parish hall was proposed for the site within living memory and did not happen, which the story absorbed as further proof. Whether the ground is unlucky or merely awkward to build on beside a Grade I listed church and a graveyard is not a question the tradition takes any interest in.",
       "period": "The name is traced to fighting in the 1640s over land taken from the church. The cursed ground reading is later and is not attested in any early source",
       "period_slug": "stuart-britain",
-      "origin_type": "historical-event",
-      "dating_confidence": "medium",
+      "origin_type": "oral-tradition",
+      "dating_confidence": "low",
       "sources": [
         "https://www.historyofchildwall.co.uk/tourpart2",
-        "https://www.historyofliverpool.com/english-civil-war-the-siege-of-liverpool/"
+        "https://www.historyofliverpool.com/english-civil-war-the-siege-of-liverpool/",
+        "https://en.wikipedia.org/wiki/All_Saints%27_Church,_Childwall",
+        "https://historicengland.org.uk/listing/the-list/list-entry/1356299"
       ],
-      "historical_setting": "The name is linked either to a Civil War skirmish of the 1640s or to an earlier dispute, the Childwall Riot, between new landowners and church loyalists following the Reformation-era seizure of church land. Cannonballs recovered during housebuilding on Score Lane support a battle at the site, though which conflict they belong to is not established"
+      "historical_setting": "The ground beside All Saints, Childwall, the only surviving medieval church in Liverpool, in the years of religious and tenurial conflict before the Civil War",
+      "origin_date": "The name is attributed to a skirmish of about 1640 between new landowners and defenders of the church"
     },
     {
       "name": "The Brag",
@@ -16627,11 +16670,12 @@
         "https://thetyee.ca/Views/2004/01/22/Living_With_the_Curse_of_the_Campbells/"
       ],
       "period": "Curse traditionally said to date to the early 18th century; its supposed fulfilment is dated to 1938",
-      "historical_setting": "Isle of Jura under the Campbell lairdship",
-      "cultural_tradition": "Scottish Highland/Hebridean eviction-curse and second-sight tradition",
+      "historical_setting": "The eviction of an elderly seer by the Campbell landlords who then dominated Jura, and the departure of Charles Campbell from the island in 1938",
+      "cultural_tradition": "Highland second sight, in the same tradition as the Brahan Seer and the Seaforth prophecy",
       "origin_type": "oral-tradition",
       "dating_confidence": "low",
-      "period_slug": "stuart-britain"
+      "period_slug": "stuart-britain",
+      "origin_date": "The prophecy is attributed to the early eighteenth century, and its reported fulfilment is dated to 1938"
     },
     {
       "name": "The Dagda",
@@ -17740,6 +17784,60 @@
       "period_slug": "modern-folklore"
     },
     {
+      "name": "The Ravens of the Tower of London",
+      "lat": 51.5081,
+      "lng": -0.0759,
+      "category": "location",
+      "region": "Tower of London, London, England",
+      "summary": "Ravens are kept at the Tower of London under the care of a Yeoman Warder titled the Ravenmaster, and tradition holds that if they ever leave, the Crown will fall and Britain with it. The custom is popularly credited to Charles II. The written record tells a different story. No reference to ravens at the Tower has been found before 1883, and the prophecy itself is first attested in 1944.",
+      "source": "https://en.wikipedia.org/wiki/Ravens_of_the_Tower_of_London",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ravens_of_the_Tower_of_London",
+        "https://www.hrp.org.uk/tower-of-london/whats-on/the-ravens/",
+        "https://archive.org/details/cityofravensextr0000saxb"
+      ],
+      "date_added": "2026-09-02",
+      "tags": [
+        "bird",
+        "prophecy",
+        "guardian",
+        "england",
+        "london"
+      ],
+      "detail": "The Tower of London keeps a flock of ravens on the South Lawn, tended by a Yeoman Warder who holds the title of Ravenmaster. The tradition attached to them is one of the best known superstitions in Britain. If the ravens ever leave the Tower, it is said, the Crown will fall and the kingdom with it. Six birds are the working minimum, usually with a spare, and their wing feathers are trimmed so that they stay.\n\nThe story most often told credits Charles II. In one version his astronomer John Flamsteed complained that the birds were fouling his observations from the White Tower, and the king, warned of what would follow if they were destroyed, ordered instead that six be kept for ever. A separate and far older strand connects the site to Bran the Blessed of the Mabinogi, whose name means raven and whose head was buried beneath the White Hill to guard Britain against invasion.\n\nThe documentary record supports neither connection. Geoffrey Parnell, the Tower's official historian, and the independent scholar Boria Sax both searched for early references and found none at all. The earliest known evidence of ravens living at the Tower is an illustration of 1883, and the birds appear to have been introduced in the Victorian period as living props for the fortress's grim reputation. The prophecy that the kingdom would fall with them is first recorded in the summer of 1944, when Londoners watched the birds through the Blitz. That makes it one of the youngest national legends in Britain, and one of the most thoroughly believed.",
+      "period": "Popularly set in the reign of Charles II (1660 to 1685), but no ravens are recorded at the Tower before 1883 and the prophecy is first attested in 1944",
+      "origin_type": "oral-tradition",
+      "dating_confidence": "high"
+    },
+    {
+      "name": "The Screaming Skull of Wardley Hall",
+      "lat": 53.5154,
+      "lng": -2.3671,
+      "category": "ghost",
+      "region": "Worsley, Salford, Greater Manchester",
+      "summary": "A human skull kept in a niche on the staircase at Wardley Hall is said to answer with storms and uproar whenever anyone tries to remove or bury it. Lancashire tradition long named it as the head of the Restoration rake Roger Downes, an identification the opening of his coffin in 1779 destroyed. It is now accepted as the head of Ambrose Barlow, a Benedictine priest executed at Lancaster in 1641.",
+      "source": "https://en.wikipedia.org/wiki/Wardley_Hall",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Wardley_Hall",
+        "https://historicengland.org.uk/listing/the-list/list-entry/1215022",
+        "https://en.wikisource.org/wiki/Lancashire_Legends,_Traditions,_Pageants,_Sports,_%26c./Part_1/Wardley_Hall_Skull",
+        "https://www.gutenberg.org/files/25256/25256-h/25256-h.htm",
+        "https://dioceseofsalford.org.uk/diocese/visiting-us/wardley-hall/"
+      ],
+      "date_added": "2026-09-02",
+      "tags": [
+        "haunting",
+        "curse",
+        "england",
+        "greater-manchester"
+      ],
+      "detail": "Wardley Hall is a moated timber framed manor house of about 1500 near Worsley in Salford, Grade I listed and, since 1930, the residence of the Roman Catholic Bishop of Salford. Set into a niche at the head of the main staircase is a human skull, and around it has grown one of the best documented of the English screaming skull traditions. Move the skull, bury it, throw it into the moat or carry it from the house, and the hall is said to answer with storms, crashing noises and misfortune until it is put back.\n\nThe tradition as the Lancashire antiquaries received it named the skull as that of Roger Downes, the last male heir of his family and remembered as one of the more dissolute courtiers of Charles II. In that telling he killed a tailor in a drunken London brawl, was beheaded by a watchman on London Bridge, and his head was boxed up and sent home to his sister at Wardley. John Roby printed a version in his Traditions of Lancashire in 1829, and Harland and Wilkinson gave it again in Lancashire Legends in 1867. The story failed its first real test. When the Downes coffin was opened in 1779 the head was still on the body.\n\nThe identification now accepted is a different one altogether. Ambrose Barlow, a Benedictine priest who had ministered secretly in the district for years, was seized while preaching on Easter Sunday 1641 and hanged, drawn and quartered at Lancaster on 10 September of that year. His head was set on a spike in Manchester, and a Catholic kinsman, Francis Downes, is said to have taken it down by night and hidden it at Wardley. A forensic examination in 1960 found the skull of a man of about fifty to sixty years, pierced by a sharp object, which fits Barlow closely. He was canonised in 1970 among the Forty Martyrs of England and Wales, and the skull is now treated at the hall as a relic rather than a curiosity.",
+      "period": "The execution behind the relic took place in 1641. The skull legend is in print by 1829",
+      "period_slug": "stuart-britain",
+      "origin_type": "historical-event",
+      "dating_confidence": "high"
+    },
+    {
       "name": "The Selkie",
       "lat": 54.992,
       "lng": -8.706,
@@ -17968,7 +18066,7 @@
       "category": "witch",
       "region": "East Somerton, Norfolk, England",
       "summary": "A woman accused of witchcraft was said to have been buried alive in the nave of St Mary's Church at East Somerton, and her wooden leg took root and grew into the great oak that still stands inside the ruined church today.",
-      "detail": "In the ruins of St Mary's Church at East Somerton, deep in a Norfolk wood, a massive oak tree now grows where the nave once stood, its trunk rising through the roofless walls of a church whose tower dates to the 13th century and whose nave was rebuilt in the 15th, abandoned for regular worship by the late 17th century. Local legend says the tree marks the grave of a woman from the village who was accused of witchcraft and buried alive within the church by her neighbours. As she was interred, her wooden leg was said to have been planted with her, and over the centuries it took root and grew into the oak that dominates the ruin today, sometimes called 'the Witch's Leg' or 'the Witch's Finger'.\n\nThe legend carries its own piece of living folk-practice: it is said that anyone who walks around the tree three times will release the witch's spirit. The story has become one of the best-known pieces of 'Weird Norfolk' folklore, regularly retold by local newspapers and the Norfolk Folklore Society, and the atmospheric ruin (oak growing through broken flint walls in dense woodland) remains a popular, if eerie, walking destination near Winterton-on-Sea.",
+      "detail": "In the ruins of St Mary's Church at East Somerton, deep in a Norfolk wood, a massive oak tree now grows where the nave once stood, its trunk rising through walls of knapped flint and ashlar. The tower dates to the 13th century and the nave was rebuilt in the 15th, and the building had fallen out of regular worship by the late 17th century. Local legend says the tree marks the grave of a woman from the village who was accused of witchcraft and buried alive within the church by her neighbours. As she was interred, her wooden leg was said to have been planted with her, and over the centuries it took root and grew into the oak that dominates the ruin today, sometimes called 'the Witch's Leg' or 'the Witch's Finger'.\n\nThe ruin is substantial enough to read as a building rather than a scatter of stones. Its three-stage west tower still stands, missing its belfry stage, braced by diagonal buttresses and lit by pointed lancet windows in the ringing chamber below; three tall windows once lined the nave on each side, and the chancel arch survives with roll and sunk hollow mouldings, though no trace of the chancel itself remains. Large holes have been broken through the walls of the two westernmost bays, and Historic England listed the ruin Grade II in September 1962.\n\nThe legend carries its own piece of living folk practice: it is said that anyone who walks around the tree three times will release the witch's spirit. The story has become one of the best known pieces of 'Weird Norfolk' folklore, regularly retold by local newspapers and the Norfolk Folklore Society, and the ruin, oak growing through broken flint walls in dense woodland near Winterton-on-Sea, remains a popular, if eerie, walking destination today.",
       "source": "https://www.norfolkfolkloresociety.co.uk/post/the-witch-of-east-somerton",
       "date_added": "2026-06-14",
       "tags": [

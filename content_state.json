@@ -192,8 +192,8 @@
 "modified": "2026-08-20"
 },
 "Bessie Millie of Stromness": {
-"hash": "eba31d5e72e276fd9d4c704ac0ff30e555ee98dc",
-"modified": "2026-08-17"
+"hash": "523f1c7f0b28947f4f8c7b29e54576224b8730e0",
+"modified": "2026-09-02"
 },
 "Betty Wells, the Witch of Kirton in Lindsey": {
 "hash": "aba96d1caa19c70b8785485c6d41b6824e2e57a0",
@@ -660,8 +660,8 @@
 "modified": "2026-08-20"
 },
 "Denbigh Dragon": {
-"hash": "5a6c9453c7294061dd3fbef43579ea081b2be666",
-"modified": "2026-08-20"
+"hash": "2902096207b3e5f1803ff09e696e03dcd5db5272",
+"modified": "2026-09-02"
 },
 "Devil's Arrows": {
 "hash": "0ee9cb8f9a6310b788e669e229e5f0ca5e3a7205",
@@ -936,8 +936,8 @@
 "modified": "2026-08-20"
 },
 "Garman Garbh of Loch Garman": {
-"hash": "7234bc85c5d8dd663c95842e5fa43039f6d3cdcb",
-"modified": "2026-08-09"
+"hash": "92ab0521c878856e9caba76952342163c277ea02",
+"modified": "2026-09-02"
 },
 "Gawain": {
 "hash": "2a9890301a9bd1580f4217c7abd96397efedb0ad",
@@ -946,6 +946,10 @@
 "Gearóid Iarla of Lough Gur": {
 "hash": "02529beda6e598d7e999853b324f5f33e43e00b4",
 "modified": "2026-08-25"
+},
+"Gef the Talking Mongoose": {
+"hash": "d7274a121bb3fceab4571829fd4d45db52e6fd91",
+"modified": "2026-09-02"
 },
 "Gelert": {
 "hash": "0880c99514caf40f3fc655a45dc844b7abb0684b",
@@ -2515,6 +2519,14 @@
 "hash": "151a685c9ff4752bb5c39a6dae408d409a9b0d0c",
 "modified": "2026-08-17"
 },
+"The Ravens of the Tower of London": {
+"hash": "2c425ced980e25905b1bf15b3667bff4a21c8d89",
+"modified": "2026-09-02"
+},
+"The Screaming Skull of Wardley Hall": {
+"hash": "e8b44e5c6b42bb174cbf7833f4c5c03dffb32465",
+"modified": "2026-09-02"
+},
 "The Selkie": {
 "hash": "37ed63eab551303bc380106075fbedda0958ae6f",
 "modified": "2026-08-25"
@@ -2548,8 +2560,8 @@
 "modified": "2026-08-19"
 },
 "The Witch of East Somerton": {
-"hash": "673d7ec9ef4b53d45017acd54cebecd47d026d7d",
-"modified": "2026-08-27"
+"hash": "c6bf74ba73a8c190404a845673c332b211125ac7",
+"modified": "2026-09-02"
 },
 "The Witch of Knocknashee": {
 "hash": "d4738322efdf065a12c7118a0520090ea91d3553",

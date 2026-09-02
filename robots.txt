@@ -13,7 +13,7 @@
 # This file used to repeat those rules by hand. Because Cloudflare prepends
 # rather than replaces, the served file ended up with TWO "User-agent: *"
 # groups and six crawlers listed twice, which is malformed. The hand-written
-# rules were dropped on 2026-09-01 so that one source owns the policy.
+# rules were dropped on 2026-09-02 so that one source owns the policy.
 #
 # Changing what is blocked now means changing the Cloudflare setting, not
 # editing this file. Adding rules back here recreates the duplication.

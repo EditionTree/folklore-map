@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-01T20:35:31.599483Z",
+  "generated": "2026-09-02T19:28:41.085819Z",
   "total": 720,
   "categories": {
     "beast": "Beasts",
@@ -11937,7 +11937,12 @@
       "period": "The building dates from 1595 and the smuggling and press gang traditions belong to the eighteenth and early nineteenth centuries. The hiding places are documented from 1888. The tunnels are not",
       "period_slug": "georgian-britain",
       "origin_type": "historical-event",
-      "dating_confidence": "medium"
+      "dating_confidence": "medium",
+      "sources": [
+        "https://www.wirralhistory.uk/redcap.html",
+        "http://oldwirral.net/files/Whatever_happened_to_Mother_Redcap_s_Treasure.pdf"
+      ],
+      "earliest_record": "The name Poll Jones for the innkeeper is first attested in a 1927 newspaper article by Bertram Furness in the Wallasey and Wirral Chronicle, no earlier record of that name has been found, and no person of that name appears in Cheshire records for the period"
     },
     {
       "name": "Mother Shipton",
@@ -16320,7 +16325,13 @@
       "period": "The carvings are attributed to Norse Irish settlers around 1000 AD, but open rock carving resists dating and the attribution rests on the district's settlement history rather than on the carvings themselves",
       "period_slug": "viking-age",
       "origin_type": "archaeological",
-      "dating_confidence": "low"
+      "dating_confidence": "low",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bidston_Hill",
+        "https://www.megalithic.co.uk/article.php?sid=29554",
+        "http://www.bidstonhill.org.uk/heritage/trail13/"
+      ],
+      "historical_setting": "Attribution rests on three competing theories: Norse Irish settlement of the Wirral in the ninth or tenth century, an alternative Gallo-Roman origin in the second century AD, and a minority view that the carvings are no older than the eighteenth century. Open-air sandstone carving cannot be scientifically dated, so none of the three can be confirmed"
     },
     {
       "name": "The Binbrook Bewitched Farm (1905)",
@@ -16437,7 +16448,12 @@
       "period": "The name is traced to fighting in the 1640s over land taken from the church. The cursed ground reading is later and is not attested in any early source",
       "period_slug": "stuart-britain",
       "origin_type": "historical-event",
-      "dating_confidence": "medium"
+      "dating_confidence": "medium",
+      "sources": [
+        "https://www.historyofchildwall.co.uk/tourpart2",
+        "https://www.historyofliverpool.com/english-civil-war-the-siege-of-liverpool/"
+      ],
+      "historical_setting": "The name is linked either to a Civil War skirmish of the 1640s or to an earlier dispute, the Childwall Riot, between new landowners and church loyalists following the Reformation-era seizure of church land. Cannonballs recovered during housebuilding on Score Lane support a battle at the site, though which conflict they belong to is not established"
     },
     {
       "name": "The Brag",
@@ -17001,7 +17017,12 @@
       "period": "Mary Norris married Sidney Beauclerk in 1736, which fixes the story's claimed setting. The events are contradicted by the record, since the couple are not recorded at Speke and their son lived to adulthood",
       "period_slug": "georgian-britain",
       "origin_type": "oral-tradition",
-      "dating_confidence": "low"
+      "dating_confidence": "low",
+      "sources": [
+        "https://www.nationaltrust.org.uk/visit/liverpool-lancashire/speke-hall/history-of-speke-hall",
+        "https://chbenj23.wordpress.com/2021/11/17/worthless-sidney-mary-norris-the-speke-hall-ghost-of-the-baby-thrown-into-the-moat/"
+      ],
+      "earliest_record": "Some historians trace the story's rise to prominence to the tenure of Adelaide Watt, the last private occupant of Speke Hall from 1878 until her death in 1921, though no printed record earlier than the twentieth century has been found"
     },
     {
       "name": "The Gwybr of Llanrhaeadr",
@@ -17298,7 +17319,11 @@
       "period": "The statues were installed in 1911 and the superstition is first recorded after that. No earlier form of the flight legend has been traced",
       "period_slug": "modern-folklore",
       "origin_type": "oral-tradition",
-      "dating_confidence": "high"
+      "dating_confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Liver_bird",
+        "https://historic-liverpool.co.uk/a-liver-birds-point-of-view-royal-liver-building-360/"
+      ]
     },
     {
       "name": "The Loch Ness Monster",
@@ -17438,7 +17463,11 @@
       "period": "Dated by its own inscription to 1414. The tradition was recorded by Robert Charles Hope in 1893",
       "period_slug": "medieval-britain",
       "origin_type": "archaeological",
-      "dating_confidence": "high"
+      "dating_confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Monk%27s_Well",
+        "https://historicengland.org.uk/listing/the-list/list-entry/1208270"
+      ]
     },
     {
       "name": "The Morrigan",
@@ -17675,7 +17704,12 @@
       "period": "The tunnel opened in 1934 and the accounts place the deaths in the mid twentieth century, the motorbike version specifically in the 1960s. No contemporary record of either death has been tied to the legend",
       "period_slug": "modern-folklore",
       "origin_type": "oral-tradition",
-      "dating_confidence": "medium"
+      "dating_confidence": "medium",
+      "sources": [
+        "https://www.paranormaldatabase.com/merseyside/index.php",
+        "https://researchonline.ljmu.ac.uk/id/eprint/10945/3/A%20Miscellany%20of%20Merseyside%20Mysteries%20.pdf"
+      ],
+      "historical_setting": "An account from a Mersey Tunnels employee of thirty years, until 2013, describes police reports of the same phantom hitchhiker in the later Kingsway Tunnel at Wallasey, suggesting the story circulates across both Mersey road tunnels rather than being fixed to one"
     },
     {
       "name": "The Ratman of Southend",
@@ -18097,7 +18131,13 @@
       "detail": "The sacrificial reading was established by the nineteenth century and has proved almost impossible to shift. Geologists and historians now agree that the outcrop is natural, a small tor left by periglacial weathering of the sandstone and afterwards cut about by quarrymen in the eighteenth and nineteenth centuries. The straight faces that look worked are worked, but by men taking building stone rather than by anyone preparing an altar.\n\nThe Fair Maiden's Hall tradition is the more interesting half and the less often repeated. It was noted in 1888 by the Reverend A. E. P. Gray, who recorded both the name and the annual dance, and it has the ordinary shape of genuine local usage rather than the shape of an antiquarian theory.\n\nA Norse district, a red rock and a nineteenth century appetite for Viking blood were enough between them to produce a legend that now has to be argued down every time the site is written about.",
       "period": "The Thor and sacrifice attribution is nineteenth century antiquarian invention rather than Norse survival. The Fair Maiden's Hall name and the annual dance were recorded in 1888",
       "origin_type": "literary",
-      "dating_confidence": "high"
+      "dating_confidence": "high",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Thurstaston_Common",
+        "https://howardwilliamsblog.wordpress.com/2019/07/28/thors-stone-thurstaston-common/",
+        "https://www.thenorthernantiquarian.org/2011/07/20/thors-stone/"
+      ],
+      "earliest_record": "The sacrificial-altar interpretation was first proposed in 1877 by the antiquarian J. A. Picton, part of a wider Victorian enthusiasm for Old Norse paganism on the Wirral. No archaeological evidence of early medieval activity on the site has been found"
     },
     {
       "name": "Thornton Road poltergeist claim",
@@ -19420,7 +19460,11 @@
       "period": "Mackenzie died in 1851 and the pyramid was erected in 1868. The Devil legend has no traced source earlier than its popularisation by Tom Slemen in the late twentieth century",
       "period_slug": "victorian-britain",
       "origin_type": "historical-event",
-      "dating_confidence": "medium"
+      "dating_confidence": "medium",
+      "sources": [
+        "https://en.wikipedia.org/wiki/St_Andrew%27s_Church,_Liverpool",
+        "https://historicengland.org.uk/listing/the-list/list-entry/1361914"
+      ]
     },
     {
       "name": "William Owen, the Smuggler General of Pembrokeshire",

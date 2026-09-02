@@ -206,7 +206,11 @@
     "period": "Late 20th-century Cornwall",
     "origin_type": "oral-tradition",
     "dating_confidence": "medium",
-    "period_slug": "modern-folklore"
+    "period_slug": "modern-folklore",
+    "sources": [
+      "https://en.wikipedia.org/wiki/British_big_cats",
+      "https://cornishbirdblog.com/the-truth-behind-the-beast-of-bodmin-moor/"
+    ]
   },
   {
     "name": "Beinn a' Bheithir",
@@ -9320,7 +9324,11 @@
     "historical_setting": "A 1975 replica by Morris dancer John Byfleet, now held by the Dorset Museum, continues the tradition in the form of the twice-yearly Wessex Morris Men ceremony at the Cerne Abbas Giant",
     "origin_type": "oral-tradition",
     "dating_confidence": "high",
-    "period_slug": "victorian-britain"
+    "period_slug": "victorian-britain",
+    "sources": [
+      "https://wessexmuseums.org.uk/collections-showcase/dorset-ooser/",
+      "https://en.wikipedia.org/wiki/Dorset_Ooser"
+    ]
   },
   {
     "name": "Llamhigyn y Dŵr",

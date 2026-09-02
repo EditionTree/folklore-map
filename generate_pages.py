@@ -1303,7 +1303,7 @@ SOURCE_TIERS = {
     "celticelegance.com": "popular",
     "clan.com": "popular",
     "cmrosens.com": "popular",
-    "cornishbirdblog.com": "popular",
+    "cornishbirdblog.com": "secondary",  # The Cornish Bird, researched local history
     "eelandotter.net": "popular",
     "esmeraldamac.wordpress.com": "popular",
     "faeryfolklorist.blogspot.com": "popular",

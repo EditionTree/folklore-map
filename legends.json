@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-02T22:42:01.595431Z",
+  "generated": "2026-09-03T17:29:52.857782Z",
   "total": 722,
   "categories": {
     "beast": "Beasts",
@@ -2586,7 +2586,7 @@
       "detail": "Brú na Bóinne, 'the palace' or 'mansion of the Boyne', is the great bend of the River Boyne in County Meath that holds the passage tombs of Newgrange, Knowth and Dowth along with around ninety other Neolithic monuments, raised in the 32nd century BC. In Irish mythology it was no mere graveyard but the chief dwelling-place of the Tuatha Dé Danann, the otherworldly race said to live on inside the great mounds after their defeat by the Milesians.\n\nIts central myth concerns the Dagda, the chief god, who desired Boann, goddess of the river and wife of Elcmar, the Brú's keeper. He sent Elcmar away on an errand and cast a spell to make 'the sun stand still' for what seemed like a single day, long enough for Boann to conceive and bear a son, Aengus Óg, without Elcmar ever noticing the months that had passed.\n\nWhen Aengus came of age and learned the truth of his birth, he claimed his own inheritance with a trick to match his father's: he asked to be given Brú na Bóinne for 'a day and night', then pointed out that, since all time consists of days and nights, the gift was eternal, winning the Otherworld palace for himself forever. Some scholars connect the tale to Newgrange's famous winter solstice illumination, when a beam of sunlight enters the inner chamber at dawn, reading it as the moment of Aengus's conception. The site recurs elsewhere in Irish myth too: Aengus later brings his lover Caer, transformed into a swan, to sing the dwellers of the mounds to sleep at Brú na Bóinne, reaffirming it as the great meeting-place between the human world and the Otherworld.",
       "sources": [
         "https://en.wikipedia.org/wiki/Br%C3%BA_na_B%C3%B3inne",
-        "https://heritageireland.ie/places-to-visit/newgrange/"
+        "https://www.museum.ie/en-ie/collections-research/irish-antiquities-division-collections/irish-antiquities-articles/the-winter-solstice-at-newgrange"
       ],
       "origin_date": "c. 3200 BC",
       "earliest_record": "Newgrange passage tomb, built c. 3200 BC, predating both Stonehenge and the Great Pyramids of Giza; part of the wider Brú na Bóinne Neolithic complex with Knowth and Dowth, one of only three UNESCO World Heritage Sites in Ireland",
@@ -5932,7 +5932,7 @@
       "category": "beast",
       "region": "Glamorgan, Wales",
       "summary": "The Yellow Plague of sixth-century Wales, personified as a monstrous yellow apparition whose gaze alone was fatal. The poet Taliesin foretold it would rise from the marsh of Rhianedd to punish King Maelgwn Gwynedd for his crimes.",
-      "source": "https://en.wikipedia.org/wiki/Fad_Felen",
+      "source": "https://abookofcreatures.com/2020/05/01/fad-felen/",
       "date_added": "2026-06-03",
       "tags": [
         "serpent",
@@ -5943,7 +5943,7 @@
       "detail": "The Fad Felen, the Yellow Plague or Yellow Pestilence, personifies the epidemic that swept Wales in the 540s. Tradition gave the sickness a shape: a column of watery cloud, one end resting on the ground and the other reaching high into the air, its hair, teeth and eyes all a livid yellow, the colour folk memory gave to the bloodless pallor of the dying. The poet Taliesin is credited with prophesying its coming, warning that a strange creature would rise from the marsh of Rhianedd to punish the crimes of Maelgwn Gwynedd, the powerful king of North Wales.\n\nThe prophecy fixed itself to Maelgwn's actual death. Sheltering from the plague in the church at Rhos, he could not resist looking out, by keyhole or window, and so beheld the Fad Felen; to look upon it was to die, and die he did, an event the Annales Cambriae date to 547. Through this story the historical plague that killed a king was given a face and a name, a yellow horror that even a great ruler could not escape once he had set eyes upon it.",
       "pronunciation": "VAHD VEH-len",
       "sources": [
-        "https://en.wikipedia.org/wiki/Fad_Felen",
+        "https://abookofcreatures.com/2020/05/01/fad-felen/",
         "https://en.wikisource.org/wiki/Dictionary_of_National_Biography,_1885-1900/Maelgwn_Gwynedd"
       ],
       "origin_date": "547 (historical death of Maelgwn Gwynedd, per Annales Cambriae)",
@@ -6570,7 +6570,7 @@
       "pronunciation": "gyar-OHD EER-luh",
       "sources": [
         "https://en.wikipedia.org/wiki/Lough_Gur",
-        "https://www.loughgur.com/learn-more/folklore/"
+        "https://voicesfromthedawn.com/lough-gur/"
       ],
       "origin_date": "c. 1338-1398 (the historical 3rd Earl of Desmond's lifetime)",
       "earliest_record": "Thomas Crofton Croker's 'Fairy Legends and Traditions of the South of Ireland' (1825-1828) is a plausible early written source for Lough Gur folklore of this type, though it is not confirmed that this specific tale appears in it; Owen Bresnan's manuscript 'Lough Gur — its pillarstones, Stone Circles and traditions' (Bresnan, 1847-1912) is a later dedicated source",
@@ -6955,7 +6955,7 @@
       "category": "giant",
       "region": "London",
       "summary": "The last of the giants of Albion, their effigies carried in the Lord Mayor's Show since at least the reign of Henry V. The wooden statues in the Guildhall today are their latest incarnation, after predecessors lost to the Great Fire of 1666 and the Blitz of 1940. They are the ancient guardians of the City of London.",
-      "source": "https://en.wikipedia.org/wiki/Gog_and_Magog_(England)",
+      "source": "https://www.lordmayorsshow.london/history/gog-and-magog/",
       "date_added": "2026-06-03",
       "tags": [
         "guardian",
@@ -6964,7 +6964,7 @@
       ],
       "detail": "Gog and Magog are the guardian giants of the City of London, the last survivors of a race of giants said to have inhabited Britain, or Albion, before the coming of man. In the legendary history popularised by Geoffrey of Monmouth, Brutus of Troy and his companion Corineus came to these shores and overcame the native giants; the greatest was hurled into the sea, and the survivors were set to labour as porters at the gate of the founders' new city.\n\nCarved giants are recorded guarding the gates of Guildhall by the reign of Henry V, in the early fifteenth century, and figures named 'Gogmagot the Albion' and 'Corineus the Britain' had already joined the Lord Mayor's Show by 1554, appearing again at Elizabeth I's coronation procession in 1558. The original papier-mache figures perished in the Great Fire of London in 1666; replacements followed in 1672, and a finer pair carved from pine by Captain Richard Saunders was installed in 1709.\n\nThose Georgian giants stood for over two centuries until they were destroyed in the Blitz in 1940. The current statues, carved in 1953, still stand guard in the Guildhall today, and effigies of the two giants continue to be carried through the streets in the Lord Mayor's Show each November, binding modern London to the oldest layer of British legend, the myth of the giants of Albion who walked the land before history began.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Gog_and_Magog_(England)",
+        "https://www.lordmayorsshow.london/history/gog-and-magog/",
         "https://www.londonmuseum.org.uk/collections/v/object-525663/gog-magog-guildhall/"
       ],
       "earliest_record": "Carved giants are recorded guarding the gates of Guildhall by the reign of Henry V (1413-1422); the effigies 'Gogmagot the Albion' and 'Corineus the Britain' are specifically recorded at Elizabeth I's coronation procession (1558) and had already appeared in the Lord Mayor's Show by 1554",
@@ -7008,7 +7008,7 @@
       "category": "fairy",
       "region": "Isle of Wight",
       "summary": "A great hairy caterpillar-spirit said to guard the gooseberry bushes of the Isle of Wight, seizing any child who came creeping among the fruit before it ripened. Some folklorists suspect a real caterpillar swarm lies behind the tale.",
-      "source": "https://en.wikipedia.org/wiki/Gooseberry_Wife",
+      "source": "https://britishfairies.wordpress.com/tag/gooseberry-wife/",
       "date_added": "2026-06-03",
       "tags": [
         "island",
@@ -7018,7 +7018,7 @@
       ],
       "detail": "The Gooseberry Wife is a nursery bogey of the Isle of Wight, conjured to keep children out of the fruit bushes before the gooseberries were ripe. She was said to take the form of a great hairy caterpillar, swollen and slow, who guarded the bushes and would seize any child who came creeping among them: 'if ye goos out in the gearden, the Gooseberry Wife'll be sure to ketch ye'. The earliest written record traced is Elizabeth Mary Wright's 'Rustic Speech and Folk-Lore' (1913), which preserves this warning rhyme in dialect.\n\nLike Peg Powler at the riverbank or the Awd Goggie among the orchards, she belongs to the class of 'nursery sprites' or 'cautionary spirits' that English country parents invoked to fence off danger or temptation. There is no grand legend attached to her, only the vivid threat of the watching caterpillar.\n\nThe cryptozoologist Karl Shuker has wondered whether a real sighting lies behind the character. He records a 1970s Essex report of a child confronted at close range by a caterpillar estimated at a foot long, and speculates that reports like it, or a procession of caterpillars mistaken for one huge creature, might be the seed such nursery bogeys grew from. Real or invented, the small strange figure preserves a whole vanished world of garden-magic and the careful guarding of a summer crop.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Gooseberry_Wife",
+        "https://britishfairies.wordpress.com/tag/gooseberry-wife/",
         "https://karlshuker.blogspot.com/2012/05/gooseberry-wife-or-caterpillar.html"
       ],
       "earliest_record": "Elizabeth Mary Wright's 'Rustic Speech and Folk-Lore' (1913, Oxford University Press/Humphrey Milford)",
@@ -7367,7 +7367,7 @@
       "category": "dragon",
       "region": "Somerset",
       "summary": "A great serpent terrorised the villages of the Quantock Hills, coiling itself around fields and devouring cattle, until a Stogumber woodman mistook it for a log and cut it clean in two with his axe. A stone cross still stands at Bilbrook marking where one dying half came to rest.",
-      "source": "https://en.wikipedia.org/wiki/Gurt_Worm",
+      "source": "https://www.halswaymanor.org.uk/projects/stories-of-the-hills/the-gurt-worm-of-shervage-wood/index.html",
       "date_added": "2026-06-03",
       "tags": [
         "cattle",
@@ -7379,7 +7379,7 @@
       ],
       "detail": "The Gurt Worm, 'great worm' in the Somerset dialect, is the dragon of the Quantock Hills, a vast serpent said to have coiled itself about the high ground above the villages of Shervage Wood and Bicknoller, devouring sheep, cattle and the occasional unlucky traveller. So large was it that folk mistook its body for a fallen tree trunk lying across the path.\n\nIn the best-loved telling a woodman from Stogumber, sent into Shervage Wood to gather wood, sat down to eat his bread and cheese on what he took for a log, until it began to writhe beneath him. Rather than flee, the unflappable countryman set about the worm with his axe and cut it clean in two. The halves wriggled off in opposite directions, one toward the village of Kingston St Mary, the other toward Bilbrook near Minehead, and being unable to rejoin, the Gurt Worm died where it fell. Bicknoller tradition holds that a dying dragon always tries to reach the sea, and a stone monument still known as the Dragon's Cross stands at Bilbrook to mark where that half of the worm gave out.\n\nThe tale is a fine example of the homely West Country dragon, dispatched not by a knight but by an ordinary working man with a sharp tool and a steady nerve, and it has left a permanent, named mark on the ground it once terrorised.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Gurt_Worm",
+        "https://www.halswaymanor.org.uk/projects/stories-of-the-hills/the-gurt-worm-of-shervage-wood/index.html",
         "https://www.halswaymanor.org.uk/projects/stories-of-the-hills/ruth-tongue-crowcombe/"
       ],
       "earliest_record": "C. W. Whistler's article 'Local Traditions of the Quantocks', published in the journal Folklore in 1908, is the earliest confirmed written record, considerably earlier than the version's popular association with Ruth Tongue's 'Somerset Folklore' (1965)",
@@ -7668,7 +7668,7 @@
       "category": "dragon",
       "region": "North Yorkshire Moors",
       "summary": "A venomous serpent of the North Yorkshire moors, lurking in the deep wooded gullies called haggs. One of several worms said to have plagued the region before the age of saints and knights, giving the landscape both its name and its dread.",
-      "source": "https://en.wikipedia.org/wiki/Worm_(mythology)",
+      "source": "https://en.wikipedia.org/wiki/Lambton_Worm",
       "date_added": "2026-06-03",
       "tags": [
         "serpent",
@@ -7678,7 +7678,7 @@
       ],
       "detail": "The Hagg Worm is a venomous serpent-dragon of the North York Moors, its name taken from the 'haggs', the deep, wooded, boggy gullies that score the high moorland, where such a creature was said to lair. Like the other 'worms' of northern England, it was imagined as a great wingless wyrm, swollen and poisonous, that crept out from its hag to prey on livestock and to poison the ground and water around it.\n\nThe worms of Yorkshire and the north-east form a distinct family of dragon-lore (the Lambton Worm, the Sockburn Worm, the Loschy Hill dragon among them), venomous, self-healing serpents rather than the fire-breathing, winged dragons of heraldry, and almost always tied to a specific wood, hill or stretch of river. The Hagg Worm belongs to this native northern tradition, a reminder that to the moorland communities the wild, sucking bogs of the haggs were places where something old and dangerous might still be coiled.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Worm_(mythology)",
+        "https://en.wikipedia.org/wiki/Lambton_Worm",
         "https://yorkshiredictionary.york.ac.uk/words/hagworm"
       ],
       "historical_setting": "North Yorkshire Moors, wooded gullies known locally as 'haggs'",
@@ -8094,7 +8094,7 @@
       ],
       "sources": [
         "https://en.wikipedia.org/wiki/Herne_the_Hunter",
-        "https://www.rct.uk/collection/topics/windsor-great-park"
+        "https://www.rct.uk/collection/917551/hernes-oak"
       ],
       "origin_date": "1597",
       "earliest_record": "Shakespeare's The Merry Wives of Windsor (1597) is the earliest identified written reference to Herne by name",
@@ -8327,7 +8327,7 @@
       "category": "fairy",
       "region": "East Anglia",
       "summary": "A shape-shifting spirit of the East Anglian fens, capable of taking the form of a sand martin. Hyter sprites could restore lost children to their families, or lead them deeper into the marshes, depending on their mood. They are among the rarer friendly fae of English folklore.",
-      "source": "https://en.wikipedia.org/wiki/Hyter_Sprite",
+      "source": "https://folklorefieldwork.substack.com/p/the-missing-fairies-of-norfolk-part",
       "date_added": "2026-06-03",
       "tags": [
         "shapeshifter",
@@ -8338,7 +8338,11 @@
       "earliest_record": "Ruth Tongue's 'Forgotten Folk-tales of the English Counties' (1970), which records the related name Hikey Sprites",
       "period": "Recorded in the mid-20th-century English folklore-collecting tradition (1970)",
       "origin_type": "oral-tradition",
-      "dating_confidence": "low"
+      "dating_confidence": "low",
+      "sources": [
+        "https://folklorefieldwork.substack.com/p/the-missing-fairies-of-norfolk-part",
+        "https://www.fairyist.com/fairy-types/hikey-sprites/"
+      ]
     },
     {
       "name": "Inishbofin White Cow",
@@ -9483,7 +9487,7 @@
       "source": "https://en.wikipedia.org/wiki/Lady_Godiva",
       "sources": [
         "https://en.wikipedia.org/wiki/Lady_Godiva",
-        "https://www.historic-uk.com/HistoryUK/HistoryofEngland/Lady-Godiva/",
+        "https://www.tastesofhistory.co.uk/post/dispelling-some-myths-lady-godiva-s-naked-ride",
         "https://www.british-history.ac.uk/vch/warks/vol8/pp242-247"
       ],
       "date_added": "2026-06-28",
@@ -9635,7 +9639,7 @@
       "detail": "The Lancashire Witches Walk is a 51-mile (82 km) long-distance footpath through Lancashire, opened in 2012 to mark the 400th anniversary of the most notorious witch trials in English history, the trial and hanging of the Pendle witches in 1612. The route runs from Barrowford, in the shadow of Pendle Hill where the accused lived, to Lancaster Castle, where ten of them were tried and condemned, and it deliberately traces the most likely path along which the prisoners were marched the long miles across the county to their trial and execution.\n\nThe trials it commemorates were a grim drama of poverty, family feud and accusation among the cottagers of the Pendle district. Two rival families, headed by the old women remembered as Demdike and Chattox, were caught up in a spiral of charges of bewitchment and witchcraft; under questioning a nine-year-old girl, Jennet Device, gave evidence that helped to hang her own mother, grandmother and neighbours. In all, ten people were executed on Gallows Hill at Lancaster in August 1612, making the Pendle case one of the largest and best-recorded witch trials in English history.\n\nThe modern walk turns that dark history into an act of memory and landscape. Along the route stand ten cast-iron waymarkers, each set with a tercet from a specially commissioned poem by the then Poet Laureate Carol Ann Duffy, so that walkers retracing the condemned women's last journey pass, marker by marker, through the verses of their remembrance. The trail binds the folklore of the Lancashire witches to the very ground they walked, linking Pendle Hill, the bleak moorland miles, and the castle where their story ended.",
       "sources": [
         "https://en.wikipedia.org/wiki/Lancashire_Witches_Walk",
-        "https://feeds.bbci.co.uk/news/uk-england-lancashire-19286741"
+        "https://ldwa.org.uk/ldp/members/show_path.php?path_name=Lancashire+Witches+Walk"
       ],
       "origin_date": "2012 (the walk itself); 1612 (the Pendle witch trials it commemorates)",
       "period": "The trials are early-17th-century historical fact; the walk is a 21st-century commemorative project",
@@ -10464,7 +10468,7 @@
       "category": "dragon",
       "region": "Northumberland",
       "summary": "A Northumbrian dragon that guarded three healing wells near Longwitton and denied villagers their water. The beast was eventually overcome by a knight who used reflection, timing, and a sharp blade.",
-      "source": "https://en.wikipedia.org/wiki/Longwitton_dragon",
+      "source": "https://www.mysteriousbritain.co.uk/legends/the-longwitton-dragon/",
       "date_added": "2026-06-03",
       "tags": [
         "healing",
@@ -10475,7 +10479,7 @@
       ],
       "detail": "The Longwitton Dragon is a Northumbrian dragon-legend tied to the village of Longwitton and its three wells, which were famed for their healing and medicinal waters. According to the tale, a dragon came and took up its guard over the three wells, coiling itself about them (though in some versions it had the power of invisibility) so that the villagers could no longer reach the healing springs on which they relied. For a long time the beast denied them their water, and several would-be slayers failed against it.\n\nAt last a wandering knight came to try his fortune against the dragon. In the first encounters he found the creature almost impossible to defeat, for whenever he seemed to gain the upper hand the dragon would slip back and dip the tip of its tail in one of the wells, whose magical waters instantly healed any wound he had dealt and renewed its strength, so that the fight could never be won by force alone. The knight, realising the secret, changed his tactics.\n\nCunningly manoeuvring the battle so that he stayed always between the dragon and the wells, he cut the beast off from the source of its healing power; unable to reach the water to renew itself, the dragon at last weakened under his blows and was slain, and the wells were freed for the people of Longwitton once more. The legend is a neat example of the 'dragon undone by wit' type: the hero wins by understanding and breaking the source of the monster's invulnerability.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Longwitton_dragon",
+        "https://www.mysteriousbritain.co.uk/legends/the-longwitton-dragon/",
         "http://www.wyrm.org.uk/ukdracs/longwitton.html"
       ],
       "earliest_record": "John Hodgson's 'A History of Northumberland', vol. 2 (Newcastle upon Tyne, 1827) is the earliest comprehensive written record located; a related tradition also appears in Thomas Percy's 'Reliques of Ancient English Poetry' (1765) under 'The Legend of Sir Guy', where the Earl of Warwick fights a dragon that heals itself in the same three wells",
@@ -10898,7 +10902,7 @@
       "detail": "Maeshowe is one of the finest Neolithic chambered cairns in Europe, a great grass-covered mound on the Mainland of Orkney enclosing a magnificent stone-built central chamber, raised some five thousand years ago and aligned so that the light of the setting midwinter sun shines straight down the entrance passage to illuminate the back wall, a deliberate marriage of architecture and the turning year. But Maeshowe's greatest fame comes from a much later intrusion: the largest collection of runic inscriptions found anywhere outside Scandinavia.\n\nIn the 12th century, Norsemen (Orkney was then a Norse earldom) broke into the ancient tomb, probably crusaders or shelterers from a storm, and carved their runes into its stones. The graffiti they left is wonderfully, humanly ordinary: boasts that 'these runes were carved by the most skilled rune-carver in the western ocean'; claims that great treasure had been carried off from the howe; a note that 'Thorni bedded Helgi' and other ribald remarks; and the names of men recording simply that they had been there, a Viking-age noticeboard scratched into a tomb already three thousand years old when they entered it.\n\nNorse tradition also peopled such mounds with their original inhabitants made monstrous, the howe-dwellers or 'haugbui', and the trows of Orkney lore were associated with just such ancient mounds. Maeshowe stands at a remarkable crossroads of belief and history: a Neolithic temple of the dead and the midwinter sun, reopened and inscribed by Norsemen whose runes turned the sacred cairn into a record of human curiosity, greed and bravado across the centuries.",
       "sources": [
         "https://en.wikipedia.org/wiki/Maeshowe",
-        "https://www.orkneyjar.com/history/maeshowe/runes/"
+        "https://www.nessofbrodgar.co.uk/maeshowe-runes/"
       ],
       "origin_date": "c. 2800-2700 BC (cairn construction)",
       "earliest_record": "The runic inscriptions themselves were carved in the 12th century by Norse visitors",
@@ -12990,7 +12994,7 @@
       "sources": [
         "https://en.wikipedia.org/wiki/Owlman",
         "https://en.wikipedia.org/wiki/Morgawr_(folklore)",
-        "https://www.cryptidcampfire.com/blog/whos-who-in-the-owlman-case"
+        "https://godsandmonsters.info/owlman/"
       ],
       "origin_date": "17 April 1976 (first reported sighting); further sightings 3-4 July 1976",
       "earliest_record": "First recorded in the pamphlet 'Morgawr: The Monster of Falmouth Bay' by 'Anthony Mawnan-Peller' (a pseudonym of Tony \"Doc\" Shiels), circulated in Cornwall in 1976, and in contemporary Falmouth Packet newspaper coverage of the same year.",
@@ -14200,7 +14204,7 @@
       "category": "pirate",
       "region": "Isle of Barra, Outer Hebrides, Scotland",
       "summary": "Roderick 'Ruari the Turbulent' MacNeil, 35th chief of Clan MacNeil, ran his piracy from the sea-girt fortress of Kisimul Castle on Barra, raiding along the Irish Sea and West Coast; each evening his herald proclaimed that since Ruairi Mòr had dined, the kings of the earth might now eat.",
-      "source": "https://hiddenscotland.co/the-pirate-laird-of-kisimul-castle/",
+      "source": "https://www.scotlandshop.com/tartanblog/famous-faces-clan-macneil",
       "date_added": "2026-06-09",
       "tags": [
         "scotland",
@@ -14212,7 +14216,7 @@
       "detail": "Ruari Mòr MacNeil (fl. 1560s-1590s), known as Ruaraidh an Tartair ('Rory the Turbulent'), was a pirate chieftain who operated from Kisimul Castle, a small island fortress in Castlebay on the Isle of Barra in the Outer Hebrides. He raided merchant shipping the length of the west coast and as far as the Irish Sea, targeting English vessels in particular with an enthusiasm that became a matter of legend. His most celebrated piece of self-mythologisation was the instruction he gave to have a herald ascend Kisimul's tower each evening and blow his horn to announce that Ruairi Mòr had dined, after which the kings and princes of the earth might at last eat. The expression became one of the most quoted examples of Highland chiefly hauteur in all of Scottish tradition.\n\nHis capture required deception rather than force: according to the most common account, Mackenzie sailed to Kisimul disguised as a wine merchant, plied Ruari with drink until he passed out, and carried the unconscious chief to Edinburgh in chains. At trial, Ruari's plea, that he had attacked only English ships to avenge the unjust execution of Mary Queen of Scots, flattered King James VI enough to spare his life, though the MacNeil lands were temporarily forfeited before being leased back to the clan.\n\nOn Barra itself, Ruari Mòr was remembered as a hero who brought wealth to the island and defended his people; his story has been treated in Hidden Scotland, the Historic Environment Scotland history of Kisimul Castle, and the academic study 'Scotland's Pirate Havens: Piracy in the Western Isles and Orkneys, 1590–1724' (Stanford, EIU Historia, 2014). John Gow gives Orkney its own version of the pirate-chief legend; Ruari Mòr is Barra's.",
       "pronunciation": "ROH-ree MORE",
       "sources": [
-        "https://hiddenscotland.co/the-pirate-laird-of-kisimul-castle/",
+        "https://www.scotlandshop.com/tartanblog/famous-faces-clan-macneil",
         "https://www.historicenvironment.scot/visit-a-place/places/kisimul-castle/history/",
         "https://canmore.org.uk/site/21390/barra-kiessimul-castle"
       ],
@@ -14748,7 +14752,7 @@
       "category": "beast",
       "region": "Black Country / Worcestershire, England",
       "summary": "Seven supernatural birds cry together only once in a generation, and when they do, Black Country miners refuse to go underground that day. Their shriek has foretold every great mining disaster in the Midlands within living memory.",
-      "source": "https://en.wikipedia.org/wiki/Seven_Whistlers",
+      "source": "https://folklorethursday.com/halloween/ghosts-angels-death-omens-seven-whistlers-mining-folklore/",
       "date_added": "2026-06-19",
       "tags": [
         "england",
@@ -14758,9 +14762,9 @@
         "spectral"
       ],
       "sources": [
-        "https://en.wikipedia.org/wiki/Seven_Whistlers",
-        "https://archive.org/details/folkloreofherefo00leat",
-        "https://en.wikipedia.org/wiki/Charles_Swainson_(ornithologist)",
+        "https://folklorethursday.com/halloween/ghosts-angels-death-omens-seven-whistlers-mining-folklore/",
+        "https://en.wikipedia.org/wiki/Ella_Mary_Leather",
+        "https://en.wikipedia.org/wiki/Charles_Swainson_(naturalist)",
         "https://archive.org/details/NotesOnTheFolk-loreOfTheNorthernCountiesOfEnglandAndTheBorders",
         "https://archive.org/details/folkloreprovinci00swaiuoft",
         "https://www.oxfordreference.com/display/10.1093/oi/authority.20110803100457351"
@@ -15762,7 +15766,7 @@
       "category": "dragon",
       "region": "Caithness, Scotland",
       "summary": "The greatest of all sea serpents in Scottish legend, so vast its body encircled the earth. When the hero Assipattle slew it, its teeth became the Orkney islands and its coiled body became Iceland.",
-      "source": "https://en.wikipedia.org/wiki/Stoor_Worm",
+      "source": "https://en.wikipedia.org/wiki/Stoor_worm",
       "date_added": "2026-06-03",
       "tags": [
         "sea",
@@ -15773,7 +15777,7 @@
       ],
       "detail": "The Stoor Worm is the great sea-dragon of Orcadian and northern Scottish legend, a monster so vast that its body stretched halfway round the world, and whose reeking breath withered crops, killed cattle, and poisoned the air for miles. Each morning it woke and yawned nine times, and to keep it from devouring the land whole, the king's council settled on a weekly tribute of seven young maidens, chosen by lot and left on the shore for the creature to swallow. When even that grew unbearable, the king's own daughter, Princess Gem-de-lovely, was named as the final sacrifice, and the king offered his kingdom, his daughter's hand, and a magic sword called Sikkersnapper, inherited from a sea-god ancestor, to whoever could kill the Stoor Worm within the ten weeks' grace he had left to find a champion.\n\nThe hero proved to be Assipattle, the youngest of seven sons on a poor farm, mocked by his brothers as a lazy daydreamer who spent his evenings sprawled in the fireside ashes, boasting of victories he had never won. On the morning set for the sacrifice, Assipattle stole his father's fastest horse, Teetgong, tricking it into a full gallop with a whistle cut from a goose's windpipe, and rode for the shore. There he took an iron pot and a glowing lump of peat from a cottage fire, commandeered the king's own boat by trickery, and rowed straight into the Stoor Worm's gaping mouth as it woke and yawned for the first time that day. Diving down its throat before the beast could swallow, he found its liver and thrust the burning peat deep into it.\n\nIn its death-throes the Stoor Worm's teeth fell out into the sea and became the islands of Orkney, Shetland and the Faroes; its tongue, torn loose, gouged out the basin that filled to become the Baltic Sea; and its huge body, curling up as it died, formed the shape of Iceland, where the fire still smouldering in its buried liver is said to account for the island's volcanoes to this day. Assipattle won the sword, the kingdom and the princess, and the tale, first set down in print by the Orcadian antiquarian Walter Traill Dennison in 1891, remains among the grandest dragon-slaying stories in British and Norse tradition.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Stoor_Worm",
+        "https://en.wikipedia.org/wiki/Stoor_worm",
         "https://en.wikipedia.org/wiki/Assipattle_and_the_Stoor_Worm",
         "https://en.wikipedia.org/wiki/Walter_Traill_Dennison"
       ],
@@ -16764,7 +16768,7 @@
         "https://en.wikipedia.org/wiki/Drummer_of_Tedworth",
         "https://onlinelibrary.wiley.com/doi/full/10.1111/j.1468-2281.2005.00226.x",
         "https://eprints.bbk.ac.uk/id/eprint/250/1/Hunter4.pdf",
-        "https://psi-encyclopedia.spr.ac.uk/articles/tedworth-drummer"
+        "https://psi-encyclopedia.spr.ac.uk/articles/drummer-tedworth/"
       ],
       "origin_date": "1662",
       "earliest_record": "Disturbances at the Tedworth (now Tidworth), Wiltshire home of magistrate John Mompesson began in March 1662 and continued intermittently until April 1663, after Mompesson confiscated the drum of an arrested vagrant drummer, William Drury. First substantially documented by Joseph Glanvill, who visited the house and investigated in person. An earlier account appeared in the pamphlet A Blow at Modern Sadducism (1668); the fullest version was published posthumously in Saducismus Triumphatus: or, Full and Plain Evidence Concerning Witches and Apparitions (1681, edited by Henry More), which gives 26 total relations of supernatural events.",
@@ -16941,7 +16945,7 @@
       "region": "Carn Galver, Cornwall",
       "summary": "A gentle Cornish giant who guarded the people of Zennor from rival giants, and who accidentally killed the village lad he loved with a playful tap on the head, then died of grief.",
       "detail": "The Giant of Carn Galver (sometimes named Holiburn in the telling) was one of the kindlier giants of Cornish folklore, first set down by Robert Hunt in his Popular Romances of the West of England (1865), dwelling among the granite tors of Carn Galver on the wild coast between Morvah and Zennor. Far from a terror, he was the protector of the little farming and fishing folk of the parish, guarding them against the fiercer giants of the country round about, and asking in return only company and the occasional gift of food.\n\nHis story is a tender and tragic one. He had grown especially fond of a young man of Choon, who would come to play games of quoits and bowls with him among the rocks. One evening, in pure affection, the giant tapped the lad playfully on the head with his fingertips as he left, forgetting his own enormous strength, and the young man fell dead at his feet, his skull broken like an eggshell. The giant was inconsolable; he sat among his tors and pined, refusing to eat, and within seven years he had died of grief, leaving the rock-piles of Carn Galver as the only monument to the gentle giant who loved a mortal too roughly.",
-      "source": "https://www.cornwalls.co.uk/myths-legends/carn_galva.htm",
+      "source": "https://www.mysteriousbritain.co.uk/legends/the-giant-of-carn-galva/",
       "date_added": "2026-06-14",
       "tags": [
         "guardian",
@@ -16950,7 +16954,7 @@
         "cornwall"
       ],
       "sources": [
-        "https://www.cornwalls.co.uk/myths-legends/carn_galva.htm",
+        "https://www.mysteriousbritain.co.uk/legends/the-giant-of-carn-galva/",
         "https://archive.org/details/popularromanceso00huntuoft",
         "https://heritagerecords.nationaltrust.org.uk/HBSMR/MonRecord.aspx?uid=MNA104144"
       ],
@@ -17108,7 +17112,7 @@
       "region": "Dartmoor, Devon",
       "summary": "On a lonely stretch of Dartmoor road, a pair of disembodied hairy hands are said to seize the steering or handlebars of passing travellers and wrench them off the road to their doom.",
       "detail": "The Hairy Hands haunt a stretch of the B3212 road across Dartmoor, between Postbridge and Two Bridges, where a run of crashes from around 1910 gave rise to one of the moor's most unsettling legends. The most notorious was fatal: in June 1921, E. H. Helby, medical officer at Dartmoor Prison, was thrown from his motorcycle and killed on the road, though his two children survived unharmed in the sidecar. The story broke nationally that October, when the journalist T. Gifford wrote it up for the Daily Mail under the headline 'Unseen Hands — Eerie Mystery of Devon Road,' turning a string of local accidents into a named legend: witnesses described a disembodied pair of large, muscular, hairy hands that would suddenly appear and grip the steering wheel or handlebars, forcing the vehicle off the road.\n\nReports multiplied through the 1920s (a caravan was said to be visited at night by the hands pressing against the window), and the local belief grew that some malevolent presence on that bleak crossing of the moor reached out for the unwary. The road was eventually re-cambered, and the crashes were doubtless owed to a genuinely dangerous bend, but the Hairy Hands have kept their grip on Dartmoor's imagination as a peculiarly modern haunting, a ghost of the motor age clinging to one of the loneliest roads in England.",
-      "source": "https://www.legendarydartmoor.co.uk/hairy_hand.htm",
+      "source": "https://www.skeptic.org.uk/2022/07/the-hairy-hands-of-devon-how-a-tabloid-tale-spiraled-into-a-full-blown-urban-legend/",
       "date_added": "2026-06-14",
       "tags": [
         "haunting",
@@ -17123,7 +17127,7 @@
       "origin_type": "historical-event",
       "dating_confidence": "high",
       "sources": [
-        "https://www.legendarydartmoor.co.uk/hairy_hand.htm",
+        "https://www.skeptic.org.uk/2022/07/the-hairy-hands-of-devon-how-a-tabloid-tale-spiraled-into-a-full-blown-urban-legend/",
         "https://www.legendarydartmoor.co.uk/2016/03/25/hairy_hands/"
       ],
       "period_slug": "modern-folklore"
@@ -17205,7 +17209,7 @@
       "sources": [
         "https://www.henhamhistory.org/henham-dragon/",
         "https://quod.lib.umich.edu/e/eebo2/A39848.0001.001?view=toc",
-        "https://blogs.bl.uk/living-knowledge/2016/08/on-the-trail-of-the-essex-serpent.html"
+        "https://en.wikipedia.org/wiki/Henham"
       ],
       "origin_date": "1669",
       "earliest_record": "'The Flying Serpent, or, Strange News out of Essex', pamphlet printed and sold by Peter Lillicrap, London, 1669, describing sightings on 27-28 May 1669; commonly attributed to the writer William Winstanley",
@@ -19085,7 +19089,7 @@
       "category": "ghost",
       "region": "Cambridgeshire",
       "summary": "Iron-age earthworks at Wandlebury Ring, Cambridge, are said to be haunted by a phantom warrior, perhaps Gogmagog himself, while a 1950s dig claimed giant figures lay carved beneath the turf.",
-      "source": "https://en.wikipedia.org/wiki/Wandlebury_Camp",
+      "source": "https://en.wikipedia.org/wiki/Wandlebury_Hill_Fort",
       "date_added": "2026-06-03",
       "tags": [
         "spectral",
@@ -19097,7 +19101,7 @@
       ],
       "detail": "Wandlebury Ring, an Iron Age hillfort atop the Gog Magog Hills just south of Cambridge, takes its name from one of Britain's oldest giant-legends. The biblical Gog and Magog were reimagined in British folklore as Gogmagog, the last and greatest of the giants said to have inhabited the island before the Trojan hero Brutus arrived, the same figure whose defeat by Corineus is remembered in Cornwall. A 1574 decree of Cambridge University, forbidding students to visit the hills on pain of a fine, is the earliest record of the 'Gog Magog' name being attached to this stretch of chalk downland, and antiquarians of the 17th and 18th centuries described a huge hill figure of the giant cut into the turf at Wandlebury, though all trace of it had vanished by the 19th century.\n\nThe giant lingered on in the folklore of nearby villages long after his image faded from the hillside. Children in Cherry Hinton were warned to keep out of the local chalk pits, lest the buried giants Gog and Magog wake and give chase. Another tale told that Gog once quarrelled with his wife Magog and hurled a great clod of earth at her; it missed, and where it landed a new hill rose from the ground.\n\nIn 1955-56, the dowser and archaeologist T.C. Lethbridge reignited the legend when he claimed to have uncovered, beneath the turf of Wandlebury, the outlines of three enormous figures cut into the chalk: a sun-god, a moon-goddess, and a warrior-god riding a horse-drawn chariot. A concurrent, more conventional excavation by the archaeologists Grahame Clark and Brian Hartley, also in 1955-56, dated the hillfort's surviving ditch and rampart to the fifth or fourth century BC, giving the genuine Iron Age monument a secure scientific date quite separate from Lethbridge's disputed chalk-figure claim, which mainstream archaeologists rejected as natural ice-age scarring. Lethbridge's 'warrior-god' nonetheless chimed with an older local belief that the ramparts themselves were haunted, walkers reporting a mounted figure who challenges travellers at dusk, or simply an oppressive sense of being watched from the ancient earthworks, as if Gogmagog's last guardian still kept watch over his hill.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Wandlebury_Camp",
+        "https://en.wikipedia.org/wiki/Wandlebury_Hill_Fort",
         "https://www.mythicalbritain.co.uk/post/t-c-lethbridge-and-the-lost-gogmagog-giants-of-wandlebury",
         "https://hillforts.arch.ox.ac.uk/records/EN3025.html"
       ],
@@ -20277,7 +20281,7 @@
       "sources": [
         "https://www.bartleby.com/lit-hub/hc/guy-mannering-or-the-astrologer/additional-note/",
         "https://gutenberg.org/files/5999/old/files/relative.htm",
-        "https://craftydistillery.com/blogs/bolt-from-the-blue-journal-2/the-galloway-guide-to-gruff-looking-sea-dogs"
+        "http://registry.gsg.org.uk/sr/sitedetails.php?id=679"
       ],
       "earliest_record": "Contemporary local reputation as a real Dutch smuggling captain on the Galloway/Dumfriesshire coast operating the lugger 'Black Prince'; fictionalised by Sir Walter Scott as Dirk Hatteraick in Guy Mannering (1815), with Scott's own 'Additional Note' to the novel explicitly identifying Yawkins as the prototype",
       "period": "Active smuggling career presumably late 18th century, contemporary with the wider Galloway/Solway smuggling trade; fictionalised in print 1815",

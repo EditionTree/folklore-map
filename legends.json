@@ -1,6 +1,6 @@
 {
   "generated": "2026-09-02T22:42:01.595431Z",
-  "total": 723,
+  "total": 722,
   "categories": {
     "beast": "Beasts",
     "ghost": "Ghosts",
@@ -19049,23 +19049,6 @@
       "origin_type": "historical-event",
       "dating_confidence": "high",
       "period_slug": "victorian-britain"
-    },
-    {
-      "name": "Veasta",
-      "lat": 59.15,
-      "lng": -2.773,
-      "category": "water",
-      "region": "Orkney",
-      "summary": "A sea beast of Orcadian waters, seen offshore during storms in old accounts. Like many Norse-influenced sea legends of Orkney, Veasta sits between monster and natural phenomenon, a reminder that the sea around these islands has always been treated as a living, sentient thing.",
-      "source": "https://en.wikipedia.org/wiki/Veasta",
-      "date_added": "2026-06-03",
-      "tags": [
-        "sea",
-        "norse",
-        "scotland",
-        "orkney"
-      ],
-      "detail": "The Veasta is a sea-monster of Orcadian folklore, one of the many dread creatures with which the people of Orkney peopled the wild waters around their islands. Like much of Orkney's supernatural tradition it carries the stamp of the islands' long Norse heritage, and it belongs to that class of sea-beings glimpsed offshore in heavy weather, a great creature seen, or believed to be seen, amid the storm-driven waves, half monster and half a personification of the dangerous sea itself.\n\nIn the old accounts the Veasta appears during storms, rising in the troubled water off the coast, a beast of fearful size and aspect whose presence was associated with rough seas and peril to boats and crews. It sits, like several Orkney sea-creatures, on the uncertain border between a distinct legendary monster and a way of explaining the terrors of the ocean, the looming shapes, sudden swells and drowning dangers of the northern sea understood as the movement of a living thing in the water.\n\nThe Veasta reflects the deep Orcadian sense, woven all through the islands' folklore, that the sea is not inert but sentient, a living, willful and often malevolent power, populated by sorcerous Finfolk, monstrous Nuckelavee, and beasts such as the Veasta, all expressing the islanders' intimate and fearful relationship with the waters that surrounded and sustained them. It stands as one of the lesser-known but characteristic sea-terrors of the Orkney imagination."
     },
     {
       "name": "Wade and Bell",

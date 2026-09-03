@@ -40,11 +40,11 @@
   <url><loc>https://folklorefinder.uk/legends/region/norfolk</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/county-sligo</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/county-antrim</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/london</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/hampshire</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/shetland</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/merseyside</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/devon</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/region/london</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/argyll</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/suffolk</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/sussex</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
@@ -67,6 +67,7 @@
   <url><loc>https://folklorefinder.uk/legends/region/cambridgeshire</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/cumbria</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/county-kilkenny</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/region/edinburgh</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/county-fermanagh</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/hebrides</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/region/county-wexford</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
@@ -1141,6 +1142,7 @@
     <image:title>A cloaked rider on a black horse galloping along a moonlit muddy Yorkshire road past a distant coaching inn</image:title>
     <image:caption>A visual interpretation of Dick Turpin haunting the old Yorkshire roads</image:caption>
   </image:image></url>
+  <url><loc>https://folklorefinder.uk/legends/dick-whittington-and-his-cat</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/dinas-emrys</loc><lastmod>2026-08-20</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/dinas-emrys-hero.jpg</image:loc>
@@ -1658,6 +1660,7 @@
     <image:title>A lone walker on the misty summit of Ben Macdui with a vast grey figure suggested in the cloud behind him</image:title>
     <image:caption>A visual interpretation of the Grey Man on Ben Macdui in the Cairngorms</image:caption>
   </image:image></url>
+  <url><loc>https://folklorefinder.uk/legends/greyfriars-bobby</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/griffin</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/griffin-hero.jpg</image:loc>
@@ -1862,6 +1865,7 @@
     <image:title>A cinematic ghost folklore image of Hexham Heads, shown as the central apparition or haunting from Northumberland</image:title>
     <image:caption>A visual interpretation of Hexham Heads</image:caption>
   </image:image></url>
+  <url><loc>https://folklorefinder.uk/legends/highgate-vampire</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
   <url><loc>https://folklorefinder.uk/legends/hill-of-allen</loc><lastmod>2026-08-25</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/hill-of-allen-hero.jpg</image:loc>
@@ -3715,7 +3719,7 @@
     <image:caption>A visual interpretation of the Gloucestershire Green Man tradition</image:caption>
   </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/the-grey-lady-of-speke-hall</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/the-gwybr-of-llanrhaeadr</loc><lastmod>2026-08-31</lastmod><priority>0.6</priority>
+  <url><loc>https://folklorefinder.uk/legends/the-gwybr-of-llanrhaeadr</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/the-gwybr-of-llanrhaeadr-hero.jpg</image:loc>
     <image:title>A distant winged serpent shape in the mist above Pistyll Rhaeadr waterfall</image:title>

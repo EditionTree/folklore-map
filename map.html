@@ -64,8 +64,8 @@
   <link rel="stylesheet" href="/assets/leaflet/MarkerCluster.Default.css?v=20260901a"/>
   <link rel="preload" href="/fonts/marcellus-400-latin.woff2" as="font" type="font/woff2" crossorigin/><link rel="preload" href="/fonts/spectral-400-latin.woff2" as="font" type="font/woff2" crossorigin/>
   <link rel="stylesheet" href="/fonts/fonts.css"/>
-  <link rel="stylesheet" href="/nav.css?v=20260823b"/>
-<link rel="stylesheet" href="/footer.css?v=20260823a"/>
+  <link rel="stylesheet" href="/nav.css?v=20260904a"/>
+<link rel="stylesheet" href="/footer.css?v=20260904a"/>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -725,7 +725,8 @@
       font-family: var(--font-body);
       font-size: 12px;
       line-height: 1.6;
-      color: rgba(246,241,230,.78);
+      /* Matches footer.css's colophon brown; see the note there. */
+      color: rgba(198,170,130,.82);
       display: block;
       text-align: center;
       position: relative;
@@ -737,7 +738,7 @@
       top: 0; left: 0; right: 0; height: 1px;
       background: linear-gradient(90deg, transparent 0%, rgba(176,144,96,0.6) 20%, rgba(196,98,42,0.8) 50%, rgba(176,144,96,0.6) 80%, transparent 100%);
     }
-    footer a { color: rgba(246,241,230,.9); text-decoration: none; }
+    footer a { color: #b09060; text-decoration: none; }
     /* The bug-report trigger has to be a <button> (it opens a dialog, not a
        page) but must read as one of the footer's text links beside it. The
        modal, its JS and the submit-bug endpoint have all been live since
@@ -745,12 +746,12 @@
        3a7aa56d's footer restyle on 2026-07-07. */
     .footer-bug-btn {
       background: none; border: 0; padding: 0; cursor: pointer;
-      font: inherit; color: rgba(246,241,230,.9);
+      font: inherit; color: #b09060;
       display: inline-flex; align-items: center; gap: 4px; vertical-align: baseline;
     }
-    .footer-bug-btn:hover { color: #fff; text-decoration: underline; }
+    .footer-bug-btn:hover { color: #d9bd8e; text-decoration: underline; }
     .footer-bug-btn svg { flex-shrink: 0; }
-    footer a:hover { color: var(--parchment); }
+    footer a:hover { color: #d9bd8e; }
     /* Lucide icon inside a footer link (the Ko-fi cup) — aligned off the
        baseline, as the footer is inline text rather than a flex row. */
     footer a svg { vertical-align: -.15em; margin-right: 5px; }
@@ -1016,7 +1017,7 @@
   </div>
 </div>
 
-<footer>Folklore Finder &nbsp;&#183;&nbsp; An atlas of myths, legends, &amp; stories &nbsp;&#183;&nbsp; &copy; EditionTree &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/about">About</a> &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/updates">Updates</a> &nbsp;&#183;&nbsp; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2v2"/><path d="M14 2v2"/><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"/><path d="M6 2v2"/></svg>Ko-fi</a> &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/privacy">Privacy</a> &nbsp;&#183;&nbsp; <button type="button" class="footer-bug-btn" aria-haspopup="dialog"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 22V4a1 1 0 0 1 1-1h9l-1.5 4H19a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-7l1.5-4H5"/></svg>Report a bug</button></footer>
+<footer><span class="footer-meta">Folklore Finder &nbsp;&#183;&nbsp; <span class="footer-tagline">An atlas of myths, legends, &amp; stories &nbsp;&#183;&nbsp; </span>&copy; EditionTree &nbsp;&#183;&nbsp; </span><a href="https://folklorefinder.uk/about">About</a> &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/updates">Updates</a> &nbsp;&#183;&nbsp; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2v2"/><path d="M14 2v2"/><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"/><path d="M6 2v2"/></svg>Ko-fi</a> &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/privacy">Privacy</a> &nbsp;&#183;&nbsp; <button type="button" class="footer-bug-btn" aria-haspopup="dialog"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 22V4a1 1 0 0 1 1-1h9l-1.5 4H19a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1h-7l1.5-4H5"/></svg>Report a bug</button></footer>
 
 <!-- Bug report modal -->
 <div id="bugModal" class="bug-modal-overlay" style="display:none" role="dialog" aria-modal="true" aria-labelledby="bugModalTitle">

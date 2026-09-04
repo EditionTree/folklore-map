@@ -457,10 +457,15 @@ def side_head(kicker, heading, icon):
     )
 
 
+# The masthead run before the links is wrapped so the phone footer can drop it:
+# it is bare text nodes otherwise, which CSS cannot address. .footer-tagline nests
+# inside .footer-meta so the tagline can later be dropped on its own, without a
+# second edit across ~850 files. See footer.css, the max-width:560px block.
 FOOTER_HTML = (
-    '<footer>Folklore Finder &nbsp;&#183;&nbsp; '
-    'An atlas of myths, legends, &amp; stories &nbsp;&#183;&nbsp; '
-    '&#169; EditionTree &nbsp;&#183;&nbsp; '
+    '<footer><span class="footer-meta">Folklore Finder &nbsp;&#183;&nbsp; '
+    '<span class="footer-tagline">'
+    'An atlas of myths, legends, &amp; stories &nbsp;&#183;&nbsp; </span>'
+    '&#169; EditionTree &nbsp;&#183;&nbsp; </span>'
     '<a href="https://folklorefinder.uk/about">About</a> &nbsp;&#183;&nbsp; '
     '<a href="https://folklorefinder.uk/updates">Updates</a> &nbsp;&#183;&nbsp; '
     '<a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener">'
@@ -523,7 +528,7 @@ def topnav_html(active=""):
     # falls back to a reduced scorer if the global is missing, so a reorder
     # degrades recall instead of breaking search on 829 pages.
     parts.append('<script src="/js/search-score.js?v=%s" data-cfasync="false"></script>' % SEARCH_SCORE_V)
-    parts.append('<script src="/nav-search.js?v=20260901a" data-cfasync="false" defer></script>')
+    parts.append('<script src="/nav-search.js?v=20260904a" data-cfasync="false" defer></script>')
     return "".join(parts)
 
 
@@ -592,8 +597,10 @@ def collection_article_html(members, slugmap, cats, meta, featured_pages):
 BROWSE_STYLE = """
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent 25rem),linear-gradient(180deg,#e8dcc5,#f6f1e6 34rem,#eadfc9);color:#3f3023;font-family:'Spectral',serif;line-height:1.7;min-height:100vh}
-/* Mobile safeguard: keep the page itself from scrolling sideways. */
-@media(max-width:900px){html,body{overflow-x:hidden}}
+/* Mobile safeguard: keep the page itself from scrolling sideways. html only,
+   not body: overflow-x on <body> makes body a scroll container, and the
+   sticky nav bar inside it then sticks to a box that never scrolls. */
+@media(max-width:900px){html{overflow-x:hidden}}
 .site-banner{position:relative;background:linear-gradient(135deg,rgba(196,98,42,0.18) 0%,rgba(176,144,96,0.06) 35%,transparent 60%),linear-gradient(180deg,#1a0e06 0%,#2c1510 55%,#3d1e0c 100%);padding:16px 20px;text-align:center}
 .site-banner::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,#8b3a1a 15%,#b09060 50%,#8b3a1a 85%,transparent)}
 .site-banner::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(176,144,96,.6) 20%,rgba(196,98,42,.8) 50%,rgba(176,144,96,.6) 80%,transparent)}
@@ -895,8 +902,8 @@ def build_browse_page(page_title, desc, url, h1, intro, crumb, nav_html, cards_h
             '\n'
             '<link rel="preload" href="/fonts/marcellus-400-latin.woff2" as="font" type="font/woff2" crossorigin/><link rel="preload" href="/fonts/spectral-400-latin.woff2" as="font" type="font/woff2" crossorigin/>\n'
             '<link rel="stylesheet" href="/fonts/fonts.css"/>\n'
-            '<link rel="stylesheet" href="/nav.css?v=20260823b"/>\n'
-            '<link rel="stylesheet" href="/footer.css?v=20260823a"/>\n'
+            '<link rel="stylesheet" href="/nav.css?v=20260904a"/>\n'
+            '<link rel="stylesheet" href="/footer.css?v=20260904a"/>\n'
             + jsonld_html + breadcrumb_jsonld_html + head_extra
             + '<style>' + BROWSE_STYLE + '</style></head>\n<body class="catalogue-page">\n'
             + topnav_html(nav_active) + '\n<main id="main-content" tabindex="-1">\n' + banner_html() + '\n<div class="wrap' + (' ' + wrap_class if wrap_class else '') + '"' + (' style=\"--accent:' + esc(accent) + '\"' if accent else '') + '>\n'
@@ -1677,9 +1684,9 @@ FEATURED_PAGE = Template("""<!DOCTYPE html>
 <link rel="preload" href="/fonts/marcellus-400-latin.woff2" as="font" type="font/woff2" crossorigin/><link rel="preload" href="/fonts/spectral-400-latin.woff2" as="font" type="font/woff2" crossorigin/>
 <link rel="stylesheet" href="/fonts/fonts.css"/>
 <link rel="stylesheet" href="/assets/leaflet/leaflet.css?v=20260901a"/>
-<link rel="stylesheet" href="/nav.css?v=20260823b"/>
-<link rel="stylesheet" href="/footer.css?v=20260823a"/>
-<link rel="stylesheet" href="/legend-page.css?v=20260826d"/>
+<link rel="stylesheet" href="/nav.css?v=20260904a"/>
+<link rel="stylesheet" href="/footer.css?v=20260904a"/>
+<link rel="stylesheet" href="/legend-page.css?v=20260904a"/>
 <script type="application/ld+json">$jsonld</script>
 $breadcrumb_jsonld
 </head>
@@ -3454,8 +3461,8 @@ def build():
 <meta name="twitter:image" content="{BASE}/og/preview-folklore-finder.jpg"/>
 <link rel="preload" href="/fonts/marcellus-400-latin.woff2" as="font" type="font/woff2" crossorigin/><link rel="preload" href="/fonts/spectral-400-latin.woff2" as="font" type="font/woff2" crossorigin/>
 <link rel="stylesheet" href="/fonts/fonts.css"/>
-<link rel="stylesheet" href="/nav.css?v=20260823b"/>
-<link rel="stylesheet" href="/footer.css?v=20260823a"/>
+<link rel="stylesheet" href="/nav.css?v=20260904a"/>
+<link rel="stylesheet" href="/footer.css?v=20260904a"/>
 <style>
 *{{box-sizing:border-box;margin:0;padding:0}}
 body{{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent 25rem),linear-gradient(180deg,#e8dcc5,#f6f1e6 34rem,#eadfc9);color:#3f3023;font-family:'Spectral',serif;min-height:100vh}}

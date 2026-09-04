@@ -218,3 +218,24 @@
     });
   }
 })();
+
+// Centre the current page's nav link in the scrolling strip on phones.
+//
+// Below 640px the six iconned links measure ~575px inside a ~300px track, so
+// roughly half the bar sits off-screen. Starting that row at "Home" every time
+// means a visitor on Collections or My Archive never sees where they are. This
+// scrolls the strip only — block:"nearest" keeps the page itself still — and is
+// a no-op above 640px, where the row fits and nothing overflows.
+//
+// Its own IIFE: the search block above returns early when #navSearch is absent,
+// and this must still run on any page that renders the bar.
+(function () {
+  if (window.innerWidth > 640) return;
+  var links = document.querySelector(".topnav-links");
+  var active = links && links.querySelector("a.active");
+  if (!active || links.scrollWidth <= links.clientWidth) return;
+  // Direct assignment rather than scrollIntoView: some engines walk every
+  // scrollable ancestor for that call, which on a sticky bar can nudge the
+  // document as well.
+  links.scrollLeft = active.offsetLeft - (links.clientWidth - active.offsetWidth) / 2;
+})();

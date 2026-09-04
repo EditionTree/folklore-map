@@ -22,7 +22,12 @@ body{
   line-height:1.72;
 }
 /* Mobile safeguard: keep the page itself from scrolling sideways. */
-@media(max-width:900px){html,body{overflow-x:hidden}}
+/* html only, not body. overflow-x on <body> makes body a scroll container,
+   and the sticky nav bar inside it then sticks to a box that never scrolls
+   — so the bar slid away on phones. On <html> the scroll container is the
+   viewport, which is what sticky wants. (clip is not an option here: on the
+   root it propagates to the viewport and clips the page to one screen.) */
+@media(max-width:900px){html{overflow-x:hidden}}
 a{color:inherit}
 button{font:inherit}
 /* The canonical top nav now lives in nav.css, loaded by every page that
@@ -609,7 +614,11 @@ h1{
   to{left:130%}
 }
 @media(prefers-reduced-motion:reduce){.ach-toast.unlock.show::before{animation:none}.ach-toast{transform:none;transition:opacity .2s ease}.ach-toast.show{transform:none}.ach-toast-clickable:hover,.ach-toast-clickable:focus-visible{transform:none}}
-@media(max-width:480px){.ach-toast-stack{right:8px;top:8px}.ach-toast{width:calc(100vw - 16px)}}
+/* Clear the pinned nav bar (nav.css makes nav.topnav sticky below 900px; it
+   stands 56px there). The toast already painted over the bar on load at
+   375px; with the bar pinned it would sit there for the toast's whole life. */
+@media(max-width:900px){.ach-toast-stack{top:66px}}
+@media(max-width:480px){.ach-toast-stack{right:8px;top:66px}.ach-toast{width:calc(100vw - 16px)}}
 
 /* "Nearest legend found" toast — no icon, and it holds a real button (Share)
    rather than being whole-toast-clickable, so it stacks its rows vertically

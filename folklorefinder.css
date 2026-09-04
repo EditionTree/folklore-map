@@ -358,6 +358,16 @@ body.ff-paper {
     grid-column: 2;
     grid-row: 1 / span 2;
   }
+
+  /* The stats grid, this strip and the footer stack into one dark block at the
+     foot of the page: 253px of chrome on a 812px screen. Trimming the strip and
+     compacting the footer brings that back under 180px. */
+  .home-page .stats-method {
+    margin-top: 4px;
+    padding-bottom: 4px;
+    font-size: 12.5px;
+    line-height: 1.55;
+  }
 }
 
 /* Shared interior-page language */
@@ -1136,8 +1146,10 @@ body.home-page {
   box-shadow: 0 18px 46px rgba(63,48,35,.08);
 }
 
+/* Padding deliberately absent: this file loads after footer.css, so restating
+   it here silently beat footer.css's own mobile block. flex-shrink is page
+   context (the home body is a flex column) and stays. */
 .home-page footer {
-  padding: 12px 18px;
   flex-shrink: 0;
 }
 
@@ -1273,6 +1285,11 @@ body.home-page {
 
 /* Mobile safeguard: never let the page itself scroll sideways (individual
    scroll containers like the nav row still scroll internally). */
+/* html only, not body. overflow-x on <body> makes body a scroll container,
+   and the sticky nav bar inside it then sticks to a box that never scrolls
+   — so the bar slid away on phones. On <html> the scroll container is the
+   viewport, which is what sticky wants. (clip is not an option here: on the
+   root it propagates to the viewport and clips the page to one screen.) */
 @media (max-width: 900px) {
-  html, body { overflow-x: hidden; }
+  html { overflow-x: hidden; }
 }

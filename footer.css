@@ -25,11 +25,20 @@ footer {
   position: relative;
   text-align: center;
   padding: 12px 18px;
+  /* Clears the iPhone home indicator. Collapses to the plain 12px everywhere
+     the inset is 0, so it costs nothing off a notched device. */
+  padding-bottom: calc(12px + env(safe-area-inset-bottom));
   font-size: 12px;
   line-height: 1.6;
-  color: rgba(246,241,230,.78);
+  /* Warm brown a few steps up from --footer-bar rather than the old
+     near-parchment rgba(246,241,230,.78): the footer is a colophon, not a
+     call to action, and white-on-near-black made it the loudest thing on a
+     phone screen. Measured 6.1:1 composited on #1a0e06, so it still clears
+     AA at 12px. */
+  color: rgba(198,170,130,.82);
   background: var(--footer-bar);
   border-top: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* Lucide icon inside a footer link (the Ko-fi cup) — aligned off the baseline,
@@ -43,9 +52,31 @@ footer::before {
   background: linear-gradient(90deg, transparent 0%, rgba(176,144,96,0.6) 20%, rgba(196,98,42,0.8) 50%, rgba(176,144,96,0.6) 80%, transparent 100%);
 }
 
+/* The antique gold already spent on footer::before, so the links read as part
+   of the same piece of furniture rather than as parchment text dropped onto
+   it. 6.1:1 on #1a0e06. */
 footer a {
-  color: rgba(246,241,230,.9);
+  color: #b09060;
   text-decoration: none;
 }
 
-footer a:hover { color: #f2e8d5; }
+footer a:hover { color: #d9bd8e; }
+footer a:active { color: #f2e8d5; }
+
+/* Phones: drop the masthead run and leave the four links as a single row.
+   At 375px the full footer wrapped to three lines and stood 62px tall, which
+   read as a third dark slab under the stats grid and the methodology strip. */
+@media (max-width: 560px) {
+  .footer-meta { display: none; }
+  footer {
+    padding: 6px 16px;
+    padding-bottom: calc(6px + env(safe-area-inset-bottom));
+  }
+  /* ~39px tall. Not the 44px minimum: a single-line footer cannot reach that
+     without growing taller than the wrapped block it replaces. The links are
+     well separated horizontally, which is the axis that actually mis-taps here. */
+  footer a {
+    display: inline-block;
+    padding: 10px 6px;
+  }
+}

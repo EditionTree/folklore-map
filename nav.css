@@ -136,13 +136,36 @@
   flex: 1 1 auto;
   min-width: 0;
 }
+/* Small screens: pin the bar to the top of the viewport. It used to scroll away
+   and never come back, which on a 5,500px legend page left no route to
+   navigation short of scrolling to the top.
+   Scoped three ways on purpose. `nav.` excludes map.html, which uses
+   <header class="topnav"> over a full-viewport map where a sticky bar is
+   meaningless. 900px keeps desktop on position:relative. And below 1220px
+   legend-page.css's .sidebar is already position:static, so there is no
+   sticky-inside-sticky offset to reconcile.
+   z-index comes from .topnav's existing 7500; see the note above it. */
+@media (max-width: 900px) {
+  nav.topnav {
+    position: sticky;
+    top: 0;
+  }
+  /* Anchor jumps would otherwise land underneath the pinned bar. The bar is
+     58px down to 641px and 56px below that; 66px clears both with a margin. */
+  #main-content,
+  :target { scroll-margin-top: 66px; }
+}
+
 /* Mobile: keep nav links on one horizontally scrolling row. */
 @media (max-width: 640px) {
   .topnav {
     flex-wrap: nowrap;
     justify-content: flex-start;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding: 6px 12px;
+    /* Trimmed from 10px so the taller 44px links below still leave the bar at
+       56px rather than pushing it to 64px — it is pinned now, so every pixel
+       of it is permanently spent. */
+    min-height: 56px;
   }
   .topnav-links {
     flex-wrap: nowrap;
@@ -150,9 +173,35 @@
     overflow-x: auto;
     overflow-y: hidden;
     scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    /* Six iconned links measure ~575px inside a ~300px track, and nothing said
+       so: Collections, My Archive and About were simply invisible. Fading both
+       edges reads as "more this way" at whichever end has more, and needs no
+       scroll listener to stay correct. nav-search.js centres the active link on
+       load so the row starts somewhere useful. */
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 18px, #000 calc(100% - 22px), transparent 100%);
+            mask-image: linear-gradient(to right, transparent 0, #000 18px, #000 calc(100% - 22px), transparent 100%);
   }
   .topnav-links::-webkit-scrollbar { display: none; }
-  .topnav a { flex: 0 0 auto; padding: 9px 11px; font-size: 11px; white-space: nowrap; }
+  /* .topnav-links a, not .topnav a: the brand lockup is also an <a> inside
+     .topnav, and a display declaration on that broader selector outranks the
+     `.topnav-brand { display: none }` above, putting the emblem and wordmark
+     back over the link row at 375px. */
+  .topnav-links a {
+    flex: 0 0 auto;
+    /* Was 9px 11px around 11px text: a 37px target, under the 44px minimum. */
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 12px;
+    font-size: 11.5px;
+    white-space: nowrap;
+    scroll-snap-align: start;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .topnav-links a:active { background: rgba(176,144,96,.16); }
 }
 
 /* Persistent nav search. Pinned to the right of the bar (mirroring

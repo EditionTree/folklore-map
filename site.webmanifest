@@ -1,0 +1,51 @@
+{
+  "id": "/",
+  "name": "Folklore Finder",
+  "short_name": "Folklore",
+  "description": "An interactive folklore map of Britain and Ireland: myths, legends, ghosts and sacred sites across 700+ locations.",
+  "lang": "en-GB",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#1a0e06",
+  "theme_color": "#1a0e06",
+  "categories": ["education", "travel", "books"],
+  "icons": [
+    {
+      "src": "/assets/icons/icon-192.png?v=20260904a",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon-512.png?v=20260904a",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon-maskable-512.png?v=20260904a",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Explore the map",
+      "short_name": "Map",
+      "url": "/map"
+    },
+    {
+      "name": "Browse all legends",
+      "short_name": "Browse",
+      "url": "/legends/"
+    },
+    {
+      "name": "My Archive",
+      "short_name": "Archive",
+      "url": "/archive"
+    }
+  ]
+}

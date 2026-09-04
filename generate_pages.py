@@ -889,6 +889,10 @@ def build_browse_page(page_title, desc, url, h1, intro, crumb, nav_html, cards_h
             '<meta name="description" content="' + esc(desc) + '"/>\n'
             '<link rel="canonical" href="' + url + '"/>\n'
             '<link rel="icon" type="image/png" href="' + BASE + '/favicon.png"/>\n'
+            '<link rel="apple-touch-icon" href="' + BASE + '/assets/icons/apple-touch-icon.png?v=20260904a"/>\n'
+            '<link rel="manifest" href="' + BASE + '/site.webmanifest?v=20260904a"/>\n'
+            '<meta name="theme-color" content="#1a0e06"/>\n'
+            '<meta name="apple-mobile-web-app-title" content="Folklore Finder"/>\n'
             '<meta property="og:type" content="website"/>\n'
             '<meta property="og:title" content="' + esc(h1) + '"/>\n'
             '<meta property="og:description" content="' + esc(desc) + '"/>\n'
@@ -1667,6 +1671,10 @@ FEATURED_PAGE = Template("""<!DOCTYPE html>
 <meta name="description" content="$desc"/>
 <link rel="canonical" href="$url"/>
 <link rel="icon" type="image/png" href="$base/favicon.png"/>
+<link rel="apple-touch-icon" href="$base/assets/icons/apple-touch-icon.png?v=20260904a"/>
+<link rel="manifest" href="$base/site.webmanifest?v=20260904a"/>
+<meta name="theme-color" content="#1a0e06"/>
+<meta name="apple-mobile-web-app-title" content="Folklore Finder"/>
 <meta property="og:type" content="article"/>
 <meta property="og:url" content="$url"/>
 <meta property="og:title" content="$ogtitle"/>
@@ -3449,6 +3457,10 @@ def build():
 <meta name="description" content="Browse all {written} myths, legends, ghosts and folklore stories from Britain and Ireland, each pinned to its place of origin on the map."/>
 <link rel="canonical" href="{BASE}/{OUT_DIR}/"/>
 <link rel="icon" type="image/png" href="{BASE}/favicon.png"/>
+<link rel="apple-touch-icon" href="{BASE}/assets/icons/apple-touch-icon.png?v=20260904a"/>
+<link rel="manifest" href="{BASE}/site.webmanifest?v=20260904a"/>
+<meta name="theme-color" content="#1a0e06"/>
+<meta name="apple-mobile-web-app-title" content="Folklore Finder"/>
 <meta property="og:type" content="website"/>
 <meta property="og:title" content="All Legends &#183; Folklore Finder"/>
 <meta property="og:description" content="Browse all {written} myths, legends, ghosts and folklore stories from every region of Britain and Ireland, each pinned to its place of origin on our interactive folklore map."/>

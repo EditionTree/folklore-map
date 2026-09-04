@@ -438,7 +438,7 @@ h1{
 .share-menu-item:hover,.share-menu-item:focus-visible{background:rgba(139,58,26,.1);color:var(--rust);outline:none}
 .share-ico{flex:0 0 auto;width:20px;height:20px;display:block}
 .share-backdrop{position:fixed;inset:0;z-index:9000;background:rgba(20,12,6,.5);display:none}
-@media(max-width:680px){
+@media(max-width:768px){
   .share-backdrop{display:block}
   .share-menu{position:fixed;left:0;right:0;bottom:0;top:auto;min-width:0;gap:2px;padding:8px 12px calc(12px + env(safe-area-inset-bottom));border-radius:16px 16px 0 0;border:0;box-shadow:0 -8px 30px rgba(36,25,15,.4);animation:shareSheetUp .22s ease}
   .share-menu-head{display:block;text-align:center;font-family:'Marcellus',serif;font-size:13px;letter-spacing:.05em;color:#5a4632;margin:0;padding:8px 0 10px;border-bottom:1px solid rgba(71,51,29,.14)}
@@ -785,7 +785,7 @@ h1{
    two-column sidebar; below that, stack the sidebar under the article as its
    own full-width row (where its 2-column card grid still applies) rather than
    squeezing both into too little space. */
-@media(max-width:1220px){
+@media(max-width:1200px){
   .content-grid{grid-template-columns:1fr;gap:37px}
   .article{max-width:none;padding:0 18px}
   .sidebar{position:static}

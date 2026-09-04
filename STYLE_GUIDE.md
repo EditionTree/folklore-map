@@ -124,6 +124,37 @@ shared chrome, update all relevant sources:
 
 After changes to generated page chrome, run `python generate_pages.py` so generated HTML is refreshed.
 
+## Breakpoints
+
+**There are seven, and a new one needs a reason.** Consolidated 2026-09-04 from 24 ad hoc
+widths spread over 69 media blocks. Every `@media` width condition in the codebase is one of:
+
+| Width | Reads as |
+|---|---|
+| `480px` | small phone |
+| `560px` | phone |
+| `640px` | large phone, and where the nav becomes a scrolling strip |
+| `768px` | tablet portrait |
+| `900px` | tablet landscape, and where the nav becomes sticky |
+| `1024px` | small laptop |
+| `1200px` | desktop, and where the nav drops its brand lockup |
+
+Two deliberate companions to that list: `min-width: 1025px`, which is the complement of the
+1024 step and exists only as its other half, and `max-width: 1450px`, the top rung of the A-Z
+column ladder in `generate_pages.py`, which has no neighbour to merge with.
+
+The site is **desktop-first**, so these are `max-width` queries. That matters when adding one:
+
+**Round a new breakpoint UP to an existing step, never down.** Rounding a `max-width` up means
+the narrower layout applies on a slightly wider screen, which is cosmetic. Rounding down leaves
+a band where neither the narrow rules nor the wide ones fit, which is how horizontal overflow
+gets in. The 2026-09-04 pass moved 34 conditions and only two went down, both checked in a
+browser afterwards for overflow.
+
+Before merging two blocks onto the same step, check they do not style the same selector. If
+they do, source order silently decides the winner across the whole range rather than only below
+the narrower width. The consolidation pass found zero such collisions; a future one might not.
+
 ## Design System
 
 Measured against the codebase on 2026-08-23. Every number below was counted, not estimated, so it

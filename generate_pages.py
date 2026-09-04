@@ -636,7 +636,7 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 .pagination .disabled{color:#b09060;border-color:#d8c8a8;cursor:default}
 .pagination .gap{border:none;color:#5c4a2a;min-width:auto;padding:6px 2px}
 @media(max-width:900px){.wrap{width:calc(100% - 32px)}}
-@media(max-width:620px){.browse-grid{grid-template-columns:1fr}}
+@media(max-width:640px){.browse-grid{grid-template-columns:1fr}}
 /* Collection hero: description on the left, iconic image on the right */
 .col-hero-split{display:flex;gap:30px;align-items:stretch;margin:14px 0 24px}
 .col-hero-desc{flex:1 1 0;min-width:0;display:flex;flex-direction:column;justify-content:center}
@@ -653,7 +653,7 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
    artwork," not a plain photo. */
 .col-hero-media::after{content:'';position:absolute;inset:-17px;z-index:2;box-sizing:border-box;border:36px solid transparent;border-image:url('/assets/ornaments/generated-variants/oak-branch-frame-v1.png?v=20260713c') 230 / 35px / 0 round;border-image:image-set(url('/assets/ornaments/generated-variants/oak-branch-frame-v1.webp?v=20260826a') type('image/webp'), url('/assets/ornaments/generated-variants/oak-branch-frame-v1.png?v=20260713c') type('image/png')) 230 / 35px / 0 round;filter:saturate(.62) brightness(.88) contrast(.9) drop-shadow(0 4px 5px rgba(0,0,0,.24));pointer-events:none}
 .col-hero-credit{position:absolute;right:24px;bottom:24px;z-index:3;font-size:10px;color:rgba(255,255,255,.85);background:rgba(0,0,0,.4);padding:2px 8px;border-radius:2px}
-@media(max-width:680px){.col-hero-split{flex-direction:column;gap:16px}.col-hero-media{flex-basis:auto;height:220px;min-height:0}.col-hero-media::after{inset:-12px;border-width:24px;border-image-width:24px}}
+@media(max-width:768px){.col-hero-split{flex-direction:column;gap:16px}.col-hero-media{flex-basis:auto;height:220px;min-height:0}.col-hero-media::after{inset:-12px;border-width:24px;border-image-width:24px}}
 /* Article layout: alternating image/summary rows for collection members */
 .col-articles{display:flex;flex-direction:column;gap:20px}
 .col-article{display:flex;align-items:stretch;background:linear-gradient(177deg,#fbf5e9 0%,#f5ecdb 58%,#eee2ca 100%);background:linear-gradient(177deg,color-mix(in srgb, var(--cat,#8b3a1a) 8%, #fbf5e9) 0%,color-mix(in srgb, var(--cat,#8b3a1a) 11%, #f5ecdb) 58%,color-mix(in srgb, var(--cat,#8b3a1a) 14%, #eee2ca) 100%);border:1px solid rgba(90,70,50,.24);border-radius:8px;text-decoration:none;color:#3f3023;overflow:hidden;box-shadow:inset 0 1px 0 rgba(255,255,255,.6),0 1px 2px rgba(26,14,6,.07),0 10px 22px -10px rgba(26,14,6,.2);transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}
@@ -668,7 +668,7 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 .col-article-summary{font-size:14.5px;color:#3a2c14;line-height:1.6;margin:10px 0 12px}
 .col-article-more{align-self:flex-start;display:inline-flex;align-items:center;gap:6px;padding:7px 14px;font-family:'Marcellus',serif;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:#9d461f;background:linear-gradient(177deg,#fbf5e9,#f1e6d2);border:1px solid rgba(176,144,96,.7);border-radius:5px;box-shadow:inset 0 1px 0 rgba(255,255,255,.6),0 1px 2px rgba(26,14,6,.08);transition:border-color .14s ease,color .14s ease,box-shadow .14s ease}
 .col-article:hover .col-article-more,.col-article:focus-visible .col-article-more{color:#c4622a;border-color:var(--cat,#c4622a);box-shadow:inset 0 1px 0 rgba(255,255,255,.72),0 2px 5px rgba(26,14,6,.12)}
-@media(max-width:680px){.col-article,.col-article:nth-child(even){flex-direction:column}.col-article-media{flex-basis:auto;min-height:0}.col-article-body{padding:18px 20px}.col-article-name{font-size:19px}}
+@media(max-width:768px){.col-article,.col-article:nth-child(even){flex-direction:column}.col-article-media{flex-basis:auto;min-height:0}.col-article-body{padding:18px 20px}.col-article-name{font-size:19px}}
 /* Collections index: editorial feature rows (alternating image/text) */
 .col-index{display:flex;flex-direction:column;gap:22px}
 .col-index-row{position:relative;display:flex;align-items:stretch;background:rgba(228,213,185,.88);background:linear-gradient(177deg,color-mix(in srgb, var(--cat,#8b3a1a) 8%, #f7efdf) 0%,color-mix(in srgb, var(--cat,#8b3a1a) 11%, #f0e5cf) 58%,color-mix(in srgb, var(--cat,#8b3a1a) 14%, #e8dbc1) 100%);border:1px solid rgba(90,70,50,.26);border-radius:8px;text-decoration:none;color:#3f3023;overflow:hidden;box-shadow:inset 0 1px 0 rgba(255,255,255,.6),0 1px 2px rgba(26,14,6,.07),0 10px 22px -10px rgba(26,14,6,.2);transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}
@@ -700,7 +700,7 @@ body{background:radial-gradient(circle at 12% 8%,rgba(176,144,96,.1),transparent
 .col-share-btn:hover,.col-share-btn:focus-visible{border-color:#c4622a;color:#9d461f}
 .col-share-btn[disabled]{opacity:.6;cursor:default}
 .col-share-status{font-size:11px;color:#5c4a2a}
-@media(max-width:680px){.col-index-row,.col-index-row:nth-child(even){flex-direction:column}.col-index-media{flex-basis:auto;height:212px;min-height:0}.col-index-body{padding:20px 22px}}
+@media(max-width:768px){.col-index-row,.col-index-row:nth-child(even){flex-direction:column}.col-index-media{flex-basis:auto;height:212px;min-height:0}.col-index-body{padding:20px 22px}}
 .col-section{margin-top:38px}
 .col-section h2{font-family:'Marcellus',serif;font-size:20px;font-weight:400;color:#3f3023;margin-bottom:12px}
 .col-context{font-size:15.5px;color:#3f3023;max-width:820px;line-height:1.7;margin:0 0 14px}
@@ -761,7 +761,7 @@ def collection_detail_progress_script(slug, title):
     data attributes; the share title, body text and filename are derived from
     them in /js/page.js exactly as they were derived here."""
     return (
-        '<link rel="stylesheet" href="/share.css?v=20260823a"/><script src="/share-card.js?v=20260826b"></script>\n'
+        '<link rel="stylesheet" href="/share.css?v=20260904a"/><script src="/share-card.js?v=20260826b"></script>\n'
         '<div hidden'
         ' data-collection-slug="' + esc(slug) + '"'
         ' data-collection-title="' + esc(title) + '"></div>' + chr(10) +
@@ -1694,7 +1694,7 @@ FEATURED_PAGE = Template("""<!DOCTYPE html>
 <link rel="stylesheet" href="/assets/leaflet/leaflet.css?v=20260901a"/>
 <link rel="stylesheet" href="/nav.css?v=20260904a"/>
 <link rel="stylesheet" href="/footer.css?v=20260904a"/>
-<link rel="stylesheet" href="/legend-page.css?v=20260904a"/>
+<link rel="stylesheet" href="/legend-page.css?v=20260904b"/>
 <script type="application/ld+json">$jsonld</script>
 $breadcrumb_jsonld
 </head>
@@ -1746,7 +1746,7 @@ $topnav
 </main>
 $footer
 <script src="/assets/leaflet/leaflet.js?v=20260901a"></script>
-<link rel="stylesheet" href="/share.css?v=20260823a"/><script src="/share-card.js?v=20260826b"></script>
+<link rel="stylesheet" href="/share.css?v=20260904a"/><script src="/share-card.js?v=20260826b"></script>
 <script src="/js/bookmarks.js?v=20260904a" data-cfasync="false"></script>
 <script src="$base/legend-page.js?v=20260823b"></script>
 </body>
@@ -3483,11 +3483,11 @@ h1{{font-family:'Marcellus',serif;font-size:clamp(30px,3vw,44px);font-weight:400
 h1::after{{content:"";display:block;width:132px;height:40px;margin:9px 0 19px;background:url('/assets/ornaments/generated-variants/oak-divider-horizontal.webp') left center/contain no-repeat;opacity:.55}}
 .az{{column-count:10;column-gap:24px}}
 @media(max-width:1450px){{.az{{column-count:8}}}}
-@media(max-width:1100px){{.az{{column-count:6}}}}
-@media(max-width:880px){{.az{{column-count:4}}}}
-@media(max-width:680px){{.az{{column-count:3}}}}
-@media(max-width:520px){{.az{{column-count:2}}}}
-@media(max-width:380px){{.az{{column-count:1}}}}
+@media(max-width:1200px){{.az{{column-count:6}}}}
+@media(max-width:900px){{.az{{column-count:4}}}}
+@media(max-width:768px){{.az{{column-count:3}}}}
+@media(max-width:560px){{.az{{column-count:2}}}}
+@media(max-width:480px){{.az{{column-count:1}}}}
 .az-letter{{font-family:'Marcellus',serif;font-size:17px;color:#8b3a1a;margin:0 0 7px;padding-bottom:3px;border-bottom:1px solid #b09060;break-after:avoid;break-inside:avoid}}
 .az ul{{list-style:none;margin:0 0 16px}}
 .az li{{break-inside:avoid;padding:5px 0;border-bottom:.5px solid rgba(176,144,96,.3)}}
@@ -3523,8 +3523,8 @@ h1::after{{content:"";display:block;width:132px;height:40px;margin:9px 0 19px;ba
 .place-links{{display:flex;flex-wrap:wrap;gap:8px}}
 .place-links a{{padding:7px 12px;border:1px solid rgba(90,70,50,.35);color:#3f3023;text-decoration:none;font-family:'Marcellus',serif;font-size:12px}}
 .place-links a:hover{{border-color:#c4622a;color:#9d461f}}
-@media(max-width:1000px){{.browse-link-sections{{grid-template-columns:1fr 1fr}}.browse-link-sections .browse-sec:last-child{{grid-column:1/-1}}}}
-@media(max-width:760px){{.wrap{{width:calc(100% - 32px)}}.place-explorer{{grid-template-columns:1fr;margin:42px 24px 68px;padding:44px 34px;gap:22px}}.place-explorer::after{{inset:-19px;border-width:24px;border-image-width:24px}}.place-map{{width:min(100%,280px)}}.browse-link-sections{{grid-template-columns:1fr;gap:18px}}.browse-link-sections .browse-sec:last-child{{grid-column:auto}}}}
+@media(max-width:1024px){{.browse-link-sections{{grid-template-columns:1fr 1fr}}.browse-link-sections .browse-sec:last-child{{grid-column:1/-1}}}}
+@media(max-width:768px){{.wrap{{width:calc(100% - 32px)}}.place-explorer{{grid-template-columns:1fr;margin:42px 24px 68px;padding:44px 34px;gap:22px}}.place-explorer::after{{inset:-19px;border-width:24px;border-image-width:24px}}.place-map{{width:min(100%,280px)}}.browse-link-sections{{grid-template-columns:1fr;gap:18px}}.browse-link-sections .browse-sec:last-child{{grid-column:auto}}}}
 @media(max-width:480px){{.browse-link-sections .browse-sec:last-child .region-links{{grid-template-columns:1fr}}}}
 </style>{browse_index_ld}</head>
 <body>

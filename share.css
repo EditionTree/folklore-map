@@ -155,7 +155,7 @@
 }
 .sharecard-net svg { display: block; }
 
-@media (max-width: 420px) {
+@media (max-width: 480px) {
   .sharecard-panel { padding: 22px 16px 18px; }
   .sharecard-net { width: 60px; font-size: 10px; }
 }

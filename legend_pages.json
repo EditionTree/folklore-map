@@ -9813,6 +9813,278 @@
         "Setting": "Tattershall, Lincolnshire"
       },
       "seo_title": "Tom Thumb · Folklore Finder"
+    },
+    "Alfred and the Burnt Cakes": {
+      "priority": 555,
+      "image": "legend-images/alfred-and-the-burnt-cakes-hero.jpg",
+      "alt": "NEEDS REVIEW: describe what the image actually shows for Alfred and the Burnt Cakes",
+      "caption": "A visual interpretation of Alfred and the Burnt Cakes",
+      "map_title": "Athelney, Somerset",
+      "section_heading": "NEEDS EDITORIAL: a heading for this section",
+      "pullquote": "NEEDS EDITORIAL: a pullquote drawn from the entry's own text",
+      "editorial": "",
+      "editorial_by": "",
+      "facts": {
+        "Tradition": "Set in the winter of 878, during Alfred's exile before the Battle of Edington. First recorded in the Life of Saint Neot, written roughly a century later.",
+        "Type": "Hero",
+        "Setting": "Athelney, Somerset"
+      },
+      "seo_title": "Alfred and the Burnt Cakes · Folklore Finder"
+    },
+    "Birnam Wood and Dunsinane": {
+      "priority": 556,
+      "image": "legend-images/birnam-wood-and-dunsinane-hero.jpg",
+      "alt": "NEEDS REVIEW: describe what the image actually shows for Birnam Wood and Dunsinane",
+      "caption": "A visual interpretation of Birnam Wood and Dunsinane",
+      "map_title": "Birnam, Perthshire, Scotland",
+      "section_heading": "NEEDS EDITORIAL: a heading for this section",
+      "pullquote": "NEEDS EDITORIAL: a pullquote drawn from the entry's own text",
+      "editorial": "",
+      "editorial_by": "",
+      "facts": {
+        "Tradition": "The real Macbeth's defeat near Dunsinane is dated to 1054. The moving wood prophecy is a literary invention first staged around 1606.",
+        "Type": "Location",
+        "Setting": "Birnam, Perthshire, Scotland"
+      },
+      "seo_title": "Birnam Wood and Dunsinane · Folklore Finder"
+    },
+    "Canute and the Tide": {
+      "priority": 557,
+      "image": "legend-images/canute-and-the-tide-hero.jpg",
+      "alt": "NEEDS REVIEW: describe what the image actually shows for Canute and the Tide",
+      "caption": "A visual interpretation of Canute and the Tide",
+      "map_title": "Bosham, West Sussex",
+      "section_heading": "NEEDS EDITORIAL: a heading for this section",
+      "pullquote": "NEEDS EDITORIAL: a pullquote drawn from the entry's own text",
+      "editorial": "",
+      "editorial_by": "",
+      "facts": {
+        "Tradition": "Cnut reigned over England from 1016 to 1035. The tide story is first recorded around a century later by Henry of Huntingdon, with no contemporary source confirming it.",
+        "Type": "Hero",
+        "Setting": "Bosham, West Sussex"
+      },
+      "seo_title": "Canute and the Tide · Folklore Finder"
+    },
+    "Gef the Talking Mongoose": {
+      "priority": 558,
+      "image": "legend-images/gef-the-talking-mongoose-hero.jpg",
+      "alt": "NEEDS REVIEW: describe what the image actually shows for Gef the Talking Mongoose",
+      "caption": "A visual interpretation of Gef the Talking Mongoose",
+      "map_title": "Dalby, Isle of Man",
+      "section_heading": "NEEDS EDITORIAL: a heading for this section",
+      "pullquote": "NEEDS EDITORIAL: a pullquote drawn from the entry's own text",
+      "editorial": "",
+      "editorial_by": "",
+      "facts": {
+        "Tradition": "The reported events run from autumn 1931 to about 1937, with the Price and Lambert investigation in 1935",
+        "Type": "Beast",
+        "Setting": "Dalby, Isle of Man"
+      },
+      "seo_title": "Gef the Talking Mongoose · Folklore Finder"
+    },
+    "Dick Whittington and His Cat": {
+      "priority": 559,
+      "image": "legend-images/dick-whittington-and-his-cat-hero.jpg",
+      "alt": "NEEDS REVIEW: describe what the image actually shows for Dick Whittington and His Cat",
+      "caption": "A visual interpretation of Dick Whittington and His Cat",
+      "map_title": "Highgate, London, England",
+      "section_heading": "NEEDS EDITORIAL: a heading for this section",
+      "pullquote": "NEEDS EDITORIAL: a pullquote drawn from the entry's own text",
+      "editorial": "",
+      "editorial_by": "",
+      "facts": {
+        "Tradition": "Whittington's lifetime, about 1354 to 1423; the cat legend first appears in print in 1612",
+        "Type": "Hero",
+        "Setting": "Highgate, London, England"
+      },
+      "seo_title": "Dick Whittington and His Cat · Folklore Finder"
+    },
+    "Ghillie Dhu": {
+      "priority": 560,
+      "image": "legend-images/ghillie-dhu-hero.jpg",
+      "alt": "NEEDS REVIEW: describe what the image actually shows for Ghillie Dhu",
+      "caption": "A visual interpretation of Ghillie Dhu",
+      "map_title": "Gairloch, Wester Ross, Scotland",
+      "section_heading": "NEEDS EDITORIAL: a heading for this section",
+      "pullquote": "NEEDS EDITORIAL: a pullquote drawn from the entry's own text",
+      "editorial": "",
+      "editorial_by": "",
+      "facts": {
+        "Tradition": "Undated Highland oral tradition. The only detailed written account, Osgood Mackenzie's memoir, was published in 1921 but describes nineteenth century local lore, and the belief itself has no fixed origin date.",
+        "Type": "Fairy",
+        "Setting": "Gairloch, Wester Ross, Scotland"
+      },
+      "seo_title": "Ghillie Dhu · Folklore Finder"
+    },
+    "Greyfriars Bobby": {
+      "priority": 561,
+      "image": "legend-images/greyfriars-bobby-hero.jpg",
+      "alt": "NEEDS REVIEW: describe what the image actually shows for Greyfriars Bobby",
+      "caption": "A visual interpretation of Greyfriars Bobby",
+      "map_title": "Edinburgh, Scotland",
+      "section_heading": "NEEDS EDITORIAL: a heading for this section",
+      "pullquote": "NEEDS EDITORIAL: a pullquote drawn from the entry's own text",
+      "editorial": "",
+      "editorial_by": "",
+      "facts": {
+        "Tradition": "Victorian Edinburgh, 1858 to 1873",
+        "Type": "Hero",
+        "Setting": "Edinburgh, Scotland"
+      },
+      "seo_title": "Greyfriars Bobby · Folklore Finder"
+    },
+    "Highgate Vampire": {
+      "priority": 562,
+      "image": "legend-images/highgate-vampire-hero.jpg",
+      "alt": "NEEDS REVIEW: describe what the image actually shows for Highgate Vampire",
+      "caption": "A visual interpretation of Highgate Vampire",
+      "map_title": "Highgate, London, England",
+      "section_heading": "NEEDS EDITORIAL: a heading for this section",
+      "pullquote": "NEEDS EDITORIAL: a pullquote drawn from the entry's own text",
+      "editorial": "",
+      "editorial_by": "",
+      "facts": {
+        "Tradition": "1969 to 1970, with the Farrant-Manchester rivalry continuing until 2019",
+        "Type": "Ghost",
+        "Setting": "Highgate, London, England"
+      },
+      "seo_title": "Highgate Vampire · Folklore Finder"
+    },
+    "Mother Redcap's": {
+      "priority": 563,
+      "image": "legend-images/mother-redcap-s-hero.jpg",
+      "alt": "NEEDS REVIEW: describe what the image actually shows for Mother Redcap's",
+      "caption": "A visual interpretation of Mother Redcap's",
+      "map_title": "Wallasey, Wirral, Merseyside",
+      "section_heading": "NEEDS EDITORIAL: a heading for this section",
+      "pullquote": "NEEDS EDITORIAL: a pullquote drawn from the entry's own text",
+      "editorial": "",
+      "editorial_by": "",
+      "facts": {
+        "Tradition": "The building dates from 1595 and the smuggling and press gang traditions belong to the eighteenth and early nineteenth centuries. The hiding places are documented from 1888. The tunnels are not",
+        "Type": "Pirate",
+        "Setting": "Wallasey, Wirral, Merseyside"
+      },
+      "seo_title": "Mother Redcap's · Folklore Finder"
+    },
+    "Poldies": {
+      "priority": 564,
+      "image": "legend-images/poldies-hero.jpg",
+      "alt": "NEEDS REVIEW: describe what the image actually shows for Poldies",
+      "caption": "A visual interpretation of Poldies",
+      "map_title": "Wirral, Merseyside",
+      "section_heading": "NEEDS EDITORIAL: a heading for this section",
+      "pullquote": "NEEDS EDITORIAL: a pullquote drawn from the entry's own text",
+      "editorial": "",
+      "editorial_by": "",
+      "facts": {
+        "Tradition": "Attested as living belief in the Wirral in the 1950s and recorded by Jacqueline Simpson in the Oxford Dictionary of English Folklore. No earlier record has been traced, so the age of the tradition is unknown",
+        "Type": "Fairy",
+        "Setting": "Wirral, Merseyside"
+      },
+      "seo_title": "Poldies · Folklore Finder"
+    },
+    "Sambo's Grave": {
+      "priority": 565,
+      "image": "legend-images/sambo-s-grave-hero.jpg",
+      "alt": "NEEDS REVIEW: describe what the image actually shows for Sambo's Grave",
+      "caption": "A visual interpretation of Sambo's Grave",
+      "map_title": "Sunderland Point, Lancashire",
+      "section_heading": "NEEDS EDITORIAL: a heading for this section",
+      "pullquote": "NEEDS EDITORIAL: a pullquote drawn from the entry's own text",
+      "editorial": "",
+      "editorial_by": "",
+      "facts": {
+        "Tradition": "The burial is traditionally dated to 1736, a figure derived only from an 1822 magazine account working back from the memorial epitaph's claim of 'sixty years' since the death. No contemporary record confirms the year, or the boy's existence as a documented individual. The memorial itself is firmly dated to 1796.",
+        "Type": "Location",
+        "Setting": "Sunderland Point, Lancashire"
+      },
+      "seo_title": "Sambo's Grave · Folklore Finder"
+    },
+    "Tarroo Ushtey": {
+      "priority": 566,
+      "image": "legend-images/tarroo-ushtey-hero.jpg",
+      "alt": "NEEDS REVIEW: describe what the image actually shows for Tarroo Ushtey",
+      "caption": "A visual interpretation of Tarroo Ushtey",
+      "map_title": "Isle of Man",
+      "section_heading": "NEEDS EDITORIAL: a heading for this section",
+      "pullquote": "NEEDS EDITORIAL: a pullquote drawn from the entry's own text",
+      "editorial": "",
+      "editorial_by": "",
+      "facts": {
+        "Tradition": "Undated Manx oral tradition, first set down in print by Moore (1891) and Rhys (1901), describing belief already established by that time.",
+        "Type": "Water",
+        "Setting": "Isle of Man"
+      },
+      "seo_title": "Tarroo Ushtey · Folklore Finder"
+    },
+    "The Beast of Exmoor": {
+      "priority": 567,
+      "image": "legend-images/the-beast-of-exmoor-hero.jpg",
+      "alt": "NEEDS REVIEW: describe what the image actually shows for The Beast of Exmoor",
+      "caption": "A visual interpretation of The Beast of Exmoor",
+      "map_title": "Exmoor, Devon and Somerset",
+      "section_heading": "NEEDS EDITORIAL: a heading for this section",
+      "pullquote": "NEEDS EDITORIAL: a pullquote drawn from the entry's own text",
+      "editorial": "",
+      "editorial_by": "",
+      "facts": {
+        "Tradition": "Sightings from the 1970s, with the tradition's defining event the 1983 South Molton sheep killings and the 1988 Royal Marines search.",
+        "Type": "Beast",
+        "Setting": "Exmoor, Devon and Somerset"
+      },
+      "seo_title": "The Beast of Exmoor · Folklore Finder"
+    },
+    "The Bidston Hill Carvings": {
+      "priority": 568,
+      "image": "legend-images/the-bidston-hill-carvings-hero.jpg",
+      "alt": "NEEDS REVIEW: describe what the image actually shows for The Bidston Hill Carvings",
+      "caption": "A visual interpretation of The Bidston Hill Carvings",
+      "map_title": "Bidston, Wirral, Merseyside",
+      "section_heading": "NEEDS EDITORIAL: a heading for this section",
+      "pullquote": "NEEDS EDITORIAL: a pullquote drawn from the entry's own text",
+      "editorial": "",
+      "editorial_by": "",
+      "facts": {
+        "Tradition": "The carvings are attributed to Norse Irish settlers around 1000 AD, but open rock carving resists dating and the attribution rests on the district's settlement history rather than on the carvings themselves",
+        "Type": "Location",
+        "Setting": "Bidston, Wirral, Merseyside"
+      },
+      "seo_title": "The Bidston Hill Carvings · Folklore Finder"
+    },
+    "The Bloody Acre": {
+      "priority": 569,
+      "image": "legend-images/the-bloody-acre-hero.jpg",
+      "alt": "NEEDS REVIEW: describe what the image actually shows for The Bloody Acre",
+      "caption": "A visual interpretation of The Bloody Acre",
+      "map_title": "Childwall, Liverpool, Merseyside",
+      "section_heading": "NEEDS EDITORIAL: a heading for this section",
+      "pullquote": "NEEDS EDITORIAL: a pullquote drawn from the entry's own text",
+      "editorial": "",
+      "editorial_by": "",
+      "facts": {
+        "Tradition": "The name is traced to fighting in the 1640s over land taken from the church. The cursed ground reading is later and is not attested in any early source",
+        "Type": "Location",
+        "Setting": "Childwall, Liverpool, Merseyside"
+      },
+      "seo_title": "The Bloody Acre · Folklore Finder"
+    },
+    "The Blue Bell Hill Ghost Bride": {
+      "priority": 570,
+      "image": "legend-images/the-blue-bell-hill-ghost-bride-hero.jpg",
+      "alt": "NEEDS REVIEW: describe what the image actually shows for The Blue Bell Hill Ghost Bride",
+      "caption": "A visual interpretation of The Blue Bell Hill Ghost Bride",
+      "map_title": "Blue Bell Hill, Kent",
+      "section_heading": "NEEDS EDITORIAL: a heading for this section",
+      "pullquote": "NEEDS EDITORIAL: a pullquote drawn from the entry's own text",
+      "editorial": "",
+      "editorial_by": "",
+      "facts": {
+        "Tradition": "The founding crash is dated 19 November 1965. Ghost sightings on the road are reported from the early 1970s onward.",
+        "Type": "Ghost",
+        "Setting": "Blue Bell Hill, Kent"
+      },
+      "seo_title": "The Blue Bell Hill Ghost Bride · Folklore Finder"
     }
   }
 }

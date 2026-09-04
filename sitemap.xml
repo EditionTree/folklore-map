@@ -147,7 +147,12 @@
     <image:title>An old guide leading a farmer and white horse into a sandstone cavern where Arthur and his knights sleep</image:title>
     <image:caption>A visual interpretation of the sleeping king beneath Alderley Edge</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/alfred-and-the-burnt-cakes</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/alfred-and-the-burnt-cakes</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/alfred-and-the-burnt-cakes-hero.jpg</image:loc>
+    <image:title>NEEDS REVIEW: describe what the image actually shows for Alfred and the Burnt Cakes</image:title>
+    <image:caption>A visual interpretation of Alfred and the Burnt Cakes</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/alice-kyteler</loc><lastmod>2026-08-18</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/alice-kyteler-hero.jpg</image:loc>
@@ -448,7 +453,12 @@
     <image:title>A Dorset country listener kneeling with an ear to a grass-covered Music Barrow on Bincombe Down while smaller barrows recede toward the coast</image:title>
     <image:caption>A visual interpretation of the Music Barrow tradition on Bincombe Down</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/birnam-wood-and-dunsinane</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/birnam-wood-and-dunsinane</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/birnam-wood-and-dunsinane-hero.jpg</image:loc>
+    <image:title>NEEDS REVIEW: describe what the image actually shows for Birnam Wood and Dunsinane</image:title>
+    <image:caption>A visual interpretation of Birnam Wood and Dunsinane</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/bisterne-dragon</loc><lastmod>2026-08-20</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/bisterne-dragon-hero.jpg</image:loc>
@@ -767,7 +777,12 @@
     <image:title>A stormy Cardigan Bay shoreline with submerged stonework and a drowned bell tower shape beneath the water</image:title>
     <image:caption>A visual interpretation of the drowned kingdom of Cantre&#x27;r Gwaelod</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/canute-and-the-tide</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/canute-and-the-tide</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/canute-and-the-tide-hero.jpg</image:loc>
+    <image:title>NEEDS REVIEW: describe what the image actually shows for Canute and the Tide</image:title>
+    <image:caption>A visual interpretation of Canute and the Tide</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/caoranach</loc><lastmod>2026-08-25</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/caoranach-hero.jpg</image:loc>
@@ -1146,7 +1161,12 @@
     <image:title>A cloaked rider on a black horse galloping along a moonlit muddy Yorkshire road past a distant coaching inn</image:title>
     <image:caption>A visual interpretation of Dick Turpin haunting the old Yorkshire roads</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/dick-whittington-and-his-cat</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/dick-whittington-and-his-cat</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/dick-whittington-and-his-cat-hero.jpg</image:loc>
+    <image:title>NEEDS REVIEW: describe what the image actually shows for Dick Whittington and His Cat</image:title>
+    <image:caption>A visual interpretation of Dick Whittington and His Cat</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/dinas-emrys</loc><lastmod>2026-08-20</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/dinas-emrys-hero.jpg</image:loc>
@@ -1537,14 +1557,24 @@
     <image:title>Gearóid Iarla rides a white horse with silver shoes across the moonlit surface of Lough Gur</image:title>
     <image:caption>A visual interpretation of Gearóid Iarla&#x27;s seven-year ride across Lough Gur</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/gef-the-talking-mongoose</loc><lastmod>2026-09-02</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/gef-the-talking-mongoose</loc><lastmod>2026-09-02</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/gef-the-talking-mongoose-hero.jpg</image:loc>
+    <image:title>NEEDS REVIEW: describe what the image actually shows for Gef the Talking Mongoose</image:title>
+    <image:caption>A visual interpretation of Gef the Talking Mongoose</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/gelert</loc><lastmod>2026-08-17</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/gelert-hero.jpg</image:loc>
     <image:title>A great shaggy hound standing beside an overturned cradle in a torchlit medieval Welsh chamber with a dead wolf behind</image:title>
     <image:caption>A visual interpretation of Gelert in the hall at Beddgelert</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/ghillie-dhu</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/ghillie-dhu</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/ghillie-dhu-hero.jpg</image:loc>
+    <image:title>NEEDS REVIEW: describe what the image actually shows for Ghillie Dhu</image:title>
+    <image:caption>A visual interpretation of Ghillie Dhu</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/giant-of-grabbist</loc><lastmod>2026-08-09</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/giant-of-grabbist-hero.jpg</image:loc>
@@ -1665,7 +1695,12 @@
     <image:title>A lone walker on the misty summit of Ben Macdui with a vast grey figure suggested in the cloud behind him</image:title>
     <image:caption>A visual interpretation of the Grey Man on Ben Macdui in the Cairngorms</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/greyfriars-bobby</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/greyfriars-bobby</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/greyfriars-bobby-hero.jpg</image:loc>
+    <image:title>NEEDS REVIEW: describe what the image actually shows for Greyfriars Bobby</image:title>
+    <image:caption>A visual interpretation of Greyfriars Bobby</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/griffin</loc><lastmod>2026-08-12</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/griffin-hero.jpg</image:loc>
@@ -1870,7 +1905,12 @@
     <image:title>A cinematic ghost folklore image of Hexham Heads, shown as the central apparition or haunting from Northumberland</image:title>
     <image:caption>A visual interpretation of Hexham Heads</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/highgate-vampire</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/highgate-vampire</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/highgate-vampire-hero.jpg</image:loc>
+    <image:title>NEEDS REVIEW: describe what the image actually shows for Highgate Vampire</image:title>
+    <image:caption>A visual interpretation of Highgate Vampire</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/hill-of-allen</loc><lastmod>2026-08-25</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/hill-of-allen-hero.jpg</image:loc>
@@ -2711,7 +2751,12 @@
     <image:title>Mother Ludlam lending a brass cauldron beside a cave spring in Surrey woodland</image:title>
     <image:caption>A visual interpretation of Mother Ludlam&#x27;s cave legend</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/mother-redcap-s</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/mother-redcap-s</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/mother-redcap-s-hero.jpg</image:loc>
+    <image:title>NEEDS REVIEW: describe what the image actually shows for Mother Redcap&#x27;s</image:title>
+    <image:caption>A visual interpretation of Mother Redcap&#x27;s</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/mother-shipton</loc><lastmod>2026-08-25</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/mother-shipton-hero.jpg</image:loc>
@@ -3018,7 +3063,12 @@
     <image:title>The high moorland bulk of Plynlimon rendered as a giant-like massif above dark Welsh river sources under heavy cloud</image:title>
     <image:caption>A visual interpretation of Plynlimon, father of rivers in Welsh legend</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/poldies</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/poldies</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/poldies-hero.jpg</image:loc>
+    <image:title>NEEDS REVIEW: describe what the image actually shows for Poldies</image:title>
+    <image:caption>A visual interpretation of Poldies</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/pooka</loc><lastmod>2026-08-31</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/pooka-hero.jpg</image:loc>
@@ -3193,7 +3243,12 @@
     <image:title>A great silver salmon swallowing fallen hazelnuts beneath ancient trees in the clear Well of Segais</image:title>
     <image:caption>A visual interpretation of the Salmon of Knowledge at the source of the Boyne</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/sambo-s-grave</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/sambo-s-grave</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/sambo-s-grave-hero.jpg</image:loc>
+    <image:title>NEEDS REVIEW: describe what the image actually shows for Sambo&#x27;s Grave</image:title>
+    <image:caption>A visual interpretation of Sambo&#x27;s Grave</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/sarah-whitehead</loc><lastmod>2026-08-31</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/sarah-whitehead-hero.jpg</image:loc>
@@ -3536,7 +3591,12 @@
     <image:title>A cinematic aquatic folklore image of Tarbh Uisge, shown as the central water spirit, lake beast, sea creature, or drowned-place legend from Islay, Inner Hebrides, Scotland</image:title>
     <image:caption>A visual interpretation of Tarbh Uisge</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/tarroo-ushtey</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/tarroo-ushtey</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/tarroo-ushtey-hero.jpg</image:loc>
+    <image:title>NEEDS REVIEW: describe what the image actually shows for Tarroo Ushtey</image:title>
+    <image:caption>A visual interpretation of Tarroo Ushtey</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/tavish-dhu-black-tom-the-pirate-of-the-skerries</loc><lastmod>2026-08-17</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/tavish-dhu-black-tom-the-pirate-of-the-skerries-hero.jpg</image:loc>
@@ -3591,8 +3651,18 @@
     <image:title>The accused Bargarran neighbours gathered outside a Renfrewshire house under a bleak sky</image:title>
     <image:caption>A visual interpretation of the Bargarran witchcraft accusations</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/the-beast-of-exmoor</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/the-bidston-hill-carvings</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/the-beast-of-exmoor</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/the-beast-of-exmoor-hero.jpg</image:loc>
+    <image:title>NEEDS REVIEW: describe what the image actually shows for The Beast of Exmoor</image:title>
+    <image:caption>A visual interpretation of The Beast of Exmoor</image:caption>
+  </image:image></url>
+  <url><loc>https://folklorefinder.uk/legends/the-bidston-hill-carvings</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/the-bidston-hill-carvings-hero.jpg</image:loc>
+    <image:title>NEEDS REVIEW: describe what the image actually shows for The Bidston Hill Carvings</image:title>
+    <image:caption>A visual interpretation of The Bidston Hill Carvings</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/the-binbrook-bewitched-farm-1905</loc><lastmod>2026-08-17</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/the-binbrook-bewitched-farm-1905-hero.jpg</image:loc>
@@ -3611,8 +3681,18 @@
     <image:title>A black-cloaked figure standing among Bonamargy Friary ruins beside a misty river</image:title>
     <image:caption>A visual interpretation of the County Antrim legend</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/the-bloody-acre</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/the-blue-bell-hill-ghost-bride</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/the-bloody-acre</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/the-bloody-acre-hero.jpg</image:loc>
+    <image:title>NEEDS REVIEW: describe what the image actually shows for The Bloody Acre</image:title>
+    <image:caption>A visual interpretation of The Bloody Acre</image:caption>
+  </image:image></url>
+  <url><loc>https://folklorefinder.uk/legends/the-blue-bell-hill-ghost-bride</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/the-blue-bell-hill-ghost-bride-hero.jpg</image:loc>
+    <image:title>NEEDS REVIEW: describe what the image actually shows for The Blue Bell Hill Ghost Bride</image:title>
+    <image:caption>A visual interpretation of The Blue Bell Hill Ghost Bride</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/the-brag</loc><lastmod>2026-08-31</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/the-brag-hero.jpg</image:loc>

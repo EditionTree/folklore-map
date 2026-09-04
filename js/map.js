@@ -4,6 +4,10 @@ if (!CATEGORIES) {
   // Cloudflare Rocket Loader cannot defer it behind this file.
   throw new Error("js/categories.js did not load before js/map.js");
 }
+if (!window.FFBookmarks) {
+  // js/bookmarks.js must load first, for the same reason as categories.js above.
+  throw new Error("js/bookmarks.js did not load before js/map.js");
+}
 
 
 let nightMode = false;
@@ -20,26 +24,17 @@ const REGION_META = {
   ireland: { label: 'Ireland' },
   'northern-ireland': { label: 'Northern Ireland' }
 };
-const BOOKMARKS_STORAGE_KEY = 'folkloreMapBookmarks';
-let bookmarks = loadBookmarks();
+// Storage, in-memory Set management and icon markup all live in
+// js/bookmarks.js now, shared with legend pages. These stay as thin wrappers
+// (map.js keeps its own in-memory `bookmarks` Set for perf: elsewhere in this
+// file it's read directly, e.g. bookmarks.size for the filter badge, without
+// re-parsing localStorage on every check).
+let bookmarks = FFBookmarks.load();
 const isMobile = () => window.innerWidth <= 640;
 let sidebarOpen = isMobile() ? false : (localStorage.getItem('sidebarOpen') !== 'false');
 
-function loadBookmarks() {
-  try {
-    const stored = JSON.parse(localStorage.getItem(BOOKMARKS_STORAGE_KEY) || '[]');
-    return new Set(Array.isArray(stored) ? stored : []);
-  } catch {
-    return new Set();
-  }
-}
-
 function saveBookmarks() {
-  try {
-    localStorage.setItem(BOOKMARKS_STORAGE_KEY, JSON.stringify([...bookmarks]));
-  } catch {
-    // Bookmarks remain available for the current page if storage is blocked.
-  }
+  FFBookmarks.save(bookmarks);
 }
 
 function isBookmarked(name) {
@@ -47,20 +42,11 @@ function isBookmarked(name) {
 }
 
 function bookmarkIconSvg(bookmarked) {
-  return `<svg class="bookmark-icon" viewBox="0 0 16 20" aria-hidden="true">
-    <path d="M2.5 1.5h11v16l-5.5-3.6-5.5 3.6z"
-      fill="${bookmarked ? 'currentColor' : 'none'}"
-      stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-  </svg>`;
+  return FFBookmarks.iconSvg(bookmarked);
 }
 
 function popupBookmarkTabSvg(bookmarked) {
-  return `<svg class="popup-bookmark-tab" viewBox="0 0 24 34" aria-hidden="true">
-    <path d="M1 0.5h22v31l-11-6.8-11 6.8z"
-      fill="${bookmarked ? 'var(--accent)' : 'var(--parchment-dk)'}"
-      stroke="${bookmarked ? 'var(--accent)' : 'var(--border)'}"
-      stroke-width="1.5" stroke-linejoin="round"/>
-  </svg>`;
+  return FFBookmarks.tabSvg(bookmarked);
 }
 
 // Apply persisted sidebar state immediately (before data loads)
@@ -153,6 +139,22 @@ function escapeHtml(value) { return SafeDOM.escapeHtml(value); }
 
 function safeSourceUrl(value) { return SafeDOM.safeUrl(value); }
 
+// Popup summaries are meant to be authored under ~200 chars (see
+// scheduled-tasks/legend-enhancement/SKILL.md) so a popup never grows tall
+// enough to clash with a neighbour or get auto-panned/closed on mobile. Not
+// every entry in the data respects that yet, so this is a display-layer
+// backstop: cut at the last sentence boundary within the limit, falling back
+// to a word boundary, rather than trusting every summary to already be short.
+const POPUP_SUMMARY_LIMIT = 200;
+function popupSummary(summary) {
+  const text = summary || '';
+  if (text.length <= POPUP_SUMMARY_LIMIT) return text;
+  const sentenceCut = text.slice(0, POPUP_SUMMARY_LIMIT).lastIndexOf('. ');
+  if (sentenceCut > POPUP_SUMMARY_LIMIT * 0.5) return text.slice(0, sentenceCut + 1);
+  const wordCut = text.slice(0, POPUP_SUMMARY_LIMIT - 1).lastIndexOf(' ');
+  return text.slice(0, wordCut > 0 ? wordCut : POPUP_SUMMARY_LIMIT - 1) + '…';
+}
+
 function buildPopup(leg) {
   const cat = CATEGORIES[leg.category];
   const encoded = encodeURIComponent(leg.name);
@@ -168,7 +170,7 @@ function buildPopup(leg) {
     <div class="popup-title">${escapeHtml(leg.name)}</div>
     <div class="popup-region">${escapeHtml(leg.region)}</div>
     <hr class="popup-divider"/>
-    <p class="popup-summary">${escapeHtml(leg.summary)}</p>
+    <p class="popup-summary">${escapeHtml(popupSummary(leg.summary))}</p>
     <div class="popup-footer">
       <a class="popup-source" href="${escapeHtml(safeSourceUrl(leg.source))}" target="_blank" rel="noopener noreferrer">Read More</a>
       <a class="popup-fullpage" href="legends/${legendSlug(leg.name)}">Full Page</a>

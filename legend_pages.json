@@ -9796,6 +9796,23 @@
       "image": "legend-images/bincombe-bumps-hero.jpg",
       "alt": "A Dorset country listener kneeling with an ear to a grass-covered Music Barrow on Bincombe Down while smaller barrows recede toward the coast",
       "caption": "A visual interpretation of the Music Barrow tradition on Bincombe Down"
+    },
+    "Tom Thumb": {
+      "priority": 554,
+      "image": "legend-images/tom-thumb-hero.jpg",
+      "alt": "NEEDS REVIEW: describe what the image actually shows for Tom Thumb",
+      "caption": "A visual interpretation of Tom Thumb",
+      "map_title": "Tattershall, Lincolnshire",
+      "section_heading": "NEEDS EDITORIAL: a heading for this section",
+      "pullquote": "NEEDS EDITORIAL: a pullquote drawn from the entry's own text",
+      "editorial": "",
+      "editorial_by": "",
+      "facts": {
+        "Tradition": "Attested in oral tradition by 1584 (Scot's Discovery of Witchcraft) and fixed in print by Richard Johnson's 1621 chapbook. No reliable origin date beyond that survives.",
+        "Type": "Hero",
+        "Setting": "Tattershall, Lincolnshire"
+      },
+      "seo_title": "Tom Thumb · Folklore Finder"
     }
   }
 }

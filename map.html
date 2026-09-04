@@ -559,7 +559,11 @@
     .map-border {
       position:absolute;
       inset:0;
-      z-index:900;
+      /* Above the vignette (399) but below Leaflet's markerPane (600) and
+         popupPane (700, both Leaflet defaults) — this used to sit at 900,
+         above popupPane, so any popup opened near the map's edge rendered
+         underneath the decorative frame instead of over it. */
+      z-index:450;
       box-sizing:border-box;
       border:34px solid transparent;
       border-image:url("assets/ornaments/generated-variants/oak-branch-frame-v1.png?v=20260713c") 230 / 34px / 0 repeat;
@@ -1069,6 +1073,7 @@
 <script src="/assets/leaflet/leaflet.markercluster.js?v=20260901a"></script>
 <script src="/js/dom-safe.js?v=20260822a"></script>
 <script src="/js/categories.js?v=20260823a" data-cfasync="false"></script>
+<script src="/js/bookmarks.js?v=20260904a" data-cfasync="false"></script>
 <script src="/js/search-score.js?v=20260901a" data-cfasync="false"></script>
 <script src="/js/map.js?v=20260901b"></script>
 </body>

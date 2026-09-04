@@ -39,6 +39,7 @@
     <nav class="crumb" aria-label="Breadcrumb"><a href="https://folklorefinder.uk/legends/">Legends</a><span class="sep">&#8250;</span><a href="https://folklorefinder.uk/legends/category/beast">Beasts</a><span class="sep">&#8250;</span><a href="https://folklorefinder.uk/legends/region/devon">Devon</a><span class="sep">&#8250;</span><span class="here">The Beast of Exmoor</span></nav>
     <section class="hero" aria-labelledby="legend-title">
       <div class="hero-placeholder" role="img" aria-label="Illustration placeholder for The Beast of Exmoor" style="--placeholder-colour:#2d6a8a"><div class="placeholder-lines" aria-hidden="true"></div><svg viewBox="0 0 512 512" aria-hidden="true"><path d="M179.3 38.94C154.7 77.7 142.7 139.7 168.4 185.9l-16.3 9.2c-6.7-11.9-11.2-24.4-13.9-37.2-34.5-6.3-69.42-7.5-104.98-2.1 34.07 10.1 52.77 23.7 76.68 46.7-26.82 9.7-60.25 30.2-92.93 70.2 35.47-8.8 64.83-11.5 89.43-6.3-36.94 22.5-64.06 56.1-88.34 114.1 35.9-17.2 64.89-18.8 102.94-18.8-23.07 32.7-35.27 77.2-36.31 112.8 24.51-26 57.61-60.2 87.21-79 3 29.9 15 58.3 35.9 85.3-.2-43.9 10.3-88.3 31.6-133.4-18.8 9-32.4 18.1-49.9 29.3 6.2-27.9 12.4-55.8 18.7-83.7-23.3 2.4-39 10-60.5 18.5 16.3-33.1 32.7-66.1 49.1-99.2l16.8 8.3-28.4 57.4c18.4-4.4 28.7-4.1 45.7-1.3-4.5 20.4-9 40.7-13.6 61 65.3-36.2 148.3-45.9 226.7-50 7.6-12.9 13.8-24.2 18.8-34.8l-6.3-24.4-24.4 30.8-7.8-27.5-22.5 29.2-7.5-26.1-23.9 31.5-7.7-28.2-23.8 31.4 1.2-41.1 22.6-42.7 7.6 28.3 23.9-31.5 7.6 28.2 23.5-30 6.5 26.9 24.5-30.8 7.8 27.5 24.6-32c2.3-10.8 4.6-22.4 7.4-35.7-55.5-3.7-106.3 4.8-154 9.8-38-20.8-80.8-26.8-121.9-18.5-13.6-29.69-27.2-59.38-40.9-89.06zM325.5 158.3c-4.5 14.2-13 18.3-24.7 20.6-16.1-4.4-28.3-15.5-34.4-30.2 20.4-3.8 42.4 3.4 59.1 9.6z"/></svg><span>Illustration in preparation</span></div>
+      <button class="hero-bookmark-tab" id="heroBookmarkBtn" type="button" aria-label="Add to My Archive" title="Add to My Archive"><svg class="popup-bookmark-tab" viewBox="0 0 24 34" aria-hidden="true"><path d="M1 0.5h22v31l-11-6.8-11 6.8z" fill="var(--parchment-dk)" stroke="var(--border)" stroke-width="1.5" stroke-linejoin="round"/></svg></button>
       <div class="hero-copy">
         <div class="eyebrow">
           <span class="category" style="background:#2d6a8a">Beasts</span>
@@ -61,6 +62,11 @@
           <button class="button secondary" id="webShareBtn" type="button" hidden><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></svg><span class="btn-label">Share</span></button>
         </div>
         <span class="share-status" id="shareStatus" role="status" aria-live="polite"></span>
+        <div class="archive-cta">
+          <p class="archive-cta-kicker">Enjoyed this legend?</p>
+          <p class="archive-cta-copy">Add it to your archive and build your own collection of folklore finds.</p>
+          <button class="button archive-cta-btn" id="archiveCtaBtn" type="button"><svg class="bookmark-icon" viewBox="0 0 16 20" aria-hidden="true"><path d="M2.5 1.5h11v16l-5.5-3.6-5.5 3.6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><span class="btn-label">Add to My Archive</span></button>
+        </div>
       </article>
 
       <aside class="sidebar" aria-label="Legend details">
@@ -75,6 +81,7 @@
 <footer>Folklore Finder &nbsp;&#183;&nbsp; An atlas of myths, legends, &amp; stories &nbsp;&#183;&nbsp; &#169; EditionTree &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/about">About</a> &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/updates">Updates</a> &nbsp;&#183;&nbsp; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2v2"/><path d="M14 2v2"/><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"/><path d="M6 2v2"/></svg>Ko-fi</a> &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/privacy">Privacy</a></footer>
 <script src="/assets/leaflet/leaflet.js?v=20260901a"></script>
 <link rel="stylesheet" href="/share.css?v=20260823a"/><script src="/share-card.js?v=20260826b"></script>
+<script src="/js/bookmarks.js?v=20260904a" data-cfasync="false"></script>
 <script src="https://folklorefinder.uk/legend-page.js?v=20260823b"></script>
 </body>
 </html>

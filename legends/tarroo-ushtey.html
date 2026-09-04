@@ -39,6 +39,7 @@
     <nav class="crumb" aria-label="Breadcrumb"><a href="https://folklorefinder.uk/legends/">Legends</a><span class="sep">&#8250;</span><a href="https://folklorefinder.uk/legends/category/water">Aquatic Legends</a><span class="sep">&#8250;</span><a href="https://folklorefinder.uk/legends/region/isle-of-man">Isle of Man</a><span class="sep">&#8250;</span><span class="here">Tarroo Ushtey</span></nav>
     <section class="hero" aria-labelledby="legend-title">
       <div class="hero-placeholder" role="img" aria-label="Illustration placeholder for Tarroo Ushtey" style="--placeholder-colour:#1a5a6a"><div class="placeholder-lines" aria-hidden="true"></div><svg viewBox="0 0 512 512" aria-hidden="true"><path d="M319.406 75.156c-50.542.49-104.39 20.876-150.094 72.844-10.232 9.65-19.88 19.59-29.187 29.313-20.516 21.433-39.694 41.877-60.22 56.468-18.484 13.142-37.73 21.617-61 22.75v89.876c53.93-32.793 59.934-67.832 115.595-136.312 6.38-6.524 12.727-13.19 19.125-19.875 9.96-10.407 20.016-20.803 30.563-30.657 46.422-36.83 92.022-27.93 107.218 2.5 4.6-49.27 57.958-30.564 66.813 18.875 6.91-33.696 20.327-44.354 34.03-31.625-28.136 49.585-26.61 110.87-8.406 164.937 20.51 60.915 61.743 114.13 110.344 133.75v-20.563c-38.34-19.194-74.662-65.71-92.657-119.156-15.937-47.336-17.777-99.07 2.75-141.655 8.492 16.92 16.342 43.406 21.94 79.53 17.992-84.587 54.762-72.463 56.624-10.593 42.998-66.287-52.197-161.48-163.438-160.406zm-35.656 95.78C194.225 181.69 66.158 359.648 43.625 494.97h91.25c1.02-133.954 71.114-282.045 148.875-324.033zm32.406 13.69c-76.76 49.056-114.574 208.732-109.812 310.343h78.437c-41.213-80.74-23.207-252.666 31.376-310.345zm21.875 26.218c-34.686 82.23-25.705 191.077 25.158 284.125h78c-75.605-53.774-120.09-190.455-103.157-284.126z"/></svg><span>Illustration in preparation</span></div>
+      <button class="hero-bookmark-tab" id="heroBookmarkBtn" type="button" aria-label="Add to My Archive" title="Add to My Archive"><svg class="popup-bookmark-tab" viewBox="0 0 24 34" aria-hidden="true"><path d="M1 0.5h22v31l-11-6.8-11 6.8z" fill="var(--parchment-dk)" stroke="var(--border)" stroke-width="1.5" stroke-linejoin="round"/></svg></button>
       <div class="hero-copy">
         <div class="eyebrow">
           <span class="category" style="background:#1a5a6a">Aquatic Legends</span>
@@ -61,6 +62,11 @@
           <button class="button secondary" id="webShareBtn" type="button" hidden><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></svg><span class="btn-label">Share</span></button>
         </div>
         <span class="share-status" id="shareStatus" role="status" aria-live="polite"></span>
+        <div class="archive-cta">
+          <p class="archive-cta-kicker">Enjoyed this legend?</p>
+          <p class="archive-cta-copy">Add it to your archive and build your own collection of folklore finds.</p>
+          <button class="button archive-cta-btn" id="archiveCtaBtn" type="button"><svg class="bookmark-icon" viewBox="0 0 16 20" aria-hidden="true"><path d="M2.5 1.5h11v16l-5.5-3.6-5.5 3.6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><span class="btn-label">Add to My Archive</span></button>
+        </div>
       </article>
 
       <aside class="sidebar" aria-label="Legend details">
@@ -75,6 +81,7 @@
 <footer>Folklore Finder &nbsp;&#183;&nbsp; An atlas of myths, legends, &amp; stories &nbsp;&#183;&nbsp; &#169; EditionTree &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/about">About</a> &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/updates">Updates</a> &nbsp;&#183;&nbsp; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2v2"/><path d="M14 2v2"/><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"/><path d="M6 2v2"/></svg>Ko-fi</a> &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/privacy">Privacy</a></footer>
 <script src="/assets/leaflet/leaflet.js?v=20260901a"></script>
 <link rel="stylesheet" href="/share.css?v=20260823a"/><script src="/share-card.js?v=20260826b"></script>
+<script src="/js/bookmarks.js?v=20260904a" data-cfasync="false"></script>
 <script src="https://folklorefinder.uk/legend-page.js?v=20260823b"></script>
 </body>
 </html>

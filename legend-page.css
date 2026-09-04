@@ -176,6 +176,51 @@ button{font:inherit}
   color:#f6eedf;
 }
 .eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:17px}
+/* Bookmark icon itself carries no intrinsic size (see js/bookmarks.js,
+   iconSvg) — map.html sizes it the same way for the popup/sidebar star. */
+.bookmark-icon{display:block;width:13px;height:17px}
+/* Save control on the hero image itself, styled as the same hanging-ribbon
+   tab as the map popup's .popup-bookmark (map.html) — top-right corner of
+   the artwork, like a bookmark tucked into a book. --accent/--parchment-dk/
+   --border are aliased to this page's own palette so the shared
+   FFBookmarks.tabSvg() markup (which paints via those var() names) renders
+   correctly here without a second copy of the SVG.
+   top:-1px (matching the popup's own tab) overlaps the hero's 1px border so
+   the tab reads as tucked into the frame rather than sitting just inside
+   it. The hover/focus cue is a scaleY grow anchored at the top (not a
+   translateY): shifting the whole tab down used to slide its flat top edge
+   away from the border, opening a visible gap in the frame right above it
+   every time someone went to click it. Scaling in place never moves that
+   top edge, so the border stays covered and the tab never spills upward
+   onto the plain page background above the hero either. */
+.hero-bookmark-tab{
+  --accent:var(--rust);
+  --parchment-dk:#e8dcc5;
+  --border:var(--line);
+  position:absolute;
+  top:-1px;
+  right:34px;
+  z-index:3;
+  width:30px;
+  height:42px;
+  padding:0;
+  border:0;
+  background:none;
+  cursor:pointer;
+  filter:drop-shadow(0 3px 4px rgba(20,12,6,.4));
+  transform-origin:top center;
+  transition:transform .15s ease,filter .15s ease;
+}
+.hero-bookmark-tab:hover,.hero-bookmark-tab:focus-visible{transform:scaleY(1.06);filter:drop-shadow(0 4px 6px rgba(20,12,6,.5))}
+.hero-bookmark-tab .popup-bookmark-tab{display:block;width:30px;height:42px}
+.hero-bookmark-tab .popup-bookmark-tab path{transition:fill .15s ease,stroke .15s ease}
+/* Unsaved: a faded outline only, so the tab doesn't sit as a solid block
+   over the artwork until the visitor actually saves the legend. Saved
+   state keeps the filled --accent look tabSvg() already renders inline. */
+.hero-bookmark-tab:not(.bookmarked) .popup-bookmark-tab path{fill:transparent;stroke:rgba(244,234,215,.42)}
+.hero-bookmark-tab:not(.bookmarked):hover .popup-bookmark-tab path,
+.hero-bookmark-tab:not(.bookmarked):focus-visible .popup-bookmark-tab path{fill:rgba(244,234,215,.14);stroke:rgba(244,234,215,.85)}
+@media(max-width:640px){.hero-bookmark-tab{right:20px;width:26px;height:36px}.hero-bookmark-tab .popup-bookmark-tab{width:26px;height:36px}}
 .category{
   display:inline-block;
   padding:5px 11px 4px;
@@ -330,6 +375,52 @@ h1{
    button's textContent instead would delete the icon. */
 .button svg{flex:0 0 auto;margin-right:8px}
 .share-status{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+/* Bottom-of-article prompt to save the legend. Same depth recipe as
+   .ach-toast/.hero-submit-cta (see folklorefinder.css): a warm gradient
+   instead of a flat fill, lit top/shaded bottom edges as insets, and three
+   stacked shadows so it sits above the page rather than being printed on
+   it — plus the corner oak-leaf motif .side-card:first-child already uses,
+   so this reads as part of the same decorated-parchment family rather than
+   a plain bolted-on box. Uses the same bookmark toggle as the hero tab and
+   the map's star; no separate like/save system. */
+.archive-cta{
+  position:relative;
+  overflow:hidden;
+  margin:40px 0 4px;
+  padding:26px 28px;
+  border:1px solid rgba(176,144,96,.62);
+  border-radius:3px;
+  background:linear-gradient(177deg,#fbf5e9 0%,#f4ecdb 55%,#eee2ca 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.7),
+    inset 0 -1px 0 rgba(120,90,50,.12),
+    0 2px 4px rgba(26,14,6,.09),
+    0 12px 24px -10px rgba(26,14,6,.2),
+    0 26px 50px -20px rgba(26,14,6,.24);
+}
+.archive-cta::after{
+  content:"";
+  position:absolute;
+  top:-30px;
+  right:-30px;
+  width:130px;
+  height:130px;
+  opacity:.1;
+  pointer-events:none;
+  background:url("assets/ornaments/generated-variants/oak-corner-upper-right.webp") right top/contain no-repeat;
+}
+.archive-cta-kicker{
+  position:relative;
+  margin:0 0 6px;
+  font-family:'Marcellus',serif;
+  font-size:19px;
+  font-weight:400;
+  color:#4a3322;
+}
+.archive-cta-copy{position:relative;margin:0 0 18px;font-size:15px;color:var(--ink-soft);line-height:1.55}
+.archive-cta-btn{position:relative}
+.archive-cta-btn.bookmarked{background:transparent;border-color:var(--rust-dark);color:var(--rust-dark)}
+.archive-cta-btn.bookmarked:hover{background:var(--rust-dark);color:#fff}
 .share-wrap{position:relative;display:inline-flex}
 /* z-index must clear the Leaflet mini-map (panes 400, controls up to 1000) and
    the oak-corner motif on .side-card (401) — both live in the root stacking

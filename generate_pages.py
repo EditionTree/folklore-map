@@ -419,6 +419,26 @@ LUCIDE_BODIES = {
 }
 
 
+# The map's own bookmark toggle icons (see js/bookmarks.js, iconSvg()/
+# tabSvg()), not the static Lucide "bookmark" glyph above — these have a real
+# unfilled/filled state, which is what a save toggle needs. Both render
+# unbookmarked by default since the server can't know a visitor's
+# localStorage; legend-page.js swaps them on load if the legend is saved.
+# icon = the plain outline used in the bottom-of-article button.
+BOOKMARK_ICON_SVG = (
+    '<svg class="bookmark-icon" viewBox="0 0 16 20" aria-hidden="true">'
+    '<path d="M2.5 1.5h11v16l-5.5-3.6-5.5 3.6z" fill="none" '
+    'stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>'
+)
+# tab = the hanging-ribbon shape used on the hero image, matching the map
+# popup's .popup-bookmark tab (map.html) exactly.
+BOOKMARK_TAB_SVG = (
+    '<svg class="popup-bookmark-tab" viewBox="0 0 24 34" aria-hidden="true">'
+    '<path d="M1 0.5h22v31l-11-6.8-11 6.8z" fill="var(--parchment-dk)" '
+    'stroke="var(--border)" stroke-width="1.5" stroke-linejoin="round"/></svg>'
+)
+
+
 def lucide(name, size, cls=""):
     """One inline Lucide icon. `cls` is an optional class attribute value."""
     return (
@@ -1670,6 +1690,7 @@ $topnav
     $breadcrumb
     <section class="hero" aria-labelledby="legend-title">
       $hero_media
+      <button class="hero-bookmark-tab" id="heroBookmarkBtn" type="button" aria-label="Add to My Archive" title="Add to My Archive">$icon_bookmark_tab</button>
       <div class="hero-copy">
         <div class="eyebrow">
           <span class="category" style="background:$catcolour">$catname</span>
@@ -1692,6 +1713,11 @@ $topnav
           <button class="button secondary" id="webShareBtn" type="button" hidden>$icon_share<span class="btn-label">Share</span></button>
         </div>
         <span class="share-status" id="shareStatus" role="status" aria-live="polite"></span>
+        <div class="archive-cta">
+          <p class="archive-cta-kicker">Enjoyed this legend?</p>
+          <p class="archive-cta-copy">Add it to your archive and build your own collection of folklore finds.</p>
+          <button class="button archive-cta-btn" id="archiveCtaBtn" type="button">$icon_bookmark<span class="btn-label">Add to My Archive</span></button>
+        </div>
       </article>
 
       <aside class="sidebar" aria-label="Legend details">
@@ -1706,6 +1732,7 @@ $topnav
 $footer
 <script src="/assets/leaflet/leaflet.js?v=20260901a"></script>
 <link rel="stylesheet" href="/share.css?v=20260823a"/><script src="/share-card.js?v=20260826b"></script>
+<script src="/js/bookmarks.js?v=20260904a" data-cfasync="false"></script>
 <script src="$base/legend-page.js?v=20260823b"></script>
 </body>
 </html>
@@ -2601,6 +2628,8 @@ def render_featured_legend(leg, featured, paras, srcs, rel, nearby, cats, meta,
         icon_map=lucide("map", 13),
         icon_link=lucide("link", 13),
         icon_share=lucide("share-2", 13),
+        icon_bookmark=BOOKMARK_ICON_SVG,
+        icon_bookmark_tab=BOOKMARK_TAB_SVG,
         sidebar_col1=sidebar_col1,
         sidebar_col2=sidebar_col2,
         featured_related=featured_related,

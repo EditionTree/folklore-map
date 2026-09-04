@@ -332,6 +332,50 @@
     trackEvent('legend_viewed', {legend_name: (pageTitle.textContent||'').trim()});
   }
 
+  // ── Save to My Archive ───────────────────────────────────────────────
+  // Reuses the same folkloreMapBookmarks set the map's star button and My
+  // Archive already read/write (see js/bookmarks.js) — not a separate save
+  // system. Two controls on the page (the small hero button and the
+  // bottom-of-article prompt) stay in sync with each other and with the map.
+  (function initArchiveButtons(){
+    if(!window.FFBookmarks) return;
+    var name=pageTitle?(pageTitle.textContent||'').trim():'';
+    if(!name) return;
+    var heroBtn=document.getElementById('heroBookmarkBtn');
+    var ctaBtn=document.getElementById('archiveCtaBtn');
+    var buttons=[heroBtn, ctaBtn].filter(Boolean);
+    if(!buttons.length) return;
+
+    function render(){
+      var on=FFBookmarks.isBookmarked(name);
+      var label=on?'Saved to My Archive':'Add to My Archive';
+      if(heroBtn){
+        heroBtn.classList.toggle('bookmarked', on);
+        heroBtn.setAttribute('aria-label', label);
+        heroBtn.title=label;
+        var tabEl=heroBtn.querySelector('.popup-bookmark-tab');
+        if(tabEl) tabEl.outerHTML=FFBookmarks.tabSvg(on);
+      }
+      if(ctaBtn){
+        ctaBtn.classList.toggle('bookmarked', on);
+        ctaBtn.setAttribute('aria-label', label);
+        var labelEl=ctaBtn.querySelector('.btn-label');
+        if(labelEl) labelEl.textContent=label;
+        var iconEl=ctaBtn.querySelector('.bookmark-icon');
+        if(iconEl) iconEl.outerHTML=FFBookmarks.iconSvg(on);
+      }
+    }
+
+    buttons.forEach(function(btn){
+      btn.addEventListener('click', function(){
+        FFBookmarks.toggle(name);
+        render();
+      });
+    });
+
+    render();
+  })();
+
   var firstVisitName=markLegendVisited();
   if(firstVisitName) checkAchievementToasts(firstVisitName);
 

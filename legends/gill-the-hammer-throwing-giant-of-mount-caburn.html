@@ -39,6 +39,7 @@
     <nav class="crumb" aria-label="Breadcrumb"><a href="https://folklorefinder.uk/legends/">Legends</a><span class="sep">&#8250;</span><a href="https://folklorefinder.uk/legends/category/giant">Giants</a><span class="sep">&#8250;</span><a href="https://folklorefinder.uk/legends/region/sussex">Sussex</a><span class="sep">&#8250;</span><span class="here">Gill, the Hammer-Throwing Giant of Mount Caburn</span></nav>
     <section class="hero" aria-labelledby="legend-title">
       <div class="hero-media-wrap"><picture><source type="image/webp" srcset="https://folklorefinder.uk/legend-images/gill-the-hammer-throwing-giant-of-mount-caburn-hero-card.webp 800w, https://folklorefinder.uk/legend-images/gill-the-hammer-throwing-giant-of-mount-caburn-hero.webp 1672w" sizes="100vw"/><img src="https://folklorefinder.uk/legend-images/gill-the-hammer-throwing-giant-of-mount-caburn-hero.jpg" alt="A Sussex giant swinging a huge hammer from Mount Caburn across the South Downs" width="1600" height="900" fetchpriority="high" decoding="async"/></picture><div class="hero-caption-wrap"><span class="hero-caption">A visual interpretation of Gill throwing his hammer from Mount Caburn</span><span class="hero-ai-note">Illustration created with the assistance of generative AI.</span></div></div>
+      <button class="hero-bookmark-tab" id="heroBookmarkBtn" type="button" aria-label="Add to My Archive" title="Add to My Archive"><svg class="popup-bookmark-tab" viewBox="0 0 24 34" aria-hidden="true"><path d="M1 0.5h22v31l-11-6.8-11 6.8z" fill="var(--parchment-dk)" stroke="var(--border)" stroke-width="1.5" stroke-linejoin="round"/></svg></button>
       <div class="hero-copy">
         <div class="eyebrow">
           <span class="category" style="background:#4a3820">Giants</span>
@@ -61,6 +62,11 @@
           <button class="button secondary" id="webShareBtn" type="button" hidden><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></svg><span class="btn-label">Share</span></button>
         </div>
         <span class="share-status" id="shareStatus" role="status" aria-live="polite"></span>
+        <div class="archive-cta">
+          <p class="archive-cta-kicker">Enjoyed this legend?</p>
+          <p class="archive-cta-copy">Add it to your archive and build your own collection of folklore finds.</p>
+          <button class="button archive-cta-btn" id="archiveCtaBtn" type="button"><svg class="bookmark-icon" viewBox="0 0 16 20" aria-hidden="true"><path d="M2.5 1.5h11v16l-5.5-3.6-5.5 3.6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><span class="btn-label">Add to My Archive</span></button>
+        </div>
       </article>
 
       <aside class="sidebar" aria-label="Legend details">
@@ -75,6 +81,7 @@
 <footer>Folklore Finder &nbsp;&#183;&nbsp; An atlas of myths, legends, &amp; stories &nbsp;&#183;&nbsp; &#169; EditionTree &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/about">About</a> &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/updates">Updates</a> &nbsp;&#183;&nbsp; <a href="https://ko-fi.com/folklorefinder" target="_blank" rel="noopener"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2v2"/><path d="M14 2v2"/><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"/><path d="M6 2v2"/></svg>Ko-fi</a> &nbsp;&#183;&nbsp; <a href="https://folklorefinder.uk/privacy">Privacy</a></footer>
 <script src="/assets/leaflet/leaflet.js?v=20260901a"></script>
 <link rel="stylesheet" href="/share.css?v=20260823a"/><script src="/share-card.js?v=20260826b"></script>
+<script src="/js/bookmarks.js?v=20260904a" data-cfasync="false"></script>
 <script src="https://folklorefinder.uk/legend-page.js?v=20260823b"></script>
 </body>
 </html>

@@ -87,14 +87,99 @@
     try { return JSON.parse(localStorage.getItem(key) || 'null') || fallback; } catch(e) { return fallback; }
   }
 
+  // ── Rolling counters on the stats strip ──
+  // These four numbers are written more than once: the server renders a real
+  // value, renderStats() replaces three of them when legends.json parses, and
+  // the collections count arrives later on its own fetch. So targets are read
+  // at the moment the strip scrolls into view rather than captured at load,
+  // and setStat() re-animates any value that lands after that.
+  //
+  // A number is only zeroed inside the animation frame that immediately starts
+  // counting it, so a thrown error cannot leave a visitor looking at "0" where
+  // a real figure should be. Nothing is zeroed at all under reduced motion, or
+  // when IntersectionObserver is missing.
+  const COUNT_MS = 1100;
+  const COUNT_STAGGER_MS = 90;
+  let countersArmed = false;
+
+  // "700+" -> {value: 700, suffix: "+"}. Anything without digits is skipped.
+  function parseStat(text){
+    const m = String(text).match(/^\s*([\d,]+)(\D*)$/);
+    if (!m) return null;
+    const value = parseInt(m[1].replace(/,/g, ''), 10);
+    return isNaN(value) ? null : { value: value, suffix: m[2].trim() };
+  }
+
+  function easeOutCubic(t){ return 1 - Math.pow(1 - t, 3); }
+
+  function animateStat(el, from, to, suffix, delay){
+    if (el._countRAF) cancelAnimationFrame(el._countRAF);
+    const start = performance.now() + (delay || 0);
+    const span = to - from;
+    function frame(now){
+      const t = Math.min(1, Math.max(0, (now - start) / COUNT_MS));
+      const v = Math.round(from + span * easeOutCubic(t));
+      // The suffix is held back until the end so the number does not read as
+      // "more than" a figure it has not reached yet.
+      el.textContent = t < 1 ? String(v) : String(to) + suffix;
+      if (t < 1) el._countRAF = requestAnimationFrame(frame);
+      else el._countRAF = null;
+    }
+    el._countRAF = requestAnimationFrame(frame);
+  }
+
+  // Single write path for a stat value, so renderStats never fights the counter.
+  function setStat(el, value){
+    if (!el) return;
+    const text = String(value);
+    if (!countersArmed) { el.textContent = text; return; }
+    const target = parseStat(text);
+    const current = parseStat(el.textContent);
+    if (!target) { el.textContent = text; return; }
+    animateStat(el, current ? current.value : 0, target.value, target.suffix, 0);
+  }
+
+  function armStatCounters(){
+    const strip = document.querySelector('.stats');
+    if (!strip) return;
+    const nums = Array.prototype.slice.call(strip.querySelectorAll('.stat-num'));
+    if (!nums.length) return;
+
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce || typeof IntersectionObserver === 'undefined'){
+      countersArmed = true;   // setStat still writes, it just writes instantly
+      return;
+    }
+
+    const run = function(){
+      countersArmed = true;
+      nums.forEach(function(el, i){
+        const target = parseStat(el.textContent);
+        if (!target) return;
+        animateStat(el, 0, target.value, target.suffix, i * COUNT_STAGGER_MS);
+      });
+    };
+
+    // 0.6 rather than a bare 0 so the row is properly on screen before it
+    // starts, and the visitor sees the count rather than its aftermath.
+    const io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (!e.isIntersecting) return;
+        io.disconnect();
+        run();
+      });
+    }, { threshold: 0.6 });
+    io.observe(strip);
+  }
+
   // ── Stats strip ──
   function renderStats(data){
     const elLegends = document.getElementById('statLegends');
     const elCategories = document.getElementById('statCategories');
     const elRegions = document.getElementById('statRegions');
     const elCollections = document.getElementById('statCollections');
-    if (elLegends) elLegends.textContent = roundedCountPlus(data.total || LEGENDS.length);
-    if (elCategories) elCategories.textContent = Object.keys(CATMETA).length;
+    if (elLegends) setStat(elLegends, roundedCountPlus(data.total || LEGENDS.length));
+    if (elCategories) setStat(elCategories, Object.keys(CATMETA).length);
     if (elRegions) {
       // l.region is free text ("Slaghtaverty, County Londonderry") rather than a
       // controlled taxonomy, so a raw unique count runs into the hundreds and
@@ -109,14 +194,14 @@
       // Only ever improve on the server-rendered fallback. Blanking it to a
       // placeholder when the count comes back empty would replace a correct
       // number with a worse one.
-      if (found.size) elRegions.textContent = found.size;
+      if (found.size) setStat(elRegions, found.size);
     }
     if (elCollections) {
       fetch('./collections.json')
         .then(r => r.json())
         .then(c => {
           const n = (c.collections || []).length;
-          if (n) elCollections.textContent = n;
+          if (n) setStat(elCollections, n);
         })
         // On failure keep the static count that generate_pages.py wrote in.
         .catch(() => {});
@@ -519,6 +604,13 @@
     renderLotw();
     renderStats(data);
   });
+
+  // Safe to call now: this file loads at the end of body. On a short window
+  // the strip is below the fold and this waits for the scroll; on a tall one
+  // (the strip sits around 750px, so anything over ~800px tall) it is already
+  // on screen and counts immediately, which is the right behaviour when there
+  // is no scroll to wait for.
+  armStatCounters();
 
   // Surprise me
   document.getElementById('surpriseBtn').addEventListener('click', () => {

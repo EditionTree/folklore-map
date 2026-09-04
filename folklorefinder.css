@@ -147,6 +147,10 @@ body.ff-paper {
   display: inline;
   margin-right: 6px;
   font-size: 17px;
+  /* The counter in js/home.js runs these from 0 on scroll, so the digits change
+     roughly sixty times a second. Proportional figures make the label beside
+     them twitch left and right the whole way up. */
+  font-variant-numeric: tabular-nums;
 }
 
 .home-page .stat-label {
@@ -360,12 +364,18 @@ body.ff-paper {
   }
 
   /* The stats grid, this strip and the footer stack into one dark block at the
-     foot of the page: 253px of chrome on a 812px screen. Trimming the strip and
-     compacting the footer brings that back under 180px. */
+     foot of the page. On a phone the methodology sentence ran to three lines of
+     italic body copy that nobody reads standing at a bus stop, so only its link
+     survives here. The sentence itself still carries the positioning claim on
+     desktop, where there is room for it. */
+  .home-page .stats-method-text {
+    display: none;
+  }
+
   .home-page .stats-method {
     margin-top: 4px;
     padding-bottom: 4px;
-    font-size: 12.5px;
+    font-size: 13px;
     line-height: 1.55;
   }
 }

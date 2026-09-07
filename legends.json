@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-07T18:55:09.778918Z",
+  "generated": "2026-09-07T21:09:53.715240Z",
   "total": 737,
   "categories": {
     "beast": "Beasts",
@@ -200,7 +200,8 @@
       "source": "https://www.britannica.com/biography/Alfred-the-Great",
       "sources": [
         "https://www.britannica.com/biography/Alfred-the-Great",
-        "https://king-alfred.com/wp/2019/02/01/cakes/"
+        "https://king-alfred.com/wp/2019/02/01/cakes/",
+        "https://swheritage.org.uk/king-alfred-the-great/"
       ],
       "tags": [
         "england",
@@ -210,7 +211,11 @@
       "dating_confidence": "medium",
       "period_slug": "early-medieval-britain",
       "period": "Set in the winter of 878, during Alfred's exile before the Battle of Edington. First recorded in the Life of Saint Neot, written roughly a century later.",
-      "date_added": "2026-09-03"
+      "date_added": "2026-09-03",
+      "origin_date": "878",
+      "earliest_record": "The anonymous Vita S. Neoti (Life of Saint Neot), compiled in the late tenth or early eleventh century, roughly a century after Alfred's death in 899",
+      "historical_setting": "Alfred's exile among the Somerset marshes during the Viking wars, winter 878, shortly before his victory at the Battle of Edington",
+      "cultural_tradition": "English royal hagiographic legend, part of the wider Alfred the Great tradition"
     },
     {
       "name": "Alice Kyteler",
@@ -1031,7 +1036,11 @@
       "earliest_record": "Reports of an oversized wild boar in the Forest of Dean from 1802, including a Parkend hunting party's expedition that year",
       "period": "Georgian England",
       "origin_type": "oral-tradition",
-      "dating_confidence": "medium"
+      "dating_confidence": "medium",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Beast_of_Dean",
+        "https://www.visitdeanwye.co.uk/blog/myths-legends-of-the-forest-of-dean"
+      ]
     },
     {
       "name": "Bedd Dorti, the Witch's Grave",
@@ -1217,7 +1226,11 @@
       "period": "Late 20th-century Edinburgh (modern revival, deliberately drawing on older Gaelic Beltane fire customs rather than continuing them unbroken)",
       "origin_type": "historical-event",
       "dating_confidence": "high",
-      "period_slug": "modern-folklore"
+      "period_slug": "modern-folklore",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Beltane_Fire_Festival",
+        "https://beltane.org/a-detailed-history-of-beltane/"
+      ]
     },
     {
       "name": "Ben Varrey",
@@ -1631,10 +1644,14 @@
         "battle"
       ],
       "origin_type": "literary",
-      "dating_confidence": "medium",
+      "dating_confidence": "high",
       "period_slug": "early-medieval-britain",
       "period": "The real Macbeth's defeat near Dunsinane is dated to 1054. The moving wood prophecy is a literary invention first staged around 1606.",
-      "date_added": "2026-09-03"
+      "date_added": "2026-09-03",
+      "origin_date": "1054",
+      "earliest_record": "The moving-wood prophecy is a literary invention: staged in Shakespeare's Macbeth around 1606, itself drawing on Holinshed's Chronicles (1577), which drew in turn on Hector Boece's Scotorum Historia (1527)",
+      "historical_setting": "The historical Macbeth's defeat and death near Dunsinane, dated to 1054, during the succession struggles of eleventh-century Scotland",
+      "cultural_tradition": "Scottish chronicle history reworked into English Renaissance drama"
     },
     {
       "name": "Bisterne Dragon",
@@ -1657,7 +1674,11 @@
       "period": "Late Medieval to early modern Hampshire",
       "origin_type": "literary",
       "dating_confidence": "medium",
-      "period_slug": "medieval-britain"
+      "period_slug": "medieval-britain",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bisterne_Dragon",
+        "https://www.mysteriousbritain.co.uk/cryptozoology/british-dragon-gazetteer/"
+      ]
     },
     {
       "name": "Black Annis",
@@ -1683,7 +1704,11 @@
       "earliest_record": "Place-name evidence: legal documents from 1764 reference 'Black Anny's Bower Close' as a parcel of land bordering Leicester Forest, with the Dane Hills area referenced as early as 1689; the first literary treatment is Lieutenant John Heyrick's poem 'On a Cave Called Black Annis's Bower' (1797), quoted in John Nichols's 'History of Leicester'",
       "period": "Pre-modern Leicestershire; oral tradition older than its earliest written trace",
       "origin_type": "oral-tradition",
-      "dating_confidence": "medium"
+      "dating_confidence": "medium",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Black_Annis",
+        "https://www.storyofleicester.info/faith-belief/black-annis-and-dane-hills/"
+      ]
     },
     {
       "name": "Black Dog of Bouley Bay",
@@ -2030,7 +2055,11 @@
       "earliest_record": "No firm date for the legend itself; popularly anchored to the early-19th-century quarrying of the Blue Lias shale at Kilve, which uncovered a fossilised ichthyosaur skull later pointed to as Blue Ben's remains (now displayed at the Museum of Somerset, Taunton)",
       "period": "Somerset coast, oral tradition of uncertain age; popularly tied to early-19th-century fossil discovery",
       "origin_type": "oral-tradition",
-      "dating_confidence": "low"
+      "dating_confidence": "low",
+      "sources": [
+        "https://en.wikipedia.org/wiki/List_of_dragons_in_mythology_and_folklore",
+        "https://www.mysteriousbritain.co.uk/legends/blue-ben-of-kilve/"
+      ]
     },
     {
       "name": "Blue Men of the Minch",
@@ -2315,7 +2344,7 @@
         "england",
         "london"
       ],
-      "detail": "Bran the Blessed, Bendigeidfran, is the giant-king of Britain at the heart of the Second Branch of the Mabinogi, a figure so vast that no house could ever contain him and so mighty that he waded the Irish Sea at the head of his host, his musicians playing on his back. When his sister Branwen, married to the King of Ireland, was abused and set to drudge in his kitchens, Bran led an army across the water to avenge her.\n\nThe war was catastrophic, all but annihilating both sides, and Bran himself was wounded in the foot by a poisoned spear. Knowing he was dying, he commanded his seven surviving companions to cut off his head, which went on talking and feasting with them for many years in an enchanted timelessness, before they bore it at last to London and buried it on the White Hill (the site, tradition holds, of the Tower of London), facing France, so that as long as it lay there no invader could conquer Britain. King Arthur, the legend adds, later dug it up in his pride, trusting only his own strength to defend the land; and the ravens that are still kept at the Tower are said to be the lingering guardianship of Bran, whose name means 'raven'.\n\nThe tale survives in the Second Branch of the Mabinogi, 'Branwen ferch Llŷr', preserved in the White Book of Rhydderch (c. 1350) and the Red Book of Hergest (c. 1382-1410); scholars agree the story itself predates both manuscripts by an uncertain margin, rooted in pre-Norman Welsh oral tradition.",
+      "detail": "Bran the Blessed, Bendigeidfran, is the giant-king of Britain at the heart of the Second Branch of the Mabinogi, a figure so vast that no house could ever contain him and so mighty that he waded the Irish Sea at the head of his host, his musicians playing on his back. When his sister Branwen, married to the King of Ireland, was abused and set to drudge in his kitchens, Bran led an army across the water to avenge her.\n\nThe war was catastrophic, all but annihilating both sides, and Bran himself was wounded in the foot by a poisoned spear. Knowing he was dying, he commanded his seven surviving companions to cut off his head, which went on talking and feasting with them for many years in an enchanted timelessness, before they bore it at last to London and buried it on the White Hill (the site, tradition holds, of the Tower of London), facing France, so that as long as it lay there no invader could conquer Britain. King Arthur, the legend adds, later dug it up in his pride, trusting only his own strength to defend the land; and the ravens that are still kept at the Tower are said to be the lingering guardianship of Bran, whose name means 'raven'.\n\nThat link between the old myth and the modern birds is far shakier than the story suggests. No raven appears in the Tower's own records before the 1880s, and the belief that the kingdom would fall if they ever left cannot be traced in print earlier than 1944, well within living memory rather than ancient survival. Geoffrey Parnell, the Tower's official historian, has called the whole raven mythology a Victorian invention rather than an unbroken folk memory of Bran. One real thread does connect the two: the fourth Earl of Dunraven, whose family had been persuaded by the Welsh antiquarian Iolo Morganwg that their own castle stood on the site of Bran's court, is thought to have given ravens to the Tower in the nineteenth century, carrying that adopted association with him. Whether the Tower's ravens were named after Bran because of a memory reaching back to the Mabinogi, or the connection was drawn afterwards onto birds already kept there for other reasons, the sources cannot say.\n\nThe tale survives in the Second Branch of the Mabinogi, 'Branwen ferch Llŷr', preserved in the White Book of Rhydderch (c. 1350) and the Red Book of Hergest (c. 1382-1410); scholars agree the story itself predates both manuscripts by an uncertain margin, rooted in pre-Norman Welsh oral tradition.",
       "sources": [
         "https://en.wikipedia.org/wiki/Brân_the_Blessed",
         "https://www.gutenberg.org/files/5160/5160-h/5160-h.htm"
@@ -2882,7 +2911,11 @@
       "period": "Roman Britain (the fortress itself); High Medieval Wales (the Arthurian association)",
       "origin_type": "literary",
       "dating_confidence": "high",
-      "period_slug": "sub-roman-britain"
+      "period_slug": "sub-roman-britain",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Caerleon",
+        "https://cadw.gov.wales/visit/places-to-visit/caerleon-roman-amphitheatre"
+      ]
     },
     {
       "name": "Cailleach",
@@ -3103,7 +3136,11 @@
       "dating_confidence": "medium",
       "period_slug": "early-medieval-britain",
       "period": "Cnut reigned over England from 1016 to 1035. The tide story is first recorded around a century later by Henry of Huntingdon, with no contemporary source confirming it.",
-      "date_added": "2026-09-03"
+      "date_added": "2026-09-03",
+      "origin_date": "circa 1028-1035",
+      "earliest_record": "Henry of Huntingdon's Historia Anglorum, written around 1130, roughly a century after Cnut's death in 1035",
+      "historical_setting": "The later reign of Cnut the Great over England, Denmark and Norway (1016-1035); no fixed location or year within that reign is given by the earliest account",
+      "cultural_tradition": "Anglo-Norman monastic chronicle tradition; a moralising royal anecdote rather than a contemporary record"
     },
     {
       "name": "Caoranach",
@@ -4878,7 +4915,11 @@
       "period": "Whittington's lifetime, about 1354 to 1423; the cat legend first appears in print in 1612",
       "period_slug": "medieval-britain",
       "origin_type": "literary",
-      "dating_confidence": "high"
+      "dating_confidence": "high",
+      "origin_date": "circa 1354-1423 (Richard Whittington's lifetime)",
+      "earliest_record": "The fortune-making cat legend first appears in a printed ballad of 1612, nearly two centuries after Whittington's death; a 1605 stage play (now lost) is also referenced by some scholars as an earlier attestation",
+      "historical_setting": "Medieval London's mercantile and civic life under Richard II, Henry IV and Henry V, when the real Whittington served three terms as Lord Mayor",
+      "cultural_tradition": "English civic legend and chapbook/ballad tradition"
     },
     {
       "name": "Dinas Emrys",
@@ -6711,7 +6752,11 @@
       "period": "The reported events run from autumn 1931 to about 1937, with the Price and Lambert investigation in 1935",
       "period_slug": "modern-folklore",
       "origin_type": "historical-event",
-      "dating_confidence": "high"
+      "dating_confidence": "high",
+      "origin_date": "1931",
+      "earliest_record": "Contemporary local and national newspaper coverage from 1931 to 1932; formally investigated and documented by psychical researcher Harry Price and journalist R. S. Lambert in their 1936 book The Haunting of Cashen's Gap",
+      "historical_setting": "The Irving family's isolated hill farm, Doarlish Cashen, above Dalby on the Isle of Man, 1931 to about 1937",
+      "cultural_tradition": "British interwar Fortean/psychical-research case, distinct from older Manx oral folklore"
     },
     {
       "name": "Gelert",
@@ -6764,7 +6809,10 @@
       "dating_confidence": "low",
       "period_slug": null,
       "period": "Undated Highland oral tradition. The only detailed written account, Osgood Mackenzie's memoir, was published in 1921 but describes nineteenth century local lore, and the belief itself has no fixed origin date.",
-      "date_added": "2026-09-03"
+      "date_added": "2026-09-03",
+      "earliest_record": "Osgood Mackenzie's memoir A Hundred Years in the Highlands, published in 1921, describing belief already established locally in the nineteenth century",
+      "historical_setting": "Birch woods near Loch a Druing, Gairloch, Wester Ross, with sightings said to run through the latter part of the nineteenth century",
+      "cultural_tradition": "Scottish Highland Gaelic fairy tradition (Gaelic gille dubh, 'dark-haired lad')"
     },
     {
       "name": "Giant of Grabbist",
@@ -7358,7 +7406,11 @@
       "period": "Victorian Edinburgh, 1858 to 1873",
       "period_slug": "victorian-britain",
       "origin_type": "historical-event",
-      "dating_confidence": "high"
+      "dating_confidence": "medium",
+      "origin_date": "1858",
+      "earliest_record": "Edinburgh Town Council's 1867 decision to license the dog is a documented contemporary civic record; the vigil narrative itself was popularised in print soon after Bobby's death in 1872 and fixed in the popular imagination by Eleanor Atkinson's 1912 novel Greyfriars Bobby",
+      "historical_setting": "Victorian Edinburgh, 1858 to 1872, centred on Greyfriars Kirkyard",
+      "cultural_tradition": "Scottish civic and sentimental animal-loyalty legend, later become a tourist tradition"
     },
     {
       "name": "Griffin",
@@ -7513,7 +7565,7 @@
         "england",
         "lincolnshire"
       ],
-      "detail": "Gunby Hall, a red-brick house of 1700 near Spilsby, carries one of Lincolnshire's grimmer ghost stories. Tradition holds that Sir William Massingberd discovered his daughter was planning to elope with a postillion in his service. On the night the couple intended to flee, Sir William lay in wait, shot the servant dead, and had the body dragged through the grounds and thrown into the pond; some versions of the story add that, in his rage, he shot his own daughter too.\n\nWord of the killing spread despite efforts to keep it quiet, and locals began to whisper that Gunby was cursed: no male heir of the Massingberd line, it was said, would ever again inherit the house in the direct line, a 'curse' that some later genealogists noted did indeed seem to play out in the family's history.\n\nThe path beside the pond where the postillion's body was dumped became known as 'Ghost Walk', and is said to be haunted by his spectre still, pacing the route forever, waiting for a lover who can never return. The Massingberd family gave Gunby Hall to the National Trust in 1944, and the Trust now occasionally opens the house for Halloween events that draw on this and other tales of its haunted past.",
+      "detail": "Gunby Hall, a red-brick house of 1700 near Spilsby, carries one of Lincolnshire's grimmer ghost stories. Tradition holds that Sir William Massingberd discovered his daughter was planning to elope with a postillion in his service. On the night the couple intended to flee, Sir William lay in wait, shot the servant dead, and had the body dragged through the grounds and thrown into the pond; some versions of the story add that, in his rage, he shot his own daughter too.\n\nWord of the killing spread despite efforts to keep it quiet, and locals began to whisper that Gunby was cursed: no male heir of the Massingberd line, it was said, would ever again inherit the house in the direct line, a 'curse' that some later genealogists noted did indeed seem to play out in the family's history.\n\nThe story is not unique to Gunby alone. Local folklore in the district attaches near-identical tales, a shot lover, a body in the water, a bloodline cursed against male heirs, to more than one nearby hall, suggesting a wandering motif that settled on Gunby rather than a fact recorded of it specifically. The legend has continued into recent print, retold in Camilla Zajac's 'Lincolnshire Ghost Stories' (2017).\n\nThe path beside the pond where the postillion's body was dumped became known as 'Ghost Walk', and is said to be haunted by his spectre still, pacing the route forever, waiting for a lover who can never return. The Massingberd family gave Gunby Hall to the National Trust in 1944, and the Trust now occasionally opens the house for Halloween events that draw on this and other tales of its haunted past.",
       "sources": [
         "https://www.mysteriousbritain.co.uk/hauntings/gunby-hall/",
         "https://www.nationaltrust.org.uk/visit/nottinghamshire-lincolnshire/gunby-estate-hall-and-gardens/history-of-gunby-hall",
@@ -7781,7 +7833,7 @@
       "region": "Selkirkshire, Scottish Borders, Scotland",
       "summary": "A grotesque but benevolent fairy spinner from the Scottish Borders, queen of the spindle, who helps young women complete impossible spinning tasks in exchange for their company. Marrying a woman with Habetrot's mark on her lip is said to bring health and good fortune to any household.",
       "source": "https://en.wikipedia.org/wiki/Habetrot",
-      "detail": "Habetrot is old, with long pendulous lips distorted from a lifetime of pulling thread across them, and she lives underground in a hillside spinning-cave, surrounded by companions equally grotesque, yet she is entirely benevolent and utterly non-threatening, described with a candour that suggests genuine folk memory rather than literary invention.\n\nHer role is invariably helpful: a young woman threatened by an impossible spinning task (set by a mother or a future husband) is guided by a self-bored stone to Habetrot's cave, where the fairy completes the work overnight. The beneficiary is warned not to reveal who spun the thread, and when asked, Habetrot's companions give their names, names so ugly and comical that the questioning husband vows his wife will never spin again, freeing her from that particular domestic burden forever.\n\nThe Scottish Borders versions recorded by Robert Chambers, in his 'Popular Rhymes of Scotland' (1826), and later by William Henderson in the nineteenth century are the fullest. Habetrot's domain is specifically located in the Selkirk hills; she is a genius loci as much as a fairy character, and the tale belongs to the same tradition as the English Tom Tit Tot and the German Rumpelstiltskin.",
+      "detail": "Habetrot is old, with long pendulous lips distorted from a lifetime of pulling thread across them, and she lives underground in a hillside spinning-cave, surrounded by companions equally grotesque, yet she is entirely benevolent and utterly non-threatening, described with a candour that suggests genuine folk memory rather than literary invention.\n\nHer role is invariably helpful: a young woman threatened by an impossible spinning task (set by a mother or a future husband) is guided by a self-bored stone to Habetrot's cave, where the fairy completes the work overnight. The beneficiary is warned not to reveal who spun the thread, and when asked, Habetrot's companions give their names, names so ugly and comical that the questioning husband vows his wife will never spin again, freeing her from that particular domestic burden forever.\n\nThe Scottish Borders versions recorded by Robert Chambers, in his 'Popular Rhymes of Scotland' (1826), and later by William Henderson, in his 'Notes on the Folk-Lore of the Northern Counties of England and the Borders' (1866), are the fullest. Henderson's collection preserves a second, separate Habetrot legend. In it she spins a special linen that can cure 'grave-merels', a sickness believed to come from stepping on the grave of an unbaptised child. Habetrot's domain is specifically located in the Selkirk hills; she is a genius loci as much as a fairy character, and the tale belongs to the same tradition as the English Tom Tit Tot and the German Rumpelstiltskin.",
       "date_added": "2026-06-03",
       "tags": [
         "cave",
@@ -8320,7 +8372,11 @@
       "period": "1969 to 1970, with the Farrant-Manchester rivalry continuing until 2019",
       "period_slug": "modern-folklore",
       "origin_type": "historical-event",
-      "dating_confidence": "high"
+      "dating_confidence": "high",
+      "origin_date": "1970",
+      "earliest_record": "Contemporary: David Farrant's letter to the Hampstead and Highgate Express in early 1970, and the ITV documentary broadcast on Friday 13 March 1970 that drew crowds to the cemetery gates",
+      "historical_setting": "Highgate Cemetery, north London, 1970, amid a wider early-1970s vogue for amateur ghost-hunting",
+      "cultural_tradition": "British modern media-driven urban legend, sustained afterward by a decades-long personal feud between the two central figures"
     },
     {
       "name": "Hill of Allen",
@@ -8848,7 +8904,7 @@
         "england",
         "cornwall"
       ],
-      "detail": "Jan Tregeagle is the great damned soul of Cornish legend, a corrupt seventeenth-century steward to Baron Robartes remembered for fraud, cruelty and worse against the tenants under his charge. Long after his burial at St Breoke church, his spirit was summoned back from the grave to give evidence in a Bodmin courtroom over an unpaid rent, and once raised he could not be returned to rest. To keep his howling ghost from the world, the clergy bound him to a chain of impossible, eternal tasks meant to occupy him until Judgement Day.\n\nHe was condemned first to empty bottomless Dozmary Pool on Bodmin Moor with a limpet shell pierced full of holes. Fleeing the demons sent to guard him, he found brief sanctuary in St Gonand's chapel on Roche Rock, but was driven out again and set to weave ropes of sand at the mouth of the River Camel near Padstow, labours forever undone by tide and wind. Sent next to the Cober estuary below Helston, he was made to carry sacks of sand across the river, and during one great storm he is said to have dropped a sack so heavy it built the sandbar now called Loe Bar, sealing off Loe Pool, Cornwall's largest natural lake, in the process. His final and still-unfinished task set him sweeping sand from Porthcurno round the headland to Nanjizal Cove, near Land's End. On wild nights his roaring is still said to be heard across the moors and cliffs as the Devil's hounds pursue him from one task to the next. Robert Hunt collected the tale in his 'Popular Romances of the West of England' (1865), the earliest full account of Cornwall's most punished ghost.",
+      "detail": "Jan Tregeagle is the great damned soul of Cornish legend, a corrupt seventeenth-century steward to Baron Robartes remembered for fraud, cruelty and worse against the tenants under his charge. Long after his burial at St Breoke church, his spirit was summoned back from the grave to give evidence in a Bodmin courtroom over an unpaid rent. The debtor who had called him assumed the matter would end once the testimony was given, but Tregeagle's ghost warned him otherwise: 'It will not be an easy task to get rid of me as it has been to call me.' He proved right. Once raised, he could not be returned to rest, and to keep his howling ghost from the world, the clergy bound him to a chain of impossible, eternal tasks meant to occupy him until Judgement Day.\n\nHe was condemned first to empty bottomless Dozmary Pool on Bodmin Moor with a limpet shell pierced full of holes. Fleeing the demons sent to guard him, he found brief sanctuary in St Gonand's chapel on Roche Rock, but was driven out again and set to weave ropes of sand at the mouth of the River Camel near Padstow, labours forever undone by tide and wind. Sent next to the Cober estuary below Helston, he was made to carry sacks of sand across the river, and during one great storm he is said to have dropped a sack so heavy it built the sandbar now called Loe Bar, sealing off Loe Pool, Cornwall's largest natural lake, in the process. His final and still-unfinished task set him sweeping sand from Porthcurno round the headland to Nanjizal Cove, near Land's End. On wild nights his roaring is still said to be heard across the moors and cliffs as the Devil's hounds pursue him from one task to the next. Robert Hunt collected the tale in his 'Popular Romances of the West of England' (1865), the earliest full account of Cornwall's most punished ghost.",
       "sources": [
         "https://en.wikipedia.org/wiki/Jan_Tregeagle",
         "https://www.cornwallheritagetrust.org/learn/resources/stories-and-rhymes/tregeagle/",
@@ -9554,7 +9610,7 @@
         "england",
         "sussex"
       ],
-      "detail": "The Knucker of Lyminster is the water-dragon of West Sussex, said to dwell in the Knucker Hole, a deep, cold spring-fed pool near the village of Lyminster, reputed to be bottomless. The name comes from the Old English *nicor*, a water-monster, and from its pool the Knucker would emerge to ravage the countryside, devouring livestock and villagers until the land lay in terror.\n\nSussex tells two endings to the tale. In the knightly version a wandering hero slays the beast and is rewarded; but the version the locals relish best is that of Jim Pulk (or Jim Puttock), a Wick man who killed the dragon by guile rather than valour. He baked an enormous poisoned pie, carted it out to the Knucker Hole, and let the greedy dragon swallow pie, horse, cart and all; the poison did its work, and Jim lopped off the monster's head with his axe, though in the cruellest telling he later died himself, wiping his mouth with a poisoned hand after toasting his victory in the village inn. His supposed gravestone, a worn carved slab in Lyminster church called the 'Slayer's Slab', is still shown as the resting place of the man who killed the Knucker.",
+      "detail": "The Knucker of Lyminster is the water-dragon of West Sussex, said to dwell in the Knucker Hole, a deep, cold spring-fed pool near the village of Lyminster, reputed to be bottomless. The name comes from the Old English *nicor*, a water-monster, and from its pool the Knucker would emerge to ravage the countryside, devouring livestock and villagers until the land lay in terror. Sussex tradition places kindred water-dragons in knucker-holes at Binsted and Sompting too, part of a countywide belief in bottomless, dragon-haunted pools of which Lyminster's is the best remembered.\n\nSussex tells two endings to the tale. In the knightly version a wandering hero slays the beast and is rewarded; but the version the locals relish best is that of Jim Pulk (or Jim Puttock), a Wick man who killed the dragon by guile rather than valour. He baked an enormous poisoned pie, carted it out to the Knucker Hole, and let the greedy dragon swallow pie, horse, cart and all; the poison did its work, and Jim lopped off the monster's head with his axe, though in the cruellest telling he later died himself, wiping his mouth with a poisoned hand after toasting his victory in the village inn. His supposed gravestone, a worn carved slab in Lyminster church called the 'Slayer's Slab', is still shown as the resting place of the man who killed the Knucker.",
       "sources": [
         "https://en.wikipedia.org/wiki/Knucker",
         "https://oldechronicles.org.uk/the-dragon-of-knucker-hole/",
@@ -11504,7 +11560,7 @@
       "region": "Lancashire",
       "summary": "A great shallow lake in the flat country of Lancashire, drained in the 18th century, that tradition holds to be where Sir Bedivere finally cast Excalibur, a hand rising from the water to receive the sword before it vanished beneath the surface.",
       "source": "https://en.wikipedia.org/wiki/Martin_Mere",
-      "detail": "Martin Mere was one of the largest lakes in England, a broad, shallow expanse of water in the flat moss-lands north of Ormskirk in Lancashire, fed by the rivers Martin and Douglas. For centuries it was a feature of the landscape that shaped settlement patterns, drove wildfowling and fishing economies, and accumulated its own mythology.\n\nThe Arthurian tradition attached to it is local and persistent: Martin Mere is the water to which the dying Arthur commanded Sir Bedivere to cast Excalibur, and into which the hand and arm rose to receive the sword. The identification is not found in Malory or the major Arthurian texts, but in the folklore of the Lancashire district, a regional claim to the ending of the great story.\n\nThe Fleetwood-Hesketh family drained the mere in the eighteenth century, converting it to agricultural land. Much of that land has since been restored to wetland as a Wildfowl and Wetlands Trust reserve, where wild geese and whooper swans now winter on water that once lay over a drowned Arthurian legend. Whether the sword went with the water, and whether the hand is still there somewhere in the dark peaty ground, Lancashire tradition declines to settle.",
+      "detail": "Martin Mere was one of the largest lakes in England, a broad, shallow expanse of water in the flat moss-lands north of Ormskirk in Lancashire, fed by the rivers Martin and Douglas. For centuries it was a feature of the landscape that shaped settlement patterns, drove wildfowling and fishing economies, and accumulated its own mythology.\n\nThe mere carries an older Arthurian strand too, one that predates its association with Excalibur's ending. John Roby's 'Traditions of Lancashire' (1829), the earliest printed source to give the mere any legendary status at all, tells of the nymph Vivian rising from its waters to carry away the infant Lancelot, raising him beneath the surface in her own enchanted realm and giving him the name he carries ever after, Lancelot du Lac, 'Lancelot of the lake.' The two tales, one placed at Lancelot's beginning and one at Arthur's end, sit side by side in Lancashire tradition without either displacing the other.\n\nThe Arthurian tradition attached to it is local and persistent: Martin Mere is the water to which the dying Arthur commanded Sir Bedivere to cast Excalibur, and into which the hand and arm rose to receive the sword. The identification is not found in Malory or the major Arthurian texts, but in the folklore of the Lancashire district, a regional claim to the ending of the great story.\n\nThe Fleetwood-Hesketh family drained the mere in the eighteenth century, converting it to agricultural land. Much of that land has since been restored to wetland as a Wildfowl and Wetlands Trust reserve, where wild geese and whooper swans now winter on water that once lay over a drowned Arthurian legend. Whether the sword went with the water, and whether the hand is still there somewhere in the dark peaty ground, Lancashire tradition declines to settle.",
       "date_added": "2026-06-03",
       "tags": [
         "lake",
@@ -13571,7 +13627,7 @@
         "england",
         "cornwall"
       ],
-      "detail": "The pixie, or piskie, is the small fairy of the West Country, Cornwall and Devon especially, distinct in name and temper from the fairies of other regions. Often described as little, ragged, red-haired and pointed of ear, pixies are above all mischievous: they dance in rings on the moor by night, ride and tangle the manes of farm horses, and delight in leading travellers astray.\n\nTo be 'pixie-led' was a real and feared misfortune, to find oneself walking in circles on familiar ground, unable to reach home, the paths confused by laughing unseen sprites. The classic remedy was to turn one's coat or a pocket inside out, which broke the enchantment. Further along the southern coast, in Hampshire and Dorset, the same family of belief produced the colt-pixy, a pixie that took the shape of a shaggy grey pony to lure farm horses off the paths and into bogs, leaving them found sweated and exhausted, their manes tangled into knots, by morning. Yet pixies could also be kindly, threshing corn or doing housework for the deserving in the manner of a brownie, provided they were neither watched nor thanked with gifts of clothing.\n\nCornwall gave its pixies a queen of sorts in Joan the Wad, whose name means 'torch' in old dialect. A cottage industry in her image grew up in the twentieth century: small brass lucky charms bearing her name, registered by F. T. Nettleinghame in 1932 and still collected today, with examples held at the Museum of Witchcraft and Magic in Boscastle. On Dartmoor and the Cornish moors the piskie remained a living part of country belief well into modern times.",
+      "detail": "The pixie, or piskie, is the small fairy of the West Country, Cornwall and Devon especially, distinct in name and temper from the fairies of other regions; in old Cornish dialect they were sometimes called collectively the Pobel Vean, the 'little people.' Often described as little, ragged, red-haired and pointed of ear, pixies are above all mischievous: they dance in rings on the moor by night, ride and tangle the manes of farm horses, and delight in leading travellers astray.\n\nTo be 'pixie-led' was a real and feared misfortune, to find oneself walking in circles on familiar ground, unable to reach home, the paths confused by laughing unseen sprites. The classic remedy was to turn one's coat or a pocket inside out, which broke the enchantment. Further along the southern coast, in Hampshire and Dorset, the same family of belief produced the colt-pixy, a pixie that took the shape of a shaggy grey pony to lure farm horses off the paths and into bogs, leaving them found sweated and exhausted, their manes tangled into knots, by morning. Yet pixies could also be kindly, threshing corn or doing housework for the deserving in the manner of a brownie, provided they were neither watched nor thanked with gifts of clothing.\n\nCornwall gave its pixies a queen of sorts in Joan the Wad, whose name means 'torch' in old dialect. A cottage industry in her image grew up in the twentieth century: small brass lucky charms bearing her name, registered by F. T. Nettleinghame in 1932 and still collected today, with examples held at the Museum of Witchcraft and Magic in Boscastle. On Dartmoor and the Cornish moors the piskie remained a living part of country belief well into modern times.",
       "sources": [
         "https://en.wikipedia.org/wiki/Pixie",
         "https://archive.org/details/b33282419_0002",
@@ -14576,7 +14632,11 @@
       "dating_confidence": "low",
       "period_slug": "georgian-britain",
       "period": "The burial is traditionally dated to 1736, a figure derived only from an 1822 magazine account working back from the memorial epitaph's claim of 'sixty years' since the death. No contemporary record confirms the year, or the boy's existence as a documented individual. The memorial itself is firmly dated to 1796.",
-      "date_added": "2026-09-03"
+      "date_added": "2026-09-03",
+      "origin_date": "1736 (traditional)",
+      "earliest_record": "The 1796 memorial stone is the earliest firmly dated evidence. The earliest written narrative account is an 1822 magazine piece, which is also the source of the '1736' death date, worked back from the memorial epitaph's claim of 'sixty years' since the death",
+      "historical_setting": "Sunderland Point, Lancashire, during Britain's Atlantic slave trade era",
+      "cultural_tradition": "Local commemorative and heritage tradition, now read through a modern critical reappraisal of the name and its history"
     },
     {
       "name": "Sarah Whitehead",
@@ -14644,7 +14704,7 @@
       "region": "Bennane Cave, South Ayrshire",
       "summary": "The legendary head of a cannibal clan said to have lived in a sea-cave on the Ayrshire coast, ambushing and devouring travellers for a quarter of a century before the king himself rode out to destroy them.",
       "source": "https://www.historic-uk.com/HistoryUK/HistoryofScotland/Sawney-Bean-Scotlands-most-famous-cannibal/",
-      "detail": "According to the legend, first popularised in eighteenth-century broadsides and The Newgate Calendar, Alexander 'Sawney' Bean and his wife retreated to a deep tidal cave at Bennane Head on the Galloway-Ayrshire coast, where over some twenty-five years they raised a clan of dozens of inbred children and grandchildren. The family lived entirely by ambush, dragging travellers and their horses into the dark, robbing them, and pickling and eating the remains. Vanishing travellers were blamed on innkeepers and passers-by, many of whom were wrongly hanged.\n\nThe clan was undone, the tale says, when a man fought free of an ambush and raised the alarm. King James VI himself led a posse of four hundred men and bloodhounds to the cave, where they found its grisly larder of salted human flesh. The whole family was taken to Edinburgh and executed without trial. No contemporary record of any of it survives: the earliest surviving chapbook telling dates only to around 1775, and a 1997 study in the journal Folklore traces the story to eighteenth-century anti-Scottish print sensationalism rather than any real crime. As folklore, though, he has proved immortal.",
+      "detail": "According to the legend, first popularised in eighteenth-century broadsides and The Newgate Calendar, Alexander 'Sawney' Bean and his wife retreated to a deep tidal cave at Bennane Head on the Galloway-Ayrshire coast, where over some twenty-five years they raised a clan of dozens of inbred children and grandchildren. By the time of their capture the family was said to number forty-eight: Bean, his wife, eight sons, six daughters, eighteen grandsons and fourteen granddaughters. The family lived entirely by ambush, waylaying travellers in groups of up to five or six on foot or pairs on horseback, robbing them, and pickling and eating the remains; the Newgate Calendar's account claims a thousand victims or more over the clan's quarter-century reign. Vanishing travellers were blamed on innkeepers and passers-by, many of whom were wrongly hanged.\n\nThe clan was undone, the tale says, when a man fought free of an ambush that killed his wife and raised the alarm at a nearby fair. King James VI himself led a posse of four hundred men and bloodhounds to the coast, tracking the family to a cave that ran nearly a mile into the rock and flooded two hundred yards at high tide, hidden well enough to have sheltered them for a generation. Inside, the men found human remains hung in rows to cure like meat, along with the stolen belongings of the missing. The whole family was taken to Edinburgh, where by most tellings they were executed at Leith without a formal trial, the men castrated and left to bleed out, the women and children burned. No contemporary record of any of it survives: the earliest surviving chapbook telling dates only to around 1775, and a 1997 study in the journal Folklore traces the story to eighteenth-century anti-Scottish print sensationalism rather than any real crime. As folklore, though, he has proved immortal.",
       "date_added": "2026-06-03",
       "tags": [
         "sea",
@@ -14993,7 +15053,7 @@
         "https://archive.org/details/folkloreprovinci00swaiuoft",
         "https://www.oxfordreference.com/display/10.1093/oi/authority.20110803100457351"
       ],
-      "detail": "The Seven Whistlers are a collective supernatural entity in the folklore of the English Midlands and Welsh Marches, seven birds that fly together in darkness, emitting an eerie, plaintive cry. The tradition is particularly strong in the Black Country and Worcestershire mining communities, where it functioned as a genuine working warning system. Colliers who heard the Whistlers overnight refused to descend the pit the following morning, and no foreman's authority could override the omen. The folklorist Ella Mary Leather documented the tradition in The Folk-Lore of Herefordshire (1912), recording that miners in the border country held the belief with complete conviction; a man who went underground on a Whistlers night was considered to have courted his own death.\n\nThe identities assigned to the birds vary by district. In some Worcestershire accounts the Whistlers are the souls of Jews who had been present at the Crucifixion and were condemned to eternal aerial wandering. In other versions they are the souls of unbaptised children, or of drowned sailors seeking their way to land. The Victorian naturalist Charles Swainson, in The Folk Lore and Provincial Names of British Birds (1885), noted that in Lancashire and the Midlands the Whistlers were frequently identified with golden plover or curlew, birds whose massed flight-calls at night are genuinely unsettling to hear. William Henderson's Notes on the Folk-Lore of the Northern Counties of England and the Borders (1866, expanded 1879) records the same belief further north, also naming curlews and describing the same refusal to work until their cry is heard again.\n\nThe supernatural number seven links the Whistlers to a broader tradition of numerated omens in British folklore, but the Midlands version is grounded in an industrial context that gives it a particular edge. It was not a legend told in drawing rooms; it was a practical working rule with lives attached to it. The tradition appears in Notes and Queries (vol. IV, 1851) as a living and widely believed custom, and Katharine Briggs treats it in A Dictionary of British Folk-Tales (1970-71). The geographic range of belief extends from the Black Country into Worcestershire, Staffordshire, Shropshire, and the Vale of Gloucester, making the Seven Whistlers one of the most widely distributed named supernatural entities in the English Midlands.",
+      "detail": "The Seven Whistlers are a collective supernatural entity in the folklore of the English Midlands and Welsh Marches, seven birds that fly together in darkness, emitting an eerie, plaintive cry. The tradition is particularly strong in the Black Country and Worcestershire mining communities, where it functioned as a genuine working warning system. Colliers who heard the Whistlers overnight refused to descend the pit the following morning, and no foreman's authority could override the omen. On 21 September 1874, miners at collieries in Bedworth, north Warwickshire, downed tools and stayed above ground after the rushing, soughing cries had reportedly passed overhead the night before, a dated, documented strike rather than a vague folk memory. The folklorist Ella Mary Leather documented the tradition in The Folk-Lore of Herefordshire (1912), recording that miners in the border country held the belief with complete conviction; a man who went underground on a Whistlers night was considered to have courted his own death.\n\nThe identities assigned to the birds vary by district. In some Worcestershire accounts the Whistlers are the souls of Jews who had been present at the Crucifixion and were condemned to eternal aerial wandering. In other versions they are the souls of unbaptised children, or of drowned sailors seeking their way to land. The Victorian naturalist Charles Swainson, in The Folk Lore and Provincial Names of British Birds (1885), noted that in Lancashire and the Midlands the Whistlers were frequently identified with golden plover or curlew, birds whose massed flight-calls at night are genuinely unsettling to hear. William Henderson's Notes on the Folk-Lore of the Northern Counties of England and the Borders (1866, expanded 1879) records the same belief further north, also naming curlews and describing the same refusal to work until their cry is heard again. The whimbrel carries the association in its own old country name: 'seven-whistler' was once an ordinary English name for the bird, taken from the run of piping notes in its night flight-call, making it perhaps the likeliest mundane original behind the whole tradition.\n\nThe supernatural number seven links the Whistlers to a broader tradition of numerated omens in British folklore, but the Midlands version is grounded in an industrial context that gives it a particular edge. It was not a legend told in drawing rooms; it was a practical working rule with lives attached to it. The tradition appears in Notes and Queries (vol. IV, 1851) as a living and widely believed custom, and Katharine Briggs treats it in A Dictionary of British Folk-Tales (1970-71). The geographic range of belief extends from the Black Country into Worcestershire, Staffordshire, Shropshire, and the Vale of Gloucester, making the Seven Whistlers one of the most widely distributed named supernatural entities in the English Midlands.",
       "earliest_record": "William Henderson, Notes on the Folk-Lore of the Northern Counties of England and the Borders (London: Longmans, Green and Co., 1866; reissued in expanded form by the Folk-Lore Society, 1879) -- records the Seven Whistlers (identified with curlews) and the custom of refusing to work until the cry is heard again.",
       "period": "Charles Swainson, The Folk Lore and Provincial Names of British Birds (London: Trubner and Co. for the Folk-Lore Society, 1885), pp. 180-181, 200-201 -- the key source directly tying the Seven Whistlers to mining-disaster omens in the Midlands/Black Country",
       "cultural_tradition": "English (Midlands/Black Country mining and Northern border) bird-omen folklore",
@@ -16207,7 +16267,7 @@
       "category": "witch",
       "region": "Helston, Cornwall",
       "summary": "Known as 'Tammy Blee', the White Witch of Helston was the most famous of Cornwall's pellars, a healer and curse-breaker so sought after that the dying were carried to her bedside to be cured.",
-      "detail": "Tamsin Blight (1798-1856), called locally Tammy Blee, was the best-remembered of the Cornish pellars, the conjurors, charmers and white witches of the far west who undid the spells of others and dealt in cures and charms. From her home at Helston she was sought out by fishermen wanting protection at sea, farmers with sick beasts, and the bewitched wanting their ill-wishing lifted; young women came to learn the name of their future husbands.\n\nIn 1835, at thirty-eight, she married a widowed copper miner, James Thomas, who claimed pellar powers of his own. It proved an uneasy match: local newspapers described Thomas as a drunken and disgraceful character, and rivalry over whose magic carried more weight soured the marriage further. He eventually fled Cornwall for two years under warrant for an unnamed disgraceful offence, and Tamsin separated from him without ceremony, carrying on her own trade regardless.\n\nHer fame was such that, on her deathbed, the sick are said to have been carried to her on stretchers and laid beside her, only to rise up cured and walk down the stairs. A darker Cornish tale, 'The Ghost of Stythians', remembers her raising a dead woman's spirit in the churchyard to reveal where hidden money lay, working within a charmed ring and calling on the spirits of fire, air, earth and water amid groans and crashing. Tamsin Blight preserves the living memory of Cornish folk-magic, where the line between healer and witch was one the community itself was content to leave blurred.",
+      "detail": "Tamsin Blight (accounts differ on her birth year, either 1798 or 1793 depending on the source), called locally Tammy Blee, was born at Gwennap near Redruth and became the best-remembered of the Cornish pellars, the conjurors, charmers and white witches of the far west who undid the spells of others and dealt in cures and charms. From her home at Helston she was sought out by fishermen wanting protection at sea, farmers with sick beasts, and the bewitched wanting their ill-wishing lifted; young women came to learn the name of their future husbands. Her reputation reached well beyond Cornwall's own borders. According to the folklorist William Bottrell, people crossed over from the Scilly Isles in crowds simply to consult the white witches of the mainland for the same charms and protection.\n\nIn 1835, at thirty-eight, she married a widowed copper miner, James Thomas, who claimed pellar powers of his own. It proved an uneasy match: local newspapers described Thomas as a drunken and disgraceful character, and rivalry over whose magic carried more weight soured the marriage further. He eventually fled Cornwall for two years under warrant for an unnamed disgraceful offence, and Tamsin separated from him without ceremony, carrying on her own trade regardless.\n\nHer fame was such that, on her deathbed, the sick are said to have been carried to her on stretchers and laid beside her, only to rise up cured and walk down the stairs. A darker Cornish tale, 'The Ghost of Stythians', remembers her raising a dead woman's spirit in the churchyard to reveal where hidden money lay, working within a charmed ring and calling on the spirits of fire, air, earth and water amid groans and crashing. Tamsin Blight preserves the living memory of Cornish folk-magic, where the line between healer and witch was one the community itself was content to leave blurred.",
       "source": "https://www.cornwallforever.co.uk/people/tamsin-blight",
       "date_added": "2026-06-14",
       "tags": [
@@ -16328,7 +16388,7 @@
       "category": "water",
       "region": "Isle of Man",
       "summary": "The Tarroo Ushtey, or water bull, is a Manx creature said to haunt pools, swamps and coastal marshland, most famously the ground between Andreas and the sea before it was drained. Unlike its Welsh counterpart, which was said to bring fertility to cattle, the Manx water bull was blamed for begetting monstrous or deformed offspring among ordinary herds.",
-      "detail": "The tarroo ushtey is recorded in the Manx folklore collections of A. W. Moore, whose Folk-Lore of the Isle of Man was published in 1891, and John Rhys, whose Celtic Folklore covered the same tradition a decade later. It belongs to a wider family of Celtic water bull beliefs found across Gaelic Scotland (the tarbh uisge) and Ireland (the tarbh uisce), sharing the general idea of a bull-like creature emerging from fresh or brackish water.\n\nManx accounts describe the tarroo ushtey as a large, wild-eyed animal with a fearsome bellow said to make the ground tremble, encountered around specific named pools and marshes, including ground between the village of Andreas and the sea (drained since these accounts were recorded) and locations near Ramsey and Sulby. One recorded anecdote describes a man breaking his walking stick over the creature's back after it refused to move out of his way on a road. Where mating with domestic cattle occurred, Manx tradition held that the resulting calves were misshapen or monstrous, a marked contrast to the beneficial, milk-increasing calves attributed to water bull unions in some Welsh tellings of the same broader motif.",
+      "detail": "The tarroo ushtey is recorded in the Manx folklore collections of A. W. Moore, whose Folk-Lore of the Isle of Man was published in 1891, and John Rhys, whose Celtic Folklore covered the same tradition a decade later. It belongs to a wider family of Celtic water bull beliefs found across Gaelic Scotland (the tarbh uisge) and Ireland (the tarbh uisce), sharing the general idea of a bull-like creature emerging from fresh or brackish water.\n\nManx accounts describe the tarroo ushtey as a large, wild-eyed animal with a fearsome bellow said to make the ground tremble, encountered around specific named pools and marshes, including ground between the village of Andreas and the sea (drained since these accounts were recorded) and locations near Ramsey and Sulby. One recorded anecdote describes a man breaking his walking stick over the creature's back after it refused to move out of his way on a road. Where mating with domestic cattle occurred, Manx tradition held that the resulting calves were misshapen or monstrous, a marked contrast to the beneficial, milk-increasing calves attributed to water bull unions in some Welsh tellings of the same broader motif.\n\nSpecific sightings survive in the record. In 1859 a water bull was reported in a field near Ballure Glen, drawing crowds who came over from Ramsey hoping for a glimpse. An older account attributed to George Waldron, whose description of Manx life predates Moore and Rhys by more than a century, tells of a farmer whose cattle were repeatedly killed by one such creature; when armed men finally cornered it in the hills, it broke away and dived into a river, surfacing now and then as if mocking its pursuers. Another story tells of a farmer's brother who, letting cattle out at dawn one June morning, found a tarroo ushtey standing outside the fold; when the farm's own bull caught sight of it and broke through the fence to charge, the water bull simply leapt over a nearby precipice into deep water, bellowed once, and vanished beneath the surface.",
       "source": "https://www.isle-of-man.com/manxnotebook/fulltext/folklore/ch04.htm",
       "sources": [
         "https://www.isle-of-man.com/manxnotebook/fulltext/folklore/ch04.htm",
@@ -16345,7 +16405,10 @@
       "dating_confidence": "low",
       "period_slug": null,
       "period": "Undated Manx oral tradition, first set down in print by Moore (1891) and Rhys (1901), describing belief already established by that time.",
-      "date_added": "2026-09-03"
+      "date_added": "2026-09-03",
+      "earliest_record": "First set down in print by A. W. Moore in Folk-Lore of the Isle of Man (1891) and John Rhys in Celtic Folklore: Welsh and Manx (1901), both describing belief already established locally by that time",
+      "historical_setting": "Manx wetlands and coastal marsh, particularly the drained ground between Andreas and the sea",
+      "cultural_tradition": "Manx Gaelic water-spirit tradition, distinguished in the entry from the Welsh ceffyl dwr/water-bull tradition"
     },
     {
       "name": "Tavish Dhu (Black Tom), the Pirate of the Skerries",
@@ -16615,7 +16678,8 @@
       "source": "https://en.wikipedia.org/wiki/Beast_of_Exmoor",
       "sources": [
         "https://en.wikipedia.org/wiki/Beast_of_Exmoor",
-        "https://www.exmoor-nationalpark.gov.uk/"
+        "https://www.exmoor-nationalpark.gov.uk/",
+        "https://www.exmoorher.co.uk/myths-legends-customs-and-traditions"
       ],
       "tags": [
         "england",
@@ -16628,7 +16692,11 @@
       "dating_confidence": "high",
       "period_slug": "modern-folklore",
       "period": "Sightings from the 1970s, with the tradition's defining event the 1983 South Molton sheep killings and the 1988 Royal Marines search.",
-      "date_added": "2026-09-03"
+      "date_added": "2026-09-03",
+      "origin_date": "1970s, with the defining event in 1983",
+      "earliest_record": "Sporadic local sightings reported from the early 1970s; the tradition's defining event is the reported loss of over a hundred sheep to unexplained throat injuries on a South Molton farm over three months in 1983, followed by a Royal Marines search in 1988",
+      "historical_setting": "Exmoor moorland, Devon and Somerset, from the 1970s into the 1980s",
+      "cultural_tradition": "Modern British phantom/alien big-cat cryptid tradition"
     },
     {
       "name": "The Bidston Hill Carvings",
@@ -17035,7 +17103,8 @@
       "source": "https://en.wikipedia.org/wiki/Devil's_Footprints",
       "sources": [
         "https://en.wikipedia.org/wiki/Devil's_Footprints",
-        "https://www.academia.edu/251735/The_Devils_Hoofmarks_Source_Material_on_the_Great_Devon_Mystery_of_1855"
+        "https://www.academia.edu/251735/The_Devils_Hoofmarks_Source_Material_on_the_Great_Devon_Mystery_of_1855",
+        "https://www.academia.edu/9374248/The_Devils_Footprints_February_1855_East_and_South_Devon_England"
       ],
       "tags": [
         "england",
@@ -17045,7 +17114,11 @@
       "dating_confidence": "high",
       "period_slug": "victorian-britain",
       "period": "The night of 8 to 9 February 1855, with contemporary newspaper coverage the same month.",
-      "date_added": "2026-09-03"
+      "date_added": "2026-09-03",
+      "origin_date": "8-9 February 1855",
+      "earliest_record": "Contemporary February 1855 newspaper coverage, including reports collected from vicarage and Illustrated London News correspondence; compiled as primary source material by Mike Dash in his 1994 Fortean Studies paper 'The Devil's Hoofmarks'",
+      "historical_setting": "East and south Devon, the night of 8 to 9 February 1855, following heavy snowfall",
+      "cultural_tradition": "Victorian provincial supernatural panic within English Devil-folklore"
     },
     {
       "name": "The Dragon of Loschy Hill",
@@ -17271,7 +17344,7 @@
       "category": "giant",
       "region": "Carn Galver, Cornwall",
       "summary": "A gentle Cornish giant who guarded the people of Zennor from rival giants, and who accidentally killed the village lad he loved with a playful tap on the head, then died of grief.",
-      "detail": "The Giant of Carn Galver (sometimes named Holiburn in the telling) was one of the kindlier giants of Cornish folklore, first set down by Robert Hunt in his Popular Romances of the West of England (1865), dwelling among the granite tors of Carn Galver on the wild coast between Morvah and Zennor. Far from a terror, he was the protector of the little farming and fishing folk of the parish, guarding them against the fiercer giants of the country round about, and asking in return only company and the occasional gift of food.\n\nHis story is a tender and tragic one. He had grown especially fond of a young man of Choon, who would come to play games of quoits and bowls with him among the rocks. One evening, in pure affection, the giant tapped the lad playfully on the head with his fingertips as he left, forgetting his own enormous strength, and the young man fell dead at his feet, his skull broken like an eggshell. The giant was inconsolable; he sat among his tors and pined, refusing to eat, and within seven years he had died of grief, leaving the rock-piles of Carn Galver as the only monument to the gentle giant who loved a mortal too roughly.",
+      "detail": "The Giant of Carn Galver (sometimes named Holiburn in the telling) was one of the kindlier giants of Cornish folklore, first set down by Robert Hunt in his Popular Romances of the West of England (1865), dwelling among the granite tors of Carn Galver on the wild coast between Morvah and Zennor. Far from a terror, he was the protector of the little farming and fishing folk of the parish, guarding them against the fiercer giants of the country round about, and asking in return only company and the occasional gift of food.\n\nHis story is a tender and tragic one. He had grown especially fond of a young man from Choon, who would come to play games of quoits and bowls with him among the rocks. One evening, in pure affection, the giant tapped the lad playfully on the head with his fingertips as he left, forgetting his own enormous strength, and the young man fell dead at his feet, his skull broken like an eggshell. In his panic the giant tried to press the wound closed with his own huge fingers, only to widen it, and finding nothing could be done he gathered the boy's body against his chest and let out a wail that carried across the tors. He was inconsolable afterward; he sat among his rocks and pined, refusing to eat, and within seven years he had died of grief, leaving the rock piles of Carn Galver as the only monument to the gentle giant who loved a mortal too roughly.",
       "source": "https://www.mysteriousbritain.co.uk/legends/the-giant-of-carn-galva/",
       "date_added": "2026-06-14",
       "tags": [
@@ -17488,7 +17561,10 @@
       "dating_confidence": "medium",
       "period_slug": "tudor-britain",
       "period": "Catherine Howard's arrest and confinement at Hampton Court took place in November 1541; she was executed in February 1542. The ghost story built around the escape attempt is undated in its own right.",
-      "date_added": "2026-09-03"
+      "date_added": "2026-09-03",
+      "origin_date": "1541-1542",
+      "historical_setting": "Henry VIII's court at Hampton Court Palace, during the fall and arrest of his fifth wife, Catherine Howard, over the winter of 1541 to 1542.",
+      "cultural_tradition": "English royal ghost lore. Historic Royal Palaces itself calls this the best known ghost story attached to any English royal building."
     },
     {
       "name": "The Hawkhurst Gang",
@@ -17822,7 +17898,10 @@
       "dating_confidence": "low",
       "period_slug": null,
       "period": "The stone itself is recorded by name from around 1100 and may be older, possibly Roman. Its specific Brutus and palladium legend dates only to an 1857 book and has no earlier attestation.",
-      "date_added": "2026-09-03"
+      "date_added": "2026-09-03",
+      "earliest_record": "The stone is recorded by name from around 1100, and may be considerably older, possibly Roman in origin.",
+      "historical_setting": "The City of London, on or near Cannon Street, on what may be its original site since Roman times.",
+      "cultural_tradition": "London civic legend. The Brutus-and-palladium story, that the city stands or falls with the stone, is a nineteenth-century literary addition to a genuinely old monument, not an old belief in its own right."
     },
     {
       "name": "The Merry Maidens",
@@ -17838,7 +17917,7 @@
         "england",
         "cornwall"
       ],
-      "detail": "The Merry Maidens, known in Cornish as Dans Maen ('the stone dance'), is a near-perfect Late Neolithic stone circle of nineteen granite stones standing in a field south of St Buryan in west Cornwall. Like many Cornish circles its name carries a Christian moral legend of petrifaction: the stones are said to be young women turned to rock as a punishment for dancing on the Sabbath.\n\nIn the tale the maidens went out one Sunday evening and fell to dancing in the field, while two pipers played for them. As the merriment carried them past midnight and on into the forbidden day, divine judgement struck, and dancers and musicians alike were frozen where they stood, the women becoming the ring of the Merry Maidens, and the two pipers the pair of tall standing stones known as The Pipers in the fields close by to the north-east, supposedly caught as they fled. The story is one of a whole family of Cornish 'profaning the Sabbath' legends, told also of the Hurlers and other circles, and almost certainly grew up as the medieval Church recast the prehistoric monuments of the old religion as warnings.\n\nThe circle is among the best preserved in Cornwall and remains a powerful presence in the landscape, its stones graded in height toward the south-west. Together with the Pipers and the nearby burial chambers and menhirs, the Merry Maidens form part of one of the richest concentrations of Bronze Age and Neolithic ritual sites in the country, a setting that has kept the legend of the dancing girls vivid for centuries.",
+      "detail": "The Merry Maidens, known in Cornish as Dans Maen ('the stone dance'), is a near-perfect Late Neolithic stone circle of nineteen granite stones standing in a field south of St Buryan in west Cornwall. Like many Cornish circles its name carries a Christian moral legend of petrifaction: the stones are said to be young women turned to rock as a punishment for dancing on the Sabbath.\n\nIn the tale the maidens went out one Sunday evening and fell to dancing in the field, while two pipers played for them. As the merriment carried them past midnight and on into the forbidden day, divine judgement struck, and dancers and musicians alike were frozen where they stood, the women becoming the ring of the Merry Maidens, and the two pipers the pair of tall standing stones known as The Pipers in the fields close by to the north-east, supposedly caught as they fled. The story is one of a whole family of Cornish 'profaning the Sabbath' legends, told also of the Hurlers and other circles, and almost certainly grew up as the medieval Church recast the prehistoric monuments of the old religion as warnings.\n\nThe nineteen stones stand between roughly 0.9 and 1.4 metres tall, graded in height toward the south-west, with a gap on the north-east side marking what was probably the original entrance. Two stones had already fallen by the time antiquarians first recorded the circle in the eighteenth century, and the ring was fully restored to standing in 1879. Some archaeologists have noted that nineteen is also the count behind the Metonic cycle, the nineteen-year period after which the phases of the moon repeat against the solar calendar, a coincidence found across several of West Penwith's stone circles and impossible to prove was intentional. Together with the Pipers and the nearby burial chambers and menhirs, the Merry Maidens form part of one of the richest concentrations of Bronze Age and Neolithic ritual sites in the country, a setting that has kept the legend of the dancing girls vivid for centuries.",
       "sources": [
         "https://en.wikipedia.org/wiki/The_Merry_Maidens",
         "https://historicengland.org.uk/listing/the-list/list-entry/1006731",
@@ -18201,7 +18280,10 @@
       "detail": "The Tower of London keeps a flock of ravens on the South Lawn, tended by a Yeoman Warder who holds the title of Ravenmaster. The tradition attached to them is one of the best known superstitions in Britain. If the ravens ever leave the Tower, it is said, the Crown will fall and the kingdom with it. Six birds are the working minimum, usually with a spare, and their wing feathers are trimmed so that they stay.\n\nThe story most often told credits Charles II. In one version his astronomer John Flamsteed complained that the birds were fouling his observations from the White Tower, and the king, warned of what would follow if they were destroyed, ordered instead that six be kept for ever. A separate and far older strand connects the site to Bran the Blessed of the Mabinogi, whose name means raven and whose head was buried beneath the White Hill to guard Britain against invasion.\n\nThe documentary record supports neither connection. Geoffrey Parnell, the Tower's official historian, and the independent scholar Boria Sax both searched for early references and found none at all. The earliest known evidence of ravens living at the Tower is an illustration of 1883, and the birds appear to have been introduced in the Victorian period as living props for the fortress's grim reputation. The prophecy that the kingdom would fall with them is first recorded in the summer of 1944, when Londoners watched the birds through the Blitz. That makes it one of the youngest national legends in Britain, and one of the most thoroughly believed.",
       "period": "Popularly set in the reign of Charles II (1660 to 1685), but no ravens are recorded at the Tower before 1883 and the prophecy is first attested in 1944",
       "origin_type": "oral-tradition",
-      "dating_confidence": "high"
+      "dating_confidence": "high",
+      "earliest_record": "1883",
+      "historical_setting": "The Tower of London. The tradition is popularly backdated to the reign of Charles II, but no ravens are documented at the Tower before 1883, and the fall-of-the-kingdom prophecy itself is first recorded in 1944.",
+      "cultural_tradition": "Twentieth-century Tower of London tradition, maintained today by the Yeoman Warders under the Ravenmaster."
     },
     {
       "name": "The Screaming Skull of Wardley Hall",
@@ -18229,7 +18311,11 @@
       "period": "The execution behind the relic took place in 1641. The skull legend is in print by 1829",
       "period_slug": "stuart-britain",
       "origin_type": "historical-event",
-      "dating_confidence": "high"
+      "dating_confidence": "high",
+      "origin_date": "1641",
+      "earliest_record": "1829",
+      "historical_setting": "Wardley Hall, Worsley, in the aftermath of the Civil War-era execution behind the relic; the skull tradition is in print by 1829.",
+      "cultural_tradition": "Lancashire screaming-skull tradition, a recurring English folklore motif in which a relic punishes any attempt to remove or bury it."
     },
     {
       "name": "The Selkie",
@@ -18325,7 +18411,7 @@
       "category": "dragon",
       "region": "Wherwell, Hampshire",
       "summary": "A toad hatched a cock's egg in the priory cellars, loosing a cockatrice on Wherwell until a man named Green lowered a mirror and let the beast battle its own reflection to death.",
-      "detail": "The Hampshire village of Wherwell, once home to a great Benedictine nunnery founded around 986 AD by Queen Ælfthryth, widow of King Edgar, keeps the legend of the cockatrice, a serpent with a cockerel's head, hatched, as the old belief held, when a toad broods a cock's egg. The monstrous creature is said to have been born in the cellars beneath Wherwell Priory and to have grown until it terrified the whole village.\n\nUnable to slay it by force, the people drove the cockatrice into the dungeons below the priory and sealed it in, offering a prize of land to anyone who could kill it. At last a man named Green hit upon a cunning plan: he lowered a polished steel mirror into the vault. Believing its own reflection to be a rival, the cockatrice fought itself furiously against the glass until it dropped exhausted, and Green climbed down to dispatch it.\n\nFor his courage Green was rewarded with an estate near the village still remembered as Green's Acres. A weathervane in the shape of the cockatrice once turned above the village church and is now preserved in Andover Museum, keeping the tale fixed to its place long after the priory itself was dissolved in 1538.",
+      "detail": "The Hampshire village of Wherwell, once home to a great Benedictine nunnery founded around 986 AD by Queen Ælfthryth, widow of King Edgar, keeps the legend of the cockatrice, a serpent with a cockerel's head, hatched, as the old belief held, when a toad broods a cock's egg. The monstrous creature is said to have been born in the cellars beneath Wherwell Priory and to have grown until it terrified the whole village.\n\nUnable to slay it by force, the people drove the cockatrice into the dungeons below the priory and sealed it in, offering a prize of land to anyone who could kill it. At last a man named Green hit upon a cunning plan: he lowered a polished steel mirror into the vault. Believing its own reflection to be a rival, the cockatrice fought itself furiously against the glass until it dropped exhausted, and Green climbed down to dispatch it.\n\nFor his courage Green was rewarded with an estate still remembered as Green's Acres, a curious treeless patch within Harewood Forest a few miles from the village, where local tradition holds nothing has grown since. A weathervane in the shape of the cockatrice once turned above the village church of St Peter and Holy Cross and is now preserved in Andover Museum; the town keeps the tale alive today with a cockatrice mosaic set into an Andover pavement and a new weathervane on the town hall, so the beast still watches over the district long after the priory itself was dissolved in 1538.",
       "source": "https://www.mysteriousbritain.co.uk/cryptozoology/the-wherwell-cockatrice/",
       "date_added": "2026-06-13",
       "tags": [
@@ -18419,7 +18505,7 @@
         "england",
         "yorkshire"
       ],
-      "detail": "A spectral cavalcade of huntsmen, horses and baying hounds storms across the night sky or over the wild moors in the Wild Hunt, often heralded by a rising wind and the cry of the pack. It is one of the most dreaded apparitions of British and European folklore. To see it was perilous, and to be swept up in it could mean being carried off; its passing was widely held to foretell war, plague or death.\n\nOne of the earliest surviving accounts comes from the Peterborough Chronicle, which records that soon after 6 February 1127 many people saw and heard huntsmen sounding their horns in the deer park at Peterborough and the woods stretching toward Stamford. The huntsmen rode black horses and black goats, the chronicler wrote, and their hounds were pitch black with staring, hideous eyes; the disturbance was heard through the nights of Lent, terrifying the monks who recorded it.\n\nAcross Britain the Hunt rides under many names and many leaders: the Devil, Herne the Hunter in Windsor Forest, Sir Francis Drake, and in older strata Woden, the Anglo-Saxon form of the Norse god Odin, wanderer and lord of the dead. In the north its hounds are the Gabriel Ratchets, whose cries pass unseen overhead; on Dartmoor they are the Wisht Hounds; in Wales they are the Cŵn Annwn, the white red-eared hounds of the Otherworld.\n\nWhatever its guise, the Wild Hunt embodies the terror of the wild night and the thin border between the living and the dead, a fear old enough that an English monk was writing it down in his abbey's chronicle nine centuries ago.",
+      "detail": "A spectral cavalcade of huntsmen, horses and baying hounds storms across the night sky or over the wild moors in the Wild Hunt, often heralded by a rising wind and the cry of the pack. It is one of the most dreaded apparitions of British and European folklore. To see it was perilous, and to be swept up in it could mean being carried off; its passing was widely held to foretell war, plague or death.\n\nOne of the earliest surviving accounts comes from the Peterborough Chronicle, which records that soon after 6 February 1127 many people saw and heard huntsmen sounding their horns in the deer park at Peterborough and the woods stretching toward Stamford. The huntsmen rode black horses and black goats, the chronicler wrote, and their hounds were pitch black with staring, hideous eyes; the disturbance was heard through the nights of Lent, terrifying the monks who recorded it.\n\nA few years later the English monk Orderic Vitalis recorded a similar vision from the 1130s: a priest travelling alone at night met a vast train of the dead, the familia Herlechini, carrying stolen goods and undergoing punishments for their sins, a host he took for a glimpse of purgatory rather than a hunting party. The fullest telling comes from Walter Map, a courtier writing around 1181 to 1193, who set down the story of Herla, an ancient British king who attended the wedding of a dwarf king in an underground realm. Herla left believing only a few days had passed, but when he emerged a shepherd told him two hundred years had gone by since the Saxons took the land; some of Herla's men who dismounted and touched the ground crumbled instantly to dust, and the rest, forbidden ever to dismount again, were condemned to ride without rest. Map placed their last recorded sighting in the Welsh Marches during the reign of Henry II, and it is this doomed retinue, the familia Herlethingi, that later writers folded into the wider legend of the Wild Hunt.\n\nAcross Britain the Hunt rides under many names and many leaders: the Devil, Herne the Hunter in Windsor Forest, Sir Francis Drake, and in older strata Woden, the Anglo-Saxon form of the Norse god Odin, wanderer and lord of the dead. In the north its hounds are the Gabriel Ratchets, whose cries pass unseen overhead; on Dartmoor they are the Wisht Hounds; in Wales they are the Cŵn Annwn, the white red-eared hounds of the Otherworld.\n\nWhatever its guise, the Wild Hunt embodies the terror of the wild night and the thin border between the living and the dead, a fear old enough that an English monk was writing it down in his abbey's chronicle nine centuries ago.",
       "sources": [
         "https://en.wikipedia.org/wiki/Wild_Hunt",
         "https://www.historytoday.com/archive/out-margins/wild-hunt-england",
@@ -18686,7 +18772,7 @@
         "barrow",
         "church"
       ],
-      "detail": "The village of Threekingham in the Kesteven district of Lincolnshire takes its name, in popular tradition, from a violent episode of the Danelaw period. Local legend holds that in 869 or 870 a great battle was fought near the village between Saxon earls (Algar, Morcar, and Leofric) and a Danish force. Three Danish kings were slain and buried on the spot, and the village, previously called Laundon, was renamed in their memory: the 'home of the three kings.'\n\nIn St Peter's Church three uninscribed fourteenth-century stone effigies lie within the chancel: recumbent figures without names or dates, belonging in scholarly reality to the Trikingham family, descendants of Sir Lambert de Trikingham (d.1280) and once the principal landholders. But the village has always identified them as the Danish kings, their namelessness explained by their paganism and their defeat. In September 2023 the supposed battle was re-enacted by three hundred performers at a special festival, vivid evidence of how deeply the legend is embedded in local identity.\n\nPlace-name specialists reject the romantic etymology, finding that Threekingham most probably derives from 'the homestead of Tric's people', Tric being a Brittonic personal name. But the folk etymology is far older than modern scholarship: it appears to have been circulating since at least the late Anglo-Saxon period, when the name was already being read as commemorative. The three stone effigies, the mystery of their namelessness, and the landscape itself continue to give the legend life.",
+      "detail": "The village of Threekingham in the Kesteven district of Lincolnshire takes its name, in popular tradition, from a violent episode of the Danelaw period. Local legend holds that in 869 or 870 a great battle was fought near the village between Saxon earls (Algar, Morcar, and Leofric) and a Danish force. Three Danish kings were slain and buried on the spot, and the village, previously called Laundon, was renamed in their memory: the 'home of the three kings.' The village sits close to where the Roman road now called Mareham Lane crosses the ancient Salters' Way, a junction significant enough that a real Viking-age skirmish nearby is entirely plausible, even if the specific tale of three slain kings is not.\n\nIn St Peter's Church three uninscribed fourteenth-century stone effigies lie within the chancel: recumbent figures without names or dates, belonging in scholarly reality to the Trikingham family, descendants of Sir Lambert de Trikingham (d.1280) and once the principal landholders. But the village has always identified them as the Danish kings, their namelessness explained by their paganism and their defeat. In September 2023 the supposed battle was re-enacted by three hundred performers at a special festival, vivid evidence of how deeply the legend is embedded in local identity.\n\nPlace-name specialists reject the romantic etymology, finding that Threekingham most probably derives from 'the homestead of Tric's people', Tric being a Brittonic personal name. But the folk etymology is far older than modern scholarship: it appears to have been circulating since at least the late Anglo-Saxon period, when the name was already being read as commemorative. The three stone effigies, the mystery of their namelessness, and the landscape itself continue to give the legend life.",
       "sources": [
         "https://en.wikipedia.org/wiki/Threekingham",
         "https://heritage-explorer.lincolnshire.gov.uk/Monument/MLI89096",
@@ -18902,7 +18988,9 @@
       "dating_confidence": "medium",
       "period_slug": null,
       "period": "Attested in oral tradition by 1584 (Scot's Discovery of Witchcraft) and fixed in print by Richard Johnson's 1621 chapbook. No reliable origin date beyond that survives.",
-      "date_added": "2026-09-03"
+      "date_added": "2026-09-03",
+      "earliest_record": "1584",
+      "cultural_tradition": "English nursery and chapbook tradition. Already circulating orally before Richard Johnson's 1621 chapbook 'The History of Tom Thumbe' fixed it in print."
     },
     {
       "name": "Towednack",
@@ -20486,7 +20574,7 @@
         "scotland",
         "border"
       ],
-      "detail": "The Worm of Linton is the dragon-legend of the village of Linton in the Scottish Borders, in the old county of Roxburghshire. A great serpent or 'worm' was said to lair in a hollow on Linton Hill, still called the Worm's Den, emerging to devour livestock and people and to blight the country with its venomous breath, until the laird, John Somerville, undertook to destroy it. The earliest surviving written description, from a twelfth-century writer, sizes the creature at 'three Scots yards' in length and says it resembled, in shape and colour, the common moor adders of the district, only grown monstrous.\n\nKnowing no ordinary blow could pierce its hide, he had a long lance tipped with a wheel of burning peat steeped in pitch and brimstone; riding up to the creature as it opened its jaws, he thrust the blazing mass down its throat and burned it from within. For the deed Somerville was, by tradition, knighted and granted the barony of Linton, and a weathered carved stone above the door of Linton church is said to commemorate the slaying. The Worm of Linton is one of the classic 'worm' legends of the Borders, blending the universal dragon-fight with a real family's claim to its lands.",
+      "detail": "The Worm of Linton is the dragon-legend of the village of Linton in the Scottish Borders, in the old county of Roxburghshire. A great serpent or 'worm' was said to lair in a hollow on Linton Hill, still called the Worm's Den, emerging to devour livestock and people and to blight the country with its venomous breath, until the laird, John Somerville, undertook to destroy it. The earliest surviving written description, from a twelfth-century writer, sizes the creature at 'three Scots yards' in length and says it resembled, in shape and colour, the common moor adders of the district, only grown monstrous.\n\nKnowing no ordinary blow could pierce its hide, he had a long lance tipped with a wheel of burning peat steeped in pitch and brimstone; riding up to the creature as it opened its jaws, he thrust the blazing mass down its throat and burned it from within. For the deed Somerville was, by tradition, knighted, made royal falconer, and granted the barony of Linton, taking as his family crest a wyvern perched upon a wheel, in memory of the burning weapon that killed the worm. A weathered medieval carving above the door of Linton church is said to commemorate the slaying, though the stone itself shows a mounted knight confronting two four-legged beasts rather than a single serpent, leaving the exact scene it depicts as uncertain as the worm's own vanished lair. The Worm of Linton is one of the classic 'worm' legends of the Borders, blending the universal dragon-fight with a real family's claim to its lands.",
       "sources": [
         "https://en.wikipedia.org/wiki/Worm_of_Linton",
         "https://www.scotclans.com/pages/the-linton-worm",

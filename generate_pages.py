@@ -1694,7 +1694,7 @@ FEATURED_PAGE = Template("""<!DOCTYPE html>
 <link rel="stylesheet" href="/assets/leaflet/leaflet.css?v=20260901a"/>
 <link rel="stylesheet" href="/nav.css?v=20260905a"/>
 <link rel="stylesheet" href="/footer.css?v=20260904a"/>
-<link rel="stylesheet" href="/legend-page.css?v=20260904b"/>
+<link rel="stylesheet" href="/legend-page.css?v=20260905a"/>
 <script type="application/ld+json">$jsonld</script>
 $breadcrumb_jsonld
 </head>
@@ -1748,7 +1748,7 @@ $footer
 <script src="/assets/leaflet/leaflet.js?v=20260901a"></script>
 <link rel="stylesheet" href="/share.css?v=20260904a"/><script src="/share-card.js?v=20260826b"></script>
 <script src="/js/bookmarks.js?v=20260904a" data-cfasync="false"></script>
-<script src="$base/legend-page.js?v=20260823b"></script>
+<script src="$base/legend-page.js?v=20260905a"></script>
 </body>
 </html>
 """)

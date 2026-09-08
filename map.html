@@ -780,6 +780,15 @@
       background: rgba(30,20,8,0.75);
       display: flex; align-items: center; justify-content: center;
       padding: 20px;
+      /* A centred flex item taller than its container overflows equally at both
+         ends, so on a landscape phone the top of this dialog goes off-screen
+         with no way to reach it: measured at 667x375 the modal is already
+         exactly the full viewport height, with nothing to spare. Letting the
+         overlay scroll makes a too-tall dialog reachable. overscroll-behavior
+         keeps that scroll off the page behind, which costs nothing here (the
+         map page does not scroll) but stops the fix leaking if it ever does. */
+      overflow-y: auto;
+      overscroll-behavior: contain;
     }
     .bug-modal {
       background: var(--parchment);

@@ -539,6 +539,10 @@
     menu.className='share-menu';
     menu.setAttribute('role','menu');
     menu.hidden=true;
+    var grip=document.createElement('span');
+    grip.className='share-menu-grip';
+    grip.setAttribute('aria-hidden','true');
+    menu.appendChild(grip);
     var sheetHead=document.createElement('p');
     sheetHead.className='share-menu-head';
     sheetHead.textContent='Share this legend';
@@ -577,10 +581,53 @@
     function closeMenu(){
       menu.hidden=true;
       backdrop.hidden=true;
+      menu.classList.remove('is-dragging');
+      menu.style.transform='';
       shareButton.setAttribute('aria-expanded','false');
       document.removeEventListener('click',onDocClick);
       document.removeEventListener('keydown',onKey);
     }
+
+    // ── Drag the sheet shut ────────────────────────────────────────────────
+    // Distance OR speed, so both a deliberate pull and a quick flick work. 70px
+    // is far enough not to fire on a stray thumb; the velocity path needs 20px
+    // as well, so a fast tap cannot register as a flick.
+    var CLOSE_PX=70, CLOSE_VELOCITY=0.5, FLICK_MIN_PX=20;
+    var dragFrom=null, dragAt=0, dragBy=0;
+    function isSheet(){
+      return window.matchMedia('(max-width: 768px)').matches;
+    }
+    menu.addEventListener('touchstart',function(e){
+      if(!isSheet()||e.touches.length!==1) return;
+      dragFrom=e.touches[0].clientY;
+      dragAt=Date.now();
+      dragBy=0;
+      menu.classList.add('is-dragging');
+    },{passive:true});
+    menu.addEventListener('touchmove',function(e){
+      if(dragFrom===null) return;
+      dragBy=e.touches[0].clientY-dragFrom;
+      // Upward does nothing: the sheet is already against the bottom edge, and
+      // letting it travel up would just tear it off the screen edge.
+      if(dragBy<0) dragBy=0;
+      menu.style.transform='translateY('+dragBy+'px)';
+    },{passive:true});
+    function endDrag(){
+      if(dragFrom===null) return;
+      var ms=Math.max(1,Date.now()-dragAt);
+      var flicked=(dragBy/ms)>CLOSE_VELOCITY&&dragBy>FLICK_MIN_PX;
+      menu.classList.remove('is-dragging');
+      if(dragBy>CLOSE_PX||flicked){
+        closeMenu();
+      } else {
+        // Springs back under the CSS transition the is-dragging class removed.
+        menu.style.transform='';
+      }
+      dragFrom=null;
+      dragBy=0;
+    }
+    menu.addEventListener('touchend',endDrag,{passive:true});
+    menu.addEventListener('touchcancel',endDrag,{passive:true});
     shareButton.addEventListener('click',function(){
       if(menu.hidden){ openMenu(); } else { closeMenu(); }
     });

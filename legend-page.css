@@ -828,3 +828,43 @@ h1{
   .section-head{align-items:start;flex-direction:column}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.related-card{transition:none}.map-footer a:hover,.map-footer a:focus-visible,.section-head a:hover,.section-head a:focus-visible{transform:none}}
+
+/* ── Share sheet: drag it shut ─────────────────────────────────────────────
+   Below 768px the share menu is a bottom sheet, and every phone lets you drag
+   one of those closed. Without it the only ways out are the backdrop and the
+   Escape key, and a phone has no Escape key, so the sheet had exactly one
+   dismissal target: the strip of backdrop above it.
+
+   touch-action:none on the sheet is what makes the drag possible with passive
+   listeners. The sheet does not scroll, so nothing is lost by taking the
+   gesture, and without it the legend page behind scrolls under the finger
+   while the sheet is being dragged. Taps are unaffected; touch-action governs
+   panning and zooming, not clicks.
+
+   The backdrop takes the same treatment for the same reason: it covers a page
+   that scrolls, so a drag on it moved the article underneath. */
+/* Default off: the grip only means anything on the sheet. Declared BEFORE the
+   media query, not after, or it wins everywhere on source order. */
+.share-menu-grip{display:none}
+@media(max-width:768px){
+  .share-menu{
+    touch-action:none;
+    transition:transform .2s ease;
+  }
+  .share-menu.is-dragging{transition:none}
+  .share-backdrop{
+    touch-action:none;
+    overscroll-behavior:contain;
+  }
+  /* The affordance. A sheet that can be dragged has to look like it can. */
+  .share-menu-grip{
+    display:block;
+    width:38px;height:4px;
+    margin:2px auto 6px;
+    border-radius:2px;
+    background:rgba(71,51,29,.28);
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  .share-menu{transition:none}
+}

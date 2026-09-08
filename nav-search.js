@@ -200,9 +200,59 @@
   function isCollapsed() {
     return !!toggle && toggle.offsetParent !== null;
   }
+
+  // Below 640px the panel is full screen (see nav.css). Two things follow from
+  // that, and neither can be done in CSS.
+  var FULLSCREEN_MAX = 640;
+  var closeBtn = null;
+  var prevBodyOverflow = null;
+
+  function isFullscreen() {
+    return window.innerWidth <= FULLSCREEN_MAX;
+  }
+
+  // The button that opened the panel is underneath it once it fills the screen,
+  // so the panel needs its own way out. Built here rather than in
+  // NAV_SEARCH_HTML because that markup ships on ~850 pages and a control whose
+  // only job is dismissing a JS overlay is dead weight without JS.
+  function ensureCloseButton() {
+    if (closeBtn) return closeBtn;
+    var drop = document.getElementById("navSearchDrop");
+    if (!drop) return null;
+    closeBtn = document.createElement("button");
+    closeBtn.type = "button";
+    closeBtn.className = "nav-search-close";
+    closeBtn.setAttribute("aria-label", "Close search");
+    closeBtn.textContent = "\u00d7";
+    closeBtn.addEventListener("click", function () {
+      closeCollapsed();
+      setExpanded(false);
+      if (toggle) toggle.focus();
+    });
+    drop.appendChild(closeBtn);
+    return closeBtn;
+  }
+
+  // Without this the page scrolls behind the panel while the visitor is
+  // scrolling the results, and they close the search onto somewhere they did
+  // not choose. The previous value is kept rather than assumed: the homepage
+  // sets overflow on body itself.
+  function lockScroll(on) {
+    if (on) {
+      if (prevBodyOverflow === null) {
+        prevBodyOverflow = document.body.style.overflow;
+        document.body.style.overflow = "hidden";
+      }
+    } else if (prevBodyOverflow !== null) {
+      document.body.style.overflow = prevBodyOverflow;
+      prevBodyOverflow = null;
+    }
+  }
+
   function closeCollapsed() {
     root.classList.remove("open");
     if (toggle) toggle.setAttribute("aria-expanded", "false");
+    lockScroll(false);
   }
   if (toggle) {
     toggle.addEventListener("click", function () {
@@ -211,12 +261,24 @@
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
       if (open) {
         ensureLoaded();
+        if (isFullscreen()) {
+          ensureCloseButton();
+          lockScroll(true);
+        }
         setTimeout(function () { input.focus(); }, 0);
       } else {
         setExpanded(false);
+        lockScroll(false);
       }
     });
   }
+
+  // Rotating a phone with the search open can cross the 640px line. Releasing
+  // the lock on the way out of full screen stops the page being frozen by a
+  // panel that is no longer covering it.
+  window.addEventListener("resize", function () {
+    if (!root.classList.contains("open") || !isFullscreen()) lockScroll(false);
+  });
 })();
 
 // Centre the current page's nav link in the scrolling strip on phones.

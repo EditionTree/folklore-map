@@ -361,3 +361,95 @@
      border into a single line. */
   .nav-search-results { width: 100%; top: calc(100% - 1px); }
 }
+
+/* Phones: the search becomes a full-screen view rather than a 330px popup.
+ *
+ * The dropdown above is a desktop shape borrowed downward. On a 375px screen it
+ * hangs off the top-right corner over the page, leaves most of the display
+ * unused, and gives the results roughly six rows before they scroll. A search
+ * you have opened deliberately should own the screen until you leave it, which
+ * is what every native app does and what a visitor expects when they tap a
+ * magnifier.
+ *
+ * Placed after the 1200px block on purpose: both target
+ * `.nav-search.open .nav-search-drop`, so source order settles which display
+ * value wins below 640px.
+ *
+ * position:fixed works here only because the 1200px block already reset
+ * .nav-search's transform to none. A transformed ancestor makes a fixed
+ * descendant position against the ancestor instead of the viewport, which would
+ * pin this panel to a 34px button. Do not put a transform back on .nav-search
+ * without checking this.
+ *
+ * The close button is injected by nav-search.js rather than living in
+ * NAV_SEARCH_HTML: the markup ships on ~850 pages, and a control that only
+ * exists to dismiss a JS-driven overlay has no job when JS is absent.
+ */
+@media (max-width: 640px) {
+  .nav-search.open .nav-search-drop {
+    position: fixed;
+    inset: 0;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto minmax(0, 1fr);
+    gap: 12px;
+    padding: calc(10px + env(safe-area-inset-top)) 12px calc(12px + env(safe-area-inset-bottom));
+    background: var(--nav-bar);
+    border: 0;
+    box-shadow: none;
+    /* Capped at .topnav's 7500 in practice, since this is a descendant of it and
+       7500 opens a stacking context. That clears the page and the map, and the
+       only things above it are the share menu and the achievement toasts, which
+       cannot be triggered from inside a search. */
+    z-index: 30;
+  }
+  .nav-search.open .nav-search-field {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 12px 14px;
+    box-shadow: none;
+    border: 1px solid rgba(176,144,96,.5);
+  }
+  .nav-search.open .nav-search-input {
+    /* 16px stops iOS zooming the page when the field takes focus. */
+    font-size: 16px;
+  }
+  .nav-search-close {
+    display: none;
+    grid-column: 2;
+    grid-row: 1;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    min-height: 44px;
+    padding: 0;
+    background: transparent;
+    border: 1px solid rgba(176,144,96,.4);
+    color: rgba(242,232,213,.85);
+    font-family: 'Marcellus', serif;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .nav-search.open .nav-search-close { display: inline-flex; }
+  .nav-search-close:active { background: rgba(176,144,96,.16); }
+  .nav-search.open .nav-search-results {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    position: static;
+    width: auto;
+    max-height: none;
+    height: 100%;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    border: 0;
+    background: transparent;
+  }
+  /* The results element is display:none until a query matches. In the popup
+     that is right, but full screen it leaves a hole where the list will be, so
+     it keeps its space and simply has nothing in it. */
+  .nav-search.open .nav-search-results { display: block; }
+}

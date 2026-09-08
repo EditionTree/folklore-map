@@ -528,7 +528,7 @@ def topnav_html(active=""):
     # falls back to a reduced scorer if the global is missing, so a reorder
     # degrades recall instead of breaking search on 829 pages.
     parts.append('<script src="/js/search-score.js?v=%s" data-cfasync="false"></script>' % SEARCH_SCORE_V)
-    parts.append('<script src="/nav-search.js?v=20260904a" data-cfasync="false" defer></script>')
+    parts.append('<script src="/nav-search.js?v=20260905a" data-cfasync="false" defer></script>')
     return "".join(parts)
 
 
@@ -906,7 +906,7 @@ def build_browse_page(page_title, desc, url, h1, intro, crumb, nav_html, cards_h
             '\n'
             '<link rel="preload" href="/fonts/marcellus-400-latin.woff2" as="font" type="font/woff2" crossorigin/><link rel="preload" href="/fonts/spectral-400-latin.woff2" as="font" type="font/woff2" crossorigin/>\n'
             '<link rel="stylesheet" href="/fonts/fonts.css"/>\n'
-            '<link rel="stylesheet" href="/nav.css?v=20260904a"/>\n'
+            '<link rel="stylesheet" href="/nav.css?v=20260905a"/>\n'
             '<link rel="stylesheet" href="/footer.css?v=20260904a"/>\n'
             + jsonld_html + breadcrumb_jsonld_html + head_extra
             + '<style>' + BROWSE_STYLE + '</style></head>\n<body class="catalogue-page">\n'
@@ -1692,7 +1692,7 @@ FEATURED_PAGE = Template("""<!DOCTYPE html>
 <link rel="preload" href="/fonts/marcellus-400-latin.woff2" as="font" type="font/woff2" crossorigin/><link rel="preload" href="/fonts/spectral-400-latin.woff2" as="font" type="font/woff2" crossorigin/>
 <link rel="stylesheet" href="/fonts/fonts.css"/>
 <link rel="stylesheet" href="/assets/leaflet/leaflet.css?v=20260901a"/>
-<link rel="stylesheet" href="/nav.css?v=20260904a"/>
+<link rel="stylesheet" href="/nav.css?v=20260905a"/>
 <link rel="stylesheet" href="/footer.css?v=20260904a"/>
 <link rel="stylesheet" href="/legend-page.css?v=20260904b"/>
 <script type="application/ld+json">$jsonld</script>
@@ -3473,7 +3473,7 @@ def build():
 <meta name="twitter:image" content="{BASE}/og/preview-folklore-finder.jpg"/>
 <link rel="preload" href="/fonts/marcellus-400-latin.woff2" as="font" type="font/woff2" crossorigin/><link rel="preload" href="/fonts/spectral-400-latin.woff2" as="font" type="font/woff2" crossorigin/>
 <link rel="stylesheet" href="/fonts/fonts.css"/>
-<link rel="stylesheet" href="/nav.css?v=20260904a"/>
+<link rel="stylesheet" href="/nav.css?v=20260905a"/>
 <link rel="stylesheet" href="/footer.css?v=20260904a"/>
 <style>
 *{{box-sizing:border-box;margin:0;padding:0}}

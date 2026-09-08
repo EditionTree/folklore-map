@@ -1,9 +1,13 @@
 (function(){
   // ── Curated site updates (newest first). Append new release blocks at the
-  // top. Each item is either a plain string (shown as a visitor-facing
-  // update, the default) or {text, tech:true} for a technical/dev note —
-  // those render in a collapsed "Technical changelog" below the main list
-  // instead of mixed into it. ──
+  // top. Every item is a plain string, and every item is visitor-facing.
+  //
+  // There used to be a {text, tech:true} form that rendered into a collapsed
+  // "Technical changelog" underneath. It was removed on 2026-09-08: this page
+  // answers "how is the archive growing", and a dev-notes drawer is a question
+  // nobody visiting a folklore map is asking. If a change is worth telling
+  // visitors about, write it as one of them; if it is not, it belongs in the
+  // commit history, which is where it already is. ──
   const UPDATES = [
     { date: "August 2026", items: [
       "A new homepage guidance carousel: quick routes into My Archive, achievements, collections and what's new, with a first card that adapts to how far you've explored.",
@@ -12,9 +16,7 @@
       "Collection pages now show your own progress: begin, continue or complete, for every themed collection.",
       "The map now fills the full page, with the entries panel opening over the top instead of squeezing it into a smaller column.",
       "A new Editorial & AI-Use Policy page explains how entries are researched, sourced and, where AI-generated, illustrated.",
-      "AI-generated legend illustrations are now labelled on the page.",
-      { text: "Search-engine rules updated to keep AI training crawlers out while normal search indexing continues as before.", tech: true },
-      { text: "A recurring sourcing-audit tool now flags thin or single-sourced entries for the ongoing research process to revisit.", tech: true }
+      "AI-generated legend illustrations are now labelled on the page."
     ] },
     { date: "July 2026", items: [
       "Collections reimagined. Each one now reads as an illustrated article, with an image beside every tale.",
@@ -44,24 +46,14 @@
     const rel = UPDATES[monthIdx];
     su.innerHTML = '';
     if (!rel) { su.innerHTML = '<p class="empty-note">No updates recorded yet.</p>'; return; }
-    var visitorItems = rel.items.filter(function(it){ return !(it && it.tech); });
-    var techItems = rel.items.filter(function(it){ return it && it.tech; });
     var box = document.createElement('div'); box.className = 'release';
     var ul = document.createElement('ul');
-    visitorItems.forEach(function(it){
+    rel.items.forEach(function(it){
       var li = document.createElement('li');
-      li.textContent = typeof it === 'string' ? it : it.text;
+      li.textContent = it;
       ul.appendChild(li);
     });
     box.appendChild(ul);
-    if (techItems.length) {
-      var details = document.createElement('details'); details.className = 'tech-changelog';
-      var summary = document.createElement('summary'); summary.textContent = 'Technical changelog (' + techItems.length + ')';
-      var techUl = document.createElement('ul');
-      techItems.forEach(function(it){ var li = document.createElement('li'); li.textContent = it.text; techUl.appendChild(li); });
-      details.appendChild(summary); details.appendChild(techUl);
-      box.appendChild(details);
-    }
     su.appendChild(box);
     label.textContent = rel.date;
     prevBtn.disabled = monthIdx >= UPDATES.length - 1;
@@ -74,7 +66,7 @@
   // ── Recently added legends and new collections. Populated at build time by
   // generate_pages.py (see build_recent_legends()/build_new_collections()); the
   // empty-array fallbacks below only show if the build step hasn't run yet. ──
-  const RECENT_LEGENDS = [{"slug": "alfred-and-the-burnt-cakes", "name": "Alfred and the Burnt Cakes", "date_added": "3 September 2026", "region": "Athelney, Somerset", "category": "Legendary Figures", "colour": "#6a3a2a"}, {"slug": "birnam-wood-and-dunsinane", "name": "Birnam Wood and Dunsinane", "date_added": "3 September 2026", "region": "Birnam, Perthshire, Scotland", "category": "Sacred Sites", "colour": "#5a3a18"}, {"slug": "canute-and-the-tide", "name": "Canute and the Tide", "date_added": "3 September 2026", "region": "Bosham, West Sussex", "category": "Legendary Figures", "colour": "#6a3a2a"}, {"slug": "dick-whittington-and-his-cat", "name": "Dick Whittington and His Cat", "date_added": "3 September 2026", "region": "Highgate, London, England", "category": "Legendary Figures", "colour": "#6a3a2a"}, {"slug": "ghillie-dhu", "name": "Ghillie Dhu", "date_added": "3 September 2026", "region": "Gairloch, Wester Ross, Scotland", "category": "Fae & Spirits", "colour": "#7e5577"}, {"slug": "greyfriars-bobby", "name": "Greyfriars Bobby", "date_added": "3 September 2026", "region": "Edinburgh, Scotland", "category": "Legendary Figures", "colour": "#6a3a2a"}, {"slug": "highgate-vampire", "name": "Highgate Vampire", "date_added": "3 September 2026", "region": "Highgate, London, England", "category": "Ghosts", "colour": "#4a3d6e"}, {"slug": "sambo-s-grave", "name": "Sambo's Grave", "date_added": "3 September 2026", "region": "Sunderland Point, Lancashire", "category": "Sacred Sites", "colour": "#5a3a18"}];
+  const RECENT_LEGENDS = [{"slug": "the-chained-oak", "name": "The Chained Oak", "date_added": "8 September 2026", "region": "Alton, Staffordshire", "category": "Sacred Sites", "colour": "#5a3a18"}, {"slug": "the-green-lady-of-stirling-castle", "name": "The Green Lady of Stirling Castle", "date_added": "8 September 2026", "region": "Stirling, Scotland", "category": "Ghosts", "colour": "#4a3d6e"}, {"slug": "alfred-and-the-burnt-cakes", "name": "Alfred and the Burnt Cakes", "date_added": "3 September 2026", "region": "Athelney, Somerset", "category": "Legendary Figures", "colour": "#6a3a2a"}, {"slug": "birnam-wood-and-dunsinane", "name": "Birnam Wood and Dunsinane", "date_added": "3 September 2026", "region": "Birnam, Perthshire, Scotland", "category": "Sacred Sites", "colour": "#5a3a18"}, {"slug": "canute-and-the-tide", "name": "Canute and the Tide", "date_added": "3 September 2026", "region": "Bosham, West Sussex", "category": "Legendary Figures", "colour": "#6a3a2a"}, {"slug": "dick-whittington-and-his-cat", "name": "Dick Whittington and His Cat", "date_added": "3 September 2026", "region": "Highgate, London, England", "category": "Legendary Figures", "colour": "#6a3a2a"}, {"slug": "ghillie-dhu", "name": "Ghillie Dhu", "date_added": "3 September 2026", "region": "Gairloch, Wester Ross, Scotland", "category": "Fae & Spirits", "colour": "#7e5577"}, {"slug": "greyfriars-bobby", "name": "Greyfriars Bobby", "date_added": "3 September 2026", "region": "Edinburgh, Scotland", "category": "Legendary Figures", "colour": "#6a3a2a"}];
   const NEW_COLLECTIONS = [{"slug": "birth-of-albion", "title": "Birth of Albion"}];
 
   const rl = document.getElementById('recentLegends');

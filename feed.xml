@@ -4,8 +4,24 @@
   <link>https://folklorefinder.uk/</link>
   <description>Recently added myths, legends, ghosts and folklore from across Britain and Ireland.</description>
   <language>en-gb</language>
-  <lastBuildDate>Mon, 07 Sep 2026 21:10:39 GMT</lastBuildDate>
+  <lastBuildDate>Tue, 08 Sep 2026 21:30:19 GMT</lastBuildDate>
   <atom:link xmlns:atom="http://www.w3.org/2005/Atom" href="https://folklorefinder.uk/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>The Chained Oak</title>
+    <link>https://folklorefinder.uk/legends/the-chained-oak</link>
+    <guid isPermaLink="true">https://folklorefinder.uk/legends/the-chained-oak</guid>
+    <pubDate>Tue, 08 Sep 2026 12:00:00 GMT</pubDate>
+    <category>Sacred Sites</category>
+    <description>An old oak tree near Alton Towers, its remaining limbs bound with iron chains after a curse. An Earl of Shrewsbury refused a beggar woman a coin, and she…</description>
+  </item>
+  <item>
+    <title>The Green Lady of Stirling Castle</title>
+    <link>https://folklorefinder.uk/legends/the-green-lady-of-stirling-castle</link>
+    <guid isPermaLink="true">https://folklorefinder.uk/legends/the-green-lady-of-stirling-castle</guid>
+    <pubDate>Tue, 08 Sep 2026 12:00:00 GMT</pubDate>
+    <category>Ghosts</category>
+    <description>The best known of Stirling Castle&#x27;s ghosts, said to be a servant to Mary, Queen of Scots who died in a fire she foresaw but failed to prevent. On the…</description>
+  </item>
   <item>
     <title>Alfred and the Burnt Cakes</title>
     <link>https://folklorefinder.uk/legends/alfred-and-the-burnt-cakes</link>
@@ -229,21 +245,5 @@
     <pubDate>Tue, 01 Sep 2026 12:00:00 GMT</pubDate>
     <category>Ghosts</category>
     <description>A granite pyramid fifteen feet high stands in the churchyard of St Andrew&#x27;s on Rodney Street, over the grave of the railway contractor William Mackenzie.…</description>
-  </item>
-  <item>
-    <title>Bincombe Bumps</title>
-    <link>https://folklorefinder.uk/legends/bincombe-bumps</link>
-    <guid isPermaLink="true">https://folklorefinder.uk/legends/bincombe-bumps</guid>
-    <pubDate>Wed, 26 Aug 2026 12:00:00 GMT</pubDate>
-    <category>Fae &amp; Spirits</category>
-    <description>Six Bronze Age round barrows crown the down above the hamlet of Bincombe, known locally as the Bincombe Bumps. One of them is the Music Barrow, where…</description>
-  </item>
-  <item>
-    <title>Elspeth Reoch</title>
-    <link>https://folklorefinder.uk/legends/elspeth-reoch</link>
-    <guid isPermaLink="true">https://folklorefinder.uk/legends/elspeth-reoch</guid>
-    <pubDate>Sat, 08 Aug 2026 12:00:00 GMT</pubDate>
-    <category>Witches</category>
-    <description>A Caithness girl said fairies taught her second sight at a lochside meeting when she was twelve. Decades later in Orkney, her confession of a dead…</description>
   </item>
 </channel></rss>

@@ -3711,7 +3711,12 @@
     <image:title>A cinematic ghost folklore image of The Cauld Lad of Hylton, shown as the central apparition or haunting from Sunderland</image:title>
     <image:caption>A visual interpretation of The Cauld Lad of Hylton</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/the-chained-oak</loc><lastmod>2026-09-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/the-chained-oak</loc><lastmod>2026-09-08</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/the-chained-oak-hero.jpg</image:loc>
+    <image:title>An ancient oak tree beside a Staffordshire parkland lane, its lower limbs bound with heavy rusted iron chains and a broken branch lying in the wet grass beneath it, under a breaking storm sky at dusk</image:title>
+    <image:caption>A visual interpretation of The Chained Oak</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/the-cooneen-ghost</loc><lastmod>2026-08-27</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/the-cooneen-ghost-hero.jpg</image:loc>
@@ -3736,7 +3741,12 @@
     <image:title>A huge weathered man beside an iron cauldron, old harp and wooden club near an earthen mound in County Meath</image:title>
     <image:caption>A visual interpretation of the Dagda in Irish mythology</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/the-devil-s-footprints</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/the-devil-s-footprints</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/the-devil-s-footprints-hero.jpg</image:loc>
+    <image:title>A single line of small hoof-like footprints running unbroken over a snow-covered cottage roof and across a garden wall in a Devon village at dawn</image:title>
+    <image:caption>A visual interpretation of The Devil&#x27;s Footprints</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/the-dragon-of-loschy-hill</loc><lastmod>2026-08-27</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/the-dragon-of-loschy-hill-hero.jpg</image:loc>
@@ -3803,14 +3813,24 @@
     <image:title>A towering green knight in dark plate and mail entering Arthur&#x27;s winter hall with an iron axe and holly branch</image:title>
     <image:caption>A visual interpretation of the Green Knight&#x27;s challenge at Arthur&#x27;s court</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/the-green-lady-of-stirling-castle</loc><lastmod>2026-09-08</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/the-green-lady-of-stirling-castle</loc><lastmod>2026-09-08</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/the-green-lady-of-stirling-castle-hero.jpg</image:loc>
+    <image:title>A translucent green-clad figure of a young servant woman kneels beside scorched, smoking bed curtains in a candlelit stone chamber at Stirling Castle, an extinguished candle still in her hand</image:title>
+    <image:caption>A visual interpretation of The Green Lady of Stirling Castle</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/the-green-man</loc><lastmod>2026-08-26</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/green-man-hero.jpg</image:loc>
     <image:title>A weathered Green Man carving with a leaf-framed face set into the stone of a medieval Gloucestershire church</image:title>
     <image:caption>A visual interpretation of the Gloucestershire Green Man tradition</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/the-grey-lady-of-speke-hall</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/the-grey-lady-of-speke-hall</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/the-grey-lady-of-speke-hall-hero.jpg</image:loc>
+    <image:title>A translucent woman in a grey eighteenth century dress crossing the timber panelled Tapestry Room at Speke Hall, moving toward the far wall</image:title>
+    <image:caption>A visual interpretation of The Grey Lady of Speke Hall</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/the-gwybr-of-llanrhaeadr</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/the-gwybr-of-llanrhaeadr-hero.jpg</image:loc>
@@ -3823,7 +3843,12 @@
     <image:title>A cinematic ghost folklore image of The Hairy Hands, shown as the central apparition or haunting from Dartmoor, Devon</image:title>
     <image:caption>A visual interpretation of The Hairy Hands</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/the-haunted-gallery-hampton-court</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/the-haunted-gallery-hampton-court</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/the-haunted-gallery-hampton-court-hero.jpg</image:loc>
+    <image:title>Catherine Howard breaking free from her guards to run down a wood panelled Tudor gallery toward the Chapel Royal at Hampton Court, guards reaching after her</image:title>
+    <image:caption>A visual interpretation of The Haunted Gallery, Hampton Court</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/the-hawkhurst-gang</loc><lastmod>2026-08-17</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/the-hawkhurst-gang-hero.jpg</image:loc>
@@ -3866,7 +3891,12 @@
     <image:title>A cinematic fae and spirit folklore image of The Lady of the Lake, shown as the central fairy, spirit, or otherworldly presence from Llyn Llydaw, Snowdonia, Wales</image:title>
     <image:caption>A visual interpretation of The Lady of the Lake</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/the-liver-birds</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/the-liver-birds</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/the-liver-birds-hero.jpg</image:loc>
+    <image:title>Two large verdigris green copper bird statues standing on the twin clock towers of the Royal Liver Building, one facing the city and one facing the sea</image:title>
+    <image:caption>A visual interpretation of The Liver Birds</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/the-loch-ness-monster</loc><lastmod>2026-09-02</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/loch-ness-monster-hero.jpg</image:loc>
@@ -3879,7 +3909,12 @@
     <image:title>A cinematic aquatic folklore image of The Loe, shown as the central water spirit, lake beast, sea creature, or drowned-place legend from Cornwall</image:title>
     <image:caption>A visual interpretation of The Loe</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/the-london-stone</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/the-london-stone</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/the-london-stone-hero.jpg</image:loc>
+    <image:title>A weathered ancient limestone block displayed behind glass in a stone niche on a Cannon Street building in the City of London</image:title>
+    <image:caption>A visual interpretation of The London Stone</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/the-merry-maidens</loc><lastmod>2026-09-07</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/the-merry-maidens-hero.jpg</image:loc>
@@ -3892,7 +3927,12 @@
     <image:title>A cinematic ghost folklore image of The Mistletoe Bough, shown as the central apparition or haunting from Minster Lovell, Oxfordshire</image:title>
     <image:caption>A visual interpretation of The Mistletoe Bough</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/the-monk-s-well</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/the-monk-s-well</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/the-monk-s-well-hero.jpg</image:loc>
+    <image:title>A small weathered sandstone well niche on Mill Lane in Wavertree, with mossy stone steps and an old iron pump beside a now dry, planted basin</image:title>
+    <image:caption>A visual interpretation of The Monk&#x27;s Well</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/the-morrigan</loc><lastmod>2026-09-07</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/the-morrigan-hero.jpg</image:loc>
@@ -3935,15 +3975,30 @@
     <image:title>A cinematic ghost folklore image of The Pump Hill Smuggler, shown as the central apparition or haunting from Happisburgh, Norfolk, England</image:title>
     <image:caption>A visual interpretation of The Pump Hill Smuggler</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/the-queensway-tunnel-hitchhiker</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/the-queensway-tunnel-hitchhiker</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/the-queensway-tunnel-hitchhiker-hero.jpg</image:loc>
+    <image:title>A young woman in 1960s dress stands in the traffic lane of a white-tiled road tunnel, one hand raised, caught in headlight glare with the tunnel curving away into darkness behind her</image:title>
+    <image:caption>A visual interpretation of The Queensway Tunnel Hitchhiker</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/the-ratman-of-southend</loc><lastmod>2026-08-17</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/the-ratman-of-southend-hero.jpg</image:loc>
     <image:title>A cinematic ghost folklore image of The Ratman of Southend, shown as the central apparition or haunting from Essex</image:title>
     <image:caption>A visual interpretation of The Ratman of Southend</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/the-ravens-of-the-tower-of-london</loc><lastmod>2026-09-02</lastmod><priority>0.6</priority></url>
-  <url><loc>https://folklorefinder.uk/legends/the-screaming-skull-of-wardley-hall</loc><lastmod>2026-09-02</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/the-ravens-of-the-tower-of-london</loc><lastmod>2026-09-02</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/the-ravens-of-the-tower-of-london-hero.jpg</image:loc>
+    <image:title>A Yeoman Warder in Tower of London undress uniform kneels on the South Lawn feeding a raven, with more ravens scattered across the grass and the White Tower rising pale behind him under an overcast sky</image:title>
+    <image:caption>A visual interpretation of The Ravens of the Tower of London</image:caption>
+  </image:image></url>
+  <url><loc>https://folklorefinder.uk/legends/the-screaming-skull-of-wardley-hall</loc><lastmod>2026-09-02</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/the-screaming-skull-of-wardley-hall-hero.jpg</image:loc>
+    <image:title>A weathered human skull rests in a wall niche at the head of a dark oak staircase inside a Tudor timber-framed hall, lit by a thin shaft of daylight from a leaded window</image:title>
+    <image:caption>A visual interpretation of The Screaming Skull of Wardley Hall</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/the-selkie</loc><lastmod>2026-08-25</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/the-selkie-hero.jpg</image:loc>
@@ -4022,7 +4077,12 @@
     <image:title>Thomas the Rhymer meeting the Queen of Elfland beneath the Eildon Tree at twilight</image:title>
     <image:caption>A visual interpretation of Thomas the Rhymer leaving for Elfland</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/thor-s-stone</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/thor-s-stone</loc><lastmod>2026-09-03</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/thor-s-stone-hero.jpg</image:loc>
+    <image:title>A weathered red sandstone outcrop rises abruptly from open heathland on Thurstaston Common, its quarried faces catching low afternoon light with the Dee estuary visible in the distance</image:title>
+    <image:caption>A visual interpretation of Thor&#x27;s Stone</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/thornton-road-poltergeist-claim</loc><lastmod>2026-08-27</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/thornton-road-poltergeist-claim-hero.jpg</image:loc>
@@ -4287,7 +4347,12 @@
     <image:title>Captain William Kidd standing on the rain-wet deck of a seventeenth-century privateer off the Scottish coast</image:title>
     <image:caption>A visual interpretation of Captain Kidd before piracy and privateering became inseparable in legend</image:caption>
   </image:image></url>
-  <url><loc>https://folklorefinder.uk/legends/william-mackenzie-s-pyramid</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority></url>
+  <url><loc>https://folklorefinder.uk/legends/william-mackenzie-s-pyramid</loc><lastmod>2026-09-01</lastmod><priority>0.6</priority>
+  <image:image>
+    <image:loc>https://folklorefinder.uk/legend-images/william-mackenzie-s-pyramid-hero.jpg</image:loc>
+    <image:title>A granite pyramid tomb about fifteen feet high with a sealed doorway and small plaque, standing among older gravestones in a Georgian churchyard at dusk, Rodney Street&#x27;s townhouses lit beyond the railings</image:title>
+    <image:caption>A visual interpretation of William Mackenzie&#x27;s Pyramid</image:caption>
+  </image:image></url>
   <url><loc>https://folklorefinder.uk/legends/william-owen-the-smuggler-general-of-pembrokeshire</loc><lastmod>2026-08-17</lastmod><priority>0.6</priority>
   <image:image>
     <image:loc>https://folklorefinder.uk/legend-images/william-owen-the-smuggler-general-of-pembrokeshire-hero.jpg</image:loc>

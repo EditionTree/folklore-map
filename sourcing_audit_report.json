@@ -1,8 +1,100 @@
 {
   "generated": true,
-  "total_legends": 722,
-  "flagged_count": 224,
+  "total_legends": 739,
+  "flagged_count": 233,
   "flagged": [
+    {
+      "name": "Gog and Magog",
+      "severity_rank": 1,
+      "reason": "no source could be classified by reliability tier",
+      "source_count": 2,
+      "tiers": [
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://www.lordmayorsshow.london/history/gog-and-magog/",
+        "https://www.londonmuseum.org.uk/collections/v/object-525663/gog-magog-guildhall/"
+      ]
+    },
+    {
+      "name": "Gurt Worm",
+      "severity_rank": 1,
+      "reason": "no source could be classified by reliability tier",
+      "source_count": 2,
+      "tiers": [
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://www.halswaymanor.org.uk/projects/stories-of-the-hills/the-gurt-worm-of-shervage-wood/index.html",
+        "https://www.halswaymanor.org.uk/projects/stories-of-the-hills/ruth-tongue-crowcombe/"
+      ]
+    },
+    {
+      "name": "Hyter Sprite",
+      "severity_rank": 1,
+      "reason": "no source could be classified by reliability tier",
+      "source_count": 2,
+      "tiers": [
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://folklorefieldwork.substack.com/p/the-missing-fairies-of-norfolk-part",
+        "https://www.fairyist.com/fairy-types/hikey-sprites/"
+      ]
+    },
+    {
+      "name": "The Blue Bell Hill Ghost Bride",
+      "severity_rank": 1,
+      "reason": "no source could be classified by reliability tier",
+      "source_count": 3,
+      "tiers": [
+        "unclassified",
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://www.kentonline.co.uk/maidstone/news/the-truth-about-the-ghost-46573/",
+        "https://www.hauntedrooms.co.uk/bluebell-hill-ghost-kent",
+        "https://www.kentonline.co.uk/maidstone/news/the-true-story-behind-the-ghost-of-blue-bell-hill-214650/"
+      ]
+    },
+    {
+      "name": "Gooseberry Wife",
+      "severity_rank": 2,
+      "reason": "only secondary/popular sources, no primary or heritage record",
+      "source_count": 2,
+      "tiers": [
+        "popular",
+        "secondary"
+      ],
+      "urls": [
+        "https://britishfairies.wordpress.com/tag/gooseberry-wife/",
+        "https://karlshuker.blogspot.com/2012/05/gooseberry-wife-or-caterpillar.html"
+      ]
+    },
+    {
+      "name": "Hartlepool Monkey",
+      "severity_rank": 2,
+      "reason": "only secondary/popular sources, no primary or heritage record",
+      "source_count": 5,
+      "tiers": [
+        "unclassified",
+        "secondary",
+        "unclassified",
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://teesvalleymuseums.org/visit/museum-of-hartlepool/",
+        "https://www.historic-uk.com/HistoryUK/HistoryofEngland/The-Hanging-of-the-Hartlepool-Monkey/",
+        "https://www.scottishcorpus.ac.uk/document/?documentid=511",
+        "http://folksongandmusichall.com/index.php/who-hung-the-monkey/",
+        "https://curiousrambler.com/who-hung-the-monkey/"
+      ]
+    },
     {
       "name": "Kelpie of Loch Garve",
       "severity_rank": 2,
@@ -17,6 +109,20 @@
         "https://garve.org/the-loch-garve-kelpie",
         "https://www.mysteriousbritain.co.uk/folklore/the-kelpie-of-loch-garve/",
         "https://folklorescotland.com/the-kelpies-chimney/"
+      ]
+    },
+    {
+      "name": "Longwitton Dragon",
+      "severity_rank": 2,
+      "reason": "only secondary/popular sources, no primary or heritage record",
+      "source_count": 2,
+      "tiers": [
+        "secondary",
+        "unclassified"
+      ],
+      "urls": [
+        "https://www.mysteriousbritain.co.uk/legends/the-longwitton-dragon/",
+        "http://www.wyrm.org.uk/ukdracs/longwitton.html"
       ]
     },
     {
@@ -56,42 +162,6 @@
       ]
     },
     {
-      "name": "Stratford Lyon",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 3,
-      "tiers": [
-        "popular",
-        "popular",
-        "secondary"
-      ],
-      "urls": [
-        "https://www.advertiserandtimes.co.uk/lifestyle/beast-sighting-at-boldre-pub-evokes-stratford-lyon-myth-9214531/",
-        "https://www.advertiserandtimes.co.uk/lifestyle/tales-of-epic-battles-ghosts-and-big-cats-in-new-forest-myt-9271713/",
-        "https://www.historic-uk.com/CultureUK/New-Forest-Hauntings/"
-      ]
-    },
-    {
-      "name": "The Cooneen Ghost",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 5,
-      "tiers": [
-        "secondary",
-        "secondary",
-        "popular",
-        "unclassified",
-        "unclassified"
-      ],
-      "urls": [
-        "https://www.belfastentries.com/stories/cooneen-ghost/",
-        "https://www.fermanaghroots.com/wiki/index.php?title=Cooneen_Ghost",
-        "https://crypticinquiry.com/2023/07/05/the-cooneen-ghost/",
-        "http://mccarra.co/cooneen-ghost/",
-        "https://fermanaghherald.com/2017/10/coonian-ghost-house/"
-      ]
-    },
-    {
       "name": "The Curse of the Campbells of Jura",
       "severity_rank": 2,
       "reason": "only secondary/popular sources, no primary or heritage record",
@@ -108,34 +178,16 @@
       ]
     },
     {
-      "name": "The Gwybr of Llanrhaeadr",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 4,
-      "tiers": [
-        "secondary",
-        "secondary",
-        "popular",
-        "secondary"
-      ],
-      "urls": [
-        "https://www.pistyllrhaeadr.co.uk/dragon.html",
-        "https://www.visitmidwales.co.uk/Oswestry-Local-Legend-Gwybr-of-Llanrhaeadr/details/?dms=3&feature=1000&venue=1120537",
-        "https://theroyalvictoria.co.uk/journal/the-dragons-of-north-wales-and-where-to-find-them",
-        "https://www.megalithic.co.uk/article.php?sid=4431"
-      ]
-    },
-    {
       "name": "The Hairy Hands",
       "severity_rank": 2,
       "reason": "only secondary/popular sources, no primary or heritage record",
       "source_count": 2,
       "tiers": [
-        "secondary",
+        "unclassified",
         "secondary"
       ],
       "urls": [
-        "https://www.legendarydartmoor.co.uk/hairy_hand.htm",
+        "https://www.skeptic.org.uk/2022/07/the-hairy-hands-of-devon-how-a-tabloid-tale-spiraled-into-a-full-blown-urban-legend/",
         "https://www.legendarydartmoor.co.uk/2016/03/25/hairy_hands/"
       ]
     },
@@ -157,14 +209,16 @@
       "name": "Tyrell's Hound",
       "severity_rank": 2,
       "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 2,
+      "source_count": 3,
       "tiers": [
         "secondary",
+        "unclassified",
         "unclassified"
       ],
       "urls": [
         "https://www.historic-uk.com/CultureUK/New-Forest-Hauntings/",
-        "https://new-forest-national-park.com/the-rufus-stone/"
+        "https://new-forest-national-park.com/the-rufus-stone/",
+        "https://newforestescapes.com/the-new-forest/new-forest-myths-folklore-legends/"
       ]
     },
     {
@@ -197,90 +251,6 @@
       "urls": [
         "https://oldechronicles.org.uk/the-witch-hare-of-dartmoor/",
         "https://www.legendarydartmoor.co.uk/2016/03/26/witch_hare/"
-      ]
-    },
-    {
-      "name": "Beast of Dean",
-      "severity_rank": 3,
-      "reason": "only a single source",
-      "source_count": 1,
-      "tiers": [
-        "encyclopedic"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Beast_of_Dean"
-      ]
-    },
-    {
-      "name": "Beltane Fire Festival",
-      "severity_rank": 3,
-      "reason": "only a single source",
-      "source_count": 1,
-      "tiers": [
-        "encyclopedic"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Beltane_Fire_Festival"
-      ]
-    },
-    {
-      "name": "Bisterne Dragon",
-      "severity_rank": 3,
-      "reason": "only a single source",
-      "source_count": 1,
-      "tiers": [
-        "encyclopedic"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Bisterne_Dragon"
-      ]
-    },
-    {
-      "name": "Black Annis",
-      "severity_rank": 3,
-      "reason": "only a single source",
-      "source_count": 1,
-      "tiers": [
-        "encyclopedic"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Black_Annis"
-      ]
-    },
-    {
-      "name": "Blarney Stone",
-      "severity_rank": 3,
-      "reason": "only a single source",
-      "source_count": 1,
-      "tiers": [
-        "encyclopedic"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Blarney_Stone"
-      ]
-    },
-    {
-      "name": "Blue Ben of Kilve",
-      "severity_rank": 3,
-      "reason": "only a single source",
-      "source_count": 1,
-      "tiers": [
-        "encyclopedic"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/List_of_dragons_in_mythology_and_folklore"
-      ]
-    },
-    {
-      "name": "Caerleon",
-      "severity_rank": 3,
-      "reason": "only a single source",
-      "source_count": 1,
-      "tiers": [
-        "encyclopedic"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Caerleon"
       ]
     },
     {
@@ -329,18 +299,6 @@
       ],
       "urls": [
         "https://en.wikipedia.org/wiki/Carrownlisheen_Wedge_Tomb"
-      ]
-    },
-    {
-      "name": "Chalice Well",
-      "severity_rank": 3,
-      "reason": "only a single source",
-      "source_count": 1,
-      "tiers": [
-        "encyclopedic"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Chalice_Well"
       ]
     },
     {
@@ -497,18 +455,6 @@
       ],
       "urls": [
         "https://en.wikipedia.org/wiki/%27Obby_%27Oss_festival"
-      ]
-    },
-    {
-      "name": "Hyter Sprite",
-      "severity_rank": 3,
-      "reason": "only a single source",
-      "source_count": 1,
-      "tiers": [
-        "encyclopedic"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Hyter_Sprite"
       ]
     },
     {
@@ -800,15 +746,19 @@
       ]
     },
     {
-      "name": "The Selkie",
-      "severity_rank": 3,
-      "reason": "only a single source",
-      "source_count": 1,
+      "name": "Alfred and the Burnt Cakes",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 3,
       "tiers": [
-        "encyclopedic"
+        "encyclopedic",
+        "unclassified",
+        "unclassified"
       ],
       "urls": [
-        "https://en.wikipedia.org/wiki/Selkie"
+        "https://www.britannica.com/biography/Alfred-the-Great",
+        "https://king-alfred.com/wp/2019/02/01/cakes/",
+        "https://swheritage.org.uk/king-alfred-the-great/"
       ]
     },
     {
@@ -860,6 +810,34 @@
       ]
     },
     {
+      "name": "Beast of Dean",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 2,
+      "tiers": [
+        "encyclopedic",
+        "unclassified"
+      ],
+      "urls": [
+        "https://en.wikipedia.org/wiki/Beast_of_Dean",
+        "https://www.visitdeanwye.co.uk/blog/myths-legends-of-the-forest-of-dean"
+      ]
+    },
+    {
+      "name": "Beltane Fire Festival",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 2,
+      "tiers": [
+        "encyclopedic",
+        "unclassified"
+      ],
+      "urls": [
+        "https://en.wikipedia.org/wiki/Beltane_Fire_Festival",
+        "https://beltane.org/a-detailed-history-of-beltane/"
+      ]
+    },
+    {
       "name": "Betty Wells, the Witch of Kirton in Lindsey",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
@@ -891,6 +869,36 @@
         "https://heritage.dorsetcouncil.gov.uk/Designation/DDO16500",
         "https://www.themodernantiquarian.com/post/23546/culliford_tree_barrow.html",
         "https://dorset-nl.org.uk/the-singing-barrow/"
+      ]
+    },
+    {
+      "name": "Birnam Wood and Dunsinane",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 3,
+      "tiers": [
+        "heritage",
+        "encyclopedic",
+        "unclassified"
+      ],
+      "urls": [
+        "https://canmore.org.uk/site/28311/dunsinane-hill",
+        "https://en.wikipedia.org/wiki/Dunsinane_Hill",
+        "https://thehazeltree.co.uk/2015/05/11/the-birnam-oak-in-the-presence-of-greatness/"
+      ]
+    },
+    {
+      "name": "Black Annis",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 2,
+      "tiers": [
+        "encyclopedic",
+        "unclassified"
+      ],
+      "urls": [
+        "https://en.wikipedia.org/wiki/Black_Annis",
+        "https://www.storyofleicester.info/faith-belief/black-annis-and-dane-hills/"
       ]
     },
     {
@@ -929,6 +937,22 @@
         "https://en.wikipedia.org/wiki/Black_Rock_Gorge",
         "https://thirdeyetraveller.com/black-rock-gorge-harry-potter/",
         "https://www.evantonhistory.com/index.asp?pageid=264157"
+      ]
+    },
+    {
+      "name": "Blarney Stone",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 3,
+      "tiers": [
+        "encyclopedic",
+        "unclassified",
+        "encyclopedic"
+      ],
+      "urls": [
+        "https://en.wikipedia.org/wiki/Blarney_Stone",
+        "https://blarneycastle.ie/blarney-stone/",
+        "https://www.britannica.com/topic/Blarney-Stone"
       ]
     },
     {
@@ -974,6 +998,20 @@
       ]
     },
     {
+      "name": "Brú na Bóinne",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 2,
+      "tiers": [
+        "encyclopedic",
+        "unclassified"
+      ],
+      "urls": [
+        "https://en.wikipedia.org/wiki/Br%C3%BA_na_B%C3%B3inne",
+        "https://www.museum.ie/en-ie/collections-research/irish-antiquities-division-collections/irish-antiquities-articles/the-winter-solstice-at-newgrange"
+      ]
+    },
+    {
       "name": "Byard's Leap",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
@@ -987,6 +1025,36 @@
         "https://en.wikipedia.org/wiki/Byard%27s_Leap",
         "https://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?uid=MLI89280&resourceID=1006",
         "https://slha.org.uk/catalogue_item/byards-leap"
+      ]
+    },
+    {
+      "name": "Canute and the Tide",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 3,
+      "tiers": [
+        "encyclopedic",
+        "encyclopedic",
+        "unclassified"
+      ],
+      "urls": [
+        "https://en.wikipedia.org/wiki/King_Cnut_and_the_tide",
+        "https://www.britannica.com/biography/Canute-king-of-England-Denmark-and-Norway",
+        "https://holytrinitybosham.org.uk/history/"
+      ]
+    },
+    {
+      "name": "Chalice Well",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 2,
+      "tiers": [
+        "encyclopedic",
+        "unclassified"
+      ],
+      "urls": [
+        "https://en.wikipedia.org/wiki/Chalice_Well",
+        "https://chalicewell.org.uk/about/"
       ]
     },
     {
@@ -1164,20 +1232,6 @@
       ]
     },
     {
-      "name": "Gearóid Iarla of Lough Gur",
-      "severity_rank": 4,
-      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
-      "source_count": 2,
-      "tiers": [
-        "encyclopedic",
-        "unclassified"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Lough_Gur",
-        "https://www.loughgur.com/learn-more/folklore/"
-      ]
-    },
-    {
       "name": "Glastonbury Holy Thorn",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
@@ -1189,20 +1243,6 @@
       "urls": [
         "https://en.wikipedia.org/wiki/Glastonbury_Thorn",
         "https://research.reading.ac.uk/glastonburyabbeyarchaeology/myths/the-holy-thorn/"
-      ]
-    },
-    {
-      "name": "Gog and Magog",
-      "severity_rank": 4,
-      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
-      "source_count": 2,
-      "tiers": [
-        "encyclopedic",
-        "unclassified"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Gog_and_Magog_(England)",
-        "https://www.londonmuseum.org.uk/collections/v/object-525663/gog-magog-guildhall/"
       ]
     },
     {
@@ -1231,6 +1271,22 @@
       "urls": [
         "https://en.wikipedia.org/wiki/Green_children_of_Woolpit",
         "https://journals.umcs.pl/rh/article/download/7611/8307"
+      ]
+    },
+    {
+      "name": "Greyfriars Bobby",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 3,
+      "tiers": [
+        "encyclopedic",
+        "secondary",
+        "unclassified"
+      ],
+      "urls": [
+        "https://en.wikipedia.org/wiki/Greyfriars_Bobby",
+        "https://www.historic-uk.com/HistoryUK/HistoryofScotland/Greyfriars-Bobby/",
+        "https://www.dogsinhistory.org/stories-dogs-in-history/greyfriars-bobby-myth-edinburgh-tourist-attraction"
       ]
     },
     {
@@ -1264,20 +1320,6 @@
       ]
     },
     {
-      "name": "Gurt Worm",
-      "severity_rank": 4,
-      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
-      "source_count": 2,
-      "tiers": [
-        "encyclopedic",
-        "unclassified"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Gurt_Worm",
-        "https://www.halswaymanor.org.uk/projects/stories-of-the-hills/ruth-tongue-crowcombe/"
-      ]
-    },
-    {
       "name": "Hagg Worm",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
@@ -1287,7 +1329,7 @@
         "unclassified"
       ],
       "urls": [
-        "https://en.wikipedia.org/wiki/Worm_(mythology)",
+        "https://en.wikipedia.org/wiki/Lambton_Worm",
         "https://yorkshiredictionary.york.ac.uk/words/hagworm"
       ]
     },
@@ -1306,26 +1348,6 @@
       ]
     },
     {
-      "name": "Hartlepool Monkey",
-      "severity_rank": 4,
-      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
-      "source_count": 5,
-      "tiers": [
-        "unclassified",
-        "secondary",
-        "unclassified",
-        "unclassified",
-        "primary"
-      ],
-      "urls": [
-        "https://teesvalleymuseums.org/visit/museum-of-hartlepool/",
-        "https://www.historic-uk.com/HistoryUK/HistoryofEngland/The-Hanging-of-the-Hartlepool-Monkey/",
-        "https://www.scottishcorpus.ac.uk/document/?documentid=511",
-        "http://folksongandmusichall.com/index.php/who-hung-the-monkey/",
-        "https://archive.org/details/catgutjimfiddler0000hark"
-      ]
-    },
-    {
       "name": "Hereward the Wake",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
@@ -1337,6 +1359,22 @@
       "urls": [
         "https://en.wikipedia.org/wiki/Hereward_the_Wake",
         "https://scholarlypublications.universiteitleiden.nl/access/item:2883868/view"
+      ]
+    },
+    {
+      "name": "Highgate Vampire",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 3,
+      "tiers": [
+        "encyclopedic",
+        "unclassified",
+        "secondary"
+      ],
+      "urls": [
+        "https://en.wikipedia.org/wiki/Highgate_Vampire",
+        "https://www.vice.com/en/article/highgate-vampire-history-sean-manchester/",
+        "https://www.mysteriousbritain.co.uk/hauntings/the-highgate-vampire-how-it-all-began-by-david-farrant/"
       ]
     },
     {
@@ -1448,6 +1486,36 @@
       ]
     },
     {
+      "name": "Lady Godiva",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 3,
+      "tiers": [
+        "encyclopedic",
+        "unclassified",
+        "primary"
+      ],
+      "urls": [
+        "https://en.wikipedia.org/wiki/Lady_Godiva",
+        "https://www.tastesofhistory.co.uk/post/dispelling-some-myths-lady-godiva-s-naked-ride",
+        "https://www.british-history.ac.uk/vch/warks/vol8/pp242-247"
+      ]
+    },
+    {
+      "name": "Lancashire Witches Walk",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 2,
+      "tiers": [
+        "encyclopedic",
+        "unclassified"
+      ],
+      "urls": [
+        "https://en.wikipedia.org/wiki/Lancashire_Witches_Walk",
+        "https://ldwa.org.uk/ldp/members/show_path.php?path_name=Lancashire+Witches+Walk"
+      ]
+    },
+    {
       "name": "Lancelot",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
@@ -1469,16 +1537,16 @@
       "tiers": [
         "encyclopedic",
         "secondary",
-        "popular",
+        "unclassified",
         "unclassified",
         "unclassified"
       ],
       "urls": [
         "https://en.wikipedia.org/wiki/Limavady",
         "https://www.connollycove.com/limavady/",
-        "https://nationalpurebreddogday.com/the-legendary-dog-leap/",
         "https://www.causewaycoastalroute.com/limavady-history",
-        "https://binevenaghaonb.ccght.org/roe-valley-country-park/"
+        "https://binevenaghaonb.ccght.org/roe-valley-country-park/",
+        "https://en.wikivoyage.org/wiki/Limavady"
       ]
     },
     {
@@ -1493,20 +1561,6 @@
       "urls": [
         "https://en.wikipedia.org/wiki/Lincoln_Imp",
         "https://lincolncathedral.com/product/the-legend-of-the-lincoln-imp/"
-      ]
-    },
-    {
-      "name": "Longwitton Dragon",
-      "severity_rank": 4,
-      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
-      "source_count": 2,
-      "tiers": [
-        "encyclopedic",
-        "unclassified"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Longwitton_dragon",
-        "http://www.wyrm.org.uk/ukdracs/longwitton.html"
       ]
     },
     {
@@ -1550,7 +1604,7 @@
       ],
       "urls": [
         "https://en.wikipedia.org/wiki/Maeshowe",
-        "https://www.orkneyjar.com/history/maeshowe/runes/"
+        "https://www.nessofbrodgar.co.uk/maeshowe-runes/"
       ]
     },
     {
@@ -1571,14 +1625,16 @@
       "name": "Martin Mere",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
-      "source_count": 2,
+      "source_count": 3,
       "tiers": [
         "encyclopedic",
-        "unclassified"
+        "unclassified",
+        "primary"
       ],
       "urls": [
         "https://en.wikipedia.org/wiki/Martin_Mere",
-        "https://www.wwt.org.uk/wetland-centres/martin-mere"
+        "https://www.wwt.org.uk/wetland-centres/martin-mere",
+        "https://www.gutenberg.org/ebooks/15271"
       ]
     },
     {
@@ -1678,7 +1734,7 @@
       "urls": [
         "https://en.wikipedia.org/wiki/Owlman",
         "https://en.wikipedia.org/wiki/Morgawr_(folklore)",
-        "https://www.cryptidcampfire.com/blog/whos-who-in-the-owlman-case"
+        "https://godsandmonsters.info/owlman/"
       ]
     },
     {
@@ -1964,6 +2020,22 @@
       ]
     },
     {
+      "name": "Ruari Mòr MacNeil of Barra",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 3,
+      "tiers": [
+        "unclassified",
+        "heritage",
+        "heritage"
+      ],
+      "urls": [
+        "https://www.scotlandshop.com/tartanblog/famous-faces-clan-macneil",
+        "https://www.historicenvironment.scot/visit-a-place/places/kisimul-castle/history/",
+        "https://canmore.org.uk/site/21390/barra-kiessimul-castle"
+      ]
+    },
+    {
       "name": "Sack of Baltimore",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
@@ -1980,7 +2052,7 @@
         "https://historyireland.com/from-baltimore-to-barbary-the-1631-sack-of-baltimore/",
         "https://www.irishcentral.com/roots/history/sack-baltimore-irelands-pirate",
         "https://www.baltimore.ie/the-sack-of-baltimore",
-        "https://divainternational.ch/barbary-pirates-in-ireland-the-sack-of-baltimore-co-cork.html"
+        "https://obrien.ie/the-stolen-village"
       ]
     },
     {
@@ -2023,6 +2095,22 @@
         "https://medieval.bodleian.ox.ac.uk/catalog/manuscript_7403",
         "https://www.ulster.ac.uk/__data/assets/pdf_file/0011/942572/1002.pdf",
         "https://www.askaboutireland.ie/reading-room/life-society/irish-language-legends/the-salmon-of-knowledge/"
+      ]
+    },
+    {
+      "name": "Sambo's Grave",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 3,
+      "tiers": [
+        "unclassified",
+        "encyclopedic",
+        "unclassified"
+      ],
+      "urls": [
+        "https://lahs.archaeologyuk.org/Contrebis/whiteheadsambo.pdf",
+        "https://en.wikipedia.org/wiki/Sambo%27s_Grave",
+        "https://www.open.edu/openlearn/history-the-arts/history/heritage/the-children-slavery-sambos-grave-near-heysham"
       ]
     },
     {
@@ -2562,6 +2650,22 @@
       ]
     },
     {
+      "name": "The Beast of Exmoor",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 3,
+      "tiers": [
+        "encyclopedic",
+        "unclassified",
+        "heritage"
+      ],
+      "urls": [
+        "https://en.wikipedia.org/wiki/Beast_of_Exmoor",
+        "https://www.exmoor-nationalpark.gov.uk/",
+        "https://www.exmoorher.co.uk/myths-legends-customs-and-traditions"
+      ]
+    },
+    {
       "name": "The Bidston Hill Carvings",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
@@ -2656,6 +2760,44 @@
       ]
     },
     {
+      "name": "The Chained Oak",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 3,
+      "tiers": [
+        "encyclopedic",
+        "unclassified",
+        "unclassified"
+      ],
+      "urls": [
+        "https://en.wikipedia.org/wiki/Chained_Oak",
+        "https://www.forestryjournal.co.uk/features/forestry-journal-features/24994184.chained-oak-alton-towers-inspired-famous-hex-ride/",
+        "https://www.towerstimes.co.uk/history/the-real-chained-oak/"
+      ]
+    },
+    {
+      "name": "The Cooneen Ghost",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 6,
+      "tiers": [
+        "secondary",
+        "secondary",
+        "popular",
+        "unclassified",
+        "unclassified",
+        "primary"
+      ],
+      "urls": [
+        "https://www.belfastentries.com/stories/cooneen-ghost/",
+        "https://www.fermanaghroots.com/wiki/index.php?title=Cooneen_Ghost",
+        "https://crypticinquiry.com/2023/07/05/the-cooneen-ghost/",
+        "http://mccarra.co/cooneen-ghost/",
+        "https://fermanaghherald.com/2017/10/coonian-ghost-house/",
+        "https://archive.org/details/unexplainedencou0000stcl"
+      ]
+    },
+    {
       "name": "The Cottingley Fairies",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
@@ -2688,7 +2830,7 @@
         "https://en.wikipedia.org/wiki/Drummer_of_Tedworth",
         "https://onlinelibrary.wiley.com/doi/full/10.1111/j.1468-2281.2005.00226.x",
         "https://eprints.bbk.ac.uk/id/eprint/250/1/Hunter4.pdf",
-        "https://psi-encyclopedia.spr.ac.uk/articles/tedworth-drummer"
+        "https://psi-encyclopedia.spr.ac.uk/articles/drummer-tedworth/"
       ]
     },
     {
@@ -2740,7 +2882,7 @@
         "unclassified"
       ],
       "urls": [
-        "https://www.cornwalls.co.uk/myths-legends/carn_galva.htm",
+        "https://www.mysteriousbritain.co.uk/legends/the-giant-of-carn-galva/",
         "https://archive.org/details/popularromanceso00huntuoft",
         "https://heritagerecords.nationaltrust.org.uk/HBSMR/MonRecord.aspx?uid=MNA104144"
       ]
@@ -2778,6 +2920,20 @@
       ]
     },
     {
+      "name": "The Haunted Gallery, Hampton Court",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 2,
+      "tiers": [
+        "heritage",
+        "unclassified"
+      ],
+      "urls": [
+        "https://www.hrp.org.uk/hampton-court-palace/history-and-stories/historic-hauntings-at-hampton-court-palace/",
+        "https://www.lovebritishhistory.co.uk/2020/10/does-catherine-howards-ghost-really.html"
+      ]
+    },
+    {
       "name": "The Hawkhurst Gang",
       "severity_rank": 4,
       "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
@@ -2795,22 +2951,6 @@
         "https://www.kentonline.co.uk/weald/news/gunfire-in-the-streets-of-a-weald-village-275-years-ago-265875/",
         "http://poolehistory.org.uk/taxonomy/term/1923?page=1",
         "https://en.wikipedia.org/wiki/William_Fairall"
-      ]
-    },
-    {
-      "name": "The Henham Dragon",
-      "severity_rank": 4,
-      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
-      "source_count": 3,
-      "tiers": [
-        "secondary",
-        "primary",
-        "unclassified"
-      ],
-      "urls": [
-        "https://www.henhamhistory.org/henham-dragon/",
-        "https://quod.lib.umich.edu/e/eebo2/A39848.0001.001?view=toc",
-        "https://blogs.bl.uk/living-knowledge/2016/08/on-the-trail-of-the-essex-serpent.html"
       ]
     },
     {
@@ -2909,6 +3049,22 @@
         "https://www.mysteriousbritain.co.uk/legends/loe-pool/",
         "https://jncc.gov.uk/jncc-assets/GCR/gcr-site-account-1847.pdf",
         "http://www.helstonhistory.co.uk/loe-bar-pool/loe-bar/"
+      ]
+    },
+    {
+      "name": "The London Stone",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 3,
+      "tiers": [
+        "heritage",
+        "encyclopedic",
+        "unclassified"
+      ],
+      "urls": [
+        "https://historicengland.org.uk/listing/the-list/list-entry/1064725",
+        "https://en.wikipedia.org/wiki/London_Stone",
+        "https://www.londonmuseum.org.uk/blog/london-stone-in-seven-strange-myths/"
       ]
     },
     {
@@ -3109,7 +3265,7 @@
         "https://historiamag.com/wizards-of-west-wales/",
         "https://biography.wales/article/s14-HARR-JOH-1839",
         "https://archifau.llyfrgell.cymru/index.php/harries-family-of-cwrt-y-cadno",
-        "https://biography.wales/article/s-HARR-HEN-1862",
+        "https://biography.wales/article/arc_s-HARR-HEN-1862",
         "https://www.library.wales/discover-learn/digital-exhibitions/manuscripts/modern-period/john-harries-book-of-incantations"
       ]
     },
@@ -3161,6 +3317,22 @@
         "https://en.wikipedia.org/wiki/Tiddy_Mun",
         "https://www.heritagesouthholland.co.uk/article/the-curse-of-the-tiddy-mun/",
         "https://lincolnshirefolktalesproject.com/2023/09/05/hello-world/"
+      ]
+    },
+    {
+      "name": "Tom Thumb",
+      "severity_rank": 4,
+      "reason": "at least one source has an unrecognised host (add it to SOURCE_TIERS)",
+      "source_count": 3,
+      "tiers": [
+        "encyclopedic",
+        "unclassified",
+        "secondary"
+      ],
+      "urls": [
+        "https://en.wikipedia.org/wiki/Tom_Thumb",
+        "https://www.ebsco.com/research-starters/social-sciences-and-humanities/tom-thumb-folklore",
+        "https://lincolnshirefolktalesproject.com/2024/02/20/tom-thumb/"
       ]
     },
     {
@@ -3254,7 +3426,7 @@
         "heritage"
       ],
       "urls": [
-        "https://en.wikipedia.org/wiki/Wandlebury_Camp",
+        "https://en.wikipedia.org/wiki/Wandlebury_Hill_Fort",
         "https://www.mythicalbritain.co.uk/post/t-c-lethbridge-and-the-lost-gogmagog-giants-of-wandlebury",
         "https://hillforts.arch.ox.ac.uk/records/EN3025.html"
       ]
@@ -3498,7 +3670,7 @@
       "urls": [
         "https://www.bartleby.com/lit-hub/hc/guy-mannering-or-the-astrologer/additional-note/",
         "https://gutenberg.org/files/5999/old/files/relative.htm",
-        "https://craftydistillery.com/blogs/bolt-from-the-blue-journal-2/the-galloway-guide-to-gruff-looking-sea-dogs"
+        "http://registry.gsg.org.uk/sr/sitedetails.php?id=679"
       ]
     },
     {

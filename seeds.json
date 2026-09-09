@@ -3367,7 +3367,11 @@
     "period": "Georgian England; King George III's Weymouth visits, which the figure commemorates, ran from 1789 and are recorded to have ceased around the time of the carving",
     "origin_type": "historical-event",
     "dating_confidence": "high",
-    "period_slug": "georgian-britain"
+    "period_slug": "georgian-britain",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Osmington_White_Horse",
+      "https://historicengland.org.uk/research/results/reports/27-2013"
+    ]
   },
   {
     "name": "Overtoun Bridge",

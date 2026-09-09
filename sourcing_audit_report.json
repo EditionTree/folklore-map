@@ -1,7 +1,7 @@
 {
   "generated": true,
   "total_legends": 739,
-  "flagged_count": 60,
+  "flagged_count": 59,
   "flagged": [
     {
       "name": "Gooseberry Wife",
@@ -593,18 +593,6 @@
       ],
       "urls": [
         "https://en.wikipedia.org/wiki/Orkneyinga_saga"
-      ]
-    },
-    {
-      "name": "Osmington White Horse",
-      "severity_rank": 3,
-      "reason": "only a single source",
-      "source_count": 1,
-      "tiers": [
-        "encyclopedic"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Osmington_White_Horse"
       ]
     },
     {

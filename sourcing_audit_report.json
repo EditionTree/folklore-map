@@ -1,7 +1,7 @@
 {
   "generated": true,
   "total_legends": 739,
-  "flagged_count": 59,
+  "flagged_count": 57,
   "flagged": [
     {
       "name": "Gooseberry Wife",
@@ -45,20 +45,6 @@
         "https://garve.org/the-loch-garve-kelpie",
         "https://www.mysteriousbritain.co.uk/folklore/the-kelpie-of-loch-garve/",
         "https://folklorescotland.com/the-kelpies-chimney/"
-      ]
-    },
-    {
-      "name": "Longwitton Dragon",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 2,
-      "tiers": [
-        "secondary",
-        "popular"
-      ],
-      "urls": [
-        "https://www.mysteriousbritain.co.uk/legends/the-longwitton-dragon/",
-        "http://www.wyrm.org.uk/ukdracs/longwitton.html"
       ]
     },
     {
@@ -141,24 +127,6 @@
       "urls": [
         "https://www.skeptic.org.uk/2022/07/the-hairy-hands-of-devon-how-a-tabloid-tale-spiraled-into-a-full-blown-urban-legend/",
         "https://www.legendarydartmoor.co.uk/2016/03/25/hairy_hands/"
-      ]
-    },
-    {
-      "name": "Witch of Slieu Whallian",
-      "severity_rank": 2,
-      "reason": "only secondary/popular sources, no primary or heritage record",
-      "source_count": 4,
-      "tiers": [
-        "secondary",
-        "secondary",
-        "secondary",
-        "secondary"
-      ],
-      "urls": [
-        "https://asmanxasthehills.com/the-witch-of-slieu-whallian/",
-        "https://www.isle-of-man.com/manxnotebook/fulltext/sm1911/p144.htm",
-        "https://isle-of-man.com/manxnotebook/fulltext/folklore/ch05.htm",
-        "https://asmanxasthehills.com/witchcraft-on-the-isle-of-man/"
       ]
     },
     {

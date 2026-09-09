@@ -1,7 +1,7 @@
 {
   "generated": true,
   "total_legends": 739,
-  "flagged_count": 61,
+  "flagged_count": 60,
   "flagged": [
     {
       "name": "Gooseberry Wife",
@@ -245,18 +245,6 @@
       ],
       "urls": [
         "https://en.wikipedia.org/wiki/Colt_pixie"
-      ]
-    },
-    {
-      "name": "Craigs Dolmen",
-      "severity_rank": 3,
-      "reason": "only a single source",
-      "source_count": 1,
-      "tiers": [
-        "encyclopedic"
-      ],
-      "urls": [
-        "https://en.wikipedia.org/wiki/Craigs_Dolmen"
       ]
     },
     {

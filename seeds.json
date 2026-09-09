@@ -12059,7 +12059,11 @@
     "origin_type": "archaeological",
     "dating_confidence": "high",
     "detail": "Craigs Dolmen, known locally as the Broad Stone, stands on Long Mountain five miles south of Ballymoney in County Antrim, its huge capstone resting on seven upright stones above an almost semicircular forecourt. Despite the name, the monument is not a simple dolmen at all: it is a passage tomb with three internal chambers, most likely built before 2000 BC and reused for burials well into the Bronze Age.\n\nLightning struck and cracked the great capstone in 1976, and the damage led to a full restoration in 1985 that revealed the tomb's true structure for the first time, its passage and chambers having been hidden under centuries of accumulated stone and soil. The capstone over the entrance chamber was re-erected on an upright that likely was not original to the design. About 800 metres away stands a second, smaller passage tomb, seven tall stones supporting a capstone of its own.\n\nLong before archaeologists took an interest, the Broad Stone had a use of its own: local tradition holds it was a popular gathering place for meetings and assemblies, its flat expanse serving the community that lived in its shadow long after the burials inside had been forgotten.",
-    "period_slug": "prehistoric-britain"
+    "period_slug": "prehistoric-britain",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Craigs_Dolmen",
+      "https://causewaycoastandglens.gov.uk/see-do/arts_museums/museums-services/ballymoney-museum/ballymoney-heritage/megalithic-tombs/craigs-dolmen-finvoy"
+    ]
   },
   {
     "name": "Dobhar-chú",

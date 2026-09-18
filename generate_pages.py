@@ -3512,7 +3512,11 @@ def build():
     period_dir = os.path.join(OUT_DIR, "period")
     if periods:
         os.makedirs(period_dir, exist_ok=True)
-        period_nav_items = [
+        timeline_url = f"{BASE}/{OUT_DIR}/periods"
+        # "Explore Through Time" leads the sibling nav so the landing page is
+        # reachable from every period page. It is deliberately not in TOPNAV_ITEMS,
+        # so this is its only inbound link: dropping it orphans the page again.
+        period_nav_items = [(timeline_url, "Explore Through Time", "periods")] + [
             (period_page_url(p["slug"]), p["title"], p["slug"]) for p in periods
         ]
         timeline_cards = []
@@ -3570,7 +3574,6 @@ def build():
                 f'<span class="b-summary">{esc(short_desc(p["overview"], 140))}</span></a>'
             )
 
-        timeline_url = f"{BASE}/{OUT_DIR}/periods"
         timeline_jsonld = json.dumps({
             "@context": "https://schema.org",
             "@type": "CollectionPage",

@@ -3172,6 +3172,19 @@ def build():
 
     browse_urls = []
 
+    # Aggregation pages (category / region / collection / period) take the newest
+    # date_modified of the legends they list, so their lastmod moves only when
+    # their contents actually change. These used to fall through to the build
+    # date, which republished ~111 unchanged URLs as "modified today" on every
+    # run: dishonest as a crawl signal, and 200+ lines of noise in every diff.
+    # Pages with no dated members still fall back to today in the sitemap block.
+    agg_lastmod = {}
+
+    def note_lastmod(url, entries):
+        dates = [e.get("date_modified") for e in entries if e.get("date_modified")]
+        if dates:
+            agg_lastmod[url] = max(dates)
+
     # Category pages
     cat_order = sorted(cat_groups, key=lambda c: -len(cat_groups[c]))
     cat_nav_items = [(f"{BASE}/{OUT_DIR}/category/{c}", cats.get(c, c), c) for c in cat_order]
@@ -3215,6 +3228,7 @@ def build():
         with io.open(os.path.join(cat_dir, f"{c}.html"), "w", encoding="utf-8") as f:
             f.write(page)
         browse_urls.append(url)
+        note_lastmod(url, entries)
 
     # Region pages — nations always, other areas only if >= 4 entries (avoid thin pages)
     region_eligible = [t for t in region_groups if t in NATIONS or len(region_groups[t]) >= 4]
@@ -3259,6 +3273,7 @@ def build():
         with io.open(os.path.join(reg_dir, f"{t}.html"), "w", encoding="utf-8") as f:
             f.write(page)
         browse_urls.append(url)
+        note_lastmod(url, entries)
 
     # ── Themed collection pages (curated, cross-cutting) ───────────────────
     col_dir = os.path.join(OUT_DIR, "collection")
@@ -3439,6 +3454,7 @@ def build():
                 with io.open(os.path.join(col_dir, fname), "w", encoding="utf-8") as f:
                     f.write(page)
                 browse_urls.append(url)
+                note_lastmod(url, page_members)
             built_collections.append((slug, col["title"], total))
 
         # Collections landing page (the "Collections" nav destination).
@@ -3507,6 +3523,7 @@ def build():
             with io.open(os.path.join(OUT_DIR, "collections.html"), "w", encoding="utf-8") as f:
                 f.write(land_page)
             browse_urls.append(land_url)
+            note_lastmod(land_url, [m for _, ms in resolved for m in ms])
 
     # ── Explore Through Time (period pages) ────────────────────────────────
     period_dir = os.path.join(OUT_DIR, "period")
@@ -3567,6 +3584,7 @@ def build():
             with io.open(os.path.join(period_dir, f"{slug}.html"), "w", encoding="utf-8") as f:
                 f.write(page)
             browse_urls.append(url)
+            note_lastmod(url, members)
             timeline_cards.append(
                 f'<a class="b-card" href="{url}">'
                 f'<span class="b-name">{esc(p["title"])}</span>'
@@ -3610,6 +3628,7 @@ def build():
         with io.open(os.path.join(OUT_DIR, "periods.html"), "w", encoding="utf-8") as f:
             f.write(timeline_page)
         browse_urls.append(timeline_url)
+        note_lastmod(timeline_url, [m for ms in period_members.values() for m in ms])
 
     # Browse sections for the A-Z index page
     cat_links = "".join(
@@ -3797,13 +3816,16 @@ h1::after{{content:"";display:block;width:132px;height:40px;margin:9px 0 19px;ba
     with io.open(os.path.join(OUT_DIR, "index.html"), "w", encoding="utf-8") as f:
         f.write(index_html)
 
-    # sitemap.xml — legend pages carry their own date_modified as lastmod, so the
-    # signal is honest; app/aggregation pages use the build date.
+    # sitemap.xml — legend pages carry their own date_modified as lastmod, and
+    # aggregation pages inherit the newest date_modified of what they list (see
+    # note_lastmod above), so the signal is honest. Only the handful of app pages
+    # with no dated contents (/, /map, /about, /privacy ...) use the build date.
     urls = [f"{BASE}/", f"{BASE}/map", f"{BASE}/{OUT_DIR}/", f"{BASE}/achievements", f"{BASE}/about", f"{BASE}/editorial", f"{BASE}/updates", f"{BASE}/privacy", f"{BASE}/feed.xml"]
     urls += browse_urls
     urls += [f"{BASE}/{OUT_DIR}/{slugmap[l['name']]}" for l in legends]
     lastmod_map = {f"{BASE}/{OUT_DIR}/{slugmap[l['name']]}": (l.get("date_modified") or today)
                    for l in legends}
+    lastmod_map.update(agg_lastmod)
     sitemap_images = {}
     for l in legends:
         featured = featured_pages.get(l["name"], {})
